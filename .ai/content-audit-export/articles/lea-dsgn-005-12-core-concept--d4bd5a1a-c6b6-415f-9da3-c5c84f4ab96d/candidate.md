@@ -22,7 +22,7 @@ Key design principles for heritage-adaptive reuse:
 5. _Accessibility integration_ — ramps, lifts, and emergency egress are designed to blend with heritage aesthetics.
 
 Code compliance (NBC, **BP 344**) still applies: the new use must meet all egress, fire-safety, and accessibility standards, even if achieving full compliance requires creative design solutions or seeks variances from the NHCP and local authority.
-<ArticleMedia id="media-lea-dsgn-005-12-core-concept" a type="image" caption="Adaptive Reuse Workflow — Heritage Compliance Decision Tree" description="Process diagram showing the adaptive reuse workflow: building condition assessment → new occupancy classification → RA 10066 compliance check → NHCP clearance → code compliance balancing. Decision points for heritage status trigger and character-defining features." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-005-12-core-concept" type="image" caption="Adaptive Reuse Workflow — Heritage Compliance Decision Tree" alt="Process diagram showing the adaptive reuse workflow: building condition assessment → new occupancy classification → RA 10066 compliance check → NHCP clearance → code compliance balancing. Decision points for heritage status trigger and character-defining features." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
@@ -59,7 +59,7 @@ New occupancy must meet full NBC requirementExit width: 7.6cm/person (**PD 1096 
 - Fire separation: Depends on mixed-use or single-occupancy configuration
 
 If a heritage building cannot physically accommodate a full-width exit (e.g., historic doorway is 800mm), the architect may request a variance from the NHCP and local Building Official, justifying the cultural constraint. Such variances are case-specific and require documented evidence of infeasibility of code compliance.
-<ArticleMedia id="media-lea-dsgn-005-12-core-concept" a type="image" caption="Heritage Building — NHCP Clearance and Compliance Process" description="Flowchart showing the regulatory pathway for heritage building modifications: determine NHCP jurisdiction, prepare conservation plan, obtain clearance, verify RA 10066 compliance, balance code requirements with preservation. Key thresholds and referral triggers." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-005-12-core-concept" type="image" caption="Heritage Building — NHCP Clearance and Compliance Process" alt="Flowchart showing the regulatory pathway for heritage building modifications: determine NHCP jurisdiction, prepare conservation plan, obtain clearance, verify RA 10066 compliance, balance code requirements with preservation. Key thresholds and referral triggers." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Philippine Practice Context
 
@@ -75,7 +75,7 @@ The challenge for architects is code compliance without destroying character. A 
 
 **Pattern 3:** _Character preservation vs. code compliance_ — "A heritage chapel (original 400 sqm, seating 150) is being converted to an office (10 sqm per person, occupant load = 40). The new occupancy load is _____, and exit width requirement is _____ mm/person per NBC."
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+<Tip>RA 10066 = Heritage Act. NHCP = National Historical Commission (clearance required). Occupancy = new function. Character-defining = preserve. Exit width = 7.6mm/person. BP 344: ramp 1:20 (2024 Revised IRR), door 900mm. Reversible preferred over permanent. Variance = cultural constraint + code impossibility.</Tip>
 
 **Exam Tip — ERR-DSGN-008:** Occupancy classification follows NEW function, not original use. An adaptive reuse church-to-restaurant becomes Group E, not Group C. NHCP clearance required if structure is a heritage designation.
 
@@ -85,4 +85,4 @@ See **LEA-PLAN-001-03** (Philippine Planning History) for heritage context, **LE
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeList" status="preserved"]
+<WikiMistakeList mistakes={["Classifying heritage adaptive-reuse occupancy by original function instead of new programmed use","Assuming heritage status exempts the building from NBC code compliance—it does not; heritage + new function = full code adherence required","Designing permanent, invasive system routing (e.g., cutting through structural beams) instead of reversible methods (surface-mounted conduit, attic runs)","Neglecting NHCP clearance until construction is underway—clearance must be obtained during schematic design","Using modern materials (PVC, steel studs) that contrast with historic fabric instead of matching composition and appearance","Incorrectly calculating occupant load as if the building retains its original function—new function determines occupancy group and load","Misapplying ramp slope (1:10 or 1:12 [old IRR] instead of 1:20 [2024 IRR]) or accessible door width (800mm instead of 900mm) because of heritage constraints—code still applies; variance is the mechanism for exception","Confusing reversible and permanent interventions—reversible (e.g., lime mortar pointing) preserves original material; permanent (e.g., epoxy injection) obscures or removes heritage fabric","Failing to integrate accessible egress (ramps, lifts) during initial design—retrofitting after framing/finishes creates visual discord and waste","Assuming character-defining features can be relocated or hidden without NHCP objection—character is place-specific"]} />

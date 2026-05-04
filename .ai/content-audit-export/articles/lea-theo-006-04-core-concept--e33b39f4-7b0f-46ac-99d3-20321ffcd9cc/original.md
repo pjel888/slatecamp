@@ -5,8 +5,6 @@ The Pritzker Prize is tested on the LEA primarily through recognition patterns�
 
 </Callout>
 
-
-
 ## Learning Goal
 
 - Identify the Pritzker Prize as architecture's most visible global honor (established 1979 by the Hyatt Foundation).
@@ -14,6 +12,10 @@ The Pritzker Prize is tested on the LEA primarily through recognition patterns�
 - Analyze how the Pritzker Prize elevates architectural discourse and shapes professional values.
 
 ## Core Concept
+
+|<ArticleMedia id="media-lea-theo-006-04-pritzker-timeline" type="image" caption="Pritzker Prize Evolution — From Formalist Gatekeeping to Social Engagement" description="Timeline diagram from 1979 to present showing key laureates and the ideological shift: Philip Johnson (1979, formalist pioneer) → Frank Gehry (1989, deconstructivism) → Zaha Hadid (2004, first woman) → Alejandro Aravena (2016, social housing/participatory) → Diébédo Francis Kéré (2022, first native African, community agency) → Smiljan Radić Clarke (2026, fragility/cultural memory). Color gradient shifts from blue (formalist) to green (social) to orange (humanitarian)." suggestedAsset="Timeline showing Pritzker Prize ideological shift with key laureates" status="placeholder" />
+
+<ArticleMedia id="media-lea-theo-006-04-pritzker-b" type="image" caption="Japan's Pritzker Laureates — Eight Architects, One National Tradition" description="Visual matrix of Japan's eight Pritzker laureates with images of their signature works and design philosophies: Kenzo Tange (1987, Brutalist urbanism), Fumihiko Maki (1993, lightweight modernism), Tadao Ando (1995, concrete minimalism), SANAA/Sejima+Nishizawa (2010, transparency/lightness), Toyo Ito (2013, fluid architecture), Shigeru Ban (2014, humanitarian paper architecture), Arata Isozaki (2019, postmodern eclecticism), Riken Yamamoto (2024, community-scale design). Each entry annotated with the architect's philosophy and contribution." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 Established in 1979 by Jay A. Pritzker and his wife Cindy through the Hyatt Foundation, the Pritzker Architecture Prize has become the field's most visible global honor, often called the "Nobel Prize of architecture." Understanding how it appears on the LEA requires grasping two interdependent ideas: the prize's historical gatekeeping function and its recent pivot toward recognizing architects who center social and ecological responsibility in their practice.
 
@@ -48,59 +50,43 @@ The prize also intersects with the broader LEA curriculum unit on architectural 
 
 ### Pattern 1: Recognition by Ideology or Era
 
-
 <ExamTip>**Example Stem:** "Which of the following architects won the Pritzker Prize for pioneering participatory design and social housing?"</ExamTip>
 
-
 <ExamTip>**Expected Answer:** Leajandro Aravena (2016) or Diébédo Francis Kéré (2022).</ExamTip>
-
 
 <ExamTip>**Exam Trap:** Confusing formalist innovators (Gehry, Hadid) with socially engaged practitioners. The LEA now emphasizes the shift away from pure formalism.
 
 ### Pattern 2: First-Ever Breakthroughs</ExamTip>
 
-
 <ExamTip>**Example Stem:** "The 2004 Pritzker Prize marked a significant moment in architecture's gender representation. Who was the recipient, and what does her work emphasize?"</ExamTip>
 
-
 <ExamTip>**Expected Answer:** Zaha Hadid; parametric and deconstructivist design (though her formal innovations matter less on the LEA than the fact of her being first woman).</ExamTip>
-
 
 <ExamTip>**Exam Trap:** Assuming all femlea architects or all contemporary architects break gender barriers. Hadid's 2004 win was the *first*; prior winners (1979–2003) were exclusively mlea.
 
 ### Pattern 3: Geographic and Cultural Representation</ExamTip>
 
-
 <ExamTip>**Example Stem:** "The 2022 Pritzker Prize winner was born in Burkina Faso and practices architecture emphasizing community agency and sustainable materials. Name this architect."</ExamTip>
 
-
 <ExamTip>**Expected Answer:** Diébédo Francis Kéré.</ExamTip>
-
 
 <ExamTip>**Exam Trap:** Confusing African architects or conflating Kéré's work with earlier Western sustainable-design movements. Kéré's significance is both geographic (first African) and ideological (design rooted in local agency).
 
 ### Pattern 4: Linking Prize Year to Building Timeline</ExamTip>
 
-
 <ExamTip>**Example Stem:** "Frank Gehry received the Pritzker Prize in 1989. Which of the following statements is correct? (A) The Guggenheim Bilbao was completed that year. (B) The prize recognized his lifetime contribution to architecture. (C) He was the first American to win."</ExamTip>
 
-
 <ExamTip>**Expected Answer:** (B). The Guggenheim Bilbao opened in 1997; Gehry was actually the sixth American to win (as of 1989). The prize honors *career* achievement, not a single project.</ExamTip>
-
 
 <ExamTip>**Exam Trap:** Conflating prize year with iconic building completion date. Many students assume the prize was awarded *for* a single famous building.
 
 ### Pattern 5: Ideological Shift and Jury Philosophy</ExamTip>
 
-
 <ExamTip>**Example Stem:** "From 1979 to 2015, the Pritzker Prize has evolved from emphasizing ___ innovation to recognizing ___."</ExamTip>
-
 
 <ExamTip>**Expected Answer:** Formal/structural; social and ecological responsibility (or: community-centered practice, humanitarian architecture, sustainable design).</ExamTip>
 
-
 <ExamTip>**Exam Trap:** Oversimplifying as a simple progression. The shift is real but not absolute; contemporary winners span ideologies.</ExamTip>
-
 
 ## Common Mistakes
 
@@ -109,7 +95,6 @@ The prize also intersects with the broader LEA curriculum unit on architectural 
 <WikiMistakeCard mistake="Mixing Up \"First\" Breakthroughs" correction="Hadid (2004, first woman) and Kéré (2022, first African) are distinct milestones. Hadid's innovation is formal and parametric; Kéré's is social and environmental." context="Confusing them collapses the prize's evolving ideological scope and risks losing exam points that hinge on understanding *why* these moments mattered differently." />
 
 <WikiMistakeList mistakes={["Assuming All Recent Winners Are Social-Practice Architects. While Aravena (2016) and Kéré (2022) center social equity, David Chipperfield (2023), Riken Yamamoto (2024), Liu Jiakun (2025), and Smiljan Radić Clarke (2026) represent diverse philosophies. Radić Clarke was recognized for architecture that embraces fragility, material experimentation, and cultural memory — not social housing. Don't assume the post-Aravena era means *all* prizes go to housing activists.", "Forgetting the Posthumous Exception. Frei Otto (2015) is the only deceased laureate to receive the Pritzker Prize posthumously (as of 2026). Some LEA questions test whether students know the prize's standard practice (honoring living architects) and can recognize exceptions. Otto's award was exceptional precisely because it broke protocol.", "Conflating Geographic Region with Formal Style. Kenzo Tange won in 1987 as \"first Japanese,\" but his work—Brutalist, metabolist, and urban planning-focused—doesn't represent a single Japanese aesthetic. Don't assume winning the prize means an architect represents or validates their nation's design canon. The prize recognizes individuals, not regional styles.", "Overlooking the Prize's Role in Historical Canon. Some students treat the Pritzker Prize as a simple popularity contest or financial reward. It is, instead, a powerful institutional mechanism that shapes which architects enter the global historical record, which ideas circulate as \"essential,\" and whose contributions are remembered. Missing this leads to superficial exam answers. The *reason* Hadid's 2004 win mattered isn't that she became famous—it's that she became *canonized*, permanently altering the discipline's official narrative."]} />
-
 
 ## Key Terms
 

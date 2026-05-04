@@ -8,6 +8,13 @@ Vernacular sustainable materials achieve environmental benefits through local so
 
 Adobe (volcanic tuff blocks) and rattan woven panels provide thermal mass and ventilation advantages in tropical climates, while nipa palm roofing and abaca fiber composites represent renewable material pathways. These materials reduce dependence on imported construction materials, lower embodied carbon through local production, and support rural livelihoods within the Philippines.
 
+
+<ArticleMedia id="media-vernacular-materials-chart" layout="single" type="image" status="placeholder"
+  alt="Comparison chart of vernacular building materials: bamboo, nipa, cogon, rattan, adobe, and stabilized earth blocks with property data"
+  caption="Future chart: vernacular and sustainable materials — properties and applications"
+  suggestedAsset="Material property comparison chart with construction detail examples"
+  placementIntent="Provides visual reference for traditional Philippine building materials" />
+
 ## Key Provisions
 
 <WikiExamTable headers={["Material", "Primary Standard", "Key Properties", "Structural Limitations"]}>
@@ -37,6 +44,12 @@ Rice hulls (agricultural waste from milling) and coconut husks (lignocellulose) 
 
 The National Building Code (NBCP) and NFPA Life Safety Code acknowledge vernacular materials through the "Materials Not Prescribed" clause (NBCP Sec. 104), allowing DPWH and local building officials to approve alternative materials based on engineering calculation and testing. BERDE certification recognizes bamboo and coco lumber as locally sourced sustainable materials, awarding additional points for regional material sourcing.
 
+
+<ArticleMedia id="media-vernacular-design-principles" layout="single" type="image" status="placeholder"
+  alt="Cross-section diagrams of vernacular building assemblies using bamboo, nipa, cogon, rattan, adobe, and stabilized earth blocks"
+  caption="Future diagram: vernacular building assembly details — bamboo, nipa, adobe, and earth block"
+  suggestedAsset="Cross-section and elevation drawings of traditional construction"
+  placementIntent="Shows how traditional Philippine materials are assembled into building systems" />
 ## How It's Tested
 
 LEA candidates must identify material types by their traditional and modern names (Kawayan tinik = Dendrocalamus asper; Bayog = Bambusa blumeana), match materials to applicable standards (bamboo: ISO 22156/22157; coco lumber: FPRDI standards; adobe: non-code, case-by-case), and recognize structural limitations. Questions present a regional vernacular structure design scenario and ask candidates to select appropriate materials for primary lateral bracing or secondary infill based on property tables and code provisions.

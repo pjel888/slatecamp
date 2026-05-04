@@ -7,20 +7,20 @@ Apply NSCP 2015 seismic bracing requirements for MEPF systems — trapeze suppor
 
 MEPF equipment must be seismically braced to prevent equipment failure, utility disruption, and occupant injury during earthquakes. The NSCP 2015 mandates that mechanical systems, electrical cabinets, piping systems, and HVAC components be anchored to structural elements with verified load capacity.
 
+<ArticleMedia id="media-lea-util-004-05-seismic-bracing-and-eart" a type="image" caption="MEPF Seismic Bracing — Trapeze Supports, Lateral Sway Braces, Flexible Couplings" description="Isometric diagram of seismic bracing for MEPF systems: trapeze supports for pipes and ducts with diagonal sway braces at 45°, flexible couplings at building expansion joints, pipe clamps bolted to structure, spring isolators with lateral snubbers for equipment, and cable restraints for suspended components. NSCP 2015 seismic force formula Fp = (0.4 × ap × SDS × Wp × Ip)/Rp annotated with example values." suggestedAsset="Diagram or reference image" status="placeholder" />
+
+
 _Seismic demand levels_ depend on building occupancy classification and seismic hazard zone. High-occupancy buildings (hospitals, schools, emergency shelters) require Seismic Demand Category (SDC) D or higher restraint design. Restraints must accommodate both horizontal acceleration (typically 0.4g in high-seismic zones per NSCP 2015 design spectra) and vertical acceleration (typically 0.2g to 0.3g). Equipment anchorage must transfer inertial forces to the structure without overloading connection points.
 
 Piping systems require flex couplings at seismic isolation joints to prevent rupture. Water supply lines must remain operable post-earthquake to support firefighting and emergency cooling. Electrical conduit and cable trays must use elastomeric hangers rated for expected seismic acceleration.
 
 ## Wind-Resistant Design for Typhoon Protection
 
-
 <KeyValues items=[{"value": "15-20%", "label": "Panel Efficiency"}, {"value": "25-30yr", "label": "Warranty Life"}, {"value": "Grid-Tie", "label": "Most Common"}, {"value": "1.2-1.5", "label": "DC/AC Ratio"}] />
-
 
 <ExamTip>
   **Exam Tip:** LEA questions on building utilities test code compliance and minimum standards. Memorize key thresholds: 25Ω max ground resistance, 6 ACH kitchen exhaust, 300-500 lx office lighting, NC 30-40 office noise criteria. Always reference the applicable code (PEC, Mechanical Code, NBCP, Fire Code) when answering.
 </ExamTip>
-
 
 <Tip>
 **Pro Tip:** When designing MEPF systems, always reserve adequate ceiling plenum space. Typical suspended ceiling depth requires 450-600mm above the finished ceiling to accommodate ductwork, conduit, piping, and fire protection systems. Coordinate all MEPF routing before finalizing structural slab-to-slab heights.
@@ -76,6 +76,9 @@ All exit signs require dedicated battery backup units or connection to a central
 ## Smoke Control and Pressurization Systems
 
 High-rise buildings and buildings with large floor plates require active smoke control to protect evacuation routes. NSCP 2015 Section 909 defines design criteria for smoke control systems.
+
+<ArticleMedia id="media-lea-util-004-05-seismic-bracing-and-eart" a type="image" caption="Stairwell Pressurization and Smoke Exhaust System — Section Diagram" description="Building section showing smoke control strategy: pressurized stairwell maintaining 25-50 Pa positive pressure to prevent smoke infiltration, smoke exhaust fans on roof discharging min 1.5m above occupied floor, supply air dampers closed on fire floor, exhaust dampers open. Emergency power supply (generator with auto-start ≤30s) labeled. NSCP 2015 Section 909 design criteria referenced." suggestedAsset="Diagram or reference image" status="placeholder" />
+
 
 _Stairwell pressurization_ maintains positive pressure (25 to 50 Pa above adjacent spaces) to prevent smoke infiltration during a fire. Supply air is delivered to the stairwell via HVAC ducting with a motorized damper (fail-open or fail-safe per building code). Pressure relief dampers on the stairwell perimeter (above the fire floor) allow air escape, maintaining design pressure differential.
 

@@ -66,15 +66,15 @@ Slip resistance matters in common areas and ramps. Glazed polished tiles (common
 
 **Question Type 4 (Troubleshooting):** Newly installed 80×80cm large-format tiles crack within 6 months. What is the most likely cause? Improper subfloor prep (>1/8" in 10 ft variation) combined with thin-set thickness &lt;5mm creates voids and stress concentration.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+<Tip>Memory aid: PEI grades climb from I (walls) to V (highways). For residential kitchens, Grade III is the "safe bet." For commercial malls, Grade IV or V. If you see "polished marble in a wet room," flag it as a BP 344 slip-resistance violation unless textured.</Tip>
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Specifying semi-vitreous tile for ground-level bathrooms in flood-prone regions" correction="Use porcelain (&lt;0.5% absorption, ASTM C373) for below-grade and wet areas to prevent capillary moisture and spalling." />
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Assuming visual 'non-slip' appearance meets BP 344 coefficient of friction requirements" correction="BP 344 mandates measured COF ≥0.60 (level) and ≥0.80 (slope). Request test data; visual texture does not guarantee compliance." />
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Selecting PEI I or II for kitchens because the tile 'looks nice'" correction="Kitchens demand PEI III minimum. PEI I and II wear visibly within 2-3 years under foot traffic, leading to costly replacement and drywall damage." />
 
 core-concept**, **lea-matl-007-05-core-concept**.
 

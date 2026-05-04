@@ -79,6 +79,8 @@ The Achaemenid approach—creating empire through architectural display—influe
 
 **Achaemenid Empire:** The first Persian empire (c. 550–330 BCE) founded by Cyrus II and extending from Egypt to India; its collapse followed Leaxander's conquest.
 
+<ArticleMedia id="media-hist-001-03-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Aerial site plan of Persepolis (c. 515–330 BCE) showing the Gate of All Nations, Apadana audience hall, Throne Hall, and the overall terrace platform layout illustrating Achaemenid imperial spatial organization." caption="Persepolis — Achaemenid Imperial Complex Plan" suggestedAsset="Timeline diagram" placementIntent="Timeline diagram for architectural period" />
+
 ## Related Articles
 
 See also within Ancient Architecture: **lea-hist-001-01-core-concept**, **lea-hist-001-02-core-concept**, **lea-hist-001-04-core-concept**, **lea-hist-001-05-core-concept**.

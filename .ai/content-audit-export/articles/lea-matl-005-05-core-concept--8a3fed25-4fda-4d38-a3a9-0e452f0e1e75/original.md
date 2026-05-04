@@ -14,6 +14,13 @@ _System Formwork_ — Standardized aluminum or steel panels with integrated brac
 
 _Slip-Form_ — Continuously moving forms support concrete placement as the structure rises. Used for tall repetitive structures (silos, towers, cores). Specialized jacking and guide systems maintain form position as concrete hardens. Advantages: continuous progress (days/floor), minimal setup/removal. Disadvantages: high cost, specialized labor, used only for tall/repetitive geometry.
 
+
+<ArticleMedia id="media-stripping-time-chart" layout="single" type="image" status="placeholder"
+  alt="Chart showing formwork stripping time requirements per NSCP 2015 for slabs, beams, walls, and columns with temperature dependency curves"
+  caption="Future chart: formwork stripping time requirements by member type and concrete strength"
+  suggestedAsset="Chart or table of minimum curing periods before form removal"
+  placementIntent="Provides quick reference for stripping time requirements under different conditions" />
+
 ### Formwork Design
 
 Formwork must support: (1) self-weight of fresh concrete, (2) reinforcement, (3) construction live load (workers, tools, impact from bucket placement), (4) form weight. ACI 347R specifies design loads:
@@ -29,6 +36,12 @@ Form pressure increases with concrete temperature (warmer = faster setting, lowe
 
 Forms supporting horizontal spans must not be struck until concrete achieves 70% of design 28-day strength per ACI 347. Typical timeline: 7–14 days for normal Portland cement at ambient temperature. Accelerated curing (heat, steam, special admixtures) reduces timeline to 1–3 days. Failure to observe minimum strength before stripping risks deflection, cracking, and structural failure.
 
+
+<ArticleMedia id="media-stripping-time-table" layout="single" type="image" status="placeholder"
+  alt="Reference table showing minimum formwork stripping times for slabs, beams, walls, and columns per NSCP 2015 with temperature adjustment factors"
+  caption="Future table: formwork stripping time requirements — NSCP 2015 minimums by member type"
+  suggestedAsset="Reference table or chart of stripping times and strength requirements"
+  placementIntent="Provides quick reference for formwork stripping timing" />
 ### Scaffolding Systems
 
 _Tubular Scaffolding_ — Steel or aluminum tubes (40–50 mm diameter) connected by clamps/welds. Highly flexible; assembled to custom configurations. Advantages: adaptable to irregular structures, reusable. Disadvantages: labor-intensive assembly, slower than frame scaffolding.

@@ -7,6 +7,10 @@ Identify the five testable markers of Chinese architecture — dougong bracketin
 
 Chinese architecture organizes space through hierarchical, axially-symmetric planning rooted in cosmological principles and structural innovation. The **dougong** bracket system—interlocking wooden blocks and arms—transfers loads from roof to column without nails, enabling large overhanging eaves, tall interior volumes, and seismic flexibility. This modular structure became the defining technical achievement, repeated across temples, palaces, and residential buildings. Buildings rise on elevated platforms (terraces), their entrances face south (cardinal orientation linked to feng shui), and interior courtyards define privacy gradients: public pavilions fronting streets, private family chambers receding inward.
 
+
+<ArticleMedia id="media-hist-007-02-core-concept" layout="single" type="image" status="placeholder" alt="View of the Hall of Supreme Harmony (Taihe Dian) in the Forbidden City, Beijing (built 1406–1420, Ming Dynasty), showing the layered/tiered roof with yellow glazed tiles, dougong bracketing, and wooden columns on a marble platform." caption="Forbidden City — Hall of Supreme Harmony" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
+
 The **Forbidden City** exemplifies imperial axial planning: a 960-meter north-south axis anchored by the **Gate of Heavenly Peace**, flowing through three outer courts (for state ceremonies), then three inner courts (imperial residence and heir heir quarters), with subsidiary east-west axes for bureaucratic and residential wings. Each pavilion sits on a stone platform; roofs curve upward at edges (eaves supported by dougong), finished with glazed yellow tiles (imperial color). The plan reinforces hierarchical power: only the emperor proceeds down the central axis; officials enter from sides. **Feng shui** orientation—south-facing, with water to the north and mountains to the south—structures the entire metropolitan plan.
 
 The **Temple of Heaven** inverts palace logic: instead of earthly power, it stages the emperor's ritual performance for cosmic harmony. The complex features the **Hall of Prayer for Good Harvests**, a circular pavilion with concentric colored tile rings (blue for heaven) sitting on three marble platforms; no nails or central column—purely dougong construction—allows 32-meter unobstructed interior span. The **siheyuan** courtyard house, the vernacular ideal, repeats palace principles at domestic scale: a rectangular wall encloses four pavilions (north, south, east, west) facing inward toward a central garden courtyard. Status determines pavilion position: the master occupies the north pavilion (warmest, most prestigious); servants occupy east/west wings; guest pavilion fronts the south gate.
@@ -23,6 +27,10 @@ Memory: **D-A-E-C-G** = Dougong, Axis, Elevated, Curved eaves, Glazed.</Tip>
 Materials and proportion follow standardized modules. Columns and beams interlock; roof pitch, bracket size, and tile patterns follow strict proportional rules documented in building manuals (*Yingzao Fashi*, compiled by Li Jie c. 1100, published 1103 during Song dynasty). This system enabled rapid, scalable construction and knowledge transfer across regions and centuries, from Chang'an (Tang dynasty) through Beijing (Ming/Qing dynasties).
 
 <Note>The Forbidden City's central axis runs NORTH-SOUTH (960 meters), not east-west. The emperor occupies the north pavilion and rules facing south, symbolizing heavenly authority over earthly subjects. This cardinal orientation is rooted in feng shui cosmology and is fundamental to understanding Forbidden City spatial hierarchy. Reversing the axis orientation is a common LEA error.</Note>
+
+
+<ArticleMedia id="media-hist-007-02-core-concept" layout="single" type="image" status="placeholder" alt="Diagram of the traditional Chinese dougong bracketing system, showing the interlocking wooden brackets (dou = block, gong = arm) that transfer roof weight from beams to columns, enabling the characteristic sweeping curved eaves." caption="Chinese Timber Frame — Dougong Bracket System" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
 
 ## Key Facts and Testable Items
 
@@ -62,6 +70,8 @@ The LEA emphasizes the **dougong** bracket system, axial planning tied to feng s
 - **Screen wall (zhaobi)**: Decorative partition inside gates, blocking direct sight lines for privacy and spiritual benefit; common in siheyuan and temple entries.
 
 <Warn>Do not treat feng shui as optional decoration or superstition. Feng shui—water to the north, mountains to the south, south-facing entrances, cardinal alignment—is architectural law in Chinese design. It determines building location, orientation, interior hierarchy, and entire urban plans. Understanding feng shui as structural principle (not cosmetic) is critical for analyzing Forbidden City, Temple of Heaven, and siheyuan. Dougong is a specific modular bracket system, not generic timber framing—do not confuse it with simple post-and-beam construction. Only Chinese, Korean, and Japanese sophisticated architecture employs true dougong.</Warn>
+
+<ArticleMedia id="media-hist-007-02-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Diagram showing the five testable markers of Chinese architecture: dougong bracketing, axial N-S orientation, courtyard organization, modular bay system (jian), and layered/tiered roofs, with annotated examples from the Forbidden City.\" caption=\"Chinese Architecture — Five Key Markers\" suggestedAsset=\"Style comparison illustration\" placementIntent=\"Style comparison for architectural period\" />
 
 ## Related Articles
 

@@ -3,8 +3,18 @@
 ## Learning Goal
 
 <Tip>Focus on the architect's defining philosophy and key built works. The LEA frequently tests the relationship between an architect's theoretical principles and their physical execution in specific buildings.</Tip>
+Extracted summary:
+<ExamTip>**LEA Pattern:** Questions about this architect often present an unfamiliar building and ask you to identify the architect based on characteristic details — look for signature elements like cruciform columns (Mies), pilotis (Corbusier), or structural expressionism (Gaudi).</ExamTip>
+Extracted summary:
+<Tip>Focus on the architect's defining philosophy and key built works. The LEA frequently tests the relationship between an architect's theoretical principles and their physical execution in specific buildings.</Tip>
+Extracted summary:
+- Props: (none)
+- Text: Focus on the architect's defining philosophy and key built works. The LEA fre...
 
 <Tip>Focus on the architect's defining philosophy and key built works. The LEA frequently tests the relationship between an architect's theoretical principles and their physical execution in specific buildings.</Tip>
+Extracted summary:
+- Props: (none)
+- Text: Focus on the architect's defining philosophy and key built works. The LEA fre...
 
 - Identify Mesoamerican architectural elements: stepped pyramids with talud-tablero profiles, ceremonial plazas, and Aztec chinampa-based urbanism.
 - Distinguish Teotihuacan (1st–7th c. CE, unidentified builders) from Tenochtitlan (1325 CE, Aztec), correcting common exam confusions.
@@ -35,6 +45,12 @@ Think: *"Power, People, Adaptation"* — pyramids project power, plazas gather p
 | **Aztec Urbanism (Tenochtitlan)** | Founded 1325; destroyed 1521; estimated 150,000–300,000 population; 8–13.5 km² | *Tezontle* stone, adobe, timber; chinampas (artificial island-gardens); causeways of compacted earth and stone | Four-quadrant (*campan*) grid along cardinal axes; three major causeways to mainland; aqueducts from Chapultepec; chinampas for agriculture | Water-adapted urbanism: chinampas convert lake into productive agricultural land; causeways manage access and flood control; aqueducts supply potable water separate from saline lake water |
 
 <ExamTip>**LEA Pattern:** Questions about this architect often present an unfamiliar building and ask you to identify the architect based on characteristic details — look for signature elements like cruciform columns (Mies), pilotis (Corbusier), or structural expressionism (Gaudi).</ExamTip>
+Extracted summary:
+
+component="ExamTip" status="preserved"]
+<Note>
+**LEA Pattern:** Questions about this architect often present an unfamiliar b...
+</Note>
 ## LEA Exam Traps and Common Mistakes
 
 - **"The Aztecs built Teotihuacan":** This is one of the most common exam traps. Teotihuacan flourished from the 1st to 7th century CE and was already a ruin by the time the Aztecs (Mexica) rose to power in the 14th century. The Aztecs revered Teotihuacan as a sacred ancestral site and named it ("The Place Where the Gods Were Born"), but they did not build it. The builders of Teotihuacan remain unidentified by ethnic name.
@@ -76,3 +92,5 @@ D. Teotihuacan was a small ceremonial site; Tenochtitlan was the first city in t
 
 **Inca Architecture Ashlar Masonry**, **North American Indigenous Architecture**, **African Vernacular Earth Architecture**, **Masters Of The Golden Age**
 
+
+<!-- no-media-needed: existing content format is sufficient without visual media -->

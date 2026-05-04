@@ -1,33 +1,32 @@
 # Content Diff Report: residential-clearances
 
-Generated: 2026-05-04T00:07:03.987Z
+Generated: 2026-05-04T02:17:52.867Z
 Article ID: 5ba0b022-0a85-4d27-af92-79d093a8d491
 Changed: true
-Safe to push locally: false
+Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:f51cd3bafc21aa20ff00137098f11406eb901772138d0239995f0eb67c074ddf`
+- Original: `sha256:8be0f2340d013cd936fbc4c0708f07d3b29d6f883fe0858f00b6e0c227c8783f`
 - Normalized: `sha256:5825b9ccc3210123fdfad4a3edd7c6bc5d1e275ee9a3ff705f19c706fbea10ba`
-- Candidate: `sha256:5825b9ccc3210123fdfad4a3edd7c6bc5d1e275ee9a3ff705f19c706fbea10ba`
+- Candidate: `sha256:5679683cde2a69c6f24fc1781004c3142365f39941b534d9646ef8acfa0615d4`
 
 ## Line summary
 
-- Changed lines: 362
-- Inserted lines: 12
+- Changed lines: 27
+- Inserted lines: 6
 - Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 4
-- UI blocks preserved: 0
-- UI blocks changed/missing: 4
-- Unresolved placeholders: 1
+- UI blocks preserved: 4
+- UI blocks changed/missing: 0
+- Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate contains unresolved UI block placeholders.
-- Candidate is missing 4 preserved UI block(s).
+- None
 
 ## Warnings
 

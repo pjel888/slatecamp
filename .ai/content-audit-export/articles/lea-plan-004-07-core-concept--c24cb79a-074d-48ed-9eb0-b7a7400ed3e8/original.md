@@ -5,7 +5,6 @@ Apply zoning ordinance constraints to specific development proposals, verify per
 
 Zoning analysis at the site level applies regulatory constraints to a specific development proposal. The designer must verify that proposed land uses comply with the adopted zoning ordinance, understand permitted uses and their restrictions, and identify any variances or exceptions required.
 
-
 ## Core Concept
 
 Regulatory and zoning analysis bridges planning law (CLUPs and zoning ordinances established by local government) with site-specific development. While LEA-PLAN-001-05 teaches the CLUP process and how zoning ordinances are adopted by the Sanggunian (municipal/city legislative body), this article applies zoning constraints to real development scenarios.
@@ -13,6 +12,7 @@ Regulatory and zoning analysis bridges planning law (CLUPs and zoning ordinances
 A zoning ordinance partitions a municipality into districts (residential, commercial, industrial, agricultural, etc.) and specifies what uses are permitted, permitted with conditions, or prohibited in each zone. Setback requirements, height limits, lot coverage ratios, and open space percentages are zone-specific. During site planning, the designer must answer: Is my proposed use permitted in this zone? What setbacks apply? What height limits? What open space must I provide?
 
 The zoning ordinance is the legal implementation tool of the CLUP, adopted by the Sanggunian and signed by the Mayor. It carries legal force; violations create grounds for denial of building permits. Understanding zoning is not optional—it is foundational to any site proposal.
+<ArticleMedia id="media-lea-plan-004-07-core-concept" a type="image" caption="Zoning Compliance Workflow — Use, FAR, Lot Coverage Verification" description="Workflow diagram for zoning compliance: verify permitted use → calculate FAR (floor area ratio) → calculate lot coverage → verify height limits → check setback requirements → identify required variances/exceptions → prepare compliance documentation for building permit." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
@@ -37,7 +37,6 @@ In Philippine municipal zoning ordinances, agricultural zones remain extensive i
   Remember: PD 1067 water easements (3m urban/20m agricultural/40m forest) apply
   regardless of zoning [citation:1][citation:6].
 </Tip>
-
 
 **Exam Tip:** Apply zoning in order: (1) verify zone classification on zoning map, (2) verify proposed use is permitted in the zone, (3) check dimensional requirements (FAR, setbacks, height), (4) identify required variances. Process is tested.
 

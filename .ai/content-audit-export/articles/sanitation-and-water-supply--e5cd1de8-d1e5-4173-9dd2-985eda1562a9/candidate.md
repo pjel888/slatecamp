@@ -325,7 +325,13 @@ A five-storey mixed-use building in Makati City has its roof drainage pipes conn
 
 > **Answer: B — Violation of Section 904, preventing CO issuance**
 >
-[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+<LawCallout code="pd1096" section="Rule IX - Sanitation">
+
+
+Per PD 1096, Rule IX, Sec. 904(1): "Rainwater drainage shall NOT discharge to the sanitary sewer system." This prohibition is absolute — connecting storm drainage to the sanitary sewer is a code violation regardless of sewer capacity, city engineer certification, or otherwise code-compliant status of the building. Because Rule III, Sec. 309 requires the building to comply with all applicable requirements of PD 1096 before a Certificate of Occupancy is issued, this violation prevents CO issuance and must be corrected by rerouting the roof drainage to a separate storm drainage system. Option A is incorrect because Sec. 903 (public sewer connection) and Sec. 904 (storm drainage separation) are independent requirements. Options C and D are not provided for in the code.
+
+
+</LawCallout>
 >
 > **LEA Area:** Architecture Utilities / Architectural Practice (Building Administration)
 
@@ -342,7 +348,13 @@ A developer is constructing a three-storey concrete hollow block (CHB) residenti
 
 > **Answer: B — CHB walls must be provided with rat-proofing**
 >
-[SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
+<LawCallout code="pd1096" section="Rule IX - Water Supply">
+
+
+Per PD 1096, Rule IX, Sec. 905(1): all buildings with hollow and/or wood construction shall be provided with rat-proofing. A CHB (concrete hollow block) building falls squarely within this requirement because hollow blocks, if not properly filled and selead, leave cavities that serve as rodent pathways. The Building Official must verify this provision during CO inspection per Rule III, Sec. 309. Option A (central air-conditioning) is not required by Sec. 905. Option C is incorrect — window screens are required only for public dining rooms without artificial ventilation per Sec. 905(3), not for all rooms. Option D (licensed pest control company) is not a mandatory provision of Section 905 — the code requires physical rat-proofing of the building, not a service contract.
+
+
+</LawCallout>
 >
 > **LEA Area:** Building Technology / Architectural Practice
 
@@ -359,7 +371,13 @@ A building owner in a municipality without a public sewer system seeks a Certifi
 
 > **Answer: C — Not compliant; the code specifies only three acceptable on-site alternatives**
 >
-[SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
+<LawCallout code="pd1096" section="Rule IX - Plumbing Requirements">
+
+
+Per PD 1096, Rule IX, Sec. 903(2): where no public sewer system exists, wastewater must be disposed of via (a) Imhoff or septic tank and subsurface absorption field, or (b) a suitable treatment plant, in conformance with the Code on Sanitation (PD 856) and DENR criteria. A holding tank with pump-out is not one of the enumerated alternatives. The code specifies systems that provide treatment or controlled subsurface dispersal — not mere collection and transport. Furthermore, Sec. 903 requires compliance with the Code on Sanitation (PD 856), which sets standards for on-site treatment, not mere collection. Options A and B conflate "contained" with "compliant." Option D is incorrect because DENR permitting for a holding tank does not substitute for compliance with PD 1096, Sec. 903. The Building Official must refuse CO issuance until a compliant wastewater system is installed.
+
+
+</LawCallout>
 >
 > **LEA Area:** Architectural Practice / Building Utilities
 

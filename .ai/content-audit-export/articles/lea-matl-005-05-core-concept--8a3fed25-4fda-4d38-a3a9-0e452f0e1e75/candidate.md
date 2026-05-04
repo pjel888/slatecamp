@@ -88,15 +88,15 @@ The LEA evaluates formwork/scaffolding through:
 4. _Scaffolding safety_ — Identify proper system (tube-clamp vs. frame), inspection intervals, fall protection per OSHA/NSCP 2015.
 5. _Philippine practices_ — Recognize coco lumber, tube-clamp assembly, and enforcement gaps in local practice.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+<Tip>Conventional timber formwork is the default for Philippine low-rise projects; it is economical and flexible. System formwork becomes cost-effective only for high-rise buildings with 15+ identical floors (capital amortized). ACI 347 stripping criteria (70% strength for horizontal spans) are empirically proven; never deviate for schedule pressure. Proper scaffolding inspection is a life-safety critical; non-negotiable enforcement is essential.</Tip>
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard title="Stripping Forms Before Strength Criteria Met" body="A project manager orders forms struck at 4 days to accelerate schedule. Concrete has achieved only ~50% strength; beams sag under live load of workers walking on them. Cracks develop in tension zones; concrete is compromised for the structure's 50-year life. ACI 347 criteria (70% for horizontal spans) are non-negotiable; schedule delays are cheaper than structural repair." />
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard title="Inadequate Scaffolding Inspection Causing Collapse" body="Tube-and-clamp scaffolding is erected and occupied without formal inspection. A clamp connection fails (poor installation, rust, overload); the entire bay collapses, injuring/killing workers. OSHA requires documented daily/weekly inspections and competent person certification. Inspection is a life-safety requirement, not optional." />
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
+<WikiMistakeList items={["Underestimating concrete form pressure from rapid placement—high pour rates (bucket hoisting with rapid cycles) increase hydrostatic-like pressure on vertical forms. Design formwork for actual placement rate, not nominal rate.", "Using single-use formwork when reusable coco lumber is available—virgin timber or plastic forms are expensive; conventional reusable timber is economical for 5–10 cycles per set.", "Failing to account for Philippine rainy season on formwork—wet coco lumber swells, warps, and loses strength. Covered storage and drying periods are necessary; schedule contingency is essential.", "Neglecting form pressure calculation in design—fresh concrete is heavy (~2.4 kPa per meter depth). Underestimated support systems fail. Always calculate per ACI 347 and apply safety factors.", "Inadequate fall protection on scaffolding—guardrails, safety nets, or harness systems are mandatory per OSHA. Workers without protection face fatal fall risk. Enforcement is non-negotiable, even in cost-sensitive projects."]} />
 
 ## Related Articles
 

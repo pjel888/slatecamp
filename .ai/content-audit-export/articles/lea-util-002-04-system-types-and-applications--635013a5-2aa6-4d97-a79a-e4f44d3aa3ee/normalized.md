@@ -7,7 +7,7 @@ Distinguish HVAC system types (split-type, window-type, packaged units, VRF/VRV,
 
 ### Split-Type Air Conditioning
 
-<ArticleMedia id="media-lea-util-002-04-system-types-and-applica" a type="image" caption="HVAC System Types Comparison — Split, VRF, Chilled Water, Packaged" description="Four-panel diagram comparing HVAC configurations: Panel 1 — Split-type (indoor unit + outdoor condenser, 0.75-5 TR); Panel 2 — VRF/VRV (single outdoor unit serving multiple indoor zones, 4-80 TR, individual zone control); Panel 3 — Chilled water (central chiller, fan-coil units, cooling tower, ≥50 TR); Panel 4 — Packaged rooftop unit (2-15 TR, single enclosure). Capacity ranges and typical applications labeled." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-util-002-04-system-types-and-applica" type="image" caption="HVAC System Types Comparison — Split, VRF, Chilled Water, Packaged" alt="Four-panel diagram comparing HVAC configurations: Panel 1 — Split-type (indoor unit + outdoor condenser, 0.75-5 TR); Panel 2 — VRF/VRV (single outdoor unit serving multiple indoor zones, 4-80 TR, individual zone control); Panel 3 — Chilled water (central chiller, fan-coil units, cooling tower, ≥50 TR); Panel 4 — Packaged rooftop unit (2-15 TR, single enclosure). Capacity ranges and typical applications labeled." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 
 Split systems separate indoor and outdoor components. Indoor units mount on walls, ceilings, or floors; outdoor condenser units sit outside. They operate at 220V/60Hz in the Philippine electrical grid.
@@ -129,7 +129,7 @@ _Payback calculated assuming electricity cost of ₱12–15 per kWh and 80% annu
 
 ## Refrigerant Standards and Phaseout Timeline
 
-<ArticleMedia id="media-lea-util-002-04-system-types-and-applica" a type="image" caption="Refrigeration Cycle Diagram — Compressor, Condenser, Expansion, Evaporator" description="Standard vapor-compression refrigeration cycle showing: compressor (increases refrigerant pressure/temperature), condenser (rejects heat), expansion valve (drops pressure), evaporator (absorbs heat). R-32 (GWP=675) and R-410A (GWP=2088) phaseout timelines per Kigali Amendment annotated. COP formula and typical values (2.8-4.1) shown for each HVAC system type." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-util-002-04-system-types-and-applica" type="image" caption="Refrigeration Cycle Diagram — Compressor, Condenser, Expansion, Evaporator" alt="Standard vapor-compression refrigeration cycle showing: compressor (increases refrigerant pressure/temperature), condenser (rejects heat), expansion valve (drops pressure), evaporator (absorbs heat). R-32 (GWP=675) and R-410A (GWP=2088) phaseout timelines per Kigali Amendment annotated. COP formula and typical values (2.8-4.1) shown for each HVAC system type." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ### Current Refrigerants in the Philippines
 

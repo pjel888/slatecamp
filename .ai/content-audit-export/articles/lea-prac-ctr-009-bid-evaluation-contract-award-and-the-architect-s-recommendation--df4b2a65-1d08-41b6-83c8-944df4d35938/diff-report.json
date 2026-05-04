@@ -1,46 +1,38 @@
 {
   "article_id": "df4b2a65-1d08-41b6-83c8-944df4d35938",
   "slug": "lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation",
-  "generated_at": "2026-05-04T00:06:44.465Z",
-  "old_hash": "sha256:cefb7f03bef59695f06ee87575f72310feec40bf86ebc21a627748ec49ef4600",
-  "new_hash": "sha256:ed3057ac5c18a39f89c1389ad3cb363a1107d18f4ab2156ee531deb00b1cda92",
-  "original_hash": "sha256:cefb7f03bef59695f06ee87575f72310feec40bf86ebc21a627748ec49ef4600",
+  "generated_at": "2026-05-04T02:17:28.093Z",
+  "old_hash": "sha256:7aa37e18771be61c59537b1f982213a2625d034a08d5c1a1207f0f538424e4cf",
+  "new_hash": "sha256:7aa37e18771be61c59537b1f982213a2625d034a08d5c1a1207f0f538424e4cf",
+  "original_hash": "sha256:7aa37e18771be61c59537b1f982213a2625d034a08d5c1a1207f0f538424e4cf",
   "normalized_hash": "sha256:ed3057ac5c18a39f89c1389ad3cb363a1107d18f4ab2156ee531deb00b1cda92",
-  "candidate_hash": "sha256:ed3057ac5c18a39f89c1389ad3cb363a1107d18f4ab2156ee531deb00b1cda92",
-  "changed": true,
-  "changed_line_count": 66,
+  "candidate_hash": "sha256:7aa37e18771be61c59537b1f982213a2625d034a08d5c1a1207f0f538424e4cf",
+  "changed": false,
+  "changed_line_count": 0,
   "inserted_line_count": 0,
-  "deleted_line_count": 22,
+  "deleted_line_count": 0,
   "ui_blocks_original_count": 4,
-  "ui_blocks_candidate_count": 0,
-  "ui_blocks_changed_count": 4,
+  "ui_blocks_candidate_count": 4,
+  "ui_blocks_changed_count": 0,
   "ui_blocks_count": 4,
-  "unresolved_placeholders_count": 1,
-  "preserved_blocks_count": 0,
+  "unresolved_placeholders_count": 0,
+  "preserved_blocks_count": 4,
   "changed_text_summary": {
-    "changed": 66,
+    "changed": 0,
     "inserted": 0,
-    "deleted": 22,
+    "deleted": 0,
     "original_line_count": 84,
-    "candidate_line_count": 62
+    "candidate_line_count": 84
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0001",
-      "ui_0002",
-      "ui_0003",
-      "ui_0004"
-    ],
-    "changed_count": 4
+    "missing_block_ids": [],
+    "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate contains unresolved UI block placeholders.",
-    "Candidate is missing 4 preserved UI block(s)."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 4 preserved UI block(s)."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

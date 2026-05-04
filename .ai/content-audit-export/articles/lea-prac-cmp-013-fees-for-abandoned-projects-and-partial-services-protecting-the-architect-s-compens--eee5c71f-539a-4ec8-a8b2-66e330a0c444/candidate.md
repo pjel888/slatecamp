@@ -19,18 +19,20 @@ The architect's fee is typically structured as milestone-based payments tied to 
 
 The key principle is that the architect receives compensation for completed design phases, not for projected future phases. The contract must clearly establish this milestone-based compensation structure so both parties understand what percentage of the total fee the architect earns if the project is abandoned at different points.
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Callout" status="preserved"]
+<KeyValues items=[{"value": "5-12%", "label": "DAEDS Fee Range"}, {"value": "50M", "label": "PCC Bracket Threshold"}, {"value": "10 Groups", "label": "Project Classification"}, {"value": "150%", "label": "Renovation Multiplier"}] />
 
 <Note>
 **LEA Priority — Fee Computation:** Know the five compensation methods (percentage-of-PCC, MDPE, lump sum, per diem/retainer, reimbursable expenses). Master the sliding scale for Groups 1-3 (5%→4%→3%→
 </Note>
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
+<LawCallout code="irr" section="Architect's Guidelines / SPP 202" title="Fee Computation — Regulatory Basis">
+Fee computation under the Architect's Guidelines follows SPP 202 classification groups and the DAEDS/DADS framework. The percentage-of-PCC method applies group-specific rates to Project Construction Cost. MDPE uses direct personnel expense multiplied by an agreed factor. Lump-sum fees are negotiated based on scope. All methods must be documented in the owner-architect agreement.
+</LawCallout>
 Extracted summary:
 - Props: code=irr, section=Architect's Guidelines / SPP 202, title=Fee Computation — Regulatory Basis
 - Text: Fee computation under the Architect's Guidelines follows SPP 202 classification groups and the DAEDS/DADS framework. The percentage-of-PCC method applies group-specific rates to Project Construction C...
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="KeyValues" status="preserved"]
+<KeyValues items=[{"value": "5-12%", "label": "DAEDS Fee Range"}, {"value": "50M", "label": "PCC Bracket Threshold"}, {"value": "10 Groups", "label": "Project Classification"}, {"value": "150%", "label": "Renovation Multiplier"}] />
 Extracted summary:
 - Props: items=[{"value": "5-12%", "label": "DAEDS Fee Range"}, {"value": "50M", "label": "PCC Bracket Threshold"}, {"value": "10 Groups", "label": "Project Classification"}, {"value": "150%", "label": "Renovation Multiplier"}]
 - Text: (none detected)
@@ -96,7 +98,9 @@ Clear contract language distinguishing suspension (temporary halt with expected 
 
 During proposal and contract negotiation, the architect should discuss and document abandonment and partial services provisions. Many clients don't anticipate project abandonment and may not realize the architect earned fees for completed phases even if the project doesn't proceed to completion. Transparency about what happens at abandonment, what the architect is compensated for, and what documentation is provided prevents disputes if abandonment occurs.
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
+<LawCallout code="irr" section="Architect's Guidelines / SPP 202" title="Fee Computation — Regulatory Basis">
+Fee computation under the Architect's Guidelines follows SPP 202 classification groups and the DAEDS/DADS framework. The percentage-of-PCC method applies group-specific rates to Project Construction Cost. MDPE uses direct personnel expense multiplied by an agreed factor. Lump-sum fees are negotiated based on scope. All methods must be documented in the owner-architect agreement.
+</LawCallout>
 Extracted summary:
 - Props: (none)
 - Text: Exam Note: The LEA board exam may test whether you know the 90% figure from SPP 202 Section 7.7 for completed Contract Documents when the Owner fails to implement the project. This is distinct from the 10% holdback for Construction Administration.

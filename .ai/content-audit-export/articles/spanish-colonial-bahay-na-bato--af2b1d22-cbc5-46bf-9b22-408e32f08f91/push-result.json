@@ -1,26 +1,21 @@
 {
-  "attempted_at": "2026-05-04T00:07:08.724Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:17:59.680Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "candidate.md matches original.md; refusing no-op apply."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "af2b1d22-cbc5-46bf-9b22-408e32f08f91",
   "slug": "spanish-colonial-bahay-na-bato",
   "preparation_actions": [
     "auto_generated_diff"
   ],
-  "remote_hash_before": "sha256:05425616cf16307a2593fab4a94c3d520e5662d231d0b9bbe869b577e0a52578",
-  "original_hash": "sha256:05425616cf16307a2593fab4a94c3d520e5662d231d0b9bbe869b577e0a52578",
-  "candidate_hash": "sha256:47a3692108f75246989b503c6af31d530d06ce6414db111ede61bec842e6be62",
+  "remote_hash_before": "sha256:b44b02a21161dbcd7b79ba5a86901c1468697c8c7e690b11cf3633f84317d8fd",
+  "original_hash": "sha256:b44b02a21161dbcd7b79ba5a86901c1468697c8c7e690b11cf3633f84317d8fd",
+  "candidate_hash": "sha256:b44b02a21161dbcd7b79ba5a86901c1468697c8c7e690b11cf3633f84317d8fd",
   "stale_check_passed": true,
-  "remote_updated_at_before": "2026-05-03T13:52:32.711017+00:00"
+  "remote_updated_at_before": "2026-05-04T02:02:04.831376+00:00"
 }

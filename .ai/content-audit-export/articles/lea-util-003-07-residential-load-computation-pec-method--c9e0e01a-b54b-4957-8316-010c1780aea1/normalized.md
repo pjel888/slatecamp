@@ -7,7 +7,7 @@ Calculate residential electrical loads using the PEC optional method (Section 2.
 
 ### Step-by-Step Calculation
 
-<ArticleMedia id="media-lea-util-003-07-residential-load-computa" a type="image" caption="Residential Load Calculation Workflow — Connected Load to Service Size" description="Step-by-step workflow diagram: Lighting (2 VA/sqm × area) + Small appliance circuits (3 × 1500 VA) + Laundry (1500 VA) + Fixed appliances → Total Connected Load → Apply demand factor (first 10,000 VA at 100%, remainder at 40% per PEC 220.42) → Demand Load → Service current calculation at 220V → Wire size and main breaker selection. Example 12,300 VA house yielding 10.92 kW demand shown." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-util-003-07-residential-load-computa" type="image" caption="Residential Load Calculation Workflow — Connected Load to Service Size" alt="Step-by-step workflow diagram: Lighting (2 VA/sqm × area) + Small appliance circuits (3 × 1500 VA) + Laundry (1500 VA) + Fixed appliances → Total Connected Load → Apply demand factor (first 10,000 VA at 100%, remainder at 40% per PEC 220.42) → Demand Load → Service current calculation at 220V → Wire size and main breaker selection. Example 12,300 VA house yielding 10.92 kW demand shown." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 
 **Step 1: Calculate Connected Load**

@@ -48,7 +48,7 @@ Standard foreign temporary permits remain available for non-ASEAN architects and
 
 
 
-<ArticleMedia type="image" caption="ASEAN Architect Registration — MRA Process Flowchart" description="Flowchart showing ASEAN MRA qualification pathway: National certification → ASEAN Architect Register application → AAC evaluation → ASEAN Architect designation → Practice rights in member countries. Side panel shows ASEAN member countries and Philippine Monitoring Committee (AMCASP) role. Requirements checklist for AA registration: education, experience, ethical record." />
+<ArticleMedia type="image" caption="ASEAN Architect Registration — MRA Process Flowchart" alt="Flowchart showing ASEAN MRA qualification pathway: National certification → ASEAN Architect Register application → AAC evaluation → ASEAN Architect designation → Practice rights in member countries. Side panel shows ASEAN member countries and Philippine Monitoring Committee (AMCASP) role. Requirements checklist for AA registration: education, experience, ethical record." />
 ## Related Articles
 
 - [Sole Proprietorship](lea-prac-frm-001)

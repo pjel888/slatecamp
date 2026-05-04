@@ -72,6 +72,8 @@ Wright's design principles are clear: **open plan** (remove interior walls, crea
 
 **Material Expression** — Exposing and emphasizing building materials' natural qualities—stone as stone, wood as wood, concrete as concrete—rather than covering them.
 
+<ArticleMedia id="media-hist-014-04-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparison of Frank Lloyd Wright's organic architecture across four iconic works: Robie House (Prairie style, horizontal emphasis), Fallingwater (cantilevered over waterfall), Taliesin West (desert integration), and Guggenheim Museum (continuous spiral)." caption="Frank Lloyd Wright — Organic Architecture Works" suggestedAsset="Style comparison illustration" placementIntent="Style comparison for architectural period" />
+
 ## Related Articles
 
 See also within United States Architecture: **lea-hist-014-01-core-concept**, **lea-hist-014-02-core-concept**, **lea-hist-014-03-core-concept**, **lea-hist-014-05-core-concept**.

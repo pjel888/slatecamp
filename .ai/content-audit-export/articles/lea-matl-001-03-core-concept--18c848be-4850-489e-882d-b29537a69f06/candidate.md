@@ -21,7 +21,7 @@ The strength of a connection depends on three factors: the joint geometry (how p
 
 A mortise is a rectangular cavity chiseled into one timber member. A tenon is a protruding rectangular element cut from the mating piece that slides into the mortise. This ancient joint excels in tension and resists racking because the tenon acts as both a mechanical key and a glue line.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="WikiExamTable" status="preserved"]
+<WikiExamTable headers={["Joint Type", "Mortise-and-Tenon", "Application", "Strength"]} rows={[["Through Mortise", "Tenon passes completely through", "Frames, doors", "High"], ["Blind Mortise", "Tenon does not exit", "Fine cabinetry", "Very High"], ["Wedged M&T", "Wedges lock the tenon", "Timber frames", "Maximum"]]} />
 
 ### Dovetail Joint
 
@@ -45,7 +45,7 @@ The simplest joint—one piece butts perpendicular against another with fastener
 
 Nails work through friction and bearing against wood fibers. Single nails fail by bending or pulling through under high shear. Multiple nails in staggered patterns improve performance. Modern tests show a single 16d nail in softwood develops shear strength around 150—200 lbf.
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Note" status="preserved"]
+<Note>Philippine Construction Standard NSCP 2015 Sections 601—623 specify nail spacing (minimum 10d for side grain, 5d for end grain with special nailing) to prevent wood splitting and premature nail shear failure.</Note>
 
 ### Screwed Connections
 
@@ -72,7 +72,7 @@ The strongest connections use both mechanical fasteners and adhesive. A bolted l
 
 Split rings are cast iron rings with a circular split and internal tooth. The ring seats in grooves cut into both adjoining timber members. As bolt tension is applied, the split closes and the teeth bite into the wood, transferring load through bearing and friction.
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="WikiExamTable" status="preserved"]
+<WikiExamTable headers={["Ring Size", "Bolt Diameter", "Load Capacity (lbf)", "Typical Use"]} rows={[["2-5/8 inch", "5/8 inch", "2500—3200", "Light trusses"], ["4 inch", "3/4 inch", "5000—6500", "Heavy trusses"], ["Larger rings", "Larger bolts", "8000+", "Large span timber structures"]]} />
 
 Split rings excel in tension and shear and are commonly found in residential and agricultural timber trusses. The wood must not be split or checked, and the connectors must be installed in the inner portion of solid cross-sections.
 
@@ -93,7 +93,7 @@ The flat geometry concentrates stress under the tooth, making shear plates more 
 
 Metal hangers suspend floor joists from beams or headers, transferring vertical load through steel fasteners rather than end-grain bearing (which is weak). A standard joist hanger rated for 2500—4000 lbf per nailing leg. Post bases secure timber posts to foundations, preventing uplift and lateral movement while allowing drainage beneath the post.
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
+<Tip>Modern joist hangers and post bases are designed to resist lateral forces and uplift, making them superior to traditional notching methods that reduce cross-section and concentrate stress.</Tip>
 
 ## Philippine Construction Context
 
@@ -116,13 +116,24 @@ The LEA assesses your ability to:
 
 Typical questions present a building detail with a wood connection and ask whether it meets code, or ask you to match joint characteristics to applications (structural frame vs. finish carpentry).
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="Tip" status="preserved"]
+<Tip>Always consider three factors when evaluating a wood connection: (1) load type and direction, (2) wood species and moisture, and (3) code requirements for edge distance and spacing. Ignoring any one factor leads to premature failure.</Tip>
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard
+  mistake="Assuming mortise-and-tenon joints are always stronger than nailed butt joints"
+  correction="A properly executed mortise-and-tenon in kiln-dried hardwood with epoxy glue is very strong; but a loose mortise-and-tenon with poor glue coverage or green wood develops low strength. A bolted connection with split rings often exceeds both in load capacity. Strength depends on execution, not joint type alone."
+  context="Candidates confuse traditional prestige with actual structural performance, ignoring material and fastening quality." />
 
-[SLATECAMP_UI_BLOCK:ui_0007 component="WikiMistakeList" status="preserved"]
+<WikiMistakeList
+  title="Connection Capacity Errors"
+  items={[
+    "Applying single-bolt shear capacity to multi-bolt groups without reduction: Group capacity is NOT the sum of individual capacities; interaction and geometry reduce group strength by 10—30%.",
+    "Ignoring wood moisture and season of load: A connection that carries 5000 lbf under dry conditions may fail at 3000 lbf in green wood or under long-term load.",
+    "Overlooking edge distance rules: NSCP 2015 requires minimum 1.5D from a bolt hole to loaded edge in tension, 1.0D to compression edge (D = bolt diameter). Closer spacing reduces capacity.",
+    "Confusing lag bolt capacity with machine bolt capacity: Lag bolts depend on wood bearing and thread engagement (lower capacity); machine bolts develop bearing and shear (higher capacity).",
+    "Neglecting to account for load angle: A diagonal load on a bolted connection may produce components that exceed allowable tension or shear in the wood perpendicular to grain (much weaker than parallel-to-grain)."
+  ]} />
 
 ## Related Articles
 

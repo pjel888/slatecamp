@@ -1,34 +1,32 @@
 # Content Diff Report: lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design
 
-Generated: 2026-05-04T00:07:07.961Z
+Generated: 2026-05-04T02:17:58.323Z
 Article ID: 3d1c062c-7fef-4972-9245-c4e404639c49
-Changed: true
-Safe to push locally: false
+Changed: false
+Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:67bbd7844e80874374e49fc22a5d7e2fca8b7a8baaa81e4c08682f35e6eda193`
+- Original: `sha256:32d597b8d166b61d45fd8735e9f7ea39608789fa20f1eb12af25e86a2f0f14ba`
 - Normalized: `sha256:8d945ab646126a82012cb7f9cd0886be663375f09515c4c8ed5a251a6a0ad9fe`
-- Candidate: `sha256:8d945ab646126a82012cb7f9cd0886be663375f09515c4c8ed5a251a6a0ad9fe`
+- Candidate: `sha256:32d597b8d166b61d45fd8735e9f7ea39608789fa20f1eb12af25e86a2f0f14ba`
 
 ## Line summary
 
-- Changed lines: 39
+- Changed lines: 0
 - Inserted lines: 0
-- Deleted lines: 5
+- Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 6
-- UI blocks preserved: 0
-- UI blocks changed/missing: 6
-- Unresolved placeholders: 1
+- UI blocks preserved: 6
+- UI blocks changed/missing: 0
+- Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate contains unresolved UI block placeholders.
-- Candidate is missing 6 preserved UI block(s).
-- original.md hash does not match article metadata export hash.
+- None
 
 ## Warnings
 

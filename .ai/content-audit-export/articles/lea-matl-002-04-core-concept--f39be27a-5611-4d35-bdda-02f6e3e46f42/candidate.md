@@ -192,11 +192,14 @@ The LEA expects you to:
 
 Typical questions present a building facade or interior finish application and ask which stone type is appropriate, or ask you to identify a stone based on hardness, color, and source.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+<Tip>Remember the rule: High water absorption + humid or wet exposure = poor durability. Limestone and travertine (high absorption) fail in tropical Philippines without protection; granite (low absorption) performs well.</Tip>
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard
+  mistake="Assuming harder stone (higher Mohs number) is always stronger (higher compressive strength)"
+  correction="Mohs hardness and compressive strength are different properties. A material can be hard but weak (e.g., some slate). Marble (Mohs 3—4) may have lower hardness but higher compressive strength than some sandstones. Always check both properties for design."
+  context="Designers sometimes select stone based on hardness alone, overlooking compressive strength and absorption issues." />
 
 ity and higher absorption make it unsuitable for exposed exterior in wet or industrial environments. Reserve marble for protected interior use.",
     "Confusing water absorption with durability: A stone with 2% absorption might be durable if properly sealed; a stone with 0.3% absorption is inherently durable. Always verify both absorption and protection measures.",

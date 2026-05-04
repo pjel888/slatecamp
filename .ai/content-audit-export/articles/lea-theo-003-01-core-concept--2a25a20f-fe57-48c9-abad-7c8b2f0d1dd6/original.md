@@ -2,12 +2,15 @@
 
 <Callout>Anthropometrics is the scientific measurement of the human body and its relationship to architectural space. The LEA tests your knowledge of three major systems—Neufert's Architects' Data, Henry Dreyfuss's The Measure of Man, and Le Corbusier's Modulor—and their specific numerical dimensions used in design. You must know standard door heights (2100mm), passage widths (900mm minimum), counter heights (900mm), and eye heights (seated ~1100–1200mm, standing ~1500–1600mm) because these appear as MCQ choices.</Callout>
 
-
 ## Learning Goal
 
 Distinguish the three major anthropometric systems (Neufert, Dreyfuss, Modulor) and recall standard human dimensions including door heights, passage widths, counter heights, and eye levels for design application.
 
 ## Core Concept
+
+|<ArticleMedia id="media-lea-theo-003-01-core-concept" a type="image" caption="Anthropometric Reference Systems — Neufert, Dreyfuss, Modulor" description="Three-panel comparison diagram showing the major anthropometric reference systems: Panel 1 — Ernst Neufert's Architects' Data (standard human dimensions: door heights 2100mm, passage widths 900mm, counter heights 900mm, eye level 1500mm, reach envelopes); Panel 2 — Henry Dreyfuss's The Measure of Man (anthropometric tables for 5th-95th percentile, range of motion diagrams, ADA reach ranges); Panel 3 — Le Corbusier's Modulor (human figure 1830mm height with upraised arm at 2260mm defining Red and Blue series, Fibonacci-based proportional dimensions). A reference figure at center shows annotated standard dimensions for Philippine design application." suggestedAsset="Diagram or reference image" status="placeholder" />
+
+<ArticleMedia id="media-lea-theo-003-01-core-concept-b" type="image" caption="Standard Anthropometric Dimensions — Door Heights, Counter Heights, Reach Zones" description="Architectural section showing a human figure with annotated vertical dimensions critical for LEA: door height (2100mm), counter height (900mm), standing eye level (1500-1650mm), seated eye level (1100-1200mm), forward reach seated (400-450mm), forward reach standing (700-800mm), vertical reach standing (2000-2100mm), passage width single (900mm), passage width two-way (1200mm). All dimensions marked with Philippine code references (PD 1096, BP 344)." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 Anthropometrics transforms the human body into a design tool. Architects do not design buildings for abstract concepts; they design for bodies—seated bodies, standing bodies, reaching bodies, moving bodies. Since the early 20th century, three landmark systems have rationalized human dimensions into standards that architects worldwide use daily.
 
@@ -41,21 +44,15 @@ Modern architecture cannot ignore these systems without consequence. Buildings d
 <WikiExamTable headers={["Dimension", "Neufert", "Dreyfuss", "Modulor", "Use/Context"]} rows={[['["Standing body height", "~1700mm", "~1700mm (avg.)", "1830mm (standard man)", "Reference for door height, ceiling height psychology"]', '["Standing eye height", "~1500–1600mm", "~1550–1650mm", "N/A (proportional)", "Wayfinding, signage, horizon line"]', '["Seated eye height", "~1100–1200mm", "~1100–1200mm", "N/A (proportional)", "Counter design, restaurant seating, workstation design"]', '["Seated height", "~800–850mm", "~800–850mm", "Derived from 1830m", "Furniture height, desk design"]', '["Door height (standard)", "2050–2100mm", "2032mm (80 inches)", "Harmonized by Modulor", "All public and residential doors; LEA standard answer: 2100mm"]', '["Door width (standard single)", "800–900mm", "32–36 inches (813–914mm)", "Harmonized by Modulor", "Residential; passage for single person; wheelchair access ≥820mm"]', '["Passage width (single)", "900mm minimum", "36 inches (914mm)", "Derived from Modulor", "Corridor, hallway, circulation"]', '["Passage width (double/circulation)", "1200mm (communal)", "Implied: 1200mm+", "Derived from Modulor", "Shared corridors, lobby, emergency egress"]', '["Counter height (standing work)", "900mm", "900mm (optimal)", "Harmonized by Modulor", "Kitchen, bar, reception, retail"]', '["Reach height (forward, seated)", "~450mm", "400–450mm", "Derived from proportions", "Workstation depth, meal table depth"]', '["Reach height (forward, standing)", "~700–800mm", "700–800mm", "Derived from proportions", "Shelving, controls, counter depth"]', '["Reach height (vertical, standing)", "~2200–2260mm", "2000–2100mm", "2260mm (reach with arm)", "High storage, shelf limits, ceiling-mounted elements"]', '["Navel height (proportion)", "Implicit", "Not emphasized", "1130mm (golden ratio division)", "Modulor system; proportional balance in room design"]', '["Reach height with arm raised", "2260mm", "~2100mm", "2260mm (explicit)", "Modulor\'s second measurement series; upper reach limits"]']]} />
 ## How It's Tested on the LEA
 
-
 <ExamTip>1. **Direct Dimension Questions (MCQ):** "The standard interior door height in the Philippines is most commonly (a) 1800mm (b) 2000mm (c) 2100mm (d) 2200mm." Answer: (c) 2100mm. Variants test passage width (900mm) and counter height (900mm).</ExamTip>
-
 
 <ExamTip>2. **Ergonomic Context Questions:** "In designing a kitchen counter for a standing cook, which height is most appropriate? (a) 700mm (b) 850mm (c) 900mm (d) 1050mm." Answer: (c) 900mm. Tests understanding of Neufert/Dreyfuss standards.</ExamTip>
 
-
 <ExamTip>3. **Anthropometric System Attribution:** "Which anthropometric system establishes the standard man at 1.83m and includes two measurement series (red and blue) based on Fibonacci proportions? (a) Neufert (b) Dreyfuss (c) Le Corbusier's Modulor (d) Ernst Freud." Answer: (c). Tests knowledge of Modulor's theoretical foundation.</ExamTip>
-
 
 <ExamTip>4. **Eye Height and Wayfinding:** "Signage for general public wayfinding should be positioned at approximately which height to optimize legibility? (a) 1200mm (b) 1500–1600mm (c) 1800mm (d) 2100mm." Answer: (b). Tests understanding of standing eye height.</ExamTip>
 
-
 <ExamTip>5. **Accessibility and Passage:** "A residential corridor must accommodate single-file passage with minimal design constraints. What is the minimum required width? (a) 750mm (b) 900mm (c) 1050mm (d) 1200mm." Answer: (b) 900mm. Tests Neufert and code knowledge.</ExamTip>
-
 
 ## Common Mistakes
 
@@ -64,7 +61,6 @@ Modern architecture cannot ignore these systems without consequence. Buildings d
 <WikiMistakeCard mistake="Using imperial-metric conversion errors" correction="Door height is 2100mm (or 2050mm), not 2032mm (which is 80 inches converted). Students often use the imperial-to-metric conversion (80″ = 2032mm) instead of the local/architectural standard (2100mm)." context="The LEA is based on Philippine/metric standards; use 2100mm as the safe answer." />
 
 <WikiMistakeList mistakes={["Applying Modulor as a strict ergonomic system. The Modulor is proportional and aesthetic, not purely ergonomic. It harmonizes space but does not optimize comfort in the way Neufert or Dreyfuss does. A student might assume Modulor dimensions are \"safer\" for all design contexts, missing that Neufert and Dreyfuss are more directly linked to safety and accessibility.", "Misremembering Modulor's primary dimension. Le Corbusier's standard man is 1.83m (or 183cm), not 1.7m or 1.8m. Students under pressure often round, creating wrong answers. The 1.83m dimension is tested directly because it generates the entire proportional series.", "Treating eye height as a static dimension. Eye height varies by posture, head tilt, seating depth, and footwear. Seated eye height ~1100–1200mm is a range, not a fixed point. Students must understand that anthropometric data represents statistical central tendency, not absolutes.", "Forgetting cultural and regional variation. Anthropometric standards are based on specific populations (Neufert on European data, Dreyfuss on North American data). The Philippines may have different average heights and proportions. However, the LEA uses international (Neufert, Dreyfuss, Le Corbusier) standards as the canon, so students must master those first."]} />
-
 
 ## Key Terms
 

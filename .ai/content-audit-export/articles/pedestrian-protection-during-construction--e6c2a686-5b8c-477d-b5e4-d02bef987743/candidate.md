@@ -214,11 +214,25 @@ Articles **694–707 of the Civil Code of the Philippines** govern nuisances. A 
 
 ---
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+<LawCallout code="pd1096" section="Rule I - Pedestrian Protection">
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="ExamTip" status="preserved"]
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
+Rule XI, Sec. 1101-1108: Three critical dimensions — (1) Walkway: min 1.20 m clear width, can carry 650 kg/m² live load. (2) Fence/hoarding: min 2.40 m height. (3) Railing: min 1.00 m height with mid-rail at 450 mm. The curb board (300 mm min) prevents debris from spilling onto the walkway.
+
+
+</LawCallout>
+
+<ExamTip>
+
+LEA Pattern: Questions test specific Rule XI dimensions. Memorize the '1.20-2.40-1.00' triplet (walkway width, fence height, railing height). For excavation protection: the walkway must extend the full length of the excavation with a handrail on the street side if within 1.20 m of vehicular traffic.
+
+</ExamTip>
+
+<Warn>
+
+⚠️ Common Violation: Contractors often place construction materials (mixers, rebar, sand) directly on the walkway. Sec. 1102 prohibits this — the walkway must remain clear and unobstructed for pedestrians. Any obstruction requires separate Building Official authorization.
+
+</Warn>
 
 ## Mnemonic Devices
 

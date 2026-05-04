@@ -1,47 +1,38 @@
 {
   "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
   "slug": "ceiling-heights-and-room-sizes",
-  "generated_at": "2026-05-04T00:07:06.248Z",
-  "old_hash": "sha256:b5f2d65fc31ce5c8271add72819be37978357b8fc4e34efd0015ac68c3b59a46",
-  "new_hash": "sha256:5eeb6a420e87d1887d94da6a0b1ba56eb94f6fd461c2cdc5f8f9a11f2f75564f",
-  "original_hash": "sha256:b5f2d65fc31ce5c8271add72819be37978357b8fc4e34efd0015ac68c3b59a46",
-  "normalized_hash": "sha256:5eeb6a420e87d1887d94da6a0b1ba56eb94f6fd461c2cdc5f8f9a11f2f75564f",
-  "candidate_hash": "sha256:5eeb6a420e87d1887d94da6a0b1ba56eb94f6fd461c2cdc5f8f9a11f2f75564f",
+  "generated_at": "2026-05-04T02:25:30.695Z",
+  "old_hash": "sha256:470e3c3105aecd9d7bfa6a25f265d7bfaeff3595b02c0d39bae74aa460c59dd8",
+  "new_hash": "sha256:f8a55dc3fd235f059b6c8ffbc7ea23aebd6a343cbc5877f03bdca58b61a197f3",
+  "original_hash": "sha256:470e3c3105aecd9d7bfa6a25f265d7bfaeff3595b02c0d39bae74aa460c59dd8",
+  "normalized_hash": "sha256:fe4dce8cf397aab9826292412bcd61b33afc8e78d76fbc201cd58f514635a60f",
+  "candidate_hash": "sha256:f8a55dc3fd235f059b6c8ffbc7ea23aebd6a343cbc5877f03bdca58b61a197f3",
   "changed": true,
-  "changed_line_count": 338,
-  "inserted_line_count": 13,
+  "changed_line_count": 274,
+  "inserted_line_count": 4,
   "deleted_line_count": 0,
   "ui_blocks_original_count": 4,
-  "ui_blocks_candidate_count": 0,
-  "ui_blocks_changed_count": 4,
+  "ui_blocks_candidate_count": 4,
+  "ui_blocks_changed_count": 0,
   "ui_blocks_count": 4,
-  "unresolved_placeholders_count": 1,
-  "preserved_blocks_count": 0,
+  "unresolved_placeholders_count": 0,
+  "preserved_blocks_count": 4,
   "changed_text_summary": {
-    "changed": 338,
-    "inserted": 13,
+    "changed": 274,
+    "inserted": 4,
     "deleted": 0,
-    "original_line_count": 345,
-    "candidate_line_count": 358
+    "original_line_count": 374,
+    "candidate_line_count": 378
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0001",
-      "ui_0002",
-      "ui_0003",
-      "ui_0004"
-    ],
-    "changed_count": 4
+    "missing_block_ids": [],
+    "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate contains unresolved UI block placeholders.",
-    "Candidate is missing 4 preserved UI block(s).",
-    "original.md hash does not match article metadata export hash."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 4 preserved UI block(s).; original.md hash does not match article metadata export hash."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

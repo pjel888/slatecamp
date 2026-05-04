@@ -1,6 +1,8 @@
 ## What You Need to Know for the LEA
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
+<Callout>
+You will encounter questions testing your understanding of the architectural design process as a systematic progression from concept through completion. The LEA tests how design decisions flow from initial client intentions through schematic design, design development, and construction administration, reflecting the profession's structured approach to problem-solving.
+</Callout>
 
 ## Learning Goal
 
@@ -8,7 +10,9 @@ Understand the five-phase architectural design process (Schematic Design through
 
 ## Core Concept
 
-<ArticleMedia id="media-lea-theo-001-07-core-concept" a type="image" caption="The Five-Phase Architectural Design Process" description="Process flow diagram showing the five sequential phases: Schematic Design (concept sketches, preliminary plans, massing studies) → Design Development (refined drawings, material selection, system design, consultant coordination) → Construction Documents (comprehensive drawings, specifications, permit set) → Bidding and Negotiation (contractor selection, bid evaluation, contract award) → Construction Administration (site visits, shop drawing review, payment certification, change orders, project closeout). Arrows show progression with feedback loops indicating overlapping phases for smaller projects." suggestedAsset="Diagram or reference image" status="placeholder" />
+|<ArticleMedia id="media-lea-theo-001-07-core-concept" type="image" caption="The Five-Phase Architectural Design Process" alt="Process flow diagram showing the five sequential phases: Schematic Design (concept sketches, preliminary plans, massing studies) → Design Development (refined drawings, material selection, system design, consultant coordination) → Construction Documents (comprehensive drawings, specifications, permit set) → Bidding and Negotiation (contractor selection, bid evaluation, contract award) → Construction Administration (site visits, shop drawing review, payment certification, change orders, project closeout). Arrows show progression with feedback loops indicating overlapping phases for smaller projects." suggestedAsset="Diagram or reference image" status="placeholder" />
+
+<ArticleMedia id="media-lea-theo-001-07-core-concept-b" type="image" caption="Design Phase Deliverables Comparison — Level of Detail Progression" alt="Comparative diagram showing how the same building element (e.g., a window wall section) is represented at each phase: Schematic Design (simple sketch with basic dimensions), Design Development (detailed drawing with materials, frame type, glazing specification), Construction Documents (full technical drawing with dimensions, annotations, schedules, and connections). Demonstrates the progressive refinement from concept to constructible reality." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 Architecture is not created in isolation. The **architectural design process** is the systematic progression through which an architect translates client needs and project requirements into a complete building design. This process unfolds in distinct phases, each with specific deliverables, stakeholders, and decision-making criteria. Understanding these phases is essential to the Philippine architecture licensure examination, as the LEA repeatedly tests candidates on how architects organize their work and communicate with clients and contractors.
 
@@ -26,35 +30,41 @@ The standard design process, codified by the American Institute of Architects an
 
 These five phases are not rigidly sequential. On smaller projects, phases may overlap or be compressed. On design-build projects where a single firm both designs and constructs the building, the phases may be organized differently. On highly complex projects, additional phases may be added, and stakeholder engagement may occur throughout the entire process. Regardless of the specific project delivery method, the fundamental progression from concept to construction remains the architect's systematic approach to design problem-solving.
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+<Tip>
+**Five Phases Progression:** Schematic Design → Design Development → Construction Documents → Bidding/Negotiation → Construction Administration. Each phase produces increasingly detailed information and requires specific approvals before proceeding.
+</Tip>
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
+<Note>
+Consultants (structural, mechanical, electrical engineers) typically join during Design Development, not at project start. This sequential approach is cost and time efficient because specialists can focus on refining systems once the architect establishes design direction.
+</Note>
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
+<Warn>
+Critical distinction: Once Construction Documents are issued, changes become expensive. The document phase is the last opportunity for design revisions. Changes after bidding or during construction are processed as change orders with cost and schedule impacts. Do not confuse the architect's creative phase (Schematic Design, Design Development) with the verification phase (Construction Administration).
+</Warn>
 
 ## Key Facts and Testable Items
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="WikiExamTable" status="preserved"]
+<WikiExamTable headers={["Phase", "Primary Deliverables", "Client Approval?", "Level of Detail"]} rows={[["**Schematic Design**", "Sketches, preliminary floor plans, site analysis, 3D renderings", "**YES** — design direction", "Conceptual, not specified"], ["**Design Development**", "Detailed drawings, material selections, system layouts, cost estimates", "Typically YES — design intent", "Increasingly specific"], ["**Construction Documents**", "Comprehensive technical drawings, specifications, schedules, calculations", "**YES** — construction readiness", "Complete and precise"], ["**Bidding/Negotiation**", "Bid documents, contractor interviews, contract negotiation", "Owner decides contractor", "N/A — procurement phase"], ["**Construction Administration**", "Site observations, RFIs answered, change orders processed, payment certified", "Ongoing — quality verification", "Field compliance"]]} />
 
 ## How It's Tested on the LEA
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
+<ExamTip>**Pattern 1: Process Sequencing.** The LEA asks questions about which phase comes first or which deliverable is produced during a specific phase. Example stem: "In which design phase is the schematic design drawing reviewed and approved by the client?" Answer: Schematic Design phase, typically at its conclusion, before proceeding to Design Development.</ExamTip>
 
-[SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
+<ExamTip>**Pattern 2: Deliverable Recognition.** You will be asked to identify what type of drawing or document is produced during a given phase. Example stem: "Which of the following is a primary deliverable of the Design Development phase?" Correct answers include detailed material specifications, final structural system selection, and refined cost estimates. Incorrect answers would include preliminary sketches or construction-ready specifications.</ExamTip>
 
-[SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
+<ExamTip>**Pattern 3: Decision-Making Timing.** The LEA tests whether you understand when specific decisions occur. Example stem: "At what point in the design process are major structural systems selected and finalized?" Answer: During Design Development, after the schematic concept is approved but before Construction Documents are produced.</ExamTip>
 
-[SLATECAMP_UI_BLOCK:ui_0009 component="ExamTip" status="preserved"]
+<ExamTip>**Pattern 4: Stakeholder Involvement.** Questions address who participates in each phase. Example stem: "When does the structural engineer typically join the design team?" Answer: During Design Development, once the schematic design direction is established, to develop structural systems that support the approved design concept.</ExamTip>
 
-[SLATECAMP_UI_BLOCK:ui_0010 component="ExamTip" status="preserved"]
+<ExamTip>**Pattern 5: Design Modification.** The LEA tests understanding of how changes flow through the process. Example stem: "If a client requests a significant change after Construction Documents are complete, how is this typically handled?" Answer: Through a change order process during Construction Administration, with cost and schedule impacts documented.</ExamTip>
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0011 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Confusing Schematic Design with Design Development" correction="Schematic design establishes only the general layout, form, and sclea. Details like specific window placements, finish selections, and structural solutions are developed later. Schematic design drawings are concept-level, not specification-level." context="The LEA tests whether you understand the increasing specificity of drawings across phases. Knowing which details belong to which phase prevents confusion about timing and approval processes." />
 
-[SLATECAMP_UI_BLOCK:ui_0012 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Assuming all consultants join at project start" correction="Consultants typically join during Design Development, after the architect has established the design direction. This sequential approach saves time and cost by engaging specialists only after design parameters are set." context="Understanding when specialists join demonstrates knowledge of efficient project delivery and workflow management, a tested topic on the LEA." />
 
-[SLATECAMP_UI_BLOCK:ui_0013 component="WikiMistakeList" status="preserved"]
+<WikiMistakeList mistakes={["Treating Construction Documents as flexible: Once Construction Documents are issued for bidding, they become relatively fixed. Changes after this point incur cost and schedule penalties. Some candidates incorrectly assume the architect can modify drawings freely throughout construction; this is not standard practice.", "Misunderstanding the architect's role in Construction Administration: Many students believe the architect manages the construction site or acts as the contractor's supervisor. The architect's role is quality verification and design interpretation, not site management. The contractor manages the site; the architect verifies compliance.", "Overlooking the importance of client approval: Client approval at the end of Schematic Design and at the end of Design Development is critical. Without these approvals, the project cannot proceed to the next phase.", "Confusing design phases with procurement phases: The Bidding/Negotiation phase is not a design phase—it is a procurement phase. The design is complete by the time bidding occurs. Some candidates incorrectly treat bidding as part of the design process rather than as a separate procurement step."]} />
 
 ## Key Terms
 
@@ -78,7 +88,7 @@ These five phases are not rigidly sequential. On smaller projects, phases may ov
 
 **Design Intent** — The architect's conceptual and technical vision for the project, communicated through drawings, specifications, and decisions that guide construction.
 
-[SLATECAMP_UI_BLOCK:ui_0014 component="ExamTip" status="preserved"]
+<ExamTip>**Process Phase Question:** If a client requests a major plan revision after the Construction Documents phase has begun, what is the most appropriate procedure? Answer: Process a Change Order through Construction Administration, documenting cost and schedule impacts. The design is frozen once CD is issued for bidding.</ExamTip>
 
 ## Related Articles
 

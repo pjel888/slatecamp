@@ -7,9 +7,9 @@
 
 ## Schema Activation: Why This Module Matters
 
-[SLATECAMP_UI_BLOCK:ArticleMedia name="occupancy-groups-visual" type="diagram" caption="Visual reference card for all 10 occupancy groups A–J with icons: A (house), B (hotel), C (school), D (hospital), E (office/store), F (factory), G (warehouse/hazardous), H (theater less than 1000), I (stadium 1000 or more), J (fence/shed). Arrange as a grid with group letter, full name, example building, and color-coded hazard band. Include the Type I–V construction scale with opposite direction reminder."]
+<ArticleMedia id="media-occupancy-groups-visual" type="diagram" caption="Visual reference card for all 10 occupancy groups A–J with icons: A (house), B (hotel), C (school), D (hospital), E (office/store), F (factory), G (warehouse/hazardous), H (theater less than 1000), I (stadium 1000 or more), J (fence/shed). Arrange as a grid with group letter, full name, example building, and color-coded hazard band. Include the Type I–V construction scale with opposite direction reminder." />
 
-[SLATECAMP_UI_BLOCK:ArticleMedia name="mixed-occupancy-flowchart" type="diagram" caption="Decision flowchart for mixed-occupancy buildings: check if 1-storey → each portion follows own occupancy; check if accessory use ≤10% of floor area → major occupancy governs; otherwise → most restrictive occupancy governs the entire building. Include examples like 'mall with clinic' and 'apartment with ground-floor retail'."]
+<ArticleMedia id="media-mixed-occupancy-flowchart" type="diagram" caption="Decision flowchart for mixed-occupancy buildings: check if 1-storey → each portion follows own occupancy; check if accessory use ≤10% of floor area → major occupancy governs; otherwise → most restrictive occupancy governs the entire building. Include examples like 'mall with clinic' and 'apartment with ground-floor retail'." />
 
 ## Learning Goal
 

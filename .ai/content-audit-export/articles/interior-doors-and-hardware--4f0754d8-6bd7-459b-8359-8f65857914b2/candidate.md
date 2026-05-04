@@ -27,7 +27,11 @@ This section is frequently tested. Pay special attention to the distinctions and
 
 ## CHEAT SHEET: COMPLETE DOOR SPECIFICATIONS
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+<LawCallout code="bp344" title="Appendix A, General Provisions on Interior Doors & Hardware; cross-referenced wi">
+
+Legal Basis: BP 344 (2024 IRR) — Appendix A, General Provisions on Interior Doors & Hardware; cross-referenced with Appendix D Sections 13 (Dressing Rooms) and 17 (Lodging)
+
+</LawCallout>
 
 | Element | Specification | IRR Reference | Notes |
 |---------|-------------|---------------|-------|
@@ -173,7 +177,11 @@ Is it a lodging/guest room?
 | Opening force | As low as possible; no specific value in BP 344 for standard doors | Governed by fire code — but accessibility requires low force |
 | Threshold | Max 12 mm, bevel if >6 mm | Same; fire-rated thresholds must still comply |
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
+<LawCallout code="bp344" title="the stricter clear width governs.">
+
+Cross-reference: PD 1096 (National Building Code) governs fire exit door widths and panic hardware. BP 344 governs the accessibility dimension of those same doors. Both apply simultaneously — the stricter clear width governs.
+
+</LawCallout>
 
 ---
 

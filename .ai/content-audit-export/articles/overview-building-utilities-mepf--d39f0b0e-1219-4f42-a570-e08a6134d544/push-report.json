@@ -1,26 +1,21 @@
 {
-  "attempted_at": "2026-05-04T00:06:13.010Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:16:42.866Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "candidate.md matches original.md; refusing no-op apply."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "d39f0b0e-1219-4f42-a570-e08a6134d544",
   "slug": "overview-building-utilities-mepf",
   "preparation_actions": [
     "auto_generated_diff"
   ],
-  "remote_hash_before": "sha256:74bd756461912d83c4c43f11ecbcb04338be75b3a02bbf73726458b1e459748c",
-  "original_hash": "sha256:74bd756461912d83c4c43f11ecbcb04338be75b3a02bbf73726458b1e459748c",
-  "candidate_hash": "sha256:664791691d00aedb1823bb62624a1900b3f257770f94bf783f832b0b07e1a25d",
+  "remote_hash_before": "sha256:12a4701759d494e6b425dfc0a68c453b502ad37a09a6b16ae6d51e36c2a35dc5",
+  "original_hash": "sha256:12a4701759d494e6b425dfc0a68c453b502ad37a09a6b16ae6d51e36c2a35dc5",
+  "candidate_hash": "sha256:12a4701759d494e6b425dfc0a68c453b502ad37a09a6b16ae6d51e36c2a35dc5",
   "stale_check_passed": true,
-  "remote_updated_at_before": "2026-05-03T13:50:39.516003+00:00"
+  "remote_updated_at_before": "2026-05-04T01:59:59.151863+00:00"
 }

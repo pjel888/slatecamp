@@ -7,7 +7,7 @@ Diagram the electrical distribution hierarchy — from utility transformer to ma
 
 Every building's electrical system follows a standardized flow:
 
-<ArticleMedia id="media-lea-util-003-06-the-distribution-hierarc" a type="image" caption="Electrical Riser Diagram — Utility to Main Switchgear to Panelboards to Branch Circuits" description="Single-line riser diagram showing: Meralco utility transformer (13.8kV to 220/380V), main switchgear with service disconnect and metering, distribution panelboard (400-1000A), power panelboard (200-400A), lighting panelboard (100-200A), branch circuits to loads. Voltage drop limits (3% branch, 5% combined per PEC 2.5.4), transformer sizing formula (kVA = demand ÷ PF), and 25% spare capacity requirement annotated." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-util-003-06-the-distribution-hierarc" type="image" caption="Electrical Riser Diagram — Utility to Main Switchgear to Panelboards to Branch Circuits" alt="Single-line riser diagram showing: Meralco utility transformer (13.8kV to 220/380V), main switchgear with service disconnect and metering, distribution panelboard (400-1000A), power panelboard (200-400A), lighting panelboard (100-200A), branch circuits to loads. Voltage drop limits (3% branch, 5% combined per PEC 2.5.4), transformer sizing formula (kVA = demand ÷ PF), and 25% spare capacity requirement annotated." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 
 1. **Utility Transformer (Primary → Secondary)**
@@ -56,7 +56,7 @@ Available sizes: 15, 30, 50, 75, 100, 150, 200, 300, 500 kVA
 
 A single-line diagram shows the electrical distribution path using standardized symbols:
 
-<ArticleMedia id="media-lea-util-003-06-the-distribution-hierarc" a type="image" caption="Electrical Single-Line Diagram Symbols — Transformer, Breaker, Panel, Ground" description="Reference diagram of PEC-standard electrical symbols used in single-line diagrams: transformer (two circles), circuit breaker (switch symbol), disconnect switch, panelboard (rectangle with internal lines), bus duct (three parallel lines), grounding (three horizontal lines), meter, motor, and generator. Current flow path from utility source through distribution to loads shown with ratings labeled." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-util-003-06-the-distribution-hierarc" type="image" caption="Electrical Single-Line Diagram Symbols — Transformer, Breaker, Panel, Ground" alt="Reference diagram of PEC-standard electrical symbols used in single-line diagrams: transformer (two circles), circuit breaker (switch symbol), disconnect switch, panelboard (rectangle with internal lines), bus duct (three parallel lines), grounding (three horizontal lines), meter, motor, and generator. Current flow path from utility source through distribution to loads shown with ratings labeled." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 
 | Component | Symbol Meaning | PEC Reference |

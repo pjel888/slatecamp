@@ -9,9 +9,9 @@
 
 ## Why This Module Decides Your Score
 
-[SLATECAMP_UI_BLOCK:ArticleMedia name="three-controls-venn" type="diagram" caption="Venn diagram / three-overlapping-circles showing the three independent controls: BHL (how high), FLAR (how much GFA), PSO (how much footprint). Below each, show the governing table reference and a sample value. Emphasize they are independent and the most restrictive result governs. Include the master formula chain TLA → PSO → AMBF → FLAR → Max GFA → BHL as a flowchart below."]
+<ArticleMedia id="media-three-controls-venn" type="diagram" caption="Venn diagram / three-overlapping-circles showing the three independent controls: BHL (how high), FLAR (how much GFA), PSO (how much footprint). Below each, show the governing table reference and a sample value. Emphasize they are independent and the most restrictive result governs. Include the master formula chain TLA → PSO → AMBF → FLAR → Max GFA → BHL as a flowchart below." />
 
-[SLATECAMP_UI_BLOCK:ArticleMedia name="bhl-flar-rrow-diagram" type="diagram" caption="Street section diagram showing RROW width governing BHL: 6–7m RROW → ~3 storeys/9m, 4–5m RROW → ~2.5 storeys/7.5m, ≤3m RROW → ~2 storeys/6m. Show building silhouette stepping back with annotations for BHL exemptions (spires in incombustible materials unlimited, combustible max 6m above BHL)."]
+<ArticleMedia id="media-bhl-flar-rrow-diagram" type="diagram" caption="Street section diagram showing RROW width governing BHL: 6–7m RROW → ~3 storeys/9m, 4–5m RROW → ~2.5 storeys/7.5m, ≤3m RROW → ~2 storeys/6m. Show building silhouette stepping back with annotations for BHL exemptions (spires in incombustible materials unlimited, combustible max 6m above BHL)." />
 
 ## Learning Goal
 

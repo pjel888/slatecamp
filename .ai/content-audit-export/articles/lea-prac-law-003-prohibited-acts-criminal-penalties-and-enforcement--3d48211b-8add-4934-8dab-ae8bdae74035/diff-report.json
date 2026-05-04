@@ -1,48 +1,38 @@
 {
   "article_id": "3d48211b-8add-4934-8dab-ae8bdae74035",
   "slug": "lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement",
-  "generated_at": "2026-05-04T00:06:36.721Z",
-  "old_hash": "sha256:cc3924aafd558511015142b1a285a8a02d51afc887635593cdc135a17fbcaf3f",
-  "new_hash": "sha256:a199723f691233de84a3036b5d5e21c67b162bfbc2e702c9dc924d166cabe4b7",
-  "original_hash": "sha256:cc3924aafd558511015142b1a285a8a02d51afc887635593cdc135a17fbcaf3f",
+  "generated_at": "2026-05-04T02:17:17.831Z",
+  "old_hash": "sha256:2121099182074eebbc8eb9bc8dd1d9bee9bce959b915299f70cbec57d88c3b78",
+  "new_hash": "sha256:2121099182074eebbc8eb9bc8dd1d9bee9bce959b915299f70cbec57d88c3b78",
+  "original_hash": "sha256:2121099182074eebbc8eb9bc8dd1d9bee9bce959b915299f70cbec57d88c3b78",
   "normalized_hash": "sha256:a199723f691233de84a3036b5d5e21c67b162bfbc2e702c9dc924d166cabe4b7",
-  "candidate_hash": "sha256:a199723f691233de84a3036b5d5e21c67b162bfbc2e702c9dc924d166cabe4b7",
-  "changed": true,
-  "changed_line_count": 117,
-  "inserted_line_count": 1,
+  "candidate_hash": "sha256:2121099182074eebbc8eb9bc8dd1d9bee9bce959b915299f70cbec57d88c3b78",
+  "changed": false,
+  "changed_line_count": 0,
+  "inserted_line_count": 0,
   "deleted_line_count": 0,
   "ui_blocks_original_count": 6,
-  "ui_blocks_candidate_count": 0,
-  "ui_blocks_changed_count": 6,
+  "ui_blocks_candidate_count": 6,
+  "ui_blocks_changed_count": 0,
   "ui_blocks_count": 6,
-  "unresolved_placeholders_count": 1,
-  "preserved_blocks_count": 0,
+  "unresolved_placeholders_count": 0,
+  "preserved_blocks_count": 6,
   "changed_text_summary": {
-    "changed": 117,
-    "inserted": 1,
+    "changed": 0,
+    "inserted": 0,
     "deleted": 0,
-    "original_line_count": 202,
-    "candidate_line_count": 203
+    "original_line_count": 207,
+    "candidate_line_count": 207
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0001",
-      "ui_0002",
-      "ui_0003",
-      "ui_0004",
-      "ui_0005",
-      "ui_0006"
-    ],
-    "changed_count": 6
+    "missing_block_ids": [],
+    "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate contains unresolved UI block placeholders.",
-    "Candidate is missing 6 preserved UI block(s)."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 6 preserved UI block(s)."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

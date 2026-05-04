@@ -4,8 +4,6 @@
 Bubble diagrams are analytical tools that graphically represent spatial relationships and functional adjacencies derived from the architectural program; they are not design sketches and do not prescribe form or aesthetics. The adjacency matrix is the tabular companion document that systematically codes relationships as essential, desirable, unimportant, or undesirable, ensuring all functional pairs are evaluated. Both tools translate programmatic requirements into spatial organization logic that constrains but does not determine final design.
 </Callout>
 
-
-
 ## Learning Goal
 
 - Define bubble diagrams as analytical tools that graphically represent spatial relationships and functional adjacencies, not as design sketches.
@@ -13,6 +11,8 @@ Bubble diagrams are analytical tools that graphically represent spatial relation
 - Translate programmatic requirements into spatial organization logic using bubble diagrams and adjacency matrices.
 
 ## Core Concept
+
+<ArticleMedia id="media-lea-theo-009-02-core-concept" a type="image" caption="Bubble Diagrams and Adjacency Matrices — Translating Program to Spatial Organization" description="Two-part diagram: Part 1 — Adjacency Matrix showing a grid of spaces (e.g., lobby, offices, conference rooms, restrooms, storage) with relationship codes: Essential (E), Desirable (D), Unimportant (U), Undesirable (X). Part 2 — Bubble Diagram translating the matrix into a graphic spatial organization: each bubble proportional to space area, lines between bubbles showing essential adjacencies (thick lines), desirable adjacencies (thin lines), and undesirable connections (dashed red lines). The diagram is intentionally abstract — bubbles are non-geometric shapes representing functional zones, not architectural forms." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 Bubble diagrams emerge from the program analysis phase, after spaces and their requirements are documented but before design form-making begins. A bubble represents a functional zone or space; the size of the bubble correlates loosely to its area (though not to scale in typical programming bubble diagrams). Lines or proximity between bubbles indicate required relationships; absence of connection indicates no proximity requirement. The diagram is intentionally abstract—bubbles may be circles, squares, or irregular shapes; their specific geometry carries no architectural meaning.
 
@@ -92,21 +92,15 @@ Bubble diagrams and adjacency matrices are not limited to initial programming. T
 <WikiExamTable headers={["Concept", "Definition/Standard"]} rows={[['["**Bubble Diagram**", "Abstract graphic representation of spaces and their adjacency relationships, derived from the adjacency matrix"]', '["**Adjacency Matrix**", "Tabular documentation of spatial relationships between all programmed spaces (E=essential, D=desirable, U=unimportant, X=undesirable)"]', '["**Essential Adjacency (E)**", "Two spaces must be immediately adjacent or connected to satisfy functional requirements"]', '["**Desirable Adjacency (D)**", "Proximity is beneficial but not mandatory; satisfied when possible but may be compromised by constraints"]', '["**Undesirable Adjacency (X)**", "Two spaces must be separated to prevent functional conflict, safety risk, or performance degradation"]', '["**Functional Zone**", "Cluster of related activities grouped for proximity and efficiency; typically organized by public/semi-public/private logic"]', '["**Circulation Spine**", "Primary corridor or connector system that organizes building layout and connects functional zones"]', '["**Constraint vs. Prescription**", "Bubble diagram constrains spatial relationships but does not prescribe architectural form or aesthetic decisions"]', '["**Trade-off Documentation**", "Explicit acknowledgment of constraints that cannot be simultaneously satisfied and the design strategy to manage them"]', '["**Matrix Symmetry**", "The adjacency relationship from space A to space B equals the relationship from B to A; typically recorded once (upper triangle)"]']]} />
 ## How It's Tested on the LEA
 
-
 <ExamTip>1. **Reading and Interpreting Adjacency Matrices**: You are presented with a completed or partially completed adjacency matrix and asked questions about what relationships exist. "In the matrix shown, which spaces have an essential adjacency? (A) Reception and waiting area. (B) Mechanical and reception. (C) Both. (D) Neither." Requires careful reading of the matrix symbols.</ExamTip>
-
 
 <ExamTip>2. **Evaluating Design Layouts Against the Program**: ADSP Day 2 typically presents a floorplan and asks you to verify whether it satisfies the programmed adjacencies. "Given the adjacency matrix provided, does the proposed layout satisfy the essential relationship between the laboratory and treatment room? Explain." You must identify the spaces on the plan and measure whether they are truly adjacent (ideally, sharing a wall or connected by a single door).</ExamTip>
 
-
 <ExamTip>3. **Completing an Adjacency Matrix from a Project Scenario**: Given a building program narrative, you identify all spaces and create or complete an adjacency matrix showing relationships. For example: "A small dental clinic includes reception, waiting, two treatment rooms, a sterilization room, storage, and office. Indicate the adjacency relationships." You must reason: sterilization and treatment rooms are essential (instruments must move between them); waiting and treatment are essential (patients move directly); office and reception are desirable (but not essential).</ExamTip>
-
 
 <ExamTip>4. **Identifying Functional Zones from a Program**: Asked to organize a given program into functional zones and justify the organization. A retail shopping center program includes retail spaces, back-of-house storage, staff areas, mechanical spaces, and parking. You organize as customer zone (retail, entries), support zone (storage, receiving), staff zone (break room, office), and service zone (mechanical, loading). Justification: customers see only retail; staff circulation is separate; loading is remote from customer areas.</ExamTip>
 
-
 <ExamTip>5. **Analyzing Design Flaws Through Adjacency Logic**: Presented with a floorplan and asked to identify problems. "This layout places the laboratory adjacent to the mechanical room (undesirable, per the matrix). What is the risk, and how would you redesign?" Answer: Mechanical vibration and noise compromise lab work; laboratory should be relocated to an interior or isolated location, or mechanical equipment should be relocated, or vibration isolation measures should be specified.</ExamTip>
-
 
 ## Common Mistakes
 
@@ -115,7 +109,6 @@ Bubble diagrams and adjacency matrices are not limited to initial programming. T
 <WikiMistakeCard mistake="Incomplete Adjacency Matrix" correction="Omitting undesirable (X) relationships, treating only essential and desirable as sufficient. Undesirable relationships are as important as essential ones—they define what must not be adjacent." context="A complete matrix evaluates all functional pairs." />
 
 <WikiMistakeList mistakes={["Misinterpreting \"Essential\" as \"Adjacent Wall\". Essential adjacency does not always require a shared wall. Two spaces can be essential neighbors while connected by a short corridor, glass partition, or open connection. \"Adjacent\" means sufficiently close and easily connected; the designer decides the specific architectural form.", "Ignoring Circulation in Bubble Diagram. Treating circulation spaces as passive background rather than active functional zones. Circulation is shown in the bubble diagram as a primary organizing element—corridors, lobbies, stairwells—and its adjacencies to other spaces are coded just as functional adjacencies are.", "Violating Constraints in Proposed Layouts. Presenting a design that fails to satisfy essential adjacencies or violates undesirable separations shown in the matrix. Every design proposal must be verified against the adjacency matrix; any violation must be explicitly justified and documented as a conscious trade-off, not an oversight.", "Over-Determining Relationships Through Bubble Diagram. Using the bubble diagram to prescribe not just adjacency but specific dimensions, orientation, or relationships between zones that the design should later violate. The bubble diagram is a constraint framework, not a binding spatial blueprint; the designer has freedom to interpret it through multiple design languages."]} />
-
 
 ## Key Terms
 

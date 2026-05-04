@@ -16,6 +16,13 @@ _Reference standard specifications_ defer technical details to recognized indust
 
 _Descriptive specifications_ use narrative language without requiring adherence to formal standards or specific products. These are less common in modern practice because they create ambiguity and disputes. The LEA testing emphasizes this type's weakness: unclear performance expectations.
 
+
+<ArticleMedia id="media-spec-vs-drawings" layout="single" type="image" status="placeholder"
+  alt="Diagram showing complementary roles of specifications and drawings: drawings show what and where, specifications show how and to what standard"
+  caption="Future diagram: specifications vs. drawings — complementary roles in defining design intent"
+  suggestedAsset="Venn diagram or side-by-side comparison infographic"
+  placementIntent="Clarifies the distinct roles of specifications and drawings in contract documents" />
+
 ## Key Provisions
 
 | Specification Type | Typical Use Case | Advantage | Disadvantage | Philippine Relevance |
@@ -32,6 +39,12 @@ RA 9266 (Architecture Act of 2004) mandates that the architect-of-record bear fu
 
 In practice, Philippine projects typically blend specification types. A concrete project might use reference standards for ACI 318 compliance, proprietary specifications for locally sourced rebar from approved mills (e.g., DMCI, Insteel), and performance specifications for curing duration and strength targets. DPWH-regulated projects require adherence to their approved materials lists, effectively enforcing prescriptive specifications for certain items. Architects must verify that "or equal" substitutions meet DPWH standards and obtain written approval before allowing deviations.
 
+
+<ArticleMedia id="media-contract-documents-hierarchy" layout="single" type="image" status="placeholder"
+  alt="Hierarchy diagram of construction contract documents showing order of precedence: contract agreement, general conditions, supplementary conditions, drawings, and specifications"
+  caption="Future diagram: contract document hierarchy — order of precedence in construction"
+  suggestedAsset="Hierarchy diagram or pyramid of contract document precedence"
+  placementIntent="Clarifies where specifications fit in the contract document hierarchy" />
 ## How It's Tested
 
 _Pattern 1 — Specification Type Identification:_ The exam presents a specification excerpt and asks you to classify it. Example: "Exterior paint shall be a two-part epoxy with a minimum gloss of 85 percent and a coverage rate of 10 square meters per liter. Contractor shall provide material test reports demonstrating conformance." This is a _performance specification_ (defines outcome, requires testing, contractor selects product).

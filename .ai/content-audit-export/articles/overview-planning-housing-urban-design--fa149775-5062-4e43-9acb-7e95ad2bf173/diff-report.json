@@ -1,45 +1,38 @@
 {
   "article_id": "fa149775-5062-4e43-9acb-7e95ad2bf173",
   "slug": "overview-planning-housing-urban-design",
-  "generated_at": "2026-05-04T00:07:04.273Z",
-  "old_hash": "sha256:22779acba6347975dab741c9b205c1ae6c480979a6d891ebe2f4311d96263feb",
-  "new_hash": "sha256:6eb960bca3a1b39f4f3dd7bec32ee518353872c971e180b2dc661cc51a5985ab",
-  "original_hash": "sha256:22779acba6347975dab741c9b205c1ae6c480979a6d891ebe2f4311d96263feb",
+  "generated_at": "2026-05-04T02:17:53.577Z",
+  "old_hash": "sha256:5440fc402c21a066efe7b6b2aaa30ed3b35b1ecf04d6b28e503fd7ff41524673",
+  "new_hash": "sha256:5440fc402c21a066efe7b6b2aaa30ed3b35b1ecf04d6b28e503fd7ff41524673",
+  "original_hash": "sha256:5440fc402c21a066efe7b6b2aaa30ed3b35b1ecf04d6b28e503fd7ff41524673",
   "normalized_hash": "sha256:6eb960bca3a1b39f4f3dd7bec32ee518353872c971e180b2dc661cc51a5985ab",
-  "candidate_hash": "sha256:6eb960bca3a1b39f4f3dd7bec32ee518353872c971e180b2dc661cc51a5985ab",
-  "changed": true,
-  "changed_line_count": 63,
-  "inserted_line_count": 8,
+  "candidate_hash": "sha256:5440fc402c21a066efe7b6b2aaa30ed3b35b1ecf04d6b28e503fd7ff41524673",
+  "changed": false,
+  "changed_line_count": 0,
+  "inserted_line_count": 0,
   "deleted_line_count": 0,
   "ui_blocks_original_count": 3,
-  "ui_blocks_candidate_count": 0,
-  "ui_blocks_changed_count": 3,
+  "ui_blocks_candidate_count": 3,
+  "ui_blocks_changed_count": 0,
   "ui_blocks_count": 3,
-  "unresolved_placeholders_count": 1,
-  "preserved_blocks_count": 0,
+  "unresolved_placeholders_count": 0,
+  "preserved_blocks_count": 3,
   "changed_text_summary": {
-    "changed": 63,
-    "inserted": 8,
+    "changed": 0,
+    "inserted": 0,
     "deleted": 0,
-    "original_line_count": 59,
+    "original_line_count": 67,
     "candidate_line_count": 67
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0001",
-      "ui_0002",
-      "ui_0003"
-    ],
-    "changed_count": 3
+    "missing_block_ids": [],
+    "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate contains unresolved UI block placeholders.",
-    "Candidate is missing 3 preserved UI block(s)."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 3 preserved UI block(s)."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

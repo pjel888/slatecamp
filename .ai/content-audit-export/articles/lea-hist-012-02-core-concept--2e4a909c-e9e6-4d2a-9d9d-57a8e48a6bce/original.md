@@ -7,6 +7,10 @@ Identify the key characteristics of Inca architecture — ashlar dry-stone mason
 
 Inca architecture represents the pre-Columbian Americas' most advanced masonry tradition. Inca masons achieved perfectly fitting stone blocks cut with such precision that mortar became unnecessary—a technique called **ashlar masonry**. The Inca Empire spanned 2,500 kilometers from Colombia to Chile, and its architecture enforced political unity through standardized building practices, imperial highway networks, and strategic fortress placement. Unlike Maya architecture (which emphasized astronomical alignment and individual city-states) or Aztec architecture (which centralized ritual at capital), Inca architecture organized territorial conquest through infrastructure—roads, way-stations, and administrative centers connected the empire.
 
+
+<ArticleMedia id="media-hist-012-02-core-concept" layout="single" type="image" status="placeholder" alt="View of Machu Picchu (c. 1450, Peru), showing the precisely fitted polygonal and ashlar dry-stone masonry walls, trapezoidal openings, and the integration of buildings with the mountainous Andean site." caption="Machu Picchu — Inca Citadel with Ashlar Masonry" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
+
 <Tip>Memory aid: **"ASH-LAR = precise fitted STONE without mortar"** — the defining Inca technique that enabled architectural durability and seismic resilience without adhesive bonding.</Tip>
 
 **Ashlar Masonry and Stone-Fitting Innovation**
@@ -44,6 +48,10 @@ Inca residential architecture varied by social rank. The emperor occupied palace
 **Terracing as Agricultural and Engineering Strategy**
 
 Inca terraces covered hundreds of thousands of hectares across the Andes. Beyond Machu Picchu, systems at **Moray** (Sacred Valley) created circular terraced amphitheaters of unknown purpose (possibly ritual, perhaps agricultural experimentation). Terrace construction required surveying, drainage design, and sustained labor—typical terraces took years to build and decades to reach maximum productivity. The Inca reorganized landscape at unprecedented scales, expressing imperial ambition and consolidating subject populations through shared infrastructure projects.
+
+
+<ArticleMedia id="media-hist-012-02-core-concept" layout="single" type="image" status="placeholder" alt="View of the zigzag fortress walls at Sacsayhuamán (Cusco, c. 15th century), showing the enormous irregular polygonal stone blocks fitted together without mortar with precision that withstands earthquakes." caption="Sacsayhuamán — Inca Cyclopean Stonework" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
 
 ## Key Facts and Testable Items
 
@@ -90,6 +98,8 @@ Exams ask what building systems reveal about state organization. Example: "The *
 **Mit'a**: Inca system of mandatory labor obligation; subjects required to contribute labor for state projects (roads, terraces, temples).
 
 **Seismic resistance**: Structural capacity to withstand and survive earthquake ground motion; Inca ashlar masonry demonstrates empirical seismic design.
+
+<ArticleMedia id="media-hist-012-02-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Diagram of Inca architectural features: ashlar dry-stone masonry, trapezoidal openings, cyclopean walls, and batter, with annotated examples from Machu Picchu, Sacsayhuamán, and Ollantaytambo showing earthquake-resistant construction.\" caption=\"Inca Architecture — Key Structural Features\" suggestedAsset=\"Style comparison illustration\" placementIntent=\"Style comparison for architectural period\" />
 
 ## Related Articles
 

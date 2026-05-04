@@ -1,26 +1,21 @@
 {
-  "attempted_at": "2026-05-04T00:06:02.544Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:16:32.995Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "candidate.md matches original.md; refusing no-op apply."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "2862e34d-02fd-4f95-a2a2-5119a355bdf8",
   "slug": "colonial-european-influence",
   "preparation_actions": [
     "auto_generated_diff"
   ],
-  "remote_hash_before": "sha256:24032fe0f56065476aea5acf29017862162bf165b56393b6150e8bcc26594934",
-  "original_hash": "sha256:24032fe0f56065476aea5acf29017862162bf165b56393b6150e8bcc26594934",
-  "candidate_hash": "sha256:df5e1079c869d412bea556695ed86343f687b01de5d82bc7c9f5c2a72db2fd47",
+  "remote_hash_before": "sha256:bb6de7bde5a9259508768be1e77be528c66e1dbe81191ff09861d373713616ff",
+  "original_hash": "sha256:bb6de7bde5a9259508768be1e77be528c66e1dbe81191ff09861d373713616ff",
+  "candidate_hash": "sha256:bb6de7bde5a9259508768be1e77be528c66e1dbe81191ff09861d373713616ff",
   "stale_check_passed": true,
-  "remote_updated_at_before": "2026-05-03T15:36:11.517672+00:00"
+  "remote_updated_at_before": "2026-05-04T01:59:30.108811+00:00"
 }

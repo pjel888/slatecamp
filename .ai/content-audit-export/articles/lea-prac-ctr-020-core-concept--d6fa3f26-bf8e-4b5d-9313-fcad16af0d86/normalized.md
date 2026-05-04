@@ -64,7 +64,7 @@ The architect's role in claims review is central. The architect inspects the wor
 
 
 
-<ArticleMedia type="image" caption="Dispute Resolution Process — Negotiation to Litigation Flowchart" description="Escalation flowchart showing progressive dispute resolution steps: Step 1 Negotiation (architect mediates), Step 2 Mediation (neutral third party), Step 3 CIAC Arbitration (mandatory for construction contracts), Step 4 Litigation (court appeal of arbitration award). CIAC jurisdiction requisites checklist and timeline expectations for each stage." />
+<ArticleMedia type="image" caption="Dispute Resolution Process — Negotiation to Litigation Flowchart" alt="Escalation flowchart showing progressive dispute resolution steps: Step 1 Negotiation (architect mediates), Step 2 Mediation (neutral third party), Step 3 CIAC Arbitration (mandatory for construction contracts), Step 4 Litigation (court appeal of arbitration award). CIAC jurisdiction requisites checklist and timeline expectations for each stage." />
 ## Related Articles
 
 - [Standard Owner-Architect Agreement](lea-prac-ctr-001)

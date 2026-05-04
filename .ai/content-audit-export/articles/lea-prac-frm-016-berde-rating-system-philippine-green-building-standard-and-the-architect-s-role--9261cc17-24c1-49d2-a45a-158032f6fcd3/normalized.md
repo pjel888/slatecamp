@@ -69,7 +69,7 @@ Many institutional clients (schools, government facilities) are now prioritizing
 
 
 
-<ArticleMedia type="image" caption="BERDE Rating System — Credit Categories and Certification Levels" description="Radial diagram of BERDE Green Building Rating System showing five credit categories: Energy Efficiency, Water Efficiency, Materials & Waste, Indoor Environmental Quality, Land Use & Ecology. Center shows four certification levels: BERDE 1-Star (30-40%), 2-Star (41-50%), 3-Star (51-60%), 4-Star (61%+). Architect's role in each credit category noted." />
+<ArticleMedia type="image" caption="BERDE Rating System — Credit Categories and Certification Levels" alt="Radial diagram of BERDE Green Building Rating System showing five credit categories: Energy Efficiency, Water Efficiency, Materials & Waste, Indoor Environmental Quality, Land Use & Ecology. Center shows four certification levels: BERDE 1-Star (30-40%), 2-Star (41-50%), 3-Star (51-60%), 4-Star (61%+). Architect's role in each credit category noted." />
 ## Related Articles
 
 - [Sole Proprietorship](lea-prac-frm-001)

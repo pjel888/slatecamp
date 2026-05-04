@@ -57,19 +57,21 @@ Green design often requires higher upfront investment in efficient systems, prem
 
 Many institutional clients (schools, government facilities) are now prioritizing BERDE certification to demonstrate environmental stewardship and reduce long-term operational costs. Private developers recognize that BERDE-certified buildings command market premiums and attract tenants committed to sustainability. The architect's role is to help the client understand that green design is an investment, not an expense.
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
+<LawCallout code="berde" section="BERDE v3.0 - Management Category">
+Legal Basis: BERDE (Building for Ecologically Responsive Design Excellence), developed by PhilGBC. Referenced in the Philippine Green Building Code (PD 1096 reference standard).
+</LawCallout>
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
+<Warn />
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
+<ExamTip />
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="Tip" status="preserved"]
+<Tip />
 
 ---
 
 
 
-<ArticleMedia type="image" caption="BERDE Rating System — Credit Categories and Certification Levels" description="Radial diagram of BERDE Green Building Rating System showing five credit categories: Energy Efficiency, Water Efficiency, Materials & Waste, Indoor Environmental Quality, Land Use & Ecology. Center shows four certification levels: BERDE 1-Star (30-40%), 2-Star (41-50%), 3-Star (51-60%), 4-Star (61%+). Architect's role in each credit category noted." />
+<ArticleMedia type="image" caption="BERDE Rating System — Credit Categories and Certification Levels" alt="Radial diagram of BERDE Green Building Rating System showing five credit categories: Energy Efficiency, Water Efficiency, Materials & Waste, Indoor Environmental Quality, Land Use & Ecology. Center shows four certification levels: BERDE 1-Star (30-40%), 2-Star (41-50%), 3-Star (51-60%), 4-Star (61%+). Architect's role in each credit category noted." />
 ## Related Articles
 
 - [Sole Proprietorship](lea-prac-frm-001)

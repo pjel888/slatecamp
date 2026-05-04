@@ -6,7 +6,6 @@ Integrate plants, hardscapes, water features, and spatial organization into outd
 Landscape architecture integrates plants, hardscapes, water features, and spatial organization to create outdoor environments that enhance site functionality, aesthetics, and ecological health.
 Understanding plant selection, zoning strategies, and the relationship between hardscape and softscape is essential to comprehensive site planning.
 
-
 ## Core Concept
 
 Landscape architecture is the design and planning of outdoor space.
@@ -75,6 +74,7 @@ Strategic planting modifies site climate:
 - Vegetation increases humidity in arid zones
 - Wind-breaks (shelter belts) reduce wind speed for comfort and energy savings
 - Water features create cooling through evaporation
+<ArticleMedia id="media-lea-dsgn-012-04-core-concept" a type="image" caption="Landscape Design — Planting, Hardscape, and Spatial Organization" description="Landscape plan showing: plant material selection (Philippine tropical species), hardscape zones (walkways, plazas, patios), water features, spatial organization (open, semi-private, private), and zoning strategy for different outdoor use areas." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
@@ -143,8 +143,8 @@ Identify distinct functional zones (gathering, activity, buffer, circulation) an
   balanced design. Bioretention = stormwater + green space synergy.
 </Tip>
 
-
 **Exam Tip:** Plant selection criteria: Philippine climate (tropical wet/dry), microclimate (sun/shade/wind), soil conditions (pH/drainage), maintenance level, mature size (don't overplant), and root system (avoid foundation damage).
+<ArticleMedia id="media-lea-dsgn-012-04-core-concept" a type="image" caption="Landscape Zoning — Hardscape, Softscape, and Water Features" description="Landscape master plan showing zoning strategies: entry/arrival plaza (hardscape dominant), central lawn and gathering spaces (softscape/passive recreation), perimeter planting buffer (native species screens), water features (rain garden, reflecting pool), and path system connecting zones. Plant species selected for Philippine tropical conditions." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Cross-References
 

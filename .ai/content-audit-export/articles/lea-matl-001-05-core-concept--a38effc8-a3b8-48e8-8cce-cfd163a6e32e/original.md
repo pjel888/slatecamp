@@ -24,6 +24,13 @@ Note the critical detail: length must be in feet; thickness and width must be in
 
 <Tip>Always convert length to feet FIRST before applying the formula. If a measurement is given in inches, divide by 12 to convert to feet.</Tip>
 
+
+<ArticleMedia id="media-lumber-measurement-diagram" layout="single" type="image" status="placeholder"
+  alt="Diagram showing board foot measurement: thickness (T), width (W), and length (L) dimensions on a lumber piece"
+  caption="Future diagram: board foot measurement dimensions"
+  suggestedAsset="Annotated 3D diagram of lumber with T×W×L callouts"
+  placementIntent="Helps learners understand the physical meaning of the board foot formula" />
+
 ## Nominal vs. Actual Dimensions
 
 Philippine and North American lumber is sold by _nominal_ dimensions but delivered at _actual_ dimensions, which are smaller to account for drying and finishing.
@@ -43,6 +50,12 @@ Philippine timber is classified by specific gravity into grading groups that det
 
 The DPWH (Department of Public Works and Highways) specifies minimum grades and species for structural lumber in government projects. NSCP 2015 Section 2401 references Philippine lumber grading through the National Lumber Grading Committee (NLGC).
 
+
+<ArticleMedia id="media-ph-timber-species-chart" layout="single" type="image" status="placeholder"
+  alt="Reference chart of Philippine timber species: narra, molave, yakal, apitong, mahogany, ipil with strength group, density, and common architectural applications"
+  caption="Future chart: Philippine timber species by strength group, density, and application"
+  suggestedAsset="Material property comparison table with species identification photos"
+  placementIntent="Provides reference for selecting Philippine timber species for construction" />
 ## Philippine Lumber Grading Classifications
 
 Lumber less than 1 inch in thickness is graded and measured the same as 1 inch lumber. All lumber is graded on the poorer side of the piece.

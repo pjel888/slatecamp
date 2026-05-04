@@ -1,45 +1,38 @@
 {
   "article_id": "5e8c7d0a-95b1-4739-a23a-ef8fbd89e5c5",
   "slug": "lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-contractor",
-  "generated_at": "2026-05-04T00:07:11.068Z",
-  "old_hash": "sha256:41dba77825c179ab095a72ca71d6993e5986393c733b12c0e0ba6516f025533c",
-  "new_hash": "sha256:860b378dcea74cf3c55cf6a3dfd0a0cd48e596c33753edf648737c4f103340d2",
-  "original_hash": "sha256:41dba77825c179ab095a72ca71d6993e5986393c733b12c0e0ba6516f025533c",
+  "generated_at": "2026-05-04T02:18:02.435Z",
+  "old_hash": "sha256:18914e068f6d6ca19b5f0fd7a8e9435137e466b2ff1e2cd9002c2d1715153a5f",
+  "new_hash": "sha256:18914e068f6d6ca19b5f0fd7a8e9435137e466b2ff1e2cd9002c2d1715153a5f",
+  "original_hash": "sha256:18914e068f6d6ca19b5f0fd7a8e9435137e466b2ff1e2cd9002c2d1715153a5f",
   "normalized_hash": "sha256:860b378dcea74cf3c55cf6a3dfd0a0cd48e596c33753edf648737c4f103340d2",
-  "candidate_hash": "sha256:860b378dcea74cf3c55cf6a3dfd0a0cd48e596c33753edf648737c4f103340d2",
-  "changed": true,
-  "changed_line_count": 38,
-  "inserted_line_count": 2,
+  "candidate_hash": "sha256:18914e068f6d6ca19b5f0fd7a8e9435137e466b2ff1e2cd9002c2d1715153a5f",
+  "changed": false,
+  "changed_line_count": 0,
+  "inserted_line_count": 0,
   "deleted_line_count": 0,
   "ui_blocks_original_count": 3,
-  "ui_blocks_candidate_count": 0,
-  "ui_blocks_changed_count": 3,
+  "ui_blocks_candidate_count": 3,
+  "ui_blocks_changed_count": 0,
   "ui_blocks_count": 3,
-  "unresolved_placeholders_count": 1,
-  "preserved_blocks_count": 0,
+  "unresolved_placeholders_count": 0,
+  "preserved_blocks_count": 3,
   "changed_text_summary": {
-    "changed": 38,
-    "inserted": 2,
+    "changed": 0,
+    "inserted": 0,
     "deleted": 0,
-    "original_line_count": 74,
-    "candidate_line_count": 76
+    "original_line_count": 84,
+    "candidate_line_count": 84
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0001",
-      "ui_0002",
-      "ui_0003"
-    ],
-    "changed_count": 3
+    "missing_block_ids": [],
+    "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate contains unresolved UI block placeholders.",
-    "Candidate is missing 3 preserved UI block(s)."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 3 preserved UI block(s)."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

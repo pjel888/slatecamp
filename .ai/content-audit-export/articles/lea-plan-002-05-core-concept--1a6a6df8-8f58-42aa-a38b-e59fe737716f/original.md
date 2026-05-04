@@ -5,7 +5,6 @@ Identify and apply Kevin Lynch's five urban image elements — paths, edges, dis
 
 Kevin Lynch identified five elements—paths, edges, districts, nodes, landmarks—that shape how people mentally map and navigate cities. Each element is testable with specific definitions.
 
-
 ## Core Concept
 
 In _The Image of the City_ (1960), Kevin Lynch studied how residents of Boston, Jersey City, and Los Angeles understand and move through urban space. He found that people construct mental maps of cities using recurring physical elements. Understanding these five elements is central to urban design and planning because they reveal how _ordinary people_ (not planners or architects) perceive and orient themselves in the built environment.
@@ -21,6 +20,7 @@ In _The Image of the City_ (1960), Kevin Lynch studied how residents of Boston, 
 **Landmarks** are distinctive objects used for orientation. Unlike nodes, landmarks are _not entered_; they are external reference points. You navigate _by looking at_ a landmark. Rizal Monument, RCBC Plaza in Ayala Triangle, Mayon Volcano (visible from afar), Manila Cathedral—these are things you look at to orient yourself. "Meet me in front of the church" uses the church as a landmark. The key distinction: a node is a place you go TO and pass THROUGH; a landmark is a thing you look AT for direction.
 
 Lynch's five elements are _cognitive_, not physical. The same object can serve different element functions depending on how people use it. A church might be a node (a place to gather) and a landmark (a visual reference point), or either one, depending on context and individual perception.
+<ArticleMedia id="media-lea-plan-002-05-core-concept" a type="image" caption="Kevin Lynch's Five Urban Elements — Paths, Edges, Districts, Nodes, Landmarks" description="Diagram illustrating Kevin Lynch's five elements of city imageability: paths (movement channels), edges (boundaries/barriers), districts (neighborhoods with identity), nodes (junctions/convergence points), landmarks (distinctive reference points). Annotated with Philippine urban examples." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
@@ -39,7 +39,6 @@ In Metro Manila, paths (EDSA, C-3/C-5) structure commuting and mental maps, but 
 - "The LRT corridor that you travel on daily. Which Lynch element?" → Path (channel of movement).
 
 <Tip>Node = where you GO TO and PASS THROUGH (junction, hub). Landmark = what you LOOK AT for direction (not entered). This is the highest-frequency error: students confuse nodes and landmarks. Test yourself: "Does the object primarily function as a gathering/transfer point (node) or as a visual reference (landmark)?"</Tip>
-
 
 **Exam Tip:** Lynch elements tested through scenarios: "A river that separates two neighborhoods" = edge. "A central square where paths converge" = node. "A prominent church tower visible from far away" = landmark. Match the element to the description.
 

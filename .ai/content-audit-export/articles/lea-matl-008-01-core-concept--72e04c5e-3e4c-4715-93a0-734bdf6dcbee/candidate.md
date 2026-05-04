@@ -55,17 +55,36 @@ The Philippine Building Code (PBC) adopts ANSI/BHMA standards for door hardware 
 
 **Exam Pattern 4: Butt Hinge Cycle Capacity.** What is the Grade 1 cycle requirement for butt hinges under ANSI/BHMA A156.1? Answer: 2,500,000 cycles.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+<Tip>
+  Memory aid: "Grade 1 for 800k" is a simplification; actual requirements vary
+  by device—always check the applicable ANSI/BHMA standard (e.g., A156.1 for
+  hinges, A156.2 for bored locks, A156.13 for mortise locks).
+</Tip>
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard
+  mistake='Using Grade 3 residential locksets in a commercial office building because they are cheaper.'
+  correction='Grade 3 locks fail within months in commercial use (200,000 cycles ÷ 50 cycles/day = ~4,000 days or 11 years, but only if used sporadically; in high-traffic spaces, failure occurs in weeks).'
+/>
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard
+  mistake='Specifying a knob instead of a lever handle on doors within an accessible route.'
+  correction='BP 344 2024 Revised IRR explicitly requires lever handles on accessible routes because they require less dexterity and force to operate.'
+/>
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard
+  mistake='Installing a surface-mounted door closer on a fire-rated door because the concelead version is more expensive.'
+  correction='Fire-rated doors require listed self-closing devices per RA 9514; both surface-mounted and concelead types are acceptable if certified.'
+/>
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="WikiMistakeList" status="preserved"]
+<WikiMistakeList
+  mistakes={[
+    'Assuming all ANSI/BHMA Grade 1 hardware is identical—some grades refer to locksets, others to hinges or closers separately',
+    'Installing continuous hinges on non-fire-rated doors without realizing fire rating requires integration with the hinge design',
+    'Selecting stainless steel hardware for coastal typhoon zones without verifying saltwater-grade certification',
+  ]}
+/>
 
 ## Related Articles
 

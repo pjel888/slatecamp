@@ -10,7 +10,7 @@ After reading this article, you should be able to:
 
 Feasibility studies represent a critical pre-design service that determines whether a proposed development is viable. SPP 201 distinguishes between pre-feasibility studies, which use secondary information for early decision-making, and detailed feasibility studies, which analyze the project comprehensively against present and future trends.
 
-<ArticleMedia id="media-lea-prac-svc-002-feasibility-studies-typ" a type="image" caption="Feasibility Study Workflow — Pre-Feasibility to Detailed Feasibility" description="Workflow chart illustrating the feasibility study process: pre-feasibility (secondary research, early assessment) → feasibility (primary data, comprehensive analysis) → market analysis → technical assessment → financial projections → risk evaluation → viability recommendation." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-prac-svc-002-feasibility-studies-typ" type="image" caption="Feasibility Study Workflow — Pre-Feasibility to Detailed Feasibility" alt="Workflow chart illustrating the feasibility study process: pre-feasibility (secondary research, early assessment) → feasibility (primary data, comprehensive analysis) → market analysis → technical assessment → financial projections → risk evaluation → viability recommendation." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ### Pre-Feasibility Studies vs. Feasibility Studies
 

@@ -13,7 +13,13 @@ Close your eyes. You are a visually impaired person navigating a public hospital
 
 Anchor phrase: **"WARN — GUIDE — SIGN — ALARM."**
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="new"]
+<LawCallout code="bp344" section="Section 13 - Alarms and Warnings">
+
+
+BP 344 (Accessibility Law) and its 2024 IRR mandate tactile warning blocks, tactile guide paths, Braille signage, and visual/audio emergency alarms throughout accessible routes. These requirements operate alongside PD 1096's general circulation and egress provisions. Appendix A of the 2024 IRR contains the detailed technical specifications for all tactile surfaces — block sizes, raised element dimensions, luminance contrast (50% min for tactile surfaces), and placement rules at ramps, stairs, escalators, elevators, and accessible toilets.
+
+
+</LawCallout>
 
 ---
 
@@ -47,7 +53,7 @@ The 2024 IRR and its technical references set out the properties of directional,
 | **Raised element height** | 5 mm                           | 5 mm                                                           | 5 mm                                          |
 | **Orientation**           | Along direction of travel path | Perpendicular to direction of hazard/target                    | At junctions where path direction may change  |
 
-[SLATECAMP_UI_BLOCK:ArticleMedia name="tactile-block-types" type="diagram" caption="Three tactile block types per Table A.7.2: Directional (300×300mm, 34mm parallel raised bars, 5mm high), Warning (300×300mm, 35mm truncated domes in square grid, 5mm high), Positional (300×300mm, 23mm truncated domes in staggered pattern, 5mm high). Shows 50% minimum luminance contrast from adjacent floor."]
+<ArticleMedia id="media-tactile-block-types" type="diagram" caption="Three tactile block types per Table A.7.2: Directional (300×300mm, 34mm parallel raised bars, 5mm high), Warning (300×300mm, 35mm truncated domes in square grid, 5mm high), Positional (300×300mm, 23mm truncated domes in staggered pattern, 5mm high). Shows 50% minimum luminance contrast from adjacent floor." />
 
 **Placement and contrast:**[file:2]
 
@@ -55,7 +61,13 @@ The 2024 IRR and its technical references set out the properties of directional,
 - They must be **slip‑resistant**, durable under wet and dry conditions, and laid with minimum clear width to avoid confusion with nearby walls/columns and tripping hazards.[file:2]
 - Tactile surfaces are required in Appendix A at key points along accessible routes, including stairways (other than fire‑exit stairs), escalators, elevators, ramps (other than fire‑exit, curb and swimming‑pool ramps), pedestrian–vehicle intersections, pathways, entrances, ticket counters and gates, accessible toilets, ATMs/kiosks, transit platforms, and tactile information maps (Section, Tactile Floor Surfaces (placement rules) and related items).[file:2]
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="new"]
+<LawCallout code="bp344" section="Section 13.1 - Visual Fire Alarms">
+
+
+⚠️ Trap — 50% vs 30% contrast: The 50% minimum luminance contrast applies specifically to tactile warning indicators / tactile floor surfaces. A lower 30% contrast is used for general floor-wall distinction, gratings vs surrounding floor, and other visual elements — NOT for tactile blocks themselves. On the LEA, if a question asks about tactile block contrast, answer ≥50%. If it asks about general floor/wall or grating contrast, answer ≥30%.
+
+
+</LawCallout>
 
 **TRAP — 50% vs 30% contrast:**  
 The 50% minimum luminance contrast applies specifically to **tactile warning indicators / tactile floor surfaces**, while a lower 30% contrast is used for **general floor–wall distinction**, **gratings vs surrounding floor**, and other visual elements — not for tactile blocks themselves.[file:2]
@@ -100,9 +112,15 @@ _Mnemonic update:_
 - **Dots = Danger** (warning/positional domes at 600 mm depth, 300 mm setback).[file:2]
 - **Bars = Direction** (directional strips along the safe path).[file:2]
 
-[SLATECAMP_UI_BLOCK:ArticleMedia name="tactile-placement-diagram" type="diagram" caption="Tactile warning placement examples: (a) Ramp — 600mm warning blocks 300mm from top, bottom, and intermediate landings. (b) Stairs — 600mm warning blocks 300mm from top of upper flight and bottom of lower flight. (c) Elevator — tactile path leads to Braille control panel with 300mm warning blocks before panel. (d) Escalator — 600mm warning blocks at 300mm setback from landing plate."]
+<ArticleMedia id="media-tactile-placement-diagram" type="diagram" caption="Tactile warning placement examples: (a) Ramp — 600mm warning blocks 300mm from top, bottom, and intermediate landings. (b) Stairs — 600mm warning blocks 300mm from top of upper flight and bottom of lower flight. (c) Elevator — tactile path leads to Braille control panel with 300mm warning blocks before panel. (d) Escalator — 600mm warning blocks at 300mm setback from landing plate." />
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="new"]
+<LawCallout code="bp344" section="Section 13.3 - Tactile Warning Surfaces">
+
+
+📌 Exam Tip — The two key numbers for tactile warning placement are 600 mm (depth of warning block strip) and 300 mm (setback from hazard). These appear together in almost every tactile placement question. The mnemonic "Dots = Danger, Bars = Direction" helps distinguish warning domes from directional bars. Warning blocks are always 600 mm deep, installed 300 mm before the hazard, spanning the full width of the path.
+
+
+</LawCallout>
 
 ---
 
@@ -194,7 +212,7 @@ That keeps your memory aid but avoids over‑claiming a specific escalator‑onl
 | Emergency call button (toilet)  | 400–600 mm AFF, waterproof, contrasting                                     | Sec 6.18 (summarized)[file:2] |
 | Toilet strobe alarm             | Inside accessible toilets; max 2 flashes/s (NFPA 72)                        | Sec 6.19 (summarized)[file:2] |
 
-[SLATECAMP_UI_BLOCK:ArticleMedia name="visual-alarm-and-emergency-systems" type="diagram" caption="Accessible toilet interior elevation: emergency call button at 400-600mm AFF (waterproof, contrasting color), strobe alarm with max 2 flashes/second per NFPA 72. Elevator panel detail: voice synthesizer speaker, two-way visual emergency communication display, and power backup indicator for evacuation operation."]
+<ArticleMedia id="media-visual-alarm-and-emergency-systems" type="diagram" caption="Accessible toilet interior elevation: emergency call button at 400-600mm AFF (waterproof, contrasting color), strobe alarm with max 2 flashes/second per NFPA 72. Elevator panel detail: voice synthesizer speaker, two-way visual emergency communication display, and power backup indicator for evacuation operation." />
 | Braille on elevator jambs       | 1200 mm AFF, both jambs                                                     | Sec 8.7.c[file:2]             |
 | Braille beside buttons          | To the left of each button                                                  | Sec 8.7.b[file:2]             |
 | Elevator COP height             | 900 mm on center                                                            | Sec 8.7.a[file:2]             |

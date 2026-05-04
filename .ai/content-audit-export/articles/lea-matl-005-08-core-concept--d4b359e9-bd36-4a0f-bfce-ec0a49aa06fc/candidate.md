@@ -17,7 +17,14 @@ Adobe (volcanic tuff blocks) and rattan woven panels provide thermal mass and ve
 
 ## Key Provisions
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="WikiExamTable" status="preserved"]
+<WikiExamTable headers={["Material", "Primary Standard", "Key Properties", "Structural Limitations"]}>
+<tr><td>Bamboo (Kawayan tinik, Bayog)</td><td>ISO 22156:2021; ISO 22157 testing</td><td>Allowable bending stress 6-10 MPa; compression parallel 4-8 MPa; tension parallel 8-15 MPa</td><td>Limited to 1-2 storey residential; max 7 m height per ISO 22156</td></tr>
+<tr><td>Coco Lumber</td><td>FPRDI Standards; DPWH acceptance</td><td>Working properties comparable to hardwood; moderate durability with preservation</td><td>Grading and preservation required; not approved for primary seismic structural systems without verification testing</td></tr>
+<tr><td>Adobe (Volcanic Tuff Blocks)</td><td>NBRC/NBCP provisions (non-code materials)</td><td>Compressive strength 1-3 MPa; high thermal mass; humidity buffering</td><td>Unsuitable for seismic-prone regions without reinforcement; limited to non-structural fill or low-rise non-seismic applications</td></tr>
+<tr><td>Nipa Palm (Thatching)</td><td>Vernacular specifications only</td><td>Lightweight roofing; natural insulation; seasonal replacement required</td><td>Non-structural; maintenance-intensive; requires annual inspection and replacement every 15-20 years</td></tr>
+<tr><td>Rattan (Woven Panels)</td><td>No ASTM equivleant; DPWH case-by-case</td><td>Lightweight infill; flexible; moisture-responsive</td><td>Non-structural infill and interior applications only; susceptible to insect damage without treatment</td></tr>
+<tr><td>Abaca Fiber Composites</td><td>Emerging standards; DOST-FPRDI research</td><td>Reinforcement in epoxy or polyester matrix; tensile strength 30-50 MPa in fiber direction</td><td>Limited structural use; primarily decorative and non-critical applications pending standards development</td></tr>
+</WikiExamTable>
 
 ISO 22156:2021 covers bamboo structural DESIGN and applies to bamboo culm (pole) structures with round bamboo framing for residential, small commercial, institutional, and light industrial buildings not exceeding 7 meters in height and two storeys. Design may use allowable stress design (ASD), allowable capacity design (ACD), or partial safety factor methods. ISO 22157 covers bamboo physical and mechanical TESTING, specifying testing protocols for bamboo (modulus of rupture, compressive strength perpendicular and parallel to grain). Both are referenced in Philippine bamboo construction standards (PNS 16:2019).
 
@@ -51,17 +58,24 @@ A second test approach asks candidates to evaluate a coco lumber specification, 
 
 Calculations may involve comparing embodied carbon of a bamboo structure (estimated 0.40-0.60 kg CO2e/m³ with local harvesting) to equivalent reinforced concrete or steel-frame designs. Candidates must understand that vernacular materials reduce transport embodied carbon but require careful property verification and may have higher maintenance costs offsetting initial material savings.
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+<Tip>When a question specifies a material by common Filipino name (kawayan, coco lumber, nipa) and asks about structural suitability, first identify the material's applicable standard or non-code status. If the material lacks ASTM or ISO standardization, check whether DPWH case-by-case approval is noted or if it is limited to non-structural use. Many vernacular materials are excellent for infill, interior applications, and secondary structural members but unsuitable for primary seismic resisting systems without additional testing and engineer approval.</Tip>
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard title="Confusing Bamboo Species and Structural Capacity" severity="critical">Candidates often state that all bamboo has identical structural properties. In reality, Kawayan tinik (Dendrocalamus asper) and Bayog (Bambusa blumeana) have different allowable stress values per ISO 22157 testing. Kawayan tinik typically allows higher bending stress (8-10 MPa) than Bayog (6-7 MPa) due to denser culm structure. Material testing is required to establish species-specific properties; candidates must not assume interchangeability.</WikiMistakeCard>
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard title="Assuming Coco Lumber Requires No Quality Control" severity="high">Candidates sometimes specify coco lumber as a sustainable choice without verifying FPRDI grading documentation or preservation application. DPWH acceptance requires graded lumber with copper-based fungicide preservation and documented 10-12 year service life. Using ungraded or untreated coco lumber violates DPWH specifications and voids material acceptance on public works projects.</WikiMistakeCard>
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard title="Overestimating Adobe and Nipa in Seismic Regions" severity="critical">Adobe blocks (1-3 MPa compressive strength) and nipa palm thatching are marketed as sustainable but are unsuitable for primary structural members in earthquake-prone Philippines. Candidates must recognize that while these materials work in vernacular low-seismic-risk contexts, they do not meet National Building Code requirements for lateral load resistance. Adobe may be used only for non-structural infill or cladding with reinforced concrete backing.</WikiMistakeCard>
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="WikiMistakeList" status="preserved"]
+<WikiMistakeList title="Common errors when evaluating vernacular materials:">
+<li>Specifying vernacular materials for primary structural systems without checking ISO 22156 height/storey limitations (max 7 m, 2 storeys for bamboo)</li>
+<li>Assuming non-standardized materials (rattan, abaca composites) meet structural code without DPWH engineer approval documentation</li>
+<li>Forgetting that coco lumber preservation (fungicide) must be verified and durability tested for the intended service environment</li>
+<li>Confusing lower embodied carbon with lower total lifecycle cost; vernacular materials often have higher maintenance costs offsetting material savings</li>
+<li>Specifying nipa palm or rattan without recognizing they are non-structural or maintenance-intensive (annual inspection, 15-20 year replacement cycle)</li>
+<li>Using vernacular materials in high-moisture or corrosive environments (coastal salt spray, industrial areas) without durability verification</li>
+</WikiMistakeList>
 
 ## Related Articles
 

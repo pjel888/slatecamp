@@ -48,7 +48,7 @@ Several structural systems are common in Philippine architecture, each with dist
 - Used where lateral resistance, speed, and span flexibility must be balanced (e.g., mixed-use podium-tower developments).  
 - Floor-to-floor heights often similar to RC or steel-only systems (around 3.0–3.5 m, depending on occupancy and services).  
 - Architectural impact: Allows differentiation between podium and tower expression; cores and transfer levels strongly influence planning.
-<ArticleMedia id="media-lea-dsgn-007-08-core-concept" a type="image" caption="Anthropometric Clearances — Human Dimensions in Space Planning" description="Scale figure diagrams showing minimum clearances for: wheelchair maneuvering (1.5m turning circle), corridor passage (0.9m single, 1.5m two-way), doorway clear width (0.9m clear), and workstations. Based on BP 344 accessibility standards." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-007-08-core-concept" type="image" caption="Anthropometric Clearances — Human Dimensions in Space Planning" alt="Scale figure diagrams showing minimum clearances for: wheelchair maneuvering (1.5m turning circle), corridor passage (0.9m single, 1.5m two-way), doorway clear width (0.9m clear), and workstations. Based on BP 344 accessibility standards." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Design Implications by System
 
@@ -100,10 +100,12 @@ For architects, early collaboration with the structural engineer is essential: g
 3. **Multi-System Comparison**  
    You compare two candidate systems (e.g., RC vs. steel) on cost tendency, schedule, and architectural expression, then recommend one with clear reasoning aligned to the project brief.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+<Tip>
+**“The structural grid is the skeleton of the plan.”** Lock in a realistic grid and structural system early, then develop layouts around it. Moving columns late in the process is far more costly — in practice and in the exam.
+</Tip>
 
 **Exam Tip — ERR-DSGN-029:** Child-scale anthropometrics differ significantly from adult standards. Toilet seat: 250-300mm (vs 400mm adult). Lavatory: 550-600mm (vs 800mm adult). These are frequently tested dimensions.
-<ArticleMedia id="media-lea-dsgn-007-08-core-concept" a type="image" caption="Anthropometric Clearances — Minimum Dimensions for Circulation and Occupancy" description="Plan and section diagrams showing anthropometric clearances: door width (900mm minimum), corridor width (1,100mm minimum for corridors serving 10+ persons), wheelchair turning radius (1,500mm), ADA/BFAD reach ranges, and minimum clearances for fixtures per BP 344 and PD 1096." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-007-08-core-concept" type="image" caption="Anthropometric Clearances — Minimum Dimensions for Circulation and Occupancy" alt="Plan and section diagrams showing anthropometric clearances: door width (900mm minimum), corridor width (1,100mm minimum for corridors serving 10+ persons), wheelchair turning radius (1,500mm), ADA/BFAD reach ranges, and minimum clearances for fixtures per BP 344 and PD 1096." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Cross-References
 
@@ -111,4 +113,12 @@ See **LEA-DSGN-007-07** (Space Planning) for application of anthropometric data,
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeList" status="preserved"]
+<WikiMistakeList
+  mistakes={[
+    'Assuming steel will always be faster and cheaper than RC without considering local supply, detailing, and procurement lead times',
+    'Placing RC or steel columns in the middle of key spaces (e.g., office bays, hotel rooms) due to poor early grid coordination',
+    'Using unnecessarily high floor-to-floor dimensions for low-rise residential, wasting volume and increasing envelope cost',
+    'Ignoring fire protection and corrosion requirements when comparing steel to RC in Philippine conditions',
+    'Assuming masonry bearing wall systems can be rearranged like partitions, leading to impossible “open plan” schemes'
+  ]}
+/>

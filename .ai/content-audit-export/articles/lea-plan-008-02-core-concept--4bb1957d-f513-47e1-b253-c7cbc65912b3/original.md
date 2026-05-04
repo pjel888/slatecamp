@@ -5,7 +5,6 @@ Apply smart city concepts — GIS, IoT sensors, real-time data, digital platform
 
 Smart cities integrate digital technologies—GIS, real-time data, IoT sensors, and digital platforms—into urban planning and city management to improve efficiency, livability, and sustainability. Digital planning enables planners to visualize land use patterns, monitor infrastructure performance, and engage communities through data-informed decision-making.
 
-
 ## Core Concept
 
 A smart city uses interconnected digital systems to optimize urban services, reduce resource consumption, and improve quality of life. Smart city planning moves beyond static paper maps to dynamic, data-driven systems that track transportation flows, energy use, water consumption, and air quality in real time. This capability allows planners and municipal managers to respond to problems (congestion, pollution, service failures) quickly and to anticipate future demand.
@@ -21,6 +20,7 @@ Digital planning tools include:
 Smart cities typically target sustainability goals—reducing carbon emissions, improving transit efficiency, minimizing waste—while enhancing livability through responsive services. A smart city does not replace traditional planning; rather, it extends planning's reach by providing real-time feedback on plan implementation and infrastructure performance.
 
 In Philippine cities, smart city initiatives are emerging in high-growth urban centers where congestion, pollution, and resource strain demand efficient management. Digital planning supports the CLUP by making land use data accessible and enabling rapid updates when conditions change.
+<ArticleMedia id="media-lea-plan-008-02-core-concept" a type="image" caption="Smart City Planning Framework — GIS, IoT, and Digital Platforms" description="Diagram of smart city components: GIS-based spatial planning, IoT sensor networks (traffic, air quality, waste), real-time data dashboards, digital service platforms, and implementation considerations for Philippine LGUs. Opportunities and risks of smart city deployment." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
@@ -39,7 +39,6 @@ Philippine cities face rapid urbanization—Metro Manila, Cebu, Davao, and secon
 3. **Digital engagement and participatory planning** — "A municipality launches an online platform for residents to report potholes, blocked drains, and inadequate street lighting. How does this serve planning?" → Answer: Provides ground-truth data on infrastructure maintenance gaps; identifies priority repair zones; informs capital improvement plans. Tests the link between digital engagement and planning implementation.
 
 <Tip>Memory aid: **GIS = Geographic Information Systems = spatial layer analysis**. Think of GIS as the digital equivleant of drawing transparent maps on overlays and stacking them to find patterns. **IoT = Internet of Things = real-time sensors feeding live data**. Smart cities collect constant data; static data is yesterday's planning.</Tip>
-
 
 **Exam Tip:** Smart city components: GIS (mapping analysis), IoT (sensors for traffic/air quality/waste), big data analytics (demand forecasting), digital platforms (e-governance, community engagement). Focus on PLANNING applications, not technology details.
 

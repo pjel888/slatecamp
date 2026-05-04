@@ -5,7 +5,6 @@ Read and produce site plans showing property boundaries, setback compliance, bui
 
 Site plans are scaled drawings that communicate the spatial relationship between a building and its context—showing property boundaries, setback compliance, access, utilities, and landscape. The LEA expects you to read and produce site plans that demonstrate understanding of zoning setback regulations and site organization principles.
 
-
 ## Core Concept
 
 A **site plan** is an orthographic (top-down) view of a property showing the building footprint, adjacent landscape, utilities, and context features at a defined scale. It is the primary communication tool for demonstrating compliance with zoning and development regulations.
@@ -34,6 +33,7 @@ A **site plan** is an orthographic (top-down) view of a property showing the bui
 - **1:100**: For small infill sites; shows detailed parking layout and access.
 
 Site plans communicate not only building placement but also the designer's understanding of site constraints (slope, utilities, access), regulatory compliance (setbacks), and design intent (landscape, circulation, parking strategy).
+<ArticleMedia id="media-lea-dsgn-011-03-core-concept" a type="image" caption="Site Plan Elements — Property Lines, Setbacks, and Site Development" description="Annotated site plan showing: property boundary lines, setback dimensions (front, side, rear per PD 1096 Rule VIII), building footprint, access routes (vehicular and pedestrian), utility easements, landscaping zones, and contour lines." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
@@ -81,8 +81,8 @@ A site plan shows a building on a corner lot with utilities, adjacent buildings,
 **Memory aid:** "PD 1096 Setback Rule" — For buildings up to 6–9 m, front=4.5 m, sides=2.0 m, rear=2.0 m. For taller buildings (9–15 m), front and rear increase; sides gradually increase. Always check building height first to determine the correct setback row in the table.
 </Tip>
 
-
 **Exam Tip:** Site plans must show property lines with dimensions, setbacks (front, side, rear), building footprint with dimensions, access driveways, parking layout, and utility connection points. Scale typically 1:200 or 1:500.
+<ArticleMedia id="media-lea-dsgn-011-03-core-concept" a type="image" caption="Site Plan Checklist — Required Elements for Permit Submission" description="Annotated site plan showing all required elements per PD 1096: property boundaries with metes and bounds, building footprint with setbacks, access drives and parking, utility lines (water, sewer, power, telecom), landscaped areas, easements, topography contours, flood hazard overlay, and north arrow with prevailing wind direction." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Cross-References
 

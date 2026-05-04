@@ -10,6 +10,7 @@ By the end of this article, you will be able to:
 High-rise buildings must have accelerographs per NSCP 2015 Section 208.12.6 (exact height threshold to be verified from code)—seismic instruments that record ground motion. The owner is responsible for maintenance. Essential facilities (hospitals, fire stations, emergency centers) require an importance factor I per NSCP 2015 Table 208-1 (typically 1.25 for essential facilities) in the design base shear formula, meaning they must be designed for 25% higher seismic forces.
 
 ## Core Concept
+<ArticleMedia id="media-lea-strc-004-04-core-concept" a type="image" caption="Accelerograph and Strong Motion Instrumentation" description="Diagram of an accelerograph installation showing: (1) Sensor unit with three orthogonal accelerometers (X, Y, Z); (2) Recording/storage module; (3) Typical placement in building (basement, mid-height, roof). Sample acceleration time-history output showing peak ground acceleration (PGA) recording. Philippine strong motion instrumentation program locations." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 An _accelerograph_ is an instrument that records the acceleration of ground motion during an earthquake. Unlike older seismographs (which measure displacement or velocity), accelerographs directly measure acceleration in units of g (gravitational acceleration = 9.8 m/s²) and are therefore most relevant to structural design. Recorded acceleration data is used to validate seismic hazard models and inform future design standards.
 
@@ -49,7 +50,6 @@ Major hospitals in Metro Manila (Philippine General Hospital, Makati Medical Cen
 **Pattern 3: Importance factor application.** "An essential facility in Zone 2 is designed with standard I = 1.0. Is this compliant?" → No. Essential facilities require I = 1.25. This is a code mandate, not optional.
 
 <Tip>14 stories = accelerograph threshold. 3 instruments = bottom, middle, top. I = 1.25 = essential (add 25% to base shear). Owner = responsible for maintenance forever.</Tip>
-
 
 ## Related Articles
 

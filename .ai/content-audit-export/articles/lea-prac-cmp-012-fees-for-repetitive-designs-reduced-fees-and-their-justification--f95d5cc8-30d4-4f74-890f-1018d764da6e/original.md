@@ -1,6 +1,5 @@
 ## Fees for Repetitive Designs — Reduced Fees and Their Justification
 
-
 ## Learning Goal
 
 After studying this article, you should be able to:
@@ -9,8 +8,6 @@ After studying this article, you should be able to:
 - Explain the justification for fee reductions on repeat projects.
 - Identify the percentage reduction for subsequent units.
 - Apply reduced fee rules to multi-unit project scenarios.
-
-
 
 ### Definition and Characteristics of Repetitive Designs
 
@@ -24,16 +21,13 @@ For repetitive design fee reduction to apply, the architect must first complete 
 
 The initial design establishes the building prototype, develops construction details, refines specifications, establishes building systems performance, and works through construction coordination issues. The architect's full design effort is expended during the initial design; this work is not reduced in fee.
 
-
 <ExamTip>
   **LEA Priority — Fee Computation:** Know the five compensation methods (percentage-of-PCC, MDPE, lump sum, per diem/retainer, reimbursable expenses). Master the sliding scale for Groups 1-3 (5%→4%→3%→2%→1% for successive ₱50M brackets). Remember: DAEDS = all disciplines; DADS ≈ 60% of DAEDS (architecture only). Group 9 renovation = 150% of base group rate.
 </ExamTip>
 
-
 <LawCallout code="irr" section="Architect's Guidelines / SPP 202" title="Fee Computation — Regulatory Basis">
 Fee computation under the Architect's Guidelines follows SPP 202 classification groups and the DAEDS/DADS framework. The percentage-of-PCC method applies group-specific rates to Project Construction Cost. MDPE uses direct personnel expense multiplied by an agreed factor. Lump-sum fees are negotiated based on scope. All methods must be documented in the owner-architect agreement.
 </LawCallout>
-
 
 <KeyValues items=[{"value": "5-12%", "label": "DAEDS Fee Range"}, {"value": "50M", "label": "PCC Bracket Threshold"}, {"value": "10 Groups", "label": "Project Classification"}, {"value": "150%", "label": "Renovation Multiplier"}] />
 
@@ -93,3 +87,5 @@ Fee computation under the Architect's Guidelines follows SPP 202 classification 
 - [Reimbursable Expenses](lea-prac-cmp-011)
 - [SPP Doc 202 Phase Framework](lea-prac-svc-004)
 - [Standard Owner-Architect Agreement](lea-prac-ctr-001)
+
+<!-- no-media-needed: professional practice article, text/tables/UI blocks are optimal format -->

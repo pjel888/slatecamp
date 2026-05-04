@@ -7,7 +7,7 @@ Apply core ventilation standards — NBCP minimum fresh air rates, ASHRAE 62.1 i
 
 ### Philippine Building Code Requirements (PD 1096 Rule VIII)
 
-<ArticleMedia id="media-lea-util-002-03-core-ventilation-standar" a type="image" caption="Natural Ventilation Strategies — Cross-Ventilation and Stack Effect" description="Building section diagram comparing two natural ventilation strategies: (1) Cross-ventilation — opposite windows capturing prevailing wind, window openings min 10% of floor area per PD 1096 Rule VIII; (2) Stack effect — warm air rising through atrium/vent with cooler air entering lower openings, minimum 3m vertical separation between intake and exhaust. Philippine wind direction arrows annotated." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-util-002-03-core-ventilation-standar" type="image" caption="Natural Ventilation Strategies — Cross-Ventilation and Stack Effect" alt="Building section diagram comparing two natural ventilation strategies: (1) Cross-ventilation — opposite windows capturing prevailing wind, window openings min 10% of floor area per PD 1096 Rule VIII; (2) Stack effect — warm air rising through atrium/vent with cooler air entering lower openings, minimum 3m vertical separation between intake and exhaust. Philippine wind direction arrows annotated." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 
 The Philippine National Building Code establishes minimum ventilation requirements through natural and mechanical means:
@@ -94,7 +94,7 @@ When mechanical systems are required:
 
 PD 1096 Rule VIII mandates exhaust ventilation for specific occupancies:
 
-<ArticleMedia id="media-lea-util-002-03-core-ventilation-standar" a type="image" caption="Mechanical Ventilation Exhaust — Toilets, Kitchens, Parking Garage" description="Section diagram showing exhaust systems for three space types: toilet exhaust (50-100 CFM, discharge above roof min 1m), kitchen exhaust hood (Type I, 100-300 CFM with grease duct sloping 1:12), and parking garage ventilation (1.5 ACH minimum with CO monitoring at 35 ppm threshold). Make-up air pathways indicated with blue arrows." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-util-002-03-core-ventilation-standar" type="image" caption="Mechanical Ventilation Exhaust — Toilets, Kitchens, Parking Garage" alt="Section diagram showing exhaust systems for three space types: toilet exhaust (50-100 CFM, discharge above roof min 1m), kitchen exhaust hood (Type I, 100-300 CFM with grease duct sloping 1:12), and parking garage ventilation (1.5 ACH minimum with CO monitoring at 35 ppm threshold). Make-up air pathways indicated with blue arrows." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 
 ### Toilets (Water Closets)

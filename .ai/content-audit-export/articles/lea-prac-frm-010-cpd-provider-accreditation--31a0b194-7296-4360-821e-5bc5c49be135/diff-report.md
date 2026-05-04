@@ -1,33 +1,32 @@
 # Content Diff Report: lea-prac-frm-010-cpd-provider-accreditation
 
-Generated: 2026-05-04T00:07:03.227Z
+Generated: 2026-05-04T02:17:51.688Z
 Article ID: 31a0b194-7296-4360-821e-5bc5c49be135
-Changed: true
-Safe to push locally: false
+Changed: false
+Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:d58c3804ef3988f505818048e7711bfed3dcbbdab73bd9252de5b5394da321d8`
-- Normalized: `sha256:b7275341ccca5a95fba7dedeb09eb3477823c597706570976fa4d0508aa7fece`
-- Candidate: `sha256:b7275341ccca5a95fba7dedeb09eb3477823c597706570976fa4d0508aa7fece`
+- Original: `sha256:8551e98f9d8554120c11d1ff8e89706a8a59b38af0dba10ae6c571438d163595`
+- Normalized: `sha256:6fb55549c274854f05c20cdecb0e64ea3cf1899dbf83be04a18241e4e8b91338`
+- Candidate: `sha256:8551e98f9d8554120c11d1ff8e89706a8a59b38af0dba10ae6c571438d163595`
 
 ## Line summary
 
-- Changed lines: 31
+- Changed lines: 0
 - Inserted lines: 0
 - Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 2
-- UI blocks preserved: 0
-- UI blocks changed/missing: 2
-- Unresolved placeholders: 1
+- UI blocks preserved: 2
+- UI blocks changed/missing: 0
+- Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate contains unresolved UI block placeholders.
-- Candidate is missing 2 preserved UI block(s).
+- None
 
 ## Warnings
 

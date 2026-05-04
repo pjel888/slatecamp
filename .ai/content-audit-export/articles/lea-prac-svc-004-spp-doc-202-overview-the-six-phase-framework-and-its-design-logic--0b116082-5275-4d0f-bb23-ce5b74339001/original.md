@@ -6,6 +6,8 @@ SPP Document 202 defines regular design services under a six-phase framework tha
 
 ### The Six Phases of Regular Design Services
 
+<ArticleMedia id="media-lea-prac-svc-004-spp-doc-202-overview-th" a type="image" caption="SPP Doc 202 — The Six Phases of Regular Design Services" description="Process flow diagram illustrating all six phases: Project Definition (foundational), Schematic Design (15%), Design Development (20%), Contract Documents (50%), Bidding/Negotiation (5%), and Construction Administration (10%), showing cumulative fee progression." suggestedAsset="Diagram or reference image" status="placeholder" />
+
 SPP 202 establishes six distinct phases: Project Definition Phase, Schematic Design Phase, Design Development Phase, Contract Document Phase, Bidding or Negotiation Phase, and Construction Phase. However, the fee structure references five fee percentages totaling 100% of the contract sum. The architect must understand that Project Definition Phase is foundational work preceding the five fee-earning phases in regular practice fee calculations.
 
 <ExamTip>SPP 202 establishes six distinct phases, but the fee structure references five fee percentages totaling 100% of the contract sum. The Project Definition Phase is foundational work that precedes the five fee-earning phases in regular practice fee calculations.</ExamTip>

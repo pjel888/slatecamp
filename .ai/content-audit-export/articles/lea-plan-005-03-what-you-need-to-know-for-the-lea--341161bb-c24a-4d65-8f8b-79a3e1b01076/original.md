@@ -5,7 +5,6 @@ Environmental and land-use planning in the Philippines is governed by a framewor
 
 Identify the key provisions of the five core Philippine environmental laws (PD 1067, PD 1586, RA 7586, RA 9275, RA 9003) and apply easement distances, ECC requirements, and environmental constraints to site planning scenarios.
 
-
 ## Core Concept
 
 ### PD 1067 — Water Code of the Philippines (1976)
@@ -100,3 +99,16 @@ A site plan checklist integrating all laws:
 ### Summary
 
 Philippine environmental and land-use laws establish essential constraints on landscape and site planning. PD 1067 easement distances protect water bodies and establish public access rights. PD 1586 requires environmental assessment for critical projects. RA 7586 protects biodiversity in designated areas. RA 9275 mandates wastewater treatment, and RA 9003 requires waste management integration. Successful site planning recognizes these legal requirements as design opportunities to create resilient, compliant, and environmentally beneficial landscapes.
+<ArticleMedia id="media-lea-plan-005-03-what-you-need-to-know-fo" a type="image" caption="Environmental and Land-Use Laws — PD 1586, PD 1067, RA 9275 Framework" description="Framework diagram of Philippine environmental laws: PD 1586 (EIS system, ECC process), PD 1067 (Water Code easements: 3/20/40m), RA 9275 (Clean Water Act, water quality standards), RA 9003 (Ecological Solid Waste Management), and RA 9147 (Wildlife Conservation). EIA process flowchart." suggestedAsset="Diagram or reference image" status="placeholder" />
+
+
+---
+## Cross-References
+
+- **Hydrology in Site Planning**: Related article on Hydrology in Site Planning
+- **Site Planning Accessible Routes vs Open Space**: Related article on Site Planning Accessible Routes vs Open Space
+- **Site development planning**: Related article on Site development planning
+- **Pre-construction planning ensures site readiness**: Related article on Pre-construction planning ensures site readiness
+- **Vernacular sustainable materials achieve environmental**: Related article on Vernacular sustainable materials achieve environmental
+- **Urban planning**: Related article on Urban planning
+- **Planning operates across a spectrum**: Related article on Planning operates across a spectrum

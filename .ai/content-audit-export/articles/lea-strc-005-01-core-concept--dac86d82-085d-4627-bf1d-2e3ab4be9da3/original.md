@@ -11,6 +11,7 @@ By the end of this article, you will be able to:
 Load factors reflect the uncertainty in design loads and material strength. The NSCP specifies different load factor combinations depending on which loads act on the structure—gravity, wind, or earthquake. You must know both the older NSCP edition and NSCP 2015 load factors, as the LEA tests both.
 
 ## Core Concept
+<ArticleMedia id="media-lea-strc-005-01-core-concept" a type="image" caption="Required Strength U — Load Combination Selection Flowchart" description="Decision flowchart for determining governing load combination: evaluate D, L, W, E, H loads → apply appropriate load factors per NSCP edition (older: 1.4D+1.7L, 0.75(1.4D+1.7L+1.7W), etc.; 2015: 1.2D+1.6L, 1.2D+1.0E+0.5L, etc.) → compare U values → select largest (governing) combination. Side-by-side comparison of older vs 2015 factors." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 The required strength _U_ is the factored load combination that a structural member must be designed to resist. It combines multiple load types—dead load (D), live load (L), wind load (W), earthquake load (E), and earth/water pressure (H)—each multiplied by a load factor that accounts for variability and uncertainty.
 
@@ -78,7 +79,6 @@ _NSCP 2015:_ (1) DL = 1.2, LL = 1.6, W = 1.0, E = 1.0. (2) Combined: 1.2D + 1.0W
 
 Always flag which edition the question asks about before calculating.
 </Tip>
-
 
 ## Related Articles
 

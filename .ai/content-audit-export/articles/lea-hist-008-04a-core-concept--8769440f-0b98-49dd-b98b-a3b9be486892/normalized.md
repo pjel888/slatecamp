@@ -108,6 +108,8 @@ These principles shaped post-war design globally. The International Style in arc
 
 **International Style**: Modernist architectural movement influenced by Bauhaus; characterized by geometric forms, open plans, honest structure, and universal applicability across climates and cultures.
 
+<ArticleMedia id="media-hist-008-04a-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Timeline of Bauhaus history (1919–1933) showing the three-director evolution (Gropius, Meyer, Mies), curriculum structure (Vorkurs, workshop system), and key locations (Weimar, Dessau, Berlin)." caption="Bauhaus — History and Curriculum Timeline" suggestedAsset="Timeline diagram" placementIntent="Timeline diagram for architectural period" />
+
 ## Related Articles
 
 See also within Modern & Contemporary Architecture: **lea-hist-008-01-core-concept**, **lea-hist-008-02-core-concept**, **lea-hist-008-03a-core-concept**, **lea-hist-008-03b-core-concept**.

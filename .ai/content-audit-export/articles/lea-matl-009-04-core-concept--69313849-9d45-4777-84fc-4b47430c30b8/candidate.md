@@ -65,15 +65,17 @@ _Pattern 5 — Submittal Completeness:_ A paint product submittal includes color
 
 _Pattern 6 — Philippine Regulatory Alignment:_ The exam presents a concrete testing frequency from an international standard that differs from DPWH requirements. Determine which applies. Answer: For DPWH-funded projects, DPWH requirements supersede. The more stringent requirement applies (DPWH testing frequency typically exceeds ACI minimums). The specification must state: "DPWH testing frequencies apply; if DPWH and ACI 318 differ, the more stringent requirement governs."
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+<Tip>
+Memory aid: **Test, Document, Approve, Correct**. Every material and system goes through this cycle: testing verifies specification compliance, documentation records results, the architect approves or rejects, and non-conforming work is corrected. If any step is skipped (e.g., no testing, poor documentation), disputes arise. The LEA tests your understanding of this systematic approach to quality control. Always ask: What testing is required? At what frequency? By whom? Documented how? Approved by whom?
+</Tip>
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Omitting slump test requirements from concrete specifications, allowing contractors to deliver concrete of unknown workability. High-slump concrete (excess water) passes placement easily but has reduced strength." correction="Always specify slump range in Part 1: General with reference to ASTM C143. Include testing frequency (every 100 m3 or daily, per DPWH). Slump testing is quick, inexpensive, and prevents strength problems." />
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Accepting cylinder compression test results that marginally fail (e.g., 26 MPa when 28 MPa specified) without requiring either (1) retest of additional cylinders to establish trend, or (2) core boring to verify in-situ strength. The contractor pressures acceptance." correction="Establish acceptance criteria in Part 1: General before testing occurs. Typical: '28-day average must equal or exceed design strength; individual tests must not fall below 90 percent of design strength.' If marginal, require statistical analysis or in-situ testing (core boring per ASTM C42). Do not accept failures without documented justification." />
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
+<WikiMistakeList mistakes={["Failing to specify testing frequency and acceptance criteria in Part 1: General (leaves contractor and architect guessing)", "Approving shop drawings without verifying dimension tolerance, connection adequacy, and specification alignment", "Accepting submittals without complete documentation (missing MSDS, thermal data, installation instructions)", "Confusing the role of slump test (workability) with compression test (strength); treating slump results as strength indicators", "Failing to require waterproofing mock-ups in tropical construction where moisture is persistent problem", "Not verifying third-party laboratory credentials (ISO 17025 accreditation) for independent testing", "Accepting test reports without chain-of-custody documentation (who collected samples, when, from where)", "Omitting acceptance criteria tolerances (e.g., 'flatness tolerance per ACI 117 Table 4.1')", "Failing to require retesting if initial tests are questionable (e.g., high slump indicating potential water addition)"]} />
 
 ## Related Articles
 

@@ -44,7 +44,11 @@ Apply the provisions of RA 7277 (Magna Carta for Disabled Persons), RA 9442 (ame
 
 **Q7.** Does RA 10754 itself contain **physical dimensions** (like ramp width)?
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+<LawCallout code="bp344">
+
+A: No. RA 10754 focuses on benefits, VAT, and related penalties and does not prescribe millimeter‑based design values; physical accessibility specifications are in BP 344 and the PD 1096 IRR.[web:22][web:25][web:28]
+
+</LawCallout>
 
 ---
 
@@ -56,7 +60,11 @@ Apply the provisions of RA 7277 (Magna Carta for Disabled Persons), RA 9442 (ame
 
 **Q9.** What additional deduction is available for **accessibility improvements** (ramps, elevators, accessible toilets) made beyond mandatory BP 344 compliance?
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
+<LawCallout code="bp344">
+
+A: An additional deduction from taxable income equivleant to 50% of the direct costs of improvements or modifications that provide reasonable accommodation for PWDs, only to the extent they go beyond what BP 344 already requires.[web:16][web:18][web:20][web:29]
+
+</LawCallout>
 
 **Q10.** Which law is the primary basis for these tax incentives?
 
@@ -96,7 +104,11 @@ Apply the provisions of RA 7277 (Magna Carta for Disabled Persons), RA 9442 (ame
 
 **Q16.** Which laws should you cite for **ramp dimensions, corridor widths, and parking stall sizes**?
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
+<LawCallout code="bp344">
+
+A: BP 344 and its amended IRR (e.g., 2024 updates) for accessibility dimensions, together with the Implementing Rules and Regulations of PD 1096 (National Building Code) for general building requirements and classification (Rule VII and VIII); RA 7277/9442/10754 do not contain millimeter‑based specifications.[web:22][web:25][web:28]
+
+</LawCallout>
 
 **Q17.** Which laws should you cite for **discounts, VAT exemption, and employment quotas/incentives**?
 

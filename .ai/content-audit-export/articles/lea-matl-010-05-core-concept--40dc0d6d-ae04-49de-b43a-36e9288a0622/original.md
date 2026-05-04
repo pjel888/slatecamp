@@ -17,6 +17,13 @@ Most projects require two coats (primer + finish), which doubles the paint volum
 
 In the Philippines, standard paint cans are 1 liter, 4 liters (1 gallon), and 20 liters (5 gallons). For large projects, contractors often purchase paint by the liter or in bulk containers for cost efficiency.
 
+
+<ArticleMedia id="media-paint-coverage-diagram" layout="single" type="image" status="placeholder"
+  alt="Diagram showing paint coverage calculation: surface area measurement, number of coats, and coverage rate per liter with waste factor"
+  caption="Future diagram: paint coverage calculation — surface area, coats, and coverage rate"
+  suggestedAsset="Wall elevation with area measurement callouts and calculation"
+  placementIntent="Visualizes paint estimation methodology" />
+
 ## Key Provisions
 
 | Parameter | Value | LEA Relevance |
@@ -85,6 +92,12 @@ Using 20-liter containers: 75 L ÷ 20 L = 3.75 ≈ 4 containers (round up)
 **Answer: 75 liters total, approximately 4 containers of 20 liters each (or 19 cans of 4 liters)**
 </Example>
 
+
+<ArticleMedia id="media-paint-estimation-example" layout="single" type="image" status="placeholder"
+  alt="Step-by-step paint estimation example showing surface area calculation, number of coats, coverage rate, and total liters needed for a room"
+  caption="Future diagram: paint estimation worked example — surface area, coats, and coverage calculation"
+  suggestedAsset="Step-by-step illustrated calculation example"
+  placementIntent="Provides practical example of paint quantity estimation" />
 ## Quick Reference: Paint Coverage Estimation Table
 
 | Paint Type | Coverage Rate (m²/L) | Typical Use | Cost/Liter (PH) |

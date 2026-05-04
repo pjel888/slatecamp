@@ -419,7 +419,11 @@ Under the 2004 Revised IRR, Rule XV, Section 1501, which of the following is NOT
 
 > **Correct Answer: C — Plasticized PVC (PVC-P)**
 >
-[SLATECAMP_UI_BLOCK:ui_0001 component="Note" status="preserved"]
+<Note>
+
+The 2004 Revised IRR explicitly names precast concrete, unplasticized polyvinyl chloride (uPVC), and various metal components as approved prefab materials. Plasticized PVC (PVC-P, the flexible variety used in film, flooring, and cable insulation) is not listed. The distinction between uPVC (rigid, structural-grade) and plasticized PVC is significant — only uPVC has the rigidity and dimensional stability for structural prefab applications. Note that the 1977 basic law does not name uPVC at all; this is an IRR-only addition.
+
+</Note>
 
 ---
 
@@ -435,7 +439,11 @@ According to PD 1096, Rule XV, Section 1501, every device or system used to conn
 
 > **Correct Answer: B — Develop the strength of the connected members as an integral structure**
 >
-[SLATECAMP_UI_BLOCK:ui_0002 component="Note" status="preserved"]
+<Note>
+
+Section 1501 states clearly that every connection device must develop the strength of the members as an integral structure — meaning the connection cannot be the weak link. Option A is good practice but not the Code's specific language for connection devices. Option C applies to the units themselves (testing), not specifically to connection devices. Option D has no basis in the Code — connections between concrete panels and steel frames are common and Code-compliant. Note the exception: members forming part of a structural frame per the Code/IRR are exempted from this specific provision.
+
+</Note>
 
 ---
 

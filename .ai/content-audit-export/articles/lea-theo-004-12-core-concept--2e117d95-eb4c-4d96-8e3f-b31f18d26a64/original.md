@@ -7,11 +7,18 @@ Apply ASHRAE 55 thermal comfort standards — including the adaptive comfort mod
 
 ### Thermal Comfort Definition and Variables
 
+<ArticleMedia id="media-lea-theo-004-12-core-concept" a type="image" caption="ASHRAE 55 Thermal Comfort — Factors and Adaptive Model" description="Two-part diagram: Part 1 shows the six thermal comfort variables arranged around a human figure — Metabolic Rate (met, activity level), Clothing Insulation (clo), Air Temperature (Ta), Mean Radiant Temperature (Trad), Air Velocity (Vel), and Relative Humidity (RH). Part 2 shows the ASHRAE 55 Adaptive Comfort Model as a chart with outdoor temperature on X-axis and indoor operative temperature on Y-axis, showing the 80% and 90% acceptability limits for naturally ventilated buildings. Tropical application highlighted: Philippine adaptive comfort zone is 26-29°C. Callout shows the PMV-PPD relationship curve and Category I/II/III compliance bands." suggestedAsset="Diagram or reference image" status="placeholder" />
+
+### Thermal Comfort Definition and Variables
+
 **Thermal comfort** is defined as "the condition of mind that expresses satisfaction with the thermal environment." It is subjective; identical conditions produce comfort for some occupants and discomfort for others depending on adaptation, expectation, acclimatization, and control.
 
 <Tip>
 **Memory Aid: "CRAMEC"**—Clothing, Radiant temperature, Activity (metabolic), Mean radiant, Environmental conditions, Control. These six variables determine comfort; changing any one impacts comfort sensation. Natural ventilation excels by enabling occupant control and adapting to local conditions.
 </Tip>
+Extracted summary:
+- Props: (none)
+- Text: **Memory Aid: "CRAMEC"**—Clothing, Radiant temperature, Activity (metabolic), Mean radiant, Environmental conditions, Control. These six variables determine comfort; changing any one impacts comfort sensation. Natural ventilation excels by enabling occupant control and adapting to local conditions.
 
 Six primary variables determine thermal sensation:
 1. **Dry-bulb temperature** (°C): Indoor air temperature
@@ -32,6 +39,9 @@ In the **Philippine context**, typical design conditions:
 <Note>
 Occupants in naturally ventilated buildings adapt clothing and behavior. In mechanical air-conditioned buildings, occupants wear business formal (1.0 clo); in naturally ventilated tropical buildings, light tropical clothing (0.3–0.4 clo) is standard. This behavioral adaptation reduces metabolic heat load by 30–40%, enabling comfort at higher temperatures (27–29°C vs. 24°C).
 </Note>
+Extracted summary:
+- Props: (none)
+- Text: Occupants in naturally ventilated buildings adapt clothing and behavior. In mechanical air-conditioned buildings, occupants wear business formal (1.0 clo); in naturally ventilated tropical buildings, light tropical clothing (0.3–0.4 clo) is standard. This behavioral adaptation reduces metabolic heat load by 30–40%, enabling comfort at higher temperatures (27–29°C vs. 24°C).
 
 ### Fanger's PMV-PPD Model
 
@@ -78,6 +88,9 @@ PPD = 100 − 95 × e^(−0.03353×PMV^4 − 0.2179×PMV^2)
 <Warn>
 **Critical Distinction**: The fixed mechanical building standard (PMV ±0.5, requiring 24–25°C) does NOT apply to naturally ventilated buildings with occupant control. ASHRAE 55 allows PMV ±1.0 to ±1.5 in naturally ventilated spaces. Applying fixed-setpoint logic to naturally ventilated buildings over-cools, wasting energy. Understand which standard applies to your design context.
 </Warn>
+Extracted summary:
+- Props: (none)
+- Text: **Critical Distinction**: The fixed mechanical building standard (PMV ±0.5, requiring 24–25°C) does NOT apply to naturally ventilated buildings with occupant control. ASHRAE 55 allows PMV ±1.0 to ±1.5 in naturally ventilated spaces. Applying fixed-setpoint logic to naturally ventilated buildings over-cools, wasting energy. Understand which standard applies to your design context.
 
 ### The Adaptive Comfort Model
 
@@ -190,28 +203,48 @@ A naturally ventilated building in a Coronas Type I climate with effective dayli
 ## Key Facts and Testable Items
 
 "ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: 1. **PMV Calculation**: A Manila office building (2:00 PM, Apr, dry season) has: T_air = 34°C, T_mean_rad = 36°C, RH = 60%, air velocity = 0.2 m/s, met = 1.2, clo = 0.4. Calculate PMV using simplified Fanger method. Is this acceptable under ASHRAE 55 Category II? Propose design solution.
-[/SLATECAMP_UI_BLOCK]
+<Note>
+1. **PMV Calculation**: A Manila office building (2:00 PM, Apr, dry season) has: T_air = 34°C, T_mean_rad = 36°C, RH = 60%, air velocity = 0.2 m/s, met = 1.2, clo = 0.4. Calculate PMV using simplified Fanger method. Is this acceptable under ASHRAE 55 Category II? Propose design solution.
+</Note>
 
 <ExamTip>2. **Adaptive Comfort Application**: For a Coronas Type II school (year-round wet climate, T_mean_out rolling = 29°C), calculate T_comfort using ASHRAE adaptive model. Propose natural ventilation design to achieve this temperature. Compare cooling energy vs. fully mechanical system (24°C setpoint).</ExamTip>
+Extracted summary:
+- Props: (none)
+- Text: 2. **Adaptive Comfort Application**: For a Coronas Type II school (year-round wet climate, T_mean_out rolling = 29°C), calculate T_comfort using ASHRAE adaptive model. Propose natural ventilation design to achieve this temperature. Compare cooling energy vs. fully mechanical system (24°C setpoint).
 
 <ExamTip>3. **Thermal Comfort Scenario Analysis**: Redesign a selead office building (currently PMV = +1.8) to meet Category II (PMV between −1.0 and +1.0). Specify: (a) window additions for shading, (b) ventilation strategy, (c) interior temperature setpoint, (d) clothing adaptation. Estimate energy reduction %.</ExamTip>
+Extracted summary:
+- Props: (none)
+- Text: 3. **Thermal Comfort Scenario Analysis**: Redesign a sealed office building (currently PMV = +1.8) to meet Category II (PMV between −1.0 and +1.0). Specify: (a) window additions for shading, (b) ventilation strategy, (c) interior temperature setpoint, (d) clothing adaptation. Estimate energy reduction %.
 
 <ExamTip>4. **BERDE Thermal Credit Design**: For a residential project aiming for BERDE certification, design the envelope and ventilation system to achieve: (a) ≥6 ACH natural ventilation, (b) operative temperature ≤27°C 95% of occupancy hours, (c) CO₂ < 600 ppm. Show calculation of cooling load reduction vs. mechanical baseline.</ExamTip>
+Extracted summary:
+- Props: (none)
+- Text: 4. **BERDE Thermal Credit Design**: For a residential project aiming for BERDE certification, design the envelope and ventilation system to achieve: (a) ≥6 ACH natural ventilation, (b) operative temperature ≤27°C 95% of occupancy hours, (c) CO₂ < 600 ppm. Show calculation of cooling load reduction vs. mechanical baseline.
 
 <ExamTip>5. **Humidity and Comfort Integration**: A Coronas Type II climate has RH 75% exterior. Natural ventilation alone cannot reduce interior humidity below 65%. Design a hybrid system combining natural ventilation (primary), desiccant dehumidification (supplementary), and thermal mass. Specify control strategy and annual energy impact.</ExamTip>
+Extracted summary:
+- Props: (none)
+- Text: 5. **Humidity and Comfort Integration**: A Coronas Type II climate has RH 75% exterior. Natural ventilation alone cannot reduce interior humidity below 65%. Design a hybrid system combining natural ventilation (primary), desiccant dehumidification (supplementary), and thermal mass. Specify control strategy and annual energy impact.
 
 <Callout>
 Thermal comfort in Philippine buildings is measured against **ASHRAE 55** standards, which include an **adaptive comfort model** allowing higher interior setpoints (26–29°C) when natural ventilation and occupant control are available. This model contradicts the fixed 23–25°C setpoint of mechanical buildings and reduces cooling energy by 40–60%. Fanger's **PMV-PPD model** quantifies thermal sensation mathematically; understanding both models enables design that achieves occupant comfort while aligning with BERDE certification and Philippine Green Building Code mandates.
 </Callout>
+Extracted summary:
+- Props: 
+- Text: Thermal comfort in Philippine buildings is measured against **ASHRAE 55** standards, which include an **adaptive comfort model** allowing higher interior setpoints (26–29°C) when natural ventilation a
 
 ## Common Mistakes
 
 <WikiMistakeCard mistake="Applying Fixed-Setpoint ASHRAE 55 to Tropical Naturally Ventilated Buildings" correction="Assuming 24°C is required everywhere." context="Adaptive model allows 26–29°C in naturally ventilated spaces; this mistake over-specifies cooling and increases costs." />
+Extracted summary:
+- Props: mistake="Applying Fixed-Setpoint ASHRAE 55 to Tropical Naturally Ventilated Buildings", correction="Assuming 24°C is required everywhere.", context="Adaptive model allows 26–29°C in naturally ventilated spaces; this mistake over-specifies cooling and increases costs."
+- Text: (none detected)
 
 <WikiMistakeCard mistake="Ignoring Mean Radiant Temperature" correction="Calculating comfort based on dry-bulb temperature alone ignores solar-exposed windows and surfaces." context="A window at 40°C in shade-free space can elevate PMV by 0.5–1.0 despite 27°C air temperature." />
+Extracted summary:
+- Props: mistake="Ignoring Mean Radiant Temperature", correction="Calculating comfort based on dry-bulb temperature alone ignores solar-exposed windows and surfaces.", context="A window at 40°C in shade-free space can elevate PMV by 0.5–1.0 despite 27°C air temperature."
+- Text: (none detected)
 
 satisfaction with thermal environment; subjective and dependent on physiological, psychological, and behavioral adaptation.
 

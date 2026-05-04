@@ -33,9 +33,43 @@ Waste factors account for breakage during transport, installation, and trimming.
 
 ## Worked Examples
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Example" status="preserved"]
+<Example>
+**Scenario 1: Bathroom floor, 8 m² area, 300 × 300 mm tiles (11 tiles/m²), 5% waste**
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Example" status="preserved"]
+**Step 1: Calculate base tile count**
+
+Base tiles = 8 m² × 11 tiles/m² = 88 tiles
+
+**Step 2: Add 5% waste**
+
+Total tiles with waste = 88 × 1.05 = 92.4 ≈ 93 tiles (round up)
+
+**Step 3: Convert to boxes (typically 20–25 tiles per box)**
+
+Assuming 20 tiles/box: 93 ÷ 20 = 4.65 ≈ 5 boxes
+
+**Answer: 93 tiles, approximately 5 boxes of 20**
+</Example>
+
+<Example>
+**Scenario 2: Living room flooring, 50 m² area, 600 × 600 mm tiles (2.8 tiles/m²), complex layout with 15% waste**
+
+**Step 1: Calculate base tile count**
+
+Base tiles = 50 m² × 2.8 tiles/m² = 140 tiles
+
+**Step 2: Add 15% waste (due to complex cuts and pattern)**
+
+Total tiles with waste = 140 × 1.15 = 161 tiles (round up)
+
+**Step 3: Determine box quantity and cost**
+
+Assuming 8 tiles/box (large format): 161 ÷ 8 = 20.1 ≈ 21 boxes
+
+Estimated cost at 1,200 pesos/m² = 50 m² × 1,200 = 60,000 pesos
+
+**Answer: 161 tiles, approximately 21 boxes, estimated 60,000 pesos**
+</Example>
 
 
 <ArticleMedia id="media-tile-estimation-example" layout="single" type="image" status="placeholder"
@@ -76,19 +110,21 @@ On the LEA, tile estimation questions focus on:
 
 6. **Grout and adhesive**: Based on tile count and joint dimensions.
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+<Tip>
+**Memory aid**: For 300 × 300 mm tiles, use 11–12 tiles/m². For 600 × 600 mm tiles, use ~3 tiles/m². Always add 5–10% waste unless the problem specifies a complex layout (then use 10–15%). Round UP the final tile count for ordering.
+</Tip>
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Using tile dimensions without accounting for grout joint (10 mm standard)" correction="A 300 mm tile with 10 mm joint covers 310 × 310 mm. Account for this when calculating tiles per m². Standard 300 × 300 = ~11 tiles/m² (not 11.1)." />
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Forgetting to add waste percentage" correction="Tiles break during transport and installation. Add 5% minimum for straight layouts, 10–15% for complex patterns or many cuts." />
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Using tiles per m² incorrectly" correction="The tiles per m² factor INCLUDES joint spacing. Simply multiply area × factor. Do NOT manually adjust for grout joints again." />
 
-[SLATECAMP_UI_BLOCK:ui_0007 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Not converting final tile count to box quantities" correction="Tiles are sold by the box (20–25 pieces for small, 6–8 for large format). Always convert final count to boxes for ordering." />
 
-[SLATECAMP_UI_BLOCK:ui_0008 component="WikiMistakeList" status="preserved"]
+<WikiMistakeList mistakes={["Confusing tiles per square meter with area per tile (inverse relationship)", "Applying waste factor to area instead of to tile count", "Using interior tile counts for exterior (outdoor tiles may be thicker and fewer per box)", "Forgetting that grout lines consume space—standard 10 mm joint is already factored into industry tile counts"]} />
 
 ## Related Articles
 

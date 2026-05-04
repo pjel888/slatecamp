@@ -51,7 +51,7 @@ Visualize two key rectangles:
 | **Lavatory Centerline from Wall**              | **450 mm** from adjacent wall                                                                 | Sec 6.9                          | Mirrors WC centerline for consistent reach.[file:4]                       |
 | Mirror Bottom Edge                         | Max **1000 mm AFF** or tilted 15° downward                                                    | Section 6, Toilets and Baths (mirror spec)                        | Visible from a seated position.                                   |
 
-[SLATECAMP_UI_BLOCK:ArticleMedia name="accessible-wc-cubicle-plan" type="diagram" caption="Plan view of accessible WC cubicle: 1800×1800mm clear floor space, WC centered 450mm from side wall, 750mm clear transfer space beside WC, side grab bar 900mm long (top 300mm above seat), rear flip-up grab bar, emergency call button at 400-600mm AFF on side wall, outward-opening door with pull bar at 900mm AFF."]
+<ArticleMedia id="media-accessible-wc-cubicle-plan" type="diagram" caption="Plan view of accessible WC cubicle: 1800×1800mm clear floor space, WC centered 450mm from side wall, 750mm clear transfer space beside WC, side grab bar 900mm long (top 300mm above seat), rear flip-up grab bar, emergency call button at 400-600mm AFF on side wall, outward-opening door with pull bar at 900mm AFF." />
 | **Accessories / Fixtures**                     | Max **1000 mm AFF**                                                                           | Section 6, Toilets and Baths (accessories spec)                        | Soap, towels, hooks within seated reach.[file:4]                          |
 | **Emergency Call Button**                      | **400–600 mm AFF**, waterproof, contrasting color                                             | Section 6, Toilets and Baths (emergency call button)                         | Reachable even from the floor after a fall.[file:4]                       |
 | **Roll-In Shower**                             | **1800 mm x 1800 mm**; curb max **12 mm**, beveled                                            | Section 6, Toilets and Baths (roll-in shower)                         | Full roll‑in without tipping or blocking wheels.[file:4]                  |
@@ -95,7 +95,7 @@ Urinals are frequently tested because the numbers differ from toilets and lavato
 | Clear space between outer edges of bars | **650 mm**          | Section 6, Toilets and Baths (urinal spec)[file:4] |
 | Clear floor space at urinal             | **900 mm x 900 mm**                                                                           | Section 6, Toilets and Baths (urinal spec)[file:4] |
 
-[SLATECAMP_UI_BLOCK:ArticleMedia name="accessible-urinal-detail" type="diagram" caption="Front elevation and plan view of accessible urinal: lip height 350-400mm AFF, grab bars 600mm each side with tops at 1500mm AFF, 650mm clear between outer edges of bars, 900×900mm clear floor space for frontal approach."]
+<ArticleMedia id="media-accessible-urinal-detail" type="diagram" caption="Front elevation and plan view of accessible urinal: lip height 350-400mm AFF, grab bars 600mm each side with tops at 1500mm AFF, 650mm clear between outer edges of bars, 900×900mm clear floor space for frontal approach." />
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="Callout" status="preserved"]
 
@@ -112,7 +112,7 @@ Urinals are frequently tested because the numbers differ from toilets and lavato
 | Bathtub clear transfer space      | **900 mm x 1500 mm**                                                        | Section 6, Toilets and Baths (bathtub)[file:4] |
 | Bathtub L-type grab bar           | **1200 mm** horizontal + **1200 mm** vertical; mounted **250 mm above rim** | Section 6, Toilets and Baths (bathtub)[file:4] |
 
-[SLATECAMP_UI_BLOCK:ArticleMedia name="accessible-roll-in-shower" type="diagram" caption="Plan view of roll-in shower: 1800×1800mm minimum clear floor area, 12mm max beveled curb, L-shaped grab bars on side and rear walls, shower spray hose minimum 1500mm length, clear transfer space adjacent to fold-down seat."]
+<ArticleMedia id="media-accessible-roll-in-shower" type="diagram" caption="Plan view of roll-in shower: 1800×1800mm minimum clear floor area, 12mm max beveled curb, L-shaped grab bars on side and rear walls, shower spray hose minimum 1500mm length, clear transfer space adjacent to fold-down seat." />
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="Callout" status="preserved"]
 

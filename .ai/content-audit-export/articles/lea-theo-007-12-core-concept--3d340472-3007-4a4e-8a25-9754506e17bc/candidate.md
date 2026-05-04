@@ -1,5 +1,7 @@
 ## What You Need to Know for the LEA
-[SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
+<Callout>
+High-Tech architecture treats structural systems and mechanical infrastructure not as utilities to be concelead but as primary aesthetic generators. The LEA tests whether you understand the theoretical position: **structure as beauty, mechanics as ornament**. You must master the work of Richard Rogers, Renzo Piano, Norman Foster, and Nicholas Grimshaw, and understand how High-Tech resolved modernism's contradiction between form and function by celebrating function as form.
+</Callout>
 
 ## Learning Goal
 
@@ -9,13 +11,15 @@
 
 ## Core Concept
 
-<ArticleMedia id="media-lea-theo-007-12-hightech-diagram" type="image" caption="High-Tech Architecture — Structure as Beauty, Mechanics as Ornament" description="Concept diagram showing cross-section of a High-Tech building (based on Centre Pompidou typology). Interior is labeled 'Flexible Open Space (unobstructed).' Exterior shows all structural and mechanical elements exposed: color-coded ducts (blue = air, green = water, yellow = electrical), exposed steel trusses, external escalator tubes, transparent facade revealing structure. Callout: 'Utilitarian honesty elevated to aesthetic principle — function as form.' Comparative arrow to Brutalism: 'Brutalism = sculptural concrete expression; High-Tech = mechanical/structural honesty.'" suggestedAsset="Diagram showing High-Tech architecture's inverted hierarchy with exposed structure and mechanical systems" status="placeholder" />
+<ArticleMedia id="media-lea-theo-007-12-hightech-diagram" type="image" caption="High-Tech Architecture — Structure as Beauty, Mechanics as Ornament" alt="Concept diagram showing cross-section of a High-Tech building (based on Centre Pompidou typology). Interior is labeled 'Flexible Open Space (unobstructed).' Exterior shows all structural and mechanical elements exposed: color-coded ducts (blue = air, green = water, yellow = electrical), exposed steel trusses, external escalator tubes, transparent facade revealing structure. Callout: 'Utilitarian honesty elevated to aesthetic principle — function as form.' Comparative arrow to Brutalism: 'Brutalism = sculptural concrete expression; High-Tech = mechanical/structural honesty.'" suggestedAsset="Diagram showing High-Tech architecture's inverted hierarchy with exposed structure and mechanical systems" status="placeholder" />
 
 High-Tech emerged in the 1970s–1980s as a movement that rejected modernism's residual romanticism (the belief that pure geometric form expressed universal truth) and instead embraced technology as honest expression of contemporary reality. If modernism stripped away ornament to reveal "true form," High-Tech revealed that in an industrial age, the true form was **mechanical systems, structural engineering, and industrial materials honestly expressed**.
 
 The theoretical position: Machines and structures are beautiful. Why conceal a perfectly engineered steel truss, a functioning duct system, or a mechanical component? Rather than hiding mechanical systems behind walls and ceilings, High-Tech architects made them visible, celebrated them, and treated them as primary design elements. This was not mere expression (like Brutalism's sculptural concrete); it was **utilitarian honesty elevated to aesthetic principle**.
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+<Tip>
+**High-Tech core logic**: Expose what is necessary anyway. Rather than hiding mechanical systems in walls and above drop ceilings (wasted space, expensive), place them outside or visibly and let them become design generators. Structure is doing work; let its form express that work. This is simultaneously honest and practical—it enables modification, improves accessibility, and often saves interior space. Remember: Rogers/Piano didn't expose systems to be artsy; they exposed them because it was more rational.
+</Tip>
 
 **Richard Rogers and Renzo Piano: The Centre Pompidou**
 
@@ -63,7 +67,9 @@ The core High-Tech principle: **structural form becomes the primary aesthetic ge
 
 This extends modernism's "form follows function" but goes further: rather than abstract functional purity, High-Tech embraces the **visible, material, expressed results of functional optimization**. A beam's depth is determined by structural load; rather than concealing this depth behind a dropped ceiling, expose it and let its proportional relationship to span become visually evident.
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
+<Note>
+High-Tech is not simply "exposing everything." Not all systems benefit from exposure. Hidden systems—utilities that are messy, components that require frequent replacement, or systems that don't visually express their function clearly—may be better concelead. High-Tech selection is strategic: expose systems that are engineered, beautiful, or functionally informative. Hide systems that are mundane or dysfunctional. This selectivity distinguishes High-Tech from mere industrial cacophony.
+</Note>
 
 Examples of structurally-generated form:
 
@@ -101,7 +107,9 @@ Interesting tension: High-Tech emerged during energy abundance; its glass facade
 
 The Lloyd's Building (London, 1986) by Richard Rogers features exposed services externally (freeing interior) and has subsequently been retrofitted with advanced mechanical controls, achieving 30% energy reductions through optimization without altering the High-Tech expression.
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
+<Warn>
+High-Tech's claim to honesty is selective, not universal. All architecture is mediated; High-Tech emphasizes technology and systems while potentially minimizing other values (craft, cultural context, human-sclead detail). Exposed mechanical systems may achieve honest expression while facades, interior finishes, and spatial proportions are carefully composed for aesthetic effect. This is legitimate architecture, but recognize that "honesty" is curated—High-Tech architects chose what to expose and what to compose. The dishonesty enters when practitioners claim High-Tech expression is objective truth rather than a valid but partial design philosophy.
+</Warn>
 
 **Regional and Cultural Reception**
 
@@ -115,26 +123,26 @@ High-Tech's industrial aesthetic emerged from British manufacturing culture and 
 
 ## Key Facts and Testable Items
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="WikiExamTable" status="preserved"]
+<WikiExamTable headers={["Project", "Architects", "Date", "Key High-Tech Feature", "Testable Question"]} rows={[['["Centre Pompidou", "Rogers & Piano", "1977", "External mechanical systems, color-coded pipes, exposed structure", "Why expose systems externally rather than concealing them?"]', '["Hong Kong Shanghai Bank", "Norman Foster", "1986", "Suspension structure, column-free floors, diagonal bracing", "How does structural logic generate form?"]', '["Lloyd\'s Building", "Richard Rogers", "1986", "Exposed services, flexible interiors, external lifts", "Explain maintenance advantages of exposed systems"]', '["Kansai Airport Terminal", "Renzo Piano", "1994", "Kinetic facade, environmental responsiveness, massive trusses", "How does structural expression relate to environmental control?"]', '["Waterloo International Terminal", "Nicholas Grimshaw", "1993", "400m bow-string arch, stainless steel structure", "Describe structural form as aesthetic principle"]', '["30 St Mary Axe (Gherkin)", "Norman Foster", "2004", "Curved form, diagonal bracing, natural ventilation, diamond pattern", "Analyze how geometry expresses both structure and sustainability"]']]} />
 ## How It's Tested on the LEA
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
+<ExamTip>1. **Theoretical Position**: "What is the core High-Tech principle and how does it differ from modernism's 'form follows function'?" (Answer: High-Tech celebrates visible expression of systems and structure as primary aesthetic; modernism sought abstract purity. High-Tech is functionalist honesty made visible.)</ExamTip>
 
-[SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
+<ExamTip>2. **Structural Generation**: "How do structural requirements generate form in High-Tech architecture?" (Answer: Rather than imposing preconceived geometry, optimize structure for loads and spans; the resulting form—beam depths, truss angles, proportions—becomes primary visual expression.)</ExamTip>
 
-[SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
+<ExamTip>3. **Mechanical Integration**: "Why expose mechanical systems externally in High-Tech design?" (Answer: Frees interior space, maintains accessibility, educates occupants, allows future modification without renovation, achieves honest expression of actual building operation.)</ExamTip>
 
-[SLATECAMP_UI_BLOCK:ui_0009 component="ExamTip" status="preserved"]
+<ExamTip>4. **Piano vs. Foster Comparison**: "How does Renzo Piano's High-Tech differ from Norman Foster's?" (Answer: Piano emphasizes kinetic, environmentally-responsive systems; Foster refines High-Tech toward material luxury and technological sophistication; both expose systems but with different aesthetic emphasis.)</ExamTip>
 
-[SLATECAMP_UI_BLOCK:ui_0010 component="ExamTip" status="preserved"]
+<ExamTip>5. **Contemporary Critique**: "High-Tech buildings often perform poorly thermally and acoustically. How does this challenge the movement's sustainability claims?" (Answer: Early High-Tech (1970s–80s) was energy-intensive. Contemporary High-Tech integrates efficiency through improved mechanical control and materials; the aesthetic expression remains, but with better performance.)</ExamTip>
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0011 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Confusing High-Tech with Merely Exposing Systems" correction="Random visible ducts and conduits are not High-Tech unless they are designed as primary aesthetic and organized according to structural/mechanical logic." context="This is commonly tested on the LEA." />
 
-[SLATECAMP_UI_BLOCK:ui_0012 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Assuming High-Tech is \"Honest\" While Other Styles Are Not" correction="All architecture is mediated and constructed; High-Tech's honesty is selective (celebrating technology, minimizing decoration) rather than absolute." context="This is commonly tested on the LEA." />
 
-[SLATECAMP_UI_BLOCK:ui_0013 component="WikiMistakeList" status="preserved"]
+<WikiMistakeList mistakes={["Equating Industrial Expression with Cold or Dehumanizing Space. High-Tech can be warm, engaging, and educational; the cold reception is partly cultural (unfamiliar aesthetic) rather than inherent.", "Ignoring Maintenance Costs. Exposed systems require aggressive maintenance to avoid appearing shabby. This long-term cost is often underestimated in initial High-Tech designs.", "Confusing Structural Expression with Structural Efficiency. A building may express structure as primary aesthetic while being structurally inefficient. Expression and efficiency are distinct (though both are goals in high-quality High-Tech).", "Missing the Historical Timing. High-Tech emerged during energy abundance and technological optimism (1970s–80s). Its embrace of mechanical complexity and large-span spaces reflects that era; contemporary sustainability concerns create tension with these values."]} />
 
 ## Key Terms
 

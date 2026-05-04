@@ -1,20 +1,20 @@
 # Content Diff Report: lea-util-003-08-summary-for-exam-preparation
 
-Generated: 2026-05-04T00:06:29.127Z
+Generated: 2026-05-04T02:17:05.104Z
 Article ID: 29d54ad6-6af8-4c7b-b504-fa6e0a1e5220
 Changed: true
-Safe to push locally: false
+Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:7226412023e16e91bb21cd9315b8b00f9a14d36716f51854ff81db1770f339b4`
-- Normalized: `sha256:7f23d4f9159fbb51800fa75d57e25320fe9b9087c485bd51633ec83b2dfa4ceb`
-- Candidate: `sha256:7f23d4f9159fbb51800fa75d57e25320fe9b9087c485bd51633ec83b2dfa4ceb`
+- Original: `sha256:7f23d4f9159fbb51800fa75d57e25320fe9b9087c485bd51633ec83b2dfa4ceb`
+- Normalized: `sha256:af8ccc48a8eb77cac68fa95e977e63b1f7e72e825374ebf28c9e0decc702ecc6`
+- Candidate: `sha256:af8ccc48a8eb77cac68fa95e977e63b1f7e72e825374ebf28c9e0decc702ecc6`
 
 ## Line summary
 
-- Changed lines: 66
-- Inserted lines: 4
+- Changed lines: 3
+- Inserted lines: 0
 - Deleted lines: 0
 
 ## UI block preservation
@@ -22,11 +22,11 @@ Safe to push locally: false
 - UI blocks expected: 0
 - UI blocks preserved: 0
 - UI blocks changed/missing: 0
-- Unresolved placeholders: 1
+- Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate contains unresolved UI block placeholders.
+- None
 
 ## Warnings
 

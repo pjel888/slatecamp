@@ -46,7 +46,7 @@ Example: If indoor activity = 150 sqm total, outdoor play must be ≥150 sqm.
 
 **Occupancy for Fire Egress:**
 Total occupancy = active children + caregivers + visiting parents (peak). Dual exits at 50+.
-<ArticleMedia id="media-lea-dsgn-005-07-core-concept" a type="image" caption="Day Care Center — Child-Scale Space Planning Diagram" description="Floor plan of a day care center showing activity room (1.5 sqm/child, max 25 children), nap room (0.9-1.2 sqm/child), outdoor play area (equal to indoor), and child-height toilet fixtures (250-300mm). DSWD regulatory reference." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-005-07-core-concept" type="image" caption="Day Care Center — Child-Scale Space Planning Diagram" alt="Floor plan of a day care center showing activity room (1.5 sqm/child, max 25 children), nap room (0.9-1.2 sqm/child), outdoor play area (equal to indoor), and child-height toilet fixtures (250-300mm). DSWD regulatory reference." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Philippine Practice Context
 
@@ -61,7 +61,7 @@ Metro Manila day care centers (home-based and institutional) operate under DSWD 
 [SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
 
 **Exam Tip — ERR-DSGN-004:** Day care centers are Group C (education/recreation), NOT Group B (residential) or Group D (institutional). Hard limit: max 25 children per activity room. DSWD regulates, NOT DepEd.
-<ArticleMedia id="media-lea-dsgn-005-07-core-concept" a type="image" caption="Day Care Center — Child-Scale Room Layout and Play Area Diagram" description="Floor plan of a day care center showing: activity room (1.5 sqm/child, max 25), nap room (0.9 sqm/child), child-height toilet fixtures (250-300mm), outdoor play area equal to indoor, and DSWD-mandated caregiver station. DSWD vs. DepEd occupancy distinctions noted." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-005-07-core-concept" type="image" caption="Day Care Center — Child-Scale Room Layout and Play Area Diagram" alt="Floor plan of a day care center showing: activity room (1.5 sqm/child, max 25), nap room (0.9 sqm/child), child-height toilet fixtures (250-300mm), outdoor play area equal to indoor, and DSWD-mandated caregiver station. DSWD vs. DepEd occupancy distinctions noted." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Cross-References
 

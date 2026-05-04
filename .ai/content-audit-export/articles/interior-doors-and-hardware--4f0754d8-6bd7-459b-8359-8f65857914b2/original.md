@@ -11,6 +11,10 @@ You are a wheelchair user arriving at a mall's cinema restroom. The door looks w
 
 ## CORE MNEMONIC: **"W-H-T-V-K"** — *"Wheelchair Handles The Very Kickplate"*
 
+<ExamTip>
+This section is frequently tested. Pay special attention to the distinctions and exceptions.
+</ExamTip>
+
 | Letter | Element | Key Number |
 |--------|---------|-----------|
 | **W** | **W**idth — clear door opening | **900 mm** min |
@@ -248,3 +252,24 @@ You are teaching a first-year architecture student who just drew a restroom door
 
 *Next: Module 6 — Fixtures & Small Items in Common Areas*
 *Previous: Module 4 — Assembly Seating & Waiting Areas*
+
+<Note>
+Cross-reference with the latest NBCP, BP 344, and RA 9514 for current standards and amendments.
+</Note>
+
+---
+
+
+
+---
+
+## Exam Tip
+
+ALE Trap: Minimum clear opening width = 900 mm for accessible doors, 700 mm for interior non-accessible. Fire doors must be self-closing with positive latching. Panic hardware required on exit doors of Group E, F, H, I occupancies. The clear opening is measured with door at 90° — NOT the door leaf width.
+
+## Cross‑References
+
+**Prefabricated Constructions**, **Lathing And Plastering**, **Fire Resistive Construction Ratings**, **Residential Clearances**
+
+
+<!-- no-media-needed: existing content format is sufficient without visual media -->

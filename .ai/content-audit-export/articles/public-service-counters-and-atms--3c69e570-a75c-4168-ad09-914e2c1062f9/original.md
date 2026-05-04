@@ -367,15 +367,23 @@ Your classmate presents a bank branch plan:
 
 ---
 
-
-
 ---
 
 ## Exam Tip
 
 LEA Swipe: Accessible counter: 760-860 mm high section minimum 900 mm wide. Knee clearance = 680 mm deep × 680 mm high × 760 mm minimum width. Forward reach max = 1,200 mm. Side reach max = 1,370 mm. These four dimensions are the most tested for counters.
 
+
+
+---
+
+## Exam Tip
+
+ALE Swipe: Accessible counter: 760-860 mm high section minimum 900 mm wide. Knee clearance = 680 mm deep × 680 mm high × 760 mm minimum width. Forward reach max = 1,200 mm. Side reach max = 1,370 mm. These four dimensions are the most tested for counters.
+
 ## Cross‑References
 
 **Accessible Seating In Assembly Areas**, **Wheelchair Maneuvering And Parking**, **Comprehensive Signage Package**, **Standard Human Body Dimensions**
 
+
+<!-- no-media-needed: existing content format is sufficient without visual media -->

@@ -13,7 +13,9 @@ After studying this article, you should be able to:
 
 A payment bond is security furnished by the contractor and surety to guarantee that all obligations arising from the contract will be paid. Unlike the performance bond which protects the owner against incomplete work, the payment bond protects subcontractors, suppliers, and laborers against non-payment. When the contractor fails to pay subcontractors or suppliers, these parties can file claims directly against the surety.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+<LawCallout code="ra9266" section="UAP Doc 301" title="Payment Bond vs. Performance Bond">
+Payment Bond: Guarantees payment of obligations to subcontractors, suppliers, and laborers. Beneficiary: subcontractors/suppliers. Performance Bond: Guarantees completion and quality of work. Beneficiary: Owner. A single contract may have BOTH bonds. The contractor may breach one without breaching the other.
+</LawCallout>
 
 ### Typical Amount and Standard Percentage
 
@@ -23,7 +25,14 @@ Payment bonds are typically required in amounts equal to the full contract price
 
 If the contractor fails to pay for work performed or materials delivered, subcontractors and suppliers can file claims directly with the surety without being parties to the original contract. Claimants must provide notice to the surety within a specified timeframe — often 60 to 90 days from last furnishing of labor or materials — and present evidence of the unpaid obligation.
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="ExamTip" status="preserved"]
+<ExamTip>
+  **LEA Priority — Payment Bond Key Points:**
+  1. Protects subcontractors, suppliers, and laborers (NOT the owner)
+  2. Claim period: typically 60-90 days from last furnishing of labor/materials
+  3. Surety's liability is capped at the bond amount
+  4. If valid claims exceed the bond, surety distributes proportionally
+  5. Performance bond and payment bond serve different purposes — both may be required on the same project
+</ExamTip>
 
 ### Distinction Between Payment and Performance Bonds
 
@@ -37,7 +46,9 @@ While both bonds may be required in the same contract, they serve distinct purpo
 | Amount | Typically 100% of contract | Typically 50-100% of contract |
 | Surety's liability | Capped at bond amount | Capped at bond amount |
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
+<Warn>
+  **Exam Trap:** The LEA often tests whether you know which bond covers which risk. If a question involves a subcontractor who was not paid, the answer is the Payment Bond — NOT the Performance Bond. If a question involves incomplete work, the answer is the Performance Bond.
+</Warn>
 
 ## Common Mistakes
 

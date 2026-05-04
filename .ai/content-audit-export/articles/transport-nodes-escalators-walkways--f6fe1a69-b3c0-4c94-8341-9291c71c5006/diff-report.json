@@ -1,46 +1,38 @@
 {
   "article_id": "f6fe1a69-b3c0-4c94-8341-9291c71c5006",
   "slug": "transport-nodes-escalators-walkways",
-  "generated_at": "2026-05-04T00:06:28.878Z",
-  "old_hash": "sha256:cec689ff821feecd76456e141c40fdb62ce03fec3c53e5f7a6222a9f31962aa0",
-  "new_hash": "sha256:800b7dbb6869ceba4338bc4bd322975a5620ad1ab2dd35a837d1290eb8c11b86",
-  "original_hash": "sha256:cec689ff821feecd76456e141c40fdb62ce03fec3c53e5f7a6222a9f31962aa0",
+  "generated_at": "2026-05-04T02:17:04.772Z",
+  "old_hash": "sha256:7f7c60208a0c5a9f4b7637b2d7aec56d16735779ad35930bad3cc69dd09332b7",
+  "new_hash": "sha256:7f7c60208a0c5a9f4b7637b2d7aec56d16735779ad35930bad3cc69dd09332b7",
+  "original_hash": "sha256:7f7c60208a0c5a9f4b7637b2d7aec56d16735779ad35930bad3cc69dd09332b7",
   "normalized_hash": "sha256:800b7dbb6869ceba4338bc4bd322975a5620ad1ab2dd35a837d1290eb8c11b86",
-  "candidate_hash": "sha256:800b7dbb6869ceba4338bc4bd322975a5620ad1ab2dd35a837d1290eb8c11b86",
-  "changed": true,
-  "changed_line_count": 132,
-  "inserted_line_count": 6,
+  "candidate_hash": "sha256:7f7c60208a0c5a9f4b7637b2d7aec56d16735779ad35930bad3cc69dd09332b7",
+  "changed": false,
+  "changed_line_count": 0,
+  "inserted_line_count": 0,
   "deleted_line_count": 0,
   "ui_blocks_original_count": 4,
-  "ui_blocks_candidate_count": 0,
-  "ui_blocks_changed_count": 4,
+  "ui_blocks_candidate_count": 4,
+  "ui_blocks_changed_count": 0,
   "ui_blocks_count": 4,
-  "unresolved_placeholders_count": 1,
-  "preserved_blocks_count": 0,
+  "unresolved_placeholders_count": 0,
+  "preserved_blocks_count": 4,
   "changed_text_summary": {
-    "changed": 132,
-    "inserted": 6,
+    "changed": 0,
+    "inserted": 0,
     "deleted": 0,
-    "original_line_count": 163,
-    "candidate_line_count": 169
+    "original_line_count": 173,
+    "candidate_line_count": 173
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0001",
-      "ui_0003",
-      "ui_0004",
-      "ui_0006"
-    ],
-    "changed_count": 4
+    "missing_block_ids": [],
+    "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate contains unresolved UI block placeholders.",
-    "Candidate is missing 4 preserved UI block(s)."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 4 preserved UI block(s)."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

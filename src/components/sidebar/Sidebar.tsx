@@ -19,6 +19,7 @@ import type { SidebarProps } from './types'
 import { useActiveSession } from '@/lib/context/active-session-context'
 import { ConfirmDialog } from '@/components/ui/dialog'
 import { cn } from '@/lib/utils'
+import { useNavigationPending } from '@/hooks/useNavigationPending'
 
 // ---------------------------------------------------------------------------
 // Sidebar — structural nav shell for push layout
@@ -33,6 +34,7 @@ export const Sidebar = ({ userDisplay, tier, isAdmin: _isAdmin, isDevMode: _isDe
   const isCollapsing = useRef(false)
   const [showLeaveConfirm, setShowLeaveConfirm] = useState(false)
   const [pendingHref, setPendingHref] = useState<string | null>(null)
+  const navigationPending = useNavigationPending()
 
   // Track collapsing state for CSS class (faster easing during collapse)
   useEffect(() => {
@@ -179,6 +181,7 @@ export const Sidebar = ({ userDisplay, tier, isAdmin: _isAdmin, isDevMode: _isDe
               expanded={expanded}
               showTooltip
               onNavigate={handleNavigate}
+              navigationPending={navigationPending}
             />
           </div>
 
@@ -217,6 +220,7 @@ export const Sidebar = ({ userDisplay, tier, isAdmin: _isAdmin, isDevMode: _isDe
                     expanded={expanded}
                     showTooltip
                     onNavigate={handleNavigate}
+                    navigationPending={navigationPending}
                   />
                 ))}
               </div>
@@ -235,6 +239,7 @@ export const Sidebar = ({ userDisplay, tier, isAdmin: _isAdmin, isDevMode: _isDe
             expanded={expanded}
             showTooltip
             onNavigate={handleNavigate}
+            navigationPending={navigationPending}
           />
         </div>
 

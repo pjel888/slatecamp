@@ -1,26 +1,21 @@
 {
-  "attempted_at": "2026-05-04T00:06:40.286Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:17:23.221Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "candidate.md matches original.md; refusing no-op apply."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "efb82628-9bf4-4bde-9561-8b784384c32c",
   "slug": "pre-columbian-mesoamerica",
   "preparation_actions": [
     "auto_generated_diff"
   ],
-  "remote_hash_before": "sha256:fbdfe019d6a3aaed75f3b9212ded3ad366e93905313e7be09014cc9745faf3bc",
-  "original_hash": "sha256:fbdfe019d6a3aaed75f3b9212ded3ad366e93905313e7be09014cc9745faf3bc",
-  "candidate_hash": "sha256:68c8fc1525cd46fd57e64b4b956e0dc80e5376581d60350db1168d766ea7cbdc",
+  "remote_hash_before": "sha256:92cd7aab1e0174fe94a1949d48184509d1aea1809e8b0dbeeb5488f8ee57eb92",
+  "original_hash": "sha256:92cd7aab1e0174fe94a1949d48184509d1aea1809e8b0dbeeb5488f8ee57eb92",
+  "candidate_hash": "sha256:92cd7aab1e0174fe94a1949d48184509d1aea1809e8b0dbeeb5488f8ee57eb92",
   "stale_check_passed": true,
-  "remote_updated_at_before": "2026-05-03T13:51:40.895401+00:00"
+  "remote_updated_at_before": "2026-05-04T02:01:05.475703+00:00"
 }

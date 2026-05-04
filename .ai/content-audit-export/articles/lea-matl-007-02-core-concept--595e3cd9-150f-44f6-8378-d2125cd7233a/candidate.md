@@ -62,13 +62,13 @@ Boysen brands like KNOxOUT (marketed as air-purifying with claimed NOx-reducing 
 
 **Question Type 4 (Material Selection):** Specify a finish system for a high-humidity kitchen in Metro Manila. Options: latex paint, enamel, or wallpaper. Which offers best moisture resistance? Answer: Enamel or latex with fungicide primer (Boysen formulations); wallpaper is unsuitable without mold-resistant base primer.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+<Tip>Memory aid: Surface prep is 90% of paint success. If sanding isn't done to 220-grit and dust-free, the best paint will fail. Humidity >50% and temperature &lt;10°C during application = delay the work. ASTM D3359 rating 3 is acceptable minimum; rating 5 is complete failure.</Tip>
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Sanding drywall with 120-grit paper and skipping dust removal before priming" correction="Use 220-grit or higher per ASTM D3276 and wipe surfaces dust-free. Dust prevents adhesion and causes delamination within 12 months." />
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Applying paint to gypsum drywall without primer in high-humidity bathrooms" correction="Prime with fungicide-treated primer (e.g., Boysen fungicide-rich primers) before topcoat. Unprimed drywall absorbs moisture and promotes mold." />
 
 is optional for topcoat adhesion\", \"Mixing incompatible binders (latex over enamel without sanding and primer)\", \"Failing to caulk gaps, joints, and penetrations before finish coat\", \"Applying topcoat before primer cure time (typically 2-4 hours per coat)\", \"Using VOC-high paints without confirming local air-quality compliance\"]}"
 - Text: (none detected)

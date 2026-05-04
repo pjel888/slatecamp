@@ -1,26 +1,21 @@
 {
-  "attempted_at": "2026-05-04T00:06:39.084Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:17:21.617Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "candidate.md matches original.md; refusing no-op apply."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "7e511a5d-edb1-4622-8f0f-29c1a631c145",
   "slug": "lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not",
   "preparation_actions": [
     "auto_generated_diff"
   ],
-  "remote_hash_before": "sha256:673aa67d2b5fd456c99bb74f404f852b340ddebf92ca921a8ddc641000c7f0be",
-  "original_hash": "sha256:673aa67d2b5fd456c99bb74f404f852b340ddebf92ca921a8ddc641000c7f0be",
-  "candidate_hash": "sha256:731ff4368883460b6ecd6775d0b5394d8eecb3c3d127d818ba001ddb3e4f62b0",
+  "remote_hash_before": "sha256:db282c0acd0d51bf0c5dbe82e88bf40ce42363dfe2d73bf0725358e90aa850ee",
+  "original_hash": "sha256:db282c0acd0d51bf0c5dbe82e88bf40ce42363dfe2d73bf0725358e90aa850ee",
+  "candidate_hash": "sha256:db282c0acd0d51bf0c5dbe82e88bf40ce42363dfe2d73bf0725358e90aa850ee",
   "stale_check_passed": true,
-  "remote_updated_at_before": "2026-05-03T13:51:38.448959+00:00"
+  "remote_updated_at_before": "2026-05-04T02:01:02.225682+00:00"
 }

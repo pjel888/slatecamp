@@ -1,26 +1,21 @@
 {
-  "attempted_at": "2026-05-04T00:07:09.115Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:18:00.026Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "candidate.md matches original.md; refusing no-op apply."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "9527e4a9-f8f1-4554-999e-0d46cc49bcd1",
   "slug": "lea-prac-law-007-lea-eligibility-requirements-academic-credentials-dae-and-moral-character",
   "preparation_actions": [
     "auto_generated_diff"
   ],
-  "remote_hash_before": "sha256:a1d4cf47818efc2fc69021b83ce5366f7590e1a959122162412a13cf5dd619b1",
-  "original_hash": "sha256:a1d4cf47818efc2fc69021b83ce5366f7590e1a959122162412a13cf5dd619b1",
-  "candidate_hash": "sha256:06f29d4b94d4321ed222f253c6b2d98e102dc3d7753a282462b2288ecefede18",
+  "remote_hash_before": "sha256:fb5d517b2e061e42a79e89f4dda58ef344e67d9076a424218f1e81de4b5ad26b",
+  "original_hash": "sha256:fb5d517b2e061e42a79e89f4dda58ef344e67d9076a424218f1e81de4b5ad26b",
+  "candidate_hash": "sha256:fb5d517b2e061e42a79e89f4dda58ef344e67d9076a424218f1e81de4b5ad26b",
   "stale_check_passed": true,
-  "remote_updated_at_before": "2026-05-03T13:52:33.320871+00:00"
+  "remote_updated_at_before": "2026-05-04T02:02:05.565268+00:00"
 }

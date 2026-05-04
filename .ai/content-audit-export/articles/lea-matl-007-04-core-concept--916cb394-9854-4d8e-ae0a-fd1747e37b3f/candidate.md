@@ -65,19 +65,19 @@ Anti-slip coatings gain importance as BP 344 accessibility enforcement increases
 
 **Question Type 4 (Fire Protection):** Structural steel beams in a 15-story office building must achieve 2-hour fire rating. Should you specify standard latex paint or intumescent paint? Answer: Intumescent paint with specified DFT (2-3mm, verified per ASTM E119). Standard paint has no structural fire rating.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+<Tip>Memory aid: VOC &lt;300 g/L for interior latex (low-VOC). Oil enamel has higher VOC but better durability on metal. Primer is 90% of paint success—don't skip it. Intumescent paint is required for structural steel fire protection, not aesthetic protection. Coverage rate drives project cost and timeline.</Tip>
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Specifying high-VOC oil-based enamel for interior occupied buildings, creating indoor air quality issues" correction="Use latex (acrylic) or low-VOC enamel (&lt;300 g/L) for interior spaces. Oil enamel (300-650 g/L) is reserved for metal in corrosive exterior environments or industrial spaces." />
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Omitting primer on drywall or metal, assuming topcoat alone provides adhesion" correction="Primer is 90% of adhesion. Latex primer on drywall seals substrate and promotes topcoat bond. Epoxy or rust-inhibiting primer on metal is non-negotiable in corrosive zones." />
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Under-specifying intumescent paint on structural steel, assuming aesthetic fire-rated paint provides structural protection" correction="Aesthetic paint fire rating (surface-only) is different from structural fire rating. Structural steel requires intumescent paint per ASTM E119, with DFT verified by testing. Two different specifications." />
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Calculating paint volume without accounting for spreading rate, under-budgeting materials" correction="Coverage rate (8-12 m²/L) determines volume needed. A 5000 m² wall at 10 m²/L needs 500L per coat. Multiply by number of coats. Budget contingency for waste (5-10%)." />
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="WikiMistakeList" status="preserved"]
+<WikiMistakeList mistakes={["Specifying standard latex for wood without stain-blocking primer, allowing tannins to bleed through", "Failing to account for recoat time in project schedule (16-24 hours for oil enamel vs. 2-4 hours for latex)", "Over-specifying premium paint for low-visibility or protected areas (cost optimization opportunity)", "Mixing incompatible systems (oil topcoat over latex primer, or vice versa) without sanding and re-priming", "Applying anti-slip coating to interior floors without specifying ramp-specific product and DFT"]} />
 
 ## Related Articles
 

@@ -7,6 +7,10 @@ Identify the four regional traditions of American colonial architecture — New 
 
 American colonial architecture was not a monolith. Regional climate, available materials, cultural origin, and economic systems produced distinct building traditions across thirteen colonies. New England built timber-frame houses with central chimneys and steep roofs (shedding snow). The Chesapeake region built brick plantation houses with symmetrical facades (classical ideals, labor-intensive). Dutch New York left steep-roofed townhouses. Spanish Florida used coquina and thick walls. This diversity reflects colonial reality: each region had different settlers, different resources, different ambitions.
 
+
+<ArticleMedia id="media-hist-014-01-core-concept" layout="single" type="image" status="placeholder" alt="View of a classic New England saltbox house (late 17th–18th century), showing the steep pitched roof, central chimney, two-story front with single-story lean-to at the rear, and the timber frame with clapboard siding." caption="New England Saltbox House — Colonial Timber Architecture" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
+
 <Tip>Memory aid: **"NE = Timber + Chimney; Ches = Brick + Symmetry; Dutch = Gambrel; Spanish = Coquina"** — regional differences reflect materials, settlers, and climate rather than a unified "colonial style."</Tip>
 
 Colonial builders followed vernacular traditions and European precedent filtered through practical constraints. A New England meetinghouse was not a cathedral—it was a timber box with a gallery for additional seating, reflecting both Puritan theology (simple worship) and economic reality (timber was abundant, stone was not). A Virginia plantation house was a calculated statement of class: symmetrical facades expressed enlightenment order and European refinement, while the dependency buildings (kitchens, slave quarters, storehouses) remained invisible at a distance.
@@ -16,6 +20,10 @@ Colonial builders followed vernacular traditions and European precedent filtered
 The **Federal period** (1780–1820) marked the transition from colonial dependency to American nationhood. Architects and educated patrons embraced **neoclassicism**—the style of republican Rome and Enlightenment reason. **Robert Adam** and English neoclassical precedent influenced American designers. The first American-born architects (Benjamin Latrobe, Charles Bulfinch) synthesized classical proportion with American practicality. Federal-style houses retained colonial proportions but refined details: elliptical windows, delicate ornament, attenuated forms. Civic buildings became temples: courthouses and statehouse faced in stone or brick with porticos proclaiming democratic virtue.
 
 <Warn>Do not treat Federal style as simply imported English neoclassicism. Federal is hybrid—classical language (portico, column, proportion) filtered through American democratic ideology and practical constraints (budget, local materials, climate). It is transformation, not mere copy.</Warn>
+
+
+<ArticleMedia id="media-hist-014-01-core-concept" layout="single" type="image" status="placeholder" alt="Comparative illustration of the four American colonial traditions: New England (timber saltbox), Mid-Atlantic (brick Georgian), Dutch (gambrel roof, stone), and Spanish Southwest (adobe mission with bell tower)." caption="American Colonial Regional Types — New England, Mid-Atlantic, Dutch, Spanish" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
 
 ## Key Facts and Testable Items
 
@@ -65,6 +73,8 @@ Questions present meetinghouse, courthouse, or plantation house plans and ask yo
 **Meetinghouse** — New England Protestant gathering space; timber-frame, gallery, simple interior; reflects Puritan theology and regional resources.
 
 **Plantation House** — Large domestic structure on agricultural estate; symmetrical, formal; supported by enslaved labor and economic hierarchy.
+
+<ArticleMedia id="media-hist-014-01-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparison of American colonial regional traditions: New England (timber-frame saltbox, central chimney), Mid-Atlantic (brick Georgian, symmetry), Dutch (gambrel roof, stone), and Spanish Southwest (coquina, adobe mission).\" caption=\"American Colonial Architecture — Regional Traditions\" suggestedAsset=\"Style comparison illustration\" placementIntent=\"Style comparison for architectural period\" />
 
 ## Related Articles
 

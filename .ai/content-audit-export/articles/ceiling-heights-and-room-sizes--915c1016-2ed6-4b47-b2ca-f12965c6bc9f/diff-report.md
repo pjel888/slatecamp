@@ -1,34 +1,32 @@
 # Content Diff Report: ceiling-heights-and-room-sizes
 
-Generated: 2026-05-04T00:07:06.248Z
+Generated: 2026-05-04T02:25:30.695Z
 Article ID: 915c1016-2ed6-4b47-b2ca-f12965c6bc9f
 Changed: true
-Safe to push locally: false
+Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:b5f2d65fc31ce5c8271add72819be37978357b8fc4e34efd0015ac68c3b59a46`
-- Normalized: `sha256:5eeb6a420e87d1887d94da6a0b1ba56eb94f6fd461c2cdc5f8f9a11f2f75564f`
-- Candidate: `sha256:5eeb6a420e87d1887d94da6a0b1ba56eb94f6fd461c2cdc5f8f9a11f2f75564f`
+- Original: `sha256:470e3c3105aecd9d7bfa6a25f265d7bfaeff3595b02c0d39bae74aa460c59dd8`
+- Normalized: `sha256:fe4dce8cf397aab9826292412bcd61b33afc8e78d76fbc201cd58f514635a60f`
+- Candidate: `sha256:f8a55dc3fd235f059b6c8ffbc7ea23aebd6a343cbc5877f03bdca58b61a197f3`
 
 ## Line summary
 
-- Changed lines: 338
-- Inserted lines: 13
+- Changed lines: 274
+- Inserted lines: 4
 - Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 4
-- UI blocks preserved: 0
-- UI blocks changed/missing: 4
-- Unresolved placeholders: 1
+- UI blocks preserved: 4
+- UI blocks changed/missing: 0
+- Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate contains unresolved UI block placeholders.
-- Candidate is missing 4 preserved UI block(s).
-- original.md hash does not match article metadata export hash.
+- None
 
 ## Warnings
 

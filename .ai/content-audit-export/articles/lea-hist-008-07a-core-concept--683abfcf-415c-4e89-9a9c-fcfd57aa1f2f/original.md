@@ -6,6 +6,10 @@ Identify the key characteristics of Deconstructivism — fragmentation, non-rect
 ## Core Concept
 **Deconstructivism** emerged from the 1988 Museum of Modern Art exhibition "Deconstructivism in Architecture," curated by **Philip Johnson** and **Mark Wigley**. The movement borrowed terminology from French philosopher **Jacques Derrida's** deconstruction theory, which questioned the stability of linguistic meaning by revealing internal contradictions and suppressed assumptions. Architects applied this intellectual framework to building form: what if buildings revealed their own contradictions? What if they appeared to deconstruct or destabilize themselves visually?
 
+
+<ArticleMedia id="media-hist-008-07a-core-concept" layout="single" type="image" status="placeholder" alt="View of the Guggenheim Museum Bilbao (1991–1997, Frank Gehry), showing the titanium-clad organic forms, fragmented volumes, and non-rectilinear geometry defining deconstructivist architecture." caption="Guggenheim Museum Bilbao — Gehry's Titanium Deconstruction" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
+
 Deconstructivism fragmented the smooth, continuous surfaces of modernism and postmodernism. Instead of clear, unified forms, Deconstructivist buildings appeared to splinter, collide, or twist in ways that denied coherence. Materials and structural systems were exposed and apparently contradicted; forms seemed to defy gravity or logic. This created an architecture of visual and conceptual instability that reflected postmodern anxiety about certainty and meaning.
 
 <Tip>
@@ -31,6 +35,10 @@ Deconstructivism remains contested. Critics argue it is purely aesthetic fragmen
 <Warn>
 Do not dismiss Deconstructivism as merely aesthetic. While critics correctly point to its formal excess, the movement addressed genuine philosophical concerns about modernism's rigid certainties. Whether you agree with the approach, understand that it was intellectually motivated, not arbitrary style. Distinguish between form and intent.
 </Warn>
+
+
+<ArticleMedia id="media-hist-008-07a-core-concept" layout="single" type="image" status="placeholder" alt="Reference image showing representative works of the seven architects featured in the 1988 MoMA Deconstructivist Architecture exhibition: Gehry, Hadid, Libeskind, Eisenman, Koolhaas, Tschumi, and Coop Himmelb(l)au." caption="MoMA 1988 Deconstructivist Architecture — Seven Architects" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
 
 ## Key Facts and Testable Items
 
@@ -65,6 +73,8 @@ Do not dismiss Deconstructivism as merely aesthetic. While critics correctly poi
 - **Collision**: The intentional intersection and overlapping of distinct geometric or spatial systems without resolution; a Deconstructivist strategy.
 - **Void**: Empty space or absence within or through a building; used symbolically in **Libeskind's Jewish Museum**.
 - **Deconstruction**: French philosophical method questioning the stability of meaning by revealing internal contradictions; provides the movement's intellectual framework.
+
+<ArticleMedia id="media-hist-008-07a-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparison of the seven Deconstructivist architects featured in the 1988 MoMA exhibition showing their fragmented, non-rectilinear forms: Gehry (Guggenheim Bilbao), Hadid (Vitra Fire Station), Libeskind (Jewish Museum), Eisenman (Wexner Center), Koolhaas, Tschumi, and Coop Himmelb(l)au.\" caption=\"Deconstructivism — MoMA 1988 Exhibition Architects\" suggestedAsset=\"Style comparison illustration\" placementIntent=\"Style comparison for architectural period\" />
 
 ## Related Articles
 

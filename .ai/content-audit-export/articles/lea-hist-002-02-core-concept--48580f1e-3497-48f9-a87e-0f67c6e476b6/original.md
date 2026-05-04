@@ -7,6 +7,10 @@ Identify Romanesque architectural characteristics — barrel vaults, groin vault
 
 **Romanesque architecture** (11th–12th centuries) emerged in Western Europe as builders learned to construct massive stone vaults and arches without relying on wooden roofs that burned. This period marks the first truly Medieval architectural language, distinct from both Roman revival and subsequent Gothic sophistication.
 
+
+<ArticleMedia id="media-hist-002-02-core-concept" layout="single" type="image" status="placeholder" alt="Interior of Durham Cathedral (1093–1133, England) showing the massive stone barrel vault, round arches, thick compound piers, and the characteristic Romanesque rhythmic bay system." caption="Durham Cathedral — Romanesque Barrel Vault Nave" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
+
 The structural foundation is the **barrel vault**—a continuous semicircular vault spanning the entire nave. Unlike the Roman equivalents it echoes, Romanesque barrel vaults require massive supporting walls to contain their outward thrust. Builders compensated by thickening walls, reducing window size, and concentrating weight downward. The interior is therefore darker, more massive, and more cavern-like than Early Christian basilicas.
 
 <Tip>
@@ -31,6 +35,10 @@ Romanesque churches emphasize:
 <Warn>
 **Critical Distinction:** Do not describe Romanesque interiors as "light and soaring." Romanesque is **dark and heavy**. Barrel vaults require thick walls, which limit window size. The aesthetic is fortress-like, not ethereal. Gothic is light and soaring—this is the major breakthrough that separates the two periods.
 </Warn>
+
+
+<ArticleMedia id="media-hist-002-02-core-concept" layout="single" type="image" status="placeholder" alt="Plan diagram of a Romanesque pilgrimage church (based on Santiago de Compostela and St. Sernin) showing cruciform plan, barrel-vaulted nave, groin-vaulted aisles, transept, ambulatory, and radiating chapels." caption="Romanesque Pilgrimage Church Plan — Cruciform with Ambulatory" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
 
 ## Key Facts and Testable Items
 
@@ -81,6 +89,8 @@ Romanesque establishes the **round arch, barrel vault, and flying buttress precu
 - **Ambulatory**: A passageway around the choir and apse, allowing pilgrims to view relics without interrupting services
 
 ## Related Articles
+
+<ArticleMedia id=\"media-hist-002-02-core-concept-timeline\" layout=\"single\" type=\"image\" status=\"placeholder\" alt=\"Comparison diagram showing Romanesque vs. Gothic structural systems: barrel vault vs. ribbed vault, thick walls vs. flying buttresses, round arch vs. pointed arch, illustrating the transition from Romanesque mass to Gothic skeleton.\" caption=\"Romanesque vs. Gothic — Structural Comparison\" suggestedAsset=\"Style comparison illustration\" placementIntent=\"Style comparison for architectural period\" />
 
 See also within Medieval to Baroque: **lea-hist-002-01-core-concept**, **lea-hist-002-03-core-concept**, **lea-hist-002-04-core-concept**, **lea-hist-002-05-core-concept**.
 

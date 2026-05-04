@@ -1,18 +1,11 @@
 {
-  "attempted_at": "2026-05-04T00:07:17.886Z",
-  "dry_run": true,
-  "apply": false,
-  "pushed": false,
-  "blockers": [
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
-  ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
-  "updated_rows_count": 0,
+  "attempted_at": "2026-05-04T02:18:10.729Z",
+  "dry_run": false,
+  "apply": true,
+  "pushed": true,
+  "blockers": [],
+  "warnings": [],
+  "updated_rows_count": 1,
   "article_id": "3e488a13-943c-4dee-8e38-95b711bef107",
   "slug": "wheelchair-maneuvering-and-parking",
   "preparation_actions": [
@@ -20,7 +13,8 @@
   ],
   "remote_hash_before": "sha256:18bcc62aa1a6eeb25d5ec5fc55cae8bb5404fa40c865276c1edae385d5e48ebe",
   "original_hash": "sha256:18bcc62aa1a6eeb25d5ec5fc55cae8bb5404fa40c865276c1edae385d5e48ebe",
-  "candidate_hash": "sha256:b410ee4db7812ca4cacd48325564b2237f4cf50aa05606a6a77dff1a4c9f2317",
+  "candidate_hash": "sha256:37fc7eca1e1a0fe66c59fd53a7239d4d511a01b0479d6837cca937f2213c9ff4",
   "stale_check_passed": true,
-  "remote_updated_at_before": "2026-05-03T13:52:51.028072+00:00"
+  "remote_updated_at_before": "2026-05-03T13:52:51.028072+00:00",
+  "updated_at_after": "2026-05-04T02:18:11.08133+00:00"
 }

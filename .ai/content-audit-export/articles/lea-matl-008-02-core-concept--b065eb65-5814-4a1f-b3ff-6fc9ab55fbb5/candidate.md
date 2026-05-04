@@ -54,17 +54,17 @@ The NSCP 2015 (National Structural Code of the Philippines) adopts ACI 318 and A
 
 **Exam Pattern 4: Connection Type Selection.** A moment-resisting frame in a seismic zone requires connections that transfer bending moments. What connection type is mandatory, and why? Answer: Moment connections (rigid); shear connections cannot transfer bending moments required for lateral stability.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+<Tip>Memory aid: "Expansion = wide gap + flexible sealant (thermal swing); Control = narrow groove (drying shrinkage); Construction = dowels (shear transfer); Isolation = separation (independent movement)."</Tip>
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Using control joints where expansion joints are required, assuming both serve the same purpose." correction="Control joints (0.25-0.5 inches) handle drying shrinkage at 15-25 feet spacing. Expansion joints (0.2-0.5 inches depending on temperature) are spaced 25-40 feet and require more flexible sealants." />
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Omitting dowel bars at construction joints to save cost, assuming the adjacent concrete will key together adequately." correction="Without dowel bars, differential settlement between pours causes shear failure and spalling. Dowels are mandatory for structural integrity." />
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Specifying shear connections in a seismic-zone moment-resisting frame, thinking pin connections are sufficient for gravity loads." correction="Shear (simple) connections cannot transfer bending moments required to resist lateral forces in earthquakes. Moment connections are mandatory for seismic zones." />
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="WikiMistakeList" status="preserved"]
+<WikiMistakeList mistakes={["Calculating expansion joint width using only the slab length, forgetting to multiply by the thermal coefficient and temperature change (delta-T)", "Placing dowel bars on the top surface instead of at mid-depth, reducing their shear transfer capacity", "Using rigid welds at isolation joints, eliminating the intended independent movement capability"]} />
 
 ## Related Articles
 

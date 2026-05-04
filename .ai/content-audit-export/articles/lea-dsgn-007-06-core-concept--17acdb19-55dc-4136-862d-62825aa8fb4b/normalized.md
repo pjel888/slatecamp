@@ -35,12 +35,12 @@ Dead-end corridors are restricted to ensure occupants do not travel too far towa
 - As a design principle, dead-ends should be minimized or used deliberately to terminate minor or service areas, not created unintentionally through poor layout.
 
 Always verify the exact dead-end limits for the tested occupancy in RA 9514 IRR rather than memorizing a single blanket value.
-<ArticleMedia id="media-lea-dsgn-007-06-core-concept" a type="image" caption="Circulation Typology — Primary, Secondary, and Service Circulation Hierarchy" description="Floor plan overlay diagram showing circulation hierarchy: primary corridors (main pedestrian spine), secondary circulation (room-to-room distribution), and service routes (utility, goods, staff). Annotated with minimum clear widths for each hierarchy level." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-007-06-core-concept" type="image" caption="Circulation Typology — Primary, Secondary, and Service Circulation Hierarchy" alt="Floor plan overlay diagram showing circulation hierarchy: primary corridors (main pedestrian spine), secondary circulation (room-to-room distribution), and service routes (utility, goods, staff). Annotated with minimum clear widths for each hierarchy level." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ---
 
 ## Key Provisions
-<ArticleMedia id="media-lea-dsgn-007-06-core-concept" a type="image" caption="Corridor and Lobby Design — Egress Width and Dead-End Limits" description="Plan diagrams of corridor types: straight corridors with egress width annotation, dead-end corridors (6m unsprinklered, 15m sprinklered), lobby/T-junction turning radii, and stair landing configurations per RA 9514 and PD 1096." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-007-06-core-concept" type="image" caption="Corridor and Lobby Design — Egress Width and Dead-End Limits" alt="Plan diagrams of corridor types: straight corridors with egress width annotation, dead-end corridors (6m unsprinklered, 15m sprinklered), lobby/T-junction turning radii, and stair landing configurations per RA 9514 and PD 1096." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 | Circulation Element        | Source / Code Context                            | Design Guidance                                             |
 |:-------------------------- |:------------------------------------------------- |:----------------------------------------------------------- |

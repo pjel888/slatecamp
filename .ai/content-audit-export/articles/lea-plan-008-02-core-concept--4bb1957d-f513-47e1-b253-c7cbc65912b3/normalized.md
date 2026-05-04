@@ -20,7 +20,7 @@ Digital planning tools include:
 Smart cities typically target sustainability goals—reducing carbon emissions, improving transit efficiency, minimizing waste—while enhancing livability through responsive services. A smart city does not replace traditional planning; rather, it extends planning's reach by providing real-time feedback on plan implementation and infrastructure performance.
 
 In Philippine cities, smart city initiatives are emerging in high-growth urban centers where congestion, pollution, and resource strain demand efficient management. Digital planning supports the CLUP by making land use data accessible and enabling rapid updates when conditions change.
-<ArticleMedia id="media-lea-plan-008-02-core-concept" a type="image" caption="Smart City Planning Framework — GIS, IoT, and Digital Platforms" description="Diagram of smart city components: GIS-based spatial planning, IoT sensor networks (traffic, air quality, waste), real-time data dashboards, digital service platforms, and implementation considerations for Philippine LGUs. Opportunities and risks of smart city deployment." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-plan-008-02-core-concept" type="image" caption="Smart City Planning Framework — GIS, IoT, and Digital Platforms" alt="Diagram of smart city components: GIS-based spatial planning, IoT sensor networks (traffic, air quality, waste), real-time data dashboards, digital service platforms, and implementation considerations for Philippine LGUs. Opportunities and risks of smart city deployment." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 

@@ -71,6 +71,8 @@ The **Federal period** (1780–1820) marked the transition from colonial depende
 
 **Plantation House** — Large domestic structure on agricultural estate; symmetrical, formal; supported by enslaved labor and economic hierarchy.
 
+<ArticleMedia id="media-hist-014-01-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparison of American colonial regional traditions: New England (timber-frame saltbox, central chimney), Mid-Atlantic (brick Georgian, symmetry), Dutch (gambrel roof, stone), and Spanish Southwest (coquina, adobe mission)." caption="American Colonial Architecture — Regional Traditions" suggestedAsset="Style comparison illustration" placementIntent="Style comparison for architectural period" />
+
 ## Related Articles
 
 See also within United States Architecture: **lea-hist-014-02-core-concept**, **lea-hist-014-03-core-concept**, **lea-hist-014-04-core-concept**, **lea-hist-014-05-core-concept**.

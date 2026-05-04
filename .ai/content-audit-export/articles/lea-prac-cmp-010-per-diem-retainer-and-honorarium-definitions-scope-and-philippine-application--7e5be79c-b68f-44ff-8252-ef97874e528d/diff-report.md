@@ -1,33 +1,32 @@
 # Content Diff Report: lea-prac-cmp-010-per-diem-retainer-and-honorarium-definitions-scope-and-philippine-application
 
-Generated: 2026-05-04T00:06:14.647Z
+Generated: 2026-05-04T02:16:44.645Z
 Article ID: 7e5be79c-b68f-44ff-8252-ef97874e528d
-Changed: true
-Safe to push locally: false
+Changed: false
+Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:7dcc3c942b6e84548e2a2ec3baf1568d0e799cf967522b510583af70532c2fd2`
+- Original: `sha256:91301539e69f33df67ce2fbee9a39e1bb6fd1e128b8b67c3a44faf65f031ae08`
 - Normalized: `sha256:61c5118bad85f97f09b815444c07c9f1b15701f71830cf2f971617b0afc97995`
-- Candidate: `sha256:61c5118bad85f97f09b815444c07c9f1b15701f71830cf2f971617b0afc97995`
+- Candidate: `sha256:91301539e69f33df67ce2fbee9a39e1bb6fd1e128b8b67c3a44faf65f031ae08`
 
 ## Line summary
 
-- Changed lines: 88
-- Inserted lines: 16
+- Changed lines: 0
+- Inserted lines: 0
 - Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 2
-- UI blocks preserved: 0
-- UI blocks changed/missing: 2
-- Unresolved placeholders: 1
+- UI blocks preserved: 2
+- UI blocks changed/missing: 0
+- Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate contains unresolved UI block placeholders.
-- Candidate is missing 2 preserved UI block(s).
+- None
 
 ## Warnings
 

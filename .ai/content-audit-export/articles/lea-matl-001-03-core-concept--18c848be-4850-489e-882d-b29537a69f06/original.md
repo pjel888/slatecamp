@@ -10,6 +10,13 @@ The strength of a connection depends on three factors: the joint geometry (how p
 
 ## Traditional Wood Joinery
 
+
+<ArticleMedia id="media-wood-joint-cross-sections" layout="single" type="image" status="placeholder"
+  alt="Cross-section illustrations of mortise-and-tenon, dovetail, lap, dado, rabbet, and butt joints showing interlocking geometry"
+  caption="Future diagram: cross-section views of common wood joinery types"
+  suggestedAsset="Annotated cross-section diagram showing six wood joint types"
+  placementIntent="Helps learners visualize joint geometry described in the text" />
+
 ### Mortise-and-Tenon Joint
 
 A mortise is a rectangular cavity chiseled into one timber member. A tenon is a protruding rectangular element cut from the mating piece that slides into the mortise. This ancient joint excels in tension and resists racking because the tenon acts as both a mechanical key and a glue line.
@@ -68,6 +75,13 @@ Split rings are cast iron rings with a circular split and internal tooth. The ri
 <WikiExamTable headers={["Ring Size", "Bolt Diameter", "Load Capacity (lbf)", "Typical Use"]} rows={[["2-5/8 inch", "5/8 inch", "2500—3200", "Light trusses"], ["4 inch", "3/4 inch", "5000—6500", "Heavy trusses"], ["Larger rings", "Larger bolts", "8000+", "Large span timber structures"]]} />
 
 Split rings excel in tension and shear and are commonly found in residential and agricultural timber trusses. The wood must not be split or checked, and the connectors must be installed in the inner portion of solid cross-sections.
+
+
+<ArticleMedia id="media-timber-connector-details" layout="single" type="image" status="placeholder"
+  alt="Detail drawings of split ring and shear plate timber connectors showing installation in wood members"
+  caption="Future diagram: timber connector types — split rings, shear plates, joist hangers"
+  suggestedAsset="Cross-section and isometric detail drawings of timber connectors"
+  placementIntent="Shows how mechanical timber connectors transfer load in structural applications" />
 
 ### Shear Plate Connectors
 

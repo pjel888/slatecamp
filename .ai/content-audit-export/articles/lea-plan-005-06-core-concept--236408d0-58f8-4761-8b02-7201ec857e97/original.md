@@ -5,7 +5,6 @@ Design site drainage systems — detention/retention basins, rain gardens, perme
 
 Site drainage and stormwater management ensure that rainfall is captured, retained, filtered, or discharged safely, preventing inundation, pollution, and erosion. Modern design emphasizes sustainable drainage systems (SuDS) that mimic natural hydrology: detention/retention basins, rain gardens, permeable pavements, and green roofs. RA 9275 (Clean Water Act) addresses water pollution control, including non-point sources like stormwater, through effluent standards and management plans.
 
-
 ## Core Concept
 
 Stormwater management addresses two challenges: (1) quantity—controlling peak flows and volumes during rain events to prevent downstream flooding, and (2) quality—removing pollutants (sediment, oil, nutrients, metals) before discharge. Traditional "gray" infrastructure (concrete pipes, detention tanks) handles quantity; sustainable drainage systems (SuDS or green infrastructure) handle both quantity and quality while providing co-benefits (groundwater recharge, habitat, aesthetics).
@@ -13,6 +12,7 @@ Stormwater management addresses two challenges: (1) quantity—controlling peak 
 Detention basins temporarily hold stormwater, releasing it slowly; retention basins permanently store water (or infiltrate it). Both reduce peak flows and provide settling time for pollutant removal. Permeable pavements allow water to infiltrate rather than run off, reducing volume. Rain gardens (bioretention areas) filter runoff through soil and vegetation. Green roofs absorb rainfall, reducing runoff. Swleas (vegetated channels) convey and filter runoff.
 
 Site drainage design begins with watershed analysis: where does water come from (roof, pavement, slopes)? Where does it go (infiltration, detention, discharge)? Design rainfall events (commonly 10-year, 25-year, 100-year storm) determine basin sizing. Impervious surfaces (buildings, pavement) increase runoff; pervious surfaces decrease it. Site design can reduce runoff by: preserving vegetation, using permeable paving, implementing green roofs, and directing flow to retention areas.
+<ArticleMedia id="media-lea-plan-005-06-core-concept" a type="image" caption="Stormwater Management — Detention Basins, Rain Gardens, and Permeable Pavement" description="Site drainage system diagram showing: detention/retention basin sizing, rain garden bioretention cell cross-section, permeable pavement (porous asphalt, interlocking pavers), green roof layers, and flow paths. RA 9275 water quality standards for discharge to water bodies." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
@@ -31,7 +31,6 @@ Philippine tropical climate brings intense monsoon rainfall concentrated in June
 **Pattern 3 — Green infrastructure benefit:** "A project adds a rain garden to a parking lot. What does this accomplish?" → Captures and filters runoff; reduces peak flow; improves water quality; recharges groundwater.
 
 <Tip>**Detention = temporary storage (lowers peak flow); Retention = permanent storage/infiltration (eliminates runoff).** Permeable surfaces are cheaper and better than gray infrastructure. SuDS provides water quality AND quantity benefits.</Tip>
-
 
 **Exam Tip:** Storm frequency: 10-year storm = standard for site drainage design, 25-year or 100-year for critical infrastructure. Detention basins should drain within 24-48 hours. Retention basins maintain permanent water level. Know the distinction.
 

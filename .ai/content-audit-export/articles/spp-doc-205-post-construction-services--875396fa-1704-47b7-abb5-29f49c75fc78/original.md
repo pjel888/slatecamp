@@ -107,7 +107,6 @@ Business Development and Management is the most commercially oriented sub-servic
 
 </ComparisonTable>
 
-
 ***
 
 ### 2.2 Post-Construction Evaluation
@@ -134,7 +133,6 @@ Addresses defects such as shrinkage, water seepage, spalling, settlement, and ot
 
 </Callout>
 
-
 ***
 
 ### The SPP 205–SPP 203 Forensic Link
@@ -152,7 +150,6 @@ The cross-reference between SPP 205 and SPP 203.13 (Forensic Architecture) is ar
 | **Fee basis** | Included in building administration fee | Separate engagement under SPP 203 |
 
 </ComparisonTable>
-
 
 If the post-construction evaluation under SPP 205 reveals defects that require deeper forensic investigation — particularly those that may involve contractor or designer liability — the owner should engage a Consulting Architect under SPP 203.13.
 
@@ -195,7 +192,6 @@ SPP 205 prescribes two principal methods of compensation for post-construction s
 
 </ComparisonTable>
 
-
 ### Additional Methods
 
 <ComparisonTable>
@@ -207,7 +203,6 @@ SPP 205 prescribes two principal methods of compensation for post-construction s
 | **PFPE (Professional Fee + Expenses)** | Ongoing consulting with clear scope and defined deliverables |
 
 </ComparisonTable>
-
 
 ### The Incentive Logic of the Percentage Method
 
@@ -238,13 +233,11 @@ SPP 205 is the **final link in the SPP 201–205 service chain**, which together
 
 </ComparisonTable>
 
-
 <Callout variant="note">
 
 *"Post-construction services 'wrap up' the whole range of architectural services. It gives full meaning to what the professional calls Comprehensive Architectural Services."* — SPP 206 / Course Hero
 
 </Callout>
-
 
 ***
 
@@ -261,7 +254,6 @@ SPP 205 is the **final link in the SPP 201–205 service chain**, which together
 | **SPP 206** (Comprehensive Services) | SPP 206 packages all services SPP 201–205 under a single Project Manager; SPP 205 is the final deliverable of the CAS lifecycle |
 
 </ComparisonTable>
-
 
 ***
 
@@ -281,15 +273,23 @@ SPP 205 is the **final link in the SPP 201–205 service chain**, which together
 
 ---
 
-
-
 ---
 
 ## Exam Tip
 
 LEA Swipe: Four post-construction services: (1) Building commissioning and start-up, (2) Record (as-built) drawings, (3) Post-occupancy evaluation (POE), (4) Operations and maintenance manuals. Distinguish: as-built drawings ARE a post-construction service (SPP 205), NOT part of SPP 202. POE is frequently tested as the systematic evaluation of building performance after occupancy.
 
+
+
+---
+
+## Exam Tip
+
+ALE Swipe: Four post-construction services: (1) Building commissioning and start-up, (2) Record (as-built) drawings, (3) Post-occupancy evaluation (POE), (4) Operations and maintenance manuals. Distinguish: as-built drawings ARE a post-construction service (SPP 205), NOT part of SPP 202. POE is frequently tested as the systematic evaluation of building performance after occupancy.
+
 ## Cross‑References
 
 **Spp Doc 206 Comprehensive Architectural Services**, **Spp Doc 202 Regular Design Services**, **Spp Doc 204 A Fulltime Supervision Services**, **Spp Doc 209 Architectural Consulting Services Pacs**
 
+
+<!-- no-media-needed: SPP document reference, service scope text is optimal -->

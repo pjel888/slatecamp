@@ -7,7 +7,6 @@ Multi-purpose halls and community centers are classified as **Group H (Assembly)
 
 ---
 
-
 ## Core Concept
 
 <Tip>Design principles tested on the LEA focus on the relationship between form and space. Understand how primary elements (point, line, plane, volume) generate architectural form and how spatial organization types (centralized, linear, radial, clustered, grid) shape building layout.</Tip>
@@ -33,6 +32,7 @@ Multi-purpose halls are **Group H (Assembly)** occupancies when designed for lar
 - **Exit Width:** Minimum **5.0 mm per occupant** for level components (assembly) per **PD 1096 Rule VIII Table VIII-3**.
 - **Number of Exits:** A minimum of **two exits** is required when the occupant load exceeds **200** or the travel distance to an exit exceeds **20 meters** per **Rule VIII Section 1007**.
 - **Travel Distance:** Shall not exceed **60 meters** in sprinklered buildings or **45 meters** in non-sprinklered buildings.
+<ArticleMedia id="media-lea-dsgn-005-10-core-concept" a type="image" caption="Multi-Purpose Hall — Assembly Occupancy Egress Diagram" description="Floor plan of a multi-purpose hall showing flexible seating configurations, stage area, and egress paths. Annotated with occupant load calculation, exit width (7.6 mm/person), travel distance limits, and dual exit requirement at 50+ occupancy." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ---
 
@@ -74,7 +74,6 @@ Multi-purpose halls are ubiquitous community infrastructure serving celebrations
 
 **Pattern 1: Occupancy Classification (Group C vs. H)**
 
-
 <ExamTip>**LEA Pattern:** A floor plan or spatial diagram is shown and you must identify the type of spatial organization (centralized, linear, radial, clustered, grid). Look for the organizing geometry — the path or point that anchors the arrangement.</ExamTip>
 <ExamTip>**LEA Pattern:** A floor plan or spatial diagram is shown and you must identify the type of spatial organization (centralized, linear, radial, clustered, grid). Look for the organizing geometry — the path or point that anchors the arrangement.</ExamTip>
 "A community center with a temporary wooden stage serving barangay meetings is classified as **Group H**, but if it had a permanent concrete stage with theater seating, it would be **Group C** (ERR-DSGN-005)." 
@@ -89,8 +88,8 @@ Multi-purpose halls are ubiquitous community infrastructure serving celebrations
 
 ---
 
-
 **Exam Tip — ERR-DSGN-026:** Multi-purpose halls without fixed stages = Group H (assembly). With permanent stage = Group C. Flexible furniture does not change classification — only the presence of a fixed stage matters.
+<ArticleMedia id="media-lea-dsgn-005-10-core-concept" a type="image" caption="Multi-Purpose Hall — Flexible Seating and Egress Configuration" description="Floor plan diagram of a multi-purpose hall showing three configurations: banquet (round tables), theater (rows), and classroom (tables with chairs). Each configuration annotated with net floor area, occupant load, and exit width requirement at 7.6 mm/person." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Cross-References
 

@@ -6,6 +6,10 @@ Identify the three defining characteristics of De Stijl — primary colors (red,
 ## Core Concept
 **De Stijl** (Dutch for "The Style"), **Constructivism**, and **Expressionism** all emerged between 1917 and 1925 as radical breaks from academic architecture. Yet they pursued fundamentally different visions.
 
+
+<ArticleMedia id="media-hist-008-04c-core-concept" layout="single" type="image" status="placeholder" alt="Exterior of the Rietveld Schröder House (Utrecht, 1924, Gerrit Rietveld), showing the orthogonal planes, primary colors (red, blue, yellow), black and white surfaces, and the dynamic asymmetrical balance of the Neoplasticist composition." caption="Schröder House — Rietveld's De Stijl Manifesto" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
+
 **De Stijl**, founded in the Netherlands by **Theo van Doesburg**, **Piet Mondrian**, and **Gerrit Rietveld**, reduced form to elemental components: primary colors (red, yellow, blue), orthogonal geometry (right angles only), and white space. The movement believed that this rigorous abstraction expressed universal harmony beneath surface complexity. **Gerrit Rietveld's Schröder House** (1924, Utrecht) is the movement's masterpiece: a spatial composition where walls shift, slide, and dematerialize; primary colors accent structural lines; and the interior transforms based on movable partitions. Every element serves the reduction of form to its essence. De Stijl rejected the European tradition of solid, bounded spaces in favor of interpenetrating planes and voids.
 
 <Tip>De Stijl = primary colors (R, Y, B) + orthogonal geometry (right angles only) + white space = universal harmony. Schröder House exemplifies this: interpenetrating planes, primary colors, movable walls, minimal ornament. Remember: De Stijl is a unified philosophy across painting (Mondrian) and architecture (Rietveld).</Tip>
@@ -17,6 +21,10 @@ Identify the three defining characteristics of De Stijl — primary colors (red,
 <Note>All three movements rejected ornament and tradition and pursued abstraction. But they differ fundamentally: De Stijl sought universal harmony through systematic reduction to primary colors, right angles, and white space. Constructivism pursued technological power and revolutionary ideals through asymmetrical, dynamic forms. Expressionism pursued emotional intensity through sculptural, wave-like, organic-inspired abstract forms. This distinction is testable—you must know all three and their differences.</Note>
 
 <Warn>Critical: Don't confuse these movements. (1) De Stijl is NOT Constructivism—De Stijl is orderly and symmetric with primary colors; Constructivism is asymmetrical and dynamic without color orthodoxy. The Tatlin Tower is NOT De Stijl. (2) Expressionism is NOT naturalism or Art Nouveau—it's abstract and sculptural, pursuing emotional intensity through geometric distortion, not nature-imitation. (3) The Tatlin Tower is unbuilt (1919–1920)—its significance lies in the revolutionary idea, not a completed building.</Warn>
+
+
+<ArticleMedia id="media-hist-008-04c-core-concept" layout="single" type="image" status="placeholder" alt="Illustration of De Stijl design elements: primary colors (red, yellow, blue) with black and white, orthogonal planes intersecting at right angles, and the Mondrian-style grid applied to architectural elevations." caption="De Stijl Visual Vocabulary — Primary Colors and Orthogonal Geometry" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
 
 ## Key Facts and Testable Items
 
@@ -53,6 +61,8 @@ Identify the three defining characteristics of De Stijl — primary colors (red,
 - **Interpenetrating planes**: Overlapping, sliding surfaces and spaces that dissolve traditional boundaries between inside and outside.
 - **Technological apparatus**: Visible expression of mechanical systems, materials, and industrial processes as design elements.
 - **Dematerialization of walls**: The visual dissolution of solid barriers through transparency, rotation, and open planning.
+
+<ArticleMedia id="media-hist-008-04c-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparison of early 20th-century avant-garde movements: De Stijl (Schröder House, primary colors, orthogonal planes), Constructivism (Tatlin's Tower, dynamic diagonals), and Expressionism (Einstein Tower, organic forms).\" caption=\"De Stijl, Constructivism, Expressionism — Comparison\" suggestedAsset=\"Style comparison illustration\" placementIntent=\"Style comparison for architectural period\" />
 
 ## Related Articles
 

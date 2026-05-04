@@ -66,6 +66,8 @@ Beaux-Arts planning emphasizes **axial symmetry**: a central axis organizes all 
 
 **Rotunda** — Circular or polygonal domed space; focal point of Beaux-Arts buildings; creates sense of expansion and arrival.
 
+<ArticleMedia id="media-hist-014-03-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparison of Beaux-Arts methodology across key American works: New York Public Library (Carrère & Hastings, axis and symmetry), Grand Central Terminal (Reed & Stem, monumental urban logic), and US Supreme Court (Cass Gilbert, classical vocabulary)." caption="Beaux-Arts — Key American Works" suggestedAsset="Style comparison illustration" placementIntent="Style comparison for architectural period" />
+
 ## Related Articles
 
 See also within United States Architecture: **lea-hist-014-01-core-concept**, **lea-hist-014-02-core-concept**, **lea-hist-014-04-core-concept**, **lea-hist-014-05-core-concept**.

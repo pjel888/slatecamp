@@ -8,6 +8,13 @@ Waste reduction follows a hierarchy: reduce (source elimination), reuse (whole-c
 
 Building Information Modeling (BIM) enables material optimization by calculating exact quantities before fabrication, reducing off-cuts and waste. Prefabrication in controlled factory settings reduces on-site breakage and moisture damage compared to field construction. RA 9003 (Ecological Solid Waste Management Act) and DENR EMB (Environmental Management Bureau) requirements mandate waste management plans on projects exceeding specified scales.
 
+
+<ArticleMedia id="media-lca-stages-diagram" layout="single" type="image" status="placeholder"
+  alt="Diagram showing the five life cycle assessment stages: raw material extraction, manufacturing, construction, use/maintenance, and end-of-life"
+  caption="Future diagram: life cycle assessment (LCA) stages — cradle to grave"
+  suggestedAsset="Process diagram or circular lifecycle diagram with stage descriptions"
+  placementIntent="Visualizes the LCA framework for evaluating environmental impacts" />
+
 ## Key Provisions
 
 <WikiExamTable headers={["C&D Waste Component", "% by Weight", "Typical Destination", "Reduction Strategy"]}>
@@ -34,6 +41,12 @@ DPWH (Department of Public Works and Highways) specifications increasingly manda
 
 Rice hull ash (byproduct of milling) and coconut husk (coconut processing waste) are being investigated as partial cement replacements and aggregate fillers, transforming agricultural waste into construction material. National government agencies (DOST, DENR) support pilot projects demonstrating waste-to-resource conversion in agricultural regions.
 
+
+<ArticleMedia id="media-lca-certification-flow" layout="single" type="image" status="placeholder"
+  alt="Flowchart showing how LCA results inform BERDE, LEED, and EDGE certification credits across material selection, energy, and waste categories"
+  caption="Future diagram: LCA to green certification — BERDE, LEED, and EDGE credit pathways"
+  suggestedAsset="Process flow diagram of LCA data into certification systems"
+  placementIntent="Connects LCA methodology to practical green building certification" />
 ## How It's Tested
 
 LEA candidates must identify C&D waste composition percentages, match reduction strategies to specific waste types (concrete crushing for reuse, metal segregation for recycling, wood chipping for mulch), and calculate waste reduction benefits of lean or prefabrication approaches. Questions present a construction scenario requiring a waste management plan and ask candidates to specify segregation methods, destination facilities, and cost-benefit analysis.

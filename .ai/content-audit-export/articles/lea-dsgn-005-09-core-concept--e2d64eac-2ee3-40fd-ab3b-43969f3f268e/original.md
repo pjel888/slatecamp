@@ -56,6 +56,7 @@ The **GI (Government Institutional)** zone requires parking per NBC Table VII.5.
 - **Travel Distance:** 22 m unsprinklered or 44 m sprinklered for Group D institutional occupancies.
 - **Dual Exits:** Two separate exits are required once the occupancy of a group or room reaches **50+ persons**.
 - **Ramp Landing:** Ramps must not exceed a 3 m continuous rise without providing a landing.
+<ArticleMedia id="media-lea-dsgn-005-09-core-concept" a type="image" caption="Barangay Hall — Mixed-Occupancy Space Program" description="Floor plan diagram of a barangay hall showing dual-occupancy areas: Group D administrative offices and Group E/C assembly hall. Annotated with population-based space thresholds, dual exit requirements at 50+ occupancy, and accessibility per BP 344." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ---
 
@@ -83,6 +84,7 @@ Barangay halls are the civic infrastructure linking national and local governmen
 ---
 
 **Exam Tip — ERR-DSGN-025:** Barangay halls have dual occupancy: administrative (Group D) + assembly (Group E/C if public meeting space). Calculate each component separately and use the most restrictive egress.
+<ArticleMedia id="media-lea-dsgn-005-09-core-concept" a type="image" caption="Barangay Hall — Dual-Occupancy Floor Plan and Mixed-Use Egress" description="Annotated floor plan of a barangay hall showing: Group D admin offices, Group E/C assembly hall for public meetings, and connecting lobby. Mixed-use occupant load calculation and separate egress paths labeled. BP 344 accessible features shown." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Cross-References
 

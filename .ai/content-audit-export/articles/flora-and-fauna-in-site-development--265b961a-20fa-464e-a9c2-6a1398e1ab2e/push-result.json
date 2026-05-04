@@ -1,26 +1,21 @@
 {
-  "attempted_at": "2026-05-04T00:06:05.546Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:16:35.501Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "candidate.md matches original.md; refusing no-op apply."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "265b961a-20fa-464e-a9c2-6a1398e1ab2e",
   "slug": "flora-and-fauna-in-site-development",
   "preparation_actions": [
     "auto_generated_diff"
   ],
-  "remote_hash_before": "sha256:13aead3f866527bd7801fced8312982d6bc8c971062f4c0c88e359692637c243",
-  "original_hash": "sha256:13aead3f866527bd7801fced8312982d6bc8c971062f4c0c88e359692637c243",
-  "candidate_hash": "sha256:6a87a499473b7a3a08f25b5423e32b87e918731407c2f1df07cddb776aa8da4e",
+  "remote_hash_before": "sha256:e280825e0f5dfcf4ff1a57dfd2531187274fc1d2100bac7ec2acaa7347a36c3a",
+  "original_hash": "sha256:e280825e0f5dfcf4ff1a57dfd2531187274fc1d2100bac7ec2acaa7347a36c3a",
+  "candidate_hash": "sha256:e280825e0f5dfcf4ff1a57dfd2531187274fc1d2100bac7ec2acaa7347a36c3a",
   "stale_check_passed": true,
-  "remote_updated_at_before": "2026-05-03T13:50:15.955041+00:00"
+  "remote_updated_at_before": "2026-05-04T01:59:36.848744+00:00"
 }

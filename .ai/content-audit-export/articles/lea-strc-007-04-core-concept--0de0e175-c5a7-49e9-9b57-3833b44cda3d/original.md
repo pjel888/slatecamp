@@ -10,6 +10,7 @@ By the end of this article, you will be able to:
 Column ties provide transverse confinement to longitudinal bars and prevent buckling during compression. The LEA tests your mastery of _three independent spacing criteria_ and how to select the most restrictive, plus seismic special requirements for SMRF columns. Critical values: normal ties use smallest of (16_db_, 48×tie_dia, least column dimension); seismic confinement length = max(column dim, L/6, 450mm).
 
 ## Core Concept
+<ArticleMedia id="media-lea-strc-007-04-core-concept" a type="image" caption="Column Ties and Spirals — Confinement Reinforcement Detailing" description="Column cross-section and elevation diagrams showing: (1) Tie patterns (single, overlapping, cross-ties, 135° seismic hooks); (2) Tie spacing requirements — minimum db/4, 10db longitudinal, 300mm max; (3) Spiral reinforcement — continuous helix, pitch requirements, core confinement; (4) Plastic hinge zone detailing at column ends with reduced spacing. Comparison of tied vs spiral column behavior under axial load." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 Column ties serve two purposes: (1) hold longitudinal bars in position during construction and concrete placement, and (2) confine concrete and prevent bar buckling. Tie spacing is controlled by the most restrictive of three criteria, each addressing a different failure mode:
 
@@ -82,7 +83,6 @@ Standard 300mm × 400mm building columns with 12 bars of 20mm and 10mm ties are 
 <Tip>
 Three-criteria rule: _smallest_ of (16_db_, 48×_t_tie_, least dim). Always calculate all three; choose the smallest. Seismic hook = 135° (not 90°), with min 75mm extension. Confinement zone = max(dim, L/6, 450mm). Inside zone: spacing = min(b/4, 6_db_, 150mm) (tight). Outside zone: standard spacing applies (relaxed).
 </Tip>
-
 
 ## Related Articles
 

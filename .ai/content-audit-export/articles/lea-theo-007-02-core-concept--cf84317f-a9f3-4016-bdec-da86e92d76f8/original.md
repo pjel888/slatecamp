@@ -3,8 +3,6 @@
 Contemporary architectural discourse is defined by digital design methods, data-responsive systems, and biomimetic strategies that blur boundaries between structure, ornament, and performance. The LEA tests whether you understand not merely stylistic trends but the underlying philosophical shifts: from human intuition to algorithmic optimization, from sculptural form to behavioral simulation, from industrial reproduction to personalized digital fabrication.
 </Callout>
 
-
-
 ## Learning Goal
 
 - Define parametric design systems, computational biomimicry, and AI-assisted design as overlapping frameworks in contemporary architectural practice.
@@ -12,6 +10,8 @@ Contemporary architectural discourse is defined by digital design methods, data-
 - Identify how digital fabrication and BIM transform architectural workflows from design through construction.
 
 ## Core Concept
+
+<ArticleMedia id="media-lea-theo-007-02-parametric-frameworks" type="image" caption="Three Overlapping Frameworks in Contemporary Architecture — Parametric, Biomimetic, and AI-Assisted Design" description="Venn diagram showing three overlapping methodological revolutions: Parametric Design Systems (algorithmic form-generation, Zaha Hadid Architects, BIG), Computational Biomimicry (learning from biological systems, material optimization, structural morphogenesis), and AI-Assisted Design (machine learning, program optimization, generative design). Center intersection = 'Integrated Digital Workflow' showing how all three merge in contemporary practice." suggestedAsset="Venn diagram of parametric design, computational biomimicry, and AI-assisted design" status="placeholder" />
 
 Contemporary architecture has fundamentally shifted its epistemology—how architects *know* what to build. Three overlapping frameworks now dominate professional discourse: **parametric design systems** (algorithmic form-generation), **computational biomimicry** (learning from biological systems), and **AI-assisted design** (machine learning for program optimization and form-finding). These are not stylistic preferences but methodological revolutions.
 
@@ -91,21 +91,15 @@ Critical distinction: AI-optimized designs risk homogenization if all practition
 <WikiExamTable headers={["Concept", "Definition", "Key Practitioner", "Testable Scenario"]} rows={[['["Parametric Design", "Form continuously adjusts to linked variables (solar, load, program)", "Zaha Hadid Architects, BIG", "Given solar orientation data, identify which facade strategy is parametric"]', '["Digital Fabrication", "CNC/3D methods produce bespoke components at sclea", "Neri Oxman, Herzog & de Meuron", "Explain why digital fabrication enables non-standard components without raising costs"]', '["Biomimicry", "Optimization strategies reverse-engineered from biological systems", "Mick Pearce (Eastgate), Neri Oxman", "Design thermal strategy mimicking termite mound principles"]', '["Computational Urbanism", "Algorithmic generation of urban systems via agent-based modeling", "Carlo Ratti, MIT Senseable City Lab", "Generate streetscape density distribution via emergent algorithmic rules"]', '["AI-Assisted Design", "Machine learning augments or automates design decision-making", "Jonathan Glynn, various research labs", "Identify risks of using AI-generated form precedents (homogenization, bias)"]', '["Material Computation", "Local material density varies per structural requirement", "Neri Oxman", "Design structure where density follows stress distribution"]', '["Performance Visualization", "Ornament expresses performance data (thermal, structural, circulation)", "BIG (Amager Bakke), Zaha Hadid", "Interpret facade perforation pattern as thermal performance map"]']]} />
 ## How It's Tested on the LEA
 
-
 <ExamTip>1. **Method Identification**: "A facade's perforation density increases on south-facing elevations and decreases on north-facing surfaces. Which design methodology best describes this?" (Answer: Parametric design with performance responsiveness)</ExamTip>
-
 
 <ExamTip>2. **Philosophical Implication Recognition**: "How does parametric design resolve the historical tension between individual artistic authorship and systematic production logic?" (Answer: By treating the system/algorithm as the author, displacing individual intentionality into rule-setting)</ExamTip>
 
-
 <ExamTip>3. **Biomimetic Application**: "A building's structural ribs concentrate material only where highest loads occur. Which design principle supports this approach?" (Answer: Biomimicry and material computation; organism optimization strategies)</ExamTip>
-
 
 <ExamTip>4. **Data-Driven Urbanism**: "Urban design increasingly relies on real-time mobility data to inform interventions. What is the theoretical advantage and disadvantage of this approach?" (Answer: Data captures actual behavior (advantage); may ignore non-quantifiable cultural/memorial values (disadvantage))</ExamTip>
 
-
 <ExamTip>5. **AI Literacy**: "What is the primary risk when using machine learning to optimize facade transparency for daylighting?" (Answer: ML may produce statistically average solutions; cultural/aesthetic preferences beyond measurable metrics are ignored; homogenization across global practices using same datasets)</ExamTip>
-
 
 ## Common Mistakes
 
@@ -114,7 +108,6 @@ Critical distinction: AI-optimized designs risk homogenization if all practition
 <WikiMistakeCard mistake="Assuming Digital Fabrication Requires Parametricism" correction="CNC mills can produce both parametric and non-parametric forms. Digital fabrication is a manufacturing method; parametricism is a design philosophy." context="They are synergistic but separate." />
 
 <WikiMistakeList mistakes={["Romanticizing Biomimicry Without Material Honesty. Claiming a design is \"biomimetic\" because it resembles an organism is superficial. True biomimicry reverse-engineers the *optimization logic*, not merely the visual form.", "Treating AI as Design Replacement. Contemporary discourse about AI emphasizes it as design *augmentation*, not replacement. Architects still set parameters, curate outputs, and make value judgments. The risk is treating the algorithm's optimization as authority rather than input.", "Ignoring Embodied Energy and Lifecycle Costs. Algorithmic optimization often targets operational efficiency (energy use during occupancy). This can obscure high embodied carbon in complex fabrication, rare materials, or manufacturing transport. Genuine sustainability requires lifecycle assessment.", "Assuming Global Homogenization is Inevitable. Critics worry ML-optimized designs will converge globally. Counters: different regions have different climate, material, and labor parameters; local traditions can be encoded into algorithms; human curation still filters outputs."]} />
-
 
 ## Key Terms
 

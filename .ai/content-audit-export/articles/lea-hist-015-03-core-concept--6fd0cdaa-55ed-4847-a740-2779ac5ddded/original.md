@@ -7,6 +7,10 @@ Identify the three traditional Maori building types — whare (domestic), wharen
 
 **Māori** people inhabited Aotearoa (New Zealand) for over 1,000 years before European contact. Their architecture reflected climate, available materials, cultural values, and spiritual beliefs. The **whare** is a family dwelling—a simple timber structure with specific spatial organization and orientation reflecting Māori cosmology and kinship. The **wharenui** is a communal meeting house, richly carved and decorated, expressing iwi (tribal) identity and genealogy through visual narrative. The **pā** is a fortified settlement with palisaded defensive structures adapted to terrain and strategic position.
 
+
+<ArticleMedia id="media-hist-015-03-core-concept" layout="single" type="image" status="placeholder" alt="Interior and exterior of a traditional wharenui (Maori meeting house, Aotearoa New Zealand), showing the ridgepole with carved ancestors, woven tukutuku panels, and the intricate whakairo (carving) at the porch and gable of the house." caption="Wharenui — Maori Carved Meeting House" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
+
 <Tip>Memory aid: **"Whare = Family; Wharenui = Tribe; Pā = Defense"** — three building types expressing different social scleas and purposes; all embedded with mana (spiritual power) and whakapapa (genealogy).</Tip>
 
 Traditional Māori building emphasized **whare tānga** (craft and technique), integration with landscape, and spiritual significance. Timber (kauri, rimu, totara) was the primary material—abundant, workable, and imbued with mana (spiritual power). Carving and weaving were integral to buildings; ornament was not decoration but narrative and spiritual expression. Buildings embodied whakapapa (genealogy) and told tribal history through visual form.
@@ -20,6 +24,10 @@ Traditional Māori building emphasized **whare tānga** (craft and technique), i
 **Contemporary restoration** emerged in late 20th century. Māori communities reclaimed cultural identity through architecture. Contemporary Māori architects integrate traditional design principles with modernist materials and techniques. The **Māori Arts Movement** asserted carving, weaving, and storytelling as living practices. Contemporary wharenui combine traditional spatial organization and carved decoration with modern materials and climate control. Architects like **Hirini Melbourne** and collaborative firms integrate Māori values—manaakitanga (hospitality), kaitiakitanga (stewardship), aroha (compassion)—into architectural practice.
 
 Contemporary New Zealand architecture increasingly acknowledges dual cultural inheritance: European modernist tradition and Māori indigenous knowledge. Architecture becomes a site of cultural negotiation and potential synthesis.
+
+
+<ArticleMedia id="media-hist-015-03-core-concept" layout="single" type="image" status="placeholder" alt="Comparative illustration of the three major Maori building types: whare whakairo (carved meeting house with anthropomorphic ridgepole), pātaka (raised storehouse on a single post), and pā (fortified settlement on a terraced hill with palisades)." caption="Maori Building Types — Whare, Wharenui, Pā" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
 
 ## Key Facts and Testable Items
 
@@ -70,6 +78,8 @@ Questions ask how contemporary architects incorporate Māori principles into mod
 **Bicultural Design** — Contemporary approach integrating Māori and European-derived design traditions; acknowledges dual heritage; requires Māori community authority.
 
 **Treaty of Waitangi** — 1840 agreement between British Crown and Māori chiefs; systematically breached; foundational to understanding Māori historical dispossession and contemporary cultural reassertion.
+
+<ArticleMedia id="media-hist-015-03-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Diagram of three traditional Māori building types: whare (domestic dwelling, timber and thatch), wharenui (meeting house, richly carved facade, ridgepole), and pā (fortified settlement, palisaded defensive terraces), showing social function and spatial organization.\" caption=\"Māori Architecture — Whare, Wharenui, Pā\" suggestedAsset=\"Style comparison illustration\" placementIntent=\"Style comparison for architectural period\" />
 
 ## Related Articles
 

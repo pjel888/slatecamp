@@ -1,19 +1,12 @@
 {
-  "attempted_at": "2026-05-04T00:05:55.042Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:16:26.324Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "original.md hash does not match article metadata export hash.",
-    "Remote Supabase content differs from export baseline; refusing stale push.",
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "Failed to update wiki_articles.content: Bad Request"
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "c712ee78-2625-434c-bb18-fa7b0f477b33",
   "slug": "plastics-in-construction",
@@ -21,8 +14,8 @@
     "auto_generated_diff"
   ],
   "remote_hash_before": "sha256:d57a8b35d363bb19e4354ee351b8468d238c5b94a918723b320a91fdc9151fe0",
-  "original_hash": "sha256:b38c29be7f675aba8d76b27eba64c5d3bab5fdb5a9bc93589f728081b8d091c4",
-  "candidate_hash": "sha256:5f513f872af0f7a84f71c58f028bab245b85e9ad6e2fb9bcb0ed5a6d5ffccf9e",
-  "stale_check_passed": false,
+  "original_hash": "sha256:d57a8b35d363bb19e4354ee351b8468d238c5b94a918723b320a91fdc9151fe0",
+  "candidate_hash": "sha256:eb7d25fb3dd6758b393714eb8a534cb749c5be8c24a6e626d6541b94df53944d",
+  "stale_check_passed": true,
   "remote_updated_at_before": "2026-05-03T14:19:41.45882+00:00"
 }

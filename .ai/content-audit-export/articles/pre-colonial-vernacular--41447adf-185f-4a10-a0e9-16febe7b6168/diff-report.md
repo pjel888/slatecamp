@@ -1,33 +1,32 @@
 # Content Diff Report: pre-colonial-vernacular
 
-Generated: 2026-05-04T00:06:35.812Z
+Generated: 2026-05-04T02:17:16.507Z
 Article ID: 41447adf-185f-4a10-a0e9-16febe7b6168
-Changed: true
-Safe to push locally: false
+Changed: false
+Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:24e2fcba7cc2240b46e04d63cc2ed798a4fac73cfc8275733e5dbf4fdad25c73`
+- Original: `sha256:9b419ae03e634b10e7032bafce535892327c027b672c25a729e67665d1ed4e2b`
 - Normalized: `sha256:e88d74263cb2ba75f6c5815414c0c336db5c086fea850647e4aa2dc2d7665df6`
-- Candidate: `sha256:e88d74263cb2ba75f6c5815414c0c336db5c086fea850647e4aa2dc2d7665df6`
+- Candidate: `sha256:9b419ae03e634b10e7032bafce535892327c027b672c25a729e67665d1ed4e2b`
 
 ## Line summary
 
-- Changed lines: 76
+- Changed lines: 0
 - Inserted lines: 0
-- Deleted lines: 10
+- Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 3
-- UI blocks preserved: 0
-- UI blocks changed/missing: 3
-- Unresolved placeholders: 1
+- UI blocks preserved: 3
+- UI blocks changed/missing: 0
+- Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate contains unresolved UI block placeholders.
-- Candidate is missing 3 preserved UI block(s).
+- None
 
 ## Warnings
 

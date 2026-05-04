@@ -1,33 +1,32 @@
 # Content Diff Report: lea-prac-frm-007-reciprocity-principles-in-architectural-practice
 
-Generated: 2026-05-04T00:05:47.519Z
+Generated: 2026-05-04T02:16:21.453Z
 Article ID: e51e9a56-7251-460e-8d00-5feaa3884f0a
-Changed: true
-Safe to push locally: false
+Changed: false
+Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:2252ca4f380b936171b1fc6ffaa7fc12c3890d78a45ef61da00df7775efc2b2b`
+- Original: `sha256:e28d3a49a060a6153340dd253003352422513d2aece603ebf03d7301fde95d04`
 - Normalized: `sha256:4fd94bed1cabeab4082486b1f89c7977277dea045921e79d9e358cd844b44f4f`
-- Candidate: `sha256:4fd94bed1cabeab4082486b1f89c7977277dea045921e79d9e358cd844b44f4f`
+- Candidate: `sha256:e28d3a49a060a6153340dd253003352422513d2aece603ebf03d7301fde95d04`
 
 ## Line summary
 
-- Changed lines: 71
-- Inserted lines: 6
+- Changed lines: 0
+- Inserted lines: 0
 - Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 6
-- UI blocks preserved: 0
-- UI blocks changed/missing: 6
-- Unresolved placeholders: 1
+- UI blocks preserved: 6
+- UI blocks changed/missing: 0
+- Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate contains unresolved UI block placeholders.
-- Candidate is missing 6 preserved UI block(s).
+- None
 
 ## Warnings
 

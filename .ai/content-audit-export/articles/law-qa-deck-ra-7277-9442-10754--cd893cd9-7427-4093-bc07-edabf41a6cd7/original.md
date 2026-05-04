@@ -3,9 +3,6 @@
 After reading this article, you should be able to:
 
 Apply the provisions of RA 7277 (Magna Carta for Disabled Persons), RA 9442 (amendments expanding PWD privileges), and RA 10754 (PWD benefits expansion) to architectural practice: identify the 20% discount, VAT exemption, and priority lane requirements; apply accessible parking, restroom, and entrance requirements under these laws; and distinguish the architect's obligation from the building owner's obligation for PWD compliance.
-
-_Use this as a flashcard set: cover the answers and recite aloud._[web:18][web:19][web:20][web:23][web:29][web:30]
-
 ---
 
 ## A. Which Law?
@@ -220,15 +217,23 @@ Would you like a separate ultra‑short “exam cram” version with just the Q 
 
 ---
 
-
-
 ---
 
 ## Exam Tip
 
 LEA Trap: Three laws with different privileges: RA 7277 = original Magna Carta (accessibility mandates), RA 9442 = added 20% discount/VAT exemption, RA 10754 = expanded to all PWD (removed the 70% disability threshold). The VA T exemption is ON TOP of the 20% discount — not a replacement. Total savings = 20% discount + VAT on the discounted amount.
 
+
+
+---
+
+## Exam Tip
+
+ALE Trap: Three laws with different privileges: RA 7277 = original Magna Carta (accessibility mandates), RA 9442 = added 20% discount/VAT exemption, RA 10754 = expanded to all PWD (removed the 70% disability threshold). The VA T exemption is ON TOP of the 20% discount — not a replacement. Total savings = 20% discount + VAT on the discounted amount.
+
 ## Cross‑References
 
 **Ra 9442 Pwd Privileges And Incentives**, **Translating Pwd Rights**, **Comprehensive Signage Package**, **Accessible Seating In Assembly Areas**
 
+
+<!-- no-media-needed: reference deck/QA compilation, text-optimal format -->

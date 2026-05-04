@@ -7,6 +7,10 @@ Identify Indigenous Australian architecture (climate-responsive, ephemeral, bark
 
 **Indigenous Australian** architecture precedes European contact by tens of thousands of years. Aboriginal peoples constructed shelter types suited to regional climate: windbreaks and simple domed structures (gunyah) in temperate regions, more substantial bark and timber structures in tropical zones, subterranean and semi-subterranean shelters in desert regions. These structures ranged from temporary to semi-permanent or permanent, reflecting lifestyles from nomadic to settled where people moved with seasons and resources in some regions. Architecture was responsive, with evidence of durable stone houses and long-term base camps—the opposite of European permanence. Colonial documentation typically erased or dismissed Indigenous building as "primitive," but it was sophisticated adaptation to extreme environments.
 
+
+<ArticleMedia id="media-hist-015-01-core-concept" layout="single" type="image" status="placeholder" alt="Reconstruction of a traditional gunyah (bark shelter) from southeastern Australia, showing the semi-circular frame of flexible branches covered with large sheets of stringybark, reflecting ephemeral climate-responsive indigenous building traditions." caption="Gunyah — Indigenous Australian Bark Shelter" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
+
 <Tip>Memory aid: **"Indigenous = Climate-Responsive; Colonial = European + Heat Adaptation"** — Indigenous architecture was sophisticated adaptation; colonial architecture was European style modified for Australian conditions.</Tip>
 
 **British colonization** (1788 onward) imposed European architectural models. Early colonial buildings were utilitarian: barracks, gaols, storage facilities. Colonial architects faced unprecedented challenges: extreme heat, intense UV radiation, dust storms, vast distances, limited skilled labor, material shortages. European Gothic Revival and neoclassical styles were irrelevant. Architects developed practical solutions: deep verandahs for shade, elevated buildings for air circulation, substantial masonry for thermal mass, shutters for sun control. Colonial Australian architecture is European form adapted to necessity.
@@ -18,6 +22,10 @@ Identify Indigenous Australian architecture (climate-responsive, ephemeral, bark
 <Warn>Critical distinction: Do not treat colonial architecture as simply European transplant or purely functional adaptation. Colonial buildings were instruments of domination—they asserted British authority, distinguished elites from convicts, and imposed European permanence over Indigenous mobility. Acknowledge the violence embedded in colonial architectural forms.</Warn>
 
 By late 19th century, Australian architects developed a distinct identity. They synthesized European training with Australian practicality, creating architecture that was neither purely colonial derivative nor purely utilitarian. They expressed growing Australian nationalism through architectural style.
+
+
+<ArticleMedia id="media-hist-015-01-core-concept" layout="single" type="image" status="placeholder" alt="View of a Victorian-era terrace house in Sydney or Melbourne, illustrating the imported European styles (Italianate, Gothic Revival, Federation) that contrasted with Indigenous ephemeral architecture." caption="Colonial Australian Architecture — Imported Styles" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
 
 ## Key Facts and Testable Items
 
@@ -66,6 +74,8 @@ Questions ask why courthouses, government houses, and churches were monumental a
 **Utilitarian Colonialism** — Architectural approach prioritizing function, durability, and practical constraint over stylistic expression; characteristic of early convict-era buildings.
 
 **Architectural Colonization** — Imposition of European architectural styles and values as assertion of cultural dominance; erases and suppresses Indigenous building traditions.
+
+<ArticleMedia id="media-hist-015-01-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Contrast between Indigenous Australian architecture (gunyah bark shelters, windbreaks, climate-responsive ephemeral structures) and colonial imported European styles, showing how climate, materials, and cultural values shaped distinct building traditions.\" caption=\"Australian Indigenous vs. Colonial — Architecture Comparison\" suggestedAsset=\"Style comparison illustration\" placementIntent=\"Style comparison for architectural period\" />
 
 ## Related Articles
 

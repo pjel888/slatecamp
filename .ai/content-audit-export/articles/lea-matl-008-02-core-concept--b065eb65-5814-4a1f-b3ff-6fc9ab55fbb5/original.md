@@ -12,6 +12,13 @@ Steel connections transfer loads through bolting, welding, or riveting. Bolted c
 
 Welded connections provide monolithic strength but require skilled labor and NDT (non-destructive testing) inspection. Riveted connections are historic; modern steel construction has largely replaced them with bolts or welds. NSCP 2015 provisions specify bolt grades (ASTM A325 for structural steel, 120 ksi tensile strength), hole tolerances, and proof loads based on connection type.
 
+
+<ArticleMedia id="media-window-hardware-chart" layout="single" type="image" status="placeholder"
+  alt="Comparison chart of window hardware: casement operators, sliding locks, awning cranks, jalousie mechanisms, pivot hinges, and projected window hardware with operation and security ratings"
+  caption="Future chart: window hardware types — operation, security, and weather-tightness comparison"
+  suggestedAsset="Hardware identification chart with window type illustrations"
+  placementIntent="Provides reference for window hardware selection by window configuration" />
+
 ## Key Provisions
 
 | Property | Value | Standard | LEA Relevance |
@@ -31,6 +38,12 @@ Welded connections provide monolithic strength but require skilled labor and NDT
 
 The NSCP 2015 (National Structural Code of the Philippines) adopts ACI 318 and AISC design provisions for concrete and steel construction. In the Philippines, concrete slabs in tropical climates experience significant thermal cycling due to intense solar radiation and monsoon temperature swings, necessitating proper expansion joint design. Many older Philippine structures lack adequate expansion joints, resulting in buckling and cracking during hot seasons. Dowel bars at construction joints are often undersized or omitted in informal construction, leading to differential settlement in multi-story buildings. Steel connections in high-seismic regions (as most of the Philippines is classified) require moment connections rather than simple shear connections to maintain structural integrity during earthquakes. Local contractors frequently confuse control joints with expansion joints, leading to premature cracking and sealant failure.
 
+
+<ArticleMedia id="media-window-hardware-selection" layout="single" type="image" status="placeholder"
+  alt="Comparison chart of window hardware by window type: casement, sliding, awning, jalousie, pivot, and projected with operation, security, and weather-tightness ratings"
+  caption="Future chart: window hardware selection matrix by window configuration"
+  suggestedAsset="Selection matrix for window hardware by window type"
+  placementIntent="Helps select appropriate hardware for each window type" />
 ## How It's Tested
 
 **ExaA concrete slab with thermal expansion coefficient of 6 × 10⁻⁶ in/in/°F (0.000006 in/in/°F)... **Exam Pattern 1: Spacing Calculation.** A concrete parking garage slab experiences a 60-degree Fahrenheit temperature swing. Using the thermal expansion coefficient (6 × 10⁻⁶ in/in/°F), what is the required expansion joint width? Answer: 6 × 10⁻⁶ × 60 = 0.00036 inches, which requires recalculation based on slab length per ΔL = α × L × ΔT formulas, rounded to 0.25 inches minimum per NSCP 2015.

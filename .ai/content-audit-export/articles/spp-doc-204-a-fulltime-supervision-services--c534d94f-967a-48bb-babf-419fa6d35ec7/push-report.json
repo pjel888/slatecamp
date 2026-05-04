@@ -1,26 +1,21 @@
 {
-  "attempted_at": "2026-05-04T00:05:50.410Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:16:23.100Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "candidate.md matches original.md; refusing no-op apply."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "c534d94f-967a-48bb-babf-419fa6d35ec7",
   "slug": "spp-doc-204-a-fulltime-supervision-services",
   "preparation_actions": [
     "auto_generated_diff"
   ],
-  "remote_hash_before": "sha256:a50226a06d96266371a73846231683b2770e0a209f029dc1e207e9d86decba13",
-  "original_hash": "sha256:a50226a06d96266371a73846231683b2770e0a209f029dc1e207e9d86decba13",
-  "candidate_hash": "sha256:7236acfb8ddf0b7bbba619fb3c0b3dc7c2c4c7a77c525f635465f734c54fc635",
+  "remote_hash_before": "sha256:17c16b6237aeb7ab6c925f243b2e9406fceb9133da0c36c7bafb2a7c794aa86c",
+  "original_hash": "sha256:17c16b6237aeb7ab6c925f243b2e9406fceb9133da0c36c7bafb2a7c794aa86c",
+  "candidate_hash": "sha256:17c16b6237aeb7ab6c925f243b2e9406fceb9133da0c36c7bafb2a7c794aa86c",
   "stale_check_passed": true,
-  "remote_updated_at_before": "2026-05-03T13:49:41.536323+00:00"
+  "remote_updated_at_before": "2026-05-04T01:59:07.186583+00:00"
 }

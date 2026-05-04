@@ -1,6 +1,5 @@
 ## Fees for Abandoned Projects and Partial Services — Protecting the Architect's Compensation
 
-
 ## Learning Goal
 
 After studying this article, you should be able to:
@@ -22,11 +21,24 @@ The key principle is that the architect receives compensation for completed desi
 
 <KeyValues items=[{"value": "5-12%", "label": "DAEDS Fee Range"}, {"value": "50M", "label": "PCC Bracket Threshold"}, {"value": "10 Groups", "label": "Project Classification"}, {"value": "150%", "label": "Renovation Multiplier"}] />
 
+<Note>
+**LEA Priority — Fee Computation:** Know the five compensation methods (percentage-of-PCC, MDPE, lump sum, per diem/retainer, reimbursable expenses). Master the sliding scale for Groups 1-3 (5%→4%→3%→
+</Note>
+
+<LawCallout code="irr" section="Architect's Guidelines / SPP 202" title="Fee Computation — Regulatory Basis">
+Fee computation under the Architect's Guidelines follows SPP 202 classification groups and the DAEDS/DADS framework. The percentage-of-PCC method applies group-specific rates to Project Construction Cost. MDPE uses direct personnel expense multiplied by an agreed factor. Lump-sum fees are negotiated based on scope. All methods must be documented in the owner-architect agreement.
+</LawCallout>
+Extracted summary:
+- Props: code=irr, section=Architect's Guidelines / SPP 202, title=Fee Computation — Regulatory Basis
+- Text: Fee computation under the Architect's Guidelines follows SPP 202 classification groups and the DAEDS/DADS framework. The percentage-of-PCC method applies group-specific rates to Project Construction C...
+
 <KeyValues items=[{"value": "5-12%", "label": "DAEDS Fee Range"}, {"value": "50M", "label": "PCC Bracket Threshold"}, {"value": "10 Groups", "label": "Project Classification"}, {"value": "150%", "label": "Renovation Multiplier"}] />
 Extracted summary:
-- Props: variant="lea-watch", title="Milestone Summary"
-- Text: Milestone Summary — Abandonment compensation per SPP 202: SD phase (15%), SD+DD (35%), SD+DD+CD (90% under Section 7.7 if Owner fails to implement plans). The 90% figure applies when Contract Documents are complete but construction never starts.
-[/SLATECAMP_UI_BLOCK]
+- Props: items=[{"value": "5-12%", "label": "DAEDS Fee Range"}, {"value": "50M", "label": "PCC Bracket Threshold"}, {"value": "10 Groups", "label": "Project Classification"}, {"value": "150%", "label": "Renovation Multiplier"}]
+- Text: (none detected)
+<Note>
+Milestone Summary — Abandonment compensation per SPP 202: SD phase (15%), SD+DD (35%), SD+DD+CD (90% under Section 7.7 if Owner fails to implement plans). The 90% figure applies when Contract Documents are complete but construction never starts.
+</Note>
 
 ### Reimbursable Expenses at Abandonment
 
@@ -89,6 +101,9 @@ During proposal and contract negotiation, the architect should discuss and docum
 <LawCallout code="irr" section="Architect's Guidelines / SPP 202" title="Fee Computation — Regulatory Basis">
 Fee computation under the Architect's Guidelines follows SPP 202 classification groups and the DAEDS/DADS framework. The percentage-of-PCC method applies group-specific rates to Project Construction Cost. MDPE uses direct personnel expense multiplied by an agreed factor. Lump-sum fees are negotiated based on scope. All methods must be documented in the owner-architect agreement.
 </LawCallout>
+Extracted summary:
+- Props: (none)
+- Text: Exam Note: The LEA board exam may test whether you know the 90% figure from SPP 202 Section 7.7 for completed Contract Documents when the Owner fails to implement the project. This is distinct from the 10% holdback for Construction Administration.
 
 ---
 
@@ -104,3 +119,5 @@ Fee computation under the Architect's Guidelines follows SPP 202 classification 
 - [Reimbursable Expenses](lea-prac-cmp-011)
 - [SPP Doc 202 Phase Framework](lea-prac-svc-004)
 - [Standard Owner-Architect Agreement](lea-prac-ctr-001)
+
+<!-- no-media-needed: professional practice article, text/tables/UI blocks are optimal format -->

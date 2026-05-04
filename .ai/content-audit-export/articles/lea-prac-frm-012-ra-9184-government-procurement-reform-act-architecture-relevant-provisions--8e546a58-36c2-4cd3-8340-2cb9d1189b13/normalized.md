@@ -71,7 +71,7 @@ RA 12009 (2024) modernizes RA 9184 further. Key updates include enhanced digital
 
 
 
-<ArticleMedia type="image" caption="RA 9184 Government Procurement — Procurement Methods and Thresholds" description="Decision tree showing RA 9184 procurement methods: Competitive Bidding (default, above ₱1M infrastructure), Shopping (below thresholds), Negotiated Procurement (emergency, exclusive source), Direct Contracting (proprietary items). Side panel shows procurement thresholds and architecture/consulting services exemptions. Architect's role in bid document preparation highlighted." />
+<ArticleMedia type="image" caption="RA 9184 Government Procurement — Procurement Methods and Thresholds" alt="Decision tree showing RA 9184 procurement methods: Competitive Bidding (default, above ₱1M infrastructure), Shopping (below thresholds), Negotiated Procurement (emergency, exclusive source), Direct Contracting (proprietary items). Side panel shows procurement thresholds and architecture/consulting services exemptions. Architect's role in bid document preparation highlighted." />
 ## Related Articles
 
 - [Sole Proprietorship](lea-prac-frm-001)

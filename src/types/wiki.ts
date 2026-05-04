@@ -52,6 +52,16 @@ export interface LawCalloutProps {
   children: React.ReactNode
 }
 
+/**
+ * WikiMistakeCard — canonical prop shape used internally by WikiMistakeCard.
+ *
+ * The MDX content uses one of three conventions:
+ *   A) NEW:  mistake, correction, context             (154 articles)
+ *   B) OLD:  number, title, wrongValue, correctValue, explanation, sourceRef  (2 articles)
+ *   C) BODY: title, body                                (9 articles)
+ *
+ * WikiMistakeCard normalizes all three into this internal shape.
+ */
 export interface WikiMistakeProps {
   number: number
   title: string
@@ -59,4 +69,21 @@ export interface WikiMistakeProps {
   correctValue: string
   explanation: string
   sourceRef?: string
+}
+
+/** Raw props as they may appear in MDX — union of all three conventions. */
+export interface WikiMistakeCardRawProps {
+  // Convention A — NEW (compose-step output)
+  mistake?: string
+  correction?: string
+  context?: string
+  // Convention B — OLD (original component contract)
+  number?: number
+  title?: string
+  wrongValue?: string
+  correctValue?: string
+  explanation?: string
+  sourceRef?: string
+  // Convention C — BODY
+  body?: string
 }

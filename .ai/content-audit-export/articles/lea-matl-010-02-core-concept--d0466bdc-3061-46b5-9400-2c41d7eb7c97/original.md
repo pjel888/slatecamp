@@ -10,6 +10,13 @@ The fundamental formula is: _Number of CHB = Wall area (m²) ÷ 0.16 m² per blo
 
 Mortar volume (cement-sand mix for bedding and joints) is estimated at 0.03 to 0.05 m³ per cubic meter of masonry wall, or approximately 1 bag of cement (40 kg) and 0.12 m³ of sand per 100 blocks. Grout (for cavity fill or solid grouting) is calculated separately based on wall thickness and grout design.
 
+
+<ArticleMedia id="media-chb-estimation-diagram" layout="single" type="image" status="placeholder"
+  alt="Diagram showing CHB wall area calculation, opening deductions, and block layout with bond pattern illustration"
+  caption="Future diagram: CHB quantity estimation — wall area, openings, bond pattern, and layout"
+  suggestedAsset="Wall elevation diagram with block count calculation steps"
+  placementIntent="Visualizes CHB estimation methodology" />
+
 ## Key Provisions
 
 | Parameter | Value / Standard | LEA Relevance |
@@ -96,6 +103,12 @@ Total sand: 0.44 m³ × 4 floors = 1.76 m³ sand
 **Answer: 1,470 CHB for 4 floors, 16 bags cement mortar, 1.76 m³ sand**
 </Example>
 
+
+<ArticleMedia id="media-chb-estimation-example" layout="single" type="image" status="placeholder"
+  alt="Step-by-step CHB quantity estimation example showing wall area calculation, opening deduction, block count, mortar volume, and steel reinforcement"
+  caption="Future diagram: CHB estimation worked example — wall area, openings, block count, and reinforcement"
+  suggestedAsset="Step-by-step illustrated calculation example"
+  placementIntent="Provides practical example of masonry quantity estimation" />
 ## Quick Reference: CHB Estimation Table
 
 | Wall Thickness | Net Area (m²) | CHB per m² | Total CHB (5% waste) | Mortar Bags | Mortar Sand (m³) |

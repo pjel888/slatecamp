@@ -55,15 +55,15 @@ Philippine residential and commercial construction prioritizes heat reduction th
 
 **Pattern 4: Tropical Heat Reduction** — "For a metal-roofed tropical residence with 50°C exterior surface temperature, would 100 mm bulk fiberglass insulation or 25 mm reflective aluminum barrier be more effective at reducing interior ceiling temperature?" (Answer: Reflective barrier; radiant heat dominates in tropical solar gain; reflectivity reduces radiant absorption more than k-value reduction.)
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+<Tip>Memorize k-value hierarchy: polyiso (0.020) < XPS (0.025) < fiberglass (0.040) < mineral wool (0.045). R = thickness / k. In tropical climates, reflective barriers outperform bulk insulation for heat reduction. STC = sound isolation, NRC = sound absorption.</Tip>
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Confusing R-value with k-value: thinking R-value is material-specific (it is not; R depends on thickness and k-value)." correction="k-value is material property (independent of thickness). R-value = thickness / k-value (depends on thickness). Thicker insulation yields higher R." />
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Specifying bulk fiberglass insulation for tropical residential cooling without reflective barrier, resulting in heat entrapment and increased air conditioning load." correction="Tropical heat reduction requires reflective surfaces (aluminum foil, white coating) to minimize radiant gain. Bulk insulation increases cost without proportional cooling benefit." />
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
+<WikiMistakeList mistakes={["Confusing STC (isolation) with NRC (absorption); STC rates walls, NRC rates interior finishes", "Installing fiberglass batts in coastal salt-spray zones without vapor barrier; moisture absorption degrades R-value by 20-40%", "Calculating assembly U-value without including air films (interior 0.12, exterior 0.03 m²·K/W); omission understates thermal performance", "Using NRC material (suspension ceiling) without adequate STC walls; noise isolation is wall-dependent, not ceiling-dependent"]} />
 
 ## Related Articles
 

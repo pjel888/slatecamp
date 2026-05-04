@@ -4,12 +4,15 @@
 You will encounter questions testing your understanding of the architectural design process as a systematic progression from concept through completion. The LEA tests how design decisions flow from initial client intentions through schematic design, design development, and construction administration, reflecting the profession's structured approach to problem-solving.
 </Callout>
 
-
 ## Learning Goal
 
 Understand the five-phase architectural design process (Schematic Design through Construction Administration) and the deliverables, approvals, and stakeholder roles at each phase.
 
 ## Core Concept
+
+|<ArticleMedia id="media-lea-theo-001-07-core-concept" a type="image" caption="The Five-Phase Architectural Design Process" description="Process flow diagram showing the five sequential phases: Schematic Design (concept sketches, preliminary plans, massing studies) → Design Development (refined drawings, material selection, system design, consultant coordination) → Construction Documents (comprehensive drawings, specifications, permit set) → Bidding and Negotiation (contractor selection, bid evaluation, contract award) → Construction Administration (site visits, shop drawing review, payment certification, change orders, project closeout). Arrows show progression with feedback loops indicating overlapping phases for smaller projects." suggestedAsset="Diagram or reference image" status="placeholder" />
+
+<ArticleMedia id="media-lea-theo-001-07-core-concept-b" type="image" caption="Design Phase Deliverables Comparison — Level of Detail Progression" description="Comparative diagram showing how the same building element (e.g., a window wall section) is represented at each phase: Schematic Design (simple sketch with basic dimensions), Design Development (detailed drawing with materials, frame type, glazing specification), Construction Documents (full technical drawing with dimensions, annotations, schedules, and connections). Demonstrates the progressive refinement from concept to constructible reality." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 Architecture is not created in isolation. The **architectural design process** is the systematic progression through which an architect translates client needs and project requirements into a complete building design. This process unfolds in distinct phases, each with specific deliverables, stakeholders, and decision-making criteria. Understanding these phases is essential to the Philippine architecture licensure examination, as the LEA repeatedly tests candidates on how architects organize their work and communicate with clients and contractors.
 

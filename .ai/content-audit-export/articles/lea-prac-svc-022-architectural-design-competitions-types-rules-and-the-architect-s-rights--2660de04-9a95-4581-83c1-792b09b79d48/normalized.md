@@ -68,7 +68,7 @@ Architects benefit when competitions follow professional standards, provide adeq
 
 
 
-<ArticleMedia type="image" caption="Architectural Design Competition — Types and Process Flowchart" description="Flowchart showing ADC (SPP 208) process: Competition announcement → Registration → Briefing → Design submission → Jury evaluation → Winner selection → Award. Types compared: Open competition (any qualified architect), Limited competition (invited participants), Single-stage (direct evaluation), Two-stage (pre-qualification + detailed design). Architect's rights (copyright, ownership of submissions) and professional advisor's role." />
+<ArticleMedia type="image" caption="Architectural Design Competition — Types and Process Flowchart" alt="Flowchart showing ADC (SPP 208) process: Competition announcement → Registration → Briefing → Design submission → Jury evaluation → Winner selection → Award. Types compared: Open competition (any qualified architect), Limited competition (invited participants), Single-stage (direct evaluation), Two-stage (pre-qualification + detailed design). Architect's rights (copyright, ownership of submissions) and professional advisor's role." />
 ## Related Articles
 
 - [SPP Doc 202 Six-Phase Framework](lea-prac-svc-004)

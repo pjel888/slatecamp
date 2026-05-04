@@ -1,45 +1,38 @@
 {
   "article_id": "91727ebf-ee05-4aa8-a538-d8c599a1d9c9",
   "slug": "lea-util-003-02-emergency-power-systems",
-  "generated_at": "2026-05-04T00:07:05.733Z",
-  "old_hash": "sha256:8e922d06741babc1664ae16d9c9489c4d9fa12afaf5b10a87ac40a8a03ae5b62",
-  "new_hash": "sha256:5972950fced43cdef1f14916c398540fb4acfe9fbaa79ecba6ede010f593e192",
-  "original_hash": "sha256:8e922d06741babc1664ae16d9c9489c4d9fa12afaf5b10a87ac40a8a03ae5b62",
+  "generated_at": "2026-05-04T02:17:55.495Z",
+  "old_hash": "sha256:df26d690ea85922743f251807338de04e4bce02af60cd2b614ffaffe073a036c",
+  "new_hash": "sha256:df26d690ea85922743f251807338de04e4bce02af60cd2b614ffaffe073a036c",
+  "original_hash": "sha256:df26d690ea85922743f251807338de04e4bce02af60cd2b614ffaffe073a036c",
   "normalized_hash": "sha256:5972950fced43cdef1f14916c398540fb4acfe9fbaa79ecba6ede010f593e192",
-  "candidate_hash": "sha256:5972950fced43cdef1f14916c398540fb4acfe9fbaa79ecba6ede010f593e192",
-  "changed": true,
-  "changed_line_count": 131,
+  "candidate_hash": "sha256:df26d690ea85922743f251807338de04e4bce02af60cd2b614ffaffe073a036c",
+  "changed": false,
+  "changed_line_count": 0,
   "inserted_line_count": 0,
-  "deleted_line_count": 4,
+  "deleted_line_count": 0,
   "ui_blocks_original_count": 3,
-  "ui_blocks_candidate_count": 0,
-  "ui_blocks_changed_count": 3,
+  "ui_blocks_candidate_count": 3,
+  "ui_blocks_changed_count": 0,
   "ui_blocks_count": 3,
-  "unresolved_placeholders_count": 1,
-  "preserved_blocks_count": 0,
+  "unresolved_placeholders_count": 0,
+  "preserved_blocks_count": 3,
   "changed_text_summary": {
-    "changed": 131,
+    "changed": 0,
     "inserted": 0,
-    "deleted": 4,
+    "deleted": 0,
     "original_line_count": 155,
-    "candidate_line_count": 151
+    "candidate_line_count": 155
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0001",
-      "ui_0002",
-      "ui_0003"
-    ],
-    "changed_count": 3
+    "missing_block_ids": [],
+    "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate contains unresolved UI block placeholders.",
-    "Candidate is missing 3 preserved UI block(s)."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 3 preserved UI block(s)."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

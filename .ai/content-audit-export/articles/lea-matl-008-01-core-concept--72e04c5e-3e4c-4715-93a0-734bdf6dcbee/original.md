@@ -14,6 +14,13 @@ Door closers control closing speed and ensure positive latching. Surface-mounted
 
 Exit devices (panic hardware) are spring-loaded bars that allow instant egress when pushed, critical for life safety. Force resistance varies by standard and test (e.g., lever strength tests often 360 lbf across grades per some lock standards). Fire-rated assemblies must include self-closing mechanisms and fire-rated hardware certified per RA 9514 standards.
 
+
+<ArticleMedia id="media-door-hardware-comparison" layout="single" type="image" status="placeholder"
+  alt="Comparison chart of door hardware types: hinges, locksets, closers, panic devices, and exit hardware with ANSI grade, function, and fire-rating information"
+  caption="Future chart: door hardware comparison — hinges, locksets, closers, panic devices, and exit hardware"
+  suggestedAsset="Hardware identification chart with ANSI grade callouts"
+  placementIntent="Provides visual reference for door hardware selection by occupancy" />
+
 ## Key Provisions
 
 | Property                               | Value                                                                   | Standard         | LEA Relevance                                             |
@@ -32,6 +39,12 @@ Exit devices (panic hardware) are spring-loaded bars that allow instant egress w
 
 The Philippine Building Code (PBC) adopts ANSI/BHMA standards for door hardware classification, with particular emphasis on fire-rated assemblies under RA 9514 (Fire Code of the Philippines). Commercial buildings in high-density urban areas such as Metro Manila must use Grade 1 hardware to withstand frequent daily cycles. Residential condominiums typically specify Grade 2 for common areas and Grade 3 for unit entries. Typhoon-resistant buildings in coastal provinces require corrosion-resistant hardware (stainless steel or hot-dip galvanized finishes) to resist salt spray degradation. Local suppliers such as Ylea Philippines, Dorma Philippines, and GEZE Southeast Asia are widely available and certified.
 
+
+<ArticleMedia id="media-hardware-fire-rating-chart" layout="single" type="image" status="placeholder"
+  alt="Reference chart showing fire-rating requirements for door hardware by occupancy type, door location, and fire-protection rating"
+  caption="Future chart: door hardware fire-rating requirements by occupancy and location"
+  suggestedAsset="Reference table with fire-rating requirements for door assemblies"
+  placementIntent="Provides quick reference for hardware selection in fire-rated assemblies" />
 ## How It's Tested
 
 **Exam Pattern 1: Grading Scenario.** A new office building has four entry doors in the main lobby that open 300+ times daily. Which ANSI/BHMA grade must be specified? Answer: Grade 1 (cycle requirements vary by device; for bored locks this is 1,000,000 cycles per A156.2).

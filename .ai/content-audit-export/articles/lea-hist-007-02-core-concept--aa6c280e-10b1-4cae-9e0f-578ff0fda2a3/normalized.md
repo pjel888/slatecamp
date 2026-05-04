@@ -60,6 +60,8 @@ Materials and proportion follow standardized modules. Columns and beams interloc
 
 [SLATECAMP_UI_BLOCK:ui_0010 component="Warn" status="preserved"]
 
+<ArticleMedia id="media-hist-007-02-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Diagram showing the five testable markers of Chinese architecture: dougong bracketing, axial N-S orientation, courtyard organization, modular bay system (jian), and layered/tiered roofs, with annotated examples from the Forbidden City." caption="Chinese Architecture — Five Key Markers" suggestedAsset="Style comparison illustration" placementIntent="Style comparison for architectural period" />
+
 ## Related Articles
 
 See also within Asian & Pacific Architecture: **lea-hist-007-01-core-concept**, **lea-hist-007-03-core-concept**, **lea-hist-007-04-core-concept**, **lea-hist-007-05-core-concept**.

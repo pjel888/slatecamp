@@ -1,33 +1,32 @@
 # Content Diff Report: lea-util-003-06-the-distribution-hierarchy
 
-Generated: 2026-05-04T00:06:11.154Z
+Generated: 2026-05-04T02:16:41.283Z
 Article ID: f481f8cd-bb99-45b9-9183-4db41848e23d
-Changed: true
-Safe to push locally: false
+Changed: false
+Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:52a902712bbf933d9a365d9d63bb3d442e6319679c0c461286a7df71602ae51b`
+- Original: `sha256:100c8453c6e4ed1d2c1d06dfafa4841382d9337541bde964b7d3611dd1c6e675`
 - Normalized: `sha256:63a528d016b3122f7262aa9e0c58291da2c4412af6f4dff2a3ca4e043a782393`
-- Candidate: `sha256:63a528d016b3122f7262aa9e0c58291da2c4412af6f4dff2a3ca4e043a782393`
+- Candidate: `sha256:100c8453c6e4ed1d2c1d06dfafa4841382d9337541bde964b7d3611dd1c6e675`
 
 ## Line summary
 
-- Changed lines: 319
+- Changed lines: 0
 - Inserted lines: 0
-- Deleted lines: 58
+- Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 15
-- UI blocks preserved: 0
-- UI blocks changed/missing: 15
-- Unresolved placeholders: 1
+- UI blocks preserved: 15
+- UI blocks changed/missing: 0
+- Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate contains unresolved UI block placeholders.
-- Candidate is missing 15 preserved UI block(s).
+- None
 
 ## Warnings
 

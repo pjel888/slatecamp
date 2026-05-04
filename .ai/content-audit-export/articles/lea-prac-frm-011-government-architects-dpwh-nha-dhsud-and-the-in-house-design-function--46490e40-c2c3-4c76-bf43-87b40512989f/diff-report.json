@@ -1,43 +1,38 @@
 {
   "article_id": "46490e40-c2c3-4c76-bf43-87b40512989f",
   "slug": "lea-prac-frm-011-government-architects-dpwh-nha-dhsud-and-the-in-house-design-function",
-  "generated_at": "2026-05-04T00:06:03.038Z",
-  "old_hash": "sha256:470a2f616b16203e9ecc95f9bd60d88eb95fd5e60208f460e7c6254870bfa12f",
-  "new_hash": "sha256:67d6de32a06dff5fa0f5e87ff733cf2aa7bff226f4918b23e33ffe2859649be9",
-  "original_hash": "sha256:470a2f616b16203e9ecc95f9bd60d88eb95fd5e60208f460e7c6254870bfa12f",
+  "generated_at": "2026-05-04T02:16:33.339Z",
+  "old_hash": "sha256:633b017f2c752d026a30c7aa651a83559a692ed1529cfc8f45187a5ab3ed9704",
+  "new_hash": "sha256:633b017f2c752d026a30c7aa651a83559a692ed1529cfc8f45187a5ab3ed9704",
+  "original_hash": "sha256:633b017f2c752d026a30c7aa651a83559a692ed1529cfc8f45187a5ab3ed9704",
   "normalized_hash": "sha256:67d6de32a06dff5fa0f5e87ff733cf2aa7bff226f4918b23e33ffe2859649be9",
-  "candidate_hash": "sha256:67d6de32a06dff5fa0f5e87ff733cf2aa7bff226f4918b23e33ffe2859649be9",
-  "changed": true,
-  "changed_line_count": 32,
-  "inserted_line_count": 1,
+  "candidate_hash": "sha256:633b017f2c752d026a30c7aa651a83559a692ed1529cfc8f45187a5ab3ed9704",
+  "changed": false,
+  "changed_line_count": 0,
+  "inserted_line_count": 0,
   "deleted_line_count": 0,
   "ui_blocks_original_count": 1,
-  "ui_blocks_candidate_count": 0,
-  "ui_blocks_changed_count": 1,
+  "ui_blocks_candidate_count": 1,
+  "ui_blocks_changed_count": 0,
   "ui_blocks_count": 1,
-  "unresolved_placeholders_count": 1,
-  "preserved_blocks_count": 0,
+  "unresolved_placeholders_count": 0,
+  "preserved_blocks_count": 1,
   "changed_text_summary": {
-    "changed": 32,
-    "inserted": 1,
+    "changed": 0,
+    "inserted": 0,
     "deleted": 0,
-    "original_line_count": 62,
+    "original_line_count": 63,
     "candidate_line_count": 63
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0003"
-    ],
-    "changed_count": 1
+    "missing_block_ids": [],
+    "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate contains unresolved UI block placeholders.",
-    "Candidate is missing 1 preserved UI block(s)."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 1 preserved UI block(s)."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

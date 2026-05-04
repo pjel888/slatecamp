@@ -1,8 +1,8 @@
 # Wheelchair Maneuvering and Parking Slots
 
-[SLATECAMP_UI_BLOCK:ArticleMedia name="ramp-profile-section" type="diagram" caption="Cross-section profile of an accessible ramp showing key dimensions: 1.2 m clear width, 1.8 m level landing at top and bottom, 1/20 preferred slope with 15 m landing interval, 1/15 max slope with 10.5 m max run and 700 mm max rise. Show intermediate landing (1.8 m) for runs exceeding 10.5 m. Add 100 mm raised curb edge protection callout."]
+<ArticleMedia id="media-ramp-profile-section" type="diagram" caption="Cross-section profile of an accessible ramp showing key dimensions: 1.2 m clear width, 1.8 m level landing at top and bottom, 1/20 preferred slope with 15 m landing interval, 1/15 max slope with 10.5 m max run and 700 mm max rise. Show intermediate landing (1.8 m) for runs exceeding 10.5 m. Add 100 mm raised curb edge protection callout." />
 
-[SLATECAMP_UI_BLOCK:ArticleMedia name="sidewalk-passing-diagram" type="diagram" caption="Plan view of sidewalk/walkway showing 1.5 m minimum width, 1.8 m width for two-wheelchair passing zone, and 1.8 m × 1.8 m rest/turn spaces every 12 m. Show the 3.5 m dead-end corridor turnabout rule. Include dropped sidewalk at crossing with 1.5 m depth base platform and 900 mm curb ramp at loading bays."]
+<ArticleMedia id="media-sidewalk-passing-diagram" type="diagram" caption="Plan view of sidewalk/walkway showing 1.5 m minimum width, 1.8 m width for two-wheelchair passing zone, and 1.8 m × 1.8 m rest/turn spaces every 12 m. Show the 3.5 m dead-end corridor turnabout rule. Include dropped sidewalk at crossing with 1.5 m depth base platform and 900 mm curb ramp at loading bays." />
 
 _(Based only on your attached BP 344 2024 IRR + PD 1096 IRR texts)_
 
@@ -171,11 +171,25 @@ If you like, next we can rebuild your **parking‑specific** crib (4.0‑1.8‑2
 
 ---
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="new"]
+<LawCallout code="bp344" section="Section 6 - Parking Slots">
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="new"]
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="new"]
+Per BP 344 2024 IRR Appendix A: accessible ramp minimum clear width = 1200 mm. Preferred slope = 1:20 (5.0%). Acceptable slope = 1:15 (6.67%) with max run 10,500 mm and max rise 700 mm. Maximum slope = 1:12 (8.33%). Landings must be ≥1800 mm in length. Edge protection required where ramp run exceeds 150 mm vertical rise.
+
+
+</LawCallout>
+
+<Warn >
+
+Many dimensions commonly cited for Philippine accessibility (4000 mm parking stall, 1800 mm access aisle, 1500 mm corridor) come from Appendix C of BP 344, which is NOT included in all IRR amendment batches. Verify which appendix is referenced in the exam question before applying dimensions. Appendix A (ramps) is consistently available.
+
+</Warn>
+
+<ExamTip >
+
+For exam problems: first determine whether the question references Appendix A (ramps — verified dimensions) or Appendix C (parking — verify availability). If the question gives specific slope/run data, use Appendix A formulas: Run = Rise × Slope Ratio. Example: 700 mm rise × 15 = 10,500 mm max run.
+
+</ExamTip>
 
 ---
 

@@ -12,6 +12,13 @@ Joint movement depends on slab size and temperature swing. A 100-foot-long concr
 
 Construction adhesives bond substrates without mechanical fasteners. Epoxy adhesives are two-part, high-strength, suitable for concrete-to-concrete and metal-to-concrete applications, with cure times of 24-48 hours. Polyurethane adhesives are moisture-curing, expanding slightly during cure to fill gaps, suitable for wood-to-wood and wood-to-metal applications. Silicone adhesives are flexible, used for movement-accommodating applications. Pressure-sensitive adhesives adhere immediately upon pressure application, used in tapes and membranes.
 
+
+<ArticleMedia id="media-adhesive-selection-chart" layout="single" type="image" status="placeholder"
+  alt="Comparison chart of adhesive systems: construction adhesive, epoxy, contact cement, PVA glue, polyurethane, silicone, and acrylic with bonding strength, setting time, and substrate compatibility"
+  caption="Future chart: adhesive system comparison — bonding strength, setting time, and substrate compatibility"
+  suggestedAsset="Adhesive selection matrix with application illustrations"
+  placementIntent="Provides reference for adhesive selection by bonding requirements" />
+
 ## Key Provisions
 
 | Property | Value | Standard | LEA Relevance |
@@ -32,6 +39,12 @@ Construction adhesives bond substrates without mechanical fasteners. Epoxy adhes
 
 The Philippines' tropical climate (85-95°F year-round, 80+ percent humidity during monsoon) extends sealant and adhesive cure times significantly compared to temperate regions. Acrylic sealants, sensitive to rain during cure, are difficult to use during the 6-month monsoon season (May-November) when construction typically slows. Polyurethane adhesives and sealants are preferred in the Philippines due to moisture-curing capability and shorter cure times than two-part epoxy. Water absorption in tropical concrete (due to high humidity and rain exposure) compromises adhesive performance if primer is omitted; thorough surface preparation is critical. Silicone sealants are expensive but justified for high-performance applications; many projects substitute inferior acrylic sealants, resulting in premature failure and water damage. UV exposure from intense tropical sun degrades acrylic and some polyurethane products faster than in temperate climates; color fade and adhesion loss occur within 5-7 years instead of 10-15 years. Thermal cycling in air-conditioned buildings (cool interior, hot exterior) creates stress on sealants at perimeter joints; polyurethane and silicone are superior choices. Many Philippine contractors lack understanding of joint movement requirements, resulting in undersized joints that fail under thermal expansion.
 
+
+<ArticleMedia id="media-adhesive-application-chart" layout="single" type="image" status="placeholder"
+  alt="Application matrix for adhesive systems showing recommended adhesives for bonding different materials: wood, metal, glass, concrete, plastic, and tile"
+  caption="Future chart: adhesive application matrix — recommended adhesive by substrate pair"
+  suggestedAsset="Material bonding matrix or reference chart"
+  placementIntent="Guides adhesive selection for different material combinations" />
 ## How It's Tested
 
 **Exam Pattern 1: Sealant Class Selection.** A concrete slab with 40-foot expansion joint spacing experiences a 60-degree Fahrenheit temperature swing. Using a thermal expansion coefficient of 0.004 in/in/°F, what is the required joint width, and what sealant class is appropriate? Answer: Joint width = (40 ft × 12 in/ft × 0.004 × 60°F) = 11.52 inches; minimum joint width = 2 × 5.76 = 11.52 inches. A silicone Class 50 sealant accommodating ±50 percent movement is appropriate.

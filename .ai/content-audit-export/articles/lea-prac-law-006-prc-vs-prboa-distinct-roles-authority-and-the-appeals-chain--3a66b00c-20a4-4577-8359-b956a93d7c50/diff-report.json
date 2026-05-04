@@ -1,46 +1,38 @@
 {
   "article_id": "3a66b00c-20a4-4577-8359-b956a93d7c50",
   "slug": "lea-prac-law-006-prc-vs-prboa-distinct-roles-authority-and-the-appeals-chain",
-  "generated_at": "2026-05-04T00:07:05.603Z",
-  "old_hash": "sha256:1a3fff46098df5840e23932ca6f2084f44ed2e77319859bd3febc7a1fc27ff79",
-  "new_hash": "sha256:efc861044f0872ce81dc38ae31a3ddba850b051c98a0ed4b900a8c9d29fc1edf",
-  "original_hash": "sha256:1a3fff46098df5840e23932ca6f2084f44ed2e77319859bd3febc7a1fc27ff79",
+  "generated_at": "2026-05-04T02:17:55.320Z",
+  "old_hash": "sha256:7ced5c7f741faead313b538c5f59f716bb555953cd597bc7836f3dc8bb1733cf",
+  "new_hash": "sha256:7ced5c7f741faead313b538c5f59f716bb555953cd597bc7836f3dc8bb1733cf",
+  "original_hash": "sha256:7ced5c7f741faead313b538c5f59f716bb555953cd597bc7836f3dc8bb1733cf",
   "normalized_hash": "sha256:efc861044f0872ce81dc38ae31a3ddba850b051c98a0ed4b900a8c9d29fc1edf",
-  "candidate_hash": "sha256:efc861044f0872ce81dc38ae31a3ddba850b051c98a0ed4b900a8c9d29fc1edf",
-  "changed": true,
-  "changed_line_count": 149,
-  "inserted_line_count": 10,
+  "candidate_hash": "sha256:7ced5c7f741faead313b538c5f59f716bb555953cd597bc7836f3dc8bb1733cf",
+  "changed": false,
+  "changed_line_count": 0,
+  "inserted_line_count": 0,
   "deleted_line_count": 0,
   "ui_blocks_original_count": 4,
-  "ui_blocks_candidate_count": 0,
-  "ui_blocks_changed_count": 4,
+  "ui_blocks_candidate_count": 4,
+  "ui_blocks_changed_count": 0,
   "ui_blocks_count": 4,
-  "unresolved_placeholders_count": 1,
-  "preserved_blocks_count": 0,
+  "unresolved_placeholders_count": 0,
+  "preserved_blocks_count": 4,
   "changed_text_summary": {
-    "changed": 149,
-    "inserted": 10,
+    "changed": 0,
+    "inserted": 0,
     "deleted": 0,
-    "original_line_count": 195,
+    "original_line_count": 205,
     "candidate_line_count": 205
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0004",
-      "ui_0005",
-      "ui_0007",
-      "ui_0006"
-    ],
-    "changed_count": 4
+    "missing_block_ids": [],
+    "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate contains unresolved UI block placeholders.",
-    "Candidate is missing 4 preserved UI block(s)."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 4 preserved UI block(s)."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

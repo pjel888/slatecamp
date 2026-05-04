@@ -65,6 +65,8 @@ The critical distinction: Art Nouveau says "buildings are organisms"; Art Deco s
 
 **Streamline/Streamlining**: An Art Deco emphasis on smooth, flowing lines that suggest speed and machine efficiency; applied to static buildings to convey modernity.
 
+<ArticleMedia id="media-hist-008-02-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparative chart of Art Nouveau (flowing organic curves, whiplash lines, natural motifs, Horta, Guimard, Gaudi) versus Art Deco (geometric patterns, stepped forms, exotic materials, streamlined shapes) with visual examples of each." caption="Art Nouveau vs. Art Deco — Visual Comparison" suggestedAsset="Style comparison illustration" placementIntent="Style comparison for architectural period" />
+
 ## Related Articles
 
 See also within Modern & Contemporary Architecture: **lea-hist-008-01-core-concept**, **lea-hist-008-03a-core-concept**, **lea-hist-008-03b-core-concept**, **lea-hist-008-03c-core-concept**.

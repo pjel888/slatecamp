@@ -1,46 +1,38 @@
 {
   "article_id": "6882bbf1-7941-4289-a6b1-89a19e4c3923",
   "slug": "overview-architectural-design",
-  "generated_at": "2026-05-04T00:05:56.905Z",
-  "old_hash": "sha256:a6652108e45defe1051a0b6c70cefc035ab0c9c843932ef25db1d1dd42b07335",
-  "new_hash": "sha256:5c457b79983169871f158a93b5b107368ef4777bb1267ab5d057fda722789d00",
-  "original_hash": "sha256:a6652108e45defe1051a0b6c70cefc035ab0c9c843932ef25db1d1dd42b07335",
+  "generated_at": "2026-05-04T02:16:27.805Z",
+  "old_hash": "sha256:6a6e5272f60f0c77fd32a110f24b7b3bec2405553a9a9d9d30c1541296a2bd25",
+  "new_hash": "sha256:6a6e5272f60f0c77fd32a110f24b7b3bec2405553a9a9d9d30c1541296a2bd25",
+  "original_hash": "sha256:6a6e5272f60f0c77fd32a110f24b7b3bec2405553a9a9d9d30c1541296a2bd25",
   "normalized_hash": "sha256:5c457b79983169871f158a93b5b107368ef4777bb1267ab5d057fda722789d00",
-  "candidate_hash": "sha256:5c457b79983169871f158a93b5b107368ef4777bb1267ab5d057fda722789d00",
-  "changed": true,
-  "changed_line_count": 82,
-  "inserted_line_count": 11,
+  "candidate_hash": "sha256:6a6e5272f60f0c77fd32a110f24b7b3bec2405553a9a9d9d30c1541296a2bd25",
+  "changed": false,
+  "changed_line_count": 0,
+  "inserted_line_count": 0,
   "deleted_line_count": 0,
   "ui_blocks_original_count": 4,
-  "ui_blocks_candidate_count": 0,
-  "ui_blocks_changed_count": 4,
+  "ui_blocks_candidate_count": 4,
+  "ui_blocks_changed_count": 0,
   "ui_blocks_count": 4,
-  "unresolved_placeholders_count": 1,
-  "preserved_blocks_count": 0,
+  "unresolved_placeholders_count": 0,
+  "preserved_blocks_count": 4,
   "changed_text_summary": {
-    "changed": 82,
-    "inserted": 11,
+    "changed": 0,
+    "inserted": 0,
     "deleted": 0,
-    "original_line_count": 78,
+    "original_line_count": 89,
     "candidate_line_count": 89
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0001",
-      "ui_0003",
-      "ui_0004",
-      "ui_0006"
-    ],
-    "changed_count": 4
+    "missing_block_ids": [],
+    "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate contains unresolved UI block placeholders.",
-    "Candidate is missing 4 preserved UI block(s)."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 4 preserved UI block(s)."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

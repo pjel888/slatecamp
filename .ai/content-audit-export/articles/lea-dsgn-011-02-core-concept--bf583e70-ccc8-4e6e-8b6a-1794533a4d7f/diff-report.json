@@ -1,44 +1,38 @@
 {
   "article_id": "bf583e70-ccc8-4e6e-8b6a-1794533a4d7f",
   "slug": "lea-dsgn-011-02-core-concept",
-  "generated_at": "2026-05-04T00:06:44.749Z",
-  "old_hash": "sha256:822896a0e737890a59aeda251b330fb9fe316ae39c2adcefd426f9c2f0cf69b8",
-  "new_hash": "sha256:7adb2aa412937241365b4aac024e3c31db3bffae6532c2d0bbe22cbbd13bd24e",
-  "original_hash": "sha256:822896a0e737890a59aeda251b330fb9fe316ae39c2adcefd426f9c2f0cf69b8",
+  "generated_at": "2026-05-04T02:17:28.430Z",
+  "old_hash": "sha256:2be881fdcef964a643436015a305cfb520bd5b9ad8d37679a79933dae6d7e6ae",
+  "new_hash": "sha256:2be881fdcef964a643436015a305cfb520bd5b9ad8d37679a79933dae6d7e6ae",
+  "original_hash": "sha256:2be881fdcef964a643436015a305cfb520bd5b9ad8d37679a79933dae6d7e6ae",
   "normalized_hash": "sha256:7adb2aa412937241365b4aac024e3c31db3bffae6532c2d0bbe22cbbd13bd24e",
-  "candidate_hash": "sha256:7adb2aa412937241365b4aac024e3c31db3bffae6532c2d0bbe22cbbd13bd24e",
-  "changed": true,
-  "changed_line_count": 29,
+  "candidate_hash": "sha256:2be881fdcef964a643436015a305cfb520bd5b9ad8d37679a79933dae6d7e6ae",
+  "changed": false,
+  "changed_line_count": 0,
   "inserted_line_count": 0,
-  "deleted_line_count": 2,
+  "deleted_line_count": 0,
   "ui_blocks_original_count": 2,
-  "ui_blocks_candidate_count": 0,
-  "ui_blocks_changed_count": 2,
+  "ui_blocks_candidate_count": 2,
+  "ui_blocks_changed_count": 0,
   "ui_blocks_count": 2,
-  "unresolved_placeholders_count": 1,
-  "preserved_blocks_count": 0,
+  "unresolved_placeholders_count": 0,
+  "preserved_blocks_count": 2,
   "changed_text_summary": {
-    "changed": 29,
+    "changed": 0,
     "inserted": 0,
-    "deleted": 2,
+    "deleted": 0,
     "original_line_count": 74,
-    "candidate_line_count": 72
+    "candidate_line_count": 74
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0001",
-      "ui_0002"
-    ],
-    "changed_count": 2
+    "missing_block_ids": [],
+    "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate contains unresolved UI block placeholders.",
-    "Candidate is missing 2 preserved UI block(s)."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 2 preserved UI block(s)."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

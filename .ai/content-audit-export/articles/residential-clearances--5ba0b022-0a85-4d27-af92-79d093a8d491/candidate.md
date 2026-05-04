@@ -69,7 +69,13 @@ The residential elements in this topic fall into three categories:
 | **Anthropometric Basis** (the "why" behind the number) | Why 85–90 cm counter? Why 2.40 m ceiling? | Filipino vs. US population data | Understand population-specific reasoning |
 
 🛑 **Stop & Think #1:** If an exam question asks "What does PD 1096 require for kitchen work triangle dimensions?" — what is the correct answer?
-[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+<LawCallout code="pd1096" section="Rule VII - Residential Clearances">
+
+
+Answer: PD 1096 has no kitchen work triangle requirement. This is a design principle, not a code provision. Zero percent of the work triangle is in the building code.
+
+
+</LawCallout>
 
 ---
 
@@ -86,7 +92,13 @@ These are the numbers you must know cold. Every one has a PD 1096 section citati
 - The code **does not distinguish** between a single bedroom, a master bedroom, or any other bedroom type. The minimum is 6.00 sqm for all.
 - The 2×3 m layout = 6 sqm exactly — the code minimum made spatial. Any smaller and it is non-compliant.
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
+<LawCallout code="pd1096" section="Rule VII - Room Clearances">
+
+
+⚠️ Common Error on Exams: "Master bedroom = 12 sqm minimum." This is false. No such provision exists in PD 1096. 12 sqm is a design/market convention, not a code requirement.
+
+
+</LawCallout>
 
 #### Kitchen Minimum Size — Section 806, Revised IRR
 
@@ -172,7 +184,11 @@ Per the National Kitchen and Bath Association (NKBA) Design Guidelines:
 | Work aisle width (single cook) | ≥ 42 inches (1.07 m) |
 | Work aisle width (multiple cooks) | ≥ 48 inches (1.22 m) |
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
+<Note>
+
+In practice, "13–26 feet total" is frequently referenced (13 ft = three legs × 4 ft minimum each = 12 ft, and some sources add 1 ft, yielding 13 ft as a practical lower bound). The NKBA itself does not formally specify a minimum perimeter, only a maximum of 26 ft. Leg constraints implicitly create a practical minimum.
+
+</Note>
 
 **Converting to metric for Philippine study:**
 - Maximum total: **7.93 m**
@@ -186,7 +202,13 @@ Per the National Kitchen and Bath Association (NKBA) Design Guidelines:
 - In Filipino practice, the triangle serves as a **goal, not a regulation**.
 
 🛑 **Stop & Think #4:** An exam question states: "The maximum allowable kitchen work triangle perimeter per NKBA is ___." What is the answer?
-[SLATECAMP_UI_BLOCK:ui_0004 component="LawCallout" status="preserved"]
+<LawCallout code="pd1096" section="Rule VII - Corridor Clearances">
+
+
+26 feet / 7.93 m. If the question says "per PD 1096" — the answer is "Not applicable; PD 1096 has no kitchen triangle provision."
+
+
+</LawCallout>
 
 ---
 

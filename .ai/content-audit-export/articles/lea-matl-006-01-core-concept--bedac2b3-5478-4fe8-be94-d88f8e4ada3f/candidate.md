@@ -50,15 +50,15 @@ Philippine construction heavily relies on GI corrugated roofing in residential a
 
 **Pattern 4: Material Comparison** — "Compare the structural implications of upgrading from Gauge 26 to Gauge 24 GI roofing on rafter spacing. What is the stress reduction factor?" (Answer: Approximately 33% increase in bending capacity; tests understanding of material strength relationships.)
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+<Tip>Memorize gauge-to-thickness pairs: Gauge 26 = 0.46 mm, Gauge 24 = 0.61 mm, Gauge 22 = 0.76 mm. Remember ASTM A653 G90 = Z275 metric equivleant. In tropical zones, default to G90 unless project budget forces G60.</Tip>
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Confusing gauge numbers with thickness: assuming Gauge 30 is thicker than Gauge 26." correction="Lower gauge numbers indicate thicker material. Gauge 26 (0.46 mm) is standard; Gauge 30 (0.31 mm) is thinner and not used for primary roofing in Philippines." />
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Selecting G60 coating for coastal salt-air exposure without verification of project lifecycle costs." correction="G90 (275 g/m²) is mandatory for tropical maritime climates. G60 premature rust negates any first-cost savings over 20+ year service life." />
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
+<WikiMistakeList mistakes={["Using minimum slope of 1/4:12 for non-draining flat roofs without sump pumps", "Ignoring sheet overlap length (150 mm horizontal, 200 mm vertical) in slope calculations", "Applying asphalt shingle specs to tropical zones without 3-5 year lifecycle planning"]} />
 
 ## Related Articles
 

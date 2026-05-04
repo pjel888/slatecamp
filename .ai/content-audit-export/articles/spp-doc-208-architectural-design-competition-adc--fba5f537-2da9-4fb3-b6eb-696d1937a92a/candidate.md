@@ -31,11 +31,29 @@ SPP 208 defines five principal parties and three key instruments that structure 
 
 ### 2.1 The Five Principal Parties
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="ComparisonTable" status="preserved"]
+<ComparisonTable>
+
+| Party | Definition and Role |
+|---|---|
+| **Owner** | The person or organization that undertakes or promotes an ADC with the primary objective of obtaining excellence in design for a project or development concept; issues the invitation to Architects and **finances the ADC** |
+| **Jury** | The people appointed by the Owner to **assess the entries**; composed of Jurors (majority are Registered Licensed Architects/RLAs), assisted by a lay Juror who represents and voices the intention of the Owner; nominated by the Owner and **approved by the IAPOA** |
+| **Professional Advisor** | An Architect nominated by the Owner and **approved by the IAPOA** to **organize the ADC on behalf of the Owner**; draws up the Conditions and supervises the competition's administrative conduct |
+| **Technical Advisors** | Specialist personnel who may be **consulted by Jurors** during the ADC to permit them to obtain all necessary relevant technical information; they do not vote |
+| **Competition Secretariat** | The body formed by the Owner and **approved by the Professional Advisor** to assist the Professional Advisor and Jury in the **administrative conduct** of the ADC |
+
+</ComparisonTable>
 
 ### 2.2 The Three Key Instruments
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="ComparisonTable" status="preserved"]
+<ComparisonTable>
+
+| Instrument | Definition |
+|---|---|
+| **Conditions** | The full competition package: program, instructions on submission, site plans, entry forms, official envelopes and labels; **drawn up by the Professional Advisor** |
+| **SPP on ADC** | The Philippine Standard of Professional Practice on Architectural Design Competitions — the governing document itself (SPP 208) |
+| **IAPOA ADC Committee** | Appointed by the IAPOA National President to **oversee all ADCs** referred to the IAPOA; the oversight body that approves conditions, timetables, and jury composition |
+
+</ComparisonTable>
 
 ***
 
@@ -45,17 +63,42 @@ SPP 208 provides a multi-dimensional classification system for ADCs — by **pur
 
 ### 3.1 Classification by Purpose
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="ComparisonTable" status="preserved"]
+<ComparisonTable>
+
+| Type | Description |
+|---|---|
+| **Project ADC** | For **actual projects proposed for implementation**; the winning design will be built; first prize winner is entitled to the commission |
+| **Ideas Competition** | A **design and planning exercise to elucidate a problem**; not necessarily for an immediate project; aims to explore design possibilities or generate innovative concepts |
+
+</ComparisonTable>
 
 ### 3.2 Classification by Stage (for Project ADCs)
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="ComparisonTable" status="preserved"]
+<ComparisonTable>
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="Callout" status="preserved"]
+| Stage Type | Description |
+|---|---|
+| **Single-Stage** | All Competitors submit complete design proposals in one submission; Jury selects winners from the full field |
+| **Two-Stage** | First stage narrows the field to shortlisted Competitors; selected Competitors then develop more detailed proposals for the Second Stage; **honoraria must be paid** to all Second Stage participants |
+
+</ComparisonTable>
+
+<Callout variant="note">
+
+*Important rule*: A competition that has received IAPOA approval as a single-stage competition **may NOT proceed to a second stage** except with **IAPOA approval** of the Conditions and arrangements for payment of honoraria to the Competitors involved, over and above the prize money originally provided.
+
+</Callout>
 
 ### 3.3 Classification by Openness (for Project ADCs)
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="ComparisonTable" status="preserved"]
+<ComparisonTable>
+
+| Openness Type | Description |
+|---|---|
+| **Open** | Any qualified registered architect may participate; maximizes the range of design entries |
+| **Limited by Invitation** | Only Architects specifically invited by the Owner may participate; used when the Owner prefers a pre-selected pool of known practitioners |
+
+</ComparisonTable>
 
 ### 3.4 Classification by Complexity
 
@@ -92,7 +135,11 @@ The Conditions are the governing document of each individual ADC — drawn up by
 
 ### 5.1 Anonymity — The Cardinal Rule
 
-[SLATECAMP_UI_BLOCK:ui_0007 component="Callout" status="preserved"]
+<Callout variant="note">
+
+*"It is essential that the ANONYMITY of competitors should be maintained until the final judgment of the competition. In the interest of the competition system, rigorous measures should be taken to ensure that all parties involved adhere to this principle."*
+
+</Callout>
 
 Anonymity is the bedrock protection that ensures Jury decisions are based on **design merit alone**, free from favoritism, personal relationships, or institutional bias.
 
@@ -152,7 +199,19 @@ The Jury is the **decision-making body** of the ADC — its awards are final.
 
 ### 7.1 Composition Rules
 
-[SLATECAMP_UI_BLOCK:ui_0008 component="ComparisonTable" status="preserved"]
+<ComparisonTable>
+
+| Rule | Provision |
+|---|---|
+| **Size** | Smallest reasonable number; must be an **odd number**, not to exceed **seven (7)** |
+| **Architect majority** | At least **4 out of 7** (majority) must be **Registered Licensed Architects (RLAs)** |
+| **IAPOA representative** | At least **one Architect-Juror must represent the IAPOA** |
+| **Owner representation** | **Not more than one (1)** representative of the Owner may be included |
+| **Appointment** | Jurors are **appointed by the Owner and approved by the IAPOA** |
+| **Timing** | Jury must be set up **before the official announcement** of the competition |
+| **Names in Conditions** | Names of Jury members and reserve members must be **stated in the Conditions** |
+
+</ComparisonTable>
 
 ### 7.2 Conduct Rules
 
@@ -202,11 +261,22 @@ These exclusions apply to the **Professional Advisor** and **Competition Secreta
 
 ### 9.2 Honoraria Rules
 
-[SLATECAMP_UI_BLOCK:ui_0009 component="ComparisonTable" status="preserved"]
+<ComparisonTable>
+
+| Situation | Honorarium Rule |
+|---|---|
+| **Limited ADC by Invitation** | Each participant shall receive an **honorarium in addition to the prizes** awarded |
+| **Two-Stage Competition (2nd Stage)** | A **reasonable honorarium shall be paid to each Competitor** selected to take part in the Second Stage — to reimburse additional work; stated in Conditions; in addition to prizes |
+
+</ComparisonTable>
 
 ### 9.3 The First Prize–Commission Rule
 
-[SLATECAMP_UI_BLOCK:ui_0010 component="Callout" status="preserved"]
+<Callout variant="note">
+
+*"In Project ADCs, the award of first prize to a plan/design places the Owner under an obligation to entrust the Author of the plan/design with the commission for the Project."*
+
+</Callout>
 
 This is the most commercially significant rule in SPP 208: winning a Project ADC **automatically entitles the winner to the full design commission** under SPP 202. The Owner cannot take the winning design and hire a different architect to implement it.
 
@@ -214,7 +284,11 @@ This is the most commercially significant rule in SPP 208: winning a Project ADC
 
 ### 9.4 The 12-Month Commission Rule
 
-[SLATECAMP_UI_BLOCK:ui_0011 component="Callout" status="preserved"]
+<Callout variant="note">
+
+*"In Project ADCs, provisions shall be made in the ADC Conditions for the first prize winner to receive compensation of a further sum equal to the amount of the first prize if no contract is signed within twelve (12) months of the announcement of the Jury's award."*
+
+</Callout>
 
 If the Owner fails to commission the winning Architect within 12 months, the winning Architect is entitled to **double the first prize amount**. Importantly: even after this additional compensation, **the Owner still does not acquire the right to carry out the project except with the collaboration of the Author**.
 
@@ -226,7 +300,11 @@ SPP 208 establishes a **strong, unwaivable copyright framework** for all competi
 
 ### 10.1 Competitor's Copyright Retained
 
-[SLATECAMP_UI_BLOCK:ui_0012 component="Callout" status="preserved"]
+<Callout variant="note">
+
+*"The Author of any plan/design shall retain the copyright of his work; no alterations may be made without his/her written consent."*
+
+</Callout>
 
 This applies to **all entries** — winners and non-winners alike. The submission of an entry to an ADC does not transfer copyright to the Owner.
 
@@ -236,7 +314,11 @@ The design awarded first prize **can only be used by the Owner** upon his commis
 
 ### 10.3 No Piecemeal Use of Other Entries
 
-[SLATECAMP_UI_BLOCK:ui_0013 component="Callout" status="preserved"]
+<Callout variant="note">
+
+*"No other plan/design may be used wholly or in part by the Owner except by agreement with the Author concerned."*
+
+</Callout>
 
 The Owner **cannot pick out portions of non-winning entries** and combine them into another design — this is explicitly prohibited. This provision is reinforced by:
 
@@ -267,7 +349,11 @@ The names of Competitors selected to proceed to the Second Stage **shall be made
 
 ## 12. Insurance
 
-[SLATECAMP_UI_BLOCK:ui_0014 component="Callout" status="preserved"]
+<Callout variant="note">
+
+*"The Owner shall insure the Competitors' plans/designs from the time when he assumes responsibility for them and for the duration of his responsibility."*
+
+</Callout>
 
 The **insurance obligation rests on the Owner** — not on the Competitor. Once the Owner receives submitted designs, he is responsible for their protection against loss, damage, or theft. The **amount of insurance shall be stated in the Conditions**.
 
@@ -288,9 +374,22 @@ The mandatory exhibition of all entries — including disqualified ones — serv
 
 ## 14. Return of Projects
 
-[SLATECAMP_UI_BLOCK:ui_0015 component="Callout" status="preserved"]
+<Callout variant="note">
 
-[SLATECAMP_UI_BLOCK:ui_0016 component="ComparisonTable" status="preserved"]
+*"All drawings and plans, other than those which have received prizes or have been purchased and are retained by the Owner, shall be destroyed at the end of the public exhibition, unless provisions are made to the contrary in the Conditions for the ADC."*
+
+</Callout>
+
+<ComparisonTable>
+
+| Entry Category | Post-Exhibition Disposition |
+|---|---|
+| **Prize-winning designs** | Retained by the Owner |
+| **Purchased designs** | Retained by the Owner |
+| **All other designs** | **Destroyed** at end of public exhibition, unless Conditions state otherwise |
+| **Models** | Returned to the Author at the **expense of the Owner** within **one month** of the close of the public exhibition |
+
+</ComparisonTable>
 
 ***
 
@@ -300,13 +399,21 @@ SPP 208 mandates a structured ADR-first dispute resolution framework grounded in
 
 ### 15.1 ADR Mandatory in Conditions
 
-[SLATECAMP_UI_BLOCK:ui_0017 component="Callout" status="preserved"]
+<Callout variant="note">
+
+*"Since no regulations, however well drawn up, can preclude the possibility of dispute, provisions for conciliation, mediation and arbitration — i.e. ADR modes under R.A. No. 9285 — must be included in the ADC Conditions and must precede any form of litigation."*
+
+</Callout>
 
 ADR is not optional — it is a mandatory clause that must be included in every ADC's Conditions.
 
 ### 15.2 Jury as Sole Arbiters During the Competition
 
-[SLATECAMP_UI_BLOCK:ui_0018 component="Callout" status="preserved"]
+<Callout variant="note">
+
+*"The Jury members are the sole arbiters at all stages, up to the final prize-giving."*
+
+</Callout>
 
 During the adjudication process itself, the Jury's authority is absolute — no external party (not even the IAPOA) can override the Jury's decisions during the competition.
 
@@ -322,7 +429,17 @@ The expenses resulting from any conciliation, mediation, or arbitration procedur
 
 ## 16. ADC Classification Matrix
 
-[SLATECAMP_UI_BLOCK:ui_0019 component="ComparisonTable" status="preserved"]
+<ComparisonTable>
+
+| Dimension | Types |
+|---|---|
+| **By Purpose** | Project ADC; Ideas Competition |
+| **By Stage** | Single-Stage; Two-Stage |
+| **By Openness** | Open; Limited by Invitation |
+| **By Complexity** | Per SPP 202 Project Groups 1–10 |
+| **Possible Combinations** | Open Single-Stage Project ADC; Limited Two-Stage Project ADC; Open Ideas Competition; etc. |
+
+</ComparisonTable>
 
 ***
 
@@ -330,7 +447,25 @@ The expenses resulting from any conciliation, mediation, or arbitration procedur
 
 SPP 208 places extensive mandatory obligations on the Owner:
 
-[SLATECAMP_UI_BLOCK:ui_0020 component="ComparisonTable" status="preserved"]
+<ComparisonTable>
+
+| Obligation | Rule |
+|---|---|
+| Obtain IAPOA approval before announcement | Section 3.1 |
+| Appoint and pay Professional Advisor approved by IAPOA | Section 5.1 |
+| Appoint Jury and pay all Jury fees, travel, and subsistence | Sections 6.2, 6.13 |
+| Ensure identical Conditions for all Competitors | Section 4.2 |
+| Insure all submitted designs | Section 11.1 |
+| Pay prizes within 1 month of announcement | Section 8.3 |
+| Pay honoraria to Limited ADC invitees | Section 8.4 |
+| Pay honoraria to 2nd Stage Competitors | Section 8.5 |
+| Commission the first-prize winner for the project | Section 8.7 |
+| Pay additional compensation if no contract signed within 12 months | Section 8.8 |
+| Exhibit all designs publicly for at least 2 weeks, free of charge | Sections 12.1, 12.2 |
+| Return models at Owner's expense within 1 month after exhibition | Section 13.1 |
+| Include ADR clause in Conditions | Section 14.1 |
+
+</ComparisonTable>
 
 ***
 

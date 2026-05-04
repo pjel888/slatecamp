@@ -58,15 +58,17 @@ _Pattern 3 — Cross-Division Coordination:_ The exam presents a specification c
 
 _Pattern 4 — Philippine Adaptation:_ The exam presents a CSI standard specification and asks what modifications are necessary for Philippine tropical climate. Example: Paint specification for interior walls should add requirements for mold/mildew resistance (tropical humidity), UV stability (high light levels), and washability (tropical pollution). The 3-part format provides the structure; Philippine practice requires customization.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+<Tip>
+Memory aid for CSI divisions: Divisions 00-01 are administrative. Divisions 02-09 are the "core construction divisions" most tested on the LEA. Divisions 10-49 cover building systems (interior construction, mechanical, electrical, plumbing, fire protection). Master the core divisions 03-09 first. Always remember: 03=Concrete, 04=Masonry, 05=Metals, 06=Wood, 07=Thermal & Moisture, 08=Openings, 09=Finishes.
+</Tip>
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Confusing 'Division 08: Openings' (doors, windows, hardware) with 'Division 09: Finishes' (paint, flooring, ceilings). Students put window specifications in Division 09." correction="Division 08 is specifically doors, windows, glazing, and hardware. Division 09 is interior finishes like paint, flooring, and ceiling systems. Windows belong in Division 08, even if they involve finish work." />
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Placing waterproofing specifications in Division 03 (Concrete) instead of Division 07 (Thermal & Moisture Protection). Students think 'waterproofing concrete means Division 03'." correction="Waterproofing membranes, sealants, and moisture control systems belong in Division 07, even if they're applied over concrete or masonry. Division 03 specifies the concrete itself; Division 07 specifies the protection layer." />
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
+<WikiMistakeList mistakes={["Mixing 3-part format: placing product specifications (Part 2 content) in Part 1 General or mixing execution procedures (Part 3) with product descriptions (Part 2)", "Failing to reference coordination between divisions (e.g., Part 1 of Division 03 must reference Division 07 waterproofing for timing and surface requirements)", "Assuming CSI structure is mandatory in Philippine projects (DPWH does not require CSI; understanding CSI is for professional literacy)", "Not customizing CSI specifications for tropical climate (waterproofing, mold resistance, termite protection are Philippine additions)", "Omitting Part 1 General in proprietary or quick specifications (Part 1 is essential for quality standards, testing protocols, and submittals)"]} />
 
 ## Related Articles
 

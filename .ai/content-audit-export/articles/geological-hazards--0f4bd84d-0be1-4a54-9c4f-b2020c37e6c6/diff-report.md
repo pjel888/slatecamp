@@ -1,33 +1,32 @@
 # Content Diff Report: geological-hazards
 
-Generated: 2026-05-04T00:07:06.888Z
+Generated: 2026-05-04T02:17:57.287Z
 Article ID: 0f4bd84d-0be1-4a54-9c4f-b2020c37e6c6
-Changed: true
-Safe to push locally: false
+Changed: false
+Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:62eb1947269931e07c475ac33fe48ecabe46758a2b1526c17b198a4f8aba5cdf`
+- Original: `sha256:8c1f3b19e12b1e4d5d076a54d7057afae74f6879a191b716f904857e7690ccd5`
 - Normalized: `sha256:f398ad3c74ee06486773c6ea35618fe11f51a06edfb046fafe0fa095441c9571`
-- Candidate: `sha256:f398ad3c74ee06486773c6ea35618fe11f51a06edfb046fafe0fa095441c9571`
+- Candidate: `sha256:8c1f3b19e12b1e4d5d076a54d7057afae74f6879a191b716f904857e7690ccd5`
 
 ## Line summary
 
-- Changed lines: 150
+- Changed lines: 0
 - Inserted lines: 0
-- Deleted lines: 19
+- Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 4
-- UI blocks preserved: 0
-- UI blocks changed/missing: 4
-- Unresolved placeholders: 1
+- UI blocks preserved: 4
+- UI blocks changed/missing: 0
+- Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate contains unresolved UI block placeholders.
-- Candidate is missing 4 preserved UI block(s).
+- None
 
 ## Warnings
 

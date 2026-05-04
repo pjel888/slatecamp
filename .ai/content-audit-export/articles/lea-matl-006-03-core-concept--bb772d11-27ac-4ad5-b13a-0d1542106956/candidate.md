@@ -52,14 +52,14 @@ Philippine construction extensively uses torch-applied bituminous waterproofing 
 
 **Pattern 4: Substrate Preparation** — "Concrete substrate shows efflorescence and salt deposits from tropical weather. What is the required preparation before liquid waterproofing application?" (Answer: Wire brush or chemical cleaning per ASTM D4259 to remove salts and mineral deposits; verify &lt;85% RH moisture content with calcium chloride test if using acrylic.)
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+<Tip>Memorize the distinction: Positive-side = applied on water source surface (exterior below-grade, roof deck). Negative-side = applied on interior (low moisture only). Tropical climates always demand positive-side for hydrostatic. Polyurethane cures in damp conditions; acrylic requires dry substrate.</Tip>
 Extracted summary:
 - Props: (none)
 - Text: Memorize the distinction: Positive-side = applied on water source surface (exterior below-grade, roof deck). Negative-side = applied on interior (low moisture only). Tropical climates always demand positive-side for hydrostatic. Polyurethane cures in damp conditions; acrylic requires dry substrate.
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Specifying negative-side waterproofing (interior coatings) for below-grade basement walls in tropical monsoon regions, expecting interior drainage to manage 200+ mm/hr rainfall." correction="Tropical rainfall intensity exceeds interior drainage capacity. Positive-side (exterior) waterproofing is mandatory for hydrostatic protection. Negative-side is only for non-hydrostatic damp." />
 Extracted summary:
 - Props: mistake="Specifying negative-side waterproofing (interior coatings) for below-grade basement walls in tropical monsoon regions, expecting interior drainage to manage 200+ mm/hr rainfall.", correction="Tropical rainfall intensity exceeds interior drainage capacity. Positive-side (exterior) waterproofing is mandatory for hydrostatic protection. Negative-side is only for non-hydrostatic damp."
 - Text: (none detected)

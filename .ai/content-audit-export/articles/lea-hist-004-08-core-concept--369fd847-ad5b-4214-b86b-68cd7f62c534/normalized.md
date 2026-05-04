@@ -4,6 +4,10 @@
 
 Identify the testable markers of Philippine Islamic architecture — wooden construction, vernacular mosque forms, langgal, torogan — and explain how indigenous materials and Southeast Asian traditions shaped the Islamic architecture of Mindanao and Sulu.
 ## Core Concept
+
+
+<ArticleMedia id="media-hist-004-08-islamic-comparison" layout="single" type="image" status="placeholder" alt="Comparative section and plan diagram showing how Islamic mosque design adapts to climate: Left — Middle Eastern hypostyle mosque (e.g., Great Mosque of Damascus) with flat roof, enclosed prayer hall, open sahn courtyard, thick stone walls for thermal mass. Right — Southeast Asian mosque (e.g., Philippine langgal) with steeply pitched multi-tiered roof, elevated wooden floor on posts, open-sided prayer hall for cross-ventilation, and surrounding veranda. Climate adaptation annotations: heat storage vs. convection cooling, enclosed vs. open, stone vs. timber." caption="Islamic Mosque Typologies — Middle Eastern vs. Southeast Asian Comparison" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
 **Islamic architecture in the Philippines** represents the adaptation of Islamic design principles to Southeast Asian climate, materials, and indigenous traditions. Islam arrived in the Philippine archipelago through merchants and missionaries from Malaysia and Indonesia during the 14th–15th centuries. The primary Islamic communities developed in **Mindanao** (especially the Maguindanao and Lanao regions) and the **Sulu Archipelago** (Tawi-Tawi, Basilan, Sulu Jolo).
 
 
@@ -79,6 +83,8 @@ Contemporary Philippine Islamic architecture shows increased use of modern mater
 **Sultan Haji Hassanal Bolkiah Mosque (Grand Mosque of Cotabato)** — Contemporary large mosque in Cotabato City; construction 2008–2012, inaugurated July 8, 2012; represents modernization of Philippine Islamic architecture; uses concrete and modern materials while maintaining Islamic spatial traditions; named after Brunei's Sultan Hassanal Bolkiah.
 
 [SLATECAMP_UI_BLOCK:ui_0013 component="Warn" status="preserved"]
+
+<ArticleMedia id="media-hist-004-08-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Diagram showing the contrast between monumental Islamic architecture (Middle Eastern stone mosques, Ottoman domes, Mughal marble tombs) and Philippine Islamic wooden vernacular (torogan, langgal, steep-pitched roofs, okir carving), highlighting material and climatic adaptation." caption="Islamic Vernacular — Middle Eastern vs. Philippine Comparison" suggestedAsset="Style comparison illustration" placementIntent="Style comparison for architectural period" />
 
 ## Related Articles
 

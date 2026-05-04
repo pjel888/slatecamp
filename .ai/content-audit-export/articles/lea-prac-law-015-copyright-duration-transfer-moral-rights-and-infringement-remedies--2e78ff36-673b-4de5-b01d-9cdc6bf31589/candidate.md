@@ -58,11 +58,11 @@ In addition to economic copyright enforcement, architects may pursue remedies fo
 
 Violations of the right of integrity—such as radical demolition of distinctive design features, unauthorized major alterations that destroy design intent, or vandalism that damages aesthetic integrity—may trigger legal action. Remedies include injunctions to prevent further distortion, damages for harm to the architect's reputation, and in some cases, mandatory correction or restoration of the work's integrity. The existence and strength of moral rights claims depend on the specific facts and the degree to which the work has been altered or misattributed.
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="preserved"]
+<Warn />
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
+<ExamTip />
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
+<Tip />
 
 ---
 

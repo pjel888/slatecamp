@@ -1,28 +1,19 @@
 {
-  "attempted_at": "2026-05-04T00:05:56.174Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:05:57.090Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "original.md hash does not match article metadata export hash.",
-    "Remote Supabase content differs from export baseline; refusing stale push.",
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "Remote Supabase content differs from export baseline; refusing stale push."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "50450ba8-a843-4399-9bd9-9b6c854ee65a",
   "slug": "lea-prac-svc-017-comprehensive-architectural-services-the-full-spectrum-commission",
-  "preparation_actions": [
-    "auto_generated_diff"
-  ],
-  "remote_hash_before": "sha256:93c9ce2d213c201320a57ca3a6d2fdc09154195c70abbec8580977dd91108069",
-  "original_hash": "sha256:b17a98d136bac87117948b0e81ce536204c4622bbc1b2557e52dff974aba65d0",
-  "candidate_hash": "sha256:7ec5857c39e67fd4c4c9b42cd478b90067ea0c4d65030bebb67c24715a1f6802",
+  "preparation_actions": [],
+  "remote_hash_before": "sha256:10d074adb187e68df2bede4a6ca8da4c24ce5f5cb8f8e5d2c3bfd2bebdd38c0d",
+  "original_hash": "sha256:7ec5857c39e67fd4c4c9b42cd478b90067ea0c4d65030bebb67c24715a1f6802",
+  "candidate_hash": "sha256:10d074adb187e68df2bede4a6ca8da4c24ce5f5cb8f8e5d2c3bfd2bebdd38c0d",
   "stale_check_passed": false,
-  "remote_updated_at_before": "2026-05-03T13:49:50.795747+00:00"
+  "remote_updated_at_before": "2026-05-04T01:59:15.098978+00:00"
 }

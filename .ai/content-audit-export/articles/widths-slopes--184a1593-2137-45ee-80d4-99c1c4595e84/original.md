@@ -97,7 +97,6 @@ HANDRAILS (ramp)            → 700 & 900 mm high, both sides
 
 Use this page to answer any LEA item asking for **minimum widths** or **slopes/lengths** of ramps and primary pedestrian routes based solely on your attached PD 1096 + BP 344 2024 IRR texts.[file:1][file:2]
 
-
 ---
 
 <LawCallout code="bp344" section="Section 7 - Widths and Slopes">
@@ -126,3 +125,5 @@ Handrails are required when the ramp rise exceeds 150 mm (about 6 inches). Edge 
 
 **Stairs Handrails Guardrails**, **Conflict Matrix Stairs Guards Elevators**, **Bp 344 Ramp Slope Tiers**, **Site Exterior Circulation**
 
+
+<!-- no-media-needed: existing content format is sufficient without visual media -->

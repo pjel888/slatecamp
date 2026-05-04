@@ -1,26 +1,21 @@
 {
-  "attempted_at": "2026-05-04T00:05:59.550Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:16:30.143Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "candidate.md matches original.md; refusing no-op apply."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "9bc92dcd-8cce-4970-9111-13e21a72fb68",
   "slug": "lea-prac-eth-003-core-concept",
   "preparation_actions": [
     "auto_generated_diff"
   ],
-  "remote_hash_before": "sha256:ec541e508c42dd99f08e51c046ed42fe1a146d9d8919a982299a547b7757edec",
-  "original_hash": "sha256:ec541e508c42dd99f08e51c046ed42fe1a146d9d8919a982299a547b7757edec",
-  "candidate_hash": "sha256:1bf18fa1132fb386c342cf4e49b4664e3798abe6780acd21847bc114dd393bed",
+  "remote_hash_before": "sha256:a8a20b32208d48769670c86c965fd810f504a3623e2539e0ede6c20f2bc03ad9",
+  "original_hash": "sha256:a8a20b32208d48769670c86c965fd810f504a3623e2539e0ede6c20f2bc03ad9",
+  "candidate_hash": "sha256:a8a20b32208d48769670c86c965fd810f504a3623e2539e0ede6c20f2bc03ad9",
   "stale_check_passed": true,
-  "remote_updated_at_before": "2026-05-03T13:50:00.283943+00:00"
+  "remote_updated_at_before": "2026-05-04T01:59:23.482315+00:00"
 }

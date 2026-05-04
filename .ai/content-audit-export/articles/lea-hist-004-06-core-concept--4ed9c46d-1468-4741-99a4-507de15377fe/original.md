@@ -4,7 +4,15 @@
 
 Identify the Ottoman dome system — central dome, four half-domes, pendentives, cascading buttressing — and explain how Sinan achieved the iconic Ottoman silhouette exemplified by the Selimiye and Süleymaniye Mosques.
 ## Core Concept
+
+
+<ArticleMedia id="media-hist-004-06-ottoman-evolution" layout="single" type="image" status="placeholder" alt="Comparative plan and section diagram tracing Ottoman mosque evolution: (1) Early Ottoman Bursa-type — multi-domed rectangular prayer hall with separate portico; (2) Üç Şerefeli Mosque (Edirne, 1438–1447) — central dome with four smaller domes, precursor to centralized plan; (3) Süleymaniye Mosque (Istanbul, 1550–1558, Sinan) — central dome flanked by four half-domes with cascading semi-domes; (4) Selimiye Mosque (Edirne, 1568–1575, Sinan) — single 31.5m dome on eight piers, apogee of Ottoman dome system. Each phase annotated with dome diameter, support system, and structural innovations." caption="Ottoman Mosque Evolution — Bursa to Edirne to Istanbul Typology" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
 **Ottoman architecture** (15th–19th centuries) represents Islam's most successful synthesis of Byzantine structural logic with Islamic spatial needs. The Ottomans conquered Constantinople (1453) and inherited Hagia Sophia—a monumental Byzantine dome surrounded by half-domes. Rather than abandon this model, Ottoman architects embraced it and developed it further. The result is the **centralized domed mosque**, a distinctly Ottoman contribution to Islamic architecture.
+
+
+<ArticleMedia id="media-hist-004-06-core-concept" layout="single" type="image" status="placeholder" alt="Interior of Selimiye Mosque (Edirne, 1568–1575, Mimar Sinan), showing the central dome (31.5 m diameter) supported by eight massive piers, creating an uninterrupted prayer space under the single dome." caption="Selimiye Mosque — Sinan's Ottoman Dome System" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
 
 The founder of Ottoman architectural theory is **Sinan** (c. 1490–1588), chief architect under sultans Süleyman and Selim II. Sinan designed over 300 buildings and established design principles that dominated Ottoman practice for centuries. His innovation was the **interior unified dome space**: a massive central dome that appears to float on light, supported by four half-domes, with smaller domes filling the corners. This creates a sensation of infinite space—entirely different from the confined courtyard intimacy of Andalusian palaces or the gridded columns of hypostyle mosques.
 
@@ -30,6 +38,10 @@ Ottoman architecture also includes new building types: the **külliye** (complex
 <Note>The **külliye** is not merely decoration around a mosque—it is an integral Ottoman contribution to urban and social architecture. Külliye complexes include hospitals, schools (madrasas), public baths, and soup kitchens alongside the mosque, demonstrating Islamic social welfare as architectural practice. The Süleymaniye külliye is the canonical example. This building type must be recognized and valued on the LEA.</Note>
 
 By the 18th century, Ottoman architecture absorbed European Baroque elements (floral decoration, color, curved lines). This period, called the **Tulip Period** (1718–1730), represents European influence creeping into Islamic tradition. However, the fundamental dome-and-half-dome structural system remained unchanged.
+
+
+<ArticleMedia id="media-hist-004-06-core-concept" layout="single" type="image" status="placeholder" alt="Section diagram showing the Ottoman dome cascade: a central dome flanked by four half-domes, supported by pendentives and cascading semi-domes, with buttressing exterior massing creating the iconic Ottoman silhouette." caption="Ottoman Cascade Dome System — Hagia Sophia to Sinan" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
 
 ## Key Facts and Testable Items
 
@@ -85,6 +97,8 @@ By the 18th century, Ottoman architecture absorbed European Baroque elements (fl
 **Tulip Period** — Ottoman period (1718–1730 CE); marked by Baroque influence and decoration; represents European stylistic integration into Ottoman tradition.
 
 <Warn>Do not confuse Ottoman domes with Byzantine domes. Ottoman domes rest on *cascading half-domes and pendentives*; Byzantine domes (like Hagia Sophia) are supported by *wall mass*. The Ottoman refinement created the illusion of a floating, weightless dome through light and geometric clarity. Hagia Sophia served as *inspiration*, not model—Sinan invented an Ottoman system, not merely copied Byzantine precedent. This distinction is directly tested on the LEA.</Warn>
+
+<ArticleMedia id="media-hist-004-06-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparative diagram of the Ottoman cascade dome system (central dome, four half-domes, pendentives, cascading buttresses) across Sinan's masterworks: Şehzade Mosque (1548), Süleymaniye Mosque (1557), and Selimiye Mosque (1575).\" caption=\"Ottoman Dome System — Sinan's Structural Evolution\" suggestedAsset=\"Timeline diagram\" placementIntent=\"Timeline diagram for architectural period\" />
 
 ## Related Articles
 

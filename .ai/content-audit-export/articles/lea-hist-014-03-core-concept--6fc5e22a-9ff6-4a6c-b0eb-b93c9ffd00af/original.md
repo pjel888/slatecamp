@@ -7,6 +7,10 @@ Identify Beaux-Arts architecture as a compositional methodology (axis, symmetry,
 
 The **École des Beaux-Arts** in Paris was the world's most prestigious architecture school. From the 1860s onward, ambitious American architects studied there: Richard Morris Hunt, Charles McKim, Stanford White, Daniel Burnham. They returned to America with rigorous training in classical composition, academic drawing, and monumental design. Beaux-Arts is not a style—it is a methodology. Students learned proportional systems, axial planning, symmetry, and hierarchical ordering. Buildings embody these principles visually.
 
+
+<ArticleMedia id="media-hist-014-03-core-concept" layout="single" type="image" status="placeholder" alt="View of the New York Public Library (Stephen A. Schwarzman Building, 1897–1911, Carrère and Hastings), showing the symmetrical facade with Corinthian columns, monumental staircase, and the Beaux-Arts compositional methodology of axis and hierarchy." caption="New York Public Library — Beaux-Arts Civic Monument" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
+
 <Tip>Memory aid: **"Beaux-Arts = Axis + Symmetry + Monuments"** — it is a compositional methodology (not a style), emphasizing ordered, processional, hierarchical spaces.</Tip>
 
 American Beaux-Arts differs from École training. French Beaux-Arts is purely classical. American Beaux-Arts is eclectic: it combines classical composition with Romanesque Revival, neoclassical detail, Renaissance palace precedent, and Gothic verticality. The principle is unity through proportion and symmetry, not stylistic purity. American architects asked: How do we elevate American institutions to European grandeur while expressing American democratic ideals? The answer was monumental civic buildings with classical order.
@@ -18,6 +22,10 @@ American Beaux-Arts differs from École training. French Beaux-Arts is purely cl
 <Warn>Beaux-Arts buildings are ornate, but the ornament is not decorative excess—every element participates in the architectural composition. A sculpture on a library identifies building type and enhances the grand stair approach. This is integrated fine arts, not "just ornament."</Warn>
 
 Beaux-Arts planning emphasizes **axial symmetry**: a central axis organizes all elements. Approach from the grand stair, ascend to the main hall, the space opens before you. This is processional experience—your movement through space is choreographed. Beaux-Arts ornament is integrated, not applied: sculpture, murals, metalwork, and carved stone participate in the total composition. Materials are honest (granite, marble, bronze) and visible.
+
+
+<ArticleMedia id="media-hist-014-03-core-concept" layout="single" type="image" status="placeholder" alt="Diagram illustrating Beaux-Arts design principles: axial symmetry, hierarchical progression of spaces, the parti (central organizing idea), enfilade of rooms, and the classical vocabulary (orders, pediments, rustication)." caption="École des Beaux-Arts — Compositional Methodology" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
 
 ## Key Facts and Testable Items
 
@@ -60,6 +68,8 @@ Questions present buildings combining multiple historical references (Gothic tow
 **Monumentality** — Large scale and formal composition expressing institutional importance and democratic grandeur; primary goal of American Beaux-Arts civic architecture.
 
 **Rotunda** — Circular or polygonal domed space; focal point of Beaux-Arts buildings; creates sense of expansion and arrival.
+
+<ArticleMedia id="media-hist-014-03-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparison of Beaux-Arts methodology across key American works: New York Public Library (Carrère & Hastings, axis and symmetry), Grand Central Terminal (Reed & Stem, monumental urban logic), and US Supreme Court (Cass Gilbert, classical vocabulary).\" caption=\"Beaux-Arts — Key American Works\" suggestedAsset=\"Style comparison illustration\" placementIntent=\"Style comparison for architectural period\" />
 
 ## Related Articles
 

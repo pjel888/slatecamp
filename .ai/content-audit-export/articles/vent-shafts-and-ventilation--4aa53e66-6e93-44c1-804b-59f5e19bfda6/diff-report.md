@@ -1,33 +1,32 @@
 # Content Diff Report: vent-shafts-and-ventilation
 
-Generated: 2026-05-04T00:07:06.106Z
+Generated: 2026-05-04T02:17:55.841Z
 Article ID: 4aa53e66-6e93-44c1-804b-59f5e19bfda6
-Changed: true
-Safe to push locally: false
+Changed: false
+Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:35d976137ed7d898f924dbd846d7771f9183e1570f59f2bbdbe64083089b253e`
+- Original: `sha256:659ee75ca9ac357ff34f0e633a96d53d6f3b2a0f5157b998f295d2c8e1ec2096`
 - Normalized: `sha256:a8bc1ab61e3d49c34d3dc508ceb2e70c691366342b873b529c2e1085cfcfd11c`
-- Candidate: `sha256:a8bc1ab61e3d49c34d3dc508ceb2e70c691366342b873b529c2e1085cfcfd11c`
+- Candidate: `sha256:659ee75ca9ac357ff34f0e633a96d53d6f3b2a0f5157b998f295d2c8e1ec2096`
 
 ## Line summary
 
-- Changed lines: 64
+- Changed lines: 0
 - Inserted lines: 0
-- Deleted lines: 10
+- Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 3
-- UI blocks preserved: 0
-- UI blocks changed/missing: 3
-- Unresolved placeholders: 1
+- UI blocks preserved: 3
+- UI blocks changed/missing: 0
+- Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate contains unresolved UI block placeholders.
-- Candidate is missing 3 preserved UI block(s).
+- None
 
 ## Warnings
 

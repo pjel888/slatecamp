@@ -74,7 +74,7 @@ If a poorly written specification allows the contractor to supply inferior mater
 
 
 
-<ArticleMedia type="image" caption="Technical Specifications — CSI MasterFormat Structure and Specification Types" description="Hierarchical diagram of CSI MasterFormat 50-division structure relevant to Philippine practice. Three specification types compared: Performance Specs (what building must achieve), Prescriptive Specs (exact materials/products), Proprietary Specs (brand-specific). Side panel shows architect's coordination with QS/cost estimator and specification integration with construction documents." />
+<ArticleMedia type="image" caption="Technical Specifications — CSI MasterFormat Structure and Specification Types" alt="Hierarchical diagram of CSI MasterFormat 50-division structure relevant to Philippine practice. Three specification types compared: Performance Specs (what building must achieve), Prescriptive Specs (exact materials/products), Proprietary Specs (brand-specific). Side panel shows architect's coordination with QS/cost estimator and specification integration with construction documents." />
 ## Related Articles
 
 - [Sole Proprietorship](lea-prac-frm-001)

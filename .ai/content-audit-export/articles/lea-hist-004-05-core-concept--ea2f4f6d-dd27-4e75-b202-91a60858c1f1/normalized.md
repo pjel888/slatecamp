@@ -73,6 +73,8 @@ Andalusian architecture represents Islam at its most refined and most fragile. T
 
 [SLATECAMP_UI_BLOCK:ui_0012 component="Warn" status="preserved"]
 
+<ArticleMedia id="media-hist-004-05-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparison of Andalusian Islamic features across the Great Mosque of Cordoba (horseshoe arches, double-tiered arcades, red-and-white voussoirs) and the Alhambra (muqarnas vaulting, zellij tilework, courtyard water features)." caption="Andalusian Islamic Architecture — Cordoba and Alhambra Comparison" suggestedAsset="Style comparison illustration" placementIntent="Style comparison for architectural period" />
+
 ## Related Articles
 
 See also within Islamic Architecture: **lea-hist-004-01-core-concept**, **lea-hist-004-02-core-concept**, **lea-hist-004-06-core-concept**, **lea-hist-004-07-core-concept**.

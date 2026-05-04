@@ -10,6 +10,7 @@ By the end of this article, you will be able to:
 Prestressed concrete applies permanent compression to concrete before or during service loads to reduce or eliminate tensile stresses that would otherwise cause cracking. The two methods are fundamentally different in application timing: pre-tensioning applies compression before concrete is cast, while post-tensioning applies compression after concrete has hardened. Understanding this distinction and the resulting structural behaviors is essential for recognizing when each method is appropriate.
 
 ## Core Concept
+<ArticleMedia id="media-lea-strc-006-04-core-concept" a type="image" caption="Prestressing — Pretensioning vs Post-Tensioning Comparison" description="Side-by-side comparison of pretensioning and post-tensioning: (1) Pretensioning — strands tensioned before concrete pour, bond transfer after curing, shown in precast bed; (2) Post-tensioning — ducts placed in concrete, strands tensioned after curing, anchored at ends. Stress distribution comparison: full section compression vs eccentric compression. Tendon profile diagrams for simply supported and continuous beams." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 **Prestressing** is the application of deliberately induced internal compression to a concrete member to counteract tensile stresses that would develop from external loads. Instead of relying entirely on reinforcing steel to resist tension (as in ordinary reinforced concrete), prestressed concrete uses high-strength steel tendons—either wires or strands—to apply sustained compression. This reduces or eliminates cracks, improves serviceability, and increases the effective load-carrying capacity of the member.
 
@@ -107,7 +108,6 @@ In the Philippines, precast prestressed members (pre-tensioned I-beams, double-T
 4. **Residual Prestress Verification:** After all curing and service, or after removal of temporary loads (in bridges), the residual compression is verified by ultrasonic methods or other non-destructive testing to confirm that design prestress levels are maintained.
 
 <Tip>The defining distinction: Pre-tensioning = tendons tensioned BEFORE concrete placed. Post-tensioning = tendons tensioned AFTER concrete hardened. This timing difference determines the structural system, production method, and field application. Memorize this clearly to avoid the common reversal error (ERR-STRC-016).</Tip>
-
 
 ## Related Articles
 

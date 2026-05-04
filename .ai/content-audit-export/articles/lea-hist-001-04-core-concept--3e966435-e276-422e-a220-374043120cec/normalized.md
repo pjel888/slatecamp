@@ -91,6 +91,8 @@ West Asiatic cultures (Hittites, Canaanites, Levantine peoples) built temples an
 
 **Clerestory window:** High window providing light to the interior of a hypostyle hall; used strategically to create sacred atmosphere while controlling visibility.
 
+<ArticleMedia id="media-hist-001-04-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Timeline diagram tracing the evolution of Egyptian monumental architecture from mastaba (c. 3100 BCE) through Djoser's stepped pyramid at Saqqara (c. 2670 BCE) to the true pyramids at Giza (c. 2560 BCE) and New Kingdom temples at Karnak and Luxor (c. 1550–1070 BCE)." caption="Egyptian Monumental Architecture — Evolution Timeline" suggestedAsset="Timeline diagram" placementIntent="Timeline diagram for architectural period" />
+
 ## Related Articles
 
 See also within Ancient Architecture: **lea-hist-001-01-core-concept**, **lea-hist-001-02-core-concept**, **lea-hist-001-03-core-concept**, **lea-hist-001-05-core-concept**.

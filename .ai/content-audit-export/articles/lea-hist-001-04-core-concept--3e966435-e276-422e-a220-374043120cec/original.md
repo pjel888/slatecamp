@@ -5,6 +5,10 @@
 Trace the evolution of Egyptian monumental architecture from mastaba to stepped pyramid to true pyramid, explain the structural and symbolic significance of each form, and identify key pyramids (Giza, Saqqara, Dahshur) by builder, date, and innovation.
 ## Core Concept
 
+
+<ArticleMedia id="media-hist-001-04-core-concept" layout="single" type="image" status="placeholder" alt="The Great Pyramid at Giza (c. 2560 BCE), showing the smooth-sided true pyramid form with original casing stones at the base, flanked by the Pyramid of Khafre and Pyramid of Menkaure." caption="Great Pyramid of Khufu — Giza Plateau" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
+
 ### Egyptian Architecture
 
 Egyptian architecture emerged from the Nile Valley's particular resources and values. The Nile provided **limestone** (from quarries at Tura and Aswan), **granite** (from Aswan), and **sandstone** (from Nubia)—all durable stone suited to monumental construction. Egypt's society centered on the pharaoh as divine intermediary between the gods and the people. This theology drove architecture: temples honored gods; tombs ensured the pharaoh's eternal existence.
@@ -40,6 +44,10 @@ Egyptian temple design relied on the **post-and-lintel system** (vertical column
 West Asiatic cultures (Hittites, Canaanites, Levantine peoples) built temples and fortifications adapted to mountainous terrain and defensive needs. **Hittite temples** (c. 1650–1200 BCE) were often small, inward-facing structures with thick walls and limited windows—practical in a rocky landscape and protective against heat and attack. The **Temple of Yazılıkaya** near Boğazköy (c. 1250 BCE) carved into a natural rock outcrop, with sculpted reliefs of gods and the king. The integration of natural stone and carved decoration was characteristic of Hittite practice.
 
 **Fortress architecture** was central to West Asiatic building. The **walls of Jericho** (continuously occupied from c. 9000 BCE) show evolution from simple barriers to sophisticated defensive systems with towers and gates. Walls were built of stone or mud brick, often with a sloped base (glacis) to prevent scaling and to shed water.
+
+
+<ArticleMedia id="media-hist-001-04-core-concept" layout="single" type="image" status="placeholder" alt="Plan diagram of the Great Hypostyle Hall at Karnak (Seti I and Ramesses II, c. 1290–1224 BCE) showing the 16-row column grid, clerestory windows, and progression from pylon to sanctuary." caption="Egyptian Temple Plan — Karnak Hypostyle Hall" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
 
 ## Key Facts and Testable Items
 
@@ -90,6 +98,8 @@ Egyptian architecture tests your understanding of monumental stone construction,
 **Cartouche:** An oval or rectangular frame enclosing a pharaoh's name, commonly carved in relief on temple walls and monuments.
 
 **Clerestory window:** High window providing light to the interior of a hypostyle hall; used strategically to create sacred atmosphere while controlling visibility.
+
+<ArticleMedia id=\"media-hist-001-04-core-concept-timeline\" layout=\"single\" type=\"image\" status=\"placeholder\" alt=\"Timeline diagram tracing the evolution of Egyptian monumental architecture from mastaba (c. 3100 BCE) through Djoser's stepped pyramid at Saqqara (c. 2670 BCE) to the true pyramids at Giza (c. 2560 BCE) and New Kingdom temples at Karnak and Luxor (c. 1550–1070 BCE).\" caption=\"Egyptian Monumental Architecture — Evolution Timeline\" suggestedAsset=\"Timeline diagram\" placementIntent=\"Timeline diagram for architectural period\" />
 
 ## Related Articles
 

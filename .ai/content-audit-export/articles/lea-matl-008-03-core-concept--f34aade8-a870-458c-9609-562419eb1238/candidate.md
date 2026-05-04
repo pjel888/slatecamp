@@ -56,17 +56,17 @@ Philippine construction standards adopt ASTM fastener classifications, though ma
 
 **Exam Pattern 4: Fastener Material Specification.** A coastal resort in the Philippines specifies carbon steel bolts for exterior connections. What is the risk? Answer: Carbon steel corrodes rapidly in salt spray; stainless steel (duplex or super-duplex) or hot-dip galvanized fasteners are mandatory for coastal applications.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+<Tip>Memory aid: "Penny weight guides nail size (16d = 3.5 in common, 2.5 in finishing). A307 = 60k, A325 = 120k, A490 = 150k (bolt tensile grades). Wood-to-wood pull-out ≈ 25-50 lbf/in (nails) or 300-500 lbf/in (lags)."</Tip>
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Assuming all nail sizes sclea linearly with penny weight (e.g., 20d is 4 inches because 16d is 3.5 inches)." correction="Penny weight is non-linear and historically based on nail weight. Use ASTM F1667 reference tables; 20d common is 4 inches, but 10d is 3 inches, not 2.5 inches." />
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Specifying carbon steel fasteners for a typhoon-exposed building, assuming corrosion is only an aesthetic concern." correction="Corrosion reduces fastener cross-sectional area and pull-out strength, leading to structural failure during wind or seismic events. Use stainless steel or hot-dip galvanized fasteners in coastal environments." />
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Using wood screws instead of lag screws to attach a heavy timber beam to a concrete foundation, assuming screw type has no structural impact." correction="Wood screws in concrete provide minimal pull-out strength and may strip out. Lag screws (or wedge anchors) are designed for timber-to-concrete and provide 300-500 lbf per inch of embedment." />
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="WikiMistakeList" status="preserved"]
+<WikiMistakeList mistakes={["Confusing ASTM A325 (120 ksi structural) with A307 (60 ksi general-purpose); using the wrong grade leads to undersized bolts", "Calculating pull-out strength without considering embedment depth (the depth the fastener is driven into the material)", "Omitting neoprene washers on roofing nails, allowing water infiltration and fastener corrosion"]} />
 
 ## Related Articles
 

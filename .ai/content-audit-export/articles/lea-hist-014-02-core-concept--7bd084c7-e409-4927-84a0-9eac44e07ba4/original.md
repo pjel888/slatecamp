@@ -7,6 +7,10 @@ Identify the four-part structural system of the skyscraper — steel frame carri
 
 The modern skyscraper did not originate in New York or Europe. It emerged in Chicago in the 1880s through a convergence of economic necessity, structural innovation, and architectural ambition. Chicago had burned in 1871; the city rebuilt quickly with new technology. Real estate was expensive; building upward was the only solution. Iron and steel frames could carry weight; curtain walls (thin exterior layers supported by frame) could enclose tall buildings. Electric elevators made upper floors accessible. These technologies converged to make the skyscraper economically viable and structurally possible.
 
+
+<ArticleMedia id="media-hist-014-02-core-concept" layout="single" type="image" status="placeholder" alt="View of the Home Insurance Building (Chicago, 1884–1885, William Le Baron Jenney, demolished 1931), showing the first metal skeleton-frame construction with a curtain wall of masonry and glass — the prototype for all subsequent skyscrapers." caption="Home Insurance Building — First Skyscraper" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
+
 <Tip>Memory aid: **"Frame carries load; curtain wall hangs; elevator rises; piers express height"** — the four-part skyscraper system that Chicago perfected in the 1880s.</Tip>
 
 **William Le Baron Jenney** (1832–1907) designed the **Home Insurance Building** (Chicago, 1885)—the first building with a complete iron frame skeleton. It was 10 stories, modest by later standards, but revolutionary in principle: the exterior walls no longer bore weight. The frame carried all loads. This concept defined the skyscraper. Load-bearing walls had been the basis of all architecture for millennia. The iron frame liberated architects from this constraint.
@@ -18,6 +22,10 @@ The modern skyscraper did not originate in New York or Europe. It emerged in Chi
 <Warn>Critical distinction: Sullivan did NOT reject ornament—he rejected ornament that disguises function. His buildings are often richly ornamented, but every detail aligns with vertical piers or horizontal spandrels. The **Guaranty Building** is covered in terracotta ornament, yet it expresses vertical structure. Do not confuse "honest function" with "no ornament."</Warn>
 
 The **Chicago School** synthesized innovation: frame structure from Jenney, vertical expression from Sullivan, honest material revelation from both. Architects like **Daniel Burnham**, **John Root**, and **Dankmar Adler** (Sullivan's partner) refined the formula. By 1893, Chicago hosted the World's Columbian Exposition, celebrating American technological and architectural achievement. The skyscraper became America's contribution to world architecture—functional, tall, direct, without European historical reference.
+
+
+<ArticleMedia id="media-hist-014-02-core-concept" layout="single" type="image" status="placeholder" alt="Section diagram of a skyscraper showing the four-part system: (1) steel frame carries all loads, (2) curtain wall hangs on the frame, (3) elevators enable vertical circulation, (4) expressed piers articulate height." caption="Skyscraper Structural System — Steel Frame, Curtain Wall, Elevator" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
 
 ## Key Facts and Testable Items
 
@@ -60,6 +68,8 @@ Questions ask what "form follows function" means in skyscraper design. You expla
 **Masonry Curtain Wall** — Thin outer layer of brick or stone supported by frame; provides weather protection and finish; allows rapid construction.
 
 **Electric Elevator** — Mechanical system making upper floors accessible; prerequisite for skyscraper viability; enabled occupation of 15+ story buildings.
+
+<ArticleMedia id="media-hist-014-02-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Timeline of skyscraper evolution (1885–1930s) from the Home Insurance Building (Jenney, 1885, first steel frame) through the Woolworth Building (Gothic tower, 1913) and Chrysler Building (Art Deco spire, 1930), showing the four-part structural system.\" caption=\"Skyscraper — Evolution Timeline\" suggestedAsset=\"Timeline diagram\" placementIntent=\"Timeline diagram for architectural period\" />
 
 ## Related Articles
 

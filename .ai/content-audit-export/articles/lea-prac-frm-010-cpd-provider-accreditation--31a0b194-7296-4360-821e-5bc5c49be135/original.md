@@ -9,8 +9,6 @@ After studying this article, you should be able to:
 - Explain how an architect verifies that a CPD program is accredited.
 - Distinguish CPD provider accreditation from program accreditation.
 
-
-
 ### Accreditation Authority and Process
 
 The Board of Architecture accredits CPD providers including entities, agencies, organizations, and institutions delivering seminars, lectures, and continuing professional education modules for architects. The Integrated Accredited Professional Organization of Architects is automatically accredited as a CPD provider by the Board, requiring no separate application. Other providers must apply for accreditation and meet prescribed quality standards established by the Board in consultation with the professional organization.
@@ -59,3 +57,8 @@ Other professional organizations may seek accreditation as CPD providers, but mu
 - [RA 9266 Legal Framework](lea-prac-law-001)
 - [Government Procurement](lea-prac-frm-012)
 - [Environmental Laws](lea-prac-frm-017)
+
+<!-- no-media-needed: professional practice article, text/tables/UI blocks are optimal format -->
+
+
+<ArticleMedia id="media-prac-frm-010-provider-process" layout="single" type="image" status="placeholder" alt="Process flowchart showing the CPD provider accreditation lifecycle: Start → Submit accreditation application to PRBoA → Quality evaluation (instructor qualifications, curriculum design, facilities, assessment) → Initial accreditation issued (3 years) → Deliver CPD programs → Participants earn credits → Re-accreditation evaluation → Renewal or denial. Decision diamonds: Does provider meet minimum standards? Is curriculum aligned with professional tracks? Are instructors qualified? Side panel shows required documentation: Articles of Incorporation, instructor CVs, course syllabi, sample materials, quality assurance procedures. Timeline bar at bottom showing 3-year validity cycle." caption="CPD Provider Accreditation Process — Application, Evaluation, and Renewal Flowchart" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />

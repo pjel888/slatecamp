@@ -12,12 +12,16 @@ Apply the fire protection and storage requirements for X-ray film (nitrate-based
 
 ## 1. Hook / Opening Scenario
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="LawCallout" status="preserved"]
+<LawCallout code="pd1096" section="Rule IV - X-Ray Protection">
+National Building Code of the Philippines (PD 1096) — Primary legislation governing building design and construction.
+</LawCallout>
 Extracted summary:
 - Props: (none)
 - Text: National Building Code of the Philippines (PD 1096) — Primary legislation gov...
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+<LawCallout code="pd1096" section="Rule IV - Hazardous Storage">
+National Building Code of the Philippines (PD 1096) — Primary legislation governing building design and construction.
+</LawCallout>
 Extracted summary:
 - Props: (none)
 - Text: National Building Code of the Philippines (PD 1096) — Primary legislation gov...
@@ -215,7 +219,7 @@ NFPA 40 is the direct American analog to Rule XIV, Section 1401. The 2019 editio
 
 ### 5.2 IFC / IBC (International Fire Code / International Building Code)
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="preserved"]
+<Warn>Don't memorize every code section number — memorize the *rule*. The LEA tests application of code standards, not section number recall, except for major, frequently tested sections (e.g., Rule VII for occupancy, Rule VIII for light/ventilation).</Warn>
 Extracted summary:
 
 \
@@ -329,7 +333,7 @@ Compared to the NFPA 40 standard for cellulose nitrate film storage, which of th
 <Note>
 **LEA Pattern:** Code questions provide scenarios with dimensions/quantities....
 </Note>
-[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
+<ExamTip>**LEA Pattern:** Code questions often provide a scenario with specific dimensions or quantities. Identify whether the scenario complies with the code. Pay attention to units (meters vs. millimeters) and aggregate vs. individual limits.</ExamTip>
 Extracted summary:
 - Props: (none)
 - Text: **LEA Pattern:** Code questions provide scenarios with dimensions/quantities....

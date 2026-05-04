@@ -1,45 +1,38 @@
 {
   "article_id": "91294dec-6b87-4601-b9c1-a5b303447da4",
   "slug": "mastery-building-materials",
-  "generated_at": "2026-05-04T00:07:11.384Z",
-  "old_hash": "sha256:da5303b18e59d31f7cb6363365cfa0319f396916c3b448019183c70aee6b7128",
-  "new_hash": "sha256:35520689dab364c2efbeda5127d2bd88eff107cc7044098b9cc775b98d459166",
-  "original_hash": "sha256:da5303b18e59d31f7cb6363365cfa0319f396916c3b448019183c70aee6b7128",
+  "generated_at": "2026-05-04T02:18:02.897Z",
+  "old_hash": "sha256:f82fc1bb6d775b1f325a6099ba3984c6d53d9daab2ae91206b8ac68830161c05",
+  "new_hash": "sha256:f82fc1bb6d775b1f325a6099ba3984c6d53d9daab2ae91206b8ac68830161c05",
+  "original_hash": "sha256:f82fc1bb6d775b1f325a6099ba3984c6d53d9daab2ae91206b8ac68830161c05",
   "normalized_hash": "sha256:35520689dab364c2efbeda5127d2bd88eff107cc7044098b9cc775b98d459166",
-  "candidate_hash": "sha256:35520689dab364c2efbeda5127d2bd88eff107cc7044098b9cc775b98d459166",
-  "changed": true,
-  "changed_line_count": 84,
-  "inserted_line_count": 2,
+  "candidate_hash": "sha256:f82fc1bb6d775b1f325a6099ba3984c6d53d9daab2ae91206b8ac68830161c05",
+  "changed": false,
+  "changed_line_count": 0,
+  "inserted_line_count": 0,
   "deleted_line_count": 0,
   "ui_blocks_original_count": 3,
-  "ui_blocks_candidate_count": 0,
-  "ui_blocks_changed_count": 3,
+  "ui_blocks_candidate_count": 3,
+  "ui_blocks_changed_count": 0,
   "ui_blocks_count": 3,
-  "unresolved_placeholders_count": 1,
-  "preserved_blocks_count": 0,
+  "unresolved_placeholders_count": 0,
+  "preserved_blocks_count": 3,
   "changed_text_summary": {
-    "changed": 84,
-    "inserted": 2,
+    "changed": 0,
+    "inserted": 0,
     "deleted": 0,
-    "original_line_count": 95,
+    "original_line_count": 97,
     "candidate_line_count": 97
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0001",
-      "ui_0002",
-      "ui_0003"
-    ],
-    "changed_count": 3
+    "missing_block_ids": [],
+    "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate contains unresolved UI block placeholders.",
-    "Candidate is missing 3 preserved UI block(s)."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 3 preserved UI block(s)."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

@@ -9,8 +9,6 @@ After studying this article, you should be able to:
 - Distinguish among CPD categories: structured, unstructured, and self-directed.
 - Apply CPD credit tracking to renewal scenarios.
 
-
-
 ### Structured Learning Activities
 
 Structured learning encompasses formal courses, seminars, workshops, and conferences offered by accredited CPD providers. These activities include in-person training, online courses, webinars, and hybrid formats combining classroom and digital instruction. Structured learning typically awards higher credit units because it involves systematic curriculum, instructional expertise, and formal evaluation of learning outcomes. Architects completing structured activities receive certificates documenting credit hours and competency areas covered.
@@ -59,3 +57,8 @@ Research activities recognize that architects advancing the profession through i
 - [RA 9266 Legal Framework](lea-prac-law-001)
 - [Government Procurement](lea-prac-frm-012)
 - [Environmental Laws](lea-prac-frm-017)
+
+<!-- no-media-needed: professional practice article, text/tables/UI blocks are optimal format -->
+
+
+<ArticleMedia id="media-prac-frm-009-cpd-categories" layout="single" type="image" status="placeholder" alt="Five-column comparison chart of CPD activity categories: (1) Structured Learning — formal courses, seminars, workshops, webinars; credit value per hour (high), requires accredited provider; (2) Self-Directed Learning — journal reading, independent study, online resources; credit value (moderate), requires documentation; (3) Work-Based Learning — mentoring, project leadership, committee service; credit value (moderate), requires employer/peer verification; (4) Teaching/Presentation — university instruction, conference speaking, publishing; credit value (high), requires course outline/published work; (5) Research/Innovation — original studies, new methodologies, patents; credit value (high), requires research documentation. Each column shows maximum credits per cycle, documentation requirements, and verification method." caption="CPD Activity Categories — Structured, Self-Directed, Work-Based, Teaching, Research" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />

@@ -35,7 +35,7 @@ The LEA tests whether candidates can:
 3. Understand the relationship between viewpoint (station point) and the resulting perspective image.
 4. Recognize perspective distortion and when it is appropriate to use (dramatic views) versus when to use axonometric or orthographic views (technical coordination).
 5. Construct basic perspectives from orthographic projections (plan and elevation).
-<ArticleMedia id="media-lea-dsgn-011-04-core-concept" a type="image" caption="Perspective Projection Types — One-Point, Two-Point, and Axonometric Comparison" description="Comparison of architectural visualization methods: one-point perspective (vanishing point centered), two-point perspective (two VPs), and axonometric (parallel lines, no vanishing point). Shows same building in each projection type with application context." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-011-04-core-concept" type="image" caption="Perspective Projection Types — One-Point, Two-Point, and Axonometric Comparison" alt="Comparison of architectural visualization methods: one-point perspective (vanishing point centered), two-point perspective (two VPs), and axonometric (parallel lines, no vanishing point). Shows same building in each projection type with application context." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
@@ -71,7 +71,7 @@ A perspective shows a building from street level, eye-level height. The candidat
 [SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
 
 **Exam Tip:** One-point perspective: single vanishing point on horizon line, used for interiors and street views. Two-point: two vanishing points, used for exterior building views. Three-point: adds vertical vanishing point for dramatic height.
-<ArticleMedia id="media-lea-dsgn-011-04-core-concept" a type="image" caption="Perspective Drawing Methods — One-Point, Two-Point, and Three-Point Comparison" description="Comparative diagram showing: one-point perspective (single vanishing point on horizon, interiors), two-point perspective (two vanishing points, corner views of buildings), and three-point perspective (worm's-eye and bird's-eye views). Horizon line, station point, and cone-of-vision for each method labeled." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-011-04-core-concept" type="image" caption="Perspective Drawing Methods — One-Point, Two-Point, and Three-Point Comparison" alt="Comparative diagram showing: one-point perspective (single vanishing point on horizon, interiors), two-point perspective (two vanishing points, corner views of buildings), and three-point perspective (worm's-eye and bird's-eye views). Horizon line, station point, and cone-of-vision for each method labeled." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Cross-References
 

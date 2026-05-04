@@ -1,33 +1,32 @@
 # Content Diff Report: lea-util-005-04-communication-protocols-technologies
 
-Generated: 2026-05-04T00:06:35.317Z
+Generated: 2026-05-04T02:17:15.731Z
 Article ID: f52e3126-774f-4eec-8456-8417769bb34a
 Changed: true
-Safe to push locally: false
+Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:055a0212390987910a2d2b6602dbe64a2a1ee5a5b7e44ad3491c124c5676a742`
+- Original: `sha256:cf489efd207a6243b825a1b44489f25455fca4376dbd6c15337d77fde3cab27f`
 - Normalized: `sha256:cf489efd207a6243b825a1b44489f25455fca4376dbd6c15337d77fde3cab27f`
-- Candidate: `sha256:cf489efd207a6243b825a1b44489f25455fca4376dbd6c15337d77fde3cab27f`
+- Candidate: `sha256:2abdfaf1401a88e142fcb7a0edca239bb284d4a46626b9ee5d22e2cb5ec2ae0c`
 
 ## Line summary
 
-- Changed lines: 307
-- Inserted lines: 21
+- Changed lines: 92
+- Inserted lines: 4
 - Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 3
-- UI blocks preserved: 0
-- UI blocks changed/missing: 3
-- Unresolved placeholders: 1
+- UI blocks preserved: 3
+- UI blocks changed/missing: 0
+- Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate contains unresolved UI block placeholders.
-- Candidate is missing 3 preserved UI block(s).
+- None
 
 ## Warnings
 

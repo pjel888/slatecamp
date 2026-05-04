@@ -104,14 +104,11 @@ Thus, new service categories—sustainable design certification, resilience plan
 Legal Basis: RA 9266 (Architecture Act of 2004), Section 3, which enumerates ten (10) categories of architectural service from planning and design through emerging practices and specialized services.
 </LawCallout>
 
-
 <Tip />
-
 
 <LawCallout code="ra9266" section="Section 3 - Scope of Practice">
 Common exam trap: confusing 'structural conceptualization' (architect scope — conceiving structural elements and their arrangement) with 'structural design documents' (engineer scope — calculations and signed/sealed structural plans). Architects lead structural thinking; engineers own structural accountability.
 </LawCallout>
-
 
 <ExamTip />
 
@@ -127,3 +124,5 @@ Common exam trap: confusing 'structural conceptualization' (architect scope — 
 - [Signing and Sealing Rules](lea-prac-law-017)
 - [Code of Ethical Conduct](lea-prac-eth-001)
 - [Professional Practice Forms](lea-prac-frm-001)
+
+<!-- no-media-needed: professional practice article, text/tables/UI blocks are optimal format -->

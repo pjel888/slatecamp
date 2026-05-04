@@ -5,6 +5,14 @@
 Identify the five testable markers of Baroque architecture — curved walls, hidden light sources, ornamented plans, trompe-l'oeil painting, sculptural facades — and recognize key works (St. Peter's, San Carlo alle Quattro Fontane, Versailles) by their dynamic spatial and visual effects.
 ## Core Concept
 
+
+
+
+
+<ArticleMedia id="media-hist-002-05-baroque-church-plan" layout="single" type="image" status="placeholder" alt="Comparative plan diagram of Baroque church plans: (1) San Carlo alle Quattro Fontane (Borromini, Rome) — interlocking oval plan with undulating walls; (2) Sant'Andrea al Quirinale (Bernini, Rome) — oval with concave portico; (3) Il Gesù (Vignola/Giacomo della Porta, Rome) — Latin cross plan with Baroque spatial integration; (4) Vierzehnheiligen (Balthasar Neumann, Bavaria) — rococo radial plan. Each shows how curved walls, interlocking volumes, and dramatic focal points replaced Renaissance static geometry." caption="Baroque Church Typology — Oval, Latin Cross, and Dynamic Plans" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
+<ArticleMedia id="media-hist-002-05-spatial-sequence" layout="single" type="image" status="placeholder" alt="Axonometric and section diagram of Gian Lorenzo Bernini's Scala Regia (Royal Staircase, Vatican, 1663–1666) showing: (1) The theatrical entry sequence from St. Peter's portico through the Corridor to the Scala Regia; (2) The forced perspective colonnade that makes the staircase appear longer and more monumental than its actual dimensions; (3) The dramatic light source from a concealed window at the top landing. Side panels show how Bernini manipulated column spacing, stair width, and ceiling height to create spatial drama." caption="Baroque Spatial Sequence — Bernini's Scala Regia and Vatican Approach" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
 **Baroque architecture** (early 17th–18th centuries) emerged from the Counter-Reformation—the Catholic Church's response to Protestant challenge. Baroque churches aim to inspire awe, emotion, and spiritual surrender through theatrical light, dramatic curves, ornamental abundance, and illusionistic spatial effects. The vocabulary includes:
 - **Curved and undulating walls** replacing Renaissance rational geometry
 - **Complex spatial interlocking** of volumes (ovals, circles, ellipses)
@@ -94,6 +102,8 @@ Rococo is fundamentally a domestic and aristocratic *interior style*, not a stru
 - **Frescoed ceiling**: A painted ceiling technique creating illusionistic spatial effects; common in Northern Baroque
 
 ## Related Articles
+
+<ArticleMedia id="media-hist-002-05-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparison of Baroque spatial effects across key works: curved walls and oval plan (San Carlo alle Quattro Fontane, Borromini), trompe-l'oeil ceiling (Sant'Ignazio, Pozzo), sculptural facade (St. Peter's Square, Bernini), and palace garden axis (Versailles, Le Nôtre)." caption="Baroque Style — Spatial and Visual Comparison" suggestedAsset="Style comparison illustration" placementIntent="Style comparison for architectural period" />
 
 See also within Medieval to Baroque: **lea-hist-002-01-core-concept**, **lea-hist-002-02-core-concept**, **lea-hist-002-03-core-concept**, **lea-hist-002-04-core-concept**.
 

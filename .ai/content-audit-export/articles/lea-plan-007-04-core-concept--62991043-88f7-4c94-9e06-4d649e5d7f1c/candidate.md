@@ -21,13 +21,13 @@ HUDCC's primary functions were:
 4. **Implementation monitoring:** Tracking collective progress toward targets
 
 When HUDCC was dissolved in 2019 (RA 11201), its coordination functions were transferred to DHSUD, which now chairs coordination meetings and integrates sectoral strategies (housing, urban development, land use planning).
-<ArticleMedia id="media-lea-plan-007-04-core-concept" a type="image" caption="HUDCC Historical Coordination Role — Housing Agency Timeline 1986-2019" description="Timeline diagram of HUDCC (Housing and Urban Development Coordinating Council, EO 90): coordination role among housing agencies (NHA, Pag-IBIG, SHFC, NHMFC, HLURB) from 1986 to supersession by DHSUD under RA 11201 in 2019. Organizational evolution." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-plan-007-04-core-concept" type="image" caption="HUDCC Historical Coordination Role — Housing Agency Timeline 1986-2019" alt="Timeline diagram of HUDCC (Housing and Urban Development Coordinating Council, EO 90): coordination role among housing agencies (NHA, Pag-IBIG, SHFC, NHMFC, HLURB) from 1986 to supersession by DHSUD under RA 11201 in 2019. Organizational evolution." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
 HUDCC's legacy remains visible in the multi-agency structure of Philippine housing governance, even though the council itself no longer exists. Understanding HUDCC's historical role helps explain why Philippine housing has multiple specialized agencies rather than a single unified authority.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="WikiExamTable" status="preserved"]
+<WikiExamTable headers={["Function", "HUDCC Role (Historical)", "Current Home (Post-2019)"]} rows={[["Inter-agency coordination", "Convened agencies to align programs", "DHSUD chairs coordination"], ["Housing policy formulation", "Facilitated consensus among agencies", "DHSUD formulates policy; agencies implement"], ["Strategic planning", "Developed national housing strategy", "DHSUD leads; agencies contribute sectors"], ["Conflict resolution", "Mediated inter-agency disputes", "DHSUD dispute resolution; inter-agency meetings"], ["Implementation monitoring", "Tracked collective progress", "DHSUD monitoring; agency reports"]] />
 
 ## Philippine Context
 
@@ -39,7 +39,7 @@ During HUDCC's 33-year existence (1986–2019), it coordinated the shift from ce
 2. **Functional distinction:** "Did HUDCC regulate developers or coordinate agencies?" → Coordinated agencies (regulation was HLURB's role).
 3. **Post-2019 context:** "Where do HUDCC's functions reside today?" → DHSUD.
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+<Tip>**Memory aid:** HUDCC = **C**ouncil = **C**oordination = bringing agencies together (not regulation, not production, not finance). Now DHSUD's role.</Tip>
 
 **Exam Tip:** HUDCC was created by EO 90 (1986), NOT by legislation. It was a coordinating council, not a regulatory body. Superseded by DHSUD under RA 11201 (2019). This history question appears occasionally on the LEA.
 
@@ -49,4 +49,4 @@ See **LEA-PLAN-007-02** (DHSUD) for post-2019 regulatory framework, **LEA-PLAN-0
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeList" status="preserved"]
+<WikiMistakeList mistakes={["Confusing HUDCC (coordination) with HLURB (regulation)—HUDCC coordinated; HLURB regulated", "Saying HUDCC still exists—HUDCC was dissolved 2019 under RA 11201", "Stating HUDCC issued regulations or licenses—DHSUD (formerly HLURB) did that", "Treating HUDCC as a producer or financer—HUDCC only coordinated; agencies did the work", "Forgetting that HUDCC's dissolution was part of the 2019 restructuring (RA 11201)"]} />

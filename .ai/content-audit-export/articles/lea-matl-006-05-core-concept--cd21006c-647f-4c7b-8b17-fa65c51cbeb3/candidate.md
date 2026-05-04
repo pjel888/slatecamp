@@ -52,7 +52,7 @@ Philippine construction employs ASTM C920 silicone sealants for high-movement bu
 
 **Pattern 4: Cure Compatibility** — "A polyurethane sealant is applied to a damp masonry wall (90% RH) in Manila at 30°C ambient. Will cure time be shorter or longer compared to dry conditions at 20°C?" (Answer: Cure time shorter; elevated temperature (30°C) and damp substrate accelerate isocyanate polymerization. Polyurethane is superior to silicone for this application.)
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+<Tip>Memorize ASTM C920 Classes by movement: 100/50 (maximum), 50 (standard), 25 (light), 12.5 (minimal). Joint design rule: width ÷ 2 = depth. Backer rod = 1.25-1.5× joint width. Silicone = UV/temp stable, poor adhesion. Polyurethane = adhesive, rapid cure, moisture-tolerant. Tropical = polysulfide for fuel/salt.</Tip>
 Extracted summary:
 - Props: (none)
 - Text: Memorize ASTM C920 Classes by movement: 100/50 (maximum), 50 (standard), 25 (light), 12.5 (minimal). Joint design rule: width ÷ 2 = depth. Backer rod = 1.25-1.5× joint width. Silicone = UV/temp stable, poor adhesion. Polyurethane = adhesive, rapid cure, moisture-tolerant. Tropical = polysulfide for fuel/salt.

@@ -1,28 +1,21 @@
 {
-  "attempted_at": "2026-05-04T00:06:59.157Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:17:46.581Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "original.md hash does not match article metadata export hash.",
-    "Remote Supabase content differs from export baseline; refusing stale push.",
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "candidate.md matches original.md; refusing no-op apply."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "617cdac3-3b02-44b0-b81f-f8827fc4242e",
   "slug": "lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee",
   "preparation_actions": [
     "auto_generated_diff"
   ],
-  "remote_hash_before": "sha256:9b5de20d0096337740a5fcf3681050016c09f4ac0b9c4d14c363982bcb779251",
-  "original_hash": "sha256:0548555795074149db267e44db202289ce2e654f81641e8cdf6a17d96a70e6d0",
-  "candidate_hash": "sha256:dcf8480766efb748b567310891ccf9e9d2a2159aaef23991e89c5a8fb6949598",
-  "stale_check_passed": false,
-  "remote_updated_at_before": "2026-05-03T13:52:15.655917+00:00"
+  "remote_hash_before": "sha256:24211fbef639b0dc9a38f9bd505a8299a79d673a54237668f8058f0947a1c093",
+  "original_hash": "sha256:24211fbef639b0dc9a38f9bd505a8299a79d673a54237668f8058f0947a1c093",
+  "candidate_hash": "sha256:24211fbef639b0dc9a38f9bd505a8299a79d673a54237668f8058f0947a1c093",
+  "stale_check_passed": true,
+  "remote_updated_at_before": "2026-05-04T02:01:44.105229+00:00"
 }

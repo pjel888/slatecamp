@@ -1,0 +1,53 @@
+{
+  "final_state": "COMPLETE_WITH_QUARANTINED_ITEMS",
+  "date": "2026-05-04T04:30:00Z",
+  "summary": {
+    "root_cause_fixed": true,
+    "normalizer_applied": true,
+    "fallback_hardened": true,
+    "registry_created": true,
+    "tests_passing": true,
+    "type_check_passing": true,
+    "corpus_scanned": true,
+    "articlemedia_loss": 0,
+    "total_with_articlemedia": 461,
+    "primary_compile_pass": 437,
+    "fallback_preserves_articlemedia": 24,
+    "fallback_articlemedia_lost": 0,
+    "articles_repaired": 52,
+    "articles_remaining_fallback": 24,
+    "remaining_fallback_reason": "acorn-parse-error (LaTeX math expressions, JSON arrays in props)",
+    "route_verified_via_test": true,
+    "route_verified_via_dev_server": false,
+    "server_blocker": "pre-existing Turbopack module cache corruption (unrelated to this fix)"
+  },
+  "quarantined_items": {
+    "count": 24,
+    "reason": "acorn-parse-error: content contains { } curly braces in LaTeX formulas or JSON-in-props that MDX's acorn parser interprets as JS expressions. These cannot be fixed by the renderer without changing article meaning. ArticleMedia is preserved via fallback path.",
+    "articles": [
+      "lea-dsgn-007-07-core-concept",
+      "lea-dsgn-007-10-core-concept",
+      "lea-dsgn-008-03-core-concept",
+      "lea-dsgn-012-02-core-concept",
+      "lea-matl-006-02-core-concept",
+      "lea-prac-cmp-010-per-diem-retainer-and-honorarium-definitions-scope-and-philippine-application",
+      "lea-strc-007-03-core-concept",
+      "lea-theo-004-03-core-concept",
+      "lea-theo-009-02-core-concept",
+      "lea-util-001-09-core-concept",
+      "lea-util-002-08-core-principles-standards",
+      "lea-util-007-02-smart-metering-infrastructure-ami",
+      "accessible-seating-in-assembly-areas",
+      "bp-344-ramp-slope-tiers",
+      "overview-architectural-design",
+      "overview-building-materials",
+      "overview-building-utilities-mepf",
+      "overview-history-of-architecture",
+      "overview-planning-housing-urban-design",
+      "overview-professional-practice",
+      "overview-structural-conceptualization",
+      "overview-theory-of-architecture",
+      "wheelchair-maneuvering-and-parking-slots"
+    ]
+  }
+}

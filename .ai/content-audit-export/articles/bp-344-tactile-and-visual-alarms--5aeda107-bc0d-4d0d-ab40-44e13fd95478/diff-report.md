@@ -1,33 +1,32 @@
 # Content Diff Report: bp-344-tactile-and-visual-alarms
 
-Generated: 2026-05-04T00:07:01.246Z
+Generated: 2026-05-04T02:17:48.819Z
 Article ID: 5aeda107-bc0d-4d0d-ab40-44e13fd95478
 Changed: true
-Safe to push locally: false
+Safe to push locally: true
 
 ## Hashes
 
 - Original: `sha256:7c2ba99040cf7a96f64d5c1495c5cf621c1d1858d0dc9031652c8da07ace0185`
-- Normalized: `sha256:20b4f6ea1fb2e7b098f92d700d54d5402cc70362a69a579651bdaa435621c8a2`
-- Candidate: `sha256:20b4f6ea1fb2e7b098f92d700d54d5402cc70362a69a579651bdaa435621c8a2`
+- Normalized: `sha256:6cef81b5e3ce8ebbc0dc5326aeccba0172c98d226357035e4cd8b18318045fbd`
+- Candidate: `sha256:7fbbd7cddf9e7845f387025cd2edb409a66345ace62448c73a5a691735aaca1f`
 
 ## Line summary
 
-- Changed lines: 200
-- Inserted lines: 0
-- Deleted lines: 13
+- Changed lines: 219
+- Inserted lines: 5
+- Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 3
-- UI blocks preserved: 0
-- UI blocks changed/missing: 3
-- Unresolved placeholders: 1
+- UI blocks preserved: 3
+- UI blocks changed/missing: 0
+- Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate contains unresolved UI block placeholders.
-- Candidate is missing 3 preserved UI block(s).
+- None
 
 ## Warnings
 

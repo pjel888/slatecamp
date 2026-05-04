@@ -1,34 +1,32 @@
 # Content Diff Report: minimum-requirements-group-a-dwellings
 
-Generated: 2026-05-04T00:06:54.438Z
+Generated: 2026-05-04T02:17:39.733Z
 Article ID: 42eb0c36-da27-4b7e-a1e3-4ed915bfca8d
 Changed: true
-Safe to push locally: false
+Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:a8c8011d0b93188838dfbd0e110b7a41a8d9661efa7c8d1801a710dd53f05b01`
+- Original: `sha256:5b4b551c82c52c8531ac41f20b5308a71e45391e5d58cd25a46133967def10b7`
 - Normalized: `sha256:6e1044c662aa38f476f257b8d3cda076f91a3b6265384bbc4300432e3d4a99bf`
-- Candidate: `sha256:6e1044c662aa38f476f257b8d3cda076f91a3b6265384bbc4300432e3d4a99bf`
+- Candidate: `sha256:466fc230648ac89c91ac22a4624cf933076b07fcdcff3f8d8d036305bd59beaa`
 
 ## Line summary
 
-- Changed lines: 337
+- Changed lines: 382
 - Inserted lines: 0
-- Deleted lines: 3
+- Deleted lines: 1
 
 ## UI block preservation
 
 - UI blocks expected: 9
-- UI blocks preserved: 0
-- UI blocks changed/missing: 9
-- Unresolved placeholders: 1
+- UI blocks preserved: 9
+- UI blocks changed/missing: 0
+- Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate contains unresolved UI block placeholders.
-- Candidate is missing 9 preserved UI block(s).
-- original.md hash does not match article metadata export hash.
+- None
 
 ## Warnings
 

@@ -6,6 +6,10 @@ Trace the Bauhaus's three-director evolution (Gropius 1919–1928, Meyer 1928–
 ## Core Concept
 The **Bauhaus** (1919–1933) was the most influential design school of the 20th century. Located in Germany, it unified art, craft, and industrial technology through radical pedagogy, attracting the era's greatest modernist thinkers and artists. Though it lasted only 14 years, it transformed design education globally and established principles that guide design thinking today.
 
+
+<ArticleMedia id="media-hist-008-04a-core-concept" layout="single" type="image" status="placeholder" alt="View of the Bauhaus Dessau complex (1925–1926, Walter Gropius), showing the iconic asymmetrical composition of connected volumes: workshop wing, school wing, and the bridge connecting them over the street." caption="Bauhaus Dessau — Workshop Wing and Bridge" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
+
 <Tip>Bauhaus = founded 1919 by Gropius in Weimar; three distinct directors (Gropius 1919–1928, Meyer 1928–1930, Mies 1930–1933); unified art, craft, industry through pedagogy. Key principle: teach thinking and principles, not style or copying. Remember: 1919 founding, 1925 move to Dessau, 1933 Nazi closure.</Tip>
 
 **Founding and Philosophy (1919)**
@@ -51,6 +55,10 @@ The Bauhaus left several enduring principles:
 5. **Human-Centered Design**: Design serves human needs, comfort, and behavior—it is not purely geometric or abstract.
 
 These principles shaped post-war design globally. The International Style in architecture, the modernist design movement, and contemporary design education all bear the Bauhaus imprint.
+
+
+<ArticleMedia id="media-hist-008-04a-core-concept" layout="single" type="image" status="placeholder" alt="Diagram of the Bauhaus curriculum: the six-month Vorkurs (preliminary course) studying form, color, and materials, followed by three years of workshop training in specialized craft disciplines, and a final year of architectural study." caption="Bauhaus Curriculum Structure — Vorkurs to Workshop" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
 
 ## Key Facts and Testable Items
 
@@ -99,6 +107,8 @@ These principles shaped post-war design globally. The International Style in arc
 **Design Principles**: Foundational concepts (form, color, material, proportion, scale, balance) taught at Bauhaus; applicable to any design problem across all disciplines.
 
 **International Style**: Modernist architectural movement influenced by Bauhaus; characterized by geometric forms, open plans, honest structure, and universal applicability across climates and cultures.
+
+<ArticleMedia id="media-hist-008-04a-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Timeline of Bauhaus history (1919–1933) showing the three-director evolution (Gropius, Meyer, Mies), curriculum structure (Vorkurs, workshop system), and key locations (Weimar, Dessau, Berlin).\" caption=\"Bauhaus — History and Curriculum Timeline\" suggestedAsset=\"Timeline diagram\" placementIntent=\"Timeline diagram for architectural period\" />
 
 ## Related Articles
 

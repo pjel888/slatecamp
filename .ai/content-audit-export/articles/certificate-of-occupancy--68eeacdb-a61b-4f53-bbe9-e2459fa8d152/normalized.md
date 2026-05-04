@@ -24,9 +24,9 @@ By the end of this module, you should be able to:
 
 ## The Real-World Hook
 
-[SLATECAMP_UI_BLOCK:ArticleMedia name="co-process-flowchain" type="diagram" caption="End-to-end procedural flowchart: Physical Completion → Certificate of Completion (notarized) → As-Built Plans → BFP Endorsement → FSIC within 5 working days → OBO Final Inspection → CO Issued within 30 calendar days. Include conditional CO bypass arrow when BFP is inactive. Use swimlane columns for Owner/Architect, OBO, and BFP."]
+<ArticleMedia id="media-co-process-flowchain" type="diagram" caption="End-to-end procedural flowchart: Physical Completion → Certificate of Completion (notarized) → As-Built Plans → BFP Endorsement → FSIC within 5 working days → OBO Final Inspection → CO Issued within 30 calendar days. Include conditional CO bypass arrow when BFP is inactive. Use swimlane columns for Owner/Architect, OBO, and BFP." />
 
-[SLATECAMP_UI_BLOCK:ArticleMedia name="co-timeline-comparison" type="diagram" caption="Timeline bar diagram comparing the 5 working day FSIC window vs the 30 calendar day CO issuance window. Show calendar grid with working days vs calendar days marked. Highlight what happens when each deadline expires."]
+<ArticleMedia id="media-co-timeline-comparison" type="diagram" caption="Timeline bar diagram comparing the 5 working day FSIC window vs the 30 calendar day CO issuance window. Show calendar grid with working days vs calendar days marked. Highlight what happens when each deadline expires." />
 
 It is 7:30 in the morning on a Thursday in Quezon City. A developer's newly completed nine-story mixed-use tower stands ready — lobby polished, elevators tested, retail spaces pre-leased and waiting for fit-out. The developer's leasing manager is pressing hard: "Can tenants start moving in this weekend?" The project architect quietly consults her construction logbook, cross-checks the as-built plans stacked on her desk, and shakes her head. "Not yet."
 

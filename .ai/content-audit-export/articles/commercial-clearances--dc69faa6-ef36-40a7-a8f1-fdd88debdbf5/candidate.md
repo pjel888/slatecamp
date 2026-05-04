@@ -66,7 +66,13 @@ A security guard cannot wheel his injured colleague through a retail aisle. A wh
 
 ### Core Framework: The "ORD" System
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
+<LawCallout code="pd1096" section="Rule VII - Commercial Clearances">
+
+
+O-R-D = Office / Retail / Dining — the three commercial clearance domains.
+
+
+</LawCallout>
 
 | Domain | PH Governing Law | US Governing Standard | Core Design Rule |
 |--------|-----------------|----------------------|-----------------|
@@ -100,7 +106,11 @@ Data sources: Del Prado-Lu (2007) for Filipino manufacturing workers (n=1,805); 
 | Popliteal Height (Seat-to-Floor) | 47.0 cm | 47.6 cm | **≈0** | Chair seat height: very similar between populations |
 | Knee Height (Sitting) | 55.9 cm | 61.6 cm | **−5.7 cm** | Filipino users need _less_ knee clearance than US standards assume |
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
+<LawCallout code="bp344">
+
+🛑 Stop & Think: If Filipinos have a smaller sitting knee height (PH 95th% mlea = 55.9 cm vs. US = 61.6 cm), why does BP 344 set knee clearance at 700 mm H while ADA sets it at 27 inches (685 mm) H? Which is _more generous_?
+
+</LawCallout>
 
 **Answer:** BP 344's 700 mm (70 cm) is _slightly more generous_ in height than ADA's 685 mm, despite Filipino users being shorter. This is because BP 344 is designed to accommodate **wheelchair users** whose knee height (with footrests) may differ from ambulatory users, and because the Philippine standard takes a conservative approach to clearance. The key design implication: when building for mixed Filipino and international users, default to the _more restrictive_ (larger clearance) dimension.
 
@@ -144,7 +154,12 @@ This is an **egress requirement**, not a workstation dimension code. PD 1096 doe
 
 ### Part C: Retail Aisle Widths — RA 9514 vs. IBC
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Callout" status="preserved"]
+<Callout variant="tip" title="Mnemonic">
+
+"Seven–Nine–One-Two" = 76 cm → 91 cm → 122 cm
+Think of it as a runway widening as the crowd grows: small crowd, small runway; big crowd, wide runway.
+
+</Callout>
 
 #### The Philippine Standard: RA 9514 RIRR (2019), Rule 8
 
@@ -167,7 +182,11 @@ The Fire Code of the Philippines (RA 9514) and its 2019 Revised Implementing Rul
 3. **Total minimum = 91 + 30 = 121 cm**
 4. Because both-sides threshold (122 cm) applies for aisles with seating on both sides, and this scenario is one side, 121 cm is the calculated minimum.
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="Note" status="preserved"]
+<Note>
+
+Exam note: Always state your threshold and show the calculation. Partial credit often depends on methodology.
+
+</Note>
 
 #### The US Standard: IBC §1030 / NFPA 101
 
@@ -182,7 +201,11 @@ The IBC governs assembly occupancy aisle widths through Section 1030 (Egress fro
 | Exception: &lt;50 seats | **36 in (91.4 cm)** | 914 mm |
 | Exception: &lt;15 seats | **30 in (76.2 cm)** | 762 mm |
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="LawCallout" status="preserved"]
+<LawCallout code="ra9514" title="RA 9514's RIRR draws heavily from NFPA 101 and IBC frameworks.">
+
+Key insight: The IBC's _stepped-aisle, both-sides_ minimum of 48 in (122 cm) closely mirrors PH's 122 cm both-sides retail aisle requirement. This is not coincidence — RA 9514's RIRR draws heavily from NFPA 101 and IBC frameworks.
+
+</LawCallout>
 
 #### US vs. PH Retail Aisle Comparison
 
@@ -191,7 +214,11 @@ The IBC governs assembly occupancy aisle widths through Section 1030 (Egress fro
 | **PH** | RA 9514 RIRR Rule 8 | 76 cm / 760 mm | **91 cm / 910 mm** | **122 cm / 1,220 mm** |
 | **US** | IBC §1030 / NFPA 101 | 36 in / 91.4 cm (or 30 in for &lt;15 seats) | 36 in / 91.4 cm | 42–48 in / 107–122 cm |
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="Note" status="preserved"]
+<Note>
+
+Anthropometric note: RA 9514's 76 cm base aisle accommodates a Filipino mlea at the 95th percentile shoulder breadth of 49.4 cm passing another person at 95th percentile (49.4 cm) — combined = ~99 cm. The 76 cm base is for _single-file flow_ (one side of aisle with no opposing pedestrian traffic). The 122 cm both-sides dimension enables two-way flow with slight lateral clearance.
+
+</Note>
 
 ---
 
@@ -212,7 +239,12 @@ BP 344 (Accessibility Law of the Philippines) and its amended IRR mandate:
 - **Approach/circulation path width to accessible tables: 900 mm** (90 cm) minimum clear width.
 - **Restaurant/dining circulation path: 1,500 mm** (150 cm) minimum (per 2024 updated IRR provisions).
 
-[SLATECAMP_UI_BLOCK:ui_0007 component="Callout" status="preserved"]
+<Callout variant="tip" title="Mnemonic">
+
+"7-8-4-8"
+→ **7**00 mm H / **8**00 mm W / **4**80 mm D / table at **7**50 mm → "Seven-Eight, Four-Eight, Seven-Fifty"
+
+</Callout>
 
 #### The US Standard: ADA 2010, §226 + §902
 
@@ -228,7 +260,11 @@ ADA 2010, Section 902 (technical requirements for accessible dining surfaces):
   - Depth: **19 inches (483 mm)** minimum at the 27-inch height level
 - **ADA accessible counter max height: 34 inches (864 mm)**
 
-[SLATECAMP_UI_BLOCK:ui_0008 component="Callout" status="preserved"]
+<Callout variant="tip" title="Mnemonic">
+
+The ADA knee clearance mnemonic: "27-30-19" (Height-Width-Depth in inches). Note the depth of 19 in = 483 mm (not 480 mm — a slight variance from BP 344's 480 mm, but essentially equivleant).
+
+</Callout>
 
 #### US (ADA) vs. PH (BP 344) Dining Comparison
 
@@ -242,12 +278,20 @@ ADA 2010, Section 902 (technical requirements for accessible dining surfaces):
 | Approach/aisle width | **36 in / 914 mm** (accessible route) | **900 mm** (approach to table) |
 | Circulation path (dining) | **36 in / 914 mm** min accessible route | **1,500 mm** (restaurant circulation) |
 
-[SLATECAMP_UI_BLOCK:ui_0009 component="LawCallout" status="preserved"]
+<LawCallout code="bp344">
+
+🛑 Stop & Think: A restaurant has 40 dining tables in the Philippines. How many must be accessible per BP 344? How many would be required if the same restaurant operated in the US under ADA?
+
+</LawCallout>
 
 **PH (BP 344):** 40 × 10% = **4 tables** minimum accessible.
 **US (ADA §226.1):** At least 5% of _seating spaces_ (not tables). If each table seats 4: 40 × 4 = 160 seats → 5% = **8 seating spaces minimum** (can be at 2 tables if each has 4 accessible seats, or dispersed).
 
-[SLATECAMP_UI_BLOCK:ui_0010 component="LawCallout" status="preserved"]
+<LawCallout code="bp344">
+
+Critical LEA trap: The question may give you tables OR seats. BP 344 is table-based (10%); ADA is seating-space-based (5%). Using the wrong percentage or unit for the wrong code is a full-point deduction.
+
+</LawCallout>
 
 #### Why Filipino Anthropometrics Affect Dining Table Design
 

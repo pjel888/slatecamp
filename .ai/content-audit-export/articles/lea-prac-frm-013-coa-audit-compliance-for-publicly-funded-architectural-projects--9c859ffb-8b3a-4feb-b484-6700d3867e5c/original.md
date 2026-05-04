@@ -11,8 +11,6 @@ After studying this article, you should be able to:
 - Identify common COA audit findings on architectural projects.
 - Apply COA compliance rules to government project scenarios.
 
-
-
 ### Three Pillars of COA Audit: Regularity, Legality, and Economy
 
 <ExamTip>COA's three pillars: **Regularity** — were procedures followed (bidding per RA 9184, approvals obtained)? **Legality** — does the design comply with NBC, environmental laws, BP 344? **Economy** — was value achieved, costs controlled, waste avoided? Architects influence all three dimensions.</ExamTip>
@@ -57,17 +55,13 @@ Architects should maintain professional liability insurance adequate for the sco
 
 Professional liability insurance typically covers negligent acts, errors, and omissions in the design or administration. However, it does not cover willful misconduct, fraud, or violation of law. Architects should understand their policy limits and exclusions.
 
-
 <LawCallout code="ra9184" section="Section 37 - Audit">
 Legal Basis: Presidential Decree 1445 (Government Auditing Code of the Philippines). The Commission on Audit has exclusive authority to examine all government-funded projects including architectural consulting contracts.
 </LawCallout>
 
-
 <Warn />
 
-
 <ExamTip />
-
 
 <Tip />
 
@@ -85,3 +79,5 @@ Legal Basis: Presidential Decree 1445 (Government Auditing Code of the Philippin
 - [RA 9266 Legal Framework](lea-prac-law-001)
 - [Government Procurement](lea-prac-frm-012)
 - [Environmental Laws](lea-prac-frm-017)
+
+<!-- no-media-needed: professional practice article, text/tables/UI blocks are optimal format -->

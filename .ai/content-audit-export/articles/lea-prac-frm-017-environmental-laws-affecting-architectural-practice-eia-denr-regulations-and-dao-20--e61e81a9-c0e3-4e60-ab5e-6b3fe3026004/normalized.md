@@ -86,7 +86,7 @@ Extracted summary:
 
 
 
-<ArticleMedia type="image" caption="Environmental Compliance Process — EIA, ECC, and DENR Regulations" description="Process flowchart showing environmental compliance for architectural projects: Project screening → EIA required? → If yes: EIS preparation → Public hearing → DENR EMB review → ECC issuance → Compliance monitoring. Key environmental laws referenced: PD 1586 (EIS System), PD 1067 (Water Code, 3/20/40m easements), RA 9275 (Clean Water Act), RA 9003 (Solid Waste Management)." />
+<ArticleMedia type="image" caption="Environmental Compliance Process — EIA, ECC, and DENR Regulations" alt="Process flowchart showing environmental compliance for architectural projects: Project screening → EIA required? → If yes: EIS preparation → Public hearing → DENR EMB review → ECC issuance → Compliance monitoring. Key environmental laws referenced: PD 1586 (EIS System), PD 1067 (Water Code, 3/20/40m easements), RA 9275 (Clean Water Act), RA 9003 (Solid Waste Management)." />
 ## Related Articles
 
 - [Sole Proprietorship](lea-prac-frm-001)

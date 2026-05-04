@@ -6,8 +6,6 @@ After reading this article, you should be able to:
 
 Identify the three defining features of Inca architecture — ashlar polygonal masonry (stones fitted without mortar), trapezoidal openings, and the imperial standardized plan (kancha enclosure) — and recognize key sites (Machu Picchu, Sacsayhuamán, Ollantaytambo, Cusco's Coricancha) by their masonry style and civic-ceremonial organization.
 
-</Callout>
-
 ## The Real-World Scenario (The Hook)
 
 <Callout variant="example">
@@ -23,7 +21,6 @@ You are designing a hillside eco-resort in Baguio on a 35-degree slope prone to 
 **Memory Aid: "I-S-M = Inca Stone Magic."** Three principles: Interlocking (ashlar masonry with trapezoidal joints — no mortar needed), Shaping (stones shaped by hammering/pecking, not cutting — the "Inca puzzle"), S (Seismic resilience — trapezoidal doors/windows and battered walls distribute earthquake forces). All three translate directly to Philippine seismic design principles.
 
 </Tip>
-
 
 <Tip>
 
@@ -51,7 +48,6 @@ Think: *"Andes Tamed Everything"* — the Inca turned the most hostile terrain o
 
 </Example>
 
-
 | Feature | Era and Scale | Technique and Materials | Key Structural / Climate Adaptations |
 |---|---|---|---|
 | **Ashlar Masonry** | Inca Empire, c. 1438–1533 CE; stones exceeding 100 tonnes | Polygonal dry-fit blocks of granite and andesite; dressed with hammer stones (no iron tools or mortar) | Trapezoidal batter profile (inward lean) distributes seismic forces; friction-fit joints allow micro-movement during earthquakes without collapse |
@@ -68,13 +64,11 @@ Think: *"Andes Tamed Everything"* — the Inca turned the most hostile terrain o
 
 </Warn>
 
-
 <ExamTip>
 
 **LEA Trap:** "Inca stone walls used mortar to hold stones together" — FALSE. Inca ashlar masonry is dry-stone (no mortar). The precise fitting was achieved through trial-and-error pecking and hammering, not cutting. Also: "Trapezoidal doorways were purely decorative" — FALSE. Trapezoidal openings are seismically advantageous: the angled sides distribute stress more evenly than rectangular openings during earthquakes.
 
 </ExamTip>
-
 
 <Warn>
 
@@ -124,6 +118,14 @@ D. Adobe brick retaining walls with straw-reinforced planting beds
 
 ---
 
+
+
+---
+
+## Exam Tip
+
+ALE Trap: Three Inca features: (1) Ashlar polygonal masonry = stones cut to fit WITHOUT mortar, earthquake-resistant through friction, (2) Trapezoidal openings = doors, windows, niches all trapezoidal, (3) Kancha = standardized rectangular enclosure plan. Machu Picchu is the most tested Inca site. The mortarless ashlar masonry is the defining feature — NO other civilization used this technique at this scale.
+
 ## Cross‑References
 
 <Note>
@@ -132,3 +134,5 @@ D. Adobe brick retaining walls with straw-reinforced planting beds
 
 </Note>
 
+
+<!-- no-media-needed: existing content format is sufficient without visual media -->

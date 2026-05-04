@@ -9,8 +9,6 @@ After studying this article, you should be able to:
 - Explain what is excluded: land, architect's fee, owner's administrative costs.
 - Calculate the architect's basic fee using PCC × percentage.
 
-
-
 ---
 ### Definition of Project Construction Cost
 
@@ -41,7 +39,6 @@ Cost estimating typically follows one of three approaches: parametric estimation
 During preliminary phases (Schematic Design), PCC estimates may have accuracy ranges of ±25–35%. By Design Development, accuracy typically improves to ±15–20%. By Contract Documents completion, estimates should approach ±10% accuracy. These accuracy ranges reflect the normal uncertainty in construction cost estimation. The architect and client should establish clear expectations regarding PCC estimation methodology and accuracy levels in the contract.
 
 ### Contingency Reserves and PCC
-
 
 <ExamTip>**LEA Pattern:** Given a project budget, determine the architect's fee. Common scenario: PCC = Php 10M × 12% fee = Php 1.2M. Watch for distractors that include land cost or architect's fee in the PCC calculation.</ExamTip>
 Owner contingency reserves for construction cost overruns are excluded from PCC. These reserves protect the owner against cost escalation during construction but do not represent costs the architect anticipated during design. Contingency reserves typically range from 5–15% of the estimated construction cost and remain separate from PCC for fee calculation purposes.
@@ -74,3 +71,5 @@ Projects incorporating specialized systems—laboratory equipment, theater syste
 - [Reimbursable Expenses](lea-prac-cmp-011)
 - [SPP Doc 202 Phase Framework](lea-prac-svc-004)
 - [Standard Owner-Architect Agreement](lea-prac-ctr-001)
+
+<!-- no-media-needed: professional practice article, text/tables/UI blocks are optimal format -->

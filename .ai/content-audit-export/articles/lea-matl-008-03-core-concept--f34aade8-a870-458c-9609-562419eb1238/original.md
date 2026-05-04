@@ -14,6 +14,13 @@ Rivets are historical fasteners largely replaced by bolts and welds. They are dr
 
 Pull-out strength (or withdrawal strength) depends on fastener diameter, material, and embedment depth. Wood-to-wood connections: pull-out strength ≈ 25 to 50 lbf per inch of embedment for common nails; lag screws provide 300 to 500 lbf per inch. Concrete anchors vary by type: wedge anchors provide 1,000 to 2,000 lbf per inch of embedment.
 
+
+<ArticleMedia id="media-fastener-comparison-chart" layout="single" type="image" status="placeholder"
+  alt="Comparison chart of fastener systems: nails, screws, bolts, anchors, rivets, welding, and adhesives with load capacity, substrate compatibility, and installation method"
+  caption="Future chart: fastener system comparison — load capacity, substrate, and installation method"
+  suggestedAsset="Fastener selection matrix with application illustrations"
+  placementIntent="Helps learners select appropriate fasteners by connection requirements" />
+
 ## Key Provisions
 
 | Property | Value | Standard | LEA Relevance |
@@ -33,6 +40,12 @@ Pull-out strength (or withdrawal strength) depends on fastener diameter, materia
 
 Philippine construction standards adopt ASTM fastener classifications, though many informal projects use non-standard fasteners. Common wire nails (CWN) are widely available through hardware stores but rarely meet ASTM specifications for uniformity. Filipino contractors often specify "20 inches" for roofing when 1.75-inch roofing nails are required, leading to fastener failure and roof leaks during monsoon rains. Lag screws and expansion anchors are less commonly used in informal residential construction, resulting in inadequate fastening of structural members to concrete foundations. Stainless steel fasteners, essential for typhoon and coastal corrosion resistance, are often substituted with carbon steel due to cost, leading to premature rust. Quality assurance is weak; ASTM A325 bolts may be mislabeled as A490, creating structural reliability issues.
 
+
+<ArticleMedia id="media-fastener-load-chart" layout="single" type="image" status="placeholder"
+  alt="Comparison chart of fastener load capacities: nails, screws, bolts, anchors, rivets, and adhesives in shear and tension with substrate compatibility"
+  caption="Future chart: fastener load capacity comparison — shear, tension, and substrate compatibility"
+  suggestedAsset="Reference chart or infographic of fastener load capacities"
+  placementIntent="Provides reference for fastener selection based on load requirements" />
 ## How It's Tested
 
 **Exam Pattern 1: Nail Sizing.** A framing plan specifies "16d common nails." What is the length and intended application? Answer: 3.5 inches long; general framing and structural connections.

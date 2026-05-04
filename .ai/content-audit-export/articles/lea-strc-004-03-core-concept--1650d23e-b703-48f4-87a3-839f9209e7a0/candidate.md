@@ -10,7 +10,7 @@ By the end of this article, you will be able to:
 A soft story and a weak story are not synonyms. Soft story is a lateral stiffness deficiency (< 70% of story above); weak story is a lateral strength deficiency (< 80% of story above). Both create seismic vulnerability and are regulated by design codes. The LEA distinguishes them clearly.
 
 ## Core Concept
-<ArticleMedia id="media-lea-strc-004-03-core-concept" a type="image" caption="Base Shear — Seismic Force Distribution" description="Building elevation diagram showing: (1) Total base shear V calculated from V=(ZIC/RW)W applied at base; (2) Vertical distribution of lateral forces (Fx) increasing from bottom to top following Fx = (Wxhx^k/ΣWihi^k)V; (3) Story drift and overturning moment diagram. Key parameters labeled: Z (zone), I (importance), C (response), R (ductility), W (weight)." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-strc-004-03-core-concept" type="image" caption="Base Shear — Seismic Force Distribution" alt="Building elevation diagram showing: (1) Total base shear V calculated from V=(ZIC/RW)W applied at base; (2) Vertical distribution of lateral forces (Fx) increasing from bottom to top following Fx = (Wxhx^k/ΣWihi^k)V; (3) Story drift and overturning moment diagram. Key parameters labeled: Z (zone), I (importance), C (response), R (ductility), W (weight)." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 _Base shear_ (V) is the total lateral (seismic) force at the building base, calculated as V = Z × I × C × W. It represents the maximum expected seismic demand that the foundation must resist. The base shear is distributed up the height of the building according to the code formula.
 
@@ -49,7 +49,7 @@ Soft stories are common in Philippine commercial buildings where ground floors a
 
 **Pattern 3: Consequence analysis.** "A building has a soft story at the ground level. What is the likely effect?" → The ground story experiences disproportionately large lateral displacement; story drift concentrates at the weak stiffness point; non-structural damage and P-delta effects increase. The design is irregular and requires special attention.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+<Tip>_Soft_ = stiffness (S.S. = Same Sound). _Weak_ = strength (starts with W). Soft < 70%; Weak < 80%. Remember: 70 (soft) comes before 80 (weak) numerically and alphabetically (Soft, Weak).</Tip>
 
 ## Related Articles
 
@@ -57,6 +57,6 @@ See also: **Seismic Zones** (lea-strc-004-02) for zone factor Z, **Earthquake Fu
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
+<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeList" status="preserved"]
+<WikiMistakeList mistakes={["Treating soft and weak as synonyms. They are distinct: soft = stiffness; weak = strength. Different definitions, different thresholds (70% vs. 80%).","Using 80% for soft story threshold. Soft story threshold is 70% of story above (stiffness). Weak story is 80% (strength).","Confusing story drift (displacement) with soft/weak (stiffness/strength). Drift is the lateral movement; soft/weak are structural deficiencies that can cause excessive drift.","Thinking soft/weak stories only matter for tall buildings. Any building with a stiffness or strength discontinuity (e.g., ground floor retail below office) is subject to the check.","Ignoring the story-pair nature of the check. A soft story is 70% of the story ABOVE, not an absolute value. Compare each story to its upper neighbor.","Assuming P-delta effects are automatically accounted for. If story drift exceeds 0.02H, P-delta analysis is required because second-order effects become significant."]} />

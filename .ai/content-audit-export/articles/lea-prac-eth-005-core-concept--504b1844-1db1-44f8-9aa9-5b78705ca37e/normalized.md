@@ -16,7 +16,7 @@ Section 5 of the Code establishes that architects have "moral responsibilities t
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
 
-<ArticleMedia id="media-eth005-profession-pillars" layout="single" variant="contained" type="image" status="placeholder" aspectRatio="16:9" title="Duties to the Profession — Three Pillars Diagram" description="Three-column comparison diagram: (1) No unfair fee competition Section 5-b, (2) Respect other architects assignments Sections 5-c/e/f, (3) Never sign/seal without direct supervision Section 5-i. Each column lists key provisions, example violations, and disciplinary consequences. Bottom banner shows overarching principle of collective professional standing." placementIntent="ethics-framework" suggestedSearchQuery="architect duties to profession fee competition direct supervision signing sealing Section 5 RA 9266" suggestedAsset="Diagram or reference image" />
+<ArticleMedia id="media-eth005-profession-pillars" layout="single" variant="contained" type="image" status="placeholder" aspectRatio="16:9" title="Duties to the Profession — Three Pillars Diagram" alt="Three-column comparison diagram: (1) No unfair fee competition Section 5-b, (2) Respect other architects assignments Sections 5-c/e/f, (3) Never sign/seal without direct supervision Section 5-i. Each column lists key provisions, example violations, and disciplinary consequences. Bottom banner shows overarching principle of collective professional standing." placementIntent="ethics-framework" suggestedSearchQuery="architect duties to profession fee competition direct supervision signing sealing Section 5 RA 9266" suggestedAsset="Diagram or reference image" />
 
 The profession obligation has three critical dimensions:
 

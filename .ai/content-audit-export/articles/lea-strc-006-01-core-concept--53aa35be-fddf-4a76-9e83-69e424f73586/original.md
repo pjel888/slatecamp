@@ -11,6 +11,7 @@ By the end of this article, you will be able to:
 Concrete is a composite material made from cement, aggregates (fine and coarse), water, and optional admixtures. Understanding these components and their proportions—especially the water-cement ratio—determines concrete workability, strength, durability, and long-term performance in reinforced concrete structures.
 
 ## Core Concept
+<ArticleMedia id="media-lea-strc-006-01-core-concept" a type="image" caption="Concrete Mix Composition — Cement, Aggregates, Water, Admixtures" description="Cross-section diagram of concrete showing: (1) Fine aggregate (sand) filling voids between coarse aggregate; (2) Coarse aggregate (gravel/crushed stone) as primary bulk; (3) Cement paste binding aggregates; (4) Water-filled capillary pores; (5) Air voids. Proportioning pie chart for typical mix (cement 10-15%, water 15-20%, aggregates 60-75%). Water-cement ratio effect on strength shown as comparison chart." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 Concrete is created by mixing Portland cement with fine aggregate (sand), coarse aggregate (gravel or crushed stone), water, and sometimes chemical or mineral admixtures. The cement chemically reacts with water in a process called hydration, binding the aggregates into a solid mass.
 
@@ -71,7 +72,6 @@ The Philippine National Structural Code (PNSC) requires concrete specifications 
 3. **Unit Weight and Yield (ASTM C138):** A standard container of known volume is filled with fresh concrete. The mass of concrete is divided by container volume to determine unit weight. Yield (m³ per batch) is calculated to verify mix design proportions.
 
 <Tip>The water-cement ratio is your strongest lever to control concrete strength and durability. Every project in the Philippines should specify w/c ≤ 0.50 for coastal or aggressive environments and w/c ≤ 0.55 for normal exposure. Proper 7-day curing is non-negotiable in tropical climates.</Tip>
-
 
 ## Related Articles
 

@@ -6,6 +6,10 @@ Identify the key markers of the International Style — glass curtain walls, str
 ## Core Concept
 The **International Style** emerged from the 1932 Museum of Modern Art (MoMA) exhibition curated by **Henry Russell Hitchcock** and **Philip Johnson**. This movement codified early modernism's aesthetic principles: form follows function absolutely, ornament is eliminated entirely, and the beauty of a building lies in its proportions and material honesty rather than decoration.
 
+
+<ArticleMedia id="media-hist-008-04b-core-concept" layout="single" type="image" status="placeholder" alt="View of the Seagram Building (New York, 1954–1958, Mies van der Rohe) showing the bronze glass-and-steel curtain wall, expressed structural mullions, flat roof, and the iconic International Style corporate tower form." caption="Seagram Building — International Style Corporate Tower" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
+
 <Tip>International Style = codified 1932 by Hitchcock and Johnson. Key markers: glass curtain walls, structural frame, rejection of ornament, open plan, flat roofs, pilotis. Dominated 1930–1970s worldwide. Remember: it's NOT all modernism—it specifically rejects all decoration, not just historical ornament.</Tip>
 
 The style's name reflects its ambition: it claimed to transcend national and regional preferences in favor of universal design principles grounded in industrial rationality. Load-bearing walls disappear in favor of steel or concrete skeleton frames with glass curtain walls stretched across them. Roofs flatten. Interior spaces flow openly, unobstructed by ornamental screens or applied decoration. The building becomes a **volume** defined by its essential form, not its mass.
@@ -19,6 +23,10 @@ The style rejected both 19th-century eclecticism and Art Deco's decorative impul
 The International Style dominated institutional and corporate architecture from the 1930s through the 1970s, reshaping downtowns and campuses worldwide. Its principles traveled easily because they claimed universality—a glass box with a steel frame looked equally legitimate in New York, São Paulo, or Tokyo. This globalization made it both the most influential and most critiqued modernist movement.
 
 <Warn>Critical: Don't treat the 1932 MoMA exhibition as the style's endpoint—it's crystallization. The style's influence peaked through the 1960s–70s. Also: don't confuse International Style with all modernism. Art Deco, Streamline Moderne, and International Style are distinct movements. International Style specifically rejects ALL applied decoration, not just ornate historicism. Mies, Le Corbusier, Gropius, and SOM all contributed—it's a collective movement, not a single architect's invention.</Warn>
+
+
+<ArticleMedia id="media-hist-008-04b-core-concept" layout="single" type="image" status="placeholder" alt="Diagram illustrating the key markers of the International Style as defined by Hitchcock and Johnson (1932): glass curtain wall, expressed structural frame, flat roof, asymmetrical composition, and complete rejection of applied ornament." caption="International Style Characteristics — Curtain Wall, Flat Roof, Asymmetry" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
 
 ## Key Facts and Testable Items
 
@@ -55,6 +63,8 @@ The International Style dominated institutional and corporate architecture from 
 - **Proportional grid**: A system of proportional modules controlling facade fenestration and structural bays.
 - **Béton brut**: Raw concrete left exposed after formwork removal; used differently in Brutalism but pioneered in modernism.
 - **Functionalism**: The doctrine that design should serve practical purpose above aesthetic tradition.
+
+<ArticleMedia id="media-hist-008-04b-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparison of International Style characteristics — glass curtain walls, structural frame expression, flat roofs, asymmetrical composition — across the Seagram Building (Mies), United Nations HQ, and Lever House.\" caption=\"International Style — Key Characteristics\" suggestedAsset=\"Style comparison illustration\" placementIntent=\"Style comparison for architectural period\" />
 
 ## Related Articles
 

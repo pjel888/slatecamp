@@ -12,12 +12,16 @@ _Transport Node Accessibility Module – Escalators, Walkalators, Platforms_[web
 
 ## 1. Why Transport Nodes Matter
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="LawCallout" status="preserved"]
+<LawCallout code="pd1096" section="Rule XII - Escalators">
+BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all public buildings.
+</LawCallout>
 Extracted summary:
 - Props: (none)
 - Text: BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all p...
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+<LawCallout code="pd1096" section="Rule XII - Means of Egress">
+BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all public buildings.
+</LawCallout>
 Extracted summary:
 - Props: (none)
 - Text: BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all p...
@@ -115,14 +119,14 @@ ESCALATOR / LIFT → PLATFORM EDGE / BOARDING POINT
   - Before stairs and ramps (top and bottom).
   - Before escalators and passenger conveyors.
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
+<ExamTip>**LEA Pattern:** Questions ask whether a building or space meets accessibility requirements. Calculate required number of accessible parking slots per total parking (1:100 ratio for first 500, then 1:200). Know the minimums.</ExamTip>
 Extracted summary:
 - Props: (none)
 - Text: **LEA Pattern:** Determine if a building meets accessibility requirements. Ca...
   - Along platform edges/boarding zones and near doors/gates with possible pinch or fall risk.
 - **Elevator priority:**
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
+<ExamTip>**LEA Pattern:** Questions ask whether a building or space meets accessibility requirements. Calculate required number of accessible parking slots per total parking (1:100 ratio for first 500, then 1:200). Know the minimums.</ExamTip>
 Extracted summary:
 - Props: (none)
 - Text: **LEA Pattern:** Determine if a building meets accessibility requirements. Ca...

@@ -38,19 +38,26 @@ Architects providing acoustic and lighting services must demonstrate specialized
 
 Acoustic design deliverables include noise analysis reports, absorption specifications, material recommendations, and implementation drawings. Lighting design deliverables encompass daylight simulations, luminaire schedules, photometric calculations, and control system specifications. Both specializations require detailed documentation supporting contractor implementation and post-installation verification. Specifications must address quality standards, performance targets, and acceptance criteria.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="KeyValues" status="preserved"]
+<KeyValues items={[{"value": "15%", "label": "Schematic Design"}, {"value": "20%", "label": "Design Development"}, {"value": "50%", "label": "Contract Docs"}, {"value": "5%", "label": "Bidding Assist"}, {"value": "10%", "label": "Constr. Admin."}]} />
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="ProcessFlow" status="preserved"]
+<ProcessFlow>
+<ol>
+  <li><strong>Initiation</strong> — Client consultation and scope definition</li>
+  <li><strong>Proposal</strong> — Fee structure and contract execution</li>
+  <li><strong>Service Delivery</strong> — Performance per SPP document</li>
+  <li><strong>Completion</strong> — Turnover and documentation</li>
+</ol>
+</ProcessFlow>
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
+<LawCallout code="irr" section="SPP Documents" title="Professional Practice Framework">SPP Documents 201–209 establish standards for architectural services scope, fee structures, and professional responsibilities under RA 9266.</LawCallout>
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
+<ExamTip>Fee distribution: SD=15%, DD=20%, CD=50%, BA=5%, CA=10%. Contract Documents (50%) is the largest phase. Cumulative: 15%→35%→85%→90%→100%.</ExamTip>
 
 ---
 
 
 
-<ArticleMedia type="image" caption="Architectural Acoustics and Lighting Design — Technical Specializations Overview" description="Two-panel diagram: Left panel — Acoustics design showing sound transmission paths (airborne, structure-borne), reverberation time (RT60) targets by space type, and noise control strategies (isolation, absorption, diffusion). Right panel — Lighting design showing daylight integration, luminance levels by task (IES standards), and fixture selection criteria. Architect's coordination with specialists noted." />
+<ArticleMedia type="image" caption="Architectural Acoustics and Lighting Design — Technical Specializations Overview" alt="Two-panel diagram: Left panel — Acoustics design showing sound transmission paths (airborne, structure-borne), reverberation time (RT60) targets by space type, and noise control strategies (isolation, absorption, diffusion). Right panel — Lighting design showing daylight integration, luminance levels by task (IES standards), and fixture selection criteria. Architect's coordination with specialists noted." />
 ## Related Articles
 
 - [SPP Doc 202 Six-Phase Framework](lea-prac-svc-004)

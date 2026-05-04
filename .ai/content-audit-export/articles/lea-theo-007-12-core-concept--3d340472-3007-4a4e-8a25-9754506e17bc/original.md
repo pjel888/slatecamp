@@ -3,8 +3,6 @@
 High-Tech architecture treats structural systems and mechanical infrastructure not as utilities to be concelead but as primary aesthetic generators. The LEA tests whether you understand the theoretical position: **structure as beauty, mechanics as ornament**. You must master the work of Richard Rogers, Renzo Piano, Norman Foster, and Nicholas Grimshaw, and understand how High-Tech resolved modernism's contradiction between form and function by celebrating function as form.
 </Callout>
 
-
-
 ## Learning Goal
 
 - Distinguish minimalism (restraint as positive intellectual/ethical principle) from reductivism (elimination as default).
@@ -12,6 +10,8 @@ High-Tech architecture treats structural systems and mechanical infrastructure n
 - Identify key minimalist architects (Tadao Ando, John Pawson, SANAA) and their design philosophies.
 
 ## Core Concept
+
+<ArticleMedia id="media-lea-theo-007-12-hightech-diagram" type="image" caption="High-Tech Architecture — Structure as Beauty, Mechanics as Ornament" description="Concept diagram showing cross-section of a High-Tech building (based on Centre Pompidou typology). Interior is labeled 'Flexible Open Space (unobstructed).' Exterior shows all structural and mechanical elements exposed: color-coded ducts (blue = air, green = water, yellow = electrical), exposed steel trusses, external escalator tubes, transparent facade revealing structure. Callout: 'Utilitarian honesty elevated to aesthetic principle — function as form.' Comparative arrow to Brutalism: 'Brutalism = sculptural concrete expression; High-Tech = mechanical/structural honesty.'" suggestedAsset="Diagram showing High-Tech architecture's inverted hierarchy with exposed structure and mechanical systems" status="placeholder" />
 
 High-Tech emerged in the 1970s–1980s as a movement that rejected modernism's residual romanticism (the belief that pure geometric form expressed universal truth) and instead embraced technology as honest expression of contemporary reality. If modernism stripped away ornament to reveal "true form," High-Tech revealed that in an industrial age, the true form was **mechanical systems, structural engineering, and industrial materials honestly expressed**.
 
@@ -126,21 +126,15 @@ High-Tech's industrial aesthetic emerged from British manufacturing culture and 
 <WikiExamTable headers={["Project", "Architects", "Date", "Key High-Tech Feature", "Testable Question"]} rows={[['["Centre Pompidou", "Rogers & Piano", "1977", "External mechanical systems, color-coded pipes, exposed structure", "Why expose systems externally rather than concealing them?"]', '["Hong Kong Shanghai Bank", "Norman Foster", "1986", "Suspension structure, column-free floors, diagonal bracing", "How does structural logic generate form?"]', '["Lloyd\'s Building", "Richard Rogers", "1986", "Exposed services, flexible interiors, external lifts", "Explain maintenance advantages of exposed systems"]', '["Kansai Airport Terminal", "Renzo Piano", "1994", "Kinetic facade, environmental responsiveness, massive trusses", "How does structural expression relate to environmental control?"]', '["Waterloo International Terminal", "Nicholas Grimshaw", "1993", "400m bow-string arch, stainless steel structure", "Describe structural form as aesthetic principle"]', '["30 St Mary Axe (Gherkin)", "Norman Foster", "2004", "Curved form, diagonal bracing, natural ventilation, diamond pattern", "Analyze how geometry expresses both structure and sustainability"]']]} />
 ## How It's Tested on the LEA
 
-
 <ExamTip>1. **Theoretical Position**: "What is the core High-Tech principle and how does it differ from modernism's 'form follows function'?" (Answer: High-Tech celebrates visible expression of systems and structure as primary aesthetic; modernism sought abstract purity. High-Tech is functionalist honesty made visible.)</ExamTip>
-
 
 <ExamTip>2. **Structural Generation**: "How do structural requirements generate form in High-Tech architecture?" (Answer: Rather than imposing preconceived geometry, optimize structure for loads and spans; the resulting form—beam depths, truss angles, proportions—becomes primary visual expression.)</ExamTip>
 
-
 <ExamTip>3. **Mechanical Integration**: "Why expose mechanical systems externally in High-Tech design?" (Answer: Frees interior space, maintains accessibility, educates occupants, allows future modification without renovation, achieves honest expression of actual building operation.)</ExamTip>
-
 
 <ExamTip>4. **Piano vs. Foster Comparison**: "How does Renzo Piano's High-Tech differ from Norman Foster's?" (Answer: Piano emphasizes kinetic, environmentally-responsive systems; Foster refines High-Tech toward material luxury and technological sophistication; both expose systems but with different aesthetic emphasis.)</ExamTip>
 
-
 <ExamTip>5. **Contemporary Critique**: "High-Tech buildings often perform poorly thermally and acoustically. How does this challenge the movement's sustainability claims?" (Answer: Early High-Tech (1970s–80s) was energy-intensive. Contemporary High-Tech integrates efficiency through improved mechanical control and materials; the aesthetic expression remains, but with better performance.)</ExamTip>
-
 
 ## Common Mistakes
 
@@ -149,7 +143,6 @@ High-Tech's industrial aesthetic emerged from British manufacturing culture and 
 <WikiMistakeCard mistake="Assuming High-Tech is \"Honest\" While Other Styles Are Not" correction="All architecture is mediated and constructed; High-Tech's honesty is selective (celebrating technology, minimizing decoration) rather than absolute." context="This is commonly tested on the LEA." />
 
 <WikiMistakeList mistakes={["Equating Industrial Expression with Cold or Dehumanizing Space. High-Tech can be warm, engaging, and educational; the cold reception is partly cultural (unfamiliar aesthetic) rather than inherent.", "Ignoring Maintenance Costs. Exposed systems require aggressive maintenance to avoid appearing shabby. This long-term cost is often underestimated in initial High-Tech designs.", "Confusing Structural Expression with Structural Efficiency. A building may express structure as primary aesthetic while being structurally inefficient. Expression and efficiency are distinct (though both are goals in high-quality High-Tech).", "Missing the Historical Timing. High-Tech emerged during energy abundance and technological optimism (1970s–80s). Its embrace of mechanical complexity and large-span spaces reflects that era; contemporary sustainability concerns create tension with these values."]} />
-
 
 ## Key Terms
 

@@ -15,6 +15,13 @@ Common sections in the Philippines:
 
 Total structural steel weight is calculated by summing individual member weights: _Total weight = Sum of (length × unit weight) for all members_.
 
+
+<ArticleMedia id="media-steel-weight-chart" layout="single" type="image" status="placeholder"
+  alt="Reference chart showing W-shape section properties with weight per meter, depth, flange width, and typical uses with calculation formula"
+  caption="Future chart: structural steel weight reference — W-shape properties and weight per meter"
+  suggestedAsset="Reference table with section property callouts and formula"
+  placementIntent="Provides quick reference for steel weight estimation" />
+
 ## Key Provisions
 
 | Steel Section | Height × Width (mm) | Weight (kg/m) | Typical Uses | LEA Relevance |
@@ -69,6 +76,12 @@ With 5% waste: 3,428 × 1.05 = 3,599.4 kg ≈ 3.6 MT
 **Answer: 3.6 MT total structural steel required**
 </Example>
 
+
+<ArticleMedia id="media-steel-estimation-example" layout="single" type="image" status="placeholder"
+  alt="Step-by-step structural steel estimation example showing beam and column weight calculations, section property lookup, and total tonnage for a steel frame"
+  caption="Future diagram: steel tonnage estimation worked example — section weights and frame takeoff"
+  suggestedAsset="Step-by-step illustrated calculation example"
+  placementIntent="Provides practical example of steel quantity estimation" />
 ## Quick Reference: Common Steel Section Weights
 
 | Section | Designation | Height (mm) | Weight (kg/m) | Common Use |

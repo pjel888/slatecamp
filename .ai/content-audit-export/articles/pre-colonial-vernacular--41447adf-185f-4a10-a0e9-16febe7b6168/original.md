@@ -166,3 +166,5 @@ D) Bahay na bato
 
 **Spanish Colonial Bahay Na Bato**, **Modern Filipino Identity**, **American Colonial Era**, **Spanish Colonial Laws Of The Indies**
 
+
+<!-- no-media-needed: existing content format is sufficient without visual media -->

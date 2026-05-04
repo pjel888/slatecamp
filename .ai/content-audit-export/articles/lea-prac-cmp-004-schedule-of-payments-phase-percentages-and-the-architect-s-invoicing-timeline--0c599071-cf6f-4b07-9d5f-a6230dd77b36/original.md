@@ -9,8 +9,6 @@ After studying this article, you should be able to:
 - Explain the architect's invoicing timeline tied to phase completion.
 - Apply payment schedule rules to fee computation scenarios.
 
-
-
 ---
 ### The Five Design Phases and Payment Allocation
 
@@ -30,7 +28,6 @@ Contract Documents represent the most effort-intensive phase. The architect prep
 
 ### Bidding Assistance Phase Payment (5%)
 
-
 <LawCallout code="uap" section="SPP Doc. 202 - Schedule of Payments">
 RA 9266, Section 22 — Architect's compensation based on percentage of construction cost or other agreed basis.
 </LawCallout>
@@ -47,7 +44,6 @@ The architect typically submits invoices following completion of each phase and 
 ### Variations in Payment Schedules
 
 While the standard SPP 202 cumulative percentages (5-20-40-90-95-100) apply to most Design-Bid-Build projects, alternative delivery methods may justify different allocations. Design-Build and CM at Risk projects often front-load payments to earlier phases due to compressed schedules and early contractor involvement. Projects with extensive pre-design planning, site investigation, or feasibility studies may establish additional early-phase payments. Limited-scope projects (partial services) may consolidate or eliminate phases. The contract should specify which payment schedule applies.
-
 
 <ExamTip>**LEA Pattern:** Given a project budget, determine the architect's fee. Common scenario: PCC = Php 10M × 12% fee = Php 1.2M. Watch for distractors that include land cost or architect's fee in the PCC calculation.</ExamTip>
 ### Milestone-Based vs. Time-Based Billing
@@ -70,6 +66,9 @@ The Schedule of Payments should be clearly documented in the Owner-Architect Agr
 
 ---
 
+
+
+<ArticleMedia type="image" caption="SPP 202 Phase Fee Distribution — Timeline and Percentage Chart" description="Horizontal bar chart or process flow showing the five SPP 202 phases with their fee percentages: Schematic Design (15%), Design Development (20%), Contract Documents (50%), Bidding Assistance (5%), Construction Administration (10%). Shows cumulative fee progression and typical billing milestones at each phase completion." />
 ## Related Articles
 
 - [Project Classification Groups](lea-prac-cmp-001)

@@ -1,6 +1,6 @@
 # Planning, Housing & Urban Design — Overview & Study Strategy
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="SubjectSnapshot" status="preserved"]
+<SubjectSnapshot items='[{"label":"PRC Area","value":"Area A"},{"label":"Weight within Area A","value":"20%"},{"label":"Key Laws","value":"4 major statutes"},{"label":"Key Agencies","value":"5 agencies"}]' />
 Extracted summary:
 - Props: items="[{"label":"PRC Area","value":"Area A"},{"label":"Weight within Area A","value":"20%"},{"label":"Key Laws","value":"4 major statutes"},{"label":"Key Agencies","value":"5 agencies"}]"
 - Text: (none detected)
@@ -8,7 +8,7 @@ Extracted summary:
 ## Learning Goal
 
 Master the planning, housing, and urban design framework tested in the LEA, including: general principles and history of planning, housing and human settlements (BP 220, PD 957), 21st-century planning (TOD, smart cities, resilience), landscape ecology, planning governance and Philippine planning law (RA 7160, RA 7279), site planning and environmental analysis, and urban/regional planning. By the end of this study map, you should understand the scale-based mental model and the key Philippine legislation governing planning practice.
-<ArticleMedia id="media-overview-planning-housing-urban-design" a type="image" caption="Planning, Housing & Urban Design — Study Sequence Flowchart" description="Four-step study sequence diagram: Step 1 — Start with Legislation: RA 7160 (LGC), BP 220, PD 957 — memorize specific, testable figures; Step 2 — Build Conceptual Framework: History and planning principles (Haussmann, Howard, Garden City, Jane Jacobs); Step 3 — 21st-Century Layer: Smart cities, TOD, resilience, climate-adaptive urbanism as vocabulary acquisition; Step 4 — Bridge to Design: Site planning and environmental analysis connecting planning to architectural design. Arrows show progression from statutes through theory to application." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-overview-planning-housing-urban-design" type="image" caption="Planning, Housing & Urban Design — Study Sequence Flowchart" alt="Four-step study sequence diagram: Step 1 — Start with Legislation: RA 7160 (LGC), BP 220, PD 957 — memorize specific, testable figures; Step 2 — Build Conceptual Framework: History and planning principles (Haussmann, Howard, Garden City, Jane Jacobs); Step 3 — 21st-Century Layer: Smart cities, TOD, resilience, climate-adaptive urbanism as vocabulary acquisition; Step 4 — Bridge to Design: Site planning and environmental analysis connecting planning to architectural design. Arrows show progression from statutes through theory to application." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Subject Coverage
 
@@ -22,7 +22,7 @@ Seven subtopic areas organized by scale:
 - **Site Planning and Environmental Analysis** — topography, drainage, solar orientation, winds, access, hazard zones
 - **Urban and Regional Planning** — metropolitan planning, land use theory, transportation planning
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="ExamTip" status="preserved"]
+<ExamTip>The LEA frequently asks about the minimum standards under BP 220 and PD 957. These are specific numbers — minimum lot sizes, minimum road right-of-way widths, minimum open space percentages. Memorize the key figures for each housing category (socialized, economic, low-cost, medium-cost, open market).</ExamTip>
 Extracted summary:
 - Props: (none)
 - Text: The LEA frequently asks about the minimum standards under BP 220 and PD 957. These are specific numbers — minimum lot sizes, minimum road right-of-way widths, minimum open space percentages. Memorize the key figures for each housing category (socialized, economic, low-cost, medium-cost, open market).
@@ -35,7 +35,7 @@ Three legislative pillars:
 - **PD 957 — Subdivision and Condominium Buyers' Protective Decree.** Minimum standards for roads, open space, community facilities.
 - **BP 220 — Economic and Socialized Housing.** Minimum design and construction standards for affordable housing.
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Callout" status="preserved"]
+<Callout>The Comprehensive Land Use Plan (CLUP) is one of the most important planning instruments in the Philippine system. Every LGU is required to prepare one. It classifies land into zones (residential, commercial, industrial, agricultural, etc.) and is the legal basis for the Zoning Ordinance. Understanding the CLUP process — who prepares it, who approves it, how long it is valid — is regularly tested.</Callout>
 Extracted summary:
 - Props: (none)
 - Text: The Comprehensive Land Use Plan (CLUP) is one of the most important planning instruments in the Philippine system. Every LGU is required to prepare one. It classifies land into zones (residential, commercial, industrial, agricultural, etc.) and is the legal basis for the Zoning Ordinance. Understanding the CLUP process — who prepares it, who approves it, how long it is valid — is regularly tested.

@@ -1,12 +1,20 @@
 ## The Contract Document Package — Who Draws and Who Signs Each Component
 
-<AuthorityContent courseId="LEA-PRAC-LAW-016" />
+## Learning Goal
 
+After studying this article, you should be able to:
+
+- Identify all documents in the contract document package: drawings, specifications, bidding documents, contract forms.
+- Distinguish who draws (architect/professional) vs. who signs (owner, architect, contractor).
+- Explain the hierarchy of contract documents in case of conflict.
+- Describe the architect's role in assembling and certifying the contract document package.
+
+---
 ### The Complete Contract Document Package Structure
 
 The contract documents package for construction comprises multiple integrated components: special conditions, general conditions, drawings, specifications, bill of materials, and other bid documents. Each component serves distinct functions in communicating design intent, establishing contractual obligations, defining construction requirements, and allocating risk between the owner, architect, contractor, and consultants. The documents are meant to be read together as an integrated whole, with each component informed by and referring to others.
 
-Architectural drawings communicate the design through two-dimensional and three-dimensional representations. Structural drawings depict the building's framing system and load-bearing elements. Mechanical drawings show heating, cooling, and ventilation systems. Electrical drawings depict power distribution, lighting, and communications infrastructure. Sanitary or plumbing drawings show water supply and waste systems. Each specialist prepares drawings within their professional scope, and each must be signed and selead by the appropriate licensed professional responsible for their accuracy and compliance with codes.
+Architectural drawings communicate the design through two-dimensional and three-dimensional representations. Structural drawings depict the building's framing system and load-bearing elements. Mechanical drawings show heating, cooling, and ventilation systems. Electrical drawings depict power distribution, lighting, and communications infrastructure. Sanitary or plumbing drawings show water supply and waste systems. Each specialist prepares drawings within their professional scope, and each must be signed and sealed by the appropriate licensed professional responsible for their accuracy and compliance with codes.
 
 ### Authorship and Preparation of Drawings
 
@@ -43,3 +51,41 @@ The bill of materials, cost estimates, and other bid documents are prepared base
 When a professional signs and seals a document, that professional assumes direct responsibility for its accuracy, completeness, code compliance, and professional adequacy. If the document contains errors, omissions, or non-compliance with building codes, the responsible professional is liable for any resulting construction defects, cost overruns, or safety issues. A structural engineer who stamps structural drawings later found to be inadequate for the loads imposed faces potential liability for structural failure, injury, or property damage.
 
 This responsibility makes the direct supervision requirement essential. An architect cannot safely delegate signing and sealing to others or sign documents without thorough review and personal responsibility. The professional's insurance carrier (professional liability insurance) covers claims arising from negligence in the preparation of documents, but only if the professional exercised the care and diligence required of a competent professional. Documents signed without proper supervision or review, or documents containing obvious errors that reasonable review would have caught, may fall outside insurance coverage and expose the professional to uninsured personal liability.
+
+<LawCallout code="ra9266" section="Section 33 - Signing and Sealing">
+Legal Basis: RA 9266 (Architecture Act of 2004), Section 20(c), defining the contract document package: architectural plans, specifications, bill of materials, cost estimates, general conditions, and bidding documents.
+</LawCallout>
+Extracted summary:
+- Props: code="ra9266" title="RA 9266 Section 20(c) — Contract Document Package"
+- Text: Legal Basis: RA 9266 (Architecture Act of 2004), Section 20(c), defining the contract document package: architectural plans, specifications, bill of materials, cost estimates, general conditions, and bidding documents.
+
+<Warn />
+Extracted summary:
+- Props: (none)
+- Text: ⚠️ The architect signs and seals ONLY architectural documents. Structural, electrical, mechanical, and plumbing documents are signed by the respective professional engineers. But the architect as AoR retains overall coordination responsibility for the entire package. — expect this as a trap answer on the LEA.
+
+<ExamTip />
+Extracted summary:
+- Props: (none)
+- Text: Document responsibility breakdown: Architect = plans, specs, BOM, estimates, conditions, bidding docs (signs/seals all). Structural Eng = structural design/calculations. Electrical Eng = electrical systems. MEP Eng = mechanical/plumbing. Architects COORDINATE but don't sign engineering documents.
+
+---
+
+
+
+<ArticleMedia type="image" caption="Contract Document Package — Drawings, Specifications, and Who Signs Each" description="Diagram showing the complete contract document package: Architectural drawings (architect signs/seals), Structural drawings (structural engineer signs), MEP drawings (MEP engineer signs), Specifications (architect/consultant signs), Bill of Quantities (QS signs). Each document type shows who prepares, who seals, and who is legally responsible. Distinction between design intent documents and construction documents." />
+## Related Articles
+
+- [RA 9266: Structure and Key Definitions](lea-prac-law-001)
+- [Scope of Practice](lea-prac-law-002)
+- [PRBoA Powers and Functions](lea-prac-law-005)
+- [PRC vs. PRBoA](lea-prac-law-006)
+- [Civil Code Article 1723 Liability](lea-prac-law-010)
+- [Signing and Sealing Rules](lea-prac-law-017)
+- [Code of Ethical Conduct](lea-prac-eth-001)
+- [Professional Practice Forms](lea-prac-frm-001)
+
+<Note>
+(none detected)
+[/SLATECAMP_UI_BLOCK:ui_0001 component="AuthorityContent" status="preserved"]
+</Note>

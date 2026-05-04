@@ -4,6 +4,10 @@
 
 Identify the Ottoman dome system — central dome, four half-domes, pendentives, cascading buttressing — and explain how Sinan achieved the iconic Ottoman silhouette exemplified by the Selimiye and Süleymaniye Mosques.
 ## Core Concept
+
+
+<ArticleMedia id="media-hist-004-06-ottoman-evolution" layout="single" type="image" status="placeholder" alt="Comparative plan and section diagram tracing Ottoman mosque evolution: (1) Early Ottoman Bursa-type — multi-domed rectangular prayer hall with separate portico; (2) Üç Şerefeli Mosque (Edirne, 1438–1447) — central dome with four smaller domes, precursor to centralized plan; (3) Süleymaniye Mosque (Istanbul, 1550–1558, Sinan) — central dome flanked by four half-domes with cascading semi-domes; (4) Selimiye Mosque (Edirne, 1568–1575, Sinan) — single 31.5m dome on eight piers, apogee of Ottoman dome system. Each phase annotated with dome diameter, support system, and structural innovations." caption="Ottoman Mosque Evolution — Bursa to Edirne to Istanbul Typology" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
 **Ottoman architecture** (15th–19th centuries) represents Islam's most successful synthesis of Byzantine structural logic with Islamic spatial needs. The Ottomans conquered Constantinople (1453) and inherited Hagia Sophia—a monumental Byzantine dome surrounded by half-domes. Rather than abandon this model, Ottoman architects embraced it and developed it further. The result is the **centralized domed mosque**, a distinctly Ottoman contribution to Islamic architecture.
 
 
@@ -77,6 +81,8 @@ By the 18th century, Ottoman architecture absorbed European Baroque elements (fl
 **Tulip Period** — Ottoman period (1718–1730 CE); marked by Baroque influence and decoration; represents European stylistic integration into Ottoman tradition.
 
 [SLATECAMP_UI_BLOCK:ui_0013 component="Warn" status="preserved"]
+
+<ArticleMedia id="media-hist-004-06-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparative diagram of the Ottoman cascade dome system (central dome, four half-domes, pendentives, cascading buttresses) across Sinan's masterworks: Şehzade Mosque (1548), Süleymaniye Mosque (1557), and Selimiye Mosque (1575)." caption="Ottoman Dome System — Sinan's Structural Evolution" suggestedAsset="Timeline diagram" placementIntent="Timeline diagram for architectural period" />
 
 ## Related Articles
 

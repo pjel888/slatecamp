@@ -1,26 +1,21 @@
 {
-  "attempted_at": "2026-05-04T00:06:10.003Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:16:40.125Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "candidate.md matches original.md; refusing no-op apply."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "25bb445b-ebd5-452f-ad9e-f3912b17e740",
   "slug": "exam-meta-deck-heights",
   "preparation_actions": [
     "auto_generated_diff"
   ],
-  "remote_hash_before": "sha256:8b96bd4da9c5a07fbc3a3f6150ad237cae5a77acb3e501136e9843480709eded",
-  "original_hash": "sha256:8b96bd4da9c5a07fbc3a3f6150ad237cae5a77acb3e501136e9843480709eded",
-  "candidate_hash": "sha256:894d5e9feb7ed4f9e45e9f6ab6c8b3e5eed1cf3f23548eafa25fc4dd7ddc9f49",
+  "remote_hash_before": "sha256:3c606db658173c3421e19f284dfb709cd1caf9a9bc854f39af761f173a6c8e37",
+  "original_hash": "sha256:3c606db658173c3421e19f284dfb709cd1caf9a9bc854f39af761f173a6c8e37",
+  "candidate_hash": "sha256:3c606db658173c3421e19f284dfb709cd1caf9a9bc854f39af761f173a6c8e37",
   "stale_check_passed": true,
-  "remote_updated_at_before": "2026-05-03T13:50:32.140756+00:00"
+  "remote_updated_at_before": "2026-05-04T01:59:48.444663+00:00"
 }

@@ -1,46 +1,38 @@
 {
   "article_id": "6e84b3e6-5dd9-4557-8202-5085d24a3708",
   "slug": "top-50-traps-2024-irr",
-  "generated_at": "2026-05-04T00:06:18.945Z",
+  "generated_at": "2026-05-04T02:16:52.125Z",
   "old_hash": "sha256:51546290610bf820ace1e3e4be1ac9f41171587393a568ffa648de809ce85f07",
-  "new_hash": "sha256:cfad518c1c13aa46ef96d0373b06f9f60bbde05f9a76180aa9d8c7ca4d3d7b89",
+  "new_hash": "sha256:df371a17e135cdb4a1af67fa058f637c3223e2f933aac386f909dd570fe454d8",
   "original_hash": "sha256:51546290610bf820ace1e3e4be1ac9f41171587393a568ffa648de809ce85f07",
   "normalized_hash": "sha256:cfad518c1c13aa46ef96d0373b06f9f60bbde05f9a76180aa9d8c7ca4d3d7b89",
-  "candidate_hash": "sha256:cfad518c1c13aa46ef96d0373b06f9f60bbde05f9a76180aa9d8c7ca4d3d7b89",
+  "candidate_hash": "sha256:df371a17e135cdb4a1af67fa058f637c3223e2f933aac386f909dd570fe454d8",
   "changed": true,
-  "changed_line_count": 32,
-  "inserted_line_count": 0,
-  "deleted_line_count": 17,
+  "changed_line_count": 34,
+  "inserted_line_count": 1,
+  "deleted_line_count": 0,
   "ui_blocks_original_count": 4,
-  "ui_blocks_candidate_count": 0,
-  "ui_blocks_changed_count": 4,
+  "ui_blocks_candidate_count": 4,
+  "ui_blocks_changed_count": 0,
   "ui_blocks_count": 4,
-  "unresolved_placeholders_count": 1,
-  "preserved_blocks_count": 0,
+  "unresolved_placeholders_count": 0,
+  "preserved_blocks_count": 4,
   "changed_text_summary": {
-    "changed": 32,
-    "inserted": 0,
-    "deleted": 17,
+    "changed": 34,
+    "inserted": 1,
+    "deleted": 0,
     "original_line_count": 458,
-    "candidate_line_count": 441
+    "candidate_line_count": 459
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0001",
-      "ui_0002",
-      "ui_0003",
-      "ui_0004"
-    ],
-    "changed_count": 4
+    "missing_block_ids": [],
+    "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate contains unresolved UI block placeholders.",
-    "Candidate is missing 4 preserved UI block(s)."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 4 preserved UI block(s)."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

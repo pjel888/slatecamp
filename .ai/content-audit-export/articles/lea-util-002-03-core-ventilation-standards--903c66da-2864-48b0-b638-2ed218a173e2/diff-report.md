@@ -1,33 +1,32 @@
 # Content Diff Report: lea-util-002-03-core-ventilation-standards
 
-Generated: 2026-05-04T00:06:46.065Z
+Generated: 2026-05-04T02:17:30.200Z
 Article ID: 903c66da-2864-48b0-b638-2ed218a173e2
-Changed: true
-Safe to push locally: false
+Changed: false
+Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:d2f75979b83d0a8cefe3fd3aa370225ca50e6ef3b755761447ab8c7f8675fcdd`
+- Original: `sha256:ec48f91f420a40255dc15b0171895515ddb0785a5d5eec7f183e70a1ca9be39c`
 - Normalized: `sha256:fb67e6e0aa3d0ba6190273808d69af5f78189516a113a1912f85b77337a73ce9`
-- Candidate: `sha256:fb67e6e0aa3d0ba6190273808d69af5f78189516a113a1912f85b77337a73ce9`
+- Candidate: `sha256:ec48f91f420a40255dc15b0171895515ddb0785a5d5eec7f183e70a1ca9be39c`
 
 ## Line summary
 
-- Changed lines: 226
+- Changed lines: 0
 - Inserted lines: 0
-- Deleted lines: 1
+- Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 3
-- UI blocks preserved: 0
-- UI blocks changed/missing: 3
-- Unresolved placeholders: 1
+- UI blocks preserved: 3
+- UI blocks changed/missing: 0
+- Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate contains unresolved UI block placeholders.
-- Candidate is missing 3 preserved UI block(s).
+- None
 
 ## Warnings
 

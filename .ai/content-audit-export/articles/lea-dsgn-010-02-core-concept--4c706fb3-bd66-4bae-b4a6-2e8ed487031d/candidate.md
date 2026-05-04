@@ -31,7 +31,7 @@ A parking structure must accommodate vehicle maneuverability, emergency egress, 
 
 - To rise 3.0 m (one floor level) at a **1:6 gradient**:
 - $3.0\text{ m} \times 6 = 18.0\text{ m}$ total ramp length.
-<ArticleMedia id="media-lea-dsgn-010-02-core-concept" a type="image" caption="Parking Structure Geometry — Ramp, Bay, and Aisle Dimensions" description="Plan and section of parking structure showing: ramp grade (max 1:7), parking bay width, aisle dimensions (6.1m for 90°), column spacing (3-bay standard), accessible stall (3.7m × 5.0m per BP 344), and turning radii for vehicle maneuverability." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-010-02-core-concept" type="image" caption="Parking Structure Geometry — Ramp, Bay, and Aisle Dimensions" alt="Plan and section of parking structure showing: ramp grade (max 1:7), parking bay width, aisle dimensions (6.1m for 90°), column spacing (3-bay standard), accessible stall (3.7m × 5.0m per BP 344), and turning radii for vehicle maneuverability." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
@@ -69,7 +69,7 @@ Question: "Is a 2.10 m headroom compliant for a PWD walkway?"
 - **Answer:** **No.** BP 344 2024 requires a minimum of **2.20 m**.
 
 **Exam Tip:** Ramp grades in parking structures: max 1:7 (14.3%) per PD 1096. Bay width for 90° parking: 2.5m × 5.0m standard, 2.7m × 5.0m for compact accessible. Aisle width for 90°: 6.1m minimum.
-<ArticleMedia id="media-lea-dsgn-010-02-core-concept" a type="image" caption="Parking Ramp Section — Grade Limits and Vehicle Clearance" description="Section diagram of parking ramp showing: ramp grades (max 1:7 or ~14.3%), transition slopes at top/bottom, headroom clearance (2.1m minimum), and vehicle approach/ departure angles. Bay width (typically 3-bay structural bay at 16.5m) and column spacing annotated." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-010-02-core-concept" type="image" caption="Parking Ramp Section — Grade Limits and Vehicle Clearance" alt="Section diagram of parking ramp showing: ramp grades (max 1:7 or ~14.3%), transition slopes at top/bottom, headroom clearance (2.1m minimum), and vehicle approach/ departure angles. Bay width (typically 3-bay structural bay at 16.5m) and column spacing annotated." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Cross-References
 
@@ -77,4 +77,12 @@ See **LEA-DSGN-010-01** (Parking Requirements) for parking count calculation, **
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="WikiMistakeList" status="preserved"]
+<WikiMistakeList
+  mistakes={[
+    'ERR-DSGN-026: Using 1:8 gradient for vehicle ramps (Correct: 1:6 maximum).',
+    'Using 3.70 m width for PWD parking (Correct: BP 344 2024 revised this to 4.00 m).',
+    'ERR-DSGN-028: Designing vehicle areas with only 2.0 m clearance (Correct: 2.40 m for vehicles, 2.20 m for PWD walkways).',
+    'Applying 1:20 ramp slope as a strict requirement when 1:12 remains the enforceable permit minimum during the transition period.',
+    'Confusing turning radii; standard car inside wheel radius is 6.1 m, requiring 12.2 m for a full U-turn.',
+  ]}
+/>

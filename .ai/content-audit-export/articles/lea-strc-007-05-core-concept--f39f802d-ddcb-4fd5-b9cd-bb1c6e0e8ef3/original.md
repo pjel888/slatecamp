@@ -10,6 +10,7 @@ By the end of this article, you will be able to:
 Embedded conduits (for electrical, mechanical, or plumbing services) weaken concrete sections by reducing cross-sectional area and creating stress concentrations. The LEA tests your mastery of size and spacing limits to protect structural integrity. Critical limits: max 1/3 of slab/beam thickness, max 4% of column cross-section, min 3 diameters spacing between conduits, and supplemental reinforcement requirements.
 
 ## Core Concept
+<ArticleMedia id="media-lea-strc-007-05-core-concept" a type="image" caption="Embedded Conduits in Concrete — Placement Rules and Sleeve Details" description="Beam and slab cross-sections showing: (1) Conduit placement zones avoiding tension regions; (2) Maximum conduit size (≤1/3 member depth); (3) Horizontal and vertical spacing requirements; (4) Sleeve details at beam penetrations; (5) Grouping limitations. Areas where conduits are prohibited (compression zones, plastic hinge regions) highlighted in red." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 Embedded conduits—electrical, HVAC, plumbing ducts, and utility sleeves—must not compromise structural capacity. NSCP 2015 Chapter 4, Section 406.3 sets maximum cross-sectional area limits and spacing rules. The underlying principle: the void from an embedded pipe reduces the concrete's ability to carry load and creates a weak plane. Larger conduits or too many conduits in a small region can lead to local crushing, cracking, or shear transfer failure.
 
@@ -80,7 +81,6 @@ Electrical conduits (PVC, 16–25 mm) in floor slabs are ubiquitous in Philippin
 <Tip>
 Slab/Beam = max h/3. Column = max 4% area. Spacing = 3 diameters center-to-center. If conduit exceeds limit, either (1) downsize, or (2) add reinforcement normal to pipe (0.002 × area). Always check cumulative area if multiple pipes in same section. Cover = 40–75 mm per exposure (same as rebar cover rules).
 </Tip>
-
 
 ## Related Articles
 

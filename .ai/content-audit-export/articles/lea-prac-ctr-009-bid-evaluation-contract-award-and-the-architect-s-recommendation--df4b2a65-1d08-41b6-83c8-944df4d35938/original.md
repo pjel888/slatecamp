@@ -9,8 +9,6 @@ After studying this article, you should be able to:
 - Distinguish bid evaluation from bid shopping.
 - Identify the legal effect of contract award on the parties.
 
-
-
 ### The Bid Evaluation Process
 
 The architect plays a central role in assessing all submitted proposals against the criteria outlined in the tender documents. This evaluation examines not only the financial offer but also the contractor's qualifications, proposed methodology, timeline, and compliance with contract specifications.
@@ -81,3 +79,5 @@ The bid evaluation process must be documented thoroughly. The architect maintain
 - [Change Orders](lea-prac-ctr-016)
 - [Dispute Resolution](lea-prac-ctr-020)
 - [Fee Compensation Methods](lea-prac-cmp-001)
+
+<!-- no-media-needed: professional practice article, text/tables/UI blocks are optimal format -->

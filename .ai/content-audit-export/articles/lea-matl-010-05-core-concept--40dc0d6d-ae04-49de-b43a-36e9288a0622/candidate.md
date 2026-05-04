@@ -41,9 +41,56 @@ In the Philippines, standard paint cans are 1 liter, 4 liters (1 gallon), and 20
 
 ## Worked Examples
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Example" status="preserved"]
+<Example>
+**Scenario 1: Interior wall painting, 150 m² total area, 2 coats (primer + finish), coverage 10 m²/L per coat**
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Example" status="preserved"]
+**Step 1: Calculate paint needed for one coat**
+
+Paint per coat = Total area ÷ Coverage rate = 150 m² ÷ 25 m²/L = 6 liters (using standard interior latex coverage)
+
+**Step 2: Calculate for two coats**
+
+Total paint = 15 L × 2 coats = 30 liters
+
+**Step 3: Add 5% waste allowance**
+
+Total with waste = 30 L × 1.05 = 31.5 liters ≈ 32 liters
+
+**Step 4: Determine can quantities**
+
+Using 4-liter (1 gallon) cans: 32 L ÷ 4 L/can = 8 cans
+
+Using 1-liter cans: 32 cans
+
+**Answer: 32 liters total, approximately 8 cans of 4 liters each**
+</Example>
+
+<Example>
+**Scenario 2: Exterior wall painting, 300 m² surface area, rough concrete texture, single topcoat after primer, coverage: primer 11 m²/L, topcoat 10 m²/L (reduced due to texture), 10% waste factor**
+
+**Step 1: Account for rough surface (reduce coverage by 15%)Adjusted primer coverage: 25 m²/L × 0.85 = 21.25 m²/L
+Adjusted topcoat coverage: 25 m²/L × 0.85 = 21.25 m²/L
+
+**Step 2: Calculate primer needed**
+
+Primer = 300 m² ÷ 9.35 m²/L = 32.1 liters
+
+**Step 3: Calculate topcoat needed**
+
+Topcoat = 300 m² ÷ 8.5 m²/L = 35.3 liters
+
+**Step 4: Sum and apply waste factor**
+
+Total before waste: 32.1 + 35.3 = 67.4 liters
+
+Total with 10% waste: 67.4 L × 1.10 = 74.1 liters ≈ 75 liters
+
+**Step 5: Can quantities**
+
+Using 20-liter containers: 75 L ÷ 20 L = 3.75 ≈ 4 containers (round up)
+
+**Answer: 75 liters total, approximately 4 containers of 20 liters each (or 19 cans of 4 liters)**
+</Example>
 
 
 <ArticleMedia id="media-paint-estimation-example" layout="single" type="image" status="placeholder"
@@ -87,19 +134,21 @@ On the LEA, paint estimation questions focus on:
 
 7. **Mixed areas**: Different surfaces (interior/exterior, smooth/rough) calculated separately, then summed.
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+<Tip>
+**Memory aid**: Standard coverage is ~10 m²/L per coat. Two coats = ÷ 5 (m²/L per full system). For rough surfaces, reduce coverage by 15–20%. Always round UP the final liter count and can quantity for ordering safety stock.
+</Tip>
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Using coverage rate (m²/L) as if it were a divisor when it should be" correction="Paint needed = Area ÷ Coverage rate. If coverage is 10 m²/L and area is 100 m², then paint = 100 ÷ 10 = 10 liters (not 100 × 10)." />
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Forgetting to account for two coats (primer and finish)" correction="Most projects require primer (prep coat) and finish coat. Calculate paint for EACH coat separately, then sum. Or multiply single-coat amount by 2." />
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Not adjusting coverage for surface roughness or condition" correction="Rough, porous, or previously painted surfaces reduce coverage by 15–20%. Adjust the coverage rate downward before calculating." />
 
-[SLATECAMP_UI_BLOCK:ui_0007 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Rounding DOWN the final paint quantity" correction="Always round UP when ordering paint. Shortages mid-project are costly; excess paint can be stored or used for touch-ups." />
 
-[SLATECAMP_UI_BLOCK:ui_0008 component="WikiMistakeList" status="preserved"]
+<WikiMistakeList mistakes={["Confusing m²/L (coverage rate) with L/m² (inverse)", "Forgetting that one coat may not be enough for color change or problem surfaces", "Using the printed coverage rate without accounting for application method (brush vs. spray reduces coverage)", "Mixing units: area in feet and coverage in metric, or vice versa"]} />
 
 ## Related Articles
 

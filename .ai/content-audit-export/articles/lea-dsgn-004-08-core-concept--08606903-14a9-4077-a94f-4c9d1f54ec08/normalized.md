@@ -20,7 +20,7 @@ Key occupancy determinants include guest room count, assembly areas like dining 
 Fire escape routes must accommodate a **45 m** travel distance in unsprinklered areas or **60 m** where sprinkler systems are installed per the **RA 9514 2019 Revised IRR**. Exit width is calculated at **7.6 mm per occupant**, and double egress is mandated once occupancy exceeds 50 persons. The standard floor-to-floor height for resort corridors is typically **3.0 m**.
 
 Accessible features under **BP 344** include ramps at a **1:12 maximum slope** per DPWH MC No. 03 s. 2025. Accessible door widths must be a minimum of **900 mm**. Per **BP 344 2024 Revised IRR §1004/§1005**, accessible parking stalls must be **3.7–4.0 m width × 5.0 m length**, compared to standard stalls at **2.5 m × 5.0 m**.
-<ArticleMedia id="media-lea-dsgn-004-08-core-concept" a type="image" caption="Resort and Eco-Tourism Facility — Site Planning and Zoning Diagram" description="Site plan bubble diagram for a resort showing zoning zones: accommodation clusters (1 slot/room parking), amenity core (pool, restaurant, spa), service/back-of-house, and eco-preservation zones. Annotated with DOT hospitality standards." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-004-08-core-concept" type="image" caption="Resort and Eco-Tourism Facility — Site Planning and Zoning Diagram" alt="Site plan bubble diagram for a resort showing zoning zones: accommodation clusters (1 slot/room parking), amenity core (pool, restaurant, spa), service/back-of-house, and eco-preservation zones. Annotated with DOT hospitality standards." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ---
 
@@ -75,7 +75,7 @@ DOT-classified eco-tourism facilities prioritize environmental certification alo
 ---
 
 **Exam Tip — ERR-DSGN-019:** Hotel parking ratios: de luxe = 1 slot/room, first-class = 1 slot/2 rooms per PD 1096 Rule XVIII. Do not confuse with BP 344 accessible stall requirements (3.7m × 5.0m).
-<ArticleMedia id="media-lea-dsgn-004-08-core-concept" a type="image" caption="Resort Master Plan — Accommodation, Amenity, and Eco-Zones" description="Master site plan of a beach resort showing: accommodation clusters (cottages, hotel block), amenity core (pool deck, restaurant, spa), eco-preservation buffer (beach setback, mangrove zone), and service yard. DOT minimum room sizes and NBC parking ratios labeled." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-004-08-core-concept" type="image" caption="Resort Master Plan — Accommodation, Amenity, and Eco-Zones" alt="Master site plan of a beach resort showing: accommodation clusters (cottages, hotel block), amenity core (pool deck, restaurant, spa), eco-preservation buffer (beach setback, mangrove zone), and service yard. DOT minimum room sizes and NBC parking ratios labeled." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Cross-References
 

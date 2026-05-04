@@ -6,6 +6,10 @@ Identify Le Corbusier's Five Points of Architecture — pilotis, roof garden, fr
 ## Core Concept
 **Le Corbusier** (Charles-Édouard Jeanneret, 1887–1965) was the 20th century's most influential architect and theorist. In 1926, he formulated the **Five Points of Architecture**—a set of principles that became the DNA of modernism. These five points directly respond to new structural possibilities (reinforced concrete) and modernist ideology (functionalism, openness, light).
 
+
+<ArticleMedia id="media-hist-008-03a-core-concept" layout="single" type="image" status="placeholder" alt="View of Villa Savoye (Poissy, 1928–1931, Le Corbusier), showing pilotis raising the mass off the ground, ribbon windows, roof garden, and free facade composition — exemplifying the Five Points of a New Architecture." caption="Villa Savoye — Le Corbusier's Five Points of Architecture" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
+
 <Tip>
 **1926 Five Points = Modernism's formula.** Pilotis, Free Plan, Free Facade, Ribbon Windows, Roof Garden. These five points are not aesthetic preferences—they are logical consequences of concrete construction. Master these five and you understand modern architecture's philosophical and structural foundation.
 </Tip>
@@ -38,6 +42,10 @@ Le Corbusier's other major works include the **Unité d'Habitation** (1947–195
 <Warn>
 Do not assume all Le Corbusier buildings follow the Five Points doctrine strictly. Notre-Dame du Haut is deliberately sculptural and emotionally driven—a departure from the rational Five Points system. His later work shows evolution away from rigid geometric principles toward expressionism. Understand the chronological shift in his philosophy.
 </Warn>
+
+
+<ArticleMedia id="media-hist-008-03a-core-concept" layout="single" type="image" status="placeholder" alt="Diagram of Le Corbusier's Five Points of Architecture: (1) pilotis, (2) roof garden, (3) free plan, (4) horizontal window, (5) free facade, showing how each point liberated the house from traditional structural constraints." caption="Le Corbusier's Five Points — Section Diagram" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
 
 ## Key Facts and Testable Items
 
@@ -84,6 +92,8 @@ You may see: "Which architect formulated the Five Points of Architecture in 1926
 **Megastructure**: Large-scale structural frame at urban or multi-building scale; Unité d'Habitation exemplifies this; can house multiple functions within a single massive system.
 
 **Modulor**: Le Corbusier's proportional system based on human measurements; used to ensure all building elements relate to human scale; represents his belief in scientific design.
+
+<ArticleMedia id="media-hist-008-03a-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Diagram illustrating Le Corbusier's Five Points of Architecture: pilotis (free ground floor), roof garden, free plan (non-load-bearing walls), horizontal ribbon window, and free facade, with annotations on Villa Savoye.\" caption=\"Le Corbusier — Five Points Diagram\" suggestedAsset=\"Style comparison illustration\" placementIntent=\"Style comparison for architectural period\" />
 
 ## Related Articles
 

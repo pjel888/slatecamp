@@ -64,6 +64,8 @@ The **plaza mayor** itself functioned as a multipurpose space: market, assembly 
 
 **Fortress Church** — Religious building designed with defensive features—thick walls, gun ports, minimal windows—reflecting 16th-17th-century colonial security needs.
 
+<ArticleMedia id="media-hist-013-01-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Plan diagram of a Spanish colonial city according to the Laws of Indias (1573): orthogonal grid plan with central plaza mayor anchoring the cathedral, governor's palace, and municipal buildings, showing standardized colonial urban design." caption="Spanish Colonial — Laws of the Indies Grid Plan" suggestedAsset="Timeline diagram" placementIntent="Timeline diagram for architectural period" />
+
 ## Related Articles
 
 See also within Latin American Architecture: **lea-hist-013-02-core-concept**.

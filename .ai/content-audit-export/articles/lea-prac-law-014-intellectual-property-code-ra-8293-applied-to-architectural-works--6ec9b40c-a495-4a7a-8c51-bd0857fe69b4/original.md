@@ -72,3 +72,5 @@ Function vs. Expression distinction: RA 8293 protects the ORIGINAL EXPRESSION (s
 - [Signing and Sealing Rules](lea-prac-law-017)
 - [Code of Ethical Conduct](lea-prac-eth-001)
 - [Professional Practice Forms](lea-prac-frm-001)
+
+<!-- no-media-needed: professional practice article, text/tables/UI blocks are optimal format -->

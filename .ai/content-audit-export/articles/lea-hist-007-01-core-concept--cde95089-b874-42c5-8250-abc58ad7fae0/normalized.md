@@ -59,6 +59,8 @@ For detailed coverage of Mughal architecture including the Taj Mahal, charbagh g
 
 [SLATECAMP_UI_BLOCK:ui_0010 component="Warn" status="preserved"]
 
+<ArticleMedia id="media-hist-007-01-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparative diagram of Hindu (shikhara tower, gopura gateway), Buddhist (stupa, chaitya hall), and Mughal (chahar bagh garden, iwan) architectural traditions in India, showing contrasting building types, spatial organization, and key monuments." caption="Indian Architecture — Hindu, Buddhist, Mughal Comparison" suggestedAsset="Style comparison illustration" placementIntent="Style comparison for architectural period" />
+
 ## Related Articles
 
 See also within Asian & Pacific Architecture: **lea-hist-007-02-core-concept**, **lea-hist-007-03-core-concept**, **lea-hist-007-04-core-concept**, **lea-hist-007-05-core-concept**.

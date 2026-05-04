@@ -10,6 +10,7 @@ By the end of this article, you will be able to:
 This topic distinguishes between statically determinate and statically indeterminate structures. The LEA tests whether you understand how support conditions and member arrangements determine which structures can be fully analyzed using equilibrium equations alone. You will NOT be tested on analysis methods (moment distribution, stiffness methods); focus on the concept of static determinacy.
 
 ## Core Concept
+<ArticleMedia id="media-lea-strc-001-06-core-concept" a type="image" caption="Static Determinacy — Determinate vs Indeterminate Comparison" description="Comparative diagram showing determinate structures (simply supported beam with 2 reactions, n=0; cantilever with 3 reactions, n=0) alongside indeterminate structures (fixed-ended beam with 4 reactions, n=1; continuous beam with 4 supports, n=3). Each structure labeled with reaction count, degree of indeterminacy, and whether settlement causes force redistribution." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 **Static Determinacy** is the property of a structure that depends on whether the support reactions and internal forces can be completely determined using only the three equations of static equilibrium in 2D:
 
@@ -83,7 +84,6 @@ In Philippine structural design, most buildings use continuous beams and rigid f
 - **Cantilever = Determinate** (3 unknowns, 3 equations; perfect match)
 - **Continuous or Fixed-Ended = Indeterminate** (more than 3 unknowns)
 - **Degree n = r − 3** (for unknowns r at supports; ignore joint unknowns if properly accounted)</Tip>
-
 
 ## Related Articles
 

@@ -11,6 +11,7 @@ By the end of this article, you will be able to:
 This topic covers the five types of internal forces that develop within structural members under loading. The LEA tests whether you can identify, define, and distinguish internal forces conceptually. You will NOT be tested on stress calculations, strain relationships, or material-specific formulas (like the timber shear formula); focus on force type definitions and their structural effects.
 
 ## Core Concept
+<ArticleMedia id="media-lea-strc-001-05-core-concept" a type="image" caption="Internal Forces — Tension, Compression, Shear, Bending, and Torsion" description="Five-panel illustration showing each internal force type: (1) Tension — pulling arrows elongating a member; (2) Compression — pushing arrows shortening a member with buckling indicator; (3) Shear — transverse sliding action at a cut section; (4) Bending — curved member showing compression/tension faces; (5) Torsion — twisting moment about longitudinal axis. Each panel shows the force direction, member deformation, and a real structural example." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 When loads are applied to a structure, they cause internal forces to develop within the structural members. Cutting a member at any cross-section and examining the internal actions reveals forces and moments that keep the separated portions in equilibrium. Five types of internal forces are fundamental to structural behavior:
 
@@ -65,7 +66,6 @@ In Philippine structural design, engineers identify internal forces through free
 - **Torsion = twisting moment** (rotates about the axis)
 
 **Shear is highest at supports; bending is highest at midspan (for simply supported beams).**</Tip>
-
 
 ## Related Articles
 

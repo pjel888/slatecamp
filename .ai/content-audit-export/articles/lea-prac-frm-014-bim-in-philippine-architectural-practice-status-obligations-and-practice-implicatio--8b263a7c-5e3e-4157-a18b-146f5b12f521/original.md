@@ -1,9 +1,15 @@
 ## BIM in Philippine Architectural Practice—Status, Obligations, and Practice Implications
 
-<JSX>null</JSX>
+## Learning Goal
 
-Building Information Modeling (BIM) is a digital methodology that creates a unified, data-rich model of a building's design, construction, and operation. The architect maintains the model throughout design phases, transferring it to contractors for construction planning and facility management teams for long-term stewardship. BIM adoption in the Philippines is advancing, particularly for large public and institutional projects where coordination complexity and long-term asset management justify the investment.
+After studying this article, you should be able to:
 
+- Describe the status of BIM adoption in Philippine architectural practice.
+- Explain the architect's obligations regarding BIM deliverables.
+- Identify the practice implications of BIM: digital signing, liability, data ownership.
+- Distinguish BIM from traditional CAD workflows in a practice context.
+
+---
 ### Current Status of BIM Adoption in Philippine Practice
 
 BIM adoption in the Philippines remains moderate compared to advanced economies. Government agencies like DPWH and large private developers recognize BIM's value for complex infrastructure and high-rise projects, but adoption is not yet mandated by law or universal standard. Most architectural firms in the Philippines still practice in 2D, though many large firms now offer BIM services as a premium offering or for specific project types.
@@ -18,6 +24,26 @@ The contract should clarify who owns the model, who has usage rights, and what h
 
 ### Obligations When BIM is Specified
 
+<ExamTip>
+  **Exam Tip:** Know the hierarchy of Philippine architectural laws: RA 9266 (primary), Code of Ethical Conduct (professional conduct rules), SPP Documents (service standards), UAP Documents (contract standards), NBCP (building regulation). LEA questions test which law governs specific situations.
+</ExamTip>
+Extracted summary:
+- Props: (none)
+- Text: **Exam Tip:** Know the hierarchy of Philippine architectural laws: RA 9266 (primary), Code of Ethical Conduct (professional conduct rules), SPP Documents (service standards), UAP Documents (contract s...
+
+<Warn>
+  ****Warning:** Environmental compliance (EIA, ECC, CNC) is a distinct regulatory process from building permit requirements. An ECC is required before the building permit application — they are sequential, not parallel. Architects must advise clients on both sets of obligations or risk project delays and penalties.**
+</Warn>
+Extracted summary:
+- Props: (none)
+- Text: ⚠️ **Warning:** Environmental compliance (EIA, ECC, CNC) is a distinct regulatory process from building permit requirements. An ECC is required before the building permit application — they are sequentia... — expect this as a trap answer on the LEA.
+
+<LawCallout code="irr" section="Regulatory Framework" title="Applicable Regulations">
+Philippine architectural practice operates under multiple regulatory instruments: RA 9266 (Architecture Act), the Code of Ethical Conduct, SPP Documents, UAP Documents, the National Building Code (PD 1096), and various specialty laws covering accessibility (BP 344), fire safety (RA 9514), and environmental compliance (PD 1586, DENR DAO).
+</LawCallout>
+Extracted summary:
+- Props: code=ra9266, section=Regulatory Framework, title=Applicable Regulations
+- Text: Philippine architectural practice operates under multiple regulatory instruments: RA 9266 (Architecture Act), the Code of Ethical Conduct, SPP Documents, UAP Documents, the National Building Code (PD ...
 When a client specifies BIM, the architect assumes an affirmative obligation to deliver a coordinated, clash-free model suitable for construction. This is more demanding than 2D coordination. The architect must: (1) establish naming conventions and file structure before design begins; (2) coordinate continuously with structural, MEP, and landscape consultants to identify and resolve conflicts early; (3) conduct regular clash detection and issue clash reports to consultants; (4) maintain model discipline and accuracy throughout design phases; and (5) deliver a fully coordinated model at construction documents phase.
 
 Failure to deliver a properly coordinated BIM constitutes professional negligence. If the contractor encounters clashes not detected in the model, the architect may be liable for the cost of resolution—potentially significant for large projects. This liability risk is higher than in 2D coordination, where 2D plan conflicts are discovered during construction without the same legal expectation of advance resolution.
@@ -45,3 +71,26 @@ Documentation is key. Architects should document modeling assumptions, note area
 BIM proficiency requires specialized training. The Board of Architecture does not yet mandate BIM training for licensure, but emerging standards (such as ISO 19650 for BIM information management) suggest this may evolve. Architects should pursue CPD (continuing professional development) in BIM methodologies, software proficiency, and coordination protocols.
 
 BIM training covers not just software but also modeling standards, clash detection workflows, level of detail management, and collaboration discipline. Architects working on BIM projects should ensure their staff have received training adequate to the project complexity.
+
+---
+
+
+
+<ArticleMedia type="image" caption="BIM Implementation in Philippine Architecture — Practice Workflow" description="Diagram showing BIM adoption levels in Philippine practice: Level 0 (2D CAD only), Level 1 (3D visualization, 2D documentation), Level 2 (collaborative BIM with federated models). Process flow showing BIM-enabled design workflow: Model development → Clash detection → Quantity takeoffs → Construction coordination. Status bars showing current adoption rates and regulatory obligations." />
+## Related Articles
+
+- [Sole Proprietorship](lea-prac-frm-001)
+- [Partnership](lea-prac-frm-002)
+- [Corporate Practice](lea-prac-frm-003)
+- [Joint Venture](lea-prac-frm-004)
+- [Foreign Architects](lea-prac-frm-005)
+- [ASEAN MRA](lea-prac-frm-006)
+- [CPD Requirements](lea-prac-frm-008)
+- [RA 9266 Legal Framework](lea-prac-law-001)
+- [Government Procurement](lea-prac-frm-012)
+- [Environmental Laws](lea-prac-frm-017)
+
+<Note>
+null
+[/SLATECAMP_UI_BLOCK:ui_0001 component="JSX" status="preserved"]
+</Note>

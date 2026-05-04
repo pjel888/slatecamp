@@ -1,26 +1,21 @@
 {
-  "attempted_at": "2026-05-04T00:07:21.172Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:18:15.368Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "candidate.md matches original.md; refusing no-op apply."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "6e9a4321-c9db-4720-ab19-288e7f28be48",
   "slug": "overview-building-materials",
   "preparation_actions": [
     "auto_generated_diff"
   ],
-  "remote_hash_before": "sha256:146e848dfb501eac4d2fbbf4af14480e241a96182ca5755569be7e817c0bf300",
-  "original_hash": "sha256:146e848dfb501eac4d2fbbf4af14480e241a96182ca5755569be7e817c0bf300",
-  "candidate_hash": "sha256:4e6332fcf2a19cef962ff210e1860d8c5f7472513db238c2cc063c16eff06086",
+  "remote_hash_before": "sha256:cff0cb4fb8342ae3caa1d38215288e0b1666db3e72012b3e9cb6d9f940136963",
+  "original_hash": "sha256:cff0cb4fb8342ae3caa1d38215288e0b1666db3e72012b3e9cb6d9f940136963",
+  "candidate_hash": "sha256:cff0cb4fb8342ae3caa1d38215288e0b1666db3e72012b3e9cb6d9f940136963",
   "stale_check_passed": true,
-  "remote_updated_at_before": "2026-05-03T13:52:58.699691+00:00"
+  "remote_updated_at_before": "2026-05-04T02:02:30.525187+00:00"
 }

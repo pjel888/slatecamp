@@ -100,6 +100,8 @@ These three traditions—pueblo, longhouse, mound—illustrate that "North Ameri
 
 **Monks Mound**: Largest mound at Cahokia; 30 meters high, 5.6-hectare base, four-tiered form; built in two rapid phases (c. 1050–1150 CE) through staged construction.
 
+<ArticleMedia id="media-hist-012-03-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparison of three North American Indigenous architectural traditions: Southwest adobe pueblos (Taos Pueblo, multi-story communal dwellings), Northeast longhouses (Iroquois, post-and-beam timber), and Midwest earthworks (Cahokia Monks Mound, rammed earth ritual center)." caption="North American Indigenous Architecture — Three Traditions" suggestedAsset="Style comparison illustration" placementIntent="Style comparison for architectural period" />
+
 ## Related Articles
 
 See also within Pre-Columbian & Indigenous American Architecture: **lea-hist-012-01-core-concept**, **lea-hist-012-02-core-concept**.

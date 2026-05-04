@@ -1,54 +1,38 @@
 {
   "article_id": "635013a5-2aa6-4d97-a79a-e4f44d3aa3ee",
   "slug": "lea-util-002-04-system-types-and-applications",
-  "generated_at": "2026-05-04T00:07:11.997Z",
-  "old_hash": "sha256:37641573e203d85a3cea458b5c166c1f825c86ad16f354f4891d80c5ed764fde",
-  "new_hash": "sha256:fcf72eac7d0a013f85c3249824a83e9158e79dc29f9b7099f18a51f23788d549",
-  "original_hash": "sha256:37641573e203d85a3cea458b5c166c1f825c86ad16f354f4891d80c5ed764fde",
+  "generated_at": "2026-05-04T02:18:03.719Z",
+  "old_hash": "sha256:7b959120d10d623794a7556afeea6801168944a8619d4d2b4e7bee50fe75c8c6",
+  "new_hash": "sha256:7b959120d10d623794a7556afeea6801168944a8619d4d2b4e7bee50fe75c8c6",
+  "original_hash": "sha256:7b959120d10d623794a7556afeea6801168944a8619d4d2b4e7bee50fe75c8c6",
   "normalized_hash": "sha256:fcf72eac7d0a013f85c3249824a83e9158e79dc29f9b7099f18a51f23788d549",
-  "candidate_hash": "sha256:fcf72eac7d0a013f85c3249824a83e9158e79dc29f9b7099f18a51f23788d549",
-  "changed": true,
-  "changed_line_count": 247,
+  "candidate_hash": "sha256:7b959120d10d623794a7556afeea6801168944a8619d4d2b4e7bee50fe75c8c6",
+  "changed": false,
+  "changed_line_count": 0,
   "inserted_line_count": 0,
-  "deleted_line_count": 32,
+  "deleted_line_count": 0,
   "ui_blocks_original_count": 12,
-  "ui_blocks_candidate_count": 0,
-  "ui_blocks_changed_count": 12,
+  "ui_blocks_candidate_count": 12,
+  "ui_blocks_changed_count": 0,
   "ui_blocks_count": 12,
-  "unresolved_placeholders_count": 1,
-  "preserved_blocks_count": 0,
+  "unresolved_placeholders_count": 0,
+  "preserved_blocks_count": 12,
   "changed_text_summary": {
-    "changed": 247,
+    "changed": 0,
     "inserted": 0,
-    "deleted": 32,
-    "original_line_count": 296,
-    "candidate_line_count": 264
+    "deleted": 0,
+    "original_line_count": 310,
+    "candidate_line_count": 310
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0001",
-      "ui_0002",
-      "ui_0003",
-      "ui_0004",
-      "ui_0005",
-      "ui_0006",
-      "ui_0007",
-      "ui_0008",
-      "ui_0009",
-      "ui_0010",
-      "ui_0011",
-      "ui_0012"
-    ],
-    "changed_count": 12
+    "missing_block_ids": [],
+    "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate contains unresolved UI block placeholders.",
-    "Candidate is missing 12 preserved UI block(s)."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 12 preserved UI block(s)."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

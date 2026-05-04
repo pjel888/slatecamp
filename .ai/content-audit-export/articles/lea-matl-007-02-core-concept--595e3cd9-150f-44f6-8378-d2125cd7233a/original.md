@@ -14,6 +14,13 @@ In the Philippines, Boysen (Pacific Paint), Davies, and Island Paints dominate t
 
 Wallpaper, while aesthetic, demands smooth drywall surfaces (sandpaper grit 220+) and proper adhesive formulation. Ceramic tile on walls follows the same adhesion principles as floor tile but with relaxed slip-resistance requirements. Natural stone veneer (marble, granite) requires moisture barriers on substrate to prevent salt efflorescence and spalling in tropical climates. Hardiflex (fiber cement board) offers moisture and fire resistance for wet rooms and exterior walls, avoiding traditional gypsum drywall susceptibility to mold.
 
+
+<ArticleMedia id="media-wall-finish-comparison" layout="single" type="image" status="placeholder"
+  alt="Comparison chart of wall finishes: paint, wallpaper, gypsum board, plywood paneling, tile, stone cladding, fabric, metal panel, and glass with aesthetic, durability, and fire-resistance ratings"
+  caption="Future chart: wall finish comparison — aesthetic effect, durability, installation method, and fire rating"
+  suggestedAsset="Material selection matrix with finish application photos"
+  placementIntent="Provides comprehensive reference for wall finish selection" />
+
 ## Key Provisions
 
 | Property | Specification | Standard | LEA Relevance |
@@ -39,6 +46,12 @@ Stone veneer (marble, granite imported or quarried locally) requires moisture ba
 
 Boysen brands like KNOxOUT (marketed as air-purifying with claimed NOx-reducing properties via titanium dioxide) appeal to premium projects seeking air-quality claims, though durability remains tied to substrate preparation.
 
+
+<ArticleMedia id="media-wall-finish-assembly" layout="single" type="image" status="placeholder"
+  alt="Cross-section of wall finish assemblies: paint on gypsum board, tile on cement board, stone cladding with anchors, and metal panel with sub-girt system"
+  caption="Future diagram: wall finish assembly cross-sections — paint, tile, stone, and metal panel"
+  suggestedAsset="Cross-section detail drawings of wall finish installations"
+  placementIntent="Visualizes installation methods for different wall finishes" />
 ## How It's Tested
 
 **Question Type 1 (Surface Preparation):** A painter applies latex topcoat to gypsum drywall sanded with 120-grit paper and not wiped. What will likely occur within 6-12 months? Students must recognize that inadequate surface prep (grit &lt;220) and dust contamination cause delamination (ASTM D3276 violations).
@@ -59,7 +72,6 @@ Boysen brands like KNOxOUT (marketed as air-purifying with claimed NOx-reducing 
 
 is optional for topcoat adhesion\", \"Mixing incompatible binders (latex over enamel without sanding and primer)\", \"Failing to caulk gaps, joints, and penetrations before finish coat\", \"Applying topcoat before primer cure time (typically 2-4 hours per coat)\", \"Using VOC-high paints without confirming local air-quality compliance\"]}"
 - Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 

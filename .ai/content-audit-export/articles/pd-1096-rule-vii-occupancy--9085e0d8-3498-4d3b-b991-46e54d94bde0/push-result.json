@@ -1,26 +1,19 @@
 {
-  "attempted_at": "2026-05-04T00:06:08.147Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:25:54.398Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "Failed to update wiki_articles.content: Bad Request"
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "9085e0d8-3498-4d3b-b991-46e54d94bde0",
   "slug": "pd-1096-rule-vii-occupancy",
-  "preparation_actions": [
-    "auto_generated_diff"
-  ],
+  "preparation_actions": [],
   "remote_hash_before": "sha256:39c9f2f9015939ed78f6a5b4b048bb094d1e334e0e341fb9c932a86ffdb7a191",
   "original_hash": "sha256:39c9f2f9015939ed78f6a5b4b048bb094d1e334e0e341fb9c932a86ffdb7a191",
-  "candidate_hash": "sha256:2c59a07fa0ef8ca40d774b7aad08e36cd755892cd388708a66aa1520ba82c777",
+  "candidate_hash": "sha256:fad73e0d86177775b5e2504ee0577e5aab825791a72611e00e7cc2b737f25129",
   "stale_check_passed": true,
   "remote_updated_at_before": "2026-05-03T16:38:14.932752+00:00"
 }

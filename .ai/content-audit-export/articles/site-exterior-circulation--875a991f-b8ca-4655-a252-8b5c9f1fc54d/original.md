@@ -15,10 +15,16 @@ _Exterior Accessible Routes Integration Module – BP 344 + PD 1096 Context_[web
 <LawCallout code="pd1096" section="Rule VIII - Exterior Access">
 BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all public buildings.
 </LawCallout>
+Extracted summary:
+- Props: (none)
+- Text: BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all p...
 
 <LawCallout code="pd1096" section="Rule VIII - Site Circulation">
 BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all public buildings.
 </LawCallout>
+Extracted summary:
+- Props: (none)
+- Text: BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all p...
 
 Goal: move a wheelchair user from **road → sidewalk → entrance → interior route** using only compliant slopes and widths under the updated BP 344 IRR, coordinated with PD 1096 site controls.[web:2][web:31][web:32]
 
@@ -125,10 +131,16 @@ Exam tip: when sketching site sections, show **property line, RROW, required fro
 ---
 
 <ExamTip>**LEA Pattern:** Questions ask whether a building or space meets accessibility requirements. Calculate required number of accessible parking slots per total parking (1:100 ratio for first 500, then 1:200). Know the minimums.</ExamTip>
+Extracted summary:
+- Props: (none)
+- Text: **LEA Pattern:** Determine if a building meets accessibility requirements. Ca...
 
 ## 7. Active Recall – Site & Exterior Circulation
 
 <ExamTip>**LEA Pattern:** Questions ask whether a building or space meets accessibility requirements. Calculate required number of accessible parking slots per total parking (1:100 ratio for first 500, then 1:200). Know the minimums.</ExamTip>
+Extracted summary:
+- Props: (none)
+- Text: **LEA Pattern:** Determine if a building meets accessibility requirements. Ca...
 
 _(Updated to reflect both original IRR and 2024 reviewer practice values.)_
 
@@ -163,16 +175,13 @@ Accessible ramps, dropped sidewalks, and curb cuts inside the lot cannot permane
 
 ---
 
-\
-Extracted summary:
-- Props: 
-- Text: Common traps: confusing BP 344 with PD 1096, mixing up dimensions for ramps vs. stairs vs. handrails.
-\[/SLATECAMP_UI_BLOCK\]
-\
-Extracted summary:
-- Props: 
-- Text: Common traps: confusing BP 344 with PD 1096, mixing up dimensions for ramps vs. stairs vs. handrails.
-\[/SLATECAMP_UI_BLOCK\]
+<Note>
+Common traps: confusing BP 344 with PD 1096, mixing up dimensions for ramps vs. stairs vs. handrails.
+</Note>
+<Note>
+Common traps: confusing BP 344 with PD 1096, mixing up dimensions for ramps vs. stairs vs. handrails.
+</Note>
 ## Cross‑References
 
 **Site Planning Accessible Routes Vs Open Space**, **Transport Nodes Escalators Walkways**, **Minimum Parking Requirements**, **Pedestrian Protection During Construction**
+<!-- no-media-needed: existing content format is sufficient without visual media -->

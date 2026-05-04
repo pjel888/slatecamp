@@ -4,8 +4,6 @@
 Space planning logic is organized through functional zoning—the systematic separation of building areas into public, semi-public, private, and service zones—determined by programmatic adjacency requirements and circulation logic. Zoning creates order, minimizes circulation distance, and ensures that public spaces do not interfere with private functions or operational systems. Circulation spines and connectors organize these zones and determine how users, staff, and goods move through the building.
 </Callout>
 
-
-
 ## Learning Goal
 
 - Define functional zoning as the organization of interior spaces into public, semi-public, private, and service domains.
@@ -13,6 +11,8 @@ Space planning logic is organized through functional zoning—the systematic sep
 - Analyze floor plans for functional zoning: circulation efficiency, public/private separation, and service access.
 
 ## Core Concept
+
+<ArticleMedia id="media-lea-theo-009-04-core-concept" a type="image" caption="Functional Zoning — Public, Semi-Public, Private, and Service Domains" description="Four-zone diagram showing a floor plan organized by domain: (1) Public Zone — entry, lobby, waiting, reception, accessible from outside, highest traffic; (2) Semi-Public Zone — meeting rooms, conference, open office, transitional spaces between public and private; (3) Private Zone — offices, private rooms, restricted areas, controlled access; (4) Service Zone — restrooms, storage, mechanical, janitorial, kitchen, back-of-house, separate circulation. Arrows show circulation spines connecting zones with appropriate access control points. Callout explains design rules: public-to-private gradient, service separation, circulation efficiency, and conflict avoidance between noise-sensitive and noisy functions." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 Functional zoning is not zoning in the land-use regulatory sense (residential, commercial, mixed-use); rather, it is the organization of interior spaces into operational domains determined by access control, use intensity, and activity type. Zoning is the framework through which the adjacency matrix translates into layout logic. Where the adjacency matrix documents which spaces must be near or far from each other, zoning explains why those relationships are necessary and organizes them into coherent operational domains.
 
@@ -95,21 +95,15 @@ Within each zone, adjacency logic still applies. Public zone spaces (entry lobby
 <WikiExamTable headers={["Concept", "Definition/Application"]} rows={[['["**Public Zone**", "Unrestricted access; entry, lobby, retail, customer service; high visibility, clear wayfinding"]', '["**Semi-Public Zone**", "Authorized access; offices, work areas, clinical waiting; controlled access at entry, optimized for occupant productivity"]', '["**Private Zone**", "Restricted access; executive offices, clinical procedure rooms, residences; secure access, optimized for specific function"]', '["**Service Zone**", "Mechanical, loading, storage, utility systems; separated from public/guest spaces; functional rather than aesthetic focus"]', '["**Circulation Spine**", "Primary corridor or connector serving multiple zones; organizes building layout and minimizes walking distance"]', '["**Zone Adjacency**", "Spatial relationship between zones; public should be near entry, semi-public interior, private remote, service independent"]', '["**Buffer Space**", "Transition zone (hallway, mechanical room, restroom) between incompatible uses; provides separation and acoustic/visual privacy"]', '["**Vertical Zoning**", "Stacking compatible zones on multiple floors (e.g., retail ground, office above, mechanical roof); reduces horizontal circulation"]', '["**Horizontal Zoning**", "Single-story arrangement of zones in sequence from public to semi-public to private (typically in linear or concentric plan)"]', '["**Circulation Efficiency**", "Ratio of walking distance to programmatic requirement; lower ratio indicates better efficiency"]', '["**Access Control**", "Mechanism separating public and semi-public zones; may be receptionist, badge system, or architectural design (clear separation vs. open flow)"]']]} />
 ## How It's Tested on the LEA
 
-
 <ExamTip>1. **Zoning Strategy Analysis**: You are presented with a program and asked to develop a zoning strategy. "A clinic includes reception, waiting area, examination rooms, treatment room, laboratory, administrative office, and storage. Diagram the four zones and justify the positioning." Expected answer: Public zone (reception, waiting); semi-public zone (exam, treatment); private zone (administrative office); service zone (lab, storage). Justification: patients enter public area, move to semi-public for care, staff occupies private office, laboratory and storage are separate from patient areas.</ExamTip>
-
 
 <ExamTip>2. **Floorplan Zoning Analysis**: You are shown a floorplan and asked to identify zones and evaluate zoning logic. "This retail building has checkout at the rear, receiving dock at the front, and stock room adjacent to customer shopping area. Identify problems with this zoning." Expected answer: Customer entry should not be adjacent to loading/receiving (operational and aesthetic conflict); stock room should be semi-public or service (not customer-facing); checkout should be near exit to facilitate sleas and prevent theft.</ExamTip>
 
-
 <ExamTip>3. **Circulation Route Evaluation**: Given a program and zoning strategy, you evaluate whether proposed circulation satisfies separation requirements. "Does this design adequately separate public customer circulation from service truck circulation?" Answer depends on whether the design shows separate entry/exit points, distinct routing, and visual/operational separation.</ExamTip>
-
 
 <ExamTip>4. **Vertical Stacking Decision**: Multi-story projects require vertical zoning decisions. "A 60,000 SF program on an urban site suitable for 8 stories. How would you vertically stack public, semi-public, private, and service zones to optimize efficiency and user experience?" Expected strategy: Retail/lobby ground (public); office floors 2–7 (semi-public); mechanical/penthouse floor 8 (service); parking basement (service). Justification: maximizes ground-level activation, maintains office floor efficiency, hides mechanical from street view, separates parking from public entry.</ExamTip>
 
-
 <ExamTip>5. **Zone Conflict Resolution**: Scenario-based questions present conflicting requirements and ask you to resolve through zoning strategy. "An urban residential building must include ground-floor retail, residential lobbies, and mechanical systems, with limited separation distance. Design a zoning strategy that minimizes conflict between retail customers and residential tenants." Expected answer: Separate retail entry/exit from residential entry (different facades or sides of building); position residential lobby away from retail; use mechanical chases/buffer zones to reduce noise transmission between retail and lower residential floors.</ExamTip>
-
 
 ## Common Mistakes
 
@@ -118,7 +112,6 @@ Within each zone, adjacency logic still applies. Public zone spaces (entry lobby
 <WikiMistakeCard mistake="Overlapping Public and Semi-Public Circulation" correction="Designing office or residential buildings where customer/visitor circulation and employee circulation are mixed, creating inefficiency and privacy issues." context="Public visitors should not pass through employee areas; employees should not navigate through public zones to reach work areas." />
 
 <WikiMistakeList mistakes={["Positioning Private Zones Without Access Control. Designing executive offices or restricted areas with direct public access or visibility. Private zones require clear access control—locked doors, separate elevators, or architectural segregation—to function.", "Underestimating Buffer Space Needs. Failing to allocate adequate hallway, bathroom, or mechanical space between incompatible zones. A single wall between a high-noise retail area and a residential unit is insufficient; a buffer zone provides acoustic separation and privacy.", "Creating Inefficient Circulation Routes. Designing layouts where occupants must traverse unrelated zones to move between frequently paired functions. If a hospital design requires clinicians to walk through public waiting areas to reach patient rooms, circulation is inefficient and may compromise patient privacy.", "Inconsistent Zoning Across Floors. In multi-story buildings, shifting zone positions between floors without clear justification, creating complex vertical circulation and user confusion. A hospital with nursing station on one floor but back-of-house on another floor above it creates inefficient vertical circulation."]} />
-
 
 ## Key Terms
 

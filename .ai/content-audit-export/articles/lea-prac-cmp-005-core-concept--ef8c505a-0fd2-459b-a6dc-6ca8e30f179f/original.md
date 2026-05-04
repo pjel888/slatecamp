@@ -103,3 +103,5 @@ Memory aid: Groups 1-3 slide down (5→4→3→2→1; 6→5→4→3→2; 7→6�
 - [Reimbursable Expenses](lea-prac-cmp-011)
 - [SPP Doc 202 Phase Framework](lea-prac-svc-004)
 - [Standard Owner-Architect Agreement](lea-prac-ctr-001)
+
+<!-- no-media-needed: professional practice article, text/tables/UI blocks are optimal format -->

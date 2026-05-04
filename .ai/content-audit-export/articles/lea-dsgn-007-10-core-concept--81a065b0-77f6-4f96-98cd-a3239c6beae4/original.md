@@ -6,7 +6,6 @@ Verify design compliance with PD 1096, RA 9514, BP 344, and applicable codes at 
 Vertical circulation — stairs and elevators — is designed using precise dimensional and egress rules. 
 ---
 
-
 ## Core Concept
 
 **Stair Design** is governed by several core factors:
@@ -37,6 +36,7 @@ Vertical circulation — stairs and elevators — is designed using precise dime
    - Landings are required at the top and bottom of every flight and at required intermediate levels.  
    - RA 9514 sets a **maximum height between landings** of 3.60 m and a minimum headroom of 2.0 m.  
    - Landing depth must be at least equal to the stair width for safe movement.
+<ArticleMedia id="media-lea-dsgn-007-10-core-concept" a type="image" caption="Code Compliance Checklist — Design Phase Verification Flowchart" description="Decision tree/flowchart for code compliance verification at each design phase: schematic (occupancy, setbacks, height limits), design development (egress, fire-rated separations, accessibility), and contract documents (detailed compliance per PD 1096, RA 9514, BP 344)." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ---
 
@@ -115,7 +115,7 @@ Under the **2024 Revised IRR of BP 344** and related accessibility guidance, ele
 ## Philippine Practice Context
 
 In the Philippines, stair design is dictated primarily by the **National Building Code (PD 1096 and its IRR)** for geometry and by **RA 9514 (Fire Code)** for egress width, landings, and headroom. **Blondel’s formula** is widely used in review materials as a comfort check, but LEA questions will prioritize compliance with the **maximum riser**, **minimum tread**, **minimum width**, and **headroom** requirements set by PD 1096 and RA 9514. Accessibility rules from **BP 344 and its 2024 IRR** govern elevator dimensions, handrail details, and usability for persons with disability. For the LEA, always base your numerical answers on the codes, using Blondel and similar rules to justify good ergonomic practice.
-
+<ArticleMedia id="media-lea-dsgn-007-10-core-concept" a type="image" caption="Code Compliance Workflow — Design Phase Regulatory Checklist" description="Flowchart showing code compliance verification at each design phase: Pre-Design (zoning, site code), Schematic (occupancy, egress concept), Design Development (fire separation, accessibility), Construction Documents (permit-ready checklist). Key PD 1096, RA 9514, and BP 344 checkpoints at each gate." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Cross-References
 

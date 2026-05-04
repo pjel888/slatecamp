@@ -122,11 +122,23 @@ This airflow rate can then be compared to the minimum ventilation requirements f
 
 ---
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Example" status="preserved"]
+<Example>
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="preserved"]
+Real-World Application: Orient the long axis of a BGC office building along the east-west line. This captures Amihan (NE) breezes through the long north facade for natural ventilation while minimizing west-facing exposure to the brutal afternoon sun. Operable windows on NE, minimal openings on SW.
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
+</Example>
+
+<Warn>
+
+⚠️ Common Mistake: Students often remember Amihan and Habagat directions but forget the transition periods. April-May (hot, dry, variable winds) is when passive cooling is LEAST effective — this drives HVAC peak load design. The exam tests seasonal applicability, not just direction.
+
+</Warn>
+
+<ExamTip>
+
+LEA Pattern: Questions ask you to identify the correct passive design strategy for a given site condition. South-facing facade receives most consistent solar radiation (sun is south of zenith Sep-Mar). West-facing receives INTENSE low-angle afternoon heat. North facade = coolest year-round. East = tolerable morning sun.
+
+</ExamTip>
 
 ## LEA Exam Traps and Common Mistakes
 

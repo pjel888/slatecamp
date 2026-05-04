@@ -10,8 +10,9 @@ After reading this article, you should be able to:
 
 Feasibility studies represent a critical pre-design service that determines whether a proposed development is viable. SPP 201 distinguishes between pre-feasibility studies, which use secondary information for early decision-making, and detailed feasibility studies, which analyze the project comprehensively against present and future trends.
 
-### Pre-Feasibility Studies vs. Feasibility Studies
+<ArticleMedia id="media-lea-prac-svc-002-feasibility-studies-typ" a type="image" caption="Feasibility Study Workflow — Pre-Feasibility to Detailed Feasibility" description="Workflow chart illustrating the feasibility study process: pre-feasibility (secondary research, early assessment) → feasibility (primary data, comprehensive analysis) → market analysis → technical assessment → financial projections → risk evaluation → viability recommendation." suggestedAsset="Diagram or reference image" status="placeholder" />
 
+### Pre-Feasibility Studies vs. Feasibility Studies
 
 <KeyValues pairs={[["SPP Document", "201 (Pre-Design), 202 (Regular Design), 203 (Specialized)"], ["Compensation", "MDPE, Lump Sum, Per Diem, Professional Fee + Expenses"], ["Fee Basis", "Percentage of PCC or MDPE"]]} />
 Pre-feasibility studies involve procurement, analysis, and use of secondary information gathered for the project to aid the client in early decision-making. They represent the architect's initial assessment of a project's soundness. Feasibility studies, by contrast, provide detailed analysis of the project based on pre-feasibility findings and determine the viability of a proposed development. These studies require primary data gathering and analysis to forecast how a project will perform over time.
@@ -20,10 +21,8 @@ Pre-feasibility studies involve procurement, analysis, and use of secondary info
 
 <KeyValues pairs={[["SPP Document", "201 (Pre-Design), 202 (Regular Design), 203 (Specialized)"], ["Compensation", "MDPE, Lump Sum, Per Diem, Professional Fee + Expenses"], ["Fee Basis", "Percentage of PCC or MDPE"]]} />
 
-
 <ExamTip>**LEA Pattern:** Expect scenario-based questions where you must determine which phase a specific deliverable belongs to. Key percentages to memorize: Schematic Design (15%), Design Development (35%), Contract Documents (50%).</ExamTip>
 A comprehensive feasibility study sets the proposed development against present and future trends to forecast performance. The architect examines financial viability, market demand, technical feasibility, legal and regulatory compliance, and environmental impact. The study typically includes site analysis, market research findings, financial projections, risk assessment, and recommendations for proceeding or modifying the project concept.
-
 
 <ExamTip>**LEA Pattern:** Expect scenario-based questions where you must determine which phase a specific deliverable belongs to. Key percentages to memorize: Schematic Design (15%), Design Development (35%), Contract Documents (50%).</ExamTip>
 ### The Architect's Distinct Professional Role

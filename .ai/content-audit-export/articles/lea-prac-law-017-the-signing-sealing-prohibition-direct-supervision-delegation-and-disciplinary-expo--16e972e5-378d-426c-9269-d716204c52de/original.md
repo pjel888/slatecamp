@@ -1,7 +1,15 @@
 ## The Signing-Sealing Prohibition — Direct Supervision, Delegation, and Disciplinary Exposure
 
-<AuthorityContent courseId="LEA-PRAC-LAW-017" />
+## Learning Goal
 
+After studying this article, you should be able to:
+
+- State the rule under RA 9266 §33: only a registered architect may sign and seal architectural documents.
+- Define 'direct supervision' and what it requires of the architect.
+- Identify exceptions: delegation to supervised subordinates.
+- Explain disciplinary consequences for unauthorized signing and sealing.
+
+---
 ### Section 23 Violation and Grounds for Discipline
 
 RA 9266 Section 23 provides that signing or sealing architectural plans not prepared by the architect or not prepared under the architect's direct supervision constitutes grounds for suspension or revocation of the architect's license. This is one of the most serious professional violations in architecture practice because it strikes at the core of professional responsibility and public trust. When an architect signs a document, the public, contractors, and government agencies rely on the architect's certification that the document is accurate, complete, and code-compliant. Violating this requirement undermines this essential trust.
@@ -40,7 +48,7 @@ The architect's documentation of involvement also supports claims of direct supe
 
 ### Practical Risk Management Strategies
 
-Architects should implement firm policies requiring thorough document review before signing. This review should include: verification that all sheets are included and correctly titled; checking for consistency in dimensions, symbols, and note references; reviewing details to ensure constructability and code compliance; and comparing the drawings against applicable building codes. Many firms use a formal drawing review checklist that must be completed and signed by the reviewing architect before any document is selead.
+Architects should implement firm policies requiring thorough document review before signing. This review should include: verification that all sheets are included and correctly titled; checking for consistency in dimensions, symbols, and note references; reviewing details to ensure constructability and code compliance; and comparing the drawings against applicable building codes. Many firms use a formal drawing review checklist that must be completed and signed by the reviewing architect before any document is sealed.
 
 Architects should also maintain clear documentation of their design involvement. This includes keeping copies of emails or memoranda directing design work, retaining marked-up drawing sets or comments provided during design development, and documenting design meetings with dated notes of decisions made and direction provided. This documentation protects the architect if later questioned about whether direct supervision was maintained. Additionally, architects should clearly communicate to clients and staff that the architect will not sign documents without having personally reviewed them, to establish expectations and prevent staff from presenting unsigned documents as final products requiring only signature.
 
@@ -48,4 +56,47 @@ Architects should also maintain clear documentation of their design involvement.
 
 The direct supervision requirement applies distinctly to each professional's scope of work. An architect is responsible for direct supervision of architectural drawings; a structural engineer is responsible for direct supervision of structural drawings; and mechanical, electrical, and sanitary professionals are responsible for their respective drawings. However, coordination between professionals requires that the architect, as the lead designer, verify that specialists' work coordinates with the architectural design and that conflicts are resolved before documents are finalized.
 
-If a specialist presents drawings that conflict with the architect's design, or that the architect believes are inadequate, the architect should refuse to proceed until the conflict is resolved. The architect should not sign architectural documents knowing that coordination problems exist with structural, mechanical, or other drawings. Professional responsibility requires that all members of the design team work collaboratively to produce an integrated, conflict-free design before documents are signed and selead.
+If a specialist presents drawings that conflict with the architect's design, or that the architect believes are inadequate, the architect should refuse to proceed until the conflict is resolved. The architect should not sign architectural documents knowing that coordination problems exist with structural, mechanical, or other drawings. Professional responsibility requires that all members of the design team work collaboratively to produce an integrated, conflict-free design before documents are signed and sealed.
+
+<LawCallout code="ra9266" section="Section 33 - Prohibition">
+Legal Basis: RA 9266 (Architecture Act of 2004), Sections 20 (Signing and Sealing), 21 (Direct Supervision), and 22 (Disciplinary Actions). The prohibition against signing/sealing documents not prepared under direct supervision.
+</LawCallout>
+Extracted summary:
+- Props: code="ra9266" title="RA 9266 Sections 20-22 — Signing, Sealing, and Discipline"
+- Text: Legal Basis: RA 9266 (Architecture Act of 2004), Sections 20 (Signing and Sealing), 21 (Direct Supervision), and 22 (Disciplinary Actions). The prohibition against signing/sealing documents not prepared under direct supervision.
+
+<Warn />
+Extracted summary:
+- Props: (none)
+- Text: ⚠️ CRITICAL: Section 22 RA 9266 makes it a DISCIPLINARY VIOLATION to sign/seal documents not prepared under your direct supervision. This is one of the most commonly tested violations. Penalties include suspension or revocation of the Certificate of Registration. — expect this as a trap answer on the LEA.
+
+<ExamTip />
+Extracted summary:
+- Props: (none)
+- Text: Direct supervision = personal knowledge of AND control over design decisions. Delegation of drafting tasks is permitted, but the supervising architect must review and approve the work. 'Rubber stamping' plans without review is a violation.
+
+<Tip />
+Extracted summary:
+- Props: (none)
+- Text: Disciplinary actions under Section 22: (1) Reprimand, (2) Suspension of Certificate of Registration (temporary), (3) Revocation of Certificate of Registration (permanent). The PRBoA conducts the investigation and the Commission may review on appeal.
+
+---
+
+
+
+<ArticleMedia type="image" caption="Signing and Sealing — Authority, Delegation, and Disciplinary Exposure" description="Flowchart showing signing/sealing rules: Does document contain architectural work? → Yes → Was it under architect's direct supervision? → Yes → Architect signs/seals; No → Prohibited. Side panel shows: who can sign/seal (registered architect only), what must be sealed (contract documents, not promotional materials), delegation rules (work by subordinates under supervision is OK), disciplinary consequences of unauthorized sealing." />
+## Related Articles
+
+- [RA 9266: Structure and Key Definitions](lea-prac-law-001)
+- [Scope of Practice](lea-prac-law-002)
+- [PRBoA Powers and Functions](lea-prac-law-005)
+- [PRC vs. PRBoA](lea-prac-law-006)
+- [Civil Code Article 1723 Liability](lea-prac-law-010)
+- [Signing and Sealing Rules](lea-prac-law-017)
+- [Code of Ethical Conduct](lea-prac-eth-001)
+- [Professional Practice Forms](lea-prac-frm-001)
+
+<Note>
+(none detected)
+[/SLATECAMP_UI_BLOCK:ui_0001 component="AuthorityContent" status="preserved"]
+</Note>

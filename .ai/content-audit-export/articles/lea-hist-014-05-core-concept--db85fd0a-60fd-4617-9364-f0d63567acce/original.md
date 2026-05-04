@@ -7,6 +7,10 @@ Identify the International Style in the United States — glass and steel towers
 
 **International Style** modernism emerged in 1920s Europe but flourished in post-World War II America. The principle was universal: good design transcends culture, geography, and individual expression. A building in New York should use the same principles as a building in Tokyo. Rationalism, efficiency, and structural honesty produce timeless beauty. Applied ornament is rejected; form derives purely from function and structure.
 
+
+<ArticleMedia id="media-hist-014-05-core-concept" layout="single" type="image" status="placeholder" alt="View of 860–880 Lake Shore Drive (Chicago, 1948–1951, Ludwig Mies van der Rohe), showing the twin steel-and-glass towers with expressed structure, curtain wall system, and the paradigm of International Style high-rise living." caption="Lake Shore Drive Apartments — Mies's Glass Towers" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
+
 <Tip>Memory aid: **"International Style = Less is More + Universal + No Ornament"** — the modernist ideal that good design transcends geography and culture through rational principles.</Tip>
 
 **Mies van der Rohe** (1886–1969) epitomizes this philosophy. His motto: "Less is more." The **Barcelona Pavilion** (1929) is weightless—steel columns and thin marble walls seem to float. The **Seagram Building** (New York, 1958, with Philip Johnson) is pure rationalism: a bronze-clad steel frame grid, vertical emphasis, crystalline glass. It ascends Fifth Avenue with mathematical perfection. No ornament, no excess, no regional reference. This is modernism as universal language.
@@ -24,6 +28,10 @@ By 1970s, modernism faced critique. Buildings were functionally excellent but em
 <Warn>Critical distinction: Postmodernism is not mere rejection or irony—it critiques modernism's claim to universal truth. Multiple meanings, historical reference, and cultural specificity coexist. Venturi's "complexity and contradiction" and Johnson's AT&T Building are serious critiques, not frivolous decoration. Postmodernism asks: Can design be culturally specific without abandoning modernist rigor?</Warn>
 
 Contemporary architecture (1990s–present) synthesizes lessons: modernist rationality and environmental responsibility, but with humanist warmth and cultural specificity. Architects reject both modernism's universalism and postmodernism's irony, seeking architecture rooted in place, material, and human need.
+
+
+<ArticleMedia id="media-hist-014-05-core-concept" layout="single" type="image" status="placeholder" alt="View of a representative 1960s corporate headquarters showing the glass-and-steel curtain wall box, plaza, uniform facade grid, and the universal space interior — the American corporate iteration of the International Style." caption="Postwar Corporate Architecture — International Style in America" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
 
 ## Key Facts and Testable Items
 
@@ -69,6 +77,8 @@ Questions ask how contemporary architecture responds to modernism and postmodern
 **Postmodernism** — Architectural movement (1970s–1990s) critiquing modernism's austerity and universalism; reintroduced ornament, historical reference, color, and human scale.
 
 **Contextual Architecture** — Contemporary approach integrating buildings with local geography, climate, culture, and existing structures; rejects modernism's universal principles while accepting environmental responsibility.
+
+<ArticleMedia id="media-hist-014-05-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparison of International Style characteristics in American corporate towers: Lake Shore Drive Apartments (Mies, steel and glass), Seagram Building (Mies, bronze curtain wall), and Lever House (Skidmore Owings Merrill, green glass curtain wall).\" caption=\"International Style in America — Corporate Towers\" suggestedAsset=\"Style comparison illustration\" placementIntent=\"Style comparison for architectural period\" />
 
 ## Related Articles
 

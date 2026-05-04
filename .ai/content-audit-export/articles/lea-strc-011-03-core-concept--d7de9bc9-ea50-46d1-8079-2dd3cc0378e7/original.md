@@ -11,6 +11,7 @@ By the end of this article, you will be able to:
 
 ---
 ## Core Concept
+<ArticleMedia id="media-lea-strc-011-03-core-concept" a type="image" caption="Geotechnical Investigation — Soil Profile and Bearing Capacity" description="Diagram of a geotechnical boring log showing: (1) Soil profile layers (topsoil, clay, sand, weathered rock, bedrock); (2) Standard Penetration Test (SPT) N-values at each depth; (3) Groundwater table elevation; (4) Soil classification per USCS; (5) Allowable bearing capacity calculated from soil properties. Boring location plan on site map showing required number of borings per structure type." suggestedAsset="Diagram or reference image" status="placeholder" />
 Geotechnical engineering characterizes soil, predicts its behavior under load, and specifies construction practices to achieve stable foundations. Five core topics unite this field:
 
 **1. Soil Classification and Properties:**
@@ -99,7 +100,6 @@ Metro Manila buildings almost universally encounter soft alluvial clay with SPT 
 <Tip>
 **Memory Aid:** SPT N-value is your soil's report card. N < 10 = soft, weak, lots of settlement (piles!). N = 10–30 = medium, okay for shallow footing with care. N > 30 = strong, dense, shallow footing easy. Compaction is the contractor's promise: "90% Proctor" means 90% as stiff as the lab sample. Clay settles slow (consolidation); sand settles fast (immediate). Know your settlement type or face cracking.
 </Tip>
-
 
 ## Related Articles
 

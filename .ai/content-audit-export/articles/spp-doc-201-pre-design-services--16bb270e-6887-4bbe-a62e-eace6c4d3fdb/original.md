@@ -68,7 +68,6 @@ Detailed analysis of the project based on pre-feasibility studies to **determine
 
 </Callout>
 
-
 ### 2.4 Site Selection and Analysis
 
 This service entails the **formulation of site criteria**, assistance to the Client in site evaluation, and analysis to **determine the most appropriate site/s** for a proposed project or building program. The architect evaluates multiple candidate locations based on criteria such as accessibility, zoning, utilities, topography, and development potential, then recommends the most suitable option.
@@ -78,7 +77,6 @@ This service entails the **formulation of site criteria**, assistance to the Cli
 **Note:** Under the 1979 UAP framework, Site Selection and Analysis required the involvement of a licensed **Environmental Planner (EnP)** for certain project types. This requirement persists under applicable environmental and land-use laws.
 
 </Callout>
-
 
 ### 2.5 Site Utilization and Land-Use Studies
 
@@ -155,7 +153,6 @@ The LEA tests the **12 specific service categories** under SPP 201 (2.1 Consulta
 | 2.12 | Promotional Services | Communications | Presentation materials, coordination |
 
 </ComparisonTable>
-
 
 ***
 
@@ -241,7 +238,6 @@ The architect must disclose to the client, **at the start of the commission**, t
 
 </Callout>
 
-
 ***
 
 ### Method 2: Professional Fee Plus Expenses
@@ -288,7 +284,6 @@ The SPP provides for **more than one method of compensation** on a project. Each
 
 </ComparisonTable>
 
-
 ***
 
 ## Relationship to Other SPP Documents
@@ -307,7 +302,6 @@ SPP 201 Pre-Design Services operates as the **first stage of the Spectrum of Arc
 | All Services Combined | SPP Doc. 206 | — |
 
 </ComparisonTable>
-
 
 The outputs of SPP 201 — particularly the feasibility studies, site analysis, and architectural program — form the **primary inputs to the Project Definition Phase of SPP 202**. Without sound pre-design work, the architect entering the design phase lacks the data needed to produce a viable, cost-appropriate, and regulatory-compliant building design.
 
@@ -330,15 +324,23 @@ When a project requires Comprehensive Architectural Services under **SPP Doc. 20
 
 ---
 
-
-
 ---
 
 ## Exam Tip
 
 LEA Trap: SPP 201 = PRE-design services (before SPP 202). Six phases: (1) Project Definition, (2) Feasibility Study, (3) Site Analysis, (4) Space Programming, (5) Design Guidelines, (6) Consultant Selection. Compensation is per-diem or fixed fee — NOT percentage of construction cost. The most tested distinction: SPP 201 is optional/separate, SPP 202 is the standard.
 
+
+
+---
+
+## Exam Tip
+
+ALE Trap: SPP 201 = PRE-design services (before SPP 202). Six phases: (1) Project Definition, (2) Feasibility Study, (3) Site Analysis, (4) Space Programming, (5) Design Guidelines, (6) Consultant Selection. Compensation is per-diem or fixed fee — NOT percentage of construction cost. The most tested distinction: SPP 201 is optional/separate, SPP 202 is the standard.
+
 ## Cross‑References
 
 **Spp Doc 202 Regular Design Services**, **Uap Spp Doc Standards Of Professional Practice For Philippine Architects**, **Spp Doc 203 Specialized Architectural Services**, **Spp Doc 204 A Fulltime Supervision Services**
 
+
+<!-- no-media-needed: SPP document reference, service scope text is optimal -->

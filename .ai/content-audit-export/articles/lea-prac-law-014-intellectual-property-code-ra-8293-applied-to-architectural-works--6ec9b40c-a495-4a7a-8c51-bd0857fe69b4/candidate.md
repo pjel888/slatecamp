@@ -52,11 +52,13 @@ Copyright infringement of architectural works occurs when a person reproduces, d
 
 The remedies available under RA 8293 include preliminary injunctions to stop ongoing infringement, delivery up of infringing materials, corrective advertising to restore the architect's reputation, payment of actual damages or profits derived from infringement, and in cases of willful infringement, statutory damages as determined by the court in accordance with RA 8293 Section 216. Criminal prosecution is available for commercial infringement with willful intent to defraud or profit, carrying penalties of fine and imprisonment.
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="preserved"]
+<LawCallout code="ra9266" section="Section 33 - Ownership of Plans">
+Function vs. Expression distinction: RA 8293 protects the ORIGINAL EXPRESSION (spatial arrangement, aesthetic proportions, facade design, unique structural concept). It does NOT protect FUNCTIONAL elements required by building code (stair dimensions, conduit sizing, minimum room areas).
+</LawCallout>
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
+<ExamTip />
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
+<Tip />
 
 ---
 

@@ -10,6 +10,7 @@ By the end of this article, you will be able to:
 The moduli—elasticity, rigidity, resilience, and toughness—are slope-based and energy-based measures of stiffness and energy capacity. Memorize their definitions and standard values. These appear in every calculation: deflection, lateral stability, foundation design.
 
 ## Core Concept
+<ArticleMedia id="media-lea-strc-003-03-core-concept" a type="image" caption="Modulus of Elasticity — Slope of the Stress-Strain Curve" description="Graphical illustration showing Modulus of Elasticity (E) as the slope of the linear-elastic region of the stress-strain curve. Three materials compared: steel (steepest slope, E=200 GPa), concrete (intermediate, E~4700√f'c), and timber (shallowest, E varies by grade). Shows how higher E means stiffer material — less strain for same stress." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 A modulus is a measure of a material's resistance to deformation under a specific type of stress. Unlike strength (which measures capacity to resist failure), moduli measure the slope of response: how much deformation results from a unit of stress. Moduli are properties of the material, not the member. A stiff material has a high modulus; a soft material has a low modulus.
 
@@ -74,7 +75,6 @@ The NSCP mandates the use of Ec = 4,700√f'c for normal-weight concrete deflect
 **Pattern 4: Deflection Comparison.** Two beams: one steel (E = 200,000 MPa), one concrete (Ec ≈ 25,000 MPa). Same span, same load, same I. Which deflects more? Concrete: δ ∝ 1/E, so the concrete beam deflects (200,000 / 25,000) = 8 times more than the steel beam. Materials with lower E are more flexible.
 
 <Tip>Remember: E is in the denominator of deflection formulas. Lower E = more deflection. Steel (high E) is stiffer than concrete (lower E). Resilience = elastic energy only. Toughness = total energy (elastic + plastic). Every problem involving deflection, lateral stability, or buckling contains a hidden E.</Tip>
-
 
 ## Related Articles
 

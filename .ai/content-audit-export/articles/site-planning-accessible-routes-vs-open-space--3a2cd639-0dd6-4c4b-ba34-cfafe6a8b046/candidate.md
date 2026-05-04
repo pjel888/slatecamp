@@ -63,7 +63,11 @@ Step 8:  Apply BHL (zoning + CAAP height restrictions)
 | I-1 (Light Industry) | Industrial (Group F) | 70% | 30% |
 | I-2 (Medium Industry) | Industrial (Group F) | 80% | 20% |
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
+<Callout variant="lea-watch" title="always check both.">
+
+PSO is a site coverage limit (footprint only). It is NOT the same as FLAR, which controls total floor area. A building with 60% PSO and 4 floors may have a FLAR of 2.4 — always check both.
+
+</Callout>
 
 ---
 
@@ -80,7 +84,11 @@ Step 8:  Apply BHL (zoning + CAAP height restrictions)
 | C-2 | 3.00 m | — (0) | 2.00 m | Reduced front setback for urban commercial |
 | C-3 | None req'd | — (0) | — (0) | Subject to RROW reservation + BHL |
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Callout" status="preserved"]
+<Callout variant="lea-watch" title="Trap Leart">
+
+"No side yard required" in commercial zones does NOT mean you can build party walls without fire-rating. The Fire Code still governs. BP 344 accessible route must still reach the entrance regardless of setback rules.
+
+</Callout>
 
 ### Courts for Light and Ventilation (PD 1096 Rule VIII, Section 805)
 
@@ -116,7 +124,11 @@ Step 8:  Apply BHL (zoning + CAAP height restrictions)
 - An enclosed ramp lobby attached to the building
 - Any roofed walkway connecting to the building entrance
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Callout" status="preserved"]
+<Callout variant="lea-watch" title="it may push the footprint over AMBF. Freestanding canopies may or may not count">
+
+A canopy or porte-cochère over the accessible drop-off / accessible parking counts as building footprint if it is structurally attached to the building — it may push the footprint over AMBF. Freestanding canopies may or may not count depending on local BO interpretation; always verify.
+
+</Callout>
 
 ---
 
@@ -181,7 +193,11 @@ RROW (public sidewalk)
 | Accessible parking (van/WC) | 4000 mm | 5000 mm | 1800 mm (marked) | 4000 mm stall + 1800 mm aisle shared |
 | Accessible parking (alternate) | 3700 mm + 1800 mm aisle | 5000 mm | Shared with adjacent accessible stall | Min 2 stalls share 1 aisle |
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="Callout" status="preserved"]
+<Callout variant="lea-watch" title="Trap Leart">
+
+The 1800 mm aisle is an access aisle, not a traffic lane. It is part of the accessible stall system, not the drive aisle. Two adjacent accessible stalls may share ONE 1800 mm aisle between them.
+
+</Callout>
 
 ### Required Number of Accessible Parking Spaces
 
@@ -275,7 +291,13 @@ Total required yard area: 100 sq.m.  ← exactly equals TOSL (tight!)
 | **Effective building footprint** | **400 sq.m.** | = AMBF ✓ |
 | **PSO check** | 400/500 = 80% | ✓ AT LIMIT |
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="LawCallout" status="preserved"]
+<LawCallout code="bp344" section="Section 5 - Accessible Routes">
+
+
+Conclusion: The accessible ramp, parking bay, and dropped sidewalk fit within the 3.00 m front yard and do not push the PSO over 80% — because they are open, uncovered circulation features. The site is BP 344 + PD 1096 compliant.
+
+
+</LawCallout>
 
 ---
 
@@ -306,7 +328,13 @@ Total required yard area: 100 sq.m.  ← exactly equals TOSL (tight!)
 
 > **Why must accessible features be allowed in required open spaces?**
 >
-[SLATECAMP_UI_BLOCK:ui_0006 component="LawCallout" status="preserved"]
+<LawCallout code="bp344" section="Section 5.1 - Site Planning">
+
+
+Philippine lots are small. A 60% PSO rule leaves only 40% of the lot as open space — often barely enough for the required yards. If every ramp, curb cut, and accessible parking bay were counted as building footprint, developers would be mathematically forced to eliminate accessibility features to stay within PSO limits. The law recognizes that accessibility infrastructure is circulation, not construction — it occupies the ground plane but does not enclose habitable space. Requiring it to fit within PSO would punish compliance with BP 344. Hence, open (uncovered) accessible features are classified as part of the open space, not as building footprint.
+
+
+</LawCallout>
 
 ---
 
@@ -341,7 +369,13 @@ Total required yard area: 100 sq.m.  ← exactly equals TOSL (tight!)
 > **A:** **4000 mm** stall width, plus a **1800 mm** access aisle.
 
 **Q4.** A 5-storey building has an inner court. What is the minimum inner court size?
-[SLATECAMP_UI_BLOCK:ui_0007 component="LawCallout" status="preserved"]
+<LawCallout code="pd1096" section="Rule VIII - Open Space">
+
+
+A: 5.00 × 5.00 m for buildings 3–5 floors (PD 1096 Rule VIII).
+
+
+</LawCallout>
 
 **Q5.** What is the maximum slope of a curb ramp (dropped sidewalk) at the property line?
 > **A:** **1:12 (8.3%)** for the ramp run; flanking sides max **1:10**; cross-slope max **1:50**.
@@ -350,16 +384,34 @@ Total required yard area: 100 sq.m.  ← exactly equals TOSL (tight!)
 > **A:** **Yes.** A permanent roofed structure — even over a parking bay — counts as building footprint and must be included in the PSO calculation.
 
 **Q7.** What is the minimum accessible path width through a required yard or court?
-[SLATECAMP_UI_BLOCK:ui_0008 component="LawCallout" status="preserved"]
+<LawCallout code="bp344" section="Section 5.3 - Accessible Path">
+
+
+A: 1200 mm (BP 344 minimum passageway width).
+
+
+</LawCallout>
 
 **Q8.** In what zone is no front yard setback required under PD 1096?
-[SLATECAMP_UI_BLOCK:ui_0009 component="LawCallout" status="preserved"]
+<LawCallout code="bp344" section="Section 5.4 - Curb Ramps">
+
+
+A: C-3 (Regional Commercial). However, BP 344 accessible entry requirements still apply.
+
+
+</LawCallout>
 
 **Q9.** A 500 sq.m. lot in R-3 zone has PSO = 70%. The required rear yard is 2.00 m, and both side yards are 2.00 m. The lot is 20 m × 25 m. Does the TOSL cover all required yards?
 > **A:** AMBF = 500 × 0.70 = 350 sq.m. TOSL = 150 sq.m. Required yards: front (4.5 m × 20 m = 90 sq.m.) + rear (2 m × 20 m = 40 sq.m.) + 2 sides (2 × 2 m × 25 m = 100 sq.m.) = **230 sq.m.** TOSL (150) < required yards (230). **The PSO must be reduced further, or lot coverage recalculated** — this lot cannot fit all required setbacks at 70% PSO.
 
 **Q10.** What is the minimum landing dimension at the top and bottom of a ramp?
-[SLATECAMP_UI_BLOCK:ui_0010 component="LawCallout" status="preserved"]
+<LawCallout code="bp344" section="Section 5.5 - Crosswalks">
+
+
+A: 1500 mm in the direction of travel (BP 344). At a change of direction, 1500 × 1500 mm.
+
+
+</LawCallout>
 
 ---
 

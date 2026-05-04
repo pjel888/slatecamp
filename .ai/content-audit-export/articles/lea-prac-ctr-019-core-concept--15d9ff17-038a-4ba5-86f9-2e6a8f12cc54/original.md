@@ -60,6 +60,9 @@ The distinction between Substantial Completion (architect's certificate) and Cer
 
 ---
 
+
+
+<ArticleMedia type="image" caption="Delay and Extension of Time — Event Classification and Notice Requirements" description="Decision tree for delay events: Is delay excusable (owner-caused, force majeure) or non-excusable (contractor-caused)? Timelines showing: Excusable delays → Extension of Time granted, No liquidated damages. Non-excusable delays → Liquidated damages, No EOT. Notice requirement timeline: Contractor must notify architect within specified period (typically 7-14 days) with documentation." />
 ## Related Articles
 
 - [Standard Owner-Architect Agreement](lea-prac-ctr-001)

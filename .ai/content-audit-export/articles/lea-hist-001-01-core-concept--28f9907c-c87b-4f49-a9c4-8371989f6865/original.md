@@ -4,7 +4,6 @@
 Megalithic architecture tests your understanding of the earliest monumental structures and the post-and-lintel system that dominated pre-classical building. The LEA expects you to identify key sites, construction methods, and the progression from simple dolmens to complex aligned stone arrangements.
 </Callout>
 
-
 ## Learning Goal
 
 Recognize megalithic architectural forms (dolmens, menhirs, stone circles, passage graves) and the post-and-lintel system, key sites (Stonehenge, Newgrange, Carnac), and regional variations across Neolithic Europe.
@@ -12,6 +11,10 @@ Recognize megalithic architectural forms (dolmens, menhirs, stone circles, passa
 ## Core Concept
 
 Megalithic architecture emerged in the Neolithic and Bronze Age periods (roughly 4500–1000 BCE) across Europe, the Mediterranean, and parts of Asia. The term "megalithic" refers to structures built from large, undressed or roughly dressed stone blocks, arranged without mortar. Unlike later civilizations that developed sophisticated masonry and vaulting, megalithic cultures relied entirely on the **post-and-lintel** system: vertical stones (posts) supporting horizontal stones (lintels) above them. This simple but structurally sound method remained unchanged across centuries and cultures.
+
+
+<ArticleMedia id="media-hist-001-01-core-concept" layout="single" type="image" status="placeholder" alt="Aerial or eye-level view of the sarsen circle at Stonehenge (Wiltshire, England, c. 3100–1600 BCE), showing the iconic post-and-lintel trilithon structure with sarsen lintels and bluestone inner setting." caption="Stonehenge — Sarsen Circle and Trilithons" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
 
 The primary function of megalithic structures was ceremonial or funerary. **Dolmens** (chambers formed by vertical stones capped with a flat stone) served as burial chambers, often covered by earthen mounds. **Menhirs** were single standing stones, frequently arranged in patterns for ceremonial or territorial purposes. **Stone circles** and **alignments** (like Stonehenge and Carnac Stones) suggest astronomical or calendrical functions, though exact purposes remain debated.
 
@@ -32,6 +35,10 @@ Different regions developed local variations. **Passage graves** in Ireland and 
 <Warn>
 **Critical Distinction:** Do not overstate functional certainty. Many megalithic sites (stone circles, alignments) have proposed purposes—astronomical, ceremonial, territorial—but archaeological consensus is often lacking. Avoid asserting single functions for ambiguous structures like Stonehenge. Evidence suggests multiple purposes evolved over time.
 </Warn>
+
+
+<ArticleMedia id="media-hist-001-01-core-concept" layout="single" type="image" status="placeholder" alt="Comparative diagram showing the four main megalithic types: dolmen (capped burial chamber), menhir (single standing stone), passage grave (long corridor leading to corbelled chamber), and stone circle (arranged ritual perimeter)." caption="Megalithic Typology — Dolmen, Menhir, Passage Grave, Stone Circle" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
 
 ## Key Facts and Testable Items
 
@@ -76,6 +83,8 @@ Different regions developed local variations. **Passage graves** in Ireland and 
 **Chambered cairn:** A stone mound covering a burial chamber, constructed from stacked megaliths.
 
 **Sarsen stone:** A type of hard sandstone used in megalithic construction, quarried in southern England and used prominently at Stonehenge.
+
+<ArticleMedia id=\"media-hist-001-01-core-concept-timeline\" layout=\"single\" type=\"image\" status=\"placeholder\" alt=\"Timeline chart showing the chronological development of megalithic construction across Neolithic Europe (c. 4500–1000 BCE), indicating key sites: Carnac alignments (c. 4500 BCE), Newgrange passage grave (c. 3200 BCE), Stonehenge phases I–III (c. 3100–1600 BCE), and regional variations in the Mediterranean and Atlantic Europe.\" caption=\"Megalithic Architecture — Chronological Timeline\" suggestedAsset=\"Timeline diagram\" placementIntent=\"Timeline diagram for architectural period\" />
 
 <Tip>**Megalithic vs. Monolithic:** Megalithic = many large stones assembled (Stonehenge). Monolithic = one single carved stone (Egyptian obelisk). This distinction is tested directly — do not confuse them.</Tip>
 

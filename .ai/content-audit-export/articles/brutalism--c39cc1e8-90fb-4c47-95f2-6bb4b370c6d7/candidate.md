@@ -10,7 +10,11 @@ You are visiting the Cultural Center of the Philippines on Roxas Boulevard and n
 
 ## Core Concepts
 
-[SLATECAMP_UI_BLOCK:ui_0034 component="Tip" status="preserved"]
+<Tip>
+
+**Memory Aid — "B-B-C = Battered, Box, Cantilever."** Three Brutalist visual cues for the LEA: Battered walls (walls tapering toward the top — look for wedge-shaped masses), Box masses (repetitive geometric blocks, modular bays), Cantilevered volumes (floating concrete planes defying gravity). If a building image shows all three, it is almost certainly Brutalist.
+
+</Tip>
 
 - **Béton Brut Origin:** The term "Brutalism" derives from the French béton brut (raw concrete), a phrase Le Corbusier used to describe the board-marked, unfinished concrete surfaces of his Unité d'Habitation in Marseille (1952). British critics Alison and Peter Smithson adopted the term and transformed it into "New Brutalism" as a full architectural ethic in the 1950s.
 
@@ -44,7 +48,11 @@ You are visiting the Cultural Center of the Philippines on Roxas Boulevard and n
 
 ## LEA Exam Traps and Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0035 component="ExamTip" status="preserved"]
+<ExamTip>
+
+**LEA Exam Pattern — Etymology Trap:** Brutalism comes from béton brut (raw concrete), NOT from the English word "brutal." This is the single most tested etymology question on the Philippine LEA for architectural movements. The answer is always "béton brut" (Option B on multiple-choice). Le Corbusier's Unité d'Habitation (1952) is the definitive origin building.
+
+</ExamTip>
 
 - **Trap 1: Confusing Brutalism with Deconstructivism.** Both can appear massive and rough, but Brutalism celebrates truth to materials and structural honesty (the building is what it is), while Deconstructivism deliberately fragments and destabilizes form as an intellectual exercise. Ask: "Is the building proudly showing its construction, or deliberately breaking apart?" If the former, it is Brutalism.
 
@@ -52,7 +60,11 @@ You are visiting the Cultural Center of the Philippines on Roxas Boulevard and n
 
 - **Trap 3: Forgetting the social dimension.** Brutalism is not just a material style — it emerged from post-war social housing and civic building programs. LEA questions may test whether you understand that Robin Hood Gardens (Smithsons) and the Barbican Estate (Chamberlin, Powell & Bon) were public welfare projects, not luxury developments.
 
-[SLATECAMP_UI_BLOCK:ui_0036 component="Warn" status="preserved"]
+<Warn>
+
+⚠️ EXAM WARNING: The LEA frequently pairs Brutalism with Deconstructivism as distractor options. Both can look massive and rough, but Brutalism CELEBRATES structural honesty (the building proudly shows how it was built), while Deconstructivism FRAGMENTS form deliberately (asymmetric, colliding volumes). If the question says "proudly displays its construction process," the answer is Brutalism, not Deconstructivism.
+
+</Warn>
 
 ## Board-Prep Mnemonics
 
@@ -78,7 +90,11 @@ B. Pablo Antonio
 C. Leandro Locsin
 D. Ildefonso Santos
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Example" status="preserved"]
+<Example>
+
+Correct Answer: C. Leandro Locsin designed the CCP (1969) on Roxas Boulevard, Manila. Its cantilevered, massive concrete form floating above a reflecting pool is a defining example of Brutalist architecture adapted to the Philippine tropical context.
+
+</Example>
 
 **Question 3.** Paul Rudolph's Ylea Art & Architecture Building (Rudolph Hall, 1963) is notable for which Brutalist technique?
 

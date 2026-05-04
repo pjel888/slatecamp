@@ -355,11 +355,23 @@ The NSCP is therefore an implicit enforcement standard embedded within the dange
 
 ---
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
+<LawCallout code="nbcp">
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
+Rule II, Sec. 214: Six defect categories make a building 'dangerous or ruinous': (1) Structurally unsafe, (2) No safe egress, (3) Fire hazard, (4) Dangerous to human life, (5) Health/safety/welfare hazard, (6) Abandonment. Any ONE category triggers the abatement procedure.
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
+</LawCallout>
+
+<ExamTip>
+
+LEA Pattern: Questions test the abatement timeline: (1) Building Official serves Notice of Violation → (2) Owner has 30 days to respond/remedy → (3) If not remedied, Building Official orders vacation → (4) If still not remedied, demolition order → (5) Owner has 15 days to demolish or BO does it at owner's expense.
+
+</ExamTip>
+
+<Warn>
+
+⚠️ Critical Legal Point: Article 482 of the Civil Code intersects with PD 1096 here. The building owner has property rights, BUT the State's police power permits demolition of dangerous buildings without compensation if they pose an imminent threat. The Building Official must follow due process — notice, hearing, order, enforcement.
+
+</Warn>
 
 ## Mnemonic Devices
 
@@ -454,7 +466,13 @@ Under PD 1096 Sec. 216 (Other Remedies), a building owner whose structure has be
 
 > **Answer: D — The owner retains all rights of appeal and civil remedy**
 >
-[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+<LawCallout code="pd1096" section="Rule I - Dangerous Buildings">
+
+
+Section 216 is explicit: "The rights, actions, and remedies provided in this Code shall be in addition to all other rights under existing laws." This means (1) the owner may appeal the demolition order administratively to the DPWH Secretary; (2) if still aggrieved, may file for judicial review before the Regional Trial Court; (3) any neighbor or third party injured by the building's condition retains all Civil Code rights (Articles 482, 694–707) independently of the BO's action. The code does not extinguish pre-existing rights — it adds to them. Option A is wrong — the BO's order is an administrative act subject to appeal. Option B is wrong — judicial remedy is available after exhausting administrative remedies. Option C is wrong — PD 1096 liability and Civil Code liability run concurrently.
+
+
+</LawCallout>
 >
 > *LEA Area: Building Laws, Codes & Ethics*
 

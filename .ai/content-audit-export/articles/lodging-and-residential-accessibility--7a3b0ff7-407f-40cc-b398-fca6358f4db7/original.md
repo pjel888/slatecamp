@@ -12,7 +12,6 @@ After reading this article, you should be able to:
 Apply BP 344 accessibility requirements to lodging (hotels, inns, dormitories) and residential buildings: calculate the minimum number of accessible guest rooms (5% of total), required roll-in shower rooms, and visual alarm requirements; distinguish Type A (fully accessible) from Type B (adaptable) dwelling units; and apply adaptable design features to meet future accessibility needs.
 ---
 
-
 > Room 214 of a budget hotel in Cebu. The doorbell is silent. The guest — a Deaf traveler — cannot hear the smoke alarm. The bed is 620 mm high, and she cannot transfer from her wheelchair. The peephole is at 1500 mm — she cannot see through it. The light switch is only 200 mm from the floor and the cord plug. Her accessible room is not accessible at all. She files a formal complaint. The building official arrives. He consults the 2024 IRR. Within minutes, he has a list of violations in hand. **You are that building official. Do you know every violation?**
 
 ---
@@ -359,3 +358,5 @@ Your classmate submits a hotel design for review:
 
 **Minimum Requirements Group A Dwellings**, **Bp 344 Accessible Washrooms**, **Wheelchair Maneuvering And Parking**, **Ra 9442 Pwd Privileges And Incentives**
 
+
+<!-- no-media-needed: existing content format is sufficient without visual media -->

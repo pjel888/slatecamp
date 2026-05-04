@@ -13,12 +13,16 @@ Apply the general provisions of PD 1096 Rule I: the applicability scope, definit
 
 ## 1. Hook / Opening Scenario
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="LawCallout" status="preserved"]
+<LawCallout code="pd1096" section="Rule I - Section 106 - Permits">
+National Building Code of the Philippines (PD 1096) — Primary legislation governing building design and construction.
+</LawCallout>
 Extracted summary:
 - Props: (none)
 - Text: National Building Code of the Philippines (PD 1096) — Primary legislation gov...
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+<LawCallout code="pd1096" section="Rule I - Section 101 - Scope">
+National Building Code of the Philippines (PD 1096) — Primary legislation governing building design and construction.
+</LawCallout>
 Extracted summary:
 - Props: (none)
 - Text: National Building Code of the Philippines (PD 1096) — Primary legislation gov...

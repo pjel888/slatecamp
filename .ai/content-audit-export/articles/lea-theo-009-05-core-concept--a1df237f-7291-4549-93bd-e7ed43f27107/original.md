@@ -4,8 +4,6 @@
 Mixed-use buildings combine two or more distinct program types (retail, office, residential, hotel, parking, parking) in a single structure or development, requiring sophisticated program management to resolve conflicting adjacency requirements and operational logistics. Horizontal mixed-use (functions side-by-side) and vertical mixed-use (functions stacked) each present different spatial and circulation challenges. The podium-tower typology—ground-floor retail/public functions with residential or office tower above—is a dominant contemporary building form, particularly in urban Asian contexts including the Philippines, making it testable content for the LEA.
 </Callout>
 
-
-
 ## Learning Goal
 
 - Define mixed-use development as combining two or more program types (retail, office, residential, hotel) in a single structure.
@@ -13,6 +11,8 @@ Mixed-use buildings combine two or more distinct program types (retail, office, 
 - Resolve conflicting adjacency requirements in mixed-use: separate entries, service access, operational hours, and circulation conflicts.
 
 ## Core Concept
+
+<ArticleMedia id="media-lea-theo-009-05-mixed-use-typology" type="image" caption="Mixed-Use Development Typologies — Horizontal vs. Vertical Comparison" description="Spatial typology illustration with two side-by-side diagrams. Left: 'Horizontal Mixed-Use' — single-level plan showing retail, dining, and entertainment arranged side-by-side with shared pedestrian walkway. Right: 'Vertical Mixed-Use (Podium-Tower)' — section diagram showing ground floor retail, office floors above (podium), residential/hotel tower above, with separate entry arrows (customer entry at ground, resident entry via private lobby, service entry at rear). Callout boxes for each typology noting advantages, limitations, and circulation conflict points." suggestedAsset="Spatial typology diagram comparing horizontal vs. vertical mixed-use arrangements" status="placeholder" />
 
 Mixed-use developments emerged from urban design and economic goals: maximizing land utilization, creating vibrant street-level retail and civic spaces, integrating residential and employment on limited urban land, and reducing transportation-dependent sprawl. However, mixed-use introduces programming complexity—conflicting adjacency requirements (customers and residents), differing operational hours (retail until 9 PM, residential 24/7), and circulation conflicts (customer vs. resident entry, service vehicle conflicts).
 
@@ -109,21 +109,15 @@ Programming must identify code-mandated separations early to inform spatial stra
 <WikiExamTable headers={["Concept", "Definition/Application"]} rows={[['["**Horizontal Mixed-Use**", "Distinct program types side-by-side, typically on same level; maximizes walkability, increases pedestrian animation"]', '["**Vertical Mixed-Use**", "Program types stacked on different levels; maximizes density on limited urban land, reduces parking footprint"]', '["**Podium-Tower**", "Characteristic mixed-use typology: low-rise retail/civic podium with high-rise office/residential tower; dominant in Asian cities"]', '["**Circulation Separation**", "Distinct elevators, stairs, lobbies for different occupancy types to prevent conflict between customer, employee, resident flows"]', '["**Service Circulation**", "Independent loading, trash, and service vehicle access separate from customer and residential circulation"]', '["**Buffer Zone**", "Mechanical, structural, or spatial separation between incompatible uses (retail and residential) to reduce noise, visual, operational conflict"]', '["**Acoustic Isolation**", "Floor assemblies, wall construction, window systems designed to limit sound transmission between retail and residential (typically 50+ dB reduction)"]', '["**Parking Integration**", "Shared basement parking with separate management for different occupancies; TDM strategies reduce private-vehicle parking demand"]', '["**Program Adjacency Conflict**", "Incompatible requirements (retail noise/hours vs. residential quiet/privacy); resolved through separation, buffering, and operational restriction"]', '["**FAR (Floor Area Ratio)**", "Total GBA ÷ site area; indicates density; higher FAR in urban mixed-use (8–12 in dense city centers)"]', '["**Stakeholder Coordination**", "Managing differing requirements of retail operators, office tenants, residents, building management in single structure"]']]} />
 ## How It's Tested on the LEA
 
-
 <ExamTip>1. **Mixed-Use Program Development**: "A mixed-use development on a 50,000 SF urban lot is required to include 100,000 SF retail, 200,000 SF office, and 150,000 SF residential. Propose a vertical organization strategy (podium/tower or alternative) and justify the arrangement." Expected answer: Podium-tower with 100,000 SF retail + support podium (4–5 stories) and 200,000 SF office + 150,000 SF residential tower (12–15 stories, variable). Justification: retail at street level for visibility; office above retail with separation; residential at top tower. Parking basement. This maximizes FAR, creates urban street activation, and separates incompatible uses.</ExamTip>
-
 
 <ExamTip>2. **Circulation Conflict Resolution**: "This mixed-use building has retail customers and residential tenants entering through a shared lobby. Identify problems and propose separation strategy." Expected answer: Customers and residents conflict for elevator access, lobby space, security screening; shared entry compromises residential security and creates noise. Proposal: separate retail entry (street-facing, optimized for customer flow) and residential entry (side or secondary, with dedicated lobby and security); separate elevator banks (retail service elevators separate from residential); service access independent.</ExamTip>
 
-
 <ExamTip>3. **Acoustics and Code Compliance**: "Can a nightclub (108 dB during operation) be programmed on the ground floor of a residential tower with units above? What strategies are required?" Answer: No, nightclub below residential violates code and is unacceptable even with acoustic treatment. If nightclub is required, it must be relocated to lower floors (basement, below residential), or residential must be relocated away from nightclub. Alternative: nightclub is located in a separate building within the mixed-use development, separated from residential.</ExamTip>
-
 
 <ExamTip>4. **Area Budgeting and Density Calculation**: "A mixed-use site is 60,000 SF. Program 80,000 NSF retail (0.70 efficiency), 120,000 NSF office (0.80 efficiency), 100,000 NSF residential (0.75 efficiency), and 40,000 SF parking. Calculate total GBA and FAR." Answer: Retail GBA = 80,000 ÷ 0.70 = 114,286 SF; Office = 120,000 ÷ 0.80 = 150,000 SF; Residential = 100,000 ÷ 0.75 = 133,333 SF; Parking = 40,000 SF (as built). Total GBA = 437,619 SF. FAR = 437,619 ÷ 60,000 = 7.3 (high-density urban development).</ExamTip>
 
-
 <ExamTip>5. **Zoning Strategy in Mixed-Use**: "Propose a zoning strategy (public/semi-public/private/service zones) for a 20-story podium-tower with retail, office, and residential." Expected answer: Public zone (retail podium, customer entry); semi-public zones (office elevator lobby floors 3–10, residential elevator lobby floors 11–20); private zones (office spaces floors 3–10, residential units floors 11–20, executive offices); service zone (parking basement, loading dock, mechanical rooms, trash). Justification: retail customers access public zone; office and residential have separate semi-public circulation; private zones are occupancy-specific; service is independent.</ExamTip>
-
 
 ## Common Mistakes
 
@@ -132,7 +126,6 @@ Programming must identify code-mandated separations early to inform spatial stra
 <WikiMistakeCard mistake="Placing Incompatible Uses in Direct Adjacency" correction="Positioning a noisy retail tenant (bar, nightclub) directly below residential units without adequate acoustic buffer or code-required separation." context="Building code typically requires 2-hour fire-rated separation; acoustic isolation is separate but equally important." />
 
 <WikiMistakeList mistakes={["Inadequate Parking Integration Strategy. Failing to account for parking demand of multiple occupancies or creating parking conflicts (customer parking in residential zones, resident vehicles blocking retail deliveries). Parking strategy must explicitly address each occupancy type and any shared management.", "Overcomplicated Vertical Circulation. Designing too many elevator banks or overly complex zoning that increases construction cost and reduces efficiency. A well-designed podium-tower has 2–3 elevator zones (retail service, office/customer shared, residential) rather than 5+ banks.", "Ignoring Service Access Requirements. Failing to provide adequate, separate service circulation for retail loading, trash, and maintenance. Service vehicles should not queue on the public street or navigate through customer or residential areas.", "Lack of Clear Stakeholder Requirements Documentation. Programming a mixed-use building without explicitly documenting the requirements, constraints, and operational protocols of each occupancy type. This leads to conflicts during design and operation."]} />
-
 
 ## Key Terms
 

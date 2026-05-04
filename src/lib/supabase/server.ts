@@ -35,7 +35,16 @@ export const createServiceClient = async () => {
   )
 }
 
-export const createClient = async () => {
+/**
+ * createClient — Request-scoped Supabase server client.
+ *
+ * Wrapped with React.cache() so every component in the same render request
+ * shares one client instance. Without this, each Suspense-bounded server
+ * component on pages like DashboardPage would independently create a client,
+ * each triggering a concurrent auth token refresh — causing Supabase's
+ * "Too many concurrent token refresh requests" error.
+ */
+export const createClient = cache(async () => {
   if (isDemoMode()) {
     return createMockSupabaseClient() as unknown as ReturnType<
       typeof createServerClient
@@ -68,7 +77,7 @@ export const createClient = async () => {
       },
     },
   )
-}
+})
 
 export async function hasAuthCookie() {
   const cookieStore = await cookies()

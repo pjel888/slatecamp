@@ -59,15 +59,17 @@ _Pattern 4 — Philippine Regulatory Requirements:_ A window schedule for a coas
 
 _Pattern 5 — Schedule Use in Construction Administration:_ The exam describes a scenario where a contractor installs a door with the wrong hardware or wrong size. The architect should have used a schedule to prevent this. What information in the schedule would have prevented this error? Answer: Clear, complete schedules with photographs or samples referenced in the schedule prevent field substitutions.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+<Tip>
+Memory aid for schedules: **Completeness, Consistency, Coordination**. Every schedule must be complete (all columns filled), consistent internally (door marks match drawings), and coordinated with specifications and drawings. A missing door mark or hardware set is a red flag. Always verify schedule accuracy before sending to bidding or construction.
+</Tip>
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Including a room in the room finish schedule but forgetting to label that room number on the floor plan, or vice versa. Field team cannot find the schedule entry for the room." correction="Schedules and drawings must be cross-keyed consistently. Every room number on a floor plan must appear in the room finish schedule. Every door mark on a floor plan must appear in the door schedule. Verify this mapping before contract documents are issued." />
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Specifying different performance criteria in the schedule versus the specification. Example: window schedule specifies 'U-value 0.22' but Division 08 specification requires 'U-value 0.25 minimum.' This ambiguity creates disputes over which document controls." correction="The specification typically controls performance and acceptance criteria. The schedule should reference specification sections (e.g., 'See Division 08 for glazing requirements'). Never let schedule and specification criteria conflict. If they differ, the specification (Part 1: General) must clarify which takes precedence." />
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
+<WikiMistakeList mistakes={["Developing a door schedule without fire rating information when fire-rated doors are required by NSCP (commercial buildings, corridors, exit stairs)", "Omitting hardware schedules, forcing the contractor to infer hardware requirements from specification text", "Creating a room finish schedule but failing to coordinate it with interior design drawings, leading to color/material mismatches", "Specifying 'typical' instead of itemizing each unique door/window (defeats the purpose of the schedule)", "Failing to identify accessibility requirements in hardware schedules (door force, lever handle height, latch design per ADA)", "Omitting quantity columns, making it unclear how many of each item to fabricate", "Not including remarks/notes columns for special conditions (e.g., 'coordinate with structural opening,' 'hold for field verification')"]} />
 
 ## Related Articles
 

@@ -1,12 +1,14 @@
 ## What You Need to Know for the LEA
 
-Lightning protection systems (LPS) safeguard people, structures, and equipment from direct lightning strikes and induced effects. The Philippines experiences high thunderstorm activity due to tropical climate patterns, with annual isokeraunic levels reaching 40–60 thunderstorm days in coastal and mountainous regions (PEC Part 2, Article 2.50). Understanding protection level selection, zone of protection calculation, and grounding requirements is essential for designing compliant systems in the Philippine electrical context.
+## Learning Goal
 
-<Warn message="Lightning protection design directly affects occupant safety and equipment preservation. Non-compliance with PEC and IEC 62305 standards creates liability exposure." />
-
+Apply electrical protection levels and the fault hierarchy — short circuit, ground fault, overload, arc fault — and identify the correct protective device (circuit breaker, fuse, GFCI, AFCI, surge protector) for each type of electrical fault per PEC requirements.
 ## Protection Levels and Risk Assessment
 
 Lightning protection systems are designed to one of four protection levels defined in IEC 62305 and adopted in the Philippine Electrical Code (PEC):
+
+<ArticleMedia id="media-lea-util-003-03-protection-levels-and-ri" a type="image" caption="Lightning Protection — Rolling Sphere Method and Protection Angle Method" description="Comparative diagram showing two lightning protection design methods: (1) Rolling Sphere Method — sphere of radius (20-60m by Level I-IV) rolled across building roof, protected surfaces shown in green, unprotected zones requiring additional air terminals; (2) Protection Angle Method — cone of protection from air terminal with angle α (25°-60° by level). Air terminal spacing, down conductor routing, and grounding electrode shown." suggestedAsset="Diagram or reference image" status="placeholder" />
+
 
 | Protection Level | Risk Reduction | Primary Use | Effectiveness |
 |---|---|---|---|
@@ -152,10 +154,13 @@ All mesh conductors must bond to down conductor network at multiple points.
 
 ### 1. Air Terminals (Lightning Rods)
 
+<ArticleMedia id="media-lea-util-003-03-protection-levels-and-ri" a type="image" caption="Lightning Protection System Components — Air Terminal, Down Conductor, Grounding Electrode, Bonding" description="Isometric building diagram showing complete LPS: air terminals (lightning rods) on roof edges and high points, down conductors along building corners (minimum 2, spaced ≤25m), ground rods (2.4-3m deep, 16mm copper), ring conductor around building base, bonding of metal roof equipment (HVAC, satellite dishes). Ground resistance target ≤10 ohms per PEC Part 2." suggestedAsset="Diagram or reference image" status="placeholder" />
+
+
 **Design per PEC Article 2.50:**
 - Minimum length: 10 inches (0.25 m) minimum per PEC Table 2.90.3.4 above highest point of protected structure
 - Sharp point preferred over ball terminal (contested; IEC 62305 allows both)
-- 35 mm² copper or equivleant per Table 2.90.3.4
+- 35 mm² copper or equivalent per Table 2.90.3.4
 - Spacing: ≤2 × radius (Level II: ≤60 m apart)
 
 **Material Options:**
@@ -360,11 +365,7 @@ For buildings in isokeraunic zones >50 days/year (most of Philippines):
 
 ## Common Mistakes and Corrections
 
-<WikiMistakeList mistakes={[{"mistake": "Using only one down conductor on a building. Single point of failure means entire structure unprotected if that conductor fails during strike.","correction": "Install minimum two independent down conductors per PEC Article 2.50. Preferred: one per corner of rectangular buildings. Ensures redundancy and current distribution."},{"mistake": "Accepting ground resistance >15 ohms. Marginal resistance increases voltage rise during strike, risking step and touch hazards.","correction": "Design grounding system to achieve ≤10 ohms. Use parallel rods, deep electrodes, or ring conductors combined. Test with clamp-on tester after installation."},{"mistake": "Running down conductors through occupied spaces (inside walls, along window edges). Strikes produce 30 kA+ currents; voltage rise creates electrocution risk.","correction": "Route down conductors on exterior surfaces only. Maintain ≥1.8 m clearance from windows, doors, balconies per NFPA 780. Use insulated supports or conduit for added safety."},{"mistake": "Bonding metal roof equipment with undersized wire (e.g., 6 mm² copper instead of 16 mm² minimum).","correction": "All bonding must use ≥16 mm² copper or ≥25 mm² aluminum per PEC. Undersized bonding can fuse during strike, creating hazard."},{"mistake": "Installing air terminals with ball-end design on residential buildings. Belief that ball is more effective.","correction": "Ball and sharp terminals are equivleant per IEC 62305. Choose based on aesthetics or regional preference. Ensure terminal ≥0.5 m above roof, properly secured."},{"mistake": "Neglecting bonding of solar panel frames. Assumption that PV systems are isolated.","correction": "Solar panels are metal structures exposed to direct lightning. Bond frames to down conductor system within 2 m. Bond DC strings and inverter chassis via SPD to grounding network."}]} />
-
-## Compliance with PEC and IEC 62305
-
-The Philippine Electrical Code (PEC) Part 2, Article 2.50 mandates lightning protection systems for structures exceeding 23 m (Class II per PEC Article 2.90) or in high-risk isokeraunic zones. The design process follows IEC 62305 methodology:
+EC) Part 2, Article 2.50 mandates lightning protection systems for structures exceeding 23 m (Class II per PEC Article 2.90) or in high-risk isokeraunic zones. The design process follows IEC 62305 methodology:
 
 **Design Steps (IEC 62305-2 Risk Analysis):**
 1. Determine lightning protection level based on risk assessment (Level I–IV)
@@ -386,3 +387,10 @@ The Philippine Electrical Code (PEC) Part 2, Article 2.50 mandates lightning pro
 ## Summary
 
 Lightning protection systems in the Philippines integrate three design methods (RSM, angle, mesh) to create safe, redundant networks intercepting strikes and dissipating current to earth. Protection levels range from Level I (20 m radius, highest safety) to Level IV (60 m radius, basic coverage). High Philippine thunderstorm frequency (40–80 days/year depending on region) necessitates robust design; Level II protection and dual down conductors are baseline minimums. Ground resistance ≤10 ohms is non-negotiable, requiring careful electrode design in Philippine soil conditions (clay, volcanic, loamy resistivity 50–150 ohms·m). Bonding all metal components ensures current distribution and eliminates dangerous side flashes. Annual inspection and 5-year comprehensive testing maintain system integrity throughout building life. Compliance with PEC Part 2 and IEC 62305-1/3 is mandatory for design and operation in the Philippine context.
+
+## Related Articles
+
+See also within Electrical Systems: **lea-util-003-02-core-concept**, **lea-util-003-04-core-concept**, **lea-util-003-05-core-concept**, **lea-util-003-06-core-concept**.
+
+> **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
+

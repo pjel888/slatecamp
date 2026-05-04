@@ -1,26 +1,21 @@
 {
-  "attempted_at": "2026-05-04T00:06:51.163Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:17:35.097Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "candidate.md matches original.md; refusing no-op apply."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "85529595-d219-4b10-9bd9-383d125da8c3",
   "slug": "lea-prac-frm-019-project-management-in-an-architectural-firm-scope-schedule-budget-and-communication-control",
   "preparation_actions": [
     "auto_generated_diff"
   ],
-  "remote_hash_before": "sha256:85583d1c8a6b1b075a845cb4cc064b8bba1046b46ee20e50c25736aaf88bda24",
-  "original_hash": "sha256:85583d1c8a6b1b075a845cb4cc064b8bba1046b46ee20e50c25736aaf88bda24",
-  "candidate_hash": "sha256:26ef0d74e1af0797b1adf06e6ef0bc9e7b93c158183359d358566756a900471a",
+  "remote_hash_before": "sha256:92745b580191a1205f9fb7f65135d012503497a8e921b6f5d061736c40b7bca1",
+  "original_hash": "sha256:92745b580191a1205f9fb7f65135d012503497a8e921b6f5d061736c40b7bca1",
+  "candidate_hash": "sha256:92745b580191a1205f9fb7f65135d012503497a8e921b6f5d061736c40b7bca1",
   "stale_check_passed": true,
-  "remote_updated_at_before": "2026-05-03T13:52:00.816251+00:00"
+  "remote_updated_at_before": "2026-05-04T02:01:26.730521+00:00"
 }

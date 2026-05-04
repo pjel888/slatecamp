@@ -1,28 +1,21 @@
 {
-  "attempted_at": "2026-05-04T00:06:46.332Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:17:30.526Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "original.md hash does not match article metadata export hash.",
-    "Remote Supabase content differs from export baseline; refusing stale push.",
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "candidate.md matches original.md; refusing no-op apply."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "db248a33-44f2-411c-a069-9685200a588c",
   "slug": "lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method",
   "preparation_actions": [
     "auto_generated_diff"
   ],
-  "remote_hash_before": "sha256:af0ca22ef56e7a3d50d0534477f95679de7e7f378ca42575cdc21ee56c255edb",
-  "original_hash": "sha256:daa221faa9183934e009edd7ba9381d64028c1d65995341654a43b4ab0fa3178",
-  "candidate_hash": "sha256:ad25b7ec24780643454bf4c3a6c9f168729395b1f4bde2a5057e4314a0d88f89",
-  "stale_check_passed": false,
-  "remote_updated_at_before": "2026-05-03T13:51:54.010531+00:00"
+  "remote_hash_before": "sha256:30c8b1d3311488e0e3033c9a889b403d966f593ff8788ef3ceb35c83613fce64",
+  "original_hash": "sha256:30c8b1d3311488e0e3033c9a889b403d966f593ff8788ef3ceb35c83613fce64",
+  "candidate_hash": "sha256:30c8b1d3311488e0e3033c9a889b403d966f593ff8788ef3ceb35c83613fce64",
+  "stale_check_passed": true,
+  "remote_updated_at_before": "2026-05-04T02:01:19.203677+00:00"
 }

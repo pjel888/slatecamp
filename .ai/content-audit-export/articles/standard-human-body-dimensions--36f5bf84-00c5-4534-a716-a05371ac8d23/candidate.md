@@ -57,7 +57,11 @@ You are the lead architect for a new community center in Quezon City. During pos
 
 **Anthropometrics** is the scientific measurement of the human body — its dimensions, proportions, and the range of variation across individuals and populations. In architecture and interior design, it provides the empirical basis for decisions about door heights, counter elevations, aisle widths, stair risers, storage heights, and control placements.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
+<Callout variant="tip" title="Mnemonic">
+
+_ANTHRO_ = human body; _METRICS_ = measurements. Together: "how we measure humans to design for them."
+
+</Callout>
 
 Two types of dimensions exist — know both for the board exam:
 
@@ -82,7 +86,13 @@ Two types of dimensions exist — know both for the board exam:
 - **For clearance elements** (door heights, aisle widths, knee space): Design so the **95th percentile** user (largest body) fits → everyone fits.
 - **For adjustable elements** (desk heights, chair heights): Design the full **5th–95th percentile range** as the adjustment range.
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Callout" status="preserved"]
+<Callout variant="tip" title="Mnemonic">
+
+The REACH-CLEAR Rule
+- **R**EACH → 5th percentile sets the _upper limit_ of control placement
+- **CLEAR**ance → 95th percentile sets the _lower limit_ of space provision
+
+</Callout>
 
 ---
 
@@ -226,7 +236,13 @@ The reach zone hierarchy defines where controls and storage should be placed for
 | **Accessible max (BP 344)** | ≤ **120 cm** | Wheelchair users | Forward reach limit; light switches, outlets, intercom |
 | **US ADA max** | ≤ **48" (121.9 cm)** | Wheelchair users | Same principle, imperial units |
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
+<LawCallout code="reference" section="Neufert - Human Dimensions">
+
+
+Key Design Rule: In a Philippine accessible building (BP 344), light switches, outlets, and controls must be ≤ 120 cm from the floor to be reachable from a wheelchair. This figure is derived from _wheelchair user forward reach_, not ambulatory adult reach.
+
+
+</LawCallout>
 
 🛑 **Stop & Think**: If a US-trained designer places a high shelf at **233 cm** (US male 95th% overhead reach), will a Filipino female at the 5th percentile be able to reach it?
 
@@ -442,7 +458,7 @@ ALE Trap: The five critical dimensions for accessible design: vertical reach max
 
 
 
-<ArticleMedia type="image" caption="Standard Anthropometric Dimensions — Filipino and US Comparison Diagram" description="Side-by-side scale figures of 5th percentile Filipino female and 95th percentile Filipino male (Del Prado-Lu 2007) with US equivalents overlaid. Key dimensions annotated: stature (143.0cm-178.0cm PH), standing eye height, forward reach (max 1200mm BP 344), side reach (max 1370mm), vertical reach (max 1830mm), knee clearance (680mm min), and wheelchair seat height (460-500mm)." />
+<ArticleMedia type="image" caption="Standard Anthropometric Dimensions — Filipino and US Comparison Diagram" alt="Side-by-side scale figures of 5th percentile Filipino female and 95th percentile Filipino male (Del Prado-Lu 2007) with US equivalents overlaid. Key dimensions annotated: stature (143.0cm-178.0cm PH), standing eye height, forward reach (max 1200mm BP 344), side reach (max 1370mm), vertical reach (max 1830mm), knee clearance (680mm min), and wheelchair seat height (460-500mm)." />
 ## Verified Sources
 
 - **Del Prado-Lu, J.L. (2007)**. "Anthropometric measurement of Filipino manufacturing workers." *International Journal of Industrial Ergonomics, 37*(6), 497–503. — Primary source for Filipino percentile data.

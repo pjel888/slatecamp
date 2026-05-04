@@ -1,45 +1,38 @@
 {
   "article_id": "585425ad-355a-4180-b64b-a872115f39f6",
   "slug": "lea-util-004-08-seismic-bracing-requirements-per-nscp-2015",
-  "generated_at": "2026-05-04T00:07:17.157Z",
-  "old_hash": "sha256:7e0f511e8d0170afb4eb4044383a5d27b5e3a4795c4c3a26e1f8f8086f497b02",
-  "new_hash": "sha256:06f9eda5490478387b182352de0f310d704c3b6cb5a7a447efcf21623c67093c",
-  "original_hash": "sha256:7e0f511e8d0170afb4eb4044383a5d27b5e3a4795c4c3a26e1f8f8086f497b02",
+  "generated_at": "2026-05-04T02:18:09.770Z",
+  "old_hash": "sha256:06f9eda5490478387b182352de0f310d704c3b6cb5a7a447efcf21623c67093c",
+  "new_hash": "sha256:00c74a29bd4b041a3838aa4768746f0838c49d7ae1b008ffbc6fc0f2512c0e7c",
+  "original_hash": "sha256:06f9eda5490478387b182352de0f310d704c3b6cb5a7a447efcf21623c67093c",
   "normalized_hash": "sha256:06f9eda5490478387b182352de0f310d704c3b6cb5a7a447efcf21623c67093c",
-  "candidate_hash": "sha256:06f9eda5490478387b182352de0f310d704c3b6cb5a7a447efcf21623c67093c",
+  "candidate_hash": "sha256:00c74a29bd4b041a3838aa4768746f0838c49d7ae1b008ffbc6fc0f2512c0e7c",
   "changed": true,
-  "changed_line_count": 407,
-  "inserted_line_count": 20,
+  "changed_line_count": 373,
+  "inserted_line_count": 4,
   "deleted_line_count": 0,
   "ui_blocks_original_count": 3,
-  "ui_blocks_candidate_count": 0,
-  "ui_blocks_changed_count": 3,
+  "ui_blocks_candidate_count": 3,
+  "ui_blocks_changed_count": 0,
   "ui_blocks_count": 3,
-  "unresolved_placeholders_count": 1,
-  "preserved_blocks_count": 0,
+  "unresolved_placeholders_count": 0,
+  "preserved_blocks_count": 3,
   "changed_text_summary": {
-    "changed": 407,
-    "inserted": 20,
+    "changed": 373,
+    "inserted": 4,
     "deleted": 0,
-    "original_line_count": 426,
-    "candidate_line_count": 446
+    "original_line_count": 446,
+    "candidate_line_count": 450
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0001",
-      "ui_0002",
-      "ui_0003"
-    ],
-    "changed_count": 3
+    "missing_block_ids": [],
+    "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate contains unresolved UI block placeholders.",
-    "Candidate is missing 3 preserved UI block(s)."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 3 preserved UI block(s)."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

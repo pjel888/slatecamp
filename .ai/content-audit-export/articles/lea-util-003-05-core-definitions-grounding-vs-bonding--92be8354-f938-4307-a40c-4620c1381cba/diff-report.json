@@ -1,45 +1,38 @@
 {
   "article_id": "92be8354-f938-4307-a40c-4620c1381cba",
   "slug": "lea-util-003-05-core-definitions-grounding-vs-bonding",
-  "generated_at": "2026-05-04T00:06:07.848Z",
-  "old_hash": "sha256:9f8979827a262ec78d89d76a656f2718cd99d456d705d06d9b81a79c092c2c5d",
-  "new_hash": "sha256:d9e1861eec8e832f1030b916a4bb9fc2be79436779015827b508c0b7ebda2e64",
-  "original_hash": "sha256:9f8979827a262ec78d89d76a656f2718cd99d456d705d06d9b81a79c092c2c5d",
+  "generated_at": "2026-05-04T02:16:37.530Z",
+  "old_hash": "sha256:dcdc0155c07ce6b4af0dd1f989ab64b47a7ae7fee73e2f1e6c6e2a55ca51adc8",
+  "new_hash": "sha256:dcdc0155c07ce6b4af0dd1f989ab64b47a7ae7fee73e2f1e6c6e2a55ca51adc8",
+  "original_hash": "sha256:dcdc0155c07ce6b4af0dd1f989ab64b47a7ae7fee73e2f1e6c6e2a55ca51adc8",
   "normalized_hash": "sha256:d9e1861eec8e832f1030b916a4bb9fc2be79436779015827b508c0b7ebda2e64",
-  "candidate_hash": "sha256:d9e1861eec8e832f1030b916a4bb9fc2be79436779015827b508c0b7ebda2e64",
-  "changed": true,
-  "changed_line_count": 196,
+  "candidate_hash": "sha256:dcdc0155c07ce6b4af0dd1f989ab64b47a7ae7fee73e2f1e6c6e2a55ca51adc8",
+  "changed": false,
+  "changed_line_count": 0,
   "inserted_line_count": 0,
-  "deleted_line_count": 4,
+  "deleted_line_count": 0,
   "ui_blocks_original_count": 3,
-  "ui_blocks_candidate_count": 0,
-  "ui_blocks_changed_count": 3,
+  "ui_blocks_candidate_count": 3,
+  "ui_blocks_changed_count": 0,
   "ui_blocks_count": 3,
-  "unresolved_placeholders_count": 1,
-  "preserved_blocks_count": 0,
+  "unresolved_placeholders_count": 0,
+  "preserved_blocks_count": 3,
   "changed_text_summary": {
-    "changed": 196,
+    "changed": 0,
     "inserted": 0,
-    "deleted": 4,
+    "deleted": 0,
     "original_line_count": 258,
-    "candidate_line_count": 254
+    "candidate_line_count": 258
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0001",
-      "ui_0002",
-      "ui_0003"
-    ],
-    "changed_count": 3
+    "missing_block_ids": [],
+    "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate contains unresolved UI block placeholders.",
-    "Candidate is missing 3 preserved UI block(s)."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 3 preserved UI block(s)."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

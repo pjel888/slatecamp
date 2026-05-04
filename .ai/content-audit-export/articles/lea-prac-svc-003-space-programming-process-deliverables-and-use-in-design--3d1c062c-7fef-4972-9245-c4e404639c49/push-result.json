@@ -1,28 +1,21 @@
 {
-  "attempted_at": "2026-05-04T00:07:07.957Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:17:58.320Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "original.md hash does not match article metadata export hash.",
-    "Remote Supabase content differs from export baseline; refusing stale push.",
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "candidate.md matches original.md; refusing no-op apply."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "3d1c062c-7fef-4972-9245-c4e404639c49",
   "slug": "lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design",
   "preparation_actions": [
     "auto_generated_diff"
   ],
-  "remote_hash_before": "sha256:d5c44b031d41b8b9d2a3348ce37b071db6f770e2ae5783891c75d46ef10af8d3",
-  "original_hash": "sha256:67bbd7844e80874374e49fc22a5d7e2fca8b7a8baaa81e4c08682f35e6eda193",
-  "candidate_hash": "sha256:8d945ab646126a82012cb7f9cd0886be663375f09515c4c8ed5a251a6a0ad9fe",
-  "stale_check_passed": false,
-  "remote_updated_at_before": "2026-05-03T13:52:31.334837+00:00"
+  "remote_hash_before": "sha256:32d597b8d166b61d45fd8735e9f7ea39608789fa20f1eb12af25e86a2f0f14ba",
+  "original_hash": "sha256:32d597b8d166b61d45fd8735e9f7ea39608789fa20f1eb12af25e86a2f0f14ba",
+  "candidate_hash": "sha256:32d597b8d166b61d45fd8735e9f7ea39608789fa20f1eb12af25e86a2f0f14ba",
+  "stale_check_passed": true,
+  "remote_updated_at_before": "2026-05-04T02:02:03.434711+00:00"
 }

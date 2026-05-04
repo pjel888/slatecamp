@@ -7,7 +7,7 @@ Identify when fire alarm systems are mandatory per RA 9514 (Fire Code of the Phi
 
 Fire alarm systems are **required** in the following occupancies and floor areas:
 
-<ArticleMedia id="media-lea-util-004-04-when-fire-alarm-systems-" a type="image" caption="Fire Alarm System Types — Conventional, Addressable, Analog-Addressable" description="Three-panel comparison diagram: (1) Conventional zone-based system — devices in series per zone, FACP shows zone only; (2) Addressable system — each device has unique address on SLC loop, FACPin displays exact device location; (3) Analog-addressable — devices transmit analog values (smoke density, temperature) enabling trend analysis. Architecture differences, wiring topology, and typical Philippine applications shown per NFPA 72." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-util-004-04-when-fire-alarm-systems-" type="image" caption="Fire Alarm System Types — Conventional, Addressable, Analog-Addressable" alt="Three-panel comparison diagram: (1) Conventional zone-based system — devices in series per zone, FACP shows zone only; (2) Addressable system — each device has unique address on SLC loop, FACPin displays exact device location; (3) Analog-addressable — devices transmit analog values (smoke density, temperature) enabling trend analysis. Architecture differences, wiring topology, and typical Philippine applications shown per NFPA 72." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="WikiCalloutBox" status="preserved"]
@@ -211,7 +211,7 @@ The FACP is the _intelligence center_ of the fire alarm system.
 
 ### Audible Signals (Horns)
 
-<ArticleMedia id="media-lea-util-004-04-when-fire-alarm-systems-" a type="image" caption="Fire Alarm Notification — Horns, Strobes, Voice Evacuation Placement" description="Floor plan diagram showing notification appliance placement: horn spacing for 85 dB SPL coverage, strobe coverage (15 cd minimum, max 12m spacing), voice evacuation speakers in corridors and stairwells. Integration with elevator recall (signal to elevator controller on alarm), HVAC shutdown (return dampers close), and door holder release (magnetic holders release on alarm) shown per RA 9514 IRR." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-util-004-04-when-fire-alarm-systems-" type="image" caption="Fire Alarm Notification — Horns, Strobes, Voice Evacuation Placement" alt="Floor plan diagram showing notification appliance placement: horn spacing for 85 dB SPL coverage, strobe coverage (15 cd minimum, max 12m spacing), voice evacuation speakers in corridors and stairwells. Integration with elevator recall (signal to elevator controller on alarm), HVAC shutdown (return dampers close), and door holder release (magnetic holders release on alarm) shown per RA 9514 IRR." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 
 **Standard:** NFPA 72 Table 18.4.3 specifies minimum sound pressure levels (SPL) based on occupancy type.

@@ -1,26 +1,21 @@
 {
-  "attempted_at": "2026-05-04T00:06:11.707Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:16:41.772Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "candidate.md matches original.md; refusing no-op apply."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "f34aade8-a870-458c-9609-562419eb1238",
   "slug": "lea-matl-008-03-core-concept",
   "preparation_actions": [
     "auto_generated_diff"
   ],
-  "remote_hash_before": "sha256:306c4747a171c2daa76dd6c7372a03607e321373cc54811e7c6fa1ba70724b96",
-  "original_hash": "sha256:306c4747a171c2daa76dd6c7372a03607e321373cc54811e7c6fa1ba70724b96",
-  "candidate_hash": "sha256:55519fb31868d4e8b081a984168d9f6a5bc270fc421f7005583fd4ca7f3c7ec4",
+  "remote_hash_before": "sha256:0ed8b3caed35ccf929e5e1276d3a48c84c17e051cc1bd8cea4fc65721112fe8f",
+  "original_hash": "sha256:0ed8b3caed35ccf929e5e1276d3a48c84c17e051cc1bd8cea4fc65721112fe8f",
+  "candidate_hash": "sha256:0ed8b3caed35ccf929e5e1276d3a48c84c17e051cc1bd8cea4fc65721112fe8f",
   "stale_check_passed": true,
-  "remote_updated_at_before": "2026-05-03T13:50:36.199564+00:00"
+  "remote_updated_at_before": "2026-05-04T01:59:56.127117+00:00"
 }

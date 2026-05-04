@@ -1,46 +1,38 @@
 {
   "article_id": "e6c2a686-5b8c-477d-b5e4-d02bef987743",
   "slug": "pedestrian-protection-during-construction",
-  "generated_at": "2026-05-04T00:06:16.919Z",
-  "old_hash": "sha256:982fea044543523cbbeba410520617dc780b4f8c141816440fc256e1bf8293fa",
-  "new_hash": "sha256:8f7e723ec018682af963de617fe1a114479db469bdaf0604b242b7140a6a7a7d",
-  "original_hash": "sha256:982fea044543523cbbeba410520617dc780b4f8c141816440fc256e1bf8293fa",
+  "generated_at": "2026-05-04T02:16:47.972Z",
+  "old_hash": "sha256:2b85c24a49fc89d0e8be75fa5a558d6839cc4539ec34eac34ef10084cb217c76",
+  "new_hash": "sha256:52b2454336f7b112e9fd2c406b4009f1b3aef9b55805166cf3ae90d97a3300a7",
+  "original_hash": "sha256:2b85c24a49fc89d0e8be75fa5a558d6839cc4539ec34eac34ef10084cb217c76",
   "normalized_hash": "sha256:8f7e723ec018682af963de617fe1a114479db469bdaf0604b242b7140a6a7a7d",
-  "candidate_hash": "sha256:8f7e723ec018682af963de617fe1a114479db469bdaf0604b242b7140a6a7a7d",
+  "candidate_hash": "sha256:52b2454336f7b112e9fd2c406b4009f1b3aef9b55805166cf3ae90d97a3300a7",
   "changed": true,
-  "changed_line_count": 277,
-  "inserted_line_count": 20,
+  "changed_line_count": 15,
+  "inserted_line_count": 0,
   "deleted_line_count": 0,
   "ui_blocks_original_count": 3,
-  "ui_blocks_candidate_count": 0,
-  "ui_blocks_changed_count": 3,
+  "ui_blocks_candidate_count": 3,
+  "ui_blocks_changed_count": 0,
   "ui_blocks_count": 3,
-  "unresolved_placeholders_count": 1,
-  "preserved_blocks_count": 0,
+  "unresolved_placeholders_count": 0,
+  "preserved_blocks_count": 3,
   "changed_text_summary": {
-    "changed": 277,
-    "inserted": 20,
+    "changed": 15,
+    "inserted": 0,
     "deleted": 0,
-    "original_line_count": 321,
-    "candidate_line_count": 341
+    "original_line_count": 355,
+    "candidate_line_count": 355
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0001",
-      "ui_0002",
-      "ui_0003"
-    ],
-    "changed_count": 3
+    "missing_block_ids": [],
+    "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate contains unresolved UI block placeholders.",
-    "Candidate is missing 3 preserved UI block(s).",
-    "original.md hash does not match article metadata export hash."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 3 preserved UI block(s).; original.md hash does not match article metadata export hash."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

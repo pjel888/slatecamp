@@ -16,9 +16,19 @@ A man in a manual wheelchair approaches the entrance of a newly opened three-sto
 
 ---
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="LawCallout" status="preserved"]
+<LawCallout code="ra9266" section="Section 29 - Prohibited Acts">
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
+
+The enforcement chain: PWD complaint → NCDA/BO investigation → Notice of Violation → Stop Work Order → Fine (up to ₱200,000) → Criminal liability (RA 7277, Sec. 46-47) → PRC revocation for licensed professionals. Every actor in the BOLD-CAPS chain has specific legal responsibilities.
+
+
+</LawCallout>
+
+<ExamTip>
+
+LEA Pattern: Expect questions testing who bears liability. The Architect of Record bears professional liability under RA 9266. The building Owner bears civil and criminal liability for noncompliance. The Building Official faces administrative liability for failure to enforce.
+
+</ExamTip>
 
 ## CORE MNEMONIC FRAMEWORK
 
@@ -125,7 +135,11 @@ A man in a manual wheelchair approaches the entrance of a newly opened three-sto
   - **Imprisonment:** Up to **6 years**
   - Or **both**, at the discretion of the court
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
+<Callout variant="lea-watch" title="Trap Leart">
+
+The ₱50,000 fine from original BP 344 is frequently tested as a distractor. The current maximum under RA 10754 is ₱300,000 + 6 years. Always cite the latest amendment.
+
+</Callout>
 
 ---
 
@@ -236,7 +250,11 @@ Level 5 → PRC / PRBoA
 | Condominiums (common areas) | YES |
 | Private offices (employer) | YES (RA 7277 employment provisions) |
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Callout" status="preserved"]
+<Callout variant="lea-watch" title="Trap Leart">
+
+"Private" does not mean "exempt." If the public can enter the building, BP 344 applies.
+
+</Callout>
 
 ---
 
@@ -361,7 +379,11 @@ Stage 7 — PROFESSIONAL SANCTIONS
 
 > **Why is the enforcement chain so elaborate?**
 >
-[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
+<Warn>
+
+The Philippines has approximately 1.57 million registered PWDs (PSA 2020), with the actual number estimated at 3–5 times higher. For decades, accessible design was treated as optional — buildings were approved and occupied with zero accessibility features. The layered enforcement structure (BO → DPWH → NCDA → courts) was designed to create multiple points of accountability. A corrupt or negligent BO is not the end of the road; NCDA and DPWH provide independent oversight, and any PWD can bypass local officials entirely by going directly to the courts. The escalating penalty structure (from administrative warning to ₱300,000 + 6 years) reflects the legislature's recognition that accessibility failures are not mere technical violations — they are acts of exclusion that deny constitutional rights.
+
+</Warn>
 
 ---
 
@@ -393,7 +415,13 @@ Stage 7 — PROFESSIONAL SANCTIONS
 > **A: ₱300,000 fine + 6 years imprisonment**, or both.
 
 **Q3.** Can the Building Official be held liable for issuing a permit for a noncompliant building?
-[SLATECAMP_UI_BLOCK:ui_0004 component="LawCallout" status="preserved"]
+<LawCallout code="ra9266" section="Section 30 - Penalties">
+
+
+A: Yes — administrative (CSC/Ombudsman) and criminal (PD 1096 Sec. 213) liability.
+
+
+</LawCallout>
 
 **Q4.** What is the architect's civil liability period under RA 9266?
 > **A: 10 years** from completion of the project.

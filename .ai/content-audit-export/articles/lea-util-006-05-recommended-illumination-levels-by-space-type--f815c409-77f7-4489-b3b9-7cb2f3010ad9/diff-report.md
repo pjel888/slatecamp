@@ -1,33 +1,32 @@
 # Content Diff Report: lea-util-006-05-recommended-illumination-levels-by-space-type
 
-Generated: 2026-05-04T00:05:54.079Z
+Generated: 2026-05-04T02:16:25.692Z
 Article ID: f815c409-77f7-4489-b3b9-7cb2f3010ad9
-Changed: true
-Safe to push locally: false
+Changed: false
+Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:9f42f5c9dfe2d48030d06fc7b5a5bedfabbd68b420c572dcbb8e1165b389f5d0`
+- Original: `sha256:4fa397fe4e37e066bc42a4c500472f763d5ecb6972995e19cecbf03b837c4b56`
 - Normalized: `sha256:0aa6e039e9cde76ca35c5fc9000c9e7e49302a4df98ddf33dd5cd5444fd356ee`
-- Candidate: `sha256:0aa6e039e9cde76ca35c5fc9000c9e7e49302a4df98ddf33dd5cd5444fd356ee`
+- Candidate: `sha256:4fa397fe4e37e066bc42a4c500472f763d5ecb6972995e19cecbf03b837c4b56`
 
 ## Line summary
 
-- Changed lines: 67
+- Changed lines: 0
 - Inserted lines: 0
-- Deleted lines: 6
+- Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 4
-- UI blocks preserved: 0
-- UI blocks changed/missing: 4
-- Unresolved placeholders: 1
+- UI blocks preserved: 4
+- UI blocks changed/missing: 0
+- Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate contains unresolved UI block placeholders.
-- Candidate is missing 4 preserved UI block(s).
+- None
 
 ## Warnings
 

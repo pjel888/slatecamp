@@ -1,26 +1,19 @@
 {
-  "attempted_at": "2026-05-04T00:06:48.357Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:25:53.702Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "Failed to update wiki_articles.content: Bad Request"
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "a865c6b2-8c25-404e-bb0c-08d374d374a5",
   "slug": "pd-1096-rule-vii-height-limits",
-  "preparation_actions": [
-    "auto_generated_diff"
-  ],
+  "preparation_actions": [],
   "remote_hash_before": "sha256:ac0826a1d0c00ff22dc0b691d8c0173d93b734df27f5b34b947af2830ec3b4a2",
   "original_hash": "sha256:ac0826a1d0c00ff22dc0b691d8c0173d93b734df27f5b34b947af2830ec3b4a2",
-  "candidate_hash": "sha256:8903c5dc4a0b6c9471389a557a0e81620f117d764cda7783c32ccf050f5a7aee",
+  "candidate_hash": "sha256:05f30026e96e4cc0ca7cdb7ae49378129d3b2d1d246a8aade9858cd580b11652",
   "stale_check_passed": true,
   "remote_updated_at_before": "2026-05-03T16:38:17.974674+00:00"
 }

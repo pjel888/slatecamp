@@ -6,6 +6,10 @@ Identify the five testable markers of Andalusian Islamic architecture — multip
 ## Core Concept
 **Al-Andalus** (Islamic Spain) developed a distinct architectural language shaped by geographic isolation, Christian pressure, and Berber/Arab fusion. Unlike the monumental religious hierarchies of Baghdad or Cairo, Andalusian architecture prioritized intimate, private, inward-focused palaces. The **Alhambra** in Granada (14th–15th centuries) represents the apex of this tradition.
 
+
+<ArticleMedia id="media-hist-004-05-core-concept" layout="single" type="image" status="placeholder" alt="Interior of the Great Mosque of Cordoba (begun 784–786 CE, expanded 10th century), showing the iconic double-tiered horseshoe arches in red-and-white voussoirs on reused Roman columns." caption="Great Mosque of Cordoba — Hypostyle Hall with Horseshoe Arches" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
+
 Andalusian architecture emphasizes water, geometry, and visual intricacy at intimate scale. The courtyard (patio) becomes the organizing principle—not a utilitarian space (as in hypostyle mosques) but a poetic microcosm. Fountains occupy the center; arcaded galleries frame three or four sides. Water channels (acequia) run through rooms, carrying sound and coolness. Stucco and tile replace the Byzantine mosaic. Muqarnas reaches its most delicate, ornamental expression—ceiling surfaces fracture into intricate geometric patterns that seem to dematerialize. Calligraphy covers walls, inscribing Quranic verses and court poetry in flowing script.
 
 <Tip>**Andalusian architecture's five testable markers:**
@@ -26,6 +30,10 @@ Material choices reinforce intimacy. Stone is minimal; instead, stucco, carved w
 Andalusian architecture represents Islam at its most refined and most fragile. The sophistication of the Alhambra emerges partly because the Nasrid dynasty (rulers of Granada from 1238 CE onward) had shrunk to a single city-state. With limited territory, the ruler invested in architectural magnificence rather than military expansion. The result is a palace so elaborate that every surface demands attention—water, light, color, geometry, and poetry fuse into a unified sensory experience.
 
 <Note>The Alhambra is fundamentally a **palace** (royal residential complex), not a fortress or mosque. The interior palatial spaces—courtyards, chambers, water displays—define its function. The fortress walls are secondary infrastructure. Understanding this functional identity is critical for correctly analyzing Alhambra's spatial strategies on the LEA.</Note>
+
+
+<ArticleMedia id="media-hist-004-05-core-concept" layout="single" type="image" status="placeholder" alt="View of the Court of the Lions at the Alhambra (Granada, 14th century) with its central fountain, slender columns, muqarnas stalactite vaulting, and intricate geometric tilework (zellij)." caption="Alhambra — Nasrid Palace Courtyard and Muqarnas Vault" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
 
 ## Key Facts and Testable Items
 
@@ -80,6 +88,8 @@ Andalusian architecture represents Islam at its most refined and most fragile. T
 **Zellige** — Geometric tile work (Morocco/North Africa influenced by Andalusian tradition); interlocking colored tiles forming complex patterns.
 
 <Warn>The horseshoe arch is an Andalusian Islamic signature—it does not appear in Persian, Ottoman, or Central Islamic traditions. Confusing it as universal Islamic is a critical error. Similarly, water integration in Andalusian palaces is poetic (acequias through chambers for sound, scent, reflection) and differs from utilitarian water systems elsewhere. Andalusian = intimate, poetic, decorative; not monumental.</Warn>
+
+<ArticleMedia id="media-hist-004-05-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparison of Andalusian Islamic features across the Great Mosque of Cordoba (horseshoe arches, double-tiered arcades, red-and-white voussoirs) and the Alhambra (muqarnas vaulting, zellij tilework, courtyard water features).\" caption=\"Andalusian Islamic Architecture — Cordoba and Alhambra Comparison\" suggestedAsset=\"Style comparison illustration\" placementIntent=\"Style comparison for architectural period\" />
 
 ## Related Articles
 

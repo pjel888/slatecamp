@@ -43,7 +43,11 @@ Every chimney must terminate at least **600 mm above** the highest point of roof
 
 ### Master Mnemonic — **"WALSH"**
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="new"]
+<LawCallout code="nbcp" section="Rule XII, Sec. 1211" title="WALSH Mnemonic — Five Governing Principles">
+
+W = Walls (thickness by heat load); A = Anchorage (lateral, at 1.80 m intervals); L = Lining (fire clay ≥ 15 mm, or firebrick ≥ 500 mm); S = Separation / Clearance (50 mm interior, 25 mm exterior); H = Height (≥ 600 mm above roof AND above any obstruction within 3 m). Memorize this sequence — it covers every major metric in Section 1211.
+
+</LawCallout>
 
 > **W**alls (thickness by heat load)
 > **A**nchorage (lateral, at 1.80 m intervals)
@@ -98,7 +102,11 @@ Every chimney must terminate at least **600 mm above** the highest point of roof
 | Above roof penetration | ≥ 600 mm | ≥ 914 mm / 3 ft (IRC R1003.9) |
 | Above highest building part within 3.00 m | ≥ 600 mm | ≥ 610 mm / 2 ft above anything within 10 ft / 3.05 m (IRC R1003.9) |
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Note" status="preserved"]
+<Note>
+
+Philippine code is less restrictive than IBC regarding above-roof height (600 mm vs. 914 mm), but the 3.00 m / 3.05 m reference zone is virtually identical.
+
+</Note>
 
 ### Table 5 — Hearth Requirements
 
@@ -256,7 +264,11 @@ The LEA boards may present scenario questions where NFPA 211 data is used as a r
 
 ### Trap 1 — Chimney Height: One Condition or Both?
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="new"]
+<Warn>
+
+There are TWO concurrent height conditions. The chimney must be ≥ 600 mm above the roof surface AND ≥ 600 mm above the highest point of any building element within 3.00 m of the chimney. If a parapet wall, dormer, or adjacent structure is within 3.00 m and taller than the chimney top, the chimney fails — even if it meets the 600 mm above-roof condition. Both conditions must be satisfied simultaneously.
+
+</Warn>
 
 **Wrong assumption:** "The chimney is 600 mm above the roof surface, so it meets the height requirement."
 
@@ -290,7 +302,11 @@ The LEA boards may present scenario questions where NFPA 211 data is used as a r
 
 ### Mnemonic 1 — Fireplace Wall Numbers: "2-2.5-5-10"
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="new"]
+<Tip>
+
+Remember the fireplace dimensions sequence: 200 mm outer wall → 250 mm firebox wall → 500 mm firebox depth → 10 mm max firebrick joint. Say it like a phone number: "Two, two-fifty, five-hundred, ten."
+
+</Tip>
 
 > **2**00 mm — outer fireplace wall
 > **2.5** → 250 mm — firebox wall (without firebrick lining)

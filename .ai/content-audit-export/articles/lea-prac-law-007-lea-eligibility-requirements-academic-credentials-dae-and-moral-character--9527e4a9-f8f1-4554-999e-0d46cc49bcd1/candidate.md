@@ -11,7 +11,9 @@ After studying this article, you should be able to:
 - State the required documents for examination application.
 - Identify the grounds for disqualification from taking the LEA.
 
-[SLATECAMP_UI_BLOCK:ui_0008 component="LawCallout" status="preserved"]
+<LawCallout code="ra9266" section="Section 27 - DAE Path">
+Legal Basis: RA 9266 (Architecture Act of 2004), Section 13 (Qualifications for Admission to the Architect Licensure Examination); PRBoA Resolutions on DAE implementation.
+</LawCallout>
 Extracted summary:
 - Props: code=ra9266, title=RA 9266, Section 13 — LEA Eligibility Requirements
 - Text: Legal Basis: RA 9266 (Architecture Act of 2004), Section 13 (Qualifications for Admission to the Licensure Examination for Architects); PRBoA Resolutions on DAE implementation.
@@ -26,7 +28,7 @@ DAE represents post-baccalaureate, pre-licensure experience that develops a cand
 
 ### Master's Degree Credit and Documentation
 
-[SLATECAMP_UI_BLOCK:ui_0007 component="Tip" status="preserved"]
+<Tip>A Master's degree in Architecture reduces the DAE requirement by **one (1) year** (from 2 years to 1 year). This is a commonly tested advantage. The reduction applies only to Master's degrees from CHED-recognized institutions. A Master's in a non-architecture field does not qualify.</Tip>
 Extracted summary:
 - Props: (none)
 - Text: A Master's degree in Architecture reduces the DAE requirement by **one (1) year** (from 2 years to 1 year). This is a commonly tested advantage. The reduction applies only to Master's degrees from CHE...
@@ -35,19 +37,19 @@ A critical advantage exists for candidates holding a Master's degree in Architec
 
 ### Supporting Documents and Verification
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="Warn" status="preserved"]
+<Warn>Fraudulent applications — false evidence or misrepresentation — result in **denial of registration** and, if discovered later, **suspension or revocation** of the Certificate of Registration. The Board verifies all credentials with CHED and the NBI. Never assume fraud has a statute of limitations in professional regulation.</Warn>
 Extracted summary:
 - Props: (none)
 - Text: ⚠️ Fraudulent applications — false evidence or misrepresentation — result in **denial of registration** and, if discovered later, **suspension or revocation** of the Certificate of Registration. The Boar... — expect this as a trap answer on the LEA.
 
 The Board requires submission of all supporting documents before examination registration is finalized. These include the Diversified Architecture Experience Logbook, the architect-mentor's Professional Tax Receipt (PTR) and Integrated and Accredited Professional Organization of Architects (IAPOA) number, copies of the mentor's valid Professional ID, and original college diplomas or baccalaureate transcripts with graduation dates and the remark "For Board Examination Purposes" clearly marked. Fraudulent applications containing false evidence or misrepresentations result in denial of registration or, if discovered later, suspension or revocation of the Certificate of Registration. The Board reserves the right to verify all credentials with CHED and the National Bureau of Investigation before proceeding with examination approval.
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
+<ExamTip />
 Extracted summary:
 - Props: (none)
 - Text: The four LEA eligibility requirements (C-A-A-E): Citizenship (Filipino), Age (21+ at exam time), Academics (B.S. Arch from CHED-recognized school), Experience (DAE — minimum 2 years or 3,840 hours).
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="Note" status="preserved"]
+<Note />
 Extracted summary:
 - Props: (none)
 - Text: The DAE requirement is reduced by 1 year for Master's degree holders in Architecture. The reduction applies only to Master's degrees from CHED-recognized institutions. A Master's in a non-architectural field does NOT qualify for the reduction.

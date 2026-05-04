@@ -5,7 +5,6 @@ Distinguish the four housing finance institutions — Pag-IBIG/HDMF (employed wo
 
 Four primary institutions provide housing finance to different sectors of the Philippine population: **Pag-IBIG/HDMF** finances employed workers (mandatory membership); **SSS** finances private sector workers (insurance + housing); **GSIS** finances government employees (insurance + housing); **NHMFC** operates as the secondary mortgage market, enabling lenders to recycle capital.
 
-
 ## Core Concept
 
 The Philippine housing finance system is _employment-based_ and _segmented by sector_. There is no single national housing bank—instead, four specialized institutions serve different populations.
@@ -22,6 +21,7 @@ The Philippine housing finance system is _employment-based_ and _segmented by se
 **NHMFC (National Home Mortgage Finance Corporation)** operates the secondary mortgage market. When Pag-IBIG, banks, or other primary lenders originate a housing loan, NHMFC can purchase that loan, returning capital to the lender so they can issue new loans. This recycling mechanism is critical for loan availability.
 
 The critical distinction: These agencies _finance_ housing (they issue loans to end-buyers). They do NOT _build_ housing (that is NHA's role) and do NOT _regulate_ developers (that is DHSUD's role).
+<ArticleMedia id="media-lea-plan-007-03-core-concept" a type="image" caption="Housing Finance Institutions — Pag-IBIG, SSS, GSIS, NHMFC Comparison" description="Four-panel comparison of housing finance institutions: Pag-IBIG/HDMF (employed workers, mandatory), SSS (private sector, housing loans), GSIS (government employees), NHMFC (secondary mortgage market, liquidity). Target sector, membership basis, and financial products per institution." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
@@ -38,7 +38,6 @@ Pag-IBIG is ubiquitous in Philippine housing—nearly every employed person cont
 3. **System role:** "Who recycles housing loans in the secondary market?" → NHMFC.
 
 <Tip>**Memory aid:** Pag-IBIG = **P**rimary lender for all **employed** (government + private). SSS = private sector workers (extra benefit beyond insurance). GSIS = government employees (extra benefit). NHMFC = secondary market (buys loans so lenders can lend again).</Tip>
-
 
 **Exam Tip:** Pag-IBIG = employed workers (mandatory, 2% EE + 2% ER). SSS = private sector (insurance + housing loan). GSIS = government (insurance + housing). NHMFC = secondary market (buys mortgages from originators, not direct lending).
 

@@ -1,6 +1,6 @@
 # Building Materials and Construction Methods — Overview & Study Strategy
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="SubjectSnapshot" status="preserved"]
+<SubjectSnapshot items='[{"label":"PRC Area","value":"Area B"},{"label":"Weight","value":"30% of Area B"},{"label":"PRC Subject Code","value":"LEA-MATL"},{"label":"Subtopics","value":"10 major areas"},{"label":"Computational","value":"High (estimating)"}]' />
 Extracted summary:
 - Props: items="[{"label":"PRC Area","value":"Area B"},{"label":"Weight","value":"30% of Area B"},{"label":"PRC Subject Code","value":"LEA-MATL"},{"label":"Subtopics","value":"10 major areas"},{"label":"Computational","value":"High (estimating)"}]"
 - Text: (none detected)
@@ -8,7 +8,7 @@ Extracted summary:
 ## Learning Goal
 
 Master the materials and construction methods tested in the LEA, including: masonry and concrete, wood and timber, metals/glass/glazing, roofing/waterproofing/insulation, interior finishes, hardware/joints/fasteners, construction systems, estimating quantities, architectural specifications (CSI MasterFormat), and sustainable/green materials (BERDE). By the end of this study map, you should understand the material-to-delivery chain and be fluent in estimating computations.
-<ArticleMedia id="media-overview-building-materials" a type="image" caption="Building Materials — Study Sequence Flowchart" description="Three-stage study progression diagram: Stage 1 — Materials Inventory (Weeks 1-3): For each material group know Classification, Properties, Applications, Philippine context — Masonry/Concrete, Wood/Timber, Metals/Glass, Roofing/Waterproofing, Interior Finishes, Hardware/Fasteners; Stage 2 — Methods & Systems (Weeks 4-5): Construction sequence, system compatibility, RC frame, steel connections; Stage 3 — Computations & Specs (Weeks 6-7): Estimating volumes/quantities, CSI MasterFormat, specification types. Arrows show cumulative knowledge building." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-overview-building-materials" type="image" caption="Building Materials — Study Sequence Flowchart" alt="Three-stage study progression diagram: Stage 1 — Materials Inventory (Weeks 1-3): For each material group know Classification, Properties, Applications, Philippine context — Masonry/Concrete, Wood/Timber, Metals/Glass, Roofing/Waterproofing, Interior Finishes, Hardware/Fasteners; Stage 2 — Methods & Systems (Weeks 4-5): Construction sequence, system compatibility, RC frame, steel connections; Stage 3 — Computations & Specs (Weeks 6-7): Estimating volumes/quantities, CSI MasterFormat, specification types. Arrows show cumulative knowledge building." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Subject Coverage
 
@@ -25,9 +25,9 @@ Ten subtopics span the full lifecycle of building materials:
 - **Architectural Specifications and Documentation** — CSI MasterFormat, three-part section format, prescriptive vs. performance specs
 - **Sustainable and Green Materials** — BERDE, embodied carbon, recycled content, VOC limits
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="ExamTip" status="preserved"]
+<ExamTip>The board foot formula catches many candidates off guard because the inputs mix imperial units. Practice until the formula is automatic: BF = T(in) × W(in) × L(ft) ÷ 12. A 2×6 at 14 feet = 2 × 6 × 14 ÷ 12 = 14 board feet.</ExamTip>
 Extracted summary:
-[SLATECAMP_UI_BLOCK:ui_0005 component="ExamTip" status="preserved"]
+<ExamTip>The board foot formula catches many candidates off guard because the inputs mix imperial units. Practice until the formula is automatic: BF = T(in) × W(in) × L(ft) ÷ 12. A 2×6 at 14 feet = 2 × 6 × 14 ÷ 12 = 14 board feet.</ExamTip>
 Extracted summary:
 - Props: (none)
 - Text: The board foot formula catches many candidates off guard because the inputs mix imperial units. Practice until the formula is automatic: BF = T(in) × W(in) × L(ft) ÷ 12. A 2×6 at 14 feet = 2 × 6 × 14 ÷ 12 = 14 board feet.
@@ -38,7 +38,7 @@ Extracted summary:
 
 For each major material group, know: Classification, Properties, Applications, Philippine context.
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="WikiExamTable" status="preserved"]
+<WikiExamTable headers={["Material","Key Classification","Critical Property","Common LEA Test Point"]} rows={[["Portland Cement","Types I–V","Compressive strength gain rate","Type II = moderate sulfate resistance; Type III = high early strength"],["Concrete Hollow Block","Non-load-bearing / Load-bearing","Compressive strength","Load-bearing CHB: min 5.17 MPa; standard sizes: 100mm, 150mm, 200mm"],["Structural Steel","W-shapes, channels, angles, tubes","Yield strength","A36 steel: 250 MPa yield; A572 Gr.50: 345 MPa"],["Tempered Glass","Heat-strengthened vs. fully tempered","Impact resistance","Tempered is 4× stronger than annelead; breaks into small cubes"],["Gypsum Board","Standard, moisture-resistant, fire-rated","Fire resistance","Type X: 5/8-inch fire-rated board for shaft walls"]]} />
 Extracted summary:
 - Props: headers="{["Material","Key Classification","Critical Property","Common LEA Test Point"]}", rows="{[["Portland Cement","Types I–V","Compressive strength gain rate","Type II = moderate sulfate resistance; Type III = high early strength"],["Concrete Hollow Block","Non-load-bearing / Load-bearing","Compressive strength","Load-bearing CHB: min 5.17 MPa; standard sizes: 100mm, 150mm, 200mm"],["Structural Steel","W-shapes, channels, angles, tubes","Yield strength","A36 steel: 250 MPa yield; A572 Gr.50: 345 MPa"],["Tempered Glass","Heat-strengthened vs. fully tempered","Impact resistance","Tempered is 4× stronger than annelead; breaks into small cubes"],["Gypsum Board","Standard, moisture-resistant, fire-rated","Fire resistance","Type X: 5/8-inch fire-rated board for shaft walls"]]}"
 - Text: (none detected)

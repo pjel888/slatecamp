@@ -63,19 +63,19 @@ Slab-mounted (flat gypsum) ceilings are common in residential projects and low-b
 
 **Question Type 4 (Seismic Compliance):** A high-rise building in Metro Manila (Zone 4) includes suspended ceilings. What bracing is required per IBC Section 13.5.7? Answer: Lateral (wire) and diagonal bracing at ≤1200mm spacing. Omitting bracing = code violation and collapse risk in earthquake.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+<Tip>Memory aid: Suspended ceilings are modular (600×600mm, 600×1200mm). NRC for offices is 0.75+; for retail, 0.65. Class A fire rating is material property; 2-hour fire rating requires assembly design. Seismic zones need diagonal bracing—it's not optional.</Tip>
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Specifying standard mineral fiber tiles (NRC 0.65) for a law office requiring speech privacy" correction="Offices demand NRC ≥0.75 minimum. Use perforated tiles (NRC 0.80+) or specify acoustic baffles. NRC 0.65 is for retail corridors only." />
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Assuming Class A fire rating of tiles provides structural 2-hour fire rating" correction="Class A is surface fire rating (flame/smoke). Structural fire rating requires additional gypsum, intumescent paint, or rated assembly. Specify both separately." />
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Omitting seismic bracing in suspended ceilings in Philippines Zone 4" correction="IBC Section 13.5.7 mandates lateral and diagonal bracing at 900-1200mm spacing. Failure to brace = code violation and collapse risk. Inspect on-site." />
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Installing standard gypsum ceiling tiles in high-humidity bathrooms or areas above pools" correction="Specify moisture-rated gypsum (e.g., USG Firecode C water-resistant) or metal panels. Standard tile absorbs water and deteriorates in 3-5 years." />
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="WikiMistakeList" status="preserved"]
+<WikiMistakeList mistakes={["Calculating grid layout without accounting for trim perimeter and access panel requirements", "Failing to specify return air path height (≥300mm above tiles) for HVAC compliance", "Mixing 9/16-inch and 15/16-inch grids in the same ceiling without clear transitions", "Specifying non-fire-rated ceilings (NRC only) in occupancy types requiring fire rating", "Ignoring MEP coordination; ceiling height may conflict with ductwork, piping, or cable trays"]} />
 
 ## Related Articles
 

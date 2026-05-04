@@ -20,6 +20,13 @@ Beyond tiles, vinyl, hardwood, marble, terrazzo, and epoxy finishes each carry s
 
 Standard tile sizes in the Philippine market reflect import availability and installation efficiency: 20×20cm (approximately 8×8 in or 7.87×7.87 in), 30×30cm, 40×40cm, 60×60cm (standard 2×2 ft equivalent), and large-format 80×80cm or 60×120cm with rectified edges. Mariwasa and Niro Granite dominate local production, offering both traditional sizes and premium large-format options.
 
+
+<ArticleMedia id="media-floor-finish-comparison" layout="single" type="image" status="placeholder"
+  alt="Comparison chart of floor finishes: ceramic tile, porcelain, hardwood, engineered wood, vinyl, linoleum, carpet, terrazzo, polished concrete, and rubber with durability, maintenance, and moisture resistance ratings"
+  caption="Future chart: floor finish comparison — durability, maintenance, moisture resistance, and room suitability"
+  suggestedAsset="Material selection chart with application matrix"
+  placementIntent="Helps learners select appropriate floor finish by room type and performance requirements" />
+
 ## Key Provisions
 
 | Property | Specification | Standard | LEA Relevance |
@@ -43,6 +50,12 @@ Water absorption becomes critical in low-lying and flood-prone areas; semi-vitre
 
 Slip resistance matters in common areas and ramps. Glazed polished tiles (common luxury finishes) often fall below 0.60 COF when wet and violate BP 344 unless textured or treated. Construction site specifications should call out slip-resistance test results, not just visual appearance.
 
+
+<ArticleMedia id="media-flooring-installation-diagram" layout="single" type="image" status="placeholder"
+  alt="Cross-section of different floor finish installations: tile on mortar bed, hardwood on joists, vinyl on slab, and polished concrete"
+  caption="Future diagram: floor finish installation cross-sections — tile, hardwood, vinyl, concrete"
+  suggestedAsset="Cross-section detail drawings of floor finish assemblies"
+  placementIntent="Visualizes proper floor finish installation methods" />
 ## How It's Tested
 
 **Question Type 1 (Specification Matching):** A bathroom requires durable, slip-resistant flooring in a Metro Manila high-rise. Which finish combines adequate wear rating and slip resistance? Students must match PEI III with COF ≥0.60 (textured or matte porcelain), not polished marble or glazed ceramic.

@@ -1,26 +1,21 @@
 {
-  "attempted_at": "2026-05-04T00:06:35.936Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:17:16.669Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "candidate.md matches original.md; refusing no-op apply."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "02a5ba32-0443-4162-837d-326783ed77a2",
   "slug": "lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions",
   "preparation_actions": [
     "auto_generated_diff"
   ],
-  "remote_hash_before": "sha256:a96b46825e4d0725957fa0e3716bb5cd559c7edf2045da7ff1055fd9e19c5d6e",
-  "original_hash": "sha256:a96b46825e4d0725957fa0e3716bb5cd559c7edf2045da7ff1055fd9e19c5d6e",
-  "candidate_hash": "sha256:07e1730f6f7786ab669d8197471669253eb77826694564266e910f1c2d2dee81",
+  "remote_hash_before": "sha256:7c3355ba5bdb898365084726a42b2f0db2a88b26739c4e67c86d394698b9e71f",
+  "original_hash": "sha256:7c3355ba5bdb898365084726a42b2f0db2a88b26739c4e67c86d394698b9e71f",
+  "candidate_hash": "sha256:7c3355ba5bdb898365084726a42b2f0db2a88b26739c4e67c86d394698b9e71f",
   "stale_check_passed": true,
-  "remote_updated_at_before": "2026-05-03T13:51:32.106815+00:00"
+  "remote_updated_at_before": "2026-05-04T02:00:53.4739+00:00"
 }

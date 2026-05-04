@@ -3,8 +3,6 @@
 Adaptive reuse preserves existing buildings by converting them to new functions, addressing sustainability (avoiding demolition and new construction), heritage conservation, and urban revitalization simultaneously. The LEA tests your understanding that reuse is not merely aesthetics or nostalgic preservation but a **strategic design and material practice** embedded in embodied energy preservation and typological transformation. You must master the theoretical distinction between reuse and conservation, understand life-cycle benefits, and recognize Philippine examples.
 </Callout>
 
-
-
 ## Learning Goal
 
 - Define vernacular architecture as buildings designed and built by communities without formally trained architects, evolving through generations of experiential learning.
@@ -12,6 +10,8 @@ Adaptive reuse preserves existing buildings by converting them to new functions,
 - Distinguish vernacular architecture from "primitive" stereotypes: vernacular represents sophisticated, rational responses to environmental and cultural constraints.
 
 ## Core Concept
+
+<ArticleMedia id="media-lea-theo-007-14-core-concept" a type="image" caption="Vernacular Architecture — Sophisticated Responses to Climate, Materials, and Culture" description="World map showing vernacular building examples from each region: Philippines bahay kubo (tropical, stilted), Japanese minka (temperate, timber joinery), Norwegian stabbur (cold climate, raised log storehouse), Yemeni tower houses (arid, mud-brick high-rise), Swiss chalet (alpine, steep roof for snow), Dogon cliff dwellings (sub-Saharan, earth construction). Each example labeled with climate, primary material, and key passive design strategy. Callout boxes highlight Bernard Rudofsky's Architecture Without Architects thesis: vernacular represents sophisticated environmental knowledge, not primitive construction." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 Adaptive reuse is the transformation of existing buildings to new uses, functions, or programs. The building envelope, structure, and primary spatial systems are retained; interiors, systems, and sometimes fenestration are modified to suit new uses.
 
@@ -118,21 +118,15 @@ The gentrification risk is real. Adaptive reuse in deteriorated neighborhoods of
 <WikiExamTable headers={["Building Type", "Original Use", "Adaptive Reuse Potential", "Structural Advantages", "Challenges"]} rows={[['["Factory/Warehouse", "Industrial", "Residential, office, creative", "Large spans, sturdy structure, robust systems", "Deep interiors (daylighting), outdoor areas"]', '["Church", "Religious", "Cultural, performance, retail", "Generous volumes, focal points, public gathering", "Structural constraints, accessibility (level changes)"]', '["Hotel", "Hospitality", "Residential, serviced apartments, office", "Multiple units, existing mechanical, corridor layout", "Room-size constraints, adaptation of lobby/public space"]', '["Department Store", "Retail", "Mixed-use, residential, office", "Central location, floor plates, parking", "Large floor plates (daylighting in middle), vacant upper floors"]', '["Office Tower", "Commercial", "Residential, hospitality, mixed-use", "Structural grid, mechanical systems, location", "Core placement, view orientation (office to residential transition)"]', '["Market Hall", "Retail/food", "Mixed-use with market retention", "High ceilings, structural robustness", "Retail viability, ventilation/odor (markets), internal structure"]']]} />
 ## How It's Tested on the LEA
 
-
 <ExamTip>1. **Embodied Carbon Advantage**: "Why is adaptive reuse generally lower carbon than demolition and new construction?" (Answer: Preserves embodied carbon already invested in existing structure; avoids manufacturing and transportation of new materials; retrofits improve operational performance; total lifecycle carbon typically lower than new construction.)</ExamTip>
-
 
 <ExamTip>2. **Typological Analysis**: "A historic factory building with 10-meter ceiling heights and 50-meter column spans is proposed for conversion. What uses are compatible with this structure and why?" (Answer: Residential lofts, office, cultural institutions, creative spaces—all benefit from large open spans and high ceilings; uses requiring smaller partitioned spaces are less ideal but possible with addition of intermediate structure.)</ExamTip>
 
-
 <ExamTip>3. **Heritage vs. Function Trade-off**: "A heritage building's fenestration is historically significant but reduces thermal performance. How should this be addressed?" (Answer: Negotiated balance—historic windows retained where visible; secondary glazing added internally; some windows replaced with performance-matched equivleants; decisions based on heritage significance hierarchy and energy gain trade-off.)</ExamTip>
-
 
 <ExamTip>4. **Philippine Application**: "Design adaptive reuse strategy for Intramuros bahay na bato that preserves heritage while meeting contemporary building codes." (Answer: Preserve facades and primary spatial volumes; upgrade mechanical/electrical systems; add secondary fire safety measures; maintain colonial spatial logic while adding contemporary amenities; balance heritage conservation with functional necessity.)</ExamTip>
 
-
 <ExamTip>5. **Gentrification Resistance**: "How can adaptive reuse projects avoid becoming vehicles for gentrification and displacement?" (Answer: Community land trusts, anti-displacement covenants, community benefit agreements, community control over development decisions, affordability preservation mechanisms, existing business protection.)</ExamTip>
-
 
 ## Common Mistakes
 
@@ -141,7 +135,6 @@ The gentrification risk is real. Adaptive reuse in deteriorated neighborhoods of
 <WikiMistakeCard mistake="Underestimating Embodied Carbon Preservation" correction="Some designers and developers dismiss reuse as economically marginal." context="Understanding embodied carbon preservation as environmental and economic value makes reuse strategically significant." />
 
 <WikiMistakeList mistakes={["Ignoring Typological Constraints. Attempting to force incompatible uses into buildings' structural/spatial logic results in poor design. Understanding what the building's structure enables is foundational.", "Assuming Adaptive Reuse is Always Cheaper. Reuse can be economically viable or expensive depending on structural condition, code requirements, and desired specifications. Poor condition buildings requiring extensive structural repair can cost as much as new construction.", "Neglecting Community Impact. Preservation projects in neighborhoods can trigger gentrification. Without anti-displacement measures, \"revitalization\" becomes displacement. Community benefit must be intentional, not assumed.", "Overestimating Romantic Heritage Value. Every old building is not worth preserving; some are structurally unsound or culturally insignificant. Reuse decisions should balance heritage significance, economic viability, and social benefit rather than preserving everything."]} />
-
 
 ## Key Terms
 

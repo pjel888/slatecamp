@@ -6,6 +6,13 @@ Describe structural steel construction systems — bolted and welded connections
 
 Structural steel construction assembles prefabricated members (columns, beams, braces) on-site through bolted or welded connections, creating a framework capable of resisting gravity and lateral forces. Steel offers high strength-to-weight ratio, rapid assembly (vs. concrete), and precision fabrication in controlled shop environments.
 
+
+<ArticleMedia id="media-steel-frame-systems" layout="single" type="image" status="placeholder"
+  alt="Isometric diagrams of structural steel framing systems: moment frame, braced frame, and composite steel-concrete construction"
+  caption="Future diagram: structural steel framing systems — moment frame, braced frame, composite construction"
+  suggestedAsset="Isometric structural system diagrams with connection callouts"
+  placementIntent="Helps learners distinguish steel framing systems by structural behavior" />
+
 ### Erection Sequence
 
 Steel frame erection typically follows this sequence: (1) column erection (starting from lowest level), (2) temporary bracing installation, (3) floor beam installation and connections, (4) floor decking and concrete placement, (5) progress to next level. Temporary bracing (cross-diagonals, knee braces) stabilizes the partially erected frame against wind and seismic forces until permanent lateral systems are complete.
@@ -16,6 +23,12 @@ _Bolted Connections_ — Mechanical fasteners (ASTM A325 or A490 per NSCP 2015 C
 
 _Welded Connections_ — Fused joints via SMAW, GMAW, or GTAW (per NSCP 2015 Chapter 5 Section 506 / AISC 360 J3). Advantages: true monolithic behavior, minimal deformation, clean aesthetics. Disadvantages: require skilled welders, weather-sensitive (SMAW tolerates wind; GMAW requires protection), need on-site quality verification (inspection). Used for critical connections (moment-resisting frames, continuous beams).
 
+
+<ArticleMedia id="media-steel-connection-types" layout="single" type="image" status="placeholder"
+  alt="Detail drawings of bolted and welded steel connections: shear connections, moment connections, and braced frame connections with gusset plates"
+  caption="Future diagram: steel connection types — shear, moment, and braced frame connections"
+  suggestedAsset="Cross-section and isometric detail drawings of steel connections"
+  placementIntent="Shows different steel connection configurations in building frames" />
 ### Lateral Force-Resisting Systems
 
 _Moment-Resisting Frames (MRF)_ — Beam-column connections resist lateral forces through bending moment transfer. Frame joint rotations absorb seismic energy elastically. Advantages: open floor plans (no interior bracing), architectural flexibility. Disadvantages: require larger member sizes for moment capacity, more complex connections (welded or bolted plate connections), higher cost. Widely used in residential/office towers in Philippines.

@@ -5,7 +5,19 @@
 Identify the key Renaissance architects (Brunelleschi, Alberti, Bramante, Michelangelo, Palladio) and their major works, and explain how classical orders, linear perspective, humanist proportion, and centralized plans defined Renaissance architectural theory.
 ## Core Concept
 
+
+
+
+
+<ArticleMedia id="media-hist-002-04-humanist-proportion" layout="single" type="image" status="placeholder" alt="Three-panel diagram of Renaissance proportional systems: Left — Alberti's modular proportion system from De re aedificatoria showing room dimensions derived from musical intervals (1:2 octave, 2:3 fifth, 3:4 fourth). Center — Palladio's villa proportions from I Quattro Libri showing room ratios and the Villa Rotonda's centralized square plan with four portico arms. Right — Brunelleschi's linear perspective system showing the Ospedale degli Innocenti's arcade with vanishing point construction." caption="Renaissance Proportional Systems — Modular, Harmonic, and Perspective Grids" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
+<ArticleMedia id="media-hist-002-04-central-plan" layout="single" type="image" status="placeholder" alt="Comparative plan diagram of Renaissance centralized churches: (1) Bramante's Tempietto (1502, Rome) — circular peripteral temple with Doric colonnade and dome on circular plan; (2) Bramante's original plan for St. Peter's Basilica (1506) — Greek cross with equal arms and central dome; (3) Santa Maria Novella facade (Alberti, 1470) — geometric proportions with inlaid marble squares showing harmonic ratios. Each plan annotated with geometric derivation (circle, square, Greek cross) and proportional system (modular grid, golden ratio)." caption="Renaissance Centralized Plans — Tempietto, St. Peter's, Santa Maria Novella" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
 **Renaissance architecture** (14th–16th centuries, centered in Florence and Italy) represents a conscious *revival and reinvention* of Classical Antiquity coupled with new mathematical and humanistic thinking. Medieval Gothic gives way to rational proportions, geometric perfection, and human-scaled spaces inspired by Roman temples and Italian Renaissance humanism.
+
+
+<ArticleMedia id="media-hist-002-04-core-concept" layout="single" type="image" status="placeholder" alt="View of the Duomo of Florence (Santa Maria del Fiore, dome completed 1436, Brunelleschi), showing the red-tiled double-shell dome with stone ribs and the lantern at the apex." caption="Florence Cathedral Dome — Brunelleschi's Double-Shell Structure" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
 
 The period divides into **Early Renaissance** (15th century, Florence) and **High Renaissance** (early 16th century, Rome). Early Renaissance rediscovered Classical orders (Doric, Ionic, Corinthian), geometric proportion, and linear perspective in architecture. High Renaissance synthesized these discoveries into monumental, spatially integrated designs.
 
@@ -39,6 +51,10 @@ The period divides into **Early Renaissance** (15th century, Florence) and **Hig
 - **Centralized plans**: Domes and rotundas emphasizing vertical unity rather than longitudinal procession
 - **Rational clarity**: Elimination of Medieval complexity; emphasis on legible structure
 - **Integration of theory and practice**: Architects as learned designers, not mere builders
+
+
+<ArticleMedia id="media-hist-002-04-core-concept" layout="single" type="image" status="placeholder" alt="Plan comparison of Bramante's Tempietto (1502, Rome — circular plan with Doric colonnade) and his original Greek-cross plan for St. Peter's Basilica (1506), showing the Renaissance ideal of centralized geometric forms." caption="Renaissance Centralized Church Plans — Tempietto and St. Peter's" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
 
 ## Key Facts and Testable Items
 
@@ -89,6 +105,8 @@ The **Renaissance is tested through four architects**—**Brunelleschi** (dome +
 - **Mannerism**: A late Renaissance style emphasizing tension, distortion of Classical rules, and dramatic effects (Michelangelo's later work)
 
 ## Related Articles
+
+<ArticleMedia id=\"media-hist-002-04-core-concept-timeline\" layout=\"single\" type=\"image\" status=\"placeholder\" alt=\"Timeline of Renaissance architecture (14th–16th centuries) highlighting the key architects and works: Brunelleschi (Florence Cathedral dome, 1420–1436), Alberti (Sant'Andrea, 1470), Bramante (Tempietto, 1502), Michelangelo (St. Peter's dome, 1547–1564), and Palladio (Villa Rotonda, 1567).\" caption=\"Renaissance Architecture — Key Works Timeline\" suggestedAsset=\"Timeline diagram\" placementIntent=\"Timeline diagram for architectural period\" />
 
 See also within Medieval to Baroque: **lea-hist-002-01-core-concept**, **lea-hist-002-02-core-concept**, **lea-hist-002-03-core-concept**, **lea-hist-002-05-core-concept**.
 

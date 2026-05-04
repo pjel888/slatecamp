@@ -9,8 +9,6 @@ After studying this article, you should be able to:
 - Describe the architect's role in the bidding process.
 - Apply procurement method rules to exam scenarios.
 
-
-
 ### Competitive Bidding Process
 
 In a competitive bidding process, the Owner publicly announces the project through advertisements or invitations and invites multiple contractors to submit sealed bids. The Architect prepares the bid documents and distributes them to prospective bidders. Bids are typically opened at a public meeting where the Owner reads each bid amount aloud.
@@ -64,6 +62,9 @@ Three bidding methods: (1) Competitive Bidding — open to all qualified bidders
 
 ---
 
+
+
+<ArticleMedia type="image" caption="Procurement Methods Comparison — Public vs. Private Sector Flowchart" description="Two-track comparison flowchart: Public sector (left, RA 9184) vs Private sector (right). Shows procurement methods: Competitive Bidding (Public Bidding for government, Negotiated/Invited Bid for private). Decision criteria for method selection: project value, urgency, and regulatory requirements. Key differences highlighted for each track." />
 ## Related Articles
 
 - [Standard Owner-Architect Agreement](lea-prac-ctr-001)

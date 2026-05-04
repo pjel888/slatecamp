@@ -1,26 +1,21 @@
 {
-  "attempted_at": "2026-05-04T00:06:06.582Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:16:36.226Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "candidate.md matches original.md; refusing no-op apply."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "1caee82f-c2c8-409b-a3bf-41576bc702c5",
   "slug": "lea-util-004-05-seismic-bracing-and-earthquake-resilience",
   "preparation_actions": [
     "auto_generated_diff"
   ],
-  "remote_hash_before": "sha256:435c9c5ada49088109b668976e8a7ffe2a6b8b6e5ff0e5d731a59475c7d4160b",
-  "original_hash": "sha256:435c9c5ada49088109b668976e8a7ffe2a6b8b6e5ff0e5d731a59475c7d4160b",
-  "candidate_hash": "sha256:1380a0ffa6b479b779eb29ace5bd5855d1ec775db75f535be7974de5e0315835",
+  "remote_hash_before": "sha256:f82c347d0917f4d585402b79626c71381ec0a328f8dbd7e1f4f45c874b2c8607",
+  "original_hash": "sha256:f82c347d0917f4d585402b79626c71381ec0a328f8dbd7e1f4f45c874b2c8607",
+  "candidate_hash": "sha256:f82c347d0917f4d585402b79626c71381ec0a328f8dbd7e1f4f45c874b2c8607",
   "stale_check_passed": true,
-  "remote_updated_at_before": "2026-05-03T13:50:20.28671+00:00"
+  "remote_updated_at_before": "2026-05-04T01:59:38.815232+00:00"
 }

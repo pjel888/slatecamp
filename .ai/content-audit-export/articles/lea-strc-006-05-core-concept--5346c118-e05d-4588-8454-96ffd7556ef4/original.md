@@ -10,6 +10,7 @@ By the end of this article, you will be able to:
 Precast concrete members are manufactured off-site in controlled conditions and transported to the construction site for assembly. Construction joints are planned weak points where different concrete pours meet and must be designed to transfer force and resist shear. Composite members combine precast and cast-in-place concrete, leveraging the efficiency of precasting with site-specific design. Understanding these concepts is essential for modern construction and ensures proper force transfer at joints.
 
 ## Core Concept
+<ArticleMedia id="media-lea-strc-006-05-core-concept" a type="image" caption="Precast Concrete Systems — Beam, Column, Slab, and Wall Components" description="Diagram showing typical precast concrete components: (1) Precast beam with shear keys and connection pockets; (2) Precast column with corbel for beam support; (3) Hollow-core slab unit with prestressed strands; (4) Precast wall panel with insulation layer. Connection details shown at beam-column joint and slab-to-beam interface. Comparison of precast vs cast-in-place advantages chart." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 **Precast Concrete** is concrete that is cast and cured at a facility (precasting plant) separate from the final structure's location. After reaching design strength, the member is transported to the construction site and placed in position. Precast members offer significant advantages: quality control in a factory environment, reusable forms, parallel production while site work proceeds, and controlled curing conditions. Common precast products include I-beams, double-T slabs, hollow-core slabs, columns, wall panels, and entire room modules.
 
@@ -110,7 +111,6 @@ Precasting is widely used in the Philippines for housing projects, commercial bu
 4. **Durability and Joint Sealing (Visual Inspection):** After construction, joints are inspected for water infiltration, cracks, and sealant condition. In coastal areas, joint quality is critical; testing may include salt spray exposure or chloride penetration testing.
 
 <Tip>Construction joints are planned weak points, not failures. They are designed to handle predictable stresses by mechanical bonding, surface roughness, and shear reinforcement. The key to success: clean the old surface (sandblast or scarify), reinforce across the joint, and keep the interface moist during new concrete placement. This is a critical supervision point for site engineers.</Tip>
-
 
 ## Related Articles
 

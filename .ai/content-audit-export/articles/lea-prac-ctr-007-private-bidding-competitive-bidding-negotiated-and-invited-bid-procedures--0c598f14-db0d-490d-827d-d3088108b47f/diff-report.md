@@ -1,33 +1,32 @@
 # Content Diff Report: lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures
 
-Generated: 2026-05-04T00:06:34.251Z
+Generated: 2026-05-04T02:17:14.369Z
 Article ID: 0c598f14-db0d-490d-827d-d3088108b47f
-Changed: true
-Safe to push locally: false
+Changed: false
+Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:31a5fbad9a5ac1ed08cd0578c2c55132e3a1c439433f4344950fd2f501f30562`
+- Original: `sha256:2f8e0bd9897fd86cb4cf83fb709afbcd79fd8cbfda8884e81af0c303306f889a`
 - Normalized: `sha256:b060b26718159db417a44aec0bf1cf280975c0332277e0453bb890837c55f883`
-- Candidate: `sha256:b060b26718159db417a44aec0bf1cf280975c0332277e0453bb890837c55f883`
+- Candidate: `sha256:2f8e0bd9897fd86cb4cf83fb709afbcd79fd8cbfda8884e81af0c303306f889a`
 
 ## Line summary
 
-- Changed lines: 63
+- Changed lines: 0
 - Inserted lines: 0
-- Deleted lines: 18
+- Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 3
-- UI blocks preserved: 0
-- UI blocks changed/missing: 3
-- Unresolved placeholders: 1
+- UI blocks preserved: 3
+- UI blocks changed/missing: 0
+- Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate contains unresolved UI block placeholders.
-- Candidate is missing 3 preserved UI block(s).
+- None
 
 ## Warnings
 

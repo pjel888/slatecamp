@@ -16,7 +16,6 @@ You are tasked with designing a low-cost, climate-responsive eco-resort in a typ
 
 </Tip>
 
-
 **Memory Aid — "E-M-Z" (Earth, Mali, Zimbabwe)**
 
 Think: *"Easy Materials Zone"* — all three systems prioritize local materials over imported ones.
@@ -32,7 +31,6 @@ Think: *"Easy Materials Zone"* — all three systems prioritize local materials 
 **Philippine Application:** A rammed-earth wall at a Batangas eco-resort uses the same thermal mass principle as a Sahelian adobe mosque — thick earthen walls absorb daytime heat and release it at night, reducing air-conditioning load by up to 40%. The wall is stabilized with 8% cement (CSEB technique), meeting NSCP compressive strength requirements while maintaining the vernacular aesthetic.
 
 </Example>
-
 
 ## The Hard Data (Cheat Sheet)
 
@@ -51,11 +49,9 @@ Think: *"Easy Materials Zone"* — all three systems prioritize local materials 
 
 </ExamTip>
 
-
 - **Colonial attribution fallacy:** A persistent discredited claim held that Great Zimbabwe was built by foreign (European or Phoenician) colonizers. Radiocarbon dating and archaeological consensus since the 1950s confirm it was built entirely by Bantu-speaking ancestors of the Shona people. Any exam question implying external builders is a trap — the correct answer is always indigenous Shona construction.
 - **Confusing "mud hut" with engineered earth architecture:** Sudano-Sahelian mosques and Sahelian earth buildings are sophisticated engineered structures with tapering walls, embedded ventilation, and systematic maintenance programs. Do not equate them with impermanent or primitive shelter — the Great Mosque of Djenné is a UNESCO World Heritage Site and the largest mud-brick building in the world.
 - **Assuming vernacular materials cannot meet modern standards:** Stabilized earth (cement-stabilized compressed earth blocks, or CSEB) and reinforced rammed earth are recognized in contemporary building codes worldwide. The LEA may test whether you understand that vernacular principles can be adapted to meet the National Structural Code of the Philippines (NSCP) with appropriate engineering.
-
 
 <Warn>
 
@@ -98,3 +94,5 @@ D. A rammed-earth fortification in the Saharan interior, abandoned after the 16t
 
 **North American Indigenous Architecture**, **Pre Columbian Mesoamerica**, **Inca Architecture Ashlar Masonry**, **Pre Colonial Vernacular**
 
+
+<!-- no-media-needed: existing content format is sufficient without visual media -->

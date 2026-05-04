@@ -411,7 +411,7 @@ If you hesitated on any of these, return to Section 2 (Core Concepts) and Sectio
 
 
 
-<ArticleMedia type="image" caption="Glass and Glazing Area Limits — Maximum Light Areas by Type and Thickness" description="Reference diagram showing: maximum single-light areas for sheet glass (3mm=0.84sqm, 5mm=1.20sqm), polished plate (6mm=6.00sqm, 10mm=12.00sqm), and tempered glass (per manufacturer). Hazardous locations diagram highlighting doors, sidelites within 300mm of door edge, shower enclosures, and areas within 450mm of floor requiring safety glazing. Jalousie blade length limits (1.20m for 5mm, 1.50m for 6mm)." />
+<ArticleMedia type="image" caption="Glass and Glazing Area Limits — Maximum Light Areas by Type and Thickness" alt="Reference diagram showing: maximum single-light areas for sheet glass (3mm=0.84sqm, 5mm=1.20sqm), polished plate (6mm=6.00sqm, 10mm=12.00sqm), and tempered glass (per manufacturer). Hazardous locations diagram highlighting doors, sidelites within 300mm of door edge, shower enclosures, and areas within 450mm of floor requiring safety glazing. Jalousie blade length limits (1.20m for 5mm, 1.50m for 6mm)." />
 ## Cross‑References
 
 **Lathing And Plastering**, **Fire Resistive Construction Ratings**, **Vertical Openings And Floor Roof Construction**, **Pd 1096 Rule Viii Light And Ventilation**

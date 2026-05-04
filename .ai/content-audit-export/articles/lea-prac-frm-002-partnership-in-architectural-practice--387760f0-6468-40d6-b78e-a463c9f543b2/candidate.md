@@ -10,11 +10,11 @@ After studying this article, you should be able to:
 - Distinguish a general professional partnership from a regular business partnership.
 
 ### Types and Formation Requirements
-<ArticleMedia id="media-lea-prac-frm-002-partnership-in-architec" a type="image" caption="Architecture Partnership Structure — Formation, Liability, and RLA Majority Rule" description="Organizational diagram showing: (1) Formation flow: Partners (minimum 2 architects) → SEC Registration (Articles of Partnership) → BOA/PRC Registration; (2) Ownership pie chart: 75%+ RLA (Registered Licensed Architects) minimum, up to 25% non-architect partners; (3) Liability illustration: Joint and several liability shown as each partner's personal assets connected to all partnership obligations; (4) Governance structure: Partners → Partnership Agreement → Profit-sharing ratios → Decision-making authority." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-prac-frm-002-partnership-in-architec" type="image" caption="Architecture Partnership Structure — Formation, Liability, and RLA Majority Rule" alt="Organizational diagram showing: (1) Formation flow: Partners (minimum 2 architects) → SEC Registration (Articles of Partnership) → BOA/PRC Registration; (2) Ownership pie chart: 75%+ RLA (Registered Licensed Architects) minimum, up to 25% non-architect partners; (3) Liability illustration: Joint and several liability shown as each partner's personal assets connected to all partnership obligations; (4) Governance structure: Partners → Partnership Agreement → Profit-sharing ratios → Decision-making authority." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 An architectural partnership is a group of two or more architects duly registered with the Securities and Exchange Commission (SEC) and the Board of Architecture. RA 9266 recognizes partnerships as legitimate forms of architectural practice where architects combine resources and expertise. General partnerships involve joint and several liability, while limited partnerships are not explicitly addressed in RA 9266.
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+<Tip>**Joint and several liability** means each partner can be held personally liable for the full amount of a claim, not just their proportional share. A client may pursue any single partner for the entire loss, leaving that partner to seek contribution from the others.</Tip>
 
 Formation requires filing articles of partnership with the SEC, which includes the names and addresses of all partners, contributions, profit-sharing arrangements, and term of partnership. Each partner must be a Filipino citizen properly registered and licensed as an architect. The partnership agreement should establish decision-making authority, dispute resolution mechanisms, and withdrawal procedures. The partnership must be registered with both the SEC and the Board of Architecture.
 
@@ -40,7 +40,7 @@ Partnership operations include regular meetings to discuss major decisions, proj
 
 Dissolution of a partnership occurs upon agreement of all partners, death of a partner, incapacity, or breach of partnership terms. Notification to the PRC and BOA is required for changes in professional practice registration. Outstanding client relationships and project obligations must be transferred to a continuing partner or assigned to another licensed architect. Architectural documents remain the intellectual property of the partnership unless otherwise assigned.
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
+<ExamTip>Partnership dissolution is a common LEA topic. Key triggers: agreement of all partners, death of a partner, incapacity, or breach of partnership terms. After dissolution, the remaining partners must check whether they still meet the 75% RLA requirement before continuing practice.</ExamTip>
 
 Continuation after a partner's withdrawal or death depends on the partnership agreement. A surviving partner may continue the practice if the agreement permits and if the remaining partners meet the 75 percent RLA requirement. Client notification and transfer of architect-of-record status are required. New partnerships may be formed with remaining architects, requiring re-registration with the SEC and BOA. The former partner's share is typically transferred according to the agreement or estate settlement.
 
@@ -58,3 +58,6 @@ Continuation after a partner's withdrawal or death depends on the partnership ag
 - [RA 9266 Legal Framework](lea-prac-law-001)
 - [Government Procurement](lea-prac-frm-012)
 - [Environmental Laws](lea-prac-frm-017)
+
+
+<ArticleMedia id="media-prac-frm-002-governance-comparison" layout="single" type="image" status="placeholder" alt="Three-panel organizational governance diagram: (1) Sole Proprietorship — single architect at top with 100% control, unilateral decision-making, no board or partners; (2) Partnership — all partners in governance circle, majority or unanimous decisions per agreement, profit-sharing ratios; (3) Corporation — hierarchical structure: Shareholders (75% RLA min) → Board of Directors (RLA only) → Executive Officers (RLA only) → Staff. Each panel shows: who makes strategic decisions, who has profit rights, and succession mechanism. Annotations highlighting key legal constraints: RLA majority rule (Sec. 5 RA 9266), non-architect shareholder limits." caption="Practice Form Governance — Decision-Making and Ownership Control Comparison" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />

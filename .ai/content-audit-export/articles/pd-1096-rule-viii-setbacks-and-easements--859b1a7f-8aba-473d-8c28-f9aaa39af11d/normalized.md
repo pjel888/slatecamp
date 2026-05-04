@@ -37,9 +37,9 @@ This material is **psychologically engineered** for maximum retention. Every sec
 
 ### VISUALIZATION: WHY SETBACKS EXIST
 
-[SLATECAMP_UI_BLOCK:ArticleMedia name="setback-yard-dimensions-diagram" type="diagram" caption="Plan view of a residential lot showing front yard, side yards, and rear yard with dimension callouts. Show R-1 example: front 4.50 m, sides 2.00 m (one side required), rear 2.00 m. Include a second version for R-2 Basic: front 3.00 m. Show building as hatched rectangle centered within yard setbacks with property line boundary."]
+<ArticleMedia id="media-setback-yard-dimensions-diagram" type="diagram" caption="Plan view of a residential lot showing front yard, side yards, and rear yard with dimension callouts. Show R-1 example: front 4.50 m, sides 2.00 m (one side required), rear 2.00 m. Include a second version for R-2 Basic: front 3.00 m. Show building as hatched rectangle centered within yard setbacks with property line boundary." />
 
-[SLATECAMP_UI_BLOCK:ArticleMedia name="incremental-setback-and-easement" type="diagram" caption="Building section showing the incremental setback rule: for buildings over 2 storeys, side/rear court increases by 300 mm per storey up to 14 storeys. Show a 10-storey commercial example: base 3.00 m + (8 storeys × 0.30 m) = 5.40 m. Below, show easement zones along a riverbank: 3 m urban, 20 m agricultural, 40 m forest with the building set back beyond the easement line."]
+<ArticleMedia id="media-incremental-setback-and-easement" type="diagram" caption="Building section showing the incremental setback rule: for buildings over 2 storeys, side/rear court increases by 300 mm per storey up to 14 storeys. Show a 10-storey commercial example: base 3.00 m + (8 storeys × 0.30 m) = 5.40 m. Below, show easement zones along a riverbank: 3 m urban, 20 m agricultural, 40 m forest with the building set back beyond the easement line." />
 
 > _You are standing at the front door of a newly built house in a subdivision. Look left — the neighbor's wall is barely a meter away. There is no sunlight. There is no airflow. If a fire starts, the flames jump the gap in seconds._
 

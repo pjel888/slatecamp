@@ -5,7 +5,6 @@ Apply RA 10121 DRRM mainstreaming to site planning and CLUPs, conduct hazard map
 
 Disaster Risk Reduction and Management (DRRM) must be mainstreamed into site planning and municipal CLUPs per RA 10121. This means identifying site-level hazards (flood, landslide, seismic, tsunami), assessing vulnerability, and integrating resilience measures into development design and land use policy. Climate change compounds these risks.
 
-
 ## Core Concept
 
 RA 10121 (Philippine Disaster Risk Reduction and Management Act, 2010) mandates that disaster risk reduction be integrated into all planning and development. At the site level, this requires hazard mapping (which hazards threaten the site?), vulnerability assessment (who and what is at risk?), and resilience design (what mitigations reduce risk?).
@@ -13,6 +12,7 @@ RA 10121 (Philippine Disaster Risk Reduction and Management Act, 2010) mandates 
 Key site-level hazards in the Philippines include: typhoons and storm surge, flooding (fluvial and pluvial), landslides, earthquakes, and volcanic eruptions. Post-Typhoon Yolanda (2013), coastal zoning restrictions were implemented in affected provinces. Verify the specific setback distance and legal basis (e.g., DHSUD memorandum, local ordinances) as RA 10121 does not specify a uniform 40-meter no-build zone in its text. PHIVOLCS provides fault maps. Verify the legal source and exact setback requirement for structures near active faults (e.g., PHIVOLCS guidelines, PD 1096, or NSCP 2015) as this is not specified in RA 10121. Flood zone maps identify riverine and coastal flood risks; slope maps identify landslide risk. Rainwater infiltration and groundwater conditions affect both flood and subsidence risk.
 
 RA 10121 creates the NDRRMC (National Disaster Risk Reduction and Management Council) and mandates LGU DRRM offices and DRRM funds (not less than 5% of estimated revenue per RA 10121). CLUPs must be updated to integrate DRRM. Site design must incorporate: disaster-resilient building standards, safe evacuation routes, emergency shelter locations, retention basins and green infrastructure for flood resilience, and hazard-informed land use zoning.
+<ArticleMedia id="media-lea-plan-005-04-core-concept" a type="image" caption="Disaster Risk Assessment — Hazard Mapping and Vulnerability Analysis" description="Multi-hazard site map showing: flood hazard zones (100-year floodplain), landslide susceptibility (slope > 30°), seismic fault lines, tsunami inundation zones, and storm surge risk areas. RA 10121 DRRM mainstreaming into CLUP with resilience measures and climate adaptation." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
@@ -31,7 +31,6 @@ The Philippines is the world's most disaster-prone country (World Bank). Annual 
 **Pattern 3 — Seismic resilience:** "A site is 3 meters from a PHIVOLCS-mapped active fault. What design standard applies?" → 5-meter minimum setback; site violates PHIVOLCS standard; relocation or exceptional engineering required.
 
 <Tip>**DRRM is mainstreamed into CLUPs and site design.** Always ask: What hazards threaten this site? What RA 10121 requirements apply? What design resilience mitigations are needed? Climate change intensifies all hazards.</Tip>
-
 
 **Exam Tip:** RA 10121 mandates DRRM integration into CLUPs. Key concepts: hazard (natural event), vulnerability (susceptibility to harm), risk (hazard × vulnerability × exposure), and resilience (ability to recover). Know the definitions.
 

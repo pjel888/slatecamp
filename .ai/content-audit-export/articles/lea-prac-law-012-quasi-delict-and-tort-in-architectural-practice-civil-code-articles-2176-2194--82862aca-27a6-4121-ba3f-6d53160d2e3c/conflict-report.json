@@ -1,27 +1,19 @@
 {
-  "attempted_at": "2026-05-04T00:06:47.473Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:06:51.703Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "Remote Supabase content differs from export baseline; refusing stale push.",
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "Remote Supabase content differs from export baseline; refusing stale push."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "82862aca-27a6-4121-ba3f-6d53160d2e3c",
   "slug": "lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194",
-  "preparation_actions": [
-    "auto_generated_diff"
-  ],
-  "remote_hash_before": "sha256:a1eaa802fdca52ba4c530504ffb0f94e36d527a2f3991745b6053f334ad0effb",
-  "original_hash": "sha256:6b87bd6407910fe1ea7fd41498270ddfb0d61fadead72f56372f13dcf1bb144f",
-  "candidate_hash": "sha256:3b281ed0516053cc7b46adeed6d413da16ca8bf2a3df5a1af57f3dee04187957",
+  "preparation_actions": [],
+  "remote_hash_before": "sha256:3e86eed8433447000a6d050cf1914a104d0b828ba3a18dfb4f522483a5483ab8",
+  "original_hash": "sha256:3b281ed0516053cc7b46adeed6d413da16ca8bf2a3df5a1af57f3dee04187957",
+  "candidate_hash": "sha256:3e86eed8433447000a6d050cf1914a104d0b828ba3a18dfb4f522483a5483ab8",
   "stale_check_passed": false,
-  "remote_updated_at_before": "2026-05-03T13:51:56.129211+00:00"
+  "remote_updated_at_before": "2026-05-04T02:01:21.475406+00:00"
 }

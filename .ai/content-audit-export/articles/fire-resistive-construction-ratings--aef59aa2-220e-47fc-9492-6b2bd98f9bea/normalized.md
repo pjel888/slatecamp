@@ -24,9 +24,9 @@ By the end of this module, you should be able to:
 
 ## The Real-World Hook
 
-[SLATECAMP_UI_BLOCK:ArticleMedia name="fire-resistive-assembly-cross-section" type="diagram" caption="Cross-section of a building column and floor slab assembly showing fire-resistive ratings: 450 mm RC column for 4-hr, 150 mm slab with 25 mm cover for 4-hr. Callout bubbles for each dimension with corresponding fire rating. Show steel column with concrete encasement (75 mm for 4-hr) vs metal lath + vermiculite plaster (50 mm for 4-hr) side by side."]
+<ArticleMedia id="media-fire-resistive-assembly-cross-section" type="diagram" caption="Cross-section of a building column and floor slab assembly showing fire-resistive ratings: 450 mm RC column for 4-hr, 150 mm slab with 25 mm cover for 4-hr. Callout bubbles for each dimension with corresponding fire rating. Show steel column with concrete encasement (75 mm for 4-hr) vs metal lath + vermiculite plaster (50 mm for 4-hr) side by side." />
 
-[SLATECAMP_UI_BLOCK:ArticleMedia name="fire-rating-material-comparison" type="diagram" caption="Bar chart comparing material efficiency (thickness vs fire rating) for partitions, columns, and floor slabs. Show solid concrete (most efficient), solid masonry, and hollow unit masonry (least efficient) at 1-hr, 2-hr, 3-hr, and 4-hr ratings. Highlight the prestressed concrete tendon cover premium (65 mm vs 25 mm RC at 4-hr)."]
+<ArticleMedia id="media-fire-rating-material-comparison" type="diagram" caption="Bar chart comparing material efficiency (thickness vs fire rating) for partitions, columns, and floor slabs. Show solid concrete (most efficient), solid masonry, and hollow unit masonry (least efficient) at 1-hr, 2-hr, 3-hr, and 4-hr ratings. Highlight the prestressed concrete tendon cover premium (65 mm vs 25 mm RC at 4-hr)." />
 
 The call comes at 2:47 in the morning. A fire has broken out in the basement parking level of a 20-storey residential condominium in Quezon City. By the time the Bureau of Fire Protection arrives, the blaze has been burning for nearly an hour. Yet the lobby above is still intact. The structural columns are holding. The floor slabs show stress but have not collapsed. Residents on the upper floors are still evacuating safely through the stairwells, which remain passable. The building will survive.
 

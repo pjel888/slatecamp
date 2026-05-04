@@ -18,6 +18,13 @@ _Submittal review_ includes product certificates of compliance, mill test report
 
 _Mock-ups_ are small-scale reproductions of completed assemblies (e.g., a 3m x 3m wall assembly with waterproofing, insulation, and finish paint) that are installed at the project site and inspected for conformance before full-scale production. Mock-ups are particularly valuable for novel systems or where quality is difficult to verify after installation.
 
+
+<ArticleMedia id="media-spec-type-comparison" layout="single" type="image" status="placeholder"
+  alt="Comparison chart of specification types: prescriptive, performance, proprietary, and reference standard with definitions, when-used, advantages, and disadvantages"
+  caption="Future chart: specification type comparison — prescriptive, performance, proprietary, and reference standard"
+  suggestedAsset="Comparison matrix with example language for each spec type"
+  placementIntent="Helps learners distinguish specification types and choose appropriate approach" />
+
 ## Key Provisions
 
 | Testing Method | Standard | Material | Typical Parameter | Frequency | Philippine Reference | LEA Relevance |
@@ -38,6 +45,12 @@ In private practice, the architect is responsible for defining testing frequency
 
 Philippine concrete quality control is challenging due to tropical humidity, variable aggregate quality (local sources often lack quality certification), and cement sourcing. Slump test variability is common due to temperature and humidity effects. NSCP adoption of ACI 318 standards ensures that testing and acceptance criteria are aligned with international practice. Waterproofing testing and mock-ups are particularly important in tropical construction due to persistent moisture exposure.
 
+
+<ArticleMedia id="media-spec-type-selection-flow" layout="single" type="image" status="placeholder"
+  alt="Decision flowchart for selecting specification type: prescriptive, performance, proprietary, or reference standard based on project goals, procurement rules, and design control needs"
+  caption="Future diagram: specification type selection flowchart — prescriptive, performance, proprietary, or reference standard"
+  suggestedAsset="Decision tree for specification type selection"
+  placementIntent="Guides practical selection of specification approach for project requirements" />
 ## How It's Tested
 
 _Pattern 1 — Slump Test Interpretation:_ The exam presents a slump test result (e.g., "Slump measured at 150 mm, specification requires 75-100 mm") and asks the appropriate action. Answer: Slump is too high (excess water); concrete strength may be reduced. The batch should be rejected or adjusted by reducing water or adding coarse aggregate. The contractor cannot proceed with placement.

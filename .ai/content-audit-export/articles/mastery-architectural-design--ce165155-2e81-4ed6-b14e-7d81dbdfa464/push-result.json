@@ -1,26 +1,21 @@
 {
-  "attempted_at": "2026-05-04T00:06:35.554Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:17:16.165Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "candidate.md matches original.md; refusing no-op apply."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "ce165155-2e81-4ed6-b14e-7d81dbdfa464",
   "slug": "mastery-architectural-design",
   "preparation_actions": [
     "auto_generated_diff"
   ],
-  "remote_hash_before": "sha256:3e9743f06ed787feb2d9f87e1f6eaad4617ed8a57b6837d524975cc52d25f2af",
-  "original_hash": "sha256:3e9743f06ed787feb2d9f87e1f6eaad4617ed8a57b6837d524975cc52d25f2af",
-  "candidate_hash": "sha256:c74d9501260f264c342126fcd47b69c66adc8307cbe9eb8289f136bbc4169f95",
+  "remote_hash_before": "sha256:2e36562680fb606dc6ec9922b9e083cab5bf5df2163c86a84a0bf569de452ec9",
+  "original_hash": "sha256:2e36562680fb606dc6ec9922b9e083cab5bf5df2163c86a84a0bf569de452ec9",
+  "candidate_hash": "sha256:2e36562680fb606dc6ec9922b9e083cab5bf5df2163c86a84a0bf569de452ec9",
   "stale_check_passed": true,
-  "remote_updated_at_before": "2026-05-03T13:51:31.091262+00:00"
+  "remote_updated_at_before": "2026-05-04T02:00:52.210906+00:00"
 }

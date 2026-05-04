@@ -1,26 +1,21 @@
 {
-  "attempted_at": "2026-05-04T00:07:03.225Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:17:51.685Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "candidate.md matches original.md; refusing no-op apply."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "31a0b194-7296-4360-821e-5bc5c49be135",
   "slug": "lea-prac-frm-010-cpd-provider-accreditation",
   "preparation_actions": [
     "auto_generated_diff"
   ],
-  "remote_hash_before": "sha256:d58c3804ef3988f505818048e7711bfed3dcbbdab73bd9252de5b5394da321d8",
-  "original_hash": "sha256:d58c3804ef3988f505818048e7711bfed3dcbbdab73bd9252de5b5394da321d8",
-  "candidate_hash": "sha256:b7275341ccca5a95fba7dedeb09eb3477823c597706570976fa4d0508aa7fece",
+  "remote_hash_before": "sha256:8551e98f9d8554120c11d1ff8e89706a8a59b38af0dba10ae6c571438d163595",
+  "original_hash": "sha256:8551e98f9d8554120c11d1ff8e89706a8a59b38af0dba10ae6c571438d163595",
+  "candidate_hash": "sha256:8551e98f9d8554120c11d1ff8e89706a8a59b38af0dba10ae6c571438d163595",
   "stale_check_passed": true,
-  "remote_updated_at_before": "2026-05-03T13:52:23.620016+00:00"
+  "remote_updated_at_before": "2026-05-04T02:01:54.335057+00:00"
 }

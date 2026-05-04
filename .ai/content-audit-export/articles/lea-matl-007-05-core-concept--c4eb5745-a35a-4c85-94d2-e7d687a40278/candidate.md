@@ -65,19 +65,19 @@ Accessibility compliance (BP 344) is documented in schedules where applicable. S
 
 **Question Type 4 (Consistency):** A multi-story residential project specifies different paint colors for Units 201 and 301 in the same location. A finish schedule shows Unit 201: Boysen Permacoat #B150, but Unit 301 shows only "light beige paint." What is the issue? Answer: Lack of consistency and product specification prevents bulk purchasing and creates quality variance. All standard units should use identical finishes; deviations require explicit custom-finish callout and cost tracking.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+<Tip>Memory aid: Finish schedules are the builder's contract. Every finish must be specific: product name, color code, size, and cross-reference to specification section. Vague entries ("paint TBD," "tiles to match existing") cause rework and disputes. Use CSI format. Include color/material samples on a separate key sheet.</Tip>
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Creating finish schedules with vague entries like 'paint—light color' or 'ceramic tile—standard'" correction="Every finish must be specific: product brand/model, color code (e.g., Pantone #), size, and specification section reference. Include approved color samples and material samples on a key sheet." />
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Failing to cross-reference schedule entries to detailed specification sections, creating ambiguity about prep, application, and durability" correction="Every schedule entry must link to a specification section. E.g., 'Boysen Permacoat, Color #B150, per Section 2.0.5 Paint Systems,' ensures builders read the full spec." />
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Inconsistent finishes across similar rooms or units, requiring field changes and change orders" correction="Standardize finishes for like spaces (e.g., all bedrooms in residential units use the same paint/floor). Document custom finishes separately with cost tracking." />
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Omitting finish schedules for door and window hardware, leading to color/style mismatches" correction="Include hardware finish in door and window schedules (e.g., 'Brass handles, stainless hinges, brushed stainless push plates per Section 8.7'). Consistency requires specificity." />
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="WikiMistakeList" status="preserved"]
+<WikiMistakeList mistakes={["Not accounting for finish transitions where different materials meet (e.g., tile to wood, paint to wallpaper)", "Failing to specify grout color for tile finishes, assuming default (results in color mismatch and rework)", "Omitting baseboard and trim heights in finish schedules (75mm, 100mm, or custom)", "Not specifying ceiling finish details (grid type, tile size, NRC rating, paint sheen)", "Creating schedules without a key/legend sheet showing actual material and color samples for field reference"]} />
 
 ## Related Articles
 

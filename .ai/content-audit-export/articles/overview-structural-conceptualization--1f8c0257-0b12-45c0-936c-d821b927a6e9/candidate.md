@@ -1,6 +1,6 @@
 # Structural Conceptualization — Overview & Study Strategy
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="SubjectSnapshot" status="preserved"]
+<SubjectSnapshot items='[{"label":"Weight in Area B","value":"35%"},{"label":"PRC Area","value":"Area B"},{"label":"LEA Share","value":"~10% of total"},{"label":"Governing Code","value":"NSCP 2015"},{"label":"Subtopics","value":"12"}]' />
 Extracted summary:
 - Props: items="[{"label":"Weight in Area B","value":"35%"},{"label":"PRC Area","value":"Area B"},{"label":"LEA Share","value":"~10% of total"},{"label":"Governing Code","value":"NSCP 2015"},{"label":"Subtopics","value":"12"}]"
 - Text: (none detected)
@@ -8,7 +8,7 @@ Extracted summary:
 ## Learning Goal
 
 Master the structural principles tested in the LEA for Structural Conceptualization, including: statics and mechanics of materials, loads and load combinations (NSCP 2015), reinforced concrete, steel, timber, foundation systems, lateral force and seismic design, wind loads, masonry, composite structures, and structural drawing interpretation. By the end of this study map, you should understand the 12-subtopic dependency chain and the optimal study sequence.
-<ArticleMedia id="media-overview-structural-conceptualization" a type="image" caption="Structural Conceptualization — Study Sequence Flowchart" description="Four-phase study progression diagram: Phase 1 — Build the Foundation (Weeks 1-2): Statics & Mechanics of Materials → Loads & Load Combinations (dead, live, wind, seismic, NSCP formulas); Phase 2 — Learn the Materials (Weeks 3-4): Reinforced Concrete (dominant PH material, most tested) → Steel → Timber → Masonry; Phase 3 — Understand the Systems (Weeks 5-6): Foundation Systems → Lateral Force/Seismic → Wind Load → Composite Structures; Phase 4 — Apply & Interpret (Week 7): Reading structural drawings, interpreting NSCP provisions. Dependency arrows show each phase building on previous." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-overview-structural-conceptualization" type="image" caption="Structural Conceptualization — Study Sequence Flowchart" alt="Four-phase study progression diagram: Phase 1 — Build the Foundation (Weeks 1-2): Statics & Mechanics of Materials → Loads & Load Combinations (dead, live, wind, seismic, NSCP formulas); Phase 2 — Learn the Materials (Weeks 3-4): Reinforced Concrete (dominant PH material, most tested) → Steel → Timber → Masonry; Phase 3 — Understand the Systems (Weeks 5-6): Foundation Systems → Lateral Force/Seismic → Wind Load → Composite Structures; Phase 4 — Apply & Interpret (Week 7): Reading structural drawings, interpreting NSCP provisions. Dependency arrows show each phase building on previous." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Subject Coverage
 
@@ -27,7 +27,7 @@ Structural Conceptualization spans 12 interconnected subtopics forming a logical
 - **Composite Structures and Special Structural Systems** — composite beams, long-span systems
 - **Reading Structural Drawings and NSCP Application** — plans, sections, structural details
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="ExamTip" status="preserved"]
+<ExamTip>The LEA tests structural *conceptualization* — not structural *design*. You will rarely be asked to perform full engineering calculations. You will frequently be asked to identify the correct structural system for a scenario, recognize load paths, apply NSCP provisions conceptually, and interpret structural drawings.</ExamTip>
 Extracted summary:
 - Props: (none)
 - Text: The LEA tests structural *conceptualization* — not structural *design*. You will rarely be asked to perform full engineering calculations. You will frequently be asked to identify the correct structural system for a scenario, recognize load paths, apply NSCP provisions conceptually, and interpret structural drawings.
@@ -38,7 +38,7 @@ Extracted summary:
 
 Start with **Statics and Mechanics of Materials**. If you cannot draw a free body diagram, nothing downstream makes sense. Then cover **Loads and Load Combinations** — understand dead, live, wind, and seismic loads physically.
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
+<Tip>Concrete and reinforced concrete dominate Philippine construction and therefore dominate the exam. Spend proportionally more time here. Steel is second. Timber and masonry are tested but lighter in weight.</Tip>
 Extracted summary:
 - Props: (none)
 - Text: Concrete and reinforced concrete dominate Philippine construction and therefore dominate the exam. Spend proportionally more time here. Steel is second. Timber and masonry are tested but lighter in weight.
@@ -55,7 +55,7 @@ Move from materials to systems: **Foundation Systems**, **Deep Foundations**, **
 
 Practice reading **structural drawings** and applying NSCP provisions to multi-material scenarios.
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="Warn" status="preserved"]
+<Warn>Do not rely exclusively on review center handouts for this subject. Many handouts contain outdated load values, pre-NSCP 2015 seismic zone maps, or simplified combinations that no longer reflect the governing code. Always verify against the actual NSCP 2015.</Warn>
 Extracted summary:
 - Props: (none)
 - Text: Do not rely exclusively on review center handouts for this subject. Many handouts contain outdated load values, pre-NSCP 2015 seismic zone maps, or simplified combinations that no longer reflect the governing code. Always verify against the actual NSCP 2015.

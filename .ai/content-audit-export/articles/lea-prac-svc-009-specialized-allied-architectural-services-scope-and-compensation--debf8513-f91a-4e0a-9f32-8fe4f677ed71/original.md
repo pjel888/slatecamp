@@ -10,6 +10,8 @@ After reading this article, you should be able to:
 
 Specialized Allied Architectural Services encompass a broad range of professional offerings beyond traditional architectural design. These services address specific technical, aesthetic, and functional requirements that projects demand. SPP Doc 203 establishes the framework for scope, compensation, and professional responsibilities across seventeen distinct service categories. Understanding these services enables architects to expand their practice and provide comprehensive solutions to clients.
 
+<ArticleMedia id="media-lea-prac-svc-009-specialized-allied-arch" a type="image" caption="SPP Doc 203 — Seventeen Specialized Allied Architectural Service Categories" description="Process flow diagram showing the 17 specialized service categories under SPP Doc 203: acoustic design, lighting design, architectural interiors, site development planning, heritage conservation, security evaluation, building systems design, facilities maintenance, testing/commissioning, environmental certification, forensic architecture, building appraisal, structural conceptualization, preliminary services, contract documentation, post-design services, dispute avoidance, architectural research, special building planning, and building components management." suggestedAsset="Diagram or reference image" status="placeholder" />
+
 ### Acoustic Design and Lighting Design Services
 
 Acoustic design involves the analysis and planning of sound behavior within architectural spaces. This service addresses noise control, reverberation times, sound absorption, and acoustic isolation between spaces. Lighting design services encompass both natural and artificial light planning, including luminance calculations, color rendering, and energy efficiency optimization. Both services require specialized knowledge beyond general architectural training and command compensation appropriate to their technical complexity.
@@ -21,7 +23,6 @@ Site development planning integrates landscape design, grading, utilities coordi
 ### Security Evaluation and Building Systems Design
 
 Security evaluation services analyze vulnerabilities in building access, surveillance, emergency egress, and perimeter control. These services protect occupant safety and asset security through comprehensive risk assessment. Building systems design services coordinate mechanical, electrical, plumbing, and specialized systems integration. This service requires collaboration with engineers and manufacturers to ensure optimal performance and code compliance.
-
 
 <KeyValues pairs={[["SPP Document", "201 (Pre-Design), 202 (Regular Design), 203 (Specialized)"], ["Compensation", "MDPE, Lump Sum, Per Diem, Professional Fee + Expenses"], ["Fee Basis", "Percentage of PCC or MDPE"]]} />
 ### Facilities Maintenance and Testing/Commissioning Services

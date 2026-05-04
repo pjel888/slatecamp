@@ -74,3 +74,5 @@ The CIAC award's finality creates pressure for thorough arbitration procedure. B
 - [Change Orders](lea-prac-ctr-016)
 - [Dispute Resolution](lea-prac-ctr-020)
 - [Fee Compensation Methods](lea-prac-cmp-001)
+
+<!-- no-media-needed: professional practice article, text/tables/UI blocks are optimal format -->

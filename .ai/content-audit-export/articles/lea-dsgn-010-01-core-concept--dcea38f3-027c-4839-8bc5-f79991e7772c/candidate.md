@@ -94,8 +94,8 @@ An office building requires only 48 slots by GFA. How many accessible spaces are
 - Answer: **2 slots**. Even though 1% of 48 is 0.48, the law mandates a minimum of 2.
 
 **Exam Tip — ERR-DSGN-013:** Parking minimums are per PD 1096 Rule XVIII and local zoning ordinances, not the same nationwide. Accessible stalls must be provided at a minimum of 1 per 50 standard stalls (BP 344).
-<ArticleMedia id="media-lea-dsgn-010-01-core-concept" a type="image" caption="Parking Lot Layout — 90°, 60°, and Parallel Parking Configurations" description="Plan diagrams comparing parking configurations: 90° (standard, high density, 2.5m × 5.0m), 60° (angled, narrower aisle), and parallel (curbside). Minimum aisle widths for each angle, accessible stall dimensions (3.7m × 5.0m), and compact car stall allowances labeled." suggestedAsset="Diagram or reference image" status="placeholder" />
-<ArticleMedia id="media-lea-dsgn-010-01-core-concept" a type="image" caption="Parking Ratio Reference — NBC Minimum Parking Requirements by Occupancy" description="Reference infographic showing minimum parking ratios per PD 1096 Section 803: residential (1 slot/unit), hotel de luxe (1 slot/room), office (1 slot/100 sqm), retail (1 slot/50 sqm), assembly (1 slot/10 seats). Accessible parking allocation (1 per 50, min. 1 at 3.7m × 5.0m) and compact stall dimensions noted." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-010-01-core-concept" type="image" caption="Parking Lot Layout — 90°, 60°, and Parallel Parking Configurations" alt="Plan diagrams comparing parking configurations: 90° (standard, high density, 2.5m × 5.0m), 60° (angled, narrower aisle), and parallel (curbside). Minimum aisle widths for each angle, accessible stall dimensions (3.7m × 5.0m), and compact car stall allowances labeled." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-010-01-core-concept" type="image" caption="Parking Ratio Reference — NBC Minimum Parking Requirements by Occupancy" alt="Reference infographic showing minimum parking ratios per PD 1096 Section 803: residential (1 slot/unit), hotel de luxe (1 slot/room), office (1 slot/100 sqm), retail (1 slot/50 sqm), assembly (1 slot/10 seats). Accessible parking allocation (1 per 50, min. 1 at 3.7m × 5.0m) and compact stall dimensions noted." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Cross-References
 
@@ -103,4 +103,13 @@ See **LEA-DSGN-010-02** (Parking Geometry) for stall and aisle dimensions, **LEA
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="WikiMistakeList" status="preserved"]
+<WikiMistakeList
+ mistakes={[
+ 'Using Rule VII or VIII for parking (Correct: Rule XIX).',
+ 'ERR-DSGN-027: Using 1/100 sqm for Office instead of 1/125 sqm.',
+ 'ERR-DSGN-025: Using 2.0m width for standard stalls instead of 2.5m.',
+ 'Applying 1% for accessibility without enforcing the minimum 2 slots rule.',
+ 'Applying restaurant ratios to the total building area instead of just the dining area.',
+ 'Using 1/200 sqm for Warehouse parking (Correct: 1/1,000 sqm GFA).',
+ ]}
+/>

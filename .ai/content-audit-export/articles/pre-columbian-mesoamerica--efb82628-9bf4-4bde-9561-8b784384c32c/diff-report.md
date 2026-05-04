@@ -1,33 +1,32 @@
 # Content Diff Report: pre-columbian-mesoamerica
 
-Generated: 2026-05-04T00:06:40.289Z
+Generated: 2026-05-04T02:17:23.224Z
 Article ID: efb82628-9bf4-4bde-9561-8b784384c32c
-Changed: true
-Safe to push locally: false
+Changed: false
+Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:fbdfe019d6a3aaed75f3b9212ded3ad366e93905313e7be09014cc9745faf3bc`
+- Original: `sha256:92cd7aab1e0174fe94a1949d48184509d1aea1809e8b0dbeeb5488f8ee57eb92`
 - Normalized: `sha256:68c8fc1525cd46fd57e64b4b956e0dc80e5376581d60350db1168d766ea7cbdc`
-- Candidate: `sha256:68c8fc1525cd46fd57e64b4b956e0dc80e5376581d60350db1168d766ea7cbdc`
+- Candidate: `sha256:92cd7aab1e0174fe94a1949d48184509d1aea1809e8b0dbeeb5488f8ee57eb92`
 
 ## Line summary
 
-- Changed lines: 82
-- Inserted lines: 18
+- Changed lines: 0
+- Inserted lines: 0
 - Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 3
-- UI blocks preserved: 0
-- UI blocks changed/missing: 3
-- Unresolved placeholders: 1
+- UI blocks preserved: 3
+- UI blocks changed/missing: 0
+- Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate contains unresolved UI block placeholders.
-- Candidate is missing 3 preserved UI block(s).
+- None
 
 ## Warnings
 

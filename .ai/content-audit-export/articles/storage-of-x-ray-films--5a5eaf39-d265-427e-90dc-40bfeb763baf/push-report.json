@@ -1,17 +1,12 @@
 {
-  "attempted_at": "2026-05-04T00:06:03.715Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:16:33.906Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "Failed to update wiki_articles.content: Bad Request"
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "5a5eaf39-d265-427e-90dc-40bfeb763baf",
   "slug": "storage-of-x-ray-films",
@@ -20,7 +15,7 @@
   ],
   "remote_hash_before": "sha256:6a06598f5d61b652a596a359a673c7e23dd1c8027fc44595fe537639b3e8729c",
   "original_hash": "sha256:6a06598f5d61b652a596a359a673c7e23dd1c8027fc44595fe537639b3e8729c",
-  "candidate_hash": "sha256:b7eef64c6005f41f6210c3d20cdb7363d27715932a1491b2616b8fa803aefbc7",
+  "candidate_hash": "sha256:62859dc6e65faeb2adc07c7b33b24dff54bf16b03b023ca876e05afa7e91a295",
   "stale_check_passed": true,
   "remote_updated_at_before": "2026-05-03T14:19:52.491177+00:00"
 }

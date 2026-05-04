@@ -1,47 +1,38 @@
 {
   "article_id": "162054b5-5f86-4a99-ab8b-f7991bbab899",
   "slug": "modern-filipino-identity",
-  "generated_at": "2026-05-04T00:07:02.590Z",
-  "old_hash": "sha256:ef895afb3270df63e056503ec98f8d3655a91d1b185030b5dcc0552870d7a0ee",
-  "new_hash": "sha256:5e9fb2ff71fd11a9441619b19c17f442d86b7d6aff96ad5b988c1b8e2f25e8f7",
-  "original_hash": "sha256:ef895afb3270df63e056503ec98f8d3655a91d1b185030b5dcc0552870d7a0ee",
+  "generated_at": "2026-05-04T02:17:50.994Z",
+  "old_hash": "sha256:9ad1de6885dc5a2e937eb2631ec05ea20e8e7b5050067fd2347d02f2b7d3babc",
+  "new_hash": "sha256:9ad1de6885dc5a2e937eb2631ec05ea20e8e7b5050067fd2347d02f2b7d3babc",
+  "original_hash": "sha256:9ad1de6885dc5a2e937eb2631ec05ea20e8e7b5050067fd2347d02f2b7d3babc",
   "normalized_hash": "sha256:5e9fb2ff71fd11a9441619b19c17f442d86b7d6aff96ad5b988c1b8e2f25e8f7",
-  "candidate_hash": "sha256:5e9fb2ff71fd11a9441619b19c17f442d86b7d6aff96ad5b988c1b8e2f25e8f7",
-  "changed": true,
-  "changed_line_count": 156,
+  "candidate_hash": "sha256:9ad1de6885dc5a2e937eb2631ec05ea20e8e7b5050067fd2347d02f2b7d3babc",
+  "changed": false,
+  "changed_line_count": 0,
   "inserted_line_count": 0,
-  "deleted_line_count": 26,
+  "deleted_line_count": 0,
   "ui_blocks_original_count": 5,
-  "ui_blocks_candidate_count": 0,
-  "ui_blocks_changed_count": 5,
+  "ui_blocks_candidate_count": 5,
+  "ui_blocks_changed_count": 0,
   "ui_blocks_count": 5,
-  "unresolved_placeholders_count": 1,
-  "preserved_blocks_count": 0,
+  "unresolved_placeholders_count": 0,
+  "preserved_blocks_count": 5,
   "changed_text_summary": {
-    "changed": 156,
+    "changed": 0,
     "inserted": 0,
-    "deleted": 26,
+    "deleted": 0,
     "original_line_count": 185,
-    "candidate_line_count": 159
+    "candidate_line_count": 185
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0001",
-      "ui_0002",
-      "ui_0003",
-      "ui_0004",
-      "ui_0005"
-    ],
-    "changed_count": 5
+    "missing_block_ids": [],
+    "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate contains unresolved UI block placeholders.",
-    "Candidate is missing 5 preserved UI block(s)."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 5 preserved UI block(s)."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

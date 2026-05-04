@@ -442,7 +442,7 @@ ALE Trap: The five critical dimensions for accessible design: vertical reach max
 
 
 
-<ArticleMedia type="image" caption="Standard Anthropometric Dimensions — Filipino and US Comparison Diagram" description="Side-by-side scale figures of 5th percentile Filipino female and 95th percentile Filipino male (Del Prado-Lu 2007) with US equivalents overlaid. Key dimensions annotated: stature (143.0cm-178.0cm PH), standing eye height, forward reach (max 1200mm BP 344), side reach (max 1370mm), vertical reach (max 1830mm), knee clearance (680mm min), and wheelchair seat height (460-500mm)." />
+<ArticleMedia type="image" caption="Standard Anthropometric Dimensions — Filipino and US Comparison Diagram" alt="Side-by-side scale figures of 5th percentile Filipino female and 95th percentile Filipino male (Del Prado-Lu 2007) with US equivalents overlaid. Key dimensions annotated: stature (143.0cm-178.0cm PH), standing eye height, forward reach (max 1200mm BP 344), side reach (max 1370mm), vertical reach (max 1830mm), knee clearance (680mm min), and wheelchair seat height (460-500mm)." />
 ## Verified Sources
 
 - **Del Prado-Lu, J.L. (2007)**. "Anthropometric measurement of Filipino manufacturing workers." *International Journal of Industrial Ergonomics, 37*(6), 497–503. — Primary source for Filipino percentile data.

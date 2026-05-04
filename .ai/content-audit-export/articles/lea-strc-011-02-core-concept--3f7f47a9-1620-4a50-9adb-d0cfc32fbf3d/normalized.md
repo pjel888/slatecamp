@@ -11,7 +11,7 @@ By the end of this article, you will be able to:
 
 ---
 ## Core Concept
-<ArticleMedia id="media-lea-strc-011-02-core-concept" a type="image" caption="Foundation Typology — Shallow vs Deep Foundation Systems" description="Cross-section comparison of foundation types: (1) Shallow foundations — isolated footing, combined footing, strip footing, mat/raft foundation; (2) Deep foundations — pile foundation (end-bearing/friction), drilled pier/caisson (≥600mm). Each type shown with soil bearing pressure distribution, reinforcement layout, and typical depth range. Decision tree for foundation selection based on soil conditions and building loads." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-strc-011-02-core-concept" type="image" caption="Foundation Typology — Shallow vs Deep Foundation Systems" alt="Cross-section comparison of foundation types: (1) Shallow foundations — isolated footing, combined footing, strip footing, mat/raft foundation; (2) Deep foundations — pile foundation (end-bearing/friction), drilled pier/caisson (≥600mm). Each type shown with soil bearing pressure distribution, reinforcement layout, and typical depth range. Decision tree for foundation selection based on soil conditions and building loads." suggestedAsset="Diagram or reference image" status="placeholder" />
 A foundation is the structural system that transfers building load from the superstructure to the soil. Foundation selection is governed by three factors: _soil bearing capacity_, _allowable settlement_, and _site constraints_ (depth to groundwater, adjacent structures, available space).
 
 **Foundation Classification by Depth:**

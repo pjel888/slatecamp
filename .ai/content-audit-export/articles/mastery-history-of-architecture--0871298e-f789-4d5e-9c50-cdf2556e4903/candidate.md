@@ -3,7 +3,7 @@
 ## Learning Goal
 
 Achieve synthesis-level understanding of architectural history as an interconnected web of influences across periods and cultures. Trace the river of influence from Ancient through Medieval, Renaissance, Baroque, Neoclassicism, Modernism, and Contemporary. Connect cross-cultural threads (Islamic → Gothic, Japanese → Wright, Spanish Colonial → Philippine earthquake Baroque). Integrate History with Theory (movement-to-manifesto relationships), Philippine Architecture, and Architectural Design.
-<ArticleMedia id="media-mastery-history-of-architecture" a type="image" caption="History of Architecture — Timeline Overview and Cross-Cultural Connections" description="Chronological timeline diagram spanning Prehistoric to Contemporary, organized into 11 cultural/regional traditions arranged in parallel horizontal tracks. Key cross-cultural influence arrows shown: (1) Islamic pointed arch → Gothic rib vault; (2) Roman concrete → Byzantine pendentive dome; (3) Japanese vernacular → Wright's organic architecture; (4) Spanish Baroque → Philippine earthquake Baroque. Bottom layer shows corresponding Western historical periods (Ancient, Medieval, Renaissance, Baroque, Modern, Contemporary) for chronological reference. Key buildings, architects, and stylistic features annotated at timeline nodes." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-mastery-history-of-architecture" type="image" caption="History of Architecture — Timeline Overview and Cross-Cultural Connections" alt="Chronological timeline diagram spanning Prehistoric to Contemporary, organized into 11 cultural/regional traditions arranged in parallel horizontal tracks. Key cross-cultural influence arrows shown: (1) Islamic pointed arch → Gothic rib vault; (2) Roman concrete → Byzantine pendentive dome; (3) Japanese vernacular → Wright's organic architecture; (4) Spanish Baroque → Philippine earthquake Baroque. Bottom layer shows corresponding Western historical periods (Ancient, Medieval, Renaissance, Baroque, Modern, Contemporary) for chronological reference. Key buildings, architects, and stylistic features annotated at timeline nodes." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## How Periods Connect: The River of Influence
 
@@ -17,7 +17,7 @@ Achieve synthesis-level understanding of architectural history as an interconnec
 
 **Historicism → Modern Movement:** Rejection of 19th-century eclecticism. Ornament is dishonest; form follows function; new materials demand new forms.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="ExamTip" status="preserved"]
+<ExamTip>When the LEA gives you a "what movement came next" or "what was this architect reacting to" question, think in terms of thesis and antithesis. Almost every major architectural movement defines itself partly by what it is *not*.</ExamTip>
 Extracted summary:
 - Props: (none)
 - Text: When the LEA gives you a "what movement came next" or "what was this architect reacting to" question, think in terms of thesis and antithesis. Almost every major architectural movement defines itself partly by what it is *not*.
@@ -32,7 +32,7 @@ Extracted summary:
 
 **Spanish Colonial → Philippine Architecture:** Renaissance and Baroque traditions + Filipino labor + local materials + climate/seismic adaptation = uniquely Philippine synthesis. Earthquake Baroque (massive walls, low towers, thick buttresses) is a direct response to Philippine seismic reality.
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Callout" status="preserved"]
+<Callout>Philippine earthquake Baroque is a legitimate architectural innovation, not a deficiency. The massive walls and reinforced buttresses of churches like San Agustin in Manila and the Miag-ao Church in Iloilo are engineering responses to a specific environmental challenge. The LEA rewards this nuanced reading.</Callout>
 Extracted summary:
 - Props: (none)
 - Text: Philippine earthquake Baroque is a legitimate architectural innovation, not a deficiency. The massive walls and reinforced buttresses of churches like San Agustin in Manila and the Miag-ao Church in Iloilo are engineering responses to a specific environmental challenge. The LEA rewards this nuanced reading.

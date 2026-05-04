@@ -5,7 +5,6 @@ Identify and interpret standard architectural symbols for materials (section, el
 
 Architectural symbols and notations are the standardized graphical language used on drawings to communicate building components, materials, and design intent to builders and regulators. The LEA expects you to recognize and interpret these symbols accurately and to understand their use across plan, elevation, and section views.
 
-
 ## Core Concept
 
 Architectural drawings communicate through two primary means: **dimensions and annotations** (text) and **symbols and notation** (graphical marks). Symbols allow complex information to be conveyed quickly and consistently across large drawings. Standardized symbols ensure that anyone—builder, inspector, engineer—can interpret the drawing without ambiguity.
@@ -39,6 +38,7 @@ Architectural drawings communicate through two primary means: **dimensions and a
 - **Leader lines**: Thin lines with arrows or dots pointing to a feature, with text annotation (e.g., "FFL +0.00 m").
 - **Title blocks**: Located at the bottom right of each sheet, showing project name, scale, and date.
 - **Legends and schedules**: Lists defining abbreviations, symbols, materials, and specifications.
+<ArticleMedia id="media-lea-dsgn-011-05-core-concept" a type="image" caption="Architectural Symbols — Material, Fixture, and Notation Standards" description="Reference chart of standard architectural symbols: material symbols (brick, concrete, wood in plan/section/elevation), door/window types, plumbing fixtures, electrical outlets, and notation system for room names, dimensions, and finish schedules." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
@@ -87,8 +87,8 @@ The exam may ask for the minimum interior dimensions of an elevator cab or the t
   width, it is a code violation!
 </Tip>
 
-
 **Exam Tip:** Material symbols: diagonal lines = concrete/brick/masonry (spacing indicates material), random squiggles = earth/gravel, dots = sand/cement. Section marks show cut location + view direction.
+<ArticleMedia id="media-lea-dsgn-011-05-core-concept" a type="image" caption="Architectural Symbol Library — Plan, Elevation, and Section Graphics" description="Reference chart of standard architectural symbols organized by category: doors and windows (plan, elevation, schedule), materials (section hatch patterns), plumbing fixtures (plan symbols), electrical (plan symbols), and structural (column grid system). Consistent notation conventions per PD 1096." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Cross-References
 

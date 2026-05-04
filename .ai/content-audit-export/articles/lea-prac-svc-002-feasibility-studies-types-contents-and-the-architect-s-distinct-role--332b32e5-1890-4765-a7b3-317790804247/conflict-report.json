@@ -1,28 +1,19 @@
 {
-  "attempted_at": "2026-05-04T00:06:42.123Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:06:46.738Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "original.md hash does not match article metadata export hash.",
-    "Remote Supabase content differs from export baseline; refusing stale push.",
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "Remote Supabase content differs from export baseline; refusing stale push."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "332b32e5-1890-4765-a7b3-317790804247",
   "slug": "lea-prac-svc-002-feasibility-studies-types-contents-and-the-architect-s-distinct-role",
-  "preparation_actions": [
-    "auto_generated_diff"
-  ],
-  "remote_hash_before": "sha256:7970c889faaf3cf5e14eaae47132f372918fa33765372349b8a13e1a4a488649",
-  "original_hash": "sha256:d1d3d08d1ae3d0a892124d8f607bd7f435d2c417a21a26bb3a4efa4604bcf58d",
-  "candidate_hash": "sha256:4fdb18a2186d2f36bfe48e628f2cf74b6813ec03f78e81b72b33a3acbd1c9d83",
+  "preparation_actions": [],
+  "remote_hash_before": "sha256:68888189aa35fe12aac8bee3e688932dc1c9aa821f3c45e292c385307e5b9a8c",
+  "original_hash": "sha256:4fdb18a2186d2f36bfe48e628f2cf74b6813ec03f78e81b72b33a3acbd1c9d83",
+  "candidate_hash": "sha256:68888189aa35fe12aac8bee3e688932dc1c9aa821f3c45e292c385307e5b9a8c",
   "stale_check_passed": false,
-  "remote_updated_at_before": "2026-05-03T13:51:45.338928+00:00"
+  "remote_updated_at_before": "2026-05-04T02:01:09.909339+00:00"
 }

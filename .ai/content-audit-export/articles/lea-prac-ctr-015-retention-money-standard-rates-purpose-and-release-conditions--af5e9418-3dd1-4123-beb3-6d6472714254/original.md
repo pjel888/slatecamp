@@ -8,9 +8,7 @@ After reading this article, you should be able to:
 - Describe the conditions for release of retention at Substantial Completion and Final Completion.
 - Apply retention money rules to LEA scenarios involving contractor default, punch-list completion, and final accounting.
 
-
 Retention money is a percentage of contract payments withheld by the owner as security for contractor performance, quality of work, and defect remediation during and after construction.
-
 
 ### Purpose and Protective Function of Retention
 
@@ -63,3 +61,4 @@ Interest on retained funds creates a point of contract negotiation. Some contrac
 <ExamTip>Under UAP Doc 301, basic services = all 6 phases. Additional services (feasibility, supervision) are separately compensated. Verify exclusions.</ExamTip>
 
 <KeyValues items={[{"value": "10%", "label": "Standard Retention"}, {"value": "60 days", "label": "Payment Period"}, {"value": "5%", "label": "COLA Escalation Max"}, {"value": "90%", "label": "CD Phase Fee"}]} />
+<!-- no-media-needed: professional practice article, text/tables/UI blocks are optimal format -->

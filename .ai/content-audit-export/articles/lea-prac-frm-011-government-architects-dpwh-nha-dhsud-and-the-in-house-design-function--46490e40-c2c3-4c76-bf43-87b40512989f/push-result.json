@@ -1,26 +1,21 @@
 {
-  "attempted_at": "2026-05-04T00:06:03.034Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:16:33.339Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "candidate.md matches original.md; refusing no-op apply."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "46490e40-c2c3-4c76-bf43-87b40512989f",
   "slug": "lea-prac-frm-011-government-architects-dpwh-nha-dhsud-and-the-in-house-design-function",
   "preparation_actions": [
     "auto_generated_diff"
   ],
-  "remote_hash_before": "sha256:470a2f616b16203e9ecc95f9bd60d88eb95fd5e60208f460e7c6254870bfa12f",
-  "original_hash": "sha256:470a2f616b16203e9ecc95f9bd60d88eb95fd5e60208f460e7c6254870bfa12f",
-  "candidate_hash": "sha256:67d6de32a06dff5fa0f5e87ff733cf2aa7bff226f4918b23e33ffe2859649be9",
+  "remote_hash_before": "sha256:633b017f2c752d026a30c7aa651a83559a692ed1529cfc8f45187a5ab3ed9704",
+  "original_hash": "sha256:633b017f2c752d026a30c7aa651a83559a692ed1529cfc8f45187a5ab3ed9704",
+  "candidate_hash": "sha256:633b017f2c752d026a30c7aa651a83559a692ed1529cfc8f45187a5ab3ed9704",
   "stale_check_passed": true,
-  "remote_updated_at_before": "2026-05-03T13:50:08.640764+00:00"
+  "remote_updated_at_before": "2026-05-04T01:59:31.248484+00:00"
 }

@@ -8,11 +8,7 @@ After reading this article, you should be able to:
 - Explain the Architect's authority to issue Change Orders and the thresholds requiring Owner authorization.
 - Apply the limits on Architect authority to LEA scenarios involving disputes over work methods, payment certification, and contract interpretation.
 
-
-
 The Architect's authority during construction is defined and limited by the Contract Documents and Doc 301. The Architect cannot modify the Contractor's scope, methods, or obligations beyond what the contract permits.
-
-
 
 ### Scope of Architect's Authority
 
@@ -71,3 +67,17 @@ RA 9266 and UAP Doc 301 define the architect's authority, limitations, and respo
 <ExamTip title="LEA Strategy">
 **High-yield topic:** Know the specific limits of the architect's authority — they cannot direct contractor means/methods, only verify compliance with contract documents.
 </ExamTip>
+
+
+---
+## Cross-References
+
+- **African Vernacular Earth Architecture**: Related article on African Vernacular Earth Architecture
+- **Inca Architecture Ashlar Masonry**: Related article on Inca Architecture Ashlar Masonry
+- **North American Indigenous Architecture**: Related article on North American Indigenous Architecture
+- **SPP Doc 203: Specialized Architectural Services**: Related article on SPP Doc 203: Specialized Architectural Services
+- **SPP Doc 206: Comprehensive Architectural Services**: Related article on SPP Doc 206: Comprehensive Architectural Services
+- **SPP Doc 208: Architectural Design Competition (ADC)**: Related article on SPP Doc 208: Architectural Design Competition (ADC)
+- **SPP Doc 209: Professional Architectural Consulting Services (PACS)**: Related article on SPP Doc 209: Professional Architectural Consulting Services (PACS)
+
+<!-- no-media-needed: professional practice article, text/tables/UI blocks are optimal format -->

@@ -1,5 +1,7 @@
 ## What You Need to Know for the LEA
-[SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
+<Callout>
+Sustainable architecture has matured from ethical preference to systematic methodology encoded in certification systems (LEED, BREEAM, BERDE) and measurable performance standards. The LEA tests your understanding of the theoretical distinction between **genuine sustainability** (reducing total environmental impact across a building's lifecycle) and **greenwashing** (cosmetic environmental claims without systematic change). You must master performance metrics, embodied carbon analysis, and passive design strategies as core architectural knowledge.
+</Callout>
 
 ## Learning Goal
 
@@ -9,11 +11,13 @@
 
 ## Core Concept
 
-<ArticleMedia id="media-lea-theo-007-09-sustainable-building" type="image" caption="Sustainable Architecture — The Building as a System Embedded in Metabolic Flows" description="Concept diagram showing a building at center with interconnected metabolic flows: Energy (solar gain, PV generation, heat recovery), Water (rainwater harvesting, greywater treatment, stormwater management), Materials (embodied carbon, lifecycle assessment, recycled content), and Waste (composting, recycling streams, circular economy). Arrows show passive strategies (orientation, thermal mass, natural ventilation) reducing mechanical load. Callout box: 'Passive → Active → Passive Again (reconciliation)'." suggestedAsset="Diagram of building as metabolic system with energy, water, materials, waste flows" status="placeholder" />
+<ArticleMedia id="media-lea-theo-007-09-sustainable-building" type="image" caption="Sustainable Architecture — The Building as a System Embedded in Metabolic Flows" alt="Concept diagram showing a building at center with interconnected metabolic flows: Energy (solar gain, PV generation, heat recovery), Water (rainwater harvesting, greywater treatment, stormwater management), Materials (embodied carbon, lifecycle assessment, recycled content), and Waste (composting, recycling streams, circular economy). Arrows show passive strategies (orientation, thermal mass, natural ventilation) reducing mechanical load. Callout box: 'Passive → Active → Passive Again (reconciliation)'." suggestedAsset="Diagram of building as metabolic system with energy, water, materials, waste flows" status="placeholder" />
 
 Sustainable architecture represents a fundamental philosophical reorientation: the building is no longer isolated from its environmental context but is understood as a **system embedded in metabolic flows** (water, energy, materials, waste). Traditional architecture treated environmental factors as constraints (climate, site, materials available). Sustainable architecture treats environmental performance as a primary design generator equivalent to program, structure, and aesthetics.
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+<Tip>
+**Three-phase evolution of sustainable thinking**: Passive (let climate do the work), then Active (mechanical systems add intelligence), now Passive-Active synthesis (maximize passive, minimize mechanical load, make mechanics ultra-efficient). The pattern: "Simple is best, complexity should serve genuine need." Design first for climate responsiveness, add systems only where passive strategies cannot achieve comfort.
+</Tip>
 
 **From Passive to Active to Passive Again: The Epistemological Shift**
 
@@ -45,7 +49,9 @@ Strategies to reduce embodied carbon:
 
 Contemporary theoretical debate: Should embodied carbon be weighted equally to operational carbon in sustainability assessment? Operational carbon is perpetual—a 100-year building accrues it every year. Embodied carbon is front-loaded but finite. If a low-embodied-carbon timber building requires 30% more operational energy than a concrete building, when does operational excess offset embodied advantage? The answer depends on climate, grid energy sources, and discount rates—there is no universal answer. The LEA may test whether you can articulate this complexity rather than default to certainty.
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
+<Note>
+Embodied vs. operational is not a binary choice. Lifecycle assessment (LCA) must account for both, but the weighting depends on context. Cold climates where heating dominates favor high-insulation construction (higher embodied carbon) that dramatically reduces operational carbon. Hot climates might favor lower-embodied materials if passive cooling is effective. One-size-fits-all sustainability scoring misses this context-dependency.
+</Note>
 
 **Performance Certification Systems and Their Theoretical Limits**
 
@@ -73,7 +79,9 @@ Greenwashing occurs when buildings or developers claim sustainability through su
 
 Theoretical problem: Certification systems, if not rigorously applied, enable greenwashing. A LEED-certified building earning 50 of 100 available points might boast "LEED certification" without acknowledging that 50% of possible environmental improvements were not pursued. Sustainable architecture must resist the reduction of environmental complexity to marketing language.
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
+<Warn>
+Greenwashing masquerades as sustainability. A LEED-certified building earning minimum points can claim "LEED certified" status despite pursuing only 25% of available improvements. Similarly, visible green features (rooftop gardens, rainwater collection) photograph well but may mask poor envelope performance or excessive mechanical systems. Always examine full lifecycle data, not marketing claims. Distrust buildings where the most visible features are the most easily publicized rather than the most impactful.
+</Warn>
 
 **Passive Design in Philippine Context**
 
@@ -89,26 +97,26 @@ The Philippine climate—tropical, monsoon-affected, with extreme solar radiatio
 
 ## Key Facts and Testable Items
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="WikiExamTable" status="preserved"]
+<WikiExamTable headers={["Standard", "Origin", "Key Metrics", "Relevant for Philippine Context"]} rows={[['["LEED", "USA, 1998", "Points-based; site, water, energy, materials, IEQ", "Global but Northern Hemisphere bias"]', '["BREEAM", "UK, 1990", "Performance-based; energy, water, waste, health", "Regional variants adapt to climate"]', '["BERDE", "Philippines, 2010", "Tropics-optimized; typhoon resilience, monsoon water, solar control, vernacular integration", "Direct Philippine applicability"]', '["Passive House", "Germany, 1988", "Envelope R-values, air leakage, heating/cooling demand (&lt;15 kWh/m²/year)", "Works in cold climates; heating-focused standard"]', '["Net-Zero Energy", "Various, 2000s+", "Annual energy production = consumption", "Can mask high embodied carbon if PV-heavy"]', '["Carbon Trust/embodied", "UK, 2010s", "kg CO2-eq per m² across lifecycle", "Increasingly required; complements operational metrics"]']]} />
 ## How It's Tested on the LEA
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
+<ExamTip>1. **Lifecycle Vs. Operational**: "A timber-framed building requires 10% more operational energy than a concrete building but has 40% lower embodied carbon. Over a 50-year lifecycle, which is more sustainable?" (Answer: Requires LCA calculation; depends on grid carbon intensity and discount rate; both are viable if properly optimized)</ExamTip>
 
-[SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
+<ExamTip>2. **Certification Literacy**: "A building achieves LEED Platinum certification. What does this tell you about actual environmental performance?" (Answer: It meets high standards across categories; but point-system may enable credit-stacking without systemic optimization; must review actual performance data)</ExamTip>
 
-[SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
+<ExamTip>3. **Greenwashing Recognition**: "A development advertises 'green roofs and rainwater harvesting' prominently but provides minimal information on envelope insulation or operational energy. What is your critical assessment?" (Answer: Visible green features may mask poor thermal performance; greenwashing likely; require full LCA and actual performance projections)</ExamTip>
 
-[SLATECAMP_UI_BLOCK:ui_0009 component="ExamTip" status="preserved"]
+<ExamTip>4. **Passive Design Application**: "Design a tropical office building in Manila. Which passive strategies are most critical?" (Answer: Solar shading (overhangs, louvers), natural ventilation (cross-flow, operable windows), elevated design for airflow, rainwater harvesting, minimal air-conditioning load)</ExamTip>
 
-[SLATECAMP_UI_BLOCK:ui_0010 component="ExamTip" status="preserved"]
+<ExamTip>5. **Philippine Standard Competency**: "How does BERDE differ from LEED in tropical application?" (Answer: BERDE weights tropical climate factors—solar control, monsoon water management, typhoon resilience; incorporates vernacular principles; avoids Northern Hemisphere bias)</ExamTip>
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0011 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Confusing Energy Efficiency with Sustainability" correction="An energy-efficient air-conditioned building in an unsustainable suburban location, constructed with high embodied carbon, is not sustainable." context="Sustainability requires systems-level integration of location, envelope, mechanical, materials, and operational phases." />
 
-[SLATECAMP_UI_BLOCK:ui_0012 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Assuming Certifications Guarantee Performance" correction="LEED/BREEAM/BERDE certifications are design-stage projections. Many certified buildings underperform operationally due to occupant behavior, commissioning failures, or maintenance issues." context="Certification is necessary but insufficient." />
 
-[SLATECAMP_UI_BLOCK:ui_0013 component="WikiMistakeList" status="preserved"]
+<WikiMistakeList mistakes={["Prioritizing Operational Over Embodied in High-Carbon Materials. Building a super-efficient office tower in high-carbon concrete can lock in more total lifecycle carbon than a less-optimized timber building. Modern sustainability cannot ignore embodied carbon.", "Undervaluing Passive Strategies as \"Low-Tech\". Passive design is intellectually demanding—it requires climate analysis, orientation optimization, envelope physics, and occupant education. It is not primitive; it is sophisticated applied physics.", "Applying Standards Without Local Context. Importing LEED criteria wholeslea into Philippine context can incentivize large windows (standard daylighting credit) that increase solar gain in tropical climates. BERDE's localization reflects genuine need, not regional protectionism.", "Treating Renewable Energy as Sustainability. On-site solar is excellent; it should not substitute for efficiency. A building consuming 100 kWh/day that produces this via PV has higher embodied impact than a building consuming 40 kWh/day from the grid."]} />
 
 ## Key Terms
 

@@ -3,8 +3,6 @@
 After reading this article, you should be able to:
 
 Apply minimum fixture count requirements by occupancy group under PD 1096 Rule IX: calculate required water closets, lavatories, urinals (male), and drinking fountains based on occupant load; determine fixture ratio adjustments for assembly, educational, and mercantile occupancies; and apply BP 344 accessibility requirements to all fixtures.
-### BP 344 (2024 IRR) — Philippine Licensure Examination for Architects Review
-
 ---
 
 ## REAL-WORLD HOOK
@@ -378,3 +376,5 @@ Draw a simple floor plan of a 6 m × 4 m alcove in a transport terminal containi
 
 **Sanitation And Water Supply**, **Stages And Platforms**, **Accessible Seating In Assembly Areas**, **Pd 1096 Rule Vii Occupancy**
 
+
+<!-- no-media-needed: existing content format is sufficient without visual media -->

@@ -3,8 +3,6 @@
 Minimalism is not mere simplicity or absence; it is a **rigorous disciplinary framework** where every element is justified through essential function or philosophical necessity. The LEA tests whether you understand the theoretical distinction between minimalism (restraint as positive principle) and reductivism (elimination as default). You must master the work of Tadao Ando, John Pawson, and SANAA, and understand how minimalism emerged as both aesthetic and ethical stance.
 </Callout>
 
-
-
 ## Learning Goal
 
 - Define social architecture as community-engaged design where affected communities are primary stakeholders, not mere end-users.
@@ -12,6 +10,8 @@ Minimalism is not mere simplicity or absence; it is a **rigorous disciplinary fr
 - Apply participatory methodologies: design charettes, community workshops, co-design sessions, and feedback loops.
 
 ## Core Concept
+
+<ArticleMedia id="media-lea-theo-007-11-minimalism-philosophy" type="image" caption="Minimalism — Restraint as Intellectual Discipline and Ethical Position" description="Concept diagram showing evolution: Modernism (ornament eliminated as non-functional) → Minimalism (restraint as positive principle, sufficiency, intensity). Three branches from Minimalism: (1) Zen/Ma/shibui/wabi-sabi (Japanese aesthetic foundations), (2) Tadao Ando (phenomenological intensity, Church on the Water), (3) John Pawson/SANAA (pure volumes, material reduction). Center quote: 'Less is more — but not because of utility; because each remaining element carries maximum phenomenological weight.'" suggestedAsset="Diagram tracing minimalism's philosophical evolution from modernism through Japanese aesthetics to key practitioners" status="placeholder" />
 
 Minimalism in architecture represents more than stylistic preference for sparse spaces; it is **restraint as intellectual discipline and ethical position**. Mies van der Rohe's aphorism "less is more" encoded the philosophy: reduction to essentials increases significance of what remains; ornament and redundancy distract from pure relationships between form, space, and material.
 
@@ -106,21 +106,15 @@ The minimalist market trap: minimalism has been commodified as luxury brand, so 
 <WikiExamTable headers={["Architect", "Project", "Key Principle", "Testable Element"]} rows={[['["Tadao Ando", "Church on the Water", "Nature as liturgical element", "Explain how the freestanding cross in a reflecting pool dissolves the boundary between architecture and landscape"]', '["Tadao Ando", "Water Temple", "Site integration, landscape respect", "Describe how minimal intervention relates to context"]', '["John Pawson", "Calvin Klein Flagship Store", "Refined materiality, visual clarity", "Analyze how material selection communicates luxury through restraint"]', '["SANAA", "21st Century Museum", "Transparency and minimal partition", "Explain how glass building achieves complexity without visible structure"]', '["Peter Zumthor", "Bruder Klaus Field Chapel", "Material intensity, phenomenological focus", "Describe how single material (concrete) creates spiritual experience"]', '["Mies van der Rohe", "Barcelona Pavilion", "\\"Less is more\\"; spatial flow", "Analyze how minimal elements define space through absence"]']]} />
 ## How It's Tested on the LEA
 
-
 <ExamTip>1. **Philosophical Distinction**: "A designer removes all interior walls, all ornament, all detail from a building. Is this minimalism?" (Answer: Not necessarily; minimalism requires that retained elements are essential and carry significance. Removal without intent is reductivism, not minimalism.)</ExamTip>
-
 
 <ExamTip>2. **Material Intelligence**: "Minimalism is about white walls and empty space. True or false?" (Answer: False. Minimalism is about restraint disciplined by intention. Material selection, quality, and expression are fundamental. A minimalist space achieves intensity through carefully selected materials, not through mere emptiness.)</ExamTip>
 
-
 <ExamTip>3. **Ando's Principle Application**: "How does light function in Tadao Ando's architecture differently from modernism?" (Answer: Modernism uses light functionally (enabling vision). Ando treats light as primary material, shaped and revelead through apertures, creating phenomenological intensity.)</ExamTip>
-
 
 <ExamTip>4. **SANAA and Transparency**: "The 21st Century Museum is primarily glazed. Why is this minimalist rather than maximally exposed?" (Answer: SANAA uses minimal structural expression; interior definition comes from the program and subtle spatial manipulation, not from architectural partitions. The transparency is minimalism, not exposure.)</ExamTip>
 
-
 <ExamTip>5. **Contemporary Critique**: "Minimalist design commands high prices. Does this align with minimalism's philosophical goals?" (Answer: Tension exists; minimalism's aesthetic has been commodified as luxury brand. True minimalism might resist consumerism; contemporary practice often fails to achieve this philosophical consistency.)</ExamTip>
-
 
 ## Common Mistakes
 
@@ -129,7 +123,6 @@ The minimalist market trap: minimalism has been commodified as luxury brand, so 
 <WikiMistakeCard mistake="Reducing Minimalism to Aesthetic Style" correction="\"White walls and wooden floors\" superficially mimic minimalism without engaging the philosophical framework of disciplined reduction and material intensity." context="This is commonly tested on the LEA." />
 
 <WikiMistakeList mistakes={["Confusing Minimalism with Economy. Sparse design due to budget constraints is not minimalism. Minimalism requires intentional philosophy, not mere frugality. (Though poverty can produce unintentional minimalism with interesting results.)", "Ignoring Cultural Genealogy. Japanese minimalism emerges from specific aesthetic and spiritual traditions. Applying the vocabulary without understanding the source is appropriation without understanding.", "Treating Minimalism as Universally Desirable. Some occupants and cultures value abundance, ornament, and visual richness. Minimalism is legitimate philosophy but not universal prescription.", "Missing the Phenomenological Demand. Minimalism requires active attention from the occupant—awareness of light, material, proportion, spatial relationships. Spaces designed with this expectation may alienate occupants who do not share this cultivated attention."]} />
-
 
 ## Key Terms
 

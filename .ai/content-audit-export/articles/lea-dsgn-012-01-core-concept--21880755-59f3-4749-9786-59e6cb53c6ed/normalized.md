@@ -46,10 +46,10 @@ A **site analysis** evaluates the built and natural environment of a property to
 
 **Building orientation in the Philippines:**
 Per ERR-DSGN-035, the correct building orientation for tropical regions is **long axis E-W (east-west)**. This minimizes east-west sun exposure and maximizes north-south facades (which receive lower-angle, less intense sun). Incorrect orientation (long axis N-S) is a common exam error.
-<ArticleMedia id="media-lea-dsgn-012-01-core-concept" a type="image" caption="Site Analysis Diagram — Sun Path, Wind Rose, and Topography" description="Composite site analysis diagram showing: sun path chart with seasonal arcs, wind rose diagram (prevailing wind direction and speed), topographic contour lines, existing vegetation, views/vistas, noise sources, and access points. Philippine tropical climate context." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-012-01-core-concept" type="image" caption="Site Analysis Diagram — Sun Path, Wind Rose, and Topography" alt="Composite site analysis diagram showing: sun path chart with seasonal arcs, wind rose diagram (prevailing wind direction and speed), topographic contour lines, existing vegetation, views/vistas, noise sources, and access points. Philippine tropical climate context." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
-<ArticleMedia id="media-lea-dsgn-012-01-core-concept" a type="image" caption="Site Analysis Factors — Climate, Access, Utilities, and Context Mapping" description="Multi-layer site analysis mapping: base map with property boundaries, climate overlay (solar radiation, rainfall, wind), access/circulation overlay, utility infrastructure overlay, and environmental constraints (easements, flood zones, geological hazards)." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-012-01-core-concept" type="image" caption="Site Analysis Factors — Climate, Access, Utilities, and Context Mapping" alt="Multi-layer site analysis mapping: base map with property boundaries, climate overlay (solar radiation, rainfall, wind), access/circulation overlay, utility infrastructure overlay, and environmental constraints (easements, flood zones, geological hazards)." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 | Analysis Element | Method | Interpretation |
 |---|---|---|

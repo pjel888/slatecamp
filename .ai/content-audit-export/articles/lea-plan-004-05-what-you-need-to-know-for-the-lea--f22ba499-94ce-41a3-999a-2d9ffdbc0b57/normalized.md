@@ -26,7 +26,7 @@ Concrete has higher initial cost but lower lifecycle cost. Asphalt is cheaper in
 **Implications for Site Planning**
 
 Choose durable, low-maintenance materials when possible. Trade off initial cost for long-term performance. Understand that "cheapest" is rarely the best decision over 20+ years.
-<ArticleMedia id="media-lea-plan-004-05-what-you-need-to-know-fo" a type="image" caption="Lifecycle Cost Analysis — Paving Material Comparison Chart" description="Bar chart comparison showing 20-year lifecycle costs for three paving materials in Philippine tropical conditions: Concrete (₱1,200/sqm initial, ₱30/yr maintenance, 20yr life, ₱1,800 total), Asphalt (₱800/sqm initial, ₱100/yr, 10yr life then replace, ₱3,600 total), Permeable Pavers (₱2,500/sqm initial, ₱150/yr, 15yr life then replace, ₱8,000 total). Shows initial cost vs. total cost tradeoff with maintenance cost breakdown." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-plan-004-05-what-you-need-to-know-fo" type="image" caption="Lifecycle Cost Analysis — Paving Material Comparison Chart" alt="Bar chart comparison showing 20-year lifecycle costs for three paving materials in Philippine tropical conditions: Concrete (₱1,200/sqm initial, ₱30/yr maintenance, 20yr life, ₱1,800 total), Asphalt (₱800/sqm initial, ₱100/yr, 10yr life then replace, ₱3,600 total), Permeable Pavers (₱2,500/sqm initial, ₱150/yr, 15yr life then replace, ₱8,000 total). Shows initial cost vs. total cost tradeoff with maintenance cost breakdown." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ### Durability and Material Selection
 
@@ -110,7 +110,7 @@ Site infrastructure (water, power, sewage, storm drainage) requires organized ma
 - **Responsibility:** Barangay Public Works Department
 - **Budget:** ₱50,000/year for cleaning, materials, and labor
 - **Documentation:** Photo record of baseline; maintenance log updated monthly
-<ArticleMedia id="media-lea-plan-004-05-what-you-need-to-know-fo" a type="image" caption="Asset Management Cycle — Inventory, Schedule, Budget, Document Diagram" description="Flowchart showing the asset management cycle for site infrastructure: (1) Inventory assets — map all utilities with age, material, capacity; (2) Establish maintenance schedule — inspection, cleaning, repair, replacement intervals; (3) Assign responsibility — LGU, developer, barangay, cooperative; (4) Budget annually — 1-2% of initial capital cost; (5) Document all maintenance work. Example: storm drainage system with catch basins, PVC pipe, outlet structures." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-plan-004-05-what-you-need-to-know-fo" type="image" caption="Asset Management Cycle — Inventory, Schedule, Budget, Document Diagram" alt="Flowchart showing the asset management cycle for site infrastructure: (1) Inventory assets — map all utilities with age, material, capacity; (2) Establish maintenance schedule — inspection, cleaning, repair, replacement intervals; (3) Assign responsibility — LGU, developer, barangay, cooperative; (4) Budget annually — 1-2% of initial capital cost; (5) Document all maintenance work. Example: storm drainage system with catch basins, PVC pipe, outlet structures." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ### Deferred Maintenance and Deterioration
 

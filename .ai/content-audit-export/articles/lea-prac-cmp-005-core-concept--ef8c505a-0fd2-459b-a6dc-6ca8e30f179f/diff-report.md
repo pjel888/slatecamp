@@ -1,33 +1,32 @@
 # Content Diff Report: lea-prac-cmp-005-core-concept
 
-Generated: 2026-05-04T00:06:24.800Z
+Generated: 2026-05-04T02:16:59.969Z
 Article ID: ef8c505a-0fd2-459b-a6dc-6ca8e30f179f
-Changed: true
-Safe to push locally: false
+Changed: false
+Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:0e6e32c279c40ce84d97e7ab399dca659fce3a04be6c7d3f03169f540a19fa95`
+- Original: `sha256:a40a1edbc97dd685daa7855ff5a77274f193ed02192940fcc1da6aaa66365f28`
 - Normalized: `sha256:671386fab832249713a816a19e08ca580819762473c6e229f5b66711500161fc`
-- Candidate: `sha256:671386fab832249713a816a19e08ca580819762473c6e229f5b66711500161fc`
+- Candidate: `sha256:a40a1edbc97dd685daa7855ff5a77274f193ed02192940fcc1da6aaa66365f28`
 
 ## Line summary
 
-- Changed lines: 28
+- Changed lines: 0
 - Inserted lines: 0
-- Deleted lines: 7
+- Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 2
-- UI blocks preserved: 0
-- UI blocks changed/missing: 2
-- Unresolved placeholders: 1
+- UI blocks preserved: 2
+- UI blocks changed/missing: 0
+- Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate contains unresolved UI block placeholders.
-- Candidate is missing 2 preserved UI block(s).
+- None
 
 ## Warnings
 

@@ -11,6 +11,7 @@ By the end of this article, you will be able to:
 The stress-strain diagram is the foundation of material behavior analysis. Master the five critical points—proportional limit, elastic limit, yield point, ultimate strength, and rupture—and you own the entire conversation about how materials fail.
 
 ## Core Concept
+<ArticleMedia id="media-lea-strc-003-01-core-concept" a type="image" caption="Stress-Strain Diagram — Five Critical Points" description="Engineering stress-strain curve for A36 steel showing five critical points: (1) Proportional Limit — end of linear elastic region; (2) Elastic Limit — max stress without permanent deformation; (3) Yield Point — upper and lower yield plateau; (4) Ultimate Strength — maximum stress; (5) Rupture — fracture point. Modulus of Elasticity E shown as slope of elastic region. Elastic vs plastic regions clearly labeled." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 Stress measures the internal force per unit area within a material. Strain measures the deformation per unit original length. When you plot stress against strain, the resulting curve tells you everything about how a material responds to loading.
 
@@ -61,7 +62,6 @@ The NSCP (National Structural Code of the Philippines) uses stress-strain diagra
 **Pattern 3: Comparative Analysis.** Two stress-strain diagrams are shown—one ductile, one brittle. Questions ask to identify which is which, or to explain why one has a large plastic region and the other does not.
 
 <Tip>The slope of the elastic region IS the Modulus of Elasticity. The slope of the unloading line (even from deep in the plastic region) also equals E. This parallelism is your memory anchor: elastic behavior is reversible, even if permanent strain remains.</Tip>
-
 
 ## Related Articles
 

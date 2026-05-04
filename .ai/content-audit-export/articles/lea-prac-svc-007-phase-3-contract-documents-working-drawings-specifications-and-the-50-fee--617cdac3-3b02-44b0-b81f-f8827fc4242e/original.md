@@ -10,8 +10,9 @@ After reading this article, you should be able to:
 
 The Contract Document Phase represents the most significant single payment under SPP 202, earning 50% of the architect's total design services fees. This phase produces the comprehensive drawings and specifications needed to communicate all construction requirements to contractors and building officials.
 
-### Contract Document Deliverables
+<ArticleMedia id="media-lea-prac-svc-007-phase-3-contract-docume" a type="image" caption="SPP Doc 202 Six-Phase Framework — Contract Documents Phase in Context" description="Process flow highlighting Phase 4 (Contract Documents) within the six-phase SPP Doc 202 framework: Project Definition → Schematic Design → Design Development → Contract Documents (50% fee, working drawings, technical specifications, bidding documents, permit filings) → Bidding → Construction Admin." suggestedAsset="Diagram or reference image" status="placeholder" />
 
+### Contract Document Deliverables
 
 <KeyValues pairs={[["SPP Document", "201 (Pre-Design), 202 (Regular Design), 203 (Specialized)"], ["Compensation", "MDPE, Lump Sum, Per Diem, Professional Fee + Expenses"], ["Fee Basis", "Percentage of PCC or MDPE"]]} />
 Based on approved Design Development documents, the architect prepares complete Contract Documents consisting of detailed designs and construction drawings setting forth in detail all work required for architectural, structural, electrical, plumbing, mechanical, sanitary, electronic, and communications systems. Technical Specifications describing type and quality of materials, finish, manner of construction, and general conditions under which construction will occur are prepared comprehensively. The architect submits seven sets of all construction drawings and technical specifications for purposes of obtaining building permits.
@@ -20,10 +21,8 @@ Based on approved Design Development documents, the architect prepares complete 
 
 <KeyValues pairs={[["SPP Document", "201 (Pre-Design), 202 (Regular Design), 203 (Specialized)"], ["Compensation", "MDPE, Lump Sum, Per Diem, Professional Fee + Expenses"], ["Fee Basis", "Percentage of PCC or MDPE"]]} />
 
-
 <ExamTip>**LEA Pattern:** Expect scenario-based questions where you must determine which phase a specific deliverable belongs to. Key percentages to memorize: Schematic Design (15%), Design Development (35%), Contract Documents (50%).</ExamTip>
 Contract Documents require extensive coordination among all design disciplines to ensure completeness and consistency. The architect updates the Statement of Probable Project Construction Cost based on changes in scope, requirements, or market conditions. The architect also assists the owner in filing required documents to secure approval from government authorities having jurisdiction over the design of the project. This comprehensive support during permitting represents a critical service ensuring regulatory compliance.
-
 
 <ExamTip>**LEA Pattern:** Expect scenario-based questions where you must determine which phase a specific deliverable belongs to. Key percentages to memorize: Schematic Design (15%), Design Development (35%), Contract Documents (50%).</ExamTip>
 ### Fee Significance and Cumulative Achievement

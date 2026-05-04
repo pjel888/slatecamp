@@ -1,33 +1,32 @@
 # Content Diff Report: lea-util-003-03-protection-levels-and-risk-assessment
 
-Generated: 2026-05-04T00:06:24.935Z
+Generated: 2026-05-04T02:17:00.139Z
 Article ID: 8d3099bc-c90a-4f31-946f-fe7ab195fb75
-Changed: true
-Safe to push locally: false
+Changed: false
+Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:4a378c804c4fe84e091f7126fb771caa77b115e2cb064b4f5096669c8751b05c`
+- Original: `sha256:d3d14d16502a1882e30ee77218ffe8c296e795654433d48568e14ee43e20f6ef`
 - Normalized: `sha256:69fc640753c57be5f7568fe945cb4ffa90c48d70d0a6989aee63f231805afab6`
-- Candidate: `sha256:69fc640753c57be5f7568fe945cb4ffa90c48d70d0a6989aee63f231805afab6`
+- Candidate: `sha256:d3d14d16502a1882e30ee77218ffe8c296e795654433d48568e14ee43e20f6ef`
 
 ## Line summary
 
-- Changed lines: 347
+- Changed lines: 0
 - Inserted lines: 0
-- Deleted lines: 7
+- Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 6
-- UI blocks preserved: 0
-- UI blocks changed/missing: 6
-- Unresolved placeholders: 1
+- UI blocks preserved: 6
+- UI blocks changed/missing: 0
+- Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate contains unresolved UI block placeholders.
-- Candidate is missing 6 preserved UI block(s).
+- None
 
 ## Warnings
 

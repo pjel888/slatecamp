@@ -12,7 +12,6 @@ After reading this article, you should be able to:
 Analyze site microclimate factors — solar orientation, wind patterns, temperature, humidity, precipitation — for building placement and fenestration design; calculate shadow patterns using solar altitude and azimuth; apply the wind rose to building orientation decisions; and identify the effect of nearby water bodies, vegetation, and topography on site conditions.
 ---
 
-
 You are designing a 5-storey BPO office building on a mid-block lot in Bonifacio Global City, Taguig. The client demands maximum natural ventilation to reduce HVAC costs, but the west-facing lot boundary receives brutal afternoon sun from 1:00–5:00 PM year-round. You must orient the building's long axis, position operable windows to capture the Amihan during the dry season, shield the southwest facade from Habagat-driven rain, and deploy solar shading strategies calibrated to the Philippine sun path — all within the constraints of PD 1096 light-and-ventilation requirements and the lot's setback limitations.
 
 ---
@@ -192,3 +191,5 @@ D. West facade
 
 **Topography And Slope Analysis**, **Hydrology In Site Planning**, **Flora And Fauna In Site Development**, **Geological Hazards**
 
+
+<!-- no-media-needed: existing content format is sufficient without visual media -->

@@ -87,7 +87,7 @@ Below are the standards per **RA 9514** and theater design practice:
 - **Wheelchair space:** 1.5 m × 2.0 m per space, allowing for companion seating.
 - **Accessible parking stall:** **3.7 m × 5.0 m** per BP 344 2024 Revised IRR.
 - **Ramp gradient:** **1:20 maximum** per BP 344 2024 Revised IRR Part 2 Section 206.
-<ArticleMedia id="media-lea-dsgn-004-07-core-concept" a type="image" caption="Theater Typology — Proscenium, Thrust, and Arena Stage Configurations" description="Comparison diagram of three theater stage types: proscenium (framed stage, 0.9 sqm/seat), thrust (stage extends into audience), and arena (surrounded). Shows stage minimum dimensions, seating angles, and egress requirements per RA 9514." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-004-07-core-concept" type="image" caption="Theater Typology — Proscenium, Thrust, and Arena Stage Configurations" alt="Comparison diagram of three theater stage types: proscenium (framed stage, 0.9 sqm/seat), thrust (stage extends into audience), and arena (surrounded). Shows stage minimum dimensions, seating angles, and egress requirements per RA 9514." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ---
 
@@ -135,7 +135,7 @@ Below are the standards per **RA 9514** and theater design practice:
 ---
 
 **Exam Tip — ERR-DSGN-005:** The presence of a proscenium stage determines Group C vs Group H classification. Stadiums and arenas without fixed stages = Group H, regardless of seating capacity.
-<ArticleMedia id="media-lea-dsgn-004-07-core-concept" a type="image" caption="Theater Seating and Egress — Sightlines, Row Spacing, and Exit Distribution" description="Theater seating plan showing: minimum row spacing (850mm), seat width (500-550mm), sightline angles (max 30° to top of stage), and exit distribution at 7.6 mm/person. Proscenium stage minimum dimensions and BP 344 accessible seating zones shown." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-004-07-core-concept" type="image" caption="Theater Seating and Egress — Sightlines, Row Spacing, and Exit Distribution" alt="Theater seating plan showing: minimum row spacing (850mm), seat width (500-550mm), sightline angles (max 30° to top of stage), and exit distribution at 7.6 mm/person. Proscenium stage minimum dimensions and BP 344 accessible seating zones shown." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Cross-References
 

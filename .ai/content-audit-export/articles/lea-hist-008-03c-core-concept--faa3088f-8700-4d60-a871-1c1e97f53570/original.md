@@ -6,6 +6,10 @@ Identify Walter Gropius's contributions as founder of the Bauhaus (1919), his be
 ## Core Concept
 **Walter Gropius** (1883–1969) was the founder and first director of the **Bauhaus**, the most influential design school of the 20th century. While the Bauhaus evolved under three directors, Gropius set its foundational philosophy: the unity of art, craft, and technology through pedagogy and practice.
 
+
+<ArticleMedia id="media-hist-008-03c-core-concept" layout="single" type="image" status="placeholder" alt="View of the Bauhaus Dessau building (1925–1926, Walter Gropius), showing the glazed curtain-walled workshop wing with the cantilevered concrete floor slabs and the bridge connecting the workshop and vocational school wings." caption="Bauhaus Dessau — Glass Curtain Wall Workshop Wing" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
+
 <Tip>Gropius = founder of Bauhaus (1919); unified art, craft, and industry; believed good design could improve everyday life through mass production and education. Key phrase: "The ultimate aim of all visual arts is the complete building."</Tip>
 
 In 1919, post-World War I Germany was in crisis. Gropius envisioned a school that would rebuild German culture by reintegrating art and industry. The name "Bauhaus" (literally "building house") expressed the goal: a place where art, craft, and industrial production would converge. Gropius believed that industrial design need not be soulless or ugly. Instead, by applying artistic principles to manufacturing, designers could create beautiful, functional objects for mass production—raising the aesthetic standard of everyday life.
@@ -23,6 +27,10 @@ Gropius's influence extended beyond buildings. He shaped how architects think ab
 <Warn>Critical distinction: Sullivan said "form follows function." Gropius never used this phrase. Gropius believed art and function are inseparable—integration, not sequence. Also: Don't confuse Gropius's Bauhaus (1919–1928 under him) with Mies's Bauhaus directorship (1930–1933). Each director brought different emphases. Gropius's was experimental and inclusive; Mies's was more austere and geometric.</Warn>
 
 The Nazi regime closed the Bauhaus in 1933, viewing its modernism and Jewish teachers as threats. Gropius emigrated to America, where he continued teaching and practicing, spreading Bauhaus principles globally. His legacy is visible in design education, corporate modernism, and the belief that good design can improve everyday life.
+
+
+<ArticleMedia id="media-hist-008-03c-core-concept" layout="single" type="image" status="placeholder" alt="View of the Fagus Factory (Alfeld, 1911–1913, Walter Gropius and Adolf Meyer), showing the all-glass corner curtain wall without visible corner supports — a revolutionary expression of modern industrial construction." caption="Fagus Factory — Gropius and Meyer's Glass Corner" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
 
 ## Key Facts and Testable Items
 
@@ -65,6 +73,8 @@ The Nazi regime closed the Bauhaus in 1933, viewing its modernism and Jewish tea
 **Social Design**: Belief that good design improves everyday life and can be democratized through mass production; Bauhaus mission to raise aesthetic standards for all, not just the wealthy.
 
 **Craft-Industry Integration**: Bauhaus principle reconciling traditional craftsmanship with industrial manufacturing; rejected the fine art-craft hierarchy and the notion that industrial production must be ugly.
+
+<ArticleMedia id="media-hist-008-03c-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparison of Gropius's key works — Fagus Factory (glass curtain wall, 1911) and Bauhaus Dessau (bridged wings, 1925–1926) — showing the development of industrial aesthetic and structural honesty.\" caption=\"Walter Gropius — Fagus Factory and Bauhaus Dessau\" suggestedAsset=\"Style comparison illustration\" placementIntent=\"Style comparison for architectural period\" />
 
 ## Related Articles
 

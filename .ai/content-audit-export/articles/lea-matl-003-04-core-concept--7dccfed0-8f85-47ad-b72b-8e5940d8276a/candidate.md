@@ -102,15 +102,15 @@ The LEA evaluates non-ferrous metals knowledge through:
 3. _Corrosion prevention_ — Identify galvanic risks when dissimilar metals connect and specify isolation methods.
 4. _Philippine code alignment_ — Confirm material selections against NSCP 2015 Sections 1402–1405 (Aluminum Structures) and durability criteria in Section 402.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+<Tip>Alloy 6063 is the undisputed standard for Philippine architectural extrusions because of its exceptional extrudability, smooth anodizable surface, and cost-effectiveness. When you see "aluminum curtain wall" on the LEA, assume 6063-T6 unless context suggests otherwise. Type II anodizing is the default for standard architectural applications; only upgrade to Type III if the question emphasizes high-traffic, severe corrosion, or abrasion resistance.</Tip>
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard title="Confusing Alloy Number with Strength" body="A candidate specifies 3003-H14 for a structural member because the number looks stronger. In reality, 3003 is a decorative alloy with only 110 MPa tensile strength—insufficient for any structural role. 6063-T6 (190 MPa) is the minimum architectural structural alloy." />
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard title="Anodizing as a Standalone Corrosion Barrier" body="A design relies on Type I anodizing (5 µm film) for a coastal residential building. Type I provides only minimal protection; Type II (10–25 µm) is the minimum standard for architectural exposure, and Type III (25–75 µm) is required for harsh marine environments. The building faces premature corrosion failure." />
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
+<WikiMistakeList items={["Assuming all non-ferrous metals are 'corrosion-proof'—copper oxidizes (patina), zinc can corrode, and unprotected aluminum is vulnerable in wet/coastal conditions.", "Omitting isolation methods when dissimilar metals contact—a stainless steel bolt connecting an aluminum extrusion to a copper component risks galvanic corrosion without EPDM or nylon separation.", "Specifying 6063-T5 for load-bearing members when T6 strength is required, or over-specifying T6 when T5 cost savings are acceptable for non-structural trim.", "Failing to account for Philippine coastal or high-humidity environments when selecting anodizing type—tropical climates demand more aggressive surface protection than temperate regions."]} />
 
 ## Related Articles
 

@@ -5,7 +5,6 @@ Apply climate resilience and disaster-responsive planning principles to CLUPs an
 
 Climate resilience and disaster-responsive planning integrate hazard awareness into land use decisions, requiring planners to incorporate risk mapping, setback standards, and resilience frameworks into comprehensive land use plans. The Philippine context—exposure to typhoons, earthquakes, and flooding—makes this both a planning priority and a legal mandate.
 
-
 ## Core Concept
 
 Climate resilience in planning refers to the ability of settlements and urban systems to withstand and recover from natural hazards and climate-related disturbances. Disaster-responsive planning goes beyond reactive recovery; it incorporates risk reduction into land use planning, infrastructure design, and community preparedness from the outset.
@@ -19,6 +18,7 @@ Climate-resilient planning typically addresses:
 3. **Land use restrictions** — prohibiting residential or critical infrastructure in high-risk zones
 4. **Building typology and resilience** — designing structures to withstand anticipated hazards
 5. **Community resilience capacity** — ensuring access to evacuation routes, safe zones, early warning systemPost-Typhoon Yolanda (Haiyan, 2013), some LGUs adopted 40-meter coastal buffers as local policy; national standards follow PD 1067 waterway easements.as, reflecting lessons from storm surge inundation. Active fault proximity is assessed per NSCP 2015 seismic design provisions and local ordinances; PHIVOLCS provides fault mapping for site-specific risk evaluation.e.
+<ArticleMedia id="media-lea-plan-008-01-core-concept" a type="image" caption="Climate Resilience Planning — Hazard Mapping for CLUPs" description="Composite hazard map for CLUP integration: flood hazard zones (100-year floodplain), typhoon wind speed zones, earthquake fault buffers, landslide susceptibility zones, and sea-level rise projections. RA 10121 DRRM framework mainstreaming with adaptation measures." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
@@ -37,7 +37,6 @@ The Philippines ranks among the world's most disaster-prone countries, facing an
 3. **Coastal hazard zone application** — "A municipality is planning a new fishing settlement 25 meters from mean high tide. Does this comply with post-Yolanda zoning standards?" → Answer: No, the standard requires 40 meters. This tests application of the numeric standard to planning scenarios.
 
 <Tip>Memory aid: **PHIVOLCS = 5 meters** (both words start with one significant value: PHIVOLCS fault setback). **Post-Yolanda = 40 meters** (easy to recall as a protective buffer roughly the length of 10 houses or 1.5 city blocks).</Tip>
-
 
 **Exam Tip:** Climate adaptation = adjusting to actual/expected climate effects. Mitigation = reducing greenhouse gas emissions. Resilience = ability to withstand and recover. Know which strategies are adaptation vs. mitigation — the LEA tests this distinction.
 

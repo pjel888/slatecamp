@@ -5,7 +5,6 @@ Distinguish housing production methods — sites-and-services, core housing, med
 
 Housing production methods in the Philippines range from government-built sites-and-services schemes to private core housing and self-help approaches. Understanding how **sites-and-services**, **core housing**, **medium-rise development**, and **self-help** models work—and which agency (primarily **NHA**) implements them—is essential for housing delivery questions.
 
-
 ## Core Concept
 
 Housing production methods describe HOW housing is delivered to beneficiaries, as distinct from WHO finances it. The Philippines employs five primary delivery models:
@@ -21,6 +20,7 @@ Housing production methods describe HOW housing is delivered to beneficiaries, a
 **Market Subdivision Delivery** involves private developers creating residential subdivisions for slea to individual buyers (open market). These projects are regulated under **PD 957** and must meet the balanced housing requirement under **RA 10884** (15–20% of project cost dedicated to socialized housing). Market subdivisions are not direct government production but are shaped by regulation.
 
 These methods are not mutually exclusive; integrated housing projects often combine elements—a government project may provide core housing with sites-and-services land for expansion, supported by CMP financing.
+<ArticleMedia id="media-lea-plan-003-04-core-concept" a type="image" caption="Housing Production Methods — Sites-and-Services, Core Housing, MRBs" description="Comparison diagram of housing production methods: sites-and-services (land + infrastructure, self-built), core housing (expandable core unit), medium-rise buildings (4-5 storey walk-ups), and self-help (sweat equity). Implementing agency (NHA) and delivery model per method." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
@@ -41,7 +41,6 @@ The Philippines' housing shortage (estimated at 5+ million units as of 2020s) ha
 **Pattern 3 — Trade-off Analysis:** "Sites-and-services maximizes affordability by shifting construction cost to families. What is the primary disadvantage?" → Extended timeline; occupancy delays; governance risks if materials unavailable. "Medium-rise maximizes density and immediate occupancy. What is the primary constraint?" → Higher upfront government capital; smaller unit sizes.
 
 <Tip>NHA produces housing (sites-and-services, core, medium-rise). RA 10884 requires developers to dedicate 15–20% of project cost to balanced housing. Self-help succeeds when community organization is strong (Turner principle: Housing by People).</Tip>
-
 
 **Exam Tip:** Sites-and-services = serviced lot + core house (NHA). Core housing = expandable starter unit (NHA). Medium-rise = walk-up 4-5 story (NHA). Self-help = sweat equity (community). Match method to description.
 

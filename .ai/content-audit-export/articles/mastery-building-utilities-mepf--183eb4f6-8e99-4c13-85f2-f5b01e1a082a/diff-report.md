@@ -1,33 +1,32 @@
 # Content Diff Report: mastery-building-utilities-mepf
 
-Generated: 2026-05-04T00:06:26.255Z
+Generated: 2026-05-04T02:17:01.525Z
 Article ID: 183eb4f6-8e99-4c13-85f2-f5b01e1a082a
-Changed: true
-Safe to push locally: false
+Changed: false
+Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:95f4921248abe68b982b6d237b2e18b131583278412591ea4d2ecbd8f8f59756`
+- Original: `sha256:34b7252caa1a41ff6932f7e3a458b597468936b172602ee84f4a09523430750c`
 - Normalized: `sha256:fd4605029d3a980bd429fad5b7aae12c337793e305c9037bdf2b8425a955b04b`
-- Candidate: `sha256:fd4605029d3a980bd429fad5b7aae12c337793e305c9037bdf2b8425a955b04b`
+- Candidate: `sha256:34b7252caa1a41ff6932f7e3a458b597468936b172602ee84f4a09523430750c`
 
 ## Line summary
 
-- Changed lines: 88
-- Inserted lines: 10
+- Changed lines: 0
+- Inserted lines: 0
 - Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 5
-- UI blocks preserved: 0
-- UI blocks changed/missing: 5
-- Unresolved placeholders: 1
+- UI blocks preserved: 5
+- UI blocks changed/missing: 0
+- Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate contains unresolved UI block placeholders.
-- Candidate is missing 5 preserved UI block(s).
+- None
 
 ## Warnings
 

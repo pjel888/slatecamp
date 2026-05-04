@@ -1,26 +1,21 @@
 {
-  "attempted_at": "2026-05-04T00:07:10.176Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:18:01.417Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "candidate.md matches original.md; refusing no-op apply."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "875396fa-1704-47b7-abb5-29f49c75fc78",
   "slug": "spp-doc-205-post-construction-services",
   "preparation_actions": [
     "auto_generated_diff"
   ],
-  "remote_hash_before": "sha256:5a39acded478e1c60a7812df094d4e316118c3e64974e33e8341d26875c1c91a",
-  "original_hash": "sha256:5a39acded478e1c60a7812df094d4e316118c3e64974e33e8341d26875c1c91a",
-  "candidate_hash": "sha256:96fe58bd24e849e24ac6e63ed35466b8038c4b640f7c7c0fcd4e6983b70f7906",
+  "remote_hash_before": "sha256:4c36bba0243d0fbe3de9322871c1cba6515505ee54cde25a3cb421af137b6865",
+  "original_hash": "sha256:4c36bba0243d0fbe3de9322871c1cba6515505ee54cde25a3cb421af137b6865",
+  "candidate_hash": "sha256:4c36bba0243d0fbe3de9322871c1cba6515505ee54cde25a3cb421af137b6865",
   "stale_check_passed": true,
-  "remote_updated_at_before": "2026-05-03T13:52:35.771179+00:00"
+  "remote_updated_at_before": "2026-05-04T02:02:08.392656+00:00"
 }

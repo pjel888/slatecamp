@@ -5,7 +5,6 @@ Apply urban design principles — height-to-width ratios, streetscape quality, c
 
 Urban design applies measurable principles—height-to-width ratios, streetscape quality, complete streets, and human-centered design—to create walkable, livable environments. Three names anchor this subject: Jane Jacobs (urban vitality), Jan Gehl (human scale), Gordon Cullen (visual experience).
 
-
 ## Core Concept
 
 Urban design differs from planning: planning allocates land uses across space (zoning); urban design shapes the quality and experience of streets, public spaces, and building faces. Urban design is measured and tactical—specific ratios, material choices, sight lines, program mix. Three foundational concepts structure the field.
@@ -19,6 +18,7 @@ Urban design differs from planning: planning allocates land uses across space (z
 **Complete Streets** is a modern implementation of these principles: streets designed for pedestrians, cyclists, transit users, and cars (in that priority order). Complete streets include sidewalks, cycle tracks, tree canopy, and street parking buffers. They prioritize ground-floor mixed use (retail, offices, housing) and human-scale building facades. The philosophy: streets are public spaces first, traffic corridors second.
 
 Urban design is not arbitrary. Every principle is grounded in human behavior and perception: people move more if streets are shaded and bounded; they stay longer if seating and food exist; they feel safer if uses are mixed and streets active.
+<ArticleMedia id="media-lea-plan-002-06-core-concept" a type="image" caption="Urban Design Principles — Height-to-Width Ratio and Streetscape Quality" description="Street section diagram showing height-to-width ratio (H:W = 1:1 comfortable canyon, 1:2 open, 2:1 deep canyon), complete street components (pedestrian zone, bike lane, vehicle lanes, sidewalk cafes), and human scale design elements per Jacobs, Gehl, and Cullen." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
@@ -37,7 +37,6 @@ Manila's EDSA exemplifies poor urban design despite being a major path: wide, di
 - "In Gordon Cullen's townscape, what is 'serial vision'?" → How the city reveals itself sequentially as you move through it.
 
 <Tip>H:W comfortable = 1:2 (not 2:1). "Eyes on the street" = Jane Jacobs (not Lynch). Complete streets = pedestrian first, car last. These three attributions are the highest-frequency urban design errors.</Tip>
-
 
 **Exam Tip:** Know who said what: Jane Jacobs = "eyes on the street" (mixed use, safety). Jan Gehl = human scale (3-5m facade detail, ground floor activity). Gordon Cullen = serial vision (visual experience of moving through city).
 

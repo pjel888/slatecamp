@@ -21,7 +21,7 @@ Understanding all six methods and knowing which SPP document calls for which met
 
 **Method 2 — Multiple of Direct Personnel Expense (MDPE)** calculates the fee using the formula:
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
+<Callout>Fee = ((manhour × rate) × multiplier) + reimbursable expenses</Callout>
 
 The multiplier ranges from **1.5 to 2.5**, depending on office set-up costs, overhead, the architect's experience, and the complexity of the project. MDPE is the primary method for **Pre-Design Services under SPP 201**, **Group 10 (Technical Expertise)** projects, and services where scope cannot be precisely defined in advance. It is also used for **Comprehensive Design and Planning** under SPP 203.
 
@@ -37,9 +37,9 @@ The multiplier ranges from **1.5 to 2.5**, depending on office set-up costs, ove
 
 Each SPP document specifies its recommended compensation method based on the nature of the service:
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiExamTable" status="preserved"]
+<WikiExamTable headers={["SPP Document", "Service", "Primary Compensation Method"]} rows={[["SPP 201", "Pre-Design Services", "MDPE"], ["SPP 202", "Regular Design Services", "% of PCC"], ["SPP 203", "Specialized Allied Services", "MDPE or % of PCC (varies by service)"], ["SPP 204-A", "Full-Time Supervision", "% of PCC or Lump Sum"], ["SPP 204-B", "Construction Management", "1.5–3% of PCC"], ["SPP 205", "Post-Construction Services", "4–6% of gross rentals or monthly salary"], ["SPP 206", "Comprehensive Services", "2–5% of PCC"], ["SPP 207 (Admin)", "Design-Build by Administration", "7% of PCC"], ["SPP 207 (GMC)", "Design-Build by Guaranteed Maximum Cost", "10% of PCC"]]} />
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
+<Note>SPP 203 (Specialized Allied Services) uses different methods depending on the specific service: Architectural Interiors uses percentage of work cost, Acoustic Design Services depends on work complexity, Site Development Planning uses estimated civil work cost, and Comprehensive Design and Planning uses MDPE.</Note>
 
 ### Methods of Selection
 
@@ -70,11 +70,11 @@ In Philippine private practice, the percentage-of-PCC method dominates for build
 
 The LEA tests compensation methods in three patterns. First, the exam presents a service type and asks which compensation method applies — the student must match the method to the correct SPP document. Second, the exam provides manhours, hourly rates, and a multiplier, then asks the student to compute the MDPE fee using the formula. Third, the exam describes a multi-service engagement and asks the student to identify which combination of methods would apply under the mixed methods approach.
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
+<Tip>Remember the MDPE formula as **"MRM + R"**: Manhours × Rate × Multiplier, plus Reimbursables. The multiplier (1.5–2.5) covers overhead and profit — it is NOT a separate line item.</Tip>
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="WikiMistakeList" status="preserved"]
+<WikiMistakeList mistakes={["Citing 'SPP 210' or 'SPP Document 210' as the source of compensation methods — no such document exists; compensation methods are distributed across individual SPP documents and the Architect's Guidelines", "Confusing the MDPE multiplier (1.5–2.5) with the fee percentage — the multiplier applies to personnel cost, not to PCC", "Assuming all architectural services use percentage-of-PCC — pre-design services (SPP 201) and technical expertise (Group 10) use MDPE, not percentage of PCC", "Forgetting that lump sum/fixed fee is the standard method for government projects, not percentage-of-PCC"]} />
 
 ---
 

@@ -1,26 +1,21 @@
 {
-  "attempted_at": "2026-05-04T00:07:11.733Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:18:03.374Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "candidate.md matches original.md; refusing no-op apply."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "a66d3236-ce09-4723-acc7-9b017647f249",
   "slug": "lea-theo-005-05-core-concept",
   "preparation_actions": [
     "auto_generated_diff"
   ],
-  "remote_hash_before": "sha256:06621f88993455e627bdf802eb1189151e120ea17b169ae3830c3f6310277fbd",
-  "original_hash": "sha256:06621f88993455e627bdf802eb1189151e120ea17b169ae3830c3f6310277fbd",
-  "candidate_hash": "sha256:c5c59c7da9919c1ac38904566c19d56c4c34f108af2b5e286da5009b54a154fe",
+  "remote_hash_before": "sha256:67a8941a6f0875b2becbfbf46663185198a51ad908a2faae7b7977da3672d38d",
+  "original_hash": "sha256:67a8941a6f0875b2becbfbf46663185198a51ad908a2faae7b7977da3672d38d",
+  "candidate_hash": "sha256:67a8941a6f0875b2becbfbf46663185198a51ad908a2faae7b7977da3672d38d",
   "stale_check_passed": true,
-  "remote_updated_at_before": "2026-05-03T13:52:38.754608+00:00"
+  "remote_updated_at_before": "2026-05-04T02:02:11.508342+00:00"
 }

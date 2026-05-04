@@ -1,21 +1,19 @@
 {
-  "attempted_at": "2026-05-03T13:07:38.069Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:07:24.605Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
     "Remote Supabase content differs from export baseline; refusing stale push."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "4f0754d8-6bd7-459b-8359-8f65857914b2",
   "slug": "interior-doors-and-hardware",
   "preparation_actions": [],
-  "remote_hash_before": "sha256:f0d919c1bcff1f3b9b59b3b6f64f4e01d18ca812c02c278ead7f80865274e6bb",
-  "original_hash": "sha256:e519500d7bad450d37effbb2210e5c55a7d001e4c9f2a07fe36a70e158d5e842",
-  "candidate_hash": "sha256:92fc878b1ec01feedaabec429e60eefd25de3655123e1216fd2035d637939382",
+  "remote_hash_before": "sha256:1f46021660bb9f04348f81bcee4a7be878d7af95bb73ca4baf0558c11252f190",
+  "original_hash": "sha256:f4fc7ab7f90a874039710eff9dd66caefd1045c272e58643699ff6256117cf27",
+  "candidate_hash": "sha256:1f46021660bb9f04348f81bcee4a7be878d7af95bb73ca4baf0558c11252f190",
   "stale_check_passed": false,
-  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+  "remote_updated_at_before": "2026-05-04T02:02:29.367672+00:00"
 }

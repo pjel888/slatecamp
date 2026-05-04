@@ -130,7 +130,6 @@ The CSG maintains an organized filing system of all project documentation, inclu
 
 </ComparisonTable>
 
-
 ***
 
 ## Manner of Providing Services
@@ -193,7 +192,6 @@ The architect must disclose to the client, **at the start of the commission**, t
 
 </Callout>
 
-
 ### 4.3 Professional Fee Plus Expenses
 
 Used where there is a **continuing relationship** involving a series of projects. A fixed sum is established above and beyond reimbursement for the architect's technical time and overhead. An agreement on the general scope of work is required to set an equitable fee.
@@ -227,7 +225,6 @@ More than one method may be applied to a single project. For example, the princi
 
 </ComparisonTable>
 
-
 ***
 
 ## Limitation of Authority
@@ -260,7 +257,6 @@ Under SPP 204-A, the legal chain of responsibility is distributed as follows:
 
 </ComparisonTable>
 
-
 ### Cross-Claims and Civil Liability
 
 If the **Aor and Eors are sued by an Owner** for civil liabilities traceable to the CSG's performance or non-performance, the Aor and Eors may **file cross-claims against the CSG**. This is a significant legal protection for the design architect: the law allows the Aor to seek indemnification from the CSG for liabilities that properly belong to the CSG's supervision failures, rather than to design deficiencies.
@@ -283,7 +279,6 @@ Inspectors of the Construction Supervision Group (CSG) must possess:
 
 </Callout>
 
-
 ***
 
 ## SPP 202 Periodic Inspection vs. SPP 204-A Fulltime Supervision
@@ -305,7 +300,6 @@ A frequently misunderstood distinction is the difference between the architect's
 
 </ComparisonTable>
 
-
 ***
 
 ## Relationship to Other SPP Documents
@@ -320,7 +314,6 @@ A frequently misunderstood distinction is the difference between the architect's
 | **SPP Doc. 207** (Design-Build) | Under Design-Build by Administration, the architect assumes both design and construction administration responsibilities — effectively combining SPP 202, 204-A, and contractor roles |
 
 </ComparisonTable>
-
 
 ***
 
@@ -339,15 +332,23 @@ A frequently misunderstood distinction is the difference between the architect's
 
 ---
 
-
-
 ---
 
 ## Exam Tip
 
 LEA Swipe: Full-time supervision (204-A) vs Construction Administration (SPP 202 Phase 5): FTS = DAILY on-site inspection, CA = periodic observation. Five FTS duties: (1) Daily quality control, (2) Verify conformance to plans, (3) Interpret contract documents, (4) Prepare change orders, (5) Maintain daily log. Compensation = monthly salary or percentage of salary.
 
+
+
+---
+
+## Exam Tip
+
+ALE Swipe: Full-time supervision (204-A) vs Construction Administration (SPP 202 Phase 5): FTS = DAILY on-site inspection, CA = periodic observation. Five FTS duties: (1) Daily quality control, (2) Verify conformance to plans, (3) Interpret contract documents, (4) Prepare change orders, (5) Maintain daily log. Compensation = monthly salary or percentage of salary.
+
 ## Cross‑References
 
 **Spp Doc 204 B Construction Management Services**, **Spp Doc 202 Regular Design Services**, **Spp Doc 205 Post Construction Services**, **Spp Doc 206 Comprehensive Architectural Services**
 
+
+<!-- no-media-needed: SPP document reference, service scope text is optimal -->

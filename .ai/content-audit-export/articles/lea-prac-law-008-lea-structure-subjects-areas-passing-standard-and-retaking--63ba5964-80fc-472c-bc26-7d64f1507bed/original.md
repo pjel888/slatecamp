@@ -44,6 +44,9 @@ CRITICAL: The 50% floor applies INDIVIDUALLY to each subject area, not as an ave
 
 ---
 
+
+
+<ArticleMedia type="image" caption="LEA Structure — Subject Areas, Weights, and Passing Standards" description="Pie/donut chart showing LEA subject area weight distribution: Professional Practice (~25%), Structural Design (~20%), Building Utilities (~15%), Architectural Design & Site Planning (~15%), History & Theory (~15%), Building Materials (~10%). Passing standard: 70% overall, no subject below 50%. Retake policy and exam schedule information in side panel." />
 ## Related Articles
 
 - [RA 9266: Structure and Key Definitions](lea-prac-law-001)

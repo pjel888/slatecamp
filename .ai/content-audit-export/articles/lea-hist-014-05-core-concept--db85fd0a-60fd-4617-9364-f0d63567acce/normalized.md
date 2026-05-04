@@ -74,6 +74,8 @@ Contemporary architecture (1990s–present) synthesizes lessons: modernist ratio
 
 **Contextual Architecture** — Contemporary approach integrating buildings with local geography, climate, culture, and existing structures; rejects modernism's universal principles while accepting environmental responsibility.
 
+<ArticleMedia id="media-hist-014-05-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparison of International Style characteristics in American corporate towers: Lake Shore Drive Apartments (Mies, steel and glass), Seagram Building (Mies, bronze curtain wall), and Lever House (Skidmore Owings Merrill, green glass curtain wall)." caption="International Style in America — Corporate Towers" suggestedAsset="Style comparison illustration" placementIntent="Style comparison for architectural period" />
+
 ## Related Articles
 
 See also within United States Architecture: **lea-hist-014-01-core-concept**, **lea-hist-014-02-core-concept**, **lea-hist-014-03-core-concept**, **lea-hist-014-04-core-concept**.

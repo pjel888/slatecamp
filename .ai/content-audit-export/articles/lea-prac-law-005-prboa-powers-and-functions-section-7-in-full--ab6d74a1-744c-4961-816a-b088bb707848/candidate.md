@@ -11,14 +11,16 @@ After studying this article, you should be able to:
 - Explain the Board's role in licensure, discipline, CPD, and standard-setting.
 - Apply §7 powers to exam scenarios involving board jurisdiction.
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="LawCallout" status="preserved"]
+<LawCallout code="ra9266" section="Section 7 - Specific Powers">
+Legal Basis: RA 9266 (Architecture Act of 2004), Section 7 (Powers and Functions of the Professional Regulatory Board of Architecture); RA 9266 IRR, Section 7.
+</LawCallout>
 Extracted summary:
 - Props: code=ra9266, title=RA 9266, Section 7 — PRBoA Powers and Functions
 - Text: Legal Basis: RA 9266 (Architecture Act of 2004), Section 7 (Powers and Functions of the Professional Regulatory Board of Architecture); RA 9266 IRR, Section 7.
 
 Section 7 of RA 9266 enumerates the specific powers, functions, and responsibilities of the Professional Regulatory Board of Architecture. The statute lists fourteen (14) distinct powers, from (a) through (n), creating a comprehensive grant of regulatory authority. These are not permissive ("may") but mandatory ("shall exercise"), imposing upon the Board an affirmative duty to perform these functions.
 
-<ArticleMedia id="media-law005-powers-categories" layout="single" variant="contained" type="image" status="placeholder" aspectRatio="16:9" title="PRBoA 14 Powers Categorized" description="Diagram organizing the 14 powers of the PRBoA under Section 7 into four functional categories: Rulemaking (a, e, g, i), Licensing (b, d, k, m, n), Adjudication (c, h), and Oversight (f, j, l). Shows which powers require PRC approval." placementIntent="organizational-structure" suggestedSearchQuery="PRBoA 14 powers Section 7 categories rulemaking licensing adjudication oversight" replacementNotes="Create a quadrant or cluster diagram. Four boxes: (1) Rulemaking: IRR adoption [a], official seal [e], ethical code [g], CPD guidelines [i]; (2) Licensing: supervise registration [b], issue/suspend/revoke [d], special permits [k], computerize exams [m], additional duties [n]; (3) Adjudication: administer oaths [c], hear administrative cases [h]; (4) Oversight: monitor conditions [f], prepare exams [j], curriculum compliance [l]. Mark which need PRC pre-approval." suggestedAsset="Diagram or reference image" />
+<ArticleMedia id="media-law005-powers-categories" layout="single" variant="contained" type="image" status="placeholder" aspectRatio="16:9" title="PRBoA 14 Powers Categorized" alt="Diagram organizing the 14 powers of the PRBoA under Section 7 into four functional categories: Rulemaking (a, e, g, i), Licensing (b, d, k, m, n), Adjudication (c, h), and Oversight (f, j, l). Shows which powers require PRC approval." placementIntent="organizational-structure" suggestedSearchQuery="PRBoA 14 powers Section 7 categories rulemaking licensing adjudication oversight" replacementNotes="Create a quadrant or cluster diagram. Four boxes: (1) Rulemaking: IRR adoption [a], official seal [e], ethical code [g], CPD guidelines [i]; (2) Licensing: supervise registration [b], issue/suspend/revoke [d], special permits [k], computerize exams [m], additional duties [n]; (3) Adjudication: administer oaths [c], hear administrative cases [h]; (4) Oversight: monitor conditions [f], prepare exams [j], curriculum compliance [l]. Mark which need PRC pre-approval." suggestedAsset="Diagram or reference image" />
 
 The Board's authority rests on the understanding that professional regulation is a public function; the PRBoA acts on behalf of the state to protect the public, not on behalf of the profession to advance member interests. This distinction is foundational: regulatory power derives from state sovereignty and must be exercised for public benefit.
 
@@ -137,7 +139,7 @@ However, "the Board's decisions, resolutions or orders rendered in administrativ
 
 This dual structure prevents the Board from becoming a runaway agency while preserving Board autonomy in adjudicatory matters where members' expertise and judgment are most valuable.
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="Warn" status="preserved"]
+<Warn>The distinction between Commission review of **rules** (must pre-approve) vs. **disciplinary decisions** (appeal only) is one of the most frequently tested concepts. For rules: Commission pre-approval is required. For disciplinary decisions: Board decides independently; Commission only reviews if appealed. Know this asymmetry cold.</Warn>
 Extracted summary:
 - Props: (none)
 - Text: ⚠️ The distinction between Commission review of **rules** (must pre-approve) vs. **disciplinary decisions** (appeal only) is one of the most frequently tested concepts. For rules: Commission pre-approval... — expect this as a trap answer on the LEA.
@@ -150,7 +152,7 @@ Additionally, the Board's authority is ministerial where the statute is specific
 
 ### The Board's Role as Public Trustee
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="Tip" status="preserved"]
+<Tip>The 14 powers of the PRBoA can be grouped into four categories: (1) **Rulemaking** — IRR, ethical code, CPD guidelines; (2) **Licensing** — registration, examination, special permits; (3) **Adjudicatory** — hearing cases, issuing subpoenas, imposing discipline; and (4) **Supervisory** — monitoring practice conditions, ensuring education quality, computerizing exams. Exam questions often test which power falls into which category.</Tip>
 Extracted summary:
 - Props: (none)
 - Text: The 14 powers of the PRBoA can be grouped into four categories: (1) **Rulemaking** — IRR, ethical code, CPD guidelines; (2) **Licensing** — registration, examination, special permits; (3) **Adjudicato...

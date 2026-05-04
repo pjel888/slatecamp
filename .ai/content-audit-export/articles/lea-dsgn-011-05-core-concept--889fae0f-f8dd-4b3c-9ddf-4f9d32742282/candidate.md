@@ -38,7 +38,7 @@ Architectural drawings communicate through two primary means: **dimensions and a
 - **Leader lines**: Thin lines with arrows or dots pointing to a feature, with text annotation (e.g., "FFL +0.00 m").
 - **Title blocks**: Located at the bottom right of each sheet, showing project name, scale, and date.
 - **Legends and schedules**: Lists defining abbreviations, symbols, materials, and specifications.
-<ArticleMedia id="media-lea-dsgn-011-05-core-concept" a type="image" caption="Architectural Symbols — Material, Fixture, and Notation Standards" description="Reference chart of standard architectural symbols: material symbols (brick, concrete, wood in plan/section/elevation), door/window types, plumbing fixtures, electrical outlets, and notation system for room names, dimensions, and finish schedules." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-011-05-core-concept" type="image" caption="Architectural Symbols — Material, Fixture, and Notation Standards" alt="Reference chart of standard architectural symbols: material symbols (brick, concrete, wood in plan/section/elevation), door/window types, plumbing fixtures, electrical outlets, and notation system for room names, dimensions, and finish schedules." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
@@ -81,10 +81,14 @@ The exam may ask for the minimum interior dimensions of an elevator cab or the t
 
 - **Answer:** Required at **4 storeys and above**; minimum inside cab is **1.10 m x 1.40 m** (Rule XVIII Sec 1801).
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+<Tip>
+  **Memory aid:** "Door-Direction-Arc Rule" — The arc always shows the path of
+  the door. If a door swings into a required egress corridor and reduces the
+  width, it is a code violation!
+</Tip>
 
 **Exam Tip:** Material symbols: diagonal lines = concrete/brick/masonry (spacing indicates material), random squiggles = earth/gravel, dots = sand/cement. Section marks show cut location + view direction.
-<ArticleMedia id="media-lea-dsgn-011-05-core-concept" a type="image" caption="Architectural Symbol Library — Plan, Elevation, and Section Graphics" description="Reference chart of standard architectural symbols organized by category: doors and windows (plan, elevation, schedule), materials (section hatch patterns), plumbing fixtures (plan symbols), electrical (plan symbols), and structural (column grid system). Consistent notation conventions per PD 1096." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-011-05-core-concept" type="image" caption="Architectural Symbol Library — Plan, Elevation, and Section Graphics" alt="Reference chart of standard architectural symbols organized by category: doors and windows (plan, elevation, schedule), materials (section hatch patterns), plumbing fixtures (plan symbols), electrical (plan symbols), and structural (column grid system). Consistent notation conventions per PD 1096." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Cross-References
 
@@ -92,4 +96,14 @@ See **LEA-DSGN-011-01** (Floor Plans) for plan symbols, **LEA-DSGN-011-02** (Ele
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeList" status="preserved"]
+<WikiMistakeList
+  mistakes={[
+    'Drawing door swings incorrectly; arcs must start at the hinge and represent the actual path of the leaf.',
+    'Failing to distinguish between drawn wall thickness and clear interior cab dimensions for elevators.',
+    'Inconsistent material hatching (e.g., using masonry hatching for a concrete section).',
+    "Using 'Rule XIV' or 'Rule XI' for elevator requirements (Correct: Rule XVIII Section 1801).",
+    "Forgetting the 'UP' arrow on stairs; without it, the direction of travel is ambiguous for the builder.",
+    'Missing fire-rating notations on critical compartmentation walls.',
+    "Misinterpreting the 4-storey rule as requiring 'multiple' elevators (Code requires at least one).",
+  ]}
+/>

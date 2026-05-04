@@ -5,7 +5,6 @@ Analyze Philippine urban challenges (primate city, informal settlements, weak LG
 
 Philippine urban planning applies international concepts (urban models, design principles, new urbanism) to the specific context of rapid urbanization, informal settlements, informal transport, and limited municipal capacity. Felino Palafox Jr. is the leading contemporary Philippine planner.
 
-
 ## Core Concept
 
 Philippine cities face overlapping challenges: population concentration in Metro Manila (primate city), uncontrolled sprawl, inadequate water and sewage systems, informal transport (jeepneys, tricycles), informal settlements (millions of squatters), and weak LGU planning capacity. Planning theory and tools—the Concentric Zone Model, Lynch's elements, New Urbanism, CLUP, zoning—must be adapted to this reality.
@@ -19,6 +18,7 @@ The **Concentric Zone Model (Burgess, 1925)** describes Chicago's outward expans
 **Felino Palafox Jr.** is the nation's leading urban planner and architect. Palafox has masterplanned major developments (BGC, regional growth centers in Laguna, Pampanga, Cavite) and has worked extensively with DHSUD and LGUs on CLUPs. His work bridges international planning theory with Philippine real-world constraints.
 
 Philippine planning must address: **CLUP mandates** (every LGU must have one, RA 7160), **housing integration** (RA 7279 balanced housing, in-situ upgrading), **environmental constraints** (PD 1067 water body easements, PD 1586 ECC requirements), and **stakeholder capacity**. Many provincial LGUs lack professional planners; reliance on consultants means plans are sometimes poorly implemented. Strong PLGUs (Quezon City, Makati, Cebu City) have better planning continuity; weak municipalities struggle with CLUP updates and zoning enforcement.
+<ArticleMedia id="media-lea-plan-002-07-core-concept" a type="image" caption="Philippine Urban Challenges — Primate City and Informal Settlements Diagram" description="Diagram illustrating Philippine urban planning challenges: Metro Manila primate city dominance (population/size imbalance), informal settlement patterns (along waterways, danger zones), weak LGU capacity, and jeepney/UV transport system. Palafox Jr. contributions to tropical urbanism." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
@@ -36,7 +36,6 @@ Every CLUP-related decision in the Philippines involves balancing growth (develo
 - "What is the 400–800m catchment area in Philippine TOD?" → TOD walkable radius around transit stations. Applied to MRT/LRT station areas in Metro Manila.
 
 <Tip>Philippine planning = applying international theory to local reality (informal settlements, weak capacity, rapid sprawl, diverse stakeholders). Felino Palafox Jr. = leading contemporary planner. In-situ upgrading = keep communities in place. CLUP = law-mandated; zoning ordinance = implementation tool; DHSUD = reviews for conformity.</Tip>
-
 
 **Exam Tip:** Philippine urbanization statistics to know: Manila ≈10× larger than Cebu (primate city). ~2-3 million informal settlers in Metro Manila. Cities growing 3-4% annually. 80+ municipalities and 145+ cities required to have CLUPs.
 

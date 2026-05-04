@@ -58,6 +58,8 @@ Southeast Asian architecture reflects Indian, Chinese, and indigenous traditions
 
 [SLATECAMP_UI_BLOCK:ui_0010 component="Warn" status="preserved"]
 
+<ArticleMedia id="media-hist-007-04-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparative site plans and elevations of three major Southeast Asian monuments: Angkor Wat (Khmer, Hindu, sandstone), Borobudur (Sailendra, Buddhist, volcanic stone mandala), and Shwedagon Pagoda (Mon/Burmese, Buddhist, gold stupa), highlighting period, religion, and materials." caption="Southeast Asian Monuments — Angkor Wat, Borobudur, Shwedagon" suggestedAsset="Style comparison illustration" placementIntent="Style comparison for architectural period" />
+
 ## Related Articles
 
 See also within Asian & Pacific Architecture: **lea-hist-007-01-core-concept**, **lea-hist-007-02-core-concept**, **lea-hist-007-03-core-concept**, **lea-hist-007-05-core-concept**.

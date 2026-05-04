@@ -1,6 +1,19 @@
 import type { Icon as PhosphorIcon } from '@phosphor-icons/react/lib'
 
 // ---------------------------------------------------------------------------
+// Navigation Pending State (for navigation feedback system)
+// ---------------------------------------------------------------------------
+
+export interface NavigationPendingInfo {
+  isNavigating: boolean
+  pendingHref: string | null
+  pendingId: string | null
+  isPendingHref: (href: string) => boolean
+  startNavigation: (href: string, options?: { id?: string; label?: string }) => void
+  finishNavigation: () => void
+}
+
+// ---------------------------------------------------------------------------
 // Z-Index Scale (matching locked HTML v4)
 // sidebar < backdrop was wrong; HTML v4: backdrop=30, sidebar=40
 // ---------------------------------------------------------------------------

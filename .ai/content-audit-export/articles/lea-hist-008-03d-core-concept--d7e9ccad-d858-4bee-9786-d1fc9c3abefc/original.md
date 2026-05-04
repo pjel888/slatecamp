@@ -6,6 +6,10 @@ Identify Alvar Aalto's humanistic modernism — organic curves, natural material
 ## Core Concept
 **Alvar Aalto** (1898–1976) was Finland's most important architect and a crucial figure in 20th-century modernism. Yet his approach differs fundamentally from Le Corbusier and Mies. Where they pursued geometric abstraction and reduction, Aalto pursued human scale, organic curves, and material warmth.
 
+
+<ArticleMedia id="media-hist-008-03d-core-concept" layout="single" type="image" status="placeholder" alt="Exterior of Paimio Sanatorium (Paimio, Finland, 1929–1933, Alvar Aalto), showing the reinforced concrete frame with warm brick infill, the long ward wing oriented for sun and views, and the human-centered design approach." caption="Paimio Sanatorium — Alvar Aalto's Humanist Modernism" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
+
 <Tip>Aalto = humanistic modernism with organic curves, natural materials, and human comfort. His bent plywood chair (1932) is his signature: industrial production creates organic form. Key phrase: modernism that is warm, not cold; regional, not universal.</Tip>
 
 Aalto's philosophy is sometimes called "**humanistic modernism**" or "**organic modernism**." He believed that modernism's functional logic should serve human comfort, not impose geometric perfection on human experience. He also believed that natural forms—trees, rocks, water—held aesthetic and structural lessons that architects should learn from. His buildings are modern in their clarity and efficiency but warm in their materials, curves, and spatial generosity.
@@ -25,6 +29,10 @@ Aalto's approach influenced Scandinavian design broadly—Danish furniture, Swed
 Aalto also pioneered the concept of the **designer's total output**. Like the Bauhaus, he designed buildings, furniture, glassware, and textiles. All expressed the same philosophy: functional form, natural materials, human scale. Design was unified across scales and disciplines.
 
 <Warn>Critical distinctions: Aalto's organic curves are NOT Art Nouveau decoration—they're structural and functional, inspired by nature but serving human comfort and engineering logic. Also: bent plywood is NOT traditional craft—it's industrial technology (steam and molds) creating organic form. Aalto reconciles industry and craft, not retreats from modernism into nostalgia.</Warn>
+
+
+<ArticleMedia id="media-hist-008-03d-core-concept" layout="single" type="image" status="placeholder" alt="View of Villa Mairea (Noormarkku, Finland, 1937–1939, Alvar Aalto), showing the L-shaped plan, the blend of modern materials with natural elements (stone, timber, brick), and the forest-inspired column design." caption="Villa Mairea — Organic Modernist Villa" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
 
 ## Key Facts and Testable Items
 
@@ -67,6 +75,8 @@ Aalto also pioneered the concept of the **designer's total output**. Like the Ba
 **Fluid Planning**: Interior organization using curves, level changes, and flowing spaces rather than rigid orthogonal grids; creates spatial interest while maintaining functional clarity.
 
 **Total Design**: Commitment to unified design philosophy across all scales and disciplines—buildings, furniture, textiles, ceramics—ensuring consistent aesthetic and functional principles throughout all output.
+
+<ArticleMedia id="media-hist-008-03d-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparison of Alvar Aalto's humanist modernism across Paimio Sanatorium (functionalist, 1933), Villa Mairea (organic curves, natural materials, 1939), and Finlandia Hall (brick and timber, 1971).\" caption=\"Alvar Aalto — Humanist Modernist Works\" suggestedAsset=\"Style comparison illustration\" placementIntent=\"Style comparison for architectural period\" />
 
 ## Related Articles
 

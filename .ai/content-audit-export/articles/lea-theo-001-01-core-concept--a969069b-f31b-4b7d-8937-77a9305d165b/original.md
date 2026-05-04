@@ -4,7 +4,6 @@
 Architecture is fundamentally unique because it simultaneously demands three distinct capacities: **artistic vision** to create beauty, **scientific precision** to ensure structural integrity and environmental performance, and **social commitment** to serve human needs and community welfare. The LEA tests this triple nature through questions about definition, design synthesis, and professional responsibility.
 </Callout>
 
-
 ## Learning Goal
 
 Understand that architecture uniquely integrates artistic vision, scientific precision, and social responsibility as simultaneous and inseparable requirements of design.
@@ -12,6 +11,10 @@ Understand that architecture uniquely integrates artistic vision, scientific pre
 ## Core Concept
 
 ### The Triple Nature of Architecture
+
+|<ArticleMedia id="media-lea-theo-001-01-core-concept-a" type="image" caption="The Triple Nature of Architecture — Art, Science, and Social Responsibility" description="Three overlapping circles diagram showing the synthesis of Architecture as Art (form, composition, light, emotion), Architecture as Science (structure, materials, systems, technology), and Architecture as Social Responsibility (accessibility, equity, safety, cultural respect). The center intersection represents successful architecture that integrates all three simultaneously." suggestedAsset="Diagram or reference image" status="placeholder" />
+
+<ArticleMedia id="media-lea-theo-001-01-core-concept-b" type="image" caption="Le Corbusier's Definition — 'Architecture is the masterly, correct and magnificent play of masses brought together in light'" description="Architectural photograph or diagram illustrating Le Corbusier's iconic definition: a building composed of sculptural masses (volumes, planes, and voids) interacting with natural light. Shows how shadow, highlight, and form articulation create the 'play of masses' that Le Corbusier described as the essence of architecture." suggestedAsset="Reference image or diagram" status="placeholder" />
 
 **Architecture** is not purely art, not purely science, and not purely service—it is the synthesis of all three, unified in a single built form. This distinguishes architecture from painting (pure art), engineering (applied science), or social work (pure service). When a building fails in any one dimension, it fails entirely, regardless of excellence in the others.
 
@@ -47,6 +50,8 @@ Social responsibility in architecture includes:
 This dimension is not cosmetic or secondary. The 2016 AIA (American Institute of Architects) Code of Ethics explicitly charges architects with responsibility to the public interest, recognizing that every design decision carries social consequence.
 
 ### The Inseparability of Art, Science, and Social Responsibility
+
+<ArticleMedia id="media-lea-theo-001-01-core-concept" a type="image" caption="Vitruvian Triad — Firmitas, Utilitas, Venustas" description="Triangular diagram illustrating Vitruvius's three essential qualities of architecture: Firmitas (structural stability, strength, durability), Utilitas (function, fitness for purpose, convenient arrangement), and Venustas (beauty, delight, aesthetic appeal). Each point connects to show they are simultaneous requirements, not sequential phases." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 These three dimensions are not separable phases of design—they are simultaneous requirements that constrain and inform each other. A design that is beautiful but structurally unsafe is not great architecture; it is dangerous sculpture. A design that is structurally brilliant and environmentally efficient but excludes users or disrespects community is not great architecture; it is a monument to disconnection.
 

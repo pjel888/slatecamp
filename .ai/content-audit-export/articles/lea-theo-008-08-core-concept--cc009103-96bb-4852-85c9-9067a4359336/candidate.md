@@ -1,5 +1,8 @@
 ## What You Need to Know for the LEA
-[SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
+<Callout>
+
+Philippine design identity extends beyond architecture to encompass furniture design, industrial design, interior design, and broader cultural production where Filipino architects and designers assert international recognition. From Kenneth Cobonpue's rattan furniture earning global acclaim to the professionalization of interior design through figures like Lor Calma, Filipino design culture demonstrates that identity transcends buildings to express distinctively Filipino sensibility across multiple disciplines and scleas.
+</Callout>
 
 ## Learning Goal
 
@@ -9,17 +12,21 @@
 
 ## Core Concept
 
-<ArticleMedia id="media-lea-theo-008-08-philippine-design" type="image" caption="Philippine Design Identity — From Architecture to Furniture Across Scales" description="Concept diagram showing design identity as concentric circles or spectrum. Outermost: Architecture (tropical modernism, bahay na bato reinterpretation, CCP). Middle ring: Interior Design (Lor Calma — Filipino modern interiors, indigenous material integration). Inner ring: Furniture/Product Design (Kenneth Cobonpue — yin-yang chair, rattan virtuosity, natural fibers: rattan, bamboo, abaca, buri palm). Center: 'Indigenous Materials + Tropical Responsiveness + Craftsmanship + Cultural Values = Filipino Design Identity.' Arrow from each ring labeled 'International Recognition.'" suggestedAsset="Diagram showing Philippine design identity across scales from architecture to furniture" status="placeholder" />
+<ArticleMedia id="media-lea-theo-008-08-philippine-design" type="image" caption="Philippine Design Identity — From Architecture to Furniture Across Scales" alt="Concept diagram showing design identity as concentric circles or spectrum. Outermost: Architecture (tropical modernism, bahay na bato reinterpretation, CCP). Middle ring: Interior Design (Lor Calma — Filipino modern interiors, indigenous material integration). Inner ring: Furniture/Product Design (Kenneth Cobonpue — yin-yang chair, rattan virtuosity, natural fibers: rattan, bamboo, abaca, buri palm). Center: 'Indigenous Materials + Tropical Responsiveness + Craftsmanship + Cultural Values = Filipino Design Identity.' Arrow from each ring labeled 'International Recognition.'" suggestedAsset="Diagram showing Philippine design identity across scales from architecture to furniture" status="placeholder" />
 
 Philippine design identity operates across a spectrum of scales and disciplines united by common sensibility: commitment to indigenous materials, responsiveness to tropical climate, integration of craftsmanship and cultural values, and refusal of wholeslea importation of foreign aesthetic standards. While architecture addresses building-scale design challenges, furniture and product design enable individual Filipino designers to achieve international recognition and influence, often with less institutional constraint than architectural practice requires. This broader design ecosystem both supports architectural identity and sustains related professional conversations about Filipino culture in the contemporary world.
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+<Tip>
+**Design identity across scleas**: Filipino architectural principles (material honesty, climate responsiveness, craft integration, community values) manifest across architecture, furniture, interiors, and product design. Kenneth Cobonpue's rattan furniture embodies the same principles as Francisco Mañosa's bamboo structures: deep engagement with material properties, sophisticated formal resolution, responsiveness to (tropical) context, commitment to genuine (not superficial) cultural expression. This consistency across scleas demonstrates that Filipino identity is coherent philosophy, not merely aesthetic preference.
+</Tip>
 
 Kenneth Cobonpue exemplifies this phenomenon. Born in Cebu in 1968 and trained in industrial design in New York with apprenticeships in Italy and Germany, Cobonpue returned to the Philippines in 1996 to engage the family business founded by his mother, Betty Chen Cobonpue, in 1972. Rather than treating return as retreat from international practice, Cobonpue positioned Philippine material traditions as competitive advantage in global design markets. TIME Magazine's designation of him as "rattan's first great virtuoso" captures the distinctive positioning: Cobonpue did not merely use rattan; he elevated it to primary design material worthy of the most demanding international clientele including royalty, Hollywood celebrities, and design-conscious collectors worldwide. His yin-yang chair, launched in 1998, achieved iconic status, establishing that Filipino-made furniture could achieve aesthetic and technical sophistication rivaling European and American design.
 
 Cobonpue's work demonstrates that Philippine design identity is not parochial limitation but international asset. His commitment to natural fibers—rattan, bamboo, abaca, buri palm—is simultaneously deeply rooted in Philippine tradition and cosmopolitan in appeal. Clients selecting Cobonpue designs do not do so because they want exotic or primitive craft; they select them because the designs achieve sophisticated formal resolution, impeccable craftsmanship, environmental consciousness, and distinctive character. The success proves that cultural specificity, when pursued with genuine conviction and technical mastery, produces universal appeal far more effectively than attempting to dissolve difference into generic internationalism.
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
+<Note>
+International success doesn't compromise authenticity—it validates it. When prestigious international museums and collectors recognize Filipino design, it contradicts colonial narratives that Western design is inherently superior. Yet this recognition must remain grounded in genuine cultural commitment, not performance of difference for consumption. The danger is designers becoming "interpreters of authentic Filipino culture" for foreign audiences, performing identity rather than living it. Authentic practice involves designing for one's own context and community first, with international engagement as secondary validation, not primary audience.
+</Note>
 
 The expansion of design identity beyond architecture reflects broader professionalization of Philippine design disciplines. Lor Calma's co-founding of the Philippine Institute of Interior Designers and establishment of the Philippine School of Interior Design in 1967 (with Edith Oliveros) represented deliberate project to elevate interior design from decorative afterthought to disciplined profession grounded in spatial ethics and cultural responsibility. Calma's modernist sensibility—clean lines, functional clarity, local materials—established vocabulary that contemporary Filipino interior designers continue engaging. His 1982 service on the PRC Board of Interior Design helped establish professional standards and licensing ensuring that interior design achieved recognition as legitimate profession comparable to architecture.
 
@@ -33,32 +40,34 @@ International recognition of Philippine design achieves particular significance 
 
 The challenge for emerging Filipino designers involves scaling indigenous material traditions while maintaining their integrity. As demand for bamboo, rattan, and coconut products increases globally, questions arise about sustainability, labor conditions, and cultural appropriation. If Philippine natural materials become commodified without benefit accruing to communities that produced generations of expertise, if forests are devastated to supply export demand, if Filipino craftspeople remain marginalized while foreign entrepreneurs profit from their traditions, then design success becomes ethically compromised. Responsible Philippine design culture must therefore address production conditions, environmental impact, and equitable benefit-sharing as core professional concerns rather than peripheral ethical addenda.
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
+<Warn>
+Success trap: As Filipino design gains international recognition, the danger is commercialization divorced from cultural grounding. Philippine materials (rattan, bamboo, abaca) become commodities exploited for profit without benefit to originating communities or environmental stewardship. Designers gain international acclaim while craftspeople remain low-wage. Forests are cleared for export. This is not cultural success; it's neocolonial extraction wearing design aesthetic. Ethical responsibility requires that Filipino designers and international consumers demand transparency about labor practices, environmental impact, and community benefit. Design integrity includes production ethics—materials sourced fairly, craftspeople compensated equitably, forests managed sustainably. Without this, Philippine design success becomes paradoxically complicit in the same exploitation colonialism perpetuated.
+</Warn>
 
 ## Key Facts and Testable Items
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="WikiExamTable" status="preserved"]
+<WikiExamTable headers={["Designer/Architect", "Discipline", "Key Contribution", "Recognition"]} rows={[['["Kenneth Cobonpue", "Furniture/Industrial Design", "Elevated rattan to primary material; global market success", "TIME Magazine \\"rattan\'s first great virtuoso\\"; Gawad sa Sining Award 2020"]', '["Lor Calma", "Architecture/Interiors/Furniture", "Professionalized interior design; multidisciplinary modernism", "PIID co-founder; PRC Board 1982; established design ethics"]', '["Francisco Mañosa", "Architecture", "Integrated indigenous materials into structural design", "National Artist; EDSA Shrine architect; Amanpulo Resort"]', '["Tomas Mapua", "Architecture/Education", "First licensed Filipino architect; founded design education institution", "PRC License #00001 (1921); founder Mapua University/Institute"]', '["Contemporary Movement", "Multiple disciplines", "Reinterpreting tradition through digital tools, sustainability, global market", "International recognition; ArchTechCon participation; design awards"]', '["Betty Chen Cobonpue", "Furniture Entrepreneurship", "Founded family furniture business; established market for Philippine rattan", "Business foundation enabling Kenneth Cobonpue\'s international career"]']]} />
 ## How It's Tested on the LEA
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
+<ExamTip>1. **Cross-disciplinary thinking**: Questions may present design challenges in furniture, interiors, or product design asking candidates to identify relevant Philippine design principles. Correct answers reference material tradition, tropical responsiveness, craftsmanship, or cultural values established across multiple disciplines.</ExamTip>
 
-[SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
+<ExamTip>2. **International positioning**: Scenarios explore how Filipino design competes globally. Strong answers articulate that competitive advantage comes from genuine cultural commitment rather than exotic styling, and that international success validates rather than threatens cultural identity.</ExamTip>
 
-[SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
+<ExamTip>3. **Ethical production**: Questions may present manufacturing or sustainability challenges in design practice. Candidates must demonstrate awareness that Philippine design culture's integrity depends on equitable labor practices, environmental responsibility, and community benefit-sharing.</ExamTip>
 
-[SLATECAMP_UI_BLOCK:ui_0009 component="ExamTip" status="preserved"]
+<ExamTip>4. **Sclea integration**: Questions ask how principles established at furniture or interior sclea apply to architecture, or vice versa. Answers should show understanding that Philippine design identity is coherent across scleas—from individual objects to public buildings to urban design.</ExamTip>
 
-[SLATECAMP_UI_BLOCK:ui_0010 component="ExamTip" status="preserved"]
+<ExamTip>5. **Contemporary emergence**: Questions about emerging designers or practices test whether candidates can recognize contemporary expressions of established principles. Rather than looking only to historical figures, candidates should identify how new generations continue and extend Filipino design culture.</ExamTip>
 
-[SLATECAMP_UI_BLOCK:ui_0011 component="ExamTip" status="preserved"]
+<ExamTip>6. **Commercialization without compromise**: Scenarios may present tension between market demand and cultural authenticity. Mature answers recognize this as permanent tension requiring ongoing negotiation rather than assuming either market success or cultural purity is automatically achievable.</ExamTip>
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0012 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Limiting design identity to architecture" correction="Treating Filipino design culture as exclusively architectural conversation while overlooking furniture, interior design, and product design as equally important expressions." context="LEA questions test breadth of understanding across design disciplines." />
 
-[SLATECAMP_UI_BLOCK:ui_0013 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Treating success as cultural compromise" correction="Assuming that international recognition of Filipino design represents selling out or cultural dilution." context="Strong answers recognize that genuine cultural expression achieves universal resonance precisely through specificity." />
 
-[SLATECAMP_UI_BLOCK:ui_0014 component="WikiMistakeList" status="preserved"]
+<WikiMistakeList mistakes={["Essentializing materials. Suggesting that Philippine design identity requires exclusive use of indigenous materials. Correct understanding recognizes indigenous materials as powerful strategy within broader design philosophy that also embraces innovation and contemporary tools.", "Ignoring production ethics. Focusing on formal and aesthetic qualities of design while overlooking labor conditions, environmental impact, or community benefit. Professional maturity requires integrating production ethics as core design concern.", "Disconnecting contemporary from traditional. Treating emerging Filipino designers as either slavish copiers of tradition or wholeslea modernizers rejecting heritage. Sophisticated answers recognize creative synthesis as most vital contemporary practice.", "Exoticizing design culture. Treating Philippine design as interesting cultural artifact rather than serious professional discipline. Weak answers condescend or romanticize; strong answers engage Filipino design practitioners as peers with legitimate expertise and distinct cultural values."]} />
 
 ## Key Terms
 

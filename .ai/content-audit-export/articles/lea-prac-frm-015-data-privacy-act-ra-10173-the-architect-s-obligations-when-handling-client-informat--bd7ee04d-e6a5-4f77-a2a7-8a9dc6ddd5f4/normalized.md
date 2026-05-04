@@ -65,7 +65,7 @@ Architects should implement the following: (1) maintain a data inventory documen
 
 
 
-<ArticleMedia type="image" caption="Data Privacy Compliance for Architects — RA 10173 Workflow" description="Flowchart showing architect's data privacy obligations: Collect client data → Inform data subject (privacy notice) → Obtain consent → Process only for specified purpose → Implement security measures → Breach notification (if applicable) → Retention/destruction policy. Side panel shows architect's responsibilities as personal information controller, including NPC registration requirements." />
+<ArticleMedia type="image" caption="Data Privacy Compliance for Architects — RA 10173 Workflow" alt="Flowchart showing architect's data privacy obligations: Collect client data → Inform data subject (privacy notice) → Obtain consent → Process only for specified purpose → Implement security measures → Breach notification (if applicable) → Retention/destruction policy. Side panel shows architect's responsibilities as personal information controller, including NPC registration requirements." />
 ## Related Articles
 
 - [Sole Proprietorship](lea-prac-frm-001)

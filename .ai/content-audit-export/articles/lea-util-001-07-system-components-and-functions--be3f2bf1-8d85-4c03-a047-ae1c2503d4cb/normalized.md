@@ -7,7 +7,7 @@ Identify sanitary drainage system components — soil stacks, waste pipes, vents
 
 A complete sanitary drainage system consists of five interconnected components:
 
-<ArticleMedia id="media-lea-util-001-07-system-components-and-fu" a type="image" caption="Sanitary Drainage System Components — Soil Stack, Waste Pipe, Vent, Trap, Cleanout" description="Isometric diagram of a typical sanitary drainage system showing: soil stack (WC connection), waste pipe (lavatory/shower connections), vent stack extending above roof, P-trap under each fixture, cleanout at base of stack, building drain sloping to sewer. Minimum pipe slopes labeled (1:50 for 100mm pipe per Revised National Plumbing Code)." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-util-001-07-system-components-and-fu" type="image" caption="Sanitary Drainage System Components — Soil Stack, Waste Pipe, Vent, Trap, Cleanout" alt="Isometric diagram of a typical sanitary drainage system showing: soil stack (WC connection), waste pipe (lavatory/shower connections), vent stack extending above roof, P-trap under each fixture, cleanout at base of stack, building drain sloping to sewer. Minimum pipe slopes labeled (1:50 for 100mm pipe per Revised National Plumbing Code)." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="WikiExamTable" status="preserved"]
@@ -40,7 +40,7 @@ A 1:50 slope means the pipe drops 1 unit vertically for every 50 units of horizo
 
 ## Trap Seal and Water Seal Requirements
 
-<ArticleMedia id="media-lea-util-001-07-system-components-and-fu" a type="image" caption="Plumbing Trap Types — P-Trap, S-Trap, and Trap Seal Mechanism" description="Cross-section diagrams of common trap types: P-trap (standard for lavatories, proper water seal maintained), S-trap (prone to siphonage, not recommended), and detail of trap seal depth showing minimum 50mm water column per Revised National Plumbing Code §308. Arrows indicate siphonage risk in S-trap configuration." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-util-001-07-system-components-and-fu" type="image" caption="Plumbing Trap Types — P-Trap, S-Trap, and Trap Seal Mechanism" alt="Cross-section diagrams of common trap types: P-trap (standard for lavatories, proper water seal maintained), S-trap (prone to siphonage, not recommended), and detail of trap seal depth showing minimum 50mm water column per Revised National Plumbing Code §308. Arrows indicate siphonage risk in S-trap configuration." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 Every fixture connected to the sanitary drainage system must include a trap—a U-shaped pipe section that maintains a water seal. This seal prevents sewer gases and odors from entering the building while allowing wastewater to pass.
 

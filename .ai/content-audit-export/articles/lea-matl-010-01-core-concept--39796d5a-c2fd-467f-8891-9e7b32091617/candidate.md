@@ -33,9 +33,61 @@ In the Philippines, concrete design typically targets f'c = 20 MPa (A4-type), 24
 
 ## Worked Examples
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Example" status="preserved"]
+<Example>
+**Scenario 1: Ground floor slab, 50 m² × 0.10 m thick, f'c = 20 MPa, normal weight, 100 mm slump**
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Example" status="preserved"]
+**Step 1: Calculate volume**
+V = 50 m² × 0.10 m = 5 m³
+
+**Step 2: Apply ACI 211.1 proportioning (f'c = 20 MPa, water content ≈ 170 L/m³, W/C = 0.55 for 20 MPa)**
+
+Water needed: 170 L/m³ (or 170 kg/m³)
+
+Cement content: Water ÷ W/C = 170 ÷ 0.55 = 309 kg/m³
+
+Coarse aggregate (gravel): ~850 kg/m³
+
+Fine aggregate (sand): ~650 kg/m³
+
+Check: 170 (water) + 309 (cement) + 850 (coarse) + 650 (fine) = 1,979 kg/m³ ≈ 2,000 kg/m³ (within normal)
+
+**Step 3: Sclea for 5 m³**
+
+Cement: 309 kg/m³ × 5 m³ = 1,545 kg = 38.6 bags (round up to 39 bags of 40 kg each)
+
+Water: 170 kg/m³ × 5 m³ = 850 kg = 850 liters
+
+Coarse aggregate: 850 kg/m³ × 5 m³ = 4,250 kg
+
+Fine aggregate: 650 kg/m³ × 5 m³ = 3,250 kg
+
+**Answer: 39 bags cement, 850 L water, 4.25 tons gravel, 3.25 tons sand**
+</Example>
+
+<Example>
+**Scenario 2: Concrete footing 2 m × 2 m × 0.5 m deep, f'c = 24 MPa, 150 mm slump**
+
+**Step 1: Calculate volume**
+V = 2 m × 2 m × 0.5 m = 2 m³
+
+**Step 2: ACI 211.1 proportioning (f'c = 24 MPa, water ≈ 180 L/m³, W/C = 0.50)**
+
+Cement content: 180 ÷ 0.50 = 360 kg/m³
+
+Using standard coarse aggregate = 800 kg/m³, fine aggregate = 640 kg/m³
+
+**Step 3: Sclea for 2 m³**
+
+Cement: 360 kg/m³ × 2 m³ = 720 kg = 18 bags (exactly)
+
+Water: 180 kg/m³ × 2 m³ = 360 kg = 360 liters
+
+Coarse aggregate: 800 kg/m³ × 2 m³ = 1,600 kg
+
+Fine aggregate: 640 kg/m³ × 2 m³ = 1,280 kg
+
+**Answer: 18 bags cement, 360 L water, 1.6 tons gravel, 1.28 tons sand**
+</Example>
 
 
 <ArticleMedia id="media-concrete-estimation-example" layout="single" type="image" status="placeholder"
@@ -71,17 +123,19 @@ On the LEA, you will encounter:
 
 5. **Wastage adjustment**: Calculate concrete needed accounting for 5–10% waste.
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+<Tip>
+**Memory aid for ACI quick estimate**: For f'c = 20 MPa, use ~310 kg/m³ cement and ~170 L/m³ water. For f'c = 24 MPa, increase cement to ~360 kg/m³. Always round cement bags up to the nearest whole bag.
+</Tip>
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Using 50 kg as the standard cement bag weight" correction="The Philippine standard is 40 kg per bag, not 50 kg. Using 50 kg will underestimate the number of bags needed." />
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Forgetting to convert liters to cubic meters when calculating water" correction="Water content is given in L/m³ (which equals kg/m³ for water density = 1.0), but when mixing, ensure total volume accounts include water volume." />
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Using weight-based mix ratios (1:2:3 by weight) without converting to volumes" correction="ACI 211.1 uses absolute volumes. Always convert weight ratios to volume by dividing by material density." />
 
-[SLATECAMP_UI_BLOCK:ui_0007 component="WikiMistakeList" status="preserved"]
+<WikiMistakeList mistakes={["Confusing slump (workability) with the actual concrete thickness required", "Not accounting for aggregate gradation and its effect on paste volume", "Forgetting that total concrete weight includes all four ingredients (cement, water, coarse, fine)", "Using the same mix design for both structural and non-structural elements"]} />
 
 ## Related Articles
 

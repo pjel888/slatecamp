@@ -42,9 +42,9 @@ Imagine you are reviewing plans for a 1980s building in Cebu. The current Certif
 
 Every change-of-use analysis begins with properly classifying both the **existing** and **proposed** occupancy. The IRR Section 701 defines ten groups. Memorize these:
 
-[SLATECAMP_UI_BLOCK:ArticleMedia name="occupancy-classification-matrix" type="diagram" caption="Full occupancy classification table A–J as a visual matrix with icons: Residential (A, B), Education (C), Institutional (D), Business/Mercantile (E), Industrial (F), Storage/Hazardous (G), Assembly (H, I), Accessory (J). Color-code by hazard level (green=low, yellow=medium, red=high). Include the 10-person A-vs-B cutoff callout."]
+<ArticleMedia id="media-occupancy-classification-matrix" type="diagram" caption="Full occupancy classification table A–J as a visual matrix with icons: Residential (A, B), Education (C), Institutional (D), Business/Mercantile (E), Industrial (F), Storage/Hazardous (G), Assembly (H, I), Accessory (J). Color-code by hazard level (green=low, yellow=medium, red=high). Include the 10-person A-vs-B cutoff callout." />
 
-[SLATECAMP_UI_BLOCK:ArticleMedia name="hazard-hierarchy-ladder" type="diagram" caption="Vertical ladder/spectrum showing the 10-group hazard hierarchy from most hazardous (Group G) to least (Group J). Use colored arrows to show whether a change is 'more hazardous' (red arrow up) or 'less hazardous' (green arrow down). Include worked examples of common change-of-use scenarios on the ladder."]
+<ArticleMedia id="media-hazard-hierarchy-ladder" type="diagram" caption="Vertical ladder/spectrum showing the 10-group hazard hierarchy from most hazardous (Group G) to least (Group J). Use colored arrows to show whether a change is 'more hazardous' (red arrow up) or 'less hazardous' (green arrow down). Include worked examples of common change-of-use scenarios on the ladder." />
 
 | Group | Full Name | Examples |
 |-------|-----------|---------|

@@ -8,6 +8,13 @@ Embodied carbon measures greenhouse gas emissions generated during material extr
 
 Recycled steel produced via electric arc furnace (EAF) generates approximately 0.9-1.1 kg CO2e per kg of material versus 1.8-2.0 kg CO2e per kg via blast oxygen furnace (BOF), representing roughly 50 percent lower emissions. Fly ash (Class F or Class C per ASTM C618) replaces 15-30 percent of Portland cement in concrete, reducing embodied carbon by 20-40 percent. Timber sequesters carbon during growth, storing approximately 0.46 kg CO2e per kg in the material itself.
 
+
+<ArticleMedia id="media-embodied-carbon-infographic" layout="single" type="image" status="placeholder"
+  alt="Infographic showing embodied carbon breakdown across building material lifecycle: extraction, manufacturing, transportation, construction, and end-of-life"
+  caption="Future infographic: embodied carbon lifecycle stages and material contributions"
+  suggestedAsset="Infographic or Sankey diagram showing carbon flow in building materials"
+  placementIntent="Visualizes the total carbon footprint concept across material lifecycle" />
+
 ## Key Provisions
 
 <WikiExamTable headers={["Material", "Embodied Carbon (kg CO2e/kg)", "Key Standard/Specification", "Primary Use in Concrete"]}>
@@ -34,6 +41,12 @@ DENR (Department of Environment and Natural Resources) timber harvest restrictio
 
 BERDE (Building for Ecologically Responsive Design Excellence) version 5 allocates 8-9 percent of points to sustainable materials credits, with documented embodied carbon reductions earning certification points. Buildings achieving 15-20 percent reduction in structural embodied carbon may qualify for additional green building tax incentives under RA 9729 (Climate Change Act) provisions.
 
+
+<ArticleMedia id="media-embodied-carbon-strategies" layout="single" type="image" status="placeholder"
+  alt="Infographic showing strategies to reduce embodied carbon: material substitution, low-carbon alternatives, recycled content, local sourcing, and design optimization"
+  caption="Future infographic: embodied carbon reduction strategies for building materials"
+  suggestedAsset="Comparative infographic of carbon reduction strategies"
+  placementIntent="Visualizes practical strategies for reducing building carbon footprint" />
 ## How It's Tested
 
 LEA candidates must identify material types by embodied carbon value, match pozzolanic materials to ASTM specifications, calculate percentage reductions in concrete embodied carbon when fly ash or GGBS replaces Portland cement, and apply replacement rate limits. Questions typically present a structural design scenario requiring 30 percent cost reduction while maintaining strength; the correct answer involves substituting 25 percent fly ash (within ASTM C618 Class F limits) without compromising concrete compressive strength or durability.

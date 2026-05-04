@@ -1,10 +1,14 @@
 ## What You Need to Know for the LEA
 
-Rainwater harvesting and stormwater management are integrated systems that capture, divert, and safely discharge precipitation. Both require precise sizing calculations using the Rational Method and understanding Philippine rainfall patterns and building code requirements.
+## Learning Goal
 
+Design rainwater harvesting systems — calculate catchment area, gutter/downspout sizing per PNS 1980, first-flush diversion, storage tank volume based on rainfall data, and filtration — for Philippine residential and commercial projects.
 ## Core Concept
 
 Rainwater harvesting systems intercept precipitation at the point of collection (typically building roofs), treat or divert initial contaminated runoff, and store or reuse clean water. Stormwater management systems handle excess runoff that cannot be harvested, ensuring controlled drainage to prevent flooding and property damage. Both systems use the **Rational Method** to estimate peak discharge rates.
+
+<ArticleMedia id="media-lea-util-001-09-core-concept" a type="image" caption="Rainwater Harvesting System — Catchment, First-Flush, Storage, and Filtration" description="System diagram showing: roof catchment area, gutter and downspout collection, first-flush diversion device (first 0.75mm rainfall diverted), cistern storage tank with freeboard (150mm), pump, filtration unit, and distribution to non-potable uses. Storm drain overflow connection labeled. Rational Method formula Q=C×I×A illustrated." suggestedAsset="Diagram or reference image" status="placeholder" />
+
 
 The Rational Method formula is:
 
@@ -17,6 +21,9 @@ Where:
 - **I** = rainfall intensity (mm/hr)
 - **A** = drainage area (hectares)
 </Callout>
+Extracted summary:
+- Props: (none)
+- Text: **Q = C × I × A** Where: - **Q** = peak discharge rate (m³/s) - **C** = runoff coefficient (dimensionless, 0–1) - **I** = rainfall intensity (mm/hr) - **A** = drainage area (hectares)
 
 For rainwater harvesting, cistern sizing determines storage volume based on catchment area and target rainfall capture. The basic equation is:
 
@@ -29,6 +36,9 @@ Where:
 - **P** = design rainfall depth (mm)
 - **C_runoff** = roof runoff coefficient (typically 0.75–0.90 for concrete/tile)
 </Callout>
+Extracted summary:
+- Props: (none)
+- Text: **V_cistern = A_roof × P × C_runoff** Where: - **V_cistern** = usable storage volume (m³) - **A_roof** = roof catchment area (m²) - **P** = design rainfall depth (mm) - **C_runoff** = roof runoff coefficient (typically 0.75–0.90 for concrete/tile)
 
 **Philippine Rainfall Context:**
 Annual rainfall in the Philippines ranges from 2000 to 3000 mm (PAGASA climatic data), with monsoon seasons producing intensities of 100–200 mm/hr during peak events. Roof catchment coefficients typically vary: 0.85 for concrete or tile roofs (hydrology standards), 0.70 for asphalt shingles, and 0.55 for gravel-covered roofs.
@@ -39,6 +49,9 @@ The first 0.5–1.0 mm of rainfall washes accumulated dust, bird droppings, and 
 <Callout>
 **V_first_flush = A_roof × D_first** (where D_first ≈ 0.75 mm typical)
 </Callout>
+Extracted summary:
+- Props: (none)
+- Text: **V_first_flush = A_roof × D_first** (where D_first ≈ 0.75 mm typical)
 
 **Stormwater Drainage Sizing:**
 Storm drain pipes must accommodate peak runoff under design storm conditions. The *Revised Plumbing Code of the Philippines* (and adopted standards per _PD 1096_) specifies minimum slopes (0.5–1.0% for storm lines) and pipe sizing based on Manning's equation or manufacturer data. Pipe diameter selection ensures velocity stays within acceptable bounds (0.6–3.0 m/s, per code standards) to prevent sedimentation and erosion.
@@ -142,15 +155,35 @@ The Philippines experiences two distinct monsoon seasons: the Southwest (May–O
 - **Velocity 0.6–3.0 m/s:** Prevent silt (< 0.6 m/s) and scour (> 3.0 m/s).
 - **PD 1096 = 10-year storm:** Standard design recurrence for public and private site drainage in the Philippines.
 </Tip>
+Extracted summary:
+- Props: (none)
+- Text: **Memory Aids:** - **Q = CIA:** Discharge equals runoff Coefficient times rainfall Intensity times Area. Coefficient &lt;1 because not all rain becomes runoff (infiltration, evaporation). - **Roof Concrete = 0.85:** High runoff; asphalt shingle or gravel lower the coefficient. - **First-flush = dirty water:** Roughly 1 mm depth of initial rainfall carries roof debris. Divert before storage. - **Storm drain slope ≥ 0.5%:** Steep enough to flow; too steep (>2%) causes erosion. - **Velocity 0.6–3.0
 
 ## Common Mistakes
 
 <WikiMistakeCard mistake="Forgetting to convert units in Rational Method (e.g., using mm/hr directly without converting to m/s or using hectares without converting to m²)." correction="Always apply unit conversion: 1 ha = 10,000 m²; I (mm/hr) ÷ 3,600 = I (m/s) or use 0.2778 × mm/hr × ha factor." />
+Extracted summary:
+- Props: mistake="Forgetting to convert units in Rational Method (e.g., using mm/hr directly without converting to m/s or using hectares without converting to m²).", correction="Always apply unit conversion: 1 ha = 10,000 m²; I (mm/hr) ÷ 3,600 = I (m/s) or use 0.2778 × mm/hr × ha factor."
+- Text: (none detected)
 
-<WikiMistakeCard mistake="Using a runoff coefficient > 1 or assuming all rainfall becomes runoff." correction="Coefficient C is always ≤ 1. For concrete roofs, C ≈ 0.85 means 15% is lost to evaporation, wetting, and initial absorption." />
-
-<WikiMistakeCard mistake="Ignoring first-flush diversion when sizing a cistern, leading to oversized or contaminated storage." correction="Account for first-flush volume (typically 0.5–1.0 mm depth per 1 m² roof). Many codes require a separate bypass container or valve." />
+ed"]
+<Note>
+(none detected)
+</Note>
 
 <WikiMistakeCard mistake="Selecting storm drain pipe diameter without checking velocity, then finding either dry, sluggish pipes or erosive, noisy flow." correction="Always verify velocity is 0.6–3.0 m/s using Q = V × A. Adjust slope or diameter to stay within range." />
+Extracted summary:
+- Props: mistake="Selecting storm drain pipe diameter without checking velocity, then finding either dry, sluggish pipes or erosive, noisy flow.", correction="Always verify velocity is 0.6–3.0 m/s using Q = V × A. Adjust slope or diameter to stay within range."
+- Text: (none detected)
 
 <WikiMistakeList mistakes={["Assuming roof runoff coefficient is the same for all materials; it varies by surface (tile 0.85, shingle 0.70, gravel 0.55).", "Using annual rainfall directly as monthly cistern input, ignoring seasonal monsoon variation.", "Confusing 10-year return period (PD 1096 standard) with design life; recurrence and design life are independent.", "Forgetting freeboard (150 mm air gap) when calculating usable cistern volume.", "Applying a flat 1.0 m/s design velocity without checking code minimums; some regions require ≥ 0.75 m/s."]} />
+Extracted summary:
+- Props: mistakes="{[\"Assuming roof runoff coefficient is the same for all materials; it varies by surface (tile 0.85, shingle 0.70, gravel 0.55).\", \"Using annual rainfall directly as monthly cistern input, ignoring seasonal monsoon variation.\", \"Confusing 10-year return period (PD 1096 standard) with design life; recurrence and design life are independent.\", \"Forgetting freeboard (150 mm air gap) when calculating usable cistern volume.\", \"Applying a flat 1.0 m/s design velocity without checking code minimums; some regions require ≥ 0.75 m/s.\"]}"
+- Text: (none detected)
+
+## Related Articles
+
+See also within Plumbing and Sanitary Systems: **lea-util-001-06-core-concept**, **lea-util-001-07-core-concept**, **lea-util-001-08-core-concept**.
+
+> **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
+

@@ -1,7 +1,7 @@
 ## Change Orders — Types, Authority Limits, and the Documentation Process
 
 
-<ArticleMedia type="image" caption="Change Order Process Flow — Documentation and Authorization Workflow" description="Flowchart showing the change order lifecycle: Change request submitted → Architect evaluates scope/cost/schedule impact → Owner approval → Change Order issued → Contractor implements → Architect verifies. Decision diamonds for: Does change affect cost? Does change affect schedule? Is change within architect's authority limit? Document flow arrows showing AIA G701 equivalent documentation." />
+<ArticleMedia type="image" caption="Change Order Process Flow — Documentation and Authorization Workflow" alt="Flowchart showing the change order lifecycle: Change request submitted → Architect evaluates scope/cost/schedule impact → Owner approval → Change Order issued → Contractor implements → Architect verifies. Decision diamonds for: Does change affect cost? Does change affect schedule? Is change within architect's authority limit? Document flow arrows showing AIA G701 equivalent documentation." />
 ## Learning Goal
 
 After reading this article, you should be able to:

@@ -1,46 +1,38 @@
 {
   "article_id": "fc84f5df-3b67-4891-bf56-596177e774fb",
   "slug": "mies-van-der-rohe",
-  "generated_at": "2026-05-04T00:06:41.473Z",
-  "old_hash": "sha256:febdcc776f4139217e98489ed9a70392bcbc6af38f7254cfabeefd3bb1fd0208",
-  "new_hash": "sha256:3e0aefcca2cdc1bc4c3717240b641eac24189fe39e34058e8d5594deb930deeb",
-  "original_hash": "sha256:febdcc776f4139217e98489ed9a70392bcbc6af38f7254cfabeefd3bb1fd0208",
+  "generated_at": "2026-05-04T02:17:24.576Z",
+  "old_hash": "sha256:6e886f83567733958a32774cd996f345c043b09f133f252ab6b7a33777a687b4",
+  "new_hash": "sha256:6e886f83567733958a32774cd996f345c043b09f133f252ab6b7a33777a687b4",
+  "original_hash": "sha256:6e886f83567733958a32774cd996f345c043b09f133f252ab6b7a33777a687b4",
   "normalized_hash": "sha256:3e0aefcca2cdc1bc4c3717240b641eac24189fe39e34058e8d5594deb930deeb",
-  "candidate_hash": "sha256:3e0aefcca2cdc1bc4c3717240b641eac24189fe39e34058e8d5594deb930deeb",
-  "changed": true,
-  "changed_line_count": 107,
-  "inserted_line_count": 21,
+  "candidate_hash": "sha256:6e886f83567733958a32774cd996f345c043b09f133f252ab6b7a33777a687b4",
+  "changed": false,
+  "changed_line_count": 0,
+  "inserted_line_count": 0,
   "deleted_line_count": 0,
   "ui_blocks_original_count": 4,
-  "ui_blocks_candidate_count": 0,
-  "ui_blocks_changed_count": 4,
+  "ui_blocks_candidate_count": 4,
+  "ui_blocks_changed_count": 0,
   "ui_blocks_count": 4,
-  "unresolved_placeholders_count": 1,
-  "preserved_blocks_count": 0,
+  "unresolved_placeholders_count": 0,
+  "preserved_blocks_count": 4,
   "changed_text_summary": {
-    "changed": 107,
-    "inserted": 21,
+    "changed": 0,
+    "inserted": 0,
     "deleted": 0,
-    "original_line_count": 100,
+    "original_line_count": 121,
     "candidate_line_count": 121
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0001",
-      "ui_0002",
-      "ui_0004",
-      "ui_0006"
-    ],
-    "changed_count": 4
+    "missing_block_ids": [],
+    "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate contains unresolved UI block placeholders.",
-    "Candidate is missing 4 preserved UI block(s)."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 4 preserved UI block(s)."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

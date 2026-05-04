@@ -9,8 +9,6 @@ After studying this article, you should be able to:
 - Describe the bond amount and duration.
 - Distinguish the guarantee bond from the performance bond.
 
-
-
 ### Purpose and Duration
 
 The Guarantee Bond is security furnished by the contractor to guarantee correction of defects in materials and workmanship during the one-year period following Substantial Completion. The one-year period runs from the date of Substantial Completion certified by the architect — NOT from Final Completion. This is a critical distinction because the guarantee period may begin before all punch list work is finished.
@@ -76,3 +74,5 @@ The Owner must report defects in writing during or within a reasonable time afte
 - [Change Orders](lea-prac-ctr-016)
 - [Dispute Resolution](lea-prac-ctr-020)
 - [Fee Compensation Methods](lea-prac-cmp-001)
+
+<!-- no-media-needed: professional practice article, text/tables/UI blocks are optimal format -->

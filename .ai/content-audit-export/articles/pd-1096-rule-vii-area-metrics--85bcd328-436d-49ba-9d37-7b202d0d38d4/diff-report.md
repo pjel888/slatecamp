@@ -1,33 +1,32 @@
 # Content Diff Report: pd-1096-rule-vii-area-metrics
 
-Generated: 2026-05-04T00:06:38.565Z
+Generated: 2026-05-04T02:25:36.860Z
 Article ID: 85bcd328-436d-49ba-9d37-7b202d0d38d4
 Changed: true
-Safe to push locally: false
+Safe to push locally: true
 
 ## Hashes
 
 - Original: `sha256:b5c5cd65be2ab5e3d404a4d9cf434c68b1dcf1971d41425a0a59737742b39987`
-- Normalized: `sha256:5410b124281a6aba5f145d494382268404ea591dfb354045c2501a6313de3a51`
-- Candidate: `sha256:5410b124281a6aba5f145d494382268404ea591dfb354045c2501a6313de3a51`
+- Normalized: `sha256:770e20172634b15e73d858defde9fa86b54a3236eb1130075635e011b834ff92`
+- Candidate: `sha256:939dc67714ca7683f88a1d85fc31cea7a991d1fb4b18ede261a9e5beea333326`
 
 ## Line summary
 
-- Changed lines: 395
-- Inserted lines: 0
-- Deleted lines: 31
+- Changed lines: 418
+- Inserted lines: 9
+- Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 5
-- UI blocks preserved: 0
-- UI blocks changed/missing: 5
-- Unresolved placeholders: 1
+- UI blocks preserved: 5
+- UI blocks changed/missing: 0
+- Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate contains unresolved UI block placeholders.
-- Candidate is missing 5 preserved UI block(s).
+- None
 
 ## Warnings
 

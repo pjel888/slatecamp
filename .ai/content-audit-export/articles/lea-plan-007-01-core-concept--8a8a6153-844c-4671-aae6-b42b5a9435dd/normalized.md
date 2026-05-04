@@ -14,7 +14,7 @@ The **Social Housing Finance Corporation (SHFC)** finances community-based housi
 The distinction between NHA and SHFC is critical: NHA owns the production pipeline (government-built units), SHFC owns the financing mechanism (loans for communities buying land). Both serve low-income populations, but through entirely different delivery methods.
 
 Neither NHA nor SHFC provides the mass of housing loans to employed individuals—that is the role of Pag-IBIG/HDMF, SSS, and GSIS (covered in LEA-PLAN-007-03).
-<ArticleMedia id="media-lea-plan-007-01-core-concept" a type="image" caption="NHA Programs and Beneficiaries — Housing Production Agency Diagram" description="Organizational diagram of NHA programs: resettlement sites (disaster/development victims), medium-rise buildings (MRBs for urban poor), slum upgrading (zonal improvement), and target beneficiaries. NHA as producer (not financier) — distinguished from SHFC and Pag-IBIG roles." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-plan-007-01-core-concept" type="image" caption="NHA Programs and Beneficiaries — Housing Production Agency Diagram" alt="Organizational diagram of NHA programs: resettlement sites (disaster/development victims), medium-rise buildings (MRBs for urban poor), slum upgrading (zonal improvement), and target beneficiaries. NHA as producer (not financier) — distinguished from SHFC and Pag-IBIG roles." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 

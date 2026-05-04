@@ -7,7 +7,7 @@ Distinguish HVAC system types (split-type, window-type, packaged units, VRF/VRV,
 
 ### Split-Type Air Conditioning
 
-<ArticleMedia id="media-lea-util-002-04-system-types-and-applica" a type="image" caption="HVAC System Types Comparison — Split, VRF, Chilled Water, Packaged" description="Four-panel diagram comparing HVAC configurations: Panel 1 — Split-type (indoor unit + outdoor condenser, 0.75-5 TR); Panel 2 — VRF/VRV (single outdoor unit serving multiple indoor zones, 4-80 TR, individual zone control); Panel 3 — Chilled water (central chiller, fan-coil units, cooling tower, ≥50 TR); Panel 4 — Packaged rooftop unit (2-15 TR, single enclosure). Capacity ranges and typical applications labeled." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-util-002-04-system-types-and-applica" type="image" caption="HVAC System Types Comparison — Split, VRF, Chilled Water, Packaged" alt="Four-panel diagram comparing HVAC configurations: Panel 1 — Split-type (indoor unit + outdoor condenser, 0.75-5 TR); Panel 2 — VRF/VRV (single outdoor unit serving multiple indoor zones, 4-80 TR, individual zone control); Panel 3 — Chilled water (central chiller, fan-coil units, cooling tower, ≥50 TR); Panel 4 — Packaged rooftop unit (2-15 TR, single enclosure). Capacity ranges and typical applications labeled." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 
 Split systems separate indoor and outdoor components. Indoor units mount on walls, ceilings, or floors; outdoor condenser units sit outside. They operate at 220V/60Hz in the Philippine electrical grid.
@@ -28,7 +28,9 @@ _Typical COP:_ 2.8–3.5 (source: Energy Efficiency Labeling Scheme, Philippine 
 
 **Best for:** Residential, small offices, retail shops, low-rise buildings (≤3 stories)
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Example" status="preserved"]
+<Example>
+A 200 m² residential unit in Metro Manila requires cooling for living, bedrooms, and kitchen. Cooling load is estimated at 400 BTU/hr per m² (residential lower end, source: ASHRAE 90.1). Total load: 200 m² × 400 BTU/hr per m² = 80,000 BTU/hr. Convert to TR: 80,000 ÷ 12,000 = 6.67 TR. Specification: Two 3.5 TR split units (7 TR combined capacity) with load diversity allowing simultaneous operation. Unit selection: 3.5 TR ≈ 41,600 BTU/hr per unit (conversion: 3.5 × 12,000 = 42,000 BTU/hr), matching modular cooling needs.
+</Example>
 
 ### Variable Refrigerant Flow (VRF/VRV) Systems
 
@@ -50,7 +52,9 @@ _COP range:_ 3.2–4.1 (source: ASHRAE Standards database)
 
 **Best for:** Medium-rise buildings (4–12 stories), office complexes, hotels, hospitals, mixed-use developments
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Example" status="preserved"]
+<Example>
+A 5-story office building in Makati, 4,000 m² (800 m² per floor), requires 4,000 × 500 BTU/hr per m² = 2,000,000 BTU/hr total cooling load (commercial office, tropical, source: ASHRAE 90.1 Annex A). Convert: 2,000,000 ÷ 12,000 = 167 TR. Specify: Two 80 TR outdoor VRF units (160 TR combined) with load diversity (~95% diversity factor for offices, source: PD 1058). Indoor units: 20 units at 8 TR each, distributed across floors for zone control. VRF advantage: Part-load efficiency at 50% capacity = 3.8 COP vs. split type at 3.2 COP; annual savings justify 35% higher capital cost over 7-year payback (subject to local energy rates).
+</Example>
 
 ### Chilled Water Systems
 
@@ -73,7 +77,9 @@ _Condenser approach:_ Air-cooled condenser 5–8 K above ambient; water-cooled c
 
 **Best for:** Large buildings (≥300,000 m²), multi-building complexes, data centers, hospitals with critical cooling zones
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+<Tip>
+Philippine tropical humidity (70–90% RH year-round, source: Philippine Atmospheric Geophysical and Astronomical Services Administration, PAGASA) demands extra attention to condensate drainage and dehumidification in chilled water systems. Design condensate lines with continuous slope ≥1:100 and secondary drain pans under all coils.
+</Tip>
 
 ### Package (Rooftop) Units
 
@@ -111,25 +117,38 @@ _COP:_ 2.5–3.0
 
 ### Load Calculation Methods
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiCalloutBox" status="preserved"]
+<WikiCalloutBox title="Cooling Load Estimation Formula" variant="info">
+_Q_ = _U_ × _A_ × Δ_T_ + (sensible load from occupants, equipment, infiltration, solar gain)
+Where _Q_ = cooling load (BTU/hr), _U_ = overall heat transfer coefficient (BTU/hr·ft²·°F), _A_ = area (ft²), Δ_T_ = temperature difference (°F)
+For quick estimate in commercial buildings (tropical): _Q_ (BTU/hr) ≈ Floor Area (m²) × 500 BTU/hr per m² (source: ASHRAE 90.1 Annex A, adjusted for Philippine cooling-dominant climate)
+For residential: _Q_ ≈ Floor Area × 400 BTU/hr per m² (source: PD 1058, Section 3.2)
+</WikiCalloutBox>
 
 **Design Conditions (Philippine Standard, source: PD 1058, Clause 5.1):**
 - Outdoor dry-bulb: 32–34°C (90–93°F) year-round in lowlands
 - Indoor design: 24–26°C (75–79°F) for comfort
 - Relative humidity: 50–60% RH indoor target (source: ASHRAE 55 Thermal Comfort Standard)
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="Example" status="preserved"]
+<Example>
+Bangko Sentral ng Pilipinas office annex in Fort Bonifacio, 3,000 m², ground floor with high solar exposure. Load breakdown (source: ASHRAE fundamentals handbook):
+- Envelope (walls, roof, windows): 150 kW sensible
+- Internal gains (occupants at 100 W/person × 300 = 30 kW, equipment/lighting at 15 W/m² × 3,000 m² = 45 kW): 75 kW sensible
+- Ventilation (ASHRAE 62.1: 15 CFM/person × 300 occupants × 60 min/hr = 270,000 CFM = 450 m³/min, moisture load per tropical conditions): 35 kW sensible + latent
+- Total sensible: ~260 kW; latent: ~40 kW; grand total ≈ 300 kW = 85 TR
+
+Specify: 3 × 30 TR VRF outdoor units with simultaneous latent load capacity (dehumidification at full 40 kW latent). Refrigerant: R-32 (current standard, GWP = 675, transitioning from R-410A). COP target: 3.8 at design load (3.5–4.1 achievable).
+</Example>
 
 ### System Selection Decision Matrix
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="WikiExamTable" status="preserved"]
+<WikiExamTable headers={["Building Type", "Typical Area (m²)", "Recommended System Type", "Capacity Range", "Estimated First Cost per TR (PHP)", "Typical COP / Payback"]} rows={[["Small Residential (1–2-room)", "50–150", "Split Type (0.75–1.5 TR)", "0.75–1.5 TR", "₱40,000–50,000", "3.0 / N/A (no payback expected)"], ["Medium Residential (3–4-room)", "150–300", "Split Type (2–3 TR dual/multi)", "2–3 TR", "₱35,000–45,000", "3.2 / N/A"], ["Retail / Small Office", "300–1,000", "Split Type (4–6 TR multi-unit) or VRF entry-level", "4–10 TR", "₱32,000–38,000 (split) / ₱48,000–55,000 (VRF)", "3.2 (split) / 3.8 (VRF) / 6–8 years (VRF)"], ["Medium Office / Hotel", "1,000–5,000", "VRF or Chilled Water", "25–80 TR", "₱45,000–52,000 (VRF) / ₱50,000–62,000 (chiller)", "3.8 (VRF) / 4.5 (chiller) / 5–7 years"], ["Large Office / Hospital / Complex", "≥5,000", "Chilled Water (centrifugal)", "≥100 TR", "₱55,000–70,000", "4.5–5.5 / 4–6 years"], ["Data Center", "Varies (focused load)", "Chilled Water (precision) or VRF (small)", "Variable", "₱80,000–120,000 (precision critical)", "4.5+ (efficiency required)"]] } />
 
 _First cost estimates (source: Philippine construction cost indices, 2024–2025, market survey from HVAC contractors in NCR and Visayas)_
 _Payback calculated assuming electricity cost of ₱12–15 per kWh and 80% annual operating hours (source: Meralco tariff average)_
 
 ## Refrigerant Standards and Phaseout Timeline
 
-<ArticleMedia id="media-lea-util-002-04-system-types-and-applica" a type="image" caption="Refrigeration Cycle Diagram — Compressor, Condenser, Expansion, Evaporator" description="Standard vapor-compression refrigeration cycle showing: compressor (increases refrigerant pressure/temperature), condenser (rejects heat), expansion valve (drops pressure), evaporator (absorbs heat). R-32 (GWP=675) and R-410A (GWP=2088) phaseout timelines per Kigali Amendment annotated. COP formula and typical values (2.8-4.1) shown for each HVAC system type." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-util-002-04-system-types-and-applica" type="image" caption="Refrigeration Cycle Diagram — Compressor, Condenser, Expansion, Evaporator" alt="Standard vapor-compression refrigeration cycle showing: compressor (increases refrigerant pressure/temperature), condenser (rejects heat), expansion valve (drops pressure), evaporator (absorbs heat). R-32 (GWP=675) and R-410A (GWP=2088) phaseout timelines per Kigali Amendment annotated. COP formula and typical values (2.8-4.1) shown for each HVAC system type." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ### Current Refrigerants in the Philippines
 
@@ -149,18 +168,31 @@ _Payback calculated assuming electricity cost of ₱12–15 per kWh and 80% annu
 - Existing systems continue operating; servicing with recovered/recycled refrigerant permitted
 - Do not use in new systems
 
-[SLATECAMP_UI_BLOCK:ui_0007 component="Warn" status="preserved"]
+<Warn>
+R-32 flammability requires: (1) installer certification per ISO 5149; (2) charge size limits (≤2 kg for 220V residential units without secondary containment); (3) proper location away from ignition sources per PD 1058. Do not retrofit R-410A systems with R-32 without manufacturer approval and system redesign.
+</Warn>
 
 ### Energy Efficiency Ratings
 
-[SLATECAMP_UI_BLOCK:ui_0008 component="WikiCalloutBox" status="preserved"]
+<WikiCalloutBox title="COP and EER Conversion" variant="info">
+_Coefficient of Performance (COP)_ = Cooling output (kW) ÷ Input power (kW)
+_Energy Efficiency Ratio (EER)_ = Cooling output (BTU/hr) ÷ Input power (watts)
+Conversion: _COP_ = _EER_ ÷ 3.412 (source: ASHRAE Fundamentals Handbook, SI units standard)
+Example: 3.5 COP = 3.5 × 3.412 ≈ 11.9 EER
+</WikiCalloutBox>
 
 **Philippine Energy Efficiency Standards (source: Energy Efficiency Labeling Scheme, Republic Act 11285 implementing rules, 2023):**
 - Minimum EER: 9.5 EER for split systems ≤24,000 BTU/hr (≈2 TR)
 - Minimum SEER: 13 SEER for VRF systems (seasonal, accounting for part-load operation)
 - equivalent COP targets: 2.8 COP (split) / 3.8 COP (VRF) to meet minimum standards
 
-[SLATECAMP_UI_BLOCK:ui_0009 component="Example" status="preserved"]
+<Example>
+A 5 TR split unit operating 8 hours/day, 365 days/year at design load (25°C outdoor, 28°C indoor design):
+Annual cooling output = 5 TR × 12,000 BTU/hr × 8 hr/day × 365 days = 175.2 million BTU/year = 51.4 MWh/year
+Input power at 3.2 COP = 51.4 MWh ÷ 3.2 = 16.1 MWh/year electrical consumption
+Annual cost (₱12.50/kWh average Meralco): 16.1 MWh × ₱12,500/MWh = ₱201,250/year (verification: 5 TR × 3.517 kW = 17.585 kW input at full load × 8 × 365 = 51.3 MWh, consistent with COP calculation)
+Savings upgrading to 3.8 COP (VRF): 51.4 ÷ 3.8 = 13.5 MWh/year = ₱168,750/year, saving ₱32,500/year or 16% reduction
+</Example>
 
 ## Tropical Climate Considerations
 
@@ -175,7 +207,9 @@ Philippine climate: 70–90% RH year-round, 32–34°C daily highs (source: PAGA
 
 **Latent load in tropical regions:** ~30–40% of total cooling load (vs. 20% in temperate climates). Account in system sizing.
 
-[SLATECAMP_UI_BLOCK:ui_0010 component="Tip" status="preserved"]
+<Tip>
+In high-humidity zones (provinces near coasts, high-altitude areas with localized moisture), specify drain pan beneath all indoor units with 25 mm depth minimum and outlet to condensate collection. Failure risk: Water damage, mold growth, unit freeze-off in 6–12 months without proper drainage.
+</Tip>
 
 ### Outdoor Unit Placement and Typhoon Resilience
 
@@ -196,11 +230,23 @@ Tropical ambient (32–34°C) and high humidity (80%+ RH) cause rapid condensati
 - Discharge line: 6 mm insulation to prevent heat loss and protect personnel
 - Tracer heating for R-32 systems in high-humidity zones (risk of liquid flood-back on startup)
 
-[SLATECAMP_UI_BLOCK:ui_0011 component="Warn" status="preserved"]
+<Warn>
+Uninsulated suction lines in Philippines condense within 5–10 minutes of startup; water ingress into compressor causes acid formation and bearing failure within weeks. Never operate split or VRF systems without full-length insulated lineset.
+</Warn>
 
 ## Selection Workflow and Design Checklist
 
-[SLATECAMP_UI_BLOCK:ui_0012 component="WikiCalloutBox" status="preserved"]
+<WikiCalloutBox title="HVAC System Selection Process" variant="info">
+1. Establish design cooling load: _Q_ (BTU/hr or kW) using ASHRAE method or quick estimate (400–600 BTU/hr per m² commercial, 300–400 residential)
+2. Verify building type, orientation, occupancy pattern (continuous vs. intermittent)
+3. Compare system types by life-cycle cost: [Capital cost + (Energy cost × system lifespan)] ÷ system lifespan
+4. Select refrigerant: R-32 (new), R-410A (retrofit/legacy), R-22 (existing systems only; no new charge)
+5. Verify COP/EER meets Philippine Energy Efficiency Standards (minimum 9.5 EER split / 13 SEER VRF)
+6. Size condensate drainage and humidity control per PD 1058 Section 6.3
+7. Confirm outdoor unit bracing, insulation, and typhoon-resilience per site wind classification
+8. Obtain local building permit; coordinate with MEP engineer and contractor
+9. Commission system with refrigerant charge verification, duct/lineset leakage test (per PD 1058 Section 8), and performance rating test
+</WikiCalloutBox>
 
 ### Design Checklist (Quick Reference)
 

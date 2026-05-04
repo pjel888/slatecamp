@@ -1,4 +1,11 @@
-## What You Need to Know for the LEA
+## Learning Goal
+
+After studying this article, you should be able to:
+
+- Define liquidated damages and their purpose in construction contracts.
+- Explain how liquidated damages differ from penalties under Philippine law.
+- State the typical liquidated damages rate (1/10 of 1% per day of delay).
+- Describe the requirements for enforceability of liquidated damages clauses.
 
 The punch list is the detailed inventory of incomplete or defective work items identified during the architect's Substantial Completion inspection. The contractor prepares and submits the initial punch list, which the architect reviews and may supplement during the punch walk inspection. The architect certifies the punch list as an official contract document that establishes the contractor's remaining obligations before Final Completion. authority includes the right to access the project, verify work quality against drawings and specifications, review the contractor's submitted punch list, add any additional items during the punch walk, and certify that punch list items have been corrected before issuing Final Completion.
 
@@ -43,10 +50,53 @@ The contractor's obligation to complete punch list items at no additional cost i
 
 **Question Pattern 4:** Final inspection criteria—What must the architect verify during final inspection before issuing Final Completion certificate? (Tests architect's verification standard for punch item correction)
 
-**Question Pattern 5:** Withholding certificate—Under what conditions can the architect withhold the Final Completion certificate? (Tests architect's enforcement authority based on incomplete or improper corrections)
+**Question Pattern 5:** As-built documentation—What architect responsibility exists regarding as-built drawings and testing documentation required for occupancy? (Tests architect's coordination and documentation duties)
+
+<LawCallout code="ra9266" section="PD 1096 (National Building Code)" title="Certificate of Occupancy — Architect's Role">
+The Certificate of Occupancy is issued by the Building Official (local government), NOT the architect. The architect's role includes: (1) Design compliance — sealed drawings must comply with NBC; (2) Construction administration — inspect for code compliance; (3) Occupancy coordination — assist owner with required documentation (as-builts, test reports, compliance certificates). The architect's Substantial Completion certificate does NOT authorize occupancy — only the Building Official's Certificate of Occupancy does.
+</LawCallout>
+
+<ExamTip>
+  **LEA Priority — Certificate of Occupancy Key Points:**
+  1. Issued by Building Official (government), not architect
+  2. Separate from and often after Substantial Completion
+  3. Based on inspection against National Building Code
+  4. Architect is liable if design or construction supervision failed to ensure code compliance
+  5. Owner cannot legally occupy without Certificate of Occupancy
+</ExamTip>
 
 <Tip>Remember: Punch list = itemized outstanding work created by architect at Substantial Completion inspection. Contractor must complete at no extra cost by architect-specified deadline. Architect verifies completion and issues Final Completion certificate. Punch list is binding—not optional or negotiable.</Tip>
 
-## Common Mistakes
+**Question Pattern 5:** As-built documentation—What architect responsibility exists regarding as-built drawings and testing documentation required for occupancy? (Tests architect's coordination and documentation duties)
 
-<WikiMistakeList mistakes={["Assuming punch list items are suggestions the contractor may decline to do (Punch list items are binding contract obligations)", "Thinking architect creates punch list weeks after Substantial Completion (Punch list must be prepared contemporaneously during Substantial Completion inspection)", "Confusing punch list work with change order work (Change orders are new work; punch list is incomplete original work—no compensation)", "Believing major structural defects can be punch list items (Major defects indicate Substantial Completion was premature; punch items are minor)", "Assuming architect must approve punch list with contractor before issuing it (Architect certifies punch list—approval is not required; contractor must comply)", "Thinking contractor gets paid for punch list completion (Punch list work is original scope—no additional compensation)", "Confusing Final Completion certificate with Substantial Completion (Substantial = occupancy ready; Final = all punch items done and architect verified)", "Assuming punch list is informal or advisory (Punch list is formal contract document establishing contractor's binding obligations)"] />
+<LawCallout code="ra9266" section="PD 1096 (National Building Code)" title="Certificate of Occupancy — Architect's Role">
+The Certificate of Occupancy is issued by the Building Official (local government), NOT the architect. The architect's role includes: (1) Design compliance — sealed drawings must comply with NBC; (2) Construction administration — inspect for code compliance; (3) Occupancy coordination — assist owner with required documentation (as-builts, test reports, compliance certificates). The architect's Substantial Completion certificate does NOT authorize occupancy — only the Building Official's Certificate of Occupancy does.
+</LawCallout>
+
+<ExamTip>
+  **LEA Priority — Certificate of Occupancy Key Points:**
+  1. Issued by Building Official (government), not architect
+  2. Separate from and often after Substantial Completion
+  3. Based on inspection against National Building Code
+  4. Architect is liable if design or construction supervision failed to ensure code compliance
+  5. Owner cannot legally occupy without Certificate of Occupancy
+</ExamTip>
+
+<Tip>Remember: Punch list = itemized outstanding work created by architect at Substantial Completion inspection. Contractor must complete at no extra cost by architect-specified deadline. Architect verifies completion and issues Final Completion certificate. Punch list is binding—not optional or negotiable.</Tip>
+
+---
+
+## Related Articles
+
+- [Standard Owner-Architect Agreement](lea-prac-ctr-001)
+- [Basic vs. Additional Services](lea-prac-ctr-002)
+- [Suspension and Termination](lea-prac-ctr-003)
+- [Bid Documents and Addenda](lea-prac-ctr-008)
+- [Performance Bonds](lea-prac-ctr-010)
+- [Certificates of Payment](lea-prac-ctr-014)
+- [Retention Money](lea-prac-ctr-015)
+- [Change Orders](lea-prac-ctr-016)
+- [Dispute Resolution](lea-prac-ctr-020)
+- [Fee Compensation Methods](lea-prac-cmp-001)
+
+<!-- no-media-needed: professional practice article, text/tables/UI blocks are optimal format -->

@@ -62,22 +62,24 @@ As of 2026, the Securities and Exchange Commission (SEC) has fully implemented m
 
 For architectural firms working on projects for listed companies, the building design process must now generate measurable sustainability data. Architects are increasingly required to provide their corporate clients with detailed metrics—such as projected energy consumption, carbon footprint analyses, water efficiency data, and materials lifecycle assessments—to fulfill the client's SEC reporting requirements. Furthermore, architectural firms that are themselves publicly listed must comply with these disclosure obligations regarding their own corporate operations and environmental impact.
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
+<LawCallout code="denr" section="DAO 2003-30 - EIS Requirements">
+Legal Basis: PD 1151 (Environmental Policy), PD 1152 (Environmental Code), DENR DAO 2003-30 (EIA System). Environmental Compliance Certificate (ECC) required for environmentally critical projects or projects in critical areas.
+</LawCallout>
 Extracted summary:
 - Props: code="ra9266" title="Environmental Laws — EIA System and DENR DAO"
 - Text: Legal Basis: PD 1151 (Environmental Policy), PD 1152 (Environmental Code), DENR DAO 2003-30 (EIA System). Environmental Compliance Certificate (ECC) required for environmentally critical projects or projects in critical areas.
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
+<Warn />
 Extracted summary:
 - Props: (none)
 - Text: ⚠️ ECC REQUIREMENT: Projects classified as Environmentally Critical (ECPs) or in Environmentally Critical Areas (ECAs) REQUIRE an ECC before construction. Construction without an ECC is an environmental law violation. — expect this as a trap answer on the LEA.
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
+<ExamTip />
 Extracted summary:
 - Props: (none)
 - Text: EIA Process: (1) Project Screening → (2) Scoping → (3) EIA Study → (4) Review & Evaluation (DENR) → (5) Decision (ECC issued/denied). The architect coordinates with environmental specialists but does not prepare the EIA alone.
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="Tip" status="preserved"]
+<Tip />
 Extracted summary:
 - Props: (none)
 - Text: Key environmental laws for architects: PD 1151 (Policy Statement), PD 1152 (Environmental Code), RA 8749 (Clean Air Act), RA 9275 (Clean Water Act), RA 9003 (Ecological Solid Waste Management), DENR DAO 2003-30 (EIA System).
@@ -86,7 +88,7 @@ Extracted summary:
 
 
 
-<ArticleMedia type="image" caption="Environmental Compliance Process — EIA, ECC, and DENR Regulations" description="Process flowchart showing environmental compliance for architectural projects: Project screening → EIA required? → If yes: EIS preparation → Public hearing → DENR EMB review → ECC issuance → Compliance monitoring. Key environmental laws referenced: PD 1586 (EIS System), PD 1067 (Water Code, 3/20/40m easements), RA 9275 (Clean Water Act), RA 9003 (Solid Waste Management)." />
+<ArticleMedia type="image" caption="Environmental Compliance Process — EIA, ECC, and DENR Regulations" alt="Process flowchart showing environmental compliance for architectural projects: Project screening → EIA required? → If yes: EIS preparation → Public hearing → DENR EMB review → ECC issuance → Compliance monitoring. Key environmental laws referenced: PD 1586 (EIS System), PD 1067 (Water Code, 3/20/40m easements), RA 9275 (Clean Water Act), RA 9003 (Solid Waste Management)." />
 ## Related Articles
 
 - [Sole Proprietorship](lea-prac-frm-001)

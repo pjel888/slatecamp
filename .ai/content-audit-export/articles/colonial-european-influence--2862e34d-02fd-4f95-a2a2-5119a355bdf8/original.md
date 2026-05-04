@@ -127,3 +127,5 @@ D. Minimalist International Style concrete frames with ribbon windows
 ## Cross‑References
 
 **American Colonial Era**, **Spanish Colonial Bahay Na Bato**, **Spanish Colonial Laws Of The Indies**, **Modern Filipino Identity**
+
+<!-- no-media-needed: existing content format is sufficient without visual media -->

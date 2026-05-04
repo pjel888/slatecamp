@@ -4,7 +4,7 @@
 
 Apply Revised National Plumbing Code fixture unit values to calculate drainage fixture unit (DFU) loads, size horizontal branches and vertical stacks, and determine minimum pipe diameters for sanitary drainage systems.
 
-<ArticleMedia id="media-lea-util-001-08-what-you-need-to-know-fo" a type="image" caption="Drainage Fixture Unit (DFU) Calculation — Horizontal Branch vs. Vertical Stack Sizing" description="Reference diagram showing DFU values for common fixtures (water closet=4-6, lavatory=1-2, shower=2-3, kitchen sink=2) and how they sum to determine minimum pipe diameter. Includes comparison of horizontal branch capacity vs. vertical stack capacity for same pipe diameter per Revised National Plumbing Code Table 322.1." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-util-001-08-what-you-need-to-know-fo" type="image" caption="Drainage Fixture Unit (DFU) Calculation — Horizontal Branch vs. Vertical Stack Sizing" alt="Reference diagram showing DFU values for common fixtures (water closet=4-6, lavatory=1-2, shower=2-3, kitchen sink=2) and how they sum to determine minimum pipe diameter. Includes comparison of horizontal branch capacity vs. vertical stack capacity for same pipe diameter per Revised National Plumbing Code Table 322.1." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 
 <ExamTip>

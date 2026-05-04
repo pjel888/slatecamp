@@ -6,6 +6,10 @@ Identify parametric design as a computational approach where changing a single p
 ## Core Concept
 **Parametricism** emerged in the early 2000s as architecture's primary 21st-century methodology. **Zaha Hadid** and her collaborator **Patrik Schumacher** formalized the term and philosophy. Parametricism uses algorithmic design systems where variables (parameters) and their relationships generate form. Change one variable—a client brief, a site constraint, a performance goal—and the entire design updates automatically through the parametric model.
 
+
+<ArticleMedia id="media-hist-008-07b-core-concept" layout="single" type="image" status="placeholder" alt="View of the Heydar Aliyev Center (Baku, 2007–2012, Zaha Hadid Architects), showing the continuous fluid surface, seamless transitions between floor, wall, and roof, and the computational parametric modeling enabling the complex geometry." caption="Heydar Aliyev Center — Hadid's Parametric Fluid Form" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
+
 <Tip>
 **Parametric design = change parameters, the entire design updates automatically.** This is not hand-sketching or iterative drawing—it is algorithmic. Every surface, opening, and element derives from explicit parameters and relationships. This is how contemporary computational architecture works.
 </Tip>
@@ -29,6 +33,10 @@ Parametricism is not just an elite avant-garde movement—it is now standard arc
 Parametricism claims that universal design principles no longer make sense in a digitally mediated, customized, performance-optimized world. Rather than grid-based repetition or hierarchical order, Parametricism generates **differentiation within coherence**: each element is unique, but all are derived from a unified parametric logic. This reflects contemporary production systems, where digital fabrication (CNC milling, 3D printing, robotic assembly) can economically produce variations.
 
 The movement faces substantial critique. Some argue that parametricism generates complexity for its own sake—the computational logic dictates form rather than meaningful design intent. Others note that the aesthetic is remarkably consistent across practitioners and projects: flowing, biomorphic, and often seemingly weightless, despite ostensible responsiveness to performance criteria. Nonetheless, parametric methods are now standard in architectural practice, from housing to infrastructure.
+
+
+<ArticleMedia id="media-hist-008-07b-core-concept" layout="single" type="image" status="placeholder" alt="Diagram contrasting parametric design (single model with algorithmic parameters, where changing one value updates the entire design) with traditional iterative drafting (sequential 2D drawings requiring manual updates to each view)." caption="Parametric vs. Traditional Design Workflow" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
 
 ## Key Facts and Testable Items
 
@@ -63,6 +71,8 @@ The movement faces substantial critique. Some argue that parametricism generates
 - **Performance-based design**: Design optimization responding to explicit performance criteria (structural efficiency, daylight access, thermal comfort, traffic flow) rather than aesthetic precedent.
 - **Algorithmic architecture**: Design generated through computational algorithms; the contemporary expression of systematic, rule-based design methodology.
 - **Topology**: The mathematical study of form properties invariant under continuous deformation; influences parametric structural and spatial logic.
+
+<ArticleMedia id="media-hist-008-07b-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Diagram of parametric design methodology showing how changing a single parameter (site, program, performance) updates the entire design model, with Zaha Hadid's Heydar Aliyev Center as the primary example of computational fluid form.\" caption=\"Parametricism — Computational Design Methodology\" suggestedAsset=\"Timeline diagram\" placementIntent=\"Timeline diagram for architectural period\" />
 
 ## Related Articles
 

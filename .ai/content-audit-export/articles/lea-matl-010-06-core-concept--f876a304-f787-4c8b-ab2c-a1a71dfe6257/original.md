@@ -10,6 +10,13 @@ Alternatively, many estimators use a simpler direct count: for standard 300 × 3
 
 Waste factors account for breakage during transport, installation, and trimming. Typical waste is 5–10% for straight runs, and 10–15% for complex layouts with many cuts or patterns.
 
+
+<ArticleMedia id="media-tile-quantity-diagram" layout="single" type="image" status="placeholder"
+  alt="Diagram showing tile quantity calculation: floor/wall area, trim, thresholds, and waste factor for different tile sizes and layouts"
+  caption="Future diagram: tile quantity estimation — area, trim, thresholds, and waste factor calculation"
+  suggestedAsset="Floor plan with tile layout grid and quantity callouts"
+  placementIntent="Visualizes tile estimation process including waste and trim" />
+
 ## Key Provisions
 
 | Tile Size (mm) | Tiles per m² (approx.) | Grout Joint | Common Use | LEA Relevance |
@@ -64,6 +71,12 @@ Estimated cost at 1,200 pesos/m² = 50 m² × 1,200 = 60,000 pesos
 **Answer: 161 tiles, approximately 21 boxes, estimated 60,000 pesos**
 </Example>
 
+
+<ArticleMedia id="media-tile-estimation-example" layout="single" type="image" status="placeholder"
+  alt="Step-by-step tile estimation example showing area calculation, tile count, waste factor, trim requirements, and grout quantity for a floor installation"
+  caption="Future diagram: tile estimation worked example — area, tile count, waste, and grout"
+  suggestedAsset="Step-by-step illustrated calculation example"
+  placementIntent="Provides practical example of tile quantity estimation" />
 ## Quick Reference: Tile Estimation Table
 
 | Tile Size | Tiles per m² | Waste Factor | Total Tiles per m² (incl. 10% waste) | Common Rooms |

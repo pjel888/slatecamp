@@ -12,6 +12,10 @@ Explain how Mesopotamian architects used mud brick to create monumental structur
 
 Mesopotamian architecture spans roughly 3500–539 BCE across the Tigris-Euphrates floodplain (modern Iraq, Syria, eastern Turkey). Unlike megalithic cultures that worked with stone, Mesopotamia's available material was mud and clay. Mesopotamian architects developed the **mud brick**—shaped, dried in the sun, and stacked with mud mortar—as their primary building medium. This constraint, seemingly limiting, drove innovation: mud brick is plastic, allowing for varied forms; it is cheap and renewable, enabling monumental construction; and it conducts heat poorly, providing climate control in a blazing landscape.
 
+
+<ArticleMedia id="media-hist-001-02-core-concept" layout="single" type="image" status="placeholder" alt="Reconstructed view of the Ziggurat of Ur (built under Ur-Nammu, c. 2100 BCE, modern Iraq), showing the rectangular stepped platform, central stairway, and small temple shrine at the apex." caption="Ziggurat of Ur — Stepped Mud-Brick Temple Tower" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
+
 The dominant building type was the **ziggurat**, a stepped tower of mud brick serving religious and administrative functions. The ziggurat was not merely a tower but a architectural statement of cosmic order. Its stepped form represented a link between earthly and divine realms; it elevated the temple sanctuary above the floodwaters and above the surrounding city. The most famous examples are the **Ziggurat of Ur** (built under **Ur-Nammu**, c. 2100 BCE) and the later **Ziggurat of Babylon** (associated with the Temple of Marduk, rebuilt multiple times until c. 610 BCE).
 
 <Tip>
@@ -33,6 +37,10 @@ Beyond ziggurats, Mesopotamian cities featured palace complexes, city walls, and
 City walls were essential—not for aesthetic effect but for flood control and defense. The **walls of Ur** and **Uruk** were massive mud brick constructions, reinforced with bitumen in lower courses. Gates were monumental, sometimes featuring mud brick towers at corners.
 
 The absence of stone, combined with the floodplain environment, had architectural consequences: buildings required frequent maintenance, did not survive as well as stone structures, and walls had to slope inward slightly to prevent collapse (a practical response, though it gave Mesopotamian architecture a characteristic tapered appearance). Unlike stone-based civilizations, Mesopotamia left fewer architectural remains; our knowledge comes from archaeological excavation, cuneiform texts describing construction, and later written accounts by Greek historians.
+
+
+<ArticleMedia id="media-hist-001-02-core-concept" layout="single" type="image" status="placeholder" alt="Plan diagram of a typical Mesopotamian palace complex showing the rectangular courtyard plan, surrounding rooms, and monumental gateways, based on the Palace of Sennacherib at Nineveh." caption="Mesopotamian Palace Plan — Courtyard Layout" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
 
 ## Key Facts and Testable Items
 
@@ -77,6 +85,8 @@ The absence of stone, combined with the floodplain environment, had architectura
 **City wall:** Defensive and flood-control barrier, constructed from mud brick and often reinforced with towers and gates.
 
 **Relief:** Sculptural narrative carved or modeled on a wall surface, common in Assyrian palace decoration.
+
+<ArticleMedia id="media-hist-001-02-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Timeline of Mesopotamian architectural development (c. 3500–330 BCE) showing Sumerian ziggurats, Akkadian palaces, Babylonian Ishtar Gate, and Assyrian palace complexes at Nimrud and Nineveh, with the evolution of mud brick construction and urban planning." caption="Mesopotamian Architecture — Chronological Timeline" suggestedAsset="Timeline diagram" placementIntent="Timeline diagram for architectural period" />
 
 ## Related Articles
 

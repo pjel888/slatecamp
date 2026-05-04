@@ -2,16 +2,16 @@
 
 ## Learning Goal
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
+<Tip>Focus on the architect's defining philosophy and key built works. The LEA frequently tests the relationship between an architect's theoretical principles and their physical execution in specific buildings.</Tip>
 Extracted summary:
-[SLATECAMP_UI_BLOCK:ui_0002 component="Example" status="preserved"]
+<Example>The Barcelona Pavilion (1929) by Mies van der Rohe exemplifies free-flowing space through freestanding planes of marble, onyx, and glass supported by cruciform steel columns — no interior doors, no corridors, no enclosed rooms.</Example>
 Extracted summary:
-[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
+<Tip>Focus on the architect's defining philosophy and key built works. The LEA frequently tests the relationship between an architect's theoretical principles and their physical execution in specific buildings.</Tip>
 Extracted summary:
 - Props: (none)
 - Text: Focus on the architect's defining philosophy and key built works. The LEA fre...
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+<Tip>Focus on the architect's defining philosophy and key built works. The LEA frequently tests the relationship between an architect's theoretical principles and their physical execution in specific buildings.</Tip>
 Extracted summary:
 - Props: (none)
 - Text: Focus on the architect's defining philosophy and key built works. The LEA fre...
@@ -55,7 +55,7 @@ You are standing inside the Barcelona Pavilion and notice there are no interior 
 | Free-Flowing Plan | Non-rectilinear spatial arrangement using freestanding planes | Look for: walls that do not touch floor and ceiling simultaneously; sliding spatial layers |
 | Cruciform Column | A column with a cross-shaped (+) section | Look for: Barcelona Pavilion, Tugendhat House — these are Mies's signature structural members |
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Example" status="preserved"]
+<Example>The Barcelona Pavilion (1929) by Mies van der Rohe exemplifies free-flowing space through freestanding planes of marble, onyx, and glass supported by cruciform steel columns — no interior doors, no corridors, no enclosed rooms.</Example>
 Extracted summary:
 
 component="ExamTip" status="preserved"]
@@ -63,7 +63,7 @@ component="ExamTip" status="preserved"]
 **LEA Pattern:** Questions about this architect often present an unfamiliar b...
 </Note>
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
+<ExamTip>**LEA Pattern:** Questions about this architect often present an unfamiliar building and ask you to identify the architect based on characteristic details — look for signature elements like cruciform columns (Mies), pilotis (Corbusier), or structural expressionism (Gaudi).</ExamTip>
 Extracted summary:
 - Props: (none)
 - Text: **LEA Pattern:** Questions about this architect often present an unfamiliar b...

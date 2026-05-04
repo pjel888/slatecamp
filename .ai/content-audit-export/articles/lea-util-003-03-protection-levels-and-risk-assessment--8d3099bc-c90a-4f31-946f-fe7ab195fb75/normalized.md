@@ -7,7 +7,7 @@ Apply electrical protection levels and the fault hierarchy — short circuit, gr
 
 Lightning protection systems are designed to one of four protection levels defined in IEC 62305 and adopted in the Philippine Electrical Code (PEC):
 
-<ArticleMedia id="media-lea-util-003-03-protection-levels-and-ri" a type="image" caption="Lightning Protection — Rolling Sphere Method and Protection Angle Method" description="Comparative diagram showing two lightning protection design methods: (1) Rolling Sphere Method — sphere of radius (20-60m by Level I-IV) rolled across building roof, protected surfaces shown in green, unprotected zones requiring additional air terminals; (2) Protection Angle Method — cone of protection from air terminal with angle α (25°-60° by level). Air terminal spacing, down conductor routing, and grounding electrode shown." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-util-003-03-protection-levels-and-ri" type="image" caption="Lightning Protection — Rolling Sphere Method and Protection Angle Method" alt="Comparative diagram showing two lightning protection design methods: (1) Rolling Sphere Method — sphere of radius (20-60m by Level I-IV) rolled across building roof, protected surfaces shown in green, unprotected zones requiring additional air terminals; (2) Protection Angle Method — cone of protection from air terminal with angle α (25°-60° by level). Air terminal spacing, down conductor routing, and grounding electrode shown." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 
 | Protection Level | Risk Reduction | Primary Use | Effectiveness |
@@ -154,7 +154,7 @@ All mesh conductors must bond to down conductor network at multiple points.
 
 ### 1. Air Terminals (Lightning Rods)
 
-<ArticleMedia id="media-lea-util-003-03-protection-levels-and-ri" a type="image" caption="Lightning Protection System Components — Air Terminal, Down Conductor, Grounding Electrode, Bonding" description="Isometric building diagram showing complete LPS: air terminals (lightning rods) on roof edges and high points, down conductors along building corners (minimum 2, spaced ≤25m), ground rods (2.4-3m deep, 16mm copper), ring conductor around building base, bonding of metal roof equipment (HVAC, satellite dishes). Ground resistance target ≤10 ohms per PEC Part 2." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-util-003-03-protection-levels-and-ri" type="image" caption="Lightning Protection System Components — Air Terminal, Down Conductor, Grounding Electrode, Bonding" alt="Isometric building diagram showing complete LPS: air terminals (lightning rods) on roof edges and high points, down conductors along building corners (minimum 2, spaced ≤25m), ground rods (2.4-3m deep, 16mm copper), ring conductor around building base, bonding of metal roof equipment (HVAC, satellite dishes). Ground resistance target ≤10 ohms per PEC Part 2." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 
 **Design per PEC Article 2.50:**

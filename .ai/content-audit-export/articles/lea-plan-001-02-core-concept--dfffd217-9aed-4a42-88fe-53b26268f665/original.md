@@ -14,6 +14,7 @@ By **time horizon**, planning is categorized as strategic (long-term vision, typ
 By **approach**, planning frameworks vary. **Rational comprehensive planning** assumes extensive data collection and analysis lead to optimal plans — the postwar dominant model. **Incremental planning** (Lindblom, 1959) recognizes that comprehensive rationality is impossible; planners make small successive decisions. **Advocacy planning** (Davidoff, 1965) asserts planners represent communities, not abstract ideals. **Communicative planning** (Heleay, 1990s) treats planning as dialogue and consensus-building, not technical expertise. **Radical planning** (Clavel, Forester, 1970s–80s) explicitly challenges power structures in service of social justice.
 
 In the Philippines, planning is mandatory at all administrative levels under **RA 7160** (Local Government Code, 1991). The **CLUP (Comprehensive Land Use Plan)** is the required strategic planning instrument at provincial, city, and municipal levels, covering a 10-year horizon. The CLUP is distinctly _strategic_ (not tactical or operational) and is implemented through the zoning ordinance and sectoral plans (transportation, infrastructure, housing). This hierarchy — national framework → regional plans → CLUPs → zoning ordinances → site-level designs — organizes planning authority and aligns development across scales.
+<ArticleMedia id="media-lea-plan-001-02-core-concept" a type="image" caption="Planning Scales and Approaches — National to Site Level" description="Hierarchical diagram showing planning scales: National (regional development) → Regional → Provincial → City/Municipal (CLUP) → District → Neighborhood → Site. Alongside, classification by time horizon (strategic 10+ yr, tactical 1-5 yr, operational 0-1 yr) and approach (rational, incremental, advocacy, communicative, radical)." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
@@ -36,7 +37,6 @@ The LEA tests planning classifications through scenario questions: "A city counc
 <Tip>
 **Time horizon memory:** STRATEGIC = 10–20 years (think 2045 vision). TACTICAL = 1–5 years (specific projects starting soon). OPERATIONAL = 0–1 year (permits, budgets, now). Always match the time horizon to the classification.
 </Tip>
-
 
 **Exam Tip:** The LEA tests classification through scenarios, not definitions. Always ask: what time horizon (10+ yr = strategic, 1-5 yr = tactical, 0-1 yr = operational)? What approach (rational, incremental, advocacy, communicative)?
 

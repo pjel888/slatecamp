@@ -14,7 +14,7 @@ After studying this article, you should be able to:
 
 In Design-Build by Administration, the architect provides comprehensive services including all regular design phases and construction management. The architect organizes and hires construction personnel, negotiates with contractors, procures materials and equipment, maintains accounts, and manages all business transactions related to project construction.
 
-<ArticleMedia id="media-lea-prac-svc-020-design-build-by-adminis" a type="image" caption="Design-Build by Administration vs. Guaranteed Maximum Cost — Risk Comparison" description="Comparison diagram contrasting two Design-Build models: Administration (architect manages construction, no cost guarantee, % of PCC fee, collaborative risk) vs. Guaranteed Maximum Cost (cost guaranteed ≤10% over estimate, architect bears financial risk, savings shared equally 50/50, 10% of PCC fee). Shows cost control mechanisms and liability thresholds for each." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-prac-svc-020-design-build-by-adminis" type="image" caption="Design-Build by Administration vs. Guaranteed Maximum Cost — Risk Comparison" alt="Comparison diagram contrasting two Design-Build models: Administration (architect manages construction, no cost guarantee, % of PCC fee, collaborative risk) vs. Guaranteed Maximum Cost (cost guaranteed ≤10% over estimate, architect bears financial risk, savings shared equally 50/50, 10% of PCC fee). Shows cost control mechanisms and liability thresholds for each." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 This model places responsibility for technical excellence and professional coordination entirely on the architect.
 
@@ -52,13 +52,22 @@ Both models require clear contractual definition of scope, responsibilities, cha
 
 Successful Design-Build relationships, regardless of model, depend on transparency about cost factors, clear communication about design implications, and shared commitment to project success. The contractual structure provides the framework, but professional integrity and collaborative problem-solving determine actual outcomes.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="KeyValues" status="preserved"]
+<SPP207RefServices />
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="ProcessFlow" status="preserved"]
+<ProcessFlow>
+<ol>
+  <li><strong>Project Definition</strong> — Problem identification</li>
+  <li><strong>Schematic Design</strong> — 15% fee; conceptual design</li>
+  <li><strong>Design Development</strong> — 20% fee; detailed design</li>
+  <li><strong>Contract Documents</strong> — 50% fee; construction docs</li>
+  <li><strong>Bidding/Negotiation</strong> — 5% fee; contractor selection</li>
+  <li><strong>Construction Admin.</strong> — 10% fee; site visits</li>
+</ol>
+</ProcessFlow>
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
+<LawCallout code="irr" section="SPP Documents" title="Professional Practice Framework">SPP Documents 201–209 establish standards for architectural services scope, fee structures, and professional responsibilities under RA 9266.</LawCallout>
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
+<ExamTip>Fee distribution: SD=15%, DD=20%, CD=50%, BA=5%, CA=10%. Contract Documents (50%) is the largest phase. Cumulative: 15%→35%→85%→90%→100%.</ExamTip>
 
 ---
 
@@ -75,4 +84,4 @@ Successful Design-Build relationships, regardless of model, depend on transparen
 - [Fee Compensation Methods](lea-prac-cmp-001)
 - [Owner-Architect Agreement](lea-prac-ctr-001)
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="KeyValues" status="preserved"]
+<KeyValues items={[{"value": "15%", "label": "Schematic Design"}, {"value": "20%", "label": "Design Development"}, {"value": "50%", "label": "Contract Docs"}, {"value": "5%", "label": "Bidding Assist"}, {"value": "10%", "label": "Constr. Admin."}]} />

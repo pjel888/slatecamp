@@ -34,7 +34,6 @@ When the Owner hires an Architect or a firm to **coordinate the whole range of C
 
 </Callout>
 
-
 Three foundational principles govern the PM role:
 
 1. **The PM does NOT relieve designers or contractors** of their respective normal duties and responsibilities in design and construction
@@ -131,7 +130,6 @@ In addition to coordinating all CAS services, the PM has a specifically defined 
 
 </Callout>
 
-
 This means the PM's engagement begins **before construction starts** — ideally during the design development stage — so that programming, procurement planning, budget controls, and contractor pre-qualification are all in place before the project goes to bid.
 
 #### Construction Phase
@@ -141,7 +139,6 @@ This means the PM's engagement begins **before construction starts** — ideally
 *"If the Project Manager (PM) also serves as the Construction Manager (CM) to oversee time, cost, and quality control during the construction of the project, he shall provide the services detailed under SPP Documents 204-A and/or 204-B."*
 
 </Callout>
-
 
 The PM's default role during construction is **coordination and oversight**. If the PM also takes on the CM role, the full SPP 204-A/204-B scope applies and additional compensation is owed.
 
@@ -162,7 +159,6 @@ The PM's default role during construction is **coordination and oversight**. If 
 | **SPP 206 (PM layer)** | **Coordination of ALL above** | **Pre-construction + Construction PM** |
 
 </ComparisonTable>
-
 
 ***
 
@@ -193,7 +189,6 @@ To perform the variety of CAS services, the Architect **must make full use of hi
 | Lawyers | Contracts, permits, legal compliance |
 
 </ComparisonTable>
-
 
 This multi-disciplinary team model is the defining feature of CAS — the Architect as PM does not work alone, but assembles and leads the best team for the specific project.
 
@@ -226,7 +221,6 @@ The PM operates as a **member of the Owner-Architect-Engineer-Contractor (OAEC) 
 
 </ComparisonTable>
 
-
 The PM sits atop the coordination hierarchy — not as a superior to the designer or contractor in their respective domains, but as the **integrating authority** who ensures all team members deliver on schedule, within budget, and at the required quality level.
 
 ***
@@ -244,7 +238,6 @@ The primary compensation method for the Project Manager is a **percentage of the
 *"The Project Manager is compensated on a percentage basis, as shall be described in the Architect's Guidelines."*
 
 </Callout>
-
 
 The **Recommended Professional Fee (RPF) for Project Management Services is 2% to 5% of the Project Construction Cost (PCC)**. The exact rate within this range depends on:
 
@@ -277,7 +270,6 @@ While the percentage method is primary, the Architect's Guidelines also recogniz
 
 </ComparisonTable>
 
-
 ***
 
 ## 5. CAS vs. Individual SPP Engagements
@@ -296,7 +288,6 @@ A critical question in practice is: **when should a client engage CAS under SPP 
 | **Construction Oversight** | CSG/CM hired separately | PM coordinates CSG/CM, may assume both roles |
 
 </ComparisonTable>
-
 
 The key insight is that **CAS does not replace the individual services** — it adds a management layer on top of them. The total cost of a CAS engagement includes both the individual SPP fees and the PM fee.
 
@@ -334,7 +325,6 @@ This three-dimensional primacy (Creator–Author–Coordinator) is what distingu
 
 </ComparisonTable>
 
-
 ***
 
 ## 8. Practical Notes for Architects and Clients
@@ -353,15 +343,23 @@ This three-dimensional primacy (Creator–Author–Coordinator) is what distingu
 
 ---
 
-
-
 ---
 
 ## Exam Tip
 
 LEA Trap: Comprehensive = SPP 201 + 202 + 204 + 205 in a single contract. Basic fee = 15% of construction cost (max). Not included: specialized services (203). Comprehensive is a BUNDLE — the 15% ceiling applies to the bundle, not to each phase. The most tested: if a client asks for 'all services', it likely triggers SPP 206 (Comprehensive), not just SPP 202.
 
+
+
+---
+
+## Exam Tip
+
+ALE Trap: Comprehensive = SPP 201 + 202 + 204 + 205 in a single contract. Basic fee = 15% of construction cost (max). Not included: specialized services (203). Comprehensive is a BUNDLE — the 15% ceiling applies to the bundle, not to each phase. The most tested: if a client asks for 'all services', it likely triggers SPP 206 (Comprehensive), not just SPP 202.
+
 ## Cross‑References
 
 **Spp Doc 201 Pre Design Services**, **Spp Doc 202 Regular Design Services**, **Spp Doc 205 Post Construction Services**, **Spp Doc 207 Design Build Services**
 
+
+<!-- no-media-needed: SPP document reference, service scope text is optimal -->

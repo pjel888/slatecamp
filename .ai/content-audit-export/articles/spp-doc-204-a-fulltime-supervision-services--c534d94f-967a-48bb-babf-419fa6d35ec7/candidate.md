@@ -16,7 +16,11 @@ This document directly addresses the gap left by SPP 202 Regular Design Services
 
 ## Legal and Regulatory Basis
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
+<Callout variant="authority" title="Legal Authority: R.A. No. 9266 — The Architecture Act of 2004">
+
+This SPP document is promulgated as part of the Supplemental Implementing Rules and Regulations (IRR) of **Republic Act No. 9266**, approved 27 July 2010. Compliance is mandatory for all Registered and Licensed Architects (RLAs) and Architectural Firms (AFs) in the Philippines.
+
+</Callout>
 
 Fulltime Supervision Services must be rendered by a **Registered and Licensed Architect (RLA)** acting as the **Architect-in-charge of construction (Aicc)**. The Aicc is **directly and professionally responsible and civilly liable** for the construction supervision of the project.
 
@@ -55,7 +59,11 @@ This dual accountability structure — answerable to both Owner and Architect �
 
 ## Scope of Services
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Callout" status="preserved"]
+<Callout variant="lea-watch">
+
+**SPP 204-A (Fulltime Supervision)** vs. **SPP 204-B (Construction Management)** is a classic LEA trap. 204-A means the architect is physically on-site full-time and is personally liable for construction quality. 204-B is a management/coordination role — the architect does not directly supervise tradesmen.
+
+</Callout>
 
 SPP 204-A defines four primary service areas for fulltime supervision. Detailed tasks are specified under the Architect's Guidelines:
 
@@ -111,7 +119,16 @@ The CSG maintains an organized filing system of all project documentation, inclu
 
 ## Scope of Services at a Glance
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="ComparisonTable" status="preserved"]
+<ComparisonTable>
+
+| Service | What the CSG Does | Key Output |
+|---|---|---|
+| **Quality Control** | Verifies compliance with Contract Documents through QCP | Quality Control Plan, inspection certificates |
+| **Evaluation of Construction Work** | Assesses conformance, workmanship, progress, and materials | Progress evaluation reports |
+| **Daily Inspection Reports** | Documents daily activities, observations, and instructions | Daily Inspection Reports (DIR) |
+| **Filing of Documents** | Organizes all project records and submittals | Complete project documentation file |
+
+</ComparisonTable>
 
 ***
 
@@ -169,7 +186,11 @@ Where:
 - \(M\) = Multiplier (ranging from **1.5 to 2.5**) to account for overhead and reasonable profit, depending on the office set-up and complexity of the project
 - \(R\) = Reimbursable expenses (transportation, out-of-town living allowances for staff assigned more than 100 km from the office, extra printing, overseas communications, lab tests, etc.)
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="Callout" status="preserved"]
+<Callout variant="note">
+
+The architect must disclose to the client, **at the start of the commission**, the rates of professionals and personnel assigned to the project and the multiplier to be applied, before agreeing on this method.
+
+</Callout>
 
 ### 4.3 Professional Fee Plus Expenses
 
@@ -191,7 +212,18 @@ More than one method may be applied to a single project. For example, the princi
 
 ### Compensation Methods at a Glance
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="ComparisonTable" status="preserved"]
+<ComparisonTable>
+
+| Method | Best Used For | Key Feature |
+|---|---|---|
+| % of PCC | All regular construction projects | Separate rate from SPP 202 design fee |
+| MDPE | Variable-scope, research-intensive work | Multiplier 1.5–2.5 on personnel hours |
+| Professional Fee + Expenses | Ongoing/repeat client relationships | Fixed sum + reimbursements |
+| Lump Sum / Fixed Fee | Government projects; well-defined scope | Predictable total cost |
+| Per Diem + Honorarium | Short or site-visit-only engagements | Daily rate + out-of-pocket |
+| Mixed Methods | Complex, multi-phase supervision | Combination of above |
+
+</ComparisonTable>
 
 ***
 
@@ -213,7 +245,17 @@ These limitations exist to maintain the clear separation between the **professio
 
 Under SPP 204-A, the legal chain of responsibility is distributed as follows:
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="ComparisonTable" status="preserved"]
+<ComparisonTable>
+
+| Party | Responsibility |
+|---|---|
+| **Owner** | Makes decisions on the project; ensures funds are available |
+| **Architect-of-record (Aor)** | Professional responsibility for design; technical oversight of the CSG |
+| **Engineers-of-record (Eors)** | Responsible for their respective engineering plans |
+| **Contractor** | Responsible for his personnel, equipment, and delivery of the project |
+| **CSG (Fulltime Supervisor)** | On-site quality control, evaluation, reporting, and document filing — responsible to both Owner and Architect |
+
+</ComparisonTable>
 
 ### Cross-Claims and Civil Liability
 
@@ -231,7 +273,11 @@ Inspectors of the Construction Supervision Group (CSG) must possess:
 2. **Extensive experience in design and building construction** — The inspector must have sufficient practical exposure to construction methods, materials, and sequencing to properly evaluate field work
 3. **Thorough knowledge of building materials and construction detailing** — The inspector must be able to read and interpret Contract Documents, identify non-conforming work, and advise the contractor on correct execution methods
 
-[SLATECAMP_UI_BLOCK:ui_0007 component="Callout" status="preserved"]
+<Callout variant="note">
+
+**Note:** The SPP does not specify a minimum number of years of experience. The "extensive experience" standard is evaluated qualitatively, in consultation with the Architect and Owner. In practice, a CSG inspector is expected to have no fewer than 3–5 years of relevant field experience.
+
+</Callout>
 
 ***
 
@@ -239,13 +285,35 @@ Inspectors of the Construction Supervision Group (CSG) must possess:
 
 A frequently misunderstood distinction is the difference between the architect's **periodic construction phase visits under SPP 202** and the **fulltime supervision engagement under SPP 204-A**:
 
-[SLATECAMP_UI_BLOCK:ui_0008 component="ComparisonTable" status="preserved"]
+<ComparisonTable>
+
+| | SPP 202 (Periodic Site Visits) | SPP 204-A (Fulltime Supervision) |
+|---|---|---|
+| **Frequency** | Periodic, as needed | Daily, 8 hours per day |
+| **Personnel** | Architect-of-record or representative | CSG (full team of inspectors) |
+| **Primary purpose** | Familiarize with progress; issue Certificates for Payment | Continuous quality control, evaluation, and reporting |
+| **Daily reports** | Not required | Required (Daily Inspection Reports) |
+| **Liability for construction defects** | Not solidarily liable (unless supervising) | Aicc solidarily liable under Article 1723 |
+| **Separate agreement** | Included in SPP 202 Owner-Architect Agreement | Requires a separate Owner-Architect Agreement |
+| **Separate fee** | Included in the SPP 202 percentage fee | Separate fee based on % of PCC or MDPE |
+| **When required** | All building projects | Only when owner specifically requires it |
+
+</ComparisonTable>
 
 ***
 
 ## Relationship to Other SPP Documents
 
-[SLATECAMP_UI_BLOCK:ui_0009 component="ComparisonTable" status="preserved"]
+<ComparisonTable>
+
+| SPP Document | Relationship |
+|---|---|
+| **SPP Doc. 202** (Regular Design Services) | SPP 202 Construction Phase includes only periodic visits; SPP 204-A is the formal expansion of that role into fulltime on-site supervision |
+| **SPP Doc. 204-B** (Construction Management) | SPP 204-B expands the CSG's role into broader project management (cost/time control, coordination); the CM's responsibilities include and subsume the CSG's SPP 204-A functions |
+| **SPP Doc. 206** (Comprehensive Architectural Services) | CAS bundles SPP 201–205 into one comprehensive engagement; SPP 204-A is one of the bundled construction-phase components |
+| **SPP Doc. 207** (Design-Build) | Under Design-Build by Administration, the architect assumes both design and construction administration responsibilities — effectively combining SPP 202, 204-A, and contractor roles |
+
+</ComparisonTable>
 
 ***
 

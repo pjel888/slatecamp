@@ -1,17 +1,12 @@
 {
-  "attempted_at": "2026-05-04T00:06:18.942Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:16:52.123Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "Failed to update wiki_articles.content: Bad Request"
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "6e84b3e6-5dd9-4557-8202-5085d24a3708",
   "slug": "top-50-traps-2024-irr",
@@ -20,7 +15,7 @@
   ],
   "remote_hash_before": "sha256:51546290610bf820ace1e3e4be1ac9f41171587393a568ffa648de809ce85f07",
   "original_hash": "sha256:51546290610bf820ace1e3e4be1ac9f41171587393a568ffa648de809ce85f07",
-  "candidate_hash": "sha256:cfad518c1c13aa46ef96d0373b06f9f60bbde05f9a76180aa9d8c7ca4d3d7b89",
+  "candidate_hash": "sha256:df371a17e135cdb4a1af67fa058f637c3223e2f933aac386f909dd570fe454d8",
   "stale_check_passed": true,
   "remote_updated_at_before": "2026-05-03T14:19:53.398238+00:00"
 }

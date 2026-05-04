@@ -18,11 +18,11 @@ Climate-resilient planning typically addresses:
 3. **Land use restrictions** — prohibiting residential or critical infrastructure in high-risk zones
 4. **Building typology and resilience** — designing structures to withstand anticipated hazards
 5. **Community resilience capacity** — ensuring access to evacuation routes, safe zones, early warning systemPost-Typhoon Yolanda (Haiyan, 2013), some LGUs adopted 40-meter coastal buffers as local policy; national standards follow PD 1067 waterway easements.as, reflecting lessons from storm surge inundation. Active fault proximity is assessed per NSCP 2015 seismic design provisions and local ordinances; PHIVOLCS provides fault mapping for site-specific risk evaluation.e.
-<ArticleMedia id="media-lea-plan-008-01-core-concept" a type="image" caption="Climate Resilience Planning — Hazard Mapping for CLUPs" description="Composite hazard map for CLUP integration: flood hazard zones (100-year floodplain), typhoon wind speed zones, earthquake fault buffers, landslide susceptibility zones, and sea-level rise projections. RA 10121 DRRM framework mainstreaming with adaptation measures." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-plan-008-01-core-concept" type="image" caption="Climate Resilience Planning — Hazard Mapping for CLUPs" alt="Composite hazard map for CLUP integration: flood hazard zones (100-year floodplain), typhoon wind speed zones, earthquake fault buffers, landslide susceptibility zones, and sea-level rise projections. RA 10121 DRRM framework mainstreaming with adaptation measures." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="WikiExamTable" status="preserved"]
+<WikiExamTable headers={["Legal Framework / Standard", "Key Requirement", "Application"]} rows={[["RA 10121 (DRRM Act, 2010)", "DRRM mainstreaming in CLUPs; 5% Local DRRM Fund per Sec. 21", "All LGUs must integrate DRRM into land use planning; funds support early warning systems, evacuation planning"], ["PHIVOLCS Active Fault Map", "5-meter minimum setback from fault trace", "Inhabited structures prohibited within 5m of mapped active fault; applies to all development"], ["Post-Yolanda National Zoning Framework (2014)", "40-meter no-build zone from mean high tide", "Coastal communities must maintain 40m buffer from high tide line; restricts new residential/commercial development"], ["CLUP integration (RA 7160)", "CLUP must incorporate DRRM; periodic review per DILG guidelines", "Planners must identify hazard zones on land use maps; review and update hazard mapping every 3 years"]]} />
 
 ## Philippine Context
 
@@ -36,7 +36,7 @@ The Philippines ranks among the world's most disaster-prone countries, facing an
 
 3. **Coastal hazard zone application** — "A municipality is planning a new fishing settlement 25 meters from mean high tide. Does this comply with post-Yolanda zoning standards?" → Answer: No, the standard requires 40 meters. This tests application of the numeric standard to planning scenarios.
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+<Tip>Memory aid: **PHIVOLCS = 5 meters** (both words start with one significant value: PHIVOLCS fault setback). **Post-Yolanda = 40 meters** (easy to recall as a protective buffer roughly the length of 10 houses or 1.5 city blocks).</Tip>
 
 **Exam Tip:** Climate adaptation = adjusting to actual/expected climate effects. Mitigation = reducing greenhouse gas emissions. Resilience = ability to withstand and recover. Know which strategies are adaptation vs. mitigation — the LEA tests this distinction.
 
@@ -46,4 +46,4 @@ See **LEA-PLAN-005-04** (DRRM) for site-level hazard integration, **LEA-PLAN-001
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeList" status="preserved"]
+<WikiMistakeList mistakes={["Confusing the 40m coastal setback (post-Yolanda framework) with PD 1067 water body easements (3–40m depending on water body type). Remember: 40m no-build zone applies specifically to MEAN HIGH TIDE in coastal areas post-Yolanda; PD 1067 easements are broader water-body protection requirements.", "Stating that PHIVOLCS setbacks are 10 meters or 3 meters instead of 5 meters. The PHIVOLCS standard is specifically 5 meters minimum from active fault trace.", "Treating DRRM as optional in CLUPs. RA 10121 mandates DRRM mainstreaming; it is a legal requirement, not a best practice.", "Assuming all disaster-prone areas must be no-build zones. Setback standards allow development OUTSIDE the restricted zones; the zones restrict but do not eliminate development."]} />

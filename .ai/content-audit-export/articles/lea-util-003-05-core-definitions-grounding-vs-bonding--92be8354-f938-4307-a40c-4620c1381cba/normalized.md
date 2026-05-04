@@ -7,7 +7,7 @@ Distinguish grounding from bonding — grounding connects the electrical system 
 
 _Grounding_ and _bonding_ are distinct functions with specific definitions in the PEC:
 
-<ArticleMedia id="media-lea-util-003-05-core-definitions-groundi" a type="image" caption="Grounding Electrode System — Ground Rod, Ufer Ground, Ground Plate, Bonding of Metal Pipes" description="Building electrical grounding diagram showing: driven ground rod (2.4m min, 16mm dia, ≤25 ohms per PEC 2.50.56), concrete-encased Ufer ground (6m conductor in foundation footing), ground plate (0.186m² copper). Bonding conductors connect metal water piping, structural steel, gas piping to service ground. GFCI (5mA, 25ms response) and AFCI locations per PEC annotated." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-util-003-05-core-definitions-groundi" type="image" caption="Grounding Electrode System — Ground Rod, Ufer Ground, Ground Plate, Bonding of Metal Pipes" alt="Building electrical grounding diagram showing: driven ground rod (2.4m min, 16mm dia, ≤25 ohms per PEC 2.50.56), concrete-encased Ufer ground (6m conductor in foundation footing), ground plate (0.186m² copper). Bonding conductors connect metal water piping, structural steel, gas piping to service ground. GFCI (5mA, 25ms response) and AFCI locations per PEC annotated." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 
 **Grounding** refers to the intentional connection of electrical systems or equipment to earth, creating a low-resistance path for fault current. The PEC defines this as the connection of conductive parts to the ground electrode system to establish zero reference potential (PEC Article 2.00 (Definitions)).

@@ -1,33 +1,32 @@
 # Content Diff Report: masters-of-the-golden-age
 
-Generated: 2026-05-04T00:06:56.255Z
+Generated: 2026-05-04T02:17:42.685Z
 Article ID: 146e1210-2b6a-42fb-85c2-3e1b1fd082c2
-Changed: true
-Safe to push locally: false
+Changed: false
+Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:057acbec5e7cb0d0131e8154f31c096a89812aa486d7b8aebb57446ec6079ca5`
+- Original: `sha256:60f3d344fb06c894426e36831ecc5d137148ab93370ed0c2412028b2d2e98587`
 - Normalized: `sha256:0616ea414b8bc29d5d1435450d480d73ff07690ea55f847bb2697c647d21eff2`
-- Candidate: `sha256:0616ea414b8bc29d5d1435450d480d73ff07690ea55f847bb2697c647d21eff2`
+- Candidate: `sha256:60f3d344fb06c894426e36831ecc5d137148ab93370ed0c2412028b2d2e98587`
 
 ## Line summary
 
-- Changed lines: 134
-- Inserted lines: 18
+- Changed lines: 0
+- Inserted lines: 0
 - Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 3
-- UI blocks preserved: 0
-- UI blocks changed/missing: 3
-- Unresolved placeholders: 1
+- UI blocks preserved: 3
+- UI blocks changed/missing: 0
+- Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate contains unresolved UI block placeholders.
-- Candidate is missing 3 preserved UI block(s).
+- None
 
 ## Warnings
 

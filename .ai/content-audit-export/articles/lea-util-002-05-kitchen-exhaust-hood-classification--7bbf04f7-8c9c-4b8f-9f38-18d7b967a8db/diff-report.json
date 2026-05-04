@@ -1,45 +1,38 @@
 {
   "article_id": "7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db",
   "slug": "lea-util-002-05-kitchen-exhaust-hood-classification",
-  "generated_at": "2026-05-04T00:06:14.065Z",
-  "old_hash": "sha256:74c1db1eadba003584147d0fce4a94cc44dc1ded2689a394727d9854fab1ee73",
-  "new_hash": "sha256:eebecb97a030bbf3952733e2bedad924ceae93ffb835afa1fd3ba1785e5d29b6",
-  "original_hash": "sha256:74c1db1eadba003584147d0fce4a94cc44dc1ded2689a394727d9854fab1ee73",
+  "generated_at": "2026-05-04T02:16:43.580Z",
+  "old_hash": "sha256:4df8abf7446a8a092b84fcb2eed210a443ed4c858a28f05de566ea66ac20e25d",
+  "new_hash": "sha256:4df8abf7446a8a092b84fcb2eed210a443ed4c858a28f05de566ea66ac20e25d",
+  "original_hash": "sha256:4df8abf7446a8a092b84fcb2eed210a443ed4c858a28f05de566ea66ac20e25d",
   "normalized_hash": "sha256:eebecb97a030bbf3952733e2bedad924ceae93ffb835afa1fd3ba1785e5d29b6",
-  "candidate_hash": "sha256:eebecb97a030bbf3952733e2bedad924ceae93ffb835afa1fd3ba1785e5d29b6",
-  "changed": true,
-  "changed_line_count": 190,
+  "candidate_hash": "sha256:4df8abf7446a8a092b84fcb2eed210a443ed4c858a28f05de566ea66ac20e25d",
+  "changed": false,
+  "changed_line_count": 0,
   "inserted_line_count": 0,
-  "deleted_line_count": 4,
+  "deleted_line_count": 0,
   "ui_blocks_original_count": 3,
-  "ui_blocks_candidate_count": 0,
-  "ui_blocks_changed_count": 3,
+  "ui_blocks_candidate_count": 3,
+  "ui_blocks_changed_count": 0,
   "ui_blocks_count": 3,
-  "unresolved_placeholders_count": 1,
-  "preserved_blocks_count": 0,
+  "unresolved_placeholders_count": 0,
+  "preserved_blocks_count": 3,
   "changed_text_summary": {
-    "changed": 190,
+    "changed": 0,
     "inserted": 0,
-    "deleted": 4,
+    "deleted": 0,
     "original_line_count": 232,
-    "candidate_line_count": 228
+    "candidate_line_count": 232
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0001",
-      "ui_0002",
-      "ui_0003"
-    ],
-    "changed_count": 3
+    "missing_block_ids": [],
+    "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate contains unresolved UI block placeholders.",
-    "Candidate is missing 3 preserved UI block(s)."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 3 preserved UI block(s)."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

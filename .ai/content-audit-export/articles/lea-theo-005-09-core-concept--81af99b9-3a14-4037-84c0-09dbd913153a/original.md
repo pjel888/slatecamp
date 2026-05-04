@@ -4,8 +4,6 @@
 Critical Regionalism, theorized by Kenneth Frampton in his 1983 essay "Towards a Critical Regionalism: Six Points for an Architecture of Resistance," offers a third way beyond both modernism's placeless universalism and postmodernism's superficial historicism. The LEA examines your understanding of Frampton's framework, how critical regionalism differs from romantic vernacularism, and how contemporary architects apply its principles to create culturally and environmentally responsive architecture rooted in specific places.
 </Callout>
 
-
-
 ## Learning Goal
 
 - Define Kenneth Frampton's Critical Regionalism as a third way beyond universal Modernism and superficial Postmodern historicism.
@@ -13,6 +11,8 @@ Critical Regionalism, theorized by Kenneth Frampton in his 1983 essay "Towards a
 - Distinguish Critical Regionalism from romantic vernacularism: it engages local conditions critically rather than sentimentally.
 
 ## Core Concept
+
+<ArticleMedia id="media-lea-theo-005-09-core-concept" a type="image" caption="Critical Regionalism — Frampton's Six Points and the Third Way" description="Spectrum diagram showing architectural approaches from universal Modernism (left) through Critical Regionalism (center) to romantic vernacularism (right). Center panel details Frampton's six defining points from his 1983 essay: (1) Emancipatory practice — resist universal civilization while embracing universal techniques; (2) Place-form — architecture is experienced as a boundary of place, not a free-standing object; (3) Tectonic expression — reveal construction and material truth; (4) Site-specific — respond to topography, climate, and natural forces; (5) Haptic sensibility — engage all senses, not just vision; (6) Local reinterpretation — critically reinterpret local traditions rather than either rejecting or copying them." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 Critical Regionalism emerged in the 1980s as a response to two seemingly opposed but equally problematic architectural conditions: modernism's imposition of universal principles divorced from specific places, climates, and cultures, and postmodernism's superficial engagement with history through applied symbolism that lacked genuine cultural grounding. Kenneth Frampton, writing his seminal essay in 1983 and published in Hal Foster's anthology *The Anti-Aesthetic*, articulated a framework for architecture that would be critically engaged with local conditions without retreating into sentimental romanticism or nationalist essentialism.
 
@@ -41,24 +41,17 @@ Contemporary critical regionalism has expanded beyond Frampton's original framew
 <WikiExamTable headers={["Concept/Architect", "Context", "Year", "Critical Regionalist Strategy"]} rows={[['["Kenneth Frampton", "\\"Towards a Critical Regionalism\\" essay", "1983", "Six points of resistance; critique of International Style and postmodern pastiche"]', '["Balkrishna Doshi", "Aranya Low-Cost Housing, Indore", "1989", "Courtyard tradition; incremental expansion; responsive planning"]', '["Balkrishna Doshi", "Indian Institute of Management, Bangalore", "1977", "Fatehpur Sikri-inspired courtyards; asymmetrical arrangement; local context"]', '["Hassan Fathy", "Mud-brick architecture, Egypt", "Mid-20th century", "Vernacular materials; courtyard planning; climate-responsive design"]', '["Charles Correa", "Mumbai housing and urban projects", "1970s-1990s", "Tropical climate response; courtyard tradition; social orientation"]', '["Six Points of Critical Regionalism", "Frampton\'s framework", "1983", "Culture, precedent, identity, place form, nature-culture integration, sensory engagement"]', '["International Style Critique", "Global modernism", "Post-1945", "Placeless universalism; erasure of climatic and cultural difference"]', '["Postmodern Superficiality", "Architectural pastiche", "1960s-1980s", "Applied symbolism; disconnection from construction, climate, and social reality"]']]} />
 ## How It's Tested on the LEA
 
-
 <ExamTip>1. **Regionalism vs. Romanticism vs. Modernism**: The exam distinguishes three positions. Can you explain why critical regionalism is neither modernist placelessness, romantic traditionalism, nor postmodern pastiche? This requires precise theoretical understanding.</ExamTip>
-
 
 <ExamTip>2. **Frampton's Six Points Application**: Questions ask you to apply Frampton's framework to analyze specific buildings or places. How does a given project engage "place form resistance"? How does it integrate culture and nature?</ExamTip>
 
-
 <ExamTip>3. **Climate and Material Responsiveness**: The LEA tests whether you understand that regionalism emerges not from aesthetic preference but from engagement with actual geographic, climatic, and material conditions. Can you explain how climate should inform architectural decisions?</ExamTip>
-
 
 <ExamTip>4. **Vernacular vs. Critical Regionalist**: The exam distinguishes authentic engagement with vernacular traditions (Doshi, Fathy, Correa) from superficial historicist quotation. What makes Doshi's courtyards critical regionalism rather than nostalgic revival?</ExamTip>
 
-
 <ExamTip>5. **Postcolonial Context**: Critical Regionalism is inseparable from postcolonial architects' need to define identity beyond both colonizer's modernism and sentimental nationalism. Understanding Doshi, Fathy, and Correa requires understanding their postcolonial positioning.</ExamTip>
 
-
 <ExamTip>6. **Global Engagement without Loss of Specificity**: You must understand that critical regionalism does not mean isolation. Contemporary Indian architects remain engaged with global practice while maintaining regional specificity. This tension is creative, not contradictory.</ExamTip>
-
 
 ## Common Mistakes
 
@@ -67,7 +60,6 @@ Contemporary critical regionalism has expanded beyond Frampton's original framew
 <WikiMistakeCard mistake="Confusing Frampton's Critical Regionalism with Populism" correction="Critical regionalism is not democratic architecture or \"architecture for the people.\" Frampton's framework is explicitly critical and intellectual." context="It acknowledges elite architectural discourse while insisting that discourse must engage specific places and cultures rather than pursuing universal abstract principles." />
 
 <WikiMistakeList mistakes={["Missing Frampton's Anti-Nostalgic Position. Students sometimes cite Frampton as endorsing historical preservation or traditionalism. Actually, Frampton explicitly critiques both romantic regionalism and nostalgic conservatism. Critical regionalism seeks productive engagement between contemporary innovation and regional specificity without fetishizing tradition.", "Treating the Six Points as Checklist. Frampton's six points are not a design methodology checklist—a building is not \"critical regionalist\" if it simply ticks all six boxes. Rather, they constitute a theoretical framework emphasizing architecture's responsibility to place, culture, and embodied experience.", "Ignoring Postcolonial Critique's Centrality. Critical Regionalism emerges specifically from postcolonial architects' (Doshi, Fathy, Correa) rejection of both colonial modernism and postcolonial essentialism. Understanding critical regionalism requires understanding its political and decolonial implications, not treating it as merely aesthetic preference.", "Reducing Climate Engagement to Passive Response. Students sometimes present critical regionalism as architecture passively adapting to climate. Actually, climate response involves active design judgment—deciding which traditional strategies remain valid, which contemporary technologies enable new solutions, how cultural practices and thermal comfort intersect."]} />
-
 
 ## Key Terms
 

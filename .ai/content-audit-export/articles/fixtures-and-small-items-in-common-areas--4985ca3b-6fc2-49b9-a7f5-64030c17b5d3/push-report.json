@@ -1,26 +1,21 @@
 {
-  "attempted_at": "2026-05-04T00:06:07.422Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:16:37.162Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "candidate.md matches original.md; refusing no-op apply."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "4985ca3b-6fc2-49b9-a7f5-64030c17b5d3",
   "slug": "fixtures-and-small-items-in-common-areas",
   "preparation_actions": [
     "auto_generated_diff"
   ],
-  "remote_hash_before": "sha256:e811975a1b39d70cb9a6ebb6a0ef62c17bdfa0b570592ba32ec08668d990e0dc",
-  "original_hash": "sha256:e811975a1b39d70cb9a6ebb6a0ef62c17bdfa0b570592ba32ec08668d990e0dc",
-  "candidate_hash": "sha256:f4fc022bb3625ebe08924a50c78d2a30be698b01c6ce9f94114794e35a9a48ef",
+  "remote_hash_before": "sha256:4d811e561cf74c4eb6d733287c0dc4406ac1c9ba31825a79fc0ca639d4c87e1a",
+  "original_hash": "sha256:4d811e561cf74c4eb6d733287c0dc4406ac1c9ba31825a79fc0ca639d4c87e1a",
+  "candidate_hash": "sha256:4d811e561cf74c4eb6d733287c0dc4406ac1c9ba31825a79fc0ca639d4c87e1a",
   "stale_check_passed": true,
-  "remote_updated_at_before": "2026-05-03T13:50:23.853817+00:00"
+  "remote_updated_at_before": "2026-05-04T01:59:40.830409+00:00"
 }

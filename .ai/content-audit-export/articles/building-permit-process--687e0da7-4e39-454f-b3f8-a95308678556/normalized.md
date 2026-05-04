@@ -42,9 +42,9 @@ The **Building Official (BO)** is the duly appointed government authority at the
 
 ## Part 2: The Permit Process
 
-[SLATECAMP_UI_BLOCK:ArticleMedia name="permit-process-flowchart" type="diagram" caption="Step-by-step permit process flowchart from application filing → fee payment → 15-day review window → permit issuance or written denial. Include decision diamond for approval/denial and arrows showing the critical path. Highlight the 15-day clock starting from payment date."]
+<ArticleMedia id="media-permit-process-flowchart" type="diagram" caption="Step-by-step permit process flowchart from application filing → fee payment → 15-day review window → permit issuance or written denial. Include decision diamond for approval/denial and arrows showing the critical path. Highlight the 15-day clock starting from payment date." />
 
-[SLATECAMP_UI_BLOCK:ArticleMedia name="permit-expiration-timeline" type="diagram" caption="Timeline diagram showing two expiration triggers: 1-year to commence construction from permit issuance date, and 120-day continuous abandonment trigger. Use a horizontal calendar-style bar with labeled thresholds and color-coded safe vs. expired zones."]
+<ArticleMedia id="media-permit-expiration-timeline" type="diagram" caption="Timeline diagram showing two expiration triggers: 1-year to commence construction from permit issuance date, and 120-day continuous abandonment trigger. Use a horizontal calendar-style bar with labeled thresholds and color-coded safe vs. expired zones." />
 
 ### The Critical Timeline — Where Most LEA Questions Are Set
 

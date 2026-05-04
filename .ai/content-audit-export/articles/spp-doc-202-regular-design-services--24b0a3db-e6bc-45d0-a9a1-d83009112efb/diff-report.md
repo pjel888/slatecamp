@@ -1,33 +1,32 @@
 # Content Diff Report: spp-doc-202-regular-design-services
 
-Generated: 2026-05-04T00:06:47.110Z
+Generated: 2026-05-04T02:17:31.348Z
 Article ID: 24b0a3db-e6bc-45d0-a9a1-d83009112efb
 Changed: true
-Safe to push locally: false
+Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:ae64d51c47f76b765e8f6bda6f050ad11b281c37a541c6250bc383d6df50d790`
+- Original: `sha256:91cfb34021c897112d26cea3f36028309b94c92e565d8b72bd3cfd855e2ad22d`
 - Normalized: `sha256:106f8cca98fcbee2ccacbc03630561a0c3e4c8d6b50eaea7038a3c41e90687d4`
-- Candidate: `sha256:106f8cca98fcbee2ccacbc03630561a0c3e4c8d6b50eaea7038a3c41e90687d4`
+- Candidate: `sha256:8879a261cfc1e3941b7d3e1c56b1b5dc684b4553cd2630424a49d02de475953f`
 
 ## Line summary
 
-- Changed lines: 296
+- Changed lines: 302
 - Inserted lines: 0
-- Deleted lines: 69
+- Deleted lines: 1
 
 ## UI block preservation
 
 - UI blocks expected: 11
-- UI blocks preserved: 0
-- UI blocks changed/missing: 11
-- Unresolved placeholders: 1
+- UI blocks preserved: 11
+- UI blocks changed/missing: 0
+- Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate contains unresolved UI block placeholders.
-- Candidate is missing 11 preserved UI block(s).
+- None
 
 ## Warnings
 

@@ -2,8 +2,16 @@
 
 <Callout>The 19th century marks the transition from historical revivals to modern architecture through industrial innovation and design reform movements. The board exam tests your knowledge of key buildings, the shift from ornamental excess to functional design, and the architects who bridged tradition and modernity.</Callout>
 
+## Learning Goal
+
+Identify the key 19th-century buildings, movements, and architects — Crystal Palace (Paxton), Arts and Crafts (Morris, Voysey), Chicago School (Sullivan, Jenney) — and explain how industrial materials, design reform, and the principle of form follows function transformed architecture from ornament-driven revivalism toward modernism.
+
 ## Core Concept
-The 19th century was a pivotal century for architecture, driven by three major forces: industrial technology, design philosophy reform, and urban expansion. Early in the century, architects adopted historical styles—Gothic Revival, Neoclassical—as industrial manufacturing grew. By midcentury, new materials (cast iron, steel, glass) fundamentally changed what buildings could do. The **Crystal Palace** (1851, **Joseph Paxton**, London) exemplified this shift: it used prefabricated iron and glass on an unprecedented sclea, proving that industrial materials could be beautiful and functional. This building challenged the assumption that architecture required masonry and ornament.
+The 19th century was a pivotal century for architecture, driven by three major forces: industrial technology, design philosophy reform, and urban expansion. Early in the century, architects adopted historical styles—Gothic Revival, Neoclassical—as industrial manufacturing grew. By midcentury, new materials (cast iron, steel, glass) fundamentally changed what buildings could do. The **Crystal Palace** (1851, **Joseph Paxton**, London) exemplified this shift: it used prefabricated iron and glass on an unprecedented scale, proving that industrial materials could be beautiful and functional. This building challenged the assumption that architecture required masonry and ornament.
+
+
+<ArticleMedia id="media-hist-008-01-core-concept" layout="single" type="image" status="placeholder" alt="Interior of Hôtel Tassel (Brussels, 1892–1893, Victor Horta), showing the whiplash organic curves, exposed iron structure, and flowing natural motifs characteristic of Art Nouveau." caption="Hôtel Tassel — Victor Horta's Art Nouveau Interior" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
 
 <Tip>
 **Crystal Palace 1851 = industrial materials + prefabrication + proof that beauty doesn't require masonry.** This single building made clear that function and material honesty could be aesthetic without ornament. It legitimized everything modernism would claim a century later.
@@ -22,6 +30,10 @@ Sullivan is the theorist; Jenney is the structural engineer. Students often coll
 </Warn>
 
 The 19th century closed with architecture poised between past and future: ornament still dominated high-style buildings (especially in Europe), but the functional logic and material honesty pioneered by Paxton, Morris, and Sullivan had already redirected where architecture would go.
+
+
+<ArticleMedia id="media-hist-008-01-core-concept" layout="single" type="image" status="placeholder" alt="View of the Chrysler Building (New York, 1928–1930, William Van Alen), showing the stainless steel sunburst crown, geometrically patterned windows, and stepped/ziggurat setbacks typical of Art Deco skyscraper design." caption="Chrysler Building — Art Deco Streamlined Crown" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
 
 ## Key Facts and Testable Items
 
@@ -46,7 +58,6 @@ You may see: "Louis Sullivan's principle 'form follows function' challenged whic
 
 <WikiMistakeList mistakes={["Attributing the skyscraper solely to Sullivan. Sullivan is the philosophical voice of the Chicago School (\"form follows function\"), but **William Le Baron Jenney** engineered the structural breakthrough with the Home Insurance Building's iron-steel frame. Don't collapse these two figures into one.", "Overlooking the Eiffel Tower's radical simplicity. Students often view the Eiffel Tower as ornamental or decorative. Structurally, it is pure iron lattice—no cladding, no ornament, no facade. It proved that engineering and beauty could coexist without applied decoration. This was a profound statement against 19th-century excess."]} />
 
-
 ## Key Terms
 
 **Crystal Palace**: An 1851 prefabricated structure of iron and glass designed by Joseph Paxton; demonstrated that industrial materials could be structurally sound and visually striking without ornament.
@@ -64,3 +75,12 @@ You may see: "Louis Sullivan's principle 'form follows function' challenged whic
 **Modular Construction**: Building method using prefabricated, repeatable units that assemble on-site; demonstrated in the Crystal Palace.
 
 **Ornament**: Decorative elements applied to a building surface; a target of criticism by reformers who advocated honest, functional design.
+
+<ArticleMedia id="media-hist-008-01-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Timeline of 19th-century architectural movements (1800–1900) from Neoclassicism and Gothic Revival through Arts and Crafts, the Chicago School, and Art Nouveau, showing the evolution from revivalism toward modernist principles.\" caption=\"19th Century Architecture — Timeline of Movements\" suggestedAsset=\"Timeline diagram\" placementIntent=\"Timeline diagram for architectural period\" />
+
+## Related Articles
+
+See also within Modern & Contemporary Architecture: **lea-hist-008-02-core-concept**, **lea-hist-008-03a-core-concept**, **lea-hist-008-03b-core-concept**, **lea-hist-008-03c-core-concept**.
+
+> **Overview:** overview-history-of-architecture for the full curriculum structure and study strategy for History of Architecture.
+

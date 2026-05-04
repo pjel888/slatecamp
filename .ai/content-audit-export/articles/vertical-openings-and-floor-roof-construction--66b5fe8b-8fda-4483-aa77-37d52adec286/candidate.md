@@ -236,7 +236,13 @@ D. No — no openings are permitted in a 3-hour occupancy separation wall under 
 
 > **Answer: B — The 12.00 sq.m double door exceeds the 10.00 sq.m maximum single opening limit**
 >
-[SLATECAMP_UI_BLOCK:ui_0001 component="Note" status="preserved"]
+<LawCallout code="pd1096" section="Rule IV - Vertical Openings">
+
+
+Per Sec. 1204, for a wall requiring 3-hour fire-resistive occupancy separation: (1) aggregate openings must not exceed 25% of wall length (25% × 20.00m = 5.00m — note this is measured by length, not area), and (2) no single opening may exceed 10.00 sq.m. The 12.00 sq.m double door violates the single-opening maximum regardless of the total. The 4.00 sq.m service window alone would be compliant on its own. Option A incorrectly applies the 25% limit to area rather than length and ignores the 10.00 sq.m single-opening cap. Option C is wrong because 3-hour fire assemblies alone cannot cure an oversize opening — the opening itself must first comply. Option D is incorrect — openings are permitted, subject to the 25%-of-length and 10.00 sq.m limits.
+
+
+</LawCallout>
 
 ---
 

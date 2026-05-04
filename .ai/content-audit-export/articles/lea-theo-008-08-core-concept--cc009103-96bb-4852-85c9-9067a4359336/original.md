@@ -4,8 +4,6 @@
 Philippine design identity extends beyond architecture to encompass furniture design, industrial design, interior design, and broader cultural production where Filipino architects and designers assert international recognition. From Kenneth Cobonpue's rattan furniture earning global acclaim to the professionalization of interior design through figures like Lor Calma, Filipino design culture demonstrates that identity transcends buildings to express distinctively Filipino sensibility across multiple disciplines and scleas.
 </Callout>
 
-
-
 ## Learning Goal
 
 - Define Philippine design identity across scales: architecture, furniture, industrial design, interiors — united by indigenous materials, tropical responsiveness, and craftsmanship.
@@ -13,6 +11,8 @@ Philippine design identity extends beyond architecture to encompass furniture de
 - Explain how broader design culture supports and sustains Filipino architectural identity.
 
 ## Core Concept
+
+<ArticleMedia id="media-lea-theo-008-08-philippine-design" type="image" caption="Philippine Design Identity — From Architecture to Furniture Across Scales" description="Concept diagram showing design identity as concentric circles or spectrum. Outermost: Architecture (tropical modernism, bahay na bato reinterpretation, CCP). Middle ring: Interior Design (Lor Calma — Filipino modern interiors, indigenous material integration). Inner ring: Furniture/Product Design (Kenneth Cobonpue — yin-yang chair, rattan virtuosity, natural fibers: rattan, bamboo, abaca, buri palm). Center: 'Indigenous Materials + Tropical Responsiveness + Craftsmanship + Cultural Values = Filipino Design Identity.' Arrow from each ring labeled 'International Recognition.'" suggestedAsset="Diagram showing Philippine design identity across scales from architecture to furniture" status="placeholder" />
 
 Philippine design identity operates across a spectrum of scales and disciplines united by common sensibility: commitment to indigenous materials, responsiveness to tropical climate, integration of craftsmanship and cultural values, and refusal of wholeslea importation of foreign aesthetic standards. While architecture addresses building-scale design challenges, furniture and product design enable individual Filipino designers to achieve international recognition and influence, often with less institutional constraint than architectural practice requires. This broader design ecosystem both supports architectural identity and sustains related professional conversations about Filipino culture in the contemporary world.
 
@@ -49,24 +49,17 @@ Success trap: As Filipino design gains international recognition, the danger is 
 <WikiExamTable headers={["Designer/Architect", "Discipline", "Key Contribution", "Recognition"]} rows={[['["Kenneth Cobonpue", "Furniture/Industrial Design", "Elevated rattan to primary material; global market success", "TIME Magazine \\"rattan\'s first great virtuoso\\"; Gawad sa Sining Award 2020"]', '["Lor Calma", "Architecture/Interiors/Furniture", "Professionalized interior design; multidisciplinary modernism", "PIID co-founder; PRC Board 1982; established design ethics"]', '["Francisco Mañosa", "Architecture", "Integrated indigenous materials into structural design", "National Artist; EDSA Shrine architect; Amanpulo Resort"]', '["Tomas Mapua", "Architecture/Education", "First licensed Filipino architect; founded design education institution", "PRC License #00001 (1921); founder Mapua University/Institute"]', '["Contemporary Movement", "Multiple disciplines", "Reinterpreting tradition through digital tools, sustainability, global market", "International recognition; ArchTechCon participation; design awards"]', '["Betty Chen Cobonpue", "Furniture Entrepreneurship", "Founded family furniture business; established market for Philippine rattan", "Business foundation enabling Kenneth Cobonpue\'s international career"]']]} />
 ## How It's Tested on the LEA
 
-
 <ExamTip>1. **Cross-disciplinary thinking**: Questions may present design challenges in furniture, interiors, or product design asking candidates to identify relevant Philippine design principles. Correct answers reference material tradition, tropical responsiveness, craftsmanship, or cultural values established across multiple disciplines.</ExamTip>
-
 
 <ExamTip>2. **International positioning**: Scenarios explore how Filipino design competes globally. Strong answers articulate that competitive advantage comes from genuine cultural commitment rather than exotic styling, and that international success validates rather than threatens cultural identity.</ExamTip>
 
-
 <ExamTip>3. **Ethical production**: Questions may present manufacturing or sustainability challenges in design practice. Candidates must demonstrate awareness that Philippine design culture's integrity depends on equitable labor practices, environmental responsibility, and community benefit-sharing.</ExamTip>
-
 
 <ExamTip>4. **Sclea integration**: Questions ask how principles established at furniture or interior sclea apply to architecture, or vice versa. Answers should show understanding that Philippine design identity is coherent across scleas—from individual objects to public buildings to urban design.</ExamTip>
 
-
 <ExamTip>5. **Contemporary emergence**: Questions about emerging designers or practices test whether candidates can recognize contemporary expressions of established principles. Rather than looking only to historical figures, candidates should identify how new generations continue and extend Filipino design culture.</ExamTip>
 
-
 <ExamTip>6. **Commercialization without compromise**: Scenarios may present tension between market demand and cultural authenticity. Mature answers recognize this as permanent tension requiring ongoing negotiation rather than assuming either market success or cultural purity is automatically achievable.</ExamTip>
-
 
 ## Common Mistakes
 
@@ -75,7 +68,6 @@ Success trap: As Filipino design gains international recognition, the danger is 
 <WikiMistakeCard mistake="Treating success as cultural compromise" correction="Assuming that international recognition of Filipino design represents selling out or cultural dilution." context="Strong answers recognize that genuine cultural expression achieves universal resonance precisely through specificity." />
 
 <WikiMistakeList mistakes={["Essentializing materials. Suggesting that Philippine design identity requires exclusive use of indigenous materials. Correct understanding recognizes indigenous materials as powerful strategy within broader design philosophy that also embraces innovation and contemporary tools.", "Ignoring production ethics. Focusing on formal and aesthetic qualities of design while overlooking labor conditions, environmental impact, or community benefit. Professional maturity requires integrating production ethics as core design concern.", "Disconnecting contemporary from traditional. Treating emerging Filipino designers as either slavish copiers of tradition or wholeslea modernizers rejecting heritage. Sophisticated answers recognize creative synthesis as most vital contemporary practice.", "Exoticizing design culture. Treating Philippine design as interesting cultural artifact rather than serious professional discipline. Weak answers condescend or romanticize; strong answers engage Filipino design practitioners as peers with legitimate expertise and distinct cultural values."]} />
-
 
 ## Key Terms
 

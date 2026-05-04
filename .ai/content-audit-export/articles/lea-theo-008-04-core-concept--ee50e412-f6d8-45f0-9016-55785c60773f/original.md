@@ -5,8 +5,6 @@ The search for Filipino architectural identity is not a resolved question but an
 
 </Callout>
 
-
-
 ## Learning Goal
 
 - Trace the historical emergence of Filipino architectural identity from colonial derivation (pre-1960s) through Nakpil, Locsin, and Mañosa's assertions of cultural autonomy.
@@ -14,6 +12,8 @@ The search for Filipino architectural identity is not a resolved question but an
 - Analyze how contemporary architects reinterpret tradition through digital and sustainable approaches.
 
 ## Core Concept
+
+<ArticleMedia id="media-lea-theo-008-04-core-concept" a type="image" caption="Evolution of Filipino Architectural Identity — Nakpil, Locsin, Mañosa" description="Timeline diagram from pre-1960s to present: Phase 1 (Pre-1960s) — Colonial derivation, foreign styles imported directly, superficial application of indigenous elements. Phase 2 (1960s-70s) — National identity awakening: Juan Nakpil (national artist, Philippine neoclassical, Quezon Hall), Leandro Locsin (floating volume, Cultural Center of the Philippines, coconut palace). Phase 3 (1970s-90s) — Cultural assertion: Francisco Mañosa (bahay kubo reinterpreted, coconut palace, vernacular modernism). Phase 4 (2000s-present) — Contemporary synthesis: architects negotiating between cultural authenticity and global practice, digital reinterpretation of tradition, sustainable vernacular approaches. Each phase shows a key building example and describes the architectural strategy." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 Filipino architectural identity emerged from a specific historical context: a nation recovering from colonial domination seeking to assert cultural autonomy through the built environment. The domestic architecture prior to the 1960s was primarily derivative—either importing foreign styles directly or applying indigenous elements superficially without systemic integration. The aspiration for a unified Filipino style represented something more fundamental: a commitment to express Philippine culture, values, and environmental understanding through architecture as a means of cultural assertion and independence.
 
@@ -48,24 +48,17 @@ Identity is not settled history. The danger is treating historical figures (Nakp
 <WikiExamTable headers={["Architect", "Key Contribution", "Notable Works", "Professional Role"]} rows={[['["Juan Nakpil", "Founded Philippine architectural identity; proved Filipino style could sustain career", "Quezon Institute, Quezon Hall UP, University of the Philippines Library", "First National Artist for Architecture (1973)"]', '["Francisco Mañosa", "Indigenous materials as structural and expressive strategy; bamboo, coconut, abaca advocacy", "Coconut Palace, Amanpulo Resort, Our Lady Queen Church, St. Joseph Parish [remove EDSA Shrine unless verified]", "National Artist (2018); Thomasian architect"]', '["Leandro Locsin", "Modernist synthesis of oriental and occidental traditions; floating volume aesthetic", "Cultural Center of the Philippines Complex, PICC, Tanghalang Pambansa, Folk Arts Theater", "National Artist (1990); designed major CCP Complex buildings including Tanghalang Pambansa, PICC, and Folk Arts Theater"]', '["Tomas Mapua", "First professionally licensed Filipino architect; educator and institutional founder", "Manila Central Post Office, Philippine General Hospital Nurses Home", "Founder, Mapua University; License #00001 (1921)"]', '["Pablo Antonio", "Art Deco pioneer; radical modernization of Philippine architecture", "Far Eastern University campus buildings, multiple theaters", "National Artist; introduced clean lines and bold rectangular masses"]', '["Lor Calma", "Multidisciplinary modernism; local materials, functional clarity; established interior design profession", "Multiple residences, PIID co-founder, Philippine School of Interior Design", "Founded Lor Calma & Partners (1975); professionalized interior design"]', '["Filipinization Movement", "1970s shift toward explicit engagement with traditional forms and indigenous materials", "Bahay kubo and bahay na bato as design generators", "Collective movement across multiple practitioners"]']]} />
 ## How It's Tested on the LEA
 
-
 <ExamTip>1. **Historical narrative**: Candidates must understand that Filipino identity emerged from specific colonial context and represented cultural assertion. Questions test knowledge of key figures and their contributions to establishing this framework.</ExamTip>
-
 
 <ExamTip>2. **Comparative philosophy**: Questions may present multiple architects' approaches (Nakpil's traditionalism, Locsin's modernism, Mañosa's materialism) and ask candidates to articulate differences and relative strengths. Weak answers choose one as correct; strong answers recognize legitimate plurality.</ExamTip>
 
-
 <ExamTip>3. **Contemporary application**: Scenarios ask how identity principles apply to modern challenges. Candidates must show that Filipino identity is not historical artifact but active framework guiding current practice decisions.</ExamTip>
-
 
 <ExamTip>4. **Material expression**: Questions probe the relationship between materials and cultural identity. Does Filipino identity require indigenous materials, or can it manifest through other means? Candidates must justify their positions with reference to established precedent.</ExamTip>
 
-
 <ExamTip>5. **Synthesis and evolution**: Rather than treating historical figures as completed legacy, questions ask how contemporary architects should engage and extend their work. This tests whether candidates view identity as static or generative.</ExamTip>
 
-
 <ExamTip>6. **International positioning**: Questions explore how Filipino identity relates to global architectural discourse. Correct answers avoid both provincialism (Filipino architecture as isolated) and erasure (Filipino architecture as derivative).</ExamTip>
-
 
 ## Common Mistakes
 
@@ -74,7 +67,6 @@ Identity is not settled history. The danger is treating historical figures (Nakp
 <WikiMistakeCard mistake="Confusing multiple traditions" correction="Conflating different architects' distinct approaches. For example, treating all traditional engagement as identical, or misattributing Mañosa's material advocacy to Nakpil's formalist approach." context="Precision about individual contributions matters." />
 
 <WikiMistakeList mistakes={["Essentializing culture. Suggesting that authentic Filipino architecture requires specific materials or forms. Strong answers recognize that identity operates at the level of principle (responsiveness to climate, respect for tradition, community values) more than material prescription.", "Ignoring social context. Separating architectural identity from broader Philippine social movements. Questions test whether candidates understand that Filipino architectural identity emerged from and should support broader projects of cultural autonomy and social justice.", "Disconnecting from practice. Treating identity as theoretical abstraction rather than something that guides design decisions. Weak answers discuss identity philosophically; strong answers show how identity principles translate into specific design choices.", "Exclusionary definitions. Suggesting that only certain approaches (traditional, indigenous, modernist) truly represent Filipino identity while others are derivative or inauthentic. Mature answers recognize that Philippines has produced multiple legitimate architectural traditions all worthy of respect."]} />
-
 
 ## Key Terms
 

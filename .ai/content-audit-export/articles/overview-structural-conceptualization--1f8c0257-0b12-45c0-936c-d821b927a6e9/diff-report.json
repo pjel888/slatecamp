@@ -1,46 +1,38 @@
 {
   "article_id": "1f8c0257-0b12-45c0-936c-d821b927a6e9",
   "slug": "overview-structural-conceptualization",
-  "generated_at": "2026-05-04T00:06:36.590Z",
-  "old_hash": "sha256:5f81445faef89f2663dc83e5ba785aba4251783c4bb52c2580fc4dbd90befada",
-  "new_hash": "sha256:c94b3912125a57bc14824c7bfcc5ebd6891e955af04d026568dc670bf0c7fab1",
-  "original_hash": "sha256:5f81445faef89f2663dc83e5ba785aba4251783c4bb52c2580fc4dbd90befada",
+  "generated_at": "2026-05-04T02:17:17.662Z",
+  "old_hash": "sha256:ff6586c58d87f0d5f407231b7f58ee82d50b4d1c8d662ae2626948ca846d5971",
+  "new_hash": "sha256:ff6586c58d87f0d5f407231b7f58ee82d50b4d1c8d662ae2626948ca846d5971",
+  "original_hash": "sha256:ff6586c58d87f0d5f407231b7f58ee82d50b4d1c8d662ae2626948ca846d5971",
   "normalized_hash": "sha256:c94b3912125a57bc14824c7bfcc5ebd6891e955af04d026568dc670bf0c7fab1",
-  "candidate_hash": "sha256:c94b3912125a57bc14824c7bfcc5ebd6891e955af04d026568dc670bf0c7fab1",
-  "changed": true,
-  "changed_line_count": 69,
-  "inserted_line_count": 11,
+  "candidate_hash": "sha256:ff6586c58d87f0d5f407231b7f58ee82d50b4d1c8d662ae2626948ca846d5971",
+  "changed": false,
+  "changed_line_count": 0,
+  "inserted_line_count": 0,
   "deleted_line_count": 0,
   "ui_blocks_original_count": 4,
-  "ui_blocks_candidate_count": 0,
-  "ui_blocks_changed_count": 4,
+  "ui_blocks_candidate_count": 4,
+  "ui_blocks_changed_count": 0,
   "ui_blocks_count": 4,
-  "unresolved_placeholders_count": 1,
-  "preserved_blocks_count": 0,
+  "unresolved_placeholders_count": 0,
+  "preserved_blocks_count": 4,
   "changed_text_summary": {
-    "changed": 69,
-    "inserted": 11,
+    "changed": 0,
+    "inserted": 0,
     "deleted": 0,
-    "original_line_count": 70,
+    "original_line_count": 81,
     "candidate_line_count": 81
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0001",
-      "ui_0002",
-      "ui_0004",
-      "ui_0006"
-    ],
-    "changed_count": 4
+    "missing_block_ids": [],
+    "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate contains unresolved UI block placeholders.",
-    "Candidate is missing 4 preserved UI block(s)."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 4 preserved UI block(s)."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

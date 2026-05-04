@@ -2,7 +2,7 @@
 
 import { unstable_cache } from 'next/cache'
 import { createStaticClient } from '@/lib/supabase/server'
-import { resolveArticleAndNode, getTaxonomyTree } from './wiki-actions'
+import { resolveArticleAndNode, resolveArticleAndNodeById, getTaxonomyTree } from './wiki-actions'
 import { CACHE_TAGS, getTaxonomyDisciplineTag } from './cache-tags'
 
 const toExcerpt = (content: string, maxLength = 150) => {
@@ -126,7 +126,16 @@ export const getCachedWikiArticles = unstable_cache(
   }
 )
 
-/** Wiki article + taxonomy node by slug — per-slug cache. */
+export const getCachedArticleAndNodeById = unstable_cache(
+  async (articleId: string) => resolveArticleAndNodeById(articleId),
+  ['wiki-article-by-id'],
+  {
+    revalidate: 3600,
+    tags: [CACHE_TAGS.wiki, CACHE_TAGS.taxonomy],
+  }
+)
+
+/** Wiki article + taxonomy node by slug — per-slug cache. @deprecated Use getCachedArticleAndNodeById instead. */
 export const getCachedArticleAndNode = unstable_cache(
   async (slug: string) => resolveArticleAndNode(slug),
   ['wiki-article'],

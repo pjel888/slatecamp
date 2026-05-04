@@ -26,7 +26,6 @@ You see a stark white building with a flat roof, glass curtain walls, no applied
 
 </Note>
 
-
 | Entity | Type | Year(s) | Key Figures | Defining Features |
 |---|---|---|---|---|
 | Bauhaus — Weimar Phase | School | 1919–1925 | Walter Gropius (founder/director); Johannes Itten, Paul Klee, Wassily Kandinsky (masters) | Expressionist arts-and-crafts integration; Vorkurs (preliminary course) designed by Itten |
@@ -78,7 +77,6 @@ You see a stark white building with a flat roof, glass curtain walls, no applied
 
 </ExamTip>
 
-
 - **Trap 1: Confusing who coined "Form Follows Function."** Louis Sullivan coined it in 1896 — not Walter Gropius, not Le Corbusier, not Mies. Sullivan was a pre-Modernist working in the Chicago School. The Bauhaus adopted the idea, but Sullivan is the source. LEA distractors frequently misattribute it.
 
 - **Trap 2: Treating "Bauhaus" and "International Style" as synonyms.** The Bauhaus is a school (Weimar → Dessau → Berlin, 1919–1933). The International Style is a critical label applied by Hitchcock and Johnson in 1932 to buildings by multiple architects across multiple countries. Not all International Style buildings are Bauhaus; not all Bauhaus work is International Style (early Weimar-phase work was Expressionist).
@@ -128,3 +126,5 @@ D. Weimar → Berlin → Dessau
 
 **Le Corbusier Five Points**, **Mies Van Der Rohe**, **Post Modernism**, **21St Century Movements**
 
+
+<!-- no-media-needed: existing content format is sufficient without visual media -->

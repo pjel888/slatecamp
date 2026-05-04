@@ -10,6 +10,13 @@ Long-span metal roofing (trapezoidal or corrugated profiles spanning 6-12 meters
 
 Selection criteria include: structural capacity of frame, roof slope, expected service life, maintenance accessibility, thermal properties (k-value for insulation bonded to sheets), and fire rating per NFPA 101.
 
+
+<ArticleMedia id="media-roofing-material-chart" layout="single" type="image" status="placeholder"
+  alt="Comparison chart of roofing materials: corrugated GI sheets, clay tiles, concrete tiles, asphalt shingles, standing seam metal, and green roofs with slope, weather resistance, fire rating, and service life data"
+  caption="Future chart: roofing material comparison — slope requirements, weather resistance, fire rating, and service life"
+  suggestedAsset="Material property comparison table with application photos or icons"
+  placementIntent="Helps learners select appropriate roofing material for Philippine climate" />
+
 ## Key Provisions
 
 | Property | Value | Standard | LEA Relevance |
@@ -27,6 +34,12 @@ Selection criteria include: structural capacity of frame, roof slope, expected s
 
 Philippine construction heavily relies on GI corrugated roofing in residential and light commercial sectors due to lower material cost and minimal fabrication complexity. The tropical maritime climate with high salt spray (especially near coastal zones) makes G90 coating essential; G60 (0.60 oz/ft²) results in premature rust. Annual rainfall exceeding 2000 mm in many regions demands fastidious slope design and overlapping sheet length (minimum 150 mm lap for horizontal joints, 200 mm for vertical). Major Philippine brands include DN Steel, SteelAsia (formerly Pag-asa Steel), Union Galvasteel Corporation, and Steelworld Manufacturing, all of which dominate the market with consistent ASTM compliance. Thermal comfort in un-insulated GI roofs drives adoption of reflective coatings (high emissivity finish) to reduce interior temperature rise.
 
+
+<ArticleMedia id="media-roof-slope-comparison" layout="single" type="image" status="placeholder"
+  alt="Comparison diagram showing roof slope requirements for different roofing materials: GI sheets, clay tiles, concrete tiles, asphalt shingles, standing seam, and green roofs"
+  caption="Future chart: roof slope requirements by roofing material type"
+  suggestedAsset="Comparison diagram or chart of minimum slopes per material"
+  placementIntent="Helps learners match roofing materials to roof slope requirements" />
 ## How It's Tested
 
 **Pattern 1: Gauge & Thickness Conversion** — "A roof specification calls for Gauge 24 GI corrugated sheets per ASTM A653. What is the approximate thickness in millimeters?" (Answer: 0.61 mm; tests conversion familiarity and standard knowledge.)

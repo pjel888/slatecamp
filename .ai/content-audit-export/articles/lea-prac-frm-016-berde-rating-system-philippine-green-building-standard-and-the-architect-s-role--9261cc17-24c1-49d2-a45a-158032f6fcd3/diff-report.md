@@ -1,33 +1,32 @@
 # Content Diff Report: lea-prac-frm-016-berde-rating-system-philippine-green-building-standard-and-the-architect-s-role
 
-Generated: 2026-05-04T00:06:28.743Z
+Generated: 2026-05-04T02:17:04.611Z
 Article ID: 9261cc17-24c1-49d2-a45a-158032f6fcd3
-Changed: true
-Safe to push locally: false
+Changed: false
+Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:29ea2a7a2952c927664e3d9a4c24696ba9cf65810702aea057ffac3d410cb241`
+- Original: `sha256:c1d4b86689ab0027cdbdc9f8956de709390c787f6859bbbcf23c173876f649a6`
 - Normalized: `sha256:271b9d6278aed9a6b35f3b089cdca7f33d84eff160c362fb0dfdae94239bd00e`
-- Candidate: `sha256:271b9d6278aed9a6b35f3b089cdca7f33d84eff160c362fb0dfdae94239bd00e`
+- Candidate: `sha256:c1d4b86689ab0027cdbdc9f8956de709390c787f6859bbbcf23c173876f649a6`
 
 ## Line summary
 
-- Changed lines: 84
+- Changed lines: 0
 - Inserted lines: 0
-- Deleted lines: 5
+- Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 4
-- UI blocks preserved: 0
-- UI blocks changed/missing: 4
-- Unresolved placeholders: 1
+- UI blocks preserved: 4
+- UI blocks changed/missing: 0
+- Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate contains unresolved UI block placeholders.
-- Candidate is missing 4 preserved UI block(s).
+- None
 
 ## Warnings
 

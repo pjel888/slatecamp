@@ -75,15 +75,15 @@ The LEA evaluates alternative construction through:
 3. _Philippine applications_ — Recognize DPWH, NHA, bamboo standards and when they apply.
 4. _Cost/schedule analysis_ — Compare modular vs. traditional CIP or structural steel for feasibility.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+<Tip>Modular construction is most economical for repetitive multi-unit residential (towers, hospitality) where factory efficiency amortizes tooling cost. For single unique buildings, traditional methods are often cheaper. ICF is justified in high-insulation climates; tropical Philippines demand less insulation premium. Bamboo construction is emerging in sustainable/heritage projects; NBRC standards ensure structural adequacy.</Tip>
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard title="Specifying Modular Without Transportation Planning" body="A developer specifies volumetric modules for a high-rise without evaluating highway access to site. Completed modules (2.5 m wide × 4 m tall) cannot fit through city streets or bridge overpasses. Modules must be transported via suboptimal routes, incurring extreme cost and delay. Always verify transportation routes before committing to modular." />
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard title="Over-relying on 3D Printing for Complex Structures" body="A speculative designer proposes 3D-printed concrete walls for a 5-story building based on research project success. Printing speed is insufficient (weeks vs. traditional days), printer malfunction occurs (unproven repair), and structural quality verification requires extensive testing. Experimental technology is not suitable for time-critical projects." />
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
+<WikiMistakeList items={["Assuming ICF is always cheaper than traditional formwork—in tropical Philippines, insulation premium is minimal, making ICF uncompetitive with conventional formwork.", "Overestimating container architecture durability—containers require welding modifications, corrosion treatment, and structural stiffening for wind/seismic. Hidden costs often exceed initial savings.", "Failing to account for factory tooling lead times—modular projects require 2–4 months for design and factory setup before production begins. Schedule must include this pre-production phase.", "Neglecting transportation logistics in modular specifications—highway restrictions (width, height, weight limits) constrain module size. Over-sized modules cannot be transported; project fails.", "Assuming bamboo construction is only for heritage/rural projects—NBRC standards enable bamboo in modern commercial buildings where sustainability/aesthetics are valued. Wider applications are emerging."]} />
 
 ## Related Articles
 

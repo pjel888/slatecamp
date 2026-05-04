@@ -6,6 +6,10 @@ Identify Mies van der Rohe's architectural philosophy — 'less is more,' univer
 ## Core Concept
 **Ludwig Mies van der Rohe** (1886–1969) stands alongside Le Corbusier as one of the two most influential modernists. But where Le Corbusier pursued functionalism and complexity, Mies pursued reduction and essence. His axiom—"**less is more**"—became the philosophy of minimalism.
 
+
+<ArticleMedia id="media-hist-008-03b-core-concept" layout="single" type="image" status="placeholder" alt="Interior of the Barcelona Pavilion (1929, Ludwig Mies van der Rohe), showing the cruciform steel columns, travertine and marble wall planes, reflecting pool, and the seamless indoor-outdoor spatial flow of universal space." caption="Barcelona Pavilion — Mies van der Rohe's Modernist Temple" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
+
 <Tip>Remember: Mies = essence through reduction and structural honesty. His buildings are meditations on pure space, material beauty, and perfect proportion—not sparse poverty but refined luxury.</Tip>
 
 Mies believed that architecture's job was to create pure space, divested of ornament, symbolism, and unnecessary form. This wasn't poverty or severity; it was refinement through elimination. Every element had to justify its presence through structural honesty, perfect proportion, and material beauty. Steel, glass, and concrete were not merely functional; they were material essences to be celebrated. A steel column is *just* a steel column—unadorned, perfect, beautiful because of what it is.
@@ -21,6 +25,10 @@ The **Seagram Building** (1954–1958, **Mies van der Rohe** and **Philip Johnso
 <Warn>Critical distinction: Mies's minimalism is NOT brutalism. Brutalism exposes massive concrete in fortress-like forms. Mies uses refined steel and glass—delicate, elegant, precise. And "less is more" is NOT mere simplicity—it's maximum effect through minimum means, achieved through exquisite proportions and expensive, luxurious materials. Confusing these is a common error.</Warn>
 
 Mies's design method was the opposite of Le Corbusier's programmatic rationalism. He didn't list functions and design accordingly; he stripped away all program to reveal the essence of building itself. His buildings are meditations on space, structure, and material. For this reason, they are often perceived as cold or austere by those unfamiliar with his work. In fact, they are deeply humanistic—they trust that pure spatial and material beauty will move people.
+
+
+<ArticleMedia id="media-hist-008-03b-core-concept" layout="single" type="image" status="placeholder" alt="View of the Seagram Building (New York, 1954–1958, Mies van der Rohe), showing the bronze-tinted glass curtain wall with expressed I-beam mullions, the plaza setback, and the minimalist tower massing of the International Style." caption="Seagram Building — Steel Frame and Curtain Wall" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
 
 ## Key Facts and Testable Items
 
@@ -63,6 +71,8 @@ Mies's design method was the opposite of Le Corbusier's programmatic rationalism
 **Transparency**: Architectural concept using glass to dissolve boundaries between interior and exterior; creates visual continuity and democratic access to space.
 
 **Minimalism**: Design philosophy emphasizing essential elements, geometric purity, reduction to abstraction; Mies is a foundational figure in architectural minimalism.
+
+<ArticleMedia id="media-hist-008-03b-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparison of Mies van der Rohe's three iconic works: Barcelona Pavilion (universal space, cruciform columns), Farnsworth House (minimalist glass box), and Seagram Building (bronze curtain wall tower), showing his philosophy of 'less is more'.\" caption=\"Mies van der Rohe — Three Iconic Works\" suggestedAsset=\"Style comparison illustration\" placementIntent=\"Style comparison for architectural period\" />
 
 ## Related Articles
 

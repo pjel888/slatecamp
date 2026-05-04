@@ -1,34 +1,32 @@
 # Content Diff Report: prefabricated-constructions
 
-Generated: 2026-05-04T00:06:56.696Z
+Generated: 2026-05-04T02:17:43.206Z
 Article ID: ba36cb75-5bb4-4d12-802c-f5ab921f7949
 Changed: true
-Safe to push locally: false
+Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:e5420cda9d4da3a0e6cde26c6d55961d26e414f4a2811beefd10eda3ac5cbb15`
+- Original: `sha256:eed8eb5c81165a32c9afac3b2fcc20441a77a0bfa95a48ae140b3f3f7dfaf452`
 - Normalized: `sha256:c94358c4a0435196243dcb00aaad731620765c0959a652d8637b2c5a9b12fbcb`
-- Candidate: `sha256:c94358c4a0435196243dcb00aaad731620765c0959a652d8637b2c5a9b12fbcb`
+- Candidate: `sha256:b8950f56a0f9d65b25b97a85f9ec8f4caaae279e097cffcbb81c1f16a7c09395`
 
 ## Line summary
 
-- Changed lines: 437
-- Inserted lines: 27
+- Changed lines: 414
+- Inserted lines: 14
 - Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 2
-- UI blocks preserved: 0
-- UI blocks changed/missing: 2
-- Unresolved placeholders: 1
+- UI blocks preserved: 2
+- UI blocks changed/missing: 0
+- Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate contains unresolved UI block placeholders.
-- Candidate is missing 2 preserved UI block(s).
-- original.md hash does not match article metadata export hash.
+- None
 
 ## Warnings
 

@@ -7,6 +7,10 @@ Identify the three regional traditions of North American Indigenous architecture
 
 North American Indigenous architecture predates European contact by centuries to millennia, yet was often overlooked or dismissed as "primitive" in early Eurocentric scholarship. Archaeological and ethnographic evidence reveals sophisticated spatial planning, climate adaptation, and building technologies. Three major traditions merit study: the pueblo tradition of the Southwest (adobe and stone construction in arid climates), the longhouse tradition of the Northeast and Pacific Northwest (post-and-beam structures accommodating extended families), and the earthen mound tradition of the Mississippi River valley (ritual and administrative centers built from rammed earth). These traditions demonstrate that "Indigenous architecture" encompasses diverse responses to distinct environments and cultural values.
 
+
+<ArticleMedia id="media-hist-012-03-core-concept" layout="single" type="image" status="placeholder" alt="View of Taos Pueblo (New Mexico, continuously inhabited for over 1,000 years), showing the multi-story adobe (sun-dried mud brick) apartment-style dwellings with stepped massing, vigas (wooden roof beams), and kiva ceremonial structures." caption="Taos Pueblo — Adobe Multi-Story Dwellings" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
+
 <Tip>Three-part framework: **Southwest = Adobe (heat); Northeast = Timber (family); Midwest = Earth (ceremony)**. Each tradition solved distinct problems through regional materials and cultural values.</Tip>
 
 **Pueblo Architecture: Adobe, Stone, and Arid Adaptation**
@@ -48,6 +52,10 @@ Other mound traditions include **Adena** (1000–100 BCE, Ohio valley) and **Hop
 **Regional Diversity and Environmental Adaptation**
 
 These three traditions—pueblo, longhouse, mound—illustrate that "North American Indigenous architecture" encompasses geographically and culturally specific responses. The Southwest's arid climate shaped adobe and compact aggregated settlement. The Northeast's temperate forest provided timber for post-and-beam and bark cladding. The Midwest's floodplain ecology enabled earth mounding. No single "typical" Indigenous North American building exists; instead, sophisticated environmental adaptation and cultural values produced regional variety.
+
+
+<ArticleMedia id="media-hist-012-03-core-concept" layout="single" type="image" status="placeholder" alt="View of Monks Mound at Cahokia (Illinois, c. 1050–1250 CE), the largest pre-Columbian earthwork north of Mexico — a terraced platform mound rising 30 m covering 6 hectares, demonstrating Mississippian mound-building." caption="Monks Mound — Cahokia Earthworks" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
 
 ## Key Facts and Testable Items
 
@@ -94,6 +102,8 @@ Exams ask what mound construction reveals about political organization. Example:
 **Mound**: Monumental earthen structure built through rammed-earth or soil accumulation; served ritual, administrative, or astronomical functions in Mississippian culture.
 
 **Monks Mound**: Largest mound at Cahokia; 30 meters high, 5.6-hectare base, four-tiered form; built in two rapid phases (c. 1050–1150 CE) through staged construction.
+
+<ArticleMedia id="media-hist-012-03-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparison of three North American Indigenous architectural traditions: Southwest adobe pueblos (Taos Pueblo, multi-story communal dwellings), Northeast longhouses (Iroquois, post-and-beam timber), and Midwest earthworks (Cahokia Monks Mound, rammed earth ritual center).\" caption=\"North American Indigenous Architecture — Three Traditions\" suggestedAsset=\"Style comparison illustration\" placementIntent=\"Style comparison for architectural period\" />
 
 ## Related Articles
 

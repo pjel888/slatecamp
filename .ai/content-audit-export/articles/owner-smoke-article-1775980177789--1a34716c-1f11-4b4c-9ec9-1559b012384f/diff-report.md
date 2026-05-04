@@ -1,20 +1,20 @@
 # Content Diff Report: owner-smoke-article-1775980177789
 
-Generated: 2026-05-04T00:07:07.033Z
+Generated: 2026-05-04T02:17:57.459Z
 Article ID: 1a34716c-1f11-4b4c-9ec9-1559b012384f
-Changed: true
+Changed: false
 Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:7c80abaabcff63811893bbd23cbcd782d62d33f252e53e34bfdb8d2bd9c46442`
+- Original: `sha256:5b578161874e47e7274a761486fb3381c7748a1ef48f94245a27d2573d86526d`
 - Normalized: `sha256:5b578161874e47e7274a761486fb3381c7748a1ef48f94245a27d2573d86526d`
 - Candidate: `sha256:5b578161874e47e7274a761486fb3381c7748a1ef48f94245a27d2573d86526d`
 
 ## Line summary
 
-- Changed lines: 17
-- Inserted lines: 14
+- Changed lines: 0
+- Inserted lines: 0
 - Deleted lines: 0
 
 ## UI block preservation

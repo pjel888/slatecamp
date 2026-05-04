@@ -11,7 +11,7 @@ After studying this article, you should be able to:
 
 ---
 
-<ArticleMedia id="media-law004-prboa-org-chart" layout="single" variant="contained" type="image" status="placeholder" aspectRatio="16:9" title="PRBoA Organizational Structure" description="Organizational chart showing the PRBoA's three-member collegial structure (1 Chairman + 2 Members), their appointment path from IAPOA/UAP → PRC screening → Presidential appointment, and administrative supervision by the PRC." placementIntent="organizational-structure" suggestedSearchQuery="PRBoA organizational chart composition chairman members Philippines architecture" replacementNotes="Create a hierarchical org chart. Top: President of the Philippines (appointment authority). Middle: PRC (administrative supervision). Bottom: PRBoA (Chairman + 2 Members). Side: IAPOA/UAP (nominating body). Show the nomination flow: IAPOA sends 5 nominees → PRC screens to 3 → President appoints 1 per position. Include max tenure annotations (6-5-4 years)." suggestedAsset="Diagram or reference image" />
+<ArticleMedia id="media-law004-prboa-org-chart" layout="single" variant="contained" type="image" status="placeholder" aspectRatio="16:9" title="PRBoA Organizational Structure" alt="Organizational chart showing the PRBoA's three-member collegial structure (1 Chairman + 2 Members), their appointment path from IAPOA/UAP → PRC screening → Presidential appointment, and administrative supervision by the PRC." placementIntent="organizational-structure" suggestedSearchQuery="PRBoA organizational chart composition chairman members Philippines architecture" replacementNotes="Create a hierarchical org chart. Top: President of the Philippines (appointment authority). Middle: PRC (administrative supervision). Bottom: PRBoA (Chairman + 2 Members). Side: IAPOA/UAP (nominating body). Show the nomination flow: IAPOA sends 5 nominees → PRC screens to 3 → President appoints 1 per position. Include max tenure annotations (6-5-4 years)." suggestedAsset="Diagram or reference image" />
 
 ---
 
@@ -26,7 +26,7 @@ The President of the Philippines appoints the Board members. However, the appoin
 
 The process works as follows: for each vacant position, IAPOA submits a list of five (5) nominees. The Commission screens these and submits to the President a list of three (3) recommendations chosen from the five (5) nominees. The President then appoints from these three (3). This system prevents the President from entirely disregarding professional input while reserving final appointment authority to the executive branch.
 
-<ArticleMedia id="media-law004-appointment-flow" layout="single" variant="contained" type="image" status="placeholder" aspectRatio="16:9" title="PRBoA Appointment Process" description="Flowchart of the three-stage PRBoA appointment process: IAPOA/UAP submits 5 nominees → PRC screens to 3 recommendations → President appoints 1. Shows safeguards against political interference and regulatory capture." placementIntent="organizational-structure" suggestedSearchQuery="PRBoA appointment process nomination screening president flowchart" replacementNotes="Create a horizontal flowchart with three stages: Stage 1: IAPOA/UAP (nominating body) → 5 nominees. Stage 2: PRC (screening body) → 3 recommendations. Stage 3: President (appointing authority) → 1 appointee. Label safeguards: 'prevents political operatives' at Stage 3, 'prevents regulatory capture' at Stage 1." suggestedAsset="Diagram or reference image" />
+<ArticleMedia id="media-law004-appointment-flow" layout="single" variant="contained" type="image" status="placeholder" aspectRatio="16:9" title="PRBoA Appointment Process" alt="Flowchart of the three-stage PRBoA appointment process: IAPOA/UAP submits 5 nominees → PRC screens to 3 recommendations → President appoints 1. Shows safeguards against political interference and regulatory capture." placementIntent="organizational-structure" suggestedSearchQuery="PRBoA appointment process nomination screening president flowchart" replacementNotes="Create a horizontal flowchart with three stages: Stage 1: IAPOA/UAP (nominating body) → 5 nominees. Stage 2: PRC (screening body) → 3 recommendations. Stage 3: President (appointing authority) → 1 appointee. Label safeguards: 'prevents political operatives' at Stage 3, 'prevents regulatory capture' at Stage 1." suggestedAsset="Diagram or reference image" />
 
 The structural design reflects a nuanced approach to professional self-regulation: the President ensures democratic accountability (the architect cannot make themselves governors), while the IAPOA ensures that regulators remain rooted in professional knowledge and practice realities. Direct appointment by the President would make regulators political operatives; direct election by the profession would create regulatory capture. The three-stage process—nomination by profession, screening by Commission, appointment by President—balances these concerns.
 
@@ -72,12 +72,14 @@ This design prevents indefinite tenure while allowing sufficient time for a memb
 
 The "one full additional term only" language is significant: partial additional terms are not permitted. If a two-year Member's initial appointment is delayed six months, that Member does not receive a "bonus" sixth month to the reappointment. The one reappointment is fixed at three (3) years regardless of the initial term length, as specified in the IRR.
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="Warn" status="preserved"]
+<LawCallout code="ra9266" section="Section 6 - Term of Office">
+The IRR, Section 6, specifies the reappointment term is a uniform **three (3) years** for ALL members, regardless of their initial term length. Do not assume the reappointment equals the initial term. Correct maximum tenures: Chairman — 6 years (3 + 3), 2-year Member — 5 years (2 + 3), 1-year Member — 4 years (1 + 3).
+</LawCallout>
 Extracted summary:
 - Props: (none)
 - Text: ⚠️ The IRR, Section 6, specifies the reappointment term is a uniform **three (3) years** for ALL members, regardless of their initial term length. Do not assume the reappointment equals the initial term.... — expect this as a trap answer on the LEA.
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="Tip" status="preserved"]
+<Tip>Remember the tenure pattern as **MAX-6-5-4**: Chairman max 6 years, 2-year Member max 5 years, 1-year Member max 4 years. The reappointment is always a flat 3 years.</Tip>
 Extracted summary:
 - Props: (none)
 - Text: Remember the tenure pattern as **MAX-6-5-4**: Chairman max 6 years, 2-year Member max 5 years, 1-year Member max 4 years. The reappointment is always a flat 3 years.

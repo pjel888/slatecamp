@@ -1,16 +1,22 @@
 ## Comprehensive Architectural Services: The Full-Spectrum Commission
 
-<SPP206RefServices />
+## Learning Goal
 
-Comprehensive Architectural Services (CAS) represents the complete range of professional services required throughout an entire building project. This concept evolved through the years in response to the demands of increasingly complex projects. The traditional model of "basic" and "additional" services has evolved toward a more holistic approach.
+After studying this article, you should be able to:
 
-<ArticleMedia type="process-flow" caption="Comprehensive Architectural Services — The Five Service Categories" description="Process flow diagram showing the five CAS categories: Pre-Design Services (SPP 201) → Regular Design Services (SPP 202) → Specialized Architectural Services (SPP 203) → Construction Services (SPP 204) → Post-Construction Services (SPP 205). The architect is shown as prime professional coordinating all categories." />
+- Define comprehensive architectural services (full-spectrum commission).
+- Describe all phases from pre-design through post-construction under one contract.
+- Explain the advantages of a comprehensive contract for the client and architect.
+- Identify typical fee arrangements for comprehensive services.
 
+|---
 ### Understanding Comprehensive Services
 
 Comprehensive Architectural Services encompasses five primary categories: pre-design services, regular design services, specialized architectural services, construction services, and post-construction services. The architect functions as the _prime professional_, serving as the client's agent in coordinating all necessary services for project delivery. This coordinating role defines the architect's leadership position within the project team.
 
-The architect is not expected to perform all services directly. Instead, the architect acts as the _agent of the client_ in procuring and coordinating the necessary services required by the project. This distinction allows architects to maintain professional integrity while managing complex, multidisciplinary teams.
+<ArticleMedia id="media-lea-prac-svc-017-comprehensive-architect" a type="image" caption="Comprehensive Architectural Services — The Five Service Categories" description="Process flow diagram showing the five CAS categories: Pre-Design Services (SPP 201) → Regular Design Services (SPP 202) → Specialized Architectural Services (SPP 203) → Construction Services (SPP 204) → Post-Construction Services (SPP 205). The architect is shown as prime professional coordinating all categories." suggestedAsset="Diagram or reference image" status="placeholder" />
+
+The architect is not expected to perform all services directly.
 
 ### The Five Service Categories
 
@@ -31,3 +37,37 @@ In comprehensive services, the architect assumes professional responsibility and
 This extended engagement creates continuity of service, which is essential for executing a completely viable project. The architect coordinates structural engineers, mechanical engineers, landscape architects, specialty consultants, and construction personnel. This coordination ensures seamless integration of all project elements.
 
 When the client hires an architect to coordinate the complete range of Comprehensive Architectural Services, this relationship constitutes _Project Management (PM)_. Project Management represents the owner's engagement of the architect for the full scope of professional responsibility.
+
+<SPP206RefServices />
+
+<ProcessFlow>
+<ol>
+  <li><strong>Project Definition</strong> — Problem identification</li>
+  <li><strong>Schematic Design</strong> — 15% fee; conceptual design</li>
+  <li><strong>Design Development</strong> — 20% fee; detailed design</li>
+  <li><strong>Contract Documents</strong> — 50% fee; construction docs</li>
+  <li><strong>Bidding/Negotiation</strong> — 5% fee; contractor selection</li>
+  <li><strong>Construction Admin.</strong> — 10% fee; site visits</li>
+</ol>
+</ProcessFlow>
+
+<LawCallout code="irr" section="SPP Documents" title="Professional Practice Framework">SPP Documents 201–209 establish standards for architectural services scope, fee structures, and professional responsibilities under RA 9266.</LawCallout>
+
+<ExamTip>Fee distribution: SD=15%, DD=20%, CD=50%, BA=5%, CA=10%. Contract Documents (50%) is the largest phase. Cumulative: 15%→35%→85%→90%→100%.</ExamTip>
+
+---
+
+## Related Articles
+
+- [SPP Doc 202 Six-Phase Framework](lea-prac-svc-004)
+- [Schematic Design Phase](lea-prac-svc-005)
+- [Design Development Phase](lea-prac-svc-006)
+- [Contract Documents Phase](lea-prac-svc-007)
+- [Bidding and Construction Admin](lea-prac-svc-008)
+- [Pre-Design Services](lea-prac-svc-001)
+- [Specialized Services](lea-prac-svc-009)
+- [Design-Build Delivery](lea-prac-svc-019)
+- [Fee Compensation Methods](lea-prac-cmp-001)
+- [Owner-Architect Agreement](lea-prac-ctr-001)
+
+<KeyValues items={[{"value": "15%", "label": "Schematic Design"}, {"value": "20%", "label": "Design Development"}, {"value": "50%", "label": "Contract Docs"}, {"value": "5%", "label": "Bidding Assist"}, {"value": "10%", "label": "Constr. Admin."}]} />

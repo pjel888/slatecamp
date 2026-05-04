@@ -70,6 +70,8 @@ The **Djenne Mosque** (current structure 1907, Mali) typifies Sahel mud-brick de
 
 **Trade network**: Economic connections linking distant regions; architectural investment reflects accumulated wealth from trade.
 
+<ArticleMedia id="media-hist-011-01-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparison of three canonical African pre-colonial sites: Great Zimbabwe (dry-stone chevron masonry, southern Africa), Lalibela (monolithic rock-hewn churches, Ethiopia), and Djenne Mosque (mud-brick thermal mass, Mali), showing regional construction techniques." caption="African Pre-Colonial Architecture — Three Canonical Sites" suggestedAsset="Style comparison illustration" placementIntent="Style comparison for architectural period" />
+
 ## Related Articles
 
 See also within African Architecture: **lea-hist-011-02-core-concept**.

@@ -7,9 +7,9 @@
 
 ## Schema Activation: Why This Rule Matters
 
-[SLATECAMP_UI_BLOCK:ArticleMedia name="room-volume-ventilation-diagram" type="diagram" caption="3D room diagram showing the four Rule VIII buckets: Footprint (6-3-1.2 sqm floor areas), Volume (2.70/2.40/2.10 m ceiling heights), Lungs (10% window area free opening), Atmosphere (14/12/3 cu.m air space per person). Label each bucket with its governing section and mnemonic. Show air flow arrows from window through room."]
+<ArticleMedia id="media-room-volume-ventilation-diagram" type="diagram" caption="3D room diagram showing the four Rule VIII buckets: Footprint (6-3-1.2 sqm floor areas), Volume (2.70/2.40/2.10 m ceiling heights), Lungs (10% window area free opening), Atmosphere (14/12/3 cu.m air space per person). Label each bucket with its governing section and mnemonic. Show air flow arrows from window through room." />
 
-[SLATECAMP_UI_BLOCK:ArticleMedia name="window-free-area-calculation" type="diagram" caption="Diagram showing window opening free area calculation: gross window vs operable portion vs free area (deduct frame, fixed mullions, grilles). Show a room floor plan with 10% calculation: 25 sqm room → 2.50 sqm free area needed. Include the 1.00 sqm absolute minimum callout and the 5% / 0.24 sqm wet-area alternative."]
+<ArticleMedia id="media-window-free-area-calculation" type="diagram" caption="Diagram showing window opening free area calculation: gross window vs operable portion vs free area (deduct frame, fixed mullions, grilles). Show a room floor plan with 10% calculation: 25 sqm room → 2.50 sqm free area needed. Include the 1.00 sqm absolute minimum callout and the 5% / 0.24 sqm wet-area alternative." />
 
 ## Learning Goal
 

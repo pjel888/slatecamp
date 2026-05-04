@@ -7,9 +7,9 @@
 
 ## Schema Activation: The Basement That Kills the Budget
 
-[SLATECAMP_UI_BLOCK:ArticleMedia name="parking-stall-dimension-overlay" type="diagram" caption="Top-down view of parking layout with dimension callouts: perpendicular car 2.50 m × 5.00 m, parallel car 2.15 m × 6.00 m, jeepney 3.00 m × 9.00 m, bus/truck 3.60 m × 12.00 m, PWD accessible 4.00 m × 5.00 m with 1.80 m access aisle. Show shared aisle configuration for two accessible stalls (4.0 + 1.8 + 4.0 = 9.8 m)."]
+<ArticleMedia id="media-parking-stall-dimension-overlay" type="diagram" caption="Top-down view of parking layout with dimension callouts: perpendicular car 2.50 m × 5.00 m, parallel car 2.15 m × 6.00 m, jeepney 3.00 m × 9.00 m, bus/truck 3.60 m × 12.00 m, PWD accessible 4.00 m × 5.00 m with 1.80 m access aisle. Show shared aisle configuration for two accessible stalls (4.0 + 1.8 + 4.0 = 9.8 m)." />
 
-[SLATECAMP_UI_BLOCK:ArticleMedia name="parking-ratio-calculation" type="diagram" caption="Infographic showing parking ratio calculation: R-5 condominium example with 48 sqm units → 1 slot per 6 units. Show fraction rounding rule: 25 units ÷ 6 = 4.17 → round UP to 5 slots. Use colored blocks to represent pooled parking. Include separate callout for the 4-tier ratio pattern (8-6-4-1 per sqm bracket)."]
+<ArticleMedia id="media-parking-ratio-calculation" type="diagram" caption="Infographic showing parking ratio calculation: R-5 condominium example with 48 sqm units → 1 slot per 6 units. Show fraction rounding rule: 25 units ÷ 6 = 4.17 → round UP to 5 slots. Use colored blocks to represent pooled parking. Include separate callout for the 4-tier ratio pattern (8-6-4-1 per sqm bracket)." />
 
 ## Learning Goal
 
@@ -433,7 +433,7 @@ ALE Swipe: Parking ratios vary by occupancy: Group A (1 per unit), Group B/C (1 
 
 
 
-<ArticleMedia type="image" caption="Parking Layout — Standard, Compact, and Accessible Slot Dimensions with Turning Radii" description="Plan diagram of parking layout showing: standard slot (2.40m × 5.00m), compact slot (2.10m × 4.50m), accessible slot (3.70m × 5.00m with 1.20m access aisle), 90° and 60° parking configurations with aisle widths (6.10m for 90°), vehicle turning radius (min 6.70m for passenger cars), and column bay spacing optimization (3-bay = 7.80m)." />
+<ArticleMedia type="image" caption="Parking Layout — Standard, Compact, and Accessible Slot Dimensions with Turning Radii" alt="Plan diagram of parking layout showing: standard slot (2.40m × 5.00m), compact slot (2.10m × 4.50m), accessible slot (3.70m × 5.00m with 1.20m access aisle), 90° and 60° parking configurations with aisle widths (6.10m for 90°), vehicle turning radius (min 6.70m for passenger cars), and column bay spacing optimization (3-bay = 7.80m)." />
 ## Verified Source Mapping
 
 | Topic                                           | Exact Legal Reference                                                                                              |

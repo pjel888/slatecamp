@@ -7,6 +7,10 @@ Identify the Pritzker Prize laureates and their defining contributions — focus
 
 The **Pritzker Prize**, established in **1979** by the Hyatt Foundation, recognizes living architects whose built work demonstrates tleant, vision, and lasting contribution to the built environment. The jury selects one laureate (or team) annually. Understanding the prize means understanding three eras of recognition that mirror architecture's shifting priorities.
 
+
+<ArticleMedia id="media-hist-008-09-core-concept" layout="single" type="image" status="placeholder" alt="Timeline infographic showing selected Pritzker Prize laureates from the first award (Philip Johnson, 1979) to recent winners, highlighting firsts: Zaha Hadid (first woman, 2004), Diébédo Francis Kéré (first African, 2022)." caption="Pritzker Prize Timeline — From Johnson (1979) to Kéré (2022)" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
+
 <Tip>
 **Pritzker Prize = architecture's Nobel.** Established 1979, one laureate annually (or team). Each laureate = one defining building you must know. From 1979 to 2026 is 47 years of choices—this is pure memorization territory. The exam tests coverage across all eras. Expect 2–3 direct Pritzker questions.
 </Tip>
@@ -24,6 +28,10 @@ Do not assume the Pritzker prize always goes to Western architects or to formali
 <Note>
 The recent shift from Western formalist monuments to Global South social practice is significant. The prize itself is changing—recognizing different values. Note milestone laureates: first woman (Hadid 2004), first African (Kéré 2022), first posthumous (Frei Otto 2015), and the geographic expansion beyond Euro-America. These "firsts" appear frequently on exams.
 </Note>
+
+
+<ArticleMedia id="media-hist-008-09-core-concept" layout="single" type="image" status="placeholder" alt="View of the Gando Primary School (Burkina Faso, 2001, Francis Kéré), showing the raised clay-brick walls, the ventilated double-roof system, and the community-engaged design process that exemplifies the Pritzker's shift toward socially engaged architecture." caption="Gymnasium at Gando — Francis Kéré's Community Architecture" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
 
 ## Key Facts and Testable Items
 
@@ -59,6 +67,8 @@ The recent shift from Western formalist monuments to Global South social practic
 **Technological practice** — Architectural approach driven by structural and material innovation; exemplified by Foster, Piano, Rogers, and Otto.
 
 **Laureate** — A person or team awarded a prize; in architecture, typically refers to a Pritzker Prize winner.
+
+<ArticleMedia id="media-hist-008-09-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Timeline of Pritzker Prize laureates (1979–2025) highlighting key milestones: first laureate (Johnson, 1979), first woman (Hadid, 2004), first African (Kéré, 2022), and the evolution from formalist to socially engaged architecture.\" caption=\"Pritzker Prize — Laureate Timeline\" suggestedAsset=\"Timeline diagram\" placementIntent=\"Timeline diagram for architectural period\" />
 
 ## Related Articles
 

@@ -1,45 +1,38 @@
 {
   "article_id": "0c236406-a3aa-46b6-9833-b2aa88a6e131",
   "slug": "lea-util-006-07-mepf-equipment-noise-sources-and-output-levels",
-  "generated_at": "2026-05-04T00:06:37.134Z",
-  "old_hash": "sha256:8d315ef8c355028fc2f5cdb38ab5425bfba29f087a5e0989a402a2c9fe29bf97",
-  "new_hash": "sha256:3ec78247f348c249441596ca9c52f9afeed173fd9a1859968dda85b9431da7f4",
-  "original_hash": "sha256:8d315ef8c355028fc2f5cdb38ab5425bfba29f087a5e0989a402a2c9fe29bf97",
+  "generated_at": "2026-05-04T02:17:18.344Z",
+  "old_hash": "sha256:3ec78247f348c249441596ca9c52f9afeed173fd9a1859968dda85b9431da7f4",
+  "new_hash": "sha256:e6f8384130f69ed4a56a352765725339ebdf46f167778b7159108b64e084b322",
+  "original_hash": "sha256:3ec78247f348c249441596ca9c52f9afeed173fd9a1859968dda85b9431da7f4",
   "normalized_hash": "sha256:3ec78247f348c249441596ca9c52f9afeed173fd9a1859968dda85b9431da7f4",
-  "candidate_hash": "sha256:3ec78247f348c249441596ca9c52f9afeed173fd9a1859968dda85b9431da7f4",
+  "candidate_hash": "sha256:e6f8384130f69ed4a56a352765725339ebdf46f167778b7159108b64e084b322",
   "changed": true,
-  "changed_line_count": 520,
-  "inserted_line_count": 19,
+  "changed_line_count": 457,
+  "inserted_line_count": 4,
   "deleted_line_count": 0,
   "ui_blocks_original_count": 3,
-  "ui_blocks_candidate_count": 0,
-  "ui_blocks_changed_count": 3,
+  "ui_blocks_candidate_count": 3,
+  "ui_blocks_changed_count": 0,
   "ui_blocks_count": 3,
-  "unresolved_placeholders_count": 1,
-  "preserved_blocks_count": 0,
+  "unresolved_placeholders_count": 0,
+  "preserved_blocks_count": 3,
   "changed_text_summary": {
-    "changed": 520,
-    "inserted": 19,
+    "changed": 457,
+    "inserted": 4,
     "deleted": 0,
-    "original_line_count": 540,
-    "candidate_line_count": 559
+    "original_line_count": 559,
+    "candidate_line_count": 563
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0001",
-      "ui_0002",
-      "ui_0003"
-    ],
-    "changed_count": 3
+    "missing_block_ids": [],
+    "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate contains unresolved UI block placeholders.",
-    "Candidate is missing 3 preserved UI block(s)."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 3 preserved UI block(s)."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

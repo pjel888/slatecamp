@@ -3,12 +3,15 @@
 Modernism evolved through distinct movements, each responding to previous aesthetics and technological shifts. Understanding the theoretical foundations—what each movement valued, rejected, and prioritized—is crucial for LEA questions on style identification and conceptual frameworks. This sequence reveals how architectural thinking transformed from craft-centered ideals to digital abstraction.
 </Callout>
 
-
 ## Learning Goal
 
 Identify and distinguish the major architectural movements from Arts & Crafts through Parametricism, understanding each movement's philosophical position, key figures, and what it rejected and valued.
 
 ## Core Concept
+
+|<ArticleMedia id="media-lea-theo-007-01-core-concept" a type="image" caption="Timeline of Architectural Movements — Arts & Crafts to Parametricism" description="Horizontal timeline from 1880 to 2020 showing major movements with key figures, philosophies, and built examples: Arts & Crafts (Morris, Ruskin, 1880-1910) → Art Nouveau (Horta, Gaudi, 1890-1910) → Expressionism (Mendelsohn, 1910-1930) → Bauhaus/Modernism (Gropius, Mies, Le Corbusier, 1919-1960) → International Style (1930-1970) → Postmodernism (Venturi, Graves, 1966-1990) → Deconstructivism (Gehry, Hadid, 1988-present) → High-Tech (Rogers, Foster, 1970-present) → Parametricism (Schumacher, 2000-present). Each movement entry shows what it rejected (previous movement) and what it valued." suggestedAsset="Diagram or reference image" status="placeholder" />
+
+<ArticleMedia id="media-lea-theo-007-01-core-concept-b" type="image" caption="Key Buildings Comparison — Modernist and Postmodernist Examples" description="Side-by-side comparison of iconic buildings from each major movement: Arts & Crafts (Glasgow School of Art), Art Nouveau (Casa Batllo), Modernism/International Style (Villa Savoye, Seagram Building), Postmodernism (Vanna Venturi House, AT&T Building), Deconstructivism (Guggenheim Bilbao), High-Tech (Centre Pompidou), Parametricism (Heydar Aliyev Center). Each building annotated with its key formal characteristics, materials, and what it communicated about the movement's philosophy." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 Architectural modernism was not a single unified style but a philosophical trajectory spanning roughly 1880–1990, characterized by radical departures from historical precedent. Each movement represented both a technological advancement and an ideological response to the limitations of its predecessor.
 
@@ -46,21 +49,15 @@ Throughout this sequence, notice the recurring tension: **craft versus industria
 <WikiExamTable headers={["Movement", "Dates", "Key Figures", "Rejected", "Valued", "Testable Phrase"]} rows={[['["Arts & Crafts", "1880–1920", "Morris, Mackintosh, Ashbee", "Mass production, pastiche", "Handcraft, material truth", "\\"Truth to materials\\""]', '["Art Nouveau", "1890–1910", "Horta, Van de Velde", "Rigid geometry, static ornament", "Biomimetic form, integration", "\\"Whiplash curves,\\" \\"organic lines\\""]', '["International Style", "1920–1945", "Gropius, Mies, Le Corbusier", "Ornament, historical reference", "Functional clarity, universality", "\\"Form follows function\\"; \\"less is more\\""]', '["Brutalism", "1950–1975", "Rudolph, Tange, Kahn", "Glass-box neutrality", "Material expression, sculptural presence", "\\"Honest concrete,\\" \\"structural expression\\""]', '["Postmodernism", "1970–1995", "Venturi, Graves, Scott Brown", "Utopian universalism, exclusion of meaning", "Ornament, historical allusion, irony", "\\"Complexity and contradiction\\""]', '["Deconstructivism", "1988–2005", "Gehry, Koolhaas, Hadid, Eisenman", "Stable geometric form", "Fragmentation, computational geometry", "\\"Non-Euclidean form,\\" \\"fragmented\\""]', '["Parametricism", "2008–present", "Schumacher, Hadid, BIG", "Ornament/structure binaries", "Data-responsive variation, algorithmic design", "\\"Algorithmic generation,\\" \\"continuous variation\\""]']]} />
 ## How It's Tested on the LEA
 
-
 <ExamTip>1. **Movement Identification**: "This building features continuous surface modulation responding to solar orientation. Which movement best describes this approach?" (Answer: Parametricism)</ExamTip>
-
 
 <ExamTip>2. **Theoretical Opposition**: "Which movement first rejected ornament absolutely and why?" (Answer: International Style/Bauhaus; unified aesthetic that eliminated applied decoration)</ExamTip>
 
-
 <ExamTip>3. **Figure-to-Movement Matching**: "Walter Gropius founded which movement and what were its three core principles?" (Answer: Bauhaus/International Style; industrial production, functional clarity, democratic design)</ExamTip>
-
 
 <ExamTip>4. **Conceptual Trajectory**: "How did postmodernism theoretically oppose the International Style?" (Answer: Reinstated meaning, historical reference, and irony against claims of universal form)</ExamTip>
 
-
 <ExamTip>5. **Philippine or Regional Application**: "Which movement's principles best align with adaptive reuse of colonial Intramuros buildings?" (Answer: Postmodernism or contemporary practice respecting historical form; or deconstructivism if using salvaged elements in new geometric contexts)</ExamTip>
-
 
 ## Common Mistakes
 
@@ -69,7 +66,6 @@ Throughout this sequence, notice the recurring tension: **craft versus industria
 <WikiMistakeCard mistake="Treating \"International Style\" and \"Bauhaus\" as Identical" correction="Bauhaus was the school/method; International Style was the global diffusion of its principles." context="Not all International Style architects passed through Bauhaus." />
 
 <WikiMistakeList mistakes={["Seeing Postmodernism as Frivolous. Postmodernism was theoretically rigorous (Venturi's semiotic framework) but rejected modernism's claim to philosophical inevitability. It was critique, not mere ornamentation.", "Equating Deconstructivism with Chaos. Deconstructivism applied poststructuralist theory to form; fragmentation was philosophical, not accidental. Eisenman's diagrams and Koolhaas's programmatic layering are systematic.", "Assuming Parametricism is Just Computer-Generated Form. Parametricism is a **design philosophy** proposing that all variation be algorithmically linked to performance parameters. Not all digital architecture is parametric; much is merely CNC-fabricated deconstructivism.", "Missing the Recycling Motif. Brutalism's sculptural monumentality influenced postmodern symbolism; postmodern irony influenced deconstructivist non-hierarchy; deconstructivist fragmentation enabled parametric variation. Each movement is parasitic on its predecessor's formal vocabulary."]} />
-
 
 ## Key Terms
 

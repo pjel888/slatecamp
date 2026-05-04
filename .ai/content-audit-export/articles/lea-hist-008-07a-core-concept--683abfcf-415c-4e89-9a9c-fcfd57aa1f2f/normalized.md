@@ -68,6 +68,8 @@ Deconstructivism remains contested. Critics argue it is purely aesthetic fragmen
 - **Void**: Empty space or absence within or through a building; used symbolically in **Libeskind's Jewish Museum**.
 - **Deconstruction**: French philosophical method questioning the stability of meaning by revealing internal contradictions; provides the movement's intellectual framework.
 
+<ArticleMedia id="media-hist-008-07a-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparison of the seven Deconstructivist architects featured in the 1988 MoMA exhibition showing their fragmented, non-rectilinear forms: Gehry (Guggenheim Bilbao), Hadid (Vitra Fire Station), Libeskind (Jewish Museum), Eisenman (Wexner Center), Koolhaas, Tschumi, and Coop Himmelb(l)au." caption="Deconstructivism — MoMA 1988 Exhibition Architects" suggestedAsset="Style comparison illustration" placementIntent="Style comparison for architectural period" />
+
 ## Related Articles
 
 See also within Modern & Contemporary Architecture: **lea-hist-008-01-core-concept**, **lea-hist-008-02-core-concept**, **lea-hist-008-03a-core-concept**, **lea-hist-008-03b-core-concept**.

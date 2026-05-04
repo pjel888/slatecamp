@@ -5,7 +5,6 @@ Determine buildable area from site constraints and setbacks, organize site acces
 
 Site development planning is the systematic process of organizing land use, access, and infrastructure to create a functional, safe, and efficient site. Understanding how to determine buildable envelopes, manage site access, and coordinate utilities is essential to laying the foundation for any architectural project. 
 
-
 ## Core Concept
 
 Site development planning transforms raw land into organized, developable space through a methodical approach that balances regulatory constraints, infrastructure logistics, and design intent. 
@@ -32,6 +31,7 @@ Access is organized hierarchically—major arterial roads connect to local stree
  - **3 meters:** Urban areas.
  - **20 meters:** Agricultural areas.
  - **40 meters:** Forest areas.
+<ArticleMedia id="media-lea-dsgn-012-02-core-concept" a type="image" caption="Buildable Area Analysis — Setback, Easement, and Site Constraints" description="Site plan diagram showing buildable area calculation: total site minus setback zones (front 4.5m, sides 2.0m, rear 2.0m for R-1), easement strips (3m utility, water body), and slope constraints. Resulting development footprint with FAR and lot coverage annotation." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
@@ -70,8 +70,8 @@ A project is located in an **urban** district bordering a river. What is the req
  **12-10-8-3**. PSO is your footprint limit; FAR is your total volume limit.
 </Tip>
 
-
 **Exam Tip:** Buildable area = site area − (setbacks + easements + flood hazard areas + steep slopes + water body buffers). A 2,000 sqm lot with 3m setbacks on all sides yields ~1,200 sqm buildable area.
+<ArticleMedia id="media-lea-dsgn-012-02-core-concept" a type="image" caption="Site Development Plan — Buildable Area, Access, and Utility Routing" description="Master site plan showing: buildable area calculated from setbacks and easement constraints, vehicular access and parking layout, pedestrian walkway circulation, utility routing (water main, sewer line, stormwater, power, telecom), and phased development boundaries." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Cross-References
 

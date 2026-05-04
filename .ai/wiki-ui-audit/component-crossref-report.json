@@ -1,0 +1,739 @@
+[
+  {
+    "component": "Accordion",
+    "articles": 8,
+    "expected_props": [
+      "allowMultiple",
+      "children"
+    ],
+    "content_props": [
+      "label",
+      "prompt"
+    ],
+    "children_expected": true,
+    "issues": [
+      "UNEXPECTED props passed but not destructured: ['label', 'prompt']",
+      "Multiple prop conventions: 3"
+    ],
+    "classification": "CHECK \u2014 multiple conventions, verify rendering",
+    "num_combos": 3
+  },
+  {
+    "component": "ArticleMedia",
+    "articles": 461,
+    "expected_props": [
+      "alt",
+      "aspectRatio",
+      "caption",
+      "carouselCount",
+      "credit",
+      "description",
+      "embedUrl",
+      "id",
+      "layout",
+      "placementIntent",
+      "replacementNotes",
+      "sourceUrl",
+      "src",
+      "status",
+      "suggestedAsset",
+      "suggestedSearchQuery",
+      "title",
+      "type",
+      "variant",
+      "youtubeId"
+    ],
+    "content_props": [
+      "alt",
+      "aspectRatio",
+      "caption",
+      "id",
+      "layout",
+      "placementIntent",
+      "replacementNotes",
+      "status",
+      "suggestedAsset",
+      "suggestedSearchQuery",
+      "title",
+      "type",
+      "variant"
+    ],
+    "children_expected": false,
+    "issues": [
+      "MISSING props that component destructures: ['carouselCount', 'credit', 'description', 'embedUrl', 'sourceUrl', 'src', 'youtubeId']",
+      "Multiple prop conventions: 10"
+    ],
+    "classification": "BROKEN \u2014 missing expected props",
+    "num_combos": 10
+  },
+  {
+    "component": "Callout",
+    "articles": 171,
+    "expected_props": [
+      "action",
+      "bordered",
+      "children",
+      "className",
+      "dismissible",
+      "onDismiss",
+      "title",
+      "variant"
+    ],
+    "content_props": [
+      "color",
+      "severity",
+      "title",
+      "type",
+      "variant"
+    ],
+    "children_expected": true,
+    "issues": [
+      "UNEXPECTED props passed but not destructured: ['color', 'severity', 'type']",
+      "Multiple prop conventions: 8"
+    ],
+    "classification": "CHECK \u2014 multiple conventions, verify rendering",
+    "num_combos": 8
+  },
+  {
+    "component": "ComparisonTable",
+    "articles": 20,
+    "expected_props": [
+      "children"
+    ],
+    "content_props": [
+      "categories",
+      "columns",
+      "data",
+      "rows",
+      "title",
+      "unit"
+    ],
+    "children_expected": true,
+    "issues": [
+      "Multiple prop conventions: 4"
+    ],
+    "classification": "CHECK \u2014 multiple conventions, verify rendering",
+    "num_combos": 4
+  },
+  {
+    "component": "ElaborativeInterrogation",
+    "articles": 1,
+    "expected_props": [
+      "answer",
+      "articleId",
+      "existingResponse",
+      "options",
+      "placeholder",
+      "promptId",
+      "question",
+      "revealText",
+      "type"
+    ],
+    "content_props": [
+      "answer",
+      "question"
+    ],
+    "children_expected": false,
+    "issues": [
+      "MISSING props that component destructures: ['articleId', 'existingResponse', 'options', 'placeholder', 'promptId', 'revealText', 'type']"
+    ],
+    "classification": "BROKEN \u2014 missing expected props",
+    "num_combos": 1
+  },
+  {
+    "component": "ExamTip",
+    "articles": 311,
+    "expected_props": [
+      "children"
+    ],
+    "content_props": [
+      "title"
+    ],
+    "children_expected": true,
+    "issues": [
+      "Multiple prop conventions: 2"
+    ],
+    "classification": "CHECK \u2014 multiple conventions, verify rendering",
+    "num_combos": 2
+  },
+  {
+    "component": "Example",
+    "articles": 42,
+    "expected_props": [
+      "children",
+      "dismissible",
+      "onDismiss",
+      "title"
+    ],
+    "content_props": [
+      "title"
+    ],
+    "children_expected": true,
+    "issues": [
+      "Multiple prop conventions: 2"
+    ],
+    "classification": "CHECK \u2014 multiple conventions, verify rendering",
+    "num_combos": 2
+  },
+  {
+    "component": "KeyValues",
+    "articles": 66,
+    "expected_props": [
+      "items"
+    ],
+    "content_props": [
+      "items",
+      "note",
+      "pairs",
+      "title",
+      "values"
+    ],
+    "children_expected": false,
+    "issues": [
+      "UNEXPECTED props passed but not destructured: ['note', 'pairs', 'title', 'values']",
+      "Multiple prop conventions: 6"
+    ],
+    "classification": "BROKEN \u2014 unexpected props, data ignored",
+    "num_combos": 6
+  },
+  {
+    "component": "LawCallout",
+    "articles": 146,
+    "expected_props": [
+      "children",
+      "code",
+      "section",
+      "title"
+    ],
+    "content_props": [
+      "code",
+      "section",
+      "title"
+    ],
+    "children_expected": true,
+    "issues": [],
+    "classification": "CHECK \u2014 multiple conventions, verify rendering",
+    "num_combos": 4
+  },
+  {
+    "component": "Note",
+    "articles": 211,
+    "expected_props": [
+      "children",
+      "dismissible",
+      "onDismiss",
+      "title"
+    ],
+    "content_props": [
+      "spec",
+      "type"
+    ],
+    "children_expected": true,
+    "issues": [
+      "UNEXPECTED props passed but not destructured: ['spec', 'type']",
+      "Multiple prop conventions: 3"
+    ],
+    "classification": "CHECK \u2014 multiple conventions, verify rendering",
+    "num_combos": 3
+  },
+  {
+    "component": "ProcessFlow",
+    "articles": 37,
+    "expected_props": [
+      "children"
+    ],
+    "content_props": [
+      "items",
+      "steps"
+    ],
+    "children_expected": true,
+    "issues": [
+      "Multiple prop conventions: 3"
+    ],
+    "classification": "CHECK \u2014 multiple conventions, verify rendering",
+    "num_combos": 3
+  },
+  {
+    "component": "SPP206RefServices",
+    "articles": 5,
+    "expected_props": [],
+    "content_props": [],
+    "children_expected": false,
+    "issues": [],
+    "classification": "OK",
+    "num_combos": 1
+  },
+  {
+    "component": "SPP207RefServices",
+    "articles": 2,
+    "expected_props": [],
+    "content_props": [],
+    "children_expected": false,
+    "issues": [],
+    "classification": "OK",
+    "num_combos": 1
+  },
+  {
+    "component": "SubjectSnapshot",
+    "articles": 8,
+    "expected_props": [
+      "items"
+    ],
+    "content_props": [
+      "items"
+    ],
+    "children_expected": false,
+    "issues": [],
+    "classification": "OK",
+    "num_combos": 1
+  },
+  {
+    "component": "Tip",
+    "articles": 402,
+    "expected_props": [
+      "children",
+      "dismissible",
+      "onDismiss",
+      "title"
+    ],
+    "content_props": [
+      "message",
+      "title"
+    ],
+    "children_expected": true,
+    "issues": [
+      "UNEXPECTED props passed but not destructured: ['message']",
+      "Multiple prop conventions: 3"
+    ],
+    "classification": "CHECK \u2014 multiple conventions, verify rendering",
+    "num_combos": 3
+  },
+  {
+    "component": "Warn",
+    "articles": 265,
+    "expected_props": [
+      "children",
+      "dismissible",
+      "onDismiss",
+      "title"
+    ],
+    "content_props": [
+      "message",
+      "title"
+    ],
+    "children_expected": true,
+    "issues": [
+      "UNEXPECTED props passed but not destructured: ['message']",
+      "Multiple prop conventions: 3"
+    ],
+    "classification": "CHECK \u2014 multiple conventions, verify rendering",
+    "num_combos": 3
+  },
+  {
+    "component": "WikiCalloutBox",
+    "articles": 4,
+    "expected_props": [
+      "children",
+      "dismissible",
+      "onDismiss",
+      "type"
+    ],
+    "content_props": [
+      "title",
+      "variant"
+    ],
+    "children_expected": true,
+    "issues": [
+      "UNEXPECTED props passed but not destructured: ['title', 'variant']"
+    ],
+    "classification": "CHECK \u2014 paired tag, unexpected props may go to children",
+    "num_combos": 1
+  },
+  {
+    "component": "WikiChangedPill",
+    "articles": 1,
+    "expected_props": [
+      "className",
+      "oldValue"
+    ],
+    "content_props": [],
+    "children_expected": false,
+    "issues": [
+      "MISSING props that component destructures: ['className', 'oldValue']"
+    ],
+    "classification": "BROKEN \u2014 missing expected props",
+    "num_combos": 1
+  },
+  {
+    "component": "WikiExamTable",
+    "articles": 177,
+    "expected_props": [
+      "caption",
+      "columns",
+      "hasSourceColumn",
+      "rows"
+    ],
+    "content_props": [
+      "cols",
+      "columns",
+      "data",
+      "headers",
+      "rows",
+      "sensors"
+    ],
+    "children_expected": false,
+    "issues": [
+      "UNEXPECTED props passed but not destructured: ['cols', 'data', 'headers', 'sensors']",
+      "MISSING props that component destructures: ['caption', 'hasSourceColumn']",
+      "Multiple prop conventions: 7"
+    ],
+    "classification": "BROKEN \u2014 unexpected props, data ignored",
+    "num_combos": 7
+  },
+  {
+    "component": "WikiMistakeCard",
+    "articles": 169,
+    "expected_props": [
+      "__index",
+      "body",
+      "context",
+      "correctValue",
+      "correction",
+      "explanation",
+      "mistake",
+      "number",
+      "sourceRef",
+      "title",
+      "wrongValue"
+    ],
+    "content_props": [
+      "body",
+      "context",
+      "correctValue",
+      "correction",
+      "explanation",
+      "mistake",
+      "number",
+      "severity",
+      "title",
+      "wrongValue"
+    ],
+    "children_expected": false,
+    "issues": [
+      "UNEXPECTED props passed but not destructured: ['severity']",
+      "MISSING props that component destructures: ['__index', 'sourceRef']",
+      "Multiple prop conventions: 5"
+    ],
+    "classification": "BROKEN \u2014 unexpected props, data ignored",
+    "num_combos": 5
+  },
+  {
+    "component": "WikiMistakeList",
+    "articles": 293,
+    "expected_props": [
+      "items",
+      "mistakes"
+    ],
+    "content_props": [
+      "items",
+      "mistakes",
+      "title"
+    ],
+    "children_expected": false,
+    "issues": [
+      "UNEXPECTED props passed but not destructured: ['title']",
+      "Multiple prop conventions: 5"
+    ],
+    "classification": "BROKEN \u2014 unexpected props, data ignored",
+    "num_combos": 5
+  },
+  {
+    "component": "XPS",
+    "articles": 1,
+    "expected_props": [],
+    "content_props": [],
+    "children_expected": false,
+    "issues": [],
+    "classification": "OK",
+    "num_combos": 1
+  },
+  {
+    "component": "AccordionItem",
+    "articles": 0,
+    "expected_props": [
+      "_index",
+      "children",
+      "title"
+    ],
+    "content_props": [],
+    "children_expected": true,
+    "issues": [
+      "NOT used in any article"
+    ],
+    "classification": "UNUSED",
+    "num_combos": 0
+  },
+  {
+    "component": "AlertBox",
+    "articles": 0,
+    "expected_props": [
+      "children",
+      "type"
+    ],
+    "content_props": [],
+    "children_expected": true,
+    "issues": [
+      "NOT used in any article"
+    ],
+    "classification": "UNUSED",
+    "num_combos": 0
+  },
+  {
+    "component": "AuthorityContent",
+    "articles": 0,
+    "expected_props": [
+      "children"
+    ],
+    "content_props": [],
+    "children_expected": true,
+    "issues": [
+      "NOT used in any article"
+    ],
+    "classification": "UNUSED",
+    "num_combos": 0
+  },
+  {
+    "component": "CalloutBox",
+    "articles": 0,
+    "expected_props": [
+      "children",
+      "dismissible",
+      "onDismiss",
+      "type"
+    ],
+    "content_props": [],
+    "children_expected": true,
+    "issues": [
+      "NOT used in any article"
+    ],
+    "classification": "UNUSED",
+    "num_combos": 0
+  },
+  {
+    "component": "ExamTip_reExport",
+    "articles": 0,
+    "expected_props": [
+      "children"
+    ],
+    "content_props": [],
+    "children_expected": true,
+    "issues": [
+      "NOT used in any article"
+    ],
+    "classification": "UNUSED",
+    "num_combos": 0
+  },
+  {
+    "component": "FormulaBlock",
+    "articles": 0,
+    "expected_props": [
+      "label",
+      "steps"
+    ],
+    "content_props": [],
+    "children_expected": false,
+    "issues": [
+      "NOT used in any article"
+    ],
+    "classification": "UNUSED",
+    "num_combos": 0
+  },
+  {
+    "component": "GenericBlock",
+    "articles": 0,
+    "expected_props": [
+      "children"
+    ],
+    "content_props": [],
+    "children_expected": true,
+    "issues": [
+      "NOT used in any article"
+    ],
+    "classification": "UNUSED",
+    "num_combos": 0
+  },
+  {
+    "component": "InlineQuiz",
+    "articles": 0,
+    "expected_props": [
+      "options",
+      "question",
+      "rationale"
+    ],
+    "content_props": [],
+    "children_expected": false,
+    "issues": [
+      "NOT used in any article"
+    ],
+    "classification": "UNUSED",
+    "num_combos": 0
+  },
+  {
+    "component": "Mermaid",
+    "articles": 0,
+    "expected_props": [
+      "chart"
+    ],
+    "content_props": [],
+    "children_expected": false,
+    "issues": [
+      "NOT used in any article"
+    ],
+    "classification": "UNUSED",
+    "num_combos": 0
+  },
+  {
+    "component": "PrequestionGate",
+    "articles": 0,
+    "expected_props": [
+      "articleSlug",
+      "children",
+      "onMissedQuestions",
+      "topicId",
+      "topicName"
+    ],
+    "content_props": [],
+    "children_expected": true,
+    "issues": [
+      "NOT used in any article"
+    ],
+    "classification": "UNUSED",
+    "num_combos": 0
+  },
+  {
+    "component": "RevealBlock",
+    "articles": 0,
+    "expected_props": [
+      "blurRadius",
+      "children",
+      "defaultRevealed",
+      "label",
+      "prompt"
+    ],
+    "content_props": [],
+    "children_expected": true,
+    "issues": [
+      "NOT used in any article"
+    ],
+    "classification": "UNUSED",
+    "num_combos": 0
+  },
+  {
+    "component": "Tab",
+    "articles": 0,
+    "expected_props": [
+      "children",
+      "label",
+      "value"
+    ],
+    "content_props": [],
+    "children_expected": true,
+    "issues": [
+      "NOT used in any article"
+    ],
+    "classification": "UNUSED",
+    "num_combos": 0
+  },
+  {
+    "component": "Tabs",
+    "articles": 0,
+    "expected_props": [
+      "children",
+      "defaultTab"
+    ],
+    "content_props": [],
+    "children_expected": true,
+    "issues": [
+      "NOT used in any article"
+    ],
+    "classification": "UNUSED",
+    "num_combos": 0
+  },
+  {
+    "component": "TeachBackPrompt",
+    "articles": 0,
+    "expected_props": [
+      "entryPoint",
+      "topicId",
+      "topicName",
+      "trailDayId"
+    ],
+    "content_props": [],
+    "children_expected": false,
+    "issues": [
+      "NOT used in any article"
+    ],
+    "classification": "UNUSED",
+    "num_combos": 0
+  },
+  {
+    "component": "WikiAccordion",
+    "articles": 0,
+    "expected_props": [
+      "allowMultiple",
+      "children"
+    ],
+    "content_props": [],
+    "children_expected": true,
+    "issues": [
+      "NOT used in any article"
+    ],
+    "classification": "UNUSED",
+    "num_combos": 0
+  },
+  {
+    "component": "WikiPartHeader",
+    "articles": 0,
+    "expected_props": [
+      "partNumber",
+      "subtitle",
+      "title"
+    ],
+    "content_props": [],
+    "children_expected": false,
+    "issues": [
+      "NOT used in any article"
+    ],
+    "classification": "UNUSED",
+    "num_combos": 0
+  },
+  {
+    "component": "WikiPre",
+    "articles": 0,
+    "expected_props": [
+      "children"
+    ],
+    "content_props": [],
+    "children_expected": true,
+    "issues": [
+      "NOT used in any article"
+    ],
+    "classification": "UNUSED",
+    "num_combos": 0
+  },
+  {
+    "component": "WrongAnswerBanner",
+    "articles": 0,
+    "expected_props": [
+      "fromWrongAnswer",
+      "topicName"
+    ],
+    "content_props": [],
+    "children_expected": false,
+    "issues": [
+      "NOT used in any article"
+    ],
+    "classification": "UNUSED",
+    "num_combos": 0
+  }
+]

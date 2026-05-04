@@ -13,12 +13,16 @@ Identify the construction, ventilation, and fire protection requirements for she
 
 ## 1. Hook / Opening Scenario
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="LawCallout" status="preserved"]
+<LawCallout code="pd1096" section="Rule IV - Sheet Metal">
+National Building Code of the Philippines (PD 1096) — Primary legislation governing building design and construction.
+</LawCallout>
 Extracted summary:
 - Props: (none)
 - Text: National Building Code of the Philippines (PD 1096) — Primary legislation gov...
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+<LawCallout code="pd1096" section="Rule IV - Spray Booths">
+National Building Code of the Philippines (PD 1096) — Primary legislation governing building design and construction.
+</LawCallout>
 Extracted summary:
 - Props: (none)
 - Text: National Building Code of the Philippines (PD 1096) — Primary legislation gov...
@@ -222,7 +226,7 @@ The following checklist consolidates all prescriptive requirements of Sections 1
 
 ### Construction (Section 1701)
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="preserved"]
+<Warn>Don't memorize every code section number — memorize the *rule*. The LEA tests application of code standards, not section number recall, except for major, frequently tested sections (e.g., Rule VII for occupancy, Rule VIII for light/ventilation).</Warn>
 Extracted summary:
 
 \
@@ -339,7 +343,7 @@ The number sequence — **2 and 8** — doubles from one requirement to the next
 <Note>
 **LEA Pattern:** Code questions provide scenarios with dimensions/quantities....
 </Note>
-[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
+<ExamTip>**LEA Pattern:** Code questions often provide a scenario with specific dimensions or quantities. Identify whether the scenario complies with the code. Pay attention to units (meters vs. millimeters) and aggregate vs. individual limits.</ExamTip>
 Extracted summary:
 - Props: (none)
 - Text: **LEA Pattern:** Code questions provide scenarios with dimensions/quantities....

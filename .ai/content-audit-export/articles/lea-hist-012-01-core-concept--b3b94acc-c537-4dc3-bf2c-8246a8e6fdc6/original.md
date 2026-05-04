@@ -7,6 +7,10 @@ Distinguish Maya architecture (corbelled vaults, astronomy-aligned pyramids, hie
 
 Maya and Aztec architecture represents two consecutive Mesoamerican empires with different structural systems, urban philosophies, and building scales. The **Maya civilization** (circa 2000 BCE – 1600s CE, though classical period peaks 250–900 CE) developed corbelled vault technology, hieroglyphic inscription on buildings, and pyramid-temples oriented to astronomical events. **Aztec civilization** (1345–1521 CE) built massive temple complexes and urban centers using stone masonry at a scale surpassing earlier peoples, emphasizing ritual sacrifice, double pyramids, and hydraulic engineering. Both cultures embedded sacred cosmology into architectural form.
 
+
+<ArticleMedia id="media-hist-012-01-core-concept" layout="single" type="image" status="placeholder" alt="View of El Castillo (Temple of Kukulcán) at Chichen Itza (c. 8th–12th century, Yucatán, Mexico), showing the stepped pyramid with 91 steps per side, serpent balustrades, and the astronomical alignment producing the equinox serpent shadow effect." caption="El Castillo — Chichen Itza Maya Pyramid" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
+
 <Tip>
 **Maya = corbelled vaults + astronomy + hieroglyphics; Aztec = double pyramids + ritual sacrifice + hydraulic engineering.** These are not the same culture. Maya peaked 250–900 CE, declined, and persisted. Aztec emerged 1345 CE—centuries later, different regions, different priorities. Master this distinction.
 </Tip>
@@ -40,6 +44,10 @@ Aztec palaces and administrative buildings employed stone masonry with corbelled
 **Comparative Construction and Symbolism**
 
 Both cultures used precisely cut stone, but deployment differed. Maya architecture evolved over centuries with regional variation—Lowland Maya favored corbelled vaults, while Highland Maya used different structural systems. Aztec architecture consolidated Mesoamerican traditions into imperial statements of power and ritual necessity. Maya glyphic inscription on buildings served historical record and spiritual invocation; Aztec iconography conveyed cosmological duality and sacrificial mandate.
+
+
+<ArticleMedia id="media-hist-012-01-core-concept" layout="single" type="image" status="placeholder" alt="Reconstruction of the Templo Mayor (Tenochtitlán, completed 1487, modern Mexico City), showing the twin-staircase pyramid with the dual temples to Huitzilopochtli (south, red) and Tlaloc (north, blue) at the top." caption="Templo Mayor — Aztec Double-Pyramid" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
 
 ## Key Facts and Testable Items
 
@@ -86,6 +94,8 @@ Exams ask what building programs reveal about political systems. Example: "The *
 **Corbel**: Individual stone block projecting inward in a corbelled vault; each layer overhangs the one below.
 
 **Cosmological**: Relating to beliefs about the structure and order of the universe; encoded in architectural orientation and symbolism.
+
+<ArticleMedia id="media-hist-012-01-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparison of Maya architecture (corbelled vaults, astronomy-aligned pyramids, hieroglyphic stairways at Tikal and Palenque) and Aztec architecture (double pyramids, ritual platforms, Tenochtitlán planning), highlighting contrasting structural systems and urban organization.\" caption=\"Maya vs. Aztec — Architectural Comparison\" suggestedAsset=\"Style comparison illustration\" placementIntent=\"Style comparison for architectural period\" />
 
 ## Related Articles
 

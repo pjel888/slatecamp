@@ -7,6 +7,10 @@ Identify the three-part formula of Spanish colonial urban design in Latin Americ
 
 Spanish colonialism imposed a distinctive architectural and urban order across Latin America from the 16th to 18th centuries. The **Laws of the Indies** (1573), issued by King Philip II, codified the design of every colonial town. Colonizers did not build randomly—they built according to rigid orthogonal grids that prioritized the plaza mayor (main square) as the civic and religious heart. This plaza anchored the cathedral, governor's palace, and municipal buildings in a hierarchical arrangement that reflected Spanish Crown authority.
 
+
+<ArticleMedia id="media-hist-013-01-core-concept" layout="single" type="image" status="placeholder" alt="View of the Plaza de Armas (Plaza Mayor) of Cusco, Peru, showing the central plaza with cathedral and cabildo, surrounded by colonial arcaded buildings on the grid plan established by the Laws of the Indies (1573)." caption="Plaza Mayor of Cusco — Spanish Colonial Grid Plan" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
+
 <Tip>Memory aid: **"Laws = Grid + Plaza + Cathedral"** — the three-part formula that unified Spanish colonial urban design across the Americas from 1573 onward.</Tip>
 
 Colonial architecture synthesized Spanish Baroque aesthetics with indigenous labor and local materials. Architects drew from late medieval Spanish traditions, mannerist ornamentation, and Baroque emotional intensity. However, indigenous craftspeople adapted Spanish forms to local stone, climate, and spiritual traditions, creating a hybrid aesthetic. Stone masonry, thick walls for thermal mass, and fortress-like designs (many churches doubled as defensive structures) became standard across Mexico, Peru, Colombia, and Central America.
@@ -16,6 +20,10 @@ Colonial architecture synthesized Spanish Baroque aesthetics with indigenous lab
 The **plaza mayor** itself functioned as a multipurpose space: market, assembly ground, bullfighting arena, and processional theater. Colonnades and portleas (covered arcades) surrounded the plaza, providing shade and defining public boundaries. The cathedral dominated one side, visually anchoring spiritual authority. This planning system produced coherence across colonial cities—Quito, Lima, Mexico City, Cartagena, and Havana all follow the same basic orthogonal logic, making the Laws of the Indies one of the first codified urban design systems in the Americas.
 
 <Warn>Do not confuse the plaza mayor with indigenous gathering spaces, though they share a central function. The Laws of the Indies plaza is orthogonal, gridded, and explicitly hierarchical (cathedral + government buildings at fixed positions). Indigenous plazas were pre-contact but adapted into the colonial model—the plaza is syncretic, not purely European.</Warn>
+
+
+<ArticleMedia id="media-hist-013-01-core-concept" layout="single" type="image" status="placeholder" alt="Diagram showing the standardized Leyes de Indias city layout: central plaza (250 ft × 350 ft minimum), cardinal streets radiating from plaza corners, grid blocks for residents, and the siting of cathedral, government palace, and cabildo around the plaza." caption="Laws of the Indies — Standardized City Plan" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
 
 ## Key Facts and Testable Items
 
@@ -58,6 +66,8 @@ Questions distinguish colonial architecture across regions: Mexican Baroque diff
 **Mestizaje** — Cultural and artistic blending of Spanish and indigenous traditions; visible in colonial architecture through decoration, materials, and spatial adaptation.
 
 **Fortress Church** — Religious building designed with defensive features—thick walls, gun ports, minimal windows—reflecting 16th-17th-century colonial security needs.
+
+<ArticleMedia id="media-hist-013-01-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Plan diagram of a Spanish colonial city according to the Laws of Indias (1573): orthogonal grid plan with central plaza mayor anchoring the cathedral, governor's palace, and municipal buildings, showing standardized colonial urban design.\" caption=\"Spanish Colonial — Laws of the Indies Grid Plan\" suggestedAsset=\"Timeline diagram\" placementIntent=\"Timeline diagram for architectural period\" />
 
 ## Related Articles
 

@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation'
-import { MODE_PRESETS } from '@/lib/quiz/mode-presets'
+import { MODE_PRESETS, mergeWithPreset } from '@/lib/quiz/mode-presets'
 import { fetchQuestionsForClient } from '@/lib/quiz/to-client-question'
 import { createClient, createServiceClient, getUser } from '@/lib/supabase/server'
 import type { QuizAnswerState, QuizMode, QuizSessionConfig } from '@/types/quiz-config'
@@ -61,7 +61,9 @@ export const QuizSessionRoute = async ({ sessionId, routeMode }: QuizSessionRout
       .eq('user_id', user.id),
   ])
 
-  const config: QuizSessionConfig = storedConfig ?? MODE_PRESETS[mode]
+  const config: QuizSessionConfig = storedConfig
+    ? mergeWithPreset(mode, storedConfig as Partial<QuizSessionConfig>)
+    : MODE_PRESETS[mode]
 
   const restoredAnswers = Object.fromEntries(
     (interactionsResponse.data ?? []).map((interaction) => [

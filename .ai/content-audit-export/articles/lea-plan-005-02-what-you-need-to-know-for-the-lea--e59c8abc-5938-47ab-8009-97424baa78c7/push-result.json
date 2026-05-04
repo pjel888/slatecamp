@@ -1,26 +1,21 @@
 {
-  "attempted_at": "2026-05-04T00:06:25.078Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:17:00.309Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "candidate.md matches original.md; refusing no-op apply."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "e59c8abc-5938-47ab-8009-97424baa78c7",
   "slug": "lea-plan-005-02-what-you-need-to-know-for-the-lea",
   "preparation_actions": [
     "auto_generated_diff"
   ],
-  "remote_hash_before": "sha256:8b3bc9cf069e9186b297dcede91823a520aeeffeea674f8dc234eb9e634e638e",
-  "original_hash": "sha256:8b3bc9cf069e9186b297dcede91823a520aeeffeea674f8dc234eb9e634e638e",
-  "candidate_hash": "sha256:f868e04f79d7291265e58377c8ba676385a6a6249de78ed4637445dbc077ae9a",
+  "remote_hash_before": "sha256:644f4c68d5af4adcf5eccafe8e9b25b6f5ec60f0cef4dc2654543c481fc53f6a",
+  "original_hash": "sha256:644f4c68d5af4adcf5eccafe8e9b25b6f5ec60f0cef4dc2654543c481fc53f6a",
+  "candidate_hash": "sha256:644f4c68d5af4adcf5eccafe8e9b25b6f5ec60f0cef4dc2654543c481fc53f6a",
   "stale_check_passed": true,
-  "remote_updated_at_before": "2026-05-03T13:51:05.263913+00:00"
+  "remote_updated_at_before": "2026-05-04T02:00:25.206495+00:00"
 }

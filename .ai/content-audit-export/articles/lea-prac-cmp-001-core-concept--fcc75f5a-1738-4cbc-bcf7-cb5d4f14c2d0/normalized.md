@@ -100,7 +100,7 @@ The LEA tests Project Classification in three patterns. First, the exam presents
 
 
 
-<ArticleMedia type="image" caption="10 Project Classification Groups — Fee Percentages and Building Type Matrix" description="Comparison table/matrix showing all 10 Project Classification Groups with: group number, building type examples, DAEDS percentage, DADS percentage (60% of DAEDS), sliding scale brackets for Groups 1-3, and notes on repetitive/renovation multipliers. Color-coded by group category (Complexity, Building Type, Repetitive, Specialized)." />
+<ArticleMedia type="image" caption="10 Project Classification Groups — Fee Percentages and Building Type Matrix" alt="Comparison table/matrix showing all 10 Project Classification Groups with: group number, building type examples, DAEDS percentage, DADS percentage (60% of DAEDS), sliding scale brackets for Groups 1-3, and notes on repetitive/renovation multipliers. Color-coded by group category (Complexity, Building Type, Repetitive, Specialized)." />
 ## Related Articles
 
 - [Project Classification Groups](lea-prac-cmp-001)

@@ -1,26 +1,21 @@
 {
-  "attempted_at": "2026-05-04T00:05:55.452Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:16:26.674Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "candidate.md matches original.md; refusing no-op apply."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "3d710cad-8857-4d44-891c-1b1a010de2cd",
   "slug": "overview-professional-practice",
   "preparation_actions": [
     "auto_generated_diff"
   ],
-  "remote_hash_before": "sha256:c857d28fe768829965962a104282ee564bd5cc229c67b975105a259b513446bc",
-  "original_hash": "sha256:c857d28fe768829965962a104282ee564bd5cc229c67b975105a259b513446bc",
-  "candidate_hash": "sha256:cd698591c03f4e67823bc5786d9725b3b8145ca1439c437c99786d070d2b83dc",
+  "remote_hash_before": "sha256:44fd33d42a9c30f5031a9e1082d05c0f058532b41f8ac51b6115f1e1e63c5320",
+  "original_hash": "sha256:44fd33d42a9c30f5031a9e1082d05c0f058532b41f8ac51b6115f1e1e63c5320",
+  "candidate_hash": "sha256:44fd33d42a9c30f5031a9e1082d05c0f058532b41f8ac51b6115f1e1e63c5320",
   "stale_check_passed": true,
-  "remote_updated_at_before": "2026-05-03T13:49:49.255324+00:00"
+  "remote_updated_at_before": "2026-05-04T01:59:14.076436+00:00"
 }

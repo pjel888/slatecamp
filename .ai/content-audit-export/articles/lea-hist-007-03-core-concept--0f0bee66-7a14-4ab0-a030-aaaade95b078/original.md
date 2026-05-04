@@ -7,6 +7,10 @@ Identify the five testable markers of Japanese architecture — tatami module, s
 
 Japanese architecture adapts Chinese and indigenous traditions through modular spatial systems, natural materials, and spiritual reverence for wood. The **tatami** mat—a straw rectangle measuring 3 shaku × 6 shaku (approximately 0.9m × 1.8m, where 1 shaku = 30.3cm)—determines interior proportions: rooms measure 4.5 mats, 6 mats, 8 mats, etc., and ceiling heights scale proportionally. This module enabled flexible residential design: screens and sliding doors (shoji and fusuma) allow rooms to expand, contract, or merge without structural walls. Permanence and impermanence coexist: wooden posts sink into stone or wooden sills; walls are paper-thin; earthquakes flex rather than fracture the frame.
 
+
+<ArticleMedia id="media-hist-007-03-core-concept" layout="single" type="image" status="placeholder" alt="View of Katsura Imperial Villa (Kyoto, 1620–1645), showing the shoji sliding screens, engawa veranda, tatami interior, and the carefully composed garden relationship characteristic of Japanese sukiya-zukuri architecture." caption="Katsura Imperial Villa — Japanese Residential Architecture" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
+
 Sacred architecture emphasizes wooden craft and ritual geography. The **torii gate**—a simple post-and-lintel structure of wood or stone—marks Shinto shrine boundaries, separating sacred from secular space. Multiple torii create ascending gradations of sanctity (as at Fushimi Inari, thousands of vermillion gates tunnel up the mountainside). The **pagoda** (derived from Chinese models) tapers upward through diminishing floor levels, typically 5 or 7 stories, with each story featuring a domed roof and radiating eaves supported by elaborate wooden brackets. Unlike Chinese equivalents, Japanese pagodas often house no relics or statuary—they stand as sculptural monuments affirming celestial aspiration.
 
 <Tip>**Japanese architecture's five testable markers:**
@@ -23,6 +27,10 @@ The **Ise Grand Shrine** (Ise Jingu), dedicated to the sun goddess Amaterasu, em
 <Note>Shikinen Sengu (20-year Ise Grand Shrine rebuild) is NOT preservation or restoration in the Western sense. It is sacred renewal and re-enactment of cosmic creation. The architecture intentionally embraces impermanence; each rebuild maintains sacred proportions and knowledge while accepting transience as cosmological law. This is fundamentally different from restoring an ancient structure to "original condition"—Japanese philosophy celebrates cyclical renewal, not permanence. Understanding this shift in thinking is essential for the LEA.</Note>
 
 Garden integration shapes Japanese architectural presence. Buildings sit within carefully composed landscapes where rock, water, and vegetation establish spiritual and aesthetic hierarchies. The veranda (engawa), a wooden platform extending from the building, becomes a liminal zone for viewing and transitioning between interior and exterior, shelter and exposure.
+
+
+<ArticleMedia id="media-hist-007-03-core-concept" layout="single" type="image" status="placeholder" alt="Plan diagram showing the tatami module (approx. 1.8 m × 0.9 m) used as a modular grid for room dimensions, with sliding shoji screens on tracks dividing interior space and the engawa (veranda) connecting interior to garden." caption="Japanese Modular System — Tatami Grid and Shoji Screens" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
 
 ## Key Facts and Testable Items
 
@@ -60,6 +68,8 @@ The LEA tests the **tatami module** (3×6 shaku proportions driving interior spa
 - **Pagoda (tou)**: Vertical Buddhist monument, typically 5 or 7 stories, with diminishing floor levels, domed roofs, and radiating eaves; often serves as sculptural rather than functional religious structure.
 
 <Warn>Do not confuse tatami dimensions or reverse them: tatami is **3 shaku × 6 shaku** (~0.9m × 1.8m), not the reverse. Do not treat torii gates as purely decorative—they are cosmological thresholds marking sacred/profane boundaries. Multiple torii (thousands at Fushimi Inari) create spiritual gradations, not visual spectacle. Japanese architecture is not merely "Chinese influenced"—while pagodas and some forms derive from China, Japanese architects fundamentally adapted them through wooden modularity, impermanence acceptance, and garden integration. Recognize these as distinct systems, not imitations.</Warn>
+
+<ArticleMedia id="media-hist-007-03-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparative diagram of Japanese architectural elements: tatami module system, shoji/fusuma sliding screens, engawa veranda, tokonoma alcove, and exposed wood joinery, showing how these features create flexible, nature-connected interior spaces.\" caption=\"Japanese Architecture — Spatial Elements Diagram\" suggestedAsset=\"Style comparison illustration\" placementIntent=\"Style comparison for architectural period\" />
 
 ## Related Articles
 

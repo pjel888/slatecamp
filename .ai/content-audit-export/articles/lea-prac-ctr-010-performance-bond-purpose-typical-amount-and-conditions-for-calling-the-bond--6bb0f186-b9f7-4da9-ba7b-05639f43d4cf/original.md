@@ -9,8 +9,6 @@ After studying this article, you should be able to:
 - Explain conditions for calling the bond (default by contractor).
 - Distinguish the performance bond from the payment bond.
 
-
-
 ### Purpose and Legal Function of Performance Bonds
 
 A performance bond is security furnished by the contractor and the surety to guarantee that the contractor will execute the work in full compliance with the contract terms. This bond creates a three-party relationship: the owner (obligee), the contractor (principal), and the surety (guarantor). If the contractor fails to complete the work as contracted, the surety becomes liable to the owner for the financial consequences.
@@ -66,6 +64,9 @@ The owner may call the performance bond only when the contractor materially brea
 
 ---
 
+
+
+<ArticleMedia type="image" caption="Construction Bonds — Types, Amounts, and Conditions Comparison Table" description="Three-panel comparison: Performance Bond (50-100% of contract, covers completion risk), Payment Bond (covers subcontractors/suppliers), Guarantee Bond (one-year defects liability). Each panel shows: purpose, typical amount, who requires it, conditions for calling the bond, and release conditions." />
 ## Related Articles
 
 - [Standard Owner-Architect Agreement](lea-prac-ctr-001)

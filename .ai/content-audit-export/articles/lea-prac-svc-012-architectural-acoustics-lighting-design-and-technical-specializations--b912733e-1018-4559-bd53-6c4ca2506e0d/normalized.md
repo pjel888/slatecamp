@@ -50,7 +50,7 @@ Acoustic design deliverables include noise analysis reports, absorption specific
 
 
 
-<ArticleMedia type="image" caption="Architectural Acoustics and Lighting Design — Technical Specializations Overview" description="Two-panel diagram: Left panel — Acoustics design showing sound transmission paths (airborne, structure-borne), reverberation time (RT60) targets by space type, and noise control strategies (isolation, absorption, diffusion). Right panel — Lighting design showing daylight integration, luminance levels by task (IES standards), and fixture selection criteria. Architect's coordination with specialists noted." />
+<ArticleMedia type="image" caption="Architectural Acoustics and Lighting Design — Technical Specializations Overview" alt="Two-panel diagram: Left panel — Acoustics design showing sound transmission paths (airborne, structure-borne), reverberation time (RT60) targets by space type, and noise control strategies (isolation, absorption, diffusion). Right panel — Lighting design showing daylight integration, luminance levels by task (IES standards), and fixture selection criteria. Architect's coordination with specialists noted." />
 ## Related Articles
 
 - [SPP Doc 202 Six-Phase Framework](lea-prac-svc-004)

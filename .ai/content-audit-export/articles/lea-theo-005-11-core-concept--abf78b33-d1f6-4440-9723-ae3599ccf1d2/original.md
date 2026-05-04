@@ -4,8 +4,6 @@
 Feminist and postcolonial perspectives fundamentally challenge architecture's traditional canon, revealing how architectural discourse has been structured by patriarchal and colonial assumptions, and how spaces—domestic, institutional, public—reproduce and enforce gender and racial hierarchies. The LEA tests your understanding of how these perspectives expose architecture's political dimensions and how contemporary architects and theorists work toward more equitable, culturally-grounded, and socially-engaged practice.
 </Callout>
 
-
-
 ## Learning Goal
 
 - Explain how feminist critiques expose architecture's patriarchal assumptions and how domestic spaces reproduce gender hierarchies.
@@ -13,6 +11,8 @@ Feminist and postcolonial perspectives fundamentally challenge architecture's tr
 - Analyze how space — domestic, institutional, public — reinforces or dismantles social hierarchies.
 
 ## Core Concept
+
+<ArticleMedia id="media-lea-theo-005-11-feminist-postcolonial" type="image" caption="Feminist and Postcolonial Spatial Critique — How Architecture Reproduces or Dismantles Hierarchies" description="Two-panel concept diagram. Left panel: 'Patriarchal/Colonial Space' showing isolated suburban home with separated kitchen/living areas (gender segregation), and colonial grid imposed on indigenous settlement patterns. Right panel: 'Equitable/Decolonized Space' showing shared domestic facilities, open plan with visible reproductive labor, and critical regionalist architecture rooted in local traditions. Arrow between panels labeled 'Spatial Agency & Decolonization'." suggestedAsset="Diagram comparing patriarchal/colonial space organization vs. equitable/decolonized spatial arrangements" status="placeholder" />
 
 Feminist critiques of architecture emerged in the 1970s and 1980s, initially asking a deceptively simple question: where are the women? The historical canon of "great architects" was overwhelmingly male; women's architectural contributions had been systematically erased, marginalized, or credited to male colleagues. More fundamentally, feminist theory exposed how architecture—particularly domestic architecture—has historically been designed to control women's bodies, movement, and social roles. The domestic sphere, relegated to women's governance in gender-hierarchical societies, was understood as the realm of necessity and reproduction rather than the realm of creativity and public significance claimed by male architects designing cities and institutions.
 
@@ -45,24 +45,17 @@ Contemporary practice increasingly reflects feminist and postcolonial concerns. 
 <WikiExamTable headers={["Concept/Architect", "Focus", "Year", "Contribution"]} rows={[['["Dolores Hayden", "Feminist housing history", "1970s-1980s", "*The Grand Domestic Revolution*; collective housing alternatives"]', '["Lori Brown", "Contemporary feminist practice", "2000s-present", "*Contested Spaces*; ArchiteXX; women in architecture visibility"]', '["Feminist Spatial Theory", "Gender and urban/domestic space", "1980s-present", "Spaces are political; architecture enforces gender hierarchies"]', '["Postcolonial Architecture", "Non-Western architectural autonomy", "1960s-present", "Critique of modernist universalism; local grounding"]', '["Balkrishna Doshi", "Indian critical regionalism", "1970s-present", "Indigenous courtyard tradition; adaptive modernism"]', '["Hassan Fathy", "Egyptian earthen architecture", "1950s-1980s", "Mud-brick vernacular; climate-responsive design"]', '["Charles Correa", "Tropical architecture", "1970s-present", "Climate-responsive design; social engagement"]', '["Aga Khan Award", "Non-Western architectural excellence", "1977-present", "Recognition framework resisting Western architectural bias"]', '["Participatory Architecture", "Community engagement", "1980s-present", "Design emerging from communities\' needs and knowledge"]', '["Intersectionality", "Feminist theory", "1980s-present", "Gender, race, class, and imperialism interlocking"]']]} />
 ## How It's Tested on the LEA
 
-
 <ExamTip>1. **Architectural Canon Critique**: The exam asks you to identify whose voices are absent from canonical architecture. Where are women? Where are non-Western architects? What gets erased in canonical construction?</ExamTip>
-
 
 <ExamTip>2. **Gendered Space Analysis**: Questions ask how spatial organization enforces gender roles. Analyze a domestic space or public building through feminist lens. What assumptions about gender does its design embody?</ExamTip>
 
-
 <ExamTip>3. **Postcolonial Positioning**: Questions test whether you understand how formerly colonized architects negotiate between inherited colonialism and postcolonial identity. Doshi's work is not simply "Indian modernism"; it is specific engagement with postcolonial condition.</ExamTip>
-
 
 <ExamTip>4. **Intersectionality**: Contemporary LEA examinations include intersectional questions: how do gender, race, class, and imperialism interlocking shape architectural experience? Simple feminist analysis ignoring postcolonial and racial dimensions is incomplete.</ExamTip>
 
-
 <ExamTip>5. **Participatory Method**: Questions examine participatory and community-engaged approaches. How does design emerging from affected communities differ from expert-imposed solutions? What are benefits and challenges?</ExamTip>
 
-
 <ExamTip>6. **Vocabulary of Agency and Erasure**: You must understand terms like epistemic violence (devaluing non-Western knowledge), erasure (women's contributions rendered invisible), marginalization (excluding certain voices), and decolonization (challenging colonial knowledge structures).</ExamTip>
-
 
 ## Common Mistakes
 
@@ -71,7 +64,6 @@ Contemporary practice increasingly reflects feminist and postcolonial concerns. 
 <WikiMistakeCard mistake="Romanticizing Indigenous or Traditional Architecture" correction="Postcolonial perspective critiques both crude colonialism and romantic nostalgia. Doshi does not simply revive traditional courtyards; he engages them critically as contemporary solutions." context="Distinguishing critical engagement from conservative preservation is crucial." />
 
 <WikiMistakeList mistakes={["Universalizing Western Feminism. \"Feminism\" is not monolithic. Western feminist theory emphasizing individual autonomy may differ from feminist concerns in contexts where collective family structures are primary, or where anticolonial and feminist struggles are inseparable. Contemporary feminist scholarship is attentive to these differences.", "Separating Gender and Race/Postcolonial Analysis. Students sometimes analyze gender separately from race and imperialism. Intersectionality insists these are inseparable. Women of color, women in the Global South, and Indigenous women experience architecture through interlocking systems of domination.", "Assuming Postcolonial Architecture is Only Regional. Postcolonial architecture is not simply \"respect local traditions.\" Postcoloniality is a condition and analytical position regarding colonialism's ongoing effects. Contemporary Indian or Egyptian architecture engages global modernity while refusing complete Westernization.", "Missing Institutional and Pedagogical Dimensions. Decolonizing architecture requires not just different designs but transforming architectural education, professional structures, and canonization processes. Recognizing this systemic dimension is crucial to understanding feminist and postcolonial perspectives' full scope."]} />
-
 
 ## Key Terms
 

@@ -1,33 +1,32 @@
 # Content Diff Report: lea-prac-svc-011-core-concept
 
-Generated: 2026-05-04T00:06:26.523Z
+Generated: 2026-05-04T02:17:01.862Z
 Article ID: 2ec8e3f1-4aa7-443f-8ca1-a77638b2a713
-Changed: true
-Safe to push locally: false
+Changed: false
+Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:37df7ad051f54be8f9226ad6eb086742d0f0872a9304db2561e3fb6ab07928a2`
+- Original: `sha256:d795f12b8d5b065d12fb18c93a565b4d15a065f6e5d3fb9f232d9aa5011ec361`
 - Normalized: `sha256:0b4db039892eda78f1be9e12584371f0a715462bda44b1164dc58010a88fcbfd`
-- Candidate: `sha256:0b4db039892eda78f1be9e12584371f0a715462bda44b1164dc58010a88fcbfd`
+- Candidate: `sha256:d795f12b8d5b065d12fb18c93a565b4d15a065f6e5d3fb9f232d9aa5011ec361`
 
 ## Line summary
 
-- Changed lines: 29
+- Changed lines: 0
 - Inserted lines: 0
-- Deleted lines: 5
+- Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 4
-- UI blocks preserved: 0
-- UI blocks changed/missing: 4
-- Unresolved placeholders: 1
+- UI blocks preserved: 4
+- UI blocks changed/missing: 0
+- Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate contains unresolved UI block placeholders.
-- Candidate is missing 4 preserved UI block(s).
+- None
 
 ## Warnings
 

@@ -1,26 +1,21 @@
 {
-  "attempted_at": "2026-05-04T00:06:41.334Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:17:24.414Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "candidate.md matches original.md; refusing no-op apply."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "0871298e-f789-4d5e-9c50-cdf2556e4903",
   "slug": "mastery-history-of-architecture",
   "preparation_actions": [
     "auto_generated_diff"
   ],
-  "remote_hash_before": "sha256:d03215b5341fc7cfb1eeffeb494289e9aa0d164e8bed3babce51dfdd4be0062d",
-  "original_hash": "sha256:d03215b5341fc7cfb1eeffeb494289e9aa0d164e8bed3babce51dfdd4be0062d",
-  "candidate_hash": "sha256:b4bf4e73f9f2255377532c0e8ce2d95a0e160d992414b8c1ac7db1dc61cb02f9",
+  "remote_hash_before": "sha256:9d766efe22f93baca33fbf6bcc31adc96162ef49b5924b84e1f8accaf0576650",
+  "original_hash": "sha256:9d766efe22f93baca33fbf6bcc31adc96162ef49b5924b84e1f8accaf0576650",
+  "candidate_hash": "sha256:9d766efe22f93baca33fbf6bcc31adc96162ef49b5924b84e1f8accaf0576650",
   "stale_check_passed": true,
-  "remote_updated_at_before": "2026-05-03T13:51:43.638768+00:00"
+  "remote_updated_at_before": "2026-05-04T02:01:07.852591+00:00"
 }

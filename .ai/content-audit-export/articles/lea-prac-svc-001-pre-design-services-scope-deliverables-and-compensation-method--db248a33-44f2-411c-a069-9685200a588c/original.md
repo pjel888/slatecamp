@@ -10,8 +10,9 @@ After reading this article, you should be able to:
 
 SPP Document 201 defines pre-design services as the architectural work performed before the architect begins regular design phases. These services range from initial problem identification through activities that allow the architect to initially conceptualize architectural and allied solutions.
 
-### What Constitutes Pre-Design Services
+<ArticleMedia id="media-lea-prac-svc-001-pre-design-services-sco" a type="image" caption="Pre-Design Services Workflow — From Consultation to Concept" description="Workflow chart showing the pre-design service sequence: consultation → pre-feasibility studies → feasibility studies → site selection/analysis → architectural programming → space planning → design brief preparation → value management → project definition. Based on SPP Doc 201." suggestedAsset="Diagram or reference image" status="placeholder" />
 
+### What Constitutes Pre-Design Services
 
 <KeyValues pairs={[["SPP Document", "201 (Pre-Design), 202 (Regular Design), 203 (Specialized)"], ["Compensation", "MDPE, Lump Sum, Per Diem, Professional Fee + Expenses"], ["Fee Basis", "Percentage of PCC or MDPE"]]} />
 Pre-design services cover a broad line of architectural services starting from consultation to activities supporting initial project conceptualization. They include consultation, pre-feasibility studies, feasibility studies, site selection and analysis, site utilization and land-use studies, architectural research, architectural programming, space planning, space management studies, value management, design brief preparation, and promotional services. The architect typically prepares a proposal or contract with the client outlining the scope of work, manner of payment, owner's responsibilities, and other conditions before commencing pre-design services.
@@ -20,10 +21,8 @@ Pre-design services cover a broad line of architectural services starting from c
 
 <KeyValues pairs={[["SPP Document", "201 (Pre-Design), 202 (Regular Design), 203 (Specialized)"], ["Compensation", "MDPE, Lump Sum, Per Diem, Professional Fee + Expenses"], ["Fee Basis", "Percentage of PCC or MDPE"]]} />
 
-
 <ExamTip>**LEA Pattern:** Expect scenario-based questions where you must determine which phase a specific deliverable belongs to. Key percentages to memorize: Schematic Design (15%), Design Development (35%), Contract Documents (50%).</ExamTip>
 The architect's pre-design deliverables depend on the service type but typically include analysis documents, feasibility reports, space programs, site studies, and design briefs. Consultation services produce written advice and direction on contemplated projects. Pre-feasibility studies involve procurement and analysis of secondary information to aid early decision-making. Feasibility studies provide detailed analysis determining the viability of a proposed development.
-
 
 <ExamTip>**LEA Pattern:** Expect scenario-based questions where you must determine which phase a specific deliverable belongs to. Key percentages to memorize: Schematic Design (15%), Design Development (35%), Contract Documents (50%).</ExamTip>
 ### Compensation Methods for Pre-Design Services

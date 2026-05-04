@@ -10,6 +10,13 @@ Thickness, width, and length must all be measured in the units specified: thickn
 
 In the Philippines, lumber is often purchased in nominal sizes (e.g., 2 inches × 4 inches × 8 feet). Actual dressed sizes are slightly smaller due to planing (e.g., actual 1.5 inches × 3.5 inches). For estimation, use nominal dimensions unless otherwise specified. Standard length increments are 6 feet, 8 feet, 10 feet, and 12 feet in the Philippines and global markets.
 
+
+<ArticleMedia id="media-board-foot-diagram" layout="single" type="image" status="placeholder"
+  alt="Diagram showing board foot calculation: T × W × L / 12 with annotated lumber dimensions and calculation example"
+  caption="Future diagram: board foot measurement — formula illustration with dimensional lumber example"
+  suggestedAsset="3D lumber diagram with dimension callouts and formula"
+  placementIntent="Visualizes the board foot formula for lumber estimation" />
+
 ## Key Provisions
 
 | Parameter | Value | LEA Relevance |
@@ -76,6 +83,12 @@ Total with waste = 727 BF × 1.05 = 763.4 BF ≈ 764 BF
 **Answer: 764 board feet total lumber required**
 </Example>
 
+
+<ArticleMedia id="media-board-foot-example" layout="single" type="image" status="placeholder"
+  alt="Step-by-step board foot estimation example showing lumber dimension conversion, quantity calculation per member, and total board feet for a framing plan"
+  caption="Future diagram: board foot estimation worked example — lumber takeoff from framing plan"
+  suggestedAsset="Step-by-step illustrated calculation example"
+  placementIntent="Provides practical example of lumber quantity estimation" />
 ## Quick Reference: Board Feet Calculation Table
 
 | Nominal Size | Standard 8 ft | Standard 10 ft | Standard 12 ft | Standard 16 ft |

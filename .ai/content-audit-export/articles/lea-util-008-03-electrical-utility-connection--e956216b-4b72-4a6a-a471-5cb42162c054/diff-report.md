@@ -1,33 +1,32 @@
 # Content Diff Report: lea-util-008-03-electrical-utility-connection
 
-Generated: 2026-05-04T00:07:15.125Z
+Generated: 2026-05-04T02:18:07.259Z
 Article ID: e956216b-4b72-4a6a-a471-5cb42162c054
-Changed: true
-Safe to push locally: false
+Changed: false
+Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:898b517ccd86769a4b73635d6417767c22b255810f3dacc5d932d384c45ccc10`
+- Original: `sha256:e8f54360e1c24cedcfb4712bbe45217ffa9c7c27c71c16b4d1dc21a7d9e27d8e`
 - Normalized: `sha256:6c943f238dfaaa27aec9908444695cf99e3df849e245ee6525e64d01c6897cf6`
-- Candidate: `sha256:6c943f238dfaaa27aec9908444695cf99e3df849e245ee6525e64d01c6897cf6`
+- Candidate: `sha256:e8f54360e1c24cedcfb4712bbe45217ffa9c7c27c71c16b4d1dc21a7d9e27d8e`
 
 ## Line summary
 
-- Changed lines: 125
+- Changed lines: 0
 - Inserted lines: 0
-- Deleted lines: 4
+- Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 3
-- UI blocks preserved: 0
-- UI blocks changed/missing: 3
-- Unresolved placeholders: 1
+- UI blocks preserved: 3
+- UI blocks changed/missing: 0
+- Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate contains unresolved UI block placeholders.
-- Candidate is missing 3 preserved UI block(s).
+- None
 
 ## Warnings
 

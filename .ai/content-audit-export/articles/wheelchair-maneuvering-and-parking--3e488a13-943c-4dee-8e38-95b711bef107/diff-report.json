@@ -1,45 +1,38 @@
 {
   "article_id": "3e488a13-943c-4dee-8e38-95b711bef107",
   "slug": "wheelchair-maneuvering-and-parking",
-  "generated_at": "2026-05-04T00:07:17.902Z",
+  "generated_at": "2026-05-04T02:18:10.731Z",
   "old_hash": "sha256:18bcc62aa1a6eeb25d5ec5fc55cae8bb5404fa40c865276c1edae385d5e48ebe",
-  "new_hash": "sha256:b410ee4db7812ca4cacd48325564b2237f4cf50aa05606a6a77dff1a4c9f2317",
+  "new_hash": "sha256:37fc7eca1e1a0fe66c59fd53a7239d4d511a01b0479d6837cca937f2213c9ff4",
   "original_hash": "sha256:18bcc62aa1a6eeb25d5ec5fc55cae8bb5404fa40c865276c1edae385d5e48ebe",
-  "normalized_hash": "sha256:b410ee4db7812ca4cacd48325564b2237f4cf50aa05606a6a77dff1a4c9f2317",
-  "candidate_hash": "sha256:b410ee4db7812ca4cacd48325564b2237f4cf50aa05606a6a77dff1a4c9f2317",
+  "normalized_hash": "sha256:9f8b32b995181c5d4168e02d642ad5b11a620791c257d6a385c0cdea5df640a2",
+  "candidate_hash": "sha256:37fc7eca1e1a0fe66c59fd53a7239d4d511a01b0479d6837cca937f2213c9ff4",
   "changed": true,
-  "changed_line_count": 114,
-  "inserted_line_count": 0,
-  "deleted_line_count": 9,
+  "changed_line_count": 118,
+  "inserted_line_count": 5,
+  "deleted_line_count": 0,
   "ui_blocks_original_count": 3,
-  "ui_blocks_candidate_count": 0,
-  "ui_blocks_changed_count": 3,
+  "ui_blocks_candidate_count": 3,
+  "ui_blocks_changed_count": 0,
   "ui_blocks_count": 3,
-  "unresolved_placeholders_count": 1,
-  "preserved_blocks_count": 0,
+  "unresolved_placeholders_count": 0,
+  "preserved_blocks_count": 3,
   "changed_text_summary": {
-    "changed": 114,
-    "inserted": 0,
-    "deleted": 9,
+    "changed": 118,
+    "inserted": 5,
+    "deleted": 0,
     "original_line_count": 152,
-    "candidate_line_count": 143
+    "candidate_line_count": 157
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0001",
-      "ui_0002",
-      "ui_0003"
-    ],
-    "changed_count": 3
+    "missing_block_ids": [],
+    "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate contains unresolved UI block placeholders.",
-    "Candidate is missing 3 preserved UI block(s)."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 3 preserved UI block(s)."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

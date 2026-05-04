@@ -1,62 +1,38 @@
 {
   "article_id": "fba5f537-2da9-4fb3-b6eb-696d1937a92a",
   "slug": "spp-doc-208-architectural-design-competition-adc",
-  "generated_at": "2026-05-04T00:06:17.907Z",
+  "generated_at": "2026-05-04T02:16:49.960Z",
   "old_hash": "sha256:0dbf90e8f29cdd6b8d6ed687b7a5b95c2fa1c5db732948186f0ecb36209d4bc5",
-  "new_hash": "sha256:3e4eec81d62e2aa3f1b9ccd3a4874aa845242defb171e20978fc43f8d7027979",
+  "new_hash": "sha256:f01269e6f3a9688d192b89967b6a33ca75f73712d30a0d4b179b8cd0f1bcaf13",
   "original_hash": "sha256:0dbf90e8f29cdd6b8d6ed687b7a5b95c2fa1c5db732948186f0ecb36209d4bc5",
   "normalized_hash": "sha256:3e4eec81d62e2aa3f1b9ccd3a4874aa845242defb171e20978fc43f8d7027979",
-  "candidate_hash": "sha256:3e4eec81d62e2aa3f1b9ccd3a4874aa845242defb171e20978fc43f8d7027979",
+  "candidate_hash": "sha256:f01269e6f3a9688d192b89967b6a33ca75f73712d30a0d4b179b8cd0f1bcaf13",
   "changed": true,
-  "changed_line_count": 418,
+  "changed_line_count": 399,
   "inserted_line_count": 0,
-  "deleted_line_count": 147,
+  "deleted_line_count": 12,
   "ui_blocks_original_count": 20,
-  "ui_blocks_candidate_count": 0,
-  "ui_blocks_changed_count": 20,
+  "ui_blocks_candidate_count": 20,
+  "ui_blocks_changed_count": 0,
   "ui_blocks_count": 20,
-  "unresolved_placeholders_count": 1,
-  "preserved_blocks_count": 0,
+  "unresolved_placeholders_count": 0,
+  "preserved_blocks_count": 20,
   "changed_text_summary": {
-    "changed": 418,
+    "changed": 399,
     "inserted": 0,
-    "deleted": 147,
+    "deleted": 12,
     "original_line_count": 521,
-    "candidate_line_count": 374
+    "candidate_line_count": 509
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0001",
-      "ui_0002",
-      "ui_0003",
-      "ui_0004",
-      "ui_0005",
-      "ui_0006",
-      "ui_0007",
-      "ui_0008",
-      "ui_0009",
-      "ui_0010",
-      "ui_0011",
-      "ui_0012",
-      "ui_0013",
-      "ui_0014",
-      "ui_0015",
-      "ui_0016",
-      "ui_0017",
-      "ui_0018",
-      "ui_0019",
-      "ui_0020"
-    ],
-    "changed_count": 20
+    "missing_block_ids": [],
+    "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate contains unresolved UI block placeholders.",
-    "Candidate is missing 20 preserved UI block(s)."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 20 preserved UI block(s)."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

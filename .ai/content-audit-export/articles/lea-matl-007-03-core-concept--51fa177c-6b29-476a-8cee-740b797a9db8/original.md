@@ -14,6 +14,13 @@ Metal ceiling panels, typically aluminum or steel with various finishes, offer d
 
 Standard dimensions align with structural bays. A 600×600mm grid fitted into a standard office (4m × 5m) results in 7 × 9 = 63 tiles, minimizing waste and cost. Custom sizes are possible but increase labor and cut waste.
 
+
+<ArticleMedia id="media-ceiling-finish-comparison" layout="single" type="image" status="placeholder"
+  alt="Comparison chart of ceiling finishes: suspended acoustic tile, gypsum board, metal pan, open plenum, wood strip, and stretched fabric with acoustic, fire rating, and access ratings"
+  caption="Future chart: ceiling finish comparison — acoustic performance, fire rating, access, and aesthetics"
+  suggestedAsset="Material comparison chart with ceiling system illustrations"
+  placementIntent="Helps learners select ceiling systems by occupancy requirements" />
+
 ## Key Provisions
 
 | Property | Specification | Standard | LEA Relevance |
@@ -40,6 +47,12 @@ Typhoons and tropical humidity drive selection toward moisture-resistant product
 
 Slab-mounted (flat gypsum) ceilings are common in residential projects and low-budget commercial buildings. These offer cost savings (no grid cost) but limit access to MEP infrastructure. Fire protection requires additional intumescent paint coating if structural fire rating is needed.
 
+
+<ArticleMedia id="media-ceiling-system-comparison" layout="single" type="image" status="placeholder"
+  alt="Comparison of ceiling systems: suspended acoustic tile, gypsum board on furring, metal pan, open plenum, and wood strip with system components"
+  caption="Future diagram: ceiling system comparison — suspended, gypsum, metal pan, open plenum, wood strip"
+  suggestedAsset="Cross-section comparison of ceiling system types"
+  placementIntent="Helps learners select ceiling systems by performance requirements" />
 ## How It's Tested
 
 **Question Type 1 (Grid Sizing):** A rectangular office measures 6m × 8m. The architect specifies 600×600mm suspended ceiling tiles. How many tiles fit without cutting? Students calculate: 6000mm / 600mm = 10 tiles, 8000mm / 600mm = 13.33 tiles (requires cutting on one edge). Proper specification would use 600×600 or adjust room dimensions via architectural planning.

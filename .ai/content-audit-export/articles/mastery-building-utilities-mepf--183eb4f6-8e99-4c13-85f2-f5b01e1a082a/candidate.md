@@ -3,7 +3,7 @@
 ## Learning Goal
 
 Achieve synthesis-level understanding of MEPF systems as an integrated coordination challenge. Trace how electrical, mechanical, plumbing, fire protection, acoustic, and communication systems coexist and interact. Connect MEPF to Architectural Design (space allocation for equipment rooms, shafts), Structural Conceptualization (equipment loads, slab penetrations, seismic bracing), and Laws (PEC, NPCP, RA 9514).
-<ArticleMedia id="media-mastery-building-utilities-mepf" a type="image" caption="Building Utilities / MEPF — Systems Integration and Coordination Diagram" description="Central coordination hub diagram showing eight MEPF systems arranged around a building cross-section: (1) Electrical/Power (PEC) — service entrance, distribution, emergency power; (2) Mechanical/HVAC (ASHRAE) — air distribution, chiller plant, ductwork; (3) Sanitary/Plumbing (NPCP) — water supply, drainage, venting; (4) Acoustics/Illumination — STC ratings, lighting levels, daylighting; (5) Communication — structured cabling, BAS; (6) Fire Protection (RA 9514) — sprinklers, detectors, standpipes; (7) Intelligent Systems — BMS, IoT; (8) Coordination — clash detection, equipment rooms, riser shafts, ceiling plenum conflicts. Cross-section shows typical placement of each system relative to structure and finishes." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-mastery-building-utilities-mepf" type="image" caption="Building Utilities / MEPF — Systems Integration and Coordination Diagram" alt="Central coordination hub diagram showing eight MEPF systems arranged around a building cross-section: (1) Electrical/Power (PEC) — service entrance, distribution, emergency power; (2) Mechanical/HVAC (ASHRAE) — air distribution, chiller plant, ductwork; (3) Sanitary/Plumbing (NPCP) — water supply, drainage, venting; (4) Acoustics/Illumination — STC ratings, lighting levels, daylighting; (5) Communication — structured cabling, BAS; (6) Fire Protection (RA 9514) — sprinklers, detectors, standpipes; (7) Intelligent Systems — BMS, IoT; (8) Coordination — clash detection, equipment rooms, riser shafts, ceiling plenum conflicts. Cross-section shows typical placement of each system relative to structure and finishes." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## How Subtopics Connect
 
@@ -24,7 +24,7 @@ High-Tech & Intelligent Building    ← Integration layer
 Building Utilities Integration      ← The coordination challenge
 ```
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
+<Callout>The integration subtopic is not separate content to study in addition to the others — it is the capstone that makes all the other subtopics meaningful. Every system creates coordination requirements. Every shaft, equipment room, and penetration is a negotiation between systems. Study the individual systems with the integration challenge in mind from the beginning.</Callout>
 Extracted summary:
 - Props: (none)
 - Text: The integration subtopic is not separate content to study in addition to the others — it is the capstone that makes all the other subtopics meaningful. Every system creates coordination requirements. Every shaft, equipment room, and penetration is a negotiation between systems. Study the individual systems with the integration challenge in mind from the beginning.
@@ -33,7 +33,7 @@ Extracted summary:
 
 The ceiling plenum is the most contested zone. HVAC ducts, sprinkler piping, electrical conduit, data cabling, and sanitary drains all compete for space.
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiExamTable" status="preserved"]
+<WikiExamTable headers={["System","Typical Ceiling Plenum Requirement","Coordination Priority"]} rows={[["HVAC main ducts","300–600mm diameter; bends require 1.5× diameter radius","Route first — largest and least flexible"],["Sprinkler piping","100–150mm main; drops to heads at specific spacing","Route after HVAC; must maintain clear coverage patterns"],["Electrical conduit","25–100mm diameter; tray systems possible","Route after HVAC and sprinklers; most flexible"],["Structured cabling","Cable trays 150–600mm wide; separation from power required","Route last; needs separation from EMI sources"],["Sanitary gravity drain","Requires minimum slope — cannot be rerouted freely","Establish early; slope is non-negotiable"]]} />
 Extracted summary:
 - Props: headers="{["System","Typical Ceiling Plenum Requirement","Coordination Priority"]}", rows="{[["HVAC main ducts","300–600mm diameter; bends require 1.5× diameter radius","Route first — largest and least flexible"],["Sprinkler piping","100–150mm main; drops to heads at specific spacing","Route after HVAC; must maintain clear coverage patterns"],["Electrical conduit","25–100mm diameter; tray systems possible","Route after HVAC and sprinklers; most flexible"],["Structured cabling","Cable trays 150–600mm wide; separation from power required","Route last; needs separation from EMI sources"],["Sanitary gravity drain","Requires minimum slope — cannot be rerouted freely","Establish early; slope is non-negotiable"]]}"
 - Text: (none detected)
@@ -44,7 +44,7 @@ Space allocation: electrical rooms (near service entrance, 1.0m clearance in fro
 
 Fire safety as design constraint: fire-rated corridor walls, egress lighting on emergency power, extinguisher cabinets within travel distance, sprinkler head clearance (450mm below head must be clear), fire department access.
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="Note" status="preserved"]
+<Note>The LEA frequently presents a floor plan scenario and asks you to evaluate or correct the location of an equipment room or shaft. The question is testing whether you understand the access, clearance, and system-routing requirements that make a location viable. A mechanical room on the top floor of a high-rise is unusual but sometimes correct (for cooling towers). A generator room in a basement near a flood-prone area is a design error. Know the reasoning, not just the rule.</Note>
 Extracted summary:
 - Props: (none)
 - Text: The LEA frequently presents a floor plan scenario and asks you to evaluate or correct the location of an equipment room or shaft. The question is testing whether you understand the access, clearance, and system-routing requirements that make a location viable. A mechanical room on the top floor of a high-rise is unusual but sometimes correct (for cooling towers). A generator room in a basement near a flood-prone area is a design error. Know the reasoning, not just the rule.
@@ -53,14 +53,14 @@ Extracted summary:
 
 Equipment loads on structure: rooftop units, cooling towers, generators, water tanks. Slab penetrations must be coordinated to avoid cutting rebar or PT tendons.
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="ExamTip" status="preserved"]
+<ExamTip>The LEA has tested slab penetration coordination in scenario questions: "A plumber proposes coring a 200mm hole through a post-tensioned concrete slab to run a new sanitary drain. What is the architect's appropriate response?" The answer is that core drilling in a PT slab must be preceded by locating the PT tendons (using GPR scanning or the original structural drawings) and obtaining structural engineer approval, because severing a tendon can compromise the slab's structural integrity.</ExamTip>
 Extracted summary:
 - Props: (none)
 - Text: The LEA has tested slab penetration coordination in scenario questions: "A plumber proposes coring a 200mm hole through a post-tensioned concrete slab to run a new sanitary drain. What is the architect's appropriate response?" The answer is that core drilling in a PT slab must be preceded by locating the PT tendons (using GPR scanning or the original structural drawings) and obtaining structural engineer approval, because severing a tendon can compromise the slab's structural integrity.
 
 ## LEA-UTIL ↔ Laws: The Code Web
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="WikiExamTable" status="preserved"]
+<WikiExamTable headers={["Law / Code","Primary Subject Coverage","LEA-UTIL Intersection"]} rows={[["RA 9514 — Fire Code of the Philippines","Laws: clearance process, liability, penalties","UTIL: sprinkler types, detector spacing, egress lighting, fire rating"],["Philippine Electrical Code (PEC)","Laws: licensing of master electricians","UTIL: circuit sizing, load calculation, grounding, hazardous locations"],["National Plumbing Code of the Philippines (NPCP)","Laws: licensing of master plumbers","UTIL: pipe sizing, fixture units, pressure, vent requirements"],["RA 9003 — Ecological Solid Waste Management","Laws: environmental compliance","UTIL: waste segregation facilities, recycling room space allocation"],["Philippine Green Building Code (PGBC)","Laws: mandatory for certain occupancies","UTIL: energy efficiency targets, water use reduction, lighting power density"]]} />
 Extracted summary:
 - Props: headers="{["Law / Code","Primary Subject Coverage","LEA-UTIL Intersection"]}", rows="{[["RA 9514 — Fire Code of the Philippines","Laws: clearance process, liability, penalties","UTIL: sprinkler types, detector spacing, egress lighting, fire rating"],["Philippine Electrical Code (PEC)","Laws: licensing of master electricians","UTIL: circuit sizing, load calculation, grounding, hazardous locations"],["National Plumbing Code of the Philippines (NPCP)","Laws: licensing of master plumbers","UTIL: pipe sizing, fixture units, pressure, vent requirements"],["RA 9003 — Ecological Solid Waste Management","Laws: environmental compliance","UTIL: waste segregation facilities, recycling room space allocation"],["Philippine Green Building Code (PGBC)","Laws: mandatory for certain occupancies","UTIL: energy efficiency targets, water use reduction, lighting power density"]]}"
 - Text: (none detected)

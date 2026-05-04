@@ -282,14 +282,23 @@ not with the architect's preference or general industry practice. At the time of
 
 ---
 
-
-
 ---
 
 ## Exam Tip
 
 LEA Trap: Projecting sign minimum clearance: 3.00 m on non-arcaded streets, 5.00 m on arcaded streets. Ground signs max height = 6.00 m. Roof signs not permitted above 15.00 m building height. Neon signs minimum spacing: 4.00 m between signs, 2.00 m from common boundaries.
 
+
+
+---
+
+## Exam Tip
+
+ALE Trap: Projecting sign minimum clearance: 3.00 m on non-arcaded streets, 5.00 m on arcaded streets. Ground signs max height = 6.00 m. Roof signs not permitted above 15.00 m building height. Neon signs minimum spacing: 4.00 m between signs, 2.00 m from common boundaries.
+
+
+
+<ArticleMedia type="image" caption="Sign Types and Clearances — Roof, Projecting, Wall, and Ground Sign Dimensional Standards" description="Building elevation and plan showing four sign types: roof sign (compliance with penthouse rules, lightning protection), projecting sign (max projection from wall face, min clearance above sidewalk), wall sign (flush-mounted, area limits), and ground sign (setback from RROW). Clearance annotations: 3.00m min for non-arcaded streets, 5.00m min for arcaded streets per PD 1096 Rule XX." />
 ## Cross‑References
 
 **Comprehensive Signage Package**, **Bp 344 Tactile And Visual Alarms**, **Electrical And Mechanical Regulations**, **Site Exterior Circulation**

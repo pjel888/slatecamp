@@ -4,8 +4,6 @@
 Digital architecture represents the integration of computational tools, artificial intelligence, virtual reality, and building information modeling (BIM) into architectural practice. Filipino architects increasingly adopt these technologies to enhance design innovation, streamline workflows, improve collaboration, and create data-driven solutions responsive to Philippine tropical climate, rapid urbanization, and resource constraints.
 </Callout>
 
-
-
 ## Learning Goal
 
 - Define the key technologies in digital architecture: AI-driven analysis, parametric/generative design, VR visualization, BIM platforms, and computational optimization.
@@ -13,6 +11,10 @@ Digital architecture represents the integration of computational tools, artifici
 - Apply digital architecture concepts to Philippine practice: BIM for tropical climate-responsive design, computational analysis for resource-constrained contexts.
 
 ## Core Concept
+
+|<ArticleMedia id="media-lea-theo-008-03-digital-architecture" type="image" caption="Digital Architecture Ecosystem — Technologies Across the Architectural Lifecycle" description="Horizontal flowchart diagram from left to right: Site Analysis (AI-driven data processing, crowd simulation) → Conceptual Design (Parametric/generative design, form-finding) → Design Development (BIM coordination, VR visualization, performance simulation) → Documentation (AI code compliance checking, material optimization) → Construction (Robotic fabrication, construction sequencing) → Facilities Management (BIM data for operations). Icons for each phase with connecting arrows labeled 'Integrated Digital Workflow.' Side panel: 'Philippine Application — tropical passive cooling simulation, material optimization for local context.'" suggestedAsset="Flowchart of digital technologies mapped to architectural design phases" status="placeholder" />
+
+<ArticleMedia id="media-lea-theo-008-03-digital-b" type="image" caption="BIM and Parametric Design — Computational Workflow for Philippine Practice" description="Two-part diagram: (1) BIM workflow — showing how a single coordinated digital model serves all project phases (schematic design model → design development model → construction documents → shop drawings → facilities management), with clash detection between MEP and structural systems highlighted; (2) Parametric design — a building facade showing how changing one parameter (solar angle, shading depth, window-to-wall ratio) automatically updates the entire facade geometry. Philippine context shown with tropical shading simulations." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 Digital architecture fundamentally transforms how architects conceptualize, develop, and communicate design. The field encompasses multiple technologies deployed across the full architectural lifecycle: AI-driven site analysis and crowd simulation, parametric and generative design systems, immersive virtual reality visualization, integrated BIM platforms, computational optimization of material and energy performance, and roboticized fabrication. Rather than replacing traditional architectural thinking, these tools extend architects' capacity to explore complex problems, test numerous iterations rapidly, and make data-informed decisions that would be impractical using conventional methods alone.
 
@@ -47,24 +49,17 @@ The future of Philippine architectural practice will likely involve increasing d
 <WikiExamTable headers={["Technology", "Application", "Philippine Context"]} rows={[['["BIM (Building Information Modeling)", "Integrated project delivery, clash detection, facility management", "Reduces coordination errors in dispersed team environments"]', '["Parametric Design", "Explores design variations systematically; optimizes geometry, material efficiency", "Addresses resource constraints and construction cost pressures"]', '["Generative Design", "AI-driven exploration of design possibility spaces", "Creates novel solutions responsive to Philippine climate and conditions"]', '["AI Site Analysis", "Processes geographic, demographic, infrastructure data", "Accelerates site assessment, identifies opportunities and constraints"]', '["Virtual Reality Visualization", "Immersive design communication to clients and stakeholders", "More effective than traditional drawings for non-technical audiences"]', '["Computational Optimization", "Simulates thermal performance, airflow, solar gain, structural efficiency", "Essential for tropical climate design and sustainable performance"]', '["AI-Enhanced Rendering", "Photorealistic visualization throughout design development", "Improves communication and stakeholder engagement"]', '["Code Compliance AI", "Automated checking against building codes and regulations", "Reduces documentation errors and regulatory risk"]', '["Construction Optimization", "AI assists in sequencing, material management, waste reduction", "Improves project efficiency and cost management"]', '["Roboticized Fabrication", "Digital control of fabrication equipment for precision and customization", "Enables mass customization while maintaining efficiency"]']]} />
 ## How It's Tested on the LEA
 
-
 <ExamTip>1. **Technology selection scenarios**: Questions present design problems and ask which digital tools are most appropriate. Strong answers justify tool selection based on specific project requirements rather than defaulting to familiar or prestigious tools.</ExamTip>
-
 
 <ExamTip>2. **Hybrid methodology**: Questions assess whether candidates understand that digital tools work best integrated with traditional design thinking rather than used exclusively. Answers should demonstrate judgment about when computation adds value versus when it might constrain creativity.</ExamTip>
 
-
 <ExamTip>3. **BIM workflow integration**: Practical questions about project coordination, asking how BIM would improve outcomes. Correct answers mention clash detection, trade coordination, operation and maintenance planning, not merely 3D visualization.</ExamTip>
-
 
 <ExamTip>4. **Philippine climate responsiveness**: Questions may present tropical design challenges and ask how digital tools could support superior environmental performance. Answers demonstrate understanding that digital optimization serves sustainability, not merely novelty.</ExamTip>
 
-
 <ExamTip>5. **Professional equity and access**: Questions explore the implications of digital technology's high cost and knowledge concentration. Sophisticated answers recognize both opportunities and barriers while suggesting inclusive approaches to technological adoption.</ExamTip>
 
-
 <ExamTip>6. **Critical evaluation of AI outputs**: Scenarios present computationally generated designs and ask candidates to critically assess them. Correct answers go beyond accepting algorithmic outputs, interrogating whether solutions truly meet design intent and human needs.</ExamTip>
-
 
 ## Common Mistakes
 
@@ -73,7 +68,6 @@ The future of Philippine architectural practice will likely involve increasing d
 <WikiMistakeCard mistake="Over-specification too early" correction="Using detailed BIM modeling before design fundamentals are resolved, creating false precision and wasted effort." context="Strong answers recognize design maturation phases and appropriate modeling depth at each stage." />
 
 <WikiMistakeList mistakes={["Ignoring digital skills equity. Overlooking that computational tools access varies widely across Filipino practices. Weak answers treat digital competency as individually attained; strong answers recognize systemic barriers and suggest how profession should democratize access.", "Disconnecting design from computation. Allowing algorithms to drive decisions rather than constraining them within clear design intent. Questions test whether candidates maintain human judgment and creative vision while using computational assistance.", "Assuming data accuracy. Treating algorithmic outputs as objective truth without interrogating source data quality or embedded assumptions. Tropical design especially requires local data; imported climate models may be inaccurate.", "Neglecting human experience. Creating computationally optimized spaces that fail to consider how people actually experience and inhabit them. Correct answers balance performance metrics with qualitative spatial experience."]} />
-
 
 ## Key Terms
 

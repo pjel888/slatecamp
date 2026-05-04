@@ -80,6 +80,8 @@ Byzantine aesthetics emphasize:
 
 ## Related Articles
 
+<ArticleMedia id="media-hist-002-01-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Side-by-side comparison of Early Christian basilica plan (Old St. Peter's, Rome, c. 326 CE) and Byzantine centralized domed plan (Hagia Sophia, Constantinople, 532–537 CE), showing the contrasting spatial organizations and structural systems." caption="Early Christian vs. Byzantine — Plan Comparison" suggestedAsset="Style comparison illustration" placementIntent="Style comparison for architectural period" />
+
 See also within Medieval to Baroque: **lea-hist-002-02-core-concept**, **lea-hist-002-03-core-concept**, **lea-hist-002-04-core-concept**, **lea-hist-002-05-core-concept**.
 
 > **Overview:** overview-history-of-architecture for the full curriculum structure and study strategy for History of Architecture.

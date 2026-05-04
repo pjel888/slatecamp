@@ -5,7 +5,6 @@ Coordinate structural, mechanical, electrical, plumbing, and fire protection sys
 
 Mechanical, electrical, and plumbing (MEP) systems require dedicated space within a building envelope. For the LEA, you must understand how much of your total floor area is consumed by MEP and related support areas — and how to budget for them during architectural planning so usable space is not compromised.
 
-
 ## Core Concept
 
 MEP space allocation begins with understanding the **net-to-gross ratio** (NGR), which quantifies the proportion of built space used for structure, MEP, and circulation versus actual usable area.
@@ -58,6 +57,7 @@ A floor-to-floor height of about 3.0 m (common in many RC buildings) must accomm
 - Suspended ceiling and finishes where provided.
 
 If MEP depth is underestimated, clear finished ceiling height is reduced, creating comfort and proportion issues and potentially breaching minimum ceiling height standards (e.g., PD 1096 requires at least 2.40 m for upper-storey habitable rooms, with 2.70 m minimum at the first storey). Proper early allocation of vertical depth protects both compliance and design quality.
+<ArticleMedia id="media-lea-dsgn-007-09-core-concept" a type="image" caption="Building Systems Coordination — Integrated Ceiling Plan Diagram" description="Composite reflected ceiling plan showing coordination of: structural grid, mechanical ductwork, electrical lighting layout, plumbing, fire sprinkler heads, and fire alarm devices. Conflict resolution zones highlighted with annotation." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
@@ -96,8 +96,8 @@ In the Philippines, MEP space has historically been under-allocated in many proj
 **“MEP is invisible but not free.”** If you design to an aggressive net-to-gross ratio without reserving enough space for plant, risers, and cores, the “missing” area will reappear later as exposed services, cramped ceilings, and costly revisions. Budget MEP and core space explicitly from day one.
 </Tip>
 
-
 **Exam Tip:** Ceiling plenum depth (typically 600-900mm) accommodates ductwork, piping, and conduit. Coordinate structural depth (+500-800mm) with MEP zone for total floor-to-floor height calculation.
+<ArticleMedia id="media-lea-dsgn-007-09-core-concept" a type="image" caption="Integrated Ceiling Plan — MEP, Structural, and Lighting Coordination" description="Reflected ceiling plan showing coordination of: structural beams and soffits, HVAC duct routing (with diffusers), lighting fixtures (recessed, pendant, emergency), sprinkler head coverage, and ceiling grid. Conflict zones where structural, MEP, and architectural elements intersect are highlighted." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Cross-References
 

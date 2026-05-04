@@ -45,7 +45,7 @@ In a competitive bidding process, the Owner publicly announces the project throu
 
 
 
-<ArticleMedia type="image" caption="Procurement Methods Comparison — Public vs. Private Sector Flowchart" description="Two-track comparison flowchart: Public sector (left, RA 9184) vs Private sector (right). Shows procurement methods: Competitive Bidding (Public Bidding for government, Negotiated/Invited Bid for private). Decision criteria for method selection: project value, urgency, and regulatory requirements. Key differences highlighted for each track." />
+<ArticleMedia type="image" caption="Procurement Methods Comparison — Public vs. Private Sector Flowchart" alt="Two-track comparison flowchart: Public sector (left, RA 9184) vs Private sector (right). Shows procurement methods: Competitive Bidding (Public Bidding for government, Negotiated/Invited Bid for private). Decision criteria for method selection: project value, urgency, and regulatory requirements. Key differences highlighted for each track." />
 ## Related Articles
 
 - [Standard Owner-Architect Agreement](lea-prac-ctr-001)

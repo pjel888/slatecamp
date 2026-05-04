@@ -4,6 +4,10 @@
 
 Identify the Mughal synthesis formula — charbagh garden layout, bulbous onion dome, iwan, chhatri, pietra dura inlay — and recognize key monuments (Taj Mahal, Humayun's Tomb, Red Fort, Fatehpur Sikri) by their combination of Persian, Indian, and Islamic elements.
 ## Core Concept
+
+
+<ArticleMedia id="media-hist-004-07-mughal-garden-complex" layout="single" type="image" status="placeholder" alt="Comparative site plan diagram of three Mughal garden complexes: (1) Taj Mahal (Agra, 1632–1653) — charbagh garden divided into four quadrants by water channels, white marble mausoleum at center, reflecting pool on north-south axis; (2) Humayun's Tomb (Delhi, 1569–1571) — first major charbagh tomb, precursor to Taj Mahal, with raised platform and garden at lower grade; (3) Shalimar Gardens (Lahore, 1641) — terraced three-level garden with 410 fountains, cascading water channels, and imperial pavilions. Each annotated with water management (hydraulic systems), axial orientation, and architectural relationship to garden." caption="Mughal Garden-Mausoleum Complex — Taj Mahal, Humayun's Tomb, Shalimar Gardens" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
 **Mughal architecture** represents Islamic design adapted to the Indian subcontinent under the Mughal Empire (1526–1857). The Mughals, descended from Central Asian Turks and Mongols, encountered Hindu and Buddhist architectural traditions spanning millennia. Rather than suppress these, Mughal architects synthesized Persian (particularly Safavid) and Indian formal languages. The result is a distinct hybrid tradition that balances Islamic geometry with Indian color, ornament, and scale.
 
 
@@ -77,6 +81,8 @@ Mughal architecture developed under specific patron dynasties. **Akbar** (r. 155
 **Ustad Ahmad Lahauri** — Master architect listed as principal designer of the Taj Mahal (under Shah Jahan), though the monument was created by a collective imperial atelier; represents peak of Mughal architectural mastery.
 
 [SLATECAMP_UI_BLOCK:ui_0013 component="Warn" status="preserved"]
+
+<ArticleMedia id="media-hist-004-07-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparison of Mughal architectural elements across key monuments: Humayun's Tomb (charbagh garden, red sandstone dome), Fatehpur Sikri (Buland Darwaza, Diwan-i-Khas), and Taj Mahal (onion dome, iwan, pietra dura inlay, minarets)." caption="Mughal Architecture — Monument Comparison" suggestedAsset="Style comparison illustration" placementIntent="Style comparison for architectural period" />
 
 ## Related Articles
 

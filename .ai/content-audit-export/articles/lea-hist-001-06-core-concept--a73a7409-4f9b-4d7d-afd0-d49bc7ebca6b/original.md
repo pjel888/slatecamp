@@ -7,6 +7,10 @@ Identify Roman architectural innovations — concrete construction, the arch, th
 
 Roman architecture (c. 100 BCE–400 CE) departed fundamentally from Greek tradition. Where Greeks refined the post-and-lintel system and celebrated structural clarity, Romans developed the **arch**, the **vault**, and **Roman concrete** (opus caementicium), enabling buildings of unprecedented scale, interior volume, and utilitarian purpose. Roman civilization, unlike Greek city-states, was imperial and practical—architecture reflected this in amphitheaters for spectacles, aqueducts for water delivery, roads for military movement, and warehouses for grain.
 
+
+<ArticleMedia id="media-hist-001-06-core-concept" layout="single" type="image" status="placeholder" alt="Interior view of the Pantheon (120–128 CE, Rome) showing the coffered concrete dome, central oculus (c. 9 m diameter), and the 43.3 m diameter rotunda space." caption="The Pantheon — Dome and Oculus Interior" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
+
 **The Arch:** A curved stone structure spanning an opening, transferring weight outward and downward to supports (abutments) on either side. The arch is more efficient than the lintel because it creates compression (not tension) in its stones, and stone resists compression far better than tension. This allowed Romans to span distances impossible with lintels. The arch's components: **voussoirs** (the wedge-shaped stones forming the curve), **intrados** (inner curve), **extrados** (outer curve), and **keystone** (the central, uppermost voussoir). Roman arches often featured a radiating pattern of voussoirs, creating aesthetic order from structural logic.
 
 <Tip>
@@ -38,6 +42,10 @@ Internally, the Colosseum featured a complex system of corridors, staircases, va
 **Aqueducts:** Roman engineering extended beyond buildings to infrastructure. The **Pont du Gard** (near Nîmes, France, c. 50 CE) is a three-tiered aqueduct spanning 900 feet, carrying water across a river valley. Built entirely of stone without mortar, it demonstrates Roman mastery of the arch at monumental scale and the engineering discipline required for hydraulic systems spanning vast distances.
 
 **Materials and Construction:** Romans favored different materials regionally. In Rome proper, travertine (a limestone) and tuff (volcanic stone) were quarried. Concrete (pozzolana-based) was used for vaults and infill. Brick (often stamped with the maker's name and legion) was common. Marble was imported for facing and special projects. The combination of materials—stone facing concealing concrete infill—allowed Romans to maximize strength while managing cost and appearance.
+
+
+<ArticleMedia id="media-hist-001-06-core-concept" layout="single" type="image" status="placeholder" alt="Diagram showing structural components of the Roman arch (voussoirs, keystone, intrados, extrados), barrel vault, groin vault (intersecting barrel vaults), and dome construction in opus caementicium." caption="Roman Arch and Vault Typology — Barrel, Groin, and Dome" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
 
 ## Key Facts and Testable Items
 
@@ -94,6 +102,8 @@ Roman architecture tests your understanding of the arch, vault, and concrete—s
 **Travertine:** A limestone quarried near Rome, used extensively in Roman construction for its durability and appearance.
 
 ## Related Articles
+
+<ArticleMedia id=\"media-hist-001-06-core-concept-timeline\" layout=\"single\" type=\"image\" status=\"placeholder\" alt=\"Timeline showing the development of Roman building types and engineering innovations (c. 100 BCE–400 CE) from concrete (opus caementicium) and the arch through the Colosseum (70–80 CE), Pantheon (120–128 CE), aqueducts, and the Basilica of Maxentius (308 CE).\" caption=\"Roman Architecture — Engineering Innovation Timeline\" suggestedAsset=\"Timeline diagram\" placementIntent=\"Timeline diagram for architectural period\" />
 
 See also within Ancient Architecture: **lea-hist-001-01-core-concept**, **lea-hist-001-02-core-concept**, **lea-hist-001-03-core-concept**, **lea-hist-001-04-core-concept**.
 

@@ -16,6 +16,13 @@ Philippine practice per RA 9266 (Architecture Act of 2004) and DPWH standards em
 
 Key information in schedules includes paint color codes (matched to approved color chips or Pantone numbers), floor material and size (e.g., "Mariwasa porcelain tile 600×600mm, Pattern #X-101, grout color: light gray"), ceiling type with acoustic rating if applicable, and baseboard/trim material with height and finish.
 
+
+<ArticleMedia id="media-finish-schedule-example" layout="single" type="image" status="placeholder"
+  alt="Example finish schedule showing room-by-room matrix of floor, wall, and ceiling finishes with material codes, locations, and installation notes"
+  caption="Future diagram: sample finish schedule — room-by-room matrix with material codes and installation notes"
+  suggestedAsset="Table or matrix template showing finish schedule format"
+  placementIntent="Provides visual example of finish schedule document structure" />
+
 ## Key Provisions
 
 | Element | Schedule Field | Required Information | Standard | LEA Relevance |
@@ -42,6 +49,12 @@ For high-rise residential projects (dominant in Metro Manila), finish schedules 
 
 Accessibility compliance (BP 344) is documented in schedules where applicable. Slip-resistant finishes on ramps and level paths are called out separately. Finish schedules serve as compliance documentation for inspectors.
 
+
+<ArticleMedia id="media-finish-schedule-template" layout="single" type="image" status="placeholder"
+  alt="Template of a finish schedule showing room-by-room entries for floor, wall, ceiling, and base finishes with material codes and installation notes"
+  caption="Future diagram: finish schedule template — room-by-room material specification"
+  suggestedAsset="Template or example finish schedule document"
+  placementIntent="Provides practical template for finish schedule creation" />
 ## How It's Tested
 
 **Question Type 1 (Schedule Interpretation):** A finish schedule shows "Room 201: North Wall—Paint, Boysen Permacoat, Color #B150." What additional information is unclear that might prevent accurate execution? Answer: DFT (dry film thickness), primer type, sheen level (matte, satin, gloss), and surface prep standard should be cross-referenced to the paint specification section. The color code is clear but other details are implicit, risking substitution.

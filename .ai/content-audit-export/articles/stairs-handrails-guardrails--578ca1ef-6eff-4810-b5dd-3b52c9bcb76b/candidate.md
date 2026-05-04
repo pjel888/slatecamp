@@ -12,7 +12,9 @@ _Stairs–Ramps–Elevators Integration Module (Accessibility + Life Safety)_[we
 
 ## 1. Big Picture: How BP 344 and PD 1096 Interact
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="LawCallout" status="preserved"]
+<LawCallout code="pd1096" section="Rule XII - Guardrails">
+BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all public buildings.
+</LawCallout>
 Extracted summary:
 - Props: (none)
 - Text: BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all p...
@@ -166,7 +168,7 @@ ALE Trap: When BP 344 and PD 1096 conflict on stairs, BP 344 accessibility requi
 
 
 
-<ArticleMedia type="image" caption="Stair Geometry — PD 1096 Riser, Tread, and Handrail Dimensions" description="Cross-section and plan of a typical stair showing: riser height (max 200mm PD 1096), tread depth (min 250mm), nosing projection, handrail at 800-900mm (PD 1096) overlaid with BP 344 dual handrails at 700mm and 900mm, guardrail at 1100mm min for drops over 750mm, landing depth equal to stair width, and headroom clearance (2.00m min)." />
+<ArticleMedia type="image" caption="Stair Geometry — PD 1096 Riser, Tread, and Handrail Dimensions" alt="Cross-section and plan of a typical stair showing: riser height (max 200mm PD 1096), tread depth (min 250mm), nosing projection, handrail at 800-900mm (PD 1096) overlaid with BP 344 dual handrails at 700mm and 900mm, guardrail at 1100mm min for drops over 750mm, landing depth equal to stair width, and headroom clearance (2.00m min)." />
 ## Cross‑References
 
 **Widths Slopes**, **Conflict Matrix Stairs Guards Elevators**, **Bp 344 Ramp Slope Tiers**, **Transport Nodes Escalators Walkways**

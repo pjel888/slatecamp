@@ -10,6 +10,13 @@ Carbon sequestration in timber results from photosynthetic CO2 uptake during tre
 
 Environmental Product Declarations (EPDs) per ISO 14025 provide standardized quantification of material environmental impacts, including embodied carbon (kg CO2e per functional unit), water consumption, eutrophication potential, and other metrics. EPDs enable comparison of equivalent materials and verification of embodied carbon claims.
 
+
+<ArticleMedia id="media-voc-limits-chart" layout="single" type="image" status="placeholder"
+  alt="Comparison chart of VOC limits for interior finishes under BERDE and LEED standards, with common material categories"
+  caption="Future chart: VOC limits for interior finishes — BERDE and LEED requirements"
+  suggestedAsset="Table or infographic showing VOC limits by finish type"
+  placementIntent="Provides reference for acceptable VOC levels in green building" />
+
 ## Key Provisions
 
 <WikiExamTable headers={["LCA Phase", "EN 15978 Module", "Description", "Example"]}>
@@ -50,6 +57,12 @@ Philippine electricity grid composition (2023): approximately 40-45 percent coal
 
 Timber-producing regions in Mindanao, Palawan, and Visayas provide sustainably harvested tropical hardwoods and plantation-grown softwoods meeting Philippine Sustainable Forestry standards. Using locally harvested timber (lauan, teak, mahogany in sustainable operations) reduces A4 transport embodied carbon and supports rural livelihoods. However, wild-harvested timber from unmanaged forests creates deforestation risk and should be avoided; certification (FSC, PEFC) is necessary to ensure sustainability.
 
+
+<ArticleMedia id="media-green-material-selection" layout="single" type="image" status="placeholder"
+  alt="Decision diagram for selecting green materials based on VOC limits, recycled content, regional sourcing, and certified wood requirements under BERDE and LEED"
+  caption="Future diagram: green material selection criteria — VOC, recycled content, regional sourcing, certified wood"
+  suggestedAsset="Decision flowchart for green building material specification"
+  placementIntent="Guides material selection for green building certification compliance" />
 ## How It's Tested
 
 LEA candidates must identify LCA phases by module number (A1-A5, B1-B7, C1-C4, D) and describe what each module includes (e.g., A1-A3 is cradle-to-gate production; B6-B7 is operational energy and water; C1-C4 is end-of-life). Questions present a building scenario and ask candidates to calculate embodied carbon reduction from material substitution (e.g., 20 percent fly ash concrete replaces virgin cement), accounting for both reduced production (A1-A3) and potential B4 (replacement) stage implications.

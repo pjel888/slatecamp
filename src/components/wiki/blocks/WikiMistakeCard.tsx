@@ -1,6 +1,54 @@
-import type { WikiMistakeProps } from '@/types/wiki'
+import type { WikiMistakeCardRawProps } from '@/types/wiki'
 
-export const WikiMistakeCard = ({ number, title, wrongValue, correctValue, explanation, sourceRef }: WikiMistakeProps) => {
+/**
+ * Normalize raw MDX props into the canonical WikiMistakeProps shape.
+ *
+ * Handles three conventions found across the article corpus:
+ *   A) NEW (154 articles):  mistake, correction, context
+ *   B) OLD (2 articles):    number, title, wrongValue, correctValue, explanation, sourceRef
+ *   C) BODY (9 articles):   title, body
+ */
+function normalizeMistakeProps(index: number, raw: WikiMistakeCardRawProps) {
+  const n = raw.number ?? index + 1
+
+  if (raw.mistake || raw.correction || raw.context) {
+    // Convention A: compose-step output
+    return {
+      number: n,
+      title: raw.title || raw.mistake || 'Common Mistake',
+      wrongValue: raw.mistake || raw.wrongValue || raw.title || 'Common error',
+      correctValue: raw.correction || raw.correctValue || 'Review the correct approach',
+      explanation: raw.context || raw.explanation || '',
+      sourceRef: raw.sourceRef,
+    }
+  }
+
+  if (raw.body) {
+    // Convention C: title+body format
+    return {
+      number: n,
+      title: raw.title || 'Common Mistake',
+      wrongValue: raw.body,
+      correctValue: 'Review the correct approach',
+      explanation: raw.body,
+      sourceRef: raw.sourceRef,
+    }
+  }
+
+  // Convention B: original contract (or fallback)
+  return {
+    number: n,
+    title: raw.title || 'Common Mistake',
+    wrongValue: raw.wrongValue || 'Common error',
+    correctValue: raw.correctValue || 'Review the correct approach',
+    explanation: raw.explanation || '',
+    sourceRef: raw.sourceRef,
+  }
+}
+
+export const WikiMistakeCard = (raw: WikiMistakeCardRawProps & { __index?: number }) => {
+  const props = normalizeMistakeProps(raw.__index ?? 0, raw)
+  const { number, title, wrongValue, correctValue, explanation, sourceRef } = props
   return (
     <div className="not-prose border border-camp-red rounded-md overflow-hidden my-3">
       {/* Red header — full title, no truncation */}

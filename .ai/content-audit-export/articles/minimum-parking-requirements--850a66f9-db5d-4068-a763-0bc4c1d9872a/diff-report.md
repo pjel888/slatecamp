@@ -1,33 +1,32 @@
 # Content Diff Report: minimum-parking-requirements
 
-Generated: 2026-05-04T00:06:16.031Z
+Generated: 2026-05-04T02:16:46.662Z
 Article ID: 850a66f9-db5d-4068-a763-0bc4c1d9872a
 Changed: true
-Safe to push locally: false
+Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:e89ed4f6fa1a86bc3233b3fff2be184eaec6f9508f77d8b9e1c0797c6902718a`
-- Normalized: `sha256:7e8d83f838a135c8ae056120923fb544898d8b7566f48391cb291379c634e409`
-- Candidate: `sha256:7e8d83f838a135c8ae056120923fb544898d8b7566f48391cb291379c634e409`
+- Original: `sha256:7e8d83f838a135c8ae056120923fb544898d8b7566f48391cb291379c634e409`
+- Normalized: `sha256:800c0442cbfb999037062df01013b53c6c2559698c3fe6e9aa8231893ee4482c`
+- Candidate: `sha256:3302f5711708795537d67928495c42c6cfc27347f155a8f751b1c12bf2659818`
 
 ## Line summary
 
-- Changed lines: 485
-- Inserted lines: 0
-- Deleted lines: 102
+- Changed lines: 489
+- Inserted lines: 112
+- Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 15
-- UI blocks preserved: 0
-- UI blocks changed/missing: 15
-- Unresolved placeholders: 1
+- UI blocks preserved: 15
+- UI blocks changed/missing: 0
+- Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate contains unresolved UI block placeholders.
-- Candidate is missing 15 preserved UI block(s).
+- None
 
 ## Warnings
 

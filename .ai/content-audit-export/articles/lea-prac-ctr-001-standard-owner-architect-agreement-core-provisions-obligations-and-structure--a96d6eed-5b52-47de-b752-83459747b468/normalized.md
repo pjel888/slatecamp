@@ -53,7 +53,7 @@ Changes to scope are documented through formal change orders. Dispute resolution
 
 
 
-<ArticleMedia type="image" caption="Owner-Architect Agreement Structure — UAP Doc 301 Components Diagram" description="Diagram showing the structure of UAP Document 301: three-party relationship (Owner-Architect-Contractor) at top, then branching to General Conditions, Supplementary Conditions, Special Provisions. Core provisions highlighted: scope of work, compensation, termination, dispute resolution, and insurance requirements." />
+<ArticleMedia type="image" caption="Owner-Architect Agreement Structure — UAP Doc 301 Components Diagram" alt="Diagram showing the structure of UAP Document 301: three-party relationship (Owner-Architect-Contractor) at top, then branching to General Conditions, Supplementary Conditions, Special Provisions. Core provisions highlighted: scope of work, compensation, termination, dispute resolution, and insurance requirements." />
 ## Related Articles
 
 - [Standard Owner-Architect Agreement](lea-prac-ctr-001)

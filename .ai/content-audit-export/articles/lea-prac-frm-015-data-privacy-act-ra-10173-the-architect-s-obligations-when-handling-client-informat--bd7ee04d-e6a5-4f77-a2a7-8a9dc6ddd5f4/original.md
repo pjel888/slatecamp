@@ -1,6 +1,5 @@
 ## Data Privacy Act (RA 10173)—The Architect's Obligations When Handling Client Information
 
-
 ## Learning Goal
 
 After studying this article, you should be able to:
@@ -9,8 +8,6 @@ After studying this article, you should be able to:
 - Describe how DPA applies to client information, project data, and employee records.
 - Identify required data protection measures for architectural firms.
 - Apply DPA compliance rules to practice scenarios.
-
-
 
 ### Scope of RA 10173: Personal Information Controllers and Processors
 
@@ -60,17 +57,17 @@ Architects should implement the following: (1) maintain a data inventory documen
 Legal Basis: RA 10173 (Data Privacy Act of 2012). Architects collecting/processing client personal data are 'personal information controllers' subject to NPC (National Privacy Commission) oversight.
 </LawCallout>
 
-
 <Warn />
 
-
 <ExamTip />
-
 
 <Tip />
 
 ---
 
+
+
+<ArticleMedia type="image" caption="Data Privacy Compliance for Architects — RA 10173 Workflow" description="Flowchart showing architect's data privacy obligations: Collect client data → Inform data subject (privacy notice) → Obtain consent → Process only for specified purpose → Implement security measures → Breach notification (if applicable) → Retention/destruction policy. Side panel shows architect's responsibilities as personal information controller, including NPC registration requirements." />
 ## Related Articles
 
 - [Sole Proprietorship](lea-prac-frm-001)

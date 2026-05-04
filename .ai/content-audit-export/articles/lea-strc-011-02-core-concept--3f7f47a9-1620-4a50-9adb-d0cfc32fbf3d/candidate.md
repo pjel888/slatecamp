@@ -11,7 +11,7 @@ By the end of this article, you will be able to:
 
 ---
 ## Core Concept
-<ArticleMedia id="media-lea-strc-011-02-core-concept" a type="image" caption="Foundation Typology — Shallow vs Deep Foundation Systems" description="Cross-section comparison of foundation types: (1) Shallow foundations — isolated footing, combined footing, strip footing, mat/raft foundation; (2) Deep foundations — pile foundation (end-bearing/friction), drilled pier/caisson (≥600mm). Each type shown with soil bearing pressure distribution, reinforcement layout, and typical depth range. Decision tree for foundation selection based on soil conditions and building loads." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-strc-011-02-core-concept" type="image" caption="Foundation Typology — Shallow vs Deep Foundation Systems" alt="Cross-section comparison of foundation types: (1) Shallow foundations — isolated footing, combined footing, strip footing, mat/raft foundation; (2) Deep foundations — pile foundation (end-bearing/friction), drilled pier/caisson (≥600mm). Each type shown with soil bearing pressure distribution, reinforcement layout, and typical depth range. Decision tree for foundation selection based on soil conditions and building loads." suggestedAsset="Diagram or reference image" status="placeholder" />
 A foundation is the structural system that transfers building load from the superstructure to the soil. Foundation selection is governed by three factors: _soil bearing capacity_, _allowable settlement_, and _site constraints_ (depth to groundwater, adjacent structures, available space).
 
 **Foundation Classification by Depth:**
@@ -66,13 +66,15 @@ In Metro Manila and coastal alluvial plains, shallow footings are viable only in
 2. **Mat vs. Isolated Footing:** A 20-column building on marginal soil compares a mat foundation to 20 isolated footings. Analyze differential settlement and load distribution advantages of the mat.
 3. **Floating Foundation Viability:** For a 3-story residential building (500 kN total), soil depth 4 m with excavated soil weight 4000 kN, determine if a floating foundation is viable and calculate net pressure increase.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+<Tip>
+**Memory Aid:** Shallow footings are direct pushers—they shove load straight down into soil. Deep piles and caissons are deep anchors—they hang onto the soil with friction or grip a firm layer with their tip. Mats are load-spreaders—they flatten pressure across a wide area to reduce settlement. Floating foundations are weight-balancers—they remove as much soil weight as they place in structure.
+</Tip>
 
 ## Related Articles
 
 See also: **Piles** (lea-strc-011-01) for deep foundation details, **Geotechnical Engineering** (lea-strc-011-03) for soil properties governing selection, and **Concrete Materials** (lea-strc-006-01) for footing concrete requirements.
 
 ## Common Mistakes
-[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
+<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeList" status="preserved"]
+<WikiMistakeList mistakes={["Assuming shallow foundations are always cheaper; deep foundations are often mandatory in soft soil and eliminate costly settlement repair later.","Confusing floating foundation with a raft foundation; floating requires Df and excavation weight to nearly equal structure weight; ordinary mats are intermediate supports, not floating.","Treating combined footing and mat as equivleant; combined footings support 2–4 columns; mats cover the entire footprint and provide greater stiffness and load distribution.","Placing mats at arbitrary depth; mat depth is selected to balance bearing capacity and settlement. Deeper mats reduce pressure but increase cost. Optimization is required.","Omitting the role of groundwater and compressibility in foundation selection; soft, saturated clays mandate deep foundations and settlement monitoring, not shortcuts to shallow systems."]} />

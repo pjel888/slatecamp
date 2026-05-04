@@ -8,6 +8,13 @@ Admixtures allow engineers to fine-tune concrete performance for specific projec
 
 The most commonly used admixtures in the Philippines are water reducers (to increase strength and reduce cost) and accelerators (to speed form removal in warm climates).
 
+
+<ArticleMedia id="media-admixture-categories-chart" layout="single" type="image" status="placeholder"
+  alt="Classification chart of concrete admixtures showing water reducers, retarders, accelerators, superplasticizers, air-entraining, and pozzolans with function icons"
+  caption="Future chart: concrete admixture classification by function and effect"
+  suggestedAsset="Organizational chart or infographic of admixture types"
+  placementIntent="Provides visual taxonomy of admixture categories" />
+
 ## ASTM C494 Chemical Admixtures for Concrete
 
 ASTM C494 is the primary standard for admixture specifications and testing. It defines seven types (A through G) by primary and secondary effects:
@@ -16,6 +23,12 @@ ASTM C494 is the primary standard for admixture specifications and testing. It d
 
 Each type must pass specific ASTM C494 testing protocols verifying slump, air content, set time, compressive strength at 1, 7, and 28 days, and durability (freeze-thaw, scaling).
 
+
+<ArticleMedia id="media-admixture-application-chart" layout="single" type="image" status="placeholder"
+  alt="Application matrix for concrete admixtures showing which admixture types are suitable for different concrete conditions: hot weather, cold weather, high strength, underwater, and pumped concrete"
+  caption="Future chart: concrete admixture application matrix by project conditions"
+  suggestedAsset="Selection matrix or decision chart for admixture specification"
+  placementIntent="Guides selection of admixtures based on concrete placement conditions" />
 ## Type A: Water-Reducing Admixtures
 
 Type A admixtures reduce the water required to achieve a target slump (workability), allowing engineers to either maintain the same water-cement ratio and increase strength, or reduce both water and cement while maintaining strength.

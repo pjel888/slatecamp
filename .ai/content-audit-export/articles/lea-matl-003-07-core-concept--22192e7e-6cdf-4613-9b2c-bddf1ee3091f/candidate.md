@@ -123,15 +123,38 @@ The LEA evaluates bolts and fastener knowledge through:
 3. _Bearing vs. slip-critical distinction_ — Identify when slip-critical is required and specify appropriate preload, surface preparation, and inspection methods.
 4. _Defect recognition_ — Identify over-tensioned bolts (visible spline breakoff on TC bolts, bent fastener), under-tensioned bolts (visible gaps, slip marks on surfaces), and improper washers or lockwashers.
 5. _Philippine standards alignment_ — Confirm bolt selection and installation procedures against NSCP 2015 Chapter 5 and relevant fabricator certifications.
-   [SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+   <Tip>
+     A325 is the workhorse bolt for Philippine primary structural connections.
+     Default to A325 unless the question emphasizes maximum stiffness/compact
+     geometry (A490), corrosion in a protective environment (A490 stainless), or
+     light connections (A307). For tension-control questions, remember that TC
+     bolts break the spline automatically at approximately 90% of proof load—no
+     wrench calibration or skill required. Modern high-volume fabrication in the
+     Philippines increasingly specifies TC to ensure consistency and speed. For
+     welding of bolted connections, see LEA-MATL-003-05.
+   </Tip>
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard
+  title='Specifying A490 Without Accounting for Galvanizing Prohibition'
+  body='A designer specifies A490 bolts for a bridge expecting hot-dip galvanizing for corrosion protection. A490 cannot be galvanized; hydrogen embrittlement causes brittle failure. The fabricator must either abandon galvanizing (risking rust in a marine environment) or substitute stainless bolts (tripling cost). Always verify that A490 can be used ungalvanized, or default to A325 with galvanizing for outdoor work.'
+/>
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard
+  title='Under-Tensioning Bolts by Specifying Snug-Tight for Primary Connections'
+  body='A floor system connection specifies snug-tight installation to reduce costs. Snug-tight provides only ~25% preload, yielding minimal friction and allowing slip under load. This increases deformation, vibration, and fatigue risk. Primary connections require calibrated wrench (70% preload) or TC installation (90% preload) per NSCP 2015.'
+/>
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
+<WikiMistakeList
+  items={[
+    'Assuming turn-of-nut and calibrated wrench installation are equally reliable—turn-of-nut requires expert judgment and frequent wrench re-calibration; calibrated wrench relies on mechanical torque consistency; TC eliminates both concerns through automatic spline breakoff.',
+    'Omitting inspection of bolt preload—under-tensioned bolts show visible gaps or slip marks on mating surfaces; over-tensioned TC bolts show incomplete spline breakoff. Visual inspection is critical and inexpensive.',
+    'Mixing bolt grades in a single connection (e.g., A325 and A490)—this complicates design verification and introduces risk of preferential overload on the weaker bolts. Specify uniform bolt grade throughout.',
+    'Failing to account for galvanizing availability when selecting A325 vs. A490—A325 is galvanizing-compatible (ideal for bridges, coastal work); A490 prohibits galvanizing. For outdoor/corrosive environments, A325 is the pragmatic choice.',
+    "Specifying over-tensioned bolts expecting to increase connection capacity—excessive tension causes premature bolt rupture under load and does not increase capacity beyond the bolt's yield strength. Proper tension (per code) is optimum; higher preload provides no benefit and increases failure risk.",
+  ]}
+/>
 
 ## Related Articles
 

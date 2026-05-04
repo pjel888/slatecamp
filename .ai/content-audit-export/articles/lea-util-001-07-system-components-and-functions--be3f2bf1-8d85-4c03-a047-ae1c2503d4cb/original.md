@@ -7,6 +7,9 @@ Identify sanitary drainage system components — soil stacks, waste pipes, vents
 
 A complete sanitary drainage system consists of five interconnected components:
 
+<ArticleMedia id="media-lea-util-001-07-system-components-and-fu" a type="image" caption="Sanitary Drainage System Components — Soil Stack, Waste Pipe, Vent, Trap, Cleanout" description="Isometric diagram of a typical sanitary drainage system showing: soil stack (WC connection), waste pipe (lavatory/shower connections), vent stack extending above roof, P-trap under each fixture, cleanout at base of stack, building drain sloping to sewer. Minimum pipe slopes labeled (1:50 for 100mm pipe per Revised National Plumbing Code)." suggestedAsset="Diagram or reference image" status="placeholder" />
+
+
 <WikiExamTable headers={["Component", "Function", "Typical Materials"]} rows={[["Building Drain", "Horizontal pipe inside building collecting all wastewater", "Cast iron, PVC, HDPE"], ["Building Sewer", "Pipe from building to public sewer or septic system", "Cast iron, vitrified clay pipe (VCP)"], ["Soil Stack", "Vertical pipe carrying human waste (toilet discharge)", "Cast iron, PVC"], ["Waste Stack", "Vertical pipe carrying wastewater from fixtures (not toilets)", "Cast iron, PVC"], ["Vent Stack", "Vertical pipe allowing air circulation and sewer gas release", "Cast iron, PVC"]]} />
 
 <Note>The soil stack and waste stack may be combined into a single stack in smaller buildings, reducing installation cost and complexity.</Note>
@@ -36,6 +39,8 @@ A 1:50 slope means the pipe drops 1 unit vertically for every 50 units of horizo
 <Tip>Slopes steeper than necessary do not improve drainage and waste building space. A slope of 1:40 or 1:30 is acceptable but 1:20 or steeper may cause velocity separation, where solids and liquids separate, leaving grease and solids behind.</Tip>
 
 ## Trap Seal and Water Seal Requirements
+
+<ArticleMedia id="media-lea-util-001-07-system-components-and-fu" a type="image" caption="Plumbing Trap Types — P-Trap, S-Trap, and Trap Seal Mechanism" description="Cross-section diagrams of common trap types: P-trap (standard for lavatories, proper water seal maintained), S-trap (prone to siphonage, not recommended), and detail of trap seal depth showing minimum 50mm water column per Revised National Plumbing Code §308. Arrows indicate siphonage risk in S-trap configuration." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 Every fixture connected to the sanitary drainage system must include a trap—a U-shaped pipe section that maintains a water seal. This seal prevents sewer gases and odors from entering the building while allowing wastewater to pass.
 
@@ -89,7 +94,11 @@ Certain fixtures cannot discharge directly into the sanitary sewer due to hazard
 
 ### Fixtures Requiring Indirect Waste
 
-<WikiChangedPill /> The following fixtures must discharge through a trapped air break (not directly connected):
+<WikiChangedPill />
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+The following fixtures must discharge through a trapped air break (not directly connected):
 
 - Refrigeration units and water-cooled condensers
 - Laboratory sinks and equipment drains (acid/chemical waste)

@@ -10,26 +10,28 @@ After reading this article, you should be able to:
 
 Architectural programming is a pre-design service that translates the client's functional and spatial needs into a written program guiding the architect's design work. SPP 201 defines this service as an analytical problem-seeking process leading to the statement and identification of both horizontal and vertical relationships in offering a solution.
 
-<ArticleMedia id="media-lea-prac-svc-003-space-programming-proce" a type="image" caption="Space Programming Workflow — Problem-Seeking to Design Solution" description="Process flow showing the architectural programming process: client interviews → organizational analysis → space inventory → adjacency analysis → functional relationships → program statement (room types, quantities, sizes, adjacencies) → design criteria → schematic design input. Based on SPP Doc 201 pre-design services." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-prac-svc-003-space-programming-proce" type="image" caption="Space Programming Workflow — Problem-Seeking to Design Solution" alt="Process flow showing the architectural programming process: client interviews → organizational analysis → space inventory → adjacency analysis → functional relationships → program statement (room types, quantities, sizes, adjacencies) → design criteria → schematic design input. Based on SPP Doc 201 pre-design services." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ### The Space Programming Process
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="KeyValues" status="preserved"]
+<KeyValues pairs={[["SPP Document", "201 (Pre-Design), 202 (Regular Design), 203 (Specialized)"], ["Compensation", "MDPE, Lump Sum, Per Diem, Professional Fee + Expenses"], ["Fee Basis", "Percentage of PCC or MDPE"]]} />
 Architectural programming begins with gathering information about the client's organizational structure, operational workflow, and functional requirements. The architect conducts interviews, focus group discussions, and space planning surveys to understand user needs. The process is highly collaborative, involving stakeholders at every level to ensure comprehensive understanding of spatial relationships and operational interactions. Programming synthesizes this information into a space program document with characterizations of envisioned spaces including ambiance, cost range, and other performance criteria.
 
 ### Deliverables of Space Programming
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="KeyValues" status="preserved"]
+<KeyValues pairs={[["SPP Document", "201 (Pre-Design), 202 (Regular Design), 203 (Specialized)"], ["Compensation", "MDPE, Lump Sum, Per Diem, Professional Fee + Expenses"], ["Fee Basis", "Percentage of PCC or MDPE"]]} />
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
+<ExamTip>**LEA Pattern:** Expect scenario-based questions where you must determine which phase a specific deliverable belongs to. Key percentages to memorize: Schematic Design (15%), Design Development (35%), Contract Documents (50%).</ExamTip>
 The primary deliverable is a comprehensive space program document that quantifies spatial requirements and identifies relationships between spaces. The program specifies room types, required quantities, size ranges, adjacency requirements, special conditions, and design criteria for each space. It may include adjacency matrices showing which spaces must be close to one another, site relationship diagrams, and user activity schedules. These documents become the foundation for schematic design work.
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
+<ExamTip>**LEA Pattern:** Expect scenario-based questions where you must determine which phase a specific deliverable belongs to. Key percentages to memorize: Schematic Design (15%), Design Development (35%), Contract Documents (50%).</ExamTip>
 ### Use of Space Program in Design Phases
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="ProcessFlow" status="preserved"]
+<LawCallout code="uap" section="SPP Doc. 201 - Space Programming">
+Process flow: Identify needs → Define scope → Prepare proposal → Execute activities → Deliver outputs → Owner approval
+</LawCallout>
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="ProcessFlow" status="preserved"]
+<ProcessFlow steps={["Identify client needs", "Define scope of services", "Prepare proposal/contract", "Execute pre-design activities", "Deliver phase outputs", "Submit for owner approval"]} />
 
 The architect uses the space program as the primary guide during schematic design to develop conceptual planning solutions. As design progresses through design development and contract documents, the program ensures that all programmed requirements remain satisfied. Changes to the program during later design phases must be documented and reconciled with the original scope, protecting both the architect's fee calculation and the client's expectations for the final project.
 

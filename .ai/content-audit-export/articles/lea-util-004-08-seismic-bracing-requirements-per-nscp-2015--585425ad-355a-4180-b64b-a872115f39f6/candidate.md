@@ -7,7 +7,7 @@ Apply NSCP 2015 Section 208 seismic bracing requirements for MEPF components —
 
 ### Minimum Acceleration and Design Force Calculation
 
-<ArticleMedia id="media-lea-util-004-08-seismic-bracing-requirem" a type="image" caption="NSCP 2015 Seismic Bracing Details — Pipe Clamps, Cable Restraints, Anchor Bolts" description="Detailed installation diagrams: pipe clamp and trapeze hanger with lateral sway brace (diagonal cable at 45°, rated for calculated seismic force Fp, safety factor 4:1), structural anchor bolts (M16 Grade 8.8 minimum) to concrete/steel, spring isolator with lateral snubber (limiting movement to ±50mm), flexible conduit loop (300mm min) at expansion joint. Seismic Design Category D requirements for Philippine Zone 4 annotated." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-util-004-08-seismic-bracing-requirem" type="image" caption="NSCP 2015 Seismic Bracing Details — Pipe Clamps, Cable Restraints, Anchor Bolts" alt="Detailed installation diagrams: pipe clamp and trapeze hanger with lateral sway brace (diagonal cable at 45°, rated for calculated seismic force Fp, safety factor 4:1), structural anchor bolts (M16 Grade 8.8 minimum) to concrete/steel, spring isolator with lateral snubber (limiting movement to ±50mm), flexible conduit loop (300mm min) at expansion joint. Seismic Design Category D requirements for Philippine Zone 4 annotated." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 
 NSCP 2015 Section 208 establishes seismic design categories (SDC) A through F. For Seismic Zone 4 (Philippine classification), buildings are assigned SDC D or higher depending on occupancy importance. The seismic force on mechanical equipment is calculated using:
@@ -16,11 +16,15 @@ NSCP 2015 Section 208 establishes seismic design categories (SDC) A through F. F
 
 Where:
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="KeyValues" status="preserved"]
+<KeyValues items=[{"value": "THHN", "label": "90\u00b0C General Wiring"}, {"value": "THWN", "label": "75\u00b0C Wet Locations"}, {"value": "XHHW", "label": "90\u00b0C Dry/75\u00b0C Wet"}, {"value": "UF-B", "label": "Underground Feeder"}] />
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="ExamTip" status="preserved"]
+<ExamTip>
+  **Exam Tip:** LEA questions on building utilities test code compliance and minimum standards. Memorize key thresholds: 25Ω max ground resistance, 6 ACH kitchen exhaust, 300-500 lx office lighting, NC 30-40 office noise criteria. Always reference the applicable code (PEC, Mechanical Code, NBCP, Fire Code) when answering.
+</ExamTip>
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+<Tip>
+**Pro Tip:** When designing MEPF systems, always reserve adequate ceiling plenum space. Typical suspended ceiling depth requires 450-600mm above the finished ceiling to accommodate ductwork, conduit, piping, and fire protection systems. Coordinate all MEPF routing before finalizing structural slab-to-slab heights.
+</Tip>
 - a_p = component amplification factor (per NSCP Table 1307.4.1, typically 1.0-2.5 for MEP equipment)
 - S_DS = design spectral response acceleration (site-specific, derived from Z=0.4 and soil factors per Section 208)
 - W_p = weight of component
@@ -45,7 +49,7 @@ NSCP 2015 Section 1307.3.1 requires positive anchorage to structure; friction al
 
 ### Piping, Ductwork, and Conduit
 
-<ArticleMedia id="media-lea-util-004-08-seismic-bracing-requirem" a type="image" caption="Seismic Joint Details — Flexible Piping, Ductwork, and Conduit at Building Expansion Joints" description="Detail section at building expansion joint showing: flexible metallic hose for piping (ball joints with ±100mm travel), flexible fabric duct connector (150mm min length, UL Class 1 fire-rated), and flexible conduit with 300-500mm slack loop on both sides. Anchor blocks positioned 1-2m from joint on both sides. Accommodation of ±200mm total seismic movement per NSCP 208.6 labeled." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-util-004-08-seismic-bracing-requirem" type="image" caption="Seismic Joint Details — Flexible Piping, Ductwork, and Conduit at Building Expansion Joints" alt="Detail section at building expansion joint showing: flexible metallic hose for piping (ball joints with ±100mm travel), flexible fabric duct connector (150mm min length, UL Class 1 fire-rated), and flexible conduit with 300-500mm slack loop on both sides. Anchor blocks positioned 1-2m from joint on both sides. Accommodation of ±200mm total seismic movement per NSCP 208.6 labeled." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 
 Buildings expand and contract, and seismic movement can exceed normal thermal movement by up to 300 mm in a major quake. At building expansion joints (marked on architectural and MEP drawings):

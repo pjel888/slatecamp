@@ -13,6 +13,7 @@ By the end of this article, you will be able to:
 Masonry units are classified as hollow or solid based on the ratio of void area to gross cross-sectional area. Understanding these classifications, area definitions (gross, net, bedded), and how they affect design and construction is critical for specifying materials, calculating masonry strength, and meeting code requirements.
 
 ## Core Concept
+<ArticleMedia id="media-lea-strc-010-02-core-concept" a type="image" caption="Masonry Unit Types — Concrete Block, Clay Brick, and Structural Clay Tile" description="Comparative illustration of masonry units: (1) Concrete masonry unit (CMU) — hollow and solid types, nominal sizes (4'', 6'', 8''), web/shell thickness; (2) Clay brick — modular (8×4×2.67''), Norman, Roman, Jumbo sizes; (3) Structural clay tile — load-bearing partition and floor tiles. Compressive strength grades per ASTM/NSCP shown for each unit type." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 A **masonry unit** is an individual element (brick, concrete block, stone) used to construct masonry walls. The internal structure—whether the unit contains voids (hollow) or is completely solid—determines its classification and structural behavior.
 
@@ -79,7 +80,6 @@ _In a four-story hollow CHB building with Design Category D seismic loading, gro
 <Tip>
 _Memory aid_: **"75% Rule"** — Hollow unit = net area < 75% of gross. Standard 6-inch CHB = 50% net = HOLLOW. **"BNA"** — **B**edded area (what contacts mortar), **N**et area (solid only), **A**rea gross (full bounding box). Bedded area determines bearing stress, not gross area.
 </Tip>
-
 
 ## Related Articles
 

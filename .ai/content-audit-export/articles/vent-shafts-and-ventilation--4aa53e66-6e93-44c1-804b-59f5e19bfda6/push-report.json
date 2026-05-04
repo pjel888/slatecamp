@@ -1,26 +1,21 @@
 {
-  "attempted_at": "2026-05-04T00:07:06.102Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:17:55.838Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "candidate.md matches original.md; refusing no-op apply."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "4aa53e66-6e93-44c1-804b-59f5e19bfda6",
   "slug": "vent-shafts-and-ventilation",
   "preparation_actions": [
     "auto_generated_diff"
   ],
-  "remote_hash_before": "sha256:35d976137ed7d898f924dbd846d7771f9183e1570f59f2bbdbe64083089b253e",
-  "original_hash": "sha256:35d976137ed7d898f924dbd846d7771f9183e1570f59f2bbdbe64083089b253e",
-  "candidate_hash": "sha256:a8bc1ab61e3d49c34d3dc508ceb2e70c691366342b873b529c2e1085cfcfd11c",
+  "remote_hash_before": "sha256:659ee75ca9ac357ff34f0e633a96d53d6f3b2a0f5157b998f295d2c8e1ec2096",
+  "original_hash": "sha256:659ee75ca9ac357ff34f0e633a96d53d6f3b2a0f5157b998f295d2c8e1ec2096",
+  "candidate_hash": "sha256:659ee75ca9ac357ff34f0e633a96d53d6f3b2a0f5157b998f295d2c8e1ec2096",
   "stale_check_passed": true,
-  "remote_updated_at_before": "2026-05-03T13:52:28.738898+00:00"
+  "remote_updated_at_before": "2026-05-04T02:02:00.868215+00:00"
 }

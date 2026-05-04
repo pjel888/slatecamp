@@ -4,8 +4,6 @@
 Structuralism and semiotics provided postmodern architecture with theoretical frameworks for understanding how buildings communicate meaning through symbols, signs, and systems of relationships rather than through formal beauty or functional expression. The LEA tests your understanding of how Robert Venturi applied semiotic analysis to architecture, how meaning-making operates in architectural language, and how structural analysis differs from traditional architectural criticism.
 </Callout>
 
-
-
 ## Learning Goal
 
 - Define structuralism: meaning emerges through systems of relationships and differences, not from objects' inherent properties.
@@ -13,6 +11,8 @@ Structuralism and semiotics provided postmodern architecture with theoretical fr
 - Apply Venturi's semiotic analysis to understand how buildings communicate meaning through signs and symbols.
 
 ## Core Concept
+
+<ArticleMedia id="media-lea-theo-005-10-core-concept" a type="image" caption="Architectural Semiotics — Peirce's Signifier-Signified-Interpretant Model Applied to Buildings" description="Three-column diagram: Signifier (the visible architectural form — column, arch, dome, window, wall material) → Signified (the concept or meaning associated — classical order, Gothic spirituality, authority, transparency, honesty) → Interpretant (the cultural understanding that connects them — Western classical tradition, Christian iconography, democratic values, modernist ethics). Examples shown: Gothic cathedral pointed arch (signifier) → spiritual aspiration (signified) → medieval Christian cultural frame (interpretant). Modernist glass facade (signifier) → transparency/openness (signified) → corporate progressive values (interpretant). Bottom panel shows Venturi's semiotic analysis of the decorated shed vs the duck." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 Structuralism and semiotics emerged as intellectual movements in the 1960s, fundamentally challenging modernism's claims to objective truth and universal principles. Structuralism, influenced by Claude Lévi-Strauss, Louis Althusser, and others, argued that meaning does not inhere in objects themselves but rather emerges through systems of relationships and differences. Applied to architecture, structuralism suggested that buildings mean not because of their forms' self-evident purpose but because forms participate in cultural systems of signification. Semiotics, the science of signs developed by Charles Peirce and Ferdinand de Saussure and adapted for cultural analysis by Roland Barthes, provided the theoretical vocabulary for analyzing how signs (signifier-signified relationships) operate to produce meaning.
 
@@ -41,24 +41,17 @@ Despite these limitations, structuralist and semiotic frameworks remained produc
 <WikiExamTable headers={["Concept", "Theorist", "Application to Architecture", "Key Insight"]} rows={[['["Signifier/Signified", "Ferdinand de Saussure", "Form vs. culturally-constructed meaning", "Meaning is not inherent; forms can be deliberately manipulated semantically"]', '["Duck vs. Decorated Shed", "Robert Venturi", "Form-meaning relationship", "Modernism privileged ducks; vernacular uses decorated sheds; both are legitimate"]', '["Semiotics of Architecture", "Robert Venturi", "Architectural language and symbolism", "Buildings communicate through learned cultural associations"]', '["Typology", "Aldo Rossi", "Recurring building types across history", "Architectural validity emerges from participation in systems of types"]', '["Structuralism in Urban Design", "Colin Rowe, Fred Koetter", "City as system of relationships", "Urban coherence emerges from structured spatial relationships, not master plans"]', '["Architecture as Language", "Postmodern theory", "Linguistic frameworks applied to architecture", "Architecture, like language, operates through systematic relationships and conventions"]', '["Ornament as Meaning", "Postmodern semiotics", "Rehabilitation of ornament", "Ornament is not crime (contra Loos) but legitimate semantic vehicle"]', '["Double-Coding", "Charles Jencks", "Multiple simultaneous meanings", "Buildings address multiple audiences through layered signification"]']]} />
 ## How It's Tested on the LEA
 
-
 <ExamTip>1. **Semiotic Analysis of Specific Buildings**: The exam asks you to analyze buildings using semiotic frameworks. What meanings do specific forms communicate? How does context alter signification? What cultural associations shape interpretation?</ExamTip>
-
 
 <ExamTip>2. **Duck vs. Decorated Shed Identification**: Questions present building descriptions and ask you to categorize them. A building shaped like a sailboat (duck) differs fundamentally from a ordinary building with sailboat decorations (decorated shed).</ExamTip>
 
-
 <ExamTip>3. **Typological Thinking**: Questions ask about recurring building types and their transformations. How does understanding the courthouse as a type help analyze contemporary civic architecture? How does typological thinking differ from formal or functional analysis?</ExamTip>
-
 
 <ExamTip>4. **Structuralist vs. Functionalist Criticism**: The exam contrasts these approaches. Functionalism asks "does the form serve its purpose?" Structuralism asks "what system of meanings does this form participate in?" Understanding this distinction is crucial.</ExamTip>
 
-
 <ExamTip>5. **Multiple Signification**: Questions explore how single architectural elements can carry multiple simultaneous meanings depending on context, historical moment, and audience. A classical column signifies differently in different deployments.</ExamTip>
 
-
 <ExamTip>6. **Language and Convention**: You must understand that architecture, like language, operates through learned conventions and cultural associations. A pitched roof signifies "domesticity" not inherently but through cultural learning.</ExamTip>
-
 
 ## Common Mistakes
 
@@ -67,7 +60,6 @@ Despite these limitations, structuralist and semiotic frameworks remained produc
 <WikiMistakeCard mistake="Confusing Structuralism with Poststructuralism" correction="Structuralism emphasizes systems' coherence, stability, and knowability. Poststructuralism (Derrida, deconstruction) emphasizes systems' instability, internal contradictions, and perpetual slippage of meaning." context="These are opposed positions, though deconstructivism in architecture synthesizes elements of both." />
 
 <WikiMistakeList mistakes={["Oversimplifying Duck vs. Decorated Shed. Students sometimes think Venturi prefers one over the other. Actually, Venturi celebrates both as legitimate strategies. The distinction is analytical, not evaluative. Understanding why modernism privileged ducks while vernacular employed decorated sheds reveals how meaning-systems operate culturally.", "Misunderstanding Typology's Purpose. Students sometimes think typology is about historical preservation or reverence for tradition. Actually, typological thinking asks: what recurring problems do building types solve? How have types transformed across history? This is analytical and forward-looking, not nostalgic.", "Assuming Meaning is Stable. Semiotic analysis should reveal how meanings shift and context transforms signification. A classical portico means differently on a bank, a temple, a shopping mall, and a postmodern museum. Understanding this instability is crucial to semiotic thinking.", "Missing Semiotic Critique of Modernism. Semiotics revelead that modernism's claimed \"honesty\" and \"truth to materials\" were themselves semiotic constructions—cultural conventions claiming universal validity. Understanding how modernism manipulated signs while denying doing so is essential to postmodern critique."]} />
-
 
 ## Key Terms
 

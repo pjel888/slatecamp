@@ -6,6 +6,10 @@ Identify the defining characteristics of Brutalism — exposed béton brut concr
 ## Core Concept
 **Brutalism** developed in Britain and spread globally in the 1950s–70s as modernism's most uncompromising phase. The term derives from the French **béton brut** (raw concrete), which defines the movement's visual and ethical character: concrete left exposed after formwork removal, showing the imprint of wooden shuttering, aggregate texture, and construction honesty. British architectural critic **Reyner Banham** codified the movement in his 1955 essay "The New Brutalism" (published in The Architectural Review) and later expanded this analysis in his 1966 book *The New Brutalism: Ethic or Aesthetic?*
 
+
+<ArticleMedia id="media-hist-008-05-core-concept" layout="single" type="image" status="placeholder" alt="View of Unité d'Habitation (Marseille, 1947–1952, Le Corbusier), showing the raw exposed concrete (béton brut) surface, rough board-marked texture, and the large-scale pilotis elevating the housing block." caption="Unité d'Habitation — Le Corbusier's Béton Brut" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
+
 <Tip>Brutalism = béton brut (raw concrete) + massive sculptural forms + structural honesty + utopian social ambition. NOT mere concrete construction—it's a philosophical movement. Key projects: Barbican Estate, Habitat 67, Boston City Hall, National Theatre. Remember: Le Corbusier's Unité d'Habitation (1947–1952) preceded and inspired the movement.</Tip>
 
 Brutalists rejected the International Style's glass refinement in favor of massive, sculptural concrete forms. Rather than dematerializing the building through transparency, Brutalism emphasized weight, solidity, and the building's presence as an object. Large cantilevers, fortress-like massing, and bold structural expression dominated. The philosophy held that technology's raw power deserved honest expression without aestheticizing veneers. **Le Corbusier's Unité d'Habitation** (1947–1952, Marseille) preceded and inspired the movement; his invention of the term **béton brut** during its construction became foundational to Brutalism's ethical and material vocabulary. Banham himself acknowledged Le Corbusier's concrete work as a source of inspiration for the movement.
@@ -25,6 +29,10 @@ Brutalism's ethical dimension set it apart. Architects believed that honest expr
 By the 1980s, Brutalism fell from favor. Concrete deteriorated visibly; maintenance proved expensive; the style's heaviness clashed with postmodern irony. Only in recent years has Brutalism's formal power and social ambition been reassessed and celebrated.
 
 <Warn>Critical: Don't confuse Brutalism with mere concrete construction. Brutalism is a philosophical movement prioritizing structural honesty, material expression, and often utopian urban intention. Also: Kahn's refined approach (Kimbell Art Museum with beautiful proportion and light) differs from Chamberlin/Powell's austere fortress aesthetic (Barbican) and Lasdun's topographical strategy (National Theatre). All are Brutalist but with distinct philosophies. Brutalism is not merely residential—it shaped civic, cultural, and institutional architecture.</Warn>
+
+
+<ArticleMedia id="media-hist-008-05-core-concept" layout="single" type="image" status="placeholder" alt="View of Boston City Hall (1963–1968, Kallmann McKinnell & Knowles), showing the massive sculptural concrete forms, cantilevered upper floors, expressed structural grid, and the raw materiality of béton brut." caption="Boston City Hall — Brutalist Civic Monument" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
 
 ## Key Facts and Testable Items
 
@@ -61,6 +69,8 @@ By the 1980s, Brutalism fell from favor. Concrete deteriorated visibly; maintena
 - **Monolith**: A massive, unified sculptural form; Brutalist towers often appear as monolithic presences.
 - **Prefabrication**: Manufacturing building components off-site for assembly; central to **Habitat 67's** efficiency and repeatability.
 - **Utopian urbanism**: Architectural design pursuing idealized, improved social conditions through form and planning.
+
+<ArticleMedia id="media-hist-008-05-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Timeline of Brutalism (1950s–1970s) showing the evolution from Le Corbusier's Unité d'Habitation (1947–1952) through the Smithsons' Hunstanton School, the Barbican Centre, and Boston City Hall, with the signature béton brut aesthetic.\" caption=\"Brutalism — Timeline of Key Works\" suggestedAsset=\"Timeline diagram\" placementIntent=\"Timeline diagram for architectural period\" />
 
 ## Related Articles
 

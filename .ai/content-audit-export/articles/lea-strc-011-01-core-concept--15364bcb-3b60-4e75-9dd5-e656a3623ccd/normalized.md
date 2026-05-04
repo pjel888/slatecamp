@@ -12,7 +12,7 @@ By the end of this article, you will be able to:
 
 ---
 ## Core Concept
-<ArticleMedia id="media-lea-strc-011-01-core-concept" a type="image" caption="Pile Types — End-Bearing vs Friction, Driven vs Bored" description="Cross-section diagram comparing pile types: (1) End-bearing pile — transfers load through tip to competent bearing stratum (rock/dense sand); (2) Friction pile — transfers load through skin friction along shaft surface; (3) Driven piles — precast concrete, steel H-pile, pipe pile; (4) Bored/drilled piles — cast-in-place with bell or straight shaft. Load transfer mechanism arrows and soil profile layers shown." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-strc-011-01-core-concept" type="image" caption="Pile Types — End-Bearing vs Friction, Driven vs Bored" alt="Cross-section diagram comparing pile types: (1) End-bearing pile — transfers load through tip to competent bearing stratum (rock/dense sand); (2) Friction pile — transfers load through skin friction along shaft surface; (3) Driven piles — precast concrete, steel H-pile, pipe pile; (4) Bored/drilled piles — cast-in-place with bell or straight shaft. Load transfer mechanism arrows and soil profile layers shown." suggestedAsset="Diagram or reference image" status="placeholder" />
 A pile is a slender structural element driven or drilled into soil to transfer loads from a structure to deeper, more competent strata. Piles are classified by two criteria: _load transfer mechanism_ and _installation method_.
 
 **Load Transfer Mechanism:**

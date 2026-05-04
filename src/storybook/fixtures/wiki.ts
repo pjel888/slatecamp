@@ -82,14 +82,17 @@ export const wikiSourcesFixture: WikiArticleSource[] = [
 
 export const wikiRelatedTopicsFixture = [
   {
+    articleId: 'article-means-of-egress',
     slug: 'means-of-egress-basics',
     title: 'Means of Egress Basics',
   },
   {
+    articleId: 'article-travel-distance',
     slug: 'travel-distance-and-dead-ends',
     title: 'Travel Distance and Dead Ends',
   },
   {
+    articleId: 'article-fire-rated-corridor',
     slug: 'fire-rated-corridor-enclosures',
     title: 'Fire-Rated Corridor Enclosures',
   },
@@ -352,6 +355,7 @@ export const wikiReferenceArticleFixture = {
 export const wikiSearchResultsFixture = [
   {
     id: 'storybook-search-1',
+    article_id: 'storybook-article',
     title: wikiArticleHeroFixture.title,
     slug: wikiHeaderFixture.articleSlug,
     content_snippet:
@@ -359,6 +363,7 @@ export const wikiSearchResultsFixture = [
   },
   {
     id: 'storybook-search-2',
+    article_id: 'article-travel-distance',
     title: 'Travel Distance and Dead Ends',
     slug: 'travel-distance-and-dead-ends',
     content_snippet:
@@ -366,6 +371,7 @@ export const wikiSearchResultsFixture = [
   },
   {
     id: 'storybook-search-3',
+    article_id: 'article-means-of-egress',
     title: 'Means of Egress Basics',
     slug: 'means-of-egress-basics',
     content_snippet:

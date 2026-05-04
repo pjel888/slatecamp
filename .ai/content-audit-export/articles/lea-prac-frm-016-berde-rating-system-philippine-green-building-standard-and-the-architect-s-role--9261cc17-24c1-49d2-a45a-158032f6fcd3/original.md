@@ -1,6 +1,5 @@
 ## BERDE Rating System—Philippine Green Building Standard and the Architect's Role
 
-
 ## Learning Goal
 
 After studying this article, you should be able to:
@@ -9,8 +8,6 @@ After studying this article, you should be able to:
 - Explain the Philippine Green Building Standards and the architect's role.
 - Identify the certification process and rating levels.
 - Distinguish BERDE from other green building rating systems (LEED, EDGE).
-
-
 
 ### What is BERDE and Its Purpose
 
@@ -64,17 +61,17 @@ Many institutional clients (schools, government facilities) are now prioritizing
 Legal Basis: BERDE (Building for Ecologically Responsive Design Excellence), developed by PhilGBC. Referenced in the Philippine Green Building Code (PD 1096 reference standard).
 </LawCallout>
 
-
 <Warn />
 
-
 <ExamTip />
-
 
 <Tip />
 
 ---
 
+
+
+<ArticleMedia type="image" caption="BERDE Rating System — Credit Categories and Certification Levels" description="Radial diagram of BERDE Green Building Rating System showing five credit categories: Energy Efficiency, Water Efficiency, Materials & Waste, Indoor Environmental Quality, Land Use & Ecology. Center shows four certification levels: BERDE 1-Star (30-40%), 2-Star (41-50%), 3-Star (51-60%), 4-Star (61%+). Architect's role in each credit category noted." />
 ## Related Articles
 
 - [Sole Proprietorship](lea-prac-frm-001)

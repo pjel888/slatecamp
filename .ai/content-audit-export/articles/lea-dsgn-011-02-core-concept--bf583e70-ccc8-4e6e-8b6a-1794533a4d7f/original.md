@@ -5,7 +5,6 @@ Read and produce elevations and sections using orthographic projection, label el
 
 Elevations and sections are orthographic projections that show height, depth, and interior spatial relationships—essential for communicating vertical design intent on drawings. The LEA expects you to read, interpret, and produce these views according to NBC standards.
 
-
 ## Core Concept
 
 An **elevation** is a two-dimensional orthographic view of a building's exterior (or interior wall) projected onto a vertical plane perpendicular to the facade. It shows width and height but not depth. Elevations are labeled by direction: Front Elevation, Rear Elevation, East Elevation, or West Elevation. Each elevation communicates the building's vertical profile, including finish floor levels, roof pitch, fenestration patterns, and material changes.
@@ -24,6 +23,7 @@ In exam scenarios, the LEA tests whether candidates can:
 2. Identify non-compliance errors (e.g., floor-to-floor ≠ 3.0 m, roof heights blocking sight lines)
 3. Determine interior headroom requirements (minimum 2.4 m finished ceiling height per NBC for habitable spaces)
 4. Relate elevations to floor plans (confirming fenestration alignment, structural grid consistency)
+<ArticleMedia id="media-lea-dsgn-011-02-core-concept" a type="image" caption="Elevation and Section Drawing — Orthographic Projection Standards" description="Side-by-side comparison of building elevation (labeled by orientation, finish materials) and building section (showing finish floor levels, vertical dimensions, section cut reference on plan). Standard notation for materials, finishes, and levels." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
@@ -62,8 +62,8 @@ A section shows a stairwell with headroom of 1.9 m. The candidate must identify 
 **Memory aid:** "3-2-4 rule" — Floor-to-floor=**3.0 m** (NBC standard), finished ceiling height≥**2.4 m** (habitable space), stairwell headroom≥**2.0 m** (accessibility). Always verify FFLs in sections before calculating buildable floor area or checking code compliance.
 </Tip>
 
-
 **Exam Tip:** Elevations must show finish floor elevations (FFL), finished ground line (FGL), roof ridge/gable heights, and material indications. Sections must show hidden elements (footings, beams above cut plane).
+<ArticleMedia id="media-lea-dsgn-011-02-core-concept" a type="image" caption="Elevation and Section Graphics — Line Weights, Hatching, and Material Notation" description="Annotated building elevation and section showing: line weight hierarchy (profile 0.7mm, intermediate 0.35mm, hatching 0.18mm), standard material hatch patterns (concrete, masonry, wood, steel), finish floor level (FFL) indicators, section cut lines, and dimension strings. Key elevation symbols and material callouts labeled." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Cross-References
 

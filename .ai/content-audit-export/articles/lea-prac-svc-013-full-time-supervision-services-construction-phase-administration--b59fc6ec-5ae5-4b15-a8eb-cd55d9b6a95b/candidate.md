@@ -4,7 +4,7 @@ After reading this article, you should understand the key concepts tested in the
 
 Full-Time Supervision Services establish the architect's presence throughout construction implementation, ensuring design intent realization and quality control. SPP Doc 204-A defines the scope, organization, compensation, and legal responsibilities of supervision services. This service category evolved from the historical clerk-of-works role, adapting to modern project complexity and regulatory requirements. Full-time supervision represents a distinct professional offering separate from design services.
 
-<ArticleMedia id="media-lea-prac-svc-013-full-time-supervision-s" a type="image" caption="Full-Time Supervision Process Flow — Site Activities and Quality Control" description="Process flow diagram showing the construction supervision workflow: site mobilization → daily reporting → quality control inspections → material testing → work evaluation → non-conformance identification → corrective action recommendations → payment certification → project closeout. Based on SPP Doc 204-A." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-prac-svc-013-full-time-supervision-s" type="image" caption="Full-Time Supervision Process Flow — Site Activities and Quality Control" alt="Process flow diagram showing the construction supervision workflow: site mobilization → daily reporting → quality control inspections → material testing → work evaluation → non-conformance identification → corrective action recommendations → payment certification → project closeout. Based on SPP Doc 204-A." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ### Historical Evolution and Rationale
 
@@ -34,13 +34,22 @@ Architects in supervisory roles exercise authority over specified construction m
 
 Full-time supervisors assume responsibility for identifying non-conformance and recommending corrective action. Documentation of deficiencies protects both architect and client interests. Standard of care requires vigilant monitoring, prompt issue identification, and professional judgment in technical assessments. Supervisors must balance owner interests against contractor capabilities and construction realities.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="KeyValues" status="preserved"]
+<KeyValues items={[{"value": "15%", "label": "Schematic Design"}, {"value": "20%", "label": "Design Development"}, {"value": "50%", "label": "Contract Docs"}, {"value": "5%", "label": "Bidding Assist"}, {"value": "10%", "label": "Constr. Admin."}]} />
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="ProcessFlow" status="preserved"]
+<ProcessFlow>
+<ol>
+  <li><strong>Project Definition</strong> — Problem identification</li>
+  <li><strong>Schematic Design</strong> — 15% fee; conceptual design</li>
+  <li><strong>Design Development</strong> — 20% fee; detailed design</li>
+  <li><strong>Contract Documents</strong> — 50% fee; construction docs</li>
+  <li><strong>Bidding/Negotiation</strong> — 5% fee; contractor selection</li>
+  <li><strong>Construction Admin.</strong> — 10% fee; site visits</li>
+</ol>
+</ProcessFlow>
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
+<LawCallout code="irr" section="SPP Documents" title="Professional Practice Framework">SPP Documents 201–209 establish standards for architectural services scope, fee structures, and professional responsibilities under RA 9266.</LawCallout>
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
+<ExamTip>Fee distribution: SD=15%, DD=20%, CD=50%, BA=5%, CA=10%. Contract Documents (50%) is the largest phase. Cumulative: 15%→35%→85%→90%→100%.</ExamTip>
 
 ---
 

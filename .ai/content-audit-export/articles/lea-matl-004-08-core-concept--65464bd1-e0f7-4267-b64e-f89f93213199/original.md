@@ -6,6 +6,13 @@ Identify formwork types (conventional timber, prefabricated panels, slip forms, 
 
 Pre-construction planning ensures site readiness, regulatory compliance, and contractor capability. Post-construction verification confirms that the completed building meets design, code, and contractual requirements before occupancy.
 
+
+<ArticleMedia id="media-formwork-type-illustrations" layout="single" type="image" status="placeholder"
+  alt="Cross-section diagrams of conventional timber formwork, prefabricated panel formwork, slip form, climbing form, and tunnel form systems"
+  caption="Future diagram: formwork system types — timber, panel, slip, climbing, and tunnel forms"
+  suggestedAsset="Cross-section and isometric illustrations of each formwork type"
+  placementIntent="Visualizes how each formwork type supports fresh concrete" />
+
 ### Pre-Construction Phase
 
 _Site Investigation and Soil Testing_ — Geotechnical investigation (boring, laboratory testing) determines soil bearing capacity, groundwater elevation, and foundation design requirements. Proper investigation prevents foundation failure, excessive settlement, and costly rework. NSCP 2015 Chapter 18 (Soils and Foundations) requires foundation design to be based on site-specific soil properties. Geotechnical investigation is required when soil conditions are uncertain or when design complexity warrants site-specific data.
@@ -16,6 +23,12 @@ _Demolition and Site Preparation_ — Existing structures are demolished per con
 
 _Temporary Facilities_ — Site offices, worker camps, storage yards, safety railings, and scaffolding are installed. Site access and traffic control are planned to minimize public disruption. Temporary utilities (electrical, water) support construction operations. Temporary facility design and worker safety are governed by DOLE Construction Safety Standards and occupational safety regulations, not NSCP 2015. NSCP 2015 addresses structural design loads and seismic requirements.
 
+
+<ArticleMedia id="media-formwork-design-diagram" layout="single" type="image" status="placeholder"
+  alt="Cross-section of formwork design showing form facing, studs, wales, ties, and bracing with lateral pressure distribution arrows"
+  caption="Future diagram: formwork design cross-section — facing, studs, wales, ties, and bracing"
+  suggestedAsset="Cross-section detail of formwork assembly with pressure distribution"
+  placementIntent="Visualizes formwork component design and lateral pressure management" />
 ### Post-Construction Phase
 
 _Punch List_ — The contractor systematically identifies incomplete or non-conforming work items during the final inspection with the owner/engineer and prepares a punch list. Contractor corrects all items to the owner's satisfaction. Punch list closure is a contractual requirement before final payment.

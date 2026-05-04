@@ -4,12 +4,16 @@ _Aligned with RA 7277, RA 9442, RA 10754, and your BP 344 / PD 1096 files.[file:
 
 ## Learning Goal
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="LawCallout" status="preserved"]
+<LawCallout code="ra9442" section="Section 4 - Incentives">
+BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all public buildings.
+</LawCallout>
 Extracted summary:
 - Props: (none)
 - Text: BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all p...
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+<LawCallout code="ra9442" section="Section 3 - PWD Privileges">
+BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all public buildings.
+</LawCallout>
 Extracted summary:
 - Props: (none)
 - Text: BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all p...

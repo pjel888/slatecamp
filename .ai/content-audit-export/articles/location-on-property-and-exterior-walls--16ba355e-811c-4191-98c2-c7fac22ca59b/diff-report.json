@@ -1,49 +1,38 @@
 {
   "article_id": "16ba355e-811c-4191-98c2-c7fac22ca59b",
   "slug": "location-on-property-and-exterior-walls",
-  "generated_at": "2026-05-04T00:06:38.054Z",
-  "old_hash": "sha256:611785463534af91de90754e4cd0cd169045f747fe02a8afaef575f9d41c999b",
-  "new_hash": "sha256:bd35793761eb26ec20fca06a6ce6dd4605c0076ec439e0942005e88465bb518f",
-  "original_hash": "sha256:611785463534af91de90754e4cd0cd169045f747fe02a8afaef575f9d41c999b",
+  "generated_at": "2026-05-04T02:17:19.644Z",
+  "old_hash": "sha256:03f294c29a8c79ea2f9f0a2a94037e27bc1c8b8cbca03f1f52be32c2c92dcac4",
+  "new_hash": "sha256:41a05eaa3ec9417575975b62a2466f95ae23e5137c8997f706cd7f68fb40f9b7",
+  "original_hash": "sha256:03f294c29a8c79ea2f9f0a2a94037e27bc1c8b8cbca03f1f52be32c2c92dcac4",
   "normalized_hash": "sha256:bd35793761eb26ec20fca06a6ce6dd4605c0076ec439e0942005e88465bb518f",
-  "candidate_hash": "sha256:bd35793761eb26ec20fca06a6ce6dd4605c0076ec439e0942005e88465bb518f",
+  "candidate_hash": "sha256:41a05eaa3ec9417575975b62a2466f95ae23e5137c8997f706cd7f68fb40f9b7",
   "changed": true,
-  "changed_line_count": 197,
-  "inserted_line_count": 4,
+  "changed_line_count": 23,
+  "inserted_line_count": 6,
   "deleted_line_count": 0,
   "ui_blocks_original_count": 6,
-  "ui_blocks_candidate_count": 0,
-  "ui_blocks_changed_count": 6,
+  "ui_blocks_candidate_count": 6,
+  "ui_blocks_changed_count": 0,
   "ui_blocks_count": 6,
-  "unresolved_placeholders_count": 1,
-  "preserved_blocks_count": 0,
+  "unresolved_placeholders_count": 0,
+  "preserved_blocks_count": 6,
   "changed_text_summary": {
-    "changed": 197,
-    "inserted": 4,
+    "changed": 23,
+    "inserted": 6,
     "deleted": 0,
-    "original_line_count": 289,
-    "candidate_line_count": 293
+    "original_line_count": 323,
+    "candidate_line_count": 329
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0001",
-      "ui_0002",
-      "ui_0003",
-      "ui_0004",
-      "ui_0005",
-      "ui_0006"
-    ],
-    "changed_count": 6
+    "missing_block_ids": [],
+    "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate contains unresolved UI block placeholders.",
-    "Candidate is missing 6 preserved UI block(s).",
-    "original.md hash does not match article metadata export hash."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 6 preserved UI block(s).; original.md hash does not match article metadata export hash."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

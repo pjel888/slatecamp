@@ -6,6 +6,13 @@ Classify construction equipment (excavators, cranes, concrete pumps, compactors)
 
 Construction equipment delivers site materials, shapes terrain, lifts heavy loads, and consolidates materials. Proper equipment selection based on task, site constraints, and production rates optimizes construction schedules and reduces labor costs.
 
+
+<ArticleMedia id="media-construction-equipment-chart" layout="single" type="image" status="placeholder"
+  alt="Comparison chart of construction equipment — excavators, cranes, concrete pumps, compactors — with lifting capacity, reach, and application"
+  caption="Future chart: construction equipment types — capacity, reach, and site application"
+  suggestedAsset="Equipment comparison chart with silhouette illustrations"
+  placementIntent="Helps learners select appropriate equipment for construction tasks" />
+
 ### Earthmoving Equipment
 
 _Backhoe Loader_ — Versatile machine with rear bucket (excavation) and front loader bucket. Typical bucket: 0.5–1.0 m³. Used for foundation excavation, backfilling, light grading, material loading. Power: 50–100 kW. Common in Philippine small-to-medium projects due to cost and flexibility.
@@ -18,6 +25,12 @@ _Motor Grader_ — Wheeled machine with central blade for fine grading and surfa
 
 _Wheel Loader_ — Front-bucket loader on wheels. Bucket: 2–5 m³. Used for material loading, stockpile management, horizontal material movement. Power: 100–200 kW. Fast horizontal movement; not ideal for vertical lifting.
 
+
+<ArticleMedia id="media-equipment-application-chart" layout="single" type="image" status="placeholder"
+  alt="Comparison chart of construction equipment types with excavation volume, lifting capacity, reach, and site application suitability"
+  caption="Future chart: construction equipment comparison — capacity, reach, and site application"
+  suggestedAsset="Equipment selection matrix or comparison infographic"
+  placementIntent="Helps learners match equipment types to construction tasks" />
 ### Lifting Equipment
 
 _Tower Crane_ — Vertical mast-mounted crane, stationary during project. Capacity: 10–100 tonnes. Reach: up to 60 m horizontal, 200+ m height. Standard for high-rise buildings. Loading capacity depends on boom length and hook height. Essential for high-rise residential/commercial in Philippine cities. Setup/dismantling: 1–2 weeks.

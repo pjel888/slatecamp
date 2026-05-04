@@ -76,6 +76,8 @@ Aalto also pioneered the concept of the **designer's total output**. Like the Ba
 
 **Total Design**: Commitment to unified design philosophy across all scales and disciplines—buildings, furniture, textiles, ceramics—ensuring consistent aesthetic and functional principles throughout all output.
 
+<ArticleMedia id="media-hist-008-03d-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparison of Alvar Aalto's humanist modernism across Paimio Sanatorium (functionalist, 1933), Villa Mairea (organic curves, natural materials, 1939), and Finlandia Hall (brick and timber, 1971)." caption="Alvar Aalto — Humanist Modernist Works" suggestedAsset="Style comparison illustration" placementIntent="Style comparison for architectural period" />
+
 ## Related Articles
 
 See also within Modern & Contemporary Architecture: **lea-hist-008-01-core-concept**, **lea-hist-008-02-core-concept**, **lea-hist-008-03a-core-concept**, **lea-hist-008-03b-core-concept**.

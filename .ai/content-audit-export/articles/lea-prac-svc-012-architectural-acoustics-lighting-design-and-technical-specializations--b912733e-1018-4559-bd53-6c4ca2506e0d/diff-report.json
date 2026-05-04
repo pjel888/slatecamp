@@ -1,46 +1,38 @@
 {
   "article_id": "b912733e-1018-4559-bd53-6c4ca2506e0d",
   "slug": "lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations",
-  "generated_at": "2026-05-04T00:06:06.858Z",
-  "old_hash": "sha256:675e16d3c080779af0d7906f9d977969b0a52a6075365f6b73d6a84115e14192",
-  "new_hash": "sha256:25ad4661a1caba7a2b55a0c2bfc2292f124fd4ac18ba9d81f7b57a64c8907998",
-  "original_hash": "sha256:675e16d3c080779af0d7906f9d977969b0a52a6075365f6b73d6a84115e14192",
+  "generated_at": "2026-05-04T02:16:36.467Z",
+  "old_hash": "sha256:ac5813a8ff7e08021f49fa13953ec05cebaafacea21a8d6207d84060e9e7113d",
+  "new_hash": "sha256:ac5813a8ff7e08021f49fa13953ec05cebaafacea21a8d6207d84060e9e7113d",
+  "original_hash": "sha256:ac5813a8ff7e08021f49fa13953ec05cebaafacea21a8d6207d84060e9e7113d",
   "normalized_hash": "sha256:25ad4661a1caba7a2b55a0c2bfc2292f124fd4ac18ba9d81f7b57a64c8907998",
-  "candidate_hash": "sha256:25ad4661a1caba7a2b55a0c2bfc2292f124fd4ac18ba9d81f7b57a64c8907998",
-  "changed": true,
-  "changed_line_count": 27,
+  "candidate_hash": "sha256:ac5813a8ff7e08021f49fa13953ec05cebaafacea21a8d6207d84060e9e7113d",
+  "changed": false,
+  "changed_line_count": 0,
   "inserted_line_count": 0,
-  "deleted_line_count": 4,
+  "deleted_line_count": 0,
   "ui_blocks_original_count": 4,
-  "ui_blocks_candidate_count": 0,
-  "ui_blocks_changed_count": 4,
+  "ui_blocks_candidate_count": 4,
+  "ui_blocks_changed_count": 0,
   "ui_blocks_count": 4,
-  "unresolved_placeholders_count": 1,
-  "preserved_blocks_count": 0,
+  "unresolved_placeholders_count": 0,
+  "preserved_blocks_count": 4,
   "changed_text_summary": {
-    "changed": 27,
+    "changed": 0,
     "inserted": 0,
-    "deleted": 4,
-    "original_line_count": 70,
-    "candidate_line_count": 66
+    "deleted": 0,
+    "original_line_count": 73,
+    "candidate_line_count": 73
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0001",
-      "ui_0002",
-      "ui_0003",
-      "ui_0004"
-    ],
-    "changed_count": 4
+    "missing_block_ids": [],
+    "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate contains unresolved UI block placeholders.",
-    "Candidate is missing 4 preserved UI block(s)."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 4 preserved UI block(s)."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

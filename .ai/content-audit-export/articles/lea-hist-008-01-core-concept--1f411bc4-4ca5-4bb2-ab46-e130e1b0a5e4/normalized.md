@@ -65,6 +65,8 @@ The 19th century closed with architecture poised between past and future: orname
 
 **Ornament**: Decorative elements applied to a building surface; a target of criticism by reformers who advocated honest, functional design.
 
+<ArticleMedia id="media-hist-008-01-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Timeline of 19th-century architectural movements (1800–1900) from Neoclassicism and Gothic Revival through Arts and Crafts, the Chicago School, and Art Nouveau, showing the evolution from revivalism toward modernist principles." caption="19th Century Architecture — Timeline of Movements" suggestedAsset="Timeline diagram" placementIntent="Timeline diagram for architectural period" />
+
 ## Related Articles
 
 See also within Modern & Contemporary Architecture: **lea-hist-008-02-core-concept**, **lea-hist-008-03a-core-concept**, **lea-hist-008-03b-core-concept**, **lea-hist-008-03c-core-concept**.

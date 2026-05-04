@@ -1,33 +1,32 @@
 # Content Diff Report: lea-prac-frm-012-ra-9184-government-procurement-reform-act-architecture-relevant-provisions
 
-Generated: 2026-05-04T00:05:57.289Z
+Generated: 2026-05-04T02:16:28.159Z
 Article ID: 8e546a58-36c2-4cd3-8340-2cb9d1189b13
-Changed: true
-Safe to push locally: false
+Changed: false
+Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:066ade00f32f82afdc0703545473a0abdb508b596a2273b3d28c9c3f93ebe3ca`
+- Original: `sha256:34d44702bf745244f9f2dfab1b6548e0db0af0c551ceab57272ddc802769343e`
 - Normalized: `sha256:b359bb75108385c1b02d4aba8a78d13d0bd4e7c19e7ff762ac7c47c72464cdd0`
-- Candidate: `sha256:b359bb75108385c1b02d4aba8a78d13d0bd4e7c19e7ff762ac7c47c72464cdd0`
+- Candidate: `sha256:34d44702bf745244f9f2dfab1b6548e0db0af0c551ceab57272ddc802769343e`
 
 ## Line summary
 
-- Changed lines: 49
+- Changed lines: 0
 - Inserted lines: 0
-- Deleted lines: 4
+- Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 5
-- UI blocks preserved: 0
-- UI blocks changed/missing: 5
-- Unresolved placeholders: 1
+- UI blocks preserved: 5
+- UI blocks changed/missing: 0
+- Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate contains unresolved UI block placeholders.
-- Candidate is missing 5 preserved UI block(s).
+- None
 
 ## Warnings
 

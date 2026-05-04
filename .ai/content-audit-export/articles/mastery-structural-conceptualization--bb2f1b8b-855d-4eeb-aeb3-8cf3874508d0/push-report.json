@@ -1,26 +1,21 @@
 {
-  "attempted_at": "2026-05-04T00:06:01.765Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:16:31.984Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "candidate.md matches original.md; refusing no-op apply."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "bb2f1b8b-855d-4eeb-aeb3-8cf3874508d0",
   "slug": "mastery-structural-conceptualization",
   "preparation_actions": [
     "auto_generated_diff"
   ],
-  "remote_hash_before": "sha256:57e01803c37ab3e28d56f70bd9c9082d9a012b80e8480f1cfbd18a99fed0ee13",
-  "original_hash": "sha256:57e01803c37ab3e28d56f70bd9c9082d9a012b80e8480f1cfbd18a99fed0ee13",
-  "candidate_hash": "sha256:0ea46ff2518d7181cc808aca2cb3d2cf8bf855d5207ddec414fe3441b7409144",
+  "remote_hash_before": "sha256:b6a50706e51ece266a7754a3227d5d0d8cee4be41e09ed901255ce135fea5507",
+  "original_hash": "sha256:b6a50706e51ece266a7754a3227d5d0d8cee4be41e09ed901255ce135fea5507",
+  "candidate_hash": "sha256:b6a50706e51ece266a7754a3227d5d0d8cee4be41e09ed901255ce135fea5507",
   "stale_check_passed": true,
-  "remote_updated_at_before": "2026-05-03T13:50:05.730609+00:00"
+  "remote_updated_at_before": "2026-05-04T01:59:28.458858+00:00"
 }

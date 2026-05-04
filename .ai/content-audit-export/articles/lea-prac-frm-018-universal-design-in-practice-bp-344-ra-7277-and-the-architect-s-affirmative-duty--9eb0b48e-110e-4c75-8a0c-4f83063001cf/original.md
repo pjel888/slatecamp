@@ -11,7 +11,6 @@ After studying this article, you should be able to:
 
 ---
 
-
 <LawCallout code="bp344" section="Section 2 - Universal Design">
 Batas Pambansa Bilang 344 (Accessibility Law) and Republic Act 7277 (Magna Carta for Disabled Persons) establish the legal framework for accessible built environments in the Philippines. These laws create an affirmative duty for architects to design buildings that enable full participation of persons with disabilities (PWDs). Universal Design -- designing for all people regardless of ability -- is both the ethical and legal approach. Compliance is mandatory for all new construction and significant renovations, not optional.
 </LawCallout>
@@ -106,6 +105,8 @@ BP 344 (2024 Revised IRR) mandates a **1:20 maximum ramp slope** for accessible 
 </LawCallout>
 
 
+
+<ArticleMedia type="image" caption="Universal Design Compliance — BP 344, RA 7277, and Accessibility Standards Matrix" description="Comparison matrix of accessibility regulations: BP 344 (Building Accessibility, dimensional standards), RA 7277 (Magna Carta for PWDs, rights-based), RA 11205 (Universal Design, conceptual framework). Each column shows: scope, dimensional requirements (ramp slope, door width, toilet clearances), enforcement mechanism, and architect's compliance duty. Overlap areas highlighted." />
 ## Related Articles
 
 - [Sole Proprietorship](lea-prac-frm-001)

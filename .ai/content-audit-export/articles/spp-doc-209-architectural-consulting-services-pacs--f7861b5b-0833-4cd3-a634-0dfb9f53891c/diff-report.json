@@ -1,55 +1,38 @@
 {
   "article_id": "f7861b5b-0833-4cd3-a634-0dfb9f53891c",
   "slug": "spp-doc-209-architectural-consulting-services-pacs",
-  "generated_at": "2026-05-04T00:06:59.012Z",
+  "generated_at": "2026-05-04T02:17:46.161Z",
   "old_hash": "sha256:d469f4ed1a8c7cf431b92eaefb9a8b4c83492c59b9d32860cde7f9efc04da744",
-  "new_hash": "sha256:304d3c58eb7c32738e87d8ae599878ff27b58154e42f6730fba5701a0ac44983",
+  "new_hash": "sha256:bb3687068b5a5369f5f6dcfedafa5a6b0d09b9a6fecc87406ebf75f81e84bc0c",
   "original_hash": "sha256:d469f4ed1a8c7cf431b92eaefb9a8b4c83492c59b9d32860cde7f9efc04da744",
   "normalized_hash": "sha256:304d3c58eb7c32738e87d8ae599878ff27b58154e42f6730fba5701a0ac44983",
-  "candidate_hash": "sha256:304d3c58eb7c32738e87d8ae599878ff27b58154e42f6730fba5701a0ac44983",
+  "candidate_hash": "sha256:bb3687068b5a5369f5f6dcfedafa5a6b0d09b9a6fecc87406ebf75f81e84bc0c",
   "changed": true,
-  "changed_line_count": 425,
+  "changed_line_count": 399,
   "inserted_line_count": 0,
-  "deleted_line_count": 101,
+  "deleted_line_count": 5,
   "ui_blocks_original_count": 13,
-  "ui_blocks_candidate_count": 0,
-  "ui_blocks_changed_count": 13,
+  "ui_blocks_candidate_count": 13,
+  "ui_blocks_changed_count": 0,
   "ui_blocks_count": 13,
-  "unresolved_placeholders_count": 1,
-  "preserved_blocks_count": 0,
+  "unresolved_placeholders_count": 0,
+  "preserved_blocks_count": 13,
   "changed_text_summary": {
-    "changed": 425,
+    "changed": 399,
     "inserted": 0,
-    "deleted": 101,
+    "deleted": 5,
     "original_line_count": 500,
-    "candidate_line_count": 399
+    "candidate_line_count": 495
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0001",
-      "ui_0002",
-      "ui_0003",
-      "ui_0004",
-      "ui_0005",
-      "ui_0006",
-      "ui_0007",
-      "ui_0008",
-      "ui_0009",
-      "ui_0010",
-      "ui_0011",
-      "ui_0012",
-      "ui_0013"
-    ],
-    "changed_count": 13
+    "missing_block_ids": [],
+    "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate contains unresolved UI block placeholders.",
-    "Candidate is missing 13 preserved UI block(s)."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 13 preserved UI block(s)."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

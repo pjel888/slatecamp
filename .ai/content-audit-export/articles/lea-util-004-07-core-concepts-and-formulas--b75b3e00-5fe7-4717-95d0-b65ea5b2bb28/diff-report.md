@@ -1,33 +1,32 @@
 # Content Diff Report: lea-util-004-07-core-concepts-and-formulas
 
-Generated: 2026-05-04T00:06:31.637Z
+Generated: 2026-05-04T02:17:10.432Z
 Article ID: b75b3e00-5fe7-4717-95d0-b65ea5b2bb28
-Changed: true
-Safe to push locally: false
+Changed: false
+Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:e545fe69e770115e5b305ad63d84beec491ec80c784c7fd042d2794341784282`
+- Original: `sha256:0d2141c807d67618b7f3c33d63849781f43bee8c91c6adf9b704a2367abbb3cb`
 - Normalized: `sha256:8edae1bb508889ffc19d6583b7bf379993efed2ba537cad61629c884a4db23ed`
-- Candidate: `sha256:8edae1bb508889ffc19d6583b7bf379993efed2ba537cad61629c884a4db23ed`
+- Candidate: `sha256:0d2141c807d67618b7f3c33d63849781f43bee8c91c6adf9b704a2367abbb3cb`
 
 ## Line summary
 
-- Changed lines: 205
-- Inserted lines: 2
+- Changed lines: 0
+- Inserted lines: 0
 - Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 8
-- UI blocks preserved: 0
-- UI blocks changed/missing: 8
-- Unresolved placeholders: 1
+- UI blocks preserved: 8
+- UI blocks changed/missing: 0
+- Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate contains unresolved UI block placeholders.
-- Candidate is missing 8 preserved UI block(s).
+- None
 
 ## Warnings
 

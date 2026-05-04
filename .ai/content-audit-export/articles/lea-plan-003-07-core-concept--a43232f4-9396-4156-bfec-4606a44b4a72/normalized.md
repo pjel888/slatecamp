@@ -41,7 +41,7 @@ Special policies apply to IP relocation: alternative sites must be within ancest
 **Urban Worker Housing:** Special programs exist for workers in special economic zones, export processing zones, and large urban employment centers. These programs facilitate housing access for workers with formal employment but limited capital. Financing typically involves employer subsidies or partnerships.
 
 **Internally Displaced Persons (IDPs) Housing:** Conflict-related and disaster-related displacement requires temporary and permanent housing solutions. IDPs differ from relocation residents in legal status and rights; international humanitarian law frameworks apply alongside Philippine law.
-<ArticleMedia id="media-lea-plan-003-07-core-concept" a type="image" caption="Specialized Housing Programs — IP, PWD, Senior, Disaster-Affected" description="Diagram of specialized housing programs: Indigenous Peoples (IPRA, ancestral domain), Persons with Disabilities (PWD Act, universal design), Senior Citizens (SC Act, age-friendly), Disaster-Affected (emergency shelters), Economic Zone Workers (dormitories near industrial zones)." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-plan-003-07-core-concept" type="image" caption="Specialized Housing Programs — IP, PWD, Senior, Disaster-Affected" alt="Diagram of specialized housing programs: Indigenous Peoples (IPRA, ancestral domain), Persons with Disabilities (PWD Act, universal design), Senior Citizens (SC Act, age-friendly), Disaster-Affected (emergency shelters), Economic Zone Workers (dormitories near industrial zones)." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 

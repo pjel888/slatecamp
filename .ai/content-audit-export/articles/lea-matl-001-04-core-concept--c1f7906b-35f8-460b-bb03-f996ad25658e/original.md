@@ -10,6 +10,13 @@ Wood preservation involves applying protective chemicals through pressure treatm
 
 ## Preservative Types and Standards
 
+
+<ArticleMedia id="media-wood-preservation-process" layout="single" type="image" status="placeholder"
+  alt="Illustration of pressure treatment cycle showing vacuum, pressure, and preservative penetration phases"
+  caption="Future diagram: pressure treatment process — vacuum and pressure cycle"
+  suggestedAsset="Process flow diagram showing the pressure treatment cycle"
+  placementIntent="Visualizes the industrial wood preservation process described in the article" />
+
 ### Pressure-Treated Lumber: Overview
 
 Pressure treatment uses a vacuum and pressure cycle to force preservative deep into the wood. The wood is placed in a sealed cylinder, the air is extracted (vacuum phase), and the preservative is pumped in under 100—200 psi (high-pressure phase). This achieves deep penetration and long service life, superior to surface treatment.
@@ -68,6 +75,12 @@ The wood is immersed in preservative solution for a brief period (minutes to hou
 
 ## Wood Drying Methods
 
+
+<ArticleMedia id="media-wood-drying-chart" layout="single" type="image" status="placeholder"
+  alt="Comparison of kiln drying and air drying methods showing moisture content reduction, duration, and wood quality outcomes"
+  caption="Future chart: wood drying methods comparison — kiln drying vs. air drying"
+  suggestedAsset="Comparison table or process diagram for wood drying methods"
+  placementIntent="Helps learners understand wood moisture management and its effect on preservation" />
 ### Kiln Drying
 
 Wood is dried in a heated chamber under controlled temperature and humidity. Kiln drying reduces moisture content to 12—15%, the optimal level for most construction and woodworking applications.

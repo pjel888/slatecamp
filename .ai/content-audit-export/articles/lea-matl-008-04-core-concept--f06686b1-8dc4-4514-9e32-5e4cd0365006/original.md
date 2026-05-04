@@ -14,6 +14,13 @@ Weatherstripping seals the gap between sash and frame, reducing air leakage and 
 
 AAMA/WDMA/CSA 101/I.S.2/A440 (NAFS) establishes performance grades based on structural strength and water resistance. Structural Resistance is measured by positive and negative wind pressure testing; Gold Label windows resist at least 94 mph wind pressure. Water Resistance is measured by resistance to water infiltration at 32 mph; windows must pass without water entering the building interior.
 
+
+<ArticleMedia id="media-expansion-joint-types" layout="single" type="image" status="placeholder"
+  alt="Comparison chart and cross-section diagrams of structural, thermal, seismic, and construction joints showing movement direction and treatment"
+  caption="Future diagram: expansion joint types — structural, thermal, seismic, and construction joints with movement indication"
+  suggestedAsset="Cross-section diagrams of each joint type with movement arrows"
+  placementIntent="Helps learners distinguish joint types by their movement accommodation function" />
+
 ## Key Provisions
 
 | Property | Value | Standard | LEA Relevance |
@@ -32,6 +39,12 @@ AAMA/WDMA/CSA 101/I.S.2/A440 (NAFS) establishes performance grades based on stru
 
 The Philippines experiences wind speeds exceeding 150 mph during Category 4-5 typhoons, particularly in coastal and northern regions. AAMA Gold Label windows (94 mph rating) are insufficient for high-wind zones; upgraded specifications or storm-resistant glazing and framing are necessary. Window hardware corrosion in salt spray and high humidity requires stainless steel or coated aluminum; standard painted steel corrodes rapidly. Casement and awning windows are preferable to sliding windows in the Philippines due to better rain shedding and easier cleaning from the interior. Friction stays are problematic in hot climates; in some cases, they weaken under sustained heat and fail to hold the window open. Weatherstripping durability is critical; vinyl and rubber deteriorate faster in tropical heat than in temperate climates and may require replacement every 5-7 years instead of 10-15 years. Many residential projects omit weatherstripping to reduce cost, leading to high air-conditioning loads and water infiltration during monsoons.
 
+
+<ArticleMedia id="media-joint-location-diagram" layout="single" type="image" status="placeholder"
+  alt="Building section diagram showing typical expansion joint locations in a structure: between wings, at changes in height, at building separations, and at regular intervals"
+  caption="Future diagram: expansion joint locations in building — typical placement at structural transitions"
+  suggestedAsset="Building section with expansion joint location callouts"
+  placementIntent="Shows where to place expansion joints in building design" />
 ## How It's Tested
 
 **Exam Pattern 1: Window Type Selection.** A residential project in a coastal typhoon zone requires windows that automatically shed rain and allow ventilation. What window type is most appropriate? Answer: Awning windows (hinge at top, swing outward at bottom, shedding rain).

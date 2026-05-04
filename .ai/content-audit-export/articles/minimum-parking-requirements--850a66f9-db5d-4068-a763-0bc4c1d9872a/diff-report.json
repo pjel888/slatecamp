@@ -1,57 +1,38 @@
 {
   "article_id": "850a66f9-db5d-4068-a763-0bc4c1d9872a",
   "slug": "minimum-parking-requirements",
-  "generated_at": "2026-05-04T00:06:16.031Z",
-  "old_hash": "sha256:e89ed4f6fa1a86bc3233b3fff2be184eaec6f9508f77d8b9e1c0797c6902718a",
-  "new_hash": "sha256:7e8d83f838a135c8ae056120923fb544898d8b7566f48391cb291379c634e409",
-  "original_hash": "sha256:e89ed4f6fa1a86bc3233b3fff2be184eaec6f9508f77d8b9e1c0797c6902718a",
-  "normalized_hash": "sha256:7e8d83f838a135c8ae056120923fb544898d8b7566f48391cb291379c634e409",
-  "candidate_hash": "sha256:7e8d83f838a135c8ae056120923fb544898d8b7566f48391cb291379c634e409",
+  "generated_at": "2026-05-04T02:16:46.662Z",
+  "old_hash": "sha256:7e8d83f838a135c8ae056120923fb544898d8b7566f48391cb291379c634e409",
+  "new_hash": "sha256:3302f5711708795537d67928495c42c6cfc27347f155a8f751b1c12bf2659818",
+  "original_hash": "sha256:7e8d83f838a135c8ae056120923fb544898d8b7566f48391cb291379c634e409",
+  "normalized_hash": "sha256:800c0442cbfb999037062df01013b53c6c2559698c3fe6e9aa8231893ee4482c",
+  "candidate_hash": "sha256:3302f5711708795537d67928495c42c6cfc27347f155a8f751b1c12bf2659818",
   "changed": true,
-  "changed_line_count": 485,
-  "inserted_line_count": 0,
-  "deleted_line_count": 102,
+  "changed_line_count": 489,
+  "inserted_line_count": 112,
+  "deleted_line_count": 0,
   "ui_blocks_original_count": 15,
-  "ui_blocks_candidate_count": 0,
-  "ui_blocks_changed_count": 15,
+  "ui_blocks_candidate_count": 15,
+  "ui_blocks_changed_count": 0,
   "ui_blocks_count": 15,
-  "unresolved_placeholders_count": 1,
-  "preserved_blocks_count": 0,
+  "unresolved_placeholders_count": 0,
+  "preserved_blocks_count": 15,
   "changed_text_summary": {
-    "changed": 485,
-    "inserted": 0,
-    "deleted": 102,
-    "original_line_count": 552,
-    "candidate_line_count": 450
+    "changed": 489,
+    "inserted": 112,
+    "deleted": 0,
+    "original_line_count": 450,
+    "candidate_line_count": 562
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0001",
-      "ui_0002",
-      "ui_0003",
-      "ui_0004",
-      "ui_0005",
-      "ui_0006",
-      "ui_0007",
-      "ui_0008",
-      "ui_0009",
-      "ui_0010",
-      "ui_0011",
-      "ui_0012",
-      "ui_0013",
-      "ui_0014",
-      "ui_0015"
-    ],
-    "changed_count": 15
+    "missing_block_ids": [],
+    "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate contains unresolved UI block placeholders.",
-    "Candidate is missing 15 preserved UI block(s)."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 15 preserved UI block(s)."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

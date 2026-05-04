@@ -55,17 +55,19 @@ _Pattern 3 — "Or Equal" Clause Drafting:_ The exam presents a proprietary spec
 
 _Pattern 4 — Risk Management:_ The exam describes a specification type in a failed project and asks which type would have prevented the dispute. Example: A performance specification for "high-strength concrete" without stating compressive strength led to 7-day test disagreement (2,400 psi vs. 3,500 psi). Better approach: _Prescriptive or reference standard specification_ stating "28-day cylinder strength per ASTM C39 of 28 MPa minimum."
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+<Tip>
+Memory aid: The five types form a spectrum from **rigid to flexible**. Prescriptive (most rigid) → Proprietary → Reference Standard → Performance → Descriptive (most flexible). The LEA favors prescriptive, reference standard, and proprietary for modern Philippine practice; performance requires strong testing criteria; descriptive is rarely endorsed.
+</Tip>
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Confusing 'performance specification' with 'prescriptive specification' by selecting a product name without performance metrics" correction="Performance specs define outcomes without naming products. If you're naming a brand, it's prescriptive or proprietary. Performance specs say 'achieve X result' and let the contractor select the means." />
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Writing 'or equal' without objective criteria (e.g., 'or an equivleant product')" correction="Objective criteria are measurable and testable. State dimensions, material composition, performance test results (ASTM standards), color specifications, and lifespan. Subjective criteria like 'equal or better quality' invite disputes." />
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Assuming that 'reference standard specification' removes the architect's responsibility for clarity" correction="Citing a standard (ACI 318, NSCP) is not a substitute for the architect understanding that standard. You must verify the standard aligns with the project. The architect remains responsible for specification clarity under RA 9266." />
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="WikiMistakeList" status="preserved"]
+<WikiMistakeList mistakes={["Using prescriptive specs for innovative materials where the contractor has superior expertise (misses cost savings and performance gains)", "Mixing specification types inconsistently within one section (confuses contractors and creates ambiguity)", "Failing to address Philippine regulatory requirements (DPWH approval, NSCP compliance) in the specification type selection", "Assuming 'performance specification' is always better (it requires robust testing protocols and disputes if criteria are vague)", "Not including substitution procedures and approval authority in proprietary 'or equal' clauses"]} />
 
 ## Related Articles
 

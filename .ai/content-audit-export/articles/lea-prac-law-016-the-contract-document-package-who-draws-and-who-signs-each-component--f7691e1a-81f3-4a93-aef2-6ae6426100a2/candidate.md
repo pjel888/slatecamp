@@ -52,17 +52,19 @@ When a professional signs and seals a document, that professional assumes direct
 
 This responsibility makes the direct supervision requirement essential. An architect cannot safely delegate signing and sealing to others or sign documents without thorough review and personal responsibility. The professional's insurance carrier (professional liability insurance) covers claims arising from negligence in the preparation of documents, but only if the professional exercised the care and diligence required of a competent professional. Documents signed without proper supervision or review, or documents containing obvious errors that reasonable review would have caught, may fall outside insurance coverage and expose the professional to uninsured personal liability.
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
+<LawCallout code="ra9266" section="Section 33 - Signing and Sealing">
+Legal Basis: RA 9266 (Architecture Act of 2004), Section 20(c), defining the contract document package: architectural plans, specifications, bill of materials, cost estimates, general conditions, and bidding documents.
+</LawCallout>
 Extracted summary:
 - Props: code="ra9266" title="RA 9266 Section 20(c) — Contract Document Package"
 - Text: Legal Basis: RA 9266 (Architecture Act of 2004), Section 20(c), defining the contract document package: architectural plans, specifications, bill of materials, cost estimates, general conditions, and bidding documents.
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
+<Warn />
 Extracted summary:
 - Props: (none)
 - Text: ⚠️ The architect signs and seals ONLY architectural documents. Structural, electrical, mechanical, and plumbing documents are signed by the respective professional engineers. But the architect as AoR retains overall coordination responsibility for the entire package. — expect this as a trap answer on the LEA.
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
+<ExamTip />
 Extracted summary:
 - Props: (none)
 - Text: Document responsibility breakdown: Architect = plans, specs, BOM, estimates, conditions, bidding docs (signs/seals all). Structural Eng = structural design/calculations. Electrical Eng = electrical systems. MEP Eng = mechanical/plumbing. Architects COORDINATE but don't sign engineering documents.
@@ -71,7 +73,7 @@ Extracted summary:
 
 
 
-<ArticleMedia type="image" caption="Contract Document Package — Drawings, Specifications, and Who Signs Each" description="Diagram showing the complete contract document package: Architectural drawings (architect signs/seals), Structural drawings (structural engineer signs), MEP drawings (MEP engineer signs), Specifications (architect/consultant signs), Bill of Quantities (QS signs). Each document type shows who prepares, who seals, and who is legally responsible. Distinction between design intent documents and construction documents." />
+<ArticleMedia type="image" caption="Contract Document Package — Drawings, Specifications, and Who Signs Each" alt="Diagram showing the complete contract document package: Architectural drawings (architect signs/seals), Structural drawings (structural engineer signs), MEP drawings (MEP engineer signs), Specifications (architect/consultant signs), Bill of Quantities (QS signs). Each document type shows who prepares, who seals, and who is legally responsible. Distinction between design intent documents and construction documents." />
 ## Related Articles
 
 - [RA 9266: Structure and Key Definitions](lea-prac-law-001)

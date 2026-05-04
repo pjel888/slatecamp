@@ -1,4 +1,7 @@
 ## UAP Doc 301 Overview — Purpose, Structure, and the Three-Party Relationship
+
+
+<ArticleMedia type="image" caption="UAP Doc 301 — Three-Party Relationship Diagram" description="Triangle diagram showing the three-party relationship: Owner (top), Architect (left), Contractor (right). Arrows show contractual relationships: Owner↔Architect (Owner-Architect Agreement), Owner↔Contractor (Construction Contract), Architect↔Contractor (Architect's authority during construction via contract documents). Independent contractor relationship highlighted between Owner and Contractor." />
 ## Learning Goal
 
 After reading this article, you should be able to:
@@ -8,10 +11,7 @@ After reading this article, you should be able to:
 - Describe the respective roles, rights, and obligations of the Owner, Contractor, and Architect under Doc 301.
 - Apply Doc 301 provisions to LEA scenarios involving contract interpretation, party responsibilities, and the architect's role as contract administrator.
 
-
-
 UAP Document 301 (General Conditions) defines the contractual relationship between Owner and Contractor during construction and establishes the Architect's role as contract administrator and impartial interpreter.
-
 
 <KeyValues items={[
   {label:"Owner's core duty", value:"Payment and provision of site access"},

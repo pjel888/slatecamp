@@ -5,7 +5,6 @@ Apply daylighting strategies beyond NBC 1:10 minimum window-to-floor ratio, calc
 
 Natural lighting design extends beyond the National Building Code's minimum window-to-floor ratio. The LEA tests whether candidates can optimize daylighting depth, glare control, and visual comfort while maintaining or exceeding code minimums. The NBC standard (**1:10 for light**, **1:20 for ventilation**) is a legal _baseline_, not a design target.
 
-
 ## Core Concept
 
 Daylighting provides illumination, psychological benefits, and energy savings. However, light penetrates only so far into a building's interior.
@@ -24,6 +23,7 @@ The **Window-to-Floor Ratio (WFR)** is the total window area divided by the floo
 - **PD 1096 Rule VIII, Section 808:** Specifies **1:10 (10%)** window area minimum for light.
 - **PD 1096 Rule VIII, Section 808:** Specifies **1:20 (5%)** window area minimum for natural ventilation.
 - **Critical Error:** Do not use 1:5 (20%). This is a common mistake (ERR-DSGN-034).
+<ArticleMedia id="media-lea-dsgn-009-02-core-concept" a type="image" caption="Daylighting Strategy — Window-to-Floor Ratio and Light Penetration Depth" description="Building section showing daylight penetration: minimum 1:10 window-to-floor ratio, light penetration depth (2.5× window head height), glare control devices (lightshelves, louvers, fins), and integration with artificial lighting controls." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
@@ -63,8 +63,8 @@ The exam asks for the minimum window area for a 100 m² room.
 - **Answer:** 10 m² (1:10).
 - **Warning:** If you select 20 m² (1:5), you are applying a common misconception not supported by the NBCP.
 
-
 **Exam Tip:** NBC minimum = 1:10 window-to-floor ratio for light, 1:20 for ventilation. Daylight penetration depth ≈ 2.5× window head height. A 2m high window provides useful daylight ~5m into the room.
+<ArticleMedia id="media-lea-dsgn-009-02-core-concept" a type="image" caption="Daylight Penetration — Section Showing Light Shelf and Glare Control" description="Section diagram showing daylight penetration depth (2.5× window head height), light shelf positioning (above eye level at 2.0m minimum), glare control devices (horizontal louvers, vertical fins), and minimum window-to-floor area ratio (1:10 per NBC). Interior daylight distribution zones labeled." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Cross-References
 

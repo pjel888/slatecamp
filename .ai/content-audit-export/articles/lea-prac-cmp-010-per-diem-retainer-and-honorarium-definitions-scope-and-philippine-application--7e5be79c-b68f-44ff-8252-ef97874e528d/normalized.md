@@ -87,7 +87,7 @@ Per Diem, Retainer, and Honorarium should complement—not replace—appropriate
 
 
 
-<ArticleMedia type="image" caption="Compensation Methods Comparison — Per Diem, Retainer, and Honorarium" description="Three-column comparison table showing Per Diem (daily rate, site visits/CA), Retainer (monthly fixed, ongoing availability), and Honorarium (discretionary, expert opinion). Each column shows: basis of payment, typical use cases, billing mechanism, and Philippine practice examples. Decision criteria at bottom for when to use each method." />
+<ArticleMedia type="image" caption="Compensation Methods Comparison — Per Diem, Retainer, and Honorarium" alt="Three-column comparison table showing Per Diem (daily rate, site visits/CA), Retainer (monthly fixed, ongoing availability), and Honorarium (discretionary, expert opinion). Each column shows: basis of payment, typical use cases, billing mechanism, and Philippine practice examples. Decision criteria at bottom for when to use each method." />
 ## Related Articles
 
 - [Project Classification Groups](lea-prac-cmp-001)

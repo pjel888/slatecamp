@@ -31,6 +31,7 @@ Other CLUP implementation tools include:
 - **Code enforcement** — building permits, occupancy permits, compliance monitoring
 
 The **Environmental Planner** (licensed profession under **RA 10587**, 2013) has professional responsibility for environmental planning aspects of CLUP preparation. While architects may practice urban planning under RA 9266, CLUPs are the formal responsibility of Environmental Planners and planning professionals.
+<ArticleMedia id="media-lea-plan-001-05-core-concept" a type="image" caption="CLUP Process Flowchart — From Data Collection to DHSUD Review" description="Process flow diagram showing the Comprehensive Land Use Plan cycle: data collection → public consultation → situational analysis → land use mapping → draft CLUP → Sanggunian adoption → DHSUD conformity review → 10-year horizon with 3-year midterm review. Zoning ordinance as CLUP implementation tool." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
@@ -55,7 +56,6 @@ The LEA tests CLUPs through five dominant question patterns: (1) **Legal require
 <Tip>
 **CLUP memory anchors:** CLUP = 10-year plan, RA 7160. Review = every 3 years (not 5, not annual). ADOPT = Sanggunian (legislature), not Mayor (executive). IMPLEMENT = ZONING ORDINANCE. APPROVE = DHSUD. PREPARE = Environmental Planner (licensed profession).
 </Tip>
-
 
 **Exam Tip:** Five CLUP facts to memorize: (1) 10-year horizon, (2) 3-year midterm review, (3) Sanggunian adopts (NOT Mayor), (4) zoning ordinance implements, (5) DHSUD reviews for conformity. These are THE most tested CLUP items.
 

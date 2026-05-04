@@ -1,26 +1,21 @@
 {
-  "attempted_at": "2026-05-04T00:06:16.203Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:16:47.102Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "candidate.md matches original.md; refusing no-op apply."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "ab6d74a1-744c-4961-816a-b088bb707848",
   "slug": "lea-prac-law-005-prboa-powers-and-functions-section-7-in-full",
   "preparation_actions": [
     "auto_generated_diff"
   ],
-  "remote_hash_before": "sha256:17e29f3281af274ebdec6e68983e120e56c99361d32a75c184660a10d1a8b112",
-  "original_hash": "sha256:17e29f3281af274ebdec6e68983e120e56c99361d32a75c184660a10d1a8b112",
-  "candidate_hash": "sha256:cb7b4fad490e69fe083ce9de1a8cfeff06bded26e0b91291079176f70b468bd0",
+  "remote_hash_before": "sha256:cc3d33d3349885088f29dbd5227bc02b6ee79602eb5cc31d812e02c7ada1aad5",
+  "original_hash": "sha256:cc3d33d3349885088f29dbd5227bc02b6ee79602eb5cc31d812e02c7ada1aad5",
+  "candidate_hash": "sha256:cc3d33d3349885088f29dbd5227bc02b6ee79602eb5cc31d812e02c7ada1aad5",
   "stale_check_passed": true,
-  "remote_updated_at_before": "2026-05-03T13:50:47.095303+00:00"
+  "remote_updated_at_before": "2026-05-04T02:00:05.505529+00:00"
 }

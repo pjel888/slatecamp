@@ -21,7 +21,7 @@ The developer is obligated to deliver the Certificate of Title (TCT) to the buye
 
 **What PD 957 Does NOT Cover**
 PD 957 is silent on socialized housing (BP 220 governs), raw land subdivision without residential use, eviction procedures, or government-built housing. It is a buyer-protection and developer-regulation law, not a social housing mandate.
-<ArticleMedia id="media-lea-plan-003-01-what-you-need-to-know-fo" a type="image" caption="Philippine Housing Law Framework — Five Core Laws Relationship Diagram" description="Venn diagram showing relationship of five core housing laws: PD 957 (market-rate subdivisions/condos), BP 220 (socialized/economic minimums), RA 7279 UDHA (eviction/bHousing), RA 6552 Maceda Law (buyer installments), RA 10884 (bHousing %). Which law governs which housing type." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-plan-003-01-what-you-need-to-know-fo" type="image" caption="Philippine Housing Law Framework — Five Core Laws Relationship Diagram" alt="Venn diagram showing relationship of five core housing laws: PD 957 (market-rate subdivisions/condos), BP 220 (socialized/economic minimums), RA 7279 UDHA (eviction/bHousing), RA 6552 Maceda Law (buyer installments), RA 10884 (bHousing %). Which law governs which housing type." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ---
 

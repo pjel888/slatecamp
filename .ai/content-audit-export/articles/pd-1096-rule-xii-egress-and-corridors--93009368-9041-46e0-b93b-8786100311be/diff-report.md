@@ -1,33 +1,32 @@
 # Content Diff Report: pd-1096-rule-xii-egress-and-corridors
 
-Generated: 2026-05-04T00:06:44.894Z
+Generated: 2026-05-04T02:25:41.733Z
 Article ID: 93009368-9041-46e0-b93b-8786100311be
 Changed: true
-Safe to push locally: false
+Safe to push locally: true
 
 ## Hashes
 
 - Original: `sha256:69fed52b89130a7f8a44a1ae3e9e096985fbd912f666c134992a0b7395268778`
-- Normalized: `sha256:b4195bdc2ed3e5fccab7f9e96624ec4db306da6f9116be354406b2d205709295`
-- Candidate: `sha256:b4195bdc2ed3e5fccab7f9e96624ec4db306da6f9116be354406b2d205709295`
+- Normalized: `sha256:965e0eb9ca7209fcb6241bb9fbe5affd70243c76e572e6d710de8cb4843456e8`
+- Candidate: `sha256:fdd6d80b5d99b200712a297bf8459b97446d984ed8a793cf592b0a72e76f61ee`
 
 ## Line summary
 
-- Changed lines: 471
-- Inserted lines: 0
-- Deleted lines: 10
+- Changed lines: 422
+- Inserted lines: 12
+- Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 3
-- UI blocks preserved: 0
-- UI blocks changed/missing: 3
-- Unresolved placeholders: 1
+- UI blocks preserved: 3
+- UI blocks changed/missing: 0
+- Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate contains unresolved UI block placeholders.
-- Candidate is missing 3 preserved UI block(s).
+- None
 
 ## Warnings
 

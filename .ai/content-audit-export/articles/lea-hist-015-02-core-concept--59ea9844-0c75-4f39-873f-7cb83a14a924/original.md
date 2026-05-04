@@ -7,6 +7,10 @@ Identify Jørn Utzon's Sydney Opera House as a structural and sculptural masterp
 
 The **Sydney Opera House** (1957–1973) is the defining building of late-20th-century architecture. Danish architect **Jørn Utzon** (1918–2008) won an international design competition in 1957 with a radical proposal: vaulted shell structures rising from a harbor platform like billowing sails. The image was perfect—it expressed Australia's maritime identity, aspiration, and modernity. But it was nearly impossible to build.
 
+
+<ArticleMedia id="media-hist-015-02-core-concept" layout="single" type="image" status="placeholder" alt="View of the Sydney Opera House (1957–1973, Jørn Utzon), showing the sail-shaped precast concrete shells against Sydney Harbour, the stepped podium, and the large glazed walls facing the water." caption="Sydney Opera House — Utzon's Shell Vaults" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
+
 <Tip>Memory aid: **"Utzon + Spherical Shells + Harbor + Ribs"** — spherical geometry provided mathematical order and structural efficiency, allowing sculptural forms to be built from concrete.</Tip>
 
 Utzon's shells were sophisticated geometrically: they were sections of a sphere. This spherical geometry was revolutionary—it allowed the complex curved forms to be structured and calculated, and it unified the seemingly chaotic composition with hidden mathematical order. The shells were constructed of reinforced concrete ribs supporting a thin outer shell, minimizing material while achieving dramatic span. This was structural innovation at the highest level.
@@ -20,6 +24,10 @@ The construction process was monumentally difficult. Costs spirlead; timelines e
 The building's genius is multivleant. Functionally, it contains two major theaters (opera and drama) plus concert hall, restaurants, and public spaces. Spatially, the shell vaults create dramatic interior volumes and light effects—the building is about movement and experience as much as function. Structurally, the spherical geometry solved seemingly impossible engineering challenges. Symbolically, the shells express Australia's ocean identity and aspiration toward global culture. The building justifies its iconic status; it works at every scale and meaning.
 
 The Opera House proved modernist architecture could be monumental, symbolic, and culturally rooted while remaining technically innovative and spatially complex. It rejected International Style anonymity; it declared: architecture can be a nation's voice.
+
+
+<ArticleMedia id="media-hist-015-02-core-concept" layout="single" type="image" status="placeholder" alt="Section diagram showing the spherical geometry of the Opera House roof shells — each sail is a section of the same imaginary sphere (radius 75 m), allowing prefabrication of identical curved rib segments with changeable tile patterns." caption="Sydney Opera House — Spherical Shell Geometry" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
 
 ## Key Facts and Testable Items
 
@@ -67,6 +75,8 @@ Questions ask how Opera House influenced contemporary architecture: it proved sc
 **Iconic Architecture** — Building achieving symbolic and cultural status beyond functional purpose; becomes shorthand for place, nation, or era; Opera House is quintessential example.
 
 *For broader Oceanian and Pacific architectural context, see the companion article on Oceanian/Pacific Architecture (LEA-HIST-007-06).*
+
+<ArticleMedia id="media-hist-015-02-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Diagram of Sydney Opera House construction: spherical shell geometry derivation from a single sphere, prefabricated tile rib system, harbor site section showing the platform and podium, illustrating how design reconciled modernist expression with contextual sensitivity.\" caption=\"Sydney Opera House — Structural and Site Diagram\" suggestedAsset=\"Timeline diagram\" placementIntent=\"Timeline diagram for architectural period\" />
 
 ## Related Articles
 

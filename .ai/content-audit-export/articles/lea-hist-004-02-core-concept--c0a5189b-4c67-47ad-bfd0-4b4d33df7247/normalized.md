@@ -69,6 +69,8 @@ These two periods represent not a simple progression but a cultural reorientatio
 
 [SLATECAMP_UI_BLOCK:ui_0012 component="Warn" status="preserved"]
 
+<ArticleMedia id="media-hist-004-02-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparative diagram of Umayyad (hypostyle hall, Roman/Byzantine borrowing, mosaic decoration) and Abbasid (brick, iwan, stucco, centralized planning) Islamic architecture showing contrasting materials, plans, and ornamental vocabulary." caption="Umayyad vs. Abbasid — Architectural Comparison" suggestedAsset="Style comparison illustration" placementIntent="Style comparison for architectural period" />
+
 ## Related Articles
 
 See also within Islamic Architecture: **lea-hist-004-01-core-concept**, **lea-hist-004-05-core-concept**, **lea-hist-004-06-core-concept**, **lea-hist-004-07-core-concept**.

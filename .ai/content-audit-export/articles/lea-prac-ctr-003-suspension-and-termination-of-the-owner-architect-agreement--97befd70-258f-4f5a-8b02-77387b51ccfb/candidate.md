@@ -56,17 +56,19 @@ During Construction Administration, the architect may recommend suspension or te
 - [Dispute Resolution](lea-prac-ctr-020)
 - [Fee Compensation Methods](lea-prac-cmp-001)
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+<LawCallout code="uap" section="SPP Doc. 202 - Suspension and Termination">
+RA 9266, Section 25 — The architect shall not be held liable for delay caused by force majeure or acts of the Owner.
+</LawCallout>
 Extracted summary:
 - Props: (none)
 - Text: RA 9266, Section 25 — The architect shall not be held liable for delay caused...
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="ProcessFlow" status="preserved"]
+<ProcessFlow steps={["Owner gives written notice", "Architect ceases active work or invokes cure period", "Compensation calculated for work performed", "Architect delivers all documents to Owner", "Owner engages successor or proceeds to close-out"]} />
 Extracted summary:
 - Props: (none)
 - Text: Process flow: Notice → Cessation/Curve period → Compensation → Document turno...
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
+<Warn>The architect does NOT have authority to independently suspend or terminate the construction contract. The architect's role is to certify compliance and recommend action to the Owner. Unauthorized suspension can expose the architect to liability.</Warn>
 Extracted summary:
 - Props: (none)
 - Text: The architect does NOT have authority to independently suspend or terminate t...

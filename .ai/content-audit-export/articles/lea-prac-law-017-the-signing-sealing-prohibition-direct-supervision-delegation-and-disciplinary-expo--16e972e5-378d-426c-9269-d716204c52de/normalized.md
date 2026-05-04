@@ -82,7 +82,7 @@ Extracted summary:
 
 
 
-<ArticleMedia type="image" caption="Signing and Sealing — Authority, Delegation, and Disciplinary Exposure" description="Flowchart showing signing/sealing rules: Does document contain architectural work? → Yes → Was it under architect's direct supervision? → Yes → Architect signs/seals; No → Prohibited. Side panel shows: who can sign/seal (registered architect only), what must be sealed (contract documents, not promotional materials), delegation rules (work by subordinates under supervision is OK), disciplinary consequences of unauthorized sealing." />
+<ArticleMedia type="image" caption="Signing and Sealing — Authority, Delegation, and Disciplinary Exposure" alt="Flowchart showing signing/sealing rules: Does document contain architectural work? → Yes → Was it under architect's direct supervision? → Yes → Architect signs/seals; No → Prohibited. Side panel shows: who can sign/seal (registered architect only), what must be sealed (contract documents, not promotional materials), delegation rules (work by subordinates under supervision is OK), disciplinary consequences of unauthorized sealing." />
 ## Related Articles
 
 - [RA 9266: Structure and Key Definitions](lea-prac-law-001)

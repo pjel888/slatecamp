@@ -1,33 +1,32 @@
 # Content Diff Report: lea-prac-law-008-lea-structure-subjects-areas-passing-standard-and-retaking
 
-Generated: 2026-05-04T00:06:27.314Z
+Generated: 2026-05-04T02:17:02.918Z
 Article ID: 63ba5964-80fc-472c-bc26-7d64f1507bed
-Changed: true
-Safe to push locally: false
+Changed: false
+Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:e1ac06ed54576d656ac780024428a46cd8ce5056fa755408395884f28f00895d`
+- Original: `sha256:595442c41e4a9efad2b6cc7e9764abe89828d2c925460e0e84a5502bc94924ba`
 - Normalized: `sha256:2398985fed6936d926d87e2999911f9d7f9d73b6a7f98f1bbe1c2c58e049fac8`
-- Candidate: `sha256:2398985fed6936d926d87e2999911f9d7f9d73b6a7f98f1bbe1c2c58e049fac8`
+- Candidate: `sha256:595442c41e4a9efad2b6cc7e9764abe89828d2c925460e0e84a5502bc94924ba`
 
 ## Line summary
 
-- Changed lines: 22
+- Changed lines: 0
 - Inserted lines: 0
-- Deleted lines: 1
+- Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 5
-- UI blocks preserved: 0
-- UI blocks changed/missing: 5
-- Unresolved placeholders: 1
+- UI blocks preserved: 5
+- UI blocks changed/missing: 0
+- Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate contains unresolved UI block placeholders.
-- Candidate is missing 5 preserved UI block(s).
+- None
 
 ## Warnings
 

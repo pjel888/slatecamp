@@ -5,8 +5,6 @@ The canonical texts of architecture establish the intellectual foundation for ar
 
 </Callout>
 
-
-
 ## Learning Goal
 
 - Identify the canonical texts of architectural theory: Vitruvius's Ten Books, Alberti's On the Art of Building, Le Corbusier's Toward an Architecture, Venturi's Complexity and Contradiction, Frampton's Critical Regionalism.
@@ -14,6 +12,8 @@ The canonical texts of architecture establish the intellectual foundation for ar
 - Explain how each canonical text responded to its era while establishing principles that transcended its time.
 
 ## Core Concept
+
+<ArticleMedia id="media-lea-theo-005-04-core-concept" a type="image" caption="Canonical Architectural Texts — Timeline from Vitruvius to Frampton" description="Horizontal timeline diagram spanning from 15 BCE to 1980, showing key canonical texts with author portrait, year, title, and core contribution: (1) Vitruvius — De Architectura (15 BCE) — Firmitas, Utilitas, Venustas; (2) Alberti — De re aedificatoria (1485) — Lineament vs Matter; (3) Palladio — I Quattro Libri (1570) — Proportional ratios, villa typology; (4) Le Corbusier — Vers une Architecture (1923) — Machine for Living, Five Points; (5) Venturi — Complexity and Contradiction (1966) — Duck vs Decorated Shed; (6) Alexander — A Pattern Language (1977) — 253 design patterns; (7) Norberg-Schulz — Genius Loci (1980) — Phenomenology of place; (8) Frampton — Critical Regionalism — Place vs globalism. Bottom row shows how each text responded to its era." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 Architectural canon refers to the collection of foundational texts that have shaped the discipline's theory and practice. These works serve as the intellectual scaffolding upon which architects build their understanding of form, function, space, and meaning. The history of architectural theory is inseparable from the history of architectural writing—from the Roman engineer Vitruvius to contemporary theorists, each canonical text responds to its era while establishing principles that transcend its time.
 
@@ -44,21 +44,15 @@ Rem Koolhaas's *Delirious New York: A Retroactive Manifesto for Manhattan* (1978
 <WikiExamTable headers={["Architectural Text", "Author(s)", "Year", "Primary Contribution"]} rows={[['["*De architectura* (Ten Books)", "Marcus Vitruvius Pollio", "~20 BCE", "Firmness, commodity, delight; classical orders foundation"]', '["*De re aedificatoria*", "Leon Battista Alberti", "1452", "Lineament vs. matter; Renaissance systematization of classical theory"]', '["*I quattro libri dell\'architettura*", "Andrea Palladio", "1570", "Five orders, domestic & temple architecture; established Palladian canon"]', '["*Vers une architecture*", "Le Corbusier", "1923", "Machine for living; Five Points; modernist manifesto"]', '["*Complexity and Contradiction in Architecture*", "Robert Venturi", "1966", "Postmodern critique of modernism; complexity and symbolism"]', '["*Learning from Las Vegas*", "Venturi, Scott Brown, Izenour", "1972", "Duck vs. decorated shed; vernacular symbolism"]', '["*Architecture: Form, Space, and Order*", "Francis D. K. Ching", "1979", "Pedagogical vocabulary; geometric and spatial fundamentals"]', '["*Genius Loci*", "Christian Norberg-Schulz", "1980", "Phenomenology of place; spirit and atmosphere"]', '["*A Pattern Language*", "Leaxander, Ishikawa, Silverstein", "1977", "253 design patterns; participatory architecture"]', '["*Delirious New York*", "Rem Koolhaas", "1978", "Manhattan culture of congestion; urban theory"]']]} />
 ## How It's Tested on the LEA
 
-
 <ExamTip>1. **Text-Author Attribution**: The examiner presents brief quotes or theoretical concepts and asks you to identify the originating text and author. Example: "A house is a machine for living in"—*Vers une architecture*, Le Corbusier.</ExamTip>
-
 
 <ExamTip>2. **Historical Periodization**: Questions establish the chronological development of theory. You must understand how Vitruvius established classical principles, how Alberti and Palladio refined them, how Le Corbusier disrupted them, and how Venturi deconstructed modernism's dominance.</ExamTip>
 
-
 <ExamTip>3. **Theoretical Contribution Recognition**: The exam tests whether you comprehend each text's central argument. Can you explain why Venturi's embrace of contradiction mattered? Why did Koolhaas treat Manhattan as theory rather than pathology?</ExamTip>
-
 
 <ExamTip>4. **Influence and Lineage**: Questions ask how one canonical text influenced subsequent theory. Vitruvius begat Alberti begat Palladio; Le Corbusier begat the International Style; Venturi begat postmodernism.</ExamTip>
 
-
 <ExamTip>5. **Key Concepts Matching**: You must associate core terms with specific texts—"lineament," "pattern language," "genius loci," "culture of congestion"—and explain their significance within each theoretical framework.</ExamTip>
-
 
 ## Common Mistakes
 
@@ -67,7 +61,6 @@ Rem Koolhaas's *Delirious New York: A Retroactive Manifesto for Manhattan* (1978
 <WikiMistakeCard mistake="Misattributing Modernist Doctrine" correction="Many students credit Le Corbusier alone for Five Points of Architecture and machine-age principles." context="Le Corbusier was crucial but worked within broader modernist movements shaped by the Deutscher Werkbund and others." />
 
 <WikiMistakeList mistakes={["Oversimplifying Venturi's Critique. Students often reduce *Complexity and Contradiction* to \"Venturi liked ornament.\" The book is more subtle—it argues modernism's reductionism was inadequate to human complexity, and that irony, ambiguity, and contradiction reflect authentic design consciousness.", "Underestimating Ching's Theoretical Role. While Ching is pedagogical, not explicitly theoretical like Koolhaas or Venturi, his work codified the geometric vocabulary that enables all subsequent architectural discourse. Dismissing it as \"just visual\" misses its foundational status.", "Treating Canonical Status as Timeless. Students sometimes assume canonical texts never lose relevance. In fact, the LEA tests your understanding that canonical authority shifts—Palladio dominated for 400 years, Le Corbusier for 60, Venturi reframed postmodern debate. Today's canon includes digital and global perspectives that earlier texts marginalized.", "Confusing *A Pattern Language* with Ching. Both democratize architectural knowledge, but Leaxander's 253 patterns claim sociological validity—they work across cultures because they solve recurring human needs. Ching's vocabulary, by contrast, teaches formal relationships independent of cultural specificity."]} />
-
 
 ## Key Terms
 

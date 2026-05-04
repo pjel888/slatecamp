@@ -1,33 +1,32 @@
 # Content Diff Report: lea-util-003-04-wire-insulation-types-and-ratings
 
-Generated: 2026-05-04T00:06:53.121Z
+Generated: 2026-05-04T02:17:37.711Z
 Article ID: 319c1e17-e0c6-409d-9886-c8a85ecaf747
-Changed: true
-Safe to push locally: false
+Changed: false
+Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:976ef7613d0f181a40cf74a51293fe09f8adc6da9fee08895acab0b4f55686f6`
+- Original: `sha256:85312b8b2a0a0ea0b6f8eba81d288d503f134cfd99cc647de36827cfa1d0abf4`
 - Normalized: `sha256:2da86c9a383c1ecd71ab303f3a0aff73a4c10982c78679dfa9c19d2b5a84670e`
-- Candidate: `sha256:2da86c9a383c1ecd71ab303f3a0aff73a4c10982c78679dfa9c19d2b5a84670e`
+- Candidate: `sha256:85312b8b2a0a0ea0b6f8eba81d288d503f134cfd99cc647de36827cfa1d0abf4`
 
 ## Line summary
 
-- Changed lines: 364
+- Changed lines: 0
 - Inserted lines: 0
-- Deleted lines: 4
+- Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 3
-- UI blocks preserved: 0
-- UI blocks changed/missing: 3
-- Unresolved placeholders: 1
+- UI blocks preserved: 3
+- UI blocks changed/missing: 0
+- Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate contains unresolved UI block placeholders.
-- Candidate is missing 3 preserved UI block(s).
+- None
 
 ## Warnings
 

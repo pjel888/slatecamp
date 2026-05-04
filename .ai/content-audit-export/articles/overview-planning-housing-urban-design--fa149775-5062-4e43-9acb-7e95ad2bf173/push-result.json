@@ -1,26 +1,21 @@
 {
-  "attempted_at": "2026-05-04T00:07:04.268Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:17:53.575Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "candidate.md matches original.md; refusing no-op apply."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "fa149775-5062-4e43-9acb-7e95ad2bf173",
   "slug": "overview-planning-housing-urban-design",
   "preparation_actions": [
     "auto_generated_diff"
   ],
-  "remote_hash_before": "sha256:22779acba6347975dab741c9b205c1ae6c480979a6d891ebe2f4311d96263feb",
-  "original_hash": "sha256:22779acba6347975dab741c9b205c1ae6c480979a6d891ebe2f4311d96263feb",
-  "candidate_hash": "sha256:6eb960bca3a1b39f4f3dd7bec32ee518353872c971e180b2dc661cc51a5985ab",
+  "remote_hash_before": "sha256:5440fc402c21a066efe7b6b2aaa30ed3b35b1ecf04d6b28e503fd7ff41524673",
+  "original_hash": "sha256:5440fc402c21a066efe7b6b2aaa30ed3b35b1ecf04d6b28e503fd7ff41524673",
+  "candidate_hash": "sha256:5440fc402c21a066efe7b6b2aaa30ed3b35b1ecf04d6b28e503fd7ff41524673",
   "stale_check_passed": true,
-  "remote_updated_at_before": "2026-05-03T13:52:25.623876+00:00"
+  "remote_updated_at_before": "2026-05-04T02:01:56.961815+00:00"
 }

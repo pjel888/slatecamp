@@ -1,45 +1,38 @@
 {
   "article_id": "5967e69f-d295-4dd2-9eb7-b4f1a321db4d",
   "slug": "lea-prac-cmp-003-project-construction-cost-pcc-definition-inclusions-and-what-the-architect-s-fee-is-based-on",
-  "generated_at": "2026-05-04T00:07:16.092Z",
-  "old_hash": "sha256:65f238a787fedc65ec8a4458743d8c760ec5377c070ffde9fe33ed9e1c378439",
-  "new_hash": "sha256:1049948126eb386cbe3affe220c8352d93a8cbac6977881ce930c24f12b594da",
-  "original_hash": "sha256:65f238a787fedc65ec8a4458743d8c760ec5377c070ffde9fe33ed9e1c378439",
+  "generated_at": "2026-05-04T02:18:08.291Z",
+  "old_hash": "sha256:d48928245436bde2d0e552f9af10e3a6fb17937ce2fce3ba1a319be7ed47e923",
+  "new_hash": "sha256:d48928245436bde2d0e552f9af10e3a6fb17937ce2fce3ba1a319be7ed47e923",
+  "original_hash": "sha256:d48928245436bde2d0e552f9af10e3a6fb17937ce2fce3ba1a319be7ed47e923",
   "normalized_hash": "sha256:1049948126eb386cbe3affe220c8352d93a8cbac6977881ce930c24f12b594da",
-  "candidate_hash": "sha256:1049948126eb386cbe3affe220c8352d93a8cbac6977881ce930c24f12b594da",
-  "changed": true,
-  "changed_line_count": 51,
+  "candidate_hash": "sha256:d48928245436bde2d0e552f9af10e3a6fb17937ce2fce3ba1a319be7ed47e923",
+  "changed": false,
+  "changed_line_count": 0,
   "inserted_line_count": 0,
-  "deleted_line_count": 1,
+  "deleted_line_count": 0,
   "ui_blocks_original_count": 3,
-  "ui_blocks_candidate_count": 0,
-  "ui_blocks_changed_count": 3,
+  "ui_blocks_candidate_count": 3,
+  "ui_blocks_changed_count": 0,
   "ui_blocks_count": 3,
-  "unresolved_placeholders_count": 1,
-  "preserved_blocks_count": 0,
+  "unresolved_placeholders_count": 0,
+  "preserved_blocks_count": 3,
   "changed_text_summary": {
-    "changed": 51,
+    "changed": 0,
     "inserted": 0,
-    "deleted": 1,
-    "original_line_count": 77,
+    "deleted": 0,
+    "original_line_count": 76,
     "candidate_line_count": 76
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0002",
-      "ui_0003",
-      "ui_0004"
-    ],
-    "changed_count": 3
+    "missing_block_ids": [],
+    "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate contains unresolved UI block placeholders.",
-    "Candidate is missing 3 preserved UI block(s)."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 3 preserved UI block(s)."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

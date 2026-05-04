@@ -55,7 +55,7 @@ When the Owner requests work that appears to be Additional Services, the archite
 
 
 
-<ArticleMedia type="image" caption="Basic Services vs. Additional Services — Classification Flowchart" description="Decision flowchart distinguishing Basic Services (SPP 202 five phases: SD, DD, CD, BA, CA) from Additional Services (separate scope, extra compensation). Decision diamonds for: Is this a standard SPP 202 phase deliverable? → Yes=Basic, No→ Was it anticipated in the Agreement? → Yes=Basic, No→ Additional Service. Examples of each category listed in side panels." />
+<ArticleMedia type="image" caption="Basic Services vs. Additional Services — Classification Flowchart" alt="Decision flowchart distinguishing Basic Services (SPP 202 five phases: SD, DD, CD, BA, CA) from Additional Services (separate scope, extra compensation). Decision diamonds for: Is this a standard SPP 202 phase deliverable? → Yes=Basic, No→ Was it anticipated in the Agreement? → Yes=Basic, No→ Additional Service. Examples of each category listed in side panels." />
 ## Related Articles
 
 - [Standard Owner-Architect Agreement](lea-prac-ctr-001)

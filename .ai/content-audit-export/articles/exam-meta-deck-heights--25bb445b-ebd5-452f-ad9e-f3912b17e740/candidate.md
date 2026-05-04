@@ -11,7 +11,11 @@ Apply all code provisions governing deck, balcony, porch, and terrace heights un
 
 ## SECTION A: THE "1800 CLUB" — Every Instance Where 1800 mm Appears
 
-[SLATECAMP_UI_BLOCK:ui_0042 component="LawCallout" status="preserved"]
+<LawCallout code="bp344">
+
+All dimensions in this deck are governed by BP 344 (2024 IRR), specifically Appendix A (General Provisions) and Appendix D (Specific Space Requirements). The 1800 mm turning space appears across App. A, Sec. 5.3 (elevators), Sec. 11.4 (telephones), Sec. 12.1 (ATMs), Sec. 13.4 (dressing rooms), and App. A Ramps (landings). Memorize the contexts — the LEA pairs 1800 × 1800 with specific fixtures.
+
+</LawCallout>
 
 > **Memory trigger:** "1800 = room to maneuver." Anywhere a wheelchair must turn, pass another chair, or approach a facility — expect 1800 mm.
 
@@ -34,7 +38,11 @@ Apply all code provisions governing deck, balcony, porch, and terrace heights un
 
 ### Quick-Fire A-List Recall
 
-[SLATECAMP_UI_BLOCK:ui_0044 component="Warn" status="preserved"]
+<Warn>
+
+⚠️ CRITICAL WARNING: The WC cubicle is 1800 × 2250 mm — NOT 1800 × 1800 mm! The 1800 × 1800 applies to turning spaces, elevator lobbies, ATMs, phones, and roll-in showers. But the accessible WC cubicle requires 1800 mm WIDTH × 2250 mm DEPTH. This is the single most frequently missed dimensional distinction on the LEA.
+
+</Warn>
 
 - **All 1800 × 1800** → turning space, elevator lobby, ATM, phone, drinking fountain, roll-in shower, vestibule
 - **1800 mm linear** → ramp landings (all), sidewalk passing, rest spaces on walkways
@@ -45,7 +53,11 @@ Apply all code provisions governing deck, balcony, porch, and terrace heights un
 
 ## SECTION B: THE HEIGHT LADDER — Vertical Stack from 0 mm to Ceiling
 
-[SLATECAMP_UI_BLOCK:ui_0043 component="Tip" status="preserved"]
+<Tip>
+
+**Memory Strategy: "1-8-2-5" Ladder Trick.** The height ladder from floor to ceiling follows a predictable sequence: 200 (floor-level reach), 300 (handrail extension), 400 (kick plate), 500 (urinal), 600–700–750 (alarm, grab bar, WC handrail), 900 (handle, stair rail), 1100 (guard), 1200 (max side reach). Memorize the 5 critical heights between 750–1200 mm — this is the most tested band.
+
+</Tip>
 
 > **Memory strategy:** Read this ladder top-to-bottom once, then quiz yourself by covering the left column. On exam day, if you know whether a height is "below 750," "750–900," or "above 1200," you can eliminate three wrong answers instantly.
 
@@ -164,7 +176,11 @@ Apply all code provisions governing deck, balcony, porch, and terrace heights un
 
 *Module 11 | BP 344 2024 IRR LEA Review Series | Philippine context only*
 
-[SLATECAMP_UI_BLOCK:ui_0045 component="ExamTip" status="preserved"]
+<ExamTip>
+
+**LEA Dimensional Strategy:** When a question gives a height in mm, immediately locate it on the ladder: below 750 (reach ranges, clearance), 750–900 (handrail zone — most common exam range), 900–1200 (handle/guard zone), above 1200 (max reach). If you know the band, you can eliminate 2–3 wrong answers instantly without memorizing every number.
+
+</ExamTip>
 
 ---
 

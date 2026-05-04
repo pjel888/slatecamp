@@ -6,6 +6,10 @@ Identify Critical Regionalism (Frampton, 1983) as the position that modernist ri
 ## Core Concept
 **Critical Regionalism**, articulated by theorist **Kenneth Frampton** in his seminal 1983 essay, emerged as a counterpoint to the International Style's claim to universal principles. Frampton argued that uncritical adoption of global modernism—glass boxes and steel frames everywhere—erased local identity, ignored climate specificity, and created placeless, environmentally wasteful buildings.
 
+
+<ArticleMedia id="media-hist-008-08-core-concept" layout="single" type="image" status="placeholder" alt="View of the Sydney Opera House (1957–1973, Jørn Utzon), showing the white sail-like shells against the harbor, combining modernist structural expression with a deep response to site, climate, and local context." caption="Sydney Opera House — Utzon's Critical Regionalist Icon" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
+
 Critical Regionalism does not reject modernism outright. Rather, it pursues a "critical" engagement with modernist principles while grounding them in local geography, climate, materials, and cultural memory. Regional architects respond to sun angle, rainfall patterns, prevalent winds, and local building traditions. They use indigenous materials—timber, stone, earth—whose sourcing and embodied energy respect the place. They engage with vernacular architecture not through pastiche (Postmodernism) but through understanding deep principles of regional adaptation.
 
 <Tip>
@@ -29,6 +33,10 @@ Do not confuse Climate-Responsive Design (Critical Regionalism) with energy cons
 Contemporary Critical Regionalism ranges from **Alberto Campo Baeza's** sun-responsive white concrete buildings in Spain to **Anna Heringer's** rammed-earth architecture in Bangladesh, from **David Chipperfield's** contextual interventions to **Diébédo Francis Kéré's** earth and timber architecture in Burkina Faso. These practitioners demonstrate that modernism's abstraction and rigor, combined with deep engagement with place, materials, and climate, can produce architecture of global relevance grounded in local specificity.
 
 Critical Regionalism and sustainability respond to real consequences of uncritical globalization: cultural homogenization, environmental degradation, energy-intensive imported materials, and buildings that ignore local knowledge. They assert that architectural excellence requires understanding place in its particularity—its climate, its materials, its social practices, its memory.
+
+
+<ArticleMedia id="media-hist-008-08-core-concept" layout="single" type="image" status="placeholder" alt="View of the Kimbell Art Museum (Fort Worth, 1966–1972, Louis Kahn), showing the cycloid barrel vaults, natural light from the central slot, travertine-clad surfaces, and the integration of universal modernism with regional material sensibility." caption="Kimbell Art Museum — Louis Kahn's Regional Modernism" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
 
 ## Key Facts and Testable Items
 
@@ -63,6 +71,8 @@ Critical Regionalism and sustainability respond to real consequences of uncritic
 - **Sustainable architecture**: Design minimizing environmental impact through energy efficiency, material responsibility, water management, and long-term durability.
 - **Deep engagement with place**: The rigorous understanding of a site's geography, climate, history, culture, and local knowledge as a basis for design.
 - **Phenomenology**: Philosophical focus on direct sensory experience and perception; influences regionalist design's emphasis on material presence and tactile qualities.
+
+<ArticleMedia id="media-hist-008-08-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparison of Critical Regionalist works — Sydney Opera House (Utzon, site-responsive shells), Salk Institute (Kahn, material tectonics), Casa Barragán (Barragán, color and light), and IIM Ahmedabad (Kahn, modernist-climate synthesis) — showing local inflection of modernist principles.\" caption=\"Critical Regionalism — Works Comparison\" suggestedAsset=\"Style comparison illustration\" placementIntent=\"Style comparison for architectural period\" />
 
 ## Related Articles
 

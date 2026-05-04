@@ -7,13 +7,13 @@ Design sun shading devices for tropical buildings — horizontal overhangs, vert
 
 ### Solar Shading Fundamentals
 
-<ArticleMedia id="media-lea-theo-004-13-core-concept" a type="image" caption="Sun Shading Device Typology — Horizontal, Vertical, Egg-Crate, Light Shelves" description="Four-panel reference diagram: (1) Horizontal Overhangs/Louvers — fixed or angled shelves above windows, effective for south facades at high sun angles, with formula Depth = Window Height × tan(solar altitude); (2) Vertical Fins — perpendicular elements blocking low-angle morning/afternoon sun, essential for east/west facades; (3) Egg-Crate Screens — three-dimensional grid combining horizontal and vertical elements for full shading, with Le Corbusier's Chandigarh example; (4) Light Shelves — reflective horizontal surfaces bouncing daylight to ceiling and deep interior (12-15m penetration). Each panel shows: geometric diagram, solar angle interaction, heat gain reduction percentage (40-70%), and architectural example." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-theo-004-13-core-concept" type="image" caption="Sun Shading Device Typology — Horizontal, Vertical, Egg-Crate, Light Shelves" alt="Four-panel reference diagram: (1) Horizontal Overhangs/Louvers — fixed or angled shelves above windows, effective for south facades at high sun angles, with formula Depth = Window Height × tan(solar altitude); (2) Vertical Fins — perpendicular elements blocking low-angle morning/afternoon sun, essential for east/west facades; (3) Egg-Crate Screens — three-dimensional grid combining horizontal and vertical elements for full shading, with Le Corbusier's Chandigarh example; (4) Light Shelves — reflective horizontal surfaces bouncing daylight to ceiling and deep interior (12-15m penetration). Each panel shows: geometric diagram, solar angle interaction, heat gain reduction percentage (40-70%), and architectural example." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ### Solar Shading Fundamentals
 
 Solar shading controls **direct radiation** (energy arriving straight from sun disk) while admitting **diffuse radiation** (scattered by atmosphere). In tropical climates, direct radiation accounts for 60–75% of solar heat gain; blocking this while maintaining diffuse light is the central optimization challenge.
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+<Tip>Testable hierarchy for Philippine shading priority: (1) West facade is worst (600–800 W/m², afternoon peak when outside temperature is highest), (2) East facade is second-worst (600–800 W/m², early morning but duration is shorter), (3) South facade is least critical (300–450 W/m², high sun angle reduces penetration depth). Shading design should allocate deepest overhangs to west, adequate-but-less-deep to east, minimal-adequate to south. This priority order is frequently tested.</Tip>
 Extracted summary:
 - Props: (none)
 - Text: Testable hierarchy for Philippine shading priority: (1) West facade is worst (600–800 W/m², afternoon peak when outside temperature is highest), (2) East facade is second-worst (600–800 W/m², early morning but duration is shorter), (3) South facade is least critical (300–450 W/m², high sun angle reduces penetration depth). Shading design should allocate deepest overhangs to west, adequate-but-less-deep to east, minimal-adequate to south. This priority order is frequently tested.
@@ -25,7 +25,7 @@ In the **Philippine climate**, solar radiation intensity peaks at:
 - **South vertical facade (14.6°N latitude)**: 300–450 W/m² (due to high solar altitude; low-latitude sun angles minimize vertical facade exposure)
 - **East/West vertical facades**: 600–800 W/m² (peak at 6–9 AM east; 3–6 PM west)
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
+<Note>The 3,600W calculation (10 m² east window, 600 W/m² incident, 60% transmission) assumes clear-sky conditions. During monsoon (Type I habagat, May–Oct), cloud cover reduces direct radiation 20–40%, making shading less critical. This variation is rarely highlighted but affects BERDE energy modeling—Type III areas with pronounced dry season benefit from seasonal adjustable shading; Type II/IV with perpetual cloud require less aggressive shading to maintain daylighting.</Note>
 Extracted summary:
 - Props: (none)
 - Text: The 3,600W calculation (10 m² east window, 600 W/m² incident, 60% transmission) assumes clear-sky conditions. During monsoon (Type I habagat, May–Oct), cloud cover reduces direct radiation 20–40%, making shading less critical. This variation is rarely highlighted but affects BERDE energy modeling—Type III areas with pronounced dry season benefit from seasonal adjustable shading; Type II/IV with perpetual cloud require less aggressive shading to maintain daylighting.
@@ -68,7 +68,7 @@ Philippine latitude (5°N–20°N) differs critically from Chandigarh (31°N):
 
 This **23° altitude difference** means Philippine winter sun is still steep. Brise-soleil effective at Chandigarh would be ineffective in Manila—a deep 1.5 m overhang adequate for 36° sun angle is excessive for 59.5° altitude.
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
+<Warn>Do not directly apply Chandigarh-derived brise-soleil dimensions to Philippine buildings. The 23° latitude difference means Philippine solar altitudes are much steeper year-round. A shading device designed for 31°N will be grossly oversized at 14.6°N. Always recalculate overhang depth using local solar altitude angles—the LEA tests whether you can distinguish climate-specific design from universal application.</Warn>
 Extracted summary:
 - Props: (none)
 - Text: Do not directly apply Chandigarh-derived brise-soleil dimensions to Philippine buildings. The 23° latitude difference means Philippine solar altitudes are much steeper year-round. A shading device designed for 31°N will be grossly oversized at 14.6°N. Always recalculate overhang depth using local solar altitude angles—the LEA tests whether you can distinguish climate-specific design from universal application.
@@ -252,44 +252,47 @@ ExamTip" status="preserved"]
 1. **Overhang Design Calculation**: Design south-facing windows for a Batanes building (20°N latitude). Winter solstice noon altitude = 53.5°. Window height = 2.5 m. Calculate required overhang depth to prevent direct penetration. Verify summer (79°) and equinox (69°) penetration is acceptable (diffuse only).
 </Note>
 
-[SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
+<ExamTip>2. **East-West Facade Shading Strategy**: A 14-story Manila office building has 40% of its facade area facing east and west (solar liability). Design a comprehensive shading strategy combining vertical fins, horizontal shelves, and glazing selection. Calculate cooling load reduction percentage. Specify material, spacing, and angle.</ExamTip>
 Extracted summary:
 - Props: (none)
 - Text: 2. **East-West Facade Shading Strategy**: A 14-story Manila office building has 40% of its facade area facing east and west (solar liability). Design a comprehensive shading strategy combining vertical fins, horizontal shelves, and glazing selection. Calculate cooling load reduction percentage. Specify material, spacing, and angle.
 
-[SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
+<ExamTip>3. **Brise-Soleil Geometric Design**: Using Le Corbusier's Chandigarh Capitol Complex as model, design a brise-soleil facade for a Manila institutional building (library, museum, or court). Specify: (a) horizontal and vertical element spacing, (b) protrusion depth, (c) material, (d) shadow pattern evolution (sketch 4 positions: 8 AM, 12 PM, 4 PM, winter solstice), (e) cooling load reduction estimate.</ExamTip>
 Extracted summary:
 - Props: (none)
 - Text: 3. **Brise-Soleil Geometric Design**: Using Le Corbusier's Chandigarh Capitol Complex as model, design a brise-soleil facade for a Manila institutional building (library, museum, or court). Specify: (a) horizontal and vertical element spacing, (b) protrusion depth, (c) material, (d) shadow pattern evolution (sketch 4 positions: 8 AM, 12 PM, 4 PM, winter solstice), (e) cooling load reduction estimate.
 
-[SLATECAMP_UI_BLOCK:ui_0009 component="ExamTip" status="preserved"]
+<ExamTip>4. **Light Shelf Optimization**: A 18-meter-deep office floor plate requires daylighting to 15 meters depth. Design a light shelf system: (a) shelf depth and angle, (b) reflectance and surface finish, (c) integration with mechanical ventilation louvers (ensure no conflict), (d) maintenance protocol, (e) daylight autonomy impact.</ExamTip>
 Extracted summary:
 - Props: (none)
 - Text: 4. **Light Shelf Optimization**: A 18-meter-deep office floor plate requires daylighting to 15 meters depth. Design a light shelf system: (a) shelf depth and angle, (b) reflectance and surface finish, (c) integration with mechanical ventilation louvers (ensure no conflict), (d) maintenance protocol, (e) daylight autonomy impact.
 
-[SLATECAMP_UI_BLOCK:ui_0010 component="ExamTip" status="preserved"]
+<ExamTip>5. **Shading Device Specification for BERDE Certification**: Select shading devices for a mixed-use building (ground retail, upper residential) in a Coronas Type IV climate (year-round rain, perpetual cloud cover, diffuse light dominant). Justify device choices for thermal control while maximizing daylighting (required for occupant well-being despite limited direct sun). Calculate achievable BERDE points.</ExamTip>
 Extracted summary:
 - Props: (none)
 - Text: 5. **Shading Device Specification for BERDE Certification**: Select shading devices for a mixed-use building (ground retail, upper residential) in a Coronas Type IV climate (year-round rain, perpetual cloud cover, diffuse light dominant). Justify device choices for thermal control while maximizing daylighting (required for occupant well-being despite limited direct sun). Calculate achievable BERDE points.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
+<Callout>
+
+Sun shading devices reduce solar heat gain by 40–70% without sacrificing daylighting; they are essential tropical architecture elements. The **brise-soleil** (sun breaker) and related devices—horizontal louvers, vertical fins, egg-crate screens, light shelves, and overhangs—must be designed for Philippine latitude (5°N–20°N) where solar altitude angles are high even in winter. Le Corbusier's Chandigarh Capitol Complex demonstrates brise-soleil geometry creating dynamic facade patterns while controlling solar penetration; this approach integrates climate responsiveness with architectural expression—a model for contemporary Philippine tropical design.
+</Callout>
 Extracted summary:
 - Props: 
 - Text: Sun shading devices reduce solar heat gain by 40–70% without sacrificing daylighting; they are essential tropical architecture elements. The **brise-soleil** (sun breaker) and related devices—horizont
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0011 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Over-Designing Overhangs for Tropical Latitude" correction="Using temperate-zone logic (2.0–3.0 m overhangs for 40°N latitude) in Philippine 14.6°N. Result: Excessive overhang blocking winter diffuse light and compromising roof/structural aesthetics." context="Philippine winter sun (59.5° altitude) requires shallower depths or angled louvers." />
 Extracted summary:
 - Props: mistake="Over-Designing Overhangs for Tropical Latitude", correction="Using temperate-zone logic (2.0–3.0 m overhangs for 40°N latitude) in Philippine 14.6°N. Result: Excessive overhang blocking winter diffuse light and compromising roof/structural aesthetics.", context="Philippine winter sun (59.5° altitude) requires shallower depths or angled louvers."
 - Text: (none detected)
 
-[SLATECAMP_UI_BLOCK:ui_0012 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Ignoring East-West Exposure" correction="Focusing on south-facing facade shading while neglecting east and west—where solar heat gain is actually greater." context="Unshaded east/west windows undermine overall thermal performance." />
 Extracted summary:
 - Props: mistake="Ignoring East-West Exposure", correction="Focusing on south-facing facade shading while neglecting east and west—where solar heat gain is actually greater.", context="Unshaded east/west windows undermine overall thermal performance."
 - Text: (none detected)
 
-[SLATECAMP_UI_BLOCK:ui_0013 component="WikiMistakeList" status="preserved"]
+<WikiMistakeList mistakes={["Blocking Stack Effect Exhaust. Placing horizontal louvers across roof-level exhaust vents or clerestories, impeding buoyancy-driven ventilation. Natural ventilation effectiveness drops by 40–50%. Always ensure louvers don't block vertical airflow paths.", "Over-Reliance on Motorized Systems. Installing expensive motorized louvers without fixing fundamental design flaws (oversized windows, poor orientation). The building still overheats during electrical failures or sensor malfunctions.", "Inadequate Winter Daylighting. Designing overhangs that block winter diffuse light, forcing daytime electric lighting. Type II/IV climates (perpetual cloud cover) suffer more; Type I (dry season) benefits from deeper shading year-round.", "Misaligned Brise-Soleil Geometry. Copying Chandigarh egg-crate spacing (0.5–0.7 m cells, appropriate for 31°N) in Manila (14.6°N). Result: Oversized cells; insufficient shading for high-altitude tropical sun; poor aesthetic integration."]} />
 Extracted summary:
 - Props: mistakes="{["Blocking Stack Effect Exhaust. Placing horizontal louvers across roof-level exhaust vents or clerestories, impeding buoyancy-driven ventilation. Natural ventilation effectiveness drops by 40–50%. Always ensure louvers don't block vertical airflow paths.", "Over-Reliance on Motorized Systems. Installing expensive motorized louvers without fixing fundamental design flaws (oversized windows, poor orientation). The building still overheats during electrical failures or sensor malfunctions.", "Inadequate Winter Daylighting. Designing overhangs that block winter diffuse light, forcing daytime electric lighting. Type II/IV climates (perpetual cloud cover) suffer more; Type I (dry season) benefits from deeper shading year-round.", "Misaligned Brise-Soleil Geometry. Copying Chandigarh egg-crate spacing (0.5–0.7 m cells, appropriate for 31°N) in Manila (14.6°N). Result: Oversized cells; insufficient shading for high-altitude tropical sun; poor aesthetic integration."]}"
 - Text: (none detected)

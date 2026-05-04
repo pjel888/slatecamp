@@ -12,6 +12,13 @@ The LEA emphasizes major divisions relevant to building construction: Division 0
 
 In Philippine practice, the 3-part format is increasingly adopted by architects in private projects and recommended by the Board of Architecture in educational guidelines. DPWH Standard Specifications (Volumes II and III) do not strictly follow CSI format but share the same logical structure (General, Products/Materials, Execution/Construction). Architects must recognize both systems and be able to translate specifications between them when coordinating with government-regulated projects.
 
+
+<ArticleMedia id="media-masterformat-divisions-chart" layout="single" type="image" status="placeholder"
+  alt="Chart showing all 50 CSI MasterFormat divisions with numbers, titles, and representative work sections for each division"
+  caption="Future chart: CSI MasterFormat divisions 01–50 — numbers, titles, and sample work sections"
+  suggestedAsset="Reference chart or table of MasterFormat divisions with section examples"
+  placementIntent="Provides navigation reference for locating specification sections" />
+
 ## Key Provisions
 
 | Division | Major Category | Key Sections | Philippine Relevance | LEA Testing |
@@ -35,6 +42,12 @@ The adaptation of CSI to Philippine practice requires sensitivity to tropical co
 
 The 3-part format has become standard in private practice quality specifications, but DPWH does not require strict adherence. When coordinating across private and public projects, architects must be able to reformat specifications between systems. Understanding CSI structure demonstrates specification literacy and is tested on the LEA.
 
+
+<ArticleMedia id="media-masterformat-navigation-guide" layout="single" type="image" status="placeholder"
+  alt="Navigation guide for CSI MasterFormat showing how to find the correct division by material category with example materials mapped to division numbers"
+  caption="Future chart: CSI MasterFormat navigation guide — materials mapped to division numbers"
+  suggestedAsset="Reference chart or decision tree for MasterFormat division lookup"
+  placementIntent="Helps learners locate specification sections for any material" />
 ## How It's Tested
 
 _Pattern 1 — Division Identification:_ The exam presents a specification item and asks which CSI division it belongs to. Example: "Furnish and install fiberglass-reinforced polyester waterproofing membrane over concrete deck, with 15-year warranty." Answer: Division 07 (Thermal & Moisture Protection), not Division 03 (Concrete). The concrete is Part 2 (Products); the waterproofing is Part 3 (Execution).

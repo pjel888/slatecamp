@@ -1,17 +1,12 @@
 {
-  "attempted_at": "2026-05-04T00:07:13.991Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:18:05.758Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "Failed to update wiki_articles.content: Bad Request"
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "f76bad6c-4bdf-4d2c-bdfb-a3381c42e320",
   "slug": "spp-doc-207-design-build-services",
@@ -20,7 +15,7 @@
   ],
   "remote_hash_before": "sha256:1d80806d4aeb4dd0c1994185fc039cf5898e0f85256975a1cd18e998d41ef7f0",
   "original_hash": "sha256:1d80806d4aeb4dd0c1994185fc039cf5898e0f85256975a1cd18e998d41ef7f0",
-  "candidate_hash": "sha256:25fcafe299839914d823056ed812920fa7cbdf1c783656c999a1bcb29a924ca3",
+  "candidate_hash": "sha256:8a506c1f56c679178a37c64a5e35c950ece5622f3281fbd06facc2da2290dfe7",
   "stale_check_passed": true,
   "remote_updated_at_before": "2026-05-03T13:52:43.315339+00:00"
 }

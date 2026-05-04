@@ -66,7 +66,7 @@ This matches the table’s **maximum run length** and **maximum rise** values fo
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="new"]
 
-[SLATECAMP_UI_BLOCK:ArticleMedia name="ramp-slope-tier-comparison" type="diagram" caption="Visual comparison of BP 344 ramp slope tiers: 1:20 (5% Gold, preferred, 15m landing interval), 1:15 (6.67% Max for new work, 10.5m max run, 700mm max rise), 1:12 (8.33% Reno-only for existing buildings). Side-by-side elevation profiles showing steepness difference and landing intervals."]
+<ArticleMedia id="media-ramp-slope-tier-comparison" type="diagram" caption="Visual comparison of BP 344 ramp slope tiers: 1:20 (5% Gold, preferred, 15m landing interval), 1:15 (6.67% Max for new work, 10.5m max run, 700mm max rise), 1:12 (8.33% Reno-only for existing buildings). Side-by-side elevation profiles showing steepness difference and landing intervals." />
 
 ---
 
@@ -136,7 +136,7 @@ _Reason for the Law:_ Dual heights serve both seated and ambulant users; extensi
 - **800–900 mm** above nosings → general stair handrail band under PD 1096 IRR (without the dual‑rail requirement).[file:1]
 - Keep these regimes separate in both design and exam answers.
 
-[SLATECAMP_UI_BLOCK:ArticleMedia name="ramp-handrail-and-edge-protection" type="diagram" caption="Section and elevation of accessible ramp: dual handrails at 700mm and 900mm height, round grip diameter 30-40mm, 300mm horizontal extensions at top and bottom, 100mm minimum raised edge curb on open sides, and 1100mm guard rail where drop exceeds 750mm above grade."]
+<ArticleMedia id="media-ramp-handrail-and-edge-protection" type="diagram" caption="Section and elevation of accessible ramp: dual handrails at 700mm and 900mm height, round grip diameter 30-40mm, 300mm horizontal extensions at top and bottom, 100mm minimum raised edge curb on open sides, and 1100mm guard rail where drop exceeds 750mm above grade." />
 
 ---
 
@@ -167,7 +167,7 @@ _Reason for the Law:_ Dual heights serve both seated and ambulant users; extensi
 | Top level landing    | 1800 mm                |
 | **TOTAL**            | **26,400 mm = 26.4 m** |
 
-[SLATECAMP_UI_BLOCK:ArticleMedia name="ramp-footprint-computation" type="diagram" caption="Full ramp footprint diagram for 1400mm total rise at 1:15 slope: bottom landing (1800mm) → Run 1 (10,500mm) → intermediate landing (1800mm) → Run 2 (10,500mm) → top landing (1800mm). Total horizontal footprint = 26,400mm with key dimensions labeled."]
+<ArticleMedia id="media-ramp-footprint-computation" type="diagram" caption="Full ramp footprint diagram for 1400mm total rise at 1:15 slope: bottom landing (1800mm) → Run 1 (10,500mm) → intermediate landing (1800mm) → Run 2 (10,500mm) → top landing (1800mm). Total horizontal footprint = 26,400mm with key dimensions labeled." />
 
 Common exam mistake: answering **21.0 m** and forgetting the three required landings.
 
@@ -235,7 +235,7 @@ If you want, next we can generate a combined **stairs–ramps–elevators** boar
 
 
 
-<ArticleMedia type="image" caption="BP 344 Four-Tier Ramp Slope System — Tier 1 Through Tier 4 Comparison" description="Four-panel comparison of BP 344 ramp tiers: Tier 1 (1:12-1:15, 6.0m max run), Tier 2 (1:15-1:20, 12.0m max run), Tier 3 (1:20-1:25, no max run), Tier 4 (>1:25 classified as walkway). Each panel shows slope ratio, max run, landing dimensions (1.50m min, 1.80m preferred), edge protection (100mm), and dual handrail heights (700mm/900mm)." />
+<ArticleMedia type="image" caption="BP 344 Four-Tier Ramp Slope System — Tier 1 Through Tier 4 Comparison" alt="Four-panel comparison of BP 344 ramp tiers: Tier 1 (1:12-1:15, 6.0m max run), Tier 2 (1:15-1:20, 12.0m max run), Tier 3 (1:20-1:25, no max run), Tier 4 (>1:25 classified as walkway). Each panel shows slope ratio, max run, landing dimensions (1.50m min, 1.80m preferred), edge protection (100mm), and dual handrail heights (700mm/900mm)." />
 ## Cross‑References
 
 **Bp 344 Accessible Washrooms**, **Bp 344 Elevator Dimensions**, **Widths Slopes**, **Stairs Handrails Guardrails**

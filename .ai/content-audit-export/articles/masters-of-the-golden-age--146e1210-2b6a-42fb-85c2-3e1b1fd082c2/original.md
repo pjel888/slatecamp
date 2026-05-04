@@ -6,8 +6,18 @@
 ## Learning Goal
 
 <Tip>Focus on the architect's defining philosophy and key built works. The LEA frequently tests the relationship between an architect's theoretical principles and their physical execution in specific buildings.</Tip>
+Extracted summary:
+<ExamTip>**LEA Pattern:** Questions about this architect often present an unfamiliar building and ask you to identify the architect based on characteristic details — look for signature elements like cruciform columns (Mies), pilotis (Corbusier), or structural expressionism (Gaudi).</ExamTip>
+Extracted summary:
+<Tip>Focus on the architect's defining philosophy and key built works. The LEA frequently tests the relationship between an architect's theoretical principles and their physical execution in specific buildings.</Tip>
+Extracted summary:
+- Props: (none)
+- Text: Focus on the architect's defining philosophy and key built works. The LEA fre...
 
 <Tip>Focus on the architect's defining philosophy and key built works. The LEA frequently tests the relationship between an architect's theoretical principles and their physical execution in specific buildings.</Tip>
+Extracted summary:
+- Props: (none)
+- Text: Focus on the architect's defining philosophy and key built works. The LEA fre...
 
 - Identify the four National Artists for Architecture (Nakpil, Antonio, Locsin, Mañosa) in chronological order with their key buildings and signature styles.
 - Explain Locsin's "floating volume" concept and Mañosa's Neo-Vernacular philosophy (Filipino values, climate response, indigenous materials).
@@ -62,6 +72,12 @@ You are walking through the CCP Complex along Manila Bay at dusk. To your left, 
 ---
 
 <ExamTip>**LEA Pattern:** Questions about this architect often present an unfamiliar building and ask you to identify the architect based on characteristic details — look for signature elements like cruciform columns (Mies), pilotis (Corbusier), or structural expressionism (Gaudi).</ExamTip>
+Extracted summary:
+
+component="ExamTip" status="preserved"]
+<Note>
+**LEA Pattern:** Questions about this architect often present an unfamiliar b...
+</Note>
 ## LEA Exam Traps and Common Mistakes
 
 - **Trap: Confusing Nakpil and Antonio projects.** Both were Art Deco contemporaries active in the same era. Remember: **Antonio = FEU Campus and theaters**; **Nakpil = Quiapo Church, Rizal Theater, UP buildings**. The exam may pair a Nakpil building with Antonio's name as a distractor.
@@ -129,3 +145,5 @@ D) Manila Metropolitan Theater
 
 **Le Corbusier Five Points**, **The Bauhaus And International Style**, **Mies Van Der Rohe**, **Pre Columbian Mesoamerica**
 
+
+<!-- no-media-needed: existing content format is sufficient without visual media -->

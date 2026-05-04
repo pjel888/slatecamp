@@ -39,7 +39,7 @@ Architects must ensure the contract aligns with the Standards of Professional Pr
 
 RA 9184 allows three methods: competitive bidding (open to all qualified consultants), limited bidding (restricted to a pre-qualified list, used when only few firms have required expertise), and single source procurement (used in exceptional cases—emergency, sole source availability, or direct contracting with existing framework agreements).
 
-[SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
+<ExamTip>Three procurement methods for architecture under RA 9184: (1) **Competitive bidding** — standard, open to all qualified; (2) **Limited bidding** — restricted to pre-qualified list, used when few firms have expertise; (3) **Single source procurement** — rare, for emergencies or sole source. Single source for architecture is exceptional.</ExamTip>
 
 For architecture, competitive bidding is standard. The government advertises the position, receives qualifications from interested firms, shortlists the best qualified, and either selects based on qualifications or conducts competitive fee bidding. Single source procurement for architecture is rare but may apply when a firm has specialized expertise or when continuing an ongoing design for a complex project.
 
@@ -47,7 +47,7 @@ For architecture, competitive bidding is standard. The government advertises the
 
 RA 9184 strictly prohibits collusion, fraud, bribery, conflict of interest, and bid-rigging. Architects and their firms must not communicate with other bidding consultants to arrange fees, divide work, or coordinate responses. Doing so violates the law and can result in permanent disqualification from government procurement.
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="Tip" status="preserved"]
+<Tip>**Prohibited activities:** collusion, fraud, bribery, conflict of interest, and bid-rigging. Architects must NOT communicate with other bidding firms to arrange fees or coordinate responses. Violations can result in permanent disqualification from government procurement. Disclose all conflicts of interest.</Tip>
 
 Architects must disclose conflicts of interest. If a firm has worked for the client recently on a related project, or if the same personnel would be assigned to conflicting projects, disclosure and recusal may be required. Failure to disclose creates liability.
 
@@ -61,17 +61,19 @@ Government contracts are subject to government accounting rules and COA audit. A
 
 RA 12009 (2024) modernizes RA 9184 further. Key updates include enhanced digital procurement systems (e-Procurement), stricter compliance monitoring, and refinements to procurement thresholds and methods. Architects should stay informed of updated implementing rules and familiarize themselves with digital submission and bidding platforms used by their government clients.
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
+<LawCallout code="ra9184" section="Section 4 - Scope and Application">
+Legal Basis: RA 9184 (Government Procurement Reform Act), as amended by RA 12009 (2024). Governs procurement of consulting services including architectural design for all government entities, GOCCs, and LGUs.
+</LawCallout>
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
+<Warn />
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="ExamTip" status="preserved"]
+<ExamTip />
 
 ---
 
 
 
-<ArticleMedia type="image" caption="RA 9184 Government Procurement — Procurement Methods and Thresholds" description="Decision tree showing RA 9184 procurement methods: Competitive Bidding (default, above ₱1M infrastructure), Shopping (below thresholds), Negotiated Procurement (emergency, exclusive source), Direct Contracting (proprietary items). Side panel shows procurement thresholds and architecture/consulting services exemptions. Architect's role in bid document preparation highlighted." />
+<ArticleMedia type="image" caption="RA 9184 Government Procurement — Procurement Methods and Thresholds" alt="Decision tree showing RA 9184 procurement methods: Competitive Bidding (default, above ₱1M infrastructure), Shopping (below thresholds), Negotiated Procurement (emergency, exclusive source), Direct Contracting (proprietary items). Side panel shows procurement thresholds and architecture/consulting services exemptions. Architect's role in bid document preparation highlighted." />
 ## Related Articles
 
 - [Sole Proprietorship](lea-prac-frm-001)

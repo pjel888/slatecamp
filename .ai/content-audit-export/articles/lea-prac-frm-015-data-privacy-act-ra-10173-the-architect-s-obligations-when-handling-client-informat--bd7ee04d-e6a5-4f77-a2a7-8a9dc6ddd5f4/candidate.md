@@ -53,19 +53,21 @@ Professional disciplinary bodies (Board of Architecture) may also view serious p
 
 Architects should implement the following: (1) maintain a data inventory documenting what personal information is collected, why, and how long it is retained; (2) draft privacy notices to inform data subjects; (3) obtain written consent before collecting sensitive data; (4) implement confidentiality agreements with staff; (5) encrypt sensitive files; (6) restrict access to authorized personnel only; (7) maintain audit trails; (8) secure disposal of information when no longer needed; (9) have a breach response plan; and (10) provide staff training on data protection obligations.
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
+<LawCallout code="ra10173" section="Section 11 - Security of Personal Information">
+Legal Basis: RA 10173 (Data Privacy Act of 2012). Architects collecting/processing client personal data are 'personal information controllers' subject to NPC (National Privacy Commission) oversight.
+</LawCallout>
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
+<Warn />
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
+<ExamTip />
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="Tip" status="preserved"]
+<Tip />
 
 ---
 
 
 
-<ArticleMedia type="image" caption="Data Privacy Compliance for Architects — RA 10173 Workflow" description="Flowchart showing architect's data privacy obligations: Collect client data → Inform data subject (privacy notice) → Obtain consent → Process only for specified purpose → Implement security measures → Breach notification (if applicable) → Retention/destruction policy. Side panel shows architect's responsibilities as personal information controller, including NPC registration requirements." />
+<ArticleMedia type="image" caption="Data Privacy Compliance for Architects — RA 10173 Workflow" alt="Flowchart showing architect's data privacy obligations: Collect client data → Inform data subject (privacy notice) → Obtain consent → Process only for specified purpose → Implement security measures → Breach notification (if applicable) → Retention/destruction policy. Side panel shows architect's responsibilities as personal information controller, including NPC registration requirements." />
 ## Related Articles
 
 - [Sole Proprietorship](lea-prac-frm-001)

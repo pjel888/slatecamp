@@ -16,13 +16,13 @@ Housing finance in the Philippines operates through a tiered system designed to 
 **RA 6552 (Maceda Law)**, formally the Realty Installment Buyer Protection Act (1972), provides critical protections for individuals purchasing property on installment. The law distinguishes between buyers who have paid less than 2 years and those who have paid 2 years or more. Buyers with less than 2 years of installment payments receive a grace period (1 month per year paid) but no refund if the seller cancels the contract. Buyers with 2 years or more paid receive a minimum 50% refund of total payments, plus an additional 5% per year for payments beyond 5 years (capped at 90% total refund). The grace period is calculated as 1 month for every year of installments paid—a buyer with 4 years of payments gets 4 months grace before the slea can be cancelled for non-payment.
 
 These mechanisms—multi-source financing, community-based programs, and buyer protection laws—create a comprehensive framework ensuring affordability while preventing exploitative practices.
-<ArticleMedia id="media-lea-plan-003-03-core-concept" a type="image" caption="Housing Finance System — Pag-IBIG, SHFC, NHA Roles" description="Diagram showing housing finance institutions and their roles: Pag-IBIG/HDMF (individual buyer housing loans), SHFC (Community Mortgage Program - community-based), NHA (housing producer, not financier). Maceda Law (RA 6552) installment buyer protection stages shown." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-plan-003-03-core-concept" type="image" caption="Housing Finance System — Pag-IBIG, SHFC, NHA Roles" alt="Diagram showing housing finance institutions and their roles: Pag-IBIG/HDMF (individual buyer housing loans), SHFC (Community Mortgage Program - community-based), NHA (housing producer, not financier). Maceda Law (RA 6552) installment buyer protection stages shown." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="WikiExamTable" status="preserved"]
+<WikiExamTable headers=["Financing Entity", "Primary Function", "Loan Types", "Mandatory Membership"] rows=[["**Pag-IBIG/HDMF**", "End-buyer housing loans", "Socialized (traditionally ≤₱580k; 4PH up to ₱1.8M), low-cost, open-market (≤₱6M housing loan)", "Yes, for all employees"], ["**SHFC**", "Community-based mortgage financing", "Community Mortgage Program (CMP)", "Community organizations only"], ["**NHA**", "Housing production and resettlement", "Medium-rise, core housing, sites-and-services", "Government agency (not a lender)"], ["**SSS**", "Social insurance and housing loans", "Employee housing loans", "Self-employed/private sector workers"], ["**GSIS**", "Government employee insurance and housing", "Government employee housing loans", "Government employees"]] />
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiExamTable" status="preserved"]
+<WikiExamTable headers=["Installments Paid", "Buyer Rights on Cancellation", "Grace Period"] rows=[["Less than 2 years", "Grace period of 60 days (if ≥1 year paid) or 30 days (if &lt;1 year); NO refund required", "1 month per year paid"], ["2 years or more", "50% of total payments refunded; +5% per year above 5 years (capped 90%)", "Still applies (1 month per year)"]] />
 
 ## Philippine Context
 
@@ -36,7 +36,7 @@ The Philippine housing finance system reflects the nation's struggle to balance 
 
 **Pattern 3 — CMP Eligibility:** "Which program allows a community organization collectively to purchase the land they occupy?" → Community Mortgage Program (SHFC). Tests understanding that CMP is community-level, not individual-buyer financing.
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+<Tip>Maceda Law: < 2 years = grace only (no refund); ≥ 2 years = 50% minimum refund. Grace = 1 month per year paid. NHA builds housing; Pag-IBIG finances buyer loans.</Tip>
 
 **Exam Tip:** NHA does NOT finance individual buyer loans. NHA PRODUCES housing. SHFC finances community-based programs via CMP. Pag-IBIG finances individual wage-worker loans. This agency role distinction is frequently tested.
 

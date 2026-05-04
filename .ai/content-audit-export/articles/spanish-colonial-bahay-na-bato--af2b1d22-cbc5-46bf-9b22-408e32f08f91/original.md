@@ -179,3 +179,5 @@ D) Nuestra Señora de la Asunción, Santa Maria
 
 **Spanish Colonial Laws Of The Indies**, **Pre Colonial Vernacular**, **Colonial European Influence**, **Modern Filipino Identity**
 
+
+<!-- no-media-needed: existing content format is sufficient without visual media -->

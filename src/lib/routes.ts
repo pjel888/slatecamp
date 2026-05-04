@@ -137,7 +137,7 @@ export const ROUTES = {
   // ── Wiki ─────────────────────────────────────
   wiki: {
     root: '/dashboard/wiki',
-    article: (slug: string) => `/dashboard/wiki/${slug}` as const,
+    article: (articleId: string) => `/dashboard/wiki/${articleId}` as const,
   },
 
   // ── Tools / Calculators ──────────────────────

@@ -66,6 +66,8 @@ Latin American modernism rejected European Bauhaus rigidity in favor of sculptur
 
 **Fountain as Spiritual Element** — Barragán's integration of water into private gardens; evokes Islamic gardens, Mexican baroque, and personal contemplation rather than public spectacle.
 
+<ArticleMedia id="media-hist-013-02-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparison of Latin American modernism's three distinct voices: Costa (theoretical planning, Brasília pilot plan), Niemeyer (free-form concrete curves, Brasília cathedral), and Barragán (color, light, walls, water, Casa Barragán)." caption="Latin American Modernism — Costa, Niemeyer, Barragán" suggestedAsset="Style comparison illustration" placementIntent="Style comparison for architectural period" />
+
 ## Related Articles
 
 See also within Latin American Architecture: **lea-hist-013-01-core-concept**.

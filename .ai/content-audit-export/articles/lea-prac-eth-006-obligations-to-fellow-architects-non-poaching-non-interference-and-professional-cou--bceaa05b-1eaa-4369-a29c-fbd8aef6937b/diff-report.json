@@ -1,46 +1,38 @@
 {
   "article_id": "bceaa05b-1eaa-4369-a29c-fbd8aef6937b",
   "slug": "lea-prac-eth-006-obligations-to-fellow-architects-non-poaching-non-interference-and-professional-courtesy",
-  "generated_at": "2026-05-04T00:06:10.464Z",
-  "old_hash": "sha256:5cdee3756cdd38a77fb4915cca698d17851608effa983b9605519d5a62a1d96f",
-  "new_hash": "sha256:24256766a696c0135f362efdd5f8e56ebe31dcf9b0f1c64de3260739c53d2bb8",
-  "original_hash": "sha256:5cdee3756cdd38a77fb4915cca698d17851608effa983b9605519d5a62a1d96f",
+  "generated_at": "2026-05-04T02:16:40.619Z",
+  "old_hash": "sha256:da8bbc947bd9ac0f13636777575232eda5e97c609657c85923fd956c3922a066",
+  "new_hash": "sha256:da8bbc947bd9ac0f13636777575232eda5e97c609657c85923fd956c3922a066",
+  "original_hash": "sha256:da8bbc947bd9ac0f13636777575232eda5e97c609657c85923fd956c3922a066",
   "normalized_hash": "sha256:24256766a696c0135f362efdd5f8e56ebe31dcf9b0f1c64de3260739c53d2bb8",
-  "candidate_hash": "sha256:24256766a696c0135f362efdd5f8e56ebe31dcf9b0f1c64de3260739c53d2bb8",
-  "changed": true,
-  "changed_line_count": 42,
+  "candidate_hash": "sha256:da8bbc947bd9ac0f13636777575232eda5e97c609657c85923fd956c3922a066",
+  "changed": false,
+  "changed_line_count": 0,
   "inserted_line_count": 0,
-  "deleted_line_count": 6,
+  "deleted_line_count": 0,
   "ui_blocks_original_count": 4,
-  "ui_blocks_candidate_count": 0,
-  "ui_blocks_changed_count": 4,
+  "ui_blocks_candidate_count": 4,
+  "ui_blocks_changed_count": 0,
   "ui_blocks_count": 4,
-  "unresolved_placeholders_count": 1,
-  "preserved_blocks_count": 0,
+  "unresolved_placeholders_count": 0,
+  "preserved_blocks_count": 4,
   "changed_text_summary": {
-    "changed": 42,
+    "changed": 0,
     "inserted": 0,
-    "deleted": 6,
-    "original_line_count": 71,
-    "candidate_line_count": 65
+    "deleted": 0,
+    "original_line_count": 73,
+    "candidate_line_count": 73
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0001",
-      "ui_0002",
-      "ui_0003",
-      "ui_0004"
-    ],
-    "changed_count": 4
+    "missing_block_ids": [],
+    "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate contains unresolved UI block placeholders.",
-    "Candidate is missing 4 preserved UI block(s)."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 4 preserved UI block(s)."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

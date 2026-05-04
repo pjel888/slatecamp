@@ -81,15 +81,15 @@ The LEA evaluates pre/post-construction knowledge through:
 4. _Occupancy compliance_ — Explain why occupancy permit is required and consequences of illegal occupancy.
 5. _Documentation_ — Importance of as-built drawings and defect records for warranty and future maintenance.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+<Tip>The building permit process per PD 1096 is a regulatory gate. Incomplete or non-conforming submissions cause delays. As-built drawings and punch list documentation protect the owner's legal position and warranty claims. Never allow occupancy without final occupancy permit (CO) from LBO—liability falls on the builder and owner if code violations are discovered post-occupancy.</Tip>
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard title="Proceeding Without Building Permit" body="A contractor begins construction without waiting for building permit approval to accelerate schedule. The LBO discovers unpermitted work and orders demolition. Project suffers complete loss. PD 1096 requires permits; violation is criminal." />
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard title="Inadequate Soil Testing" body="A geotechnical investigation finds bearing capacity of 150 kPa, but the design (prepared elsewhere) assumes 200 kPa. Foundation settlement occurs post-occupancy, requiring underpinning and major repairs. Proper pre-design investigation prevents foundation disasters." />
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
+<WikiMistakeList items={["Occupying the building without occupancy permit (CO)—legally prohibited; owner/tenant are liable. Final inspection must be completed and violations corrected before CO issuance.", "Failing to document punch list items and closure—contractor disputes arise post-occupancy; proper documentation protects all parties. Punch list must be signed off before final payment.", "As-built drawings incomplete or missing—operations, maintenance, and future renovation suffer. As-builts must accurately reflect field changes, rebar placement, MEP routing, etc.", "Underestimating permit approval time—expect 30–60 days post-application. Plan accordingly; expedited processing (if available) requires additional fees and coordination.", "Ignoring environmental clearances (ECC, DENR permits for hazardous materials)—compliance is mandatory. Asbestos/lead abatement must be documented by certified contractors."]} />
 
 ## Related Articles
 

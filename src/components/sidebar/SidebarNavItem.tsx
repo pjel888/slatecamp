@@ -14,13 +14,19 @@ import {
   ICON_TIER_OPACITY,
 } from './types'
 import type { SidebarNavItemProps } from './types'
+import type { NavigationPendingInfo } from './types'
 
 // ---------------------------------------------------------------------------
 // SidebarNavItem — HTML v4 anatomy
 // Row height: 32px. Grid: 40px fixed icon slot + label column.
 // The icon slot never changes, so the icon center stays at padding + 20px.
 // Active indicator stays inside the row so label clipping cannot hide it.
+// Extended with navigation-pending feedback (spinner + disabled state).
 // ---------------------------------------------------------------------------
+
+interface ExtendedSidebarNavItemProps extends SidebarNavItemProps {
+  navigationPending?: NavigationPendingInfo
+}
 
 export const SidebarNavItem = ({
   item,
@@ -28,19 +34,45 @@ export const SidebarNavItem = ({
   expanded,
   showTooltip,
   onNavigate,
-}: SidebarNavItemProps) => {
-  const { icon: Icon, label, href, tier, shortcut } = item
+  navigationPending,
+}: ExtendedSidebarNavItemProps) => {
+  const { icon: Icon, label, href, tier, id } = item
 
   const tierOpacity = ICON_TIER_OPACITY[tier]
+
+  // Navigation pending state
+  const isNavigating = navigationPending?.isNavigating ?? false
+  const isItemPending = navigationPending?.isPendingHref(href) ?? false
+  const isItemDisabled = isNavigating && !isItemPending
+
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    // Prevent clicks on disabled items
+    if (isItemDisabled) {
+      e.preventDefault()
+      e.stopPropagation()
+      return
+    }
+
+    // Start navigation pending state if not already set
+    if (!isItemPending && !isActive && navigationPending) {
+      navigationPending.startNavigation(href, { id })
+    }
+
+    // Call existing onNavigate (used for active-session confirm dialog)
+    onNavigate(e)
+  }
 
   const anchor = (
     <Link
       href={href}
-      onClick={onNavigate}
+      onClick={handleClick}
       aria-current={isActive ? 'page' : undefined}
       aria-label={expanded ? undefined : label}
+      aria-disabled={isItemDisabled ? true : undefined}
+      aria-busy={isItemPending ? true : undefined}
       data-t={label}
-      data-k={shortcut}
+      data-k={item.shortcut}
+      data-pending={isItemPending ? '' : undefined}
       className={cn(
         // Base layout
         'relative grid h-8 w-full grid-cols-[40px_minmax(0,1fr)] items-center gap-1 overflow-hidden rounded-md px-0 outline-none',
@@ -56,37 +88,55 @@ export const SidebarNavItem = ({
         isActive && [
           'bg-primary-50 dark:bg-primary-900/20',
           'text-primary dark:text-primary-400',
-          // ::before active left-border indicator
           'before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2',
           'before:w-[2.5px] before:h-4',
           'before:bg-camp-cobalt dark:before:bg-primary-400',
           'before:rounded-r-sm',
-          'before:content-[\'\']',
+          "before:content-['']",
+        ],
+        // Pending state — subtle highlight + cursor
+        isItemPending && [
+          'cursor-progress',
+          'bg-primary-50/60 dark:bg-primary-900/10',
+          'text-primary/80 dark:text-primary-400/80',
+        ],
+        // Disabled state — muted, no pointer interaction
+        isItemDisabled && [
+          'pointer-events-none',
+          'opacity-40',
+          'cursor-progress',
+          'select-none',
         ],
       )}
     >
       {/* Icon container: 40x32px, spatially locked */}
       <span className={ICON_CONTAINER_CLASS}>
-        <Icon
-          size={ICON_SIZE}
-          weight="regular"
-          style={{
-            opacity:
-              isActive || tier === 'default'
-                ? 1.0
-                : tierOpacity,
-          }}
-          className={cn(
-            'transition-opacity duration-[120ms]',
-            // On hover the parent rule drives color; icon inherits currentColor
-            'shrink-0',
-            // Active/hover: opacity snaps to 1 via parent group trigger
-            (isActive) && 'opacity-100',
-          )}
-        />
+        {isItemPending ? (
+          // Spinner replaces icon for pending item
+          <span
+            className="block h-4 w-4 animate-spin rounded-full border-[2px] border-current border-t-transparent motion-reduce:animate-none motion-reduce:border-t-0 motion-reduce:opacity-50"
+            aria-hidden="true"
+          />
+        ) : (
+          <Icon
+            size={ICON_SIZE}
+            weight="regular"
+            style={{
+              opacity:
+                isActive || tier === 'default'
+                  ? 1.0
+                  : tierOpacity,
+            }}
+            className={cn(
+              'transition-opacity duration-[120ms]',
+              'shrink-0',
+              isActive && 'opacity-100',
+            )}
+          />
+        )}
       </span>
 
-      {/* Label — clipped/faded in collapsed mode without affecting icon position */}
+      {/* Label — clipped/faded in collapsed mode */}
       <span
         aria-hidden={!expanded}
         className={cn(
@@ -98,21 +148,12 @@ export const SidebarNavItem = ({
         {label}
       </span>
 
-      {/* Keyboard badge — only when expanded and shortcut exists */}
-      {/* {expanded && shortcut && (
-        <span
-          className={cn(
-            'ml-auto mr-1 font-mono text-[11px] font-medium',
-            'text-gray-400 dark:text-gray-500',
-            'bg-gray-100 dark:bg-gray-800',
-            'px-1 rounded-[3px]',
-            'transition-opacity duration-[180ms]',
-            expanded ? 'opacity-100' : 'opacity-0',
-          )}
-        >
-          {shortcut}
+      {/* Visually hidden loading announcement for screen readers */}
+      {isItemPending && (
+        <span className="sr-only" role="status" aria-live="polite" aria-atomic="true">
+          Loading {label}…
         </span>
-      )} */}
+      )}
     </Link>
   )
 
@@ -121,12 +162,19 @@ export const SidebarNavItem = ({
       {showTooltip && !expanded ? (
         <TooltipProvider delay={0}>
           <Tooltip>
-            <TooltipTrigger asChild>{anchor}</TooltipTrigger>
+            <TooltipTrigger asChild>
+              {isItemPending ? (
+                // In collapsed mode with tooltip, wrap in a span to avoid tooltip trigger issues
+                <span>{anchor}</span>
+              ) : (
+                anchor
+              )}
+            </TooltipTrigger>
             <TooltipContent side="right" sideOffset={8}>
               {label}
-              {shortcut && (
+              {item.shortcut && (
                 <span className="ml-1.5 text-gray-400 dark:text-gray-500">
-                  {shortcut}
+                  {item.shortcut}
                 </span>
               )}
             </TooltipContent>

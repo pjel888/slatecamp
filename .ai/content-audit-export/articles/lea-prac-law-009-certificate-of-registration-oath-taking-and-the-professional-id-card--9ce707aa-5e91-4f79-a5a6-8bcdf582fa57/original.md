@@ -59,3 +59,5 @@ Extracted summary:
 <Note />
 
 <ExamTip />
+
+<!-- no-media-needed: professional practice article, text/tables/UI blocks are optimal format -->

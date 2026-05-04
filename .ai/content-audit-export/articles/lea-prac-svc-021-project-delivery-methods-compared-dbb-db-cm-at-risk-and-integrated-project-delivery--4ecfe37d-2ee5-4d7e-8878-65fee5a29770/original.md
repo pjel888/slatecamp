@@ -1,14 +1,20 @@
 ## Project Delivery Methods Compared: DBB, DB, CM-at-Risk, and Integrated Project Delivery
 
-<SPP206RefServices />
+## Learning Goal
 
-Architects and project teams select delivery methods based on project characteristics, stakeholder priorities, and risk tolerance. The four primary delivery methods—Design-Bid-Build (DBB), Design-Build (DB), Construction Manager at Risk (CM-at-Risk), and Integrated Project Delivery (IPD)—represent distinct approaches to coordinating design and construction.
+After studying this article, you should be able to:
 
+- Compare project delivery methods: DBB, DB, CM at Risk, IPD.
+- Explain the architect's role in each delivery method.
+- Distinguish methods by risk allocation, owner involvement, and sequencing.
+- Apply delivery method selection criteria to project scenarios.
+
+---
 ### Design-Bid-Build (Traditional)
 
 |Design-Bid-Build separates design and construction into sequential phases. The architect completes design through contract documents. After design approval, contractors bid for construction work, with the lowest responsive bid typically selected. Construction then proceeds under the selected contractor's management.
 
-<ArticleMedia type="delivery-comparison" caption="Project Delivery Methods Comparison — DBB, DB, CM-at-Risk, and IPD" description="Comparison visual contrasting four project delivery methods: Design-Bid-Build (sequential, low risk), Design-Build (integrated, compressed schedule), CM-at-Risk (hybrid with GMP), and Integrated Project Delivery (collaborative, shared risk/reward). Shows architect role, risk allocation, sequencing, and owner involvement for each." />
+<ArticleMedia id="media-lea-prac-svc-021-project-delivery-method" a type="image" caption="Project Delivery Methods Comparison — DBB, DB, CM-at-Risk, and IPD" description="Comparison visual contrasting four project delivery methods: Design-Bid-Build (sequential, low risk), Design-Build (integrated, compressed schedule), CM-at-Risk (hybrid with GMP), and Integrated Project Delivery (collaborative, shared risk/reward). Shows architect role, risk allocation, sequencing, and owner involvement for each." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 DBB maintains clear separation of responsibilities. The architect provides design and administers the contract during construction. The contractor bears construction risk and responsibility for schedule and cost. The client receives a completed design before committing construction funds, providing design clarity and competitive construction pricing.
 
@@ -49,3 +55,37 @@ Project characteristics inform delivery method selection. Design-Bid-Build suits
 The architect's role varies by delivery method. In DBB, the architect maintains design authority and contract administration. In Design-Build, the architect shares responsibility with the contractor. In CM-at-Risk, the architect collaborates with the CM while retaining design authority. In IPD, the architect is an equal stakeholder in collaborative decision-making.
 
 Understanding these delivery method differences enables architects and clients to select approaches aligned with project objectives and stakeholder capabilities.
+
+<SPP206RefServices />
+
+<ProcessFlow>
+<ol>
+  <li><strong>Project Definition</strong> — Problem identification</li>
+  <li><strong>Schematic Design</strong> — 15% fee; conceptual design</li>
+  <li><strong>Design Development</strong> — 20% fee; detailed design</li>
+  <li><strong>Contract Documents</strong> — 50% fee; construction docs</li>
+  <li><strong>Bidding/Negotiation</strong> — 5% fee; contractor selection</li>
+  <li><strong>Construction Admin.</strong> — 10% fee; site visits</li>
+</ol>
+</ProcessFlow>
+
+<LawCallout code="irr" section="SPP Documents" title="Professional Practice Framework">SPP Documents 201–209 establish standards for architectural services scope, fee structures, and professional responsibilities under RA 9266.</LawCallout>
+
+<ExamTip>Fee distribution: SD=15%, DD=20%, CD=50%, BA=5%, CA=10%. Contract Documents (50%) is the largest phase. Cumulative: 15%→35%→85%→90%→100%.</ExamTip>
+
+---
+
+## Related Articles
+
+- [SPP Doc 202 Six-Phase Framework](lea-prac-svc-004)
+- [Schematic Design Phase](lea-prac-svc-005)
+- [Design Development Phase](lea-prac-svc-006)
+- [Contract Documents Phase](lea-prac-svc-007)
+- [Bidding and Construction Admin](lea-prac-svc-008)
+- [Pre-Design Services](lea-prac-svc-001)
+- [Specialized Services](lea-prac-svc-009)
+- [Design-Build Delivery](lea-prac-svc-019)
+- [Fee Compensation Methods](lea-prac-cmp-001)
+- [Owner-Architect Agreement](lea-prac-ctr-001)
+
+<KeyValues items={[{"value": "15%", "label": "Schematic Design"}, {"value": "20%", "label": "Design Development"}, {"value": "50%", "label": "Contract Docs"}, {"value": "5%", "label": "Bidding Assist"}, {"value": "10%", "label": "Constr. Admin."}]} />

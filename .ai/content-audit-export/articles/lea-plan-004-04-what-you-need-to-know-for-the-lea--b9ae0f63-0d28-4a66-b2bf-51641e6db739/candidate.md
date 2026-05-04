@@ -33,7 +33,7 @@ Site planning should minimize future management burden:
 - Cluster species with similar water and maintenance needs
 - Avoid monocultures (single species) that collapse if one pest or disease strikes
 - Plan for typhoon-resilient tree structure (strong roots, branch angles)
-<ArticleMedia id="media-lea-plan-004-04-what-you-need-to-know-fo" a type="image" caption="Ecological Zone Management — Site Zones and Strategies Diagram" description="Site plan bubble diagram showing five ecological zones and their management strategies: Riparian zone (buffer protection, bank erosion prevention), Wetland/Mangrove (protection, invasive control), Forest/Woodland (selective thinning, connectivity), Grassland (controlled burning/weeding), Urban Park (regular maintenance, user education). Color-coded by primary threat and management goal." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-plan-004-04-what-you-need-to-know-fo" type="image" caption="Ecological Zone Management — Site Zones and Strategies Diagram" alt="Site plan bubble diagram showing five ecological zones and their management strategies: Riparian zone (buffer protection, bank erosion prevention), Wetland/Mangrove (protection, invasive control), Forest/Woodland (selective thinning, connectivity), Grassland (controlled burning/weeding), Urban Park (regular maintenance, user education). Color-coded by primary threat and management goal." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ### Ecological Zone Management
 
@@ -92,7 +92,7 @@ A site's conditions change over time. Management must be adaptive—responsive t
 - _Monitoring:_ Test water quarterly
 - _Outcome 2025:_ pH 6.8, coliform count 200 CFU/100mL (improvement; continue)
 - _Outcome 2026:_ pH 7.2, coliform count 50 CFU/100mL (target achieved; maintain)
-<ArticleMedia id="media-lea-plan-004-04-what-you-need-to-know-fo" a type="image" caption="Adaptive Management Cycle — Plan-Act-Monitor-Adjust Diagram" description="Circular flow diagram showing the adaptive management process: (1) Establish baseline, (2) Set management goal, (3) Implement management action, (4) Monitor outcomes (indicators: vegetation health, water/hydrology, soil conditions, fauna/biodiversity, invasive species, human use), (5) Adjust strategy if indicator moves wrong direction. Includes example: estero water quality restoration timeline." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-plan-004-04-what-you-need-to-know-fo" type="image" caption="Adaptive Management Cycle — Plan-Act-Monitor-Adjust Diagram" alt="Circular flow diagram showing the adaptive management process: (1) Establish baseline, (2) Set management goal, (3) Implement management action, (4) Monitor outcomes (indicators: vegetation health, water/hydrology, soil conditions, fauna/biodiversity, invasive species, human use), (5) Adjust strategy if indicator moves wrong direction. Includes example: estero water quality restoration timeline." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ### Community Stewardship and Management
 
@@ -151,7 +151,20 @@ Management begins with realistic planning for long-term maintenance costs and re
 
 ### Management Planning Checklist
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+<Tip>When integrating management into site planning:
+
+1. Identify all ecological zones on the site and their management needs
+2. Select vegetation species suited to climate and management capacity
+3. Design the site to minimize maintenance burden (simple, hardy species; minimal exotic plantings)
+4. Establish who will manage the site long-term (government, community, HOA, cooperative)
+5. Estimate annual maintenance budget and secure funding source
+6. Plan for invasive species control and ongoing monitoring
+7. Design community stewardship where appropriate; clarify roles and incentives
+8. Document maintenance procedures so knowledge can transfer
+9. Build management into the project schedule and budget from the start
+10. Plan for adaptive adjustment as conditions change over time
+
+Management is not an afterthought; it is integral to site planning success.</Tip>
 
 ---
 

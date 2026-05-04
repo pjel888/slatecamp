@@ -105,3 +105,5 @@ The LEA tests AI Services through four primary question patterns:
 - [Design-Build Delivery](lea-prac-svc-019)
 - [Fee Compensation Methods](lea-prac-cmp-001)
 - [Owner-Architect Agreement](lea-prac-ctr-001)
+
+<!-- no-media-needed: professional practice article, text/tables/UI blocks are optimal format -->

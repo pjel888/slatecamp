@@ -203,17 +203,31 @@ D. 340.0 m³
 
 ---
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="new"]
+<LawCallout code="pd1096" section="Rule VIII - Site Development">
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="new"]
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="new"]
+Per the NSCP, foundations on sloping sites must be designed for the actual soil conditions at each foundation level. Stepped footings are required where slope exceeds 15%. Retaining walls are mandatory where cut or fill slopes exceed 2H:1V. Geotechnical investigation is required for any building on slopes >25%.
+
+
+</LawCallout>
+
+<Tip >
+
+Remember the slope buildability ranges: 0-5% (easy), 5-15% (moderate), 15-25% (challenging/stepped foundations), 25-40% (difficult/retaining walls), >40% (generally unbuildable). On exam problems, classify the slope first, then identify the required foundation approach.
+
+</Tip>
+
+<ExamTip >
+
+Cut-and-fill balance problems on the LEA typically give you a site cross-section with elevations at regular intervals. Calculate the average elevation, then determine cut and fill areas. The goal is cut ≈ fill to minimize hauling costs. Watch for questions that test whether you know that material compaction reduces fill volume by approximately 15-25%.
+
+</ExamTip>
 
 ---
 
 
 
-<ArticleMedia type="image" caption="Contour Map Interpretation — Slope Calculation and Buildable Zone Analysis" description="Annotated contour map showing: contour interval and index contours, slope calculation using Rise/Run × 100 formula, buildable zones (<15% green), challenging zones (15-25% yellow), constrained zones (>25% red), cut-and-fill volume estimation using average-end-area method, and building pad grading with 2% minimum drainage slope." />
+<ArticleMedia type="image" caption="Contour Map Interpretation — Slope Calculation and Buildable Zone Analysis" alt="Annotated contour map showing: contour interval and index contours, slope calculation using Rise/Run × 100 formula, buildable zones (<15% green), challenging zones (15-25% yellow), constrained zones (>25% red), cut-and-fill volume estimation using average-end-area method, and building pad grading with 2% minimum drainage slope." />
 ## Cross‑References
 
 **Microclimate Analysis**, **Hydrology In Site Planning**, **Geological Hazards**, **Excavation Foundation And Veneer**

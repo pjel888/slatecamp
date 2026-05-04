@@ -1,45 +1,38 @@
 {
   "article_id": "490d7fe6-8f50-404e-a323-1d9a99139869",
   "slug": "lea-util-002-09-mechanical-room-location-and-siting",
-  "generated_at": "2026-05-04T00:06:03.161Z",
-  "old_hash": "sha256:c089ae23d4fbe921fcefce226bec0593c71f84f2896ecb5717a7b405633a9fae",
-  "new_hash": "sha256:4e7087c76c9c762b7ab3b2f21e0ab81a9669676d89f1aafe6448fa1b33ca34e7",
-  "original_hash": "sha256:c089ae23d4fbe921fcefce226bec0593c71f84f2896ecb5717a7b405633a9fae",
+  "generated_at": "2026-05-04T02:16:33.453Z",
+  "old_hash": "sha256:dbda450ca515abceac7bb95ef844d73320f12f295aa34d923b072d2b0fd8a198",
+  "new_hash": "sha256:dbda450ca515abceac7bb95ef844d73320f12f295aa34d923b072d2b0fd8a198",
+  "original_hash": "sha256:dbda450ca515abceac7bb95ef844d73320f12f295aa34d923b072d2b0fd8a198",
   "normalized_hash": "sha256:4e7087c76c9c762b7ab3b2f21e0ab81a9669676d89f1aafe6448fa1b33ca34e7",
-  "candidate_hash": "sha256:4e7087c76c9c762b7ab3b2f21e0ab81a9669676d89f1aafe6448fa1b33ca34e7",
-  "changed": true,
-  "changed_line_count": 147,
+  "candidate_hash": "sha256:dbda450ca515abceac7bb95ef844d73320f12f295aa34d923b072d2b0fd8a198",
+  "changed": false,
+  "changed_line_count": 0,
   "inserted_line_count": 0,
-  "deleted_line_count": 1,
+  "deleted_line_count": 0,
   "ui_blocks_original_count": 3,
-  "ui_blocks_candidate_count": 0,
-  "ui_blocks_changed_count": 3,
+  "ui_blocks_candidate_count": 3,
+  "ui_blocks_changed_count": 0,
   "ui_blocks_count": 3,
-  "unresolved_placeholders_count": 1,
-  "preserved_blocks_count": 0,
+  "unresolved_placeholders_count": 0,
+  "preserved_blocks_count": 3,
   "changed_text_summary": {
-    "changed": 147,
+    "changed": 0,
     "inserted": 0,
-    "deleted": 1,
-    "original_line_count": 176,
-    "candidate_line_count": 175
+    "deleted": 0,
+    "original_line_count": 179,
+    "candidate_line_count": 179
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0001",
-      "ui_0002",
-      "ui_0003"
-    ],
-    "changed_count": 3
+    "missing_block_ids": [],
+    "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate contains unresolved UI block placeholders.",
-    "Candidate is missing 3 preserved UI block(s)."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 3 preserved UI block(s)."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

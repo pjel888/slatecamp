@@ -55,17 +55,17 @@ The Philippines experiences wind speeds exceeding 150 mph during Category 4-5 ty
 
 **Exam Pattern 4: Weatherstripping Specification.** A window assembly leaks air at 0.50 cfm. After installing high-quality weatherstripping that reduces air leakage by 40 percent, what is the new air leakage rate? Answer: 0.50 × (1 - 0.40) = 0.30 cfm (Gold Label compliant).
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+<Tip>Memory aid: "AAMA Gold Label = ≤0.30 cfm air leakage + ≥94 mph structural + no water at 32 mph. Casement = crank-operated; awning = sheds rain; fixed = no operation. Weatherstripping = 30-50% leakage reduction."</Tip>
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Specifying standard (non-Gold Label) AAMA windows for a typhoon-zone building, assuming AAMA certification is sufficient regardless of grade." correction="AAMA has multiple grades; Gold Label is the highest. Standard windows have lower structural resistance (less than 94 mph) and higher air leakage (greater than 0.30 cfm), making them unsuitable for typhoon zones." />
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Using friction stays for awning windows in hot climates without considering temperature derating, assuming nominal strength is always available." correction="Friction stay strength decreases with temperature (roughly -0.75 percent per degree Fahrenheit). In tropical climates at 95°F, nominal strength may be 20-25 percent lower than rated." />
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Omitting weatherstripping to reduce cost, assuming standard window frames provide adequate sealing." correction="Weatherstripping reduces air leakage by 30-50 percent and prevents water infiltration. Omitting it causes high HVAC loads and rain intrusion during monsoons." />
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="WikiMistakeList" status="preserved"]
+<WikiMistakeList mistakes={["Specifying sliding windows in typhoon zones; they do not shed rain as effectively as awning or casement windows", "Using standard steel hardware in coastal areas; stainless steel or coated aluminum is required to resist salt spray corrosion", "Neglecting to account for local wind speeds; some Philippine regions experience 150+ mph gusts, requiring upgraded specifications"]} />
 
 ## Related Articles
 

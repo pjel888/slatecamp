@@ -971,7 +971,10 @@ export function normalizeUiBlockRecord(block: UiBlock): UiBlock {
 }
 
 export function placeholderRegex() {
-  return /\[SLATECAMP_UI_BLOCK:((?:ui|block)_\d{4})[^\]]*\][\s\S]*?\[\/SLATECAMP_UI_BLOCK\]/g
+  // Matches both:
+  // 1. Self-closing: [SLATECAMP_UI_BLOCK:ui_0001 component="Name" status="preserved"]
+  // 2. Block: [SLATECAMP_UI_BLOCK:ui_0001]...[/SLATECAMP_UI_BLOCK]
+  return /\[SLATECAMP_UI_BLOCK:((?:ui|block)_\d{4})[^\]]*\](?:[\s\S]*?\[\/SLATECAMP_UI_BLOCK\])?/g
 }
 
 export function findPlaceholders(content: string) {

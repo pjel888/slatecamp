@@ -10,6 +10,7 @@ By the end of this article, you will be able to:
 Reinforcing steel is the tensile component of reinforced concrete. Deformed bars are the primary longitudinal reinforcement; stirrups are transverse elements in beams to resist shear; ties are transverse elements in columns to provide lateral confinement; and spirals are continuous helical reinforcement in circular columns. Prestressing tendons—either pre-tensioned or post-tensioned—provide compression and reduce cracking. Each type has a distinct structural role and spacing requirements.
 
 ## Core Concept
+<ArticleMedia id="media-lea-strc-006-02-core-concept" a type="image" caption="Deformed Reinforcing Bars — Grade, Size, and Deformation Pattern" description="Diagram showing: (1) Standard rebar sizes (10mm to 36mm diameter) with nominal dimensions; (2) Deformation patterns (lugs/ribs) for bond with concrete; (3) Grade markings for Grade 40 (280 MPa), Grade 60 (420 MPa); (4) Bend and hook configurations (90° hook, 180° hook, stirrup/ties). Tension test diagram showing stress-strain behavior of different grades." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 **Deformed Reinforcing Bars** are the primary tensile reinforcement in beams, slabs, and columns. Modern deformed bars have a pattern of ribs rolled onto their surface to improve bond with concrete—the ribs prevent slip and transfer stress through mechanical interlocking. Bars are specified by diameter (10, 12, 16, 20, 25, 32 mm are common in the Philippines) and by grade: Grade 40 (_F_y = 280 MPa) and Grade 60 (_F_y = 414 MPa) are standard. Deformed bars are designated by nominal diameter; the actual cross-sectional area varies slightly with bar type and standard.
 
@@ -79,7 +80,6 @@ Philippine Standard PS 249:2008 (equivalent to ASTM A615) defines deformed reinf
 3. **Visual Inspection and Dimension Verification:** Diameter, rib pattern, and surface condition are visually inspected. Bars must be free of scale, rust, and damage. Deformation pattern must meet standard specifications.
 
 <Tip>Memorize the critical distinction: Stirrups are in _beams_ (shear resistance). Ties are in _columns_ (confinement and bar stability). Spirals are continuous helical reinforcement in circular columns—much stronger than tied columns. Grade 60 is standard in the Philippines; yield strain ≈ 0.0021.</Tip>
-
 
 ## Related Articles
 

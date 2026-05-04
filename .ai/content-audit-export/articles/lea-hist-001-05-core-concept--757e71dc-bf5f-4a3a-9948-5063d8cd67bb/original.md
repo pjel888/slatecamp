@@ -7,6 +7,10 @@ Distinguish the three Greek orders (Doric, Ionic, Corinthian) by proportion, cap
 
 Greek architecture (c. 900–146 BCE) abandoned the massive walls and hypostyle halls of earlier civilizations. Instead, Greek builders created structures of disciplined proportion, rational geometry, and visual refinement. The **temple** became the primary building type—a rectangular chamber (naos) housing a statue of the deity, elevated on a platform (stereobate), surrounded by a colonnade (peristasis), and roofed.
 
+
+<ArticleMedia id="media-hist-001-05-core-concept" layout="single" type="image" status="placeholder" alt="View of the Parthenon (447–432 BCE, Iktinos and Kallikrates) showing the 8 × 17 peristasis of Doric columns, entablature with triglyph-metope frieze, and pedimental sculptures." caption="The Parthenon — Doric Temple on the Athenian Acropolis" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
+
 The revolutionary step was the **order**—a system combining the column, capital, and entablature (the structure above the columns) into a coherent, proportional module. Three orders emerged, each with mathematical relationships between parts:
 
 **Doric Order:** The earliest and most austere. A Doric column is squat and sturdy, roughly 4–6 times its diameter in height. The capital is a simple, squared abacus above a tapered echinus. The entablature features a triglyph (three vertical grooves) above each column, with a metope (relief-carved square) between triglyphs. The Doric conveys strength and simplicity. The **Temple of Hephaestus** at Athens (c. 450 BCE) and the **Temple of Zeus** at Olympia (c. 470–456 BCE) are Doric, but the most famous Doric application is the **Parthenon** (see below).
@@ -36,6 +40,10 @@ The Parthenon housed a chryselephantine (gold and ivory) statue of Athena, 40+ f
 **City Planning:** Greek architects, particularly in the 4th century BCE, developed rational city plans. **Hippodamus of Miletus** designed **Miletus** (after 479 BCE) on a grid system—straight streets intersecting at right angles, dividing the city into rational blocks. This orthogonal plan influenced later Hellenistic and Roman cities.
 
 **Materials and Craftsmanship:** Greek temples were built from **marble** (particularly Parian marble for sculpture, Pentelic marble for the Parthenon) and **limestone**, fitted with precision. Unlike Egyptian stone construction (massive blocks set by weight), Greek builders cut stone to economical sizes and fitted them with dowels and clamps of bronze or lead. The columns were built in drums (cylindrical sections) stacked vertically. Entasis (the slight curve) was achieved by subtle reductions in diameter between drums.
+
+
+<ArticleMedia id="media-hist-001-05-core-concept" layout="single" type="image" status="placeholder" alt="Comparative illustration of the three Greek orders showing column proportions, capital forms (Doric: simple echinus; Ionic: volute scrolls; Corinthian: acanthus leaves), and entablature components." caption="Greek Architectural Orders — Doric, Ionic, Corinthian" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
 
 ## Key Facts and Testable Items
 
@@ -90,6 +98,8 @@ Classical Greek architecture tests your understanding of the three orders (Doric
 **Caryatid (or Caryatids):** A sculpted female figure serving as a column or support; seen in the Porch of the Maidens at the Erechtheion.
 
 ## Related Articles
+
+<ArticleMedia id=\"media-hist-001-05-core-concept-timeline\" layout=\"single\" type=\"image\" status=\"placeholder\" alt=\"Comparative timeline of Greek temple development from the early Archaic period (c. 900 BCE) through the Classical period (Parthenon, 447–432 BCE) to the Hellenistic period (Temple of Olympian Zeus, 174 BCE), highlighting key Doric, Ionic, and Corinthian examples.\" caption=\"Greek Architecture — Timeline of Temples and Orders\" suggestedAsset=\"Timeline diagram\" placementIntent=\"Timeline diagram for architectural period\" />
 
 See also within Ancient Architecture: **lea-hist-001-01-core-concept**, **lea-hist-001-02-core-concept**, **lea-hist-001-03-core-concept**, **lea-hist-001-04-core-concept**.
 

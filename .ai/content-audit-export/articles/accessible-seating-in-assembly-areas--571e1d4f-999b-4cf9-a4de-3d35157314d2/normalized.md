@@ -65,7 +65,7 @@ Calculate the number and distribution of accessible wheelchair seating locations
 | Clear footprint (front/rear access) | **900 mm × 1200 mm** | App. D Sec. 4.5 |
 | Surface condition | Clear, firm, level | App. D Sec. 4.5 |
 
-[SLATECAMP_UI_BLOCK:ArticleMedia name="wheelchair-space-allocation-chart" type="diagram" caption="Bar chart comparing old vs. new IRR wheelchair space allocation: Old tiered system (2/4/6/6+per 100) vs. 2024 flat 3% rule. Example walkthrough showing 750-seat cinema: 3% = 22.5 → 23 wheelchair spaces vs. old IRR 8-9 spaces. Each space = 900×1200mm = 1.08m², total 24.84m² dedicated footprint."]
+<ArticleMedia id="media-wheelchair-space-allocation-chart" type="diagram" caption="Bar chart comparing old vs. new IRR wheelchair space allocation: Old tiered system (2/4/6/6+per 100) vs. 2024 flat 3% rule. Example walkthrough showing 750-seat cinema: 3% = 22.5 → 23 wheelchair spaces vs. old IRR 8-9 spaces. Each space = 900×1200mm = 1.08m², total 24.84m² dedicated footprint." />
 | Handrail height | **750 mm** at front AND sides | App. D Sec. 4.7 |
 | Access to space | Must NOT pass through another WC space | App. D Sec. 4.3 |
 | Location relative to routes | Must adjoin accessible circulation | App. D Sec. 4.4 |
@@ -79,7 +79,7 @@ Calculate the number and distribution of accessible wheelchair seating locations
 |-------------|-------------|---------|
 | Companion seat | Required in **sports facilities**, adjacent to WC space | App. D Sec. 3.3.a |
 
-[SLATECAMP_UI_BLOCK:ArticleMedia name="sightline-and-handrail-heights" type="diagram" caption="Section view through tiered cinema showing: wheelchair spaces at multiple elevations with unobstructed sightlines (18° max vertical viewing angle), companion seats in same row beside WC spaces, accessible circulation path at rear. Callout detail comparing handrail heights: 750mm AFF for WC seating positions vs. 900mm AFF for stair handrails per BP 344."]
+<ArticleMedia id="media-sightline-and-handrail-heights" type="diagram" caption="Section view through tiered cinema showing: wheelchair spaces at multiple elevations with unobstructed sightlines (18° max vertical viewing angle), companion seats in same row beside WC spaces, accessible circulation path at rear. Callout detail comparing handrail heights: 750mm AFF for WC seating positions vs. 900mm AFF for stair handrails per BP 344." />
 | Priority waiting seats | **5%** of waiting area seats designated for PWDs | App. D Sec. 18.2.b.iii |
 | General cinemas/theaters | Companion seat strongly implied by dispersal + adjacency rules | — |
 
@@ -91,7 +91,7 @@ Calculate the number and distribution of accessible wheelchair seating locations
 |---------|----------------------|--------------|------|
 | WC area handrails | **750 mm** AFF | N/A (not in NBC for seating areas) | BP 344 governs |
 
-[SLATECAMP_UI_BLOCK:ArticleMedia name="seating-bowl-dispersion-layout" type="diagram" caption="Plan view of assembly seating bowl showing: wheelchair spaces (900×1200mm) dispersed across left, center, and right sections at multiple rows, companion seats (C) adjacent to each WC space, accessible circulation route (1500mm wide) running along the rear without overlapping WC spaces, handrails at 750mm AFF at front and sides of each WC position."]
+<ArticleMedia id="media-seating-bowl-dispersion-layout" type="diagram" caption="Plan view of assembly seating bowl showing: wheelchair spaces (900×1200mm) dispersed across left, center, and right sections at multiple rows, companion seats (C) adjacent to each WC space, accessible circulation route (1500mm wide) running along the rear without overlapping WC spaces, handrails at 750mm AFF at front and sides of each WC position." />
 | Stair handrails (accessible) | 900 mm AFF | 800–900 mm AFF (Rule XII) | Both comply at 900 mm |
 | Guard rails where drop > 750 mm | N/A in BP 344 | 1100 mm min (NBC Rule XII) | NBC governs guards |
 

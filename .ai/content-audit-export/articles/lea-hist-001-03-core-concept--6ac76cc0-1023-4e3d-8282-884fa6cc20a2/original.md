@@ -7,6 +7,10 @@ Identify Persian architectural innovations — apadana halls, columned audience 
 
 The **Achaemenid Persian Empire** (c. 550–330 BCE) stretched from Egypt to India, unified under rulers like **Cyrus II** (the Great, r. 559–530 BCE) and **Darius I** (r. 522–486 BCE). Unlike Mesopotamia's mud brick or Egypt's stone monoliths, Achaemenid architects synthesized both traditions: they built monumental stone structures using ashlar masonry, incorporated columned halls inspired by both Mesopotamian and Greek precedent, and employed the labor and materials of conquered territories. This eclecticism was not weakness but strategic brilliance—Achaemenid architecture demonstrated the empire's reach and cultural authority.
 
+
+<ArticleMedia id="media-hist-001-03-core-concept" layout="single" type="image" status="placeholder" alt="View of the remains of the Apadana at Persepolis (founded by Darius I, c. 518 BCE), showing the column grid with tall fluted columns and animal-headed capitals." caption="Persepolis Apadana — Columned Audience Hall" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
+
 The defining structure was the **apadana** (or hypostyle hall)—a large roofed space supported by many columns rather than walls. The apadana served as a throne room, audience hall, or ceremonial space where the Great King received tribute and conducted state business. Unlike the post-and-lintel simplicity of Greece, Persian apadanas were vast, often 100+ meters on a side, with large numbers of columns arranged in a grid. The columns were tall (up to 24 meters or approximately 79 feet), slender, and topped with elaborate carved capitals depicting animal forms (bulls, lions, horses).
 
 <Tip>
@@ -30,6 +34,10 @@ Achaemenid builders worked with **limestone and marble**, quarried locally or im
 Other important Achaemenid sites include **Susa** (ancient Elamite capital, adapted by Darius as administrative seat), where the **Palace of Darius** featured an apadana measuring 109 meters square with 36 columns in the central hall, rising 21 meters (68.8 feet) in height. Construction occurred c. 521–515 BCE parallel to Persepolis, with materials and labor from throughout the empire. The palace also featured relief-decorated walls and was later destroyed by Leaxander in 330 BCE. **Pasargadae**, the older ceremonial capital founded by **Cyrus II** (c. 550 BCE), contains the **Tomb of Cyrus**—a modest limestone structure approximately 11 meters tall built c. 530–540 BCE, standing on a raised platform. It served as a site of coronation ceremonies for Achaemenid kings honoring their founder. The tomb represents the king in death as he was in life: isolated, elevated, authoritative.
 
 The Achaemenid approach—creating empire through architectural display—influenced later empires. When **Leaxander conquered Persepolis**, he destroyed it but absorbed its lessons. Byzantine emperors, Islamic caliphs, and Indian Mughal rulers would echo the apadana's columnar grandeur in their own palaces.
+
+
+<ArticleMedia id="media-hist-001-03-core-concept" layout="single" type="image" status="placeholder" alt="Details of Achaemenid column capitals showing the characteristic double-bull and lion-griffin protome capitals used in the Persepolis Apadana and Throne Hall." caption="Persian Column Capital — Bull and Griffin Forms" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
 
 ## Key Facts and Testable Items
 
@@ -78,6 +86,8 @@ Persian Achaemenid architecture tests your ability to identify structures that m
 **Persepolis:** The ceremonial capital of the Achaemenid Empire, founded by Darius I and destroyed by Leaxander the Great in 330 BCE.
 
 **Achaemenid Empire:** The first Persian empire (c. 550–330 BCE) founded by Cyrus II and extending from Egypt to India; its collapse followed Leaxander's conquest.
+
+<ArticleMedia id="media-hist-001-03-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Aerial site plan of Persepolis (c. 515–330 BCE) showing the Gate of All Nations, Apadana audience hall, Throne Hall, and the overall terrace platform layout illustrating Achaemenid imperial spatial organization." caption="Persepolis — Achaemenid Imperial Complex Plan" suggestedAsset="Timeline diagram" placementIntent="Timeline diagram for architectural period" />
 
 ## Related Articles
 

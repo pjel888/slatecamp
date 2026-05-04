@@ -10,6 +10,13 @@ The derivation: cross-sectional area = πD²/4 (in mm²). Weight per meter = (π
 
 In Philippine projects, the quantity takeoff lists total meters of each rebar size, often cross-referenced with reinforcement drawings. The weight is then summed across all diameters to calculate total steel cost. Standard 12-meter rebar lengths are common in the Philippines, with lapped splices accounting for additional waste (typically 1.3 to 1.5× the design length).
 
+
+<ArticleMedia id="media-rebar-weight-chart" layout="single" type="image" status="placeholder"
+  alt="Reference chart showing rebar sizes (10mm through 40mm or #3 through #14) with nominal diameter, area, and weight per linear meter"
+  caption="Future chart: rebar size reference — diameter, cross-sectional area, and weight per linear meter"
+  suggestedAsset="Reference table with rebar size cross-section illustrations"
+  placementIntent="Provides quick reference for rebar weight conversion" />
+
 ## Key Provisions
 
 | Rebar Size (mm) | Weight per Meter (kg/m) | Typical Uses | LEA Relevance |
@@ -73,6 +80,12 @@ Number of bars = 390 m ÷ 12 m/bar = 32.5 bars ≈ 33 bars
 **Answer: 960 kg rebar required (design 300 m + 30% splice = 390 m total), 33 standard bars**
 </Example>
 
+
+<ArticleMedia id="media-rebar-estimation-example" layout="single" type="image" status="placeholder"
+  alt="Step-by-step rebar estimation example showing bar sizing, weight conversion, spacing, lap splice, and total tonnage calculation for a reinforced concrete beam"
+  caption="Future diagram: rebar estimation worked example — sizing, weight, spacing, and lap splice"
+  suggestedAsset="Step-by-step illustrated calculation example"
+  placementIntent="Provides practical example of rebar quantity estimation" />
 ## Quick Reference: Rebar Weight Calculation Table
 
 | Diameter (mm) | Weight per Meter (kg/m) | Weight per 12 m Bar (kg) | Common Applications |

@@ -1,33 +1,32 @@
 # Content Diff Report: spanish-colonial-bahay-na-bato
 
-Generated: 2026-05-04T00:07:08.727Z
+Generated: 2026-05-04T02:17:59.682Z
 Article ID: af2b1d22-cbc5-46bf-9b22-408e32f08f91
-Changed: true
-Safe to push locally: false
+Changed: false
+Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:05425616cf16307a2593fab4a94c3d520e5662d231d0b9bbe869b577e0a52578`
+- Original: `sha256:b44b02a21161dbcd7b79ba5a86901c1468697c8c7e690b11cf3633f84317d8fd`
 - Normalized: `sha256:47a3692108f75246989b503c6af31d530d06ce6414db111ede61bec842e6be62`
-- Candidate: `sha256:47a3692108f75246989b503c6af31d530d06ce6414db111ede61bec842e6be62`
+- Candidate: `sha256:b44b02a21161dbcd7b79ba5a86901c1468697c8c7e690b11cf3633f84317d8fd`
 
 ## Line summary
 
-- Changed lines: 78
+- Changed lines: 0
 - Inserted lines: 0
-- Deleted lines: 10
+- Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 3
-- UI blocks preserved: 0
-- UI blocks changed/missing: 3
-- Unresolved placeholders: 1
+- UI blocks preserved: 3
+- UI blocks changed/missing: 0
+- Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate contains unresolved UI block placeholders.
-- Candidate is missing 3 preserved UI block(s).
+- None
 
 ## Warnings
 

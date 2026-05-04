@@ -3,7 +3,7 @@
 ## Learning Goal
 
 Achieve synthesis-level understanding of Theory of Architecture as a coherent intellectual arc from fundamental questions (what is architecture?) through design principles, philosophies, movements, perception, programming, tropical design, and Filipino identity. Connect Theory to History (movement-to-manifesto), Architectural Design (space planning as bridge), Planning (tropical design as site design), and Laws (ethics dimension).
-<ArticleMedia id="media-mastery-theory-of-architecture" a type="image" caption="Theory of Architecture — Coherent Intellectual Arc Diagram" description="Nine-stage vertical flow diagram showing the intellectual arc: (1) Nature of Architecture — Vitruvius triad (firmitas, utilitas, venustas); (2) Elements & Principles of Design — Ching's form, space, order, proportion, scale, rhythm; (3) Philosophies & Theories of the Masters — Le Corbusier's Five Points, Wright's Organic, Kahn's silence & light, Venturi's complexity; (4) Movements & Contemporary Discourse — Modernism → Postmodernism → Deconstructivism → Critical Regionalism → Parametric; (5) Design Perception — Hall's proxemics, Neufert's anthropometrics; (6) Space Planning Theory — programming, adjacency, spatial quantities; (7) Tropical Architecture — passive cooling, sun path, bahay kubo; (8) Filipino Identity — Locsin, Mañosa, Tan, Critical Regionalism; (9) Pritzker Prize — laureates and signature works. Each stage connected by arrows showing the logical progression from philosophical foundations through practical application." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-mastery-theory-of-architecture" type="image" caption="Theory of Architecture — Coherent Intellectual Arc Diagram" alt="Nine-stage vertical flow diagram showing the intellectual arc: (1) Nature of Architecture — Vitruvius triad (firmitas, utilitas, venustas); (2) Elements & Principles of Design — Ching's form, space, order, proportion, scale, rhythm; (3) Philosophies & Theories of the Masters — Le Corbusier's Five Points, Wright's Organic, Kahn's silence & light, Venturi's complexity; (4) Movements & Contemporary Discourse — Modernism → Postmodernism → Deconstructivism → Critical Regionalism → Parametric; (5) Design Perception — Hall's proxemics, Neufert's anthropometrics; (6) Space Planning Theory — programming, adjacency, spatial quantities; (7) Tropical Architecture — passive cooling, sun path, bahay kubo; (8) Filipino Identity — Locsin, Mañosa, Tan, Critical Regionalism; (9) Pritzker Prize — laureates and signature works. Each stage connected by arrows showing the logical progression from philosophical foundations through practical application." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## How Subtopics Form a Single Arc
 
@@ -25,7 +25,7 @@ Tropical Architecture & Climate-Responsive Design
 Innovation & Filipino Architect's Identity
 ```
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
+<Callout>Reading the arc this way reveals a key insight: each layer presupposes the one before it. You cannot meaningfully discuss a philosophical position without grounding in the elements and principles that position was arguing about. You cannot apply space planning theory without understanding design perception. The sequence is a learning sequence, not just an organizational one.</Callout>
 Extracted summary:
 - Props: (none)
 - Text: Reading the arc this way reveals a key insight: each layer presupposes the one before it. You cannot meaningfully discuss a philosophical position without grounding in the elements and principles that position was arguing about. You cannot apply space planning theory without understanding design perception. The sequence is a learning sequence, not just an organizational one.
@@ -40,7 +40,7 @@ When a Philosophies question asks about Le Corbusier's "promenade architecturale
 
 The most important cross-subject connection. Theory and History share enormous territory — Modernism, Postmodernism, Brutalism, Deconstructivism, Critical Regionalism appear in both. The distinction: THEO = "what does this principle mean and how does it apply?" HIST = "when did this happen and who built it?"
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="WikiExamTable" status="preserved"]
+<WikiExamTable headers={["If the question asks...","It belongs to..."]} rows={[["When was the Barcelona Pavilion built, and by whom?","Architectural History"],["What spatial principle does the Barcelona Pavilion demonstrate?","Theory of Architecture"],["Which movement does the Barcelona Pavilion represent?","Either — depends on framing"],["How does free-flowing space differ from additive space?","Theory of Architecture"],["Which early modern buildings used pilotis?","Architectural History"]]} />
 Extracted summary:
 - Props: headers="{["If the question asks...","It belongs to..."]}", rows="{[["When was the Barcelona Pavilion built, and by whom?","Architectural History"],["What spatial principle does the Barcelona Pavilion demonstrate?","Theory of Architecture"],["Which movement does the Barcelona Pavilion represent?","Either — depends on framing"],["How does free-flowing space differ from additive space?","Theory of Architecture"],["Which early modern buildings used pilotis?","Architectural History"]]}"
 - Text: (none detected)

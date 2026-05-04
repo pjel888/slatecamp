@@ -7,6 +7,10 @@ Identify the key characteristics of Indus Valley civilization architecture — g
 
 The Indus Valley Civilization flourished c. 2600–1900 BCE across the Indus River valley (modern Pakistan and northwestern India). This culture is remarkable for its sophistication, planning discipline, and mysterious decline. Unlike Mesopotamian and Egyptian civilizations with visible monumental architecture and royal tombs, the Indus civilization built cities of standardized proportions, absence of hierarchical display, and unknown spiritual beliefs. Written script survives but remains undeciphered, limiting our understanding of governance, religion, and purpose.
 
+
+<ArticleMedia id="media-hist-001-08-core-concept" layout="single" type="image" status="placeholder" alt="View of the Great Bath at Mohenjo-Daro (c. 2600–1900 BCE, modern Pakistan), showing the brick-lined sunken pool with stepped descent and bitumen waterproofing." caption="Great Bath of Mohenjo-Daro — Indus Valley Public Structure" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
+
 **Urban Planning and Grid Layout:** The signature Indus achievement was rational city planning. **Mohenjo-daro** (meaning "Mound of the Dead"), the largest known Indus site, covered approximately 250 acres (100 hectares) and housed 35,000–41,250 people. The city was divided into distinct zones: the citadel (raised platform), lower town (residential and commercial areas), and specialized districts (possibly craft areas). Streets were laid out on a grid pattern, with main streets running north-south and east-west at regular intervals. This orthogonal planning resembles much later Hellenistic cities (designed by **Hippodamus of Miletus** in the 5th century BCE), suggesting independent discovery of rational urban organization.
 
 <Tip>
@@ -34,6 +38,10 @@ The Indus Valley Civilization flourished c. 2600–1900 BCE across the Indus Riv
 **Building Materials and Aesthetics:** Indus builders worked with mud brick, stone (less commonly), and timber (wood structural elements have not survived). Unlike Egyptian monumental stone or Mesopotamian relief decoration, Indus architecture was utilitarian and undecorated. Wall surfaces were plain, save for mortar lines. This aesthetic restraint—or lack of monumental tradition—distinguishes Indus architecture from contemporary civilizations and suggests different values: pragmatism, order, and functionality rather than divine display or royal monument.
 
 **Mysterious Decline:** Around 1900 BCE, Indus civilization declined. Evidence suggests environmental factors (possibly Indus River course change, reducing agricultural productivity), climate change (decreased monsoon rainfall), or earthquake. Invasion by Indo-European peoples (Aryans) is sometimes proposed but unproven. No evidence of warfare, weaponry, or conquered cities has been found. The civilization appears to have gradually abandoned, with population migration to the Ganges valley or other regions. This peaceful decline, rare in ancient history, adds to Indus civilization's uniqueness.
+
+
+<ArticleMedia id="media-hist-001-08-core-concept" layout="single" type="image" status="placeholder" alt="Plan diagram of Mohenjo-Daro showing the orthogonal street grid, citadel raised platform, lower town residential blocks, and the Great Bath positioned within the citadel area." caption="Indus Valley City Planning — Grid Layout of Mohenjo-Daro" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
 
 ## Key Facts and Testable Items
 
@@ -84,6 +92,8 @@ Indus Valley Civilization architecture tests your understanding of an early urba
 **Latrine:** An indoor toilet or waste-disposal facility; virtually all Indus houses featured one, connected to covered drainage systems.
 
 **Ablution:** Ritual washing or purification, particularly in religious contexts; possibly the purpose of the Great Bath.
+
+<ArticleMedia id="media-hist-001-08-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Site plan comparison of Indus Valley cities Mohenjo-Daro and Harappa (c. 2600–1900 BCE) showing the grid street layout, citadel mound, Great Bath, granary, and standardized brick residential blocks illustrating advanced urban planning." caption="Indus Valley — City Plan Comparison" suggestedAsset="Timeline diagram" placementIntent="Timeline diagram for architectural period" />
 
 ## Related Articles
 

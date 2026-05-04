@@ -6,7 +6,6 @@ Urban planning as a profession emerged in the late 19th century from recognition
 
 Identify the definition, scales, and purpose of urban planning, and attribute each major planning theorist (Howard, Burnham, Burgess, Hoyt, Harris & Ullman, Lynch, Jacobs) to their core contribution and year.
 
-
 ## Core Concept
 
 Urban planning is the process of organizing land use, infrastructure, and services to create functional, livable cities. It addresses coordination problems that markets and individual developers cannot solve alone — such as ensuring adequate public space, preventing conflicting land uses, and protecting environmental resources. The discipline emerged from the chaos of rapid industrialization in 19th-century Europe and North America, where unchecked growth created slums, pollution, and gridlock.
@@ -16,6 +15,7 @@ Planning operates at multiple scales. Strategic planning frames long-term vision
 Key planning luminaries shaped the field's core concepts. **Ebenezer Howard** (1898) pioneered the Garden City concept — self-contained communities balancing urban services with green space. **Daniel Hudson Burnham** designed the **Plan of Manila (1905)**, establishing the City Beautiful Movement's approach of monumental civic spaces and diagonal boulevards. **Ernest W. Burgess** formulated the Concentric Zone Model (1925), explaining city growth through ecological succession in rings. **Homer Hoyt** proposed the Sector Model (1939), showing growth follows transport corridors as pie-shaped wedges. **Chauncy Harris and Edward Ullman** developed the Multiple Nuclei Model (1945), demonstrating cities have multiple centers, not one CBD. **Kevin Lynch** articulated how people mentally map cities through five elements: _paths_, _edges_, _districts_, _nodes_, and _landmarks_ (_The Image of the City_, 1960). **Jane Jacobs** championed urban vitality through mixed uses and "eyes on the street" safety (_The Death and Life of Great American Cities_, 1961).
 
 Planning theory moved from physical determinism (the belief that good form automatically creates good society) toward recognition that planning must integrate social equity, environmental sustainability, and participatory democracy. Charles Lindblom's concept of "muddling through" (incremental decision-making) challenged the myth of comprehensive rationality. Paul Davidoff's advocacy planning (1965) asserted planners serve communities, not abstract ideals. Contemporary planning emphasizes resilience, inclusivity, and adaptation to climate change.
+<ArticleMedia id="media-lea-plan-001-01-core-concept" a type="image" caption="Urban Planning Theorists Timeline — Key Contributions and Years" description="Timeline diagram showing major planning theorists and their contributions: Howard (Garden City, 1898), Burnham (Plan of Manila, 1905), Burgess (Concentric Zone, 1925), Hoyt (Sector Model, 1939), Harris & Ullman (Multiple Nuclei, 1945), Lynch (Image-ability, 1960), Jacobs (Mixed-Use Vitality, 1961)." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
@@ -34,7 +34,6 @@ The LEA tests planning fundamentals through three question patterns: (1) **Defin
 <Tip>
 **Memory anchors:** BURGESS = BULLSEYE (concentric rings). HOYT = HOT CORRIDORS (wedge-shaped growth along transit). HARRIS + ULLMAN = MULTIPLE (two theorists, multiple nuclei). HOWARD = GARDEN (30,000–60,000 person towns). BURNHAM = MANILA 1905 (City Beautiful). LYNCH = FIVE ELEMENTS (paths, edges, districts, nodes, landmarks). JACOBS = EYES ON STREET (mixed use, walkability).
 </Tip>
-
 
 **Exam Tip:** Theorist attribution is the most-tested pattern in LEA-PLAN-001. Know the theorist + year + core idea as one unit. Most common swaps: Burgess ↔ Hoyt (opposite models), Lynch ↔ Jacobs (different domains).
 

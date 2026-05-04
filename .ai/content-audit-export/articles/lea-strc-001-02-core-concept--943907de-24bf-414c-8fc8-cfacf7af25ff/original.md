@@ -11,6 +11,7 @@ By the end of this article, you will be able to:
 This topic covers the types of loads that act on structures in Philippine design. The LEA tests whether you can identify, define, and distinguish load types—and apply the correct load values from NSCP. You will NOT be tested on load combinations or analysis methods; focus on definitions and specified values.
 
 ## Core Concept
+<ArticleMedia id="media-lea-strc-001-02-core-concept" a type="image" caption="NSCP Load Types — Six Primary Categories Comparison" description="Visual comparison diagram of the six NSCP load categories: Dead Load (permanent building weight), Live Load (occupancy/temporary), Wind Load (lateral pressure), Seismic Load (inertial from ground motion), Snow Load (roof accumulation), and Special Loads (impact/blast/hydrostatic). Each category shown with icon, duration indicator, and typical magnitude range for Philippine conditions." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 A **load** is a force or system of forces applied to a structure, categorized by its source and permanence. The Philippine National Structural Code (NSCP) classifies loads into six primary categories:
 
@@ -63,6 +64,7 @@ These are MINIMUM design values for common Philippine occupancies:
 - **Zone 2:** Higher seismic risk; Z = 0.4 (All other provinces; most severe zone in PH))
 
 ## Philippine Practice Context
+<ArticleMedia id="media-lea-strc-001-02-core-concept" a type="image" caption="Philippine Seismic Zone Map — Zone 1 vs Zone 2 Distribution" description="Map of the Philippines showing the two seismic zones: Zone 1 (Z=0.2) covering Palawan, Tawi-Tawi, and Sulu, and Zone 2 (Z=0.4) covering all other provinces. Key fault lines and historical earthquake epicenters marked for context." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 In Philippine design, load specifications must follow NSCP Table 201 (minimum DL values) and Table 202 (minimum LL values by occupancy). Load combinations use factors from older NSCP (DL factor 1.4, LL factor 1.7) or newer NSCP 2015 (DL factor 1.2, LL factor 1.6). When submitting designs to DPWH or local authorities, load specifications must cite the applicable NSCP edition and table. Wind and seismic loads are critical in the Philippines due to typhoons and frequent seismic activity; these must be calculated per the appropriate section and not omitted.
 
@@ -82,7 +84,6 @@ In Philippine design, load specifications must follow NSCP Table 201 (minimum DL
 - Assembly (no seats): **4.8 kPa**
 
 Zone 2 (seismic) covers **all PH except Palawan, Tawi-Tawi, Sulu.**</Tip>
-
 
 ## Related Articles
 

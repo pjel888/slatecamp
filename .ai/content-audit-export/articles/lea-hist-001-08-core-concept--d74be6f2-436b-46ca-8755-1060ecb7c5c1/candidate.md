@@ -13,17 +13,23 @@ The Indus Valley Civilization flourished c. 2600–1900 BCE across the Indus Riv
 
 **Urban Planning and Grid Layout:** The signature Indus achievement was rational city planning. **Mohenjo-daro** (meaning "Mound of the Dead"), the largest known Indus site, covered approximately 250 acres (100 hectares) and housed 35,000–41,250 people. The city was divided into distinct zones: the citadel (raised platform), lower town (residential and commercial areas), and specialized districts (possibly craft areas). Streets were laid out on a grid pattern, with main streets running north-south and east-west at regular intervals. This orthogonal planning resembles much later Hellenistic cities (designed by **Hippodamus of Miletus** in the 5th century BCE), suggesting independent discovery of rational urban organization.
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+<Tip>
+**Memory Aid: Indus Planning = Greeks + 2000 Years.** Grid cities appear in Classical Greece (5th-4th centuries BCE). The Indus Valley civilization used grid planning in 2600-1900 BCE—before Greek culture existed. This shows planning is not a Greek invention but a fundamental human solution to urban organization.
+</Tip>
 
 **Standardized Brick:** Indus builders employed standardized mud brick at a ratio of 1:2:4 (height to width to length). A typical brick measured approximately 7 × 14 × 28 cm (some sources cite 6.5 × 13 × 26 cm for earlier buildings). This standardization allowed rapid construction, easy replacement of damaged units, and visual consistency. Bricks were laid in regular patterns—often a "running bond" (alternating orientation)—creating stable walls and uniform appearance. No monumental stone temples or palaces are evident, suggesting either religious ideology that eschewed monumental display or a theocratic system without kingship requiring display tombs.
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
+<Note>
+**Key Clarification:** Do not assume Indus civilization was "less developed" due to lack of monuments. Absence of monumental architecture does not indicate primitiveness. Indus civilization's urban planning, sanitation, and standardization rival or exceed contemporary civilizations. Different values (functionality over monument) produced different architectural forms, not inferior ones.
+</Note>
 
 **Domestic Architecture:** Indus houses were largely uniform in scale and plan. Individual dwellings typically featured an internal courtyard (likely for shade and water collection in a hot climate), rooms arranged around the courtyard, and flat roofs. Larger houses (likely merchant or administrator residences) featured multiple courtyards and additional rooms, but even these lacked the ostentatious display of contemporary Near Eastern palaces. This suggests either strong central planning (preventing inequality) or an economy and society with limited hierarchical distinction.
 
 **Public Structures:** The **Great Bath** at Mohenjo-daro is the most famous Indus public building. Measuring approximately 40 × 23 feet (12 × 7 metres) and sunk 8 feet (2.4 metres) below ground level, it featured brick stairs descending on all sides and a sophisticated drainage system with an overflow outlet. The bath was waterproofed with bitumen. Its ritual or ceremonial purpose remains debated—possibly for ablution (religious purification), public bathing, or cold-water immersion therapy. The sophistication of its drainage system is remarkable: Indus architects engineered gradients allowing water to flow to central drains without stagnation.
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
+<Warn>
+**Critical Distinction:** Do not overstate knowledge of Indus governance and religion. Undeciphered script limits understanding. Avoid asserting specific governmental or religious beliefs. Phrases like "likely," "possibly," and "archaeological evidence suggests" are appropriate. The Great Bath's purpose is debated; do not assert a single function as fact.
+</Warn>
 
 **Drainage and Sanitation:** Indus cities featured the most advanced sanitation systems of the ancient world. Every house, apparently, had a latrine. Waste ran through covered drains under streets, connecting to larger drain channels leading outside the city. This hygiene infrastructure suggests either exceptionally sophisticated understanding of disease prevention or a cultural/religious emphasis on cleanliness. Compare this to contemporary cities: Mesopotamian cities lacked comparable drainage; Classical Greek cities did not standardize sewage systems. Indus civilization's sanitation predates modern understanding of germ theory yet achieved superior public health outcomes.
 
@@ -39,29 +45,31 @@ The Indus Valley Civilization flourished c. 2600–1900 BCE across the Indus Riv
 
 ## Key Facts and Testable Items
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="WikiExamTable" status="preserved"]
+<WikiExamTable headers={["Site", "Location", "Date", "Population Estimate", "Key Feature"]} rows={[["**Mohenjo-daro**", "Sindh, Pakistan", "c. 2600–1900 BCE", "35,000–41,250", "Grid layout, Great Bath, drainage systems, citadel, 250-acre footprint"], ["**Harappa**", "Punjab, Pakistan", "c. 2600–1900 BCE", "23,500–35,000", "Citadel, granaries, grid streets, residential zones, northern Indus center"], ["**The Great Bath (Mohenjo-daro)**", "Mohenjo-daro", "c. 2600–1900 BCE", "—", "40 × 23 ft (12 × 7 m), sunken 8 ft (2.4 m), stepped entrance, bitumen waterproofing, drainage system"], ["**Granaries (Harappa & Mohenjo-daro)**", "Multiple Indus sites", "c. 2600–1900 BCE", "—", "Ventilated storage structures, evidence of centralized economic control"], ["**Residential District (Mohenjo-daro)**", "Mohenjo-daro", "c. 2600–1900 BCE", "—", "Uniform houses with internal courtyards, domestic latrines, standardized brick"], ["**Drainage Systems**", "Mohenjo-daro, Harappa", "c. 2600–1900 BCE", "—", "Covered drains under streets, terracotta pipes, central collection channels, overflow outlets"]]} />
 
 ## How It's Tested on the LEA
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
+<ExamTip>**Pattern 1: Planning and Urban Organization.** "Which characteristic of Indus Valley cities is most distinctive compared to contemporary Egyptian and Mesopotamian urban centers?" Tests recognition of grid planning, standardization, and absence of monumental temples.</ExamTip>
 
-[SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
+<ExamTip>**Pattern 2: Standardization Recognition.** "Indus brick standardization (1:2:4 ratio) served which purpose?" Expects you to link standardization to efficiency, replacability, and rapid construction.</ExamTip>
 
-[SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
+<ExamTip>**Pattern 3: Drainage and Sanitation Technology.** "What does the presence of latrines in individual Indus houses and covered drainage systems indicate about the civilization?" Tests your understanding of public health infrastructure and cultural values.</ExamTip>
 
-[SLATECAMP_UI_BLOCK:ui_0009 component="ExamTip" status="preserved"]
+<ExamTip>**Pattern 4: The Great Bath Function and Design.** "The Great Bath at Mohenjo-daro features which engineering elements?" Tests knowledge of sunken pools, stepped access, waterproofing (bitumen), and drainage.</ExamTip>
 
-[SLATECAMP_UI_BLOCK:ui_0010 component="ExamTip" status="preserved"]
+<ExamTip>**Pattern 5: Comparative Analysis.** "Why do Indus cities lack monumental temples and royal palaces evident in Egypt and Mesopotamia?" Tests your ability to infer social organization from architectural evidence and acknowledge uncertainty.</ExamTip>
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
+<Callout>
+Indus Valley Civilization architecture tests your understanding of an early urban planning system—planning that predates or rivals Classical Greece's rationality. The LEA expects knowledge of **Harappa** and **Mohenjo-daro**, standardized brick, urban grid layouts, and the absence of monumental temples or palaces—suggesting an egalitarian or theocratic organization. Familiarity with standardization and planning discipline is essential.
+</Callout>
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0011 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Assuming Indus civilization was 'less developed' due to lack of monuments" correction="Absence of monumental architecture does not indicate primitiveness. Indus civilization's urban planning, sanitation, and standardization rival or exceed contemporary civilizations. Different values (functionality over monument) produced different architectural forms, not inferior ones." context="This demonstrates sophisticated understanding of how diverse societies express different priorities through architecture." />
 
-[SLATECAMP_UI_BLOCK:ui_0012 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Overstating knowledge of Indus governance and religion" correction="Undeciphered script limits understanding. Avoid asserting specific governmental or religious beliefs. Phrases like 'likely,' 'possibly,' and 'archaeological evidence suggests' are appropriate." context="Using appropriate epistemic qualifiers shows intellectual humility and historical accuracy." />
 
-[SLATECAMP_UI_BLOCK:ui_0013 component="WikiMistakeList" status="preserved"]
+<WikiMistakeList mistakes={["Confusing Indus Valley Civilization with later Vedic or Hindu architecture: Indus civilization (c. 2600–1900 BCE) predates Indo-Aryan peoples and later Hindu temples. These are distinct traditions. Do not conflate them.", "Ignoring standardization as a deliberate choice: Standardized brick was not a limitation but a sophisticated engineering and economic choice. It enabled efficiency, consistency, and scalability. Treat it as evidence of planning discipline.", "Overstating the 'decline' as catastrophic: The archaeological record does not show destruction, warfare, or sudden abandonment. The civilization appears to have gradually depopulated, likely due to environmental or economic factors. Avoid implying violent collapse.", "Treating the Great Bath as a bathing facility in the modern sense: Its exact purpose—ritual purification, therapy, or public bathing—remains unknown. Describe its features (sunken pool, steps, waterproofing, drainage) rather than asserting function."]} />
 
 ## Key Terms
 
@@ -84,6 +92,8 @@ The Indus Valley Civilization flourished c. 2600–1900 BCE across the Indus Riv
 **Latrine:** An indoor toilet or waste-disposal facility; virtually all Indus houses featured one, connected to covered drainage systems.
 
 **Ablution:** Ritual washing or purification, particularly in religious contexts; possibly the purpose of the Great Bath.
+
+<ArticleMedia id="media-hist-001-08-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Site plan comparison of Indus Valley cities Mohenjo-Daro and Harappa (c. 2600–1900 BCE) showing the grid street layout, citadel mound, Great Bath, granary, and standardized brick residential blocks illustrating advanced urban planning." caption="Indus Valley — City Plan Comparison" suggestedAsset="Timeline diagram" placementIntent="Timeline diagram for architectural period" />
 
 ## Related Articles
 

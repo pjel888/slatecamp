@@ -1,33 +1,32 @@
 # Content Diff Report: lea-hist-008-03a-core-concept
 
-Generated: 2026-05-04T00:06:58.830Z
+Generated: 2026-05-04T02:17:45.990Z
 Article ID: c0e15f56-dc57-4814-b6fb-7ee7f554a209
-Changed: true
-Safe to push locally: false
+Changed: false
+Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:06e71484c1673339f8b7f53b7290af9cd42ff764c9fb3486fdeb82fd1c4e1299`
-- Normalized: `sha256:10359c17464b6e3c7d49d91a02739209911e32a6881d064a4c443708e7c6d5f1`
-- Candidate: `sha256:10359c17464b6e3c7d49d91a02739209911e32a6881d064a4c443708e7c6d5f1`
+- Original: `sha256:8e13f93b3c1749f3eca66ff8740759dc16cc8de069b32e3538bce8e29f07691c`
+- Normalized: `sha256:fb7be63d91e123dc9a3f00eb30f11d598f28073a79da755815bc6be326710b61`
+- Candidate: `sha256:8e13f93b3c1749f3eca66ff8740759dc16cc8de069b32e3538bce8e29f07691c`
 
 ## Line summary
 
-- Changed lines: 76
+- Changed lines: 0
 - Inserted lines: 0
-- Deleted lines: 5
+- Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 12
-- UI blocks preserved: 0
-- UI blocks changed/missing: 12
-- Unresolved placeholders: 1
+- UI blocks preserved: 12
+- UI blocks changed/missing: 0
+- Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate contains unresolved UI block placeholders.
-- Candidate is missing 12 preserved UI block(s).
+- None
 
 ## Warnings
 

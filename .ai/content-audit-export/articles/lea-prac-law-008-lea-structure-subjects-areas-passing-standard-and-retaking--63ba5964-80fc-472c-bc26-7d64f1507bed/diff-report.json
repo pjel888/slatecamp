@@ -1,47 +1,38 @@
 {
   "article_id": "63ba5964-80fc-472c-bc26-7d64f1507bed",
   "slug": "lea-prac-law-008-lea-structure-subjects-areas-passing-standard-and-retaking",
-  "generated_at": "2026-05-04T00:06:27.314Z",
-  "old_hash": "sha256:e1ac06ed54576d656ac780024428a46cd8ce5056fa755408395884f28f00895d",
-  "new_hash": "sha256:2398985fed6936d926d87e2999911f9d7f9d73b6a7f98f1bbe1c2c58e049fac8",
-  "original_hash": "sha256:e1ac06ed54576d656ac780024428a46cd8ce5056fa755408395884f28f00895d",
+  "generated_at": "2026-05-04T02:17:02.918Z",
+  "old_hash": "sha256:595442c41e4a9efad2b6cc7e9764abe89828d2c925460e0e84a5502bc94924ba",
+  "new_hash": "sha256:595442c41e4a9efad2b6cc7e9764abe89828d2c925460e0e84a5502bc94924ba",
+  "original_hash": "sha256:595442c41e4a9efad2b6cc7e9764abe89828d2c925460e0e84a5502bc94924ba",
   "normalized_hash": "sha256:2398985fed6936d926d87e2999911f9d7f9d73b6a7f98f1bbe1c2c58e049fac8",
-  "candidate_hash": "sha256:2398985fed6936d926d87e2999911f9d7f9d73b6a7f98f1bbe1c2c58e049fac8",
-  "changed": true,
-  "changed_line_count": 22,
+  "candidate_hash": "sha256:595442c41e4a9efad2b6cc7e9764abe89828d2c925460e0e84a5502bc94924ba",
+  "changed": false,
+  "changed_line_count": 0,
   "inserted_line_count": 0,
-  "deleted_line_count": 1,
+  "deleted_line_count": 0,
   "ui_blocks_original_count": 5,
-  "ui_blocks_candidate_count": 0,
-  "ui_blocks_changed_count": 5,
+  "ui_blocks_candidate_count": 5,
+  "ui_blocks_changed_count": 0,
   "ui_blocks_count": 5,
-  "unresolved_placeholders_count": 1,
-  "preserved_blocks_count": 0,
+  "unresolved_placeholders_count": 0,
+  "preserved_blocks_count": 5,
   "changed_text_summary": {
-    "changed": 22,
+    "changed": 0,
     "inserted": 0,
-    "deleted": 1,
-    "original_line_count": 57,
-    "candidate_line_count": 56
+    "deleted": 0,
+    "original_line_count": 60,
+    "candidate_line_count": 60
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0003",
-      "ui_0004",
-      "ui_0005",
-      "ui_0006",
-      "ui_0007"
-    ],
-    "changed_count": 5
+    "missing_block_ids": [],
+    "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate contains unresolved UI block placeholders.",
-    "Candidate is missing 5 preserved UI block(s)."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 5 preserved UI block(s)."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

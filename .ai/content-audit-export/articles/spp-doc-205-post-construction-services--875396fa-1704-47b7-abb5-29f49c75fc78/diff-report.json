@@ -1,50 +1,38 @@
 {
   "article_id": "875396fa-1704-47b7-abb5-29f49c75fc78",
   "slug": "spp-doc-205-post-construction-services",
-  "generated_at": "2026-05-04T00:07:10.179Z",
-  "old_hash": "sha256:5a39acded478e1c60a7812df094d4e316118c3e64974e33e8341d26875c1c91a",
-  "new_hash": "sha256:96fe58bd24e849e24ac6e63ed35466b8038c4b640f7c7c0fcd4e6983b70f7906",
-  "original_hash": "sha256:5a39acded478e1c60a7812df094d4e316118c3e64974e33e8341d26875c1c91a",
+  "generated_at": "2026-05-04T02:18:01.420Z",
+  "old_hash": "sha256:4c36bba0243d0fbe3de9322871c1cba6515505ee54cde25a3cb421af137b6865",
+  "new_hash": "sha256:4c36bba0243d0fbe3de9322871c1cba6515505ee54cde25a3cb421af137b6865",
+  "original_hash": "sha256:4c36bba0243d0fbe3de9322871c1cba6515505ee54cde25a3cb421af137b6865",
   "normalized_hash": "sha256:96fe58bd24e849e24ac6e63ed35466b8038c4b640f7c7c0fcd4e6983b70f7906",
-  "candidate_hash": "sha256:96fe58bd24e849e24ac6e63ed35466b8038c4b640f7c7c0fcd4e6983b70f7906",
-  "changed": true,
-  "changed_line_count": 178,
+  "candidate_hash": "sha256:4c36bba0243d0fbe3de9322871c1cba6515505ee54cde25a3cb421af137b6865",
+  "changed": false,
+  "changed_line_count": 0,
   "inserted_line_count": 0,
-  "deleted_line_count": 64,
+  "deleted_line_count": 0,
   "ui_blocks_original_count": 8,
-  "ui_blocks_candidate_count": 0,
-  "ui_blocks_changed_count": 8,
+  "ui_blocks_candidate_count": 8,
+  "ui_blocks_changed_count": 0,
   "ui_blocks_count": 8,
-  "unresolved_placeholders_count": 1,
-  "preserved_blocks_count": 0,
+  "unresolved_placeholders_count": 0,
+  "preserved_blocks_count": 8,
   "changed_text_summary": {
-    "changed": 178,
+    "changed": 0,
     "inserted": 0,
-    "deleted": 64,
+    "deleted": 0,
     "original_line_count": 296,
-    "candidate_line_count": 232
+    "candidate_line_count": 296
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0001",
-      "ui_0002",
-      "ui_0003",
-      "ui_0004",
-      "ui_0005",
-      "ui_0006",
-      "ui_0007",
-      "ui_0008"
-    ],
-    "changed_count": 8
+    "missing_block_ids": [],
+    "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate contains unresolved UI block placeholders.",
-    "Candidate is missing 8 preserved UI block(s)."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 8 preserved UI block(s)."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

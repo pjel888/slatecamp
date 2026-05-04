@@ -10,7 +10,7 @@ By the end of this article, you will be able to:
 Structural systems classify buildings into two primary categories: bearing wall systems (where walls carry gravity loads) and frame systems (where skeletal frameworks carry loads). This distinction determines load paths, member sizing, and lateral bracing strategies.
 
 ## Core Concept
-<ArticleMedia id="media-lea-strc-002-01-core-concept" a type="image" caption="Bearing Wall System vs Frame System — Load Path Comparison" description="Comparative cross-section diagram showing: (1) Bearing wall system — gravity loads flow through walls directly to foundation, lateral loads resisted by wall in-plane shear; (2) Frame system — gravity loads flow through beams→columns→foundation, lateral loads resisted by frame bending or separate shear walls. Load path arrows in contrasting colors for gravity (blue) and lateral (red)." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-strc-002-01-core-concept" type="image" caption="Bearing Wall System vs Frame System — Load Path Comparison" alt="Comparative cross-section diagram showing: (1) Bearing wall system — gravity loads flow through walls directly to foundation, lateral loads resisted by wall in-plane shear; (2) Frame system — gravity loads flow through beams→columns→foundation, lateral loads resisted by frame bending or separate shear walls. Load path arrows in contrasting colors for gravity (blue) and lateral (red)." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 A **bearing wall system** relies on walls to resist both gravity and lateral loads. The walls transfer vertical loads directly to the foundation through compression, while also functioning as shear walls for lateral resistance. Bearing walls in masonry or reinforced concrete are common in low-to-mid-rise construction because they are economical and inherently stiff.
 
@@ -44,7 +44,7 @@ Bearing wall systems dominate residential and mixed-use construction in the Phil
 
 **Apply-level:** Given a building in Seismic Zone 2 with 10 stories, justify why a frame system with moment-resisting capability would be chosen over a bearing wall approach.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+<Tip>**Memory aid:** Bearing walls **bear** loads directly; frames **defer** loads to a skeleton. Think "walls work, frames relax."</Tip>
 
 ## Related Articles
 
@@ -52,6 +52,6 @@ See also: **Shear Walls** (lea-strc-002-02) for lateral-force-resisting variants
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
+<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeList" status="preserved"]
+<WikiMistakeList mistakes={["Confusing bearing wall with any wall that touches a load—bearing walls must carry superimposed loads, not just their own weight (thresholds defined in LEA-STRC-002-04)","Thinking frame systems cannot have shear walls—frames require lateral bracing (shear walls, diaphragms, or moment connections)","Assuming bearing walls are always masonry—RC shear wall systems are bearing systems, and light-gauge stud walls can be bearing if they carry required loads"]} />

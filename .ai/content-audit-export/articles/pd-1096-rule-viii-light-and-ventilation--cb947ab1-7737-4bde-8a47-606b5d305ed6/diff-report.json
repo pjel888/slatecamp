@@ -1,43 +1,38 @@
 {
   "article_id": "cb947ab1-7737-4bde-8a47-606b5d305ed6",
   "slug": "pd-1096-rule-viii-light-and-ventilation",
-  "generated_at": "2026-05-04T00:07:06.633Z",
+  "generated_at": "2026-05-04T02:17:56.633Z",
   "old_hash": "sha256:f740cd0bfc50d053982b85297db8a5c0964f11d688346296951857abe90a9588",
-  "new_hash": "sha256:5c12f3f1fce369f8b5dbee73c23a1edd5c6552d752b4a41a96d04e027d2dcce6",
+  "new_hash": "sha256:74a83b9ca7a7b411a638a1f3c26c8daa7af189533027c99e0b239856597d1e3b",
   "original_hash": "sha256:f740cd0bfc50d053982b85297db8a5c0964f11d688346296951857abe90a9588",
-  "normalized_hash": "sha256:5c12f3f1fce369f8b5dbee73c23a1edd5c6552d752b4a41a96d04e027d2dcce6",
-  "candidate_hash": "sha256:5c12f3f1fce369f8b5dbee73c23a1edd5c6552d752b4a41a96d04e027d2dcce6",
+  "normalized_hash": "sha256:423cf7810d3299ec3e45f1ce0e4816e2190ed6bf12bfcde9536d58d64ababf75",
+  "candidate_hash": "sha256:74a83b9ca7a7b411a638a1f3c26c8daa7af189533027c99e0b239856597d1e3b",
   "changed": true,
-  "changed_line_count": 266,
-  "inserted_line_count": 0,
-  "deleted_line_count": 3,
+  "changed_line_count": 269,
+  "inserted_line_count": 3,
+  "deleted_line_count": 0,
   "ui_blocks_original_count": 1,
-  "ui_blocks_candidate_count": 0,
-  "ui_blocks_changed_count": 1,
+  "ui_blocks_candidate_count": 1,
+  "ui_blocks_changed_count": 0,
   "ui_blocks_count": 1,
-  "unresolved_placeholders_count": 1,
-  "preserved_blocks_count": 0,
+  "unresolved_placeholders_count": 0,
+  "preserved_blocks_count": 1,
   "changed_text_summary": {
-    "changed": 266,
-    "inserted": 0,
-    "deleted": 3,
+    "changed": 269,
+    "inserted": 3,
+    "deleted": 0,
     "original_line_count": 285,
-    "candidate_line_count": 282
+    "candidate_line_count": 288
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0001"
-    ],
-    "changed_count": 1
+    "missing_block_ids": [],
+    "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate contains unresolved UI block placeholders.",
-    "Candidate is missing 1 preserved UI block(s)."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 1 preserved UI block(s)."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

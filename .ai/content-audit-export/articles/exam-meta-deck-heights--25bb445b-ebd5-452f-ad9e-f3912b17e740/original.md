@@ -3,7 +3,6 @@
 After reading this article, you should be able to:
 
 Apply all code provisions governing deck, balcony, porch, and terrace heights under PD 1096 Rule VII-VIII: determine when a deck counts toward FAR vs when it is excluded; identify minimum guardrail height (1.10 m) for elevated decks; apply minimum ceiling height requirements for covered decks; and distinguish decks from porches and balconies by their code classification.
-### LEA Review | BP 344 2024 IRR | PD 1096 | RA 7277/9442/10754
 ---
 
 > **HOW TO USE THIS DECK:** This is your one-page memory anchor for every dimensional number that appears on the LEA. Sections A and C isolate the two most-tested "clubs." Section B is the complete height ladder from floor to ceiling. Memorize the ladder in order — the LEA frequently asks "what is the correct height for ___?" with distractors only 100–200 mm off.
@@ -17,7 +16,6 @@ Apply all code provisions governing deck, balcony, porch, and terrace heights un
 All dimensions in this deck are governed by BP 344 (2024 IRR), specifically Appendix A (General Provisions) and Appendix D (Specific Space Requirements). The 1800 mm turning space appears across App. A, Sec. 5.3 (elevators), Sec. 11.4 (telephones), Sec. 12.1 (ATMs), Sec. 13.4 (dressing rooms), and App. A Ramps (landings). Memorize the contexts — the LEA pairs 1800 × 1800 with specific fixtures.
 
 </LawCallout>
-
 
 > **Memory trigger:** "1800 = room to maneuver." Anywhere a wheelchair must turn, pass another chair, or approach a facility — expect 1800 mm.
 
@@ -46,7 +44,6 @@ All dimensions in this deck are governed by BP 344 (2024 IRR), specifically Appe
 
 </Warn>
 
-
 - **All 1800 × 1800** → turning space, elevator lobby, ATM, phone, drinking fountain, roll-in shower, vestibule
 - **1800 mm linear** → ramp landings (all), sidewalk passing, rest spaces on walkways
 - **1800 mm as a width** → double-leaf door, vestibule width
@@ -61,7 +58,6 @@ All dimensions in this deck are governed by BP 344 (2024 IRR), specifically Appe
 **Memory Strategy: "1-8-2-5" Ladder Trick.** The height ladder from floor to ceiling follows a predictable sequence: 200 (floor-level reach), 300 (handrail extension), 400 (kick plate), 500 (urinal), 600–700–750 (alarm, grab bar, WC handrail), 900 (handle, stair rail), 1100 (guard), 1200 (max side reach). Memorize the 5 critical heights between 750–1200 mm — this is the most tested band.
 
 </Tip>
-
 
 > **Memory strategy:** Read this ladder top-to-bottom once, then quiz yourself by covering the left column. On exam day, if you know whether a height is "below 750," "750–900," or "above 1200," you can eliminate three wrong answers instantly.
 
@@ -180,7 +176,6 @@ All dimensions in this deck are governed by BP 344 (2024 IRR), specifically Appe
 
 *Module 11 | BP 344 2024 IRR LEA Review Series | Philippine context only*
 
-
 <ExamTip>
 
 **LEA Dimensional Strategy:** When a question gives a height in mm, immediately locate it on the ladder: below 750 (reach ranges, clearance), 750–900 (handrail zone — most common exam range), 900–1200 (handle/guard zone), above 1200 (max reach). If you know the band, you can eliminate 2–3 wrong answers instantly without memorizing every number.
@@ -193,3 +188,5 @@ All dimensions in this deck are governed by BP 344 (2024 IRR), specifically Appe
 
 **Penthouses And Roof Structures**, **Ceiling Heights And Room Sizes**, **Pd 1096 Rule Vii Height Limits**, **Allowable Floor Area Increases**
 
+
+<!-- no-media-needed: reference deck/QA compilation, text-optimal format -->

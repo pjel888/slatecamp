@@ -6,7 +6,6 @@ Reading and analyzing a design brief is a critical skill for architects. The bri
 
 Analyze a design brief to extract program elements, site data, regulatory context, and design intent. Calculate total GFA and occupant load from program requirements, identify ambiguities requiring client clarification, and verify occupancy group classification early in the design process.
 
-
 ## Core Concept
 
 A design brief is a document prepared by the client or their representative (often in consultation with the architect during Pre-Design) that defines what the project must accomplish. The brief is not a design solution; it is a statement of requirements and constraints. Effective brief analysis requires careful reading, identification of explicit requirements, recognition of implied constraints, and clarification of ambiguities before design begins.
@@ -20,6 +19,7 @@ A design brief is a document prepared by the client or their representative (oft
 **Design Intent and Constraints** articulate client goals and limitations. The brief may specify aesthetic preferences (modern, vernacular, sustainability emphasis), performance targets (energy efficiency, resilience), budget parameters, or schedule constraints. Identifying implicit constraints (e.g., "minimizing excavation" suggests challenging soil conditions) is as important as recognizing explicit requirements.
 
 **Ambiguities and Clarifications** require early identification. Briefs may contain incomplete information, contradictory requirements, or vague statements. The architect's role includes identifying these gaps and obtaining clarification from the client before design begins. Assumptions made without verification create project risk.
+<ArticleMedia id="media-lea-dsgn-007-05-core-concept" a type="image" caption="Design Brief Analysis — Project Parameters and Constraints Diagram" description="Radial diagram showing the six dimensions of design brief analysis: client requirements, site constraints, regulatory context, budget parameters, program requirements, and schedule milestones. Central hub shows how integrated analysis informs design decisions." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
@@ -56,8 +56,8 @@ Design briefs in the Philippines follow the Unified Architects Practice (UAP) fr
 
 <Tip>Brief = requirements, not solutions. Read carefully: explicit requirements, implied constraints, ambiguities. Clarify before design. Program + Site + Code + Intent = Design parameters. Verify occupancy group early; it drives many other decisions.</Tip>
 
-
 **Exam Tip — ERR-DSGN-002:** Design principles (proportion, scale, balance, rhythm, hierarchy) are tested through visual analysis. The LEA may present a building image and ask which principle is violated or best represented.
+<ArticleMedia id="media-lea-dsgn-007-05-core-concept" a type="image" caption="Design Brief Decomposition — Requirements to Design Criteria" description="Flowchart showing the design brief analysis process: client requirements → site constraints → regulatory code review → program requirements → budget parameters → schedule milestones → integrated design criteria. Shows how each input translates to a specific design parameter." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Cross-References
 

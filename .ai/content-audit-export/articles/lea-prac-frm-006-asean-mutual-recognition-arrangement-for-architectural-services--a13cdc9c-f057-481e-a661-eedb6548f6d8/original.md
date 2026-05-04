@@ -30,16 +30,13 @@ In the Philippines, the ASEAN Monitoring Committee on Architectural Services (AM
 
 The Professional Regulatory Board of Architecture (PRBoA) prescribes and adopts rules and regulations for MRA implementation consistent with RA 9266. ASEAN Architects holding Philippine temporary or special permits may practice in the Philippines under conditions equivalent to those granted Filipino architects in their home countries. The Board ensures ASEAN Architects comply with Philippine architectural standards, ethical codes, and professional practice regulations.
 
-
 <ExamTip>
   **Exam Tip:** Know the hierarchy of Philippine architectural laws: RA 9266 (primary), Code of Ethical Conduct (professional conduct rules), SPP Documents (service standards), UAP Documents (contract standards), NBCP (building regulation). LEA questions test which law governs specific situations.
 </ExamTip>
 
-
 <Warn>
   ****Warning:** Environmental compliance (EIA, ECC, CNC) is a distinct regulatory process from building permit requirements. An ECC is required before the building permit application — they are sequential, not parallel. Architects must advise clients on both sets of obligations or risk project delays and penalties.**
 </Warn>
-
 
 <LawCallout code="asean" section="ASEAN MRA - Recognition Arrangement">
 Philippine architectural practice operates under multiple regulatory instruments: RA 9266 (Architecture Act), the Code of Ethical Conduct, SPP Documents, UAP Documents, the National Building Code (PD 1096), and various specialty laws covering accessibility (BP 344), fire safety (RA 9514), and environmental compliance (PD 1586, DENR DAO).
@@ -55,6 +52,9 @@ Standard foreign temporary permits remain available for non-ASEAN architects and
 
 ---
 
+
+
+<ArticleMedia type="image" caption="ASEAN Architect Registration — MRA Process Flowchart" description="Flowchart showing ASEAN MRA qualification pathway: National certification → ASEAN Architect Register application → AAC evaluation → ASEAN Architect designation → Practice rights in member countries. Side panel shows ASEAN member countries and Philippine Monitoring Committee (AMCASP) role. Requirements checklist for AA registration: education, experience, ethical record." />
 ## Related Articles
 
 - [Sole Proprietorship](lea-prac-frm-001)

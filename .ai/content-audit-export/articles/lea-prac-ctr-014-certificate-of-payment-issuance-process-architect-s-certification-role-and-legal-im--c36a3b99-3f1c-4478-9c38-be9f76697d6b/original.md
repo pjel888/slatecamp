@@ -8,9 +8,7 @@ After reading this article, you should be able to:
 - Identify the legal weight of an Architect's certification and the consequences of certifying incomplete or defective work.
 - Apply Certificate of Payment procedures to LEA scenarios involving payment disputes and the Architect's gate-keeping role.
 
-
 The Certificate of Payment is the architect's formal certification that the contractor has performed work in accordance with contract terms and is entitled to payment for services rendered.
-
 
 ### The Architect's Certification Function
 
@@ -68,3 +66,4 @@ The final certificate should not be issued until all punch-list items have been 
 <ExamTip>
 **Interim vs. Final Certification:** This is a frequent LEA trap. Interim certificates can be revised later if defects are discovered — they are provisional. Final certification is definitive: it acknowledges the architect has observed completed work, verified compliance, and released retention. Once Final Completion is certified, the one-year defects liability period begins. Never issue final certification until ALL punch-list items are resolved.
 </ExamTip>
+<!-- no-media-needed: professional practice article, text/tables/UI blocks are optimal format -->

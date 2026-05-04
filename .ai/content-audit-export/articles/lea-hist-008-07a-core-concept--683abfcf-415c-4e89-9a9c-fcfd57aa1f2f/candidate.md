@@ -12,11 +12,15 @@ Identify the key characteristics of Deconstructivism — fragmentation, non-rect
 
 Deconstructivism fragmented the smooth, continuous surfaces of modernism and postmodernism. Instead of clear, unified forms, Deconstructivist buildings appeared to splinter, collide, or twist in ways that denied coherence. Materials and structural systems were exposed and apparently contradicted; forms seemed to defy gravity or logic. This created an architecture of visual and conceptual instability that reflected postmodern anxiety about certainty and meaning.
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+<Tip>
+**1988 MoMA exhibition = movement's birth. Seven architects: Gehry, Hadid, Libeskind, Eisenman, Koolhaas, Tschumi, Coop Himmelblau.** This exhibition crystallized Deconstructivism as a recognizable movement. Memorize the 1988 date and the seven names—exam probability is high.
+</Tip>
 
 **Frank Gehry's Guggenheim Museum** (1993–1997, Bilbao, Spain) is the movement's most iconic work. Its titanium-clad, biomorphic forms appear to tumble and collide, with curves intersecting unexpectedly. Gehry used digital modeling (CATIA software, borrowed from aerospace) to design forms that would have been nearly impossible to construct and visualize by hand. The building's fragmented, non-Euclidean geometry became possible through computational design.
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
+<Note>
+Digital tools were not merely convenient—they were necessary. Before CATIA, designing and coordinating such complex, non-orthogonal forms would have been nearly impossible. The movement's formal freedom and the technology enabling it developed together. Understand technology as integral, not incidental, to the movement.
+</Note>
 
 **Zaha Hadid's Vitra Fire Station** (1993, Weil am Rhein, Germany) compresses and stretches the box form until it appears to fracture, with sharp planes intersecting at oblique angles. The building seems caught mid-transformation, dynamic and unstable. Hadid pursued this language of fluidity and collision throughout her career, increasingly enabled by parametric design methodologies.
 
@@ -28,7 +32,9 @@ The 1988 exhibition featured seven architects: **Gehry**, **Hadid**, **Libeskind
 
 Deconstructivism remains contested. Critics argue it is purely aesthetic fragmentation without ethical or philosophical grounding. Advocates counter that the movement destabilized modernism's false certainties and opened architecture to complexity reflecting contemporary experience. By the 2000s, Deconstructivism's experimental fervor had been absorbed into mainstream practice, with fragmentation and digital form-making becoming routine rather than revolutionary.
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
+<Warn>
+Do not dismiss Deconstructivism as merely aesthetic. While critics correctly point to its formal excess, the movement addressed genuine philosophical concerns about modernism's rigid certainties. Whether you agree with the approach, understand that it was intellectually motivated, not arbitrary style. Distinguish between form and intent.
+</Warn>
 
 
 <ArticleMedia id="media-hist-008-07a-core-concept" layout="single" type="image" status="placeholder" alt="Reference image showing representative works of the seven architects featured in the 1988 MoMA Deconstructivist Architecture exhibition: Gehry, Hadid, Libeskind, Eisenman, Koolhaas, Tschumi, and Coop Himmelb(l)au." caption="MoMA 1988 Deconstructivist Architecture — Seven Architects" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
@@ -36,25 +42,25 @@ Deconstructivism remains contested. Critics argue it is purely aesthetic fragmen
 
 ## Key Facts and Testable Items
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="WikiExamTable" status="preserved"]
+<WikiExamTable headers={["Building", "Architect", "Year", "Location", "Key Features"]} rows={[['["**Guggenheim Museum Bilbao**", "**Frank Gehry**", "1993–1997", "Bilbao, Spain", "Titanium-clad biomorphic forms; fragmented geometry; computational design; curvilinear collisions"]', '["**Vitra Fire Station**", "**Zaha Hadid**", "1993", "Weil am Rhein, Germany", "Fractured planes; oblique angles; dynamic unstability; compressed, stretched form"]', '["**Jewish Museum Berlin**", "**Daniel Libeskind**", "1999 (opened 2001)", "Berlin", "Zigzag form; zinc cladding; internal void; fragmented geometry; memorial purpose"]', '["**House VI**", "**Peter Eisenman**", "1975", "Connecticut", "Abstract geometric intersection; deconstructed domestic spaces; contradiction of inside/outside"]', '["**Rosenthal Center for Contemporary Art**", "**Zaha Hadid**", "2003", "Cincinnati", "Cantilevered forms; fragmented facade; continuous undulating surfaces; public void"]', '["**Denver Art Museum Addition**", "**Daniel Libeskind**", "2006", "Denver", "Titanium and glass; fractured angular forms; jagged roofline; deconstructivist expression"]']]} />
 ## How It's Tested on the LEA
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
+<ExamTip>**Pattern 1: Movement identification and context.** "Which 1988 MoMA exhibition crystallized Deconstructivism as a movement?" Students identify the exhibition, its curators, and the philosophical underpinning from Derridean deconstruction theory.</ExamTip>
 
-[SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
+<ExamTip>**Pattern 2: Visual and formal recognition.** "The **Guggenheim Museum Bilbao's** titanium-clad forms appear to collide and fragment. Which architect designed it and which movement does it exemplify?" Students recognize **Frank Gehry** and Deconstructivism through formal fragmentation and computational geometry.</ExamTip>
 
-[SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
+<ExamTip>**Pattern 3: Technological innovation.** "How did digital tools like CATIA enable Deconstructivist design that would have been nearly impossible to achieve by hand?" Students articulate the relationship between computational capacity and formal experimentation.</ExamTip>
 
-[SLATECAMP_UI_BLOCK:ui_0009 component="ExamTip" status="preserved"]
+<ExamTip>**Pattern 4: Comparative analysis.** "How does Deconstructivism's fragmented geometry differ from Postmodernism's ornamental pastiche?" Students distinguish between formal destabilization (Deconstructivism) and historical quotation (Postmodernism).</ExamTip>
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
+<Callout>**Deconstructivism** is tested as the movement that fragmented and destabilized modernism's geometric order. The LEA examines whether you recognize the 1988 MoMA exhibition as the movement's crystallization point, can identify buildings by **Frank Gehry**, **Zaha Hadid**, **Daniel Libeskind**, and **Peter Eisenman**, and understand how digital tools enabled formal experimentation.</Callout>
 
 ## Common Mistakes
-[SLATECAMP_UI_BLOCK:ui_0010 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Confusing Deconstructivism with mere sculptural or curvilinear form" correction="Not all curved or complex buildings are Deconstructivist. Deconstructivism is specifically about formal fragmentation, collision, contradiction, and the destabilization of coherent order." context="Zaha Hadid's later fluid parametric work is different from her early Deconstructivist Fire Station." />
 
-[SLATECAMP_UI_BLOCK:ui_0011 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Treating Deconstructivism as purely aesthetic without philosophical ground" correction="Students dismiss the movement as superficial style." context="While the 1988 exhibition's theoretical coherence is debated, the movement emerged from genuine intellectual critique of modernist order and postmodern pastiche." />
 
-[SLATECAMP_UI_BLOCK:ui_0012 component="WikiMistakeList" status="preserved"]
+<WikiMistakeList mistakes={["Overlooking the non-Western architects within Deconstructivism. While **Gehry**, **Hadid**, and **Libeskind** dominate the canon, **Rem Koolhaas** (Dutch) and others shaped the movement. The movement is not purely American or European.", "Equating all Zaha Hadid's work with 1988 Deconstructivism. **Hadid's** early work (Vitra Fire Station) was fractured and deconstructivist; her later work pursued flowing parametric curves that are different in philosophy and aesthetics. The movement evolved; Hadid evolved with it.", "Misunderstanding the relationship to deconstruction theory. Students sometimes assume Deconstructivism directly applies Derrida's linguistic deconstruction to buildings. The relationship is more metaphorical and suggestive; architects borrowed the language of instability and internal contradiction, not literal textual deconstruction."]} />
 
 ## Key Terms
 - **Deconstructivism**: Architectural movement (1988–present) fragmenting and destabilizing modernist and postmodern order through colliding planes, complex geometry, and visual contradiction.
@@ -67,6 +73,8 @@ Deconstructivism remains contested. Critics argue it is purely aesthetic fragmen
 - **Collision**: The intentional intersection and overlapping of distinct geometric or spatial systems without resolution; a Deconstructivist strategy.
 - **Void**: Empty space or absence within or through a building; used symbolically in **Libeskind's Jewish Museum**.
 - **Deconstruction**: French philosophical method questioning the stability of meaning by revealing internal contradictions; provides the movement's intellectual framework.
+
+<ArticleMedia id="media-hist-008-07a-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparison of the seven Deconstructivist architects featured in the 1988 MoMA exhibition showing their fragmented, non-rectilinear forms: Gehry (Guggenheim Bilbao), Hadid (Vitra Fire Station), Libeskind (Jewish Museum), Eisenman (Wexner Center), Koolhaas, Tschumi, and Coop Himmelb(l)au." caption="Deconstructivism — MoMA 1988 Exhibition Architects" suggestedAsset="Style comparison illustration" placementIntent="Style comparison for architectural period" />
 
 ## Related Articles
 

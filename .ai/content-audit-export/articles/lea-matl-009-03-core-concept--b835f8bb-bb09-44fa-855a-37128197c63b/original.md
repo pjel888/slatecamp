@@ -16,6 +16,13 @@ _Hardware schedules_ specify the lock type, hinge size and material, closer requ
 
 _Lighting schedules_ tabulate fixture type, wattage, quantity per room, mounting height, color temperature (2700K, 4000K), and control method (on/off, dimming, motion sensor). For electrical coordination, lighting schedules are often developed jointly with the mechanical engineer and building systems designer.
 
+
+<ArticleMedia id="media-three-part-format-diagram" layout="single" type="image" status="placeholder"
+  alt="Diagram showing the three-part specification section format: Part 1 General, Part 2 Products, Part 3 Execution with information type summaries"
+  caption="Future diagram: three-part specification format — Part 1 General, Part 2 Products, Part 3 Execution"
+  suggestedAsset="Annotated diagram or template showing each part's contents"
+  placementIntent="Visualizes the structure of a specification section" />
+
 ## Key Provisions
 
 | Schedule Type | Typical Columns | Coordination Challenge | Philippine Relevance | LEA Testing |
@@ -34,6 +41,12 @@ Schedules are essential in the Philippine climate and regulatory context. Fire-r
 
 In practice, schedules are often developed by interior designers or specification writers in coordination with the architect. The architect verifies that schedules are complete, internally consistent (door marks match floor plan symbols), and aligned with specification requirements. A door schedule specifying "Fire-Rated 60-minute" must correspond to a Division 08 specification stating "60-minute fire rating per ASTM E152."
 
+
+<ArticleMedia id="media-spec-section-annotated" layout="single" type="image" status="placeholder"
+  alt="Annotated specification section showing Part 1 General, Part 2 Products, and Part 3 Execution with explanatory callouts for each information type"
+  caption="Future diagram: annotated specification section — three-part format with explanatory callouts"
+  suggestedAsset="Annotated excerpt from a real specification section"
+  placementIntent="Provides visual example of three-part spec section structure" />
 ## How It's Tested
 
 _Pattern 1 — Schedule Completeness:_ The exam presents an incomplete door schedule (missing columns like Hardware Set, Fire Rating, or Remarks) and asks you to identify what information is missing. Answer: A complete door schedule must include quantities, sizes, frame/face materials, fire ratings (where applicable), hardware assignments, and any special requirements (security, accessibility). Incomplete schedules lead to field changes and cost overruns.

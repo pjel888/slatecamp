@@ -1,33 +1,32 @@
 # Content Diff Report: hydrology-in-site-planning
 
-Generated: 2026-05-04T00:07:20.251Z
+Generated: 2026-05-04T02:18:14.403Z
 Article ID: 9df7cae5-ca74-48cb-81ec-344ed71bcadf
-Changed: true
-Safe to push locally: false
+Changed: false
+Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:e8633c76bbb2af7aaa77e5cb2de219e768c74d8787699cbf6518cde79771efda`
+- Original: `sha256:e38d08847ee0e9640889bdd10e29d7bb788204e684c162659281940281beb35e`
 - Normalized: `sha256:719232e6e2efbe508156020a5514c0b8ca40b287415b72ae3e1124332954f8c4`
-- Candidate: `sha256:719232e6e2efbe508156020a5514c0b8ca40b287415b72ae3e1124332954f8c4`
+- Candidate: `sha256:e38d08847ee0e9640889bdd10e29d7bb788204e684c162659281940281beb35e`
 
 ## Line summary
 
-- Changed lines: 173
+- Changed lines: 0
 - Inserted lines: 0
-- Deleted lines: 19
+- Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 4
-- UI blocks preserved: 0
-- UI blocks changed/missing: 4
-- Unresolved placeholders: 1
+- UI blocks preserved: 4
+- UI blocks changed/missing: 0
+- Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate contains unresolved UI block placeholders.
-- Candidate is missing 4 preserved UI block(s).
+- None
 
 ## Warnings
 

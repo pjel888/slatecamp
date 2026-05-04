@@ -1,26 +1,19 @@
 {
-  "attempted_at": "2026-05-04T00:06:14.823Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:25:55.104Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "Failed to update wiki_articles.content: Bad Request"
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "859b1a7f-8aba-473d-8c28-f9aaa39af11d",
   "slug": "pd-1096-rule-viii-setbacks-and-easements",
-  "preparation_actions": [
-    "auto_generated_diff"
-  ],
+  "preparation_actions": [],
   "remote_hash_before": "sha256:2e5d7788f34ed1afd8d6d2a5f84bbc7c037b02e92bcf58fb8d164a3c4276dec1",
   "original_hash": "sha256:2e5d7788f34ed1afd8d6d2a5f84bbc7c037b02e92bcf58fb8d164a3c4276dec1",
-  "candidate_hash": "sha256:a1d7cc96ac4272e0ec52aedb9e94918868e10fb28c8a34e7c7082bb454f9ea62",
+  "candidate_hash": "sha256:2bc671fc9442830910e34089eed9aad6d8e170b7c9db31f302bc1ccd85ef7a21",
   "stale_check_passed": true,
   "remote_updated_at_before": "2026-05-03T16:38:15.563495+00:00"
 }

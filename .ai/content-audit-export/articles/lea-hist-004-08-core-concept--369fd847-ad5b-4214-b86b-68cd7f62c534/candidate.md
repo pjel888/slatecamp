@@ -4,6 +4,10 @@
 
 Identify the testable markers of Philippine Islamic architecture — wooden construction, vernacular mosque forms, langgal, torogan — and explain how indigenous materials and Southeast Asian traditions shaped the Islamic architecture of Mindanao and Sulu.
 ## Core Concept
+
+
+<ArticleMedia id="media-hist-004-08-islamic-comparison" layout="single" type="image" status="placeholder" alt="Comparative section and plan diagram showing how Islamic mosque design adapts to climate: Left — Middle Eastern hypostyle mosque (e.g., Great Mosque of Damascus) with flat roof, enclosed prayer hall, open sahn courtyard, thick stone walls for thermal mass. Right — Southeast Asian mosque (e.g., Philippine langgal) with steeply pitched multi-tiered roof, elevated wooden floor on posts, open-sided prayer hall for cross-ventilation, and surrounding veranda. Climate adaptation annotations: heat storage vs. convection cooling, enclosed vs. open, stone vs. timber." caption="Islamic Mosque Typologies — Middle Eastern vs. Southeast Asian Comparison" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
 **Islamic architecture in the Philippines** represents the adaptation of Islamic design principles to Southeast Asian climate, materials, and indigenous traditions. Islam arrived in the Philippine archipelago through merchants and missionaries from Malaysia and Indonesia during the 14th–15th centuries. The primary Islamic communities developed in **Mindanao** (especially the Maguindanao and Lanao regions) and the **Sulu Archipelago** (Tawi-Tawi, Basilan, Sulu Jolo).
 
 
@@ -14,7 +18,14 @@ Unlike the monumental stone mosques of the Middle East or the marble mausoleums 
 
 **Maranao architecture** (from Lanao del Sur and Lanao del Norte) is the most documented Philippine Islamic tradition. The **Maranao mosque** (masjid) combines Islamic spatial requirements with indigenous Maranao construction knowledge. The typical plan includes a central prayer hall (musallah) with a minaret or smaller tower marking the qibla direction. Rather than the enclosed courtyard of Middle Eastern models, Maranao mosques often feature an open sheltered arcade or covered porch (penumbra space) where overflow prayers occur. The roofing system—steeply pitched with eaves extending far beyond the walls—protects worshippers and provides thermal regulation.
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+<Tip>**Philippine Islamic architecture's five testable markers:**
+1. **Wooden construction** (not stone/marble/concrete originally)
+2. **Steeply pitched roofs** + extended eaves (tropical rainfall management)
+3. **Elevated structures** (humidity control, traditional indigenous design)
+4. **Okir geometric carving** (Maranao-specific decorative tradition)
+5. **Modest integrated minaret** (not monumental separate tower)
+
+Key regions: Maranao (Lanao), Tausug (Sulu/Tawi-Tawi). Oldest: Sheikh Karimul Makhdum Mosque (1380, Simunul).</Tip>
 
 Decorative traditions in Philippine Islamic architecture blend Islamic geometric and calligraphic motifs with Maranao artistic practices. **Maranao woodcarving** produces intricate geometric relief patterns (okir patterns) on door frames, roof support brackets, and wall panels. These patterns are not arabesques in the Middle Eastern sense but incorporate local aesthetic sensibilities—bold, angular, and deeply carved. Colors (when used) are traditional earth tones and natural wood finish, not the bright blue and turquoise of Iznik tilework or the white marble inlay of Mughal architecture.
 
@@ -24,7 +35,7 @@ The **minaret** in Philippine Islamic architecture is typically a modest tower, 
 
 **Water features** appear in Philippine Islamic architecture, particularly in larger complexes, but they differ from the elaborate fountain systems of Persian or Mughal gardens. Instead, water channels manage tropical rainfall and provide ritual ablution (wudu) in practical forms—drainage systems, ablution basins, sometimes small reflecting pools. The harsh tropical monsoons and high humidity shape water management rather than aesthetic garden design.
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
+<Note>Okir patterns (Maranao geometric carving) are NOT arabesques. Okir consists of bold, angular, deeply carved geometric relief on wooden frames and supports—distinctly different from interlocking vegetal arabesques that tile continuously across surfaces. Recognizing okir as a distinct decorative tradition specific to Philippine Islamic architecture (not imported Middle Eastern ornament) marks understanding of regional synthesis and aesthetic sophistication. This distinction is tested on the LEA.</Note>
 
 The **integration with indigenous architecture** distinguishes Philippine Islamic from transplanted Arab or Persian models. Pre-Islamic Philippine indigenous architecture used elevated wooden structures with steep roofs, ventilation through slatted walls, and emphasis on community gathering spaces. Islamic mosques adopted these practices rather than imposing imported forms. This is architecture born from cultural contact and practical necessity, not imperial imposition.
 
@@ -36,25 +47,34 @@ Contemporary Philippine Islamic architecture shows increased use of modern mater
 
 ## Key Facts and Testable Items
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiExamTable" status="preserved"]
+<WikiExamTable headers={["Building/Tradition", "Region/Date", "Builder/Patron", "Location", "Key Features", "Architectural Significance"]} rows={[["**Sheikh Karimul Makhdum Mosque**", "Tausug/Arab, established 1380 (multiple reconstructions)", "Sheikh Karimul Makhdum (founder)", "Simunul, Tawi-Tawi", "Wooden structure (original), elevated on stilts (traditional), multiple reconstructions in modern materials (rebuilt 1960s), modest minaret, simple prayer hall, four wooden pillars from 17th century", "Oldest mosque in Philippines (since 1380); represents early Islamic tradition; shows adaptation of indigenous maritime architecture to Islamic needs; pillars protected as historic heritage"], ["**Maranao Mosques (Lanao Region)**", "Maranao, 15th century–present", "Traditional Maranao craftspeople; later patronage", "Lanao del Sur, Lanao del Norte", "Wooden construction (traditional), steeply pitched roofs, extended eaves, okir woodcarving on doors and supports, open arcades or penumbra spaces, modest minaets", "Represents Maranao synthesis of Islamic and indigenous traditions; extensive okir decoration shows artistic sophistication; practical tropical design"], ["**Mindanao Islamic Architecture Tradition**", "Various Mindanao groups (Maguindanao, Maranao, Tausug), 14th century–present", "Community builders; sultans as patrons", "Mindanao, Basilan, Sulu, Tawi-Tawi", "Elevated wooden construction, tropical hardwoods (coconut, nipa, bamboo), steeply pitched roofs, extensive ventilation, integration of Islamic prayer space with indigenous gathering spaces, okir geometric patterns", "Demonstrates Southeast Asian Islamic adaptation; shows cultural synthesis rather than cultural replacement; continues active tradition"], ["**Sultan Haji Hassanal Bolkiah Mosque (Grand Mosque of Cotabato)**", "Contemporary, 2008–2012 (completed/inaugurated)", "Modern architects; Philippine government and Muslim community patronage", "Cotabato City, Mindanao", "Concrete and modern materials, central dome, minaret tower, large interior prayer hall, accommodates thousands, contemporary Islamic architectural vocabulary", "Represents modernization of Philippine Islamic architecture; shows transition from wooden to concrete construction; maintains Islamic spatial requirements in urban context; inaugurated July 8, 2012"], ["**Lanao Mosque Complex**", "Contemporary, late 20th century", "Modern architects; Muslim community patronage", "Lanao region", "Complex of prayer halls, madrasa, community facilities, modern materials, Islamic architectural vocabulary, integration with contemporary urban planning", "Demonstrates expansion of mosque to include educational and social functions; shows contemporary Philippine Islamic patronage"]]} />
 
 ## How It's Tested on the LEA
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="ExamTip" status="preserved"]
-[SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
-[SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
-[SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
-[SLATECAMP_UI_BLOCK:ui_0009 component="ExamTip" status="preserved"]
+<ExamTip>**Pattern 1: Climate and Material Adaptation**
+"How does the architectural design of a traditional Maranao mosque differ from a Middle Eastern or Ottoman mosque? What specific design decisions reflect adaptation to Philippine tropical climate and available materials?" (Answer: Maranao mosques use wooden construction (not stone/marble), steeply pitched roofs and extended eaves (managing high rainfall), elevated structures (controlling humidity), extensive ventilation (managing heat), and integration with indigenous building practices. Minarets are modest towers or integrated elements. These reflect practical tropical adaptation, not aesthetic imported forms.)
+</ExamTip>
+<ExamTip>**Pattern 2: Decorative Tradition Identification**
+"Philippine Islamic decoration employs **okir patterns**—geometric relief carving on wood. How does this differ from Middle Eastern arabesques, Ottoman tilework, or Mughal semi-precious stone inlay?" (Answer: Okir patterns are bold, angular, deeply carved geometric forms reflecting Maranao artistic tradition. Arabesques are interlocking vegetal/geometric patterns on tiled or painted surfaces; Ottoman tilework uses colored glaze; Mughal inlay uses stone and light reflection. Okir is pure wood carving with traditional finishes, integrating Islamic geometry with indigenous aesthetics.)
+</ExamTip>
+<ExamTip>**Pattern 3: Regional Identification**
+"Identify the Maranao and Tausug regions of the Philippines and name one historically significant mosque from each tradition." (Answer: Maranao: Lanao del Sur and Lanao del Norte, with traditional mosques in Marawi and surrounding communities. Tausug: Sulu and Tawi-Tawi islands, with the **Sheikh Karimul Makhdum Mosque** in Simunul representing early tradition and the oldest mosque in the Philippines, established 1380.)
+</ExamTip>
+<ExamTip>**Pattern 4: Indigenous-Islamic Synthesis**
+"Philippine Islamic architecture synthesizes Islamic spatial and spiritual requirements with indigenous Southeast Asian building practices. Explain what each tradition contributes to the resulting design." (Answer: Islamic contribution: prayer hall (musallah) orientation toward Mecca, mihrab niche, minaret/tower for call to prayer, calligraphy and geometric decoration. Indigenous contribution: elevated wooden structures managing climate, steeply pitched roofs and extended eaves for rain management, ventilation through construction design, community gathering space integration.)
+</ExamTip>
+<ExamTip>**Pattern 5: Contemporary Development**
+"Compare traditional wooden Maranao/Tausug mosques with modern Philippine Islamic buildings like the Grand Mosque of Cotabato. What is retained from traditional practice, and what changes with modern materials and urban context?" (Answer: Retained: Islamic spatial requirements (prayer hall, qibla orientation), minaret symbolism, community and social functions. Changed: wooden construction becomes concrete; modest sclea becomes urban monumental sclea; community-built becomes professionally designed; extended eaves and ventilation become climate-controlled interiors.)</ExamTip>
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
+<Callout>The LEA tests your knowledge of **Islamic architecture in the Philippines**, particularly in Mindanao and the Sulu Archipelago. You must understand **Maranao** and **Tausug** design traditions, recognize characteristic mosques, and explain how Islamic architecture adapted to the Philippine tropical environment and indigenous building practices.</Callout>
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0010 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Treating Philippine Islamic Architecture as \"Underdeveloped\"" correction="Students sometimes view Philippine Islamic architecture as simpler or less sophisticated than Middle Eastern, Ottoman, or Mughal models. In fact, the design represents sophisticated adaptation to local conditions. The wooden construction, okir carving, and integration with indigenous traditions demonstrate mastery, not inferiority." context="The architecture serves its context perfectly." />
 
-[SLATECAMP_UI_BLOCK:ui_0011 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Confusing Okir with Arabesque" correction="**Okir patterns** (Maranao geometric carving) are not arabesques. Arabesques are interlocking vegetal and geometric patterns covering surfaces continuously. Okir consists of bold, angular, deeply carved geometric forms on wooden frames and decorative elements." context="Confusing these marks a fundamental misunderstanding of Philippine Islamic aesthetics." />
 
-[SLATECAMP_UI_BLOCK:ui_0012 component="WikiMistakeList" status="preserved"]
+<WikiMistakeList mistakes={["Overlooking the Sheikh Karimul Makhdum Mosque's Historical Significance. The **Sheikh Karimul Makhdum Mosque** (located in Simunul, Tawi-Tawi) is the oldest mosque in the Philippines, established in 1380, and represents early Islamic tradition introduced by Arab missionary Sheikh Karimul Makhdum. Its long history and multiple reconstructions (notably in the 1960s after WWII damage) show continuity of Islamic practice through changing materials and circumstances. Recognizing its significance to Philippine Islamic heritage and to Southeast Asian Islam is essential.", "Treating Climate as Secondary to Islamic Design. Students sometimes prioritize Islamic spatial requirements (prayer hall, minaret, qibla) while treating climate adaptation as cosmetic modification. In Philippine Islamic architecture, climate fundamentally shapes design—elevated structures, steeply pitched roofs, extensive ventilation, and wooden construction are not compromises but intentional responses to environment and available resources. Climate is primary, not secondary.", "Assuming a Single \"Islamic\" Style in the Philippines. The Philippines has distinct Islamic traditions: **Maranao**, **Tausug**, **Maguindanao**, and others. Each has regional variations in material use, decorative practice, and spatial organization. Recognizing regional diversity within Philippine Islamic architecture shows historical sophistication.", "Neglecting the Transition to Modern Materials. Contemporary Philippine Islamic architecture (Grand Mosque of Cotabato, modern madrasas) marks an important shift from community-built wooden structures to professionally designed concrete buildings. This transition reflects urbanization, increased population, and modernization while maintaining Islamic spatial and symbolic traditions. Understanding this evolution demonstrates comprehension of living, changing traditions."]} />
 
 ## Key Terms
 
@@ -78,7 +98,9 @@ Contemporary Philippine Islamic architecture shows increased use of modern mater
 
 **Sultan Haji Hassanal Bolkiah Mosque (Grand Mosque of Cotabato)** — Contemporary large mosque in Cotabato City; construction 2008–2012, inaugurated July 8, 2012; represents modernization of Philippine Islamic architecture; uses concrete and modern materials while maintaining Islamic spatial traditions; named after Brunei's Sultan Hassanal Bolkiah.
 
-[SLATECAMP_UI_BLOCK:ui_0013 component="Warn" status="preserved"]
+<Warn>Do not treat Philippine Islamic architecture as "underdeveloped" or inferior to Middle Eastern, Ottoman, or Mughal models. Wooden construction, okir carving, elevated structures, and steep roofs represent sophisticated adaptation to tropical climate, available materials, and cultural context—not simplicity. The architecture demonstrates mastery of its environment. This design philosophy (function-driven, climate-responsive, culturally integrated) is as sophisticated as monumental stone models. The LEA tests this understanding of regional appropriateness over universal standards.</Warn>
+
+<ArticleMedia id="media-hist-004-08-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Diagram showing the contrast between monumental Islamic architecture (Middle Eastern stone mosques, Ottoman domes, Mughal marble tombs) and Philippine Islamic wooden vernacular (torogan, langgal, steep-pitched roofs, okir carving), highlighting material and climatic adaptation." caption="Islamic Vernacular — Middle Eastern vs. Philippine Comparison" suggestedAsset="Style comparison illustration" placementIntent="Style comparison for architectural period" />
 
 ## Related Articles
 

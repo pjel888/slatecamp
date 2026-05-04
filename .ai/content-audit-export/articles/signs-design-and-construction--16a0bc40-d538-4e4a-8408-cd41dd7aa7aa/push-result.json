@@ -1,26 +1,21 @@
 {
-  "attempted_at": "2026-05-04T00:07:15.267Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:18:07.427Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "candidate.md matches original.md; refusing no-op apply."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
   "slug": "signs-design-and-construction",
   "preparation_actions": [
     "auto_generated_diff"
   ],
-  "remote_hash_before": "sha256:98bb8d9e804f27b62feb88ab629a06f5d55635373761f3608247415bbb524484",
-  "original_hash": "sha256:98bb8d9e804f27b62feb88ab629a06f5d55635373761f3608247415bbb524484",
-  "candidate_hash": "sha256:4e8fa3c17116b958011db32d25853794f7a71793aa3d7dee8bc0ab4bbd35a193",
+  "remote_hash_before": "sha256:092838374abaf4255aa4f523b3f011e2ca77bba83170f61aaf1398d4f38f2164",
+  "original_hash": "sha256:092838374abaf4255aa4f523b3f011e2ca77bba83170f61aaf1398d4f38f2164",
+  "candidate_hash": "sha256:092838374abaf4255aa4f523b3f011e2ca77bba83170f61aaf1398d4f38f2164",
   "stale_check_passed": true,
-  "remote_updated_at_before": "2026-05-03T13:52:45.947344+00:00"
+  "remote_updated_at_before": "2026-05-04T02:02:18.523167+00:00"
 }

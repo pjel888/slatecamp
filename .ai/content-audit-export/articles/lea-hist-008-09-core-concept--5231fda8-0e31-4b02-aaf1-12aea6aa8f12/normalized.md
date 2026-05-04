@@ -62,6 +62,8 @@ The **Pritzker Prize**, established in **1979** by the Hyatt Foundation, recogni
 
 **Laureate** — A person or team awarded a prize; in architecture, typically refers to a Pritzker Prize winner.
 
+<ArticleMedia id="media-hist-008-09-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Timeline of Pritzker Prize laureates (1979–2025) highlighting key milestones: first laureate (Johnson, 1979), first woman (Hadid, 2004), first African (Kéré, 2022), and the evolution from formalist to socially engaged architecture." caption="Pritzker Prize — Laureate Timeline" suggestedAsset="Timeline diagram" placementIntent="Timeline diagram for architectural period" />
+
 ## Related Articles
 
 See also within Modern & Contemporary Architecture: **lea-hist-008-01-core-concept**, **lea-hist-008-02-core-concept**, **lea-hist-008-03a-core-concept**, **lea-hist-008-03b-core-concept**.

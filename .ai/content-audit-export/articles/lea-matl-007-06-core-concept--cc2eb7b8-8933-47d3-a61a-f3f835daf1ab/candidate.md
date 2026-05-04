@@ -70,19 +70,19 @@ Standard countertop depth is 600mm (matching wall cabinet depth), with 40-50mm o
 
 **Question Type 4 (Specification Detail):** A marble countertop specification omits sealing frequency. What maintenance problem results? Answer: Unsealed or under-sealed marble etches and stains within 6-12 months. Specification must state: "Natural marble per ANSI C119.2, sealed per ASTM C1028 with stone selear (brand), resealed annually."
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+<Tip>Memory aid: Engineered quartz = best all-rounder (hard, non-porous, low-maintenance). Natural granite = durable but requires sealing. Marble = beautiful but high-maintenance (etching risk). Laminate = budget-friendly but short-lived. Concrete = artistic but labor-intensive. Match material to maintenance tolerance, not just aesthetics.</Tip>
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Specifying marble for a kitchen counter, assuming sealing prevents etching and staining" correction="Sealing delays but does not prevent etching (acidic foods etch marble regardless of selear). Marble is inappropriate for high-use kitchens. Use it in low-use formal kitchens or dining buffets only, with explicit owner education on maintenance." />
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Assuming all granite is equivleant; sourcing from lowest-cost supplier without quality inspection" correction="Natural stone varies widely by quarry and quality grade. Always inspect sample slabs. Verify sealing application by supplier. Low-cost granite often lacks proper sealing, leading to rapid staining." />
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Specifying engineered quartz without noting non-repairable scratches vs. Corian's repairable surface" correction="Quartz scratches are permanent (cosmetic only, but visible). Corian scratches are repairable (sanded/re-buffed). Match material to household use (high-risk kitchens favor Corian; low-risk favor quartz for cost)." />
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Omitting sealing frequency for natural stone, assuming 'selead at factory' lasts the project life" correction="Factory sealing is initial protection only. Annual re-sealing is required for granite/limestone in high-humidity climates (Philippines). Specify in spec: 'Annual sealing per [brand] protocol.'" />
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="WikiMistakeList" status="preserved"]
+<WikiMistakeList mistakes={["Installing laminate in high-heat zones (next to cooktops) without backsplash or edge protection", "Using water-based selears on marble in tropical climates (requires solvent-based selears for durability)", "Overlooking edge profiles in natural stone specs (polished vs. honed affects maintenance and appearance)", "Failing to coordinate countertop depth and overhang with cabinet and appliance specs", "Assuming backsplash is optional; omitting it in tile-wall kitchens (moisture penetration to substrates)"]} />
 
 ## Related Articles
 

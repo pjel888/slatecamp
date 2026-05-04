@@ -14,6 +14,9 @@ After studying this article, you should be able to:
 <LawCallout code="ra9266" section="Section 27 - DAE Path">
 Legal Basis: RA 9266 (Architecture Act of 2004), Section 13 (Qualifications for Admission to the Architect Licensure Examination); PRBoA Resolutions on DAE implementation.
 </LawCallout>
+Extracted summary:
+- Props: code=ra9266, title=RA 9266, Section 13 — LEA Eligibility Requirements
+- Text: Legal Basis: RA 9266 (Architecture Act of 2004), Section 13 (Qualifications for Admission to the Licensure Examination for Architects); PRBoA Resolutions on DAE implementation.
 
 ### Academic Foundation and Moral Character
 
@@ -26,36 +29,42 @@ DAE represents post-baccalaureate, pre-licensure experience that develops a cand
 ### Master's Degree Credit and Documentation
 
 <Tip>A Master's degree in Architecture reduces the DAE requirement by **one (1) year** (from 2 years to 1 year). This is a commonly tested advantage. The reduction applies only to Master's degrees from CHED-recognized institutions. A Master's in a non-architecture field does not qualify.</Tip>
+Extracted summary:
+- Props: (none)
+- Text: A Master's degree in Architecture reduces the DAE requirement by **one (1) year** (from 2 years to 1 year). This is a commonly tested advantage. The reduction applies only to Master's degrees from CHE...
 
 A critical advantage exists for candidates holding a Master's degree in Architecture from a government-recognized institution: _the DAE requirement is reduced by one (1) year of mandatory experience_. This reduction acknowledges the advanced coursework and research embedded in postgraduate architectural studies. Candidates claiming this reduction must submit their official Master's diploma with clear graduation dates and the institution's CHED accreditation status. Additionally, all applicants must provide a Certificate of Live Birth on Philippine Statistics Authority (PSA) Security Paper, proof of citizenship, an Architect-Mentor Affidavit, and an NBI clearance with no convictions for crimes of moral turpitude.
 
 ### Supporting Documents and Verification
 
 <Warn>Fraudulent applications — false evidence or misrepresentation — result in **denial of registration** and, if discovered later, **suspension or revocation** of the Certificate of Registration. The Board verifies all credentials with CHED and the NBI. Never assume fraud has a statute of limitations in professional regulation.</Warn>
+Extracted summary:
+- Props: (none)
+- Text: ⚠️ Fraudulent applications — false evidence or misrepresentation — result in **denial of registration** and, if discovered later, **suspension or revocation** of the Certificate of Registration. The Boar... — expect this as a trap answer on the LEA.
 
 The Board requires submission of all supporting documents before examination registration is finalized. These include the Diversified Architecture Experience Logbook, the architect-mentor's Professional Tax Receipt (PTR) and Integrated and Accredited Professional Organization of Architects (IAPOA) number, copies of the mentor's valid Professional ID, and original college diplomas or baccalaureate transcripts with graduation dates and the remark "For Board Examination Purposes" clearly marked. Fraudulent applications containing false evidence or misrepresentations result in denial of registration or, if discovered later, suspension or revocation of the Certificate of Registration. The Board reserves the right to verify all credentials with CHED and the National Bureau of Investigation before proceeding with examination approval.
 
 <ExamTip />
+Extracted summary:
+- Props: (none)
+- Text: The four LEA eligibility requirements (C-A-A-E): Citizenship (Filipino), Age (21+ at exam time), Academics (B.S. Arch from CHED-recognized school), Experience (DAE — minimum 2 years or 3,840 hours).
 
 <Note />
+Extracted summary:
+- Props: (none)
+- Text: The DAE requirement is reduced by 1 year for Master's degree holders in Architecture. The reduction applies only to Master's degrees from CHED-recognized institutions. A Master's in a non-architectural field does NOT qualify for the reduction.
 
 ---
 
-\
-Extracted summary:
-- Props: 
-- Text: Legal Basis: RA 9266 (Architecture Act of 2004), Section 13 (Qualifications for Admission to the Licensure Examination for Architects); PRBoA Resolutions on DAE implementation.
-\[/SLATECAMP_UI_BLOCK\]
-\
-Extracted summary:
-- Props: 
-- Text: A Master's degree in Architecture reduces the DAE requirement by **one (1) year** (from 2 years to 1 year). This is a commonly tested advantage. The reduction applies only to Master's degrees from CHE
-\[/SLATECAMP_UI_BLOCK\]
-\
-Extracted summary:
-- Props: 
-- Text: Fraudulent applications — false evidence or misrepresentation — result in **denial of registration** and, if discovered later, **suspension or revocation** of the Certificate of Registration. The Boar
-\[/SLATECAMP_UI_BLOCK\]
+<Note>
+Legal Basis: RA 9266 (Architecture Act of 2004), Section 13 (Qualifications for Admission to the Licensure Examination for Architects); PRBoA Resolutions on DAE implementation.
+</Note>
+<Note>
+A Master's degree in Architecture reduces the DAE requirement by **one (1) year** (from 2 years to 1 year). This is a commonly tested advantage. The reduction applies only to Master's degrees from CHE
+</Note>
+<Note>
+Fraudulent applications — false evidence or misrepresentation — result in **denial of registration** and, if discovered later, **suspension or revocation** of the Certificate of Registration. The Boar
+</Note>
 ## Related Articles
 
 - [RA 9266: Structure and Key Definitions](lea-prac-law-001)
@@ -66,3 +75,5 @@ Extracted summary:
 - [Signing and Sealing Rules](lea-prac-law-017)
 - [Code of Ethical Conduct](lea-prac-eth-001)
 - [Professional Practice Forms](lea-prac-frm-001)
+
+<!-- no-media-needed: professional practice article, text/tables/UI blocks are optimal format -->

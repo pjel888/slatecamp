@@ -10,7 +10,7 @@ By the end of this article, you will be able to:
 A soft story and a weak story are not synonyms. Soft story is a lateral stiffness deficiency (< 70% of story above); weak story is a lateral strength deficiency (< 80% of story above). Both create seismic vulnerability and are regulated by design codes. The LEA distinguishes them clearly.
 
 ## Core Concept
-<ArticleMedia id="media-lea-strc-004-03-core-concept" a type="image" caption="Base Shear — Seismic Force Distribution" description="Building elevation diagram showing: (1) Total base shear V calculated from V=(ZIC/RW)W applied at base; (2) Vertical distribution of lateral forces (Fx) increasing from bottom to top following Fx = (Wxhx^k/ΣWihi^k)V; (3) Story drift and overturning moment diagram. Key parameters labeled: Z (zone), I (importance), C (response), R (ductility), W (weight)." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-strc-004-03-core-concept" type="image" caption="Base Shear — Seismic Force Distribution" alt="Building elevation diagram showing: (1) Total base shear V calculated from V=(ZIC/RW)W applied at base; (2) Vertical distribution of lateral forces (Fx) increasing from bottom to top following Fx = (Wxhx^k/ΣWihi^k)V; (3) Story drift and overturning moment diagram. Key parameters labeled: Z (zone), I (importance), C (response), R (ductility), W (weight)." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 _Base shear_ (V) is the total lateral (seismic) force at the building base, calculated as V = Z × I × C × W. It represents the maximum expected seismic demand that the foundation must resist. The base shear is distributed up the height of the building according to the code formula.
 

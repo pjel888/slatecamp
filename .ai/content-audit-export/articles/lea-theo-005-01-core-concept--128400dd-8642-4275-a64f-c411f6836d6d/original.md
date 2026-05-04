@@ -4,12 +4,15 @@
 Classical architectural theory established the foundational principles that dominated Western architecture for over 2,000 years. Vitruvius's *De Architectura* established the triadic framework (firmitas/utilitas/venustas), Alberti elevated the architect as an intellectual and theorist, and Palladio systematized proportional rules and villa design that became templates for generations. The LEA tests identification of each theorist's specific contributions, key treatise titles, and their philosophical positions on beauty, function, and the architect's role.
 </Callout>
 
-
 ## Learning Goal
 
 Trace the evolution of architectural theory from Vitruvius through Alberti to Palladio, identifying their treatises, key concepts (Vitruvian Triad, concinnitas, proportional ratios), and contributions to architectural professionalism.
 
 ## Core Concept
+
+|<ArticleMedia id="media-lea-theo-005-01-theory-evolution" type="image" caption="Evolution of Classical Architectural Theory — Vitruvius to Alberti to Palladio" description="Timeline/concept diagram showing three thinkers in sequence: Vitruvius (c. 80-15 BCE) with Vitruvian Triad firmitas/utilitas/venustas and classical orders, Alberti (1404-1472) with concinnitas and De re aedificatoria, Palladio (1508-1580) with proportional room ratios (1:1, 2:3, 3:5), Palladian motif, and Four Books. Arrows show progression from describing to theorizing to systematizing. Key architectural examples annotated beneath each thinker." suggestedAsset="Timeline diagram of Vitruvius, Alberti, Palladio and their key concepts" status="placeholder" />
+
+<ArticleMedia id="media-lea-theo-005-01-core-concept-b" type="image" caption="Palladio's Proportional Room Ratios — 1:1, 2:3, 3:5 and Musical Harmony" description="Floor plan diagrams showing Palladio's nine canonical room shapes derived from musical harmonic intervals: (1) Circle (1:1 — perfect unity); (2) Square (1:1); (3) Square plus one-third (3:4 — perfect fourth); (4) Square plus one-half (2:3 — perfect fifth); (5) Square plus two-thirds (3:5 — major sixth); (6) Double square (1:2 — octave); (7) Diagonal of a square as length (approximately 1:1.414 — geometric ratio). Villa Rotonda plan annotated to show how these ratios govern every room dimension." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 Classical architectural theory represents the intellectual scaffolding that shaped architectural discourse from ancient Rome through the Renaissance and into the modern era. This lineage reveals not merely a succession of buildings, but a succession of *ideas*—about what architecture is for, how beauty is constructed, and what qualifies someone to be called an architect.
 
@@ -32,21 +35,15 @@ The progression from Vitruvius to Alberti to Palladio reveals the transition fro
 <WikiExamTable headers={["Item", "Details"]} rows={[['["**Vitruvius (c. 80-15 BCE)**", "Roman military engineer and architect; authored *De Architectura* (Ten Books) during reign of Emperor Augustus"]', '["**Vitruvian Triad**", "Firmitas (structural integrity), Utilitas (function/utility), Venustas (beauty/aesthetics)"]', '["**Classical Orders**", "Doric, Ionic, Corinthian—codified by Vitruvius; basis of proportional systems"]', '["**Ideal Architect (Vitruvius)**", "Must possess knowledge of mathematics, geometry, optics, history, philosophy, medicine, jurisprudence"]', '["**Leon Battista Alberti (1404-1472)**", "Italian Renaissance polymath; born in Genoa; architect, theorist, mathematician"]', '["**Alberti\'s Treatise**", "*De re aedificatoria* (*Ten Books on Architecture*), published 1485 (posthumously)"]', '["**Concinnitas**", "Alberti\'s term for harmonic beauty—the reasoned relationship among all parts yielding perfect proportion"]', '["**Architect\'s Authority (Alberti)**", "The architect designs on paper; drawings precede construction; architect directs craftspeople"]', '["**Beauty as Rational**", "For Alberti, beauty is not arbitrary ornament but mathematical proportion and geometric relationship"]', '["**Andrea Palladio (1508-1580)**", "Born in Padua; studied under Giangiorgio Trissino; became most influential architect of Renaissance"]', '["**Palladio\'s Treatise**", "*The Four Books on Architecture* (*I Quattro Libri dell\'Architettura*), 1570"]', '["**Proportional Ratios**", "1:1 (square), 2:3, 3:5, 4:5—derived from harmonic musical intervals; applied to room dimensions"]', '["**Villa Typology**", "Symmetrical country residence; central hall; porticoes referencing classical temples; for Venetian merchant class"]', '["**Palladian Motif (Serliana)**", "Central arched opening flanked by two rectangular openings; symbol of Renaissance proportion"]', '["**Influence**", "Palladio\'s *Four Books* was most widely published and imitated architectural treatise of 17th-18th centuries; influenced American colonial architecture"]', '["**Classical Proportions**", "Based on ratios found in nature, mathematics, and ancient buildings; not decorative but fundamental to spatial experience"]', '["**Architect as Intellectual**", "All three theorists elevated architect from craftsperson to learned professional; rooted architecture in reason, not intuition alone"]']]} />
 ## How It's Tested on the LEA
 
-
 <ExamTip>1. **Direct Attribution**: "Which architect wrote *De Architectura*?" (Answer: Vitruvius) or "Palladio designed which famous villa?" (Answer: Villa Rotonda or specific Venetian villas)</ExamTip>
-
 
 <ExamTip>2. **Treatise Identification**: "Which treatise introduced the concept of *concinnitas*?" (Answer: Alberti's *De re aedificatoria*) or "Who published *The Four Books on Architecture*?" (Answer: Palladio, 1570)</ExamTip>
 
-
 <ExamTip>3. **Theoretical Concepts**: "Define the Vitruvian Triad" or "What does *concinnitas* mean in Alberti's theory?" or "What proportional ratios did Palladio use for room design?"</ExamTip>
-
 
 <ExamTip>4. **Biographical Facts**: "Palladio was born in what year and city?" (1508, Padua) or "Which Renaissance theorist was also a diplomat and writer?" (Alberti) or "Vitruvius served as what type of engineer?" (military engineer)</ExamTip>
 
-
 <ExamTip>5. **Architectural Elements**: "The Palladian motif consists of what arrangement?" (central arch flanked by two rectangles) or "Which classical orders are described in *De Architectura*?" (Doric, Ionic, Corinthian)</ExamTip>
-
 
 ## Common Mistakes
 
@@ -55,7 +52,6 @@ The progression from Vitruvius to Alberti to Palladio reveals the transition fro
 <WikiMistakeCard mistake="Misremembering the Vitruvian Triad" correction="Students often recall only two components or substitute inaccurate terms." context="The correct triad is firmitas-utilitas-venustas (never beauty-function-form or other variations)." />
 
 <WikiMistakeList mistakes={["Attributing Concinnitas to the Wrong Theorist. Concinnitas is Alberti's concept, not Vitruvius's or Palladio's. Some students confuse it with proportion or harmony without linking it to Alberti specifically.", "Oversimplifying Proportional Systems. Students sometimes think Palladio \"invented\" room proportions. In fact, he systematized and published ratios derived from classical sources and harmonic theory. The proportions existed conceptually; Palladio gave them clear geometric expression and measured drawings.", "Forgetting the Theoretical Intent. Students may memorize that Palladio used 1:1, 2:3, 3:5 ratios but not understand *why*—these are harmonic ratios based on musical intervals and natural relationships. The LEA may ask for reasoning, not just the numbers.", "Attributing Modern Ideas to Classical Theorists. Vitruvius, Alberti, and Palladio did not think in modern functional terms. They were rooted in Neoplatonism, mathematical harmony, and divine proportion. Anachronistic interpretations (e.g., treating firmitas as \"minimalist efficiency\") lead to incorrect analysis."]} />
-
 
 ## Key Terms
 

@@ -1,26 +1,21 @@
 {
-  "attempted_at": "2026-05-04T00:07:12.638Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:18:04.413Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "candidate.md matches original.md; refusing no-op apply."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "42d02acc-4cd7-4e90-8011-b001fcb26ff0",
   "slug": "lea-prac-ctr-002-basic-services-vs-additional-services-what-is-included-and-what-costs-extra",
   "preparation_actions": [
     "auto_generated_diff"
   ],
-  "remote_hash_before": "sha256:b5b08a7a864d8ee31488f945e0e11e7bcb5aedd5a1754cc333f1d1fce9874aea",
-  "original_hash": "sha256:b5b08a7a864d8ee31488f945e0e11e7bcb5aedd5a1754cc333f1d1fce9874aea",
-  "candidate_hash": "sha256:5af2184c0841a8c5c155f0ee644a3b61ad865982aede521473e25c6507a536bd",
+  "remote_hash_before": "sha256:30b6b0d3ed1fc2bd85ff8040a7de671f869b8e74a1438a5e71210235f341e5bb",
+  "original_hash": "sha256:30b6b0d3ed1fc2bd85ff8040a7de671f869b8e74a1438a5e71210235f341e5bb",
+  "candidate_hash": "sha256:30b6b0d3ed1fc2bd85ff8040a7de671f869b8e74a1438a5e71210235f341e5bb",
   "stale_check_passed": true,
-  "remote_updated_at_before": "2026-05-03T13:52:40.805268+00:00"
+  "remote_updated_at_before": "2026-05-04T02:02:13.797303+00:00"
 }

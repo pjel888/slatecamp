@@ -13,21 +13,27 @@ Pacific architecture divides into two major contexts: (1) indigenous vernacular 
 
 Indigenous Pacific architecture demonstrates sophisticated climate adaptation within material constraints. Island meeting houses (flea in Samoa, bure in Fiji) employ post-and-beam timber frames with minimal walls—open-sided pavilions maximizing airflow and allowing flexible enclosure via woven screens or light lattice. Roofs feature steep pitches shedding monsoon rain; deep overhanging eaves provide shade. Structures sit elevated on stone platforms (pilings), protecting from ground moisture and allowing underdraft cooling. Building footprints follow oval or rectangular plans oriented perpendicular to prevailing winds. The interior logic privileges hierarchical seating (chief's position marked by post proximity) and flexible occupation (screens allow rapid subdivision for different ceremonies or sleeping arrangements). Tapa cloth, coconut thatch, and lashed timber—materials available locally—compose the entire envelope. This vernacular represents profound material and climatic knowledge encoded over millennia.
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+<Tip>
+**Open-sided + elevated on pilings + steep roof + deep eaves = tropical climate mastery.** Each element solves a specific problem: ventilation, moisture, rain shedding, shade. Together they create thermal comfort and spatial flexibility with zero mechanized systems.
+</Tip>
 Extracted summary:
 - Props: (none)
 - Text: **Open-sided + elevated on pilings + steep roof + deep eaves = tropical climate mastery.** Each element solves a specific problem: ventilation, moisture, rain shedding, shade. Together they create thermal comfort and spatial flexibility with zero mechanized systems.
 
 The **Sydney Opera House** (1973, **Jørn Utzon**, Danish architect) represents a radical departure into global Modernism while engaging Pacific place. The building sits on a prominent peninsula (Bennelong Point) projecting into Sydney Harbour, surrounded by water on three sides. The iconic silhouette features a series of interlocking vaulted shells arranged in clusters, with major and minor performance halls covered by paired vault structures derived from sections of a single sphere.—clad in brilliant white Swedish-made glazed tiles. The shells are not arbitrary sculptural forms; they derive from a single geometric principle: all major vault surfaces are spherical sections from a single sphere (Utzon's radical innovation, solving structural redundancy). The building's scale is monumental: 183 meters long, with shell vaults rising approximately 50 feet (15.2 meters) above the podium platform. Interior layout separates performance halls (major concert hall, drama theatre, smaller theaters, and studios) connected by vast plaza spaces and internal concourses. The structure required pneumatic construction methods, computer analysis (early use of computers in architectural design), and innovative pre-cast concrete technology for the shell ribs.
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
+<Note>
+Jørn Utzon was Danish, not Australian. He won an international design competition and the building took 14 years to construct (1959–1973) with multiple revisions and additional architects. The architect's nationality and the construction complexity are both critical to understanding its global significance.
+</Note>
 Extracted summary:
 - Props: (none)
 - Text: Jørn Utzon was Danish, not Australian. He won an international design competition and the building took 14 years to construct (1959–1973) with multiple revisions and additional architects. The architect's nationality and the construction complexity are both critical to understanding its global significance.
 
 The Sydney Opera House achieves three simultaneous feats: (1) **Structural innovation**: spherical geometry solved load distribution problems and enabled shell vaults without internal columns; (2) **Site integration**: the building's scale, massing, and material (white tile) reflect harbourside light and water, making the structure appear to float or transform with weather and time of day; (3) **Symbolic power**: the silhouette became instantly recognizable globally, establishing Australia as a modern nation capable of monumental achievement and aesthetic sophistication. It ranks among the 20th century's most significant architectural achievements, alongside works by Le Corbusier, Mies van der Rohe, and Wright.
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
+<Warn>
+Do not confuse the Sydney Opera House's shell geometry as arbitrary sculpture. Each shell derives from a single sphere's sections—this is engineering, not artistic whimsy. The form solves a critical structural problem: distributing loads across curved surfaces without internal columns. Understand the technical necessity behind the iconic silhouette.
+</Warn>
 Extracted summary:
 - Props: (none)
 - Text: Do not confuse the Sydney Opera House's shell geometry as arbitrary sculpture. Each shell derives from a single sphere's sections—this is engineering, not artistic whimsy. The form solves a critical structural problem: distributing loads across curved surfaces without internal columns. Understand the technical necessity behind the iconic silhouette.
@@ -40,7 +46,7 @@ The building's significance for the LEA lies in its typological and technical no
 
 ## Key Facts and Testable Items
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="WikiExamTable" status="preserved"]
+<WikiExamTable headers={["Building/Monument", "Type", "Architect/Designer", "Date", "Location", "Key Features"]} rows={[['["**Sydney Opera House**", "Performing Arts Complex", "Jørn Utzon (Denmark), completed by an Australian architectural team led by Peter Hall", "1973 (designed 1957, constructed 1959–1973)", "Bennelong Point, Sydney Harbour, New South Wleas", "Shell-vault geometry (spherical sections), 10 major interlocking vaults, white glazed tile cladding, multiple performance halls, harbourfront site integration, UNESCO World Heritage"]', '["**Parliament House, Canberra**", "Government Building", "Mitchell, Giurgola + Thorp (Ital-Amer partnership)", "1988", "Canberra, Australian Capital Territory", "Postmodern design, grass-covered roof, axial site planning, hybrid traditional-modern materials, integrated with landscape"]', '["**Maori Meeting House (Wharenui, New Zealand)**", "Vernacular Communal Building", "Maori craftspeople, regional variations", "18th–19th century continuing", "Throughout New Zealand", "Carved timber posts and lintels, steep roof pitch, single large interior hall, hierarchical seating arrangements, tapa and woven panels"]', '["**Samoan Flea (traditional meeting house)**", "Vernacular Communal Building", "Samoan builders, regional tradition", "Pre-contact continuing", "Samoa (South Pacific)", "Post-and-beam timber frame, open-sided pavilion, tapa cloth and woven screens, oval or rectangular plan, stone platform foundation, no interior walls"]']]} />
 Extracted summary:
 - Props: headers="{["Building/Monument", "Type", "Architect/Designer", "Date", "Location", "Key Features"]}", rows="{[['["**Sydney Opera House**", "Performing Arts Complex", "Jørn Utzon (Denmark), completed by an Australian architectural team led by Peter Hall", "1973 (designed 1957, constructed 1959–1973)", "Bennelong Point, Sydney Harbour, New South Wleas", "Shell-vault geometry (spherical sections), 10 major interlocking vaults, white glazed tile cladding, multiple performance halls, harbourfront site integration, UNESCO World Heritage"]', '["**Parliament House, Canberra**", "Government Building", "Mitchell, Giurgola + Thorp (Ital-Amer partnership)", "1988", "Canberra, Australian Capital Territory", "Postmodern design, grass-covered roof, axial site planning, hybrid traditional-modern materials, integrated with landscape"]', '["**Maori Meeting House (Wharenui, New Zealand)**", "Vernacular Communal Building", "Maori craftspeople, regional variations", "18th–19th century continuing", "Throughout New Zealand", "Carved timber posts and lintels, steep roof pitch, single large interior hall, hierarchical seating arrangements, tapa and woven panels"]', '["**Samoan Flea (traditional meeting house)**", "Vernacular Communal Building", "Samoan builders, regional tradition", "Pre-contact continuing", "Samoa (South Pacific)", "Post-and-beam timber frame, open-sided pavilion, tapa cloth and woven screens, oval or rectangular plan, stone platform foundation, no interior walls"]']]}"
 - Text: (none detected)
@@ -49,11 +55,15 @@ Extracted summary:
 
 ## How It's Tested on the LEA
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
+<ExamTip>**Pattern 1:** Structural-innovation identification. "A building's roof comprises interlocking shell vaults, all derived from spherical sections of a single sphere. This geometric innovation, employed at the ___ in Sydney, solves which structural problem?" (Answer: Sydney Opera House; eliminates load-bearing internal columns, distributes forces across curved surfaces.) Expect to connect geometric principle to structural benefit and to identify the building's significance.
+
+</ExamTip>
 Extracted summary:
 - Props: (none)
 - Text: **Pattern 1:** Structural-innovation identification. "A building's roof comprises interlocking shell vaults, all derived from spherical sections of a single sphere. This geometric innovation, employed at the ___ in Sydney, solves which structural problem?" (Answer: Sydney Opera House; eliminates load-bearing internal columns, distributes forces across curved surfaces.) Expect to connect geometric principle to structural benefit and to identify the building's significance.
-[SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
+<ExamTip>**Pattern 2:** Site integration and symbolism. "How does the Sydney Opera House's location (Bennelong Point, harbourfront), material (white tile), and silhouette contribute to its global iconic status and its relationship to its geographic context?" (Answer: Waterside site amplifies visual presence and reflection; white cladding responds to harbor light; silhouette echoes sails—maritime symbolism appropriate to coastal Australia.) Expect questions linking form, setting, and cultural meaning.
+
+</ExamTip>
 Extracted summary:
 - Props: (none)
 - Text: **Pattern 2:** Site integration and symbolism. "How does the Sydney Opera House's location (Bennelong Point, harbourfront), material (white tile), and silhouette contribute to its global iconic status and its relationship to its geographic context?" (Answer: Waterside site amplifies visual presence and reflection; white cladding responds to harbor light; silhouette echoes sails—maritime symbolism appropriate to coastal Australia.) Expect questions linking form, setting, and cultural meaning.
@@ -64,12 +74,12 @@ The LEA emphasizes the **Sydney Opera House** (**Jørn Utzon**, 1973) as the def
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0009 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="** Misidentifying the Sydney Opera House's shell geometry as arbitrary or decorative. The shells are not sculptural whimsy; they solve a critical structural problem using a single geometric principle (spherical sections from one sphere). This was Utzon's engineering breakthrough. Don't treat the form as merely aesthetic; understand its technical necessity" correction="Mistake 2:** Confusing the Sydney Opera House architect's nationality. Jørn Utzon was Danish, not Australian. He won an international design competition; the building was constructed over 14 years with multiple revisions and additional architects." context="Know the primary architect (Utzon) and acknowledge the construction complexity." />
 Extracted summary:
 - Props: mistake="** Misidentifying the Sydney Opera House's shell geometry as arbitrary or decorative. The shells are not sculptural whimsy; they solve a critical structural problem using a single geometric principle (spherical sections from one sphere). This was Utzon's engineering breakthrough. Don't treat the form as merely aesthetic; understand its technical necessity", correction="Mistake 2:** Confusing the Sydney Opera House architect's nationality. Jørn Utzon was Danish, not Australian. He won an international design competition; the building was constructed over 14 years with multiple revisions and additional architects.", context="Know the primary architect (Utzon) and acknowledge the construction complexity."
 - Text: (none detected)
 
-[SLATECAMP_UI_BLOCK:ui_0010 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="** Overstating the Sydney Opera House's indigenous Pacific connection. While it sits in Pacific geography and references sails (maritime symbolism), it is a modernist monument reflecting European design language and global architectural aspiration. It does not draw from indigenous Pacific vernacular; rather, it represents colonized Australia asserting modernist-international identity. Understand its actual cultural position" correction="Mistake 4:** Treating indigenous Pacific architecture (flea, bure, wharenui) as primitive or unsophisticated. These vernacular traditions represent millennia of refined climate adaptation, material innovation, and social spatial organization. They are not less sophisticated than monumental architecture; they are differently sclead and valued." context="Respect their technical and cultural merit." />
 Extracted summary:
 - Props: mistake="** Overstating the Sydney Opera House's indigenous Pacific connection. While it sits in Pacific geography and references sails (maritime symbolism), it is a modernist monument reflecting European design language and global architectural aspiration. It does not draw from indigenous Pacific vernacular; rather, it represents colonized Australia asserting modernist-international identity. Understand its actual cultural position", correction="Mistake 4:** Treating indigenous Pacific architecture (flea, bure, wharenui) as primitive or unsophisticated. These vernacular traditions represent millennia of refined climate adaptation, material innovation, and social spatial organization. They are not less sophisticated than monumental architecture; they are differently scaled and valued.", context="Respect their technical and cultural merit."
 - Text: (none detected)
@@ -89,6 +99,8 @@ Extracted summary:
 - **Modernism (20th-century)**: Global architectural movement emphasizing innovative structure, functionalism, geometric purity, and rejection of historical ornament; Sydney Opera House represents Modernism's acceptance into cultural monuments.
 
 *For a focused study of the Sydney Opera House's design, structure, and LEA testing patterns, see the companion article on Sydney Opera House and Contemporary Australian Architecture (LEA-HIST-015-02).*
+
+<ArticleMedia id="media-hist-007-06-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Diagram of the four-part Pacific Islands architecture formula: open-sided structures, elevation on pilings, steep roofs, and deep eaves, with examples from Polynesian, Melanesian, and Micronesian vernacular building traditions." caption="Pacific Islands — Climate-Responsive Architecture" suggestedAsset="Style comparison illustration" placementIntent="Style comparison for architectural period" />
 
 ## Related Articles
 

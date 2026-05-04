@@ -22,7 +22,7 @@ Key design principles for heritage-adaptive reuse:
 5. _Accessibility integration_ — ramps, lifts, and emergency egress are designed to blend with heritage aesthetics.
 
 Code compliance (NBC, **BP 344**) still applies: the new use must meet all egress, fire-safety, and accessibility standards, even if achieving full compliance requires creative design solutions or seeks variances from the NHCP and local authority.
-<ArticleMedia id="media-lea-dsgn-005-12-core-concept" a type="image" caption="Adaptive Reuse Workflow — Heritage Compliance Decision Tree" description="Process diagram showing the adaptive reuse workflow: building condition assessment → new occupancy classification → RA 10066 compliance check → NHCP clearance → code compliance balancing. Decision points for heritage status trigger and character-defining features." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-005-12-core-concept" type="image" caption="Adaptive Reuse Workflow — Heritage Compliance Decision Tree" alt="Process diagram showing the adaptive reuse workflow: building condition assessment → new occupancy classification → RA 10066 compliance check → NHCP clearance → code compliance balancing. Decision points for heritage status trigger and character-defining features." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
@@ -59,7 +59,7 @@ New occupancy must meet full NBC requirementExit width: 7.6cm/person (**PD 1096 
 - Fire separation: Depends on mixed-use or single-occupancy configuration
 
 If a heritage building cannot physically accommodate a full-width exit (e.g., historic doorway is 800mm), the architect may request a variance from the NHCP and local Building Official, justifying the cultural constraint. Such variances are case-specific and require documented evidence of infeasibility of code compliance.
-<ArticleMedia id="media-lea-dsgn-005-12-core-concept" a type="image" caption="Heritage Building — NHCP Clearance and Compliance Process" description="Flowchart showing the regulatory pathway for heritage building modifications: determine NHCP jurisdiction, prepare conservation plan, obtain clearance, verify RA 10066 compliance, balance code requirements with preservation. Key thresholds and referral triggers." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-005-12-core-concept" type="image" caption="Heritage Building — NHCP Clearance and Compliance Process" alt="Flowchart showing the regulatory pathway for heritage building modifications: determine NHCP jurisdiction, prepare conservation plan, obtain clearance, verify RA 10066 compliance, balance code requirements with preservation. Key thresholds and referral triggers." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Philippine Practice Context
 

@@ -1,23 +1,19 @@
 {
-  "attempted_at": "2026-05-03T16:51:46.207Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:07:19.682Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
     "Remote Supabase content differs from export baseline; refusing stale push."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "5f341f81-5e43-49d6-a821-2a67c5d07c59",
   "slug": "lea-prac-eth-012-introduction",
-  "preparation_actions": [
-    "auto_generated_diff"
-  ],
-  "remote_hash_before": "sha256:6907e0a730610c188bccf243233ecc8364866f5728869341572641b2924dfd34",
-  "original_hash": "sha256:f5dba5d91dc35ea6c20bb2d6d512ae34d243197d2d15fdc3822571a8ae477755",
-  "candidate_hash": "sha256:6907e0a730610c188bccf243233ecc8364866f5728869341572641b2924dfd34",
+  "preparation_actions": [],
+  "remote_hash_before": "sha256:4eaf64a6cd06738135a824525a177bb7f62552290b0d8570657b1ff1b065833b",
+  "original_hash": "sha256:aa5ac22c5bfd84b7bd78d2cc7b71080c1dcd266c18f28533ebfb28d164598362",
+  "candidate_hash": "sha256:4eaf64a6cd06738135a824525a177bb7f62552290b0d8570657b1ff1b065833b",
   "stale_check_passed": false,
-  "remote_updated_at_before": "2026-05-03T16:38:18.757398+00:00"
+  "remote_updated_at_before": "2026-05-04T02:02:18.899859+00:00"
 }

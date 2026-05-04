@@ -1,16 +1,22 @@
-## Design-Build Services: Overview, Rationlea, and Architect's Role
+## Design-Build Services: Overview, Rationale, and Architect's Role
 
-<SPP207RefServices />
+## Learning Goal
 
-Design-Build Services represent an alternative delivery method where a single entity assumes responsibility for both design and construction. In any building project, the fundamental elements of time, quality, and cost must be balanced. When this balance presents particular challenges through traditional Design-Bid-Build methods, Design-Build services offer solutions.
+After studying this article, you should be able to:
 
-<ArticleMedia type="delivery-comparison" caption="Design-Build vs. Design-Bid-Build — Delivery Method Comparison" description="Comparison diagram showing Design-Build (single entity, integrated, overlapping phases, compressed schedule, shared risk) versus traditional Design-Bid-Build (sequential phases, separate design and construction contracts, competitive bidding, longer timeline). Highlights architect role, cost certainty, and schedule implications of each approach." />
+- Define design-build project delivery and the architect's role within it.
+- Explain the advantages and risks of design-build for the architect.
+- Distinguish design-build from traditional design-bid-build.
+- Describe the architect's relationship with the design-build entity.
 
-### The Rationlea for Design-Build
+---
+|### The Rationale for Design-Build
 
 in practice, the time-cost-quality triangle is most effectively achieved through Design-Build Services. This delivery method simplifies and expedites the project process while providing creative, cost-effective solutions. The architect's education, training, and expertise qualify the professional to take a direct role in projects from conceptualization through implementation.
 
-A Design-Build arrangement simplifies and expedites project delivery while providing creative cost-effective solutions. Rather than sequential phases where design is complete before construction bidding, Design-Build allows design and construction to overlap, reducing overall schedule and enabling value optimization.
+<ArticleMedia id="media-lea-prac-svc-019-design-build-services-o" a type="image" caption="Design-Build vs. Design-Bid-Build — Delivery Method Comparison" description="Comparison diagram showing Design-Build (single entity, integrated, overlapping phases, compressed schedule, shared risk) versus traditional Design-Bid-Build (sequential phases, separate design and construction contracts, competitive bidding, longer timeline). Highlights architect role, cost certainty, and schedule implications of each approach." suggestedAsset="Diagram or reference image" status="placeholder" />
+
+A Design-Build arrangement simplifies and expedites project delivery
 
 ### Architect's Qualifications and Involvement
 
@@ -39,3 +45,37 @@ Design-Build services integrate design and construction expertise to achieve pro
 This integrated approach requires clear contractual definition of responsibilities, change order procedures, and cost control mechanisms. The Design-Build method succeeds when the architect and construction team share commitment to project success and maintain transparent communication throughout the delivery process.
 
 Design-Build represents an evolution in how architects and builders collaborate, positioning both parties as partners in achieving optimal project outcomes rather than adversaries in traditional bidding scenarios. The method reflects modern understanding that design and construction expertise must integrate to deliver projects efficiently and effectively.
+
+<SPP207RefServices />
+
+<ProcessFlow>
+<ol>
+  <li><strong>Project Definition</strong> — Problem identification</li>
+  <li><strong>Schematic Design</strong> — 15% fee; conceptual design</li>
+  <li><strong>Design Development</strong> — 20% fee; detailed design</li>
+  <li><strong>Contract Documents</strong> — 50% fee; construction docs</li>
+  <li><strong>Bidding/Negotiation</strong> — 5% fee; contractor selection</li>
+  <li><strong>Construction Admin.</strong> — 10% fee; site visits</li>
+</ol>
+</ProcessFlow>
+
+<LawCallout code="irr" section="SPP Documents" title="Professional Practice Framework">SPP Documents 201–209 establish standards for architectural services scope, fee structures, and professional responsibilities under RA 9266.</LawCallout>
+
+<ExamTip>Fee distribution: SD=15%, DD=20%, CD=50%, BA=5%, CA=10%. Contract Documents (50%) is the largest phase. Cumulative: 15%→35%→85%→90%→100%.</ExamTip>
+
+---
+
+## Related Articles
+
+- [SPP Doc 202 Six-Phase Framework](lea-prac-svc-004)
+- [Schematic Design Phase](lea-prac-svc-005)
+- [Design Development Phase](lea-prac-svc-006)
+- [Contract Documents Phase](lea-prac-svc-007)
+- [Bidding and Construction Admin](lea-prac-svc-008)
+- [Pre-Design Services](lea-prac-svc-001)
+- [Specialized Services](lea-prac-svc-009)
+- [Design-Build Delivery](lea-prac-svc-019)
+- [Fee Compensation Methods](lea-prac-cmp-001)
+- [Owner-Architect Agreement](lea-prac-ctr-001)
+
+<KeyValues items={[{"value": "15%", "label": "Schematic Design"}, {"value": "20%", "label": "Design Development"}, {"value": "50%", "label": "Contract Docs"}, {"value": "5%", "label": "Bidding Assist"}, {"value": "10%", "label": "Constr. Admin."}]} />

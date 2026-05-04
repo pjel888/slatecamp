@@ -9,8 +9,6 @@ After studying this article, you should be able to:
 - Explain the ethical considerations when performing VE as an architect.
 - Distinguish value engineering from cost cutting.
 
-
-
 ---
 ### Understanding Value Engineering
 
@@ -59,6 +57,8 @@ Value engineering demand fluctuates with market conditions. During tight budget 
 Organizations like the Society of American Value Engineers (SAVE) establish professional standards for value engineering practice. Architects interested in value engineering should understand these standards and consider certification in value engineering methodology.
 
 Value engineering represents an important specialized service supporting client interests in cost optimization. When practiced ethically with commitment to design quality and transparent client communication, value engineering adds significant value to architectural practice and client project outcomes.
+
+<ArticleMedia id="media-lea-prac-svc-024-value-engineering-as-an" a type="ve-methodology" caption="Value Engineering Methodology — Systematic Cost-to-Function Analysis" description="Diagram showing the structured value engineering process: information phase (gather data, identify cost drivers) → creative phase (brainstorm alternatives, question assumptions) → evaluation phase (quantify costs, verify performance) → development phase (refine recommendations) → presentation phase (client disclosure, ethical review). Highlights the distinction between value engineering (cost/function ratio) and cost-cutting." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 <SPP206RefServices />
 

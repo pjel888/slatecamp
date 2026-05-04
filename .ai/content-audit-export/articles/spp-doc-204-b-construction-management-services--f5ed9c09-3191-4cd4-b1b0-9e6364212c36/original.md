@@ -111,7 +111,6 @@ The CM maintains comprehensive project records covering all management activitie
 
 </ComparisonTable>
 
-
 ***
 
 ## The CM and the CSG: How They Relate
@@ -168,7 +167,6 @@ The CM **assumes no liability** for equipment failure or structural collapse und
 
 </ComparisonTable>
 
-
 These liability exclusions incentivize the CM to faithfully perform supervision duties (condition 2) while also staying out of design review (condition 1), unless separately retained as the Aor or design consultant. When the CM also serves as Aor, condition 1 no longer applies, and the CM-Aor faces full exposure under Article 1723 of the Civil Code.
 
 ***
@@ -202,7 +200,6 @@ Since construction management is not part of the architect's regular services un
 
 </ComparisonTable>
 
-
 The specific percentage rates for CM services under the PCC method are prescribed in the **Architect's Guidelines** and are distinct from — and in addition to — the fees for SPP 202 design services and SPP 204-A supervision services.
 
 ***
@@ -223,7 +220,6 @@ The specific percentage rates for CM services under the PCC method are prescribe
 | **Fee Basis** | % of PCC (separate from SPP 202) | % of PCC (separate from SPP 202 and 204-A) |
 
 </ComparisonTable>
-
 
 ***
 
@@ -253,7 +249,6 @@ The PM fee under SPP 206 is generally **2–5% of the Estimated Project Cost**, 
 
 </ComparisonTable>
 
-
 ***
 
 ## Practical Notes for Architects and Clients
@@ -270,15 +265,23 @@ The PM fee under SPP 206 is generally **2–5% of the Estimated Project Cost**, 
 
 ---
 
-
-
 ---
 
 ## Exam Tip
 
 LEA Trap: CM (204-B) vs Full-Time Supervision (204-A): CM manages COST and SCHEDULE in addition to quality. CM coordinates MULTIPLE prime contractors. CM produces (1) CPM schedule, (2) Cost reports, (3) Change order management, (4) Value engineering options. The key test point: CM has authority over budget, FTS does not.
 
+
+
+---
+
+## Exam Tip
+
+ALE Trap: CM (204-B) vs Full-Time Supervision (204-A): CM manages COST and SCHEDULE in addition to quality. CM coordinates MULTIPLE prime contractors. CM produces (1) CPM schedule, (2) Cost reports, (3) Change order management, (4) Value engineering options. The key test point: CM has authority over budget, FTS does not.
+
 ## Cross‑References
 
 **Spp Doc 204 A Fulltime Supervision Services**, **Spp Doc 202 Regular Design Services**, **Spp Doc 207 Design Build Services**, **Spp Doc 205 Post Construction Services**
 
+
+<!-- no-media-needed: SPP document reference, service scope text is optimal -->

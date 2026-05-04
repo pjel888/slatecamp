@@ -17,7 +17,9 @@ Final Completion occurs when all remaining work is finished, including punch lis
 
 The distinction between substantial and final completion is critical for understanding liability exposure. Once Substantial Completion is certified, the contractor's obligation to maintain the site and continue performance under some contract provisions shifts to the owner. However, the contractor remains liable for punch list work until Final Completion. The architect must distinguish these milestones clearly in all certifications to avoid ambiguity and subsequent disputes.
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="LawCallout" status="preserved"]
+<LawCallout code="ra9266" section="UAP Doc 301 §30-33" title="Substantial Completion vs. Final Completion">
+Substantial Completion: Work sufficiently complete for owner occupancy despite minor punch list items. Contractor's liability for liquidated damages ends. Owner assumes responsibility. Architect issues Certificate of Substantial Completion. Final Completion: All work finished, defects remedied, documentation submitted. Contractor's 1-year Guarantee Bond runs from Substantial Completion date, NOT Final Completion.
+</LawCallout>
 
 ## Key Provisions
 
@@ -52,21 +54,30 @@ Final Completion occurs after all punch list items are done. The contractor's ob
 
 **Question Pattern 5:** Punch list scope—What types of work items constitute appropriate punch list items? (Tests distinction between minor work and substantial items requiring further completion before substantial certification)
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="LawCallout" status="preserved"]
+<LawCallout code="ra9266" section="UAP Doc 301 §30-33" title="Punch List — Contractor's Remaining Obligations">
+The punch list is a formal contract document created by the architect at Substantial Completion inspection. It itemizes outstanding work items that must be completed before Final Completion. The contractor completes punch list items at NO additional cost. The architect verifies correction and issues Certificate of Final Completion. Items indicating Substantial Completion was premature (structural, major systems) should NOT appear on a punch list.
+</LawCallout>
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
+<ExamTip>
+  **LEA Priority — Key Punch List Rules:**
+  1. Created by architect at Substantial Completion inspection
+  2. Minor items only (not substantial defects suggesting premature certification)
+  3. Contractor completes at no extra cost — NOT a change order
+  4. Architect verifies corrections before issuing Final Completion
+  5. Binding contract document — not optional suggestions
+</ExamTip>
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+<Tip>Remember: Substantial = owner can occupy and use; Final = all work done and guarantee period clock starts running from substantial completion date, not final completion. The architect's certificate establishes the date. Substantial comes first chronologically; Final comes later.</Tip>
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeList" status="preserved"]
+<WikiMistakeList mistakes={["Assuming Substantial Completion and Final Completion are the same milestone (They are distinct—substantial means ready for use; final means all work done)", "Thinking the guarantee period runs from Final Completion (It runs from Substantial Completion per UAP Doc 301—critical distinction)", "Believing the architect should withhold Substantial Completion certificate until all defects are corrected (Substantial Completion is occupancy readiness; Final Completion is when defects are corrected)", "Confusing liquidated damages end date with Final Completion (Delay damages end at Substantial Completion, not Final Completion)", "Assuming punch list items must all be trivial (Punch list can include significant work—the criterion is that owner can occupy for intended use despite the items)", "Thinking the contractor's guarantee bond begins after all defects are corrected (It starts from Substantial Completion date, even if Final Completion is later)", "Misunderstanding that risk and insurance responsibility shift at Substantial Completion (Owner assumes risk and must insure at substantial completion, before final completion)", "Believing the architect cannot certify Substantial Completion if any work remains (Substantial completion does not require perfection—only occupancy readiness)"] />
 
 ---
 
 
 
-<ArticleMedia type="image" caption="Project Completion Timeline — Substantial vs. Final Completion Milestones" description="Timeline diagram showing the construction close-out sequence: Contract Completion Date → Architect's Inspection → Substantial Completion (owner can occupy, liquidated damages stop, punch list created) → Punch List Correction Period → Final Inspection → Final Completion (Certificate issued, Guarantee Bond period begins). Annotated with architect's certification responsibilities at each milestone." />
+<ArticleMedia type="image" caption="Project Completion Timeline — Substantial vs. Final Completion Milestones" alt="Timeline diagram showing the construction close-out sequence: Contract Completion Date → Architect's Inspection → Substantial Completion (owner can occupy, liquidated damages stop, punch list created) → Punch List Correction Period → Final Inspection → Final Completion (Certificate issued, Guarantee Bond period begins). Annotated with architect's certification responsibilities at each milestone." />
 ## Related Articles
 
 - [Standard Owner-Architect Agreement](lea-prac-ctr-001)

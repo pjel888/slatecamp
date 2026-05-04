@@ -7,6 +7,10 @@ Identify the ondol (underfloor heating) system of Korean architecture and explai
 
 Korean architecture synthesizes Chinese and Japanese traditions while responding to continental climate extremes and particular resource conditions. The signature achievement is the **ondol** underfloor heating system: hot smoke from a kitchen fire travels through stone or clay channels beneath the floor before exiting through an external chimney, warming interior rooms and enabling the use of combustible flooring (straw mats, wooden planks) in winter. This technical innovation restructures domestic space: the ondol floor rises slightly above ground level, requiring step-down entrances and reconfigured furniture. Inhabitants sit, sleep, and work on the warm floor rather than standing; furniture minimizes; spatial flexibility increases. Ondol heating allowed Korea to maintain timber-frame, light-partition architecture in a climate far colder than China or Japan, fundamentally shaping residential typology.
 
+
+<ArticleMedia id="media-hist-007-05-core-concept" layout="single" type="image" status="placeholder" alt="Section and plan diagram of a traditional Korean hanok, showing the ondol (underfloor flue heating system that channels heat from the kitchen through stone flues beneath the raised floor) and the maru (wooden-floored hall)." caption="Korean Hanok — Ondol Underfloor Heating System" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
+
 <Tip>
 **Ondol = underfloor heating using smoke channels = sitting culture.** When the heating system defines interior use, people work and sleep on warm floors rather than standing or using furniture. This one innovation shapes every aspect of interior organization.
 </Tip>
@@ -24,6 +28,10 @@ The aesthetic principle guiding Korean architecture is restraint and site respon
 <Warn>
 Korean restraint is not poverty or simplicity—it is *sophisticated craft*. Do not mistake the absence of ornament for lack of status. Fine timber, precise joinery, and landscape integration are the visible marks of wealth and power in Korean architecture, where Chinese or Japanese traditions display gilding and glazed tile.
 </Warn>
+
+
+<ArticleMedia id="media-hist-007-05-core-concept" layout="single" type="image" status="placeholder" alt="View of Bulguksa Temple (Gyeongju, 8th century, Unified Silla) showing the Dabotap and Seokgatap stone pagodas, elevated wooden temple halls, and the characteristic Korean bracket system (gongpo)." caption="Bulguksa Temple — Korean Buddhist Temple Complex" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
 
 ## Key Facts and Testable Items
 
@@ -59,6 +67,8 @@ The LEA tests **hanok** (traditional Korean timber-frame houses), **ondol** heat
 - **South-facing orientation**: Deliberately siting buildings to face south, maximizing winter solar gain for ondol-heated interiors while maintaining wind protection from north and maintaining landscape views.
 - **Flexible partitions (ajilsan)**: Interior sliding screens and removable wooden lattice dividers allowing quick reconfiguration of room sizes and functions within hanok houses.
 - **Joseon Dynasty**: Korean royal house ruling 1392–1910, responsible for establishing state architecture (palaces, temples) and codifying hanok residential traditions; period of high cultural and architectural achievement.
+
+<ArticleMedia id="media-hist-007-05-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Diagram of Korean ondol underfloor heating system showing smoke channels beneath stone/clay flooring, step-down entrance, and how the heated floor shapes interior planning and social use of space in traditional hanok architecture.\" caption=\"Korean Ondol — Underfloor Heating System Diagram\" suggestedAsset=\"Timeline diagram\" placementIntent=\"Timeline diagram for architectural period\" />
 
 ## Related Articles
 

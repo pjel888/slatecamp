@@ -1,33 +1,32 @@
 # Content Diff Report: spp-doc-204-b-construction-management-services
 
-Generated: 2026-05-04T00:06:27.050Z
+Generated: 2026-05-04T02:17:02.559Z
 Article ID: f5ed9c09-3191-4cd4-b1b0-9e6364212c36
-Changed: true
-Safe to push locally: false
+Changed: false
+Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:778b6949af9fd10d816754eec5c84c524c19cb834c5b0739dd5f8d8170f796f5`
+- Original: `sha256:3aaaed18c4e6c3de36a82868fc28461fdb35f79fc4b68732d07e1782f213dbf0`
 - Normalized: `sha256:c0ffad8f803d3efd9cfff82de45cf72d08d940e34489dc2c48a796523b029506`
-- Candidate: `sha256:c0ffad8f803d3efd9cfff82de45cf72d08d940e34489dc2c48a796523b029506`
+- Candidate: `sha256:3aaaed18c4e6c3de36a82868fc28461fdb35f79fc4b68732d07e1782f213dbf0`
 
 ## Line summary
 
-- Changed lines: 217
+- Changed lines: 0
 - Inserted lines: 0
-- Deleted lines: 50
+- Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 6
-- UI blocks preserved: 0
-- UI blocks changed/missing: 6
-- Unresolved placeholders: 1
+- UI blocks preserved: 6
+- UI blocks changed/missing: 0
+- Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate contains unresolved UI block placeholders.
-- Candidate is missing 6 preserved UI block(s).
+- None
 
 ## Warnings
 

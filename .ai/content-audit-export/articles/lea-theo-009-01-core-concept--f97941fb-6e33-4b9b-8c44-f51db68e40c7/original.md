@@ -4,8 +4,6 @@
 Architectural programming is the systematic process of translating client needs, organizational goals, and functional requirements into documented spatial and performance specifications—distinct from design, which begins only after programming is complete. William Peña's "Problem Seeking" methodology remains the standard framework taught in Philippine architecture schools and explicitly referenced in ADSP exam briefs. Programming answers the *what* and *why*; design answers the *how*.
 </Callout>
 
-
-
 ## Learning Goal
 
 - Define architectural programming as the systematic investigation phase that precedes design: translating client needs into spatial and performance specifications.
@@ -13,6 +11,10 @@ Architectural programming is the systematic process of translating client needs,
 - Distinguish programming from design: programming answers what and why; design answers how.
 
 ## Core Concept
+
+|<ArticleMedia id="media-lea-theo-009-01-core-concept" a type="image" caption="Architectural Programming Process — William Peña's Problem Seeking Methodology" description="Five-phase process flow diagram: Phase 1 — Establish Goals (client mission, values, vision, image); Phase 2 — Collect Facts (program requirements, site analysis, user demographics, budget, schedule); Phase 3 — Uncover Concepts (functional relationships, spatial adjacency, circulation, zoning); Phase 4 — Determine Needs (space sizes, equipment, performance criteria, regulatory constraints); Phase 5 — State the Problem (formal program document summarizing all findings). Each phase is shown as a block with inputs, outputs, and decision gates. The programming-to-design transition is marked as the threshold where 'what and why' becomes 'how.'" suggestedAsset="Diagram or reference image" status="placeholder" />
+
+<ArticleMedia id="media-lea-theo-009-01-core-concept-b" type="image" caption="Adjacency Matrix and Bubble Diagram — Translating Program into Spatial Relationships" description="Two-part diagram: (1) Adjacency Matrix — a grid table showing relationships between program spaces (essential proximity, desirable proximity, separation required, no relationship), using a hospital emergency department as the example; (2) Bubble Diagram — the matrix visualized as bubbles/ nodes connected by lines of varying weight (thick = essential adjacency, thin = desirable, dashed = separation). Shows how raw program data is translated into spatial organization concepts that precede formal design." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 Architectural programming is neither design nor planning in the broad sense—it is the disciplined investigation phase that precedes design decision-making. Unlike preliminary sketching or conceptual design, programming remains programmatically prescriptive and quantitatively precise. The architect must function as investigator and analyst, not yet as designer, gathering and analyzing data about the client, the project mission, user needs, site constraints, and regulatory context.
 
@@ -71,21 +73,15 @@ Once gathered, information must be analyzed and synthesized. Peña's approach us
 <WikiExamTable headers={["Concept", "Definition/Standard"]} rows={[['["**Architectural Programming**", "Systematic analysis phase producing documented space, performance, and functional requirements prior to design"]', '["**Problem Seeking (Peña)**", "Five-step methodology: establish client, establish goals, gather facts, identify problem, test problem"]', '["**Net Assignable Area (NAA)**", "Usable floor area dedicated to program functions, excluding corridors and structural elements"]', '["**Gross Building Area (GBA)**", "Total enclosed floor area including all spaces; GBA = NAA ÷ efficiency factor (typically 0.65–0.85)"]', '["**Efficiency Factor**", "Ratio of NAA to GBA; higher factor indicates more compact layout, lower indicates greater circulation"]', '["**Adjacency Matrix**", "Table documenting required spatial relationships: essential (E), desirable (D), undesirable (U)"]', '["**Program Document**", "Binding specification of spaces, areas, adjacencies, performance standards, and constraints"]', '["**Stakeholder Analysis**", "Identification of all end users, operators, decision-makers, and regulators affecting program scope"]', '["**Area Summary Table**", "Quantitative listing of all spaces with net SF, gross SF, count, and ratios"]', '["**Code Compliance Matrix**", "Documentation of applicable building codes, zoning ordinances, and accessibility standards"]']]} />
 ## How It's Tested on the LEA
 
-
 <ExamTip>1. **Program vs. Design Distinction**: Expect questions asking you to identify which statement represents a program requirement and which represents a design decision. The program states areas and relationships; design interprets them spatially. A question might ask: "Which is a programming statement? (A) Reception is 250 SF with direct view to entry. (B) Reception is a circular space rotated 45 degrees. (C) Reception accommodates 4 seated visitors and must be acoustically separate from offices. (D) Reception columns are 24 feet on center." Answer: (A) and (C) are programming; (B) and (D) are design decisions.</ExamTip>
-
 
 <ExamTip>2. **Area Calculation and Efficiency**: Calculate total building area from a program summary. Example: Given spaces totaling 30,000 NSF and an efficiency factor of 0.75, what is the gross building area? Answer: 30,000 ÷ 0.75 = 40,000 GSF.</ExamTip>
 
-
 <ExamTip>3. **Peña's Five Steps in Sequence**: Questions test recall of Peña's methodology in correct order and application to a scenario. "In developing a program for an expanding university library, the programming team gathers data on current use patterns, student population projections, and technology needs. This corresponds to which step in Problem Seeking? (A) Establish the client. (B) Establish goals. (C) Gather facts. (D) Identify the problem." Answer: (C).</ExamTip>
-
 
 <ExamTip>4. **Stakeholder Identification**: Scenario-based questions ask you to identify all stakeholders in a given project type. For a hospital, stakeholders include patients, clinical staff, non-clinical staff, visitors, administration, regulatory agencies (DOH, BIR), and community representatives. Missing a category is an error.</ExamTip>
 
-
 <ExamTip>5. **Program Component Completeness**: ADSP briefs typically include incomplete programs and ask candidates to identify missing information. "This program summary lists spaces and areas but does not include adjacency requirements. What document should be added?" Answer: adjacency matrix or bubble diagram and relationship statement.</ExamTip>
-
 
 ## Common Mistakes
 
@@ -94,7 +90,6 @@ Once gathered, information must be analyzed and synthesized. Peña's approach us
 <WikiMistakeCard mistake="Omitting Stakeholder Analysis" correction="Rushed programmers list only the primary client (the facility owner) and overlook end users, operators, and regulatory bodies. This leads to programs that satisfy ownership but not functionality." context="In healthcare, omitting clinical staff input or infection control protocols produces non-functional designs." />
 
 <WikiMistakeList mistakes={["Underestimating Circulation and Service Areas. Calculating total area as sum of programmed spaces only, without applying efficiency multipliers or adding mechanical, structural, and service areas. A program specifying 25,000 NSF of usable space requires realistic allocation of corridors (12–15% for office, 18–25% for healthcare), mechanical chases, toilets, and structural walls. The gross building area must accommodate these.", "Vague or Unmeasurable Goals. Stating goals as \"the space should be pleasant\" or \"the building should be flexible\" without defining what pleasant means (daylighting? views? acoustic performance?) or what flexibility entails (modular dimensions? demountable partitions? post-tensioned spans?). Goals must be testable.", "Missing Code Compliance in Programming. Treating code analysis as a design-phase task rather than programming-phase requirement. Building codes, zoning, and accessibility standards constrain the program itself. An urban lot zoning to 4:1 FAR with setback requirements must be analyzed and incorporated into the area budget during programming, not discovered in design review.", "Static Program Without Flexibility Parameters. Programs should anticipate change. A school program should specify not only current enrollment but projected growth over 10 years and design flexibility to accommodate it. A programming statement might read: \"Current enrollment: 400 students. 20-year projection: 600 students. Classroom design must accommodate modular reconfiguration without major structural change.\""]} />
-
 
 ## Key Terms
 

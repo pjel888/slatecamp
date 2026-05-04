@@ -7,6 +7,10 @@ Identify the three catalysts of Neoclassicism — archaeological discoveries (Po
 
 **Neoclassicism** emerged from Enlightenment values: reason, order, moral clarity, and a romantic (though often romanticized) view of Classical Antiquity as an ideal society. After Baroque drama and Rococo frivolity, architects consciously rejected both styles as decadent and looked backward—but with *archaeological rigor* and modern ambitions.
 
+
+<ArticleMedia id="media-hist-002-06-core-concept" layout="single" type="image" status="placeholder" alt="Exterior of the Panthéon in Paris (1755–1790, Jacques-Germain Soufflot), showing the Corinthian portico, dome modeled on the Roman Pantheon, and rational Classical proportions." caption="Panthéon, Paris — Soufflot's Neoclassical Temple" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
+
 The style crystallizes through the mid-18th century with key catalysts:
 - **Archaeological expeditions** to Pompeii and Herculaneum (beginning 1748) revealed actual Roman buildings and interiors
 - **James Stuart and Nicholas Revett's *Antiquities of Athens*** (Volume I, 1762; continued through 1816) provided measured drawings of Greek temples, spurring Greek Revival
@@ -54,6 +58,10 @@ Memory aid: **A-S-E** = Archaeology, Stuart-Revett, Enlightenment.</Tip>
 - **Iberia**: Late Baroque transitioning slowly; Neoclassicism arrives later and sometimes overlaps with local Baroque traditions
 
 <Warn>Do not confuse Neoclassicism with Renaissance or earlier Classical revivals. Renaissance was philosophical rediscovery of Classical *principles* (proportion, harmony); Neoclassicism is *scientific archaeological revival* based on measured drawings and excavations. This distinction—methodology, not just aesthetics—is critical for LEA success.</Warn>
+
+
+<ArticleMedia id="media-hist-002-06-core-concept" layout="single" type="image" status="placeholder" alt="Side-by-side comparison of a Greek Revival portico temple (Neoclassical), a curving undulating facade (Baroque), and a pointed-arch cathedral elevation (Gothic), illustrating the distinctive formal languages of each style." caption="Neoclassical vs. Baroque vs. Gothic — Comparative Elevations" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
 
 ## Key Facts and Testable Items
 
@@ -109,6 +117,8 @@ Memory aid: **A-S-E** = Archaeology, Stuart-Revett, Enlightenment.</Tip>
 - **Archaeological accuracy**: Design based on measured drawings and excavated remains, not imagination or previous stylistic conventions
 
 ## Related Articles
+
+<ArticleMedia id=\"media-hist-002-06-core-concept-timeline\" layout=\"single\" type=\"image\" status=\"placeholder\" alt=\"Comparison of Neoclassical buildings showing the revival of Greek and Roman forms: La Madeleine (Paris, Roman temple form), Brandenburg Gate (Berlin, Athenian propylaea), US Capitol (Washington DC, Roman dome and portico), and their shared classical vocabulary.\" caption=\"Neoclassicism — Greek and Roman Revival Comparison\" suggestedAsset=\"Style comparison illustration\" placementIntent=\"Style comparison for architectural period\" />
 
 See also within Medieval to Baroque: **lea-hist-002-01-core-concept**, **lea-hist-002-02-core-concept**, **lea-hist-002-03-core-concept**, **lea-hist-002-04-core-concept**.
 

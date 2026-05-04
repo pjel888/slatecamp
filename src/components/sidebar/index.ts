@@ -31,6 +31,7 @@ export type {
   SidebarNavItemProps,
   SidebarProps,
   IconTier,
+  NavigationPendingInfo,
 } from './types'
 export {
   SIDEBAR_NAV_ITEMS,

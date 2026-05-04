@@ -78,6 +78,8 @@ The absence of stone, combined with the floodplain environment, had architectura
 
 **Relief:** Sculptural narrative carved or modeled on a wall surface, common in Assyrian palace decoration.
 
+<ArticleMedia id="media-hist-001-02-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Timeline of Mesopotamian architectural development (c. 3500–330 BCE) showing Sumerian ziggurats, Akkadian palaces, Babylonian Ishtar Gate, and Assyrian palace complexes at Nimrud and Nineveh, with the evolution of mud brick construction and urban planning." caption="Mesopotamian Architecture — Chronological Timeline" suggestedAsset="Timeline diagram" placementIntent="Timeline diagram for architectural period" />
+
 ## Related Articles
 
 See also within Ancient Architecture: **lea-hist-001-01-core-concept**, **lea-hist-001-03-core-concept**, **lea-hist-001-04-core-concept**, **lea-hist-001-05-core-concept**.

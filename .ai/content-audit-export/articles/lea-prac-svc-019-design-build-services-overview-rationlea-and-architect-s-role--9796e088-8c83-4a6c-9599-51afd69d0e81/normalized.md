@@ -14,7 +14,7 @@ After studying this article, you should be able to:
 
 in practice, the time-cost-quality triangle is most effectively achieved through Design-Build Services. This delivery method simplifies and expedites the project process while providing creative, cost-effective solutions. The architect's education, training, and expertise qualify the professional to take a direct role in projects from conceptualization through implementation.
 
-<ArticleMedia id="media-lea-prac-svc-019-design-build-services-o" a type="image" caption="Design-Build vs. Design-Bid-Build — Delivery Method Comparison" description="Comparison diagram showing Design-Build (single entity, integrated, overlapping phases, compressed schedule, shared risk) versus traditional Design-Bid-Build (sequential phases, separate design and construction contracts, competitive bidding, longer timeline). Highlights architect role, cost certainty, and schedule implications of each approach." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-prac-svc-019-design-build-services-o" type="image" caption="Design-Build vs. Design-Bid-Build — Delivery Method Comparison" alt="Comparison diagram showing Design-Build (single entity, integrated, overlapping phases, compressed schedule, shared risk) versus traditional Design-Bid-Build (sequential phases, separate design and construction contracts, competitive bidding, longer timeline). Highlights architect role, cost certainty, and schedule implications of each approach." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 A Design-Build arrangement simplifies and expedites project delivery
 

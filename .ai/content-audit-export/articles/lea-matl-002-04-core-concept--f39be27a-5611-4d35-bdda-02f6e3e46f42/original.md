@@ -6,8 +6,21 @@ Identify natural stone types (granite, marble, limestone, sandstone, slate) by t
 
 Natural stone (granite, marble, limestone, sandstone, slate, travertine) offers superior durability, fire resistance, and aesthetic qualities compared to manufactured units. However, each stone type has different strength, hardness, and durability characteristics requiring careful material selection. Stone masonry is typically used as veneer or cladding rather than as primary load-bearing structure in modern construction.
 
+
+<ArticleMedia id="media-natural-stone-types-compare" layout="single" type="image" status="placeholder"
+  alt="Visual comparison chart showing granite, marble, limestone, sandstone, and slate with key physical properties and textures"
+  caption="Future chart: natural stone types — geological origin, hardness, porosity, and architectural applications"
+  suggestedAsset="Material property comparison chart with stone texture samples"
+  placementIntent="Provides visual reference for stone identification and selection" />
+
 ## Stone Types and Properties
 
+
+<ArticleMedia id="media-stone-property-chart" layout="single" type="image" status="placeholder"
+  alt="Comparison chart of natural stone properties: granite, marble, limestone, sandstone, slate with compressive strength, porosity, hardness, and architectural applications"
+  caption="Future chart: natural stone property comparison — strength, porosity, and applications"
+  suggestedAsset="Material property comparison chart with application photos"
+  placementIntent="Helps learners select stone types by physical properties" />
 ### Granite (ASTM C615)
 
 Granite is an igneous rock composed of quartz, feldspar, and mica. It is the hardest natural building stone (Mohs 6—7) and offers excellent durability and weather resistance.

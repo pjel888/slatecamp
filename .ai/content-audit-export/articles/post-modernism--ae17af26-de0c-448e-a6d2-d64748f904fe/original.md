@@ -1,7 +1,5 @@
 # Post-Modernism
 
-
-
 ## Learning Goal
 
 - Define Post-Modernism's theoretical foundations: Venturi's "less is a bore," Complexity and Contradiction, and the Duck vs. Decorated Shed distinction.
@@ -29,7 +27,6 @@ You encounter an LEA question showing a photograph of a building with a comicall
 ## The Hard Data (Cheat Sheet)
 
 <Example>**Vanna Venturi House (Robert Venturi, 1964):** The first built manifesto of Post-Modernism. A deliberately contradictory house in Chestnut Hill, PA with a split gable, oversized chimney, and distorted Classical references. Features: (1) Monumental gable facade — a "house-shaped" front that is purely symbolic, not structural; (2) A deliberate split in the gable line that contradicts the roof's own symmetry; (3) An oversized central chimney that dominates the composition.</Example>
-
 
 | Architect / Theorist | Key Work(s) | Year | Significance |
 |---|---|---|---|
@@ -100,13 +97,22 @@ D. The opening of Philip Johnson's AT&T Building
 
 > **Correct Answer: A.** Jencks famously pinpointed the demolition of the Pruitt-Igoe public housing project (designed by Minoru Yamasaki, completed 1956, demolished 1972) as the symbolic death of Modernism — a failed social housing megaproject that proved Modernist idealism could not solve urban problems. He published this claim in The Language of Post-Modern Architecture (1977).
 
-
 ---
 
 <Tip>**Memory Anchor: "P-M = Post-Modernism = Pluralism + Metaphor."** Two defining characteristics: Pluralism (rejects the single "correct" style of Modernism — mixes historical references, ornament, color, and forms from different eras) and Metaphor (architecture communicates meaning through symbolism, allusion, and double coding — simultaneously appealing to popular taste and elite architectural culture).</Tip>
 
 ---
 
+
+
+---
+
+## Exam Tip
+
+ALE Trap: Post-Modernism vs Modernism: Modernism = no ornament, universal, ahistorical. Post-Modernism = ornament returned, context-specific, historical quotation. Four markers: (1) Historical reference, (2) Ornament, (3) Pop-culture/irony, (4) Contextualism. Venturi's 'Less is a bore' vs Mies' 'Less is more' — this contrast is frequently tested.
+
 ## Cross‑References
 
 **The Bauhaus And International Style**, **Brutalism**, **21St Century Movements**, **Le Corbusier Five Points**
+
+<!-- no-media-needed: existing content format is sufficient without visual media -->

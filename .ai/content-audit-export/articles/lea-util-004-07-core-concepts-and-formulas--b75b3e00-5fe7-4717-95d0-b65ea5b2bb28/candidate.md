@@ -7,7 +7,7 @@ Apply the formula of fire protection: R = hazard × occupancy × area × constru
 
 ### Total Dynamic Head (TDH)
 
-<ArticleMedia id="media-lea-util-004-07-core-concepts-and-formul" a type="image" caption="Fire Pump System — Total Dynamic Head Calculation Diagram" description="System diagram for fire pump sizing showing: water supply (municipal or tank), suction line, fire pump with motor, discharge line to standpipe and sprinkler risers. TDH = Static Head (elevation to highest sprinkler) + Friction Loss (Hazen-Williams formula) + Residual Pressure (3.45 bar minimum per RA 9514 IRR). Worked example for a warehouse in Makati with 55.2m TDH and 100hp pump shown." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-util-004-07-core-concepts-and-formul" type="image" caption="Fire Pump System — Total Dynamic Head Calculation Diagram" alt="System diagram for fire pump sizing showing: water supply (municipal or tank), suction line, fire pump with motor, discharge line to standpipe and sprinkler risers. TDH = Static Head (elevation to highest sprinkler) + Friction Loss (Hazen-Williams formula) + Residual Pressure (3.45 bar minimum per RA 9514 IRR). Worked example for a warehouse in Makati with 55.2m TDH and 100hp pump shown." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 
 The pump must overcome three resistance forces simultaneously:
@@ -31,7 +31,7 @@ Where:
 - C = Hazen-Williams roughness coefficient (typically 120 for new steel pipe, per AWWA standards referenced in Philippine water utility design manuals)
 - d = internal pipe diameter (mm)
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+<Tip>The Hazen-Williams equation is empirical and assumes fully turbulent flow. For fire protection systems, C = 120 is standard for new galvanized steel and will underestimate actual friction loss in older systems (use C = 100–110 for systems >10 years).</Tip>
 
 ### Pump Power Requirement
 
@@ -50,7 +50,8 @@ Alternatively, simplified formula for direct calculation:
 
 **P(kW) = (Q(LPM) × H(m)) / (600 × η)**
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Example" status="preserved"]
+<Example>A pump delivers 1000 LPM at 65 m TDH with efficiency 0.80:
+P = (1000 × 65) / (600 × 0.80) = 65,000 / 480 = **135.4 kW** (≈181 hp)</Example>
 
 ## Philippine Fire Protection Standards and Pressures
 
@@ -68,7 +69,7 @@ Metro Manila and surrounding areas served by Manila Water Company and Maynilad S
 - High-rise buildings (>20 storeys) require pressure-sustaining or jockey pumps to prevent overpressurization of lower-level standpipes.
 - Pressure boosting pumps are mandatory for buildings where municipal supply is &lt;2.0 bar.
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
+<Warn>Never assume municipal water pressure. Conduct a minimum 24-hour pressure survey at the proposed suction point. RA 9514 IRR requires documented proof of available supply pressure and flow rate.</Warn>
 
 ### Sprinkler System Demand (Ordinary Hazard Group 1)
 
@@ -78,7 +79,7 @@ Per NFPA 13 referenced in RA 9514:
 - Calculated demand: Q = 4.1 mm/min × 139 m² = 570 LPM (min)
 - Add 10% for additional sprinklers in transitional areas: ~627 LPM typical system demand
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
+<Tip>For a Philippine residential or light commercial building with Ordinary Hazard classification, budget 600–700 LPM for the base sprinkler demand.</Tip>
 
 ## Worked Example 1: Sprinkler System on Warehouse (Ground to Roof)
 
@@ -143,7 +144,7 @@ P = (627 × 55.2) / (600 × 0.80) = 34,605 / 480 = **72.1 kW** (≈97 hp)
 
 **Conclusion:** A 100 hp (75 kW) electric motor–driven horizontal split-case pump at 1500 rpm (standard for 60 Hz), rated 700 LPM @ 90 m head, satisfies the warehouse sprinkler demand.
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="Note" status="preserved"]
+<Note>RA 9514 IRR requires all fire pumps to be sized with a safety margin above calculated demand. This pump delivers 700 LPM vs. 627 LPM required, providing the necessary safety factor.</Note>
 
 ## Worked Example 2: Class III Standpipe System (High-Rise Building)
 
@@ -198,7 +199,7 @@ P = (1893 × 42.05) / (600 × 0.75) = 79,569 / 450 = **176.8 kW** (≈237 hp)
 
 Alternatively, a smaller centrifugal pump could be used if backup municipal pressure is available during peak demand.
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="Warn" status="preserved"]
+<Warn>For high-rise standpipes, always verify that the rooftop tank volume meets RA 9514 IRR requirements. Tank must maintain 3.0 bar minimum throughout the maximum 30-minute discharge event.</Warn>
 
 ## Inverse Calculation: Determining Required Head from Available Pump and Piping
 
@@ -258,7 +259,7 @@ Power check: P = (540 × 52) / (600 × 0.78) = 28,080 / 468 ≈ **60 kW** ✓
 
 **Conclusion:** The 60 kW pump can deliver approximately 550 LPM at 52 m TDH to this system, providing adequate flow and residual pressure for a small-to-medium sprinkler installation.
 
-[SLATECAMP_UI_BLOCK:ui_0007 component="Tip" status="preserved"]
+<Tip>In practice, pump curves from manufacturers show actual performance at various speeds and flow rates. Always consult the pump curve before finalizing selection.</Tip>
 
 ## Fire Pump Room Requirements per RA 9514 IRR
 
@@ -270,7 +271,7 @@ The physical installation location significantly influences pump performance and
 4. _Redundancy: Certain buildings require multiple fire pumps per RA 9514 IRR.
 5. _Access and Maintenance:_ Motor and pump must be accessible for annual inspections per Fire Code.
 
-[SLATECAMP_UI_BLOCK:ui_0008 component="Note" status="preserved"]
+<Note>RA 9514 IRR requires fire pump installations to be certified before occupancy permit issuance.</Note>
 
 ## Common Errors and Misconceptions
 

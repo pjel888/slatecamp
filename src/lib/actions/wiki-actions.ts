@@ -339,6 +339,54 @@ export async function getActiveTaxonomyNode(slug: string): Promise<TaxonomyNode 
 }
 
 /**
+ * Resolve both the wiki article and the taxonomy node for a given article ID.
+ * This is the canonical resolver for ID-based article routing.
+ */
+export async function resolveArticleAndNodeById(
+  articleId: string,
+): Promise<{ article: WikiArticle | null; node: TaxonomyNode | null }> {
+  const supabase = await createStaticClient()
+
+  const { data: article } = await supabase
+    .from('wiki_articles')
+    .select('article_id, slug, title, content, created_at, updated_at, lea_tests_you, updated_note, subject_label, difficulty_label, read_time, status')
+    .eq('article_id', articleId)
+    .eq('status', 'published')
+    .maybeSingle()
+
+  if (!article) return { article: null, node: null }
+
+  const { data: junction } = await supabase
+    .from('wiki_article_taxonomy')
+    .select('node_id')
+    .eq('article_id', articleId)
+    .eq('is_primary', true)
+    .maybeSingle()
+
+  const nodeId =
+    junction?.node_id ??
+    (await (async () => {
+      const { data: fallback } = await supabase
+        .from('wiki_article_taxonomy')
+        .select('node_id')
+        .eq('article_id', articleId)
+        .limit(1)
+        .maybeSingle()
+      return fallback?.node_id ?? null
+    })())
+
+  if (!nodeId) return { article: article as WikiArticle, node: null }
+
+  const { data: node } = await supabase
+    .from('taxonomy_tree')
+    .select(TAXONOMY_NODE_COLUMNS)
+    .eq('node_id', nodeId)
+    .single()
+
+  return { article: article as WikiArticle, node: node as TaxonomyNode | null }
+}
+
+/**
  * Resolve both the wiki article and the taxonomy node for a given slug in a
  * single efficient query chain, reusing intermediate results.
  *
@@ -347,6 +395,7 @@ export async function getActiveTaxonomyNode(slug: string): Promise<TaxonomyNode 
  * - If the slug matches a taxonomy_tree.slug, the node is fetched first,
  *   then the junction table is used to find the primary (or any) article.
  * - Returns { article: null, node: null } when neither path finds a match.
+ * @deprecated Use resolveArticleAndNodeById instead for ID-based routing.
  */
 export async function resolveArticleAndNode(
   slug: string,

@@ -1,46 +1,38 @@
 {
   "article_id": "7e511a5d-edb1-4622-8f0f-29c1a631c145",
   "slug": "lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not",
-  "generated_at": "2026-05-04T00:06:39.087Z",
-  "old_hash": "sha256:673aa67d2b5fd456c99bb74f404f852b340ddebf92ca921a8ddc641000c7f0be",
-  "new_hash": "sha256:731ff4368883460b6ecd6775d0b5394d8eecb3c3d127d818ba001ddb3e4f62b0",
-  "original_hash": "sha256:673aa67d2b5fd456c99bb74f404f852b340ddebf92ca921a8ddc641000c7f0be",
+  "generated_at": "2026-05-04T02:17:21.619Z",
+  "old_hash": "sha256:db282c0acd0d51bf0c5dbe82e88bf40ce42363dfe2d73bf0725358e90aa850ee",
+  "new_hash": "sha256:db282c0acd0d51bf0c5dbe82e88bf40ce42363dfe2d73bf0725358e90aa850ee",
+  "original_hash": "sha256:db282c0acd0d51bf0c5dbe82e88bf40ce42363dfe2d73bf0725358e90aa850ee",
   "normalized_hash": "sha256:731ff4368883460b6ecd6775d0b5394d8eecb3c3d127d818ba001ddb3e4f62b0",
-  "candidate_hash": "sha256:731ff4368883460b6ecd6775d0b5394d8eecb3c3d127d818ba001ddb3e4f62b0",
-  "changed": true,
-  "changed_line_count": 25,
+  "candidate_hash": "sha256:db282c0acd0d51bf0c5dbe82e88bf40ce42363dfe2d73bf0725358e90aa850ee",
+  "changed": false,
+  "changed_line_count": 0,
   "inserted_line_count": 0,
-  "deleted_line_count": 5,
+  "deleted_line_count": 0,
   "ui_blocks_original_count": 4,
-  "ui_blocks_candidate_count": 0,
-  "ui_blocks_changed_count": 4,
+  "ui_blocks_candidate_count": 4,
+  "ui_blocks_changed_count": 0,
   "ui_blocks_count": 4,
-  "unresolved_placeholders_count": 1,
-  "preserved_blocks_count": 0,
+  "unresolved_placeholders_count": 0,
+  "preserved_blocks_count": 4,
   "changed_text_summary": {
-    "changed": 25,
+    "changed": 0,
     "inserted": 0,
-    "deleted": 5,
-    "original_line_count": 130,
-    "candidate_line_count": 125
+    "deleted": 0,
+    "original_line_count": 129,
+    "candidate_line_count": 129
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0001",
-      "ui_0002",
-      "ui_0003",
-      "ui_0004"
-    ],
-    "changed_count": 4
+    "missing_block_ids": [],
+    "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate contains unresolved UI block placeholders.",
-    "Candidate is missing 4 preserved UI block(s)."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 4 preserved UI block(s)."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

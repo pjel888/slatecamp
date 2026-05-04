@@ -10,6 +10,7 @@ By the end of this article, you will be able to:
 Moment-resisting frames are classified into three categories based on their seismic design level: Ordinary (OMRF), Intermediate (IMRF), and Special (SMRF). Each category has specific detailing requirements and a seismic response modification factor (R factor). Understanding these categories is critical for seismic design in the Philippines.
 
 ## Core Concept
+<ArticleMedia id="media-lea-strc-002-03-core-concept" a type="image" caption="Moment-Resisting Frame — Rigid Connection Behavior" description="Diagram showing a moment-resisting frame under lateral load with: (1) rigid beam-column connections with moment diagrams at joints; (2) deflected shape showing double curvature in beams and columns; (3) comparison of OMRF (R=3), IMRF (R=4.5-5.5), and SMRF (R=8-8.5) detailing requirements including connection reinforcement and confinement zones." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 A **moment-resisting frame (MRF)** is a structural system in which beams and columns are rigidly connected, allowing the frame to resist lateral loads through bending moments at the joints. Unlike braced frames (which use diagonal members), moment-resisting frames rely on the rigidity of connections to develop moment capacity.
 
@@ -48,7 +49,6 @@ NSCP 2015 Table 208-11A (R factors), Sec 408 (steel general), Sec 418 (concrete 
 **Apply-level:** Given a 8-story office building in Seismic Zone 2, justify why SMRF is required and what design force reduction is allowed due to the R factor.
 
 <Tip>**Memory aid:** O=3.5, I=5.5, S=8.0. SMRF (Special) gets the highest R because it's **specially** detailed for maximum ductility. Think: "Special demands special detailing."</Tip>
-
 
 ## Related Articles
 

@@ -1,33 +1,32 @@
 # Content Diff Report: lea-dsgn-010-02-core-concept
 
-Generated: 2026-05-04T00:07:17.372Z
+Generated: 2026-05-04T02:18:10.228Z
 Article ID: 4c706fb3-bd66-4bae-b4a6-2e8ed487031d
-Changed: true
-Safe to push locally: false
+Changed: false
+Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:304c70422eed4f6c2d28bf8c04a68e90baaabb9892caa889e1561c7714654bd3`
+- Original: `sha256:a5c343bf39c38dae692e9bc86d20b07a4ae41d94595fd4102bd54741cea6cfad`
 - Normalized: `sha256:5eb01e46ec7f51d69c26c3262df1d257ebb4f1e3e529eba6150aab3cf305042e`
-- Candidate: `sha256:5eb01e46ec7f51d69c26c3262df1d257ebb4f1e3e529eba6150aab3cf305042e`
+- Candidate: `sha256:a5c343bf39c38dae692e9bc86d20b07a4ae41d94595fd4102bd54741cea6cfad`
 
 ## Line summary
 
-- Changed lines: 52
+- Changed lines: 0
 - Inserted lines: 0
-- Deleted lines: 7
+- Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 1
-- UI blocks preserved: 0
-- UI blocks changed/missing: 1
-- Unresolved placeholders: 1
+- UI blocks preserved: 1
+- UI blocks changed/missing: 0
+- Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate contains unresolved UI block placeholders.
-- Candidate is missing 1 preserved UI block(s).
+- None
 
 ## Warnings
 

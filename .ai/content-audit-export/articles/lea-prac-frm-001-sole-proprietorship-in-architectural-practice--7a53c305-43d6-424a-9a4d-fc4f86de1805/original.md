@@ -9,9 +9,8 @@ After studying this article, you should be able to:
 - Describe the unlimited personal liability of the sole proprietor.
 - Distinguish sole proprietorship from partnership and corporation under RA 9266.
 
-
-
 ### Definition and Legal Requirements
+<ArticleMedia id="media-lea-prac-frm-001-sole-proprietorship-in-" a type="image" caption="Sole Proprietorship Structure — Ownership, Liability, and Compliance" description="Organizational structure diagram showing: (1) The architect as the sole proprietor at the top center, with 100% ownership and complete control; (2) Branching to: DTI registration (left), PRC/BOA registration (center), and professional liability insurance (right); (3) Below, the architect's personal assets shown directly connected to practice liabilities, illustrating unlimited personal liability; (4) Terminal nodes showing practice employees, client relationships, and project documents as owned by the proprietor. Red dashed line highlights the absence of a corporate veil." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 A sole proprietorship is an individual architect practicing and delivering architectural services, duly registered with the Department of Trade and Industry (DTI), Board of Architecture (BOA), and Professional Regulation Commission (PRC). This structure is the simplest form of architectural practice under RA 9266. The architect maintains complete ownership and control of the practice.
 
@@ -51,3 +50,6 @@ Disadvantages include unlimited personal liability, limited capacity to expand o
 - [RA 9266 Legal Framework](lea-prac-law-001)
 - [Government Procurement](lea-prac-frm-012)
 - [Environmental Laws](lea-prac-frm-017)
+
+
+<ArticleMedia id="media-prac-frm-001-liability-comparison" layout="single" type="image" status="placeholder" alt="Side-by-side comparison diagram of liability exposure in three practice forms: (1) Sole Proprietorship — single architect icon with personal assets fully exposed (unlimited personal liability, no corporate veil); (2) Partnership — two architect icons with shared liability, personal and partnership assets exposed (joint and several liability, all partners exposed); (3) Corporation — corporate entity icon shielding individual shareholders (limited liability, corporate veil, architects protected beyond investment). Each panel shows: asset exposure zone (red/personal, yellow/shared, green/protected), liability boundary illustrations, and typical risk scenarios. Color-coded risk gradient from red (highest risk) to green (lowest personal risk)." caption="Practice Form Comparison — Liability Exposure Across Sole Prop, Partnership, and Corporation" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />

@@ -11,15 +11,15 @@ American colonial architecture was not a monolith. Regional climate, available m
 <ArticleMedia id="media-hist-014-01-core-concept" layout="single" type="image" status="placeholder" alt="View of a classic New England saltbox house (late 17th–18th century), showing the steep pitched roof, central chimney, two-story front with single-story lean-to at the rear, and the timber frame with clapboard siding." caption="New England Saltbox House — Colonial Timber Architecture" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
 
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+<Tip>Memory aid: **"NE = Timber + Chimney; Ches = Brick + Symmetry; Dutch = Gambrel; Spanish = Coquina"** — regional differences reflect materials, settlers, and climate rather than a unified "colonial style."</Tip>
 
 Colonial builders followed vernacular traditions and European precedent filtered through practical constraints. A New England meetinghouse was not a cathedral—it was a timber box with a gallery for additional seating, reflecting both Puritan theology (simple worship) and economic reality (timber was abundant, stone was not). A Virginia plantation house was a calculated statement of class: symmetrical facades expressed enlightenment order and European refinement, while the dependency buildings (kitchens, slave quarters, storehouses) remained invisible at a distance.
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
+<Note>Plantation house architecture is inseparable from the enslaved labor that built it and enabled its wealth. The symmetrical facade, classical refinement, and spatial hierarchy all express a system of forced labor and racial hierarchy—do not discuss plantation houses without explicitly addressing slavery.</Note>
 
 The **Federal period** (1780–1820) marked the transition from colonial dependency to American nationhood. Architects and educated patrons embraced **neoclassicism**—the style of republican Rome and Enlightenment reason. **Robert Adam** and English neoclassical precedent influenced American designers. The first American-born architects (Benjamin Latrobe, Charles Bulfinch) synthesized classical proportion with American practicality. Federal-style houses retained colonial proportions but refined details: elliptical windows, delicate ornament, attenuated forms. Civic buildings became temples: courthouses and statehouse faced in stone or brick with porticos proclaiming democratic virtue.
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
+<Warn>Do not treat Federal style as simply imported English neoclassicism. Federal is hybrid—classical language (portico, column, proportion) filtered through American democratic ideology and practical constraints (budget, local materials, climate). It is transformation, not mere copy.</Warn>
 
 
 <ArticleMedia id="media-hist-014-01-core-concept" layout="single" type="image" status="placeholder" alt="Comparative illustration of the four American colonial traditions: New England (timber saltbox), Mid-Atlantic (brick Georgian), Dutch (gambrel roof, stone), and Spanish Southwest (adobe mission with bell tower)." caption="American Colonial Regional Types — New England, Mid-Atlantic, Dutch, Spanish" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
@@ -27,7 +27,7 @@ The **Federal period** (1780–1820) marked the transition from colonial depende
 
 ## Key Facts and Testable Items
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="WikiExamTable" status="preserved"]
+<WikiExamTable headers={["Building Type", "Region", "Characteristics", "Era"]} rows={[['["**Timber-Frame Meetinghouse**", "New England", "Central chimney, gallery, simple rectangular form, wood siding", "1650–1750"]', '["**Colonial Plantation House**", "Chesapeake (Virginia, Maryland)", "Symmetrical brick facade, central entrance, paneled rooms, dependencies", "1700–1780"]', '["**Dutch Colonial House**", "New York", "Steep gambrel roof, overhanging eaves, stone or brick", "1650–1750"]', '["**Spanish Colonial Fort**", "Florida (St. Augustine)", "Coquina stone, thick walls, gun ports, moat", "1565–1821"]', '["**Federal-Style House**", "Nationwide", "Attenuated proportions, elliptical windows, refined ornament, masonry", "1780–1820"]', '["**Federal Civic Building**", "Nationwide", "Neoclassical portico, temple form, stone facing, monumental stairs", "1790–1830"]']]} />
 **Key Buildings:**
 - **Wentworth House** (Portsmouth, NH, 1750) — Colonial Georgian; timber-frame, symmetrical; merchant wealth
 - **Mount Vernon** (Virginia, original 1735; major additions 1758, 1774–1787; George Washington's house) — Colonial transitioning to Federal; cupola, pilasters, dependencies
@@ -37,21 +37,24 @@ The **Federal period** (1780–1820) marked the transition from colonial depende
 
 ## How It's Tested on the LEA
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
+<ExamTip>**Pattern 1: Regional Identification**
+Questions show photographs of colonial houses and ask you to identify region by form, materials, and roof type. You distinguish New England timber-frame from Mid-Atlantic brick from Southern plantation precedent. You explain why these differences exist (climate, labor, resources, cultural origin).</ExamTip>
 
-[SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
+<ExamTip>**Pattern 2: Colonial to Federal Transition**
+Questions ask how neoclassicism changed American architecture: Why did Federal-style houses have elliptical windows instead of rectangular? Why did civic buildings become temple-like? You connect architectural style to political ideology—classical order = democratic virtue.</ExamTip>
 
-[SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
+<ExamTip>**Pattern 3: Building Type and Function**
+Questions present meetinghouse, courthouse, or plantation house plans and ask you to explain spatial decisions: Why is the central chimney important in New England houses? Why are plantation houses symmetric and why are dependencies separate? You read plan and section as evidence of cultural values.</ExamTip>
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
+<Callout>The LEA tests your knowledge of early American colonial and Federal period architecture (1600–1830)—from timber-frame colonial houses to neoclassical civic monuments. Questions focus on building types (meetinghouses, plantation houses, courthouses), regional variations (Southern, New England, Mid-Atlantic), and the transition from colonial dependence to American independence reflected in architectural style.</Callout>
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0009 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Calling all colonial architecture \"Colonial style\"" correction="Students use \"Colonial\" as a catchall. It obscures critical differences." context="Say \"New England timber-frame,\" \"Chesapeake plantation,\" \"Dutch colonial,\" \"Spanish colonial.\" Each reflects distinct regional reality." />
 
-[SLATECAMP_UI_BLOCK:ui_0010 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Forgetting slavery's role in colonial architecture" correction="Students describe plantation houses as elegant statements of proportion without mentioning the enslaved labor that built them and the economic system they represent. Plantation architecture is inseparable from slavery." context="Address this directly." />
 
-[SLATECAMP_UI_BLOCK:ui_0011 component="WikiMistakeList" status="preserved"]
+<WikiMistakeList mistakes={["Treating Federal style as purely European. Students say Federal is \"just English neoclassicism imported.\" Federal is hybrid: classical precedent filtered through American democratic ideology, built with American materials and labor, adapted to American climate. It's transformation, not copy.", "Overestimating neoclassical purity. Students expect Federal buildings to be rigidly classical. American Federal is pragmatic: it borrows classical language (portico, column, proportion) while accepting practical constraints (budget, local materials, climate, skill). It's classical with American common sense."]} />
 
 ## Key Terms
 
@@ -70,6 +73,8 @@ The **Federal period** (1780–1820) marked the transition from colonial depende
 **Meetinghouse** — New England Protestant gathering space; timber-frame, gallery, simple interior; reflects Puritan theology and regional resources.
 
 **Plantation House** — Large domestic structure on agricultural estate; symmetrical, formal; supported by enslaved labor and economic hierarchy.
+
+<ArticleMedia id="media-hist-014-01-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparison of American colonial regional traditions: New England (timber-frame saltbox, central chimney), Mid-Atlantic (brick Georgian, symmetry), Dutch (gambrel roof, stone), and Spanish Southwest (coquina, adobe mission)." caption="American Colonial Architecture — Regional Traditions" suggestedAsset="Style comparison illustration" placementIntent="Style comparison for architectural period" />
 
 ## Related Articles
 

@@ -1,43 +1,38 @@
 {
   "article_id": "578ca1ef-6eff-4810-b5dd-3b52c9bcb76b",
   "slug": "stairs-handrails-guardrails",
-  "generated_at": "2026-05-04T00:06:38.700Z",
-  "old_hash": "sha256:08cfab4cd9211c9ac43fd999a1fb1df8f0a88f4c2dcf81cd6aa365acfcc45933",
-  "new_hash": "sha256:748055765e234c71ea469c7ca9ed1c95103e2a54f305cb97eeb9eb424743f918",
-  "original_hash": "sha256:08cfab4cd9211c9ac43fd999a1fb1df8f0a88f4c2dcf81cd6aa365acfcc45933",
+  "generated_at": "2026-05-04T02:17:21.113Z",
+  "old_hash": "sha256:7226a3e126cdf76c108e15ad01bd663a5137e619997c1a79c4eb56dd95568649",
+  "new_hash": "sha256:7226a3e126cdf76c108e15ad01bd663a5137e619997c1a79c4eb56dd95568649",
+  "original_hash": "sha256:7226a3e126cdf76c108e15ad01bd663a5137e619997c1a79c4eb56dd95568649",
   "normalized_hash": "sha256:748055765e234c71ea469c7ca9ed1c95103e2a54f305cb97eeb9eb424743f918",
-  "candidate_hash": "sha256:748055765e234c71ea469c7ca9ed1c95103e2a54f305cb97eeb9eb424743f918",
-  "changed": true,
-  "changed_line_count": 158,
-  "inserted_line_count": 2,
+  "candidate_hash": "sha256:7226a3e126cdf76c108e15ad01bd663a5137e619997c1a79c4eb56dd95568649",
+  "changed": false,
+  "changed_line_count": 0,
+  "inserted_line_count": 0,
   "deleted_line_count": 0,
   "ui_blocks_original_count": 1,
-  "ui_blocks_candidate_count": 0,
-  "ui_blocks_changed_count": 1,
+  "ui_blocks_candidate_count": 1,
+  "ui_blocks_changed_count": 0,
   "ui_blocks_count": 1,
-  "unresolved_placeholders_count": 1,
-  "preserved_blocks_count": 0,
+  "unresolved_placeholders_count": 0,
+  "preserved_blocks_count": 1,
   "changed_text_summary": {
-    "changed": 158,
-    "inserted": 2,
+    "changed": 0,
+    "inserted": 0,
     "deleted": 0,
-    "original_line_count": 170,
-    "candidate_line_count": 172
+    "original_line_count": 174,
+    "candidate_line_count": 174
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0004"
-    ],
-    "changed_count": 1
+    "missing_block_ids": [],
+    "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate contains unresolved UI block placeholders.",
-    "Candidate is missing 1 preserved UI block(s)."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 1 preserved UI block(s)."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

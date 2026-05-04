@@ -1,19 +1,12 @@
 {
-  "attempted_at": "2026-05-04T00:07:07.398Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:17:57.800Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "original.md hash does not match article metadata export hash.",
-    "Remote Supabase content differs from export baseline; refusing stale push.",
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "Failed to update wiki_articles.content: Bad Request"
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "d6015c96-3954-4780-ad92-64507a2959d1",
   "slug": "sheet-metal-and-spray-booths",
@@ -21,8 +14,8 @@
     "auto_generated_diff"
   ],
   "remote_hash_before": "sha256:6e70d1483cad02d99354ac99b38971847887fb46fdc865f1f1e5d2e2f3366777",
-  "original_hash": "sha256:f7586ae600c5beb36139d357f0f7e439c29010f73547ff3a5bcaae2436fcf211",
-  "candidate_hash": "sha256:f18db2b1d2ec342c718f908c0150a3f258f1e0c0334bc268e66d6b6d3d756ea5",
-  "stale_check_passed": false,
+  "original_hash": "sha256:6e70d1483cad02d99354ac99b38971847887fb46fdc865f1f1e5d2e2f3366777",
+  "candidate_hash": "sha256:4c58cd0af4eeba53de1512716e3719ff9bc4bca0cee93a421df8c6a9da2d82b6",
+  "stale_check_passed": true,
   "remote_updated_at_before": "2026-05-03T14:19:45.787025+00:00"
 }

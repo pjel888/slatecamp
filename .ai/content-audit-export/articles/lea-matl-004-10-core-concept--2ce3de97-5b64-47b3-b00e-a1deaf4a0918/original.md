@@ -6,12 +6,25 @@ Identify preconstruction activities — site investigation, soil testing (SPT, p
 
 Modular/prefabricated systems manufacture building components (walls, volumetric modules, structural frames) in controlled factory environments, then assemble on-site. Advantages: quality control, parallel manufacturing and site work, reduced weather dependency, improved safety (factory vs. site hazards). Disadvantages: transportation logistics, higher upfront capital, site customization limits.
 
+
+<ArticleMedia id="media-site-investigation-flow" layout="single" type="image" status="placeholder"
+  alt="Flowchart showing preconstruction activities sequence: site investigation, soil testing, survey/staking, and temporary facilities"
+  caption="Future diagram: preconstruction activity workflow — site investigation through temporary facilities"
+  suggestedAsset="Process flowchart of preconstruction activities"
+  placementIntent="Shows the logical sequence of preconstruction activities" />
+
 ### Prefabrication and Modular Construction
 
 _Prefabrication_ manufactures components (walls, beams, trusses) in a plant for site assembly. Components are delivered flat-pack or fully formed for bolting/welding. Typical applications: roof trusses, wall panels, curtain wall units.
 
 _Modular Construction_ uses fully finished volumetric modules (bathrooms, kitchens, entire rooms). Modules are built in a plant, transported to site, and stacked/bolted together. Interior finishes, MEP (mechanical, electrical, plumbing) are factory-completed. Site work is minimal: foundation, external connections, testing. Advantages: factory quality, rapid on-site assembly (1–2 days per floor), labor reduction. Disadvantages: transportation (modules must fit highway limits: ~2.5 m width × 4 m height), higher capital cost for tooling.
 
+
+<ArticleMedia id="media-prefabrication-comparison" layout="single" type="image" status="placeholder"
+  alt="Comparison diagram of prefabrication, modular construction, 3D printing, ICF, and SIPs showing construction speed, quality, and cost factors"
+  caption="Future chart: modern construction methods comparison — prefabrication, modular, 3D printing, ICF, SIPs"
+  suggestedAsset="Comparison matrix of alternative construction methods"
+  placementIntent="Helps learners compare modern construction methods for appropriate selection" />
 ### 3D Printing (Additive Construction)
 
 _3D Concrete Printing_ deposits concrete layer-by-layer via robotic gantry or arm. Walls, structural elements, and custom shapes are printed directly. Advantages: design freedom, reduced waste, potentially lower labor. Disadvantages: printing speed (still slower than traditional formwork), material limitations (concrete only), unproven long-term durability, regulatory acceptance developing. Still experimental in Philippine context; primarily research and pilot projects.

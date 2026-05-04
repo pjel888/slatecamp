@@ -5,7 +5,6 @@ Apply participatory planning methods — community engagement, dialogue facilita
 
 Participatory planning and community-led development center the voices and agency of residents—especially marginalized communities—in planning decisions. Rather than planners imposing plans from above, participatory approaches build plans through dialogue, consensus-building, and the integration of local knowledge. This is both a legal mandate (RA 7160 Local Government Code, RA 9266 Architecture Act of 2004 (Environmental Planner profession)) and a theoretical foundation for equitable, legitimate urban planning.
 
-
 ## Core Concept
 
 Participatory planning reframes the planner's role from technical expert imposing optimal solutions to facilitator of community dialogue. The foundational theories include:
@@ -24,6 +23,7 @@ In practice, participatory planning uses methods like:
 - **Participatory budgeting** — residents directly decide how public funds are allocated to community projects.
 
 In the Philippines, participatory planning is mandated through the Sanggunian (municipal council) consultations required by RA 7160 and the Environmental Planner's role under RA 10587. CLUPs must incorporate community input; planning cannot be done to communities, only with them.
+<ArticleMedia id="media-lea-plan-008-04-core-concept" a type="image" caption="Participatory Planning Methods — Community Engagement Workflow" description="Flowchart of participatory planning: community identification → stakeholder mapping → engagement strategy (workshops, public hearings, focus groups) → dialogue facilitation → consensus-building → feedback integration → validation. Top-down vs. bottom-up approaches per RA 7160 participation mandates." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
@@ -42,7 +42,6 @@ RA 7160's devolution of planning power to LGUs inherently makes participatory pl
 3. **Design charrette scenario** — "A municipality is planning a new mixed-use waterfront district. What is the advantage of a design charrette over a traditional planning process?" → Answer: A charrette brings all stakeholders (residents, business owners, city planners, developers) into the same room simultaneously to develop design concepts together, rather than sequential stakeholder consultations that may miss integration opportunities. Tests understanding of the charrette method's specific value.
 
 <Tip>Memory aid: **Advocacy = Advocacy Planning by Paul Davidoff = advocate for underrepresented voices**. **Communicative = Communicative Planning by Patsy Heleay = planning through dialogue and communication**. **PRA = Participatory Rural Appraisal by Robert Chambers = community mapping and ranking tools**. **Charrette = intensive collaborative design workshop**.</Tip>
-
 
 **Exam Tip:** Arnstein's Ladder of Citizen Participation: (1) Manipulation, (2) Therapy, (3) Informing, (4) Consultation, (5) Placation, (6) Partnership, (7) Delegated Power, (8) Citizen Control. Rungs 1-2 = non-participation, 3-5 = tokenism, 6-8 = citizen power. Know the rungs.
 

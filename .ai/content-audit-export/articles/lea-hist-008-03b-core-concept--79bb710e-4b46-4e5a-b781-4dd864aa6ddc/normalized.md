@@ -72,6 +72,8 @@ Mies's design method was the opposite of Le Corbusier's programmatic rationalism
 
 **Minimalism**: Design philosophy emphasizing essential elements, geometric purity, reduction to abstraction; Mies is a foundational figure in architectural minimalism.
 
+<ArticleMedia id="media-hist-008-03b-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparison of Mies van der Rohe's three iconic works: Barcelona Pavilion (universal space, cruciform columns), Farnsworth House (minimalist glass box), and Seagram Building (bronze curtain wall tower), showing his philosophy of 'less is more'." caption="Mies van der Rohe — Three Iconic Works" suggestedAsset="Style comparison illustration" placementIntent="Style comparison for architectural period" />
+
 ## Related Articles
 
 See also within Modern & Contemporary Architecture: **lea-hist-008-01-core-concept**, **lea-hist-008-02-core-concept**, **lea-hist-008-03a-core-concept**, **lea-hist-008-03c-core-concept**.

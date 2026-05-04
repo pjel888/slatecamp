@@ -2,6 +2,26 @@
 
 _Aligned with RA 7277, RA 9442, RA 10754, and your BP 344 / PD 1096 files.[file:1][file:2][web:20][web:23][web:29]_
 
+## Learning Goal
+
+<LawCallout code="ra9442" section="Section 4 - Incentives">
+BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all public buildings.
+</LawCallout>
+Extracted summary:
+- Props: (none)
+- Text: BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all p...
+
+<LawCallout code="ra9442" section="Section 3 - PWD Privileges">
+BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all public buildings.
+</LawCallout>
+Extracted summary:
+- Props: (none)
+- Text: BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all p...
+
+After reading this article, you should be able to:
+
+Calculate and apply PWD privileges under RA 9442 as amended by RA 10754: the 20% discount on hotels, restaurants, recreation, and transport; VAT exemption on the discounted amount; income tax deduction for establishments providing free PWD services; and the graduated ramp and accessible design requirements triggered by building alterations.
+---
 ---
 
 ## Key Corrections vs Your Draft
@@ -63,6 +83,9 @@ Applies to (for PWD’s exclusive use):
 
 - Medicines and medical supplies.[web:30]
 - Medical & dental services, diagnostics, professional fees.[web:29]
+
+<Note>
+\
 - Domestic air/sea/land transport fares.[web:29]
 - Hotels, restaurants, recreation (cinemas, amusement).[web:29][web:32]
 - Funeral and burial services.[web:29]
@@ -71,7 +94,7 @@ Applies to (for PWD’s exclusive use):
 **Key point:** Establishments **absorb** these costs; they are not direct government reimbursements, though they may be treated as deductible expenses under BIR rules.[web:26][web:29]
 
 ---
-
+</Note>
 ## Employment & Tax Incentives (Updated View)
 
 **1. Wage Incentive (Employer hires PWDs)**
@@ -100,6 +123,8 @@ Applies to (for PWD’s exclusive use):
 ---
 
 ## Penalties (After RA 10754 and Implementing Rules)
+
+\
 
 The exact penalty bands in your draft are too narrow.
 
@@ -137,3 +162,20 @@ The exact penalty bands in your draft are too narrow.
    - Kept the strong distinction that **only BP 344 + PD 1096** give physical dimensions; RA 9442 and RA 10754 provide **rights, discounts, penalties, and incentives**, not slopes or widths.[file:1][file:2][web:20][web:23]
 
 If you’d like, next I can build a **pure Q&A deck** (about 20 flashcards) that only asks: “Which law? which %? which section idea?” so you can drill these distinctions quickly.
+
+---
+
+
+
+---
+
+## Exam Tip
+
+ALE Swipe: PWD 20% discount applies to: hotels, restaurants, recreation centers, theaters, hospitals/dental clinics, transport (land/air/sea), funeral services. Establishments get income tax deduction equal to the discount amount. The architect's obligation = design compliant accessible facilities. The owner's obligation = register with the DSWD to claim deductions.
+
+## Cross‑References
+
+**Law Qa Deck Ra 7277 9442 10754**, **Translating Pwd Rights**, **Lodging And Residential Accessibility**, **Comprehensive Signage Package**
+
+
+<!-- no-media-needed: existing content format is sufficient without visual media -->

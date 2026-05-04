@@ -27,7 +27,7 @@ AWPA (American Wood Protection Association) Standard U1 specifies retention leve
 
 CCA was the dominant preservative worldwide from the 1970s through early 2000s. It is a copper-based fungicide combined with chromium and arsenic for comprehensive protection against decay and insects.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Note" status="preserved"]
+<Note>CCA is now restricted or banned in many countries due to arsenic content and environmental concerns. In the Philippines and many developed nations, CCA-treated wood for residential use (ground contact, play structures) is restricted. CCA remains approved for marine and non-residential applications in some jurisdictions, but new specifications generally exclude it.</Note>
 
 **Properties:** CCA develops high retention levels (0.4 lb/ft³ for UC3 exposure, 0.6 lb/ft³ for ground contact). The wood acquires a greenish tint. Fasteners must be corrosion-resistant because the copper oxidizes standard steel.
 
@@ -159,13 +159,24 @@ The LEA expects you to:
 
 Typical questions present a building application (exterior deck, ground-contact beam, interior wall) and ask what preservative treatment and fastener type are appropriate, or ask you to explain why an existing treatment is inadequate.
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+<Tip>Always consider climate and exposure: tropical Philippines demands more aggressive treatment and fastener corrosion resistance than temperate regions. Never specify standard steel fasteners in treated wood; always require hot-dipped galvanized minimum (stainless preferred).</Tip>
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard
+  mistake="Assuming borate-treated wood is suitable for exterior exposed applications in the Philippines"
+  correction="Borates leach out in wet tropical environments within 5—10 years. Borates are only appropriate for interior, always-dry applications (UC1). For any exposure to rain or ground contact, use pressure-treated copper-based preservatives (ACQ or CA)."
+  context="Candidates see 'preservative treatment' and assume all types are equivleant; they overlook climate-specific durability limitations." />
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
+<WikiMistakeList
+  title="Treatment and Fastener Specification Errors"
+  items={[
+    "Specifying standard steel fasteners in ACQ-treated wood: ACQ is 5× more corrosive than CCA; standard steel fasteners will rust within 3—5 years. Always require ASTM A 153 Class D galvanized minimum; stainless is preferred.",
+    "Confusing pressure treatment with surface treatment: A brush-coated preservative on lumber provides only thin surface protection and does not meet code for structural exterior or ground-contact applications. Pressure treatment (AWPA U1) is required.",
+    "Failing to account for moisture content in determining treatment adequacy: Green wood (above 30% moisture) does not accept preservative penetration uniformly. Dry lumber (12—20% moisture) is the standard for pressure treatment.",
+    "Using CCA-treated lumber for residential applications in the Philippines: CCA is restricted for residential use due to arsenic and environmental regulations. Specify ACQ or CA-B instead.",
+    "Neglecting finish coats and regular maintenance: Preservative treatment extends durability, but the wood still requires paint/stain every 3—5 years to maintain the moisture barrier. Exposed treated wood without finish fails sooner than preservative design life."
+  ]} />
 
 ## Related Articles
 

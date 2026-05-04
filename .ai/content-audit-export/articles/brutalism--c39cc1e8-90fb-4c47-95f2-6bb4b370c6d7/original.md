@@ -16,7 +16,6 @@ You are visiting the Cultural Center of the Philippines on Roxas Boulevard and n
 
 </Tip>
 
-
 - **Béton Brut Origin:** The term "Brutalism" derives from the French béton brut (raw concrete), a phrase Le Corbusier used to describe the board-marked, unfinished concrete surfaces of his Unité d'Habitation in Marseille (1952). British critics Alison and Peter Smithson adopted the term and transformed it into "New Brutalism" as a full architectural ethic in the 1950s.
 
 - **Truth to Materials:** Brutalism demands that materials be left in their as-built state — no paint, no plaster, no cosmetic covering. Concrete is exposed with its formwork imprints; steel is left weathering; brick is unrendered. The building's construction process becomes its finished expression.
@@ -55,13 +54,11 @@ You are visiting the Cultural Center of the Philippines on Roxas Boulevard and n
 
 </ExamTip>
 
-
 - **Trap 1: Confusing Brutalism with Deconstructivism.** Both can appear massive and rough, but Brutalism celebrates truth to materials and structural honesty (the building is what it is), while Deconstructivism deliberately fragments and destabilizes form as an intellectual exercise. Ask: "Is the building proudly showing its construction, or deliberately breaking apart?" If the former, it is Brutalism.
 
 - **Trap 2: Thinking Brutalism means "brutal" in the colloquial sense.** The name comes from béton brut (raw concrete), not from "brutal" meaning harsh. This is a classic LEA distractor — exam questions may offer "named for its harsh, brutal aesthetic" as a wrong answer.
 
 - **Trap 3: Forgetting the social dimension.** Brutalism is not just a material style — it emerged from post-war social housing and civic building programs. LEA questions may test whether you understand that Robin Hood Gardens (Smithsons) and the Barbican Estate (Chamberlin, Powell & Bon) were public welfare projects, not luxury developments.
-
 
 <Warn>
 
@@ -114,3 +111,5 @@ D. Parametrically generated curvilinear concrete shell
 
 **The Bauhaus And International Style**, **Le Corbusier Five Points**, **Mies Van Der Rohe**, **Post Modernism**
 
+
+<!-- no-media-needed: existing content format is sufficient without visual media -->

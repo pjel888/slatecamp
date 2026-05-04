@@ -3,8 +3,6 @@
 
 ---
 
-
-
 ## Learning Goal
 
 - Trace the three waves of post-independence Filipino architectural identity: Modernist/Brutalist (Locsin), Neo-Vernacular (Mañosa), and Contemporary Tropical.
@@ -182,3 +180,5 @@ Answer: D) 4-hour fire-resistive rating. Per PD 1096 RIRR (page 39), Type IV and
 
 **Pre Colonial Vernacular**, **Spanish Colonial Bahay Na Bato**, **American Colonial Era**, **Colonial European Influence**
 
+
+<!-- no-media-needed: existing content format is sufficient without visual media -->

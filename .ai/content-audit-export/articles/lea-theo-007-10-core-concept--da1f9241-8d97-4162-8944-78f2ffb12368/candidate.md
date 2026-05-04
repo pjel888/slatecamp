@@ -1,5 +1,7 @@
 ## What You Need to Know for the LEA
-[SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
+<Callout>
+Social architecture reorients the design process from top-down professional authority to participatory engagement with end-users and affected communities. The LEA tests whether you understand the theoretical shift: architecture as a **solution imposed by experts** versus architecture as a **process negotiated among stakeholders**. You must master participatory methodologies, equity frameworks, and the distinction between superficial "community input" and genuine power-sharing in design.
+</Callout>
 
 ## Learning Goal
 
@@ -9,11 +11,13 @@
 
 ## Core Concept
 
-<ArticleMedia id="media-lea-theo-007-10-social-architecture" type="image" caption="Social Architecture — Community-Engaged Design and Arnstein's Ladder of Participation" description="Concept diagram showing Arnstein's Ladder (1969) with eight rungs from bottom to top: (1) Manipulation, (2) Therapy, (3) Informing, (4) Consultation, (5) Placation, (6) Partnership, (7) Delegated Power, (8) Citizen Control. Horizontal line at rung 5-6 dividing 'Tokenism' (below) from 'Citizen Power' (above). Callout box: 'Participatory design = genuine power-sharing (rungs 6-8); superficial community input = token consultation (rungs 3-5)'. Philippine bayanihan iconography at top rung." suggestedAsset="Ladder diagram showing levels of community participation in architectural design" status="placeholder" />
+<ArticleMedia id="media-lea-theo-007-10-social-architecture" type="image" caption="Social Architecture — Community-Engaged Design and Arnstein's Ladder of Participation" alt="Concept diagram showing Arnstein's Ladder (1969) with eight rungs from bottom to top: (1) Manipulation, (2) Therapy, (3) Informing, (4) Consultation, (5) Placation, (6) Partnership, (7) Delegated Power, (8) Citizen Control. Horizontal line at rung 5-6 dividing 'Tokenism' (below) from 'Citizen Power' (above). Callout box: 'Participatory design = genuine power-sharing (rungs 6-8); superficial community input = token consultation (rungs 3-5)'. Philippine bayanihan iconography at top rung." suggestedAsset="Ladder diagram showing levels of community participation in architectural design" status="placeholder" />
 
 Social architecture (also termed socially responsive architecture, community-engaged design, or participatory architecture) treats **the community affected by the building as primary stakeholders in design, not mere end-users**. This represents a fundamental epistemological shift from the modernist model where architects possessed privileged knowledge and communities were passive recipients.
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+<Tip>
+**Arnstein's ladder in three tiers**: (1) Non-participation/tokenism where professionals decide and "consult" after; (2) Genuine participation where professionals and community negotiate decisions together; (3) Community control where community has ultimate authority and professionals advise. Most projects claim #2; many settle for #1. Recognize which level you are operating at and be honest about it.
+</Tip>
 
 **The Critique of Professional Autonomy**
 
@@ -72,7 +76,9 @@ Examples:
 
 This is more radical than typical participation—it is **design control by the affected community, with professional architects as consultants**, not authorities.
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
+<Note>
+Indigenous sovereignty in design represents decolonial principle: communities with millennia of place-based knowledge are not "lacking expertise" but are holders of epistemic authority equivleant to or exceeding professional training. This shift requires professionals to relinquish authority positioning, not merely "involve" Indigenous peoples in professionally-led processes. True decolonial design inverts the hierarchy: Indigenous community leads, professionals support.
+</Note>
 
 **Slum Upgrading and Incremental Development**
 
@@ -94,30 +100,32 @@ In the Global South, where formal housing is inaccessible and informal settlemen
 
 Contemporary social architecture increasingly emphasizes **negotiation over romance**: communities and professionals have different knowledge; the process is fundamentally conflictual (desires exceed resources, preferences diverge); the outcome reflects negotiated compromise, not consensus harmony.
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
+<Warn>
+Beware romanticization: communities are not inherently unified or democratic. Participatory design can amplify internal power hierarchies—patriarchs override women, elites silence marginalized members, landowners exclude renters. "Community voice" is often whose voice gets heard. Genuine social architecture requires active management of internal power dynamics, not naive assumption that participation automatically produces justice or inclusivity.
+</Warn>
 
 ## Key Facts and Testable Items
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="WikiExamTable" status="preserved"]
+<WikiExamTable headers={["Framework", "Theorist", "Core Principle", "Critique/Limitation"]} rows={[['["Ladder of Participation", "Sherry Arnstein (1969)", "Levels from manipulation to citizen control", "Most projects operate at tokenism, not genuine power-sharing"]', '["Participatory Design", "Lucien Kroll, others", "Communities co-design with professionals", "Time/resource intensive; requires trust-building"]', '["Asset-Based Development", "John Kretzmann, others", "Build on community strengths, not needs", "Can minimize legitimate grievances; may understate material constraints"]', '["Co-Production", "Collective models", "Community labor and decision-making throughout", "Creates ownership; demands volunteer labor (equity issue)"]', '["Incremental Design", "Aravena, others", "Incomplete structures communities complete", "Pragmatic but can normalize inadequate initial provision"]', '["Indigenous Sovereignty", "Decolonization frameworks", "Indigenous communities control design decisions", "Requires redistributing professional authority; politically contentious"]', '["Participatory Slum Upgrading", "UN-Habitat, others", "Existing residents guide incremental improvements", "Often paired with inadequate state investment; can legitimize informal tenure"]']]} />
 ## How It's Tested on the LEA
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
+<ExamTip>1. **Participation Level Identification**: "A project claims 'community engagement' but residents were invited to comment on designs already completed. Which level of Arnstein's ladder is this?" (Answer: Tokenism; comments are collected but decisions remain with professionals)</ExamTip>
 
-[SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
+<ExamTip>2. **Equity Framework Application**: "Design a housing project for economically displaced residents. What social architecture principles should guide this?" (Answer: Participatory design (not top-down), community control (not professional authority), tenure security (legal rights, not temporary), incrementalism (respecting existing resources and labor), explicit anti-displacement measures)</ExamTip>
 
-[SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
+<ExamTip>3. **Professional Role Negotiation**: "In participatory design, what is the architect's role if the community's preference differs from technical recommendations?" (Answer: Facilitate negotiation, clarify trade-offs, but ultimately defer to community decision-making; professional authority is advisory, not determinative)</ExamTip>
 
-[SLATECAMP_UI_BLOCK:ui_0009 component="ExamTip" status="preserved"]
+<ExamTip>4. **Indigenous Consultation vs. Control**: "A project on Indigenous land consulted with the tribe. Is this genuine social architecture?" (Answer: Consultation alone is insufficient; genuine decolonial architecture requires Indigenous control over design decisions, with professionals as consultants)</ExamTip>
 
-[SLATECAMP_UI_BLOCK:ui_0010 component="ExamTip" status="preserved"]
+<ExamTip>5. **Philippine Application**: "How should slum upgrading in Metro Manila incorporate social architecture principles?" (Answer: Participatory budgeting, residents determine priorities, tenure security measures, community labor and skill-building, long-term community organizing, not demolition-based relocation)</ExamTip>
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0011 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Confusing Consultation with Participation" correction="Asking community input is not participation if the community cannot influence final decisions." context="Genuine participation requires shared decision-making authority." />
 
-[SLATECAMP_UI_BLOCK:ui_0012 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Idealizing Communities as Unified and Democratic" correction="Communities contain conflicts, hierarchies, and marginalized members whose voices are suppressed." context="Participation must actively manage internal power dynamics." />
 
-[SLATECAMP_UI_BLOCK:ui_0013 component="WikiMistakeList" status="preserved"]
+<WikiMistakeList mistakes={["Assuming All Community Preferences are Architecturally Desirable. Communities may prefer unsafe, unhealthy, or legally problematic designs. Professionals retain responsibility to ensure standards are met, but this must be negotiated transparently, not imposed.", "Underestimating Time and Resource Requirements. Genuine participation demands extensive facilitation, multiple revision cycles, consensus-building processes. Projects often treat participation as additive without reallocating time/budget.", "Treating Participation as Optional Rather Than Foundational. If participation is afterthought (added late in design), it cannot meaningfully influence form. Genuine participation integrates community perspective from project inception.", "Ignoring Broader Systemic Issues. Architecture cannot solve poverty or systemic racism; social architecture that addresses housing without addressing employment, education, healthcare, and legal systems risks becoming neo-colonial improvement."]} />
 
 ## Key Terms
 

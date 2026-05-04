@@ -1,46 +1,38 @@
 {
   "article_id": "fc6f1ca7-340b-4188-8fc0-036e4e9d4498",
   "slug": "case-study-hospital-mall-school",
-  "generated_at": "2026-05-04T00:06:13.926Z",
-  "old_hash": "sha256:5ef44ba4fb6b64fc686916de455b9c15a0ce8ba768e05ec0d6aad6b256349512",
-  "new_hash": "sha256:50a32594e83f1d52a85b4682b8b722de3bbfa01e031426957f2f5bb6176fe6a4",
-  "original_hash": "sha256:5ef44ba4fb6b64fc686916de455b9c15a0ce8ba768e05ec0d6aad6b256349512",
+  "generated_at": "2026-05-04T02:16:43.461Z",
+  "old_hash": "sha256:abc2479c3c96b420958f2b9ed84ad9d1b874a1566fe3a1a457afc144b294c6af",
+  "new_hash": "sha256:abc2479c3c96b420958f2b9ed84ad9d1b874a1566fe3a1a457afc144b294c6af",
+  "original_hash": "sha256:abc2479c3c96b420958f2b9ed84ad9d1b874a1566fe3a1a457afc144b294c6af",
   "normalized_hash": "sha256:50a32594e83f1d52a85b4682b8b722de3bbfa01e031426957f2f5bb6176fe6a4",
-  "candidate_hash": "sha256:50a32594e83f1d52a85b4682b8b722de3bbfa01e031426957f2f5bb6176fe6a4",
-  "changed": true,
-  "changed_line_count": 198,
+  "candidate_hash": "sha256:abc2479c3c96b420958f2b9ed84ad9d1b874a1566fe3a1a457afc144b294c6af",
+  "changed": false,
+  "changed_line_count": 0,
   "inserted_line_count": 0,
-  "deleted_line_count": 28,
+  "deleted_line_count": 0,
   "ui_blocks_original_count": 4,
-  "ui_blocks_candidate_count": 0,
-  "ui_blocks_changed_count": 4,
+  "ui_blocks_candidate_count": 4,
+  "ui_blocks_changed_count": 0,
   "ui_blocks_count": 4,
-  "unresolved_placeholders_count": 1,
-  "preserved_blocks_count": 0,
+  "unresolved_placeholders_count": 0,
+  "preserved_blocks_count": 4,
   "changed_text_summary": {
-    "changed": 198,
+    "changed": 0,
     "inserted": 0,
-    "deleted": 28,
-    "original_line_count": 221,
-    "candidate_line_count": 193
+    "deleted": 0,
+    "original_line_count": 217,
+    "candidate_line_count": 217
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0037",
-      "ui_0038",
-      "ui_0039",
-      "ui_0040"
-    ],
-    "changed_count": 4
+    "missing_block_ids": [],
+    "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate contains unresolved UI block placeholders.",
-    "Candidate is missing 4 preserved UI block(s)."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 4 preserved UI block(s)."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

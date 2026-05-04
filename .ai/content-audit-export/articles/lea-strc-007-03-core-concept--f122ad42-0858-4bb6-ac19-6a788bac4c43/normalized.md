@@ -10,7 +10,7 @@ By the end of this article, you will be able to:
 Minimum slab and beam thickness are code minimums to control deflection without explicit calculation. The LEA tests your mastery of four support conditions and the distinction between solid slabs, ribbed/joist sections, and beams.
 
 ## Core Concept
-<ArticleMedia id="media-lea-strc-007-03-core-concept" a type="image" caption="Deflection Limits — NSCP Span-to-Depth Ratios" description="Reference diagram showing NSCP minimum thickness (h) for deflection control: (1) Simply supported — L/16; (2) One end continuous — L/18.5; (3) Both ends continuous — L/21; (4) Cantilever — L/8. Comparison of immediate vs long-term deflection (creep + shrinkage). Single-span beam with deflected shape showing Δallowable (L/360 for roofs, L/240 for floors)." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-strc-007-03-core-concept" type="image" caption="Deflection Limits — NSCP Span-to-Depth Ratios" alt="Reference diagram showing NSCP minimum thickness (h) for deflection control: (1) Simply supported — L/16; (2) One end continuous — L/18.5; (3) Both ends continuous — L/21; (4) Cantilever — L/8. Comparison of immediate vs long-term deflection (creep + shrinkage). Single-span beam with deflected shape showing Δallowable (L/360 for roofs, L/240 for floors)." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 Deflection limits are based on span-to-depth ratios ($L/h$). The NSCP provides minimum thickness tables (Table 9.5.1) to avoid computing deflections when members meet these minimums.
 

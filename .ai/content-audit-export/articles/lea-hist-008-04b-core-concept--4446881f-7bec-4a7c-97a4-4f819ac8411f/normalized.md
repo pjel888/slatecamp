@@ -64,6 +64,8 @@ The International Style dominated institutional and corporate architecture from 
 - **Béton brut**: Raw concrete left exposed after formwork removal; used differently in Brutalism but pioneered in modernism.
 - **Functionalism**: The doctrine that design should serve practical purpose above aesthetic tradition.
 
+<ArticleMedia id="media-hist-008-04b-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparison of International Style characteristics — glass curtain walls, structural frame expression, flat roofs, asymmetrical composition — across the Seagram Building (Mies), United Nations HQ, and Lever House." caption="International Style — Key Characteristics" suggestedAsset="Style comparison illustration" placementIntent="Style comparison for architectural period" />
+
 ## Related Articles
 
 See also within Modern & Contemporary Architecture: **lea-hist-008-01-core-concept**, **lea-hist-008-02-core-concept**, **lea-hist-008-03a-core-concept**, **lea-hist-008-03b-core-concept**.

@@ -1,33 +1,32 @@
 # Content Diff Report: lea-theo-003-07-core-concept
 
-Generated: 2026-05-04T00:05:59.766Z
+Generated: 2026-05-04T02:16:30.263Z
 Article ID: 6ce1c942-85fc-4baf-bb51-df61c8bce885
-Changed: true
-Safe to push locally: false
+Changed: false
+Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:3b8a6ba5371a2bd18c6f4f9512b9415d3116e5caa43b84acf177e833231a697f`
-- Normalized: `sha256:46828deb30fbcc04fc1ce0586956f782b04e6226bafb7edfda8fa8ed2326a80b`
-- Candidate: `sha256:46828deb30fbcc04fc1ce0586956f782b04e6226bafb7edfda8fa8ed2326a80b`
+- Original: `sha256:3a5699b99ee750fe5c8dc7525d0dac45804a960fb99ba0496fa0b9c04359c8d2`
+- Normalized: `sha256:61c83f580cd35187b828d111a42445eadfc0f81334a82628a8a819aecb563593`
+- Candidate: `sha256:3a5699b99ee750fe5c8dc7525d0dac45804a960fb99ba0496fa0b9c04359c8d2`
 
 ## Line summary
 
-- Changed lines: 116
+- Changed lines: 0
 - Inserted lines: 0
-- Deleted lines: 2
+- Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 13
-- UI blocks preserved: 0
-- UI blocks changed/missing: 13
-- Unresolved placeholders: 1
+- UI blocks preserved: 13
+- UI blocks changed/missing: 0
+- Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate contains unresolved UI block placeholders.
-- Candidate is missing 13 preserved UI block(s).
+- None
 
 ## Warnings
 

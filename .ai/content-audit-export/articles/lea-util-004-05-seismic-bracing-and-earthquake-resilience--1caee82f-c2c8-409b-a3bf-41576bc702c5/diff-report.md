@@ -1,33 +1,32 @@
 # Content Diff Report: lea-util-004-05-seismic-bracing-and-earthquake-resilience
 
-Generated: 2026-05-04T00:06:06.585Z
+Generated: 2026-05-04T02:16:36.228Z
 Article ID: 1caee82f-c2c8-409b-a3bf-41576bc702c5
-Changed: true
-Safe to push locally: false
+Changed: false
+Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:435c9c5ada49088109b668976e8a7ffe2a6b8b6e5ff0e5d731a59475c7d4160b`
+- Original: `sha256:f82c347d0917f4d585402b79626c71381ec0a328f8dbd7e1f4f45c874b2c8607`
 - Normalized: `sha256:1380a0ffa6b479b779eb29ace5bd5855d1ec775db75f535be7974de5e0315835`
-- Candidate: `sha256:1380a0ffa6b479b779eb29ace5bd5855d1ec775db75f535be7974de5e0315835`
+- Candidate: `sha256:f82c347d0917f4d585402b79626c71381ec0a328f8dbd7e1f4f45c874b2c8607`
 
 ## Line summary
 
-- Changed lines: 140
+- Changed lines: 0
 - Inserted lines: 0
-- Deleted lines: 1
+- Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 3
-- UI blocks preserved: 0
-- UI blocks changed/missing: 3
-- Unresolved placeholders: 1
+- UI blocks preserved: 3
+- UI blocks changed/missing: 0
+- Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate contains unresolved UI block placeholders.
-- Candidate is missing 3 preserved UI block(s).
+- None
 
 ## Warnings
 

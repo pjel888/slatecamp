@@ -24,11 +24,15 @@ DPE does not include: owner or partner time allocated to firm management, market
 
 To calculate DPE, the architect must track or estimate hours spent by each team member and multiply by their fully-loaded hourly cost. Fully-loaded hourly cost = (annual salary + benefits) ÷ billable hours per year. If an architect earns 600,000 pesos annually plus 80,000 pesos in benefits (total 680,000 pesos) and works 1,800 billable hours per year, the fully-loaded hourly rate is 680,000 ÷ 1,800 = 377.78 pesos per hour.
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
+<ExamTip>
+  **LEA Priority — Fee Computation:** Know the five compensation methods (percentage-of-PCC, MDPE, lump sum, per diem/retainer, reimbursable expenses). Master the sliding scale for Groups 1-3 (5%→4%→3%→2%→1% for successive ₱50M brackets). Remember: DAEDS = all disciplines; DADS ≈ 60% of DAEDS (architecture only). Group 9 renovation = 150% of base group rate.
+</ExamTip>
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
+<LawCallout code="irr" section="Architect's Guidelines / SPP 202" title="Fee Computation — Regulatory Basis">
+Fee computation under the Architect's Guidelines follows SPP 202 classification groups and the DAEDS/DADS framework. The percentage-of-PCC method applies group-specific rates to Project Construction Cost. MDPE uses direct personnel expense multiplied by an agreed factor. Lump-sum fees are negotiated based on scope. All methods must be documented in the owner-architect agreement.
+</LawCallout>
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="KeyValues" status="preserved"]
+<KeyValues items=[{"value": "5-12%", "label": "DAEDS Fee Range"}, {"value": "50M", "label": "PCC Bracket Threshold"}, {"value": "10 Groups", "label": "Project Classification"}, {"value": "150%", "label": "Renovation Multiplier"}] />
 Project personnel assignment determines DPE. If the senior architect allocates 200 hours to the project at 1,500 pesos per hour, the cost is 300,000 pesos. If the design architect allocates 400 hours at 900 pesos per hour, the cost is 360,000 pesos. If junior staff allocates 800 hours at 450 pesos per hour, the cost is 360,000 pesos. Total DPE = 1,020,000 pesos. This amount becomes the base for the multiplier calculation.
 
 ### The MDPE Multiplier Logic
@@ -61,7 +65,7 @@ When using MDPE compensation on a time-and-materials basis, the architect must t
 
 
 
-<ArticleMedia type="image" caption="MDPE Fee Formula — Components and Calculation Workflow" description="Visual breakdown of the MDPE formula: Direct Personnel Expense (DPE) × Multiplier = Fee. Left panel shows DPE components (salaries, benefits, billable hours) with example calculation. Right panel shows multiplier decomposition into overhead (1.5-2.0), profit (0.3-0.7), and risk factors (0.2-0.5). Center shows step-by-step fee computation from personnel hours to final fee." />
+<ArticleMedia type="image" caption="MDPE Fee Formula — Components and Calculation Workflow" alt="Visual breakdown of the MDPE formula: Direct Personnel Expense (DPE) × Multiplier = Fee. Left panel shows DPE components (salaries, benefits, billable hours) with example calculation. Right panel shows multiplier decomposition into overhead (1.5-2.0), profit (0.3-0.7), and risk factors (0.2-0.5). Center shows step-by-step fee computation from personnel hours to final fee." />
 ## Related Articles
 
 - [Project Classification Groups](lea-prac-cmp-001)

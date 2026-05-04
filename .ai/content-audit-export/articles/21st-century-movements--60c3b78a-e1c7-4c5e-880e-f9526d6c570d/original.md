@@ -114,3 +114,5 @@ D. A movement that fragments building volumes to challenge user perception
 
 **Post Modernism**, **The Bauhaus And International Style**, **Brutalism**, **Masters Of The Golden Age**
 
+
+<!-- no-media-needed: existing content format is sufficient without visual media -->

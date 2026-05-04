@@ -1,53 +1,38 @@
 {
   "article_id": "3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046",
   "slug": "site-planning-accessible-routes-vs-open-space",
-  "generated_at": "2026-05-04T00:06:02.268Z",
-  "old_hash": "sha256:1d0457b28da1505042b11a8d93f220d75de52a8a9ede8d157f0c26576112964f",
-  "new_hash": "sha256:25d94a61cb11ea4316d8334f48e7554b9c4e58c7dc51da6936f66e0ade83beae",
-  "original_hash": "sha256:1d0457b28da1505042b11a8d93f220d75de52a8a9ede8d157f0c26576112964f",
+  "generated_at": "2026-05-04T02:16:32.569Z",
+  "old_hash": "sha256:c70970aaa020b46fde868efebd845bd309d9e5b66231f8912ccb8e089f7f4f87",
+  "new_hash": "sha256:5d85b469cf3e2535bf8ed5c12e734cd7e4b815c07543ee8ec71bd1d4e3bec0df",
+  "original_hash": "sha256:c70970aaa020b46fde868efebd845bd309d9e5b66231f8912ccb8e089f7f4f87",
   "normalized_hash": "sha256:25d94a61cb11ea4316d8334f48e7554b9c4e58c7dc51da6936f66e0ade83beae",
-  "candidate_hash": "sha256:25d94a61cb11ea4316d8334f48e7554b9c4e58c7dc51da6936f66e0ade83beae",
+  "candidate_hash": "sha256:5d85b469cf3e2535bf8ed5c12e734cd7e4b815c07543ee8ec71bd1d4e3bec0df",
   "changed": true,
-  "changed_line_count": 361,
-  "inserted_line_count": 0,
-  "deleted_line_count": 11,
+  "changed_line_count": 15,
+  "inserted_line_count": 8,
+  "deleted_line_count": 0,
   "ui_blocks_original_count": 10,
-  "ui_blocks_candidate_count": 0,
-  "ui_blocks_changed_count": 10,
+  "ui_blocks_candidate_count": 10,
+  "ui_blocks_changed_count": 0,
   "ui_blocks_count": 10,
-  "unresolved_placeholders_count": 1,
-  "preserved_blocks_count": 0,
+  "unresolved_placeholders_count": 0,
+  "preserved_blocks_count": 10,
   "changed_text_summary": {
-    "changed": 361,
-    "inserted": 0,
-    "deleted": 11,
-    "original_line_count": 416,
-    "candidate_line_count": 405
+    "changed": 15,
+    "inserted": 8,
+    "deleted": 0,
+    "original_line_count": 449,
+    "candidate_line_count": 457
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0001",
-      "ui_0002",
-      "ui_0003",
-      "ui_0004",
-      "ui_0005",
-      "ui_0006",
-      "ui_0007",
-      "ui_0008",
-      "ui_0009",
-      "ui_0010"
-    ],
-    "changed_count": 10
+    "missing_block_ids": [],
+    "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate contains unresolved UI block placeholders.",
-    "Candidate is missing 10 preserved UI block(s).",
-    "original.md hash does not match article metadata export hash."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 10 preserved UI block(s).; original.md hash does not match article metadata export hash."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

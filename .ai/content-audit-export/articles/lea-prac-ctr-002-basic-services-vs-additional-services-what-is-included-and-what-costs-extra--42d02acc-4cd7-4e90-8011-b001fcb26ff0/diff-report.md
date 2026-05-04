@@ -1,33 +1,32 @@
 # Content Diff Report: lea-prac-ctr-002-basic-services-vs-additional-services-what-is-included-and-what-costs-extra
 
-Generated: 2026-05-04T00:07:12.650Z
+Generated: 2026-05-04T02:18:04.415Z
 Article ID: 42d02acc-4cd7-4e90-8011-b001fcb26ff0
-Changed: true
-Safe to push locally: false
+Changed: false
+Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:b5b08a7a864d8ee31488f945e0e11e7bcb5aedd5a1754cc333f1d1fce9874aea`
+- Original: `sha256:30b6b0d3ed1fc2bd85ff8040a7de671f869b8e74a1438a5e71210235f341e5bb`
 - Normalized: `sha256:5af2184c0841a8c5c155f0ee644a3b61ad865982aede521473e25c6507a536bd`
-- Candidate: `sha256:5af2184c0841a8c5c155f0ee644a3b61ad865982aede521473e25c6507a536bd`
+- Candidate: `sha256:30b6b0d3ed1fc2bd85ff8040a7de671f869b8e74a1438a5e71210235f341e5bb`
 
 ## Line summary
 
-- Changed lines: 52
+- Changed lines: 0
 - Inserted lines: 0
-- Deleted lines: 5
+- Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 3
-- UI blocks preserved: 0
-- UI blocks changed/missing: 3
-- Unresolved placeholders: 1
+- UI blocks preserved: 3
+- UI blocks changed/missing: 0
+- Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate contains unresolved UI block placeholders.
-- Candidate is missing 3 preserved UI block(s).
+- None
 
 ## Warnings
 

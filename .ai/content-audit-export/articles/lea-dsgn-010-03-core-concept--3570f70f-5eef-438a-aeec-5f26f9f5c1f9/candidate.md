@@ -48,7 +48,7 @@ The overarching goal is operational efficiency (smooth traffic flow, minimal que
 **Emergency Exit:** Parking structure has two egress routes (via separate ramp stairwell, fire code requirement—LEA-DSGN-011 territory).
 
 **Pedestrian-Vehicle Separation:** Retail entry on avenue frontage (pedestrian realm); all vehicle movement behind building; retail loading does not cross customer entry.
-<ArticleMedia id="media-lea-dsgn-010-03-core-concept" a type="image" caption="Site Access and Driveway Design — Pedestrian-Vehicle Conflict Zones" description="Site plan diagram showing driveway positioning (setback from intersection), minimum driveway width (3.0m one-way, 6.0m two-way), emergency vehicle access (3.5m min), pedestrian conflict zones marked with crosswalks, and sight distance triangles per NBC standards." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-010-03-core-concept" type="image" caption="Site Access and Driveway Design — Pedestrian-Vehicle Conflict Zones" alt="Site plan diagram showing driveway positioning (setback from intersection), minimum driveway width (3.0m one-way, 6.0m two-way), emergency vehicle access (3.5m min), pedestrian conflict zones marked with crosswalks, and sight distance triangles per NBC standards." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
@@ -125,10 +125,12 @@ Question asks: "A 10,000 m² office building requires ___ loading zone(s), each 
 **Pattern 5: Emergency Route Clarity**
 Scenario describes parking lot with angled stalls throughout. Question: "Where is the emergency egress route?" Tests understanding that fire codes require dedicated 3.7m clear paths, no parking encroachment. Answer: Two independent routes from parking structure to public street/emergency assembly area.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+<Tip>
+**Memory aid:** One access per 100–150m (city dependent), 1:10 driveway slope, 3.5×6.0m loading zone, separate pedestrian path from vehicle circulation.
+</Tip>
 
 **Exam Tip:** Driveway width minimum = 6.0m for two-way, 3.5m for one-way. Curb cut radius minimum = 3.0m. Distance from intersection corner = 15m minimum. Fire truck access required to all buildings.
-<ArticleMedia id="media-lea-dsgn-010-03-core-concept" a type="image" caption="Site Access Diagram — Driveway Placement and Pedestrian-Vehicle Conflict Zones" description="Site plan showing driveway placement relative to street corners (min. 10m setback), pedestrian crossing paths, emergency vehicle access route, fire truck turning radius overlay, and loading/unloading zones. Minimum driveway width (3.0m one-way, 6.0m two-way) and sight distance triangle annotated." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-010-03-core-concept" type="image" caption="Site Access Diagram — Driveway Placement and Pedestrian-Vehicle Conflict Zones" alt="Site plan showing driveway placement relative to street corners (min. 10m setback), pedestrian crossing paths, emergency vehicle access route, fire truck turning radius overlay, and loading/unloading zones. Minimum driveway width (3.0m one-way, 6.0m two-way) and sight distance triangle annotated." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Cross-References
 
@@ -136,4 +138,4 @@ See **LEA-DSGN-010-01** (Parking Requirements) for space count input, **LEA-DSGN
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeList" status="preserved"]
+<WikiMistakeList mistakes={["Confusing driveway gradient (1:10 comfortable) with vehicle ramp gradient (1:6 standard)—different slopes for different purposes","Assuming multiple access points increase safety—actually increases pedestrian conflicts; single consolidated access is urban best practice","Forgetting loading zone entirely—must calculate based on GFA or unit count","Positioning loading zone on-street without confirming LGU permission—many cities prohibit or require special permits","Failing to provide pedestrian escape from parking circulation area—pedestrians must have clear route to public street independent of vehicle path","Underestimating queue depth—2–3 cars minimum before lot entrance prevents spillback into street"]} />

@@ -1,28 +1,19 @@
 {
-  "attempted_at": "2026-05-04T00:07:11.866Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:07:16.345Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "original.md hash does not match article metadata export hash.",
-    "Remote Supabase content differs from export baseline; refusing stale push.",
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "Remote Supabase content differs from export baseline; refusing stale push."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "debf8513-f91a-4e0a-9f32-8fe4f677ed71",
   "slug": "lea-prac-svc-009-specialized-allied-architectural-services-scope-and-compensation",
-  "preparation_actions": [
-    "auto_generated_diff"
-  ],
-  "remote_hash_before": "sha256:652a36b1b7e34c87b64b4a6932ded9a241215d3ce4388ddb0e16b76451869349",
-  "original_hash": "sha256:54450b7b0d948dcb3186c8e75afa295b5a3f0f102937d8830e8aba7d7b425110",
-  "candidate_hash": "sha256:d819a9e41f41e919107607605d05c644fd94540fb09c2be9e34910b4f40024d8",
+  "preparation_actions": [],
+  "remote_hash_before": "sha256:ec2ebc1608f80c3ae45d3a35e2ec6164b52828925ae822cfe89546ea2dd42b32",
+  "original_hash": "sha256:d819a9e41f41e919107607605d05c644fd94540fb09c2be9e34910b4f40024d8",
+  "candidate_hash": "sha256:ec2ebc1608f80c3ae45d3a35e2ec6164b52828925ae822cfe89546ea2dd42b32",
   "stale_check_passed": false,
-  "remote_updated_at_before": "2026-05-03T13:52:39.081436+00:00"
+  "remote_updated_at_before": "2026-05-04T02:02:11.821048+00:00"
 }

@@ -1,21 +1,19 @@
 {
-  "attempted_at": "2026-05-03T15:29:06.752Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:06:03.420Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
     "Remote Supabase content differs from export baseline; refusing stale push."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "2862e34d-02fd-4f95-a2a2-5119a355bdf8",
   "slug": "colonial-european-influence",
   "preparation_actions": [],
-  "remote_hash_before": "sha256:617d2254f0d8afccec0edfc4b42160e33285cd9225468271ceb39de1bd1bbf7f",
-  "original_hash": "sha256:0d36ba6bee752a08748efc85208b51eb90def8fdd68a99601cfc4ea9a73a741c",
-  "candidate_hash": "sha256:bf3d3e61e62a94667c987d742a7462d1a6d4ea4255446f429d7d484f8680f5ef",
+  "remote_hash_before": "sha256:bb6de7bde5a9259508768be1e77be528c66e1dbe81191ff09861d373713616ff",
+  "original_hash": "sha256:24032fe0f56065476aea5acf29017862162bf165b56393b6150e8bcc26594934",
+  "candidate_hash": "sha256:bb6de7bde5a9259508768be1e77be528c66e1dbe81191ff09861d373713616ff",
   "stale_check_passed": false,
-  "remote_updated_at_before": "2026-05-03T13:50:07.6105+00:00"
+  "remote_updated_at_before": "2026-05-04T01:59:30.108811+00:00"
 }

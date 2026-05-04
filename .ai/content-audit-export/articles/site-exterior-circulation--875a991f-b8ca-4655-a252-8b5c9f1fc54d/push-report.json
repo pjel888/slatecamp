@@ -1,26 +1,21 @@
 {
-  "attempted_at": "2026-05-04T00:06:59.669Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:17:47.087Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "candidate.md matches original.md; refusing no-op apply."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "875a991f-b8ca-4655-a252-8b5c9f1fc54d",
   "slug": "site-exterior-circulation",
   "preparation_actions": [
     "auto_generated_diff"
   ],
-  "remote_hash_before": "sha256:dfaa4b5e285fe93d1c2e09e7c3fce1fbf55eb526391acfa5cb1bd1cb6989dd4f",
-  "original_hash": "sha256:dfaa4b5e285fe93d1c2e09e7c3fce1fbf55eb526391acfa5cb1bd1cb6989dd4f",
-  "candidate_hash": "sha256:ad7cd1c06313dfc88104d3f68a15ea19a75df915061b3a768ff87a4dd344d36e",
+  "remote_hash_before": "sha256:767cab15bb9e72a419dd4083b534d44c60474232e262ebd2461b159f56eebd6f",
+  "original_hash": "sha256:767cab15bb9e72a419dd4083b534d44c60474232e262ebd2461b159f56eebd6f",
+  "candidate_hash": "sha256:767cab15bb9e72a419dd4083b534d44c60474232e262ebd2461b159f56eebd6f",
   "stale_check_passed": true,
-  "remote_updated_at_before": "2026-05-03T13:52:16.451153+00:00"
+  "remote_updated_at_before": "2026-05-04T02:01:45.310518+00:00"
 }

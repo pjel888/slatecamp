@@ -1,6 +1,6 @@
 # Theory of Architecture — Overview & Study Strategy
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="SubjectSnapshot" status="preserved"]
+<SubjectSnapshot items='[{"label":"PRC Area","value":"Area A"},{"label":"Weight","value":"25% of Area A"},{"label":"PRC Subject Code","value":"LEA-THEO"},{"label":"Subtopics","value":"9 major areas"},{"label":"Key Thinkers","value":"Vitruvius to Ching"}]' />
 Extracted summary:
 - Props: items="[{"label":"PRC Area","value":"Area A"},{"label":"Weight","value":"25% of Area A"},{"label":"PRC Subject Code","value":"LEA-THEO"},{"label":"Subtopics","value":"9 major areas"},{"label":"Key Thinkers","value":"Vitruvius to Ching"}]"
 - Text: (none detected)
@@ -8,7 +8,7 @@ Extracted summary:
 ## Learning Goal
 
 Master the theoretical framework tested in the LEA for Theory of Architecture, including: nature of architecture (Vitruvius triad), elements and principles of design (Ching), philosophies and theories of the masters (Le Corbusier, Wright, Kahn, Venturi), movements and contemporary discourse, design perception (anthropometrics, proxemics, kinesthetics), space planning theory, tropical architecture, Filipino architect's identity, and the Pritzker Prize. By the end of this study map, you should be able to apply theoretical principles to design scenarios.
-<ArticleMedia id="media-overview-theory-of-architecture" a type="image" caption="Theory of Architecture — Study Sequence Flowchart" description="Three-pass study progression diagram: Pass 1 — Principles First (Weeks 1-2): Vitruvius triad (firmitas, utilitas, venustas), Ching's elements and principles, visual literacy (proportion, hierarchy, rhythm); Pass 2 — Philosophers & Movements (Weeks 3-4): For each thinker/movement — central argument, what they reacted against, canonical built example — Modernism, Organic, Brutalism, Postmodernism, Critical Regionalism; Pass 3 — Filipino Identity & Integration (Weeks 5-6): Global theories applied to tropical Philippine context, Locsin, Mañosa, Tan, anthropometrics as theory of human dignity. Arrows show theoretical concepts feeding into practical application." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-overview-theory-of-architecture" type="image" caption="Theory of Architecture — Study Sequence Flowchart" alt="Three-pass study progression diagram: Pass 1 — Principles First (Weeks 1-2): Vitruvius triad (firmitas, utilitas, venustas), Ching's elements and principles, visual literacy (proportion, hierarchy, rhythm); Pass 2 — Philosophers & Movements (Weeks 3-4): For each thinker/movement — central argument, what they reacted against, canonical built example — Modernism, Organic, Brutalism, Postmodernism, Critical Regionalism; Pass 3 — Filipino Identity & Integration (Weeks 5-6): Global theories applied to tropical Philippine context, Locsin, Mañosa, Tan, anthropometrics as theory of human dignity. Arrows show theoretical concepts feeding into practical application." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Subject Coverage
 
@@ -24,7 +24,7 @@ Nine subtopics tracing a logical arc from philosophical to practical:
 - **Innovation and Filipino Architect's Identity** — Critical Regionalism applied locally, contemporary Filipino masters
 - **The Pritzker Architecture Prize** — laureates, home countries, signature works
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+<Tip>Make a two-column sheet: left column is the design principle (rhythm, balance, emphasis, etc.), right column is a real building or space where you can clearly see it. Retrieving examples forces deeper processing than re-reading definitions.</Tip>
 Extracted summary:
 - Props: (none)
 - Text: Make a two-column sheet: left column is the design principle (rhythm, balance, emphasis, etc.), right column is a real building or space where you can clearly see it. Retrieving examples forces deeper processing than re-reading definitions.
@@ -39,7 +39,7 @@ Start with Ching's *Architecture: Form, Space, and Order*. Build visual literacy
 
 For each major thinker/movement, answer: (1) What was the central argument? (2) What were they reacting against? (3) What is a canonical built example?
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiExamTable" status="preserved"]
+<WikiExamTable headers={["Movement","Core Argument","Canonical Example"]} rows={[["Modernism","Form follows function; ornament is waste","Villa Savoye — Le Corbusier"],["Organic Architecture","Buildings should grow from their site and purpose","Fallingwater — Frank Lloyd Wright"],["Brutalism","Honest expression of materials and structure","Barbican Centre — Chamberlin Powell & Bon"],["Postmodernism","Architecture communicates; meaning matters","Piazza d'Italia — Charles Moore"],["Critical Regionalism","Global modernity + local culture and climate","Salk Institute (Kahn) as transitional reference; Legorreta for regional"]]} />
 Extracted summary:
 - Props: headers="{["Movement","Core Argument","Canonical Example"]}", rows="{[["Modernism","Form follows function; ornament is waste","Villa Savoye — Le Corbusier"],["Organic Architecture","Buildings should grow from their site and purpose","Fallingwater — Frank Lloyd Wright"],["Brutalism","Honest expression of materials and structure","Barbican Centre — Chamberlin Powell & Bon"],["Postmodernism","Architecture communicates; meaning matters","Piazza d'Italia — Charles Moore"],["Critical Regionalism","Global modernity + local culture and climate","Salk Institute (Kahn) as transitional reference; Legorreta for regional"]]}"
 - Text: (none detected)
@@ -55,7 +55,7 @@ Tie global theories to tropical, archipelagic, culturally layered Philippine con
 - **Over-investing in Pritzker list at expense of principles.** Laureate questions are a small fraction of the Theory section.
 - **Underestimating proxemics and anthropometrics.** Know the four proxemic zones and approximate distances. Know standard human dimensions.
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="Warn" status="preserved"]
+<Warn>Do not spend disproportionate time on the Pritzker list at the expense of principles. The laureate questions are worth only a small fraction of the Theory section. Know the list, but do not let it crowd out Ching and the philosophical foundations.</Warn>
 Extracted summary:
 - Props: (none)
 - Text: Do not spend disproportionate time on the Pritzker list at the expense of principles. The laureate questions are worth only a small fraction of the Theory section. Know the list, but do not let it crowd out Ching and the philosophical foundations.

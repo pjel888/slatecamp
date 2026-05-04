@@ -8,6 +8,13 @@ Non-ferrous metals are metallic elements or alloys that contain little or no iro
 
 Aluminum alloys are designated by a four-digit system (XXXX) established by the Aluminum Association. The first digit identifies the alloy group, and the three subsequent digits distinguish individual alloys within that group.
 
+
+<ArticleMedia id="media-steel-section-cross-sections" layout="single" type="image" status="placeholder"
+  alt="Cross-section profiles of standard structural steel sections: W-shape, channel (C), angle (L), HSS rectangular, HSS round, and plate with dimension callouts"
+  caption="Future diagram: structural steel section profiles — W-shape, channel, angle, HSS, and plate"
+  suggestedAsset="Cross-section drawing set with standard designations and nominal dimensions"
+  placementIntent="Helps learners recognize steel section types by cross-section geometry" />
+
 ### Aluminum Alloy Series (1xxx–7xxx)
 
 _1xxx Series (Commercially Pure)_ — 99.0% purity aluminum. Used for electrical applications and decorative elements. Limited structural use.
@@ -80,6 +87,12 @@ When two dissimilar metals contact in the presence of an electrolyte (water cont
 
 In Philippine coastal projects, aluminum window frames in contact with stainless steel fasteners or copper gutters risk accelerated corrosion at the interface. Prevention requires isolation using EPDM gaskets, nylon washers, or non-conductive spacers. Sealants like polyurethane or silicone prevent water entrapment at joints.
 
+
+<ArticleMedia id="media-galvanic-series-chart" layout="single" type="image" status="placeholder"
+  alt="Galvanic series chart ranking metals from anodic to cathodic with examples of compatible and incompatible metal pairs for construction"
+  caption="Future chart: galvanic series — metal compatibility for architectural assemblies"
+  suggestedAsset="Galvanic series infographic or compatibility table"
+  placementIntent="Helps learners prevent galvanic corrosion when specifying dissimilar metals" />
 ## How It's Tested
 
 The LEA evaluates non-ferrous metals knowledge through:

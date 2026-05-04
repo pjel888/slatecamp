@@ -781,6 +781,12 @@
     font-family: 'Atkinson Hyperlegible', var(--font-sans, sans-serif) !important;
     font-variant-numeric: tabular-nums;
   }
+
+  /* Navigation pending state — cursor changes globally during route navigation */
+  .cursor-progress,
+  .cursor-progress * {
+    cursor: progress !important;
+  }
 }
 
 /* Global tabular-nums safety net */

@@ -9,8 +9,6 @@ After studying this article, you should be able to:
 - Describe the addenda process: who issues, timeline, and effect.
 - Identify the architect's role in preparing and interpreting bid documents.
 
-
-
 ### Components of Bid Documents
 
 Bid documents comprise the complete package of information provided to prospective bidders and include: Advertisement or Invitation to Bid; Instructions to Bidders; the proposed Agreement (blank); General Conditions of Contract (UAP Document 301); Special Provisions or Conditions; Drawings; Specifications; and schedules or other supplemental information.
@@ -81,3 +79,5 @@ If the Architect discovers errors, ambiguities, or additional information after 
 - [Change Orders](lea-prac-ctr-016)
 - [Dispute Resolution](lea-prac-ctr-020)
 - [Fee Compensation Methods](lea-prac-cmp-001)
+
+<!-- no-media-needed: professional practice article, text/tables/UI blocks are optimal format -->

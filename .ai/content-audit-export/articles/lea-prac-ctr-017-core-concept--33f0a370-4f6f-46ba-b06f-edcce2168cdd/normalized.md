@@ -66,7 +66,7 @@ Final Completion occurs after all punch list items are done. The contractor's ob
 
 
 
-<ArticleMedia type="image" caption="Project Completion Timeline — Substantial vs. Final Completion Milestones" description="Timeline diagram showing the construction close-out sequence: Contract Completion Date → Architect's Inspection → Substantial Completion (owner can occupy, liquidated damages stop, punch list created) → Punch List Correction Period → Final Inspection → Final Completion (Certificate issued, Guarantee Bond period begins). Annotated with architect's certification responsibilities at each milestone." />
+<ArticleMedia type="image" caption="Project Completion Timeline — Substantial vs. Final Completion Milestones" alt="Timeline diagram showing the construction close-out sequence: Contract Completion Date → Architect's Inspection → Substantial Completion (owner can occupy, liquidated damages stop, punch list created) → Punch List Correction Period → Final Inspection → Final Completion (Certificate issued, Guarantee Bond period begins). Annotated with architect's certification responsibilities at each milestone." />
 ## Related Articles
 
 - [Standard Owner-Architect Agreement](lea-prac-ctr-001)

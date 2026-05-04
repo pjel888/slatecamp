@@ -1,33 +1,32 @@
 # Content Diff Report: modern-filipino-identity
 
-Generated: 2026-05-04T00:07:02.590Z
+Generated: 2026-05-04T02:17:50.994Z
 Article ID: 162054b5-5f86-4a99-ab8b-f7991bbab899
-Changed: true
-Safe to push locally: false
+Changed: false
+Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:ef895afb3270df63e056503ec98f8d3655a91d1b185030b5dcc0552870d7a0ee`
+- Original: `sha256:9ad1de6885dc5a2e937eb2631ec05ea20e8e7b5050067fd2347d02f2b7d3babc`
 - Normalized: `sha256:5e9fb2ff71fd11a9441619b19c17f442d86b7d6aff96ad5b988c1b8e2f25e8f7`
-- Candidate: `sha256:5e9fb2ff71fd11a9441619b19c17f442d86b7d6aff96ad5b988c1b8e2f25e8f7`
+- Candidate: `sha256:9ad1de6885dc5a2e937eb2631ec05ea20e8e7b5050067fd2347d02f2b7d3babc`
 
 ## Line summary
 
-- Changed lines: 156
+- Changed lines: 0
 - Inserted lines: 0
-- Deleted lines: 26
+- Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 5
-- UI blocks preserved: 0
-- UI blocks changed/missing: 5
-- Unresolved placeholders: 1
+- UI blocks preserved: 5
+- UI blocks changed/missing: 0
+- Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate contains unresolved UI block placeholders.
-- Candidate is missing 5 preserved UI block(s).
+- None
 
 ## Warnings
 

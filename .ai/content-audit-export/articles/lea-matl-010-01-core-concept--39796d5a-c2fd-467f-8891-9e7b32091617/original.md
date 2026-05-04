@@ -10,6 +10,13 @@ The ACI 211.1 procedure starts with your concrete strength requirement (f'c in M
 
 In the Philippines, concrete design typically targets f'c = 20 MPa (A4-type), 24 MPa (A3-type), or 27.5 MPa (A2-type) for buildings per NSCP 2015. Standard cement bags are 40 kg. The unit weight of concrete (after curing) is typically 2,400 kg/m³ for normal-weight concrete.
 
+
+<ArticleMedia id="media-concrete-volume-diagram" layout="single" type="image" status="placeholder"
+  alt="Diagram showing concrete volume calculation: length × width × height on a building element with mix proportion conversion example"
+  caption="Future diagram: concrete volume calculation and mix proportion conversion"
+  suggestedAsset="Illustration of volume measurement with mix proportion workflow"
+  placementIntent="Visualizes the concrete quantity estimation process" />
+
 ## Key Provisions
 
 | Parameter | Value / Standard | LEA Relevance |
@@ -82,6 +89,12 @@ Fine aggregate: 640 kg/m³ × 2 m³ = 1,280 kg
 **Answer: 18 bags cement, 360 L water, 1.6 tons gravel, 1.28 tons sand**
 </Example>
 
+
+<ArticleMedia id="media-concrete-estimation-example" layout="single" type="image" status="placeholder"
+  alt="Step-by-step worked example of concrete volume calculation and mix proportioning for a slab, beam, and column with formulas and results"
+  caption="Future diagram: concrete estimation worked example — slab, beam, and column calculation"
+  suggestedAsset="Step-by-step illustrated calculation example"
+  placementIntent="Provides practical example of concrete quantity estimation" />
 ## Quick Reference: Concrete Mix Computation Table
 
 | f'c (MPa) | W/C | Cement (kg/m³) | Water (L/m³) | Coarse Agg (kg/m³) | Fine Agg (kg/m³) | Bags per m³ |

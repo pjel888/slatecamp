@@ -1,34 +1,32 @@
 # Content Diff Report: change-of-use-and-occupancy
 
-Generated: 2026-05-04T00:07:19.730Z
+Generated: 2026-05-04T02:25:33.122Z
 Article ID: 9e053410-cea0-400b-b185-576cbb4a8bd0
 Changed: true
-Safe to push locally: false
+Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:23f8b3d825e0e9171a4b52b15eb65581d2496c253c46c20c1bd3193bd0921131`
-- Normalized: `sha256:ae63129ac0f324fc148f135ccb28a0276c2008ed7a06b45c2748e058751b58ab`
-- Candidate: `sha256:ae63129ac0f324fc148f135ccb28a0276c2008ed7a06b45c2748e058751b58ab`
+- Original: `sha256:d9d3bd6412be91f6c4135a91a6f8f12047e359b82815cf8d6b3f98699c4ea254`
+- Normalized: `sha256:167f0f31233d6bccdbc8c7ad98dea1e6cb66999793232c23d69569b31e374104`
+- Candidate: `sha256:09f0da3e93a5352bf5336906426d1801f3a986f6a636c0150a1d5e47f476bde0`
 
 ## Line summary
 
-- Changed lines: 247
-- Inserted lines: 0
-- Deleted lines: 17
+- Changed lines: 217
+- Inserted lines: 6
+- Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 8
-- UI blocks preserved: 0
-- UI blocks changed/missing: 8
-- Unresolved placeholders: 1
+- UI blocks preserved: 8
+- UI blocks changed/missing: 0
+- Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate contains unresolved UI block placeholders.
-- Candidate is missing 8 preserved UI block(s).
-- original.md hash does not match article metadata export hash.
+- None
 
 ## Warnings
 

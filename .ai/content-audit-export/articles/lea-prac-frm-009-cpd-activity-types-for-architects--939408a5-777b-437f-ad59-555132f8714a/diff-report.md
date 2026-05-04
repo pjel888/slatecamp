@@ -1,33 +1,32 @@
 # Content Diff Report: lea-prac-frm-009-cpd-activity-types-for-architects
 
-Generated: 2026-05-04T00:06:23.775Z
+Generated: 2026-05-04T02:16:58.768Z
 Article ID: 939408a5-777b-437f-ad59-555132f8714a
-Changed: true
-Safe to push locally: false
+Changed: false
+Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:b9321cec9b600bf8d30a6df74602878adb0461e61aa205f16b4855ccb53f5ccd`
-- Normalized: `sha256:0ec43c045140a944b0f2db56ac8296f3cddfe2c697a35b8117e3c2bc8f6afe6a`
-- Candidate: `sha256:0ec43c045140a944b0f2db56ac8296f3cddfe2c697a35b8117e3c2bc8f6afe6a`
+- Original: `sha256:51c4a10c0b53a19ffcb8fb39cb5e12254f6efae256c6b123d879c03a527ad36e`
+- Normalized: `sha256:7dc855b3a20d3454c9faccc4e195a33d24d9e0062aaca63281e9d1d0d302834f`
+- Candidate: `sha256:51c4a10c0b53a19ffcb8fb39cb5e12254f6efae256c6b123d879c03a527ad36e`
 
 ## Line summary
 
-- Changed lines: 31
+- Changed lines: 0
 - Inserted lines: 0
 - Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 2
-- UI blocks preserved: 0
-- UI blocks changed/missing: 2
-- Unresolved placeholders: 1
+- UI blocks preserved: 2
+- UI blocks changed/missing: 0
+- Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate contains unresolved UI block placeholders.
-- Candidate is missing 2 preserved UI block(s).
+- None
 
 ## Warnings
 

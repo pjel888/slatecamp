@@ -4,7 +4,7 @@ After reading this article, you should understand the key concepts tested in the
 
 Understanding the distinctions among supervision, construction management, and design administration clarifies professional roles and contractual obligations. SPP 204 addresses full-time supervision, SPP 205 covers construction management, and SPP 202 establishes regular design services standards. Each service category addresses specific project phases and professional responsibilities with distinct compensation methods and liability frameworks. Architects must clearly communicate these distinctions to clients to establish appropriate engagement arrangements.
 
-<ArticleMedia id="media-lea-prac-svc-015-full-time-supervision-v" a type="image" caption="Supervision vs. Construction Management vs. SPP 202 Administration — Role Comparison" description="Comparison matrix showing three service models: Full-Time Supervision (quality control, design verification), Construction Management (schedule, cost, multi-trade coordination), and SPP 202 Design Administration (comprehensive, concept through occupancy). Highlights functional differences, authority scope, compensation methods, and liability frameworks." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-prac-svc-015-full-time-supervision-v" type="image" caption="Supervision vs. Construction Management vs. SPP 202 Administration — Role Comparison" alt="Comparison matrix showing three service models: Full-Time Supervision (quality control, design verification), Construction Management (schedule, cost, multi-trade coordination), and SPP 202 Design Administration (comprehensive, concept through occupancy). Highlights functional differences, authority scope, compensation methods, and liability frameworks." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ### Full-Time Supervision: Design Intent Verification
 
@@ -30,13 +30,22 @@ Full-time supervision typically employs percentage of construction cost or fixed
 
 Supervisors bear professional responsibility for identifying non-conformance and recommending correction. Construction managers assume coordination accuracy and cost control responsibilities within their authority scope. Design administrators maintain continuous professional involvement throughout project delivery. Article 1723 of the Civil Code imposes liability on the contractor and the architect/engineer who directed the structural work if it fails due to defects in materials or workmanship. Limitation of authority agreements protect professionals when operating within defined scope.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="KeyValues" status="preserved"]
+<KeyValues items={[{"value": "15%", "label": "Schematic Design"}, {"value": "20%", "label": "Design Development"}, {"value": "50%", "label": "Contract Docs"}, {"value": "5%", "label": "Bidding Assist"}, {"value": "10%", "label": "Constr. Admin."}]} />
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="ProcessFlow" status="preserved"]
+<ProcessFlow>
+<ol>
+  <li><strong>Project Definition</strong> — Problem identification</li>
+  <li><strong>Schematic Design</strong> — 15% fee; conceptual design</li>
+  <li><strong>Design Development</strong> — 20% fee; detailed design</li>
+  <li><strong>Contract Documents</strong> — 50% fee; construction docs</li>
+  <li><strong>Bidding/Negotiation</strong> — 5% fee; contractor selection</li>
+  <li><strong>Construction Admin.</strong> — 10% fee; site visits</li>
+</ol>
+</ProcessFlow>
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
+<LawCallout code="irr" section="SPP Documents" title="Professional Practice Framework">SPP Documents 201–209 establish standards for architectural services scope, fee structures, and professional responsibilities under RA 9266.</LawCallout>
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
+<ExamTip>Fee distribution: SD=15%, DD=20%, CD=50%, BA=5%, CA=10%. Contract Documents (50%) is the largest phase. Cumulative: 15%→35%→85%→90%→100%.</ExamTip>
 
 ---
 

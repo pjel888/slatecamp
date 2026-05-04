@@ -20,9 +20,9 @@ Distinguish automatic sprinkler systems (wet pipe, dry pipe, pre-action, deluge)
 
 ## Hook Scenario
 
-[SLATECAMP_UI_BLOCK:ArticleMedia name="fire-system-triggers-diagram" type="diagram" caption="Decision tree for when fire-extinguishing systems are required: check floor area ≥ 200 sqm AND occupant load > 20 → sprinkler/standpipe required. Separate branches for workshops (>10 persons), assembly halls (>500 occ + exits >30m), and inflammable storage. Show the 4-storey rule for dry standpipe as a separate trigger."]
+<ArticleMedia id="media-fire-system-triggers-diagram" type="diagram" caption="Decision tree for when fire-extinguishing systems are required: check floor area ≥ 200 sqm AND occupant load > 20 → sprinkler/standpipe required. Separate branches for workshops (>10 persons), assembly halls (>500 occ + exits >30m), and inflammable storage. Show the 4-storey rule for dry standpipe as a separate trigger." />
 
-[SLATECAMP_UI_BLOCK:ArticleMedia name="standpipe-sprinkler-layout" type="diagram" caption="Building cross-section showing dry standpipe (63 mm outlets at each floor, roof 2-way outlet, Siamese at street level 300–1200 mm above grade) vs wet standpipe (38 mm outlets pressurized). Show sprinkler heads and travel distance trade-off: 45 m without sprinklers vs 60 m with sprinklers."]
+<ArticleMedia id="media-standpipe-sprinkler-layout" type="diagram" caption="Building cross-section showing dry standpipe (63 mm outlets at each floor, roof 2-way outlet, Siamese at street level 300–1200 mm above grade) vs wet standpipe (38 mm outlets pressurized). Show sprinkler heads and travel distance trade-off: 45 m without sprinklers vs 60 m with sprinklers." />
 
 Picture yourself walking through the ground floor of a newly completed five-storey commercial building in Taguig during an Ocular Inspection by the Bureau of Fire Protection (BFP). The building official has flagged the structure: the architect submitted plans showing no fire-extinguishing system, citing that individual floor plates are only 180 sq.m each. You are the reviewing architect. You know the BFP inspector is about to open PD 1096 and point directly at Section 1212.
 
@@ -295,7 +295,7 @@ Cross-drill with **Article 21** (penthouses/roof structures) for fire-rating con
 
 
 
-<ArticleMedia type="image" caption="Fire Extinguishing System Types — Wet Pipe, Dry Pipe, Pre-Action, and Deluge Sprinklers" description="Four-panel comparison of automatic sprinkler systems: wet pipe (water always in pipes, fastest response), dry pipe (pressurized air/nitrogen, for freezing areas), pre-action (dual detection, water held back until fire confirmed), deluge (open heads, all discharge simultaneously for high-hazard). Coverage area per head, activation mechanisms, and application per occupancy type. Standpipe Class I/II/III hose connection locations." />
+<ArticleMedia type="image" caption="Fire Extinguishing System Types — Wet Pipe, Dry Pipe, Pre-Action, and Deluge Sprinklers" alt="Four-panel comparison of automatic sprinkler systems: wet pipe (water always in pipes, fastest response), dry pipe (pressurized air/nitrogen, for freezing areas), pre-action (dual detection, water held back until fire confirmed), deluge (open heads, all discharge simultaneously for high-hazard). Coverage area per head, activation mechanisms, and application per occupancy type. Standpipe Class I/II/III hose connection locations." />
 ## Cross‑References
 
 **Fire Resistive Construction Ratings**, **Chimneys And Fireplaces**, **Fire Zones And Existing Buildings**, **Storage Of X Ray Films**

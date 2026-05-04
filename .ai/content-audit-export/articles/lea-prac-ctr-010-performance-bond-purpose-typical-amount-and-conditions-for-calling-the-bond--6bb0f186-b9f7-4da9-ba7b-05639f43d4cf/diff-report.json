@@ -1,47 +1,38 @@
 {
   "article_id": "6bb0f186-b9f7-4da9-ba7b-05639f43d4cf",
   "slug": "lea-prac-ctr-010-performance-bond-purpose-typical-amount-and-conditions-for-calling-the-bond",
-  "generated_at": "2026-05-04T00:06:10.900Z",
-  "old_hash": "sha256:e7859561fd835868be66a5ef3c0b3a9c9bec54423a04a6beac3ef49ba3b799ea",
-  "new_hash": "sha256:edd7e2144f03bad8d2b22f46757789d23435562c88295fd1a78edcd09566c875",
-  "original_hash": "sha256:e7859561fd835868be66a5ef3c0b3a9c9bec54423a04a6beac3ef49ba3b799ea",
+  "generated_at": "2026-05-04T02:16:41.002Z",
+  "old_hash": "sha256:4f75819f7a926c5536290e33c7a9a96f09a2890c7acea45c5b3e9cc85268daa8",
+  "new_hash": "sha256:4f75819f7a926c5536290e33c7a9a96f09a2890c7acea45c5b3e9cc85268daa8",
+  "original_hash": "sha256:4f75819f7a926c5536290e33c7a9a96f09a2890c7acea45c5b3e9cc85268daa8",
   "normalized_hash": "sha256:edd7e2144f03bad8d2b22f46757789d23435562c88295fd1a78edcd09566c875",
-  "candidate_hash": "sha256:edd7e2144f03bad8d2b22f46757789d23435562c88295fd1a78edcd09566c875",
-  "changed": true,
-  "changed_line_count": 61,
+  "candidate_hash": "sha256:4f75819f7a926c5536290e33c7a9a96f09a2890c7acea45c5b3e9cc85268daa8",
+  "changed": false,
+  "changed_line_count": 0,
   "inserted_line_count": 0,
-  "deleted_line_count": 28,
+  "deleted_line_count": 0,
   "ui_blocks_original_count": 5,
-  "ui_blocks_candidate_count": 0,
-  "ui_blocks_changed_count": 5,
+  "ui_blocks_candidate_count": 5,
+  "ui_blocks_changed_count": 0,
   "ui_blocks_count": 5,
-  "unresolved_placeholders_count": 1,
-  "preserved_blocks_count": 0,
+  "unresolved_placeholders_count": 0,
+  "preserved_blocks_count": 5,
   "changed_text_summary": {
-    "changed": 61,
+    "changed": 0,
     "inserted": 0,
-    "deleted": 28,
-    "original_line_count": 81,
-    "candidate_line_count": 53
+    "deleted": 0,
+    "original_line_count": 82,
+    "candidate_line_count": 82
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0001",
-      "ui_0002",
-      "ui_0003",
-      "ui_0004",
-      "ui_0005"
-    ],
-    "changed_count": 5
+    "missing_block_ids": [],
+    "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate contains unresolved UI block placeholders.",
-    "Candidate is missing 5 preserved UI block(s)."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 5 preserved UI block(s)."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

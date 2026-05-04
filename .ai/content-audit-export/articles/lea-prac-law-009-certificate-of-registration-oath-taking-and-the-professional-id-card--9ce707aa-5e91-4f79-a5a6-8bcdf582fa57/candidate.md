@@ -46,16 +46,18 @@ Extracted summary:
 - Props: (none)
 - Text: The PRC ID contains: registrant's name, registration number, date of registration, expiration date, professional tax receipt (PTR) number, and the registrant's signature and photograph. Know that the PTR must be updated annually.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="AuthorityContent" status="preserved"]
+<LawCallout code="ra9266" section="Section 17 - Oath Taking">
+(none detected)
+</LawCallout>
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
+<Tip />
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="Callout" status="preserved"]
+<Callout />
 
-[SLATECAMP_UI_BLOCK:ui_0007 component="Warn" status="preserved"]
+<Warn />
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="Note" status="preserved"]
+<Note />
 
-[SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
+<ExamTip />
 
 <!-- no-media-needed: professional practice article, text/tables/UI blocks are optimal format -->

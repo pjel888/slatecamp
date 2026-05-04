@@ -74,11 +74,20 @@ In Philippine architectural practice, the Architect's Guidelines fee computation
 
 Exams test four competencies: (1) recognizing project group classification, (2) selecting correct fee percentage from the Architect's Guidelines, (3) computing total and phased fees accurately, and (4) distinguishing DAEDS from DADS and applying sliding scales correctly. Calculation accuracy is non-negotiable.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+<Tip>
+Memory aid: Groups 1-3 slide down (5→4→3→2→1; 6→5→4→3→2; 7→6→5→4→3). Groups 4-5 flat. Group 6-7 repeat diminishing. Group 8 premium. Group 9 multiplier (150%). Group 10 negotiated.
+</Tip>
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeList" status="preserved"]
+<WikiMistakeList>
+- **Ignoring sliding scleas for Groups 1-3.** Always calculate each bracket separately: first ₱50M at base rate, next ₱50M at (base−1%), etc.
+- **Confusing DAEDS and DADS percentages.** DADS is approximately 60% of DAEDS. If problem specifies "architect only," apply DADS.
+- **Miscalculating phase payments.** SPP 202 percentages apply to total fee, not PCC. Total fee first, then distribute by phase.
+- **Forgetting Group 9 is 150% of base, not 150% total.** If base Group 2 fee is ₱3M, Group 9 renovation = ₱3M × 1.5 = ₱4.5M.
+- **Applying flat Group 4-5 rates when project exceeds ₱50M.** Groups 4 and 5 have no sliding sclea; 10% and 12% apply to entire PCC.
+- **Not distinguishing renovation scope from new construction.** Group 9 applies only to renovation work, not new additions treated as separate projects.
+</WikiMistakeList>
 
 ---
 

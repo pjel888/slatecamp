@@ -7,7 +7,7 @@ Identify waste disposal and treatment systems (septic tanks, grease traps, sewag
 
 Building waste disposal encompasses both liquid (wastewater/sewage) and solid waste streams. Liquid waste treatment begins at the source through _septic tanks_ for individual buildings, _grease traps_ for food-preparation areas, and _sewage treatment plants (STP)_ for larger developments. The Revised National Plumbing Code mandates primary treatment (settling and sludge removal) before discharge to environment or municipal systems. Secondary treatment removes dissolved and colloidal matter through biological processes. Tertiary treatment polishes effluent to potable or reuse standards, increasingly required in water-stressed regions.
 
-<ArticleMedia id="media-lea-util-001-06-core-concept" a type="image" caption="Septic Tank and Leach Field System — Cross-Section Diagram" description="Cross-section of a residential septic system showing: inlet from building drain, septic tank with scum layer (top), sludge layer (bottom), baffle wall, outlet tee, distribution box, and leach field (absorption) trenches with percolation into surrounding soil. Minimum clearances to building wall (1.5m) and water well (25m) labeled per Revised National Plumbing Code §305." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-util-001-06-core-concept" type="image" caption="Septic Tank and Leach Field System — Cross-Section Diagram" alt="Cross-section of a residential septic system showing: inlet from building drain, septic tank with scum layer (top), sludge layer (bottom), baffle wall, outlet tee, distribution box, and leach field (absorption) trenches with percolation into surrounding soil. Minimum clearances to building wall (1.5m) and water well (25m) labeled per Revised National Plumbing Code §305." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 
 Solid waste management in buildings must segregate waste at source per RA 9003: biodegradable (food, plant matter), residual waste, recyclables (paper, metal, plastic), and hazardous (batteries, chemicals). The Revised National Plumbing Code Section 303 specifies garbage chutes, compactors, and storage rooms. Recycling systems reduce landfill impact; many Philippine projects now integrate waste-to-energy or composting facilities.
@@ -29,7 +29,7 @@ For septic tank design, the Revised National Plumbing Code Table 1 requires mini
 | Solid waste generation rate (residential) | 0.3–0.5 kg per capita per day | RA 9003 guidelines, local studies | Sizing chutes, compactors, storage areas |
 | Maximum waste storage duration | 3 days (hot/humid climate) | RA 9003 Implementing Rules | Temperature control and odor management requirement |
 
-<ArticleMedia id="media-lea-util-001-06-core-concept" a type="image" caption="Wastewater Treatment Hierarchy — Primary, Secondary, Tertiary" description="Flow diagram showing the treatment cascade: Primary treatment (septic tank — settling and sludge removal), Secondary treatment (biological process — aeration, clarification), Tertiary treatment (polishing — filtration, disinfection), and Quaternary (reuse-grade). DENR-EMB Class C effluent standard of ≤50 mg/L BOD per RA 9275 annotated at each stage." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-util-001-06-core-concept" type="image" caption="Wastewater Treatment Hierarchy — Primary, Secondary, Tertiary" alt="Flow diagram showing the treatment cascade: Primary treatment (septic tank — settling and sludge removal), Secondary treatment (biological process — aeration, clarification), Tertiary treatment (polishing — filtration, disinfection), and Quaternary (reuse-grade). DENR-EMB Class C effluent standard of ≤50 mg/L BOD per RA 9275 annotated at each stage." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 
 ## Philippine Construction Context
@@ -52,15 +52,17 @@ _An office building in BGC generates 150 kg waste per day. Draft segregation str
 **Pattern 4: Discharge Permit and DENR-EMB Standards**
 _A manufacturing facility proposes discharge of treated effluent (BOD = 45 mg/L) to a creek. Is a DENR-EMB Class C water discharge permit required (RA 9275)? What additional treatment is needed if the receiving water is designated Class B?_
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+<Tip>
+**Memory aid:** _SepTic = 24-hour Tank, 15 meters from water; GRease = kitchen only; Solid Waste = 3 days max storage, RA 9003 segregation required._ Use the "1-2-3-4 treatment rule": Primary (settling), Secondary (biological), Tertiary (polishing), Quaternary (reuse-grade).
+</Tip>
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Assuming all wastewater can discharge directly to environment without treatment" correction="Revised National Plumbing Code and RA 9275 mandate minimum primary (septic tank) + secondary (STP) treatment before discharge to environment; Class C waters allow ≤50 mg/L BOD. Discharge permits from DENR-EMB are required." />
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Sizing septic tank based on building occupancy rather than fixture units" correction="Revised National Plumbing Code Table 1 uses fixture units (toilets = 4, sinks = 1, showers = 2). A 3-bedroom house ≈ 20 fixture units, not 4 people. This oversizes tanks and leads to cost overruns." />
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Placing leach field 10 m from well instead of 25 m" correction="Revised National Plumbing Code § 305.2 and P.D. 856 require minimum 25 m separation to protect groundwater from septic tank contamination in areas with 2–8 m depth to water table." />
 
 ea-util-001-07-core-concept**, **lea-util-001-08-core-concept**, **lea-util-001-09-core-concept**.
 

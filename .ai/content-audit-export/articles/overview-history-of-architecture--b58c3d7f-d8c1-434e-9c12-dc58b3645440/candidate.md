@@ -1,6 +1,6 @@
 # History of Architecture — Overview & Study Strategy
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="SubjectSnapshot" status="preserved"]
+<SubjectSnapshot items='[{"label":"PRC Area","value":"Area A"},{"label":"Weight within Area A","value":"35% (heaviest single subject in the area)"},{"label":"Geographic Scope","value":"11 regional/cultural traditions"},{"label":"Chronological Span","value":"Prehistoric era to 21st century"}]' />
 Extracted summary:
 - Props: items="[{"label":"PRC Area","value":"Area A"},{"label":"Weight within Area A","value":"35% (heaviest single subject in the area)"},{"label":"Geographic Scope","value":"11 regional/cultural traditions"},{"label":"Chronological Span","value":"Prehistoric era to 21st century"}]"
 - Text: (none detected)
@@ -8,7 +8,7 @@ Extracted summary:
 ## Learning Goal
 
 Master the architectural history timeline tested in the LEA across 11 regional/cultural traditions, including: Prehistoric/Ancient, Medieval to Baroque, Modern & Contemporary, Asian & Pacific, Islamic, Philippine, African, Latin American, Pre-Columbian, Australian/NZ, and United States architecture. By the end of this study map, you should be able to identify periods, styles, architects, buildings, and cultural influences from visual and contextual cues.
-<ArticleMedia id="media-overview-history-of-architecture" a type="image" caption="History of Architecture — Study Sequence Flowchart" description="Five-phase study progression diagram: Phase 1 — Western Timeline (Weeks 1-2): Greek/Roman orders and engineering, Early Christian through Baroque; Phase 2 — Philippine Architecture (Week 3): Pre-colonial → Spanish colonial (earthquake Baroque) → American → Contemporary; Phase 3 — Non-Western Traditions (Weeks 4-5): Islamic, South Asian, East Asian mapped onto Western eras; Phase 4 — Modern & Contemporary (Week 6): Arts & Crafts through Postmodernism; Phase 5 — Remaining Traditions (Week 7): African, Latin American, Pre-Columbian, Australian/NZ, US. Each phase tagged with geographic region and chronological span." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-overview-history-of-architecture" type="image" caption="History of Architecture — Study Sequence Flowchart" alt="Five-phase study progression diagram: Phase 1 — Western Timeline (Weeks 1-2): Greek/Roman orders and engineering, Early Christian through Baroque; Phase 2 — Philippine Architecture (Week 3): Pre-colonial → Spanish colonial (earthquake Baroque) → American → Contemporary; Phase 3 — Non-Western Traditions (Weeks 4-5): Islamic, South Asian, East Asian mapped onto Western eras; Phase 4 — Modern & Contemporary (Week 6): Arts & Crafts through Postmodernism; Phase 5 — Remaining Traditions (Week 7): African, Latin American, Pre-Columbian, Australian/NZ, US. Each phase tagged with geographic region and chronological span." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Subject Coverage
 
@@ -26,9 +26,9 @@ The LEA treats History of Architecture as a survey across 11 subtopic areas:
 - **Australian & New Zealand Architecture** — Indigenous, colonial, contemporary
 - **United States Architecture** — Colonial through Chicago School, Mid-Century Modern, postwar
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
+<ExamTip>LEA questions on History often provide a photograph or description of a building and ask you to identify its period, style, architect, or cultural tradition. Train yourself to read buildings visually: column types, arch forms, roof profiles, ornamental vocabulary, and material pleatte are all legible clues.</ExamTip>
 Extracted summary:
-[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
+<ExamTip>LEA questions on History often provide a photograph or description of a building and ask you to identify its period, style, architect, or cultural tradition. Train yourself to read buildings visually: column types, arch forms, roof profiles, ornamental vocabulary, and material pleatte are all legible clues.</ExamTip>
 Extracted summary:
 - Props: (none)
 - Text: LEA questions on History often provide a photograph or description of a building and ask you to identify its period, style, architect, or cultural tradition. Train yourself to read buildings visually: column types, arch forms, roof profiles, ornamental vocabulary, and material pleatte are all legible clues.
@@ -57,7 +57,7 @@ Africa, Americas, Oceania in shorter focused sessions.
 
 ## Time Allocation
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiExamTable" status="preserved"]
+<WikiExamTable headers={["Subtopic","Suggested Study Weight","Why"]} rows={[["Medieval to Baroque","High","Dense question pool; many overlapping movements to distinguish"],["Modern & Contemporary","High","Frequently tested; overlaps with Theory of Architecture"],["Philippine Architecture","High","High practical relevance; specificity rewarded"],["Asian & Pacific","Medium","Rich material; focus on India, China, Japan first"],["Islamic Architecture","Medium","Distinctive visual vocabulary; testable patterns"],["Pre-Historic & Ancient","Medium","Foundation for everything; Greek/Roman orders are non-negotiable"],["Latin American","Lower-Medium","Focus on colonial urbanism and 20th-c modernism"],["Pre-Columbian","Lower-Medium","Focus on Maya, Aztec, Inca — the three major civilizations"],["United States","Lower-Medium","Chicago School, Prairie Style, and postwar are most tested"],["African","Lower","Focus on Great Zimbabwe and North African traditions"],["Australian & NZ","Lower","Smallest question pool; familiarize, don't over-invest"]]} />
 Extracted summary:
 - Props: headers="{["Subtopic","Suggested Study Weight","Why"]}", rows="{[["Medieval to Baroque","High","Dense question pool; many overlapping movements to distinguish"],["Modern & Contemporary","High","Frequently tested; overlaps with Theory of Architecture"],["Philippine Architecture","High","High practical relevance; specificity rewarded"],["Asian & Pacific","Medium","Rich material; focus on India, China, Japan first"],["Islamic Architecture","Medium","Distinctive visual vocabulary; testable patterns"],["Pre-Historic & Ancient","Medium","Foundation for everything; Greek/Roman orders are non-negotiable"],["Latin American","Lower-Medium","Focus on colonial urbanism and 20th-c modernism"],["Pre-Columbian","Lower-Medium","Focus on Maya, Aztec, Inca — the three major civilizations"],["United States","Lower-Medium","Chicago School, Prairie Style, and postwar are most tested"],["African","Lower","Focus on Great Zimbabwe and North African traditions"],["Australian & NZ","Lower","Smallest question pool; familiarize, don't over-invest"]]}"
 - Text: (none detected)

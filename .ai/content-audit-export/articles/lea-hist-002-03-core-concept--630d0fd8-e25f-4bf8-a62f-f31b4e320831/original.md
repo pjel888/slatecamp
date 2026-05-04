@@ -7,6 +7,10 @@ Identify Gothic architectural innovations — pointed arch, ribbed vault, flying
 
 **Gothic architecture** (mid-12th–16th centuries) represents the culmination of Medieval ambition: to build impossibly tall cathedrals with walls so thin they nearly disappear, flooded with stained-glass light. The innovation is not decorative but *structural*—a complete rethinking of how to distribute weight.
 
+
+<ArticleMedia id="media-hist-002-03-core-concept" layout="single" type="image" status="placeholder" alt="Exterior view of Chartres Cathedral (1194–1220, France) showing the skeletal flying buttress system, pointed arch windows, and twin spires of the western facade." caption="Chartres Cathedral — Flying Buttresses and Stained Glass" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
+
 The **pointed arch** replaces the Romanesque round arch. A pointed arch distributes weight more efficiently, with thrust directed downward and slightly outward along its legs rather than purely outward as a round arch does. This subtle engineering shift enables higher vaults and thinner walls.
 
 <Tip>
@@ -39,6 +43,10 @@ Together—**pointed arch + ribbed vault + external flying buttress**—these th
 - **English Gothic**: Emphasis on horizontal length (nave extends deep), elaborate vaulting (fan vaults in Perpendicular period), decorated tracery
 - **Italian Gothic**: Facade emphasis (stripes and arcades), shorter and broader proportions, less skeletal than French
 - **Iberian Gothic**: Strong fortress influence, regional geometric patterns
+
+
+<ArticleMedia id="media-hist-002-03-core-concept" layout="single" type="image" status="placeholder" alt="Diagram showing the three-part Gothic structural system: pointed arch (efficient weight distribution), ribbed vault (concentrated load at piers), and flying buttress (lateral thrust transferred to external piers)." caption="Gothic Structural System — Pointed Arch, Ribbed Vault, Flying Buttress" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
 
 ## Key Facts and Testable Items
 
@@ -94,6 +102,8 @@ Gothic introduces the **pointed arch, ribbed vault, and external flying buttress
 - **Buttress**: A vertical exterior projection strengthening walls or piers
 
 ## Related Articles
+
+<ArticleMedia id=\"media-hist-002-03-core-concept-timeline\" layout=\"single\" type=\"image\" status=\"placeholder\" alt=\"Timeline of Gothic cathedral construction (mid-12th–16th centuries) showing the evolution from Early Gothic (Saint-Denis, 1144) through High Gothic (Chartres, 1194; Amiens, 1220) to Late Gothic/Flamboyant and Perpendicular styles, with key regional variations.\" caption=\"Gothic Architecture — Cathedral Construction Timeline\" suggestedAsset=\"Timeline diagram\" placementIntent=\"Timeline diagram for architectural period\" />
 
 See also within Medieval to Baroque: **lea-hist-002-01-core-concept**, **lea-hist-002-02-core-concept**, **lea-hist-002-04-core-concept**, **lea-hist-002-05-core-concept**.
 

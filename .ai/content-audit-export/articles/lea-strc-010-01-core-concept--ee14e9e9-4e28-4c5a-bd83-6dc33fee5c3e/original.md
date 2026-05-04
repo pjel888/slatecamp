@@ -13,6 +13,7 @@ By the end of this article, you will be able to:
 Masonry construction relies on precise terminology for joints, unit arrangement, and bonding patterns. Understanding bed joints, head joints, collar joints, wythes, cells, and bond types is essential for specifying, inspecting, and designing masonry structures per NBP/LEA requirements.
 
 ## Core Concept
+<ArticleMedia id="media-lea-strc-010-01-core-concept" a type="image" caption="Masonry Construction — Wythes, Joints, and Bond Patterns" description="Cross-section and elevation diagrams showing: (1) Types of wythe (single, double, cavity wall); (2) Joint types — bed joint (horizontal), head joint (vertical), collar joint (between wythes); (3) Bond patterns — Running bond (staggered), Stack bond (aligned), Flemish bond (alternating headers/stretchers), English bond (alternating courses of headers and stretchers); (4) Reinforcement placement in grouted cells." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 Masonry is built from individual units (bricks, concrete hollow blocks, stone) held together by mortar in organized patterns. The way units are arranged, joined, and stacked determines both structural performance and durability.
 
@@ -67,7 +68,6 @@ _A concrete hollow block with three cells per unit is selected for a four-story 
 <Tip>
 _Memory aid_: **"BC WJC"** — **B**ond patterns (running, Flemish, English), **C**ells (vertical spaces in units), **W**ythes (leaf sections), **J**oints (bed, head, collar), **C**avity walls (air space). Memorize cavity wall minimum air space: **51 mm**. English bond = maximum header tie = seismic zones.
 </Tip>
-
 
 ## Related Articles
 

@@ -8,11 +8,7 @@ After reading this article, you should be able to:
 - Identify the bonds required of the Contractor (bid bond, performance bond, guarantee bond) and their respective purposes.
 - Apply Contractor obligation principles to LEA scenarios involving defective work, non-conforming materials, and warranty claims.
 
-
-
 The Contractor's obligations under Doc 301 encompass execution of all work per contract documents, employment of qualified workers, provision of bonds, and warranty of quality for one year after Substantial Completion.
-
-
 
 ### Execution of Work in Accordance With Contract Documents
 
@@ -108,3 +104,5 @@ This topic appears most often in MCQs testing: (1) the distinction between the 1
 - [Change Orders](lea-prac-ctr-016)
 - [Dispute Resolution](lea-prac-ctr-020)
 - [Fee Compensation Methods](lea-prac-cmp-001)
+
+<!-- no-media-needed: professional practice article, text/tables/UI blocks are optimal format -->

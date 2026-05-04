@@ -1,26 +1,21 @@
 {
-  "attempted_at": "2026-05-04T00:06:46.668Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:17:30.859Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "candidate.md matches original.md; refusing no-op apply."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "f39860e3-5b76-49c3-a82f-035371e8f225",
   "slug": "lea-util-008-01-the-three-phase-coordination-framework",
   "preparation_actions": [
     "auto_generated_diff"
   ],
-  "remote_hash_before": "sha256:1ea9a1826066f5ba50e48206e283ee3556cc0ed7856e0a5bd15c2ce26119ccc9",
-  "original_hash": "sha256:1ea9a1826066f5ba50e48206e283ee3556cc0ed7856e0a5bd15c2ce26119ccc9",
-  "candidate_hash": "sha256:e5a781940a85786e3176c877637f053b869c9c1e650be8371cae42482f7ca564",
+  "remote_hash_before": "sha256:5abe006c23e1f6d9513c45af98bd3b8743890dd26bb934ecab3a8ce9219373da",
+  "original_hash": "sha256:5abe006c23e1f6d9513c45af98bd3b8743890dd26bb934ecab3a8ce9219373da",
+  "candidate_hash": "sha256:5abe006c23e1f6d9513c45af98bd3b8743890dd26bb934ecab3a8ce9219373da",
   "stale_check_passed": true,
-  "remote_updated_at_before": "2026-05-03T13:51:54.646401+00:00"
+  "remote_updated_at_before": "2026-05-04T02:01:19.827173+00:00"
 }

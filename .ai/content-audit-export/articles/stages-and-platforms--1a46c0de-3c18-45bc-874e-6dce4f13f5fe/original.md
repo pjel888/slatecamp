@@ -299,13 +299,7 @@ D. 15.00 sq.m
 
 > **Answer: C**
 >
-<LawCallout code="pd1096" section="Rule VII - Assembly Occupancy">
-
-
-Per PD 1096, Rule XII, Section 1213.1, the total ventilation area must be ≥ 5% of the stage floor area within the stage walls. 5% of 240 sq.m = 12.00 sq.m. Option A (8 sq.m) is 3.33% — too low. Option B (10 sq.m) corresponds to 5% of 200 sq.m — a distractor using a round number close to the actual floor area. Option D (15 sq.m) corresponds to 6.25%, above the minimum but not required. The correct answer is exactly 5% of 240 sq.m = 12.00 sq.m.
-
-
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
 
 ---
 
@@ -320,13 +314,7 @@ D. 14.00 sq.m
 
 > **Answer: C**
 >
-<LawCallout code="pd1096" section="Rule VII - Stages and Platforms">
-
-
-Per PD 1096, Rule XII, Section 1214.2: minimum floor area = 7.00 sq.m for the first machine, plus 3.50 sq.m for each additional machine. For two projectors: 7.00 + (1 × 3.50) = 10.50 sq.m. Option A (7.00 sq.m) is for one projector only — the most common trap for candidates who memorize only the base figure. Option B (8.75 sq.m) has no basis in the code. Option D (14.00 sq.m) would be required for three projectors: 7.00 + (2 × 3.50) = 14.00 sq.m.
-
-
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
 
 ---
 
@@ -341,13 +329,7 @@ D. 3-hour fire-resistive construction, extending at least 1.20 m above the audit
 
 > **Answer: B**
 >
-<LawCallout code="pd1096" section="Rule VII - Stage Requirements">
-
-
-Per PD 1096, Rule XII, Section 1213.4: the proscenium wall must be minimum 2-hour incombustible construction, must extend ≥ 1.20 m above the auditorium roof, and all openings must be protected by 1.5-hour fire assemblies. The main proscenium opening also requires a self-closing fire-resistive curtain. Option A uses 1-hour (too low) and "flush with roof" (no extension — a critical failure point). Option C has the correct fire rating and extension direction but uses 1.50 m (too high) and 1-hour assemblies (too low). Option D uses 3-hour (too high) and incorrectly assigns a 3/4-hour assembly to the main opening (3/4-hour is the door assembly for projection rooms, per Sec. 1214.3).
-
-
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
 
 ---
 
@@ -364,14 +346,23 @@ Cross-drill with **Article 22** (fire-extinguishing systems — sprinkler trigge
 
 ---
 
-
-
 ---
 
 ## Exam Tip
 
 LEA Trap: Platforms ≤ 1.20 m high are NOT classified as stages and do not require stage permits. Full stages require: proscenium wall (2-hour fire rating for stages > 200 m²), fire curtain, sprinklers, and separate dressing room egress. The 1.20 m threshold is the critical distinction.
 
+
+
+---
+
+## Exam Tip
+
+ALE Trap: Platforms ≤ 1.20 m high are NOT classified as stages and do not require stage permits. Full stages require: proscenium wall (2-hour fire rating for stages > 200 m²), fire curtain, sprinklers, and separate dressing room egress. The 1.20 m threshold is the critical distinction.
+
+
+
+<ArticleMedia type="image" caption="Stage and Platform Design — Proscenium Wall, Gridiron, and Projection Room Layout" description="Section and plan of a proscenium stage showing: stage floor, proscenium wall (2-hour fire rating, extending 1.20m above roof), stage ventilator (min 5% of stage floor area), gridiron and fly gallery, motion picture projection room (min 7.00 sqm + 3.50 sqm per additional projector), and two-exit requirement with doors separated by at least 1/3 of room perimeter." />
 ## Cross‑References
 
 **Accessible Seating In Assembly Areas**, **Fixtures And Small Items In Common Areas**, **Fire Extinguishing Systems**, **Vertical Openings And Floor Roof Construction**

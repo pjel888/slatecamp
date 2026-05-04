@@ -7,8 +7,10 @@ The architect's role as mediator between client interests and contractor perform
 ## Core Concept
 
 
-<ArticleMedia id="media-eth007-independence-framework" layout="single" variant="contained" type="image" status="placeholder" aspectRatio="16:9" title="Obligations to Contractors and Suppliers — Independence Framework" description="Diagram showing the architect as mediator between client and contractor. Left side: prohibited relationships (gifts, commissions, kickbacks, free services). Right side: permitted relationships (market discounts credited to client, arms-length transactions). Center axis shows the three-part test: (1) Would architect feel indebted? (2) Does arrangement create bias appearance? (3) Is discount passed to client?" placementIntent="ethics-framework" suggestedSearchQuery="architect independence impartiality contractor gifts commissions Section 3-4 Code of Ethics" suggestedAsset="Diagram or reference image" alt="Independence framework: prohibited vs permitted contractor relationships" caption="Future diagram: independence framework: prohibited vs permitted contractor relationships" />
-[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+<ArticleMedia id="media-eth007-independence-framework" layout="single" variant="contained" type="image" status="placeholder" aspectRatio="16:9" title="Obligations to Contractors and Suppliers — Independence Framework" alt="Diagram showing the architect as mediator between client and contractor. Left side: prohibited relationships (gifts, commissions, kickbacks, free services). Right side: permitted relationships (market discounts credited to client, arms-length transactions). Center axis shows the three-part test: (1) Would architect feel indebted? (2) Does arrangement create bias appearance? (3) Is discount passed to client?" placementIntent="ethics-framework" suggestedSearchQuery="architect independence impartiality contractor gifts commissions Section 3-4 Code of Ethics" suggestedAsset="Diagram or reference image" alt="Independence framework: prohibited vs permitted contractor relationships" caption="Future diagram: independence framework: prohibited vs permitted contractor relationships" />
+<LawCallout code="uap" section="Code of Ethics - Obligations to Contractors">
+Section 3 establishes the architect as a "fair safeguard of contractor interests" while serving the client. Section 3-d prohibits accepting free engineering services, substantial gifts, commissions, or favors from any contractor or subcontractor. Section 4-a prohibits availing of technical services from manufacturers/suppliers where obligation would detriment client interests. Section 4-b permits market discounts ONLY if credited to the client.
+</LawCallout>
 
 ### The Mediatory Function
 
@@ -24,7 +26,9 @@ Code Section 3-d explicitly prohibits architects from accepting free engineering
 
 Code Section 4-b permits architects to accept market discounts on building materials or equipment — but with a critical requirement: these discounts must be credited to the client. The architect cannot personally retain the benefit.
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="preserved"]
+<Warn>
+  **Critical Distinction:** Free engineering services from a supplier (service) violate §4-a. A volume discount on materials (financial benefit) is permissible if credited to the client. Services create quid pro quo expectation; material discounts are normal commercial transactions. The LEA frequently tests this distinction.
+</Warn>
 
 ## How It's Tested
 
@@ -36,7 +40,9 @@ Code Section 4-b permits architects to accept market discounts on building mater
 
 **Pattern 4:** Bias appearance — Architect who accepted a contractor's gift in a prior project must recuse from evaluating that contractor's work on a new project.
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
+<ExamTip>
+  **LEA Watch:** The "appearance of bias" standard is broader than actual bias. Even if the architect consciously remains fair, accepting benefits creates an appearance of impropriety. Professional ethics requires eliminating both actual bias AND the appearance of bias. The stricter standard — appearance of bias — governs architectural conduct.
+</ExamTip>
 
 ## Common Mistakes
 

@@ -8,10 +8,23 @@ Hydration is the chemical reaction between portland cement and water that produc
 
 The LEA Board recommendation and ACI 308R guidance: _Maintain concrete above 10°C (50°F) and keep it moist for at least 7 days for ordinary portland cement (OPC). High-early-strength (Type III) concrete requires only 3 days above 10°C._
 
+
+<ArticleMedia id="media-cement-types-comparison" layout="single" type="image" status="placeholder"
+  alt="Comparison table and illustrations showing ASTM C150 cement Types I through V with chemical composition, strength gain curves, and applications"
+  caption="Future chart: cement types I–V comparison — composition, strength gain, and appropriate use"
+  suggestedAsset="Infographic comparing cement types with heat of hydration and strength curves"
+  placementIntent="Helps learners distinguish cement types by properties and applications" />
+
 ## Curing Methods: Moist Curing (Moisture Retention)
 
 Moist curing keeps the concrete surface wet and prevents evaporation of internal moisture. This is the most effective curing method and is preferred by ACI 308R.
 
+
+<ArticleMedia id="media-cement-curing-methods" layout="single" type="image" status="placeholder"
+  alt="Comparison diagram of concrete curing methods: ponding, sprinkling, wet coverings, membrane compounds, and steam curing with effectiveness and application"
+  caption="Future diagram: concrete curing methods comparison — effectiveness and application"
+  suggestedAsset="Process illustration or comparison chart of curing methods"
+  placementIntent="Visualizes proper curing techniques for concrete strength development" />
 ### Ponding (Submersion Curing)
 
 The concrete surface is covered with water maintained at 1—2 inches depth. Water is continuously retained on the surface, providing ideal moisture and thermal stability.

@@ -72,7 +72,7 @@ const UnifiedEditorPage = async ({ params }: PageProps) => {
                 </p>
                 <div className="mt-3 flex items-center gap-3">
                   <a
-                    href={`/dashboard/wiki/${article.slug}`}
+                    href={`/dashboard/wiki/${article.article_id}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-sm font-medium text-primary hover:underline"

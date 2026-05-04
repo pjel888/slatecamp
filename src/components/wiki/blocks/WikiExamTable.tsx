@@ -1,8 +1,50 @@
 import { WikiChangedPill } from './WikiChangedPill'
 import { cn } from '@/lib/utils'
-import type { WikiTableProps } from '@/types/wiki'
+import { parseMdxProp } from '../shared/parse-mdx-prop'
+import type { WikiTableRow } from '@/types/wiki'
 
-export const WikiExamTable = ({ caption, columns = [], rows = [], hasSourceColumn = true }: WikiTableProps) => {
+interface WikiExamTableRawProps {
+  // Content uses these prop names
+  columns?: string[]
+  headers?: string[]
+  rows?: WikiTableRow[] | string[][] | string
+  caption?: string
+  hasSourceColumn?: boolean
+  // Alternative content prop names
+  cols?: string[]
+  data?: any[]
+}
+
+function normalizeTableProps(raw: WikiExamTableRawProps) {
+  const columns = raw.columns || raw.headers || raw.cols || []
+  const rowsRaw = raw.rows || raw.data || []
+  const rows: WikiTableRow[] = typeof rowsRaw === 'string'
+    ? parseMdxProp<WikiTableRow[]>(rowsRaw, [])
+    : rowsRaw.map((r: any) => {
+        if (Array.isArray(r)) {
+          // Array-of-arrays format: [parameter, dimension?, value, source?]
+          return {
+            parameter: String(r[0] || ''),
+            dimension: r.length > 2 ? String(r[1] || '') : undefined,
+            value: r.length > 2 ? String(r[2] || '') : String(r[1] || ''),
+            source: r.length > 3 ? String(r[3] || '') : undefined,
+          }
+        }
+        // Object format: { heading/description } or { content/description } or { parameter, dimension, value, source, ... }
+        if (r.heading !== undefined) {
+          return { parameter: String(r.heading || ''), value: String(r.description || ''), isSectionHeader: true }
+        }
+        if (r.content !== undefined) {
+          return { parameter: String(r.content || ''), value: String(r.description || ''), isSectionHeader: false }
+        }
+        return { ...r, isSectionHeader: r.isSectionHeader === true }
+      })
+
+  return { caption: raw.caption, columns, rows, hasSourceColumn: raw.hasSourceColumn ?? true }
+}
+
+export const WikiExamTable = (raw: WikiExamTableRawProps) => {
+  const { caption, columns, rows, hasSourceColumn } = normalizeTableProps(raw)
   if (!columns.length || !rows.length) return null
   return (
     <div className="not-prose my-6 rounded-lg border border-wiki-border overflow-hidden dark:border-wiki-invert-divider">

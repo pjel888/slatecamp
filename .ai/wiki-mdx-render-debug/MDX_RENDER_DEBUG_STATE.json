@@ -1,0 +1,40 @@
+{
+  "state": "COMPLETE_VERIFIED",
+  "version": 5,
+  "last_updated": "2026-05-04T05:15:00Z",
+  "root_cause": "Malformed sibling MDX tags caused primary MDX compile failure. Fallback aggressively stripped ALL custom component tags, including valid <ArticleMedia />.",
+  "fixes_applied": {
+    "createMdxFallbackSource": "Rewritten to preserve known registered components; also cleans up backslash-escaped quotes",
+    "normalizeWikiMdxComponentBlocks": "New normalizer integrated into sanitizeMDX for same-line paired tags",
+    "shared_component_registry": "src/lib/wiki-component-registry.ts with 50+ registered components",
+    "sanitizeMDX_backslash_cleanup": "Added \" → ' cleanup inside JSX tags to primary compile path",
+    "WikiArticle_import_fix": "Fixed next-mdx-remote import path (dist/rsc → rsc)"
+  },
+  "final_metrics": {
+    "articles_scanned": 567,
+    "articles_with_articlemedia": 461,
+    "primary_compile_pass": 437,
+    "fallback_articlemedia_preserved": 24,
+    "articlemedia_lost": 0,
+    "percent_intact": "100%"
+  },
+  "fallback_articles_24": {
+    "accepted_as_safe_fallback": 24,
+    "causes": {
+      "latex_math_braces": 16,
+      "json_in_props_text": 8
+    },
+    "reasoning": "All 24 have ArticleMedia preserved via hardened fallback. Root cause is LaTeX braces or JSON literals in article text — requires remark-math plugin or content changes beyond this fix's scope."
+  },
+  "test_results": {
+    "type_check": "PASS",
+    "full_test_suite": "704/704 PASS",
+    "wiki_markdown_tests": "27/27 PASS",
+    "wiki_fallback_tests": "3/3 PASS"
+  },
+  "route_verification": {
+    "original_failing_article": "200 OK, 3 ArticleMedia blocks",
+    "all_fallback_articles": "200 OK",
+    "dev_server": "Running on port 3000 (Turbopack)"
+  }
+}

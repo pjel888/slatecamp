@@ -7,6 +7,9 @@ Identify waste disposal and treatment systems (septic tanks, grease traps, sewag
 
 Building waste disposal encompasses both liquid (wastewater/sewage) and solid waste streams. Liquid waste treatment begins at the source through _septic tanks_ for individual buildings, _grease traps_ for food-preparation areas, and _sewage treatment plants (STP)_ for larger developments. The Revised National Plumbing Code mandates primary treatment (settling and sludge removal) before discharge to environment or municipal systems. Secondary treatment removes dissolved and colloidal matter through biological processes. Tertiary treatment polishes effluent to potable or reuse standards, increasingly required in water-stressed regions.
 
+<ArticleMedia id="media-lea-util-001-06-core-concept" a type="image" caption="Septic Tank and Leach Field System — Cross-Section Diagram" description="Cross-section of a residential septic system showing: inlet from building drain, septic tank with scum layer (top), sludge layer (bottom), baffle wall, outlet tee, distribution box, and leach field (absorption) trenches with percolation into surrounding soil. Minimum clearances to building wall (1.5m) and water well (25m) labeled per Revised National Plumbing Code §305." suggestedAsset="Diagram or reference image" status="placeholder" />
+
+
 Solid waste management in buildings must segregate waste at source per RA 9003: biodegradable (food, plant matter), residual waste, recyclables (paper, metal, plastic), and hazardous (batteries, chemicals). The Revised National Plumbing Code Section 303 specifies garbage chutes, compactors, and storage rooms. Recycling systems reduce landfill impact; many Philippine projects now integrate waste-to-energy or composting facilities.
 
 For septic tank design, the Revised National Plumbing Code Table 1 requires minimum capacity based on fixture units and groundwater depth. Detention time is typically 24 hours (per Revised National Plumbing Code §305.4). Grease traps must be sized for flow rate and installed upstream of septic systems. Municipal sewage treatment plants (operated by water districts) apply biological and chemical treatment; discharge must meet DENR-EMB Class C standards (BOD ≤50 mg/L per RA 9275 rules).
@@ -25,6 +28,9 @@ For septic tank design, the Revised National Plumbing Code Table 1 requires mini
 | STP design flow rate | 50–150 L per capita per day | Revised National Plumbing Code § 309, typical municipal design | Basis for aeration tank and clarifier sizing |
 | Solid waste generation rate (residential) | 0.3–0.5 kg per capita per day | RA 9003 guidelines, local studies | Sizing chutes, compactors, storage areas |
 | Maximum waste storage duration | 3 days (hot/humid climate) | RA 9003 Implementing Rules | Temperature control and odor management requirement |
+
+<ArticleMedia id="media-lea-util-001-06-core-concept" a type="image" caption="Wastewater Treatment Hierarchy — Primary, Secondary, Tertiary" description="Flow diagram showing the treatment cascade: Primary treatment (septic tank — settling and sludge removal), Secondary treatment (biological process — aeration, clarification), Tertiary treatment (polishing — filtration, disinfection), and Quaternary (reuse-grade). DENR-EMB Class C effluent standard of ≤50 mg/L BOD per RA 9275 annotated at each stage." suggestedAsset="Diagram or reference image" status="placeholder" />
+
 
 ## Philippine Construction Context
 

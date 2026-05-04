@@ -1,26 +1,19 @@
 {
-  "attempted_at": "2026-05-04T00:06:38.562Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:25:53.017Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "Failed to update wiki_articles.content: Bad Request"
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
   "slug": "pd-1096-rule-vii-area-metrics",
-  "preparation_actions": [
-    "auto_generated_diff"
-  ],
+  "preparation_actions": [],
   "remote_hash_before": "sha256:b5c5cd65be2ab5e3d404a4d9cf434c68b1dcf1971d41425a0a59737742b39987",
   "original_hash": "sha256:b5c5cd65be2ab5e3d404a4d9cf434c68b1dcf1971d41425a0a59737742b39987",
-  "candidate_hash": "sha256:5410b124281a6aba5f145d494382268404ea591dfb354045c2501a6313de3a51",
+  "candidate_hash": "sha256:939dc67714ca7683f88a1d85fc31cea7a991d1fb4b18ede261a9e5beea333326",
   "stale_check_passed": true,
   "remote_updated_at_before": "2026-05-03T16:38:17.074859+00:00"
 }

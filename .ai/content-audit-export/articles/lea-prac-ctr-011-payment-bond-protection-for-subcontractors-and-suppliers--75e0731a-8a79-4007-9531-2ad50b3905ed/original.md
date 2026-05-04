@@ -9,8 +9,6 @@ After studying this article, you should be able to:
 - Explain who can claim against the payment bond.
 - Describe the payment bond amount relative to the contract price.
 
-
-
 ### Purpose and Function of Payment Bonds
 
 A payment bond is security furnished by the contractor and surety to guarantee that all obligations arising from the contract will be paid. Unlike the performance bond which protects the owner against incomplete work, the payment bond protects subcontractors, suppliers, and laborers against non-payment. When the contractor fails to pay subcontractors or suppliers, these parties can file claims directly against the surety.
@@ -78,3 +76,5 @@ While both bonds may be required in the same contract, they serve distinct purpo
 - [Change Orders](lea-prac-ctr-016)
 - [Dispute Resolution](lea-prac-ctr-020)
 - [Fee Compensation Methods](lea-prac-cmp-001)
+
+<!-- no-media-needed: professional practice article, text/tables/UI blocks are optimal format -->

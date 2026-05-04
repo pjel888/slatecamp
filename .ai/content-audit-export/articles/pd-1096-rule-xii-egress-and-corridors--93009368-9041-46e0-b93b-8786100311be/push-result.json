@@ -1,26 +1,19 @@
 {
-  "attempted_at": "2026-05-04T00:06:44.891Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:25:55.900Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "Failed to update wiki_articles.content: Bad Request"
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "93009368-9041-46e0-b93b-8786100311be",
   "slug": "pd-1096-rule-xii-egress-and-corridors",
-  "preparation_actions": [
-    "auto_generated_diff"
-  ],
+  "preparation_actions": [],
   "remote_hash_before": "sha256:69fed52b89130a7f8a44a1ae3e9e096985fbd912f666c134992a0b7395268778",
   "original_hash": "sha256:69fed52b89130a7f8a44a1ae3e9e096985fbd912f666c134992a0b7395268778",
-  "candidate_hash": "sha256:b4195bdc2ed3e5fccab7f9e96624ec4db306da6f9116be354406b2d205709295",
+  "candidate_hash": "sha256:fdd6d80b5d99b200712a297bf8459b97446d984ed8a793cf592b0a72e76f61ee",
   "stale_check_passed": true,
   "remote_updated_at_before": "2026-05-03T16:38:17.507433+00:00"
 }

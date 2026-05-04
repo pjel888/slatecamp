@@ -1,0 +1,316 @@
+{
+  "WikiMistakeList": {
+    "file": "src/components/wiki/blocks/WikiMistakeList.tsx",
+    "props": ["mistakes?", "items?"],
+    "propTypes": "{ mistakes?: WikiMistakeCardRawProps[] | string[] | string; items?: WikiMistakeCardRawProps[] | string[] | string }",
+    "childrenExpected": false,
+    "typeFile": "src/types/wiki.ts",
+    "notes": "Accepts either 'mistakes' or 'items' prop name (MDX content uses both). Parses with parseMdxProp, transforms string items via transformMistakeString, delegates to WikiMistakeCard. Returns null if parsed array is empty."
+  },
+  "WikiMistakeCard": {
+    "file": "src/components/wiki/blocks/WikiMistakeCard.tsx",
+    "props": ["mistake?", "correction?", "context?", "number?", "title?", "wrongValue?", "correctValue?", "explanation?", "sourceRef?", "body?", "__index?"],
+    "propTypes": "WikiMistakeCardRawProps & { __index?: number }",
+    "childrenExpected": false,
+    "typeFile": "src/types/wiki.ts",
+    "notes": "Normalizes 3 MDX conventions into canonical shape (number, title, wrongValue, correctValue, explanation, sourceRef). __index is injected by WikiMistakeList for numbering. Renders a red-header card with 'Students Write' / 'Correct' side-by-side comparison and explanation."
+  },
+  "ArticleMedia": {
+    "file": "src/components/wiki/blocks/ArticleMedia.tsx",
+    "exports": ["ArticleMedia (default + named)"],
+    "props": ["id", "layout?", "variant?", "aspectRatio?", "title?", "description?", "placementIntent?", "type?", "status?", "src?", "youtubeId?", "embedUrl?", "alt?", "caption?", "credit?", "sourceUrl?", "suggestedAsset?", "suggestedSearchQuery?", "replacementNotes?", "carouselCount?"],
+    "propTypes": "ArticleMediaProps (local interface)",
+    "childrenExpected": false,
+    "typeFile": "inline in ArticleMedia.tsx",
+    "notes": "Client component. Supports single/carousel/gallery/embed layouts. Placeholder mode vs ready mode. Renders image, YouTube embed, or generic iframe. Carousel shows prev/next controls. suggestedSearchQuery is destructured but unused (prefixed with _)."
+  },
+  "WrongAnswerBanner": {
+    "file": "src/components/wiki/blocks/WrongAnswerBanner.tsx",
+    "props": ["fromWrongAnswer", "topicName"],
+    "propTypes": "WrongAnswerBannerProps (local interface): { fromWrongAnswer: boolean; topicName: string | null }",
+    "childrenExpected": false,
+    "typeFile": "inline in WrongAnswerBanner.tsx",
+    "notes": "Shown at top of wiki articles when arriving from a wrong answer. Returns null if fromWrongAnswer is false or topicName is null. Renders an orange-bordered alert with 'You answered a question about [topic] incorrectly.'"
+  },
+  "Tab": {
+    "file": "src/components/wiki/blocks/WikiTabs.tsx",
+    "props": ["label", "value", "children"],
+    "propTypes": "TabProps (local interface): { label: string; value: string; children: ReactNode }",
+    "childrenExpected": true,
+    "typeFile": "inline in WikiTabs.tsx",
+    "notes": "Child component of Tabs. label and value are extracted by Tabs parent via React.Children.forEach; the Tab itself just renders children as-is. Must be used as direct children of the Tabs component."
+  },
+  "Tabs": {
+    "file": "src/components/wiki/blocks/WikiTabs.tsx",
+    "props": ["defaultTab?", "children"],
+    "propTypes": "TabsProps (local interface): { defaultTab?: string; children: ReactNode }",
+    "childrenExpected": true,
+    "typeFile": "inline in WikiTabs.tsx",
+    "notes": "Client component. Expects Tab children. Extracts label/value/content from each Tab child. Renders a tab bar with keyboard navigation (ArrowLeft/ArrowRight) and tab panels. Returns null if no valid tabs found."
+  },
+  "Mermaid": {
+    "file": "src/components/wiki/blocks/Mermaid.tsx",
+    "props": ["chart"],
+    "propTypes": "MermaidProps (local interface): { chart: string }",
+    "childrenExpected": false,
+    "typeFile": "inline in Mermaid.tsx",
+    "notes": "Client component. Renders Mermaid diagram from chart string. Uses mermaid.render with DOMPurify sanitization. Shows error state with syntax details on failure. Theme-aware (dark/light)."
+  },
+  "LawCallout": {
+    "file": "src/components/wiki/blocks/LawCallout.tsx",
+    "props": ["code", "section?", "title?", "children"],
+    "propTypes": "LawCalloutProps from @/types/wiki: { code: LawCalloutCode; section?: string; title?: string; children: React.ReactNode }",
+    "childrenExpected": true,
+    "typeFile": "src/types/wiki.ts",
+    "notes": "Renders a color-coded callout for Philippine building/law codes (nbcp, bp344, ra9514, bp220, pd957, irr). code controls border/bg/eyebrow colors from lawConfig map. section appends to eyebrow label. Falls back to muted generic callout for unknown codes."
+  },
+  "ElaborativeInterrogation": {
+    "file": "src/components/wiki/blocks/ElaborativeInterrogation.tsx",
+    "props": ["promptId", "question", "answer?", "revealText?", "options", "articleId?", "type?", "placeholder?", "existingResponse?"],
+    "propTypes": "ElaborativeInterrogationProps (local interface)",
+    "childrenExpected": false,
+    "typeFile": "inline in ElaborativeInterrogation.tsx",
+    "notes": "Client component. Interactive MCQ or open-ended prompt. options can be native array or MDX string (parsed via parseMdxProp). answer and revealText are aliases (resolvedAnswer = answer || revealText). existingResponse restores prior answer state from DB. Tracks analytics via trackEvent. Submits responses via submitEIResponse server action. DOMPurify sanitizes reveal text."
+  },
+  "TeachBackPrompt": {
+    "file": "src/components/wiki/blocks/TeachBackPrompt.tsx",
+    "props": ["topicId", "topicName", "entryPoint", "trailDayId?"],
+    "propTypes": "TeachBackPromptProps (local interface): { topicId: string; topicName: string; entryPoint: 'wiki' | 'focus_review' | 'trail'; trailDayId?: string }",
+    "childrenExpected": false,
+    "typeFile": "inline in TeachBackPrompt.tsx",
+    "notes": "Client component. Multi-phase teach-back flow: prompt -> submitting -> result (gap analysis with correct_points/gaps/factual_errors/revision_prompt) -> revising -> done. Minimum 20 words to submit. Calls submitTeachBack and submitRevision server actions. Can be dismissed."
+  },
+  "WikiPre": {
+    "file": "src/components/wiki/blocks/WikiPre.tsx",
+    "props": ["children"],
+    "propTypes": "props: any (passthrough — inspects React.Children for mermaid code blocks)",
+    "childrenExpected": true,
+    "typeFile": "none (uses any)",
+    "notes": "Client component. Acts as a custom <pre> handler for MDX. Inspects children for code elements with className='language-mermaid' and delegates to <Mermaid>. Otherwise renders a standard dark-background <pre> block. Passes through all other props to the <pre> element."
+  },
+  "WikiPartHeader": {
+    "file": "src/components/wiki/blocks/WikiPartHeader.tsx",
+    "props": ["partNumber", "title", "subtitle?"],
+    "propTypes": "WikiPartHeaderProps from @/types/wiki: { partNumber: number | string; title: string; subtitle?: string }",
+    "childrenExpected": false,
+    "typeFile": "src/types/wiki.ts",
+    "notes": "Renders 'Part N' eyebrow in camp-cobalt mono, followed by an h2 title and optional subtitle. partNumber renders as text (supports both number and string like 'I', 'II')."
+  },
+  "WikiExamTable": {
+    "file": "src/components/wiki/blocks/WikiExamTable.tsx",
+    "props": ["caption?", "columns", "rows", "hasSourceColumn?"],
+    "propTypes": "WikiTableProps from @/types/wiki: { caption?: string; columns: string[]; rows: WikiTableRow[]; hasSourceColumn?: boolean }",
+    "childrenExpected": false,
+    "typeFile": "src/types/wiki.ts",
+    "notes": "Renders a styled data table with header row from columns. rows can have isSectionHeader (renders full-width cobalt label row), isMostTested (gold highlight), isChanged (shows WikiChangedPill). Source column hidden on mobile. Returns null if no columns or rows."
+  },
+  "WikiChangedPill": {
+    "file": "src/components/wiki/blocks/WikiChangedPill.tsx",
+    "props": ["oldValue?", "className?"],
+    "propTypes": "WikiChangedPillProps (local interface): { oldValue?: string; className?: string }",
+    "childrenExpected": false,
+    "typeFile": "inline in WikiChangedPill.tsx",
+    "notes": "Renders a small gold pill '⟳ 2024' with a tooltip. If oldValue is provided, tooltip reads 'Changed from {oldValue} in 2013 Illustrated IRR'. className is merged via cn(). Used inside WikiExamTable row cells."
+  },
+  "CalloutBox": {
+    "file": "src/components/wiki/blocks/Callout.tsx",
+    "exports": ["Note", "Warn", "Tip", "Example", "CalloutBox", "AlertBox", "ExamTip", "AuthorityContent", "Callout (main)"],
+    "props": ["type", "children", "dismissible?", "onDismiss?"],
+    "propTypes": "{ type: 'most-tested' | 'lea-watch' | 'version-alert'; children: React.ReactNode; dismissible?: boolean; onDismiss?: () => void }",
+    "childrenExpected": true,
+    "typeFile": "inline in Callout.tsx",
+    "notes": "Backward-compatible alias. Delegates to <Callout variant={type}>. The type values map to eyebrow-style variants in the unified Callout component. WikiCalloutBox.tsx re-exports this as 'WikiCalloutBox'."
+  },
+  "Callout": {
+    "file": "src/components/wiki/blocks/Callout.tsx",
+    "props": ["variant?", "title?", "children", "className?", "dismissible?", "onDismiss?", "bordered?", "action?"],
+    "propTypes": "CalloutProps (local interface): { variant?: CalloutVariant; title?: string; children: React.ReactNode; className?: string; dismissible?: boolean; onDismiss?: () => void; bordered?: boolean; action?: CalloutAction }",
+    "childrenExpected": true,
+    "typeFile": "inline in Callout.tsx",
+    "notes": "Unified callout supporting 12 variants: note, warning, tip, example, info, danger, requirement, exam-tip, authority (icon+label layout), and most-tested, lea-watch, version-alert (eyebrow mono-label layout). bordered prop switches to left-border accent style. action renders a link or button at bottom. Dismissible shows X button when dismissible or onDismiss is set. Also exported as named wrappers: Note, Warn, Tip, Example, CalloutBox, AlertBox, ExamTip, AuthorityContent."
+  },
+  "Note": {
+    "file": "src/components/wiki/blocks/Callout.tsx",
+    "props": ["children", "title?", "dismissible?", "onDismiss?"],
+    "propTypes": "Omit<CalloutProps, 'variant'> (variant fixed to 'note')",
+    "childrenExpected": true,
+    "typeFile": "inline in Callout.tsx",
+    "notes": "Convenience wrapper: <Callout variant='note' .../>. Blue info-style callout with Info icon."
+  },
+  "Warn": {
+    "file": "src/components/wiki/blocks/Callout.tsx",
+    "props": ["children", "title?", "dismissible?", "onDismiss?"],
+    "propTypes": "Omit<CalloutProps, 'variant'> (variant fixed to 'warning')",
+    "childrenExpected": true,
+    "typeFile": "inline in Callout.tsx",
+    "notes": "Convenience wrapper: <Callout variant='warning' .../>. Amber warning callout with Warning icon."
+  },
+  "Tip": {
+    "file": "src/components/wiki/blocks/Callout.tsx",
+    "props": ["children", "title?", "dismissible?", "onDismiss?"],
+    "propTypes": "Omit<CalloutProps, 'variant'> (variant fixed to 'tip')",
+    "childrenExpected": true,
+    "typeFile": "inline in Callout.tsx",
+    "notes": "Convenience wrapper: <Callout variant='tip' .../>. Green tip callout with Lightbulb icon."
+  },
+  "Example": {
+    "file": "src/components/wiki/blocks/Callout.tsx",
+    "props": ["children", "title?", "dismissible?", "onDismiss?"],
+    "propTypes": "Omit<CalloutProps, 'variant'> (variant fixed to 'example')",
+    "childrenExpected": true,
+    "typeFile": "inline in Callout.tsx",
+    "notes": "Convenience wrapper: <Callout variant='example' .../>. Cobalt example callout with BookOpen icon."
+  },
+  "AlertBox": {
+    "file": "src/components/wiki/blocks/Callout.tsx",
+    "props": ["type?", "children"],
+    "propTypes": "{ type?: 'requirement' | 'warning' | 'info' | 'danger'; children: React.ReactNode }",
+    "childrenExpected": true,
+    "typeFile": "inline in Callout.tsx",
+    "notes": "Backward-compatible alias. Delegates to <Callout variant={type}> with default 'info'. No title/dismissible support (minimal compat interface)."
+  },
+  "ExamTip": {
+    "file": "src/components/wiki/blocks/Callout.tsx",
+    "props": ["children"],
+    "propTypes": "{ children: React.ReactNode } (variant fixed to 'exam-tip')",
+    "childrenExpected": true,
+    "typeFile": "inline in Callout.tsx",
+    "notes": "Convenience wrapper: <Callout variant='exam-tip' .../>. Target icon, 'Exam Tip' label. Also re-exported from ExamTip.tsx for backward compat."
+  },
+  "AuthorityContent": {
+    "file": "src/components/wiki/blocks/Callout.tsx",
+    "props": ["children"],
+    "propTypes": "{ children: React.ReactNode } (variant fixed to 'authority')",
+    "childrenExpected": true,
+    "typeFile": "inline in Callout.tsx",
+    "notes": "Convenience wrapper: <Callout variant='authority' .../>. Scales icon, 'Legal Authority' label, italic body text."
+  },
+  "Accordion": {
+    "file": "src/components/ui/accordion.tsx",
+    "props": ["children", "allowMultiple?"],
+    "propTypes": "AccordionProps: { children: ReactNode; allowMultiple?: boolean }",
+    "childrenExpected": true,
+    "typeFile": "src/components/ui/accordion.tsx",
+    "notes": "Client component. WikiAccordion.tsx re-exports this. Expects AccordionItem children. When allowMultiple is false (default), injects _index into each AccordionItem for single-open controlled mode. Renders a bordered container with child items."
+  },
+  "AccordionItem": {
+    "file": "src/components/ui/accordion.tsx",
+    "props": ["title", "children", "_index?"],
+    "propTypes": "AccordionItemProps: { title: string; children: ReactNode; _index?: number }",
+    "childrenExpected": true,
+    "typeFile": "src/components/ui/accordion.tsx",
+    "notes": "Used as child of Accordion. _index is injected by parent in controlled mode. Can also be used standalone with localOpen state. Renders a disclosure button with chevron and collapsible content region."
+  },
+  "SubjectSnapshot": {
+    "file": "src/components/wiki/blocks/SubjectSnapshot.tsx",
+    "props": ["items"],
+    "propTypes": "{ items: SnapshotItem[] | string } where SnapshotItem = { label: string; value: string; hero?: boolean }",
+    "childrenExpected": false,
+    "typeFile": "inline in SubjectSnapshot.tsx",
+    "notes": "Renders a compact metadata bar with hero stat + supporting grid. Auto-detects hero item (hero: true, or value contains '%', or label contains 'weight'). Falls back to flat grid if no hero detected. items can be MDX string parsed via parseMdxProp."
+  },
+  "RevealBlock": {
+    "file": "src/components/wiki/blocks/RevealBlock.tsx",
+    "props": ["children", "prompt?", "label?", "blurRadius?", "defaultRevealed?"],
+    "propTypes": "RevealBlockProps (local interface): { children: React.ReactNode; prompt?: string; label?: string; blurRadius?: number; defaultRevealed?: boolean }",
+    "childrenExpected": true,
+    "typeFile": "inline in RevealBlock.tsx",
+    "notes": "Client component. Blurs children content; user drags a slider handle to reveal progressively. Keyboard accessible (Arrow keys, Home/End). Eye/EyeSlash toggle button for quick show/hide. Uses @use-gesture/react for drag interaction. blurRadius defaults to 12px. Touch-friendly with larger handle on mobile."
+  },
+  "ProcessFlow": {
+    "file": "src/components/wiki/blocks/ProcessFlow.tsx",
+    "props": ["children"],
+    "propTypes": "{ children: React.ReactNode }",
+    "childrenExpected": true,
+    "typeFile": "inline in ProcessFlow.tsx",
+    "notes": "Simple wrapper that styles an <ol> as a timeline with cobalt circle markers. Expects children to be an <ol> with <li> items. Applies extensive CSS via className string for list markers, spacing, and strong text coloring."
+  },
+  "PrequestionGate": {
+    "file": "src/components/wiki/blocks/PrequestionGate.tsx",
+    "props": ["topicId", "topicName", "articleSlug?", "children", "onMissedQuestions?"],
+    "propTypes": "PrequestionGateProps (local interface): { topicId: string; topicName: string; articleSlug?: string; children: ReactNode; onMissedQuestions?: (questionIds: string[]) => void }",
+    "childrenExpected": true,
+    "typeFile": "inline in PrequestionGate.tsx",
+    "notes": "Client component. Full-screen gate that fetches 3 prequestions on mount. Phases: loading -> questions -> summary -> article. Auto-submits on option select (tap-to-answer). Shows feedback (correct/not quite) with rationale. Summary shows score and missed concepts. Calls onMissedQuestions callback with missed question IDs. Fails open (shows article) on error."
+  },
+  "KeyValues": {
+    "file": "src/components/wiki/blocks/KeyValues.tsx",
+    "props": ["items"],
+    "propTypes": "{ items: KeyValueItem[] | string } where KeyValueItem = { value: string; label: string }",
+    "childrenExpected": false,
+    "typeFile": "inline in KeyValues.tsx",
+    "notes": "Renders a responsive grid of value/label cards. Font size adapts to value length: >30 chars = 14px medium, >12 = 18px semibold, <=12 = 28px bold. items can be MDX string parsed via parseMdxProp. Returns null if empty."
+  },
+  "InlineQuiz": {
+    "file": "src/components/wiki/blocks/InlineQuiz.tsx",
+    "props": ["question", "options", "rationale"],
+    "propTypes": "InlineQuizProps (local interface): { question: string; options: QuizOption[] | string; rationale: string }",
+    "childrenExpected": false,
+    "typeFile": "inline in InlineQuiz.tsx",
+    "notes": "Client component. Inline MCQ with cobalt header 'Quick Check'. options can be MDX string parsed via parseMdxProp. Option letters A-F. After selection, shows correct/incorrect styling and rationale text. Single-attempt only (isAnswered gate)."
+  },
+  "GenericBlock": {
+    "file": "src/components/wiki/blocks/GenericBlock.tsx",
+    "props": ["children?"],
+    "propTypes": "{ children?: React.ReactNode }",
+    "childrenExpected": true,
+    "typeFile": "inline in GenericBlock.tsx",
+    "notes": "Passthrough wrapper for AI-hallucinated MDX component names. Renders children in a subtle bordered box so content is visible without crashing the MDX renderer."
+  },
+  "SPP206RefServices": {
+    "file": "src/components/wiki/blocks/GenericBlock.tsx",
+    "props": [],
+    "propTypes": "() => null (no-op stub)",
+    "childrenExpected": false,
+    "typeFile": "inline in GenericBlock.tsx",
+    "notes": "No-op stub for self-closing reference tag already inlined in article text. Always returns null."
+  },
+  "SPP207RefServices": {
+    "file": "src/components/wiki/blocks/GenericBlock.tsx",
+    "props": [],
+    "propTypes": "() => null (no-op stub)",
+    "childrenExpected": false,
+    "typeFile": "inline in GenericBlock.tsx",
+    "notes": "No-op stub for self-closing reference tag already inlined in article text. Always returns null."
+  },
+  "FormulaBlock": {
+    "file": "src/components/wiki/blocks/FormulaBlock.tsx",
+    "props": ["label", "steps"],
+    "propTypes": "{ label: string; steps: FormulaStep[] | string } where FormulaStep = { variable: string; operator: string; operands: string[]; comment?: string; divides?: boolean; symbol?: '×' | '÷' | '−' | '+' }",
+    "childrenExpected": false,
+    "typeFile": "inline in FormulaBlock.tsx",
+    "notes": "Renders formula breakdown steps in a styled surface. label renders as mono eyebrow. Each step shows variable (highlight), operator, operands with inline symbols, and optional // comment. steps can be MDX string parsed via parseMdxProp. divides prop defaults operator symbol to '÷'."
+  },
+  "ComparisonTable": {
+    "file": "src/components/wiki/blocks/ComparisonTable.tsx",
+    "props": ["children"],
+    "propTypes": "{ children: React.ReactNode }",
+    "childrenExpected": true,
+    "typeFile": "inline in ComparisonTable.tsx",
+    "notes": "Wrapper that styles an HTML <table> with cobalt header row, zebra-striped body, and compact cell padding. Expects children to be a <table> with <thead> and <tbody>. Applies CSS via className strings for thead, th, tbody tr:nth-child, td, and td strong styling."
+  },
+  "WikiCalloutBox": {
+    "file": "src/components/wiki/blocks/WikiCalloutBox.tsx",
+    "props": ["type", "children", "dismissible?", "onDismiss?"],
+    "propTypes": "re-exports CalloutBox from ./Callout: { type: 'most-tested' | 'lea-watch' | 'version-alert'; children: React.ReactNode; dismissible?: boolean; onDismiss?: () => void }",
+    "childrenExpected": true,
+    "typeFile": "inline in Callout.tsx",
+    "notes": "Backward-compatible re-export of CalloutBox as WikiCalloutBox. See CalloutBox entry for details."
+  },
+  "WikiAccordion": {
+    "file": "src/components/wiki/blocks/WikiAccordion.tsx",
+    "props": ["children", "allowMultiple?"],
+    "propTypes": "re-exports Accordion from ./Accordion -> @/components/ui/accordion. AccordionProps: { children: ReactNode; allowMultiple?: boolean }",
+    "childrenExpected": true,
+    "typeFile": "src/components/ui/accordion.tsx",
+    "notes": "Backward-compatible re-export. Also re-exports AccordionItem (props: title, children, _index?). See Accordion and AccordionItem entries for full details."
+  },
+  "ExamTip_reExport": {
+    "file": "src/components/wiki/blocks/ExamTip.tsx",
+    "props": ["children"],
+    "propTypes": "re-exports ExamTip from ./Callout: { children: React.ReactNode } (variant fixed to 'exam-tip')",
+    "childrenExpected": true,
+    "typeFile": "inline in Callout.tsx",
+    "notes": "Standalone re-export file for backward compatibility. Simply re-exports ExamTip from ./Callout. The component renders <Callout variant='exam-tip'>. See main ExamTip entry for details."
+  }
+}

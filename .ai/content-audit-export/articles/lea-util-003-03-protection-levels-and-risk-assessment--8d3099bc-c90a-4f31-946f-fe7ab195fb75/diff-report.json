@@ -1,48 +1,38 @@
 {
   "article_id": "8d3099bc-c90a-4f31-946f-fe7ab195fb75",
   "slug": "lea-util-003-03-protection-levels-and-risk-assessment",
-  "generated_at": "2026-05-04T00:06:24.935Z",
-  "old_hash": "sha256:4a378c804c4fe84e091f7126fb771caa77b115e2cb064b4f5096669c8751b05c",
-  "new_hash": "sha256:69fc640753c57be5f7568fe945cb4ffa90c48d70d0a6989aee63f231805afab6",
-  "original_hash": "sha256:4a378c804c4fe84e091f7126fb771caa77b115e2cb064b4f5096669c8751b05c",
+  "generated_at": "2026-05-04T02:17:00.139Z",
+  "old_hash": "sha256:d3d14d16502a1882e30ee77218ffe8c296e795654433d48568e14ee43e20f6ef",
+  "new_hash": "sha256:d3d14d16502a1882e30ee77218ffe8c296e795654433d48568e14ee43e20f6ef",
+  "original_hash": "sha256:d3d14d16502a1882e30ee77218ffe8c296e795654433d48568e14ee43e20f6ef",
   "normalized_hash": "sha256:69fc640753c57be5f7568fe945cb4ffa90c48d70d0a6989aee63f231805afab6",
-  "candidate_hash": "sha256:69fc640753c57be5f7568fe945cb4ffa90c48d70d0a6989aee63f231805afab6",
-  "changed": true,
-  "changed_line_count": 347,
+  "candidate_hash": "sha256:d3d14d16502a1882e30ee77218ffe8c296e795654433d48568e14ee43e20f6ef",
+  "changed": false,
+  "changed_line_count": 0,
   "inserted_line_count": 0,
-  "deleted_line_count": 7,
+  "deleted_line_count": 0,
   "ui_blocks_original_count": 6,
-  "ui_blocks_candidate_count": 0,
-  "ui_blocks_changed_count": 6,
+  "ui_blocks_candidate_count": 6,
+  "ui_blocks_changed_count": 0,
   "ui_blocks_count": 6,
-  "unresolved_placeholders_count": 1,
-  "preserved_blocks_count": 0,
+  "unresolved_placeholders_count": 0,
+  "preserved_blocks_count": 6,
   "changed_text_summary": {
-    "changed": 347,
+    "changed": 0,
     "inserted": 0,
-    "deleted": 7,
-    "original_line_count": 389,
-    "candidate_line_count": 382
+    "deleted": 0,
+    "original_line_count": 397,
+    "candidate_line_count": 397
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0002",
-      "ui_0003",
-      "ui_0004",
-      "ui_0005",
-      "ui_0006",
-      "ui_0008"
-    ],
-    "changed_count": 6
+    "missing_block_ids": [],
+    "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate contains unresolved UI block placeholders.",
-    "Candidate is missing 6 preserved UI block(s)."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 6 preserved UI block(s)."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

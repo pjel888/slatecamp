@@ -18,7 +18,7 @@ The Licensure Examination for Architects comprises multiple subject areas design
 
 ### Weighted Average and Minimum Passing Requirement
 
-[SLATECAMP_UI_BLOCK:ui_0007 component="Warn" status="preserved"]
+<Warn>The dual-threshold passing standard is critical: **70% weighted average overall** AND **no subject below 50%**. A candidate scoring 85% in design but 40% in building science fails — even if the average exceeds 70%. Both conditions must be satisfied simultaneously. This is one of the most commonly tested LEA law concepts.</Warn>
 
 RA 9266, Section 15 establishes a _weighted average of 70% as the mandatory passing standard for the entire LEA_. This means a candidate's composite score across all subjects must reach 70 percent. However, the law imposes a critical safeguard: _no individual subject may score below 50%_. This dual-threshold approach prevents candidates from advancing into architectural practice with deficiencies in foundational areas, even if compensated by high performance elsewhere. For example, a candidate scoring 85 percent in design subjects cannot pass if another subject yields only 40 percent, regardless of the 70 percent average. The Board computes the weighted average according to established formulas that reflect the relative importance of each subject to professional practice.
 
@@ -30,19 +30,23 @@ Within _30 days after the examination_, the Board must announce LEA results to a
 
 Candidates who fail the LEA may retake the examination, but must comply with established retake procedures. While RA 9266 does not specify maximum number of attempts, candidates must reapply and resubmit required documents for each subsequent examination session. Retaking candidates must maintain current NBI clearance and Diversified Architectural Experience credentials. The Board may refuse registration or retake applications from candidates whose original applications contained fraudulent evidence or misrepresentation. Successful candidates in any retake attempt achieve the same Certificate of Registration status as first-time passers, with no notation of previous failures on the certificate itself.
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
+<LawCallout code="ra9266" section="Section 14 - Subjects for Examination">
+Legal Basis: RA 9266 (Architecture Act of 2004), Sections 16 (Examination Scope) and 17 (Rating and Re-examination). The LEA covers subject areas prescribed by the Board with PRC approval.
+</LawCallout>
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
+<LawCallout code="ra9266" section="Section 15 - Rating System">
+CRITICAL: The 50% floor applies INDIVIDUALLY to each subject area, not as an average. A candidate scoring 80% in four subjects but 45% in one subject FAILS, even if the overall average exceeds 70%. Both conditions must be met: (1) General weighted average ≥ 70%, AND (2) No grade below 50% in any subject.
+</LawCallout>
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="ExamTip" status="preserved"]
+<ExamTip />
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="Tip" status="preserved"]
+<Tip />
 
 ---
 
 
 
-<ArticleMedia type="image" caption="LEA Structure — Subject Areas, Weights, and Passing Standards" description="Pie/donut chart showing LEA subject area weight distribution: Professional Practice (~25%), Structural Design (~20%), Building Utilities (~15%), Architectural Design & Site Planning (~15%), History & Theory (~15%), Building Materials (~10%). Passing standard: 70% overall, no subject below 50%. Retake policy and exam schedule information in side panel." />
+<ArticleMedia type="image" caption="LEA Structure — Subject Areas, Weights, and Passing Standards" alt="Pie/donut chart showing LEA subject area weight distribution: Professional Practice (~25%), Structural Design (~20%), Building Utilities (~15%), Architectural Design & Site Planning (~15%), History & Theory (~15%), Building Materials (~10%). Passing standard: 70% overall, no subject below 50%. Retake policy and exam schedule information in side panel." />
 ## Related Articles
 
 - [RA 9266: Structure and Key Definitions](lea-prac-law-001)

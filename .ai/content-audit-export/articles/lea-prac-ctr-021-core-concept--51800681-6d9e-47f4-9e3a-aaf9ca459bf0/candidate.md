@@ -54,11 +54,11 @@ The CIAC award's finality creates pressure for thorough arbitration procedure. B
 
 **Question Pattern 5:** CIAC vs. court litigation—What happens if a dispute is filed in regular court and one party invokes CIAC jurisdiction? (Tests CIAC's exclusive jurisdiction and court deference)
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+<Tip>Remember: CIAC = Construction Industry Arbitration Commission; three requisites: dispute from construction contract, parties in Philippines, agreement to arbitrate. CIAC jurisdiction is mandatory and non-waivable. Award executory after 15 days. Appeal grounds limited. CIAC is primary dispute resolution path, not optional alternative.</Tip>
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeList" status="preserved"]
+<WikiMistakeList mistakes={["Assuming CIAC applies only to large or public projects (CIAC jurisdiction applies to any construction contract regardless of size)", "Thinking parties can avoid CIAC by specifying another arbitral body in the contract (CIAC jurisdiction is mandatory per law; contract forum selection is overridden)", "Confusing CIAC jurisdiction with court litigation (CIAC arbitration is separate from civil court process)", "Believing CIAC awards are subject to extensive court review (Appeals limited to excess authority, non-compliance, corruption, manifest bias only)", "Assuming arbitration agreement must be signed after dispute arises (Arbitration clause in original contract satisfies the agreement requirement)", "Thinking CIAC jurisdiction requires both parties' consent after dispute (If contract has arbitration clause, consent is established; unilateral invocation triggers jurisdiction)", "Confusing the 15-day award executability timeline with appeal deadline (Award becomes executory in 15 days unless TRO issued; this is separate from appeal rights)", "Assuming CIAC is optional or recommendatory (CIAC jurisdiction is mandatory when dispute is from construction contract)"] />
 
 ---
 

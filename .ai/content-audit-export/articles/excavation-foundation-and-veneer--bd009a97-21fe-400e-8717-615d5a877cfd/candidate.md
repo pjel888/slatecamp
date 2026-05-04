@@ -193,7 +193,11 @@ D. 5 days, written notice posted on the project fence
 
 > **Answer: C — 10 days, written notice to the adjoining property owner**
 >
-[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+<LawCallout code="nbcp" title="not the Building Official, not a general posting. This 10-day window allows the">
+
+Per PD 1096, Rule XII, Sec. 1202.2.d, the party responsible for the excavation must notify all adjoining property owners in writing at least 10 days before excavation commences. The notice is directed to the property owner — not the Building Official, not a general posting. This 10-day window allows the neighbor to engage their own structural engineer, document pre-existing conditions, and arrange for access. Option A is wrong on both the period (7 days) and the form (verbal). Option B has the wrong period (15 days) and wrong recipient (Building Official). Option D is wrong on the period (5 days) and the method (fence posting is insufficient).
+
+</LawCallout>
 
 ---
 
@@ -257,7 +261,7 @@ ALE Swipe: Minimum footing depth = 600 mm below grade (in non-expansive soils). 
 
 
 
-<ArticleMedia type="image" caption="Excavation and Foundation Protection — Cross-Section with Shoring and Underpinning" description="Cross-section of urban excavation showing: excavation depth with shoring system (sheet piles, soldier piles with lagging), adjoining building footing underpinning (pit method or micropiles), 10-day notice requirement zone, soil bearing capacity testing locations (NSCP Table 304.1), masonry veneer anchorage (tie spacing complying with PD 1096 Rule XVI), and drainage system at foundation base." />
+<ArticleMedia type="image" caption="Excavation and Foundation Protection — Cross-Section with Shoring and Underpinning" alt="Cross-section of urban excavation showing: excavation depth with shoring system (sheet piles, soldier piles with lagging), adjoining building footing underpinning (pit method or micropiles), 10-day notice requirement zone, soil bearing capacity testing locations (NSCP Table 304.1), masonry veneer anchorage (tie spacing complying with PD 1096 Rule XVI), and drainage system at foundation base." />
 ## Cross‑References
 
 **Geological Hazards**, **Location On Property And Exterior Walls**, **Topography And Slope Analysis**, **Sanitation And Water Supply**

@@ -16,7 +16,11 @@ You are designing a hillside eco-resort in Baguio on a 35-degree slope prone to 
 
 ## Core Concepts and Memory Aid
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+<Tip>
+
+**Memory Aid: "I-S-M = Inca Stone Magic."** Three principles: Interlocking (ashlar masonry with trapezoidal joints — no mortar needed), Shaping (stones shaped by hammering/pecking, not cutting — the "Inca puzzle"), S (Seismic resilience — trapezoidal doors/windows and battered walls distribute earthquake forces). All three translate directly to Philippine seismic design principles.
+
+</Tip>
 
 <Tip>
 

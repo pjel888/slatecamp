@@ -1,33 +1,32 @@
 # Content Diff Report: lea-prac-frm-019-project-management-in-an-architectural-firm-scope-schedule-budget-and-communication-control
 
-Generated: 2026-05-04T00:06:51.167Z
+Generated: 2026-05-04T02:17:35.099Z
 Article ID: 85529595-d219-4b10-9bd9-383d125da8c3
-Changed: true
-Safe to push locally: false
+Changed: false
+Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:85583d1c8a6b1b075a845cb4cc064b8bba1046b46ee20e50c25736aaf88bda24`
+- Original: `sha256:92745b580191a1205f9fb7f65135d012503497a8e921b6f5d061736c40b7bca1`
 - Normalized: `sha256:26ef0d74e1af0797b1adf06e6ef0bc9e7b93c158183359d358566756a900471a`
-- Candidate: `sha256:26ef0d74e1af0797b1adf06e6ef0bc9e7b93c158183359d358566756a900471a`
+- Candidate: `sha256:92745b580191a1205f9fb7f65135d012503497a8e921b6f5d061736c40b7bca1`
 
 ## Line summary
 
-- Changed lines: 45
-- Inserted lines: 1
+- Changed lines: 0
+- Inserted lines: 0
 - Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 1
-- UI blocks preserved: 0
-- UI blocks changed/missing: 1
-- Unresolved placeholders: 1
+- UI blocks preserved: 1
+- UI blocks changed/missing: 0
+- Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate contains unresolved UI block placeholders.
-- Candidate is missing 1 preserved UI block(s).
+- None
 
 ## Warnings
 

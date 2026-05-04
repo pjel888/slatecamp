@@ -24,11 +24,15 @@ Lump sum fees are also appropriate when the architect has internal efficiency ad
 
 ### Inappropriate Uses of Lump Sum Fixed Fee
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
+<ExamTip>
+  **LEA Priority — Fee Computation:** Know the five compensation methods (percentage-of-PCC, MDPE, lump sum, per diem/retainer, reimbursable expenses). Master the sliding scale for Groups 1-3 (5%→4%→3%→2%→1% for successive ₱50M brackets). Remember: DAEDS = all disciplines; DADS ≈ 60% of DAEDS (architecture only). Group 9 renovation = 150% of base group rate.
+</ExamTip>
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
+<LawCallout code="irr" section="Architect's Guidelines / SPP 202" title="Fee Computation — Regulatory Basis">
+Fee computation under the Architect's Guidelines follows SPP 202 classification groups and the DAEDS/DADS framework. The percentage-of-PCC method applies group-specific rates to Project Construction Cost. MDPE uses direct personnel expense multiplied by an agreed factor. Lump-sum fees are negotiated based on scope. All methods must be documented in the owner-architect agreement.
+</LawCallout>
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="KeyValues" status="preserved"]
+<KeyValues items=[{"value": "5-12%", "label": "DAEDS Fee Range"}, {"value": "50M", "label": "PCC Bracket Threshold"}, {"value": "10 Groups", "label": "Project Classification"}, {"value": "150%", "label": "Renovation Multiplier"}] />
 Lump sum fees are highly risky for projects with uncertain scope, innovative design, emerging programs, or complex site conditions. Projects involving significant pre-design work (programming, feasibility analysis) should not use lump sum fees because scope is not adequately defined. Design-Build or CM at Risk projects with evolving scope are unsuitable for lump sum architect fees because the architect's scope changes as the project develops.
 
 Lump sum fees are inappropriate for projects with constrained timelines, demanding regulatory environments, or complex stakeholder coordination where scope creep is predictable. Projects with client uncertainty about program or aesthetics should avoid lump sum fees; the inevitable design revisions and refinements will exhaust the architect's fee.

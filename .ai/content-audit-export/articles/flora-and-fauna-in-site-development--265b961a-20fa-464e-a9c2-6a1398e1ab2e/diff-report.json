@@ -1,46 +1,38 @@
 {
   "article_id": "265b961a-20fa-464e-a9c2-6a1398e1ab2e",
   "slug": "flora-and-fauna-in-site-development",
-  "generated_at": "2026-05-04T00:06:05.548Z",
-  "old_hash": "sha256:13aead3f866527bd7801fced8312982d6bc8c971062f4c0c88e359692637c243",
-  "new_hash": "sha256:6a87a499473b7a3a08f25b5423e32b87e918731407c2f1df07cddb776aa8da4e",
-  "original_hash": "sha256:13aead3f866527bd7801fced8312982d6bc8c971062f4c0c88e359692637c243",
+  "generated_at": "2026-05-04T02:16:35.504Z",
+  "old_hash": "sha256:e280825e0f5dfcf4ff1a57dfd2531187274fc1d2100bac7ec2acaa7347a36c3a",
+  "new_hash": "sha256:e280825e0f5dfcf4ff1a57dfd2531187274fc1d2100bac7ec2acaa7347a36c3a",
+  "original_hash": "sha256:e280825e0f5dfcf4ff1a57dfd2531187274fc1d2100bac7ec2acaa7347a36c3a",
   "normalized_hash": "sha256:6a87a499473b7a3a08f25b5423e32b87e918731407c2f1df07cddb776aa8da4e",
-  "candidate_hash": "sha256:6a87a499473b7a3a08f25b5423e32b87e918731407c2f1df07cddb776aa8da4e",
-  "changed": true,
-  "changed_line_count": 135,
+  "candidate_hash": "sha256:e280825e0f5dfcf4ff1a57dfd2531187274fc1d2100bac7ec2acaa7347a36c3a",
+  "changed": false,
+  "changed_line_count": 0,
   "inserted_line_count": 0,
-  "deleted_line_count": 20,
+  "deleted_line_count": 0,
   "ui_blocks_original_count": 4,
-  "ui_blocks_candidate_count": 0,
-  "ui_blocks_changed_count": 4,
+  "ui_blocks_candidate_count": 4,
+  "ui_blocks_changed_count": 0,
   "ui_blocks_count": 4,
-  "unresolved_placeholders_count": 1,
-  "preserved_blocks_count": 0,
+  "unresolved_placeholders_count": 0,
+  "preserved_blocks_count": 4,
   "changed_text_summary": {
-    "changed": 135,
+    "changed": 0,
     "inserted": 0,
-    "deleted": 20,
-    "original_line_count": 165,
-    "candidate_line_count": 145
+    "deleted": 0,
+    "original_line_count": 161,
+    "candidate_line_count": 161
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0046",
-      "ui_0047",
-      "ui_0048",
-      "ui_0049"
-    ],
-    "changed_count": 4
+    "missing_block_ids": [],
+    "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate contains unresolved UI block placeholders.",
-    "Candidate is missing 4 preserved UI block(s)."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 4 preserved UI block(s)."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

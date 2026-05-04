@@ -1,28 +1,19 @@
 {
-  "attempted_at": "2026-05-04T00:06:04.481Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:06:05.864Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "original.md hash does not match article metadata export hash.",
-    "Remote Supabase content differs from export baseline; refusing stale push.",
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "Remote Supabase content differs from export baseline; refusing stale push."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "9796e088-8c83-4a6c-9599-51afd69d0e81",
   "slug": "lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role",
-  "preparation_actions": [
-    "auto_generated_diff"
-  ],
-  "remote_hash_before": "sha256:e4176f25250d9e4c399165890290bdcc7837491753fce2fd157c58231536af03",
-  "original_hash": "sha256:3ac1088bae2e2cee703e30d81f0983120077fe7102506023a3cfbc7996f73a4f",
-  "candidate_hash": "sha256:4627bfdbdef8d41adaca32c775a8bbe5cf10794e75e39dc7ac06f0e381fd1400",
+  "preparation_actions": [],
+  "remote_hash_before": "sha256:078a53bf2d83fafcd8057bf21b68e612d449d66903f9c3fc0fb5d16263533613",
+  "original_hash": "sha256:4627bfdbdef8d41adaca32c775a8bbe5cf10794e75e39dc7ac06f0e381fd1400",
+  "candidate_hash": "sha256:078a53bf2d83fafcd8057bf21b68e612d449d66903f9c3fc0fb5d16263533613",
   "stale_check_passed": false,
-  "remote_updated_at_before": "2026-05-03T13:50:13.028309+00:00"
+  "remote_updated_at_before": "2026-05-04T01:59:34.376769+00:00"
 }

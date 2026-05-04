@@ -1,6 +1,8 @@
 ## What You Need to Know for the LEA
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
+<Callout>
+The LEA tests your knowledge of Hindu temple structure (shikhara towers), Buddhist monuments (stupas), and Mughal architecture (tombs and gardens). Recognize key buildings, understand their spatial organization, and distinguish temple typologies and periods.
+</Callout>
 
 ## Learning Goal
 
@@ -16,11 +18,17 @@ Indian architecture reflects millennia of religious and dynastic development acr
 
 The **shikhara** exemplifies Hindu temple design: a curvilinear or pyramidal tower rising above the sanctum (garbhagriha), serving as both structural frame and cosmological symbol linking earth to heaven. South Indian temples developed alternate forms (gopura gateway towers) and added vast walled precincts with subsidiary shrines, water channels, and sculpture galleries. Buddhist **stupas** represent the Buddha's body as a dome; devotees walk around them in clockwise direction (pradakshina), experiencing the relic chamber as inaccessible but powerfully present at the dome's core. Mughal monuments like the **Taj Mahal** combine garden geometry (chahar bagh: four-part garden divided by water channels) with marble inlay (pietra dura), calligraphy, and domed chambers that create interlocking visual and spatial hierarchies.
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+<Tip>**Three Indian architectural traditions—testable distinctions:**
+
+**Hindu temples:** Shikhara tower above garbhagriha sanctum. North Indian (Nagara): shikhara-dominant, dense sculpture. South Indian (Dravidian): gopura-dominant, gopura gateways, vast walled precincts.
+
+**Buddhist stupas:** Hemispherical dome encasing relics. Pradakshina (clockwise circumambulation) as worship. Sanctum inaccessible; relic presence spiritual, not visual.
+
+**Mughal monuments:** Chahar bagh (4-part garden), domed chambers, pietra dura inlay (colored stone), symmetrical axes. Example: Taj Mahal.</Tip>
 
 Regional variation is crucial: North Indian temples feature dense sculptural programs and recessed entrances; South Indian temples emphasize gopura towers and columned halls (mandapa) with narrow sanctuary access. Buddhist sites like **Sanchi** developed across centuries with stone railings, gateways, and expanded stupas reflecting evolving patronage. Mughal architecture concentrated in Delhi, Agra, and Lahore, introducing the dome as a primary organizing element and establishing garden-tomb complexes as a new typology.
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
+<Note>North Indian (Nagara) vs. South Indian (Dravidian) temple distinction is LEA-tested: Nagara temples are shikhara-dominant (tall tower above sanctum), feature corbeled arches, and dense sculptural programs. Dravidian temples are gopura-dominant (massive gateway towers), feature mandapa columned halls, and emphasize large walled precincts. Understanding this regional typology prevents conflating distinct traditions and demonstrates regional-chronological knowledge.</Note>
 
 For detailed coverage of Mughal architecture including the Taj Mahal, charbagh gardens, and parchin kari inlay, see the dedicated article on Mughal Architecture.
 
@@ -30,19 +38,21 @@ For detailed coverage of Mughal architecture including the Taj Mahal, charbagh g
 
 ## Key Facts and Testable Items
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiExamTable" status="preserved"]
+<WikiExamTable headers={["Building/Monument", "Type", "Architect/Patron", "Date", "Location", "Key Features"]} rows={[["**Sanchi Stupa**", "Buddhist Monument", "Ashoka (original nucleus), Shunga dynasty (stone enlargement)", "3rd century BCE (original); expanded 2nd–1st century BCE", "Madhya Pradesh", "Stone dome, gate reliefs, circumambulatory path, relic chamber"], ["**Brihadeshvara Temple**", "Hindu Temple", "Raja Raja Chola I", "1003–1010 CE", "Thanjavur, Tamil Nadu", "Granite shikhara, 59.82m vimana tower (216 ft), monolithic cupola (80-ton kumbam), extensive sculpture"], ["**Khajuraho Temple Complex**", "Hindu Temple Group", "Chandella Dynasty", "10th–11th century", "Madhya Pradesh", "Shikhara clusters, erotic sculpture, sandstone construction, mandapa halls"], ["**Taj Mahal**", "Mausoleum", "Emperor Shah Jahan (principal architect: Ustad Ahmad Lahori)", "1632–1648 (mausoleum); 1632–1653 (complete complex)", "Agra", "Marble dome, chahar bagh, pietra dura inlay, axial symmetry, riverside setting, 20,000 artisans"], ["**Fatehpur Sikri Palace Complex**", "Palace & City", "Emperor Akbar", "1571–1585", "Agra", "Red sandstone, water channels, courtyards, jali screens, mixed Hindu-Mughal style"], ["**Humayun's Tomb**", "Mausoleum", "Humayun's wives (designer: Mirak Mirza Ghias)", "1565–1572", "Delhi", "Double dome, chahar bagh, red sandstone, precursor to Taj Mahal"]]} />
 
 ## How It's Tested on the LEA
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="ExamTip" status="preserved"]
-[SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
-[SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
+<ExamTip>**Pattern 1:** Identity-and-features questions. "A shikhara tower with dense sculptural coverage and corbeled arches, built in sandstone during the 10th–11th century in Madhya Pradesh, belongs to which temple complex?" (Answer: Khajuraho.) Expect to match building characteristics, materials, dates, and regions.
+</ExamTip>
+<ExamTip>**Pattern 2:** Spatial-organization questions. "A Mughal garden divided by water channels into four quadrants, with a mausoleum positioned at the intersection, exemplifies which garden type?" (Answer: chahar bagh.) Expect to identify garden plans, temple precincts, and stupa circuits.
+</ExamTip>
+<ExamTip>**Pattern 3:** Typology and comparison. "How does a Hindu shikhara differ from a Buddhist stupa in function and form?" Expect to distinguish vertical tower logic from domical enclosure, religious purpose, and decorative program.</ExamTip>
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0008 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="** Confusing shikhara with gopura. Shikhara crowns the sanctum (garbhagriha) directly above the shrine; gopura is a monumental gateway tower at temple entrances. Both are vertical elements, but gopura is secular-administrative while shikhara is cosmic-spiritual" correction="Mistake 2:** Dating Mughal monuments to the medieval period without specificity. The Taj Mahal is Mughal (17th century), not medieval Hindu (10th–12th century)." context="Know the Mughal chronology: Akbar (16th century), Jahangir (early 17th), Shah Jahan (mid-17th), Aurangzeb (late 17th)." />
 
-[SLATECAMP_UI_BLOCK:ui_0009 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="** Treating stupa and temple as interchangeable. Stupas enshrine relics and emphasize circumambulation; temples enshrine a deity and emphasize axial entry to a sanctum. Stupas are Buddhist; temples are Hindu or Jain. Their interior logic differs fundamentally" correction="Mistake 4:** Ignoring regional distinctions. North and South Indian temples differ in plan, elevation, and decoration. Southern temples (Dravidian) feature gopura-dominant plans; Northern temples (Nagara) feature shikhara-dominant plans." context="Don't assume all Hindu temples follow the same formula." />
 
 ## Key Terms
 
@@ -57,7 +67,9 @@ For detailed coverage of Mughal architecture including the Taj Mahal, charbagh g
 - **Mandapa**: Columned hall in a Hindu temple, serving as transitional space between entrance and sanctum.
 - **Jali**: Perforated stone screen used in Mughal architecture for privacy and light diffusion.
 
-[SLATECAMP_UI_BLOCK:ui_0010 component="Warn" status="preserved"]
+<Warn>Do not confuse shikhara (Hindu temple tower above sanctum) with gopura (monumental gateway tower, especially in South Indian temples). Shikhara is cosmic-spiritual symbolism; gopura is administrative entrance marker. Both are vertical, but their functions and placement differ fundamentally. Similarly, do not treat stupas as interchangeable with temples: stupas are Buddhist, house relics, and emphasize circumambulation; temples are Hindu, house deities, and emphasize axial entry. These distinctions are directly tested on the LEA.</Warn>
+
+<ArticleMedia id="media-hist-007-01-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparative diagram of Hindu (shikhara tower, gopura gateway), Buddhist (stupa, chaitya hall), and Mughal (chahar bagh garden, iwan) architectural traditions in India, showing contrasting building types, spatial organization, and key monuments." caption="Indian Architecture — Hindu, Buddhist, Mughal Comparison" suggestedAsset="Style comparison illustration" placementIntent="Style comparison for architectural period" />
 
 ## Related Articles
 

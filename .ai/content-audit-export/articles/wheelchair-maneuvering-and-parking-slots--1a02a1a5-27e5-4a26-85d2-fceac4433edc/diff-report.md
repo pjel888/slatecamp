@@ -1,33 +1,32 @@
 # Content Diff Report: wheelchair-maneuvering-and-parking-slots
 
-Generated: 2026-05-04T00:06:02.121Z
+Generated: 2026-05-04T02:16:32.222Z
 Article ID: 1a02a1a5-27e5-4a26-85d2-fceac4433edc
 Changed: true
-Safe to push locally: false
+Safe to push locally: true
 
 ## Hashes
 
 - Original: `sha256:8b775cab63c2f46795f1354492cacf74ad8edb753947ff5903c469725c61043c`
-- Normalized: `sha256:97030cbbfeac10c1d3beebae951f8ef1812ec450a72da5181042bbcf858d511d`
-- Candidate: `sha256:97030cbbfeac10c1d3beebae951f8ef1812ec450a72da5181042bbcf858d511d`
+- Normalized: `sha256:0df3341382006c0e18371635a405d455f662bafac98c86199aeb94789fba5083`
+- Candidate: `sha256:0f7768350e75a7cc6765fb3f87a8f90d1d5dd60fbf129e89a7b13035a4394c53`
 
 ## Line summary
 
-- Changed lines: 160
-- Inserted lines: 0
-- Deleted lines: 9
+- Changed lines: 164
+- Inserted lines: 5
+- Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 3
-- UI blocks preserved: 0
-- UI blocks changed/missing: 3
-- Unresolved placeholders: 1
+- UI blocks preserved: 3
+- UI blocks changed/missing: 0
+- Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate contains unresolved UI block placeholders.
-- Candidate is missing 3 preserved UI block(s).
+- None
 
 ## Warnings
 

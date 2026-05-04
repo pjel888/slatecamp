@@ -41,7 +41,7 @@ Example: For 300 sqm dining, kitchen must be minimum 100 sqm.
 Spaces = Dining Floor Area ÷ 30 sqm/space
 
 Example: 1500 sqm dining area ÷ 30 = 50 parking spaces minimum.
-<ArticleMedia id="media-lea-dsgn-004-09-core-concept" a type="image" caption="Church Design — Nave, Sanctuary, and Assembly Space Planning" description="Floor plan diagram of a church showing nave (pew seating at 0.5-0.6 sqm/person), sanctuary/altar area, narthex, and circulation. Annotated with occupancy classification triggers (Group C vs. H) and minimum ceiling height (6.0m nave)." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-004-09-core-concept" type="image" caption="Church Design — Nave, Sanctuary, and Assembly Space Planning" alt="Floor plan diagram of a church showing nave (pew seating at 0.5-0.6 sqm/person), sanctuary/altar area, narthex, and circulation. Annotated with occupancy classification triggers (Group C vs. H) and minimum ceiling height (6.0m nave)." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Philippine Practice Context
 
@@ -53,10 +53,10 @@ Metro Manila restaurants operate under joint FSDO (Food Safety and Drug Office) 
 2. **Occupant Load Calculation:** A restaurant with 100 dining seats requires 140 sqm minimum (100 × 1.4 sqm/seat). Parking: If that 140 sqm dining area serves as the only dining, 5 parking spaces required (140 ÷ 30).
 3. **Fire Egress Integration:** A ground-floor restaurant with 250-person occupancy and single kitchen entry/exit must have two separate dining egress routes, totaling 1900 mm exit width minimum (250 × 7.6 mm).
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+<Tip>**Restaurant Anchors:** Group E occupancy. Dining = 1.4 sqm/seat. Kitchen:dining = 1:3 (kitchen is ONE-THIRD of dining, not equal or larger). Parking = 1/30 sqm dining. Exit width = 7.6 mm/person. Dishwash separated from prep.</Tip>
 
 **Exam Tip — ERR-DSGN-015:** Churches are Group C (education/recreation, as assembly for worship), not Group E (mercantile) or Group D (institutional). Occupant load follows assembly factors per RA 9514.
-<ArticleMedia id="media-lea-dsgn-004-09-core-concept" a type="image" caption="Place of Worship — Nave, Sanctuary, and Narthex Spatial Organization" description="Floor plan diagram of a church showing nave (pew seating at 0.5 m/person), sanctuary/altar area, narthex entry, baptistry, and side chapels. Annotated with egress width (7.6 mm/person), dual exits at 50+ occupancy, and ceiling height (6.0m minimum)." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-004-09-core-concept" type="image" caption="Place of Worship — Nave, Sanctuary, and Narthex Spatial Organization" alt="Floor plan diagram of a church showing nave (pew seating at 0.5 m/person), sanctuary/altar area, narthex entry, baptistry, and side chapels. Annotated with egress width (7.6 mm/person), dual exits at 50+ occupancy, and ceiling height (6.0m minimum)." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Cross-References
 
@@ -64,4 +64,4 @@ See **LEA-DSGN-004-07** (Theaters) for Group C vs H comparison, **LEA-DSGN-008-0
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeList" status="preserved"]
+<WikiMistakeList mistakes={["ERR-DSGN-031: Setting kitchen:dining ratio at 1:1 or larger instead of 1:3","ERR-DSGN-001: Classifying restaurant as Group C (education) or Group H (assembly) instead of Group E","ERR-DSGN-019: Using 5 mm/person for exit width instead of 7.6 mm/person","ERR-DSGN-021: Single exit for 50+ person occupancy","ERR-DSGN-014: Ramp slope at 1:10 or 1:12 (old IRR) instead of 1:20 (2024 Revised IRR)"]} />

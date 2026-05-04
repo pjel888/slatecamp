@@ -7,6 +7,9 @@ Apply the formula of fire protection: R = hazard × occupancy × area × constru
 
 ### Total Dynamic Head (TDH)
 
+<ArticleMedia id="media-lea-util-004-07-core-concepts-and-formul" a type="image" caption="Fire Pump System — Total Dynamic Head Calculation Diagram" description="System diagram for fire pump sizing showing: water supply (municipal or tank), suction line, fire pump with motor, discharge line to standpipe and sprinkler risers. TDH = Static Head (elevation to highest sprinkler) + Friction Loss (Hazen-Williams formula) + Residual Pressure (3.45 bar minimum per RA 9514 IRR). Worked example for a warehouse in Makati with 55.2m TDH and 100hp pump shown." suggestedAsset="Diagram or reference image" status="placeholder" />
+
+
 The pump must overcome three resistance forces simultaneously:
 
 **TDH = Static Head + Friction Loss + Residual Pressure**

@@ -17,7 +17,15 @@ Recycled steel produced via electric arc furnace (EAF) generates approximately 0
 
 ## Key Provisions
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="WikiExamTable" status="preserved"]
+<WikiExamTable headers={["Material", "Embodied Carbon (kg CO2e/kg)", "Key Standard/Specification", "Primary Use in Concrete"]}>
+<tr><td>Recycled Steel (EAF)</td><td>0.9-1.1</td><td>ASTM A996 (deformed bars)</td><td>Reinforcement</td></tr>
+<tr><td>Portland Cement Concrete</td><td>0.11-0.15</td><td>ASTM C150 (Type I/II cement)</td><td>Structural</td></tr>
+<tr><td>Concrete with Fly Ash</td><td>0.08-0.10</td><td>ASTM C618 (Class F/C)</td><td>20-40% reduction vs pure cement</td></tr>
+<tr><td>Timber (Softwood)</td><td>-0.46 (sequestered)</td><td>ASTM D245 (stress grading)</td><td>Carbon sink; net negative when burned</td></tr>
+<tr><td>Recycled Concrete Aggregate</td><td>0.04-0.06</td><td>ASTM C33 (grading limits)</td><td>Base course; non-structural fill</td></tr>
+<tr><td>Aluminum (primary)</td><td>8.24</td><td>ASTM B221 (extrusions)</td><td>Cladding; not structural in concrete</td></tr>
+<tr><td>Ground Granulated Blast Furnace Slag (GGBS)</td><td>0.06-0.08</td><td>ASTM C989</td><td>30-50% cement replacement</td></tr>
+</WikiExamTable>
 
 Class F fly ash is derived from burning anthracite or bituminous coal, contains 50-70 percent silica, and requires 15-25 percent dosage by weight in concrete for pozzolanic reaction. Class C fly ash (from lignite or subbituminous coal) contains 20-40 percent calcium oxide, self-cements as well as reacts pozzolani­cally, and is dosed at 20-35 percent. Ground granulated blast furnace slag (GGBS) is a cooled byproduct of iron smelting meeting ASTM C989, contributing both pozzolanic and cementitious properties at 30-50 percent replacement rates.
 
@@ -45,17 +53,23 @@ LEA candidates must identify material types by embodied carbon value, match pozz
 
 A second test approach compares environmental product declarations (EPDs) for equivalent materials: candidates select the option with lowest cradle-to-gate embodied carbon or recognize that recycled steel embodied carbon is roughly half that of primary steel. Calculation questions require converting percentage replacement (25% fly ash) to embodied carbon reduction using provided baseline values (e.g., cement = 0.82 kg CO2e/kg; fly ash = 0.15 kg CO2e/kg; reduction = ~37%).
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+<Tip>Always verify embodied carbon values from published EPDs or lifecycle assessment databases (ICE, OneClick LCA) rather than assuming values. The actual CO2e per kilogram varies by manufacturing location, process efficiency, and transport distance. When a question provides a baseline embodied carbon for concrete (0.11 kg CO2e/kg), multiply by the percentage cement content and the percentage fly ash replacement to calculate net reduction.</Tip>
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard title="Confusing EAF vs BOF Steel Emissions" severity="critical">When asked to specify recycled steel for low embodied carbon, candidates incorrectly state that all recycled steel has equal emissions. In reality, EAF (electric arc furnace) steel achieves 0.9-1.1 kg CO2e/kg via electrical melting of scrap, while BOF (blast oxygen furnace) primary steel requires 1.8-2.0 kg CO2e/kg using iron ore and coke. Recycled steel via EAF is roughly 50 percent lower carbon and is the preferred specification for low-embodied-carbon projects.</WikiMistakeCard>
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard title="Exceeding Pozzolanic Replacement Limits" severity="high">Class F fly ash is limited to 15-25 percent dosage by weight in structural concrete per ASTM C618 guidelines; Class C is 20-35 percent. Candidates sometimes specify 40-50 percent fly ash replacement, which may result in slower early strength gain and reduced durability due to incomplete pozzolanic reaction. Always confirm replacement percentage aligns with concrete strength class and early-age strength requirements.</WikiMistakeCard>
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard title="Assuming Recycled Aggregates Meet Structural Standards" severity="high">Recycled concrete aggregates (RCA) can substitute for virgin aggregates in non-structural fill and base courses when meeting ASTM C33 gradation. However, RCA exhibits higher absorption (3-8%) versus virgin aggregate (0.5-1%), affecting long-term durability and strength. Recycled aggregates are not suitable for primary structural concrete without additional testing and strength verification; candidates must recognize this limitation to avoid over-specifying reuse.</WikiMistakeCard>
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="WikiMistakeList" status="preserved"]
+<WikiMistakeList title="Common errors when calculating embodied carbon reduction:">
+<li>Forgetting to multiply cement content (%) by cement embodied carbon (kg CO2e/kg) before calculating reduction</li>
+<li>Confusing kilograms of material with percentage composition in a concrete mix design</li>
+<li>Assuming zero embodied carbon for fly ash or slag (they have small positive values, ~0.05-0.15 kg CO2e/kg)</li>
+<li>Applying the same embodied carbon value to both Class F and Class C fly ash (Class C typically has 10-15% higher emissions due to calcium oxide content)</li>
+<li>Using embodied carbon values from international databases without accounting for local transport distance and fuel type in the Philippines</li>
+</WikiMistakeList>
 
 ## Related Articles
 

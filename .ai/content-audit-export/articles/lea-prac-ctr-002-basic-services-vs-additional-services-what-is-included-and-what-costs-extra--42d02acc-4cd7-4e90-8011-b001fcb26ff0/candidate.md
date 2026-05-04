@@ -13,7 +13,9 @@ After studying this article, you should be able to:
 
 Basic Services encompass the core architectural activities necessary to deliver a complete design and oversee construction. The standard allocation per SPP Document 202 is: Schematic Design (SD) at 20%, Design Development (DD) at 20%, Construction Documents (CD) at 30%, Bidding at 5%, and Construction Administration (CA) at 25%.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+<LawCallout code="uap" section="SPP Doc. 202 - Standard Owner-Architect Agreement">
+Basic Services: SD, DD, CD, Bidding, and CA phases as defined in SPP Document 202. Additional Services: BIM, detailed cost estimating, value engineering, energy modeling, 3D renderings, construction phase inspection beyond standard CA, operations manuals, and post-construction defect investigation. The agreement must specifically identify which services fall into each category.
+</LawCallout>
 
 ### Additional Services — Separately Billable Work
 
@@ -23,13 +25,17 @@ Additional Services extend beyond Basic Services and are billed separately at an
 
 The architect coordinates with structural, mechanical, electrical, and other discipline consultants. The agreement must specify whether consultant fees are included in the architectural fee or reimbursed as direct expenses. Reimbursable expenses — travel, printing, model making, permit applications, and communications — are either included as a lump sum or billed at actual cost plus a markup, typically 15 to 20%.
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="ExamTip" status="preserved"]
+<ExamTip>
+  **LEA Watch — Frequent Test Point:** The most common exam question about Additional Services involves when the architect should notify the client about a service being outside Basic Services. The correct answer: **Immediately, in writing, before proceeding.** A letter should state: "Based on your request for [service], this is an Additional Service outside the Owner-Architect agreement. The estimated cost is [amount]. Please provide written authorization before I proceed."
+</ExamTip>
 
 ### Documentation of Additional Services
 
 When the Owner requests work that appears to be Additional Services, the architect should immediately notify the Owner in writing, identifying the service, estimating the cost, and requesting authorization before proceeding. Many disputes arise because the architect provides unrequested services or assumes they are included in Basic Services.
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
+<Warn>
+  **Common Exam Trap:** The LEA test often asks: "Can the architect charge for Additional Services if the client verbally requested the work but no written authorization was obtained?" The answer is NO — written authorization is required before proceeding with Additional Services. Verbal requests create risk of non-payment and disputes.
+</Warn>
 
 ## How It's Tested
 
@@ -55,7 +61,7 @@ When the Owner requests work that appears to be Additional Services, the archite
 
 
 
-<ArticleMedia type="image" caption="Basic Services vs. Additional Services — Classification Flowchart" description="Decision flowchart distinguishing Basic Services (SPP 202 five phases: SD, DD, CD, BA, CA) from Additional Services (separate scope, extra compensation). Decision diamonds for: Is this a standard SPP 202 phase deliverable? → Yes=Basic, No→ Was it anticipated in the Agreement? → Yes=Basic, No→ Additional Service. Examples of each category listed in side panels." />
+<ArticleMedia type="image" caption="Basic Services vs. Additional Services — Classification Flowchart" alt="Decision flowchart distinguishing Basic Services (SPP 202 five phases: SD, DD, CD, BA, CA) from Additional Services (separate scope, extra compensation). Decision diamonds for: Is this a standard SPP 202 phase deliverable? → Yes=Basic, No→ Was it anticipated in the Agreement? → Yes=Basic, No→ Additional Service. Examples of each category listed in side panels." />
 ## Related Articles
 
 - [Standard Owner-Architect Agreement](lea-prac-ctr-001)

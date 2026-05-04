@@ -1,34 +1,32 @@
 # Content Diff Report: chimneys-and-fireplaces
 
-Generated: 2026-05-04T00:05:53.001Z
+Generated: 2026-05-04T02:16:24.755Z
 Article ID: f8d416c0-abfb-45be-a7ef-a9f98df06507
 Changed: true
-Safe to push locally: false
+Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:176eb4457cb09af8bbdd05400c55724552c2bc4b215832882634c626c4c4f3cd`
+- Original: `sha256:a8403f60ed05f13146537c5a61618492eedb21551fcabe3b96d2e9b29fe595e1`
 - Normalized: `sha256:113ddd08a0678903b743732f775ae0ef3bf8ab85c6ef31ee7e35bc5ec2e3c6e5`
-- Candidate: `sha256:113ddd08a0678903b743732f775ae0ef3bf8ab85c6ef31ee7e35bc5ec2e3c6e5`
+- Candidate: `sha256:1eba0f11323fadc6e696cda18fd7ad9cd97e7662ebdd0f8c7fbed79f24723f78`
 
 ## Line summary
 
-- Changed lines: 382
-- Inserted lines: 38
+- Changed lines: 15
+- Inserted lines: 8
 - Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 4
-- UI blocks preserved: 0
-- UI blocks changed/missing: 4
-- Unresolved placeholders: 1
+- UI blocks preserved: 4
+- UI blocks changed/missing: 0
+- Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate contains unresolved UI block placeholders.
-- Candidate is missing 4 preserved UI block(s).
-- original.md hash does not match article metadata export hash.
+- None
 
 ## Warnings
 

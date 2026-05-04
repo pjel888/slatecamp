@@ -7,6 +7,10 @@ Identify Frank Lloyd Wright's organic architecture philosophy — building grows
 
 **Frank Lloyd Wright** is America's most significant architect. He believed architecture should grow from its site—"organic" means the building is of the land, not imposed upon it. This contrasts sharply with European modernism (International Style), which treats buildings as objects placed anywhere. Wright said: every building must respond to its specific landscape, climate, and human needs.
 
+
+<ArticleMedia id="media-hist-014-04-core-concept" layout="single" type="image" status="placeholder" alt="View of Fallingwater (Mill Run, PA, 1935–1939, Frank Lloyd Wright), showing the cantilevered concrete terraces extending over the waterfall, the horizontal emphasis, natural stone piers, and the complete integration of building with site." caption="Fallingwater — Wright's Organic Architecture" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
+
 <Tip>Memory aid: **"Wright = Site + Material + Open Plan + Horizontal"** — organic architecture grows from place, not imposed upon it; every building is unique to its location.</Tip>
 
 Wright's design principles are clear: **open plan** (remove interior walls, create flowing spaces), **horizontal emphasis** (echoing landscape lines), **integration of materials** (expose wood, stone, brick), **elimination of applied ornament** (form comes from structure and material, not decoration), and **human scale** (spaces fit the body, not the abstract grid). His buildings are never neutral—they are charged with place and purpose.
@@ -20,6 +24,10 @@ Wright's design principles are clear: **open plan** (remove interior walls, crea
 **The Guggenheim Museum** (New York, 1956–1959, completed posthumously) breaks every Beaux-Arts and modernist convention. It is a spiral ramp, not a box. You ascend the ramp viewing art, the architecture itself becomes the experience. Wright rejected the static gallery—he demanded movement and spatial drama.
 
 **Usonian houses** (1930s–1950s) were Wright's response to American housing crisis: affordable, beautiful houses for ordinary Americans. Open plan, minimal materials, integrated with landscape, houses cost $5,000–$10,000 in Depression era. They democratized modernism; they proved good architecture was not exclusive to the wealthy.
+
+
+<ArticleMedia id="media-hist-014-04-core-concept" layout="single" type="image" status="placeholder" alt="View of the Frederick C. Robie House (Chicago, 1908–1910, Frank Lloyd Wright), showing the strong horizontal lines, low-pitched hip roof with wide overhanging eaves, ribbon windows, and the open interior plan destroying the traditional box." caption="Robie House — Wright's Prairie Style" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
 
 ## Key Facts and Testable Items
 
@@ -67,6 +75,8 @@ Questions ask about Wright's approach to affordable housing: open plan (no expen
 **Integral Ornament** — Decorative detail that expresses structure and material (wood grain, masonry pattern, geometric window divisions) rather than applied decoration disguising form.
 
 **Material Expression** — Exposing and emphasizing building materials' natural qualities—stone as stone, wood as wood, concrete as concrete—rather than covering them.
+
+<ArticleMedia id="media-hist-014-04-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparison of Frank Lloyd Wright's organic architecture across four iconic works: Robie House (Prairie style, horizontal emphasis), Fallingwater (cantilevered over waterfall), Taliesin West (desert integration), and Guggenheim Museum (continuous spiral).\" caption=\"Frank Lloyd Wright — Organic Architecture Works\" suggestedAsset=\"Style comparison illustration\" placementIntent=\"Style comparison for architectural period\" />
 
 ## Related Articles
 

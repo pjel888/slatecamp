@@ -4,7 +4,15 @@
 
 Identify the Mughal synthesis formula — charbagh garden layout, bulbous onion dome, iwan, chhatri, pietra dura inlay — and recognize key monuments (Taj Mahal, Humayun's Tomb, Red Fort, Fatehpur Sikri) by their combination of Persian, Indian, and Islamic elements.
 ## Core Concept
+
+
+<ArticleMedia id="media-hist-004-07-mughal-garden-complex" layout="single" type="image" status="placeholder" alt="Comparative site plan diagram of three Mughal garden complexes: (1) Taj Mahal (Agra, 1632–1653) — charbagh garden divided into four quadrants by water channels, white marble mausoleum at center, reflecting pool on north-south axis; (2) Humayun's Tomb (Delhi, 1569–1571) — first major charbagh tomb, precursor to Taj Mahal, with raised platform and garden at lower grade; (3) Shalimar Gardens (Lahore, 1641) — terraced three-level garden with 410 fountains, cascading water channels, and imperial pavilions. Each annotated with water management (hydraulic systems), axial orientation, and architectural relationship to garden." caption="Mughal Garden-Mausoleum Complex — Taj Mahal, Humayun's Tomb, Shalimar Gardens" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
 **Mughal architecture** represents Islamic design adapted to the Indian subcontinent under the Mughal Empire (1526–1857). The Mughals, descended from Central Asian Turks and Mongols, encountered Hindu and Buddhist architectural traditions spanning millennia. Rather than suppress these, Mughal architects synthesized Persian (particularly Safavid) and Indian formal languages. The result is a distinct hybrid tradition that balances Islamic geometry with Indian color, ornament, and scale.
+
+
+<ArticleMedia id="media-hist-004-07-core-concept" layout="single" type="image" status="placeholder" alt="View of the Taj Mahal (Agra, 1632–1653, Shah Jahan), showing the white marble onion dome, symmetrical iwan, flanking minarets, and the formal charbagh (four-part) garden layout." caption="Taj Mahal — Mughal Mausoleum and Charbagh Garden" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
 
 The defining Mughal innovation is the **garden-building complex**, where architecture and landscape architecture fuse into a unified artistic statement. The **Taj Mahal** exemplifies this: a white marble mausoleum sits centrally within a formal **charbagh** (four-part garden divided by water channels). This garden-centric approach draws from Persian tradition (the Safavid shah gardens of Isfahan) but adapts to Indian climate and patron desires. The garden is not backdrop but equal partner in the architectural composition.
 
@@ -30,6 +38,10 @@ Proportional systems in Mughal architecture are mathematically precise. The **Ta
 Mughal architecture developed under specific patron dynasties. **Akbar** (r. 1556–1605) established dynastic patronage and incorporated Hindu design. **Shah Jahan** (r. 1628–1658) was the great builder—patron of the Taj Mahal, Red Fort, and Jama Masjid. **Aurangzeb** (r. 1658–1707) continued patronage but introduced stricter Islamic orthodoxy, resulting in less ornament. This progression reflects political and religious changes within the dynasty.
 
 <Note>Parchin kari (semi-precious stone inlay) is NOT the same as Iznik tilework or zellige tile. Parchin kari involves cutting individual stones (jade, lapis, carnelian, turquoise) and fitting them into marble to create geometric patterns. The effect is subtle light-reflection, not color saturation. This material distinction marks Mughal sophistication and must be recognized on the LEA to differentiate regional Islamic traditions.</Note>
+
+
+<ArticleMedia id="media-hist-004-07-core-concept" layout="single" type="image" status="placeholder" alt="Detail of Mughal decorative vocabulary: the bulbous onion dome with lotus finial, the iwan (vaulted portal), chhatri (pavilion kiosk), and pietra dura (marble inlay) floral patterns at the Taj Mahal." caption="Mughal Architectural Synthesis — Iwan, Chhatri, Pietra Dura" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
 
 ## Key Facts and Testable Items
 
@@ -85,6 +97,8 @@ Mughal architecture developed under specific patron dynasties. **Akbar** (r. 155
 **Ustad Ahmad Lahauri** — Master architect listed as principal designer of the Taj Mahal (under Shah Jahan), though the monument was created by a collective imperial atelier; represents peak of Mughal architectural mastery.
 
 <Warn>Do not treat the Taj Mahal as "primarily a tomb." It is fundamentally a **garden-building complex** where the charbagh (4-part garden) and mausoleum are equally essential. The garden represents Islamic paradise; the building's proportions represent cosmological order. Garden and building together create spiritual and mathematical meaning. Describing only the building without the garden context misses Mughal architectural philosophy.</Warn>
+
+<ArticleMedia id="media-hist-004-07-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparison of Mughal architectural elements across key monuments: Humayun's Tomb (charbagh garden, red sandstone dome), Fatehpur Sikri (Buland Darwaza, Diwan-i-Khas), and Taj Mahal (onion dome, iwan, pietra dura inlay, minarets).\" caption=\"Mughal Architecture — Monument Comparison\" suggestedAsset=\"Style comparison illustration\" placementIntent=\"Style comparison for architectural period\" />
 
 ## Related Articles
 

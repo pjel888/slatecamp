@@ -7,6 +7,10 @@ Identify the three distinct voices of Latin American modernism — Costa (theory
 
 Latin American modernism rejected European Bauhaus rigidity in favor of sculptural form, bold color, and integration with landscape and indigenous culture. While European modernists pursued universal rationalism, Latin Americans asked: How does modernism speak to our climate, our political independence, our sense of place?
 
+
+<ArticleMedia id="media-hist-013-02-core-concept" layout="single" type="image" status="placeholder" alt="View of the Cathedral of Brasília (1958–1970, Oscar Niemeyer), showing the hyperboloid concrete structure with its crown of thorns form and the adjacent National Congress with twin towers and dome/inverted-dome chambers." caption="Brasília — Niemeyer's Cathedral and National Congress" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
+
 <Tip>Memory aid: **"Costa = Theory; Niemeyer = Curves; Barragán = Color"** — three distinct voices of Latin American modernism, each rejecting European coldness differently.</Tip>
 
 **Lúcio Costa** (1902–1998) founded the modernist movement in Brazil. He synthesized European functionalism with Portuguese colonial architecture and created a distinctly Brazilian approach: sensuous curves, open planning, integration with gardens and natural light. His philosophy rejected both nostalgic regionalism and foreign imposition.
@@ -18,6 +22,10 @@ Latin American modernism rejected European Bauhaus rigidity in favor of sculptur
 **Luis Barragán** (1902–1988, Mexican) pursued an opposite path: intimacy through color, emotion, and spiritual experience. He rejected the white-box international style, instead using vivid walls—magenta, yellow, blue—to create psychological spaces. His **Pritzker Prize citation (1980)** praised his "almost incomparable sense of color" and his resistance to modernism's coldness. His houses are private sanctuaries, not public monuments. His fountains and water channels recall Islamic gardens and Mexican baroque drama. Barragán proved modernism could be warm, sensory, and culturally rooted.
 
 <Warn>Critical distinction: Barragán is NOT anti-modernist—he rejects the cold International Style while embracing modernism's liberation from historical pastiche. Emotional modernism (Barragán) differs from formal minimalism (International Style), but both are modern.</Warn>
+
+
+<ArticleMedia id="media-hist-013-02-core-concept" layout="single" type="image" status="placeholder" alt="View of Casa Luis Barragán (Mexico City, 1948, Luis Barragán), showing the geometric volumes, textured plaster surfaces, pools and fountains, and the yellow-and-pink interior walls capturing colored light." caption="Casa Luis Barragán — Light, Color, and Water" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
 
 ## Key Facts and Testable Items
 
@@ -60,6 +68,8 @@ Questions ask you to distinguish these contemporaries: Niemeyer pursued monument
 **Brazilian Modernism** — Synthesis of European functionalism with Portuguese colonial tradition, tropical climate, and landscape integration; pioneered by Lúcio Costa.
 
 **Fountain as Spiritual Element** — Barragán's integration of water into private gardens; evokes Islamic gardens, Mexican baroque, and personal contemplation rather than public spectacle.
+
+<ArticleMedia id="media-hist-013-02-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparison of Latin American modernism's three distinct voices: Costa (theoretical planning, Brasília pilot plan), Niemeyer (free-form concrete curves, Brasília cathedral), and Barragán (color, light, walls, water, Casa Barragán).\" caption=\"Latin American Modernism — Costa, Niemeyer, Barragán\" suggestedAsset=\"Style comparison illustration\" placementIntent=\"Style comparison for architectural period\" />
 
 ## Related Articles
 

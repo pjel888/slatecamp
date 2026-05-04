@@ -9,9 +9,9 @@
 
 ## The Scenario — See It Before You Read It
 
-[SLATECAMP_UI_BLOCK:ArticleMedia name="lot-area-breakdown-pie" type="diagram" caption="Pie chart and stacked bar diagram showing how TLA (Total Lot Area) partitions into PSO (building footprint), ISA (hardscape/paved open), and USA (unpaved softscape). Show the equations PSO + TOSL = 100%, TOSL = ISA + USA, MACA = PSO + ISA. Use Basic R-2 without firewall as example: PSO 55%, ISA 30%, USA 15%."]
+<ArticleMedia id="media-lot-area-breakdown-pie" type="diagram" caption="Pie chart and stacked bar diagram showing how TLA (Total Lot Area) partitions into PSO (building footprint), ISA (hardscape/paved open), and USA (unpaved softscape). Show the equations PSO + TOSL = 100%, TOSL = ISA + USA, MACA = PSO + ISA. Use Basic R-2 without firewall as example: PSO 55%, ISA 30%, USA 15%." />
 
-[SLATECAMP_UI_BLOCK:ArticleMedia name="firewall-comparison-diagram" type="diagram" caption="Side-by-side lot comparison: same lot with and without firewall. Without firewall: PSO 55%, USA 15%, MACA 85%. With firewall: PSO 60%, USA 10%, MACA 90%. Show how firewall shifts the ratio. Include a callout showing that Table VIII.1 is organized by zone + firewall status, NOT by lot type."]
+<ArticleMedia id="media-firewall-comparison-diagram" type="diagram" caption="Side-by-side lot comparison: same lot with and without firewall. Without firewall: PSO 55%, USA 15%, MACA 85%. With firewall: PSO 60%, USA 10%, MACA 90%. Show how firewall shifts the ratio. Include a callout showing that Table VIII.1 is organized by zone + firewall status, NOT by lot type." />
 
 ## Learning Goal
 
@@ -279,7 +279,15 @@ B) The architect has confused PSO (a percentage) with AMBF (an area).
 C) PSO can be expressed in sq.m when the lot is smaller than 1,000 sq.m.  
 D) PSO = 275 sq.m is correct specifically for Basic R-2 lots.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="details" status="preserved"]
+<LawCallout code="pd1096" section="Rule VII - Floor Area and Lot Occupancy">
+
+  <summary><b>Click to reveal the answer</b></summary>
+  <br>
+  <b>Correct Answer: B</b><br><br>
+  PSO is always a percentage of TLA. The **area** corresponding to PSO is the AMBF.<br>
+  For a 500 sq.m lot at 55% PSO, AMBF = 275 sq.m. The PSO is 55%, not 275 sq.m.[file:17]
+
+</LawCallout>
 
 ---
 
@@ -292,7 +300,15 @@ B) Table VIII.G.6
 C) Table VII.1  
 D) Table VII.G.1
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="details" status="preserved"]
+<LawCallout code="pd1096" section="Rule VII - Section 704">
+
+  <summary><b>Click to reveal the answer</b></summary>
+  <br>
+  <b>Correct Answer: C</b><br><br>
+  Table VIII.1 distinguishes firewall vs non-firewall for each zone.<br>
+  Table VII.1 lists PSO by occupancy and **lot type** (inside/corner/through), which you must compare with Table VIII.1 and then adopt the more restrictive value.[file:17][file:18]
+
+</LawCallout>
 
 ---
 
@@ -305,7 +321,13 @@ B) 150 sq.m
 C) 300 sq.m  
 D) 450 sq.m
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="details" status="preserved"]
+<Accordion>
+  <summary><b>Click to reveal the answer</b></summary>
+  <br>
+  <b>Correct Answer: B — 150 sq.m</b><br><br>
+  Basic R-2, no firewall: USA = 15% (from Table VIII.1).<br>
+  USA area = 1,000 x 0.15 = 150 sq.m.[file:17]
+</Accordion>
 
 ---
 
@@ -318,7 +340,12 @@ B) 65% — the more restrictive value governs.
 C) Either, at the architect’s discretion.  
 D) 70% — firewall entitlement overrides lot-type limitations.
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="details" status="preserved"]
+<Accordion>
+  <summary><b>Click to reveal the answer</b></summary>
+  <br>
+  <b>Correct Answer: B</b><br><br>
+  Rule VII, Sec. 704.4.a requires that where multiple applicable controls differ, the **more stringent** (more restrictive) value governs. Here, 65% PSO is more restrictive than 70%.[file:17]
+</Accordion>
 
 ---
 
@@ -337,7 +364,20 @@ Answer aloud, then check.
 9. Formula to convert PSO % into AMBF (sq.m)?
 10. Com-3 with firewall: PSO = \_\_\_%.
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="details" status="preserved"]
+<Accordion>
+<summary><b>Reveal Answers</b></summary>
+<br>
+1. <b>100%</b><br>
+2. <b>ISA + USA</b><br>
+3. <b>PSO + ISA</b><br>
+4. <b>55%</b><br>
+5. <b>15%</b><br>
+6. <b>Table VII.1</b><br>
+7. <b>True</b> — USA is identified as “the true open space”.[file:17]<br>
+8. <b>85%</b><br>
+9. <b>AMBF = TLA x PSO</b><br>
+10. <b>90%</b>[file:17]
+</Accordion>
 
 ---
 

@@ -1,33 +1,32 @@
 # Content Diff Report: flora-and-fauna-in-site-development
 
-Generated: 2026-05-04T00:06:05.548Z
+Generated: 2026-05-04T02:16:35.504Z
 Article ID: 265b961a-20fa-464e-a9c2-6a1398e1ab2e
-Changed: true
-Safe to push locally: false
+Changed: false
+Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:13aead3f866527bd7801fced8312982d6bc8c971062f4c0c88e359692637c243`
+- Original: `sha256:e280825e0f5dfcf4ff1a57dfd2531187274fc1d2100bac7ec2acaa7347a36c3a`
 - Normalized: `sha256:6a87a499473b7a3a08f25b5423e32b87e918731407c2f1df07cddb776aa8da4e`
-- Candidate: `sha256:6a87a499473b7a3a08f25b5423e32b87e918731407c2f1df07cddb776aa8da4e`
+- Candidate: `sha256:e280825e0f5dfcf4ff1a57dfd2531187274fc1d2100bac7ec2acaa7347a36c3a`
 
 ## Line summary
 
-- Changed lines: 135
+- Changed lines: 0
 - Inserted lines: 0
-- Deleted lines: 20
+- Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 4
-- UI blocks preserved: 0
-- UI blocks changed/missing: 4
-- Unresolved placeholders: 1
+- UI blocks preserved: 4
+- UI blocks changed/missing: 0
+- Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate contains unresolved UI block placeholders.
-- Candidate is missing 4 preserved UI block(s).
+- None
 
 ## Warnings
 

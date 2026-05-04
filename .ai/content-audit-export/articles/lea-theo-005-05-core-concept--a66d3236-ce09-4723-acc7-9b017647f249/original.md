@@ -4,8 +4,6 @@
 Postmodernism fundamentally disrupted modernism's hegemony by reintroducing historical reference, ornament, symbolism, and contradiction as legitimate design tools. The LEA examines your grasp of key postmodern theorists and architects—Venturi, Jencks, Rossi, Graves, and the deconstructivists—and how their work redefined architectural possibility in the late twentieth century.
 </Callout>
 
-
-
 ## Learning Goal
 
 - Explain how Postmodernism rejected Modernism's reductive purism through Venturi's Complexity and Contradiction (1966) and Learning from Las Vegas (1972).
@@ -13,6 +11,8 @@ Postmodernism fundamentally disrupted modernism's hegemony by reintroducing hist
 - Distinguish Deconstructivism from Postmodernism: where Postmodernism plays with historical reference, Deconstructivism fragments and destabilizes form.
 
 ## Core Concept
+
+<ArticleMedia id="media-lea-theo-005-05-core-concept" a type="image" caption="Postmodernism vs Modernism — Key Differences and Concepts" description="Two-column comparison diagram: Left column (Modernism) — purism, functionalism, universal form, anti-ornament, machine aesthetic, form follows function, abstraction. Right column (Postmodernism) — complexity, contradiction, historical reference, ornament, semiotics, double coding, duck vs decorated shed. Middle column shows the transition catalysts: Venturi's Complexity and Contradiction (1966), Learning from Las Vegas (1972), and Jencks's 'death of modern architecture' at Pruitt-Igoe demolition (1972). Bottom section distinguishes Deconstructivism (fragmented form, destabilized structure, Gehry, Eisenman) from Postmodernism (playful reference, Venturi, Graves, Moore)." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 Postmodernism in architecture emerged not as a unified style but as a critical reaction against modernism's reductive purism and its claim to universal, timeless principles. Where modernism sought to strip away historical ornament and craft the "honest" expression of materials and function, postmodernism embraced complexity, irony, historical pastiche, and the semantic richness of symbolic language. Robert Venturi's 1966 manifesto *Complexity and Contradiction in Architecture* fundamentally shifted architectural discourse by arguing that modernism's reduction was fundamentally incomplete. "I like elements which are hybrid rather than 'pure,' compromising rather than 'clean,' distorted rather than straightforward, ambiguous rather than articulate," Venturi wrote, inverting modernism's aesthetic hierarchies.
 
@@ -41,21 +41,15 @@ Contemporary architectural theory has moved beyond postmodernism's historical ec
 <WikiExamTable headers={["Theorist/Architect", "Key Text(s)", "Year", "Central Contribution"]} rows={[['["Robert Venturi", "*Complexity and Contradiction in Architecture*", "1966", "Postmodern manifesto; reintroduced complexity, contradiction, symbolism"]', '["Venturi/Scott Brown/Izenour", "*Learning from Las Vegas*", "1972", "Vernacular architecture as legitimate; duck vs. decorated shed"]', '["Charles Jencks", "*Language of Post-Modern Architecture*", "1977", "Double-coding; postmodernism as plural, multi-coded"]', '["Aldo Rossi", "*L\'architettura della città*", "1966", "Typology, memory, La Città Analoga; analogical design method"]', '["Michael Graves", "Various residential & public buildings", "1970s-1980s", "Accessible postmodernism; color, ornament, historical allusion"]', '["Frank Gehry", "Guggenheim Museum Bilbao", "1997", "Deconstructivism; form liberated from function"]', '["Daniel Libeskind", "Jewish Museum Berlin", "1999", "Deconstructivism as memorial; fragmentation as meaning"]', '["Peter Eisenman", "Various theoretical works", "1970s-1990s", "Conceptual grids, palimpsest; autonomous form"]', '["Bernard Tschumi", "Parc de la Villette", "1983", "Disjunctive systems; follies; strategic fragmentation"]', '["Zaha Hadid", "Various parametric designs", "1990s-2000s", "Fluid, parametric deconstructivism; digital methodology"]']]} />
 ## How It's Tested on the LEA
 
-
 <ExamTip>1. **Theorist Positioning**: The exam asks where theorists stand relative to modernism and each other. You must understand that Venturi critiques modernism from within architectural humanism, while deconstructivists critique both modernism and postmodernism's historical borrowing as insufficiently radical.</ExamTip>
-
 
 <ExamTip>2. **Typological vs. Formal Approaches**: Questions distinguish between Rossi's typological method (engage historical building types analogically) and deconstructivism's formal experimentation (liberate form from typological constraint). These represent fundamentally different postmodern strategies.</ExamTip>
 
-
 <ExamTip>3. **Symbolic vs. Deconstructive Language**: Venturi's architecture speaks through applied symbols (the "decorated shed"), while Libeskind's speaks through deconstructed form itself. Can you explain how each strategy differently mobilizes meaning?</ExamTip>
-
 
 <ExamTip>4. **Historical vs. Contemporary Contextualization**: Rossi engages history through analogy; contemporary architects engage context through digital responsiveness, sustainability, and cultural specificity. The exam tests your understanding of how architectural method evolves.</ExamTip>
 
-
 <ExamTip>5. **Architect-Building Attribution**: You must identify which theorist-architect designed which canonical postmodern building. Graves = Portland Building; Gehry = Bilbao; Libeskind = Jewish Museum Berlin.</ExamTip>
-
 
 ## Common Mistakes
 
@@ -64,7 +58,6 @@ Contemporary architectural theory has moved beyond postmodernism's historical ec
 <WikiMistakeCard mistake="Confusing Rossi with Graves" correction="Both are postmodern, but fundamentally differently. Graves creates colorful, accessible, commercially successful pastiche. Rossi creates austere, melancholic, conceptually complex spaces grounded in urban memory." context="Graves speaks to popular audiences; Rossi speaks to architectural intellectuals." />
 
 <WikiMistakeList mistakes={["Misunderstanding Deconstructivism as Pure Formalism. Deconstructivism is not formalism detached from meaning. Libeskind's fragmentation embodies historical trauma; Tschumi's disjunctions enable programmatic complexity. Form and meaning are inseparable, but meaning emerges from formal operations rather than applied symbolism.", "Overstating Deconstructivism's Newness. Students sometimes present deconstructivism as completely rupturing postmodernism. Actually, both reject modernism; deconstructivism simply rejects postmodernism's solution (historical quotation) in favor of more radical formal strategies. They share postmodernism's anti-modernist stance.", "Missing the 1988 MoMA Exhibition's Canonizing Function. The \"Deconstructivist Architecture\" exhibition didn't discover a pre-existing movement; it created one. Understanding how institutional frameworks construct architectural movements is crucial to LEA thinking.", "Ignoring Context-Specificity. Postmodernism, deconstructivism, and contemporary theory all emphasize that architecture must engage specific places, cultures, histories. Generic application of deconstructivist form or postmodern symbolism violates the theoretical foundations."]} />
-
 
 ## Key Terms
 

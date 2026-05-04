@@ -1,26 +1,21 @@
 {
-  "attempted_at": "2026-05-04T00:06:05.688Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:16:35.625Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "candidate.md matches original.md; refusing no-op apply."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "9c859ffb-8b3a-4feb-b484-6700d3867e5c",
   "slug": "lea-prac-frm-013-coa-audit-compliance-for-publicly-funded-architectural-projects",
   "preparation_actions": [
     "auto_generated_diff"
   ],
-  "remote_hash_before": "sha256:b2718c862d5b748dbff2b3efb3d47a5b718404dce4ffae716efd8bcc159c5ca7",
-  "original_hash": "sha256:b2718c862d5b748dbff2b3efb3d47a5b718404dce4ffae716efd8bcc159c5ca7",
-  "candidate_hash": "sha256:89ecd8a3e56078d7f05cb61576e953405610131ba1430866017309135450913d",
+  "remote_hash_before": "sha256:4214f6df9938fc1998bf07567ea8c1f517230fd3bd60aaf27d77c508c8712107",
+  "original_hash": "sha256:4214f6df9938fc1998bf07567ea8c1f517230fd3bd60aaf27d77c508c8712107",
+  "candidate_hash": "sha256:4214f6df9938fc1998bf07567ea8c1f517230fd3bd60aaf27d77c508c8712107",
   "stale_check_passed": true,
-  "remote_updated_at_before": "2026-05-03T13:50:17.03318+00:00"
+  "remote_updated_at_before": "2026-05-04T01:59:37.187608+00:00"
 }

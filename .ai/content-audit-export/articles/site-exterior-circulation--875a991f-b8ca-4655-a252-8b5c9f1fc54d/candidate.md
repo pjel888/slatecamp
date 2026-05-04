@@ -12,12 +12,16 @@ _Exterior Accessible Routes Integration Module – BP 344 + PD 1096 Context_[web
 
 ## 1. Big Picture: From Street to Building
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="LawCallout" status="preserved"]
+<LawCallout code="pd1096" section="Rule VIII - Exterior Access">
+BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all public buildings.
+</LawCallout>
 Extracted summary:
 - Props: (none)
 - Text: BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all p...
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+<LawCallout code="pd1096" section="Rule VIII - Site Circulation">
+BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all public buildings.
+</LawCallout>
 Extracted summary:
 - Props: (none)
 - Text: BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all p...
@@ -126,14 +130,14 @@ Exam tip: when sketching site sections, show **property line, RROW, required fro
 
 ---
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
+<ExamTip>**LEA Pattern:** Questions ask whether a building or space meets accessibility requirements. Calculate required number of accessible parking slots per total parking (1:100 ratio for first 500, then 1:200). Know the minimums.</ExamTip>
 Extracted summary:
 - Props: (none)
 - Text: **LEA Pattern:** Determine if a building meets accessibility requirements. Ca...
 
 ## 7. Active Recall – Site & Exterior Circulation
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
+<ExamTip>**LEA Pattern:** Questions ask whether a building or space meets accessibility requirements. Calculate required number of accessible parking slots per total parking (1:100 ratio for first 500, then 1:200). Know the minimums.</ExamTip>
 Extracted summary:
 - Props: (none)
 - Text: **LEA Pattern:** Determine if a building meets accessibility requirements. Ca...

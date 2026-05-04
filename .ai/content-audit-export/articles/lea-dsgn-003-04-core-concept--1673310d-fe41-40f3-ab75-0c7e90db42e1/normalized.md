@@ -9,7 +9,7 @@ After reading this article, you should be able to:
 - Explain the integration of building systems, code compliance, and human factors into the design process.
 
 ---
-<ArticleMedia id="media-lea-dsgn-003-04-core-concept" a type="image" caption="Housing Density Comparison — Site Layouts for Single Detached, Duplex, and Row House" description="Comparative site layout diagrams showing three housing typologies at different densities: single detached (20-30 du/ha), duplex (40-60 du/ha), and row house (60-100 du/ha). Annotated with BP 220 minimum lot areas, road widths, and open space requirements." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-003-04-core-concept" type="image" caption="Housing Density Comparison — Site Layouts for Single Detached, Duplex, and Row House" alt="Comparative site layout diagrams showing three housing typologies at different densities: single detached (20-30 du/ha), duplex (40-60 du/ha), and row house (60-100 du/ha). Annotated with BP 220 minimum lot areas, road widths, and open space requirements." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Core Concept
 
@@ -85,7 +85,7 @@ For low-income housing density planning:
 - Standard parking stall: 2.5 m × 5.0 m.
 - Ramp gradient: **1:12 maximum** for ramps ≤3m rise.
 - Ramp gradient (recommended): **1:20** (per BP 344 2024 Revised IRR Section 5).
-<ArticleMedia id="media-lea-dsgn-003-04-core-concept" a type="image" caption="Housing Typology Comparison — Socialized vs. Economic Minimum Standards" description="Side-by-side comparison of socialized and economic housing typologies (single detached, duplex, row house) with minimum lot areas, floor areas, and road standards. Color-coded by housing category with BP 220 Table 7 reference." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-003-04-core-concept" type="image" caption="Housing Typology Comparison — Socialized vs. Economic Minimum Standards" alt="Side-by-side comparison of socialized and economic housing typologies (single detached, duplex, row house) with minimum lot areas, floor areas, and road standards. Color-coded by housing category with BP 220 Table 7 reference." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ---
 

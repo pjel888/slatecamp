@@ -1,33 +1,32 @@
 # Content Diff Report: north-american-indigenous-architecture
 
-Generated: 2026-05-04T00:06:21.800Z
+Generated: 2026-05-04T02:16:56.294Z
 Article ID: 5fd2842e-ca3e-4e6d-bb87-65067d23a482
-Changed: true
-Safe to push locally: false
+Changed: false
+Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:5963af5f771eed214e7b22ef5a675ca1818f4c7456fca973c02260eda9eee55f`
+- Original: `sha256:e1bc3656c680df76354f84cae71389721365dadf092525fe8c9145f211fdf555`
 - Normalized: `sha256:c9fdc5978adc37030ecff3b8201c18ee3517558f0981d48741f1802ea21f657e`
-- Candidate: `sha256:c9fdc5978adc37030ecff3b8201c18ee3517558f0981d48741f1802ea21f657e`
+- Candidate: `sha256:e1bc3656c680df76354f84cae71389721365dadf092525fe8c9145f211fdf555`
 
 ## Line summary
 
-- Changed lines: 82
-- Inserted lines: 18
+- Changed lines: 0
+- Inserted lines: 0
 - Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 3
-- UI blocks preserved: 0
-- UI blocks changed/missing: 3
-- Unresolved placeholders: 1
+- UI blocks preserved: 3
+- UI blocks changed/missing: 0
+- Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate contains unresolved UI block placeholders.
-- Candidate is missing 3 preserved UI block(s).
+- None
 
 ## Warnings
 

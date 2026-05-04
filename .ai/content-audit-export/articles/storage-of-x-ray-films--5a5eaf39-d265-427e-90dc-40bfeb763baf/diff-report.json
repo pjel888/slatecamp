@@ -1,46 +1,38 @@
 {
   "article_id": "5a5eaf39-d265-427e-90dc-40bfeb763baf",
   "slug": "storage-of-x-ray-films",
-  "generated_at": "2026-05-04T00:06:03.719Z",
+  "generated_at": "2026-05-04T02:16:33.909Z",
   "old_hash": "sha256:6a06598f5d61b652a596a359a673c7e23dd1c8027fc44595fe537639b3e8729c",
-  "new_hash": "sha256:b7eef64c6005f41f6210c3d20cdb7363d27715932a1491b2616b8fa803aefbc7",
+  "new_hash": "sha256:62859dc6e65faeb2adc07c7b33b24dff54bf16b03b023ca876e05afa7e91a295",
   "original_hash": "sha256:6a06598f5d61b652a596a359a673c7e23dd1c8027fc44595fe537639b3e8729c",
   "normalized_hash": "sha256:b7eef64c6005f41f6210c3d20cdb7363d27715932a1491b2616b8fa803aefbc7",
-  "candidate_hash": "sha256:b7eef64c6005f41f6210c3d20cdb7363d27715932a1491b2616b8fa803aefbc7",
+  "candidate_hash": "sha256:62859dc6e65faeb2adc07c7b33b24dff54bf16b03b023ca876e05afa7e91a295",
   "changed": true,
-  "changed_line_count": 358,
-  "inserted_line_count": 120,
+  "changed_line_count": 369,
+  "inserted_line_count": 124,
   "deleted_line_count": 0,
   "ui_blocks_original_count": 4,
-  "ui_blocks_candidate_count": 0,
-  "ui_blocks_changed_count": 4,
+  "ui_blocks_candidate_count": 4,
+  "ui_blocks_changed_count": 0,
   "ui_blocks_count": 4,
-  "unresolved_placeholders_count": 1,
-  "preserved_blocks_count": 0,
+  "unresolved_placeholders_count": 0,
+  "preserved_blocks_count": 4,
   "changed_text_summary": {
-    "changed": 358,
-    "inserted": 120,
+    "changed": 369,
+    "inserted": 124,
     "deleted": 0,
     "original_line_count": 329,
-    "candidate_line_count": 449
+    "candidate_line_count": 453
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0001",
-      "ui_0002",
-      "ui_0003",
-      "ui_0004"
-    ],
-    "changed_count": 4
+    "missing_block_ids": [],
+    "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate contains unresolved UI block placeholders.",
-    "Candidate is missing 4 preserved UI block(s)."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 4 preserved UI block(s)."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

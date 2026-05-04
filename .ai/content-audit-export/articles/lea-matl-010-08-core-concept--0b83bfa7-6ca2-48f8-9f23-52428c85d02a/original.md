@@ -10,6 +10,13 @@ The prismoidal formula is more accurate, particularly for parabolic or irregular
 
 In the Philippines, standard practice uses the trapezoidal method for preliminary estimates and the prismoidal method for final billing and payment. The formula constants (L/2 vs. L/3) reflect the different integration approaches.
 
+
+<ArticleMedia id="media-roofing-quantity-diagram" layout="single" type="image" status="placeholder"
+  alt="Diagram showing corrugated GI sheet coverage calculation with side lap, end lap, and slope allowance on a roof plan"
+  caption="Future diagram: roofing quantity estimation — GI sheet coverage, laps, and slope allowance"
+  suggestedAsset="Roof plan with sheet layout and lap allowance callouts"
+  placementIntent="Visualizes roofing material quantity estimation" />
+
 ## Key Provisions
 
 | Formula | Application | Accuracy | LEA Relevance |
@@ -68,6 +75,12 @@ V = 5 × 579 = 2,895 m³
 **Answer: ~2,890 m³ (trapezoidal for simplicity, prismoidal for accuracy)**
 </Example>
 
+
+<ArticleMedia id="media-roofing-estimation-example" layout="single" type="image" status="placeholder"
+  alt="Step-by-step roofing estimation example showing roof area, GI sheet coverage with end and side laps, ridge length, and fastener count"
+  caption="Future diagram: roofing estimation worked example — sheet coverage, laps, ridge, and fasteners"
+  suggestedAsset="Step-by-step illustrated calculation example"
+  placementIntent="Provides practical example of roofing material estimation" />
 ## Quick Reference: Earthwork Formula Table
 
 | Method | Formula | Suitable For | Notes |

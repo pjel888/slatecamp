@@ -80,6 +80,8 @@ Le Corbusier's other major works include the **Unité d'Habitation** (1947–195
 
 **Modulor**: Le Corbusier's proportional system based on human measurements; used to ensure all building elements relate to human scale; represents his belief in scientific design.
 
+<ArticleMedia id="media-hist-008-03a-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Diagram illustrating Le Corbusier's Five Points of Architecture: pilotis (free ground floor), roof garden, free plan (non-load-bearing walls), horizontal ribbon window, and free facade, with annotations on Villa Savoye." caption="Le Corbusier — Five Points Diagram" suggestedAsset="Style comparison illustration" placementIntent="Style comparison for architectural period" />
+
 ## Related Articles
 
 See also within Modern & Contemporary Architecture: **lea-hist-008-01-core-concept**, **lea-hist-008-02-core-concept**, **lea-hist-008-03b-core-concept**, **lea-hist-008-03c-core-concept**.

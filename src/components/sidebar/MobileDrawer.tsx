@@ -10,7 +10,9 @@ import { useActiveSession } from '@/lib/context/active-session-context'
 import { SIDEBAR_GROUPS, DASHBOARD_ITEM, SETTINGS_ITEM } from './sidebar-constants'
 import { Z_INDEX, ICON_TIER_OPACITY } from './types'
 import type { SidebarNavItemConfig } from './types'
+import type { NavigationPendingInfo } from './types'
 import { ConfirmDialog } from '@/components/ui/dialog'
+import { useNavigationPending } from '@/hooks/useNavigationPending'
 
 // ---------------------------------------------------------------------------
 // MobileDrawer — full-screen slide-in nav drawer for mobile
@@ -44,17 +46,40 @@ interface MobileNavItemProps {
   item: SidebarNavItemConfig
   isActive: boolean
   onNavigate: (e: React.MouseEvent<HTMLAnchorElement>) => void
+  navigationPending?: NavigationPendingInfo
 }
 
-const MobileNavItem = ({ item, isActive, onNavigate }: MobileNavItemProps) => {
+const MobileNavItem = ({ item, isActive, onNavigate, navigationPending }: MobileNavItemProps) => {
   const { icon: Icon, label, href, tier } = item
   const tierOpacity = ICON_TIER_OPACITY[tier]
+
+  // Navigation pending state
+  const isNavigating = navigationPending?.isNavigating ?? false
+  const isItemPending = navigationPending?.isPendingHref(href) ?? false
+  const isItemDisabled = isNavigating && !isItemPending
+
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    if (isItemDisabled) {
+      e.preventDefault()
+      e.stopPropagation()
+      return
+    }
+
+    if (!isItemPending && !isActive && navigationPending) {
+      navigationPending.startNavigation(href, { id: item.id })
+    }
+
+    onNavigate(e)
+  }
 
   return (
     <Link
       href={href}
-      onClick={onNavigate}
+      onClick={handleClick}
       aria-current={isActive ? 'page' : undefined}
+      aria-disabled={isItemDisabled ? true : undefined}
+      aria-busy={isItemPending ? true : undefined}
+      data-pending={isItemPending ? '' : undefined}
       className={cn(
         // Base layout — 42px height for touch targets
         'relative flex h-[42px] w-full items-center gap-[11px] rounded-[7px] px-2.5',
@@ -68,21 +93,41 @@ const MobileNavItem = ({ item, isActive, onNavigate }: MobileNavItemProps) => {
         isActive && [
           'bg-gray-100/50 dark:bg-gray-800/50',
           'text-gray-900 dark:text-gray-200',
-          // Left-edge active indicator — bleeds into px-2.5 (10px) padding zone
+          // Left-edge active indicator
           'before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2',
           'before:w-[2.5px] before:h-[18px]',
           'before:bg-camp-cobalt dark:before:bg-primary-400',
           'before:rounded-r-sm',
           "before:content-['']",
         ],
+        // Pending state
+        isItemPending && [
+          'cursor-progress',
+          'bg-primary-50/60 dark:bg-primary-900/10',
+          'text-primary/80 dark:text-primary-400/80',
+        ],
+        // Disabled state
+        isItemDisabled && [
+          'pointer-events-none',
+          'opacity-40',
+          'cursor-progress',
+          'select-none',
+        ],
       )}
     >
-      <Icon
-        size={16}
-        weight="regular"
-        className="w-4 h-4 shrink-0 transition-opacity duration-[120ms]"
-        style={{ opacity: isActive || tier === 'default' ? 1.0 : tierOpacity }}
-      />
+      {isItemPending ? (
+        <span
+          className="block h-4 w-4 shrink-0 animate-spin rounded-full border-[2px] border-current border-t-transparent motion-reduce:animate-none motion-reduce:border-t-0 motion-reduce:opacity-50"
+          aria-hidden="true"
+        />
+      ) : (
+        <Icon
+          size={16}
+          weight="regular"
+          className="w-4 h-4 shrink-0 transition-opacity duration-[120px]"
+          style={{ opacity: isActive || tier === 'default' ? 1.0 : tierOpacity }}
+        />
+      )}
 
       {/* Label */}
       <span
@@ -93,6 +138,13 @@ const MobileNavItem = ({ item, isActive, onNavigate }: MobileNavItemProps) => {
       >
         {label}
       </span>
+
+      {/* Visually hidden loading announcement */}
+      {isItemPending && (
+        <span className="sr-only" role="status" aria-live="polite" aria-atomic="true">
+          Loading {label}…
+        </span>
+      )}
     </Link>
   )
 }
@@ -114,6 +166,7 @@ export const MobileDrawer = ({
   const { activeSession } = useActiveSession()
   const [showLeaveConfirm, setShowLeaveConfirm] = useState(false)
   const [pendingHref, setPendingHref] = useState<string | null>(null)
+  const navigationPending = useNavigationPending()
 
   // Close on route change
   useEffect(() => {
@@ -274,6 +327,7 @@ export const MobileDrawer = ({
               item={DASHBOARD_ITEM}
               isActive={isActive(DASHBOARD_ITEM.href, true)}
               onNavigate={handleNavigate}
+              navigationPending={navigationPending}
             />
           </div>
 
@@ -299,6 +353,7 @@ export const MobileDrawer = ({
                     item={item}
                     isActive={isActive(item.href)}
                     onNavigate={handleNavigate}
+                    navigationPending={navigationPending}
                   />
                 ))}
               </div>
@@ -320,6 +375,7 @@ export const MobileDrawer = ({
               item={SETTINGS_ITEM}
               isActive={isActive(SETTINGS_ITEM.href)}
               onNavigate={handleNavigate}
+              navigationPending={navigationPending}
             />
           </div>
         </div>

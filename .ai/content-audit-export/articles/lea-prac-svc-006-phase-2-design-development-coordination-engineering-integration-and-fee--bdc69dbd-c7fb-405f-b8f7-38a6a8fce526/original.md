@@ -10,8 +10,9 @@ After reading this article, you should be able to:
 
 Design Development builds upon the approved schematic design to produce detailed drawings, specifications, and cost estimates. This phase earns 20% of the architect's total design fees and focuses on translating conceptual design into technical documents ready for contract document preparation.
 
-### Design Development Deliverables
+<ArticleMedia id="media-lea-prac-svc-006-phase-2-design-developm" a type="image" caption="SPP Doc 202 Six-Phase Framework — Design Development Phase in Context" description="Process flow highlighting Phase 3 (Design Development) within the six-phase SPP Doc 202 framework: Project Definition → Schematic Design → Design Development (20% fee, detailed drawings, outline specifications, consultant coordination, updated cost estimates) → Contract Documents → Bidding → Construction Admin." suggestedAsset="Diagram or reference image" status="placeholder" />
 
+### Design Development Deliverables
 
 <KeyValues pairs={[["SPP Document", "201 (Pre-Design), 202 (Regular Design), 203 (Specialized)"], ["Compensation", "MDPE, Lump Sum, Per Diem, Professional Fee + Expenses"], ["Fee Basis", "Percentage of PCC or MDPE"]]} />
 Based on approved schematics and conceptual plans, the architect prepares Design Development documents consisting of plans, elevations, sections, and other drawings. Outline specifications are prepared fixing and illustrating the size and character of the entire project in terms of materials, type of structural, electrical, mechanical, sanitary, electronic, and communications systems. The architect also prepares a diagrammatic layout of construction systems showing how building components integrate. An updated Statement of Probable Project Construction Cost is submitted reflecting refinements in scope, requirements, or market conditions.
@@ -20,10 +21,8 @@ Based on approved schematics and conceptual plans, the architect prepares Design
 
 <KeyValues pairs={[["SPP Document", "201 (Pre-Design), 202 (Regular Design), 203 (Specialized)"], ["Compensation", "MDPE, Lump Sum, Per Diem, Professional Fee + Expenses"], ["Fee Basis", "Percentage of PCC or MDPE"]]} />
 
-
 <ExamTip>**LEA Pattern:** Expect scenario-based questions where you must determine which phase a specific deliverable belongs to. Key percentages to memorize: Schematic Design (15%), Design Development (35%), Contract Documents (50%).</ExamTip>
 Design Development requires active coordination among the architect and engineering consultants. The architect must ensure that structural, mechanical, electrical, and plumbing systems integrate effectively with the architectural design. This phase typically sees the greatest amount of consultant coordination, as systems must be refined from schematic concepts into coordinated technical designs. The architect acts as the lead professional coordinating all disciplines to achieve an integrated solution.
-
 
 <ExamTip>**LEA Pattern:** Expect scenario-based questions where you must determine which phase a specific deliverable belongs to. Key percentages to memorize: Schematic Design (15%), Design Development (35%), Contract Documents (50%).</ExamTip>
 ### Fee Milestone and Cumulative Progress

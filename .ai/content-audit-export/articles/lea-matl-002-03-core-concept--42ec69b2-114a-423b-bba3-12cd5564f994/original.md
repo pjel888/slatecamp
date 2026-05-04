@@ -42,6 +42,13 @@ Standard heights are 8 inches (200 mm) and 4 inches (100 mm);
 standard lengths are 16 inches (400 mm) and 8 inches (200 mm).
 The 8 × 16 unit (200 × 400 mm) is universal in the Philippines.
 
+
+<ArticleMedia id="media-chb-dimensions-diagram" layout="single" type="image" status="placeholder"
+  alt="Annotated drawing of a standard 8×8×16 inch concrete hollow block showing face shell, web, and core dimensions"
+  caption="Future diagram: CHB dimensional standards — face shell, web, and core void geometry"
+  suggestedAsset="Cross-section and isometric drawing of CHB with standard dimensions"
+  placementIntent="Visualizes CHB geometry and terminology described in the article" />
+
 ## ASTM C90: Loadbearing Concrete Masonry Units
 
 ASTM C90 covers hollow and solid concrete masonry units for loadbearing applications.
@@ -116,6 +123,13 @@ Clay bricks are kiln-fired at high temperature (1,900—2,200°F), resulting in 
 
 Clay brick is not common in typical Philippine construction due to cost;
 CHB dominates residential and commercial markets.
+
+
+<ArticleMedia id="media-clay-brick-vs-chb" layout="single" type="image" status="placeholder"
+  alt="Side-by-side comparison illustration of clay brick and concrete hollow block showing size, texture, and cross-section differences"
+  caption="Future diagram: clay brick vs. concrete hollow block — physical comparison"
+  suggestedAsset="Comparative illustration with callouts for key differences"
+  placementIntent="Helps learners distinguish between masonry unit types" />
 
 ## Concrete Masonry Units: Physical Properties and Defects
 

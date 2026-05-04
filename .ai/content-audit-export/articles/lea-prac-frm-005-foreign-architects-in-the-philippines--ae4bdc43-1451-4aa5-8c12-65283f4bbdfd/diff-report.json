@@ -1,44 +1,38 @@
 {
   "article_id": "ae4bdc43-1451-4aa5-8c12-65283f4bbdfd",
   "slug": "lea-prac-frm-005-foreign-architects-in-the-philippines",
-  "generated_at": "2026-05-04T00:06:33.085Z",
-  "old_hash": "sha256:8eb1fa2c29d3d555f372c82fced4aa57c06f103b57a9df3b1e19d2656c87ade6",
-  "new_hash": "sha256:eda932cebe6dd9d8bed22b4e1db3c7af1e50533974bde80af9d14e83d3327b9f",
-  "original_hash": "sha256:8eb1fa2c29d3d555f372c82fced4aa57c06f103b57a9df3b1e19d2656c87ade6",
+  "generated_at": "2026-05-04T02:17:12.281Z",
+  "old_hash": "sha256:d49e84faa6a2586164c0d044df4ee3cc49785472a4544366a885c3458c781320",
+  "new_hash": "sha256:d49e84faa6a2586164c0d044df4ee3cc49785472a4544366a885c3458c781320",
+  "original_hash": "sha256:d49e84faa6a2586164c0d044df4ee3cc49785472a4544366a885c3458c781320",
   "normalized_hash": "sha256:eda932cebe6dd9d8bed22b4e1db3c7af1e50533974bde80af9d14e83d3327b9f",
-  "candidate_hash": "sha256:eda932cebe6dd9d8bed22b4e1db3c7af1e50533974bde80af9d14e83d3327b9f",
-  "changed": true,
-  "changed_line_count": 49,
+  "candidate_hash": "sha256:d49e84faa6a2586164c0d044df4ee3cc49785472a4544366a885c3458c781320",
+  "changed": false,
+  "changed_line_count": 0,
   "inserted_line_count": 0,
-  "deleted_line_count": 1,
+  "deleted_line_count": 0,
   "ui_blocks_original_count": 2,
-  "ui_blocks_candidate_count": 0,
-  "ui_blocks_changed_count": 2,
+  "ui_blocks_candidate_count": 2,
+  "ui_blocks_changed_count": 0,
   "ui_blocks_count": 2,
-  "unresolved_placeholders_count": 1,
-  "preserved_blocks_count": 0,
+  "unresolved_placeholders_count": 0,
+  "preserved_blocks_count": 2,
   "changed_text_summary": {
-    "changed": 49,
+    "changed": 0,
     "inserted": 0,
-    "deleted": 1,
-    "original_line_count": 60,
+    "deleted": 0,
+    "original_line_count": 59,
     "candidate_line_count": 59
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0003",
-      "ui_0004"
-    ],
-    "changed_count": 2
+    "missing_block_ids": [],
+    "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate contains unresolved UI block placeholders.",
-    "Candidate is missing 2 preserved UI block(s)."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 2 preserved UI block(s)."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

@@ -4,6 +4,8 @@ After reading this article, you should understand the key concepts tested in the
 
 The Certificate of Registration grants architects the legal authority to practice, sign and seal documents, and represent themselves as licensed professionals. The Board of Architecture may suspend or revoke registration upon discovery of grounds establishing violation of law, ethics violations, or professional incompetence.
 
+<ArticleMedia id="media-eth008-disciplinary-grounds" layout="single" variant="contained" type="image" status="placeholder" aspectRatio="16:9" title="Grounds for Suspension and Revocation — Severity Spectrum" description="Spectrum diagram showing the four statutory grounds under RA 9266 Section 23(a)-(d) ranked by severity: (a) Unauthorized signing/sealing, (b) Fraud/deceit in registration, (c) Gross negligence/incompetence/recklessness, (d) Any other prejudicial conduct. Each ground shows illustrative examples, distinction between suspension (temporary) and revocation (permanent), and the two-year reinstatement opportunity under Section 24." placementIntent="ethics-framework" suggestedSearchQuery="RA 9266 Section 23 grounds suspension revocation architect discipline severity" suggestedAsset="Diagram or reference image" />
+
 ### RA 9266 Section 23 Statutory Grounds
 
 Section 23 of RA 9266 establishes four distinct grounds (a through d) for suspension or revocation. Each ground independently supports Board action.

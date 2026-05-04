@@ -1,28 +1,19 @@
 {
-  "attempted_at": "2026-05-04T00:05:50.851Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:05:53.667Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "original.md hash does not match article metadata export hash.",
-    "Remote Supabase content differs from export baseline; refusing stale push.",
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "Remote Supabase content differs from export baseline; refusing stale push."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "0b116082-5275-4d0f-bb23-ce5b74339001",
   "slug": "lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic",
-  "preparation_actions": [
-    "auto_generated_diff"
-  ],
-  "remote_hash_before": "sha256:f0550d053527ccdf5d344e37ca9471e893cd6a9ab764fef6fbffb7956ca5278b",
-  "original_hash": "sha256:4172cbb009bff0d52f23e9d8bd0f0d33e76b786844d38fa5898e755848c6b55a",
-  "candidate_hash": "sha256:ed2cbe7150393630425467285033d8dc00e6296a1a3c63a8bd7efa1f5da94acf",
+  "preparation_actions": [],
+  "remote_hash_before": "sha256:c920cd9742e4c1ac30be31777a6427297f584f101dd1b06ed751c82015cc5df9",
+  "original_hash": "sha256:ed2cbe7150393630425467285033d8dc00e6296a1a3c63a8bd7efa1f5da94acf",
+  "candidate_hash": "sha256:c920cd9742e4c1ac30be31777a6427297f584f101dd1b06ed751c82015cc5df9",
   "stale_check_passed": false,
-  "remote_updated_at_before": "2026-05-03T15:43:07.560431+00:00"
+  "remote_updated_at_before": "2026-05-04T01:59:07.681975+00:00"
 }

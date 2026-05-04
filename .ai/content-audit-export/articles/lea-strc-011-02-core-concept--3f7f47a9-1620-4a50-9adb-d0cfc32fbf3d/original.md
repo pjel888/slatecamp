@@ -11,6 +11,7 @@ By the end of this article, you will be able to:
 
 ---
 ## Core Concept
+<ArticleMedia id="media-lea-strc-011-02-core-concept" a type="image" caption="Foundation Typology — Shallow vs Deep Foundation Systems" description="Cross-section comparison of foundation types: (1) Shallow foundations — isolated footing, combined footing, strip footing, mat/raft foundation; (2) Deep foundations — pile foundation (end-bearing/friction), drilled pier/caisson (≥600mm). Each type shown with soil bearing pressure distribution, reinforcement layout, and typical depth range. Decision tree for foundation selection based on soil conditions and building loads." suggestedAsset="Diagram or reference image" status="placeholder" />
 A foundation is the structural system that transfers building load from the superstructure to the soil. Foundation selection is governed by three factors: _soil bearing capacity_, _allowable settlement_, and _site constraints_ (depth to groundwater, adjacent structures, available space).
 
 **Foundation Classification by Depth:**
@@ -68,7 +69,6 @@ In Metro Manila and coastal alluvial plains, shallow footings are viable only in
 <Tip>
 **Memory Aid:** Shallow footings are direct pushers—they shove load straight down into soil. Deep piles and caissons are deep anchors—they hang onto the soil with friction or grip a firm layer with their tip. Mats are load-spreaders—they flatten pressure across a wide area to reduce settlement. Floating foundations are weight-balancers—they remove as much soil weight as they place in structure.
 </Tip>
-
 
 ## Related Articles
 

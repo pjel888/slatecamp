@@ -10,6 +10,7 @@ By the end of this article, you will be able to:
 Walls are classified by their structural function: bearing, non-bearing, parapet, retaining, and specialty walls. Each type has distinct design criteria, materials, and load paths. Bearing wall classifications use specific NSCP thresholds to separate load-bearing from non-load-bearing roles.
 
 ## Core Concept
+<ArticleMedia id="media-lea-strc-002-04-core-concept" a type="image" caption="Wall Types — Bearing, Non-Bearing, Parapet, and Retaining" description="Building cross-section diagram identifying four wall types: bearing wall (supporting slab loads above), non-bearing/curtain wall (self-weight only, attached to frame), parapet wall (extending above roofline with anchorage detail), and retaining wall (resisting lateral earth pressure with counterfort/buttress options). Load paths shown for each type." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 A **bearing wall** is a wall that supports vertical (gravity) loads from above in addition to its own weight. NSCP 2015 classifies bearing walls in seismic design tables (Table 208-11); specific superimposed load thresholds require verification from Volume 2 material sections. These thresholds are critical—below them, walls are considered non-bearing.
 
@@ -53,7 +54,6 @@ In the Philippines, bearing masonry walls are standard in residential constructi
 **Apply-level:** Given a 5-story residential building with 2.0 kN/m load on each wood stud wall, classify the wall and specify design requirements.
 
 <Tip>**Memory aid:** Light-frame 1.45, masonry 2.90. Think "light is half" — stud threshold is exactly half the masonry threshold (1.45 = 2.90/2). These convert from 100 plf and 200 plf. Cavity walls: "51 to 114" — remember the range by rounding (50–100 ≈ 51–114).</Tip>
-
 
 ## Related Articles
 

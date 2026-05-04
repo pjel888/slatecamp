@@ -7,7 +7,11 @@ Apply building code requirements to the three most frequently tested building ty
 
 ## 1. Hospital Module (High‑Risk Occupancy, Many PWDs)
 
-[SLATECAMP_UI_BLOCK:ui_0037 component="LawCallout" status="preserved"]
+<LawCallout code="bp344">
+
+Legal Basis: BP 344 (2024 IRR) governs ALL accessible design in the Philippines. PD 1096 (National Building Code) governs fire safety, structural requirements, and occupancy classifications. For hospital design, both apply simultaneously: BP 344 mandates wheelchair turning spaces (1800 mm), accessible routes (1200 mm min width), and curb ramps (900 mm min width, 1:12 max slope). PD 1096 mandates fire-rated exits, stair widths, and occupancy load calculations.
+
+</LawCallout>
 
 ### 1.1 Built Features (BP 344 + PD 1096 + Rule VII/VIII Context)
 
@@ -22,7 +26,11 @@ Apply building code requirements to the three most frequently tested building ty
 
 - **Ramps (BP 344):**
 
-[SLATECAMP_UI_BLOCK:ui_0038 component="Warn" status="preserved"]
+<Warn>
+
+⚠️ EXAM WARNING: Do NOT confuse the 1.00 m minimum ramp width (BP 344) with the 1.20 m minimum sidewalk width (BP 344). The ramp minimum is 1.00 m; the sidewalk minimum is 1.20 m. Practice guides often recommend 1.20 m for ramps as a design improvement, but the CODE MINIMUM is 1.00 m. LEA questions test the code minimum, not the recommendation.
+
+</Warn>
 
   - **Minimum clear width:** **1.00 m** for accessible ramps (many practice notes use 1.20 m as a design improvement; retain 1.20 m as a _recommended_ width, but code minimum is 1.00 m).[web:3][web:12]
   - **Maximum gradient:** **1:12** for accessible ramps; provide **level landings** (min **1.00 m** deep; many practice guides use **1.50–1.80 m** for easier turning) at top and bottom and at breaks in long runs.[web:3][web:5][web:12][web:13]
@@ -178,9 +186,25 @@ Apply building code requirements to the three most frequently tested building ty
 
 Do you want me to adapt this file into a shorter “exam‑type handout” version for quick review in class?
 
-[SLATECAMP_UI_BLOCK:ui_0039 component="ExamTip" status="preserved"]
+<ExamTip>
 
-[SLATECAMP_UI_BLOCK:ui_0040 component="KeyValues" status="preserved"]
+**LEA Tip — Mall Corridor Width:** For retail malls, the accessible route width is 1.20 m minimum (BP 344). However, the PD 1096 fire exit width is calculated based on occupant load ÷ 40 (for stairs) or ÷ 80 (for doors/ramps). The governing requirement is the LARGER of the two. Always check BOTH codes before specifying corridor width in a mall.
+
+</ExamTip>
+
+<KeyValues title="BP 344 Dimensional Quick-Reference for Case Studies">
+
+- Wheelchair turning space: 1800 × 1800 mm (App. A)
+- Ramp min width: 1000 mm (App. A)
+- Ramp max slope: 1:12
+- Sidewalk clear width: 1200 mm
+- Curb ramp min width: 900 mm
+- Accessible route min width: 1200 mm
+- Corridor (hospital, with turning): 1500 mm
+- Door clear opening: 900 mm (single), 1800 mm (double)
+- Ramp landing length: 1800 mm
+
+</KeyValues>
 
 ---
 

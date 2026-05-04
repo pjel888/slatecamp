@@ -5,7 +5,6 @@ Distinguish NHA's role as housing producer (not financier) from SHFC (community 
 
 The Philippine government houses policies and production through separate agencies: NHA builds housing; SHFC finances community programs; Pag-IBIG finances individual loans. Understanding who does what is essential for application questions.
 
-
 ## Core Concept
 
 The Philippine housing system separates production from finance. The **National Housing Authority (NHA)** is the primary government housing _producer_—it builds resettlement projects, medium-rise housing for the urban poor, and slum upgrading programs. NHA does not provide loans directly to individual end-buyers but originates loans for organized community associations under CMP; it constructs completed units for allocation.
@@ -15,6 +14,7 @@ The **Social Housing Finance Corporation (SHFC)** finances community-based housi
 The distinction between NHA and SHFC is critical: NHA owns the production pipeline (government-built units), SHFC owns the financing mechanism (loans for communities buying land). Both serve low-income populations, but through entirely different delivery methods.
 
 Neither NHA nor SHFC provides the mass of housing loans to employed individuals—that is the role of Pag-IBIG/HDMF, SSS, and GSIS (covered in LEA-PLAN-007-03).
+<ArticleMedia id="media-lea-plan-007-01-core-concept" a type="image" caption="NHA Programs and Beneficiaries — Housing Production Agency Diagram" description="Organizational diagram of NHA programs: resettlement sites (disaster/development victims), medium-rise buildings (MRBs for urban poor), slum upgrading (zonal improvement), and target beneficiaries. NHA as producer (not financier) — distinguished from SHFC and Pag-IBIG roles." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
@@ -31,7 +31,6 @@ NHA resettlement projects are highly visible in Metro Manila (Alalay sa Kaunlara
 3. **Program matching:** "Which program allows a community to collectively mortgage land they occupy?" → CMP.
 
 <Tip>**Memory aid:** NHA = **N**ational Housing **A**uthority = **A**uthority = **Authority TO BUILD**. SHFC = **S**ocial Housing **F**inance = **F**inance = provides the mortgage money.</Tip>
-
 
 **Exam Tip:** NHA's role: PRODUCER, not financier. NHA builds resettlement projects, MRBs, and slum upgrading. NHA does NOT provide individual home loans — that's Pag-IBIG. NHA targets the poorest: bottom 30% income bracket.
 

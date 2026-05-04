@@ -12,16 +12,16 @@ After reading this article, you should be able to:
 
 During schematic design, the architect evaluates the owner's program, schedule, budget, and site to propose project delivery methods. The architect prepares initial line drawings representing design studies that lead to a recommended conceptual solution. These drawings present the design concept with sufficient clarity for owner review and approval. The architect also submits to the owner an updated Statement of the Probable Project Construction Cost (SPPCC) based on current cost parameters, providing the owner with cost feedback at this early stage.
 
+<ArticleMedia id="media-lea-prac-svc-005-phase-1-schematic-desig" a type="image" caption="SPP Doc 202 Six-Phase Framework — Schematic Design Phase in Context" description="Process flow highlighting Phase 2 (Schematic Design) within the six-phase SPP Doc 202 framework: Project Definition → Schematic Design (15% fee, conceptual plans, elevations, cost estimates, delivery method decisions) → Design Development → Contract Documents → Bidding → Construction Admin." suggestedAsset="Diagram or reference image" status="placeholder" />
+
 <KeyValues pairs={[["SPP Document", "201 (Pre-Design), 202 (Regular Design), 203 (Specialized)"], ["Compensation", "MDPE, Lump Sum, Per Diem, Professional Fee + Expenses"], ["Fee Basis", "Percentage of PCC or MDPE"]]} />
 
 ### Key Decisions and Approvals
-
 
 <KeyValues pairs={[["SPP Document", "201 (Pre-Design), 202 (Regular Design), 203 (Specialized)"], ["Compensation", "MDPE, Lump Sum, Per Diem, Professional Fee + Expenses"], ["Fee Basis", "Percentage of PCC or MDPE"]]} />
 Schematic design requires critical decisions regarding massing, orientation, site utilization, structural systems, and project delivery approach. The owner must approve the schematic design concept and the probable construction cost estimate before the architect proceeds to design development. These approvals are essential, as changes to the approved concept in later phases typically result in additional compensation claims and schedule delays.
 
 <ExamTip>**LEA Pattern:** Expect scenario-based questions where you must determine which phase a specific deliverable belongs to. Key percentages to memorize: Schematic Design (15%), Design Development (35%), Contract Documents (50%).</ExamTip>
-
 
 <ExamTip>**LEA Pattern:** Expect scenario-based questions where you must determine which phase a specific deliverable belongs to. Key percentages to memorize: Schematic Design (15%), Design Development (35%), Contract Documents (50%).</ExamTip>
 ### Fee Calculation and Milestone

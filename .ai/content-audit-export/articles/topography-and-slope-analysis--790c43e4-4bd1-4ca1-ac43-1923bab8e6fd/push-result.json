@@ -1,26 +1,21 @@
 {
-  "attempted_at": "2026-05-04T00:06:51.347Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:17:35.260Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "candidate.md matches original.md; refusing no-op apply."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "790c43e4-4bd1-4ca1-ac43-1923bab8e6fd",
   "slug": "topography-and-slope-analysis",
   "preparation_actions": [
     "auto_generated_diff"
   ],
-  "remote_hash_before": "sha256:eef7ed6cd3d28277c6b8f5aa865a38f1e88a25fff11e39dd0dda0664a3e4f118",
-  "original_hash": "sha256:eef7ed6cd3d28277c6b8f5aa865a38f1e88a25fff11e39dd0dda0664a3e4f118",
-  "candidate_hash": "sha256:1240d85103ef58e5c4cf0240f9d574cf3b0fc3f21d175ab283cc548bea427dd2",
+  "remote_hash_before": "sha256:c1d9553079d1b8197ab8e0b82e99a9c7e670b6d4dbaba1d7caf43821fdf12833",
+  "original_hash": "sha256:c1d9553079d1b8197ab8e0b82e99a9c7e670b6d4dbaba1d7caf43821fdf12833",
+  "candidate_hash": "sha256:c1d9553079d1b8197ab8e0b82e99a9c7e670b6d4dbaba1d7caf43821fdf12833",
   "stale_check_passed": true,
-  "remote_updated_at_before": "2026-05-03T13:52:01.101049+00:00"
+  "remote_updated_at_before": "2026-05-04T02:01:27.081345+00:00"
 }

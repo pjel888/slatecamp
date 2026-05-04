@@ -2,10 +2,7 @@
 ## Learning Goal
 After reading this article, you should be able to:
 
-Apply building code requirements to the three most frequently tested building typologies on the LEA: hospitals (Group D, requiring special fire/smoke control, minimum corridor width 2.40 m, emergency power); malls/shopping centers (Group F, requiring malls as public ways, sprinklers above 12 m height); and schools (Group E, requiring 2 exits per classroom, special fire alarm, maximum travel distance 45 m).
-
-_Scenario‑Based Integration – Dimensions + Laws in One Place_
-
+Apply building code requirements to the three most frequently tested building typologies on the ALE: hospitals (Group D, requiring special fire/smoke control, minimum corridor width 2.40 m, emergency power); malls/shopping centers (Group F, requiring malls as public ways, sprinklers above 12 m height); and schools (Group E, requiring 2 exits per classroom, special fire alarm, maximum travel distance 45 m).
 ---
 
 ## 1. Hospital Module (High‑Risk Occupancy, Many PWDs)
@@ -15,7 +12,6 @@ _Scenario‑Based Integration – Dimensions + Laws in One Place_
 Legal Basis: BP 344 (2024 IRR) governs ALL accessible design in the Philippines. PD 1096 (National Building Code) governs fire safety, structural requirements, and occupancy classifications. For hospital design, both apply simultaneously: BP 344 mandates wheelchair turning spaces (1800 mm), accessible routes (1200 mm min width), and curb ramps (900 mm min width, 1:12 max slope). PD 1096 mandates fire-rated exits, stair widths, and occupancy load calculations.
 
 </LawCallout>
-
 
 ### 1.1 Built Features (BP 344 + PD 1096 + Rule VII/VIII Context)
 
@@ -190,13 +186,11 @@ Legal Basis: BP 344 (2024 IRR) governs ALL accessible design in the Philippines.
 
 Do you want me to adapt this file into a shorter “exam‑type handout” version for quick review in class?
 
-
 <ExamTip>
 
 **LEA Tip — Mall Corridor Width:** For retail malls, the accessible route width is 1.20 m minimum (BP 344). However, the PD 1096 fire exit width is calculated based on occupant load ÷ 40 (for stairs) or ÷ 80 (for doors/ramps). The governing requirement is the LARGER of the two. Always check BOTH codes before specifying corridor width in a mall.
 
 </ExamTip>
-
 
 <KeyValues title="BP 344 Dimensional Quick-Reference for Case Studies">
 
@@ -218,3 +212,5 @@ Do you want me to adapt this file into a shorter “exam‑type handout” versi
 
 **Institutional Human Dimensions**, **Commercial Clearances**, **Sanitation And Water Supply**, **Fire Extinguishing Systems**
 
+
+<!-- no-media-needed: existing content format is sufficient without visual media -->

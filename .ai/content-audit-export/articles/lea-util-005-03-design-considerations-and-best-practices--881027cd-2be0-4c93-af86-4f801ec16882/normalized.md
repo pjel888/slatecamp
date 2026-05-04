@@ -7,7 +7,7 @@ Design fire detection and alarm systems in compliance with RA 9514 and NFPA 72 �
 
 **1. Redundancy for Critical Facilities**
 
-<ArticleMedia id="media-lea-util-005-03-design-considerations-an" a type="image" caption="Fire Detection and Alarm System Architecture — FACP, SLC Loops, NAC Circuits" description="System architecture diagram showing: Fire Alarm Control Panel (FACP) with SLC (Signaling Line Circuit) loops connecting addressable smoke/heat detectors and manual pull stations, NAC (Notification Appliance Circuit) powering horns/strobes/voice speakers, and integration relays to building systems (elevator recall, HVAC shutdown, door release). Class B (Style 4) and Class A (Style 6/7) loop configurations compared. Battery backup showing 24h standby + 15min alarm calculation." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-util-005-03-design-considerations-an" type="image" caption="Fire Detection and Alarm System Architecture — FACP, SLC Loops, NAC Circuits" alt="System architecture diagram showing: Fire Alarm Control Panel (FACP) with SLC (Signaling Line Circuit) loops connecting addressable smoke/heat detectors and manual pull stations, NAC (Notification Appliance Circuit) powering horns/strobes/voice speakers, and integration relays to building systems (elevator recall, HVAC shutdown, door release). Class B (Style 4) and Class A (Style 6/7) loop configurations compared. Battery backup showing 24h standby + 15min alarm calculation." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 
 Buildings housing critical functions (hospitals, data centers, government offices) in the Philippines may require:
@@ -103,13 +103,13 @@ See also within Security and Communication Systems: **lea-util-005-04-core-conce
 
 > **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
 
-[SLATECAMP_UI_BLOCK:ui_repaired_006 component="Note" status="preserved"]
+
 Extracted summary:
 - Props: title="Loop Polarity in Class A SLC Circuits" variant="info"
 - Text: Class A SLC loops use bipolar signaling: the outgoing conductor and return conductor carry opposite polarity signals. If the outgoing wire opens, the loop detects this as a break; alarm signals continue through the return path. The control panel monitors the loop for opens and shorts and annunciates line trouble while maintaining alarm transmission capability. This is why Class A circuits cost more to install—extra copper, loop splitters, and diagnostic intelligence—but justify the cost in space
-[/SLATECAMP_UI_BLOCK:ui_0002 component="WikiCalloutBox" status="preserved"]
+
 
 <Note>
 Philippine fire alarm systems operate on a nominal 220V single-phase supply (some systems use 110V or 48V DC backup). NAC load calculations must account for peak demand: if the FACP supplies multiple NAC circuits and a Mass Notification System simultaneously, the total current demand can exceed the circuit capacity. A typical NAC branch in a 50-person occupancy space (say, one floor of an office building) draws 2–4 amps at alarm condition. A 16-amp FACP power supply can support 2–3 NAC circuits
-[/SLATECAMP_UI_BLOCK:ui_0005 component="WikiCalloutBox" status="preserved"]
+
 </Note>

@@ -1,33 +1,32 @@
 # Content Diff Report: transport-nodes-escalators-walkways
 
-Generated: 2026-05-04T00:06:28.878Z
+Generated: 2026-05-04T02:17:04.772Z
 Article ID: f6fe1a69-b3c0-4c94-8341-9291c71c5006
-Changed: true
-Safe to push locally: false
+Changed: false
+Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:cec689ff821feecd76456e141c40fdb62ce03fec3c53e5f7a6222a9f31962aa0`
+- Original: `sha256:7f7c60208a0c5a9f4b7637b2d7aec56d16735779ad35930bad3cc69dd09332b7`
 - Normalized: `sha256:800b7dbb6869ceba4338bc4bd322975a5620ad1ab2dd35a837d1290eb8c11b86`
-- Candidate: `sha256:800b7dbb6869ceba4338bc4bd322975a5620ad1ab2dd35a837d1290eb8c11b86`
+- Candidate: `sha256:7f7c60208a0c5a9f4b7637b2d7aec56d16735779ad35930bad3cc69dd09332b7`
 
 ## Line summary
 
-- Changed lines: 132
-- Inserted lines: 6
+- Changed lines: 0
+- Inserted lines: 0
 - Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 4
-- UI blocks preserved: 0
-- UI blocks changed/missing: 4
-- Unresolved placeholders: 1
+- UI blocks preserved: 4
+- UI blocks changed/missing: 0
+- Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate contains unresolved UI block placeholders.
-- Candidate is missing 4 preserved UI block(s).
+- None
 
 ## Warnings
 

@@ -5,7 +5,6 @@ Apply sustainable urban development principles — compact, mixed-use, transit-o
 
 Sustainable urban development integrates environmental, social, and economic goals through compact, mixed-use neighborhoods supported by transit and walkable streets. Complete Streets design moves beyond car-centric infrastructure to create pedestrian, bicycle, and transit-friendly public spaces. Together, they form a planning approach aligned with the UN Sustainable Development Goal 11 (SDG 11: Sustainable Cities and Communities) and the New Urban Agenda from Habitat III (2016).
 
-
 ## Core Concept
 
 Sustainable urban development pursues three objectives simultaneously: (1) minimizing environmental impact through compact, efficient land use; (2) ensuring equitable access to housing, jobs, and services; and (3) supporting long-term economic vitality. Rather than sprawling, car-dependent growth, sustainable development concentrates mixed-use neighborhoods—residential, commercial, office, cultural—within walkable distances, served by efficient public transit.
@@ -23,6 +22,7 @@ Key frameworks include:
 5. **Complete Streets** — street design that accommodates pedestrians, cyclists, transit users, and drivers; prioritizes safety and livability over vehicle throughput alone.
 
 These frameworks share a common critique of 20th-century car-dependent suburban sprawl and a commitment to human-scale, livable urban forms. In Philippine context, Complete Streets addresses the reality that most Filipinos walk or use transit; car-centric design ignores the majority.
+<ArticleMedia id="media-lea-plan-008-03-core-concept" a type="image" caption="Sustainable Urban Development — Compact City, TOD, Complete Streets" description="Diagram showing sustainable urban principles: compact city (density, infill), transit-oriented development (400m station radius, mixed-use), complete streets (pedestrian, bike, transit, vehicle), walkable neighborhoods (5-minute catchment). SDG 11 and New Urban Agenda alignment." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
@@ -41,7 +41,6 @@ Philippine cities face the tension between rapid growth and livability. Metro Ma
 3. **TOD catchment and zoning** — "A new MRT station is being planned in a residential area. What density and mix of uses should planning allow within the TOD walkable catchment (400–800m)?" → Answer: Higher density, mixed-use development (residential + commercial + office) to support transit ridership and reduce car dependency. Tests application of TOD principles to specific development scenarios.
 
 <Tip>Memory aid: **New Urbanism = 400 meters** (the 5-minute walk distance). **15-Minute City = 15 minutes** (walk or bike). **TOD = 400–800 meters** (the wider catchment around stations that can support higher density). Note the hierarchy: NU walk radius is a subset of TOD catchment distance.</Tip>
-
 
 **Exam Tip:** Complete Streets = streets designed for ALL users (pedestrians, cyclists, transit, cars), not just cars. Key elements: sidewalks, bike lanes, transit lanes/stop areas, pedestrian crossings, street furniture, trees. This is the most tested sustainable urban development concept.
 

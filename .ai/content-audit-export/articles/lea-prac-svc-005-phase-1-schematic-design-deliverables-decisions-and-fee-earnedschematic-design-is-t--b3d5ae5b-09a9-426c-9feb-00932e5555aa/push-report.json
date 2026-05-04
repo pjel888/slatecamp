@@ -1,28 +1,21 @@
 {
-  "attempted_at": "2026-05-04T00:07:01.106Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:17:48.648Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "original.md hash does not match article metadata export hash.",
-    "Remote Supabase content differs from export baseline; refusing stale push.",
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "candidate.md matches original.md; refusing no-op apply."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "b3d5ae5b-09a9-426c-9feb-00932e5555aa",
   "slug": "lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-the-second-phase-under-spp-2022-following-project-definition-this-phase-translates-the-project-defini",
   "preparation_actions": [
     "auto_generated_diff"
   ],
-  "remote_hash_before": "sha256:cf9d42555986e9690e82a054d5d9eae67bbc79758a17d0139e9092563b38528f",
-  "original_hash": "sha256:c24d04d47741355874ecc0fe03da271cff9c868ec9a355e25ae628e0c4b9c1c5",
-  "candidate_hash": "sha256:0bd79a61931a82f772413cb519073354674c8ceaf523b3bbdac6f6b62edb091a",
-  "stale_check_passed": false,
-  "remote_updated_at_before": "2026-05-03T13:52:18.915977+00:00"
+  "remote_hash_before": "sha256:524808eca86743082f4316d6a9261ef2faf4b696c5d007b33bb471f4f2954588",
+  "original_hash": "sha256:524808eca86743082f4316d6a9261ef2faf4b696c5d007b33bb471f4f2954588",
+  "candidate_hash": "sha256:524808eca86743082f4316d6a9261ef2faf4b696c5d007b33bb471f4f2954588",
+  "stale_check_passed": true,
+  "remote_updated_at_before": "2026-05-04T02:01:48.735569+00:00"
 }

@@ -10,7 +10,7 @@ After reading this article, you should be able to:
 
 SPP Document 201 defines pre-design services as the architectural work performed before the architect begins regular design phases. These services range from initial problem identification through activities that allow the architect to initially conceptualize architectural and allied solutions.
 
-<ArticleMedia id="media-lea-prac-svc-001-pre-design-services-sco" a type="image" caption="Pre-Design Services Workflow — From Consultation to Concept" description="Workflow chart showing the pre-design service sequence: consultation → pre-feasibility studies → feasibility studies → site selection/analysis → architectural programming → space planning → design brief preparation → value management → project definition. Based on SPP Doc 201." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-prac-svc-001-pre-design-services-sco" type="image" caption="Pre-Design Services Workflow — From Consultation to Concept" alt="Workflow chart showing the pre-design service sequence: consultation → pre-feasibility studies → feasibility studies → site selection/analysis → architectural programming → space planning → design brief preparation → value management → project definition. Based on SPP Doc 201." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ### What Constitutes Pre-Design Services
 

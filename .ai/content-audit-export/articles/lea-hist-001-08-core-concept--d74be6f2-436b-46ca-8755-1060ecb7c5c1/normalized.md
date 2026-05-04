@@ -85,6 +85,8 @@ The Indus Valley Civilization flourished c. 2600–1900 BCE across the Indus Riv
 
 **Ablution:** Ritual washing or purification, particularly in religious contexts; possibly the purpose of the Great Bath.
 
+<ArticleMedia id="media-hist-001-08-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Site plan comparison of Indus Valley cities Mohenjo-Daro and Harappa (c. 2600–1900 BCE) showing the grid street layout, citadel mound, Great Bath, granary, and standardized brick residential blocks illustrating advanced urban planning." caption="Indus Valley — City Plan Comparison" suggestedAsset="Timeline diagram" placementIntent="Timeline diagram for architectural period" />
+
 ## Related Articles
 
 See also within Ancient Architecture: **lea-hist-001-01-core-concept**, **lea-hist-001-02-core-concept**, **lea-hist-001-03-core-concept**, **lea-hist-001-04-core-concept**.

@@ -3,8 +3,18 @@
 ## Learning Goal
 
 <Tip>Focus on the architect's defining philosophy and key built works. The LEA frequently tests the relationship between an architect's theoretical principles and their physical execution in specific buildings.</Tip>
+Extracted summary:
+<Example>The Barcelona Pavilion (1929) by Mies van der Rohe exemplifies free-flowing space through freestanding planes of marble, onyx, and glass supported by cruciform steel columns — no interior doors, no corridors, no enclosed rooms.</Example>
+Extracted summary:
+<Tip>Focus on the architect's defining philosophy and key built works. The LEA frequently tests the relationship between an architect's theoretical principles and their physical execution in specific buildings.</Tip>
+Extracted summary:
+- Props: (none)
+- Text: Focus on the architect's defining philosophy and key built works. The LEA fre...
 
 <Tip>Focus on the architect's defining philosophy and key built works. The LEA frequently tests the relationship between an architect's theoretical principles and their physical execution in specific buildings.</Tip>
+Extracted summary:
+- Props: (none)
+- Text: Focus on the architect's defining philosophy and key built works. The LEA fre...
 
 - Identify Mies van der Rohe's key works (Barcelona Pavilion, Farnsworth House, Seagram Building, Crown Hall) and their defining architectural innovations.
 - Explain Mies's core concepts — "less is more," universal space, skin-and-bones construction, and cruciform columns — and distinguish his approach from Le Corbusier's.
@@ -46,8 +56,17 @@ You are standing inside the Barcelona Pavilion and notice there are no interior 
 | Cruciform Column | A column with a cross-shaped (+) section | Look for: Barcelona Pavilion, Tugendhat House — these are Mies's signature structural members |
 
 <Example>The Barcelona Pavilion (1929) by Mies van der Rohe exemplifies free-flowing space through freestanding planes of marble, onyx, and glass supported by cruciform steel columns — no interior doors, no corridors, no enclosed rooms.</Example>
+Extracted summary:
+
+component="ExamTip" status="preserved"]
+<Note>
+**LEA Pattern:** Questions about this architect often present an unfamiliar b...
+</Note>
 
 <ExamTip>**LEA Pattern:** Questions about this architect often present an unfamiliar building and ask you to identify the architect based on characteristic details — look for signature elements like cruciform columns (Mies), pilotis (Corbusier), or structural expressionism (Gaudi).</ExamTip>
+Extracted summary:
+- Props: (none)
+- Text: **LEA Pattern:** Questions about this architect often present an unfamiliar b...
 ## LEA Exam Traps and Common Mistakes
 
 - **Trap 1: Confusing Mies's "Free Plan" with Le Corbusier's "Plan Libre."** Both achieve open, flexible interiors but through different means. Le Corbusier uses a concrete column grid (Dom-ino) with non-load-bearing partitions inside. Mies uses freestanding planes of marble, onyx, or glass that slide through space without ever fully enclosing rooms. Mies's plan "flows"; Corbusier's plan is "free to rearrange."
@@ -97,3 +116,5 @@ D. It introduced the ribbon window as a primary design element
 
 **The Bauhaus And International Style**, **Le Corbusier Five Points**, **Brutalism**, **Post Modernism**
 
+
+<!-- no-media-needed: existing content format is sufficient without visual media -->

@@ -54,7 +54,7 @@ A funeral home operates as a hybrid facility with distinct functional zones, eac
 - **Embalming Room HVAC**: Separate negative-pressure system to prevent odor transmission.
 - **Cold Storage**: Dedicated unit with separate mechanical system.
 - **Sanitary Drainage**: Indirect waste piping from the embalming room and floor drain with trap seal.
-<ArticleMedia id="media-lea-dsgn-005-11-core-concept" a type="image" caption="Funeral Home — Dual-Occupancy Space Layout" description="Floor plan diagram of a funeral home showing dual-occupancy zones: Group E mercantile (viewing rooms, selection area) and Group H assembly (chapel, memorial service area). Separate occupant load calculations for each zone with mixed-use egress." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-005-11-core-concept" type="image" caption="Funeral Home — Dual-Occupancy Space Layout" alt="Floor plan diagram of a funeral home showing dual-occupancy zones: Group E mercantile (viewing rooms, selection area) and Group H assembly (chapel, memorial service area). Separate occupant load calculations for each zone with mixed-use egress." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ---
 
@@ -75,12 +75,12 @@ Funeral homes are licensed commercial establishments regulated by local health a
 **Pattern 3: Exit Capacity**
 "A funeral home chapel seats 300 persons. Calculate the minimum combined exit width and the required number of exits (Note: 2 exits are required for 50+ persons)." 
 
-> [SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+> <Tip>**Funeral Home Anchors:** Mixed occupancy of **Group E (Business)** + **Group H Division 1 (Chapel)**. Embalming = 12–20 sqm. Viewing Room = 1.1–1.5 sqm/visitor. Chapel Exit Width = 7.6mm/person. Fire separation E–H = 1-hour minimum.</Tip>
 
 ---
 
 **Exam Tip — ERR-DSGN-027:** Funeral homes are dual occupancy: Group E (mercantile for business areas) + Group H (assembly for chapel). Verify fire-rated separation between occupancies per RA 9514 Section 7.2.
-<ArticleMedia id="media-lea-dsgn-005-11-core-concept" a type="image" caption="Funeral Home — Mercantile and Assembly Zone Separation" description="Floor plan of a funeral home showing: Group E mercantile zone (viewing rooms, casket selection), Group H assembly zone (chapel, memorial service), and service zone (preparation, storage). Fire-rated separation between occupancy groups and dual-egress paths annotated." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-005-11-core-concept" type="image" caption="Funeral Home — Mercantile and Assembly Zone Separation" alt="Floor plan of a funeral home showing: Group E mercantile zone (viewing rooms, casket selection), Group H assembly zone (chapel, memorial service), and service zone (preparation, storage). Fire-rated separation between occupancy groups and dual-egress paths annotated." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Cross-References
 

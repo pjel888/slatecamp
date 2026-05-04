@@ -1,33 +1,32 @@
 # Content Diff Report: lea-prac-frm-014-bim-in-philippine-architectural-practice-status-obligations-and-practice-implications
 
-Generated: 2026-05-04T00:06:11.302Z
+Generated: 2026-05-04T02:16:41.413Z
 Article ID: 8b263a7c-5e3e-4157-a18b-146f5b12f521
-Changed: true
-Safe to push locally: false
+Changed: false
+Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:e8dc12abd82c8edc6037030132d5a06f681ae015a8d7ce70242d5fec6eae2438`
+- Original: `sha256:3c836bc817828e7583e1e998ddfbf4f2fc91539b7af852582a8bda5a4b3ef608`
 - Normalized: `sha256:76fbe27da4d530804701e288d4b19447dd7d1b36ee0c7e101b1d3f92a13b0f8b`
-- Candidate: `sha256:76fbe27da4d530804701e288d4b19447dd7d1b36ee0c7e101b1d3f92a13b0f8b`
+- Candidate: `sha256:3c836bc817828e7583e1e998ddfbf4f2fc91539b7af852582a8bda5a4b3ef608`
 
 ## Line summary
 
-- Changed lines: 75
-- Inserted lines: 43
+- Changed lines: 0
+- Inserted lines: 0
 - Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 3
-- UI blocks preserved: 0
-- UI blocks changed/missing: 3
-- Unresolved placeholders: 1
+- UI blocks preserved: 3
+- UI blocks changed/missing: 0
+- Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate contains unresolved UI block placeholders.
-- Candidate is missing 3 preserved UI block(s).
+- None
 
 ## Warnings
 

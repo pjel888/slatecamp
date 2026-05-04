@@ -11,6 +11,7 @@ The Philippines is one of the world's 17 mega-diverse countries, with extraordin
 **Native species definition:** A native species is one that naturally occurs within a particular region and has not been introduced by humans. Native species are adapted to local climate, soil, and water conditions through natural selection. They support complex food webs, provide ecosystem services (water filtration, soil stability, pollination), and maintain cultural heritage.
 
 **Endemic species definition:** An endemic species occurs naturally in one geographic area and nowhere else in the world. The Philippines has exceptional endemic diversity: 52% of Philippine flowering plants are endemic; numerous birds, reptiles, and mammals are found only in the Philippines. Endemic species are globally irreplaceable and require protection within their native range.
+<ArticleMedia id="media-lea-plan-005-02-what-you-need-to-know-fo" a type="image" caption="Ecological Succession — Pioneer to Climax Forest Diagram" description="Four-stage successional diagram: Stage 1 Pioneer (fast-growing, light-demanding: Albizia, Macaranga, Solanum — open sun, poor soil), Stage 2 Early Successional (mix of pioneers and slower species, soil improves), Stage 3 Mid-Successional (shade-tolerant understory, pioneer decline, canopy closure), Stage 4 Climax Forest (mature hardwoods: Narra, Dipterocarps — stable composition). Shows species transition over 50+ year timeline." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ### Narra as National Tree and Ecological Reference
 
@@ -61,7 +62,6 @@ Ecosystems are communities of plants, animals, and microorganisms interacting wi
 
 **Successional stages:**
 
-
 <Example>A centralized organization places a dominant central space around which secondary spaces are grouped. Examples: the Pantheon (rotunda), Chartres Cathedral (central nave with radiating chapels).</Example>
 1. **Pioneer stage:** Fast-growing, light-demanding species dominate. Common Philippine pioneer trees include _Albizia_ spp., _Macaranga_ spp., and _Solanum_ spp. Pioneer species thrive in open sun and poor soil.
 
@@ -100,7 +100,6 @@ Successional planting intentionally recreates ecological succession to restore d
 
 <ExamTip>**LEA Pattern:** A floor plan or spatial diagram is shown and you must identify the type of spatial organization (centralized, linear, radial, clustered, grid). Look for the organizing geometry — the path or point that anchors the arrangement.</ExamTip>
 
-
 <ExamTip>**LEA Pattern:** A floor plan or spatial diagram is shown and you must identify the type of spatial organization (centralized, linear, radial, clustered, grid). Look for the organizing geometry — the path or point that anchors the arrangement.</ExamTip>
 **Examples of problematic invasive species in the Philippines:**
 - _Chromolaena odorata_ (asaeng gubat, devil weed) — invasive shrub that forms monocultures and prevents native regeneration in disturbed areas
@@ -116,6 +115,7 @@ Successional planting intentionally recreates ecological succession to restore d
 - Reflect Philippine cultural identity
 
 **Appropriate use of exotics:** Exotic species are appropriate in cultural, agricultural, and economic contexts where their benefits are intentional (fruit orchards, spice gardens, farm systems). However, in ecological restoration and natural area management, native species take priority.
+<ArticleMedia id="media-lea-plan-005-02-what-you-need-to-know-fo" a type="image" caption="Native vs. Exotic vs. Invasive Species Identification Chart" description="Three-column comparison chart: Native species (naturally occurring, support Philippine ecosystems, co-evolved with local fauna, examples: Narra, Philippine mahogany, molave), Exotic/Introduced (non-native, purposefully cultivated, examples: rice, cacao, mango), Invasive (outcompete natives, degrade ecosystems, examples: Chromolaena odorata devil weed, Prosopis juliflora algaroba, Salvinia molesta water fern). Color-coded by ecological impact." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ### Biodiversity Conservation and Landscape Implications
 
@@ -130,7 +130,6 @@ Biodiversity conservation protects native species and ecosystems. The Philippine
 **Native planting programs:** Urban planting of native species in parks, gardens, and streetscapes expands habitat in developed areas, supporting birds, insects, and small animals in cities.
 
 ### Summary
-
 
 <Tip>Design principles tested on the LEA focus on the relationship between form and space. Understand how primary elements (point, line, plane, volume) generate architectural form and how spatial organization types (centralized, linear, radial, clustered, grid) shape building layout.</Tip>
 

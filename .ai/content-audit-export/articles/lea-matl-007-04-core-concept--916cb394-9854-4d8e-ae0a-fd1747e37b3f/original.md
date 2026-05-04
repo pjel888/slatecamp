@@ -14,6 +14,13 @@ Surface preparation determines success. Wood stains require sanding to open grai
 
 Specialty finishes include anti-slip coatings for ramps (adding aggregate to paint), anti-bacterial finishes (copper-based additives), and intumescent paint (expands when heated to provide fire protection). These are specified for functional performance beyond aesthetic requirements.
 
+
+<ArticleMedia id="media-paint-coating-comparison" layout="single" type="image" status="placeholder"
+  alt="Comparison chart of paint and coating systems: latex, oil-based, epoxy, polyurethane, stain, varnish, enamel, and textured with binder type, durability, sheen, and substrate compatibility"
+  caption="Future chart: paint and coating systems comparison — binder type, sheen, durability, and substrate"
+  suggestedAsset="Material selection chart with finish sample illustrations"
+  placementIntent="Provides reference for coating selection by application and substrate" />
+
 ## Key Provisions
 
 | Property | Specification | Standard | LEA Relevance |
@@ -42,6 +49,12 @@ Intumescent paint is typically specified for structural steel fire protection in
 
 Anti-slip coatings gain importance as BP 344 accessibility enforcement increases. Exterior ramps and interior accessible routes benefit from anti-slip paint (150-250µm DFT with silica or polymer aggregate). Cost premium is 20-30% over standard paint; specifying where required is cost-effective risk management.
 
+
+<ArticleMedia id="media-paint-system-layers" layout="single" type="image" status="placeholder"
+  alt="Cross-section showing paint system layers: primer, intermediate coat, and finish coat on wood, metal, masonry, and gypsum substrates"
+  caption="Future diagram: paint system layers by substrate — wood, metal, masonry, and gypsum"
+  suggestedAsset="Cross-section detail of coating build-up on each substrate type"
+  placementIntent="Visualizes proper paint system specification for different substrates" />
 ## How It's Tested
 
 **Question Type 1 (VOC Compliance):** A project in an occupied high-rise specifies interior paint. What VOC limit ensures air-quality compliance and occupant safety? Answer: &lt;300 g/L per EPA/ASTM guidelines. Oil-based enamel (300-650 g/L) would create indoor air quality issues.

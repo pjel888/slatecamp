@@ -1,47 +1,38 @@
 {
   "article_id": "3a28da11-0053-4b2f-85a8-f675a3d10a43",
   "slug": "glass-and-glazing-area-limits",
-  "generated_at": "2026-05-04T00:06:07.630Z",
-  "old_hash": "sha256:1328f1ce22f44e3670231dfd35a0e4e082fca38129481635ddce71f308a8d42b",
-  "new_hash": "sha256:3dc52861ada0891846589506068fa47c705ea21d8bc4eeeaf9f02df536203138",
-  "original_hash": "sha256:1328f1ce22f44e3670231dfd35a0e4e082fca38129481635ddce71f308a8d42b",
+  "generated_at": "2026-05-04T02:16:37.297Z",
+  "old_hash": "sha256:3dc52861ada0891846589506068fa47c705ea21d8bc4eeeaf9f02df536203138",
+  "new_hash": "sha256:9b3145500587cce5f0434d25a518ccef61bc5c0aac4a0ab19241b117236844a2",
+  "original_hash": "sha256:3dc52861ada0891846589506068fa47c705ea21d8bc4eeeaf9f02df536203138",
   "normalized_hash": "sha256:3dc52861ada0891846589506068fa47c705ea21d8bc4eeeaf9f02df536203138",
-  "candidate_hash": "sha256:3dc52861ada0891846589506068fa47c705ea21d8bc4eeeaf9f02df536203138",
+  "candidate_hash": "sha256:9b3145500587cce5f0434d25a518ccef61bc5c0aac4a0ab19241b117236844a2",
   "changed": true,
-  "changed_line_count": 396,
-  "inserted_line_count": 13,
+  "changed_line_count": 313,
+  "inserted_line_count": 16,
   "deleted_line_count": 0,
   "ui_blocks_original_count": 4,
-  "ui_blocks_candidate_count": 0,
-  "ui_blocks_changed_count": 4,
+  "ui_blocks_candidate_count": 4,
+  "ui_blocks_changed_count": 0,
   "ui_blocks_count": 4,
-  "unresolved_placeholders_count": 1,
-  "preserved_blocks_count": 0,
+  "unresolved_placeholders_count": 0,
+  "preserved_blocks_count": 4,
   "changed_text_summary": {
-    "changed": 396,
-    "inserted": 13,
+    "changed": 313,
+    "inserted": 16,
     "deleted": 0,
-    "original_line_count": 406,
-    "candidate_line_count": 419
+    "original_line_count": 419,
+    "candidate_line_count": 435
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0001",
-      "ui_0002",
-      "ui_0003",
-      "ui_0004"
-    ],
-    "changed_count": 4
+    "missing_block_ids": [],
+    "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate contains unresolved UI block placeholders.",
-    "Candidate is missing 4 preserved UI block(s).",
-    "original.md hash does not match article metadata export hash."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 4 preserved UI block(s).; original.md hash does not match article metadata export hash."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

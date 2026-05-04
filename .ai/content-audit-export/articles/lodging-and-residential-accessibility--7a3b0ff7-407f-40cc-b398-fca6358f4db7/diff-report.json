@@ -1,51 +1,38 @@
 {
   "article_id": "7a3b0ff7-407f-40cc-b398-fca6358f4db7",
   "slug": "lodging-and-residential-accessibility",
-  "generated_at": "2026-05-04T00:06:27.179Z",
-  "old_hash": "sha256:c1aa7c10076bf433e9110608a4d5ed0e9cde659b4a1bfafed6f0036704aa0f28",
-  "new_hash": "sha256:b82108866638148eea0014f8064ca9efc8ec2b2bec7f781db2834775045a7cd3",
-  "original_hash": "sha256:c1aa7c10076bf433e9110608a4d5ed0e9cde659b4a1bfafed6f0036704aa0f28",
+  "generated_at": "2026-05-04T02:17:02.738Z",
+  "old_hash": "sha256:e749be9607d931d75d9dfb602c9a5c46ce7e209304a8e802d0b3219a239ac8a1",
+  "new_hash": "sha256:e749be9607d931d75d9dfb602c9a5c46ce7e209304a8e802d0b3219a239ac8a1",
+  "original_hash": "sha256:e749be9607d931d75d9dfb602c9a5c46ce7e209304a8e802d0b3219a239ac8a1",
   "normalized_hash": "sha256:b82108866638148eea0014f8064ca9efc8ec2b2bec7f781db2834775045a7cd3",
-  "candidate_hash": "sha256:b82108866638148eea0014f8064ca9efc8ec2b2bec7f781db2834775045a7cd3",
-  "changed": true,
-  "changed_line_count": 334,
+  "candidate_hash": "sha256:e749be9607d931d75d9dfb602c9a5c46ce7e209304a8e802d0b3219a239ac8a1",
+  "changed": false,
+  "changed_line_count": 0,
   "inserted_line_count": 0,
-  "deleted_line_count": 44,
+  "deleted_line_count": 0,
   "ui_blocks_original_count": 9,
-  "ui_blocks_candidate_count": 0,
-  "ui_blocks_changed_count": 9,
+  "ui_blocks_candidate_count": 9,
+  "ui_blocks_changed_count": 0,
   "ui_blocks_count": 9,
-  "unresolved_placeholders_count": 1,
-  "preserved_blocks_count": 0,
+  "unresolved_placeholders_count": 0,
+  "preserved_blocks_count": 9,
   "changed_text_summary": {
-    "changed": 334,
+    "changed": 0,
     "inserted": 0,
-    "deleted": 44,
-    "original_line_count": 362,
-    "candidate_line_count": 318
+    "deleted": 0,
+    "original_line_count": 363,
+    "candidate_line_count": 363
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0001",
-      "ui_0002",
-      "ui_0003",
-      "ui_0004",
-      "ui_0005",
-      "ui_0006",
-      "ui_0007",
-      "ui_0008",
-      "ui_0009"
-    ],
-    "changed_count": 9
+    "missing_block_ids": [],
+    "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate contains unresolved UI block placeholders.",
-    "Candidate is missing 9 preserved UI block(s)."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 9 preserved UI block(s)."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

@@ -55,17 +55,17 @@ The Philippines' tropical climate (85-95°F year-round, 80+ percent humidity dur
 
 **Exam Pattern 4: Incompatibility Risk.** A specification calls for silicone sealant on top of acrylic sealant in an existing joint that failed. What is the problem? Answer: Silicone will not adhere to acrylic; the old sealant must be completely removed, or incompatibility will cause adhesion failure.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+<Tip>Memory aid: "Silicone = Class 50+ (±50%), 20+ years service life. Polyurethane = Class 50 (±50%), 15-20 years, moisture-curing. Acrylic = Class 7.5 (±7.5%), 10-15 years, water-based, rain-sensitive. Joint width = 2 × movement. Epoxy = adhesive (permanent); Polyurethane = sealant (flexible)."</Tip>
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Specifying acrylic sealant for a facade joint in the Philippines without considering that it is water-based and rain will wash it away during cure." correction="Acrylic sealants require 24-48 hours dry cure; installing during or immediately before monsoon (May-November) results in failure. Use polyurethane or silicone sealants that are moisture-tolerant." />
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Applying silicone sealant directly over old acrylic sealant, assuming the new sealant will adhere to the existing product." correction="Silicone and acrylic are chemically incompatible; silicone will not bond to acrylic. All old sealant must be removed to base material." />
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Calculating joint width based only on temperature change, forgetting the 2x multiplication rule specified by ASTM C920." correction="Joint width must equal at least 2 × the expected movement. A joint accommodating 5 inches of movement must be at least 10 inches wide." />
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="WikiMistakeList" status="preserved"]
+<WikiMistakeList mistakes={["Omitting primer on porous substrates (concrete, wood) when using two-part epoxy; adhesion failure occurs within weeks", "Specifying only acrylic sealant for all joint applications, ignoring that movement capability varies drastically (acrylic = ±7.5% vs. silicone = ±50%)", "Failing to account for tropical climate cure time multiplication (1.5-2x); underestimating cure time leads to premature joint loading"]} />
 
 ## Related Articles
 

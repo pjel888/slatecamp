@@ -12,6 +12,10 @@ Distinguish Hindu (shikhara/gopura), Buddhist (stupa), and Mughal (chahar bagh) 
 
 Indian architecture reflects millennia of religious and dynastic development across three major traditions: Hindu, Buddhist, and Mughal. Hindu temples organize sacred space vertically around a central shrine, crowned by the **shikhara** (tower), with specific proportional systems and ritual hierarchies. Buddhist monuments like the **stupa** enclose relics within concentric stone domes, emphasizing circumambulatory paths for devotional circulation. Mughal architecture synthesizes Persian, Central Asian, and Indian traditions through axial gardens, domed chambers, inlay work, and symmetrical planning. Each tradition employs distinct materials—sandstone, marble, granite—and decoration methods that evolved over centuries and across regions (North, South, East).
 
+
+<ArticleMedia id="media-hist-007-01-core-concept" layout="single" type="image" status="placeholder" alt="View of the Great Stupa at Sanchi (3rd century BCE–1st century CE, Madhya Pradesh, India), showing the hemispherical anda (dome), harmika (square railing on top), chhatri (umbrella), and the four ornate torana gateways." caption="Sanchi Stupa — Buddhist Monumental Dome" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
+
 The **shikhara** exemplifies Hindu temple design: a curvilinear or pyramidal tower rising above the sanctum (garbhagriha), serving as both structural frame and cosmological symbol linking earth to heaven. South Indian temples developed alternate forms (gopura gateway towers) and added vast walled precincts with subsidiary shrines, water channels, and sculpture galleries. Buddhist **stupas** represent the Buddha's body as a dome; devotees walk around them in clockwise direction (pradakshina), experiencing the relic chamber as inaccessible but powerfully present at the dome's core. Mughal monuments like the **Taj Mahal** combine garden geometry (chahar bagh: four-part garden divided by water channels) with marble inlay (pietra dura), calligraphy, and domed chambers that create interlocking visual and spatial hierarchies.
 
 <Tip>**Three Indian architectural traditions—testable distinctions:**
@@ -27,6 +31,10 @@ Regional variation is crucial: North Indian temples feature dense sculptural pro
 <Note>North Indian (Nagara) vs. South Indian (Dravidian) temple distinction is LEA-tested: Nagara temples are shikhara-dominant (tall tower above sanctum), feature corbeled arches, and dense sculptural programs. Dravidian temples are gopura-dominant (massive gateway towers), feature mandapa columned halls, and emphasize large walled precincts. Understanding this regional typology prevents conflating distinct traditions and demonstrates regional-chronological knowledge.</Note>
 
 For detailed coverage of Mughal architecture including the Taj Mahal, charbagh gardens, and parchin kari inlay, see the dedicated article on Mughal Architecture.
+
+
+<ArticleMedia id="media-hist-007-01-core-concept" layout="single" type="image" status="placeholder" alt="Side-by-side illustration of the two major Indian temple styles: Nagara (curvilinear shikhara tower, northern India) and Dravida (stepped pyramidal vimana, southern India), showing their distinct spire forms and plan layouts." caption="Indian Temple Types — Nagara (North) vs. Dravida (South)" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
 
 ## Key Facts and Testable Items
 
@@ -46,7 +54,6 @@ For detailed coverage of Mughal architecture including the Taj Mahal, charbagh g
 
 <WikiMistakeCard mistake="** Treating stupa and temple as interchangeable. Stupas enshrine relics and emphasize circumambulation; temples enshrine a deity and emphasize axial entry to a sanctum. Stupas are Buddhist; temples are Hindu or Jain. Their interior logic differs fundamentally" correction="Mistake 4:** Ignoring regional distinctions. North and South Indian temples differ in plan, elevation, and decoration. Southern temples (Dravidian) feature gopura-dominant plans; Northern temples (Nagara) feature shikhara-dominant plans." context="Don't assume all Hindu temples follow the same formula." />
 
-
 ## Key Terms
 
 - **Shikhara**: Curvilinear or pyramidal tower rising above the Hindu temple sanctum, symbolizing the cosmic axis and linking earth to heaven.
@@ -61,6 +68,8 @@ For detailed coverage of Mughal architecture including the Taj Mahal, charbagh g
 - **Jali**: Perforated stone screen used in Mughal architecture for privacy and light diffusion.
 
 <Warn>Do not confuse shikhara (Hindu temple tower above sanctum) with gopura (monumental gateway tower, especially in South Indian temples). Shikhara is cosmic-spiritual symbolism; gopura is administrative entrance marker. Both are vertical, but their functions and placement differ fundamentally. Similarly, do not treat stupas as interchangeable with temples: stupas are Buddhist, house relics, and emphasize circumambulation; temples are Hindu, house deities, and emphasize axial entry. These distinctions are directly tested on the LEA.</Warn>
+
+<ArticleMedia id="media-hist-007-01-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparative diagram of Hindu (shikhara tower, gopura gateway), Buddhist (stupa, chaitya hall), and Mughal (chahar bagh garden, iwan) architectural traditions in India, showing contrasting building types, spatial organization, and key monuments.\" caption=\"Indian Architecture — Hindu, Buddhist, Mughal Comparison\" suggestedAsset=\"Style comparison illustration\" placementIntent=\"Style comparison for architectural period\" />
 
 ## Related Articles
 

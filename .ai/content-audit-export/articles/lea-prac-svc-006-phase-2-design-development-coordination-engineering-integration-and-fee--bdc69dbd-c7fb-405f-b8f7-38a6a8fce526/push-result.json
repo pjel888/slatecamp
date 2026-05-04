@@ -1,28 +1,21 @@
 {
-  "attempted_at": "2026-05-04T00:07:04.399Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:17:53.831Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "original.md hash does not match article metadata export hash.",
-    "Remote Supabase content differs from export baseline; refusing stale push.",
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "candidate.md matches original.md; refusing no-op apply."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "bdc69dbd-c7fb-405f-b8f7-38a6a8fce526",
   "slug": "lea-prac-svc-006-phase-2-design-development-coordination-engineering-integration-and-fee",
   "preparation_actions": [
     "auto_generated_diff"
   ],
-  "remote_hash_before": "sha256:4cd1c0e267ffdedb33453778cf13cdbc62433aca77e0f8647a06ba504be18c30",
-  "original_hash": "sha256:f290ece6c952e61701a702fe92946dc98494069ce43f7f395198c0f063679ce9",
-  "candidate_hash": "sha256:a313571161d8b147327e8ced64ae3ddff0e789064b7e1bcf5ac9a141f326ce9d",
-  "stale_check_passed": false,
-  "remote_updated_at_before": "2026-05-03T13:52:25.861869+00:00"
+  "remote_hash_before": "sha256:f5c0aab128d73212de44dc118df3cd28121353ee8ef74bf8a40c8f3e267952ec",
+  "original_hash": "sha256:f5c0aab128d73212de44dc118df3cd28121353ee8ef74bf8a40c8f3e267952ec",
+  "candidate_hash": "sha256:f5c0aab128d73212de44dc118df3cd28121353ee8ef74bf8a40c8f3e267952ec",
+  "stale_check_passed": true,
+  "remote_updated_at_before": "2026-05-04T02:01:57.37632+00:00"
 }

@@ -5,12 +5,24 @@
 Identify the five testable markers of Baroque architecture — curved walls, hidden light sources, ornamented plans, trompe-l'oeil painting, sculptural facades — and recognize key works (St. Peter's, San Carlo alle Quattro Fontane, Versailles) by their dynamic spatial and visual effects.
 ## Core Concept
 
+
+
+
+
+<ArticleMedia id="media-hist-002-05-baroque-church-plan" layout="single" type="image" status="placeholder" alt="Comparative plan diagram of Baroque church plans: (1) San Carlo alle Quattro Fontane (Borromini, Rome) — interlocking oval plan with undulating walls; (2) Sant'Andrea al Quirinale (Bernini, Rome) — oval with concave portico; (3) Il Gesù (Vignola/Giacomo della Porta, Rome) — Latin cross plan with Baroque spatial integration; (4) Vierzehnheiligen (Balthasar Neumann, Bavaria) — rococo radial plan. Each shows how curved walls, interlocking volumes, and dramatic focal points replaced Renaissance static geometry." caption="Baroque Church Typology — Oval, Latin Cross, and Dynamic Plans" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
+<ArticleMedia id="media-hist-002-05-spatial-sequence" layout="single" type="image" status="placeholder" alt="Axonometric and section diagram of Gian Lorenzo Bernini's Scala Regia (Royal Staircase, Vatican, 1663–1666) showing: (1) The theatrical entry sequence from St. Peter's portico through the Corridor to the Scala Regia; (2) The forced perspective colonnade that makes the staircase appear longer and more monumental than its actual dimensions; (3) The dramatic light source from a concealed window at the top landing. Side panels show how Bernini manipulated column spacing, stair width, and ceiling height to create spatial drama." caption="Baroque Spatial Sequence — Bernini's Scala Regia and Vatican Approach" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
 **Baroque architecture** (early 17th–18th centuries) emerged from the Counter-Reformation—the Catholic Church's response to Protestant challenge. Baroque churches aim to inspire awe, emotion, and spiritual surrender through theatrical light, dramatic curves, ornamental abundance, and illusionistic spatial effects. The vocabulary includes:
 - **Curved and undulating walls** replacing Renaissance rational geometry
 - **Complex spatial interlocking** of volumes (ovals, circles, ellipses)
 - **Dramatic light manipulation** through concealed windows, reflective surfaces, and stained glass
 - **Ornamental exuberance** with sculpture, gilt, marble, and decorative moldings
 - **Theatrical illusionism** blurring boundaries between real space and painted/sculpted illusion
+
+
+<ArticleMedia id="media-hist-002-05-core-concept" layout="single" type="image" status="placeholder" alt="Interior view of San Carlo alle Quattro Fontane (1638–1646, Rome, Francesco Borromini), showing the oval nave with coffered dome, undulating walls, and geometrically complex spatial planning." caption="San Carlo alle Quattro Fontane — Borromini's Oval Church" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
 
 <Tip>**Baroque's five testable markers:**
 - Curved/undulating walls (not rectangular)
@@ -48,6 +60,10 @@ Memory aid: **C-D-O-O-C** = Curves, Drama, Ornament, Ovals, Counter-Reformation.
 Rococo is fundamentally a domestic and aristocratic *interior style*, not a structural system. Its influence appears primarily in palace interiors, salons, and small pavilions—**Wieskirche** (Bavaria, 1745–1754) being a rare full church expression with white-and-gold stuccoed walls, illusionistic ceiling frescoes, and Rococo lightness.
 
 <Warn>Do not confuse Baroque and Rococo as variations of the same style. Baroque is *structural and theological*—curved walls, dramatic light, Counter-Reformation intensity. Rococo is *decorative and aristocratic*—pastel interiors, asymmetry, domestic pleasure. Rococo *emerges from* Baroque but rejects its values. This distinction is directly tested on the LEA.</Warn>
+
+
+<ArticleMedia id="media-hist-002-05-core-concept" layout="single" type="image" status="placeholder" alt="Interior of the Hall of Mirrors at Versailles (begun 1661, Louis Le Vau and Jules Hardouin-Mansart), showing the mirrored arcade, gilt decoration, and Baroque theatrical grandeur in service of absolutist power." caption="Palace of Versailles — Hall of Mirrors and Garden Facade" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
 
 ## Key Facts and Testable Items
 
@@ -101,6 +117,8 @@ Rococo is fundamentally a domestic and aristocratic *interior style*, not a stru
 - **Frescoed ceiling**: A painted ceiling technique creating illusionistic spatial effects; common in Northern Baroque
 
 ## Related Articles
+
+<ArticleMedia id=\"media-hist-002-05-core-concept-timeline\" layout=\"single\" type=\"image\" status=\"placeholder\" alt=\"Comparison of Baroque spatial effects across key works: curved walls and oval plan (San Carlo alle Quattro Fontane, Borromini), trompe-l'oeil ceiling (Sant'Ignazio, Pozzo), sculptural facade (St. Peter's Square, Bernini), and palace garden axis (Versailles, Le Nôtre).\" caption=\"Baroque Style — Spatial and Visual Comparison\" suggestedAsset=\"Style comparison illustration\" placementIntent=\"Style comparison for architectural period\" />
 
 See also within Medieval to Baroque: **lea-hist-002-01-core-concept**, **lea-hist-002-02-core-concept**, **lea-hist-002-03-core-concept**, **lea-hist-002-04-core-concept**.
 

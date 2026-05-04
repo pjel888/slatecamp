@@ -5,7 +5,6 @@ Distinguish in-situ upgrading from relocation under RA 7279, describe the SHFC C
 
 Informal settlements in the Philippines—commonly called squatter communities, slums, or "informal colonies"—house an estimated 2–3 million people in Metro Manila alone. **RA 7279** establishes the legal framework for addressing informal settlements, while **SHFC's Community Mortgage Program (CMP)** represents the practical model for in-situ upgrading. Understanding the distinction between in-situ upgrading and relocation, the scale of informal settlements, and the legal protections and constraints is critical.
 
-
 ## Core Concept
 
 An informal settlement is an unplanned community occupying land without the occupants' legal ownership or formal tenancy rights. These settlements typically develop where formal housing is unaffordable or unavailable—urban fringe areas, public lands, private marginal lands, and especially riverbanks and drainage easements. The Philippines' rapid urbanization (cities growing 3–4% annually) combined with a housing shortage has driven explosive informal settlement expansion.
@@ -26,6 +25,7 @@ Importantly, occupants in danger areas can still be evicted but (unlike non-dang
 **In-Situ Upgrading vs. Relocation:** RA 7279 and later policy experience favor in-situ upgrading (improving settlements where they stand) over relocation (moving communities to new sites). In-situ preserves livelihood networks, community institutions, and social capital. **SHFC's Community Mortgage Program (CMP)** operationalizes this: communities collectively mortgage land to formalize tenure and then upgrade incrementally. Relocation is reserved for cases where danger is imminent and no in-situ alternative exists.
 
 **Slum Characteristics Beyond Housing:** While informal settlements are defined by tenure insecurity, the term "slum" often connotes additional deprivations: inadequate water/sanitation, overcrowding, poor infrastructure, and lack of basic services. Slum upgrading addresses these multi-dimensional deprivations, not just housing formalization.
+<ArticleMedia id="media-lea-plan-003-06-core-concept" a type="image" caption="Informal Settlement Upgrading — In-Situ vs. Relocation Decision Tree" description="Decision tree for informal settlement response per RA 7279: assess site suitability (flood, hazard, tenure) → if safe → in-situ upgrading (CMP, community mortgage) → if unsafe → relocation with rights. Shows SHFC Community Mortgage Program as practical upgrading model." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
@@ -56,7 +56,6 @@ However, implementation remains inconsistent. Many local government units (LGUs)
   Danger areas = NO relocation obligation (but notice still required). In-situ
   via CMP preserves communities.
 </Tip>
-
 
 **Exam Tip:** In-situ upgrading (improve existing settlement) vs. relocation (move residents elsewhere). RA 7279 favors in-situ where possible. CMP (Community Mortgage Program by SHFC) is the primary upgrading vehicle. Know the distinction.
 

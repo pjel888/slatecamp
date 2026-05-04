@@ -7,13 +7,15 @@ Explain how spatial perception, proxemic zones, and design preferences vary acro
 
 ### Edward T. Hall and Proxemics: Spatial Culture
 
-<ArticleMedia id="media-lea-theo-003-07-core-concept" a type="image" caption="Cross-Cultural Spatial Preferences — Contact vs Non-Contact Cultures" description="Comparative diagram contrasting spatial norms across cultures: Contact cultures (Latin American, Middle Eastern, Mediterranean) prefer closer interpersonal distances, more direct eye contact, and more overlapping social zones. Non-contact cultures (Northern European, East Asian, North American) prefer larger interpersonal distances, less direct gaze, and clearly bounded personal space. Architectural implications shown: counter depths, corridor widths, room sizes, seating arrangements, and privacy gradations differ by cultural context." suggestedAsset="Diagram or reference image" status="placeholder" />
+|<ArticleMedia id="media-lea-theo-003-07-core-concept" type="image" caption="Cross-Cultural Spatial Preferences — Contact vs Non-Contact Cultures" alt="Comparative diagram contrasting spatial norms across cultures: Contact cultures (Latin American, Middle Eastern, Mediterranean) prefer closer interpersonal distances, more direct eye contact, and more overlapping social zones. Non-contact cultures (Northern European, East Asian, North American) prefer larger interpersonal distances, less direct gaze, and clearly bounded personal space. Architectural implications shown: counter depths, corridor widths, room sizes, seating arrangements, and privacy gradations differ by cultural context." suggestedAsset="Diagram or reference image" status="placeholder" />
+
+<ArticleMedia id="media-lea-theo-003-07-core-concept-b" type="image" caption="High-Context vs Low-Context Cultures — Spatial Implications" alt="Side-by-side comparison of spatial design for high-context (Latin American/Middle Eastern/Asian) vs low-context (Northern European/North American) cultures: (1) Floor plan — fluid/open vs compartmentalized/enclosed; (2) Circulation — overlapping zones vs clearly bounded corridors; (3) Privacy — social protocol vs physical barriers (doors, locks); (4) Public space — active street life, dense occupation vs enclosed shopping, private zones; (5) Residential — open shared spaces vs individual private rooms. Each pair shows how the same functional requirement yields different spatial solutions." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ### Edward T. Hall and Proxemics: Spatial Culture
 
 **Edward T. Hall**, an American anthropologist, revolutionized understanding of space in the 1960s by demonstrating that humans perceive and organize space in culturally conditioned ways, not universal biological patterns. Hall coined the term **proxemics**—from "proximity"—to describe his theory that personal space, distance preferences, and spatial organization are shaped by cultural conditioning and learned behaviors. Culture, Hall demonstrated, influences unconscious spatial behavior as thoroughly as it influences language.
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+<Tip>**The key insight**: spatial norms are **learned, not innate**. What feels comfortable in one culture feels invasive or cold in another. Architecture must accommodate cultural variation in space use.</Tip>
 
 Hall's work emerged from fieldwork in diverse cultural contexts. He observed that Americans maintaining comfortable conversational distance (4-7 feet) felt physically threatened by many European and Latin American conversationalists who preferred closer distances (2-3 feet). Neither group was behaving irrationally; both were following learned cultural norms. Americans perceived closeness as invasion; Europeans perceived distance as coldness or rejection. The same physical distance carried opposite psychological meanings depending on cultural background.
 
@@ -33,7 +35,7 @@ Hall identified four interpersonal distance zones, each associated with differen
 
 Hall's research documented systematic cultural differences across these zones. American conversational distance averages 4-7 feet; many Southern European, Latin American, and Middle Eastern cultures show averages of 2-3 feet. Japanese cultures show greater preference for personal space compared to Americans. Germanic cultures show even greater distance preference than Americans. These are not individual variation but cultural norms learned from childhood through observation and correction.
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
+<Note>**Philippine cultural context matters in design.** Filipino culture, rooted in communal values and strong family ties, historically normalized closer interpersonal distances and shared residential spaces (bahay kubo design). Contemporary Filipino architecture increasingly incorporates Western privacy standards, creating tension between cultural preference and modern expectations. Excellent design recognizes both.</Note>
 
 ### High-Context and Low-Context Cultures: Spatial Implications
 
@@ -67,7 +69,7 @@ For multicultural occupant groups: Spaces occupied by diverse cultural groups be
 
 For international design standards: Buildings designed to international standards often reflect low-context cultural assumptions (explicit labeling, clear boundaries, individual privacy prioritization). In high-context cultural contexts, such design may feel inappropriate. Excellent architects adapt international standards to local cultural context: explicit signage in low-context culture contexts, implicit wayfinding in high-context contexts; private offices in Western corporate contexts, shared work areas in high-context business culture.
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
+<Warn>Common error: applying low-context spatial assumptions (explicit boundaries, individual privacy) universally. High-context cultures require different spatial strategies: fluid boundaries, communal areas, implicit spatial negotiation. One-size-fits-all design fails to serve culturally diverse occupants.</Warn>
 
 ### Philippines-Specific Considerations
 
@@ -79,28 +81,38 @@ Additionally, the Philippines hosts significant expatriate populations (American
 
 ## Key Facts and Testable Items
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="WikiExamTable" status="preserved"]
+<WikiExamTable headers={["Concept", "Definition", "LEA Application"]} rows={[['["**Proxemics**", "Theory that personal space, distance preferences, and spatial organization are culturally conditioned, not universal", "Understand that spatial comfort norms vary across cultures; design accommodating cultural diversity"]', '["**Intimate Distance (0-18 inches)**", "Close physical interaction distance; varies culturally; appropriate for family in all cultures, romantic partners in high-context cultures", "Recognize cultural variation; understand that close interaction distance is culturally normal, not threatening, in some contexts"]', '["**Personal Distance (18 inches-4 feet)**", "Familiar-person interaction distance; varies culturally from 18-24 inches (Latin American/Mediterranean) to 3-4 feet (Northern European/American)", "Specify conversational distances appropriate to cultural context; understand culture-based distance preference variation"]', '["**Social Distance (4-12 feet)**", "Formal interaction and business distance; less cultural variation than closer zones but significant variations exist", "Design business meeting spaces at appropriate distances for client cultural context"]', '["**Public Distance (12+ feet)**", "Large-group situation distance; used in public addresses and one-to-many communication", "Design lecture halls, auditoriums, and public gathering spaces accommodating visual and auditory distance needs"]', '["**High-Context Culture**", "Cultures relying on implicit, contextual information; communication context-dependent; common in Latin America, Middle East, Asia, Africa", "Design with fluid spatial boundaries, implicit wayfinding, communal spaces, symbolic spatial meaning"]', '["**Low-Context Culture**", "Cultures relying on explicit information and direct communication; meaning clearly stated; common in North America, Northern Europe, Australia", "Design with clear spatial boundaries, explicit labeling and signage, private individual spaces, hierarchy through designation"]', '["**Cultural Spatial Preference**", "Documented systematic variation in comfort with density, public space use, openness/enclosure, and symbolic spatial meaning across cultures", "Recognize that spatial design acceptable in one culture may feel inappropriate in another; adapt design to cultural context"]', '["**Multicultural Design Accommodation**", "Design offering flexibility serving occupants from multiple cultural backgrounds", "Offer multiple spatial configurations accommodating both privacy-preferring and communal-preferring occupants"]', '["**Edward T. Hall**", "Anthropologist who developed proxemics theory demonstrating cultural conditioning of spatial perception and distance preferences", "Reference Hall\'s framework understanding cultural spatial variation as foundational to culturally responsive design"]']]} />
 ## How It's Tested on the LEA
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
+<ExamTip>**Pattern 1: International Project with Cultural Considerations**
+Stem: "Design a corporate office for a German multinational company's Manila branch. The company is accustomed to clearly defined private offices and formal spatial hierarchy. How would you accommodate the company's low-context spatial culture while serving Filipino employees and clients from high-context culture?"
+Expected response: Recognition of German preference for private offices and clear hierarchy; Filipino preference for communal areas and more fluid spatial organization. Proposed design balancing both: individual offices for German staff and private meeting spaces, open work commons and collaboration areas for Filipino team members, clearly designed transitions and spatial definitions accommodating both preferences.</ExamTip>
 
-[SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
+<ExamTip>**Pattern 2: Multicultural Residential Design**
+Stem: "Design a mixed-income residential building in Makati housing Filipino families, expatriate professionals, and wealthy international residents. How would you accommodate the diverse spatial culture preferences?"
+Expected response: Recognition of spatial culture differences: Filipino families preferring shared residential spaces, expatriates preferring privacy and enclosed rooms, wealthy residents expecting luxury isolation. Proposed accommodations: unit flexibility allowing open floor plans or enclosed room separation, varied unit sizes serving different household compositions, designed communal spaces serving those from communal-preference cultures, private amenities serving those from privacy-preference cultures.</ExamTip>
 
-[SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
+<ExamTip>**Pattern 3: Cultural Conflict Analysis**
+Stem: "A university housing project designed by international architects for Asian students shows high complaint rates. Students report discomfort despite comfortable furnishings and modern facilities. Analyze potential cultural spatial factors. How would you modify design?"
+Expected response: Recognition that international design standards typically reflect low-context assumptions (individual rooms, private bathrooms, clear boundaries). Asian cultural preference often favors shared residential spaces, communal facilities, and greater spatial openness. Proposed modifications: flexibility allowing room reconfiguration and sharing, well-designed communal spaces encouraging resident gathering, less emphasis on privacy, greater attention to group harmony and community formation.</ExamTip>
 
-[SLATECAMP_UI_BLOCK:ui_0009 component="ExamTip" status="preserved"]
+<ExamTip>**Pattern 4: Hospitality Design for International Guests**
+Stem: "Design a hotel in Cebu serving international clientele from diverse cultural backgrounds. Address lobby design, guest room spacing, and public space arrangement accommodating different cultural spatial preferences."
+Expected response: Lobby providing both open gathering space (high-context culture preference) and enclosed consultation areas (low-context culture preference); guest room spacing varied from tighter corridors (European/Asian comfort) to generous hallways (American comfort); public spaces offering intimate seating areas for close-distance cultures and dispersed seating for greater-distance cultures; clear signage for direct-communication cultures, symbolic wayfinding for context-dependent cultures.</ExamTip>
 
-[SLATECAMP_UI_BLOCK:ui_0010 component="ExamTip" status="preserved"]
+<ExamTip>**Pattern 5: Edward T. Hall Application**
+Stem: "A client from the Middle East reports that your office design feels 'cold' and 'uninviting' while American staff find the same space appropriately professional. Using Hall's proxemics framework, explain the cultural spatial misalignment and propose design modifications."
+Expected response: Identification of distance and openness differences: Middle Eastern culture (high-context, closer interpersonal distance, warmer spatial character) differs from American (low-context, greater distance, more formal character). Proposed modifications: more intimate spatial scleas reducing psychological distance, greater opportunity for close interaction, warmer material finishes and color supporting psychological warmth, more defined gathering spaces encouraging closer approach.</ExamTip>
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
+<Callout>You must understand that spatial perception varies across cultures and that Edward Hall's proxemics framework documents these differences. The LEA will test whether you can design spaces that serve diverse cultural groups and whether you understand how space use norms vary internationally. This is particularly important for Filipino architects designing for multicultural contexts and international clients.</Callout>
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0011 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Assuming spatial universality" correction="Designing spaces assuming all occupants share the same distance preferences, comfort with density, and spatial meaning." context="Spatial culture is learned, not inherent, and varies significantly across populations." />
 
-[SLATECAMP_UI_BLOCK:ui_0012 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard mistake="Designing for single cultural context" correction="Creating buildings reflecting only designer's or primary client's spatial culture without considering occupant diversity." context="Successful buildings accommodate multiple cultural spatial preferences." />
 
-[SLATECAMP_UI_BLOCK:ui_0013 component="WikiMistakeList" status="preserved"]
+<WikiMistakeList mistakes={["Misinterpreting cultural spatial behavior. Judging other cultures' spatial preferences as abnormal or inappropriate rather than understanding them as culturally normal. Close interpersonal distance is appropriate in high-context cultures; greater distance is appropriate in low-context cultures—neither is correct universally.", "Ignoring high-context cultural preferences in mixed populations. Designing low-context (explicit, bounded, private) architecture for populations that include high-context culture members. Such design serves low-context occupants well but excludes high-context culture occupants.", "Failing to provide spatial flexibility. Designing rigid spatial configurations serving single cultural preference rather than offering flexibility accommodating diverse preferences. Flexible spaces serve diverse populations; rigid spaces exclude those from different spatial cultures.", "Overlooking symbolic spatial meaning. Designing spaces without recognizing that spatial arrangements carry different symbolic meanings across cultures. Center positions, entry directions, and hierarchical arrangements carry different significance; culturally responsive design acknowledges this variation."]} />
 
 ## Key Terms
 

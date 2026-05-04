@@ -8,6 +8,13 @@ Structural bolts join steel members through frictional force (slip-critical conn
 The bolt preload (tension) is critical to connection performance. Under-tensioned bolts slip under load, increasing deformation and risking connection failure.
 Over-tensioned bolts risk bolt rupture. Proper installation methods ensure consistent, predictable preload.
 
+
+<ArticleMedia id="media-bolt-grade-comparison" layout="single" type="image" status="placeholder"
+  alt="Comparison diagram of A325, A490, and A307 bolts showing head markings, strength ratings, and typical applications"
+  caption="Future chart: structural bolt grades — A325, A490, A307 comparison with head marking identification"
+  suggestedAsset="Bolt identification chart with head marking callouts and strength specifications"
+  placementIntent="Helps learners identify bolt grades by visual inspection and understand strength differences" />
+
 ### Bolt Grades and Material Properties
 
 _ASTM A307_ — The entry-level structural bolt specification.
@@ -45,6 +52,13 @@ The bolt's splined end breaks off when the predetermined tension is reached, pro
 TC bolts are designed (ASTM F1852 for 120 ksi, F2280 for 150 ksi) so the spline breaks at approximately 90% of proof load (approximately 70–80% of ultimate tensile strength), ensuring consistent, safe preload.
 Installations are 3–4 times faster than calibrated wrench, eliminating wrench drift and operator error.
 TC is increasingly standard in Philippine fabrication shops and high-volume projects.
+
+
+<ArticleMedia id="media-bolt-installation-details" layout="single" type="image" status="placeholder"
+  alt="Cross-section detail drawings of snug-tight, pretensioned, and slip-critical bolted connections showing bolt, nut, washer placement"
+  caption="Future diagram: bolted connection installation methods — snug-tight, pretensioned, slip-critical"
+  suggestedAsset="Cross-section and isometric detail drawings of bolted connections"
+  placementIntent="Visualizes correct bolt installation for different connection types" />
 
 ### Bearing vs. Slip-Critical Connections
 

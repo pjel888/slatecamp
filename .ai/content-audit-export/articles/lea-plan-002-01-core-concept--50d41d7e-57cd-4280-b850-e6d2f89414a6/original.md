@@ -6,7 +6,6 @@ The three classical urban models — Concentric Zone, Sector, and Multiple Nucle
 
 Distinguish the Concentric Zone (Burgess, 1925), Sector (Hoyt, 1939), and Multiple Nuclei (Harris & Ullman, 1945) models by theorist, year, spatial mechanism, and Philippine application.
 
-
 ## Core Concept
 
 **Urban structure models** are theoretical frameworks that explain how cities develop, grow, and organize land use over time. The three foundational classical models emerged in the early 20th century and remain the basis for understanding city form.
@@ -26,6 +25,7 @@ The **Multiple Nuclei Model** (**Chauncy Harris AND Edward Ullman, 1945**) rejec
 - **Rank-Size Rule** (**George Kingsley Zipf, 1949**) predicts that in a balanced urban system, the second-largest city should be 1/2 the population of the largest, the third city 1/3, and so on. The Philippines dramatically violates this rule—Metro Manila is roughly 10 times larger than Cebu City, creating a primate city pattern.
 
 - **Primate City** (**Mark Jefferson, 1939**) describes a city that is _disproportionately_ large and dominates the urban system far beyond statistical prediction. Manila is the classic Philippine example—it concentrates national commerce, government, education, and culture in a way that violates the rank-size expectation. Primacy is not just being the largest; it is being dramatically oversized.
+<ArticleMedia id="media-lea-plan-002-01-core-concept" a type="image" caption="Classical Urban Models — Concentric Zone, Sector, and Multiple Nuclei" description="Three-panel comparison of classical urban land use models: (1) Burgess Concentric Zone (1925) — CBD, transition, working-class, residential, commuter rings; (2) Hoyt Sector Model (1939) — wedge-shaped growth along transport corridors; (3) Harris & Ullman Multiple Nuclei (1945) — polycentric decentralized nodes." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
@@ -44,7 +44,6 @@ Metro Manila exemplifies all three models simultaneously. The CBD (Makati-Taguig
 3. **Application questions:** "The Multiple Nuclei Model best explains [Metro Manila's mix of CBD, port district, and government center / Quezon City's radial growth / suburban sprawl]?" Must match the mechanism to the phenomenon.
 
 <Tip>**Memory anchors:** BURGESS = **BULLSEYE** (concentric circles). HOYT = **HOT CORRIDORS** (sectors along transit). HARRIS + ULLMAN = **MULTIPLE** (two names = multiple nuclei).</Tip>
-
 
 **Exam Tip:** Most common swap on the LEA: Burgess (Concentric Zone = bullseye) vs. Hoyt (Sector Model = pie wedges). Memory anchor: BURGESS = BULLSEYE, HOYT = HOT CORRIDORS. Multiple Nuclei requires BOTH Harris AND Ullman.
 

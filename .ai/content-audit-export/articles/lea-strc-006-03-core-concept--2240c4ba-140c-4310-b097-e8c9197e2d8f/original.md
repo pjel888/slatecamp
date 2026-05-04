@@ -11,6 +11,7 @@ By the end of this article, you will be able to:
 A reinforced concrete section can fail in three modes depending on the ratio of tensile reinforcement: balanced (steel and concrete reach their respective ultimate strains simultaneously), underreinforced (steel yields before concrete crushes, allowing warning), and overreinforced (concrete crushes before steel yields, sudden failure with no warning). Understanding these concepts is fundamental to designing safe, ductile structures. The distinctions are based on comparing steel strain and concrete strain at failure using ε_u = 0.003 for concrete and the yield strain of steel (≈ 0.0021 for Grade 60).
 
 ## Core Concept
+<ArticleMedia id="media-lea-strc-006-03-core-concept" a type="image" caption="Reinforced Concrete Beam — Flexural Behavior Under Bending" description="Cross-section and strain/stress diagram of an RC beam under positive bending: (1) Cross-section showing tension steel (As) at bottom, compression zone at top; (2) Strain distribution (linear, assumed plane sections remain plane); (3) Stress distribution — rectangular stress block (Whitney) for concrete compression, steel stress at yield in tension; (4) Neutral axis depth c, effective depth d, and internal couple jd." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 In a reinforced concrete section under bending, the concrete carries compression in the top fiber while the reinforcing steel carries tension in the bottom. As load increases, both materials strain. The section fails when one material reaches its ultimate strain first.
 
@@ -74,7 +75,6 @@ The PNSC and earthquake-resistant design codes in the Philippines require struct
 3. **Neutral Axis Measurement:** After failure, the depth of the compression zone (neutral axis position) can be measured in the failed section. This confirms whether the neutral axis position was consistent with balanced, underreinforced, or overreinforced behavior.
 
 <Tip>Memorize the strain hierarchy: Concrete crushing (0.003) vs. Grade 60 yield (0.0021). If actual steel strain < 0.0021 at failure, the section is overreinforced (bad). If actual steel strain > 0.0021, it is underreinforced or balanced (good). This distinction is the foundation of ductile design.</Tip>
-
 
 ## Related Articles
 

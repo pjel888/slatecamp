@@ -18,6 +18,13 @@ Concrete counters are architectural, offering custom form and finishes (polished
 
 Stainless steel counters are industrial-grade, used in commercial kitchens and professional home kitchens. High cost, thermal conductivity (hot/cold transfer), and visible fingerprints limit residential appeal. Mohs hardness is moderate; scratches are cosmetic but visible.
 
+
+<ArticleMedia id="media-countertop-material-chart" layout="single" type="image" status="placeholder"
+  alt="Comparison chart of countertop materials: granite, marble, quartz, solid surface, laminate, stainless steel, concrete, wood, and tile with durability, stain resistance, heat resistance, and maintenance ratings"
+  caption="Future chart: countertop material comparison — durability, stain resistance, heat resistance, and maintenance"
+  suggestedAsset="Material selection chart with application suitability matrix"
+  placementIntent="Helps learners select countertop materials by use and performance requirements" />
+
 ## Key Provisions
 
 | Property | Granite | Marble | Quartz (Engineered) | Solid Surface (Corian) | Laminate | Concrete |
@@ -47,6 +54,12 @@ Stainless steel is restricted to commercial kitchens and professional residences
 
 Standard countertop depth is 600mm (matching wall cabinet depth), with 40-50mm overhang for seating. Backsplash is typically 150-300mm above counter, protecting walls from splash and heat. These dimensions should be coordinated with cabinet specs.
 
+
+<ArticleMedia id="media-countertop-selection-matrix" layout="single" type="image" status="placeholder"
+  alt="Selection matrix for countertop materials: granite, marble, quartz, solid surface, laminate, stainless steel, concrete, wood, and tile with rating icons for durability, stain resistance, heat resistance, and maintenance"
+  caption="Future chart: countertop material selection matrix — durability, stain, heat, and maintenance ratings"
+  suggestedAsset="Decision matrix or comparison chart for countertop selection"
+  placementIntent="Helps learners select countertop materials by application requirements" />
 ## How It's Tested
 
 **Question Type 1 (Hardness/Durability Match):** A client wants a durable kitchen counter with minimal maintenance. Should you specify marble, engineered quartz, or laminate? Answer: Engineered quartz. Marble requires high maintenance (etching, frequent sealing); laminate is not durable long-term. Quartz offers durability + low maintenance.

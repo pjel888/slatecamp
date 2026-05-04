@@ -12,6 +12,8 @@ The Professional Regulatory Board of Architecture (PRBoA), operating under the P
 
 The PRBoA disciplinary process is governed by RA 9266 (Architecture Act of 2004), its Implementing Rules and Regulations (IRR), and the Code of Ethical Conduct. This article examines the four-phase disciplinary sequence: complaint filing, formal investigation, administrative hearing, and appeal review.
 
+<ArticleMedia id="media-eth009-disciplinary-flowchart" layout="single" variant="contained" type="image" status="placeholder" aspectRatio="16:9" title="PRBoA Disciplinary Process — Five-Step Flowchart" description="Horizontal flowchart showing the five-step disciplinary sequence: STEP 1 Complaint Filing (who may file, requirements, informal resolution options) → STEP 2 Investigation Phase (assign investigator, notice to respondent, answer, evidence gathering, report) → STEP 3 Formal Administrative Hearing (structure, relaxed evidentiary rules, respondent rights) → STEP 4 PRBoA Decision and Disciplinary Orders (penalty categories, mitigating/aggravating factors) → STEP 5 Appeal Process (15-day appeal to PRC, Court of Appeals review under Rule 43, Supreme Court discretionary review)." placementIntent="conflict-resolution" suggestedSearchQuery="PRBoA disciplinary process complaint investigation hearing appeal RA 9266 Section 23 flowchart" suggestedAsset="Diagram or reference image" />
+
 ## STEP 1: The Complaint Phase
 
 ### Who May File a Complaint?
@@ -346,7 +348,6 @@ The PRBoA disciplinary process serves dual purposes:
 - **Enforces professional accountability** through graduated discipline
 
 Understanding this process is essential for ethical practice because it establishes the mechanisms through which professional obligations are enforced and violations are remedied.
-
 
 ## Related Articles
 

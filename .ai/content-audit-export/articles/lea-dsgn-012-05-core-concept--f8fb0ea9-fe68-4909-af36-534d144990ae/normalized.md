@@ -80,7 +80,7 @@ Sustainable utilities practice reduces environmental footprint:
 - **Telecommunications:** Shared infrastructure reduces redundancy and cost
 
 Cross-reference LEA-DSGN-009-04 for comprehensive BERDE treatment.
-<ArticleMedia id="media-lea-dsgn-012-05-core-concept" a type="image" caption="Site Utility Coordination — Water, Sewer, Stormwater, and Electrical Routing" description="Underground utility coordination plan showing: water supply line (with easement), sanitary sewer route, stormwater drainage system, electrical/telecom conduits, gas line (if applicable), and utility easement dimensions per PD 1096 and utility standards." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-012-05-core-concept" type="image" caption="Site Utility Coordination — Water, Sewer, Stormwater, and Electrical Routing" alt="Underground utility coordination plan showing: water supply line (with easement), sanitary sewer route, stormwater drainage system, electrical/telecom conduits, gas line (if applicable), and utility easement dimensions per PD 1096 and utility standards." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
@@ -136,7 +136,7 @@ A site plan shows water main, sewage line, electrical conduit, and gas line all 
 [SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
 
 **Exam Tip:** Utility easement minimums vary: water main = 3m each side of pipe centerline, sewer = 2m, electrical = 2m, telecommunications = 1m. Always verify with the local utility provider. Coordinate utility routing BEFORE building layout.
-<ArticleMedia id="media-lea-dsgn-012-05-core-concept" a type="image" caption="Utility Coordination Plan — Subsurface and Overhead Utility Routing" description="Site plan overlay showing coordination of: water supply line (min. 3m from building, 1.0m deep), sewer line (min 2% slope, 1.2m deep), storm drainage, electrical conduit (0.6m deep, 1.5m from water), telecom (shared trench), fuel/gas line (separate trench, 1.2m from electric). Easement strips color-coded and cross-section conflict resolution shown." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-012-05-core-concept" type="image" caption="Utility Coordination Plan — Subsurface and Overhead Utility Routing" alt="Site plan overlay showing coordination of: water supply line (min. 3m from building, 1.0m deep), sewer line (min 2% slope, 1.2m deep), storm drainage, electrical conduit (0.6m deep, 1.5m from water), telecom (shared trench), fuel/gas line (separate trench, 1.2m from electric). Easement strips color-coded and cross-section conflict resolution shown." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Cross-References
 

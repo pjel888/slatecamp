@@ -75,11 +75,17 @@ Collar ties are recommended in high-wind zones ($V > 30\text{ m/s}$) to prevent 
 **Pattern 4: Member Sizing** — "Purlins spacing 1500 mm apart support corrugated roofing ($2\text{ kN/m}^2$). Calculate bending moment."
 (Answer: $w = 2\text{ kN/m}^2 \times 1.5\text{ m} = 3\text{ kN/m}$; $M = wL^2/8 = 3 \times 1.5^2 / 8 = 0.84\text{ kN}\cdot\text{m}$. Select section per NSCP bending stress allowables.)
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+<Tip>
+Memorize truss types by span: King Post 5–7 m, Fink 9–15 m, Howe 10–20 m, Pratt 10–25 m. 
+In Philippine wind zones, collar ties in the upper 1/3 are recommended for $V > 30\text{ m/s}$ to control lateral thrust.
+</Tip>
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard
+ mistake='Assuming all trusses can span equivleant distances; confusing Queen Post (7–10 m) with Fink (9–15 m) capability.'
+ correction='Truss span depends on geometry. Fink W-pattern distributes load more efficiently than Queen Post verticals. Span capability increases with geometric complexity.'
+/>
 
 ibutary rafter load alone without wind multipliers',
  ]}

@@ -17,7 +17,7 @@ Per Diem rates should be established by mutual agreement between architect and c
 
 Per Diem works well for Construction Administration when the architect's on-site presence is intermittent or variable in intensity. Rather than estimating total hours (which is uncertain during construction), the architect and client agree to specific on-site visit frequency (twice weekly, for example) at a negotiated Per Diem rate. The contract specifies whether the rate includes travel time or whether travel is separate.
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Note" status="preserved"]
+<KeyValues items=[{"value": "5-12%", "label": "DAEDS Fee Range"}, {"value": "50M", "label": "PCC Bracket Threshold"}, {"value": "10 Groups", "label": "Project Classification"}, {"value": "150%", "label": "Renovation Multiplier"}] />
 Extracted summary:
 - Props: (none)
 
@@ -25,12 +25,14 @@ Extracted summary:
 **LEA Priority — Fee Computation:** Know the five compensation methods (percentage-of-PCC, MDPE, lump sum, per diem/retainer, reimbursable expenses). Master the sliding scale for Groups 1-3 (5%→4%→3%→
 </Note>
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
+<LawCallout code="irr" section="Architect's Guidelines / SPP 202" title="Fee Computation — Regulatory Basis">
+Fee computation under the Architect's Guidelines follows SPP 202 classification groups and the DAEDS/DADS framework. The percentage-of-PCC method applies group-specific rates to Project Construction Cost. MDPE uses direct personnel expense multiplied by an agreed factor. Lump-sum fees are negotiated based on scope. All methods must be documented in the owner-architect agreement.
+</LawCallout>
 Extracted summary:
 - Props: code=irr, section=Architect's Guidelines / SPP 202, title=Fee Computation — Regulatory Basis
 - Text: Fee computation under the Architect's Guidelines follows SPP 202 classification groups and the DAEDS/DADS framework. The percentage-of-PCC method applies group-specific rates to Project Construction C...
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="KeyValues" status="preserved"]
+<KeyValues items=[{"value": "5-12%", "label": "DAEDS Fee Range"}, {"value": "50M", "label": "PCC Bracket Threshold"}, {"value": "10 Groups", "label": "Project Classification"}, {"value": "150%", "label": "Renovation Multiplier"}] />
 Extracted summary:
 - Props: items=[{"value": "5-12%", "label": "DAEDS Fee Range"}, {"value": "50M", "label": "PCC Bracket Threshold"}, {"value": "10 Groups", "label": "Project Classification"}, {"value": "150%", "label": "Renovation Multiplier"}]
 - Text: (none detected)
@@ -62,7 +64,9 @@ In Philippine architecture practice, these methods are used for specialized role
 
 These methods work well in combination with primary project fees. An architect might charge percentage-of-PCC for design services (Schematic through Contract Documents) and Per Diem or hourly rates for Construction Administration site observation. A client might contract for design services under one agreement and establish a separate retainer for ongoing strategic consultation.
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Callout" status="preserved"]
+<LawCallout code="irr" section="Architect's Guidelines / SPP 202" title="Fee Computation — Regulatory Basis">
+Fee computation under the Architect's Guidelines follows SPP 202 classification groups and the DAEDS/DADS framework. The percentage-of-PCC method applies group-specific rates to Project Construction Cost. MDPE uses direct personnel expense multiplied by an agreed factor. Lump-sum fees are negotiated based on scope. All methods must be documented in the owner-architect agreement.
+</LawCallout>
 Extracted summary:
 - Props: variant="lea-watch", title="Exam Tip"
 - Text: Exam Tip — The LEA frequently tests whether candidates can identify the correct compensation method for a given scenario. Remember: Per Diem = field/site work, Retainer = ongoing availability, Honorarium = one-time expert contribution. Mixing these up is a common error.
@@ -87,7 +91,7 @@ Per Diem, Retainer, and Honorarium should complement—not replace—appropriate
 
 
 
-<ArticleMedia type="image" caption="Compensation Methods Comparison — Per Diem, Retainer, and Honorarium" description="Three-column comparison table showing Per Diem (daily rate, site visits/CA), Retainer (monthly fixed, ongoing availability), and Honorarium (discretionary, expert opinion). Each column shows: basis of payment, typical use cases, billing mechanism, and Philippine practice examples. Decision criteria at bottom for when to use each method." />
+<ArticleMedia type="image" caption="Compensation Methods Comparison — Per Diem, Retainer, and Honorarium" alt="Three-column comparison table showing Per Diem (daily rate, site visits/CA), Retainer (monthly fixed, ongoing availability), and Honorarium (discretionary, expert opinion). Each column shows: basis of payment, typical use cases, billing mechanism, and Philippine practice examples. Decision criteria at bottom for when to use each method." />
 ## Related Articles
 
 - [Project Classification Groups](lea-prac-cmp-001)

@@ -135,9 +135,17 @@ You are the architect of record for a Quezon City mixed-use institutional comple
 
 ### Core Classification: Philippine vs. US Occupancy Groups
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
+<Callout variant="lea-watch" title="Trap Leart">
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
+LEA Trap Leart: The most frequently tested classification error is placing schools in Group D. Under PD 1096, schools are Group C. Group D is for health care and custodial institutions. This distinction governs which ventilation rules, exit requirements, and construction type tables apply.
+
+</Callout>
+
+<Warn>
+
+Critical Warning — Never mix IBC and PD 1096 occupancy terminology on the LEA exam. "Group I-2" is a US code term that does not exist in Philippine law. Philippine hospitals are always Group D-2. Using US terminology on a Philippine board exam answer will mark the answer wrong, even if the dimensional values are correct.
+
+</Warn>
 
 #### Philippine Occupancy Classification (PD 1096, Sec. 701)
 
@@ -206,7 +214,11 @@ This is simultaneously a **volume** standard AND a **floor area** standard. Both
 **What does the 3.0 m³ standard actually prevent?**
 Not suffocation — but excessive CO₂ buildup, pathogen concentration, and thermal discomfort. The 3.0 m³ floor is a **code-based ventilation sufficiency threshold**, not a biological oxygen limit.
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="ExamTip" status="preserved"]
+<ExamTip>
+
+Board Exam Tip: When a question gives room dimensions and asks for maximum occupancy, always check BOTH the airspace (volume ÷ 3.0) AND the floor area (area ÷ 1.0) standards. The lower number governs. This is one of the most frequently tested calculations on the LEA — and one of the most commonly missed when candidates forget to check both limits.
+
+</ExamTip>
 
 #### US Approach: Area-Based Occupancy (IBC / ASHRAE)
 
@@ -269,7 +281,11 @@ Hospital corridors must accommodate **bed movement, stretcher traffic, and simul
 - General commercial corridor (non-hospital): 44 inches (111.8 cm) minimum (IBC / ADA)
 - ADA minimum accessible corridor: 44 inches (111.8 cm)
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Note" status="preserved"]
+<Note>
+
+The Philippine 2.40 m and the US 8 ft (2.44 m) are nearly identical for hospital bed traffic — but they derive from different code documents and use different terminology. The Philippine standard applies to Group D-2 hospital occupancies; the US standard applies to IBC Group I-2.
+
+</Note>
 
 | Context | Code | Hospital Corridor | General Commercial |
 |---|---|---|---|
@@ -328,7 +344,11 @@ BP 344 and its IRR specify barrier-free requirements for **listed building types
 | **Ramp width (min)** | 36 in / 914 mm | **1,200 mm** |
 | **Accessible parking** | Varies by total count | 4,000 × 5,000 mm |
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
+<Note>
+
+LEA Board Exam Note: ADA requires 32 in (813 mm) minimum clear door width. BP 344 requires 900 mm minimum clear width — which is slightly wider. Philippine standards are more demanding for door clearance in accessible design.
+
+</Note>
 
 ---
 
@@ -540,9 +560,17 @@ A community library in Cebu City is undergoing renovation. The architect propose
 
 ---
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="LawCallout" status="preserved"]
+<LawCallout code="nbcp">
 
-[SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
+PD 1096 Rule VIII, Sec. 807(1): Minimum air space per occupant = 14.00 m³ for adults. Classroom computation: 14 m³ ÷ 2.70 m ceiling height = 5.18 m² floor area per person. Combined with the 1.0 m²/person floor area limit, the effective occupancy limit is the LOWER of the two calculations.
+
+</LawCallout>
+
+<ExamTip>
+
+LEA Pattern: Classroom occupancy calculation questions require TWO checks: (1) Air space: Room volume ÷ 14 m³/person. (2) Floor area: Room area ÷ 1.0 m²/person. The correct occupancy is the LESSER of the two results. Show both calculations in your answer.
+
+</ExamTip>
 
 ## Appendix: Full Data Reference Tables
 

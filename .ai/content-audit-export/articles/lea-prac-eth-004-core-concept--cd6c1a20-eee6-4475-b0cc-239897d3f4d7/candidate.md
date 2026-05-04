@@ -14,9 +14,11 @@ The architect-client relationship rests on good faith and the architect's unques
 
 Section 2 of the Code establishes that the architect-client relationship is "depended upon good faith" and that the architect's position "carries with it certain moral obligations to his Client and to himself." This creates a **fiduciary relationship** — the architect is a trusted adviser who places the client's interests above the architect's own profit.
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
+<LawCallout code="ra9266" section="Section 2 (a-j)" title="Client Obligations — The Fiduciary Standard">
+Section 2 of the Code establishes the architect's fiduciary duty to the client. Key subsections: (b) ascertain scope and fees at inception; (c) advise against impractical projects; (f) charge fair fees per Basic Minimum Fee standards; (g) cannot undertake fixed-sum construction of own designs; (h) shall not accept returns from any source other than the client; (i) disclose conflicts of interest; (j) include arbitration clause in agreements.
+</LawCallout>
 
-<ArticleMedia id="media-eth004-client-duties" layout="single" variant="contained" type="image" status="placeholder" aspectRatio="16:9" title="Duties to the Client — Fiduciary Obligations" description="Hub-and-spoke diagram centered on Fiduciary Duty to Client with six spokes: Absolute loyalty Section 2-h, Conflict disclosure Section 2-i, No third-party compensation Section 2-h, Confidentiality, Truthful advice Section 2-c, Fair fees Section 2-f. Each spoke includes key code reference and an exam-relevant note." placementIntent="ethics-framework" suggestedSearchQuery="architect fiduciary duties to client Code of Ethics Section 2 loyalty confidentiality" suggestedAsset="Diagram or reference image" alt="Hub-and-spoke diagram of fiduciary obligations to clients" caption="Future diagram: hub-and-spoke diagram of fiduciary obligations to clients" />
+<ArticleMedia id="media-eth004-client-duties" layout="single" variant="contained" type="image" status="placeholder" aspectRatio="16:9" title="Duties to the Client — Fiduciary Obligations" alt="Hub-and-spoke diagram centered on Fiduciary Duty to Client with six spokes: Absolute loyalty Section 2-h, Conflict disclosure Section 2-i, No third-party compensation Section 2-h, Confidentiality, Truthful advice Section 2-c, Fair fees Section 2-f. Each spoke includes key code reference and an exam-relevant note." placementIntent="ethics-framework" suggestedSearchQuery="architect fiduciary duties to client Code of Ethics Section 2 loyalty confidentiality" suggestedAsset="Diagram or reference image" alt="Hub-and-spoke diagram of fiduciary obligations to clients" caption="Future diagram: hub-and-spoke diagram of fiduciary obligations to clients" />
 
 The obligation has six interconnected dimensions:
 
@@ -55,7 +57,9 @@ The PRBoA has consistently disciplined architects who accepted contractor paymen
 
 Architects employed by government agencies face heightened scrutiny: their loyalty obligation extends to the public (as taxpayers), not just to the government entity as contracting party.
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
+<Warn>
+  **Common Exam Trap:** The LEA frequently tests whether "small" gifts or discounts are acceptable if disclosed. The answer is NO under §2-h — ANY compensation from third parties is prohibited unless it is a market discount credited to the client under §4-b. Verbal disclosure to the client does not make it permissible; the architect must refuse or pass the benefit to the client.
+</Warn>
 
 ## How It's Tested
 
@@ -71,9 +75,11 @@ Client requests design the architect knows is financially unfeasible. Architect 
 **Pattern 4: Fixed-Sum Construction Contract**
 Architect designs building, then agrees to construct it for fixed lump sum. Violation: §2-g (architect "shall not undertake, under a fixed contract sum agreement, the construction of any project based on plans prepared by him").
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="ExamTip" status="preserved"]
+<ExamTip>
+  **LEA Watch:** Apply the "FAIR" test for client obligation questions: (F)iduciary duty to act in client's best interest; (A)dvise truthfully even at cost to yourself; (I)nterested parties must be disclosed; (R)eceived only from client — no third-party compensation. Anything that weakens the architect's standing as "unprejudiced and honest adviser" violates §2-i.
+</ExamTip>
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+<Tip>**Memory Aid: "FAIR"—Fiduciary, Advised truthfully, Interested parties disclosed, Received only from client.** If a question involves third-party compensation, conflicts of interest, or impractical project advice, apply the FAIR test. Anything that weakens the architect's standing as "unprejudiced and honest adviser" violates §2-i.</Tip>
 
 ## Common Mistakes
 

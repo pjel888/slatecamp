@@ -6,6 +6,10 @@ Distinguish Umayyad (Roman/Byzantine borrowing, hypostyle halls, mosaic decorati
 ## Core Concept
 The **Umayyad** (661–750 CE) and **Abbasid** (750–945 CE) dynasties established two distinct Islamic architectural visions that shaped all subsequent regional development.
 
+
+<ArticleMedia id="media-hist-004-02-core-concept" layout="single" type="image" status="placeholder" alt="Interior of the Great Mosque of Damascus (706–715 CE, Umayyad Caliph al-Walid I), showing the arcaded hypostyle prayer hall with reused Roman and Byzantine columns and gold-glass mosaics." caption="Great Mosque of Damascus — Umayyad Hypostyle Prayer Hall" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
+
 **Umayyad architecture** reflects a dynasty that conquered vast territories and borrowed from Roman, Byzantine, and Persian traditions. Umayyad rulers were pragmatic: they reused columns from destroyed Byzantine temples, maintained Roman city grids, and adapted the palace typology to Islamic needs. The Umayyad period is marked by direct, energetic solutions. Mosques adopted the hypostyle plan (forest of columns supporting a flat roof)—economical, expandable, and structurally straightforward. Decoration remained restrained; geometric patterns and vegetal arabesques emerged, but muqarnas had not yet developed. Minarets appeared as towers integral to the qibla wall (not separate freestanding structures). The **desert palace** (qasr) is the Umayyad signature: a fortified aristocratic retreat combining Roman military logistics with Islamic spatial hierarchies. These palaces featured reception halls (iwans), courtyards, hammams (baths), and hunting reserves.
 
 <Tip>**Umayyad vs. Abbasid—the key distinction:**
@@ -19,6 +23,10 @@ Memory aid: **U = Reuse** (Roman columns), **A = Advance** (new technologies).</
 These two periods represent not a simple progression but a cultural reorientation. Umayyad is Roman-Mediterranean; Abbasid is Mesopotamian-Persian. Umayyad uses columns inherited from classical antiquity; Abbasid builds from scratch with brick and invents new decorative technologies. Understanding this distinction is essential to recognizing later Islamic development.
 
 <Note>The Dome of the Rock (691 CE) is NOT a mosque—it is a shrine commemorating the Prophet Muhammad's night journey. It lacks a mihrab and courtyard in the traditional mosque sense. Recognizing its unique centralized-domed typology (not hypostyle) and spiritual function distinguishes it from contemporary prayer buildings. This distinction is directly tested on the LEA.</Note>
+
+
+<ArticleMedia id="media-hist-004-02-core-concept" layout="single" type="image" status="placeholder" alt="The Malwiya Minaret at the Great Mosque of Samarra (848–852 CE, Abbasid Caliph al-Mutawakkil), showing the spiral ramp form and characteristic Abbasid brick construction with carved stucco decoration." caption="Abbasid Brick Architecture — Samarra Mosque Minaret" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
 
 ## Key Facts and Testable Items
 
@@ -71,6 +79,8 @@ These two periods represent not a simple progression but a cultural reorientatio
 **Byzantine Influence** — Structural and decorative traditions inherited from the Eastern Roman (Byzantine) Empire; abundant in Umayyad reuse of columns, mosaics, and spatial planning.
 
 <Warn>Do not treat Umayyad and Abbasid as simple stylistic progression. They represent distinct geographic and cultural reorientations. Umayyad is pragmatically Byzantine (reused columns, Mediterranean cities). Abbasid rejects that legacy and builds new with Persian-influenced brick, muqarnas, and iwans. This conceptual shift—not mere aesthetic refinement—is critical for LEA success.</Warn>
+
+<ArticleMedia id="media-hist-004-02-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparative diagram of Umayyad (hypostyle hall, Roman/Byzantine borrowing, mosaic decoration) and Abbasid (brick, iwan, stucco, centralized planning) Islamic architecture showing contrasting materials, plans, and ornamental vocabulary.\" caption=\"Umayyad vs. Abbasid — Architectural Comparison\" suggestedAsset=\"Style comparison illustration\" placementIntent=\"Style comparison for architectural period\" />
 
 ## Related Articles
 

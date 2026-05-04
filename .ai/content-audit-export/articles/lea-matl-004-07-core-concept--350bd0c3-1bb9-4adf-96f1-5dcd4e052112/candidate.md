@@ -86,15 +86,15 @@ The LEA evaluates structural steel construction through:
 5. _Defect recognition_ — Identify erection defects (misalignment, loose bolts, incomplete connections) and corrective actions.
 6. _Philippine standards alignment_ — Apply NSCP 2015 Chapter 5 and AISC 360 provisions.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+<Tip>Bolted connections are the default for Philippine field assembly due to convenience and speed. Welded connections require skilled labor and weather protection; reserve them for critical moment-resisting connections and shop work. For high-rise seismic design in the Philippines, specify dual systems (MRF + bracing) for optimal ductility and stiffness. Fireproofing is mandatory for all structural steel; spray-applied is economical, but board is superior for durability. For bolted connection details, see LEA-MATL-003-07. For welded connection requirements, see LEA-MATL-003-05.</Tip>
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard title="Erecting Frame Without Temporary Bracing" body="A fabricator begins erecting columns and beams without diagonal bracing or knee braces. The partially erected frame is unstable; wind or minor seismic activity causes collapse and injuries. OSHA and NSCP 2015 mandate temporary bracing until permanent lateral system is complete." />
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard title="Specifying Fireproofing Without Rating Verification" body="An architect specifies 'standard spray fireproofing' without confirming the required fire-resistance rating (2, 3, or 4 hours per occupancy). The applied fireproofing fails to achieve the required rating; renovation is necessary. Always specify the fire-resistance rating and verify that the proposed method meets it." />
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
+<WikiMistakeList items={["Assuming bolted and welded connections are interchangeable—bolted is faster in field; welded provides monolithic behavior. Choose based on project needs, not convenience alone.", "Over-relying on moment-resisting frames for seismic design in high-rise buildings without exploring dual systems—dual (MRF + bracing) optimizes ductility and stiffness, reducing member sizes and cost.", "Underestimating fireproofing maintenance—intumescent coatings require periodic touch-up; spray-applied fireproofing is vulnerable to impact and water. Budget for lifecycle maintenance.", "Failing to account for Philippine tropical weather—spray-applied fireproofing application requires dry conditions; monsoon season may delay work. Schedule accordingly.", "Specifying high-cost board fireproofing where spray-applied meets rating requirements—match fireproofing method to actual rating need, not budget assumptions."]} />
 
 ## Related Articles
 

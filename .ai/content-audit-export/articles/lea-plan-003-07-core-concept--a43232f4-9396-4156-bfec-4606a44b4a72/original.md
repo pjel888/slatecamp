@@ -5,7 +5,6 @@ Identify specialized housing programs for Indigenous Peoples (IPs), persons with
 
 Beyond mainstream socialized and economic housing, the Philippines operates specialized housing programs for vulnerable or distinct populations: Indigenous Peoples (IPs), persons with disabilities (PWDs), senior citizens, disaster-affected households, and urban workers in special economic zones. These programs reflect recognition that one-size-fits-all housing does not serve populations with specific needs or rights.
 
-
 ## Core Concept
 
 Special housing programs address housing needs of populations with legal recognition or particular vulnerabilities not met by standard production methods. These include:
@@ -42,6 +41,7 @@ Special policies apply to IP relocation: alternative sites must be within ancest
 **Urban Worker Housing:** Special programs exist for workers in special economic zones, export processing zones, and large urban employment centers. These programs facilitate housing access for workers with formal employment but limited capital. Financing typically involves employer subsidies or partnerships.
 
 **Internally Displaced Persons (IDPs) Housing:** Conflict-related and disaster-related displacement requires temporary and permanent housing solutions. IDPs differ from relocation residents in legal status and rights; international humanitarian law frameworks apply alongside Philippine law.
+<ArticleMedia id="media-lea-plan-003-07-core-concept" a type="image" caption="Specialized Housing Programs — IP, PWD, Senior, Disaster-Affected" description="Diagram of specialized housing programs: Indigenous Peoples (IPRA, ancestral domain), Persons with Disabilities (PWD Act, universal design), Senior Citizens (SC Act, age-friendly), Disaster-Affected (emergency shelters), Economic Zone Workers (dormitories near industrial zones)." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
@@ -64,7 +64,6 @@ However, implementation remains uneven. IP housing programs are often underfunde
 **Pattern 3 — Program Characteristics:** "What distinguishes disaster-affected housing from standard relocation?" → Speed requirement; trauma sensitivity; hazard-aware site selection; livelihood restoration emphasis.
 
 <Tip>Special housing = tailored to population needs. IPs require FPIC + ancestral land priority. PWDs require universal accessible design. Disaster housing requires speed + livelihood restoration.</Tip>
-
 
 **Exam Tip:** Know the enabling laws: IPRA (RA 8371) for Indigenous Peoples, RA 9442 (PWD Act) for persons with disabilities, RA 9994 (Senior Citizens Act) for elderly. These mandate specific housing provisions within each population's legal framework.
 

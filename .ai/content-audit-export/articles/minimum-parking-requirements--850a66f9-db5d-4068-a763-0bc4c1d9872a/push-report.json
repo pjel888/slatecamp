@@ -1,26 +1,21 @@
 {
-  "attempted_at": "2026-05-04T00:06:16.027Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:16:46.660Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "Failed to update wiki_articles.content: Bad Request"
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "850a66f9-db5d-4068-a763-0bc4c1d9872a",
   "slug": "minimum-parking-requirements",
   "preparation_actions": [
     "auto_generated_diff"
   ],
-  "remote_hash_before": "sha256:e89ed4f6fa1a86bc3233b3fff2be184eaec6f9508f77d8b9e1c0797c6902718a",
-  "original_hash": "sha256:e89ed4f6fa1a86bc3233b3fff2be184eaec6f9508f77d8b9e1c0797c6902718a",
-  "candidate_hash": "sha256:7e8d83f838a135c8ae056120923fb544898d8b7566f48391cb291379c634e409",
+  "remote_hash_before": "sha256:7e8d83f838a135c8ae056120923fb544898d8b7566f48391cb291379c634e409",
+  "original_hash": "sha256:7e8d83f838a135c8ae056120923fb544898d8b7566f48391cb291379c634e409",
+  "candidate_hash": "sha256:3302f5711708795537d67928495c42c6cfc27347f155a8f751b1c12bf2659818",
   "stale_check_passed": true,
-  "remote_updated_at_before": "2026-05-03T16:38:16.3399+00:00"
+  "remote_updated_at_before": "2026-05-04T00:19:14.405161+00:00"
 }

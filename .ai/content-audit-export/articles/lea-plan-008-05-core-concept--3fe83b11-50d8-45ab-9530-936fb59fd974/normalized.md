@@ -17,7 +17,7 @@ Placemaking is the process of creating meaningful public spaces and experiences 
 2. **Community engagement** — low-risk interventions build trust and demonstrate how spaces can be improved
 
 Adaptive reuse—converting buildings from one use to another (warehouse to lofts, church to restaurant, office to residential)—is both a regeneration strategy and a sustainability practice, preserving existing structures rather than demolishing.
-<ArticleMedia id="media-lea-plan-008-05-core-concept" a type="image" caption="Urban Regeneration vs. Placemaking vs. Tactical Urbanism Comparison" description="Three-panel comparison: Urban Regeneration (large-scale, long-term, master-planned redevelopment), Placemaking (incremental community-led public space activation), Tactical Urbanism (low-cost temporary interventions like parklets, pop-up plazas). Gentrification risk assessment per approach." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-plan-008-05-core-concept" type="image" caption="Urban Regeneration vs. Placemaking vs. Tactical Urbanism Comparison" alt="Three-panel comparison: Urban Regeneration (large-scale, long-term, master-planned redevelopment), Placemaking (incremental community-led public space activation), Tactical Urbanism (low-cost temporary interventions like parklets, pop-up plazas). Gentrification risk assessment per approach." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 

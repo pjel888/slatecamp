@@ -23,6 +23,13 @@ timber trusses are labor-intensive but allow field repair and provide fire resis
 NSCP 2015 requires design for basic wind speed $V = 20\text{--}50\text{ m/s}$ depending on the typhoon zone.
 Collar ties, commonly positioned in the upper third of the truss height as a design recommendation, reduce lateral thrust on walls and prevent rafter spreading in high-wind regions.
 
+
+<ArticleMedia id="media-roof-assembly-sections" layout="single" type="image" status="placeholder"
+  alt="Cross-section of a complete roof assembly showing underlayment, flashings, valleys, ridges, eaves, gutters, and vents in sequence"
+  caption="Future diagram: roof assembly cross-section — component layering from deck to finish"
+  suggestedAsset="Annotated cross-section of roof assembly with component callouts"
+  placementIntent="Shows how all roofing components work together for weather-tightness" />
+
 ## Key Provisions
 
 | Property | Value | Standard | LEA Relevance |
@@ -48,6 +55,12 @@ Coastal and exposed regions require site-specific wind analysis per NSCP 2015 Se
 Steel trusses are gaining market share in Metro Manila for industrial construction due to factory precision and reduced on-site labor.
 Collar ties are recommended in high-wind zones ($V > 30\text{ m/s}$) to prevent lateral thrust failure and rafter spreading.
 
+
+<ArticleMedia id="media-roof-ventilation-diagram" layout="single" type="image" status="placeholder"
+  alt="Cross-section of roof assembly showing ventilation paths: soffit intake vents, ridge vents, and turbine vents with air flow arrows"
+  caption="Future diagram: roof ventilation — soffit intake, ridge vent, and turbine vent air flow"
+  suggestedAsset="Cross-section diagram of roof ventilation system"
+  placementIntent="Shows proper roof ventilation design for tropical climate" />
 ## How It's Tested
 
 **Pattern 1: Truss Type Identification** — "A roof truss has a single vertical member from the peak and two diagonal struts to the feet. What is the truss type?"

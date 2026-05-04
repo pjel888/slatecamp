@@ -1,26 +1,21 @@
 {
-  "attempted_at": "2026-05-04T00:06:56.253Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:17:42.683Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "candidate.md matches original.md; refusing no-op apply."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "146e1210-2b6a-42fb-85c2-3e1b1fd082c2",
   "slug": "masters-of-the-golden-age",
   "preparation_actions": [
     "auto_generated_diff"
   ],
-  "remote_hash_before": "sha256:057acbec5e7cb0d0131e8154f31c096a89812aa486d7b8aebb57446ec6079ca5",
-  "original_hash": "sha256:057acbec5e7cb0d0131e8154f31c096a89812aa486d7b8aebb57446ec6079ca5",
-  "candidate_hash": "sha256:0616ea414b8bc29d5d1435450d480d73ff07690ea55f847bb2697c647d21eff2",
+  "remote_hash_before": "sha256:60f3d344fb06c894426e36831ecc5d137148ab93370ed0c2412028b2d2e98587",
+  "original_hash": "sha256:60f3d344fb06c894426e36831ecc5d137148ab93370ed0c2412028b2d2e98587",
+  "candidate_hash": "sha256:60f3d344fb06c894426e36831ecc5d137148ab93370ed0c2412028b2d2e98587",
   "stale_check_passed": true,
-  "remote_updated_at_before": "2026-05-03T13:52:10.626905+00:00"
+  "remote_updated_at_before": "2026-05-04T02:01:37.435928+00:00"
 }

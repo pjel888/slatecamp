@@ -1,26 +1,21 @@
 {
-  "attempted_at": "2026-05-04T00:07:01.926Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:17:50.046Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "candidate.md matches original.md; refusing no-op apply."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "958cf8ad-c743-41b3-a7fd-47da9421a09b",
   "slug": "lea-prac-eth-009-introduction",
   "preparation_actions": [
     "auto_generated_diff"
   ],
-  "remote_hash_before": "sha256:6ccea05fa79f7661aa50ca26b7c175d63c1911d35797548d07b62d85aab8463b",
-  "original_hash": "sha256:6ccea05fa79f7661aa50ca26b7c175d63c1911d35797548d07b62d85aab8463b",
-  "candidate_hash": "sha256:1020ddb3e2d2b4a1095063bf676b1243d344e0a8b8489ee411709d3465431d2a",
+  "remote_hash_before": "sha256:5449208ebba5ed250097cc369f08e60eacd301142e3ba3296805ab7309371b75",
+  "original_hash": "sha256:5449208ebba5ed250097cc369f08e60eacd301142e3ba3296805ab7309371b75",
+  "candidate_hash": "sha256:5449208ebba5ed250097cc369f08e60eacd301142e3ba3296805ab7309371b75",
   "stale_check_passed": true,
-  "remote_updated_at_before": "2026-05-03T16:35:09.94367+00:00"
+  "remote_updated_at_before": "2026-05-04T02:01:51.110049+00:00"
 }

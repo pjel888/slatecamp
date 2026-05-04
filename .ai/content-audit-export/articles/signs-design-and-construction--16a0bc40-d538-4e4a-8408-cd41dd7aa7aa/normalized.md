@@ -280,7 +280,7 @@ ALE Trap: Projecting sign minimum clearance: 3.00 m on non-arcaded streets, 5.00
 
 
 
-<ArticleMedia type="image" caption="Sign Types and Clearances — Roof, Projecting, Wall, and Ground Sign Dimensional Standards" description="Building elevation and plan showing four sign types: roof sign (compliance with penthouse rules, lightning protection), projecting sign (max projection from wall face, min clearance above sidewalk), wall sign (flush-mounted, area limits), and ground sign (setback from RROW). Clearance annotations: 3.00m min for non-arcaded streets, 5.00m min for arcaded streets per PD 1096 Rule XX." />
+<ArticleMedia type="image" caption="Sign Types and Clearances — Roof, Projecting, Wall, and Ground Sign Dimensional Standards" alt="Building elevation and plan showing four sign types: roof sign (compliance with penthouse rules, lightning protection), projecting sign (max projection from wall face, min clearance above sidewalk), wall sign (flush-mounted, area limits), and ground sign (setback from RROW). Clearance annotations: 3.00m min for non-arcaded streets, 5.00m min for arcaded streets per PD 1096 Rule XX." />
 ## Cross‑References
 
 **Comprehensive Signage Package**, **Bp 344 Tactile And Visual Alarms**, **Electrical And Mechanical Regulations**, **Site Exterior Circulation**

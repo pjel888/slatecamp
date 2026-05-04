@@ -90,6 +90,8 @@ Extracted summary:
 
 *For a focused study of the Sydney Opera House's design, structure, and LEA testing patterns, see the companion article on Sydney Opera House and Contemporary Australian Architecture (LEA-HIST-015-02).*
 
+<ArticleMedia id="media-hist-007-06-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Diagram of the four-part Pacific Islands architecture formula: open-sided structures, elevation on pilings, steep roofs, and deep eaves, with examples from Polynesian, Melanesian, and Micronesian vernacular building traditions." caption="Pacific Islands — Climate-Responsive Architecture" suggestedAsset="Style comparison illustration" placementIntent="Style comparison for architectural period" />
+
 ## Related Articles
 
 See also within Asian & Pacific Architecture: **lea-hist-007-01-core-concept**, **lea-hist-007-02-core-concept**, **lea-hist-007-03-core-concept**, **lea-hist-007-04-core-concept**.

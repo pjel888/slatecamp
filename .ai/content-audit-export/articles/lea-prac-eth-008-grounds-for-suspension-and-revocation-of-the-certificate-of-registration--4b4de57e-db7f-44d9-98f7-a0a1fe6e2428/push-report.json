@@ -1,26 +1,21 @@
 {
-  "attempted_at": "2026-05-04T00:06:03.580Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:16:33.788Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "candidate.md matches original.md; refusing no-op apply."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "4b4de57e-db7f-44d9-98f7-a0a1fe6e2428",
   "slug": "lea-prac-eth-008-grounds-for-suspension-and-revocation-of-the-certificate-of-registration",
   "preparation_actions": [
     "auto_generated_diff"
   ],
-  "remote_hash_before": "sha256:67f7c60924b38af8475a448182c1bbf6d1b9f4db28a050395fbf85e9a4025c86",
-  "original_hash": "sha256:67f7c60924b38af8475a448182c1bbf6d1b9f4db28a050395fbf85e9a4025c86",
-  "candidate_hash": "sha256:c91af9c7c9afb3f944aa1b48e577e8187a431956bb4e4f05e3996c9cfe34d945",
+  "remote_hash_before": "sha256:bf89eb56c20c7bc030873e8ff0b297fb05ad4341e5d78652b5a58c4df0c40edb",
+  "original_hash": "sha256:bf89eb56c20c7bc030873e8ff0b297fb05ad4341e5d78652b5a58c4df0c40edb",
+  "candidate_hash": "sha256:bf89eb56c20c7bc030873e8ff0b297fb05ad4341e5d78652b5a58c4df0c40edb",
   "stale_check_passed": true,
-  "remote_updated_at_before": "2026-05-03T13:50:10.463572+00:00"
+  "remote_updated_at_before": "2026-05-04T01:59:32.531513+00:00"
 }

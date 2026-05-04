@@ -23,6 +23,7 @@ For site planning:
 - **5–15% slope:** Moderate; standard building techniques work
 - **15–25% slope:** Steep; retaining walls, terracing common
 - **>25% slope:** Very steep; specialized design, expensive to develop
+<ArticleMedia id="media-lea-plan-004-01-what-you-need-to-know-fo" a type="image" caption="Site Physical Analysis — Contours, Sun, Wind, and Views Diagram" description="Composite site analysis diagram showing: (1) contour lines with slope percentages (0-5% flat, 5-15% moderate, 15-25% steep, >25% very steep); (2) sun path and shadow patterns at different times of day with east-west orientation marked; (3) prevailing wind arrows (amihan northeast Oct-Apr, habagat southwest May-Sep); (4) view corridors and visual focal points. Annotated with key planning considerations for each element." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ### Sun Orientation and Shadows
 
@@ -92,6 +93,7 @@ Ratios explained:
 - **3:1 or higher** — Very oppressive; minimal sky visible
 
 The H:W ratio is one of the most tested distinctions in urban design. Always remember: **1:2 is ideal; 2:1 is oppressive.**
+<ArticleMedia id="media-lea-plan-004-01-what-you-need-to-know-fo" a type="image" caption="Height-to-Width Ratio Comparison — Street Section Diagrams (1:4, 1:2, 1:1, 2:1, 3:1)" description="Cross-section comparison showing five H:W building-to-street ratios: 1:4 (very open, parking lot feel), 1:2 (comfortable, plaza-like — ideal), 1:1 (defined but still comfortable), 2:1 (oppressive, canyon-like — tested as the negative example), 3:1+ (very oppressive, minimal sky visible). Color coded green (comfortable) to red (oppressive)." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ### Soils and Foundation Constraints
 

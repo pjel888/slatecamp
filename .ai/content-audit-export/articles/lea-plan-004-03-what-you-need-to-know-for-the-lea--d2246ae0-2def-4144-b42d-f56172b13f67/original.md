@@ -24,6 +24,7 @@ A well-planned site provides a range of privacy levels from public to private:
 - Provide intermediate spaces (courtyards, community gardens, sitting areas) that are semi-private
 - Avoid abrupt transitions (directly from busy street to residential windows)
 - In high-density sites, semi-private courtyards are crucial for mental health and community bonding
+<ArticleMedia id="media-lea-plan-004-03-what-you-need-to-know-fo" a type="image" caption="Privacy Gradient — Public to Private Space Transition Diagram" description="Section diagram showing the four levels of privacy in well-planned sites: (1) Public space — street/plaza, open to all; (2) Semi-public space — lobby/courtyard, associated with specific use; (3) Semi-private space — residential common area/playground, restricted to residents; (4) Private space — home interior/family yard, strong ownership. Arrows show gradual transition from fully public to fully private with buffer zones." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ### Territoriality and Sense of Ownership
 
@@ -68,6 +69,7 @@ Density is the number of people per unit area. _Crowding_ is the subjective feel
 - Provide community spaces even in very high-density sites
 - Use varied architecture and uses to break visual monotony
 - Ensure residents can escape to a park or plaza within short walk
+<ArticleMedia id="media-lea-plan-004-03-what-you-need-to-know-fo" a type="image" caption="Density Thresholds — Persons per Hectare Comparison Chart" description="Visual comparison of four density levels with psychological impact: Low (50 persons/ha — suburban, isolating), Medium-Low (100-150 p/ha — walkable, comfortable), Medium-High (200-300 p/ha — urban, needs privacy gradients), High (>400 p/ha — dense, requires community spaces and varied architecture). Shows relationship between density and crowding stress with mitigation strategies (private space, semi-private outdoor space, visual variety)." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ### Social Distance and Interaction Patterns
 

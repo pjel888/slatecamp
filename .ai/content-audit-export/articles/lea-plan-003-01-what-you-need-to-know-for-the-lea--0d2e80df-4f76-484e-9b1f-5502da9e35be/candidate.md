@@ -21,7 +21,7 @@ The developer is obligated to deliver the Certificate of Title (TCT) to the buye
 
 **What PD 957 Does NOT Cover**
 PD 957 is silent on socialized housing (BP 220 governs), raw land subdivision without residential use, eviction procedures, or government-built housing. It is a buyer-protection and developer-regulation law, not a social housing mandate.
-<ArticleMedia id="media-lea-plan-003-01-what-you-need-to-know-fo" a type="image" caption="Philippine Housing Law Framework — Five Core Laws Relationship Diagram" description="Venn diagram showing relationship of five core housing laws: PD 957 (market-rate subdivisions/condos), BP 220 (socialized/economic minimums), RA 7279 UDHA (eviction/bHousing), RA 6552 Maceda Law (buyer installments), RA 10884 (bHousing %). Which law governs which housing type." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-plan-003-01-what-you-need-to-know-fo" type="image" caption="Philippine Housing Law Framework — Five Core Laws Relationship Diagram" alt="Venn diagram showing relationship of five core housing laws: PD 957 (market-rate subdivisions/condos), BP 220 (socialized/economic minimums), RA 7279 UDHA (eviction/bHousing), RA 6552 Maceda Law (buyer installments), RA 10884 (bHousing %). Which law governs which housing type." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ---
 
@@ -153,13 +153,13 @@ PD 1216 reinforces PD 957's 30% open space rule. It mandates that 30% of the gro
 
 ### Summary Table: Which Law Governs What
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="WikiExamTable" status="preserved"]
+<WikiExamTable headers={["Provision","Law","Scope"]} rows={[{"Provision":"Developer registration and licensing for market-rate projects","Law":"PD 957","Scope":"Market-rate subdivisions and condominiums"},{"Provision":"Minimum lot and floor area for socialized and economic housing","Law":"BP 220","Scope":"All socialized and economic housing"},{"Provision":"30% open space in residential subdivisions","Law":"PD 957 + PD 1216","Scope":"Market-rate and all residential projects"},{"Provision":"Eviction notice period (30 days) and three-requirement rule","Law":"RA 7279","Scope":"Informal settlers and evictable occupants"},{"Provision":"Danger areas (3m esteros, 50m railroad)","Law":"RA 7279","Scope":"Hazardous zones where relocation may be waived"},{"Provision":"Grace period and refund for installment buyers","Law":"RA 6552 (Maceda Law)","Scope":"Seller-financed residential real property"},{"Provision":"Balanced housing percentage (15–20% of cost)","Law":"RA 10884","Scope":"Open-market residential developers"}]} />
 
 ---
 
 ### Common Distractors and Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeList" status="preserved"]
+<WikiMistakeList mistakes={[{"mistake":"PD 957 sets the minimum floor area for socialized housing at 22 sq.m.","fact":"BP 220 sets floor area standards, not PD 957. PD 957 regulates market-rate projects, not socialized housing."},{"mistake":"Economic housing under BP 220 has a minimum lot of 28 sq.m.","fact":"28 sq.m. is the minimum lot for socialized housing in infill sites. Economic housing minimum is 100 sq.m."},{"mistake":"Under RA 7279, occupants in danger areas may be evicted without any notice.","fact":"RA 7279 requires 30-day notice for all evictions, even in danger areas. What changes is that permanent resettlement is not required before clearing a danger zone."},{"mistake":"The Maceda Law entitles buyers who paid less than 2 years to a 50% refund.","fact":"The 50% refund applies only to buyers who paid 2 years or more. Buyers who paid less than 2 years receive only a grace period, not a refund."},{"mistake":"RA 7279 requires a 50-day notice before eviction.","fact":"RA 7279 requires 30-day written notice, not 50 days."},{"mistake":"PD 957 governs eviction of informal settlers.","fact":"PD 957 governs buyer protection in market-rate subdivisions and condominiums. Eviction is governed by RA 7279 (UDHA)."}]} />
 
 
 ---

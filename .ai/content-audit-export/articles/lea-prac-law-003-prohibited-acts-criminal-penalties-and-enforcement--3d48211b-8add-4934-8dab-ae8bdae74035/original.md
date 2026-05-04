@@ -84,7 +84,6 @@ Practicing without a valid license (whether never licensed, expired license, or 
 
 Some violations may result in forfeiture of instruments used in the commission of the crime (e.g., seal and stamp used to falsify documents). The statute authorizes the court to order restitution to injured parties, reflecting recognition that some violations cause direct financial harm to clients.
 
-
 <Warn>Don't memorize every code section number — memorize the *rule*. The LEA tests application of code standards, not section number recall, except for major, frequently tested sections (e.g., Rule VII for occupancy, Rule VIII for light/ventilation).</Warn>
 ### Disciplinary Action: Suspension and Revocation
 
@@ -131,10 +130,8 @@ Investigations are conducted by the Commission pursuant to procedures in RA 8981
 
 While RA 9266 establishes criminal and disciplinary remedies, the fundamental liability framework for architectural misconduct rests on Article 1723 of the Civil Code. This article provides that architects are liable for injury to person or property resulting from their work or professional acts, except where liability arises from the architect's interference with another licensed professional's reserved functions.
 
-
 <ExamTip>**LEA Pattern:** Code questions often provide a scenario with specific dimensions or quantities. Identify whether the scenario complies with the code. Pay attention to units (meters vs. millimeters) and aggregate vs. individual limits.</ExamTip>
 Thus, if an Architect-of-Record designs a structure with inadequate foundation capacity and the building settles, causing damage, the AoR is civilly liable under Article 1723. If a Consulting Architect advises a client on code compliance but intentionally provides false information, the Consulting Architect assumes civil liability for the client's reliance. Civil liability is distinct from and may coexist with criminal or disciplinary consequences.
-
 
 <ExamTip>**LEA Pattern:** Code questions often provide a scenario with specific dimensions or quantities. Identify whether the scenario complies with the code. Pay attention to units (meters vs. millimeters) and aggregate vs. individual limits.</ExamTip>
 > **Tip: Three Tracks of Liability**
@@ -151,11 +148,19 @@ Thus, if an Architect-of-Record designs a structure with inadequate foundation c
 | Double jeopardy applies? | No (separate proceedings) | No (separate proceedings) | No (separate proceedings) |
 | Source | Section 29, IRR | Section 23, RA 9266 | Article 1723, Civil Code |
 
+---
+
+<ArticleMedia id="media-law003-liability-tracks" layout="single" variant="contained" type="image" status="placeholder" aspectRatio="16:9" title="Three Tracks of Architect Liability" description="Flowchart comparing Criminal (Section 29), Disciplinary (Section 23), and Civil (Article 1723) liability tracks — their triggers, standards of proof, outcomes, and whether they can run concurrently." placementIntent="enforcement-workflow" suggestedSearchQuery="architect liability three tracks criminal disciplinary civil Philippines flowchart" replacementNotes="Create a three-column parallel flowchart. Left: Criminal track (Section 29) → beyond reasonable doubt → fine/imprisonment. Middle: Disciplinary (Section 23) → clear and convincing → suspension/revocation. Right: Civil (Article 1723) → preponderance of evidence → damages. Show arrows indicating they proceed concurrently." suggestedAsset="Diagram or reference image" />
+
 ### Enforcement Authority: The PRBoA and Commission
 
 The Professional Regulation Commission, through the PRBoA, possesses the authority to investigate complaints, initiate proceedings, and impose discipline. The Board may receive complaints from clients, other architects, regulatory agencies, or members of the public. Upon receipt, the Board's staff typically conducts preliminary investigation to determine whether probable cause exists for formal proceeding.
 
 If probable cause is found, the Board may issue a notice of violation and initiate administrative proceedings. The architect is afforded opportunity to respond, present evidence, cross-examine witnesses, and appeal the Board's decision. The Commission oversees the process to ensure procedural fairness and consistency with administrative law principles.
+
+---
+
+<ArticleMedia id="media-law003-enforcement-workflow" layout="single" variant="contained" type="image" status="placeholder" aspectRatio="16:9" title="Enforcement and Disciplinary Workflow" description="Step-by-step flowchart of the enforcement process: Complaint Filing → Preliminary Investigation → Probable Cause Determination → Formal Hearing → PRBoA Decision → Appeal to PRC → Appeal to Court of Appeals." placementIntent="enforcement-workflow" suggestedSearchQuery="PRBoA disciplinary process flowchart complaint investigation hearing appeal" replacementNotes="Create a vertical swimlane flowchart. Track 1: Complaint (client/public/other architect). Track 2: PRBoA investigation. Track 3: Formal hearing. Track 4: Decision (dismissal/censure/suspension/revocation). Track 5: Appeal path (15-day window → PRC → Court of Appeals). Label timeframes at each step." suggestedAsset="Diagram or reference image" />
 
 ### Public Interest Presumption and Strict Construction
 

@@ -1,49 +1,38 @@
 {
   "article_id": "02b9f8da-3c2e-460a-bd2b-0c5d68249b1b",
   "slug": "legal-liability-and-enforcement-workflow",
-  "generated_at": "2026-05-04T00:06:39.366Z",
-  "old_hash": "sha256:99ea8bd3ab581e8059776f180b853beee90a91a25752f480652713f4af8cd0d2",
-  "new_hash": "sha256:5c5a7490cd9141f75a03d80470d22141efcb2ed539a955d55cf8d513ba5b8e00",
-  "original_hash": "sha256:99ea8bd3ab581e8059776f180b853beee90a91a25752f480652713f4af8cd0d2",
+  "generated_at": "2026-05-04T02:17:21.958Z",
+  "old_hash": "sha256:3e5cecbb3b6b946c0f4c53b9355566d6ddea089ddb58f5e8b711c0f42d65a6c5",
+  "new_hash": "sha256:9b0d81c672b12e7c51afa026ea84fdecf82a2dbc1ed8e0cc3bd0fa90ae8cd2f8",
+  "original_hash": "sha256:3e5cecbb3b6b946c0f4c53b9355566d6ddea089ddb58f5e8b711c0f42d65a6c5",
   "normalized_hash": "sha256:5c5a7490cd9141f75a03d80470d22141efcb2ed539a955d55cf8d513ba5b8e00",
-  "candidate_hash": "sha256:5c5a7490cd9141f75a03d80470d22141efcb2ed539a955d55cf8d513ba5b8e00",
+  "candidate_hash": "sha256:9b0d81c672b12e7c51afa026ea84fdecf82a2dbc1ed8e0cc3bd0fa90ae8cd2f8",
   "changed": true,
-  "changed_line_count": 402,
-  "inserted_line_count": 4,
+  "changed_line_count": 440,
+  "inserted_line_count": 1,
   "deleted_line_count": 0,
   "ui_blocks_original_count": 6,
-  "ui_blocks_candidate_count": 0,
-  "ui_blocks_changed_count": 6,
+  "ui_blocks_candidate_count": 6,
+  "ui_blocks_changed_count": 0,
   "ui_blocks_count": 6,
-  "unresolved_placeholders_count": 1,
-  "preserved_blocks_count": 0,
+  "unresolved_placeholders_count": 0,
+  "preserved_blocks_count": 6,
   "changed_text_summary": {
-    "changed": 402,
-    "inserted": 4,
+    "changed": 440,
+    "inserted": 1,
     "deleted": 0,
-    "original_line_count": 427,
-    "candidate_line_count": 431
+    "original_line_count": 458,
+    "candidate_line_count": 459
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0001",
-      "ui_0002",
-      "ui_0003",
-      "ui_0004",
-      "ui_0005",
-      "ui_0006"
-    ],
-    "changed_count": 6
+    "missing_block_ids": [],
+    "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate contains unresolved UI block placeholders.",
-    "Candidate is missing 6 preserved UI block(s).",
-    "original.md hash does not match article metadata export hash."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 6 preserved UI block(s).; original.md hash does not match article metadata export hash."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

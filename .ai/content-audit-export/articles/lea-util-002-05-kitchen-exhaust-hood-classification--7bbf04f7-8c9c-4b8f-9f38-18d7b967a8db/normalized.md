@@ -7,7 +7,7 @@ Classify kitchen exhaust hoods (Type I vs Type II) by NFPA 96 requirements based
 
 ### Type I Hoods (Grease-Laden Vapor)
 
-<ArticleMedia id="media-lea-util-002-05-kitchen-exhaust-hood-cla" a type="image" caption="Type I vs Type II Kitchen Exhaust Hood — Section Comparison" description="Side-by-side cross-section of Type I (grease-laden) and Type II (steam/heat) hoods: Type I shows grease filters, wet chemical fire suppression nozzle, fully welded steel duct (sloped 1:12), cleanout door; Type II shows standard galvanized duct, no filters or suppression required. Exhaust rate range (50-100 CFM/ft Type I, 40-75 CFM/ft Type II) and make-up air (80-90%) annotated." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-util-002-05-kitchen-exhaust-hood-cla" type="image" caption="Type I vs Type II Kitchen Exhaust Hood — Section Comparison" alt="Side-by-side cross-section of Type I (grease-laden) and Type II (steam/heat) hoods: Type I shows grease filters, wet chemical fire suppression nozzle, fully welded steel duct (sloped 1:12), cleanout door; Type II shows standard galvanized duct, no filters or suppression required. Exhaust rate range (50-100 CFM/ft Type I, 40-75 CFM/ft Type II) and make-up air (80-90%) annotated." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 
 Type I hoods capture grease-laden vapors from cooking equipment including griddles, woks, charbroilers, and deep fryers. These hoods require:

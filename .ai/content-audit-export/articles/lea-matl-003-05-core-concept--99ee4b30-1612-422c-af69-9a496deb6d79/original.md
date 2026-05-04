@@ -6,6 +6,13 @@ Classify glass types (annealed, tempered, laminated, insulated, heat-strengthene
 
 Welding joins two or more metal pieces by melting them together (fusion welding) without the addition of extraneous material, or with filler metal that fuses with the base material. The weld pool solidifies to form a permanent bond exceeding the strength of the base metal if properly executed.
 
+
+<ArticleMedia id="media-glass-type-cross-sections" layout="single" type="image" status="placeholder"
+  alt="Cross-section illustrations of annealed, tempered, laminated, insulated (IGU), heat-strengthened, and wired glass showing layer construction"
+  caption="Future diagram: glass types cross-section — layer construction and manufacturing characteristics"
+  suggestedAsset="Cross-section diagram set showing each glass type's internal structure"
+  placementIntent="Visualizes glass manufacturing differences and lamination/ tempering structure" />
+
 ### Welding Processes
 
 _Shielded Metal Arc Welding (SMAW)_ is the oldest and most versatile process. An operator holds a consumable electrode (coated with flux) that melts, depositing filler metal into the weld pool. The flux coating generates a shielding gas and slag that protects the molten weld from atmospheric contamination. Advantages: portable, minimal equipment, tolerates windy outdoor conditions (key for Philippine field work), versatile across all positions. Disadvantages: slower deposition rate, slag removal required, operator skill-dependent. TESDA NC II certification emphasizes SMAW as the foundational welding qualification.
@@ -110,6 +117,12 @@ When a proposed joint falls outside prequalified parameters, the fabricator must
 | Magnetic Particle (MT) | Surface + near-surface | Yes | Fast | Low | Magnetic field equipment |
 | Penetrant (PT) | Surface cracks | Yes | Medium | Low | Penetrant dyes, UV light |
 
+
+<ArticleMedia id="media-glass-manufacturing-process" layout="single" type="image" status="placeholder"
+  alt="Process flow diagram showing float glass manufacturing from raw materials through melting, forming, annealing, cutting, and processing into tempered, laminated, and insulated glass"
+  caption="Future diagram: glass manufacturing process — float glass production and secondary processing"
+  suggestedAsset="Process flow diagram of glass manufacturing and fabrication"
+  placementIntent="Visualizes how different glass types are manufactured from base float glass" />
 ## Philippine Construction Context
 
 Philippine structural steel fabricators—including those in Vleanzuela's industrial zones and throughout Metro Manila—predominantly employ SMAW for field connections and GMAW for shop welding. TESDA NC II Shielded Metal Arc Welding certification is the foundational qualification for Filipino welders seeking employment locally and abroad. The dual-skill pathway (SMAW → GMAW → GTAW) enables fabricators to handle diverse structural applications.

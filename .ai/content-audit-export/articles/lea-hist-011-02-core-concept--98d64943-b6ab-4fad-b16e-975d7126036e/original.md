@@ -7,6 +7,10 @@ Distinguish colonial-era African architecture (European imposition, imported sty
 
 Colonial architecture in Africa (1880s–1960s) did not adapt to African climate or culture—it exported European templates to assert political dominance. Colonial administrations built European villas with wide verandahs (conceding to heat but maintaining "civilized" aesthetics), imposed grid-based street plans that disrupted traditional settlements, and created racial segregation through zoning. After independence, African architects faced a choice: embrace modernism (which promised a fresh, non-colonial start), synthesize African and modern traditions, or revive pre-colonial forms. Contemporary African architecture (1960s onward) shows all three strategies.
 
+
+<ArticleMedia id="media-hist-011-02-core-concept" layout="single" type="image" status="placeholder" alt="Comparison view showing the contrast between colonial-era imported styles (neoclassical government buildings, grid plan settler quarters) and postcolonial architecture (modernist national monuments, critical regionalist cultural centers in African cities)." caption="African Colonial vs. Postcolonial — Urban Fabric" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
+
 <Tip>
 **Colonial = European imposition; Postcolonial = African choice.** Three strategic directions: pure modernism (rejecting colonialism through universal progress), synthesis (merging modernism with African principles), or revival (returning to pre-colonial forms). Know that each strategy represents a deliberate postcolonial stance.
 </Tip>
@@ -42,6 +46,10 @@ Do not conflate Kéré's contemporary synthesis with "traditional architecture r
 **Sustainability and Material Culture**
 
 Contemporary African architecture increasingly prioritizes sustainable practices reflecting pre-industrial wisdom: passive cooling through courtyards and night ventilation, rainwater harvesting from traditional roof forms, and locally sourced materials reducing embodied carbon. This is not nostalgia—it is pragmatic adaptation to resource constraints and tropical/subtropical climate. Many contemporary African architects reject the "African vernacular revival" stereotype while incorporating environmental lessons from traditional building.
+
+
+<ArticleMedia id="media-hist-011-02-core-concept" layout="single" type="image" status="placeholder" alt="View of the National Assembly complex (Abuja, Nigeria), illustrating how postcolonial African architects negotiate identity through built form, combining modernist clarity with regional cultural references." caption="National Assembly of Nigeria — Postcolonial Modernism" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+
 
 ## Key Facts and Testable Items
 
@@ -88,6 +96,8 @@ Exams ask what architectural symbols communicate about national identity. Exampl
 **Embodied carbon**: Energy and emissions invested in material extraction, processing, and transport; locally sourced materials reduce embodied carbon.
 
 **Pan-Africanism**: Political and cultural movement emphasizing unity and shared identity across African nations and diaspora.
+
+<ArticleMedia id="media-hist-011-02-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Timeline of African architecture from colonial period (1880s–1960s, European imported styles) through postcolonial approaches (pure modernism, critical regionalism, cultural revival) to contemporary African identity in built form.\" caption=\"African Architecture — Colonial to Postcolonial Timeline\" suggestedAsset=\"Timeline diagram\" placementIntent=\"Timeline diagram for architectural period\" />
 
 ## Related Articles
 

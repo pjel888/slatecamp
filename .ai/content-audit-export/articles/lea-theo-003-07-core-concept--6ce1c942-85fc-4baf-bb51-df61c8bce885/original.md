@@ -7,6 +7,12 @@ Explain how spatial perception, proxemic zones, and design preferences vary acro
 
 ### Edward T. Hall and Proxemics: Spatial Culture
 
+|<ArticleMedia id="media-lea-theo-003-07-core-concept" a type="image" caption="Cross-Cultural Spatial Preferences — Contact vs Non-Contact Cultures" description="Comparative diagram contrasting spatial norms across cultures: Contact cultures (Latin American, Middle Eastern, Mediterranean) prefer closer interpersonal distances, more direct eye contact, and more overlapping social zones. Non-contact cultures (Northern European, East Asian, North American) prefer larger interpersonal distances, less direct gaze, and clearly bounded personal space. Architectural implications shown: counter depths, corridor widths, room sizes, seating arrangements, and privacy gradations differ by cultural context." suggestedAsset="Diagram or reference image" status="placeholder" />
+
+<ArticleMedia id="media-lea-theo-003-07-core-concept-b" type="image" caption="High-Context vs Low-Context Cultures — Spatial Implications" description="Side-by-side comparison of spatial design for high-context (Latin American/Middle Eastern/Asian) vs low-context (Northern European/North American) cultures: (1) Floor plan — fluid/open vs compartmentalized/enclosed; (2) Circulation — overlapping zones vs clearly bounded corridors; (3) Privacy — social protocol vs physical barriers (doors, locks); (4) Public space — active street life, dense occupation vs enclosed shopping, private zones; (5) Residential — open shared spaces vs individual private rooms. Each pair shows how the same functional requirement yields different spatial solutions." suggestedAsset="Diagram or reference image" status="placeholder" />
+
+### Edward T. Hall and Proxemics: Spatial Culture
+
 **Edward T. Hall**, an American anthropologist, revolutionized understanding of space in the 1960s by demonstrating that humans perceive and organize space in culturally conditioned ways, not universal biological patterns. Hall coined the term **proxemics**—from "proximity"—to describe his theory that personal space, distance preferences, and spatial organization are shaped by cultural conditioning and learned behaviors. Culture, Hall demonstrated, influences unconscious spatial behavior as thoroughly as it influences language.
 
 <Tip>**The key insight**: spatial norms are **learned, not innate**. What feels comfortable in one culture feels invasive or cold in another. Architecture must accommodate cultural variation in space use.</Tip>

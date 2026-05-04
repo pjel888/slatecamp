@@ -5,7 +5,6 @@ Distinguish contemporary urban models — Garden City (30,000-60,000 pop), New U
 
 Contemporary urban models—Garden City, New Urbanism, Transit-Oriented Development, and 15-Minute City—represent a reaction against sprawl and car-dependent development. Each model specifies exact distances, target populations, or design principles. The LEA tests precise values: Garden City = 30,000–60,000, not 100,000; New Urbanism walk radius = 400m, not 800m; CIAM = separation of functions, not mixing.
 
-
 ## Core Concept
 
 Contemporary urban models are 20th and 21st century responses to the social and environmental failures of 20th-century modernism. They redefine what livable, sustainable cities should look like.
@@ -23,6 +22,7 @@ The **Garden City** (**Ebenezer Howard, 1898**) was conceived as a self-sufficie
 **Smart Growth** (1990s–present) is a set of principles emphasizing compact, infill development; walkability; transit; mixed uses; and environmental protection. Smart Growth rejects sprawl and car-dependent patterns. It is applied planning strategy rather than a single theorist's framework.
 
 **Growth Pole Theory** (**François Perroux, 1955**) proposes that concentrated investment in a strategic economic sector or location generates "spread effects" to surrounding regions—agglomeration benefits that stimulate broader development. The Clark development corridor (New Clark City in Pampanga) and infrastructure investment corridors reflect growth pole thinking.
+<ArticleMedia id="media-lea-plan-002-02-core-concept" a type="image" caption="Contemporary Urban Models — Garden City, TOD, New Urbanism, 15-Minute City" description="Comparison diagram of modern urban models: Garden City (30,000-60,000 pop, greenbelt), TOD (400m transit radius, density gradient), New Urbanism (5-minute walk, mixed-use), 15-Minute City (all amenities within 15 min walk/cycle), and CIAM (functional zoning tower-in-park)." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
@@ -43,7 +43,6 @@ The Philippines adopted New Urbanism principles in Bonifacio Global City (mixed-
 4. **Application:** "Which contemporary model would best guide development around a new MRT station?" → TOD.
 
 <Tip>**Memory anchors:** HOWARD = **30,000–60,000** (Garden City population). New Urbanism = **400m walk** (NOT 800m; that is TOD's upper bound). CIAM = **SEPARATION** (the problem that contemporary models react against). MORENO = **15 MINUTES** (all daily needs within active-transport distance).</Tip>
-
 
 **Exam Tip:** Know precise values: Garden City = 30,000-60,000 population (NOT 100,000). New Urbanism walk radius = 400m (NOT 800m). TOD = 400-800m transit radius. CIAM = separation of functions. 15-Minute City = all services within 15 min walk.
 

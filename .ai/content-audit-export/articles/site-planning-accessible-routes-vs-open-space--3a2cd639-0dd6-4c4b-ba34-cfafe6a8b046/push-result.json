@@ -1,19 +1,12 @@
 {
-  "attempted_at": "2026-05-04T00:06:02.264Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-04T02:16:32.565Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "original.md hash does not match article metadata export hash.",
-    "Remote Supabase content differs from export baseline; refusing stale push.",
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "Failed to update wiki_articles.content: Bad Request"
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046",
   "slug": "site-planning-accessible-routes-vs-open-space",
@@ -21,8 +14,8 @@
     "auto_generated_diff"
   ],
   "remote_hash_before": "sha256:c70970aaa020b46fde868efebd845bd309d9e5b66231f8912ccb8e089f7f4f87",
-  "original_hash": "sha256:1d0457b28da1505042b11a8d93f220d75de52a8a9ede8d157f0c26576112964f",
-  "candidate_hash": "sha256:25d94a61cb11ea4316d8334f48e7554b9c4e58c7dc51da6936f66e0ade83beae",
-  "stale_check_passed": false,
+  "original_hash": "sha256:c70970aaa020b46fde868efebd845bd309d9e5b66231f8912ccb8e089f7f4f87",
+  "candidate_hash": "sha256:5d85b469cf3e2535bf8ed5c12e734cd7e4b815c07543ee8ec71bd1d4e3bec0df",
+  "stale_check_passed": true,
   "remote_updated_at_before": "2026-05-03T14:19:46.626422+00:00"
 }

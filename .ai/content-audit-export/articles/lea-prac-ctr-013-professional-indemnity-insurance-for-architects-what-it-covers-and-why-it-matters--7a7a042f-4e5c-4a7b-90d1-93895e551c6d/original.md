@@ -8,7 +8,6 @@ After reading this article, you should be able to:
 - Distinguish between per-occurrence limits, aggregate limits, deductibles, and claims-made vs. occurrence-based policies.
 - Apply professional indemnity insurance concepts to LEA scenarios involving liability claims against architects.
 
-
 Professional indemnity insurance protects architects from claims arising from negligence or errors in their professional services, covering legal costs and damages awarded to injured parties.
 
 <KeyValues items={[
@@ -64,3 +63,16 @@ The architect's liability under professional indemnity insurance exists independ
 <ExamTip>
 **Claims-Made vs. Occurrence-Based:** The LEA may test policy type distinctions. A **claims-made** policy covers claims filed during the policy period, regardless of when the error occurred. An **occurrence-based** policy covers errors that occurred during the policy period, regardless of when the claim is filed. Most architect professional indemnity policies in the Philippines are claims-made, meaning coverage must be maintained even after project completion.
 </ExamTip>
+
+---
+## Cross-References
+
+- **African Vernacular Earth Architecture**: Related article on African Vernacular Earth Architecture
+- **Inca Architecture Ashlar Masonry**: Related article on Inca Architecture Ashlar Masonry
+- **North American Indigenous Architecture**: Related article on North American Indigenous Architecture
+- **SPP Doc 203: Specialized Architectural Services**: Related article on SPP Doc 203: Specialized Architectural Services
+- **SPP Doc 206: Comprehensive Architectural Services**: Related article on SPP Doc 206: Comprehensive Architectural Services
+- **SPP Doc 208: Architectural Design Competition (ADC)**: Related article on SPP Doc 208: Architectural Design Competition (ADC)
+- **SPP Doc 209: Professional Architectural Consulting Services (PACS)**: Related article on SPP Doc 209: Professional Architectural Consulting Services (PACS)
+
+<!-- no-media-needed: professional practice article, text/tables/UI blocks are optimal format -->

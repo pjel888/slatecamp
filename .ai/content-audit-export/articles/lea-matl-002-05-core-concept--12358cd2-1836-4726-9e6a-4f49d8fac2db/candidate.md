@@ -84,7 +84,7 @@ Curing compounds (ASTM C309) are liquid or wax-based materials sprayed onto the 
 
 Curing rate increases dramatically with temperature. The rule of thumb is that concrete strength development approximately doubles for every 20°C (36°F) rise in temperature (within practical limits).
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="WikiExamTable" status="preserved"]
+<WikiExamTable headers={["Temperature", "Relative Strength Gain Rate", "Practical Effect"]} rows={[["Below 10°C (50°F)", "Very slow; approaching zero below 5°C", "Curing essentially halts; freeze risk if water present"], ["10°C (50°F)", "Baseline = 1.0", "Minimum for specification compliance"], ["20°C (68°F)", "Approximately 1.5x baseline", "Normal conditions; typical 7-day curing sufficient"], ["30°C (86°F)", "Approximately 2.0—2.5x baseline", "Rapid strength gain; early form removal possible at 2—3 days"], ["Above 40°C (104°F)", "Risk of reduced long-term strength", "Potential for thermal cracking and differential hydration"]]} />
 
 ## Tropical Philippines Context: Hot-Weather Curing
 
@@ -151,13 +151,24 @@ The LEA expects you to:
 
 Typical questions present a concrete placement scenario in the Philippines and ask what curing method is appropriate, or ask about consequences of skipping or shortening the curing period.
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+<Tip>In the tropical Philippines, white-pigmented curing compound (Type 2, ASTM C309) is often the most practical choice. It prevents evaporation, reflects solar heat, requires minimal daily maintenance, and provides adequate strength development when properly applied. Always verify complete coverage; thin or patchy application is ineffective.</Tip>
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeCard" status="preserved"]
+<WikiMistakeCard
+  mistake="Assuming that high ambient temperature in tropical Philippines automatically speeds up curing sufficiently, so reduced curing time (3—4 days) is acceptable"
+  correction="While high temperature does accelerate hydration, ACI 308R specifies minimum 7-day curing for ordinary portland cement at any temperature above 10°C. Shorter periods risk inadequate strength and permeability control. Use Type III (high-early-strength) cement if early strength is required, but maintain 7-day curing duration for full strength and durability."
+  context="Contractors sometimes shortcut curing to accelerate form removal and project schedule; this leads to weak concrete and field failures within 5—10 years." />
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
+<WikiMistakeList
+  title="Common Curing Practice Errors"
+  items={[
+    "Applying curing compound but failing to achieve complete surface coverage: A patchy or incomplete film allows water evaporation from uncovered areas. The entire surface must be covered uniformly. Reapply if areas are damaged or missed.",
+    "Using clear (Type 1) curing compound instead of white-pigmented (Type 2) in tropical sunny locations: Clear compounds do not reflect solar heat; surface temperature rises excessively (50—60°C), causing thermal stress and potential differential cracking. Type 2 is preferred.",
+    "Discontinuing moist curing after 7 days, then exposing the concrete to intense sun: The 7-day minimum is for ordinary strength development; continued ambient curing (without active moistening) is acceptable. However, exposed surfaces still desiccate; if re-exposed to direct sun immediately after curing ends, rapid drying can cause surface cracking.",
+    "Assuming membrane curing (compound) is equivleant to water curing: Curing compounds develop 70—80% of the strength of moist curing. For critical applications or where maximum strength is required, water curing (ponding or spray) is preferred.",
+    "Failing to account for wind and solar radiation effects: High wind increases evaporation significantly (ACI 305.1 nomographs show 2—3x evaporation rate increase in windy conditions). Intense sun heating can exceed the comfort level for curing rate predictions. Use shade cloth or schedule placement to minimize these effects."
+  ]} />
 
 ## Related Articles
 

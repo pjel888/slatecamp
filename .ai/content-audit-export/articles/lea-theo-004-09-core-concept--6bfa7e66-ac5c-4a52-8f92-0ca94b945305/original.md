@@ -7,6 +7,10 @@ Explain the principles of natural ventilation — cross-ventilation, stack effec
 
 ### Driving Forces for Natural Ventilation
 
+<ArticleMedia id="media-lea-theo-004-09-core-concept" a type="image" caption="Natural Ventilation Strategies — Cross-Ventilation, Stack Effect, and Wind Scoops" description="Three-panel diagram: (1) Cross-Ventilation — wind-driven airflow through building showing window placement for inlet (windward, lower) and outlet (leeward, higher) with arrows indicating prevailing monsoon wind patterns (SW Habagat, NE Amihan) and building orientation for optimal capture; (2) Stack Effect — buoyancy-driven ventilation showing warm air rising and exhausting through high openings (clerestories, roof vents) while cool air enters through low openings, annotated with temperature differential and stack height relationship; (3) Supplementary strategies — wing walls (creating pressure differentials), wind scoops/catchers (capturing upper-level winds), and courtyard-induced convection." suggestedAsset="Diagram or reference image" status="placeholder" />
+
+### Driving Forces for Natural Ventilation
+
 Natural ventilation operates through two primary mechanisms: **pressure-driven flow** (wind) and **buoyancy-driven flow** (stack effect). Both are perpetual in the Philippine climate; their interaction determines achievable ventilation rates.
 
 <Tip>
