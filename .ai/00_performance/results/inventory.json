@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-26T17:37:27.868Z",
+  "timestamp": "2026-05-04T00:41:36.514Z",
   "frameworkAndRuntime": {
     "next": "16.2.3",
     "react": "^19.2.5",
@@ -10,7 +10,7 @@
     "dev": "bun run scripts/dev.js",
     "dev:turbo": "next dev --turbopack",
     "dev:webpack": "next dev --webpack",
-    "build": "next build",
+    "build": "bun scripts/next-build.ts",
     "start": "next start",
     "check:storybook": "bun scripts/check-storybook.ts",
     "storybook": "bun run check:storybook && storybook dev -p 6006",
@@ -22,15 +22,26 @@
     "test:e2e:prod": "bun scripts/playwright-run.ts prod",
     "test:e2e:auth-demo": "bun scripts/playwright-run.ts auth-demo",
     "test:e2e:auth-demo:learning": "bun scripts/playwright-run.ts auth-demo-learning",
+    "test:e2e:auth-demo:sidebar": "bun scripts/playwright-run.ts auth-demo-sidebar",
+    "test:e2e:quiz-real": "bun scripts/playwright-run.ts quiz-real",
+    "test:e2e:drills-real": "bun scripts/playwright-run.ts quiz-real",
+    "test:e2e:auth-demo:wiki": "bun scripts/playwright-run.ts auth-demo-wiki",
     "test:e2e:auth-demo:portals": "bun scripts/playwright-run.ts auth-demo-portals",
     "test:e2e:auth-demo:3d-lab": "bun scripts/playwright-run.ts auth-demo-3d-lab",
     "test:e2e:auth-demo:restricted": "bun scripts/playwright-run.ts auth-demo-restricted",
+    "test:e2e:auth-demo:admin-content-admin": "bun scripts/playwright-run.ts auth-demo-admin-content-admin",
+    "test:e2e:auth-demo:admin-sme-reviewer": "bun scripts/playwright-run.ts auth-demo-admin-sme-reviewer",
+    "test:e2e:auth-demo:admin-developer": "bun scripts/playwright-run.ts auth-demo-admin-developer",
+    "test:e2e:auth-demo:ceo-portal": "bun scripts/playwright-run.ts auth-demo-ceo-portal",
     "test:e2e:headed": "bun scripts/playwright-run.ts headed",
     "test:e2e:ui": "bun scripts/playwright-run.ts ui",
     "check:entitlements": "bun run scripts/check-entitlement-legacy-usage.ts",
+    "check:auth-cleanup-readiness": "bun --env-file=.env.local scripts/check-auth-cleanup-readiness.ts",
     "design:lint": "bunx --bun @google/design.md@0.1.0 lint DESIGN.md",
     "type-check": "bun scripts/type-check.ts",
-    "validate:release": "bun run type-check && bun run lint && bun run check:entitlements && bun audit && bun run build && bun run test:e2e:prod && bun run test:e2e:auth-demo && bun run test:e2e:auth-demo:learning && bun run test:e2e:auth-demo:restricted && bun run test:e2e:auth-demo:portals && bun run test:e2e:auth-demo:3d-lab",
+    "test": "bun test src/",
+    "test:coverage": "bun test --coverage src/",
+    "validate:release": "bun run type-check && bun run lint && bun run check:entitlements && bun audit && bun run build && bun run test:e2e:prod && bun run test:e2e:auth-demo && bun run test:e2e:auth-demo:learning && bun run test:e2e:auth-demo:wiki && bun run test:e2e:auth-demo:restricted && bun run test:e2e:auth-demo:portals && bun run test:e2e:auth-demo:3d-lab && bun run test:e2e:auth-demo:admin-content-admin && bun run test:e2e:auth-demo:admin-sme-reviewer && bun run test:e2e:auth-demo:admin-developer && bun run test:e2e:auth-demo:ceo-portal",
     "db:seed": "bun scripts/seed.ts",
     "bones:build": "boneyard-js build http://localhost:3000/dashboard --out ./src/bones",
     "perf:environment": "bun .ai/00_performance/scripts/environment.mjs",
@@ -40,9 +51,41 @@
     "perf:api": "bun .ai/00_performance/scripts/api-benchmark.mjs",
     "perf:supabase": "bun .ai/00_performance/scripts/supabase-inventory.mjs",
     "perf:build": "bun .ai/00_performance/scripts/build-startup.mjs",
+    "perf:build:demo-auth": "bun .ai/00_performance/scripts/build-demo-auth-app.mjs",
     "perf:hotspots": "bun .ai/00_performance/scripts/hotspot-audit.mjs",
     "perf:summary": "bun .ai/00_performance/scripts/summarize.mjs",
-    "perf:all": "bun run perf:inventory && bun run perf:environment && bun run perf:supabase && bun run perf:hotspots && bun run perf:api && bun run perf:frontend && bun run perf:build && bun run perf:summary"
+    "perf:all": "bun run perf:inventory && bun run perf:environment && bun run perf:supabase && bun run perf:hotspots && bun run perf:api && bun run perf:frontend && bun run perf:build && bun run perf:summary",
+    "perf:compare": "bun .ai/00_performance/scripts/compare-performance.mjs",
+    "perf:snapshot": "bun .ai/00_performance/scripts/snapshot-performance.mjs",
+    "perf:3d:built-auth-repeat": "bun .ai/00_performance/scripts/3d-lab-built-auth-repeat.mjs",
+    "perf:3d:auth-timing": "PLAYWRIGHT_DEMO_AUTH=true PLAYWRIGHT_USE_BUILT_APP=true THREED_MODE=auth-timing bunx playwright test --config=.ai/00_performance/playwright/playwright.3d.config.ts --project=chromium --workers=1",
+    "perf:3d:onboarding": "PLAYWRIGHT_DEMO_AUTH=true PLAYWRIGHT_USE_BUILT_APP=true THREED_MODE=onboarding bunx playwright test --config=.ai/00_performance/playwright/playwright.3d.config.ts --project=chromium --workers=1",
+    "perf:3d:smoke": "PLAYWRIGHT_DEMO_AUTH=true PLAYWRIGHT_USE_BUILT_APP=true THREED_MODE=module-smoke bunx playwright test --config=.ai/00_performance/playwright/playwright.3d.config.ts --project=chromium --workers=1",
+    "perf:3d:mobile": "PLAYWRIGHT_DEMO_AUTH=true PLAYWRIGHT_USE_BUILT_APP=true THREED_MODE=mobile-webgl bunx playwright test --config=.ai/00_performance/playwright/playwright.3d.config.ts --project=chromium --workers=1",
+    "perf:3d:gates": "bun .ai/00_performance/scripts/3d-lab-gate-check.mjs",
+    "perf:3d:fallbacks": "PLAYWRIGHT_DEMO_AUTH=true PLAYWRIGHT_USE_BUILT_APP=true THREED_MODE=fallbacks bunx playwright test --config=.ai/00_performance/playwright/playwright.3d.config.ts --project=chromium --workers=1",
+    "perf:3d:layout-audit": "bun .ai/00_performance/scripts/3d-lab-layout-controls-audit.mjs --mode=layout",
+    "perf:3d:controls-audit": "bun .ai/00_performance/scripts/3d-lab-layout-controls-audit.mjs --mode=controls",
+    "perf:3d:layout-consistency": "PLAYWRIGHT_DEMO_AUTH=true PLAYWRIGHT_USE_BUILT_APP=true THREED_FAIL_ON_CRITICAL=true THREED_MODE=layout-consistency bunx playwright test --config=.ai/00_performance/playwright/playwright.3d.config.ts --project=chromium --workers=1",
+    "perf:3d:interaction-consistency": "PLAYWRIGHT_DEMO_AUTH=true PLAYWRIGHT_USE_BUILT_APP=true THREED_FAIL_ON_CRITICAL=true THREED_MODE=interaction-consistency bunx playwright test --config=.ai/00_performance/playwright/playwright.3d.config.ts --project=chromium --workers=1",
+    "content-audit:export": "bun scripts/content-audit/export-article-bundles.ts",
+    "content-audit:normalize": "bun scripts/content-audit/normalize-article-bundles.ts",
+    "content-audit:inventory": "bun scripts/content-audit/scan-component-inventory.ts",
+    "content-audit:components": "bun scripts/content-audit/scan-component-inventory.ts",
+    "content-audit:compose": "bun scripts/content-audit/compose-candidates.ts",
+    "content-audit:diff": "bun scripts/content-audit/diff-candidates.ts",
+    "content-audit:validate": "bun scripts/content-audit/validate-bundles.ts",
+    "content-audit:push:dry-run": "bun scripts/content-audit/push-candidates-to-supabase.ts --dry-run",
+    "content-audit:push:apply": "bun scripts/content-audit/push-candidates-to-supabase.ts --apply",
+    "content-audit:push": "bun scripts/content-audit/push-candidates-to-supabase.ts",
+    "content-audit:roundtrip": "bun scripts/content-audit/run-content-roundtrip.ts",
+    "content-audit:push-question:dry-run": "bun scripts/content-audit/push-question-to-supabase.ts --dry-run",
+    "content-audit:push-question:apply": "bun scripts/content-audit/push-question-to-supabase.ts --apply",
+    "content-audit:admin-log": "bun scripts/content-audit/sync-run-log-to-admin-audit.ts",
+    "content-audit:component-suggestions": "bun scripts/content-audit/suggest-component-placements.ts",
+    "content-audit:ui-block-edits": "bun scripts/content-audit/validate-ui-block-edits.ts",
+    "content-audit:fact-check": "bun scripts/content-audit/ai-feature-guard.ts fact-check",
+    "content-audit:rewrite": "bun scripts/content-audit/ai-feature-guard.ts rewrite"
   },
   "installedPerformanceTools": [
     {
@@ -137,6 +180,46 @@
         "file": "src/app/admin/activity/page.tsx"
       },
       {
+        "path": "/admin/ai-audit",
+        "file": "src/app/admin/ai-audit/page.tsx"
+      },
+      {
+        "path": "/admin/ai-audit/articles",
+        "file": "src/app/admin/ai-audit/articles/page.tsx"
+      },
+      {
+        "path": "/admin/ai-audit/articles/:articleId",
+        "file": "src/app/admin/ai-audit/articles/[articleId]/page.tsx"
+      },
+      {
+        "path": "/admin/ai-audit/findings",
+        "file": "src/app/admin/ai-audit/findings/page.tsx"
+      },
+      {
+        "path": "/admin/ai-audit/findings/:findingId",
+        "file": "src/app/admin/ai-audit/findings/[findingId]/page.tsx"
+      },
+      {
+        "path": "/admin/ai-audit/proposals",
+        "file": "src/app/admin/ai-audit/proposals/page.tsx"
+      },
+      {
+        "path": "/admin/ai-audit/questions",
+        "file": "src/app/admin/ai-audit/questions/page.tsx"
+      },
+      {
+        "path": "/admin/ai-audit/questions/:questionId",
+        "file": "src/app/admin/ai-audit/questions/[questionId]/page.tsx"
+      },
+      {
+        "path": "/admin/ai-audit/runs",
+        "file": "src/app/admin/ai-audit/runs/page.tsx"
+      },
+      {
+        "path": "/admin/ai-audit/runs/:runId",
+        "file": "src/app/admin/ai-audit/runs/[runId]/page.tsx"
+      },
+      {
         "path": "/admin/assets",
         "file": "src/app/admin/assets/page.tsx"
       },
@@ -229,32 +312,8 @@
         "file": "src/app/admin/taxonomy/coverage/page.tsx"
       },
       {
-        "path": "/admin/wiki",
-        "file": "src/app/admin/wiki/page.tsx"
-      },
-      {
         "path": "/auth/reset-password",
         "file": "src/app/auth/reset-password/page.tsx"
-      },
-      {
-        "path": "/calculators",
-        "file": "src/app/calculators/page.tsx"
-      },
-      {
-        "path": "/calculators/chb",
-        "file": "src/app/calculators/chb/page.tsx"
-      },
-      {
-        "path": "/calculators/drywall",
-        "file": "src/app/calculators/drywall/page.tsx"
-      },
-      {
-        "path": "/calculators/flooring",
-        "file": "src/app/calculators/flooring/page.tsx"
-      },
-      {
-        "path": "/calculators/paint",
-        "file": "src/app/calculators/paint/page.tsx"
       },
       {
         "path": "/ceo",
@@ -275,6 +334,14 @@
       {
         "path": "/ceo/team",
         "file": "src/app/(protected)/ceo/team/page.tsx"
+      },
+      {
+        "path": "/ceo/team/admin-roles",
+        "file": "src/app/(protected)/ceo/team/admin-roles/page.tsx"
+      },
+      {
+        "path": "/ceo/team/permission-audit",
+        "file": "src/app/(protected)/ceo/team/permission-audit/page.tsx"
       },
       {
         "path": "/contact",
@@ -377,10 +444,6 @@
         "file": "src/app/dashboard/flash/[category]/page.tsx"
       },
       {
-        "path": "/dashboard/heatmap",
-        "file": "src/app/dashboard/heatmap/page.tsx"
-      },
-      {
         "path": "/dashboard/notes",
         "file": "src/app/dashboard/notes/page.tsx"
       },
@@ -401,6 +464,42 @@
         "file": "src/app/dashboard/professional/page.tsx"
       },
       {
+        "path": "/dashboard/quiz",
+        "file": "src/app/dashboard/quiz/page.tsx"
+      },
+      {
+        "path": "/dashboard/quiz/:mode/session/:sessionId",
+        "file": "src/app/dashboard/quiz/[mode]/session/[sessionId]/page.tsx"
+      },
+      {
+        "path": "/dashboard/quiz/:mode/session/:sessionId/results",
+        "file": "src/app/dashboard/quiz/[mode]/session/[sessionId]/results/page.tsx"
+      },
+      {
+        "path": "/dashboard/quiz/:mode/session/:sessionId/review",
+        "file": "src/app/dashboard/quiz/[mode]/session/[sessionId]/review/page.tsx"
+      },
+      {
+        "path": "/dashboard/quiz/:mode/setup",
+        "file": "src/app/dashboard/quiz/[mode]/setup/page.tsx"
+      },
+      {
+        "path": "/dashboard/quiz/session/:sessionId",
+        "file": "src/app/dashboard/quiz/session/[sessionId]/page.tsx"
+      },
+      {
+        "path": "/dashboard/quiz/session/:sessionId/results",
+        "file": "src/app/dashboard/quiz/session/[sessionId]/results/page.tsx"
+      },
+      {
+        "path": "/dashboard/quiz/session/:sessionId/review",
+        "file": "src/app/dashboard/quiz/session/[sessionId]/review/page.tsx"
+      },
+      {
+        "path": "/dashboard/quiz/sessions",
+        "file": "src/app/dashboard/quiz/sessions/page.tsx"
+      },
+      {
         "path": "/dashboard/results-day",
         "file": "src/app/dashboard/results-day/page.tsx"
       },
@@ -413,24 +512,8 @@
         "file": "src/app/dashboard/settings/page.tsx"
       },
       {
-        "path": "/dashboard/settings/billing",
-        "file": "src/app/dashboard/settings/billing/page.tsx"
-      },
-      {
-        "path": "/dashboard/settings/developer",
-        "file": "src/app/dashboard/settings/developer/page.tsx"
-      },
-      {
         "path": "/dashboard/studio",
         "file": "src/app/dashboard/studio/page.tsx"
-      },
-      {
-        "path": "/dashboard/trail",
-        "file": "src/app/dashboard/trail/page.tsx"
-      },
-      {
-        "path": "/dashboard/trails",
-        "file": "src/app/dashboard/trails/page.tsx"
       },
       {
         "path": "/dashboard/upgrade",
@@ -533,28 +616,52 @@
         "file": "src/app/quiz/[mode]/setup/page.tsx"
       },
       {
+        "path": "/quiz/session/:sessionId",
+        "file": "src/app/quiz/session/[sessionId]/page.tsx"
+      },
+      {
+        "path": "/quiz/session/:sessionId/results",
+        "file": "src/app/quiz/session/[sessionId]/results/page.tsx"
+      },
+      {
+        "path": "/quiz/session/:sessionId/review",
+        "file": "src/app/quiz/session/[sessionId]/review/page.tsx"
+      },
+      {
+        "path": "/quiz/sessions",
+        "file": "src/app/quiz/sessions/page.tsx"
+      },
+      {
         "path": "/register",
         "file": "src/app/(auth)/register/page.tsx"
-      },
-      {
-        "path": "/settings",
-        "file": "src/app/settings/page.tsx"
-      },
-      {
-        "path": "/test-3d",
-        "file": "src/app/test-3d/page.tsx"
       },
       {
         "path": "/tools",
         "file": "src/app/tools/page.tsx"
       },
       {
+        "path": "/tools/chb",
+        "file": "src/app/tools/chb/page.tsx"
+      },
+      {
+        "path": "/tools/drywall",
+        "file": "src/app/tools/drywall/page.tsx"
+      },
+      {
         "path": "/tools/floor-tiles-calculator",
         "file": "src/app/tools/floor-tiles-calculator/page.tsx"
       },
       {
+        "path": "/tools/flooring",
+        "file": "src/app/tools/flooring/page.tsx"
+      },
+      {
         "path": "/tools/lot-plotter",
         "file": "src/app/tools/lot-plotter/page.tsx"
+      },
+      {
+        "path": "/tools/paint",
+        "file": "src/app/tools/paint/page.tsx"
       },
       {
         "path": "/tools/wall-paint-calculator",
@@ -571,8 +678,8 @@
         "file": "src/app/developer/layout.tsx"
       },
       {
-        "path": "/test-3d",
-        "file": "src/app/test-3d/layout.tsx"
+        "path": "/admin/ai-audit",
+        "file": "src/app/admin/ai-audit/layout.tsx"
       },
       {
         "path": "/admin/search",
@@ -589,6 +696,10 @@
       {
         "path": "/dashboard/score-reveal",
         "file": "src/app/dashboard/score-reveal/layout.tsx"
+      },
+      {
+        "path": "/dashboard/quiz",
+        "file": "src/app/dashboard/quiz/layout.tsx"
       },
       {
         "path": "/dashboard/3d-lab",
@@ -621,10 +732,6 @@
       {
         "path": "/",
         "file": "src/app/layout.tsx"
-      },
-      {
-        "path": "/calculators",
-        "file": "src/app/calculators/layout.tsx"
       }
     ],
     "loading": [
@@ -699,6 +806,46 @@
       {
         "path": "/admin/pipeline",
         "file": "src/app/admin/pipeline/loading.tsx"
+      },
+      {
+        "path": "/admin/ai-audit/articles/:articleId",
+        "file": "src/app/admin/ai-audit/articles/[articleId]/loading.tsx"
+      },
+      {
+        "path": "/admin/ai-audit/articles",
+        "file": "src/app/admin/ai-audit/articles/loading.tsx"
+      },
+      {
+        "path": "/admin/ai-audit/findings",
+        "file": "src/app/admin/ai-audit/findings/loading.tsx"
+      },
+      {
+        "path": "/admin/ai-audit/findings/:findingId",
+        "file": "src/app/admin/ai-audit/findings/[findingId]/loading.tsx"
+      },
+      {
+        "path": "/admin/ai-audit",
+        "file": "src/app/admin/ai-audit/loading.tsx"
+      },
+      {
+        "path": "/admin/ai-audit/runs/:runId",
+        "file": "src/app/admin/ai-audit/runs/[runId]/loading.tsx"
+      },
+      {
+        "path": "/admin/ai-audit/runs",
+        "file": "src/app/admin/ai-audit/runs/loading.tsx"
+      },
+      {
+        "path": "/admin/ai-audit/proposals",
+        "file": "src/app/admin/ai-audit/proposals/loading.tsx"
+      },
+      {
+        "path": "/admin/ai-audit/questions/:questionId",
+        "file": "src/app/admin/ai-audit/questions/[questionId]/loading.tsx"
+      },
+      {
+        "path": "/admin/ai-audit/questions",
+        "file": "src/app/admin/ai-audit/questions/loading.tsx"
       },
       {
         "path": "/admin/activity",
@@ -831,6 +978,18 @@
       {
         "path": "/dashboard/welcome-pro",
         "file": "src/app/dashboard/welcome-pro/loading.tsx"
+      },
+      {
+        "path": "/dashboard/quiz/:mode/setup",
+        "file": "src/app/dashboard/quiz/[mode]/setup/loading.tsx"
+      },
+      {
+        "path": "/dashboard/quiz",
+        "file": "src/app/dashboard/quiz/loading.tsx"
+      },
+      {
+        "path": "/dashboard/quiz/session/:sessionId",
+        "file": "src/app/dashboard/quiz/session/[sessionId]/loading.tsx"
       },
       {
         "path": "/dashboard/3d-lab/:moduleId",
@@ -1011,6 +1170,10 @@
         "file": "src/app/dashboard/3d-lab/error.tsx"
       },
       {
+        "path": "/dashboard/wiki",
+        "file": "src/app/dashboard/wiki/error.tsx"
+      },
+      {
         "path": "/dashboard",
         "file": "src/app/dashboard/error.tsx"
       },
@@ -1136,18 +1299,6 @@
         "usesExternalFetch": false
       },
       {
-        "path": "/api/webhooks/lemonsqueezy",
-        "file": "src/app/api/webhooks/lemonsqueezy/route.ts",
-        "methods": [
-          "POST"
-        ],
-        "runtime": null,
-        "dynamic": null,
-        "usesSupabase": true,
-        "usesAuth": false,
-        "usesExternalFetch": false
-      },
-      {
         "path": "/api/webhooks/payrex",
         "file": "src/app/api/webhooks/payrex/route.ts",
         "methods": [
@@ -1174,14 +1325,14 @@
     ]
   },
   "counts": {
-    "pages": 112,
+    "pages": 128,
     "layouts": 15,
-    "loading": 92,
-    "errors": 7,
-    "routeHandlers": 12,
-    "clientComponents": 654,
-    "serverActionLikeFiles": 168,
-    "sourceFiles": 1971
+    "loading": 105,
+    "errors": 8,
+    "routeHandlers": 11,
+    "clientComponents": 655,
+    "serverActionLikeFiles": 174,
+    "sourceFiles": 1998
   },
   "routeGroups": {
     "publicRoutes": [
@@ -1220,20 +1371,24 @@
       "/dashboard/exam-outcome",
       "/dashboard/flash",
       "/dashboard/flash/:category",
-      "/dashboard/heatmap",
       "/dashboard/notes",
       "/dashboard/notifications",
       "/dashboard/pods",
       "/dashboard/pods/:podId",
       "/dashboard/professional",
+      "/dashboard/quiz",
+      "/dashboard/quiz/:mode/session/:sessionId",
+      "/dashboard/quiz/:mode/session/:sessionId/results",
+      "/dashboard/quiz/:mode/session/:sessionId/review",
+      "/dashboard/quiz/:mode/setup",
+      "/dashboard/quiz/session/:sessionId",
+      "/dashboard/quiz/session/:sessionId/results",
+      "/dashboard/quiz/session/:sessionId/review",
+      "/dashboard/quiz/sessions",
       "/dashboard/results-day",
       "/dashboard/score-reveal",
       "/dashboard/settings",
-      "/dashboard/settings/billing",
-      "/dashboard/settings/developer",
       "/dashboard/studio",
-      "/dashboard/trail",
-      "/dashboard/trails",
       "/dashboard/upgrade",
       "/dashboard/welcome-pro",
       "/dashboard/wiki",
@@ -1243,6 +1398,16 @@
       "/admin",
       "/admin/3d-models",
       "/admin/activity",
+      "/admin/ai-audit",
+      "/admin/ai-audit/articles",
+      "/admin/ai-audit/articles/:articleId",
+      "/admin/ai-audit/findings",
+      "/admin/ai-audit/findings/:findingId",
+      "/admin/ai-audit/proposals",
+      "/admin/ai-audit/questions",
+      "/admin/ai-audit/questions/:questionId",
+      "/admin/ai-audit/runs",
+      "/admin/ai-audit/runs/:runId",
       "/admin/assets",
       "/admin/assets/:id",
       "/admin/audit",
@@ -1265,8 +1430,7 @@
       "/admin/search",
       "/admin/settings",
       "/admin/taxonomy",
-      "/admin/taxonomy/coverage",
-      "/admin/wiki"
+      "/admin/taxonomy/coverage"
     ],
     "developerRoutes": [
       "/developer",
@@ -1286,17 +1450,27 @@
       "/quiz/:mode/session/:sessionId",
       "/quiz/:mode/session/:sessionId/results",
       "/quiz/:mode/session/:sessionId/review",
-      "/quiz/:mode/setup"
+      "/quiz/:mode/setup",
+      "/quiz/session/:sessionId",
+      "/quiz/session/:sessionId/results",
+      "/quiz/session/:sessionId/review",
+      "/quiz/sessions"
     ]
   },
   "e2eSpecs": [
     "e2e/access-boundaries.spec.ts",
+    "e2e/admin-permissions-content-admin.spec.ts",
+    "e2e/admin-permissions-developer.spec.ts",
+    "e2e/admin-permissions-sme-reviewer.spec.ts",
     "e2e/authenticated-demo-3d-lab.spec.ts",
     "e2e/authenticated-demo-portals.spec.ts",
     "e2e/authenticated-demo-restricted.spec.ts",
     "e2e/authenticated-demo.spec.ts",
+    "e2e/ceo-portal.spec.ts",
     "e2e/launch-smoke.spec.ts",
     "e2e/learning-flow.spec.ts",
+    "e2e/quiz-real-user-flow.spec.ts",
+    "e2e/sidebar-navigation.spec.ts",
     "e2e/wiki-learning.spec.ts"
   ],
   "dataFetchingArchitecture": {
@@ -1395,6 +1569,78 @@
       },
       {
         "file": "src/app/admin/pipeline/loading.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/admin/ai-audit/articles/[articleId]/loading.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/admin/ai-audit/articles/[articleId]/page.tsx",
+        "flags": [
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/app/admin/ai-audit/articles/loading.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/admin/ai-audit/findings/loading.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/admin/ai-audit/findings/[findingId]/loading.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/admin/ai-audit/loading.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/admin/ai-audit/runs/[runId]/loading.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/admin/ai-audit/runs/loading.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/admin/ai-audit/proposals/loading.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/admin/ai-audit/questions/[questionId]/loading.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/admin/ai-audit/questions/[questionId]/page.tsx",
+        "flags": [
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/app/admin/ai-audit/questions/loading.tsx",
         "flags": [
           "supabase-call"
         ]
@@ -1565,32 +1811,9 @@
         ]
       },
       {
-        "file": "src/app/quiz/[mode]/setup/page.tsx",
-        "flags": [
-          "supabase-client",
-          "supabase-call"
-        ]
-      },
-      {
-        "file": "src/app/quiz/[mode]/session/[sessionId]/results/page.tsx",
-        "flags": [
-          "supabase-client",
-          "supabase-call",
-          "parallel-fetching"
-        ]
-      },
-      {
         "file": "src/app/quiz/[mode]/session/[sessionId]/review/loading.tsx",
         "flags": [
           "supabase-call"
-        ]
-      },
-      {
-        "file": "src/app/quiz/[mode]/session/[sessionId]/page.tsx",
-        "flags": [
-          "supabase-client",
-          "supabase-call",
-          "parallel-fetching"
         ]
       },
       {
@@ -1642,6 +1865,44 @@
       },
       {
         "file": "src/app/dashboard/welcome-pro/page.tsx",
+        "flags": [
+          "supabase-client",
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/app/dashboard/quiz/[mode]/setup/page.tsx",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/dashboard/quiz/sessions/page.tsx",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/dashboard/quiz/_components/QuizHubContent.tsx",
+        "flags": [
+          "supabase-client",
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/app/dashboard/quiz/_components/QuizSessionRoute.tsx",
+        "flags": [
+          "supabase-client",
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/app/dashboard/quiz/_components/QuizResultsRoute.tsx",
         "flags": [
           "supabase-client",
           "supabase-call",
@@ -1746,21 +2007,6 @@
         "file": "src/app/dashboard/dae-mode/page.tsx",
         "flags": [
           "supabase-call"
-        ]
-      },
-      {
-        "file": "src/app/dashboard/drills/sessions/page.tsx",
-        "flags": [
-          "supabase-client",
-          "supabase-call"
-        ]
-      },
-      {
-        "file": "src/app/dashboard/drills/page.tsx",
-        "flags": [
-          "supabase-client",
-          "supabase-call",
-          "parallel-fetching"
         ]
       },
       {
@@ -1873,13 +2119,6 @@
         "flags": [
           "supabase-client",
           "supabase-call"
-        ]
-      },
-      {
-        "file": "src/app/api/webhooks/lemonsqueezy/route.ts",
-        "flags": [
-          "supabase-call",
-          "request-bound-server-api"
         ]
       },
       {
@@ -2087,6 +2326,12 @@
         "file": "src/components/admin/unified-editor/SaveAllBar.tsx",
         "flags": [
           "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/components/wiki/blocks/ArticleMedia.tsx",
+        "flags": [
+          "supabase-call"
         ]
       },
       {
@@ -2389,6 +2634,12 @@
         ]
       },
       {
+        "file": "src/lib/admin/audit.ts",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
         "file": "src/lib/queries/notifications.ts",
         "flags": [
           "supabase-client",
@@ -2494,6 +2745,13 @@
         "flags": [
           "supabase-client",
           "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/queries/admin-ai-audit.ts",
+        "flags": [
+          "supabase-call",
+          "parallel-fetching"
         ]
       },
       {
@@ -3028,6 +3286,13 @@
         ]
       },
       {
+        "file": "src/lib/actions/admin/ai-audit.ts",
+        "flags": [
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
         "file": "src/lib/actions/notes-actions.ts",
         "flags": [
           "supabase-client",
@@ -3160,6 +3425,12 @@
         "file": "src/lib/actions/ceo/financial-actions.ts",
         "flags": [
           "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/ceo/admin-role-actions.ts",
+        "flags": [
           "supabase-call"
         ]
       },
@@ -3638,12 +3909,6 @@
     ],
     "cachingFiles": [
       {
-        "file": "src/features/3d-lab/components/ModuleViewer.tsx",
-        "flags": [
-          "browser-storage-cache-or-state"
-        ]
-      },
-      {
         "file": "src/features/3d-lab/components/shell/GuidedTour.tsx",
         "flags": [
           "browser-storage-cache-or-state"
@@ -3656,19 +3921,13 @@
         ]
       },
       {
-        "file": "src/features/3d-lab/components/shell/FirstTimeTooltip.tsx",
+        "file": "src/features/3d-lab/components/onboarding/state.ts",
         "flags": [
           "browser-storage-cache-or-state"
         ]
       },
       {
-        "file": "src/features/3d-lab/components/ModuleContextCard.tsx",
-        "flags": [
-          "browser-storage-cache-or-state"
-        ]
-      },
-      {
-        "file": "src/features/3d-lab/components/OnboardingFlow.tsx",
+        "file": "src/features/3d-lab/components/onboarding/state.test.ts",
         "flags": [
           "browser-storage-cache-or-state"
         ]
@@ -3777,12 +4036,6 @@
       },
       {
         "file": "src/lib/supabase/server.ts",
-        "flags": [
-          "server-cache-helper"
-        ]
-      },
-      {
-        "file": "src/lib/entitlements/resolve-role.ts",
         "flags": [
           "server-cache-helper"
         ]
@@ -3932,6 +4185,12 @@
         ]
       },
       {
+        "file": "src/lib/actions/admin/ai-audit.ts",
+        "flags": [
+          "revalidation"
+        ]
+      },
+      {
         "file": "src/lib/actions/notes-actions.ts",
         "flags": [
           "revalidation"
@@ -3957,6 +4216,12 @@
       },
       {
         "file": "src/lib/actions/ceo/financial-actions.ts",
+        "flags": [
+          "revalidation"
+        ]
+      },
+      {
+        "file": "src/lib/actions/ceo/admin-role-actions.ts",
         "flags": [
           "revalidation"
         ]
@@ -4076,7 +4341,6 @@
       "src/app/admin/3d-models/_components/ModelRegistryPage.tsx",
       "src/app/admin/3d-models/_components/ModelConfigDetail.tsx",
       "src/app/admin/3d-models/_components/ModelRegistryTree.tsx",
-      "src/app/quiz/[mode]/setup/client.tsx",
       "src/app/dashboard/settings/theme-card.tsx",
       "src/app/dashboard/settings/logout-card.tsx",
       "src/app/dashboard/settings/discipline-card.tsx",
@@ -4086,8 +4350,10 @@
       "src/app/dashboard/studio/_components/StudioHub.tsx",
       "src/app/dashboard/professional/_components/ProfessionalHub.tsx",
       "src/app/dashboard/exam-outcome/ExamOutcomeSurvey.tsx",
+      "src/app/dashboard/quiz/[mode]/setup/client.tsx",
       "src/app/dashboard/3d-lab/layout.tsx",
       "src/app/dashboard/3d-lab/error.tsx",
+      "src/app/dashboard/wiki/error.tsx",
       "src/app/dashboard/results-day/_components/NonPasserFlow.tsx",
       "src/app/dashboard/results-day/_components/PasserFlow.tsx",
       "src/app/dashboard/results-day/_components/ResultsDayClient.tsx",
@@ -4116,10 +4382,6 @@
       "src/app/dashboard/area-c/_components/DesignProblemSession.tsx",
       "src/app/dashboard/area-c/_components/DevControlsCalculator.tsx",
       "src/app/(protected)/ceo/_components/CeoShell.tsx",
-      "src/app/calculators/drywall/_components/DrywallCalculator.tsx",
-      "src/app/calculators/paint/_components/PaintCalculator.tsx",
-      "src/app/calculators/flooring/_components/FlooringCalculator.tsx",
-      "src/app/calculators/chb/_components/CHBCalculator.tsx",
       "src/app/error.tsx",
       "src/app/(auth)/register/register-form.tsx",
       "src/app/(auth)/forgot-password/page.tsx",
@@ -4213,6 +4475,7 @@
       "src/features/3d-lab/components/ModuleContextCard.tsx",
       "src/features/3d-lab/components/ModuleList.tsx",
       "src/features/3d-lab/components/controls/LabSlider.tsx",
+      "src/features/3d-lab/components/controls/ThreeDLabControlsProvider.tsx",
       "src/features/3d-lab/components/InfoPanel.tsx",
       "src/features/3d-lab/components/LabBrowser.tsx",
       "src/features/3d-lab/components/LabTopBar.tsx",
@@ -4255,6 +4518,7 @@
       "src/features/3d-lab/components/rendering/SceneConfig.tsx",
       "src/features/3d-lab/components/LabViewport.tsx",
       "src/features/3d-lab/components/OnboardingFlow.tsx",
+      "src/features/3d-lab/components/onboarding/state.ts",
       "src/features/3d-lab/DevControlsModule/index.tsx",
       "src/features/3d-lab/DevControlsModule/stores/useSelectionStore.ts",
       "src/features/3d-lab/DevControlsModule/stores/useDevControlsStore.ts",
@@ -4289,6 +4553,7 @@
       "src/features/3d-lab/DevControlsModule/dashboard/ZoningInputPanel.tsx",
       "src/features/3d-lab/DevControlsModule/dashboard/FlarPanel.tsx",
       "src/features/3d-lab/DevControlsModule/dashboard/ProposedBuildingPanel.tsx",
+      "src/features/3d-lab/DevControlsModule/dashboard/DevControlsShellSlots.tsx",
       "src/features/3d-lab/DevControlsModule/dashboard/StatusBar.tsx",
       "src/features/3d-lab/DevControlsModule/dashboard/SharedToolbarBridge.tsx",
       "src/features/3d-lab/DevControlsModule/dashboard/ComplianceScorecard.tsx",
@@ -4354,8 +4619,6 @@
       "src/components/trails/TrailDailyView.tsx",
       "src/components/trails/TrailDetailEnroll.tsx",
       "src/components/ui/alert-dialog.tsx",
-      "src/components/ui/pagination.tsx",
-      "src/components/ui/bottom-navigation.tsx",
       "src/components/ui/tabs.tsx",
       "src/components/ui/slider.tsx",
       "src/components/ui/input-group.tsx",
@@ -4365,7 +4628,6 @@
       "src/components/ui/sheet.tsx",
       "src/components/ui/unified-slider.tsx",
       "src/components/ui/scroll-area.tsx",
-      "src/components/ui/resizable.tsx",
       "src/components/ui/label.tsx",
       "src/components/ui/accordion.tsx",
       "src/components/ui/tooltip.tsx",
@@ -4375,7 +4637,6 @@
       "src/components/ui/breadcrumb.tsx",
       "src/components/ui/radio-group.tsx",
       "src/components/ui/command.tsx",
-      "src/components/ui/list-group.tsx",
       "src/components/ui/close-button.tsx",
       "src/components/ui/avatar.tsx",
       "src/components/ui/dialog.tsx",
@@ -4502,6 +4763,7 @@
       "src/components/shared/sidebar-nav.tsx",
       "src/components/shared/WikiSidePanel.tsx",
       "src/components/shared/Omnibar.tsx",
+      "src/components/shared/GlobalLoadingOverlay.tsx",
       "src/components/shared/CodeBlock.tsx",
       "src/components/shared/taxonomy-picker.tsx",
       "src/components/assessment/ScoreReveal.tsx",
@@ -4518,6 +4780,7 @@
       "src/components/ceo/charts/RevenueChartClient.tsx",
       "src/components/ceo/FinancialEntryForm.tsx",
       "src/components/ceo/DepartmentCostChart.tsx",
+      "src/components/ceo/CeoAdminRoleManager.tsx",
       "src/components/ceo/RevenueChart.tsx",
       "src/components/ceo/ExpenseBreakdownChart.tsx",
       "src/components/ceo/analytics/QuestionHealth.tsx",
@@ -4574,6 +4837,7 @@
       "src/components/calculators/ExportActions.tsx",
       "src/components/calculators/DrywallScene.tsx",
       "src/components/calculators/AssumptionsAccordion.tsx",
+      "src/components/calculators/CalculatorToolShell.tsx",
       "src/components/marketing/FaqSection.tsx",
       "src/components/marketing/ContactForm.tsx",
       "src/components/marketing/AnalyticsSection.tsx",
@@ -4686,11 +4950,13 @@
       "src/components/analytics/StudyStreakCalendar.tsx",
       "src/components/analytics/WeakestTopics.tsx",
       "src/hooks/useGestureSignalCapture.ts",
+      "src/hooks/usePermission.ts",
       "src/hooks/useQuizShellHandlers.ts",
       "src/hooks/useOnlineStatus.ts",
       "src/hooks/notes/useNotesList.ts",
       "src/hooks/notes/useNotesPanels.ts",
       "src/hooks/notes/useNoteEditor.ts",
+      "src/hooks/useGlobalLoading.ts",
       "src/hooks/useDeviceSensors.ts",
       "src/hooks/useLabTelemetry.ts",
       "src/hooks/useChartColors.ts",
@@ -4710,6 +4976,7 @@
     ],
     "serverActions": [
       "src/app/dashboard/exam-outcome/actions.ts",
+      "src/lib/developer/access.ts",
       "src/lib/queries/adaptive-quiz.ts",
       "src/lib/queries/ceo/analytics/get-coverage-gap.ts",
       "src/lib/queries/ceo/analytics/get-learning-velocity.ts",
@@ -4723,6 +4990,7 @@
       "src/lib/queries/trails.ts",
       "src/lib/queries/srs.ts",
       "src/lib/srs/update.ts",
+      "src/lib/ceo/access.ts",
       "src/lib/supabase/bootstrap.ts",
       "src/lib/audit/audit-actions.ts",
       "src/lib/focus-review/generate-queue.ts",
@@ -4784,6 +5052,7 @@
       "src/lib/actions/admin/bulk.ts",
       "src/lib/actions/admin/roles.ts",
       "src/lib/actions/admin/assets.test.ts",
+      "src/lib/actions/admin/ai-audit.ts",
       "src/lib/actions/notes-actions.ts",
       "src/lib/actions/analytics.test.ts",
       "src/lib/actions/bloom-tracker.ts",
@@ -4804,6 +5073,7 @@
       "src/lib/actions/ceo/export-actions.ts",
       "src/lib/actions/ceo/team-actions.ts",
       "src/lib/actions/ceo/financial-actions.ts",
+      "src/lib/actions/ceo/admin-role-actions.ts",
       "src/lib/actions/dashboard-helpers.ts",
       "src/lib/actions/session-discovery.ts",
       "src/lib/actions/results-day.ts",
@@ -4817,8 +5087,10 @@
       "src/lib/actions/profile.ts",
       "src/lib/actions/mastery.ts",
       "src/lib/actions/readiness-score-update.ts",
+      "src/lib/actions/dev/test-data.test.ts",
       "src/lib/actions/dev/test-data.ts",
       "src/lib/actions/dev/db-viewer.ts",
+      "src/lib/actions/dev/db-viewer.test.ts",
       "src/lib/actions/quiz-v2/start-session.test.ts",
       "src/lib/actions/quiz-v2/get-session-questions.test.ts",
       "src/lib/actions/quiz-v2/skip-question.ts",
@@ -4919,7 +5191,11 @@
         "/quiz/:mode/session/:sessionId",
         "/quiz/:mode/session/:sessionId/results",
         "/quiz/:mode/session/:sessionId/review",
-        "/quiz/:mode/setup"
+        "/quiz/:mode/setup",
+        "/quiz/session/:sessionId",
+        "/quiz/session/:sessionId/results",
+        "/quiz/session/:sessionId/review",
+        "/quiz/sessions"
       ]
     },
     {
@@ -4935,23 +5211,23 @@
         "/admin",
         "/admin/3d-models",
         "/admin/activity",
+        "/admin/ai-audit",
+        "/admin/ai-audit/articles",
+        "/admin/ai-audit/articles/:articleId",
+        "/admin/ai-audit/findings",
+        "/admin/ai-audit/findings/:findingId",
+        "/admin/ai-audit/proposals",
+        "/admin/ai-audit/questions",
+        "/admin/ai-audit/questions/:questionId",
+        "/admin/ai-audit/runs",
+        "/admin/ai-audit/runs/:runId",
         "/admin/assets",
         "/admin/assets/:id",
         "/admin/audit",
         "/admin/knowledge",
         "/admin/knowledge/:id",
         "/admin/knowledge/analytics",
-        "/admin/knowledge/import",
-        "/admin/knowledge/new",
-        "/admin/knowledge/questions",
-        "/admin/knowledge/questions/:id",
-        "/admin/knowledge/questions/design-problems",
-        "/admin/knowledge/questions/design-problems/:id",
-        "/admin/knowledge/questions/new",
-        "/admin/knowledge/questions/scenarios",
-        "/admin/knowledge/questions/scenarios/:id",
-        "/admin/login",
-        "/admin/pipeline"
+        "/admin/knowledge/import"
       ]
     },
     {

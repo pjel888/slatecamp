@@ -17,7 +17,6 @@ export const sendContactMessage = async (_prev: ContactFormState, formData: Form
     }
 
     // TODO: integrate email provider (Resend)
-    console.log('[Contact]', { name, email, subject, message })
 
     return { success: true }
   } catch {

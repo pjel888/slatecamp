@@ -1,5 +1,7 @@
 # Dead Code Audit
 
+> **2026-05-04 — Cleanup completed.** All files listed in the "Confirmed dead" and "Likely dead" sections below have been deleted from the codebase. This document is now historical reference only.
+
 ## Confirmed dead candidates
 
 Implementation note (2026-04-17):

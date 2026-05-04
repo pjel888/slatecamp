@@ -25,7 +25,6 @@ const isUserTier = (value: unknown): value is UserTier =>
 
 export async function POST(request: Request) {
   if (!FEATURE_PAYMENTS_ENABLED) {
-    console.log('[WEBHOOK] PayRex webhook received but payments disabled');
     return NextResponse.json({
       received: true,
       status: 'disabled',

@@ -64,7 +64,6 @@ export const getWikiQuizQuestions = async (
   } = await getUser()
   if (!user) throw new Error('Unauthorized')
 
-  console.log('[wiki-quiz] getWikiQuizQuestions called with nodeId:', nodeId)
 
   // 1. Resolve leaf topic IDs — expand non-leaf node to its leaf children
   const { data: thisNode } = await supabase

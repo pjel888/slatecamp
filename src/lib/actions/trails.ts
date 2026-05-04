@@ -38,7 +38,6 @@ export const getPublishedTrails = async (): Promise<CampTrail[]> => {
     console.error('[getPublishedTrails] Supabase error:', error.message, error.code, error.details, error.hint)
     throw error
   }
-  console.log('[getPublishedTrails] returned', data?.length, 'trails')
   return (data || []) as CampTrail[]
 }
 

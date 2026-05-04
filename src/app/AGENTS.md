@@ -1,5 +1,5 @@
 <!-- Parent: ../../AGENTS.md -->
-<!-- Generated: 2026-04-16 | Reality Refresh: 2026-04-16 -->
+<!-- Generated: 2026-04-16 | Reality Refresh: 2026-05-04 -->
 
 # src/app
 
@@ -10,7 +10,7 @@ This file governs `src/app/` and its route subtrees unless a deeper `AGENTS.md` 
 `src/app/` is the live App Router surface.
 
 Current audited counts:
-- 125 `page.tsx` files
+- 128 `page.tsx` files
 - 16 `layout.tsx` files
 - 96 `loading.tsx` files
 - 9 `error.tsx` files

@@ -53,7 +53,6 @@ export async function createCheckout(
   params: CreateCheckoutParams
 ): Promise<CheckoutResult> {
   if (!FEATURE_PAYMENTS_ENABLED) {
-    console.log('[PAYMENTS] createCheckout called but payments are disabled');
     throw new PaymentUnavailableError(
       "Payments are currently disabled.",
       "PAYMENTS_DISABLED",

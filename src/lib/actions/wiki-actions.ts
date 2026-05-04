@@ -360,7 +360,6 @@ export async function resolveArticleAndNode(
   if (!rpcError && rpcResult) {
     const result = rpcResult as { article: WikiArticle | null; node: TaxonomyNode | null }
     const elapsed = (performance.now() - start).toFixed(1)
-    console.log(`[resolveArticleAndNode] RPC resolved "${slug}" in ${elapsed}ms`)
     return {
       article: result.article ?? null,
       node: result.node ?? null,
@@ -451,7 +450,6 @@ export async function resolveArticleAndNode(
     .maybeSingle()
 
   const elapsed = (performance.now() - start).toFixed(1)
-  console.log(`[resolveArticleAndNode] Fallback resolved "${slug}" in ${elapsed}ms`)
   return {
     article: nodeArticle as WikiArticle | null,
     node: directNode as TaxonomyNode,

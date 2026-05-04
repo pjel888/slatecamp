@@ -21,6 +21,46 @@
       "file": "src/app/admin/activity/page.tsx"
     },
     {
+      "path": "/admin/ai-audit",
+      "file": "src/app/admin/ai-audit/page.tsx"
+    },
+    {
+      "path": "/admin/ai-audit/articles",
+      "file": "src/app/admin/ai-audit/articles/page.tsx"
+    },
+    {
+      "path": "/admin/ai-audit/articles/:articleId",
+      "file": "src/app/admin/ai-audit/articles/[articleId]/page.tsx"
+    },
+    {
+      "path": "/admin/ai-audit/findings",
+      "file": "src/app/admin/ai-audit/findings/page.tsx"
+    },
+    {
+      "path": "/admin/ai-audit/findings/:findingId",
+      "file": "src/app/admin/ai-audit/findings/[findingId]/page.tsx"
+    },
+    {
+      "path": "/admin/ai-audit/proposals",
+      "file": "src/app/admin/ai-audit/proposals/page.tsx"
+    },
+    {
+      "path": "/admin/ai-audit/questions",
+      "file": "src/app/admin/ai-audit/questions/page.tsx"
+    },
+    {
+      "path": "/admin/ai-audit/questions/:questionId",
+      "file": "src/app/admin/ai-audit/questions/[questionId]/page.tsx"
+    },
+    {
+      "path": "/admin/ai-audit/runs",
+      "file": "src/app/admin/ai-audit/runs/page.tsx"
+    },
+    {
+      "path": "/admin/ai-audit/runs/:runId",
+      "file": "src/app/admin/ai-audit/runs/[runId]/page.tsx"
+    },
+    {
       "path": "/admin/assets",
       "file": "src/app/admin/assets/page.tsx"
     },
@@ -113,32 +153,8 @@
       "file": "src/app/admin/taxonomy/coverage/page.tsx"
     },
     {
-      "path": "/admin/wiki",
-      "file": "src/app/admin/wiki/page.tsx"
-    },
-    {
       "path": "/auth/reset-password",
       "file": "src/app/auth/reset-password/page.tsx"
-    },
-    {
-      "path": "/calculators",
-      "file": "src/app/calculators/page.tsx"
-    },
-    {
-      "path": "/calculators/chb",
-      "file": "src/app/calculators/chb/page.tsx"
-    },
-    {
-      "path": "/calculators/drywall",
-      "file": "src/app/calculators/drywall/page.tsx"
-    },
-    {
-      "path": "/calculators/flooring",
-      "file": "src/app/calculators/flooring/page.tsx"
-    },
-    {
-      "path": "/calculators/paint",
-      "file": "src/app/calculators/paint/page.tsx"
     },
     {
       "path": "/ceo",
@@ -159,6 +175,14 @@
     {
       "path": "/ceo/team",
       "file": "src/app/(protected)/ceo/team/page.tsx"
+    },
+    {
+      "path": "/ceo/team/admin-roles",
+      "file": "src/app/(protected)/ceo/team/admin-roles/page.tsx"
+    },
+    {
+      "path": "/ceo/team/permission-audit",
+      "file": "src/app/(protected)/ceo/team/permission-audit/page.tsx"
     },
     {
       "path": "/contact",
@@ -261,10 +285,6 @@
       "file": "src/app/dashboard/flash/[category]/page.tsx"
     },
     {
-      "path": "/dashboard/heatmap",
-      "file": "src/app/dashboard/heatmap/page.tsx"
-    },
-    {
       "path": "/dashboard/notes",
       "file": "src/app/dashboard/notes/page.tsx"
     },
@@ -285,6 +305,42 @@
       "file": "src/app/dashboard/professional/page.tsx"
     },
     {
+      "path": "/dashboard/quiz",
+      "file": "src/app/dashboard/quiz/page.tsx"
+    },
+    {
+      "path": "/dashboard/quiz/:mode/session/:sessionId",
+      "file": "src/app/dashboard/quiz/[mode]/session/[sessionId]/page.tsx"
+    },
+    {
+      "path": "/dashboard/quiz/:mode/session/:sessionId/results",
+      "file": "src/app/dashboard/quiz/[mode]/session/[sessionId]/results/page.tsx"
+    },
+    {
+      "path": "/dashboard/quiz/:mode/session/:sessionId/review",
+      "file": "src/app/dashboard/quiz/[mode]/session/[sessionId]/review/page.tsx"
+    },
+    {
+      "path": "/dashboard/quiz/:mode/setup",
+      "file": "src/app/dashboard/quiz/[mode]/setup/page.tsx"
+    },
+    {
+      "path": "/dashboard/quiz/session/:sessionId",
+      "file": "src/app/dashboard/quiz/session/[sessionId]/page.tsx"
+    },
+    {
+      "path": "/dashboard/quiz/session/:sessionId/results",
+      "file": "src/app/dashboard/quiz/session/[sessionId]/results/page.tsx"
+    },
+    {
+      "path": "/dashboard/quiz/session/:sessionId/review",
+      "file": "src/app/dashboard/quiz/session/[sessionId]/review/page.tsx"
+    },
+    {
+      "path": "/dashboard/quiz/sessions",
+      "file": "src/app/dashboard/quiz/sessions/page.tsx"
+    },
+    {
       "path": "/dashboard/results-day",
       "file": "src/app/dashboard/results-day/page.tsx"
     },
@@ -297,24 +353,8 @@
       "file": "src/app/dashboard/settings/page.tsx"
     },
     {
-      "path": "/dashboard/settings/billing",
-      "file": "src/app/dashboard/settings/billing/page.tsx"
-    },
-    {
-      "path": "/dashboard/settings/developer",
-      "file": "src/app/dashboard/settings/developer/page.tsx"
-    },
-    {
       "path": "/dashboard/studio",
       "file": "src/app/dashboard/studio/page.tsx"
-    },
-    {
-      "path": "/dashboard/trail",
-      "file": "src/app/dashboard/trail/page.tsx"
-    },
-    {
-      "path": "/dashboard/trails",
-      "file": "src/app/dashboard/trails/page.tsx"
     },
     {
       "path": "/dashboard/upgrade",
@@ -417,28 +457,52 @@
       "file": "src/app/quiz/[mode]/setup/page.tsx"
     },
     {
+      "path": "/quiz/session/:sessionId",
+      "file": "src/app/quiz/session/[sessionId]/page.tsx"
+    },
+    {
+      "path": "/quiz/session/:sessionId/results",
+      "file": "src/app/quiz/session/[sessionId]/results/page.tsx"
+    },
+    {
+      "path": "/quiz/session/:sessionId/review",
+      "file": "src/app/quiz/session/[sessionId]/review/page.tsx"
+    },
+    {
+      "path": "/quiz/sessions",
+      "file": "src/app/quiz/sessions/page.tsx"
+    },
+    {
       "path": "/register",
       "file": "src/app/(auth)/register/page.tsx"
-    },
-    {
-      "path": "/settings",
-      "file": "src/app/settings/page.tsx"
-    },
-    {
-      "path": "/test-3d",
-      "file": "src/app/test-3d/page.tsx"
     },
     {
       "path": "/tools",
       "file": "src/app/tools/page.tsx"
     },
     {
+      "path": "/tools/chb",
+      "file": "src/app/tools/chb/page.tsx"
+    },
+    {
+      "path": "/tools/drywall",
+      "file": "src/app/tools/drywall/page.tsx"
+    },
+    {
       "path": "/tools/floor-tiles-calculator",
       "file": "src/app/tools/floor-tiles-calculator/page.tsx"
     },
     {
+      "path": "/tools/flooring",
+      "file": "src/app/tools/flooring/page.tsx"
+    },
+    {
       "path": "/tools/lot-plotter",
       "file": "src/app/tools/lot-plotter/page.tsx"
+    },
+    {
+      "path": "/tools/paint",
+      "file": "src/app/tools/paint/page.tsx"
     },
     {
       "path": "/tools/wall-paint-calculator",
@@ -455,8 +519,8 @@
       "file": "src/app/developer/layout.tsx"
     },
     {
-      "path": "/test-3d",
-      "file": "src/app/test-3d/layout.tsx"
+      "path": "/admin/ai-audit",
+      "file": "src/app/admin/ai-audit/layout.tsx"
     },
     {
       "path": "/admin/search",
@@ -473,6 +537,10 @@
     {
       "path": "/dashboard/score-reveal",
       "file": "src/app/dashboard/score-reveal/layout.tsx"
+    },
+    {
+      "path": "/dashboard/quiz",
+      "file": "src/app/dashboard/quiz/layout.tsx"
     },
     {
       "path": "/dashboard/3d-lab",
@@ -505,10 +573,6 @@
     {
       "path": "/",
       "file": "src/app/layout.tsx"
-    },
-    {
-      "path": "/calculators",
-      "file": "src/app/calculators/layout.tsx"
     }
   ],
   "loading": [
@@ -583,6 +647,46 @@
     {
       "path": "/admin/pipeline",
       "file": "src/app/admin/pipeline/loading.tsx"
+    },
+    {
+      "path": "/admin/ai-audit/articles/:articleId",
+      "file": "src/app/admin/ai-audit/articles/[articleId]/loading.tsx"
+    },
+    {
+      "path": "/admin/ai-audit/articles",
+      "file": "src/app/admin/ai-audit/articles/loading.tsx"
+    },
+    {
+      "path": "/admin/ai-audit/findings",
+      "file": "src/app/admin/ai-audit/findings/loading.tsx"
+    },
+    {
+      "path": "/admin/ai-audit/findings/:findingId",
+      "file": "src/app/admin/ai-audit/findings/[findingId]/loading.tsx"
+    },
+    {
+      "path": "/admin/ai-audit",
+      "file": "src/app/admin/ai-audit/loading.tsx"
+    },
+    {
+      "path": "/admin/ai-audit/runs/:runId",
+      "file": "src/app/admin/ai-audit/runs/[runId]/loading.tsx"
+    },
+    {
+      "path": "/admin/ai-audit/runs",
+      "file": "src/app/admin/ai-audit/runs/loading.tsx"
+    },
+    {
+      "path": "/admin/ai-audit/proposals",
+      "file": "src/app/admin/ai-audit/proposals/loading.tsx"
+    },
+    {
+      "path": "/admin/ai-audit/questions/:questionId",
+      "file": "src/app/admin/ai-audit/questions/[questionId]/loading.tsx"
+    },
+    {
+      "path": "/admin/ai-audit/questions",
+      "file": "src/app/admin/ai-audit/questions/loading.tsx"
     },
     {
       "path": "/admin/activity",
@@ -715,6 +819,18 @@
     {
       "path": "/dashboard/welcome-pro",
       "file": "src/app/dashboard/welcome-pro/loading.tsx"
+    },
+    {
+      "path": "/dashboard/quiz/:mode/setup",
+      "file": "src/app/dashboard/quiz/[mode]/setup/loading.tsx"
+    },
+    {
+      "path": "/dashboard/quiz",
+      "file": "src/app/dashboard/quiz/loading.tsx"
+    },
+    {
+      "path": "/dashboard/quiz/session/:sessionId",
+      "file": "src/app/dashboard/quiz/session/[sessionId]/loading.tsx"
     },
     {
       "path": "/dashboard/3d-lab/:moduleId",
@@ -895,6 +1011,10 @@
       "file": "src/app/dashboard/3d-lab/error.tsx"
     },
     {
+      "path": "/dashboard/wiki",
+      "file": "src/app/dashboard/wiki/error.tsx"
+    },
+    {
       "path": "/dashboard",
       "file": "src/app/dashboard/error.tsx"
     },
@@ -1017,18 +1137,6 @@
       "dynamic": null,
       "usesSupabase": true,
       "usesAuth": true,
-      "usesExternalFetch": false
-    },
-    {
-      "path": "/api/webhooks/lemonsqueezy",
-      "file": "src/app/api/webhooks/lemonsqueezy/route.ts",
-      "methods": [
-        "POST"
-      ],
-      "runtime": null,
-      "dynamic": null,
-      "usesSupabase": true,
-      "usesAuth": false,
       "usesExternalFetch": false
     },
     {
