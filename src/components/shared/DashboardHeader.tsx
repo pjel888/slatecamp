@@ -3,6 +3,7 @@
 import { useMemo } from 'react'
 import { usePathname } from 'next/navigation'
 import { getPageTitle } from '@/lib/routes'
+import { getCategoryHero } from '@/lib/category-hero-config'
 import { HeaderActions } from '@/components/layout/HeaderActions'
 
 interface DashboardHeaderProps {
@@ -11,11 +12,12 @@ interface DashboardHeaderProps {
 
 export const DashboardHeader = ({ userId }: DashboardHeaderProps) => {
   const pathname = usePathname()
+  const safePath = pathname ?? '/dashboard'
 
   const title = useMemo(() => {
-    const safePath = pathname ?? '/dashboard'
-    return getPageTitle(safePath)
-  }, [pathname])
+    const hero = getCategoryHero(safePath)
+    return hero?.subtitle ?? getPageTitle(safePath)
+  }, [safePath])
 
   return (
     <header className='flex items-center justify-between border-b border-border bg-card h-16 px-4'>

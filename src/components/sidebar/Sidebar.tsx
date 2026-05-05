@@ -8,9 +8,7 @@ import { SidebarNavItem } from './SidebarNavItem'
 import { SidebarFooter } from './SidebarFooter'
 import { SIDEBAR_GROUPS, DASHBOARD_ITEM, SETTINGS_ITEM } from './sidebar-constants'
 import {
-  SIDEBAR_DIVIDER_INSET,
   SIDEBAR_PADDING,
-  SIDEBAR_SECTION_GAP,
   SIDEBAR_WIDTH_COLLAPSED,
   SIDEBAR_WIDTH_EXPANDED,
   TRANSITION,
@@ -127,9 +125,8 @@ export const Sidebar = ({ userDisplay, tier, isAdmin: _isAdmin, isDevMode: _isDe
     exact ? pathname === href : pathname === href || pathname.startsWith(href + '/')
 
   const sidebarPaddingStyle = { paddingInline: SIDEBAR_PADDING }
-  const dividerStyle = {
-    marginInline: SIDEBAR_DIVIDER_INSET,
-    marginBlock: SIDEBAR_SECTION_GAP,
+  const dashboardRegionStyle = {
+    paddingInline: SIDEBAR_PADDING,
   }
 
   return (
@@ -171,10 +168,13 @@ export const Sidebar = ({ userDisplay, tier, isAdmin: _isAdmin, isDevMode: _isDe
         {/* Scrollable body */}
         <div
           style={{ padding: 0 }}
-          className="flex flex-1 flex-col overflow-y-auto overflow-x-hidden py-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+          className="flex flex-1 flex-col overflow-y-auto overflow-x-hidden [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
         >
-          {/* Dashboard — standalone */}
-          <div className="pt-2" style={sidebarPaddingStyle}>
+          {/* Dashboard — standalone; bottom rule aligns with HeaderHero bottom edge. */}
+          <div
+            className="flex h-[72px] shrink-0 items-center border-b border-border xl:h-[76px]"
+            style={dashboardRegionStyle}
+          >
             <SidebarNavItem
               item={DASHBOARD_ITEM}
               isActive={isActive(DASHBOARD_ITEM.href, true)}
@@ -185,11 +185,8 @@ export const Sidebar = ({ userDisplay, tier, isAdmin: _isAdmin, isDevMode: _isDe
             />
           </div>
 
-          {/* Separator */}
-          <div className="border-t border-border" style={dividerStyle} />
-
           {/* Nav groups */}
-          <div className="flex flex-col gap-3" style={sidebarPaddingStyle}>
+          <div className="flex flex-col gap-3 pt-3" style={sidebarPaddingStyle}>
             {SIDEBAR_GROUPS.map((group, groupIdx) => (
               <div key={group.key} className="flex flex-col gap-1">
                 {/* Group header slot stays mounted at the same height in both states.
