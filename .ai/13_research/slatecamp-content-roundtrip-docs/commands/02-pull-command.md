@@ -1,8 +1,12 @@
-# Export Command Spec
+# Pull Command Spec
 
 ## Purpose
 
 Pull article bundles from Supabase and write them locally.
+
+Preferred package script: `content-audit:pull`.
+
+Legacy alias: `content-audit:export`.
 
 ## Inputs
 

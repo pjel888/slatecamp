@@ -226,7 +226,7 @@ async function main() {
     await writeJson(path.join(exportRoot, 'manifest.json'), manifest)
     await writeJson(path.join(exportRoot, 'export-summary.json'), manifest)
     await writeRunLog(exportRoot, exportId, {
-      command: 'content-audit:export',
+      command: 'content-audit:pull',
       started_at: startedAt,
       completed_at: manifest.export_completed_at,
       changed_only: manifest.changed_only,

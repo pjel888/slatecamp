@@ -6,7 +6,7 @@ All commands run from the repository root with Bun.
 
 | Command family | Live Supabase mutation? | Default safety | Notes |
 | --- | --- | --- | --- |
-| export / normalize / inventory / compose / diff / validate | No article mutation | Local files only | Export reads Supabase; generated files stay under `.ai/content-audit-export/`. |
+| pull/export / normalize / inventory / compose / diff / validate | No article mutation | Local files only | Pull reads Supabase; generated files stay under `.ai/content-audit-export/`. `content-audit:export` remains a legacy alias. |
 | push dry-run | No | Dry-run | Fetches remote content for stale checks only. |
 | push apply | Yes | Explicit `--apply` required | Requires scope and clean safety gates. |
 | question push dry-run | No | Dry-run | Fetches remote question for stale checks only. |
@@ -18,7 +18,7 @@ All commands run from the repository root with Bun.
 ## Full local export and round-trip preparation
 
 ```bash
-bun run content-audit:export -- --all --overwrite true --include-questions true --include-sources true --include-taxonomy true
+bun run content-audit:pull -- --all --overwrite true --include-questions true --include-sources true --include-taxonomy true
 bun run content-audit:normalize -- --all --overwrite
 bun run content-audit:inventory
 bun run content-audit:component-suggestions -- --all
@@ -33,7 +33,7 @@ This creates and verifies local generated data under `.ai/content-audit-export/`
 ## Three-article smoke run
 
 ```bash
-bun run content-audit:export -- --limit 3 --overwrite true --include-questions true --include-sources true --include-taxonomy true
+bun run content-audit:pull -- --limit 3 --overwrite true --include-questions true --include-sources true --include-taxonomy true
 bun run content-audit:normalize -- --all --overwrite
 bun run content-audit:inventory
 bun run content-audit:component-suggestions -- --all
@@ -48,7 +48,7 @@ bun run content-audit:validate -- --all --summary
 If the export baseline already exists and you only want remotely changed articles:
 
 ```bash
-bun run content-audit:export -- --changed-only --overwrite true --include-questions true --include-sources true --include-taxonomy true
+bun run content-audit:pull -- --changed-only --overwrite true --include-questions true --include-sources true --include-taxonomy true
 ```
 
 ## Per-article editing loop

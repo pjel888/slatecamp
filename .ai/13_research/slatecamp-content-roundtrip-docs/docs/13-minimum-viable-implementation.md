@@ -5,7 +5,7 @@ The first implementation does not need to solve everything.
 ## MVP commands
 
 ```bash
-bun run content-audit:export
+bun run content-audit:pull
 bun run content-audit:normalize
 bun run content-audit:components
 bun run content-audit:diff -- --article-id <article_id>

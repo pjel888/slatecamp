@@ -47,7 +47,7 @@ export const getConfidenceMatrix = async (
   let topicNameMap = new Map<string, string>()
   if (topicIds.length > 0) {
     const { data: topics } = await supabase
-      .from('taxonomy_nodes')
+      .from('taxonomy_tree')
       .select('node_id, name')
       .in('node_id', topicIds)
 

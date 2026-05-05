@@ -73,6 +73,7 @@ Generated: 2026-05-04T00:41:36.514Z
 | `perf:3d:controls-audit` | `bun .ai/00_performance/scripts/3d-lab-layout-controls-audit.mjs --mode=controls` |
 | `perf:3d:layout-consistency` | `PLAYWRIGHT_DEMO_AUTH=true PLAYWRIGHT_USE_BUILT_APP=true THREED_FAIL_ON_CRITICAL=true THREED_MODE=layout-consistency bunx playwright test --config=.ai/00_performance/playwright/playwright.3d.config.ts --project=chromium --workers=1` |
 | `perf:3d:interaction-consistency` | `PLAYWRIGHT_DEMO_AUTH=true PLAYWRIGHT_USE_BUILT_APP=true THREED_FAIL_ON_CRITICAL=true THREED_MODE=interaction-consistency bunx playwright test --config=.ai/00_performance/playwright/playwright.3d.config.ts --project=chromium --workers=1` |
+| `content-audit:pull` | `bun scripts/content-audit/export-article-bundles.ts` |
 | `content-audit:export` | `bun scripts/content-audit/export-article-bundles.ts` |
 | `content-audit:normalize` | `bun scripts/content-audit/normalize-article-bundles.ts` |
 | `content-audit:inventory` | `bun scripts/content-audit/scan-component-inventory.ts` |

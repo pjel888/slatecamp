@@ -12,6 +12,10 @@ import {
 import type { AdminPermission } from "@/lib/entitlements/types";
 import { logEntitlementAuditEvent } from "@/lib/entitlements/audit";
 import { logEdgeError } from "@/lib/logging/edge";
+import {
+  isDevForceUserAllowed,
+  isDevPortalBypassAllowed,
+} from "@/lib/env/production-guardrails";
 
 const ADMIN_PATH_PERMISSIONS: Array<[RegExp, AdminPermission]> = [
   [/^\/admin\/ai-audit(?:\/|$)/, 'admin.content.view'],
@@ -80,9 +84,7 @@ export const updateSession = async (request: NextRequest) => {
   // 1.5 LOCAL DEV ABSOLUTE BYPASS
   // If we are in development and have a force user ID, we allow everything.
   const isDev = process.env.NODE_ENV === 'development';
-  const hasForceUser =
-    process.env.DISABLE_DEV_FORCE_USER_ID !== 'true' &&
-    !!process.env.DEV_FORCE_USER_ID;
+  const hasForceUser = isDevForceUserAllowed();
 
   if (isDev && hasForceUser) {
     // If user tries to go to login while forced, send them to dashboard
@@ -114,7 +116,7 @@ export const updateSession = async (request: NextRequest) => {
         userMetadataRole: demoUser.user_metadata?.role,
         forcedUserIdActive: false,
       })
-      const allowDeveloperBypass = process.env.ALLOW_DEV_PORTAL_BYPASS === 'true'
+      const allowDeveloperBypass = isDevPortalBypassAllowed()
       const canAccess = hasPrivilegedRouteAccess({
         pathname,
         isAdminPath,
@@ -216,7 +218,7 @@ export const updateSession = async (request: NextRequest) => {
       forcedUserIdActive: isDev && hasForceUser,
     })
 
-    const allowDeveloperBypass = process.env.ALLOW_DEV_PORTAL_BYPASS === 'true'
+    const allowDeveloperBypass = isDevPortalBypassAllowed()
 
     const canAccess = hasPrivilegedRouteAccess({
       pathname,

@@ -93,7 +93,8 @@ The content-roundtrip toolchain:
 - `content-audit:validate` — validates roundtrip integrity
 - `content-audit:roundtrip` — full roundtrip
 - `content-audit:normalize` — normalize raw content
-- `content-audit:export` — export from Supabase
+- `content-audit:pull` — pull/export from Supabase into local bundles
+- `content-audit:export` — legacy alias for `content-audit:pull`
 - `content-audit:inventory` — inventory
 - `content-audit:fact-check` — fact-check
 - `content-audit:diff` — show diffs

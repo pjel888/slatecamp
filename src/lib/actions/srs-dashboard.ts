@@ -1,6 +1,6 @@
 "use server";
 
-import { createClient } from "@/lib/supabase/server";
+import { createClient, getUser } from "@/lib/supabase/server";
 import { retentionAfterDays } from "@/lib/srs/retention";
 
 export interface SRSDashboardData {
@@ -11,15 +11,21 @@ export interface SRSDashboardData {
 }
 
 export async function getSRSDashboardData(
-  examProfileId: string
+  _examProfileId: string
 ): Promise<SRSDashboardData> {
   const supabase = await createClient();
+  const {
+    data: { user },
+  } = await getUser();
+
+  if (!user) throw new Error("Unauthorized");
+
   const now = new Date().toISOString();
 
   const { data: dueItems } = await supabase
-    .from("srs_queue")
+    .from("user_srs_cards")
     .select("updated_at, interval_days")
-    .eq("exam_profile_id", examProfileId)
+    .eq("user_id", user.id)
     .lte("next_review_at", now);
 
   if (dueItems && dueItems.length > 0) {
@@ -38,9 +44,9 @@ export async function getSRSDashboardData(
   }
 
   const { data: nextItems } = await supabase
-    .from("srs_queue")
+    .from("user_srs_cards")
     .select("next_review_at")
-    .eq("exam_profile_id", examProfileId)
+    .eq("user_id", user.id)
     .gt("next_review_at", now)
     .order("next_review_at", { ascending: true })
     .limit(1);
@@ -49,9 +55,9 @@ export async function getSRSDashboardData(
   let nextReviewCount = 0;
   if (nextReviewAt) {
     const { count } = await supabase
-      .from("srs_queue")
+      .from("user_srs_cards")
       .select("id", { count: "exact", head: true })
-      .eq("exam_profile_id", examProfileId)
+      .eq("user_id", user.id)
       .eq("next_review_at", nextReviewAt);
     nextReviewCount = count ?? 0;
   }

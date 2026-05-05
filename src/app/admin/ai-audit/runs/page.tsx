@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 import { Card } from '@/components/ui/card'
 import { getAiAuditRunRows } from '@/lib/queries/admin-ai-audit'
 import { parseAiAuditListParams, labelFromValue } from '@/lib/admin/ai-audit-utils'
-import { AuditEmptyState, AuditFilterForm, AuditStatusBadge, ManualRunForm, PaginationControls, RunStatusForm } from '@/components/admin/ai-audit/AiAuditShared'
+import { AuditEmptyState, AuditFilterForm, AuditStatusBadge, LocalContentPipelineCard, ManualRunForm, PaginationControls, RunStatusForm } from '@/components/admin/ai-audit/AiAuditShared'
 
 export const metadata: Metadata = { title: 'AI Audit Runs — SlateCamp Admin' }
 
@@ -27,6 +27,7 @@ export default async function AiAuditRunsPage({ searchParams }: PageProps) {
 
   return (
     <div className="space-y-4">
+      <LocalContentPipelineCard />
       <ManualRunForm returnTo={returnTo} />
       <AuditFilterForm action="/admin/ai-audit/runs" defaults={{ q: params.q, status: params.status, phase: params.phase }} placeholder="Search run type, scope, provider, or notes" />
       <Card className="overflow-hidden">

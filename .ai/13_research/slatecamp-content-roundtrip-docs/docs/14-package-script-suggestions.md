@@ -7,6 +7,7 @@ Example:
 ```json
 {
   "scripts": {
+    "content-audit:pull": "tsx scripts/content-audit/export-article-bundles.ts",
     "content-audit:export": "tsx scripts/content-audit/export-article-bundles.ts",
     "content-audit:normalize": "tsx scripts/content-audit/normalize-markdown.ts",
     "content-audit:components": "tsx scripts/content-audit/scan-component-inventory.ts",

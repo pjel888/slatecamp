@@ -3,6 +3,7 @@ import { spawnSync } from 'node:child_process'
 import { parseArgs } from './lib'
 
 const commandMap: Record<string, string> = {
+  pull: 'scripts/content-audit/export-article-bundles.ts',
   export: 'scripts/content-audit/export-article-bundles.ts',
   normalize: 'scripts/content-audit/normalize-article-bundles.ts',
   inventory: 'scripts/content-audit/scan-component-inventory.ts',

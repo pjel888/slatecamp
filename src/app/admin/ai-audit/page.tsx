@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert'
 import { getAiAuditDashboardData } from '@/lib/queries/admin-ai-audit'
-import { AuditEmptyState, AuditSeverityBadge, AuditStatusBadge, MetricDistribution, StatCard } from '@/components/admin/ai-audit/AiAuditShared'
+import { AuditEmptyState, AuditSeverityBadge, AuditStatusBadge, LocalContentPipelineCard, MetricDistribution, StatCard } from '@/components/admin/ai-audit/AiAuditShared'
 import { labelFromValue } from '@/lib/admin/ai-audit-utils'
 
 export const metadata: Metadata = { title: 'AI Audit Control Center — SlateCamp Admin' }
@@ -41,6 +41,8 @@ export default async function AiAuditDashboardPage() {
       </div>
 
       {!hasAnyAuditData && <AuditEmptyState />}
+
+      <LocalContentPipelineCard compact />
 
       <div className="grid gap-6 xl:grid-cols-2">
         <MetricDistribution

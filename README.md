@@ -12,11 +12,12 @@ The current app is a **pre-launch MVP**: broad and operationally mature, but sti
 
 This launch pass is explicitly **payment-free and live-AI-provider-free**. PayRex checkout/webhook verification, LemonSqueezy, and live OpenAI/Anthropic provider behavior are deferred post-launch work, not blockers for the current launch scope. Public copy now emphasizes source-backed learning rather than live AI. Payment UI remains disabled unless `NEXT_PUBLIC_PAYMENTS_ENABLED=true` is intentionally set for a future paid launch.
 
-- **Status:** Pre-launch MVP.
+- **Status:** Pre-launch MVP; app-layer beta candidate / validation-ready, but **not production-ready**.
+- **Production blocker:** Supabase verification and release governance: safe non-production target, `supabase/config.toml`, 101-migration replay, AI audit DB permission verification, regenerated Supabase types, and production/staging env platform review.
+- **Current launch cutline:** payment-free and live-AI-provider-free. Payment, PayRex live checkout/webhooks, OpenAI/Anthropic-backed tutoring, and live AI chatbot/provider behavior are deferred future work, not current launch blockers.
 - **Primary user:** LEA candidate/student.
 - **Internal users:** content/admin operators, developers, and owner/CEO operators.
-- **Current post-cleanup counts (2026-05-03):** **567 articles**, **7,159 questions**, 109 page routes, 11 App Router route handlers, 13 layouts, 92 loading states, 7 error boundaries, 157 server/action/query files, 76 schema tables, 92 migrations, 88 test/spec files, 100 Storybook stories.
-- **Important working-tree note:** this audit started with pre-existing uncommitted source changes. Documentation reflects the files currently present on disk.
+- **Important working-tree note:** this audit/remediation sequence started with pre-existing uncommitted source changes. Documentation reflects the files currently present on disk and broad `.ai`/docs diffs still require human semantic review before commit/release.
 
 ## Core Business Features
 
@@ -332,7 +333,7 @@ Active integrations are intentionally narrower after Plan B cleanup.
 | Integration | Purpose | Relevant files | Environment/config | Launch status |
 |---|---|---|---|---|
 | Supabase | Auth, Postgres data, server/client access, service-role cron/admin paths. | `src/lib/supabase/`, `middleware.ts`, `DATABASE_SCHEMA.sql`, `supabase/migrations/` | `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY` | Launch-critical |
-| PayRex | Deferred payment checkout/webhook provider; retained behind the disabled payment flag. | `src/lib/payrex/config.ts`, `src/lib/payments/provider.ts`, `src/app/api/payments/checkout/route.ts`, `src/app/api/webhooks/payrex/route.ts` | `PAYMENT_PROVIDER=payrex`, `PAYREX_SECRET_KEY`, `PAYREX_WEBHOOK_SECRET`, `NEXT_PUBLIC_PAYMENTS_ENABLED` | Deferred; not launch-blocking for the payment-free launch |
+| PayRex | Deferred payment checkout/webhook provider; SDK intentionally not bundled for the payment-free launch. Runtime routes fail closed/disabled until a future paid-launch implementation re-vets the provider. | `src/lib/payrex/config.ts`, `src/lib/payments/provider.ts`, `src/app/api/payments/checkout/route.ts`, `src/app/api/webhooks/payrex/route.ts` | `PAYMENT_PROVIDER=payrex`, `PAYREX_SECRET_KEY`, `PAYREX_WEBHOOK_SECRET`, `NEXT_PUBLIC_PAYMENTS_ENABLED` | Deferred; not launch-blocking for the payment-free launch |
 | AI provider abstraction | Tutor, Socratic, study-agent, embeddings, and question generation endpoints. | `src/lib/ai/`, `src/app/api/ai/*/route.ts`, `src/components/quiz-v2/FeedbackPanel.tsx` | `AI_PROVIDER`, `OPENAI_API_KEY`, `ANTHROPIC_API_KEY`, timeout vars | Deferred; launch UI does not depend on live providers |
 | Next ImageResponse | Public readiness OG score image. | `src/app/api/og/score/route.tsx` | none | Launch-supporting |
 | Playwright/Storybook/design lint | QA and component validation. | `playwright.config.ts`, `.storybook/`, `scripts/check-storybook.ts`, `DESIGN.md` | Playwright demo env vars | Launch-supporting |
@@ -422,14 +423,14 @@ No secret values are documented here. Use placeholders only.
 | PAYMENT_PROVIDER | Payment provider selector. Only `payrex` is supported after Plan B cleanup. | Optional; defaults to payrex | Server-only | `src/lib/payments/provider.ts` | PAYMENT_PROVIDER=payrex |
 | PAYREX_SECRET_KEY | PayRex API secret for future live checkout. | Deferred payment provider | Server-only | `src/lib/payrex/config.ts` | PAYREX_SECRET_KEY=<payrex-secret> |
 | PAYREX_WEBHOOK_SECRET | PayRex webhook verification secret for future paid launch. | Deferred payment provider | Server-only | `src/app/api/webhooks/payrex/route.ts` | PAYREX_WEBHOOK_SECRET=<payrex-webhook-secret> |
-| CRON_SECRET | Bearer token for cron endpoints. | Required for cron deployment | Server-only | `src/app/api/cron/*/route.ts` | CRON_SECRET=<random-token> |
+| CRON_SECRET | Bearer token for cron endpoints. If missing/empty, cron endpoints fail closed and do not run service-role work. | Required for cron deployment | Server-only | `src/lib/api/cron-auth.ts`; `src/app/api/cron/*/route.ts` | CRON_SECRET=<random-token> |
 | AI_PROVIDER | AI backend selector for deferred AI endpoints. | Deferred AI provider | Server-only | `src/lib/ai/provider.ts` | AI_PROVIDER=openai |
 | OPENAI_API_KEY | OpenAI key for deferred live AI provider behavior. | Deferred AI provider | Server-only | `src/lib/ai/provider.ts` | OPENAI_API_KEY=<openai-key> |
 | ANTHROPIC_API_KEY | Anthropic key for deferred teach-back / Anthropic-backed AI paths. | Deferred AI provider | Server-only | `src/lib/actions/teach-back.ts` | ANTHROPIC_API_KEY=<anthropic-key> |
 | AI_COMPLETION_TIMEOUT_MS / AI_EMBEDDING_TIMEOUT_MS / AI_STREAM_TIMEOUT_MS | Timeout tuning for deferred AI calls. | Deferred/optional | Server-only | `src/lib/ai/provider.ts and API handlers` | AI_COMPLETION_TIMEOUT_MS=30000 |
 | ADMIN_EMAILS / OWNER_EMAILS | Role/bootstrap access email allowlists. | Required for owner/admin bootstrap as configured | Server-only | `src/lib/admin/roles.ts; src/lib/queries/ceo/auth.ts` | ADMIN_EMAILS=admin@example.com |
-| ALLOW_DEV_PORTAL_BYPASS | Allows developer portal bypass in development/demo contexts. | Optional development only | Server-only | `src/lib/developer/access.ts` | ALLOW_DEV_PORTAL_BYPASS=false |
-| DEV_FORCE_TIER / DEV_FORCE_USER_ID / DISABLE_DEV_FORCE_USER_ID | Development entitlement/user override controls. | Development/test only | Server-only | `entitlement/dev helpers and tests` | DEV_FORCE_TIER=prime |
+| ALLOW_DEV_PORTAL_BYPASS | Allows developer portal bypass in development/demo contexts. It is ignored in `NODE_ENV=production` and reported by production guardrails if enabled. | Optional development only | Server-only | `src/lib/env/production-guardrails.ts`; `src/lib/developer/access.ts` | ALLOW_DEV_PORTAL_BYPASS=false |
+| DEV_FORCE_TIER / DEV_FORCE_USER_ID / DISABLE_DEV_FORCE_USER_ID | Development entitlement/user override controls. `DEV_FORCE_TIER` and `DEV_FORCE_USER_ID` are unsafe in production; production guardrails report them and runtime bypass checks ignore them. | Development/test only | Server-only | `src/lib/env/production-guardrails.ts`; entitlement/dev helpers and tests | DEV_FORCE_TIER=prime |
 | PLAYWRIGHT_* | Playwright base URL, demo auth, role/tier/email, port, and built-app toggles. | Test-only | Test automation | `scripts/playwright-run.ts; e2e specs; perf scripts` | PLAYWRIGHT_DEMO_AUTH=true |
 | PERF_* | Performance audit memory-profile labels/files. | Perf-only | Local/test automation | `.ai/00_performance/scripts/*` | PERF_MEMORY_PROFILE_LABEL=local |
 | AUDIT_BASE_URL | Audit/performance base URL override. | Optional | Local/test automation | `.ai/00_performance scripts` | AUDIT_BASE_URL=http://localhost:3000 |

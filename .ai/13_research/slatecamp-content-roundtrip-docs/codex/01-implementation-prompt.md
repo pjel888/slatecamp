@@ -36,7 +36,8 @@ Read first:
 - checklists/acceptance-criteria.md
 
 Implement commands, using existing repo conventions:
-- content-audit:export
+- content-audit:pull
+- content-audit:export legacy alias
 - content-audit:normalize
 - content-audit:components
 - content-audit:compose

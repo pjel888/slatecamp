@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server'
 import { createAdminClient } from '@/lib/supabase/admin'
+import { verifyCronRequest } from '@/lib/api/cron-auth'
 import { headers } from 'next/headers'
 
 /**
@@ -14,10 +15,10 @@ import { headers } from 'next/headers'
  */
 export async function GET(_request: Request) {
   const headersList = await headers()
-  const authHeader = headersList.get('authorization')
+  const cronAuth = verifyCronRequest(headersList.get('authorization'))
 
-  if (authHeader !== `Bearer ${process.env.CRON_SECRET}`) {
-    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+  if (cronAuth.ok === false) {
+    return cronAuth.response
   }
 
   const supabase = createAdminClient()

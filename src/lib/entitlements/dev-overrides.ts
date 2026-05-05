@@ -6,6 +6,10 @@ import {
 } from './feature-keys'
 import type { DevOverrideState } from './types'
 import { isCanonicalTier } from './normalize-tier'
+import {
+  isDevForceUserAllowed,
+  isDevPortalBypassAllowed,
+} from '@/lib/env/production-guardrails'
 
 export const DEV_OVERRIDE_COOKIE_NAME = 'cerebro_dev_flags'
 
@@ -70,11 +74,10 @@ export const resolveDevOverrides = async (): Promise<DevOverrideState> => {
   const simulatedTier = parseTier(cookiePayload.simulatedTier)
   const legacySpoofedTier = parseTier(cookiePayload.spoofedTier)
   const forcedTier = parseTier(process.env.DEV_FORCE_TIER)
-  const forcedUserIdActive =
-    process.env.NODE_ENV === 'development' && Boolean(process.env.DEV_FORCE_USER_ID)
+  const forcedUserIdActive = isDevForceUserAllowed()
   const localDevBypassActive =
     process.env.NODE_ENV === 'development' && !process.env.NEXT_PUBLIC_SUPABASE_URL
-  const allowDevPortalBypass = process.env.ALLOW_DEV_PORTAL_BYPASS === 'true'
+  const allowDevPortalBypass = isDevPortalBypassAllowed()
 
   if (simulatedTier) {
     sourceTrace.push(`cookie:simulatedTier(${simulatedTier})`)

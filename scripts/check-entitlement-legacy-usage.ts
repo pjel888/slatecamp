@@ -39,6 +39,8 @@ const BANNED_PATTERNS = [
     pattern: /\b(?:DEV_FORCE_USER_ID|DEV_FORCE_TIER|ALLOW_DEV_PORTAL_BYPASS)\b/,
     message: 'Direct entitlement-affecting env usage is banned outside the canonical boundary.',
     allowlist: [
+      'src/lib/env/production-guardrails.ts',
+      'src/lib/env/production-guardrails.test.ts',
       'src/lib/entitlements/dev-overrides.ts',
       'src/lib/entitlements/dev-overrides.test.ts',
       'src/lib/entitlements/get-viewer-entitlements.ts',
