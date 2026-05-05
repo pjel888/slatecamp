@@ -1,5 +1,5 @@
 // Analytics Page — Server Component
-// layout.tsx provides SharedPageLayout — do NOT re-wrap here.
+// layout.tsx provides DataLayout — do NOT re-wrap here.
 import { AnalyticsChartContainer } from '@/components/shared/analytics-chart-container'
 import { ReadinessSection } from '@/components/analytics/ReadinessSection'
 import { ExamCountdownSection } from '@/components/analytics/ExamCountdownSection'

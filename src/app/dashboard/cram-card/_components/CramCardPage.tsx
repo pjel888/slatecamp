@@ -18,12 +18,11 @@ export const CramCardPage = ({ data }: Props) => {
 
   return (
     <div className="flex flex-col gap-4">
-      {/* Page header */}
+      {/* Page context */}
       <div className="flex flex-col gap-1">
         <p className="font-mono text-[9px] text-primary tracking-widest uppercase">
           YOUR CRAM CARD
         </p>
-        <h1 className="text-xl font-semibold text-foreground">Values to memorize</h1>
         <p className="text-sm text-muted-foreground">
           {entries.length === 0
             ? 'No entries yet — keep practicing to surface your weakest numerical values.'

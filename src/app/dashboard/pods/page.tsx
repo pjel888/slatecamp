@@ -3,6 +3,7 @@ import { getUser } from '@/lib/supabase/server'
 import { ROUTES } from '@/lib/routes'
 import { getUserPods } from '@/lib/actions/pods'
 import { PodHub } from './_components/PodHub'
+import { DataLayout } from '@/components/layouts/category/DataLayout'
 import { getViewerEntitlements } from '@/lib/entitlements/get-viewer-entitlements'
 import { ENTITLEMENT_FEATURE_KEYS } from '@/lib/entitlements/feature-keys'
 
@@ -24,9 +25,14 @@ const PodsPage = async () => {
     entitlements.decisions[ENTITLEMENT_FEATURE_KEYS.questionsUnlimited]?.allowed ?? false
 
   return (
-    <div className="mx-auto max-w-xl px-4 py-6">
+    <DataLayout
+      hero={{
+        subtitle: 'Study Pods',
+        description: 'Join or create a study pod. Learn together, stay accountable, and track each other\'s progress.',
+      }}
+    >
       <PodHub pods={pods} isPro={isPro} />
-    </div>
+    </DataLayout>
   )
 }
 

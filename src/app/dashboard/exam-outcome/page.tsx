@@ -1,7 +1,7 @@
 import { redirect } from 'next/navigation'
 import { ROUTES } from '@/lib/routes'
 import { getUser } from '@/lib/supabase/server'
-import SharedPageLayout from '@/components/layouts/SharedPageLayout'
+import { DataLayout } from '@/components/layouts/category/DataLayout'
 import ExamOutcomeSurvey from './ExamOutcomeSurvey'
 
 /**
@@ -25,21 +25,14 @@ const ExamOutcomePage = async () => {
   if (!user) redirect(ROUTES.auth.login)
 
   return (
-    <SharedPageLayout>
-      <div className="mx-auto w-full max-w-md px-4 py-12">
-        <h1 className="font-[family-name:var(--font-boldonse)] text-xl font-bold text-text-primary">
-          How did the {CURRENT_EXAM_BATCH} LEA go?
-        </h1>
-        <p className="mt-2 text-sm text-text-secondary">
-          Your response helps us improve SlateCamp for the next batch of candidates.
-          Takes about 30 seconds.
-        </p>
-
-        <div className="mt-6">
-          <ExamOutcomeSurvey examBatch={CURRENT_EXAM_BATCH} />
-        </div>
-      </div>
-    </SharedPageLayout>
+    <DataLayout
+      hero={{
+        subtitle: `How did the ${CURRENT_EXAM_BATCH} LEA go?`,
+        description: 'Your response helps us improve SlateCamp for the next batch of candidates. Takes about 30 seconds.',
+      }}
+    >
+      <ExamOutcomeSurvey examBatch={CURRENT_EXAM_BATCH} />
+    </DataLayout>
   )
 }
 

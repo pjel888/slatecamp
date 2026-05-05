@@ -4,6 +4,7 @@ import { getUser } from '@/lib/supabase/server'
 import { ROUTES } from '@/lib/routes'
 import { getDAEState } from '@/lib/actions/dae-mode'
 import { DAEModeClient } from './_components/DAEModeClient'
+import { PracticeLayout } from '@/components/layouts/category/PracticeLayout'
 import { Skeleton } from '@/components/ui/skeleton'
 
 const DAEContent = async () => {
@@ -15,11 +16,18 @@ const DAEContent = async () => {
   const { savedContexts, userTier, dailyUsedCount } = await getDAEState()
 
   return (
-    <DAEModeClient
-      savedContexts={savedContexts}
-      userTier={userTier}
-      dailyUsedCount={dailyUsedCount}
-    />
+    <PracticeLayout
+      hero={{
+        subtitle: 'DAE Maintenance Mode',
+        description: 'Stay current with the codes you use every day.',
+      }}
+    >
+      <DAEModeClient
+        savedContexts={savedContexts}
+        userTier={userTier}
+        dailyUsedCount={dailyUsedCount}
+      />
+    </PracticeLayout>
   )
 }
 

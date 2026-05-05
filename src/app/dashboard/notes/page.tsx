@@ -1,6 +1,7 @@
 import { createClient, getUser } from '@/lib/supabase/server'
 import { NotesShell } from '@/components/notes/NotesShell'
 import { snippet } from '@/lib/utils/text'
+import { LearnLayout } from '@/components/layouts/category/LearnLayout'
 import type { NoteStub } from '@/types/app'
 
 type NotesPageProps = { searchParams?: Promise<{ open?: string }> }
@@ -42,13 +43,20 @@ export default async function NotesPage({ searchParams }: NotesPageProps) {
   }))
 
   return (
-    <div className="h-full w-full overflow-hidden">
+    <LearnLayout
+      hero={{
+        subtitle: 'Notes',
+        description:
+          'Your personal study notebook. Capture insights from articles, quiz questions, and design problems — all linked to their source.',
+      }}
+      fullHeight
+    >
       <NotesShell
         initialNotes={initialNotes}
         initialFolders={folders ?? []}
         initialOpenNoteId={initialOpenNoteId}
         userId={user.id}
       />
-    </div>
+    </LearnLayout>
   )
 }

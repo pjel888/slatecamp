@@ -57,16 +57,6 @@ interface StudioHubProps {
 export const StudioHub = ({ userName: _userName }: StudioHubProps) => {
   return (
     <div className="flex flex-col gap-6 w-full max-w-3xl mx-auto py-6 px-4">
-      {/* Header */}
-      <div className="flex flex-col gap-1">
-        <h1 className="text-xl font-semibold text-foreground">
-          Studio Mode
-        </h1>
-        <p className="text-sm text-muted-foreground">
-          Your code reference library for design projects.
-        </p>
-      </div>
-
       {/* Card grid — 2×2 desktop, single column mobile */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         {STUDIO_CARDS.map((card) => {

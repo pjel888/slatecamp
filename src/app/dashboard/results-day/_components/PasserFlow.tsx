@@ -57,9 +57,9 @@ const PasserFlow = ({ firstName }: PasserFlowProps) => {
         <p className="text-xs font-semibold uppercase tracking-widest text-white/60 mb-2">
           Licensure Examination for Architects (LEA)
         </p>
-        <h1 className="text-2xl font-bold text-white leading-tight">
+        <p className="text-2xl font-bold text-white leading-tight">
           Architect{firstName ? ` ${firstName}` : ''}. You did it.
-        </h1>
+        </p>
         <p className="mt-3 text-sm text-white/75 leading-relaxed max-w-sm mx-auto">
           Your SlateCamp heatmap is now your professional reference library.
           The building codes you studied are the building codes you&apos;ll practice with.

@@ -76,18 +76,8 @@ const DAEModeClient = ({
   }
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-[560px] mx-auto px-4 py-8">
-        {/* Header */}
-        <div className="mb-7">
-          <h1 className="text-[22px] font-semibold text-foreground">
-            DAE Maintenance Mode
-          </h1>
-          <p className="text-[14px] text-muted-foreground mt-1">
-            Stay current with the codes you use every day.
-          </p>
-        </div>
-
+    <div>
+      <div className="max-w-[560px] mx-auto px-4 py-4">
         {/* Free tier usage indicator */}
         {isFree && (
           <div className="mb-5 rounded-md border border-border bg-card px-4 py-3 flex items-center justify-between">

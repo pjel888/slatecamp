@@ -1,6 +1,6 @@
 import { getStudioModeData } from '@/lib/actions/studio-mode'
 import { StudioHub } from './_components/StudioHub'
-import SharedPageLayout from '@/components/layouts/SharedPageLayout'
+import { ExploreLayout } from '@/components/layouts/category/ExploreLayout'
 
 export const metadata = {
   title: 'Studio Mode',
@@ -10,8 +10,13 @@ export default async function StudioPage() {
   const { userName } = await getStudioModeData()
 
   return (
-    <SharedPageLayout>
+    <ExploreLayout
+      hero={{
+        subtitle: 'Studio Mode',
+        description: 'Your creative workspace for architectural design exploration.',
+      }}
+    >
       <StudioHub userName={userName} />
-    </SharedPageLayout>
+    </ExploreLayout>
   )
 }

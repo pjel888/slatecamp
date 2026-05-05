@@ -1,28 +1,9 @@
-import { getScenarios } from '@/lib/design-scenarios'
-import SharedPageLayout from '@/components/layouts/SharedPageLayout'
-import { ScenarioList } from './_components/ScenarioList'
+import { redirect } from 'next/navigation'
 
 export const metadata = { title: 'Design Quiz' }
 
-const DesignQuizPage = async () => {
-  const scenarios = await getScenarios()
-
-  return (
-    <SharedPageLayout>
-      <div className='max-w-4xl mx-auto px-4 py-6 w-full'>
-        <div className='mb-6'>
-          <h1 className='text-xl font-semibold text-foreground'>
-            Design Quiz
-          </h1>
-          <p className='mt-1 text-sm text-muted-foreground'>
-            Scenario-based computation questions. Each scenario shares a brief and site data — questions build on each other.
-          </p>
-        </div>
-
-        <ScenarioList scenarios={scenarios} />
-      </div>
-    </SharedPageLayout>
-  )
+const DesignQuizPage = () => {
+  redirect('/dashboard/quiz?mode=design')
 }
 
 export default DesignQuizPage

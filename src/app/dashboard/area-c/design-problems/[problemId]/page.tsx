@@ -5,7 +5,7 @@ import { ArrowLeft, Lock } from "@phosphor-icons/react/dist/ssr"
 import { getDesignProblem, startDesignSession } from "@/lib/actions/design-problems"
 import { getUser } from "@/lib/supabase/server"
 import { DesignProblemSession } from "../../_components/DesignProblemSession"
-import SharedPageLayout from "@/components/layouts/SharedPageLayout"
+import { PracticeLayout } from "@/components/layouts/category/PracticeLayout"
 import { Skeleton } from "@/components/ui/skeleton"
 import { ROUTES } from "@/lib/routes"
 
@@ -100,7 +100,7 @@ const ProblemDetailContent = async ({ problemId }: { problemId: string }) => {
           </span>
           <span className="text-[10px] text-muted-foreground">Goal: {timeLabel}</span>
         </div>
-        <h1 className="text-lg font-semibold text-foreground">{problem.title}</h1>
+        <h2 className="text-lg font-semibold text-foreground">{problem.title}</h2>
       </div>
 
       <DesignProblemSession problem={problem} session={session} />
@@ -122,7 +122,13 @@ const ProblemDetailPage = async ({ params }: PageProps) => {
   const { problemId } = await params
 
   return (
-    <SharedPageLayout>
+    <PracticeLayout
+      hero={{
+        subtitle: 'Design Problem',
+        description:
+          'Practice architectural design within realistic site, program, and code constraints.',
+      }}
+    >
       <Suspense
         fallback={
           <div className="flex flex-col gap-4">
@@ -135,7 +141,7 @@ const ProblemDetailPage = async ({ params }: PageProps) => {
       >
         <ProblemDetailContent problemId={problemId} />
       </Suspense>
-    </SharedPageLayout>
+    </PracticeLayout>
   )
 }
 

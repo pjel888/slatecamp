@@ -8,13 +8,6 @@ interface FlashHubProps {
 export const FlashHub = ({ categories }: FlashHubProps) => {
   return (
     <div className='flex flex-col gap-4 w-full'>
-      <div className='flex flex-col gap-1'>
-        <h1 className='text-xl font-semibold text-foreground'>LEA Numbers Flash</h1>
-        <p className='text-sm text-muted-foreground'>
-          Critical code numbers for the Licensure Examination for Architects (LEA). Tap a category to start.
-        </p>
-      </div>
-
       <div className='grid grid-cols-1 sm:grid-cols-2 gap-2'>
         {categories.map((cat) => (
           <Link

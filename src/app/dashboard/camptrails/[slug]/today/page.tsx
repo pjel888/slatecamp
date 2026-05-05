@@ -1,6 +1,6 @@
 import { redirect, notFound } from 'next/navigation'
 import Link from 'next/link'
-import SharedPageLayout from '@/components/layouts/SharedPageLayout'
+import { PracticeLayout } from '@/components/layouts/category/PracticeLayout'
 import {
   getTrailBySlug,
   getTrailDays,
@@ -60,7 +60,18 @@ const TrailTodayPage = async ({
   const showMissedDayCard = daysSinceLastActivity >= 3
 
   return (
-    <SharedPageLayout>
+    <PracticeLayout
+      hero={{
+        subtitle: currentDay.title,
+        description:
+          `Day ${currentDay.day_number} of ${trail.duration_days} · Week ${Math.ceil(currentDay.day_number / 7)} of ${Math.ceil(trail.duration_days / 7)}${currentDay.subject_focus ? ` · ${currentDay.subject_focus}` : ''}`,
+        metadata: (
+          <span className="font-dm-mono text-[11px] text-text-tertiary tabular-nums">
+            ~{currentDay.estimated_minutes} min · {currentDay.steps?.length ?? 0} activities
+          </span>
+        ),
+      }}
+    >
       <div className="w-full max-w-3xl mx-auto flex flex-col gap-5">
         <Link
           href={`/dashboard/camptrails/${trail.slug}`}
@@ -73,21 +84,6 @@ const TrailTodayPage = async ({
         {showMissedDayCard && (
           <MissedDayCard enrollment={enrollment} daysSinceLastActivity={daysSinceLastActivity} />
         )}
-
-        <div>
-          <p className="font-mono text-[11px] uppercase tracking-wide text-camp-cobalt mb-1">
-            Day {currentDay.day_number} of {trail.duration_days}
-          </p>
-          <h1 className="text-xl font-bold text-text-primary">{currentDay.title}</h1>
-          {currentDay.subject_focus && (
-            <p className="text-sm text-text-secondary mt-0.5">
-              {currentDay.subject_focus} — Week {Math.ceil(currentDay.day_number / 7)} of {Math.ceil(trail.duration_days / 7)}
-            </p>
-          )}
-          <p className="text-sm text-text-tertiary mt-1">
-            ~{currentDay.estimated_minutes} min total · {currentDay.steps?.length ?? 0} activities
-          </p>
-        </div>
 
         <div className="h-px bg-border" />
 
@@ -119,7 +115,7 @@ const TrailTodayPage = async ({
           scoreTrajectory={scoreTrajectory}
         />
       </div>
-    </SharedPageLayout>
+    </PracticeLayout>
   )
 }
 

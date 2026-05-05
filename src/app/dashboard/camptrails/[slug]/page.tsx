@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
-import SharedPageLayout from '@/components/layouts/SharedPageLayout'
+import { PracticeLayout } from '@/components/layouts/category/PracticeLayout'
 import { ROUTES } from '@/lib/routes'
 import {
   getTrailBySlug,
@@ -11,7 +11,7 @@ import {
 } from '@/lib/queries/trails'
 import { TrailPhaseMap } from '@/components/trails/TrailPhaseMap'
 import { TrailDetailEnroll } from '@/components/trails/TrailDetailEnroll'
-import { ArrowLeft, Clock, Fire, ListChecks } from '@phosphor-icons/react/dist/ssr'
+import { ArrowLeft } from '@phosphor-icons/react/dist/ssr'
 
 const INTENSITY_LABELS: Record<string, string> = {
   intensive: 'Intensive',
@@ -54,7 +54,19 @@ const TrailDetailPage = async ({
     : null
 
   return (
-    <SharedPageLayout>
+    <PracticeLayout
+      hero={{
+        subtitle: trail.name,
+        description: trail.description ?? undefined,
+        metadata: (
+          <span className="font-dm-mono text-[11px] text-text-tertiary tabular-nums">
+            {trail.duration_days} days · ~{Math.round(trail.daily_time_estimate_minutes / 60 * 10) / 10} hrs/day
+            {trail.intensity && ` · ${INTENSITY_LABELS[trail.intensity] ?? trail.intensity}`}
+            {' · '}{totalSteps} activities
+          </span>
+        ),
+      }}
+    >
       <div className="w-full max-w-3xl mx-auto flex flex-col gap-6">
         <Link
           href={ROUTES.dashboard.camptrails}
@@ -63,33 +75,6 @@ const TrailDetailPage = async ({
           <ArrowLeft size={14} />
           Back to Trails
         </Link>
-
-        <div>
-          <p className="font-mono text-[11px] uppercase tracking-wide text-text-tertiary mb-1">
-            {trail.trail_type.replace('_', ' ')}
-          </p>
-          <h1 className="text-2xl font-bold text-text-primary mb-2">{trail.name}</h1>
-          {trail.description && (
-            <p className="text-sm text-text-secondary leading-relaxed">{trail.description}</p>
-          )}
-        </div>
-
-        <div className="flex flex-wrap items-center gap-4 text-sm text-text-secondary">
-          <span className="flex items-center gap-1.5">
-            <Clock size={16} className="text-text-tertiary" />
-            {trail.duration_days} days · ~{Math.round(trail.daily_time_estimate_minutes / 60 * 10) / 10} hrs/day
-          </span>
-          {trail.intensity && (
-            <span className="flex items-center gap-1.5">
-              <Fire size={16} className="text-text-tertiary" />
-              {INTENSITY_LABELS[trail.intensity] ?? trail.intensity}
-            </span>
-          )}
-          <span className="flex items-center gap-1.5">
-            <ListChecks size={16} className="text-text-tertiary" />
-            {totalSteps} activities
-          </span>
-        </div>
 
         <TrailDetailEnroll trail={trail} enrollment={enrollment} />
 
@@ -155,7 +140,7 @@ const TrailDetailPage = async ({
 
         <TrailDetailEnroll trail={trail} enrollment={enrollment} />
       </div>
-    </SharedPageLayout>
+    </PracticeLayout>
   )
 }
 
