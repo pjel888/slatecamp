@@ -26,7 +26,7 @@ const TOOLS = [
 const AreaCPage = () => (
   <PracticeLayout
     hero={{
-      subtitle: 'Design — Development Controls',
+      subtitle: 'Design: Development Controls',
       description:
         'Reference tools for Philippine National Building Code calculations and development control requirements.',
     }}

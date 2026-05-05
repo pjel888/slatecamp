@@ -18,7 +18,7 @@ const FlashCategoryPage = async ({ params }: Props) => {
   if (cards.length === 0) notFound()
   return (
     <PracticeLayout
-      hero={{ subtitle: label, description: `${cards.length} flash cards — memorize key LEA code numbers.` }}
+      hero={{ subtitle: label, description: `${cards.length} flash cards. Memorize key LEA code numbers.` }}
     >
       <FlashSession category={{ id: categoryId, label, description: '', cardCount: cards.length }} cards={cards} />
     </PracticeLayout>

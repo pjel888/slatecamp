@@ -107,7 +107,7 @@ const HERO_OVERRIDES: Record<string, HeroOverrides> = {
   [ROUTES.dashboard.notes]: {
     subtitle: 'Notes',
     description:
-      'Your personal study notebook. Capture insights from articles, quiz questions, and design problems — all linked to their source.',
+      'Your personal study notebook. Capture insights from articles, quiz questions, and design problems, all linked to their source.',
   },
   [ROUTES.dashboard.codeUpdates]: {
     subtitle: 'Code Updates',
@@ -133,7 +133,7 @@ const HERO_OVERRIDES: Record<string, HeroOverrides> = {
   [ROUTES.dashboard.camptrails]: {
     subtitle: 'Camp Trail',
     description:
-      'Your daily study prescription. Choose a trail calibrated to your exam date and gaps — then follow the map.',
+      'Your daily study prescription. Choose a trail calibrated to your exam date and gaps, then follow the map.',
   },
   [ROUTES.dashboard.flash]: {
     subtitle: 'LEA Numbers Flash',
@@ -141,7 +141,7 @@ const HERO_OVERRIDES: Record<string, HeroOverrides> = {
       'Critical code numbers for the LEA. Tap a category to start.',
   },
   [ROUTES.dashboard.areaC]: {
-    subtitle: 'Design — Development Controls',
+    subtitle: 'Design: Development Controls',
     description:
       'Reference tools for Philippine National Building Code calculations and development control requirements.',
   },

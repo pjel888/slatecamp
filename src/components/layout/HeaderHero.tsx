@@ -51,7 +51,7 @@ export function HeaderHero({
   return (
     <section
       className={cn(
-        'relative w-full h-16 flex items-center border-b border-border bg-card overflow-hidden',
+        'relative mb-3 w-full h-16 flex items-center border-b border-border bg-card overflow-hidden',
         accentBorder && `border-l-[3px] ${accentBorder}`,
         className,
       )}

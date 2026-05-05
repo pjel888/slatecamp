@@ -40,7 +40,7 @@ const DayCompletePage = async ({
     <PracticeLayout
       hero={{
         subtitle: 'Day Complete',
-        description: `${trail.name} — Day ${dayNumber} finished.`,
+        description: `${trail.name}, Day ${dayNumber} finished.`,
       }}
     >
       <div className="w-full max-w-2xl mx-auto flex flex-col gap-6 py-4">
