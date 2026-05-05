@@ -8,11 +8,13 @@
 
 **Scope:** `src/components/layouts/` subtree
 
-**Current snapshot:** 0 directories and 1 files beneath this scope (excluding this `AGENTS.md`).
+**Current snapshot:** 1 directories and 1 files beneath this scope (excluding this `AGENTS.md`).
 
-**Top local directories:** none
+**Top local directories:** `category/`
 
 **Top local files:** `SharedPageLayout.tsx`
+
+**Category layout files:** `category/LearnLayout.tsx`, `category/ExploreLayout.tsx`, `category/PracticeLayout.tsx`, `category/DataLayout.tsx`, `category/index.ts`
 
 ### What agents must do here
 - Inspect the consuming routes/features before changing shared UI behavior in this subtree.
