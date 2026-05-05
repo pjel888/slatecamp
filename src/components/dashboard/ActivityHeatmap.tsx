@@ -178,10 +178,18 @@ export function ActivityHeatmap({
   const firstYear = signupYear ?? MOCK_SIGNUP_YEAR
   const lastYear = endYear ?? Math.max(CURRENT_YEAR, firstYear)
 
+  const [selectedExamDates, setSelectedExamDates] = useState(
+    () => examDates ?? MOCK_EXAM_DATES,
+  )
+
+  useEffect(() => {
+    setSelectedExamDates(examDates ?? MOCK_EXAM_DATES)
+  }, [examDates])
+
   // Set of exam date strings for O(1) lookup
   const examSet = useMemo(
-    () => new Set(examDates ?? MOCK_EXAM_DATES),
-    [examDates],
+    () => new Set(selectedExamDates),
+    [selectedExamDates],
   )
 
   // Available years for the dropdown
@@ -239,7 +247,9 @@ export function ActivityHeatmap({
       <HeatmapHeader
         selectedYear={selectedYear}
         years={years}
+        examDates={selectedExamDates}
         onYearChange={setSelectedYear}
+        onExamDatesChange={setSelectedExamDates}
       />
 
       {/* ── Measurement + grid container ──────────────────────────────────── */}
