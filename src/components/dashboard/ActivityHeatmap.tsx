@@ -28,13 +28,17 @@ const MOCK_EXAM_DATES: string[] = ['2026-06-26', '2026-06-27', '2026-06-28']
 function deriveLayout(containerWidth: number): HeatmapLayout {
   const totalSep = (TOTAL_MONTHS - 1) * SEP_GAP
   const blockW_raw = (containerWidth - totalSep) / TOTAL_MONTHS
-  const cell = Math.max(6, Math.floor((blockW_raw - 6 * GAP) / 7))
+  const cell = Math.min(8, Math.max(6, Math.floor((blockW_raw - 6 * GAP) / 7)))
   const step = cell + GAP
   const blockW = 7 * step - GAP // exact integer pixel block
   const blockH = 5 * step - GAP
-  const slot = blockW + SEP_GAP
-  const totalW = TOTAL_MONTHS * slot - SEP_GAP
-  return { cell, step, blockW, blockH, slot, totalW }
+  const monthGap = Math.max(
+    SEP_GAP,
+    (containerWidth - TOTAL_MONTHS * blockW) / (TOTAL_MONTHS - 1),
+  )
+  const slot = blockW + monthGap
+  const totalW = TOTAL_MONTHS * slot - monthGap
+  return { cell, step, blockW, blockH, slot, totalW, monthGap }
 }
 
 // ─── Calendar helpers ─────────────────────────────────────────────────────────
@@ -250,7 +254,7 @@ export function ActivityHeatmap({
               signupISO={iso0}
               todayISO={todayISO}
               headerH={HEADER_H}
-              sepGap={SEP_GAP}
+              sepGap={layout.monthGap}
               gap={GAP}
             />
             <HeatmapLegend cellSize={layout.cell} />

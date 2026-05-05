@@ -12,10 +12,10 @@ interface HeatmapHeaderProps {
 export const HeatmapHeader = ({ selectedYear, years, onYearChange }: HeatmapHeaderProps) => (
   <header className='flex w-full shrink-0 items-start justify-between gap-4 pb-2'>
     <div className='flex flex-col gap-0.5'>
-      <h3 className='text-sm font-semibold text-white'>
+      <h3 className='text-sm font-semibold text-foreground'>
         Study Activity
       </h3>
-      <p className='text-xs text-white/50'>
+      <p className='text-xs text-muted-foreground'>
         Your consistency over the past year
       </p>
     </div>
@@ -27,9 +27,9 @@ export const HeatmapHeader = ({ selectedYear, years, onYearChange }: HeatmapHead
           value={selectedYear}
           onChange={(e) => onYearChange(Number(e.target.value))}
           className={cn(
-            'appearance-none cursor-pointer rounded-md border border-white/20',
-            'bg-white/10 pl-3 pr-7 py-1 text-xs font-medium text-white',
-            'hover:border-white/30 focus:outline-none focus:ring-2 focus:ring-white/30',
+            'appearance-none cursor-pointer rounded-md border border-border',
+            'bg-background pl-3 pr-7 py-1 text-xs font-medium text-foreground',
+            'hover:border-primary/40 focus:outline-none focus:ring-2 focus:ring-primary/30',
             'transition-colors',
           )}
         >
@@ -40,7 +40,7 @@ export const HeatmapHeader = ({ selectedYear, years, onYearChange }: HeatmapHead
           ))}
         </select>
         <svg
-          className='pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 text-white/50'
+          className='pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 text-muted-foreground'
           width='10'
           height='10'
           viewBox='0 0 10 10'
