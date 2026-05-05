@@ -105,6 +105,7 @@ const DashboardLayoutContent = async ({
   const isSettingsPath =
     pathname === ROUTES.dashboard.settings ||
     pathname.startsWith(ROUTES.dashboard.settings + '/')
+  const isDashboardRoot = pathname === ROUTES.dashboard.root
 
   if (!isDemo && !isLabPath && !onboardingCompletedAt && !isSettingsPath) {
     redirect(ROUTES.auth.onboarding)
@@ -212,19 +213,26 @@ const DashboardLayoutContent = async ({
                       tier={effectiveTier}
                     />
                     <SidebarContent>
-                      <BreadcrumbProvider>
-                        <Navbar isAdmin={userCanSeeDevToolbar} />
-                        {!isQuizSessionPath && (
-                          <div>
-                            <DashboardHeader userId={user.id} />
-                          </div>
+                      <div className='relative flex flex-1 flex-col min-h-0'>
+                        {isDashboardRoot && (
+                          <div className='pointer-events-none absolute inset-0 z-0 bg-[url("/images/dashboard/Dashboard-BG-Image.png")] bg-cover bg-bottom bg-no-repeat opacity-50' />
                         )}
-                        <main
-                          className={`flex-1 min-h-0 min-w-0 ${isQuizSessionPath ? 'overflow-hidden bg-surface-focused' : 'overflow-y-auto bg-page-bg'}`}
-                        >
-                          {children}
-                        </main>
-                      </BreadcrumbProvider>
+                        <BreadcrumbProvider>
+                          <div className='relative z-10 flex flex-col flex-1 min-h-0'>
+                            <Navbar isAdmin={userCanSeeDevToolbar} />
+                            {!isQuizSessionPath && (
+                              <div>
+                                <DashboardHeader userId={user.id} />
+                              </div>
+                            )}
+                            <main
+                              className={`flex-1 min-h-0 min-w-0 ${isQuizSessionPath ? 'overflow-hidden bg-surface-focused' : isDashboardRoot ? 'overflow-y-auto' : 'overflow-y-auto bg-page-bg'}`}
+                            >
+                              {children}
+                            </main>
+                          </div>
+                        </BreadcrumbProvider>
+                      </div>
                     </SidebarContent>
                   </div>
                   {showDevTools && (
