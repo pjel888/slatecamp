@@ -470,6 +470,7 @@ Prior audits observed names in local env files that are not referenced by curren
 | `bun run test:e2e:auth-demo:admin-sme-reviewer` | bun scripts/playwright-run.ts auth-demo-admin-sme-reviewer |
 | `bun run test:e2e:auth-demo:admin-developer` | bun scripts/playwright-run.ts auth-demo-admin-developer |
 | `bun run test:e2e:auth-demo:ceo-portal` | bun scripts/playwright-run.ts auth-demo-ceo-portal |
+| `bun run test:e2e:dialog` | bun scripts/playwright-run.ts dialog |
 | `bun run test:e2e:headed` | bun scripts/playwright-run.ts headed |
 | `bun run test:e2e:ui` | bun scripts/playwright-run.ts ui |
 | `bun run check:entitlements` | bun run scripts/check-entitlement-legacy-usage.ts |

@@ -67,7 +67,7 @@ const nextBin =
 
 const args = useBuiltApp
   ? ['start', '--port', port]
-  : ['dev', '--webpack', '--port', port]
+  : ['dev', '--port', port]
 
 function processIsAlive(pid: number) {
   try {

@@ -15,6 +15,21 @@ export default defineConfig({
     outputFile: process.env.CI
       ? { junit: './test-results/vitest/junit.xml' }
       : undefined,
+    coverage: {
+      // Disabled by default — enable when the DOM test suite stabilizes
+      enabled: false,
+      provider: 'v8',
+      reporter: ['text', 'json'],
+      // Conservative thresholds based on current DOM test coverage (May 2026):
+      //   statements 81.33% | branches 86.4% | functions 73.68% | lines 82.69%
+      // These are set below current numbers to avoid noise while the suite grows.
+      thresholds: {
+        statements: 75,
+        branches: 80,
+        functions: 65,
+        lines: 75,
+      },
+    },
   },
   resolve: {
     alias: {

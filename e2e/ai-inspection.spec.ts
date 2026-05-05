@@ -55,8 +55,23 @@ test.describe('AI UI Inspection', () => {
     ensureOutDir()
 
     const consoleErrors: Array<{ type: string; text: string; location?: string }> = []
-    const pageErrors: Array<{ message: string; stack?: string }> = []
+    const pageErrors: Array<{ message: string; stack?: string; filename?: string; lineno?: number; colno?: number }> = []
     const networkFailures: Array<{ url: string; status?: number; failure?: string }> = []
+
+    // Inject a global error catcher to capture filename/line/col for syntax errors
+    await page.addInitScript(() => {
+      (window as unknown as Record<string, unknown>).__aiInspectionErrors = []
+      window.addEventListener('error', (event) => {
+        const arr = (window as unknown as Record<string, Array<unknown>>).__aiInspectionErrors
+        arr.push({
+          message: event.message,
+          filename: event.filename,
+          lineno: event.lineno,
+          colno: event.colno,
+          errorStack: event.error?.stack,
+        })
+      })
+    })
 
     page.on('console', (msg) => {
       if (msg.type() === 'error') {

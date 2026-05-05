@@ -119,6 +119,29 @@ bun run test:e2e:ui
 bun run test:e2e:headed
 ```
 
+### Dialog accessibility (Playwright)
+
+Dialog behavior — focus traps, Escape key handling, overlay clicks, and accessible
+semantics — is tested in a real browser because jsdom cannot reliably simulate
+focus management or portal rendering.
+
+```bash
+# Run dialog accessibility tests against the dev portal (requires demo auth)
+bun run test:e2e:dialog
+```
+
+Tests cover:
+- Dialog opens from trigger and exposes `role="dialog"` + accessible name
+- Escape key closes dialog
+- Cancel button closes dialog
+- Overlay click closes dialog
+- Keyboard navigation stays inside dialog content
+- Action button closes dialog regardless of server result
+- Multiple dialogs on the same page behave independently
+- Page returns to fully usable state after close
+
+---
+
 ### AI UI Inspection
 
 A dedicated test captures screenshots, console errors, network failures, and
@@ -189,7 +212,25 @@ make it a default local blocker unless the environment is locked.
 
 ---
 
-## 5. Recommended CI command sequence
+## 5. Coverage thresholds (DOM tests)
+
+Vitest coverage is configured in `vitest.config.ts` but **disabled by default**.
+Current DOM test coverage (May 2026):
+
+| Metric | Current | Threshold | Status |
+|--------|---------|-----------|--------|
+| Statements | 81.33% | 75% | ✓ conservative |
+| Branches | 86.4% | 80% | ✓ conservative |
+| Functions | 73.68% | 65% | ✓ conservative |
+| Lines | 82.69% | 75% | ✓ conservative |
+
+To enable enforcement, set `enabled: true` in `vitest.config.ts` under
+`test.coverage`. Only enable when the suite is stable and adding new tests
+is unlikely to drop numbers below these floors.
+
+---
+
+## 6. Recommended CI command sequence
 
 ```bash
 bun run type-check
@@ -198,6 +239,7 @@ bun run test           # 715+ bun unit tests
 bun run test:dom       # React DOM/component tests
 bun run test:dom:coverage
 bun run test:e2e:smoke # Playwright smoke tests
+bun run test:e2e:dialog # Dialog accessibility tests
 bun run inspect:ui     # AI inspection (fails on critical UI errors)
 ```
 
@@ -223,6 +265,7 @@ Generated files in `.ai/` are excluded from the lint gate (see `eslint.config.mj
 | Component tests (watch) | `bun run test:dom:watch` |
 | Component tests (coverage) | `bun run test:dom:coverage` |
 | E2E smoke | `bun run test:e2e:smoke` |
+| Dialog accessibility | `bun run test:e2e:dialog` |
 | AI inspect (port 3217) | `bun run inspect:ui` |
 | AI inspect (existing dev server) | `PLAYWRIGHT_PORT=3000 bun run inspect:ui` |
 | Visual regression | `bun run test:visual` |
