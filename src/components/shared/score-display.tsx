@@ -55,6 +55,7 @@ interface RingProps {
   animate: boolean
   colors: ReturnType<typeof getScoreColor>
   trackClassName?: string
+  fillClassName?: string
   valueClassName?: string
 }
 
@@ -65,6 +66,7 @@ const Ring = ({
   animate,
   colors,
   trackClassName,
+  fillClassName,
   valueClassName,
 }: RingProps) => {
   const [mounted, setMounted] = React.useState(!animate)
@@ -100,7 +102,7 @@ const Ring = ({
           cy="18"
           r={radius}
           fill="none"
-          className={colors.fill}
+          className={cn(colors.fill, fillClassName)}
           stroke="currentColor"
           strokeWidth="3.5"
           strokeLinecap="round"
@@ -221,6 +223,7 @@ interface ScoreDisplayProps {
   showPercentSign?: boolean // default true
   animate?: boolean // default true
   ringTrackClassName?: string
+  ringFillClassName?: string
   valueClassName?: string
   className?: string
 }
@@ -233,6 +236,7 @@ const ScoreDisplay = ({
   showPercentSign = true,
   animate = true,
   ringTrackClassName,
+  ringFillClassName,
   valueClassName,
   className,
 }: ScoreDisplayProps) => {
@@ -256,6 +260,7 @@ const ScoreDisplay = ({
           animate={animate}
           colors={colors}
           trackClassName={ringTrackClassName}
+          fillClassName={ringFillClassName}
           valueClassName={valueClassName}
         />
       )}
