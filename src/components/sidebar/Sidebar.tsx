@@ -1,6 +1,6 @@
 'use client'
 
-import { useRef, useCallback, useEffect, useState } from 'react'
+import { useCallback, useState } from 'react'
 import { usePathname, useRouter } from 'next/navigation'
 import { useSidebar } from './SidebarProvider'
 import { SidebarHeader } from './SidebarHeader'
@@ -27,60 +27,20 @@ import { updateSessionProgress } from '@/lib/actions/quiz-v2'
 // ---------------------------------------------------------------------------
 
 export const Sidebar = ({ userDisplay, tier, isAdmin: _isAdmin, isDevMode: _isDevMode }: SidebarProps) => {
-  const { expanded, collapse, expand, toggle: _toggle, sidebarRef, toggleRef, prefersReducedMotion, isLocked } = useSidebar()
+  const { expanded, collapse, expand, sidebarRef, toggleRef, prefersReducedMotion, isLocked } = useSidebar()
   const pathname = usePathname()
   const router = useRouter()
-  const collapsingTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
-  const isCollapsing = useRef(false)
   const [showLeaveConfirm, setShowLeaveConfirm] = useState(false)
   const [pendingHref, setPendingHref] = useState<string | null>(null)
   const [leaveConfirmLoading, setLeaveConfirmLoading] = useState(false)
   const navigationPending = useNavigationPending()
 
-  // Track collapsing state for CSS class (faster easing during collapse)
-  useEffect(() => {
-    if (collapsingTimerRef.current) {
-      clearTimeout(collapsingTimerRef.current)
-      collapsingTimerRef.current = null
-    }
-
-    if (!expanded && isCollapsing.current) {
-      // Already set collapsing — wait for duration then clear
-      collapsingTimerRef.current = setTimeout(() => {
-        isCollapsing.current = false
-        // Force a re-render isn't needed — the CSS class is managed via DOM ref directly
-        const el = sidebarRef.current as HTMLElement | null
-        if (el) el.removeAttribute('data-collapsing')
-      }, TRANSITION.collapseDuration)
-    }
-  }, [expanded, sidebarRef])
-
-  // Cleanup timer on unmount
-  useEffect(() => {
-    return () => {
-      if (collapsingTimerRef.current) {
-        clearTimeout(collapsingTimerRef.current)
-      }
-    }
-  }, [])
-
   // Active session guard (provider is always present in dashboard layout)
   const { activeSession } = useActiveSession()
 
   const handleCollapse = useCallback(() => {
-    // Mark collapsing for CSS easing switch
-    const el = sidebarRef.current as HTMLElement | null
-    if (el) el.setAttribute('data-collapsing', '')
-    isCollapsing.current = true
-
-    if (collapsingTimerRef.current) clearTimeout(collapsingTimerRef.current)
-    collapsingTimerRef.current = setTimeout(() => {
-      if (el) el.removeAttribute('data-collapsing')
-      isCollapsing.current = false
-    }, TRANSITION.collapseDuration)
-
     collapse()
-  }, [collapse, sidebarRef])
+  }, [collapse])
 
   const handleNavMouseDown = useCallback((e: React.MouseEvent<HTMLElement>) => {
     e.stopPropagation()
@@ -125,18 +85,18 @@ export const Sidebar = ({ userDisplay, tier, isAdmin: _isAdmin, isDevMode: _isDe
     }
   }, [expanded, handleCollapse, expand])
 
-  // Inline style: expand/collapse width transition
+  // Sidebar visual reveal uses clip-path; the layout column snaps separately in SidebarDesktopLayout.
+  const clippedWidth = SIDEBAR_WIDTH_EXPANDED - SIDEBAR_WIDTH_COLLAPSED
   const sidebarStyle: React.CSSProperties = prefersReducedMotion
     ? {
-      width: expanded ? SIDEBAR_WIDTH_EXPANDED : SIDEBAR_WIDTH_COLLAPSED,
+      width: SIDEBAR_WIDTH_EXPANDED,
+      clipPath: expanded ? 'inset(0 0 0 0)' : `inset(0 ${clippedWidth}px 0 0)`,
     }
     : {
-      width: expanded ? SIDEBAR_WIDTH_EXPANDED : SIDEBAR_WIDTH_COLLAPSED,
-      transition: `width ${expanded ? `${TRANSITION.expandDuration}ms ${TRANSITION.expandEasing}` : `${TRANSITION.collapseDuration}ms ${TRANSITION.collapseEasing}`}`,
+      width: SIDEBAR_WIDTH_EXPANDED,
+      clipPath: expanded ? 'inset(0 0 0 0)' : `inset(0 ${clippedWidth}px 0 0)`,
+      transition: `clip-path ${expanded ? `${TRANSITION.expandDuration}ms ${TRANSITION.expandEasing}` : `${TRANSITION.collapseDuration}ms ${TRANSITION.collapseEasing}`}`,
     }
-
-  // data-collapsing overrides transition inline — handled via DOM ref in handleCollapse
-  // CSS in global styles picks up [data-collapsing] to use collapse easing
 
   const isActive = (href: string, exact = false) =>
     exact ? pathname === href : pathname === href || pathname.startsWith(href + '/')
@@ -166,11 +126,14 @@ export const Sidebar = ({ userDisplay, tier, isAdmin: _isAdmin, isDevMode: _isDe
         onMouseDown={handleNavMouseDown}
         style={{
           position: 'relative',
+          zIndex: 20,
           flexShrink: 0,
           height: '100dvh',
           flexDirection: 'column',
           overflow: 'hidden',
-          borderRight: '1px solid var(--border)',
+          contain: 'layout paint style',
+          willChange: 'clip-path',
+          transform: 'translateZ(0)',
           ...sidebarStyle,
         }}
         className="hidden bg-white lg:flex lg:flex-col"
@@ -181,7 +144,12 @@ export const Sidebar = ({ userDisplay, tier, isAdmin: _isAdmin, isDevMode: _isDe
             aria-hidden="true"
           />
         )}
-        <SidebarHeader expanded={expanded} />
+        <SidebarHeader
+          expanded={expanded}
+          tier={tier}
+          onToggle={handleToggle}
+          toggleRef={toggleRef}
+        />
 
         {/* Scrollable body */}
         <div
@@ -262,8 +230,6 @@ export const Sidebar = ({ userDisplay, tier, isAdmin: _isAdmin, isDevMode: _isDe
           expanded={expanded}
           userDisplay={userDisplay}
           tier={tier}
-          onToggle={handleToggle}
-          toggleRef={toggleRef}
         />
       </nav>
     </>

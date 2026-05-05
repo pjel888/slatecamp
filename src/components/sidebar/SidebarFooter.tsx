@@ -1,6 +1,5 @@
 'use client'
 
-import { CaretDoubleRight } from '@phosphor-icons/react/dist/ssr'
 import {
   Tooltip,
   TooltipTrigger,
@@ -19,8 +18,6 @@ interface SidebarFooterProps {
   expanded: boolean
   userDisplay: { name: string; avatarUrl: string | null }
   tier: string
-  onToggle: () => void
-  toggleRef: React.RefObject<HTMLButtonElement | null>
 }
 
 const getInitials = (name: string): string => {
@@ -34,8 +31,6 @@ export const SidebarFooter = ({
   expanded,
   userDisplay,
   tier,
-  onToggle,
-  toggleRef,
 }: SidebarFooterProps) => {
   const initials = getInitials(userDisplay.name)
 
@@ -44,13 +39,13 @@ export const SidebarFooter = ({
       aria-label={userDisplay.name}
       data-t={userDisplay.name}
       className={cn(
-        'grid h-[30px] w-full grid-cols-[40px_minmax(0,1fr)] items-center gap-1 overflow-hidden rounded-md',
+        'grid h-[30px] w-full grid-cols-[48px_minmax(0,1fr)] items-center gap-1 overflow-hidden rounded-md',
         'transition-colors duration-[120ms] ease-out',
         'hover:bg-gray-100 dark:hover:bg-gray-800',
       )}
     >
-      {/* Avatar container: 40x30px */}
-      <div className="flex h-[30px] w-10 shrink-0 items-center justify-center">
+      {/* Avatar container: 48x30px */}
+      <div className="flex h-[30px] w-12 shrink-0 items-center justify-center">
         <div
           className={cn(
             'h-[22px] w-[22px] rounded-full overflow-hidden',
@@ -111,9 +106,9 @@ export const SidebarFooter = ({
   return (
     <div
       className={cn(
-        'flex flex-col gap-2',
+        'flex flex-col',
         'border-t border-gray-200 dark:border-gray-800',
-        'pt-3 pb-5',
+        'pt-3 pb-4',
       )}
       style={{ paddingInline: SIDEBAR_PADDING }}
     >
@@ -133,61 +128,6 @@ export const SidebarFooter = ({
         profileRow
       )}
 
-      {/* Toggle button */}
-      <button
-        ref={toggleRef}
-        onClick={onToggle}
-        aria-expanded={expanded}
-        aria-label={expanded ? 'Collapse sidebar' : 'Expand sidebar'}
-        className={cn(
-          'grid h-[30px] w-full grid-cols-[40px_minmax(0,1fr)] items-center gap-1 overflow-hidden rounded-md',
-          'transition-colors duration-[120ms] ease-out',
-          'hover:bg-gray-100 dark:hover:bg-gray-800',
-          'outline-none focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-camp-cobalt',
-        )}
-      >
-        {/* Toggle icon container: 40x30px */}
-        <div className="flex h-[30px] w-10 shrink-0 items-center justify-center">
-          <CaretDoubleRight
-            size={16}
-            weight="regular"
-            className={cn(
-              'w-4 h-4 text-gray-400 shrink-0',
-              'transition-transform duration-[180ms] ease-out',
-              expanded && 'rotate-180',
-            )}
-          />
-        </div>
-
-        <span className="flex min-w-0 items-center overflow-hidden">
-          {/* Toggle label */}
-          <span
-            aria-hidden={!expanded}
-            className={cn(
-              'whitespace-nowrap overflow-hidden text-[11.5px] text-gray-400 dark:text-gray-500',
-              'transition-[opacity,transform] duration-[180ms] ease-out motion-reduce:transition-none motion-reduce:transform-none',
-              expanded ? 'translate-x-0 opacity-100' : 'pointer-events-none translate-x-1 opacity-0',
-            )}
-          >
-            {expanded ? 'Collapse' : 'Expand'}
-          </span>
-
-          {/* Shortcut badge */}
-          <span
-            aria-hidden={!expanded}
-            className={cn(
-              'ml-auto mr-1 overflow-hidden font-mono text-[11px] font-medium',
-              'text-gray-400 dark:text-gray-500',
-              'bg-gray-100 dark:bg-gray-800',
-              'px-1 rounded-[3px]',
-              'transition-opacity duration-[180ms] ease-out motion-reduce:transition-none',
-              expanded ? 'opacity-100' : 'pointer-events-none opacity-0',
-            )}
-          >
-            ⌘B
-          </span>
-        </span>
-      </button>
     </div>
   )
 }

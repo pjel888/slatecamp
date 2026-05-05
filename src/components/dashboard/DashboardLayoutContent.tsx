@@ -6,6 +6,7 @@ import { bootstrapUser } from '@/lib/supabase/bootstrap'
 import { SidebarProvider } from '@/components/sidebar/SidebarProvider'
 import { Sidebar } from '@/components/sidebar/Sidebar'
 import { SidebarContent } from '@/components/sidebar/SidebarContent'
+import { SidebarDesktopLayout } from '@/components/sidebar/SidebarDesktopLayout'
 import { MobileSidebarShell } from '@/components/sidebar/MobileSidebarShell'
 import { DashboardContentFrame } from '@/components/dashboard/DashboardContentFrame'
 import { DevToolbar } from '@/components/dev/dev-toolbar'
@@ -192,21 +193,24 @@ const DashboardLayoutContent = async ({
                       ]?.allowed ?? false
                     }
                   />
-                  {/* Desktop layout: sidebar + content in flex row */}
-                  <div className='flex flex-1 min-h-0'>
-                    <Sidebar
-                      isAdmin={userCanSeeDevToolbar}
-                      isDevMode={showDevTools}
-                      userDisplay={{
-                        name:
-                          user.user_metadata?.full_name ?? user.email ?? 'User',
-                        avatarUrl:
-                          user.user_metadata?.avatar_url ??
-                          user.user_metadata?.picture ??
-                          null,
-                      }}
-                      tier={effectiveTier}
-                    />
+                  {/* Desktop layout: sidebar + content in compositor-friendly grid */}
+                  <SidebarDesktopLayout
+                    sidebar={
+                      <Sidebar
+                        isAdmin={userCanSeeDevToolbar}
+                        isDevMode={showDevTools}
+                        userDisplay={{
+                          name:
+                            user.user_metadata?.full_name ?? user.email ?? 'User',
+                          avatarUrl:
+                            user.user_metadata?.avatar_url ??
+                            user.user_metadata?.picture ??
+                            null,
+                        }}
+                        tier={effectiveTier}
+                      />
+                    }
+                  >
                     <SidebarContent>
                       <BreadcrumbProvider>
                         <DashboardContentFrame
@@ -217,7 +221,7 @@ const DashboardLayoutContent = async ({
                         </DashboardContentFrame>
                       </BreadcrumbProvider>
                     </SidebarContent>
-                  </div>
+                  </SidebarDesktopLayout>
                   {showDevTools && (
                     <>
                       <DevToolbar

@@ -47,7 +47,6 @@ export const SidebarProvider = ({ children, disableShortcuts = false }: SidebarP
 
   const sidebarRef = useRef<HTMLElement | null>(null)
   const toggleRef = useRef<HTMLButtonElement | null>(null)
-  const contentRef = useRef<HTMLDivElement | null>(null)
 
   const router = useRouter()
 
@@ -163,7 +162,6 @@ export const SidebarProvider = ({ children, disableShortcuts = false }: SidebarP
         prefersReducedMotion,
         sidebarRef,
         toggleRef,
-        contentRef,
       }}
     >
       {children}
