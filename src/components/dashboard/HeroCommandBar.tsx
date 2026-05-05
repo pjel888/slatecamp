@@ -201,7 +201,7 @@ export function HeroCommandBar({
             </>
           )}
           {isNewUser && (
-            <div className='mt-4 p-3'>
+            <div className='mt-4'>
               <p className='text-[11px] text-muted-foreground leading-relaxed'>
                 Welcome to SlateCamp. Your weekly stats and insights will appear
                 here once you begin your study sessions.

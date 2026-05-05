@@ -19,6 +19,7 @@ const _QuestionPalette = dynamic(() => import('./QuestionPalette').then(m => m.Q
 const ExitConfirmModal = dynamic(() => import('./ExitConfirmModal').then(m => m.ExitConfirmModal), { ssr: false })
 const SubmitConfirmModal = dynamic(() => import('./SubmitConfirmModal').then(m => m.SubmitConfirmModal), { ssr: false })
 const MicroBreakOverlay = dynamic(() => import('./MicroBreakOverlay').then(m => m.MicroBreakOverlay), { ssr: false })
+const CalculatingResultsOverlay = dynamic(() => import('./CalculatingResultsOverlay').then(m => m.CalculatingResultsOverlay), { ssr: false })
 const WikiSidePanel = dynamic(() => import('@/components/shared/WikiSidePanel').then(m => m.WikiSidePanel), { ssr: false })
 
 // ─── Props ────────────────────────────────────────────────────────────────────
@@ -92,6 +93,20 @@ export const BaseQuizShell = ({
   const totalQuestions = useQuizStore((s) => s.totalQuestions)
   const storeQuestions = useQuizStore((s) => s.questions)
   const _hasHydrated = useQuizStore((s) => s._hasHydrated)
+
+  useEffect(() => {
+    if (!_hasHydrated || status === 'idle' || status === 'loading' || status === 'finalizing' || status === 'results') {
+      return
+    }
+
+    const handleBeforeUnload = (event: BeforeUnloadEvent) => {
+      event.preventDefault()
+      event.returnValue = ''
+    }
+
+    window.addEventListener('beforeunload', handleBeforeUnload)
+    return () => window.removeEventListener('beforeunload', handleBeforeUnload)
+  }, [_hasHydrated, status])
 
   // UI state
   const wikiPanelOpen = useQuizStore((s) => s.ui.wikiPanelOpen)
@@ -243,6 +258,8 @@ export const BaseQuizShell = ({
           onContinue={hideMicroBreak}
         />
       )}
+
+      {calculatingResults && <CalculatingResultsOverlay />}
 
       {wikiPanelOpen && wikiPanelUrl && (
         <WikiSidePanel url={wikiPanelUrl} onClose={closeWikiPanel} />

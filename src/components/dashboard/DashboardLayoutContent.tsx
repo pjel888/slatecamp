@@ -7,8 +7,7 @@ import { SidebarProvider } from '@/components/sidebar/SidebarProvider'
 import { Sidebar } from '@/components/sidebar/Sidebar'
 import { SidebarContent } from '@/components/sidebar/SidebarContent'
 import { MobileSidebarShell } from '@/components/sidebar/MobileSidebarShell'
-import { Navbar } from '@/components/shared/Navbar'
-import { DashboardHeader } from '@/components/shared/DashboardHeader'
+import { DashboardContentFrame } from '@/components/dashboard/DashboardContentFrame'
 import { DevToolbar } from '@/components/dev/dev-toolbar'
 import { DevKeyboardProvider } from '@/components/dev/dev-keyboard-provider'
 import { BreadcrumbProvider } from '@/lib/context/breadcrumb-context'
@@ -39,9 +38,6 @@ const DashboardLayoutContent = async ({
     headerList.get('x-pathname') ?? headerList.get('next-url') ?? ''
   const isLabPath =
     pathname === ROUTES.lab.root || pathname.startsWith(`${ROUTES.lab.root}/`)
-  const isQuizSessionPath = pathname.startsWith(
-    `${ROUTES.dashboard.quiz}/session/`,
-  )
   const supabase = await createClient()
   const {
     data: { user },
@@ -105,7 +101,6 @@ const DashboardLayoutContent = async ({
   const isSettingsPath =
     pathname === ROUTES.dashboard.settings ||
     pathname.startsWith(ROUTES.dashboard.settings + '/')
-  const isDashboardRoot = pathname === ROUTES.dashboard.root
 
   if (!isDemo && !isLabPath && !onboardingCompletedAt && !isSettingsPath) {
     redirect(ROUTES.auth.onboarding)
@@ -213,26 +208,14 @@ const DashboardLayoutContent = async ({
                       tier={effectiveTier}
                     />
                     <SidebarContent>
-                      <div className='relative flex flex-1 flex-col min-h-0'>
-                        {isDashboardRoot && (
-                          <div className='pointer-events-none absolute inset-0 z-0 bg-[url("/images/dashboard/Dashboard-BG-Image.png")] bg-cover bg-bottom bg-no-repeat opacity-50' />
-                        )}
-                        <BreadcrumbProvider>
-                          <div className='relative z-10 flex flex-col flex-1 min-h-0'>
-                            <Navbar isAdmin={userCanSeeDevToolbar} />
-                            {!isQuizSessionPath && (
-                              <div>
-                                <DashboardHeader userId={user.id} />
-                              </div>
-                            )}
-                            <main
-                              className={`flex-1 min-h-0 min-w-0 ${isQuizSessionPath ? 'overflow-hidden bg-surface-focused' : isDashboardRoot ? 'overflow-y-auto' : 'overflow-y-auto bg-page-bg'}`}
-                            >
-                              {children}
-                            </main>
-                          </div>
-                        </BreadcrumbProvider>
-                      </div>
+                      <BreadcrumbProvider>
+                        <DashboardContentFrame
+                          isAdmin={userCanSeeDevToolbar}
+                          userId={user.id}
+                        >
+                          {children}
+                        </DashboardContentFrame>
+                      </BreadcrumbProvider>
                     </SidebarContent>
                   </div>
                   {showDevTools && (

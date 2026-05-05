@@ -10,6 +10,7 @@ interface ReviewCardProps {
   question: ReviewQuestionData
   historyStats?: QuestionHistoryStats
   defaultExpanded: boolean
+  compact?: boolean
 }
 
 // ─── Option annotation (inline) ───────────────────────────────────────────────
@@ -62,6 +63,7 @@ export const ReviewCard = ({
   question,
   historyStats,
   defaultExpanded,
+  compact = false,
 }: ReviewCardProps) => {
   const [isExpanded, setIsExpanded] = useState(defaultExpanded)
   const info = getCorrectnessInfo(question)
@@ -127,7 +129,7 @@ export const ReviewCard = ({
 
       {/* ── Expanded body ───────────────────────────────────────────────────── */}
       {isExpanded && (
-        <div className="border-t border-border">
+        <div className={cn('border-t border-border', compact && 'max-h-[min(440px,calc(100dvh-330px))] overflow-y-auto')}>
           <div className="grid grid-cols-1 md:grid-cols-2">
             {/* ── Left column: Question stem + metadata ─────────────────────── */}
             <div className="p-4 md:p-5 md:border-r md:border-border">

@@ -13,6 +13,8 @@ import type { SidebarNavItemConfig } from './types'
 import type { NavigationPendingInfo } from './types'
 import { ConfirmDialog } from '@/components/ui/dialog'
 import { useNavigationPending } from '@/hooks/useNavigationPending'
+import { useQuizStore } from '@/stores/useQuizStore'
+import { updateSessionProgress } from '@/lib/actions/quiz-v2'
 
 // ---------------------------------------------------------------------------
 // MobileDrawer — full-screen slide-in nav drawer for mobile
@@ -166,6 +168,7 @@ export const MobileDrawer = ({
   const { activeSession } = useActiveSession()
   const [showLeaveConfirm, setShowLeaveConfirm] = useState(false)
   const [pendingHref, setPendingHref] = useState<string | null>(null)
+  const [leaveConfirmLoading, setLeaveConfirmLoading] = useState(false)
   const navigationPending = useNavigationPending()
 
   // Close on route change
@@ -224,10 +227,24 @@ export const MobileDrawer = ({
     [activeSession, onClose],
   )
 
-  const handleLeaveConfirm = useCallback(() => {
-    if (pendingHref) router.push(pendingHref)
-    setPendingHref(null)
-    onClose()
+  const handleLeaveConfirm = useCallback(async () => {
+    const href = pendingHref
+    const { sessionId, currentIndex, reset } = useQuizStore.getState()
+
+    setLeaveConfirmLoading(true)
+    try {
+      if (sessionId) {
+        await updateSessionProgress(sessionId, currentIndex)
+      }
+    } catch {
+      // Preserve navigation even if the latest index was already saved or the user is offline.
+    } finally {
+      reset()
+      setLeaveConfirmLoading(false)
+      setPendingHref(null)
+      onClose()
+      if (href) router.push(href)
+    }
   }, [pendingHref, router, onClose])
 
   // Reduced-motion detection (client-side only, safe for SSR)
@@ -251,11 +268,12 @@ export const MobileDrawer = ({
       <ConfirmDialog
         open={showLeaveConfirm}
         onOpenChange={setShowLeaveConfirm}
-        title="Leave active session?"
-        description="You have an active session. Are you sure you want to leave?"
-        confirmLabel="Leave"
-        cancelLabel="Stay"
+        title="Leave quiz?"
+        description="Your saved answers will remain. You can resume this session later."
+        confirmLabel="Resume later"
+        cancelLabel="Stay in quiz"
         onConfirm={handleLeaveConfirm}
+        loading={leaveConfirmLoading}
       />
 
       {/* Backdrop — z-index 49, behind drawer */}

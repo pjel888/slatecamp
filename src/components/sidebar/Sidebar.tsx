@@ -18,6 +18,8 @@ import { useActiveSession } from '@/lib/context/active-session-context'
 import { ConfirmDialog } from '@/components/ui/dialog'
 import { cn } from '@/lib/utils'
 import { useNavigationPending } from '@/hooks/useNavigationPending'
+import { useQuizStore } from '@/stores/useQuizStore'
+import { updateSessionProgress } from '@/lib/actions/quiz-v2'
 
 // ---------------------------------------------------------------------------
 // Sidebar — structural nav shell for push layout
@@ -32,6 +34,7 @@ export const Sidebar = ({ userDisplay, tier, isAdmin: _isAdmin, isDevMode: _isDe
   const isCollapsing = useRef(false)
   const [showLeaveConfirm, setShowLeaveConfirm] = useState(false)
   const [pendingHref, setPendingHref] = useState<string | null>(null)
+  const [leaveConfirmLoading, setLeaveConfirmLoading] = useState(false)
   const navigationPending = useNavigationPending()
 
   // Track collapsing state for CSS class (faster easing during collapse)
@@ -95,9 +98,23 @@ export const Sidebar = ({ userDisplay, tier, isAdmin: _isAdmin, isDevMode: _isDe
     [activeSession],
   )
 
-  const handleLeaveConfirm = useCallback(() => {
-    if (pendingHref) router.push(pendingHref)
-    setPendingHref(null)
+  const handleLeaveConfirm = useCallback(async () => {
+    const href = pendingHref
+    const { sessionId, currentIndex, reset } = useQuizStore.getState()
+
+    setLeaveConfirmLoading(true)
+    try {
+      if (sessionId) {
+        await updateSessionProgress(sessionId, currentIndex)
+      }
+    } catch {
+      // Preserve navigation even if the latest index was already saved or the user is offline.
+    } finally {
+      reset()
+      setLeaveConfirmLoading(false)
+      setPendingHref(null)
+      if (href) router.push(href)
+    }
   }, [pendingHref, router])
 
   const handleToggle = useCallback(() => {
@@ -134,11 +151,12 @@ export const Sidebar = ({ userDisplay, tier, isAdmin: _isAdmin, isDevMode: _isDe
       <ConfirmDialog
         open={showLeaveConfirm}
         onOpenChange={setShowLeaveConfirm}
-        title="Leave active session?"
-        description="You have an active session. Are you sure you want to leave?"
-        confirmLabel="Leave"
-        cancelLabel="Stay"
+        title="Leave quiz?"
+        description="Your saved answers will remain. You can resume this session later."
+        confirmLabel="Resume later"
+        cancelLabel="Stay in quiz"
         onConfirm={handleLeaveConfirm}
+        loading={leaveConfirmLoading}
       />
 
       {/* Sidebar nav shell — structural flex child, displaces content */}

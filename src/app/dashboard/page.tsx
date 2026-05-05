@@ -14,7 +14,7 @@ import { DashboardAnalyticsSync } from '@/components/dashboard/DashboardAnalytic
 
 export default async function DashboardPage() {
   return (
-    <SharedPageLayout>
+    <SharedPageLayout showDottedGrid={false}>
       <DashboardAnalyticsSync />
 
       <div className='flex h-full min-h-0 w-full flex-col gap-2 overflow-y-auto lg:overflow-hidden'>
