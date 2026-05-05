@@ -212,6 +212,7 @@ export const completeOnboardingSetup = async (
     const [
       { error: profileError },
       { error: statsError },
+      { error: examPreferencesError },
     ] = await Promise.all([
       supabase
         .from('profiles')
@@ -219,12 +220,16 @@ export const completeOnboardingSetup = async (
       supabase
         .from('user_global_stats')
         .upsert({ user_id: user.id, ...statsUpdates }, { onConflict: 'user_id' }),
+      supabase.rpc('save_user_exam_date_preferences', {
+        p_exam_dates: examDate ? [examDate] : [],
+      }),
     ])
 
-    if (profileError || statsError) {
+    if (profileError || statsError || examPreferencesError) {
       console.error('[PROFILE: completeOnboardingSetup]', {
         profileError,
         statsError,
+        examPreferencesError,
       })
       return {
         success: false,
@@ -274,21 +279,11 @@ export const updateExamDate = async (formData: FormData) => {
     if (!user) return { error: 'Not authenticated' }
 
     const examDate = formData.get('examDate') as string | null
-    const [
-      { error: profileError },
-      { error: statsError },
-    ] = await Promise.all([
-      supabase
-        .from('profiles')
-        .update({ target_exam_date: examDate || null })
-        .eq('id', user.id),
-      supabase
-        .from('user_global_stats')
-        .update({ target_exam_date: examDate || null })
-        .eq('user_id', user.id),
-    ])
+    const { error } = await supabase.rpc('save_user_exam_date_preferences', {
+      p_exam_dates: examDate ? [examDate] : [],
+    })
 
-    if (profileError || statsError) throw profileError ?? statsError
+    if (error) throw error
     revalidateDashboardCacheTags(user.id)
     revalidatePath(ROUTES.dashboard.root, 'layout')
     revalidatePath(ROUTES.dashboard.settings)

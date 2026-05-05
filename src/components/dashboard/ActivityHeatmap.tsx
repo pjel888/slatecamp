@@ -1,6 +1,8 @@
 'use client'
 
-import React, { useEffect, useMemo, useRef, useState } from 'react'
+import React, { useCallback, useEffect, useMemo, useRef, useState, useTransition } from 'react'
+import { useRouter } from 'next/navigation'
+import { saveHeatmapExamDates } from '@/lib/actions/heatmap'
 import { HeatmapHeader } from './heatmap/HeatmapHeader'
 import { HeatmapGrid, dateISO } from './heatmap/HeatmapGrid'
 import { HeatmapLegend } from './heatmap/HeatmapLegend'
@@ -174,17 +176,48 @@ export function ActivityHeatmap({
   accountCreatedAt,
   examDates,
 }: ActivityHeatmapProps) {
+  const router = useRouter()
   const signup = accountCreatedAt ?? MOCK_SIGNUP
   const firstYear = signupYear ?? MOCK_SIGNUP_YEAR
   const lastYear = endYear ?? Math.max(CURRENT_YEAR, firstYear)
+  const saveSequenceRef = useRef(0)
+  const lastConfirmedExamDatesRef = useRef(examDates ?? MOCK_EXAM_DATES)
+  const [isSavingExamDates, startExamDatesTransition] = useTransition()
+  const [examDatesSaveError, setExamDatesSaveError] = useState<string | null>(null)
 
   const [selectedExamDates, setSelectedExamDates] = useState(
     () => examDates ?? MOCK_EXAM_DATES,
   )
 
   useEffect(() => {
-    setSelectedExamDates(examDates ?? MOCK_EXAM_DATES)
+    const confirmedExamDates = examDates ?? MOCK_EXAM_DATES
+    lastConfirmedExamDatesRef.current = confirmedExamDates
+    setSelectedExamDates(confirmedExamDates)
   }, [examDates])
+
+  const handleExamDatesChange = useCallback((nextExamDates: string[]) => {
+    const sequence = saveSequenceRef.current + 1
+    saveSequenceRef.current = sequence
+
+    setSelectedExamDates(nextExamDates)
+    setExamDatesSaveError(null)
+
+    startExamDatesTransition(async () => {
+      const result = await saveHeatmapExamDates(nextExamDates)
+      if (saveSequenceRef.current !== sequence) return
+
+      if (!result.success) {
+        setSelectedExamDates(lastConfirmedExamDatesRef.current)
+        setExamDatesSaveError(result.error ?? 'Failed to save exam dates.')
+        return
+      }
+
+      const savedExamDates = result.examDates ?? nextExamDates
+      lastConfirmedExamDatesRef.current = savedExamDates
+      setSelectedExamDates(savedExamDates)
+      router.refresh()
+    })
+  }, [router])
 
   // Set of exam date strings for O(1) lookup
   const examSet = useMemo(
@@ -249,8 +282,14 @@ export function ActivityHeatmap({
         years={years}
         examDates={selectedExamDates}
         onYearChange={setSelectedYear}
-        onExamDatesChange={setSelectedExamDates}
+        onExamDatesChange={handleExamDatesChange}
       />
+
+      {(isSavingExamDates || examDatesSaveError) && (
+        <p className={examDatesSaveError ? 'pb-2 text-[11px] text-destructive' : 'pb-2 text-[11px] text-muted-foreground'}>
+          {examDatesSaveError ?? 'Saving exam dates…'}
+        </p>
+      )}
 
       {/* ── Measurement + grid container ──────────────────────────────────── */}
       <div ref={containerRef} className='w-full min-w-0'>

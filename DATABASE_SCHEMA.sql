@@ -547,6 +547,16 @@ CREATE TABLE user_global_stats (
   best_full_exam_score                     NUMERIC(5,2)
 );
 
+-- ─── Table: user_exam_date_preferences ──────────────────────────────────
+CREATE TABLE user_exam_date_preferences (
+  user_id                                  UUID NOT NULL,
+  exam_dates                               DATE[] NOT NULL DEFAULT '{}',
+  created_at                               TIMESTAMPTZ NOT NULL DEFAULT now(),
+  updated_at                               TIMESTAMPTZ NOT NULL DEFAULT now(),
+  CONSTRAINT user_exam_date_preferences_max_dates CHECK (array_length(exam_dates, 1) IS NULL OR array_length(exam_dates, 1) <= 14),
+  PRIMARY KEY (user_id)
+);
+
 -- ─── Table: user_endurance_profiles ─────────────────────────────────────
 CREATE TABLE user_endurance_profiles (
   user_id                                  UUID NOT NULL,
