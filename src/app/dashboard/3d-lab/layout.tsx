@@ -8,7 +8,7 @@ const ThreeDLabLayoutPage = ({ children }: { children: React.ReactNode }) => {
     <ExploreLayout
       hero={{
         subtitle: '3D Lab',
-        description: 'Explore architectural concepts in three dimensions. Rotate, zoom, and inspect spatial relationships.',
+        description: 'Explore architectural concepts in interactive 3D.',
       }}
       fullHeight
     >

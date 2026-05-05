@@ -65,11 +65,6 @@ const TrailTodayPage = async ({
         subtitle: currentDay.title,
         description:
           `Day ${currentDay.day_number} of ${trail.duration_days} · Week ${Math.ceil(currentDay.day_number / 7)} of ${Math.ceil(trail.duration_days / 7)}${currentDay.subject_focus ? ` · ${currentDay.subject_focus}` : ''}`,
-        metadata: (
-          <span className="font-dm-mono text-[11px] text-text-tertiary tabular-nums">
-            ~{currentDay.estimated_minutes} min · {currentDay.steps?.length ?? 0} activities
-          </span>
-        ),
       }}
     >
       <div className="w-full max-w-3xl mx-auto flex flex-col gap-5">

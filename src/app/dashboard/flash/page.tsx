@@ -12,7 +12,7 @@ const FlashPage = async () => {
       hero={{
         subtitle: 'LEA Numbers Flash',
         description:
-          'Critical code numbers for the Licensure Examination for Architects (LEA). Tap a category to start.',
+          'Critical LEA numbers. Tap a category to begin.',
       }}
     >
       <FlashHub categories={categories} />

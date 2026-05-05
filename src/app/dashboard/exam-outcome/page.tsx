@@ -28,7 +28,7 @@ const ExamOutcomePage = async () => {
     <DataLayout
       hero={{
         subtitle: `How did the ${CURRENT_EXAM_BATCH} LEA go?`,
-        description: 'Your response helps us improve SlateCamp for the next batch of candidates. Takes about 30 seconds.',
+        description: 'Help improve SlateCamp for the next batch of candidates.',
       }}
     >
       <ExamOutcomeSurvey examBatch={CURRENT_EXAM_BATCH} />

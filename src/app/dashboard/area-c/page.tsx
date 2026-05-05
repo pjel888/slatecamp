@@ -28,7 +28,7 @@ const AreaCPage = () => (
     hero={{
       subtitle: 'Design: Development Controls',
       description:
-        'Reference tools for Philippine National Building Code calculations and development control requirements.',
+        'Building code calculators and development control references.',
     }}
   >
     <div className='flex flex-col gap-3'>

@@ -8,7 +8,7 @@ const AnalyticsPageLayout = ({ children }: { children: React.ReactNode }) => {
       hero={{
         subtitle: 'Analytics',
         description:
-          'Track your study progress, identify weak areas, and measure readiness for the LEA.',
+          'Track progress, identify weak areas, measure LEA readiness.',
       }}
     >
       <AnalyticsTabNav />

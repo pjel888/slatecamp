@@ -8,7 +8,7 @@ export default function WikiPageLayout({ children }: { children: React.ReactNode
     <LearnLayout
       hero={{
         subtitle: 'Knowledge Wiki',
-        description: 'The authoritative guide for the Licensure Examination for Architects (LEA). Select a topic from the taxonomy tree to begin your study.',
+        description: 'Authoritative LEA guide mapped to the exam syllabus.',
       }}
       fullHeight
     >

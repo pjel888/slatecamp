@@ -14,7 +14,7 @@ const ProfessionalPage = async () => {
     <DataLayout
       hero={{
         subtitle: 'Professional Reference',
-        description: 'Resources and tools for licensed architects and practicing professionals.',
+        description: 'Reference tools for licensed practicing architects.',
       }}
     >
       <ProfessionalHub accountMode={data.accountMode} />

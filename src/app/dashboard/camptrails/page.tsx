@@ -28,11 +28,6 @@ const CampTrailsPage = async () => {
         subtitle: 'Camp Trail',
         description:
           'Daily study prescription calibrated to your exam date.',
-        metadata: (
-          <span className="font-dm-mono text-[11px] text-text-tertiary tabular-nums">
-            {trails.length} trails available
-          </span>
-        ),
       }}
     >
       <div className="flex flex-col gap-8 w-full">

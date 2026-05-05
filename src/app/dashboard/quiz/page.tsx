@@ -6,7 +6,7 @@ const DashboardQuizPage = () => (
     hero={{
       subtitle: 'Quiz',
       description:
-        'Build mastery through guided study, timed practice, and exam simulations.',
+        'Guided study, timed practice, and full exam simulation.',
     }}
   >
     <QuizHubContent />

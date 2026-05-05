@@ -86,7 +86,7 @@ export function HeaderHero({
               </p>
             )}
 {description && (
-              <p className='text-sm text-text-secondary leading-relaxed max-w-2xl'>
+              <p className='text-sm text-text-secondary leading-tight'>
                 {description}
               </p>
             )}

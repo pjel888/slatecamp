@@ -8,7 +8,7 @@ const CalculatorPage = () => (
     hero={{
       subtitle: 'Development Controls Calculator',
       description:
-        'Compute AMBF, TGFA, occupant load, parking, and egress requirements under PD 1096, BP 344, and RA 9514.',
+        'Compute AMBF, TGFA, occupant load, parking, and egress.',
     }}
   >
     <DevControlsCalculator />

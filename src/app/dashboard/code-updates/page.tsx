@@ -14,7 +14,7 @@ const CodeUpdatesPage = async () => {
     <LearnLayout
       hero={{
         subtitle: 'Code Updates',
-        description: 'The latest changes to building codes and regulations that may appear on your exam.',
+        description: 'Latest building code changes that may appear on the exam.',
       }}
     >
       <CodeUpdateFeed initialUpdates={data} initialCursor={nextCursor} />

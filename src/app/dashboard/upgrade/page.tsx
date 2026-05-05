@@ -46,7 +46,7 @@ const UpgradePage = async () => {
     <DataLayout
       hero={{
         subtitle: 'Upgrade',
-        description: 'Get unlimited access to all features and accelerate your exam preparation.',
+        description: 'Unlimited access to all SlateCamp features.',
       }}
     >
       <div className="mx-auto w-full max-w-xl px-4 py-8">

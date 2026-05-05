@@ -83,7 +83,7 @@ const DesignProblemsPage = () => (
     hero={{
       subtitle: 'Design Problem Library',
       description:
-        'Practice architectural design within realistic site, program, and code constraints. Problems progress from a single residence to a mixed-use development.',
+        'Architectural design practice with realistic site, program, and code constraints.',
     }}
   >
     <Suspense

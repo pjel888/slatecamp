@@ -58,13 +58,6 @@ const TrailDetailPage = async ({
       hero={{
         subtitle: trail.name,
         description: trail.description ?? undefined,
-        metadata: (
-          <span className="font-dm-mono text-[11px] text-text-tertiary tabular-nums">
-            {trail.duration_days} days · ~{Math.round(trail.daily_time_estimate_minutes / 60 * 10) / 10} hrs/day
-            {trail.intensity && ` · ${INTENSITY_LABELS[trail.intensity] ?? trail.intensity}`}
-            {' · '}{totalSteps} activities
-          </span>
-        ),
       }}
     >
       <div className="w-full max-w-3xl mx-auto flex flex-col gap-6">

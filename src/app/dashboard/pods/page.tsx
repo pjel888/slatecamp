@@ -28,7 +28,7 @@ const PodsPage = async () => {
     <DataLayout
       hero={{
         subtitle: 'Study Pods',
-        description: 'Join or create a study pod. Learn together, stay accountable, and track each other\'s progress.',
+        description: 'Join a study pod. Learn with peers, stay accountable.',
       }}
     >
       <PodHub pods={pods} isPro={isPro} />
