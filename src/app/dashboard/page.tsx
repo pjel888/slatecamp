@@ -17,7 +17,7 @@ export default async function DashboardPage() {
     <SharedPageLayout>
       <DashboardAnalyticsSync />
 
-      <div className='pointer-events-none absolute inset-0 z-0 bg-[url("/images/dashboard/Dashboard-BG-Image.png")] bg-cover bg-bottom bg-no-repeat' />
+      <div className='pointer-events-none absolute inset-0 z-0 bg-[url("/images/dashboard/Dashboard-BG-Image.png")] bg-cover bg-bottom bg-no-repeat opacity-75' />
 
       <div className='relative z-10 flex h-full min-h-0 w-full flex-col gap-2 overflow-y-auto lg:overflow-hidden'>
         {/* ── Primary Hero: Readiness Score + Greeting + Heatmap ────────── */}
