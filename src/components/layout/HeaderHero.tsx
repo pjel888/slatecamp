@@ -85,7 +85,7 @@ export function HeaderHero({
                 {category}
               </p>
             )}
-            {description && (
+{description && (
               <p className='text-sm text-text-secondary leading-relaxed max-w-2xl'>
                 {description}
               </p>

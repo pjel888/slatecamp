@@ -27,7 +27,7 @@ const CampTrailsPage = async () => {
       hero={{
         subtitle: 'Camp Trail',
         description:
-          'Your daily study prescription. Choose a trail calibrated to your exam date and gaps — then follow the map.',
+          'Daily study prescription calibrated to your exam date.',
         metadata: (
           <span className="font-dm-mono text-[11px] text-text-tertiary tabular-nums">
             {trails.length} trails available

@@ -102,23 +102,23 @@ const HERO_OVERRIDES: Record<string, HeroOverrides> = {
   [ROUTES.dashboard.wiki]: {
     subtitle: 'Knowledge Wiki',
     description:
-      'The authoritative guide for the Licensure Examination for Architects (LEA). Select a topic from the taxonomy tree to begin your study.',
+      'Authoritative LEA guide mapped to the exam syllabus.',
   },
   [ROUTES.dashboard.notes]: {
     subtitle: 'Notes',
     description:
-      'Your personal study notebook. Capture insights from articles, quiz questions, and design problems, all linked to their source.',
+      'Your study notebook linked to articles and quiz questions.',
   },
   [ROUTES.dashboard.codeUpdates]: {
     subtitle: 'Code Updates',
     description:
-      'The latest changes to building codes and regulations that may appear on your exam.',
+      'Latest building code changes that may appear on the exam.',
   },
   // Explore
   [ROUTES.lab.root]: {
     subtitle: '3D Lab',
     description:
-      'Explore architectural concepts in three dimensions. Rotate, zoom, and inspect spatial relationships.',
+      'Explore architectural concepts in interactive 3D.',
   },
   [ROUTES.dashboard.studio]: {
     subtitle: 'Studio Mode',
@@ -128,22 +128,22 @@ const HERO_OVERRIDES: Record<string, HeroOverrides> = {
   [ROUTES.dashboard.quiz]: {
     subtitle: 'Quiz',
     description:
-      'Build mastery through guided study, timed practice, and exam simulations.',
+      'Guided study, timed practice, and full exam simulation.',
   },
   [ROUTES.dashboard.camptrails]: {
     subtitle: 'Camp Trail',
     description:
-      'Your daily study prescription. Choose a trail calibrated to your exam date and gaps, then follow the map.',
+      'Daily study prescription calibrated to your exam date.',
   },
   [ROUTES.dashboard.flash]: {
     subtitle: 'LEA Numbers Flash',
     description:
-      'Critical code numbers for the LEA. Tap a category to start.',
+      'Critical LEA numbers. Tap a category to begin.',
   },
   [ROUTES.dashboard.areaC]: {
     subtitle: 'Design: Development Controls',
     description:
-      'Reference tools for Philippine National Building Code calculations and development control requirements.',
+      'Building code calculators and development control references.',
   },
   [ROUTES.dashboard.cramCard]: {
     subtitle: 'Cram Card',
@@ -158,11 +158,11 @@ const HERO_OVERRIDES: Record<string, HeroOverrides> = {
   [ROUTES.dashboard.analytics]: {
     subtitle: 'Analytics',
     description:
-      'Track your study progress, identify weak areas, and measure readiness for the LEA.',
+      'Track progress, identify weak areas, measure LEA readiness.',
   },
   [ROUTES.dashboard.professional]: {
     subtitle: 'Professional Reference',
-    description: 'Resources and tools for licensed architects and practicing professionals.',
+    description: 'Reference tools for licensed practicing architects.',
   },
   [ROUTES.dashboard.resultsDay]: {
     subtitle: 'Results Day',
@@ -170,11 +170,11 @@ const HERO_OVERRIDES: Record<string, HeroOverrides> = {
   },
   [ROUTES.dashboard.upgrade]: {
     subtitle: 'Upgrade',
-    description: 'Get unlimited access to all features and accelerate your exam preparation.',
+    description: 'Unlimited access to all SlateCamp features.',
   },
   [ROUTES.dashboard.pods]: {
     subtitle: 'Study Pods',
-    description: 'Join or create a study pod. Learn together, stay accountable, and track each other\'s progress.',
+    description: 'Join a study pod. Learn with peers, stay accountable.',
   },
   '/dashboard/exam-outcome': {
     subtitle: 'Exam Outcome',

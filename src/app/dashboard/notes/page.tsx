@@ -47,7 +47,7 @@ export default async function NotesPage({ searchParams }: NotesPageProps) {
       hero={{
         subtitle: 'Notes',
         description:
-          'Your personal study notebook. Capture insights from articles, quiz questions, and design problems — all linked to their source.',
+          'Your study notebook linked to articles and quiz questions.',
       }}
       fullHeight
     >
