@@ -1,18 +1,44 @@
 'use client'
 
 import Link from 'next/link'
-import { useMemo } from 'react'
-import { ArrowRight, Lock, Play, Target, Clock, BookOpen } from '@phosphor-icons/react'
+import { useCallback, useMemo, useState } from 'react'
+import { usePathname, useRouter, useSearchParams } from 'next/navigation'
+import {
+  ArrowRight,
+  Books,
+  ChartBar,
+  CheckCircle,
+  Clock,
+  Fire,
+  Gauge,
+  Lightning,
+  Lightbulb,
+  Lock,
+  Play,
+  Target,
+  Timer,
+} from '@phosphor-icons/react'
 import { ROUTES } from '@/lib/routes'
-import { ReadinessScoreRing } from '@/components/score/ReadinessScoreRing'
-import { SectionHeader } from '@/components/shared/section-header'
-import { HeroConfigurator } from './HeroConfigurator'
+import { cn } from '@/lib/utils'
+import { QuizComposer } from './QuizComposer'
 import type {
   SRActiveCycle,
   SRDueCycle,
   SRProgressSummary,
 } from '@/lib/actions/quiz-v2/successive-relearning'
 import type { ViewerEntitlements } from '@/lib/entitlements/types'
+import type { DesignScenario } from '@/lib/design-scenarios'
+import type { QuizSessionConfig } from '@/types/quiz-config'
+import { startSession } from '@/lib/actions/quiz-v2'
+import { mergeWithPreset } from '@/lib/quiz/mode-presets'
+import { Button } from '@/components/ui/button'
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+} from '@/components/ui/dialog'
 
 interface RawSession {
   session_id: string
@@ -51,6 +77,12 @@ interface RawWeakNode {
   } | null
 }
 
+interface CoreSubject {
+  node_id: string
+  name: string
+  subject_area: string
+}
+
 interface ReviewHubProps {
   viewerEntitlements: Pick<
     ViewerEntitlements,
@@ -63,62 +95,118 @@ interface ReviewHubProps {
   focusReviewQueues: RawFocusReviewQueue[]
   targetExamDate: string | null
   weakNodes: RawWeakNode[]
-  coreSubjects?: { node_id: string; name: string; subject_area: string }[]
+  coreSubjects?: CoreSubject[]
+  designScenarios?: DesignScenario[]
   srActiveCycles?: SRActiveCycle[]
   srDueCycles?: SRDueCycle[]
   srProgress?: SRProgressSummary
 }
 
-// ─── Helpers ─────────────────────────────────────────────────────────────────
+type QuizModeSlug = 'slatecamp' | 'design' | 'endurance'
+type ModeAccent = 'blue' | 'purple' | 'orange'
 
-const getSessionHref = (session: RawSession): string => {
-  return session.status === 'completed'
+const QUIZ_MODES: Array<{
+  id: QuizModeSlug
+  title: string
+  description: string
+  cta: string
+  meta: string
+  accent: ModeAccent
+  icon: typeof Target
+}> = [
+  {
+    id: 'slatecamp',
+    title: 'SlateCamp Quiz',
+    description: 'Focused practice by subject, question count, and timing.',
+    cta: 'Build quiz',
+    meta: 'Subject-based builder',
+    accent: 'blue',
+    icon: Target,
+  },
+  {
+    id: 'design',
+    title: 'Design Quiz',
+    description: 'Scenario-based design practice with project briefs and solution review.',
+    cta: 'Open design quiz',
+    meta: 'Area C scenarios',
+    accent: 'purple',
+    icon: Lightbulb,
+  },
+  {
+    id: 'endurance',
+    title: 'Endurance Quiz',
+    description: 'Long-form exam stamina training with extended question sets.',
+    cta: 'Start endurance setup',
+    meta: '30, 50, or 100 questions',
+    accent: 'orange',
+    icon: Fire,
+  },
+]
+
+const ENDURANCE_COUNT_OPTIONS = [30, 50, 100] as const
+
+type EnduranceCount = (typeof ENDURANCE_COUNT_OPTIONS)[number]
+
+const getSessionHref = (session: RawSession): string =>
+  session.status === 'completed'
     ? ROUTES.quiz.results(session.session_id)
     : ROUTES.quiz.session(session.session_id)
-}
-
-const getReadinessZone = (
-  score: number,
-): 'strong' | 'green' | 'amber' | 'needs-review' => {
-  if (score >= 80) return 'strong'
-  if (score >= 65) return 'green'
-  if (score >= 40) return 'amber'
-  return 'needs-review'
-}
 
 const getRelativeDayLabel = (date: string | null): string => {
-  if (!date) return 'No recent study activity'
-  const diffMs = Date.now() - new Date(date).getTime()
-  const days = Math.floor(diffMs / 86_400_000)
-  if (days <= 0) return 'Studied today'
-  if (days === 1) return 'Studied yesterday'
-  return `Last studied ${days} days ago`
+  if (!date) return ''
+  const days = Math.floor((Date.now() - new Date(date).getTime()) / 86_400_000)
+  if (days <= 0) return 'today'
+  if (days === 1) return 'yesterday'
+  return `${days}d ago`
 }
-
-const getDaysUntilExam = (date: string | null): number | null => {
-  if (!date) return null
-  const diffMs = new Date(date).getTime() - Date.now()
-  return Math.max(0, Math.ceil(diffMs / 86_400_000))
-}
-
-// ─── Session Mode Label ──────────────────────────────────────────────────────
 
 const getModeLabel = (mode?: string): string => {
   const labels: Record<string, string> = {
-    custom: 'Standard Quiz',
+    custom: 'SlateCamp Quiz',
     camp: 'Camp',
     chill: 'Chill',
     storm: 'Storm',
     full_exam: 'Full Exam',
     endurance: 'Endurance',
     focus_review: 'Focus Review',
-    subject: 'Subject Quiz',
+    subject: 'Subject',
     article_review: 'Article Review',
   }
   return labels[mode ?? ''] ?? 'Quiz'
 }
 
-// ─── ReviewHub ───────────────────────────────────────────────────────────────
+const isQuizModeSlug = (mode: string | null): mode is QuizModeSlug =>
+  mode === 'slatecamp' || mode === 'design' || mode === 'endurance'
+
+const modeAccentClasses: Record<ModeAccent, {
+  ring: string
+  icon: string
+  bg: string
+  text: string
+  border: string
+}> = {
+  blue: {
+    ring: 'hover:border-primary/40 hover:shadow-primary/10',
+    icon: 'bg-primary-50 text-primary',
+    bg: 'bg-primary-50/70',
+    text: 'text-primary',
+    border: 'border-primary/30',
+  },
+  purple: {
+    ring: 'hover:border-purple-300 hover:shadow-purple-100',
+    icon: 'bg-purple-50 text-purple-700',
+    bg: 'bg-purple-50/70',
+    text: 'text-purple-700',
+    border: 'border-purple-200',
+  },
+  orange: {
+    ring: 'hover:border-amber-300 hover:shadow-amber-100',
+    icon: 'bg-amber-50 text-amber-700',
+    bg: 'bg-amber-50/70',
+    text: 'text-amber-700',
+    border: 'border-amber-200',
+  },
+}
 
 const ReviewHub = ({
   viewerEntitlements,
@@ -129,35 +217,26 @@ const ReviewHub = ({
   focusReviewQueues,
   targetExamDate,
   weakNodes,
-  coreSubjects,
+  coreSubjects = [],
+  designScenarios = [],
   srActiveCycles: _srActiveCycles = [],
-  srDueCycles: _srDueCycles = [],
-  srProgress: _srProgress = { active: 0, spacing: 0, durable: 0, reset: 0, total: 0 },
+  srDueCycles = [],
+  srProgress = { active: 0, spacing: 0, durable: 0, reset: 0, total: 0 },
 }: ReviewHubProps) => {
+  const router = useRouter()
+  const pathname = usePathname()
+  const searchParams = useSearchParams()
+  const currentMode = searchParams.get('mode')
+  const openMode = isQuizModeSlug(currentMode) ? currentMode : null
   const { effectiveTier } = viewerEntitlements
-  const readinessZone = useMemo(
-    () => getReadinessZone(readinessScore),
-    [readinessScore],
-  )
-  const daysUntilExam = useMemo(
-    () => getDaysUntilExam(targetExamDate),
-    [targetExamDate],
-  )
+  const enduranceLocked = effectiveTier === 'free'
+
   const resumeHref = useMemo(
     () => (inProgressSession ? getSessionHref(inProgressSession) : null),
     [inProgressSession],
   )
+
   const focusQueue = focusReviewQueues[0] ?? null
-
-  const weakTopicsPreview = useMemo(
-    () =>
-      weakNodes
-        .slice(0, 4)
-        .map((node) => node.taxonomy_tree?.name)
-        .filter((name): name is string => Boolean(name)),
-    [weakNodes],
-  )
-
   const currentQuestion = inProgressSession
     ? Math.min(
         (inProgressSession.current_question_index ?? 0) + 1,
@@ -166,256 +245,88 @@ const ReviewHub = ({
     : 0
   const totalQuestions = inProgressSession?.question_ids?.length ?? 0
   const modeName = getModeLabel(inProgressSession?.config?.mode)
+  const recentActivity = completedSessions.length > 0
+    ? `${completedSessions.length} completed session${completedSessions.length === 1 ? '' : 's'}`
+    : 'No completed sessions yet'
+  const readinessLabel = readinessScore >= 75 ? 'Exam-ready' : readinessScore >= 50 ? 'Building' : 'Needs reps'
+  const weakTopics = weakNodes.slice(0, 3)
+
+  const openModal = useCallback(
+    (mode: QuizModeSlug) => {
+      const nextParams = new URLSearchParams(searchParams.toString())
+      nextParams.set('mode', mode)
+      router.push(`${pathname}?${nextParams.toString()}`, { scroll: false })
+    },
+    [pathname, router, searchParams],
+  )
+
+  const closeModal = useCallback(() => {
+    const nextParams = new URLSearchParams(searchParams.toString())
+    nextParams.delete('mode')
+    const query = nextParams.toString()
+    router.replace(query ? `${pathname}?${query}` : pathname, { scroll: false })
+  }, [pathname, router, searchParams])
 
   return (
-    <div className="w-full bg-background">
-      <main className="mx-auto w-full max-w-[960px] px-6 py-8" aria-label="Quiz hub">
+    <div className="w-full">
+      <div className="mx-auto flex w-full max-w-[1180px] flex-col gap-6 px-1 py-1 sm:px-2">
+        <QuizPageHeader />
 
-        {/* ═══════════════════════════════════════════════════════════════════
-            HERO AREA — Title, value prop, compact readiness
-           ═══════════════════════════════════════════════════════════════════ */}
-        <header className="mb-10">
-          <SectionHeader
-            eyebrow="Quiz"
-            title="Practice makes exam-ready."
-            subtitle="Each session sharpens your mastery. Choose what to practice, configure your session, and slide to begin."
-            level="page"
+        {inProgressSession && resumeHref && (
+          <ActiveSessionBanner
+            href={resumeHref}
+            modeName={modeName}
+            currentQuestion={currentQuestion}
+            totalQuestions={totalQuestions}
+            startedLabel={getRelativeDayLabel(inProgressSession.started_at)}
           />
-          <div className="mt-6 flex flex-wrap items-center gap-5 rounded-lg border border-border bg-card px-5 py-4">
-            <ReadinessScoreRing
-              score={Math.round(readinessScore)}
-              zone={readinessZone}
-              size="sm"
-            />
-            <div className="flex-1 min-w-0">
-              <p className="text-sm font-semibold text-foreground">
-                {getRelativeDayLabel(lastStudyDate)}
-              </p>
-              <p className="mt-0.5 text-xs text-muted-foreground">
-                {completedSessions.length} completed session{completedSessions.length === 1 ? '' : 's'}
-                {daysUntilExam !== null &&
-                  ` · ${daysUntilExam} day${daysUntilExam === 1 ? '' : 's'} until your exam`}
-                {_srDueCycles.length > 0 &&
-                  ` · ${_srDueCycles.length} SR cycle${_srDueCycles.length === 1 ? '' : 's'} due`}
-              </p>
+        )}
+
+        <section aria-labelledby="quiz-mode-heading" className="space-y-3">
+          <div className="flex items-end justify-between gap-3">
+            <div>
+              <p className="text-xs font-bold uppercase tracking-[0.16em] text-primary">Practice</p>
+              <h2 id="quiz-mode-heading" className="mt-1 text-xl font-extrabold text-foreground font-[family-name:var(--font-display)]">
+                Choose a quiz mode
+              </h2>
             </div>
+            <p className="hidden text-xs text-muted-foreground sm:block">
+              Setup opens after you choose a practice intent.
+            </p>
           </div>
-        </header>
 
-        <div className="space-y-14">
-
-          {/* ═══════════════════════════════════════════════════════════════════
-              ACTIVE QUIZ BANNER — Dominant resume action (only when active)
-             ═══════════════════════════════════════════════════════════════════ */}
-          {inProgressSession && resumeHref && (
-            <section aria-label="Active quiz session">
-              <div className="rounded-lg border-2 border-primary/20 bg-primary-50 p-6 sm:p-8">
-                <div className="flex flex-col gap-5 sm:flex-row sm:items-start sm:justify-between">
-                  <div className="space-y-2">
-                    <div className="flex items-center gap-2">
-                      <Play size={20} weight="fill" className="text-primary" />
-                      <span className="font-mono text-[11px] font-medium uppercase tracking-widest text-primary">
-                        Active Quiz
-                      </span>
-                    </div>
-                    <h2 className="text-xl font-extrabold text-foreground font-[family-name:var(--font-display)]">
-                      You have a quiz in progress
-                    </h2>
-                    <p className="text-sm text-text-secondary">
-                      {modeName} · Question {currentQuestion} of {totalQuestions}
-                      {inProgressSession.started_at && (
-                        <> · Started {getRelativeDayLabel(inProgressSession.started_at).toLowerCase()}</>
-                      )}
-                    </p>
-                  </div>
-                  <Link
-                    href={resumeHref}
-                    className="inline-flex shrink-0 items-center justify-center gap-2 rounded-sm bg-primary px-6 py-3 text-sm font-bold text-white shadow-sm transition-colors hover:bg-primary-700 focus-visible:outline-2 focus-visible:outline-primary"
-                  >
-                    Resume Quiz
-                    <ArrowRight size={16} weight="bold" />
-                  </Link>
-                </div>
-                <p className="mt-5 rounded-md bg-background/60 px-4 py-3 text-xs text-muted-foreground">
-                  Complete or abandon your active quiz before starting a new one.
-                </p>
-              </div>
-            </section>
-          )}
-
-          {/* ═══════════════════════════════════════════════════════════════════
-              QUIZ BUILDER — Subject selection, configuration, slide-to-start
-              Only shown when NO active quiz is running
-             ═══════════════════════════════════════════════════════════════════ */}
-          {!inProgressSession && (
-            <section id="quiz-builder" aria-label="Quiz builder">
-              <SectionHeader
-                eyebrow="Quiz Builder"
-                title="Choose what to practice"
-                subtitle="Select subjects, set the question count, and slide to start. The engine mixes unseen, remediation, and reinforcement questions."
-                level="section"
+          <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
+            {QUIZ_MODES.map((mode) => (
+              <QuizModeCard
+                key={mode.id}
+                mode={mode}
+                locked={mode.id === 'endurance' && enduranceLocked}
+                onOpen={() => openModal(mode.id)}
               />
-              <div className="mt-5">
-                <HeroConfigurator initialSubjects={coreSubjects} />
-              </div>
-            </section>
-          )}
+            ))}
+          </div>
+        </section>
 
-          {/* ═══════════════════════════════════════════════════════════════════
-              SUGGESTED NEXT — Recommendation cards with clear reasoning
-             ═══════════════════════════════════════════════════════════════════ */}
-          {(focusQueue || weakTopicsPreview.length > 0 || _srDueCycles.length > 0) && !inProgressSession && (
-            <section aria-label="Suggested next">
-              <SectionHeader
-                eyebrow="Suggested Next"
-                title="High-impact practice opportunities"
-                subtitle="Based on your performance data and spaced-repetition schedule."
-                level="section"
-              />
-              <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                {/* Focus Review */}
-                {focusQueue && (
-                  <a
-                    href="#quiz-builder"
-                    className="group rounded-lg border border-border bg-card p-5 transition-colors hover:border-primary/30 hover:bg-primary-50/50"
-                  >
-                    <div className="mb-3 flex h-9 w-9 items-center justify-center rounded-sm bg-warning-50">
-                      <Target size={18} weight="fill" className="text-warning" />
-                    </div>
-                    <h3 className="text-sm font-semibold text-foreground">
-                      Target your weak areas
-                    </h3>
-                    <p className="mt-1.5 text-xs leading-relaxed text-muted-foreground">
-                      {focusQueue.question_count} questions across {focusQueue.node_ids.length} weak area{focusQueue.node_ids.length === 1 ? '' : 's'} are ready for review. Focus on what needs the most work.
-                    </p>
-                    <span className="mt-4 inline-flex items-center gap-1 text-xs font-medium text-primary group-hover:underline">
-                      Select subjects below
-                      <ArrowRight size={12} weight="bold" />
-                    </span>
-                  </a>
-                )}
+        <QuizInsightsPanel
+          readinessScore={readinessScore}
+          readinessLabel={readinessLabel}
+          lastStudyDate={lastStudyDate}
+          recentActivity={recentActivity}
+          weakTopics={weakTopics}
+          srDueCount={srDueCycles.length}
+          srTotal={srProgress.total}
+          focusQueueCount={focusQueue?.question_count ?? 0}
+          targetExamDate={targetExamDate}
+        />
+      </div>
 
-                {/* Weak Areas (shown when no focus queue) */}
-                {!focusQueue && weakTopicsPreview.length > 0 && (
-                  <div className="rounded-lg border border-border bg-card p-5">
-                    <div className="mb-3 flex h-9 w-9 items-center justify-center rounded-sm bg-amber-50">
-                      <BookOpen size={18} weight="fill" className="text-amber-600" />
-                    </div>
-                    <h3 className="text-sm font-semibold text-foreground">
-                      Lowest-confidence topics
-                    </h3>
-                    <p className="mt-1.5 text-xs leading-relaxed text-muted-foreground">
-                      These topics need more practice:{' '}
-                      <span className="font-medium text-foreground">
-                        {weakTopicsPreview.join(', ')}
-                      </span>
-                    </p>
-                    <a
-                      href="#quiz-builder"
-                      className="mt-4 inline-flex items-center gap-1 text-xs font-medium text-primary hover:underline"
-                    >
-                      Practice these areas
-                      <ArrowRight size={12} weight="bold" />
-                    </a>
-                  </div>
-                )}
-
-                {/* Successive Relearning */}
-                {_srDueCycles.length > 0 && (
-                  <div className="rounded-lg border border-border bg-card p-5">
-                    <div className="mb-3 flex h-9 w-9 items-center justify-center rounded-sm bg-primary-50">
-                      <Clock size={18} weight="fill" className="text-primary" />
-                    </div>
-                    <h3 className="text-sm font-semibold text-foreground">
-                      Spaced review is due
-                    </h3>
-                    <p className="mt-1.5 text-xs leading-relaxed text-muted-foreground">
-                      {_srDueCycles.length} topic{_srDueCycles.length === 1 ? '' : 's'} due for spaced
-                      reinforcement. Quick review now locks in long-term retention.
-                    </p>
-                    <a
-                      href="#quiz-builder"
-                      className="mt-4 inline-flex items-center gap-1 text-xs font-medium text-primary hover:underline"
-                    >
-                      Reinforce now
-                      <ArrowRight size={12} weight="bold" />
-                    </a>
-                  </div>
-                )}
-              </div>
-            </section>
-          )}
-
-          {/* ═══════════════════════════════════════════════════════════════════
-              SPECIAL FORMATS — Lower-priority quiz types
-             ═══════════════════════════════════════════════════════════════════ */}
-          <section aria-label="Special quiz formats">
-            <SectionHeader
-              eyebrow="Special Formats"
-              title="Scenario and endurance practice"
-              subtitle="Use these when you need focused design practice or exam-length stamina training."
-              level="section"
-            />
-            <div className="mt-5 grid gap-4 md:grid-cols-2">
-              {/* Design Quiz */}
-              <div className="flex flex-col rounded-lg border border-border bg-card p-6">
-                <h3 className="text-base font-bold text-foreground">
-                  Design Quiz
-                </h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                  Scenario-based design practice with project briefs, design decisions, and
-                  solution review for the Area C exam section.
-                </p>
-                <div className="mt-auto pt-5">
-                  <Link
-                    href="/dashboard/area-c/design-quiz"
-                    className="inline-flex w-full items-center justify-center gap-2 rounded-sm border border-border bg-card px-4 py-2.5 text-sm font-medium text-foreground transition-colors hover:bg-muted"
-                  >
-                    Open Design Quiz
-                    <ArrowRight size={14} />
-                  </Link>
-                </div>
-              </div>
-
-              {/* Endurance Quiz */}
-              <div className="flex flex-col rounded-lg border border-border bg-card p-6">
-                <h3 className="text-base font-bold text-foreground">
-                  Endurance Quiz
-                </h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                  Long-form extended practice for exam-length focus. Tracks stamina and accuracy
-                  over time to build your test-taking endurance.
-                </p>
-                <div className="mt-auto pt-5">
-                  {effectiveTier === 'free' ? (
-                    <div className="flex items-center justify-between rounded-sm border border-dashed border-border bg-muted/50 px-4 py-2.5">
-                      <div className="flex items-center gap-2 text-xs font-medium text-muted-foreground">
-                        <Lock size={14} weight="bold" />
-                        <span>Pro Subscription Required</span>
-                      </div>
-                      <Link
-                        href={ROUTES.pricing}
-                        className="text-xs font-bold text-primary hover:underline"
-                      >
-                        Upgrade
-                      </Link>
-                    </div>
-                  ) : (
-                    <Link
-                      href={ROUTES.quiz.setup('endurance')}
-                      className="inline-flex w-full items-center justify-center gap-2 rounded-sm border border-border bg-card px-4 py-2.5 text-sm font-medium text-foreground transition-colors hover:bg-muted"
-                    >
-                      Start Endurance Quiz
-                      <ArrowRight size={14} />
-                    </Link>
-                  )}
-                </div>
-              </div>
-            </div>
-          </section>
-
-        </div>
-      </main>
+      <QuizSetupModalController
+        openMode={openMode}
+        onClose={closeModal}
+        coreSubjects={coreSubjects}
+        designScenarios={designScenarios}
+        enduranceLocked={enduranceLocked}
+      />
     </div>
   )
 }
@@ -423,3 +334,505 @@ const ReviewHub = ({
 ReviewHub.displayName = 'ReviewHub'
 
 export { ReviewHub }
+
+const QuizPageHeader = () => (
+  <header className="flex flex-col gap-1">
+    <p className="text-xs font-bold uppercase tracking-[0.18em] text-primary">Practice</p>
+    <h1 className="text-3xl font-extrabold tracking-tight text-foreground font-[family-name:var(--font-display)]">
+      Quiz
+    </h1>
+    <p className="max-w-2xl text-sm text-muted-foreground">
+      Choose how you want to practice today.
+    </p>
+  </header>
+)
+
+const ActiveSessionBanner = ({
+  href,
+  modeName,
+  currentQuestion,
+  totalQuestions,
+  startedLabel,
+}: {
+  href: string
+  modeName: string
+  currentQuestion: number
+  totalQuestions: number
+  startedLabel: string
+}) => (
+  <section className="flex flex-wrap items-center gap-3 rounded-xl border border-primary/25 bg-primary-50 px-4 py-3 shadow-sm" aria-label="Resume active quiz session">
+    <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-white text-primary shadow-sm">
+      <Play size={18} weight="fill" />
+    </span>
+    <div className="min-w-0 flex-1">
+      <p className="text-sm font-bold text-foreground">Resume your last session</p>
+      <p className="mt-0.5 text-xs text-muted-foreground">
+        {modeName} · Q{currentQuestion}/{totalQuestions || '—'}{startedLabel ? ` · Started ${startedLabel}` : ''}
+      </p>
+    </div>
+    <Link
+      href={href}
+      className="inline-flex items-center gap-1.5 rounded-md bg-primary px-4 py-2 text-xs font-bold text-white transition-colors hover:bg-primary/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+    >
+      Resume
+      <ArrowRight size={13} weight="bold" />
+    </Link>
+  </section>
+)
+
+const QuizModeCard = ({
+  mode,
+  locked,
+  onOpen,
+}: {
+  mode: (typeof QUIZ_MODES)[number]
+  locked: boolean
+  onOpen: () => void
+}) => {
+  const accent = modeAccentClasses[mode.accent]
+  const Icon = locked ? Lock : mode.icon
+
+  return (
+    <button
+      type="button"
+      onClick={onOpen}
+      className={cn(
+        'group flex min-h-[230px] flex-col rounded-2xl border bg-card p-5 text-left shadow-sm transition-all duration-150 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary',
+        locked
+          ? 'border-dashed border-border bg-muted/20 hover:border-primary/25 hover:bg-muted/30'
+          : `cursor-pointer border-border hover:-translate-y-0.5 hover:shadow-md ${accent.ring}`,
+        mode.id === 'slatecamp' && !locked && 'border-primary/25 shadow-primary/5',
+      )}
+      aria-label={locked ? `${mode.title} is locked` : mode.cta}
+    >
+      <div className="flex items-start justify-between gap-3">
+        <span className={cn('flex h-12 w-12 items-center justify-center rounded-xl', locked ? 'bg-muted text-muted-foreground' : accent.icon)}>
+          <Icon size={23} weight="fill" />
+        </span>
+        {!locked && (
+          <span className={cn('rounded-full border px-2.5 py-1 text-[11px] font-bold', accent.bg, accent.border, accent.text)}>
+            {mode.meta}
+          </span>
+        )}
+      </div>
+      <div className="mt-5 flex-1">
+        <h3 className="text-lg font-extrabold text-foreground font-[family-name:var(--font-display)]">
+          {mode.title}
+        </h3>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          {locked ? 'Pro required for exam-stamina sessions.' : mode.description}
+        </p>
+      </div>
+      <span className={cn('mt-5 inline-flex items-center gap-2 text-sm font-bold', locked ? 'text-muted-foreground' : accent.text)}>
+        {locked ? 'Upgrade required' : mode.cta}
+        <ArrowRight size={15} weight="bold" className="transition-transform group-hover:translate-x-0.5" />
+      </span>
+    </button>
+  )
+}
+
+const QuizInsightsPanel = ({
+  readinessScore,
+  readinessLabel,
+  lastStudyDate,
+  recentActivity,
+  weakTopics,
+  srDueCount,
+  srTotal,
+  focusQueueCount,
+  targetExamDate,
+}: {
+  readinessScore: number
+  readinessLabel: string
+  lastStudyDate: string | null
+  recentActivity: string
+  weakTopics: RawWeakNode[]
+  srDueCount: number
+  srTotal: number
+  focusQueueCount: number
+  targetExamDate: string | null
+}) => (
+  <section aria-labelledby="quiz-insights-heading" className="space-y-3">
+    <div className="flex items-center justify-between gap-3">
+      <h2 id="quiz-insights-heading" className="text-base font-bold text-foreground">
+        Practice insights
+      </h2>
+      {targetExamDate && (
+        <span className="text-xs text-muted-foreground">Target exam: {new Date(targetExamDate).toLocaleDateString()}</span>
+      )}
+    </div>
+    <div className="grid gap-3 lg:grid-cols-4">
+      <InsightCard icon={Gauge} label="Readiness" value={`${Math.round(readinessScore)}%`} detail={readinessLabel} />
+      <InsightCard icon={ChartBar} label="Activity" value={recentActivity} detail={lastStudyDate ? `Last studied ${getRelativeDayLabel(lastStudyDate)}` : 'Start a session today'} />
+      <InsightCard icon={Lightning} label="Review due" value={`${srDueCount} SR due`} detail={`${srTotal} total spaced cycles`} />
+      <div className="rounded-xl border border-border bg-card p-4 shadow-sm">
+        <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-[0.12em] text-muted-foreground">
+          <Target size={15} weight="bold" className="text-primary" />
+          Weak areas
+        </div>
+        <div className="mt-3 space-y-2">
+          {weakTopics.length > 0 ? (
+            weakTopics.map((node) => (
+              <div key={node.topic_id} className="truncate rounded-md bg-muted/30 px-2 py-1.5 text-xs font-semibold text-foreground">
+                {node.taxonomy_tree?.name ?? 'Unlabeled topic'}
+              </div>
+            ))
+          ) : (
+            <p className="text-xs text-muted-foreground">No low-confidence topics yet.</p>
+          )}
+        </div>
+        {focusQueueCount > 0 && (
+          <p className="mt-3 text-[11px] font-semibold text-primary">{focusQueueCount} focus questions ready</p>
+        )}
+      </div>
+    </div>
+  </section>
+)
+
+const InsightCard = ({
+  icon: Icon,
+  label,
+  value,
+  detail,
+}: {
+  icon: typeof Gauge
+  label: string
+  value: string
+  detail: string
+}) => (
+  <div className="rounded-xl border border-border bg-card p-4 shadow-sm">
+    <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-[0.12em] text-muted-foreground">
+      <Icon size={15} weight="bold" className="text-primary" />
+      {label}
+    </div>
+    <p className="mt-3 text-lg font-extrabold text-foreground">{value}</p>
+    <p className="mt-1 text-xs text-muted-foreground">{detail}</p>
+  </div>
+)
+
+const QuizSetupModalController = ({
+  openMode,
+  onClose,
+  coreSubjects,
+  designScenarios,
+  enduranceLocked,
+}: {
+  openMode: QuizModeSlug | null
+  onClose: () => void
+  coreSubjects: CoreSubject[]
+  designScenarios: DesignScenario[]
+  enduranceLocked: boolean
+}) => (
+  <Dialog open={openMode !== null} onOpenChange={(open) => { if (!open) onClose() }}>
+    {openMode === 'slatecamp' && (
+      <DialogContent size="full" className="max-h-[92vh] overflow-hidden p-0 sm:max-w-[1080px]">
+        <div className="border-b border-border px-5 py-4 sm:px-6">
+          <DialogHeader>
+            <DialogTitle className="text-xl font-extrabold text-foreground font-[family-name:var(--font-display)]">
+              Build SlateCamp Quiz
+            </DialogTitle>
+            <DialogDescription>
+              Choose subjects, set the session, then slide to start.
+            </DialogDescription>
+          </DialogHeader>
+        </div>
+        <div className="max-h-[calc(92vh-96px)] overflow-y-auto px-5 py-5 sm:px-6">
+          <QuizComposer initialSubjects={coreSubjects} />
+        </div>
+      </DialogContent>
+    )}
+
+    {openMode === 'design' && (
+      <DialogContent size="full" className="max-h-[92vh] overflow-hidden p-0 sm:max-w-[980px]">
+        <DesignQuizModal scenarios={designScenarios} />
+      </DialogContent>
+    )}
+
+    {openMode === 'endurance' && (
+      <DialogContent size="lg" className="max-h-[92vh] overflow-y-auto p-0 sm:max-w-[720px]">
+        <EnduranceQuizModal subjects={coreSubjects} locked={enduranceLocked} />
+      </DialogContent>
+    )}
+  </Dialog>
+)
+
+const DesignQuizModal = ({ scenarios }: { scenarios: DesignScenario[] }) => {
+  const [selectedScenarioId, setSelectedScenarioId] = useState<string | null>(scenarios[0]?.id ?? null)
+  const [query, setQuery] = useState('')
+
+  const filteredScenarios = useMemo(() => {
+    const normalized = query.trim().toLowerCase()
+    if (!normalized) return scenarios
+    return scenarios.filter((scenario) =>
+      [scenario.title, scenario.building_type, scenario.brief, scenario.difficulty]
+        .join(' ')
+        .toLowerCase()
+        .includes(normalized),
+    )
+  }, [query, scenarios])
+
+  const selectedScenario = scenarios.find((scenario) => scenario.id === selectedScenarioId) ?? null
+
+  return (
+    <>
+      <div className="border-b border-border px-5 py-4 sm:px-6">
+        <DialogHeader>
+          <DialogTitle className="text-xl font-extrabold text-foreground font-[family-name:var(--font-display)]">
+            Design Quiz
+          </DialogTitle>
+          <DialogDescription>
+            Practice scenario-based design decisions with project briefs and review.
+          </DialogDescription>
+        </DialogHeader>
+      </div>
+      <div className="max-h-[calc(92vh-170px)] overflow-y-auto px-5 py-5 sm:px-6">
+        <div className="mb-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+          <p className="text-sm font-semibold text-foreground">Choose a scenario</p>
+          <label className="sr-only" htmlFor="design-scenario-search">Search scenarios</label>
+          <input
+            id="design-scenario-search"
+            value={query}
+            onChange={(event) => setQuery(event.target.value)}
+            placeholder="Search scenarios…"
+            className="h-10 rounded-md border border-border bg-background px-3 text-sm focus-visible:outline-2 focus-visible:outline-primary sm:w-72"
+          />
+        </div>
+        {filteredScenarios.length === 0 ? (
+          <div className="rounded-xl border border-border bg-muted/20 px-4 py-8 text-center text-sm text-muted-foreground">
+            No scenarios match your search.
+          </div>
+        ) : (
+          <div className="grid gap-3 sm:grid-cols-2">
+            {filteredScenarios.map((scenario) => (
+              <DesignScenarioCard
+                key={scenario.id}
+                scenario={scenario}
+                selected={scenario.id === selectedScenarioId}
+                onSelect={() => setSelectedScenarioId(scenario.id)}
+              />
+            ))}
+          </div>
+        )}
+      </div>
+      <div className="sticky bottom-0 flex flex-col gap-3 border-t border-border bg-card px-5 py-4 sm:flex-row sm:items-center sm:justify-between sm:px-6">
+        <p className="text-xs text-muted-foreground">
+          {selectedScenario ? `Selected: ${selectedScenario.title}` : 'Select one scenario to continue.'}
+        </p>
+        <Button asChild disabled={!selectedScenario} className="bg-purple-700 text-white hover:bg-purple-800">
+          <Link href={selectedScenario ? `/dashboard/area-c/design-quiz/${selectedScenario.id}` : '#'}>
+            Start Design Quiz
+            <ArrowRight size={14} weight="bold" className="ml-1.5" />
+          </Link>
+        </Button>
+      </div>
+    </>
+  )
+}
+
+const DesignScenarioCard = ({
+  scenario,
+  selected,
+  onSelect,
+}: {
+  scenario: DesignScenario
+  selected: boolean
+  onSelect: () => void
+}) => {
+  const difficulty = scenario.difficulty === 'FOUNDATIONAL'
+    ? 'Foundational'
+    : scenario.difficulty === 'INTERMEDIATE'
+      ? 'Intermediate'
+      : 'Advanced'
+  const timeLabel = scenario.time_limit_minutes >= 60
+    ? `${Math.floor(scenario.time_limit_minutes / 60)}h${scenario.time_limit_minutes % 60 ? ` ${scenario.time_limit_minutes % 60}m` : ''}`
+    : `${scenario.time_limit_minutes}m`
+
+  return (
+    <button
+      type="button"
+      onClick={onSelect}
+      className={cn(
+        'group flex min-h-[190px] flex-col rounded-xl border bg-card p-4 text-left transition-all hover:-translate-y-0.5 hover:shadow-sm focus-visible:outline-2 focus-visible:outline-primary',
+        selected ? 'border-purple-400 bg-purple-50/70 shadow-sm' : 'border-border hover:border-purple-300',
+      )}
+      aria-pressed={selected}
+    >
+      <div className="flex items-start justify-between gap-3">
+        <div className="min-w-0">
+          <p className="text-[11px] font-bold uppercase tracking-[0.12em] text-muted-foreground">
+            {scenario.building_type}
+          </p>
+          <h3 className="mt-1 text-sm font-extrabold leading-snug text-foreground">{scenario.title}</h3>
+        </div>
+        <span className="shrink-0 rounded-full bg-white px-2 py-1 text-[10px] font-bold text-purple-700 shadow-sm">
+          {difficulty}
+        </span>
+      </div>
+      <p className="mt-3 line-clamp-3 flex-1 text-xs leading-relaxed text-muted-foreground">
+        {scenario.brief}
+      </p>
+      <div className="mt-4 flex flex-wrap items-center gap-2 border-t border-border/70 pt-3 text-[11px] font-semibold text-muted-foreground">
+        <span>{scenario.questions.length > 0 ? `${scenario.questions.length} questions` : 'Scenario set'}</span>
+        <span>·</span>
+        <span>{timeLabel}</span>
+        {scenario.trap_count > 0 && (
+          <>
+            <span>·</span>
+            <span className="text-warning">{scenario.trap_count} hidden trap{scenario.trap_count === 1 ? '' : 's'}</span>
+          </>
+        )}
+      </div>
+    </button>
+  )
+}
+
+const EnduranceQuizModal = ({ subjects, locked }: { subjects: CoreSubject[]; locked: boolean }) => {
+  const router = useRouter()
+  const [questionCount, setQuestionCount] = useState<EnduranceCount>(100)
+  const [error, setError] = useState<string | null>(null)
+  const [isStarting, setIsStarting] = useState(false)
+
+  const begin = useCallback(async () => {
+    if (locked || isStarting) return
+    setError(null)
+    setIsStarting(true)
+
+    const config: QuizSessionConfig = mergeWithPreset('endurance', {
+      setup: {
+        questionCount,
+        topics: subjects.map((subject) => subject.node_id),
+        disciplines: [],
+        difficultyMode: 'adaptive',
+        initialDifficulty: 'mixed',
+        isTrailSession: false,
+        trailDayId: null,
+      },
+      timer: {
+        enabled: true,
+        visible: true,
+        mode: 'countup',
+        totalSeconds: null,
+        perQuestion: false,
+        pausable: true,
+        warningThresholds: [],
+      },
+      feedback: {
+        timing: 'deferred',
+        showExplanation: true,
+        showCorrectAnswer: true,
+        showConfidenceRating: true,
+        gatedProgressionDelayMs: 0,
+        explanationDepth: 'brief',
+      },
+      results: {
+        delayHours: 0,
+        showImmediately: true,
+        showPercentile: false,
+        showSubjectBreakdown: true,
+        showGrowthDelta: true,
+        showReadinessScoreImpact: true,
+        showStaminaChart: true,
+      },
+    })
+
+    try {
+      const result = await startSession({ mode: 'endurance', config })
+      if (!result.success) {
+        setError((result as { message?: string }).message ?? 'Failed to start endurance quiz.')
+        setIsStarting(false)
+        return
+      }
+      router.push(ROUTES.quiz.session(result.sessionId))
+    } catch {
+      setError('Something went wrong while creating your endurance session.')
+      setIsStarting(false)
+    }
+  }, [isStarting, locked, questionCount, router, subjects])
+
+  return (
+    <>
+      <div className="border-b border-border px-5 py-4 sm:px-6">
+        <DialogHeader>
+          <DialogTitle className="text-xl font-extrabold text-foreground font-[family-name:var(--font-display)]">
+            Endurance Quiz
+          </DialogTitle>
+          <DialogDescription>
+            Build exam stamina with long-form extended practice.
+          </DialogDescription>
+        </DialogHeader>
+      </div>
+      <div className="space-y-5 px-5 py-5 sm:px-6">
+        {locked ? (
+          <div className="rounded-xl border border-dashed border-border bg-muted/20 p-5 text-center">
+            <Lock size={26} weight="bold" className="mx-auto text-muted-foreground" />
+            <p className="mt-3 text-sm font-bold text-foreground">Endurance Quiz is a Pro feature.</p>
+            <p className="mt-1 text-xs text-muted-foreground">Upgrade to unlock long-form exam-stamina sessions.</p>
+            <Button asChild className="mt-4 bg-primary text-white hover:bg-primary/90">
+              <Link href={ROUTES.pricing}>Upgrade</Link>
+            </Button>
+          </div>
+        ) : (
+          <>
+            <div className="grid gap-2 sm:grid-cols-3" role="group" aria-label="Endurance question count">
+              {ENDURANCE_COUNT_OPTIONS.map((count) => (
+                <button
+                  key={count}
+                  type="button"
+                  onClick={() => setQuestionCount(count)}
+                  className={cn(
+                    'rounded-xl border p-4 text-center transition-all focus-visible:outline-2 focus-visible:outline-primary',
+                    questionCount === count
+                      ? 'border-amber-400 bg-amber-50 shadow-sm'
+                      : 'border-border bg-card hover:border-amber-300 hover:shadow-sm',
+                  )}
+                >
+                  <span className="block text-2xl font-extrabold text-foreground">{count}</span>
+                  <span className="mt-1 block text-xs font-semibold text-muted-foreground">questions</span>
+                </button>
+              ))}
+            </div>
+
+            <div className="grid gap-3 sm:grid-cols-2">
+              <EnduranceFeature icon={Clock} title="Extended practice" description="Longer sets that train attention span." />
+              <EnduranceFeature icon={Timer} title="Count-up timer" description="Track pacing without hard cutoff pressure." />
+              <EnduranceFeature icon={CheckCircle} title="Brief feedback" description="Keep momentum while still learning from misses." />
+              <EnduranceFeature icon={Books} title="Full-subject coverage" description="Draws from your available LEA subject map." />
+            </div>
+
+            {error && (
+              <p className="rounded-md border border-destructive/20 bg-destructive/5 px-3 py-2 text-xs font-semibold text-destructive">
+                {error}
+              </p>
+            )}
+          </>
+        )}
+      </div>
+      {!locked && (
+        <div className="sticky bottom-0 border-t border-border bg-card px-5 py-4 sm:px-6">
+          <Button onClick={begin} disabled={isStarting} className="w-full bg-amber-600 text-white hover:bg-amber-700">
+            {isStarting ? 'Building session…' : `Begin ${questionCount}-question session`}
+            <ArrowRight size={14} weight="bold" className="ml-1.5" />
+          </Button>
+        </div>
+      )}
+    </>
+  )
+}
+
+const EnduranceFeature = ({
+  icon: Icon,
+  title,
+  description,
+}: {
+  icon: typeof Clock
+  title: string
+  description: string
+}) => (
+  <div className="rounded-xl border border-border bg-card p-4">
+    <div className="flex items-center gap-2 text-sm font-bold text-foreground">
+      <Icon size={16} weight="bold" className="text-amber-600" />
+      {title}
+    </div>
+    <p className="mt-2 text-xs leading-relaxed text-muted-foreground">{description}</p>
+  </div>
+)

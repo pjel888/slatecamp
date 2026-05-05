@@ -4,6 +4,7 @@ import { createClient, getUser } from '@/lib/supabase/server'
 import { ROUTES } from '@/lib/routes'
 import { ReviewHub } from '@/components/testing/hub/ReviewHub'
 import { Skeleton } from '@/components/ui/skeleton'
+import { getScenarios } from '@/lib/design-scenarios'
 import {
   getActiveSRCycles,
   getDueSRCycles,
@@ -39,6 +40,7 @@ const QuizHubData = async () => {
     srActiveCycles,
     srDueCycles,
     srProgress,
+    designScenarios,
   ] = await Promise.all([
     supabase
       .from('quiz_sessions')
@@ -82,6 +84,7 @@ const QuizHubData = async () => {
     getActiveSRCycles(user.id).catch(() => []),
     getDueSRCycles(user.id).catch(() => []),
     getUserSRProgress(user.id).catch(() => ({ active: 0, spacing: 0, durable: 0, reset: 0, total: 0 })),
+    getScenarios().catch(() => []),
   ])
 
   const coreSubjects: CoreSubject[] = (coreSubjectsRaw ?? []).map((subject: CoreSubject) => ({
@@ -109,6 +112,7 @@ const QuizHubData = async () => {
       targetExamDate={profile?.target_exam_date ?? null}
       weakNodes={weakNodes ?? []}
       coreSubjects={coreSubjects}
+      designScenarios={designScenarios}
       srActiveCycles={srActiveCycles}
       srDueCycles={srDueCycles}
       srProgress={srProgress}
