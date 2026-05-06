@@ -315,3 +315,18 @@ Next exact resume step:
 5. Independent safety review
 6. Publish with exact `question_id` filters only
 7. Remote verify, commit, push, continue to Batch 030.
+
+## Question Batch 029 Published — 2026-05-06T15:53:48.107964+00:00
+
+Status: PUBLISHED_VERIFIED.
+
+- Selected: 50.
+- Local verifier: 50/50 pass.
+- Independent safety review: PASS, blockers none.
+- Remote apply: 50/50 by exact question_id filter.
+- Remote verification: 50/50.
+- Answer-key changes: 0.
+- Option changes: 0.
+- Backup: `.ai/20_content_publish/backups/questions-backup-question-batch-029-20260506T155301Z.json`.
+
+Running total committed after Batch 029: 1027 published/recovered verified questions.
