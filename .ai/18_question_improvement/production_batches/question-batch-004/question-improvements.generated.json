@@ -1,0 +1,1003 @@
+{
+  "generated_at": "2026-05-06T11:23:29.699572Z",
+  "improvements": [
+    {
+      "question_id": "390172bf-1214-409a-b677-14b287b34c96",
+      "article_id": "569f5a05-ad46-4617-8170-a19e2f5d5db1",
+      "article_dir": ".ai/content-audit-export/articles/lea-dsgn-007-07-core-concept--569f5a05-ad46-4617-8170-a19e2f5d5db1",
+      "title": "lea-dsgn-007-07-core-concept",
+      "baseline_hash": "sha256:e86cf8b820307220a5ae14c16c321eef8d43c283cdb95fbbaf6e647e22cea4d5",
+      "baseline": {
+        "question_id": "390172bf-1214-409a-b677-14b287b34c96",
+        "article_id": "569f5a05-ad46-4617-8170-a19e2f5d5db1",
+        "topic_id": "9c1b686e-6f57-4607-be6c-efd1ed92bf33",
+        "text": "Given: R-2 lot, 800 sqm, FLAR limit 2.0. If you design 4 floors of 320 sqm each, what is the resulting FLAR and is it compliant?",
+        "options": [
+          {
+            "id": "a",
+            "text": "FLAR = 1.60, compliant (within 1.5–2.5 range)"
+          },
+          {
+            "id": "b",
+            "text": "FLAR = 1.60, compliant (within 2.0 limit)"
+          },
+          {
+            "id": "c",
+            "text": "FLAR = 2.0, compliant (exactly at limit)"
+          },
+          {
+            "id": "d",
+            "text": "FLAR = 2.56, non-compliant (exceeds 2.0 limit)"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Correct FLAR value but incorrect reasoning (R-2 range is 1.5–2.5, but this problem specifies 2.0 limit, which is stricter or specific to this zoning condition).",
+          "c": "Wrong FLAR value; 4×320÷800 ≠ 2.0.",
+          "d": "Wrong FLAR value; miscalculation or confusion with different lot size.",
+          "correct": "TGFA = 4×320 = 1,280 sqm. FLAR = 1,280÷800 = 1.60. Limit is 2.0, so 1.60 < 2.0 ✓ compliant.",
+          "takeaway": "FLAR = TGFA ÷ TLA. Compare result against zoning limit. In this case, 1.60 < 2.0, so design is compliant."
+        },
+        "explanation": null,
+        "code_citation": "NBC Chapter 12 FLAR Verification",
+        "bloom_level": "apply",
+        "application_context": "code_interpretation",
+        "practice_context": [],
+        "difficulty": 0.7,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-DSGN-007-07-007",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:12.104711+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:e86cf8b820307220a5ae14c16c321eef8d43c283cdb95fbbaf6e647e22cea4d5"
+      },
+      "proposed": {
+        "explanation": "Correct FLAR value but incorrect reasoning (R-2 range is 1.5–2.5, but this problem specifies 2.0 limit, which is stricter or specific to this zoning condition). Wrong FLAR value; 4×320÷800 ≠ 2.0. Wrong FLAR value; miscalculation or confusion with different lot size. TGFA = 4×320 = 1,280 sqm. FLAR = 1,280÷800 = 1.60. Limit is 2.0, so 1.60 < 2.0 ✓ compliant. FLAR = TGFA ÷ TLA. Compare result against zoning limit. In this case, 1.60 < 2.0, so design is compliant."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "8d589381-b75c-4736-8cad-6843b7247bc5",
+      "article_id": "569f5a05-ad46-4617-8170-a19e2f5d5db1",
+      "article_dir": ".ai/content-audit-export/articles/lea-dsgn-007-07-core-concept--569f5a05-ad46-4617-8170-a19e2f5d5db1",
+      "title": "lea-dsgn-007-07-core-concept",
+      "baseline_hash": "sha256:d3e8d13460b33df300d4e43fcd77f27a8ee42e03185f357bcd48037c77bc054c",
+      "baseline": {
+        "question_id": "8d589381-b75c-4736-8cad-6843b7247bc5",
+        "article_id": "569f5a05-ad46-4617-8170-a19e2f5d5db1",
+        "topic_id": "9c1b686e-6f57-4607-be6c-efd1ed92bf33",
+        "text": "Why is FLAR often a more restrictive constraint than BHL in dense commercial zones?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Because FLAR limits the total GFA relative to lot size, preventing excessive building density even if height allows it."
+          },
+          {
+            "id": "b",
+            "text": "Because commercial buildings are always wider than residential, so FLAR penalizes them by restricting the allowable floor area"
+          },
+          {
+            "id": "c",
+            "text": "Because BHL is measured from curb, while FLAR is measured from property line, affecting the overall building footprint"
+          },
+          {
+            "id": "d",
+            "text": "Because FLAR applies only in zones with high PSO%, limiting the potential for vertical expansion"
+          }
+        ],
+        "correct_option_id": "a",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "b": "Irrelevant; building shape does not change FLAR calculation.",
+          "c": "Measurement point does not affect FLAR logic.",
+          "d": "FLAR applies to all zones, though limits vary.",
+          "correct": "FLAR (e.g., 9.0–12.0 in C-3) is a ratio cap that prevents the architect from stacking unlimited floors, even if height allows. In C-3, a small lot multiplied by high floor count quickly violates FLAR. BHL alone would suggest more floors than FLAR permits.",
+          "takeaway": "FLAR = TGFA ÷ TLA is a density ceiling. In commercial zones with large FLAR (9.0–34.0), it may still restrict smaller lots. Always check FLAR as a binding constraint."
+        },
+        "explanation": null,
+        "code_citation": "NBC Chapter 12 Zoning Principles",
+        "bloom_level": "apply",
+        "application_context": "code_interpretation",
+        "practice_context": [],
+        "difficulty": 0.7,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-DSGN-007-07-006",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:12.104711+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:d3e8d13460b33df300d4e43fcd77f27a8ee42e03185f357bcd48037c77bc054c"
+      },
+      "proposed": {
+        "explanation": "Irrelevant; building shape does not change FLAR calculation. Measurement point does not affect FLAR logic. FLAR applies to all zones, though limits vary. FLAR (e.g., 9.0–12.0 in C-3) is a ratio cap that prevents the architect from stacking unlimited floors, even if height allows. In C-3, a small lot multiplied by high floor count quickly violates FLAR. BHL alone would suggest more floors than FLAR permits. FLAR = TGFA ÷ TLA is a density ceiling. In commercial zones with large FLAR (9.0–34.0), it may still restrict smaller lots. Always check FLAR as a binding constraint."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "b2a2200c-96e6-466f-a03e-8aeabf3fc714",
+      "article_id": "569f5a05-ad46-4617-8170-a19e2f5d5db1",
+      "article_dir": ".ai/content-audit-export/articles/lea-dsgn-007-07-core-concept--569f5a05-ad46-4617-8170-a19e2f5d5db1",
+      "title": "lea-dsgn-007-07-core-concept",
+      "baseline_hash": "sha256:441c1bb4a2ff39ec8e5416405bb81e6b8e75f92fa0309cd880fe8b31be5e28be",
+      "baseline": {
+        "question_id": "b2a2200c-96e6-466f-a03e-8aeabf3fc714",
+        "article_id": "569f5a05-ad46-4617-8170-a19e2f5d5db1",
+        "topic_id": "9c1b686e-6f57-4607-be6c-efd1ed92bf33",
+        "text": "What does AMBF stand for, and how is it calculated?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Allowable Maximum Building Footprint = TLA ÷ PSO%"
+          },
+          {
+            "id": "b",
+            "text": "Allowable Mixed-Use Building Footprint = TLA × floor count"
+          },
+          {
+            "id": "c",
+            "text": "Allowable Building Footprint = TLA × PSO%"
+          },
+          {
+            "id": "d",
+            "text": "Accessible Building Maintenance Floor = TGFA ÷ floors"
+          }
+        ],
+        "correct_option_id": "c",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Uses division instead of multiplication; incorrect formula.",
+          "b": "Conflates footprint with total GFA; ignores PSO%.",
+          "d": "Unrelated metric (maintenance floor); wrong formula.",
+          "correct": "AMBF = Allowable Building Footprint, the portion of the lot you can occupy. Formula: AMBF = TLA × PSO%. For R-2 (PSO=70%), a 600 sqm lot yields AMBF = 600×0.70 = 420 sqm.",
+          "takeaway": "AMBF is always PSO% of the lot. This single-floor footprint becomes the basis for calculating TGFA when multiplied by number of floors."
+        },
+        "explanation": null,
+        "code_citation": "Local Zoning Ordinance + PD 1096 Rule VII",
+        "bloom_level": "understand",
+        "application_context": "code_interpretation",
+        "practice_context": [],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-DSGN-007-07-002",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:12.104711+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:441c1bb4a2ff39ec8e5416405bb81e6b8e75f92fa0309cd880fe8b31be5e28be"
+      },
+      "proposed": {
+        "explanation": "Uses division instead of multiplication; incorrect formula. Conflates footprint with total GFA; ignores PSO%. Unrelated metric (maintenance floor); wrong formula. AMBF = Allowable Building Footprint, the portion of the lot you can occupy. Formula: AMBF = TLA × PSO%. For R-2 (PSO=70%), a 600 sqm lot yields AMBF = 600×0.70 = 420 sqm. AMBF is always PSO% of the lot. This single-floor footprint becomes the basis for calculating TGFA when multiplied by number of floors."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "19d8de35-da91-4e4c-982b-abbb49ed0694",
+      "article_id": "c534d94f-967a-48bb-babf-419fa6d35ec7",
+      "article_dir": ".ai/content-audit-export/articles/spp-doc-204-a-fulltime-supervision-services--c534d94f-967a-48bb-babf-419fa6d35ec7",
+      "title": "SPP Document 204-A: Standards of Professional Practice on Fulltime Supervision Services",
+      "baseline_hash": "sha256:085c606a5981bcecbe4a4f6d0ab6f498440bf91cccd461ca6275b18db0b98a05",
+      "baseline": {
+        "question_id": "19d8de35-da91-4e4c-982b-abbb49ed0694",
+        "article_id": "c534d94f-967a-48bb-babf-419fa6d35ec7",
+        "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+        "text": "What type of report must the CSG prepare daily under SPP 204-A?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Weekly Progress Report (WPR)"
+          },
+          {
+            "id": "b",
+            "text": "Monthly Status Report (MSR)"
+          },
+          {
+            "id": "c",
+            "text": "Daily Inspection Report (DIR)"
+          },
+          {
+            "id": "d",
+            "text": "Construction Activity Log (CAL)"
+          }
+        ],
+        "correct_option_id": "c",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Weekly reports are too infrequent for fulltime supervision. SPP 204-A requires daily reporting.",
+          "b": "Monthly reports are inadequate for the level of supervision SPP 204-A demands.",
+          "c": "Correct. The CSG must prepare Daily Inspection Reports (DIRs) documenting all construction activities, inspections, issues, and decisions for each working day.",
+          "d": "Construction Activity Log is not the term used in SPP 204-A. The specified document is the DIR.",
+          "correct": "SPP 204-A requires the CSG to prepare Daily Inspection Reports (DIRs) for every working day. DIRs document construction activities, inspection findings, material deliveries, weather conditions, workforce count, and any issues or directives.",
+          "takeaway": "CSG must prepare Daily Inspection Reports (DIRs) every working day."
+        },
+        "explanation": null,
+        "code_citation": "SPP 204-A",
+        "bloom_level": "remember",
+        "application_context": null,
+        "practice_context": [],
+        "difficulty": 0.4,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": null,
+        "prompt_image_url": null,
+        "created_at": "2026-03-31T06:07:47.442383+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:085c606a5981bcecbe4a4f6d0ab6f498440bf91cccd461ca6275b18db0b98a05"
+      },
+      "proposed": {
+        "explanation": "Weekly reports are too infrequent for fulltime supervision. SPP 204-A requires daily reporting. Monthly reports are inadequate for the level of supervision SPP 204-A demands. Correct. The CSG must prepare Daily Inspection Reports (DIRs) documenting all construction activities, inspections, issues, and decisions for each working day. Construction Activity Log is not the term used in SPP 204-A. The specified document is the DIR. SPP 204-A requires the CSG to prepare Daily Inspection Reports (DIRs) for every working day. DIRs document construction activities, inspection findings, material deliveries, weather conditions, workforce count, and any issues or directives. CSG must prepare Daily Inspection Reports (DIRs) every working day."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "2ca3a7de-6321-4f1e-a5c6-8950c644cc61",
+      "article_id": "c534d94f-967a-48bb-babf-419fa6d35ec7",
+      "article_dir": ".ai/content-audit-export/articles/spp-doc-204-a-fulltime-supervision-services--c534d94f-967a-48bb-babf-419fa6d35ec7",
+      "title": "SPP Document 204-A: Standards of Professional Practice on Fulltime Supervision Services",
+      "baseline_hash": "sha256:d6bd9556ae3550c551c897ce5e81ff8b947aa803157fa440dd07bd5a5b770d60",
+      "baseline": {
+        "question_id": "2ca3a7de-6321-4f1e-a5c6-8950c644cc61",
+        "article_id": "c534d94f-967a-48bb-babf-419fa6d35ec7",
+        "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+        "text": "What minimum educational qualification is required for a CSG inspector under SPP 204-A?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A technical vocational diploma in construction"
+          },
+          {
+            "id": "b",
+            "text": "A Bachelor of Science in Architecture (BS Arch) degree"
+          },
+          {
+            "id": "c",
+            "text": "A master's degree in construction management"
+          },
+          {
+            "id": "d",
+            "text": "Any engineering degree from a CHED-recognized school"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "A vocational diploma is insufficient. SPP 204-A requires a professional degree.",
+          "b": "Correct. A CSG inspector must hold a Bachelor of Science in Architecture (BS Arch) degree, ensuring professional competence in architectural supervision.",
+          "c": "A master's degree is not required. The minimum is a BS Arch degree.",
+          "d": "An engineering degree does not substitute for the BS Arch requirement for CSG inspectors under SPP 204-A.",
+          "correct": "SPP 204-A requires CSG inspectors to hold a BS Architecture degree as a minimum qualification. This ensures inspectors have the architectural knowledge needed to verify that construction faithfully executes the architect's design intent.",
+          "takeaway": "CSG inspector minimum qualification = BS Arch degree."
+        },
+        "explanation": null,
+        "code_citation": "SPP 204-A",
+        "bloom_level": "remember",
+        "application_context": null,
+        "practice_context": [],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": null,
+        "prompt_image_url": null,
+        "created_at": "2026-03-31T06:07:47.442383+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:d6bd9556ae3550c551c897ce5e81ff8b947aa803157fa440dd07bd5a5b770d60"
+      },
+      "proposed": {
+        "explanation": "A vocational diploma is insufficient. SPP 204-A requires a professional degree. Correct. A CSG inspector must hold a Bachelor of Science in Architecture (BS Arch) degree, ensuring professional competence in architectural supervision. A master's degree is not required. The minimum is a BS Arch degree. An engineering degree does not substitute for the BS Arch requirement for CSG inspectors under SPP 204-A. SPP 204-A requires CSG inspectors to hold a BS Architecture degree as a minimum qualification. This ensures inspectors have the architectural knowledge needed to verify that construction faithfully executes the architect's design intent. CSG inspector minimum qualification = BS Arch degree."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "127b35a9-dcb6-46b5-b020-8f32f19ce3a5",
+      "article_id": "c534d94f-967a-48bb-babf-419fa6d35ec7",
+      "article_dir": ".ai/content-audit-export/articles/spp-doc-204-a-fulltime-supervision-services--c534d94f-967a-48bb-babf-419fa6d35ec7",
+      "title": "SPP Document 204-A: Standards of Professional Practice on Fulltime Supervision Services",
+      "baseline_hash": "sha256:e5fb6694e7ae187a82099c234d4f582b7e23d71e53e10f86d530cdb68c090f81",
+      "baseline": {
+        "question_id": "127b35a9-dcb6-46b5-b020-8f32f19ce3a5",
+        "article_id": "c534d94f-967a-48bb-babf-419fa6d35ec7",
+        "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+        "text": "What is the key difference between SPP 202 construction phase services and SPP 204-A fulltime supervision?",
+        "options": [
+          {
+            "id": "a",
+            "text": "SPP 202 requires weekly visits; SPP 204-A requires monthly visits"
+          },
+          {
+            "id": "b",
+            "text": "SPP 202 requires periodic site visits; SPP 204-A requires daily 8-hour supervision"
+          },
+          {
+            "id": "c",
+            "text": "SPP 202 covers structural inspection; SPP 204-A covers architectural inspection only"
+          },
+          {
+            "id": "d",
+            "text": "SPP 202 is for private projects; SPP 204-A is for government projects only"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "The frequency distinction is incorrect. SPP 202 is periodic (not specifically weekly) and SPP 204-A is daily.",
+          "b": "Correct. SPP 202 provides for periodic site visits during construction, while SPP 204-A mandates daily 8-hour continuous on-site supervision by the CSG.",
+          "c": "Both cover all aspects of architectural work, not divided by structural vs. architectural inspection.",
+          "d": "Both SPP 202 and 204-A apply to all project types, not distinguished by ownership.",
+          "correct": "The fundamental difference is intensity: SPP 202 requires periodic site visits (checking progress at intervals), while SPP 204-A mandates daily 8-hour continuous on-site supervision by qualified CSG inspectors. SPP 204-A is separately compensated.",
+          "takeaway": "SPP 202 = periodic visits; SPP 204-A = daily 8-hour continuous supervision."
+        },
+        "explanation": null,
+        "code_citation": "SPP 202 / SPP 204-A",
+        "bloom_level": "analyze",
+        "application_context": null,
+        "practice_context": [],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": null,
+        "prompt_image_url": null,
+        "created_at": "2026-03-31T06:07:47.442383+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:e5fb6694e7ae187a82099c234d4f582b7e23d71e53e10f86d530cdb68c090f81"
+      },
+      "proposed": {
+        "explanation": "The frequency distinction is incorrect. SPP 202 is periodic (not specifically weekly) and SPP 204-A is daily. Correct. SPP 202 provides for periodic site visits during construction, while SPP 204-A mandates daily 8-hour continuous on-site supervision by the CSG. Both cover all aspects of architectural work, not divided by structural vs. architectural inspection. Both SPP 202 and 204-A apply to all project types, not distinguished by ownership. The fundamental difference is intensity: SPP 202 requires periodic site visits (checking progress at intervals), while SPP 204-A mandates daily 8-hour continuous on-site supervision by qualified CSG inspectors. SPP 204-A is separately compensated. SPP 202 = periodic visits; SPP 204-A = daily 8-hour continuous supervision."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "5c60d142-1beb-4882-b508-c1d030af2720",
+      "article_id": "c534d94f-967a-48bb-babf-419fa6d35ec7",
+      "article_dir": ".ai/content-audit-export/articles/spp-doc-204-a-fulltime-supervision-services--c534d94f-967a-48bb-babf-419fa6d35ec7",
+      "title": "SPP Document 204-A: Standards of Professional Practice on Fulltime Supervision Services",
+      "baseline_hash": "sha256:a5ccd42770e7e25428ab36089e4f2631dca7c3b2fde15c096367bed199727d8e",
+      "baseline": {
+        "question_id": "5c60d142-1beb-4882-b508-c1d030af2720",
+        "article_id": "c534d94f-967a-48bb-babf-419fa6d35ec7",
+        "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+        "text": "The modern CSG concept under SPP 204-A evolved from which traditional role?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Project Manager"
+          },
+          {
+            "id": "b",
+            "text": "Site Engineer"
+          },
+          {
+            "id": "c",
+            "text": "Clerk-of-Works"
+          },
+          {
+            "id": "d",
+            "text": "Building Inspector"
+          }
+        ],
+        "correct_option_id": "c",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Project Manager is a separate role covered under SPP 206, not the precursor to the CSG.",
+          "b": "Site Engineer is an engineering role, not the traditional architectural supervision role that evolved into the CSG.",
+          "c": "Correct. The CSG concept evolved from the traditional Clerk-of-Works role, modernizing and professionalizing on-site architectural supervision.",
+          "d": "Building Inspector is a government regulatory role, not the traditional predecessor of the CSG.",
+          "correct": "The Construction Supervision Group (CSG) under SPP 204-A evolved from the traditional Clerk-of-Works role. The modernization expanded the scope from a single clerk to a professional group, added formal qualifications, and structured the reporting framework.",
+          "takeaway": "CSG evolved from the traditional Clerk-of-Works role."
+        },
+        "explanation": null,
+        "code_citation": "SPP 204-A",
+        "bloom_level": "remember",
+        "application_context": null,
+        "practice_context": [],
+        "difficulty": 0.4,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": null,
+        "prompt_image_url": null,
+        "created_at": "2026-03-31T06:07:47.442383+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:a5ccd42770e7e25428ab36089e4f2631dca7c3b2fde15c096367bed199727d8e"
+      },
+      "proposed": {
+        "explanation": "Project Manager is a separate role covered under SPP 206, not the precursor to the CSG. Site Engineer is an engineering role, not the traditional architectural supervision role that evolved into the CSG. Correct. The CSG concept evolved from the traditional Clerk-of-Works role, modernizing and professionalizing on-site architectural supervision. Building Inspector is a government regulatory role, not the traditional predecessor of the CSG. The Construction Supervision Group (CSG) under SPP 204-A evolved from the traditional Clerk-of-Works role. The modernization expanded the scope from a single clerk to a professional group, added formal qualifications, and structured the reporting framework. CSG evolved from the traditional Clerk-of-Works role."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "5585a204-3384-4867-84e8-706e74628f0b",
+      "article_id": "c534d94f-967a-48bb-babf-419fa6d35ec7",
+      "article_dir": ".ai/content-audit-export/articles/spp-doc-204-a-fulltime-supervision-services--c534d94f-967a-48bb-babf-419fa6d35ec7",
+      "title": "SPP Document 204-A: Standards of Professional Practice on Fulltime Supervision Services",
+      "baseline_hash": "sha256:96a2d3966dddbc1fbf2e92e9c017fa865aba740f9d6b80baf5cc57524c8d5848",
+      "baseline": {
+        "question_id": "5585a204-3384-4867-84e8-706e74628f0b",
+        "article_id": "c534d94f-967a-48bb-babf-419fa6d35ec7",
+        "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+        "text": "How many compensation methods are available for fulltime supervision services under SPP 204-A?",
+        "options": [
+          {
+            "id": "a",
+            "text": "3"
+          },
+          {
+            "id": "b",
+            "text": "4"
+          },
+          {
+            "id": "c",
+            "text": "5"
+          },
+          {
+            "id": "d",
+            "text": "6"
+          }
+        ],
+        "correct_option_id": "d",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "3 methods is too few. SPP 204-A provides more options for compensation flexibility.",
+          "b": "4 methods is incorrect. SPP 204-A specifies a more comprehensive set.",
+          "c": "5 methods is close but incomplete. The actual count is 6.",
+          "d": "Correct. SPP 204-A provides 6 compensation methods, giving flexibility to structure payment based on project characteristics and client preferences.",
+          "correct": "SPP 204-A provides 6 compensation methods for fulltime supervision services, offering flexibility to match compensation structure to project scale, duration, and complexity.",
+          "takeaway": "SPP 204-A has 6 compensation methods for fulltime supervision."
+        },
+        "explanation": null,
+        "code_citation": "SPP 204-A",
+        "bloom_level": "remember",
+        "application_context": null,
+        "practice_context": [],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": null,
+        "prompt_image_url": null,
+        "created_at": "2026-03-31T06:07:47.442383+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:96a2d3966dddbc1fbf2e92e9c017fa865aba740f9d6b80baf5cc57524c8d5848"
+      },
+      "proposed": {
+        "explanation": "3 methods is too few. SPP 204-A provides more options for compensation flexibility. 4 methods is incorrect. SPP 204-A specifies a more comprehensive set. 5 methods is close but incomplete. The actual count is 6. Correct. SPP 204-A provides 6 compensation methods, giving flexibility to structure payment based on project characteristics and client preferences. SPP 204-A provides 6 compensation methods for fulltime supervision services, offering flexibility to match compensation structure to project scale, duration, and complexity. SPP 204-A has 6 compensation methods for fulltime supervision."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "e4e96d31-2fbc-4862-aa9e-efee88612415",
+      "article_id": "c534d94f-967a-48bb-babf-419fa6d35ec7",
+      "article_dir": ".ai/content-audit-export/articles/spp-doc-204-a-fulltime-supervision-services--c534d94f-967a-48bb-babf-419fa6d35ec7",
+      "title": "SPP Document 204-A: Standards of Professional Practice on Fulltime Supervision Services",
+      "baseline_hash": "sha256:65c4b3905967f855a0708b491c324d11cd8d6840151b736b8b47ac844561f095",
+      "baseline": {
+        "question_id": "e4e96d31-2fbc-4862-aa9e-efee88612415",
+        "article_id": "c534d94f-967a-48bb-babf-419fa6d35ec7",
+        "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+        "text": "Under SPP 204-A, in how many arrangements can fulltime supervision services be provided?",
+        "options": [
+          {
+            "id": "a",
+            "text": "One: through the CSG only"
+          },
+          {
+            "id": "b",
+            "text": "Two: dual capacity (architect as supervisor) or consulting architect only"
+          },
+          {
+            "id": "c",
+            "text": "Three: CSG, architect, or construction manager"
+          },
+          {
+            "id": "d",
+            "text": "Four: CSG, architect, contractor's superintendent, or independent inspector"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "CSG-only is just one of the two recognized arrangements.",
+          "b": "Correct. SPP 204-A recognizes two arrangements: (1) dual capacity, where the architect of record also provides fulltime supervision, and (2) consulting architect only, where a separate architect/firm provides supervision services.",
+          "c": "Three arrangements overspecifies. Construction management is covered under SPP 204-B.",
+          "d": "Four arrangements is incorrect and mixes roles from different SPP documents.",
+          "correct": "SPP 204-A provides for two arrangements: dual capacity (where the designing architect also supervises) and consulting architect only (where a separate professional provides supervision). Both require qualified CSG personnel.",
+          "takeaway": "Two arrangements: dual capacity or consulting architect only."
+        },
+        "explanation": null,
+        "code_citation": "SPP 204-A",
+        "bloom_level": "understand",
+        "application_context": null,
+        "practice_context": [],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": null,
+        "prompt_image_url": null,
+        "created_at": "2026-03-31T06:07:47.442383+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:65c4b3905967f855a0708b491c324d11cd8d6840151b736b8b47ac844561f095"
+      },
+      "proposed": {
+        "explanation": "CSG-only is just one of the two recognized arrangements. Correct. SPP 204-A recognizes two arrangements: (1) dual capacity, where the architect of record also provides fulltime supervision, and (2) consulting architect only, where a separate architect/firm provides supervision services. Three arrangements overspecifies. Construction management is covered under SPP 204-B. Four arrangements is incorrect and mixes roles from different SPP documents. SPP 204-A provides for two arrangements: dual capacity (where the designing architect also supervises) and consulting architect only (where a separate professional provides supervision). Both require qualified CSG personnel. Two arrangements: dual capacity or consulting architect only."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "aa33ff64-4a81-487a-9ac3-1b59ec809922",
+      "article_id": "0b116082-5275-4d0f-bb23-ce5b74339001",
+      "article_dir": ".ai/content-audit-export/articles/lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic--0b116082-5275-4d0f-bb23-ce5b74339001",
+      "title": "lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic",
+      "baseline_hash": "sha256:ee940b647a214ecdfa3821f4d7345d18fa4074a5dc3c13b2cda71ac49c802099",
+      "baseline": {
+        "question_id": "aa33ff64-4a81-487a-9ac3-1b59ec809922",
+        "article_id": "0b116082-5275-4d0f-bb23-ce5b74339001",
+        "topic_id": "8a62f4b9-7bb5-46dc-ab3a-73c33d31ba1c",
+        "text": "Under SPP 202, which design phase earns the largest single percentage of total design fees?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Schematic Design at 15%"
+          },
+          {
+            "id": "b",
+            "text": "Design Development at 20%"
+          },
+          {
+            "id": "c",
+            "text": "Contract Documents at 50%"
+          },
+          {
+            "id": "d",
+            "text": "Construction Administration at 10%"
+          }
+        ],
+        "correct_option_id": "c",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Schematic Design earns 15%, the first but not largest payment.",
+          "b": "Design Development earns 20%, less than Contract Documents.",
+          "d": "Construction Administration earns 10%, the second-smallest allocation.",
+          "correct": "Contract Documents represents the largest single phase payment at 50% of total design fees, reflecting the substantial technical work and responsibility for construction documents (SPP Doc 202).",
+          "takeaway": "Contract Documents phase earns the largest single payment at 50%."
+        },
+        "explanation": null,
+        "code_citation": "SPP Doc 202",
+        "bloom_level": "remember",
+        "application_context": "recall",
+        "practice_context": [],
+        "difficulty": 0.3,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-PRAC-SVC-004-002",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:45.512865+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:ee940b647a214ecdfa3821f4d7345d18fa4074a5dc3c13b2cda71ac49c802099"
+      },
+      "proposed": {
+        "explanation": "Schematic Design earns 15%, the first but not largest payment. Design Development earns 20%, less than Contract Documents. Construction Administration earns 10%, the second-smallest allocation. Contract Documents represents the largest single phase payment at 50% of total design fees, reflecting the substantial technical work and responsibility for construction documents (SPP Doc 202). Contract Documents phase earns the largest single payment at 50%."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "981a4783-5b58-4662-a9d0-138ccdd371c2",
+      "article_id": "0b116082-5275-4d0f-bb23-ce5b74339001",
+      "article_dir": ".ai/content-audit-export/articles/lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic--0b116082-5275-4d0f-bb23-ce5b74339001",
+      "title": "lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic",
+      "baseline_hash": "sha256:dd29874c53896b4e6dc81ec1f883ebb1a291df26d8d5ef8f4b0016c2a2300f5a",
+      "baseline": {
+        "question_id": "981a4783-5b58-4662-a9d0-138ccdd371c2",
+        "article_id": "0b116082-5275-4d0f-bb23-ce5b74339001",
+        "topic_id": "8a62f4b9-7bb5-46dc-ab3a-73c33d31ba1c",
+        "text": "A client questions whether Design Development work justifies 20% of total fees. How would you defend this allocation according to SPP 202?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Design Development has minimal importance; fees could be reduced without affecting project quality."
+          },
+          {
+            "id": "b",
+            "text": "Design Development requires significant coordination, technical development, and consultant integration—substantial work between conceptual design and construction documents"
+          },
+          {
+            "id": "c",
+            "text": "Design Development fees are arbitrary and can be negotiated freely, depending on client and project specifics."
+          },
+          {
+            "id": "d",
+            "text": "Design Development work is redundant with Schematic Design, and thus, the fees should be reconsidered."
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Design Development is critical to project success and proper coordination.",
+          "c": "SPP 202 establishes standard fee allocations; negotiation is within broader structure.",
+          "d": "Design Development builds upon and substantially expands Schematic Design.",
+          "correct": "Design Development represents substantial technical work on coordination and refinement from conceptual design to detailed documents, justifying 20% of fees under SPP 202 (SPP Doc 202).",
+          "takeaway": "Design Development earns 20% due to substantial technical coordination work."
+        },
+        "explanation": null,
+        "code_citation": "SPP Doc 202",
+        "bloom_level": "apply",
+        "application_context": "code_interpretation",
+        "practice_context": [],
+        "difficulty": 0.7,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-PRAC-SVC-004-008",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:45.512865+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:dd29874c53896b4e6dc81ec1f883ebb1a291df26d8d5ef8f4b0016c2a2300f5a"
+      },
+      "proposed": {
+        "explanation": "Design Development is critical to project success and proper coordination. SPP 202 establishes standard fee allocations; negotiation is within broader structure. Design Development builds upon and substantially expands Schematic Design. Design Development represents substantial technical work on coordination and refinement from conceptual design to detailed documents, justifying 20% of fees under SPP 202 (SPP Doc 202). Design Development earns 20% due to substantial technical coordination work."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "d737bb35-1799-48ef-9f56-e37fd51864db",
+      "article_id": "0b116082-5275-4d0f-bb23-ce5b74339001",
+      "article_dir": ".ai/content-audit-export/articles/lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic--0b116082-5275-4d0f-bb23-ce5b74339001",
+      "title": "lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic",
+      "baseline_hash": "sha256:6ab3c26f664f2711065a3cbda1cebf4a3af4bf115cd6604ad0088664882c0bec",
+      "baseline": {
+        "question_id": "d737bb35-1799-48ef-9f56-e37fd51864db",
+        "article_id": "0b116082-5275-4d0f-bb23-ce5b74339001",
+        "topic_id": "8a62f4b9-7bb5-46dc-ab3a-73c33d31ba1c",
+        "text": "SPP 202 fee percentages total 100% of the contract sum. What is the cumulative fee percentage after completion of Design Development?",
+        "options": [
+          {
+            "id": "a",
+            "text": "15%"
+          },
+          {
+            "id": "b",
+            "text": "35%"
+          },
+          {
+            "id": "c",
+            "text": "50%"
+          },
+          {
+            "id": "d",
+            "text": "85%"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "15% is only Schematic Design; Design Development adds 20% more.",
+          "c": "50% is the Contract Documents phase fee, not the cumulative after Design Development.",
+          "d": "85% is the cumulative after Contract Documents.",
+          "correct": "Schematic Design (15%) + Design Development (20%) = 35% cumulative fee upon completion of Design Development (SPP Doc 202).",
+          "takeaway": "Cumulative fee after Design Development = 35% of total."
+        },
+        "explanation": null,
+        "code_citation": "SPP Doc 202",
+        "bloom_level": "understand",
+        "application_context": "client_scenario",
+        "practice_context": [],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-PRAC-SVC-004-003",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:45.512865+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:6ab3c26f664f2711065a3cbda1cebf4a3af4bf115cd6604ad0088664882c0bec"
+      },
+      "proposed": {
+        "explanation": "15% is only Schematic Design; Design Development adds 20% more. 50% is the Contract Documents phase fee, not the cumulative after Design Development. 85% is the cumulative after Contract Documents. Schematic Design (15%) + Design Development (20%) = 35% cumulative fee upon completion of Design Development (SPP Doc 202). Cumulative fee after Design Development = 35% of total."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "80fe5dfe-4d8b-4ee4-aea6-fda474f5f9dc",
+      "article_id": "0b116082-5275-4d0f-bb23-ce5b74339001",
+      "article_dir": ".ai/content-audit-export/articles/lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic--0b116082-5275-4d0f-bb23-ce5b74339001",
+      "title": "lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic",
+      "baseline_hash": "sha256:02f55e4fa7db88e9df3680317dfeda1d0f2287d455343e17b584a7dd715f2fe9",
+      "baseline": {
+        "question_id": "80fe5dfe-4d8b-4ee4-aea6-fda474f5f9dc",
+        "article_id": "0b116082-5275-4d0f-bb23-ce5b74339001",
+        "topic_id": "8a62f4b9-7bb5-46dc-ab3a-73c33d31ba1c",
+        "text": "What are the specific requirements for foreign architects under SPP 202 to practice in the Philippines?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Foreign architects may practice independently without any permits, which is not aligned with local regulations"
+          },
+          {
+            "id": "b",
+            "text": "Temporary/Special Permit, work permit from DOLE, and collaboration with a local PRC-registered architect"
+          },
+          {
+            "id": "c",
+            "text": "Foreign architects must establish a BPO firm in the Philippines, which is a complex process involving multiple legal steps"
+          },
+          {
+            "id": "d",
+            "text": "Foreign architects need only an international certification, which is insufficient under local laws"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Foreign architects have specific requirements; they cannot practice independently.",
+          "c": "BPO registration does not qualify foreign architects for architectural practice.",
+          "d": "International certification alone is insufficient without local permits.",
+          "correct": "Foreign architects must secure a Temporary/Special Permit, a work permit from the Department of Labor and Employment, and must collaborate with a local registered and licensed architect (SPP Doc 202).",
+          "takeaway": "Foreign architects need special permit, DOLE work permit, and local architect."
+        },
+        "explanation": null,
+        "code_citation": "SPP Doc 202",
+        "bloom_level": "understand",
+        "application_context": "client_scenario",
+        "practice_context": [],
+        "difficulty": 0.7,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-PRAC-SVC-004-006",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:45.512865+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:02f55e4fa7db88e9df3680317dfeda1d0f2287d455343e17b584a7dd715f2fe9"
+      },
+      "proposed": {
+        "explanation": "Foreign architects have specific requirements; they cannot practice independently. BPO registration does not qualify foreign architects for architectural practice. International certification alone is insufficient without local permits. Foreign architects must secure a Temporary/Special Permit, a work permit from the Department of Labor and Employment, and must collaborate with a local registered and licensed architect (SPP Doc 202). Foreign architects need special permit, DOLE work permit, and local architect."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "f22ae070-68a5-4f16-a8fa-cf0831e9c584",
+      "article_id": "0b116082-5275-4d0f-bb23-ce5b74339001",
+      "article_dir": ".ai/content-audit-export/articles/lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic--0b116082-5275-4d0f-bb23-ce5b74339001",
+      "title": "lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic",
+      "baseline_hash": "sha256:d0098f5ad74eff2eac128ff131444e820d231028f61a91aa839d6bf4e01f2df8",
+      "baseline": {
+        "question_id": "f22ae070-68a5-4f16-a8fa-cf0831e9c584",
+        "article_id": "0b116082-5275-4d0f-bb23-ce5b74339001",
+        "topic_id": "8a62f4b9-7bb5-46dc-ab3a-73c33d31ba1c",
+        "text": "SPP 202 applies to both individual architects and group practice. What requirement must group practice maintain to qualify?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Group practice must be established without any partnerships, which limits collaboration opportunities"
+          },
+          {
+            "id": "b",
+            "text": "Group practice must maintain full compliance with architectural legislation"
+          },
+          {
+            "id": "c",
+            "text": "Group practice must employ only foreign architects, which is not a requirement under SPP 202"
+          },
+          {
+            "id": "d",
+            "text": "Group practice must be registered as a Business Process Outsourcing firm, which is unrelated to architectural practice"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Partnerships and corporations are permitted forms of group practice.",
+          "c": "Foreign architects have special requirements; SPP 202 applies to all architects.",
+          "d": "BPO firms cannot provide architectural services unless PRC-registered.",
+          "correct": "SPP 202 applies to group practice through partnerships or corporations provided full compliance with architectural legislation is maintained (SPP Doc 202).",
+          "takeaway": "Group practice must maintain full compliance with architectural legislation."
+        },
+        "explanation": null,
+        "code_citation": "SPP Doc 202",
+        "bloom_level": "understand",
+        "application_context": "client_scenario",
+        "practice_context": [],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-PRAC-SVC-004-005",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:45.512865+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:d0098f5ad74eff2eac128ff131444e820d231028f61a91aa839d6bf4e01f2df8"
+      },
+      "proposed": {
+        "explanation": "Partnerships and corporations are permitted forms of group practice. Foreign architects have special requirements; SPP 202 applies to all architects. BPO firms cannot provide architectural services unless PRC-registered. SPP 202 applies to group practice through partnerships or corporations provided full compliance with architectural legislation is maintained (SPP Doc 202). Group practice must maintain full compliance with architectural legislation."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "ffa1533e-5ac5-44e0-aba4-6f76ec4baea4",
+      "article_id": "0b116082-5275-4d0f-bb23-ce5b74339001",
+      "article_dir": ".ai/content-audit-export/articles/lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic--0b116082-5275-4d0f-bb23-ce5b74339001",
+      "title": "lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic",
+      "baseline_hash": "sha256:2c09c651d5aba331727f15fc142cd96578b6d8d1b267a11db7ffaafe0a687410",
+      "baseline": {
+        "question_id": "ffa1533e-5ac5-44e0-aba4-6f76ec4baea4",
+        "article_id": "0b116082-5275-4d0f-bb23-ce5b74339001",
+        "topic_id": "8a62f4b9-7bb5-46dc-ab3a-73c33d31ba1c",
+        "text": "What restriction does SPP 202 place on Business Process Outsourcing and Knowledge Process Outsourcing firms regarding architectural services?",
+        "options": [
+          {
+            "id": "a",
+            "text": "BPO/KPO firms are freely permitted to provide architectural services in the Philippines, without any need for local registration or compliance with specific architectural regulations"
+          },
+          {
+            "id": "b",
+            "text": "BPO/KPO firms can provide services only with foreign collaboration, provided they adhere to international standards and local partnership agreements"
+          },
+          {
+            "id": "c",
+            "text": "BPO/KPO firms registered in the Philippines cannot provide architectural services for Philippine projects unless PRC-registered as architectural firms"
+          },
+          {
+            "id": "d",
+            "text": "All BPO/KPO firms automatically qualify as architectural service providers, regardless of their primary business focus or expertise"
+          }
+        ],
+        "correct_option_id": "c",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "BPO/KPO firms face restrictions on architectural service provision.",
+          "b": "Foreign collaboration does not remove the PRC registration requirement.",
+          "d": "BPO/KPO registration does not qualify firms for architectural work.",
+          "correct": "Business Process Outsourcing and Knowledge Process Outsourcing firms registered in the Philippines cannot provide architectural services for Philippine projects unless they are PRC-registered architectural firms (SPP Doc 202).",
+          "takeaway": "BPO/KPO firms need PRC architectural registration for Philippine projects."
+        },
+        "explanation": null,
+        "code_citation": "SPP Doc 202",
+        "bloom_level": "understand",
+        "application_context": "client_scenario",
+        "practice_context": [],
+        "difficulty": 0.9,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-PRAC-SVC-004-009",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:45.512865+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:2c09c651d5aba331727f15fc142cd96578b6d8d1b267a11db7ffaafe0a687410"
+      },
+      "proposed": {
+        "explanation": "BPO/KPO firms face restrictions on architectural service provision. Foreign collaboration does not remove the PRC registration requirement. BPO/KPO registration does not qualify firms for architectural work. Business Process Outsourcing and Knowledge Process Outsourcing firms registered in the Philippines cannot provide architectural services for Philippine projects unless they are PRC-registered architectural firms (SPP Doc 202). BPO/KPO firms need PRC architectural registration for Philippine projects."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "c4d36d88-0806-4816-968c-bc1397bb21d1",
+      "article_id": "0b116082-5275-4d0f-bb23-ce5b74339001",
+      "article_dir": ".ai/content-audit-export/articles/lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic--0b116082-5275-4d0f-bb23-ce5b74339001",
+      "title": "lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic",
+      "baseline_hash": "sha256:473fb425eabb6ea0ae5a12149603a35f9845bec159f7ab68ac2c480d6b0b6398",
+      "baseline": {
+        "question_id": "c4d36d88-0806-4816-968c-bc1397bb21d1",
+        "article_id": "0b116082-5275-4d0f-bb23-ce5b74339001",
+        "topic_id": "8a62f4b9-7bb5-46dc-ab3a-73c33d31ba1c",
+        "text": "According to SPP 202, which of the following is NOT one of the six distinct phases of regular design services?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Schematic Design Phase"
+          },
+          {
+            "id": "b",
+            "text": "Feasibility Study Phase"
+          },
+          {
+            "id": "c",
+            "text": "Design Development Phase"
+          },
+          {
+            "id": "d",
+            "text": "Construction Phase"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Schematic Design is the first fee-earning phase of SPP 202.",
+          "c": "Design Development is the second fee-earning phase.",
+          "d": "Construction Phase is SPP 202's final phase.",
+          "correct": "Feasibility studies are pre-design services under SPP 201, not a phase within SPP 202's regular design framework (SPP Doc 202).",
+          "takeaway": "Feasibility is a pre-design service; regular design begins with Schematic Design."
+        },
+        "explanation": null,
+        "code_citation": "SPP Doc 202",
+        "bloom_level": "understand",
+        "application_context": "code_interpretation",
+        "practice_context": [],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-PRAC-SVC-004-004",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:45.512865+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:473fb425eabb6ea0ae5a12149603a35f9845bec159f7ab68ac2c480d6b0b6398"
+      },
+      "proposed": {
+        "explanation": "Schematic Design is the first fee-earning phase of SPP 202. Design Development is the second fee-earning phase. Construction Phase is SPP 202's final phase. Feasibility studies are pre-design services under SPP 201, not a phase within SPP 202's regular design framework (SPP Doc 202). Feasibility is a pre-design service; regular design begins with Schematic Design."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    }
+  ]
+}

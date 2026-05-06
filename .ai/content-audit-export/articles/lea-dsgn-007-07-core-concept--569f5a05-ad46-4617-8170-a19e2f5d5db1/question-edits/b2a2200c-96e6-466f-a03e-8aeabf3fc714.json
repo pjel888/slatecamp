@@ -1,0 +1,10 @@
+{
+  "question_id": "b2a2200c-96e6-466f-a03e-8aeabf3fc714",
+  "baseline_hash": "sha256:441c1bb4a2ff39ec8e5416405bb81e6b8e75f92fa0309cd880fe8b31be5e28be",
+  "reason": "Strict explanation backfill from existing specific rationale; answer key and options unchanged.",
+  "approved_by": "hermes-question-remediation-autopilot",
+  "approved_at": "2026-05-06T11:21:36.813Z",
+  "proposed": {
+    "explanation": "Uses division instead of multiplication; incorrect formula. Conflates footprint with total GFA; ignores PSO%. Unrelated metric (maintenance floor); wrong formula. AMBF = Allowable Building Footprint, the portion of the lot you can occupy. Formula: AMBF = TLA × PSO%. For R-2 (PSO=70%), a 600 sqm lot yields AMBF = 600×0.70 = 420 sqm. AMBF is always PSO% of the lot. This single-floor footprint becomes the basis for calculating TGFA when multiplied by number of floors."
+  }
+}

@@ -1,0 +1,567 @@
+[
+  {
+    "question_id": "66516db2-db2a-440a-94b6-bb4c0523248b",
+    "article_id": "c534d94f-967a-48bb-babf-419fa6d35ec7",
+    "article_dir": ".ai/content-audit-export/articles/spp-doc-204-a-fulltime-supervision-services--c534d94f-967a-48bb-babf-419fa6d35ec7",
+    "title": "SPP Document 204-A: Standards of Professional Practice on Fulltime Supervision Services",
+    "baseline_hash": "sha256:185f34b42c4135d10988ec3f7c98ccfe01936ba5bdcf2dbe78c1a37c2831e28d",
+    "baseline": {
+      "question_id": "66516db2-db2a-440a-94b6-bb4c0523248b",
+      "article_id": "c534d94f-967a-48bb-babf-419fa6d35ec7",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "What are the four scope areas of the Construction Supervision Group under SPP 204-A?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Design Review, Cost Estimation, Scheduling, Safety, ensuring all aspects of the project are aligned with the initial design intent and budget constraints"
+        },
+        {
+          "id": "b",
+          "text": "Quality Control, Evaluation, Daily Reports, Filing/Documentation"
+        },
+        {
+          "id": "c",
+          "text": "Site Preparation, Material Testing, Labor Management, Handover, focusing on the readiness of the site and the quality of materials used"
+        },
+        {
+          "id": "d",
+          "text": "Procurement, Logistics, Quality Assurance, Closeout, which includes the final inspection and approval of all project components"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Design review and cost estimation are not CSG scope areas. These fall under Design Development and Construction Management.",
+        "b": "Correct. The four CSG scope areas are: (1) Quality Control of construction work, (2) Evaluation of progress and performance, (3) Daily Reports on construction activities, and (4) Filing/Documentation of all records.",
+        "c": "Site preparation and labor management are contractor responsibilities, not CSG scope areas.",
+        "d": "Procurement and logistics are construction management functions under SPP 204-B, not CSG scope areas.",
+        "correct": "The CSG's four scope areas under SPP 204-A are: Quality Control (ensuring construction matches specifications), Evaluation (assessing progress and contractor performance), Daily Reports (documenting daily activities and issues), and Filing/Documentation (maintaining organized construction records).",
+        "takeaway": "CSG scope: Quality Control, Evaluation, Daily Reports, Filing."
+      },
+      "explanation": null,
+      "code_citation": "SPP 204-A",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:47.442383+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:185f34b42c4135d10988ec3f7c98ccfe01936ba5bdcf2dbe78c1a37c2831e28d"
+    },
+    "proposed": {
+      "explanation": "Design review and cost estimation are not CSG scope areas. These fall under Design Development and Construction Management. Correct. The four CSG scope areas are: (1) Quality Control of construction work, (2) Evaluation of progress and performance, (3) Daily Reports on construction activities, and (4) Filing/Documentation of all records. Site preparation and labor management are contractor responsibilities, not CSG scope areas. Procurement and logistics are construction management functions under SPP 204-B, not CSG scope areas. The CSG's four scope areas under SPP 204-A are: Quality Control (ensuring construction matches specifications), Evaluation (assessing progress and contractor performance), Daily Reports (documenting daily activities and issues), and Filing/Documentation (maintaining organized construction records). CSG scope: Quality Control, Evaluation, Daily Reports, Filing."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded.",
+    "quarantine_reason": "Batch 004 reviewer quarantine: generic/meta distractor leakage, dimensional/source issue, legal/professional-practice source risk, clueing, or explanation mismatch."
+  },
+  {
+    "question_id": "f1a85068-6a6a-4460-a5b1-138b4fbaaaef",
+    "article_id": "c534d94f-967a-48bb-babf-419fa6d35ec7",
+    "article_dir": ".ai/content-audit-export/articles/spp-doc-204-a-fulltime-supervision-services--c534d94f-967a-48bb-babf-419fa6d35ec7",
+    "title": "SPP Document 204-A: Standards of Professional Practice on Fulltime Supervision Services",
+    "baseline_hash": "sha256:5770dcbaf443ac9c2aa2f3b6268127221528d0a5310dc3552aac14cd68ebd736",
+    "baseline": {
+      "question_id": "f1a85068-6a6a-4460-a5b1-138b4fbaaaef",
+      "article_id": "c534d94f-967a-48bb-babf-419fa6d35ec7",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "Under SPP 204-A, who hires the Construction Supervision Group (CSG), and to whom is the CSG answerable?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hired by the Architect, answerable to the Owner only, ensuring that the architect's vision is executed while maintaining accountability to the client"
+        },
+        {
+          "id": "b",
+          "text": "Hired by the Owner, answerable to both the Owner and the Architect"
+        },
+        {
+          "id": "c",
+          "text": "Hired by the Contractor, answerable to the Owner only, which can lead to potential conflicts of interest if not properly managed"
+        },
+        {
+          "id": "d",
+          "text": "Hired by the Owner, answerable to the Architect only, allowing the architect to maintain control over the construction process"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The Architect does not hire the CSG. The employment relationship is between the Owner and the CSG.",
+        "b": "Correct. Under SPP 204-A, the CSG is hired by the Owner but is answerable to both the Owner and the Architect, establishing a dual accountability structure.",
+        "c": "The Contractor does not hire the CSG. This would create a conflict of interest in supervision.",
+        "d": "While the Owner hires the CSG, the CSG is answerable to both the Owner and the Architect, not just the Architect.",
+        "correct": "The CSG is hired by the Owner but maintains dual accountability to both the Owner and the Architect. This structure ensures the Owner's investment is protected while the Architect's design intent is faithfully executed during construction.",
+        "takeaway": "CSG: hired by Owner, answerable to both Owner AND Architect."
+      },
+      "explanation": null,
+      "code_citation": "SPP 204-A",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:47.442383+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5770dcbaf443ac9c2aa2f3b6268127221528d0a5310dc3552aac14cd68ebd736"
+    },
+    "proposed": {
+      "explanation": "The Architect does not hire the CSG. The employment relationship is between the Owner and the CSG. Correct. Under SPP 204-A, the CSG is hired by the Owner but is answerable to both the Owner and the Architect, establishing a dual accountability structure. The Contractor does not hire the CSG. This would create a conflict of interest in supervision. While the Owner hires the CSG, the CSG is answerable to both the Owner and the Architect, not just the Architect. The CSG is hired by the Owner but maintains dual accountability to both the Owner and the Architect. This structure ensures the Owner's investment is protected while the Architect's design intent is faithfully executed during construction. CSG: hired by Owner, answerable to both Owner AND Architect."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded.",
+    "quarantine_reason": "Batch 004 reviewer quarantine: generic/meta distractor leakage, dimensional/source issue, legal/professional-practice source risk, clueing, or explanation mismatch."
+  },
+  {
+    "question_id": "d0bc6355-989a-4c28-ab24-1b45f77d2b33",
+    "article_id": "c534d94f-967a-48bb-babf-419fa6d35ec7",
+    "article_dir": ".ai/content-audit-export/articles/spp-doc-204-a-fulltime-supervision-services--c534d94f-967a-48bb-babf-419fa6d35ec7",
+    "title": "SPP Document 204-A: Standards of Professional Practice on Fulltime Supervision Services",
+    "baseline_hash": "sha256:87eb496cb5640b0f1fdf322f915b1c827405e2bbe8546971777542821f50c854",
+    "baseline": {
+      "question_id": "d0bc6355-989a-4c28-ab24-1b45f77d2b33",
+      "article_id": "c534d94f-967a-48bb-babf-419fa6d35ec7",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "What does Article 1723 of the Civil Code, as referenced in SPP 204-A, establish regarding architect liability?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5-year warranty period with individual liability, covering only specific defects"
+        },
+        {
+          "id": "b",
+          "text": "10-year warranty period with joint liability, ensuring shared responsibility among parties"
+        },
+        {
+          "id": "c",
+          "text": "15-year period with solidary liability among engineer, architect, and contractor"
+        },
+        {
+          "id": "d",
+          "text": "20-year period with limited liability for architects only, focusing on design errors"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "5 years with individual liability is incorrect. Article 1723 establishes a longer period and broader liability.",
+        "b": "10 years with joint liability is incorrect on both counts — the period is 15 years and the liability is solidary (joint and several).",
+        "c": "Correct. Article 1723 establishes a 15-year period of solidary (joint and several) liability among the engineer, architect, and contractor for structural defects.",
+        "d": "20 years is incorrect, and liability under Article 1723 extends to engineers and contractors, not just architects.",
+        "correct": "Article 1723 of the Civil Code establishes solidary (joint and several) liability among the engineer, architect, and contractor for a period of 15 years from project completion. This means each party can be held liable for the entire amount of damages for structural defects.",
+        "takeaway": "Article 1723: solidary liability, 15-year period, engineer + architect + contractor."
+      },
+      "explanation": null,
+      "code_citation": "SPP 204-A / Civil Code Art. 1723",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:47.442383+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:87eb496cb5640b0f1fdf322f915b1c827405e2bbe8546971777542821f50c854"
+    },
+    "proposed": {
+      "explanation": "5 years with individual liability is incorrect. Article 1723 establishes a longer period and broader liability. 10 years with joint liability is incorrect on both counts — the period is 15 years and the liability is solidary (joint and several). Correct. Article 1723 establishes a 15-year period of solidary (joint and several) liability among the engineer, architect, and contractor for structural defects. 20 years is incorrect, and liability under Article 1723 extends to engineers and contractors, not just architects. Article 1723 of the Civil Code establishes solidary (joint and several) liability among the engineer, architect, and contractor for a period of 15 years from project completion. This means each party can be held liable for the entire amount of damages for structural defects. Article 1723: solidary liability, 15-year period, engineer + architect + contractor."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded.",
+    "quarantine_reason": "Batch 004 reviewer quarantine: generic/meta distractor leakage, dimensional/source issue, legal/professional-practice source risk, clueing, or explanation mismatch."
+  },
+  {
+    "question_id": "4753af53-ba8d-43ce-b394-9b296fbf0ddc",
+    "article_id": "c534d94f-967a-48bb-babf-419fa6d35ec7",
+    "article_dir": ".ai/content-audit-export/articles/spp-doc-204-a-fulltime-supervision-services--c534d94f-967a-48bb-babf-419fa6d35ec7",
+    "title": "SPP Document 204-A: Standards of Professional Practice on Fulltime Supervision Services",
+    "baseline_hash": "sha256:2631a41729e8e41ddee10cff1c356946f5c86d531ccc580e37fde04cf29055fb",
+    "baseline": {
+      "question_id": "4753af53-ba8d-43ce-b394-9b296fbf0ddc",
+      "article_id": "c534d94f-967a-48bb-babf-419fa6d35ec7",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "Under SPP 204-A, should the CSG assume the contractor's superintendent responsibility?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, the CSG supervises all contractor personnel, ensuring compliance with project specifications"
+        },
+        {
+          "id": "b",
+          "text": "Yes, but only for quality-related matters, focusing on adherence to design standards"
+        },
+        {
+          "id": "c",
+          "text": "No, the CSG shall NOT assume the contractor's superintendent responsibility"
+        },
+        {
+          "id": "d",
+          "text": "No, unless the Owner specifically requests it in writing, providing a formal directive"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The CSG does not supervise contractor personnel. That is the superintendent's role.",
+        "b": "Even for quality matters, the CSG monitors and reports but does not assume the superintendent's management role.",
+        "c": "Correct. SPP 204-A explicitly states that the CSG shall NOT assume the contractor's superintendent responsibility. The CSG monitors and reports; the contractor's superintendent manages construction operations.",
+        "d": "There is no exception for Owner request. The prohibition is absolute under SPP 204-A.",
+        "correct": "SPP 204-A explicitly prohibits the CSG from assuming the contractor's superintendent responsibility. The CSG's role is to monitor, inspect, and report — not to manage or direct the contractor's workforce or operations.",
+        "takeaway": "CSG must NOT assume contractor's superintendent responsibility — monitor only."
+      },
+      "explanation": null,
+      "code_citation": "SPP 204-A",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:47.442383+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2631a41729e8e41ddee10cff1c356946f5c86d531ccc580e37fde04cf29055fb"
+    },
+    "proposed": {
+      "explanation": "The CSG does not supervise contractor personnel. That is the superintendent's role. Even for quality matters, the CSG monitors and reports but does not assume the superintendent's management role. Correct. SPP 204-A explicitly states that the CSG shall NOT assume the contractor's superintendent responsibility. The CSG monitors and reports; the contractor's superintendent manages construction operations. There is no exception for Owner request. The prohibition is absolute under SPP 204-A. SPP 204-A explicitly prohibits the CSG from assuming the contractor's superintendent responsibility. The CSG's role is to monitor, inspect, and report — not to manage or direct the contractor's workforce or operations. CSG must NOT assume contractor's superintendent responsibility — monitor only."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded.",
+    "quarantine_reason": "Batch 004 reviewer quarantine: generic/meta distractor leakage, dimensional/source issue, legal/professional-practice source risk, clueing, or explanation mismatch."
+  },
+  {
+    "question_id": "0d780029-cb84-4b01-b209-27d6bf4cc84d",
+    "article_id": "0b116082-5275-4d0f-bb23-ce5b74339001",
+    "article_dir": ".ai/content-audit-export/articles/lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic--0b116082-5275-4d0f-bb23-ce5b74339001",
+    "title": "lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic",
+    "baseline_hash": "sha256:ac4cf0044bf922348d29f9850e5169eb9f3b6907351581d68ea59bdde366f257",
+    "baseline": {
+      "question_id": "0d780029-cb84-4b01-b209-27d6bf4cc84d",
+      "article_id": "0b116082-5275-4d0f-bb23-ce5b74339001",
+      "topic_id": "8a62f4b9-7bb5-46dc-ab3a-73c33d31ba1c",
+      "text": "According to SPP 202, why is Project Definition Phase described as foundational rather than a regular fee-earning phase?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Project Definition is performed by engineers, not architects, which is a common misunderstanding"
+        },
+        {
+          "id": "b",
+          "text": "Project Definition precedes the five fee-earning phases and is essential groundwork"
+        },
+        {
+          "id": "c",
+          "text": "Project Definition occurs after construction is complete, which is not accurate"
+        },
+        {
+          "id": "d",
+          "text": "Project Definition is included in all fees and not separately compensated, which is a misconception"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Architects perform Project Definition as part of their services.",
+        "c": "Project Definition occurs at the project's beginning.",
+        "d": "Project Definition is a distinct phase; separate compensation may apply.",
+        "correct": "The five fee-earning phases total 100%; Project Definition is foundational work preceding these phases (SPP Doc 202).",
+        "takeaway": "Project Definition is foundational work preceding the five fee-earning phases."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 202",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-004-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.512865+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ac4cf0044bf922348d29f9850e5169eb9f3b6907351581d68ea59bdde366f257"
+    },
+    "proposed": {
+      "explanation": "Architects perform Project Definition as part of their services. Project Definition occurs at the project's beginning. Project Definition is a distinct phase; separate compensation may apply. The five fee-earning phases total 100%; Project Definition is foundational work preceding these phases (SPP Doc 202). Project Definition is foundational work preceding the five fee-earning phases."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded.",
+    "quarantine_reason": "Batch 004 reviewer quarantine: generic/meta distractor leakage, dimensional/source issue, legal/professional-practice source risk, clueing, or explanation mismatch."
+  },
+  {
+    "question_id": "91a1762d-fd1b-4b53-941e-857f082552b1",
+    "article_id": "0b116082-5275-4d0f-bb23-ce5b74339001",
+    "article_dir": ".ai/content-audit-export/articles/lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic--0b116082-5275-4d0f-bb23-ce5b74339001",
+    "title": "lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic",
+    "baseline_hash": "sha256:976b26ba8d666d75313acdfed6355f5d6bc98865a2e853941f2ed95ae67d71dd",
+    "baseline": {
+      "question_id": "91a1762d-fd1b-4b53-941e-857f082552b1",
+      "article_id": "0b116082-5275-4d0f-bb23-ce5b74339001",
+      "topic_id": "8a62f4b9-7bb5-46dc-ab3a-73c33d31ba1c",
+      "text": "A design firm is structuring compensation for a project valued at P5,000,000 based on SPP 202. After completion of Contract Documents, how much total fee should the architect have earned?",
+      "options": [
+        {
+          "id": "a",
+          "text": "P750,000 (15%)"
+        },
+        {
+          "id": "b",
+          "text": "P1,750,000 (35%)"
+        },
+        {
+          "id": "c",
+          "text": "P4,250,000 (85%)"
+        },
+        {
+          "id": "d",
+          "text": "P5,000,000 (100%)"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "15% represents only Schematic Design phase.",
+        "b": "35% is cumulative through Design Development only.",
+        "d": "100% is earned only at completion of Construction Administration.",
+        "correct": "At completion of Contract Documents: SD 15% + DD 20% + CD 50% = 85% of P5,000,000 = P4,250,000 (SPP Doc 202).",
+        "takeaway": "Cumulative fee afteFee percentages not specified in available SPP 202 excerpts; refer to official UAP SPP 202 fee schedule."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 202",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-004-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.512865+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:976b26ba8d666d75313acdfed6355f5d6bc98865a2e853941f2ed95ae67d71dd"
+    },
+    "proposed": {
+      "explanation": "15% represents only Schematic Design phase. 35% is cumulative through Design Development only. 100% is earned only at completion of Construction Administration. At completion of Contract Documents: SD 15% + DD 20% + CD 50% = 85% of P5,000,000 = P4,250,000 (SPP Doc 202). Cumulative fee afteFee percentages not specified in available SPP 202 excerpts; refer to official UAP SPP 202 fee schedule."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded.",
+    "quarantine_reason": "Batch 004 reviewer quarantine: generic/meta distractor leakage, dimensional/source issue, legal/professional-practice source risk, clueing, or explanation mismatch."
+  },
+  {
+    "question_id": "c788a60a-dbaa-4899-8cbd-7aac003c6ab5",
+    "article_id": "0b116082-5275-4d0f-bb23-ce5b74339001",
+    "article_dir": ".ai/content-audit-export/articles/lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic--0b116082-5275-4d0f-bb23-ce5b74339001",
+    "title": "lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic",
+    "baseline_hash": "sha256:3418a38919c6ce2b9c08570a8e75dd7492c4220cf74b31d6aed82c988cafe85f",
+    "baseline": {
+      "question_id": "c788a60a-dbaa-4899-8cbd-7aac003c6ab5",
+      "article_id": "0b116082-5275-4d0f-bb23-ce5b74339001",
+      "topic_id": "8a62f4b9-7bb5-46dc-ab3a-73c33d31ba1c",
+      "text": "According to SPP 202, how many distinct phases comprise the regular design services framework?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Three phases, typically including schematic design, design development, and construction documents"
+        },
+        {
+          "id": "b",
+          "text": "Six phases as defined in SPP 202 (pending fee allocation confirmation)"
+        },
+        {
+          "id": "c",
+          "text": "Seven independent phases, each with specific deliverables and timelines"
+        },
+        {
+          "id": "d",
+          "text": "Eight phases including pre-design, which sets the project scope and objectives"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Three phases is insufficient for the SPP 202 framework.",
+        "c": "SPP 202 defines six phases, not seven independent ones.",
+        "d": "Pre-design is covered under SPP 201, not SPP 202.",
+        "correct": "SPP 202 establishes six distinct phases: Project Definition (foundational), Schematic Design, Design Development, Contract Documents, Bidding or Negotiation, and Construction. However, five phases earn fees totaling 100% of the contract sum (SPP Doc 202).",
+        "takeaway": "SPP 202 has five fee-earning phases plus foundational Project Definition."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 202",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-004-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.512865+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3418a38919c6ce2b9c08570a8e75dd7492c4220cf74b31d6aed82c988cafe85f"
+    },
+    "proposed": {
+      "explanation": "Three phases is insufficient for the SPP 202 framework. SPP 202 defines six phases, not seven independent ones. Pre-design is covered under SPP 201, not SPP 202. SPP 202 establishes six distinct phases: Project Definition (foundational), Schematic Design, Design Development, Contract Documents, Bidding or Negotiation, and Construction. However, five phases earn fees totaling 100% of the contract sum (SPP Doc 202). SPP 202 has five fee-earning phases plus foundational Project Definition."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded.",
+    "quarantine_reason": "Batch 004 reviewer quarantine: generic/meta distractor leakage, dimensional/source issue, legal/professional-practice source risk, clueing, or explanation mismatch."
+  },
+  {
+    "question_id": "48f785ec-9de2-4730-9d7a-caee3a3d5255",
+    "article_id": "fe7216ee-46ed-41b3-88ef-accb3f912a4c",
+    "article_dir": ".ai/content-audit-export/articles/inca-architecture-ashlar-masonry--fe7216ee-46ed-41b3-88ef-accb3f912a4c",
+    "title": "Inca Architecture Ashlar Masonry",
+    "baseline_hash": "sha256:06faa5fdf6db179a7bb661ab27d23781d186cc3deff742f7ef0f4c2b92b45c19",
+    "baseline": {
+      "question_id": "48f785ec-9de2-4730-9d7a-caee3a3d5255",
+      "article_id": "fe7216ee-46ed-41b3-88ef-accb3f912a4c",
+      "topic_id": "ec0bd4ee-f635-40b6-937e-ffc75ecbf36e",
+      "text": "Based on the specifications in \"Inca Architecture Ashlar Masonry\", if a project requires 000 km, what is the correct interpretation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "000 km is the minimum/standard requirement"
+        },
+        {
+          "id": "B",
+          "text": "000 km is the maximum permitted value"
+        },
+        {
+          "id": "C",
+          "text": "000 km applies only to specific conditions"
+        },
+        {
+          "id": "D",
+          "text": "000 km is an approximate value subject to interpretation"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The article specifies 000 km as the requirement. Context: e Qhapaq Ñan as covering more than 30,000 km (some scholarly estimates reach 40,...",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:47:14.018312+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:06faa5fdf6db179a7bb661ab27d23781d186cc3deff742f7ef0f4c2b92b45c19"
+    },
+    "proposed": {
+      "explanation": "The article specifies 000 km as the requirement. Context: e Qhapaq Ñan as covering more than 30,000 km (some scholarly estimates reach 40,..."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded.",
+    "quarantine_reason": "Batch 004 reviewer quarantine: generic/meta distractor leakage, dimensional/source issue, legal/professional-practice source risk, clueing, or explanation mismatch."
+  },
+  {
+    "question_id": "16be0c8c-fd08-4975-9161-30aca7bd6545",
+    "article_id": "5e99dd5d-1394-46bc-998e-8915e2595b0b",
+    "article_dir": ".ai/content-audit-export/articles/lea-prac-ctr-018-core-concept--5e99dd5d-1394-46bc-998e-8915e2595b0b",
+    "title": "lea-prac-ctr-018-core-concept",
+    "baseline_hash": "sha256:d574479b36bb98865d9e0767410e1fca8cb4b348ade5624e2b8ad9d21763e8fa",
+    "baseline": {
+      "question_id": "16be0c8c-fd08-4975-9161-30aca7bd6545",
+      "article_id": "5e99dd5d-1394-46bc-998e-8915e2595b0b",
+      "topic_id": "eafde61a-27d1-4d8b-81f0-8e45e5848022",
+      "text": "What is the relationship between the punch list and the architect's Substantial Completion certification?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The punch list is prepared before Substantial Completion to determine if Substantial Completion can be certified, ensuring all major work is complete"
+        },
+        {
+          "id": "b",
+          "text": "The punch list is a formal document issued simultaneously with or immediately after Substantial Completion certification, establishing remaining contractor obligations"
+        },
+        {
+          "id": "c",
+          "text": "The punch list replaces the Substantial Completion certificate as the official project completion document, which is not a standard practice"
+        },
+        {
+          "id": "d",
+          "text": "The punch list is an optional preliminary list that becomes formal only if the contractor disputes punch items, which rarely occurs"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrect. While owner approval may be desired, the architect's professional responsibility is to conduct independent inspection and verification. The architect cannot delegate this verification duty to the owner.",
+        "c": "Incorrect. The punch list does not replace Substantial Completion certification. Both documents are issued; they serve different purposes.",
+        "d": "Incorrect. The punch list is not optional or preliminary. It is a formal, binding contract document creating enforceable contractor obligations.",
+        "correct": "The punch list flows from the Substantial Completion inspection and is issued contemporaneously with or immediately after the Substantial Completion certificate. The two documents work together: Substantial Completion certifies occupancy readiness despite outstanding items; the punch list itemizes those outstanding items and binds the contractor to complete them.",
+        "takeaway": "The punch list is issued contemporaneously with Substantial Completion certification and itemizes remaining contractor obligations in a formal, binding document."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-018-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.923634+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d574479b36bb98865d9e0767410e1fca8cb4b348ade5624e2b8ad9d21763e8fa"
+    },
+    "proposed": {
+      "explanation": "Incorrect. While owner approval may be desired, the architect's professional responsibility is to conduct independent inspection and verification. The architect cannot delegate this verification duty to the owner. Incorrect. The punch list does not replace Substantial Completion certification. Both documents are issued; they serve different purposes. Incorrect. The punch list is not optional or preliminary. It is a formal, binding contract document creating enforceable contractor obligations. The punch list flows from the Substantial Completion inspection and is issued contemporaneously with or immediately after the Substantial Completion certificate. The two documents work together: Substantial Completion certifies occupancy readiness despite outstanding items; the punch list itemizes those outstanding items and binds the contractor to complete them. The punch list is issued contemporaneously with Substantial Completion certification and itemizes remaining contractor obligations in a formal, binding document."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded.",
+    "quarantine_reason": "Batch 004 reviewer quarantine: generic/meta distractor leakage, dimensional/source issue, legal/professional-practice source risk, clueing, or explanation mismatch."
+  }
+]
