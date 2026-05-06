@@ -1,0 +1,10 @@
+{
+  "question_id": "ae6a1ff0-b4d9-4c67-b99d-7f494df6df08",
+  "baseline_hash": "sha256:4ae31c2052483dda57527e4850fdb11c5561907c320ac1569d99a333f4fe010f",
+  "reason": "Strict explanation backfill from existing specific rationale; answer key and options unchanged.",
+  "approved_by": "hermes-question-remediation-autopilot",
+  "approved_at": "2026-05-06T15:01:31.510Z",
+  "proposed": {
+    "explanation": "Wiegand is half-duplex, not full-duplex. OSDP is also half-duplex (RS-485 serial) but supports bidirectional messages within the half-duplex constraint. Wiegand requires auxiliary modules, but OSDP is inherently bidirectional without external modules. Wiegand operates at 100 bits per second (fixed), while OSDP supports 9,600–115,200 bps variable data rates. Wiegand is a legacy, one-way protocol that transmits card data only; it cannot natively receive door lock status or REX signals from the controller. Auxiliary relay modules are needed for bidirectional feedback. OSDP (IEC 60839-11-5) is a bidirectional, secured protocol supporting real-time lock status, tamper alerts, power failure reporting, and biometric enrollments. Modern access control favors OSDP's bidirectional capability for real-time status monitoring, door health diagnostics, and secure credential transmission over legacy Wiegand's one-way design."
+  }
+}

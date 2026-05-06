@@ -1,0 +1,2445 @@
+{
+  "created_at": "2026-05-06T15:03:05.925Z",
+  "batch": "question-batch-022",
+  "table": "questions",
+  "rows": [
+    {
+      "question_id": "4fb5d579-1273-431f-9b27-a0732faee3dd",
+      "article_id": "fc0f6b12-8d7e-4309-b83c-daba0863ff30",
+      "topic_id": "8d7887fc-5f34-421b-96df-ac0ca6346a52",
+      "text": "Compare the planning approaches of Burnham (1905 Plan of Manila) and Felino Palafox Jr. (contemporary BGC master plan). What fundamental philosophical shift is evident?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Burnham and Palafox share identical approaches; no philosophical shift, as both focus on urban aesthetics"
+        },
+        {
+          "id": "b",
+          "text": "Burnham emphasized monumental civic grandeur and hierarchical space; Palafox emphasizes pedestrian-scale mixed-use walkability and community integration"
+        },
+        {
+          "id": "c",
+          "text": "Burnham focused on community participation; Palafox on top-down government control, reflecting a shift in governance style"
+        },
+        {
+          "id": "d",
+          "text": "Both emphasize industrial zoning and car-dependent sprawl, which remains a constant in urban planning"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Their approaches are fundamentally different.",
+        "b": "Burnham (City Beautiful, 1905) used grand civic design and hierarchical spatial organization. Palafox (New Urbanism and contemporary planning) emphasizes human-scale walkability, mixed uses, and community-friendly design. This reflects a shift from monumentalism to livability.",
+        "c": "Both value some form of coordination; Palafox emphasizes community participation more explicitly.",
+        "d": "Neither emphasized industrial sprawl as primary; Palafox explicitly opposes car-dependent sprawl.",
+        "correct": "Burnham (City Beautiful, 1905) used grand civic design and hierarchical spatial organization. Palafox (New Urbanism and contemporary planning) emphasizes human-scale walkability, mixed uses, and community-friendly design. This reflects a shift from monumentalism to livability.",
+        "takeaway": "Burnham (1905): monumental grandeur. Palafox (contemporary): pedestrian walkability—philosophical era shift."
+      },
+      "explanation": null,
+      "code_citation": "Burnham Plan of Manila, Palafox contemporary planning",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "historical periods",
+        "planning movements",
+        "design philosophy evolution"
+      ],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-007-06-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:07.576522+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "452413b8-2cfa-43cc-b741-a641e0781e95",
+      "article_id": "fc0f6b12-8d7e-4309-b83c-daba0863ff30",
+      "topic_id": "8d7887fc-5f34-421b-96df-ac0ca6346a52",
+      "text": "Who was the first Filipino to establish city planning as a recognized profession distinct from architecture?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Daniel Burnham, who established planning practice early 1900s"
+        },
+        {
+          "id": "b",
+          "text": "Ildefonso P. Santos Jr., who professionalized landscape architecture"
+        },
+        {
+          "id": "c",
+          "text": "Antonio Toledo, who developed planning frameworks in postwar Philippines"
+        },
+        {
+          "id": "d",
+          "text": "Felino Palafox Jr., who pioneered contemporary planning methodologies"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Burnham was American, working in the 1905 colonial period.",
+        "b": "Santos professionalized landscape architecture, not planning broadly.",
+        "c": "Antonio Toledo was the first Filipino city planner, developing planning frameworks and establishing planning practice as distinct from architecture in the postwar period (1950s–1970s). This professionalization was foundational for modern Philippine planning.",
+        "d": "Palafox works in contemporary period; Toledo pioneered the profession earlier.",
+        "correct": "Antonio Toledo was the first Filipino city planner, developing planning frameworks and establishing planning practice as distinct from architecture in the postwar period (1950s–1970s). This professionalization was foundational for modern Philippine planning.",
+        "takeaway": "Antonio Toledo = first Filipino city planner (postwar era)."
+      },
+      "explanation": null,
+      "code_citation": "Philippine planning history, postwar period",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-007-06-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:07.576522+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "c0930872-223d-4236-91a8-583af7d52c7f",
+      "article_id": "fc0f6b12-8d7e-4309-b83c-daba0863ff30",
+      "topic_id": "8d7887fc-5f34-421b-96df-ac0ca6346a52",
+      "text": "Which Filipino planner's work primarily addresses ecological infrastructure and waterway rehabilitation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ildefonso P. Santos Jr."
+        },
+        {
+          "id": "b",
+          "text": "Antonio Toledo"
+        },
+        {
+          "id": "c",
+          "text": "Felino Palafox Jr."
+        },
+        {
+          "id": "d",
+          "text": "Jorge Yupangco"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Santos works on landscape architecture broadly.",
+        "b": "Toledo worked on general planning frameworks.",
+        "c": "Palafox emphasizes urban development, not specialized waterway planning.",
+        "d": "Jorge Yupangco is known for waterway rehabilitation planning, addressing Manila Bay watersheds, estero restoration, and ecological infrastructure.",
+        "correct": "Jorge Yupangco is known for waterway rehabilitation planning, addressing Manila Bay watersheds, estero restoration, and ecological infrastructure.",
+        "takeaway": "Jorge Yupangco = waterway and ecological planning specialist."
+      },
+      "explanation": null,
+      "code_citation": "Yupangco waterway rehabilitation projects",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-007-06-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:07.576522+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "181573b4-844b-4f3e-a680-ca541f74a2d3",
+      "article_id": "d28bf43f-a588-4be3-8b79-8759d930aea4",
+      "topic_id": "5ce456e3-148a-4c4e-9980-5ffc97aa4f17",
+      "text": "Which planning theorist developed the Concentric Zone Model, describing city growth through concentric rings?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Homer Hoyt"
+        },
+        {
+          "id": "b",
+          "text": "Ernest W. Burgess"
+        },
+        {
+          "id": "c",
+          "text": "Daniel Burnham"
+        },
+        {
+          "id": "d",
+          "text": "Kevin Lynch"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Homer Hoyt (1939) proposed the Sector/Wedge Model, not concentric zones. ERR-PLAN-001 — a common mistake.",
+        "b": "Ernest W. Burgess formulated the Concentric Zone Model in 1925, explaining how cities grow outward in rings through ecological succession. This is tested on every exam.",
+        "c": "Daniel Burnham designed the Plan of Manila (1905) and pioneered City Beautiful Movement — not the Concentric Zone Model.",
+        "d": "Kevin Lynch (1960) developed the theory of five city elements (paths, edges, districts, nodes, landmarks) — not the Concentric Zone Model.",
+        "correct": "Ernest W. Burgess formulated the Concentric Zone Model in 1925, explaining how cities grow outward in rings through ecological succession. This is tested on every exam.",
+        "takeaway": "BURGESS = BULLSEYE. Concentric rings = Burgess (1925). Always pair the model with the theorist and year."
+      },
+      "explanation": null,
+      "code_citation": "Key Provisions table; Error Registry ERR-PLAN-001",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-001-01-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:06.486658+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "6f461da8-97dc-4aca-bbe9-45a1f5b7c46e",
+      "article_id": "d28bf43f-a588-4be3-8b79-8759d930aea4",
+      "topic_id": "5ce456e3-148a-4c4e-9980-5ffc97aa4f17",
+      "text": "Planning theory evolved from early 20th-century physical determinism toward contemporary emphasis on which three aspects?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aesthetic beauty, architectural style, and historical preservation"
+        },
+        {
+          "id": "b",
+          "text": "Transportation efficiency, land value maximization, and density control"
+        },
+        {
+          "id": "c",
+          "text": "Social equity, environmental sustainability, and participatory democracy"
+        },
+        {
+          "id": "d",
+          "text": "Zoning restrictions, infrastructure maintenance, and compliance enforcement"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While aesthetics matter, contemporary planning goes beyond physical beauty to address equity and sustainability.",
+        "b": "Efficiency and land value are concerns but not the core philosophical shift from determinism.",
+        "c": "Modern planning integrated recognition that good physical form alone doesn't create good society. Contemporary planning emphasizes social inclusion, environmental resilience, and community participation in decision-making.",
+        "d": "These are tools and processes but not the foundational shift in planning theory.",
+        "correct": "Modern planning integrated recognition that good physical form alone doesn't create good society. Contemporary planning emphasizes social inclusion, environmental resilience, and community participation in decision-making.",
+        "takeaway": "Planning evolved from 'if we build it right, society will be right' (determinism) to integrated consideration of equity, environment, and participation."
+      },
+      "explanation": null,
+      "code_citation": "Core Concept section",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-001-01-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:06.486658+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "7c74d268-c747-4ce8-8d16-6361211643e4",
+      "article_id": "d28bf43f-a588-4be3-8b79-8759d930aea4",
+      "topic_id": "5ce456e3-148a-4c4e-9980-5ffc97aa4f17",
+      "text": "Analyzing planning theory evolution, which statement best explains why Paul Davidoff's advocacy planning was a significant departure from earlier planning approaches?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It rejected the idea that planners are neutral experts and asserted planners should serve underrepresented communities"
+        },
+        {
+          "id": "b",
+          "text": "It introduced the use of computers and data analysis in planning decisions as the primary methodology"
+        },
+        {
+          "id": "c",
+          "text": "It focused exclusively on aesthetic design rather than functional zoning or land use regulation"
+        },
+        {
+          "id": "d",
+          "text": "It eliminated the need for comprehensive master plans by promoting incremental ad-hoc development"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Davidoff (1965) challenged the myth of the neutral planner and asserted that planners have ethical obligations to advocacy. He proposed multiple competing plans for communities rather than a single 'expert' plan. This was foundational to participatory planning.",
+        "b": "Computer technology was not the defining feature of advocacy planning.",
+        "c": "Advocacy planning didn't reject design; it reframed planning's relationship to communities.",
+        "d": "Advocacy planning critiqued how plans were made but didn't eliminate comprehensive planning itself.",
+        "correct": "Davidoff (1965) challenged the myth of the neutral planner and asserted that planners have ethical obligations to advocacy. He proposed multiple competing plans for communities rather than a single 'expert' plan. This was foundational to participatory planning.",
+        "takeaway": "Advocacy planning = ethical commitment to communities. Planners are not neutral. Multiple competing perspectives matter. This shifted planning from top-down expertise to bottom-up participation."
+      },
+      "explanation": null,
+      "code_citation": "Core Concept; THEORY_ATTRIBUTION_GUIDE Part 2",
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-001-01-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:06.486658+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "39ca179b-d99c-4af0-8dc9-ea438d4895e2",
+      "article_id": "ae4bdc43-1451-4aa5-8c12-65283f4bbdfd",
+      "topic_id": "b2ed3165-9e0f-45d6-8031-12b470d82ef3",
+      "text": "A Japanese architect seeks to practice temporarily in the Philippines. Japan grants Philippine architects reciprocal rights. What must be established?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only that the architect holds a valid home country license, which is necessary but not sufficient for practice rights"
+        },
+        {
+          "id": "b",
+          "text": "Reciprocity status allowing the endorsement; documented equal treatment of Filipinos"
+        },
+        {
+          "id": "c",
+          "text": "That the architect speaks English fluently, although language proficiency is not a formal requirement for reciprocity"
+        },
+        {
+          "id": "d",
+          "text": "Prior work experience in the Philippines, which is not a requirement for establishing reciprocity"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Ignores reciprocity check—license validity is separate from the conditional reciprocity verification.",
+        "c": "Attributes irrelevant requirement—language proficiency is not part of formal reciprocity or endorsement.",
+        "d": "Mistakes precedent for requirement—prior experience is not a reciprocity or endorsement requirement.",
+        "correct": "The architect must first establish reciprocity status by proving Japan grants Filipino architects equal rights to practice; then obtain formal endorsement from Japanese authorities.",
+        "takeaway": "Before a Japanese architect can practice in the Philippines, reciprocal rights for Filipinos in Japan must be verified and officially endorsed."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-005-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:48.361702+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "7d023e7b-6daa-4b36-87d3-456e06aed8e4",
+      "article_id": "a6eaa2f0-1220-44ea-9bf3-3e90f791b71f",
+      "topic_id": "da6f7f45-0086-4e01-b119-5a4cb913fcf7",
+      "text": "What is the purpose of including a Schedule of Materials and Finishes in bid documents?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To eliminate the need for Specifications, thereby simplifying the documentation process for contractors"
+        },
+        {
+          "id": "b",
+          "text": "To list all specified materials, finishes, and equipment by location, enabling contractors to organize bids and identify all requirements at a glance"
+        },
+        {
+          "id": "c",
+          "text": "To impose unnecessary restrictions on contractor selection, limiting flexibility in material sourcing"
+        },
+        {
+          "id": "d",
+          "text": "To guarantee that materials will be available during construction, ensuring no delays due to supply chain issues"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Wrongly assumes schedules replace Specifications; schedules supplement and organize Specifications for clarity.",
+        "c": "Inverts the purpose; schedules promote clarity and accuracy, not restriction.",
+        "d": "Confuses the purpose; schedules identify required materials, not guarantee availability.",
+        "correct": "A Schedule of Materials and Finishes lists all specified materials, finishes, and equipment by location, helping contractors organize bids and identify requirements.",
+        "takeaway": "Material schedules organize bid requirements by location and enable organized cost tracking."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-008-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.526003+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "ff397f9a-d371-4697-b5f4-b3b01a03e96b",
+      "article_id": "a6eaa2f0-1220-44ea-9bf3-3e90f791b71f",
+      "topic_id": "da6f7f45-0086-4e01-b119-5a4cb913fcf7",
+      "text": "What is the purpose of Instructions to Bidders in the bid document package?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To specify the exact construction methods contractors must use, ensuring uniformity in project execution"
+        },
+        {
+          "id": "b",
+          "text": "To establish the rules of bidding—bid format, required documentation, deadline, bid opening procedure, and evaluation criteria"
+        },
+        {
+          "id": "c",
+          "text": "To guarantee that the lowest bid will be accepted, regardless of other considerations"
+        },
+        {
+          "id": "d",
+          "text": "To eliminate competition by favoring certain contractors, which is often prohibited by procurement laws"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Confuses Instructions with Specifications; Instructions govern the bidding process, not construction methods.",
+        "c": "Wrongly assumes lowest bid guarantee; Instructions may specify that non-price factors (qualifications, schedule) are considered.",
+        "d": "Mischaracterizes the purpose as anticompetitive; Instructions are designed to ensure fair, transparent bidding.",
+        "correct": "Instructions to Bidders establish binding rules governing the bidding process: bid format, required documentation, deadline, bid opening procedure, and evaluation criteria.",
+        "takeaway": "Instructions to Bidders define the bidding rules—format, documentation, deadline, and evaluation criteria."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-008-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.526003+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "fe3e22fa-85cd-4ae3-b22f-0f596e04807a",
+      "article_id": "a6eaa2f0-1220-44ea-9bf3-3e90f791b71f",
+      "topic_id": "da6f7f45-0086-4e01-b119-5a4cb913fcf7",
+      "text": "What are the primary components that must be included in bid documents to enable contractors to prepare complete, accurate proposals?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only Drawings and a budget estimate, which are insufficient for comprehensive bidding"
+        },
+        {
+          "id": "b",
+          "text": "Advertisement, Instructions to Bidders, proposed Agreement, General Conditions, Special Provisions, Drawings, Specifications, and supplemental schedules"
+        },
+        {
+          "id": "c",
+          "text": "Specifications only; Drawings are prepared after bidding, which is not standard practice"
+        },
+        {
+          "id": "d",
+          "text": "List of approved contractors; bidders are selected by the Owner without formal documents, which limits transparency"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Omits critical components; bid documents must include Instructions, Agreement, General Conditions, and Specifications for complete bidding.",
+        "c": "Reverses the process; Drawings and Specifications are both provided before bidding to enable accurate bids.",
+        "d": "Describes informal, non-competitive selection, not the structured formal bidding process with required documents.",
+        "correct": "Bid documents comprise the complete package: Advertisement, Instructions to Bidders, proposed Agreement, General Conditions, Special Provisions, Drawings, Specifications, and supplemental schedules.",
+        "takeaway": "Bid documents are a complete package including Advertisement, Instructions, Agreement, General Conditions, Drawings, Specifications, and schedules."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-008-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.526003+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "0b587929-9468-40fe-aa21-4bc6dd18d353",
+      "article_id": "0c598f14-db0d-490d-827d-d3088108b47f",
+      "topic_id": "d07ac153-6086-428b-b536-6214d80d72db",
+      "text": "In a private competitive bidding process, is the Owner obligated to accept the lowest bid?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, the Owner must always award to the lowest bidder to ensure fairness, as this is a common practice in public procurement"
+        },
+        {
+          "id": "b",
+          "text": "No, the Owner may consider qualifications, past performance, financial stability, and other factors; however, selection should be based on rational criteria established before bidding"
+        },
+        {
+          "id": "c",
+          "text": "Only if the lowest bid is within 10% of the average bid, which is a guideline sometimes used to prevent abnormally low bids"
+        },
+        {
+          "id": "d",
+          "text": "No, the Owner may select any bidder regardless of price or qualifications, which allows for flexibility in decision-making"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Confuses private bidding with public bidding requirements; private owners have discretion to weigh non-price factors.",
+        "c": "Invents a 10% threshold that does not exist in private bidding procedures.",
+        "d": "Mistakes discretion for arbitrary selection; Owner's choice must follow rational, pre-established criteria to avoid breaching the implied obligation of fair dealing.",
+        "correct": "In private competitive bidding, the Owner may consider qualifications, past performance, financial stability, and other factors in addition to price, provided the selection criteria are rational and established before bidding.",
+        "takeaway": "Private bidders compete on multiple criteria (price, qualifications, past performance), not just lowest cost."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "remember",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-007-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.047156+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "56de8bc9-526c-4609-a89d-0689bcaf88ce",
+      "article_id": "0c598f14-db0d-490d-827d-d3088108b47f",
+      "topic_id": "d07ac153-6086-428b-b536-6214d80d72db",
+      "text": "What happens if a bid is received after the specified deadline?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The bid is accepted and the Owner evaluates it with other on-time bids, provided it meets all other submission criteria"
+        },
+        {
+          "id": "b",
+          "text": "The bid is rejected, even if only slightly late, unless the Owner consents to late acceptance"
+        },
+        {
+          "id": "c",
+          "text": "The bid is accepted but subject to a 10% penalty, which serves as a deterrent for late submissions"
+        },
+        {
+          "id": "d",
+          "text": "The bid is held until after the opening and evaluated at that time, which can delay the decision-making process"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Wrongly assumes late bids are accepted; strict deadline enforcement is essential to competitive bidding fairness.",
+        "c": "Invents a 10% penalty mechanism that does not exist; late bids are rejected outright, not penalized.",
+        "d": "Suggests late bids are held for later evaluation; the procedure is strict rejection without exception unless Owner consents.",
+        "correct": "Late bids are rejected automatically, regardless of how slightly late, unless the Owner explicitly consents to late acceptance.",
+        "takeaway": "Late bids are rejected unless Owner consents; even slightly late bids do not qualify."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-007-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.526003+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "0469ce6d-9057-4c1c-8635-bc4e878aa9c1",
+      "article_id": "0c598f14-db0d-490d-827d-d3088108b47f",
+      "topic_id": "d07ac153-6086-428b-b536-6214d80d72db",
+      "text": "In an invited bid procedure, what is the first step before contractors are invited to submit bids?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Owner publishes a public advertisement in newspapers of general circulation to solicit bids from all interested and qualified contractors within the project jurisdiction"
+        },
+        {
+          "id": "b",
+          "text": "The Owner pre-qualifies contractors by evaluating past project references, financial statements, insurance verification, and safety records; only qualified contractors are invited to bid"
+        },
+        {
+          "id": "c",
+          "text": "The Owner selects the lowest bidder immediately from among the pre-qualified list without requiring formal sealed bid submissions or comparative evaluation"
+        },
+        {
+          "id": "d",
+          "text": "The Owner conducts a public hearing to discuss the project scope and invites community feedback before proceeding to distribute the bidding documents to potential contractors"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Describes competitive bidding process with public advertisement, not invited bidding which is limited to pre-qualified contractors.",
+        "c": "Describes award process, not pre-qualification; selection occurs after bids are received, not before.",
+        "d": "Confuses invited bidding with public bidding procedures that may require hearings; invited bidding operates without public notice.",
+        "correct": "Invited bidding requires pre-qualification: the Owner evaluates past references, financial statements, insurance, and safety records before inviting selected contractors to bid.",
+        "takeaway": "Invited bidding begins with pre-qualification of contractors based on credentials, references, and financial stability."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-007-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.526003+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "3e3d4416-1804-4937-8988-fb00501e500f",
+      "article_id": "dd976d64-9f04-409f-8d4d-f8140d575b86",
+      "topic_id": "225f6228-ecb5-45d1-9e2e-f034698993ab",
+      "text": "Which philosopher's essay 'Building Dwelling Thinking' (1954) established the foundational philosophical basis for phenomenological architecture?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jean-Paul Sartre"
+        },
+        {
+          "id": "b",
+          "text": "Edmund Husserl"
+        },
+        {
+          "id": "c",
+          "text": "Martin Heidegger"
+        },
+        {
+          "id": "d",
+          "text": "Maurice Merleau-Ponty"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Sartre contributed to existential philosophy but did not author the foundational building text.",
+        "b": "Husserl founded phenomenology as method but did not write the building essay.",
+        "d": "Merleau-Ponty's embodied perception influenced phenomenology but Heidegger authored the key building essay.",
+        "correct": "architectural theory clearly identifies Martin Heidegger's 'Building Dwelling Thinking' (1954) as 'establish[ing] phenomenological architecture's philosophical basis.' The essay's critique of modernism's 'forgetting of dwelling' is central to phenomenological theory.",
+        "takeaway": "architectural theory clearly identifies Martin Heidegger's 'Building Dwelling Thinking' (1954) as 'establish[ing] phenomenological architecture's philosophical basis.' The essay's critique of modernism's 'forgetting of dwelling' is central to phenomenological theory."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "ATT"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-005-08-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.31954+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "66c44ab0-9adc-46e8-83d1-e531ba4e9c4f",
+      "article_id": "dd976d64-9f04-409f-8d4d-f8140d575b86",
+      "topic_id": "225f6228-ecb5-45d1-9e2e-f034698993ab",
+      "text": "According to phenomenological architecture, which of the following aspects of a place's character is NOT typically considered part of genius loci?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Material properties (warmth, texture, durability) and how materials age"
+        },
+        {
+          "id": "b",
+          "text": "The specific computer algorithms used to design contemporary buildings"
+        },
+        {
+          "id": "c",
+          "text": "Characteristic light conditions and how they shape human perception"
+        },
+        {
+          "id": "d",
+          "text": "Urban landscape and cultural memory embedded in cities"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Materiality is emphasized: 'Concrete, wood, stone, and earth communicate through texture, warmth, and durability.'",
+        "c": "Light is explicitly identified as operating 'as a phenomenological category' shaping experience.",
+        "d": "Cultural memory is explicitly identified as crucial aspect of genius loci.",
+        "correct": "Light, materiality, and urban landscape as essential phenomenological dimensions of genius loci. Parametric algorithms are contemporary tools but represent the 'digital mediation' that phenomenology critiques as threatening to embodied experience. Computer algorithms are not traditional aspects of genius loci.",
+        "takeaway": "Computer algorithms are not traditional aspects of genius loci."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "SYS"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-005-08-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.31954+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "64d2f78b-6e2a-4f39-8ea0-ea9fc48a9fee",
+      "article_id": "dd976d64-9f04-409f-8d4d-f8140d575b86",
+      "topic_id": "225f6228-ecb5-45d1-9e2e-f034698993ab",
+      "text": "How does Christian Norberg-Schulz's understanding of genius loci differ from merely appreciating a beautiful landscape's scenic qualities?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Norberg-Schulz reduces genius loci to visual aesthetics alone, ignoring the cultural and historical context"
+        },
+        {
+          "id": "b",
+          "text": "Genius loci is comprehensive place character including landscape, climate, history, social patterns, and embodied experience—not merely visual scenery but the holistic conditions enabling meaningful dwelling"
+        },
+        {
+          "id": "c",
+          "text": "Norberg-Schulz excludes landscape from genius loci consideration, focusing solely on architectural elements"
+        },
+        {
+          "id": "d",
+          "text": "A beautiful view from a distance automatically possesses genius loci, without considering the experiential aspects"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "architectural theory shows Norberg-Schulz emphasizing multisensory and social dimensions, not visual reduction.",
+        "c": "Landscape is primary to genius loci; it as foundational.",
+        "d": "architectural theory explicitly cautions against conflating visual beauty with genius loci.",
+        "correct": "Treating Genius Loci as Purely Visual Aesthetic: Genius loci is not the scenic beauty of a landscape. It is the comprehensive character of a place—including climate, history, social patterns, material traditions, and embodied experience.' A beautiful distant view may lack rich sensory, social, and historical engagement that constitutes genuine genius loci.",
+        "takeaway": "It is the comprehensive character of a place—including climate, history, social patterns, material traditions, and embodied experience.' A beautiful distant view may lack rich sensory, social, and historical engagement that constitutes genuine genius loci."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-005-08-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.31954+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "e754f2be-fc0a-4547-95af-f468d6269004",
+      "article_id": "dd976d64-9f04-409f-8d4d-f8140d575b86",
+      "topic_id": "225f6228-ecb5-45d1-9e2e-f034698993ab",
+      "text": "Why does Heidegger critique modernism for 'forgetting the essence of dwelling' despite solving the housing shortage through efficient construction?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Modernism's technological rationality treats building as mere material construction divorced from its existential purpose of enabling authentic human dwelling—creating shelter without creating places where dwelling becomes possible"
+        },
+        {
+          "id": "b",
+          "text": "Modernism produced insufficient quantities of housing, failing to address the needs of growing urban populations"
+        },
+        {
+          "id": "c",
+          "text": "Modernism was too expensive for poor populations, limiting access to adequate housing solutions"
+        },
+        {
+          "id": "d",
+          "text": "Heidegger opposed all modern materials and techniques, advocating for a return to traditional building methods"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "architectural theory shows Heidegger acknowledging the housing shortage was addressed; the problem is deeper.",
+        "c": "Cost is not Heidegger's concern; his critique is existential.",
+        "d": "Heidegger critiques modernism's approach, not its materials; contemporary phenomenological architects use modern materials.",
+        "correct": "Heidegger's key passage: 'The real problem in modern times is not the housing shortage but that mortals have forgotten the essence of dwelling.' He critiques modernism for treating 'building as mere material construction divorced from its existential purpose.' The distinction is between shelter (functional) and dwelling (existential).",
+        "takeaway": "Heidegger's key passage: 'The real problem in modern times is not the housing shortage but that mortals have forgotten the essence of dwelling.' He critiques modernism for treating 'building as mere material construction divorced from its existential purpose.' The distinction is between shelter (functional) and dwelling (existential)."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-005-08-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.31954+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "c658aa2c-f637-4111-8271-774e8aef6d5b",
+      "article_id": "dd976d64-9f04-409f-8d4d-f8140d575b86",
+      "topic_id": "225f6228-ecb5-45d1-9e2e-f034698993ab",
+      "text": "Which contemporary architect is identified as most committed to phenomenological practice through the concept of 'atmospheres' and sensory-centered design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Zaha Hadid, known for her futuristic and fluid architectural forms"
+        },
+        {
+          "id": "b",
+          "text": "Frank Gehry, recognized for his deconstructivist approach and innovative use of materials"
+        },
+        {
+          "id": "c",
+          "text": "Peter Zumthor"
+        },
+        {
+          "id": "d",
+          "text": "Rem Koolhaas, famous for his theoretical contributions and urban planning projects"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Hadid's work is parametric and digital, not phenomenologically grounded.",
+        "b": "Gehry's work is discussed in deconstructivist contexts, not phenomenological.",
+        "d": "Koolhaas is a cultural theorist; his work is not characterized as phenomenological.",
+        "correct": "Peter Zumthor as 'the contemporary architect most committed to phenomenological practice' and describes his 'Therme Vals (1996), a spa complex...embody[ing] phenomenological principles' through sensory orchestration and atmospheric design.",
+        "takeaway": "Peter Zumthor as 'the contemporary architect most committed to phenomenological practice' and describes his 'Therme Vals (1996), a spa complex...embody[ing] phenomenological principles' through sensory orchestration and atmospheric design."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "ATT"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-005-08-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.31954+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "b6f402f0-5874-4baa-8d74-98fccadd3189",
+      "article_id": "dd976d64-9f04-409f-8d4d-f8140d575b86",
+      "topic_id": "225f6228-ecb5-45d1-9e2e-f034698993ab",
+      "text": "In Heidegger's essay, the 'Fourfold' refers to which four essential elements that authentic building must honor?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Earth, sky, mortals, and divinities—elements whose presence enables authentic dwelling"
+        },
+        {
+          "id": "b",
+          "text": "Structure, function, aesthetics, and sustainability, which are considered the core principles of design"
+        },
+        {
+          "id": "c",
+          "text": "Stone, wood, glass, and metal—the primary building materials used in construction"
+        },
+        {
+          "id": "d",
+          "text": "Foundation, walls, roof, and interior space—the four structural components essential for stability"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "These are modernist categories; the Fourfold is phenomenological.",
+        "c": "Materials are involved but the Fourfold is ontological/existential, not material.",
+        "d": "These are structural components; the Fourfold is existential.",
+        "correct": "The Key Terms define the Fourfold as 'Heidegger's concept that authentic building creates spaces where earth (materiality), sky (light, weather), mortals (human presence), and divinities (transcendence, meaning) are all present.' this goes beyond functional shelter to enable authentic dwelling.",
+        "takeaway": "The Key Terms define the Fourfold as 'Heidegger's concept that authentic building creates spaces where earth (materiality), sky (light, weather), mortals (human presence), and divinities (transcendence, meaning) are all present.' this goes beyond functional shelter to enable authentic dwelling."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-005-08-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.31954+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "b08563c2-2800-47e3-bf96-53d84d124cc0",
+      "article_id": "b862f4a8-fa65-4cf7-bcb8-bec5b330d837",
+      "topic_id": "f43263d3-c7e1-46a7-9837-c4fb0e1217e2",
+      "text": "Which artificial lighting technology combines moderate efficacy (80–120 lm/W), extended lifespan (5,000–15,000 hours), and suitability for high-bay industrial spaces but exhibits color shift over time?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Compact fluorescent lamps (CFL) with color rendering index of 70–90"
+        },
+        {
+          "id": "b",
+          "text": "High-intensity discharge lamps (metal halide, high-pressure sodium)"
+        },
+        {
+          "id": "c",
+          "text": "Linear fluorescent (T8/T5) with lifespan of 10,000–20,000 hours"
+        },
+        {
+          "id": "d",
+          "text": "Incandescent lamps with color rendering index near 100"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "CFLs achieve 60–80 lm/W and have 10,000–20,000 hour lifespan; they do not match the 80–120 lm/W efficacy range or the high-bay suitability of HID systems.",
+        "c": "Linear fluorescent (T8/T5) achieves 60–80 lm/W with 10,000–20,000 hour lifespan; while similar to CFL in efficacy, they lack HID's superior efficiency and high-bay design capability.",
+        "d": "Incandescent lamps achieve only 12–15 lm/W efficacy, have extremely short 1,000-hour lifespan, and are prohibited in the Philippines for general illumination under energy code mandates.",
+        "correct": "HID lamps (metal halide, high-pressure sodium) achieve 60–150 lm/W efficacy depending on type, with lifespans of 6,000–15,000 hours. Metal halide typically ranges 60–100 lm/W; high-pressure sodium ranges 80–150 lm/W., are ideal for high-bay industrial and outdoor applications, and exhibit color shift as they age—a characteristic distinguishing feature of HID technology.",
+        "takeaway": "HID lamps remain relevant in high-bay industrial contexts where their superior efficacy justifies color-shift maintenance requirements; understanding technology trade-offs guides appropriate fixture selection across building types."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-006-06.mdx, Lighting Technologies and Efficacy section",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-006-06-014",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:01.681417+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "119292af-df20-455f-bbb9-1ba101f94f16",
+      "article_id": "b862f4a8-fa65-4cf7-bcb8-bec5b330d837",
+      "topic_id": "f43263d3-c7e1-46a7-9837-c4fb0e1217e2",
+      "text": "External shading devices reduce cooling loads by 40–60% compared to internal shading because they:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Allow 60–80% of solar radiation to penetrate, providing occupant adjustment flexibility, which is not the primary function of external shading"
+        },
+        {
+          "id": "b",
+          "text": "Intercept solar radiation outside the building envelope before it enters the conditioned space"
+        },
+        {
+          "id": "c",
+          "text": "Provide better color rendering index preservation for daylighting applications, although this is not directly related to cooling load reduction"
+        },
+        {
+          "id": "d",
+          "text": "Reduce thermal mass requirements in tropical climates by reflecting humidity, which is not a direct effect of shading devices"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This describes a feature of internal shading (roller shades, blinds) that allows occupant control but provides minimal thermal benefit—the opposite of why external shading is superior.",
+        "c": "Color rendering index relates to light quality perception, not thermal performance; external shading's thermal advantage is independent of CRI specifications.",
+        "d": "Thermal mass and humidity reflection are not relevant mechanisms for external shading thermal performance; the cooling load reduction comes from preventing solar radiation ingress, not mass or humidity management.",
+        "correct": "External louvers intercept solar radiation outside the building envelope, preventing heat gain before it enters the conditioned space. This is more effective than internal shading, which allows solar radiation to penetrate into the building and convert to internal heat. [Specific 40–60% reduction claim requires thermal simulation or code reference not provided in search results.]",
+        "takeaway": "External shading strategy placement is critical in tropical design; intercepting radiation outside the envelope achieves superior thermal control, justifying higher initial cost through operational energy savings."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-006-06.mdx, Glare Control in Tropical Environments section",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-006-06-016",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:01.681417+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "202dd7a6-d6fd-47d4-acc5-9faac836d074",
+      "article_id": "b862f4a8-fa65-4cf7-bcb8-bec5b330d837",
+      "topic_id": "f43263d3-c7e1-46a7-9837-c4fb0e1217e2",
+      "text": "DuringDuring the Philippines' summer solstice (June 21) at 14°N latitude, the solar altitude at solar noon is approximately 80–82°. Revise to: 'Given an 80–82° solar altitude...' OR adjust latitude to equatorial region (0–5°N) to justify 84–90° altitude.titude, which shading strategy is most effective for controlling direct radiation while preserving northern diffuse light penetration?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Horizontal overhang angled at 45° from vertical to block morning and afternoon sun"
+        },
+        {
+          "id": "b",
+          "text": "Vertical fins spaced 1 meter on-center to manage the near-vertical solar incidence"
+        },
+        {
+          "id": "c",
+          "text": "Egg-crate louver configuration (horizontal + vertical) tracking the overhead sun path"
+        },
+        {
+          "id": "d",
+          "text": "Interior roller shade system allowing occupant override during mid-day peaks"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Horizontal overhangs provide minimal shadow at 84–90° altitude; at summer solstice, tan(84–90°) produces minimal overhang projection, leaving the window exposed to direct radiation.",
+        "c": "While egg-crate louvers combine horizontal and vertical control, they are optimal for equinox periods (65–68° altitude). At summer solstice extremes, simple vertical fins are more effective and economical.",
+        "d": "Interior shading allows 60–80% solar radiation penetration; at summer solstice, direct radiation penetrates horizontally into the building, defeating occupant comfort and thermal control goals.",
+        "correct": "At 84–90° solar altitude (near-vertical), the sun approaches directly overhead; vertical fins are most effective because they block the lateral radiation while allowing overhead-reflected diffuse light to penetrate. Horizontal overhangs become ineffective at high altitudes, projecting minimal shadow. Egg-crate configurations are optimal for equinox periods, not summer solstice extremes.",
+        "takeaway": "Shading device effectiveness is latitude- and season-specific; summer solstice vertical designs differ fundamentally from equinox egg-crate or winter horizontal configurations—understanding solar altitude geometry is essential for tropical daylighting control."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-006-06.mdx, Solar Altitude and Shading Device Design section",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-006-06-017",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:01.681417+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "cdec8652-8c0f-4567-be8f-d2507ae4c48e",
+      "article_id": "b862f4a8-fa65-4cf7-bcb8-bec5b330d837",
+      "topic_id": "f43263d3-c7e1-46a7-9837-c4fb0e1217e2",
+      "text": "An office building operates daylight harvesting sensors with seasonal setpoint adjustments. During the monsoon season (June–September), baseline daylight factor decreases 20–30%. What adjustment strategy should be applied to maintain the design 400-lux work-plane illuminance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Increase setpoints to 450–500 lux to compensate for reduced natural light availability"
+        },
+        {
+          "id": "b",
+          "text": "Decrease setpoints to 350–380 lux to match reduced daylight contributions"
+        },
+        {
+          "id": "c",
+          "text": "Maintain fixed 400-lux setpoints year-round; accept higher artificial lighting energy consumption during monsoon months"
+        },
+        {
+          "id": "d",
+          "text": "Disable daylight harvesting entirely during monsoon season; rely solely on time-scheduled manual controls"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Decreasing setpoints would further reduce artificial lighting, allowing work-plane illuminance to fall below 400 lux during monsoon months, violating code requirements and occupant comfort.",
+        "c": "Fixed setpoints ignore monsoon variation; artificial lighting would not activate sufficiently to maintain design illuminance, resulting in visual discomfort and potential code non-compliance during high-cloud periods.",
+        "d": "Disabling daylight harvesting abandons energy savings opportunities and creates unnecessary artificial lighting dependency; the system should adapt, not surrender, to seasonal variation.",
+        "correct": "During monsoon season, when baseline daylight factor decreases 20–30%, setpoints should be increased to 450–500 lux to trigger artificial lighting earlier and compensate for reduced natural light availability. This maintains the 400-lux work-plane target despite atmospheric changes, optimizing the balance between daylighting capture and artificial supplementation.",
+        "takeaway": "Seasonal setpoint adjustment (±15–20%) is critical for tropical daylight harvesting performance; understanding how monsoon cloud cover requires higher triggering thresholds ensures consistent occupant comfort across seasonal transitions."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-006-06.mdx, Sensor Placement and Control Logic section",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-006-06-019",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:01.681417+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "631192e4-b89d-4364-8208-810bfd00c50c",
+      "article_id": "b862f4a8-fa65-4cf7-bcb8-bec5b330d837",
+      "topic_id": "f43263d3-c7e1-46a7-9837-c4fb0e1217e2",
+      "text": "A Philippine office building experiences a 20–30% decrease in daylight factor during the Southwest Monsoon season. What is the primary atmospheric cause of this reduction?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Increased solar altitude angles reducing window penetration depth"
+        },
+        {
+          "id": "b",
+          "text": "Cloud cover and diffuse illumination dominating direct solar radiation"
+        },
+        {
+          "id": "c",
+          "text": "Seasonal window orientation shift reducing north-facing exposure"
+        },
+        {
+          "id": "d",
+          "text": "High humidity causing permanent glazing condensation blockage"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Solar altitude angles increase during summer solstice (June), but this would enhance daylighting penetration in north-facing spaces, not reduce it. The monsoon effect is atmospheric, not geometric.",
+        "c": "Building window orientation remains fixed; seasonal monsoon effects are meteorological (cloud cover) rather than architectural reorientation.",
+        "d": "While high humidity does cause surface condensation (reducing transmittance 30–50%), the 20–30% seasonal reduction in daylight factor is primarily due to cloud cover diffusing direct solar radiation.",
+        "correct": "During the Southwest Monsoon (June–September), cloud cover increases and diffuse illumination dominates, causing daylight factor to decrease 20–30% relative to dry-season baseline. During monsoon season, cloud cover increases diffuse illumination uniformly across all orientations, but the reduction in direct solar radiation (which normally penetrates deeper into spaces) results in lower overall daylight factors. North-facing facades benefit from diffuse light but lose the penetration depth advantage of direct solar radiation.",
+        "takeaway": "Tropical daylighting design must account for monsoon-induced atmospheric changes; lighting control systems require seasonal setpoint adjustments (±15–20%) to maintain consistent illuminance through differing cloud conditions."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-006-06.mdx, Monsoon Season Light Variation section",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-006-06-013",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:01.681417+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "4043fba2-585d-4962-b639-c7372d4a4a2a",
+      "article_id": "f52e3126-774f-4eec-8456-8417769bb34a",
+      "topic_id": "82cd9f9f-5080-4849-ab7d-092e7a7e85bd",
+      "text": "A condominium in Metro Manila reports 60–80% of access incidents involve cloned proximity cards. The integrator proposes upgrading to smart cards (13.56 MHz) but the developer wants to minimize cost. What is the technical and operational trade-off of maintaining proximity cards while implementing stricter monitoring?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. Proximity cards remain vulnerable to cloning; monitoring can detect unauthorized access patterns post-facto but cannot prevent cloning"
+        },
+        {
+          "id": "b",
+          "text": "B. Monitoring proximity card usage eliminates cloning risk by alerting on duplicate card swipes within a 1-second window"
+        },
+        {
+          "id": "c",
+          "text": "C. Smart cards cost 3–5x more per card but add on-card encryption; proximity cards with real-time RFID monitoring are equally secure"
+        },
+        {
+          "id": "d",
+          "text": "D. Cloned proximity cards are detectable through facial recognition cross-check; no credential upgrade is needed"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Monitoring cannot prevent cloning; a cloned card presents the same card ID as the original and is indistinguishable at the reader level. Post-hoc detection via pattern analysis (e.g., impossible travel between two locations) is possible but not foolproof.",
+        "c": "Smart cards do cost 2–3x more but provide encryption. RFID monitoring (live field strength detection) cannot eliminate cloning—an attacker can still capture the unencrypted card number passively.",
+        "d": "Facial recognition cross-check adds cost and operational friction; it does not address the root cause (unencrypted credential broadcast). It is a compensating control, not a replacement for secure credentials.",
+        "correct": "Proximity card cloning occurs because unencrypted card numbers are broadcast openly. Monitoring/alerting on duplicate swipes can detect unauthorized access after the fact (forensic value) but cannot prevent a cloned card from being used to gain access. The cloning vulnerability persists at the protocol level. Smart cards with on-card encryption and mutual authentication eliminate cloning risk at the credential level.",
+        "takeaway": "Proximity card cloning is a fundamental protocol vulnerability; monitoring mitigates risk post-access but does not prevent breach. Credential upgrade (smart card or biometric) is the only technical fix."
+      },
+      "explanation": null,
+      "code_citation": "Article section 'Credential Technologies' > 'Proximity Cards'; Philippine Security Industry Association breach statistics",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-005-04-019",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:03.161281+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "ae6a1ff0-b4d9-4c67-b99d-7f494df6df08",
+      "article_id": "f52e3126-774f-4eec-8456-8417769bb34a",
+      "topic_id": "82cd9f9f-5080-4849-ab7d-092e7a7e85bd",
+      "text": "What is the primary difference between Wiegand and OSDP protocols in terms of bidirectional communication capability?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. Wiegand supports full-duplex communication; OSDP supports half-duplex only, which limits its functionality"
+        },
+        {
+          "id": "b",
+          "text": "B. Wiegand cannot natively send door lock status or REX signals; OSDP provides real-time bidirectional status and tamper alerts"
+        },
+        {
+          "id": "c",
+          "text": "C. Both protocols are unidirectional and require auxiliary relay modules for status feedback, which complicates installation"
+        },
+        {
+          "id": "d",
+          "text": "D. OSDP is limited to 100 bits per second; Wiegand supports up to 115,200 bps, offering faster data transfer"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Wiegand is half-duplex, not full-duplex. OSDP is also half-duplex (RS-485 serial) but supports bidirectional messages within the half-duplex constraint.",
+        "c": "Wiegand requires auxiliary modules, but OSDP is inherently bidirectional without external modules.",
+        "d": "Wiegand operates at 100 bits per second (fixed), while OSDP supports 9,600–115,200 bps variable data rates.",
+        "correct": "Wiegand is a legacy, one-way protocol that transmits card data only; it cannot natively receive door lock status or REX signals from the controller. Auxiliary relay modules are needed for bidirectional feedback. OSDP (IEC 60839-11-5) is a bidirectional, secured protocol supporting real-time lock status, tamper alerts, power failure reporting, and biometric enrollments.",
+        "takeaway": "Modern access control favors OSDP's bidirectional capability for real-time status monitoring, door health diagnostics, and secure credential transmission over legacy Wiegand's one-way design."
+      },
+      "explanation": null,
+      "code_citation": "Article sections 'Wiegand Protocol' and 'Open Supervised Device Protocol (OSDP)'",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-005-04-012",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:03.161281+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "b78d8690-1339-4fef-a3da-19bcd1f16a4d",
+      "article_id": "f52e3126-774f-4eec-8456-8417769bb34a",
+      "topic_id": "82cd9f9f-5080-4849-ab7d-092e7a7e85bd",
+      "text": "An access control system's IP network is isolated on a dedicated VLAN with QoS prioritization. Why is network isolation important for access control systems, and what cybersecurity control is critical if the VLAN is breached?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. Isolation prevents unauthorized door locks; encryption of commands prevents unauthorized unlock commands even if the network is compromised"
+        },
+        {
+          "id": "b",
+          "text": "B. QoS ensures all access control traffic has priority; isolation is only for administrative convenience and does not enhance security"
+        },
+        {
+          "id": "c",
+          "text": "C. Isolation prevents the access control system from interfering with building WiFi; encryption is unnecessary if VLAN tagging is enabled, as it provides sufficient security"
+        },
+        {
+          "id": "d",
+          "text": "D. Network isolation eliminates the need for firewalls; QoS alone provides sufficient cybersecurity protection, making additional measures redundant"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "QoS ensures responsiveness but does not provide security. Isolation is not merely administrative convenience; it limits attack surface by preventing access control from being targeted by general-network malware.",
+        "c": "Isolation does not prevent WiFi interference (different frequency bands). VLAN tagging is a networking construct, not a security measure against command spoofing; encryption of commands is required.",
+        "d": "Network isolation complements firewalls but does not replace them. QoS is traffic prioritization, not cybersecurity; firewalls, IDS, and encrypted commands provide actual security controls.",
+        "correct": "Isolated VLAN segregates access control traffic from general building LAN, reducing exposure to compromised endpoints. However, if the VLAN is breached (e.g., rogue device injected, network tap installed), encrypted command/response is critical to prevent an attacker from sending unencrypted 'unlock door' commands to readers or controllers. IP-based systems must use TLS/SSL encryption for all server-to-reader communication.",
+        "takeaway": "Defense-in-depth requires network isolation (VLAN), firewall rules, and cryptographic protection of access control commands to mitigate IP-based system vulnerabilities."
+      },
+      "explanation": null,
+      "code_citation": "Article section 'TCP/IP-Based Access Control' security concern paragraph; NIST SP 800-53 cybersecurity framework",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-005-04-018",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:03.161281+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "028e920a-269e-4453-994f-b5027ead68f8",
+      "article_id": "f52e3126-774f-4eec-8456-8417769bb34a",
+      "topic_id": "82cd9f9f-5080-4849-ab7d-092e7a7e85bd",
+      "text": "A financial institution operates a cash-handling room protected by fingerprint-based access control. According to NIST FRVT benchmarks, what is the false acceptance rate (FAR) risk, and what operational procedure should mitigate unauthorized access?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. FAR ~0.01–0.1% at industry standards; implement manual identity verification (e.g., guard visual check) as secondary authentication"
+        },
+        {
+          "id": "b",
+          "text": "B. FAR is zero if enrollment uses 8–10 fingers; fingerprints are unique and cannot be spoofed, ensuring absolute security"
+        },
+        {
+          "id": "c",
+          "text": "C. FAR >5%; fingerprint readers should only be used as convenience, not security, and require PIN codes as secondary factor for enhanced protection"
+        },
+        {
+          "id": "d",
+          "text": "D. FAR varies based on database size; larger enrollment databases increase false acceptance exponentially, necessitating additional security measures"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Enrollment of 8–10 fingers reduces false rejection rate (FRR) but does not eliminate false acceptance. Biometric systems always have non-zero FAR due to template matching variance and spoofing risk (fake fingerprints).",
+        "c": "FAR of >5% would be unacceptable for high-security facilities. FRR of 2–5% is typical for fingerprint systems, causing legitimate users to be rejected occasionally.",
+        "d": "FAR is not exponentially sensitive to database size under proper algorithm implementation. NIST benchmarks control for database size, showing consistent FAR across 1,000–10,000 template databases.",
+        "correct": "Fingerprint readers achieve FAR of 0.01–0.1% (1 false acceptance per 1,000–10,000 attempts) at industry-standard security levels. For high-security areas (cash handling, server rooms), this residual error rate requires secondary authentication such as manual visual verification by a security officer or a PIN code to ensure no unauthorized access occurs.",
+        "takeaway": "High-security facilities should implement multi-factor authentication combining biometrics (fingerprint) with secondary factors (PIN, guard verification) to mitigate the residual FAR risk."
+      },
+      "explanation": null,
+      "code_citation": "Article section 'Biometric Systems' > 'Fingerprint Recognition'; NIST FRVT methodology",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-005-04-017",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:03.161281+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "e2c8705e-36c7-4ff9-82c7-f06bdc39ff79",
+      "article_id": "f52e3126-774f-4eec-8456-8417769bb34a",
+      "topic_id": "82cd9f9f-5080-4849-ab7d-092e7a7e85bd",
+      "text": "During the design phase of an access control system for a new shopping mall in Cebu, the integrator specifies Category 5e cabling in conduit for reader/lock connections and mentions future scalability to PoE readers. What is the primary advantage of preparing for PoE infrastructure even if Phase 1 uses non-PoE readers?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. PoE eliminates the need for UPS backup power supplies, which are typically required for non-PoE systems to ensure continuous operation during power outages"
+        },
+        {
+          "id": "b",
+          "text": "B. PoE infrastructure (802.3af 15.4 W per port) simplifies future reader upgrades by providing combined power and data in a single cable, reducing installation labor"
+        },
+        {
+          "id": "c",
+          "text": "C. PoE reduces the number of cable runs required by 50% compared to Wiegand or OSDP, allowing for a more streamlined and cost-effective installation process"
+        },
+        {
+          "id": "d",
+          "text": "D. PoE readers are immune to RF interference and require no shielding in the conduit, which can otherwise be a significant concern in environments with high electromagnetic activity"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "PoE does not replace UPS backup; a UPS still backs the PoE switch to ensure 4–8 hours of offline operation during mains failure.",
+        "c": "PoE reduces cable types (power + data consolidated) but does not reduce total runs by 50%. Conduit pathways are similar whether using separate power or PoE.",
+        "d": "PoE is an electrical power delivery standard; RF shielding is determined by reader frequency (125 kHz, 13.56 MHz, BLE), not by power delivery method.",
+        "correct": "PoE infrastructure (IEEE 802.3af/at) combines power and data over a single Ethernet cable, eliminating the need for separate 24V DC power pairs in conduit. This simplifies future reader replacements and upgrades without re-running power cables. Category 5e cabling supports PoE infrastructure (15.4 W per 802.3af port, 30 W per 802.3at port), making upfront investment in Cat 5e future-proof.",
+        "takeaway": "Specifying Category 5e with PoE-capable infrastructure during initial installation enables cost-effective future upgrades to IP-based PoE readers without major re-cabling efforts."
+      },
+      "explanation": null,
+      "code_citation": "Article section 'Cabling Infrastructure' > 'Structured Cabling for Access Control' table and 'Typical Cable Runs'",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-005-04-020",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:03.161281+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "44d2f59f-abee-4590-ab52-de9e0a0e6137",
+      "article_id": "f52e3126-774f-4eec-8456-8417769bb34a",
+      "topic_id": "82cd9f9f-5080-4849-ab7d-092e7a7e85bd",
+      "text": "A visitor management system at a Philippine office tower issues temporary mobile credentials (push notification) to guests. What is the key security advantage of revocable mobile credentials over printed temporary proximity cards?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. Mobile credentials are cheaper to produce and distribute, offering cost savings for large organizations"
+        },
+        {
+          "id": "b",
+          "text": "B. Mobile credentials can be instantly revoked in real-time if a phone is lost or access is withdrawn; printed cards remain valid until expiration"
+        },
+        {
+          "id": "c",
+          "text": "C. Mobile credentials use 125 kHz RF technology, making them immune to interception, which is a common security concern"
+        },
+        {
+          "id": "d",
+          "text": "D. Mobile credentials automatically upgrade from BLE to NFC based on reader availability, ensuring compatibility with various systems"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Mobile credentials incur cloud/app infrastructure costs, offsetting low per-card printing costs. Overall cost advantage is operational, not per-unit production.",
+        "c": "Mobile credentials operate at 2.4 GHz (BLE) or 13.56 MHz (NFC), not 125 kHz. RF frequency does not determine immunity to interception; encryption does.",
+        "d": "BLE and NFC are separate protocols; readers detect and use one or the other based on their capabilities. Readers do not automatically switch protocols.",
+        "correct": "Mobile credentials (BLE/NFC via smartphone app) can be instantly revoked in real-time through the central access control server if the phone is lost, stolen, or employment terminates. Printed temporary cards remain valid for their entire validity window, creating a security window if cards are lost. Tokens are dynamically managed without physical distribution.",
+        "takeaway": "Mobile credentials enable dynamic access revocation without physical card collection, improving security in high-turnover environments and reducing post-termination access breaches."
+      },
+      "explanation": null,
+      "code_citation": "Article section 'Mobile Credentials (BLE & NFC)' and 'Visitor Management & Temporary Credentials'",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-005-04-015",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:03.161281+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "d31806e0-1733-42af-84c5-6bbd6328999d",
+      "article_id": "f52e3126-774f-4eec-8456-8417769bb34a",
+      "topic_id": "82cd9f9f-5080-4849-ab7d-092e7a7e85bd",
+      "text": "A high-security facility requires anti-passback enforcement, meaning the same credential cannot be used to enter twice in succession without an exit event. Which access control protocol and architecture best supports real-time anti-passback detection?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. Wiegand protocol with local panel relay modules tracking last badge swipe time, which is a common method for basic access control"
+        },
+        {
+          "id": "b",
+          "text": "B. OSDP with bidirectional status polling every 5 seconds per reader to detect double-entry attempts"
+        },
+        {
+          "id": "c",
+          "text": "C. IP-based centralized system with event-driven real-time reporting (< 1 second) and database-driven anti-passback rules"
+        },
+        {
+          "id": "d",
+          "text": "D. Proximity cards with motion sensor REX devices to prevent tailgating only, which does not address anti-passback"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Wiegand-based local panels cannot track state across multiple readers without extensive inter-panel communication. Relay modules lack intelligence for credential-level anti-passback logic.",
+        "b": "OSDP's 200–500 ms polling interval creates a 0.4–1 second lag, allowing double-entry attempts to slip through before the system registers the first badge swipe at the exit.",
+        "d": "Motion sensors prevent tailgating (multiple people passing through one badge swipe) but do not prevent anti-passback (same person, same credential, multiple entries without exits).",
+        "correct": "IP-based centralized systems with sub-second event reporting enable real-time anti-passback logic at the server. When a credential swipes at an entry reader, the server logs the event and blocks the same credential from being used at the same entry until an exit event is recorded. This requires centralized state management and low-latency communication.",
+        "takeaway": "Anti-passback rules require real-time, centralized credential state management; legacy panel-based systems cannot enforce this due to polling delays and lack of inter-panel synchronization."
+      },
+      "explanation": null,
+      "code_citation": "Article sections 'IP-Based Access Control' and 'Access Control Architecture'; anti-passback is an advanced security requirement not explicitly detailed but inferable from system architecture discussion",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-005-04-016",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:03.161281+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "f6db9f92-7f75-4663-bad6-d1174d82889f",
+      "article_id": "b835f8bb-bb09-44fa-855a-37128197c63b",
+      "topic_id": "a88fd0cc-39e8-4bfb-98a6-ab2367bc10cb",
+      "text": "Which schedule is most critical for preventing field disputes over door hardware and operating characteristics?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hardware schedule, which specifies the lock type, hinge size, closer requirements, push/pull hardware, and mounting heights for each door type"
+        },
+        {
+          "id": "b",
+          "text": "Door schedule alone, without a separate hardware schedule, which may lead to inconsistencies in hardware specifications"
+        },
+        {
+          "id": "c",
+          "text": "Electrical schedule, which controls lighting and door sensors, indirectly affecting door operation"
+        },
+        {
+          "id": "d",
+          "text": "Finishes schedule, which specifies door color and paint, contributing to the overall aesthetic but not operational characteristics"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Door schedules specify door characteristics but not detailed hardware requirements.",
+        "c": "Electrical schedules address power and controls, not mechanical hardware.",
+        "d": "Finishes schedules address aesthetics, not operating characteristics.",
+        "correct": "A hardware schedule centralizes hardware requirements and prevents confusion. Rather than embedding hardware specifications in door specifications, a dedicated hardware schedule lists each hardware set (e.g., 'Hardware Set A: Institutional Heavy-Duty') and assigns it to door types. This clarity prevents field substitutions.",
+        "takeaway": "Hardware schedules are specialized documents. They complement door schedules and prevent field disputes by clearly specifying lock types, hinges, closers, and mounting heights."
+      },
+      "explanation": null,
+      "code_citation": "CSI Schedule Documentation Standards; Door and Hardware Specifications",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-009-03-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:30.009533+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "319f6c8a-d380-490d-8b75-1cc780e66e92",
+      "article_id": "b835f8bb-bb09-44fa-855a-37128197c63b",
+      "topic_id": "a88fd0cc-39e8-4bfb-98a6-ab2367bc10cb",
+      "text": "A window schedule for a coastal commercial building in Typhoon Zone 4 specifies U-value 0.25 and SHGC 0.22, but omits Design Wind Pressure ratings. What must be added to this schedule for NSCP Chapter 1 compliance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Design Wind Pressure rating (DWP) for the applicable Typhoon Zone (e.g., 2.5 kPa for Zone 4) to ensure windows can withstand typhoon wind loads"
+        },
+        {
+          "id": "b",
+          "text": "Storm surge elevation specifications to account for potential flooding risks"
+        },
+        {
+          "id": "c",
+          "text": "Structural frame thickness only, which is necessary for overall stability but not specific to wind pressure"
+        },
+        {
+          "id": "d",
+          "text": "Installation date columns to track maintenance schedules and ensure compliance over time"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Storm surge elevation is a site/structural matter, not a window specification.",
+        "c": "Frame thickness is specified in Part 2: Products, not typically in the schedule DWP field.",
+        "d": "Installation dates are not regulatory requirements.",
+        "correct": "NSCP Chapter 1 requires that windows in high-wind areas (typhoon zones) be designed for specific wind pressures. The schedule must specify Design Wind Pressure (DWP) appropriate to the location and typhoon category. Omitting this creates a gap in structural safety documentation.",
+        "takeaway": "Philippine window schedules for coastal areas must include wind load ratings per NSCP. This is a common deficiency in architect specifications for typhoon-prone regions. The schedule connects design loads to actual products."
+      },
+      "explanation": null,
+      "code_citation": "NSCP Chapter 1: Wind Load Requirements; Philippine Coastal Construction Standards",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-009-03-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:30.009533+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "57d1ba43-3116-4229-bdad-66dd2735f19b",
+      "article_id": "41447adf-185f-4a10-a0e9-16febe7b6168",
+      "topic_id": "e6f9f02d-8550-495d-bec6-9455b653849e",
+      "text": "The Ifugao blea of Cordillera is elevated on four posts with rat guards shaped like discs. What is the specific term for these disc-shaped rat guards?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Balaustre"
+        },
+        {
+          "id": "B",
+          "text": "Hagabi"
+        },
+        {
+          "id": "C",
+          "text": "Tukod"
+        },
+        {
+          "id": "D",
+          "text": "Silid"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The hagabi is a disc-shaped wooden or bamboo element fitted around the posts of the Ifugao bale (and other Cordillera dwellings) to prevent rats from climbing up the posts and into the grain stores and living space. It is both a functional pest-control device and a cultural artifact — the shape and carving of hagabi vary among Ifugao clans. The bale itself is a compact, single-room dwelling elevated on four main posts, with a pyramidal thatched roof.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:47:15.972204+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "1c5fa38e-8a1c-4075-898c-829b28eafc2e",
+      "article_id": "41447adf-185f-4a10-a0e9-16febe7b6168",
+      "topic_id": "e6f9f02d-8550-495d-bec6-9455b653849e",
+      "text": "What climate-responsive design strategies does the bahay kubo demonstrate through its raised floor, steep roof, and open walls?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Raised floor for flood protection (silong), steep roof for shedding monsoon rains, open walls for cross-ventilation — all directly responding to the tropical monsoon climate"
+        },
+        {
+          "id": "B",
+          "text": "Raised floor for defensive purposes against tribal conflicts, steep roof as a status symbol of the household head, open walls for visual surveillance, reflecting historical social dynamics"
+        },
+        {
+          "id": "C",
+          "text": "Raised floor for earthquake resistance, flat roof for maximizing interior volume, sealed walls for thermal insulation, adapting to modern construction challenges"
+        },
+        {
+          "id": "D",
+          "text": "Raised floor as a status symbol distinguishing wealthy households, steep roof inherited from Chinese trading partners, open walls reflecting communal social values only, emphasizing cultural exchange"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Every element of the bahay kubo is a direct response to the Philippine tropical monsoon climate: (1) RAISED FLOOR: Elevates living space above flood level; creates the silong (ventilated under-floor space); the batangan (joists) carry the sahig (floor slats) with gaps that allow air to flow through the floor from the silong into the living area; (2) STEEP ROOF (45–60°): The bubong of nipa/cogon/buri is steeply pitched to shed the heavy monsoon rains quickly; (3) OPEN WALLS: The dingding (woven bamboo/sawali walls) and bintana (sliding bamboo panels) can be opened entirely for maximum ventilation. The house is oriented to catch prevailing monsoon winds — long axis perpendicular to the dominant wind to maximize cross-ventilation.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:47:15.972204+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "772eecb9-a291-4668-b118-707632ee2ff6",
+      "article_id": "41447adf-185f-4a10-a0e9-16febe7b6168",
+      "topic_id": "e6f9f02d-8550-495d-bec6-9455b653849e",
+      "text": "How did the bahay kubo evolve into the bahay na bato during the Spanish colonial period?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The bahay kubo was abandoned entirely; the Spanish forced colonists to build European-style stone houses with no indigenous features, erasing local architectural traditions"
+        },
+        {
+          "id": "B",
+          "text": "The evolution was incremental: stone foundations replaced wooden posts at ground level (16th–17th c.), then a full stone ground floor (zaguan/silung) emerged alongside a wooden upper floor with capiz windows (18th–19th c.)"
+        },
+        {
+          "id": "C",
+          "text": "The bahay kubo became the bahay na bato by replacing bamboo with iron and nipa with Spanish clay tiles, maintaining the same raised-floor typology but with more durable materials"
+        },
+        {
+          "id": "D",
+          "text": "The bahay kubo and bahay na bato are identical — the names are interchangeable regional variations of the same dwelling type, reflecting minor stylistic differences"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The bahay kubo evolved into the bahay na bato gradually: (1) Pre-colonial (pre-1565): Pure bahay kubo — all-organic materials, raised floor, open silong; (2) Early Spanish (16th–17th c.): Introduction of stone or brick to replace wooden posts at ground level — improving durability and fire resistance while keeping the raised floor; (3) Mature Spanish (18th–19th c.): Full bahay na bato emerges — enclosed stone ground floor (zaguan/silung), wooden upper floor with sala/cuartos/volada, capiz-shell windows (ventanillas), clay tile or GI sheet roofing. The indigenous raised-floor logic was preserved; only the materials and enclosure of the ground level changed.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:47:15.972204+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "bf6c3784-e029-49d7-b0b3-4c8ff00a0efd",
+      "article_id": "41447adf-185f-4a10-a0e9-16febe7b6168",
+      "topic_id": "e6f9f02d-8550-495d-bec6-9455b653849e",
+      "text": "Which regional vernacular dwelling is the ancestral royal house of the Maranao people of Lanao, Mindanao, distinguished by elaborate okir carvings and a dramatically high-peaked roof?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ivatan stone house"
+        },
+        {
+          "id": "B",
+          "text": "Ifugao bale"
+        },
+        {
+          "id": "C",
+          "text": "Torogan"
+        },
+        {
+          "id": "D",
+          "text": "Bahay na bato"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The torogan is one of the most architecturally distinguished indigenous dwellings in the Philippines. Key features: (1) Okir carvings — elaborate geometric designs carved into posts, beams, and panels; okir is a Maranao art form with Islamic geometric roots; (2) High-peaked roof — dramatically steep, often described as the highest of all Philippine indigenous roof forms; (3) Raised on massive logs — the structure is elevated on thick hardwood posts; (4) No interior partitions — a single large open hall reflecting the communal nature of Maranao royal households. It is NOT a bahay kubo variant — it is a distinct royal typology of the Maranao people.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.35,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:47:15.972204+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "8281fcd2-b449-4b33-8859-8ee366eede91",
+      "article_id": "41447adf-185f-4a10-a0e9-16febe7b6168",
+      "topic_id": "e6f9f02d-8550-495d-bec6-9455b653849e",
+      "text": "What is the 'S-B-B-K' mnemonic for the bahay kubo spatial sequence, and what does each letter represent?",
+      "options": [
+        {
+          "id": "A",
+          "text": "S = Sahig (floor), B = Batangan (joists), B = Bulwagan (main hall), K = Kusina (kitchen) — the structural layers from top to bottom"
+        },
+        {
+          "id": "B",
+          "text": "S = Silong (under the house), B = Bulwagan (main hall), S = Silid (bedroom), B = Batalan (back porch), K = Kusina (kitchen) — the spatial sequence from front to back"
+        },
+        {
+          "id": "C",
+          "text": "S = Silid (bedroom), B = Batalan (service area), B = Bulwagan (living area), K = Kusina (kitchen) — the spatial sequence from top to bottom"
+        },
+        {
+          "id": "D",
+          "text": "S = Sahig (floor), B = Bubong (roof), K = Kusina (kitchen), B = Bulwagan (hall) — the sequence of construction from foundation to completion"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The S-B-B-K mnemonic describes the spatial organization of the bahay kubo as you move from front to back: (1) Silong — the open space under the elevated floor, visible from the entrance; (2) Bulwagan — the main open living hall at the center; (3) Silid — the partitioned sleeping area; (4) Batalan — the back porch/service area for washing and water storage (with tapayan/water jars); (5) Kusina — the kitchen, often in a separate extension with an abuhan (clay stove). Note the doubled B: Bulwagan and Batalan, both starting with B.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.35,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:47:15.972204+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "26c0aefe-44d4-4d35-a55c-7ee70c379f55",
+      "article_id": "41447adf-185f-4a10-a0e9-16febe7b6168",
+      "topic_id": "e6f9f02d-8550-495d-bec6-9455b653849e",
+      "text": "What is 'pagtatali' in bahay kubo construction, and why is it the primary structural joinery technique?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A mortise-and-tenon joint using iron bolts for maximum rigidity under wind loads and lateral seismic forces during typhoon season"
+        },
+        {
+          "id": "B",
+          "text": "Lashing with rattan, abaca fiber, or bamboo strips wrapped around joints — providing flexible connections that absorb seismic and typhoon forces without catastrophic failure"
+        },
+        {
+          "id": "C",
+          "text": "A concrete post-tensioning system used to strengthen bamboo structural members against lateral forces and vertical gravity loads"
+        },
+        {
+          "id": "D",
+          "text": "A welded steel gusset plate connection used in post-colonial bahay kubo construction for enhanced structural rigidity and durability"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Pagtatali (lashing) is the defining structural technique of pre-colonial bahay kubo construction. Rattan, abaca fiber, or bamboo strips are wrapped tightly around joints between haligi (posts), batangan (joists), and other members. Unlike rigid metal connections, lashing allows the joint to flex under earthquake or typhoon loading — the connection can stretch and return to shape rather than snapping. This is why traditional bahay kubo structures have survived centuries of Philippine typhoons and earthquakes without catastrophic collapse. Metal fasteners (nails, bolts) only appeared with Spanish and later American colonial influence.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.35,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:47:15.972204+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "fbc2ca67-a975-462b-ac7f-49632898e25d",
+      "article_id": "41447adf-185f-4a10-a0e9-16febe7b6168",
+      "topic_id": "e6f9f02d-8550-495d-bec6-9455b653849e",
+      "text": "The 'HALIGI ng BAHAY' mnemonic encodes the structural path of a bahay kubo. Which sequence is correct?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Haligi → Batangan → Sahig → Dingding → Bubong (posts → joists → floor → walls → roof)"
+        },
+        {
+          "id": "B",
+          "text": "Haligi → Sahig → Batangan → Bulwagan → Kusina (posts → floor → joists → hall → kitchen)"
+        },
+        {
+          "id": "C",
+          "text": "Haligi → Sahig → Dingding → Batangan → Bubong (posts → floor → walls → joists → roof)"
+        },
+        {
+          "id": "D",
+          "text": "Haligi → Dingding → Batangan → Sahig → Bubong (posts → walls → joists → floor → roof)"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The HALIGI ng BAHAY mnemonic encodes the vertical structural path of the bahay kubo from bottom to top: Haligi (main posts driven into ground or resting on stones/tukod) carry the Batangan (horizontal floor joists/girders), which carry the Sahig (split bamboo floor slats). The Dingding (woven bamboo/nipa walls) enclose the space, and the Bubong (steeply pitched nipa/cogon/buri thatch roof) provides weather protection. The chant 'Haligi, Batangan, Sahig, Dingding, Bubong' makes this sequence memorable. Critically, the load travels downward through this path: roof → walls → floor → joists → posts → ground.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:47:15.972204+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "cda7c211-afa1-4cc4-9cc9-0730eb85277f",
+      "article_id": "41447adf-185f-4a10-a0e9-16febe7b6168",
+      "topic_id": "e6f9f02d-8550-495d-bec6-9455b653849e",
+      "text": "Which joinery technique uses multiple bamboo culms lashed together to increase the structural capacity of posts and beams beyond single-culm limits?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mortise-and-tenon joinery"
+        },
+        {
+          "id": "B",
+          "text": "Bundled bamboo construction"
+        },
+        {
+          "id": "C",
+          "text": "Wedge and peg joints"
+        },
+        {
+          "id": "D",
+          "text": "Lime-plastered adobe masonry"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Bundled bamboo is one of four joinery/construction techniques in bahay kubo construction: (1) Pagtatali (lashing) — rattan/abaca strips around joints; primary technique for flexibility; (2) Mortise-and-tenon — interlocking hardwood carved joints for compression strength; (3) Wedge/peg joints — bamboo or hardwood pegs through drilled holes; shear resistance with flexibility; (4) Bundled bamboo — multiple culms grouped and lashed at joints to create composite members thicker and stronger than any single culm. Bundled bamboo is particularly used for haligi (main posts) and batangan (main joists) where single culms would be insufficient in larger structures.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.45,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:47:15.972204+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "13eb4e90-f772-49ba-9727-e51abdd931ec",
+      "article_id": "81af99b9-3a14-4037-84c0-09dbd913153a",
+      "topic_id": "675871c4-938d-4d0f-9963-bb5727f7d43f",
+      "text": "How does contemporary critical regionalism's integration of 'digital fabrication rooted in regional craft traditions' and 'sustainable material strategies' extend Frampton's original 1983 framework?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Because sustainability is unrelated to critical regionalism's principles, which focus solely on cultural and historical context without regard to environmental concerns"
+        },
+        {
+          "id": "b",
+          "text": "Because digital fabrication is incompatible with regional traditions, which rely exclusively on manual craftsmanship and traditional building methods"
+        },
+        {
+          "id": "c",
+          "text": "Because contemporary architects have abandoned Frampton's original principles entirely, opting instead for a globalized approach that disregards local specificity and cultural engagement"
+        },
+        {
+          "id": "d",
+          "text": "Because digital tools and sustainability concerns were irrelevant in 1983, contemporary critical regionalism expands the framework while maintaining its core commitment to place specificity, cultural engagement, and resistance to placeless globalization"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Sustainability is explicitly integrated as part of contemporary critical regionalism.",
+        "b": "Digital fabrication can enhance regional traditions without erasing them.",
+        "c": "Expansion and refinement, not abandonment of principles.",
+        "correct": "Contemporary critical regionalism has expanded beyond Frampton's original framework to encompass digital fabrication rooted in regional craft traditions, sustainable material strategies responsive to local ecology...The framework resists both nostalgic regionalism...and...parochialism that refuses necessary global engagement.' This shows evolution while maintaining foundational commitments.",
+        "takeaway": "Contemporary critical regionalism has expanded beyond Frampton's original framework to encompass digital fabrication rooted in regional craft traditions, sustainable material strategies responsive to local ecology...The framework resists both nostalgic regionalism...and...parochialism that refuses necessary global engagement.' This shows evolution while maintaining foundational commitments."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-005-09-011",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.31954+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "1c13276b-f0c5-43d3-9363-31e1af71baed",
+      "article_id": "81af99b9-3a14-4037-84c0-09dbd913153a",
+      "topic_id": "675871c4-938d-4d0f-9963-bb5727f7d43f",
+      "text": "Why does Doshi's inclusion of traditional Indian courtyard planning in Aranya Low-Cost Housing represent critical regionalism rather than romantic preservation or nostalgic revival?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Because Doshi rejected all modernist principles in favor of pure tradition, emphasizing historical authenticity over contemporary relevance"
+        },
+        {
+          "id": "b",
+          "text": "Because courtyards are beautiful and historically significant, serving as a cultural symbol of Indian architectural heritage"
+        },
+        {
+          "id": "c",
+          "text": "Because courtyards remain valid contemporary solutions for Indian climate, social structure, and housing practices; Doshi engages them critically as present-day resources within a modernist clarity framework"
+        },
+        {
+          "id": "d",
+          "text": "Because Doshi eliminated all contemporary technology, focusing solely on traditional construction methods and materials"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Doshi 'combined modernist clarity and rational planning' with regional specificity; he did not reject modernism.",
+        "b": "While aesthetically and historically significant, this misses the functional-contemporary logic of critical regionalism.",
+        "d": "Doshi embraced contemporary materials and planning; this contradicts description.",
+        "correct": "Doshi's approach 'combines traditional wisdom with contemporary understanding' and that 'courtyards' possess 'present-day validity.' critical regionalism is 'not nostalgic' but rather 'contemporary architecture that happens to engage traditional spatial patterns because they possess present-day validity.' This distinguishes engagement from preservation.",
+        "takeaway": "Doshi's approach 'combines traditional wisdom with contemporary understanding' and that 'courtyards' possess 'present-day validity.' critical regionalism is 'not nostalgic' but rather 'contemporary architecture that happens to engage traditional spatial patterns because they possess present-day validity.' This distinguishes engagement from preservation."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-005-09-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.31954+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "74ddc566-9777-4776-be72-3634382ac4fc",
+      "article_id": "81af99b9-3a14-4037-84c0-09dbd913153a",
+      "topic_id": "675871c4-938d-4d0f-9963-bb5727f7d43f",
+      "text": "Which architect's Aranya Low-Cost Housing in Indore (1989) exemplifies critical regionalism through courtyard traditions, incremental expansion, and locally-responsive planning?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Balkrishna Doshi"
+        },
+        {
+          "id": "b",
+          "text": "Le Corbusier, known for his modernist urban planning principles"
+        },
+        {
+          "id": "c",
+          "text": "Charles Correa, who often incorporated traditional Indian elements"
+        },
+        {
+          "id": "d",
+          "text": "Hassan Fathy, famous for his use of vernacular architecture in Egypt"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Le Corbusier's modernism is precisely what critical regionalism critiques.",
+        "c": "Charles Correa developed critical regionalism but Doshi's Aranya is more explicitly discussed.",
+        "d": "Hassan Fathy's mud-brick architecture is important but predates Frampton's formulation.",
+        "correct": "Balkrishna Doshi's Aranya Low-Cost Housing as 'demonstrat[ing] critical regionalism's synthesis' through 'courtyards derived from traditional Indian dwelling patterns, semi-public spaces that generate social interaction characteristic of Indian urban life,' while allowing 'residents to expand and modify their units incrementally' in response to local economic realities.",
+        "takeaway": "Balkrishna Doshi's Aranya Low-Cost Housing as 'demonstrat[ing] critical regionalism's synthesis' through 'courtyards derived from traditional Indian dwelling patterns, semi-public spaces that generate social interaction characteristic of Indian urban life,' while allowing 'residents to expand and modify their units incrementally' in response to local economic realities."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "ATT"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-005-09-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.31954+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "0d4cb365-3f67-4f08-8fa3-a3779f9fd698",
+      "article_id": "81af99b9-3a14-4037-84c0-09dbd913153a",
+      "topic_id": "675871c4-938d-4d0f-9963-bb5727f7d43f",
+      "text": "What does Frampton call 'the resistance of place form'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Local political opposition to new building projects, often resulting in delays and increased costs"
+        },
+        {
+          "id": "b",
+          "text": "The strength of traditional architectural styles, which resist change and maintain cultural identity"
+        },
+        {
+          "id": "c",
+          "text": "Structural resistance of building materials to load and stress, ensuring safety and durability"
+        },
+        {
+          "id": "d",
+          "text": "The specific constraints and possibilities of geographic, climatic, and material conditions that should actively inform design rather than be overcome through abstract principles"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Political resistance is not what Frampton discusses.",
+        "b": "While traditional styles may engage place, Frampton's concept is about active engagement with physical-geographic realities.",
+        "c": "Structural resistance is an engineering property, not Frampton's theoretical concept.",
+        "correct": "The Key Terms define 'Resistance of Place Form' as 'Frampton's concept that place possesses specific constraints and possibilities (topography, climate, available materials) that should actively inform design rather than be overcome through abstract principles.' This reframes constraints as creative resources.",
+        "takeaway": "The Key Terms define 'Resistance of Place Form' as 'Frampton's concept that place possesses specific constraints and possibilities (topography, climate, available materials) that should actively inform design rather than be overcome through abstract principles.' This reframes constraints as creative resources."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-005-09-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.31954+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "e9977585-95b1-49dc-88bf-136ceaabb616",
+      "article_id": "81af99b9-3a14-4037-84c0-09dbd913153a",
+      "topic_id": "675871c4-938d-4d0f-9963-bb5727f7d43f",
+      "text": "In which year did Kenneth Frampton publish his seminal essay 'Towards a Critical Regionalism: Six Points for an Architecture of Resistance'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1983"
+        },
+        {
+          "id": "b",
+          "text": "1990"
+        },
+        {
+          "id": "c",
+          "text": "1972"
+        },
+        {
+          "id": "d",
+          "text": "1966"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "1990 is after Frampton's foundational essay.",
+        "c": "1972 is when Learning from Las Vegas was published.",
+        "d": "1966 is when Venturi's Complexity and Contradiction appeared.",
+        "correct": "architectural theory explicitly identifies the essay as published in 1983 in Hal Foster's anthology The Anti-Aesthetic, establishing critical regionalism as a response to both modernism and postmodernism.",
+        "takeaway": "architectural theory explicitly identifies the essay as published in 1983 in Hal Foster's anthology The Anti-Aesthetic, establishing critical regionalism as a response to both modernism and postmodernism."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "ATT"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-005-09-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.31954+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "eb47156c-6bfc-47b1-a40e-1b96c018c684",
+      "article_id": "81af99b9-3a14-4037-84c0-09dbd913153a",
+      "topic_id": "675871c4-938d-4d0f-9963-bb5727f7d43f",
+      "text": "Which of the following best defines 'critical regionalism' as developed by Kenneth Frampton?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The International Style applied globally without regional modification, leading to a homogenized architectural landscape"
+        },
+        {
+          "id": "b",
+          "text": "Romantic revival of traditional vernacular architecture without contemporary innovation, focusing solely on historical aesthetics"
+        },
+        {
+          "id": "c",
+          "text": "Architecture that engages place-specific conditions (geography, climate, materials, culture) while maintaining critical distance from both modernist universalism and romantic traditionalism"
+        },
+        {
+          "id": "d",
+          "text": "Postmodern pastiche using superficial historical references, often resulting in a lack of genuine cultural engagement"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The International Style is precisely what critical regionalism critiques as placeless.",
+        "b": "Critical regionalism explicitly critiques romantic traditionalism as insufficiently critical.",
+        "d": "Frampton explicitly critiques postmodernism's superficial historicism.",
+        "correct": "critical regionalism as proposing 'that architecture should respect and engage specific geographic, climatic, and cultural conditions...The framework is critical because it refuses simple traditionalism or nationalist essentialism; it is regional because it insists that architecture must respond to particular places.' This avoids both modernist abstraction and romantic nostalgia.",
+        "takeaway": "critical regionalism as proposing 'that architecture should respect and engage specific geographic, climatic, and cultural conditions...The framework is critical because it refuses simple traditionalism or nationalist essentialism; it is regional because it insists that architecture must respond to particular places.' This avoids both modernist abstraction and romantic nostalgia."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-005-09-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.31954+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "facf8f6f-2b62-4293-86b0-860a776f9653",
+      "article_id": "81af99b9-3a14-4037-84c0-09dbd913153a",
+      "topic_id": "675871c4-938d-4d0f-9963-bb5727f7d43f",
+      "text": "How does Hassan Fathy's development of mud-brick construction systems responsive to Egyptian climate and economy exemplify critical regionalism's principles despite predating Frampton's theoretical formulation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Because Fathy rejected all modernist principles, which is a common but incorrect assumption"
+        },
+        {
+          "id": "b",
+          "text": "Because Fathy used traditional materials exclusively without any modern innovation, a claim that overlooks his innovative approaches"
+        },
+        {
+          "id": "c",
+          "text": "Because mud-brick is the only legitimate construction material, a statement that ignores the diversity of materials used in architecture"
+        },
+        {
+          "id": "d",
+          "text": "Because Fathy combined vernacular wisdom about thermal dynamics and local materials with contemporary understanding of environmental performance, engaging tradition as active resource rather than nostalgic revival"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Fathy engaged modernist principles but redirected them regionally.",
+        "b": "Fathy's integration of tradition with contemporary understanding, not exclusive traditionalism.",
+        "c": "The point is not material supremacy but appropriate response to specific conditions.",
+        "correct": "Rather than importing concrete and steel modernism unsuitable to Egyptian climate and economy, Fathy developed construction systems using mud-brick...Yet Fathy was not a romantic regionalist; his work combined traditional wisdom with contemporary understanding of thermal dynamics and human factors.' This shows substantive engagement, not romantic nostalgia—the essence of critical regionalism.",
+        "takeaway": "Rather than importing concrete and steel modernism unsuitable to Egyptian climate and economy, Fathy developed construction systems using mud-brick...Yet Fathy was not a romantic regionalist; his work combined traditional wisdom with contemporary understanding of thermal dynamics and human factors.' This shows substantive engagement, not romantic nostalgia—the essence of critical regionalism."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [
+        "PH"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-005-09-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.31954+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "5baaab42-9918-4909-ae15-0068a8a9356d",
+      "article_id": "0c236406-a3aa-46b6-9833-b2aa88a6e131",
+      "topic_id": "a5cded23-a755-49be-9600-1663333f7724",
+      "text": "What is the primary mechanism by which vibration isolation reduces structure-borne noise transmission from rotating equipment to occupied spaces below?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) Absorbing vibration energy in the isolator material, which is effective for high-frequency vibrations but less so for low-frequency ones"
+        },
+        {
+          "id": "b",
+          "text": "B) Raising the equipment's natural frequency above the source vibration frequency, which can be challenging to achieve in practice"
+        },
+        {
+          "id": "c",
+          "text": "C) Lowering the equipment's natural frequency well below the source vibration frequency to provide attenuation above it"
+        },
+        {
+          "id": "d",
+          "text": "D) Damping all vibration frequencies equally across the spectrum, which is rarely possible due to material limitations"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While some energy is absorbed by the isolator material (damping), this is secondary; the primary mechanism is frequency separation (tuning). Pure energy absorption would be inefficient.",
+        "b": "Raising the natural frequency would bring it closer to equipment vibration, reducing isolation effectiveness and potentially creating resonance amplification.",
+        "d": "Isolators are designed for selective frequency isolation, not flat damping; equal attenuation across all frequencies is neither achievable nor desired.",
+        "correct": "Vibration isolation works by setting the system natural frequency (f_n) well below the equipment vibration frequency (f_e). When f_e >> f_n (typically f_e > 2.5 × f_n), attenuation ∝ (f_e/f_n)². At 2–5 Hz natural frequency with equipment vibration at 30+ Hz, this produces 20–30 dB reduction (CIBSE Guide E; ASHRAE).",
+        "takeaway": "Effective vibration isolation requires frequency separation: f_n << f_e, not mass increase or frequency matching."
+      },
+      "explanation": null,
+      "code_citation": "ASHRAE Handbook—Fundamentals (2021), Chapter 43 (Vibration Isolation); CIBSE Guide E (2018)",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-006-07-012",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:01.938652+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "4c01e366-2b98-4197-b9af-c1f2acd0e89c",
+      "article_id": "0c236406-a3aa-46b6-9833-b2aa88a6e131",
+      "topic_id": "a5cded23-a755-49be-9600-1663333f7724",
+      "text": "In the context of noise control for equipment rooms, what is the definition of NC (Noise Criteria) and how does it differ from overall dB(A) measurement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) NC is a single overall sound level rating; dB(A) is a spectral measurement across octave bands, which provides a more detailed analysis of sound frequencies"
+        },
+        {
+          "id": "b",
+          "text": "B) NC is a spectral rating across octave bands (63 Hz–8 kHz) accounting for human perception and task-specific performance; dB(A) is an overall energy-weighted single number (A-weighting per ISO 226)"
+        },
+        {
+          "id": "c",
+          "text": "C) NC and dB(A) are identical metrics; different names for the same measurement, often used interchangeably in industry standards"
+        },
+        {
+          "id": "d",
+          "text": "D) NC is used outdoors; dB(A) is used indoors only, reflecting different environmental considerations for sound measurement"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This reverses the definitions; NC is spectral, dB(A) is overall single-number.",
+        "c": "While both metrics can be measured simultaneously, NC and dB(A) capture different aspects of the acoustic environment. NC 30 might correspond to dB(A) 40–45 depending on spectral content.",
+        "d": "Both metrics apply to indoor and outdoor environments. NC is typically used for enclosed spaces; dB(A) is the legal standard for environmental/property boundary compliance (DENR DAO 2000-81).",
+        "correct": "NC (ANSI/ASA S12.2-2008) is a spectral criterion providing acceptable sound levels across 11 octave bands (63 Hz–8 kHz), designed to correlate with speech intelligibility and task performance in specific room types. dB(A) is an overall sound pressure level weighted by the A-weighting curve (ISO 226), reducing low-frequency sensitivity. A design can meet NC 30 in one space and dB(A) 45 in another; NC captures spectral balance (avoiding low-frequency dominance), while dB(A) represents overall energy. ASHRAE design typically specifies both: NC for spectral compliance in occupied spaces, dB(A) for overall budget in mechanical areas.",
+        "takeaway": "Design specifications must address both NC (spectral quality) and dB(A) (overall energy); meeting one does not guarantee the other, particularly if low-frequency energy dominates."
+      },
+      "explanation": null,
+      "code_citation": "ANSI/ASA S12.2-2008; ASHRAE Handbook—Fundamentals (2021), Chapter 8",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-006-07-020",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    }
+  ]
+}

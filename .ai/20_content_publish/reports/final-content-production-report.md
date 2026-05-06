@@ -308,3 +308,18 @@ Status: PUBLISHED_VERIFIED.
 - Backup: `.ai/20_content_publish/backups/questions-backup-question-batch-021-20260506T150004Z.json`.
 
 Running total committed after Batch 021: 627 published/recovered verified questions.
+
+## Question Batch 022 Published — 2026-05-06T15:03:43.400105+00:00
+
+Status: PUBLISHED_VERIFIED.
+
+- Selected: 50.
+- Local verifier: 50/50 pass.
+- Independent safety review: PASS, blockers none.
+- Remote apply: 50/50 by exact question_id filter.
+- Remote verification: 50/50.
+- Answer-key changes: 0.
+- Option changes: 0.
+- Backup: `.ai/20_content_publish/backups/questions-backup-question-batch-022-20260506T150255Z.json`.
+
+Running total committed after Batch 022: 677 published/recovered verified questions.

@@ -1,0 +1,10 @@
+{
+  "question_id": "028e920a-269e-4453-994f-b5027ead68f8",
+  "baseline_hash": "sha256:9d65d8c332fe7a18e1293cdcb0355dde3c780875c417f8927412f10ed784c23c",
+  "reason": "Strict explanation backfill from existing specific rationale; answer key and options unchanged.",
+  "approved_by": "hermes-question-remediation-autopilot",
+  "approved_at": "2026-05-06T15:01:31.510Z",
+  "proposed": {
+    "explanation": "Enrollment of 8–10 fingers reduces false rejection rate (FRR) but does not eliminate false acceptance. Biometric systems always have non-zero FAR due to template matching variance and spoofing risk (fake fingerprints). FAR of >5% would be unacceptable for high-security facilities. FRR of 2–5% is typical for fingerprint systems, causing legitimate users to be rejected occasionally. FAR is not exponentially sensitive to database size under proper algorithm implementation. NIST benchmarks control for database size, showing consistent FAR across 1,000–10,000 template databases. Fingerprint readers achieve FAR of 0.01–0.1% (1 false acceptance per 1,000–10,000 attempts) at industry-standard security levels. For high-security areas (cash handling, server rooms), this residual error rate requires secondary authentication such as manual visual verification by a security officer or a PIN code to ensure no unauthorized access occurs. High-security facilities should implement multi-factor authentication combining biometrics (fingerprint) with secondary factors (PIN, guard verification) to mitigate the residual FAR risk."
+  }
+}

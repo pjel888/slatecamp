@@ -1,0 +1,10 @@
+{
+  "question_id": "4c01e366-2b98-4197-b9af-c1f2acd0e89c",
+  "baseline_hash": "sha256:1b48f682a10bf7bbfd7e1dfda4a7e269a2f17cfffef3b30017945c35b5bd0329",
+  "reason": "Strict explanation backfill from existing specific rationale; answer key and options unchanged.",
+  "approved_by": "hermes-question-remediation-autopilot",
+  "approved_at": "2026-05-06T15:01:31.513Z",
+  "proposed": {
+    "explanation": "This reverses the definitions; NC is spectral, dB(A) is overall single-number. While both metrics can be measured simultaneously, NC and dB(A) capture different aspects of the acoustic environment. NC 30 might correspond to dB(A) 40–45 depending on spectral content. Both metrics apply to indoor and outdoor environments. NC is typically used for enclosed spaces; dB(A) is the legal standard for environmental/property boundary compliance (DENR DAO 2000-81). NC (ANSI/ASA S12.2-2008) is a spectral criterion providing acceptable sound levels across 11 octave bands (63 Hz–8 kHz), designed to correlate with speech intelligibility and task performance in specific room types. dB(A) is an overall sound pressure level weighted by the A-weighting curve (ISO 226), reducing low-frequency sensitivity. A design can meet NC 30 in one space and dB(A) 45 in another; NC captures spectral balance (avoiding low-frequency dominance), while dB(A) represents overall energy. ASHRAE design typically specifies both: NC for spectral compliance in occupied spaces, dB(A) for overall budget in mechanical areas. Design specifications must address both NC (spectral quality) and dB(A) (overall energy); meeting one does not guarantee the other, particularly if low-frequency energy dominates."
+  }
+}
