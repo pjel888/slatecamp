@@ -1,3 +1,5 @@
 # Final Quarantine Register
 
-See `.ai/20_content_publish/quarantine-final.generated.json` and question batch quarantine files.
+- Articles held/quarantined: 564 broad-pass edits pending reconciliation.
+- Questions quarantined: 3478 source/review risk.
+- See `.ai/20_content_publish/quarantine-final.generated.json`.

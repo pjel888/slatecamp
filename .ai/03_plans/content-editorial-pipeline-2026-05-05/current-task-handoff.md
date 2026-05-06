@@ -1,3 +1,3 @@
 # Current Task Handoff
 
-Content production autopilot reached local-output-ready state. Remote publishing did not run because Supabase credentials are missing. Continue from `.ai/20_content_publish/reports/final-content-production-report.md`.
+First safe Supabase content publish batch completed. Three article rows were backed up, exact-ID patched, and remote hash verified. Continue with next 10-article independently reviewed source-backed batch. Do not publish broad-pass held edits or quarantined questions.

@@ -1,3 +1,3 @@
 # Final Published Questions
 
-None. No real question edit payloads were publish-ready.
+None. No validated real question edit payloads existed.
