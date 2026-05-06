@@ -1,20 +1,17 @@
 # Final Content Production Report
 
-Updated: 2026-05-06T10:40:43.168710Z
+Updated: 2026-05-06T10:41:25.195217Z
 
-## Current published totals
+## Totals
 
 - Articles remote-verified through safe path: 562
+- Articles quarantined: 5
 - Questions remote-verified through safe path: 0
 
-## Latest milestone
+## Article state
 
-Batch 014 published and verified 28 articles; 5 code/test smoke artifact rows quarantined.
+All article rows selected by the batch runner are either published/verified or quarantined as code/test smoke artifact rows.
 
 ## Validation
 
-- `bun run type-check`: pass
-- `bun run lint`: pass, 0 errors, 10 warnings
-- `bun run content-audit:validate`: pass, blockers=0 warnings=0
-- `git diff --check`: pass
-- Scoped secret scan: no real matches
+Latest publish validation passed for Batch 014: type-check pass, lint 0 errors / 10 warnings, content-audit validate blockers=0 warnings=0, git diff --check pass, scoped secret scan clean.
