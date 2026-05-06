@@ -1,3 +1,5 @@
 # Final Published Questions
 
-None. No validated real question edit payloads existed.
+Total: 0
+
+No real validated question edit payloads have been published.

@@ -10,9 +10,6 @@ PUBLISHED={
  'ee1f8beb-e236-4831-a0a8-1ddce447a3b8','9085e0d8-3498-4d3b-b991-46e54d94bde0','859b1a7f-8aba-473d-8c28-f9aaa39af11d',
  '85bcd328-436d-49ba-9d37-7b202d0d38d4','93009368-9041-46e0-b93b-8786100311be','a865c6b2-8c25-404e-bb0c-08d374d374a5','cb947ab1-7737-4bde-8a47-606b5d305ed6','76b6cfd5-d416-4c6d-8a90-76a2d2b91774','5f620c42-ef55-4c0e-824b-49f0ff9d47e6','5aeda107-bc0d-4d0d-ab40-44e13fd95478','6d5e0e55-215a-4806-a679-dac7aea5a99b','5a8ca807-31d5-4a32-933a-c6b83517c6de','9eb0b48e-110e-4c75-8a0c-4f83063001cf'
 }
-for p in (PUB/'article_updates').glob('batch-*.json'):
- try: PUBLISHED.add(json.load(open(p))['article_id'])
- except Exception: pass
 for p in (PUB/'reports'/'apply-batches').glob('batch-*-remote-verification.json'):
  try:
   data=json.load(open(p))
@@ -30,7 +27,7 @@ def walk(x,out):
 def title(md,slug):
  m=re.search(r'^#\s+(.+)$',md,re.M); return m.group(1).strip() if m else slug.replace('-',' ').title()
 def quick(title):
- return f'''\n\n## Board Exam Quick Check\n\nBefore memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.\n\n**Common mistake:** treating a familiar keyword in **{title}** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.\n\n**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?\n'''
+ return f'''\n\n## Board Exam Quick Check\n\nBefore memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.\n\n**Common mistake:** treating a familiar keyword in **{title}** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.\n'''
 def run(cmd,log=None,check=True):
  r=subprocess.run(cmd,shell=True,cwd=ROOT,text=True,capture_output=True)
  if log: Path(log).write_text((r.stdout or '')+(r.stderr or ''))
@@ -58,7 +55,15 @@ def main():
  changes=[]; quarantined=[]
  for it in sel:
   d=ROOT/it['article_dir']; norm=d/'normalized.md'; old=norm.read_text()
-  new=old if '## Board Exam Quick Check' in old else old[:(re.search(r'(^# .+\n)',old).end() if re.search(r'(^# .+\n)',old) else 0)] + quick(title(old,it.get('slug','article'))) + old[(re.search(r'(^# .+\n)',old).end() if re.search(r'(^# .+\n)',old) else 0):]
+  if '## Board Exam Quick Check' in old:
+   new=old
+  else:
+   m=re.search(r'(^## Learning Goal\n\[SLATECAMP_UI_BLOCK:[\s\S]*?\[/SLATECAMP_UI_BLOCK\]\n)', old, re.M)
+   if m:
+    pos=m.end()
+   else:
+    h=re.search(r'(^# .+\n)',old,re.M); pos=h.end() if h else 0
+   new=old[:pos] + quick(title(old,it.get('slug','article'))) + old[pos:]
   if old.count('[SLATECAMP_UI_BLOCK:')!=new.count('[SLATECAMP_UI_BLOCK:'):
    quarantined.append({'article_id':it['article_id'],'slug':it.get('slug'),'reason':'placeholder_count_changed'}); continue
   if new!=old:

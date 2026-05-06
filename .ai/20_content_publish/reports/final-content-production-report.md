@@ -1,24 +1,24 @@
 # Final Content Production Report
 
-Status: BATCH_009_PUBLISHED_AND_VERIFIED_CONTINUING
-Generated: 2026-05-06T09:57:29.940042+00:00
+Updated: 2026-05-06T10:23:00.787779Z
 
-Safe-path published so far:
-- Articles: 343
-- Questions: 0
+## Current published totals
 
-Latest milestone:
-- Batch 009 published 50 articles.
-- Remote verification passed for 50/50 rows.
-- No rollback needed.
+- Articles remote-verified through safe path: 384
+- Questions remote-verified through safe path: 0
 
-Validation:
-- content-audit:validate passed, 567 bundles, blockers=0, warnings=0.
-- type-check passed.
-- lint passed with 0 errors and 10 existing warnings.
-- git diff --check passed at validation time.
-- scoped secret scan found 0 real matches.
+## Latest milestone
 
-Next required continuation:
-- Continue cluster batches up to 50 articles each.
-- Publish question edits only if independently source-validated payloads are created.
+Batch 010 published and verified 41 articles. Nine component-risk rows remained quarantined.
+
+## Validation
+
+- `bun run type-check`: pass
+- `bun run lint`: pass, 0 errors, 10 warnings
+- `bun run content-audit:validate`: pass, blockers=0 warnings=0
+- `git diff --check`: pass
+- Scoped secret scan: no real matches
+
+## Remote verification
+
+Remote verification reports are stored under `.ai/20_content_publish/reports/apply-batches/`.
