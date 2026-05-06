@@ -125,3 +125,12 @@ Reviewer flagged RadioGroup labeling. Fixed by using stable ids and `label htmlF
 ## Batch 11: PortalSidebar search primitive
 Date/time: 2026-05-06T19:47:52
 Independent review found no blocker in the component migration. Recommendations addressed: forced desktop story width and made filtered story input update less flaky.
+
+## PR finalization reviews
+Date/time: 2026-05-06T20:06:01
+
+### OpenAI dependency/type-check blocker
+Independent reviewer approved adding the real `openai` dependency as the minimal correct fix. Evidence: `scripts/normalize-distractors.ts` imports and uses the SDK at runtime; `bun run type-check` passes after dependency installation; no type-check weakening or secret exposure.
+
+### Dialog E2E optional gate
+Independent reviewer approved documenting `bun run test:e2e:dialog` as external/baseline: no diff in AlertDialog/Dialog/test spec/test-data page; 7/8 pass and the only failure is the unchanged keyboard focus-trap assertion.
