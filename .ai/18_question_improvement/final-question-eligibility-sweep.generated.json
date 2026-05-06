@@ -1,0 +1,38 @@
+{
+  "generated_at": "2026-05-06T16:24:40.790264+00:00",
+  "completion_status": "COMPLETE_ALL_ELIGIBLE_QUESTIONS_RESOLVED",
+  "last_completed_batch": "question-batch-034",
+  "last_zero_ready_batches": [
+    "question-batch-035",
+    "question-batch-036",
+    "question-batch-037"
+  ],
+  "published_or_recovered_verified_total": 1269,
+  "answer_key_changes_published": 0,
+  "option_changes_published": 0,
+  "remote_verification_failures": 0,
+  "remaining_selector_exclusions": {
+    "already_published_or_quarantined": 1427,
+    "item_level_official_source_gap": 2784,
+    "generic_meta_distractor_leakage": 1105,
+    "existing_meaningful_explanation": 1530,
+    "insufficient_linked_article_support": 77,
+    "option_length_giveaway_risk": 211,
+    "near_duplicate_option_ambiguity": 16,
+    "duplicate_option_text": 4,
+    "correct_answer_not_in_options": 1,
+    "missing_correct_option_id": 1
+  },
+  "classification": {
+    "published": 1427,
+    "verified_noop": 0,
+    "quarantined_missing_source": 77,
+    "quarantined_answer_key_risk": 2,
+    "quarantined_ambiguity": 16,
+    "quarantined_generic_meta_distractor": 1105,
+    "quarantined_existing_explanation_overwrite_risk": 1530,
+    "quarantined_item_level_official_source_gap": 2784,
+    "quarantined_duplicate_or_repeated_cluster": 4,
+    "quarantined_no_safe_edit_available": 211
+  }
+}

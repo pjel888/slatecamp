@@ -1,10 +1,10 @@
 # Question Remediation Selector Report
 
 Selector: strict-v3-item-level-official-source
-Selected: 42
+Selected: 0
 
 Excluded by reason:
-- already_published_or_quarantined: 1385
+- already_published_or_quarantined: 1427
 - item_level_official_source_gap: 2784
 - generic_meta_distractor_leakage: 1105
 - existing_meaningful_explanation: 1530

@@ -1,23 +1,23 @@
 {
-  "current_batch_number": 35,
+  "current_batch_number": 37,
   "batch_size": 50,
   "total_published_before_run": 1127,
-  "completion_status": "RUNNING",
+  "completion_status": "COMPLETE",
   "last_completed_batch": "question-batch-034",
-  "next_batch_number": 35,
+  "next_batch_number": 37,
   "published_count": 1269,
   "quarantined_count": 0,
   "verified_noop_count": 0,
   "answer_key_changes_published": 0,
   "option_changes_published": 0,
   "remote_verification_failures": 0,
-  "last_commit": "cc5c02f3f",
+  "last_commit": "feb20f393",
   "last_push_status": "PUSHED",
   "last_successful_resume_command": "bun scripts/content-audit/run-question-remediation-ralph-loop.ts --until-complete",
-  "stop_condition": null,
-  "consecutive_zero_publish_batches": 0,
+  "stop_condition": "COMPLETE_ALL_ELIGIBLE_QUESTIONS_RESOLVED_AFTER_ZERO_READY_SWEEP_TRIGGER",
+  "consecutive_zero_publish_batches": 3,
   "started_at": "2026-05-06T16:20:05.281589+00:00",
-  "updated_at": "2026-05-06T16:23:03.999Z",
+  "updated_at": "2026-05-06T16:23:09.546Z",
   "history": [
     {
       "batch": "question-batch-032",
@@ -39,6 +39,24 @@
       "verified": 42,
       "status": "PUBLISHED_VERIFIED",
       "at": "2026-05-06T16:23:03.999Z"
+    },
+    {
+      "batch": "question-batch-035",
+      "ready": 0,
+      "status": "ZERO_READY",
+      "at": "2026-05-06T16:23:08.316Z"
+    },
+    {
+      "batch": "question-batch-036",
+      "ready": 0,
+      "status": "ZERO_READY",
+      "at": "2026-05-06T16:23:08.802Z"
+    },
+    {
+      "batch": "question-batch-037",
+      "ready": 0,
+      "status": "ZERO_READY",
+      "at": "2026-05-06T16:23:09.546Z"
     }
   ]
 }
