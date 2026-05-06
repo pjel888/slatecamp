@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Theo 007 14 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 <Callout>
 Adaptive reuse preserves existing buildings by converting them to new functions, addressing sustainability (avoiding demolition and new construction), heritage conservation, and urban revitalization simultaneously. The LEA tests your understanding that reuse is not merely aesthetics or nostalgic preservation but a **strategic design and material practice** embedded in embodied energy preservation and typological transformation. You must master the theoretical distinction between reuse and conservation, understand life-cycle benefits, and recognize Philippine examples.

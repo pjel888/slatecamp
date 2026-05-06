@@ -1,9 +1,12 @@
 # American Colonial Era
-## Learning Goal
-After reading this article, you should be able to:
 
-Identify the three phases of American colonial architecture in the Philippines — the Neoclassical civic building period (Burnham Plans), the early 20th-century residential period (chalet/bungalow hybrid), and the Art Deco period — recognize key buildings (Manila Hotel, Post Office, Legislative Building) by architect and style; and explain the City Beautiful Movement's influence on Philippine urban planning.
----
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **American Colonial Era** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
+
 
 ## The Real-World Scenario (The Hook)
 

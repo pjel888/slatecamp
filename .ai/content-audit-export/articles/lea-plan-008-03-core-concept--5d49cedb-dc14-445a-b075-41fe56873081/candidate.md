@@ -1,4 +1,11 @@
-## What You Need to Know for the LEA
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Lea Plan 008 03 Core Concept** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
+
 
 ## Learning Goal
 Apply sustainable urban development principles — compact, mixed-use, transit-oriented, walkable neighborhoods — design Complete Streets for Philippine conditions, and align planning with SDG 11 and New Urban Agenda frameworks.

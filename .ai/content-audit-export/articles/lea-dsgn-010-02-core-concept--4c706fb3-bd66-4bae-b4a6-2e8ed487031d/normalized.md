@@ -1,4 +1,11 @@
-## What You Need to Know for the LEA
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Lea Dsgn 010 02 Core Concept** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
+
 
 ## Learning Goal
 Design parking structure geometry — ramp grades (max 1:7), bay widths, aisle dimensions, column spacing, and turning radii — to accommodate vehicle maneuverability, verify accessible stall dimensions (3.7m × 5.0m), and apply structural and operational constraints.

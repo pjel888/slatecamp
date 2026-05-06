@@ -1,15 +1,15 @@
 # Final Content Production Report
 
-Updated: 2026-05-06T10:23:00.787779Z
+Updated: 2026-05-06T10:29:49.521564Z
 
 ## Current published totals
 
-- Articles remote-verified through safe path: 384
+- Articles remote-verified through safe path: 434
 - Questions remote-verified through safe path: 0
 
 ## Latest milestone
 
-Batch 010 published and verified 41 articles. Nine component-risk rows remained quarantined.
+Batch 011 published and verified 50 articles. Batch 010 roundtrip hash repair remains validated.
 
 ## Validation
 
@@ -18,7 +18,3 @@ Batch 010 published and verified 41 articles. Nine component-risk rows remained 
 - `bun run content-audit:validate`: pass, blockers=0 warnings=0
 - `git diff --check`: pass
 - Scoped secret scan: no real matches
-
-## Remote verification
-
-Remote verification reports are stored under `.ai/20_content_publish/reports/apply-batches/`.

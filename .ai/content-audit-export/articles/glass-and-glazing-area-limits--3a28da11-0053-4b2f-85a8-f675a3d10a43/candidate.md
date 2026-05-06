@@ -1,10 +1,12 @@
 # Glass and Glazing Area Limits
-## Learning Goal
 
-After reading this article, you should be able to:
 
-Calculate maximum allowable glass area per occupancy and building type under PD 1096 and NSCP provisions; identify when safety glass (tempered, laminated) is required by location and risk; apply the 20% glazing limit for fire-rated walls; and determine when wire glass is acceptable vs when ceramic glass is required for fire protection.
----
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Glass and Glazing Area Limits** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
+
 
 ## 1. Hook / Opening Scenario
 

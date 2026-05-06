@@ -1,9 +1,12 @@
 # Standard Human Body Dimensions
 
-_LEA Board Exam Review Module — Dual-Context: USA vs. Philippine Standards_
-_Revised for Maximum Rigor | Sources: Del Prado-Lu 2007, NHANES/ANSUR, PD 1096 RIRR 2008, BP 344, Architectural Graphic Standards, Metric Handbook_
 
----
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Standard Human Body Dimensions** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
+
 
 ## Learning Goal
 

@@ -17,7 +17,11 @@ for p in (PUB/'reports'/'apply-batches').glob('batch-*-remote-verification.json'
    if v.get('verified'): PUBLISHED.add(v['article_id'])
  except Exception: pass
 
-def sha(s): return 'sha256:'+hashlib.sha256((s or '').encode()).hexdigest()
+def read_text_raw(path):
+ with open(Path(path), 'r', encoding='utf-8', newline='') as f: return f.read()
+def write_text_raw(path, text):
+ with open(Path(path), 'w', encoding='utf-8', newline='') as f: return f.write(text)
+def sha(s): return 'sha256:'+hashlib.sha256((s or '').encode('utf-8')).hexdigest()
 def walk(x,out):
  if isinstance(x,dict):
   if 'article_id' in x and 'article_dir' in x: out.append(x)
@@ -54,7 +58,7 @@ def main():
   if len(sel)>=size: break
  changes=[]; quarantined=[]
  for it in sel:
-  d=ROOT/it['article_dir']; norm=d/'normalized.md'; old=norm.read_text()
+  d=ROOT/it['article_dir']; norm=d/'normalized.md'; old=read_text_raw(norm)
   if '## Board Exam Quick Check' in old:
    new=old
   else:
@@ -67,13 +71,13 @@ def main():
   if old.count('[SLATECAMP_UI_BLOCK:')!=new.count('[SLATECAMP_UI_BLOCK:'):
    quarantined.append({'article_id':it['article_id'],'slug':it.get('slug'),'reason':'placeholder_count_changed'}); continue
   if new!=old:
-   norm.write_text(new)
+   write_text_raw(norm, new)
    diff=''.join(difflib.unified_diff(old.splitlines(True),new.splitlines(True),fromfile='baseline/normalized.md',tofile='improved/normalized.md'))
    (bdir/'article-diffs'/f"{it['article_id']}.diff").write_text('\n'.join(line.rstrip() for line in diff.splitlines())+'\n')
    cls='structure_improvement'; change='added source-safe board exam quick check only'
   else:
    cls='verify_only'; change='no-op; quick check already present'
-  proposed=norm.read_text(); original=(d/'original.md').read_text()
+  proposed=read_text_raw(norm); original=read_text_raw(d/'original.md')
   changes.append({'article_id':it['article_id'],'slug':it.get('slug'),'article_dir':it['article_dir'],'classification':cls,'baseline_hash':sha(original),'proposed_content_hash':sha(proposed),'proposed_content':proposed,'source_count':it.get('source_count',0),'change':change,'component_validation':'pending'})
  (bdir/'article-jobs.generated.json').write_text(json.dumps(sel,indent=2,ensure_ascii=False))
  (bdir/'article-improvements.generated.json').write_text(json.dumps(changes,indent=2,ensure_ascii=False))
@@ -85,7 +89,7 @@ def main():
   run(f"bun run content-audit:compose -- --article-id {it['article_id']} --overwrite",log=bdir/f"compose-{it['article_id']}.log",check=True)
  # repair hash metadata after compose
  for it in changes:
-  d=ROOT/it['article_dir']; norm=(d/'normalized.md').read_text(); cand=(d/'candidate.md').read_text() if (d/'candidate.md').exists() else ''
+  d=ROOT/it['article_dir']; norm=read_text_raw(d/'normalized.md'); cand=read_text_raw(d/'candidate.md') if (d/'candidate.md').exists() else ''
   nh=sha(norm); ch=sha(cand)
   for fname in ['ui-blocks.json','diff-report.json']:
    p=d/fname

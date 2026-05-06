@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Theo 007 10 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 <Callout>
 Social architecture reorients the design process from top-down professional authority to participatory engagement with end-users and affected communities. The LEA tests whether you understand the theoretical shift: architecture as a **solution imposed by experts** versus architecture as a **process negotiated among stakeholders**. You must master participatory methodologies, equity frameworks, and the distinction between superficial "community input" and genuine power-sharing in design.

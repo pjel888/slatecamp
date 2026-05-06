@@ -1,7 +1,12 @@
 # Rule I General Provisions
 
-**Rule I, Sections 101–106 — PD 1096 (National Building Code of the Philippines) & 2004 Revised IRR**
-**LEA Relevance:** Area 1 (Professional Practice) | Area 3 (Site Planning & Design) | FOUNDATIONAL — IRR Sec. 106 definitions appear across all LEA areas
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Rule I General Provisions** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
+
 
 ## Learning Goal
 

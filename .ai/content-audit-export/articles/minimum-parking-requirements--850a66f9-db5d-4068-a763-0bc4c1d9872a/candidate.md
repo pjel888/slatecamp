@@ -1,9 +1,12 @@
 # Minimum Parking Requirements
 
-**Module Focus: Off-Street Parking Standards, Slot Dimensions & Occupancy Ratios**  
-**Authority: PD 1096 (National Building Code), 2004 Revised IRR, BP 344 (as amended), DPWH DO 059 s. 2019**[file:16][web:2][web:6]
 
----
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Minimum Parking Requirements** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
+
 
 ## Schema Activation: The Basement That Kills the Budget
 

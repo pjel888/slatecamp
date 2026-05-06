@@ -1,8 +1,12 @@
 # Chimneys and Fireplaces
-**Rule XII, Section 1211 | PD 1096 & 2004 Revised IRR**
-**LEA Area 2 — Materials & Construction | Occupancies: Residential, Hospitality, Food Service**
 
----
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Chimneys and Fireplaces** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
+
 
 ## Learning Goal
 
