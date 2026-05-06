@@ -142,7 +142,11 @@
     "content-audit:admin-shadow-schema-validate": "bun scripts/content-audit/validate-admin-audit-shadow-schema.ts",
     "content-audit:admin-local-fixtures": "bun scripts/content-audit/build-admin-audit-local-fixtures.ts",
     "content-audit:admin-local-fixtures-validate": "bun scripts/content-audit/validate-admin-audit-local-fixtures.ts",
-    "content-audit:admin-sync-dry-run": "bun scripts/content-audit/sync-admin-audit-payload-dry-run.ts"
+    "content-audit:admin-sync-dry-run": "bun scripts/content-audit/sync-admin-audit-payload-dry-run.ts",
+    "content-audit:articles-expand": "bun scripts/content-audit/expand-article-improvement-proposals.ts",
+    "content-audit:articles-expand-validate": "bun scripts/content-audit/validate-expanded-article-improvement.ts",
+    "content-audit:questions-expand": "bun scripts/content-audit/expand-question-improvement-proposals.ts",
+    "content-audit:questions-expand-validate": "bun scripts/content-audit/validate-expanded-question-improvement.ts"
   },
   "dependencies": {
     "@base-ui/react": "^1.4.1",
