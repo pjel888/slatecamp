@@ -1,0 +1,10 @@
+{
+  "question_id": "818dfe01-d240-4515-b21d-733538e8714a",
+  "baseline_hash": "sha256:51301d56c8b2aa59a2a17ccf900a0f3116aa43df5467e6ff072631af1b4de3e1",
+  "reason": "Strict explanation backfill from existing specific rationale; answer key and options unchanged.",
+  "approved_by": "hermes-question-remediation-autopilot",
+  "approved_at": "2026-05-06T13:12:38.198Z",
+  "proposed": {
+    "explanation": "Incorrect math or use of a non-standard divisor. This is the NOMINAL BF: (1 × 6 × 200) / 12 = 100 BF. The question asks for actual volume based on the 0.75 x 5.5 dims provided. Gross overestimation. BF = (Actual T × Actual W × Total Linear Feet) / 12 = (0.75 × 5.5 × 200) / 12 = 825 / 12 = 68.75 BF. Linear feet (LF) is simply the total length (L). Use it as the L variable in the BF formula."
+  }
+}

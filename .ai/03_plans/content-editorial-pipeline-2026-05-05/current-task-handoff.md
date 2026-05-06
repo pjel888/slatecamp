@@ -158,3 +158,18 @@ Status: RECOVERED AND READY FOR COMMIT.
 - Note: original pre-apply backup from disrupted run was not present on disk; reconstructed backup captures current remote rows after prior apply, and rollback manifest uses regenerated local baseline explanation values for manual-review rollback only.
 
 Next exact step after commit/push: run `bun scripts/content-audit/select-question-remediation-batch.ts question-batch-012 50`.
+
+## Question Batch 012 Published — 2026-05-06T13:14:38.436415+00:00
+
+Status: PUBLISHED_VERIFIED.
+
+- Selected: 50.
+- Local verifier: 50/50 pass.
+- Independent safety review: PASS, blockers none.
+- Remote apply: 50/50 by exact question_id filter.
+- Remote verification: 50/50.
+- Answer-key changes: 0.
+- Option changes: 0.
+- Backup: `.ai/20_content_publish/backups/questions-backup-question-batch-012-20260506T131408Z.json`.
+
+Next exact step after commit/push: `bun scripts/content-audit/select-question-remediation-batch.ts question-batch-013 50`.
