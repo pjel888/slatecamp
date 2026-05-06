@@ -1,5 +1,14 @@
 # PD 1096 Rule XII Egress and Corridors
 
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **PD 1096 Rule XII Egress and Corridors** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
+
 # EGRESS, CORRIDORS, & OCCUPANT LOADS
 
 ## PD 1096, Rule XII — Section 1207: Stairs, Exits, and Occupant Loads
