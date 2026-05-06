@@ -1,15 +1,15 @@
 # Final Content Production Report
 
-Updated: 2026-05-06T10:29:49.521564Z
+Updated: 2026-05-06T10:33:11.434359Z
 
 ## Current published totals
 
-- Articles remote-verified through safe path: 434
+- Articles remote-verified through safe path: 484
 - Questions remote-verified through safe path: 0
 
 ## Latest milestone
 
-Batch 011 published and verified 50 articles. Batch 010 roundtrip hash repair remains validated.
+Batch 012 published and verified 50 articles.
 
 ## Validation
 

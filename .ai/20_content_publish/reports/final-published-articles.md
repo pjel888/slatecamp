@@ -11,5 +11,6 @@
 - batch-009: 50 verified article rows
 - batch-010: 41 verified article rows
 - batch-011: 50 verified article rows
+- batch-012: 50 verified article rows
 
-Total: 434
+Total: 484

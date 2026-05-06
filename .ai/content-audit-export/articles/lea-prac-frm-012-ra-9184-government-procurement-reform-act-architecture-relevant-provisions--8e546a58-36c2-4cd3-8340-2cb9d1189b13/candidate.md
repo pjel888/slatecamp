@@ -1,3 +1,10 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Lea Prac Frm 012 Ra 9184 Government Procurement Reform Act Architecture Relevant Provisions** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
 ## RA 9184—Government Procurement Reform Act: Architecture-Relevant Provisions
 
 Republic Act 9184 (Government Procurement Reform Act) establishes the legal framework for all government procurement of goods, services, and infrastructure projects. For architects, understanding RA 9184 is critical because it governs how government clients select architects, procure design services, and manage consulting contracts. The act applies to all branches and instrumentalities of government, including government-owned or controlled corporations (GOCCs) and local government units (LGUs).

@@ -1,3 +1,10 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Lea Plan 003 01 What You Need To Know For The Lea** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
 ## What You Need to Know for the LEA
 
 Philippine housing law operates through a layered system of buyer protection, developer regulation, and socialized housing standards. Five core laws establish the framework: PD 957 controls market-rate subdivisions and condominiums; BP 220 sets minimum area standards for economic and socialized housing; RA 7279 (UDHA) mandates eviction protections and balanced housing; RA 6552 (Maceda Law) provides installment buyer safeguards; and RA 10884 quantifies the balanced housing percentage. Understanding which law governs which housing type and which provision belongs to which law is the foundation of housing law competency.
