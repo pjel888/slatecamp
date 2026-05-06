@@ -1,0 +1,2607 @@
+{
+  "generated_at": "2026-05-06T10:51:16.043573Z",
+  "published_article_count": 562,
+  "selected_publishable_smoke_candidates": 10,
+  "risk_counts": {
+    "legal/code source risk": 926,
+    "dimension/date/source risk": 697,
+    "duplicate option risk": 1
+  },
+  "candidates": [
+    {
+      "question_id": "38075322-c38c-402b-98ad-058e9aa5efce",
+      "article_id": "9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "article_dir": ".ai/content-audit-export/articles/allowable-floor-area-increases--9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "title": "Allowable Floor Area Increases",
+      "baseline_hash": "sha256:8a7791386ee83e0e3545056000bf958e566130492c1aa5293a57e689876fabab",
+      "baseline": {
+        "question_id": "38075322-c38c-402b-98ad-058e9aa5efce",
+        "article_id": "9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+        "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+        "text": "Under the IBC, what is the simplified form of the frontage increase formula (If) when the open space width equals or exceeds 30 feet?",
+        "options": [
+          {
+            "id": "a",
+            "text": "If = F/P × 30, which applies when the open space is consistently maintained"
+          },
+          {
+            "id": "b",
+            "text": "If = F/P − 0.25"
+          },
+          {
+            "id": "c",
+            "text": "If = 0.25 − F/P, applicable only under specific zoning conditions"
+          },
+          {
+            "id": "d",
+            "text": "If = F/P, used when no additional modifications are required"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": "Option A (F/P × 30) drops both the threshold subtraction and the division by 30. Option C (0.25 − F/P) reverses the subtraction. Option D (F/P) omits the threshold subtraction entirely. All three are common errors that produce wrong answers in frontage calculations.",
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": null,
+        "application_context": null,
+        "practice_context": [],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": null,
+        "prompt_image_url": null,
+        "created_at": "2026-03-31T05:52:13.304811+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:8a7791386ee83e0e3545056000bf958e566130492c1aa5293a57e689876fabab"
+      },
+      "proposed": {
+        "rationale": "Option A (F/P × 30) drops both the threshold subtraction and the division by 30. Option C (0.25 − F/P) reverses the subtraction. Option D (F/P) omits the threshold subtraction entirely. All three are common errors that produce wrong answers in frontage calculations.",
+        "explanation": "The supported answer is “If = F/P − 0.25.” In the linked article, this concept is presented under “Allowable Floor Area Increases,” so the option should be selected because it matches the article’s stated concept rather than a generic distractor."
+      },
+      "classification": "rationale_improvement",
+      "evidence": "correct option text appears in linked published article; no answer-key or option changes"
+    },
+    {
+      "question_id": "efd55cf2-dbb3-4b7b-9eb2-e38bcdb51e2d",
+      "article_id": "dc69faa6-ef36-40a7-a8f1-fdd88debdbf5",
+      "article_dir": ".ai/content-audit-export/articles/commercial-clearances--dc69faa6-ef36-40a7-a8f1-fdd88debdbf5",
+      "title": "Commercial Clearances",
+      "baseline_hash": "sha256:f19fdd629445cee9987537c5ec22a85e5b031f74b7a4ba331e8c050e6efd5c11",
+      "baseline": {
+        "question_id": "efd55cf2-dbb3-4b7b-9eb2-e38bcdb51e2d",
+        "article_id": "dc69faa6-ef36-40a7-a8f1-fdd88debdbf5",
+        "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
+        "text": "The mnemonic \"ORD\" presented in \"Commercial Clearances\" helps remember:",
+        "options": [
+          {
+            "id": "A",
+            "text": "Average Person"
+          },
+          {
+            "id": "C",
+            "text": "An outdated standard no longer in use"
+          },
+          {
+            "id": "D",
+            "text": "A trap commonly tested on the ALE"
+          },
+          {
+            "id": "E",
+            "text": "A different concept from another subject area"
+          }
+        ],
+        "correct_option_id": "A",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": "The mnemonic \"ORD\" was specifically designed to help remember Average Person.",
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": null,
+        "application_context": null,
+        "practice_context": [],
+        "difficulty": 0.4,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": null,
+        "prompt_image_url": null,
+        "created_at": "2026-03-31T05:47:12.902283+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:f19fdd629445cee9987537c5ec22a85e5b031f74b7a4ba331e8c050e6efd5c11"
+      },
+      "proposed": {
+        "rationale": "The mnemonic \"ORD\" was specifically designed to help remember Average Person.",
+        "explanation": "The supported answer is “Average Person.” In the linked article, this concept is presented under “Commercial Clearances,” so the option should be selected because it matches the article’s stated concept rather than a generic distractor."
+      },
+      "classification": "rationale_improvement",
+      "evidence": "correct option text appears in linked published article; no answer-key or option changes"
+    },
+    {
+      "question_id": "f06dc934-6ef5-442f-bb57-d56d73d84e8a",
+      "article_id": "622a401a-b889-4744-9d44-f77daa1627b4",
+      "article_dir": ".ai/content-audit-export/articles/lea-dsgn-005-10-core-concept--622a401a-b889-4744-9d44-f77daa1627b4",
+      "title": "Lea Dsgn 005 10 Core Concept",
+      "baseline_hash": "sha256:bc2a067eef016d854f2f826571cdbb63f1a275272013739c4114a144cd011638",
+      "baseline": {
+        "question_id": "f06dc934-6ef5-442f-bb57-d56d73d84e8a",
+        "article_id": "622a401a-b889-4744-9d44-f77daa1627b4",
+        "topic_id": "658e1d08-57bc-41d5-9ddf-ee62898ccdfc",
+        "text": "A 350-sqm multi-purpose hall (Group H assembly) is not sprinklered. What is the maximum allowed travel distance to an exit?",
+        "options": [
+          {
+            "id": "a",
+            "text": "30 meters"
+          },
+          {
+            "id": "b",
+            "text": "45 meters"
+          },
+          {
+            "id": "c",
+            "text": "60 meters"
+          },
+          {
+            "id": "d",
+            "text": "75 meters"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "30 meters is more restrictive than required.",
+          "c": "60 meters applies only to sprinklered buildings; this hall is unsprinklered.",
+          "d": "75 meters exceeds NBC limits.",
+          "correct": "For Group H assembly without sprinklers, maximum travel distance = 45 meters per NBC. Sprinklered buildings may extend to 60 meters. (NBC Fire Safety, Travel Distance)",
+          "takeaway": "Unsprinklered Group H assembly: max travel distance = 45 meters. Sprinklered = 60 meters."
+        },
+        "explanation": null,
+        "code_citation": "NBC Fire Safety, Travel Distance",
+        "bloom_level": "analyze",
+        "application_context": "code_interpretation",
+        "practice_context": [
+          "fire safety",
+          "travel distance"
+        ],
+        "difficulty": 0.9,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-DSGN-005-10-008",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:28:59.547655+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:bc2a067eef016d854f2f826571cdbb63f1a275272013739c4114a144cd011638"
+      },
+      "proposed": {
+        "rationale": {
+          "a": "30 meters is more restrictive than required.",
+          "c": "60 meters applies only to sprinklered buildings; this hall is unsprinklered.",
+          "d": "75 meters exceeds NBC limits.",
+          "correct": "For Group H assembly without sprinklers, maximum travel distance = 45 meters per NBC. Sprinklered buildings may extend to 60 meters. (NBC Fire Safety, Travel Distance)",
+          "takeaway": "Unsprinklered Group H assembly: max travel distance = 45 meters. Sprinklered = 60 meters."
+        },
+        "explanation": "The supported answer is “45 meters.” In the linked article, this concept is presented under “Lea Dsgn 005 10 Core Concept,” so the option should be selected because it matches the article’s stated concept rather than a generic distractor."
+      },
+      "classification": "rationale_improvement",
+      "evidence": "correct option text appears in linked published article; no answer-key or option changes"
+    },
+    {
+      "question_id": "ae640469-4c88-4353-9ad1-0801e6f7ce6c",
+      "article_id": "622a401a-b889-4744-9d44-f77daa1627b4",
+      "article_dir": ".ai/content-audit-export/articles/lea-dsgn-005-10-core-concept--622a401a-b889-4744-9d44-f77daa1627b4",
+      "title": "Lea Dsgn 005 10 Core Concept",
+      "baseline_hash": "sha256:8e5c71d4dd1c954c9e60cbf96ded5c8908d41a37999f4f13f110e175ae97c28d",
+      "baseline": {
+        "question_id": "ae640469-4c88-4353-9ad1-0801e6f7ce6c",
+        "article_id": "622a401a-b889-4744-9d44-f77daa1627b4",
+        "topic_id": "658e1d08-57bc-41d5-9ddf-ee62898ccdfc",
+        "text": "A demountable (temporary) stage is to be installed in a multi-purpose hall. What is the required minimum depth?",
+        "options": [
+          {
+            "id": "a",
+            "text": "2.0–3.0 meters"
+          },
+          {
+            "id": "b",
+            "text": "4.0–6.0 meters"
+          },
+          {
+            "id": "c",
+            "text": "6.0–8.0 meters"
+          },
+          {
+            "id": "d",
+            "text": "8.0–10.0 meters"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "2.0–3.0 meters is too shallow for performer movement and equipment.",
+          "c": "6.0–8.0 meters is larger than standard demountable requirement.",
+          "d": "8.0–10.0 meters exceeds typical temporary stage depth.",
+          "correct": "Demountable stage depth = 4.0–6.0 meters to accommodate performers, technical setup, and minimal storage. (NBC Assembly Stage Standards)",
+          "takeaway": "Demountable stage depth = 4.0–6.0 meters per assembly standards."
+        },
+        "explanation": null,
+        "code_citation": "NBC Assembly Stage Standards",
+        "bloom_level": "apply",
+        "application_context": "calculation",
+        "practice_context": [
+          "stage design"
+        ],
+        "difficulty": 0.7,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-DSGN-005-10-005",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:28:59.547655+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:8e5c71d4dd1c954c9e60cbf96ded5c8908d41a37999f4f13f110e175ae97c28d"
+      },
+      "proposed": {
+        "rationale": {
+          "a": "2.0–3.0 meters is too shallow for performer movement and equipment.",
+          "c": "6.0–8.0 meters is larger than standard demountable requirement.",
+          "d": "8.0–10.0 meters exceeds typical temporary stage depth.",
+          "correct": "Demountable stage depth = 4.0–6.0 meters to accommodate performers, technical setup, and minimal storage. (NBC Assembly Stage Standards)",
+          "takeaway": "Demountable stage depth = 4.0–6.0 meters per assembly standards."
+        },
+        "explanation": "The supported answer is “4.0–6.0 meters.” In the linked article, this concept is presented under “Lea Dsgn 005 10 Core Concept,” so the option should be selected because it matches the article’s stated concept rather than a generic distractor."
+      },
+      "classification": "rationale_improvement",
+      "evidence": "correct option text appears in linked published article; no answer-key or option changes"
+    },
+    {
+      "question_id": "8c1258d5-8418-43bd-b42d-28acd94f3fef",
+      "article_id": "cd18af9a-b1e1-42d4-a254-ff5244838f19",
+      "article_dir": ".ai/content-audit-export/articles/lea-dsgn-005-11-core-concept--cd18af9a-b1e1-42d4-a254-ff5244838f19",
+      "title": "Lea Dsgn 005 11 Core Concept",
+      "baseline_hash": "sha256:0eba03441eee3515445c8855b752f0eb2af4c1f89522a50951c997ba399bc837",
+      "baseline": {
+        "question_id": "8c1258d5-8418-43bd-b42d-28acd94f3fef",
+        "article_id": "cd18af9a-b1e1-42d4-a254-ff5244838f19",
+        "topic_id": "3eaa1cf4-7e70-406f-995a-de8a7437672a",
+        "text": "What is the required temperature range for a funeral home cold storage (morgue) facility?",
+        "options": [
+          {
+            "id": "a",
+            "text": "10–15°C"
+          },
+          {
+            "id": "b",
+            "text": "2–4°C"
+          },
+          {
+            "id": "c",
+            "text": "0–2°C"
+          },
+          {
+            "id": "d",
+            "text": "Below 0°C (freezing)"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "10–15°C is room temperature; insufficient preservation.",
+          "c": "0–2°C is near-freezing; 2–4°C is the standard refrigeration range.",
+          "d": "Below 0°C (freezing) is not necessary for short-term cold storage.",
+          "correct": "Cold storage for bodies requires 2–4°C (refrigeration temperature) to slow decomposition. (Funeral Home Design Standards, Mortuary Science Practice)",
+          "takeaway": "Funeral home cold storage temperature = 2–4°C per industry standards."
+        },
+        "explanation": null,
+        "code_citation": "Funeral Home Design Standards; Mortuary Science Practice",
+        "bloom_level": "understand",
+        "application_context": "code_interpretation",
+        "practice_context": [
+          "cold storage",
+          "temperature control"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-DSGN-005-11-004",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:29:00.291039+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:0eba03441eee3515445c8855b752f0eb2af4c1f89522a50951c997ba399bc837"
+      },
+      "proposed": {
+        "rationale": {
+          "a": "10–15°C is room temperature; insufficient preservation.",
+          "c": "0–2°C is near-freezing; 2–4°C is the standard refrigeration range.",
+          "d": "Below 0°C (freezing) is not necessary for short-term cold storage.",
+          "correct": "Cold storage for bodies requires 2–4°C (refrigeration temperature) to slow decomposition. (Funeral Home Design Standards, Mortuary Science Practice)",
+          "takeaway": "Funeral home cold storage temperature = 2–4°C per industry standards."
+        },
+        "explanation": "The supported answer is “2–4°C.” In the linked article, this concept is presented under “Lea Dsgn 005 11 Core Concept,” so the option should be selected because it matches the article’s stated concept rather than a generic distractor."
+      },
+      "classification": "rationale_improvement",
+      "evidence": "correct option text appears in linked published article; no answer-key or option changes"
+    },
+    {
+      "question_id": "b4864bda-0b9d-4da2-b226-fca9833aa239",
+      "article_id": "c9b1aadd-4843-4cf3-a551-6dd67678e508",
+      "article_dir": ".ai/content-audit-export/articles/lea-dsgn-007-04-core-concept--c9b1aadd-4843-4cf3-a551-6dd67678e508",
+      "title": "Lea Dsgn 007 04 Core Concept",
+      "baseline_hash": "sha256:a5044542d3503bc37675951940597bb82449edb3193c39c62e6f3fadbc8faa37",
+      "baseline": {
+        "question_id": "b4864bda-0b9d-4da2-b226-fca9833aa239",
+        "article_id": "c9b1aadd-4843-4cf3-a551-6dd67678e508",
+        "topic_id": "325cc696-9b36-4e19-9bd7-9f2105d29165",
+        "text": "Which phase of the architectural design process focuses on site analysis, client interviews, and program development before design concepts are explored?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Schematic Design"
+          },
+          {
+            "id": "b",
+            "text": "Pre-Design"
+          },
+          {
+            "id": "c",
+            "text": "Design Development"
+          },
+          {
+            "id": "d",
+            "text": "Construction Documents"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Schematic Design develops conceptual solutions after the problem is defined in Pre-Design.",
+          "b": "Correct: Pre-Design precedes all other phases. It answers 'what should this building do?' before 'how should it be designed?'",
+          "c": "Design Development refines a selected Schematic concept; it requires Pre-Design to establish the program.",
+          "d": "Construction Documents are produced after Design Development and are for construction, not problem definition.",
+          "correct": "Pre-Design establishes the project foundation: site surveys, climate analysis, client requirements, program statement, preliminary feasibility. This phase defines the design problem before concepts are developed.",
+          "takeaway": "Pre-Design = problem definition (what/where/why). Schematic Design = solution exploration (how). Do not skip Pre-Design or combine it with Schematic. The problem must be clear before solutions are designed."
+        },
+        "explanation": null,
+        "code_citation": "UAP Standard Practice Parameters (SPP); Design Process Framework",
+        "bloom_level": "remember",
+        "application_context": "code_interpretation",
+        "practice_context": [
+          "design process phases"
+        ],
+        "difficulty": 0.3,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-DSGN-007-04-001",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:28:58.165968+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:a5044542d3503bc37675951940597bb82449edb3193c39c62e6f3fadbc8faa37"
+      },
+      "proposed": {
+        "rationale": {
+          "a": "Schematic Design develops conceptual solutions after the problem is defined in Pre-Design.",
+          "b": "Correct: Pre-Design precedes all other phases. It answers 'what should this building do?' before 'how should it be designed?'",
+          "c": "Design Development refines a selected Schematic concept; it requires Pre-Design to establish the program.",
+          "d": "Construction Documents are produced after Design Development and are for construction, not problem definition.",
+          "correct": "Pre-Design establishes the project foundation: site surveys, climate analysis, client requirements, program statement, preliminary feasibility. This phase defines the design problem before concepts are developed.",
+          "takeaway": "Pre-Design = problem definition (what/where/why). Schematic Design = solution exploration (how). Do not skip Pre-Design or combine it with Schematic. The problem must be clear before solutions are designed."
+        },
+        "explanation": "The supported answer is “Pre-Design.” In the linked article, this concept is presented under “Lea Dsgn 007 04 Core Concept,” so the option should be selected because it matches the article’s stated concept rather than a generic distractor."
+      },
+      "classification": "rationale_improvement",
+      "evidence": "correct option text appears in linked published article; no answer-key or option changes"
+    },
+    {
+      "question_id": "13781414-6765-40a5-a91e-12fc2c66fa98",
+      "article_id": "246c66db-c0cf-4cd3-8f52-9491451e7c76",
+      "article_dir": ".ai/content-audit-export/articles/lea-dsgn-009-04-core-concept--246c66db-c0cf-4cd3-8f52-9491451e7c76",
+      "title": "Lea Dsgn 009 04 Core Concept",
+      "baseline_hash": "sha256:9afb1c5f3068c4aaf72516ad5ed1e3ebb95bd232be4ab5119c77b38cf0cd2d6d",
+      "baseline": {
+        "question_id": "13781414-6765-40a5-a91e-12fc2c66fa98",
+        "article_id": "246c66db-c0cf-4cd3-8f52-9491451e7c76",
+        "topic_id": "da73c15c-1a10-4832-8df3-a3b2fb2126a7",
+        "text": "Which of the following is the national green building certification system for the Philippines?",
+        "options": [
+          {
+            "id": "a",
+            "text": "LEED v4.1"
+          },
+          {
+            "id": "b",
+            "text": "BERDE"
+          },
+          {
+            "id": "c",
+            "text": "EDGE"
+          },
+          {
+            "id": "d",
+            "text": "ISO 14001"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "LEED is a US-based system by USGBC; while used globally, it is not the Philippine national standard.",
+          "c": "EDGE is an IFC system focused on 20% efficiency improvement; it is growing in the region but is not the national system.",
+          "d": "ISO 14001 is an environmental management standard, not a building rating system.",
+          "correct": "BERDE (Building for Ecologically Responsive Design Excellence) is developed and administered by the Philippine Green Building Council (PHILGBC) and is the national sustainability rating system aligned with Philippine environmental and climate context.",
+          "takeaway": "BERDE is the Philippines' domestic green building certification framework."
+        },
+        "explanation": null,
+        "code_citation": "PHILGBC BERDE Rating System (voluntary national system recognized by DOE)",
+        "bloom_level": "remember",
+        "application_context": "recall",
+        "practice_context": [],
+        "difficulty": 0.3,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-DSGN-009-04-001",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:28:58.790366+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:9afb1c5f3068c4aaf72516ad5ed1e3ebb95bd232be4ab5119c77b38cf0cd2d6d"
+      },
+      "proposed": {
+        "rationale": {
+          "a": "LEED is a US-based system by USGBC; while used globally, it is not the Philippine national standard.",
+          "c": "EDGE is an IFC system focused on 20% efficiency improvement; it is growing in the region but is not the national system.",
+          "d": "ISO 14001 is an environmental management standard, not a building rating system.",
+          "correct": "BERDE (Building for Ecologically Responsive Design Excellence) is developed and administered by the Philippine Green Building Council (PHILGBC) and is the national sustainability rating system aligned with Philippine environmental and climate context.",
+          "takeaway": "BERDE is the Philippines' domestic green building certification framework."
+        },
+        "explanation": "The supported answer is “BERDE.” In the linked article, this concept is presented under “Lea Dsgn 009 04 Core Concept,” so the option should be selected because it matches the article’s stated concept rather than a generic distractor."
+      },
+      "classification": "rationale_improvement",
+      "evidence": "correct option text appears in linked published article; no answer-key or option changes"
+    },
+    {
+      "question_id": "87a2f9f8-1a1b-43c9-b5ee-fc8042301a1f",
+      "article_id": "28f9907c-c87b-4f49-a9c4-8371989f6865",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-001-01-core-concept--28f9907c-c87b-4f49-a9c4-8371989f6865",
+      "title": "Lea Hist 001 01 Core Concept",
+      "baseline_hash": "sha256:291e1a26ef11aabd922fa4d66cce62f90a1e230ceb34b38f6af7cf3f50ffe3d6",
+      "baseline": {
+        "question_id": "87a2f9f8-1a1b-43c9-b5ee-fc8042301a1f",
+        "article_id": "28f9907c-c87b-4f49-a9c4-8371989f6865",
+        "topic_id": "5268bd23-8290-44ef-b78e-65df843f5582",
+        "text": "An archaeological site in Ireland features a narrow corridor leading to a burial chamber, with each course of stone projecting slightly beyond the one below it, all covered by an earthen mound. Which megalithic structure type does this describe?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Dolmen"
+          },
+          {
+            "id": "b",
+            "text": "Menhir alignment"
+          },
+          {
+            "id": "c",
+            "text": "Passage grave"
+          },
+          {
+            "id": "d",
+            "text": "Stone circle"
+          }
+        ],
+        "correct_option_id": "c",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "A dolmen is 'a megalithic chamber formed by vertical stones capped with a flat stone' and typically lacks the corridor and corbelling features described.",
+          "b": "Menhir alignments are 'multiple standing stones arranged in rows or processional patterns,' not underground burial structures with corbelling.",
+          "d": "Stone circles are 'ritual arrangement of standing stones in a circular or near-circular plan,' not underground chambers with corbelled passages.",
+          "correct": "The description matches the defining features of a passage grave: 'a megalithic tomb with a narrow corridor leading to a burial chamber, often corbelled and covered by an earthen mound.' The corbelling (each course projecting beyond the one below) is the key identifier.",
+          "takeaway": "The description matches the defining features of a passage grave: 'a megalithic tomb with a narrow corridor leading to a burial chamber, often corbelled and covered by an earthen mound.' The corbelling (each course projecting beyond the one below) is the key identifier."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "apply",
+        "application_context": "recall",
+        "practice_context": [
+          "DESC"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-HIST-001-01-006",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:22.549111+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:291e1a26ef11aabd922fa4d66cce62f90a1e230ceb34b38f6af7cf3f50ffe3d6"
+      },
+      "proposed": {
+        "rationale": {
+          "a": "A dolmen is 'a megalithic chamber formed by vertical stones capped with a flat stone' and typically lacks the corridor and corbelling features described.",
+          "b": "Menhir alignments are 'multiple standing stones arranged in rows or processional patterns,' not underground burial structures with corbelling.",
+          "d": "Stone circles are 'ritual arrangement of standing stones in a circular or near-circular plan,' not underground chambers with corbelled passages.",
+          "correct": "The description matches the defining features of a passage grave: 'a megalithic tomb with a narrow corridor leading to a burial chamber, often corbelled and covered by an earthen mound.' The corbelling (each course projecting beyond the one below) is the key identifier.",
+          "takeaway": "The description matches the defining features of a passage grave: 'a megalithic tomb with a narrow corridor leading to a burial chamber, often corbelled and covered by an earthen mound.' The corbelling (each course projecting beyond the one below) is the key identifier."
+        },
+        "explanation": "The supported answer is “Passage grave.” In the linked article, this concept is presented under “Lea Hist 001 01 Core Concept,” so the option should be selected because it matches the article’s stated concept rather than a generic distractor."
+      },
+      "classification": "rationale_improvement",
+      "evidence": "correct option text appears in linked published article; no answer-key or option changes"
+    },
+    {
+      "question_id": "274cacaf-64c4-4f85-a9f5-254707fae0fe",
+      "article_id": "28f9907c-c87b-4f49-a9c4-8371989f6865",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-001-01-core-concept--28f9907c-c87b-4f49-a9c4-8371989f6865",
+      "title": "Lea Hist 001 01 Core Concept",
+      "baseline_hash": "sha256:f8a1457d263485fbdf0e421c5bdb51aeb79f8bcbfce9421ba3dd102bf4f48b00",
+      "baseline": {
+        "question_id": "274cacaf-64c4-4f85-a9f5-254707fae0fe",
+        "article_id": "28f9907c-c87b-4f49-a9c4-8371989f6865",
+        "topic_id": "5268bd23-8290-44ef-b78e-65df843f5582",
+        "text": "Which site, located on the Isle of Lewis in Scotland, features 13 main stones arranged in a cruciform plan?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Carnac Stones, known for their linear arrangement in Brittany, France"
+          },
+          {
+            "id": "b",
+            "text": "Callanish Stones"
+          },
+          {
+            "id": "c",
+            "text": "Stonehenge, a prehistoric monument in Wiltshire, England, famous for its circular setting"
+          },
+          {
+            "id": "d",
+            "text": "Newgrange, a prehistoric monument in County Meath, Ireland, known for its passage tomb"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Carnac Stones are located in Brittany, France, not Scotland, and consist of rows of menhir alignments totaling over 3,000 stones rather than a cruciform plan.",
+          "c": "Stonehenge is located in Wiltshire, England, not Scotland, and features sarsen stones and bluestones in a circular arrangement rather than a cruciform plan.",
+          "d": "Newgrange is located in County Meath, Ireland, not Scotland, and is a passage grave rather than a stone circle with a cruciform plan.",
+          "correct": "Callanish Stones is the correct answer, located on the Isle of Lewis, Scotland, with 13 main stones in a cruciform (cross-shaped) plan. The main stone circle was constructed during the Late Neolithic period, approximately 2900–2600 BCE.",
+          "takeaway": "The main stone circle was constructed during the Late Neolithic period, approximately 2900–2600 BCE."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "remember",
+        "application_context": "recall",
+        "practice_context": [
+          "ID"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-HIST-001-01-001",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:22.549111+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:f8a1457d263485fbdf0e421c5bdb51aeb79f8bcbfce9421ba3dd102bf4f48b00"
+      },
+      "proposed": {
+        "rationale": {
+          "a": "Carnac Stones are located in Brittany, France, not Scotland, and consist of rows of menhir alignments totaling over 3,000 stones rather than a cruciform plan.",
+          "c": "Stonehenge is located in Wiltshire, England, not Scotland, and features sarsen stones and bluestones in a circular arrangement rather than a cruciform plan.",
+          "d": "Newgrange is located in County Meath, Ireland, not Scotland, and is a passage grave rather than a stone circle with a cruciform plan.",
+          "correct": "Callanish Stones is the correct answer, located on the Isle of Lewis, Scotland, with 13 main stones in a cruciform (cross-shaped) plan. The main stone circle was constructed during the Late Neolithic period, approximately 2900–2600 BCE.",
+          "takeaway": "The main stone circle was constructed during the Late Neolithic period, approximately 2900–2600 BCE."
+        },
+        "explanation": "The supported answer is “Callanish Stones.” In the linked article, this concept is presented under “Lea Hist 001 01 Core Concept,” so the option should be selected because it matches the article’s stated concept rather than a generic distractor."
+      },
+      "classification": "rationale_improvement",
+      "evidence": "correct option text appears in linked published article; no answer-key or option changes"
+    },
+    {
+      "question_id": "cf5efe9f-160b-432e-bb8c-2c0e02ea12da",
+      "article_id": "28f9907c-c87b-4f49-a9c4-8371989f6865",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-001-01-core-concept--28f9907c-c87b-4f49-a9c4-8371989f6865",
+      "title": "Lea Hist 001 01 Core Concept",
+      "baseline_hash": "sha256:50d367e06478ba1d2e70cab5ada8a23fdac8bc8e670ed7030cd933793ae419d6",
+      "baseline": {
+        "question_id": "cf5efe9f-160b-432e-bb8c-2c0e02ea12da",
+        "article_id": "28f9907c-c87b-4f49-a9c4-8371989f6865",
+        "topic_id": "5268bd23-8290-44ef-b78e-65df843f5582",
+        "text": "A trilithon structure consists of which arrangement of stones?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Three standing stones arranged in a triangular pattern"
+          },
+          {
+            "id": "b",
+            "text": "Two vertical stones supporting one horizontal stone"
+          },
+          {
+            "id": "c",
+            "text": "A central stone surrounded by concentric circles of standing stones"
+          },
+          {
+            "id": "d",
+            "text": "Multiple courses of stone, each projecting beyond the one below"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "While three stones are involved, a trilithon has a specific structural arrangement (two supporting one), not a triangular ground plan.",
+          "c": "This describes a stone circle arrangement, not a trilithon, which is a vertical structural unit.",
+          "d": "This describes corbelling, a technique used in passage graves, not the structure of a trilithon.",
+          "correct": "The article defines a trilithon as 'a post-and-lintel unit consisting of two vertical stones supporting one horizontal stone; famously used at Stonehenge.'",
+          "takeaway": "The article defines a trilithon as 'a post-and-lintel unit consisting of two vertical stones supporting one horizontal stone; famously used at Stonehenge.'."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "remember",
+        "application_context": "recall",
+        "practice_context": [
+          "DESC"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-HIST-001-01-008",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:22.549111+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:50d367e06478ba1d2e70cab5ada8a23fdac8bc8e670ed7030cd933793ae419d6"
+      },
+      "proposed": {
+        "rationale": {
+          "a": "While three stones are involved, a trilithon has a specific structural arrangement (two supporting one), not a triangular ground plan.",
+          "c": "This describes a stone circle arrangement, not a trilithon, which is a vertical structural unit.",
+          "d": "This describes corbelling, a technique used in passage graves, not the structure of a trilithon.",
+          "correct": "The article defines a trilithon as 'a post-and-lintel unit consisting of two vertical stones supporting one horizontal stone; famously used at Stonehenge.'",
+          "takeaway": "The article defines a trilithon as 'a post-and-lintel unit consisting of two vertical stones supporting one horizontal stone; famously used at Stonehenge.'."
+        },
+        "explanation": "The supported answer is “Two vertical stones supporting one horizontal stone.” In the linked article, this concept is presented under “Lea Hist 001 01 Core Concept,” so the option should be selected because it matches the article’s stated concept rather than a generic distractor."
+      },
+      "classification": "rationale_improvement",
+      "evidence": "correct option text appears in linked published article; no answer-key or option changes"
+    }
+  ],
+  "sample_quarantine": [
+    {
+      "question_id": "76487c6c-c954-4e2b-8630-f3d0834b87e6",
+      "article_id": "60c3b78a-e1c7-4c5e-880e-f9526d6c570d",
+      "article_dir": ".ai/content-audit-export/articles/21st-century-movements--60c3b78a-e1c7-4c5e-880e-f9526d6c570d",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "b67cd010-7ae2-4390-b00f-dfb32ac2a53c",
+      "article_id": "60c3b78a-e1c7-4c5e-880e-f9526d6c570d",
+      "article_dir": ".ai/content-audit-export/articles/21st-century-movements--60c3b78a-e1c7-4c5e-880e-f9526d6c570d",
+      "risk_flags": [
+        "dimension/date/source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "45b86527-bd11-4ce4-9b1c-3e2a94f68138",
+      "article_id": "571e1d4f-999b-4cf9-a4de-3d35157314d2",
+      "article_dir": ".ai/content-audit-export/articles/accessible-seating-in-assembly-areas--571e1d4f-999b-4cf9-a4de-3d35157314d2",
+      "risk_flags": [
+        "dimension/date/source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "1c4e9c82-9c5c-4ed9-8ee1-3dfb069fcaea",
+      "article_id": "571e1d4f-999b-4cf9-a4de-3d35157314d2",
+      "article_dir": ".ai/content-audit-export/articles/accessible-seating-in-assembly-areas--571e1d4f-999b-4cf9-a4de-3d35157314d2",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "447f242f-f2fe-4e46-b760-96088aa9cb70",
+      "article_id": "571e1d4f-999b-4cf9-a4de-3d35157314d2",
+      "article_dir": ".ai/content-audit-export/articles/accessible-seating-in-assembly-areas--571e1d4f-999b-4cf9-a4de-3d35157314d2",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "f304b641-6cd2-4174-83d8-1e99572eda8a",
+      "article_id": "571e1d4f-999b-4cf9-a4de-3d35157314d2",
+      "article_dir": ".ai/content-audit-export/articles/accessible-seating-in-assembly-areas--571e1d4f-999b-4cf9-a4de-3d35157314d2",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "6275a855-a97b-4b41-91f2-1d59d366e599",
+      "article_id": "571e1d4f-999b-4cf9-a4de-3d35157314d2",
+      "article_dir": ".ai/content-audit-export/articles/accessible-seating-in-assembly-areas--571e1d4f-999b-4cf9-a4de-3d35157314d2",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "b4bc3006-6beb-4731-b91f-16a186c743f8",
+      "article_id": "571e1d4f-999b-4cf9-a4de-3d35157314d2",
+      "article_dir": ".ai/content-audit-export/articles/accessible-seating-in-assembly-areas--571e1d4f-999b-4cf9-a4de-3d35157314d2",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "7fc1c331-4b0b-40b6-9236-aeb7e4a89cb6",
+      "article_id": "571e1d4f-999b-4cf9-a4de-3d35157314d2",
+      "article_dir": ".ai/content-audit-export/articles/accessible-seating-in-assembly-areas--571e1d4f-999b-4cf9-a4de-3d35157314d2",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "719a26b0-9c53-4dda-8014-9f5873f2def2",
+      "article_id": "571e1d4f-999b-4cf9-a4de-3d35157314d2",
+      "article_dir": ".ai/content-audit-export/articles/accessible-seating-in-assembly-areas--571e1d4f-999b-4cf9-a4de-3d35157314d2",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "a731628a-6a5e-4913-9440-24f7ae4aaa79",
+      "article_id": "571e1d4f-999b-4cf9-a4de-3d35157314d2",
+      "article_dir": ".ai/content-audit-export/articles/accessible-seating-in-assembly-areas--571e1d4f-999b-4cf9-a4de-3d35157314d2",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "94882d23-3f10-48c1-b81f-ddc00945cace",
+      "article_id": "571e1d4f-999b-4cf9-a4de-3d35157314d2",
+      "article_dir": ".ai/content-audit-export/articles/accessible-seating-in-assembly-areas--571e1d4f-999b-4cf9-a4de-3d35157314d2",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "4b28640f-9b21-4577-91a3-a14869e161ce",
+      "article_id": "571e1d4f-999b-4cf9-a4de-3d35157314d2",
+      "article_dir": ".ai/content-audit-export/articles/accessible-seating-in-assembly-areas--571e1d4f-999b-4cf9-a4de-3d35157314d2",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "e334631a-5c2a-4d3c-9a9e-cb134a555e57",
+      "article_id": "4a8c01ab-5515-44f5-aaf7-c1274d8c8dce",
+      "article_dir": ".ai/content-audit-export/articles/african-vernacular-earth-architecture--4a8c01ab-5515-44f5-aaf7-c1274d8c8dce",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "7c9bb8e9-abc7-479e-91d7-a162299eb52c",
+      "article_id": "4a8c01ab-5515-44f5-aaf7-c1274d8c8dce",
+      "article_dir": ".ai/content-audit-export/articles/african-vernacular-earth-architecture--4a8c01ab-5515-44f5-aaf7-c1274d8c8dce",
+      "risk_flags": [
+        "dimension/date/source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "56930853-eb80-4fc1-84bc-52631c005c89",
+      "article_id": "4a8c01ab-5515-44f5-aaf7-c1274d8c8dce",
+      "article_dir": ".ai/content-audit-export/articles/african-vernacular-earth-architecture--4a8c01ab-5515-44f5-aaf7-c1274d8c8dce",
+      "risk_flags": [
+        "dimension/date/source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "d999bb17-5339-4227-bb42-abf4b1c00f29",
+      "article_id": "4a8c01ab-5515-44f5-aaf7-c1274d8c8dce",
+      "article_dir": ".ai/content-audit-export/articles/african-vernacular-earth-architecture--4a8c01ab-5515-44f5-aaf7-c1274d8c8dce",
+      "risk_flags": [
+        "dimension/date/source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "51a689ba-59ce-44c0-8221-6ec2a8e90fd3",
+      "article_id": "4a8c01ab-5515-44f5-aaf7-c1274d8c8dce",
+      "article_dir": ".ai/content-audit-export/articles/african-vernacular-earth-architecture--4a8c01ab-5515-44f5-aaf7-c1274d8c8dce",
+      "risk_flags": [
+        "dimension/date/source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "cf441e8c-49c5-41c6-9137-df78ec8934c8",
+      "article_id": "4a8c01ab-5515-44f5-aaf7-c1274d8c8dce",
+      "article_dir": ".ai/content-audit-export/articles/african-vernacular-earth-architecture--4a8c01ab-5515-44f5-aaf7-c1274d8c8dce",
+      "risk_flags": [
+        "dimension/date/source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "c3660284-79c8-4c4a-9df3-4381145a51b2",
+      "article_id": "9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "article_dir": ".ai/content-audit-export/articles/allowable-floor-area-increases--9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "19137561-9656-49ba-884a-f773eed28ef0",
+      "article_id": "9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "article_dir": ".ai/content-audit-export/articles/allowable-floor-area-increases--9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "a9b4c92f-6df9-46d7-a1ff-a1853d6eb2d6",
+      "article_id": "9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "article_dir": ".ai/content-audit-export/articles/allowable-floor-area-increases--9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "b963e0f2-9544-4bf9-b28a-b5a9ca12c41e",
+      "article_id": "9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "article_dir": ".ai/content-audit-export/articles/allowable-floor-area-increases--9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "cc4314f7-d953-4913-9aba-852526a1aff4",
+      "article_id": "9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "article_dir": ".ai/content-audit-export/articles/allowable-floor-area-increases--9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "eeca9b02-f12d-4226-883d-39085decca1e",
+      "article_id": "9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "article_dir": ".ai/content-audit-export/articles/allowable-floor-area-increases--9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "c9a0dfc7-1898-4998-85f2-a0deb6dcbc87",
+      "article_id": "9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "article_dir": ".ai/content-audit-export/articles/allowable-floor-area-increases--9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "6afd710f-c2dc-4953-8199-4b7806cf7adf",
+      "article_id": "9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "article_dir": ".ai/content-audit-export/articles/allowable-floor-area-increases--9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "3f6e2a2d-44c5-4d05-87d5-b7ce156b8d58",
+      "article_id": "9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "article_dir": ".ai/content-audit-export/articles/allowable-floor-area-increases--9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "cd156239-c087-4e1f-8f16-a1573e8c69c0",
+      "article_id": "9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "article_dir": ".ai/content-audit-export/articles/allowable-floor-area-increases--9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "89c00ffc-be69-4b9a-be94-8a88d96b086c",
+      "article_id": "9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "article_dir": ".ai/content-audit-export/articles/allowable-floor-area-increases--9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "8ee63b08-2b19-4167-bd7a-0835309c79ec",
+      "article_id": "9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "article_dir": ".ai/content-audit-export/articles/allowable-floor-area-increases--9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "04ebedb6-5243-443d-80b6-d78280f2aefa",
+      "article_id": "9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "article_dir": ".ai/content-audit-export/articles/allowable-floor-area-increases--9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "42f32ed3-4d07-42fb-963f-a96828c5b6b9",
+      "article_id": "9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "article_dir": ".ai/content-audit-export/articles/allowable-floor-area-increases--9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "b2f75d2e-6f80-443a-81c0-9b74519df098",
+      "article_id": "9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "article_dir": ".ai/content-audit-export/articles/allowable-floor-area-increases--9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "31d7b5e0-9917-4bbb-a572-24acf07f3634",
+      "article_id": "9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "article_dir": ".ai/content-audit-export/articles/allowable-floor-area-increases--9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "94e8b454-62b7-4202-a0c4-f674df80d502",
+      "article_id": "9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "article_dir": ".ai/content-audit-export/articles/allowable-floor-area-increases--9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "1189db66-0c61-4728-81d9-9103e824693e",
+      "article_id": "9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "article_dir": ".ai/content-audit-export/articles/allowable-floor-area-increases--9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "c25955f6-1c88-4260-afcb-925dac06acd4",
+      "article_id": "9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "article_dir": ".ai/content-audit-export/articles/allowable-floor-area-increases--9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "fb32318a-7854-45fc-8a16-f648df74f484",
+      "article_id": "9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "article_dir": ".ai/content-audit-export/articles/allowable-floor-area-increases--9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "ebe9390a-cc09-431d-ac38-b79e916a1da1",
+      "article_id": "9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "article_dir": ".ai/content-audit-export/articles/allowable-floor-area-increases--9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "6cd7dc61-34eb-4eba-b271-69c880b5626f",
+      "article_id": "9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "article_dir": ".ai/content-audit-export/articles/allowable-floor-area-increases--9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "f39e3f4e-7060-4592-98df-db47e0581922",
+      "article_id": "9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "article_dir": ".ai/content-audit-export/articles/allowable-floor-area-increases--9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "39fca092-4137-46e3-a462-c21a252e059b",
+      "article_id": "9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "article_dir": ".ai/content-audit-export/articles/allowable-floor-area-increases--9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "58295282-30d6-4f57-b2a8-ed39144921c2",
+      "article_id": "6d5e0e55-215a-4806-a679-dac7aea5a99b",
+      "article_dir": ".ai/content-audit-export/articles/bp-344-accessible-washrooms--6d5e0e55-215a-4806-a679-dac7aea5a99b",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "3badda29-6310-42a0-a47c-98fdea52f5e3",
+      "article_id": "6d5e0e55-215a-4806-a679-dac7aea5a99b",
+      "article_dir": ".ai/content-audit-export/articles/bp-344-accessible-washrooms--6d5e0e55-215a-4806-a679-dac7aea5a99b",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "2331bf6f-4e0b-4728-ab79-a7c3a34ef068",
+      "article_id": "6d5e0e55-215a-4806-a679-dac7aea5a99b",
+      "article_dir": ".ai/content-audit-export/articles/bp-344-accessible-washrooms--6d5e0e55-215a-4806-a679-dac7aea5a99b",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "7652f8cc-6362-457a-911f-44383edd1329",
+      "article_id": "6d5e0e55-215a-4806-a679-dac7aea5a99b",
+      "article_dir": ".ai/content-audit-export/articles/bp-344-accessible-washrooms--6d5e0e55-215a-4806-a679-dac7aea5a99b",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "471af8a5-4970-46c2-946a-6445a166ba2f",
+      "article_id": "6d5e0e55-215a-4806-a679-dac7aea5a99b",
+      "article_dir": ".ai/content-audit-export/articles/bp-344-accessible-washrooms--6d5e0e55-215a-4806-a679-dac7aea5a99b",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "9c200c7f-b0cf-4625-a351-39229d62e3ba",
+      "article_id": "6d5e0e55-215a-4806-a679-dac7aea5a99b",
+      "article_dir": ".ai/content-audit-export/articles/bp-344-accessible-washrooms--6d5e0e55-215a-4806-a679-dac7aea5a99b",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "457a3745-222c-478e-b0d1-a58a6f78474e",
+      "article_id": "6d5e0e55-215a-4806-a679-dac7aea5a99b",
+      "article_dir": ".ai/content-audit-export/articles/bp-344-accessible-washrooms--6d5e0e55-215a-4806-a679-dac7aea5a99b",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "b64e22fe-5fa3-4755-b7d2-bf2b16281a51",
+      "article_id": "6d5e0e55-215a-4806-a679-dac7aea5a99b",
+      "article_dir": ".ai/content-audit-export/articles/bp-344-accessible-washrooms--6d5e0e55-215a-4806-a679-dac7aea5a99b",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "f20e6d4b-8ea1-4736-b80b-caaa0de099bb",
+      "article_id": "6d5e0e55-215a-4806-a679-dac7aea5a99b",
+      "article_dir": ".ai/content-audit-export/articles/bp-344-accessible-washrooms--6d5e0e55-215a-4806-a679-dac7aea5a99b",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "e4a9c949-d613-4946-b0c2-2832e60eacb5",
+      "article_id": "6d5e0e55-215a-4806-a679-dac7aea5a99b",
+      "article_dir": ".ai/content-audit-export/articles/bp-344-accessible-washrooms--6d5e0e55-215a-4806-a679-dac7aea5a99b",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "9be94bd0-ae1f-4694-95bc-901c6e60656e",
+      "article_id": "6d5e0e55-215a-4806-a679-dac7aea5a99b",
+      "article_dir": ".ai/content-audit-export/articles/bp-344-accessible-washrooms--6d5e0e55-215a-4806-a679-dac7aea5a99b",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "3a02b862-6bcb-421a-bbe0-7390023e56d1",
+      "article_id": "5f620c42-ef55-4c0e-824b-49f0ff9d47e6",
+      "article_dir": ".ai/content-audit-export/articles/bp-344-elevator-dimensions--5f620c42-ef55-4c0e-824b-49f0ff9d47e6",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "74ef0a31-d5e4-4b92-a30c-c55192514e4a",
+      "article_id": "5f620c42-ef55-4c0e-824b-49f0ff9d47e6",
+      "article_dir": ".ai/content-audit-export/articles/bp-344-elevator-dimensions--5f620c42-ef55-4c0e-824b-49f0ff9d47e6",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "0cfc8500-66d3-43f7-8b1e-d631fd6d6c44",
+      "article_id": "5f620c42-ef55-4c0e-824b-49f0ff9d47e6",
+      "article_dir": ".ai/content-audit-export/articles/bp-344-elevator-dimensions--5f620c42-ef55-4c0e-824b-49f0ff9d47e6",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "d752e07a-5772-4127-987e-38dbe7a03a03",
+      "article_id": "5f620c42-ef55-4c0e-824b-49f0ff9d47e6",
+      "article_dir": ".ai/content-audit-export/articles/bp-344-elevator-dimensions--5f620c42-ef55-4c0e-824b-49f0ff9d47e6",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "14e1fe5d-0b68-41e5-bb3b-a008ab213333",
+      "article_id": "5f620c42-ef55-4c0e-824b-49f0ff9d47e6",
+      "article_dir": ".ai/content-audit-export/articles/bp-344-elevator-dimensions--5f620c42-ef55-4c0e-824b-49f0ff9d47e6",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "5a156fd4-5a1b-44e2-8ef0-6aaf6711bca5",
+      "article_id": "5f620c42-ef55-4c0e-824b-49f0ff9d47e6",
+      "article_dir": ".ai/content-audit-export/articles/bp-344-elevator-dimensions--5f620c42-ef55-4c0e-824b-49f0ff9d47e6",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "da07b616-7211-4255-9794-bdbbd0b3ddc8",
+      "article_id": "5f620c42-ef55-4c0e-824b-49f0ff9d47e6",
+      "article_dir": ".ai/content-audit-export/articles/bp-344-elevator-dimensions--5f620c42-ef55-4c0e-824b-49f0ff9d47e6",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "233368c2-56f7-430c-9b0f-0dd58bb0c3ab",
+      "article_id": "5f620c42-ef55-4c0e-824b-49f0ff9d47e6",
+      "article_dir": ".ai/content-audit-export/articles/bp-344-elevator-dimensions--5f620c42-ef55-4c0e-824b-49f0ff9d47e6",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "524f50c6-5b68-4f28-bf5f-62334ee18bcd",
+      "article_id": "5f620c42-ef55-4c0e-824b-49f0ff9d47e6",
+      "article_dir": ".ai/content-audit-export/articles/bp-344-elevator-dimensions--5f620c42-ef55-4c0e-824b-49f0ff9d47e6",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "d86e6822-87dd-4d0c-aad1-fb4e2404dc93",
+      "article_id": "5f620c42-ef55-4c0e-824b-49f0ff9d47e6",
+      "article_dir": ".ai/content-audit-export/articles/bp-344-elevator-dimensions--5f620c42-ef55-4c0e-824b-49f0ff9d47e6",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "e67995d3-de1e-4f60-bf6f-1127bc709b16",
+      "article_id": "5f620c42-ef55-4c0e-824b-49f0ff9d47e6",
+      "article_dir": ".ai/content-audit-export/articles/bp-344-elevator-dimensions--5f620c42-ef55-4c0e-824b-49f0ff9d47e6",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "00115b59-c190-476b-8ef2-fae152241b7e",
+      "article_id": "5a8ca807-31d5-4a32-933a-c6b83517c6de",
+      "article_dir": ".ai/content-audit-export/articles/bp-344-ramp-slope-tiers--5a8ca807-31d5-4a32-933a-c6b83517c6de",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "a2555ae7-ee40-4d1a-a83d-38e1f6145674",
+      "article_id": "5a8ca807-31d5-4a32-933a-c6b83517c6de",
+      "article_dir": ".ai/content-audit-export/articles/bp-344-ramp-slope-tiers--5a8ca807-31d5-4a32-933a-c6b83517c6de",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "0a31a28e-0935-4565-a118-60b76c0a2c0c",
+      "article_id": "5a8ca807-31d5-4a32-933a-c6b83517c6de",
+      "article_dir": ".ai/content-audit-export/articles/bp-344-ramp-slope-tiers--5a8ca807-31d5-4a32-933a-c6b83517c6de",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "a2aafc8a-50b3-4379-863c-ddfb9d51ecce",
+      "article_id": "5a8ca807-31d5-4a32-933a-c6b83517c6de",
+      "article_dir": ".ai/content-audit-export/articles/bp-344-ramp-slope-tiers--5a8ca807-31d5-4a32-933a-c6b83517c6de",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "069dd3a1-aa7d-4221-9a9b-53e3360e278b",
+      "article_id": "5a8ca807-31d5-4a32-933a-c6b83517c6de",
+      "article_dir": ".ai/content-audit-export/articles/bp-344-ramp-slope-tiers--5a8ca807-31d5-4a32-933a-c6b83517c6de",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "70215fdc-8b37-4339-8c09-b1ff12840f34",
+      "article_id": "5a8ca807-31d5-4a32-933a-c6b83517c6de",
+      "article_dir": ".ai/content-audit-export/articles/bp-344-ramp-slope-tiers--5a8ca807-31d5-4a32-933a-c6b83517c6de",
+      "risk_flags": [
+        "dimension/date/source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "9b6d0315-ba0b-4c42-8bda-d437595c72f9",
+      "article_id": "5a8ca807-31d5-4a32-933a-c6b83517c6de",
+      "article_dir": ".ai/content-audit-export/articles/bp-344-ramp-slope-tiers--5a8ca807-31d5-4a32-933a-c6b83517c6de",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "2c9264f8-b339-405d-ab6c-df182954b6bd",
+      "article_id": "5a8ca807-31d5-4a32-933a-c6b83517c6de",
+      "article_dir": ".ai/content-audit-export/articles/bp-344-ramp-slope-tiers--5a8ca807-31d5-4a32-933a-c6b83517c6de",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "4c92b571-c5f6-45e7-accd-4567ebe47393",
+      "article_id": "5a8ca807-31d5-4a32-933a-c6b83517c6de",
+      "article_dir": ".ai/content-audit-export/articles/bp-344-ramp-slope-tiers--5a8ca807-31d5-4a32-933a-c6b83517c6de",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "b7afac22-7103-40b4-9fca-b6cf8b0b6707",
+      "article_id": "5a8ca807-31d5-4a32-933a-c6b83517c6de",
+      "article_dir": ".ai/content-audit-export/articles/bp-344-ramp-slope-tiers--5a8ca807-31d5-4a32-933a-c6b83517c6de",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "f3fa6643-5347-480c-bb92-51befc4be31f",
+      "article_id": "5aeda107-bc0d-4d0d-ab40-44e13fd95478",
+      "article_dir": ".ai/content-audit-export/articles/bp-344-tactile-and-visual-alarms--5aeda107-bc0d-4d0d-ab40-44e13fd95478",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "44a4311e-e622-4087-923d-e736094eb0f6",
+      "article_id": "5aeda107-bc0d-4d0d-ab40-44e13fd95478",
+      "article_dir": ".ai/content-audit-export/articles/bp-344-tactile-and-visual-alarms--5aeda107-bc0d-4d0d-ab40-44e13fd95478",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "35261eda-1bfd-4e22-ac31-f54fbe56448d",
+      "article_id": "5aeda107-bc0d-4d0d-ab40-44e13fd95478",
+      "article_dir": ".ai/content-audit-export/articles/bp-344-tactile-and-visual-alarms--5aeda107-bc0d-4d0d-ab40-44e13fd95478",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "847853b4-e9a6-4940-bc5d-909decb1abb4",
+      "article_id": "5aeda107-bc0d-4d0d-ab40-44e13fd95478",
+      "article_dir": ".ai/content-audit-export/articles/bp-344-tactile-and-visual-alarms--5aeda107-bc0d-4d0d-ab40-44e13fd95478",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "fdf42db6-781b-4ffc-99fc-c07be1ad24d8",
+      "article_id": "5aeda107-bc0d-4d0d-ab40-44e13fd95478",
+      "article_dir": ".ai/content-audit-export/articles/bp-344-tactile-and-visual-alarms--5aeda107-bc0d-4d0d-ab40-44e13fd95478",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "f4bde46f-92ab-48f9-ba53-1b3f2a87675a",
+      "article_id": "5aeda107-bc0d-4d0d-ab40-44e13fd95478",
+      "article_dir": ".ai/content-audit-export/articles/bp-344-tactile-and-visual-alarms--5aeda107-bc0d-4d0d-ab40-44e13fd95478",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "06cfafd5-f5e8-4a00-aed3-809db03483a6",
+      "article_id": "5aeda107-bc0d-4d0d-ab40-44e13fd95478",
+      "article_dir": ".ai/content-audit-export/articles/bp-344-tactile-and-visual-alarms--5aeda107-bc0d-4d0d-ab40-44e13fd95478",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "cd1a2205-3f90-4afb-ad3e-0e8529ad148b",
+      "article_id": "5aeda107-bc0d-4d0d-ab40-44e13fd95478",
+      "article_dir": ".ai/content-audit-export/articles/bp-344-tactile-and-visual-alarms--5aeda107-bc0d-4d0d-ab40-44e13fd95478",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "14330dfe-cd58-487e-912a-dbfab23a7319",
+      "article_id": "5aeda107-bc0d-4d0d-ab40-44e13fd95478",
+      "article_dir": ".ai/content-audit-export/articles/bp-344-tactile-and-visual-alarms--5aeda107-bc0d-4d0d-ab40-44e13fd95478",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "a023e9f0-dbdb-41c9-a9ca-618fb7325498",
+      "article_id": "5aeda107-bc0d-4d0d-ab40-44e13fd95478",
+      "article_dir": ".ai/content-audit-export/articles/bp-344-tactile-and-visual-alarms--5aeda107-bc0d-4d0d-ab40-44e13fd95478",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "0d65dd1e-bced-42a4-a96e-734b204742a2",
+      "article_id": "5aeda107-bc0d-4d0d-ab40-44e13fd95478",
+      "article_dir": ".ai/content-audit-export/articles/bp-344-tactile-and-visual-alarms--5aeda107-bc0d-4d0d-ab40-44e13fd95478",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "e49ae35c-a772-4839-a6d4-07fb78085fd6",
+      "article_id": "ee1f8beb-e236-4831-a0a8-1ddce447a3b8",
+      "article_dir": ".ai/content-audit-export/articles/bp-344-vs-pd-1096-conflicts--ee1f8beb-e236-4831-a0a8-1ddce447a3b8",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "475db967-5648-4617-94d4-3a5fa9cbc142",
+      "article_id": "ee1f8beb-e236-4831-a0a8-1ddce447a3b8",
+      "article_dir": ".ai/content-audit-export/articles/bp-344-vs-pd-1096-conflicts--ee1f8beb-e236-4831-a0a8-1ddce447a3b8",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "85ac082a-dad7-401f-8525-07a6d5ebdc47",
+      "article_id": "ee1f8beb-e236-4831-a0a8-1ddce447a3b8",
+      "article_dir": ".ai/content-audit-export/articles/bp-344-vs-pd-1096-conflicts--ee1f8beb-e236-4831-a0a8-1ddce447a3b8",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "28894b17-a900-4b71-a4f0-f8f687acfac3",
+      "article_id": "ee1f8beb-e236-4831-a0a8-1ddce447a3b8",
+      "article_dir": ".ai/content-audit-export/articles/bp-344-vs-pd-1096-conflicts--ee1f8beb-e236-4831-a0a8-1ddce447a3b8",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "6f2a932c-cc08-44c7-996d-2a18bd37fbee",
+      "article_id": "ee1f8beb-e236-4831-a0a8-1ddce447a3b8",
+      "article_dir": ".ai/content-audit-export/articles/bp-344-vs-pd-1096-conflicts--ee1f8beb-e236-4831-a0a8-1ddce447a3b8",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "ce2cd9ce-eab2-4a15-916b-8f5ff4a78207",
+      "article_id": "ee1f8beb-e236-4831-a0a8-1ddce447a3b8",
+      "article_dir": ".ai/content-audit-export/articles/bp-344-vs-pd-1096-conflicts--ee1f8beb-e236-4831-a0a8-1ddce447a3b8",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "5c104848-9832-4059-b929-a09998361dd0",
+      "article_id": "ee1f8beb-e236-4831-a0a8-1ddce447a3b8",
+      "article_dir": ".ai/content-audit-export/articles/bp-344-vs-pd-1096-conflicts--ee1f8beb-e236-4831-a0a8-1ddce447a3b8",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "a6dbdb98-97cd-4636-a993-1ebef1e277b7",
+      "article_id": "ee1f8beb-e236-4831-a0a8-1ddce447a3b8",
+      "article_dir": ".ai/content-audit-export/articles/bp-344-vs-pd-1096-conflicts--ee1f8beb-e236-4831-a0a8-1ddce447a3b8",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "ad84c467-24bd-407d-a316-3da1acdfbc16",
+      "article_id": "ee1f8beb-e236-4831-a0a8-1ddce447a3b8",
+      "article_dir": ".ai/content-audit-export/articles/bp-344-vs-pd-1096-conflicts--ee1f8beb-e236-4831-a0a8-1ddce447a3b8",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "3d147ff0-ae13-44df-92f2-c0352f99e20b",
+      "article_id": "ee1f8beb-e236-4831-a0a8-1ddce447a3b8",
+      "article_dir": ".ai/content-audit-export/articles/bp-344-vs-pd-1096-conflicts--ee1f8beb-e236-4831-a0a8-1ddce447a3b8",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "0bafab5b-cd35-499d-b60f-4888e4caf8b6",
+      "article_id": "ee1f8beb-e236-4831-a0a8-1ddce447a3b8",
+      "article_dir": ".ai/content-audit-export/articles/bp-344-vs-pd-1096-conflicts--ee1f8beb-e236-4831-a0a8-1ddce447a3b8",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "34dd99ce-da9a-4541-89bc-e3dd8eee0708",
+      "article_id": "c39cc1e8-90fb-4c47-95f2-6bb4b370c6d7",
+      "article_dir": ".ai/content-audit-export/articles/brutalism--c39cc1e8-90fb-4c47-95f2-6bb4b370c6d7",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "4bf93ba8-cb2b-41c0-8c42-2327648014fe",
+      "article_id": "c39cc1e8-90fb-4c47-95f2-6bb4b370c6d7",
+      "article_dir": ".ai/content-audit-export/articles/brutalism--c39cc1e8-90fb-4c47-95f2-6bb4b370c6d7",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "fe68e260-4696-4c0f-a69e-72fc82dbd34d",
+      "article_id": "c39cc1e8-90fb-4c47-95f2-6bb4b370c6d7",
+      "article_dir": ".ai/content-audit-export/articles/brutalism--c39cc1e8-90fb-4c47-95f2-6bb4b370c6d7",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "e82818b2-6b86-426f-af0d-2eda00a0ebda",
+      "article_id": "c39cc1e8-90fb-4c47-95f2-6bb4b370c6d7",
+      "article_dir": ".ai/content-audit-export/articles/brutalism--c39cc1e8-90fb-4c47-95f2-6bb4b370c6d7",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "c94382d9-f23d-4f83-a468-2825f8903f1c",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "article_dir": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556",
+      "risk_flags": [
+        "dimension/date/source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "216faec4-026c-4436-a3c1-1d49a2218189",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "article_dir": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "bbe87f0f-7267-4c71-aaf2-cd0c076afc6f",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "article_dir": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "60457c0e-5663-4cbd-b035-410956eeeba0",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "article_dir": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "34e7d6e5-84f1-4ca6-bfc7-02cdadca6286",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "article_dir": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "d1eb77ed-eec9-4f53-9eb2-75dd90539340",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "article_dir": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "77fd460b-82bd-4524-bf37-cc99c6211cd7",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "article_dir": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "68e7f2d9-f300-4c08-bc60-34230015d439",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "article_dir": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "50af96f9-cc07-4e6f-9cff-501a00778240",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "article_dir": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "f8ccd35f-7773-4e7d-afe1-f38616759719",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "article_dir": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "1fe94659-47ec-4231-87b6-6f1f2801f9ab",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "article_dir": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "2c52baa1-e3fc-445c-9a6e-e2e0f716bf60",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "article_dir": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "b24e34e7-4b7d-4970-afb0-0db40e7ef64d",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "article_dir": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "2d8ada85-005f-47df-8797-ba2edf2fc41f",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "article_dir": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "ed2ba11e-d2e7-40cc-9003-1ebc8e8fcad6",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "article_dir": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "fd589783-41bf-40e4-9396-46e3f39183af",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "article_dir": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "97b9c33c-0cc2-4d75-a38e-6af0c7bbbbf3",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "article_dir": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "0fc93322-82f2-423d-9783-3428026e5ef5",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "article_dir": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "ede73de3-0c53-420f-bdae-4fe11ff495a1",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "article_dir": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "9bfdfa9f-2c5b-41ca-9baa-3104bc944b92",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "article_dir": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "801f00d2-a4bf-452e-87b5-b172405abf94",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "article_dir": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "5c6c5d2b-d9e0-4e8c-88e1-a8e9d22218fa",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "article_dir": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "4ae85877-4383-4bfa-816d-6a4661349b0e",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "article_dir": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "42321ed3-4bff-4083-9f24-05abe68e506a",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "article_dir": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "bf819825-3fe3-43b2-81b2-ecb94a7e8e2f",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "article_dir": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "5de519da-04c1-4f76-9b1a-b06da23bc47f",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "article_dir": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "81613624-0d0a-4b93-a855-99135c69e7a8",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "article_dir": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "84481f32-f190-4c8a-af63-c482aacdb392",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "article_dir": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "f25d2e41-4996-4a87-8e99-aecf31a36019",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "article_dir": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "584f7fdf-c74a-48fb-bc91-42fb80d4f56c",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "article_dir": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "06028da1-bf09-4f25-a810-46e7616dfc6b",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "article_dir": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "67efb640-4b5f-453c-9879-48545884a312",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "article_dir": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "ff764a29-1325-4908-bb30-178acf3e50c9",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "article_dir": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "9fa28879-658c-4c90-9bb7-20eaceea12e1",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "article_dir": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "eff2f430-07f1-4733-83fa-5069ee2a90a7",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "article_dir": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "d6dbfe45-93b9-472e-b1b1-4167f43f90d2",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "article_dir": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "ff36be49-816a-42fb-9ce2-73286caf4e89",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "article_dir": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "f1697646-3ea4-4821-ad99-e6be29f2101e",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "article_dir": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "e26a0311-558b-4833-90db-93a93339cc31",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "article_dir": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "7f4ad7eb-929c-4b95-b808-2e16c3b91928",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "article_dir": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "e44f9486-335d-43d6-ae2f-ca12b44cc3fd",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "article_dir": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "9034de35-569f-4803-a447-072962ea49ec",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "article_dir": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "6eb018e1-6e24-42f1-bf19-7430ca338024",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "article_dir": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "f73f4413-0bfd-48d6-9682-773ea0c9c974",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "article_dir": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "85b19263-4679-4357-ac48-f02ea53518bb",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "article_dir": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "0901dd48-3e62-4b85-96a6-4f13cfe8ec8f",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "article_dir": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "50da45cd-3084-4208-b270-d236b38fdefd",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "article_dir": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "7170509b-1cca-4bd5-ae52-91319fa16a0c",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "article_dir": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "8d7a571e-83f6-4d50-a87a-39f85445b7b1",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "article_dir": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "3917e78f-ed71-4032-a35f-0258f3f73cba",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "article_dir": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "9700b56b-be57-4b24-84c0-f17a06a654a5",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "article_dir": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "1b89c7d0-3b82-472e-b92c-ae930772ae8b",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "article_dir": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "ef8a3c44-d5f2-45b8-88b7-b4c9296137b0",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "article_dir": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "029253cc-5422-437e-9c07-0978827010b9",
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "article_dir": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "241f406f-336a-4198-932d-1d78b4b5b615",
+      "article_id": "fc6f1ca7-340b-4188-8fc0-036e4e9d4498",
+      "article_dir": ".ai/content-audit-export/articles/case-study-hospital-mall-school--fc6f1ca7-340b-4188-8fc0-036e4e9d4498",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "cf0b98c2-ff76-4a51-a049-09e2924408f8",
+      "article_id": "fc6f1ca7-340b-4188-8fc0-036e4e9d4498",
+      "article_dir": ".ai/content-audit-export/articles/case-study-hospital-mall-school--fc6f1ca7-340b-4188-8fc0-036e4e9d4498",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "036245ae-a96d-4363-bc10-9b4354409910",
+      "article_id": "fc6f1ca7-340b-4188-8fc0-036e4e9d4498",
+      "article_dir": ".ai/content-audit-export/articles/case-study-hospital-mall-school--fc6f1ca7-340b-4188-8fc0-036e4e9d4498",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "9d20ba95-68df-43a3-bc57-c528f2b31d75",
+      "article_id": "fc6f1ca7-340b-4188-8fc0-036e4e9d4498",
+      "article_dir": ".ai/content-audit-export/articles/case-study-hospital-mall-school--fc6f1ca7-340b-4188-8fc0-036e4e9d4498",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "0b1a58aa-e2dc-4652-aed9-90d65d88897e",
+      "article_id": "fc6f1ca7-340b-4188-8fc0-036e4e9d4498",
+      "article_dir": ".ai/content-audit-export/articles/case-study-hospital-mall-school--fc6f1ca7-340b-4188-8fc0-036e4e9d4498",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "ad0caf2e-6861-4442-959c-01113c917e90",
+      "article_id": "fc6f1ca7-340b-4188-8fc0-036e4e9d4498",
+      "article_dir": ".ai/content-audit-export/articles/case-study-hospital-mall-school--fc6f1ca7-340b-4188-8fc0-036e4e9d4498",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "a2bb45a9-c3e5-4495-ad40-fe92ad46b933",
+      "article_id": "fc6f1ca7-340b-4188-8fc0-036e4e9d4498",
+      "article_dir": ".ai/content-audit-export/articles/case-study-hospital-mall-school--fc6f1ca7-340b-4188-8fc0-036e4e9d4498",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "3e80f75e-55f1-47b5-86eb-311ebb72689b",
+      "article_id": "fc6f1ca7-340b-4188-8fc0-036e4e9d4498",
+      "article_dir": ".ai/content-audit-export/articles/case-study-hospital-mall-school--fc6f1ca7-340b-4188-8fc0-036e4e9d4498",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "dbaedc3a-66a4-447f-8ed0-0936cc473e21",
+      "article_id": "fc6f1ca7-340b-4188-8fc0-036e4e9d4498",
+      "article_dir": ".ai/content-audit-export/articles/case-study-hospital-mall-school--fc6f1ca7-340b-4188-8fc0-036e4e9d4498",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "3fbf2660-9c49-471d-a52d-da6ae82ae585",
+      "article_id": "fc6f1ca7-340b-4188-8fc0-036e4e9d4498",
+      "article_dir": ".ai/content-audit-export/articles/case-study-hospital-mall-school--fc6f1ca7-340b-4188-8fc0-036e4e9d4498",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "db94f167-6c48-4e60-8cae-a3e08c928e62",
+      "article_id": "fc6f1ca7-340b-4188-8fc0-036e4e9d4498",
+      "article_dir": ".ai/content-audit-export/articles/case-study-hospital-mall-school--fc6f1ca7-340b-4188-8fc0-036e4e9d4498",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "a5605b5d-36c6-42ab-a2d3-09d452ffca60",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "article_dir": ".ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "ba5efc1a-a888-40c9-9964-035a2b5dd082",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "article_dir": ".ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "64cba10b-080e-476a-9fe6-0e58cd600c51",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "article_dir": ".ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "risk_flags": [
+        "dimension/date/source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "b74d0dc7-3d9d-48de-83ae-1b9c1b93cc34",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "article_dir": ".ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "risk_flags": [
+        "dimension/date/source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "658c86c0-033b-4076-a164-4f9f340d076d",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "article_dir": ".ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "02b7d88c-9cd9-490d-bee9-e99f8ea295d0",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "article_dir": ".ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "ec35cf94-47a4-4c0a-b302-abea950df2f9",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "article_dir": ".ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "risk_flags": [
+        "dimension/date/source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "ddc472c4-f686-4109-a605-fa711af4cbf3",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "article_dir": ".ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "d4c64da6-538a-4598-b181-b28685dd8846",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "article_dir": ".ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "9001b08a-4302-4112-b194-37e88f05a662",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "article_dir": ".ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "8396e018-430e-432e-be37-7e2d8f27ea74",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "article_dir": ".ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "93754360-2b5e-4017-8796-f072e145d4c8",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "article_dir": ".ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "82ddc730-b980-4e97-a5f6-ea52fb5e7059",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "article_dir": ".ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "a5d4ccae-043d-4145-8dc9-63535a4a36f9",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "article_dir": ".ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "f8cb0fd3-ca78-403d-8a32-07f4c0ab8533",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "article_dir": ".ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "54fa45bb-0cfb-40e2-b23f-ba61d5b78e49",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "article_dir": ".ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "b0bb7690-f58b-42ee-a4fd-f9e36e72c339",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "article_dir": ".ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "f4e27925-cce8-44c6-a8f0-9206def950bc",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "article_dir": ".ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "44efd846-6c7d-469f-8eef-67b0837f5b55",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "article_dir": ".ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "84242c90-2798-4184-8b81-cfb270542c8c",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "article_dir": ".ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "83e05bda-830d-4557-976c-762ca9969865",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "article_dir": ".ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "5daa649f-2caa-4db1-852d-e3d93e91d7e4",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "article_dir": ".ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "9c4f9a4c-3134-496f-addb-11c64caa7ed4",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "article_dir": ".ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "0b81eade-47c3-421a-90cb-8cf64be6283f",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "article_dir": ".ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "b9fa7052-9f99-4f9c-b30a-fe6e6d4cadbc",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "article_dir": ".ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "f19f1e60-ec7f-40c5-9559-d63ba98917f6",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "article_dir": ".ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "98e8f96f-d997-4284-a206-ce1cbefab663",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "article_dir": ".ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "115e5146-f058-4edb-93fa-26b1d316e9cb",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "article_dir": ".ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "971309c0-d432-46c8-88e4-ef4dac529382",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "article_dir": ".ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "65e69fd7-c1a2-4a3f-807f-816310ecece0",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "article_dir": ".ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "eea71aad-f800-48ef-875f-3466c1f1bd57",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "article_dir": ".ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "risk_flags": [
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "8daefa6f-69e4-4cf6-8aa8-4757a306142c",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "article_dir": ".ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "bb055257-0b90-462d-940c-2b7ce502a0da",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "article_dir": ".ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    },
+    {
+      "question_id": "c2b210d9-0e54-4b40-b0c3-e81360b04e64",
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "article_dir": ".ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "risk_flags": [
+        "dimension/date/source risk",
+        "legal/code source risk"
+      ],
+      "status": "quarantine_needs_source"
+    }
+  ],
+  "verified_noop_estimate": 260
+}

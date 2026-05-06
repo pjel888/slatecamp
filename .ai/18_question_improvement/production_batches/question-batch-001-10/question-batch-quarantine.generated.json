@@ -1,0 +1,595 @@
+[
+  {
+    "question_id": "efd55cf2-dbb3-4b7b-9eb2-e38bcdb51e2d",
+    "article_id": "dc69faa6-ef36-40a7-a8f1-fdd88debdbf5",
+    "article_dir": ".ai/content-audit-export/articles/commercial-clearances--dc69faa6-ef36-40a7-a8f1-fdd88debdbf5",
+    "title": "Commercial Clearances",
+    "baseline_hash": "sha256:f19fdd629445cee9987537c5ec22a85e5b031f74b7a4ba331e8c050e6efd5c11",
+    "baseline": {
+      "question_id": "efd55cf2-dbb3-4b7b-9eb2-e38bcdb51e2d",
+      "article_id": "dc69faa6-ef36-40a7-a8f1-fdd88debdbf5",
+      "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
+      "text": "The mnemonic \"ORD\" presented in \"Commercial Clearances\" helps remember:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Average Person"
+        },
+        {
+          "id": "C",
+          "text": "An outdated standard no longer in use"
+        },
+        {
+          "id": "D",
+          "text": "A trap commonly tested on the ALE"
+        },
+        {
+          "id": "E",
+          "text": "A different concept from another subject area"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The mnemonic \"ORD\" was specifically designed to help remember Average Person.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:47:12.902283+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f19fdd629445cee9987537c5ec22a85e5b031f74b7a4ba331e8c050e6efd5c11"
+    },
+    "proposed": {
+      "rationale": "The mnemonic \"ORD\" was specifically designed to help remember Average Person.",
+      "explanation": "The supported answer is “Average Person.” In the linked article, this concept is presented under “Commercial Clearances,” so the option should be selected because it matches the article’s stated concept rather than a generic distractor."
+    },
+    "classification": "rationale_improvement",
+    "evidence": "correct option text appears in linked published article; no answer-key or option changes",
+    "quarantine_reason": "distractor leakage: generic/non-plausible distractors require source-grounded option rewrite"
+  },
+  {
+    "question_id": "274cacaf-64c4-4f85-a9f5-254707fae0fe",
+    "article_id": "28f9907c-c87b-4f49-a9c4-8371989f6865",
+    "article_dir": ".ai/content-audit-export/articles/lea-hist-001-01-core-concept--28f9907c-c87b-4f49-a9c4-8371989f6865",
+    "title": "Lea Hist 001 01 Core Concept",
+    "baseline_hash": "sha256:f8a1457d263485fbdf0e421c5bdb51aeb79f8bcbfce9421ba3dd102bf4f48b00",
+    "baseline": {
+      "question_id": "274cacaf-64c4-4f85-a9f5-254707fae0fe",
+      "article_id": "28f9907c-c87b-4f49-a9c4-8371989f6865",
+      "topic_id": "5268bd23-8290-44ef-b78e-65df843f5582",
+      "text": "Which site, located on the Isle of Lewis in Scotland, features 13 main stones arranged in a cruciform plan?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Carnac Stones, known for their linear arrangement in Brittany, France"
+        },
+        {
+          "id": "b",
+          "text": "Callanish Stones"
+        },
+        {
+          "id": "c",
+          "text": "Stonehenge, a prehistoric monument in Wiltshire, England, famous for its circular setting"
+        },
+        {
+          "id": "d",
+          "text": "Newgrange, a prehistoric monument in County Meath, Ireland, known for its passage tomb"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Carnac Stones are located in Brittany, France, not Scotland, and consist of rows of menhir alignments totaling over 3,000 stones rather than a cruciform plan.",
+        "c": "Stonehenge is located in Wiltshire, England, not Scotland, and features sarsen stones and bluestones in a circular arrangement rather than a cruciform plan.",
+        "d": "Newgrange is located in County Meath, Ireland, not Scotland, and is a passage grave rather than a stone circle with a cruciform plan.",
+        "correct": "Callanish Stones is the correct answer, located on the Isle of Lewis, Scotland, with 13 main stones in a cruciform (cross-shaped) plan. The main stone circle was constructed during the Late Neolithic period, approximately 2900–2600 BCE.",
+        "takeaway": "The main stone circle was constructed during the Late Neolithic period, approximately 2900–2600 BCE."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "ID"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-001-01-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:22.549111+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f8a1457d263485fbdf0e421c5bdb51aeb79f8bcbfce9421ba3dd102bf4f48b00"
+    },
+    "proposed": {
+      "rationale": {
+        "a": "Carnac Stones are located in Brittany, France, not Scotland, and consist of rows of menhir alignments totaling over 3,000 stones rather than a cruciform plan.",
+        "c": "Stonehenge is located in Wiltshire, England, not Scotland, and features sarsen stones and bluestones in a circular arrangement rather than a cruciform plan.",
+        "d": "Newgrange is located in County Meath, Ireland, not Scotland, and is a passage grave rather than a stone circle with a cruciform plan.",
+        "correct": "Callanish Stones is the correct answer, located on the Isle of Lewis, Scotland, with 13 main stones in a cruciform (cross-shaped) plan. The main stone circle was constructed during the Late Neolithic period, approximately 2900–2600 BCE.",
+        "takeaway": "The main stone circle was constructed during the Late Neolithic period, approximately 2900–2600 BCE."
+      },
+      "explanation": "The supported answer is “Callanish Stones.” In the linked article, this concept is presented under “Lea Hist 001 01 Core Concept,” so the option should be selected because it matches the article’s stated concept rather than a generic distractor."
+    },
+    "classification": "rationale_improvement",
+    "evidence": "correct option text appears in linked published article; no answer-key or option changes",
+    "quarantine_reason": "distractor leakage: geography wording allows elimination without testing target concept"
+  },
+  {
+    "question_id": "f06dc934-6ef5-442f-bb57-d56d73d84e8a",
+    "article_id": "622a401a-b889-4744-9d44-f77daa1627b4",
+    "article_dir": ".ai/content-audit-export/articles/lea-dsgn-005-10-core-concept--622a401a-b889-4744-9d44-f77daa1627b4",
+    "title": "Lea Dsgn 005 10 Core Concept",
+    "baseline_hash": "sha256:bc2a067eef016d854f2f826571cdbb63f1a275272013739c4114a144cd011638",
+    "baseline": {
+      "question_id": "f06dc934-6ef5-442f-bb57-d56d73d84e8a",
+      "article_id": "622a401a-b889-4744-9d44-f77daa1627b4",
+      "topic_id": "658e1d08-57bc-41d5-9ddf-ee62898ccdfc",
+      "text": "A 350-sqm multi-purpose hall (Group H assembly) is not sprinklered. What is the maximum allowed travel distance to an exit?",
+      "options": [
+        {
+          "id": "a",
+          "text": "30 meters"
+        },
+        {
+          "id": "b",
+          "text": "45 meters"
+        },
+        {
+          "id": "c",
+          "text": "60 meters"
+        },
+        {
+          "id": "d",
+          "text": "75 meters"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "30 meters is more restrictive than required.",
+        "c": "60 meters applies only to sprinklered buildings; this hall is unsprinklered.",
+        "d": "75 meters exceeds NBC limits.",
+        "correct": "For Group H assembly without sprinklers, maximum travel distance = 45 meters per NBC. Sprinklered buildings may extend to 60 meters. (NBC Fire Safety, Travel Distance)",
+        "takeaway": "Unsprinklered Group H assembly: max travel distance = 45 meters. Sprinklered = 60 meters."
+      },
+      "explanation": null,
+      "code_citation": "NBC Fire Safety, Travel Distance",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "fire safety",
+        "travel distance"
+      ],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-005-10-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:59.547655+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:bc2a067eef016d854f2f826571cdbb63f1a275272013739c4114a144cd011638"
+    },
+    "proposed": {
+      "rationale": "For Group H assembly without sprinklers, maximum travel distance = 45 meters per NBC. Sprinklered buildings may extend to 60 meters. (NBC Fire Safety, Travel Distance) Unsprinklered Group H assembly: max travel distance = 45 meters. Sprinklered = 60 meters.",
+      "explanation": "For Group H assembly without sprinklers, maximum travel distance = 45 meters per NBC. Sprinklered buildings may extend to 60 meters. (NBC Fire Safety, Travel Distance) Unsprinklered Group H assembly: max travel distance = 45 meters. Sprinklered = 60 meters. In review, focus on why “45 meters” answers the stem directly, then compare each distractor against that same criterion."
+    },
+    "classification": "rationale_improvement",
+    "evidence": "Explanation derived from existing rationale and preserved correct option; no answer-key or option changes.",
+    "quarantine_reason": "Psychometric reviewer rejected explanation as insufficiently question-specific; held for source-grounded rewrite."
+  },
+  {
+    "question_id": "ae640469-4c88-4353-9ad1-0801e6f7ce6c",
+    "article_id": "622a401a-b889-4744-9d44-f77daa1627b4",
+    "article_dir": ".ai/content-audit-export/articles/lea-dsgn-005-10-core-concept--622a401a-b889-4744-9d44-f77daa1627b4",
+    "title": "Lea Dsgn 005 10 Core Concept",
+    "baseline_hash": "sha256:8e5c71d4dd1c954c9e60cbf96ded5c8908d41a37999f4f13f110e175ae97c28d",
+    "baseline": {
+      "question_id": "ae640469-4c88-4353-9ad1-0801e6f7ce6c",
+      "article_id": "622a401a-b889-4744-9d44-f77daa1627b4",
+      "topic_id": "658e1d08-57bc-41d5-9ddf-ee62898ccdfc",
+      "text": "A demountable (temporary) stage is to be installed in a multi-purpose hall. What is the required minimum depth?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2.0–3.0 meters"
+        },
+        {
+          "id": "b",
+          "text": "4.0–6.0 meters"
+        },
+        {
+          "id": "c",
+          "text": "6.0–8.0 meters"
+        },
+        {
+          "id": "d",
+          "text": "8.0–10.0 meters"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "2.0–3.0 meters is too shallow for performer movement and equipment.",
+        "c": "6.0–8.0 meters is larger than standard demountable requirement.",
+        "d": "8.0–10.0 meters exceeds typical temporary stage depth.",
+        "correct": "Demountable stage depth = 4.0–6.0 meters to accommodate performers, technical setup, and minimal storage. (NBC Assembly Stage Standards)",
+        "takeaway": "Demountable stage depth = 4.0–6.0 meters per assembly standards."
+      },
+      "explanation": null,
+      "code_citation": "NBC Assembly Stage Standards",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [
+        "stage design"
+      ],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-005-10-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:59.547655+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8e5c71d4dd1c954c9e60cbf96ded5c8908d41a37999f4f13f110e175ae97c28d"
+    },
+    "proposed": {
+      "rationale": "Demountable stage depth = 4.0–6.0 meters to accommodate performers, technical setup, and minimal storage. (NBC Assembly Stage Standards) Demountable stage depth = 4.0–6.0 meters per assembly standards.",
+      "explanation": "Demountable stage depth = 4.0–6.0 meters to accommodate performers, technical setup, and minimal storage. (NBC Assembly Stage Standards) Demountable stage depth = 4.0–6.0 meters per assembly standards. In review, focus on why “4.0–6.0 meters” answers the stem directly, then compare each distractor against that same criterion."
+    },
+    "classification": "rationale_improvement",
+    "evidence": "Explanation derived from existing rationale and preserved correct option; no answer-key or option changes.",
+    "quarantine_reason": "Psychometric reviewer rejected explanation as insufficiently question-specific; held for source-grounded rewrite."
+  },
+  {
+    "question_id": "8c1258d5-8418-43bd-b42d-28acd94f3fef",
+    "article_id": "cd18af9a-b1e1-42d4-a254-ff5244838f19",
+    "article_dir": ".ai/content-audit-export/articles/lea-dsgn-005-11-core-concept--cd18af9a-b1e1-42d4-a254-ff5244838f19",
+    "title": "Lea Dsgn 005 11 Core Concept",
+    "baseline_hash": "sha256:0eba03441eee3515445c8855b752f0eb2af4c1f89522a50951c997ba399bc837",
+    "baseline": {
+      "question_id": "8c1258d5-8418-43bd-b42d-28acd94f3fef",
+      "article_id": "cd18af9a-b1e1-42d4-a254-ff5244838f19",
+      "topic_id": "3eaa1cf4-7e70-406f-995a-de8a7437672a",
+      "text": "What is the required temperature range for a funeral home cold storage (morgue) facility?",
+      "options": [
+        {
+          "id": "a",
+          "text": "10–15°C"
+        },
+        {
+          "id": "b",
+          "text": "2–4°C"
+        },
+        {
+          "id": "c",
+          "text": "0–2°C"
+        },
+        {
+          "id": "d",
+          "text": "Below 0°C (freezing)"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "10–15°C is room temperature; insufficient preservation.",
+        "c": "0–2°C is near-freezing; 2–4°C is the standard refrigeration range.",
+        "d": "Below 0°C (freezing) is not necessary for short-term cold storage.",
+        "correct": "Cold storage for bodies requires 2–4°C (refrigeration temperature) to slow decomposition. (Funeral Home Design Standards, Mortuary Science Practice)",
+        "takeaway": "Funeral home cold storage temperature = 2–4°C per industry standards."
+      },
+      "explanation": null,
+      "code_citation": "Funeral Home Design Standards; Mortuary Science Practice",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "cold storage",
+        "temperature control"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-005-11-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:00.291039+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0eba03441eee3515445c8855b752f0eb2af4c1f89522a50951c997ba399bc837"
+    },
+    "proposed": {
+      "rationale": "Cold storage for bodies requires 2–4°C (refrigeration temperature) to slow decomposition. (Funeral Home Design Standards, Mortuary Science Practice) Funeral home cold storage temperature = 2–4°C per industry standards.",
+      "explanation": "Cold storage for bodies requires 2–4°C (refrigeration temperature) to slow decomposition. (Funeral Home Design Standards, Mortuary Science Practice) Funeral home cold storage temperature = 2–4°C per industry standards. In review, focus on why “2–4°C” answers the stem directly, then compare each distractor against that same criterion."
+    },
+    "classification": "rationale_improvement",
+    "evidence": "Explanation derived from existing rationale and preserved correct option; no answer-key or option changes.",
+    "quarantine_reason": "Psychometric reviewer rejected explanation as insufficiently question-specific; held for source-grounded rewrite."
+  },
+  {
+    "question_id": "b4864bda-0b9d-4da2-b226-fca9833aa239",
+    "article_id": "c9b1aadd-4843-4cf3-a551-6dd67678e508",
+    "article_dir": ".ai/content-audit-export/articles/lea-dsgn-007-04-core-concept--c9b1aadd-4843-4cf3-a551-6dd67678e508",
+    "title": "Lea Dsgn 007 04 Core Concept",
+    "baseline_hash": "sha256:a5044542d3503bc37675951940597bb82449edb3193c39c62e6f3fadbc8faa37",
+    "baseline": {
+      "question_id": "b4864bda-0b9d-4da2-b226-fca9833aa239",
+      "article_id": "c9b1aadd-4843-4cf3-a551-6dd67678e508",
+      "topic_id": "325cc696-9b36-4e19-9bd7-9f2105d29165",
+      "text": "Which phase of the architectural design process focuses on site analysis, client interviews, and program development before design concepts are explored?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Schematic Design"
+        },
+        {
+          "id": "b",
+          "text": "Pre-Design"
+        },
+        {
+          "id": "c",
+          "text": "Design Development"
+        },
+        {
+          "id": "d",
+          "text": "Construction Documents"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Schematic Design develops conceptual solutions after the problem is defined in Pre-Design.",
+        "b": "Correct: Pre-Design precedes all other phases. It answers 'what should this building do?' before 'how should it be designed?'",
+        "c": "Design Development refines a selected Schematic concept; it requires Pre-Design to establish the program.",
+        "d": "Construction Documents are produced after Design Development and are for construction, not problem definition.",
+        "correct": "Pre-Design establishes the project foundation: site surveys, climate analysis, client requirements, program statement, preliminary feasibility. This phase defines the design problem before concepts are developed.",
+        "takeaway": "Pre-Design = problem definition (what/where/why). Schematic Design = solution exploration (how). Do not skip Pre-Design or combine it with Schematic. The problem must be clear before solutions are designed."
+      },
+      "explanation": null,
+      "code_citation": "UAP Standard Practice Parameters (SPP); Design Process Framework",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "design process phases"
+      ],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-007-04-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:58.165968+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a5044542d3503bc37675951940597bb82449edb3193c39c62e6f3fadbc8faa37"
+    },
+    "proposed": {
+      "rationale": "Pre-Design establishes the project foundation: site surveys, climate analysis, client requirements, program statement, preliminary feasibility. This phase defines the design problem before concepts are developed. Pre-Design = problem definition (what/where/why). Schematic Design = solution exploration (how). Do not skip Pre-Design or combine it with Schematic. The problem must be clear before solutions are designed.",
+      "explanation": "Pre-Design establishes the project foundation: site surveys, climate analysis, client requirements, program statement, preliminary feasibility. This phase defines the design problem before concepts are developed. Pre-Design = problem definition (what/where/why). Schematic Design = solution exploration (how). Do not skip Pre-Design or combine it with Schematic. The problem must be clear before solutions are designed. In review, focus on why “Pre-Design” answers the stem directly, then compare each distractor against that same criterion."
+    },
+    "classification": "rationale_improvement",
+    "evidence": "Explanation derived from existing rationale and preserved correct option; no answer-key or option changes.",
+    "quarantine_reason": "Psychometric reviewer rejected explanation as insufficiently question-specific; held for source-grounded rewrite."
+  },
+  {
+    "question_id": "13781414-6765-40a5-a91e-12fc2c66fa98",
+    "article_id": "246c66db-c0cf-4cd3-8f52-9491451e7c76",
+    "article_dir": ".ai/content-audit-export/articles/lea-dsgn-009-04-core-concept--246c66db-c0cf-4cd3-8f52-9491451e7c76",
+    "title": "Lea Dsgn 009 04 Core Concept",
+    "baseline_hash": "sha256:9afb1c5f3068c4aaf72516ad5ed1e3ebb95bd232be4ab5119c77b38cf0cd2d6d",
+    "baseline": {
+      "question_id": "13781414-6765-40a5-a91e-12fc2c66fa98",
+      "article_id": "246c66db-c0cf-4cd3-8f52-9491451e7c76",
+      "topic_id": "da73c15c-1a10-4832-8df3-a3b2fb2126a7",
+      "text": "Which of the following is the national green building certification system for the Philippines?",
+      "options": [
+        {
+          "id": "a",
+          "text": "LEED v4.1"
+        },
+        {
+          "id": "b",
+          "text": "BERDE"
+        },
+        {
+          "id": "c",
+          "text": "EDGE"
+        },
+        {
+          "id": "d",
+          "text": "ISO 14001"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "LEED is a US-based system by USGBC; while used globally, it is not the Philippine national standard.",
+        "c": "EDGE is an IFC system focused on 20% efficiency improvement; it is growing in the region but is not the national system.",
+        "d": "ISO 14001 is an environmental management standard, not a building rating system.",
+        "correct": "BERDE (Building for Ecologically Responsive Design Excellence) is developed and administered by the Philippine Green Building Council (PHILGBC) and is the national sustainability rating system aligned with Philippine environmental and climate context.",
+        "takeaway": "BERDE is the Philippines' domestic green building certification framework."
+      },
+      "explanation": null,
+      "code_citation": "PHILGBC BERDE Rating System (voluntary national system recognized by DOE)",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-009-04-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:58.790366+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9afb1c5f3068c4aaf72516ad5ed1e3ebb95bd232be4ab5119c77b38cf0cd2d6d"
+    },
+    "proposed": {
+      "rationale": "BERDE (Building for Ecologically Responsive Design Excellence) is developed and administered by the Philippine Green Building Council (PHILGBC) and is the national sustainability rating system aligned with Philippine environmental and climate context. BERDE is the Philippines' domestic green building certification framework.",
+      "explanation": "BERDE (Building for Ecologically Responsive Design Excellence) is developed and administered by the Philippine Green Building Council (PHILGBC) and is the national sustainability rating system aligned with Philippine environmental and climate context. BERDE is the Philippines' domestic green building certification framework. In review, focus on why “BERDE” answers the stem directly, then compare each distractor against that same criterion."
+    },
+    "classification": "rationale_improvement",
+    "evidence": "Explanation derived from existing rationale and preserved correct option; no answer-key or option changes.",
+    "quarantine_reason": "Psychometric reviewer rejected explanation as insufficiently question-specific; held for source-grounded rewrite."
+  },
+  {
+    "question_id": "87a2f9f8-1a1b-43c9-b5ee-fc8042301a1f",
+    "article_id": "28f9907c-c87b-4f49-a9c4-8371989f6865",
+    "article_dir": ".ai/content-audit-export/articles/lea-hist-001-01-core-concept--28f9907c-c87b-4f49-a9c4-8371989f6865",
+    "title": "Lea Hist 001 01 Core Concept",
+    "baseline_hash": "sha256:291e1a26ef11aabd922fa4d66cce62f90a1e230ceb34b38f6af7cf3f50ffe3d6",
+    "baseline": {
+      "question_id": "87a2f9f8-1a1b-43c9-b5ee-fc8042301a1f",
+      "article_id": "28f9907c-c87b-4f49-a9c4-8371989f6865",
+      "topic_id": "5268bd23-8290-44ef-b78e-65df843f5582",
+      "text": "An archaeological site in Ireland features a narrow corridor leading to a burial chamber, with each course of stone projecting slightly beyond the one below it, all covered by an earthen mound. Which megalithic structure type does this describe?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dolmen"
+        },
+        {
+          "id": "b",
+          "text": "Menhir alignment"
+        },
+        {
+          "id": "c",
+          "text": "Passage grave"
+        },
+        {
+          "id": "d",
+          "text": "Stone circle"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "A dolmen is 'a megalithic chamber formed by vertical stones capped with a flat stone' and typically lacks the corridor and corbelling features described.",
+        "b": "Menhir alignments are 'multiple standing stones arranged in rows or processional patterns,' not underground burial structures with corbelling.",
+        "d": "Stone circles are 'ritual arrangement of standing stones in a circular or near-circular plan,' not underground chambers with corbelled passages.",
+        "correct": "The description matches the defining features of a passage grave: 'a megalithic tomb with a narrow corridor leading to a burial chamber, often corbelled and covered by an earthen mound.' The corbelling (each course projecting beyond the one below) is the key identifier.",
+        "takeaway": "The description matches the defining features of a passage grave: 'a megalithic tomb with a narrow corridor leading to a burial chamber, often corbelled and covered by an earthen mound.' The corbelling (each course projecting beyond the one below) is the key identifier."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "recall",
+      "practice_context": [
+        "DESC"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-001-01-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:22.549111+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:291e1a26ef11aabd922fa4d66cce62f90a1e230ceb34b38f6af7cf3f50ffe3d6"
+    },
+    "proposed": {
+      "rationale": "The description matches the defining features of a passage grave: 'a megalithic tomb with a narrow corridor leading to a burial chamber, often corbelled and covered by an earthen mound.' The corbelling (each course projecting beyond the one below) is the key identifier. The description matches the defining features of a passage grave: 'a megalithic tomb with a narrow corridor leading to a burial chamber, often corbelled and covered by an earthen mound.' The corbelling (each course projecting beyond the one below) is the key identifier.",
+      "explanation": "The description matches the defining features of a passage grave: 'a megalithic tomb with a narrow corridor leading to a burial chamber, often corbelled and covered by an earthen mound.' The corbelling (each course projecting beyond the one below) is the key identifier. The description matches the defining features of a passage grave: 'a megalithic tomb with a narrow corridor leading to a burial chamber, often corbelled and covered by an earthen mound.' The corbelling (each course projecting beyond the one below) is the key identifier. In review, focus on why “Passage grave” answers the stem directly, then compare each distractor against that same criterion."
+    },
+    "classification": "rationale_improvement",
+    "evidence": "Explanation derived from existing rationale and preserved correct option; no answer-key or option changes.",
+    "quarantine_reason": "Psychometric reviewer rejected explanation as insufficiently question-specific; held for source-grounded rewrite."
+  },
+  {
+    "question_id": "cf5efe9f-160b-432e-bb8c-2c0e02ea12da",
+    "article_id": "28f9907c-c87b-4f49-a9c4-8371989f6865",
+    "article_dir": ".ai/content-audit-export/articles/lea-hist-001-01-core-concept--28f9907c-c87b-4f49-a9c4-8371989f6865",
+    "title": "Lea Hist 001 01 Core Concept",
+    "baseline_hash": "sha256:50d367e06478ba1d2e70cab5ada8a23fdac8bc8e670ed7030cd933793ae419d6",
+    "baseline": {
+      "question_id": "cf5efe9f-160b-432e-bb8c-2c0e02ea12da",
+      "article_id": "28f9907c-c87b-4f49-a9c4-8371989f6865",
+      "topic_id": "5268bd23-8290-44ef-b78e-65df843f5582",
+      "text": "A trilithon structure consists of which arrangement of stones?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Three standing stones arranged in a triangular pattern"
+        },
+        {
+          "id": "b",
+          "text": "Two vertical stones supporting one horizontal stone"
+        },
+        {
+          "id": "c",
+          "text": "A central stone surrounded by concentric circles of standing stones"
+        },
+        {
+          "id": "d",
+          "text": "Multiple courses of stone, each projecting beyond the one below"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While three stones are involved, a trilithon has a specific structural arrangement (two supporting one), not a triangular ground plan.",
+        "c": "This describes a stone circle arrangement, not a trilithon, which is a vertical structural unit.",
+        "d": "This describes corbelling, a technique used in passage graves, not the structure of a trilithon.",
+        "correct": "The article defines a trilithon as 'a post-and-lintel unit consisting of two vertical stones supporting one horizontal stone; famously used at Stonehenge.'",
+        "takeaway": "The article defines a trilithon as 'a post-and-lintel unit consisting of two vertical stones supporting one horizontal stone; famously used at Stonehenge.'."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DESC"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-001-01-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:22.549111+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:50d367e06478ba1d2e70cab5ada8a23fdac8bc8e670ed7030cd933793ae419d6"
+    },
+    "proposed": {
+      "rationale": "The article defines a trilithon as 'a post-and-lintel unit consisting of two vertical stones supporting one horizontal stone; famously used at Stonehenge.' The article defines a trilithon as 'a post-and-lintel unit consisting of two vertical stones supporting one horizontal stone; famously used at Stonehenge.'.",
+      "explanation": "The article defines a trilithon as 'a post-and-lintel unit consisting of two vertical stones supporting one horizontal stone; famously used at Stonehenge.' The article defines a trilithon as 'a post-and-lintel unit consisting of two vertical stones supporting one horizontal stone; famously used at Stonehenge.'. In review, focus on why “Two vertical stones supporting one horizontal stone” answers the stem directly, then compare each distractor against that same criterion."
+    },
+    "classification": "rationale_improvement",
+    "evidence": "Explanation derived from existing rationale and preserved correct option; no answer-key or option changes.",
+    "quarantine_reason": "Psychometric reviewer rejected explanation as insufficiently question-specific; held for source-grounded rewrite."
+  }
+]

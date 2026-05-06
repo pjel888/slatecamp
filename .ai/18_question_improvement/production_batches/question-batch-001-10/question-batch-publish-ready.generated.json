@@ -1,0 +1,59 @@
+[
+  {
+    "question_id": "38075322-c38c-402b-98ad-058e9aa5efce",
+    "article_id": "9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+    "article_dir": ".ai/content-audit-export/articles/allowable-floor-area-increases--9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+    "title": "Allowable Floor Area Increases",
+    "baseline_hash": "sha256:8a7791386ee83e0e3545056000bf958e566130492c1aa5293a57e689876fabab",
+    "baseline": {
+      "question_id": "38075322-c38c-402b-98ad-058e9aa5efce",
+      "article_id": "9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under the IBC, what is the simplified form of the frontage increase formula (If) when the open space width equals or exceeds 30 feet?",
+      "options": [
+        {
+          "id": "a",
+          "text": "If = F/P × 30, which applies when the open space is consistently maintained"
+        },
+        {
+          "id": "b",
+          "text": "If = F/P − 0.25"
+        },
+        {
+          "id": "c",
+          "text": "If = 0.25 − F/P, applicable only under specific zoning conditions"
+        },
+        {
+          "id": "d",
+          "text": "If = F/P, used when no additional modifications are required"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Option A (F/P × 30) drops both the threshold subtraction and the division by 30. Option C (0.25 − F/P) reverses the subtraction. Option D (F/P) omits the threshold subtraction entirely. All three are common errors that produce wrong answers in frontage calculations.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:13.304811+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8a7791386ee83e0e3545056000bf958e566130492c1aa5293a57e689876fabab"
+    },
+    "proposed": {
+      "rationale": "Option A (F/P × 30) drops both the threshold subtraction and the division by 30. Option C (0.25 − F/P) reverses the subtraction. Option D (F/P) omits the threshold subtraction entirely. All three are common errors that produce wrong answers in frontage calculations.",
+      "explanation": "When the open-space width reaches the 30-foot cap, the frontage formula no longer rewards additional width. The simplified result keeps the frontage-to-perimeter ratio and subtracts the 0.25 threshold, so “If = F/P − 0.25” is the defensible answer. The other choices either multiply by the cap, reverse the subtraction, or omit the threshold."
+    },
+    "classification": "rationale_improvement",
+    "evidence": "Explanation derived from existing rationale and preserved correct option; no answer-key or option changes."
+  }
+]

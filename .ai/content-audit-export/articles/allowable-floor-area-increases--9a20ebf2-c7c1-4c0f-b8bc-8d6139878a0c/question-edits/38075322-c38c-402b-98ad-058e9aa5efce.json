@@ -1,0 +1,11 @@
+{
+  "question_id": "38075322-c38c-402b-98ad-058e9aa5efce",
+  "baseline_hash": "sha256:8a7791386ee83e0e3545056000bf958e566130492c1aa5293a57e689876fabab",
+  "reason": "Conservative explanation clarity improvement derived from existing rationale; answer key and options unchanged.",
+  "approved_by": "hermes-question-remediation-autopilot",
+  "approved_at": "2026-05-06T10:57:29.206926Z",
+  "proposed": {
+    "rationale": "Option A (F/P × 30) drops both the threshold subtraction and the division by 30. Option C (0.25 − F/P) reverses the subtraction. Option D (F/P) omits the threshold subtraction entirely. All three are common errors that produce wrong answers in frontage calculations.",
+    "explanation": "When the open-space width reaches the 30-foot cap, the frontage formula no longer rewards additional width. The simplified result keeps the frontage-to-perimeter ratio and subtracts the 0.25 threshold, so “If = F/P − 0.25” is the defensible answer. The other choices either multiply by the cap, reverse the subtraction, or omit the threshold."
+  }
+}
