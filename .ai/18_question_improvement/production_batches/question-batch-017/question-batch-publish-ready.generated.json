@@ -1,0 +1,3158 @@
+[
+  {
+    "question_id": "d6e826ec-546f-405a-8283-d6f70e169a09",
+    "article_id": "06c6e7dc-b3cd-4ff8-a25a-fed405c47830",
+    "article_dir": ".ai/content-audit-export/articles/lea-util-007-04-solar-photovoltaic-pv-systems--06c6e7dc-b3cd-4ff8-a25a-fed405c47830",
+    "title": "lea-util-007-04-solar-photovoltaic-pv-systems",
+    "baseline_hash": "sha256:2fb1984cb5a1504e3ce9677323f5a9367ec471a3626f586eaefca651ce434a9c",
+    "baseline": {
+      "question_id": "d6e826ec-546f-405a-8283-d6f70e169a09",
+      "article_id": "06c6e7dc-b3cd-4ff8-a25a-fed405c47830",
+      "topic_id": "3eddafd9-ac8e-47ba-98d8-1b5c8a8b430e",
+      "text": "Building-integrated photovoltaics (BIPV) embed solar cells into building envelope components. Which of the following BIPV products achieves the highest power output per square meter on a vertical facade?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) Transparent glazing modules with 5–10% efficiency, suitable for applications where natural light is prioritized"
+        },
+        {
+          "id": "b",
+          "text": "B) Solar roof tiles producing 50–150 W per tile, optimized for sloped roof installations rather than vertical facades"
+        },
+        {
+          "id": "c",
+          "text": "C) Facade-mounted systems rated 80–180 W/m² for vertical facades (68% of rooftop optimal at equator latitudes)"
+        },
+        {
+          "id": "d",
+          "text": "D) Thin-film amorphous silicon modules with 7–10% efficiency, often used in applications where flexibility and lightweight are critical"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Transparent glazing achieves only 5–10% efficiency, limiting power density to ~10–20 W/m² despite dual shading function.",
+        "b": "Solar roof tiles are medium-efficiency products; total power density depends on tile size and spacing, typically lower than vertical facade systems.",
+        "d": "Thin-film amorphous modules (7–10%) are less efficient than crystalline BIPV options and unsuitable for facade applications.",
+        "correct": "Facade-mounted BIPV systems deliver 100–250 W/m² on vertical surfaces, outperforming transparent glazing (5–10% efficiency yields ~10–20 W/m²) and thin-film modules (7–10% efficiency). Solar roof tiles (50–150 W/tile) are suitable for sloped roofs but less efficient per m² than facade systems.",
+        "takeaway": "BIPV facade-mounted systems offer superior power density (100–250 W/m²) for vertical building surfaces compared to transparent glazing or thin-film alternatives, making them optimal for commercial building integration."
+      },
+      "explanation": null,
+      "code_citation": "NREL (2021). Photovoltaic Technology Performance: 2021 Benchmarks. NREL/TP-6A40-79326. + IRENA (2022). Southeast Asia Renewable Energy Cost Review.",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-007-04-011",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:03.161281+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2fb1984cb5a1504e3ce9677323f5a9367ec471a3626f586eaefca651ce434a9c"
+    },
+    "proposed": {
+      "explanation": "Transparent glazing achieves only 5–10% efficiency, limiting power density to ~10–20 W/m² despite dual shading function. Solar roof tiles are medium-efficiency products; total power density depends on tile size and spacing, typically lower than vertical facade systems. Thin-film amorphous modules (7–10%) are less efficient than crystalline BIPV options and unsuitable for facade applications. Facade-mounted BIPV systems deliver 100–250 W/m² on vertical surfaces, outperforming transparent glazing (5–10% efficiency yields ~10–20 W/m²) and thin-film modules (7–10% efficiency). Solar roof tiles (50–150 W/tile) are suitable for sloped roofs but less efficient per m² than facade systems. BIPV facade-mounted systems offer superior power density (100–250 W/m²) for vertical building surfaces compared to transparent glazing or thin-film alternatives, making them optimal for commercial building integration."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+  },
+  {
+    "question_id": "b4719f99-18ee-4052-ac1f-49d98df2b573",
+    "article_id": "1ad3cb33-39a8-4a0a-9349-4df850d10ad4",
+    "article_dir": ".ai/content-audit-export/articles/lea-theo-002-04-core-concept--1ad3cb33-39a8-4a0a-9349-4df850d10ad4",
+    "title": "lea-theo-002-04-core-concept",
+    "baseline_hash": "sha256:33ee29d115f743d7e3ea9c016613f8b6f51c0f6cac8d6869c6bddf0aa3d31a15",
+    "baseline": {
+      "question_id": "b4719f99-18ee-4052-ac1f-49d98df2b573",
+      "article_id": "1ad3cb33-39a8-4a0a-9349-4df850d10ad4",
+      "topic_id": "af0a9e56-9363-494f-a2fe-e4a95dde173d",
+      "text": "A building plan shows a central entry hall with three distinct departments extending outward in different directions. This demonstrates which organizing principle?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Centralized organization"
+        },
+        {
+          "id": "b",
+          "text": "Clustered organization"
+        },
+        {
+          "id": "c",
+          "text": "Radial organization"
+        },
+        {
+          "id": "d",
+          "text": "Linear organization"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Centralized would have departments surrounding the center without extending arms.",
+        "b": "Clustered would have departments grouped without clear radial logic.",
+        "d": "Linear would have a single spine with departments along it, not radiating from center.",
+        "correct": "Extending arms from a central organizing point exemplifies radial organization: the central entry is the hub; departments are spokes extending outward. This combines centralized clarity with linear reach.",
+        "takeaway": "This combines centralized clarity with linear reach."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-04-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:33ee29d115f743d7e3ea9c016613f8b6f51c0f6cac8d6869c6bddf0aa3d31a15"
+    },
+    "proposed": {
+      "explanation": "Centralized would have departments surrounding the center without extending arms. Clustered would have departments grouped without clear radial logic. Linear would have a single spine with departments along it, not radiating from center. Extending arms from a central organizing point exemplifies radial organization: the central entry is the hub; departments are spokes extending outward. This combines centralized clarity with linear reach. This combines centralized clarity with linear reach."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+  },
+  {
+    "question_id": "20e1b5cb-0f24-4b81-bde3-52ef8d32d874",
+    "article_id": "1ad3cb33-39a8-4a0a-9349-4df850d10ad4",
+    "article_dir": ".ai/content-audit-export/articles/lea-theo-002-04-core-concept--1ad3cb33-39a8-4a0a-9349-4df850d10ad4",
+    "title": "lea-theo-002-04-core-concept",
+    "baseline_hash": "sha256:dcbf5c64272e5777466526fee8e7cce569869c2a0db1024ce797a082fcd4b5da",
+    "baseline": {
+      "question_id": "20e1b5cb-0f24-4b81-bde3-52ef8d32d874",
+      "article_id": "1ad3cb33-39a8-4a0a-9349-4df850d10ad4",
+      "topic_id": "af0a9e56-9363-494f-a2fe-e4a95dde173d",
+      "text": "Grid organization in architecture arranges forms by:",
+      "options": [
+        {
+          "id": "a",
+          "text": "A set of modular forms regulated by a three-dimensional grid of regular intervals"
+        },
+        {
+          "id": "b",
+          "text": "Following a single directional spine, which serves as the primary axis for spatial organization and circulation"
+        },
+        {
+          "id": "c",
+          "text": "Radiating from a central organizing point, creating a radial symmetry that defines the spatial hierarchy"
+        },
+        {
+          "id": "d",
+          "text": "Clustering around a central focus, which acts as the core of the design and influences the arrangement of surrounding elements"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "That is linear organization.",
+        "c": "That is radial organization.",
+        "d": "That is centralized organization.",
+        "correct": "Grid organization uses a regular, repeating geometric grid (orthogonal, diagonal, or hexagonal) where each grid cell becomes a spatial module. The module is the fundamental unit; all dimensions are multiples of the module.",
+        "takeaway": "The module is the fundamental unit; all dimensions are multiples of the module."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-04-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:dcbf5c64272e5777466526fee8e7cce569869c2a0db1024ce797a082fcd4b5da"
+    },
+    "proposed": {
+      "explanation": "That is linear organization. That is radial organization. That is centralized organization. Grid organization uses a regular, repeating geometric grid (orthogonal, diagonal, or hexagonal) where each grid cell becomes a spatial module. The module is the fundamental unit; all dimensions are multiples of the module. The module is the fundamental unit; all dimensions are multiples of the module."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+  },
+  {
+    "question_id": "495649ef-4620-4a69-a2b3-63000b60c578",
+    "article_id": "1ad3cb33-39a8-4a0a-9349-4df850d10ad4",
+    "article_dir": ".ai/content-audit-export/articles/lea-theo-002-04-core-concept--1ad3cb33-39a8-4a0a-9349-4df850d10ad4",
+    "title": "lea-theo-002-04-core-concept",
+    "baseline_hash": "sha256:1022103d1274815ec9fa5eb2797869232811ea36d0f802e0081c340e3973ba3d",
+    "baseline": {
+      "question_id": "495649ef-4620-4a69-a2b3-63000b60c578",
+      "article_id": "1ad3cb33-39a8-4a0a-9349-4df850d10ad4",
+      "topic_id": "af0a9e56-9363-494f-a2fe-e4a95dde173d",
+      "text": "How do organizing principles relate to spatial experience and wayfinding in complex buildings?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Users don't notice organizing principles; signage and wayfinding systems are what matter, as they provide direct guidance"
+        },
+        {
+          "id": "b",
+          "text": "Organizing principles are purely structural and don't affect how users experience or navigate buildings, focusing solely on the building's framework"
+        },
+        {
+          "id": "c",
+          "text": "Principles determine spatial relationships, movement patterns, clarity of hierarchy, and intuitive wayfinding—a clear organizing principle helps users understand the building's geometry"
+        },
+        {
+          "id": "d",
+          "text": "Organizing principles only apply to facades and external appearance, influencing the building's aesthetic but not its internal navigation"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Users intuitively sense organizing logic; signage supports but doesn't replace geometric clarity.",
+        "b": "Principles directly affect spatial experience.",
+        "d": "Principles organize interior spaces as much as exterior forms.",
+        "correct": "Organizing principles are fundamental to how people understand and move through buildings. A clear centralized principle (find the center, then find your destination) aids wayfinding. A linear principle (follow the spine) creates clear procession. Grid principle (you are at module XY) clarifies position. Ching emphasizes that principles are perceptual and functional, not merely formal.",
+        "takeaway": "Ching emphasizes that principles are perceptual and functional, not merely formal."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "SYS"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-04-012",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1022103d1274815ec9fa5eb2797869232811ea36d0f802e0081c340e3973ba3d"
+    },
+    "proposed": {
+      "explanation": "Users intuitively sense organizing logic; signage supports but doesn't replace geometric clarity. Principles directly affect spatial experience. Principles organize interior spaces as much as exterior forms. Organizing principles are fundamental to how people understand and move through buildings. A clear centralized principle (find the center, then find your destination) aids wayfinding. A linear principle (follow the spine) creates clear procession. Grid principle (you are at module XY) clarifies position. Ching emphasizes that principles are perceptual and functional, not merely formal. Ching emphasizes that principles are perceptual and functional, not merely formal."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+  },
+  {
+    "question_id": "4161ac3a-be1e-4374-93e3-faa075b04258",
+    "article_id": "1ad3cb33-39a8-4a0a-9349-4df850d10ad4",
+    "article_dir": ".ai/content-audit-export/articles/lea-theo-002-04-core-concept--1ad3cb33-39a8-4a0a-9349-4df850d10ad4",
+    "title": "lea-theo-002-04-core-concept",
+    "baseline_hash": "sha256:ec49e53a0ee8e2d3ca8bd113b2b589c8cb0b3e7a3b494e3d6040f87a131017db",
+    "baseline": {
+      "question_id": "4161ac3a-be1e-4374-93e3-faa075b04258",
+      "article_id": "1ad3cb33-39a8-4a0a-9349-4df850d10ad4",
+      "topic_id": "af0a9e56-9363-494f-a2fe-e4a95dde173d",
+      "text": "How do centralized and radial organization differ in their spatial reach and focus?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Centralized is inward-focused and compact; radial is outward-focused and expansive with extending arms"
+        },
+        {
+          "id": "b",
+          "text": "Centralized uses radial geometry; radial uses linear geometry, which affects the flow and distribution of spaces"
+        },
+        {
+          "id": "c",
+          "text": "Centralized is used for sacred spaces; radial is used for secular spaces, reflecting their differing symbolic meanings"
+        },
+        {
+          "id": "d",
+          "text": "Centralized has a central axis; radial has multiple axes, which can create a more dynamic spatial experience"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Radial employs radial geometry; centralized can too. Geometry doesn't distinguish them.",
+        "c": "Both appear in sacred and secular contexts.",
+        "d": "Both can have multiple axes depending on complexity.",
+        "correct": "Critical distinction: centralized clusters forms around a center without radiating arms (like a dome surrounded by chapels—compact, inward). Radial has arms extending outward from core (like Washington D.C. avenues radiating from Capitol—expansive, reaching). Both have centers, but opposite spatial characters.",
+        "takeaway": "Both have centers, but opposite spatial characters."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-04-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ec49e53a0ee8e2d3ca8bd113b2b589c8cb0b3e7a3b494e3d6040f87a131017db"
+    },
+    "proposed": {
+      "explanation": "Radial employs radial geometry; centralized can too. Geometry doesn't distinguish them. Both appear in sacred and secular contexts. Both can have multiple axes depending on complexity. Critical distinction: centralized clusters forms around a center without radiating arms (like a dome surrounded by chapels—compact, inward). Radial has arms extending outward from core (like Washington D.C. avenues radiating from Capitol—expansive, reaching). Both have centers, but opposite spatial characters. Both have centers, but opposite spatial characters."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+  },
+  {
+    "question_id": "5abd7118-e711-4338-b0f6-9d4c43d90dd6",
+    "article_id": "1ad3cb33-39a8-4a0a-9349-4df850d10ad4",
+    "article_dir": ".ai/content-audit-export/articles/lea-theo-002-04-core-concept--1ad3cb33-39a8-4a0a-9349-4df850d10ad4",
+    "title": "lea-theo-002-04-core-concept",
+    "baseline_hash": "sha256:5aa315cf1daf29a5493f027961a5e3eb1b8620e445a889eeb5886ef89a8d4b61",
+    "baseline": {
+      "question_id": "5abd7118-e711-4338-b0f6-9d4c43d90dd6",
+      "article_id": "1ad3cb33-39a8-4a0a-9349-4df850d10ad4",
+      "topic_id": "af0a9e56-9363-494f-a2fe-e4a95dde173d",
+      "text": "How do grid and clustered organization differ in how they accommodate growth and change?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Both are flexible; grid extends through modular repetition; clustered adds new groups without disrupting existing ones"
+        },
+        {
+          "id": "b",
+          "text": "Clustered requires geometric planning; grid is ad hoc, allowing for spontaneous development"
+        },
+        {
+          "id": "c",
+          "text": "Neither accommodates growth; linear organization is most flexible, adapting to various site conditions"
+        },
+        {
+          "id": "d",
+          "text": "Grid is rigid and cannot accommodate change; clustered is flexible, adapting to organic growth patterns"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Both are intentionally planned; neither is ad hoc.",
+        "c": "Both grid and clustered offer more flexibility than linear, which needs directional extension.",
+        "d": "Grid is actually quite flexible within its modular discipline.",
+        "correct": "Both allow flexible growth: grid extends by adding modules along established lines; clustered accommodates new clusters by proximity grouping. This flexibility is why both appear in expanding institutional complexes and cities.",
+        "takeaway": "This flexibility is why both appear in expanding institutional complexes and cities."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-04-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5aa315cf1daf29a5493f027961a5e3eb1b8620e445a889eeb5886ef89a8d4b61"
+    },
+    "proposed": {
+      "explanation": "Both are intentionally planned; neither is ad hoc. Both grid and clustered offer more flexibility than linear, which needs directional extension. Grid is actually quite flexible within its modular discipline. Both allow flexible growth: grid extends by adding modules along established lines; clustered accommodates new clusters by proximity grouping. This flexibility is why both appear in expanding institutional complexes and cities. This flexibility is why both appear in expanding institutional complexes and cities."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+  },
+  {
+    "question_id": "e27e72dc-78d2-4de0-8365-8ae1f963d175",
+    "article_id": "1ad3cb33-39a8-4a0a-9349-4df850d10ad4",
+    "article_dir": ".ai/content-audit-export/articles/lea-theo-002-04-core-concept--1ad3cb33-39a8-4a0a-9349-4df850d10ad4",
+    "title": "lea-theo-002-04-core-concept",
+    "baseline_hash": "sha256:64b4c832fc4790159f75ad4714fccb3f4bc46b28dc88c7434841523ede0f975f",
+    "baseline": {
+      "question_id": "e27e72dc-78d2-4de0-8365-8ae1f963d175",
+      "article_id": "1ad3cb33-39a8-4a0a-9349-4df850d10ad4",
+      "topic_id": "af0a9e56-9363-494f-a2fe-e4a95dde173d",
+      "text": "Centralized organization in architecture is best defined as:",
+      "options": [
+        {
+          "id": "a",
+          "text": "A collection of forms grouped by proximity without geometric hierarchy, often leading to a lack of visual focus or centrality in the design"
+        },
+        {
+          "id": "b",
+          "text": "A linear arrangement of spaces in sequence along a spine, which may include secondary spaces branching off at intervals"
+        },
+        {
+          "id": "c",
+          "text": "Secondary forms clustered about a dominant central form or space that commands visual and functional attention"
+        },
+        {
+          "id": "d",
+          "text": "Forms distributed equally around a central point radiating outward, creating a balanced but non-hierarchical spatial organization"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "That is clustered organization.",
+        "b": "That is linear organization.",
+        "d": "That is radial organization.",
+        "correct": "Ching defines centralized organization as secondary forms clustering about a dominant central form. Examples: Pantheon (dome centered in rotunda), Byzantine churches (dome over crossing), mosques (dome above prayer hall). The central space is the organizing anchor.",
+        "takeaway": "The central space is the organizing anchor."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-04-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:64b4c832fc4790159f75ad4714fccb3f4bc46b28dc88c7434841523ede0f975f"
+    },
+    "proposed": {
+      "explanation": "That is clustered organization. That is linear organization. That is radial organization. Ching defines centralized organization as secondary forms clustering about a dominant central form. Examples: Pantheon (dome centered in rotunda), Byzantine churches (dome over crossing), mosques (dome above prayer hall). The central space is the organizing anchor. The central space is the organizing anchor."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+  },
+  {
+    "question_id": "bf3a95a7-4d93-4603-854a-01abfc81194d",
+    "article_id": "1ad3cb33-39a8-4a0a-9349-4df850d10ad4",
+    "article_dir": ".ai/content-audit-export/articles/lea-theo-002-04-core-concept--1ad3cb33-39a8-4a0a-9349-4df850d10ad4",
+    "title": "lea-theo-002-04-core-concept",
+    "baseline_hash": "sha256:40fe119ecc2a0ad78bdb2f90fbf1a9babde30fc5a9a99f560f0e2b87d41cb5e6",
+    "baseline": {
+      "question_id": "bf3a95a7-4d93-4603-854a-01abfc81194d",
+      "article_id": "1ad3cb33-39a8-4a0a-9349-4df850d10ad4",
+      "topic_id": "af0a9e56-9363-494f-a2fe-e4a95dde173d",
+      "text": "Why do complex architectural programs often combine multiple organizing principles rather than using a single one?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Because mixing principles creates visual confusion and interest, which can be desirable in certain design contexts"
+        },
+        {
+          "id": "b",
+          "text": "Because architects are uncertain which principle is correct, leading to a combination approach to hedge against design errors"
+        },
+        {
+          "id": "c",
+          "text": "Because different functional zones within a program may respond to different organizing logics—a building might be centralized at the entry but linear in the departments, or have clustered offices within a grid structure"
+        },
+        {
+          "id": "d",
+          "text": "Because using multiple principles makes buildings more expensive, which can be justified by the perceived increase in design complexity"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Mixed principles don't inherently create confusion; they serve functional logic.",
+        "b": "Combination is intentional, not uncertain.",
+        "d": "Cost is not the reason; function determines the organizing choice.",
+        "correct": "Complex programs naturally combine principles: a hospital might have a centralized entry atrium (for gathering/orientation) with radial wings extending to different services (functional organization) and grid-based office areas (efficiency). Each zone employs the principle best suited to its function. Ching specifically states that mixed organizations are common in real buildings.",
+        "takeaway": "Ching specifically states that mixed organizations are common in real buildings."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-04-011",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:40fe119ecc2a0ad78bdb2f90fbf1a9babde30fc5a9a99f560f0e2b87d41cb5e6"
+    },
+    "proposed": {
+      "explanation": "Mixed principles don't inherently create confusion; they serve functional logic. Combination is intentional, not uncertain. Cost is not the reason; function determines the organizing choice. Complex programs naturally combine principles: a hospital might have a centralized entry atrium (for gathering/orientation) with radial wings extending to different services (functional organization) and grid-based office areas (efficiency). Each zone employs the principle best suited to its function. Ching specifically states that mixed organizations are common in real buildings. Ching specifically states that mixed organizations are common in real buildings."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+  },
+  {
+    "question_id": "fd6b1164-58c0-42ff-bf1c-aa516bad8cf9",
+    "article_id": "1ad3cb33-39a8-4a0a-9349-4df850d10ad4",
+    "article_dir": ".ai/content-audit-export/articles/lea-theo-002-04-core-concept--1ad3cb33-39a8-4a0a-9349-4df850d10ad4",
+    "title": "lea-theo-002-04-core-concept",
+    "baseline_hash": "sha256:a26e90ba2176ea23750dd2d4df75728ed987567b1cc2518f9f7d990ceaef029d",
+    "baseline": {
+      "question_id": "fd6b1164-58c0-42ff-bf1c-aa516bad8cf9",
+      "article_id": "1ad3cb33-39a8-4a0a-9349-4df850d10ad4",
+      "topic_id": "af0a9e56-9363-494f-a2fe-e4a95dde173d",
+      "text": "Clustered organization is characterized by:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Forms arranged within a regular three-dimensional grid, which provides structural clarity"
+        },
+        {
+          "id": "b",
+          "text": "A central dominant form with secondary forms arranged around it, creating a hierarchical structure"
+        },
+        {
+          "id": "c",
+          "text": "A collection of forms grouped by proximity or common visual trait without strict geometric hierarchy"
+        },
+        {
+          "id": "d",
+          "text": "Forms extending in a linear sequence in a row, emphasizing directionality"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "That is grid organization.",
+        "b": "That is centralized organization.",
+        "d": "That is linear organization.",
+        "correct": "Clustered organization groups forms by functional affinity or proximity rather than geometric hierarchy. Medieval towns cluster around markets; Japanese villages cluster around shared resources. The organizing principle is compatibility, not geometric system.",
+        "takeaway": "The organizing principle is compatibility, not geometric system."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-04-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a26e90ba2176ea23750dd2d4df75728ed987567b1cc2518f9f7d990ceaef029d"
+    },
+    "proposed": {
+      "explanation": "That is grid organization. That is centralized organization. That is linear organization. Clustered organization groups forms by functional affinity or proximity rather than geometric hierarchy. Medieval towns cluster around markets; Japanese villages cluster around shared resources. The organizing principle is compatibility, not geometric system. The organizing principle is compatibility, not geometric system."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+  },
+  {
+    "question_id": "6f778d76-64aa-40e9-80ec-c69e605c08c8",
+    "article_id": "1ad3cb33-39a8-4a0a-9349-4df850d10ad4",
+    "article_dir": ".ai/content-audit-export/articles/lea-theo-002-04-core-concept--1ad3cb33-39a8-4a0a-9349-4df850d10ad4",
+    "title": "lea-theo-002-04-core-concept",
+    "baseline_hash": "sha256:0f935abcb90656922b875433e2b34c907b69628dee79ed2fec3c00f7d1f3dc2a",
+    "baseline": {
+      "question_id": "6f778d76-64aa-40e9-80ec-c69e605c08c8",
+      "article_id": "1ad3cb33-39a8-4a0a-9349-4df850d10ad4",
+      "topic_id": "af0a9e56-9363-494f-a2fe-e4a95dde173d",
+      "text": "Which organizing principle characterizes traditional Japanese village planning, where buildings cluster around shared resources like wells and gathering places?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Centralized organization"
+        },
+        {
+          "id": "b",
+          "text": "Radial organization"
+        },
+        {
+          "id": "c",
+          "text": "Linear organization"
+        },
+        {
+          "id": "d",
+          "text": "Clustered organization"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While there might be a central gathering place, the principle is functional clustering, not geometric centralization.",
+        "b": "No radiating spokes from a center.",
+        "c": "No linear spine organizes Japanese villages.",
+        "correct": "Japanese villages are organized by functional clustering—buildings group around shared resources and community functions rather than following a formal geometric hierarchy or axis. This flexibility allows organic growth responding to site and function.",
+        "takeaway": "This flexibility allows organic growth responding to site and function."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "ATT"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-04-013",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0f935abcb90656922b875433e2b34c907b69628dee79ed2fec3c00f7d1f3dc2a"
+    },
+    "proposed": {
+      "explanation": "While there might be a central gathering place, the principle is functional clustering, not geometric centralization. No radiating spokes from a center. No linear spine organizes Japanese villages. Japanese villages are organized by functional clustering—buildings group around shared resources and community functions rather than following a formal geometric hierarchy or axis. This flexibility allows organic growth responding to site and function. This flexibility allows organic growth responding to site and function."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+  },
+  {
+    "question_id": "c1dde7f6-3f3e-4a72-ad59-3f3d49b2c825",
+    "article_id": "1ad3cb33-39a8-4a0a-9349-4df850d10ad4",
+    "article_dir": ".ai/content-audit-export/articles/lea-theo-002-04-core-concept--1ad3cb33-39a8-4a0a-9349-4df850d10ad4",
+    "title": "lea-theo-002-04-core-concept",
+    "baseline_hash": "sha256:29edfae706c62758af7d77646d38f6721de3e4c32cd3bb6c0f2d80b5815fb189",
+    "baseline": {
+      "question_id": "c1dde7f6-3f3e-4a72-ad59-3f3d49b2c825",
+      "article_id": "1ad3cb33-39a8-4a0a-9349-4df850d10ad4",
+      "topic_id": "af0a9e56-9363-494f-a2fe-e4a95dde173d",
+      "text": "Manhattan's street grid system, where avenues and streets create rectangular blocks at regular intervals, exemplifies which organizing principle?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Grid organization (orthogonal)"
+        },
+        {
+          "id": "b",
+          "text": "Radial organization"
+        },
+        {
+          "id": "c",
+          "text": "Centralized organization"
+        },
+        {
+          "id": "d",
+          "text": "Linear organization"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Manhattan is not organized by radiating spokes from a center.",
+        "c": "No central focus dominates Manhattan's grid.",
+        "d": "No single spine organizes the grid.",
+        "correct": "Manhattan's orthogonal grid (90-degree angles at regular intervals) creates modular blocks. The grid is the fundamental organizing system; buildings and uses fit within or span multiple grid modules.",
+        "takeaway": "The grid is the fundamental organizing system; buildings and uses fit within or span multiple grid modules."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-04-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:29edfae706c62758af7d77646d38f6721de3e4c32cd3bb6c0f2d80b5815fb189"
+    },
+    "proposed": {
+      "explanation": "Manhattan is not organized by radiating spokes from a center. No central focus dominates Manhattan's grid. No single spine organizes the grid. Manhattan's orthogonal grid (90-degree angles at regular intervals) creates modular blocks. The grid is the fundamental organizing system; buildings and uses fit within or span multiple grid modules. The grid is the fundamental organizing system; buildings and uses fit within or span multiple grid modules."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+  },
+  {
+    "question_id": "b17298e5-6508-400c-bf30-3a7d50a125c2",
+    "article_id": "1ad3cb33-39a8-4a0a-9349-4df850d10ad4",
+    "article_dir": ".ai/content-audit-export/articles/lea-theo-002-04-core-concept--1ad3cb33-39a8-4a0a-9349-4df850d10ad4",
+    "title": "lea-theo-002-04-core-concept",
+    "baseline_hash": "sha256:2c59803d806cbdff07b825a8821e5f34684eda94452fe516353a6f689bd98696",
+    "baseline": {
+      "question_id": "b17298e5-6508-400c-bf30-3a7d50a125c2",
+      "article_id": "1ad3cb33-39a8-4a0a-9349-4df850d10ad4",
+      "topic_id": "af0a9e56-9363-494f-a2fe-e4a95dde173d",
+      "text": "A growing medical complex adds new departments to existing buildings without requiring restructuring of the whole. Which organizing principle allows this flexibility?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Centralized organization (additions can be appended to the center, but may disrupt existing circulation patterns)"
+        },
+        {
+          "id": "b",
+          "text": "Linear organization (extensions can be added at ends, though this may lead to elongated circulation paths)"
+        },
+        {
+          "id": "c",
+          "text": "Radial organization (new departments can extend as new spokes, potentially complicating access to the core)"
+        },
+        {
+          "id": "d",
+          "text": "Clustered and grid organization (both allow addition without disrupting hierarchy)"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Centralized depends on the importance of the center; additions challenge that hierarchy.",
+        "b": "Linear can extend but only in predictable directions.",
+        "c": "Radial can add spokes but within the hub-and-spoke logic.",
+        "correct": "Clustered organization is inherently flexible—new buildings can be added to a cluster without restructuring the whole (unlike linear, which needs extension direction, or centralized, which competes with center). Grid organization is equally flexible—new modules extend the grid. Both allow growth without disruption.",
+        "takeaway": "Both allow growth without disruption."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-04-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2c59803d806cbdff07b825a8821e5f34684eda94452fe516353a6f689bd98696"
+    },
+    "proposed": {
+      "explanation": "Centralized depends on the importance of the center; additions challenge that hierarchy. Linear can extend but only in predictable directions. Radial can add spokes but within the hub-and-spoke logic. Clustered organization is inherently flexible—new buildings can be added to a cluster without restructuring the whole (unlike linear, which needs extension direction, or centralized, which competes with center). Grid organization is equally flexible—new modules extend the grid. Both allow growth without disruption. Both allow growth without disruption."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+  },
+  {
+    "question_id": "7880e82d-b859-4177-afe6-63e1687fad32",
+    "article_id": "ec61e112-1609-4f49-b1ad-343444eb6248",
+    "article_dir": ".ai/content-audit-export/articles/lea-theo-003-06-core-concept--ec61e112-1609-4f49-b1ad-343444eb6248",
+    "title": "lea-theo-003-06-core-concept",
+    "baseline_hash": "sha256:bffbea0c7805a8dc4103be7f5d68c46138284aa9c3e2817d04f33f536caa7190",
+    "baseline": {
+      "question_id": "7880e82d-b859-4177-afe6-63e1687fad32",
+      "article_id": "ec61e112-1609-4f49-b1ad-343444eb6248",
+      "topic_id": "aa84a1f9-c8b0-44fd-90d5-c7119f136046",
+      "text": "Perceptible Information (Principle 4) requires communicating necessary information through:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Multiple sensory channels (visual, auditory, tactile) accommodating sensory diversity"
+        },
+        {
+          "id": "b",
+          "text": "Audio announcements exclusively, avoiding visual dependence, which may not be suitable for all users"
+        },
+        {
+          "id": "c",
+          "text": "Visual signage exclusively, relying on text and graphics, which can be limiting for those with visual impairments"
+        },
+        {
+          "id": "d",
+          "text": "Large print exclusively, serving only vision-impaired users, without considering other sensory needs"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Auditory alone excludes deaf and hard-of-hearing users",
+        "c": "Visual alone excludes blind and low-vision users",
+        "d": "Large print serves some vision limitations but not all; multimodal approach is superior",
+        "correct": "Perceptible information uses multiple modalities—text, symbols, color, audio, Braille, tactile elements—ensuring all sensory abilities can access information"
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ale-theo-003-06-q05",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:bffbea0c7805a8dc4103be7f5d68c46138284aa9c3e2817d04f33f536caa7190"
+    },
+    "proposed": {
+      "explanation": "Auditory alone excludes deaf and hard-of-hearing users Visual alone excludes blind and low-vision users Large print serves some vision limitations but not all; multimodal approach is superior Perceptible information uses multiple modalities—text, symbols, color, audio, Braille, tactile elements—ensuring all sensory abilities can access information"
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+  },
+  {
+    "question_id": "eaa2a3e7-f1ae-4092-97fc-d8fbf88055da",
+    "article_id": "ec61e112-1609-4f49-b1ad-343444eb6248",
+    "article_dir": ".ai/content-audit-export/articles/lea-theo-003-06-core-concept--ec61e112-1609-4f49-b1ad-343444eb6248",
+    "title": "lea-theo-003-06-core-concept",
+    "baseline_hash": "sha256:ad189ce09d6ee81d53b653639a6e8378f48635ab9c7ee614f84b1d64bc4b859f",
+    "baseline": {
+      "question_id": "eaa2a3e7-f1ae-4092-97fc-d8fbf88055da",
+      "article_id": "ec61e112-1609-4f49-b1ad-343444eb6248",
+      "topic_id": "aa84a1f9-c8b0-44fd-90d5-c7119f136046",
+      "text": "Low Physical Effort (Principle 6) means design that:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Eliminates all human movement, relying on mechanical systems to perform tasks that would otherwise require physical exertion"
+        },
+        {
+          "id": "b",
+          "text": "Works only for young, able-bodied users, excluding those who may have physical limitations or disabilities"
+        },
+        {
+          "id": "c",
+          "text": "Requires significant strength, demanding user exertion, which can lead to fatigue and discomfort over time"
+        },
+        {
+          "id": "d",
+          "text": "Can be used efficiently and comfortably with minimum fatigue, requiring minimal force"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Mechanical systems require integration; users must operate them with minimum effort",
+        "b": "Low physical effort serves diverse abilities, not excluding elderly or weak users",
+        "c": "High effort excludes elderly and strength-limited users",
+        "correct": "Low physical effort accommodates limited strength, elderly users, and those with fatigue—automatic doors, counters at varied heights, gentle slopes"
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ale-theo-003-06-q07",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ad189ce09d6ee81d53b653639a6e8378f48635ab9c7ee614f84b1d64bc4b859f"
+    },
+    "proposed": {
+      "explanation": "Mechanical systems require integration; users must operate them with minimum effort Low physical effort serves diverse abilities, not excluding elderly or weak users High effort excludes elderly and strength-limited users Low physical effort accommodates limited strength, elderly users, and those with fatigue—automatic doors, counters at varied heights, gentle slopes"
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+  },
+  {
+    "question_id": "9ecdabe3-3006-4f18-a0db-c2dfd8c6cfc3",
+    "article_id": "ec61e112-1609-4f49-b1ad-343444eb6248",
+    "article_dir": ".ai/content-audit-export/articles/lea-theo-003-06-core-concept--ec61e112-1609-4f49-b1ad-343444eb6248",
+    "title": "lea-theo-003-06-core-concept",
+    "baseline_hash": "sha256:7b44b4b8855bf2d00ad1be0a99844312cdbe96fa4ca9e79c0f1e0e5e00190aea",
+    "baseline": {
+      "question_id": "9ecdabe3-3006-4f18-a0db-c2dfd8c6cfc3",
+      "article_id": "ec61e112-1609-4f49-b1ad-343444eb6248",
+      "topic_id": "aa84a1f9-c8b0-44fd-90d5-c7119f136046",
+      "text": "Flexibility in Use, Principle 2 of Universal Design, accommodates:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only the average-sized user with typical abilities, excluding those with unique needs or preferences"
+        },
+        {
+          "id": "b",
+          "text": "Only people with mobility disabilities, not considering other types of disabilities or user needs"
+        },
+        {
+          "id": "c",
+          "text": "Users willing to modify their behavior to fit the design, which may not be practical for all individuals"
+        },
+        {
+          "id": "d",
+          "text": "A wide range of individual preferences and abilities, including different body types, sensory abilities, and user approaches"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Flexibility serves beyond average users, serving diverse capabilities",
+        "b": "Flexibility serves diverse disabilities and abilities, not exclusively mobility",
+        "c": "Universal design adapts to users; users don't adapt to design",
+        "correct": "Flexibility accommodates diverse users through multiple approaches—elements at varied heights, different modalities, adaptable layouts"
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ale-theo-003-06-q03",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7b44b4b8855bf2d00ad1be0a99844312cdbe96fa4ca9e79c0f1e0e5e00190aea"
+    },
+    "proposed": {
+      "explanation": "Flexibility serves beyond average users, serving diverse capabilities Flexibility serves diverse disabilities and abilities, not exclusively mobility Universal design adapts to users; users don't adapt to design Flexibility accommodates diverse users through multiple approaches—elements at varied heights, different modalities, adaptable layouts"
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+  },
+  {
+    "question_id": "46831bcc-706b-4cb9-a6d2-c801d95e833e",
+    "article_id": "846e0ded-f254-441a-a9d2-67af1f617ba5",
+    "article_dir": ".ai/content-audit-export/articles/lea-prac-frm-004-joint-venture-in-architecture--846e0ded-f254-441a-a9d2-67af1f617ba5",
+    "title": "lea-prac-frm-004-joint-venture-in-architecture",
+    "baseline_hash": "sha256:056ff24e977b6886d221256a78ae5a15e72d74b8e7f1cb981919e2c076644564",
+    "baseline": {
+      "question_id": "46831bcc-706b-4cb9-a6d2-c801d95e833e",
+      "article_id": "846e0ded-f254-441a-a9d2-67af1f617ba5",
+      "topic_id": "6e5fa651-2998-41aa-a33a-aef194897946",
+      "text": "A German architectural firm partners with a Philippine firm on a major commercial project. Who is responsible for compliance with Philippine building codes?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The German firm is responsible for all technical standards, including those specific to local environmental conditions and materials"
+        },
+        {
+          "id": "b",
+          "text": "The Philippine firm assumes responsibility as the Filipino counterpart"
+        },
+        {
+          "id": "c",
+          "text": "Both firms share equal responsibility, with joint accountability for any compliance issues that arise"
+        },
+        {
+          "id": "d",
+          "text": "The local government enforces compliance; architects have no responsibility, as enforcement is solely a regulatory function"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Absolves local partner—the foreign firm provides expertise but cannot discharge local regulatory responsibility.",
+        "c": "Dilutes responsibility—the Filipino counterpart bears primary responsibility for local code compliance.",
+        "d": "Transfers accountability incorrectly—architects bear professional responsibility; government enforces but doesn't replace architect accountability.",
+        "correct": "The Philippine counterpart bears specific responsibility for ensuring all designs comply with Philippine building codes and regulatory requirements.",
+        "takeaway": "The Philippine partner in international joint ventures assumes responsibility for Philippine code compliance and regulatory coordination."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-004-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.923634+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:056ff24e977b6886d221256a78ae5a15e72d74b8e7f1cb981919e2c076644564"
+    },
+    "proposed": {
+      "explanation": "Absolves local partner—the foreign firm provides expertise but cannot discharge local regulatory responsibility. Dilutes responsibility—the Filipino counterpart bears primary responsibility for local code compliance. Transfers accountability incorrectly—architects bear professional responsibility; government enforces but doesn't replace architect accountability. The Philippine counterpart bears specific responsibility for ensuring all designs comply with Philippine building codes and regulatory requirements. The Philippine partner in international joint ventures assumes responsibility for Philippine code compliance and regulatory coordination."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+  },
+  {
+    "question_id": "55803950-4023-4f50-be30-c69321b3a809",
+    "article_id": "846e0ded-f254-441a-a9d2-67af1f617ba5",
+    "article_dir": ".ai/content-audit-export/articles/lea-prac-frm-004-joint-venture-in-architecture--846e0ded-f254-441a-a9d2-67af1f617ba5",
+    "title": "lea-prac-frm-004-joint-venture-in-architecture",
+    "baseline_hash": "sha256:e4f28b57bde850bc7dca8660b046c0184d37ac9781a84e87b861a5fc5cd942c0",
+    "baseline": {
+      "question_id": "55803950-4023-4f50-be30-c69321b3a809",
+      "article_id": "846e0ded-f254-441a-a9d2-67af1f617ba5",
+      "topic_id": "6e5fa651-2998-41aa-a33a-aef194897946",
+      "text": "Which of the following is a typical professional application of joint ventures in the Philippines?",
+      "options": [
+        {
+          "id": "a",
+          "text": "International firms avoiding local partnerships, which is not a common practice"
+        },
+        {
+          "id": "b",
+          "text": "Two local firms combining expertise for mixed-use developments"
+        },
+        {
+          "id": "c",
+          "text": "Architects forming permanent corporations, which is not typically a joint venture"
+        },
+        {
+          "id": "d",
+          "text": "Solo practitioners expanding permanently, which is not the usual purpose of joint ventures"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Violates Filipino Counterpart Requirement—international ventures require local partners, not avoidance.",
+        "c": "Confuses structure—forming permanent corporations is incorporation, not a temporary joint venture.",
+        "d": "Misses the point—joint ventures require collaboration; solo practitioners don't form ventures.",
+        "correct": "Joint ventures commonly combine firms with complementary specialties—residential and commercial expertise, or design and sustainability focus—for specific projects.",
+        "takeaway": "Domestic joint ventures assemble specialized expertise (residential + commercial, design + sustainability) for complex single projects."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-004-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.923634+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e4f28b57bde850bc7dca8660b046c0184d37ac9781a84e87b861a5fc5cd942c0"
+    },
+    "proposed": {
+      "explanation": "Violates Filipino Counterpart Requirement—international ventures require local partners, not avoidance. Confuses structure—forming permanent corporations is incorporation, not a temporary joint venture. Misses the point—joint ventures require collaboration; solo practitioners don't form ventures. Joint ventures commonly combine firms with complementary specialties—residential and commercial expertise, or design and sustainability focus—for specific projects. Domestic joint ventures assemble specialized expertise (residential + commercial, design + sustainability) for complex single projects."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+  },
+  {
+    "question_id": "c1f92440-a4a1-433f-9f50-839d229b86b9",
+    "article_id": "846e0ded-f254-441a-a9d2-67af1f617ba5",
+    "article_dir": ".ai/content-audit-export/articles/lea-prac-frm-004-joint-venture-in-architecture--846e0ded-f254-441a-a9d2-67af1f617ba5",
+    "title": "lea-prac-frm-004-joint-venture-in-architecture",
+    "baseline_hash": "sha256:568f90db802247aa31292d2420621e73ce6fa5a484437d5accefcd768e529163",
+    "baseline": {
+      "question_id": "c1f92440-a4a1-433f-9f50-839d229b86b9",
+      "article_id": "846e0ded-f254-441a-a9d2-67af1f617ba5",
+      "topic_id": "6e5fa651-2998-41aa-a33a-aef194897946",
+      "text": "Two domestic Philippine firms form a joint venture for a municipal development project. One partner becomes incapacitated midway through design. What should the agreement address?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The project automatically transfers to the remaining partner, provided that the incapacitated partner's responsibilities are clearly defined in the agreement"
+        },
+        {
+          "id": "b",
+          "text": "The agreement should include backup personnel or subcontracting rights"
+        },
+        {
+          "id": "c",
+          "text": "No provisions are necessary; the venture dissolves unless a pre-agreed contingency plan is in place"
+        },
+        {
+          "id": "d",
+          "text": "The municipal government assigns a replacement architect, but only if the original agreement allows for such intervention"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Presumes automatic transfer—transfer requires agreement provisions and client approval.",
+        "c": "Creates chaos—premature dissolution abandons client obligations; agreements must specify continuity mechanisms.",
+        "d": "Misattributes authority—clients or government cannot assign architects; the venture must handle continuity internally.",
+        "correct": "Sound joint venture agreements address partner unavailability through provisions for backup personnel, subcontracting rights, or replacement procedures.",
+        "takeaway": "Joint venture agreements must specify contingencies (backup personnel, subcontracting, replacement procedures) for partner incapacity."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-004-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.923634+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:568f90db802247aa31292d2420621e73ce6fa5a484437d5accefcd768e529163"
+    },
+    "proposed": {
+      "explanation": "Presumes automatic transfer—transfer requires agreement provisions and client approval. Creates chaos—premature dissolution abandons client obligations; agreements must specify continuity mechanisms. Misattributes authority—clients or government cannot assign architects; the venture must handle continuity internally. Sound joint venture agreements address partner unavailability through provisions for backup personnel, subcontracting rights, or replacement procedures. Joint venture agreements must specify contingencies (backup personnel, subcontracting, replacement procedures) for partner incapacity."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+  },
+  {
+    "question_id": "43dd7e24-2bce-4685-a35f-57b1749a1d94",
+    "article_id": "af09c106-1da0-46e4-8081-bd3b5e393428",
+    "article_dir": ".ai/content-audit-export/articles/lea-hist-014-04-core-concept--af09c106-1da0-46e4-8081-bd3b5e393428",
+    "title": "lea-hist-014-04-core-concept",
+    "baseline_hash": "sha256:665813d12ca362c9746b38f53ed5c8e317eec52fd0d854f4e0ebb182d88be0c2",
+    "baseline": {
+      "question_id": "43dd7e24-2bce-4685-a35f-57b1749a1d94",
+      "article_id": "af09c106-1da0-46e4-8081-bd3b5e393428",
+      "topic_id": "67d985cd-92c3-4793-9a1f-de9c9e85e3af",
+      "text": "Which architect's philosophy of 'organic architecture' emphasizes that buildings should grow from their site and integrate with landscape, materials, and human needs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Louis Sullivan, known for his 'form follows function' principle"
+        },
+        {
+          "id": "b",
+          "text": "Frank Lloyd Wright"
+        },
+        {
+          "id": "c",
+          "text": "Mies van der Rohe, famous for his minimalist 'less is more' approach"
+        },
+        {
+          "id": "d",
+          "text": "Le Corbusier, a pioneer of modern architecture with his 'five points of architecture'"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Sullivan developed 'form follows function' but not the site-specific organic philosophy.",
+        "c": "Mies van der Rohe pursued universal design principles independent of place.",
+        "d": "Le Corbusier believed modernism transcends geography; Wright rejected this universalism.",
+        "correct": "Frank Lloyd Wright is America's most significant architect. He believed architecture should grow from its site—organic means the building is of the land, not imposed upon it.'",
+        "takeaway": "He believed architecture should grow from its site—organic means the building is of the land, not imposed upon it.'."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "ID"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-014-04-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.310909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:665813d12ca362c9746b38f53ed5c8e317eec52fd0d854f4e0ebb182d88be0c2"
+    },
+    "proposed": {
+      "explanation": "Sullivan developed 'form follows function' but not the site-specific organic philosophy. Mies van der Rohe pursued universal design principles independent of place. Le Corbusier believed modernism transcends geography; Wright rejected this universalism. Frank Lloyd Wright is America's most significant architect. He believed architecture should grow from its site—organic means the building is of the land, not imposed upon it.' He believed architecture should grow from its site—organic means the building is of the land, not imposed upon it.'."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+  },
+  {
+    "question_id": "395e458a-5d3b-4937-9bd3-76a2aa32d8f5",
+    "article_id": "af09c106-1da0-46e4-8081-bd3b5e393428",
+    "article_dir": ".ai/content-audit-export/articles/lea-hist-014-04-core-concept--af09c106-1da0-46e4-8081-bd3b5e393428",
+    "title": "lea-hist-014-04-core-concept",
+    "baseline_hash": "sha256:b6aa548a9901f436d91358b56c50edc9fdb877427615aaa6b3d5b48489bfb181",
+    "baseline": {
+      "question_id": "395e458a-5d3b-4937-9bd3-76a2aa32d8f5",
+      "article_id": "af09c106-1da0-46e4-8081-bd3b5e393428",
+      "topic_id": "67d985cd-92c3-4793-9a1f-de9c9e85e3af",
+      "text": "At Fallingwater (1939), what specific structural engineering innovation emphasizes the relationship between the house and the waterfall below?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Massive stone foundations extending deep into bedrock, providing stability and a natural aesthetic."
+        },
+        {
+          "id": "b",
+          "text": "Reinforced concrete cantilevered projecting dramatically over the waterfall"
+        },
+        {
+          "id": "c",
+          "text": "Timber beam construction spanning the water gap, which is not typically used in such designs."
+        },
+        {
+          "id": "d",
+          "text": "Suspension cables anchoring the house to surrounding cliff faces, a method not employed in Fallingwater."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Stone foundations are present but not the innovation emphasized.",
+        "c": "Timber is used in the house; concrete cantilevers are the distinctive structural element.",
+        "d": "Suspension cables are not mentioned as part of Fallingwater's structural system.",
+        "correct": "Fallingwater (Bear Run, Pennsylvania, completed 1939—main structure 1937, guest house 1939) is his masterwork: reinforced concrete cantilevered over a waterfall. The house and waterfall are not separate—they are integrated.'",
+        "takeaway": "The house and waterfall are not separate—they are integrated.'."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "ST"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-014-04-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.310909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b6aa548a9901f436d91358b56c50edc9fdb877427615aaa6b3d5b48489bfb181"
+    },
+    "proposed": {
+      "explanation": "Stone foundations are present but not the innovation emphasized. Timber is used in the house; concrete cantilevers are the distinctive structural element. Suspension cables are not mentioned as part of Fallingwater's structural system. Fallingwater (Bear Run, Pennsylvania, completed 1939—main structure 1937, guest house 1939) is his masterwork: reinforced concrete cantilevered over a waterfall. The house and waterfall are not separate—they are integrated.' The house and waterfall are not separate—they are integrated.'."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+  },
+  {
+    "question_id": "8e476839-956c-46a9-915a-d28a465780e1",
+    "article_id": "af09c106-1da0-46e4-8081-bd3b5e393428",
+    "article_dir": ".ai/content-audit-export/articles/lea-hist-014-04-core-concept--af09c106-1da0-46e4-8081-bd3b5e393428",
+    "title": "lea-hist-014-04-core-concept",
+    "baseline_hash": "sha256:883f0ba9108fa874d0fa4502f17d553b27e4049dee72af8993389fb8d680abec",
+    "baseline": {
+      "question_id": "8e476839-956c-46a9-915a-d28a465780e1",
+      "article_id": "af09c106-1da0-46e4-8081-bd3b5e393428",
+      "topic_id": "67d985cd-92c3-4793-9a1f-de9c9e85e3af",
+      "text": "Why is it important that open plan design in Wright's work is not simple 'just removing walls'?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Removing walls weakens structural integrity and must be avoided, as it can lead to significant safety issues."
+        },
+        {
+          "id": "b",
+          "text": "Open plan is sophisticated design requiring careful spatial hierarchy, visual relationship, and movement choreography to function effectively"
+        },
+        {
+          "id": "c",
+          "text": "Walls should never be removed from any building regardless of design intent, which is a conservative approach to architectural design."
+        },
+        {
+          "id": "d",
+          "text": "Open plan sacrifices functionality for aesthetic effect, which can compromise the usability of the space."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Structural concerns are not the issue; sophisticated spatial design is.",
+        "c": "The article embraces open plan as a principle, not universally rejecting walls.",
+        "d": "Open plan enhances both aesthetics and functionality through sophisticated design.",
+        "correct": "Mistake 4: Treating open plan as simple... Open plan is a sophisticated design principle: spaces relate visually and functionally, privacy is created through spatial hierarchy not enclosure, movement through space matters aesthetically. Open plan requires more careful design than enclosed rooms, not less.'",
+        "takeaway": "Open plan requires more careful design than enclosed rooms, not less.'."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-014-04-012",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.310909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:883f0ba9108fa874d0fa4502f17d553b27e4049dee72af8993389fb8d680abec"
+    },
+    "proposed": {
+      "explanation": "Structural concerns are not the issue; sophisticated spatial design is. The article embraces open plan as a principle, not universally rejecting walls. Open plan enhances both aesthetics and functionality through sophisticated design. Mistake 4: Treating open plan as simple... Open plan is a sophisticated design principle: spaces relate visually and functionally, privacy is created through spatial hierarchy not enclosure, movement through space matters aesthetically. Open plan requires more careful design than enclosed rooms, not less.' Open plan requires more careful design than enclosed rooms, not less.'."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+  },
+  {
+    "question_id": "0873aa87-6924-4ef2-a4a6-9abbc8abe195",
+    "article_id": "af09c106-1da0-46e4-8081-bd3b5e393428",
+    "article_dir": ".ai/content-audit-export/articles/lea-hist-014-04-core-concept--af09c106-1da0-46e4-8081-bd3b5e393428",
+    "title": "lea-hist-014-04-core-concept",
+    "baseline_hash": "sha256:7fa04a9ecb15887accb81fe6383b9a3cb9e02923b2186bf4576bb8f0588dea6c",
+    "baseline": {
+      "question_id": "0873aa87-6924-4ef2-a4a6-9abbc8abe195",
+      "article_id": "af09c106-1da0-46e4-8081-bd3b5e393428",
+      "topic_id": "67d985cd-92c3-4793-9a1f-de9c9e85e3af",
+      "text": "Why did Usonian houses represent a democratization of modernism?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They were offered for free to low-income residents, with all construction costs subsidized by government grants"
+        },
+        {
+          "id": "b",
+          "text": "They proved good architecture was not exclusive to the wealthy but could be affordable and beautiful for ordinary Americans"
+        },
+        {
+          "id": "c",
+          "text": "They eliminated all design principles in favor of purely functional bare-minimum construction, focusing solely on cost reduction"
+        },
+        {
+          "id": "d",
+          "text": "They were designed by collective community processes rather than individual architects, ensuring that every resident had input in the design"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While affordable, Usonian houses were not free.",
+        "c": "Usonian houses retained design principles; democratization did not mean abandoning design quality.",
+        "d": "Wright designed Usonian houses; individual architect authorship remained.",
+        "correct": "They democratized modernism; they proved good architecture was not exclusive to the wealthy.'",
+        "takeaway": "The article states: 'They democratized modernism; they proved good architecture was not exclusive to the wealthy.'."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-014-04-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.310909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7fa04a9ecb15887accb81fe6383b9a3cb9e02923b2186bf4576bb8f0588dea6c"
+    },
+    "proposed": {
+      "explanation": "While affordable, Usonian houses were not free. Usonian houses retained design principles; democratization did not mean abandoning design quality. Wright designed Usonian houses; individual architect authorship remained. They democratized modernism; they proved good architecture was not exclusive to the wealthy.' The article states: 'They democratized modernism; they proved good architecture was not exclusive to the wealthy.'."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+  },
+  {
+    "question_id": "bee841e4-55b8-45a5-a307-e33838b1439f",
+    "article_id": "af09c106-1da0-46e4-8081-bd3b5e393428",
+    "article_dir": ".ai/content-audit-export/articles/lea-hist-014-04-core-concept--af09c106-1da0-46e4-8081-bd3b5e393428",
+    "title": "lea-hist-014-04-core-concept",
+    "baseline_hash": "sha256:7eeadeb8c6ad19f7d4fefc78b9fe338bc6ed369e9f0ebae4ff11c314a0b1f303",
+    "baseline": {
+      "question_id": "bee841e4-55b8-45a5-a307-e33838b1439f",
+      "article_id": "af09c106-1da0-46e4-8081-bd3b5e393428",
+      "topic_id": "67d985cd-92c3-4793-9a1f-de9c9e85e3af",
+      "text": "How does Wright's organic architecture differ from European International Style modernism, particularly Le Corbusier's approach?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Wright uses only natural materials while Le Corbusier uses only industrial materials, reflecting their differing philosophies on materiality and construction"
+        },
+        {
+          "id": "b",
+          "text": "Wright pursues site-specific design responding to landscape; Le Corbusier pursues universal design principles applicable anywhere"
+        },
+        {
+          "id": "c",
+          "text": "Wright rejects modernism entirely while Le Corbusier embraces it, showcasing a fundamental divergence in architectural ideology"
+        },
+        {
+          "id": "d",
+          "text": "Wright builds smaller buildings while Le Corbusier designs monumental structures, emphasizing their contrasting approaches to scale and impact"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Both use diverse materials; the distinction is not material palette.",
+        "c": "Wright is modernist but anti-International Style; both are modernist.",
+        "d": "Both design varied scales; the philosophical approach to place, not size, is the distinction.",
+        "correct": "The article addresses Mistake 2: 'Le Corbusier pursued universal design principles (the Modulor, standard dimensions); Wright pursued site-specific design. Le Corbusier's buildings can be anywhere; Wright's must be where they are.'",
+        "takeaway": "Le Corbusier's buildings can be anywhere; Wright's must be where they are.'."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-014-04-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.310909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7eeadeb8c6ad19f7d4fefc78b9fe338bc6ed369e9f0ebae4ff11c314a0b1f303"
+    },
+    "proposed": {
+      "explanation": "Both use diverse materials; the distinction is not material palette. Wright is modernist but anti-International Style; both are modernist. Both design varied scales; the philosophical approach to place, not size, is the distinction. The article addresses Mistake 2: 'Le Corbusier pursued universal design principles (the Modulor, standard dimensions); Wright pursued site-specific design. Le Corbusier's buildings can be anywhere; Wright's must be where they are.' Le Corbusier's buildings can be anywhere; Wright's must be where they are.'."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+  },
+  {
+    "question_id": "63961b23-5f58-4f8b-85ed-9114ddfd63ec",
+    "article_id": "b9ae0f63-0d28-4a66-b2bf-51641e6db739",
+    "article_dir": ".ai/content-audit-export/articles/lea-plan-004-04-what-you-need-to-know-for-the-lea--b9ae0f63-0d28-4a66-b2bf-51641e6db739",
+    "title": "lea-plan-004-04-what-you-need-to-know-for-the-lea",
+    "baseline_hash": "sha256:a073be7b5f03c814ddbd0103177daa06ee81c44793656ec3db0a4f51369ff5dd",
+    "baseline": {
+      "question_id": "63961b23-5f58-4f8b-85ed-9114ddfd63ec",
+      "article_id": "b9ae0f63-0d28-4a66-b2bf-51641e6db739",
+      "topic_id": "3e4b1144-5e80-463d-a901-2f5d671c7f2a",
+      "text": "A barangay has restored a degraded mangrove wetland through a community reforestation project. To ensure the restoration is sustainable over the long term, what is the most important management consideration?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Plant the trees once and assume they will thrive without further intervention, which is a risky assumption that may lead to project failure"
+        },
+        {
+          "id": "b",
+          "text": "Manage the wetland for maximum yield (e.g., aquaculture conversion) to generate income for barangay, potentially compromising ecological integrity"
+        },
+        {
+          "id": "c",
+          "text": "Focus exclusively on preventing human access; exclude all users to ensure ecological protection, which may not be feasible or beneficial for community engagement"
+        },
+        {
+          "id": "d",
+          "text": "Establish a monitoring program to track mangrove health, invasive species encroachment, and water quality; document baseline conditions; and adjust management strategies based on monitoring results"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Student underestimates ongoing maintenance needs",
+        "b": "Student conflates livelihood with the primary management goal of restoration",
+        "c": "Student confuses protection with exclusion; misses livelihood and community stewardship integration",
+        "d": "Monitoring is the foundation of adaptive management; baseline documentation and outcome tracking enable informed adjustments.",
+        "correct": "Monitoring is the foundation of adaptive management; baseline documentation and outcome tracking enable informed adjustments.",
+        "takeaway": "Monitor, document baseline, adjust strategy—this is adaptive management."
+      },
+      "explanation": null,
+      "code_citation": "LEA-PLAN-004-04: Monitoring and Adaptive Management section",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-004-04-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:38.324164+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a073be7b5f03c814ddbd0103177daa06ee81c44793656ec3db0a4f51369ff5dd"
+    },
+    "proposed": {
+      "explanation": "Student underestimates ongoing maintenance needs Student conflates livelihood with the primary management goal of restoration Student confuses protection with exclusion; misses livelihood and community stewardship integration Monitoring is the foundation of adaptive management; baseline documentation and outcome tracking enable informed adjustments. Monitoring is the foundation of adaptive management; baseline documentation and outcome tracking enable informed adjustments. Monitor, document baseline, adjust strategy—this is adaptive management."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+  },
+  {
+    "question_id": "e0e26036-7ea4-4b4d-80f6-79da326f1363",
+    "article_id": "b9ae0f63-0d28-4a66-b2bf-51641e6db739",
+    "article_dir": ".ai/content-audit-export/articles/lea-plan-004-04-what-you-need-to-know-for-the-lea--b9ae0f63-0d28-4a66-b2bf-51641e6db739",
+    "title": "lea-plan-004-04-what-you-need-to-know-for-the-lea",
+    "baseline_hash": "sha256:59827077700ee7d336392138f3be462cca38173c01e0d52a03c3f80c3b7255f6",
+    "baseline": {
+      "question_id": "e0e26036-7ea4-4b4d-80f6-79da326f1363",
+      "article_id": "b9ae0f63-0d28-4a66-b2bf-51641e6db739",
+      "topic_id": "3e4b1144-5e80-463d-a901-2f5d671c7f2a",
+      "text": "A site planner is designing a 50-hectare community park for a barangay. The park will have forests, grasslands, and a restored riverine zone. The barangay has limited government budget for park maintenance and no clear management plan. What is the planner's most important action to ensure the park's long-term viability?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Design the park without considering management; assume the barangay will figure out maintenance after opening, which is a risky assumption"
+        },
+        {
+          "id": "b",
+          "text": "Design the park with sophisticated automated systems (irrigation, lighting, waste management) to minimize human labor requirements, which may not be feasible given budget constraints"
+        },
+        {
+          "id": "c",
+          "text": "Design the park to be simple and low-maintenance; simultaneously, develop a management plan that identifies responsible agencies, annual maintenance costs, funding sources, and community stewardship roles—secure commitment before park construction"
+        },
+        {
+          "id": "d",
+          "text": "Design the park with minimal native vegetation and maximal hardscaping (concrete, asphalt) to reduce maintenance burden, which may not align with ecological goals"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Student defers management planning inappropriately",
+        "b": "Student proposes high-tech solution without addressing funding or local capacity",
+        "c": "Integrate management planning with design; secure funding and responsibility commitments before opening—this prevents the classic failure pattern.",
+        "d": "Student sacrifices ecological and recreational function to minimize maintenance",
+        "correct": "Integrate management planning with design; secure funding and responsibility commitments before opening—this prevents the classic failure pattern.",
+        "takeaway": "Design for simplicity + management plan + secured funding = long-term viability."
+      },
+      "explanation": null,
+      "code_citation": "LEA-PLAN-004-04: Maintenance Planning and Long-term Viability section",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-004-04-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:38.324164+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:59827077700ee7d336392138f3be462cca38173c01e0d52a03c3f80c3b7255f6"
+    },
+    "proposed": {
+      "explanation": "Student defers management planning inappropriately Student proposes high-tech solution without addressing funding or local capacity Integrate management planning with design; secure funding and responsibility commitments before opening—this prevents the classic failure pattern. Student sacrifices ecological and recreational function to minimize maintenance Integrate management planning with design; secure funding and responsibility commitments before opening—this prevents the classic failure pattern. Design for simplicity + management plan + secured funding = long-term viability."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+  },
+  {
+    "question_id": "02a95960-deff-4085-9f7e-f69188de6002",
+    "article_id": "b9ae0f63-0d28-4a66-b2bf-51641e6db739",
+    "article_dir": ".ai/content-audit-export/articles/lea-plan-004-04-what-you-need-to-know-for-the-lea--b9ae0f63-0d28-4a66-b2bf-51641e6db739",
+    "title": "lea-plan-004-04-what-you-need-to-know-for-the-lea",
+    "baseline_hash": "sha256:c6b319b4477f67826045cb30095c294e28f1df6aee8fef3f3c04cb6f938e3a85",
+    "baseline": {
+      "question_id": "02a95960-deff-4085-9f7e-f69188de6002",
+      "article_id": "b9ae0f63-0d28-4a66-b2bf-51641e6db739",
+      "topic_id": "3e4b1144-5e80-463d-a901-2f5d671c7f2a",
+      "text": "What is adaptive management in the context of ecological site stewardship?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A cyclical process of setting goals, implementing actions, monitoring outcomes, and adjusting strategy based on results"
+        },
+        {
+          "id": "b",
+          "text": "One-time design of management procedures that are never changed after implementation, regardless of outcomes or environmental changes"
+        },
+        {
+          "id": "c",
+          "text": "Allowing the site to evolve naturally without any intervention or management, assuming that natural processes will always lead to optimal outcomes"
+        },
+        {
+          "id": "d",
+          "text": "Using technology and automation to replace human management decisions, assuming that automated systems can adapt to all ecological changes"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Adaptive management is cyclical: establish baseline → set goal → implement action → monitor → adjust. This responsive approach improves outcomes over time.",
+        "b": "Student misunderstands adaptive as the opposite—static management",
+        "c": "Student conflates adaptive with passive/abandonment approach",
+        "d": "Student confuses adaptive with technological substitution",
+        "correct": "Adaptive management is cyclical: establish baseline → set goal → implement action → monitor → adjust. This responsive approach improves outcomes over time.",
+        "takeaway": "Adaptive management = monitor-and-adjust cycle, not set-and-forget."
+      },
+      "explanation": null,
+      "code_citation": "LEA-PLAN-004-04: Monitoring and Adaptive Management section",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-004-04-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:38.324164+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c6b319b4477f67826045cb30095c294e28f1df6aee8fef3f3c04cb6f938e3a85"
+    },
+    "proposed": {
+      "explanation": "Adaptive management is cyclical: establish baseline → set goal → implement action → monitor → adjust. This responsive approach improves outcomes over time. Student misunderstands adaptive as the opposite—static management Student conflates adaptive with passive/abandonment approach Student confuses adaptive with technological substitution Adaptive management is cyclical: establish baseline → set goal → implement action → monitor → adjust. This responsive approach improves outcomes over time. Adaptive management = monitor-and-adjust cycle, not set-and-forget."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+  },
+  {
+    "question_id": "a446d22c-8dd1-47c4-9f5b-2a898bdb1dcf",
+    "article_id": "160660ca-783b-4604-9b2a-691e10f0e97b",
+    "article_dir": ".ai/content-audit-export/articles/lea-hist-008-02-core-concept--160660ca-783b-4604-9b2a-691e10f0e97b",
+    "title": "lea-hist-008-02-core-concept",
+    "baseline_hash": "sha256:a4cb621afd19b6711fef5b48e6f480674a7797fb6d055e832a6846882a3b4c18",
+    "baseline": {
+      "question_id": "a446d22c-8dd1-47c4-9f5b-2a898bdb1dcf",
+      "article_id": "160660ca-783b-4604-9b2a-691e10f0e97b",
+      "topic_id": "ad5324e6-626d-46e8-ad5d-69c9ae4a485e",
+      "text": "Which architect designed the Tassel House (1892-1893) in Brussels, a pioneering example of Art Nouveau with unified interior design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Victor Horta"
+        },
+        {
+          "id": "b",
+          "text": "Hector Guimard"
+        },
+        {
+          "id": "c",
+          "text": "Antoni Gaudí"
+        },
+        {
+          "id": "d",
+          "text": "William Van Alen"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Hector Guimard designed the Paris Métro entrances, another important Art Nouveau work, but not the Tassel House.",
+        "c": "Antoni Gaudí designed the Sagrada Família, which pushed organic design but is more complex in its geometric-organic synthesis.",
+        "d": "William Van Alen designed the Chrysler Building, an Art Deco (not Art Nouveau) masterpiece.",
+        "correct": "Victor Horta designed the Tassel House, where iron railings, stained glass, and wallpaper all speak the same curvilinear Art Nouveau language, demonstrating total design integration.",
+        "takeaway": "Victor Horta designed the Tassel House, where iron railings, stained glass, and wallpaper all speak the same curvilinear Art Nouveau language, demonstrating total design integration."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "ID"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-008-02-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.310909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a4cb621afd19b6711fef5b48e6f480674a7797fb6d055e832a6846882a3b4c18"
+    },
+    "proposed": {
+      "explanation": "Hector Guimard designed the Paris Métro entrances, another important Art Nouveau work, but not the Tassel House. Antoni Gaudí designed the Sagrada Família, which pushed organic design but is more complex in its geometric-organic synthesis. William Van Alen designed the Chrysler Building, an Art Deco (not Art Nouveau) masterpiece. Victor Horta designed the Tassel House, where iron railings, stained glass, and wallpaper all speak the same curvilinear Art Nouveau language, demonstrating total design integration. Victor Horta designed the Tassel House, where iron railings, stained glass, and wallpaper all speak the same curvilinear Art Nouveau language, demonstrating total design integration."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+  },
+  {
+    "question_id": "27e81f64-a309-4d5b-a430-d82998f71f3c",
+    "article_id": "160660ca-783b-4604-9b2a-691e10f0e97b",
+    "article_dir": ".ai/content-audit-export/articles/lea-hist-008-02-core-concept--160660ca-783b-4604-9b2a-691e10f0e97b",
+    "title": "lea-hist-008-02-core-concept",
+    "baseline_hash": "sha256:6e61843547b430a89ba57007ebe03861eed62357e7f05c8f6d46c1a891a2b9e1",
+    "baseline": {
+      "question_id": "27e81f64-a309-4d5b-a430-d82998f71f3c",
+      "article_id": "160660ca-783b-4604-9b2a-691e10f0e97b",
+      "topic_id": "ad5324e6-626d-46e8-ad5d-69c9ae4a485e",
+      "text": "The Chrysler Building, the quintessential Art Deco skyscraper, was completed in what year?",
+      "options": [
+        {
+          "id": "a",
+          "text": "May 27, 1925, which is an incorrect date for its completion"
+        },
+        {
+          "id": "b",
+          "text": "May 27, 1930"
+        },
+        {
+          "id": "c",
+          "text": "1933, which is after the actual completion date"
+        },
+        {
+          "id": "d",
+          "text": "1938, which is significantly later than the actual completion"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "1925 was the date of the Paris Exposition that marked Art Deco's formal debut, not the Chrysler Building's completion.",
+        "c": "1933 is a later date; Art Deco's peak was the early 1930s.",
+        "d": "1938 is after the Chrysler Building's completion.",
+        "correct": "The Chrysler Building opened to tenants May 27, 1930. This date marks the maturity of the Art Deco style in American corporate architecture.",
+        "takeaway": "This date marks the maturity of the Art Deco style in American corporate architecture."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "CH"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-008-02-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.310909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6e61843547b430a89ba57007ebe03861eed62357e7f05c8f6d46c1a891a2b9e1"
+    },
+    "proposed": {
+      "explanation": "1925 was the date of the Paris Exposition that marked Art Deco's formal debut, not the Chrysler Building's completion. 1933 is a later date; Art Deco's peak was the early 1930s. 1938 is after the Chrysler Building's completion. The Chrysler Building opened to tenants May 27, 1930. This date marks the maturity of the Art Deco style in American corporate architecture. This date marks the maturity of the Art Deco style in American corporate architecture."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+  },
+  {
+    "question_id": "23d7da8c-8df4-4377-891c-f79e0444b289",
+    "article_id": "160660ca-783b-4604-9b2a-691e10f0e97b",
+    "article_dir": ".ai/content-audit-export/articles/lea-hist-008-02-core-concept--160660ca-783b-4604-9b2a-691e10f0e97b",
+    "title": "lea-hist-008-02-core-concept",
+    "baseline_hash": "sha256:14339bb48458661f4890aee370c00fb66598389898f8f1b89a3dee9117566e2b",
+    "baseline": {
+      "question_id": "23d7da8c-8df4-4377-891c-f79e0444b289",
+      "article_id": "160660ca-783b-4604-9b2a-691e10f0e97b",
+      "topic_id": "ad5324e6-626d-46e8-ad5d-69c9ae4a485e",
+      "text": "Art Deco celebrated machine-age technology and streamlined forms. Why did this philosophy appeal strongly to corporate and commercial clients?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Because it was cheaper to construct than ornamental buildings, allowing for cost savings in large projects"
+        },
+        {
+          "id": "b",
+          "text": "Because it conveyed wealth, progress, technological modernity, and cosmopolitan sophistication—values corporations wanted to project"
+        },
+        {
+          "id": "c",
+          "text": "Because it required less skilled labor for construction, reducing labor costs significantly"
+        },
+        {
+          "id": "d",
+          "text": "Because it was environmentally sustainable compared to previous styles, aligning with modern eco-friendly values"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Art Deco often used expensive materials (chrome, marble, exotic woods) and was not necessarily cheaper.",
+        "c": "Art Deco didn't reduce labor requirements; it required highly skilled craftsmanship.",
+        "d": "Sustainability wasn't a factor in early 20th-century design philosophy or client motivations.",
+        "correct": "Art Deco's geometric forms, luxury materials, and machine-age aesthetic conveyed prosperity and forward-thinking—exactly what corporate clients wanted to communicate about their businesses and brands.",
+        "takeaway": "Art Deco's geometric forms, luxury materials, and machine-age aesthetic conveyed prosperity and forward-thinking—exactly what corporate clients wanted to communicate about their businesses and brands."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-008-02-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.729652+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:14339bb48458661f4890aee370c00fb66598389898f8f1b89a3dee9117566e2b"
+    },
+    "proposed": {
+      "explanation": "Art Deco often used expensive materials (chrome, marble, exotic woods) and was not necessarily cheaper. Art Deco didn't reduce labor requirements; it required highly skilled craftsmanship. Sustainability wasn't a factor in early 20th-century design philosophy or client motivations. Art Deco's geometric forms, luxury materials, and machine-age aesthetic conveyed prosperity and forward-thinking—exactly what corporate clients wanted to communicate about their businesses and brands. Art Deco's geometric forms, luxury materials, and machine-age aesthetic conveyed prosperity and forward-thinking—exactly what corporate clients wanted to communicate about their businesses and brands."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+  },
+  {
+    "question_id": "b76ce15e-42c8-426f-9fcc-b44bd3c89799",
+    "article_id": "160660ca-783b-4604-9b2a-691e10f0e97b",
+    "article_dir": ".ai/content-audit-export/articles/lea-hist-008-02-core-concept--160660ca-783b-4604-9b2a-691e10f0e97b",
+    "title": "lea-hist-008-02-core-concept",
+    "baseline_hash": "sha256:2f3fff59192eff211bb508788068c35b3c9c248c09977aa5ea6f6a951d4e2249",
+    "baseline": {
+      "question_id": "b76ce15e-42c8-426f-9fcc-b44bd3c89799",
+      "article_id": "160660ca-783b-4604-9b2a-691e10f0e97b",
+      "topic_id": "ad5324e6-626d-46e8-ad5d-69c9ae4a485e",
+      "text": "Which of the following best explains why students often confuse the whiplash line (Art Nouveau) with features of Art Deco?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Both movements emerged in the same year, leading to historical confusion"
+        },
+        {
+          "id": "b",
+          "text": "Both movements used curved lines as their primary design element, though with different stylistic intentions"
+        },
+        {
+          "id": "c",
+          "text": "Both movements rejected 19th-century historicism, but the whiplash line belongs specifically to Art Nouveau's organic aesthetic; Art Deco uses sharp angles and chevrons instead"
+        },
+        {
+          "id": "d",
+          "text": "The whiplash line appears in Art Deco buildings, though less frequently, causing misidentification"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "They didn't emerge in the same year; Art Nouveau peaked before Art Deco emerged.",
+        "b": "Art Deco uses sharp geometric curves and angles, not the organic S-curves of the whiplash line.",
+        "d": "The whiplash line is specific to Art Nouveau and doesn't appear in Art Deco (which uses geometric chevrons instead).",
+        "correct": "This explains the common confusion: both movements rejected historicism and were early 20th-century, making them seem related. However, their design vocabularies were opposite. Understanding this distinction is crucial.",
+        "takeaway": "Understanding this distinction is crucial."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-008-02-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.729652+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2f3fff59192eff211bb508788068c35b3c9c248c09977aa5ea6f6a951d4e2249"
+    },
+    "proposed": {
+      "explanation": "They didn't emerge in the same year; Art Nouveau peaked before Art Deco emerged. Art Deco uses sharp geometric curves and angles, not the organic S-curves of the whiplash line. The whiplash line is specific to Art Nouveau and doesn't appear in Art Deco (which uses geometric chevrons instead). This explains the common confusion: both movements rejected historicism and were early 20th-century, making them seem related. However, their design vocabularies were opposite. Understanding this distinction is crucial. Understanding this distinction is crucial."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+  },
+  {
+    "question_id": "a3fa69f0-4e55-437b-bc21-2e14a6bb085a",
+    "article_id": "160660ca-783b-4604-9b2a-691e10f0e97b",
+    "article_dir": ".ai/content-audit-export/articles/lea-hist-008-02-core-concept--160660ca-783b-4604-9b2a-691e10f0e97b",
+    "title": "lea-hist-008-02-core-concept",
+    "baseline_hash": "sha256:254e747e196e11b3ddef1c731570bf9e531c63b9b161104c52fc8b87a153e84e",
+    "baseline": {
+      "question_id": "a3fa69f0-4e55-437b-bc21-2e14a6bb085a",
+      "article_id": "160660ca-783b-4604-9b2a-691e10f0e97b",
+      "topic_id": "ad5324e6-626d-46e8-ad5d-69c9ae4a485e",
+      "text": "The 'whiplash line'—a violent S-curve—became a defining motif of Art Nouveau. What did this design feature represent philosophically?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The machine-age emphasis on speed and efficiency"
+        },
+        {
+          "id": "b",
+          "text": "The geometric perfection sought by industrial designers"
+        },
+        {
+          "id": "c",
+          "text": "The organic energy and dynamic movement of living nature"
+        },
+        {
+          "id": "d",
+          "text": "The rejection of all curved forms in favor of pure geometry"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Speed and efficiency are Art Deco concerns, not Art Nouveau.",
+        "b": "Geometric perfection contradicts the whiplash line's nature-inspired curves.",
+        "d": "Art Nouveau celebrates, not rejects, curved forms.",
+        "correct": "The whiplash line's violent S-curve expresses the kinetic energy and organic movement found in nature—trees, flowers, flowing water. It's the visual embodiment of Art Nouveau's nature-inspired philosophy.",
+        "takeaway": "It's the visual embodiment of Art Nouveau's nature-inspired philosophy."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-008-02-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.729652+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:254e747e196e11b3ddef1c731570bf9e531c63b9b161104c52fc8b87a153e84e"
+    },
+    "proposed": {
+      "explanation": "Speed and efficiency are Art Deco concerns, not Art Nouveau. Geometric perfection contradicts the whiplash line's nature-inspired curves. Art Nouveau celebrates, not rejects, curved forms. The whiplash line's violent S-curve expresses the kinetic energy and organic movement found in nature—trees, flowers, flowing water. It's the visual embodiment of Art Nouveau's nature-inspired philosophy. It's the visual embodiment of Art Nouveau's nature-inspired philosophy."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+  },
+  {
+    "question_id": "f5c69dc0-f032-460c-9d09-1463eae3689c",
+    "article_id": "160660ca-783b-4604-9b2a-691e10f0e97b",
+    "article_dir": ".ai/content-audit-export/articles/lea-hist-008-02-core-concept--160660ca-783b-4604-9b2a-691e10f0e97b",
+    "title": "lea-hist-008-02-core-concept",
+    "baseline_hash": "sha256:d33fa0c9a93c825054ea02a812f68cbcb4deb561ead6156e0c053f62de174bbc",
+    "baseline": {
+      "question_id": "f5c69dc0-f032-460c-9d09-1463eae3689c",
+      "article_id": "160660ca-783b-4604-9b2a-691e10f0e97b",
+      "topic_id": "ad5324e6-626d-46e8-ad5d-69c9ae4a485e",
+      "text": "Art Deco matured during the 1920s and 1930s. Which event in 1925 is conventionally marked as the movement's formal debut?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The opening of the Museum of Modern Art in New York, which showcased contemporary art movements"
+        },
+        {
+          "id": "b",
+          "text": "The completion of the Chrysler Building, a symbol of Art Deco architecture in New York City"
+        },
+        {
+          "id": "c",
+          "text": "The Exposition Internationale des Arts Décoratifs et Industriels Modernes in Paris"
+        },
+        {
+          "id": "d",
+          "text": "The Nazi closure of the Bauhaus, which marked a significant shift in design philosophy"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "MoMA opened in 1929, after Art Deco's formal debut.",
+        "b": "The Chrysler Building was completed in 1930, after the 1925 exposition.",
+        "d": "The Bauhaus closure occurred in 1933, well after Art Deco's emergence.",
+        "correct": "The 1925 Paris Exposition Internationale des Arts Décoratifs et Industriels Modernes is conventionally marked as Art Deco's formal debut and the source of the movement's name.",
+        "takeaway": "The 1925 Paris Exposition Internationale des Arts Décoratifs et Industriels Modernes is conventionally marked as Art Deco's formal debut and the source of the movement's name."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "CH"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-008-02-011",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.729652+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d33fa0c9a93c825054ea02a812f68cbcb4deb561ead6156e0c053f62de174bbc"
+    },
+    "proposed": {
+      "explanation": "MoMA opened in 1929, after Art Deco's formal debut. The Chrysler Building was completed in 1930, after the 1925 exposition. The Bauhaus closure occurred in 1933, well after Art Deco's emergence. The 1925 Paris Exposition Internationale des Arts Décoratifs et Industriels Modernes is conventionally marked as Art Deco's formal debut and the source of the movement's name. The 1925 Paris Exposition Internationale des Arts Décoratifs et Industriels Modernes is conventionally marked as Art Deco's formal debut and the source of the movement's name."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+  },
+  {
+    "question_id": "7231d63a-9725-4b73-b02b-aeb4808c3fb0",
+    "article_id": "a7751310-8582-4b9a-a71b-78f6e9216b79",
+    "article_dir": ".ai/content-audit-export/articles/lea-prac-cmp-008-choosing-mdpe-vs-percentage-of-pcc-the-decision-matrix--a7751310-8582-4b9a-a71b-78f6e9216b79",
+    "title": "lea-prac-cmp-008-choosing-mdpe-vs-percentage-of-pcc-the-decision-matrix",
+    "baseline_hash": "sha256:9697219b676bd962842dd0ad57275d334c648363780bca8df38af42a1dcf65cb",
+    "baseline": {
+      "question_id": "7231d63a-9725-4b73-b02b-aeb4808c3fb0",
+      "article_id": "a7751310-8582-4b9a-a71b-78f6e9216b79",
+      "topic_id": "868d30ee-7cc3-44a2-b2b9-cf452f06a4b3",
+      "text": "Which project type is most suited to MDPE compensation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A conventional 5-story apartment building with standard design, offering predictable costs"
+        },
+        {
+          "id": "b",
+          "text": "A straightforward retail space with simple mechanical systems, minimizing complexity"
+        },
+        {
+          "id": "c",
+          "text": "A renovation project with significant scope uncertainty and phased delivery"
+        },
+        {
+          "id": "d",
+          "text": "A standard office building with predictable construction cost, reducing financial risk"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Describes a straightforward project suited to percentage-of-PCC due to predictable scope and cost; not appropriate for MDPE.",
+        "b": "Simple mechanical systems and standard design suggest percentage-of-PCC viability, not MDPE.",
+        "d": "Standard office buildings with predictable costs favor percentage-of-PCC, not MDPE.",
+        "correct": "Renovation projects with uncertain scope, phased delivery, or projects with difficult-to-estimate costs are well-suited to MDPE because hourly billing accommodates uncertainty better than percentage-of-PCC.",
+        "takeaway": "MDPE protects the architect on projects where scope uncertainty and existing conditions make cost estimates unreliable."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines; SPP Doc 202",
+      "bloom_level": "remember",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-008-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9697219b676bd962842dd0ad57275d334c648363780bca8df38af42a1dcf65cb"
+    },
+    "proposed": {
+      "explanation": "Describes a straightforward project suited to percentage-of-PCC due to predictable scope and cost; not appropriate for MDPE. Simple mechanical systems and standard design suggest percentage-of-PCC viability, not MDPE. Standard office buildings with predictable costs favor percentage-of-PCC, not MDPE. Renovation projects with uncertain scope, phased delivery, or projects with difficult-to-estimate costs are well-suited to MDPE because hourly billing accommodates uncertainty better than percentage-of-PCC. MDPE protects the architect on projects where scope uncertainty and existing conditions make cost estimates unreliable."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+  },
+  {
+    "question_id": "1c805ba0-36b6-47f1-bf1a-6128a55a3735",
+    "article_id": "fcc75f5a-1738-4cbc-bcf7-cb5d4f14c2d0",
+    "article_dir": ".ai/content-audit-export/articles/lea-prac-cmp-001-core-concept--fcc75f5a-1738-4cbc-bcf7-cb5d4f14c2d0",
+    "title": "lea-prac-cmp-001-core-concept",
+    "baseline_hash": "sha256:5b46024882b1bd2d3dfcb8ce0a6408d6482920a4f786918ea3091a4c633da8e5",
+    "baseline": {
+      "question_id": "1c805ba0-36b6-47f1-bf1a-6128a55a3735",
+      "article_id": "fcc75f5a-1738-4cbc-bcf7-cb5d4f14c2d0",
+      "topic_id": "b1200316-1a02-4e05-88ad-1668d383f49f",
+      "text": "Which Project Classification Group covers low-rise residential buildings such as single-family houses, duplexes, and townhouses?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Group 1 — Simplest Utilization and Character"
+        },
+        {
+          "id": "b",
+          "text": "Group 3 — Exceptional Character"
+        },
+        {
+          "id": "c",
+          "text": "Group 4 — Low-Rise Residentials"
+        },
+        {
+          "id": "d",
+          "text": "Group 7 — Repetitive Housing"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Group 1 covers buildings of simplest utilization and character — utilitarian structures like warehouses and simple factories, not residentials.",
+        "b": "Group 3 covers buildings of exceptional character housing special equipment — churches, theaters, museums — not standard residential buildings.",
+        "d": "Group 7 covers repetitive housing (mass housing developments with a single unit design repeated), not the general low-rise residential category.",
+        "correct": "Group 4 covers residences such as single-detached, duplexes, rowhouses, small apartment houses, and townhouses.",
+        "takeaway": "Low-rise residentials = Group 4 at 10% of PCC — distinct from repetitive housing (Group 7) and utilitarian structures (Group 1)."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines, Project Classification Group 4",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-001-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5b46024882b1bd2d3dfcb8ce0a6408d6482920a4f786918ea3091a4c633da8e5"
+    },
+    "proposed": {
+      "explanation": "Group 1 covers buildings of simplest utilization and character — utilitarian structures like warehouses and simple factories, not residentials. Group 3 covers buildings of exceptional character housing special equipment — churches, theaters, museums — not standard residential buildings. Group 7 covers repetitive housing (mass housing developments with a single unit design repeated), not the general low-rise residential category. Group 4 covers residences such as single-detached, duplexes, rowhouses, small apartment houses, and townhouses. Low-rise residentials = Group 4 at 10% of PCC — distinct from repetitive housing (Group 7) and utilitarian structures (Group 1)."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+  },
+  {
+    "question_id": "6d78f957-75be-4148-b47f-3a2af938aea8",
+    "article_id": "6a351c32-f48d-45fb-93f5-e60e6cd271c5",
+    "article_dir": ".ai/content-audit-export/articles/lea-plan-004-01-what-you-need-to-know-for-the-lea--6a351c32-f48d-45fb-93f5-e60e6cd271c5",
+    "title": "lea-plan-004-01-what-you-need-to-know-for-the-lea",
+    "baseline_hash": "sha256:afed604e8b55ceb95a64c887420b1573a7ab3c44fbee405aa132c5f900f93d60",
+    "baseline": {
+      "question_id": "6d78f957-75be-4148-b47f-3a2af938aea8",
+      "article_id": "6a351c32-f48d-45fb-93f5-e60e6cd271c5",
+      "topic_id": "656621b7-5b9b-4465-b788-151010b80774",
+      "text": "A planning consultant prepares a site analysis for a proposed school on a corner lot in a residential district. The analysis documents shadow patterns (trees and buildings cast afternoon shadows across much of the site), view sightlines (the lot is across from a 20-year-old church that is a recognized neighborhood landmark), and H:W ratios of existing streetscape (ranging from 1:3 to 1:4 in the district). The consultant recommends a 10-story building to maximize land use. What is the primary flaw in this recommendation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The consultant failed to recognize that a 10-story building would create an H:W ratio far exceeding the district's existing pattern, resulting in visual discontinuity and an oppressive streetscape incompatible with neighborhood character"
+        },
+        {
+          "id": "b",
+          "text": "The consultant ignored shadow patterns, which is irrelevant for school site planning, as educational facilities prioritize interior space over exterior aesthetics"
+        },
+        {
+          "id": "c",
+          "text": "Schools cannot be built on corner lots with landmark views, so the site is inherently unsuitable for educational development"
+        },
+        {
+          "id": "d",
+          "text": "The recommendation is sound because maximizing land use always takes precedence over neighborhood visual compatibility, ensuring optimal use of available space"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "A 10-story building in a district with 1:3 to 1:4 ratios (open, human-scaled) would create a massive mismatch and oppressive streetscape—poor site planning respect for context.",
+        "b": "Student discounts shadow analysis as unimportant for institutional use",
+        "c": "Student confuses site analysis findings with regulatory prohibition",
+        "d": "Student privileges density over site context and visual harmony",
+        "correct": "A 10-story building in a district with 1:3 to 1:4 ratios (open, human-scaled) would create a massive mismatch and oppressive streetscape—poor site planning respect for context.",
+        "takeaway": "Site planning respects neighborhood character and visual context, not just density maximization."
+      },
+      "explanation": null,
+      "code_citation": "LEA-PLAN-004-01: Height-to-Width Ratios and Views sections; VERIFIED_REFERENCE.md PART 7",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-004-01-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:37.124492+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:afed604e8b55ceb95a64c887420b1573a7ab3c44fbee405aa132c5f900f93d60"
+    },
+    "proposed": {
+      "explanation": "A 10-story building in a district with 1:3 to 1:4 ratios (open, human-scaled) would create a massive mismatch and oppressive streetscape—poor site planning respect for context. Student discounts shadow analysis as unimportant for institutional use Student confuses site analysis findings with regulatory prohibition Student privileges density over site context and visual harmony A 10-story building in a district with 1:3 to 1:4 ratios (open, human-scaled) would create a massive mismatch and oppressive streetscape—poor site planning respect for context. Site planning respects neighborhood character and visual context, not just density maximization."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+  },
+  {
+    "question_id": "0d6486e2-500e-4a5f-8634-81b10d0973d5",
+    "article_id": "6a351c32-f48d-45fb-93f5-e60e6cd271c5",
+    "article_dir": ".ai/content-audit-export/articles/lea-plan-004-01-what-you-need-to-know-for-the-lea--6a351c32-f48d-45fb-93f5-e60e6cd271c5",
+    "title": "lea-plan-004-01-what-you-need-to-know-for-the-lea",
+    "baseline_hash": "sha256:52be2f6152b71ad38b0742f0954942cd226f85a6c40932a2da38dd4039c4963a",
+    "baseline": {
+      "question_id": "0d6486e2-500e-4a5f-8634-81b10d0973d5",
+      "article_id": "6a351c32-f48d-45fb-93f5-e60e6cd271c5",
+      "topic_id": "656621b7-5b9b-4465-b788-151010b80774",
+      "text": "During site analysis for a proposed mixed-use development in Makati, the planner documents views from the site and notes that two existing high-rise condominiums on the north boundary block views of the Sierra Madre mountains, which were previously visible from the site. What is the planner's appropriate action?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Note the existing view obstruction in the site analysis and design the proposed development to frame alternative views or minimize additional obstruction of remaining sightlines"
+        },
+        {
+          "id": "b",
+          "text": "Require the neighboring high-rise condominiums to be demolished to restore mountain views, prioritizing aesthetic considerations"
+        },
+        {
+          "id": "c",
+          "text": "Ignore view analysis because the site is in the urban core and views are not a relevant consideration, focusing instead on maximizing floor area"
+        },
+        {
+          "id": "d",
+          "text": "Design the site with the tallest possible building to create a new focal point and compensate for lost mountain views, enhancing the skyline"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Site planners document existing views, acknowledge view loss, and design to preserve remaining views and create new visual focal points—this respects existing context while advancing new development.",
+        "b": "Student confuses view analysis with regulatory enforcement authority",
+        "c": "Student undervalues visual quality assessment in high-density urban sites",
+        "d": "Student confuses visual mitigation with height escalation",
+        "correct": "Site planners document existing views, acknowledge view loss, and design to preserve remaining views and create new visual focal points—this respects existing context while advancing new development.",
+        "takeaway": "Document views; adapt design to preserve or creatively reframe visual experience."
+      },
+      "explanation": null,
+      "code_citation": "LEA-PLAN-004-01: Views and Visual Quality section",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-004-01-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:37.124492+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:52be2f6152b71ad38b0742f0954942cd226f85a6c40932a2da38dd4039c4963a"
+    },
+    "proposed": {
+      "explanation": "Site planners document existing views, acknowledge view loss, and design to preserve remaining views and create new visual focal points—this respects existing context while advancing new development. Student confuses view analysis with regulatory enforcement authority Student undervalues visual quality assessment in high-density urban sites Student confuses visual mitigation with height escalation Site planners document existing views, acknowledge view loss, and design to preserve remaining views and create new visual focal points—this respects existing context while advancing new development. Document views; adapt design to preserve or creatively reframe visual experience."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+  },
+  {
+    "question_id": "36b6f184-c1f7-4061-b31d-d4a4c55fe0da",
+    "article_id": "6a351c32-f48d-45fb-93f5-e60e6cd271c5",
+    "article_dir": ".ai/content-audit-export/articles/lea-plan-004-01-what-you-need-to-know-for-the-lea--6a351c32-f48d-45fb-93f5-e60e6cd271c5",
+    "title": "lea-plan-004-01-what-you-need-to-know-for-the-lea",
+    "baseline_hash": "sha256:1db37c60017cf4a91e26c9f866fd898ca755dcf17de860a0b4d5621e063df5f5",
+    "baseline": {
+      "question_id": "36b6f184-c1f7-4061-b31d-d4a4c55fe0da",
+      "article_id": "6a351c32-f48d-45fb-93f5-e60e6cd271c5",
+      "topic_id": "656621b7-5b9b-4465-b788-151010b80774",
+      "text": "What is the comfortable height-to-width (H:W) ratio for urban streets according to urban design convention?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2:1 (building is twice as tall as the street is wide)"
+        },
+        {
+          "id": "b",
+          "text": "1:4 (building is one-quarter as tall as the street is wide)"
+        },
+        {
+          "id": "c",
+          "text": "1:2 (building is half as tall as the street is wide)"
+        },
+        {
+          "id": "d",
+          "text": "3:1 (building is three times as tall as the street is wide)"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "ERR-PLAN-031 inversion — student reverses the ratio for comfortable vs. oppressive enclosure",
+        "b": "Student chooses the most open ratio, missing the balance of comfortable enclosure",
+        "c": "H:W = 1:2 provides comfortable enclosure and feels human-scaled and welcoming—a standard urban design principle.",
+        "d": "Student selects an oppressive ratio as if it were ideal",
+        "correct": "H:W = 1:2 provides comfortable enclosure and feels human-scaled and welcoming—a standard urban design principle.",
+        "takeaway": "1:2 is comfortable enclosure; 2:1 is oppressive canyon-like feeling."
+      },
+      "explanation": null,
+      "code_citation": "LEA-PLAN-004-01: Height-to-Width Ratios and Enclosure section; VERIFIED_REFERENCE.md PART 7",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-004-01-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:37.124492+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1db37c60017cf4a91e26c9f866fd898ca755dcf17de860a0b4d5621e063df5f5"
+    },
+    "proposed": {
+      "explanation": "ERR-PLAN-031 inversion — student reverses the ratio for comfortable vs. oppressive enclosure Student chooses the most open ratio, missing the balance of comfortable enclosure H:W = 1:2 provides comfortable enclosure and feels human-scaled and welcoming—a standard urban design principle. Student selects an oppressive ratio as if it were ideal H:W = 1:2 provides comfortable enclosure and feels human-scaled and welcoming—a standard urban design principle. 1:2 is comfortable enclosure; 2:1 is oppressive canyon-like feeling."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+  },
+  {
+    "question_id": "6378a29e-db42-4775-9145-3dccba0541f2",
+    "article_id": "6a351c32-f48d-45fb-93f5-e60e6cd271c5",
+    "article_dir": ".ai/content-audit-export/articles/lea-plan-004-01-what-you-need-to-know-for-the-lea--6a351c32-f48d-45fb-93f5-e60e6cd271c5",
+    "title": "lea-plan-004-01-what-you-need-to-know-for-the-lea",
+    "baseline_hash": "sha256:4f277aa3d20e2434685372d5c6cb12db17c9a78a164d6b3065fca0a67e08d7b9",
+    "baseline": {
+      "question_id": "6378a29e-db42-4775-9145-3dccba0541f2",
+      "article_id": "6a351c32-f48d-45fb-93f5-e60e6cd271c5",
+      "topic_id": "656621b7-5b9b-4465-b788-151010b80774",
+      "text": "A site planner analyzes a 5-hectare parcel in a mixed-income barangay. The site has multiple overlapping constraints: steep slopes (contours spaced closely together), west-facing orientation, proximity to an estero (stream), and moderate soil bearing capacity. When integrating these physical findings into a preliminary site planning strategy, which of the following represents the most comprehensive analysis approach?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Focus only on the steepest areas and recommend avoiding development there, leaving all other constraints for later permitting stages, which may lead to unforeseen issues"
+        },
+        {
+          "id": "b",
+          "text": "Map terrain constraints (steep slopes, soil), sun/wind exposure (west-facing, afternoon heat), and easement implications (estero proximity); identify feasible development zones and recommend building orientation strategies that account for multiple constraints simultaneously"
+        },
+        {
+          "id": "c",
+          "text": "Choose the flattest area for development, ignoring sun and wind exposure because topography is the dominant constraint, potentially overlooking critical environmental factors"
+        },
+        {
+          "id": "d",
+          "text": "List all constraints separately without attempting to integrate them, as each requires independent specialist assessment, which may not provide a holistic view"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Student oversimplifies constraint integration and defers analysis prematurely",
+        "b": "Comprehensive site analysis integrates all constraints—terrain, climate, legal limits—and identifies zones where overlapping constraints are minimal, allowing development while respecting limits.",
+        "c": "Student prioritizes one constraint over others and ignores compounding effects",
+        "d": "Student treats site analysis as a collection of isolated data points rather than an integrated planning framework",
+        "correct": "Comprehensive site analysis integrates all constraints—terrain, climate, legal limits—and identifies zones where overlapping constraints are minimal, allowing development while respecting limits.",
+        "takeaway": "Site planning integrates all constraints simultaneously to find developable areas."
+      },
+      "explanation": null,
+      "code_citation": "LEA-PLAN-004-01: Checklist section (item 8)",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-004-01-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:37.124492+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4f277aa3d20e2434685372d5c6cb12db17c9a78a164d6b3065fca0a67e08d7b9"
+    },
+    "proposed": {
+      "explanation": "Student oversimplifies constraint integration and defers analysis prematurely Comprehensive site analysis integrates all constraints—terrain, climate, legal limits—and identifies zones where overlapping constraints are minimal, allowing development while respecting limits. Student prioritizes one constraint over others and ignores compounding effects Student treats site analysis as a collection of isolated data points rather than an integrated planning framework Comprehensive site analysis integrates all constraints—terrain, climate, legal limits—and identifies zones where overlapping constraints are minimal, allowing development while respecting limits. Site planning integrates all constraints simultaneously to find developable areas."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+  },
+  {
+    "question_id": "958e6b1f-6ace-4dbc-974c-0aa166d8c4c0",
+    "article_id": "6a351c32-f48d-45fb-93f5-e60e6cd271c5",
+    "article_dir": ".ai/content-audit-export/articles/lea-plan-004-01-what-you-need-to-know-for-the-lea--6a351c32-f48d-45fb-93f5-e60e6cd271c5",
+    "title": "lea-plan-004-01-what-you-need-to-know-for-the-lea",
+    "baseline_hash": "sha256:8de7e99a9182a7843afced254f96d4ba3aa7d3b498d8ebb2b4acba1c8cd679ea",
+    "baseline": {
+      "question_id": "958e6b1f-6ace-4dbc-974c-0aa166d8c4c0",
+      "article_id": "6a351c32-f48d-45fb-93f5-e60e6cd271c5",
+      "topic_id": "656621b7-5b9b-4465-b788-151010b80774",
+      "text": "A site plan shows buildings arranged at an H:W ratio of approximately 2:1 in a proposed mixed-use development. A planner reviews this and notes that the street will feel oppressive and canyon-like. What should the planner recommend to achieve a more comfortable enclosure?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Increase the building height to 3:1 to create even more enclosure"
+        },
+        {
+          "id": "b",
+          "text": "Reduce the building height or widen the street to move the H:W ratio closer to 1:2"
+        },
+        {
+          "id": "c",
+          "text": "Leave the design as-is because 2:1 is the standard urban design ratio"
+        },
+        {
+          "id": "d",
+          "text": "Increase the street width to 4 times the building height to eliminate all enclosure"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Student moves in wrong direction—increasing the ratio makes oppression worse, not better",
+        "b": "Moving from oppressive 2:1 to comfortable 1:2 requires either height reduction or street widening—this is the correct design response.",
+        "c": "ERR-PLAN-031 variant — student treats oppressive ratio as standard",
+        "d": "Student overcompensates by creating an open, uncomfortable plaza",
+        "correct": "Moving from oppressive 2:1 to comfortable 1:2 requires either height reduction or street widening—this is the correct design response.",
+        "takeaway": "To improve uncomfortable 2:1, aim for 1:2 by adjusting height or width."
+      },
+      "explanation": null,
+      "code_citation": "LEA-PLAN-004-01: Height-to-Width Ratios and Enclosure section",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-004-01-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:37.124492+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8de7e99a9182a7843afced254f96d4ba3aa7d3b498d8ebb2b4acba1c8cd679ea"
+    },
+    "proposed": {
+      "explanation": "Student moves in wrong direction—increasing the ratio makes oppression worse, not better Moving from oppressive 2:1 to comfortable 1:2 requires either height reduction or street widening—this is the correct design response. ERR-PLAN-031 variant — student treats oppressive ratio as standard Student overcompensates by creating an open, uncomfortable plaza Moving from oppressive 2:1 to comfortable 1:2 requires either height reduction or street widening—this is the correct design response. To improve uncomfortable 2:1, aim for 1:2 by adjusting height or width."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+  },
+  {
+    "question_id": "6ee80a53-2217-46fa-b6b4-e1a61da2c28f",
+    "article_id": "39796d5a-c2fd-467f-8891-9e7b32091617",
+    "article_dir": ".ai/content-audit-export/articles/lea-matl-010-01-core-concept--39796d5a-c2fd-467f-8891-9e7b32091617",
+    "title": "lea-matl-010-01-core-concept",
+    "baseline_hash": "sha256:26fbebf5eb1806c885023eefcf4ccd53d45c8f932aa81cd6b59afa1fd66fba97",
+    "baseline": {
+      "question_id": "6ee80a53-2217-46fa-b6b4-e1a61da2c28f",
+      "article_id": "39796d5a-c2fd-467f-8891-9e7b32091617",
+      "topic_id": "a38bfaba-6196-4148-9533-a12b6170429b",
+      "text": "A concrete estimate uses the formula: cement (kg/m³) = water content ÷ W/C. If water content is 170 L/m³ and W/C = 0.52, calculate the cement content.",
+      "options": [
+        {
+          "id": "a",
+          "text": "88 kg/m³"
+        },
+        {
+          "id": "b",
+          "text": "212 kg/m³"
+        },
+        {
+          "id": "c",
+          "text": "327 kg/m³"
+        },
+        {
+          "id": "d",
+          "text": "408 kg/m³"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "88 kg/m³ results from multiplying 170 × 0.52 instead of dividing.",
+        "b": "212 kg/m³ results from an intermediate calculation or estimation error.",
+        "d": "408 kg/m³ results from using W/C = 0.42 or other incorrect ratio.",
+        "correct": "Cement = 170 ÷ 0.52 = 326.9 ≈ 327 kg/m³.",
+        "takeaway": "Always divide water content by the water-cement ratio: Cement = Water ÷ W/C."
+      },
+      "explanation": null,
+      "code_citation": "ACI 211.1-22",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-010-01-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:26fbebf5eb1806c885023eefcf4ccd53d45c8f932aa81cd6b59afa1fd66fba97"
+    },
+    "proposed": {
+      "explanation": "88 kg/m³ results from multiplying 170 × 0.52 instead of dividing. 212 kg/m³ results from an intermediate calculation or estimation error. 408 kg/m³ results from using W/C = 0.42 or other incorrect ratio. Cement = 170 ÷ 0.52 = 326.9 ≈ 327 kg/m³. Always divide water content by the water-cement ratio: Cement = Water ÷ W/C."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+  },
+  {
+    "question_id": "28a96af7-a201-47ff-a1d0-f56bca78c045",
+    "article_id": "39796d5a-c2fd-467f-8891-9e7b32091617",
+    "article_dir": ".ai/content-audit-export/articles/lea-matl-010-01-core-concept--39796d5a-c2fd-467f-8891-9e7b32091617",
+    "title": "lea-matl-010-01-core-concept",
+    "baseline_hash": "sha256:4bc7537566eedfd497612436846a9dce22603f0ab7ef219e862f162a2a8080ce",
+    "baseline": {
+      "question_id": "28a96af7-a201-47ff-a1d0-f56bca78c045",
+      "article_id": "39796d5a-c2fd-467f-8891-9e7b32091617",
+      "topic_id": "a38bfaba-6196-4148-9533-a12b6170429b",
+      "text": "A concrete footing requires f'c = 24 MPa. According to ACI 211.1, the water-cement ratio (W/C) for this strength is 0.50. If the water content is estimated at 180 L/m³, what is the required cement content?",
+      "options": [
+        {
+          "id": "a",
+          "text": "90 kg/m³"
+        },
+        {
+          "id": "b",
+          "text": "180 kg/m³"
+        },
+        {
+          "id": "c",
+          "text": "320 kg/m³"
+        },
+        {
+          "id": "d",
+          "text": "360 kg/m³"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "90 kg/m³ results from multiplying 180 × 0.50 instead of dividing.",
+        "b": "180 kg/m³ incorrectly assumes cement content equals water content.",
+        "c": "320 kg/m³ results from using W/C = 0.55 (for 20 MPa) instead of 0.50.",
+        "correct": "Cement content = Water content ÷ W/C = 180 ÷ 0.50 = 360 kg/m³.",
+        "takeaway": "The water-cement ratio is W/C, so Cement = Water ÷ (W/C). For higher strength (lower W/C), cement content increases."
+      },
+      "explanation": null,
+      "code_citation": "ACI 211.1-22, Mix design methodology",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-010-01-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4bc7537566eedfd497612436846a9dce22603f0ab7ef219e862f162a2a8080ce"
+    },
+    "proposed": {
+      "explanation": "90 kg/m³ results from multiplying 180 × 0.50 instead of dividing. 180 kg/m³ incorrectly assumes cement content equals water content. 320 kg/m³ results from using W/C = 0.55 (for 20 MPa) instead of 0.50. Cement content = Water content ÷ W/C = 180 ÷ 0.50 = 360 kg/m³. The water-cement ratio is W/C, so Cement = Water ÷ (W/C). For higher strength (lower W/C), cement content increases."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+  },
+  {
+    "question_id": "0f696315-b04f-4279-b9a4-51e25bd4f063",
+    "article_id": "39796d5a-c2fd-467f-8891-9e7b32091617",
+    "article_dir": ".ai/content-audit-export/articles/lea-matl-010-01-core-concept--39796d5a-c2fd-467f-8891-9e7b32091617",
+    "title": "lea-matl-010-01-core-concept",
+    "baseline_hash": "sha256:ad78ccdf0f9ab8bfb7a641bcf98912685cf003598d3fffec1cf1b73bdb63eaf0",
+    "baseline": {
+      "question_id": "0f696315-b04f-4279-b9a4-51e25bd4f063",
+      "article_id": "39796d5a-c2fd-467f-8891-9e7b32091617",
+      "topic_id": "a38bfaba-6196-4148-9533-a12b6170429b",
+      "text": "According to ACI 211.1, what is the unit weight (density) of normal-weight concrete after curing?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2,000 kg/m³"
+        },
+        {
+          "id": "b",
+          "text": "2,200 kg/m³"
+        },
+        {
+          "id": "c",
+          "text": "2,400 kg/m³"
+        },
+        {
+          "id": "d",
+          "text": "2,600 kg/m³"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "2,000 kg/m³ is close but is used only in fresh (unhardened) concrete estimates, not for cured concrete.",
+        "b": "2,200 kg/m³ is below the standard; may confuse with lightweight concrete.",
+        "d": "2,600 kg/m³ is for heavyweight concrete, not normal-weight concrete.",
+        "correct": "ACI 211.1 and NSCP 2015 specify 2,400 kg/m³ as the unit weight for normal-weight concrete used in structural applications.",
+        "takeaway": "Standard unit weight = 2,400 kg/m³. Use this to convert volume (m³) to weight (kg) for transportation and cost calculations."
+      },
+      "explanation": null,
+      "code_citation": "ACI 211.1-22, NSCP 2015",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-010-01-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ad78ccdf0f9ab8bfb7a641bcf98912685cf003598d3fffec1cf1b73bdb63eaf0"
+    },
+    "proposed": {
+      "explanation": "2,000 kg/m³ is close but is used only in fresh (unhardened) concrete estimates, not for cured concrete. 2,200 kg/m³ is below the standard; may confuse with lightweight concrete. 2,600 kg/m³ is for heavyweight concrete, not normal-weight concrete. ACI 211.1 and NSCP 2015 specify 2,400 kg/m³ as the unit weight for normal-weight concrete used in structural applications. Standard unit weight = 2,400 kg/m³. Use this to convert volume (m³) to weight (kg) for transportation and cost calculations."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+  },
+  {
+    "question_id": "69a2096c-53b2-4e1f-bff4-498df7580c48",
+    "article_id": "350bd0c3-1bb9-4adf-96f1-5dcd4e052112",
+    "article_dir": ".ai/content-audit-export/articles/lea-matl-004-07-core-concept--350bd0c3-1bb9-4adf-96f1-5dcd4e052112",
+    "title": "lea-matl-004-07-core-concept",
+    "baseline_hash": "sha256:80daa0bd97f9f361107ee746d3d2735e7888e4f871236704b05c9c5df5dc5463",
+    "baseline": {
+      "question_id": "69a2096c-53b2-4e1f-bff4-498df7580c48",
+      "article_id": "350bd0c3-1bb9-4adf-96f1-5dcd4e052112",
+      "topic_id": "51ed8453-ae20-434c-a5ae-462c1ebd0a30",
+      "text": "Moment-resisting frames (MRF) resist lateral seismic forces through ___ moment transfer at beam-column joints. Advantages include ___; disadvantages include larger member sizes and ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "bending; open floor plans (no interior bracing); complex, expensive connections"
+        },
+        {
+          "id": "b",
+          "text": "axial force in diagonal braces; interior space loss; stiff frame, which can limit architectural flexibility"
+        },
+        {
+          "id": "c",
+          "text": "shear in floor decking; reduced deformation; minimal connections, which simplifies construction but may reduce overall strength"
+        },
+        {
+          "id": "d",
+          "text": "weight redistribution; economic efficiency; simple construction, though this may not always meet seismic performance requirements"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Braced frames use axial force in diagonals, not bending.",
+        "c": "Floor decking carries gravity loads; lateral forces are in frame.",
+        "d": "MRF is not economical due to complex connections; braced frames are cheaper.",
+        "correct": "MRF transfers lateral forces through bending moment at rigid beam-column connections. Advantages: architectural flexibility (open floor plans, no interior bracing). Disadvantages: require larger members for moment capacity, complex connections (welded or bolted moment plates), higher cost. Essential for ductility in seismic regions (Philippines)."
+      },
+      "explanation": null,
+      "code_citation": "AISC 360-22; NSCP 2015 Chapter 5",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-004-07-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:80daa0bd97f9f361107ee746d3d2735e7888e4f871236704b05c9c5df5dc5463"
+    },
+    "proposed": {
+      "explanation": "Braced frames use axial force in diagonals, not bending. Floor decking carries gravity loads; lateral forces are in frame. MRF is not economical due to complex connections; braced frames are cheaper. MRF transfers lateral forces through bending moment at rigid beam-column connections. Advantages: architectural flexibility (open floor plans, no interior bracing). Disadvantages: require larger members for moment capacity, complex connections (welded or bolted moment plates), higher cost. Essential for ductility in seismic regions (Philippines)."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+  },
+  {
+    "question_id": "0bbe1ff5-0f2d-475c-83a2-e29b5f89b41c",
+    "article_id": "350bd0c3-1bb9-4adf-96f1-5dcd4e052112",
+    "article_dir": ".ai/content-audit-export/articles/lea-matl-004-07-core-concept--350bd0c3-1bb9-4adf-96f1-5dcd4e052112",
+    "title": "lea-matl-004-07-core-concept",
+    "baseline_hash": "sha256:98c11a646e6e0b3d84b65373c1222419bc2b76bea739694c56d268587c017196",
+    "baseline": {
+      "question_id": "0bbe1ff5-0f2d-475c-83a2-e29b5f89b41c",
+      "article_id": "350bd0c3-1bb9-4adf-96f1-5dcd4e052112",
+      "topic_id": "51ed8453-ae20-434c-a5ae-462c1ebd0a30",
+      "text": "The proper erection sequence for a structural steel frame is: (1) ___, (2) temporary bracing, (3) ___, (4) floor decking and concrete.",
+      "options": [
+        {
+          "id": "a",
+          "text": "(1) Columns; (3) Beams and connections"
+        },
+        {
+          "id": "b",
+          "text": "(1) Beams; (3) Columns, which are installed after temporary bracing is secured"
+        },
+        {
+          "id": "c",
+          "text": "(1) Fireproofing; (3) Lateral bracing, which is essential for structural stability"
+        },
+        {
+          "id": "d",
+          "text": "(1) Decking; (3) Columns, ensuring that the load path is established early"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Beams are installed after columns and bracing, not first.",
+        "c": "Fireproofing is installed after frame is complete and connections are verified.",
+        "d": "Decking cannot be installed before columns and beams support it.",
+        "correct": "Correct sequence: (1) Erect columns from lowest level upward, (2) Install temporary bracing (diagonals, knee braces) to stabilize frame against wind/seismic, (3) Install floor beams and make connections (bolted or welded), (4) Install deck and concrete. Temporary bracing is critical to prevent instability and collapse during erection."
+      },
+      "explanation": null,
+      "code_citation": "AISC 360-22; NSCP 2015 Chapter 5; OSHA 1926.500+",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-004-07-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:98c11a646e6e0b3d84b65373c1222419bc2b76bea739694c56d268587c017196"
+    },
+    "proposed": {
+      "explanation": "Beams are installed after columns and bracing, not first. Fireproofing is installed after frame is complete and connections are verified. Decking cannot be installed before columns and beams support it. Correct sequence: (1) Erect columns from lowest level upward, (2) Install temporary bracing (diagonals, knee braces) to stabilize frame against wind/seismic, (3) Install floor beams and make connections (bolted or welded), (4) Install deck and concrete. Temporary bracing is critical to prevent instability and collapse during erection."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+  },
+  {
+    "question_id": "9fbc565d-046c-4cdb-8b49-61f11a36c026",
+    "article_id": "350bd0c3-1bb9-4adf-96f1-5dcd4e052112",
+    "article_dir": ".ai/content-audit-export/articles/lea-matl-004-07-core-concept--350bd0c3-1bb9-4adf-96f1-5dcd4e052112",
+    "title": "lea-matl-004-07-core-concept",
+    "baseline_hash": "sha256:88ecada472d0e420c3afbba0864961357e9948d875e142375ce0321d757d010f",
+    "baseline": {
+      "question_id": "9fbc565d-046c-4cdb-8b49-61f11a36c026",
+      "article_id": "350bd0c3-1bb9-4adf-96f1-5dcd4e052112",
+      "topic_id": "51ed8453-ae20-434c-a5ae-462c1ebd0a30",
+      "text": "A dual lateral force-resisting system combines ___ (for ductility and energy absorption) with ___ (for stiffness and drift control). Why is dual optimal for high-rise seismic design in the Philippines?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Moment-resisting frames (MRF); braced frames. Dual provides both ductile energy absorption (MRF) and lateral stiffness (bracing), reducing member sizes and cost compared to pure MRF while maintaining seismic safety."
+        },
+        {
+          "id": "b",
+          "text": "Two moment-resisting frames; optimal redundancy, ensuring that the building can withstand seismic forces from multiple directions"
+        },
+        {
+          "id": "c",
+          "text": "Two braced systems; maximum stiffness, which is crucial for minimizing lateral displacement during seismic events"
+        },
+        {
+          "id": "d",
+          "text": "MRF and precast elements; simplifies connections, allowing for faster construction and reduced labor costs"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Two MRFs add redundancy but do not reduce member sizes.",
+        "c": "Two braced systems are stiff but brittle; ductility is sacrificed.",
+        "d": "Precast elements do not enhance lateral system; this is tangential.",
+        "correct": "Dual systems combine MRF (ductile, absorbs seismic energy elastically) with bracing (stiff, reduces lateral drift). MRF alone requires large members for moment capacity; bracing alone is brittle if poorly designed. Dual optimizes both seismic ductility (essential in Philippines per NSCP 2015) and stiffness, reducing member sizes and cost."
+      },
+      "explanation": null,
+      "code_citation": "AISC 360-22; NSCP 2015 Chapter 5",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-004-07-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:88ecada472d0e420c3afbba0864961357e9948d875e142375ce0321d757d010f"
+    },
+    "proposed": {
+      "explanation": "Two MRFs add redundancy but do not reduce member sizes. Two braced systems are stiff but brittle; ductility is sacrificed. Precast elements do not enhance lateral system; this is tangential. Dual systems combine MRF (ductile, absorbs seismic energy elastically) with bracing (stiff, reduces lateral drift). MRF alone requires large members for moment capacity; bracing alone is brittle if poorly designed. Dual optimizes both seismic ductility (essential in Philippines per NSCP 2015) and stiffness, reducing member sizes and cost."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+  },
+  {
+    "question_id": "ac205b04-4e0d-4001-b991-911c07649f27",
+    "article_id": "47317c8d-e2d6-4d17-b18a-3c469b73080c",
+    "article_dir": ".ai/content-audit-export/articles/lea-prac-frm-020-technical-specifications-writing-csi-masterformat-specification-types-and-the-archi--47317c8d-e2d6-4d17-b18a-3c469b73080c",
+    "title": "lea-prac-frm-020-technical-specifications-writing-csi-masterformat-specification-types-and-the-archi",
+    "baseline_hash": "sha256:9d6176bd98417de215fd8c8e4ccd5ec4dcb86a7b339ce636bdd429d36227f2df",
+    "baseline": {
+      "question_id": "ac205b04-4e0d-4001-b991-911c07649f27",
+      "article_id": "47317c8d-e2d6-4d17-b18a-3c469b73080c",
+      "topic_id": "d1c5d6b6-e3d1-48a8-984c-cb00f9e2b5b3",
+      "text": "What is CSI MasterFormat?",
+      "options": [
+        {
+          "id": "a",
+          "text": "construction cost index, which is used to estimate the financial requirements of a project"
+        },
+        {
+          "id": "b",
+          "text": "The standard organizational system for construction specifications using numbered divisions and sections"
+        },
+        {
+          "id": "c",
+          "text": "brand of paint, commonly used in commercial and residential projects for its durability"
+        },
+        {
+          "id": "d",
+          "text": "building code, which provides guidelines for construction practices and safety standards"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Confuses MasterFormat with cost data; MasterFormat is an organizational system, not a cost index.",
+        "c": "Completely unrelated; MasterFormat is an organizational system, not a paint brand.",
+        "d": "Confuses MasterFormat with building codes; MasterFormat is a specification organization system, not a safety standard.",
+        "correct": "CSI MasterFormat is the Construction Specifications Institute standard system organizing trades into numbered divisions (01–48) and subsections, ensuring logical organization and industry standardization.",
+        "takeaway": "CSI MasterFormat (50 divisions) is the standard specification organization system—ensures everyone can locate information consistently."
+      },
+      "explanation": null,
+      "code_citation": "CSI MasterFormat",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-020-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9d6176bd98417de215fd8c8e4ccd5ec4dcb86a7b339ce636bdd429d36227f2df"
+    },
+    "proposed": {
+      "explanation": "Confuses MasterFormat with cost data; MasterFormat is an organizational system, not a cost index. Completely unrelated; MasterFormat is an organizational system, not a paint brand. Confuses MasterFormat with building codes; MasterFormat is a specification organization system, not a safety standard. CSI MasterFormat is the Construction Specifications Institute standard system organizing trades into numbered divisions (01–48) and subsections, ensuring logical organization and industry standardization. CSI MasterFormat (50 divisions) is the standard specification organization system—ensures everyone can locate information consistently."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+  },
+  {
+    "question_id": "63a7b2d9-0902-4b49-95c5-710cb3cebe5e",
+    "article_id": "47317c8d-e2d6-4d17-b18a-3c469b73080c",
+    "article_dir": ".ai/content-audit-export/articles/lea-prac-frm-020-technical-specifications-writing-csi-masterformat-specification-types-and-the-archi--47317c8d-e2d6-4d17-b18a-3c469b73080c",
+    "title": "lea-prac-frm-020-technical-specifications-writing-csi-masterformat-specification-types-and-the-archi",
+    "baseline_hash": "sha256:7a9631b61197180d52daf72ca3c52c0542f96fc67e75a006bead12e776f5b7e7",
+    "baseline": {
+      "question_id": "63a7b2d9-0902-4b49-95c5-710cb3cebe5e",
+      "article_id": "47317c8d-e2d6-4d17-b18a-3c469b73080c",
+      "topic_id": "d1c5d6b6-e3d1-48a8-984c-cb00f9e2b5b3",
+      "text": "What process should be followed if specifications need updates during design evolution or construction?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No updates are ever necessary, which is incorrect as changes often occur during construction"
+        },
+        {
+          "id": "b",
+          "text": "Design Development specifications may be preliminary; Construction Documents should be final; changes during construction issued through formal addenda or change orders"
+        },
+        {
+          "id": "c",
+          "text": "Update specifications informally without notification, which can lead to miscommunication and errors"
+        },
+        {
+          "id": "d",
+          "text": "Specifications cannot change once written, which is impractical given the dynamic nature of construction projects"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "False; as design evolves from schematic to DD to CD, specifications require refinement.",
+        "c": "Dangerous; informal changes without notice create disputes and allow contractors to claim ambiguity.",
+        "d": "False; specifications can and should be updated through design phases to reflect design refinement.",
+        "correct": "Design Development phase specifications may be preliminary and refined during detailed design; Construction Document specifications must be final and complete; any changes during construction must be issued through formal addenda or change orders.",
+        "takeaway": "Update specs from DD to CD to finalize them; any changes during construction require formal addenda—informal changes create disputes."
+      },
+      "explanation": null,
+      "code_citation": "CSI MasterFormat",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-020-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7a9631b61197180d52daf72ca3c52c0542f96fc67e75a006bead12e776f5b7e7"
+    },
+    "proposed": {
+      "explanation": "False; as design evolves from schematic to DD to CD, specifications require refinement. Dangerous; informal changes without notice create disputes and allow contractors to claim ambiguity. False; specifications can and should be updated through design phases to reflect design refinement. Design Development phase specifications may be preliminary and refined during detailed design; Construction Document specifications must be final and complete; any changes during construction must be issued through formal addenda or change orders. Update specs from DD to CD to finalize them; any changes during construction require formal addenda—informal changes create disputes."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+  },
+  {
+    "question_id": "26e84cb0-c73f-42be-8054-e727667eb59a",
+    "article_id": "47317c8d-e2d6-4d17-b18a-3c469b73080c",
+    "article_dir": ".ai/content-audit-export/articles/lea-prac-frm-020-technical-specifications-writing-csi-masterformat-specification-types-and-the-archi--47317c8d-e2d6-4d17-b18a-3c469b73080c",
+    "title": "lea-prac-frm-020-technical-specifications-writing-csi-masterformat-specification-types-and-the-archi",
+    "baseline_hash": "sha256:4418d67ab5840c4e2ed75b07cb509573c6b904fd41dae1511c51d411c26acaa4",
+    "baseline": {
+      "question_id": "26e84cb0-c73f-42be-8054-e727667eb59a",
+      "article_id": "47317c8d-e2d6-4d17-b18a-3c469b73080c",
+      "topic_id": "d1c5d6b6-e3d1-48a8-984c-cb00f9e2b5b3",
+      "text": "What is a performance specification?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Specification with no standards or reference criteria for evaluating acceptable product performance"
+        },
+        {
+          "id": "b",
+          "text": "specification that defines the end result without prescribing specific materials; contractor innovation allowed"
+        },
+        {
+          "id": "c",
+          "text": "Only for government projects where open competitive bidding requires brand-neutral specifications"
+        },
+        {
+          "id": "d",
+          "text": "Never used in practice because prescriptive specifications are always preferred by design professionals"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "False; performance specifications include clear acceptance standards and testing requirements.",
+        "c": "Incorrect scope; performance specifications are used on both public and private projects.",
+        "d": "False; performance specifications are common for results dependent on methodology (acoustic, thermal, water-tightness performance).",
+        "correct": "Performance specifications define the desired outcome (e.g., water-tightness) and verification methods (testing standards) but allow contractors to choose materials and methods that achieve the result.",
+        "takeaway": "Performance = 'define the result'—lets contractors innovate; requires clear acceptance criteria and testing procedures."
+      },
+      "explanation": null,
+      "code_citation": "CSI MasterFormat",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-020-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4418d67ab5840c4e2ed75b07cb509573c6b904fd41dae1511c51d411c26acaa4"
+    },
+    "proposed": {
+      "explanation": "False; performance specifications include clear acceptance standards and testing requirements. Incorrect scope; performance specifications are used on both public and private projects. False; performance specifications are common for results dependent on methodology (acoustic, thermal, water-tightness performance). Performance specifications define the desired outcome (e.g., water-tightness) and verification methods (testing standards) but allow contractors to choose materials and methods that achieve the result. Performance = 'define the result'—lets contractors innovate; requires clear acceptance criteria and testing procedures."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+  },
+  {
+    "question_id": "57b1474b-a6e0-4b3e-9fc4-c964a2647828",
+    "article_id": "c158e63c-6120-4b2f-9784-c853ef25baa5",
+    "article_dir": ".ai/content-audit-export/articles/lea-theo-009-02-core-concept--c158e63c-6120-4b2f-9784-c853ef25baa5",
+    "title": "lea-theo-009-02-core-concept",
+    "baseline_hash": "sha256:341df1d4a6a9bb0b37d9a3d8dccac18937a48609af1e41e171c74fc973f78677",
+    "baseline": {
+      "question_id": "57b1474b-a6e0-4b3e-9fc4-c964a2647828",
+      "article_id": "c158e63c-6120-4b2f-9784-c853ef25baa5",
+      "topic_id": "ccea0a07-3d5e-483b-b6cc-fa61eb5bb98b",
+      "text": "A completed bubble diagram satisfies all essential adjacencies and minimizes undesirable adjacencies. The diagram is presented to the client, who approves it. Does this approval authorize the designer to proceed directly to final design, or should additional steps occur?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Additional refinement is needed only if the site constraints make implementation impossible; otherwise the diagram is complete and ready for the next phase"
+        },
+        {
+          "id": "b",
+          "text": "The diagram should be validated through review by end users, testing against operational scenarios, and verification that no conflicts remain unresolved"
+        },
+        {
+          "id": "c",
+          "text": "Approval is sufficient; the diagram represents the complete program and design can proceed immediately"
+        },
+        {
+          "id": "d",
+          "text": "The diagram represents preliminary thinking; extensive design development and multiple iterations are normal before construction documents, ensuring all client needs are met"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Validation should occur regardless of site constraints; this ensures the program itself is complete and accurate.",
+        "c": "Client approval doesn't eliminate the need for rigorous validation; the diagram may contain latent conflicts.",
+        "d": "Extensive iteration occurs in design; the bubble diagram should be validated and stable before design begins.",
+        "correct": "Client approval is important but not sufficient. The bubble diagram should be tested through user review, operational scenario testing (e.g., patient flow simulation), and verification that all constraints have been adequately addressed. This validation mirrors Step 5 of Problem Seeking (Test the Problem).",
+        "takeaway": "This validation mirrors Step 5 of Problem Seeking (Test the Problem)."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "INT"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-009-02-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:341df1d4a6a9bb0b37d9a3d8dccac18937a48609af1e41e171c74fc973f78677"
+    },
+    "proposed": {
+      "explanation": "Validation should occur regardless of site constraints; this ensures the program itself is complete and accurate. Client approval doesn't eliminate the need for rigorous validation; the diagram may contain latent conflicts. Extensive iteration occurs in design; the bubble diagram should be validated and stable before design begins. Client approval is important but not sufficient. The bubble diagram should be tested through user review, operational scenario testing (e.g., patient flow simulation), and verification that all constraints have been adequately addressed. This validation mirrors Step 5 of Problem Seeking (Test the Problem). This validation mirrors Step 5 of Problem Seeking (Test the Problem)."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+  },
+  {
+    "question_id": "3a69f754-97b2-47bf-a2d5-65ccdf06b22f",
+    "article_id": "c158e63c-6120-4b2f-9784-c853ef25baa5",
+    "article_dir": ".ai/content-audit-export/articles/lea-theo-009-02-core-concept--c158e63c-6120-4b2f-9784-c853ef25baa5",
+    "title": "lea-theo-009-02-core-concept",
+    "baseline_hash": "sha256:1ea2a0a061fcfe5f7424ce1a5f0ef88fc5f3dfd3b86500ade7241f46a9c6bac0",
+    "baseline": {
+      "question_id": "3a69f754-97b2-47bf-a2d5-65ccdf06b22f",
+      "article_id": "c158e63c-6120-4b2f-9784-c853ef25baa5",
+      "topic_id": "ccea0a07-3d5e-483b-b6cc-fa61eb5bb98b",
+      "text": "A medical clinic program includes examination rooms, treatment room, laboratory, waiting area, reception, and administrative office. In the adjacency matrix, what should the relationship be between the laboratory and the mechanical equipment room?",
+      "options": [
+        {
+          "id": "a",
+          "text": "D (Desirable) — proximity to mechanical systems can reduce operating costs"
+        },
+        {
+          "id": "b",
+          "text": "E (Essential) — laboratory equipment requires direct mechanical system access"
+        },
+        {
+          "id": "c",
+          "text": "U (Unimportant) — there is no functional relationship between laboratory and mechanical systems"
+        },
+        {
+          "id": "d",
+          "text": "X (Undesirable) — mechanical vibration and noise compromise sensitive laboratory work"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Proximity does not reduce costs enough to justify compromising lab performance.",
+        "b": "While lab equipment may connect to building systems, the space itself must be away from mechanical noise/vibration.",
+        "c": "The relationship is significant; it's undesirable rather than unimportant.",
+        "correct": "Vibration from mechanical equipment and noise compromise lab precision work. They must be separated or adequately isolated. This is an undesirable adjacency requiring intentional separation in the design.",
+        "takeaway": "This is an undesirable adjacency requiring intentional separation in the design."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-009-02-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1ea2a0a061fcfe5f7424ce1a5f0ef88fc5f3dfd3b86500ade7241f46a9c6bac0"
+    },
+    "proposed": {
+      "explanation": "Proximity does not reduce costs enough to justify compromising lab performance. While lab equipment may connect to building systems, the space itself must be away from mechanical noise/vibration. The relationship is significant; it's undesirable rather than unimportant. Vibration from mechanical equipment and noise compromise lab precision work. They must be separated or adequately isolated. This is an undesirable adjacency requiring intentional separation in the design. This is an undesirable adjacency requiring intentional separation in the design."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+  }
+]

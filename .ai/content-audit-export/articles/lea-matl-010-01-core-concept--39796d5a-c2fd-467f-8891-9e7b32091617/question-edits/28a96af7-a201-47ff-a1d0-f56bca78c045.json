@@ -1,0 +1,10 @@
+{
+  "question_id": "28a96af7-a201-47ff-a1d0-f56bca78c045",
+  "baseline_hash": "sha256:4bc7537566eedfd497612436846a9dce22603f0ab7ef219e862f162a2a8080ce",
+  "reason": "Strict explanation backfill from existing specific rationale; answer key and options unchanged.",
+  "approved_by": "hermes-question-remediation-autopilot",
+  "approved_at": "2026-05-06T14:41:39.419Z",
+  "proposed": {
+    "explanation": "90 kg/m³ results from multiplying 180 × 0.50 instead of dividing. 180 kg/m³ incorrectly assumes cement content equals water content. 320 kg/m³ results from using W/C = 0.55 (for 20 MPa) instead of 0.50. Cement content = Water content ÷ W/C = 180 ÷ 0.50 = 360 kg/m³. The water-cement ratio is W/C, so Cement = Water ÷ (W/C). For higher strength (lower W/C), cement content increases."
+  }
+}
