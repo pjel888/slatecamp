@@ -8,6 +8,13 @@ Identify the three defining features of Inca architecture — ashlar polygonal m
 
 </Callout>
 
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Inca Architecture Ashlar Masonry** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
+
 ## The Real-World Scenario (The Hook)
 
 <Callout variant="example">

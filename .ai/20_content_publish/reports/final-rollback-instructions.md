@@ -1,3 +1,3 @@
 # Final Rollback Instructions
 
-No remote apply occurred. If future apply is performed, use backups in `.ai/20_content_publish/backups/` created immediately before apply.
+Use rollback manifests under `.ai/20_content_publish/rollback/` and exact `article_id` filters only. Do not rollback without backing up current remote rows first.

@@ -1,5 +1,13 @@
 # Colonial European Influence
 
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Colonial European Influence** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
+
+
 ## Learning Goal
 
 By the end of this module, you will be able to apply the C-A-A (Climate, Available Materials, Adapted Forms) framework to analyze how Spanish, English, and other European colonists adapted metropolitan architectural styles to local conditions across the Americas and Australia — and identify the resulting hybrid regional styles on the LEA.

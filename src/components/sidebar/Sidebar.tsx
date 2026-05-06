@@ -2,12 +2,14 @@
 
 import { useCallback, useState } from 'react'
 import { usePathname, useRouter } from 'next/navigation'
+import Link from 'next/link'
 import { useSidebar } from './SidebarProvider'
 import { SidebarHeader } from './SidebarHeader'
 import { SidebarNavItem } from './SidebarNavItem'
-import { SidebarFooter } from './SidebarFooter'
+import { SidebarFooterNotice, type SidebarFooterNoticeData } from './SidebarFooterNotice'
 import { SIDEBAR_GROUPS, DASHBOARD_ITEM, SETTINGS_ITEM } from './sidebar-constants'
 import {
+  SIDEBAR_ICON_SLOT,
   SIDEBAR_PADDING,
   SIDEBAR_WIDTH_COLLAPSED,
   SIDEBAR_WIDTH_EXPANDED,
@@ -26,6 +28,19 @@ import { updateSessionProgress } from '@/lib/actions/quiz-v2'
 // 52px collapsed, 256px expanded, CSS transitions only
 // ---------------------------------------------------------------------------
 
+const getInitials = (name: string): string => {
+  const parts = name.trim().split(/\s+/)
+  if (parts.length === 0 || !parts[0]) return ''
+  if (parts.length === 1) return parts[0][0].toUpperCase()
+  return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase()
+}
+
+const SIDEBAR_FOOTER_NOTICE_PREVIEW: SidebarFooterNoticeData | null = {
+  kind: 'subscription-expiring',
+  title: 'Subscription ends soon',
+  description: 'Renew to keep full access.',
+}
+
 export const Sidebar = ({ userDisplay, tier, isAdmin: _isAdmin, isDevMode: _isDevMode }: SidebarProps) => {
   const { expanded, collapse, expand, sidebarRef, toggleRef, prefersReducedMotion, isLocked } = useSidebar()
   const pathname = usePathname()
@@ -34,6 +49,7 @@ export const Sidebar = ({ userDisplay, tier, isAdmin: _isAdmin, isDevMode: _isDe
   const [pendingHref, setPendingHref] = useState<string | null>(null)
   const [leaveConfirmLoading, setLeaveConfirmLoading] = useState(false)
   const navigationPending = useNavigationPending()
+  const userInitials = getInitials(userDisplay.name)
 
   // Active session guard (provider is always present in dashboard layout)
   const { activeSession } = useActiveSession()
@@ -102,9 +118,9 @@ export const Sidebar = ({ userDisplay, tier, isAdmin: _isAdmin, isDevMode: _isDe
     exact ? pathname === href : pathname === href || pathname.startsWith(href + '/')
 
   const sidebarPaddingStyle = { paddingInline: SIDEBAR_PADDING }
-  const dashboardRegionStyle = {
-    paddingInline: SIDEBAR_PADDING,
-  }
+  const dividerInsetStyle: React.CSSProperties = expanded
+    ? { left: 0, right: 0 }
+    : { left: SIDEBAR_PADDING, width: SIDEBAR_ICON_SLOT }
 
   return (
     <>
@@ -156,23 +172,66 @@ export const Sidebar = ({ userDisplay, tier, isAdmin: _isAdmin, isDevMode: _isDe
           style={{ padding: 0 }}
           className="flex flex-1 flex-col overflow-y-auto overflow-x-hidden [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
         >
-          {/* Dashboard — standalone; bottom rule aligns with HeaderHero bottom edge. */}
+          {/* Profile summary — replaces the former standalone Dashboard slot. */}
           <div
-            className="flex h-[72px] shrink-0 items-center border-b border-border xl:h-[76px]"
-            style={dashboardRegionStyle}
+            className="relative flex h-[72px] shrink-0 items-center xl:h-[76px]"
+            style={sidebarPaddingStyle}
+            aria-label={userDisplay.name}
+            title={userDisplay.name}
           >
-            <SidebarNavItem
-              item={DASHBOARD_ITEM}
-              isActive={isActive(DASHBOARD_ITEM.href, true)}
-              expanded={expanded}
-              showTooltip
-              onNavigate={handleNavigate}
-              navigationPending={navigationPending}
+            <div
+              aria-hidden="true"
+              className="absolute bottom-0 border-b border-border"
+              style={dividerInsetStyle}
             />
+            <div className="grid h-10 w-full grid-cols-[48px_minmax(0,1fr)] items-center gap-1 overflow-hidden rounded-md">
+              <div className="flex h-10 w-12 shrink-0 items-center justify-center">
+                <div
+                  className={cn(
+                    'flex size-8 shrink-0 items-center justify-center overflow-hidden rounded-full',
+                    !userDisplay.avatarUrl && 'bg-gradient-to-br from-camp-cobalt to-primary-400',
+                  )}
+                >
+                  {userDisplay.avatarUrl ? (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img
+                      src={userDisplay.avatarUrl}
+                      alt={userDisplay.name}
+                      className="h-full w-full object-cover"
+                    />
+                  ) : (
+                    <span className="select-none text-[12px] font-semibold leading-none text-white">
+                      {userInitials}
+                    </span>
+                  )}
+                </div>
+              </div>
+              <div
+                aria-hidden={!expanded}
+                className={cn(
+                  'min-w-0 overflow-hidden transition-[opacity,transform] duration-[180ms] ease-out motion-reduce:transition-none motion-reduce:transform-none',
+                  expanded ? 'translate-x-0 opacity-100' : 'pointer-events-none translate-x-1 opacity-0',
+                )}
+              >
+                <p className="truncate text-[12.5px] font-medium leading-none text-gray-900">
+                  {userDisplay.name}
+                </p>
+              </div>
+            </div>
           </div>
 
           {/* Nav groups */}
           <div className="flex flex-col gap-3 pt-3" style={sidebarPaddingStyle}>
+            <div className="flex flex-col gap-1">
+              <SidebarNavItem
+                item={DASHBOARD_ITEM}
+                isActive={isActive(DASHBOARD_ITEM.href, true)}
+                expanded={expanded}
+                showTooltip
+                onNavigate={handleNavigate}
+                navigationPending={navigationPending}
+              />
+            </div>
             {SIDEBAR_GROUPS.map((group, groupIdx) => (
               <div key={group.key} className="flex flex-col gap-1">
                 {/* Group header slot stays mounted at the same height in both states.
@@ -191,7 +250,7 @@ export const Sidebar = ({ userDisplay, tier, isAdmin: _isAdmin, isDevMode: _isDe
                   {!expanded && groupIdx > 0 && (
                     <div
                       aria-hidden="true"
-                      className="absolute inset-x-1 top-1/2 border-t border-border/40"
+                      className="absolute left-0 top-1/2 w-12 border-t border-border/40"
                     />
                   )}
                 </div>
@@ -214,23 +273,44 @@ export const Sidebar = ({ userDisplay, tier, isAdmin: _isAdmin, isDevMode: _isDe
           <div className="flex-1" />
         </div>
 
-        {/* Settings — pinned above footer, outside scrollable body for spatial lock */}
-        <div className="shrink-0 pb-3" style={sidebarPaddingStyle}>
-          <SidebarNavItem
-            item={SETTINGS_ITEM}
-            isActive={isActive(SETTINGS_ITEM.href)}
-            expanded={expanded}
-            showTooltip
-            onNavigate={handleNavigate}
-            navigationPending={navigationPending}
-          />
+        {/* Sidebar footer — half-height counterpart to the image header; settings anchors the bottom. */}
+        <div
+          className="relative h-[144px] shrink-0 p-2"
+        >
+          <div
+            className="flex h-full flex-col justify-between overflow-hidden rounded-md border border-gray-200 bg-gray-100 p-2 transition-[width] duration-[180ms] ease-out motion-reduce:transition-none"
+            style={{ width: expanded ? SIDEBAR_WIDTH_EXPANDED - SIDEBAR_PADDING * 2 : SIDEBAR_ICON_SLOT }}
+          >
+            <SidebarFooterNotice expanded={expanded} notice={SIDEBAR_FOOTER_NOTICE_PREVIEW} />
+            <Link
+              href={SETTINGS_ITEM.href}
+              onClick={handleNavigate}
+              aria-current={isActive(SETTINGS_ITEM.href) ? 'page' : undefined}
+              aria-label={expanded ? undefined : SETTINGS_ITEM.label}
+              className={cn(
+                'group relative grid h-8 w-full grid-cols-[32px_minmax(0,1fr)] items-center overflow-hidden rounded-sm outline-none',
+                'text-gray-500 transition-colors duration-[120ms] ease-out hover:bg-white/70 hover:text-primary',
+                'focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-camp-cobalt',
+                isActive(SETTINGS_ITEM.href) && 'bg-white/70 text-primary',
+              )}
+            >
+              <span className="flex h-8 w-8 shrink-0 items-center justify-center">
+                <SETTINGS_ITEM.icon size={16} weight="regular" className="shrink-0" />
+              </span>
+              <span
+                aria-hidden={!expanded}
+                className={cn(
+                  'min-w-0 truncate whitespace-nowrap text-[12.5px] leading-none transition-[opacity,transform] duration-[180ms] ease-out motion-reduce:transition-none motion-reduce:transform-none',
+                  isActive(SETTINGS_ITEM.href) ? 'font-medium' : 'font-normal',
+                  expanded ? 'translate-x-0 opacity-100' : 'pointer-events-none translate-x-1 opacity-0',
+                )}
+              >
+                {SETTINGS_ITEM.label}
+              </span>
+            </Link>
+          </div>
         </div>
 
-        <SidebarFooter
-          expanded={expanded}
-          userDisplay={userDisplay}
-          tier={tier}
-        />
       </nav>
     </>
   )

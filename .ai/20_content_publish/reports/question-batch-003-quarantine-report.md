@@ -1,0 +1,22 @@
+# Question Batch 003 Quarantine Report
+
+- 02c48c83-807e-4ada-876e-6329d8030ae8: source/fact/legal reviewer quarantine
+- 749e15b5-067f-4c38-a4fb-f105bd61cf72: source/fact/legal reviewer quarantine
+- 2c785f40-5853-43f7-aac4-d625a389fb59: source/fact/legal reviewer quarantine
+- 29c88c97-2e22-4c46-a825-d8465e805671: source/fact/legal reviewer quarantine
+- f1d8b55e-144a-4637-bcd6-d3c47fcd89cd: source/fact/legal reviewer quarantine
+- fb69fe01-691f-43e0-837b-b3cc4165ad25: source/fact/legal reviewer quarantine
+- fffa260f-fb8a-45fc-90fc-b4c9918cbcb0: source/fact/legal reviewer quarantine
+- 39e32c3f-ef26-49ae-b227-992489e1185e: source/fact/legal reviewer quarantine
+- a0780570-b344-4882-b84d-8171e14f8d34: source/fact/legal reviewer quarantine
+- 243e69d0-41d8-4a84-a77c-0bc687accf9f: psychometric reviewer quarantine
+- 0ce551e5-7a00-45fd-b85d-af56fedecacd: psychometric reviewer quarantine
+- 61f6ff10-535a-4d75-ba53-f7967fa7d7ef: psychometric reviewer quarantine
+- a443feb9-74f8-4b02-8c09-95898544c1f1: psychometric reviewer quarantine
+- 723664a6-920f-4654-b1cf-cbf9bcfd5fe9: psychometric reviewer quarantine
+- 49c78a07-b037-4d82-ad78-5f361373fd80: psychometric reviewer quarantine
+- d403f5e5-5678-484a-b599-cb97b6d35385: source/fact/legal reviewer quarantine; psychometric reviewer quarantine
+- 859d5142-6fc7-4f71-bde6-cf91404c644e: source/fact/legal reviewer quarantine; psychometric reviewer quarantine
+- fee22955-47bf-4b8b-835f-0be2fb9b1437: source/fact/legal reviewer quarantine; psychometric reviewer quarantine
+- 5c4f9e3d-3f64-4f69-9501-9be7ef2d88fb: source/fact/legal reviewer quarantine; psychometric reviewer quarantine
+- 97ee3719-36f9-4d3d-9bb9-36cdc3f4df39: source/fact/legal reviewer quarantine; psychometric reviewer quarantine

@@ -203,7 +203,7 @@ const FloatingPanel = ({
       aria-label={title || 'Panel'}
       aria-modal={backdrop !== 'none'}
       className={cn(
-        'z-[101] flex flex-col rounded-lg border border-border bg-card shadow-lg overflow-hidden',
+        'z-[101] flex flex-col rounded-lg bg-card shadow-modal overflow-hidden',
         positionClasses,
         animationClasses,
         className,

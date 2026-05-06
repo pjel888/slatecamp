@@ -200,7 +200,7 @@ export const QuestionPalette = ({
         aria-modal="true"
         aria-label="Question palette"
         className={cn(
-          'absolute right-0 top-0 h-full w-full max-w-sm bg-card shadow-lg',
+          'absolute right-0 top-0 h-full w-full max-w-sm bg-card shadow-modal',
           'flex flex-col',
           !prefersReducedMotion && 'animate-in slide-in-from-right duration-150 ease-out',
         )}

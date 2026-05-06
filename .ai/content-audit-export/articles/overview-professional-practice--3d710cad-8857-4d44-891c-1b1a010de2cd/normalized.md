@@ -1,5 +1,14 @@
 # Professional Practice & Jurisprudence — Overview & Study Strategy
 
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Professional Practice & Jurisprudence — Overview & Study Strategy** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
+
 [SLATECAMP_UI_BLOCK:ui_0001 component="SubjectSnapshot" status="preserved"]
 Extracted summary:
 - Props: items="[{\"label\":\"PRC Area\",\"value\":\"Area A\"},{\"label\":\"Weight within Area A\",\"value\":\"20%\"},{\"label\":\"Primary Legislative Framework\",\"value\":\"RA 9266 — The Architecture Act of 2004\"},{\"label\":\"Primary Practice Document\",\"value\":\"SPP (Standards of Professional Practice)\"},{\"label\":\"Regulatory Body\",\"value\":\"Professional Regulation Commission (PRC) / Board of Architecture\"}]"

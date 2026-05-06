@@ -1,5 +1,12 @@
 # Sanitation and Water Supply
 
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Sanitation and Water Supply** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
+
 **Module Focus:** Rule IX, Sections 901–907 — PD 1096 National Building Code of the Philippines / 2004 Revised IRR
 **LEA Area:** Building Technology & Materials / Architecture Utilities / Architectural Practice
 **Difficulty:** Medium

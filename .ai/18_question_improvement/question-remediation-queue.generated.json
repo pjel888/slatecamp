@@ -1,0 +1,1591 @@
+{
+  "generated_at": "2026-05-06T12:17:02.908Z",
+  "selector": "strict-v3-item-level-official-source",
+  "selected_count": 25,
+  "excluded": {
+    "already_published_or_quarantined": 175,
+    "item_level_official_source_gap": 128,
+    "generic_meta_distractor_leakage": 40,
+    "existing_meaningful_explanation": 100,
+    "insufficient_linked_article_support": 5,
+    "option_length_giveaway_risk": 10,
+    "near_duplicate_option_ambiguity": 1
+  },
+  "candidates": [
+    {
+      "question_id": "bc870153-5fdc-4c29-8af7-3a71ed92526e",
+      "article_id": "c6f9eec1-727b-4d00-a905-f69a58245c66",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-08-core-concept--c6f9eec1-727b-4d00-a905-f69a58245c66",
+      "title": "lea-hist-008-08-core-concept",
+      "baseline_hash": "sha256:6a330bc180c992ab8e2f959bd77d95f1287251bb8cf6f22c431fe4f903fa282d",
+      "baseline": {
+        "question_id": "bc870153-5fdc-4c29-8af7-3a71ed92526e",
+        "article_id": "c6f9eec1-727b-4d00-a905-f69a58245c66",
+        "topic_id": "b0efd864-03e0-4dde-bd2f-613477d2e14a",
+        "text": "How does Critical Regionalism challenge the International Style's claim to universal modernist principles?",
+        "options": [
+          {
+            "id": "a",
+            "text": "It completely rejects modernism in favor of traditional vernacular revival, emphasizing historical styles over contemporary needs."
+          },
+          {
+            "id": "b",
+            "text": "It pursues a critical engagement with modernist principles while grounding them in local geography, climate, materials, and cultural memory."
+          },
+          {
+            "id": "c",
+            "text": "It applies identical glass and steel modernism everywhere without exception, disregarding local context and environmental factors."
+          },
+          {
+            "id": "d",
+            "text": "It treats all regional architecture as equally valid regardless of design rigor, without considering the importance of contextual adaptation."
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Critical Regionalism maintains modernist rigor; it is not nostalgic vernacular revival.",
+          "c": "Critical Regionalism explicitly critiques the uncritical application of universal modernism.",
+          "d": "Critical Regionalism combines modernist rigor with regional engagement; not all regional work achieves this synthesis.",
+          "correct": "Critical Regionalism does not reject modernism but pursues its rigorous abstraction while rigorously engaging local specificity—climate, materials, cultural traditions, and environmental conditions.",
+          "takeaway": "Critical Regionalism does not reject modernism but pursues its rigorous abstraction while rigorously engaging local specificity—climate, materials, cultural traditions, and environmental conditions."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "apply",
+        "application_context": "code_interpretation",
+        "practice_context": [
+          "CON"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "critregion-02",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:26.09657+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:6a330bc180c992ab8e2f959bd77d95f1287251bb8cf6f22c431fe4f903fa282d"
+      },
+      "proposed": {
+        "explanation": "Critical Regionalism maintains modernist rigor; it is not nostalgic vernacular revival. Critical Regionalism explicitly critiques the uncritical application of universal modernism. Critical Regionalism combines modernist rigor with regional engagement; not all regional work achieves this synthesis. Critical Regionalism does not reject modernism but pursues its rigorous abstraction while rigorously engaging local specificity—climate, materials, cultural traditions, and environmental conditions. Critical Regionalism does not reject modernism but pursues its rigorous abstraction while rigorously engaging local specificity—climate, materials, cultural traditions, and environmental conditions."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "ae2e8fd0-280e-4e89-9adb-44aa80143f43",
+      "article_id": "c6f9eec1-727b-4d00-a905-f69a58245c66",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-08-core-concept--c6f9eec1-727b-4d00-a905-f69a58245c66",
+      "title": "lea-hist-008-08-core-concept",
+      "baseline_hash": "sha256:0be5b73ea3b3fea108d00b95c64823e2c2a30a12814d304d6fb0f82d74e0f91a",
+      "baseline": {
+        "question_id": "ae2e8fd0-280e-4e89-9adb-44aa80143f43",
+        "article_id": "c6f9eec1-727b-4d00-a905-f69a58245c66",
+        "topic_id": "b0efd864-03e0-4dde-bd2f-613477d2e14a",
+        "text": "Which theorist articulated the concept of 'Critical Regionalism' in a seminal 1983 essay?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Kenneth Frampton"
+          },
+          {
+            "id": "b",
+            "text": "Robert Venturi"
+          },
+          {
+            "id": "c",
+            "text": "Peter Eisenman"
+          },
+          {
+            "id": "d",
+            "text": "Aldo Rossi"
+          }
+        ],
+        "correct_option_id": "a",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "b": "Venturi theorized Postmodernism, not Critical Regionalism.",
+          "c": "Eisenman pursued Deconstructivism and critical theory but did not formulate Critical Regionalism.",
+          "d": "Rossi pursued Neo-rational Postmodernism, distinct from Frampton's theory.",
+          "correct": "Kenneth Frampton articulated Critical Regionalism in his 1983 essay 'Towards a Critical Regionalism: Six Points for an Architecture of Resistance.'",
+          "takeaway": "Kenneth Frampton articulated Critical Regionalism in his 1983 essay 'Towards a Critical Regionalism: Six Points for an Architecture of Resistance.'."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "remember",
+        "application_context": "recall",
+        "practice_context": [
+          "CH"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "critregion-01",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:26.09657+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:0be5b73ea3b3fea108d00b95c64823e2c2a30a12814d304d6fb0f82d74e0f91a"
+      },
+      "proposed": {
+        "explanation": "Venturi theorized Postmodernism, not Critical Regionalism. Eisenman pursued Deconstructivism and critical theory but did not formulate Critical Regionalism. Rossi pursued Neo-rational Postmodernism, distinct from Frampton's theory. Kenneth Frampton articulated Critical Regionalism in his 1983 essay 'Towards a Critical Regionalism: Six Points for an Architecture of Resistance.' Kenneth Frampton articulated Critical Regionalism in his 1983 essay 'Towards a Critical Regionalism: Six Points for an Architecture of Resistance.'."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "3dd6c51b-75ad-4bae-9717-950fdc06193b",
+      "article_id": "c6f9eec1-727b-4d00-a905-f69a58245c66",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-08-core-concept--c6f9eec1-727b-4d00-a905-f69a58245c66",
+      "title": "lea-hist-008-08-core-concept",
+      "baseline_hash": "sha256:6ec78d1ac473e0a079bdea1429f6b64e543c44e4d904639575a431e7f7165b76",
+      "baseline": {
+        "question_id": "3dd6c51b-75ad-4bae-9717-950fdc06193b",
+        "article_id": "c6f9eec1-727b-4d00-a905-f69a58245c66",
+        "topic_id": "b0efd864-03e0-4dde-bd2f-613477d2e14a",
+        "text": "A structure uses rammed earth and timber with natural ventilation, respecting local craft and material traditions. Built in Gando, Burkina Faso, it exemplifies architecture grounded in place. Which architect and building represents this Critical Regionalist and sustainable approach?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Magney House, Glenn Murcutt, known for its integration with the Australian landscape and passive solar design"
+          },
+          {
+            "id": "b",
+            "text": "Church of the Light, Tadao Ando, which emphasizes the interplay of light and shadow in a minimalist concrete form"
+          },
+          {
+            "id": "c",
+            "text": "Primary School, Diébédo Francis Kéré"
+          },
+          {
+            "id": "d",
+            "text": "Water Temple, Tadao Ando, which features a meditative approach to water and space interaction"
+          }
+        ],
+        "correct_option_id": "c",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Magney House is in Australia with corrugated metal, not rammed earth.",
+          "b": "Church of the Light uses concrete and is in Japan, not Burkina Faso.",
+          "d": "Water Temple is in Japan with concrete and water features.",
+          "correct": "The Primary School (2001) in Gando, Burkina Faso, by Diébédo Francis Kéré, exemplifies this approach through rammed earth, timber, natural ventilation, and engagement with local craft traditions.",
+          "takeaway": "The Primary School (2001) in Gando, Burkina Faso, by Diébédo Francis Kéré, exemplifies this approach through rammed earth, timber, natural ventilation, and engagement with local craft traditions."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "apply",
+        "application_context": "recall",
+        "practice_context": [
+          "DESC"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "critregion-09",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:26.09657+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:6ec78d1ac473e0a079bdea1429f6b64e543c44e4d904639575a431e7f7165b76"
+      },
+      "proposed": {
+        "explanation": "Magney House is in Australia with corrugated metal, not rammed earth. Church of the Light uses concrete and is in Japan, not Burkina Faso. Water Temple is in Japan with concrete and water features. The Primary School (2001) in Gando, Burkina Faso, by Diébédo Francis Kéré, exemplifies this approach through rammed earth, timber, natural ventilation, and engagement with local craft traditions. The Primary School (2001) in Gando, Burkina Faso, by Diébédo Francis Kéré, exemplifies this approach through rammed earth, timber, natural ventilation, and engagement with local craft traditions."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "8b08c08d-fa4b-4168-8e48-568dbe18c2d7",
+      "article_id": "c6f9eec1-727b-4d00-a905-f69a58245c66",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-08-core-concept--c6f9eec1-727b-4d00-a905-f69a58245c66",
+      "title": "lea-hist-008-08-core-concept",
+      "baseline_hash": "sha256:306630301ae8ab16d569daee297de7e9d53aebe9df31ac00b0881b6c8b536196",
+      "baseline": {
+        "question_id": "8b08c08d-fa4b-4168-8e48-568dbe18c2d7",
+        "article_id": "c6f9eec1-727b-4d00-a905-f69a58245c66",
+        "topic_id": "b0efd864-03e0-4dde-bd2f-613477d2e14a",
+        "text": "A monumental concrete box features a single slot window framing the landscape beyond, engaging Japanese zen principles of framing and relationship to nature. Which building and architect exemplifies this Critical Regionalist approach?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Water Temple, Tadao Ando"
+          },
+          {
+            "id": "b",
+            "text": "Church of the Light, Tadao Ando"
+          },
+          {
+            "id": "c",
+            "text": "Magney House, Glenn Murcutt"
+          },
+          {
+            "id": "d",
+            "text": "Simpson-Lee House, Glenn Murcutt"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Water Temple also by Ando features sunken levels and light modulation but not the single-slot window.",
+          "c": "Magney House uses climate control strategies but not Japanese spatial principles.",
+          "d": "Simpson-Lee House uses timber and passive climate but not zen framing strategies.",
+          "correct": "The Church of the Light (1989) in Ibaraki, Japan, by Tadao Ando, exemplifies this approach with its monumental concrete form and single cross-shaped light slot framing the landscape through zen spatial principles.",
+          "takeaway": "The Church of the Light (1989) in Ibaraki, Japan, by Tadao Ando, exemplifies this approach with its monumental concrete form and single cross-shaped light slot framing the landscape through zen spatial principles."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "apply",
+        "application_context": "recall",
+        "practice_context": [
+          "DESC"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "critregion-04",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:26.09657+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:306630301ae8ab16d569daee297de7e9d53aebe9df31ac00b0881b6c8b536196"
+      },
+      "proposed": {
+        "explanation": "Water Temple also by Ando features sunken levels and light modulation but not the single-slot window. Magney House uses climate control strategies but not Japanese spatial principles. Simpson-Lee House uses timber and passive climate but not zen framing strategies. The Church of the Light (1989) in Ibaraki, Japan, by Tadao Ando, exemplifies this approach with its monumental concrete form and single cross-shaped light slot framing the landscape through zen spatial principles. The Church of the Light (1989) in Ibaraki, Japan, by Tadao Ando, exemplifies this approach with its monumental concrete form and single cross-shaped light slot framing the landscape through zen spatial principles."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "3ba6183c-be1a-4e8f-a428-8ba86bf83a4c",
+      "article_id": "c6f9eec1-727b-4d00-a905-f69a58245c66",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-08-core-concept--c6f9eec1-727b-4d00-a905-f69a58245c66",
+      "title": "lea-hist-008-08-core-concept",
+      "baseline_hash": "sha256:11066c068fc62f3e92a8119759e903b286256a0210ad64ed9d3a50cc5a132e64",
+      "baseline": {
+        "question_id": "3ba6183c-be1a-4e8f-a428-8ba86bf83a4c",
+        "article_id": "c6f9eec1-727b-4d00-a905-f69a58245c66",
+        "topic_id": "b0efd864-03e0-4dde-bd2f-613477d2e14a",
+        "text": "The Magney House (1984) features a barrel vault roof, corrugated metal, and timber. How do these material choices exemplify Critical Regionalist environmental responsiveness?",
+        "options": [
+          {
+            "id": "a",
+            "text": "They are purely aesthetic choices without environmental significance, ignoring the principles of Critical Regionalism"
+          },
+          {
+            "id": "b",
+            "text": "They are designed to protect occupants from intense sun while capturing breezes through passive design strategies responsive to regional climate."
+          },
+          {
+            "id": "c",
+            "text": "They use expensive imported materials regardless of local conditions, which contradicts the ethos of Critical Regionalism"
+          },
+          {
+            "id": "d",
+            "text": "They ignore regional vernacular traditions in favor of universal principles, which is contrary to the intent of Critical Regionalism"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Material choices are grounded in environmental and climate responsiveness.",
+          "c": "Critical Regionalism uses indigenous, locally sourced materials respecting embodied energy.",
+          "d": "Critical Regionalism is defined by engagement with regional vernacular adaptation.",
+          "correct": "The Magney House's barrel vault, corrugated metal, and timber are systematically chosen to provide sun protection through deep overhangs while enabling natural ventilation—passive climate control derived from regional conditions.",
+          "takeaway": "The Magney House's barrel vault, corrugated metal, and timber are systematically chosen to provide sun protection through deep overhangs while enabling natural ventilation—passive climate control derived from regional conditions."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "apply",
+        "application_context": "code_interpretation",
+        "practice_context": [
+          "ST"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "critregion-06",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:26.09657+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:11066c068fc62f3e92a8119759e903b286256a0210ad64ed9d3a50cc5a132e64"
+      },
+      "proposed": {
+        "explanation": "Material choices are grounded in environmental and climate responsiveness. Critical Regionalism uses indigenous, locally sourced materials respecting embodied energy. Critical Regionalism is defined by engagement with regional vernacular adaptation. The Magney House's barrel vault, corrugated metal, and timber are systematically chosen to provide sun protection through deep overhangs while enabling natural ventilation—passive climate control derived from regional conditions. The Magney House's barrel vault, corrugated metal, and timber are systematically chosen to provide sun protection through deep overhangs while enabling natural ventilation—passive climate control derived from regional conditions."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "34040cdd-0c12-4dda-8f0b-83bbd1c39cc6",
+      "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-09-core-concept--5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+      "title": "lea-hist-008-09-core-concept",
+      "baseline_hash": "sha256:a1aee63cc1064099df1c7bba95f52246bc8cdeff1605a83e66dce942377727d7",
+      "baseline": {
+        "question_id": "34040cdd-0c12-4dda-8f0b-83bbd1c39cc6",
+        "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+        "topic_id": "db6a9e7f-324b-4f27-a905-9061fd7d734b",
+        "text": "Which year was Frei Otto the Pritzker Prize laureate, becoming the first posthumous award?",
+        "options": [
+          {
+            "id": "a",
+            "text": "2012"
+          },
+          {
+            "id": "b",
+            "text": "2014"
+          },
+          {
+            "id": "c",
+            "text": "2015"
+          },
+          {
+            "id": "d",
+            "text": "2016"
+          }
+        ],
+        "correct_option_id": "c",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Wang Shu won in 2012.",
+          "b": "Shigeru Ban won in 2014.",
+          "d": "Alejandro Aravena won in 2016.",
+          "correct": "Frei Otto won the Pritzker Prize in 2015 as the first posthumous laureate, honored for his structural and material innovation."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "remember",
+        "application_context": "recall",
+        "practice_context": [
+          "CH"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "pritzker-07",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:26.09657+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:a1aee63cc1064099df1c7bba95f52246bc8cdeff1605a83e66dce942377727d7"
+      },
+      "proposed": {
+        "explanation": "Wang Shu won in 2012. Shigeru Ban won in 2014. Alejandro Aravena won in 2016. Frei Otto won the Pritzker Prize in 2015 as the first posthumous laureate, honored for his structural and material innovation."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "18cc6036-17b8-4207-976b-16d83f01dead",
+      "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-09-core-concept--5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+      "title": "lea-hist-008-09-core-concept",
+      "baseline_hash": "sha256:6af6f5447179a3e27789c69e3776c49f8de4485a00fdca6b34002fb1012c478a",
+      "baseline": {
+        "question_id": "18cc6036-17b8-4207-976b-16d83f01dead",
+        "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+        "topic_id": "db6a9e7f-324b-4f27-a905-9061fd7d734b",
+        "text": "A living architect whose built work demonstrates tleant, vision, and lasting contribution to the built environment is recognized annually with a prestigious prize established in 1979. This describes which architecture award?",
+        "options": [
+          {
+            "id": "a",
+            "text": "American Institute of Architects Gold Medal"
+          },
+          {
+            "id": "b",
+            "text": "Royal Institute of British Architects Medal"
+          },
+          {
+            "id": "c",
+            "text": "Pritzker Architecture Prize"
+          },
+          {
+            "id": "d",
+            "text": "RIBA Stirling Prize"
+          }
+        ],
+        "correct_option_id": "c",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "AIA Gold Medal has different criteria.",
+          "b": "RIBA Medal has different focus and history.",
+          "d": "Stirling Prize recognizes completed buildings, not living architects' lifetime achievement.",
+          "correct": "This describes the Pritzker Architecture Prize, established in 1979 by the Hyatt Foundation, recognizing living architects' enduring contributions."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "remember",
+        "application_context": "recall",
+        "practice_context": [
+          "DESC"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "pritzker-11",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:26.09657+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:6af6f5447179a3e27789c69e3776c49f8de4485a00fdca6b34002fb1012c478a"
+      },
+      "proposed": {
+        "explanation": "AIA Gold Medal has different criteria. RIBA Medal has different focus and history. Stirling Prize recognizes completed buildings, not living architects' lifetime achievement. This describes the Pritzker Architecture Prize, established in 1979 by the Hyatt Foundation, recognizing living architects' enduring contributions."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "c9250b47-47f5-4e45-a44a-6c6b41ca219d",
+      "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-09-core-concept--5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+      "title": "lea-hist-008-09-core-concept",
+      "baseline_hash": "sha256:a5d4d86eb33b7e803e4d7d70866c9b9144b8e6d9414ce5e13d2ec8fe4a43e566",
+      "baseline": {
+        "question_id": "c9250b47-47f5-4e45-a44a-6c6b41ca219d",
+        "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+        "topic_id": "db6a9e7f-324b-4f27-a905-9061fd7d734b",
+        "text": "In which year was the Pritzker Architecture Prize established?",
+        "options": [
+          {
+            "id": "a",
+            "text": "1975"
+          },
+          {
+            "id": "b",
+            "text": "1979"
+          },
+          {
+            "id": "c",
+            "text": "1985"
+          },
+          {
+            "id": "d",
+            "text": "1990"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "The prize was not established in 1975.",
+          "c": "The prize was established in 1979, not 1985.",
+          "d": "The prize predates 1990.",
+          "correct": "The Pritzker Prize was established in 1979 by the Hyatt Foundation."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "remember",
+        "application_context": "recall",
+        "practice_context": [
+          "CH"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "pritzker-01",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:26.09657+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:a5d4d86eb33b7e803e4d7d70866c9b9144b8e6d9414ce5e13d2ec8fe4a43e566"
+      },
+      "proposed": {
+        "explanation": "The prize was not established in 1975. The prize was established in 1979, not 1985. The prize predates 1990. The Pritzker Prize was established in 1979 by the Hyatt Foundation."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "442e0cfd-f922-457e-9e5f-170e4563c4bd",
+      "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-09-core-concept--5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+      "title": "lea-hist-008-09-core-concept",
+      "baseline_hash": "sha256:e8f9abed2d85de01e8bcbcaef33cb0b5f40fbbe98a7d75e8729d136363758967",
+      "baseline": {
+        "question_id": "442e0cfd-f922-457e-9e5f-170e4563c4bd",
+        "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+        "topic_id": "db6a9e7f-324b-4f27-a905-9061fd7d734b",
+        "text": "Who was the first Pritzker Prize laureate in 1979?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Luis Barragán, known for his colorful and emotional architecture"
+          },
+          {
+            "id": "b",
+            "text": "Philip Johnson"
+          },
+          {
+            "id": "c",
+            "text": "I.M. Pei, celebrated for his modernist architectural designs"
+          },
+          {
+            "id": "d",
+            "text": "Kenzo Tange, a key figure in the Metabolist movement"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Luis Barragán won in 1980, the second laureate.",
+          "c": "I.M. Pei won in 1983.",
+          "d": "Kenzo Tange won in 1987.",
+          "correct": "Philip Johnson was the first Pritzker laureate in 1979, representing American establishment modernism."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "remember",
+        "application_context": "recall",
+        "practice_context": [
+          "ID"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "pritzker-02",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:26.09657+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:e8f9abed2d85de01e8bcbcaef33cb0b5f40fbbe98a7d75e8729d136363758967"
+      },
+      "proposed": {
+        "explanation": "Luis Barragán won in 1980, the second laureate. I.M. Pei won in 1983. Kenzo Tange won in 1987. Philip Johnson was the first Pritzker laureate in 1979, representing American establishment modernism."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "f877fd65-1347-439f-9bb3-e57c8c0abf2d",
+      "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-09-core-concept--5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+      "title": "lea-hist-008-09-core-concept",
+      "baseline_hash": "sha256:cde26fef68b1641edac9d7d9bef0a1df0373cd1f24fda4eace4986da821a0de4",
+      "baseline": {
+        "question_id": "f877fd65-1347-439f-9bb3-e57c8c0abf2d",
+        "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+        "topic_id": "db6a9e7f-324b-4f27-a905-9061fd7d734b",
+        "text": "Which year marked the first femlea Pritzker Prize laureate, breaking a 25-year gender barrier?",
+        "options": [
+          {
+            "id": "a",
+            "text": "2000"
+          },
+          {
+            "id": "b",
+            "text": "2002"
+          },
+          {
+            "id": "c",
+            "text": "2004"
+          },
+          {
+            "id": "d",
+            "text": "2008"
+          }
+        ],
+        "correct_option_id": "c",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "No female laureate in 2000.",
+          "b": "Glenn Murcutt won in 2002.",
+          "d": "Jean Nouvel won in 2008.",
+          "correct": "Zaha Hadid became the first woman to win the Pritzker Prize in 2004."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "remember",
+        "application_context": "recall",
+        "practice_context": [
+          "CH"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "pritzker-03",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:26.09657+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:cde26fef68b1641edac9d7d9bef0a1df0373cd1f24fda4eace4986da821a0de4"
+      },
+      "proposed": {
+        "explanation": "No female laureate in 2000. Glenn Murcutt won in 2002. Jean Nouvel won in 2008. Zaha Hadid became the first woman to win the Pritzker Prize in 2004."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "0764b121-c781-4680-bf92-e329b22f5ac3",
+      "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-09-core-concept--5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+      "title": "lea-hist-008-09-core-concept",
+      "baseline_hash": "sha256:6ce7e67b40a5a416662e83f8e91ab3790953dc7d0e2aeb6d3f428948558193ba",
+      "baseline": {
+        "question_id": "0764b121-c781-4680-bf92-e329b22f5ac3",
+        "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+        "topic_id": "db6a9e7f-324b-4f27-a905-9061fd7d734b",
+        "text": "Which two architects are both first laureates of their respective countries: Wang Shu (China) and which architect (Japan)?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Kenzo Tange, who received the prize in 1987 for his monumental urban planning works"
+          },
+          {
+            "id": "b",
+            "text": "Tadao Ando, who received the prize in 1995 for his minimalist concrete architecture"
+          },
+          {
+            "id": "c",
+            "text": "Shigeru Ban, who received the prize in 2014 for his innovative humanitarian shelters"
+          },
+          {
+            "id": "d",
+            "text": "Multiple Japanese laureates preceded Wang Shu"
+          }
+        ],
+        "correct_option_id": "d",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Tange won in 1987, predating Wang Shu.",
+          "b": "Ando won in 1995, predating Wang Shu.",
+          "c": "Ban won in 2014, after Wang Shu.",
+          "correct": "Wang Shu was China's first laureate in 2012, but Japan had multiple laureates before him (Tange 1987, Ando 1995, etc.). No Japanese architect was a 'first' along with Wang Shu."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "remember",
+        "application_context": "design_application",
+        "practice_context": [
+          "CMP"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "pritzker-05",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:26.09657+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:6ce7e67b40a5a416662e83f8e91ab3790953dc7d0e2aeb6d3f428948558193ba"
+      },
+      "proposed": {
+        "explanation": "Tange won in 1987, predating Wang Shu. Ando won in 1995, predating Wang Shu. Ban won in 2014, after Wang Shu. Wang Shu was China's first laureate in 2012, but Japan had multiple laureates before him (Tange 1987, Ando 1995, etc.). No Japanese architect was a 'first' along with Wang Shu."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "8b9f432f-bb08-4267-a6e2-62b058bd8fc0",
+      "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-09-core-concept--5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+      "title": "lea-hist-008-09-core-concept",
+      "baseline_hash": "sha256:a3a69442a9a0287e7aae2049b91747432060a8716360dac2298183df40f5edb4",
+      "baseline": {
+        "question_id": "8b9f432f-bb08-4267-a6e2-62b058bd8fc0",
+        "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+        "topic_id": "db6a9e7f-324b-4f27-a905-9061fd7d734b",
+        "text": "In which year did the Pritzker Prize recognize its second Chilean laureate?",
+        "options": [
+          {
+            "id": "a",
+            "text": "2020"
+          },
+          {
+            "id": "b",
+            "text": "2024"
+          },
+          {
+            "id": "c",
+            "text": "2025"
+          },
+          {
+            "id": "d",
+            "text": "2026"
+          }
+        ],
+        "correct_option_id": "d",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Yvonne Farrell & Shelley McNamara won in 2020 (Ireland).",
+          "note": "Remove fictional winners; actual 2024 winner: Riken Yamamoto (Japan). No 2025 winner as of March 2026.",
+          "correct": "No Pritzker Prize awarded in 2026 as of March 2026; second Chilean laureate has not yet been awarded."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "remember",
+        "application_context": "recall",
+        "practice_context": [
+          "CH"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "pritzker-09",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:26.09657+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:a3a69442a9a0287e7aae2049b91747432060a8716360dac2298183df40f5edb4"
+      },
+      "proposed": {
+        "explanation": "Yvonne Farrell & Shelley McNamara won in 2020 (Ireland). Remove fictional winners; actual 2024 winner: Riken Yamamoto (Japan). No 2025 winner as of March 2026. No Pritzker Prize awarded in 2026 as of March 2026; second Chilean laureate has not yet been awarded."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "12e30953-d88a-4857-9235-7522268e8fa4",
+      "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-09-core-concept--5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+      "title": "lea-hist-008-09-core-concept",
+      "baseline_hash": "sha256:b1f993660773ff4fcda9e1b84fa2368016002ab5fb5bc410c73ba45d1c8bd8b5",
+      "baseline": {
+        "question_id": "12e30953-d88a-4857-9235-7522268e8fa4",
+        "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+        "topic_id": "db6a9e7f-324b-4f27-a905-9061fd7d734b",
+        "text": "Which architect won the Pritzker Prize in 1988, a shared award that was the only shared prize until later team practices?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Oscar Niemeyer and Gordon Bunshaft"
+          },
+          {
+            "id": "b",
+            "text": "Paul Rudolph and Kevin Roche"
+          },
+          {
+            "id": "c",
+            "text": "James Stirling and Michael Wilford"
+          },
+          {
+            "id": "d",
+            "text": "Aldo Rossi and Carlo Aymonino"
+          }
+        ],
+        "correct_option_id": "a",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "b": "Roche won individually in 1982; Rudolph did not win.",
+          "c": "Stirling won individually in 1981; Wilford was not a laureate.",
+          "d": "Rossi won individually in 1990.",
+          "correct": "In 1988, Gordon Bunshaft (USA) and Oscar Niemeyer (Brazil) shared the Pritzker Prize—the only shared award until later team practices (SANAA, etc.)."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "remember",
+        "application_context": "recall",
+        "practice_context": [
+          "ID"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "pritzker-10",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:26.09657+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:b1f993660773ff4fcda9e1b84fa2368016002ab5fb5bc410c73ba45d1c8bd8b5"
+      },
+      "proposed": {
+        "explanation": "Roche won individually in 1982; Rudolph did not win. Stirling won individually in 1981; Wilford was not a laureate. Rossi won individually in 1990. In 1988, Gordon Bunshaft (USA) and Oscar Niemeyer (Brazil) shared the Pritzker Prize—the only shared award until later team practices (SANAA, etc.)."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "30137711-7cb1-4d1b-8eab-2932a1fe0553",
+      "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-09-core-concept--5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+      "title": "lea-hist-008-09-core-concept",
+      "baseline_hash": "sha256:9c8cd501a39a27aee1610233b8ae6f80bece7f5ae5aabaeb122d696374f1d5e2",
+      "baseline": {
+        "question_id": "30137711-7cb1-4d1b-8eab-2932a1fe0553",
+        "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+        "topic_id": "db6a9e7f-324b-4f27-a905-9061fd7d734b",
+        "text": "Frank Gehry won the Pritzker Prize in 1989. What is his most iconic building, completed in 1997?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Getty Center, Los Angeles"
+          },
+          {
+            "id": "b",
+            "text": "Guggenheim Museum Bilbao"
+          },
+          {
+            "id": "c",
+            "text": "Dancing House, Prague"
+          },
+          {
+            "id": "d",
+            "text": "Vitra Design Museum, Weil am Rhein"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Getty Center is by Richard Meier (1984 laureate, completed 1997).",
+          "c": "Dancing House is by Gehry and Vlado Milunić (1999), earlier than Bilbao.",
+          "d": "Vitra Design Museum is by Gehry (1989) but predates Bilbao.",
+          "correct": "Frank Gehry's Guggenheim Museum Bilbao (1997) epitomizes his deconstructivist approach with titanium-clad biomorphic forms. He won the Pritzker in 1989, well before this building's completion."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "remember",
+        "application_context": "recall",
+        "practice_context": [
+          "ID"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "pritzker-06",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:26.09657+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:9c8cd501a39a27aee1610233b8ae6f80bece7f5ae5aabaeb122d696374f1d5e2"
+      },
+      "proposed": {
+        "explanation": "Getty Center is by Richard Meier (1984 laureate, completed 1997). Dancing House is by Gehry and Vlado Milunić (1999), earlier than Bilbao. Vitra Design Museum is by Gehry (1989) but predates Bilbao. Frank Gehry's Guggenheim Museum Bilbao (1997) epitomizes his deconstructivist approach with titanium-clad biomorphic forms. He won the Pritzker in 1989, well before this building's completion."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "5b858f47-c9d7-42e0-8abe-855427d4e87a",
+      "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-09-core-concept--5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+      "title": "lea-hist-008-09-core-concept",
+      "baseline_hash": "sha256:adf8ab0bfc1bba7385222d91ef853d0b8cb1543fdd191ccf5c4f436fba88f618",
+      "baseline": {
+        "question_id": "5b858f47-c9d7-42e0-8abe-855427d4e87a",
+        "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+        "topic_id": "db6a9e7f-324b-4f27-a905-9061fd7d734b",
+        "text": "How do the Pritzker laureate selections from 2010–2024 differ from those in the 1980s in terms of geography, building type, and design philosophy?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Recent selections are identical to 1980s selections; geography and philosophy have not changed, maintaining a consistent approach"
+          },
+          {
+            "id": "b",
+            "text": "Recent selections increasingly recognize non-Western architects, social impact, and sustainability; 1980s selections emphasized Western formalism and cultural institutions."
+          },
+          {
+            "id": "c",
+            "text": "Recent selections reject all modernism; 1980s selections embraced modernism exclusively, highlighting a shift in architectural values"
+          },
+          {
+            "id": "d",
+            "text": "Recent selections are less rigorous than 1980s selections; quality has declined, reflecting a perceived drop in standards"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Significant philosophical and geographic shifts are evident.",
+          "c": "Both eras embrace modernism differently; the distinction is in philosophy and scope.",
+          "d": "Recent laureates maintain rigorous standards; the shift is in priorities and representation.",
+          "correct": "The article articulates this shift: Early era (1979–1995) rewarded Western modernists and cultural ambition; Recent era (2011–2024) increasingly recognizes Global South architects, social practice, and sustainability (Aravena, Kéré, Ban, Lacaton & Vassal)."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "apply",
+        "application_context": "design_application",
+        "practice_context": [
+          "CMP"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "pritzker-12",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:26.09657+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:adf8ab0bfc1bba7385222d91ef853d0b8cb1543fdd191ccf5c4f436fba88f618"
+      },
+      "proposed": {
+        "explanation": "Significant philosophical and geographic shifts are evident. Both eras embrace modernism differently; the distinction is in philosophy and scope. Recent laureates maintain rigorous standards; the shift is in priorities and representation. The article articulates this shift: Early era (1979–1995) rewarded Western modernists and cultural ambition; Recent era (2011–2024) increasingly recognizes Global South architects, social practice, and sustainability (Aravena, Kéré, Ban, Lacaton & Vassal)."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "88e587a6-8889-4a80-9940-3836dea4de15",
+      "article_id": "f39be27a-5611-4d35-bdda-02f6e3e46f42",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-002-04-core-concept--f39be27a-5611-4d35-bdda-02f6e3e46f42",
+      "title": "lea-matl-002-04-core-concept",
+      "baseline_hash": "sha256:047e41f70e071d9f6bc1072d4bceada21d850e0da6d3716d1fbe994267d8e33b",
+      "baseline": {
+        "question_id": "88e587a6-8889-4a80-9940-3836dea4de15",
+        "article_id": "f39be27a-5611-4d35-bdda-02f6e3e46f42",
+        "topic_id": "2fceede7-fbd5-458a-8f79-f4bf71d0c846",
+        "text": "Romblon marble is the primary natural stone resource of the Philippines and accounts for approximately ___% of the country's marble production.",
+        "options": [
+          {
+            "id": "a",
+            "text": "80%"
+          },
+          {
+            "id": "b",
+            "text": "30%"
+          },
+          {
+            "id": "c",
+            "text": "50%"
+          },
+          {
+            "id": "d",
+            "text": "99%"
+          }
+        ],
+        "correct_option_id": "a",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "b": "30% is too low for Romblon's dominance.",
+          "c": "50% understates Romblon's market share.",
+          "d": "99% is unrealistic; other regions contribute some production.",
+          "correct": "Romblon Province produces approximately 80% of Philippine marble, making it the marble capital. Mabini and Odiongan are the primary production towns.",
+          "takeaway": "Romblon marble is the Philippine stone resource to know. Recognize its cloudy white appearance and premium quality comparable to Italian Carrara."
+        },
+        "explanation": null,
+        "code_citation": "Romblon Paradise Island documentation; Philippine stone resources",
+        "bloom_level": "understand",
+        "application_context": "code_interpretation",
+        "practice_context": [],
+        "difficulty": 0.3,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-MATL-002-04-003",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:26.09657+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:047e41f70e071d9f6bc1072d4bceada21d850e0da6d3716d1fbe994267d8e33b"
+      },
+      "proposed": {
+        "explanation": "30% is too low for Romblon's dominance. 50% understates Romblon's market share. 99% is unrealistic; other regions contribute some production. Romblon Province produces approximately 80% of Philippine marble, making it the marble capital. Mabini and Odiongan are the primary production towns. Romblon marble is the Philippine stone resource to know. Recognize its cloudy white appearance and premium quality comparable to Italian Carrara."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "f4dfa4e2-0bcb-45ea-bc31-878d00ab8610",
+      "article_id": "f39be27a-5611-4d35-bdda-02f6e3e46f42",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-002-04-core-concept--f39be27a-5611-4d35-bdda-02f6e3e46f42",
+      "title": "lea-matl-002-04-core-concept",
+      "baseline_hash": "sha256:c1a2a80d6ff6141ac294409109fd21cdbff9be941dd20706f8e12b486a442d57",
+      "baseline": {
+        "question_id": "f4dfa4e2-0bcb-45ea-bc31-878d00ab8610",
+        "article_id": "f39be27a-5611-4d35-bdda-02f6e3e46f42",
+        "topic_id": "2fceede7-fbd5-458a-8f79-f4bf71d0c846",
+        "text": "An exterior building facade in the Philippines is specified with limestone (ASTM C568, water absorption 2.5%) without protective sealant. Is this adequate for long-term durability?",
+        "options": [
+          {
+            "id": "a",
+            "text": "No; limestone's 2.5% absorption and acid sensitivity make it unsuitable for exterior tropical exposure without sealing. Granite (≤0.4% absorption) is required."
+          },
+          {
+            "id": "b",
+            "text": "Yes; limestone meets ASTM C568 specifications and is suitable for any external application, regardless of environmental conditions"
+          },
+          {
+            "id": "c",
+            "text": "No; but only because of typhoon impact, not moisture absorption, which is a significant factor in material degradation"
+          },
+          {
+            "id": "d",
+            "text": "Yes; limestone has been used for centuries in all climates without problems, though this overlooks specific environmental challenges"
+          }
+        ],
+        "correct_option_id": "a",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "b": "ASTM conformance is a minimum; exposure environment determines adequacy.",
+          "c": "Typhoon wind is a structural concern, not the primary durability issue with limestone absorption.",
+          "d": "Limestone has been used for centuries in arid and temperate climates; tropical humid climate is different.",
+          "correct": "Limestone's 2.5% water absorption combined with tropical rainfall, high humidity, and salt air (if coastal) creates conditions for water infiltration, biological growth (moss, algae), and acid etching. Protective sealing (penetrating or membrane) or granite (intrinsically water-resistant) is required.",
+          "takeaway": "Limestone in tropical Philippines requires either protective sealing or use of lower-absorption granite. Do not assume ASTM conformance guarantees field durability."
+        },
+        "explanation": null,
+        "code_citation": "ASTM C568; stone durability in tropical climates; water management in masonry",
+        "bloom_level": "apply",
+        "application_context": "code_interpretation",
+        "practice_context": [],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-MATL-002-04-004",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:26.09657+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:c1a2a80d6ff6141ac294409109fd21cdbff9be941dd20706f8e12b486a442d57"
+      },
+      "proposed": {
+        "explanation": "ASTM conformance is a minimum; exposure environment determines adequacy. Typhoon wind is a structural concern, not the primary durability issue with limestone absorption. Limestone has been used for centuries in arid and temperate climates; tropical humid climate is different. Limestone's 2.5% water absorption combined with tropical rainfall, high humidity, and salt air (if coastal) creates conditions for water infiltration, biological growth (moss, algae), and acid etching. Protective sealing (penetrating or membrane) or granite (intrinsically water-resistant) is required. Limestone in tropical Philippines requires either protective sealing or use of lower-absorption granite. Do not assume ASTM conformance guarantees field durability."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "15acfdf1-1eae-4743-8db8-a191c01033cc",
+      "article_id": "f39be27a-5611-4d35-bdda-02f6e3e46f42",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-002-04-core-concept--f39be27a-5611-4d35-bdda-02f6e3e46f42",
+      "title": "lea-matl-002-04-core-concept",
+      "baseline_hash": "sha256:0abc28ae5dd2aae22ba1594a35be135327e8fa1145760a4b04903b779bb6d24e",
+      "baseline": {
+        "question_id": "15acfdf1-1eae-4743-8db8-a191c01033cc",
+        "article_id": "f39be27a-5611-4d35-bdda-02f6e3e46f42",
+        "topic_id": "2fceede7-fbd5-458a-8f79-f4bf71d0c846",
+        "text": "Stone veneer differs from solid stone in that veneer is typically ___ inches thick and is applied over a ___.",
+        "options": [
+          {
+            "id": "a",
+            "text": "1—2; backup wall"
+          },
+          {
+            "id": "b",
+            "text": "4—6; structural frame"
+          },
+          {
+            "id": "c",
+            "text": "8—12; concrete foundation"
+          },
+          {
+            "id": "d",
+            "text": "0.25; stone substrate"
+          }
+        ],
+        "correct_option_id": "a",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "b": "Veneer is anchored to structural backup (wall or frame), not to a foundation directly.",
+          "c": "Veneer is thinner than solid stone (which is 4—12 inches).",
+          "d": "Veneer is not applied to stone substrate; it is the topmost layer.",
+          "correct": "Stone veneer is thin-cut stone (1—2 inches) adhered or mechanically anchored to a backup wall (brick, concrete, or foam insulation), reducing weight and cost while maintaining appearance.",
+          "takeaway": "Veneer = thin (1—2 in.) + adhesive or mechanical anchors + backup wall. Solid = thick (4—12 in.) + heavy + direct support. Choose veneer for cost and weight reduction; solid for maximum durability."
+        },
+        "explanation": null,
+        "code_citation": "Stone veneer installation standards (ASTM C1242, ANSI/NCMA TEK 10-02A); NSCP 2015 Section 2402 (general masonry materials)",
+        "bloom_level": "understand",
+        "application_context": "code_interpretation",
+        "practice_context": [],
+        "difficulty": 0.3,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-MATL-002-04-008",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:26.09657+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:0abc28ae5dd2aae22ba1594a35be135327e8fa1145760a4b04903b779bb6d24e"
+      },
+      "proposed": {
+        "explanation": "Veneer is anchored to structural backup (wall or frame), not to a foundation directly. Veneer is thinner than solid stone (which is 4—12 inches). Veneer is not applied to stone substrate; it is the topmost layer. Stone veneer is thin-cut stone (1—2 inches) adhered or mechanically anchored to a backup wall (brick, concrete, or foam insulation), reducing weight and cost while maintaining appearance. Veneer = thin (1—2 in.) + adhesive or mechanical anchors + backup wall. Solid = thick (4—12 in.) + heavy + direct support. Choose veneer for cost and weight reduction; solid for maximum durability."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "d3ab72e4-30ff-4855-aaf4-6cf76f531983",
+      "article_id": "f39be27a-5611-4d35-bdda-02f6e3e46f42",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-002-04-core-concept--f39be27a-5611-4d35-bdda-02f6e3e46f42",
+      "title": "lea-matl-002-04-core-concept",
+      "baseline_hash": "sha256:869bc49264506b0060110469898b3d906760c9642612f1ae4b0da00e024316c9",
+      "baseline": {
+        "question_id": "d3ab72e4-30ff-4855-aaf4-6cf76f531983",
+        "article_id": "f39be27a-5611-4d35-bdda-02f6e3e46f42",
+        "topic_id": "2fceede7-fbd5-458a-8f79-f4bf71d0c846",
+        "text": "A designer specifies marble for an exterior building facade, reasoning that marble's compressive strength (up to 10,000 psi) exceeds concrete's (4,000 psi), so it must be durable. Is this reasoning correct?",
+        "options": [
+          {
+            "id": "a",
+            "text": "No; compressive strength alone does not determine durability in exterior exposure. Marble's acid sensitivity and higher water absorption (0.75%) make it unsuitable for exterior. Granite's low absorption (<0.4%) and lack of acid sensitivity are more important than raw strength."
+          },
+          {
+            "id": "b",
+            "text": "Yes; higher compressive strength means better durability for all applications, regardless of environmental conditions or material properties."
+          },
+          {
+            "id": "c",
+            "text": "No; marble is weaker than concrete and should not be used externally, especially in areas with high pollution or acid rain exposure."
+          },
+          {
+            "id": "d",
+            "text": "Yes; marble's hardness (Mohs 3—4) provides sufficient scratch resistance for building facade, but does not account for other environmental factors."
+          }
+        ],
+        "correct_option_id": "a",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "b": "Strength is important, but durability requires multiple property evaluations.",
+          "c": "Marble is stronger than concrete in compression but more vulnerable to weathering.",
+          "d": "Mohs hardness (scratch resistance) is separate from weather durability.",
+          "correct": "Durability in exterior exposure depends on water absorption, acid resistance, weather stability, and UV resistance—not compressive strength alone. Marble's acid sensitivity and moderate absorption (0.75%) create long-term exterior vulnerability despite good compressive strength. Granite (≤0.4% absorption, acid-resistant) is inherently more durable.",
+          "takeaway": "Durability ≠ Strength. A material can be strong but vulnerable to environmental attack. Water absorption, acid sensitivity, and UV stability are durability drivers."
+        },
+        "explanation": null,
+        "code_citation": "ASTM C615, C503 standards; stone durability principles; exterior design standards",
+        "bloom_level": "apply",
+        "application_context": "code_interpretation",
+        "practice_context": [],
+        "difficulty": 0.7,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-MATL-002-04-007",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:26.09657+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:869bc49264506b0060110469898b3d906760c9642612f1ae4b0da00e024316c9"
+      },
+      "proposed": {
+        "explanation": "Strength is important, but durability requires multiple property evaluations. Marble is stronger than concrete in compression but more vulnerable to weathering. Mohs hardness (scratch resistance) is separate from weather durability. Durability in exterior exposure depends on water absorption, acid resistance, weather stability, and UV resistance—not compressive strength alone. Marble's acid sensitivity and moderate absorption (0.75%) create long-term exterior vulnerability despite good compressive strength. Granite (≤0.4% absorption, acid-resistant) is inherently more durable. Durability ≠ Strength. A material can be strong but vulnerable to environmental attack. Water absorption, acid sensitivity, and UV stability are durability drivers."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "e4e2391e-dc72-4f32-94bd-fe7b5076e477",
+      "article_id": "f39be27a-5611-4d35-bdda-02f6e3e46f42",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-002-04-core-concept--f39be27a-5611-4d35-bdda-02f6e3e46f42",
+      "title": "lea-matl-002-04-core-concept",
+      "baseline_hash": "sha256:cff4e8082765a426491be2c4edba9d55fb12a0664c280a64c8156a1882f763fc",
+      "baseline": {
+        "question_id": "e4e2391e-dc72-4f32-94bd-fe7b5076e477",
+        "article_id": "f39be27a-5611-4d35-bdda-02f6e3e46f42",
+        "topic_id": "2fceede7-fbd5-458a-8f79-f4bf71d0c846",
+        "text": "Which of the following stones has the HIGHEST water absorption and is least suitable for wet or tropical exterior exposures without sealing?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Travertine (5—25% absorption)"
+          },
+          {
+            "id": "b",
+            "text": "Marble (0.75% absorption)"
+          },
+          {
+            "id": "c",
+            "text": "Granite (0.4% absorption)"
+          },
+          {
+            "id": "d",
+            "text": "Slate (<0.5% absorption)"
+          }
+        ],
+        "correct_option_id": "a",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "b": "Marble at 0.75% is moderate; with sealing, acceptable for sheltered interior use.",
+          "c": "Granite at 0.4% is the lowest; highly resistant to water damage.",
+          "d": "Slate <0.5% is excellent; used for centuries in wet roofing applications.",
+          "correct": "Travertine's porosity results in 5—25% water absorption, making it vulnerable to freeze-thaw damage, biological growth in tropical humidity, and water infiltration. Unsuitable for tropical Philippines without protective sealing.",
+          "takeaway": "Match absorption to exposure: Granite (<0.5%) for wet, Marble (0.75%) for sheltered interior, Travertine (5%+) for interior dry use only. High absorption + tropical humidity = failure."
+        },
+        "explanation": null,
+        "code_citation": "ASTM C615, C503, C568 absorption specifications; stone durability principles",
+        "bloom_level": "understand",
+        "application_context": "code_interpretation",
+        "practice_context": [],
+        "difficulty": 0.3,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-MATL-002-04-002",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:26.09657+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:cff4e8082765a426491be2c4edba9d55fb12a0664c280a64c8156a1882f763fc"
+      },
+      "proposed": {
+        "explanation": "Marble at 0.75% is moderate; with sealing, acceptable for sheltered interior use. Granite at 0.4% is the lowest; highly resistant to water damage. Slate <0.5% is excellent; used for centuries in wet roofing applications. Travertine's porosity results in 5—25% water absorption, making it vulnerable to freeze-thaw damage, biological growth in tropical humidity, and water infiltration. Unsuitable for tropical Philippines without protective sealing. Match absorption to exposure: Granite (<0.5%) for wet, Marble (0.75%) for sheltered interior, Travertine (5%+) for interior dry use only. High absorption + tropical humidity = failure."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "bbdc625a-aed1-4fcd-a6ac-553e02ff7b31",
+      "article_id": "f39be27a-5611-4d35-bdda-02f6e3e46f42",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-002-04-core-concept--f39be27a-5611-4d35-bdda-02f6e3e46f42",
+      "title": "lea-matl-002-04-core-concept",
+      "baseline_hash": "sha256:e08cf0a2b8e30eae0ff35dd09b07cd904586516a4123391c510cb1f18ab1b221",
+      "baseline": {
+        "question_id": "bbdc625a-aed1-4fcd-a6ac-553e02ff7b31",
+        "article_id": "f39be27a-5611-4d35-bdda-02f6e3e46f42",
+        "topic_id": "2fceede7-fbd5-458a-8f79-f4bf71d0c846",
+        "text": "The Mohs hardness sclea ranks minerals by ___ resistance; a stone with Mohs 6 (granite) is ___ than a stone with Mohs 3 (marble).",
+        "options": [
+          {
+            "id": "a",
+            "text": "scratch; harder"
+          },
+          {
+            "id": "b",
+            "text": "compressive; softer"
+          },
+          {
+            "id": "c",
+            "text": "impact; weaker"
+          },
+          {
+            "id": "d",
+            "text": "abrasion; equivalent"
+          }
+        ],
+        "correct_option_id": "a",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "b": "Mohs measures scratch resistance, not compressive strength.",
+          "c": "Weaker in impact is not determined by Mohs scale alone.",
+          "d": "Equivalent is incorrect; Mohs 6 is significantly harder than Mohs 3.",
+          "correct": "Mohs hardness measures resistance to scratching. Granite (6) is harder than marble (3), meaning granite resists scratching better. Hardness does NOT directly equal compressive strength.",
+          "takeaway": "Mohs hardness = scratch resistance. Granite (harder) resists wear and scratching better than marble. Compressive strength is a separate property measured by crushing tests."
+        },
+        "explanation": null,
+        "code_citation": "Mohs hardness sclea; ASTM stone specifications",
+        "bloom_level": "understand",
+        "application_context": "recall",
+        "practice_context": [],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-MATL-002-04-006",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:26.09657+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:e08cf0a2b8e30eae0ff35dd09b07cd904586516a4123391c510cb1f18ab1b221"
+      },
+      "proposed": {
+        "explanation": "Mohs measures scratch resistance, not compressive strength. Weaker in impact is not determined by Mohs scale alone. Equivalent is incorrect; Mohs 6 is significantly harder than Mohs 3. Mohs hardness measures resistance to scratching. Granite (6) is harder than marble (3), meaning granite resists scratching better. Hardness does NOT directly equal compressive strength. Mohs hardness = scratch resistance. Granite (harder) resists wear and scratching better than marble. Compressive strength is a separate property measured by crushing tests."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "e621d7c1-75cc-4c48-9289-9087d30913f8",
+      "article_id": "f39be27a-5611-4d35-bdda-02f6e3e46f42",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-002-04-core-concept--f39be27a-5611-4d35-bdda-02f6e3e46f42",
+      "title": "lea-matl-002-04-core-concept",
+      "baseline_hash": "sha256:a98cb39d0b906badd2ec92fc0c57886098333b54d7cdb740a948eb52764c0410",
+      "baseline": {
+        "question_id": "e621d7c1-75cc-4c48-9289-9087d30913f8",
+        "article_id": "f39be27a-5611-4d35-bdda-02f6e3e46f42",
+        "topic_id": "2fceede7-fbd5-458a-8f79-f4bf71d0c846",
+        "text": "Marble is prized for interior applications but is NOT recommended for exterior exposure because it is susceptible to ___.",
+        "options": [
+          {
+            "id": "a",
+            "text": "acid etching from acidic rain or soil moisture"
+          },
+          {
+            "id": "b",
+            "text": "compression failure under excessive load conditions"
+          },
+          {
+            "id": "c",
+            "text": "freeze-thaw cycles that cause cracking and spalling"
+          },
+          {
+            "id": "d",
+            "text": "biological attachment leading to surface discoloration"
+          }
+        ],
+        "correct_option_id": "a",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "b": "Marble has adequate compressive strength for most applications; compression is not the limiting factor.",
+          "c": "Freeze-thaw is a concern for high-absorption stone in cold climates, but marble's moderate absorption and tropical Philippines' warm climate make this secondary.",
+          "d": "Biological growth (moss, algae) affects all stone; it is not specific to marble.",
+          "correct": "Marble (CaCO₃) is sensitive to weak acids; rainwater containing carbonic acid, soil moisture, and vinegar/acidic cleaners etch the surface, dull the polish, and create irreversible damage.",
+          "takeaway": "Marble = interior only. Acid sensitivity and moderate absorption limit exterior use. Granite is the exterior choice for durability."
+        },
+        "explanation": null,
+        "code_citation": "ASTM C503; stone durability; interior design standards",
+        "bloom_level": "understand",
+        "application_context": "code_interpretation",
+        "practice_context": [],
+        "difficulty": 0.3,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-MATL-002-04-005",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:26.09657+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:a98cb39d0b906badd2ec92fc0c57886098333b54d7cdb740a948eb52764c0410"
+      },
+      "proposed": {
+        "explanation": "Marble has adequate compressive strength for most applications; compression is not the limiting factor. Freeze-thaw is a concern for high-absorption stone in cold climates, but marble's moderate absorption and tropical Philippines' warm climate make this secondary. Biological growth (moss, algae) affects all stone; it is not specific to marble. Marble (CaCO₃) is sensitive to weak acids; rainwater containing carbonic acid, soil moisture, and vinegar/acidic cleaners etch the surface, dull the polish, and create irreversible damage. Marble = interior only. Acid sensitivity and moderate absorption limit exterior use. Granite is the exterior choice for durability."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "57a5181c-b039-42f2-aba3-6bcbd0a8369f",
+      "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-001-05-core-concept--757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+      "title": "lea-hist-001-05-core-concept",
+      "baseline_hash": "sha256:923791204886e7ddaba80a7a6d1761a048be35ca13fc63c6a2aba095664cde6d",
+      "baseline": {
+        "question_id": "57a5181c-b039-42f2-aba3-6bcbd0a8369f",
+        "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+        "topic_id": "a0124521-5f62-4bfe-bf92-8d5baf24d32a",
+        "text": "The Parthenon's peristasis (outer colonnade) arrangement features how many columns on the short ends and long sides?",
+        "options": [
+          {
+            "id": "a",
+            "text": "6 columns on short ends and 12 on long sides (6×12 arrangement)"
+          },
+          {
+            "id": "b",
+            "text": "6 columns on short ends and 13 on long sides (6×13 arrangement)"
+          },
+          {
+            "id": "c",
+            "text": "8 columns on short ends and 17 on long sides (8×17 arrangement)"
+          },
+          {
+            "id": "d",
+            "text": "10 columns on short ends and 20 on long sides (10×20 arrangement)"
+          }
+        ],
+        "correct_option_id": "c",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "The 6×12 arrangement is not documented for the Parthenon.",
+          "b": "The 6×13 arrangement is found on other Doric temples like the Temple of Hephaestus, which is smaller than the Parthenon.",
+          "d": "The 10×20 arrangement is not a documented classical Greek order.",
+          "correct": "Its plan is a rectangular naos with an outer colonnade (peristasis) of 8 columns on the short ends and 17 columns on the long sides. This 8 × 17 arrangement is standard.'",
+          "takeaway": "This 8 × 17 arrangement is standard.'."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "remember",
+        "application_context": "recall",
+        "practice_context": [
+          "ID"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-HIST-001-05-002",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:23.525262+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:923791204886e7ddaba80a7a6d1761a048be35ca13fc63c6a2aba095664cde6d"
+      },
+      "proposed": {
+        "explanation": "The 6×12 arrangement is not documented for the Parthenon. The 6×13 arrangement is found on other Doric temples like the Temple of Hephaestus, which is smaller than the Parthenon. The 10×20 arrangement is not a documented classical Greek order. Its plan is a rectangular naos with an outer colonnade (peristasis) of 8 columns on the short ends and 17 columns on the long sides. This 8 × 17 arrangement is standard.' This 8 × 17 arrangement is standard.'."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "858f5e0b-e44b-4410-90aa-d921a7e864aa",
+      "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-001-05-core-concept--757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+      "title": "lea-hist-001-05-core-concept",
+      "baseline_hash": "sha256:f4e0f90c8d29727701de8726a810a383acea360dd634639180e2c05d369230cc",
+      "baseline": {
+        "question_id": "858f5e0b-e44b-4410-90aa-d921a7e864aa",
+        "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+        "topic_id": "a0124521-5f62-4bfe-bf92-8d5baf24d32a",
+        "text": "The Parthenon, built on the Acropolis at Athens between 447–432 BCE, was designed by which two architects?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Libon and Kallikrates"
+          },
+          {
+            "id": "b",
+            "text": "Iktinos and Kallikrates"
+          },
+          {
+            "id": "c",
+            "text": "Phidias and Polyclitus"
+          },
+          {
+            "id": "d",
+            "text": "Hippodamus and Polyclitus"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Libon designed the Temple of Zeus at Olympia, not the Parthenon.",
+          "c": "Phidias oversaw the sculpture program, not the architectural design; Polyclitus designed the Tholos at Epidaurus.",
+          "d": "Hippodamus designed the city of Miletus; Polyclitus designed the Tholos at Epidaurus.",
+          "correct": "The Parthenon (Temple of Athena Parthenos): Built on the Acropolis at Athens between 447–432 BCE under the direction of the general Pericles, designed by Iktinos and Kallikrates, with sculpture overseen by Phidias.'",
+          "takeaway": "The article states: 'The Parthenon (Temple of Athena Parthenos): Built on the Acropolis at Athens between 447–432 BCE under the direction of the general Pericles, designed by Iktinos and Kallikrates, with sculpture overseen by Phidias.'."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "remember",
+        "application_context": "recall",
+        "practice_context": [
+          "ID"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-HIST-001-05-001",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:23.525262+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:f4e0f90c8d29727701de8726a810a383acea360dd634639180e2c05d369230cc"
+      },
+      "proposed": {
+        "explanation": "Libon designed the Temple of Zeus at Olympia, not the Parthenon. Phidias oversaw the sculpture program, not the architectural design; Polyclitus designed the Tholos at Epidaurus. Hippodamus designed the city of Miletus; Polyclitus designed the Tholos at Epidaurus. The Parthenon (Temple of Athena Parthenos): Built on the Acropolis at Athens between 447–432 BCE under the direction of the general Pericles, designed by Iktinos and Kallikrates, with sculpture overseen by Phidias.' The article states: 'The Parthenon (Temple of Athena Parthenos): Built on the Acropolis at Athens between 447–432 BCE under the direction of the general Pericles, designed by Iktinos and Kallikrates, with sculpture overseen by Phidias.'."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "e6986094-7029-4024-97c4-406cfd08c254",
+      "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-001-05-core-concept--757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+      "title": "lea-hist-001-05-core-concept",
+      "baseline_hash": "sha256:9ff2a501efd244f25fff65f0b583d2649fb005d3911adf943185b372cf276d0a",
+      "baseline": {
+        "question_id": "e6986094-7029-4024-97c4-406cfd08c254",
+        "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+        "topic_id": "a0124521-5f62-4bfe-bf92-8d5baf24d32a",
+        "text": "A Greek column capital features two spiraling scrolls (volutes) and a base, and the entablature above includes a continuous frieze often sculpted with narrative scenes. Which order does this describe?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Doric order"
+          },
+          {
+            "id": "b",
+            "text": "Ionic order"
+          },
+          {
+            "id": "c",
+            "text": "Corinthian order"
+          },
+          {
+            "id": "d",
+            "text": "Tuscan order"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "The Doric order has a simple capital without volutes and a triglyph-metope entablature, not a continuous frieze.",
+          "c": "The Corinthian order features acanthus leaves and other scrollwork, not just volutes.",
+          "d": "The Tuscan order is a Roman order, not a Greek order.",
+          "correct": "The Ionic order: 'An Ionic column is 8–10 times its diameter in height, with a base (unlike Doric) and a capital featuring two spiraling scrolls (volutes). The entablature is simpler: a continuous frieze (often sculpted) runs above the columns.'",
+          "takeaway": "The entablature is simpler: a continuous frieze (often sculpted) runs above the columns.'."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "apply",
+        "application_context": "recall",
+        "practice_context": [
+          "DESC"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-HIST-001-05-005",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:23.525262+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:9ff2a501efd244f25fff65f0b583d2649fb005d3911adf943185b372cf276d0a"
+      },
+      "proposed": {
+        "explanation": "The Doric order has a simple capital without volutes and a triglyph-metope entablature, not a continuous frieze. The Corinthian order features acanthus leaves and other scrollwork, not just volutes. The Tuscan order is a Roman order, not a Greek order. The Ionic order: 'An Ionic column is 8–10 times its diameter in height, with a base (unlike Doric) and a capital featuring two spiraling scrolls (volutes). The entablature is simpler: a continuous frieze (often sculpted) runs above the columns.' The entablature is simpler: a continuous frieze (often sculpted) runs above the columns.'."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    }
+  ]
+}

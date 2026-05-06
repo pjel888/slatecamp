@@ -1,5 +1,12 @@
 # History of Architecture — Overview & Study Strategy
 
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **History of Architecture — Overview & Study Strategy** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
+
 <SubjectSnapshot items='[{"label":"PRC Area","value":"Area A"},{"label":"Weight within Area A","value":"35% (heaviest single subject in the area)"},{"label":"Geographic Scope","value":"11 regional/cultural traditions"},{"label":"Chronological Span","value":"Prehistoric era to 21st century"}]' />
 Extracted summary:
 - Props: items="[{"label":"PRC Area","value":"Area A"},{"label":"Weight within Area A","value":"35% (heaviest single subject in the area)"},{"label":"Geographic Scope","value":"11 regional/cultural traditions"},{"label":"Chronological Span","value":"Prehistoric era to 21st century"}]"

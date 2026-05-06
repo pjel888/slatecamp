@@ -1,3 +1,3 @@
 # Questions Dry-Run Diff
 
-No real question edits are publish-ready. Question output is classification/quarantine only.
+Target rows: 0. No validated real question edit payloads exist for this run.

@@ -1,5 +1,13 @@
 # Mies van der Rohe
 
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Mies van der Rohe** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
+
+
 ## Learning Goal
 
 <Tip>Focus on the architect's defining philosophy and key built works. The LEA frequently tests the relationship between an architect's theoretical principles and their physical execution in specific buildings.</Tip>

@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Prac Svc 014 Construction Management Services Scope And Professional Authority** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## Construction Management Services: Scope and Professional Authority
 ## Learning Goal
 After reading this article, you should understand the key concepts tested in the LEA for this topic, including relevant code provisions, dimensional standards, and common exam applications.

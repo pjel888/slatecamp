@@ -1,32 +1,54 @@
-# Final Content Production Report
+# Current Task Handoff — Question Remediation Autopilot
 
-Status: LOCAL_OUTPUTS_READY_REMOTE_PUBLISH_BLOCKED_CREDENTIALS_MISSING
+Updated: 2026-05-06T12:22:37.124952Z
 
-Articles processed: 567
-Articles safely changed locally in broad pass: 564, but held from publish after reviewer reconciliation risk.
-Articles consolidated as publish-ready: 3
-Articles published: 0
-Articles quarantined/held from publish: 564
+## Status
 
-Questions processed: 7159
-Questions improved with real edit payloads: 0
-Questions published: 0
-Questions quarantined for source/review: 3478
-Questions verified no-op only: 3681
-Answer-key changes: 0
+Article pipeline remains complete: 562 published, 5 quarantined.
 
-Agents used:
-- Claude/Kimi senior rubric generation via delegate_task
-- Subagent article publish-safety review
-- Subagent question risk-classification review
-- Command Code rubric review attempted
+Question remediation Batch 009 completed locally but remote publishing is blocked because Supabase environment credentials are missing in this session.
 
-Validation:
-- content-audit bundle validation: PASS, 567 bundles, blockers=0, warnings=0
-- Supabase dry-run safe-check for first smoke article: PASS, blockers=0
+Remote-published/improved questions through Batch 008: 72
+Batch 009 local publish candidates pending remote apply: 5
+Question quarantines in final register: 158
+Answer-key changes published: 0
+Option changes published: 0
+Remote verification failures: 0
 
-Remote publish status:
-- Not performed. Supabase URL/service-role credentials are absent in environment.
+## Batch 009
 
-Resume requirement:
-Set approved Supabase content credentials, then run exact backup and dry-run diff for the 3 article IDs in publish-ready-articles.generated.json before any apply.
+Selected: 25
+Local publish candidates after review: 5
+Quarantined after review: 20
+Remote publish: BLOCKED — missing SUPABASE_URL, NEXT_PUBLIC_SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, SUPABASE_SERVICE_KEY
+
+## Validation status
+
+Preflight validations passed before selector/batch work:
+- bun run type-check
+- bun run lint (10 existing warnings, 0 errors)
+- bun run content-audit:validate
+- validate-question-improvement-output.ts
+- validate-expanded-question-improvement.ts
+- git diff --check
+- scoped secret scan clean
+
+Batch 009 narrowed verifier passed:
+- bun scripts/content-audit/verify-question-batch.ts question-batch-009
+
+## Current selector notes
+
+`select-question-remediation-batch.ts` is now strict-v3 and gates high-risk legal/code/professional-practice/dimensional items on item-level official source evidence rather than generic `code_citation`.
+
+## Next exact resume step
+
+1. Restore/export Supabase write credentials safely into the shell without printing values:
+   - SUPABASE_URL or NEXT_PUBLIC_SUPABASE_URL
+   - SUPABASE_SERVICE_ROLE_KEY or SUPABASE_SERVICE_KEY
+2. Run remote backup/dry-run/apply/verify for Batch 009 local candidates:
+   - `.ai/20_content_publish/publish-ready-questions-batch-009.generated.json`
+3. Commit after remote verification with message:
+   - `Publish verified SlateCamp question batch 009`
+4. Continue Batch 010 with strict-v3 selector.
+
+Stop condition reached: missing Supabase write credentials.

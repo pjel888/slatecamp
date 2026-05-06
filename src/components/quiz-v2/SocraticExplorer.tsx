@@ -207,7 +207,7 @@ export const SocraticExplorer = ({
         aria-modal="true"
         className={cn(
           'fixed right-0 top-0 bottom-0 z-50 w-full max-w-md',
-          'bg-card border-l border-border shadow-lg',
+          'bg-card shadow-modal',
           'flex flex-col',
           'animate-in slide-in-from-right duration-200 ease-out',
         )}

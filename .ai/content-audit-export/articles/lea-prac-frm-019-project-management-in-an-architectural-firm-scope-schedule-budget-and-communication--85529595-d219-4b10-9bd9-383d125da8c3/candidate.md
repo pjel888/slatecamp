@@ -1,3 +1,10 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Lea Prac Frm 019 Project Management In An Architectural Firm Scope Schedule Budget And Communication Control** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
 ## Project Management in an Architectural Firm—Scope, Schedule, Budget, and Communication Control
 
 Project management is the discipline of planning, coordinating, and controlling project variables—scope, time, cost, and quality—to deliver projects successfully. Architects who manage projects well earn client loyalty, maintain profitability, and build reputation. Poor project management leads to cost overruns, missed deadlines, scope disputes, and professional liability. This article addresses project management practices specific to architectural service delivery in the Philippines, governed by Republic Act No. 9266 and the Standards of Professional Practice.

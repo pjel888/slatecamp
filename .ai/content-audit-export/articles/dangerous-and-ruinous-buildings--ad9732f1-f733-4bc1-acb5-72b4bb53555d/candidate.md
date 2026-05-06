@@ -1,15 +1,12 @@
 # Dangerous and Ruinous Buildings
-## Learning Goal
-After reading this article, you should be able to:
 
-Apply the legal framework for dangerous and ruinous buildings under PD 1096 Sec. 214-216: identify the Building Official's authority to order demolition, repair, or vacation; distinguish dangerous from ruinous conditions; and explain the property owner's rights to notice, hearing, and contest before enforcement action.
 
-**Module Focus:** PD 1096 National Building Code of the Philippines — Rule II, Sections 214–216 (2004 Revised IRR) + Abatement Procedure
-**LEA Area:** Building Laws, Codes & Ethics / Environmental Planning & Community Architecture
-**Difficulty:** High — Legal Reasoning + Specific Percentages + Multi-Category Classification
-**Spaced Repetition:** Return in 3 days to recite all six defect categories and their sub-items. Return in 7 days to recall the four specific percentage thresholds without notes. Return in 14 days to reconstruct the abatement procedure in sequence.
+## Board Exam Quick Check
 
----
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Dangerous and Ruinous Buildings** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
+
 
 ## The Real-World Hook
 

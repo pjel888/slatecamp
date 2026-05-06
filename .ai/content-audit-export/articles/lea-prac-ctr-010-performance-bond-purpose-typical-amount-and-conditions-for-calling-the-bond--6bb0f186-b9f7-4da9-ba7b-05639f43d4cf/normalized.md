@@ -1,3 +1,10 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Lea Prac Ctr 010 Performance Bond Purpose Typical Amount And Conditions For Calling The Bond** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
 ## Performance Bond — Purpose, Typical Amount, and Conditions for Calling the Bond
 
 ## Learning Goal

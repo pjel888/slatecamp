@@ -1,3 +1,10 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Lea Prac Frm 011 Government Architects Dpwh Nha Dhsud And The In House Design Function** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
 ## Government Architects—DPWH, NHA, DHSUD, and the In-House Design Function
 
 The Philippine government maintains its own architectural teams within key agencies: the Department of Public Works and Highways (DPWH), the National Housing Authority (NHA), and the Department of Human Settlements and Urban Development (DHSUD). These in-house design functions serve public infrastructure, housing, and urban development projects that shape national development priorities.

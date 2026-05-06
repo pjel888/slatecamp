@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Theo 007 13 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 <Callout>
 Vernacular architecture—buildings designed and built by communities without formally trained architects—embodies accumulated climate-responsive knowledge, cultural practices, and material wisdom. The LEA tests your understanding that vernacular is not "primitive" but is a sophisticated, rational response to environmental and cultural constraints. You must master Bernard Rudofsky's theoretical framework, understand Philippine examples (bahay kubo, bahay na bato), and recognize how vernacular principles inform contemporary sustainable design.

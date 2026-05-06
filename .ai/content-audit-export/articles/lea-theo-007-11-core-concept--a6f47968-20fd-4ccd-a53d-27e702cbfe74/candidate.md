@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Theo 007 11 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 <Callout>
 Minimalism is not mere simplicity or absence; it is a **rigorous disciplinary framework** where every element is justified through essential function or philosophical necessity. The LEA tests whether you understand the theoretical distinction between minimalism (restraint as positive principle) and reductivism (elimination as default). You must master the work of Tadao Ando, John Pawson, and SANAA, and understand how minimalism emerged as both aesthetic and ethical stance.

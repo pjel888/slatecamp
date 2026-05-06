@@ -1,6 +1,7 @@
 'use client'
 
-import { useState, useCallback, lazy, Suspense, useRef } from 'react'
+import { useState, useCallback, lazy, Suspense, useRef, useEffect } from 'react'
+import { createPortal } from 'react-dom'
 import { Brain } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { Button } from '@/components/ui/button'
@@ -21,7 +22,12 @@ interface WikiQuizButtonProps {
 export const WikiQuizButton = ({ nodeId, topicName, articleSlug, articleTitle, articleId }: WikiQuizButtonProps) => {
   const [open, setOpen] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
+  const [mounted, setMounted] = useState(false)
   const buttonRef = useRef<HTMLButtonElement>(null)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
 
   const handleOpen = useCallback(() => {
     if (isLoading || open) return
@@ -42,6 +48,33 @@ export const WikiQuizButton = ({ nodeId, topicName, articleSlug, articleTitle, a
   // If no valid nodeId, button should not be rendered (parent handles this)
   if (!nodeId) return null
 
+  const fallback = (
+    <div className="fixed inset-0 z-[1000] flex items-center justify-center bg-black/50 backdrop-blur-[3px]">
+      <div className="relative z-[1001] w-full max-w-lg rounded-xl bg-white p-6 shadow-2xl">
+        <div className="animate-pulse space-y-4">
+          <div className="h-4 w-1/3 rounded bg-slate-200" />
+          <div className="h-8 w-3/4 rounded bg-slate-200" />
+          <div className="h-4 w-full rounded bg-slate-200" />
+          <div className="h-4 w-full rounded bg-slate-200" />
+          <div className="h-4 w-2/3 rounded bg-slate-200" />
+        </div>
+      </div>
+    </div>
+  )
+
+  const reviewModal = open ? (
+    <Suspense fallback={fallback}>
+      <WikiQuizModal
+        nodeId={nodeId}
+        topicName={topicName}
+        articleSlug={articleSlug}
+        articleTitle={articleTitle}
+        articleId={articleId}
+        onClose={handleClose}
+      />
+    </Suspense>
+  ) : null
+
   return (
     <>
       <Button
@@ -59,32 +92,9 @@ export const WikiQuizButton = ({ nodeId, topicName, articleSlug, articleTitle, a
         {isLoading ? 'Opening review…' : 'Review this Topic'}
       </Button>
 
-      {open && (
-        <Suspense
-          fallback={
-            <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
-              <div className="w-full max-w-lg rounded-xl bg-white p-6 shadow-2xl">
-                <div className="animate-pulse space-y-4">
-                  <div className="h-4 w-1/3 rounded bg-slate-200" />
-                  <div className="h-8 w-3/4 rounded bg-slate-200" />
-                  <div className="h-4 w-full rounded bg-slate-200" />
-                  <div className="h-4 w-full rounded bg-slate-200" />
-                  <div className="h-4 w-2/3 rounded bg-slate-200" />
-                </div>
-              </div>
-            </div>
-          }
-        >
-          <WikiQuizModal
-            nodeId={nodeId}
-            topicName={topicName}
-            articleSlug={articleSlug}
-            articleTitle={articleTitle}
-            articleId={articleId}
-            onClose={handleClose}
-          />
-        </Suspense>
-      )}
+      {mounted && typeof document !== 'undefined' && reviewModal
+        ? createPortal(reviewModal, document.body)
+        : reviewModal}
     </>
   )
 }

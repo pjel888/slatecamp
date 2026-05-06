@@ -13,7 +13,7 @@ const SharedPageLayout = ({
   return (
     <div className='relative flex h-full min-h-full w-full'>
       {showDottedGrid && <DottedGridOverlay />}
-      <div className='relative z-10 flex h-full min-h-0 w-full flex-1 flex-col p-2 xl:p-3'>
+      <div className='relative z-10 flex h-full min-h-0 w-full flex-1 flex-col p-2'>
         <div className='flex min-h-0 flex-1 flex-col'>{children}</div>
       </div>
     </div>

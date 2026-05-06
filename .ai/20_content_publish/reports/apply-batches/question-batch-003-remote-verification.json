@@ -1,0 +1,142 @@
+{
+  "batch": "question-batch-003",
+  "verified": [
+    {
+      "question_id": "d2dbe4cb-796a-4ab4-a782-be92df6de9ff",
+      "updated_rows_count": 1,
+      "pushed": true,
+      "updated_at_after": "2026-05-06T11:20:03.985734+00:00",
+      "verified": true
+    },
+    {
+      "question_id": "120d2011-df73-43de-9c07-3c0552f09bb2",
+      "updated_rows_count": 1,
+      "pushed": true,
+      "updated_at_after": "2026-05-06T11:20:05.182944+00:00",
+      "verified": true
+    },
+    {
+      "question_id": "61efef1f-a3d6-4fcd-ae72-e50ba5f7e141",
+      "updated_rows_count": 1,
+      "pushed": true,
+      "updated_at_after": "2026-05-06T11:20:06.561089+00:00",
+      "verified": true
+    },
+    {
+      "question_id": "4249dc10-c04a-44ac-a017-5b296dbb4dc7",
+      "updated_rows_count": 1,
+      "pushed": true,
+      "updated_at_after": "2026-05-06T11:20:07.246362+00:00",
+      "verified": true
+    },
+    {
+      "question_id": "accc9c86-9dbd-43bf-b0d4-9eeabe5fcba8",
+      "updated_rows_count": 1,
+      "pushed": true,
+      "updated_at_after": "2026-05-06T11:20:07.949555+00:00",
+      "verified": true
+    }
+  ],
+  "raw_reports": [
+    {
+      "question_id": "d2dbe4cb-796a-4ab4-a782-be92df6de9ff",
+      "attempted_at": "2026-05-06T11:20:03.141Z",
+      "dry_run": false,
+      "apply": true,
+      "pushed": true,
+      "blockers": [],
+      "warnings": [],
+      "updated_rows_count": 1,
+      "article_id": "33c219fe-51a6-487f-81d2-0d4af2968274",
+      "article_folder": "lea-theo-005-02-core-concept--33c219fe-51a6-487f-81d2-0d4af2968274",
+      "exported_hash": "sha256:57802628903d14bdb97964031be56122002645ed6a582149a74c3e7922e72fc3",
+      "proposed_field_names": [
+        "explanation"
+      ],
+      "remote_hash_before": "sha256:57802628903d14bdb97964031be56122002645ed6a582149a74c3e7922e72fc3",
+      "expected_baseline_hash": "sha256:57802628903d14bdb97964031be56122002645ed6a582149a74c3e7922e72fc3",
+      "stale_check_passed": true,
+      "updated_at_after": "2026-05-06T11:20:03.985734+00:00"
+    },
+    {
+      "question_id": "120d2011-df73-43de-9c07-3c0552f09bb2",
+      "attempted_at": "2026-05-06T11:20:04.687Z",
+      "dry_run": false,
+      "apply": true,
+      "pushed": true,
+      "blockers": [],
+      "warnings": [],
+      "updated_rows_count": 1,
+      "article_id": "33c219fe-51a6-487f-81d2-0d4af2968274",
+      "article_folder": "lea-theo-005-02-core-concept--33c219fe-51a6-487f-81d2-0d4af2968274",
+      "exported_hash": "sha256:18f85427ab16e1061ee02a835afce424c8aab069d2f35bdca61216f64dd8d776",
+      "proposed_field_names": [
+        "explanation"
+      ],
+      "remote_hash_before": "sha256:18f85427ab16e1061ee02a835afce424c8aab069d2f35bdca61216f64dd8d776",
+      "expected_baseline_hash": "sha256:18f85427ab16e1061ee02a835afce424c8aab069d2f35bdca61216f64dd8d776",
+      "stale_check_passed": true,
+      "updated_at_after": "2026-05-06T11:20:05.182944+00:00"
+    },
+    {
+      "question_id": "61efef1f-a3d6-4fcd-ae72-e50ba5f7e141",
+      "attempted_at": "2026-05-06T11:20:05.885Z",
+      "dry_run": false,
+      "apply": true,
+      "pushed": true,
+      "blockers": [],
+      "warnings": [],
+      "updated_rows_count": 1,
+      "article_id": "33c219fe-51a6-487f-81d2-0d4af2968274",
+      "article_folder": "lea-theo-005-02-core-concept--33c219fe-51a6-487f-81d2-0d4af2968274",
+      "exported_hash": "sha256:ac50a9dfc3b9d563633b2167de6bf939fb708ac51f15c2208f0c35aeb524bd49",
+      "proposed_field_names": [
+        "explanation"
+      ],
+      "remote_hash_before": "sha256:ac50a9dfc3b9d563633b2167de6bf939fb708ac51f15c2208f0c35aeb524bd49",
+      "expected_baseline_hash": "sha256:ac50a9dfc3b9d563633b2167de6bf939fb708ac51f15c2208f0c35aeb524bd49",
+      "stale_check_passed": true,
+      "updated_at_after": "2026-05-06T11:20:06.561089+00:00"
+    },
+    {
+      "question_id": "4249dc10-c04a-44ac-a017-5b296dbb4dc7",
+      "attempted_at": "2026-05-06T11:20:06.989Z",
+      "dry_run": false,
+      "apply": true,
+      "pushed": true,
+      "blockers": [],
+      "warnings": [],
+      "updated_rows_count": 1,
+      "article_id": "33c219fe-51a6-487f-81d2-0d4af2968274",
+      "article_folder": "lea-theo-005-02-core-concept--33c219fe-51a6-487f-81d2-0d4af2968274",
+      "exported_hash": "sha256:7d872be1e7f865365fec188f9df3f240cc81065ab0692ced9075f176ff8bc595",
+      "proposed_field_names": [
+        "explanation"
+      ],
+      "remote_hash_before": "sha256:7d872be1e7f865365fec188f9df3f240cc81065ab0692ced9075f176ff8bc595",
+      "expected_baseline_hash": "sha256:7d872be1e7f865365fec188f9df3f240cc81065ab0692ced9075f176ff8bc595",
+      "stale_check_passed": true,
+      "updated_at_after": "2026-05-06T11:20:07.246362+00:00"
+    },
+    {
+      "question_id": "accc9c86-9dbd-43bf-b0d4-9eeabe5fcba8",
+      "attempted_at": "2026-05-06T11:20:07.704Z",
+      "dry_run": false,
+      "apply": true,
+      "pushed": true,
+      "blockers": [],
+      "warnings": [],
+      "updated_rows_count": 1,
+      "article_id": "33c219fe-51a6-487f-81d2-0d4af2968274",
+      "article_folder": "lea-theo-005-02-core-concept--33c219fe-51a6-487f-81d2-0d4af2968274",
+      "exported_hash": "sha256:25e21c7009b111b2ee14f08c43897f8663ae363ff16e88790814869083489a2a",
+      "proposed_field_names": [
+        "explanation"
+      ],
+      "remote_hash_before": "sha256:25e21c7009b111b2ee14f08c43897f8663ae363ff16e88790814869083489a2a",
+      "expected_baseline_hash": "sha256:25e21c7009b111b2ee14f08c43897f8663ae363ff16e88790814869083489a2a",
+      "stale_check_passed": true,
+      "updated_at_after": "2026-05-06T11:20:07.949555+00:00"
+    }
+  ]
+}

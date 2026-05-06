@@ -1,11 +1,12 @@
 # Location on Property and Exterior Walls
 
-**Module Focus:** Rule VII, Section 704 — PD 1096 (National Building Code of the Philippines)
-**LEA Area:** Building Technology / Architectural Structures & Construction
-**Difficulty:** Intermediate–Advanced
-**Spaced Repetition:** Return in 3 days to re-answer the Active Recall questions without looking at the answers.
 
----
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Location on Property and Exterior Walls** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
+
 
 ## Learning Goal
 

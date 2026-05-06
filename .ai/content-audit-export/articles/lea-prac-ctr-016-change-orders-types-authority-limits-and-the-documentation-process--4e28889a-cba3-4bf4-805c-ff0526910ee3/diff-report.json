@@ -6,7 +6,7 @@
   "new_hash": "sha256:798f4f071907736d438d32fad9c2d9998b97f0cacd37e3b66e9c3ca680ea62bb",
   "original_hash": "sha256:798f4f071907736d438d32fad9c2d9998b97f0cacd37e3b66e9c3ca680ea62bb",
   "normalized_hash": "sha256:219aa5df8398b2263d91c6a632a03aaddab5b668a8bf31a753f5f49829ed01ab",
-  "candidate_hash": "sha256:798f4f071907736d438d32fad9c2d9998b97f0cacd37e3b66e9c3ca680ea62bb",
+  "candidate_hash": "sha256:3812847fcba18c160b1f3fffac2ca839504d9a5547d177c220ec2499eba12e77",
   "changed": false,
   "changed_line_count": 0,
   "inserted_line_count": 0,
@@ -34,5 +34,8 @@
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Locally safe after recomposition; remote stale check still required before push.",
+  "candidate_hash_sha256": "sha256:3812847fcba18c160b1f3fffac2ca839504d9a5547d177c220ec2499eba12e77",
+  "normalized_content_hash": "sha256:e6b8f759499d73be225de632265314c4d4eaed885f5ebe3c6ad0603606932ef8",
+  "normalized_content_hash_sha256": "sha256:e6b8f759499d73be225de632265314c4d4eaed885f5ebe3c6ad0603606932ef8"
 }

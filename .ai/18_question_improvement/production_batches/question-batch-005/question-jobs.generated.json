@@ -1,0 +1,1572 @@
+{
+  "generated_at": "2026-05-06T11:36:17.481Z",
+  "batch": "question-batch-005",
+  "jobs": [
+    {
+      "question_id": "afb1c9d5-6350-46d2-9bc4-72504a6bf400",
+      "article_id": "5e99dd5d-1394-46bc-998e-8915e2595b0b",
+      "article_dir": ".ai/content-audit-export/articles/lea-prac-ctr-018-core-concept--5e99dd5d-1394-46bc-998e-8915e2595b0b",
+      "title": "lea-prac-ctr-018-core-concept",
+      "baseline_hash": "sha256:91ee36a0b43b2fa98f853099b1c033765e97c7e7ba7f4968811266564a367590",
+      "baseline": {
+        "question_id": "afb1c9d5-6350-46d2-9bc4-72504a6bf400",
+        "article_id": "5e99dd5d-1394-46bc-998e-8915e2595b0b",
+        "topic_id": "eafde61a-27d1-4d8b-81f0-8e45e5848022",
+        "text": "The architect's punch list contains 47 items, categorized by trade and location. The contractor completes items 1–46 properly, but item 47 (testing and balancing of HVAC systems) appears to have been skipped entirely. The contractor claims the item is the MEP engineer's responsibility, not the contractor's. Can the architect issue Final Completion certificate without this item being completed?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Yes, because 46 of 47 items are complete, which constitutes substantial performance, allowing for finalization"
+          },
+          {
+            "id": "b",
+            "text": "No, the architect cannot issue Final Completion if any punch list item is incomplete, regardless of who is responsible for it"
+          },
+          {
+            "id": "c",
+            "text": "Only if the architect documents the MEP engineer's agreement to complete the item after occupancy, ensuring accountability"
+          },
+          {
+            "id": "d",
+            "text": "Yes, because MEP testing is a specialized service outside contractor scope, typically handled separately"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Incorrect. The architect's Final Completion certification is issued only after verification that all punch list items are properly completed. If items were not completed when the certificate was issued, the architect failed to properly verify before certification.",
+          "c": "Incorrect. Deferring completion to after occupancy contradicts Final Completion definition and extends uncertainty about contractor obligations.",
+          "d": "Incorrect. If the MEP testing is listed on the punch list, it is part of the architect-defined remaining work and must be completed before Final Completion, regardless of who performs it.",
+          "correct": "The architect cannot issue Final Completion certificate if any punch list item is incomplete or uncorrected. Final Completion signifies that all work is done and acceptable. If one item remains undone, the project is not finally complete. The architect must address who is responsible for the incomplete item (contractor, MEP engineer, or other) but cannot issue Final Completion without resolution.",
+          "takeaway": "The architect cannot issue Final Completion if any punch list item is incomplete—all items must be resolved regardless of who is responsible for completion."
+        },
+        "explanation": null,
+        "code_citation": "UAP Doc 301",
+        "bloom_level": "analyze",
+        "application_context": "client_scenario",
+        "practice_context": [],
+        "difficulty": 0.9,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-PRAC-CTR-018-009",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:47.923634+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:91ee36a0b43b2fa98f853099b1c033765e97c7e7ba7f4968811266564a367590"
+      },
+      "proposed": {
+        "explanation": "Incorrect. The architect's Final Completion certification is issued only after verification that all punch list items are properly completed. If items were not completed when the certificate was issued, the architect failed to properly verify before certification. Incorrect. Deferring completion to after occupancy contradicts Final Completion definition and extends uncertainty about contractor obligations. Incorrect. If the MEP testing is listed on the punch list, it is part of the architect-defined remaining work and must be completed before Final Completion, regardless of who performs it. The architect cannot issue Final Completion certificate if any punch list item is incomplete or uncorrected. Final Completion signifies that all work is done and acceptable. If one item remains undone, the project is not finally complete. The architect must address who is responsible for the incomplete item (contractor, MEP engineer, or other) but cannot issue Final Completion without resolution. The architect cannot issue Final Completion if any punch list item is incomplete—all items must be resolved regardless of who is responsible for completion."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "7535c69b-0458-4bf1-959e-b59e4d075151",
+      "article_id": "5e99dd5d-1394-46bc-998e-8915e2595b0b",
+      "article_dir": ".ai/content-audit-export/articles/lea-prac-ctr-018-core-concept--5e99dd5d-1394-46bc-998e-8915e2595b0b",
+      "title": "lea-prac-ctr-018-core-concept",
+      "baseline_hash": "sha256:4749d6e17b3e4c8364fc7169e7a4fe8c2ed40cfaa90ddae96feef94186314a35",
+      "baseline": {
+        "question_id": "7535c69b-0458-4bf1-959e-b59e4d075151",
+        "article_id": "5e99dd5d-1394-46bc-998e-8915e2595b0b",
+        "topic_id": "eafde61a-27d1-4d8b-81f0-8e45e5848022",
+        "text": "A contractor completes all work except for items on the architect's punch list. The contractor states that completing the punch list items will require additional labor costs and requests a change order to cover these costs. Can the architect grant this change order for punch list work?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Yes, if the punch list items are more extensive than originally expected, requiring significant additional resources"
+          },
+          {
+            "id": "b",
+            "text": "No, punch list items are part of the original contract scope—the contractor must complete them at no additional cost"
+          },
+          {
+            "id": "c",
+            "text": "Yes, if the owner agrees to pay for the additional work, provided that the agreement is documented in a formal contract amendment"
+          },
+          {
+            "id": "d",
+            "text": "Only if the architect agrees in writing that the items are beyond the contractor's original scope and the owner consents to the change"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Incorrect. Delivering the punch list 7 days after Substantial Completion certification delays contractor notice and creates ambiguity about the official punch list. The punch list must be delivered contemporaneously with Substantial Completion certification to provide prompt notice.",
+          "c": "Incorrect. Owner consent does not change the contractor's binding obligation to complete original scope work. The contractor cannot demand additional payment for original contract obligations.",
+          "d": "Incorrect. The architect does not have authority to excuse punch list completion or grant change orders for original scope work. The punch list is binding on the contractor.",
+          "correct": "Punch list items are incomplete work from the original contract scope, not new or additional work. The contractor's obligation is to complete all contract work before Substantial Completion. Items identified on the punch list are work the contractor agreed to complete under the original contract and must be finished without additional compensation.",
+          "takeaway": "Punch list items are original contract scope work—the contractor must complete them at no additional cost and without change orders."
+        },
+        "explanation": null,
+        "code_citation": "UAP Doc 301",
+        "bloom_level": "understand",
+        "application_context": "client_scenario",
+        "practice_context": [],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-PRAC-CTR-018-003",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:47.923634+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:4749d6e17b3e4c8364fc7169e7a4fe8c2ed40cfaa90ddae96feef94186314a35"
+      },
+      "proposed": {
+        "explanation": "Incorrect. Delivering the punch list 7 days after Substantial Completion certification delays contractor notice and creates ambiguity about the official punch list. The punch list must be delivered contemporaneously with Substantial Completion certification to provide prompt notice. Incorrect. Owner consent does not change the contractor's binding obligation to complete original scope work. The contractor cannot demand additional payment for original contract obligations. Incorrect. The architect does not have authority to excuse punch list completion or grant change orders for original scope work. The punch list is binding on the contractor. Punch list items are incomplete work from the original contract scope, not new or additional work. The contractor's obligation is to complete all contract work before Substantial Completion. Items identified on the punch list are work the contractor agreed to complete under the original contract and must be finished without additional compensation. Punch list items are original contract scope work—the contractor must complete them at no additional cost and without change orders."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "454575e9-2358-4cc9-8053-99ed9eb9b830",
+      "article_id": "5e99dd5d-1394-46bc-998e-8915e2595b0b",
+      "article_dir": ".ai/content-audit-export/articles/lea-prac-ctr-018-core-concept--5e99dd5d-1394-46bc-998e-8915e2595b0b",
+      "title": "lea-prac-ctr-018-core-concept",
+      "baseline_hash": "sha256:d5296f89fae1214ec76dd19bd4834e2997cd1ba2230f7aaaccdf9847660692a9",
+      "baseline": {
+        "question_id": "454575e9-2358-4cc9-8053-99ed9eb9b830",
+        "article_id": "5e99dd5d-1394-46bc-998e-8915e2595b0b",
+        "topic_id": "eafde61a-27d1-4d8b-81f0-8e45e5848022",
+        "text": "The punch list specifies a 30-day deadline for the contractor to complete all items. On day 31, several items remain unfinished, and the contractor requests a 15-day extension. Can the architect grant the extension without formal change order or contract amendment?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Yes, architects routinely grant reasonable extension requests to maintain project relationships, especially when delays are minor and do not impact the overall project timeline"
+          },
+          {
+            "id": "b",
+            "text": "No, the architect may grant reasonable extensions in writing with owner consent, but must document the extension and enforce the revised deadline"
+          },
+          {
+            "id": "c",
+            "text": "Yes, without owner consent, if the contractor explains the delay reason and provides a detailed plan for completion within the extended period"
+          },
+          {
+            "id": "d",
+            "text": "No, the punch list deadline is absolute, and the contractor's only remedy for delay is to pay the owner damages, unless a formal amendment is agreed upon"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Incorrect. While architects may grant extensions in practice, informal extensions without documentation and owner consent create ambiguity about contractor obligations and delay enforcement.",
+          "c": "Incorrect. Owner consent is required because delay in punch list completion delays Final Completion and extends the Guarantee Bond period start date. The owner's interests are affected.",
+          "d": "Incorrect. While the deadline is binding, the architect has authority to grant reasonable extensions in writing. The contractor is not limited to paying damages; documented extension is the normal remedy.",
+          "correct": "The architect may grant reasonable extensions to punch list deadlines in writing with owner consent, but must document the new deadline and enforce it. Extensions are a practical construction management tool, but they must be formal (in writing), authorized (with owner approval), and enforced. An informal extension creates ambiguity about contractor obligations.",
+          "takeaway": "The architect may grant punch list extensions in writing with owner consent, but must document the revised deadline and enforce it—informal extensions create ambiguity about obligations."
+        },
+        "explanation": null,
+        "code_citation": "UAP Doc 301",
+        "bloom_level": "apply",
+        "application_context": "client_scenario",
+        "practice_context": [],
+        "difficulty": 0.7,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-PRAC-CTR-018-007",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:47.923634+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:d5296f89fae1214ec76dd19bd4834e2997cd1ba2230f7aaaccdf9847660692a9"
+      },
+      "proposed": {
+        "explanation": "Incorrect. While architects may grant extensions in practice, informal extensions without documentation and owner consent create ambiguity about contractor obligations and delay enforcement. Incorrect. Owner consent is required because delay in punch list completion delays Final Completion and extends the Guarantee Bond period start date. The owner's interests are affected. Incorrect. While the deadline is binding, the architect has authority to grant reasonable extensions in writing. The contractor is not limited to paying damages; documented extension is the normal remedy. The architect may grant reasonable extensions to punch list deadlines in writing with owner consent, but must document the new deadline and enforce it. Extensions are a practical construction management tool, but they must be formal (in writing), authorized (with owner approval), and enforced. An informal extension creates ambiguity about contractor obligations. The architect may grant punch list extensions in writing with owner consent, but must document the revised deadline and enforce it—informal extensions create ambiguity about obligations."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "801b6a9a-99be-47d5-ab33-d9f4d99c0adb",
+      "article_id": "5e99dd5d-1394-46bc-998e-8915e2595b0b",
+      "article_dir": ".ai/content-audit-export/articles/lea-prac-ctr-018-core-concept--5e99dd5d-1394-46bc-998e-8915e2595b0b",
+      "title": "lea-prac-ctr-018-core-concept",
+      "baseline_hash": "sha256:9b0e3cc77e581e9c62a2f4abe744f8af458e1728ddde640f1695afeed4291162",
+      "baseline": {
+        "question_id": "801b6a9a-99be-47d5-ab33-d9f4d99c0adb",
+        "article_id": "5e99dd5d-1394-46bc-998e-8915e2595b0b",
+        "topic_id": "eafde61a-27d1-4d8b-81f0-8e45e5848022",
+        "text": "The architect has just certified Substantial Completion and is preparing the punch list. When should the architect deliver the punch list to the contractor to establish clear notice of required work?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Within 7 days of Substantial Completion certification while items are fresh in the architect's inspection notes"
+          },
+          {
+            "id": "b",
+            "text": "At Final Completion, after all work is finished, as documentation of what was completed"
+          },
+          {
+            "id": "c",
+            "text": "Contemporaneously with Substantial Completion certification to give prompt contractor notice"
+          },
+          {
+            "id": "d",
+            "text": "Only if the contractor requests it in writing"
+          }
+        ],
+        "correct_option_id": "c",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Incorrect. Final Completion requires that all punch list items are completed, not merely most items. Substantial performance is insufficient; the architect cannot issue Final Completion with any item incomplete.",
+          "b": "Incorrect. Delivering the punch list after Final Completion is retrospective and provides no notice or opportunity for the contractor to plan work. This defeats the punch list's purpose as a management tool.",
+          "d": "Incorrect. The architect is obligated to prepare and deliver the punch list as part of professional supervision; it is not contingent on contractor request.",
+          "correct": "Best practice and professional standard require the architect to deliver the punch list contemporaneously (at the same time or immediately) with the Substantial Completion certification. This timing ensures the contractor has prompt, official notice of required work and a clear deadline to complete items before Final Completion.",
+          "takeaway": "The architect must deliver the punch list contemporaneously with Substantial Completion certification to provide prompt contractor notice of required work and establish a clear completion deadline."
+        },
+        "explanation": null,
+        "code_citation": "UAP Doc 301",
+        "bloom_level": "remember",
+        "application_context": "client_scenario",
+        "practice_context": [],
+        "difficulty": 0.3,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-PRAC-CTR-018-002",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:47.923634+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:9b0e3cc77e581e9c62a2f4abe744f8af458e1728ddde640f1695afeed4291162"
+      },
+      "proposed": {
+        "explanation": "Incorrect. Final Completion requires that all punch list items are completed, not merely most items. Substantial performance is insufficient; the architect cannot issue Final Completion with any item incomplete. Incorrect. Delivering the punch list after Final Completion is retrospective and provides no notice or opportunity for the contractor to plan work. This defeats the punch list's purpose as a management tool. Incorrect. The architect is obligated to prepare and deliver the punch list as part of professional supervision; it is not contingent on contractor request. Best practice and professional standard require the architect to deliver the punch list contemporaneously (at the same time or immediately) with the Substantial Completion certification. This timing ensures the contractor has prompt, official notice of required work and a clear deadline to complete items before Final Completion. The architect must deliver the punch list contemporaneously with Substantial Completion certification to provide prompt contractor notice of required work and establish a clear completion deadline."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "d1a2e253-2506-43a3-a2e5-03c8526600cf",
+      "article_id": "5e99dd5d-1394-46bc-998e-8915e2595b0b",
+      "article_dir": ".ai/content-audit-export/articles/lea-prac-ctr-018-core-concept--5e99dd5d-1394-46bc-998e-8915e2595b0b",
+      "title": "lea-prac-ctr-018-core-concept",
+      "baseline_hash": "sha256:12bfa8ca6b76ba8bf2a1afb980c0126c556ba784339486269ea6b81f79188728",
+      "baseline": {
+        "question_id": "d1a2e253-2506-43a3-a2e5-03c8526600cf",
+        "article_id": "5e99dd5d-1394-46bc-998e-8915e2595b0b",
+        "topic_id": "eafde61a-27d1-4d8b-81f0-8e45e5848022",
+        "text": "During the Substantial Completion inspection, the architect identifies the following items in the building: two door latches require adjustment, interior wall paint has one 2-square-meter unpainted patch, electrical outlet covers are missing in four locations, and the mechanical system requires complete reinstallation due to improper connection. Which item should NOT appear on the punch list?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Door latch adjustments, which are minor and typically addressed during final touch-ups"
+          },
+          {
+            "id": "b",
+            "text": "Interior wall paint patch, as it is a cosmetic issue that can be resolved post-completion"
+          },
+          {
+            "id": "c",
+            "text": "Electrical outlet cover installation, a standard safety requirement that must be completed"
+          },
+          {
+            "id": "d",
+            "text": "Complete mechanical system reinstallation"
+          }
+        ],
+        "correct_option_id": "d",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Incorrect. The architect's Final Completion certification is not an administrative formality; it is a professional representation with liability implications. The architect is responsible for proper inspection and verification.",
+          "b": "Paint touch-up is a standard punch list item—minor cosmetic work that does not affect occupancy or functionality.",
+          "c": "Outlet covers are typically punch list items—completing hardware and fixtures is minor work.",
+          "correct": "A punch list contains minor, incomplete work items consistent with Substantial Completion definition. A complete mechanical system reinstallation is a major defect suggesting the system was never properly completed and indicates Substantial Completion may have been certified prematurely. This is not punch list work; it is a substantial deficiency that questions whether occupancy should have been certified.",
+          "takeaway": "Punch list items are minor items remaining after Substantial Completion—complete system reinstallation is a major defect that should prevent Substantial Completion certification."
+        },
+        "explanation": null,
+        "code_citation": "UAP Doc 301",
+        "bloom_level": "remember",
+        "application_context": "client_scenario",
+        "practice_context": [],
+        "difficulty": 0.3,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-PRAC-CTR-018-001",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:47.923634+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:12bfa8ca6b76ba8bf2a1afb980c0126c556ba784339486269ea6b81f79188728"
+      },
+      "proposed": {
+        "explanation": "Incorrect. The architect's Final Completion certification is not an administrative formality; it is a professional representation with liability implications. The architect is responsible for proper inspection and verification. Paint touch-up is a standard punch list item—minor cosmetic work that does not affect occupancy or functionality. Outlet covers are typically punch list items—completing hardware and fixtures is minor work. A punch list contains minor, incomplete work items consistent with Substantial Completion definition. A complete mechanical system reinstallation is a major defect suggesting the system was never properly completed and indicates Substantial Completion may have been certified prematurely. This is not punch list work; it is a substantial deficiency that questions whether occupancy should have been certified. Punch list items are minor items remaining after Substantial Completion—complete system reinstallation is a major defect that should prevent Substantial Completion certification."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "d37851d7-dd68-480b-8783-1aa5ce3fbdc8",
+      "article_id": "5e99dd5d-1394-46bc-998e-8915e2595b0b",
+      "article_dir": ".ai/content-audit-export/articles/lea-prac-ctr-018-core-concept--5e99dd5d-1394-46bc-998e-8915e2595b0b",
+      "title": "lea-prac-ctr-018-core-concept",
+      "baseline_hash": "sha256:50fd8165658ddee9ad2c77a7a14efe9f05c7574f5aabecefc08441b334e69774",
+      "baseline": {
+        "question_id": "d37851d7-dd68-480b-8783-1aa5ce3fbdc8",
+        "article_id": "5e99dd5d-1394-46bc-998e-8915e2595b0b",
+        "topic_id": "eafde61a-27d1-4d8b-81f0-8e45e5848022",
+        "text": "The contractor has completed all punch list items to the architect's satisfaction. What must the architect do before issuing the Certificate of Final Completion?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Obtain the owner's written approval of the completed punch items, which ensures all parties are satisfied"
+          },
+          {
+            "id": "b",
+            "text": "Conduct a final inspection to verify that all punch list items are properly corrected and consistent with contract documents"
+          },
+          {
+            "id": "c",
+            "text": "Request the contractor's affidavit confirming all work is complete, which is a standard procedure"
+          },
+          {
+            "id": "d",
+            "text": "Forward the completed punch list to the PRBoA for final review and approval, which is not typically required"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Incorrect. Even if punch list items are more extensive than expected, they remain original contract scope work. The contractor cannot demand additional payment for original contract obligations, regardless of scope extent.",
+          "c": "Incorrect. Contractor affidavit is not a substitute for architect professional inspection and verification.",
+          "d": "Incorrect. PRBoA review is not required for punch list verification. The architect's professional responsibility and certification authority are sufficient.",
+          "correct": "The architect's professional obligation requires conducting a final inspection to verify that all punch list items have been properly corrected and comply with contract documents and original specifications. This inspection is the architect's verification step before issuing Final Completion certification.",
+          "takeaway": "Before issuing Certificate of Final Completion, the architect must conduct a final inspection to verify that all punch list items are properly corrected and comply with contract specifications."
+        },
+        "explanation": null,
+        "code_citation": "UAP Doc 301",
+        "bloom_level": "understand",
+        "application_context": "client_scenario",
+        "practice_context": [],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-PRAC-CTR-018-004",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:47.923634+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:50fd8165658ddee9ad2c77a7a14efe9f05c7574f5aabecefc08441b334e69774"
+      },
+      "proposed": {
+        "explanation": "Incorrect. Even if punch list items are more extensive than expected, they remain original contract scope work. The contractor cannot demand additional payment for original contract obligations, regardless of scope extent. Incorrect. Contractor affidavit is not a substitute for architect professional inspection and verification. Incorrect. PRBoA review is not required for punch list verification. The architect's professional responsibility and certification authority are sufficient. The architect's professional obligation requires conducting a final inspection to verify that all punch list items have been properly corrected and comply with contract documents and original specifications. This inspection is the architect's verification step before issuing Final Completion certification. Before issuing Certificate of Final Completion, the architect must conduct a final inspection to verify that all punch list items are properly corrected and comply with contract specifications."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "ebd969ea-b72f-4003-b914-5bf486f93ed2",
+      "article_id": "5e99dd5d-1394-46bc-998e-8915e2595b0b",
+      "article_dir": ".ai/content-audit-export/articles/lea-prac-ctr-018-core-concept--5e99dd5d-1394-46bc-998e-8915e2595b0b",
+      "title": "lea-prac-ctr-018-core-concept",
+      "baseline_hash": "sha256:9b4e8ac884dfb2701540cfb73f6e1cc7da9c979630001e66336feb9547c8e273",
+      "baseline": {
+        "question_id": "ebd969ea-b72f-4003-b914-5bf486f93ed2",
+        "article_id": "5e99dd5d-1394-46bc-998e-8915e2595b0b",
+        "topic_id": "eafde61a-27d1-4d8b-81f0-8e45e5848022",
+        "text": "After the architect issues the Certificate of Final Completion, the owner discovers that one punch list item—installation of window screens—was never actually completed. The contractor's response is that the screens were not installed because they appear to have been omitted from the drawings. Should the owner be able to hold the contractor liable for this omission?",
+        "options": [
+          {
+            "id": "a",
+            "text": "No, because the architect already issued Final Completion, and further claims are now barred, unless a latent defect is discovered within the warranty period"
+          },
+          {
+            "id": "b",
+            "text": "No, because window screens were omitted from the drawings, so they were not originally part of the contract scope, unless specified in a change order"
+          },
+          {
+            "id": "c",
+            "text": "Yes, because the architect's issuance of Final Completion certifies that the punch list item was properly completed per the punch list document"
+          },
+          {
+            "id": "d",
+            "text": "Yes, because window screens are the contractor's responsibility regardless of drawing inclusion, as they are considered standard in residential projects"
+          }
+        ],
+        "correct_option_id": "c",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Door latch adjustments are standard punch list items—minor hardware adjustments that do not affect occupancy or functionality and are typical loose ends identified during substantial completion inspection.",
+          "b": "Incorrect. If the item was on the punch list, it was established as a required item. The architect's punch list determination binds both contractor and owner.",
+          "d": "Incorrect reasoning (though correct conclusion). The issue is not contractor responsibility in general, but whether the architect properly verified punch list completion before issuing Final Completion.",
+          "correct": "The architect's Certificate of Final Completion is a professional representation that all punch list items have been properly completed. If the architect issued Final Completion, that certificate stands as evidence that the window screen item was addressed. If the item was on the punch list and not completed, the architect failed to properly verify the item before issuing the certificate, and the owner has a claim against the contractor for incomplete punch list work. The architect's certification creates liability.",
+          "takeaway": "The architect's Final Completion certification represents that all punch list items are properly completed; if items were not completed, the architect's certification creates liability for failure to verify."
+        },
+        "explanation": null,
+        "code_citation": "UAP Doc 301",
+        "bloom_level": "apply",
+        "application_context": "client_scenario",
+        "practice_context": [],
+        "difficulty": 0.7,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-PRAC-CTR-018-008",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:47.923634+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:9b4e8ac884dfb2701540cfb73f6e1cc7da9c979630001e66336feb9547c8e273"
+      },
+      "proposed": {
+        "explanation": "Door latch adjustments are standard punch list items—minor hardware adjustments that do not affect occupancy or functionality and are typical loose ends identified during substantial completion inspection. Incorrect. If the item was on the punch list, it was established as a required item. The architect's punch list determination binds both contractor and owner. Incorrect reasoning (though correct conclusion). The issue is not contractor responsibility in general, but whether the architect properly verified punch list completion before issuing Final Completion. The architect's Certificate of Final Completion is a professional representation that all punch list items have been properly completed. If the architect issued Final Completion, that certificate stands as evidence that the window screen item was addressed. If the item was on the punch list and not completed, the architect failed to properly verify the item before issuing the certificate, and the owner has a claim against the contractor for incomplete punch list work. The architect's certification creates liability. The architect's Final Completion certification represents that all punch list items are properly completed; if items were not completed, the architect's certification creates liability for failure to verify."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "f6761609-3506-4e9c-b35c-772a2f9125d7",
+      "article_id": "5e99dd5d-1394-46bc-998e-8915e2595b0b",
+      "article_dir": ".ai/content-audit-export/articles/lea-prac-ctr-018-core-concept--5e99dd5d-1394-46bc-998e-8915e2595b0b",
+      "title": "lea-prac-ctr-018-core-concept",
+      "baseline_hash": "sha256:069cdb11d29b7b89fb4375eff64cea246ef04adebfcd47c7002743c1703f6e7d",
+      "baseline": {
+        "question_id": "f6761609-3506-4e9c-b35c-772a2f9125d7",
+        "article_id": "5e99dd5d-1394-46bc-998e-8915e2595b0b",
+        "topic_id": "eafde61a-27d1-4d8b-81f0-8e45e5848022",
+        "text": "During the architect's final inspection, the architect discovers that two punch list items—wall paint and door hardware—were completed properly, but a third item (fixing a plumbing leak) was corrected in a manner inconsistent with the contract specifications. What should the architect do?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Issue the Certificate of Final Completion because most punch items are properly corrected, minimizing project delays and facilitating occupancy"
+          },
+          {
+            "id": "b",
+            "text": "Withhold the Final Completion certificate and require the contractor to correct the improperly finished plumbing work per contract specifications"
+          },
+          {
+            "id": "c",
+            "text": "Issue a partial final completion certificate for the paint and hardware items only, ensuring compliance with the contract terms for those elements"
+          },
+          {
+            "id": "d",
+            "text": "Request the owner to accept the plumbing repair as-is to avoid further delays, considering the potential impact on project timelines"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Incorrect. Final Completion certification requires that all punch list items are properly completed and compliant. Partial compliance does not satisfy the architect's verification obligation.",
+          "c": "Incorrect. Final Completion is binary—all work is complete and compliant, or it is not. Partial certification is not standard practice and creates ambiguity about remaining obligations.",
+          "d": "Incorrect. The architect cannot authorize owner acceptance of non-compliant work as a substitute for contract compliance. The plumbing repair must meet contract specifications.",
+          "correct": "The architect's responsibility is to verify that all punch list items are completed in compliance with contract documents and specifications. If any punch item is corrected improperly or non-compliant, the architect must withhold the Final Completion certificate and require the contractor to re-correct the item to meet contract standards. The certificate is issued only when all items are proper.",
+          "takeaway": "The architect must withhold Final Completion certification if any punch list item is improperly corrected or non-compliant—all items must meet contract specifications before certification is issued."
+        },
+        "explanation": null,
+        "code_citation": "UAP Doc 301",
+        "bloom_level": "understand",
+        "application_context": "client_scenario",
+        "practice_context": [],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-PRAC-CTR-018-005",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:47.923634+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:069cdb11d29b7b89fb4375eff64cea246ef04adebfcd47c7002743c1703f6e7d"
+      },
+      "proposed": {
+        "explanation": "Incorrect. Final Completion certification requires that all punch list items are properly completed and compliant. Partial compliance does not satisfy the architect's verification obligation. Incorrect. Final Completion is binary—all work is complete and compliant, or it is not. Partial certification is not standard practice and creates ambiguity about remaining obligations. Incorrect. The architect cannot authorize owner acceptance of non-compliant work as a substitute for contract compliance. The plumbing repair must meet contract specifications. The architect's responsibility is to verify that all punch list items are completed in compliance with contract documents and specifications. If any punch item is corrected improperly or non-compliant, the architect must withhold the Final Completion certificate and require the contractor to re-correct the item to meet contract standards. The certificate is issued only when all items are proper. The architect must withhold Final Completion certification if any punch list item is improperly corrected or non-compliant—all items must meet contract specifications before certification is issued."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "14922cc7-cfd5-4e61-a675-ed77a34e05d1",
+      "article_id": "f0f43f10-eabc-474f-8397-c196a9b3649c",
+      "article_dir": ".ai/content-audit-export/articles/lea-strc-003-04-core-concept--f0f43f10-eabc-474f-8397-c196a9b3649c",
+      "title": "lea-strc-003-04-core-concept",
+      "baseline_hash": "sha256:b89e9951d84e2706fe45ba97bd67c9ea74b25b210095b545c3be012dd4c7b2f0",
+      "baseline": {
+        "question_id": "14922cc7-cfd5-4e61-a675-ed77a34e05d1",
+        "article_id": "f0f43f10-eabc-474f-8397-c196a9b3649c",
+        "topic_id": "435c213b-f743-4781-8c93-87db1476b78a",
+        "text": "Service loads on a beam are D = 80 kN (dead) and L = 60 kN (live). Calculate the factored load for LRFD design using U = 1.2D + 1.6L.",
+        "options": [
+          {
+            "id": "a",
+            "text": "U = 80 + 60 = 140 kN, which is a simple summation of loads without factoring, often used for preliminary checks"
+          },
+          {
+            "id": "b",
+            "text": "U = 1.2(80) + 1.6(60) = 96 + 96 = 192 kN"
+          },
+          {
+            "id": "c",
+            "text": "U = 1.4(80 + 60) = 196 kN, applying a uniform factor for simplicity in some design contexts"
+          },
+          {
+            "id": "d",
+            "text": "U = 0.9D + 1.3L = 72 + 78 = 150 kN, which is an alternative load combination sometimes used for specific load cases"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "This option is incorrect. Review the correct answer above.",
+          "c": "This option is incorrect. Review the correct answer above.",
+          "d": "This option is incorrect. Review the correct answer above.",
+          "correct": "U = 1.2D + 1.6L = 1.2(80) + 1.6(60) = 96 + 96 = 192 kN. The load factors are applied to service loads, not the sum. The modern standard (NSCP 2015) uses 1.2 for dead load and 1.6 for live load.",
+          "takeaway": "Review the correct answer and associated code provision."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "apply",
+        "application_context": "calculation",
+        "practice_context": [],
+        "difficulty": 0.7,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-STRC-003-04-005",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:52.277828+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:b89e9951d84e2706fe45ba97bd67c9ea74b25b210095b545c3be012dd4c7b2f0"
+      },
+      "proposed": {
+        "explanation": "This option is incorrect. Review the correct answer above. This option is incorrect. Review the correct answer above. This option is incorrect. Review the correct answer above. U = 1.2D + 1.6L = 1.2(80) + 1.6(60) = 96 + 96 = 192 kN. The load factors are applied to service loads, not the sum. The modern standard (NSCP 2015) uses 1.2 for dead load and 1.6 for live load. Review the correct answer and associated code provision."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "290e8c56-bb35-47ea-a100-c08c6b380d11",
+      "article_id": "f0f43f10-eabc-474f-8397-c196a9b3649c",
+      "article_dir": ".ai/content-audit-export/articles/lea-strc-003-04-core-concept--f0f43f10-eabc-474f-8397-c196a9b3649c",
+      "title": "lea-strc-003-04-core-concept",
+      "baseline_hash": "sha256:08463a3b1a9290d6bf0dc643f44b0331f8b99530c64baae2f05981a79c8f77cd",
+      "baseline": {
+        "question_id": "290e8c56-bb35-47ea-a100-c08c6b380d11",
+        "article_id": "f0f43f10-eabc-474f-8397-c196a9b3649c",
+        "topic_id": "435c213b-f743-4781-8c93-87db1476b78a",
+        "text": "A concrete beam in ASD is found to have an actual bending stress f = 0.50Fy. In LRFD, the same beam experiences a factored moment Mu = 0.60φMn (where Mn is the nominal moment capacity). Which statement correctly interprets the comparison?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The ASD beam is less stressed (0.50Fy vs. 0.60Fy) and therefore has more reserve capacity than the LRFD beam"
+          },
+          {
+            "id": "b",
+            "text": "The designs are not directly comparable because ASD uses unfactored loads and allowable stresses, while LRFD uses factored loads and factored capacities. Each method accounts for safety differently."
+          },
+          {
+            "id": "c",
+            "text": "The LRFD beam is less stressed because 0.60φMn < 0.50Fy in all cases, which indicates a lower stress level under the same conditions"
+          },
+          {
+            "id": "d",
+            "text": "The ASD beam is stronger because it uses Fy as the reference, while LRFD uses a reduced capacity φMn, which inherently limits the design strength"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "This option is incorrect. Review the correct answer above.",
+          "c": "This option is incorrect. Review the correct answer above.",
+          "d": "This option is incorrect. Review the correct answer above.",
+          "correct": "Direct numerical comparison across methods is misleading. ASD's f = 0.50Fy is a check on actual stress from service loads; LRFD's Mu = 0.60φMn is a check on factored demand from amplified loads against reduced capacity. Safety in ASD comes from low working stresses; safety in LRFD comes from load amplification and capacity reduction. The two ratios (0.50Fy vs. 0.60φMn) are not comparable without understanding the underlying loads and capacities. Both beams are, by definition, adequate if each passes its respective code check.",
+          "takeaway": "Review the correct answer and associated code provision."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "analyze",
+        "application_context": "design_application",
+        "practice_context": [],
+        "difficulty": 0.9,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-STRC-003-04-010",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:52.277828+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:08463a3b1a9290d6bf0dc643f44b0331f8b99530c64baae2f05981a79c8f77cd"
+      },
+      "proposed": {
+        "explanation": "This option is incorrect. Review the correct answer above. This option is incorrect. Review the correct answer above. This option is incorrect. Review the correct answer above. Direct numerical comparison across methods is misleading. ASD's f = 0.50Fy is a check on actual stress from service loads; LRFD's Mu = 0.60φMn is a check on factored demand from amplified loads against reduced capacity. Safety in ASD comes from low working stresses; safety in LRFD comes from load amplification and capacity reduction. The two ratios (0.50Fy vs. 0.60φMn) are not comparable without understanding the underlying loads and capacities. Both beams are, by definition, adequate if each passes its respective code check. Review the correct answer and associated code provision."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "850378e9-4dd3-4d88-908e-983f10ead976",
+      "article_id": "f0f43f10-eabc-474f-8397-c196a9b3649c",
+      "article_dir": ".ai/content-audit-export/articles/lea-strc-003-04-core-concept--f0f43f10-eabc-474f-8397-c196a9b3649c",
+      "title": "lea-strc-003-04-core-concept",
+      "baseline_hash": "sha256:d5047bc5c660a2368273f19dc26edb1c7532ab091475208575e1f875dc3d2717",
+      "baseline": {
+        "question_id": "850378e9-4dd3-4d88-908e-983f10ead976",
+        "article_id": "f0f43f10-eabc-474f-8397-c196a9b3649c",
+        "topic_id": "435c213b-f743-4781-8c93-87db1476b78a",
+        "text": "In LRFD, a column's nominal axial capacity is Pn = 500 kN. The resistance factor is φ = 0.70. The factored load from loads is Pu = 320 kN. Is the column adequate?",
+        "options": [
+          {
+            "id": "a",
+            "text": "No; 320 kN exceeds 500 kN without the φ factor"
+          },
+          {
+            "id": "b",
+            "text": "Yes; 320 kN is less than 500 kN, the nominal capacity"
+          },
+          {
+            "id": "c",
+            "text": "Yes; the design capacity φPn = 0.70(500) = 350 kN, and Pu = 320 ≤ 350 kN"
+          },
+          {
+            "id": "d",
+            "text": "No; the φ factor means only 70% of the material can be used, so Pu = 320 exceeds 70% of nominal"
+          }
+        ],
+        "correct_option_id": "c",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "This option is incorrect. Review the correct answer above.",
+          "b": "This option is incorrect. Review the correct answer above.",
+          "d": "This option is incorrect. Review the correct answer above.",
+          "correct": "LRFD check: Pu ≤ φPn. The design (factored) capacity is φPn = 0.70 × 500 = 350 kN. Since Pu = 320 ≤ 350 kN, the column is adequate. The φ factor reduces the nominal capacity to account for uncertainty; the check uses the reduced (factored) capacity, not the nominal.",
+          "takeaway": "Review the correct answer and associated code provision."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "apply",
+        "application_context": "calculation",
+        "practice_context": [],
+        "difficulty": 0.7,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-STRC-003-04-007",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:52.277828+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:d5047bc5c660a2368273f19dc26edb1c7532ab091475208575e1f875dc3d2717"
+      },
+      "proposed": {
+        "explanation": "This option is incorrect. Review the correct answer above. This option is incorrect. Review the correct answer above. This option is incorrect. Review the correct answer above. LRFD check: Pu ≤ φPn. The design (factored) capacity is φPn = 0.70 × 500 = 350 kN. Since Pu = 320 ≤ 350 kN, the column is adequate. The φ factor reduces the nominal capacity to account for uncertainty; the check uses the reduced (factored) capacity, not the nominal. Review the correct answer and associated code provision."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "773e71c5-d2c8-4e8f-8109-1575dfc9b17d",
+      "article_id": "f0f43f10-eabc-474f-8397-c196a9b3649c",
+      "article_dir": ".ai/content-audit-export/articles/lea-strc-003-04-core-concept--f0f43f10-eabc-474f-8397-c196a9b3649c",
+      "title": "lea-strc-003-04-core-concept",
+      "baseline_hash": "sha256:5084fb900cc4b47d624bc2ee1f53265ee64cca77b771f437d04d7a27b4a4cf72",
+      "baseline": {
+        "question_id": "773e71c5-d2c8-4e8f-8109-1575dfc9b17d",
+        "article_id": "f0f43f10-eabc-474f-8397-c196a9b3649c",
+        "topic_id": "435c213b-f743-4781-8c93-87db1476b78a",
+        "text": "A designer checks a beam and finds: f = 120 MPa, and Fa (allowable stress in bending) = 164 MPa. What design method is being used, and is the beam adequate?",
+        "options": [
+          {
+            "id": "a",
+            "text": "LRFD; the beam is adequate because the actual stress is less than the allowable"
+          },
+          {
+            "id": "b",
+            "text": "ASD; the beam is adequate because f ≤ Fa (120 ≤ 164)"
+          },
+          {
+            "id": "c",
+            "text": "ASD; the beam is not adequate because φ factor reduction has not been applied"
+          },
+          {
+            "id": "d",
+            "text": "LRFD; the beam must be checked against Mu ≤ φMn, not stress comparison"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "This option is incorrect. Review the correct answer above.",
+          "c": "This option is incorrect. Review the correct answer above.",
+          "d": "This option is incorrect. Review the correct answer above.",
+          "correct": "This is ASD. The check compares actual stress f against an allowable stress Fa. Since f = 120 ≤ Fa = 164, the beam is adequate (the ratio is 120/164 ≈ 0.73, well within allowable). ASD does not use φ factors; the safety margin is implicit in the choice of Fa as a fraction of Fy.",
+          "takeaway": "Review the correct answer and associated code provision."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "apply",
+        "application_context": "design_application",
+        "practice_context": [],
+        "difficulty": 0.7,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-STRC-003-04-006",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:52.277828+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:5084fb900cc4b47d624bc2ee1f53265ee64cca77b771f437d04d7a27b4a4cf72"
+      },
+      "proposed": {
+        "explanation": "This option is incorrect. Review the correct answer above. This option is incorrect. Review the correct answer above. This option is incorrect. Review the correct answer above. This is ASD. The check compares actual stress f against an allowable stress Fa. Since f = 120 ≤ Fa = 164, the beam is adequate (the ratio is 120/164 ≈ 0.73, well within allowable). ASD does not use φ factors; the safety margin is implicit in the choice of Fa as a fraction of Fy. Review the correct answer and associated code provision."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "1b1f0cff-02cb-4173-9ef2-f2dece83f2cc",
+      "article_id": "f0f43f10-eabc-474f-8397-c196a9b3649c",
+      "article_dir": ".ai/content-audit-export/articles/lea-strc-003-04-core-concept--f0f43f10-eabc-474f-8397-c196a9b3649c",
+      "title": "lea-strc-003-04-core-concept",
+      "baseline_hash": "sha256:c15286c464f909fcb033e8362df8c48d48256afb1bd600b075753e906faf73ef",
+      "baseline": {
+        "question_id": "1b1f0cff-02cb-4173-9ef2-f2dece83f2cc",
+        "article_id": "f0f43f10-eabc-474f-8397-c196a9b3649c",
+        "topic_id": "435c213b-f743-4781-8c93-87db1476b78a",
+        "text": "In Allowable Stress Design (ASD), why are allowable stresses (such as 0.60Fy or 0.66Fy) kept well below the yield strength?",
+        "options": [
+          {
+            "id": "a",
+            "text": "To prevent permanent deformation and ensure the material remains elastic"
+          },
+          {
+            "id": "b",
+            "text": "Because allowable stresses equal the ultimate strength divided by a safety factor, which is a standard practice in structural engineering"
+          },
+          {
+            "id": "c",
+            "text": "To simplify calculations and avoid using factored loads, which can complicate the design process"
+          },
+          {
+            "id": "d",
+            "text": "Because lower stresses reduce the cost of materials, making projects more economically viable"
+          }
+        ],
+        "correct_option_id": "a",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "b": "This option is incorrect. Review the correct answer above.",
+          "c": "This option is incorrect. Review the correct answer above.",
+          "d": "This option is incorrect. Review the correct answer above.",
+          "correct": "Allowable stresses are set as fractions of Fy (e.g., 0.60Fy for axial compression, 0.66Fy for bending) to ensure the material operates in the elastic region and does not yield under service loads. Yielding would introduce permanent deformation, violating serviceability. The safety margin is the ratio Fy / allowable stress (roughly 1.5–1.7 for ASD).",
+          "takeaway": "Review the correct answer and associated code provision."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "remember",
+        "application_context": "recall",
+        "practice_context": [],
+        "difficulty": 0.3,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-STRC-003-04-002",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:52.277828+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:c15286c464f909fcb033e8362df8c48d48256afb1bd600b075753e906faf73ef"
+      },
+      "proposed": {
+        "explanation": "This option is incorrect. Review the correct answer above. This option is incorrect. Review the correct answer above. This option is incorrect. Review the correct answer above. Allowable stresses are set as fractions of Fy (e.g., 0.60Fy for axial compression, 0.66Fy for bending) to ensure the material operates in the elastic region and does not yield under service loads. Yielding would introduce permanent deformation, violating serviceability. The safety margin is the ratio Fy / allowable stress (roughly 1.5–1.7 for ASD). Review the correct answer and associated code provision."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "e5d3a413-d0c0-4d4c-9fd3-119918592779",
+      "article_id": "f0f43f10-eabc-474f-8397-c196a9b3649c",
+      "article_dir": ".ai/content-audit-export/articles/lea-strc-003-04-core-concept--f0f43f10-eabc-474f-8397-c196a9b3649c",
+      "title": "lea-strc-003-04-core-concept",
+      "baseline_hash": "sha256:e5a9280311c3c125d7f1378a46ab9eccb9879e6fd5756c7a17b857fe1df25653",
+      "baseline": {
+        "question_id": "e5d3a413-d0c0-4d4c-9fd3-119918592779",
+        "article_id": "f0f43f10-eabc-474f-8397-c196a9b3649c",
+        "topic_id": "435c213b-f743-4781-8c93-87db1476b78a",
+        "text": "A designer performs calculations using service loads, elastic analysis, and checks f = 100 MPa ≤ Fa = 150 MPa. Then, in the next phase, the designer recalculates using factored loads U = 1.2D + 1.6L and checks Pu ≤ φPn. Is this approach acceptable, and why or why not?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Yes; both methods are acceptable, and using both provides extra safety confirmation, ensuring that the design meets all possible criteria."
+          },
+          {
+            "id": "b",
+            "text": "No; ASD and LRFD are distinct design methods and must not be mixed within the same design. The designer must choose one method and apply it consistently throughout."
+          },
+          {
+            "id": "c",
+            "text": "Yes; LRFD is always a superset of ASD, so checking both is redundant but harmless, as it covers all bases without introducing errors."
+          },
+          {
+            "id": "d",
+            "text": "No; mixing methods violates equilibrium and will give incorrect results, potentially leading to unsafe structural conditions."
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "This option is incorrect. Review the correct answer above.",
+          "c": "This option is incorrect. Review the correct answer above.",
+          "d": "This option is incorrect. Review the correct answer above.",
+          "correct": "ASD and LRFD are complementary but separate design philosophies. Mixing them introduces inconsistency and confusion. A single design must commit to one method: either use unfactored loads with allowable stresses (ASD), or use factored loads with factored capacities (LRFD). Switching methods mid-design can disguise errors and violates code requirements, which typically require the designer to declare the method upfront. The results from one method cannot be directly compared to the other.",
+          "takeaway": "Review the correct answer and associated code provision."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "apply",
+        "application_context": "calculation",
+        "practice_context": [],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-STRC-003-04-009",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:52.277828+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:e5a9280311c3c125d7f1378a46ab9eccb9879e6fd5756c7a17b857fe1df25653"
+      },
+      "proposed": {
+        "explanation": "This option is incorrect. Review the correct answer above. This option is incorrect. Review the correct answer above. This option is incorrect. Review the correct answer above. ASD and LRFD are complementary but separate design philosophies. Mixing them introduces inconsistency and confusion. A single design must commit to one method: either use unfactored loads with allowable stresses (ASD), or use factored loads with factored capacities (LRFD). Switching methods mid-design can disguise errors and violates code requirements, which typically require the designer to declare the method upfront. The results from one method cannot be directly compared to the other. Review the correct answer and associated code provision."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "056e3237-b29b-42f2-844e-3093eac999ec",
+      "article_id": "f0f43f10-eabc-474f-8397-c196a9b3649c",
+      "article_dir": ".ai/content-audit-export/articles/lea-strc-003-04-core-concept--f0f43f10-eabc-474f-8397-c196a9b3649c",
+      "title": "lea-strc-003-04-core-concept",
+      "baseline_hash": "sha256:fec9648ea9671f8684a93b16f0efaf716c5229951204c6dd0aedeab0b6e91f26",
+      "baseline": {
+        "question_id": "056e3237-b29b-42f2-844e-3093eac999ec",
+        "article_id": "f0f43f10-eabc-474f-8397-c196a9b3649c",
+        "topic_id": "435c213b-f743-4781-8c93-87db1476b78a",
+        "text": "Explain why LRFD is considered more theoretically rigorous than ASD for accounting for uncertainty in loads and material properties.",
+        "options": [
+          {
+            "id": "a",
+            "text": "LRFD always gives more economical designs because all factors are smaller, which can lead to cost savings in certain scenarios"
+          },
+          {
+            "id": "b",
+            "text": "LRFD separately factors different load types (1.2D, 1.6L) and failure modes (different φ values), allowing uncertainty to be addressed specifically rather than with a single blanket safety factor"
+          },
+          {
+            "id": "c",
+            "text": "LRFD eliminates all uncertainty by requiring exact material properties and loads, which is not feasible in practical applications"
+          },
+          {
+            "id": "d",
+            "text": "ASD is theoretically sound; LRFD and ASD are equivalent in rigor, just expressed differently, which can lead to confusion in their application"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "This option is incorrect. Review the correct answer above.",
+          "c": "This option is incorrect. Review the correct answer above.",
+          "d": "This option is incorrect. Review the correct answer above.",
+          "correct": "LRFD's strength is its granularity. Load factors reflect the statistical variability of each load type (dead is more certain than live, hence 1.2 < 1.6). Resistance factors reflect the predictability of each failure mode (ductile flexure φ = 0.90 vs. brittle bearing φ = 0.70). This separation allows designers and code writers to target reliability more precisely. ASD uses a single overall safety margin (allowable stress as fraction of yield), which is simpler but less nuanced.",
+          "takeaway": "Review the correct answer and associated code provision."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "apply",
+        "application_context": "design_application",
+        "practice_context": [],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-STRC-003-04-008",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:52.277828+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:fec9648ea9671f8684a93b16f0efaf716c5229951204c6dd0aedeab0b6e91f26"
+      },
+      "proposed": {
+        "explanation": "This option is incorrect. Review the correct answer above. This option is incorrect. Review the correct answer above. This option is incorrect. Review the correct answer above. LRFD's strength is its granularity. Load factors reflect the statistical variability of each load type (dead is more certain than live, hence 1.2 < 1.6). Resistance factors reflect the predictability of each failure mode (ductile flexure φ = 0.90 vs. brittle bearing φ = 0.70). This separation allows designers and code writers to target reliability more precisely. ASD uses a single overall safety margin (allowable stress as fraction of yield), which is simpler but less nuanced. Review the correct answer and associated code provision."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "0d68b1c6-b655-44ad-9e26-bff353d32299",
+      "article_id": "1f411bc4-4ca5-4bb2-ab46-e130e1b0a5e4",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-01-core-concept--1f411bc4-4ca5-4bb2-ab46-e130e1b0a5e4",
+      "title": "lea-hist-008-01-core-concept",
+      "baseline_hash": "sha256:662cacac9ee8834727a191e1108a93a6e93d5c797fda499c7833f802fe162622",
+      "baseline": {
+        "question_id": "0d68b1c6-b655-44ad-9e26-bff353d32299",
+        "article_id": "1f411bc4-4ca5-4bb2-ab46-e130e1b0a5e4",
+        "topic_id": "1955c5c2-3e2d-4757-bfe3-5a57e47019af",
+        "text": "The Home Insurance Building (1884-1885) was the first skyscraper to use an independent iron-steel frame. Who was its architect?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Daniel Burnham, known for his work on the Flatiron Building and the 1893 World's Columbian Exposition"
+          },
+          {
+            "id": "b",
+            "text": "William Le Baron Jenney"
+          },
+          {
+            "id": "c",
+            "text": "C.F.A. Voysey, a prominent figure in the Arts and Crafts movement with a focus on domestic architecture"
+          },
+          {
+            "id": "d",
+            "text": "Joseph Paxton, famous for designing the Crystal Palace for the Great Exhibition of 1851"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Daniel Burnham was a Chicago School pioneer known for urban planning and monumental buildings, but did not design the Home Insurance Building.",
+          "c": "C.F.A. Voysey was an Arts and Crafts architect focused on handcrafted design, not iron frame innovation.",
+          "d": "Joseph Paxton pioneered iron-glass construction decades earlier with the Crystal Palace.",
+          "correct": "William Le Baron Jenney engineered the structural breakthrough of the iron-steel frame independent of exterior masonry walls in the Home Insurance Building, Chicago.",
+          "takeaway": "William Le Baron Jenney engineered the structural breakthrough of the iron-steel frame independent of exterior masonry walls in the Home Insurance Building, Chicago."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "remember",
+        "application_context": "recall",
+        "practice_context": [
+          "ID"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-HIST-008-01-002",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:25.310909+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:662cacac9ee8834727a191e1108a93a6e93d5c797fda499c7833f802fe162622"
+      },
+      "proposed": {
+        "explanation": "Daniel Burnham was a Chicago School pioneer known for urban planning and monumental buildings, but did not design the Home Insurance Building. C.F.A. Voysey was an Arts and Crafts architect focused on handcrafted design, not iron frame innovation. Joseph Paxton pioneered iron-glass construction decades earlier with the Crystal Palace. William Le Baron Jenney engineered the structural breakthrough of the iron-steel frame independent of exterior masonry walls in the Home Insurance Building, Chicago. William Le Baron Jenney engineered the structural breakthrough of the iron-steel frame independent of exterior masonry walls in the Home Insurance Building, Chicago."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "0a685ffb-1796-4cca-a8c3-2b77fb0b5c8d",
+      "article_id": "1f411bc4-4ca5-4bb2-ab46-e130e1b0a5e4",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-01-core-concept--1f411bc4-4ca5-4bb2-ab46-e130e1b0a5e4",
+      "title": "lea-hist-008-01-core-concept",
+      "baseline_hash": "sha256:009e7339663748510585c0fe25880a88040af031ac9c0cd0609af99517d1d752",
+      "baseline": {
+        "question_id": "0a685ffb-1796-4cca-a8c3-2b77fb0b5c8d",
+        "article_id": "1f411bc4-4ca5-4bb2-ab46-e130e1b0a5e4",
+        "topic_id": "1955c5c2-3e2d-4757-bfe3-5a57e47019af",
+        "text": "A building features an exposed iron lattice structure with no masonry cladding, no ornament, and proves that engineering and beauty can coexist without applied decoration. Which of these buildings does this describe?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A Gothic Revival cathedral with iron reinforcement"
+          },
+          {
+            "id": "b",
+            "text": "The Eiffel Tower (1889)"
+          },
+          {
+            "id": "c",
+            "text": "The Crystal Palace with its brick base"
+          },
+          {
+            "id": "d",
+            "text": "A typical Victorian townhouse facade"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Gothic Revival buildings used historical ornament and stylistic details; iron was reinforcement, not the visible structural system.",
+          "c": "While the Crystal Palace pioneered iron use, it included glass infill and was an enclosed building; the Eiffel Tower is more radically structural.",
+          "d": "Victorian townhouses emphasize ornament and masonry mass, contrary to the described aesthetic.",
+          "correct": "The Eiffel Tower is pure iron lattice—structurally and visually honest, with no facade cladding or applied decoration. It proved that radical simplicity could be visually striking and beautiful.",
+          "takeaway": "It proved that radical simplicity could be visually striking and beautiful."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "remember",
+        "application_context": "recall",
+        "practice_context": [
+          "DESC"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-HIST-008-01-006",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:25.310909+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:009e7339663748510585c0fe25880a88040af031ac9c0cd0609af99517d1d752"
+      },
+      "proposed": {
+        "explanation": "Gothic Revival buildings used historical ornament and stylistic details; iron was reinforcement, not the visible structural system. While the Crystal Palace pioneered iron use, it included glass infill and was an enclosed building; the Eiffel Tower is more radically structural. Victorian townhouses emphasize ornament and masonry mass, contrary to the described aesthetic. The Eiffel Tower is pure iron lattice—structurally and visually honest, with no facade cladding or applied decoration. It proved that radical simplicity could be visually striking and beautiful. It proved that radical simplicity could be visually striking and beautiful."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "7639d133-199b-4dbb-a699-6e255d652db8",
+      "article_id": "1f411bc4-4ca5-4bb2-ab46-e130e1b0a5e4",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-01-core-concept--1f411bc4-4ca5-4bb2-ab46-e130e1b0a5e4",
+      "title": "lea-hist-008-01-core-concept",
+      "baseline_hash": "sha256:4af476deed944c8de0d726475b5cb6b03c50f8e97026a41d93ee187625c8f091",
+      "baseline": {
+        "question_id": "7639d133-199b-4dbb-a699-6e255d652db8",
+        "article_id": "1f411bc4-4ca5-4bb2-ab46-e130e1b0a5e4",
+        "topic_id": "1955c5c2-3e2d-4757-bfe3-5a57e47019af",
+        "text": "In what year was the Crystal Palace built, and what event did it shelter?",
+        "options": [
+          {
+            "id": "a",
+            "text": "1845, the London Exposition of Industrial Design"
+          },
+          {
+            "id": "b",
+            "text": "1851, the Great Exhibition"
+          },
+          {
+            "id": "c",
+            "text": "1860, the International Industrial Fair"
+          },
+          {
+            "id": "d",
+            "text": "1889, the Paris Exposition"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "1845 predates the Crystal Palace; the London Exposition date is incorrect.",
+          "c": "1860 is too late; the Crystal Palace was built a decade earlier.",
+          "d": "1889 was the date of the Eiffel Tower, not the Crystal Palace.",
+          "correct": "The Crystal Palace was constructed in 1851 as the temporary home of the Great Exhibition in London, showcasing industrial innovation and design.",
+          "takeaway": "The Crystal Palace was constructed in 1851 as the temporary home of the Great Exhibition in London, showcasing industrial innovation and design."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "remember",
+        "application_context": "recall",
+        "practice_context": [
+          "CH"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-HIST-008-01-007",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:25.310909+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:4af476deed944c8de0d726475b5cb6b03c50f8e97026a41d93ee187625c8f091"
+      },
+      "proposed": {
+        "explanation": "1845 predates the Crystal Palace; the London Exposition date is incorrect. 1860 is too late; the Crystal Palace was built a decade earlier. 1889 was the date of the Eiffel Tower, not the Crystal Palace. The Crystal Palace was constructed in 1851 as the temporary home of the Great Exhibition in London, showcasing industrial innovation and design. The Crystal Palace was constructed in 1851 as the temporary home of the Great Exhibition in London, showcasing industrial innovation and design."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "89baf716-3de5-4710-bab2-6487bb354649",
+      "article_id": "1f411bc4-4ca5-4bb2-ab46-e130e1b0a5e4",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-01-core-concept--1f411bc4-4ca5-4bb2-ab46-e130e1b0a5e4",
+      "title": "lea-hist-008-01-core-concept",
+      "baseline_hash": "sha256:940fb1b0b8fd098d192ad9f4923131135468bacec11b16850484b5afdd433fdc",
+      "baseline": {
+        "question_id": "89baf716-3de5-4710-bab2-6487bb354649",
+        "article_id": "1f411bc4-4ca5-4bb2-ab46-e130e1b0a5e4",
+        "topic_id": "1955c5c2-3e2d-4757-bfe3-5a57e47019af",
+        "text": "Which of the following best contrasts the Crystal Palace with a typical 19th-century Gothic Revival building?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The Crystal Palace used iron, while Gothic Revival used only wood and stone, reflecting the technological advancements of the Industrial Revolution"
+          },
+          {
+            "id": "b",
+            "text": "The Crystal Palace prioritized modular, prefabricated construction and industrial materials; Gothic Revival emphasized ornament and historical style"
+          },
+          {
+            "id": "c",
+            "text": "The Crystal Palace was designed for temporary use, while Gothic Revival buildings were permanent, showcasing the differing intents and functions of the structures"
+          },
+          {
+            "id": "d",
+            "text": "Gothic Revival buildings were larger and required more structural support, often resulting in more complex and labor-intensive construction processes"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "While true that Crystal Palace used iron, Gothic Revival also incorporated iron structurally; the difference is not material but ideology.",
+          "c": "Temporariness is not the defining contrast; many temporary structures are ornamental, many permanent ones are austere.",
+          "d": "Size and structural support don't define the contrast between these movements.",
+          "correct": "The fundamental contrast is philosophical: Crystal Palace represented industrial rationalism (modular, prefabricated, material-honest), while Gothic Revival represented the opposite (ornamental, stylistic, historically derived).",
+          "takeaway": "The fundamental contrast is philosophical: Crystal Palace represented industrial rationalism (modular, prefabricated, material-honest), while Gothic Revival represented the opposite (ornamental, stylistic, historically derived)."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "apply",
+        "application_context": "design_application",
+        "practice_context": [
+          "CMP"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-HIST-008-01-008",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:25.310909+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:940fb1b0b8fd098d192ad9f4923131135468bacec11b16850484b5afdd433fdc"
+      },
+      "proposed": {
+        "explanation": "While true that Crystal Palace used iron, Gothic Revival also incorporated iron structurally; the difference is not material but ideology. Temporariness is not the defining contrast; many temporary structures are ornamental, many permanent ones are austere. Size and structural support don't define the contrast between these movements. The fundamental contrast is philosophical: Crystal Palace represented industrial rationalism (modular, prefabricated, material-honest), while Gothic Revival represented the opposite (ornamental, stylistic, historically derived). The fundamental contrast is philosophical: Crystal Palace represented industrial rationalism (modular, prefabricated, material-honest), while Gothic Revival represented the opposite (ornamental, stylistic, historically derived)."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "3915a642-7ac3-41f2-956e-0b611243dead",
+      "article_id": "1f411bc4-4ca5-4bb2-ab46-e130e1b0a5e4",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-01-core-concept--1f411bc4-4ca5-4bb2-ab46-e130e1b0a5e4",
+      "title": "lea-hist-008-01-core-concept",
+      "baseline_hash": "sha256:81dce2ab203c9c12e2811b8dd4717788e187ce235799d9bc1063c690326a76af",
+      "baseline": {
+        "question_id": "3915a642-7ac3-41f2-956e-0b611243dead",
+        "article_id": "1f411bc4-4ca5-4bb2-ab46-e130e1b0a5e4",
+        "topic_id": "1955c5c2-3e2d-4757-bfe3-5a57e47019af",
+        "text": "How did the Arts and Crafts movement, despite its emphasis on handcrafted design, ultimately contribute to the development of modernism?",
+        "options": [
+          {
+            "id": "a",
+            "text": "It introduced historical revival styles that modernists later rejected entirely, leading to a new design ethos"
+          },
+          {
+            "id": "b",
+            "text": "It established principles of honest material use and elimination of unnecessary ornament, which modernism adopted"
+          },
+          {
+            "id": "c",
+            "text": "It prioritized industrial mass production over all other design concerns, which was later refined by modernists"
+          },
+          {
+            "id": "d",
+            "text": "It demonstrated that ornament was essential to all high-quality architecture, a notion modernists challenged"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Arts and Crafts rejected historical revival; its forward-thinking principles opposed historicism.",
+          "c": "Arts and Crafts explicitly rejected industrial mass production, not prioritized it.",
+          "d": "Arts and Crafts rejected applied ornament in favor of honest expression of materials and function.",
+          "correct": "The Arts and Crafts movement, led by William Morris and C.F.A. Voysey, unified around principles of honest materials and elimination of false ornament—principles that enabled modernism despite the movement's preference for handcraft over industrial production.",
+          "takeaway": "Voysey, unified around principles of honest materials and elimination of false ornament—principles that enabled modernism despite the movement's preference for handcraft over industrial production."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "apply",
+        "application_context": "design_application",
+        "practice_context": [
+          "CMP"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-HIST-008-01-005",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:25.310909+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:81dce2ab203c9c12e2811b8dd4717788e187ce235799d9bc1063c690326a76af"
+      },
+      "proposed": {
+        "explanation": "Arts and Crafts rejected historical revival; its forward-thinking principles opposed historicism. Arts and Crafts explicitly rejected industrial mass production, not prioritized it. Arts and Crafts rejected applied ornament in favor of honest expression of materials and function. The Arts and Crafts movement, led by William Morris and C.F.A. Voysey, unified around principles of honest materials and elimination of false ornament—principles that enabled modernism despite the movement's preference for handcraft over industrial production. Voysey, unified around principles of honest materials and elimination of false ornament—principles that enabled modernism despite the movement's preference for handcraft over industrial production."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "5ae93402-3960-4b79-b6ad-d5affb1210e1",
+      "article_id": "1f411bc4-4ca5-4bb2-ab46-e130e1b0a5e4",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-01-core-concept--1f411bc4-4ca5-4bb2-ab46-e130e1b0a5e4",
+      "title": "lea-hist-008-01-core-concept",
+      "baseline_hash": "sha256:64a177b3c0dc6af72e8ae57fdcd15908f5fdd2a00be9410299cacaa087777e55",
+      "baseline": {
+        "question_id": "5ae93402-3960-4b79-b6ad-d5affb1210e1",
+        "article_id": "1f411bc4-4ca5-4bb2-ab46-e130e1b0a5e4",
+        "topic_id": "1955c5c2-3e2d-4757-bfe3-5a57e47019af",
+        "text": "Which architect designed the Crystal Palace, a building that pioneered the use of prefabricated iron and glass on an unprecedented sclea?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Joseph Paxton"
+          },
+          {
+            "id": "b",
+            "text": "William Le Baron Jenney"
+          },
+          {
+            "id": "c",
+            "text": "Gustave Eiffel"
+          },
+          {
+            "id": "d",
+            "text": "Louis Sullivan"
+          }
+        ],
+        "correct_option_id": "a",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "b": "William Le Baron Jenney designed the Home Insurance Building (1885), the first iron-steel frame skyscraper, not the Crystal Palace.",
+          "c": "Gustave Eiffel designed the Eiffel Tower (1889), which also used iron structurally but was built after and for a different purpose.",
+          "d": "Louis Sullivan was a Chicago School architect known for his design philosophy, not for pioneering iron-glass construction.",
+          "correct": "Joseph Paxton designed the Crystal Palace (1851) in London. It exemplified the shift from masonry to industrial materials and was revolutionary for its scale and use of prefabrication.",
+          "takeaway": "It exemplified the shift from masonry to industrial materials and was revolutionary for its scale and use of prefabrication."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "remember",
+        "application_context": "recall",
+        "practice_context": [
+          "ID"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-HIST-008-01-001",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:25.310909+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:64a177b3c0dc6af72e8ae57fdcd15908f5fdd2a00be9410299cacaa087777e55"
+      },
+      "proposed": {
+        "explanation": "William Le Baron Jenney designed the Home Insurance Building (1885), the first iron-steel frame skyscraper, not the Crystal Palace. Gustave Eiffel designed the Eiffel Tower (1889), which also used iron structurally but was built after and for a different purpose. Louis Sullivan was a Chicago School architect known for his design philosophy, not for pioneering iron-glass construction. Joseph Paxton designed the Crystal Palace (1851) in London. It exemplified the shift from masonry to industrial materials and was revolutionary for its scale and use of prefabrication. It exemplified the shift from masonry to industrial materials and was revolutionary for its scale and use of prefabrication."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "b2256c40-84ad-4eef-8463-2032ae8b979c",
+      "article_id": "1f411bc4-4ca5-4bb2-ab46-e130e1b0a5e4",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-01-core-concept--1f411bc4-4ca5-4bb2-ab46-e130e1b0a5e4",
+      "title": "lea-hist-008-01-core-concept",
+      "baseline_hash": "sha256:730eb22e37488e2955dbee24efbd2faa4285fb442fa26b5f045f418b4efbed35",
+      "baseline": {
+        "question_id": "b2256c40-84ad-4eef-8463-2032ae8b979c",
+        "article_id": "1f411bc4-4ca5-4bb2-ab46-e130e1b0a5e4",
+        "topic_id": "1955c5c2-3e2d-4757-bfe3-5a57e47019af",
+        "text": "Louis Sullivan's axiom 'form follows function' was a philosophical response to which dominant 19th-century architectural practice?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The use of industrial materials like cast iron in all buildings, which prioritized material innovation over aesthetic considerations"
+          },
+          {
+            "id": "b",
+            "text": "The dominance of historical ornament and stylistic revival over practical design"
+          },
+          {
+            "id": "c",
+            "text": "The widespread adoption of pilotis in European architecture, which emphasized structural elevation and open ground floors"
+          },
+          {
+            "id": "d",
+            "text": "The emphasis on handcrafted materials in high-style buildings, reflecting a preference for artisanal quality over mass production"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Sullivan supported the use of industrial materials; his axiom was not against them but against ornament applied without functional purpose.",
+          "c": "Pilotis did not dominate 19th-century practice; they emerged as a modernist innovation later.",
+          "d": "While Sullivan did value craft, his principle was specifically about eliminating unnecessary ornament, whether handcrafted or industrial.",
+          "correct": "Sullivan's principle directly challenged the 19th-century practice of applying historical styles and ornament regardless of function. His statement represented an intellectual shift toward functional design logic.",
+          "takeaway": "His statement represented an intellectual shift toward functional design logic."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "apply",
+        "application_context": "code_interpretation",
+        "practice_context": [
+          "CON"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-HIST-008-01-004",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:25.310909+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:730eb22e37488e2955dbee24efbd2faa4285fb442fa26b5f045f418b4efbed35"
+      },
+      "proposed": {
+        "explanation": "Sullivan supported the use of industrial materials; his axiom was not against them but against ornament applied without functional purpose. Pilotis did not dominate 19th-century practice; they emerged as a modernist innovation later. While Sullivan did value craft, his principle was specifically about eliminating unnecessary ornament, whether handcrafted or industrial. Sullivan's principle directly challenged the 19th-century practice of applying historical styles and ornament regardless of function. His statement represented an intellectual shift toward functional design logic. His statement represented an intellectual shift toward functional design logic."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "b773afca-25f4-454a-9e83-88310c8f49d8",
+      "article_id": "1f411bc4-4ca5-4bb2-ab46-e130e1b0a5e4",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-01-core-concept--1f411bc4-4ca5-4bb2-ab46-e130e1b0a5e4",
+      "title": "lea-hist-008-01-core-concept",
+      "baseline_hash": "sha256:f1b0b15f2290b23f70dcb946b977828d5bb01a3c914ff7d6b24e30cec570ba9b",
+      "baseline": {
+        "question_id": "b773afca-25f4-454a-9e83-88310c8f49d8",
+        "article_id": "1f411bc4-4ca5-4bb2-ab46-e130e1b0a5e4",
+        "topic_id": "1955c5c2-3e2d-4757-bfe3-5a57e47019af",
+        "text": "Modular construction, demonstrated in the Crystal Palace, allowed efficient assembly on-site. What was the primary architectural advantage this innovation offered beyond speed of construction?",
+        "options": [
+          {
+            "id": "a",
+            "text": "It reduced the need for skilled craftsmen on the building site, lowering labor costs"
+          },
+          {
+            "id": "b",
+            "text": "It proved that complex forms could be achieved through repetitive, simple components, democratizing quality design"
+          },
+          {
+            "id": "c",
+            "text": "It eliminated the need for architectural drawings or planning, simplifying the design process"
+          },
+          {
+            "id": "d",
+            "text": "It proved that temporary buildings could be more beautiful than permanent ones, challenging traditional aesthetics"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "While modular construction may have shifted labor patterns, this wasn't the primary architectural advantage.",
+          "c": "Modular buildings still require careful planning and drawings; modularity doesn't eliminate these needs.",
+          "d": "The permanence of a building doesn't determine its beauty; this is not the core advantage of modularity.",
+          "correct": "Modular construction demonstrated that complex, large-scale architecture could be achieved through standardized, repetitive components. This principle became foundational to modernism and democratic design—quality buildings could be accessible, not unique luxury.",
+          "takeaway": "This principle became foundational to modernism and democratic design—quality buildings could be accessible, not unique luxury."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "analyze",
+        "application_context": "code_interpretation",
+        "practice_context": [
+          "ST"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-HIST-008-01-010",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:25.310909+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:f1b0b15f2290b23f70dcb946b977828d5bb01a3c914ff7d6b24e30cec570ba9b"
+      },
+      "proposed": {
+        "explanation": "While modular construction may have shifted labor patterns, this wasn't the primary architectural advantage. Modular buildings still require careful planning and drawings; modularity doesn't eliminate these needs. The permanence of a building doesn't determine its beauty; this is not the core advantage of modularity. Modular construction demonstrated that complex, large-scale architecture could be achieved through standardized, repetitive components. This principle became foundational to modernism and democratic design—quality buildings could be accessible, not unique luxury. This principle became foundational to modernism and democratic design—quality buildings could be accessible, not unique luxury."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "f162130e-e0b0-4cfc-b227-cb02246aba51",
+      "article_id": "1edce199-0fc2-42e8-bad6-f3a74243626e",
+      "article_dir": ".ai/content-audit-export/articles/lea-util-004-06-cctv-systems--1edce199-0fc2-42e8-bad6-f3a74243626e",
+      "title": "lea-util-004-06-cctv-systems",
+      "baseline_hash": "sha256:3e94131a09de37147af3fd77492035d0f0f8b43a7157812464191c5e610ea63a",
+      "baseline": {
+        "question_id": "f162130e-e0b0-4cfc-b227-cb02246aba51",
+        "article_id": "1edce199-0fc2-42e8-bad6-f3a74243626e",
+        "topic_id": "824a68bb-40fc-4c13-8f26-c80f796172fc",
+        "text": "In a multi-story office building with both analog and IP intercom systems, what is the primary reason IP intercoms are preferred for modern installations?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Analog systems provide superior audio quality over longer distances, especially in environments with minimal electronic interference"
+          },
+          {
+            "id": "b",
+            "text": "IP intercoms reduce cabling requirements and integrate seamlessly with access control and BMS platforms"
+          },
+          {
+            "id": "c",
+            "text": "Analog systems are more cost-effective for large-scale deployments, particularly in retrofitting older buildings where existing infrastructure can be utilized"
+          },
+          {
+            "id": "d",
+            "text": "IP intercoms require less maintenance and do not need voltage regulators in Philippine facilities, making them more reliable in areas with fluctuating power supply"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Analog systems actually suffer from range limitations and cabling challenges; IP systems leverage existing network infrastructure.",
+          "c": "While analog systems have lower initial cost, IP systems offer superior integration and reduced installation complexity that offsets this advantage.",
+          "d": "Both IP and analog systems require proper power management in Philippine facilities due to voltage fluctuations; this is not a differentiating factor.",
+          "correct": "IP intercoms transmit audio and video over existing Ethernet infrastructure, reducing cabling requirements compared to dedicated analog pairs. They integrate seamlessly with modern access control systems and Building Management Systems, providing a unified platform for security operations.",
+          "takeaway": "IP intercoms are preferred in modern buildings because they leverage existing network infrastructure and provide seamless integration with access control and BMS systems."
+        },
+        "explanation": null,
+        "code_citation": "LEA-UTIL-004-06.mdx - Intercom and Video Intercom Systems",
+        "bloom_level": "understand",
+        "application_context": "recall",
+        "practice_context": [],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-UTIL-004-06-016",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:28:02.422831+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:3e94131a09de37147af3fd77492035d0f0f8b43a7157812464191c5e610ea63a"
+      },
+      "proposed": {
+        "explanation": "Analog systems actually suffer from range limitations and cabling challenges; IP systems leverage existing network infrastructure. While analog systems have lower initial cost, IP systems offer superior integration and reduced installation complexity that offsets this advantage. Both IP and analog systems require proper power management in Philippine facilities due to voltage fluctuations; this is not a differentiating factor. IP intercoms transmit audio and video over existing Ethernet infrastructure, reducing cabling requirements compared to dedicated analog pairs. They integrate seamlessly with modern access control systems and Building Management Systems, providing a unified platform for security operations. IP intercoms are preferred in modern buildings because they leverage existing network infrastructure and provide seamless integration with access control and BMS systems."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "07d58579-11e3-4ed5-8fb6-5dc7be036efb",
+      "article_id": "1edce199-0fc2-42e8-bad6-f3a74243626e",
+      "article_dir": ".ai/content-audit-export/articles/lea-util-004-06-cctv-systems--1edce199-0fc2-42e8-bad6-f3a74243626e",
+      "title": "lea-util-004-06-cctv-systems",
+      "baseline_hash": "sha256:de4247668e5b01945fdd607920647b9cc00afe11f853ee1d4a4d6ca9924b4b2c",
+      "baseline": {
+        "question_id": "07d58579-11e3-4ed5-8fb6-5dc7be036efb",
+        "article_id": "1edce199-0fc2-42e8-bad6-f3a74243626e",
+        "topic_id": "824a68bb-40fc-4c13-8f26-c80f796172fc",
+        "text": "Which camera type is designed for discrete indoor surveillance with aesthetic integration and provides operational discretion by concealing the viewing direction?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Bullet camera mounted on external walls, typically used for outdoor surveillance"
+          },
+          {
+            "id": "b",
+            "text": "Dome camera installed flush against ceilings"
+          },
+          {
+            "id": "c",
+            "text": "PTZ camera with operator control, allowing for manual adjustment of viewing angles"
+          },
+          {
+            "id": "d",
+            "text": "Panoramic fisheye camera, offering a 360-degree view without moving parts"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Bullet cameras are cylindrical and typically mounted on external walls for perimeter surveillance, not for discrete indoor use.",
+          "c": "PTZ cameras are used for dynamic coverage of critical zones but do not provide aesthetic integration or directional concealment.",
+          "d": "Panoramic fisheye cameras provide wide coverage but are not typically chosen for discrete indoor surveillance with directional ambiguity.",
+          "correct": "Dome cameras are mounted flush against ceilings or walls and offer aesthetic integration with interior design. The dome housing protects optics and provides operational discretion because observers cannot easily determine the viewing direction.",
+          "takeaway": "Dome cameras are the preferred choice for indoor environments requiring both discrete operation and aesthetic integration."
+        },
+        "explanation": null,
+        "code_citation": "LEA-UTIL-004-06.mdx - CCTV Systems > Camera Types and Applications",
+        "bloom_level": "remember",
+        "application_context": "code_interpretation",
+        "practice_context": [],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-UTIL-004-06-011",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:28:02.422831+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:de4247668e5b01945fdd607920647b9cc00afe11f853ee1d4a4d6ca9924b4b2c"
+      },
+      "proposed": {
+        "explanation": "Bullet cameras are cylindrical and typically mounted on external walls for perimeter surveillance, not for discrete indoor use. PTZ cameras are used for dynamic coverage of critical zones but do not provide aesthetic integration or directional concealment. Panoramic fisheye cameras provide wide coverage but are not typically chosen for discrete indoor surveillance with directional ambiguity. Dome cameras are mounted flush against ceilings or walls and offer aesthetic integration with interior design. The dome housing protects optics and provides operational discretion because observers cannot easily determine the viewing direction. Dome cameras are the preferred choice for indoor environments requiring both discrete operation and aesthetic integration."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    }
+  ]
+}

@@ -99,10 +99,10 @@ const AppDrawer = ({
   const isHorizontal = side === 'right' || side === 'left'
 
   const panelPositionClasses = cn(
-    'fixed z-50 flex flex-col bg-card shadow-lg',
-    side === 'right' && 'inset-y-0 right-0 border-l border-border',
-    side === 'left' && 'inset-y-0 left-0 border-r border-border',
-    side === 'bottom' && 'inset-x-0 bottom-0 border-t border-border',
+    'fixed z-50 flex flex-col bg-card shadow-modal',
+    side === 'right' && 'inset-y-0 right-0',
+    side === 'left' && 'inset-y-0 left-0',
+    side === 'bottom' && 'inset-x-0 bottom-0',
     isHorizontal && 'w-full',
     isHorizontal && panelSizeVariants({ size }),
     side === 'bottom' && 'max-h-[80vh]',

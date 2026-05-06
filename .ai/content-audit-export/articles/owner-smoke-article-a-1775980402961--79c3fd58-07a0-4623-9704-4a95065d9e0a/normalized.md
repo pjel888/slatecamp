@@ -23,6 +23,13 @@ Extracted summary:
 
 # Owner Smoke Article-A 1775980402961
 
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Owner Smoke Article-A 1775980402961** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
+
 Owner smoke content for Article-A 1775980402961.
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]

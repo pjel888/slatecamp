@@ -19,7 +19,6 @@ export function LandingPageFallback() {
         <HeroSection
           ctaHref={ROUTES.auth.register}
           ctaLabel='Join the Camp — Free'
-          isLoggedIn={false}
         />
         <SocialProofBar />
         <LogoMarquee />

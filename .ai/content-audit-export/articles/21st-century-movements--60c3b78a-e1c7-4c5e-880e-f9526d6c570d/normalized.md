@@ -1,5 +1,13 @@
 # 21st Century Movements
 
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **21st Century Movements** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
+
+
 ## Learning Goal
 
 By the end of this module, you will be able to distinguish Deconstructivism, High-Tech Architecture, and Parametricism by their formal language, theoretical roots, and key buildings — and explain why a given structure belongs to one movement and not another.

@@ -1,8 +1,12 @@
 # African Vernacular Earth Architecture
-## Learning Goal
-After reading this article, you should be able to:
 
-Identify the five major African vernacular earth construction traditions — adobe (southwest), rammed earth (North Africa), wattle-and-daub (sub-Saharan), mud brick (Sahel), and compressed earth block (modern adaptation) — by region, technique, and climatic response; recognize key examples (Great Mosque of Djenné, Kasbah of Aït Benhaddou, Dogon cliff dwellings) by their earth architecture typology.
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **African Vernacular Earth Architecture** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
+
 
 ## The Real-World Scenario (The Hook)
 

@@ -1,0 +1,38 @@
+# Articles Dry-Run Diff
+
+Batch: batch-003
+Target rows: 30
+Exact filter: wiki_articles.article_id per row.
+Rollback backup exists: yes.
+Quarantined IDs included: 0.
+
+- `f2c105fd-51fc-4b48-b53a-77242dbb91b0` / uap-spp-doc-standards-of-professional-practice-for-philippine-architects` sha256:b520555f6267c92fa811de21cb1b8dc7d1f17e531c016b649c8ae55faf8d2132 -> sha256:a48ba067197248c6bee7fef50dda31b68cd0ee0180ad788fce4d9e239f6de3da
+- `f7861b5b-0833-4cd3-a634-0dfb9f53891c` / spp-doc-209-architectural-consulting-services-pacs` sha256:d469f4ed1a8c7cf431b92eaefb9a8b4c83492c59b9d32860cde7f9efc04da744 -> sha256:45d73d98a31e5e57fe466410111424a1b25379d121ddf6cb0afd254613b9e162
+- `e37575ae-c640-4ddc-911a-7553f338b981` / lea-prac-svc-025-core-concept` sha256:7f3b6f741487eb2dc2f3e95ef34f80d65787aacedb98add8229a77f10e508f20 -> sha256:46f964e194d6b70bdeb13f0c26142cdcae0743ad4fdc69a7e3a3d9f85626b3fc
+- `1d37a355-c8bf-4d5e-a41b-07a9817a4427` / lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr` sha256:f907a8323a61b1e36fb715337645f9fc6d739a4903474bd51ee1e7e8245f0a52 -> sha256:01de28072bb10537a443ad9da41cebc3fbeae6ad247f1d22fb54f2b587c8a15c
+- `1277bf71-f3cc-4d29-86a8-8cadca0133f9` / lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration` sha256:0ea721ad82e09098473b3ca8d720e99f040ebd596c8c2f6503ca5f7c96383670 -> sha256:f91f13926131b7c282982ae8dd44881d893f78fe3ad199b667e4d420bbe5ce9c
+- `6604a199-6687-435d-aeb1-ffdc46be7d23` / lea-prac-eth-001-core-concept` sha256:54b536f8051c6d20dba353ec81a5d532a2046436fe6ce37c44810db9b7943bc0 -> sha256:6990994997770f91082d39c5713929976a2d8dfea21cedf8292ce9604bf5ebbb
+- `265185c0-c1ac-4f40-8db0-bde23084f634` / lea-prac-eth-010-introduction` sha256:f55b3c1d84f3bb345e6fe9494cf388c90daceedc99bda32cdba533f0310ccbb0 -> sha256:4e0bfeb574258e913d1232c3b7abffe1541282a0baddd0d245bf43a6ba75544c
+- `687e0da7-4e39-454f-b3f8-a95308678556` / building-permit-process` sha256:a77a9e2779f27c64a04e77f68d5cfbdb2c1948f16f5a188b2abb4d5d18ecfc04 -> sha256:d509f596fedfac9a5d2625bb022af9a9832be2bd07b6bb90abab78167eef5452
+- `02a5ba32-0443-4162-837d-326783ed77a2` / lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions` sha256:651b3b31b776eb33865db44015d9915d2883ee5a6bc8e43f579f2b07ec129cdc -> sha256:16a88300b782f048136e4e0e9f2a89fd127bcddd4187f042a9e45612320169b0
+- `c534d94f-967a-48bb-babf-419fa6d35ec7` / spp-doc-204-a-fulltime-supervision-services` sha256:17c16b6237aeb7ab6c925f243b2e9406fceb9133da0c36c7bafb2a7c794aa86c -> sha256:d6ba098ba5717be1abdac180dbcbb61f651977b3d571084a59db195b8ff14f8b
+- `0b116082-5275-4d0f-bb23-ce5b74339001` / lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic` sha256:eabd639142d2c5e9a4d7db98862a63455cd871043a4fb5e9e6ce3a681a1da11f -> sha256:df2a38c031e162d0e7da01c7d55face8b3244f4de43ce7d34bee400b2b1d27b9
+- `3a00f9dd-5b51-4ce3-9004-5ef0eec99a26` / lea-prac-svc-008-phases-4-and-5-bidding-assistance-and-construction-administration-under-spp-202` sha256:4b3b624768a96133c3051c78e0f8fc7dcf8ced15279f7aab540ecbd21bccb4e0 -> sha256:d0c6c27a2660f2c22a4a40435e0f8f64a70bcb981f6aa7570e35f39c32112a9e
+- `9a800f21-b26e-4e3e-94c8-2f4127eccd42` / spp-doc-203-specialized-architectural-services` sha256:f032df44330e102aa221ffa94b0edac80cd0495005382fb5b52e297fb6f028b1 -> sha256:705a960becd4340f7262da915ab6c51e8895008f2a33c0794eb563acdf28fb58
+- `fba5f537-2da9-4fb3-b6eb-696d1937a92a` / spp-doc-208-architectural-design-competition-adc` sha256:0dbf90e8f29cdd6b8d6ed687b7a5b95c2fa1c5db732948186f0ecb36209d4bc5 -> sha256:2f83270bb1b9871661d65f21690a7ece880c3dd9b79345cf60db87a538de4540
+- `16bb270e-6887-4bbe-a62e-eace6c4d3fdb` / spp-doc-201-pre-design-services` sha256:2dad925ad43ca035d2896b4ddc00acce8284752a016e0e74db71037844073737 -> sha256:94f1e451c0e52001fefdd84cdcae0eee27923a9abadbea6cd33ecf768f75840d
+- `f5ed9c09-3191-4cd4-b1b0-9e6364212c36` / spp-doc-204-b-construction-management-services` sha256:3aaaed18c4e6c3de36a82868fc28461fdb35f79fc4b68732d07e1782f213dbf0 -> sha256:d2c9b9c3bb89e216575af9306fc97a2bacfa61cf021dd8b8966785ff64bd4a4b
+- `f74f79a0-1477-481f-9050-fa43d82f18bd` / spp-doc-206-comprehensive-architectural-services` sha256:8653def3273e01c3d8ecfb056b9f901e39a27643cdc39dfafc12dbab46b91675 -> sha256:f73e398b9e23f27188735d2295d0024cf3557320a55fc618a0c9e06dc533b231
+- `3e530aa4-6004-4664-a241-9634a725bd5c` / lea-prac-svc-010-core-concept` sha256:ebfb67695892379d67192bcbcd919091538f9aaa23645ac5c2630e0f7566492c -> sha256:71afcd03a00c9bc0c868bd4b7bdebf34ddcdfe01f7c8401f872b1fb6f11e7a2d
+- `24b0a3db-e6bc-45d0-a9a1-d83009112efb` / spp-doc-202-regular-design-services` sha256:91cfb34021c897112d26cea3f36028309b94c92e565d8b72bd3cfd855e2ad22d -> sha256:a2e365bb81e2efe990f5f1481b616bd1aefa511220bd9cee2fd7065b46b3fc7c
+- `b3d5ae5b-09a9-426c-9feb-00932e5555aa` / lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-the-second-phase-under-spp-2022-following-project-definition-this-phase-translates-the-project-defini` sha256:48a39972a1e73da39e4de987f0b749a630aae9d9fbc694cc8f07e930ae9ef6a9 -> sha256:72f8915a99eddf13abda0c0d7795e832b400d3e4c914b56df150e62fce6d4624
+- `875396fa-1704-47b7-abb5-29f49c75fc78` / spp-doc-205-post-construction-services` sha256:4c36bba0243d0fbe3de9322871c1cba6515505ee54cde25a3cb421af137b6865 -> sha256:d964ca521659dfea22380344c7de6f8cfe37e065f35b67032d2e63ff7417dad8
+- `f76bad6c-4bdf-4d2c-bdfb-a3381c42e320` / spp-doc-207-design-build-services` sha256:1d80806d4aeb4dd0c1994185fc039cf5898e0f85256975a1cd18e998d41ef7f0 -> sha256:93c188c0236c395204c3f0c13c2793bade96451ff9bc8e0af7d4840d7f07b772
+- `bceaa05b-1eaa-4369-a29c-fbd8aef6937b` / lea-prac-eth-006-obligations-to-fellow-architects-non-poaching-non-interference-and-professional-courtesy` sha256:ae73e130976b5a21ab2e94f3b34cfdc67fffdbc06146ed3ce311ab98ef208747 -> sha256:ea2abe67642b2b71d93ebb8b651e91220946e727d164fb0c5e2b87f6743405b3
+- `7a7a042f-4e5c-4a7b-90d1-93895e551c6d` / lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters` sha256:a75c4bead0549a0800d5c9bcb4b6bb1141c473b83b2755302e498421b164bd26 -> sha256:b562e529750cb13088beb606f8fd58fcfedefddff25868f25191b1505d5223cd
+- `2ec8e3f1-4aa7-443f-8ca1-a77638b2a713` / lea-prac-svc-011-core-concept` sha256:d795f12b8d5b065d12fb18c93a565b4d15a065f6e5d3fb9f232d9aa5011ec361 -> sha256:20a357fcb966c7d05d3d1dae47463df44dc10ec0125ecdd5520fc82369a3d802
+- `9ce707aa-5e91-4f79-a5a6-8bcdf582fa57` / lea-prac-law-009-certificate-of-registration-oath-taking-and-the-professional-id-card` sha256:f0c56f2e3050f24fcadb6efeb33194b18870a63e41311fc84bd792414202aff4 -> sha256:ac2a0b512ff5ad013c6cd1bd1a3c9bb6adf0fe576fea946b51b1a8824ebf59d7
+- `31d08115-b5ff-4b0e-b33e-522e25800da4` / lea-prac-svc-014-construction-management-services-scope-and-professional-authority` sha256:7e0b8c341d567ef96ef5cdd3a24c05e9b195ef6799b874f79065ccedecfcf665 -> sha256:6b893bc1946a16e1c912b1adafb5b0e116cbe32cc830d9ccdda4c192b3df6f61
+- `303f8a75-b42b-4405-8c39-082b4d7b6322` / lea-prac-frm-021-quantity-surveying-and-cost-estimation-the-architect-s-role-vs-the-qs-professional-s-role` sha256:4f9ec35b56cc463a465643b0f3af830b5a0d64b07224ae74f9d2fe4763336dce -> sha256:dab45656084be8411c7408bc81bf1e8ca73824720f7252dbbcb80d087271ab99
+- `3d710cad-8857-4d44-891c-1b1a010de2cd` / overview-professional-practice` sha256:9b096c368ceb22b7cd59624cd094a35b7af86d53d9f5ac3f561ee4fe16dcb625 -> sha256:e8f45c50956d1faed769f2be46a5dd5d70a3a0f39b9a0ff219a02530fb092b50
+- `68dc5ecb-7b3f-4394-a7b7-770336b3ce98` / lea-util-001-06-core-concept` sha256:a88170e85ffc7e6a60e86ae50ddca3637c6aef0ae89c0e4ff1b9baa230139b34 -> sha256:a9e4b0b54ce2e6551fedf16c9d99a5a119abde083a1eb7cb37b029453cb6de14

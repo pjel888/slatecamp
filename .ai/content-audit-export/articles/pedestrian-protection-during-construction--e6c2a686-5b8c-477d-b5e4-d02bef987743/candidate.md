@@ -1,9 +1,12 @@
 # Pedestrian Protection During Construction
 
-**Module Focus:** PD 1096 National Building Code of the Philippines — Rule XI, Sections 1101–1108 (2004 Revised IRR)
-**LEA Area:** Building Technology & Utilities / Building Laws, Codes & Ethics
-**Difficulty:** Moderate — Heavily Metric & Detail-Oriented
-**Spaced Repetition:** Return in 3 days to redraw the walkway cross-section from memory, then again in 7 days to recite all dimensions without this page.
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Pedestrian Protection During Construction** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
+
 
 ## Learning Goal
 

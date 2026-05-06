@@ -1,6 +1,950 @@
-{
-  "articles_quarantined_from_all_articles_pass": 561,
-  "reason": "Broad all-article safe-learning pass requires reconciliation before publish because reviewer found publish-audit inconsistencies and validator warnings. Only independently reviewed smoke batch consolidated.",
-  "questions_quarantined": 3478,
-  "question_reason": "source/rationale/ambiguity risk; no answer keys changed"
-}
+[
+  {
+    "type": "question",
+    "batch": "question-batch-001",
+    "question_id": "efd55cf2-dbb3-4b7b-9eb2-e38bcdb51e2d",
+    "reason": "distractor leakage: generic/non-plausible distractors require source-grounded option rewrite"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-001",
+    "question_id": "274cacaf-64c4-4f85-a9f5-254707fae0fe",
+    "reason": "distractor leakage: geography wording allows elimination without testing target concept"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-001",
+    "question_id": "f06dc934-6ef5-442f-bb57-d56d73d84e8a",
+    "reason": "Psychometric reviewer rejected explanation as insufficiently question-specific; held for source-grounded rewrite."
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-001",
+    "question_id": "ae640469-4c88-4353-9ad1-0801e6f7ce6c",
+    "reason": "Psychometric reviewer rejected explanation as insufficiently question-specific; held for source-grounded rewrite."
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-001",
+    "question_id": "8c1258d5-8418-43bd-b42d-28acd94f3fef",
+    "reason": "Psychometric reviewer rejected explanation as insufficiently question-specific; held for source-grounded rewrite."
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-001",
+    "question_id": "b4864bda-0b9d-4da2-b226-fca9833aa239",
+    "reason": "Psychometric reviewer rejected explanation as insufficiently question-specific; held for source-grounded rewrite."
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-001",
+    "question_id": "13781414-6765-40a5-a91e-12fc2c66fa98",
+    "reason": "Psychometric reviewer rejected explanation as insufficiently question-specific; held for source-grounded rewrite."
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-001",
+    "question_id": "87a2f9f8-1a1b-43c9-b5ee-fc8042301a1f",
+    "reason": "Psychometric reviewer rejected explanation as insufficiently question-specific; held for source-grounded rewrite."
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-001",
+    "question_id": "cf5efe9f-160b-432e-bb8c-2c0e02ea12da",
+    "reason": "Psychometric reviewer rejected explanation as insufficiently question-specific; held for source-grounded rewrite."
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-002",
+    "question_id": "76487c6c-c954-4e2b-8630-f3d0834b87e6",
+    "reason": "Batch 002 reviewer quarantine: either existing explanation overwrite risk, source/legal/dimensional risk, duplicate/repeated item risk, or weak explanation specificity."
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-002",
+    "question_id": "b67cd010-7ae2-4390-b00f-dfb32ac2a53c",
+    "reason": "Batch 002 reviewer quarantine: either existing explanation overwrite risk, source/legal/dimensional risk, duplicate/repeated item risk, or weak explanation specificity."
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-002",
+    "question_id": "d87cedac-1298-4a9f-9529-083820dc98f5",
+    "reason": "Batch 002 reviewer quarantine: either existing explanation overwrite risk, source/legal/dimensional risk, duplicate/repeated item risk, or weak explanation specificity."
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-002",
+    "question_id": "021ea046-dbd5-4341-8186-e21d3dbae0a3",
+    "reason": "Batch 002 reviewer quarantine: either existing explanation overwrite risk, source/legal/dimensional risk, duplicate/repeated item risk, or weak explanation specificity."
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-002",
+    "question_id": "dcb1e1ac-e0ba-4363-bf8d-177a3f64cbc3",
+    "reason": "Batch 002 reviewer quarantine: either existing explanation overwrite risk, source/legal/dimensional risk, duplicate/repeated item risk, or weak explanation specificity."
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-002",
+    "question_id": "3ab438bf-bbc0-40b9-9373-05329ee30845",
+    "reason": "Batch 002 reviewer quarantine: either existing explanation overwrite risk, source/legal/dimensional risk, duplicate/repeated item risk, or weak explanation specificity."
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-002",
+    "question_id": "fda8e423-dbfe-4e84-ab27-35c277ff1648",
+    "reason": "Batch 002 reviewer quarantine: either existing explanation overwrite risk, source/legal/dimensional risk, duplicate/repeated item risk, or weak explanation specificity."
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-002",
+    "question_id": "d57576a2-f04c-46c2-af65-64734f477125",
+    "reason": "Batch 002 reviewer quarantine: either existing explanation overwrite risk, source/legal/dimensional risk, duplicate/repeated item risk, or weak explanation specificity."
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-002",
+    "question_id": "bb33ee43-283d-468d-aad5-1851247e0bf3",
+    "reason": "Batch 002 reviewer quarantine: either existing explanation overwrite risk, source/legal/dimensional risk, duplicate/repeated item risk, or weak explanation specificity."
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-002",
+    "question_id": "047ce021-bf5b-41a4-a8f4-1618ff5b2786",
+    "reason": "Batch 002 reviewer quarantine: either existing explanation overwrite risk, source/legal/dimensional risk, duplicate/repeated item risk, or weak explanation specificity."
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-002",
+    "question_id": "ed42fb5f-1234-4a73-aa2f-b7da7a2c6bbf",
+    "reason": "Batch 002 reviewer quarantine: either existing explanation overwrite risk, source/legal/dimensional risk, duplicate/repeated item risk, or weak explanation specificity."
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-002",
+    "question_id": "0d611840-6387-49d4-b90e-e6a820f3ee14",
+    "reason": "Batch 002 reviewer quarantine: either existing explanation overwrite risk, source/legal/dimensional risk, duplicate/repeated item risk, or weak explanation specificity."
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-002",
+    "question_id": "8afa879e-ea02-485e-9eb4-3581ee93e538",
+    "reason": "Batch 002 reviewer quarantine: either existing explanation overwrite risk, source/legal/dimensional risk, duplicate/repeated item risk, or weak explanation specificity."
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-002",
+    "question_id": "8fd2e1ff-54d8-4a1c-8a01-eb0b01f33b29",
+    "reason": "Batch 002 reviewer quarantine: either existing explanation overwrite risk, source/legal/dimensional risk, duplicate/repeated item risk, or weak explanation specificity."
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-002",
+    "question_id": "6ddcb275-c4dc-4300-97d3-e7ed4e9fab6f",
+    "reason": "Batch 002 reviewer quarantine: either existing explanation overwrite risk, source/legal/dimensional risk, duplicate/repeated item risk, or weak explanation specificity."
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-002",
+    "question_id": "b192e00e-2d3f-4f05-b959-e7ec2caaf897",
+    "reason": "Batch 002 reviewer quarantine: either existing explanation overwrite risk, source/legal/dimensional risk, duplicate/repeated item risk, or weak explanation specificity."
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-002",
+    "question_id": "5dbcf1b1-f706-4ca3-b101-19d46d446b80",
+    "reason": "Batch 002 reviewer quarantine: either existing explanation overwrite risk, source/legal/dimensional risk, duplicate/repeated item risk, or weak explanation specificity."
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-002",
+    "question_id": "caa4b075-4de9-4f10-8f04-7c8f352ec1a7",
+    "reason": "Batch 002 reviewer quarantine: either existing explanation overwrite risk, source/legal/dimensional risk, duplicate/repeated item risk, or weak explanation specificity."
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-002",
+    "question_id": "45b86527-bd11-4ce4-9b1c-3e2a94f68138",
+    "reason": "Batch 002 reviewer quarantine: either existing explanation overwrite risk, source/legal/dimensional risk, duplicate/repeated item risk, or weak explanation specificity."
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-002",
+    "question_id": "1c4e9c82-9c5c-4ed9-8ee1-3dfb069fcaea",
+    "reason": "Batch 002 reviewer quarantine: either existing explanation overwrite risk, source/legal/dimensional risk, duplicate/repeated item risk, or weak explanation specificity."
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-002",
+    "question_id": "447f242f-f2fe-4e46-b760-96088aa9cb70",
+    "reason": "Batch 002 reviewer quarantine: either existing explanation overwrite risk, source/legal/dimensional risk, duplicate/repeated item risk, or weak explanation specificity."
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-002",
+    "question_id": "f304b641-6cd2-4174-83d8-1e99572eda8a",
+    "reason": "Batch 002 reviewer quarantine: either existing explanation overwrite risk, source/legal/dimensional risk, duplicate/repeated item risk, or weak explanation specificity."
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-002",
+    "question_id": "b4bc3006-6beb-4731-b91f-16a186c743f8",
+    "reason": "Batch 002 reviewer quarantine: either existing explanation overwrite risk, source/legal/dimensional risk, duplicate/repeated item risk, or weak explanation specificity."
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-002",
+    "question_id": "7fc1c331-4b0b-40b6-9236-aeb7e4a89cb6",
+    "reason": "Batch 002 reviewer quarantine: either existing explanation overwrite risk, source/legal/dimensional risk, duplicate/repeated item risk, or weak explanation specificity."
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-002",
+    "question_id": "719a26b0-9c53-4dda-8014-9f5873f2def2",
+    "reason": "Batch 002 reviewer quarantine: either existing explanation overwrite risk, source/legal/dimensional risk, duplicate/repeated item risk, or weak explanation specificity."
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-003",
+    "question_id": "02c48c83-807e-4ada-876e-6329d8030ae8",
+    "reason": "source/fact/legal reviewer quarantine"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-003",
+    "question_id": "749e15b5-067f-4c38-a4fb-f105bd61cf72",
+    "reason": "source/fact/legal reviewer quarantine"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-003",
+    "question_id": "2c785f40-5853-43f7-aac4-d625a389fb59",
+    "reason": "source/fact/legal reviewer quarantine"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-003",
+    "question_id": "29c88c97-2e22-4c46-a825-d8465e805671",
+    "reason": "source/fact/legal reviewer quarantine"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-003",
+    "question_id": "f1d8b55e-144a-4637-bcd6-d3c47fcd89cd",
+    "reason": "source/fact/legal reviewer quarantine"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-003",
+    "question_id": "fb69fe01-691f-43e0-837b-b3cc4165ad25",
+    "reason": "source/fact/legal reviewer quarantine"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-003",
+    "question_id": "fffa260f-fb8a-45fc-90fc-b4c9918cbcb0",
+    "reason": "source/fact/legal reviewer quarantine"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-003",
+    "question_id": "39e32c3f-ef26-49ae-b227-992489e1185e",
+    "reason": "source/fact/legal reviewer quarantine"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-003",
+    "question_id": "a0780570-b344-4882-b84d-8171e14f8d34",
+    "reason": "source/fact/legal reviewer quarantine"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-003",
+    "question_id": "243e69d0-41d8-4a84-a77c-0bc687accf9f",
+    "reason": "psychometric reviewer quarantine"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-003",
+    "question_id": "0ce551e5-7a00-45fd-b85d-af56fedecacd",
+    "reason": "psychometric reviewer quarantine"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-003",
+    "question_id": "61f6ff10-535a-4d75-ba53-f7967fa7d7ef",
+    "reason": "psychometric reviewer quarantine"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-003",
+    "question_id": "a443feb9-74f8-4b02-8c09-95898544c1f1",
+    "reason": "psychometric reviewer quarantine"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-003",
+    "question_id": "723664a6-920f-4654-b1cf-cbf9bcfd5fe9",
+    "reason": "psychometric reviewer quarantine"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-003",
+    "question_id": "49c78a07-b037-4d82-ad78-5f361373fd80",
+    "reason": "psychometric reviewer quarantine"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-003",
+    "question_id": "d403f5e5-5678-484a-b599-cb97b6d35385",
+    "reason": "source/fact/legal reviewer quarantine; psychometric reviewer quarantine"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-003",
+    "question_id": "859d5142-6fc7-4f71-bde6-cf91404c644e",
+    "reason": "source/fact/legal reviewer quarantine; psychometric reviewer quarantine"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-003",
+    "question_id": "fee22955-47bf-4b8b-835f-0be2fb9b1437",
+    "reason": "source/fact/legal reviewer quarantine; psychometric reviewer quarantine"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-003",
+    "question_id": "5c4f9e3d-3f64-4f69-9501-9be7ef2d88fb",
+    "reason": "source/fact/legal reviewer quarantine; psychometric reviewer quarantine"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-003",
+    "question_id": "97ee3719-36f9-4d3d-9bb9-36cdc3f4df39",
+    "reason": "source/fact/legal reviewer quarantine; psychometric reviewer quarantine"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-004",
+    "question_id": "66516db2-db2a-440a-94b6-bb4c0523248b",
+    "reason": "Batch 004 reviewer quarantine: generic/meta distractor leakage, dimensional/source issue, legal/professional-practice source risk, clueing, or explanation mismatch."
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-004",
+    "question_id": "f1a85068-6a6a-4460-a5b1-138b4fbaaaef",
+    "reason": "Batch 004 reviewer quarantine: generic/meta distractor leakage, dimensional/source issue, legal/professional-practice source risk, clueing, or explanation mismatch."
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-004",
+    "question_id": "d0bc6355-989a-4c28-ab24-1b45f77d2b33",
+    "reason": "Batch 004 reviewer quarantine: generic/meta distractor leakage, dimensional/source issue, legal/professional-practice source risk, clueing, or explanation mismatch."
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-004",
+    "question_id": "4753af53-ba8d-43ce-b394-9b296fbf0ddc",
+    "reason": "Batch 004 reviewer quarantine: generic/meta distractor leakage, dimensional/source issue, legal/professional-practice source risk, clueing, or explanation mismatch."
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-004",
+    "question_id": "0d780029-cb84-4b01-b209-27d6bf4cc84d",
+    "reason": "Batch 004 reviewer quarantine: generic/meta distractor leakage, dimensional/source issue, legal/professional-practice source risk, clueing, or explanation mismatch."
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-004",
+    "question_id": "91a1762d-fd1b-4b53-941e-857f082552b1",
+    "reason": "Batch 004 reviewer quarantine: generic/meta distractor leakage, dimensional/source issue, legal/professional-practice source risk, clueing, or explanation mismatch."
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-004",
+    "question_id": "c788a60a-dbaa-4899-8cbd-7aac003c6ab5",
+    "reason": "Batch 004 reviewer quarantine: generic/meta distractor leakage, dimensional/source issue, legal/professional-practice source risk, clueing, or explanation mismatch."
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-004",
+    "question_id": "48f785ec-9de2-4730-9d7a-caee3a3d5255",
+    "reason": "Batch 004 reviewer quarantine: generic/meta distractor leakage, dimensional/source issue, legal/professional-practice source risk, clueing, or explanation mismatch."
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-004",
+    "question_id": "16be0c8c-fd08-4975-9161-30aca7bd6545",
+    "reason": "Batch 004 reviewer quarantine: generic/meta distractor leakage, dimensional/source issue, legal/professional-practice source risk, clueing, or explanation mismatch."
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-005",
+    "question_id": "afb1c9d5-6350-46d2-9bc4-72504a6bf400",
+    "reason": "Batch 005 reviewer quarantine: professional-practice/legal/contract-certification authority source-gap risk"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-005",
+    "question_id": "7535c69b-0458-4bf1-959e-b59e4d075151",
+    "reason": "Batch 005 reviewer quarantine: professional-practice change-order content and mismatched rationale"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-005",
+    "question_id": "454575e9-2358-4cc9-8053-99ed9eb9b830",
+    "reason": "Batch 005 reviewer quarantine: unsupported professional-practice/legal extension authority claim"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-005",
+    "question_id": "801b6a9a-99be-47d5-ab33-d9f4d99c0adb",
+    "reason": "Batch 005 reviewer quarantine: mismatched rationale reused into explanation"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-005",
+    "question_id": "d1a2e253-2506-43a3-a2e5-03c8526600cf",
+    "reason": "Batch 005 reviewer quarantine: mismatched rationale and dimensional/source ambiguity"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-005",
+    "question_id": "d37851d7-dd68-480b-8783-1aa5ce3fbdc8",
+    "reason": "Batch 005 reviewer quarantine: professional-practice/regulatory content and mismatched rationale"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-005",
+    "question_id": "ebd969ea-b72f-4003-b914-5bf486f93ed2",
+    "reason": "Batch 005 reviewer quarantine: answer-key uncertainty and mismatched rationale"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-005",
+    "question_id": "f6761609-3506-4e9c-b35c-772a2f9125d7",
+    "reason": "Batch 005 reviewer quarantine: professional-practice/legal contract-compliance source-gap risk"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-005",
+    "question_id": "14922cc7-cfd5-4e61-a675-ed77a34e05d1",
+    "reason": "Batch 005 reviewer quarantine: generic/meta boilerplate explanation"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-005",
+    "question_id": "290e8c56-bb35-47ea-a100-c08c6b380d11",
+    "reason": "Batch 005 reviewer quarantine: generic/meta boilerplate and technical terminology ambiguity"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-005",
+    "question_id": "850378e9-4dd3-4d88-908e-983f10ead976",
+    "reason": "Batch 005 reviewer quarantine: generic/meta boilerplate explanation"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-005",
+    "question_id": "773e71c5-d2c8-4e8f-8109-1575dfc9b17d",
+    "reason": "Batch 005 reviewer quarantine: generic/meta boilerplate explanation"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-005",
+    "question_id": "1b1f0cff-02cb-4173-9ef2-f2dece83f2cc",
+    "reason": "Batch 005 reviewer quarantine: generic/meta boilerplate explanation"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-005",
+    "question_id": "e5d3a413-d0c0-4d4c-9fd3-119918592779",
+    "reason": "Batch 005 reviewer quarantine: generic/meta boilerplate explanation"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-005",
+    "question_id": "056e3237-b29b-42f2-844e-3093eac999ec",
+    "reason": "Batch 005 reviewer quarantine: generic/meta boilerplate explanation"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-005",
+    "question_id": "5ae93402-3960-4b79-b6ad-d5affb1210e1",
+    "reason": "Batch 005 reviewer quarantine: stem typo sclea requires correction scope, not explanation-only publish"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-006",
+    "question_id": "3262c3f5-1a71-44ef-8ea0-cba350558f80",
+    "reason": "Batch 006 reviewer quarantine: answer-key ambiguity and option-length/clueing in MFA security item"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-006",
+    "question_id": "a2219d23-f6d9-4427-b70d-254ad7a2d359",
+    "reason": "Batch 006 reviewer quarantine: generic/meta unrelated distractor leakage about electrical standard/network configuration"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-006",
+    "question_id": "428e42b4-9c1e-4c80-adfc-20d4504813dd",
+    "reason": "Batch 006 reviewer quarantine: rezoning legality/professional-practice source-gap and absolute distractor language"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-006",
+    "question_id": "68090083-0ff0-447f-89c0-15b1585bc48a",
+    "reason": "Batch 006 reviewer quarantine: legal enforceability claim/source-gap and answer-key certainty risk"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-006",
+    "question_id": "dddba217-806c-48b8-9860-3c627f973e1f",
+    "reason": "Batch 006 reviewer quarantine: legal/professional-practice process ambiguity for zoning amendment/variance/conditional use"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-006",
+    "question_id": "d5ecaa5a-46f3-4603-91c9-b5bbebf41ac1",
+    "reason": "Batch 006 reviewer quarantine: legal overstatement, invalid vs legally vulnerable distinction unresolved"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-006",
+    "question_id": "dede4a4a-1ed5-431c-9374-cac9e5312de4",
+    "reason": "Batch 006 reviewer quarantine: activity vs relationship classification ambiguity"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-006",
+    "question_id": "be4d29c4-ef64-4a82-a073-7fa2292d2a23",
+    "reason": "Batch 006 reviewer quarantine: duplicate/repeated Speyer Cathedral stem cluster"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-006",
+    "question_id": "60d02528-8c63-4dff-97c1-0ad177214339",
+    "reason": "Batch 006 reviewer quarantine: duplicate/repeated Speyer Cathedral stem cluster"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-007",
+    "question_id": "2e916f14-03d0-4b76-b5ee-ad5033e361b5",
+    "reason": "Batch 007 reviewer quarantine: option-length giveaway in Cluny III item"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-007",
+    "question_id": "ee42877a-4fc5-41d1-938c-6c823f9df94b",
+    "reason": "Batch 007 reviewer quarantine: IES 300-500 lux exact standard claim source verification required"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-007",
+    "question_id": "69766551-0f0c-4cd4-b59a-3b3bcefe596c",
+    "reason": "Batch 007 reviewer quarantine: IES uniformity ratio 0.6 exact standard claim source verification required"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-007",
+    "question_id": "4e65f0c0-d2ff-4bac-897b-e739415182ac",
+    "reason": "Batch 007 reviewer quarantine: hospital ward 100 lux/3000K Philippine/IES standard source risk"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-007",
+    "question_id": "d9b5f4e3-065c-453f-8016-0d52c846bd43",
+    "reason": "Batch 007 reviewer quarantine: OR 100000 lux/ASHRAE claim plus option-length clueing"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-007",
+    "question_id": "b761cd1c-3adb-4190-a5c9-71ef272c55b8",
+    "reason": "Batch 007 reviewer quarantine: retail/cosmetics CRI 90+ exact standard source risk"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-007",
+    "question_id": "d31bcd1a-10d9-4c8a-9356-206ce3d52938",
+    "reason": "Batch 007 reviewer quarantine: pharmaceutical lab lux/CRI/CCT/UR exact standard claims and option-length clueing"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-007",
+    "question_id": "42eb64fa-499b-4143-b951-5efa7a6163c5",
+    "reason": "Batch 007 reviewer quarantine: Filipino residential seating 60-75cm dimensional/cultural source overgeneralization risk"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-007",
+    "question_id": "4bf7f032-f91c-416a-9163-e18e88c4d899",
+    "reason": "Batch 007 reviewer quarantine: severe option-length giveaway"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-007",
+    "question_id": "272c520c-ebd2-4bb0-a4ff-e2bc29cddf0f",
+    "reason": "Batch 007 reviewer quarantine: duplicated rationale/explanation surface-quality failure"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-007",
+    "question_id": "28d2c49d-de58-4183-9043-9eb9e40b3317",
+    "reason": "Batch 007 reviewer quarantine: duplicated rationale/explanation quality issue"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-007",
+    "question_id": "99d62df8-c92b-41f4-990a-366bb0c687d1",
+    "reason": "Batch 007 reviewer quarantine: option-length giveaway"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-007",
+    "question_id": "bd4686a0-7fe1-4ed4-a3ee-9ac131e909ac",
+    "reason": "Batch 007 reviewer quarantine: professional/legal liability overstatement risk"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-007",
+    "question_id": "66966b70-ada6-4fba-8612-a01bdcb767ab",
+    "reason": "Batch 007 reviewer quarantine: proper-name typo and option-length giveaway"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-007",
+    "question_id": "f3e077bd-ba9b-420b-bb1a-d313bd1c73ce",
+    "reason": "Batch 007 reviewer quarantine: proper-name typo Andre/Andrea Palladio"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-007",
+    "question_id": "f1754aeb-6464-425d-98a9-c596e63ac142",
+    "reason": "Batch 007 reviewer quarantine: severe option-length giveaway"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-007",
+    "question_id": "8f2923dc-6ac7-40fe-92bb-ac29b1f39476",
+    "reason": "Batch 007 reviewer quarantine: severe option-length giveaway and weak distractors"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-007",
+    "question_id": "8a51628d-86d8-43e4-b42c-d55b7df25981",
+    "reason": "Batch 007 reviewer quarantine: professional-practice/CAS coordination source-gap and possible scope overstatement"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-007",
+    "question_id": "0cd4f367-83fa-4ff5-8f52-d46bc102be40",
+    "reason": "Batch 007 reviewer quarantine: professional responsibility/civil liability legal overstatement risk"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-007",
+    "question_id": "c774555c-0d1d-42b8-a58b-1e8854ce4cb7",
+    "reason": "Batch 007 reviewer quarantine: architect prime professional/client agent professional-practice source-gap"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-007",
+    "question_id": "4ce45e1a-c11d-41c4-b30e-da46213a25e8",
+    "reason": "Batch 007 reviewer quarantine: SPP phase claim and composite/ambiguous option; professional-practice source risk"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-007",
+    "question_id": "8b646a53-5989-4195-87b5-b876d74843c4",
+    "reason": "Batch 007 reviewer quarantine: CAS multidisciplinary coordination source-gap"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-007",
+    "question_id": "304030e9-5eb4-4cd0-b3c1-c81be955f91d",
+    "reason": "Batch 007 reviewer quarantine: architect as agent/client professional integrity legal/professional-practice risk"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-007",
+    "question_id": "57ac8070-f0a8-43ff-bdc1-c8c5ca52b66d",
+    "reason": "Batch 007 reviewer quarantine: specialized vs regular services professional-practice classification source-gap"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-007",
+    "question_id": "bef77a69-327c-459e-b11d-918086a5fe4a",
+    "reason": "Batch 007 reviewer quarantine: CAS lifecycle category professional-practice source-gap"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-007",
+    "question_id": "7c00e128-1eaa-4d5d-92a7-49eda97f2f8e",
+    "reason": "Batch 007 reviewer quarantine: ambiguous key/project management vs CAS and professional-practice source risk"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-007",
+    "question_id": "6e1ff2cb-3f16-42ee-b391-3414c262f2fc",
+    "reason": "Batch 007 reviewer quarantine: RA 8371/FPIC legal source verification required"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-007",
+    "question_id": "d4c1affb-3c2a-41d5-a43f-c8095c387c70",
+    "reason": "Batch 007 reviewer quarantine: RA 7277/BP344 accessibility legal dimensional inconsistency"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-007",
+    "question_id": "2099f6e7-74a0-4318-b95a-b5265944907b",
+    "reason": "Batch 007 reviewer quarantine: RA 10121/planning program causal claim source verification required"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-007",
+    "question_id": "f23e182c-d100-47f5-b624-83b7aab273c0",
+    "reason": "Batch 007 reviewer quarantine: disaster housing/Post-Yolanda planning source verification required"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-007",
+    "question_id": "33fcd5e0-4253-49a2-9295-2c5aea60b44b",
+    "reason": "Batch 007 reviewer quarantine: RA 7277 universal accessible design broad legal mandate source risk"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-007",
+    "question_id": "c454a1ba-6fb0-4949-9912-1a7698127a12",
+    "reason": "Batch 007 reviewer quarantine: RA10121 recovery mandate source risk and option-length giveaway"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-008",
+    "question_id": "dc04ad0e-93db-4dc2-8829-ae1760ee1072",
+    "reason": "Batch 008 reviewer quarantine: RA9257/DHSUD senior housing legal attribution source-risk"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-008",
+    "question_id": "fef2e489-9ad1-4ccb-ba2c-1f5f7764922b",
+    "reason": "Batch 008 reviewer quarantine: DHSUD housing policy/program funding source-risk"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-008",
+    "question_id": "0619bbcb-4794-477e-bf46-d88794649473",
+    "reason": "Batch 008 reviewer quarantine: BP344 ramp slope answer-key/content contradiction; legal/code unsafe"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-008",
+    "question_id": "1739337c-b67d-4e37-b92e-e97729ce3394",
+    "reason": "Batch 008 reviewer quarantine: BP344/RA10066/NBC variance/NHCP legal-code compliance risk"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-008",
+    "question_id": "8a98aef9-0ec2-44b3-9997-6ce70ed82125",
+    "reason": "Batch 008 reviewer quarantine: RA10066/BP344/PD1096/NHCP legal-code identification source-risk"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-008",
+    "question_id": "648e498c-4fcb-447c-96cd-5b38b07f5ddb",
+    "reason": "Batch 008 reviewer quarantine: NHCP/Venice Charter preservation regulatory source-risk"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-008",
+    "question_id": "d3296a38-6fa1-4587-91bd-c9ecfa054644",
+    "reason": "Batch 008 reviewer quarantine: NHCP preservation/reversible intervention regulatory source-risk"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-008",
+    "question_id": "7a5cd003-7197-4406-8320-9336ee3ed844",
+    "reason": "Batch 008 reviewer quarantine: RA10066 NHCP clearance legal/regulatory source-risk"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-008",
+    "question_id": "dd7eb8c9-0c40-4101-a106-8062190a2102",
+    "reason": "Batch 008 reviewer quarantine: NBC occupancy/RA9514 cross-code ambiguity and clueing"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-008",
+    "question_id": "b26b6881-a570-410c-bfd2-743872506172",
+    "reason": "Batch 008 reviewer quarantine: overbroad dome/heavy/thick-wall factual uncertainty"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-008",
+    "question_id": "ef6f21c7-eed0-4da6-a9e5-c5daafa36b93",
+    "reason": "Batch 008 reviewer quarantine: Palazzo Farnese/colossal order factual uncertainty needs source verification"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-008",
+    "question_id": "d905acf1-6d69-4aad-b4fa-bf27c1af0135",
+    "reason": "Batch 008 reviewer quarantine: UAP SPP architect selection/lowest-bid professional-practice source-risk"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-008",
+    "question_id": "e42464b4-5bd6-48be-93bd-d6fc378f439f",
+    "reason": "Batch 008 reviewer quarantine: IAPOA under RA9266/SPP professional-practice source-risk"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-008",
+    "question_id": "2c8d742c-4c03-44c9-b34f-8a19f772466b",
+    "reason": "Batch 008 reviewer quarantine: UAP SPP effectivity date/PRC board resolution source-risk"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-008",
+    "question_id": "ef5a28ce-610a-48c7-a3b7-2aeabf1617a2",
+    "reason": "Batch 008 reviewer quarantine: SPP document numbering/replacement professional-practice source-risk"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-008",
+    "question_id": "6959881a-e9a0-44a3-b7c5-35a1aec20712",
+    "reason": "Batch 008 reviewer quarantine: SPPCC definition/PRC institutional role source-risk"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-008",
+    "question_id": "e65cfa10-7569-42df-a72c-1176c0ce5bf9",
+    "reason": "Batch 008 reviewer quarantine: foreign architect practice requirements TSP/DOLE/PRC/RA9266 legal source-risk"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-008",
+    "question_id": "97530be3-4382-434c-b56d-8bca7da48893",
+    "reason": "Batch 008 reviewer quarantine: UAP SPP document count including Annex A source-risk"
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-009",
+    "question_id": "bc870153-5fdc-4c29-8af7-3a71ed92526e",
+    "reason": "Batch 009 reviewer quarantine: Weak generated explanation; correct rationale and takeaway duplicated nearly verbatim."
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-009",
+    "question_id": "ae2e8fd0-280e-4e89-9adb-44aa80143f43",
+    "reason": "Batch 009 reviewer quarantine: Weak generated explanation with duplicated correct/takeaway and doubled punctuation."
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-009",
+    "question_id": "3dd6c51b-75ad-4bae-9717-950fdc06193b",
+    "reason": "Batch 009 reviewer quarantine: Strong option-length giveaway and duplicated explanation."
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-009",
+    "question_id": "8b08c08d-fa4b-4168-8e48-568dbe18c2d7",
+    "reason": "Batch 009 reviewer quarantine: Weak duplicated explanation; potential factual/ambiguity concern for Church of the Light/Critical Regionalism."
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-009",
+    "question_id": "3ba6183c-be1a-4e8f-a428-8ba86bf83a4c",
+    "reason": "Batch 009 reviewer quarantine: Weak duplicated explanation and overbroad Critical Regionalism rationale."
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-009",
+    "question_id": "18cc6036-17b8-4207-976b-16d83f01dead",
+    "reason": "Batch 009 reviewer quarantine: Stem typo/professionalism issue: tleant/talent; award naming weakness."
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-009",
+    "question_id": "442e0cfd-f922-457e-9e5f-170e4563c4bd",
+    "reason": "Batch 009 reviewer quarantine: Strong option-length/style giveaway; correct option is only short bare-name option."
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-009",
+    "question_id": "f877fd65-1347-439f-9bb3-e57c8c0abf2d",
+    "reason": "Batch 009 reviewer quarantine: Stem typo/professionalism issue: femlea/female."
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-009",
+    "question_id": "0764b121-c781-4680-bf92-e329b22f5ac3",
+    "reason": "Batch 009 reviewer quarantine: Ambiguous/flawed stem; keyed answer is negating statement rather than architect pair; answer-key uncertainty."
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-009",
+    "question_id": "8b9f432f-bb08-4267-a6e2-62b058bd8fc0",
+    "reason": "Batch 009 reviewer quarantine: Answer-key/publish validity failure: keyed 2026 but rationale says no second Chilean Pritzker laureate as of March 2026; meta-remediation language present."
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-009",
+    "question_id": "30137711-7cb1-4d1b-8eab-2932a1fe0553",
+    "reason": "Batch 009 reviewer quarantine: Rationale factual mismatch: says Dancing House 1999 earlier than Bilbao though Bilbao is 1997; subjective most-iconic claim."
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-009",
+    "question_id": "88e587a6-8889-4a80-9940-3836dea4de15",
+    "reason": "Batch 009 reviewer quarantine: Dimensional/statistical percentage claim lacks item-level official source evidence."
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-009",
+    "question_id": "f4dfa4e2-0bcb-45ea-bc31-878d00ab8610",
+    "reason": "Batch 009 reviewer quarantine: Over-absolute exterior granite/marble practice claim and option-length clueing."
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-009",
+    "question_id": "d3ab72e4-30ff-4855-aaf4-6cf76f531983",
+    "reason": "Batch 009 reviewer quarantine: Over-absolute marble exterior/material-practice claim and severe option-length clueing."
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-009",
+    "question_id": "e4e2391e-dc72-4f32-94bd-fe7b5076e477",
+    "reason": "Batch 009 reviewer quarantine: Numeric clueing and overbroad travertine exposure recommendation."
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-009",
+    "question_id": "bbdc625a-aed1-4fcd-a6ac-553e02ff7b31",
+    "reason": "Batch 009 reviewer quarantine: Stem/citation typo: sclea/scale."
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-009",
+    "question_id": "e621d7c1-75cc-4c48-9289-9087d30913f8",
+    "reason": "Batch 009 reviewer quarantine: Over-absolute marble=interior/granite=exterior practice takeaway without source qualification."
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-009",
+    "question_id": "57a5181c-b039-42f2-aba3-6bcbd0a8369f",
+    "reason": "Batch 009 reviewer quarantine: Dirty/weak explanation with stray quote punctuation and duplicated takeaway."
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-009",
+    "question_id": "858f5e0b-e44b-4410-90aa-d921a7e864aa",
+    "reason": "Batch 009 reviewer quarantine: Dirty/weak explanation with quote artifacts and awkward duplicated source phrasing."
+  },
+  {
+    "type": "question",
+    "batch": "question-batch-009",
+    "question_id": "e6986094-7029-4024-97c4-406cfd08c254",
+    "reason": "Batch 009 reviewer quarantine: Dirty/weak explanation with duplicated quoted source text and stray punctuation."
+  }
+]

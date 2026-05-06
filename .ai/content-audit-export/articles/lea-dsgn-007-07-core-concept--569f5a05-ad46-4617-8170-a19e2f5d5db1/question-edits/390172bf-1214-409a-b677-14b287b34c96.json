@@ -1,0 +1,10 @@
+{
+  "question_id": "390172bf-1214-409a-b677-14b287b34c96",
+  "baseline_hash": "sha256:e86cf8b820307220a5ae14c16c321eef8d43c283cdb95fbbaf6e647e22cea4d5",
+  "reason": "Strict explanation backfill from existing specific rationale; answer key and options unchanged.",
+  "approved_by": "hermes-question-remediation-autopilot",
+  "approved_at": "2026-05-06T11:21:36.812Z",
+  "proposed": {
+    "explanation": "Correct FLAR value but incorrect reasoning (R-2 range is 1.5–2.5, but this problem specifies 2.0 limit, which is stricter or specific to this zoning condition). Wrong FLAR value; 4×320÷800 ≠ 2.0. Wrong FLAR value; miscalculation or confusion with different lot size. TGFA = 4×320 = 1,280 sqm. FLAR = 1,280÷800 = 1.60. Limit is 2.0, so 1.60 < 2.0 ✓ compliant. FLAR = TGFA ÷ TLA. Compare result against zoning limit. In this case, 1.60 < 2.0, so design is compliant."
+  }
+}

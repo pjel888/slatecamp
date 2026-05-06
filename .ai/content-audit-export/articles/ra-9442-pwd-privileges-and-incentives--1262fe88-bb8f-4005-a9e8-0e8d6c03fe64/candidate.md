@@ -1,6 +1,12 @@
 # RA 9442 PWD Privileges and Incentives
 
-_Aligned with RA 7277, RA 9442, RA 10754, and your BP 344 / PD 1096 files.[file:1][file:2][web:20][web:23][web:29]_
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **RA 9442 PWD Privileges and Incentives** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
+
 
 ## Learning Goal
 

@@ -122,3 +122,12 @@ BP 344 (2024 Revised IRR) mandates a **1:20 maximum ramp slope** for accessible 
 
 ---
 **Note on sources**: This article references BP 344 (2024 Revised IRR), RA 7277 (Magna Carta for Disabled Persons), RA 9266 and its IRR, and UAP SPP Document 201. Candidates should consult the official 2024 Revised IRR of BP 344 published by the DPWH and NCDA for the complete and authoritative text.
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Prac Frm 018 Universal Design In Practice Bp 344 Ra 7277 And The Architect S Affirmative Duty** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?

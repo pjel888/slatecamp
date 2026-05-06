@@ -1,0 +1,585 @@
+[
+  {
+    "question_id": "3262c3f5-1a71-44ef-8ea0-cba350558f80",
+    "article_id": "1edce199-0fc2-42e8-bad6-f3a74243626e",
+    "article_dir": ".ai/content-audit-export/articles/lea-util-004-06-cctv-systems--1edce199-0fc2-42e8-bad6-f3a74243626e",
+    "title": "lea-util-004-06-cctv-systems",
+    "baseline_hash": "sha256:0eec3cbe623e971370c9e71e412d540fc264b804f5e30a921da9ab694f334e73",
+    "baseline": {
+      "question_id": "3262c3f5-1a71-44ef-8ea0-cba350558f80",
+      "article_id": "1edce199-0fc2-42e8-bad6-f3a74243626e",
+      "topic_id": "824a68bb-40fc-4c13-8f26-c80f796172fc",
+      "text": "A high-security government facility requires multi-factor authentication at server room access. Which combination of technologies would provide the highest security level?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Proximity card reader with numeric keypad, which provides a basic level of security but may not be sufficient for high-security environments"
+        },
+        {
+          "id": "b",
+          "text": "Smart card reader with fingerprint biometric verification"
+        },
+        {
+          "id": "c",
+          "text": "Mobile credential via smartphone NFC only, which is convenient but may not offer the highest level of security"
+        },
+        {
+          "id": "d",
+          "text": "Iris recognition followed by voice authentication, which offers a high level of security but may be complex to implement"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Proximity cards alone are vulnerable to cloning, and numeric keypads are susceptible to observation and weak PIN selection.",
+        "c": "Mobile credentials lack the physical security factor of smart cards and can be compromised if the phone is lost or intercepted.",
+        "d": "While iris recognition is extremely accurate, combining it with voice authentication may introduce operational inefficiencies without adding practical security benefits in a controlled environment.",
+        "correct": "Smart cards provide encrypted credential authentication, and fingerprint biometrics add a second independent factor that cannot be transferred or lost. This combination delivers high security suitable for ultra-secure applications while maintaining practical user experience.",
+        "takeaway": "Optimal multi-factor authentication for high-security areas combines smart card technology with biometric verification."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-004-06.mdx - Access Control Systems > Card Reader Technologies and Biometric Technologies",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-06-013",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0eec3cbe623e971370c9e71e412d540fc264b804f5e30a921da9ab694f334e73"
+    },
+    "proposed": {
+      "explanation": "Proximity cards alone are vulnerable to cloning, and numeric keypads are susceptible to observation and weak PIN selection. Mobile credentials lack the physical security factor of smart cards and can be compromised if the phone is lost or intercepted. While iris recognition is extremely accurate, combining it with voice authentication may introduce operational inefficiencies without adding practical security benefits in a controlled environment. Smart cards provide encrypted credential authentication, and fingerprint biometrics add a second independent factor that cannot be transferred or lost. This combination delivers high security suitable for ultra-secure applications while maintaining practical user experience. Optimal multi-factor authentication for high-security areas combines smart card technology with biometric verification."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded.",
+    "quarantine_reason": "Batch 006 reviewer quarantine: answer-key ambiguity and option-length/clueing in MFA security item"
+  },
+  {
+    "question_id": "a2219d23-f6d9-4427-b70d-254ad7a2d359",
+    "article_id": "1edce199-0fc2-42e8-bad6-f3a74243626e",
+    "article_dir": ".ai/content-audit-export/articles/lea-util-004-06-cctv-systems--1edce199-0fc2-42e8-bad6-f3a74243626e",
+    "title": "lea-util-004-06-cctv-systems",
+    "baseline_hash": "sha256:3fcbe70be5fe023e9550f40a895f524eeef9b828e0e90b63b7e5cec448c53bb8",
+    "baseline": {
+      "question_id": "a2219d23-f6d9-4427-b70d-254ad7a2d359",
+      "article_id": "1edce199-0fc2-42e8-bad6-f3a74243626e",
+      "topic_id": "824a68bb-40fc-4c13-8f26-c80f796172fc",
+      "text": "Why should IP-based security systems (cameras, intercoms, access control) operate on isolated VLANs or dedicated networks rather than general building IT infrastructure?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To reduce bandwidth consumption on the main network, ensuring that critical data traffic is not delayed during peak usage times"
+        },
+        {
+          "id": "b",
+          "text": "To prevent unauthorized access and system compromise from the general IT network"
+        },
+        {
+          "id": "c",
+          "text": "To simplify cabling installation and reduce conduit requirements, which can lower installation costs and minimize physical infrastructure complexity"
+        },
+        {
+          "id": "d",
+          "text": "To ensure compliance with the 220V/60Hz Philippine electrical standard, which is unrelated to network configuration but often misunderstood in system integration"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While VLAN segmentation may distribute bandwidth, this is a secondary benefit; the primary purpose is security isolation.",
+        "c": "VLAN configuration does not simplify physical cabling or reduce conduit requirements; these are addressed through proper routing standards.",
+        "d": "VLAN isolation is independent of electrical standards; the 220V/60Hz requirement applies to power distribution, not network configuration.",
+        "correct": "IP-based systems on isolated VLANs prevent unauthorized access and compromise from general building IT infrastructure. This network segmentation is a critical security practice that isolates critical infrastructure from less secure general networks.",
+        "takeaway": "Security system networks must be isolated from general IT infrastructure through VLAN segmentation to prevent compromise and unauthorized access."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-004-06.mdx - Best Practices for Philippine Buildings",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-06-014",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3fcbe70be5fe023e9550f40a895f524eeef9b828e0e90b63b7e5cec448c53bb8"
+    },
+    "proposed": {
+      "explanation": "While VLAN segmentation may distribute bandwidth, this is a secondary benefit; the primary purpose is security isolation. VLAN configuration does not simplify physical cabling or reduce conduit requirements; these are addressed through proper routing standards. VLAN isolation is independent of electrical standards; the 220V/60Hz requirement applies to power distribution, not network configuration. IP-based systems on isolated VLANs prevent unauthorized access and compromise from general building IT infrastructure. This network segmentation is a critical security practice that isolates critical infrastructure from less secure general networks. Security system networks must be isolated from general IT infrastructure through VLAN segmentation to prevent compromise and unauthorized access."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded.",
+    "quarantine_reason": "Batch 006 reviewer quarantine: generic/meta unrelated distractor leakage about electrical standard/network configuration"
+  },
+  {
+    "question_id": "428e42b4-9c1e-4c80-adfc-20d4504813dd",
+    "article_id": "ae14f6a9-dec8-458c-b4a1-3ae04df43bfa",
+    "article_dir": ".ai/content-audit-export/articles/lea-plan-002-04-core-concept--ae14f6a9-dec8-458c-b4a1-3ae04df43bfa",
+    "title": "lea-plan-002-04-core-concept",
+    "baseline_hash": "sha256:1d8403bba696cab59039fa7a344e7263a69ac232e51e403bb25b8308f6a6d3c6",
+    "baseline": {
+      "question_id": "428e42b4-9c1e-4c80-adfc-20d4504813dd",
+      "article_id": "ae14f6a9-dec8-458c-b4a1-3ae04df43bfa",
+      "topic_id": "1e9a5807-ce84-402d-8981-6db7dbf0c7a5",
+      "text": "In a municipal CLUP, 65% of the land area is designated 'Agricultural Zone' to preserve farmland and open space. As population pressure grows, developers seek to rezone portions to residential. What is the primary challenge this conflict creates?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Agricultural zoning always fails to produce revenue for the municipality, so any alternative is better, especially if it aligns with economic growth targets"
+        },
+        {
+          "id": "b",
+          "text": "Balancing CLUP stability (consistent long-term vision) with development pressure (market demand for housing); rezoning is flexible but fragmentary, risking sprawl"
+        },
+        {
+          "id": "c",
+          "text": "Agricultural land is protected by the national government and cannot be rezoned without federal approval, which involves a lengthy bureaucratic process"
+        },
+        {
+          "id": "d",
+          "text": "Environmental impact assessments for rezoning take too long, so it is best to deny all rezoning requests unless they meet expedited review criteria"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Agricultural zoning can generate value (farm output, food security, environmental services); it is not revenue-'worse' than residential—it is a different choice with different benefits.",
+        "b": "Zoning conflicts arise when market demand (housing) conflicts with planning vision (agricultural preservation). Rezoning is legally possible if the Sanggunian votes to amend the ordinance, but each amendment fragments the land use pattern and can accelerate sprawl if done piecemeal without integrated planning. This is the core land use planning tension.",
+        "c": "Local governments have zoning authority under RA 7160. National oversight exists (DHSUD review), but zoning authority is delegated to LGUs. The municipality can rezone if the CLUP is updated.",
+        "d": "EIA may be required for larger rezoning/development, but EIA delays are a process issue, not a reason to ban rezoning. Zoning changes do require environmental review, but that is standard practice.",
+        "correct": "Zoning conflicts arise when market demand (housing) conflicts with planning vision (agricultural preservation). Rezoning is legally possible if the Sanggunian votes to amend the ordinance, but each amendment fragments the land use pattern and can accelerate sprawl if done piecemeal without integrated planning. This is the core land use planning tension.",
+        "takeaway": "Land use planning challenges: balancing CLUP stability with development pressure; piecemeal rezoning risks sprawl."
+      },
+      "explanation": null,
+      "code_citation": "RA 7160; CLUP planning principles",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "Growth management"
+      ],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-002-04-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:06.486658+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1d8403bba696cab59039fa7a344e7263a69ac232e51e403bb25b8308f6a6d3c6"
+    },
+    "proposed": {
+      "explanation": "Agricultural zoning can generate value (farm output, food security, environmental services); it is not revenue-'worse' than residential—it is a different choice with different benefits. Zoning conflicts arise when market demand (housing) conflicts with planning vision (agricultural preservation). Rezoning is legally possible if the Sanggunian votes to amend the ordinance, but each amendment fragments the land use pattern and can accelerate sprawl if done piecemeal without integrated planning. This is the core land use planning tension. Local governments have zoning authority under RA 7160. National oversight exists (DHSUD review), but zoning authority is delegated to LGUs. The municipality can rezone if the CLUP is updated. EIA may be required for larger rezoning/development, but EIA delays are a process issue, not a reason to ban rezoning. Zoning changes do require environmental review, but that is standard practice. Zoning conflicts arise when market demand (housing) conflicts with planning vision (agricultural preservation). Rezoning is legally possible if the Sanggunian votes to amend the ordinance, but each amendment fragments the land use pattern and can accelerate sprawl if done piecemeal without integrated planning. This is the core land use planning tension. Land use planning challenges: balancing CLUP stability with development pressure; piecemeal rezoning risks sprawl."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded.",
+    "quarantine_reason": "Batch 006 reviewer quarantine: rezoning legality/professional-practice source-gap and absolute distractor language"
+  },
+  {
+    "question_id": "68090083-0ff0-447f-89c0-15b1585bc48a",
+    "article_id": "ae14f6a9-dec8-458c-b4a1-3ae04df43bfa",
+    "article_dir": ".ai/content-audit-export/articles/lea-plan-002-04-core-concept--ae14f6a9-dec8-458c-b4a1-3ae04df43bfa",
+    "title": "lea-plan-002-04-core-concept",
+    "baseline_hash": "sha256:aac98ae581d3f02e97860d1775604546448810f31a4457446ce9a7d09ace842d",
+    "baseline": {
+      "question_id": "68090083-0ff0-447f-89c0-15b1585bc48a",
+      "article_id": "ae14f6a9-dec8-458c-b4a1-3ae04df43bfa",
+      "topic_id": "1e9a5807-ce84-402d-8981-6db7dbf0c7a5",
+      "text": "A city's zoning ordinance requires all residential zones to have a minimum lot size of 300 sq.m. per residential unit. A developer in a Residential 3 (high-density) zone wants to build apartment units on 60 sq.m. average per unit. What is the fundamental problem with enforcing the 300 sq.m. rule in a high-density zone?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The 300 sq.m. minimum contradicts the stated purpose of high-density zoning and may be legally unenforceable for that zone, though it is clearly stated in the ordinance"
+        },
+        {
+          "id": "b",
+          "text": "The requirement is valid and must be enforced; developers must accept the 300 sq.m. minimum regardless of the zone designation, even if it contradicts the intended density"
+        },
+        {
+          "id": "c",
+          "text": "DHSUD must grant an exemption because 300 sq.m. is too restrictive for apartments, potentially stifling development in high-density areas"
+        },
+        {
+          "id": "d",
+          "text": "The Mayor must issue a variance allowing 60 sq.m. per unit, which may not align with the overall zoning strategy but addresses immediate developer needs"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "A 'Residential 3 (high-density)' zone is intended to permit higher unit density on smaller individual lots. Imposing a 300 sq.m. minimum per unit contradicts the zone's stated purpose and is internally inconsistent—the ordinance contradicts itself. This inconsistency makes the minimum lot requirement legally vulnerable to challenge.",
+        "b": "While the ordinance states the rule, the rule contradicts the zone's designation. Contradictory ordinance language is a legal defect that a court would likely not enforce as written.",
+        "c": "DHSUD does not grant individual exemptions from zoning minimums. The problem is the ordinance itself, not the developer's application.",
+        "d": "The Mayor does not grant variances; the Sanggunian does (via the variance/appeals process). But the real issue is the zoning ordinance's internal contradiction, not a specific variance request.",
+        "correct": "A 'Residential 3 (high-density)' zone is intended to permit higher unit density on smaller individual lots. Imposing a 300 sq.m. minimum per unit contradicts the zone's stated purpose and is internally inconsistent—the ordinance contradicts itself. This inconsistency makes the minimum lot requirement legally vulnerable to challenge.",
+        "takeaway": "Zoning ordinances must be internally consistent. Rules that contradict a zone's stated purpose are legally weak and create compliance problems."
+      },
+      "explanation": null,
+      "code_citation": "Zoning Code best practices; RA 7160",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "Regulatory analysis"
+      ],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-002-04-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:06.486658+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:aac98ae581d3f02e97860d1775604546448810f31a4457446ce9a7d09ace842d"
+    },
+    "proposed": {
+      "explanation": "A 'Residential 3 (high-density)' zone is intended to permit higher unit density on smaller individual lots. Imposing a 300 sq.m. minimum per unit contradicts the zone's stated purpose and is internally inconsistent—the ordinance contradicts itself. This inconsistency makes the minimum lot requirement legally vulnerable to challenge. While the ordinance states the rule, the rule contradicts the zone's designation. Contradictory ordinance language is a legal defect that a court would likely not enforce as written. DHSUD does not grant individual exemptions from zoning minimums. The problem is the ordinance itself, not the developer's application. The Mayor does not grant variances; the Sanggunian does (via the variance/appeals process). But the real issue is the zoning ordinance's internal contradiction, not a specific variance request. A 'Residential 3 (high-density)' zone is intended to permit higher unit density on smaller individual lots. Imposing a 300 sq.m. minimum per unit contradicts the zone's stated purpose and is internally inconsistent—the ordinance contradicts itself. This inconsistency makes the minimum lot requirement legally vulnerable to challenge. Zoning ordinances must be internally consistent. Rules that contradict a zone's stated purpose are legally weak and create compliance problems."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded.",
+    "quarantine_reason": "Batch 006 reviewer quarantine: legal enforceability claim/source-gap and answer-key certainty risk"
+  },
+  {
+    "question_id": "dddba217-806c-48b8-9860-3c627f973e1f",
+    "article_id": "ae14f6a9-dec8-458c-b4a1-3ae04df43bfa",
+    "article_dir": ".ai/content-audit-export/articles/lea-plan-002-04-core-concept--ae14f6a9-dec8-458c-b4a1-3ae04df43bfa",
+    "title": "lea-plan-002-04-core-concept",
+    "baseline_hash": "sha256:f2efd67fb64e3026aa01e310cbb319bccef9f59500ce484293619e63c6010e33",
+    "baseline": {
+      "question_id": "dddba217-806c-48b8-9860-3c627f973e1f",
+      "article_id": "ae14f6a9-dec8-458c-b4a1-3ae04df43bfa",
+      "topic_id": "1e9a5807-ce84-402d-8981-6db7dbf0c7a5",
+      "text": "A developer owns a 5-hectare parcel zoned 'Residential 1' (single-family homes, max. 2 stories). The developer wants to construct a 15-story condominium. What process must occur to make this development legal?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The developer applies directly to DHSUD for an exemption; DHSUD approves or denies based on current zoning laws"
+        },
+        {
+          "id": "b",
+          "text": "The Sanggunian must amend the zoning ordinance to allow high-rise residential in that zone; or a variance/conditional use permit must be granted"
+        },
+        {
+          "id": "c",
+          "text": "The Mayor must issue an executive order overriding the zoning ordinance, which is subject to legal review"
+        },
+        {
+          "id": "d",
+          "text": "The Planning Office must approve a zoning waiver, which requires a comprehensive impact assessment"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "DHSUD does not grant exemptions from local zoning. DHSUD reviews the zoning ordinance itself for conformity with national policy; DHSUD does not override municipal zoning codes.",
+        "b": "Zoning that prohibits 15-story construction cannot be circumvented without formal action. The Sanggunian can rezone the parcel (amending the ordinance), or can grant a variance/conditional use permit (approval of departure from standard) if justified by public interest. Both require public hearing.",
+        "c": "The Mayor does not have the executive power to override the zoning ordinance. The Mayor implements ordinances; the Mayor does not legislatively amend them.",
+        "d": "The Planning Office has no authority to grant zoning waivers. Only the Sanggunian (through amendment or variance) can modify zoning legally.",
+        "correct": "Zoning that prohibits 15-story construction cannot be circumvented without formal action. The Sanggunian can rezone the parcel (amending the ordinance), or can grant a variance/conditional use permit (approval of departure from standard) if justified by public interest. Both require public hearing.",
+        "takeaway": "Changing zoning requires Sanggunian action (amendment or variance), not executive override or agency exemption."
+      },
+      "explanation": null,
+      "code_citation": "RA 7160; Standard Zoning Code practice",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "Development approval process"
+      ],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-002-04-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:06.486658+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f2efd67fb64e3026aa01e310cbb319bccef9f59500ce484293619e63c6010e33"
+    },
+    "proposed": {
+      "explanation": "DHSUD does not grant exemptions from local zoning. DHSUD reviews the zoning ordinance itself for conformity with national policy; DHSUD does not override municipal zoning codes. Zoning that prohibits 15-story construction cannot be circumvented without formal action. The Sanggunian can rezone the parcel (amending the ordinance), or can grant a variance/conditional use permit (approval of departure from standard) if justified by public interest. Both require public hearing. The Mayor does not have the executive power to override the zoning ordinance. The Mayor implements ordinances; the Mayor does not legislatively amend them. The Planning Office has no authority to grant zoning waivers. Only the Sanggunian (through amendment or variance) can modify zoning legally. Zoning that prohibits 15-story construction cannot be circumvented without formal action. The Sanggunian can rezone the parcel (amending the ordinance), or can grant a variance/conditional use permit (approval of departure from standard) if justified by public interest. Both require public hearing. Changing zoning requires Sanggunian action (amendment or variance), not executive override or agency exemption."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded.",
+    "quarantine_reason": "Batch 006 reviewer quarantine: legal/professional-practice process ambiguity for zoning amendment/variance/conditional use"
+  },
+  {
+    "question_id": "d5ecaa5a-46f3-4603-91c9-b5bbebf41ac1",
+    "article_id": "ae14f6a9-dec8-458c-b4a1-3ae04df43bfa",
+    "article_dir": ".ai/content-audit-export/articles/lea-plan-002-04-core-concept--ae14f6a9-dec8-458c-b4a1-3ae04df43bfa",
+    "title": "lea-plan-002-04-core-concept",
+    "baseline_hash": "sha256:e65a54ef6058ef6d747847badc49262319fa488d5bf7b78c762c71880584a9e9",
+    "baseline": {
+      "question_id": "d5ecaa5a-46f3-4603-91c9-b5bbebf41ac1",
+      "article_id": "ae14f6a9-dec8-458c-b4a1-3ae04df43bfa",
+      "topic_id": "1e9a5807-ce84-402d-8981-6db7dbf0c7a5",
+      "text": "The CLUP designates an area for residential development, but the current Zoning Ordinance permits only industrial use in that same area. What is the legal status of this zoning?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Valid—the zoning ordinance can differ from the CLUP as long as the Mayor approves both"
+        },
+        {
+          "id": "b",
+          "text": "Valid—industrial development will eventually pay for residential infrastructure, so it is a reasonable interim use"
+        },
+        {
+          "id": "c",
+          "text": "Invalid—zoning ordinances must be consistent with the CLUP; inconsistency is legally vulnerable"
+        },
+        {
+          "id": "d",
+          "text": "Valid—the Sanggunian has discretion to adopt zoning categories regardless of CLUP alignment"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Mayoral approval does not cure inconsistency with the CLUP. The CLUP itself is the mandate under RA 7160; zoning must implement it.",
+        "b": "While interim uses are possible in planning, a permanent zoning designation that contradicts the CLUP is not an interim use—it is a policy conflict that must be resolved.",
+        "c": "The Zoning Ordinance is the legal implementation tool of the CLUP. If zoning contradicts the CLUP, the ordinance is internally inconsistent and vulnerable to legal challenge by residents or developers claiming the ordinance is ultra vires (beyond legal authority).",
+        "d": "Under RA 7160, the Sanggunian's power to zone is limited to implementing the CLUP. Zoning that contradicts the CLUP exceeds that delegated power.",
+        "correct": "The Zoning Ordinance is the legal implementation tool of the CLUP. If zoning contradicts the CLUP, the ordinance is internally inconsistent and vulnerable to legal challenge by residents or developers claiming the ordinance is ultra vires (beyond legal authority).",
+        "takeaway": "Zoning ordinance must align with CLUP or it is legally invalid."
+      },
+      "explanation": null,
+      "code_citation": "RA 7160; DHSUD conformity standards",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-002-04-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:06.486658+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e65a54ef6058ef6d747847badc49262319fa488d5bf7b78c762c71880584a9e9"
+    },
+    "proposed": {
+      "explanation": "Mayoral approval does not cure inconsistency with the CLUP. The CLUP itself is the mandate under RA 7160; zoning must implement it. While interim uses are possible in planning, a permanent zoning designation that contradicts the CLUP is not an interim use—it is a policy conflict that must be resolved. The Zoning Ordinance is the legal implementation tool of the CLUP. If zoning contradicts the CLUP, the ordinance is internally inconsistent and vulnerable to legal challenge by residents or developers claiming the ordinance is ultra vires (beyond legal authority). Under RA 7160, the Sanggunian's power to zone is limited to implementing the CLUP. Zoning that contradicts the CLUP exceeds that delegated power. The Zoning Ordinance is the legal implementation tool of the CLUP. If zoning contradicts the CLUP, the ordinance is internally inconsistent and vulnerable to legal challenge by residents or developers claiming the ordinance is ultra vires (beyond legal authority). Zoning ordinance must align with CLUP or it is legally invalid."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded.",
+    "quarantine_reason": "Batch 006 reviewer quarantine: legal overstatement, invalid vs legally vulnerable distinction unresolved"
+  },
+  {
+    "question_id": "dede4a4a-1ed5-431c-9374-cac9e5312de4",
+    "article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
+    "article_dir": ".ai/content-audit-export/articles/lea-theo-009-01-core-concept--f97941fb-6e33-4b9b-8c44-f51db68e40c7",
+    "title": "lea-theo-009-01-core-concept",
+    "baseline_hash": "sha256:ae916237d41993634451fb4c49a73a1dd6222f74edf878894cb8e76bce2eb3bd",
+    "baseline": {
+      "question_id": "dede4a4a-1ed5-431c-9374-cac9e5312de4",
+      "article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
+      "topic_id": "5a536cf8-a54d-4413-9748-01c79656ac6e",
+      "text": "During a programming interview for a new law firm office, a senior partner mentions that attorneys currently spend significant time retrieving files from the central storage. Which information-gathering category does this observation address?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Relationships — which functions must be adjacent or separated"
+        },
+        {
+          "id": "b",
+          "text": "Physical — site characteristics and infrastructure capacity"
+        },
+        {
+          "id": "c",
+          "text": "Human — demographic and psychological needs of occupants"
+        },
+        {
+          "id": "d",
+          "text": "Activity — what tasks occur, frequency, and duration"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Physical site conditions are not what this observation addresses; it's about internal functional organization.",
+        "c": "This addresses user behavior but doesn't directly reveal relationship requirements.",
+        "d": "While file retrieval is an activity, the key issue is the spatial relationship between activity locations.",
+        "correct": "This observation reveals a functional relationship problem: attorney offices and file storage need better adjacency. The comment identifies which functions should be proximate to reduce walking distance and improve workflow.",
+        "takeaway": "The comment identifies which functions should be proximate to reduce walking distance and improve workflow."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-009-01-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ae916237d41993634451fb4c49a73a1dd6222f74edf878894cb8e76bce2eb3bd"
+    },
+    "proposed": {
+      "explanation": "Physical site conditions are not what this observation addresses; it's about internal functional organization. This addresses user behavior but doesn't directly reveal relationship requirements. While file retrieval is an activity, the key issue is the spatial relationship between activity locations. This observation reveals a functional relationship problem: attorney offices and file storage need better adjacency. The comment identifies which functions should be proximate to reduce walking distance and improve workflow. The comment identifies which functions should be proximate to reduce walking distance and improve workflow."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded.",
+    "quarantine_reason": "Batch 006 reviewer quarantine: activity vs relationship classification ambiguity"
+  },
+  {
+    "question_id": "be4d29c4-ef64-4a82-a073-7fa2292d2a23",
+    "article_id": "48580f1e-3497-48f9-a87e-0f67c6e476b6",
+    "article_dir": ".ai/content-audit-export/articles/lea-hist-002-02-core-concept--48580f1e-3497-48f9-a87e-0f67c6e476b6",
+    "title": "lea-hist-002-02-core-concept",
+    "baseline_hash": "sha256:8f0ed56a0b4f3a31f9f29e9df37883e8fb92ef3b69d778f5b64976518201ebe7",
+    "baseline": {
+      "question_id": "be4d29c4-ef64-4a82-a073-7fa2292d2a23",
+      "article_id": "48580f1e-3497-48f9-a87e-0f67c6e476b6",
+      "topic_id": "37219652-074c-4aef-af93-83af5661dd73",
+      "text": "A cathedral features a consistently vaulted interior with groin vaults replacing wooden ceilings, representing the first European example of this construction method. It was founded in 1030 but substantially rebuilt from 1090–1103. Which cathedral is being described?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Durham Cathedral"
+        },
+        {
+          "id": "b",
+          "text": "Cluny III Abbey Church"
+        },
+        {
+          "id": "c",
+          "text": "Santiago de Compostela"
+        },
+        {
+          "id": "d",
+          "text": "Speyer Cathedral"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Durham Cathedral (begun 1093) features ribbed vaults, not groin vaults as the primary system.",
+        "b": "Cluny III was begun 1088 but not described as the first consistently vaulted church.",
+        "c": "Santiago de Compostela (begun 1075) features a barrel vault nave, not the 'first consistently vaulted' system.",
+        "correct": "Speyer Cathedral was founded by Conrad II in 1030 and 'rebuilt 1090–1103' by Henry IV. It features 'massive groin vault replacing wooden ceiling' and is the 'first consistently vaulted church in Europe.'",
+        "takeaway": "It features 'massive groin vault replacing wooden ceiling' and is the 'first consistently vaulted church in Europe.'."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "recall",
+      "practice_context": [
+        "DESC"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-002-02-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.95449+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8f0ed56a0b4f3a31f9f29e9df37883e8fb92ef3b69d778f5b64976518201ebe7"
+    },
+    "proposed": {
+      "explanation": "Durham Cathedral (begun 1093) features ribbed vaults, not groin vaults as the primary system. Cluny III was begun 1088 but not described as the first consistently vaulted church. Santiago de Compostela (begun 1075) features a barrel vault nave, not the 'first consistently vaulted' system. Speyer Cathedral was founded by Conrad II in 1030 and 'rebuilt 1090–1103' by Henry IV. It features 'massive groin vault replacing wooden ceiling' and is the 'first consistently vaulted church in Europe.' It features 'massive groin vault replacing wooden ceiling' and is the 'first consistently vaulted church in Europe.'."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded.",
+    "quarantine_reason": "Batch 006 reviewer quarantine: duplicate/repeated Speyer Cathedral stem cluster"
+  },
+  {
+    "question_id": "60d02528-8c63-4dff-97c1-0ad177214339",
+    "article_id": "48580f1e-3497-48f9-a87e-0f67c6e476b6",
+    "article_dir": ".ai/content-audit-export/articles/lea-hist-002-02-core-concept--48580f1e-3497-48f9-a87e-0f67c6e476b6",
+    "title": "lea-hist-002-02-core-concept",
+    "baseline_hash": "sha256:abe61ac9e11223b5bbfc32b32bfd98ea86a98c8f51b6623c17a8d8725bb734d1",
+    "baseline": {
+      "question_id": "60d02528-8c63-4dff-97c1-0ad177214339",
+      "article_id": "48580f1e-3497-48f9-a87e-0f67c6e476b6",
+      "topic_id": "37219652-074c-4aef-af93-83af5661dd73",
+      "text": "Which Romanesque cathedral in Germany, rebuilt by Henry IV from 1090–1103, is credited as the first consistently vaulted church in Europe?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cologne Cathedral"
+        },
+        {
+          "id": "b",
+          "text": "Durham Cathedral"
+        },
+        {
+          "id": "c",
+          "text": "Speyer Cathedral"
+        },
+        {
+          "id": "d",
+          "text": "Worms Cathedral"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Cologne Cathedral is Gothic, not Romanesque.",
+        "b": "Durham Cathedral (begun 1093) features ribbed vaults but is not identified as the first consistently vaulted church.",
+        "d": "Worms Cathedral is not discussed in this article.",
+        "correct": "Speyer Cathedral, founded by Conrad II but rebuilt by Henry IV (1090–1103), features 'massive groin vault replacing wooden ceiling' and is identified as the 'first consistently vaulted church in Europe.'",
+        "takeaway": "Speyer Cathedral, founded by Conrad II but rebuilt by Henry IV (1090–1103), features 'massive groin vault replacing wooden ceiling' and is identified as the 'first consistently vaulted church in Europe.'."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "ID"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-002-02-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.95449+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:abe61ac9e11223b5bbfc32b32bfd98ea86a98c8f51b6623c17a8d8725bb734d1"
+    },
+    "proposed": {
+      "explanation": "Cologne Cathedral is Gothic, not Romanesque. Durham Cathedral (begun 1093) features ribbed vaults but is not identified as the first consistently vaulted church. Worms Cathedral is not discussed in this article. Speyer Cathedral, founded by Conrad II but rebuilt by Henry IV (1090–1103), features 'massive groin vault replacing wooden ceiling' and is identified as the 'first consistently vaulted church in Europe.' Speyer Cathedral, founded by Conrad II but rebuilt by Henry IV (1090–1103), features 'massive groin vault replacing wooden ceiling' and is identified as the 'first consistently vaulted church in Europe.'."
+    },
+    "classification": "strict_explanation_backfill",
+    "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded.",
+    "quarantine_reason": "Batch 006 reviewer quarantine: duplicate/repeated Speyer Cathedral stem cluster"
+  }
+]

@@ -1,14 +1,11 @@
-## What You Need to Know for the LEA
-## Learning Goal
-By the end of this article, you will be able to:
 
-- Identify the five types of internal forces: tension, compression, shear, bending, and torsion
-- Describe the structural effect of each internal force type
-- Distinguish between axial forces (tension/compression) and moments (bending/torsion)
-- Explain where shear is highest in a simply supported beam
-- Recognize that shear and bending are related but distinct phenomena
 
-This topic covers the five types of internal forces that develop within structural members under loading. The LEA tests whether you can identify, define, and distinguish internal forces conceptually. You will NOT be tested on stress calculations, strain relationships, or material-specific formulas (like the timber shear formula); focus on force type definitions and their structural effects.
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Lea Strc 001 05 Core Concept** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
+
 
 ## Core Concept
 <ArticleMedia id="media-lea-strc-001-05-core-concept" type="image" caption="Internal Forces — Tension, Compression, Shear, Bending, and Torsion" description="Five-panel illustration showing each internal force type: (1) Tension — pulling arrows elongating a member; (2) Compression — pushing arrows shortening a member with buckling indicator; (3) Shear — transverse sliding action at a cut section; (4) Bending — curved member showing compression/tension faces; (5) Torsion — twisting moment about longitudinal axis. Each panel shows the force direction, member deformation, and a real structural example." suggestedAsset="Diagram or reference image" status="placeholder" />

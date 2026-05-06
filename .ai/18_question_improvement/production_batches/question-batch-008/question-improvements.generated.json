@@ -1,0 +1,453 @@
+{
+  "generated_at": "2026-05-06T12:01:37.269682Z",
+  "improvements": [
+    {
+      "question_id": "77ada63b-b941-424c-bb47-08e999b3b5ff",
+      "article_id": "62274e90-5cb3-4bc0-85a1-639858e47736",
+      "article_dir": ".ai/content-audit-export/articles/lea-theo-002-01-core-concept--62274e90-5cb3-4bc0-85a1-639858e47736",
+      "title": "lea-theo-002-01-core-concept",
+      "baseline_hash": "sha256:9ba350621d7db745d3ccf749d6bcafc617c003fb0ce131e90393a023ddf71f40",
+      "baseline": {
+        "question_id": "77ada63b-b941-424c-bb47-08e999b3b5ff",
+        "article_id": "62274e90-5cb3-4bc0-85a1-639858e47736",
+        "topic_id": "5fd68568-c8c9-454a-b95e-f671df0f1605",
+        "text": "Which of these pairs correctly distinguishes between piazza and cortile?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Cortile serves private functions; piazza serves only ceremonial purposes, often in urban settings"
+          },
+          {
+            "id": "b",
+            "text": "Cortile is internal with arcaded surrounds; piazza is external civic gathering space"
+          },
+          {
+            "id": "c",
+            "text": "Piazza has covered walkways; cortile is entirely open to sky, allowing for natural light"
+          },
+          {
+            "id": "d",
+            "text": "Piazza is internal and palace-specific; cortile is external and public, often found in residential areas"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Both serve multiple functions; piazza certainly serves commercial and social functions, not only ceremony.",
+          "c": "Incorrect—cortile is surrounded by arcaded covered walkways; piazza is open to sky.",
+          "d": "Reversed—piazza is the external public element; cortile is the internal palace element.",
+          "correct": "This accurately reverses the common mistake: cortile is the internal palace courtyard (Palazzo Medici-Riccardi); piazza is the public external civic square (Piazza San Marco).",
+          "takeaway": "This accurately reverses the common mistake: cortile is the internal palace courtyard (Palazzo Medici-Riccardi); piazza is the public external civic square (Piazza San Marco)."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "remember",
+        "application_context": "design_application",
+        "practice_context": [
+          "CMP"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-THEO-002-01-003",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:53.522336+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:9ba350621d7db745d3ccf749d6bcafc617c003fb0ce131e90393a023ddf71f40"
+      },
+      "proposed": {
+        "explanation": "Both serve multiple functions; piazza certainly serves commercial and social functions, not only ceremony. Incorrect—cortile is surrounded by arcaded covered walkways; piazza is open to sky. Reversed—piazza is the external public element; cortile is the internal palace element. This accurately reverses the common mistake: cortile is the internal palace courtyard (Palazzo Medici-Riccardi); piazza is the public external civic square (Piazza San Marco). This accurately reverses the common mistake: cortile is the internal palace courtyard (Palazzo Medici-Riccardi); piazza is the public external civic square (Piazza San Marco)."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "30f34bc4-098b-44b7-bba3-d3ea6ee6fa69",
+      "article_id": "62274e90-5cb3-4bc0-85a1-639858e47736",
+      "article_dir": ".ai/content-audit-export/articles/lea-theo-002-01-core-concept--62274e90-5cb3-4bc0-85a1-639858e47736",
+      "title": "lea-theo-002-01-core-concept",
+      "baseline_hash": "sha256:fc50d3b1b0c2f3ee9438ea18c47242f1eb9fed27fccadc0f5c655301a80ffbf4",
+      "baseline": {
+        "question_id": "30f34bc4-098b-44b7-bba3-d3ea6ee6fa69",
+        "article_id": "62274e90-5cb3-4bc0-85a1-639858e47736",
+        "topic_id": "5fd68568-c8c9-454a-b95e-f671df0f1605",
+        "text": "How do the four primary human needs (shelter, circulation, environmental control, structure) relate to architectural elements in an actual building design?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Most elements serve multiple needs simultaneously; a wall provides shelter, structure, and environmental control at once"
+          },
+          {
+            "id": "b",
+            "text": "These needs are addressed separately—shelter elements, then circulation, then environmental control added later, ensuring each aspect is independently optimized"
+          },
+          {
+            "id": "c",
+            "text": "Each element serves only one need; design is simplified by single-purpose elements, which can lead to more efficient construction processes"
+          },
+          {
+            "id": "d",
+            "text": "Shelter and circulation are primary; environmental control and structure are secondary concerns, often considered only after the main design is complete"
+          }
+        ],
+        "correct_option_id": "a",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "b": "Elements are designed simultaneously to address multiple needs, not sequentially added.",
+          "c": "This oversimplifies; actual design requires elements serving multiple functions.",
+          "d": "All four needs are equally important and integrated.",
+          "correct": "Every architectural element is multifunctional: walls enclose space (shelter), support loads (structure), control weather/light (environmental control), and define circulation paths. Design excellence comes from integrating all four needs simultaneously.",
+          "takeaway": "Design excellence comes from integrating all four needs simultaneously."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "analyze",
+        "application_context": "code_interpretation",
+        "practice_context": [
+          "SYS"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-THEO-002-01-012",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:53.522336+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:fc50d3b1b0c2f3ee9438ea18c47242f1eb9fed27fccadc0f5c655301a80ffbf4"
+      },
+      "proposed": {
+        "explanation": "Elements are designed simultaneously to address multiple needs, not sequentially added. This oversimplifies; actual design requires elements serving multiple functions. All four needs are equally important and integrated. Every architectural element is multifunctional: walls enclose space (shelter), support loads (structure), control weather/light (environmental control), and define circulation paths. Design excellence comes from integrating all four needs simultaneously. Design excellence comes from integrating all four needs simultaneously."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "b52aef0e-bf29-4862-8504-1043690499dc",
+      "article_id": "62274e90-5cb3-4bc0-85a1-639858e47736",
+      "article_dir": ".ai/content-audit-export/articles/lea-theo-002-01-core-concept--62274e90-5cb3-4bc0-85a1-639858e47736",
+      "title": "lea-theo-002-01-core-concept",
+      "baseline_hash": "sha256:7256d2a9774a36c73e98b2596d105bd594025aa7cd82861ac4efca755a9e7d10",
+      "baseline": {
+        "question_id": "b52aef0e-bf29-4862-8504-1043690499dc",
+        "article_id": "62274e90-5cb3-4bc0-85a1-639858e47736",
+        "topic_id": "5fd68568-c8c9-454a-b95e-f671df0f1605",
+        "text": "How do mansard roofs and domes both serve shelter, yet through different structural and formal strategies?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Mansard roofs shed water efficiently; domes shed water poorly and require central drainage, especially in regions with high rainfall"
+          },
+          {
+            "id": "b",
+            "text": "Mansard roofs are decorative elements; domes are purely structural, often used in monumental architecture to symbolize grandeur"
+          },
+          {
+            "id": "c",
+            "text": "Both use pitched slopes to prevent water pooling; both use arches to distribute loads, although domes achieve this through a continuous curved surface"
+          },
+          {
+            "id": "d",
+            "text": "Mansard roofs create additional attic space; domes create open interior space by spanning large openings without interior columns"
+          }
+        ],
+        "correct_option_id": "d",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Domes (like Pantheon) shed water effectively through slope; the comparison is false.",
+          "b": "Both are highly functional structural elements, not decorative.",
+          "c": "Domes use curvature and load distribution (outward/downward), not pitched water-shedding slopes like mansards.",
+          "correct": "Mansards provide shelter through additional enclosed volume (historically for tax-exempt attics); domes provide shelter by spanning large circular openings with elegant curved vaults—both shelter strategies but structurally and spatially distinct.",
+          "takeaway": "Mansards provide shelter through additional enclosed volume (historically for tax-exempt attics); domes provide shelter by spanning large circular openings with elegant curved vaults—both shelter strategies but structurally and spatially distinct."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "apply",
+        "application_context": "design_application",
+        "practice_context": [
+          "CMP"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-THEO-002-01-006",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:53.522336+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:7256d2a9774a36c73e98b2596d105bd594025aa7cd82861ac4efca755a9e7d10"
+      },
+      "proposed": {
+        "explanation": "Domes (like Pantheon) shed water effectively through slope; the comparison is false. Both are highly functional structural elements, not decorative. Domes use curvature and load distribution (outward/downward), not pitched water-shedding slopes like mansards. Mansards provide shelter through additional enclosed volume (historically for tax-exempt attics); domes provide shelter by spanning large circular openings with elegant curved vaults—both shelter strategies but structurally and spatially distinct. Mansards provide shelter through additional enclosed volume (historically for tax-exempt attics); domes provide shelter by spanning large circular openings with elegant curved vaults—both shelter strategies but structurally and spatially distinct."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "3bda1e21-1685-4e01-a715-cf7a8de8688c",
+      "article_id": "62274e90-5cb3-4bc0-85a1-639858e47736",
+      "article_dir": ".ai/content-audit-export/articles/lea-theo-002-01-core-concept--62274e90-5cb3-4bc0-85a1-639858e47736",
+      "title": "lea-theo-002-01-core-concept",
+      "baseline_hash": "sha256:3440291c0c11841e5212bce34a4154b847ec3a39905369e6114c75b7fe97aeb8",
+      "baseline": {
+        "question_id": "3bda1e21-1685-4e01-a715-cf7a8de8688c",
+        "article_id": "62274e90-5cb3-4bc0-85a1-639858e47736",
+        "topic_id": "5fd68568-c8c9-454a-b95e-f671df0f1605",
+        "text": "A cortile is best defined as:",
+        "options": [
+          {
+            "id": "a",
+            "text": "A covered walkway with columns supporting a roof, protecting circulation from weather"
+          },
+          {
+            "id": "b",
+            "text": "A public civic square surrounded by important buildings and serving as gathering space"
+          },
+          {
+            "id": "c",
+            "text": "An internal courtyard surrounded by covered arcaded walkways on all four sides"
+          },
+          {
+            "id": "d",
+            "text": "A raised platform in a church from which the clergy delivers sermons"
+          }
+        ],
+        "correct_option_id": "c",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "That is an arcade or portico—a circulation element, not a complete courtyard system.",
+          "b": "That is a piazza—a public external civic square, not an internal palace courtyard.",
+          "d": "That is a pulpit—a church element unrelated to courtyards.",
+          "correct": "A cortile is specifically an internal courtyard (characteristic of Italian Renaissance palaces) surrounded by arcaded covered walkways on all sides, providing light, air, semi-private circulation, and social space.",
+          "takeaway": "A cortile is specifically an internal courtyard (characteristic of Italian Renaissance palaces) surrounded by arcaded covered walkways on all sides, providing light, air, semi-private circulation, and social space."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "remember",
+        "application_context": "recall",
+        "practice_context": [
+          "DEF"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-THEO-002-01-002",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:53.522336+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:3440291c0c11841e5212bce34a4154b847ec3a39905369e6114c75b7fe97aeb8"
+      },
+      "proposed": {
+        "explanation": "That is an arcade or portico—a circulation element, not a complete courtyard system. That is a piazza—a public external civic square, not an internal palace courtyard. That is a pulpit—a church element unrelated to courtyards. A cortile is specifically an internal courtyard (characteristic of Italian Renaissance palaces) surrounded by arcaded covered walkways on all sides, providing light, air, semi-private circulation, and social space. A cortile is specifically an internal courtyard (characteristic of Italian Renaissance palaces) surrounded by arcaded covered walkways on all sides, providing light, air, semi-private circulation, and social space."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "02132e9a-e600-473a-8b3f-1c23caf896af",
+      "article_id": "c6f9eec1-727b-4d00-a905-f69a58245c66",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-08-core-concept--c6f9eec1-727b-4d00-a905-f69a58245c66",
+      "title": "lea-hist-008-08-core-concept",
+      "baseline_hash": "sha256:b7093147be7995d732735468c9023ef4c0ae69cbd1daefbdabacd60cd6f0ab21",
+      "baseline": {
+        "question_id": "02132e9a-e600-473a-8b3f-1c23caf896af",
+        "article_id": "c6f9eec1-727b-4d00-a905-f69a58245c66",
+        "topic_id": "b0efd864-03e0-4dde-bd2f-613477d2e14a",
+        "text": "In which year did Kenneth Frampton articulate the Critical Regionalism framework as a response to International Style universalism?",
+        "options": [
+          {
+            "id": "a",
+            "text": "1972"
+          },
+          {
+            "id": "b",
+            "text": "1983"
+          },
+          {
+            "id": "c",
+            "text": "1995"
+          },
+          {
+            "id": "d",
+            "text": "2005"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "This predates Frampton's theoretical formulation.",
+          "c": "Frampton's essay was published in 1983, not 1995.",
+          "d": "The framework was established in 1983, well before 2005.",
+          "correct": "Kenneth Frampton's seminal essay 'Towards a Critical Regionalism: Six Points for an Architecture of Resistance' was published in 1983.",
+          "takeaway": "Kenneth Frampton's seminal essay 'Towards a Critical Regionalism: Six Points for an Architecture of Resistance' was published in 1983."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "remember",
+        "application_context": "recall",
+        "practice_context": [
+          "CH"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "critregion-10",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:26.09657+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:b7093147be7995d732735468c9023ef4c0ae69cbd1daefbdabacd60cd6f0ab21"
+      },
+      "proposed": {
+        "explanation": "This predates Frampton's theoretical formulation. Frampton's essay was published in 1983, not 1995. The framework was established in 1983, well before 2005. Kenneth Frampton's seminal essay 'Towards a Critical Regionalism: Six Points for an Architecture of Resistance' was published in 1983. Kenneth Frampton's seminal essay 'Towards a Critical Regionalism: Six Points for an Architecture of Resistance' was published in 1983."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "c15267bc-95bb-4d9f-8a48-eea82e239e94",
+      "article_id": "c6f9eec1-727b-4d00-a905-f69a58245c66",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-08-core-concept--c6f9eec1-727b-4d00-a905-f69a58245c66",
+      "title": "lea-hist-008-08-core-concept",
+      "baseline_hash": "sha256:5004371b9e1a6c25dcf085fe11f3f22d0712472f3bb48e646c2cae784749dce5",
+      "baseline": {
+        "question_id": "c15267bc-95bb-4d9f-8a48-eea82e239e94",
+        "article_id": "c6f9eec1-727b-4d00-a905-f69a58245c66",
+        "topic_id": "b0efd864-03e0-4dde-bd2f-613477d2e14a",
+        "text": "Which Australian architect designs regionally responsive buildings that employ passive climate control strategies grounded in regional vernacular, exemplified by the Magney House (1984)?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Glenn Murcutt"
+          },
+          {
+            "id": "b",
+            "text": "Rem Koolhaas"
+          },
+          {
+            "id": "c",
+            "text": "Renzo Piano"
+          },
+          {
+            "id": "d",
+            "text": "Norman Foster"
+          }
+        ],
+        "correct_option_id": "a",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "b": "Koolhaas pursued urban strategy and Deconstructivism.",
+          "c": "Piano pursues technological innovation and cultural institutions.",
+          "d": "Foster pursues technological spectacle and high-tech architecture.",
+          "correct": "Glenn Murcutt designs buildings for the Australian outback using passive climate control strategies—natural ventilation, deep overhangs, seasonal sun orientation—grounded in regional vernacular traditions.",
+          "takeaway": "Glenn Murcutt designs buildings for the Australian outback using passive climate control strategies—natural ventilation, deep overhangs, seasonal sun orientation—grounded in regional vernacular traditions."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "remember",
+        "application_context": "recall",
+        "practice_context": [
+          "ID"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "critregion-05",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:26.09657+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:5004371b9e1a6c25dcf085fe11f3f22d0712472f3bb48e646c2cae784749dce5"
+      },
+      "proposed": {
+        "explanation": "Koolhaas pursued urban strategy and Deconstructivism. Piano pursues technological innovation and cultural institutions. Foster pursues technological spectacle and high-tech architecture. Glenn Murcutt designs buildings for the Australian outback using passive climate control strategies—natural ventilation, deep overhangs, seasonal sun orientation—grounded in regional vernacular traditions. Glenn Murcutt designs buildings for the Australian outback using passive climate control strategies—natural ventilation, deep overhangs, seasonal sun orientation—grounded in regional vernacular traditions."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "43c6e858-26b4-435d-9862-37dc7ac46e76",
+      "article_id": "c6f9eec1-727b-4d00-a905-f69a58245c66",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-08-core-concept--c6f9eec1-727b-4d00-a905-f69a58245c66",
+      "title": "lea-hist-008-08-core-concept",
+      "baseline_hash": "sha256:6020505c6201b60d6ec992f328b33249da7091091849ce5871e0693aec6238a7",
+      "baseline": {
+        "question_id": "43c6e858-26b4-435d-9862-37dc7ac46e76",
+        "article_id": "c6f9eec1-727b-4d00-a905-f69a58245c66",
+        "topic_id": "b0efd864-03e0-4dde-bd2f-613477d2e14a",
+        "text": "Which Japanese architect exemplifies Critical Regionalism through work combining modernist abstraction with engagement to Japanese spatial traditions, craftsmanship, and environmental conditions?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Kenzo Tange"
+          },
+          {
+            "id": "b",
+            "text": "Tadao Ando"
+          },
+          {
+            "id": "c",
+            "text": "Fumihiko Maki"
+          },
+          {
+            "id": "d",
+            "text": "Arata Isozaki"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Tange was a modernist hero but not primarily identified with Critical Regionalism.",
+          "c": "Maki pursued Japanese modernism but not the explicitly critical regional framework.",
+          "d": "Isozaki pursued postmodern and deconstructivist directions rather than Critical Regionalism.",
+          "correct": "Tadao Ando exemplifies Critical Regionalism through modernist abstraction—clean lines, minimal ornament, structural clarity—combined with engagement to Japanese spatial traditions, zen principles, and environmental responsiveness.",
+          "takeaway": "Tadao Ando exemplifies Critical Regionalism through modernist abstraction—clean lines, minimal ornament, structural clarity—combined with engagement to Japanese spatial traditions, zen principles, and environmental responsiveness."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "remember",
+        "application_context": "recall",
+        "practice_context": [
+          "ID"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "critregion-03",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:26.09657+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:6020505c6201b60d6ec992f328b33249da7091091849ce5871e0693aec6238a7"
+      },
+      "proposed": {
+        "explanation": "Tange was a modernist hero but not primarily identified with Critical Regionalism. Maki pursued Japanese modernism but not the explicitly critical regional framework. Isozaki pursued postmodern and deconstructivist directions rather than Critical Regionalism. Tadao Ando exemplifies Critical Regionalism through modernist abstraction—clean lines, minimal ornament, structural clarity—combined with engagement to Japanese spatial traditions, zen principles, and environmental responsiveness. Tadao Ando exemplifies Critical Regionalism through modernist abstraction—clean lines, minimal ornament, structural clarity—combined with engagement to Japanese spatial traditions, zen principles, and environmental responsiveness."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "created_at": "20260506T090253Z",
+  "apply_results": [
+    {
+      "article_id": "ee1f8beb-e236-4831-a0a8-1ddce447a3b8",
+      "slug": "bp-344-vs-pd-1096-conflicts",
+      "http_status": 200,
+      "returned_rows": 1
+    },
+    {
+      "article_id": "9085e0d8-3498-4d3b-b991-46e54d94bde0",
+      "slug": "pd-1096-rule-vii-occupancy",
+      "http_status": 200,
+      "returned_rows": 1
+    },
+    {
+      "article_id": "859b1a7f-8aba-473d-8c28-f9aaa39af11d",
+      "slug": "pd-1096-rule-viii-setbacks-and-easements",
+      "http_status": 200,
+      "returned_rows": 1
+    }
+  ],
+  "verified": [
+    {
+      "article_id": "ee1f8beb-e236-4831-a0a8-1ddce447a3b8",
+      "slug": "bp-344-vs-pd-1096-conflicts",
+      "intended_hash": "sha256:dd072ab212548e96f82eac17ee9935ae5472322d8994a52b3de2ceac3974722f",
+      "remote_hash": "sha256:dd072ab212548e96f82eac17ee9935ae5472322d8994a52b3de2ceac3974722f",
+      "verified": true,
+      "returned_rows": 1,
+      "updated_at": "2026-05-06T09:02:56.535735+00:00"
+    },
+    {
+      "article_id": "9085e0d8-3498-4d3b-b991-46e54d94bde0",
+      "slug": "pd-1096-rule-vii-occupancy",
+      "intended_hash": "sha256:e171c9e45ab6d19046cf0ce3b2ce075294282f0fe037bab8272aac97b28db04a",
+      "remote_hash": "sha256:e171c9e45ab6d19046cf0ce3b2ce075294282f0fe037bab8272aac97b28db04a",
+      "verified": true,
+      "returned_rows": 1,
+      "updated_at": "2026-05-06T09:02:57.112862+00:00"
+    },
+    {
+      "article_id": "859b1a7f-8aba-473d-8c28-f9aaa39af11d",
+      "slug": "pd-1096-rule-viii-setbacks-and-easements",
+      "intended_hash": "sha256:3e87ea35ca27d6c907a97371b9bda9e0d2712d6551baa377d23d9480bbbf33ee",
+      "remote_hash": "sha256:3e87ea35ca27d6c907a97371b9bda9e0d2712d6551baa377d23d9480bbbf33ee",
+      "verified": true,
+      "returned_rows": 1,
+      "updated_at": "2026-05-06T09:02:57.431788+00:00"
+    }
+  ],
+  "failed": []
+}

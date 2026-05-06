@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Theo 007 12 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 <Callout>
 High-Tech architecture treats structural systems and mechanical infrastructure not as utilities to be concelead but as primary aesthetic generators. The LEA tests whether you understand the theoretical position: **structure as beauty, mechanics as ornament**. You must master the work of Richard Rogers, Renzo Piano, Norman Foster, and Nicholas Grimshaw, and understand how High-Tech resolved modernism's contradiction between form and function by celebrating function as form.

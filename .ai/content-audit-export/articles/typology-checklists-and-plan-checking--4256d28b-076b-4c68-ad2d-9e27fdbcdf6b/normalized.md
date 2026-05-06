@@ -1,8 +1,12 @@
 # Typology Checklists and Plan Checking
 
-### LEA Review | BP 344 2024 IRR | PD 1096 | RA 7277/9442/10754
 
----
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Typology Checklists and Plan Checking** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
+
 
 ## Learning Goal
 

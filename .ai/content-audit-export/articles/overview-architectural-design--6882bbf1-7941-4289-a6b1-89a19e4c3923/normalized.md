@@ -1,5 +1,12 @@
 # Architectural Design and Site Planning — Overview & Study Strategy
 
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Architectural Design and Site Planning — Overview & Study Strategy** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
+
 [SLATECAMP_UI_BLOCK:ui_0001 component="SubjectSnapshot" status="preserved"]
 Extracted summary:
 - Props: items="[{\"label\":\"Total LEA Weight\",\"value\":\"~40%\"},{\"label\":\"PRC Area\",\"value\":\"Area C\"},{\"label\":\"Sole Subject\",\"value\":\"1 of 1 in Area C\"},{\"label\":\"Key Codes\",\"value\":\"4–5 governing laws\"},{\"label\":\"Subtopics\",\"value\":\"13 major areas\"}]"

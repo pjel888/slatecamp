@@ -1,5 +1,12 @@
 # Wheelchair Maneuvering and Parking Slots
 
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Wheelchair Maneuvering and Parking Slots** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
+
 <ArticleMedia id="media-wheelchair-maneuvering-and-par-0" name="ramp-profile-section" type="diagram" caption="Cross-section profile of an accessible ramp showing key dimensions: 1.2 m clear width, 1.8 m level landing at top and bottom, 1/20 preferred slope with 15 m landing interval, 1/15 max slope with 10.5 m max run and 700 mm max rise. Show intermediate landing (1.8 m) for runs exceeding 10.5 m. Add 100 mm raised curb edge protection callout." />
 
 <ArticleMedia id="media-wheelchair-maneuvering-and-par-1" name="sidewalk-passing-diagram" type="diagram" caption="Plan view of sidewalk/walkway showing 1.5 m minimum width, 1.8 m width for two-wheelchair passing zone, and 1.8 m × 1.8 m rest/turn spaces every 12 m. Show the 3.5 m dead-end corridor turnabout rule. Include dropped sidewalk at crossing with 1.5 m depth base platform and 900 mm curb ramp at loading bays." />

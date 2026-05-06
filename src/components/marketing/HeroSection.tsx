@@ -10,9 +10,6 @@ import {
 import { CaretRight } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 
-import { DashboardPeek } from './hero/DashboardPeek'
-import { HeroCards } from './hero/HeroCards'
-
 /* ── Constants ── */
 
 const STATS = [
@@ -26,16 +23,22 @@ const STATS = [
 export const HeroSection = ({
   ctaHref,
   ctaLabel,
-  isLoggedIn,
 }: {
   ctaHref: string
   ctaLabel: string
-  isLoggedIn: boolean
 }) => (
   <section
     aria-label='Hero'
-    className='relative flex flex-col overflow-hidden px-6 pb-0 pt-18 md:pt-20'
+    className='relative flex flex-col overflow-hidden bg-page-bg px-6 pb-0 pt-18 md:pt-20'
   >
+    <div
+      aria-hidden='true'
+      className='pointer-events-none absolute inset-0 z-0 bg-[url("/images/dashboard/Dashboard-BG-Image.png")] bg-cover bg-bottom bg-no-repeat opacity-70'
+    />
+    <div
+      aria-hidden='true'
+      className='pointer-events-none absolute inset-0 z-0 bg-linear-to-b from-page-bg/35 via-page-bg/20 to-page-bg'
+    />
     <div
       className='landing-orb pointer-events-none absolute right-[-10%] top-[-15%] h-[50vh] w-[50vh] rounded-full md:h-[45vw] md:w-[45vw]'
       style={{
@@ -48,9 +51,9 @@ export const HeroSection = ({
 
     {/* Hero Content */}
     <div className='relative z-10 mx-auto w-full max-w-[1200px]'>
-      <div className='relative grid h-[600px] grid-cols-1 items-start gap-8 md:grid-cols-12 md:items-center'>
-        {/* Left: Giant headline */}
-        <div className='md:col-span-7 h-full flex flex-col justify-start '>
+      <div className='relative flex min-h-[600px] flex-col items-start'>
+        {/* Giant headline */}
+        <div className='flex h-full w-full max-w-[760px] flex-col justify-start'>
           <div className='mt-26'>
             <div className='motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-300 flex items-center gap-3'>
               <div
@@ -59,10 +62,11 @@ export const HeroSection = ({
               >
                 <div className='flex flex-row items-center gap-2 '>
                   <Starburst className='h-3 w-3' />
-                  <span className='font-[family-name:var(--font-dm-mono)] text-[11px] tracking-[0.22em] uppercase text-camp-cobalt'>
-                    Professional LEA review platform.
+                  <span className='font-[family-name:var(--font-dm-mono)] text-[12px] font-semibold tracking-[0.22em] uppercase text-camp-cobalt'>
+                    Licensure Examination Review for Architects
                   </span>
                 </div>
+                {/* <p className='text-[12px] font-semibold'>Review Platform</p> */}
               </div>
             </div>
 
@@ -98,12 +102,7 @@ export const HeroSection = ({
               </span>
             ))}
           </div>
-
-          <DashboardPeek />
         </div>
-
-        {/* Right: Stacked Cards */}
-        <HeroCards isLoggedIn={isLoggedIn} />
       </div>
     </div>
   </section>

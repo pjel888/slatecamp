@@ -1,5 +1,13 @@
 # The Bauhaus and International Style
 
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **The Bauhaus and International Style** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
+
+
 ## Learning Goal
 
 By the end of this module, you will be able to distinguish the Bauhaus (a school with a pedagogical mission) from the International Style (a critical label for shared formal characteristics), identify key figures and buildings for each, and recognize "Form Follows Function" as Louis Sullivan's pre-Modernist principle adopted by both movements.
