@@ -1,0 +1,34 @@
+# Question Batch 007 Quarantine Report
+
+- 2e916f14-03d0-4b76-b5ee-ad5033e361b5: Batch 007 reviewer quarantine: option-length giveaway in Cluny III item
+- ee42877a-4fc5-41d1-938c-6c823f9df94b: Batch 007 reviewer quarantine: IES 300-500 lux exact standard claim source verification required
+- 69766551-0f0c-4cd4-b59a-3b3bcefe596c: Batch 007 reviewer quarantine: IES uniformity ratio 0.6 exact standard claim source verification required
+- 4e65f0c0-d2ff-4bac-897b-e739415182ac: Batch 007 reviewer quarantine: hospital ward 100 lux/3000K Philippine/IES standard source risk
+- d9b5f4e3-065c-453f-8016-0d52c846bd43: Batch 007 reviewer quarantine: OR 100000 lux/ASHRAE claim plus option-length clueing
+- b761cd1c-3adb-4190-a5c9-71ef272c55b8: Batch 007 reviewer quarantine: retail/cosmetics CRI 90+ exact standard source risk
+- d31bcd1a-10d9-4c8a-9356-206ce3d52938: Batch 007 reviewer quarantine: pharmaceutical lab lux/CRI/CCT/UR exact standard claims and option-length clueing
+- 42eb64fa-499b-4143-b951-5efa7a6163c5: Batch 007 reviewer quarantine: Filipino residential seating 60-75cm dimensional/cultural source overgeneralization risk
+- 4bf7f032-f91c-416a-9163-e18e88c4d899: Batch 007 reviewer quarantine: severe option-length giveaway
+- 272c520c-ebd2-4bb0-a4ff-e2bc29cddf0f: Batch 007 reviewer quarantine: duplicated rationale/explanation surface-quality failure
+- 28d2c49d-de58-4183-9043-9eb9e40b3317: Batch 007 reviewer quarantine: duplicated rationale/explanation quality issue
+- 99d62df8-c92b-41f4-990a-366bb0c687d1: Batch 007 reviewer quarantine: option-length giveaway
+- bd4686a0-7fe1-4ed4-a3ee-9ac131e909ac: Batch 007 reviewer quarantine: professional/legal liability overstatement risk
+- 66966b70-ada6-4fba-8612-a01bdcb767ab: Batch 007 reviewer quarantine: proper-name typo and option-length giveaway
+- f3e077bd-ba9b-420b-bb1a-d313bd1c73ce: Batch 007 reviewer quarantine: proper-name typo Andre/Andrea Palladio
+- f1754aeb-6464-425d-98a9-c596e63ac142: Batch 007 reviewer quarantine: severe option-length giveaway
+- 8f2923dc-6ac7-40fe-92bb-ac29b1f39476: Batch 007 reviewer quarantine: severe option-length giveaway and weak distractors
+- 8a51628d-86d8-43e4-b42c-d55b7df25981: Batch 007 reviewer quarantine: professional-practice/CAS coordination source-gap and possible scope overstatement
+- 0cd4f367-83fa-4ff5-8f52-d46bc102be40: Batch 007 reviewer quarantine: professional responsibility/civil liability legal overstatement risk
+- c774555c-0d1d-42b8-a58b-1e8854ce4cb7: Batch 007 reviewer quarantine: architect prime professional/client agent professional-practice source-gap
+- 4ce45e1a-c11d-41c4-b30e-da46213a25e8: Batch 007 reviewer quarantine: SPP phase claim and composite/ambiguous option; professional-practice source risk
+- 8b646a53-5989-4195-87b5-b876d74843c4: Batch 007 reviewer quarantine: CAS multidisciplinary coordination source-gap
+- 304030e9-5eb4-4cd0-b3c1-c81be955f91d: Batch 007 reviewer quarantine: architect as agent/client professional integrity legal/professional-practice risk
+- 57ac8070-f0a8-43ff-bdc1-c8c5ca52b66d: Batch 007 reviewer quarantine: specialized vs regular services professional-practice classification source-gap
+- bef77a69-327c-459e-b11d-918086a5fe4a: Batch 007 reviewer quarantine: CAS lifecycle category professional-practice source-gap
+- 7c00e128-1eaa-4d5d-92a7-49eda97f2f8e: Batch 007 reviewer quarantine: ambiguous key/project management vs CAS and professional-practice source risk
+- 6e1ff2cb-3f16-42ee-b391-3414c262f2fc: Batch 007 reviewer quarantine: RA 8371/FPIC legal source verification required
+- d4c1affb-3c2a-41d5-a43f-c8095c387c70: Batch 007 reviewer quarantine: RA 7277/BP344 accessibility legal dimensional inconsistency
+- 2099f6e7-74a0-4318-b95a-b5265944907b: Batch 007 reviewer quarantine: RA 10121/planning program causal claim source verification required
+- f23e182c-d100-47f5-b624-83b7aab273c0: Batch 007 reviewer quarantine: disaster housing/Post-Yolanda planning source verification required
+- 33fcd5e0-4253-49a2-9295-2c5aea60b44b: Batch 007 reviewer quarantine: RA 7277 universal accessible design broad legal mandate source risk
+- c454a1ba-6fb0-4949-9912-1a7698127a12: Batch 007 reviewer quarantine: RA10121 recovery mandate source risk and option-length giveaway
