@@ -18,3 +18,19 @@ Reviewer: independent Hermes subagent, separate context/model from builder.
 ### Resolution
 
 All recommendations were implemented before validation and commit.
+
+## Batch 2: PricingCard CTA normalization
+
+Date/time: 2026-05-06T17:33:52
+Queue ID: UIA-PUBLIC-0021
+Reviewer: independent Hermes subagent, separate context/model from builder.
+
+### Reviewer result
+
+- Blockers: none.
+- Validation independently run by reviewer: `bun run lint`, `bun run check:storybook`, `git diff --check`, `NODE_OPTIONS=--max-old-space-size=4096 bun run build-storybook`.
+- Notes accepted: Storybook `next/font/google` mock is intentionally approximate; Button migration adds a small client component boundary for CTA; highlighted hover styling now follows shared Button behavior.
+
+### Resolution
+
+No changes required after review. Risks documented.

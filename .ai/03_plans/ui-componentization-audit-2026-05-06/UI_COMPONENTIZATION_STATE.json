@@ -48,12 +48,12 @@
     "modal_dialog": 13,
     "storybook_required": 35
   },
-  "last_completed_batch": "Batch 1: auth error alert normalization",
+  "last_completed_batch": "Batch 2: PricingCard CTA normalization",
   "latest_validation": {
     "lint": "passed with 10 baseline warnings",
-    "check_storybook": "passed",
-    "build_storybook": "passed with NODE_OPTIONS=--max-old-space-size=8192",
+    "check_storybook": "passed, 102 stories",
+    "build_storybook": "passed with Storybook font mock and NODE_OPTIONS",
     "type_check": "baseline failure remains: missing openai module",
-    "browser": "login/register inspected"
+    "browser": "pricing route and PricingCard Storybook inspected"
   }
 }

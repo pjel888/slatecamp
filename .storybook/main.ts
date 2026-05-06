@@ -58,6 +58,9 @@ const config: StorybookConfig = {
       'next/link': fileURLToPath(
         new URL('../src/storybook/mocks/next-link.tsx', import.meta.url),
       ),
+      'next/font/google': fileURLToPath(
+        new URL('../src/storybook/mocks/next-font-google.ts', import.meta.url),
+      ),
       'next/navigation': fileURLToPath(
         new URL('../src/storybook/mocks/next-navigation.tsx', import.meta.url),
       ),

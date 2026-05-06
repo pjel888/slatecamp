@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { Instrument_Serif } from 'next/font/google'
 import { CheckCircle, XCircle } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
+import { Button } from '@/components/ui/button'
 import type { PricingTier } from '@/lib/constants/pricing'
 
 const serif = Instrument_Serif({
@@ -80,15 +81,15 @@ export const PricingCard = ({ tier }: { tier: PricingTier }) => (
       </ul>
     )}
 
-    <Link
-      href={tier.ctaHref}
-      className={`mt-7 block w-full rounded-sm px-7 py-3 text-center text-[15px] font-medium text-white transition-all duration-150 ${
-        tier.highlighted
-          ? 'bg-primary hover:bg-primary-700'
-          : 'bg-camp-cobalt hover:bg-primary-700'
+    <Button
+      asChild
+      fullWidth
+      size='xl'
+      className={`mt-7 h-auto py-3 text-[15px] ${
+        tier.highlighted ? '' : 'bg-camp-cobalt hover:bg-primary-700'
       }`}
     >
-      {tier.ctaLabel}
-    </Link>
+      <Link href={tier.ctaHref}>{tier.ctaLabel}</Link>
+    </Button>
   </div>
 )
