@@ -1,3 +1,10 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Lea Prac Law 012 Quasi Delict And Tort In Architectural Practice Civil Code Articles 2176 2194** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
 ## Quasi-Delict and Tort in Architectural Practice — Civil Code Articles 2176–2194
 
 ## Learning Goal

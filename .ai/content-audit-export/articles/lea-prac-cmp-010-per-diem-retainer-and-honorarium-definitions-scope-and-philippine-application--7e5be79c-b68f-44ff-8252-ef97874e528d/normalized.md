@@ -1,3 +1,10 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Lea Prac Cmp 010 Per Diem Retainer And Honorarium Definitions Scope And Philippine Application** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
 ## Per Diem, Retainer, and Honorarium — Definitions, Scope, and Philippine Application
 
 ## Learning Goal
