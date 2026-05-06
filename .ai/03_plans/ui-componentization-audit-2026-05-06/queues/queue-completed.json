@@ -198,5 +198,30 @@
     "reviewer_notes": null,
     "final_status": "completed",
     "validation_result": "AssetList search input migrated to shared Input and status/system filters to shared Select; aria labels added; Storybook coverage added; lint/check-storybook/build-storybook/visual inspection passed; type-check remains blocked only by baseline missing openai."
+  },
+  {
+    "id": "UIA-PUBLIC-0018",
+    "file": "src/components/calculators/InputPrimitives.tsx",
+    "line": null,
+    "surface": "tools",
+    "component": "CheckboxField",
+    "current_pattern": "custom raw checkbox",
+    "classification": "definite_drift",
+    "risk": "low",
+    "proposed_target": "Checkbox + Label",
+    "user_impact": "Reduce UI drift and improve consistency/accessibility where safe.",
+    "implementation_notes": "Implement only from queue in small batches after reading current file and preserving behavior.",
+    "storybook_required": true,
+    "storybook_story_path": null,
+    "tests_required": [
+      "bun run type-check",
+      "bun run lint"
+    ],
+    "visual_routes": [
+      "/tools/paint"
+    ],
+    "reviewer_notes": null,
+    "final_status": "completed",
+    "validation_result": "CheckboxField migrated to shared Checkbox + Label with useId htmlFor/id linkage; Storybook coverage added; lint/check-storybook/build-storybook passed; Playwright verified label and checkbox toggles; type-check blocked only by baseline missing openai."
   }
 ]

@@ -1,6 +1,8 @@
 'use client'
 
-import type { ReactNode } from 'react'
+import { useId, type ReactNode } from 'react'
+import { Checkbox } from '@/components/ui/checkbox'
+import { Label } from '@/components/ui/label'
 import { cn } from '@/lib/utils'
 
 interface TextChildrenProps {
@@ -111,14 +113,18 @@ export const CheckboxField = ({
   label,
   checked,
   onChange,
-}: CheckboxFieldProps) => (
-  <label className="flex items-center gap-2">
-    <input
-      type="checkbox"
-      checked={checked}
-      onChange={(event) => onChange(event.target.checked)}
-      className="h-3.5 w-3.5 rounded-sm border-border accent-primary"
-    />
-    <span className="text-xs text-foreground">{label}</span>
-  </label>
-)
+}: CheckboxFieldProps) => {
+  const id = useId()
+
+  return (
+    <Label htmlFor={id} className="gap-2 text-xs font-normal text-foreground">
+      <Checkbox
+        id={id}
+        checked={checked}
+        onCheckedChange={(value) => onChange(value === true)}
+        className="size-3.5"
+      />
+      {label}
+    </Label>
+  )
+}

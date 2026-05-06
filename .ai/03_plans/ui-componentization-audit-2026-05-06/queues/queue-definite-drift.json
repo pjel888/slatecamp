@@ -98,30 +98,5 @@
     "reviewer_notes": null,
     "final_status": "open",
     "validation_result": null
-  },
-  {
-    "id": "UIA-PUBLIC-0018",
-    "file": "src/components/calculators/InputPrimitives.tsx",
-    "line": null,
-    "surface": "tools",
-    "component": "CheckboxField",
-    "current_pattern": "custom raw checkbox",
-    "classification": "definite_drift",
-    "risk": "low",
-    "proposed_target": "Checkbox + Label",
-    "user_impact": "Reduce UI drift and improve consistency/accessibility where safe.",
-    "implementation_notes": "Implement only from queue in small batches after reading current file and preserving behavior.",
-    "storybook_required": true,
-    "storybook_story_path": null,
-    "tests_required": [
-      "bun run type-check",
-      "bun run lint"
-    ],
-    "visual_routes": [
-      "/tools/paint"
-    ],
-    "reviewer_notes": null,
-    "final_status": "open",
-    "validation_result": null
   }
 ]

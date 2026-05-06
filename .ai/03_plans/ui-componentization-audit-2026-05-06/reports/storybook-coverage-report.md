@@ -108,3 +108,19 @@ Validation:
 
 - `bun run check:storybook`: passed.
 - `NODE_OPTIONS=--max-old-space-size=8192 bun run build-storybook`: passed.
+
+## Batch 7
+
+Added:
+
+- `src/components/calculators/InputPrimitives.stories.tsx`
+
+Covered states:
+
+- Combined calculator controls
+- Checkbox unchecked
+
+Validation:
+
+- `bun run check:storybook`: passed.
+- `NODE_OPTIONS=--max-old-space-size=8192 bun run build-storybook`: passed.

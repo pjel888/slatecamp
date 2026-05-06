@@ -92,3 +92,14 @@ Reviewer: independent Hermes subagent, separate context/model from builder.
   - Cleaned `SelectContent` indentation.
 - Recommendation deferred:
   - Empty-string Select all-items remain because this pattern already exists in the repo and validated correctly in Storybook/Playwright.
+
+## Batch 7: Calculator CheckboxField migration
+
+Date/time: 2026-05-06T19:05:12
+Queue ID: UIA-PUBLIC-0018
+Reviewer: independent Hermes subagent, separate context/model from builder.
+
+### Reviewer result
+
+- Blockers: none.
+- Recommendations: add future Storybook play assertions for label-click and checkbox-click behavior if interaction testing is expanded.

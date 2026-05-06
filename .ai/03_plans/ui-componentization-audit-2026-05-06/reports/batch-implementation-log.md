@@ -148,3 +148,27 @@ Queue ID: UIA-ADMIN-0001
 ### Risk
 
 Low. Search filtering and visual layout were verified. Select empty-string all-options follow existing repo usage.
+
+## Batch 7: Calculator CheckboxField migration
+
+Date/time: 2026-05-06T19:05:12
+Queue ID: UIA-PUBLIC-0018
+
+### What changed
+
+- Migrated calculator `CheckboxField` from raw checkbox input to shared `Checkbox` and `Label`.
+- Added `useId()` linkage between label and checkbox for accessible label-click behavior.
+- Added `src/components/calculators/InputPrimitives.stories.tsx` covering combined controls and unchecked checkbox state.
+
+### Validation
+
+- `bun run lint`: passed with same 10 baseline warnings.
+- `bun run check:storybook`: passed.
+- `NODE_OPTIONS=--max-old-space-size=8192 bun run build-storybook`: passed.
+- `bun run type-check`: known baseline failure remains from missing `openai` module after story-specific type issue was fixed.
+- Playwright state check: initial `aria-checked=true`, label click toggled false, direct checkbox click toggled true.
+- Screenshot inspection covered checked and toggled states.
+
+### Risk
+
+Low. External props are unchanged and label-click behavior was verified.

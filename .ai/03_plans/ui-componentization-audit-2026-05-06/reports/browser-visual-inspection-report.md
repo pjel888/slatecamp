@@ -117,3 +117,22 @@ Date/time: 2026-05-06T18:59:10
 - Shared Input and Select controls render correctly.
 - Search filtering leaves only the MEP asset when `MEP` is entered.
 - No obvious visual regression.
+
+## Batch 7: Calculator CheckboxField migration
+
+Date/time: 2026-05-06T19:05:12
+
+### Story inspected
+
+- Storybook iframe: `/iframe.html?id=calculators-inputprimitives--controls&viewMode=story`
+
+### Evidence
+
+- `.ai/03_plans/ui-componentization-audit-2026-05-06/visual/batch-7-calculator-checkbox/controls.png`
+- `.ai/03_plans/ui-componentization-audit-2026-05-06/visual/batch-7-calculator-checkbox/checkbox-toggled.png`
+
+### Result
+
+- Shared Checkbox + Label render correctly in calculator control context.
+- Label-click and checkbox-click toggles verified via Playwright state check.
+- No obvious visual regression.
