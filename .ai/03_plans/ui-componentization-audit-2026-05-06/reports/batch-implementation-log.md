@@ -191,3 +191,20 @@ Queue ID: UIA-QZ-0008
 - `NODE_OPTIONS=--max-old-space-size=8192 bun run build-storybook`: passed.
 - `bun run type-check`: only known baseline `openai` module failure after story fixture/type issues were fixed.
 - Playwright screenshots captured for setup flow, topic search, and advanced config stories.
+
+## Batch 9: Quiz-v2 overlay/results Storybook coverage
+
+Date/time: 2026-05-06T19:27:21
+Queue ID: UIA-QZ-0013
+
+### What changed
+- Added `src/components/quiz-v2/OverlaysAndResults.stories.tsx`.
+- Covered calculating results overlay, micro-break overlay, exit confirmation modal, and ScoreReveal card.
+- Removed autodocs from always-open/fixed overlay stories to avoid misleading docs-page behavior.
+
+### Validation
+- `bun run lint`: passed with 10 baseline warnings.
+- `bun run check:storybook`: passed.
+- `NODE_OPTIONS=--max-old-space-size=8192 bun run build-storybook`: passed.
+- `bun run type-check`: baseline missing `openai` only.
+- Playwright screenshots captured, including final ScoreReveal after animation delay.

@@ -147,3 +147,12 @@ Evidence:
 - `.ai/03_plans/ui-componentization-audit-2026-05-06/visual/batch-8-quiz-setup/advanced-config.png`
 
 Result: primitive-backed controls render correctly in Storybook scenarios.
+
+## Batch 9: Quiz-v2 overlay/results Storybook coverage
+
+Date/time: 2026-05-06T19:27:21
+Evidence:
+- `.ai/03_plans/ui-componentization-audit-2026-05-06/visual/batch-9-quiz-stories/calculating.png`
+- `.ai/03_plans/ui-componentization-audit-2026-05-06/visual/batch-9-quiz-stories/micro-break.png`
+- `.ai/03_plans/ui-componentization-audit-2026-05-06/visual/batch-9-quiz-stories/exit-confirm.png`
+- `.ai/03_plans/ui-componentization-audit-2026-05-06/visual/batch-9-quiz-stories/score-reveal-final.png`

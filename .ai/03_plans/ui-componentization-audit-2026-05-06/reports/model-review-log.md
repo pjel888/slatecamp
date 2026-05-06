@@ -113,3 +113,7 @@ Reviewer: independent Hermes subagent.
 - Initial blockers: story fixture/type issues.
 - Fix applied: TaxonomySubject fixtures corrected and default args added to satisfy Storybook typing.
 - Remaining type-check issue is baseline missing `openai`, unrelated to this batch.
+
+## Batch 9: Quiz-v2 overlay/results Storybook coverage
+Date/time: 2026-05-06T19:27:21
+Reviewer flagged docs/autodocs and ScoreReveal timing. Autodocs removed for overlay stories; final ScoreReveal screenshot recaptured after animation.

@@ -127,3 +127,6 @@ Validation:
 
 ## Batch 8
 Added `src/components/quiz-v2/setup/SetupControls.stories.tsx` covering setup flow, count selector, pressure selector, slide 1, topic search, and advanced config.
+
+## Batch 9
+Added `src/components/quiz-v2/OverlaysAndResults.stories.tsx` for overlay/results surfaces.

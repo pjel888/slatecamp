@@ -248,5 +248,30 @@
     "reviewer_notes": null,
     "final_status": "completed",
     "validation_result": "Quiz setup selectors migrated where safe to shared Button/Input primitives; SetupControls Storybook coverage added; lint/check-storybook/build-storybook passed; type-check only baseline missing openai; Playwright screenshots captured."
+  },
+  {
+    "id": "UIA-QZ-0013",
+    "file": "src/components/quiz-v2",
+    "line": null,
+    "surface": "quiz",
+    "component": "Quiz Storybook gaps",
+    "current_pattern": "only three quiz-v2 stories found",
+    "classification": "definite_drift",
+    "risk": "low",
+    "proposed_target": "Add stories for overlays/session/results",
+    "user_impact": "Reduce UI drift and improve consistency/accessibility where safe.",
+    "implementation_notes": "Implement only from queue in small batches after reading current file and preserving behavior.",
+    "storybook_required": true,
+    "storybook_story_path": null,
+    "tests_required": [
+      "bun run type-check",
+      "bun run lint"
+    ],
+    "visual_routes": [
+      "/dashboard/quiz"
+    ],
+    "reviewer_notes": null,
+    "final_status": "completed",
+    "validation_result": "Added quiz-v2 overlay/results Storybook coverage; lint/check-storybook/build-storybook passed; visual screenshots captured; type-check baseline openai only."
   }
 ]
