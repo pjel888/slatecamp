@@ -138,7 +138,11 @@
     "content-audit:rebaseline-plan": "bun scripts/content-audit/build-supabase-rebaseline-plan.ts",
     "content-audit:rebaseline-plan-validate": "bun scripts/content-audit/validate-supabase-rebaseline-plan.ts",
     "content-audit:admin-shadow-migration": "bun scripts/content-audit/build-admin-audit-shadow-migration.ts",
-    "content-audit:admin-shadow-migration-validate": "bun scripts/content-audit/validate-admin-audit-shadow-migration.ts"
+    "content-audit:admin-shadow-migration-validate": "bun scripts/content-audit/validate-admin-audit-shadow-migration.ts",
+    "content-audit:admin-shadow-schema-validate": "bun scripts/content-audit/validate-admin-audit-shadow-schema.ts",
+    "content-audit:admin-local-fixtures": "bun scripts/content-audit/build-admin-audit-local-fixtures.ts",
+    "content-audit:admin-local-fixtures-validate": "bun scripts/content-audit/validate-admin-audit-local-fixtures.ts",
+    "content-audit:admin-sync-dry-run": "bun scripts/content-audit/sync-admin-audit-payload-dry-run.ts"
   },
   "dependencies": {
     "@base-ui/react": "^1.4.1",
