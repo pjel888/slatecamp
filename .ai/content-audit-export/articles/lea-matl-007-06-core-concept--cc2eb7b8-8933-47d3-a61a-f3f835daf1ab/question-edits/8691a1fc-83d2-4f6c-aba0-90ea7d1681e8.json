@@ -1,12 +1,10 @@
 {
   "question_id": "8691a1fc-83d2-4f6c-aba0-90ea7d1681e8",
   "baseline_hash": "sha256:7a09c5686181a31af4032ee6523997a97a3ca431a1cbe379600d2f6b08cf08d9",
-  "reason": "Missing rationale entry for wrong option 'c' (Mohs 7). Option 'c' (Mohs 7) is actually correct for quartz mineral, but the correct answer for this specific question is option 'b' (5-6 to 7 depending on brand). Added explanation.",
-  "approved_by": "hermes-question-audit",
-  "approved_at": "2026-05-03T12:16:00.000000+00:00",
+  "reason": "Strict explanation backfill from existing specific rationale; answer key and options unchanged.",
+  "approved_by": "hermes-question-remediation-autopilot",
+  "approved_at": "2026-05-06T14:46:35.857Z",
   "proposed": {
-    "rationale": {
-      "c": "While quartz mineral has Mohs 7, engineered quartz composite hardness varies (5-6 to 7) depending on resin-to-quartz ratio. 7 is the upper bound but not the typical stated hardness for all brands."
-    }
+    "explanation": "3-4 is marble hardness; too soft. 5-6 is limestone/travertine; insufficient for counters. 8-9 is diamond/sapphire; harder than quartz. Engineered quartz typically has Mohs hardness of 5-6 to 7 depending on brand/formulation (often scratched by #6 pick). Provides good but not top-tier scratch resistance. 7 (quartz mineral component). This matches natural granite and provides excellent scratch resistance. Quartz hardness 7 = excellent durability. Marble hardness 3 = soft, etches easily. Memorize the scale."
   }
 }
