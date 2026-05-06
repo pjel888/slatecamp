@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Theo 003 01 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 
 <Callout>Anthropometrics is the scientific measurement of the human body and its relationship to architectural space. The LEA tests your knowledge of three major systems—Neufert's Architects' Data, Henry Dreyfuss's The Measure of Man, and Le Corbusier's Modulor—and their specific numerical dimensions used in design. You must know standard door heights (2100mm), passage widths (900mm minimum), counter heights (900mm), and eye heights (seated ~1100–1200mm, standing ~1500–1600mm) because these appear as MCQ choices.</Callout>
