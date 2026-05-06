@@ -1,0 +1,10 @@
+{
+  "question_id": "60912f19-0204-4bb1-9b22-dc96e20f031a",
+  "baseline_hash": "sha256:22e60508165a441634be9af6117ee2f6b5da385668ac11ec0785dd939bbbffc7",
+  "reason": "Strict explanation backfill from existing specific rationale; answer key and options unchanged.",
+  "approved_by": "hermes-question-remediation-autopilot",
+  "approved_at": "2026-05-06T15:10:36.236Z",
+  "proposed": {
+    "explanation": "Omits the earth pressure term; incomplete combination. Applies the reduced-gravity formula with earth pressure, which is not a standard NSCP combination. This is an NSCP 2015 formula; the question specifies older NSCP, and values do not match calculation. When earth/water pressure acts, the older NSCP specifies U = 1.4D + 1.7L + 1.7H. All factors (1.4, 1.7, 1.7) apply without reduction. Review the correct answer and associated code provision."
+  }
+}

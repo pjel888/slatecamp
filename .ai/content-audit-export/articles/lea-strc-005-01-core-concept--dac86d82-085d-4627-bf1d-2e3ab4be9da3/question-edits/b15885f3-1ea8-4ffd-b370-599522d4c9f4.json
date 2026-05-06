@@ -1,0 +1,10 @@
+{
+  "question_id": "b15885f3-1ea8-4ffd-b370-599522d4c9f4",
+  "baseline_hash": "sha256:d39252fb4dc89e5fcf3cba28130b4ab8976ab231e4a819772aa7bca825e8823b",
+  "reason": "Strict explanation backfill from existing specific rationale; answer key and options unchanged.",
+  "approved_by": "hermes-question-remediation-autopilot",
+  "approved_at": "2026-05-06T15:10:36.236Z",
+  "proposed": {
+    "explanation": "1.87 is the stated factor, but the 0.75 reduction modifies the effective value in the combined formula. NSCP 2015 uses 1.0; older NSCP yields 1.40 after the 0.75 reduction. Incorrect arithmetic; 0.75 × 1.87 = 1.4025, not 1.25. The formula U = 0.75(1.4D + 1.7L + 1.87E) means the effective earthquake factor is 0.75 × 1.87 ≈ 1.40. Review the correct answer and associated code provision."
+  }
+}
