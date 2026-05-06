@@ -1,0 +1,10 @@
+{
+  "question_id": "e8c5f853-a3c6-4c3f-8e9e-5552e1b11de6",
+  "baseline_hash": "sha256:bebf06c1698c26c843301b9cf29caca69a1859a168c6396c097c5fcf7e279f40",
+  "reason": "Strict explanation backfill from existing specific rationale; answer key and options unchanged.",
+  "approved_by": "hermes-question-remediation-autopilot",
+  "approved_at": "2026-05-06T14:54:54.936Z",
+  "proposed": {
+    "explanation": "Incorrect calculation; may result from using 110V (non-Philippine) or incorrect formula. Results from I = 8,800 / 220 = 40 A (ignoring power factor correction). Standard entrance size above 42 A, but not the calculated current. Using single-phase formula: I = P / (V × PF) = 8,800 / (220 × 0.95) = 8,800 / 209 = 42.1 A ≈ 42 A. Philippine standard is 220V single-phase (60 Hz), NOT 110V as in some other regions. Service must be rated at least 42 A; standard entrance sizes are 50 A, 60 A, 100 A per PEC 230.79. Philippine context: Always use 220V for single-phase residential, not 110V. Power factor must be included in current calculations."
+  }
+}
