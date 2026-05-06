@@ -1,0 +1,10 @@
+{
+  "question_id": "2ab35a6f-b37d-4dbd-b6fa-bea8a6ae4950",
+  "baseline_hash": "sha256:c7f8650b76812c51742f46616ade35323c001810760097b79ac54082f9a1c0e1",
+  "reason": "Strict explanation backfill from existing specific rationale; answer key and options unchanged.",
+  "approved_by": "hermes-question-remediation-autopilot",
+  "approved_at": "2026-05-06T15:54:34.077Z",
+  "proposed": {
+    "explanation": "Offline UPS provides no protection until failure detection occurs; it is unsuitable for sensitive equipment during Meralco voltage fluctuations. Line-interactive UPS offers good compromise between protection and efficiency but does not provide complete isolation from voltage disturbances like online UPS. Hybrid UPS modes switching between offline and online operation cannot guarantee continuous protection during rapid Meralco voltage changes. Online double conversion UPS continuously converts incoming AC power to DC, then back to AC, providing maximum isolation from utility voltage disturbances, harmonics, and transients. This topology completely decouples the load from Meralco's ±5-10% voltage fluctuations and 8-12% harmonic distortion. Although efficiency is lower (90-94%), sensitive data center equipment justifies this trade-off to prevent data loss and hardware damage. Online double conversion UPS topology is optimized for data centers in the Philippines where Meralco power quality issues require maximum protection against voltage fluctuations and harmonics."
+  }
+}

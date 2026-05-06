@@ -1,0 +1,10 @@
+{
+  "question_id": "334d282d-5724-4aac-8f9d-1590bb664c15",
+  "baseline_hash": "sha256:df344e687807c12a727085b2a91b07668a0e008f44199f91a8a9273ad54ca934",
+  "reason": "Strict explanation backfill from existing specific rationale; answer key and options unchanged.",
+  "approved_by": "hermes-question-remediation-autopilot",
+  "approved_at": "2026-05-06T15:54:34.076Z",
+  "proposed": {
+    "explanation": "1.33 BF is the correct difference. 1.67 BF results from a rounding error. 2.0 BF may result from using an incorrect formula. 3.33 BF is too high. 2×4×12: (2 × 4 × 12) ÷ 12 = 8 BF. 2×4×10: (2 × 4 × 10) ÷ 12 = 6.67 BF. Difference: 8 – 6.67 = 1.33 BF. When comparing two boards: calculate BF for each, then subtract. The difference is proportional to the difference in length."
+  }
+}

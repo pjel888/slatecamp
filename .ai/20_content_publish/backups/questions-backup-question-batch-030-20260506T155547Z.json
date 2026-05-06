@@ -1,0 +1,2514 @@
+{
+  "created_at": "2026-05-06T15:55:55.887Z",
+  "batch": "question-batch-030",
+  "table": "questions",
+  "rows": [
+    {
+      "question_id": "d6591bb0-9a7c-4f93-9d12-da8f32126370",
+      "article_id": "ed8d54e9-eef1-4585-9447-f9cff392bbff",
+      "topic_id": "db0533bb-fe1d-44bc-92c0-d4673a8099e4",
+      "text": "Boston City Hall (completed 1968, opened 1969) is American Brutalism's most iconic public building. Who designed it, and what is its defining formal characteristic?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Louis Kahn; refined barrel vaults emphasizing material beauty, a hallmark of his architectural philosophy"
+        },
+        {
+          "id": "b",
+          "text": "Kallmann, McKinnell & Knowles; massive stepped pyramid with dramatic cantilever and public plaza beneath"
+        },
+        {
+          "id": "c",
+          "text": "Chamberlin, Powell and Bon; inward-facing fortress towers with elevated walkways, creating a sense of enclosure"
+        },
+        {
+          "id": "d",
+          "text": "Moshe Safdie; stacked, interlocking modular cube units, reflecting his interest in modularity"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This describes Louis Kahn's refined Brutalist approach at Kimbell Art Museum, not Boston City Hall.",
+        "c": "This describes the Barbican Estate in London.",
+        "d": "This describes Habitat 67 in Montreal.",
+        "correct": "Boston City Hall exemplifies American Brutalism through its massive stepped pyramid form in raw concrete with a dramatic cantilever base creating a publicly accessible plaza, asserting governmental authority through formal power.",
+        "takeaway": "Boston City Hall exemplifies American Brutalism through its massive stepped pyramid form in raw concrete with a dramatic cantilever base creating a publicly accessible plaza, asserting governmental authority through formal power."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "recall",
+      "practice_context": [
+        "ID"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "brutalism-04",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.729652+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "2996baec-473d-440b-813a-2c9e0fd472ae",
+      "article_id": "ed8d54e9-eef1-4585-9447-f9cff392bbff",
+      "topic_id": "db0533bb-fe1d-44bc-92c0-d4673a8099e4",
+      "text": "During which period did Brutalism dominate postwar architecture, spreading globally from its British origins?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1930s–1940s"
+        },
+        {
+          "id": "b",
+          "text": "1950s–1970s"
+        },
+        {
+          "id": "c",
+          "text": "1980s–1990s"
+        },
+        {
+          "id": "d",
+          "text": "2000s–2010s"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This period predates Brutalism's emergence.",
+        "c": "By the 1980s, Brutalism had fallen from favor and was being challenged by Postmodernism.",
+        "d": "This is well after Brutalism's peak period; contemporary reassessment came later.",
+        "correct": "Brutalism developed in Britain and spread globally in the 1950s–70s as modernism's most uncompromising phase.",
+        "takeaway": "The article states Brutalism developed in Britain and spread globally in the 1950s–70s as modernism's most uncompromising phase."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "CH"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "brutalism-03",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.729652+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "0cd217cf-fc63-4a21-a999-461271366f63",
+      "article_id": "ed8d54e9-eef1-4585-9447-f9cff392bbff",
+      "topic_id": "db0533bb-fe1d-44bc-92c0-d4673a8099e4",
+      "text": "A building comprises stacked, interlocking concrete cube modules projecting individually to create fragmented, dynamic massing. Designed in 1967, it addressed postwar housing shortages through prefabrication and systematic modulation. Which building and architect is this?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Barbican Estate, Chamberlin, Powell and Bon"
+        },
+        {
+          "id": "b",
+          "text": "Boston City Hall, Kallmann, McKinnell & Knowles"
+        },
+        {
+          "id": "c",
+          "text": "Habitat 67, Moshe Safdie"
+        },
+        {
+          "id": "d",
+          "text": "Kimbell Art Museum, Louis Kahn"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The Barbican is a tower-based fortress community, not a modular stacking system.",
+        "b": "Boston City Hall is a stepped pyramid, not a modular stacking system.",
+        "d": "Kimbell Art Museum is a cultural institution, not a housing project with modular units.",
+        "correct": "Habitat 67 (1967) in Montreal, designed by Moshe Safdie, exemplifies this approach: stacked modular units, prefabricated for efficiency, creating dynamic three-dimensional massing while addressing postwar housing crises.",
+        "takeaway": "Habitat 67 (1967) in Montreal, designed by Moshe Safdie, exemplifies this approach: stacked modular units, prefabricated for efficiency, creating dynamic three-dimensional massing while addressing postwar housing crises."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "recall",
+      "practice_context": [
+        "DESC"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "brutalism-06",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.729652+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "45009ce1-8e98-4247-a780-e1af934be956",
+      "article_id": "ed8d54e9-eef1-4585-9447-f9cff392bbff",
+      "topic_id": "db0533bb-fe1d-44bc-92c0-d4673a8099e4",
+      "text": "Which architect pursued a refined Brutalist approach, seeking beauty in concrete's structure through careful proportion and light, exemplified in the Kimbell Art Museum (1972)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Chamberlin, Powell and Bon"
+        },
+        {
+          "id": "b",
+          "text": "Moshe Safdie"
+        },
+        {
+          "id": "c",
+          "text": "Louis Kahn"
+        },
+        {
+          "id": "d",
+          "text": "Kallmann, McKinnell & Knowles"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Chamberlin, Powell and Bon designed the fortress-aesthetic Barbican Estate, not the refined approach of Kahn.",
+        "b": "Safdie designed Habitat 67, a modular housing project, not a museum with refined structural expression.",
+        "d": "Kallmann, McKinnell & Knowles designed Boston City Hall, emphasizing dramatic scale over refined proportion.",
+        "correct": "Louis Kahn pursued a refined Brutalist approach, seeking inherent beauty through careful proportion, light modulation, and structural expression. Kimbell Art Museum exemplifies this with barrel vault sections and refined concrete detailing.",
+        "takeaway": "Kimbell Art Museum exemplifies this with barrel vault sections and refined concrete detailing."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "recall",
+      "practice_context": [
+        "ID"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "brutalism-08",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.729652+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "34709fd2-7064-4f77-b6db-ad45de1baf2e",
+      "article_id": "ed8d54e9-eef1-4585-9447-f9cff392bbff",
+      "topic_id": "db0533bb-fe1d-44bc-92c0-d4673a8099e4",
+      "text": "Which structural element, frequently used in Brutalism for dramatic visual effect, appears in Boston City Hall's design to create the illusion of floating mass above the public plaza?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Barrel vault"
+        },
+        {
+          "id": "b",
+          "text": "Cantilever"
+        },
+        {
+          "id": "c",
+          "text": "Modular repetition"
+        },
+        {
+          "id": "d",
+          "text": "Elevated pedestrian deck"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Barrel vaults are refined curves used in Kahn's work, not the primary structural drama at Boston City Hall.",
+        "c": "Modular repetition characterizes Habitat 67, not Boston City Hall's formal strategy.",
+        "d": "Elevated pedestrian decks characterize the Barbican Estate, not Boston City Hall's primary design feature.",
+        "correct": "A cantilever is a horizontal structural element projecting from a support, appearing to float. Boston City Hall's dramatic cantilever base creates a publicly accessible plaza beneath, exemplifying Brutalist structural drama.",
+        "takeaway": "Boston City Hall's dramatic cantilever base creates a publicly accessible plaza beneath, exemplifying Brutalist structural drama."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "ST"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "brutalism-10",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.729652+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "0cbc9241-4575-41dd-94f2-b7671d41b7b1",
+      "article_id": "31a0b194-7296-4360-821e-5bc5c49be135",
+      "topic_id": "ce10dbc0-e018-4d37-8936-88dbcf3818dd",
+      "text": "What happens if a CPD provider's accreditation expires without renewal?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Automatic extension for one additional year, provided certain conditions are met"
+        },
+        {
+          "id": "b",
+          "text": "Activities delivered lose accreditation; no valid CPD credits generated"
+        },
+        {
+          "id": "c",
+          "text": "Credits are valid for one year after expiration, allowing time for renewal"
+        },
+        {
+          "id": "d",
+          "text": "The provider is immediately re-accredited, assuming no violations occurred"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrectly grants automatic grace period; re-accreditation must be applied for before expiration.",
+        "c": "Falsely extends validity; accreditation expiration terminates credit validity immediately.",
+        "d": "Contradicts the requirement for application and evaluation; re-accreditation is not automatic.",
+        "correct": "After accreditation expiration without renewal, activities delivered do not generate valid CPD credits; architects cannot claim credit from expired providers.",
+        "takeaway": "CPD credits from providers become invalid immediately upon accreditation expiration—no grace period applies."
+      },
+      "explanation": null,
+      "code_citation": "RA 10912",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-010-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:48.361702+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "51508c33-d7db-4142-ad5b-6187e29ad740",
+      "article_id": "31a0b194-7296-4360-821e-5bc5c49be135",
+      "topic_id": "ce10dbc0-e018-4d37-8936-88dbcf3818dd",
+      "text": "What is the architect's responsibility regarding CPD provider selection?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Architects can enroll in any program and claim CPD credit, regardless of the provider's accreditation status."
+        },
+        {
+          "id": "b",
+          "text": "Architects must verify provider accreditation status before enrolling"
+        },
+        {
+          "id": "c",
+          "text": "The Board automatically notifies architects of approved providers, ensuring compliance with CPD requirements."
+        },
+        {
+          "id": "d",
+          "text": "All programs count equally regardless of provider status, simplifying the selection process for architects."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Fails to apply the accreditation requirement; non-accredited programs generate no CPD credit.",
+        "c": "Reverses the responsibility; architects must proactively verify, not wait for Board notifications.",
+        "d": "Ignores the accreditation distinction; credits are valid only from accredited providers.",
+        "correct": "Architects must verify provider accreditation status before enrollment; only credits from accredited providers count toward the mandatory 45-unit requirement.",
+        "takeaway": "Architects are responsible for verifying provider accreditation before enrollment to ensure CPD credit validity."
+      },
+      "explanation": null,
+      "code_citation": "RA 10912",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-010-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:48.361702+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "ee299893-275e-4d36-928b-497ab3999138",
+      "article_id": "31a0b194-7296-4360-821e-5bc5c49be135",
+      "topic_id": "ce10dbc0-e018-4d37-8936-88dbcf3818dd",
+      "text": "What is the validity period for CPD provider accreditation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "One year from issuance"
+        },
+        {
+          "id": "b",
+          "text": "Two years from issuance"
+        },
+        {
+          "id": "c",
+          "text": "Three years from issuance"
+        },
+        {
+          "id": "d",
+          "text": "Five years from issuance"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Overly short duration; annual re-accreditation would impose excessive administrative burden.",
+        "b": "Undercounts the validity period; actual term is three years, not two.",
+        "d": "Overcounts; five years exceeds the three-year accreditation validity.",
+        "correct": "CPD provider accreditation is valid for three years from issuance; providers must apply for re-accreditation before expiration.",
+        "takeaway": "CPD provider accreditation is valid for three years and requires re-accreditation before expiration."
+      },
+      "explanation": null,
+      "code_citation": "RA 10912",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-010-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:48.361702+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "96ebb783-059e-472d-bcb3-d68b608e381a",
+      "article_id": "303f8a75-b42b-4405-8c39-082b4d7b6322",
+      "topic_id": "5cfafc3f-1ec8-43ec-b29f-6c2f43fc843c",
+      "text": "What is the typical accuracy range of cost estimates during the schematic design phase?",
+      "options": [
+        {
+          "id": "a",
+          "text": "±50% or more, indicating a high level of uncertainty typical of early design stages"
+        },
+        {
+          "id": "b",
+          "text": "±15-25% accuracy (AACE Class 3); useful for budget approval but not construction bidding"
+        },
+        {
+          "id": "c",
+          "text": "±5% accuracy, which is generally not achievable at this stage due to limited design information"
+        },
+        {
+          "id": "d",
+          "text": "100% accurate, which is an unrealistic expectation for any phase of design"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Too broad; ±50% or more applies to order-of-magnitude/conceptual (pre-schematic) per AACE Class 5.",
+        "c": "Too optimistic; ±5% requires construction documents with complete specifications.",
+        "d": "False; no estimate is 100% accurate—actual costs depend on market, labor, and contractor variables.",
+        "correct": "Schematic estimates based on building massing and major systems achieve ±20% accuracy—useful for client budget approval but not for final construction cost control.",
+        "takeaway": "Schematic estimates are ±20% accurate—use for budget approval; final estimates approach ±5% accuracy."
+      },
+      "explanation": null,
+      "code_citation": "UAP SPP Document 201 (General Conditions); RA 9266 IRR Section 26 (Scope of Practice)",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-021-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "343b6549-358b-482e-af91-b1d65b1e6c8e",
+      "article_id": "303f8a75-b42b-4405-8c39-082b4d7b6322",
+      "topic_id": "5cfafc3f-1ec8-43ec-b29f-6c2f43fc843c",
+      "text": "What should architects do if the cost estimate exceeds the client's construction budget?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Accept the overrun silently, hoping the client will not notice the discrepancy"
+        },
+        {
+          "id": "b",
+          "text": "Discuss options: reduce scope, adjust quality, defer phases, or increase budget; lead this discussion with QS support"
+        },
+        {
+          "id": "c",
+          "text": "Blame the client for insufficient budget, suggesting they should have anticipated higher costs"
+        },
+        {
+          "id": "d",
+          "text": "Proceed without addressing the issue, assuming the budget will adjust itself during construction"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Negligent; unaddressed budget overruns lead to disputes and financial stress during construction.",
+        "c": "Unprofessional; architects should work with clients to find solutions, not blame.",
+        "d": "Reckless; unaddressed budget gaps cause construction delays and conflicts.",
+        "correct": "When estimate exceeds budget, architects and QS should facilitate client discussion on options: scope reduction, quality adjustment, phase deferral, or budget increase.",
+        "takeaway": "When estimate exceeds budget, lead a professional discussion with options—don't proceed silently or blame the client."
+      },
+      "explanation": null,
+      "code_citation": "Cost Estimation Standards",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-021-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "80e3539e-73bb-48e9-9da7-c6d546d29eff",
+      "article_id": "303f8a75-b42b-4405-8c39-082b4d7b6322",
+      "topic_id": "5cfafc3f-1ec8-43ec-b29f-6c2f43fc843c",
+      "text": "What is the typical accuracy range of cost estimates after construction documents are finalized?",
+      "options": [
+        {
+          "id": "a",
+          "text": "±50% accuracy, which is not typical for finalized documents"
+        },
+        {
+          "id": "b",
+          "text": "±30% accuracy, which is more common in earlier design phases"
+        },
+        {
+          "id": "c",
+          "text": "±10-20% accuracy, suitable for bidding with complete specifications (AACE Class 2)"
+        },
+        {
+          "id": "d",
+          "text": "No accuracy is possible, which is an exaggeration"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Too broad; ±50% is conceptual-phase accuracy.",
+        "b": "Too broad; detailed specs achieve better than ±30%.",
+        "d": "False; detailed specifications enable reliable cost estimation.",
+        "correct": "Construction documents with complete specifications enable accurate takeoff of all materials, labor, and equipment; accuracy approaches ±5%.",
+        "takeaway": "After construction documents are finalized, cost estimates approach ±5% accuracy—these are used for bid preparation."
+      },
+      "explanation": null,
+      "code_citation": "Cost Estimation Standards",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-021-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "f3031fa0-3095-47ed-bef4-0c14e810b1fc",
+      "article_id": "303f8a75-b42b-4405-8c39-082b4d7b6322",
+      "topic_id": "5cfafc3f-1ec8-43ec-b29f-6c2f43fc843c",
+      "text": "When is it most effective to engage a quantity surveyor for value engineering?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only after construction starts, when changes are more costly and less effective"
+        },
+        {
+          "id": "b",
+          "text": "During schematic phase when design changes have lowest cost impact"
+        },
+        {
+          "id": "c",
+          "text": "During construction documents phase to analyze and reduce costs, but with limited flexibility"
+        },
+        {
+          "id": "d",
+          "text": "Never; value engineering is not necessary, as initial estimates are always accurate"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Too late; construction-phase changes are most expensive.",
+        "c": "Too late; DD phase changes cost more than schematic changes.",
+        "d": "False; value engineering saves clients significant cost by optimizing design elements.",
+        "correct": "Value engineering is most effective during schematic phase when design changes are least costly; post-schematic changes are expensive to implement.",
+        "takeaway": "Engage QS early during schematic design—cost advice then influences design; cost analysis after design is fixed has limited impact."
+      },
+      "explanation": null,
+      "code_citation": "Value Engineering Standards",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-021-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "845224c9-b349-45bd-8f6e-47d4fc496f0b",
+      "article_id": "df096cb2-6240-4081-a17b-534a1577637e",
+      "topic_id": "bb164311-f8ae-4435-978b-5e7c2d4f7fd3",
+      "text": "The Vanna Venturi House (1964) explicitly references a child's drawing of a house. What does this choice communicate about Postmodern architectural values?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The architect was mockingly infantilizing serious architecture, challenging traditional norms"
+        },
+        {
+          "id": "b",
+          "text": "Vernacular and popular imagery, previously excluded from canonical architecture, are now legitimate and meaningful references."
+        },
+        {
+          "id": "c",
+          "text": "All residential buildings should imitate domestic naiveté, embracing simplicity and innocence"
+        },
+        {
+          "id": "d",
+          "text": "Modernism's abstraction was being replaced by literal mimicry of nature, reflecting a shift in design philosophy"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The choice is not mockery but sincere elevation of vernacular significance.",
+        "c": "The article does not suggest all buildings should mimic this strategy; it illustrates one project's philosophy.",
+        "d": "Postmodernism is not naturalism; it quotes historical and popular imagery, not biological form.",
+        "correct": "The Vanna Venturi House exemplifies Postmodernism's democratization of reference, elevating the banal and provincial to architectural significance. This reflects the movement's populism and rejection of modernism's elitism.",
+        "takeaway": "This reflects the movement's populism and rejection of modernism's elitism."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "postmod-05",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.729652+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "3ce449ed-f5b0-49b9-9eeb-3139ac3421c9",
+      "article_id": "df096cb2-6240-4081-a17b-534a1577637e",
+      "topic_id": "bb164311-f8ae-4435-978b-5e7c2d4f7fd3",
+      "text": "Which architect's slogan 'Less is a bore' became Postmodernism's rallying cry against modernist austerity?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Michael Graves"
+        },
+        {
+          "id": "b",
+          "text": "Philip Johnson"
+        },
+        {
+          "id": "c",
+          "text": "Robert Venturi"
+        },
+        {
+          "id": "d",
+          "text": "Charles Moore"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Michael Graves designed the Portland Building but did not articulate this slogan.",
+        "b": "Philip Johnson co-designed the AT&T Building but is not credited with this theoretical formulation.",
+        "d": "Charles Moore designed Piazza d'Italia but did not establish this theoretical stance.",
+        "correct": "Robert Venturi articulated the slogan 'Less is a bore' as a direct repudiation of modernism's 'less is more' doctrine, making it the movement's ideological rallying cry.",
+        "takeaway": "Robert Venturi articulated the slogan 'Less is a bore' as a direct repudiation of modernism's 'less is more' doctrine, making it the movement's ideological rallying cry."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "ID"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "postmod-01",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.729652+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "8d112913-3a91-42dd-8268-0c83419f0d2d",
+      "article_id": "df096cb2-6240-4081-a17b-534a1577637e",
+      "topic_id": "bb164311-f8ae-4435-978b-5e7c2d4f7fd3",
+      "text": "Why did Postmodernism's theoretical assertion that 'architecture need not apologize for color, ornament, historical reference, or popular culture' represent a profound philosophical shift from Modernism?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It was purely superficial style preference with no intellectual grounding, lacking the depth of Modernist principles"
+        },
+        {
+          "id": "b",
+          "text": "It challenged Modernism's claim to universal, rational, and ethically superior design principles."
+        },
+        {
+          "id": "c",
+          "text": "It returned architecture to 19th-century historicism without innovation, repeating past styles without advancement"
+        },
+        {
+          "id": "d",
+          "text": "It eliminated the possibility of genuine architectural meaning, reducing architecture to mere aesthetic expression"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Postmodernism had profound philosophical grounding; the article emphasizes its intellectual seriousness.",
+        "c": "Postmodernism was not earnest historicism; it pursued ironic, self-conscious quotation.",
+        "d": "Postmodernism expanded the possibilities for architectural meaning through semantic richness.",
+        "correct": "The article articulates that Postmodernism fundamentally challenged Modernism's doctrine that universal principles and rational reduction constituted ethical superiority. Postmodernism asserted that meaning, context, memory, and pleasure were equally valid architectural concerns.",
+        "takeaway": "Postmodernism asserted that meaning, context, memory, and pleasure were equally valid architectural concerns."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "postmod-09",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:26.09657+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "5961d65f-ff44-4367-af1e-2f06d33382c4",
+      "article_id": "df096cb2-6240-4081-a17b-534a1577637e",
+      "topic_id": "bb164311-f8ae-4435-978b-5e7c2d4f7fd3",
+      "text": "Postmodernism and Critical Regionalism both challenged Modernism's universalism. How did their responses differ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Postmodernism pursued global references and historical quotation; Critical Regionalism pursued local climate, materials, and cultural specificity."
+        },
+        {
+          "id": "b",
+          "text": "Both movements pursued identical strategies; they differ only in terminology, which is often debated among scholars"
+        },
+        {
+          "id": "c",
+          "text": "Critical Regionalism abandoned modernism entirely; Postmodernism retained modernist principles, albeit with a more eclectic approach"
+        },
+        {
+          "id": "d",
+          "text": "Postmodernism engaged deeply with place; Critical Regionalism ignored context, focusing instead on abstract principles"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "The movements pursued distinct philosophical stances.",
+        "c": "Both engaged with modernist principles differently; neither abandoned modernism entirely.",
+        "d": "Critical Regionalism deeply engaged place; Postmodernism engaged historical and popular references.",
+        "correct": "While both challenged Modernism's universalism, Postmodernism retrieved architectural history through ironic quotation and populism; Critical Regionalism grounded design in local geography, climate, materials, and cultural memory.",
+        "takeaway": "While both challenged Modernism's universalism, Postmodernism retrieved architectural history through ironic quotation and populism; Critical Regionalism grounded design in local geography, climate, materials, and cultural memory."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "postmod-08",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:26.09657+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "c144bf7c-ccf5-469e-bbfc-8bb39f334335",
+      "article_id": "df096cb2-6240-4081-a17b-534a1577637e",
+      "topic_id": "bb164311-f8ae-4435-978b-5e7c2d4f7fd3",
+      "text": "A colorful plaza in New Orleans features exaggerated arches, neon lighting, and theatrical historical pastiche. Which architect designed this Postmodern urbanism project?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Michael Graves"
+        },
+        {
+          "id": "b",
+          "text": "Charles Moore"
+        },
+        {
+          "id": "c",
+          "text": "Robert Venturi"
+        },
+        {
+          "id": "d",
+          "text": "Aldo Rossi"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Graves designed the Portland Building, not Piazza d'Italia.",
+        "c": "Venturi designed the Vanna Venturi House and theoretical works but not Piazza d'Italia.",
+        "d": "Rossi pursued Neo-rational Postmodernism, distinct from Moore's theatrical approach.",
+        "correct": "The Piazza d'Italia (1978) in New Orleans, designed by Charles Moore, exemplifies Postmodern urbanism through colorful arches, neon, theatrical effects, and historical pastiche.",
+        "takeaway": "The Piazza d'Italia (1978) in New Orleans, designed by Charles Moore, exemplifies Postmodern urbanism through colorful arches, neon, theatrical effects, and historical pastiche."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "recall",
+      "practice_context": [
+        "DESC"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "postmod-10",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:26.09657+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "d19634b1-e697-4eca-92ce-7f8f1f4619ef",
+      "article_id": "df096cb2-6240-4081-a17b-534a1577637e",
+      "topic_id": "bb164311-f8ae-4435-978b-5e7c2d4f7fd3",
+      "text": "During which decade did Postmodernism explode onto architecture as a deliberate repudiation of modernism's dogma?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1950s–1960s"
+        },
+        {
+          "id": "b",
+          "text": "1970s–1980s"
+        },
+        {
+          "id": "c",
+          "text": "1990s–2000s"
+        },
+        {
+          "id": "d",
+          "text": "2010s–2020s"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This period predates Postmodernism's emergence.",
+        "c": "Postmodernism had already begun exhausting itself by the 1990s.",
+        "d": "This is decades after Postmodernism's peak influence.",
+        "correct": "Postmodernism exploded onto architecture in the 1970s–80s as a deliberate repudiation of modernism.",
+        "takeaway": "The article states that Postmodernism exploded onto architecture in the 1970s–80s as a deliberate repudiation of modernism."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "CH"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "postmod-06",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:26.09657+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "110355c2-1a90-4f36-ba9e-a9ed15bd6b8e",
+      "article_id": "5e194f59-3941-4bbb-b54b-85134f25286b",
+      "topic_id": "b853d447-8e0b-4fa9-9c6b-30b532a14915",
+      "text": "Why is the distinction between design defects and execution defects important for the guarantee bond?",
+      "options": [
+        {
+          "id": "a",
+          "text": "There is no practical distinction between the two, as both can impact the project's overall quality and performance"
+        },
+        {
+          "id": "b",
+          "text": "Design defects are excluded because they result from the architect's design, not the contractor's execution, while the guarantee bond covers execution defects only"
+        },
+        {
+          "id": "c",
+          "text": "Execution defects are always covered regardless of their cause, ensuring that the contractor is held accountable for all construction-related issues"
+        },
+        {
+          "id": "d",
+          "text": "Both types are always equally covered by the guarantee bond, providing comprehensive protection against any form of defect"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Wrongly conflates the two; the distinction determines whether Contractor or Architect bears responsibility.",
+        "c": "Wrongly assumes blanket execution coverage; excluded execution defects (Owner-caused, wear) are still excluded.",
+        "d": "Wrongly treats both as covered; design defects are explicitly excluded from Guarantee Bond.",
+        "correct": "Guarantee Bond covers Contractor's execution defects but excludes design defects, which are Architect's responsibility.",
+        "takeaway": "Guarantee Bond scope: covers execution defects; excludes design defects (Architect's responsibility)."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-012-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.526003+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "223db2e3-a416-4800-8923-74999c5b2048",
+      "article_id": "630d0fd8-e25f-4bf8-a62f-f31b4e320831",
+      "topic_id": "ce8e63ac-0dbb-4bcf-8a3d-5742edc9d930",
+      "text": "Which structural innovation is the defining characteristic of Gothic architecture, described as an external half-arch that transfers lateral vault thrust to an outer pier?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pointed arch, which allows for taller and more slender structures"
+        },
+        {
+          "id": "b",
+          "text": "Ribbed vault, providing a framework for distributing weight"
+        },
+        {
+          "id": "c",
+          "text": "Flying buttress"
+        },
+        {
+          "id": "d",
+          "text": "Tracery, used for decorative stonework in windows"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "A pointed arch distributes weight but does not transfer lateral thrust externally.",
+        "b": "Ribbed vaults channel weight but do not solve the problem of lateral thrust alone.",
+        "d": "Tracery is ornamental stone framework in windows, not a structural system.",
+        "correct": "The article defines the flying buttress as 'the revolutionary external element. An external half-arch transfers the lateral thrust of the vault from the upper nave wall to a distant outer pier, outside the building envelope.' Together with pointed arches and ribbed vaults, it forms the integrated Gothic structural system.",
+        "takeaway": "An external half-arch transfers the lateral thrust of the vault from the upper nave wall to a distant outer pier, outside the building envelope.' Together with pointed arches and ribbed vaults, it forms the integrated Gothic structural system."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "ST"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-002-03-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.95449+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "a8e7d30e-1331-46a9-a907-c96d5337018c",
+      "article_id": "630d0fd8-e25f-4bf8-a62f-f31b4e320831",
+      "topic_id": "ce8e63ac-0dbb-4bcf-8a3d-5742edc9d930",
+      "text": "How does the pointed arch in Gothic architecture distribute structural weight differently than the Romanesque round arch?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pointed arches distribute weight evenly; round arches concentrate it at one point, leading to potential structural weaknesses"
+        },
+        {
+          "id": "b",
+          "text": "Pointed arches direct thrust downward and slightly outward along their legs; round arches push thrust purely outward, requiring thicker walls"
+        },
+        {
+          "id": "c",
+          "text": "Pointed arches are weaker and require external buttressing; round arches are self-supporting, eliminating the need for additional support structures"
+        },
+        {
+          "id": "d",
+          "text": "Both distribute weight identically; the shape is decorative only, with no impact on structural performance"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Neither distributes weight evenly; Romanesque round arches push purely outward, while Gothic pointed arches direct weight more downward.",
+        "c": "Pointed arches are not weaker; their weight distribution is more efficient, requiring less external support than round arches.",
+        "d": "The shape directly affects structural performance and weight distribution, not merely decoration.",
+        "correct": "A pointed arch distributes weight more efficiently, with thrust directed downward and slightly outward along its legs rather than purely outward as a round arch does.' This efficiency 'enables higher vaults and thinner walls.'",
+        "takeaway": "The article explains: 'A pointed arch distributes weight more efficiently, with thrust directed downward and slightly outward along its legs rather than purely outward as a round arch does.' This efficiency 'enables higher vaults and thinner walls.'."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "ST"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-002-03-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.95449+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "c5cc0d38-5257-4fc0-82e8-d4d5294b0c99",
+      "article_id": "630d0fd8-e25f-4bf8-a62f-f31b4e320831",
+      "topic_id": "ce8e63ac-0dbb-4bcf-8a3d-5742edc9d930",
+      "text": "During which centuries did Gothic architecture dominate European church construction?",
+      "options": [
+        {
+          "id": "a",
+          "text": "10th–11th centuries, a period known for Romanesque architecture rather than Gothic."
+        },
+        {
+          "id": "b",
+          "text": "11th–12th centuries, marking the transition from Romanesque to early Gothic styles."
+        },
+        {
+          "id": "c",
+          "text": "Mid-12th–16th centuries"
+        },
+        {
+          "id": "d",
+          "text": "12th–13th centuries, which saw the rise of early Gothic cathedrals."
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "10th–11th centuries precede Gothic and are associated with Romanesque emergence.",
+        "b": "11th–12th centuries are primarily Romanesque.",
+        "d": "12th–13th centuries includes only the beginning of Gothic, not its full span.",
+        "correct": "The article explicitly states: 'Gothic architecture (mid-12th–16th centuries) represents the culmination of Medieval ambition.'",
+        "takeaway": "The article explicitly states: 'Gothic architecture (mid-12th–16th centuries) represents the culmination of Medieval ambition.'."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "CH"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-002-03-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.95449+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "85521a22-5db4-4d79-ae1a-21a7477462be",
+      "article_id": "630d0fd8-e25f-4bf8-a62f-f31b4e320831",
+      "topic_id": "ce8e63ac-0dbb-4bcf-8a3d-5742edc9d930",
+      "text": "A chapel contains 618 square meters of stained glass with 1,113 biblical scenes arranged in colored windows that serve as the primary wall material. Its structure minimizes solid walls and relies on ribbed vaults and external buttresses. Which building is being described?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Chartres Cathedral"
+        },
+        {
+          "id": "b",
+          "text": "Amiens Cathedral"
+        },
+        {
+          "id": "c",
+          "text": "Sainte-Chapelle"
+        },
+        {
+          "id": "d",
+          "text": "Canterbury Cathedral"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Chartres Cathedral has 176 stained-glass windows but is not characterized as 'walls almost entirely stained glass.'",
+        "b": "Amiens Cathedral is known for tall nave proportions, not stained glass wall coverage.",
+        "d": "Canterbury Cathedral is a rebuilt Perpendicular Gothic structure with fan vaults, not primarily stained glass.",
+        "correct": "Sainte-Chapelle (1241–1248) is described as 'Reliquary chapel; walls almost entirely stained glass (618 sq. meters, 1,113 biblical scenes); ribbed vault structure minimized; light as primary material.' The stained glass becomes a wall replacement.",
+        "takeaway": "meters, 1,113 biblical scenes); ribbed vault structure minimized; light as primary material.' The stained glass becomes a wall replacement."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "recall",
+      "practice_context": [
+        "DESC"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-002-03-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.95449+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "c22ef420-6cb7-4abe-8e66-fbac79e04d78",
+      "article_id": "630d0fd8-e25f-4bf8-a62f-f31b4e320831",
+      "topic_id": "ce8e63ac-0dbb-4bcf-8a3d-5742edc9d930",
+      "text": "How does the triforium gallery in Gothic cathedral design relate to the structural system that makes it possible?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The triforium is an unnecessary decorative feature with no structural purpose, often added purely for aesthetic reasons without impacting the building's integrity"
+        },
+        {
+          "id": "b",
+          "text": "The triforium allows more light to enter the interior, but structural elements remain unchanged, as it primarily serves a decorative function"
+        },
+        {
+          "id": "c",
+          "text": "Thin walls created by flying buttress support allow the triforium to exist as a gallery; it becomes a secondary light source enabled by reduced wall mass"
+        },
+        {
+          "id": "d",
+          "text": "The triforium is a Romanesque feature; Gothic cathedrals do not include them, except in transitional styles where elements of both periods are present"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While decorative, the triforium serves a practical function as a secondary light source and circulation space, only possible due to skeletal structure.",
+        "b": "The triforium's existence directly depends on the flying buttress system; it would not be possible with massive Romanesque walls.",
+        "d": "Gothic cathedrals do include triforia as part of their vertical articulation of interior space.",
+        "correct": "The article defines the triforium as 'a secondary gallery above the main arcade, below clerestory.' Because flying buttresses allow walls to be thin screens rather than massive supports, secondary galleries like the triforium become architecturally possible. The structural system enables the spatial configuration.",
+        "takeaway": "The structural system enables the spatial configuration."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "ST"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-002-03-012",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.95449+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "784da871-b661-4bd9-95e6-41cc531a2eaf",
+      "article_id": "d18569e9-4401-4d85-8d59-d545240ef106",
+      "topic_id": "0681b9c7-048d-4988-b4ac-d356e50edb47",
+      "text": "Which costs are included in Direct Personnel Expense (DPE)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Architect salaries, benefits, and office rent, which are essential for maintaining operational capacity"
+        },
+        {
+          "id": "b",
+          "text": "Architect and technical staff salaries plus labor-related benefits of personnel directly assigned to the project"
+        },
+        {
+          "id": "c",
+          "text": "All firm staff costs including administrative and management personnel, regardless of project involvement"
+        },
+        {
+          "id": "d",
+          "text": "Only senior architect and principal time, excluding other essential personnel costs"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Includes office rent, which is overhead covered by the multiplier, not Direct Personnel Expense.",
+        "c": "Includes all firm staff, not just those directly assigned to the project; DPE only includes project-engaged personnel.",
+        "d": "Omits design architect, junior staff, and specialists; DPE includes all project team members regardless of level.",
+        "correct": "DPE includes only salaries and labor-related benefits (PAGIBIG, PhilHealth, SSS) of architects, engineers, and technical staff directly engaged in the project's design and delivery.",
+        "takeaway": "DPE = salaries + mandatory benefits (PAGIBIG, PhilHealth, SSS) for project-assigned staff only; office rent and overhead are in the multiplier, not DPE."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines; SPP Doc 202",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-006-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "1149e2f7-5dcb-42e6-9193-7890719e1474",
+      "article_id": "efa0ecb2-71a7-4b89-9424-c193f8f1c314",
+      "topic_id": "fd29b11c-a783-4158-9d65-e05e598bba7b",
+      "text": "What is the volume of one board foot in cubic inches?",
+      "options": [
+        {
+          "id": "a",
+          "text": "96 cubic inches"
+        },
+        {
+          "id": "b",
+          "text": "120 cubic inches"
+        },
+        {
+          "id": "c",
+          "text": "144 cubic inches"
+        },
+        {
+          "id": "d",
+          "text": "192 cubic inches"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "96 cubic inches is 8 × 12; would be a different unit.",
+        "b": "120 cubic inches is close but does not match the standard definition.",
+        "d": "192 cubic inches is 1.33 × the standard; would over-estimate.",
+        "correct": "One board foot = 1 inch (thick) × 12 inches (wide) × 12 inches (long) = 144 cubic inches.",
+        "takeaway": "One board foot is 144 cubic inches. This is the fundamental definition."
+      },
+      "explanation": null,
+      "code_citation": "Standard lumber measurement definition",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-010-04-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "7dcace62-ba6c-4dd7-81c8-3a2e46d5e9fe",
+      "article_id": "efa0ecb2-71a7-4b89-9424-c193f8f1c314",
+      "topic_id": "fd29b11c-a783-4158-9d65-e05e598bba7b",
+      "text": "A structure requires: 30 pieces of 2×4×8, 20 pieces of 2×6×10, and 15 pieces of 1×8×12. How many total board feet are needed with a 10% waste allowance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "458 BF"
+        },
+        {
+          "id": "b",
+          "text": "528 BF"
+        },
+        {
+          "id": "c",
+          "text": "555 BF"
+        },
+        {
+          "id": "d",
+          "text": "612 BF"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "458 BF results from insufficient waste factor or calculation error.",
+        "c": "555 BF may result from using an incorrect waste factor or rounding error.",
+        "d": "612 BF results from over-estimating waste or miscalculation.",
+        "correct": "2×4×8: (2 × 4 × 8) ÷ 12 = 5.33 BF per board. 30 × 5.33 = 160 BF. 2×6×10: 10 BF per board. 20 × 10 = 200 BF. 1×8×12: (1 × 8 × 12) ÷ 12 = 8 BF per board. 15 × 8 = 120 BF. Total base: 160 + 200 + 120 = 480 BF. With 10% waste: 480 × 1.10 = 528 BF.",
+        "takeaway": "For multiple sizes: calculate board feet for each size, sum, then apply waste factor."
+      },
+      "explanation": null,
+      "code_citation": "Complex lumber estimation",
+      "bloom_level": "analyze",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-010-04-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "911aad26-820e-4a51-bb06-9c7aa838b525",
+      "article_id": "efa0ecb2-71a7-4b89-9424-c193f8f1c314",
+      "topic_id": "fd29b11c-a783-4158-9d65-e05e598bba7b",
+      "text": "A formwork project requires 50 pieces of 1×6×8 lumber. How many total board feet are needed (no waste)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "160 BF"
+        },
+        {
+          "id": "b",
+          "text": "200 BF"
+        },
+        {
+          "id": "c",
+          "text": "240 BF"
+        },
+        {
+          "id": "d",
+          "text": "400 BF"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "160 BF results from 50 × 3.2 (incorrect per-piece calculation).",
+        "c": "240 BF results from 50 × 4.8 or (1 × 6 × 8) without division.",
+        "d": "400 BF results from 50 × 8 (using length as multiplier).",
+        "correct": "BF per piece: (1 × 6 × 8) ÷ 12 = 48 ÷ 12 = 4 BF per board. Total: 50 boards × 4 BF/board = 200 BF.",
+        "takeaway": "Calculate board feet per piece first, then multiply by quantity."
+      },
+      "explanation": null,
+      "code_citation": "Standard lumber measurement",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-010-04-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "334d282d-5724-4aac-8f9d-1590bb664c15",
+      "article_id": "efa0ecb2-71a7-4b89-9424-c193f8f1c314",
+      "topic_id": "fd29b11c-a783-4158-9d65-e05e598bba7b",
+      "text": "What is the difference in board feet between a 2×4×12 board and a 2×4×10 board?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1.33 BF"
+        },
+        {
+          "id": "b",
+          "text": "1.67 BF"
+        },
+        {
+          "id": "c",
+          "text": "2.0 BF"
+        },
+        {
+          "id": "d",
+          "text": "3.33 BF"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "1.33 BF is the correct difference.",
+        "b": "1.67 BF results from a rounding error.",
+        "c": "2.0 BF may result from using an incorrect formula.",
+        "d": "3.33 BF is too high.",
+        "correct": "2×4×12: (2 × 4 × 12) ÷ 12 = 8 BF. 2×4×10: (2 × 4 × 10) ÷ 12 = 6.67 BF. Difference: 8 – 6.67 = 1.33 BF.",
+        "takeaway": "When comparing two boards: calculate BF for each, then subtract. The difference is proportional to the difference in length."
+      },
+      "explanation": null,
+      "code_citation": "Standard lumber measurement",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-010-04-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "02ae8e77-9410-4043-b550-578be05d84c9",
+      "article_id": "e61e81a9-c0e3-4e60-ab5e-6b3fe3026004",
+      "topic_id": "d4a88702-5cb9-4be3-ab41-d233f88173e1",
+      "text": "What is an Environmental Impact Assessment (EIA)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A marketing document intended to promote the project without necessarily addressing environmental concerns"
+        },
+        {
+          "id": "b",
+          "text": "The systematic process of identifying, predicting, and evaluating environmental effects of a proposed project"
+        },
+        {
+          "id": "c",
+          "text": "A cost estimate that includes potential environmental mitigation expenses but does not assess impacts"
+        },
+        {
+          "id": "d",
+          "text": "A design proposal that incorporates environmental considerations but lacks formal assessment procedures"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Confuses EIA with promotional material; EIA is a technical environmental analysis required by law for certain projects.",
+        "c": "Confuses EIA with a budget item; EIA is an environmental impact study, not a cost document.",
+        "d": "Confuses EIA with design documentation; EIA is a separate regulatory analysis that informs design, not the design itself.",
+        "correct": "EIA is the systematic process of identifying, predicting, and evaluating environmental effects of a proposed project before construction proceeds (DAO 2003-30).",
+        "takeaway": "EIA is a mandatory environmental review process, not a marketing document or cost estimate."
+      },
+      "explanation": null,
+      "code_citation": "DAO 2003-30",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-017-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "56c383d6-628e-426a-b5b8-c6c57d194343",
+      "article_id": "e61e81a9-c0e3-4e60-ab5e-6b3fe3026004",
+      "topic_id": "d4a88702-5cb9-4be3-ab41-d233f88173e1",
+      "text": "What system maintains designations of protected areas and sensitive ecosystems in the Philippines?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Board of Architecture, which oversees the design and planning of urban spaces"
+        },
+        {
+          "id": "b",
+          "text": "National Integrated Protected Areas System (NIPAS)"
+        },
+        {
+          "id": "c",
+          "text": "Construction Industry Authority, responsible for infrastructure development and environmental impact assessments"
+        },
+        {
+          "id": "d",
+          "text": "Department of Budget and Management, which allocates funding for environmental conservation projects"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Confuses site environmental status with architectural licensing; the Board of Architecture does not maintain environmental designations.",
+        "c": "Wrong agency; no such authority; environmental designations are maintained by DENR, not a construction industry authority.",
+        "d": "Wrong function; the Department of Budget and Management handles government finances, not environmental designations.",
+        "correct": "NIPAS (National Integrated Protected Areas System) and DENR Regional Offices maintain maps and information on protected areas, biodiversity hotspots, and sensitive ecosystems.",
+        "takeaway": "Consult NIPAS and DENR Regional Offices to determine if a proposed site is in a protected or sensitive area before proceeding with design."
+      },
+      "explanation": null,
+      "code_citation": "DENR, NIPAS",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-017-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "a4b16a2b-deee-4415-9d4b-10d22a425829",
+      "article_id": "e61e81a9-c0e3-4e60-ab5e-6b3fe3026004",
+      "topic_id": "d4a88702-5cb9-4be3-ab41-d233f88173e1",
+      "text": "What should an architect do early in the pre-design phase regarding environmental requirements?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ignore environmental concerns until later stages of the project when they become more apparent"
+        },
+        {
+          "id": "b",
+          "text": "Determine whether the site is in a sensitive ecological area and whether EIA is required"
+        },
+        {
+          "id": "c",
+          "text": "Only address environmental issues during construction, as they are not relevant in the design phase"
+        },
+        {
+          "id": "d",
+          "text": "Environmental concerns only matter in rural areas, where natural habitats are more prevalent"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Reckless approach; discovering EIA requirements after design is advanced wastes time and money.",
+        "c": "Too late; environmental constraints must inform the design, not be addressed after construction starts.",
+        "d": "Incorrect scope; urban and suburban projects also trigger EIA and environmental restrictions depending on site conditions and project type.",
+        "correct": "Architects must verify early whether a site is in a protected area or requires EIA; failure to do so can waste design time and cause costly project delays.",
+        "takeaway": "Before design begins, confirm EIA applicability and site environmental sensitivity to avoid redesigns or project denial later."
+      },
+      "explanation": null,
+      "code_citation": "DAO 2003-30",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-017-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "e548ee77-5eb6-4501-86fe-48bbfa54d21d",
+      "article_id": "e61e81a9-c0e3-4e60-ab5e-6b3fe3026004",
+      "topic_id": "d4a88702-5cb9-4be3-ab41-d233f88173e1",
+      "text": "What happens if a project is located in a biodiversity-sensitive area?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No restrictions apply, allowing full development without any environmental considerations"
+        },
+        {
+          "id": "b",
+          "text": "Development may be prohibited entirely or restricted to minimal footprint with specialized construction methods; environmental offsets may be required"
+        },
+        {
+          "id": "c",
+          "text": "The project can proceed without modification, as biodiversity concerns are not prioritized in such areas"
+        },
+        {
+          "id": "d",
+          "text": "Only flooding concerns matter, disregarding other environmental impacts such as habitat disruption"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Dangerously incorrect; protected areas and sensitive ecosystems have strict development restrictions.",
+        "c": "False; projects in sensitive areas cannot proceed without significant restrictions and environmental review.",
+        "d": "Incomplete; biodiversity and habitat protection are primary concerns beyond flooding in sensitive areas.",
+        "correct": "DENR heavily restricts or prohibits development in sensitive ecological areas; if allowed, projects face minimal footprint limits, specialized construction methods, and environmental offset requirements (reforestation, habitat restoration).",
+        "takeaway": "Biodiversity-sensitive sites face severe development restrictions or outright prohibition—confirm site eligibility before committing to design and budget."
+      },
+      "explanation": null,
+      "code_citation": "DAO 2003-30; DENR Protected Areas",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-017-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "deb634a6-66af-485a-b3e3-7da8f984302a",
+      "article_id": "e61e81a9-c0e3-4e60-ab5e-6b3fe3026004",
+      "topic_id": "d4a88702-5cb9-4be3-ab41-d233f88173e1",
+      "text": "What environmental offset requirement might be imposed on a project that impacts habitat?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No offsets are required unless the project exceeds a specific threshold of environmental impact as determined by local regulations"
+        },
+        {
+          "id": "b",
+          "text": "Reforestation elsewhere, habitat restoration, or conservation land dedication may be required"
+        },
+        {
+          "id": "c",
+          "text": "Only financial compensation is necessary if the project is within a designated urban area"
+        },
+        {
+          "id": "d",
+          "text": "Offsets are only for government projects, except when private projects are located in ecologically critical areas"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrectly assumes no responsibility; projects impacting habitat must provide environmental offsets.",
+        "c": "Incomplete; while financial contributions may be part of offsets, physical restoration (reforestation, habitat dedication) is typically required.",
+        "d": "Incorrect scope; both government and private projects must provide environmental offsets if habitat is impacted.",
+        "correct": "Environmental offsets for habitat impacts include reforestation, habitat restoration on the site or elsewhere, and dedication of conservation land—these are physical mitigation measures, not just financial.",
+        "takeaway": "Environmental offsets can require setting aside project land for conservation or restoring habitat elsewhere—impacts site planning and buildable area."
+      },
+      "explanation": null,
+      "code_citation": "DAO 2003-30",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-017-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "8afc9cb1-7d96-44ab-826e-7025d0097f2a",
+      "article_id": "91727ebf-ee05-4aa8-a538-d8c599a1d9c9",
+      "topic_id": "25b426af-3f59-49f9-a733-cd7231465799",
+      "text": "A commercial building's diesel fuel storage tank in the generator room experiences a small crack during routine maintenance. Before fuel leaks contaminate the surrounding area, the secondary containment prevents environmental damage. Which PEC requirement ensures that emergency generator fuel storage areas provide this critical environmental protection?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. Fuel tank material specification requiring stainless steel construction, ensuring durability and resistance to corrosion"
+        },
+        {
+          "id": "b",
+          "text": "B. Regular fuel quality testing for water and sediment contamination, ensuring fuel integrity and system reliability"
+        },
+        {
+          "id": "c",
+          "text": "C. Secondary containment sized for 110% of tank capacity per environmental standards"
+        },
+        {
+          "id": "d",
+          "text": "D. Monthly visual inspection of fuel tank external surfaces for corrosion, ensuring early detection of potential issues"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While stainless steel construction improves tank durability, it does not eliminate containment needs and is not the primary PEC environmental protection requirement.",
+        "b": "Fuel quality testing prevents equipment damage but does not provide environmental protection against spills and contamination.",
+        "d": "Visual inspection detects corrosion but is a reactive measure; secondary containment is a proactive engineered control that prevents contamination.",
+        "correct": "PEC generator installation standards mandate secondary containment sized for 110% of the fuel tank volume. This requirement directly prevents soil and groundwater contamination by capturing any fuel leaked from tank rupture, corrosion, or overflow. The secondary containment area must be properly sloped, impermeable, and inspected annually. This is the most effective engineered control for environmental protection in fuel storage design.",
+        "takeaway": "Secondary containment sized for 110% of fuel tank capacity is the primary PEC requirement that prevents soil and groundwater contamination from fuel storage tank failure."
+      },
+      "explanation": null,
+      "code_citation": "PEC Generator Installation Standards; Philippine Environmental Code; Fuel Storage Design",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-003-02-018",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:58.533411+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "d542544c-6183-4423-88ab-84e86b445fcc",
+      "article_id": "91727ebf-ee05-4aa8-a538-d8c599a1d9c9",
+      "topic_id": "25b426af-3f59-49f9-a733-cd7231465799",
+      "text": "A diesel fuel storage tank for a building's emergency generator holds 20,000 liters. The tank is located in a dedicated fuel storage area within the generator room. According to Philippine environmental protection standards, what is the minimum secondary containment capacity required to prevent soil and groundwater contamination in case of tank rupture?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. 16,000 liters (80% of tank capacity)"
+        },
+        {
+          "id": "b",
+          "text": "B. 20,000 liters (100% of tank capacity)"
+        },
+        {
+          "id": "c",
+          "text": "C. 22,000 liters (110% of tank capacity)"
+        },
+        {
+          "id": "d",
+          "text": "D. 30,000 liters (150% of tank capacity)"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "80% containment is insufficient to prevent environmental contamination if tank ruptures.",
+        "b": "100% containment provides no safety margin and does not meet Philippine environmental protection standards.",
+        "d": "150% containment significantly exceeds environmental standards and represents unnecessary cost without proportional environmental benefit.",
+        "correct": "Philippine environmental protection standards and PEC generator installation guidelines require secondary containment sized for 110% of the tank volume. For a 20,000-liter tank: 20,000 liters × 1.10 = 22,000 liters minimum secondary containment. This 10% safety margin accommodates tank rupture or overflow while preventing fuel leaks from contaminating soil and groundwater. The containment area must be inspected annually and tested for structural integrity.",
+        "takeaway": "Fuel storage secondary containment must equal 110% of tank capacity per Philippine environmental standards to prevent soil and groundwater contamination during tank failure."
+      },
+      "explanation": null,
+      "code_citation": "Philippine Environmental Code; PEC Generator Installation Standards; Environmental Protection Requirements",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-003-02-017",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:58.533411+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "0e83ea53-ac38-4071-b382-9a69afca9f7f",
+      "article_id": "91727ebf-ee05-4aa8-a538-d8c599a1d9c9",
+      "topic_id": "25b426af-3f59-49f9-a733-cd7231465799",
+      "text": "During a Meralco power failure, the automatic transfer switch transfers the emergency load to the standby generator, but a 10-second delay occurs before the generator reaches full capacity. Which emergency power system must bridge this transfer gap to prevent loss of critical loads?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. Fuel cell system providing bridging power from hydrogen reserves"
+        },
+        {
+          "id": "b",
+          "text": "B. Solar photovoltaic system with battery storage"
+        },
+        {
+          "id": "c",
+          "text": "C. Uninterruptible power supply (UPS) with battery backup"
+        },
+        {
+          "id": "d",
+          "text": "D. Voltage stabilizer with flywheel energy storage"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Fuel cell systems provide reliable backup power but cannot respond instantly to brief transfer delays; they are better suited for longer-term alternative power.",
+        "b": "Solar PV systems with battery storage are suitable for daytime load offset and alternative power but cannot guarantee instant response during nighttime outages.",
+        "d": "Voltage stabilizers regulate voltage but do not provide backup power during complete utility failure; flywheel storage has limited energy capacity for extended outages.",
+        "correct": "UPS systems with battery backup provide instantaneous power during the ATS transfer delay before the generator reaches full output capacity. Online double conversion UPS (90-94% efficiency) offers maximum protection for sensitive equipment; line-interactive UPS (94-97% efficiency) provides regulated voltage; and offline UPS offers minimal protection but lowest cost. Battery duration typically ranges from 30 minutes for emergency lighting to 2-4 hours for critical data center equipment.",
+        "takeaway": "UPS systems with battery backup bridge the ATS transfer delay, maintaining power to critical loads during the 10-second transfer from utility to generator operation."
+      },
+      "explanation": null,
+      "code_citation": "PEC Article 700.12; IEEE 1100 Power Quality Standards; UPS System Design",
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-003-02-014",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:58.533411+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "2ab35a6f-b37d-4dbd-b6fa-bea8a6ae4950",
+      "article_id": "91727ebf-ee05-4aa8-a538-d8c599a1d9c9",
+      "topic_id": "25b426af-3f59-49f9-a733-cd7231465799",
+      "text": "A building's data center requires continuous protection from voltage disturbances and harmonics caused by Meralco fluctuations (±5-10% variation from nominal). Which UPS topology provides the highest protection level against these power quality issues despite efficiency trade-offs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. Offline (standby) UPS with 98% efficiency and detection delay, suitable for non-critical applications"
+        },
+        {
+          "id": "b",
+          "text": "B. Line-interactive UPS with autotransformer voltage regulation and 94-97% efficiency, offering moderate protection"
+        },
+        {
+          "id": "c",
+          "text": "C. Online double conversion UPS with continuous AC-DC-AC conversion and 90-94% efficiency"
+        },
+        {
+          "id": "d",
+          "text": "D. Hybrid UPS combining offline and online modes for balanced efficiency, though it may not provide the highest level of protection"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Offline UPS provides no protection until failure detection occurs; it is unsuitable for sensitive equipment during Meralco voltage fluctuations.",
+        "b": "Line-interactive UPS offers good compromise between protection and efficiency but does not provide complete isolation from voltage disturbances like online UPS.",
+        "d": "Hybrid UPS modes switching between offline and online operation cannot guarantee continuous protection during rapid Meralco voltage changes.",
+        "correct": "Online double conversion UPS continuously converts incoming AC power to DC, then back to AC, providing maximum isolation from utility voltage disturbances, harmonics, and transients. This topology completely decouples the load from Meralco's ±5-10% voltage fluctuations and 8-12% harmonic distortion. Although efficiency is lower (90-94%), sensitive data center equipment justifies this trade-off to prevent data loss and hardware damage.",
+        "takeaway": "Online double conversion UPS topology is optimized for data centers in the Philippines where Meralco power quality issues require maximum protection against voltage fluctuations and harmonics."
+      },
+      "explanation": null,
+      "code_citation": "IEEE 1100 Power Quality Standards; Schneider Electric UPS Performance Data; Meralco Power Quality Analysis",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-003-02-015",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:58.533411+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "f936dd6a-d5e6-4876-a9a7-f0888dfd7486",
+      "article_id": "3e966435-e276-422e-a220-374043120cec",
+      "topic_id": "19741fc9-113b-4a79-9d43-e68d976621c9",
+      "text": "Why did Egyptian civilization invest such enormous resources in monumental pyramid and temple construction?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To demonstrate military superiority to neighboring civilizations, showcasing their power and ability to mobilize large workforces for grand projects"
+        },
+        {
+          "id": "b",
+          "text": "Because Egypt's society centered on the pharaoh as divine intermediary, and theology drove architecture: temples honored gods, and tombs ensured the pharaoh's eternal existence"
+        },
+        {
+          "id": "c",
+          "text": "To provide employment for the population during economic downturns, acting as a form of social welfare and economic stimulus"
+        },
+        {
+          "id": "d",
+          "text": "Because stone construction was cheaper than alternatives available in ancient Egypt, making it a cost-effective choice for large-scale projects"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While architecture demonstrated power, the article emphasizes religious and theological motivations, not military competition.",
+        "c": "While employment may have been a consequence, the primary driver was religious conviction about the afterlife and divine kingship.",
+        "d": "Stone construction was labor-intensive and expensive; the investment was driven by religious significance, not economic efficiency.",
+        "correct": "Clearly: 'Egypt's society centered on the pharaoh as divine intermediary between the gods and the people. This theology drove architecture: temples honored gods; tombs ensured the pharaoh's eternal existence.'",
+        "takeaway": "This theology drove architecture: temples honored gods; tombs ensured the pharaoh's eternal existence.'."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-001-04-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:23.211402+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "b8dcf139-b24f-4f18-a5e1-4f6abcddb016",
+      "article_id": "3e966435-e276-422e-a220-374043120cec",
+      "topic_id": "19741fc9-113b-4a79-9d43-e68d976621c9",
+      "text": "Egyptian temple walls typically taper slightly inward as they rise. What structural purpose did this architectural feature serve?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To prevent the interior temperature from rising, cooling the sacred space through natural convection"
+        },
+        {
+          "id": "b",
+          "text": "To create an optical illusion of greater height, enhancing the perceived grandeur of the structure"
+        },
+        {
+          "id": "c",
+          "text": "To distribute the weight of the stone wall effectively and prevent structural collapse"
+        },
+        {
+          "id": "d",
+          "text": "To provide interior support for roof beams without interior columns, allowing for larger open spaces"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While massive stone might provide some thermal inertia, the tapering was not a cooling system but a structural response.",
+        "b": "The tapering is subtle ('slightly inward') and intentional, not a deliberate optical effect.",
+        "d": "The tapering supports the walls themselves, not the roof beams; interior columns supported roof systems.",
+        "correct": "Walls were massive (to hold the weight of stone), tapering slightly inward (a practical response to stone's weight distribution).'",
+        "takeaway": "The article explains: 'Walls were massive (to hold the weight of stone), tapering slightly inward (a practical response to stone's weight distribution).'."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "ST"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-001-04-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:23.211402+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "4cb17cd4-bcb2-4d2b-b1ec-5e56133ead31",
+      "article_id": "3e966435-e276-422e-a220-374043120cec",
+      "topic_id": "19741fc9-113b-4a79-9d43-e68d976621c9",
+      "text": "The progression of Egyptian tomb architecture from earliest to most evolved follows which sequence?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mastaba → Stepped Pyramid → True Pyramid → Hypostyle Temple"
+        },
+        {
+          "id": "b",
+          "text": "Simple pit tomb → Stone circle → Stepped Pyramid → True Pyramid"
+        },
+        {
+          "id": "c",
+          "text": "Mastaba → True Pyramid → Stepped Pyramid → Temple Complex"
+        },
+        {
+          "id": "d",
+          "text": "True Pyramid → Stepped Pyramid → Mastaba → Temple (reverse chronological order)"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "While stone circles appeared in megalithic cultures, they are not part of the Egyptian tomb sequence.",
+        "c": "The Stepped Pyramid predates the true pyramid, not the reverse.",
+        "d": "This reverses the actual chronological order; pyramids evolved from mastabas, not the reverse.",
+        "correct": "The chronological sequence: 'Mastaba (c. 3100–2686 BCE)... Stepped Pyramid (c. 2686–2613 BCE)... True Pyramid (c. 2613–2181 BCE)... Temples (New Kingdom, c. 1550–1070 BCE).'",
+        "takeaway": "Temples (New Kingdom, c. 1550–1070 BCE).'."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "CH"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-001-04-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:23.211402+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "d78421c8-9d95-4aee-a0f4-4cc4c600c5c8",
+      "article_id": "3e966435-e276-422e-a220-374043120cec",
+      "topic_id": "19741fc9-113b-4a79-9d43-e68d976621c9",
+      "text": "The Temple of Yazılıkaya near Boğazköy is notable as a Hittite structure for which distinctive architectural characteristic?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A monumental stepped ziggurat modeled after Mesopotamian examples, which is not typical for Hittite architecture"
+        },
+        {
+          "id": "b",
+          "text": "An open hypostyle hall with numerous interior columns supporting the roof, which is more common in Egyptian architecture"
+        },
+        {
+          "id": "c",
+          "text": "A structure carved into a natural rock outcrop with sculpted reliefs of gods and the king"
+        },
+        {
+          "id": "d",
+          "text": "A massive defensive fortress with multiple tiers and gate systems, which is not the primary feature of Yazılıkaya"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Stepped ziggurats are Mesopotamian forms, not typical of Hittite architecture.",
+        "b": "Hypostyle halls are Egyptian and Persian forms; Hittite temples were typically smaller and inward-facing.",
+        "d": "While Hittites did build fortifications, the Temple of Yazılıkaya is a religious structure carved into rock, not a fortress.",
+        "correct": "The Temple of Yazılıkaya near Boğazköy (c. 1250 BCE) carved into a natural rock outcrop, with sculpted reliefs of gods and the king. The integration of natural stone and carved decoration was characteristic of Hittite practice.'",
+        "takeaway": "The integration of natural stone and carved decoration was characteristic of Hittite practice.'."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DESC"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-001-04-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:23.525262+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "c7fcc483-6922-4a4d-9e62-050bbf1beb59",
+      "article_id": "20dc8dae-3a4e-4644-b4c6-b5b1881f830c",
+      "topic_id": "379d0ccc-cb9c-4bc8-aaa1-93127ce1782a",
+      "text": "Character in architecture, according to Ching, derives from which sources?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The site context and surrounding urban fabric"
+        },
+        {
+          "id": "b",
+          "text": "The structural system and material expression only"
+        },
+        {
+          "id": "c",
+          "text": "The building's style period and ornamental vocabulary"
+        },
+        {
+          "id": "d",
+          "text": "Functional, associated, and personal sources"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Site response is design strategy, not character as Ching defines it.",
+        "b": "While structure and material contribute to functional character, they don't encompass character alone.",
+        "c": "Style and ornament are part of associated character but not the complete definition.",
+        "correct": "Ching identifies three sources of character: functional character (from purpose and supporting systems), associated character (from cultural/historical precedent and meaning), and personal character (from designer's interpretive choices). All three integrate in strong architecture.",
+        "takeaway": "All three integrate in strong architecture."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-02-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "070e8fce-6792-4660-b5e3-5ac80df2c323",
+      "article_id": "20dc8dae-3a4e-4644-b4c6-b5b1881f830c",
+      "topic_id": "379d0ccc-cb9c-4bc8-aaa1-93127ce1782a",
+      "text": "How do the six design principles (contrast, rhythm, proportion, balance, sclea, character) interrelate in a coherent architectural design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They operate independently; a design uses one principle as primary and ignores the others, focusing solely on its impact"
+        },
+        {
+          "id": "b",
+          "text": "They function simultaneously and interdependently; each principle shapes how others are perceived and experienced"
+        },
+        {
+          "id": "c",
+          "text": "They are applied sequentially—first contrast, then rhythm, then proportion, etc., following a strict order of application"
+        },
+        {
+          "id": "d",
+          "text": "They apply only to facades; interior spatial design ignores these principles, focusing instead on functionality"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "All six principles operate in coherent design, not independently.",
+        "c": "Principles are not applied sequentially but simultaneously during design thinking.",
+        "d": "Principles apply throughout—facades, interiors, spatial sequences, all employ these principles.",
+        "correct": "These principles work together: balance affects how contrast is perceived; rhythm affects scale feeling; character influences proportional choices. Coherent design integrates all six simultaneously, with each principle reinforcing others.",
+        "takeaway": "Coherent design integrates all six simultaneously, with each principle reinforcing others."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "SYS"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-02-012",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "65aaff70-bf51-46d8-a5aa-5b8905c4b75f",
+      "article_id": "20dc8dae-3a4e-4644-b4c6-b5b1881f830c",
+      "topic_id": "379d0ccc-cb9c-4bc8-aaa1-93127ce1782a",
+      "text": "A designer creates a building facade with equally spaced columns supporting a uniform roof line, creating a calm, measured visual progression. Which design principle is this exemplifying?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Unaccented rhythm, through regular, equal intervals without variation"
+        },
+        {
+          "id": "b",
+          "text": "Contrast, by placing solid columns against an open sky, highlighting the difference between the built and natural environment"
+        },
+        {
+          "id": "c",
+          "text": "Asymmetrical balance, distributing visual weight unevenly to create dynamic tension and interest"
+        },
+        {
+          "id": "d",
+          "text": "Scale, by relating column proportions to human dimensions, ensuring the structure feels approachable and relatable"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "While contrast exists (columns vs. sky), the primary principle demonstrated is rhythmic repetition.",
+        "c": "Equal spacing creates balanced, not asymmetrical, distribution.",
+        "d": "While scale may be a design consideration, the primary organizing principle demonstrated is unaccented rhythm.",
+        "correct": "Equally spaced, identical columns at regular intervals create unaccented rhythm—the pattern is regular and measured without emphasized focal points, generating calm visual progression.",
+        "takeaway": "Equally spaced, identical columns at regular intervals create unaccented rhythm—the pattern is regular and measured without emphasized focal points, generating calm visual progression."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-02-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "4fb2ef31-a7ae-43a0-b6e2-6b3a58291e51",
+      "article_id": "20dc8dae-3a4e-4644-b4c6-b5b1881f830c",
+      "topic_id": "379d0ccc-cb9c-4bc8-aaa1-93127ce1782a",
+      "text": "Which type of balance places identical or equivleant elements on opposite sides of a central axis?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Radial balance, which involves elements radiating from a central point"
+        },
+        {
+          "id": "b",
+          "text": "Dynamic balance, characterized by asymmetrical elements that create visual interest"
+        },
+        {
+          "id": "c",
+          "text": "Asymmetrical balance, where elements are not identical but still achieve a sense of equilibrium"
+        },
+        {
+          "id": "d",
+          "text": "Symmetrical (or axial) balance"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Radial balance distributes forms equally around a central point, not about an axis.",
+        "b": "Dynamic balance' is not standard terminology in Ching's framework.",
+        "c": "Asymmetrical balance distributes unequal elements while maintaining visual equilibrium.",
+        "correct": "Symmetrical balance, also called axial balance, places identical or equivalent forms on opposite sides of a central axis, creating formal, static, dignified compositions common in classical and monumental architecture.",
+        "takeaway": "Symmetrical balance, also called axial balance, places identical or equivalent forms on opposite sides of a central axis, creating formal, static, dignified compositions common in classical and monumental architecture."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-02-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "bbe9df67-b4b1-458b-902c-8c8b0ec02a60",
+      "article_id": "20dc8dae-3a4e-4644-b4c6-b5b1881f830c",
+      "topic_id": "379d0ccc-cb9c-4bc8-aaa1-93127ce1782a",
+      "text": "Proportion, as Ching defines it, is best described as:",
+      "options": [
+        {
+          "id": "a",
+          "text": "The mathematical ratio of dimensions, typically expressed as 1:2 or the golden ratio, providing a basis for harmonious design."
+        },
+        {
+          "id": "b",
+          "text": "The feeling of scale relative to human dimensions and surrounding context, influencing the perception of space and form."
+        },
+        {
+          "id": "c",
+          "text": "The symmetrical arrangement of identical forms on opposite sides of an axis, creating balance and visual stability in design."
+        },
+        {
+          "id": "d",
+          "text": "The comparison the eye makes between size, shape, and tone of different elements and their parts to the whole"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While ratios are part of proportion, Ching's definition is broader than mathematics alone.",
+        "b": "That is the definition of scale.",
+        "c": "That is the definition of symmetrical balance, not proportion.",
+        "correct": "Ching's definition is comprehensive: proportion addresses the comparison between parts and whole, and among various parts. It includes both relative proportion (within a composition) and absolute dimensions, not just mathematical ratios.",
+        "takeaway": "It includes both relative proportion (within a composition) and absolute dimensions, not just mathematical ratios."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-02-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "f289e4c8-9dc9-4dce-a6c0-9f63b900985b",
+      "article_id": "20dc8dae-3a4e-4644-b4c6-b5b1881f830c",
+      "topic_id": "379d0ccc-cb9c-4bc8-aaa1-93127ce1782a",
+      "text": "Why does Ching emphasize that design principles address 'how' elements relate to each other rather than 'what' the basic elements are?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Because elements change with new technology, but principles remain constant, providing a stable framework for design"
+        },
+        {
+          "id": "b",
+          "text": "Because the relationships between elements create visual meaning and architectural coherence—principles govern how elements combine to generate design impact"
+        },
+        {
+          "id": "c",
+          "text": "Because relationships are easier to teach than elements, allowing for a more streamlined educational approach"
+        },
+        {
+          "id": "d",
+          "text": "Because basic elements are taught in elementary school and are too simple to discuss, making them less relevant in advanced design"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While technology changes, the distinction between elements and relational principles is conceptual, not technology-dependent.",
+        "c": "Principles are not easier; they require deeper understanding of compositional logic.",
+        "d": "Elements are fundamental to architecture; they're not 'too simple.'",
+        "correct": "Ching distinguishes element types (point, line, plane, volume) from design principles (how they relate). Principles explain WHY designs work—they govern the relationships that create harmony, emphasis, spatial meaning, and coherence. Understanding principles, not just elements, is critical to design literacy.",
+        "takeaway": "Understanding principles, not just elements, is critical to design literacy."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-02-013",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "a2273978-7ae3-403a-933f-a7096bb57198",
+      "article_id": "20dc8dae-3a4e-4644-b4c6-b5b1881f830c",
+      "topic_id": "379d0ccc-cb9c-4bc8-aaa1-93127ce1782a",
+      "text": "Which statement correctly distinguishes between unaccented and accented rhythm?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Unaccented rhythm is found in modern design; accented rhythm is found in classical design, often emphasizing symmetry and balance"
+        },
+        {
+          "id": "b",
+          "text": "Unaccented rhythm has random spacing; accented rhythm has regular spacing, creating a predictable pattern that guides the viewer's eye"
+        },
+        {
+          "id": "c",
+          "text": "Unaccented rhythm repeats one element; accented rhythm repeats multiple elements, introducing complexity and visual interest"
+        },
+        {
+          "id": "d",
+          "text": "Unaccented rhythm uses identical units at equal intervals; accented rhythm introduces variation or emphasis at intervals"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Both classical and modern architecture employ both types.",
+        "b": "Random spacing is not rhythm at all—rhythm requires regularity.",
+        "c": "Both use repetition; the distinction is whether the rhythm is regular without variation (unaccented) or has emphasis/variation (accented).",
+        "correct": "Ching precisely defines these: unaccented rhythm = identical units at equal intervals (calm, measured); accented rhythm = varying intervals or emphasized units (visual interest, focal points). Both require regularity, but accented introduces variation.",
+        "takeaway": "Both require regularity, but accented introduces variation."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-02-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "eac57dbd-3cf6-4d65-b4c5-c0e4ef5550b3",
+      "article_id": "20dc8dae-3a4e-4644-b4c6-b5b1881f830c",
+      "topic_id": "379d0ccc-cb9c-4bc8-aaa1-93127ce1782a",
+      "text": "How do radial and symmetrical balance differ in their organizing logic?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Radial balance uses identical elements; symmetrical balance uses equivalent elements on either side of the axis"
+        },
+        {
+          "id": "b",
+          "text": "Symmetrical balance organizes about a central axis; radial balance distributes forms around a central point, creating 360-degree balance"
+        },
+        {
+          "id": "c",
+          "text": "Radial balance is about an axis; symmetrical balance is around a point — the reverse of standard definitions"
+        },
+        {
+          "id": "d",
+          "text": "Radial balance is formal; symmetrical balance is informal and allows greater compositional freedom"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Both can use identical or equivalent elements; that doesn't distinguish them.",
+        "c": "Reversed—radial is around a point; symmetrical is about an axis.",
+        "d": "Both can be formal or informal depending on context.",
+        "correct": "This is the critical distinction: symmetrical (axial) balance is about a LINE (axis), with forms mirrored across it; radial balance is about a POINT, with forms distributed equally in all directions (like spokes from a hub). Radial appears balanced from all directions; symmetrical appears balanced across an axis only.",
+        "takeaway": "Radial appears balanced from all directions; symmetrical appears balanced across an axis only."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-02-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    }
+  ]
+}

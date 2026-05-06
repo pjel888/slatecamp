@@ -1,0 +1,10 @@
+{
+  "question_id": "0e83ea53-ac38-4071-b382-9a69afca9f7f",
+  "baseline_hash": "sha256:03fd51b64b3bb72a25c20942d99b05559b04bb6c334352815c185bf74066dedc",
+  "reason": "Strict explanation backfill from existing specific rationale; answer key and options unchanged.",
+  "approved_by": "hermes-question-remediation-autopilot",
+  "approved_at": "2026-05-06T15:54:34.077Z",
+  "proposed": {
+    "explanation": "Fuel cell systems provide reliable backup power but cannot respond instantly to brief transfer delays; they are better suited for longer-term alternative power. Solar PV systems with battery storage are suitable for daytime load offset and alternative power but cannot guarantee instant response during nighttime outages. Voltage stabilizers regulate voltage but do not provide backup power during complete utility failure; flywheel storage has limited energy capacity for extended outages. UPS systems with battery backup provide instantaneous power during the ATS transfer delay before the generator reaches full output capacity. Online double conversion UPS (90-94% efficiency) offers maximum protection for sensitive equipment; line-interactive UPS (94-97% efficiency) provides regulated voltage; and offline UPS offers minimal protection but lowest cost. Battery duration typically ranges from 30 minutes for emergency lighting to 2-4 hours for critical data center equipment. UPS systems with battery backup bridge the ATS transfer delay, maintaining power to critical loads during the 10-second transfer from utility to generator operation."
+  }
+}
