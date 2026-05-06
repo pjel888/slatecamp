@@ -1,0 +1,10 @@
+{
+  "question_id": "654c22df-4d59-4f75-b87c-857acf11645d",
+  "baseline_hash": "sha256:4f6303f75bbb18e1a6086a464c9a36b4c0686880f8ae41850741b36c41e9ef2f",
+  "reason": "Strict explanation backfill from existing specific rationale; answer key and options unchanged.",
+  "approved_by": "hermes-question-remediation-autopilot",
+  "approved_at": "2026-05-06T15:57:13.069Z",
+  "proposed": {
+    "explanation": "This result assumes Poisson's ratio is 0, which is incorrect for steel[cite: 1]. This result occurs if you multiply instead of divide by the (1 + ν) factor[cite: 1]. G cannot be equal to E for materials with a positive Poisson's ratio[cite: 1]. G = 200,000 / [2(1 + 0.30)] = 200,000 / 2.6 = 76,923.07 ≈ 76,923 MPa[cite: 1]. The shear modulus for structural steel is approximately 76,923 MPa[cite: 1]."
+  }
+}

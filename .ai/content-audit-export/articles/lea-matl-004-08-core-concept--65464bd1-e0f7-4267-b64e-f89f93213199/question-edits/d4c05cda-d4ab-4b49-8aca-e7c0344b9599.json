@@ -1,12 +1,10 @@
 {
   "question_id": "d4c05cda-d4ab-4b49-8aca-e7c0344b9599",
   "baseline_hash": "sha256:bb22efe4ef262c90293cebedd208383a3940ac83979b8d8c5b97dcf4845a9df9",
-  "reason": "Missing 'takeaway' key in rationale. Added an appropriate takeaway summarizing the key learning point.",
-  "approved_by": "hermes-question-audit",
-  "approved_at": "2026-05-03T12:16:00.000000+00:00",
+  "reason": "Strict explanation backfill from existing specific rationale; answer key and options unchanged.",
+  "approved_by": "hermes-question-remediation-autopilot",
+  "approved_at": "2026-05-06T15:57:13.071Z",
   "proposed": {
-    "rationale": {
-      "takeaway": "Concrete proportioning affects workability, strength, and durability. Know standard mix design ratios and minimum cement content requirements."
-    }
+    "explanation": "Design drawings show intent; as-builts show reality. Cost tracking uses different documentation (progress invoices, change orders). Preliminary drawings are pre-construction; as-builts are post-construction. As-builts reflect actual field conditions (substituted materials, MEP rerouting due to conflicts, rebar placement, as-installed dimensions). Accurate as-builts are critical for operations staff (HVAC maintenance, electrical troubleshooting), future renovations (understanding existing conditions), and legal disputes (damage claims, warranty issues). Discrepancies from design must be noted."
   }
 }
