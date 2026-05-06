@@ -1,0 +1,2538 @@
+{
+  "created_at": "2026-05-06T15:09:18.368Z",
+  "batch": "question-batch-024",
+  "table": "questions",
+  "rows": [
+    {
+      "question_id": "92428bec-df95-4f35-b33d-d34a2e887aaa",
+      "article_id": "c9b1aadd-4843-4cf3-a551-6dd67678e508",
+      "topic_id": "325cc696-9b36-4e19-9bd7-9f2105d29165",
+      "text": "What is the primary purpose of the Schematic Design phase?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Produce final construction drawings ready for bidding, ensuring all details are finalized and compliant with regulations"
+        },
+        {
+          "id": "b",
+          "text": "Develop multiple conceptual solutions exploring different design directions"
+        },
+        {
+          "id": "c",
+          "text": "Coordinate with engineers and finalize all technical details, including structural and MEP systems"
+        },
+        {
+          "id": "d",
+          "text": "Verify construction compliance on the building site, ensuring all work adheres to the approved plans and specifications"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This is the purpose of Construction Documents phase, not Schematic Design.",
+        "b": "Correct: Schematic Design explores concepts. Multiple schemes are typical; detailed engineering comes later.",
+        "c": "This is the purpose of Design Development and Construction Documents phases.",
+        "d": "This is the purpose of Construction Administration phase.",
+        "correct": "Schematic Design is conceptual and exploratory. The architect presents multiple design approaches for spatial arrangement, massing, and materials. The client selects a preferred direction. Engineering coordination is minimal at this stage.",
+        "takeaway": "Schematic Design = exploration phase. Drawings are conceptual (typical scale 1:100 or smaller). Multiple concepts are okay. Detailed engineering is NOT part of Schematic; it comes in Design Development."
+      },
+      "explanation": null,
+      "code_citation": "UAP Standard Practice Parameters; Schematic Design Definition",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "design process phases"
+      ],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-007-04-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:58.165968+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "40e81923-31c8-4e03-addb-e0883e91d8c4",
+      "article_id": "708fd4a4-e06f-4255-a2ad-e56711b9ee43",
+      "topic_id": "cf51cf0a-3bcd-40c3-8f04-1565166f7de7",
+      "text": "The typical waste allowance for structural steel fabrication is ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "2–3%"
+        },
+        {
+          "id": "b",
+          "text": "5–7%"
+        },
+        {
+          "id": "c",
+          "text": "10–15%"
+        },
+        {
+          "id": "d",
+          "text": "20–25%"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "2–3% is too low; does not account for fabrication losses.",
+        "c": "10–15% is higher; applies to materials like paint or tiles, not structural steel.",
+        "d": "20–25% is excessive.",
+        "correct": "Structural steel fabrication waste is 5–7% due to cutting, welding, and handling losses.",
+        "takeaway": "Use 5–7% waste for structural steel. Add this AFTER calculating total member weights."
+      },
+      "explanation": null,
+      "code_citation": "Site practice, NSCP guidelines",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-010-07-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "11de4a7a-6d25-455b-8204-3aac5408c9d4",
+      "article_id": "669aab68-416a-4a90-b66c-4ea998e82d05",
+      "topic_id": "61adabd7-326c-4d52-ac06-13f313c829c4",
+      "text": "A hospital in Quezon City (Type IV) must maintain comfortable spaces for patients. How should architects integrate light shelf design with daylighting and cooling requirements?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Light shelves should use reflective finishes on both shelf and ceiling to maximize brightness and reduce cooling load equally, ensuring optimal energy efficiency"
+        },
+        {
+          "id": "b",
+          "text": "Light shelves are unnecessary if electric lighting is provided; focus on mechanical cooling instead, as it offers more consistent results"
+        },
+        {
+          "id": "c",
+          "text": "Light shelves work best in arid climates; Type IV high humidity reduces their effectiveness significantly, making them less viable"
+        },
+        {
+          "id": "d",
+          "text": "Light shelves reduce window-area heat gain by 30–40% while achieving 2–3× greater interior illumination; specular (mirror-like) aluminum + diffuse ceiling is optimal for redirecting high-angle noon sun deep into building"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Mirror ceiling creates secondary glare; diffuse ceilings are required for health-appropriate non-glare illumination.",
+        "b": "Light shelves reduce mechanical cooling demand by 35–40%; they are highly relevant to tropical hospital design.",
+        "c": "Humidity does not reduce light shelf effectiveness; they work equally well in Type IV's perpetual moisture.",
+        "correct": "Light shelves reduce window-area heat gain by 30–40% while achieving 2–3× greater interior illumination... specular aluminum shelves outperform matte finishes; however, diffuse ceilings (not mirrors) must receive the redirected light.' This is the precise protocol for tropical daylighting integration.",
+        "takeaway": "specular aluminum shelves outperform matte finishes; however, diffuse ceilings (not mirrors) must receive the redirected light.' This is the precise protocol for tropical daylighting integration."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-004-02-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "02559414-0545-4024-9703-df834ee48385",
+      "article_id": "669aab68-416a-4a90-b66c-4ea998e82d05",
+      "topic_id": "61adabd7-326c-4d52-ac06-13f313c829c4",
+      "text": "What is the 'Venturi skirt' design mentioned as a passive cooling innovation for overhangs in tropical architecture?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A horizontal fin array that blocks oblique solar angles while maintaining vertical light penetration, enhancing daylighting"
+        },
+        {
+          "id": "b",
+          "text": "A sealed plenum chamber beneath overhangs that buffers thermal radiation and reduces heat transfer to interior spaces"
+        },
+        {
+          "id": "c",
+          "text": "A reflective paint coating on soffit surfaces to reduce re-radiation of trapped heat, improving thermal comfort"
+        },
+        {
+          "id": "d",
+          "text": "A 30–45 degree louver beneath overhangs that accelerates wind flow and increases cooling by creating local pressure drop"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This describes horizontal shading; not the dynamic wind-acceleration principle of Venturi geometry.",
+        "b": "This describes a thermal buffer; not the Venturi acceleration mechanism.",
+        "c": "Soffit reflectance is a separate strategy; not the Venturi skirt.",
+        "correct": ": 'The \"Venturi skirt\" design—a 30–45 degree louver beneath overhangs—accelerates wind flow and increases cooling.' This uses fluid acceleration principle (constriction creates pressure drop) to enhance passive cooling beneath shaded eaves.",
+        "takeaway": ": 'The \"Venturi skirt\" design—a 30–45 degree louver beneath overhangs—accelerates wind flow and increases cooling.' This uses fluid acceleration principle (constriction creates pressure drop) to enhance passive cooling beneath shaded eaves."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-004-02-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "9c009e8a-fd05-44d3-b301-7626e0e9eca1",
+      "article_id": "669aab68-416a-4a90-b66c-4ea998e82d05",
+      "topic_id": "61adabd7-326c-4d52-ac06-13f313c829c4",
+      "text": "In tropical climates, what is the primary cooling mechanism that differs fundamentally from temperate-zone passive design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Thermal mass storage of daytime heat for release during cool nights, which is less effective in tropical climates due to minimal temperature variation"
+        },
+        {
+          "id": "b",
+          "text": "Ventilation (cross-ventilation, stack effect, wind acceleration) is the primary mechanism; thermal mass is ineffective due to suppressed diurnal range"
+        },
+        {
+          "id": "c",
+          "text": "Orientation to maximize south-facing winter solar gain for heating, which is not applicable in tropical regions"
+        },
+        {
+          "id": "d",
+          "text": "Reflective surfaces to mirror solar radiation back to atmosphere, reducing heat absorption in buildings"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This is arid-climate doctrine; it fails in tropics where nighttime temps are too high.",
+        "c": "Tropical orientation prioritizes shade and ventilation, not winter heating gain (unnecessary in tropics).",
+        "d": "Reflectance helps but is secondary to active air movement strategies.",
+        "correct": "The hierarchy: 'In tropical climates, ventilation is the primary cooling mechanism—not shade alone, not mass, not orientation.' Nighttime temps (22–25°C) prevent thermal mass from radiating stored daytime heat.",
+        "takeaway": "The hierarchy: 'In tropical climates, ventilation is the primary cooling mechanism—not shade alone, not mass, not orientation.' Nighttime temps (22–25°C) prevent thermal mass from radiating stored daytime heat."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-004-02-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "e09a779d-e420-433b-b63c-32b6daeaa32c",
+      "article_id": "669aab68-416a-4a90-b66c-4ea998e82d05",
+      "topic_id": "61adabd7-326c-4d52-ac06-13f313c829c4",
+      "text": "A bay kubo-inspired residential design incorporates open floor plan, large windows (30–40% wall area), and slat flooring. Which passive cooling mechanisms does this vernacular exemplar employ simultaneously?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cross-ventilation only; other mechanisms are secondary, which limits the design's effectiveness"
+        },
+        {
+          "id": "b",
+          "text": "Cross-ventilation (wind-driven), stack effect (buoyancy via open floor and roof vents), and evaporative cooling (permeable sawali/flooring)"
+        },
+        {
+          "id": "c",
+          "text": "Thermal mass buffering combined with solar orientation optimization, which is not typical for this design"
+        },
+        {
+          "id": "d",
+          "text": "Active mechanical ventilation with natural light backup, which contradicts the passive design principles"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The bahay kubo achieves 8–10 ACH through synergized mechanisms, not single-strategy reliance.",
+        "c": "Thermal mass and solar orientation are secondary in vernacular tropical design.",
+        "d": "The bahay kubo is passive; mechanical systems are absent by definition.",
+        "correct": "A well-designed tropical building operates all three simultaneously: Cross-ventilation, Stack effect, Venturi effect.' The bahay kubo exemplar demonstrates: 'Cross-ventilation (large windows all sides), Stack effect (open floor + roof vents), Evaporative cooling (sawali walls, permeable flooring).' This triple integration is the tested standard.",
+        "takeaway": "A well-designed tropical building operates all three simultaneously: Cross-ventilation, Stack effect, Venturi effect.' The bahay kubo exemplar demonstrates: 'Cross-ventilation (large windows all sides), Stack effect (open floor + roof vents), Evaporative cooling (sawali walls, permeable flooring).' This triple integration is the tested standard."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "PH"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-004-02-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "93364bbd-0470-4cf2-baf3-8c469f838049",
+      "article_id": "669aab68-416a-4a90-b66c-4ea998e82d05",
+      "topic_id": "61adabd7-326c-4d52-ac06-13f313c829c4",
+      "text": "Compare lightweight construction (timber, metal stud, bamboo) versus heavyweight construction (concrete, masonry) in tropical climates. Which statement correctly reflects research findings?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Heavyweight is better only in Type III/IV zones; weight is neutral in Type I/II climates, where other factors dominate"
+        },
+        {
+          "id": "b",
+          "text": "Heavyweight construction is universally superior; thermal mass reduces peak cooling by 6–8°C, providing consistent comfort"
+        },
+        {
+          "id": "c",
+          "text": "Both perform identically; construction weight is irrelevant to tropical thermal performance, as other variables are more significant"
+        },
+        {
+          "id": "d",
+          "text": "Lightweight construction is 2–3°C cooler during occupied hours (8am–6pm) vs. heavyweight; nighttime cooling techniques are 35.9% more effective in lightweight structures"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Lightweight is optimal in all tropical Coronas types; the difference is marginal in Type III/IV only because diurnal range is slightly larger, not because heavyweight becomes advantageous.",
+        "b": "This is arid-climate logic; it explicitly fails in tropical suppressed diurnal range.",
+        "c": "Weight dramatically affects thermal response; lightweight structures have faster adaptation to ventilation cooling.",
+        "correct": "Research: 'Lightweight timber or metal framing responds quickly to cooled air from night ventilation or early-morning stack effect; interior temperature drops 2–3°C faster than heavyweight buildings. Nighttime cooling techniques are 35.9% more effective in lightweight structures.' This is the evidence-based consensus for tropical design.",
+        "takeaway": "Nighttime cooling techniques are 35.9% more effective in lightweight structures.' This is the evidence-based consensus for tropical design."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-004-02-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "dc14199f-7cd0-4f51-bf06-7d4b977ea6c4",
+      "article_id": "ee50e412-f6d8-45f0-9016-55785c60773f",
+      "topic_id": "c585ad1d-f623-42f7-b7c6-9c3ccd58c8ed",
+      "text": "How should contemporary Filipino architects balance aspiration for international recognition (Pritzker Prize, global publications) with commitment to distinctively Filipino identity grounded in local values and vernacular traditions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pursuing international recognition necessarily requires abandoning cultural identity; choose one or the other, as they are mutually exclusive"
+        },
+        {
+          "id": "b",
+          "text": "International recognition and local identity are unrelated; architects should focus on technical excellence regardless of cultural grounding, as this is the primary measure of success"
+        },
+        {
+          "id": "c",
+          "text": "Genuine cultural specificity, pursued with integrity and rigor, achieves international resonance precisely because it arises from authentic conviction rather than attempting to dissolve difference into generic internationalism"
+        },
+        {
+          "id": "d",
+          "text": "International recognition should be actively rejected; focus exclusively on local practice within Philippines, as this ensures cultural preservation"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The examples show this false choice; both recognition and identity are achievable.",
+        "b": "Technical excellence without cultural grounding produces adequate but uninspired architecture; culture and quality are inseparable.",
+        "d": "Rejecting international engagement ignores the reality that ideas circulate globally; Filipino architects benefit from participating in broader conversations.",
+        "correct": "architectural theory (and the broader design culture it describes) demonstrates that Nakpil, Mañosa, and Locsin achieved both local respect and international influence precisely through genuine cultural commitment. Kenneth Cobonpue's rattan furniture gains global acclaim because it represents authentic cultural expression, not exotic styling. Specificity and universality are compatible when rooted in genuine conviction."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "SYS"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ale-theo-008-04-q10",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.809916+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "529ca027-334a-41b7-af33-884619204eee",
+      "article_id": "ee50e412-f6d8-45f0-9016-55785c60773f",
+      "topic_id": "c585ad1d-f623-42f7-b7c6-9c3ccd58c8ed",
+      "text": "Who is acknowledged as the father of Philippine architecture and the first National Artist for Architecture?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pablo Antonio (1952)"
+        },
+        {
+          "id": "b",
+          "text": "Juan Nakpil (1973)"
+        },
+        {
+          "id": "c",
+          "text": "Leandro Locsin (1990)"
+        },
+        {
+          "id": "d",
+          "text": "Francisco Mañosa (1968)"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Pablo Antonio was an important Art Deco pioneer but not first National Artist for Architecture.",
+        "c": "Locsin (National Artist 1990) represented modernist synthesis approach.",
+        "d": "Mañosa (National Artist) came later and represented materials approach.",
+        "correct": "Juan Nakpil, named first National Artist for Architecture in 1973, founded the project of establishing distinctively Filipino architectural identity. His prolific output (200 buildings) demonstrated that Filipino identity could sustain an entire career."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ale-theo-008-04-q01",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.809916+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "68dd059c-bbbb-4abe-befd-a68b8bd4e014",
+      "article_id": "ee50e412-f6d8-45f0-9016-55785c60773f",
+      "topic_id": "c585ad1d-f623-42f7-b7c6-9c3ccd58c8ed",
+      "text": "Which architect is most associated with championing indigenous materials (bamboo, rattan, abaca, coconut) as structural and expressive design elements?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Leandro Locsin, known for his modernist approach and use of concrete"
+        },
+        {
+          "id": "b",
+          "text": "Tomas Mapua, a pioneer in Philippine architecture with a focus on colonial styles"
+        },
+        {
+          "id": "c",
+          "text": "Francisco Mañosa"
+        },
+        {
+          "id": "d",
+          "text": "Juan Nakpil, recognized for his contributions to Philippine heritage architecture"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Locsin pursued modernist synthesis; material specificity was secondary to formal language.",
+        "b": "Mapua was first licensed Filipino architect, not primarily known for materials advocacy.",
+        "d": "Nakpil established identity through formalism and cultural consciousness, not material advocacy.",
+        "correct": "Francisco Mañosa's philosophy was 'I design Filipino, nothing else.' He used indigenous materials not decoratively but structurally, in works like the Coconut Palace and Amanpulo Resort. This approach demonstrated that cultural authenticity could achieve international acclaim."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ale-theo-008-04-q04",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.809916+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "5cc84913-5c62-4492-812f-b50d88c202a9",
+      "article_id": "ee50e412-f6d8-45f0-9016-55785c60773f",
+      "topic_id": "c585ad1d-f623-42f7-b7c6-9c3ccd58c8ed",
+      "text": "states that the future of Filipino architectural identity involves integrating climate crisis, digital tools, global supply chains, and rapid urbanization. How should emerging architects understand their role in this evolving conversation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Identity conversation is concluded; contemporary architects should focus purely on technical solutions to current problems, ignoring cultural and historical contexts"
+        },
+        {
+          "id": "b",
+          "text": "Emerging architects should abandon all reference to tradition and adopt whatever global trends are fashionable, regardless of local relevance or sustainability"
+        },
+        {
+          "id": "c",
+          "text": "Emerging architects should creatively engage established identity principles while responding to contemporary conditions, asking how tradition, sustainability, digital capability, and cultural values can synthesize to produce distinctively Filipino solutions to new challenges"
+        },
+        {
+          "id": "d",
+          "text": "Emerging architects should simply follow established precedents from Nakpil, Mañosa, and Locsin without modification, adhering strictly to past methodologies"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Technical problem-solving without cultural grounding risks disconnection from what makes Filipino architecture distinctive.",
+        "b": "Fashion-following would erase the conversations previous architects established.",
+        "d": "Simple replication would be cultural stasis, not authentic identity.",
+        "correct": "Identity as 'ongoing conversation,' not concluded project. Emerging architects inherit the foundation (Nakpil's cultural consciousness, Mañosa's material integrity, Locsin's synthesis) but must ask new questions: Can digital architecture be Filipino? How do indigenous materials sustain under climate pressure? This creative extension is their professional responsibility."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "INT"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ale-theo-008-04-q09",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.809916+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "ac98daa2-80de-4ac2-b9d7-a6e886fcaa16",
+      "article_id": "ee50e412-f6d8-45f0-9016-55785c60773f",
+      "topic_id": "c585ad1d-f623-42f7-b7c6-9c3ccd58c8ed",
+      "text": "What is the bahay kubo, and why is it significant in Filipino architectural identity?",
+      "options": [
+        {
+          "id": "a",
+          "text": "An urban housing project built by the government, aimed at providing affordable housing solutions"
+        },
+        {
+          "id": "b",
+          "text": "A modern apartment building style developed in the 1960s, reflecting the architectural trends of that era"
+        },
+        {
+          "id": "c",
+          "text": "A Spanish colonial house type used only for historical preservation, representing the colonial past of the Philippines"
+        },
+        {
+          "id": "d",
+          "text": "The traditional nipa hut characterized by elevated structure, deep overhangs, natural ventilation, and local materials; it became a design reference point for contemporary Filipino architects seeking cultural grounding"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Bahay kubo is not a modern government program; it's traditional architecture.",
+        "b": "Bahay kubo is traditional vernacular, not modern apartment type.",
+        "c": "While preserved historically, its significance is conceptual for contemporary design.",
+        "correct": "The bahay kubo is a centuries-old vernacular form that contemporary Filipino architects reference for design principles: elevation for ventilation, deep overhangs managing tropical weather, responsive materials. It's not about literal copying but extracting principles applicable to modern design."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ale-theo-008-04-q03",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.809916+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "e08706ec-8742-4aef-845d-c92b86eabeb3",
+      "article_id": "ee50e412-f6d8-45f0-9016-55785c60773f",
+      "topic_id": "c585ad1d-f623-42f7-b7c6-9c3ccd58c8ed",
+      "text": "A contemporary Filipino architect is designing a residential complex using bamboo for primary structural elements, referencing bahay kubo principles for ventilation and spatial organization, and digital parametric tools to optimize structural geometry. From the perspective of the ongoing identity conversation, is this approach coherent with established Filipino architectural values?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, but only if no digital tools are used; technology and tradition are incompatible, which is a debated perspective"
+        },
+        {
+          "id": "b",
+          "text": "No; using digital tools violates traditional Filipino principles and represents cultural selling-out, according to some purists"
+        },
+        {
+          "id": "c",
+          "text": "Yes; this demonstrates evolutionary engagement with tradition—maintaining material and spatial principles while adopting contemporary tools that enable innovation and precision not available to earlier architects"
+        },
+        {
+          "id": "d",
+          "text": "No; bahay kubo reference is superficial unless the building looks identical to traditional structures, which is a narrow interpretation"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Tradition and digital tools are not inherently opposed; their integration can be generative.",
+        "b": "Digital tools are neutral; their appropriateness depends on how they serve design goals.",
+        "d": "Abstraction of principles, not literal copying; cultural authenticity doesn't require visual replication.",
+        "correct": "Filipino identity as dynamic and evolving, not static. Using bamboo and bahay kubo principles while leveraging parametric tools for optimization represents creative synthesis—maintaining cultural roots while responding to contemporary possibilities. This is continuation of the identity conversation, not betrayal of it."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ale-theo-008-04-q06",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.809916+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "f6489584-a0d5-4e79-b617-527ca0ff3211",
+      "article_id": "ee50e412-f6d8-45f0-9016-55785c60773f",
+      "topic_id": "c585ad1d-f623-42f7-b7c6-9c3ccd58c8ed",
+      "text": "Lor Calma (1928–2008) represented multidisciplinary modernism across architecture, interiors, and furniture. Why is his work significant...or understanding Filipino architectural identity beyond buildings themselves?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Calma's work proves that Filipino identity is irrelevant; modernism eliminates cultural specificity, focusing instead on universal design principles"
+        },
+        {
+          "id": "b",
+          "text": "Calma demonstrates that Filipino design identity operates at multiple scales and disciplines, united by consistent sensibility (clean lines, local materials, functional clarity) that transcends individual building types"
+        },
+        {
+          "id": "c",
+          "text": "Calma's longevity shows that once an architect establishes identity, no change is necessary across fifty years, maintaining a consistent design language"
+        },
+        {
+          "id": "d",
+          "text": "His multidisciplinary work is less important than his architecture; design scale hierarchy should privilege buildings over other forms of design expression"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Modernism is compatible with cultural specificity when pursued with genuine conviction.",
+        "c": "Calma's influence extended through evolutionary development, not static repetition; the identity conversation continued across his career.",
+        "d": "Design identity operates across scales; furniture and interiors are equally legitimate expressions of Filipino values.",
+        "correct": "Calma's significance is demonstrating that Filipino identity is coherent across scales and disciplines. Consistent principles (modernist clarity, material responsiveness, functional integrity) apply whether designing buildings, interiors, or furniture. This shows identity is philosophical orientation, not superficial material choice or formal style."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ale-theo-008-04-q08",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.809916+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "de0ee3a7-dadf-4cc8-afad-11040c7f25ab",
+      "article_id": "0de0e175-c5a7-49e9-9b57-3833b44cda3d",
+      "topic_id": "25bf26e9-4589-4193-89e9-f0f8a583c852",
+      "text": "In an SMRF column (Special Moment Resisting Frame), what is the required bend angle for confinement hoops to be classified as a seismic hook?",
+      "options": [
+        {
+          "id": "a",
+          "text": "90 degrees"
+        },
+        {
+          "id": "b",
+          "text": "135 degrees"
+        },
+        {
+          "id": "c",
+          "text": "180 degrees"
+        },
+        {
+          "id": "d",
+          "text": "110 degrees"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "90-degree hooks are for non-seismic ties; they can pop open when concrete cover is lost under seismic stress.",
+        "c": "180-degree hooks are used for anchorage of straight bars, not typically for transverse confinement hoops.",
+        "d": "110 degrees is not a standard code angle for hooks.",
+        "correct": "Per NSCP 2015 § 402.2 (Definitions), a seismic hook must have a bend of not less than 135 degrees. This ensures confinement remains intact even if the concrete cover spalls during an earthquake.",
+        "takeaway": "Seismic confinement requires 135-degree hooks."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 § 402.2",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-007-04-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "d5344501-ae65-48f7-9c00-85b280f4c0da",
+      "article_id": "9c265d02-df61-46de-8c96-dd474041838e",
+      "topic_id": "d4ad1440-6d38-426a-8f9d-4f4e3cc1723b",
+      "text": "Sound isolation in architecture depends on three mechanisms. Which combination is most effective?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mass, discontinuity (decoupling), and absorption used in combination for comprehensive noise control"
+        },
+        {
+          "id": "b",
+          "text": "Absorption alone, using soft materials throughout the building to minimize sound transmission"
+        },
+        {
+          "id": "c",
+          "text": "Mass alone, relying solely on wall thickness to block sound, which can be effective in certain scenarios"
+        },
+        {
+          "id": "d",
+          "text": "Acoustic caulking without structural changes to isolate spaces, providing a cost-effective solution"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Absorption alone doesn't prevent low-frequency transmission requiring mass",
+        "c": "Mass alone is insufficient without discontinuity and absorption",
+        "d": "Caulking is supplementary; structural solutions are primary",
+        "correct": "Effective isolation combines mass (blocking), discontinuity (breaking transmission paths), and absorption (removing energy) comprehensively",
+        "takeaway": "Effective isolation combines mass (blocking), discontinuity (breaking transmission paths), and absorption (removing energy) comprehensively."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "SYS"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-05-011",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "8b7bc959-bd31-4099-a7fa-c72b3cd31e3e",
+      "article_id": "9c265d02-df61-46de-8c96-dd474041838e",
+      "topic_id": "d4ad1440-6d38-426a-8f9d-4f4e3cc1723b",
+      "text": "In designing a healthcare facility in a tropical climate, which material strategy would most effectively balance infection control requirements with haptic warmth and psychological comfort?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Use soft, porous materials (carpet, fabric) throughout for maximum comfort, prioritizing tactile experience over hygiene"
+        },
+        {
+          "id": "b",
+          "text": "Combine wipeable hard surfaces (ceramic, polished concrete) where infection control is critical with warm material accents (natural wood trim, textile elements) in patient areas"
+        },
+        {
+          "id": "c",
+          "text": "Eliminate all functional finishes; use only decorative ornaments for psychological benefit, disregarding practical considerations"
+        },
+        {
+          "id": "d",
+          "text": "Use exclusively polished concrete and ceramic tile throughout, prioritizing cleanability and durability, with no regard for comfort"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Porous materials compromise infection control in healthcare contexts",
+        "c": "Ornament without functional sensory design provides limited benefit",
+        "d": "Exclusively hard finishes reduce stress-reducing haptic benefit",
+        "correct": "Strategic integration balances infection control (hard surfaces where required) with haptic warmth (natural materials where appropriate), serving dual functions",
+        "takeaway": "Strategic integration balances infection control (hard surfaces where required) with haptic warmth (natural materials where appropriate), serving dual functions."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-05-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "2e3fbf2b-d0ee-485f-9693-096ae0a46fa0",
+      "article_id": "9c265d02-df61-46de-8c96-dd474041838e",
+      "topic_id": "d4ad1440-6d38-426a-8f9d-4f4e3cc1723b",
+      "text": "Why might a visually beautiful office with modern architecture, good lighting, and comfortable furniture still produce occupant dissatisfaction?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Modern architecture inherently produces dissatisfaction due to design style, which is a subjective and oversimplified view"
+        },
+        {
+          "id": "b",
+          "text": "Aesthetic quality alone ensures occupant satisfaction regardless of other factors, which ignores the complexity of human comfort"
+        },
+        {
+          "id": "c",
+          "text": "Occupant satisfaction depends exclusively on furniture comfort, not sensory design, which overlooks other critical environmental factors"
+        },
+        {
+          "id": "d",
+          "text": "Visual appeal is secondary to acoustic, thermal, and material sensory qualities that affect stress and comfort"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Architecture style is independent of sensory integration quality",
+        "b": "Aesthetic quality is necessary but insufficient without sensory integration",
+        "c": "Sensory design affects satisfaction across multiple dimensions",
+        "correct": "Comprehensive occupant satisfaction requires integration of all sensory dimensions; visual appeal alone is insufficient without acoustic, tactile, and thermal comfort",
+        "takeaway": "Comprehensive occupant satisfaction requires integration of all sensory dimensions; visual appeal alone is insufficient without acoustic, tactile, and thermal comfort."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-05-012",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "df1c6c95-a997-4349-a87f-d13163a19a8a",
+      "article_id": "9c265d02-df61-46de-8c96-dd474041838e",
+      "topic_id": "d4ad1440-6d38-426a-8f9d-4f4e3cc1723b",
+      "text": "An open-plan office shows high employee stress despite good lighting. The space has hard reflective finishes and no acoustic treatment. The most direct cause is:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Insufficient desk space reducing productivity, which can indirectly increase stress levels"
+        },
+        {
+          "id": "b",
+          "text": "Insufficient natural light causing vitamin D deficiency, although lighting is reportedly good"
+        },
+        {
+          "id": "c",
+          "text": "Excessive reverberation from hard finishes creating acoustic stress and speech intelligibility problems"
+        },
+        {
+          "id": "d",
+          "text": "Inadequate furniture comfort affecting ergonomics, potentially leading to physical discomfort"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Desk space doesn't address acoustic stress",
+        "b": "Lighting design is satisfactory; this is an acoustic problem",
+        "d": "Furniture comfort is unrelated to acoustic stress",
+        "correct": "Hard finishes create excessive reverberation and noise transmission, directly causing acoustic stress and communication difficulty",
+        "takeaway": "Hard finishes create excessive reverberation and noise transmission, directly causing acoustic stress and communication difficulty."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-05-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "c904724d-511f-4c50-aae7-203f7c71a9b7",
+      "article_id": "9c265d02-df61-46de-8c96-dd474041838e",
+      "topic_id": "d4ad1440-6d38-426a-8f9d-4f4e3cc1723b",
+      "text": "Light intensity measured in lux directly affects occupant behavior. Illumination below 300 lux typically:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Increases alertness and visual acuity, supporting detailed work"
+        },
+        {
+          "id": "b",
+          "text": "Produces excessive glare and eye strain"
+        },
+        {
+          "id": "c",
+          "text": "Triggers fatigue and poor task performance"
+        },
+        {
+          "id": "d",
+          "text": "Disrupts circadian rhythm without psychological effect"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "High intensity illumination (800+ lux) increases alertness",
+        "b": "Excessive intensity creates glare, not insufficient intensity",
+        "d": "While circadian disruption occurs at wrong times, insufficient intensity directly causes fatigue",
+        "correct": "Below 300 lux, insufficient illumination triggers fatigue and reduces task performance; occupants become drowsy",
+        "takeaway": "Below 300 lux, insufficient illumination triggers fatigue and reduces task performance; occupants become drowsy."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-05-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "e089059c-3efd-4f59-8886-f7cba5a46ec4",
+      "article_id": "9c265d02-df61-46de-8c96-dd474041838e",
+      "topic_id": "d4ad1440-6d38-426a-8f9d-4f4e3cc1723b",
+      "text": "Color temperature measured in Kelvin degrees affects psychological state. Warm light (2700–3000K) is most appropriate for:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Warehouse and industrial operations requiring neutral appearance"
+        },
+        {
+          "id": "b",
+          "text": "Retail environments emphasizing merchandise visibility"
+        },
+        {
+          "id": "c",
+          "text": "Residential and hospitality spaces where intimacy and calm are desired"
+        },
+        {
+          "id": "d",
+          "text": "Detailed technical work requiring maximum alertness and precision"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Neutral light (3500–4100K) supports balanced task performance",
+        "b": "Retailers often use cool to neutral light emphasizing visibility",
+        "d": "Cool light (5000–6500K) supports alertness for technical work",
+        "correct": "Warm light (2700–3000K) appears intimate and calming, appropriate for residential, healthcare, and hospitality contexts",
+        "takeaway": "Warm light (2700–3000K) appears intimate and calming, appropriate for residential, healthcare, and hospitality contexts."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-05-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "e9a26828-f552-4189-b055-8001cab17783",
+      "article_id": "9c265d02-df61-46de-8c96-dd474041838e",
+      "topic_id": "d4ad1440-6d38-426a-8f9d-4f4e3cc1723b",
+      "text": "In designing a hospital patient room, what color temperature would most directly support patient relaxation and rest?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5500K cool white light maximizing visibility and alertness"
+        },
+        {
+          "id": "b",
+          "text": "Constant illumination at 400 lux without circadian variation"
+        },
+        {
+          "id": "c",
+          "text": "3500K neutral light supporting balanced visibility"
+        },
+        {
+          "id": "d",
+          "text": "2700–3000K warm light supporting psychological calm and rest"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Cool light increases alertness, contradicting rest requirements",
+        "b": "Static illumination disrupts circadian rhythm and prevents recovery benefit",
+        "c": "Neutral light is balanced but lacks calming psychological effect",
+        "correct": "Warm light (2700–3000K) combined with variable daylighting supporting circadian alignment reduces patient anxiety and supports recovery",
+        "takeaway": "Warm light (2700–3000K) combined with variable daylighting supporting circadian alignment reduces patient anxiety and supports recovery."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-05-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "ca00daf2-55c7-4c99-b6d5-4f0faad6a0ac",
+      "article_id": "9c265d02-df61-46de-8c96-dd474041838e",
+      "topic_id": "d4ad1440-6d38-426a-8f9d-4f4e3cc1723b",
+      "text": "Reverberation time is the duration sound persists in space after its source ceases. Optimal reverberation time for offices and classrooms is:",
+      "options": [
+        {
+          "id": "a",
+          "text": "1.0–1.5 seconds"
+        },
+        {
+          "id": "b",
+          "text": "2.0–3.0 seconds"
+        },
+        {
+          "id": "c",
+          "text": "0.6–0.8 seconds"
+        },
+        {
+          "id": "d",
+          "text": "0.3–0.5 seconds"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "1.0–1.5 seconds produces excessive reverberation, reducing speech clarity",
+        "b": "2.0–3.0 seconds is appropriate for performance spaces, not offices",
+        "d": "0.3–0.5 seconds is too short; spaces feel acoustically dead",
+        "correct": "0.6–0.8 seconds supports speech intelligibility and occupant comfort in offices and classrooms",
+        "takeaway": "0.6–0.8 seconds supports speech intelligibility and occupant comfort in offices and classrooms."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-05-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "dc4494da-1053-4f2c-867a-9f15d6ad7290",
+      "article_id": "9c265d02-df61-46de-8c96-dd474041838e",
+      "topic_id": "d4ad1440-6d38-426a-8f9d-4f4e3cc1723b",
+      "text": "Sensory design in architecture is best defined as:",
+      "options": [
+        {
+          "id": "a",
+          "text": "The exclusive focus on visual aesthetics and building appearance, disregarding other sensory experiences"
+        },
+        {
+          "id": "b",
+          "text": "The use of decoration and ornamental finishes to enhance interior appearance, prioritizing visual impact over functionality"
+        },
+        {
+          "id": "c",
+          "text": "The practice of adding art installations to buildings for cultural purposes, which may enhance the aesthetic value but not necessarily the sensory experience"
+        },
+        {
+          "id": "d",
+          "text": "The deliberate coordination of light, sound, tactile qualities, and scent to support spatial function and occupant well-being"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Sensory design transcends visual focus to engage all senses",
+        "b": "Decoration differs from systemic sensory design integration",
+        "c": "Art installations are distinct from architectural sensory design",
+        "correct": "Sensory design integrates multiple sensory modalities—light, sound, touch, smell—into coherent spatial experiences supporting function and well-being",
+        "takeaway": "Sensory design integrates multiple sensory modalities—light, sound, touch, smell—into coherent spatial experiences supporting function and well-being."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-05-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "f3a6398e-50a3-44a4-a75e-3477620c71d7",
+      "article_id": "9c265d02-df61-46de-8c96-dd474041838e",
+      "topic_id": "d4ad1440-6d38-426a-8f9d-4f4e3cc1723b",
+      "text": "Why is circadian-aligned daylighting important for occupant health in modern buildings?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It improves visual clarity and reduces eye strain during work hours, enhancing productivity"
+        },
+        {
+          "id": "b",
+          "text": "It varies in intensity and color temperature throughout the day, supporting circadian rhythm and improving sleep quality, mood, and alertness"
+        },
+        {
+          "id": "c",
+          "text": "It eliminates the need for artificial lighting, reducing maintenance requirements and energy consumption"
+        },
+        {
+          "id": "d",
+          "text": "It reduces electricity costs through daylight harvesting, contributing to sustainability goals"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Visual clarity is important but secondary to circadian health effect",
+        "c": "Daylighting cannot entirely eliminate artificial lighting in modern buildings",
+        "d": "Cost savings are practical benefits but not primary health rationale",
+        "correct": "Circadian-aligned lighting supporting biological 24-hour cycles directly improves occupant health, sleep, and mood",
+        "takeaway": "Circadian-aligned lighting supporting biological 24-hour cycles directly improves occupant health, sleep, and mood."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-05-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "3839e767-649e-443b-b231-a5c85b4209be",
+      "article_id": "9c265d02-df61-46de-8c96-dd474041838e",
+      "topic_id": "d4ad1440-6d38-426a-8f9d-4f4e3cc1723b",
+      "text": "In designing a pediatric clinic in Manila, what integrated sensory strategy would most reduce child and parent anxiety?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Integrate warm color temperature (2700–3000K), strategic daylighting, soft material textures (wood, fabric), acoustic absorption reducing noise stress, and smooth transitions creating comfort"
+        },
+        {
+          "id": "b",
+          "text": "Maximize bright, cool-temperature lighting (5000K) to ensure visibility and cleanliness perception, which may not always be comforting"
+        },
+        {
+          "id": "c",
+          "text": "Install televisions and digital screens throughout to distract children from clinical environment, though this may not address underlying anxiety"
+        },
+        {
+          "id": "d",
+          "text": "Use exclusively hard, reflective finishes for hygienic cleaning and durability, potentially increasing stress due to noise and harshness"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Cool bright light increases clinical appearance and stress",
+        "c": "Distraction doesn't address underlying sensory stress",
+        "d": "Hard finishes increase acoustic stress and feel hostile",
+        "correct": "Comprehensive sensory design—warm light, daylighting, soft materials, acoustic control, smooth details—directly reduces anxiety in pediatric contexts",
+        "takeaway": "Comprehensive sensory design—warm light, daylighting, soft materials, acoustic control, smooth details—directly reduces anxiety in pediatric contexts."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-05-013",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "d719bc95-d918-479e-9de7-d47e9f362eac",
+      "article_id": "236408d0-58f8-4761-8b02-7201ec857e97",
+      "topic_id": "2eed0d47-6809-4010-b499-d73e6ddb6f45",
+      "text": "A detention basin is designed to temporarily store stormwater runoff during a 10-year rainfall event. What is the primary purpose of this design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To permanently eliminate stormwater runoff from the site, ensuring no downstream impact"
+        },
+        {
+          "id": "b",
+          "text": "To eliminate the need for downstream drainage infrastructure by capturing all runoff"
+        },
+        {
+          "id": "c",
+          "text": "To prevent any water from leaving the site, maintaining complete retention"
+        },
+        {
+          "id": "d",
+          "text": "To temporarily store water and release it slowly, reducing peak flows to downstream receiving waters and providing time for sediment settling"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Detention is temporary; it does not eliminate runoff permanently.",
+        "b": "Detention works in conjunction with downstream infrastructure, not as a replacement.",
+        "c": "Detention releases water gradually; it is not permanent storage.",
+        "d": "Detention basins reduce peak stormwater flow by temporarily storing water and releasing it at a controlled rate over time. This decreases flooding risk downstream and provides settling time for sediment removal, improving water quality.",
+        "correct": "Detention basins reduce peak stormwater flow by temporarily storing water and releasing it at a controlled rate over time. This decreases flooding risk downstream and provides settling time for sediment removal, improving water quality.",
+        "takeaway": "Detention = temporary storage that reduces peak flows and improves water quality through settling."
+      },
+      "explanation": null,
+      "code_citation": "Stormwater Management Principles",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-005-06-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:41.02078+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "22e3df46-cbdf-41bd-88a5-473d414ee7f3",
+      "article_id": "236408d0-58f8-4761-8b02-7201ec857e97",
+      "topic_id": "2eed0d47-6809-4010-b499-d73e6ddb6f45",
+      "text": "A rain garden (bioretention area) is incorporated into a commercial site design. What are the dual benefits of this green infrastructure component?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Provides landscaping aesthetics only; stormwater management still requires separate gray infrastructure, which must be designed to handle peak flow conditions"
+        },
+        {
+          "id": "b",
+          "text": "Increases property value without affecting stormwater management, as it does not contribute to runoff reduction or water quality improvement"
+        },
+        {
+          "id": "c",
+          "text": "Reduces stormwater quantity (infiltration) and improves water quality (filtration through soil and vegetation)"
+        },
+        {
+          "id": "d",
+          "text": "Replaces the need for all other drainage infrastructure on the site, eliminating the requirement for traditional stormwater systems"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Rain gardens ARE stormwater management; they supplement or replace gray infrastructure.",
+        "b": "Aesthetics are a co-benefit; primary function is stormwater management.",
+        "c": "Rain gardens are SuDS components that address both quantity (infiltration reduces runoff) and quality (vegetation and soil layers filter pollutants like sediment, oil, nutrients). They are multifunctional green infrastructure.",
+        "d": "Rain gardens are typically combined with other infrastructure for comprehensive site drainage.",
+        "correct": "Rain gardens are SuDS components that address both quantity (infiltration reduces runoff) and quality (vegetation and soil layers filter pollutants like sediment, oil, nutrients). They are multifunctional green infrastructure.",
+        "takeaway": "Green infrastructure (rain gardens, permeable pavement, swales) = quantity control + quality improvement + aesthetics."
+      },
+      "explanation": null,
+      "code_citation": "Sustainable Drainage Systems (SuDS) Benefits",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-005-06-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:41.223533+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "a141d674-2791-4af3-bcf5-514e3c96a92c",
+      "article_id": "236408d0-58f8-4761-8b02-7201ec857e97",
+      "topic_id": "2eed0d47-6809-4010-b499-d73e6ddb6f45",
+      "text": "A site has poor soil infiltration capacity (clay soil with low permeability). Stormwater retention through soil infiltration is not feasible. What is the most appropriate alternative drainage strategy for this constrained site?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Install permeable pavement, which will infiltrate despite poor soil conditions, which is not effective in clay soils"
+        },
+        {
+          "id": "b",
+          "text": "Design a retention pond with a constructed underdrain system (perforated pipe) to slowly release stored water, supplemented by evaporation and vegetation uptake"
+        },
+        {
+          "id": "c",
+          "text": "Use only gray infrastructure (concrete detention basins and pipes); green infrastructure is not viable, which overlooks potential hybrid solutions"
+        },
+        {
+          "id": "d",
+          "text": "Discharge all stormwater directly to municipal drainage; the site is not responsible for on-site management, which is not compliant with sustainable practices"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Permeable pavement still requires soil infiltration capacity; poor soil defeats the purpose.",
+        "b": "Poor soil infiltration limits traditional retention ponds. A retention pond with constructed underdrain (engineered slow release) can still function, supplemented by evapotranspiration (vegetation uptake and evaporation). This achieves on-site retention despite poor soil.",
+        "c": "Green infrastructure (rain gardens, vegetated swales) can work on clay soils if designed with drainage layers.",
+        "d": "On-site retention is preferred over burdening municipal systems; site design must accommodate drainage constraints.",
+        "correct": "Poor soil infiltration limits traditional retention ponds. A retention pond with constructed underdrain (engineered slow release) can still function, supplemented by evapotranspiration (vegetation uptake and evaporation). This achieves on-site retention despite poor soil.",
+        "takeaway": "Poor soil infiltration requires engineered solutions: underdrains, evapotranspiration, or hybrid detention+retention with slow release."
+      },
+      "explanation": null,
+      "code_citation": "Stormwater Design for Constrained Soil Conditions",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-005-06-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:41.223533+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "2d2c7e12-6f85-4834-bca7-f2582633b07f",
+      "article_id": "3d340472-3007-4a4e-8a25-9754506e17bc",
+      "topic_id": "1c738d68-b54e-4f72-826b-210948cc0cd2",
+      "text": "The Hong Kong and Shanghai Banking Corporation Building features eight massive steel suspension trusses hanging from two external towers, suspended floor plates unobstructed by columns. Why is this a High-Tech innovation, and how does structure generate architectural form?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The radical structural logic (suspension rather than vertical stacking) becomes primary aesthetic generator, creating comprehensible structural expression while enabling column-free floor plates; structure generates form and functional flexibility simultaneously"
+        },
+        {
+          "id": "b",
+          "text": "The design is postmodern because it creates dramatic visual effect, emphasizing form over function in a way that challenges traditional architectural norms"
+        },
+        {
+          "id": "c",
+          "text": "This is High-Tech because the building is made of steel and glass; materials alone constitute High-Tech, reflecting the industrial aesthetic of the era"
+        },
+        {
+          "id": "d",
+          "text": "The design is merely decorative; the trusses serve no structural purpose, acting only as visual elements without contributing to the building's stability"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "While visually dramatic, the design is driven by structural logic, not postmodern representational reference.",
+        "c": "High-Tech is more than material selection; it concerns structural expression as design methodology.",
+        "d": "The trusses are primary structural system; they are not decorative but essential to building behavior.",
+        "correct": "This precisely: structural logic becomes primary design generator. Suspension structure is not arbitrary aesthetic choice but results from optimization for column-free office floors and public plaza. The form is structurally honest—trusses are visible because they are actual load-bearing systems, and this visibility generates spectacular but functionally-justified architecture.",
+        "takeaway": "The form is structurally honest—trusses are visible because they are actual load-bearing systems, and this visibility generates spectacular but functionally-justified architecture."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-007-12-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.809916+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "d9f8126c-4c28-427d-94af-659a6c0c17c6",
+      "article_id": "3d340472-3007-4a4e-8a25-9754506e17bc",
+      "topic_id": "1c738d68-b54e-4f72-826b-210948cc0cd2",
+      "text": "Compare how structural form generates aesthetics in High-Tech architecture versus how aesthetic form is imposed in postmodernism.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Postmodernism generates form through performance data; High-Tech relies on historical allusion, often disregarding structural efficiency"
+        },
+        {
+          "id": "b",
+          "text": "Both High-Tech and postmodernism begin with aesthetic preferences and work backward to justify structural systems, though High-Tech often prioritizes technological innovation"
+        },
+        {
+          "id": "c",
+          "text": "High-Tech is more creative; postmodernism merely copies historical precedent, lacking originality in its approach"
+        },
+        {
+          "id": "d",
+          "text": "High-Tech allows structural optimization to generate visible form; postmodernism imposes preconceived formal geometry decorated with historical or ironic reference—inverse approaches to form-generation"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "architectural theory associates performance data with contemporary parametricism and sustainability, not High-Tech specifically, and certainly not postmodernism.",
+        "b": "High-Tech prioritizes structural/functional logic generating form; postmodernism prioritizes semantic content and historical meaning imposed on form.",
+        "c": "Both are creative but employ different creative logics; the distinction concerns methodology not creativity level.",
+        "correct": "These: High-Tech calculates structural optimization to generate form; postmodernism treats facades as representational surfaces and applies ornament/historical reference as applied decoration. These are opposite methodologies: form-generation vs. form-imposition.",
+        "takeaway": "These are opposite methodologies: form-generation vs. form-imposition."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-007-12-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.809916+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "cc6d30a1-c8d7-4347-9d35-360016acee91",
+      "article_id": "3d340472-3007-4a4e-8a25-9754506e17bc",
+      "topic_id": "1c738d68-b54e-4f72-826b-210948cc0cd2",
+      "text": "Compare High-Tech's relationship to energy efficiency and sustainability with assessment of the movement's contemporary performance.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Early High-Tech (1970s–80s) was energy-intensive with glass facades and mechanical complexity; contemporary High-Tech integrates efficiency through advanced controls and materials while maintaining structural/mechanical expression as aesthetic principle"
+        },
+        {
+          "id": "b",
+          "text": "High-Tech is inherently sustainable because it exposes and celebrates mechanical efficiency, which is a simplification of the movement's principles"
+        },
+        {
+          "id": "c",
+          "text": "Sustainability and High-Tech aesthetic are incompatible; contemporary practice must choose one or the other, which is a debated perspective in architectural discourse"
+        },
+        {
+          "id": "d",
+          "text": "High-Tech was always unsustainable; modern sustainability requires abandoning High-Tech principles entirely, which overlooks the evolution of the movement"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Tension; exposed mechanical systems don't guarantee efficiency; they must be high-performance systems.",
+        "c": "architectural theory suggests compatibility is possible; contemporary practice demonstrates both can coexist.",
+        "d": "architectural theory does not propose abandoning High-Tech; rather it shows how principles can evolve to include efficiency.",
+        "correct": "This evolution: 'High-Tech emerged during energy abundance; its glass facades and mechanical complexity are energy-intensive. However, contemporary High-Tech increasingly integrates sustainability.' The Lloyd's Building exemplifies this—High-Tech aesthetic retained, mechanical controls retrofitted to achieve 30% energy reduction.",
+        "takeaway": "However, contemporary High-Tech increasingly integrates sustainability.' The Lloyd's Building exemplifies this—High-Tech aesthetic retained, mechanical controls retrofitted to achieve 30% energy reduction."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-007-12-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.809916+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "20f61979-fa1d-465b-bbde-5c02cbb8cc95",
+      "article_id": "cf84317f-a9f3-4016-bdec-da86e92d76f8",
+      "topic_id": "9e67ee87-ffce-4d19-b9cb-60477154f09a",
+      "text": "What is the primary risk when using machine learning to optimize facade transparency for daylighting in buildings?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Machine learning cannot process daylighting data accurately; optimization results are unreliable compared to traditional design analysis, which remains the industry standard"
+        },
+        {
+          "id": "b",
+          "text": "ML may produce statistically averaged solutions based on training datasets; non-quantifiable qualities (cultural meaning, poetic resonance, wonder) beyond measurable metrics are ignored, risking global homogenization"
+        },
+        {
+          "id": "c",
+          "text": "Machine learning algorithms are computationally expensive, making ML-optimized designs less sustainable than simpler approaches, especially in resource-limited settings"
+        },
+        {
+          "id": "d",
+          "text": "ML tends to increase building complexity rather than simplify; facades become over-engineered and difficult to maintain, leading to higher long-term costs"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Daylighting simulation is well-established; architectural theory does not question ML's accuracy for this parameter but rather its selectivity (what it optimizes for).",
+        "c": "architectural theory mentions embodied carbon cost of training large AI models but does not emphasize computational expense as the primary risk to daylighting optimization.",
+        "d": "ML-optimized designs may be complex, but concern is not over-engineering but homogenization and quantification bias.",
+        "correct": "Homogenization as primary risk: if all designers use identical ML training datasets and optimization algorithms, global architecture may converge on statistically averaged solutions. Additionally, unmeasurable qualities (memorial significance, cultural meaning, poetic resonance) are systematically excluded from AI optimization.",
+        "takeaway": "Additionally, unmeasurable qualities (memorial significance, cultural meaning, poetic resonance) are systematically excluded from AI optimization."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-007-02-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.31954+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "78312a99-9b97-447d-87a7-887e7cddaf9f",
+      "article_id": "cf84317f-a9f3-4016-bdec-da86e92d76f8",
+      "topic_id": "9e67ee87-ffce-4d19-b9cb-60477154f09a",
+      "text": "How does Neri Oxman's material computation approach differ from traditional parametric design in terms of what is optimized?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Material computation is manual craft-based; traditional parametric design is entirely algorithmic and relies exclusively on digital optimization tools"
+        },
+        {
+          "id": "b",
+          "text": "Material computation creates ornamental visual patterns; traditional parametric design prioritizes functional efficiency over aesthetic considerations"
+        },
+        {
+          "id": "c",
+          "text": "Material computation applies only to facades; traditional parametric design addresses entire building systems including structure and mechanical"
+        },
+        {
+          "id": "d",
+          "text": "Material computation optimizes local material density according to structural stress distribution; traditional parametric design optimizes form geometry according to multiple linked parameters"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Both material computation and parametric design are heavily algorithmic and computational; neither is manual craft.",
+        "b": "Material computation is deeply functional (mimicking bone optimization), not ornamental. Traditional parametric design is also functionally motivated.",
+        "c": "Both approaches can address comprehensive building systems; the distinction concerns the level of optimization (material density vs. formal geometry).",
+        "correct": "Material computation dissolves structure/skin/ornament binaries by varying material density locally according to stress—a strategy distinct from but complementary to parametric form-finding. Both are parameter-responsive, but material computation operates at material/structural level while parametric design often operates at spatial/formal level.",
+        "takeaway": "Both are parameter-responsive, but material computation operates at material/structural level while parametric design often operates at spatial/formal level."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-007-02-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.31954+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "04b2c33c-4d96-4831-aab3-4a004f9b65bb",
+      "article_id": "cf84317f-a9f3-4016-bdec-da86e92d76f8",
+      "topic_id": "9e67ee87-ffce-4d19-b9cb-60477154f09a",
+      "text": "What does the contemporary discourse about AI-assisted design reveal about the deeper philosophical question of whether architectural excellence can be quantified and optimized?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Architectural excellence can be partially quantified (daylighting, thermal performance, structural efficiency) but unmeasurable qualities (wonder, memorial significance, cultural meaning, poetic resonance) resist algorithmic optimization, suggesting architectural value exceeds quantifiable metrics"
+        },
+        {
+          "id": "b",
+          "text": "The question of quantifiability is irrelevant to architectural practice; buildings either function well or they do not, regardless of their quantification status"
+        },
+        {
+          "id": "c",
+          "text": "Architectural excellence is entirely quantifiable; contemporary resistance to full AI design authority reflects conservative professional gatekeeping, not genuine epistemological limitation"
+        },
+        {
+          "id": "d",
+          "text": "Architectural excellence cannot be quantified at all; any attempt at algorithmic optimization necessarily fails and produces mediocre results"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "architectural theory engages this question as substantive; whether architecture can be quantified has real implications for design methodology and authority.",
+        "c": "architectural theory does not attribute resistance to professional gatekeeping; rather it identifies genuine epistemological limitation—unmeasurable qualities are not measurable.",
+        "d": "architectural theory demonstrates that quantifiable metrics are usefully optimized; the issue is incompleteness, not total failure.",
+        "correct": "AI systems 'optimize for measurable parameters. How do they value unmeasurable qualities—wonder, memorial significance, cultural meaning, poetic resonance?' This acknowledges that quantifiable optimization is powerful for measurable domains while genuinely unmeasurable values remain outside algorithmic authority.",
+        "takeaway": "How do they value unmeasurable qualities—wonder, memorial significance, cultural meaning, poetic resonance?' This acknowledges that quantifiable optimization is powerful for measurable domains while genuinely unmeasurable values remain outside algorithmic authority."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "INT"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-007-02-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.31954+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "d50e1ad6-6b06-4a71-8a31-9990614e5da4",
+      "article_id": "cf84317f-a9f3-4016-bdec-da86e92d76f8",
+      "topic_id": "9e67ee87-ffce-4d19-b9cb-60477154f09a",
+      "text": "A facade's perforation density increases on south-facing elevations and decreases on north-facing surfaces, with the perforation pattern data-linked to solar intensity calculations. What design methodology best describes this approach, and what does it demonstrate about ornament in contemporary practice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Postmodern ornamentation—the facade pattern communicates historical or cultural meaning through symbolic reference, often without direct functional application"
+        },
+        {
+          "id": "b",
+          "text": "High-Tech structural expression—the perforations reveal and celebrate the building's mechanical systems, emphasizing the integration of technology and design"
+        },
+        {
+          "id": "c",
+          "text": "Biomimetic pattern generation—the perforation density mimics natural organism distribution patterns without functional justification, serving primarily an aesthetic purpose"
+        },
+        {
+          "id": "d",
+          "text": "Parametric design with performance visualization—ornament returns as performance data rendered in material form, not as applied decoration"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Postmodern ornament communicates semantic meaning through historical or ironic reference; this approach is functionally justified (thermal performance), not semantically motivated.",
+        "b": "High-Tech exposes structural and mechanical systems; perforation patterns serving thermal performance are not mechanical systems per se.",
+        "c": "While the pattern may resemble natural forms, the justification is functional (solar modulation) not biomimetic (organism imitation).",
+        "correct": "The perforation pattern is algorithmically linked to solar data, making it a performance visualization rather than applied ornament. This exemplifies Parametricism's theoretical claim: ornament returns as optimization made visible, not as decoration divorced from function.",
+        "takeaway": "This exemplifies Parametricism's theoretical claim: ornament returns as optimization made visible, not as decoration divorced from function."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "SYS"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-007-02-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.31954+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "ffa330bb-2b32-444f-abd2-ac1ddedbaf62",
+      "article_id": "426d0246-88a3-4d38-a17e-6cec4dbe6f69",
+      "topic_id": "bf8bc35a-dcaf-419d-af9f-7a2677153689",
+      "text": "Clustered spatial organization is characterized by:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Secondary spaces arranged around a dominant central space"
+        },
+        {
+          "id": "b",
+          "text": "Spaces grouped by functional affinity or proximity without strict geometric hierarchy"
+        },
+        {
+          "id": "c",
+          "text": "Spaces extending in sequence along a primary spine"
+        },
+        {
+          "id": "d",
+          "text": "Spaces extending outward from a central organizing point"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "That is centralized spatial organization.",
+        "c": "That is linear spatial organization.",
+        "d": "That is radial spatial organization.",
+        "correct": "Clustered spatial organization groups spaces by functional compatibility and proximity rather than geometric system. Sleeping areas cluster together, living areas cluster separately. Flexibility is high—new clusters can be added without disrupting existing organization.",
+        "takeaway": "Flexibility is high—new clusters can be added without disrupting existing organization."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-06-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.884733+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "846242b4-2c67-46d6-8576-2aa55601674c",
+      "article_id": "426d0246-88a3-4d38-a17e-6cec4dbe6f69",
+      "topic_id": "bf8bc35a-dcaf-419d-af9f-7a2677153689",
+      "text": "Grid spatial organization arranges spaces by:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Extending spaces in sequence along a spine, typically used in linear building layouts"
+        },
+        {
+          "id": "b",
+          "text": "Arranging secondary spaces around a dominant central space, often seen in radial or concentric designs"
+        },
+        {
+          "id": "c",
+          "text": "Dimensioning and arranging spaces within a regular modular grid pattern where each cell is a spatial module"
+        },
+        {
+          "id": "d",
+          "text": "Grouping spaces by functional similarity, which can lead to efficient zoning in complex programs"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "That is linear spatial organization.",
+        "b": "That is centralized spatial organization.",
+        "d": "That is clustered spatial organization.",
+        "correct": "Grid spatial organization uses a repeating modular grid (orthogonal, diagonal, or hexagonal) where the module becomes the fundamental spatial unit. Japanese tatami-based planning exemplifies grid organization: the mat module regulates all room dimensions.",
+        "takeaway": "Japanese tatami-based planning exemplifies grid organization: the mat module regulates all room dimensions."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-06-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.884733+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "7ad5cc26-a6a5-4c91-966b-5a6cd8d48cfc",
+      "article_id": "426d0246-88a3-4d38-a17e-6cec4dbe6f69",
+      "topic_id": "bf8bc35a-dcaf-419d-af9f-7a2677153689",
+      "text": "A residential complex where sleeping areas, living areas, and service areas group separately, related by proximity rather than by a central organizing element, demonstrates which spatial organization?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Radial spatial organization"
+        },
+        {
+          "id": "b",
+          "text": "Linear spatial organization"
+        },
+        {
+          "id": "c",
+          "text": "Centralized spatial organization"
+        },
+        {
+          "id": "d",
+          "text": "Clustered spatial organization"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Radial would extend outward from a central point.",
+        "b": "Linear would organize along a spine.",
+        "c": "Centralized would have areas surrounding a dominant center.",
+        "correct": "Functional grouping without central or linear hierarchy exemplifies clustered spatial organization. Each cluster (sleeping, living, service) is organized by function and proximity. The arrangement is flexible; new clusters can be added.",
+        "takeaway": "The arrangement is flexible; new clusters can be added."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-06-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.884733+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "cd43f2a9-4bf1-41b2-be68-2bfabf4519a9",
+      "article_id": "426d0246-88a3-4d38-a17e-6cec4dbe6f69",
+      "topic_id": "bf8bc35a-dcaf-419d-af9f-7a2677153689",
+      "text": "How do centralized and radial spatial organization differ in their spatial character?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Centralized is formal; radial is informal, often lacking a clear hierarchy in spatial arrangement"
+        },
+        {
+          "id": "b",
+          "text": "Centralized uses a spine; radial uses a central point, which serves as the focal node for spatial distribution"
+        },
+        {
+          "id": "c",
+          "text": "Centralized clusters secondary spaces around a center without radiating arms; radial has directional arms extending outward from hub"
+        },
+        {
+          "id": "d",
+          "text": "Centralized accommodates growth; radial does not, as it is typically constrained by its initial design parameters"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Both can be formal or informal.",
+        "b": "Both employ central organizing points differently.",
+        "d": "Both can accommodate growth depending on design.",
+        "correct": "Critical distinction: centralized = secondary spaces surround a center (compact, convergent, inward-focusing); radial = spaces extend outward from center in radiating arms (expansive, directional reach). Both have centers, opposite spatial characters.",
+        "takeaway": "Both have centers, opposite spatial characters."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-06-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.884733+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "d7d44e91-dc24-47cf-9021-43fdce171f67",
+      "article_id": "426d0246-88a3-4d38-a17e-6cec4dbe6f69",
+      "topic_id": "bf8bc35a-dcaf-419d-af9f-7a2677153689",
+      "text": "A building plan shows a central entry hall with medical offices extending in one direction, clinical spaces extending in another direction, and administrative areas extending in a third direction. This demonstrates:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Radial spatial organization"
+        },
+        {
+          "id": "b",
+          "text": "Centralized spatial organization"
+        },
+        {
+          "id": "c",
+          "text": "Linear spatial organization"
+        },
+        {
+          "id": "d",
+          "text": "Clustered spatial organization"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Centralized would have departments surrounding the center, not extending outward.",
+        "c": "Linear would have a single spine with departments along it.",
+        "d": "Clustered would have departments grouped without clear radiating logic.",
+        "correct": "Extending arms (medical, clinical, administrative) from a central hub exemplifies radial spatial organization. The central entry is the organizing point; departments radiate outward in different directions.",
+        "takeaway": "The central entry is the organizing point; departments radiate outward in different directions."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-06-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.884733+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "a86ed7ee-94ba-459e-a510-d3abd4986a02",
+      "article_id": "426d0246-88a3-4d38-a17e-6cec4dbe6f69",
+      "topic_id": "bf8bc35a-dcaf-419d-af9f-7a2677153689",
+      "text": "How do spatial organization types relate to the organizing principles of design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They are identical concepts with different terminology, often used interchangeably in design discussions"
+        },
+        {
+          "id": "b",
+          "text": "Spatial organizations apply only to interiors; organizing principles apply only to building form, creating a clear distinction between the two"
+        },
+        {
+          "id": "c",
+          "text": "Organizing principles are large-scale composition systems; spatial organizations describe how specific spaces connect and flow within those systems"
+        },
+        {
+          "id": "d",
+          "text": "They are unrelated concepts from different design fields, each with its own distinct application"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "They are related but distinct.",
+        "b": "Both apply to buildings at multiple scales.",
+        "d": "Both are fundamental spatial design concepts.",
+        "correct": "While closely related, these are distinct and both tested: organizing principles describe large-scale composition and growth logic (how forms arrange); spatial organization describes how spaces connect and create user experience (procession, hierarchy, clustering). A building might use centralized spatial organization within a linear organizing principle, or clustered spaces within a grid composition.",
+        "takeaway": "A building might use centralized spatial organization within a linear organizing principle, or clustered spaces within a grid composition."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "SYS"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-06-011",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.884733+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "d2435813-0af3-4fd6-950f-6103d6e980a6",
+      "article_id": "df4b2a65-1d08-41b6-83c8-944df4d35938",
+      "topic_id": "290485b9-ea52-4a0d-b314-beb3b618fe6a",
+      "text": "What should the architect do if recommending a higher-priced proposal over a lower bidder?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Simply accept the lowest bid without explanation, as it is the most cost-effective option"
+        },
+        {
+          "id": "b",
+          "text": "Justify the recommendation clearly based on established evaluation criteria"
+        },
+        {
+          "id": "c",
+          "text": "Keep the justification confidential from the owner, to avoid potential conflicts"
+        },
+        {
+          "id": "d",
+          "text": "Revise the evaluation criteria to support the higher bid, ensuring it aligns with project goals"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Assumes lowest bid must always be selected; evaluation criteria may justify higher-priced bids.",
+        "c": "Wrongly conceals the rationale; Owner must understand the justification for non-lowest-bid selections.",
+        "d": "Fundamentally undermines integrity; Architect must apply fixed pre-bid criteria, not revise them post-bid.",
+        "correct": "When selecting a proposal other than the lowest bid, the architect must provide clear justification based on the pre-established evaluation framework.",
+        "takeaway": "Non-lowest bid recommendations require clear written justification based on pre-established criteria."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-009-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.526003+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "9124c3a1-056f-41c9-b9ba-6a437ce67af1",
+      "article_id": "df4b2a65-1d08-41b6-83c8-944df4d35938",
+      "topic_id": "290485b9-ea52-4a0d-b314-beb3b618fe6a",
+      "text": "Under what circumstances may the architect recommend a proposal other than the lowest bid without violating professional standards?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The architect never recommends anything but the lowest bid, as it is the most cost-effective option"
+        },
+        {
+          "id": "b",
+          "text": "When the lowest bid fails to meet technical requirements or when superior qualifications or methodology justify the higher price based on pre-established evaluation criteria"
+        },
+        {
+          "id": "c",
+          "text": "When the architect personally prefers the higher-priced bidder's approach, which is subjective and not typically justified"
+        },
+        {
+          "id": "d",
+          "text": "Only if the owner initially requested the higher price, which is rare and usually not aligned with standard practices"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrectly assumes lowest bid requirement; evaluation criteria may validly prioritize quality, experience, or capability.",
+        "c": "Uses personal preference, not objective criteria; recommendations must be justified by pre-established evaluation framework.",
+        "d": "Requires owner pre-approval; Architect autonomously makes recommendation based on established evaluation criteria.",
+        "correct": "The architect may recommend a higher-priced bid if the evaluation criteria—established before bid opening—support selection based on technical merit, qualifications, or methodology.",
+        "takeaway": "Higher-priced bids may be recommended when pre-established criteria support selection on technical merit or qualifications."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-009-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.526003+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "1689a555-7d79-4bb4-8179-6db9174c0a3a",
+      "article_id": "df4b2a65-1d08-41b6-83c8-944df4d35938",
+      "topic_id": "290485b9-ea52-4a0d-b314-beb3b618fe6a",
+      "text": "What should the architect document regarding the bid evaluation process?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only the final recommendation, excluding any intermediate evaluations or discussions"
+        },
+        {
+          "id": "b",
+          "text": "All proposals, evaluation methodology, scoring analysis, and justification for the recommendation"
+        },
+        {
+          "id": "c",
+          "text": "Only the prices of all bids, without any additional context or analysis"
+        },
+        {
+          "id": "d",
+          "text": "Information about bidders who submitted proposals but were not recommended, including reasons for their exclusion"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Omits critical supporting documentation; methodology and analysis justify the recommendation.",
+        "c": "Captures only financial data; documentation must include technical scores, qualifications, and compliance findings.",
+        "d": "Focuses only on rejected bidders; documentation must include all submissions and scoring data.",
+        "correct": "Complete documentation of evaluation records demonstrates compliance with fair procurement practices and protects against bid protests.",
+        "takeaway": "Comprehensive documentation of all proposals, methodology, scoring, and justification protects against protest."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-009-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.526003+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "7b002d52-66c5-45c4-ac21-e4777480de7e",
+      "article_id": "08829ae6-7e66-41ed-a5f9-40135b4dfc3e",
+      "topic_id": "74001f03-4011-410e-8f88-f9df20988331",
+      "text": "Regional variations in vernacular architecture are primarily determined by which factor?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The aesthetic preferences of regional artists and designers, which influence the visual style and cultural expression"
+        },
+        {
+          "id": "b",
+          "text": "Climate, topography, available materials, and locally available resources adapted to specific environmental conditions"
+        },
+        {
+          "id": "c",
+          "text": "International architectural style trends prevalent during the period of construction, affecting design choices"
+        },
+        {
+          "id": "d",
+          "text": "Governmental building codes and regulations, which dictate structural and safety standards"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Vernacular emerges organically, not from artistic style decisions.",
+        "c": "Vernacular predates and operates independently of international trends.",
+        "d": "Codes formalize what tradition already established; they do not originate the traditions.",
+        "correct": "Vernacular architecture responds rationally to local environmental conditions: tropical climates develop different strategies than arid regions; coastal areas respond to salt and storms differently than inland areas. Materials and climate shape building traditions.",
+        "takeaway": "Materials and climate shape building traditions."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-001-08-012",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.120988+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "e19f3c66-414c-425b-91df-cf12050ea285",
+      "article_id": "08829ae6-7e66-41ed-a5f9-40135b4dfc3e",
+      "topic_id": "74001f03-4011-410e-8f88-f9df20988331",
+      "text": "Vernacular architecture is best defined as which of the following?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Simple, primitive building methods used before modern construction technology was available, often relying on local materials"
+        },
+        {
+          "id": "b",
+          "text": "Historic buildings preserved as museum pieces or cultural heritage sites, showcasing traditional architectural styles"
+        },
+        {
+          "id": "c",
+          "text": "Buildings designed and constructed by inhabitants using local materials and traditional techniques, embodying environmental knowledge and cultural values"
+        },
+        {
+          "id": "d",
+          "text": "Architecture designed by formally trained architects for wealthy clients in urban settings, emphasizing luxury and modernity"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Vernacular is not primitive; it embodies sophisticated environmental knowledge and proven structural systems.",
+        "b": "Preservation is not the defining characteristic; vernacular is living tradition.",
+        "d": "This describes professional contemporary architecture, not vernacular.",
+        "correct": "Vernacular architecture emerges organically from within communities over generations, using local materials and techniques adapted to specific environmental conditions. It is not formally designed but evolved through community knowledge.",
+        "takeaway": "It is not formally designed but evolved through community knowledge."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-001-08-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.120988+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "297be2e5-be58-4546-8119-8e6f2cb13f3d",
+      "article_id": "08829ae6-7e66-41ed-a5f9-40135b4dfc3e",
+      "topic_id": "74001f03-4011-410e-8f88-f9df20988331",
+      "text": "Why do vernacular buildings in tropical climates typically feature broad eaves and elevated floors?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They are rational responses to environmental conditions: eaves protect against tropical rain and intense sun; elevation allows air circulation beneath and protects against flooding"
+        },
+        {
+          "id": "b",
+          "text": "These are purely aesthetic choices reflecting cultural preferences for certain visual proportions, without functional considerations"
+        },
+        {
+          "id": "c",
+          "text": "They are ornamental features added after the basic structure is designed for other purposes, often to enhance visual appeal"
+        },
+        {
+          "id": "d",
+          "text": "They are required by building codes specific to tropical regions, which mandate such features for safety and environmental reasons"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "While aesthetic, these are functionally motivated by climate, not arbitrary preferences.",
+        "c": "They are integrated into the fundamental design, not applied ornaments.",
+        "d": "Building codes codify what tradition already established through practice.",
+        "correct": "These features are intelligent, proven responses to specific climate conditions. They are not arbitrary—they emerge from generations of building experience in tropical environments. This demonstrates how vernacular architecture embodies environmental knowledge.",
+        "takeaway": "This demonstrates how vernacular architecture embodies environmental knowledge."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-001-08-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.120988+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "303aedd5-9795-4dd4-9a24-b617a3caef88",
+      "article_id": "08829ae6-7e66-41ed-a5f9-40135b4dfc3e",
+      "topic_id": "74001f03-4011-410e-8f88-f9df20988331",
+      "text": "A building employing regional architectural forms but designed by an outside architect with no engagement with local community knowledge would best be characterized as which of the following?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Critical regionalism, because it applies local architectural vocabulary, albeit superficially without community input"
+        },
+        {
+          "id": "b",
+          "text": "Vernacular architecture, because it uses traditional regional forms, though it lacks authentic cultural integration"
+        },
+        {
+          "id": "c",
+          "text": "Architectural appropriation, because it uses regional imagery without deep community knowledge or engagement"
+        },
+        {
+          "id": "d",
+          "text": "Contemporary international architecture, because the designer is not from the region and the design lacks local contextual relevance"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Critical regionalism requires genuine engagement with local values and knowledge, which this scenario lacks.",
+        "b": "Vernacular requires organic emergence from community; external design disqualifies it.",
+        "d": "The architect's origin is less significant than the depth of engagement with local context.",
+        "correct": "Vernacular architecture emerges from within communities over time. A building by an outside architect using regional forms without genuine engagement with local knowledge and values is appropriation—borrowing cultural elements without understanding or respect.",
+        "takeaway": "A building by an outside architect using regional forms without genuine engagement with local knowledge and values is appropriation—borrowing cultural elements without understanding or respect."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-001-08-011",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.120988+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "49e3582e-a832-4317-851b-793cfad16f7f",
+      "article_id": "08829ae6-7e66-41ed-a5f9-40135b4dfc3e",
+      "topic_id": "74001f03-4011-410e-8f88-f9df20988331",
+      "text": "How does engaging with local community values differ from merely using regional materials or forms in architecture?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Community engagement means truly understanding how local people organize themselves spatially, what values they hold, and what forms carry meaning—not just applying regional imagery without deep knowledge"
+        },
+        {
+          "id": "b",
+          "text": "There is no meaningful difference; using regional materials automatically expresses community values, regardless of the specific cultural context or historical background"
+        },
+        {
+          "id": "c",
+          "text": "Community engagement is important only for residential projects, not public buildings, as public buildings are governed by universal design principles that override local considerations"
+        },
+        {
+          "id": "d",
+          "text": "Community engagement is optional; using local materials is sufficient to express cultural identity, even if the materials are applied in a way that does not reflect local traditions or practices"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Materials alone do not guarantee cultural expression; their selection must reflect genuine understanding.",
+        "c": "Community engagement applies to all building types; public spaces especially require understanding community needs and values.",
+        "d": "Material selection without community understanding can perpetuate stereotypes rather than express authentic identity.",
+        "correct": "Superficial regional reference (decoration with local imagery) differs profoundly from genuine engagement (understanding spatial organization, cultural values, meaningful forms). True cultural expression requires depth of knowledge and respect for community.",
+        "takeaway": "True cultural expression requires depth of knowledge and respect for community."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-001-08-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.120988+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    }
+  ]
+}
