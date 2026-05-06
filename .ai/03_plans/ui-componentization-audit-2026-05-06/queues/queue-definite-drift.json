@@ -50,31 +50,6 @@
     "validation_result": null
   },
   {
-    "id": "UIA-ADMIN-0001",
-    "file": "src/components/admin/AssetList.tsx",
-    "line": null,
-    "surface": "admin",
-    "component": "AssetList",
-    "current_pattern": "raw input/select filters",
-    "classification": "definite_drift",
-    "risk": "low",
-    "proposed_target": "Input + Select",
-    "user_impact": "Reduce UI drift and improve consistency/accessibility where safe.",
-    "implementation_notes": "Implement only from queue in small batches after reading current file and preserving behavior.",
-    "storybook_required": true,
-    "storybook_story_path": null,
-    "tests_required": [
-      "bun run type-check",
-      "bun run lint"
-    ],
-    "visual_routes": [
-      "/admin/assets"
-    ],
-    "reviewer_notes": null,
-    "final_status": "open",
-    "validation_result": null
-  },
-  {
     "id": "UIA-CEO-0005",
     "file": "src/components/ceo/RoleAssignmentModal.tsx",
     "line": null,

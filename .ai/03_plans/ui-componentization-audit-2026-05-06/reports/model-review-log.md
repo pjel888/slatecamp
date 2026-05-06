@@ -77,3 +77,18 @@ Reviewer: independent Hermes subagent, separate context/model from builder.
 - Recommendations addressed before commit:
   - Restored pre-existing `hover:shadow-sm` interaction styling.
   - Replaced nondeterministic Storybook `new Date()` fixture with fixed timestamp.
+
+## Batch 6: Admin AssetList Input/Select migration
+
+Date/time: 2026-05-06T18:59:10
+Queue ID: UIA-ADMIN-0001
+Reviewer: independent Hermes subagent, separate context/model from builder.
+
+### Reviewer result
+
+- Blockers: none.
+- Recommendations addressed before commit:
+  - Added `aria-label` to search input and both Select triggers.
+  - Cleaned `SelectContent` indentation.
+- Recommendation deferred:
+  - Empty-string Select all-items remain because this pattern already exists in the repo and validated correctly in Storybook/Playwright.

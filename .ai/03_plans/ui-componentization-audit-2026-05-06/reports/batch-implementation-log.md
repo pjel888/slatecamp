@@ -124,3 +124,27 @@ Queue ID: UIA-DSS-0011
 ### Risk
 
 Low. The component keeps the same external props and behavior while routing card shell/status badge through existing primitives.
+
+## Batch 6: Admin AssetList Input/Select migration
+
+Date/time: 2026-05-06T18:59:10
+Queue ID: UIA-ADMIN-0001
+
+### What changed
+
+- Migrated AssetList raw search `<input>` to shared `Input`.
+- Migrated raw status/system `<select>` controls to shared `Select` primitives.
+- Added accessible labels for the search and filter controls.
+- Added `src/components/admin/AssetList.stories.tsx` with default and empty states.
+
+### Validation
+
+- `bun run lint`: passed with same 10 baseline warnings.
+- `bun run check:storybook`: passed.
+- `NODE_OPTIONS=--max-old-space-size=8192 bun run build-storybook`: passed.
+- `bun run type-check`: known baseline failure remains from missing `openai` module.
+- Playwright screenshot inspection covered default and search-filtered states.
+
+### Risk
+
+Low. Search filtering and visual layout were verified. Select empty-string all-options follow existing repo usage.

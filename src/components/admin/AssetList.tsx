@@ -6,6 +6,14 @@ import { Cube, Plus, MagnifyingGlass, PencilSimple } from '@phosphor-icons/react
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 import { normalizeEditorStatus } from '@/lib/admin/editor-workflow'
+import { Input } from '@/components/ui/input'
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@/components/ui/select'
 
 interface Asset {
   id: string
@@ -60,35 +68,44 @@ export function AssetList({ initialAssets }: AssetListProps) {
       <div className="flex gap-4">
         <div className="flex-1 relative">
           <SCIcon icon={MagnifyingGlass} size="sm" className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" />
-          <input
+          <Input
             type="text"
+            aria-label="Search assets"
             placeholder="Search assets..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full pl-10 pr-4 py-2 rounded-md border border-input bg-background"
+            className="pl-10"
           />
         </div>
-        <select
+        <Select
           value={statusFilter ?? ''}
-          onChange={(e) => setStatusFilter(e.target.value ? e.target.value : null)}
-          className="px-3 py-2 rounded-md border border-input bg-background"
+          onValueChange={(value) => setStatusFilter(value ? value : null)}
         >
-          <option value="">All Statuses</option>
-          {Object.entries(statusLabels).map(([value, label]) => (
-            <option key={value} value={value}>{label}</option>
-          ))}
-        </select>
-        <select
+          <SelectTrigger className="w-[180px] bg-background" aria-label="Filter assets by status">
+            <SelectValue placeholder="All Statuses" />
+          </SelectTrigger>
+          <SelectContent>
+            <SelectItem value="">All Statuses</SelectItem>
+            {Object.entries(statusLabels).map(([value, label]) => (
+              <SelectItem key={value} value={value}>{label}</SelectItem>
+            ))}
+          </SelectContent>
+        </Select>
+        <Select
           value={systemFilter ?? ''}
-          onChange={(e) => setSystemFilter(e.target.value ? e.target.value : null)}
-          className="px-3 py-2 rounded-md border border-input bg-background"
+          onValueChange={(value) => setSystemFilter(value ? value : null)}
         >
-          <option value="">All Systems</option>
-          <option value="structural">Structural</option>
-          <option value="mep">MEP</option>
-          <option value="architectural">Architectural</option>
-          <option value="civil">Civil</option>
-        </select>
+          <SelectTrigger className="w-[170px] bg-background" aria-label="Filter assets by system">
+            <SelectValue placeholder="All Systems" />
+          </SelectTrigger>
+          <SelectContent>
+            <SelectItem value="">All Systems</SelectItem>
+            <SelectItem value="structural">Structural</SelectItem>
+            <SelectItem value="mep">MEP</SelectItem>
+            <SelectItem value="architectural">Architectural</SelectItem>
+            <SelectItem value="civil">Civil</SelectItem>
+          </SelectContent>
+        </Select>
         <a
           href="#asset-uploader"
           className="flex items-center gap-2 px-4 py-2 rounded-md bg-primary text-primary-foreground hover:bg-primary/90"

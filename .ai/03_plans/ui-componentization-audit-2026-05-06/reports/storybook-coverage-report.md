@@ -92,3 +92,19 @@ Validation:
 
 - `bun run check:storybook`: passed.
 - `NODE_OPTIONS=--max-old-space-size=8192 bun run build-storybook`: passed.
+
+## Batch 6
+
+Added:
+
+- `src/components/admin/AssetList.stories.tsx`
+
+Covered states:
+
+- Default asset grid
+- Empty asset grid
+
+Validation:
+
+- `bun run check:storybook`: passed.
+- `NODE_OPTIONS=--max-old-space-size=8192 bun run build-storybook`: passed.

@@ -98,3 +98,22 @@ Date/time: 2026-05-06T18:53:22
 - Default mode card remains visually consistent after shared Card migration.
 - Active-session status badge and actions render correctly after shared Badge migration.
 - No obvious visual regression.
+
+## Batch 6: Admin AssetList Input/Select migration
+
+Date/time: 2026-05-06T18:59:10
+
+### Story inspected
+
+- Storybook iframe: `/iframe.html?id=admin-assetlist--default&viewMode=story`
+
+### Evidence
+
+- `.ai/03_plans/ui-componentization-audit-2026-05-06/visual/batch-6-asset-list/default.png`
+- `.ai/03_plans/ui-componentization-audit-2026-05-06/visual/batch-6-asset-list/search-filtered.png`
+
+### Result
+
+- Shared Input and Select controls render correctly.
+- Search filtering leaves only the MEP asset when `MEP` is entered.
+- No obvious visual regression.
