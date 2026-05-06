@@ -1,8 +1,5 @@
-# Current Task Handoff — Staging Validation Autopilot
+# Current Task Handoff — Supabase Blocker Resolution
 
-Status: local-only staging validation completed; hosted staging unavailable/not safely selectable. Production remains blocked.
+Status: all safe blocker-resolution paths attempted. Branch creation failed because Supabase Branching requires Pro plan. Separate staging project not present. Docker/local Supabase unavailable. No DB URL env present. Local artifact simulation passed. Production remains blocked by hosted staging requirement and migration lineage/backup requirements.
 
-See final report:
-- `.ai/03_plans/content-editorial-pipeline-2026-05-05/supabase-rebaseline-autopilot/staging-validation/staging-validation-final-report.md`
-
-Next safe action: provision or select a verified non-production Supabase preview/staging project, then run the generated schema/payload apply and readback there. Do not mutate production.
+Resume point: `.ai/03_plans/content-editorial-pipeline-2026-05-05/supabase-blocker-resolution-autopilot/final-blocker-resolution-report.md`.

@@ -1,0 +1,10 @@
+{
+  "path": "local_restored_production_clone",
+  "success": false,
+  "target_kind": "local_artifact_simulation",
+  "production_db_url_available": false,
+  "production_dump_created": false,
+  "production_mutation_attempted": false,
+  "safe_for_admin_audit_apply": true,
+  "reason": "Docker/local Supabase unavailable and no production DB URL env present; using local artifact simulation"
+}

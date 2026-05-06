@@ -1,0 +1,19 @@
+$ bunx supabase --experimental branches list --project-ref hrpdwqurngnyajuhbkdg -o json
+null
+A new version of Supabase CLI is available: v2.98.1 (currently installed v2.98.0)
+We recommend updating regularly for new features and bug fixes: https://supabase.com/docs/guides/cli/getting-started#updating-the-supabase-cli
+EXIT=0
+
+$ bunx supabase --experimental branches create admin-audit-staging-20260506073643 --persistent --project-ref hrpdwqurngnyajuhbkdg -o json --yes
+unexpected create branch status 402: {"message":"Branching is supported only on the Pro plan or above"}
+Your organization does not have access to this feature. Upgrade your plan: https://supabase.com/dashboard/org/unfair-black-sb5unhb/billing
+EXIT=1
+
+$ bunx supabase --experimental branches list --project-ref hrpdwqurngnyajuhbkdg
+ID                   | NAME | DEFAULT | GIT BRANCH | WITH DATA | STATUS             | CREATED AT (UTC)    | UPDATED AT (UTC)
+  ----------------------|------|---------|------------|-----------|--------------------|---------------------|---------------------
+   hrpdwqurngnyajuhbkdg | main | true    |            | false     | FUNCTIONS_DEPLOYED | 2026-05-06 07:36:43 | 2026-05-06 07:36:43
+
+A new version of Supabase CLI is available: v2.98.1 (currently installed v2.98.0)
+We recommend updating regularly for new features and bug fixes: https://supabase.com/docs/guides/cli/getting-started#updating-the-supabase-cli
+EXIT=0

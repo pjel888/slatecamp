@@ -275,3 +275,9 @@ No production mutation, migration repair, live admin sync, article mutation, que
 ## Staging Validation Autopilot Continuation
 
 Non-production target discovery did not prove a hosted staging/preview target, so validation continued with local-only schema/payload/readback/rollback simulation. Fixture readiness passed. Production remains blocked until hosted staging validation, backup, rollback proof, and migration lineage strategy are complete.
+
+---
+
+## Supabase Blocker Resolution Autopilot
+
+All safe paths were attempted. Supabase Branching failed with plan limitation, no separate staging project was listed, Docker/local Supabase was unavailable, and no DB URL env was present. Local artifact simulation passed for admin audit schema/payload/readback/rollback. Production remains blocked until hosted non-production validation, production backup, and migration-lineage strategy are complete.

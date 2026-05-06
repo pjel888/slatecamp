@@ -1,0 +1,67 @@
+{
+  "git-status-short": {
+    "command": "git status --short",
+    "exit_code": 0,
+    "available": true
+  },
+  "git-branch": {
+    "command": "git branch --show-current",
+    "exit_code": 0,
+    "available": true
+  },
+  "git-log": {
+    "command": "git log --oneline -10",
+    "exit_code": 0,
+    "available": true
+  },
+  "supabase-version": {
+    "command": "bunx supabase --version",
+    "exit_code": 0,
+    "available": true
+  },
+  "supabase-status": {
+    "command": "bunx supabase status",
+    "exit_code": 1,
+    "available": false
+  },
+  "supabase-projects-list": {
+    "command": "bunx supabase projects list",
+    "exit_code": 0,
+    "available": true
+  },
+  "migration-list-linked": {
+    "command": "bunx supabase migration list --linked",
+    "exit_code": 0,
+    "available": true
+  },
+  "migration-list-local": {
+    "command": "bunx supabase migration list --local",
+    "exit_code": 1,
+    "available": false
+  },
+  "db-push-dry-run": {
+    "command": "bunx supabase db push --dry-run",
+    "exit_code": 1,
+    "available": false
+  },
+  "branches-list": {
+    "command": "bunx supabase --experimental branches list",
+    "exit_code": 0,
+    "available": true
+  },
+  "branches-help": {
+    "command": "bunx supabase --experimental branches --help",
+    "exit_code": 0,
+    "available": true
+  },
+  "projects-help": {
+    "command": "bunx supabase projects --help",
+    "exit_code": 0,
+    "available": true
+  },
+  "agent-commands": {
+    "command": "command -v commandcode || true; command -v opencode || true; command -v claude || true; command -v kimi || true; command -v gemini || true; command -v deepseek || true; command -v codex || true",
+    "exit_code": 0,
+    "available": true
+  }
+}
