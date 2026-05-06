@@ -57,15 +57,64 @@ Reviewer judgment:
 - `bun run test:dom`: PASSED, 8 files / 53 tests.
 - `bun run inspect:ui`: PASSED, 1 Playwright AI inspection test.
 - `bun run test:e2e:smoke`: PASSED after `bun run build`, 23 passed / 56 skipped.
-- `bun run test:e2e:dialog`: EXTERNAL BASELINE FAILURE, 7 passed / 1 failed. Failing assertion is unchanged AlertDialog keyboard focus trap test at `e2e/dialog-accessibility.spec.ts:128`; branch has no diff in `src/components/ui/alert-dialog.tsx`, `src/components/ui/dialog.tsx`, `e2e/dialog-accessibility.spec.ts`, or `src/app/developer/tools/test-data/test-data-client.tsx`. Independent reviewer approved documenting this as unrelated to the UI componentization PR.
+- `bun run test:e2e:dialog`: PASSED, 8 passed / 0 failed after `f4619d57b fix(a11y): stabilize alert dialog keyboard focus trap`.
 - `bun run test:e2e:ui`: NOT RUN because this invokes Playwright interactive UI mode (`playwright test --ui`), not a stable headless CI gate.
 
 
 ## Remaining risks
 
-- Optional `test:e2e:dialog` failure is external/baseline and should be handled in a dedicated AlertDialog focus-trap fix, not this UI componentization PR.
+- Former `test:e2e:dialog` failure has been resolved by `f4619d57b fix(a11y): stabilize alert dialog keyboard focus trap`; the dialog suite now passes 8/8 on main.
 - Storybook build still emits large-chunk warnings only; no build failure.
 
 ## Recommended next action
 
-Open/update the GitHub PR and run the normal CI pipeline. If CI includes `test:e2e:dialog`, either fix the pre-existing AlertDialog keyboard focus-trap issue in a separate targeted commit/PR or mark that gate as currently flaky/baseline-blocked with the evidence above.
+Main is verified. Run normal CI/merge checks as the final confirmation gate.
+
+
+# Final Verification Update — Main Branch
+
+Updated: 2026-05-06T20:46:59
+
+The UI componentization work and the targeted AlertDialog accessibility fix have both been merged to `main`.
+
+## AlertDialog blocker status
+
+Resolved by commit:
+
+`f4619d57b fix(a11y): stabilize alert dialog keyboard focus trap`
+
+`bun run test:e2e:dialog` now passes on `main`:
+
+- 8 passed
+- 0 failed
+
+The previous statement that the dialog E2E failure was an unresolved external optional blocker is superseded. The final state is now `COMPLETE_VERIFIED`.
+
+## Final validation on main
+
+- `git diff --check`: PASSED
+- `bun run type-check`: PASSED
+- `bun run lint`: PASSED with 10 baseline warnings, 0 errors
+- `bun run design:lint`: PASSED with 10 warnings, 0 errors
+- `bun run test:dom`: PASSED, 8 files / 53 tests
+- `bun run check:storybook`: PASSED
+- `NODE_OPTIONS=--max-old-space-size=8192 bun run build-storybook`: PASSED with large-chunk warnings only
+- `bun run build`: PASSED
+- `bun run inspect:ui`: PASSED, 1 test
+- `bun run test:e2e:smoke`: PASSED, 23 passed / 56 skipped
+- `bun run test:e2e:dialog`: PASSED, 8 passed
+
+## Browser accessibility verification
+
+Route:
+`http://localhost:3223/developer/tools/test-data`
+
+Verified keyboard behavior:
+- Generate Sessions AlertDialog opens.
+- Tab keeps focus inside visible dialog controls.
+- Shift+Tab keeps focus inside visible dialog controls.
+- Generate/Cancel controls receive focus as expected.
+- Console showed no JavaScript errors; only normal React DevTools/HMR info logs.
+
+Screenshot:
+`.ai/03_plans/dialog-accessibility-focus-trap-2026-05-06/visual/alert-dialog-main-verified.png`
