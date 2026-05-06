@@ -1,5 +1,14 @@
 # SPP Document 206: Standards of Professional Practice on Comprehensive Architectural Services
 
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **SPP Document 206: Standards of Professional Practice on Comprehensive Architectural Services** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
+
 ## Overview
 
 **SPP Document 206** governs **Comprehensive Architectural Services (CAS)** — the broadest and most integrative SPP document in the entire 2010 series. It replaces the **1979 UAP Doc. 206** and forms part of the Supplemental Implementing Rules and Regulations (IRR) of **Republic Act No. 9266** (The Architecture Act of 2004).

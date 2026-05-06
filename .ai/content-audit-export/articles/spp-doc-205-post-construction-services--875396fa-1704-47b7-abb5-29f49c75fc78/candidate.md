@@ -1,5 +1,14 @@
 # SPP Document 205: Standards of Professional Practice on Post-Construction Services
 
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **SPP Document 205: Standards of Professional Practice on Post-Construction Services** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
+
 ## Overview
 
 **SPP Document 205** governs **Post-Construction Services** — the professional architectural services rendered after a building has been constructed and turned over to the owner. It replaces the earlier **1979 UAP Doc. 205** and forms part of the Supplemental Implementing Rules and Regulations (IRR) of **Republic Act No. 9266** (The Architecture Act of 2004).

@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Prac Frm 021 Quantity Surveying And Cost Estimation The Architect S Role Vs The Qs Professional S Role** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## Quantity Surveying and Cost Estimation—The Architect's Role vs. the QS Professional's Role
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="ExamTip" status="preserved"]

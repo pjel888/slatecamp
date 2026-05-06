@@ -1,5 +1,14 @@
 # SPP Document 201: Standards of Professional Practice on Pre-Design Services
 
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **SPP Document 201: Standards of Professional Practice on Pre-Design Services** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
+
 ## Overview
 
 **SPP Document 201** governs the **Pre-Design Services** of Registered and Licensed Architects (RLAs) in the Philippines. It is part of the 2010 Standards of Professional Practice (SPP), approved on 27 July 2010 as the Supplemental Implementing Rules and Regulations (IRR) of **Republic Act No. 9266**, known as "The Architecture Act of 2004." It replaces the earlier **1979 UAP Doc. 201**, which referred to these non-creative early-stage services under the mnemonic "EPASSSSP" (Economic Feasibility Studies, Project Financing, Architectural Programming, Site Selection & Analysis, Site Utilization & Land Use Studies, Space/Management Studies, and Promotional Services).

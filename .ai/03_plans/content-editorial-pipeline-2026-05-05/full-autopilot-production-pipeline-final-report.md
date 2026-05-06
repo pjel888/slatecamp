@@ -1,38 +1,23 @@
 # Final Content Production Report
 
-Status: BATCH_002_PUBLISHED_AND_VERIFIED
-Generated: 2026-05-06T09:21:55.034710+00:00
+Status: BATCH_003_PUBLISHED_AND_VERIFIED_CONTINUING
+Generated: 2026-05-06T09:33:53.931831+00:00
 
-Articles published this resumed continuation: 10
-Total articles published by safe path so far: 13
-Questions published: 0
+Safe-path published so far:
+- Articles: 43
+- Questions: 0
 
-Batch 002 published articles:
-- `85bcd328-436d-49ba-9d37-7b202d0d38d4` / pd-1096-rule-vii-area-metrics
-- `93009368-9041-46e0-b93b-8786100311be` / pd-1096-rule-xii-egress-and-corridors
-- `a865c6b2-8c25-404e-bb0c-08d374d374a5` / pd-1096-rule-vii-height-limits
-- `cb947ab1-7737-4bde-8a47-606b5d305ed6` / pd-1096-rule-viii-light-and-ventilation
-- `76b6cfd5-d416-4c6d-8a90-76a2d2b91774` / lea-prac-law-013-ownership-of-architectural-plans-ra-9266-section-33-and-client-rights
-- `5f620c42-ef55-4c0e-824b-49f0ff9d47e6` / bp-344-elevator-dimensions
-- `5aeda107-bc0d-4d0d-ab40-44e13fd95478` / bp-344-tactile-and-visual-alarms
-- `6d5e0e55-215a-4806-a679-dac7aea5a99b` / bp-344-accessible-washrooms
-- `5a8ca807-31d5-4a32-933a-c6b83517c6de` / bp-344-ramp-slope-tiers
-- `9eb0b48e-110e-4c75-8a0c-4f83063001cf` / lea-prac-frm-018-universal-design-in-practice-bp-344-ra-7277-and-the-architect-s-affirmative-duty
+Latest milestone:
+- Batch 003 published 30 articles.
+- Remote verification passed for 30/30 rows.
+- No rollback needed.
 
 Validation:
-- content-audit:validate passed, 567 bundles, blockers=0, warnings=0
-- type-check passed
-- lint passed with 0 errors / 10 existing warnings
-- git diff --check passed
-- intended artifact secret scan: 0 real matches
+- content-audit:validate passed, 567 bundles, blockers=0, warnings=0.
+- type-check passed.
+- lint passed with 0 errors and 10 existing warnings.
+- git diff --check passed.
+- scoped secret scan found 0 real matches.
 
-Remote safety:
-- backup created before apply
-- baseline hash comparison passed for all 10 rows using remote original.md baseline
-- dry-run exact diff generated
-- PATCH applied by exact article_id filters only
-- remote readback hash verified for all 10 rows
-
-Remaining:
-- Continue to Batch 003: next 30 articles.
-- Questions remain unpublished until real validated question edit payloads exist.
+Next required continuation:
+- Batch 004: 50 articles.

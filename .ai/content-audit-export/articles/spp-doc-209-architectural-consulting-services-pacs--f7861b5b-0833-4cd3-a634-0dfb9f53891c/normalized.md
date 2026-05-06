@@ -1,5 +1,14 @@
 # SPP Document 209: Standards of Professional Practice on Professional Architectural Consulting Services (PACS)
 
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **SPP Document 209: Standards of Professional Practice on Professional Architectural Consulting Services (PACS)** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
+
 ## Overview
 
 **SPP Document 209** governs **Professional Architectural Consulting Services (PACS)** — the broadest and most policy-laden document in the entire SPP series, and the **final document in the 2010 SPP framework**. It replaces the **1981 UAP Doc. 210** and is grounded in the Supplemental Implementing Rules and Regulations (IRR) of **Republic Act No. 9266** (The Architecture Act of 2004), as well as in the Joint Resolution No. 2009-01 of the Philippine Technological Council (PTC) and the Council for the Built and Natural Environments (CBNE) dated December 11, 2009.

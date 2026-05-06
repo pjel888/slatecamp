@@ -1,5 +1,14 @@
 # SPP Document 204-B: Standards of Professional Practice on Construction Management Services
 
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **SPP Document 204-B: Standards of Professional Practice on Construction Management Services** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
+
 ## Overview
 
 **SPP Document 204-B** governs **Construction Management (CM) Services** — a broader, more managerial form of construction oversight that goes beyond the on-site inspection duties of the Construction Supervision Group (CSG) under SPP 204-A. It is part of the 2010 Standards of Professional Practice (SPP), promulgated as the Supplemental Implementing Rules and Regulations (IRR) of **Republic Act No. 9266** (The Architecture Act of 2004), and replaces the earlier **1979 UAP Doc. 204-B**.
