@@ -75,3 +75,28 @@ Queue IDs: UIA-DSS-0003, UIA-DSS-0004
 ### Risk
 
 Low. The Storybook quiz-v2 action alias is intentionally broad within Storybook; it should be maintained as additional quiz-v2 action exports are needed by stories.
+
+## Batch 4: Developer EndpointCard Button migration
+
+Date/time: 2026-05-06T18:28:55
+Queue ID: UIA-DEV-0005
+
+### What changed
+
+- Moved `EndpointCard` implementation to `src/components/developer/EndpointCard.tsx` so Storybook and the developer route share the same component without restricted app-internal imports.
+- Updated `/developer/api-reference` to import `@/components/developer/EndpointCard`.
+- Kept a compatibility re-export at `src/app/developer/_components/EndpointCard.tsx`.
+- Migrated the expandable row trigger from raw `<button>` to shared `Button` with `type="button"`, `variant="ghost"`, and preserved compact row spacing.
+- Added `src/components/developer/EndpointCard.stories.tsx`.
+
+### Validation
+
+- `bun run lint`: passed with same 10 baseline warnings.
+- `bun run check:storybook`: passed, 105 story files scanned.
+- `NODE_OPTIONS=--max-old-space-size=8192 bun run build-storybook`: passed.
+- `bun run type-check`: blocked by same pre-existing missing `openai` module in `scripts/normalize-distractors.ts`.
+- Playwright screenshot inspection covered collapsed and expanded states.
+
+### Risk
+
+Low. Moving the component into `src/components/developer` improves Storybook compatibility and avoids a restricted import, but route import path changed. Existing app-internal path remains as a compatibility re-export.

@@ -50,3 +50,17 @@ Reviewer: independent Hermes subagent, separate context/model from builder.
 ### Resolution
 
 No implementation changes required after review. Broad Storybook mock caveat documented.
+
+## Batch 4: Developer EndpointCard Button migration
+
+Date/time: 2026-05-06T18:28:55
+Queue ID: UIA-DEV-0005
+Reviewer: independent Hermes subagent, separate context/model from builder.
+
+### Reviewer result
+
+- Blockers: none.
+- Recommendations addressed before commit:
+  - Restored explicit `type="button"` on the expandable trigger.
+  - Restored `gap-2.5` to preserve compact row spacing.
+  - Replaced temporary components-to-app re-export with canonical implementation under `src/components/developer/EndpointCard.tsx`; the route now imports the shared component.

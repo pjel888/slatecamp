@@ -58,3 +58,20 @@ Validation:
 - `bun run check:storybook`: passed, 104 stories.
 - `NODE_OPTIONS=--max-old-space-size=8192 bun run build-storybook`: passed.
 - Runtime Playwright screenshots passed after adding the quiz-v2 server-action Storybook mock.
+
+## Batch 4
+
+Added:
+
+- `src/components/developer/EndpointCard.stories.tsx`
+
+Covered states:
+
+- Expandable endpoint card
+- Static endpoint card
+
+Validation:
+
+- `bun run check:storybook`: passed, 105 stories.
+- `NODE_OPTIONS=--max-old-space-size=8192 bun run build-storybook`: passed.
+- Runtime Playwright screenshots passed for collapsed and expanded states.

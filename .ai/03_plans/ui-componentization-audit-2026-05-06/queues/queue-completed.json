@@ -98,5 +98,55 @@
     "reviewer_notes": null,
     "final_status": "completed",
     "validation_result": "MobileTopBar hamburger and MobileDrawer close controls migrated to shared Button icon; Storybook stories and quiz-v2 server-action mock added; lint/check-storybook/build-storybook/browser screenshot inspection passed; type-check blocked only by pre-existing missing openai baseline error."
+  },
+  {
+    "id": "UIA-DEV-0005",
+    "file": "src/app/developer/_components/EndpointCard.tsx",
+    "line": null,
+    "surface": "developer",
+    "component": "EndpointCard",
+    "current_pattern": "raw button",
+    "classification": "definite_drift",
+    "risk": "low",
+    "proposed_target": "Button",
+    "user_impact": "Reduce UI drift and improve consistency/accessibility where safe.",
+    "implementation_notes": "Implement only from queue in small batches after reading current file and preserving behavior.",
+    "storybook_required": true,
+    "storybook_story_path": null,
+    "tests_required": [
+      "bun run type-check",
+      "bun run lint"
+    ],
+    "visual_routes": [
+      "/developer/api-reference"
+    ],
+    "reviewer_notes": null,
+    "final_status": "completed",
+    "validation_result": "EndpointCard moved to shared components/developer, expandable raw button migrated to shared Button preserving type=button and gap-2.5; Storybook story added; lint/check-storybook/build-storybook/visual screenshot inspection passed; type-check blocked only by baseline missing openai."
+  },
+  {
+    "id": "UIA-PUBLIC-0003",
+    "file": "src/components/marketing/PricingCard.tsx",
+    "line": null,
+    "surface": "pricing",
+    "component": "PricingCard",
+    "current_pattern": "custom Link-as-button CTA/card",
+    "classification": "definite_drift",
+    "risk": "low",
+    "proposed_target": "Button asChild + Card",
+    "user_impact": "Reduce UI drift and improve consistency/accessibility where safe.",
+    "implementation_notes": "Implement only from queue in small batches after reading current file and preserving behavior.",
+    "storybook_required": true,
+    "storybook_story_path": null,
+    "tests_required": [
+      "bun run type-check",
+      "bun run lint"
+    ],
+    "visual_routes": [
+      "/pricing"
+    ],
+    "reviewer_notes": null,
+    "final_status": "completed",
+    "validation_result": "Completed earlier in Batch 2: PricingCard CTA migrated to shared Button asChild and Storybook coverage added."
   }
 ]

@@ -48,12 +48,12 @@
     "modal_dialog": 13,
     "storybook_required": 35
   },
-  "last_completed_batch": "Batch 3: Mobile sidebar controls normalization",
+  "last_completed_batch": "Batch 4: Developer EndpointCard Button migration",
   "latest_validation": {
     "lint": "passed with 10 baseline warnings",
-    "check_storybook": "passed, 104 stories",
-    "build_storybook": "passed with Storybook quiz-v2 action mock and NODE_OPTIONS",
+    "check_storybook": "passed, 105 stories",
+    "build_storybook": "passed with NODE_OPTIONS",
     "type_check": "baseline failure remains: missing openai module",
-    "browser": "mobile topbar/drawer Storybook screenshots inspected"
+    "browser": "EndpointCard collapsed/expanded Storybook screenshots inspected"
   }
 }

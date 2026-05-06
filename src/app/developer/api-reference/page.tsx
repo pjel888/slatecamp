@@ -1,6 +1,6 @@
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs'
 import { SectionHeader } from '@/components/shared/section-header'
-import { EndpointCard } from '../_components/EndpointCard'
+import { EndpointCard } from '@/components/developer/EndpointCard'
 import { actionGroups, payrexWebhookEvents, routeHandlerSections, sharedWebhookConventions, webhookSignatureNotes } from '@/lib/developer/api-reference-data'
 
 export const metadata = {

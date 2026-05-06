@@ -59,3 +59,22 @@ Date/time: 2026-05-06T18:17:42
 - MobileTopBar hamburger icon button is visible, compact, and aligned with the SlateCamp wordmark.
 - MobileDrawer close icon button is visible in the header and the drawer layout renders correctly.
 - No obvious clipping, overlap, or broken spacing after migration to shared `Button`.
+
+## Batch 4: Developer EndpointCard Button migration
+
+Date/time: 2026-05-06T18:28:55
+
+### Story inspected
+
+- Storybook iframe: `/iframe.html?id=developer-endpointcard--expandable&viewMode=story`
+
+### Evidence
+
+- `.ai/03_plans/ui-componentization-audit-2026-05-06/visual/batch-4-endpoint-card/endpoint-collapsed.png`
+- `.ai/03_plans/ui-componentization-audit-2026-05-06/visual/batch-4-endpoint-card/endpoint-expanded.png`
+
+### Result
+
+- Collapsed endpoint row remains compact and aligned after shared `Button` migration.
+- Expanded code blocks render correctly.
+- No obvious visual regression.
