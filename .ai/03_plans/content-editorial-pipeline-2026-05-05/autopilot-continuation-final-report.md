@@ -26,7 +26,7 @@ The post-Supabase-safety-stop continuation completed every safe non-live impleme
 - `aa13f23db` — Harden source pack and embedding dry-run pipeline
 - `8874bf163` — Harden controlled apply and rollback pipeline
 
-Final report commit: pending until this report is committed.
+Final report commit: `da1001b0c28b71ab2aab03255af7fad1c1ebda02`
 
 ## Supabase migration state
 
