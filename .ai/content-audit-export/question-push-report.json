@@ -1,17 +1,20 @@
 {
-  "question_id": "00000000-0000-4000-8000-00000000d201",
-  "attempted_at": "2026-05-01T12:50:18.111Z",
-  "dry_run": true,
-  "apply": false,
-  "pushed": false,
-  "blockers": [
-    "Question edit file missing: articles/playwright-seeded-quiz-article--00000000-0000-4000-8000-00000000d104/question-edits/00000000-0000-4000-8000-00000000d201.json"
+  "question_id": "43c6e858-26b4-435d-9862-37dc7ac46e76",
+  "attempted_at": "2026-05-06T12:03:39.414Z",
+  "dry_run": false,
+  "apply": true,
+  "pushed": true,
+  "blockers": [],
+  "warnings": [],
+  "updated_rows_count": 1,
+  "article_id": "c6f9eec1-727b-4d00-a905-f69a58245c66",
+  "article_folder": "lea-hist-008-08-core-concept--c6f9eec1-727b-4d00-a905-f69a58245c66",
+  "exported_hash": "sha256:6020505c6201b60d6ec992f328b33249da7091091849ce5871e0693aec6238a7",
+  "proposed_field_names": [
+    "explanation"
   ],
-  "warnings": [
-    "Create question-edits/<question_id>.json with proposed fields before pushing a question edit."
-  ],
-  "updated_rows_count": 0,
-  "article_id": "00000000-0000-4000-8000-00000000d104",
-  "article_folder": "playwright-seeded-quiz-article--00000000-0000-4000-8000-00000000d104",
-  "exported_hash": "sha256:ff54050a660a7b73678befc545c8658f5fdc794be488100efefdb29dc5ad567b"
+  "remote_hash_before": "sha256:6020505c6201b60d6ec992f328b33249da7091091849ce5871e0693aec6238a7",
+  "expected_baseline_hash": "sha256:6020505c6201b60d6ec992f328b33249da7091091849ce5871e0693aec6238a7",
+  "stale_check_passed": true,
+  "updated_at_after": "2026-05-06T12:03:39.754834+00:00"
 }
