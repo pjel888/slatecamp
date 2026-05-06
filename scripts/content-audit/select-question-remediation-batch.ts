@@ -60,10 +60,27 @@ function skippedQuestionIds(): Set<string> {
   for (const r of arr) if (r?.question_id) ids.add(r.question_id)
   return ids
 }
-const legalCode = /\b(RA|PD|BP|Rule|Section|IRR|NBCP|Fire Code|Accessibility|permit|occupancy|egress|setback|parking|ramp|corridor|stair|elevator|sanitation|utilities|contract|SPP|PRC|PRBoA)\b/i
-const dimensional = /\b\d+(?:\.\d+)?\s*(mm|cm|m|sqm|sq\.?\s*m|%|feet|ft|days?|months?|years?)\b/i
-const genericLeak = /\b(outdated|trap|ALE|different concept|another subject|commonly tested|review center)\b/i
-const placeholderExplanation = /^(|null|n\/a|none|tbd|to be added|placeholder|same as rationale)$/i
+const professionalPractice = /\b(architect ownership|client rights?|copyright|contract(?:s|ual)?|SPP|standard of professional practice|RA\s*9266|PRC|PRBoA|professional liability|civil code|article\s*1723|fee(?:s)?|certificate(?:s)?|building official|occupancy permit|fire safety|accessibility|BP\s*344|PD\s*1096|RA\s*9514|permit(?:s)?|setback(?:s)?|egress|ramp(?:s)?|toilet(?:s)?|elevator(?:s)?|corridor(?:s)?|stair(?:s)?|parking|sanitation|rule|section|table|numbered provision)\b/i
+const legalCode = /\b(RA|PD|BP|Rule|Section|IRR|NBCP|Fire Code|Accessibility|permit|occupancy|egress|setback|parking|ramp|corridor|stair|elevator|sanitation|utilities|contract|SPP|PRC|PRBoA|BFP|NCDA|DPWH|DHSUD|UAP|Civil Code|Article\s*\d+)\b/i
+const dimensional = /\b\d+(?:\.\d+)?\s*(mm|cm|m|sqm|sq\.?\s*m|%|percent|pesos?|php|₱|feet|ft|days?|months?|years?|km|kilometers?)\b/i
+const genericLeak = /\b(which is not accurate|not accurate|misconception|misunderstanding|not related|separate concept|oversimplification|misrepresents|historically inaccurate|ensuring all aspects|focusing on|allowing the architect|providing a formal directive|formal directive|outdated|trap|ALE|different concept|another subject|commonly tested|review center|exam trick|obviously|all of the above|none of the above|not valid|incorrect because|wrong because)\b/i
+const placeholderExplanation = /^(|null|n\/a|none|tbd|to be added|placeholder|same as rationale|see rationale|refer to rationale)$/i
+function hasExplicitSourceSupport(q: any, article: string): boolean {
+  const sourceBlob = [q.code_citation, q.source_verification, q.sources, q.citation, q.reference, q.metadata, article.match(/<LawCallout[\s\S]*?<\/LawCallout>/g)?.join(' ') || ''].map(text).join(' ')
+  return /\b(official|source|citation|pdf|IRR|RA\s*\d+|PD\s*\d+|BP\s*\d+|SPP|PRC|PRBoA|Official Gazette|Lawphil|DPWH|NBCDO|NCDA|BFP|DOE|DHSUD|UAP|Section\s+\d+|Rule\s+[IVXLC]+|Article\s+\d+)\b/i.test(sourceBlob)
+}
+function nearDuplicateOptions(optionTexts: string[]): boolean {
+  const normalized = optionTexts.map(normStem).filter(Boolean)
+  for (let i = 0; i < normalized.length; i++) for (let j = i + 1; j < normalized.length; j++) {
+    const a = normalized[i], b = normalized[j]
+    if (!a || !b) continue
+    if (a === b) return true
+    const shorter = a.length < b.length ? a : b
+    const longer = a.length < b.length ? b : a
+    if (shorter.length > 24 && longer.includes(shorter)) return true
+  }
+  return false
+}
 
 const published = publishedArticleIds()
 const skipped = skippedQuestionIds()
@@ -93,11 +110,14 @@ for (const folder of readdirSync(ARTICLE_ROOT)) {
     const correct = options.find((o: any) => o.id === q.correct_option_id)
     if (!correct?.text) { exclude('correct_answer_not_in_options'); continue }
     if (uniqueOptionTexts.size !== optionTexts.length) { exclude('duplicate_option_text'); continue }
+    if (nearDuplicateOptions(optionTexts)) { exclude('near_duplicate_option_ambiguity'); continue }
+    const lengths = optionTexts.map(s => s.length).filter(Boolean)
+    if (lengths.length >= 4 && Math.max(...lengths) > Math.min(...lengths) * 2.5 && Math.max(...lengths) - Math.min(...lengths) > 90) { exclude('option_length_giveaway_risk'); continue }
     const explanation = text(q.explanation).trim()
     if (explanation && !placeholderExplanation.test(explanation)) { exclude('existing_meaningful_explanation'); continue }
     const blob = [q.text, q.rationale, correct.text, optionTexts.join(' ')].map(text).join(' ')
     if (genericLeak.test(blob)) { exclude('generic_meta_distractor_leakage'); continue }
-    if ((legalCode.test(blob) || dimensional.test(blob)) && !q.code_citation) { exclude('legal_code_dimensional_without_explicit_citation'); continue }
+    if ((professionalPractice.test(blob) || legalCode.test(blob) || dimensional.test(blob)) && !hasExplicitSourceSupport(q, article)) { exclude('professional_practice_legal_code_source_gap'); continue }
     const rationale = text(q.rationale).trim()
     if (rationale.length < 120) { exclude('weak_rationale'); continue }
     const answerInArticle = article.toLowerCase().includes(String(correct.text).toLowerCase())
@@ -139,13 +159,13 @@ for (const row of selected) {
   writeText(path.join(diffDir, `${row.question_id}.diff.md`), `# Question Diff ${row.question_id}\n\nClassification: strict_explanation_backfill\n\nNo answer-key change. No option change. Existing explanation was null or placeholder.\n\n## Added explanation\n\n${row.proposed.explanation}\n`)
 }
 
-writeJson(path.join(QUESTION_ROOT, 'question-remediation-queue.generated.json'), { generated_at: new Date().toISOString(), selector: 'strict-v1', selected_count: selected.length, excluded, candidates: selected })
-writeText(path.join(QUESTION_ROOT, 'question-remediation-selector-rules.md'), `# Question Remediation Selector Rules\n\nStrict v1 excludes existing meaningful explanations, legal/code/dimensional prompts without code_citation, repeated stems, generic/meta distractors, missing answer keys, duplicate options, weak rationales, and insufficient linked-article support.\n`)
-writeText(path.join(QUESTION_ROOT, 'question-remediation-selector-report.md'), `# Question Remediation Selector Report\n\nSelected: ${selected.length}\n\nExcluded by reason:\n${Object.entries(excluded).map(([k,v]) => `- ${k}: ${v}`).join('\n')}\n`)
-writeText(path.join(QUESTION_ROOT, 'question-risk-summary.md'), `# Question Risk Summary\n\n${Object.entries(excluded).map(([k,v]) => `- ${k}: ${v}`).join('\n')}\n`)
+writeJson(path.join(QUESTION_ROOT, 'question-remediation-queue.generated.json'), { generated_at: new Date().toISOString(), selector: 'strict-v2', selected_count: selected.length, excluded, candidates: selected })
+writeText(path.join(QUESTION_ROOT, 'question-remediation-selector-rules.md'), `# Question Remediation Selector Rules\n\nStrict v2 excludes existing meaningful explanations, professional-practice/legal/code/dimensional prompts without explicit source support, repeated stems, duplicate/near-duplicate options, option-length giveaway risk, generic/meta distractors, missing answer keys, weak rationales, and insufficient linked-article support.\n\nExpanded generic/meta leakage blocks phrases such as: which is not accurate, not accurate, misconception, ensuring all aspects, focusing on, formal directive, trap, outdated, different concept, ALE, exam trick, all of the above, and none of the above.\n`)
+writeText(path.join(QUESTION_ROOT, 'question-remediation-selector-report.md'), `# Question Remediation Selector Report\n\nSelector: strict-v2\nSelected: ${selected.length}\n\nExcluded by reason:\n${Object.entries(excluded).map(([k,v]) => `- ${k}: ${v}`).join('\n')}\n`)
+writeText(path.join(QUESTION_ROOT, 'question-risk-summary.md'), `# Question Risk Summary\n\nSelector: strict-v2\n\n${Object.entries(excluded).map(([k,v]) => `- ${k}: ${v}`).join('\n')}\n`)
 writeJson(path.join(batchDir, 'question-jobs.generated.json'), { generated_at: new Date().toISOString(), batch: batchId, jobs: selected })
-writeText(path.join(batchDir, 'question-selection-report.md'), `# Question Batch 003 Selection Report\n\nSelected: ${selected.length}\nCriteria: strict explanation backfill only; published article; null/placeholder explanation; specific rationale; no answer-key/option changes; no generic/meta distractors; no uncited legal/code/dimensional prompt.\n`)
-writeText(path.join(batchDir, 'question-selector-safety-report.md'), `# Question Selector Safety Report\n\nSelected count: ${selected.length}\nNo answer-key-risk selected: yes\nNo uncited legal/code/dimensional item selected: yes\nNo existing meaningful explanation overwrite: yes\nNo generic/meta distractor leakage: yes\nNo repeated stems selected: yes\n`)
+writeText(path.join(batchDir, 'question-selection-report.md'), `# ${batchId} Selection Report\n\nSelected: ${selected.length}\nCriteria: strict explanation backfill only; published article; null/placeholder explanation; specific rationale; no answer-key/option changes; no generic/meta distractors; no professional-practice/legal/code/dimensional prompt without explicit source support.\n`)
+writeText(path.join(batchDir, 'question-selector-safety-report.md'), `# Question Selector Safety Report\n\nSelected count: ${selected.length}\nNo answer-key-risk selected: yes\nNo uncited legal/code/dimensional item selected: yes\nNo professional-practice source-gap item selected: yes\nNo existing meaningful explanation overwrite: yes\nNo generic/meta distractor leakage: yes\nNo duplicate/near-duplicate options selected: yes\nNo option-length giveaway risk selected: yes\nNo repeated stems selected: yes\n`)
 writeJson(path.join(batchDir, 'question-improvements.generated.json'), { generated_at: new Date().toISOString(), improvements: selected })
 writeJson(path.join(batchDir, 'question-batch-publish-ready.generated.json'), selected)
 writeJson(path.join(batchDir, 'question-batch-quarantine.generated.json'), [])
