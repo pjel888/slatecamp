@@ -240,3 +240,22 @@ Live article/question content apply: IMPLEMENTED_AS_DRY_RUN_SAFE_PREVIEW_ONLY; l
 ## Supabase migration reconciliation update — 2026-05-06
 
 A live Supabase reconciliation pass was attempted with user approval. Evidence is saved under `supabase-migration-reconciliation/`. The pass stopped before DB mutation because the linked remote contains 214 migration-history versions missing locally, while local contains 96 migration versions absent remotely. No exact missing remote-version files were restorable from Git history. `migration repair` was not used because the CLI-suggested broad reverted repair would be speculative. Linked schema probe found the admin AI audit schema absent remotely. Live admin audit schema/apply remains blocked until migration lineage is recovered or explicitly rebaselined with a backup-backed database-governance plan.
+
+---
+
+## Autopilot Continuation After Supabase Safety Stop
+
+Safe non-live continuation phases I–N completed and pushed. See:
+
+- `.ai/03_plans/content-editorial-pipeline-2026-05-05/autopilot-continuation-final-report.md`
+
+Latest continuation commits:
+
+- `b90400b41` — Add Supabase migration rebaseline safety tooling
+- `3b1bbcc61` — Implement local admin audit review payload workflow
+- `b34c7b12e` — Expand source-grounded article proposal pipeline
+- `27b52d4f5` — Expand question improvement proposal pipeline
+- `aa13f23db` — Harden source pack and embedding dry-run pipeline
+- `8874bf163` — Harden controlled apply and rollback pipeline
+
+Live Supabase apply remains blocked by broad migration-lineage drift. No speculative migration repair, live admin sync, article mutation, question mutation, answer-key mutation, or external embedding upload was performed.
