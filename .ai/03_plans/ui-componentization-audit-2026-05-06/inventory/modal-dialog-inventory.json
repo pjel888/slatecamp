@@ -1,0 +1,327 @@
+[
+  {
+    "id": "UIA-DSS-0002",
+    "file": "src/components/sidebar/MobileDrawer.tsx",
+    "line": null,
+    "surface": "shell/sidebar",
+    "component": "MobileDrawer",
+    "current_pattern": "custom mobile nav drawer role=dialog",
+    "classification": "primitive_gap",
+    "risk": "high",
+    "proposed_target": "Sheet or AppNavDrawer",
+    "user_impact": "Reduce UI drift and improve consistency/accessibility where safe.",
+    "implementation_notes": "Implement only from queue in small batches after reading current file and preserving behavior.",
+    "storybook_required": true,
+    "storybook_story_path": null,
+    "tests_required": [
+      "bun run type-check",
+      "bun run lint"
+    ],
+    "visual_routes": [
+      "/dashboard"
+    ],
+    "reviewer_notes": null,
+    "final_status": "open",
+    "validation_result": null
+  },
+  {
+    "id": "UIA-WIKI-0005",
+    "file": "src/components/wiki/quiz/WikiQuizModal.tsx",
+    "line": null,
+    "surface": "wiki",
+    "component": "WikiQuizModal",
+    "current_pattern": "custom high-complexity review modal",
+    "classification": "intentional_custom",
+    "risk": "high",
+    "proposed_target": "Quarantine / leave custom",
+    "user_impact": "Reduce UI drift and improve consistency/accessibility where safe.",
+    "implementation_notes": "Implement only from queue in small batches after reading current file and preserving behavior.",
+    "storybook_required": true,
+    "storybook_story_path": null,
+    "tests_required": [
+      "bun run type-check",
+      "bun run lint"
+    ],
+    "visual_routes": [
+      "/dashboard/wiki"
+    ],
+    "reviewer_notes": null,
+    "final_status": "open",
+    "validation_result": null
+  },
+  {
+    "id": "UIA-WIKI-0009",
+    "file": "src/components/wiki/shared/WikiSourcesPopover.tsx",
+    "line": null,
+    "surface": "wiki",
+    "component": "WikiSourcesPopover",
+    "current_pattern": "custom portal popover",
+    "classification": "primitive_gap",
+    "risk": "medium",
+    "proposed_target": "Popover / AnchoredPopover",
+    "user_impact": "Reduce UI drift and improve consistency/accessibility where safe.",
+    "implementation_notes": "Implement only from queue in small batches after reading current file and preserving behavior.",
+    "storybook_required": true,
+    "storybook_story_path": null,
+    "tests_required": [
+      "bun run type-check",
+      "bun run lint"
+    ],
+    "visual_routes": [
+      "/dashboard/wiki"
+    ],
+    "reviewer_notes": null,
+    "final_status": "open",
+    "validation_result": null
+  },
+  {
+    "id": "UIA-QZ-0002",
+    "file": "src/components/quiz-v2/SubmitConfirmModal.tsx",
+    "line": null,
+    "surface": "quiz",
+    "component": "SubmitConfirmModal",
+    "current_pattern": "Dialog plus custom answer grid",
+    "classification": "shared_pattern",
+    "risk": "high",
+    "proposed_target": "QuizQuestionStatusGrid",
+    "user_impact": "Reduce UI drift and improve consistency/accessibility where safe.",
+    "implementation_notes": "Implement only from queue in small batches after reading current file and preserving behavior.",
+    "storybook_required": true,
+    "storybook_story_path": null,
+    "tests_required": [
+      "bun run type-check",
+      "bun run lint"
+    ],
+    "visual_routes": [
+      "/dashboard/quiz"
+    ],
+    "reviewer_notes": null,
+    "final_status": "open",
+    "validation_result": null
+  },
+  {
+    "id": "UIA-QZ-0003",
+    "file": "src/components/quiz-v2/QuestionPalette.tsx",
+    "line": null,
+    "surface": "quiz",
+    "component": "QuestionPalette",
+    "current_pattern": "custom right sheet role=dialog",
+    "classification": "primitive_gap",
+    "risk": "high",
+    "proposed_target": "Sheet / QuizPaletteSheet",
+    "user_impact": "Reduce UI drift and improve consistency/accessibility where safe.",
+    "implementation_notes": "Implement only from queue in small batches after reading current file and preserving behavior.",
+    "storybook_required": true,
+    "storybook_story_path": null,
+    "tests_required": [
+      "bun run type-check",
+      "bun run lint"
+    ],
+    "visual_routes": [
+      "/dashboard/quiz"
+    ],
+    "reviewer_notes": null,
+    "final_status": "open",
+    "validation_result": null
+  },
+  {
+    "id": "UIA-QZ-0004",
+    "file": "src/components/quiz-v2/SocraticExplorer.tsx",
+    "line": null,
+    "surface": "quiz",
+    "component": "SocraticExplorer",
+    "current_pattern": "custom right sheet/chat panel",
+    "classification": "primitive_gap",
+    "risk": "high",
+    "proposed_target": "Sheet + Input/Button",
+    "user_impact": "Reduce UI drift and improve consistency/accessibility where safe.",
+    "implementation_notes": "Implement only from queue in small batches after reading current file and preserving behavior.",
+    "storybook_required": true,
+    "storybook_story_path": null,
+    "tests_required": [
+      "bun run type-check",
+      "bun run lint"
+    ],
+    "visual_routes": [
+      "/dashboard/quiz"
+    ],
+    "reviewer_notes": null,
+    "final_status": "open",
+    "validation_result": null
+  },
+  {
+    "id": "UIA-QZ-0006",
+    "file": "src/components/quiz-v2/CalculatingResultsOverlay.tsx",
+    "line": null,
+    "surface": "quiz",
+    "component": "CalculatingResultsOverlay",
+    "current_pattern": "custom blocking progress dialog rounded-2xl",
+    "classification": "decision_needed",
+    "risk": "medium",
+    "proposed_target": "LoadingOverlay / ProcessingDialog",
+    "user_impact": "Reduce UI drift and improve consistency/accessibility where safe.",
+    "implementation_notes": "Implement only from queue in small batches after reading current file and preserving behavior.",
+    "storybook_required": true,
+    "storybook_story_path": null,
+    "tests_required": [
+      "bun run type-check",
+      "bun run lint"
+    ],
+    "visual_routes": [
+      "/dashboard/quiz"
+    ],
+    "reviewer_notes": null,
+    "final_status": "open",
+    "validation_result": null
+  },
+  {
+    "id": "UIA-QZ-0013",
+    "file": "src/components/quiz-v2",
+    "line": null,
+    "surface": "quiz",
+    "component": "Quiz Storybook gaps",
+    "current_pattern": "only three quiz-v2 stories found",
+    "classification": "definite_drift",
+    "risk": "low",
+    "proposed_target": "Add stories for overlays/session/results",
+    "user_impact": "Reduce UI drift and improve consistency/accessibility where safe.",
+    "implementation_notes": "Implement only from queue in small batches after reading current file and preserving behavior.",
+    "storybook_required": true,
+    "storybook_story_path": null,
+    "tests_required": [
+      "bun run type-check",
+      "bun run lint"
+    ],
+    "visual_routes": [
+      "/dashboard/quiz"
+    ],
+    "reviewer_notes": null,
+    "final_status": "open",
+    "validation_result": null
+  },
+  {
+    "id": "UIA-CEO-0001",
+    "file": "src/components/ceo/FinancialEntryForm.tsx",
+    "line": null,
+    "surface": "ceo",
+    "component": "FinancialEntryForm",
+    "current_pattern": "custom right drawer role=dialog",
+    "classification": "primitive_gap",
+    "risk": "high",
+    "proposed_target": "Sheet side=right",
+    "user_impact": "Reduce UI drift and improve consistency/accessibility where safe.",
+    "implementation_notes": "Implement only from queue in small batches after reading current file and preserving behavior.",
+    "storybook_required": true,
+    "storybook_story_path": null,
+    "tests_required": [
+      "bun run type-check",
+      "bun run lint"
+    ],
+    "visual_routes": [
+      "/ceo/financials"
+    ],
+    "reviewer_notes": null,
+    "final_status": "open",
+    "validation_result": null
+  },
+  {
+    "id": "UIA-CEO-0005",
+    "file": "src/components/ceo/RoleAssignmentModal.tsx",
+    "line": null,
+    "surface": "ceo",
+    "component": "RoleAssignmentModal",
+    "current_pattern": "Dialog with raw radio/buttons",
+    "classification": "definite_drift",
+    "risk": "medium",
+    "proposed_target": "RadioGroup + Button",
+    "user_impact": "Reduce UI drift and improve consistency/accessibility where safe.",
+    "implementation_notes": "Implement only from queue in small batches after reading current file and preserving behavior.",
+    "storybook_required": true,
+    "storybook_story_path": null,
+    "tests_required": [
+      "bun run type-check",
+      "bun run lint"
+    ],
+    "visual_routes": [
+      "/ceo/team"
+    ],
+    "reviewer_notes": null,
+    "final_status": "open",
+    "validation_result": null
+  },
+  {
+    "id": "OVL-3DLAB-004",
+    "file": "src/features/3d-lab/components/OnboardingFlow.tsx",
+    "line": null,
+    "surface": "3d-lab",
+    "component": "OnboardingFlow",
+    "current_pattern": "custom modal z-[300]",
+    "classification": "primitive_gap",
+    "risk": "high",
+    "proposed_target": "Dialog or Sheet mobile variant",
+    "user_impact": "Reduce UI drift and improve consistency/accessibility where safe.",
+    "implementation_notes": "Implement only from queue in small batches after reading current file and preserving behavior.",
+    "storybook_required": true,
+    "storybook_story_path": null,
+    "tests_required": [
+      "bun run type-check",
+      "bun run lint"
+    ],
+    "visual_routes": [
+      "/dashboard/3d-lab"
+    ],
+    "reviewer_notes": null,
+    "final_status": "open",
+    "validation_result": null
+  },
+  {
+    "id": "OVL-3DLAB-006",
+    "file": "src/features/3d-lab/DevControlsModule/dashboard/BottomSheet.tsx",
+    "line": null,
+    "surface": "3d-lab",
+    "component": "DevControls BottomSheet",
+    "current_pattern": "custom draggable snap bottom sheet",
+    "classification": "intentional_custom",
+    "risk": "high",
+    "proposed_target": "Leave custom unless Sheet supports snap points",
+    "user_impact": "Reduce UI drift and improve consistency/accessibility where safe.",
+    "implementation_notes": "Implement only from queue in small batches after reading current file and preserving behavior.",
+    "storybook_required": true,
+    "storybook_story_path": null,
+    "tests_required": [
+      "bun run type-check",
+      "bun run lint"
+    ],
+    "visual_routes": [
+      "/dashboard/3d-lab"
+    ],
+    "reviewer_notes": null,
+    "final_status": "open",
+    "validation_result": null
+  },
+  {
+    "id": "OVL-REPO-005",
+    "file": "src/app/dashboard/pods/_components/CreatePodModal.tsx",
+    "line": null,
+    "surface": "dashboard",
+    "component": "CreatePodModal",
+    "current_pattern": "custom centered modal",
+    "classification": "primitive_gap",
+    "risk": "medium",
+    "proposed_target": "Dialog",
+    "user_impact": "Reduce UI drift and improve consistency/accessibility where safe.",
+    "implementation_notes": "Implement only from queue in small batches after reading current file and preserving behavior.",
+    "storybook_required": true,
+    "storybook_story_path": null,
+    "tests_required": [
+      "bun run type-check",
+      "bun run lint"
+    ],
+    "visual_routes": [
+      "/dashboard/pods"
+    ],
+    "reviewer_notes": null,
+    "final_status": "open",
+    "validation_result": null
+  }
+]

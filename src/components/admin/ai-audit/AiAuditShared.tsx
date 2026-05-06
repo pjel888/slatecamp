@@ -132,6 +132,45 @@ export function AuditEmptyState({ title = 'No AI audit records yet', description
   )
 }
 
+export function LocalContentPipelineCard({ compact = false }: { compact?: boolean }) {
+  return (
+    <Card className="border-l-[3px] border-l-primary">
+      <CardHeader>
+        <CardTitle>Local content pipeline</CardTitle>
+        <CardDescription>
+          Pull the Supabase article/question corpus into local audit bundles, then sync the latest local run log into this Admin AI Audit surface.
+        </CardDescription>
+      </CardHeader>
+      <CardContent className="space-y-3 text-sm">
+        <div className="grid gap-3 md:grid-cols-2">
+          <div className="space-y-2">
+            <p className="text-xs font-medium uppercase tracking-widest text-muted-foreground">1. Pull Supabase → local</p>
+            <code className="block whitespace-pre-wrap rounded-md border border-border bg-muted p-3 font-[family-name:var(--font-dm-mono)] text-xs text-foreground">
+              bun run content-audit:pull -- --all --overwrite true --include-questions true --include-sources true --include-taxonomy true
+            </code>
+          </div>
+          <div className="space-y-2">
+            <p className="text-xs font-medium uppercase tracking-widest text-muted-foreground">2. Register latest run here</p>
+            <code className="block whitespace-pre-wrap rounded-md border border-border bg-muted p-3 font-[family-name:var(--font-dm-mono)] text-xs text-foreground">
+              bun run content-audit:admin-log -- --apply
+            </code>
+          </div>
+        </div>
+        {!compact && (
+          <p className="text-xs text-muted-foreground">
+            These commands are terminal-only. The pull writes local files under <span className="font-[family-name:var(--font-dm-mono)]">.ai/content-audit-export/</span>; the admin-log step inserts a run record into <span className="font-[family-name:var(--font-dm-mono)]">ai_audit_runs</span> so it appears in Runs.
+          </p>
+        )}
+        <div className="flex flex-wrap gap-2">
+          <Link className="rounded-sm bg-primary px-3 py-2 text-xs font-medium text-primary-foreground" href={`${AI_AUDIT_ROOT}/runs`}>View Runs</Link>
+          <Link className="rounded-sm border border-border px-3 py-2 text-xs font-medium" href={`${AI_AUDIT_ROOT}/articles`}>Review Articles</Link>
+          <Link className="rounded-sm border border-border px-3 py-2 text-xs font-medium" href={`${AI_AUDIT_ROOT}/questions`}>Review Questions</Link>
+        </div>
+      </CardContent>
+    </Card>
+  )
+}
+
 export function StatCard({ label, value, description, tone = 'default' }: { label: string; value: number | string; description?: string; tone?: 'default' | 'green' | 'yellow' | 'orange' | 'red' | 'blue' }) {
   const toneClasses = {
     default: 'border-border',

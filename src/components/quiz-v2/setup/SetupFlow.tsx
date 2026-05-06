@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { ArrowLeft } from '@phosphor-icons/react/dist/ssr'
+import { Button } from '@/components/ui/button'
 import { IntroSlide1 } from './IntroSlide1'
 import { IntroSlide2 } from './IntroSlide2'
 import { IntroSlide3 } from './IntroSlide3'
@@ -178,15 +179,17 @@ const SetupFlow = ({ mode, subjects, readinessScore = 0, onBegin, onBack }: Setu
     <div className="max-w-[560px] mx-auto px-4 py-8">
       {/* Back button */}
       {(slideIndex > 0 || onBack) && (
-        <button
+        <Button
           type="button"
+          variant="ghost"
+          size="sm"
           onClick={handleBack}
-          className="inline-flex items-center gap-1.5 text-[13px] text-text-secondary hover:text-primary transition-colors duration-150 ease-out mb-6 focus-visible:outline-none focus-visible:underline"
+          className="mb-6 h-auto gap-1.5 px-0 py-0 text-[13px] text-text-secondary hover:bg-transparent hover:text-primary focus-visible:underline"
           aria-label="Go back"
         >
           <ArrowLeft className="h-3.5 w-3.5" aria-hidden="true" />
           Back
-        </button>
+        </Button>
       )}
 
       {/* Mode heading */}

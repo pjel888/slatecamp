@@ -54,16 +54,9 @@ export const PodHub = ({ pods, isPro }: PodHubProps) => {
   return (
     <>
       <div className="space-y-6">
-        {/* Header */}
-        <div className="flex items-center justify-between">
-          <div>
-            <h1 className="text-base font-semibold text-foreground">Study Pods</h1>
-            <p className="mt-0.5 text-xs text-muted-foreground">
-              Track score progress together — privately.
-            </p>
-          </div>
-
-          {isPro && (
+        {/* Actions */}
+        {isPro && (
+          <div className="flex justify-end">
             <Button
               variant="primary"
               size="sm"
@@ -72,8 +65,8 @@ export const PodHub = ({ pods, isPro }: PodHubProps) => {
             >
               New pod
             </Button>
-          )}
-        </div>
+          </div>
+        )}
 
         {/* Pro-only notice */}
         {!isPro && (

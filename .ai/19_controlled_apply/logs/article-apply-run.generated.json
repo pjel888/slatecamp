@@ -1,0 +1,23 @@
+{
+  "run_id": "article-rollback-daf2e7472f5c",
+  "mode": "dry_run",
+  "applied": false,
+  "reason": "Dry-run preview only.",
+  "items": [
+    {
+      "job_id": "article-improvement-job-1",
+      "article_candidate_id": "source-grounded-article-1",
+      "source_pack_id": "source-pack-ra-11285"
+    },
+    {
+      "job_id": "article-improvement-job-2",
+      "article_candidate_id": "source-grounded-article-2",
+      "source_pack_id": "source-pack-ra-11201"
+    },
+    {
+      "job_id": "article-improvement-job-3",
+      "article_candidate_id": "source-grounded-article-3",
+      "source_pack_id": "source-pack-dc2019-11-0014"
+    }
+  ]
+}

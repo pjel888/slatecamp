@@ -1,0 +1,52 @@
+[
+  {
+    "id": "UIA-WIKI-0005",
+    "file": "src/components/wiki/quiz/WikiQuizModal.tsx",
+    "line": null,
+    "surface": "wiki",
+    "component": "WikiQuizModal",
+    "current_pattern": "custom high-complexity review modal",
+    "classification": "intentional_custom",
+    "risk": "high",
+    "proposed_target": "Quarantine / leave custom",
+    "user_impact": "Reduce UI drift and improve consistency/accessibility where safe.",
+    "implementation_notes": "Implement only from queue in small batches after reading current file and preserving behavior.",
+    "storybook_required": true,
+    "storybook_story_path": null,
+    "tests_required": [
+      "bun run type-check",
+      "bun run lint"
+    ],
+    "visual_routes": [
+      "/dashboard/wiki"
+    ],
+    "reviewer_notes": null,
+    "final_status": "open",
+    "validation_result": null
+  },
+  {
+    "id": "OVL-3DLAB-006",
+    "file": "src/features/3d-lab/DevControlsModule/dashboard/BottomSheet.tsx",
+    "line": null,
+    "surface": "3d-lab",
+    "component": "DevControls BottomSheet",
+    "current_pattern": "custom draggable snap bottom sheet",
+    "classification": "intentional_custom",
+    "risk": "high",
+    "proposed_target": "Leave custom unless Sheet supports snap points",
+    "user_impact": "Reduce UI drift and improve consistency/accessibility where safe.",
+    "implementation_notes": "Implement only from queue in small batches after reading current file and preserving behavior.",
+    "storybook_required": true,
+    "storybook_story_path": null,
+    "tests_required": [
+      "bun run type-check",
+      "bun run lint"
+    ],
+    "visual_routes": [
+      "/dashboard/3d-lab"
+    ],
+    "reviewer_notes": null,
+    "final_status": "open",
+    "validation_result": null
+  }
+]

@@ -16,7 +16,7 @@ Generated documentation files:
 - `codex/03-do-not-do.md`
 - `codex/04-final-reminders.md`
 - `commands/01-cli-commands.md`
-- `commands/02-export-command.md`
+- `commands/02-pull-command.md`
 - `commands/03-normalize-command.md`
 - `commands/04-component-inventory-command.md`
 - `commands/05-compose-diff-command.md`

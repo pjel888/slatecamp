@@ -22,9 +22,8 @@ export type EngagementDepthData = {
 const WEIGHTS = {
   highlights: 0.15,
   bookmarks: 0.10,
-  teachBacks: 0.25,
   eiResponses: 0.20,
-  sessionQuality: 0.30,
+  completedSessions: 0.55,
 }
 
 const BUCKET_LABELS = [
@@ -43,11 +42,12 @@ export const getEngagementDepthData = async (): Promise<
   try {
     const supabase = await createClient()
 
-    // Fetch counts per user from each table in parallel
+    // Fetch counts per user from current schema-backed tables in parallel.
+    // teach_back_responses is deferred and intentionally excluded until a
+    // forward migration introduces the backing table/source.
     const [
       highlightsRes,
       bookmarksRes,
-      teachBacksRes,
       eiResponsesRes,
       sessionsRes,
     ] = await Promise.all([
@@ -58,14 +58,11 @@ export const getEngagementDepthData = async (): Promise<
         .from('wiki_bookmarks')
         .select('user_id'),
       supabase
-        .from('teach_back_responses')
-        .select('user_id'),
-      supabase
         .from('wiki_ei_responses')
         .select('user_id'),
       supabase
         .from('quiz_sessions')
-        .select('user_id, completed_at, total_questions, correct_count')
+        .select('user_id, completed_at, question_ids')
         .not('completed_at', 'is', null),
     ])
 
@@ -82,29 +79,24 @@ export const getEngagementDepthData = async (): Promise<
 
     const highlightCounts = countMap(highlightsRes.data)
     const bookmarkCounts = countMap(bookmarksRes.data)
-    const teachBackCounts = countMap(teachBacksRes.data)
     const eiCounts = countMap(eiResponsesRes.data)
 
-    // Session quality: completion rate × accuracy per user
-    const sessionQuality: Record<string, { qualSum: number; count: number }> = {}
+    // Completed-session engagement per user. Accuracy/correct-count columns are
+    // intentionally not used here because they are not present in the current
+    // generated quiz_sessions type.
+    const completedSessionCounts: Record<string, number> = {}
     for (const s of sessionsRes.data ?? []) {
       const uid = s.user_id
       if (!uid) continue
-      const total = s.total_questions ?? 0
-      const correct = s.correct_count ?? 0
-      const qual = total > 0 ? correct / total : 0
-      if (!sessionQuality[uid]) sessionQuality[uid] = { qualSum: 0, count: 0 }
-      sessionQuality[uid].qualSum += qual
-      sessionQuality[uid].count += 1
+      completedSessionCounts[uid] = (completedSessionCounts[uid] ?? 0) + 1
     }
 
     // Collect all user IDs seen
     const allUsers = new Set<string>([
       ...Object.keys(highlightCounts),
       ...Object.keys(bookmarkCounts),
-      ...Object.keys(teachBackCounts),
       ...Object.keys(eiCounts),
-      ...Object.keys(sessionQuality),
+      ...Object.keys(completedSessionCounts),
     ])
 
     if (allUsers.size === 0) {
@@ -115,8 +107,8 @@ export const getEngagementDepthData = async (): Promise<
     const CAPS = {
       highlights: 50,
       bookmarks: 30,
-      teachBacks: 20,
       eiResponses: 40,
+      completedSessions: 20,
     }
 
     const clamp = (v: number, cap: number) => Math.min(v / cap, 1)
@@ -125,15 +117,11 @@ export const getEngagementDepthData = async (): Promise<
     const bucketCounts = BUCKET_LABELS.map(() => 0)
 
     for (const uid of allUsers) {
-      const sq = sessionQuality[uid]
-      const sqScore = sq && sq.count > 0 ? sq.qualSum / sq.count : 0
-
       const score =
         clamp(highlightCounts[uid] ?? 0, CAPS.highlights) * WEIGHTS.highlights +
         clamp(bookmarkCounts[uid] ?? 0, CAPS.bookmarks) * WEIGHTS.bookmarks +
-        clamp(teachBackCounts[uid] ?? 0, CAPS.teachBacks) * WEIGHTS.teachBacks +
         clamp(eiCounts[uid] ?? 0, CAPS.eiResponses) * WEIGHTS.eiResponses +
-        sqScore * WEIGHTS.sessionQuality
+        clamp(completedSessionCounts[uid] ?? 0, CAPS.completedSessions) * WEIGHTS.completedSessions
 
       scoreSum += score
 

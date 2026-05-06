@@ -1,6 +1,6 @@
 'use client'
 
-import { useRef, useCallback, useEffect, useState } from 'react'
+import { useCallback, useState } from 'react'
 import { usePathname, useRouter } from 'next/navigation'
 import { useSidebar } from './SidebarProvider'
 import { SidebarHeader } from './SidebarHeader'
@@ -8,9 +8,7 @@ import { SidebarNavItem } from './SidebarNavItem'
 import { SidebarFooter } from './SidebarFooter'
 import { SIDEBAR_GROUPS, DASHBOARD_ITEM, SETTINGS_ITEM } from './sidebar-constants'
 import {
-  SIDEBAR_DIVIDER_INSET,
   SIDEBAR_PADDING,
-  SIDEBAR_SECTION_GAP,
   SIDEBAR_WIDTH_COLLAPSED,
   SIDEBAR_WIDTH_EXPANDED,
   TRANSITION,
@@ -20,6 +18,8 @@ import { useActiveSession } from '@/lib/context/active-session-context'
 import { ConfirmDialog } from '@/components/ui/dialog'
 import { cn } from '@/lib/utils'
 import { useNavigationPending } from '@/hooks/useNavigationPending'
+import { useQuizStore } from '@/stores/useQuizStore'
+import { updateSessionProgress } from '@/lib/actions/quiz-v2'
 
 // ---------------------------------------------------------------------------
 // Sidebar — structural nav shell for push layout
@@ -27,59 +27,20 @@ import { useNavigationPending } from '@/hooks/useNavigationPending'
 // ---------------------------------------------------------------------------
 
 export const Sidebar = ({ userDisplay, tier, isAdmin: _isAdmin, isDevMode: _isDevMode }: SidebarProps) => {
-  const { expanded, collapse, expand, toggle: _toggle, sidebarRef, toggleRef, prefersReducedMotion, isLocked } = useSidebar()
+  const { expanded, collapse, expand, sidebarRef, toggleRef, prefersReducedMotion, isLocked } = useSidebar()
   const pathname = usePathname()
   const router = useRouter()
-  const collapsingTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
-  const isCollapsing = useRef(false)
   const [showLeaveConfirm, setShowLeaveConfirm] = useState(false)
   const [pendingHref, setPendingHref] = useState<string | null>(null)
+  const [leaveConfirmLoading, setLeaveConfirmLoading] = useState(false)
   const navigationPending = useNavigationPending()
-
-  // Track collapsing state for CSS class (faster easing during collapse)
-  useEffect(() => {
-    if (collapsingTimerRef.current) {
-      clearTimeout(collapsingTimerRef.current)
-      collapsingTimerRef.current = null
-    }
-
-    if (!expanded && isCollapsing.current) {
-      // Already set collapsing — wait for duration then clear
-      collapsingTimerRef.current = setTimeout(() => {
-        isCollapsing.current = false
-        // Force a re-render isn't needed — the CSS class is managed via DOM ref directly
-        const el = sidebarRef.current as HTMLElement | null
-        if (el) el.removeAttribute('data-collapsing')
-      }, TRANSITION.collapseDuration)
-    }
-  }, [expanded, sidebarRef])
-
-  // Cleanup timer on unmount
-  useEffect(() => {
-    return () => {
-      if (collapsingTimerRef.current) {
-        clearTimeout(collapsingTimerRef.current)
-      }
-    }
-  }, [])
 
   // Active session guard (provider is always present in dashboard layout)
   const { activeSession } = useActiveSession()
 
   const handleCollapse = useCallback(() => {
-    // Mark collapsing for CSS easing switch
-    const el = sidebarRef.current as HTMLElement | null
-    if (el) el.setAttribute('data-collapsing', '')
-    isCollapsing.current = true
-
-    if (collapsingTimerRef.current) clearTimeout(collapsingTimerRef.current)
-    collapsingTimerRef.current = setTimeout(() => {
-      if (el) el.removeAttribute('data-collapsing')
-      isCollapsing.current = false
-    }, TRANSITION.collapseDuration)
-
     collapse()
-  }, [collapse, sidebarRef])
+  }, [collapse])
 
   const handleNavMouseDown = useCallback((e: React.MouseEvent<HTMLElement>) => {
     e.stopPropagation()
@@ -97,9 +58,23 @@ export const Sidebar = ({ userDisplay, tier, isAdmin: _isAdmin, isDevMode: _isDe
     [activeSession],
   )
 
-  const handleLeaveConfirm = useCallback(() => {
-    if (pendingHref) router.push(pendingHref)
-    setPendingHref(null)
+  const handleLeaveConfirm = useCallback(async () => {
+    const href = pendingHref
+    const { sessionId, currentIndex, reset } = useQuizStore.getState()
+
+    setLeaveConfirmLoading(true)
+    try {
+      if (sessionId) {
+        await updateSessionProgress(sessionId, currentIndex)
+      }
+    } catch {
+      // Preserve navigation even if the latest index was already saved or the user is offline.
+    } finally {
+      reset()
+      setLeaveConfirmLoading(false)
+      setPendingHref(null)
+      if (href) router.push(href)
+    }
   }, [pendingHref, router])
 
   const handleToggle = useCallback(() => {
@@ -110,26 +85,25 @@ export const Sidebar = ({ userDisplay, tier, isAdmin: _isAdmin, isDevMode: _isDe
     }
   }, [expanded, handleCollapse, expand])
 
-  // Inline style: expand/collapse width transition
+  // Sidebar visual reveal uses clip-path; the layout column snaps separately in SidebarDesktopLayout.
+  const clippedWidth = SIDEBAR_WIDTH_EXPANDED - SIDEBAR_WIDTH_COLLAPSED
   const sidebarStyle: React.CSSProperties = prefersReducedMotion
     ? {
-      width: expanded ? SIDEBAR_WIDTH_EXPANDED : SIDEBAR_WIDTH_COLLAPSED,
+      width: SIDEBAR_WIDTH_EXPANDED,
+      clipPath: expanded ? 'inset(0 0 0 0)' : `inset(0 ${clippedWidth}px 0 0)`,
     }
     : {
-      width: expanded ? SIDEBAR_WIDTH_EXPANDED : SIDEBAR_WIDTH_COLLAPSED,
-      transition: `width ${expanded ? `${TRANSITION.expandDuration}ms ${TRANSITION.expandEasing}` : `${TRANSITION.collapseDuration}ms ${TRANSITION.collapseEasing}`}`,
+      width: SIDEBAR_WIDTH_EXPANDED,
+      clipPath: expanded ? 'inset(0 0 0 0)' : `inset(0 ${clippedWidth}px 0 0)`,
+      transition: `clip-path ${expanded ? `${TRANSITION.expandDuration}ms ${TRANSITION.expandEasing}` : `${TRANSITION.collapseDuration}ms ${TRANSITION.collapseEasing}`}`,
     }
-
-  // data-collapsing overrides transition inline — handled via DOM ref in handleCollapse
-  // CSS in global styles picks up [data-collapsing] to use collapse easing
 
   const isActive = (href: string, exact = false) =>
     exact ? pathname === href : pathname === href || pathname.startsWith(href + '/')
 
   const sidebarPaddingStyle = { paddingInline: SIDEBAR_PADDING }
-  const dividerStyle = {
-    marginInline: SIDEBAR_DIVIDER_INSET,
-    marginBlock: SIDEBAR_SECTION_GAP,
+  const dashboardRegionStyle = {
+    paddingInline: SIDEBAR_PADDING,
   }
 
   return (
@@ -137,11 +111,12 @@ export const Sidebar = ({ userDisplay, tier, isAdmin: _isAdmin, isDevMode: _isDe
       <ConfirmDialog
         open={showLeaveConfirm}
         onOpenChange={setShowLeaveConfirm}
-        title="Leave active session?"
-        description="You have an active session. Are you sure you want to leave?"
-        confirmLabel="Leave"
-        cancelLabel="Stay"
+        title="Leave quiz?"
+        description="Your saved answers will remain. You can resume this session later."
+        confirmLabel="Resume later"
+        cancelLabel="Stay in quiz"
         onConfirm={handleLeaveConfirm}
+        loading={leaveConfirmLoading}
       />
 
       {/* Sidebar nav shell — structural flex child, displaces content */}
@@ -151,11 +126,14 @@ export const Sidebar = ({ userDisplay, tier, isAdmin: _isAdmin, isDevMode: _isDe
         onMouseDown={handleNavMouseDown}
         style={{
           position: 'relative',
+          zIndex: 20,
           flexShrink: 0,
           height: '100dvh',
           flexDirection: 'column',
           overflow: 'hidden',
-          borderRight: '1px solid var(--border)',
+          contain: 'layout paint style',
+          willChange: 'clip-path',
+          transform: 'translateZ(0)',
           ...sidebarStyle,
         }}
         className="hidden bg-white lg:flex lg:flex-col"
@@ -166,15 +144,23 @@ export const Sidebar = ({ userDisplay, tier, isAdmin: _isAdmin, isDevMode: _isDe
             aria-hidden="true"
           />
         )}
-        <SidebarHeader expanded={expanded} />
+        <SidebarHeader
+          expanded={expanded}
+          tier={tier}
+          onToggle={handleToggle}
+          toggleRef={toggleRef}
+        />
 
         {/* Scrollable body */}
         <div
           style={{ padding: 0 }}
-          className="flex flex-1 flex-col overflow-y-auto overflow-x-hidden py-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+          className="flex flex-1 flex-col overflow-y-auto overflow-x-hidden [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
         >
-          {/* Dashboard — standalone */}
-          <div className="pt-2" style={sidebarPaddingStyle}>
+          {/* Dashboard — standalone; bottom rule aligns with HeaderHero bottom edge. */}
+          <div
+            className="flex h-[72px] shrink-0 items-center border-b border-border xl:h-[76px]"
+            style={dashboardRegionStyle}
+          >
             <SidebarNavItem
               item={DASHBOARD_ITEM}
               isActive={isActive(DASHBOARD_ITEM.href, true)}
@@ -185,11 +171,8 @@ export const Sidebar = ({ userDisplay, tier, isAdmin: _isAdmin, isDevMode: _isDe
             />
           </div>
 
-          {/* Separator */}
-          <div className="border-t border-border" style={dividerStyle} />
-
           {/* Nav groups */}
-          <div className="flex flex-col gap-3" style={sidebarPaddingStyle}>
+          <div className="flex flex-col gap-3 pt-3" style={sidebarPaddingStyle}>
             {SIDEBAR_GROUPS.map((group, groupIdx) => (
               <div key={group.key} className="flex flex-col gap-1">
                 {/* Group header slot stays mounted at the same height in both states.
@@ -247,8 +230,6 @@ export const Sidebar = ({ userDisplay, tier, isAdmin: _isAdmin, isDevMode: _isDe
           expanded={expanded}
           userDisplay={userDisplay}
           tier={tier}
-          onToggle={handleToggle}
-          toggleRef={toggleRef}
         />
       </nav>
     </>

@@ -9,6 +9,8 @@ import type { Icon as PhosphorIcon } from '@phosphor-icons/react/lib'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { Eyebrow } from '@/components/ui/eyebrow'
 import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Card } from '@/components/ui/card'
 import { cn } from '@/lib/utils'
 
 interface ModeCardProps {
@@ -53,9 +55,10 @@ export function ModeCard({
   muted,
 }: ModeCardProps) {
   return (
-    <div
+    <Card
+      size='lg'
       className={cn(
-        'group relative bg-card border border-border rounded-md p-6 transition-all duration-150 hover:shadow-sm hover:border-primary/20 flex flex-col h-full',
+        'relative h-full rounded-md transition-all duration-150 hover:border-primary/20 hover:shadow-sm',
         disabled && 'opacity-60 grayscale pointer-events-none',
         muted && 'opacity-70',
       )}
@@ -130,10 +133,14 @@ export function ModeCard({
 
       {/* Status Badge */}
       {hasActiveSession && (
-        <div className='absolute top-4 right-4 bg-primary/10 text-primary text-[11px] font-bold uppercase tracking-wider px-2 py-1 rounded-md'>
+        <Badge
+          variant='primary'
+          size='xs'
+          className='absolute top-4 right-4 rounded-md font-bold'
+        >
           In Progress
-        </div>
+        </Badge>
       )}
-    </div>
+    </Card>
   )
 }

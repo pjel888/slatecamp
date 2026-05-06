@@ -1,4 +1,4 @@
-import SharedPageLayout from '@/components/layouts/SharedPageLayout'
+import { PracticeLayout } from '@/components/layouts/category/PracticeLayout'
 import { getCramCardData } from '@/lib/actions/cram-card'
 import { CramCardPage } from './_components/CramCardPage'
 
@@ -10,9 +10,14 @@ const CramCardServerPage = async () => {
   const data = await getCramCardData()
 
   return (
-    <SharedPageLayout>
+    <PracticeLayout
+      hero={{
+        subtitle: 'Cram Card',
+        description: 'Quick-reference flash cards for last-minute exam review.',
+      }}
+    >
       <CramCardPage data={data} />
-    </SharedPageLayout>
+    </PracticeLayout>
   )
 }
 

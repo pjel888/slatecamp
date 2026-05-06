@@ -5,11 +5,13 @@ SlateCamp uses Bun for package and script execution. Commands below reflect the 
 ## Export article bundles
 
 ```bash
-bun run content-audit:export -- --limit 25
-bun run content-audit:export -- --article-id <article_id>
-bun run content-audit:export -- --slug <slug>
-bun run content-audit:export -- --changed-only
+bun run content-audit:pull -- --limit 25
+bun run content-audit:pull -- --article-id <article_id>
+bun run content-audit:pull -- --slug <slug>
+bun run content-audit:pull -- --changed-only
 ```
+
+`content-audit:export` remains a legacy alias for `content-audit:pull`.
 
 Useful flags:
 

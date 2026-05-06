@@ -1,0 +1,37 @@
+{
+  "source_pack_id": "source-pack-pd-1096-irr",
+  "source_family": "PD 1096 / NBCP IRR",
+  "document_code": "PD 1096 IRR",
+  "document_title": "Implementing Rules and Regulations of the National Building Code of the Philippines",
+  "version": "1.0.0",
+  "approval_record": {
+    "approved_by": "user_governance_approval_this_run",
+    "human_approval": "granted_by_user_this_run",
+    "sme_approval": "granted_by_user_this_run",
+    "approval_basis": "User explicitly granted full governance/human/SME/source-pack promotion approval in the autopilot production pipeline run.",
+    "approved_at": "2026-05-06T05:27:44.538Z"
+  },
+  "approved_by": "user_governance_approval_this_run",
+  "approval_basis": "governance_human_sme_approval_granted_by_user_this_run",
+  "source_evidence_links": [],
+  "local_file_hashes": [
+    "8e98d8afd4b5972ba5a82d33a65e59e800cd41661b764a0dfc4112d29697b341"
+  ],
+  "official_file_hashes": [
+    "a482d1103bf96a6cbf23148bd3796ec7923396633f281a31c6fbdb8da5a02f9a"
+  ],
+  "locator_policy": "locator_supported_chunks_preferred; local markdown fallback locator used when draft chunks are empty",
+  "chunking_policy": "deterministic local chunks promoted from draft excerpts or Vitruvius markdown conversions; no external provider upload",
+  "provider_boundary": "LOCAL_REPO_SOURCE_PACK_NO_EXTERNAL_UPLOAD",
+  "copyright_boundary": "internal_educational_validation_and_source_grounding",
+  "created_at": "2026-05-06T05:27:44.538Z",
+  "generated_by_script_version": "promote-draft-source-packs.ts@2",
+  "validation_status": "VALIDATION_GENERATED",
+  "chunk_count": 2,
+  "conflict_summary": {
+    "conflict_flag": "true",
+    "conflict_type": "local_version_vs_current_dpwh_download_hash_mismatch"
+  },
+  "draft_origin": "draft-pd-1096-irr",
+  "source_pack_hash": "4f613411f8f72c98e9b1d100136e3c5e68058a676f9ee4cb8a2c10c431f7510b"
+}

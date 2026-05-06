@@ -1,0 +1,5 @@
+=== bun run type-check ===
+$ bun scripts/type-check.ts
+scripts/normalize-distractors.ts(15,20): error TS2307: Cannot find module 'openai' or its corresponding type declarations.
+EXIT_CODE=2
+START= END=

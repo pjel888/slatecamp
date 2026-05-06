@@ -19,10 +19,9 @@ export const CramCardGate = ({ totalSessions }: Props) => {
         YOUR CRAM CARD
       </p>
 
-      {/* Heading */}
-      <h1 className="text-xl font-semibold text-foreground leading-snug">
+      <h2 className="text-xl font-semibold text-foreground leading-snug">
         Your card isn&apos;t ready yet
-      </h1>
+      </h2>
 
       {/* Body */}
       <p className="text-sm text-muted-foreground leading-relaxed">

@@ -1,0 +1,25 @@
+{
+  "ok": true,
+  "checks": [
+    {
+      "name": "json_parses",
+      "status": "PASS"
+    },
+    {
+      "name": "links_present",
+      "status": "PASS"
+    },
+    {
+      "name": "all_local_only",
+      "status": "PASS"
+    },
+    {
+      "name": "no_mutations",
+      "status": "PASS"
+    },
+    {
+      "name": "no_positive_approval_labels",
+      "status": "PASS"
+    }
+  ]
+}

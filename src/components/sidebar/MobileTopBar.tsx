@@ -3,6 +3,7 @@
 import { List } from '@phosphor-icons/react/dist/ssr'
 import { Z_INDEX } from './types'
 import { SlateCampLogo } from '@/components/graphics/logos/SlateCampLogo'
+import { Button } from '@/components/ui/button'
 
 // ---------------------------------------------------------------------------
 // MobileTopBar — fixed 42px bar visible only below lg breakpoint
@@ -29,14 +30,15 @@ export const MobileTopBar = ({ onOpenDrawer }: MobileTopBarProps) => {
       }}
     >
       {/* Hamburger button */}
-      <button
+      <Button
         onClick={onOpenDrawer}
         aria-label="Open navigation"
-        className="flex items-center justify-center rounded-md text-text-secondary transition-colors duration-150 hover:bg-gray-100 dark:hover:bg-gray-800 dark:text-gray-400 outline-none focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-camp-cobalt"
-        style={{ width: 34, height: 34 }}
+        variant="ghost"
+        size="icon"
+        className="size-[34px] text-text-secondary hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800"
       >
         <List size={16} weight="regular" className="w-4 h-4" />
-      </button>
+      </Button>
 
       {/* Wordmark logo */}
       <SlateCampLogo size="sm" className="ml-1" />

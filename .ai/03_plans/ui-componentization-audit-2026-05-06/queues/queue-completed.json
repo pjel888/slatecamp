@@ -1,0 +1,327 @@
+[
+  {
+    "id": "UIA-PUBLIC-0022",
+    "file": "src/app/(auth)/login/login-form.tsx",
+    "line": null,
+    "surface": "auth",
+    "component": "LoginForm error",
+    "current_pattern": "custom alert div",
+    "classification": "definite_drift",
+    "risk": "low",
+    "proposed_target": "Alert / AuthErrorAlert",
+    "user_impact": "Reduce UI drift and improve consistency/accessibility where safe.",
+    "implementation_notes": "Implement only from queue in small batches after reading current file and preserving behavior.",
+    "storybook_required": true,
+    "storybook_story_path": null,
+    "tests_required": [
+      "bun run type-check",
+      "bun run lint"
+    ],
+    "visual_routes": [
+      "/login"
+    ],
+    "reviewer_notes": null,
+    "final_status": "completed",
+    "validation_result": "Implemented via shared AuthErrorAlert, lint/check-storybook/build-storybook/browser login inspection passed; type-check remains blocked by pre-existing missing openai baseline error."
+  },
+  {
+    "id": "UIA-PUBLIC-0023",
+    "file": "src/app/(auth)/register/register-form.tsx",
+    "line": null,
+    "surface": "auth",
+    "component": "RegisterForm error",
+    "current_pattern": "custom alert div",
+    "classification": "definite_drift",
+    "risk": "low",
+    "proposed_target": "Alert / AuthErrorAlert",
+    "user_impact": "Reduce UI drift and improve consistency/accessibility where safe.",
+    "implementation_notes": "Implement only from queue in small batches after reading current file and preserving behavior.",
+    "storybook_required": true,
+    "storybook_story_path": null,
+    "tests_required": [
+      "bun run type-check",
+      "bun run lint"
+    ],
+    "visual_routes": [
+      "/register"
+    ],
+    "reviewer_notes": null,
+    "final_status": "completed",
+    "validation_result": "Implemented via shared AuthErrorAlert, lint/check-storybook/build-storybook/browser login inspection passed; type-check remains blocked by pre-existing missing openai baseline error."
+  },
+  {
+    "id": "UIA-DSS-0003",
+    "file": "src/components/sidebar/MobileDrawer.tsx",
+    "line": null,
+    "surface": "shell/sidebar",
+    "component": "MobileDrawer close button",
+    "current_pattern": "raw icon button",
+    "classification": "definite_drift",
+    "risk": "low",
+    "proposed_target": "CloseButton or Button icon",
+    "user_impact": "Reduce UI drift and improve consistency/accessibility where safe.",
+    "implementation_notes": "Implement only from queue in small batches after reading current file and preserving behavior.",
+    "storybook_required": true,
+    "storybook_story_path": null,
+    "tests_required": [
+      "bun run type-check",
+      "bun run lint"
+    ],
+    "visual_routes": [
+      "/dashboard"
+    ],
+    "reviewer_notes": null,
+    "final_status": "completed",
+    "validation_result": "MobileTopBar hamburger and MobileDrawer close controls migrated to shared Button icon; Storybook stories and quiz-v2 server-action mock added; lint/check-storybook/build-storybook/browser screenshot inspection passed; type-check blocked only by pre-existing missing openai baseline error."
+  },
+  {
+    "id": "UIA-DSS-0004",
+    "file": "src/components/sidebar/MobileTopBar.tsx",
+    "line": null,
+    "surface": "shell/sidebar",
+    "component": "MobileTopBar",
+    "current_pattern": "raw hamburger button",
+    "classification": "definite_drift",
+    "risk": "low",
+    "proposed_target": "Button icon variant",
+    "user_impact": "Reduce UI drift and improve consistency/accessibility where safe.",
+    "implementation_notes": "Implement only from queue in small batches after reading current file and preserving behavior.",
+    "storybook_required": true,
+    "storybook_story_path": null,
+    "tests_required": [
+      "bun run type-check",
+      "bun run lint"
+    ],
+    "visual_routes": [
+      "/dashboard"
+    ],
+    "reviewer_notes": null,
+    "final_status": "completed",
+    "validation_result": "MobileTopBar hamburger and MobileDrawer close controls migrated to shared Button icon; Storybook stories and quiz-v2 server-action mock added; lint/check-storybook/build-storybook/browser screenshot inspection passed; type-check blocked only by pre-existing missing openai baseline error."
+  },
+  {
+    "id": "UIA-DEV-0005",
+    "file": "src/app/developer/_components/EndpointCard.tsx",
+    "line": null,
+    "surface": "developer",
+    "component": "EndpointCard",
+    "current_pattern": "raw button",
+    "classification": "definite_drift",
+    "risk": "low",
+    "proposed_target": "Button",
+    "user_impact": "Reduce UI drift and improve consistency/accessibility where safe.",
+    "implementation_notes": "Implement only from queue in small batches after reading current file and preserving behavior.",
+    "storybook_required": true,
+    "storybook_story_path": null,
+    "tests_required": [
+      "bun run type-check",
+      "bun run lint"
+    ],
+    "visual_routes": [
+      "/developer/api-reference"
+    ],
+    "reviewer_notes": null,
+    "final_status": "completed",
+    "validation_result": "EndpointCard moved to shared components/developer, expandable raw button migrated to shared Button preserving type=button and gap-2.5; Storybook story added; lint/check-storybook/build-storybook/visual screenshot inspection passed; type-check blocked only by baseline missing openai."
+  },
+  {
+    "id": "UIA-PUBLIC-0003",
+    "file": "src/components/marketing/PricingCard.tsx",
+    "line": null,
+    "surface": "pricing",
+    "component": "PricingCard",
+    "current_pattern": "custom Link-as-button CTA/card",
+    "classification": "definite_drift",
+    "risk": "low",
+    "proposed_target": "Button asChild + Card",
+    "user_impact": "Reduce UI drift and improve consistency/accessibility where safe.",
+    "implementation_notes": "Implement only from queue in small batches after reading current file and preserving behavior.",
+    "storybook_required": true,
+    "storybook_story_path": null,
+    "tests_required": [
+      "bun run type-check",
+      "bun run lint"
+    ],
+    "visual_routes": [
+      "/pricing"
+    ],
+    "reviewer_notes": null,
+    "final_status": "completed",
+    "validation_result": "Completed earlier in Batch 2: PricingCard CTA migrated to shared Button asChild and Storybook coverage added."
+  },
+  {
+    "id": "UIA-DSS-0011",
+    "file": "src/components/dashboard/ModeCard.tsx",
+    "line": null,
+    "surface": "dashboard",
+    "component": "ModeCard",
+    "current_pattern": "custom card shell/status badge",
+    "classification": "definite_drift",
+    "risk": "low",
+    "proposed_target": "Card + Badge",
+    "user_impact": "Reduce UI drift and improve consistency/accessibility where safe.",
+    "implementation_notes": "Implement only from queue in small batches after reading current file and preserving behavior.",
+    "storybook_required": true,
+    "storybook_story_path": null,
+    "tests_required": [
+      "bun run type-check",
+      "bun run lint"
+    ],
+    "visual_routes": [
+      "/dashboard/quiz"
+    ],
+    "reviewer_notes": null,
+    "final_status": "completed",
+    "validation_result": "ModeCard root migrated to shared Card and active-session status to shared Badge; Storybook coverage added; lint/check-storybook/build-storybook passed; visual screenshots inspected; type-check blocked only by baseline missing openai."
+  },
+  {
+    "id": "UIA-ADMIN-0001",
+    "file": "src/components/admin/AssetList.tsx",
+    "line": null,
+    "surface": "admin",
+    "component": "AssetList",
+    "current_pattern": "raw input/select filters",
+    "classification": "definite_drift",
+    "risk": "low",
+    "proposed_target": "Input + Select",
+    "user_impact": "Reduce UI drift and improve consistency/accessibility where safe.",
+    "implementation_notes": "Implement only from queue in small batches after reading current file and preserving behavior.",
+    "storybook_required": true,
+    "storybook_story_path": null,
+    "tests_required": [
+      "bun run type-check",
+      "bun run lint"
+    ],
+    "visual_routes": [
+      "/admin/assets"
+    ],
+    "reviewer_notes": null,
+    "final_status": "completed",
+    "validation_result": "AssetList search input migrated to shared Input and status/system filters to shared Select; aria labels added; Storybook coverage added; lint/check-storybook/build-storybook/visual inspection passed; type-check remains blocked only by baseline missing openai."
+  },
+  {
+    "id": "UIA-PUBLIC-0018",
+    "file": "src/components/calculators/InputPrimitives.tsx",
+    "line": null,
+    "surface": "tools",
+    "component": "CheckboxField",
+    "current_pattern": "custom raw checkbox",
+    "classification": "definite_drift",
+    "risk": "low",
+    "proposed_target": "Checkbox + Label",
+    "user_impact": "Reduce UI drift and improve consistency/accessibility where safe.",
+    "implementation_notes": "Implement only from queue in small batches after reading current file and preserving behavior.",
+    "storybook_required": true,
+    "storybook_story_path": null,
+    "tests_required": [
+      "bun run type-check",
+      "bun run lint"
+    ],
+    "visual_routes": [
+      "/tools/paint"
+    ],
+    "reviewer_notes": null,
+    "final_status": "completed",
+    "validation_result": "CheckboxField migrated to shared Checkbox + Label with useId htmlFor/id linkage; Storybook coverage added; lint/check-storybook/build-storybook passed; Playwright verified label and checkbox toggles; type-check blocked only by baseline missing openai."
+  },
+  {
+    "id": "UIA-QZ-0008",
+    "file": "src/components/quiz-v2/setup",
+    "line": null,
+    "surface": "quiz",
+    "component": "Setup selectors",
+    "current_pattern": "raw selector controls",
+    "classification": "definite_drift",
+    "risk": "medium",
+    "proposed_target": "Button/Input/domain selector primitives",
+    "user_impact": "Reduce UI drift and improve consistency/accessibility where safe.",
+    "implementation_notes": "Implement only from queue in small batches after reading current file and preserving behavior.",
+    "storybook_required": true,
+    "storybook_story_path": null,
+    "tests_required": [
+      "bun run type-check",
+      "bun run lint"
+    ],
+    "visual_routes": [
+      "/dashboard/quiz"
+    ],
+    "reviewer_notes": null,
+    "final_status": "completed",
+    "validation_result": "Quiz setup selectors migrated where safe to shared Button/Input primitives; SetupControls Storybook coverage added; lint/check-storybook/build-storybook passed; type-check only baseline missing openai; Playwright screenshots captured."
+  },
+  {
+    "id": "UIA-QZ-0013",
+    "file": "src/components/quiz-v2",
+    "line": null,
+    "surface": "quiz",
+    "component": "Quiz Storybook gaps",
+    "current_pattern": "only three quiz-v2 stories found",
+    "classification": "definite_drift",
+    "risk": "low",
+    "proposed_target": "Add stories for overlays/session/results",
+    "user_impact": "Reduce UI drift and improve consistency/accessibility where safe.",
+    "implementation_notes": "Implement only from queue in small batches after reading current file and preserving behavior.",
+    "storybook_required": true,
+    "storybook_story_path": null,
+    "tests_required": [
+      "bun run type-check",
+      "bun run lint"
+    ],
+    "visual_routes": [
+      "/dashboard/quiz"
+    ],
+    "reviewer_notes": null,
+    "final_status": "completed",
+    "validation_result": "Added quiz-v2 overlay/results Storybook coverage; lint/check-storybook/build-storybook passed; visual screenshots captured; type-check baseline openai only."
+  },
+  {
+    "id": "UIA-CEO-0005",
+    "file": "src/components/ceo/RoleAssignmentModal.tsx",
+    "line": null,
+    "surface": "ceo",
+    "component": "RoleAssignmentModal",
+    "current_pattern": "Dialog with raw radio/buttons",
+    "classification": "definite_drift",
+    "risk": "medium",
+    "proposed_target": "RadioGroup + Button",
+    "user_impact": "Reduce UI drift and improve consistency/accessibility where safe.",
+    "implementation_notes": "Implement only from queue in small batches after reading current file and preserving behavior.",
+    "storybook_required": true,
+    "storybook_story_path": null,
+    "tests_required": [
+      "bun run type-check",
+      "bun run lint"
+    ],
+    "visual_routes": [
+      "/ceo/team"
+    ],
+    "reviewer_notes": null,
+    "final_status": "completed",
+    "validation_result": "RoleAssignmentModal radio/buttons migrated to RadioGroup/Button; Storybook action mock added; lint/check-storybook/build-storybook passed; Playwright rendered modal and selected Viewer."
+  },
+  {
+    "id": "UIA-PORTAL-0001",
+    "file": "src/components/portal/PortalSidebar.tsx",
+    "line": null,
+    "surface": "portal",
+    "component": "PortalSidebar",
+    "current_pattern": "raw search input",
+    "classification": "definite_drift",
+    "risk": "medium",
+    "proposed_target": "Input / PortalSearchField",
+    "user_impact": "Reduce UI drift and improve consistency/accessibility where safe.",
+    "implementation_notes": "Implement only from queue in small batches after reading current file and preserving behavior.",
+    "storybook_required": true,
+    "storybook_story_path": null,
+    "tests_required": [
+      "bun run type-check",
+      "bun run lint"
+    ],
+    "visual_routes": [
+      "/developer"
+    ],
+    "reviewer_notes": null,
+    "final_status": "completed",
+    "validation_result": "PortalSidebar raw search input migrated to shared Input; aria-label added; Storybook story added; lint/check-storybook/build-storybook/git diff --check passed; Playwright verified default and filtered auth state at desktop width."
+  }
+]

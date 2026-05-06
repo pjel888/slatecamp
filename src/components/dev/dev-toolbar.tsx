@@ -17,11 +17,17 @@ import {
   Terminal,
 } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
+import { Switch } from '@/components/ui/switch'
 import type { Icon as PhosphorIcon } from '@phosphor-icons/react/lib'
 import { useDraggableFloatingPosition } from '@/lib/hooks/useDraggableFloatingPosition'
 import { useDevStore } from '@/stores/dev-store'
 import type { UserTier } from '@/types/app'
 import type { DevConnectionState } from '@/lib/dev/dev-mode'
+import {
+  DEV_MODE_BORDER_CHANGE_EVENT,
+  readDevModeBorderVisible,
+  writeDevModeBorderVisible,
+} from '@/lib/dev/dev-mode-visuals'
 import type { FeatureFlags } from '@/lib/entitlements/dev-overrides'
 import { ROUTES } from '@/lib/routes'
 
@@ -62,6 +68,7 @@ export function DevToolbar({
   const [effectiveTier, setEffectiveTier] = useState(initialEffective)
   const [flags, setFlags] = useState(initialFlags)
   const [saving, setSaving] = useState(false)
+  const [showDevBorder, setShowDevBorder] = useState(true)
   const router = useRouter()
 
   const isLocal = connectionState === 'local'
@@ -70,6 +77,27 @@ export function DevToolbar({
     setEffectiveTier(initialEffective)
     setFlags(initialFlags)
   }, [initialEffective, initialFlags])
+
+  useEffect(() => {
+    const syncBorderPreference = () => {
+      setShowDevBorder(readDevModeBorderVisible(window.localStorage))
+    }
+
+    syncBorderPreference()
+    window.addEventListener(DEV_MODE_BORDER_CHANGE_EVENT, syncBorderPreference)
+    window.addEventListener('storage', syncBorderPreference)
+
+    return () => {
+      window.removeEventListener(DEV_MODE_BORDER_CHANGE_EVENT, syncBorderPreference)
+      window.removeEventListener('storage', syncBorderPreference)
+    }
+  }, [])
+
+  function toggleDevBorder(visible: boolean) {
+    setShowDevBorder(visible)
+    writeDevModeBorderVisible(window.localStorage, visible)
+    window.dispatchEvent(new Event(DEV_MODE_BORDER_CHANGE_EVENT))
+  }
 
   const persist = useCallback(
     async (newFlags: FeatureFlags) => {
@@ -226,6 +254,26 @@ export function DevToolbar({
                 — {isLocal ? 'mock data' : 'live Supabase'}
               </span>
             </p>
+          </div>
+
+          {/* Visual indicators */}
+          <div className='border-b border-border px-3 py-2.5'>
+            <div className='flex items-center justify-between gap-3'>
+              <div>
+                <span className='text-[11px] font-medium uppercase tracking-wider text-muted-foreground'>
+                  Visuals
+                </span>
+                <p className='mt-1 text-[11px] text-foreground'>
+                  Dev mode orange browser frame
+                </p>
+              </div>
+              <Switch
+                size='sm'
+                checked={showDevBorder}
+                onCheckedChange={(checked) => toggleDevBorder(Boolean(checked))}
+                aria-label='Toggle dev mode orange browser frame'
+              />
+            </div>
           </div>
 
           {/* Tier Switcher */}

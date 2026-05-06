@@ -1,0 +1,177 @@
+[
+  {
+    "id": "UIA-DSS-0007",
+    "file": "src/components/sidebar/MobileDrawer.tsx",
+    "line": null,
+    "surface": "shell/sidebar",
+    "component": "MobileNavItem",
+    "current_pattern": "duplicated mobile nav item pattern",
+    "classification": "shared_pattern",
+    "risk": "medium",
+    "proposed_target": "AppNavItem pattern",
+    "user_impact": "Reduce UI drift and improve consistency/accessibility where safe.",
+    "implementation_notes": "Implement only from queue in small batches after reading current file and preserving behavior.",
+    "storybook_required": true,
+    "storybook_story_path": null,
+    "tests_required": [
+      "bun run type-check",
+      "bun run lint"
+    ],
+    "visual_routes": [
+      "/dashboard"
+    ],
+    "reviewer_notes": null,
+    "final_status": "open",
+    "validation_result": null
+  },
+  {
+    "id": "UIA-DSS-0008",
+    "file": "src/components/dashboard/ResultsDayBanner.tsx",
+    "line": null,
+    "surface": "dashboard",
+    "component": "ResultsDayBanner",
+    "current_pattern": "custom banner with raw buttons",
+    "classification": "shared_pattern",
+    "risk": "low",
+    "proposed_target": "DashboardActionBanner",
+    "user_impact": "Reduce UI drift and improve consistency/accessibility where safe.",
+    "implementation_notes": "Implement only from queue in small batches after reading current file and preserving behavior.",
+    "storybook_required": true,
+    "storybook_story_path": null,
+    "tests_required": [
+      "bun run type-check",
+      "bun run lint"
+    ],
+    "visual_routes": [
+      "/dashboard"
+    ],
+    "reviewer_notes": null,
+    "final_status": "open",
+    "validation_result": null
+  },
+  {
+    "id": "UIA-DSS-0009",
+    "file": "src/components/dashboard/TransitionPrompt.tsx",
+    "line": null,
+    "surface": "dashboard",
+    "component": "TransitionPrompt",
+    "current_pattern": "custom banner duplicated with ResultsDayBanner",
+    "classification": "shared_pattern",
+    "risk": "low",
+    "proposed_target": "DashboardActionBanner",
+    "user_impact": "Reduce UI drift and improve consistency/accessibility where safe.",
+    "implementation_notes": "Implement only from queue in small batches after reading current file and preserving behavior.",
+    "storybook_required": true,
+    "storybook_story_path": null,
+    "tests_required": [
+      "bun run type-check",
+      "bun run lint"
+    ],
+    "visual_routes": [
+      "/dashboard"
+    ],
+    "reviewer_notes": null,
+    "final_status": "open",
+    "validation_result": null
+  },
+  {
+    "id": "UIA-WIKI-0007",
+    "file": "src/components/wiki/blocks/InlineQuiz.tsx",
+    "line": null,
+    "surface": "wiki",
+    "component": "InlineQuiz",
+    "current_pattern": "custom quiz option states",
+    "classification": "shared_pattern",
+    "risk": "medium",
+    "proposed_target": "QuizOptionButton / QuizFeedbackPanel",
+    "user_impact": "Reduce UI drift and improve consistency/accessibility where safe.",
+    "implementation_notes": "Implement only from queue in small batches after reading current file and preserving behavior.",
+    "storybook_required": true,
+    "storybook_story_path": null,
+    "tests_required": [
+      "bun run type-check",
+      "bun run lint"
+    ],
+    "visual_routes": [
+      "/dashboard/wiki"
+    ],
+    "reviewer_notes": null,
+    "final_status": "open",
+    "validation_result": null
+  },
+  {
+    "id": "UIA-QZ-0002",
+    "file": "src/components/quiz-v2/SubmitConfirmModal.tsx",
+    "line": null,
+    "surface": "quiz",
+    "component": "SubmitConfirmModal",
+    "current_pattern": "Dialog plus custom answer grid",
+    "classification": "shared_pattern",
+    "risk": "high",
+    "proposed_target": "QuizQuestionStatusGrid",
+    "user_impact": "Reduce UI drift and improve consistency/accessibility where safe.",
+    "implementation_notes": "Implement only from queue in small batches after reading current file and preserving behavior.",
+    "storybook_required": true,
+    "storybook_story_path": null,
+    "tests_required": [
+      "bun run type-check",
+      "bun run lint"
+    ],
+    "visual_routes": [
+      "/dashboard/quiz"
+    ],
+    "reviewer_notes": null,
+    "final_status": "open",
+    "validation_result": null
+  },
+  {
+    "id": "UIA-ADMIN-0003",
+    "file": "src/components/admin/QuestionsTableClient.tsx",
+    "line": null,
+    "surface": "admin",
+    "component": "QuestionsTableClient",
+    "current_pattern": "custom table/checkbox/pagination",
+    "classification": "shared_pattern",
+    "risk": "medium",
+    "proposed_target": "DataTable + Checkbox + Button",
+    "user_impact": "Reduce UI drift and improve consistency/accessibility where safe.",
+    "implementation_notes": "Implement only from queue in small batches after reading current file and preserving behavior.",
+    "storybook_required": true,
+    "storybook_story_path": null,
+    "tests_required": [
+      "bun run type-check",
+      "bun run lint"
+    ],
+    "visual_routes": [
+      "/admin/knowledge/questions"
+    ],
+    "reviewer_notes": null,
+    "final_status": "open",
+    "validation_result": null
+  },
+  {
+    "id": "UIA-ADMIN-0006",
+    "file": "src/app/admin/ai-audit/questions/page.tsx",
+    "line": null,
+    "surface": "admin",
+    "component": "AI audit tables",
+    "current_pattern": "route-local raw tables/actions",
+    "classification": "shared_pattern",
+    "risk": "medium",
+    "proposed_target": "AdminAuditTable",
+    "user_impact": "Reduce UI drift and improve consistency/accessibility where safe.",
+    "implementation_notes": "Implement only from queue in small batches after reading current file and preserving behavior.",
+    "storybook_required": true,
+    "storybook_story_path": null,
+    "tests_required": [
+      "bun run type-check",
+      "bun run lint"
+    ],
+    "visual_routes": [
+      "/admin/ai-audit/questions"
+    ],
+    "reviewer_notes": null,
+    "final_status": "open",
+    "validation_result": null
+  }
+]

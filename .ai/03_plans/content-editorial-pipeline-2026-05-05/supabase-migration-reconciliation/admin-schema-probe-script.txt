@@ -1,0 +1,11 @@
+$ bun scripts/content-audit/validate-admin-ai-audit-schema.ts
+exit_code=0
+
+{
+  "ok": true,
+  "status": "DB_SCHEMA_PROBE_SKIPPED_NO_ENV",
+  "outputs": [
+    "/Users/philiplewis/slatecamp/.ai/03_plans/content-editorial-pipeline-2026-05-05/admin-ai-audit-schema-probe.generated.md",
+    "/Users/philiplewis/slatecamp/.ai/03_plans/content-editorial-pipeline-2026-05-05/admin-ai-audit-schema-probe.generated.json"
+  ]
+}

@@ -8,11 +8,11 @@
 
 **Scope:** `src/components/layout/` subtree
 
-**Current snapshot:** 0 directories and 1 files beneath this scope (excluding this `AGENTS.md`).
+**Current snapshot:** 0 directories and 2 files beneath this scope (excluding this `AGENTS.md`).
 
 **Top local directories:** none
 
-**Top local files:** `HeaderActions.tsx`
+**Top local files:** `HeaderActions.tsx`, `HeaderHero.tsx`
 
 ### What agents must do here
 - Inspect the consuming routes/features before changing shared UI behavior in this subtree.

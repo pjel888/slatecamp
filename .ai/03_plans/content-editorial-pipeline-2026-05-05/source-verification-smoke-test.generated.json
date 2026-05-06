@@ -1,0 +1,109 @@
+{
+  "generated_at": "2026-05-06T04:13:12.063Z",
+  "ok": true,
+  "dry_run_only": true,
+  "db_write_attempted": false,
+  "source_approval_status": "blocked",
+  "source_pack_creation_status": "blocked",
+  "source_pack_directory_exists": false,
+  "embeddings_directory_exists": false,
+  "commands": [
+    {
+      "command": [
+        "bun",
+        "scripts/content-audit/build-source-reconciliation-matrix.ts"
+      ],
+      "status": "PASS",
+      "exit_code": 0,
+      "stdout_tail": "{\n  \"ok\": true,\n  \"rows\": 9,\n  \"vitruvius_files_scanned\": 2894,\n  \"outputs\": [\n    \"/Users/philiplewis/slatecamp/.ai/03_plans/content-editorial-pipeline-2026-05-05/source-reconciliation-matrix.generated.csv\",\n    \"/Users/philiplewis/slatecamp/.ai/03_plans/content-editorial-pipeline-2026-05-05/source-reconciliation-matrix.generated.json\",\n    \"/Users/philiplewis/slatecamp/.ai/03_plans/content-editorial-pipeline-2026-05-05/source-reconciliation-report.md\"\n  ]\n}",
+      "stderr_tail": ""
+    },
+    {
+      "command": [
+        "bun",
+        "scripts/content-audit/validate-source-packet-readiness.ts"
+      ],
+      "status": "PASS",
+      "exit_code": 0,
+      "stdout_tail": "{\n  \"ok\": true,\n  \"checks\": 9,\n  \"outputs\": [\n    \"/Users/philiplewis/slatecamp/.ai/03_plans/content-editorial-pipeline-2026-05-05/source-packet-readiness-check.generated.md\",\n    \"/Users/philiplewis/slatecamp/.ai/03_plans/content-editorial-pipeline-2026-05-05/source-packet-readiness-check.generated.json\"\n  ]\n}",
+      "stderr_tail": ""
+    },
+    {
+      "command": [
+        "bun",
+        "scripts/content-audit/extract-source-locators.ts"
+      ],
+      "status": "PASS",
+      "exit_code": 0,
+      "stdout_tail": "{\n  \"ok\": true,\n  \"rows\": 9,\n  \"outputs\": [\n    \"/Users/philiplewis/slatecamp/.ai/03_plans/content-editorial-pipeline-2026-05-05/source-locator-evidence.generated.csv\",\n    \"/Users/philiplewis/slatecamp/.ai/03_plans/content-editorial-pipeline-2026-05-05/source-locator-evidence.generated.json\",\n    \"/Users/philiplewis/slatecamp/.ai/03_plans/content-editorial-pipeline-2026-05-05/source-locator-extraction-report.md\"\n  ]\n}",
+      "stderr_tail": ""
+    },
+    {
+      "command": [
+        "bun",
+        "scripts/content-audit/build-human-sme-packet-prep.ts"
+      ],
+      "status": "PASS",
+      "exit_code": 0,
+      "stdout_tail": "{\n  \"ok\": true,\n  \"packets\": 9,\n  \"outputs\": [\n    \"/Users/philiplewis/slatecamp/.ai/03_plans/content-editorial-pipeline-2026-05-05/source-human-sme-packet-prep.generated.md\",\n    \"/Users/philiplewis/slatecamp/.ai/03_plans/content-editorial-pipeline-2026-05-05/source-human-sme-packet-prep.generated.json\",\n    \"/Users/philiplewis/slatecamp/.ai/03_plans/content-editorial-pipeline-2026-05-05/source-human-sme-review-queue.generated.md\",\n    \"/Users/philiplewis/slatecamp/.ai/03_plans/content-editorial-pipeline-2026-05-05/source-human-sme-conflict-queue.generated.md\"\n  ]\n}",
+      "stderr_tail": ""
+    },
+    {
+      "command": [
+        "bun",
+        "scripts/content-audit/validate-locator-packet-readiness.ts"
+      ],
+      "status": "PASS",
+      "exit_code": 0,
+      "stdout_tail": "{\n  \"ok\": true,\n  \"checks\": 16,\n  \"outputs\": [\n    \"/Users/philiplewis/slatecamp/.ai/03_plans/content-editorial-pipeline-2026-05-05/source-locator-packet-readiness-validation.md\",\n    \"/Users/philiplewis/slatecamp/.ai/03_plans/content-editorial-pipeline-2026-05-05/source-locator-packet-readiness-validation.json\"\n  ]\n}",
+      "stderr_tail": ""
+    },
+    {
+      "command": [
+        "bun",
+        "scripts/content-audit/validate-admin-ai-audit-schema.ts"
+      ],
+      "status": "PASS",
+      "exit_code": 0,
+      "stdout_tail": "{\n  \"ok\": true,\n  \"status\": \"DB_SCHEMA_PROBE_SKIPPED_NO_ENV\",\n  \"outputs\": [\n    \"/Users/philiplewis/slatecamp/.ai/03_plans/content-editorial-pipeline-2026-05-05/admin-ai-audit-schema-probe.generated.md\",\n    \"/Users/philiplewis/slatecamp/.ai/03_plans/content-editorial-pipeline-2026-05-05/admin-ai-audit-schema-probe.generated.json\"\n  ]\n}",
+      "stderr_tail": ""
+    },
+    {
+      "command": [
+        "bun",
+        "scripts/content-audit/build-source-verification-admin-payload.ts"
+      ],
+      "status": "PASS",
+      "exit_code": 0,
+      "stdout_tail": "{\n  \"ok\": true,\n  \"items\": 9,\n  \"findings\": 28,\n  \"proposals\": 9,\n  \"outputs\": [\n    \"/Users/philiplewis/slatecamp/.ai/03_plans/content-editorial-pipeline-2026-05-05/admin-ai-audit-source-payload.dry-run.json\",\n    \"/Users/philiplewis/slatecamp/.ai/03_plans/content-editorial-pipeline-2026-05-05/admin-ai-audit-source-payload-validation.md\"\n  ]\n}",
+      "stderr_tail": ""
+    }
+  ],
+  "artifact_checks": [
+    {
+      "file": "source-reconciliation-matrix.generated.json",
+      "status": "PASS",
+      "details": "ok"
+    },
+    {
+      "file": "source-locator-evidence.generated.json",
+      "status": "PASS",
+      "details": "ok"
+    },
+    {
+      "file": "source-human-sme-packet-prep.generated.json",
+      "status": "PASS",
+      "details": "ok"
+    },
+    {
+      "file": "source-locator-packet-readiness-validation.json",
+      "status": "PASS",
+      "details": "ok"
+    },
+    {
+      "file": "admin-ai-audit-source-payload.dry-run.json",
+      "status": "PASS",
+      "details": "ok"
+    }
+  ]
+}

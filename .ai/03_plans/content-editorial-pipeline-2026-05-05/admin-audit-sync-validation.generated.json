@@ -1,0 +1,25 @@
+{
+  "ok": true,
+  "checks": [
+    {
+      "name": "payloads_present",
+      "status": "PASS"
+    },
+    {
+      "name": "dry_run_default",
+      "status": "PASS"
+    },
+    {
+      "name": "db_write_false",
+      "status": "PASS"
+    },
+    {
+      "name": "items_present",
+      "status": "PASS"
+    },
+    {
+      "name": "payload_hashes_present",
+      "status": "PASS"
+    }
+  ]
+}

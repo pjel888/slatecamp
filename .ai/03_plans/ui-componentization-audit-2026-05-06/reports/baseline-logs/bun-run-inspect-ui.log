@@ -1,0 +1,13 @@
+=== bun run inspect:ui ===
+$ bun scripts/inspect-ui.ts
+[inspect-ui] Running: ./node_modules/.bin/playwright test e2e/ai-inspection.spec.ts --project=chromium
+[inspect-ui] Target port: 3217
+[inspect-ui] Report will be written to: /Users/philiplewis/slatecamp-ui-componentization-audit-2026-05-06/test-results/ai-inspection
+
+Running 1 test using 1 worker
+
+  ✓  1 [chromium] › e2e/ai-inspection.spec.ts:54:7 › AI UI Inspection › homepage — capture diagnostics for AI review (2.2s)
+
+  1 passed (14.1s)
+EXIT_CODE=0
+START= END=

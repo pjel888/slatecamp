@@ -16,7 +16,6 @@ export interface DeveloperTechStackRow {
   notes?: string
 }
 
-const PAYMENTS_VERSION = version('payrex-node')
 const UI_VERSION = `${version('@base-ui/react')} / ${version('shadcn')}`
 const THREE_VERSION = `${version('three')} / ${version('@react-three/fiber')}`
 const CONTENT_VERSION = version('next-mdx-remote')
@@ -38,9 +37,9 @@ export const developerPortalTechStack: DeveloperTechStackRow[] = [
   { label: 'Animation', pkg: 'framer-motion', version: version('framer-motion') },
   {
     label: 'Payments',
-    pkg: 'payrex-node',
-    version: PAYMENTS_VERSION,
-    notes: 'PayRex is the only retained payment provider path for the launch codebase.',
+    pkg: 'deferred provider adapter',
+    version: 'not bundled',
+    notes: 'PayRex SDK is intentionally not bundled for the payment-free launch; checkout/webhook paths fail closed until a future paid-launch implementation re-vets the provider.',
   },
   { label: 'Validation', pkg: 'zod', version: version('zod') },
   {

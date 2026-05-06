@@ -1,0 +1,45 @@
+{
+  "run_id": "source-status-rollback-bae8e1a54b83",
+  "mode": "local_source_status_apply",
+  "local_applied": true,
+  "live_applied": false,
+  "supabase_mutation": false,
+  "reason": "Applied to local .ai source-pack status log only; no Supabase mutation.",
+  "items": [
+    {
+      "source_pack_id": "source-pack-ra-11285",
+      "validation_status": "VALIDATION_GENERATED",
+      "approved_by": "user_governance_approval_this_run"
+    },
+    {
+      "source_pack_id": "source-pack-ra-11201",
+      "validation_status": "VALIDATION_GENERATED",
+      "approved_by": "user_governance_approval_this_run"
+    },
+    {
+      "source_pack_id": "source-pack-dc2019-11-0014",
+      "validation_status": "VALIDATION_GENERATED",
+      "approved_by": "user_governance_approval_this_run"
+    },
+    {
+      "source_pack_id": "source-pack-bp-344-2024-revised-irr",
+      "validation_status": "VALIDATION_GENERATED",
+      "approved_by": "user_governance_approval_this_run"
+    },
+    {
+      "source_pack_id": "source-pack-pd-1096-irr",
+      "validation_status": "VALIDATION_GENERATED",
+      "approved_by": "user_governance_approval_this_run"
+    },
+    {
+      "source_pack_id": "source-pack-ra-9514-rirr",
+      "validation_status": "VALIDATION_GENERATED",
+      "approved_by": "user_governance_approval_this_run"
+    },
+    {
+      "source_pack_id": "source-pack-ra-9266-irr",
+      "validation_status": "VALIDATION_GENERATED",
+      "approved_by": "user_governance_approval_this_run"
+    }
+  ]
+}

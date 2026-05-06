@@ -1,0 +1,90 @@
+{
+  "target_kind": "local_artifact_simulation",
+  "is_production": false,
+  "sql_sha256": "b281681ba2088ead4ee54fd6a6a9d769d1e35f37182dc19c60d1ef8d1445e17b",
+  "expected_objects": [
+    {
+      "kind": "table",
+      "name": "public.ai_audit_runs"
+    },
+    {
+      "kind": "table",
+      "name": "public.ai_audit_items"
+    },
+    {
+      "kind": "table",
+      "name": "public.ai_audit_findings"
+    },
+    {
+      "kind": "table",
+      "name": "public.ai_change_proposals"
+    },
+    {
+      "kind": "table",
+      "name": "public.ai_review_decisions"
+    },
+    {
+      "kind": "table",
+      "name": "public.ai_audit_status_cache"
+    },
+    {
+      "kind": "view",
+      "name": "public.ai_audit_article_overview"
+    },
+    {
+      "kind": "view",
+      "name": "public.ai_audit_question_overview"
+    },
+    {
+      "kind": "view",
+      "name": "public.ai_audit_design_scenario_question_overview"
+    },
+    {
+      "kind": "view",
+      "name": "public.ai_audit_all_question_overview"
+    },
+    {
+      "kind": "view",
+      "name": "public.ai_audit_dashboard_summary"
+    },
+    {
+      "kind": "view",
+      "name": "public.ai_audit_finding_overview"
+    },
+    {
+      "kind": "function",
+      "name": "public.set_ai_audit_updated_at"
+    },
+    {
+      "kind": "function",
+      "name": "public.seed_ai_audit_status_cache"
+    },
+    {
+      "kind": "policy",
+      "name": "Content reviewers manage ai_audit_runs"
+    },
+    {
+      "kind": "policy",
+      "name": "Content reviewers manage ai_audit_items"
+    },
+    {
+      "kind": "policy",
+      "name": "Content reviewers manage ai_audit_findings"
+    },
+    {
+      "kind": "policy",
+      "name": "Content reviewers manage ai_change_proposals"
+    },
+    {
+      "kind": "policy",
+      "name": "Content reviewers manage ai_review_decisions"
+    },
+    {
+      "kind": "policy",
+      "name": "Content reviewers manage ai_audit_status_cache"
+    }
+  ],
+  "object_count": 20,
+  "production_mutation": false,
+  "destructive_scan_hits": []
+}

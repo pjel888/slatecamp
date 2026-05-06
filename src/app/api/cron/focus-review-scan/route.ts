@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server'
 import { createAdminClient } from '@/lib/supabase/admin'
+import { verifyCronRequest } from '@/lib/api/cron-auth'
 import { headers } from 'next/headers'
 import { normalizeTierValue, isPaidSubscription } from '@/lib/entitlements/normalize-tier'
 import { logEntitlementAuditEvent } from '@/lib/entitlements/audit'
@@ -52,12 +53,13 @@ const getPriorityScore = (
 }
 
 export async function GET(_request: Request) {
-  // Verify cron secret
+  // Verify cron secret. Missing CRON_SECRET fails closed instead of accepting
+  // Authorization: Bearer undefined/empty values.
   const headersList = await headers()
-  const authHeader = headersList.get('authorization')
+  const cronAuth = verifyCronRequest(headersList.get('authorization'))
 
-  if (authHeader !== `Bearer ${process.env.CRON_SECRET}`) {
-    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+  if (cronAuth.ok === false) {
+    return cronAuth.response
   }
 
   const supabase = createAdminClient()

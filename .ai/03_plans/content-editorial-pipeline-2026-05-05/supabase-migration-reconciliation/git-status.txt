@@ -1,0 +1,28 @@
+$ git status --short
+exit_code=0
+
+M .ai/00_performance/results/dev_server_memory_profile_built-app.json
+ M .ai/00_performance/results/dev_server_memory_profile_dev-server.json
+ M e2e/visual-login.spec.ts-snapshots/login-page-chromium-darwin.png
+ M src/app/globals.css
+ M src/app/layout.tsx
+ M src/app/pricing/pricing-content.tsx
+ M src/components/dashboard/ActivityHeatmap.tsx
+ M src/components/dashboard/DashboardContentFrame.tsx
+ M src/components/dashboard/HeroCommandBar.tsx
+ M src/components/landing/LandingPageContent.tsx
+ M src/components/landing/LandingPageFallback.tsx
+ M src/components/marketing/HeroHeadline.tsx
+ M src/components/marketing/HeroSection.tsx
+ M src/components/marketing/MarketingFooter.tsx
+ M src/components/marketing/MarketingNav.tsx
+ M src/components/marketing/PricingCard.tsx
+ M src/components/sidebar/Sidebar.tsx
+ M src/components/sidebar/SidebarFooter.tsx
+ M src/components/sidebar/SidebarHeader.tsx
+ M src/components/wiki/quiz/WikiQuizButton.tsx
+ M src/components/wiki/quiz/WikiQuizModal.test.tsx
+ M src/components/wiki/quiz/WikiQuizModal.tsx
+?? .ai/02_audits/2026-05-05-landing-page-audit.md
+?? .ai/03_plans/sidebar-redesign-2026-05-06.md
+?? public/images/dashboard/Dock-Lake-BG-Image.png

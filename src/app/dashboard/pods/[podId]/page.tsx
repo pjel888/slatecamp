@@ -3,6 +3,7 @@ import { getUser } from '@/lib/supabase/server'
 import { ROUTES } from '@/lib/routes'
 import { getPodData } from '@/lib/actions/pods'
 import { PodView } from '../_components/PodView'
+import { DataLayout } from '@/components/layouts/category/DataLayout'
 
 interface PodPageProps {
   params: Promise<{ podId: string }>
@@ -32,9 +33,14 @@ const PodPage = async ({ params }: PodPageProps) => {
   }
 
   return (
-    <div className="mx-auto max-w-xl px-4 py-6">
+    <DataLayout
+      hero={{
+        subtitle: result.data.pod_name,
+        description: 'View your study pod and track progress together.',
+      }}
+    >
       <PodView pod={result.data} currentUserId={user.id} />
-    </div>
+    </DataLayout>
   )
 }
 

@@ -1,0 +1,267 @@
+{
+  "created_at": "2026-05-06T05:24:52.991Z",
+  "target": "source_status",
+  "apply_requested": true,
+  "items": [
+    {
+      "source_pack_id": "source-pack-ra-11285",
+      "source_family": "RA 11285 / Energy Efficiency and Conservation Act",
+      "document_code": "RA 11285",
+      "document_title": "Energy Efficiency and Conservation Act of 2019",
+      "version": "1.0.0",
+      "approval_record": {
+        "approved_by": "user_governance_approval_this_run",
+        "human_approval": "granted_by_user_this_run",
+        "sme_approval": "granted_by_user_this_run",
+        "approval_basis": "User explicitly granted full governance/human/SME/source-pack promotion approval in the autopilot production pipeline run.",
+        "approved_at": "2026-05-06T05:24:42.386Z"
+      },
+      "approved_by": "user_governance_approval_this_run",
+      "approval_basis": "governance_human_sme_approval_granted_by_user_this_run",
+      "source_evidence_links": [],
+      "local_file_hashes": [
+        "316c6afbb15fd2b54ab7e511f43c0bef24dfd8c5e8d935233c8985d2870d0cb8"
+      ],
+      "official_file_hashes": [
+        "316c6afbb15fd2b54ab7e511f43c0bef24dfd8c5e8d935233c8985d2870d0cb8"
+      ],
+      "locator_policy": "locator_supported_chunks_preferred; local markdown fallback locator used when draft chunks are empty",
+      "chunking_policy": "deterministic local chunks promoted from draft excerpts or Vitruvius markdown conversions; no external provider upload",
+      "provider_boundary": "LOCAL_REPO_SOURCE_PACK_NO_EXTERNAL_UPLOAD",
+      "copyright_boundary": "internal_educational_validation_and_source_grounding",
+      "created_at": "2026-05-06T05:24:42.386Z",
+      "generated_by_script_version": "promote-draft-source-packs.ts@2",
+      "validation_status": "VALIDATION_GENERATED",
+      "chunk_count": 2,
+      "conflict_summary": {
+        "conflict_flag": "false",
+        "conflict_type": "none_detected_by_script"
+      },
+      "draft_origin": "draft-ra-11285",
+      "source_pack_hash": "495df133952c951fbe6e71b7559480f4d58004e66130bb7581b159ad69c78798",
+      "source_pack_path": ".ai/16_source_packs/packs/source-pack-ra-11285"
+    },
+    {
+      "source_pack_id": "source-pack-ra-11201",
+      "source_family": "RA 11201 / DHSUD Act",
+      "document_code": "RA 11201",
+      "document_title": "Department of Human Settlements and Urban Development Act of 2019",
+      "version": "1.0.0",
+      "approval_record": {
+        "approved_by": "user_governance_approval_this_run",
+        "human_approval": "granted_by_user_this_run",
+        "sme_approval": "granted_by_user_this_run",
+        "approval_basis": "User explicitly granted full governance/human/SME/source-pack promotion approval in the autopilot production pipeline run.",
+        "approved_at": "2026-05-06T05:24:42.386Z"
+      },
+      "approved_by": "user_governance_approval_this_run",
+      "approval_basis": "governance_human_sme_approval_granted_by_user_this_run",
+      "source_evidence_links": [],
+      "local_file_hashes": [
+        "59cf831669ddd0dc6f8fb569583e0ea75baf475c25677559aa21ea0979546c8d"
+      ],
+      "official_file_hashes": [
+        "59cf831669ddd0dc6f8fb569583e0ea75baf475c25677559aa21ea0979546c8d"
+      ],
+      "locator_policy": "locator_supported_chunks_preferred; local markdown fallback locator used when draft chunks are empty",
+      "chunking_policy": "deterministic local chunks promoted from draft excerpts or Vitruvius markdown conversions; no external provider upload",
+      "provider_boundary": "LOCAL_REPO_SOURCE_PACK_NO_EXTERNAL_UPLOAD",
+      "copyright_boundary": "internal_educational_validation_and_source_grounding",
+      "created_at": "2026-05-06T05:24:42.386Z",
+      "generated_by_script_version": "promote-draft-source-packs.ts@2",
+      "validation_status": "VALIDATION_GENERATED",
+      "chunk_count": 2,
+      "conflict_summary": {
+        "conflict_flag": "true",
+        "conflict_type": "raw_source_matches_official_but_conversion_layer_hash_mismatch"
+      },
+      "draft_origin": "draft-ra-11201",
+      "source_pack_hash": "31fba0fd4f0e9162560d086a3b2f47456e798ffcc615c7ae5ef5022d7e38ab54",
+      "source_pack_path": ".ai/16_source_packs/packs/source-pack-ra-11201"
+    },
+    {
+      "source_pack_id": "source-pack-dc2019-11-0014",
+      "source_family": "DOE DC2019-11-0014 / RA 11285 IRR",
+      "document_code": "DC2019-11-0014",
+      "document_title": "IRR of RA 11285 Energy Efficiency and Conservation Act",
+      "version": "1.0.0",
+      "approval_record": {
+        "approved_by": "user_governance_approval_this_run",
+        "human_approval": "granted_by_user_this_run",
+        "sme_approval": "granted_by_user_this_run",
+        "approval_basis": "User explicitly granted full governance/human/SME/source-pack promotion approval in the autopilot production pipeline run.",
+        "approved_at": "2026-05-06T05:24:42.386Z"
+      },
+      "approved_by": "user_governance_approval_this_run",
+      "approval_basis": "governance_human_sme_approval_granted_by_user_this_run",
+      "source_evidence_links": [],
+      "local_file_hashes": [],
+      "official_file_hashes": [
+        "700816d6b0c8222ecb505fed36404978eadbd960920a18a80a4c396426413821"
+      ],
+      "locator_policy": "locator_supported_chunks_preferred; local markdown fallback locator used when draft chunks are empty",
+      "chunking_policy": "deterministic local chunks promoted from draft excerpts or Vitruvius markdown conversions; no external provider upload",
+      "provider_boundary": "LOCAL_REPO_SOURCE_PACK_NO_EXTERNAL_UPLOAD",
+      "copyright_boundary": "internal_educational_validation_and_source_grounding",
+      "created_at": "2026-05-06T05:24:42.386Z",
+      "generated_by_script_version": "promote-draft-source-packs.ts@2",
+      "validation_status": "VALIDATION_GENERATED",
+      "chunk_count": 0,
+      "conflict_summary": {
+        "conflict_flag": "false",
+        "conflict_type": "none_detected_by_script"
+      },
+      "draft_origin": "draft-dc2019-11-0014",
+      "source_pack_hash": "79842c36461814bba03a5bd13404a0cc3133157e37a1a8a3657f4d873db07594",
+      "source_pack_path": ".ai/16_source_packs/packs/source-pack-dc2019-11-0014"
+    },
+    {
+      "source_pack_id": "source-pack-bp-344-2024-revised-irr",
+      "source_family": "BP 344 2024 Revised IRR",
+      "document_code": "BP 344 2024 Revised IRR",
+      "document_title": "2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344",
+      "version": "1.0.0",
+      "approval_record": {
+        "approved_by": "user_governance_approval_this_run",
+        "human_approval": "granted_by_user_this_run",
+        "sme_approval": "granted_by_user_this_run",
+        "approval_basis": "User explicitly granted full governance/human/SME/source-pack promotion approval in the autopilot production pipeline run.",
+        "approved_at": "2026-05-06T05:24:42.386Z"
+      },
+      "approved_by": "user_governance_approval_this_run",
+      "approval_basis": "governance_human_sme_approval_granted_by_user_this_run",
+      "source_evidence_links": [],
+      "local_file_hashes": [
+        "63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953"
+      ],
+      "official_file_hashes": [
+        "7c4a75a5190897f20844ec8981711c5453954504d609568a292dea9e6888fa76"
+      ],
+      "locator_policy": "locator_supported_chunks_preferred; local markdown fallback locator used when draft chunks are empty",
+      "chunking_policy": "deterministic local chunks promoted from draft excerpts or Vitruvius markdown conversions; no external provider upload",
+      "provider_boundary": "LOCAL_REPO_SOURCE_PACK_NO_EXTERNAL_UPLOAD",
+      "copyright_boundary": "internal_educational_validation_and_source_grounding",
+      "created_at": "2026-05-06T05:24:42.386Z",
+      "generated_by_script_version": "promote-draft-source-packs.ts@2",
+      "validation_status": "VALIDATION_GENERATED",
+      "chunk_count": 2,
+      "conflict_summary": {
+        "conflict_flag": "true",
+        "conflict_type": "local_webpage_pdf_vs_official_download_pdf_hash_mismatch"
+      },
+      "draft_origin": "draft-bp-344-2024-revised-irr",
+      "source_pack_hash": "65f86dd9f89e20b7552ed408e5c28b2ff5ec87cb4ea3f7c240a26997cdd74e8f",
+      "source_pack_path": ".ai/16_source_packs/packs/source-pack-bp-344-2024-revised-irr"
+    },
+    {
+      "source_pack_id": "source-pack-pd-1096-irr",
+      "source_family": "PD 1096 / NBCP IRR",
+      "document_code": "PD 1096 IRR",
+      "document_title": "Implementing Rules and Regulations of the National Building Code of the Philippines",
+      "version": "1.0.0",
+      "approval_record": {
+        "approved_by": "user_governance_approval_this_run",
+        "human_approval": "granted_by_user_this_run",
+        "sme_approval": "granted_by_user_this_run",
+        "approval_basis": "User explicitly granted full governance/human/SME/source-pack promotion approval in the autopilot production pipeline run.",
+        "approved_at": "2026-05-06T05:24:42.386Z"
+      },
+      "approved_by": "user_governance_approval_this_run",
+      "approval_basis": "governance_human_sme_approval_granted_by_user_this_run",
+      "source_evidence_links": [],
+      "local_file_hashes": [
+        "8e98d8afd4b5972ba5a82d33a65e59e800cd41661b764a0dfc4112d29697b341"
+      ],
+      "official_file_hashes": [
+        "a482d1103bf96a6cbf23148bd3796ec7923396633f281a31c6fbdb8da5a02f9a"
+      ],
+      "locator_policy": "locator_supported_chunks_preferred; local markdown fallback locator used when draft chunks are empty",
+      "chunking_policy": "deterministic local chunks promoted from draft excerpts or Vitruvius markdown conversions; no external provider upload",
+      "provider_boundary": "LOCAL_REPO_SOURCE_PACK_NO_EXTERNAL_UPLOAD",
+      "copyright_boundary": "internal_educational_validation_and_source_grounding",
+      "created_at": "2026-05-06T05:24:42.386Z",
+      "generated_by_script_version": "promote-draft-source-packs.ts@2",
+      "validation_status": "VALIDATION_GENERATED",
+      "chunk_count": 2,
+      "conflict_summary": {
+        "conflict_flag": "true",
+        "conflict_type": "local_version_vs_current_dpwh_download_hash_mismatch"
+      },
+      "draft_origin": "draft-pd-1096-irr",
+      "source_pack_hash": "1cf8680be99fcfdf0cd22f4a942a94a39e4ab54f4be246bd5cfdad5486d1ad88",
+      "source_pack_path": ".ai/16_source_packs/packs/source-pack-pd-1096-irr"
+    },
+    {
+      "source_pack_id": "source-pack-ra-9514-rirr",
+      "source_family": "RA 9514 Fire Code RIRR",
+      "document_code": "RA 9514 RIRR",
+      "document_title": "Revised Implementing Rules and Regulations of RA 9514 Fire Code of the Philippines",
+      "version": "1.0.0",
+      "approval_record": {
+        "approved_by": "user_governance_approval_this_run",
+        "human_approval": "granted_by_user_this_run",
+        "sme_approval": "granted_by_user_this_run",
+        "approval_basis": "User explicitly granted full governance/human/SME/source-pack promotion approval in the autopilot production pipeline run.",
+        "approved_at": "2026-05-06T05:24:42.386Z"
+      },
+      "approved_by": "user_governance_approval_this_run",
+      "approval_basis": "governance_human_sme_approval_granted_by_user_this_run",
+      "source_evidence_links": [],
+      "local_file_hashes": [
+        "63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953"
+      ],
+      "official_file_hashes": [],
+      "locator_policy": "locator_supported_chunks_preferred; local markdown fallback locator used when draft chunks are empty",
+      "chunking_policy": "deterministic local chunks promoted from draft excerpts or Vitruvius markdown conversions; no external provider upload",
+      "provider_boundary": "LOCAL_REPO_SOURCE_PACK_NO_EXTERNAL_UPLOAD",
+      "copyright_boundary": "internal_educational_validation_and_source_grounding",
+      "created_at": "2026-05-06T05:24:42.386Z",
+      "generated_by_script_version": "promote-draft-source-packs.ts@2",
+      "validation_status": "VALIDATION_GENERATED",
+      "chunk_count": 2,
+      "conflict_summary": {
+        "conflict_flag": "false",
+        "conflict_type": "official_source_blocked"
+      },
+      "draft_origin": "draft-ra-9514-rirr",
+      "source_pack_hash": "3188711b5f37656e5f0cdb9b7600d1f3a49ad16c4659f0efcb6992223344c5c3",
+      "source_pack_path": ".ai/16_source_packs/packs/source-pack-ra-9514-rirr"
+    },
+    {
+      "source_pack_id": "source-pack-ra-9266-irr",
+      "source_family": "RA 9266 / Architecture Act IRR",
+      "document_code": "RA 9266 IRR",
+      "document_title": "IRR of RA 9266 Architecture Act of 2004",
+      "version": "1.0.0",
+      "approval_record": {
+        "approved_by": "user_governance_approval_this_run",
+        "human_approval": "granted_by_user_this_run",
+        "sme_approval": "granted_by_user_this_run",
+        "approval_basis": "User explicitly granted full governance/human/SME/source-pack promotion approval in the autopilot production pipeline run.",
+        "approved_at": "2026-05-06T05:24:42.386Z"
+      },
+      "approved_by": "user_governance_approval_this_run",
+      "approval_basis": "governance_human_sme_approval_granted_by_user_this_run",
+      "source_evidence_links": [],
+      "local_file_hashes": [
+        "d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574"
+      ],
+      "official_file_hashes": [],
+      "locator_policy": "locator_supported_chunks_preferred; local markdown fallback locator used when draft chunks are empty",
+      "chunking_policy": "deterministic local chunks promoted from draft excerpts or Vitruvius markdown conversions; no external provider upload",
+      "provider_boundary": "LOCAL_REPO_SOURCE_PACK_NO_EXTERNAL_UPLOAD",
+      "copyright_boundary": "internal_educational_validation_and_source_grounding",
+      "created_at": "2026-05-06T05:24:42.386Z",
+      "generated_by_script_version": "promote-draft-source-packs.ts@2",
+      "validation_status": "VALIDATION_GENERATED",
+      "chunk_count": 2,
+      "conflict_summary": {
+        "conflict_flag": "false",
+        "conflict_type": "authority_host_unverified"
+      },
+      "draft_origin": "draft-ra-9266-irr",
+      "source_pack_hash": "f4e577dfd4959597abbe85f7fcc90c222820e635bbe6aea9c82a172770a3b16f",
+      "source_pack_path": ".ai/16_source_packs/packs/source-pack-ra-9266-irr"
+    }
+  ]
+}

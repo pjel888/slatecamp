@@ -31,11 +31,11 @@ export const Z_INDEX = {
 // Layout Constants (sidebar grid)
 // ---------------------------------------------------------------------------
 
-export const SIDEBAR_WIDTH_EXPANDED = 256
-/** Sidebar horizontal padding: 6px */
-export const SIDEBAR_PADDING = 6
-/** Fixed icon slot width: 40px. Icon center = padding + 20px in every state. */
-export const SIDEBAR_ICON_SLOT = 40
+export const SIDEBAR_WIDTH_EXPANDED = 288
+/** Sidebar horizontal padding: 8px */
+export const SIDEBAR_PADDING = 8
+/** Fixed icon slot width: 48px. Icon center = padding + 24px in every state. */
+export const SIDEBAR_ICON_SLOT = 48
 /** Collapsed width = left padding + fixed icon slot + right padding */
 export const SIDEBAR_WIDTH_COLLAPSED = SIDEBAR_PADDING * 2 + SIDEBAR_ICON_SLOT
 
@@ -59,7 +59,7 @@ export const SIDEBAR_DIVIDER_INSET = SIDEBAR_PADDING
  * Centers a 16x16 icon inside. Position is spatially locked —
  * identical x,y in both collapsed and expanded states.
  */
-export const ICON_CONTAINER_CLASS = 'flex h-8 w-10 shrink-0 items-center justify-center'
+export const ICON_CONTAINER_CLASS = 'flex h-8 w-12 shrink-0 items-center justify-center'
 
 /** Icon SVG: 16x16px, stroke-width 1.75 */
 export const ICON_SIZE = 16
@@ -72,12 +72,11 @@ export const STORAGE_KEY = 'slatecamp_sidebar_expanded'
 // ---------------------------------------------------------------------------
 
 export const TRANSITION = {
-  /** Expand: 180ms with snappy overshoot easing */
-  expandDuration: 180,
-  expandEasing: 'cubic-bezier(0.16, 1, 0.3, 1)',
-  /** Collapse: 140ms with quick deceleration */
-  collapseDuration: 140,
-  collapseEasing: 'cubic-bezier(0.4, 0, 1, 1)',
+  /** Expand/collapse: compact, compositor-friendly feeling without a sluggish start */
+  expandDuration: 160,
+  expandEasing: 'cubic-bezier(0.22, 1, 0.36, 1)',
+  collapseDuration: 130,
+  collapseEasing: 'cubic-bezier(0.22, 1, 0.36, 1)',
   /** Tooltip show delay */
   tooltipDelay: 70,
 } as const
@@ -110,7 +109,6 @@ export interface SidebarContextValue {
   prefersReducedMotion: boolean
   sidebarRef: React.RefObject<HTMLElement | null>
   toggleRef: React.RefObject<HTMLButtonElement | null>
-  contentRef: React.RefObject<HTMLDivElement | null>
 }
 
 export interface SidebarNavItemConfig {

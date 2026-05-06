@@ -1,17 +1,19 @@
 'use client'
 
 import React from 'react'
+import { ExploreLayout } from '@/components/layouts/category/ExploreLayout'
 
-/**
- * 3D Lab Layout.
- * The persistent canvas has been moved to LabViewportFrame 
- * to ensure WebGL is only initialized on module detail pages.
- */
 const ThreeDLabLayoutPage = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="h-full w-full relative">
+    <ExploreLayout
+      hero={{
+        subtitle: '3D Lab',
+        description: 'Explore architectural concepts in interactive 3D.',
+      }}
+      fullHeight
+    >
       {children}
-    </div>
+    </ExploreLayout>
   )
 }
 

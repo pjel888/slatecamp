@@ -1,0 +1,563 @@
+{
+  "ok": true,
+  "checks": [
+    {
+      "name": "index_exists",
+      "status": "PASS"
+    },
+    {
+      "name": "packs_present",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-11285_has_id",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-11285_has_hash",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-11285_has_approval",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-11285_schema_core",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-11285_chunk_count_matches",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-11285_index_manifest_consistent",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-11285_conflict_approved_exception",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-11285_official_hash_or_exception",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-11285_source_pack_hash_recomputes",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-11285-chunk-0001_has_hashes",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-11285-chunk-0001_text_non_empty",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-11285-chunk-0001_text_hash_recomputes",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-11285-chunk-0001_chunk_hash_recomputes",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-11285-chunk-0001_no_dupe",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-11285-chunk-0001_not_article",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-11285-chunk-0002_has_hashes",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-11285-chunk-0002_text_non_empty",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-11285-chunk-0002_text_hash_recomputes",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-11285-chunk-0002_chunk_hash_recomputes",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-11285-chunk-0002_no_dupe",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-11285-chunk-0002_not_article",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-11201_has_id",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-11201_has_hash",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-11201_has_approval",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-11201_schema_core",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-11201_chunk_count_matches",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-11201_index_manifest_consistent",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-11201_conflict_approved_exception",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-11201_official_hash_or_exception",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-11201_source_pack_hash_recomputes",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-11201-chunk-0001_has_hashes",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-11201-chunk-0001_text_non_empty",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-11201-chunk-0001_text_hash_recomputes",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-11201-chunk-0001_chunk_hash_recomputes",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-11201-chunk-0001_no_dupe",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-11201-chunk-0001_not_article",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-11201-chunk-0002_has_hashes",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-11201-chunk-0002_text_non_empty",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-11201-chunk-0002_text_hash_recomputes",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-11201-chunk-0002_chunk_hash_recomputes",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-11201-chunk-0002_no_dupe",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-11201-chunk-0002_not_article",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-dc2019-11-0014_has_id",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-dc2019-11-0014_has_hash",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-dc2019-11-0014_has_approval",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-dc2019-11-0014_schema_core",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-dc2019-11-0014_chunk_count_matches",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-dc2019-11-0014_index_manifest_consistent",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-dc2019-11-0014_conflict_approved_exception",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-dc2019-11-0014_official_hash_or_exception",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-dc2019-11-0014_source_pack_hash_recomputes",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-bp-344-2024-revised-irr_has_id",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-bp-344-2024-revised-irr_has_hash",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-bp-344-2024-revised-irr_has_approval",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-bp-344-2024-revised-irr_schema_core",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-bp-344-2024-revised-irr_chunk_count_matches",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-bp-344-2024-revised-irr_index_manifest_consistent",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-bp-344-2024-revised-irr_conflict_approved_exception",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-bp-344-2024-revised-irr_official_hash_or_exception",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-bp-344-2024-revised-irr_source_pack_hash_recomputes",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-bp-344-2024-revised-irr-chunk-0001_has_hashes",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-bp-344-2024-revised-irr-chunk-0001_text_non_empty",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-bp-344-2024-revised-irr-chunk-0001_text_hash_recomputes",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-bp-344-2024-revised-irr-chunk-0001_chunk_hash_recomputes",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-bp-344-2024-revised-irr-chunk-0001_no_dupe",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-bp-344-2024-revised-irr-chunk-0001_not_article",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-bp-344-2024-revised-irr-chunk-0002_has_hashes",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-bp-344-2024-revised-irr-chunk-0002_text_non_empty",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-bp-344-2024-revised-irr-chunk-0002_text_hash_recomputes",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-bp-344-2024-revised-irr-chunk-0002_chunk_hash_recomputes",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-bp-344-2024-revised-irr-chunk-0002_no_dupe",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-bp-344-2024-revised-irr-chunk-0002_not_article",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-pd-1096-irr_has_id",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-pd-1096-irr_has_hash",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-pd-1096-irr_has_approval",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-pd-1096-irr_schema_core",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-pd-1096-irr_chunk_count_matches",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-pd-1096-irr_index_manifest_consistent",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-pd-1096-irr_conflict_approved_exception",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-pd-1096-irr_official_hash_or_exception",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-pd-1096-irr_source_pack_hash_recomputes",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-pd-1096-irr-chunk-0001_has_hashes",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-pd-1096-irr-chunk-0001_text_non_empty",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-pd-1096-irr-chunk-0001_text_hash_recomputes",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-pd-1096-irr-chunk-0001_chunk_hash_recomputes",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-pd-1096-irr-chunk-0001_no_dupe",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-pd-1096-irr-chunk-0001_not_article",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-pd-1096-irr-chunk-0002_has_hashes",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-pd-1096-irr-chunk-0002_text_non_empty",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-pd-1096-irr-chunk-0002_text_hash_recomputes",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-pd-1096-irr-chunk-0002_chunk_hash_recomputes",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-pd-1096-irr-chunk-0002_no_dupe",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-pd-1096-irr-chunk-0002_not_article",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-9514-rirr_has_id",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-9514-rirr_has_hash",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-9514-rirr_has_approval",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-9514-rirr_schema_core",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-9514-rirr_chunk_count_matches",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-9514-rirr_index_manifest_consistent",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-9514-rirr_conflict_approved_exception",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-9514-rirr_official_hash_or_exception",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-9514-rirr_source_pack_hash_recomputes",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-9514-rirr-chunk-0001_has_hashes",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-9514-rirr-chunk-0001_text_non_empty",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-9514-rirr-chunk-0001_text_hash_recomputes",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-9514-rirr-chunk-0001_chunk_hash_recomputes",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-9514-rirr-chunk-0001_no_dupe",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-9514-rirr-chunk-0001_not_article",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-9514-rirr-chunk-0002_has_hashes",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-9514-rirr-chunk-0002_text_non_empty",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-9514-rirr-chunk-0002_text_hash_recomputes",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-9514-rirr-chunk-0002_chunk_hash_recomputes",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-9514-rirr-chunk-0002_no_dupe",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-9514-rirr-chunk-0002_not_article",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-9266-irr_has_id",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-9266-irr_has_hash",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-9266-irr_has_approval",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-9266-irr_schema_core",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-9266-irr_chunk_count_matches",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-9266-irr_index_manifest_consistent",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-9266-irr_conflict_approved_exception",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-9266-irr_official_hash_or_exception",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-9266-irr_source_pack_hash_recomputes",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-9266-irr-chunk-0001_has_hashes",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-9266-irr-chunk-0001_text_non_empty",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-9266-irr-chunk-0001_text_hash_recomputes",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-9266-irr-chunk-0001_chunk_hash_recomputes",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-9266-irr-chunk-0001_no_dupe",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-9266-irr-chunk-0001_not_article",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-9266-irr-chunk-0002_has_hashes",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-9266-irr-chunk-0002_text_non_empty",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-9266-irr-chunk-0002_text_hash_recomputes",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-9266-irr-chunk-0002_chunk_hash_recomputes",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-9266-irr-chunk-0002_no_dupe",
+      "status": "PASS"
+    },
+    {
+      "name": "source-pack-ra-9266-irr-chunk-0002_not_article",
+      "status": "PASS"
+    },
+    {
+      "name": "chunk_count_matches",
+      "status": "PASS"
+    },
+    {
+      "name": "no_duplicate_chunk_ids",
+      "status": "PASS"
+    }
+  ],
+  "source_pack_count": 7,
+  "chunk_count": 12
+}

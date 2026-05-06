@@ -1,0 +1,41 @@
+# Phase 0.5B.6 Validation Results
+
+CSV parses: true (9 rows)
+JSON parses: true (9 items)
+CSV/JSON count match: true
+Packet recommendation uniqueness: true
+Required row checks: PASS
+
+## git_diff_check
+exit_code=0
+```
+
+```
+
+## source_pack_dirs
+exit_code=0
+```
+
+```
+
+## bundle_map_promotion_check
+exit_code=0
+```
+
+```
+
+## article_question_diff_check
+exit_code=0
+```
+.gitignore
+src/components/dashboard/ActivityHeatmap.tsx
+src/components/dashboard/DashboardContentFrame.tsx
+src/components/dashboard/HeroCommandBar.tsx
+src/components/landing/LandingPageContent.tsx
+src/components/landing/LandingPageFallback.tsx
+src/components/marketing/HeroHeadline.tsx
+src/components/marketing/HeroSection.tsx
+src/components/sidebar/Sidebar.tsx
+src/components/sidebar/SidebarFooter.tsx
+src/components/sidebar/SidebarHeader.tsx
+```

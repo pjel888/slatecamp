@@ -29,24 +29,25 @@ export const CalculatingResultsOverlay = () => {
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-background/85 px-4 backdrop-blur-md transition-opacity duration-300"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/35 px-4 backdrop-blur-xl transition-opacity duration-200"
       data-testid="quiz-results-loading"
       role="dialog"
       aria-modal="true"
       aria-labelledby="calculating-results-title"
       aria-describedby="calculating-results-description"
     >
-      <div className="w-full max-w-sm rounded-xl border border-border bg-card p-6 text-center shadow-xl">
-        <div className="mx-auto flex size-16 items-center justify-center rounded-full bg-primary-50">
+      <div className="relative w-full max-w-md overflow-hidden rounded-2xl border border-white/30 bg-card/90 p-6 text-center shadow-2xl ring-1 ring-black/5 backdrop-blur-2xl">
+        <div className="pointer-events-none absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-primary via-success to-warning" />
+        <div className="mx-auto flex size-16 items-center justify-center rounded-full border border-primary/20 bg-primary-50/80 shadow-inner">
           <SlatecampLoader />
         </div>
 
-        <p className="mt-5 text-xs font-semibold uppercase tracking-[0.18em] text-primary">
-          Session complete
+        <p className="mt-5 text-xs font-semibold uppercase tracking-[0.22em] text-primary">
+          Final answer received
         </p>
         <h2
           id="calculating-results-title"
-          className="mt-2 text-xl font-semibold text-foreground"
+          className="mt-2 text-2xl font-semibold text-foreground"
         >
           Preparing your results
         </h2>
@@ -54,18 +55,18 @@ export const CalculatingResultsOverlay = () => {
           id="calculating-results-description"
           className="mt-2 text-sm leading-relaxed text-text-secondary"
         >
-          We&apos;re saving your final answer and building your readiness snapshot.
+          We&apos;re saving the last interaction, checking your answers, and opening the results page.
         </p>
 
-        <div className="mt-5 space-y-2 text-left text-sm">
-          <div className="flex items-center gap-2 rounded-md bg-success-50 px-3 py-2 text-success">
-            <span className="flex size-5 items-center justify-center rounded-full bg-success text-[11px] font-bold text-white">
+        <div className="mt-6 grid gap-2 text-left text-sm">
+          <div className="flex items-center gap-2 rounded-xl border border-success/20 bg-success-50/80 px-3 py-2.5 text-success">
+            <span className="flex size-6 items-center justify-center rounded-full bg-success text-xs font-bold text-white">
               ✓
             </span>
             <span className="font-medium">Final answer saved</span>
           </div>
           <div
-            className="rounded-md border border-primary/20 bg-primary-50 px-3 py-2 text-primary"
+            className="rounded-xl border border-primary/25 bg-primary-50/80 px-3 py-2.5 text-primary"
             role="status"
             aria-live="polite"
             aria-atomic="true"
@@ -75,8 +76,8 @@ export const CalculatingResultsOverlay = () => {
             </span>
             <span className="font-medium">{MESSAGES[messageIndex]}</span>
           </div>
-          <div className="flex items-center gap-2 rounded-md border border-border px-3 py-2 text-muted-foreground">
-            <span className="flex size-5 items-center justify-center rounded-full border border-border text-[11px] font-bold">
+          <div className="flex items-center gap-2 rounded-xl border border-border/80 bg-background/60 px-3 py-2.5 text-muted-foreground">
+            <span className="flex size-6 items-center justify-center rounded-full border border-border bg-card text-xs font-bold">
               3
             </span>
             <span>Results dashboard next</span>

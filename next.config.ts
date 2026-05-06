@@ -125,7 +125,6 @@ const nextConfig: NextConfig = {
       bodySizeLimit: '4mb',
     },
   },
-  serverExternalPackages: ['payrex-node'],
   turbopack: {
     root: __dirname,
   },

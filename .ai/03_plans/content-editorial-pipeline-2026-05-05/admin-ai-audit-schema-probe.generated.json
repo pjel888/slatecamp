@@ -1,0 +1,34 @@
+{
+  "generated_at": "2026-05-06T05:49:56.097Z",
+  "status": "DB_SCHEMA_PROBE_SKIPPED_NO_ENV",
+  "dry_run": true,
+  "db_write_attempted": false,
+  "admin_live_sync_status": "blocked",
+  "reason": "No DATABASE_URL/POSTGRES_URL/SUPABASE_DB_URL environment variable present.",
+  "expected_tables": [
+    {
+      "table_name": "ai_audit_runs",
+      "status": "not_checked"
+    },
+    {
+      "table_name": "ai_audit_items",
+      "status": "not_checked"
+    },
+    {
+      "table_name": "ai_audit_findings",
+      "status": "not_checked"
+    },
+    {
+      "table_name": "ai_change_proposals",
+      "status": "not_checked"
+    },
+    {
+      "table_name": "ai_review_decisions",
+      "status": "not_checked"
+    },
+    {
+      "table_name": "ai_audit_status_cache",
+      "status": "not_checked"
+    }
+  ]
+}

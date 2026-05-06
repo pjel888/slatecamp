@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
 import { X } from '@phosphor-icons/react/dist/ssr'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
+import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 import { useActiveSession } from '@/lib/context/active-session-context'
 import { SIDEBAR_GROUPS, DASHBOARD_ITEM, SETTINGS_ITEM } from './sidebar-constants'
@@ -13,6 +14,8 @@ import type { SidebarNavItemConfig } from './types'
 import type { NavigationPendingInfo } from './types'
 import { ConfirmDialog } from '@/components/ui/dialog'
 import { useNavigationPending } from '@/hooks/useNavigationPending'
+import { useQuizStore } from '@/stores/useQuizStore'
+import { updateSessionProgress } from '@/lib/actions/quiz-v2'
 
 // ---------------------------------------------------------------------------
 // MobileDrawer — full-screen slide-in nav drawer for mobile
@@ -166,6 +169,7 @@ export const MobileDrawer = ({
   const { activeSession } = useActiveSession()
   const [showLeaveConfirm, setShowLeaveConfirm] = useState(false)
   const [pendingHref, setPendingHref] = useState<string | null>(null)
+  const [leaveConfirmLoading, setLeaveConfirmLoading] = useState(false)
   const navigationPending = useNavigationPending()
 
   // Close on route change
@@ -224,10 +228,24 @@ export const MobileDrawer = ({
     [activeSession, onClose],
   )
 
-  const handleLeaveConfirm = useCallback(() => {
-    if (pendingHref) router.push(pendingHref)
-    setPendingHref(null)
-    onClose()
+  const handleLeaveConfirm = useCallback(async () => {
+    const href = pendingHref
+    const { sessionId, currentIndex, reset } = useQuizStore.getState()
+
+    setLeaveConfirmLoading(true)
+    try {
+      if (sessionId) {
+        await updateSessionProgress(sessionId, currentIndex)
+      }
+    } catch {
+      // Preserve navigation even if the latest index was already saved or the user is offline.
+    } finally {
+      reset()
+      setLeaveConfirmLoading(false)
+      setPendingHref(null)
+      onClose()
+      if (href) router.push(href)
+    }
   }, [pendingHref, router, onClose])
 
   // Reduced-motion detection (client-side only, safe for SSR)
@@ -251,11 +269,12 @@ export const MobileDrawer = ({
       <ConfirmDialog
         open={showLeaveConfirm}
         onOpenChange={setShowLeaveConfirm}
-        title="Leave active session?"
-        description="You have an active session. Are you sure you want to leave?"
-        confirmLabel="Leave"
-        cancelLabel="Stay"
+        title="Leave quiz?"
+        description="Your saved answers will remain. You can resume this session later."
+        confirmLabel="Resume later"
+        cancelLabel="Stay in quiz"
         onConfirm={handleLeaveConfirm}
+        loading={leaveConfirmLoading}
       />
 
       {/* Backdrop — z-index 49, behind drawer */}
@@ -308,15 +327,16 @@ export const MobileDrawer = ({
           </div>
 
           {/* Close button — min 44×44 touch target */}
-          <button
+          <Button
             ref={closeButtonRef}
             onClick={onClose}
             aria-label="Close navigation"
-            className="flex items-center justify-center rounded-md text-text-secondary dark:text-gray-400 transition-colors duration-150 hover:bg-gray-100 dark:hover:bg-gray-800 outline-none focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-camp-cobalt"
-            style={{ width: 44, height: 44 }}
+            variant="ghost"
+            size="icon-lg"
+            className="size-11 text-text-secondary hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800 [&_svg:not([class*='size-'])]:size-5"
           >
             <X size={20} weight="regular" />
-          </button>
+          </Button>
         </div>
 
         {/* Scrollable nav area */}

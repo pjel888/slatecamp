@@ -1,0 +1,46 @@
+{
+  "ok": true,
+  "checks": [
+    {
+      "name": "dry_run_default_or_explicit",
+      "status": "PASS"
+    },
+    {
+      "name": "no_provider_call_without_flag",
+      "status": "PASS"
+    },
+    {
+      "name": "row_counts_match",
+      "status": "PASS"
+    },
+    {
+      "name": "inputs_have_core",
+      "status": "PASS"
+    },
+    {
+      "name": "input_text_hashes_recompute",
+      "status": "PASS"
+    },
+    {
+      "name": "input_chunk_hashes_match_source",
+      "status": "PASS"
+    },
+    {
+      "name": "input_hashes_recompute",
+      "status": "PASS"
+    },
+    {
+      "name": "manifest_have_ids",
+      "status": "PASS"
+    },
+    {
+      "name": "embedding_rows_match_inputs",
+      "status": "PASS"
+    },
+    {
+      "name": "no_duplicate_embedding_ids",
+      "status": "PASS"
+    }
+  ],
+  "input_rows": 12
+}

@@ -12,11 +12,11 @@ import { cn } from '@/lib/utils'
 export type Level = 0 | 1 | 2 | 3 | 4
 
 export const LEVEL_BG: Record<Level, string> = {
-  0: 'bg-white/10',
-  1: 'bg-white/20',
-  2: 'bg-white/35',
-  3: 'bg-white/55',
-  4: 'bg-white/90',
+  0: 'bg-primary/[0.18] dark:bg-primary/25',
+  1: 'bg-primary/50 dark:bg-primary/55',
+  2: 'bg-primary/70 dark:bg-primary/75',
+  3: 'bg-primary/90 dark:bg-primary/95',
+  4: 'bg-primary dark:bg-primary',
 }
 
 export const toLevel = (n: number): Level => {
@@ -62,6 +62,7 @@ export interface HeatmapLayout {
   blockH: number
   slot: number
   totalW: number
+  monthGap: number
 }
 
 interface HeatmapGridProps {
@@ -97,7 +98,7 @@ export const HeatmapGrid = ({
     {blocks.map((b) => (
       <span
         key={b.blockIndex}
-        className='absolute text-xs leading-none text-white/50 select-none whitespace-nowrap'
+        className='absolute text-xs leading-none text-muted-foreground select-none whitespace-nowrap'
         style={{
           top: 0,
           left: b.blockIndex * layout.slot,
@@ -115,7 +116,7 @@ export const HeatmapGrid = ({
       return b.isYearStart ? (
         <div
           key={b.blockIndex}
-          className='pointer-events-none absolute bg-white/30'
+          className='pointer-events-none absolute bg-border'
           style={{
             left: x,
             top: 0,
@@ -127,7 +128,7 @@ export const HeatmapGrid = ({
       ) : (
         <div
           key={b.blockIndex}
-          className='pointer-events-none absolute bg-white/20'
+          className='pointer-events-none absolute bg-border/70'
           style={{
             left: x,
             top: headerH,
@@ -161,8 +162,7 @@ export const HeatmapGrid = ({
             return (
               <div
                 key={s}
-                className='rounded-[2px] bg-white/10'
-                style={{ opacity: 0.3 }}
+                className='rounded-[2px] bg-primary/[0.08]'
               />
             )
           }
@@ -196,7 +196,7 @@ export const HeatmapGrid = ({
                     isExamDay
                       ? 'bg-destructive ring-1 ring-destructive ring-offset-[1px]'
                       : beforeSignup
-                        ? 'bg-white/10'
+                        ? 'bg-primary/[0.12]'
                         : LEVEL_BG[level],
                     isSignup &&
                       !isExamDay &&

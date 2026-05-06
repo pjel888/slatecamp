@@ -48,6 +48,12 @@ const config: StorybookConfig = {
       '@/lib/actions/wiki-quiz': fileURLToPath(
         new URL('../src/storybook/mocks/wiki-quiz.ts', import.meta.url),
       ),
+      '@/lib/actions/quiz-v2': fileURLToPath(
+        new URL('../src/storybook/mocks/quiz-v2-actions.ts', import.meta.url),
+      ),
+      '@/lib/actions/ceo/team-actions': fileURLToPath(
+        new URL('../src/storybook/mocks/ceo-team-actions.ts', import.meta.url),
+      ),
       '@/lib/analytics': fileURLToPath(
         new URL('../src/storybook/mocks/analytics.ts', import.meta.url),
       ),
@@ -57,6 +63,9 @@ const config: StorybookConfig = {
       ),
       'next/link': fileURLToPath(
         new URL('../src/storybook/mocks/next-link.tsx', import.meta.url),
+      ),
+      'next/font/google': fileURLToPath(
+        new URL('../src/storybook/mocks/next-font-google.ts', import.meta.url),
       ),
       'next/navigation': fileURLToPath(
         new URL('../src/storybook/mocks/next-navigation.tsx', import.meta.url),

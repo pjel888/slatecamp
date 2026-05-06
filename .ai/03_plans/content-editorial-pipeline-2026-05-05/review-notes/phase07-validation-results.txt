@@ -1,0 +1,45 @@
+# Phase 0.7 Validation Results
+
+Commands run:
+
+```bash
+bun scripts/content-audit/build-source-reconciliation-matrix.ts
+bun scripts/content-audit/validate-source-packet-readiness.ts
+bun scripts/content-audit/extract-source-locators.ts
+bun scripts/content-audit/build-human-sme-packet-prep.ts
+bun scripts/content-audit/validate-locator-packet-readiness.ts
+bun scripts/content-audit/validate-admin-ai-audit-schema.ts
+bun scripts/content-audit/build-source-verification-admin-payload.ts
+bun scripts/content-audit/run-source-verification-smoke.ts
+bun run type-check
+bun run lint
+git diff --check
+```
+
+Results:
+
+- Source reconciliation matrix: PASS, 9 rows, 2,894 Vitruvius files scanned.
+- Source packet readiness: PASS, 9 checks.
+- Source locator extraction: PASS, 9 rows.
+- Human/SME packet prep: PASS, 9 packets.
+- Locator packet readiness: PASS, 16/16 checks.
+- Admin schema probe: PASS with DB_SCHEMA_PROBE_SKIPPED_NO_ENV.
+- Admin source payload dry-run: PASS, 9 items, 28 findings, 9 proposals.
+- Source verification smoke runner: PASS, 7 commands, 5 artifact checks.
+- Type-check: PASS.
+- Lint: PASS with existing warnings only, 0 errors.
+- git diff --check: PASS.
+- Custom gate validation: PASS.
+
+Gate invariants verified:
+
+- dry_run=true.
+- db_write_attempted=false.
+- source_approval_status=blocked.
+- source_pack_creation_status=blocked.
+- all HIGH rows require human + SME review.
+- no forbidden promotion labels in generated status/recommendation fields.
+- no source-pack directory.
+- no embeddings directory.
+- no article/question edits from Phase 0.7.
+- no Supabase mutation.

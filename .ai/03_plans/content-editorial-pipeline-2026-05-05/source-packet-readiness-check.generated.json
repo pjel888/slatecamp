@@ -1,0 +1,164 @@
+{
+  "generated_at": "2026-05-06T04:13:23.631Z",
+  "allowed_use": "discovery_only",
+  "evidence_status": "FALLBACK_REVIEW_ONLY",
+  "source_approval_status": "blocked",
+  "source_pack_creation_status": "blocked",
+  "check_count": 9,
+  "checks": [
+    {
+      "source_family": "PD 1216 / Open Space Requirements",
+      "bundle_id_if_applicable": "bundle-000017",
+      "document_code": "PD 1216",
+      "risk_tier": "HIGH",
+      "readiness_state": "blocked_hash_mismatch",
+      "blockers": [
+        "Multiple local candidates require human selection before packet use.",
+        "Page/section/table locators are missing, partial, or not checked.",
+        "SME review required before any future promotion."
+      ],
+      "human_review_required": "true",
+      "sme_review_required": "true",
+      "source_approval_status": "blocked",
+      "source_pack_creation_status": "blocked",
+      "next_action": "Manually capture Official Gazette/Senate LRB body/PDF; compare local 001 raw PDF to opened official text; extract page/section locators."
+    },
+    {
+      "source_family": "RA 11201 / DHSUD Act",
+      "bundle_id_if_applicable": "bundle-000018",
+      "document_code": "RA 11201",
+      "risk_tier": "HIGH",
+      "readiness_state": "blocked_conversion_mismatch",
+      "blockers": [
+        "Derived/OCR/conversion layer mismatch requires disposition against raw PDF.",
+        "Page/section/table locators are missing, partial, or not checked.",
+        "SME review required before any future promotion."
+      ],
+      "human_review_required": "true",
+      "sme_review_required": "true",
+      "source_approval_status": "blocked",
+      "source_pack_creation_status": "blocked",
+      "next_action": "SME/human review should disposition 002 OCR/conversion mismatch against 001 raw official PDF; extract locators before packet use."
+    },
+    {
+      "source_family": "RA 11285 / Energy Efficiency and Conservation Act",
+      "bundle_id_if_applicable": "bundle-000019",
+      "document_code": "RA 11285",
+      "risk_tier": "HIGH",
+      "readiness_state": "blocked_missing_locators",
+      "blockers": [
+        "Page/section/table locators are missing, partial, or not checked.",
+        "SME review required before any future promotion."
+      ],
+      "human_review_required": "true",
+      "sme_review_required": "true",
+      "source_approval_status": "blocked",
+      "source_pack_creation_status": "blocked",
+      "next_action": "Extract locators and compare text; keep DOE IRR as separate evidence lead needing metadata/PDF reconciliation."
+    },
+    {
+      "source_family": "DOE DC2019-11-0014 / RA 11285 IRR",
+      "bundle_id_if_applicable": "bundle-000019",
+      "document_code": "DC2019-11-0014",
+      "risk_tier": "HIGH",
+      "readiness_state": "blocked_missing_locators",
+      "blockers": [
+        "No local raw PDF candidate found.",
+        "Page/section/table locators are missing, partial, or not checked.",
+        "SME review required before any future promotion."
+      ],
+      "human_review_required": "true",
+      "sme_review_required": "true",
+      "source_approval_status": "blocked",
+      "source_pack_creation_status": "blocked",
+      "next_action": "Add/locate local raw IRR PDF if absent; compare DOE PDF text/locators before using IRR."
+    },
+    {
+      "source_family": "BP 344 2024 Revised IRR",
+      "bundle_id_if_applicable": "",
+      "document_code": "BP 344 2024 Revised IRR",
+      "risk_tier": "HIGH",
+      "readiness_state": "blocked_hash_mismatch",
+      "blockers": [
+        "Multiple local candidates require human selection before packet use.",
+        "Page/section/table locators are missing, partial, or not checked.",
+        "SME review required before any future promotion."
+      ],
+      "human_review_required": "true",
+      "sme_review_required": "true",
+      "source_approval_status": "blocked",
+      "source_pack_creation_status": "blocked",
+      "next_action": "Keep 2024 revised IRR as official evidence lead; compare NCDA downloadable PDF against local webpage-print PDF and older BP 344 derivatives; extract locators."
+    },
+    {
+      "source_family": "RA 9514 Fire Code RIRR",
+      "bundle_id_if_applicable": "",
+      "document_code": "RA 9514 RIRR",
+      "risk_tier": "HIGH",
+      "readiness_state": "blocked_missing_official_evidence",
+      "blockers": [
+        "Missing opened official PDF/hash evidence.",
+        "Multiple local candidates require human selection before packet use.",
+        "Page/section/table locators are missing, partial, or not checked.",
+        "SME review required before any future promotion."
+      ],
+      "human_review_required": "true",
+      "sme_review_required": "true",
+      "source_approval_status": "blocked",
+      "source_pack_creation_status": "blocked",
+      "next_action": "Capture BFP body/PDF or Official Gazette alternative; compare local 001 PDF hash/text after official PDF is captured."
+    },
+    {
+      "source_family": "PD 1096 / NBCP IRR",
+      "bundle_id_if_applicable": "",
+      "document_code": "PD 1096 IRR",
+      "risk_tier": "HIGH",
+      "readiness_state": "blocked_hash_mismatch",
+      "blockers": [
+        "Multiple local candidates require human selection before packet use.",
+        "Page/section/table locators are missing, partial, or not checked.",
+        "SME review required before any future promotion."
+      ],
+      "human_review_required": "true",
+      "sme_review_required": "true",
+      "source_approval_status": "blocked",
+      "source_pack_creation_status": "blocked",
+      "next_action": "Compare local PD1096 PDFs against current DPWH 432-page PDF; determine whether local 368-page file is derivative/older and extract locators."
+    },
+    {
+      "source_family": "RA 9266 / Architecture Act IRR",
+      "bundle_id_if_applicable": "",
+      "document_code": "RA 9266 IRR",
+      "risk_tier": "HIGH",
+      "readiness_state": "blocked_missing_official_evidence",
+      "blockers": [
+        "Missing opened official PDF/hash evidence.",
+        "Multiple local candidates require human selection before packet use.",
+        "Page/section/table locators are missing, partial, or not checked.",
+        "SME review required before any future promotion."
+      ],
+      "human_review_required": "true",
+      "sme_review_required": "true",
+      "source_approval_status": "blocked",
+      "source_pack_creation_status": "blocked",
+      "next_action": "Find opened PRC/PRBoA/Official Gazette/Senate official host for RA9266/IRR; compare local PDF after official host verified."
+    },
+    {
+      "source_family": "PRC ALE/LEA Examination Program",
+      "bundle_id_if_applicable": "",
+      "document_code": "2026 PRC Architect Licensure Examination schedule/program",
+      "risk_tier": "HIGH",
+      "readiness_state": "blocked_hash_mismatch",
+      "blockers": [
+        "Multiple local candidates require human selection before packet use.",
+        "Page/section/table locators are missing, partial, or not checked.",
+        "SME review required before any future promotion."
+      ],
+      "human_review_required": "true",
+      "sme_review_required": "true",
+      "source_approval_status": "blocked",
+      "source_pack_creation_status": "blocked",
+      "next_action": "Use only for exam logistics/scope/weights after review; do not use as legal/code source truth."
+    }
+  ]
+}

@@ -17,15 +17,15 @@ Calculate minimum yard and setback distances under PD 1096 Rule VIII based on bu
 
 ## HOW TO USE THIS REVIEWER
 
-This material is **psychologically engineered** for maximum retention. Every section uses:
+Use this reviewer as an active-recall guide. As you read, focus on the rule, the design consequence, and the exam trap:
 
 1. **Visualization First** — Picture the scenario before absorbing numbers.
-2. **Pattern Interrupts** — Bold tables, trap learts, and section breaks prevent study fatigue.
+2. **Pattern Interrupts** — Bold tables, trap alerts, and section breaks prevent study fatigue.
 3. **Active Recall** — Questions force you to retrieve, not just re-read.
 4. **Error-Based Learning** — Common exam traps are explicitly flagged and corrected.
 5. **Reason for the Law** — Every rule is accompanied by WHY it exists.
 
-**Study Rule:** For every 5 minutes of reading, spend 1 minute on the recall questions. Say answers aloud.
+**Study rule:** After each major section, close the page and explain the rule aloud before checking the next example.
 
 ---
 
@@ -638,3 +638,21 @@ ALE Trap: Minimum setbacks by occupancy and fire zone: 1-2 story = front 3.0 m, 
 
 
 <!-- no-media-needed: code/regulatory article, tabular data is optimal -->
+
+
+---
+
+## Editorial Source Note
+
+This local production pass did not add new legal or dimensional claims. Existing code references still require source-led verification against the official/local source layer before any factual expansion beyond the current article text.
+
+
+## Board Exam Quick Check
+
+Before moving on, answer these without looking back:
+
+1. What is the governing rule or code principle this article is trying to teach?
+2. What is the most likely board-exam trap in this topic?
+3. What project decision would change if you applied the rule incorrectly?
+
+If you cannot answer all three, reread the section that introduced the rule before attempting the linked questions.

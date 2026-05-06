@@ -1,0 +1,15 @@
+PASS | CSV parses | 9 rows
+PASS | JSON parses | 9 items
+PASS | Every row has source_family | 
+PASS | Every row has evidence_status | 
+PASS | Every HIGH row has human_review_required=true | 
+PASS | Every HIGH law/code/policy row has sme_review_required=true | 
+PASS | No row uses forbidden promotion labels in status fields | []
+PASS | No source-bundle-map allowed_use promotion | 1528 rows
+PASS | No source-bundle-map verification_status promotion | 1528 rows
+PASS | No source-bundle-map status promotion labels | []
+PASS | No source pack directory created | 
+PASS | No embeddings directory/file created | 
+PASS | No article/question file edited | Phase 0.5B.5 changed .ai planning/review files only
+PASS | No Supabase mutation | No Supabase command/API/migration applied; no Supabase files edited by this phase
+PASS | git diff --check plan folder passes | 

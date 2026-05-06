@@ -1,0 +1,73 @@
+{
+  "created_at": "2026-05-06T05:24:52.927Z",
+  "target": "article_improvements",
+  "apply_requested": false,
+  "items": [
+    {
+      "job_id": "article-improvement-job-1",
+      "article_candidate_id": "source-grounded-article-1",
+      "status": "AI_REVIEWED_SOURCE_LINKED_PROPOSAL",
+      "apply_status": "NOT_APPLIED",
+      "source_pack_id": "source-pack-ra-11285",
+      "original_excerpt": "Baseline placeholder excerpt for RA 11285.",
+      "proposed_excerpt": "Source-grounded draft improvement for RA 11285.",
+      "source_linkage": [
+        {
+          "source_pack_id": "source-pack-ra-11285",
+          "document_code": "RA 11285",
+          "link_status": "linked_to_governed_source_pack"
+        }
+      ],
+      "unsupported_claims": [],
+      "changed_factual_claims": [],
+      "rejected_uncertain_claims": [],
+      "component_safety_notes": "No app article files changed; custom UI components preserved by non-mutating proposal output.",
+      "mdx_component_syntax_check": "not_applicable_no_mdx_mutation",
+      "output_hash": "8d510ee677be5b955731a843d875bf36cdf6a83ceb955908a32d9947b66dcc60"
+    },
+    {
+      "job_id": "article-improvement-job-2",
+      "article_candidate_id": "source-grounded-article-2",
+      "status": "AI_REVIEWED_SOURCE_LINKED_PROPOSAL",
+      "apply_status": "NOT_APPLIED",
+      "source_pack_id": "source-pack-ra-11201",
+      "original_excerpt": "Baseline placeholder excerpt for RA 11201.",
+      "proposed_excerpt": "Source-grounded draft improvement for RA 11201.",
+      "source_linkage": [
+        {
+          "source_pack_id": "source-pack-ra-11201",
+          "document_code": "RA 11201",
+          "link_status": "linked_to_governed_source_pack"
+        }
+      ],
+      "unsupported_claims": [],
+      "changed_factual_claims": [],
+      "rejected_uncertain_claims": [],
+      "component_safety_notes": "No app article files changed; custom UI components preserved by non-mutating proposal output.",
+      "mdx_component_syntax_check": "not_applicable_no_mdx_mutation",
+      "output_hash": "433fa3fa77c638a0efdb02bdf7827d54dc7aeb5cc8868410c2b074d7c5213632"
+    },
+    {
+      "job_id": "article-improvement-job-3",
+      "article_candidate_id": "source-grounded-article-3",
+      "status": "AI_REVIEWED_SOURCE_LINKED_PROPOSAL",
+      "apply_status": "NOT_APPLIED",
+      "source_pack_id": "source-pack-dc2019-11-0014",
+      "original_excerpt": "Baseline placeholder excerpt for DC2019-11-0014.",
+      "proposed_excerpt": "Source-grounded draft improvement for DC2019-11-0014.",
+      "source_linkage": [
+        {
+          "source_pack_id": "source-pack-dc2019-11-0014",
+          "document_code": "DC2019-11-0014",
+          "link_status": "linked_to_governed_source_pack"
+        }
+      ],
+      "unsupported_claims": [],
+      "changed_factual_claims": [],
+      "rejected_uncertain_claims": [],
+      "component_safety_notes": "No app article files changed; custom UI components preserved by non-mutating proposal output.",
+      "mdx_component_syntax_check": "not_applicable_no_mdx_mutation",
+      "output_hash": "ceccda952b2d644c22b571ac523eceda11ad00172dc54d1ff42d471e059a4c17"
+    }
+  ]
+}

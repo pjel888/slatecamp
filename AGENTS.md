@@ -10,6 +10,53 @@
 ## Scope
 This file governs the whole repository unless a deeper `AGENTS.md` overrides it.
 
+
+
+## AI Orchestration Workflow
+
+This repository uses an AI-assisted workflow coordinated by Hermes.
+
+Primary roles:
+- Hermes: orchestrator, memory, routing, task dispatcher, operating-system assistant
+- Codex: primary implementation agent for production code, refactors, tests, bug fixes, and PR-ready diffs
+- Claude: senior planner/reviewer when available; use for architecture, edge cases, critique, simplification, and checking fit to brief
+- OpenCode Go: fallback planner/reviewer, codebase explorer, and flexible model bench
+- Kimi direct: fallback long-context coding/review model when OpenCode Go is unavailable or insufficient
+- DeepSeek: debugging, reasoning, hidden-assumption checks, and second-opinion review
+
+For every non-trivial change:
+1. Create or infer a clear task brief: goal, non-goals, constraints, affected files/systems, acceptance criteria, risks, definition of done.
+2. Identify affected files and likely risks before editing.
+3. Make a short implementation plan.
+4. Implement in a branch, git worktree, or clearly isolated task environment. Do not edit `main` directly unless Philip explicitly says so.
+5. Run tests, lint, typecheck, and design checks where applicable, following this file's validation expectations.
+6. Review the diff using a model different from the builder whenever practical.
+7. Summarize the final result with evidence: changed files, commands run, failures, risks, and recommended next action.
+
+Routing defaults:
+- Implementation: Codex -> OpenCode Go Build -> Kimi direct -> DeepSeek for diagnosis/manual patch planning.
+- Planning/review: Claude -> OpenCode Go Plan/Explore -> Kimi direct -> Codex reviewer thread/agent.
+
+If Claude runs out of credits, is rate-limited, unavailable, too slow, or blocked, immediately continue with OpenCode Go. If OpenCode Go fails, continue with Kimi direct. If Kimi direct fails, use Codex.
+
+Safety rules:
+- Never modify `.env`, secrets, private keys, production credentials, billing, DNS, production database state, or migration history unless explicitly instructed.
+- Never run destructive commands without explicit approval: `rm -rf`, `git reset --hard`, `git clean -fd`, force-push, destructive database migrations.
+- Never merge, deploy, or push to `main` automatically.
+- Do not expose secrets in logs, summaries, commits, prompts, screenshots, or external tools.
+
+Subagent rules:
+- Use subagents only for bounded work: codebase exploration, review, test investigation, security check, documentation check, UI consistency check.
+- Avoid parallel write-heavy agents, especially agents editing the same files or architecture area.
+- Every subagent must return concise findings, evidence, risk level, and recommended action. Do not dump raw logs unless necessary.
+
+Definition of done:
+- Requested behavior is implemented or the task is explicitly scoped as audit/planning only.
+- Tests/lint/typecheck have been run or explicitly deemed unavailable/not applicable.
+- Diff or artifact has been reviewed.
+- Risks and remaining uncertainty are disclosed.
+- Final recommendation is clear.
+
 ## Current repository reality
 SlateCamp is a large Next.js App Router codebase for LEA preparation. It is a **pre-launch MVP** that is broad, mature, and operationally heavy.
 
@@ -91,7 +138,7 @@ Use these roles intentionally. Do not let them drift into contradictory copies.
 <!-- gitnexus:start -->
 # GitNexus — Code Intelligence
 
-This project is indexed by GitNexus as **slatecamp** (27340 symbols, 40626 relationships, 300 execution flows). Use the GitNexus MCP tools to understand code, assess impact, and navigate safely.
+This project is indexed by GitNexus as **slatecamp** (27543 symbols, 40905 relationships, 300 execution flows). Use the GitNexus MCP tools to understand code, assess impact, and navigate safely.
 
 > If any GitNexus tool warns the index is stale, run `npx gitnexus analyze` in terminal first.
 

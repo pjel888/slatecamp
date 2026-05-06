@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { Calculator, ArrowRight, Exam } from '@phosphor-icons/react/dist/ssr'
-import SharedPageLayout from '@/components/layouts/SharedPageLayout'
+import { PracticeLayout } from '@/components/layouts/category/PracticeLayout'
 
 export const metadata = { title: 'Design — Development Controls' }
 
@@ -24,58 +24,52 @@ const TOOLS = [
 ]
 
 const AreaCPage = () => (
-  <SharedPageLayout>
-    <div className='max-w-3xl mx-auto px-4 py-6 w-full'>
-      <div className='mb-6'>
-        <h1 className='text-xl font-semibold text-foreground'>
-          Design — Development Controls
-        </h1>
-        <p className='mt-1 text-sm text-muted-foreground'>
-          Reference tools for Philippine National Building Code calculations
-          and development control requirements.
-        </p>
-      </div>
+  <PracticeLayout
+    hero={{
+      subtitle: 'Design: Development Controls',
+      description:
+        'Building code calculators and development control references.',
+    }}
+  >
+    <div className='flex flex-col gap-3'>
+      {TOOLS.map(({ href, icon: Icon, title, description, tags }) => (
+        <Link
+          key={href}
+          href={href}
+          className='group flex items-start gap-4 rounded-md border border-border bg-card p-4 transition-shadow duration-150 hover:shadow-sm'
+        >
+          <div className='mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-sm bg-primary-50'>
+            <Icon size={18} className='text-primary' weight='duotone' />
+          </div>
 
-      <div className='flex flex-col gap-3'>
-        {TOOLS.map(({ href, icon: Icon, title, description, tags }) => (
-          <Link
-            key={href}
-            href={href}
-            className='group flex items-start gap-4 rounded-md border border-border bg-card p-4 transition-shadow duration-150 hover:shadow-sm'
-          >
-            <div className='mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-sm bg-primary-50'>
-              <Icon size={18} className='text-primary' weight='duotone' />
+          <div className='flex-1 min-w-0'>
+            <div className='flex items-center justify-between gap-2'>
+              <span className='text-sm font-medium text-foreground'>
+                {title}
+              </span>
+              <ArrowRight
+                size={14}
+                className='text-muted-foreground shrink-0 transition-transform duration-150 group-hover:translate-x-0.5'
+              />
             </div>
-
-            <div className='flex-1 min-w-0'>
-              <div className='flex items-center justify-between gap-2'>
-                <span className='text-sm font-medium text-foreground'>
-                  {title}
+            <p className='mt-0.5 text-xs leading-relaxed text-muted-foreground'>
+              {description}
+            </p>
+            <div className='mt-2 flex flex-wrap gap-1'>
+              {tags.map((tag) => (
+                <span
+                  key={tag}
+                  className='rounded-sm px-1.5 py-0.5 text-[10px] font-medium uppercase tracking-wide bg-background text-muted-foreground border border-border'
+                >
+                  {tag}
                 </span>
-                <ArrowRight
-                  size={14}
-                  className='text-muted-foreground shrink-0 transition-transform duration-150 group-hover:translate-x-0.5'
-                />
-              </div>
-              <p className='mt-0.5 text-xs leading-relaxed text-muted-foreground'>
-                {description}
-              </p>
-              <div className='mt-2 flex flex-wrap gap-1'>
-                {tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className='rounded-sm px-1.5 py-0.5 text-[10px] font-medium uppercase tracking-wide bg-background text-muted-foreground border border-border'
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
+              ))}
             </div>
-          </Link>
-        ))}
-      </div>
+          </div>
+        </Link>
+      ))}
     </div>
-  </SharedPageLayout>
+  </PracticeLayout>
 )
 
 export default AreaCPage

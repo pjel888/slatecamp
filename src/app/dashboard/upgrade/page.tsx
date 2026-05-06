@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { redirect } from 'next/navigation'
 import { createClient, getUser } from '@/lib/supabase/server'
 import { trackServerEvent } from '@/lib/analytics-server'
-import SharedPageLayout from '@/components/layouts/SharedPageLayout'
+import { DataLayout } from '@/components/layouts/category/DataLayout'
 import { UpgradeButtons } from '@/components/dashboard/upgrade/UpgradeButtons'
 import { FEATURE_PAYMENTS_ENABLED } from '@/lib/constants/feature-flags'
 import { ROUTES } from '@/lib/routes'
@@ -43,12 +43,17 @@ const UpgradePage = async () => {
   }
 
   return (
-    <SharedPageLayout>
+    <DataLayout
+      hero={{
+        subtitle: 'Upgrade',
+        description: 'Unlimited access to all SlateCamp features.',
+      }}
+    >
       <div className="mx-auto w-full max-w-xl px-4 py-8">
         {/* Headline — Boldonse 400, 36px */}
-        <h1 className="font-[family-name:var(--font-boldonse)] text-[36px] font-extrabold leading-tight text-foreground">
+        <p className="font-[family-name:var(--font-boldonse)] text-[36px] font-extrabold leading-tight text-foreground">
           Know you&apos;ll win.
-        </h1>
+        </p>
 
         {/* Value statement — Inter 16px */}
         <p className="mt-4 text-base text-muted-foreground leading-relaxed">
@@ -121,7 +126,7 @@ const UpgradePage = async () => {
           Secure payment &middot; Cancel anytime
         </p>
       </div>
-    </SharedPageLayout>
+    </DataLayout>
   )
 }
 

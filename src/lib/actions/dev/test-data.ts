@@ -10,8 +10,6 @@ import { logServerEvent } from '@/lib/logging/server'
  */
 export async function generateTestSessions(count: number) {
   await assertDeveloperAccess()
-
-  const supabase = await createClient()
   const {
     data: { user },
   } = await getUser()
@@ -28,74 +26,22 @@ export async function generateTestSessions(count: number) {
   // Input validation
   const validatedCount = Math.max(1, Math.min(100, Math.floor(count)))
 
-  // Get user's active exam profile
-  const { data: profile } = await supabase
-    .from('exam_profiles')
-    .select('id, board_exam_id')
-    .eq('user_id', user.id)
-    .eq('is_active', true)
-    .maybeSingle()
-
-  if (!profile) {
-    return { message: 'No active exam profile found. Complete onboarding first.' }
-  }
-
-  // Get some subjects for the exam
-  const { data: subjects } = await supabase
-    .from('subjects')
-    .select('id, name')
-    .eq('board_exam_id', profile.board_exam_id)
-    .limit(3)
-
-  if (!subjects?.length) {
-    return { message: 'No subjects found for your exam profile.' }
-  }
-
-  const sessionTypes = ['subject_quick', 'custom_compiled', 'topic_drill'] as const
-  let created = 0
-
-  for (let i = 0; i < validatedCount; i++) {
-    const sessionType = sessionTypes[i % sessionTypes.length]
-    const subject = subjects[i % subjects.length]
-
-    const { error } = await supabase.from('review_sessions').insert({
-      user_id: user.id,
-      exam_profile_id: profile.id,
-      session_type: sessionType,
-      source_subject_id: subject.id,
-      config: {
-        subjects: [{ subject_id: subject.id, question_count: 10 }],
-        shuffle_questions: true,
-        show_immediate_feedback: true,
-      },
-      name: `Test Session ${i + 1} - ${subject.name}`,
-      total_questions: 10,
-      questions_answered: Math.floor(Math.random() * 10),
-      questions_correct: Math.floor(Math.random() * 8),
-      questions_incorrect: Math.floor(Math.random() * 3),
-      questions_skipped: 0,
-      total_time_ms: Math.floor(Math.random() * 300000) + 60000,
-      status: i % 3 === 0 ? 'completed' : 'in_progress',
-      subject_scores: [],
-      started_at: new Date().toISOString(),
-    })
-
-    if (!error) created++
-  }
-
   await logServerEvent({
     severity: 'info',
     family: 'developer',
-    eventName: 'test_sessions_generated',
-    message: `Generated ${created}/${validatedCount} test sessions`,
+    eventName: 'test_sessions_generation_disabled',
+    message: 'Developer test session generation is disabled until it is rebuilt for the current quiz schema.',
     context: {
       routeOrAction: 'generateTestSessions',
       userId: user.id,
-      metadata: { count: validatedCount, created },
+      metadata: { requestedCount: validatedCount },
     },
   })
 
-  return { message: `Generated ${created}/${validatedCount} test sessions.` }
+  return {
+    message:
+      'Test session generation is disabled until the developer tool is rebuilt for the current quiz_sessions/taxonomy schema.',
+  }
 }
 
 /**

@@ -1,0 +1,53 @@
+--- before/lea-theo-002-02-core-concept
++++ after/lea-theo-002-02-core-concept
+@@ -59,7 +59,7 @@
+
+ [SLATECAMP_UI_BLOCK:ui_0005 component="WikiExamTable" status="preserved"]
+ Extracted summary:
+-- Props: headers="{[\"**Principle**\", \"**Core Definition**\", \"**Key Characteristic**\", \"**LEA Test Indicator**\"]}", rows="{[['[\"**Contrast**\", \"Comparison showing differences\", \"Creates emphasis through opposition\", \"\\\\\"What makes an element stand out?\\\\\"\"]', '[\"**Rhythm**\", \"Repetition in regular sequence\", \"Unaccented (regular) or accented (varied)\", \"\\\\\"Equally spaced windows... repetition\\\\\"\"]', '[\"**Proportion**\", \"Comparison of size, shape, and tone\", \"Relative and absolute relationships\", \"\\\\\"Relationship between parts and whole\\\\\"\"]', '[\"**Balance**\", \"Equality in visual weight distribution\", \"Symmetrical, asymmetrical, or radial\", \"\\\\\"Equality... distribution of visual weight\\\\\"\"]', '[\"**Sclea**\", \"Feeling of size relative to human and context\", \"Human sclea and visual sclea\", \"\\\\\"Grandeur, dignity, monumentality\\\\\"\"]', '[\"**Character**\", \"Distinctive quality identifying purpose\", \"Functional, associated, personal\", \"\\\\\"Influenced by purpose of building\\\\\"\"]']]}"
++- Props: headers="{[\"**Principle**\", \"**Core Definition**\", \"**Key Characteristic**\", \"**LEA Test Indicator**\"]}", rows="{[['[\"**Contrast**\", \"Comparison showing differences\", \"Creates emphasis through opposition\", \"\\\\\"What makes an element stand out?\\\\\"\"]', '[\"**Rhythm**\", \"Repetition in regular sequence\", \"Unaccented (regular) or accented (varied)\", \"\\\\\"Equally spaced windows... repetition\\\\\"\"]', '[\"**Proportion**\", \"Comparison of size, shape, and tone\", \"Relative and absolute relationships\", \"\\\\\"Relationship between parts and whole\\\\\"\"]', '[\"**Balance**\", \"Equality in visual weight distribution\", \"Symmetrical, asymmetrical, or radial\", \"\\\\\"Equality... distribution of visual weight\\\\\"\"]', '[\"**scale**\", \"Feeling of size relative to human and context\", \"Human scale and visual scale\", \"\\\\\"Grandeur, dignity, monumentality\\\\\"\"]', '[\"**Character**\", \"Distinctive quality identifying purpose\", \"Functional, associated, personal\", \"\\\\\"Influenced by purpose of building\\\\\"\"]']]}"
+ - Text: (none detected)
+ [/SLATECAMP_UI_BLOCK]
+ ## How It's Tested on the LEA
+@@ -85,7 +85,7 @@
+ [SLATECAMP_UI_BLOCK:ui_0009 component="ExamTip" status="preserved"]
+ Extracted summary:
+ - Props: (none)
+-- Text: **Pattern 4: Sclea Distinction** *Question stem:* "The dimensions and proportions of a doorway relative to the human body exemplify..." *Correct answer:* "Human sclea." *Trap:* Confusing human sclea with visual sclea (which concerns relative size among elements, not specifically human measurement).
++- Text: **Pattern 4: scale Distinction** *Question stem:* "The dimensions and proportions of a doorway relative to the human body exemplify..." *Correct answer:* "Human scale." *Trap:* Confusing human scale with visual scale (which concerns relative size among elements, not specifically human measurement).
+ [/SLATECAMP_UI_BLOCK]
+
+ [SLATECAMP_UI_BLOCK:ui_0010 component="ExamTip" status="preserved"]
+@@ -97,7 +97,7 @@
+ [SLATECAMP_UI_BLOCK:ui_0011 component="Callout" status="preserved"]
+ Extracted summary:
+ - Props: (none)
+-- Text: The six basic principles of design—contrast, rhythm, proportion, balance, sclea, and character—form the foundation of architectural design decisions. The LEA tests these concepts directly through recognition questions, definition items, and applied scenarios asking you to identify which principle governs a design decision or to distinguish between similar concepts.
++- Text: The six basic principles of design—contrast, rhythm, proportion, balance, scale, and character—form the foundation of architectural design decisions. The LEA tests these concepts directly through recognition questions, definition items, and applied scenarios asking you to identify which principle governs a design decision or to distinguish between similar concepts.
+ [/SLATECAMP_UI_BLOCK]
+
+ ## Common Mistakes
+@@ -116,7 +116,7 @@
+
+ [SLATECAMP_UI_BLOCK:ui_0014 component="WikiMistakeList" status="preserved"]
+ Extracted summary:
+-- Props: mistakes="{[\"Confusing Sclea with Size. Size and sclea are not identical. A very large building can feel small-sclead if divided into small parts; a small room can feel monumental if proportioned generously. Sclea concerns *perception relative to human measure and context*, not absolute dimensions. This distinction appears frequently on the LEA.\", \"Misidentifying Proportion as Only Ratio. Proportion is broader than mathematical ratio. While ratios are part of proportion (golden ratio, Fibonacci), Ching defines it as \\\"the comparison the eye makes between the size, shape, and tone of different elements.\\\" A building can be proportionally pleasing without following any specific mathematical formula—the eye judges relationships holistically.\", \"Merging Functional and Associated Character. Students confuse these constantly. Functional character comes from *how the building works*—a hospital's character is shaped by clinical efficiency, circulation systems, and structural needs. Associated character comes from *cultural memory and precedent*—a pitched roof evokes domestic tradition; classical columns evoke formality. Both can exist in one building but derive from different sources.\", \"Ignoring the Three-Part Character Framework. The LEA specifically tests whether you know that character has three sources. Students who memorize only \\\"character is identity\\\" miss questions asking \\\"which type of character comes from a building's purpose?\\\" Always link character to one of the three categories: functional (purpose), associated (cultural/historical), or personal (designer's expression).\"]}"
++- Props: mistakes="{[\"Confusing scale with Size. Size and scale are not identical. A very large building can feel small-scaled if divided into small parts; a small room can feel monumental if proportioned generously. scale concerns *perception relative to human measure and context*, not absolute dimensions. This distinction appears frequently on the LEA.\", \"Misidentifying Proportion as Only Ratio. Proportion is broader than mathematical ratio. While ratios are part of proportion (golden ratio, Fibonacci), Ching defines it as \\\"the comparison the eye makes between the size, shape, and tone of different elements.\\\" A building can be proportionally pleasing without following any specific mathematical formula—the eye judges relationships holistically.\", \"Merging Functional and Associated Character. Students confuse these constantly. Functional character comes from *how the building works*—a hospital's character is shaped by clinical efficiency, circulation systems, and structural needs. Associated character comes from *cultural memory and precedent*—a pitched roof evokes domestic tradition; classical columns evoke formality. Both can exist in one building but derive from different sources.\", \"Ignoring the Three-Part Character Framework. The LEA specifically tests whether you know that character has three sources. Students who memorize only \\\"character is identity\\\" miss questions asking \\\"which type of character comes from a building's purpose?\\\" Always link character to one of the three categories: functional (purpose), associated (cultural/historical), or personal (designer's expression).\"]}"
+ - Text: (none detected)
+ [/SLATECAMP_UI_BLOCK]
+
+@@ -152,3 +152,14 @@
+
+ > **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
+
++
++
++## Board Exam Quick Check
++
++Before moving on, answer these without looking back:
++
++1. What rule, principle, or design decision is this article teaching?
++2. What is the most likely board-exam trap in this topic?
++3. What would change in a real project if you applied the rule incorrectly?
++
++If you cannot answer all three, reread the section that introduced the rule before attempting the linked questions.

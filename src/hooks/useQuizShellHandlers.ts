@@ -6,6 +6,7 @@ import { useQuizStore } from '@/stores/useQuizStore'
 import { useQuizTimerStore } from '@/stores/useQuizTimerStore'
 import {
   endSession as endSessionAction,
+  updateSessionProgress,
 } from '@/lib/actions/quiz-v2'
 import { withMinimumDuration } from '@/lib/utils/promise'
 import { runWithLoading } from '@/hooks/useGlobalLoading'
@@ -52,7 +53,7 @@ export const useQuizShellHandlers = ({ sessionId, mode: _mode }: UseQuizShellHan
   const handleNext = useCallback(() => {
     directionRef.current = 'forward'
     const state = useQuizStore.getState()
-    const { currentIndex, totalQuestions, results, feedback } = state
+    const { currentIndex, totalQuestions, results, feedback, status } = state
     const isLast = currentIndex === totalQuestions - 1
     const answeredCount = state.getAnsweredCount()
     const showResultsTransition = () => {
@@ -67,6 +68,16 @@ export const useQuizShellHandlers = ({ sessionId, mode: _mode }: UseQuizShellHan
         endSession(finalResults)
       }, 900)
     }
+    const finishFromServer = () => {
+      if (status === 'finalizing') return
+      showResultsTransition()
+      void withMinimumDuration(
+        endSessionAction({ sessionId, endReason: 'completed' }),
+        800,
+      )
+        .then((result) => endSession(result))
+        .catch(() => router.push(ROUTES.dashboard.quizResults(sessionId)))
+    }
 
     // 1. If feedback is visible, handle transition
     if (feedback.visible) {
@@ -74,7 +85,7 @@ export const useQuizShellHandlers = ({ sessionId, mode: _mode }: UseQuizShellHan
         if (results) {
           finishWithResults(results)
         } else if (answeredCount >= totalQuestions) {
-          showResultsTransition()
+          finishFromServer()
         } else {
           state.showSubmitModal()
         }
@@ -89,12 +100,14 @@ export const useQuizShellHandlers = ({ sessionId, mode: _mode }: UseQuizShellHan
         state.showSubmitModal()
       } else if (results) {
         finishWithResults(results)
+      } else {
+        finishFromServer()
       }
       return
     }
 
     goNext()
-  }, [hideFeedback, endSession, goNext])
+  }, [hideFeedback, endSession, goNext, router, sessionId])
 
   const handlePrevious = useCallback(() => {
     directionRef.current = 'backward'
@@ -102,17 +115,17 @@ export const useQuizShellHandlers = ({ sessionId, mode: _mode }: UseQuizShellHan
   }, [goPrevious])
 
   const handleExit = async () => {
+    const { currentIndex } = useQuizStore.getState()
+
     try {
-      const result = await withMinimumDuration(
-        endSessionAction({ sessionId, endReason: 'user_exit' }),
-        800,
-      )
-      stopTimer()
-      endSession(result)
+      await updateSessionProgress(sessionId, currentIndex)
     } catch {
-      reset()
+      // Leaving should still work offline or if progress was already saved by the throttled sync.
+    } finally {
+      stopTimer()
       resetTimer()
-      router.push('/dashboard')
+      reset()
+      router.push(ROUTES.dashboard.quiz)
     }
   }
 

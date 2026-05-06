@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation'
 import { getScenarioById } from '@/lib/design-scenarios'
-import SharedPageLayout from '@/components/layouts/SharedPageLayout'
+import { PracticeLayout } from '@/components/layouts/category/PracticeLayout'
 import { DesignQuizSession } from '../_components/DesignQuizSession'
 
 type PageProps = {
@@ -20,11 +20,15 @@ const DesignQuizScenarioPage = async ({ params }: PageProps) => {
   if (!scenario) notFound()
 
   return (
-    <SharedPageLayout>
-      <div className='max-w-6xl mx-auto px-4 py-6 w-full'>
-        <DesignQuizSession scenario={scenario} />
-      </div>
-    </SharedPageLayout>
+    <PracticeLayout
+      hero={{
+        subtitle: scenario.title,
+        description:
+          'Answer scenario-based computation questions tied to a shared design brief.',
+      }}
+    >
+      <DesignQuizSession scenario={scenario} />
+    </PracticeLayout>
   )
 }
 

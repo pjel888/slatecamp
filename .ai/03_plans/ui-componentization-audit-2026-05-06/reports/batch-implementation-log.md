@@ -1,0 +1,243 @@
+# Batch Implementation Log
+
+## Batch 1: Auth error alert normalization
+
+Date/time: 2026-05-06T17:24:32
+Commit target: `refactor(ui): normalize auth error alerts`
+Queue IDs: UIA-PUBLIC-0022, UIA-PUBLIC-0023
+
+### What changed
+
+- Added `src/components/auth/AuthErrorAlert.tsx`.
+- Added `src/components/auth/AuthErrorAlert.stories.tsx` with default, OAuth callback failure, and long provider error states.
+- Replaced duplicate inline destructive auth error divs in login/register forms with `AuthErrorAlert`.
+
+### Validation
+
+- `bun run lint`: passed with the same 10 baseline warnings.
+- `bun run check:storybook`: passed, 101 story files scanned.
+- `NODE_OPTIONS=--max-old-space-size=8192 bun run build-storybook`: passed; default heap baseline OOM was resolved by documented heap increase.
+- `bun run type-check`: still fails only on pre-existing baseline error: `scripts/normalize-distractors.ts(15,20): Cannot find module 'openai'`. The new Storybook import error was fixed by changing to `@storybook/react`.
+- Browser visual inspection: `/login?error=auth_callback_failed` showed the destructive alert with warning icon; `/register` loaded without console errors.
+
+### Reviewer
+
+Independent reviewer found no blockers. All recommendations were applied.
+
+### Risk
+
+Low. Auth OAuth behavior, callback handling, loading, and redirects were unchanged.
+
+## Batch 2: PricingCard CTA normalization
+
+Date/time: 2026-05-06T17:33:53
+Queue ID: UIA-PUBLIC-0021
+
+### What changed
+
+- Migrated `PricingCard` CTA from raw `Link` classes to shared `Button asChild`.
+- Added `src/components/marketing/PricingCard.stories.tsx`.
+- Added a Storybook `next/font/google` mock and alias so real marketing components using Next font exports can render in Storybook.
+
+### Validation
+
+- `bun run lint`: passed with same 10 baseline warnings.
+- `bun run check:storybook`: passed, 102 story files scanned.
+- `NODE_OPTIONS=--max-old-space-size=8192 bun run build-storybook`: passed after adding the Storybook font mock.
+- `bun run type-check`: blocked by the same pre-existing baseline missing `openai` module in `scripts/normalize-distractors.ts`.
+- Storybook browser inspection: `marketing-pricingcard--highlighted-tier` showed full-width primary CTA button/link, no visible regression.
+
+### Risk
+
+Low. Link href/name semantics are preserved through `Button asChild`; focus styling improves. Pricing page live route currently shows free-access copy, so PricingCard visual verification was done in Storybook.
+
+## Batch 3: Mobile sidebar controls normalization
+
+Date/time: 2026-05-06T18:17:42
+Queue IDs: UIA-DSS-0003, UIA-DSS-0004
+
+### What changed
+
+- Migrated `MobileTopBar` hamburger raw button to shared `Button` icon primitive.
+- Migrated `MobileDrawer` close raw button to shared `Button` icon primitive.
+- Added `MobileTopBar` and `MobileDrawer` Storybook stories.
+- Added Storybook-only `@/lib/actions/quiz-v2` mock/alias so the drawer story does not bundle server actions through the quiz store.
+
+### Validation
+
+- `bun run lint`: passed with same 10 baseline warnings.
+- `bun run check:storybook`: passed, 104 story files scanned.
+- `NODE_OPTIONS=--max-old-space-size=8192 bun run build-storybook`: passed.
+- `bun run type-check`: blocked by same pre-existing missing `openai` module in `scripts/normalize-distractors.ts`.
+- Playwright mobile screenshots captured at 390×844 for topbar and drawer stories.
+- Vision inspection passed for both screenshots.
+
+### Risk
+
+Low. The Storybook quiz-v2 action alias is intentionally broad within Storybook; it should be maintained as additional quiz-v2 action exports are needed by stories.
+
+## Batch 4: Developer EndpointCard Button migration
+
+Date/time: 2026-05-06T18:28:55
+Queue ID: UIA-DEV-0005
+
+### What changed
+
+- Moved `EndpointCard` implementation to `src/components/developer/EndpointCard.tsx` so Storybook and the developer route share the same component without restricted app-internal imports.
+- Updated `/developer/api-reference` to import `@/components/developer/EndpointCard`.
+- Kept a compatibility re-export at `src/app/developer/_components/EndpointCard.tsx`.
+- Migrated the expandable row trigger from raw `<button>` to shared `Button` with `type="button"`, `variant="ghost"`, and preserved compact row spacing.
+- Added `src/components/developer/EndpointCard.stories.tsx`.
+
+### Validation
+
+- `bun run lint`: passed with same 10 baseline warnings.
+- `bun run check:storybook`: passed, 105 story files scanned.
+- `NODE_OPTIONS=--max-old-space-size=8192 bun run build-storybook`: passed.
+- `bun run type-check`: blocked by same pre-existing missing `openai` module in `scripts/normalize-distractors.ts`.
+- Playwright screenshot inspection covered collapsed and expanded states.
+
+### Risk
+
+Low. Moving the component into `src/components/developer` improves Storybook compatibility and avoids a restricted import, but route import path changed. Existing app-internal path remains as a compatibility re-export.
+
+## Batch 5: Dashboard ModeCard Card/Badge migration
+
+Date/time: 2026-05-06T18:53:22
+Queue ID: UIA-DSS-0011
+
+### What changed
+
+- Migrated `ModeCard` shell from a custom card-like `<div>` to shared `Card size="lg"`.
+- Migrated active-session status label from custom absolute `<div>` to shared `Badge variant="primary" size="xs"`.
+- Preserved disabled/muted states, hover border, hover shadow, action buttons, active-session behavior, and compact badge placement.
+- Added `src/components/dashboard/ModeCard.stories.tsx` with default, active-session, and disabled states.
+
+### Validation
+
+- `bun run lint`: passed with same 10 baseline warnings.
+- `bun run check:storybook`: passed.
+- `NODE_OPTIONS=--max-old-space-size=8192 bun run build-storybook`: passed.
+- `bun run type-check`: blocked by same pre-existing missing `openai` module in `scripts/normalize-distractors.ts`.
+- Playwright screenshots and vision inspection covered default and active-session states.
+
+### Risk
+
+Low. The component keeps the same external props and behavior while routing card shell/status badge through existing primitives.
+
+## Batch 6: Admin AssetList Input/Select migration
+
+Date/time: 2026-05-06T18:59:10
+Queue ID: UIA-ADMIN-0001
+
+### What changed
+
+- Migrated AssetList raw search `<input>` to shared `Input`.
+- Migrated raw status/system `<select>` controls to shared `Select` primitives.
+- Added accessible labels for the search and filter controls.
+- Added `src/components/admin/AssetList.stories.tsx` with default and empty states.
+
+### Validation
+
+- `bun run lint`: passed with same 10 baseline warnings.
+- `bun run check:storybook`: passed.
+- `NODE_OPTIONS=--max-old-space-size=8192 bun run build-storybook`: passed.
+- `bun run type-check`: known baseline failure remains from missing `openai` module.
+- Playwright screenshot inspection covered default and search-filtered states.
+
+### Risk
+
+Low. Search filtering and visual layout were verified. Select empty-string all-options follow existing repo usage.
+
+## Batch 7: Calculator CheckboxField migration
+
+Date/time: 2026-05-06T19:05:12
+Queue ID: UIA-PUBLIC-0018
+
+### What changed
+
+- Migrated calculator `CheckboxField` from raw checkbox input to shared `Checkbox` and `Label`.
+- Added `useId()` linkage between label and checkbox for accessible label-click behavior.
+- Added `src/components/calculators/InputPrimitives.stories.tsx` covering combined controls and unchecked checkbox state.
+
+### Validation
+
+- `bun run lint`: passed with same 10 baseline warnings.
+- `bun run check:storybook`: passed.
+- `NODE_OPTIONS=--max-old-space-size=8192 bun run build-storybook`: passed.
+- `bun run type-check`: known baseline failure remains from missing `openai` module after story-specific type issue was fixed.
+- Playwright state check: initial `aria-checked=true`, label click toggled false, direct checkbox click toggled true.
+- Screenshot inspection covered checked and toggled states.
+
+### Risk
+
+Low. External props are unchanged and label-click behavior was verified.
+
+## Batch 8: Quiz setup selector primitive adoption
+
+Date/time: 2026-05-06T19:19:04
+Queue ID: UIA-QZ-0008
+
+### What changed
+- `QuestionCountPills` now uses shared `Button`.
+- `SetupFlow` back control now uses shared `Button`.
+- `IntroSlide2` topic search now uses shared `Input`.
+- `IntroSlide3` preset/difficulty/save controls now use shared `Button`.
+- Added `src/components/quiz-v2/setup/SetupControls.stories.tsx`.
+
+### Validation
+- `bun run lint`: passed with 10 baseline warnings.
+- `bun run check:storybook`: passed.
+- `NODE_OPTIONS=--max-old-space-size=8192 bun run build-storybook`: passed.
+- `bun run type-check`: only known baseline `openai` module failure after story fixture/type issues were fixed.
+- Playwright screenshots captured for setup flow, topic search, and advanced config stories.
+
+## Batch 9: Quiz-v2 overlay/results Storybook coverage
+
+Date/time: 2026-05-06T19:27:21
+Queue ID: UIA-QZ-0013
+
+### What changed
+- Added `src/components/quiz-v2/OverlaysAndResults.stories.tsx`.
+- Covered calculating results overlay, micro-break overlay, exit confirmation modal, and ScoreReveal card.
+- Removed autodocs from always-open/fixed overlay stories to avoid misleading docs-page behavior.
+
+### Validation
+- `bun run lint`: passed with 10 baseline warnings.
+- `bun run check:storybook`: passed.
+- `NODE_OPTIONS=--max-old-space-size=8192 bun run build-storybook`: passed.
+- `bun run type-check`: baseline missing `openai` only.
+- Playwright screenshots captured, including final ScoreReveal after animation delay.
+
+## Batch 10: CEO RoleAssignmentModal primitives
+Date/time: 2026-05-06T19:38:51
+Queue ID: UIA-CEO-0005
+
+### What changed
+- Replaced raw role radio inputs with shared `RadioGroup` / `RadioGroupItem`.
+- Replaced raw footer buttons with shared `Button`.
+- Added `RoleAssignmentModal.stories.tsx`.
+- Added Storybook mock for `@/lib/actions/ceo/team-actions`.
+
+### Validation
+- `bun run lint`: passed with 10 baseline warnings.
+- `bun run check:storybook`: passed.
+- `NODE_OPTIONS=--max-old-space-size=8192 bun run build-storybook`: passed.
+- Playwright rendered the modal and selected Viewer.
+
+## Batch 11: PortalSidebar search primitive
+Date/time: 2026-05-06T19:47:52
+Queue ID: UIA-PORTAL-0001
+
+### What changed
+- Replaced PortalSidebar raw search input with shared `Input`.
+- Changed the field to `type="search"` and added `aria-label="Filter portal navigation"`.
+- Preserved controlled search state, disabled locked state, slash shortcut focus, and filtering behavior.
+- Added `PortalSidebar.stories.tsx` with desktop-width wrapper because the component is hidden below `lg`.
+
+### Validation
+- `bun run lint`: passed with 10 baseline warnings.
+- `bun run check:storybook`: passed.
+- `NODE_OPTIONS=--max-old-space-size=8192 bun run build-storybook`: passed.
+- `git diff --check`: passed.
+- Playwright rendered default and filtered auth state.

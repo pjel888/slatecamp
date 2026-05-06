@@ -1,0 +1,57 @@
+{
+  "ok": true,
+  "checks": [
+    {
+      "name": "article_log_present",
+      "status": "PASS"
+    },
+    {
+      "name": "question_log_present",
+      "status": "PASS"
+    },
+    {
+      "name": "source_log_present",
+      "status": "PASS"
+    },
+    {
+      "name": "article_not_live_applied",
+      "status": "PASS"
+    },
+    {
+      "name": "question_not_live_applied",
+      "status": "PASS"
+    },
+    {
+      "name": "source_live_not_applied",
+      "status": "PASS"
+    },
+    {
+      "name": "source_local_status_explicit",
+      "status": "PASS"
+    },
+    {
+      "name": "answer_key_changes_zero",
+      "status": "PASS"
+    },
+    {
+      "name": "article_backup_exists",
+      "status": "PASS"
+    },
+    {
+      "name": "question_backup_exists",
+      "status": "PASS"
+    },
+    {
+      "name": "source_backup_exists",
+      "status": "PASS"
+    },
+    {
+      "name": "rollback_log_exists",
+      "status": "PASS"
+    },
+    {
+      "name": "batch_limits_respected",
+      "status": "PASS"
+    }
+  ]
+}

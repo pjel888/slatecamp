@@ -1,0 +1,53 @@
+{
+  "ok": true,
+  "checks": [
+    {
+      "name": "json_parses",
+      "status": "PASS"
+    },
+    {
+      "name": "external_upload_false",
+      "status": "PASS"
+    },
+    {
+      "name": "no_dependency_added",
+      "status": "PASS"
+    },
+    {
+      "name": "no_source_pack_created",
+      "status": "PASS"
+    },
+    {
+      "name": "no_embeddings_created",
+      "status": "PASS"
+    },
+    {
+      "name": "no_article_question_mutation",
+      "status": "PASS"
+    },
+    {
+      "name": "statuses_blocked",
+      "status": "PASS"
+    },
+    {
+      "name": "samples_present",
+      "status": "PASS"
+    },
+    {
+      "name": "sample_uploads_false",
+      "status": "PASS"
+    },
+    {
+      "name": "sample_methods_safe",
+      "status": "PASS"
+    },
+    {
+      "name": "sample_paths_local",
+      "status": "PASS"
+    },
+    {
+      "name": "sample_statuses_blocked",
+      "status": "PASS"
+    }
+  ]
+}

@@ -3,6 +3,7 @@
 import { useState, useMemo } from 'react'
 import { MagnifyingGlass, CaretDown, CaretUp } from '@phosphor-icons/react/dist/ssr'
 import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
 import { cn } from '@/lib/utils'
 import type { QuizMode, TaxonomySubject } from '@/types/quiz-config'
 
@@ -271,12 +272,12 @@ const IntroSlide2 = ({ mode, subjects, initialSelected, onContinue }: IntroSlide
           className="absolute left-3 top-1/2 -translate-y-1/2 h-3.5 w-3.5 text-muted-foreground"
           aria-hidden="true"
         />
-        <input
+        <Input
           type="search"
           placeholder="Search topics…"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          className="w-full rounded-sm border border-border bg-card pl-8 pr-3 py-2 text-[13px] text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary/50 transition-colors duration-150"
+          className="rounded-sm bg-card pl-8 text-[13px]"
           aria-label="Search topics"
         />
       </div>

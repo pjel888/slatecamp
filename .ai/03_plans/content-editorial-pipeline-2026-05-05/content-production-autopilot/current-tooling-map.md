@@ -1,0 +1,88 @@
+# Current Tooling Map
+
+## Package scripts
+- `content-audit:admin-audit-rebaseline-migration`: `bun scripts/content-audit/build-admin-audit-rebaseline-migration.ts`
+- `content-audit:admin-audit-rebaseline-validate`: `bun scripts/content-audit/validate-admin-audit-rebaseline-migration.ts`
+- `content-audit:admin-local-fixtures`: `bun scripts/content-audit/build-admin-audit-local-fixtures.ts`
+- `content-audit:admin-local-fixtures-validate`: `bun scripts/content-audit/validate-admin-audit-local-fixtures.ts`
+- `content-audit:admin-local-review-payload`: `bun scripts/content-audit/build-admin-local-review-payload.ts`
+- `content-audit:admin-local-review-payload-validate`: `bun scripts/content-audit/validate-admin-local-review-payload.ts`
+- `content-audit:admin-log`: `bun scripts/content-audit/sync-run-log-to-admin-audit.ts`
+- `content-audit:admin-payload-validate`: `bun scripts/content-audit/validate-admin-source-payload.ts`
+- `content-audit:admin-schema-probe`: `bun scripts/content-audit/validate-admin-ai-audit-schema.ts`
+- `content-audit:admin-shadow-migration`: `bun scripts/content-audit/build-admin-audit-shadow-migration.ts`
+- `content-audit:admin-shadow-migration-validate`: `bun scripts/content-audit/validate-admin-audit-shadow-migration.ts`
+- `content-audit:admin-shadow-schema-validate`: `bun scripts/content-audit/validate-admin-audit-shadow-schema.ts`
+- `content-audit:admin-source-payload`: `bun scripts/content-audit/build-source-verification-admin-payload.ts`
+- `content-audit:admin-sync-article`: `bun scripts/content-audit/sync-article-improvement-to-admin-audit.ts`
+- `content-audit:admin-sync-dry-run`: `bun scripts/content-audit/sync-admin-audit-payload-dry-run.ts`
+- `content-audit:admin-sync-question`: `bun scripts/content-audit/sync-question-improvement-to-admin-audit.ts`
+- `content-audit:admin-sync-source`: `bun scripts/content-audit/sync-source-verification-to-admin-audit.ts`
+- `content-audit:admin-sync-validate`: `bun scripts/content-audit/validate-admin-audit-sync-payloads.ts`
+- `content-audit:apply-articles`: `bun scripts/content-audit/apply-approved-article-improvements.ts`
+- `content-audit:apply-harden`: `bun scripts/content-audit/harden-controlled-apply-rollback.ts`
+- `content-audit:apply-harden-validate`: `bun scripts/content-audit/validate-controlled-apply-hardening.ts`
+- `content-audit:apply-questions`: `bun scripts/content-audit/apply-approved-question-improvements.ts`
+- `content-audit:apply-source-status`: `bun scripts/content-audit/apply-approved-source-status.ts`
+- `content-audit:article-improvement-diff-report`: `bun scripts/content-audit/build-article-improvement-diff-report.ts`
+- `content-audit:article-improvement-jobs`: `bun scripts/content-audit/build-article-improvement-jobs.ts`
+- `content-audit:article-improvement-run`: `bun scripts/content-audit/run-article-improvement-pipeline.ts`
+- `content-audit:article-improvement-validate`: `bun scripts/content-audit/validate-article-improvement-output.ts`
+- `content-audit:articles-expand`: `bun scripts/content-audit/expand-article-improvement-proposals.ts`
+- `content-audit:articles-expand-validate`: `bun scripts/content-audit/validate-expanded-article-improvement.ts`
+- `content-audit:component-suggestions`: `bun scripts/content-audit/suggest-component-placements.ts`
+- `content-audit:components`: `bun scripts/content-audit/scan-component-inventory.ts`
+- `content-audit:compose`: `bun scripts/content-audit/compose-candidates.ts`
+- `content-audit:controlled-apply-validate`: `bun scripts/content-audit/validate-controlled-apply-mode.ts`
+- `content-audit:diff`: `bun scripts/content-audit/diff-candidates.ts`
+- `content-audit:draft-article-prototype`: `bun scripts/content-audit/build-draft-article-improvement-prototype.ts`
+- `content-audit:draft-article-prototype-validate`: `bun scripts/content-audit/validate-draft-article-improvement-prototype.ts`
+- `content-audit:draft-claim-linkage`: `bun scripts/content-audit/build-draft-claim-linkage-smoke.ts`
+- `content-audit:draft-claim-linkage-validate`: `bun scripts/content-audit/validate-draft-claim-linkage-smoke.ts`
+- `content-audit:draft-source-packs`: `bun scripts/content-audit/build-draft-source-pack-candidates.ts`
+- `content-audit:draft-source-packs-validate`: `bun scripts/content-audit/validate-draft-source-pack-candidates.ts`
+- `content-audit:embedding-harden`: `bun scripts/content-audit/harden-source-pack-embedding-dry-run.ts`
+- `content-audit:embedding-harden-validate`: `bun scripts/content-audit/validate-source-pack-embedding-hardening.ts`
+- `content-audit:export`: `bun scripts/content-audit/export-article-bundles.ts`
+- `content-audit:fact-check`: `bun scripts/content-audit/ai-feature-guard.ts fact-check`
+- `content-audit:governance-labels`: `bun scripts/content-audit/validate-governance-status-labels.ts`
+- `content-audit:inventory`: `bun scripts/content-audit/scan-component-inventory.ts`
+- `content-audit:migration-lineage-analyze`: `bun scripts/content-audit/analyze-supabase-migration-lineage.ts`
+- `content-audit:normalize`: `bun scripts/content-audit/normalize-article-bundles.ts`
+- `content-audit:pdf-extraction-spike`: `bun scripts/content-audit/extract-local-pdf-text.ts`
+- `content-audit:pdf-extraction-validate`: `bun scripts/content-audit/validate-pdf-extraction-output.ts`
+- `content-audit:pull`: `bun scripts/content-audit/export-article-bundles.ts`
+- `content-audit:push`: `bun scripts/content-audit/push-candidates-to-supabase.ts`
+- `content-audit:push-question:apply`: `bun scripts/content-audit/push-question-to-supabase.ts --apply`
+- `content-audit:push-question:dry-run`: `bun scripts/content-audit/push-question-to-supabase.ts --dry-run`
+- `content-audit:push:apply`: `bun scripts/content-audit/push-candidates-to-supabase.ts --apply`
+- `content-audit:push:dry-run`: `bun scripts/content-audit/push-candidates-to-supabase.ts --dry-run`
+- `content-audit:question-dry-run-audit`: `bun scripts/content-audit/build-question-bank-dry-run-audit.ts`
+- `content-audit:question-dry-run-audit-validate`: `bun scripts/content-audit/validate-question-bank-dry-run-audit.ts`
+- `content-audit:question-improvement-diff-report`: `bun scripts/content-audit/build-question-improvement-diff-report.ts`
+- `content-audit:question-improvement-jobs`: `bun scripts/content-audit/build-question-improvement-jobs.ts`
+- `content-audit:question-improvement-run`: `bun scripts/content-audit/run-question-improvement-pipeline.ts`
+- `content-audit:question-improvement-validate`: `bun scripts/content-audit/validate-question-improvement-output.ts`
+- `content-audit:questions-expand`: `bun scripts/content-audit/expand-question-improvement-proposals.ts`
+- `content-audit:questions-expand-validate`: `bun scripts/content-audit/validate-expanded-question-improvement.ts`
+- `content-audit:rebaseline-plan`: `bun scripts/content-audit/build-supabase-rebaseline-plan.ts`
+- `content-audit:rebaseline-plan-validate`: `bun scripts/content-audit/validate-supabase-rebaseline-plan.ts`
+- `content-audit:rebaseline-snapshot`: `bun scripts/content-audit/build-supabase-rebaseline-snapshot.ts`
+- `content-audit:rebaseline-snapshot-validate`: `bun scripts/content-audit/validate-supabase-rebaseline-snapshot.ts`
+- `content-audit:rewrite`: `bun scripts/content-audit/ai-feature-guard.ts rewrite`
+- `content-audit:rollback-content`: `bun scripts/content-audit/rollback-content-application.ts`
+- `content-audit:roundtrip`: `bun scripts/content-audit/run-content-roundtrip.ts`
+- `content-audit:source-locator-readiness`: `bun scripts/content-audit/validate-locator-packet-readiness.ts`
+- `content-audit:source-locators`: `bun scripts/content-audit/extract-source-locators.ts`
+- `content-audit:source-pack-embedding-inputs`: `bun scripts/content-audit/build-source-pack-embedding-inputs.ts`
+- `content-audit:source-pack-embeddings`: `bun scripts/content-audit/generate-source-pack-embeddings.ts`
+- `content-audit:source-pack-embeddings-validate`: `bun scripts/content-audit/validate-source-pack-embeddings.ts`
+- `content-audit:source-packet-prep`: `bun scripts/content-audit/build-human-sme-packet-prep.ts`
+- `content-audit:source-packs-promote`: `bun scripts/content-audit/promote-draft-source-packs.ts`
+- `content-audit:source-packs-validate`: `bun scripts/content-audit/validate-production-source-packs.ts`
+- `content-audit:source-readiness`: `bun scripts/content-audit/validate-source-packet-readiness.ts`
+- `content-audit:source-reconcile`: `bun scripts/content-audit/build-source-reconciliation-matrix.ts`
+- `content-audit:source-verification-smoke`: `bun scripts/content-audit/run-source-verification-smoke.ts`
+- `content-audit:ui-block-edits`: `bun scripts/content-audit/validate-ui-block-edits.ts`
+- `content-audit:validate`: `bun scripts/content-audit/validate-bundles.ts`
+- `test:source-verification`: `bun test scripts/content-audit/source-verification-invariants.test.ts`

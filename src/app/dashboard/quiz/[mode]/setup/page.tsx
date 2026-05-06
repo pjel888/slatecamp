@@ -67,6 +67,10 @@ const QuizSetupPage = async ({ params, searchParams }: SetupPageProps) => {
 
   const quizMode = mode as QuizMode
 
+  if (quizMode === 'endurance') {
+    redirect(`${ROUTES.dashboard.quiz}?mode=endurance`)
+  }
+
   if (HUB_ONLY_MODES.includes(quizMode)) {
     redirect(`${ROUTES.dashboard.quiz}${toQueryString(resolvedSearchParams)}`)
   }

@@ -6,7 +6,6 @@ import { CalendarBlank, Warning, Clock, ArrowRight } from '@phosphor-icons/react
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 import { ROUTES } from '@/lib/routes'
-// ── Types (inlined from deleted get-review-calendar.ts) ──────────────────────
 
 export type ReviewUrgency = 'overdue' | 'due_today' | 'upcoming'
 
@@ -34,30 +33,17 @@ export interface ReviewCalendarData {
   }
 }
 
-// ── Urgency styling ──────────────────────────────────────────────────────────
-
-const URGENCY_STYLES: Record<
-  ReviewUrgency,
-  { bg: string; text: string; border: string }
-> = {
+const URGENCY_STYLES: Record<ReviewUrgency, { text: string }> = {
   overdue: {
-    bg: 'bg-destructive-50',
     text: 'text-destructive',
-    border: 'border-destructive/20',
   },
   due_today: {
-    bg: 'bg-warning-50',
     text: 'text-warning',
-    border: 'border-warning/20',
   },
   upcoming: {
-    bg: 'bg-surface-focused',
-    text: 'text-text-secondary',
-    border: 'border-border',
+    text: 'text-muted-foreground',
   },
 }
-
-// ── Topic pill ───────────────────────────────────────────────────────────────
 
 const TopicPill = ({
   topic,
@@ -70,24 +56,40 @@ const TopicPill = ({
 
   return (
     <button
-      type="button"
+      type='button'
       onClick={onClick}
       className={cn(
-        'inline-flex items-center gap-1 rounded-sm border px-1.5 py-0.5',
-        'text-[11px] font-medium leading-tight truncate max-w-full',
-        'transition-all duration-150 ease-out hover:shadow-sm cursor-pointer',
-        style.bg,
+        'inline-flex max-w-full items-center gap-1 truncate rounded-full px-0 py-0.5',
+        'text-[11px] font-medium leading-tight transition-colors hover:text-foreground',
         style.text,
-        style.border,
       )}
       title={`${topic.topicName} — recall ${Math.round(topic.predictedRecall * 100)}%`}
     >
-      <span className="truncate">{topic.topicName}</span>
+      <span className='truncate'>{topic.topicName}</span>
     </button>
   )
 }
 
-// ── Day column ───────────────────────────────────────────────────────────────
+const CountPill = ({
+  count,
+  label,
+  tone,
+}: {
+  count: number
+  label: string
+  tone: 'danger' | 'warning' | 'muted'
+}) => (
+  <span
+    className={cn(
+      'inline-flex items-center rounded-full px-0 py-0.5 text-[11px] font-semibold tabular-nums',
+      tone === 'danger' && 'text-destructive',
+      tone === 'warning' && 'text-warning',
+      tone === 'muted' && 'text-muted-foreground',
+    )}
+  >
+    {count} {label}
+  </span>
+)
 
 const DayColumn = ({
   day,
@@ -99,37 +101,35 @@ const DayColumn = ({
   onTopicClick: (topicId: string) => void
 }) => {
   const hasTopics = day.topics.length > 0
-  const MAX_VISIBLE = 3
-  const visibleTopics = day.topics.slice(0, MAX_VISIBLE)
-  const overflow = day.topics.length - MAX_VISIBLE
+  const maxVisible = 2
+  const visibleTopics = day.topics.slice(0, maxVisible)
+  const overflow = day.topics.length - maxVisible
 
   return (
     <div
       className={cn(
-        'flex flex-col gap-1 rounded-md border p-1.5 min-w-0',
-        isToday
-          ? 'border-primary/30 bg-primary-50'
-          : 'border-border bg-card',
+        'flex min-h-[96px] min-w-0 flex-col gap-1.5 rounded-md p-2',
+        isToday ? 'text-primary' : '',
       )}
     >
-      <div className="flex items-center justify-between">
-        <span
-          className={cn(
-            'text-[11px] font-semibold',
-            isToday ? 'text-primary' : 'text-text-secondary',
-          )}
-        >
-          {day.label}
-        </span>
-        {hasTopics && (
-          <span className="text-[10px] text-muted-foreground tabular-nums">
-            {day.topics.length}
-          </span>
-        )}
+      <div className='flex items-start justify-between gap-1'>
+        <div className='min-w-0'>
+          <p
+            className={cn(
+              'truncate text-[11px] font-semibold leading-none',
+              isToday ? 'text-primary' : 'text-foreground',
+            )}
+          >
+            {day.label}
+          </p>
+          <p className='mt-1 text-[10px] leading-none text-muted-foreground'>
+            {hasTopics ? `${day.topics.length} due` : 'Clear'}
+          </p>
+        </div>
       </div>
 
       {hasTopics ? (
-        <div className="flex flex-col gap-0.5">
+        <div className='flex min-h-0 flex-col gap-1 overflow-hidden'>
           {visibleTopics.map((topic) => (
             <TopicPill
               key={topic.topicId}
@@ -138,73 +138,43 @@ const DayColumn = ({
             />
           ))}
           {overflow > 0 && (
-            <span className="text-[10px] text-muted-foreground pl-0.5">
+            <span className='px-2 text-[10px] font-medium text-muted-foreground'>
               +{overflow} more
             </span>
           )}
         </div>
-      ) : (
-        <span className="text-[10px] text-muted-foreground italic">Clear</span>
-      )}
+      ) : null}
     </div>
   )
 }
 
-// ── Summary header ───────────────────────────────────────────────────────────
-
-const SummaryHeader = ({
-  summary,
-}: {
-  summary: ReviewCalendarData['summary']
-}) => {
-  const parts: { count: number; label: string; color: string }[] = []
-
-  if (summary.overdueCount > 0) {
-    parts.push({
-      count: summary.overdueCount,
-      label: 'overdue',
-      color: 'text-destructive',
-    })
-  }
-  if (summary.dueTodayCount > 0) {
-    parts.push({
-      count: summary.dueTodayCount,
-      label: 'due today',
-      color: 'text-warning',
-    })
-  }
-  if (summary.upcomingCount > 0) {
-    parts.push({
-      count: summary.upcomingCount,
-      label: 'upcoming',
-      color: 'text-text-secondary',
-    })
-  }
-
-  if (parts.length === 0) {
+const SummaryHeader = ({ summary }: { summary: ReviewCalendarData['summary'] }) => {
+  if (
+    summary.overdueCount === 0 &&
+    summary.dueTodayCount === 0 &&
+    summary.upcomingCount === 0
+  ) {
     return (
-      <p className="text-xs text-muted-foreground">
-        All topics are in good shape. Keep it up.
-      </p>
+      <span className='rounded-full px-0 py-0.5 text-[11px] font-semibold text-success'>
+        Clear this week
+      </span>
     )
   }
 
   return (
-    <p className="text-xs text-text-secondary">
-      {parts.map((part, i) => (
-        <span key={part.label}>
-          {i > 0 && <span className="text-muted-foreground"> &middot; </span>}
-          <span className={cn('font-semibold tabular-nums', part.color)}>
-            {part.count}
-          </span>{' '}
-          {part.label}
-        </span>
-      ))}
-    </p>
+    <div className='flex flex-wrap items-center justify-end gap-1.5'>
+      {summary.overdueCount > 0 && (
+        <CountPill count={summary.overdueCount} label='overdue' tone='danger' />
+      )}
+      {summary.dueTodayCount > 0 && (
+        <CountPill count={summary.dueTodayCount} label='today' tone='warning' />
+      )}
+      {summary.upcomingCount > 0 && (
+        <CountPill count={summary.upcomingCount} label='upcoming' tone='muted' />
+      )}
+    </div>
   )
 }
-
-// ── Main component ───────────────────────────────────────────────────────────
 
 interface ReviewCalendarProps {
   data: ReviewCalendarData
@@ -234,7 +204,6 @@ export const ReviewCalendar = ({ data }: ReviewCalendarProps) => {
   }, [router])
 
   const handleTopicClick = (topicId: string) => {
-    // Find topic name from the data
     const allTopics = [
       ...data.overdue,
       ...data.days.flatMap((d) => d.topics),
@@ -246,7 +215,6 @@ export const ReviewCalendar = ({ data }: ReviewCalendarProps) => {
     })
   }
 
-  // Filter out topics the user dismissed (no questions available)
   const filteredOverdue = data.overdue.filter((t) => !hiddenTopicIds.has(t.topicId))
   const filteredDays = data.days.map((day) => ({
     ...day,
@@ -258,65 +226,70 @@ export const ReviewCalendar = ({ data }: ReviewCalendarProps) => {
     filteredDays.every((d) => d.topics.length === 0)
 
   return (
-    <div className="rounded-md border border-border bg-card p-2">
-      {/* Header */}
-      <div className="flex items-center justify-between mb-1.5">
-        <div className="flex items-center gap-1.5">
-          <SCIcon icon={CalendarBlank} size="xs" className="text-primary" />
-          <h3 className="text-xs font-semibold text-foreground">
-            Review Schedule
-          </h3>
+    <section className='flex min-h-0 flex-col rounded-md p-3'>
+      <div className='flex shrink-0 items-start justify-between gap-3'>
+        <div className='flex min-w-0 items-center gap-2'>
+          <span className='flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-primary'>
+            <SCIcon icon={CalendarBlank} size='xs' />
+          </span>
+          <div className='min-w-0'>
+            <h3 className='text-sm font-semibold leading-tight text-foreground'>
+              Review Schedule
+            </h3>
+            <p className='text-[11px] text-muted-foreground'>
+              Spaced repetition targets for the next 7 days
+            </p>
+          </div>
         </div>
         <SummaryHeader summary={data.summary} />
       </div>
 
       {isEmpty ? (
-        <div className="flex flex-col items-center justify-center py-6 text-center">
-          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-success-50 text-success">
-            <SCIcon icon={CalendarBlank} size="sm" />
+        <div className='flex flex-col items-center justify-center py-8 text-center'>
+          <div className='flex h-10 w-10 items-center justify-center rounded-full text-success'>
+            <SCIcon icon={CalendarBlank} size='sm' />
           </div>
-          <p className="mt-2 text-sm font-medium text-foreground">
+          <p className='mt-2 text-sm font-medium text-foreground'>
             Nothing due this week
           </p>
-          <p className="mt-0.5 text-xs text-muted-foreground">
+          <p className='mt-0.5 text-xs text-muted-foreground'>
             Complete a few sessions to build your review schedule.
           </p>
         </div>
       ) : (
-        <>
-          {/* Overdue alert */}
+        <div className='mt-3 flex min-h-0 flex-col gap-3'>
           {filteredOverdue.length > 0 && (
-            <div className="flex items-start gap-1.5 rounded-md bg-destructive-50 border border-destructive/15 px-2 py-1.5 mb-1.5">
-              <SCIcon
-                icon={Warning}
-                size="xs"
-                className="text-destructive mt-0.5 shrink-0"
-              />
-              <div className="min-w-0">
-                <p className="text-[11px] font-medium text-destructive">
-                  {filteredOverdue.length} topic{filteredOverdue.length !== 1 ? 's' : ''} need
-                  review — recall has dropped below 50%
-                </p>
-                <div className="flex flex-wrap gap-1 mt-1">
-                  {filteredOverdue.slice(0, 5).map((t) => (
-                    <TopicPill
-                      key={t.topicId}
-                      topic={t}
-                      onClick={() => handleTopicClick(t.topicId)}
-                    />
-                  ))}
-                  {filteredOverdue.length > 5 && (
-                    <span className="text-[10px] text-destructive/70 self-center">
-                      +{filteredOverdue.length - 5} more
-                    </span>
-                  )}
+            <div className='shrink-0 rounded-md px-0 py-2'>
+              <div className='flex items-start gap-2'>
+                <SCIcon
+                  icon={Warning}
+                  size='xs'
+                  className='mt-0.5 shrink-0 text-destructive'
+                />
+                <div className='min-w-0 flex-1'>
+                  <p className='text-xs font-semibold text-destructive'>
+                    {filteredOverdue.length} topic{filteredOverdue.length !== 1 ? 's' : ''} need review — recall has dropped below 50%
+                  </p>
+                  <div className='mt-1.5 flex max-h-[50px] flex-wrap gap-1 overflow-hidden'>
+                    {filteredOverdue.slice(0, 6).map((topic) => (
+                      <TopicPill
+                        key={topic.topicId}
+                        topic={topic}
+                        onClick={() => handleTopicClick(topic.topicId)}
+                      />
+                    ))}
+                    {filteredOverdue.length > 6 && (
+                      <span className='self-center px-1 text-[10px] font-medium text-destructive/80'>
+                        +{filteredOverdue.length - 6} more
+                      </span>
+                    )}
+                  </div>
                 </div>
               </div>
             </div>
           )}
 
-          {/* 7-day grid */}
-          <div className="grid grid-cols-7 gap-1">
+          <div className='grid shrink-0 grid-cols-2 gap-2 sm:grid-cols-4 xl:grid-cols-7'>
             {filteredDays.map((day, i) => (
               <DayColumn
                 key={day.date}
@@ -327,25 +300,22 @@ export const ReviewCalendar = ({ data }: ReviewCalendarProps) => {
             ))}
           </div>
 
-          {/* Footer */}
-          <div className="flex items-center justify-between mt-1.5 pt-1.5 border-t border-border">
-            <div className="flex items-center gap-1 text-[10px] text-muted-foreground">
-              <SCIcon icon={Clock} size="xs" />
-              <span>Based on your personal forgetting curves</span>
+          <div className='flex shrink-0 items-center justify-between gap-3 pt-1'>
+            <div className='flex min-w-0 items-center gap-1 text-[11px] text-muted-foreground'>
+              <SCIcon icon={Clock} size='xs' />
+              <span className='truncate'>Based on your personal forgetting curves</span>
             </div>
             <button
-              type="button"
+              type='button'
               onClick={() => router.push(ROUTES.dashboard.quiz)}
-              className="flex items-center gap-0.5 text-[11px] font-medium text-primary transition-colors duration-150 hover:text-primary-700"
+              className='inline-flex shrink-0 items-center gap-1 text-[11px] font-semibold text-primary transition-colors hover:text-primary-700'
             >
               Review all
-              <SCIcon icon={ArrowRight} size="xs" />
+              <SCIcon icon={ArrowRight} size='xs' />
             </button>
           </div>
-        </>
+        </div>
       )}
-
-      {/* Quick review modal removed (Pass 1 cleanup) */}
-    </div>
+    </section>
   )
 }

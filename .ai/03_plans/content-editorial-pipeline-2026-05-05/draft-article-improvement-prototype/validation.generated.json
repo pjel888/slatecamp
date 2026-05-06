@@ -1,0 +1,33 @@
+{
+  "ok": true,
+  "checks": [
+    {
+      "name": "json_parses",
+      "status": "PASS"
+    },
+    {
+      "name": "prototypes_present",
+      "status": "PASS"
+    },
+    {
+      "name": "all_local_only",
+      "status": "PASS"
+    },
+    {
+      "name": "not_production_ready",
+      "status": "PASS"
+    },
+    {
+      "name": "no_mutations",
+      "status": "PASS"
+    },
+    {
+      "name": "unsupported_claims_listed",
+      "status": "PASS"
+    },
+    {
+      "name": "changed_factual_claims_listed",
+      "status": "PASS"
+    }
+  ]
+}

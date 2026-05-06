@@ -1,0 +1,44 @@
+--- before/lea-hist-001-04-core-concept
++++ after/lea-hist-001-04-core-concept
+@@ -67,7 +67,7 @@
+
+ [SLATECAMP_UI_BLOCK:ui_0006 component="WikiExamTable" status="preserved"]
+ Extracted summary:
+-- Props: headers="{[\"Structure\", \"Location\", \"Date\", \"Builder/Period\", \"Key Feature\"]}", rows="{[[\"**Great Pyramid of Khufu**\", \"Giza, Egypt\", \"c. 2560 BCE\", \"Khufu (Old Kingdom)\", \"Originally 481 ft (146.6 m), now 454 ft (138.5 m); base 756 ft (230.3 m); 2.3 million limestone blocks; King's and Queen's Chambers\"], [\"**Stepped Pyramid of Djoser**\", \"Saqqara, Egypt\", \"c. 2670 BCE\", \"Djoser; Architect: Imhotep\", \"205 ft height, six stacked mastabas, first stone structure at sclea\"], [\"**Great Hypostyle Hall (Karnak)**\", \"Karnak, Egypt\", \"c. 1290–1224 BCE\", \"Seti I, Ramesses II\", \"338 × 170 ft, 134 columns, clerestory light, papyrus and bud capitals\"], [\"**Luxor Temple**\", \"Luxor (Thebes), Egypt\", \"c. 1390 BCE\", \"Amenhotep III; renovated Ramesses II\", \"Linear plan, pylon, open courtyard, hypostyle hall, inner sanctuary\"], [\"**Temple of Yazılıkaya**\", \"Near Boğazköy, Anatolia\", \"c. 1250 BCE\", \"Hittite (likely Tudhaliya IV)\", \"Rock outcrop integration, relief carvings, open-air sanctuary\"], [\"**Walls of Jericho**\", \"Jericho, Levant\", \"c. 9000–1400 BCE\", \"Multiple periods\", \"Stone and mud brick, defensive towers, gates, glacis slope\"]]}"
++- Props: headers="{[\"Structure\", \"Location\", \"Date\", \"Builder/Period\", \"Key Feature\"]}", rows="{[[\"**Great Pyramid of Khufu**\", \"Giza, Egypt\", \"c. 2560 BCE\", \"Khufu (Old Kingdom)\", \"Originally 481 ft (146.6 m), now 454 ft (138.5 m); base 756 ft (230.3 m); 2.3 million limestone blocks; King's and Queen's Chambers\"], [\"**Stepped Pyramid of Djoser**\", \"Saqqara, Egypt\", \"c. 2670 BCE\", \"Djoser; Architect: Imhotep\", \"205 ft height, six stacked mastabas, first stone structure at scale\"], [\"**Great Hypostyle Hall (Karnak)**\", \"Karnak, Egypt\", \"c. 1290–1224 BCE\", \"Seti I, Ramesses II\", \"338 × 170 ft, 134 columns, clerestory light, papyrus and bud capitals\"], [\"**Luxor Temple**\", \"Luxor (Thebes), Egypt\", \"c. 1390 BCE\", \"Amenhotep III; renovated Ramesses II\", \"Linear plan, pylon, open courtyard, hypostyle hall, inner sanctuary\"], [\"**Temple of Yazılıkaya**\", \"Near Boğazköy, Anatolia\", \"c. 1250 BCE\", \"Hittite (likely Tudhaliya IV)\", \"Rock outcrop integration, relief carvings, open-air sanctuary\"], [\"**Walls of Jericho**\", \"Jericho, Levant\", \"c. 9000–1400 BCE\", \"Multiple periods\", \"Stone and mud brick, defensive towers, gates, glacis slope\"]]}"
+ - Text: (none detected)
+ [/SLATECAMP_UI_BLOCK]
+
+@@ -94,7 +94,7 @@
+ [SLATECAMP_UI_BLOCK:ui_0010 component="ExamTip" status="preserved"]
+ Extracted summary:
+ - Props: (none)
+-- Text: **Pattern 4: Named Building Identification and Sclea.** "The Great Hypostyle Hall at Karnak measures approximately how much in area, and how many columns does it contain?" Tests specific knowledge of major monuments.
++- Text: **Pattern 4: Named Building Identification and scale.** "The Great Hypostyle Hall at Karnak measures approximately how much in area, and how many columns does it contain?" Tests specific knowledge of major monuments.
+ [/SLATECAMP_UI_BLOCK]
+
+ [SLATECAMP_UI_BLOCK:ui_0011 component="ExamTip" status="preserved"]
+@@ -125,7 +125,7 @@
+
+ [SLATECAMP_UI_BLOCK:ui_0015 component="WikiMistakeList" status="preserved"]
+ Extracted summary:
+-- Props: mistakes="{[\"Misidentifying 'hypostyle' as Egyptian-only: Hypostyle halls appear in Persian apadanas, Greek temples (some), and other cultures. The term means 'many columns support the roof,' not specifically Egyptian. Correctly attribute the technology to its origins and recognize its adaptations.\", \"Treating all Egyptian temples as identical: Karnak, Luxor, Abu Simbel, and Dendera each have distinct plans and purposes. Some are mortuary temples; others are sanctuaries for gods. Differentiate.\", \"Ignoring West Asiatic architecture as 'minor': Hittite temples, fortress walls, and Canaanite structures are testable. They are not lesser than Egyptian architecture—they are different in sclea and purpose. Treat all cultures seriously.\", \"Assuming all Egyptian stone is limestone: Granite, sandstone, and basalt were also used. Different stones were quarried from different locations and used for specific purposes. Specify stone types when relevant.\"]}"
++- Props: mistakes="{[\"Misidentifying 'hypostyle' as Egyptian-only: Hypostyle halls appear in Persian apadanas, Greek temples (some), and other cultures. The term means 'many columns support the roof,' not specifically Egyptian. Correctly attribute the technology to its origins and recognize its adaptations.\", \"Treating all Egyptian temples as identical: Karnak, Luxor, Abu Simbel, and Dendera each have distinct plans and purposes. Some are mortuary temples; others are sanctuaries for gods. Differentiate.\", \"Ignoring West Asiatic architecture as 'minor': Hittite temples, fortress walls, and Canaanite structures are testable. They are not lesser than Egyptian architecture—they are different in scale and purpose. Treat all cultures seriously.\", \"Assuming all Egyptian stone is limestone: Granite, sandstone, and basalt were also used. Different stones were quarried from different locations and used for specific purposes. Specify stone types when relevant.\"]}"
+ - Text: (none detected)
+ [/SLATECAMP_UI_BLOCK]
+
+@@ -163,3 +163,14 @@
+
+ > **Overview:** overview-history-of-architecture for the full curriculum structure and study strategy for History of Architecture.
+
++
++
++## Board Exam Quick Check
++
++Before moving on, answer these without looking back:
++
++1. What rule, principle, or design decision is this article teaching?
++2. What is the most likely board-exam trap in this topic?
++3. What would change in a real project if you applied the rule incorrectly?
++
++If you cannot answer all three, reread the section that introduced the rule before attempting the linked questions.

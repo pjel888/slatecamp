@@ -41,7 +41,8 @@ These are the real repo-level commands from `package.json`:
 - `bun run perf:summary`
 - `bun run perf:compare`
 - `bun run perf:all`
-- `bun run content-audit:export`
+- `bun run content-audit:pull`
+- `bun run content-audit:export` (legacy alias)
 - `bun run content-audit:normalize`
 - `bun run content-audit:inventory`
 - `bun run content-audit:components`
@@ -93,7 +94,7 @@ scripts.
 | `bun run perf:summary` | synthesize performance reports from raw results | `.ai/00_performance` | run after measurement scripts |
 | `bun run perf:compare` | compare two frontend performance JSON baselines | `.ai/00_performance/results` | writes JSON deltas; inspect auth redirects before treating routes as comparable |
 | `bun run perf:all` | full local performance audit sequence | repo-wide performance surfaces | long-running; requires safe local environment and may still mark live DB/auth blockers |
-| `bun run content-audit:export` | local content round-trip export setup | `wiki_articles`, linked questions, sources, taxonomy, `.ai/content-audit-export` | reads Supabase and writes ignored local bundles; requires Supabase service-role env; use `--limit`, `--article-id`, or `--slug` for small samples |
+| `bun run content-audit:pull` / `bun run content-audit:export` | local content round-trip pull/export setup | `wiki_articles`, linked questions, sources, taxonomy, `.ai/content-audit-export` | reads Supabase and writes ignored local bundles; requires Supabase service-role env; use `--limit`, `--article-id`, or `--slug` for small samples; `content-audit:export` is a legacy alias |
 | `bun run content-audit:normalize` | convert exported article originals into markdown editing surfaces | `.ai/content-audit-export/articles/*/{original.md,normalized.md,ui-blocks.json,parser-errors.json}` | local file writes only; preserves detected custom UI blocks and parser warnings |
 | `bun run content-audit:inventory` / `bun run content-audit:components` | scan repo components and exported article usage | `scripts/content-audit`, `src`, `.ai/content-audit-export/component-inventory` | local inventory only; also writes per-article `component-usage.json` when bundles exist |
 | `bun run content-audit:compose` | reinsert preserved UI blocks into candidate articles | `.ai/content-audit-export/articles/*/{normalized.md,ui-blocks.json,candidate.md}` | local file writes only; unchanged normalized files should recompose to original hashes |
@@ -101,7 +102,7 @@ scripts.
 | `bun run content-audit:validate` | validate generated bundle/report completeness and hashes | `.ai/content-audit-export` | exits non-zero on blockers; useful after export/normalize/inventory/compose/diff |
 | `bun run content-audit:push` / `content-audit:push:dry-run` | dry-run-first Supabase push safety check | `.ai/content-audit-export/articles/*`, `wiki_articles.content` | dry-run unless `--apply`; auto-composes/diffs missing or stale local files; refuses stale remote content and unresolved/lost UI blocks |
 | `bun run content-audit:push:apply` | explicit live article content push | `wiki_articles.content` only | dangerous by design; requires `--article-id`, `--slug`, or `--all-safe`; stale-safe compare-and-swap and diff blockers still apply |
-| `bun run content-audit:roundtrip` | dispatch one content-audit subcommand | `scripts/content-audit/run-content-roundtrip.ts` | wrapper for `export`, `normalize`, `inventory`, `compose`, `diff`, `validate`, and `push` |
+| `bun run content-audit:roundtrip` | dispatch one content-audit subcommand | `scripts/content-audit/run-content-roundtrip.ts` | wrapper for `pull`/`export`, `normalize`, `inventory`, `compose`, `diff`, `validate`, and `push` |
 | `bun audit` | dependency/security readiness | package graph | required before beta/release readiness claims |
 | `bun run db:seed` | only in explicit DB/dev workflows | seeded local DB flows | not casual; mutates data |
 | `bun run bones:build` | special screenshot/scrape style workflow | dashboard snapshot/boneyard flow | non-routine |

@@ -10,6 +10,8 @@ import {
   DialogDescription,
   DialogFooter,
 } from '@/components/ui/dialog'
+import { Button } from '@/components/ui/button'
+import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group'
 import { cn } from '@/lib/utils'
 import { assignSystemRole } from '@/lib/actions/ceo/team-actions'
 import type { TeamMember, SystemRole } from '@/types/ceo'
@@ -68,52 +70,63 @@ export const RoleAssignmentModal = ({ member, isOpen, onClose }: RoleAssignmentM
         </div>
 
         {/* Role Options */}
-        <div className="flex flex-col gap-2">
-          {ROLE_OPTIONS.map((option) => (
-            <label
-              key={option.value}
-              className={cn(
-                'flex cursor-pointer items-start gap-3 rounded-md border px-3 py-2.5 transition-colors duration-150',
-                selectedRole === option.value
-                  ? 'border-primary bg-primary/5'
-                  : 'border-border hover:border-border/80 hover:bg-muted/40',
-              )}
-            >
-              <input
-                type="radio"
-                name="system_role"
-                value={option.value}
-                checked={selectedRole === option.value}
-                onChange={() => setSelectedRole(option.value)}
-                className="mt-0.5 accent-primary"
-              />
-              <div className="flex flex-col gap-0.5">
-                <span className="text-sm font-medium text-foreground">{option.label}</span>
-                <span className="text-[11px] text-muted-foreground">{option.description}</span>
+        <RadioGroup
+          value={selectedRole}
+          onValueChange={(value) => setSelectedRole(value as SystemRole)}
+          className="flex flex-col gap-2"
+          aria-label="System role"
+        >
+          {ROLE_OPTIONS.map((option) => {
+            const optionId = `system-role-${option.value}`
+            return (
+              <div
+                key={optionId}
+                className={cn(
+                  'flex cursor-pointer items-start gap-3 rounded-md border px-3 py-2.5 transition-colors duration-150',
+                  selectedRole === option.value
+                    ? 'border-primary bg-primary/5'
+                    : 'border-border hover:border-border/80 hover:bg-muted/40',
+                )}
+              >
+                <RadioGroupItem
+                  id={optionId}
+                  value={option.value}
+                  className="mt-0.5"
+                />
+                <label htmlFor={optionId} className="flex cursor-pointer flex-col gap-0.5">
+                  <span className="text-sm font-medium text-foreground">{option.label}</span>
+                  <span className="text-[11px] text-muted-foreground">{option.description}</span>
+                </label>
               </div>
-            </label>
-          ))}
-        </div>
+            )
+          })}
+        </RadioGroup>
 
         {error && (
           <p className="text-[11px] text-destructive">{error}</p>
         )}
 
         <DialogFooter>
-          <button
+          <Button
+            type="button"
+            variant="outline"
+            size="md"
             onClick={onClose}
             disabled={isPending}
-            className="rounded-sm border border-border px-4 py-2 text-sm text-muted-foreground hover:text-foreground transition-colors duration-150 disabled:opacity-50"
+            className="rounded-sm text-muted-foreground hover:text-foreground"
           >
             Cancel
-          </button>
-          <button
+          </Button>
+          <Button
+            type="button"
+            variant="primary"
+            size="md"
             onClick={handleSave}
             disabled={isPending || selectedRole === member.systemRole}
-            className="rounded-sm bg-primary px-4 py-2 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-colors duration-150 disabled:opacity-50"
+            className="rounded-sm"
           >
             {isPending ? 'Saving…' : 'Save Role Assignment'}
-          </button>
+          </Button>
         </DialogFooter>
       </DialogContent>
     </Dialog>

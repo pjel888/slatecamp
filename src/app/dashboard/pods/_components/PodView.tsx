@@ -70,7 +70,7 @@ export const PodView = ({ pod, currentUserId }: PodViewProps) => {
       <div className="rounded-md border border-border bg-card p-4">
         <div className="flex flex-wrap items-start justify-between gap-3">
           <div>
-            <h1 className="text-base font-semibold text-foreground">{pod.pod_name}</h1>
+            <h2 className="text-base font-semibold text-foreground">{pod.pod_name}</h2>
             <p className="mt-0.5 text-xs text-muted-foreground">
               {pod.member_count} of 6 members
             </p>

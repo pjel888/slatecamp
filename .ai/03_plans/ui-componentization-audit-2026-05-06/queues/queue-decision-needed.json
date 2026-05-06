@@ -1,0 +1,103 @@
+[
+  {
+    "id": "UIA-WIKI-0002",
+    "file": "src/components/wiki/article/WikiArticleHero.tsx",
+    "line": null,
+    "surface": "wiki",
+    "component": "WikiArticleHero",
+    "current_pattern": "metadata badges and destructive advanced difficulty",
+    "classification": "decision_needed",
+    "risk": "medium",
+    "proposed_target": "StudyMetadataBadge",
+    "user_impact": "Reduce UI drift and improve consistency/accessibility where safe.",
+    "implementation_notes": "Implement only from queue in small batches after reading current file and preserving behavior.",
+    "storybook_required": true,
+    "storybook_story_path": null,
+    "tests_required": [
+      "bun run type-check",
+      "bun run lint"
+    ],
+    "visual_routes": [
+      "/dashboard/wiki"
+    ],
+    "reviewer_notes": null,
+    "final_status": "open",
+    "validation_result": null
+  },
+  {
+    "id": "UIA-WIKI-0011",
+    "file": "src/components/wiki/article/WikiLearningJourney.tsx",
+    "line": null,
+    "surface": "wiki",
+    "component": "WikiLearningJourney",
+    "current_pattern": "gradient study journey panels",
+    "classification": "decision_needed",
+    "risk": "medium",
+    "proposed_target": "StudyJourneyPanel",
+    "user_impact": "Reduce UI drift and improve consistency/accessibility where safe.",
+    "implementation_notes": "Implement only from queue in small batches after reading current file and preserving behavior.",
+    "storybook_required": true,
+    "storybook_story_path": null,
+    "tests_required": [
+      "bun run type-check",
+      "bun run lint"
+    ],
+    "visual_routes": [
+      "/dashboard/wiki"
+    ],
+    "reviewer_notes": null,
+    "final_status": "open",
+    "validation_result": null
+  },
+  {
+    "id": "UIA-QZ-0006",
+    "file": "src/components/quiz-v2/CalculatingResultsOverlay.tsx",
+    "line": null,
+    "surface": "quiz",
+    "component": "CalculatingResultsOverlay",
+    "current_pattern": "custom blocking progress dialog rounded-2xl",
+    "classification": "decision_needed",
+    "risk": "medium",
+    "proposed_target": "LoadingOverlay / ProcessingDialog",
+    "user_impact": "Reduce UI drift and improve consistency/accessibility where safe.",
+    "implementation_notes": "Implement only from queue in small batches after reading current file and preserving behavior.",
+    "storybook_required": true,
+    "storybook_story_path": null,
+    "tests_required": [
+      "bun run type-check",
+      "bun run lint"
+    ],
+    "visual_routes": [
+      "/dashboard/quiz"
+    ],
+    "reviewer_notes": null,
+    "final_status": "open",
+    "validation_result": null
+  },
+  {
+    "id": "UIA-PUBLIC-0021",
+    "file": "src/components/auth/SignInWithGoogleButton.tsx",
+    "line": null,
+    "surface": "auth",
+    "component": "SignInWithGoogleButton",
+    "current_pattern": "custom provider button",
+    "classification": "decision_needed",
+    "risk": "medium",
+    "proposed_target": "Provider Button variant or leave custom",
+    "user_impact": "Reduce UI drift and improve consistency/accessibility where safe.",
+    "implementation_notes": "Implement only from queue in small batches after reading current file and preserving behavior.",
+    "storybook_required": true,
+    "storybook_story_path": null,
+    "tests_required": [
+      "bun run type-check",
+      "bun run lint"
+    ],
+    "visual_routes": [
+      "/login",
+      "/register"
+    ],
+    "reviewer_notes": null,
+    "final_status": "open",
+    "validation_result": null
+  }
+]

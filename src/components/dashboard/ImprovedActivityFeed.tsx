@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import { Card } from '@/components/ui/card'
 import {
   Tooltip,
   TooltipTrigger,
@@ -29,12 +28,12 @@ interface ImprovedActivityFeedProps {
 
 export function ImprovedActivityFeed({ sessions }: ImprovedActivityFeedProps) {
   return (
-    <Card className='p-3 bg-card h-full w-full border-0 flex flex-col min-h-0 overflow-hidden'>
+    <div className='flex h-full min-h-0 w-full flex-col overflow-hidden border border-white/35 bg-white/35 p-3 shadow-[0_20px_80px_rgba(15,23,42,0.08)] backdrop-blur-xl'>
       <div className='flex items-center gap-1.5 mb-0.5'>
         <Tooltip>
           <TooltipTrigger asChild>
             <h3
-              className='text-sm font-semibold cursor-default text-foreground'
+              className='text-sm font-semibold cursor-default text-slate-950'
             >
               Recent Activity
             </h3>
@@ -45,13 +44,13 @@ export function ImprovedActivityFeed({ sessions }: ImprovedActivityFeedProps) {
           </TooltipContent>
         </Tooltip>
       </div>
-      <p className='text-[11px] mb-3 text-muted-foreground'>
+      <p className='text-[11px] mb-3 font-semibold text-slate-950'>
         Your last 7 days of study sessions
       </p>
 
       {sessions.length === 0 ? (
         <div className='flex flex-col items-center justify-center py-6 gap-2'>
-          <p className='text-xs text-center text-muted-foreground'>
+          <p className='text-xs text-center font-semibold text-slate-950'>
             No sessions in the last 7 days. Your activity will appear here after
             your first quiz.
           </p>
@@ -63,17 +62,17 @@ export function ImprovedActivityFeed({ sessions }: ImprovedActivityFeedProps) {
           </Link>
         </div>
       ) : (
-        <div className='space-y-1.5 flex-1 min-h-0 overflow-auto'>
+        <div className='min-h-0 flex-1 space-y-1.5 overflow-y-auto pr-1'>
           {sessions.map((s) => (
             <div
               key={s.sessionId}
-              className='flex items-center gap-2 py-1.5 border-b last:border-b-0 border-page-bg'
+              className='flex items-center gap-2 py-1.5'
             >
               {/* Mode badge with tooltip */}
               <Tooltip>
                 <TooltipTrigger asChild>
                   <span
-                    className='font-dm-mono shrink-0 rounded px-1.5 py-0.5 text-[11px] font-bold uppercase tracking-wider cursor-default bg-primary-50 text-primary'
+                    className='font-dm-mono shrink-0 rounded px-1.5 py-0.5 text-[11px] font-bold uppercase tracking-wider cursor-default text-primary'
                   >
                     {s.modeBadge}
                   </span>
@@ -85,10 +84,10 @@ export function ImprovedActivityFeed({ sessions }: ImprovedActivityFeedProps) {
 
               {/* Mode + topic + question count */}
               <div className='flex-1 min-w-0'>
-                <p className='text-xs font-medium truncate text-foreground'>
+                <p className='text-xs font-medium truncate text-slate-950'>
                   {s.testMode} · {s.questionCount} question{s.questionCount !== 1 ? 's' : ''}
                 </p>
-                <p className='text-[11px] text-muted-foreground'>
+                <p className='text-[11px] font-semibold text-slate-950'>
                   {s.subjectName ?? 'General Practice'}
                 </p>
               </div>
@@ -101,8 +100,8 @@ export function ImprovedActivityFeed({ sessions }: ImprovedActivityFeedProps) {
                       className={[
                         'shrink-0 rounded-full px-2 py-0.5 text-[11px] font-bold tabular-nums cursor-default',
                         s.scorePercent >= 70
-                          ? 'bg-success-50 text-success-700'
-                          : 'bg-muted text-muted-foreground',
+                          ? 'text-success-700'
+                          : 'text-primary',
                       ].join(' ')}
                     >
                       {s.scorePercent}%
@@ -116,20 +115,20 @@ export function ImprovedActivityFeed({ sessions }: ImprovedActivityFeedProps) {
               )}
 
               {/* Time */}
-              <span className='shrink-0 text-[11px] text-muted-foreground'>
+              <span className='shrink-0 text-[11px] font-semibold text-slate-950'>
                 {formatRelative(s.updatedAt)}
               </span>
             </div>
           ))}
         </div>
       )}
-    </Card>
+    </div>
   )
 }
 
 export function ImprovedActivityFeedSkeleton() {
   return (
-    <Card className='p-3 h-full'>
+    <div className='flex h-full min-h-0 flex-col rounded-md p-3'>
       <Skeleton className='h-4 w-28 mb-1' />
       <Skeleton className='h-3 w-48 mb-3' />
       {[1, 2, 3, 4].map((i) => (
@@ -140,6 +139,6 @@ export function ImprovedActivityFeedSkeleton() {
           <Skeleton className='h-3 w-12' />
         </div>
       ))}
-    </Card>
+    </div>
   )
 }

@@ -1,0 +1,6 @@
+#!/usr/bin/env bun
+import path from 'node:path'
+import { REPO_ROOT, readJson, writeJson, writeText } from './source-reconciliation-utils'
+const root=path.join(REPO_ROOT,'.ai/18_question_improvement'); const os=readJson<any>(path.join(root,'outputs/question-improvement-outputs.generated.json'),{outputs:[]}).outputs||[]
+const checks:[string,boolean][]= [['outputs_present',os.length>=10],['answer_key_unchanged',os.every((o:any)=>o.answer_key_changed===false)],['source_linkage_present',os.every((o:any)=>o.source_linkage_present===true)],['no_db_mutation',os.every((o:any)=>o.direct_db_mutation===false)],['rationales_present',os.every((o:any)=>!!o.rationale_fix)],['proposals_not_applied',os.every((o:any)=>o.apply_status==='NOT_APPLIED')]]
+const ok=checks.every(([,v])=>v); await writeJson(path.join(root,'reports/question-improvement-validation.generated.json'),{ok,checks:checks.map(([name,pass])=>({name,status:pass?'PASS':'FAIL'}))}); await writeText(path.join(root,'reports/question-improvement-validation-report.md'),['# Question Improvement Validation Report','',`Result: ${ok?'PASS':'FAIL'}`,'',...checks.map(([n,p])=>`- ${p?'PASS':'FAIL'}: ${n}`),''].join('\n')); console.log(JSON.stringify({ok,checks:checks.length,outputs:os.length},null,2)); if(!ok)process.exit(1)

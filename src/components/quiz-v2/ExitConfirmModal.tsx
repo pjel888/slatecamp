@@ -42,10 +42,10 @@ export const ExitConfirmModal = ({
       >
         <DialogHeader className="mb-4 space-y-1">
           <DialogTitle className="text-sm font-semibold text-foreground">
-            Leave this session?
+            Leave quiz?
           </DialogTitle>
           <DialogDescription className="text-sm text-text-secondary">
-            Your progress will be saved, but this session will end.
+            Your saved answers will remain. You can resume this session later.
           </DialogDescription>
         </DialogHeader>
 
@@ -79,7 +79,7 @@ export const ExitConfirmModal = ({
             leftIcon={<SignOut size={16} aria-hidden="true" />}
             className="order-2 sm:order-1"
           >
-            Exit session
+            Resume later
           </Button>
           <Button
             variant="primary"
@@ -89,7 +89,7 @@ export const ExitConfirmModal = ({
             className="order-1 sm:order-2"
             autoFocus
           >
-            Continue quiz
+            Stay in quiz
           </Button>
         </div>
       </DialogContent>

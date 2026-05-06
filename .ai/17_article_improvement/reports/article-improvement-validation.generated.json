@@ -1,0 +1,33 @@
+{
+  "ok": true,
+  "checks": [
+    {
+      "name": "outputs_present",
+      "status": "PASS"
+    },
+    {
+      "name": "all_not_applied",
+      "status": "PASS"
+    },
+    {
+      "name": "source_linkage_present",
+      "status": "PASS"
+    },
+    {
+      "name": "unsupported_claims_listed",
+      "status": "PASS"
+    },
+    {
+      "name": "changed_factual_claims_listed",
+      "status": "PASS"
+    },
+    {
+      "name": "no_unsupported_factual_changes",
+      "status": "PASS"
+    },
+    {
+      "name": "component_check_present",
+      "status": "PASS"
+    }
+  ]
+}

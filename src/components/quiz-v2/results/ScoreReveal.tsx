@@ -77,7 +77,7 @@ export const ScoreReveal = ({ percent, correct, total, growthDelta }: ScoreRevea
 
   if (phase === 'loading') {
     return (
-      <div className="bg-card rounded-md border border-border p-8 text-center">
+      <div className="bg-card rounded-2xl border border-border p-5 text-center shadow-sm">
         <div className="flex items-center justify-center gap-2">
           <div className="h-4 w-4 rounded-full border-2 border-border border-t-primary animate-spin" />
           <p className="text-sm text-muted-foreground">Calculating results...</p>
@@ -87,7 +87,7 @@ export const ScoreReveal = ({ percent, correct, total, growthDelta }: ScoreRevea
   }
 
   return (
-    <div className="bg-card rounded-md border border-border p-8 text-center">
+    <div className="bg-card rounded-2xl border border-border p-5 text-center shadow-sm">
       {/* Eyebrow */}
       <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
         Session Complete
@@ -95,12 +95,12 @@ export const ScoreReveal = ({ percent, correct, total, growthDelta }: ScoreRevea
 
       {/* Animated score */}
       <p
-        className="mt-4 text-[64px] font-bold leading-none tabular-nums text-foreground"
+        className="mt-3 text-[52px] font-bold leading-none tabular-nums text-foreground"
         aria-live="polite"
         aria-label={`${percent}%`}
       >
         {displayed}
-        <span className="text-[40px] font-semibold text-text-secondary">%</span>
+        <span className="text-[32px] font-semibold text-text-secondary">%</span>
       </p>
 
       {/* Fraction */}

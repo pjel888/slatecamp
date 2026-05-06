@@ -18,8 +18,8 @@ import type { NavigationPendingInfo } from './types'
 
 // ---------------------------------------------------------------------------
 // SidebarNavItem — HTML v4 anatomy
-// Row height: 32px. Grid: 40px fixed icon slot + label column.
-// The icon slot never changes, so the icon center stays at padding + 20px.
+// Row height: 32px. Grid: 48px fixed icon slot + label column.
+// The icon slot never changes, so the icon center stays at padding + 24px.
 // Active indicator stays inside the row so label clipping cannot hide it.
 // Extended with navigation-pending feedback (spinner + disabled state).
 // ---------------------------------------------------------------------------
@@ -75,7 +75,14 @@ export const SidebarNavItem = ({
       data-pending={isItemPending ? '' : undefined}
       className={cn(
         // Base layout
-        'relative grid h-8 w-full grid-cols-[40px_minmax(0,1fr)] items-center gap-1 overflow-hidden rounded-md px-0 outline-none',
+        'group relative grid h-8 grid-cols-[48px_auto] items-center gap-1 overflow-visible rounded-md px-0 outline-none',
+        expanded ? 'w-full pr-3' : 'w-full grid-cols-[48px_minmax(0,1fr)] pr-0',
+        // One shared hover/active surface: 36px tall in expanded, 36x36 in collapsed.
+        'before:absolute before:top-[-2px] before:z-0 before:h-9 before:rounded-md before:bg-primary-50 before:opacity-0',
+        "before:shadow-[inset_0_0_0_1px_rgba(37,64,197,0.08)] before:transition-opacity before:duration-[120ms] before:ease-out before:content-['']",
+        'hover:before:opacity-100 focus-visible:before:opacity-100',
+        'dark:before:bg-primary-900/20 dark:before:shadow-[inset_0_0_0_1px_rgba(148,163,184,0.12)]',
+        expanded ? 'before:inset-x-0' : 'before:left-1.5 before:w-9',
         // Transition
         'transition-colors duration-[120ms] ease-out',
         // Focus-visible ring
@@ -83,16 +90,12 @@ export const SidebarNavItem = ({
         // Default state
         'text-gray-500 dark:text-gray-400',
         // Hover state
-        'hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-gray-900 dark:hover:text-gray-200',
-        // Active state
+        'hover:text-primary dark:hover:text-primary-400',
+        'hover:bg-transparent',
+        // Active state uses the same 48px-tall surface as hover.
         isActive && [
-          'bg-primary-50 dark:bg-primary-900/20',
           'text-primary dark:text-primary-400',
-          'before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2',
-          'before:w-[2.5px] before:h-4',
-          'before:bg-camp-cobalt dark:before:bg-primary-400',
-          'before:rounded-r-sm',
-          "before:content-['']",
+          'before:opacity-100',
         ],
         // Pending state — subtle highlight + cursor
         isItemPending && [
@@ -109,8 +112,13 @@ export const SidebarNavItem = ({
         ],
       )}
     >
-      {/* Icon container: 40x32px, spatially locked */}
-      <span className={ICON_CONTAINER_CLASS}>
+      {/* Icon container: 48px slot; the link paints the shared hover/active surface behind it. */}
+      <span
+        className={cn(
+          ICON_CONTAINER_CLASS,
+          'relative z-10 rounded-md transition-[background-color,box-shadow] duration-[120ms] ease-out',
+        )}
+      >
         {isItemPending ? (
           // Spinner replaces icon for pending item
           <span
@@ -129,7 +137,7 @@ export const SidebarNavItem = ({
             }}
             className={cn(
               'transition-opacity duration-[120ms]',
-              'shrink-0',
+              'relative z-10 shrink-0',
               isActive && 'opacity-100',
             )}
           />
@@ -140,7 +148,7 @@ export const SidebarNavItem = ({
       <span
         aria-hidden={!expanded}
         className={cn(
-          'min-w-0 truncate whitespace-nowrap text-[12.5px] leading-none transition-[opacity,transform] duration-[180ms] ease-out motion-reduce:transition-none motion-reduce:transform-none',
+          'relative z-10 min-w-0 truncate whitespace-nowrap text-[12.5px] leading-none transition-[opacity,transform] duration-[180ms] ease-out motion-reduce:transition-none motion-reduce:transform-none',
           isActive ? 'font-medium' : 'font-normal',
           expanded ? 'translate-x-0 opacity-100' : 'pointer-events-none translate-x-1 opacity-0',
         )}

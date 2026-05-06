@@ -360,3 +360,21 @@ ALE Trap: The ten occupancy groups: A=Residential, B=Commercial, C=Industrial, D
 If you want a next step, I can compress this into a one-page occupancy + construction type cheat sheet purely for last-week LEA drills.
 
 <!-- no-media-needed: code/regulatory article, tabular data is optimal -->
+
+
+---
+
+## Editorial Source Note
+
+This local production pass did not add new legal or dimensional claims. Existing code references still require source-led verification against the official/local source layer before any factual expansion beyond the current article text.
+
+
+## Board Exam Quick Check
+
+Before moving on, answer these without looking back:
+
+1. What is the governing rule or code principle this article is trying to teach?
+2. What is the most likely board-exam trap in this topic?
+3. What project decision would change if you applied the rule incorrectly?
+
+If you cannot answer all three, reread the section that introduced the rule before attempting the linked questions.

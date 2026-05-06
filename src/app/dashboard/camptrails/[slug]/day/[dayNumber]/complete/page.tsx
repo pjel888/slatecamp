@@ -1,7 +1,7 @@
 import { notFound, redirect } from 'next/navigation'
 import { ROUTES } from '@/lib/routes'
 import Link from 'next/link'
-import SharedPageLayout from '@/components/layouts/SharedPageLayout'
+import { PracticeLayout } from '@/components/layouts/category/PracticeLayout'
 import { Card } from '@/components/ui/card'
 import {
   getTrailBySlug,
@@ -37,7 +37,12 @@ const DayCompletePage = async ({
   const isTrailComplete = dayNumber >= trail.duration_days
 
   return (
-    <SharedPageLayout>
+    <PracticeLayout
+      hero={{
+        subtitle: 'Day Complete',
+        description: `${trail.name}, Day ${dayNumber} finished.`,
+      }}
+    >
       <div className="w-full max-w-2xl mx-auto flex flex-col gap-6 py-4">
         <DayCompletionMoment completionData={completionData} trailSlug={slug} />
 
@@ -97,7 +102,7 @@ const DayCompletePage = async ({
           </div>
         )}
       </div>
-    </SharedPageLayout>
+    </PracticeLayout>
   )
 }
 

@@ -1,5 +1,5 @@
 // Analytics Page — Server Component
-// layout.tsx provides SharedPageLayout — do NOT re-wrap here.
+// layout.tsx provides DataLayout — do NOT re-wrap here.
 import { AnalyticsChartContainer } from '@/components/shared/analytics-chart-container'
 import { ReadinessSection } from '@/components/analytics/ReadinessSection'
 import { ExamCountdownSection } from '@/components/analytics/ExamCountdownSection'
@@ -25,12 +25,20 @@ import { StudyStreakCalendarSection } from '@/components/analytics/StudyStreakCa
 import { ProgressCardSection } from '@/components/analytics/ProgressCardSection'
 import { SimulationTrajectorySection } from '@/components/analytics/SimulationTrajectorySection'
 import { ExamOutcomeSection } from '@/components/analytics/ExamOutcomeSection'
+import { SubjectMasteryServer } from '@/components/dashboard/SubjectMasteryServer'
 
 export const dynamic = 'force-dynamic'
 
 export default function AnalyticsPage() {
   return (
     <div className="flex flex-col gap-2">
+      {/* Dashboard detail moved from Overview: Subject Mastery + Breakdown */}
+      <AnalyticsChartContainer suspenseKey="subject-mastery" fallbackHeight="h-[520px]">
+        <div className="h-[520px] min-h-0">
+          <SubjectMasteryServer />
+        </div>
+      </AnalyticsChartContainer>
+
       {/* Top Row: Readiness Score + Exam Countdown */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
         <AnalyticsChartContainer fallbackHeight="h-[220px]" skeletonType="bar">

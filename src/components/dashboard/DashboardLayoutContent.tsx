@@ -6,9 +6,9 @@ import { bootstrapUser } from '@/lib/supabase/bootstrap'
 import { SidebarProvider } from '@/components/sidebar/SidebarProvider'
 import { Sidebar } from '@/components/sidebar/Sidebar'
 import { SidebarContent } from '@/components/sidebar/SidebarContent'
+import { SidebarDesktopLayout } from '@/components/sidebar/SidebarDesktopLayout'
 import { MobileSidebarShell } from '@/components/sidebar/MobileSidebarShell'
-import { Navbar } from '@/components/shared/Navbar'
-import { DashboardHeader } from '@/components/shared/DashboardHeader'
+import { DashboardContentFrame } from '@/components/dashboard/DashboardContentFrame'
 import { DevToolbar } from '@/components/dev/dev-toolbar'
 import { DevKeyboardProvider } from '@/components/dev/dev-keyboard-provider'
 import { BreadcrumbProvider } from '@/lib/context/breadcrumb-context'
@@ -30,14 +30,15 @@ interface DashboardLayoutContentProps {
   children: React.ReactNode
 }
 
-const DashboardLayoutContent = async ({ children }: DashboardLayoutContentProps) => {
+const DashboardLayoutContent = async ({
+  children,
+}: DashboardLayoutContentProps) => {
   const isDemo = isDemoMode()
   const headerList = await headers()
   const pathname =
     headerList.get('x-pathname') ?? headerList.get('next-url') ?? ''
   const isLabPath =
     pathname === ROUTES.lab.root || pathname.startsWith(`${ROUTES.lab.root}/`)
-  const isQuizSessionPath = pathname.startsWith(`${ROUTES.dashboard.quiz}/session/`)
   const supabase = await createClient()
   const {
     data: { user },
@@ -50,7 +51,6 @@ const DashboardLayoutContent = async ({ children }: DashboardLayoutContentProps)
       await bootstrapUser(user.id)
     } catch (err) {
       console.error('[DashboardLayoutContent] Bootstrap failed:', err)
-      // We continue anyway, as the user might still have enough data to render something
     }
   }
 
@@ -86,20 +86,23 @@ const DashboardLayoutContent = async ({ children }: DashboardLayoutContentProps)
     getViewerEntitlements([ENTITLEMENT_FEATURE_KEYS.devToolbar]),
   ])
 
-  const userStats = stats as (UserGlobalStats & { disciplines: Discipline | null }) | null
-  const onboardingCompletedAt =
-    isLabPath
-      ? null
-      : (profileCompletion as { onboarding_completed_at?: string | null } | null)?.onboarding_completed_at ??
-        (userStats as { onboarding_completed_at?: string | null } | null)?.onboarding_completed_at ??
-        null
-  const currentTier = ((subscription?.tier ?? entitlements.rawTier ?? 'free') as UserTier)
+  const userStats = stats as
+    | (UserGlobalStats & { disciplines: Discipline | null })
+    | null
+  const onboardingCompletedAt = isLabPath
+    ? null
+    : ((profileCompletion as { onboarding_completed_at?: string | null } | null)
+        ?.onboarding_completed_at ??
+      (userStats as { onboarding_completed_at?: string | null } | null)
+        ?.onboarding_completed_at ??
+      null)
+  const currentTier = (subscription?.tier ??
+    entitlements.rawTier ??
+    'free') as UserTier
   const isSettingsPath =
     pathname === ROUTES.dashboard.settings ||
     pathname.startsWith(ROUTES.dashboard.settings + '/')
 
-  // ── Onboarding Guard ──────────────────────────────────────────────────────
-  // If user is not in demo mode and has not completed onboarding, redirect them
   if (!isDemo && !isLabPath && !onboardingCompletedAt && !isSettingsPath) {
     redirect(ROUTES.auth.onboarding)
   }
@@ -111,13 +114,17 @@ const DashboardLayoutContent = async ({ children }: DashboardLayoutContentProps)
     simulatedTier: entitlements.overrides.simulatedTier,
     spoofedTier: entitlements.overrides.legacySpoofedTier,
     bypass3dGate:
-      entitlements.overrides.featureOverrides[ENTITLEMENT_FEATURE_KEYS.threeDLabFull] === true,
+      entitlements.overrides.featureOverrides[
+        ENTITLEMENT_FEATURE_KEYS.threeDLabFull
+      ] === true,
     bypassAiGate:
       entitlements.overrides.featureOverrides[
         ENTITLEMENT_FEATURE_KEYS.aiAssistantUnlimited
       ] === true,
     bypassSrsGate:
-      entitlements.overrides.featureOverrides[ENTITLEMENT_FEATURE_KEYS.srsReview] === true,
+      entitlements.overrides.featureOverrides[
+        ENTITLEMENT_FEATURE_KEYS.srsReview
+      ] === true,
   }
   const devConnectionState = entitlements.overrides.localDevBypassActive
     ? 'local'
@@ -161,79 +168,86 @@ const DashboardLayoutContent = async ({ children }: DashboardLayoutContentProps)
         effectiveTier={effectiveTier}
         isDevMode={showDevTools}
       >
-      <DisciplineProvider
-        initialDiscipline={userStats?.disciplines ?? null}
-        initialDisciplines={allDisciplines as Discipline[] ?? []}
-      >
-        <ActiveSessionProvider>
-          <NoteContextProvider>
-          <SidebarProvider>
-            <div className='flex flex-col h-screen overflow-hidden text-foreground font-sans selection:bg-muted bg-page-bg lg:flex-row'>
-              {/* Mobile top bar */}
-                <MobileSidebarShell
-                  userDisplay={{
-                    name: user.user_metadata?.full_name ?? user.email ?? 'User',
-                    avatarUrl: user.user_metadata?.avatar_url ?? user.user_metadata?.picture ?? null,
-                  }}
-                  tierLabel={effectiveTier}
-                  showTierBadge={
-                    entitlements.decisions[ENTITLEMENT_FEATURE_KEYS.questionsUnlimited]?.allowed ??
-                    false
-                  }
-                />
-              {/* Desktop layout: sidebar + content in flex row */}
-              <div className='flex flex-1 min-h-0'>
-                <Sidebar
-                  isAdmin={userCanSeeDevToolbar}
-                  isDevMode={showDevTools}
-                  userDisplay={{
-                    name: user.user_metadata?.full_name ?? user.email ?? 'User',
-                    avatarUrl: user.user_metadata?.avatar_url ?? user.user_metadata?.picture ?? null,
-                  }}
-                  tier={effectiveTier}
-                />
-                <SidebarContent>
-                <BreadcrumbProvider>
-                  <Navbar isAdmin={userCanSeeDevToolbar} />
-                  {!isQuizSessionPath && (
-                    <div>
-                      <DashboardHeader userId={user.id} />
-                    </div>
-                  )}
-                  <main
-                    className={`flex-1 min-h-0 min-w-0 ${isQuizSessionPath ? 'overflow-hidden bg-surface-focused' : 'overflow-y-auto bg-page-bg'}`}
+        <DisciplineProvider
+          initialDiscipline={userStats?.disciplines ?? null}
+          initialDisciplines={(allDisciplines as Discipline[]) ?? []}
+        >
+          <ActiveSessionProvider>
+            <NoteContextProvider>
+              <SidebarProvider>
+                <div className='flex flex-col h-screen overflow-hidden text-foreground font-sans selection:bg-muted bg-page-bg lg:flex-row'>
+                  {/* Mobile top bar */}
+                  <MobileSidebarShell
+                    userDisplay={{
+                      name:
+                        user.user_metadata?.full_name ?? user.email ?? 'User',
+                      avatarUrl:
+                        user.user_metadata?.avatar_url ??
+                        user.user_metadata?.picture ??
+                        null,
+                    }}
+                    tierLabel={effectiveTier}
+                    showTierBadge={
+                      entitlements.decisions[
+                        ENTITLEMENT_FEATURE_KEYS.questionsUnlimited
+                      ]?.allowed ?? false
+                    }
+                  />
+                  {/* Desktop layout: sidebar + content in compositor-friendly grid */}
+                  <SidebarDesktopLayout
+                    sidebar={
+                      <Sidebar
+                        isAdmin={userCanSeeDevToolbar}
+                        isDevMode={showDevTools}
+                        userDisplay={{
+                          name:
+                            user.user_metadata?.full_name ?? user.email ?? 'User',
+                          avatarUrl:
+                            user.user_metadata?.avatar_url ??
+                            user.user_metadata?.picture ??
+                            null,
+                        }}
+                        tier={effectiveTier}
+                      />
+                    }
                   >
-                    {children}
-                  </main>
-                </BreadcrumbProvider>
-              </SidebarContent>
-              </div>
-              {showDevTools && (
-                <>
-                  <DevToolbar
-                    connectionState={devConnectionState}
-                    currentTier={currentTier}
-                    effectiveTier={effectiveTier}
-                    flags={devToolbarFlags}
-                  />
-                  <DevKeyboardProvider
-                    systemInfo={buildDevSystemInfo({
-                      env: process.env.NODE_ENV ?? 'development',
-                      nextVersion: developerNextVersion,
-                      userId: user.id,
-                      userEmail: user.email ?? '',
-                      userRole: entitlements.normalizedRole,
-                      connectionState: devConnectionState,
-                    })}
-                  />
-                </>
-              )}
-              <Toaster />
-            </div>
-          </SidebarProvider>
-          </NoteContextProvider>
-        </ActiveSessionProvider>
-      </DisciplineProvider>
+                    <SidebarContent>
+                      <BreadcrumbProvider>
+                        <DashboardContentFrame
+                          isAdmin={userCanSeeDevToolbar}
+                          userId={user.id}
+                        >
+                          {children}
+                        </DashboardContentFrame>
+                      </BreadcrumbProvider>
+                    </SidebarContent>
+                  </SidebarDesktopLayout>
+                  {showDevTools && (
+                    <>
+                      <DevToolbar
+                        connectionState={devConnectionState}
+                        currentTier={currentTier}
+                        effectiveTier={effectiveTier}
+                        flags={devToolbarFlags}
+                      />
+                      <DevKeyboardProvider
+                        systemInfo={buildDevSystemInfo({
+                          env: process.env.NODE_ENV ?? 'development',
+                          nextVersion: developerNextVersion,
+                          userId: user.id,
+                          userEmail: user.email ?? '',
+                          userRole: entitlements.normalizedRole,
+                          connectionState: devConnectionState,
+                        })}
+                      />
+                    </>
+                  )}
+                  <Toaster />
+                </div>
+              </SidebarProvider>
+            </NoteContextProvider>
+          </ActiveSessionProvider>
+        </DisciplineProvider>
       </TierProvider>
     </EntitlementProvider>
   )

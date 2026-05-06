@@ -1,0 +1,36 @@
+Phase 0.6 Implementation Sprint 1 validation results
+Generated: 2026-05-06T02:31Z
+
+Commands run:
+- bun scripts/content-audit/build-source-reconciliation-matrix.ts
+  Result: PASS; rows=9; vitruvius_files_scanned=2894
+- bun scripts/content-audit/validate-source-packet-readiness.ts
+  Result: PASS; checks=9
+- bun scripts/content-audit/validate-admin-ai-audit-schema.ts
+  Result: PASS; DB_SCHEMA_PROBE_SKIPPED_NO_ENV; no DB connection opened
+- bun scripts/content-audit/build-source-verification-admin-payload.ts
+  Result: PASS; items=9; findings=28; proposals=9; dry_run=true; db_write_attempted=false
+- bun run type-check
+  Result: PASS
+- bun run lint
+  Result: PASS with pre-existing warnings only; 0 errors, 10 warnings
+- git diff --check
+  Result: PASS
+- Custom generated artifact validation
+  Result: PASS; CSV parses; JSON parses; all HIGH/CRITICAL rows have human_review_required=true and sme_review_required=true; source_approval_status=blocked; source_pack_creation_status=blocked; no article/question export file changes detected; no source-pack/embedding directories created.
+
+Gate status:
+APPROVED_SOURCE_FILES = 0
+VERIFIED_SOURCE_CANDIDATES = 0
+SOURCE_PACKS_CREATED = 0
+CHUNKS_CREATED = 0
+EMBEDDINGS_CREATED = 0
+SOURCE_APPROVAL = BLOCKED
+SOURCE_PACK_CREATION = BLOCKED
+EMBEDDINGS = BLOCKED
+ARTICLE_REWRITING = BLOCKED
+QUESTION_BANK_EDITING = BLOCKED
+SUPABASE_MUTATION = BLOCKED
+ADMIN_AI_AUDIT_LIVE_SYNC = BLOCKED
+PHASE_1B = BLOCKED
+IMPLEMENTATION_SPRINT_1 = VALIDATION_PASSED

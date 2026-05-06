@@ -1,7 +1,7 @@
 import { Suspense } from "react"
 import { getDesignProblems } from "@/lib/actions/design-problems"
 import { DesignProblemCard } from "../_components/DesignProblemCard"
-import SharedPageLayout from "@/components/layouts/SharedPageLayout"
+import { PracticeLayout } from "@/components/layouts/category/PracticeLayout"
 import { Skeleton } from "@/components/ui/skeleton"
 
 const DesignProblemsContent = async () => {
@@ -28,15 +28,6 @@ const DesignProblemsContent = async () => {
 
   return (
     <div className="flex flex-col gap-6">
-      {/* Page header */}
-      <div className="flex flex-col gap-1">
-        <h1 className="text-lg font-semibold text-foreground">Design Problem Library</h1>
-        <p className="text-sm text-muted-foreground">
-          Practice architectural design within realistic site, program, and code constraints.
-          Problems progress from a single residence to a mixed-use development.
-        </p>
-      </div>
-
       {/* Progress summary */}
       {completedProblemIds.length > 0 && (
         <div className="rounded-md border border-border bg-card px-4 py-3 flex items-center gap-3">
@@ -88,7 +79,13 @@ const DesignProblemsContent = async () => {
 }
 
 const DesignProblemsPage = () => (
-  <SharedPageLayout>
+  <PracticeLayout
+    hero={{
+      subtitle: 'Design Problem Library',
+      description:
+        'Architectural design practice with realistic site, program, and code constraints.',
+    }}
+  >
     <Suspense
       fallback={
         <div className="flex flex-col gap-4">
@@ -103,7 +100,7 @@ const DesignProblemsPage = () => (
     >
       <DesignProblemsContent />
     </Suspense>
-  </SharedPageLayout>
+  </PracticeLayout>
 )
 
 export default DesignProblemsPage
