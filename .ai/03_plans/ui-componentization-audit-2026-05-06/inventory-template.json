@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "item_shape": {
+    "id": "UIA-0001",
+    "file": "src/components/example/Component.tsx",
+    "line": 1,
+    "surface": "dashboard|wiki|quiz|admin|marketing|3d-lab|shared|ui|other",
+    "component": "ComponentName",
+    "current_pattern": "raw button/custom modal/rounded-2xl card/etc.",
+    "classification": "definite_drift|primitive_gap|shared_pattern|intentional_custom|decision_needed",
+    "risk": "low|medium|high|critical",
+    "proposed_target": "Button|Dialog|Sheet|Card|shared/EmptyState|leave custom|TBD",
+    "user_impact": "What user-facing problem or consistency gain this addresses.",
+    "implementation_notes": "Precise migration notes and caveats.",
+    "storybook_required": true,
+    "storybook_story_path": null,
+    "tests_required": ["bun run type-check", "bun run lint"],
+    "visual_routes": ["/dashboard"],
+    "reviewer_notes": null,
+    "final_status": "open|fixed|intentional_custom|decision_needed|quarantined",
+    "validation_result": null
+  },
+  "classification_rules": {
+    "definite_drift": "Existing primitive/pattern fits without API change and behavior is simple.",
+    "primitive_gap": "Should use primitive, but primitive API must first support behavior/accessibility/layout.",
+    "shared_pattern": "Repeated SlateCamp-specific product meaning across multiple surfaces.",
+    "intentional_custom": "Custom is justified by domain behavior, canvas/performance, loading/progress, or approved one-off visual direction.",
+    "decision_needed": "Ambiguous product/design intent; requires Philip decision before implementation."
+  }
+}

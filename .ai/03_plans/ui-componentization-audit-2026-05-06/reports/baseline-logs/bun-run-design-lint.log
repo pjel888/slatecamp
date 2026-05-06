@@ -1,0 +1,71 @@
+=== bun run design:lint ===
+$ bunx --bun @google/design.md@0.1.0 lint DESIGN.md
+Resolving dependencies
+Resolved, downloaded and extracted [143]
+warn: incorrect peer dependency "ink@7.0.2"
+Saved lockfile
+{
+  "findings": [
+    {
+      "severity": "warning",
+      "path": "colors.muted-foreground",
+      "message": "'muted-foreground' is defined but never referenced by any component."
+    },
+    {
+      "severity": "warning",
+      "path": "colors.border",
+      "message": "'border' is defined but never referenced by any component."
+    },
+    {
+      "severity": "warning",
+      "path": "colors.success",
+      "message": "'success' is defined but never referenced by any component."
+    },
+    {
+      "severity": "warning",
+      "path": "colors.warning",
+      "message": "'warning' is defined but never referenced by any component."
+    },
+    {
+      "severity": "warning",
+      "path": "colors.warning-50",
+      "message": "'warning-50' is defined but never referenced by any component."
+    },
+    {
+      "severity": "warning",
+      "path": "colors.destructive",
+      "message": "'destructive' is defined but never referenced by any component."
+    },
+    {
+      "severity": "warning",
+      "path": "colors.destructive-50",
+      "message": "'destructive-50' is defined but never referenced by any component."
+    },
+    {
+      "severity": "warning",
+      "path": "colors.camp-orange",
+      "message": "'camp-orange' is defined but never referenced by any component."
+    },
+    {
+      "severity": "warning",
+      "path": "colors.info",
+      "message": "'info' is defined but never referenced by any component."
+    },
+    {
+      "severity": "warning",
+      "path": "colors.trail-accent",
+      "message": "'trail-accent' is defined but never referenced by any component."
+    },
+    {
+      "severity": "info",
+      "message": "Design system defines 21 colors, 6 typography scales, 5 rounding levels, 6 spacing tokens, 8 components."
+    }
+  ],
+  "summary": {
+    "errors": 0,
+    "warnings": 10,
+    "infos": 1
+  }
+}
+EXIT_CODE=0
+START= END=

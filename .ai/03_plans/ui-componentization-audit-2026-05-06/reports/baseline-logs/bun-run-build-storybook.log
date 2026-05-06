@@ -1,0 +1,787 @@
+=== bun run build-storybook ===
+$ bun run check:storybook && storybook build
+$ bun scripts/check-storybook.ts
+Storybook guard OK: 100 story file(s) scanned; 0 placeholder marker file(s) still tracked.
+Baseline files already cleaned or removed:
+- src/components/shared/action-card.stories.tsx
+- src/components/shared/app-drawer.stories.tsx
+- src/components/shared/breadcrumb.stories.tsx
+- src/components/shared/SlatecampLoader.stories.tsx
+- src/components/shared/content-sidebar.stories.tsx
+- src/components/shared/DashboardHeader.stories.tsx
+- src/components/shared/DashboardPageSkeleton.stories.tsx
+- src/components/shared/data-table.stories.tsx
+- src/components/shared/difficulty-bar.stories.tsx
+- src/components/shared/empty-state.stories.tsx
+- src/components/shared/event-badge.stories.tsx
+- src/components/shared/floating-panel.stories.tsx
+- src/components/shared/InfoTooltip.stories.tsx
+- src/components/shared/legal-citation-badge.stories.tsx
+- src/components/shared/LogoutButton.stories.tsx
+- src/components/shared/mode-button.stories.tsx
+- src/components/shared/Navbar.stories.tsx
+- src/components/shared/NavigationProgress.stories.tsx
+- src/components/shared/Omnibar.stories.tsx
+- src/components/shared/page-header.stories.tsx
+- src/components/shared/PanelCollapseHandle.stories.tsx
+- src/components/shared/question-card.stories.tsx
+- src/components/shared/question-dot-navigator.stories.tsx
+- src/components/shared/QuickStatsRow.stories.tsx
+- src/components/shared/score-display.stories.tsx
+- src/components/shared/section-header.stories.tsx
+- src/components/shared/sidebar-nav.stories.tsx
+- src/components/shared/SourceBadge.stories.tsx
+- src/components/shared/stat-card.stories.tsx
+- src/components/shared/student-view-watermark.stories.tsx
+- src/components/shared/taxonomy-picker.stories.tsx
+- src/components/shared/taxonomy-tree.stories.tsx
+- src/components/shared/ThemeProvider.stories.tsx
+- src/components/shared/ThemeToggle.stories.tsx
+- src/components/shared/WikiSidePanel.stories.tsx
+- src/components/ui/accordion.stories.tsx
+- src/components/ui/alert-dialog.stories.tsx
+- src/components/ui/avatar.stories.tsx
+- src/components/ui/badge.stories.tsx
+- src/components/ui/button.stories.tsx
+- src/components/ui/calendar.stories.tsx
+- src/components/ui/card.stories.tsx
+- src/components/ui/checkbox.stories.tsx
+- src/components/ui/close-button.stories.tsx
+- src/components/ui/command.stories.tsx
+- src/components/ui/dialog.stories.tsx
+- src/components/ui/dropdown-menu.stories.tsx
+- src/components/ui/eyebrow.stories.tsx
+- src/components/ui/form-field.stories.tsx
+- src/components/ui/input.stories.tsx
+- src/components/ui/input-group.stories.tsx
+- src/components/ui/label.stories.tsx
+- src/components/ui/popover.stories.tsx
+- src/components/ui/progress.stories.tsx
+- src/components/ui/progress-bar.stories.tsx
+- src/components/ui/radio-group.stories.tsx
+- src/components/ui/resizable.stories.tsx
+- src/components/ui/scroll-area.stories.tsx
+- src/components/ui/select.stories.tsx
+- src/components/ui/separator.stories.tsx
+- src/components/ui/sheet.stories.tsx
+- src/components/ui/skeleton.stories.tsx
+- src/components/ui/slider.stories.tsx
+- src/components/ui/spinner.stories.tsx
+- src/components/ui/switch.stories.tsx
+- src/components/ui/tabs.stories.tsx
+- src/components/ui/textarea.stories.tsx
+- src/components/ui/toast.stories.tsx
+- src/components/ui/toaster.stories.tsx
+- src/components/ui/toolbar.stories.tsx
+- src/components/ui/tooltip.stories.tsx
+@storybook/core v8.6.17
+
+info => Cleaning outputDir: storybook-static
+info => Loading presets
+info => Building manager..
+info => Manager built ([38;2;181;126;229m113 ms[39m)
+info => Building preview..
+info Using tsconfig paths for react-docgen
+vite v6.4.2 building for production...
+transforming...
+(node:28688) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+src/components/shared/SlatecampLoader.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/shared/SlatecampLoader.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/shared/SlatecampLoader.tsx" was ignored.
+src/components/score/ZoneContextCard.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/score/ZoneContextCard.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/score/ZoneContextCard.tsx" was ignored.
+src/components/portal/CopyButton.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/portal/CopyButton.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/portal/CopyButton.tsx" was ignored.
+src/components/ui/badge.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/ui/badge.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/ui/badge.tsx" was ignored.
+src/components/shared/app-drawer.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/shared/app-drawer.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/shared/app-drawer.tsx" was ignored.
+src/components/quiz-v2/TimerDisplay.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/quiz-v2/TimerDisplay.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/quiz-v2/TimerDisplay.tsx" was ignored.
+src/components/score/ReadinessScoreRing.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/score/ReadinessScoreRing.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/score/ReadinessScoreRing.tsx" was ignored.
+src/components/marketing/ContactForm.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/marketing/ContactForm.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/marketing/ContactForm.tsx" was ignored.
+src/components/shared/action-card.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/shared/action-card.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/shared/action-card.tsx" was ignored.
+src/components/ui/button.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/ui/button.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/ui/button.tsx" was ignored.
+src/components/quiz-v2/QuizHeader.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/quiz-v2/QuizHeader.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/quiz-v2/QuizHeader.tsx" was ignored.
+src/components/shared/RouteError.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/shared/RouteError.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/shared/RouteError.tsx" was ignored.
+src/components/ui/avatar.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/ui/avatar.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/ui/avatar.tsx" was ignored.
+src/components/ui/checkbox.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/ui/checkbox.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/ui/checkbox.tsx" was ignored.
+src/components/shared/data-table.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/shared/data-table.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/shared/data-table.tsx" was ignored.
+src/components/ui/dialog.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/ui/dialog.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/ui/dialog.tsx" was ignored.
+src/components/ui/alert.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/ui/alert.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/ui/alert.tsx" was ignored.
+src/components/shared/question-card.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/shared/question-card.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/shared/question-card.tsx" was ignored.
+src/components/shared/Omnibar.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/shared/Omnibar.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/shared/Omnibar.tsx" was ignored.
+src/components/shared/CodeBlock.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/shared/CodeBlock.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/shared/CodeBlock.tsx" was ignored.
+src/components/shared/Navbar.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/shared/Navbar.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/shared/Navbar.tsx" was ignored.
+src/components/shared/score-display.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/shared/score-display.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/shared/score-display.tsx" was ignored.
+src/components/ui/accordion.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/ui/accordion.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/ui/accordion.tsx" was ignored.
+src/components/ui/breadcrumb.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/ui/breadcrumb.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/ui/breadcrumb.tsx" was ignored.
+src/components/marketing/FaqSection.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/marketing/FaqSection.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/marketing/FaqSection.tsx" was ignored.
+src/components/shared/question-dot-navigator.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/shared/question-dot-navigator.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/shared/question-dot-navigator.tsx" was ignored.
+src/components/ui/textarea.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/ui/textarea.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/ui/textarea.tsx" was ignored.
+src/components/shared/DashboardHeader.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/shared/DashboardHeader.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/shared/DashboardHeader.tsx" was ignored.
+src/components/ui/input.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/ui/input.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/ui/input.tsx" was ignored.
+src/components/ui/progress.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/ui/progress.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/ui/progress.tsx" was ignored.
+src/components/ui/tooltip.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/ui/tooltip.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/ui/tooltip.tsx" was ignored.
+src/components/ui/radio-group.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/ui/radio-group.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/ui/radio-group.tsx" was ignored.
+src/lib/context/note-context.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/lib/context/note-context.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/lib/context/note-context.tsx" was ignored.
+src/components/ui/sheet.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/ui/sheet.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/ui/sheet.tsx" was ignored.
+src/components/ui/separator.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/ui/separator.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/ui/separator.tsx" was ignored.
+src/components/ui/tabs.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/ui/tabs.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/ui/tabs.tsx" was ignored.
+src/components/ui/switch.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/ui/switch.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/ui/switch.tsx" was ignored.
+src/components/ui/dropdown-menu.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/ui/dropdown-menu.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/ui/dropdown-menu.tsx" was ignored.
+src/components/ui/select.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/ui/select.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/ui/select.tsx" was ignored.
+src/components/wiki/shared/WikiSourcesPopover.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/wiki/shared/WikiSourcesPopover.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/wiki/shared/WikiSourcesPopover.tsx" was ignored.
+src/components/wiki/blocks/InlineQuiz.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/wiki/blocks/InlineQuiz.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/wiki/blocks/InlineQuiz.tsx" was ignored.
+src/components/wiki/blocks/RevealBlock.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/wiki/blocks/RevealBlock.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/wiki/blocks/RevealBlock.tsx" was ignored.
+src/components/wiki/shared/WikiTextSelection.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/wiki/shared/WikiTextSelection.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/wiki/shared/WikiTextSelection.tsx" was ignored.
+src/components/wiki/blocks/TeachBackPrompt.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/wiki/blocks/TeachBackPrompt.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/wiki/blocks/TeachBackPrompt.tsx" was ignored.
+src/components/wiki/navigation/WikiNavigationContext.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/wiki/navigation/WikiNavigationContext.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/wiki/navigation/WikiNavigationContext.tsx" was ignored.
+src/components/wiki/navigation/WikiContentShell.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/wiki/navigation/WikiContentShell.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/wiki/navigation/WikiContentShell.tsx" was ignored.
+src/components/developer/Breadcrumbs.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/developer/Breadcrumbs.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/developer/Breadcrumbs.tsx" was ignored.
+src/components/wiki/navigation/WikiRightSidebar.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/wiki/navigation/WikiRightSidebar.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/wiki/navigation/WikiRightSidebar.tsx" was ignored.
+src/components/wiki/blocks/ElaborativeInterrogation.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/wiki/blocks/ElaborativeInterrogation.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/wiki/blocks/ElaborativeInterrogation.tsx" was ignored.
+src/components/wiki/widgets/dsgn013/BodyDimensionDrill.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/wiki/widgets/dsgn013/BodyDimensionDrill.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/wiki/widgets/dsgn013/BodyDimensionDrill.tsx" was ignored.
+src/components/wiki/navigation/WikiDisciplineContext.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/wiki/navigation/WikiDisciplineContext.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/wiki/navigation/WikiDisciplineContext.tsx" was ignored.
+src/features/3d-lab/components/LabBrowser.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/features/3d-lab/components/LabBrowser.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/features/3d-lab/components/LabBrowser.tsx" was ignored.
+src/components/wiki/navigation/WikiHeaderClient.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/wiki/navigation/WikiHeaderClient.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/wiki/navigation/WikiHeaderClient.tsx" was ignored.
+src/components/wiki/shared/WikiRelatedPopover.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/wiki/shared/WikiRelatedPopover.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/wiki/shared/WikiRelatedPopover.tsx" was ignored.
+src/features/3d-lab/components/ModuleCard.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/features/3d-lab/components/ModuleCard.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/features/3d-lab/components/ModuleCard.tsx" was ignored.
+src/components/wiki/widgets/dsgn013/SpatialQualityDrill.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/wiki/widgets/dsgn013/SpatialQualityDrill.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/wiki/widgets/dsgn013/SpatialQualityDrill.tsx" was ignored.
+src/components/wiki/navigation/WikiTableOfContents.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/wiki/navigation/WikiTableOfContents.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/wiki/navigation/WikiTableOfContents.tsx" was ignored.
+node_modules/next-themes/dist/index.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/next-themes/dist/index.mjs" was ignored.
+src/components/shared/ThemeProvider.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/shared/ThemeProvider.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/shared/ThemeProvider.tsx" was ignored.
+src/components/ui/toaster.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/ui/toaster.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/ui/toaster.tsx" was ignored.
+src/storybook/mocks/next-navigation.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/storybook/mocks/next-navigation.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/storybook/mocks/next-navigation.tsx" was ignored.
+src/components/wiki/widgets/bp344/RecallDrill.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/wiki/widgets/bp344/RecallDrill.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/wiki/widgets/bp344/RecallDrill.tsx" was ignored.
+src/features/3d-lab/components/CategoryGrid.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/features/3d-lab/components/CategoryGrid.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/features/3d-lab/components/CategoryGrid.tsx" was ignored.
+src/components/wiki/widgets/dsgn013/DimensionDrill.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/wiki/widgets/dsgn013/DimensionDrill.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/wiki/widgets/dsgn013/DimensionDrill.tsx" was ignored.
+src/components/wiki/shared/WikiReference.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/wiki/shared/WikiReference.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/wiki/shared/WikiReference.tsx" was ignored.
+src/components/wiki/quiz/WikiQuizModal.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/wiki/quiz/WikiQuizModal.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/wiki/quiz/WikiQuizModal.tsx" was ignored.
+src/components/wiki/shared/WikiNoteAnchor.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/wiki/shared/WikiNoteAnchor.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/wiki/shared/WikiNoteAnchor.tsx" was ignored.
+node_modules/cmdk/dist/index.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/cmdk/dist/index.mjs" was ignored.
+src/components/ui/close-button.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/ui/close-button.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/ui/close-button.tsx" was ignored.
+src/components/analytics/AnalyticsErrorBoundary.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/analytics/AnalyticsErrorBoundary.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/analytics/AnalyticsErrorBoundary.tsx" was ignored.
+src/components/quiz-v2/MnemonicTip.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/quiz-v2/MnemonicTip.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/quiz-v2/MnemonicTip.tsx" was ignored.
+src/storybook/mocks/next-link.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/storybook/mocks/next-link.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/storybook/mocks/next-link.tsx" was ignored.
+src/components/shared/ThemeToggle.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/shared/ThemeToggle.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/shared/ThemeToggle.tsx" was ignored.
+src/components/shared/floating-panel.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/shared/floating-panel.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/shared/floating-panel.tsx" was ignored.
+src/components/quiz-v2/SocraticExplorer.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/quiz-v2/SocraticExplorer.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/quiz-v2/SocraticExplorer.tsx" was ignored.
+src/features/3d-lab/components/ModuleList.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/features/3d-lab/components/ModuleList.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/features/3d-lab/components/ModuleList.tsx" was ignored.
+src/components/wiki/navigation/WikiBookmarks.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/wiki/navigation/WikiBookmarks.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/wiki/navigation/WikiBookmarks.tsx" was ignored.
+src/components/wiki/navigation/WikiSidebar.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/wiki/navigation/WikiSidebar.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/wiki/navigation/WikiSidebar.tsx" was ignored.
+src/components/wiki/navigation/WikiReadingProgress.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/wiki/navigation/WikiReadingProgress.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/wiki/navigation/WikiReadingProgress.tsx" was ignored.
+src/lib/actions/contact.ts (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/lib/actions/contact.ts (1:0): Module level directives cause errors when bundled, "use server" in "src/lib/actions/contact.ts" was ignored.
+src/components/graphics/icons/Icon.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/graphics/icons/Icon.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/graphics/icons/Icon.tsx" was ignored.
+src/components/layout/HeaderActions.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/layout/HeaderActions.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/layout/HeaderActions.tsx" was ignored.
+src/features/3d-lab/components/shell/LabBrowserShell.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/features/3d-lab/components/shell/LabBrowserShell.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/features/3d-lab/components/shell/LabBrowserShell.tsx" was ignored.
+[plugin vite:dynamic-import-vars] src/features/3d-lab/config/module-paths.ts: invalid import "./modules/${path}". A file extension must be included in the static part of the import. For example: import(`./foo/${bar}.js`).
+src/lib/hooks/use-toast.ts (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/lib/hooks/use-toast.ts (1:0): Module level directives cause errors when bundled, "use client" in "src/lib/hooks/use-toast.ts" was ignored.
+src/storybook/mocks/next-dynamic.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/storybook/mocks/next-dynamic.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/storybook/mocks/next-dynamic.tsx" was ignored.
+src/components/ui/toast.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/ui/toast.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/ui/toast.tsx" was ignored.
+node_modules/@radix-ui/react-tooltip/dist/index.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@radix-ui/react-tooltip/dist/index.mjs" was ignored.
+src/features/3d-lab/templates/ParametricScene.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/features/3d-lab/templates/ParametricScene.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/features/3d-lab/templates/ParametricScene.tsx" was ignored.
+src/features/3d-lab/templates/ExplodedAssembly.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/features/3d-lab/templates/ExplodedAssembly.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/features/3d-lab/templates/ExplodedAssembly.tsx" was ignored.
+src/features/3d-lab/templates/AnimatedSequence.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/features/3d-lab/templates/AnimatedSequence.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/features/3d-lab/templates/AnimatedSequence.tsx" was ignored.
+src/features/3d-lab/templates/FloorPlanWalkthrough.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/features/3d-lab/templates/FloorPlanWalkthrough.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/features/3d-lab/templates/FloorPlanWalkthrough.tsx" was ignored.
+src/features/3d-lab/templates/CutawaySection.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/features/3d-lab/templates/CutawaySection.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/features/3d-lab/templates/CutawaySection.tsx" was ignored.
+node_modules/framer-motion/dist/es/components/AnimatePresence/PopChild.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/components/AnimatePresence/PopChild.mjs" was ignored.
+node_modules/@radix-ui/react-dialog/dist/index.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@radix-ui/react-dialog/dist/index.mjs" was ignored.
+node_modules/framer-motion/dist/es/components/LazyMotion/index.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/components/LazyMotion/index.mjs" was ignored.
+node_modules/framer-motion/dist/es/components/MotionConfig/index.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/components/MotionConfig/index.mjs" was ignored.
+node_modules/framer-motion/dist/es/components/LayoutGroup/index.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/components/LayoutGroup/index.mjs" was ignored.
+node_modules/framer-motion/dist/es/components/AnimatePresence/PresenceChild.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/components/AnimatePresence/PresenceChild.mjs" was ignored.
+node_modules/framer-motion/dist/es/utils/use-isomorphic-effect.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/utils/use-isomorphic-effect.mjs" was ignored.
+node_modules/framer-motion/dist/es/motion/utils/use-visual-state.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/motion/utils/use-visual-state.mjs" was ignored.
+node_modules/framer-motion/dist/es/utils/use-force-update.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/utils/use-force-update.mjs" was ignored.
+node_modules/framer-motion/dist/es/utils/use-unmount-effect.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/utils/use-unmount-effect.mjs" was ignored.
+node_modules/framer-motion/dist/es/utils/use-motion-value-event.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/utils/use-motion-value-event.mjs" was ignored.
+node_modules/framer-motion/dist/es/render/dom/features-animation.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/render/dom/features-animation.mjs" was ignored.
+node_modules/framer-motion/dist/es/value/use-motion-template.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/value/use-motion-template.mjs" was ignored.
+node_modules/framer-motion/dist/es/render/dom/features-max.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/render/dom/features-max.mjs" was ignored.
+node_modules/framer-motion/dist/es/render/dom/features-min.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/render/dom/features-min.mjs" was ignored.
+node_modules/framer-motion/dist/es/value/use-motion-value.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/value/use-motion-value.mjs" was ignored.
+node_modules/framer-motion/dist/es/value/use-time.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/value/use-time.mjs" was ignored.
+node_modules/framer-motion/dist/es/value/use-velocity.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/value/use-velocity.mjs" was ignored.
+node_modules/framer-motion/dist/es/value/use-follow-value.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/value/use-follow-value.mjs" was ignored.
+node_modules/framer-motion/dist/es/value/use-spring.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/value/use-spring.mjs" was ignored.
+node_modules/framer-motion/dist/es/value/use-scroll.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/value/use-scroll.mjs" was ignored.
+node_modules/framer-motion/dist/es/value/use-will-change/index.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/value/use-will-change/index.mjs" was ignored.
+node_modules/framer-motion/dist/es/value/use-transform.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/value/use-transform.mjs" was ignored.
+node_modules/framer-motion/dist/es/utils/reduced-motion/use-reduced-motion-config.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/utils/reduced-motion/use-reduced-motion-config.mjs" was ignored.
+node_modules/framer-motion/dist/es/animation/hooks/use-animate-style.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/animation/hooks/use-animate-style.mjs" was ignored.
+node_modules/framer-motion/dist/es/animation/hooks/use-animate.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/animation/hooks/use-animate.mjs" was ignored.
+node_modules/framer-motion/dist/es/components/AnimatePresence/use-presence.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/components/AnimatePresence/use-presence.mjs" was ignored.
+node_modules/framer-motion/dist/es/animation/hooks/use-animation.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/animation/hooks/use-animation.mjs" was ignored.
+node_modules/framer-motion/dist/es/events/use-dom-event.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/events/use-dom-event.mjs" was ignored.
+node_modules/framer-motion/dist/es/components/AnimatePresence/use-presence-data.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/components/AnimatePresence/use-presence-data.mjs" was ignored.
+node_modules/framer-motion/dist/es/utils/use-animation-frame.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/utils/use-animation-frame.mjs" was ignored.
+node_modules/framer-motion/dist/es/utils/use-cycle.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/utils/use-cycle.mjs" was ignored.
+node_modules/framer-motion/dist/es/utils/use-page-in-view.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/utils/use-page-in-view.mjs" was ignored.
+node_modules/framer-motion/dist/es/utils/use-in-view.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/utils/use-in-view.mjs" was ignored.
+node_modules/framer-motion/dist/es/utils/use-instant-transition.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/utils/use-instant-transition.mjs" was ignored.
+node_modules/framer-motion/dist/es/context/MotionConfigContext.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/context/MotionConfigContext.mjs" was ignored.
+node_modules/framer-motion/dist/es/context/SwitchLayoutGroupContext.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/context/SwitchLayoutGroupContext.mjs" was ignored.
+node_modules/framer-motion/dist/es/context/PresenceContext.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/context/PresenceContext.mjs" was ignored.
+node_modules/framer-motion/dist/es/context/LayoutGroupContext.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/context/LayoutGroupContext.mjs" was ignored.
+node_modules/framer-motion/dist/es/context/MotionContext/index.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/context/MotionContext/index.mjs" was ignored.
+node_modules/framer-motion/dist/es/context/DeprecatedLayoutGroupContext.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/context/DeprecatedLayoutGroupContext.mjs" was ignored.
+node_modules/framer-motion/dist/es/animation/hooks/use-animated-state.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/animation/hooks/use-animated-state.mjs" was ignored.
+node_modules/framer-motion/dist/es/value/use-inverted-scale.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/value/use-inverted-scale.mjs" was ignored.
+node_modules/framer-motion/dist/es/components/AnimateSharedLayout.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/components/AnimateSharedLayout.mjs" was ignored.
+node_modules/@base-ui/react/esm/button/Button.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/button/Button.js" was ignored.
+node_modules/@base-ui/react/esm/input/Input.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/input/Input.js" was ignored.
+node_modules/@base-ui/react/esm/separator/Separator.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/separator/Separator.js" was ignored.
+node_modules/framer-motion/dist/es/utils/reduced-motion/use-reduced-motion.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/utils/reduced-motion/use-reduced-motion.mjs" was ignored.
+node_modules/@base-ui/react/esm/radio-group/RadioGroup.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/radio-group/RadioGroup.js" was ignored.
+node_modules/framer-motion/dist/es/components/AnimatePresence/index.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/components/AnimatePresence/index.mjs" was ignored.
+src/lib/hooks/useDraggableFloatingPosition.ts (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/lib/hooks/useDraggableFloatingPosition.ts (1:0): Module level directives cause errors when bundled, "use client" in "src/lib/hooks/useDraggableFloatingPosition.ts" was ignored.
+src/components/shared/SourceBadge.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/shared/SourceBadge.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/shared/SourceBadge.tsx" was ignored.
+src/components/ui/popover.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/ui/popover.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/ui/popover.tsx" was ignored.
+src/components/shared/taxonomy-tree.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/shared/taxonomy-tree.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/shared/taxonomy-tree.tsx" was ignored.
+src/lib/actions/ai/generate-mnemonic.ts (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/lib/actions/ai/generate-mnemonic.ts (1:0): Module level directives cause errors when bundled, "use server" in "src/lib/actions/ai/generate-mnemonic.ts" was ignored.
+src/components/notifications/NotificationBell.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/notifications/NotificationBell.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/notifications/NotificationBell.tsx" was ignored.
+node_modules/@radix-ui/react-portal/dist/index.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@radix-ui/react-portal/dist/index.mjs" was ignored.
+node_modules/@radix-ui/react-popper/dist/index.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@radix-ui/react-popper/dist/index.mjs" was ignored.
+node_modules/@radix-ui/react-toast/dist/index.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@radix-ui/react-toast/dist/index.mjs" was ignored.
+node_modules/@radix-ui/react-dismissable-layer/dist/index.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@radix-ui/react-dismissable-layer/dist/index.mjs" was ignored.
+node_modules/@radix-ui/react-presence/dist/index.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@radix-ui/react-presence/dist/index.mjs" was ignored.
+node_modules/@base-ui/react/esm/menu/submenu-root/MenuSubmenuRoot.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/menu/submenu-root/MenuSubmenuRoot.js" was ignored.
+node_modules/@radix-ui/react-focus-scope/dist/index.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@radix-ui/react-focus-scope/dist/index.mjs" was ignored.
+node_modules/framer-motion/dist/es/context/LazyContext.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/context/LazyContext.mjs" was ignored.
+node_modules/framer-motion/dist/es/utils/use-constant.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/utils/use-constant.mjs" was ignored.
+node_modules/@radix-ui/react-focus-guards/dist/index.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@radix-ui/react-focus-guards/dist/index.mjs" was ignored.
+node_modules/framer-motion/dist/es/utils/use-is-mounted.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/utils/use-is-mounted.mjs" was ignored.
+node_modules/framer-motion/dist/es/value/use-combine-values.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/value/use-combine-values.mjs" was ignored.
+node_modules/framer-motion/dist/es/value/use-computed.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/value/use-computed.mjs" was ignored.
+node_modules/framer-motion/dist/es/components/Reorder/Item.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/components/Reorder/Item.mjs" was ignored.
+node_modules/framer-motion/dist/es/components/Reorder/Group.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/components/Reorder/Group.mjs" was ignored.
+node_modules/@base-ui/react/esm/select/root/SelectRoot.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/select/root/SelectRoot.js" was ignored.
+src/components/wiki/blocks/WikiTabs.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/wiki/blocks/WikiTabs.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/wiki/blocks/WikiTabs.tsx" was ignored.
+src/components/wiki/shared/WikiReadTracker.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/wiki/shared/WikiReadTracker.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/wiki/shared/WikiReadTracker.tsx" was ignored.
+src/components/wiki/blocks/ArticleMedia.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/wiki/blocks/ArticleMedia.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/wiki/blocks/ArticleMedia.tsx" was ignored.
+src/features/3d-lab/components/CanvasWrapper.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/features/3d-lab/components/CanvasWrapper.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/features/3d-lab/components/CanvasWrapper.tsx" was ignored.
+src/features/3d-lab/templates/ParametricSceneRenderer.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/features/3d-lab/templates/ParametricSceneRenderer.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/features/3d-lab/templates/ParametricSceneRenderer.tsx" was ignored.
+node_modules/@base-ui/react/esm/dialog/close/DialogClose.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/dialog/close/DialogClose.js" was ignored.
+node_modules/@base-ui/react/esm/dialog/viewport/DialogViewport.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/dialog/viewport/DialogViewport.js" was ignored.
+node_modules/@base-ui/react/esm/dialog/title/DialogTitle.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/dialog/title/DialogTitle.js" was ignored.
+node_modules/@base-ui/react/esm/dialog/root/DialogRoot.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/dialog/root/DialogRoot.js" was ignored.
+node_modules/@base-ui/react/esm/dialog/backdrop/DialogBackdrop.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/dialog/backdrop/DialogBackdrop.js" was ignored.
+node_modules/@base-ui/react/esm/radio/indicator/RadioIndicator.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/radio/indicator/RadioIndicator.js" was ignored.
+node_modules/@base-ui/react/esm/progress/value/ProgressValue.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/progress/value/ProgressValue.js" was ignored.
+node_modules/@base-ui/react/esm/avatar/root/AvatarRoot.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/avatar/root/AvatarRoot.js" was ignored.
+node_modules/@base-ui/react/esm/dialog/portal/DialogPortal.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/dialog/portal/DialogPortal.js" was ignored.
+node_modules/@base-ui/react/esm/progress/track/ProgressTrack.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/progress/track/ProgressTrack.js" was ignored.
+node_modules/@base-ui/react/esm/checkbox/indicator/CheckboxIndicator.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/checkbox/indicator/CheckboxIndicator.js" was ignored.
+node_modules/@base-ui/react/esm/dialog/popup/DialogPopup.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/dialog/popup/DialogPopup.js" was ignored.
+node_modules/@base-ui/react/esm/avatar/fallback/AvatarFallback.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/avatar/fallback/AvatarFallback.js" was ignored.
+node_modules/@base-ui/react/esm/tooltip/popup/TooltipPopup.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/tooltip/popup/TooltipPopup.js" was ignored.
+node_modules/@base-ui/react/esm/progress/indicator/ProgressIndicator.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/progress/indicator/ProgressIndicator.js" was ignored.
+node_modules/@base-ui/react/esm/progress/root/ProgressRoot.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/progress/root/ProgressRoot.js" was ignored.
+node_modules/@base-ui/react/esm/tooltip/trigger/TooltipTrigger.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/tooltip/trigger/TooltipTrigger.js" was ignored.
+src/features/3d-lab/templates/FloorPlanScene.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/features/3d-lab/templates/FloorPlanScene.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/features/3d-lab/templates/FloorPlanScene.tsx" was ignored.
+src/components/ui/slider.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/ui/slider.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/ui/slider.tsx" was ignored.
+node_modules/@base-ui/react/esm/internals/useBaseUiId.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/internals/useBaseUiId.js" was ignored.
+node_modules/@base-ui/react/esm/internals/composite/root/CompositeRoot.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/internals/composite/root/CompositeRoot.js" was ignored.
+node_modules/@base-ui/react/esm/internals/field-register-control/useRegisterFieldControl.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/internals/field-register-control/useRegisterFieldControl.js" was ignored.
+node_modules/@base-ui/react/esm/internals/useValueChanged.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/internals/useValueChanged.js" was ignored.
+node_modules/@base-ui/react/esm/menu/arrow/MenuArrow.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/menu/arrow/MenuArrow.js" was ignored.
+node_modules/@base-ui/react/esm/menu/portal/MenuPortal.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/menu/portal/MenuPortal.js" was ignored.
+node_modules/@base-ui/react/esm/avatar/image/AvatarImage.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/avatar/image/AvatarImage.js" was ignored.
+node_modules/@base-ui/react/esm/menu/group-label/MenuGroupLabel.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/menu/group-label/MenuGroupLabel.js" was ignored.
+node_modules/@base-ui/react/esm/dialog/trigger/DialogTrigger.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/dialog/trigger/DialogTrigger.js" was ignored.
+node_modules/@base-ui/react/esm/tooltip/portal/TooltipPortal.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/tooltip/portal/TooltipPortal.js" was ignored.
+node_modules/@base-ui/react/esm/dialog/description/DialogDescription.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/dialog/description/DialogDescription.js" was ignored.
+node_modules/@base-ui/react/esm/menu/viewport/MenuViewport.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/menu/viewport/MenuViewport.js" was ignored.
+node_modules/@base-ui/react/esm/tooltip/arrow/TooltipArrow.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/tooltip/arrow/TooltipArrow.js" was ignored.
+node_modules/@base-ui/react/esm/menu/backdrop/MenuBackdrop.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/menu/backdrop/MenuBackdrop.js" was ignored.
+node_modules/@base-ui/react/esm/checkbox/root/CheckboxRoot.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/checkbox/root/CheckboxRoot.js" was ignored.
+node_modules/@base-ui/react/esm/progress/label/ProgressLabel.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/progress/label/ProgressLabel.js" was ignored.
+node_modules/@base-ui/react/esm/tooltip/viewport/TooltipViewport.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/tooltip/viewport/TooltipViewport.js" was ignored.
+node_modules/@base-ui/react/esm/tooltip/positioner/TooltipPositioner.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/tooltip/positioner/TooltipPositioner.js" was ignored.
+node_modules/@base-ui/react/esm/tooltip/provider/TooltipProvider.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/tooltip/provider/TooltipProvider.js" was ignored.
+node_modules/@base-ui/react/esm/radio/root/RadioRoot.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/radio/root/RadioRoot.js" was ignored.
+node_modules/@base-ui/react/esm/menu/checkbox-item-indicator/MenuCheckboxItemIndicator.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/menu/checkbox-item-indicator/MenuCheckboxItemIndicator.js" was ignored.
+node_modules/@base-ui/react/esm/menu/item/MenuItem.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/menu/item/MenuItem.js" was ignored.
+node_modules/@base-ui/react/esm/menu/radio-item-indicator/MenuRadioItemIndicator.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/menu/radio-item-indicator/MenuRadioItemIndicator.js" was ignored.
+node_modules/@base-ui/react/esm/menu/radio-group/MenuRadioGroup.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/menu/radio-group/MenuRadioGroup.js" was ignored.
+node_modules/@base-ui/react/esm/menu/positioner/MenuPositioner.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/menu/positioner/MenuPositioner.js" was ignored.
+node_modules/@base-ui/react/esm/menu/radio-item/MenuRadioItem.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/menu/radio-item/MenuRadioItem.js" was ignored.
+node_modules/@base-ui/react/esm/menu/checkbox-item/MenuCheckboxItem.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/menu/checkbox-item/MenuCheckboxItem.js" was ignored.
+node_modules/@base-ui/react/esm/menu/link-item/MenuLinkItem.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/menu/link-item/MenuLinkItem.js" was ignored.
+node_modules/@base-ui/react/esm/menu/popup/MenuPopup.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/menu/popup/MenuPopup.js" was ignored.
+node_modules/@base-ui/react/esm/tabs/list/TabsList.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/tabs/list/TabsList.js" was ignored.
+node_modules/@base-ui/react/esm/menu/group/MenuGroup.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/menu/group/MenuGroup.js" was ignored.
+node_modules/@base-ui/react/esm/tabs/tab/TabsTab.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/tabs/tab/TabsTab.js" was ignored.
+node_modules/@base-ui/react/esm/menu/submenu-trigger/MenuSubmenuTrigger.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/menu/submenu-trigger/MenuSubmenuTrigger.js" was ignored.
+node_modules/@base-ui/react/esm/tooltip/root/TooltipRoot.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/tooltip/root/TooltipRoot.js" was ignored.
+node_modules/@base-ui/react/esm/menu/root/MenuRoot.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/menu/root/MenuRoot.js" was ignored.
+node_modules/@base-ui/react/esm/menu/trigger/MenuTrigger.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/menu/trigger/MenuTrigger.js" was ignored.
+node_modules/@radix-ui/react-collection/dist/index.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@radix-ui/react-collection/dist/index.mjs" was ignored.
+node_modules/@base-ui/react/esm/tabs/panel/TabsPanel.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/tabs/panel/TabsPanel.js" was ignored.
+node_modules/@base-ui/react/esm/select/item-indicator/SelectItemIndicator.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/select/item-indicator/SelectItemIndicator.js" was ignored.
+node_modules/@base-ui/react/esm/select/icon/SelectIcon.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/select/icon/SelectIcon.js" was ignored.
+node_modules/@base-ui/react/esm/select/label/SelectLabel.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/select/label/SelectLabel.js" was ignored.
+node_modules/@base-ui/react/esm/select/list/SelectList.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/select/list/SelectList.js" was ignored.
+node_modules/@base-ui/react/esm/switch/thumb/SwitchThumb.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/switch/thumb/SwitchThumb.js" was ignored.
+node_modules/@base-ui/react/esm/select/item-text/SelectItemText.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/select/item-text/SelectItemText.js" was ignored.
+node_modules/@base-ui/react/esm/switch/root/SwitchRoot.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/switch/root/SwitchRoot.js" was ignored.
+node_modules/@base-ui/react/esm/tabs/indicator/TabsIndicator.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/tabs/indicator/TabsIndicator.js" was ignored.
+node_modules/@base-ui/react/esm/select/backdrop/SelectBackdrop.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/select/backdrop/SelectBackdrop.js" was ignored.
+node_modules/@base-ui/react/esm/select/portal/SelectPortal.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/select/portal/SelectPortal.js" was ignored.
+node_modules/@base-ui/react/esm/tabs/root/TabsRoot.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/tabs/root/TabsRoot.js" was ignored.
+node_modules/@base-ui/react/esm/select/positioner/SelectPositioner.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/select/positioner/SelectPositioner.js" was ignored.
+node_modules/@base-ui/react/esm/select/popup/SelectPopup.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/select/popup/SelectPopup.js" was ignored.
+node_modules/@base-ui/react/esm/select/trigger/SelectTrigger.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/select/trigger/SelectTrigger.js" was ignored.
+node_modules/@base-ui/react/esm/select/group-label/SelectGroupLabel.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/select/group-label/SelectGroupLabel.js" was ignored.
+node_modules/@base-ui/react/esm/select/scroll-up-arrow/SelectScrollUpArrow.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/select/scroll-up-arrow/SelectScrollUpArrow.js" was ignored.
+node_modules/@base-ui/react/esm/select/arrow/SelectArrow.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/select/arrow/SelectArrow.js" was ignored.
+node_modules/@base-ui/react/esm/select/group/SelectGroup.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/select/group/SelectGroup.js" was ignored.
+node_modules/@base-ui/react/esm/select/item/SelectItem.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/select/item/SelectItem.js" was ignored.
+src/features/3d-lab/components/templates/LabPanelLayout.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/features/3d-lab/components/templates/LabPanelLayout.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/features/3d-lab/components/templates/LabPanelLayout.tsx" was ignored.
+node_modules/@base-ui/react/esm/select/scroll-down-arrow/SelectScrollDownArrow.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/select/scroll-down-arrow/SelectScrollDownArrow.js" was ignored.
+node_modules/@base-ui/react/esm/select/value/SelectValue.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/select/value/SelectValue.js" was ignored.
+src/features/3d-lab/components/templates/ComplianceReportPanel.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/features/3d-lab/components/templates/ComplianceReportPanel.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/features/3d-lab/components/templates/ComplianceReportPanel.tsx" was ignored.
+node_modules/framer-motion/dist/es/motion/features/layout/MeasureLayout.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/motion/features/layout/MeasureLayout.mjs" was ignored.
+node_modules/framer-motion/dist/es/context/ReorderContext.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/context/ReorderContext.mjs" was ignored.
+node_modules/@base-ui/utils/esm/useIsoLayoutEffect.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/utils/esm/useIsoLayoutEffect.js" was ignored.
+node_modules/@base-ui/utils/esm/usePreviousValue.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/utils/esm/usePreviousValue.js" was ignored.
+node_modules/@base-ui/utils/esm/useValueAsRef.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/utils/esm/useValueAsRef.js" was ignored.
+node_modules/@base-ui/react/esm/internals/useTransitionStatus.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/internals/useTransitionStatus.js" was ignored.
+node_modules/@base-ui/utils/esm/useRefWithInit.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/utils/esm/useRefWithInit.js" was ignored.
+node_modules/@base-ui/react/esm/internals/labelable-provider/useLabelableId.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/internals/labelable-provider/useLabelableId.js" was ignored.
+node_modules/@base-ui/utils/esm/useOnFirstRender.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/utils/esm/useOnFirstRender.js" was ignored.
+node_modules/@base-ui/react/esm/utils/useOpenInteractionType.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/utils/useOpenInteractionType.js" was ignored.
+node_modules/@base-ui/react/esm/internals/resolveValueLabel.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/internals/resolveValueLabel.js" was ignored.
+node_modules/@base-ui/react/esm/internals/useOpenChangeComplete.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/internals/useOpenChangeComplete.js" was ignored.
+node_modules/@base-ui/react/esm/dialog/root/useDialogRoot.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/dialog/root/useDialogRoot.js" was ignored.
+node_modules/@base-ui/react/esm/checkbox/utils/useStateAttributesMapping.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/checkbox/utils/useStateAttributesMapping.js" was ignored.
+node_modules/@base-ui/utils/esm/useTimeout.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/utils/esm/useTimeout.js" was ignored.
+src/features/3d-lab/components/controls/LabSlider.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/features/3d-lab/components/controls/LabSlider.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/features/3d-lab/components/controls/LabSlider.tsx" was ignored.
+src/features/3d-lab/components/templates/GenericControlPanel.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/features/3d-lab/components/templates/GenericControlPanel.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/features/3d-lab/components/templates/GenericControlPanel.tsx" was ignored.
+node_modules/@base-ui/utils/esm/useId.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/utils/esm/useId.js" was ignored.
+node_modules/@base-ui/react/esm/internals/composite/list/CompositeList.js (2:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/internals/composite/list/CompositeList.js" was ignored.
+node_modules/@base-ui/react/esm/internals/composite/root/useCompositeRoot.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/internals/composite/root/useCompositeRoot.js" was ignored.
+node_modules/@base-ui/utils/esm/useStableCallback.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/utils/esm/useStableCallback.js" was ignored.
+node_modules/@base-ui/react/esm/internals/use-button/useButton.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/internals/use-button/useButton.js" was ignored.
+node_modules/@base-ui/react/esm/radio-group/RadioGroupContext.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/radio-group/RadioGroupContext.js" was ignored.
+node_modules/@base-ui/react/esm/internals/labelable-provider/LabelableContext.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/internals/labelable-provider/LabelableContext.js" was ignored.
+node_modules/@base-ui/react/esm/fieldset/root/FieldsetRootContext.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/fieldset/root/FieldsetRootContext.js" was ignored.
+src/lib/actions/quiz-v2/skip-question.ts (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/lib/actions/quiz-v2/skip-question.ts (1:0): Module level directives cause errors when bundled, "use server" in "src/lib/actions/quiz-v2/skip-question.ts" was ignored.
+node_modules/@base-ui/react/esm/internals/field-root-context/FieldRootContext.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/internals/field-root-context/FieldRootContext.js" was ignored.
+src/lib/actions/quiz-v2/abandon-session.ts (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/lib/actions/quiz-v2/abandon-session.ts (1:0): Module level directives cause errors when bundled, "use server" in "src/lib/actions/quiz-v2/abandon-session.ts" was ignored.
+node_modules/@base-ui/react/esm/internals/form-context/FormContext.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/internals/form-context/FormContext.js" was ignored.
+node_modules/@base-ui/utils/esm/useControlled.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/utils/esm/useControlled.js" was ignored.
+src/lib/actions/quiz-v2/get-session-questions.ts (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/lib/actions/quiz-v2/get-session-questions.ts (1:0): Module level directives cause errors when bundled, "use server" in "src/lib/actions/quiz-v2/get-session-questions.ts" was ignored.
+src/lib/actions/quiz-v2/update-session-progress.ts (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/lib/actions/quiz-v2/update-session-progress.ts (1:0): Module level directives cause errors when bundled, "use server" in "src/lib/actions/quiz-v2/update-session-progress.ts" was ignored.
+src/lib/actions/quiz-v2/flag-question.ts (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/lib/actions/quiz-v2/flag-question.ts (1:0): Module level directives cause errors when bundled, "use server" in "src/lib/actions/quiz-v2/flag-question.ts" was ignored.
+src/lib/actions/quiz-v2/get-prediction-history.ts (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/lib/actions/quiz-v2/get-prediction-history.ts (1:0): Module level directives cause errors when bundled, "use server" in "src/lib/actions/quiz-v2/get-prediction-history.ts" was ignored.
+node_modules/@base-ui/react/esm/avatar/image/useImageLoadingStatus.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/avatar/image/useImageLoadingStatus.js" was ignored.
+node_modules/@base-ui/react/esm/utils/usePopupViewport.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/utils/usePopupViewport.js" was ignored.
+node_modules/@base-ui/react/esm/internals/labelable-provider/useAriaLabelledBy.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/internals/labelable-provider/useAriaLabelledBy.js" was ignored.
+node_modules/@base-ui/react/esm/utils/useRegisteredLabelId.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/utils/useRegisteredLabelId.js" was ignored.
+node_modules/@base-ui/react/esm/utils/usePositioner.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/utils/usePositioner.js" was ignored.
+node_modules/@base-ui/react/esm/utils/useAnchorPositioning.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/utils/useAnchorPositioning.js" was ignored.
+node_modules/@base-ui/react/esm/internals/composite/item/CompositeItem.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/internals/composite/item/CompositeItem.js" was ignored.
+node_modules/@base-ui/react/esm/menu/item/useMenuItem.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/menu/item/useMenuItem.js" was ignored.
+node_modules/@base-ui/react/esm/internals/composite/list/useCompositeListItem.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/internals/composite/list/useCompositeListItem.js" was ignored.
+node_modules/@base-ui/react/esm/internals/useAnimationsFinished.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/internals/useAnimationsFinished.js" was ignored.
+node_modules/@base-ui/react/esm/utils/useAnchoredPopupScrollLock.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/utils/useAnchoredPopupScrollLock.js" was ignored.
+node_modules/@base-ui/react/esm/menu/item/useMenuItemCommonProps.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/menu/item/useMenuItemCommonProps.js" was ignored.
+src/components/notifications/NotificationItem.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/notifications/NotificationItem.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/notifications/NotificationItem.tsx" was ignored.
+src/components/notes/TemplatePicker.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/notes/TemplatePicker.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/notes/TemplatePicker.tsx" was ignored.
+src/lib/actions/quiz-v2/get-confidence-matrix.ts (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/lib/actions/quiz-v2/get-confidence-matrix.ts (1:0): Module level directives cause errors when bundled, "use server" in "src/lib/actions/quiz-v2/get-confidence-matrix.ts" was ignored.
+src/lib/actions/quiz-v2/check-generation-answer.ts (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/lib/actions/quiz-v2/check-generation-answer.ts (1:0): Module level directives cause errors when bundled, "use server" in "src/lib/actions/quiz-v2/check-generation-answer.ts" was ignored.
+src/lib/actions/quiz-v2/save-prediction.ts (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/lib/actions/quiz-v2/save-prediction.ts (1:0): Module level directives cause errors when bundled, "use server" in "src/lib/actions/quiz-v2/save-prediction.ts" was ignored.
+src/lib/actions/quiz-v2/get-review-data.ts (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/lib/actions/quiz-v2/get-review-data.ts (1:0): Module level directives cause errors when bundled, "use server" in "src/lib/actions/quiz-v2/get-review-data.ts" was ignored.
+src/lib/actions/quiz-v2/save-postdiction.ts (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/lib/actions/quiz-v2/save-postdiction.ts (1:0): Module level directives cause errors when bundled, "use server" in "src/lib/actions/quiz-v2/save-postdiction.ts" was ignored.
+src/lib/actions/quiz-v2/pause-resume.ts (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/lib/actions/quiz-v2/pause-resume.ts (1:0): Module level directives cause errors when bundled, "use server" in "src/lib/actions/quiz-v2/pause-resume.ts" was ignored.
+src/components/notes/NotesEditor.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/notes/NotesEditor.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/notes/NotesEditor.tsx" was ignored.
+node_modules/@base-ui/react/esm/internals/composite/item/useCompositeItem.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/internals/composite/item/useCompositeItem.js" was ignored.
+node_modules/@base-ui/react/esm/utils/popups/useTriggerFocusGuards.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/utils/popups/useTriggerFocusGuards.js" was ignored.
+node_modules/@base-ui/react/esm/utils/useMixedToggleClickHandler.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/utils/useMixedToggleClickHandler.js" was ignored.
+node_modules/@base-ui/react/esm/utils/resolveAriaLabelledBy.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/utils/resolveAriaLabelledBy.js" was ignored.
+node_modules/@base-ui/utils/esm/useForcedRerendering.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/utils/esm/useForcedRerendering.js" was ignored.
+node_modules/@base-ui/react/esm/internals/labelable-provider/useLabel.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/internals/labelable-provider/useLabel.js" was ignored.
+node_modules/@base-ui/react/esm/select/root/SelectRootContext.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/select/root/SelectRootContext.js" was ignored.
+src/features/3d-lab/components/GlobalCanvasPortal.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/features/3d-lab/components/GlobalCanvasPortal.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/features/3d-lab/components/GlobalCanvasPortal.tsx" was ignored.
+src/features/3d-lab/components/shell/SceneGround.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/features/3d-lab/components/shell/SceneGround.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/features/3d-lab/components/shell/SceneGround.tsx" was ignored.
+src/components/wiki/blocks/Mermaid.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/wiki/blocks/Mermaid.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/wiki/blocks/Mermaid.tsx" was ignored.
+src/components/wiki/article/WikiArticleError.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/wiki/article/WikiArticleError.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/wiki/article/WikiArticleError.tsx" was ignored.
+src/lib/actions/wiki-reads.ts (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/lib/actions/wiki-reads.ts (1:0): Module level directives cause errors when bundled, "use server" in "src/lib/actions/wiki-reads.ts" was ignored.
+src/lib/actions/cached-queries.ts (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/lib/actions/cached-queries.ts (1:0): Module level directives cause errors when bundled, "use server" in "src/lib/actions/cached-queries.ts" was ignored.
+node_modules/@base-ui/react/esm/menu/submenu-root/MenuSubmenuRootContext.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/menu/submenu-root/MenuSubmenuRootContext.js" was ignored.
+node_modules/@base-ui/react/esm/menu/root/MenuRootContext.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/menu/root/MenuRootContext.js" was ignored.
+src/components/wiki/blocks/WikiPre.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/wiki/blocks/WikiPre.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/wiki/blocks/WikiPre.tsx" was ignored.
+src/components/wiki/shared/WikiHighlighter.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/wiki/shared/WikiHighlighter.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/wiki/shared/WikiHighlighter.tsx" was ignored.
+node_modules/@base-ui/react/esm/dialog/portal/DialogPortalContext.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/dialog/portal/DialogPortalContext.js" was ignored.
+node_modules/@base-ui/react/esm/tooltip/provider/TooltipProviderContext.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/tooltip/provider/TooltipProviderContext.js" was ignored.
+node_modules/@base-ui/react/esm/tooltip/root/TooltipRootContext.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/tooltip/root/TooltipRootContext.js" was ignored.
+node_modules/@base-ui/react/esm/radio/root/RadioRootContext.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/radio/root/RadioRootContext.js" was ignored.
+node_modules/@base-ui/react/esm/checkbox/root/CheckboxRootContext.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/checkbox/root/CheckboxRootContext.js" was ignored.
+node_modules/@base-ui/react/esm/progress/root/ProgressRootContext.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/progress/root/ProgressRootContext.js" was ignored.
+node_modules/@base-ui/react/esm/tooltip/positioner/TooltipPositionerContext.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/tooltip/positioner/TooltipPositionerContext.js" was ignored.
+node_modules/@base-ui/react/esm/internals/direction-context/DirectionContext.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/internals/direction-context/DirectionContext.js" was ignored.
+node_modules/@base-ui/react/esm/dialog/root/DialogRootContext.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/dialog/root/DialogRootContext.js" was ignored.
+node_modules/@base-ui/react/esm/avatar/root/AvatarRootContext.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/avatar/root/AvatarRootContext.js" was ignored.
+node_modules/@base-ui/react/esm/internals/composite/root/CompositeRootContext.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/internals/composite/root/CompositeRootContext.js" was ignored.
+src/features/3d-lab/components/overlays/CameraSync.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/features/3d-lab/components/overlays/CameraSync.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/features/3d-lab/components/overlays/CameraSync.tsx" was ignored.
+src/features/3d-lab/components/templates/HumanSilhouette.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/features/3d-lab/components/templates/HumanSilhouette.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/features/3d-lab/components/templates/HumanSilhouette.tsx" was ignored.
+src/features/3d-lab/components/templates/InstancedMesh.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/features/3d-lab/components/templates/InstancedMesh.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/features/3d-lab/components/templates/InstancedMesh.tsx" was ignored.
+node_modules/@base-ui/utils/esm/store/StoreInspector.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/utils/esm/store/StoreInspector.js" was ignored.
+node_modules/@base-ui/react/esm/floating-ui-react/hooks/useClick.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/floating-ui-react/hooks/useClick.js" was ignored.
+node_modules/@base-ui/react/esm/floating-ui-react/hooks/useClientPoint.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/floating-ui-react/hooks/useClientPoint.js" was ignored.
+node_modules/@base-ui/react/esm/floating-ui-react/components/FloatingFocusManager.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/floating-ui-react/components/FloatingFocusManager.js" was ignored.
+node_modules/@base-ui/react/esm/floating-ui-react/hooks/useDismiss.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/floating-ui-react/hooks/useDismiss.js" was ignored.
+node_modules/@base-ui/react/esm/floating-ui-react/hooks/useFloating.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/floating-ui-react/hooks/useFloating.js" was ignored.
+node_modules/@base-ui/react/esm/floating-ui-react/hooks/useFocus.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/floating-ui-react/hooks/useFocus.js" was ignored.
+node_modules/@base-ui/react/esm/floating-ui-react/hooks/useSyncedFloatingRootContext.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/floating-ui-react/hooks/useSyncedFloatingRootContext.js" was ignored.
+node_modules/@base-ui/react/esm/floating-ui-react/hooks/useHoverFloatingInteraction.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/floating-ui-react/hooks/useHoverFloatingInteraction.js" was ignored.
+node_modules/@base-ui/react/esm/floating-ui-react/hooks/useHoverReferenceInteraction.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/floating-ui-react/hooks/useHoverReferenceInteraction.js" was ignored.
+node_modules/@base-ui/react/esm/floating-ui-react/hooks/useTypeahead.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/floating-ui-react/hooks/useTypeahead.js" was ignored.
+node_modules/@base-ui/react/esm/floating-ui-react/hooks/useHover.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/floating-ui-react/hooks/useHover.js" was ignored.
+node_modules/@base-ui/utils/esm/useEnhancedClickHandler.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/utils/esm/useEnhancedClickHandler.js" was ignored.
+node_modules/@base-ui/utils/esm/useScrollLock.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/utils/esm/useScrollLock.js" was ignored.
+node_modules/@base-ui/utils/esm/useOnMount.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/utils/esm/useOnMount.js" was ignored.
+node_modules/@base-ui/react/esm/utils/popups/popupStoreUtils.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/utils/popups/popupStoreUtils.js" was ignored.
+src/features/3d-lab/components/rendering/SceneConfig.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/features/3d-lab/components/rendering/SceneConfig.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/features/3d-lab/components/rendering/SceneConfig.tsx" was ignored.
+node_modules/@base-ui/react/esm/popover/root/PopoverRoot.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/popover/root/PopoverRoot.js" was ignored.
+node_modules/@base-ui/react/esm/utils/useFocusableWhenDisabled.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/utils/useFocusableWhenDisabled.js" was ignored.
+node_modules/@base-ui/react/esm/menu/checkbox-item/MenuCheckboxItemContext.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/menu/checkbox-item/MenuCheckboxItemContext.js" was ignored.
+node_modules/@base-ui/react/esm/tooltip/portal/TooltipPortalContext.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/tooltip/portal/TooltipPortalContext.js" was ignored.
+node_modules/@base-ui/react/esm/context-menu/root/ContextMenuRootContext.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/context-menu/root/ContextMenuRootContext.js" was ignored.
+node_modules/@base-ui/react/esm/utils/FloatingPortalLite.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/utils/FloatingPortalLite.js" was ignored.
+node_modules/@base-ui/react/esm/toolbar/root/ToolbarRootContext.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/toolbar/root/ToolbarRootContext.js" was ignored.
+node_modules/@base-ui/react/esm/checkbox-group/CheckboxGroupContext.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/checkbox-group/CheckboxGroupContext.js" was ignored.
+node_modules/@base-ui/react/esm/menu/group/MenuGroupContext.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/menu/group/MenuGroupContext.js" was ignored.
+node_modules/@base-ui/react/esm/tabs/root/TabsRootContext.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/tabs/root/TabsRootContext.js" was ignored.
+node_modules/@base-ui/react/esm/field/item/FieldItemContext.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/field/item/FieldItemContext.js" was ignored.
+node_modules/@base-ui/react/esm/menu/portal/MenuPortalContext.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/menu/portal/MenuPortalContext.js" was ignored.
+node_modules/@base-ui/react/esm/menu/radio-group/MenuRadioGroupContext.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/menu/radio-group/MenuRadioGroupContext.js" was ignored.
+node_modules/@base-ui/react/esm/menu/positioner/MenuPositionerContext.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/menu/positioner/MenuPositionerContext.js" was ignored.
+src/components/r3f/CanvasLoadingOverlay.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/r3f/CanvasLoadingOverlay.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/r3f/CanvasLoadingOverlay.tsx" was ignored.
+src/features/3d-lab/components/stairway/ClickInspectPopover.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/features/3d-lab/components/stairway/ClickInspectPopover.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/features/3d-lab/components/stairway/ClickInspectPopover.tsx" was ignored.
+node_modules/@base-ui/react/esm/menu/radio-item/MenuRadioItemContext.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/menu/radio-item/MenuRadioItemContext.js" was ignored.
+node_modules/@base-ui/react/esm/tabs/list/TabsListContext.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/tabs/list/TabsListContext.js" was ignored.
+node_modules/framer-motion/dist/es/motion/index.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/motion/index.mjs" was ignored.
+node_modules/@base-ui/react/esm/utils/FocusGuard.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/utils/FocusGuard.js" was ignored.
+node_modules/@base-ui/react/esm/select/portal/SelectPortalContext.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/select/portal/SelectPortalContext.js" was ignored.
+src/features/3d-lab/hooks/useCameraSnap.ts (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/features/3d-lab/hooks/useCameraSnap.ts (1:0): Module level directives cause errors when bundled, "use client" in "src/features/3d-lab/hooks/useCameraSnap.ts" was ignored.
+node_modules/@base-ui/react/esm/utils/usePopupAutoResize.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/utils/usePopupAutoResize.js" was ignored.
+node_modules/@base-ui/react/esm/csp-provider/CSPContext.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/csp-provider/CSPContext.js" was ignored.
+node_modules/@base-ui/react/esm/select/positioner/SelectPositionerContext.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/select/positioner/SelectPositionerContext.js" was ignored.
+node_modules/@base-ui/utils/esm/useAnimationFrame.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/utils/esm/useAnimationFrame.js" was ignored.
+node_modules/@base-ui/react/esm/floating-ui-react/components/FloatingDelayGroup.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/floating-ui-react/components/FloatingDelayGroup.js" was ignored.
+node_modules/@base-ui/react/esm/floating-ui-react/components/FloatingTree.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/floating-ui-react/components/FloatingTree.js" was ignored.
+node_modules/@base-ui/react/esm/select/group/SelectGroupContext.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/select/group/SelectGroupContext.js" was ignored.
+node_modules/@base-ui/react/esm/floating-ui-react/hooks/useFloatingRootContext.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/floating-ui-react/hooks/useFloatingRootContext.js" was ignored.
+node_modules/@base-ui/react/esm/select/scroll-arrow/SelectScrollArrow.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/select/scroll-arrow/SelectScrollArrow.js" was ignored.
+node_modules/@base-ui/react/esm/select/item/SelectItemContext.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/select/item/SelectItemContext.js" was ignored.
+node_modules/@base-ui/react/esm/switch/root/SwitchRootContext.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/switch/root/SwitchRootContext.js" was ignored.
+node_modules/@base-ui/react/esm/menubar/MenubarContext.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/menubar/MenubarContext.js" was ignored.
+node_modules/@base-ui/utils/esm/store/ReactStore.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/utils/esm/store/ReactStore.js" was ignored.
+node_modules/@base-ui/react/esm/floating-ui-react/components/FloatingPortal.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/floating-ui-react/components/FloatingPortal.js" was ignored.
+node_modules/@base-ui/react/esm/field/control/FieldControl.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/field/control/FieldControl.js" was ignored.
+src/lib/supabase/client.ts (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/lib/supabase/client.ts (1:0): Module level directives cause errors when bundled, "use client" in "src/lib/supabase/client.ts" was ignored.
+src/components/shared/PanelCollapseHandle.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/shared/PanelCollapseHandle.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/shared/PanelCollapseHandle.tsx" was ignored.
+node_modules/@base-ui/react/esm/field/root/FieldRoot.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/field/root/FieldRoot.js" was ignored.
+node_modules/@base-ui/react/esm/popover/trigger/PopoverTrigger.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/popover/trigger/PopoverTrigger.js" was ignored.
+node_modules/@base-ui/react/esm/popover/positioner/PopoverPositioner.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/popover/positioner/PopoverPositioner.js" was ignored.
+node_modules/@base-ui/react/esm/internals/composite/list/CompositeListContext.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/internals/composite/list/CompositeListContext.js" was ignored.
+node_modules/@base-ui/react/esm/popover/close/PopoverClose.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/popover/close/PopoverClose.js" was ignored.
+node_modules/@base-ui/react/esm/popover/arrow/PopoverArrow.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/popover/arrow/PopoverArrow.js" was ignored.
+node_modules/@base-ui/react/esm/popover/backdrop/PopoverBackdrop.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/popover/backdrop/PopoverBackdrop.js" was ignored.
+node_modules/@base-ui/react/esm/field/label/FieldLabel.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/field/label/FieldLabel.js" was ignored.
+node_modules/@base-ui/react/esm/field/description/FieldDescription.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/field/description/FieldDescription.js" was ignored.
+node_modules/@base-ui/react/esm/field/validity/FieldValidity.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/field/validity/FieldValidity.js" was ignored.
+node_modules/@base-ui/react/esm/popover/title/PopoverTitle.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/popover/title/PopoverTitle.js" was ignored.
+node_modules/@base-ui/react/esm/popover/description/PopoverDescription.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/popover/description/PopoverDescription.js" was ignored.
+node_modules/@base-ui/react/esm/popover/viewport/PopoverViewport.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/popover/viewport/PopoverViewport.js" was ignored.
+node_modules/@base-ui/react/esm/popover/portal/PopoverPortal.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/popover/portal/PopoverPortal.js" was ignored.
+node_modules/@base-ui/react/esm/popover/popup/PopoverPopup.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/popover/popup/PopoverPopup.js" was ignored.
+node_modules/@base-ui/react/esm/field/item/FieldItem.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/field/item/FieldItem.js" was ignored.
+node_modules/@base-ui/react/esm/field/error/FieldError.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/field/error/FieldError.js" was ignored.
+node_modules/@base-ui/react/esm/floating-ui-react/hooks/useListNavigation.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/floating-ui-react/hooks/useListNavigation.js" was ignored.
+node_modules/@base-ui/react/esm/floating-ui-react/hooks/useHoverInteractionSharedState.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/floating-ui-react/hooks/useHoverInteractionSharedState.js" was ignored.
+node_modules/framer-motion/dist/es/render/dom/use-render.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/render/dom/use-render.mjs" was ignored.
+node_modules/framer-motion/dist/es/motion/utils/use-motion-ref.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/motion/utils/use-motion-ref.mjs" was ignored.
+node_modules/framer-motion/dist/es/context/MotionContext/create.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/context/MotionContext/create.mjs" was ignored.
+node_modules/framer-motion/dist/es/render/svg/use-svg-visual-state.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/render/svg/use-svg-visual-state.mjs" was ignored.
+node_modules/framer-motion/dist/es/motion/utils/use-visual-element.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/motion/utils/use-visual-element.mjs" was ignored.
+node_modules/framer-motion/dist/es/render/html/use-html-visual-state.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/render/html/use-html-visual-state.mjs" was ignored.
+node_modules/@base-ui/react/esm/internals/field-register-control/useFieldControlRegistration.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/internals/field-register-control/useFieldControlRegistration.js" was ignored.
+node_modules/@base-ui/react/esm/field/root/useFieldValidation.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/field/root/useFieldValidation.js" was ignored.
+node_modules/framer-motion/dist/es/render/svg/use-props.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/render/svg/use-props.mjs" was ignored.
+node_modules/framer-motion/dist/es/render/html/use-props.mjs (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/framer-motion/dist/es/render/html/use-props.mjs" was ignored.
+src/lib/actions/quiz-v2/classify-and-store-error.ts (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/lib/actions/quiz-v2/classify-and-store-error.ts (1:0): Module level directives cause errors when bundled, "use server" in "src/lib/actions/quiz-v2/classify-and-store-error.ts" was ignored.
+src/lib/actions/notification-triggers.ts (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/lib/actions/notification-triggers.ts (1:0): Module level directives cause errors when bundled, "use server" in "src/lib/actions/notification-triggers.ts" was ignored.
+src/lib/actions/quiz-v2/post-session-hooks.ts (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/lib/actions/quiz-v2/post-session-hooks.ts (1:0): Module level directives cause errors when bundled, "use server" in "src/lib/actions/quiz-v2/post-session-hooks.ts" was ignored.
+src/lib/actions/quiz-v2/generate-recommendations.ts (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/lib/actions/quiz-v2/generate-recommendations.ts (1:0): Module level directives cause errors when bundled, "use server" in "src/lib/actions/quiz-v2/generate-recommendations.ts" was ignored.
+src/lib/actions/readiness-score-update.ts (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/lib/actions/readiness-score-update.ts (1:0): Module level directives cause errors when bundled, "use server" in "src/lib/actions/readiness-score-update.ts" was ignored.
+src/lib/srs/update.ts (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/lib/srs/update.ts (1:0): Module level directives cause errors when bundled, "use server" in "src/lib/srs/update.ts" was ignored.
+src/lib/actions/mastery/post-interaction-hooks.ts (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/lib/actions/mastery/post-interaction-hooks.ts (1:0): Module level directives cause errors when bundled, "use server" in "src/lib/actions/mastery/post-interaction-hooks.ts" was ignored.
+[plugin vite:resolve] Module "node:crypto" has been externalized for browser compatibility, imported by "/Users/philiplewis/slatecamp-ui-componentization-audit-2026-05-06/src/lib/entitlements/get-viewer-entitlements.ts". See https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details.
+src/lib/actions/notifications.ts (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/lib/actions/notifications.ts (1:0): Module level directives cause errors when bundled, "use server" in "src/lib/actions/notifications.ts" was ignored.
+src/lib/actions/analytics/write-theta.ts (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/lib/actions/analytics/write-theta.ts (1:0): Module level directives cause errors when bundled, "use server" in "src/lib/actions/analytics/write-theta.ts" was ignored.
+src/components/wiki/widgets/dsgn013/BedroomPlanView.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/wiki/widgets/dsgn013/BedroomPlanView.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/wiki/widgets/dsgn013/BedroomPlanView.tsx" was ignored.
+src/components/wiki/widgets/bp344/CorridorVisualizer.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/wiki/widgets/bp344/CorridorVisualizer.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/wiki/widgets/bp344/CorridorVisualizer.tsx" was ignored.
+src/lib/actions/wiki-actions.ts (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/lib/actions/wiki-actions.ts (1:0): Module level directives cause errors when bundled, "use server" in "src/lib/actions/wiki-actions.ts" was ignored.
+src/lib/notes/uploadImage.ts (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/lib/notes/uploadImage.ts (1:0): Module level directives cause errors when bundled, "use client" in "src/lib/notes/uploadImage.ts" was ignored.
+src/components/wiki/widgets/bp344/ComparisonTable.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/wiki/widgets/bp344/ComparisonTable.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/wiki/widgets/bp344/ComparisonTable.tsx" was ignored.
+src/components/wiki/widgets/dsgn013/ProportionComparator.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/wiki/widgets/dsgn013/ProportionComparator.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/wiki/widgets/dsgn013/ProportionComparator.tsx" was ignored.
+src/components/wiki/widgets/bp344/GrabBarExplainer.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/wiki/widgets/bp344/GrabBarExplainer.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/wiki/widgets/bp344/GrabBarExplainer.tsx" was ignored.
+src/components/wiki/widgets/bp344/CubicleChecker.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/wiki/widgets/bp344/CubicleChecker.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/wiki/widgets/bp344/CubicleChecker.tsx" was ignored.
+src/components/wiki/widgets/dsgn013/BedSizeComparator.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/wiki/widgets/dsgn013/BedSizeComparator.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/wiki/widgets/dsgn013/BedSizeComparator.tsx" was ignored.
+src/components/wiki/widgets/bp344/DoorConfigurator.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/wiki/widgets/bp344/DoorConfigurator.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/wiki/widgets/bp344/DoorConfigurator.tsx" was ignored.
+src/components/wiki/widgets/dsgn013/ReachEnvelopeDiagram.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/wiki/widgets/dsgn013/ReachEnvelopeDiagram.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/wiki/widgets/dsgn013/ReachEnvelopeDiagram.tsx" was ignored.
+src/components/wiki/widgets/dsgn013/WorkstationCalculator.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/wiki/widgets/dsgn013/WorkstationCalculator.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/wiki/widgets/dsgn013/WorkstationCalculator.tsx" was ignored.
+src/components/wiki/widgets/dsgn013/BodyDimensionExplorer.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/wiki/widgets/dsgn013/BodyDimensionExplorer.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/wiki/widgets/dsgn013/BodyDimensionExplorer.tsx" was ignored.
+src/components/wiki/widgets/dsgn013/DHRatioExplorer.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/wiki/widgets/dsgn013/DHRatioExplorer.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/wiki/widgets/dsgn013/DHRatioExplorer.tsx" was ignored.
+node_modules/@base-ui/react/esm/slider/track/SliderTrack.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/slider/track/SliderTrack.js" was ignored.
+src/features/3d-lab/components/controls/ThreeDLabControlsProvider.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/features/3d-lab/components/controls/ThreeDLabControlsProvider.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/features/3d-lab/components/controls/ThreeDLabControlsProvider.tsx" was ignored.
+src/features/3d-lab/components/rendering/SceneBase.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/features/3d-lab/components/rendering/SceneBase.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/features/3d-lab/components/rendering/SceneBase.tsx" was ignored.
+src/features/3d-lab/components/rendering/StudioLighting.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/features/3d-lab/components/rendering/StudioLighting.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/features/3d-lab/components/rendering/StudioLighting.tsx" was ignored.
+node_modules/@base-ui/react/esm/slider/root/SliderRoot.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/slider/root/SliderRoot.js" was ignored.
+src/components/interactive-illustrations/2D/SetbackIllustration.tsx (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/components/interactive-illustrations/2D/SetbackIllustration.tsx (1:0): Module level directives cause errors when bundled, "use client" in "src/components/interactive-illustrations/2D/SetbackIllustration.tsx" was ignored.
+node_modules/@base-ui/react/esm/slider/label/SliderLabel.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/slider/label/SliderLabel.js" was ignored.
+node_modules/@base-ui/react/esm/popover/root/PopoverRootContext.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/popover/root/PopoverRootContext.js" was ignored.
+node_modules/@base-ui/react/esm/slider/value/SliderValue.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/slider/value/SliderValue.js" was ignored.
+node_modules/@base-ui/react/esm/slider/indicator/SliderIndicator.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/slider/indicator/SliderIndicator.js" was ignored.
+node_modules/@base-ui/react/esm/slider/control/SliderControl.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/slider/control/SliderControl.js" was ignored.
+node_modules/@base-ui/react/esm/slider/thumb/SliderThumb.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/slider/thumb/SliderThumb.js" was ignored.
+node_modules/@base-ui/react/esm/utils/closePart.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/utils/closePart.js" was ignored.
+node_modules/@base-ui/react/esm/popover/portal/PopoverPortalContext.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/popover/portal/PopoverPortalContext.js" was ignored.
+node_modules/@base-ui/react/esm/popover/positioner/PopoverPositionerContext.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/popover/positioner/PopoverPositionerContext.js" was ignored.
+node_modules/@base-ui/react/esm/direction-provider/DirectionProvider.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/direction-provider/DirectionProvider.js" was ignored.
+node_modules/@base-ui/react/esm/internals/labelable-provider/LabelableProvider.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/internals/labelable-provider/LabelableProvider.js" was ignored.
+src/lib/actions/mastery/update-decay-rate.ts (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/lib/actions/mastery/update-decay-rate.ts (1:0): Module level directives cause errors when bundled, "use server" in "src/lib/actions/mastery/update-decay-rate.ts" was ignored.
+src/lib/actions/mastery/update-memory-strength.ts (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/lib/actions/mastery/update-memory-strength.ts (1:0): Module level directives cause errors when bundled, "use server" in "src/lib/actions/mastery/update-memory-strength.ts" was ignored.
+src/lib/actions/mastery/update-mastery-stats.ts (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/lib/actions/mastery/update-mastery-stats.ts (1:0): Module level directives cause errors when bundled, "use server" in "src/lib/actions/mastery/update-mastery-stats.ts" was ignored.
+src/lib/actions/calibration-score-update.ts (1:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+src/lib/actions/calibration-score-update.ts (1:0): Module level directives cause errors when bundled, "use server" in "src/lib/actions/calibration-score-update.ts" was ignored.
+node_modules/@base-ui/react/esm/slider/root/SliderRootContext.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@base-ui/react/esm/slider/root/SliderRootContext.js" was ignored.
+✓ 11208 modules transformed.
+
+<--- Last few GCs --->
+
+[28688:0x7e880c000]    39601 ms: Mark-Compact 2027.7 (2051.5) -> 2021.6 (2051.4) MB, pooled: 0.0 MB, 1044.08 / 0.00 ms (average mu = 0.142, current mu = 0.004) allocation failure; scavenge might not succeed
+
+FATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed - JavaScript heap out of memory
+----- Native stack trace -----
+
+ 1: 0x1098c2b14 node::OOMErrorHandler(char const*, v8::OOMDetails const&) [/opt/homebrew/Cellar/node/25.9.0_2/lib/libnode.141.dylib]
+ 2: 0x108c4dcc8 v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, v8::OOMDetails const&) [/opt/homebrew/Cellar/node/25.9.0_2/lib/libnode.141.dylib]
+ 3: 0x108c4dc80 v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, v8::OOMDetails const&) [/opt/homebrew/Cellar/node/25.9.0_2/lib/libnode.141.dylib]
+ 4: 0x108df8c7c v8::internal::Heap::ShouldOptimizeForLoadTime() const [/opt/homebrew/Cellar/node/25.9.0_2/lib/libnode.141.dylib]
+ 5: 0x108dfb21c v8::internal::Heap::OldGenerationConsumedBytes() const [/opt/homebrew/Cellar/node/25.9.0_2/lib/libnode.141.dylib]
+ 6: 0x108dfb0c4 v8::internal::Heap::RecomputeLimits(v8::internal::GarbageCollector, v8::base::TimeTicks) [/opt/homebrew/Cellar/node/25.9.0_2/lib/libnode.141.dylib]
+ 7: 0x108e084f4 v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags, v8::internal::PerformHeapLimitCheck)::$_1::operator()() const [/opt/homebrew/Cellar/node/25.9.0_2/lib/libnode.141.dylib]
+ 8: 0x108e08198 void heap::base::Stack::SetMarkerAndCallbackImpl<v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags, v8::internal::PerformHeapLimitCheck)::$_1>(heap::base::Stack*, void*, void const*) [/opt/homebrew/Cellar/node/25.9.0_2/lib/libnode.141.dylib]
+ 9: 0x10941bb54 PushAllRegistersAndIterateStack [/opt/homebrew/Cellar/node/25.9.0_2/lib/libnode.141.dylib]
+10: 0x108df7304 v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags, v8::internal::PerformHeapLimitCheck) [/opt/homebrew/Cellar/node/25.9.0_2/lib/libnode.141.dylib]
+11: 0x108def834 std::__1::__invoke_result_impl<void, v8::internal::HeapAllocator::AllocateRawWithRetryOrFailSlowPath(int, v8::internal::AllocationType, v8::internal::AllocationOrigin, v8::internal::AllocationAlignment, v8::internal::AllocationHint)::$_0&>::type v8::internal::HeapAllocator::CollectGarbageAndRetryAllocation<v8::internal::HeapAllocator::AllocateRawWithRetryOrFailSlowPath(int, v8::internal::AllocationType, v8::internal::AllocationOrigin, v8::internal::AllocationAlignment, v8::internal::AllocationHint)::$_0&>(v8::internal::HeapAllocator::AllocateRawWithRetryOrFailSlowPath(int, v8::internal::AllocationType, v8::internal::AllocationOrigin, v8::internal::AllocationAlignment, v8::internal::AllocationHint)::$_0&, v8::internal::AllocationType) [/opt/homebrew/Cellar/node/25.9.0_2/lib/libnode.141.dylib]
+12: 0x108dee6a0 v8::internal::HeapAllocator::AllocateRawWithRetryOrFailSlowPath(int, v8::internal::AllocationType, v8::internal::AllocationOrigin, v8::internal::AllocationAlignment, v8::internal::AllocationHint) [/opt/homebrew/Cellar/node/25.9.0_2/lib/libnode.141.dylib]
+13: 0x108dd6de0 v8::internal::Factory::NewFillerObject(int, v8::internal::AllocationAlignment, v8::internal::AllocationType, v8::internal::AllocationOrigin) [/opt/homebrew/Cellar/node/25.9.0_2/lib/libnode.141.dylib]
+14: 0x1090e272c v8::internal::Runtime_AllocateInYoungGeneration(int, unsigned long*, v8::internal::Isolate*) [/opt/homebrew/Cellar/node/25.9.0_2/lib/libnode.141.dylib]
+15: 0x108755734 Builtins_CEntry_Return1_ArgvOnStack_NoBuiltinExit [/opt/homebrew/Cellar/node/25.9.0_2/lib/libnode.141.dylib]
+16: 0x1087a2098 Builtins_CreateRegExpLiteral [/opt/homebrew/Cellar/node/25.9.0_2/lib/libnode.141.dylib]
+17: 0x12b716ad8 
+18: 0x108766d68 Builtins_ArrayFilter [/opt/homebrew/Cellar/node/25.9.0_2/lib/libnode.141.dylib]
+19: 0x12b1d68ec 
+20: 0x12b1d5380 
+21: 0x12b1d12d4 
+22: 0x12b18f094 
+23: 0x12b1d942c 
+24: 0x108784204 Builtins_ArrayMap [/opt/homebrew/Cellar/node/25.9.0_2/lib/libnode.141.dylib]
+25: 0x1086b55ec Builtins_InterpreterEntryTrampoline [/opt/homebrew/Cellar/node/25.9.0_2/lib/libnode.141.dylib]
+26: 0x12b729b90 
+27: 0x1086f3644 Builtins_AsyncFunctionAwaitResolveClosure [/opt/homebrew/Cellar/node/25.9.0_2/lib/libnode.141.dylib]
+28: 0x1087cabd8 Builtins_PromiseFulfillReactionJob [/opt/homebrew/Cellar/node/25.9.0_2/lib/libnode.141.dylib]
+29: 0x1086e2a80 Builtins_RunMicrotasks [/opt/homebrew/Cellar/node/25.9.0_2/lib/libnode.141.dylib]
+30: 0x1086b2850 Builtins_JSRunMicrotasksEntry [/opt/homebrew/Cellar/node/25.9.0_2/lib/libnode.141.dylib]
+31: 0x108d63e00 v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) [/opt/homebrew/Cellar/node/25.9.0_2/lib/libnode.141.dylib]
+32: 0x108d644ac v8::internal::(anonymous namespace)::InvokeWithTryCatch(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) [/opt/homebrew/Cellar/node/25.9.0_2/lib/libnode.141.dylib]
+33: 0x108d6459c v8::internal::Execution::TryRunMicrotasks(v8::internal::Isolate*, v8::internal::MicrotaskQueue*) [/opt/homebrew/Cellar/node/25.9.0_2/lib/libnode.141.dylib]
+34: 0x108d85918 v8::internal::MicrotaskQueue::RunMicrotasks(v8::internal::Isolate*) [/opt/homebrew/Cellar/node/25.9.0_2/lib/libnode.141.dylib]
+35: 0x108d85734 v8::internal::MicrotaskQueue::PerformCheckpointInternal(v8::Isolate*) [/opt/homebrew/Cellar/node/25.9.0_2/lib/libnode.141.dylib]
+36: 0x108893e20 node::InternalCallbackScope::Close() [/opt/homebrew/Cellar/node/25.9.0_2/lib/libnode.141.dylib]
+37: 0x108893ca8 node::InternalCallbackScope::~InternalCallbackScope() [/opt/homebrew/Cellar/node/25.9.0_2/lib/libnode.141.dylib]
+38: 0x1088937cc node::CallbackScope::~CallbackScope() [/opt/homebrew/Cellar/node/25.9.0_2/lib/libnode.141.dylib]
+39: 0x10890dd14 (anonymous namespace)::uvimpl::Work::AfterThreadPoolWork(int) [/opt/homebrew/Cellar/node/25.9.0_2/lib/libnode.141.dylib]
+40: 0x10890e0e8 node::ThreadPoolWork::ScheduleWork()::'lambda'(uv_work_s*, int)::operator()(uv_work_s*, int) const [/opt/homebrew/Cellar/node/25.9.0_2/lib/libnode.141.dylib]
+41: 0x10890dfc4 node::ThreadPoolWork::ScheduleWork()::'lambda'(uv_work_s*, int)::__invoke(uv_work_s*, int) [/opt/homebrew/Cellar/node/25.9.0_2/lib/libnode.141.dylib]
+42: 0x1045bee64 uv__work_done [/opt/homebrew/Cellar/libuv/1.52.1/lib/libuv.1.0.0.dylib]
+43: 0x1045c23cc uv__async_io [/opt/homebrew/Cellar/libuv/1.52.1/lib/libuv.1.0.0.dylib]
+44: 0x1045d11b0 uv__io_poll [/opt/homebrew/Cellar/libuv/1.52.1/lib/libuv.1.0.0.dylib]
+45: 0x1045c2b64 uv_run [/opt/homebrew/Cellar/libuv/1.52.1/lib/libuv.1.0.0.dylib]
+46: 0x108894ed0 node::SpinEventLoopInternal(node::Environment*) [/opt/homebrew/Cellar/node/25.9.0_2/lib/libnode.141.dylib]
+47: 0x10896637c node::NodeMainInstance::Run(node::ExitCode*, node::Environment*) [/opt/homebrew/Cellar/node/25.9.0_2/lib/libnode.141.dylib]
+48: 0x1089660b0 node::NodeMainInstance::Run() [/opt/homebrew/Cellar/node/25.9.0_2/lib/libnode.141.dylib]
+49: 0x108909b98 node::Start(int, char**) [/opt/homebrew/Cellar/node/25.9.0_2/lib/libnode.141.dylib]
+50: 0x19efa9d54 start [/usr/lib/dyld]
+/bin/bash: line 1: 28688 Abort trap: 6           storybook build
+error: script "build-storybook" exited with code 134
+EXIT_CODE=134
+START= END=
