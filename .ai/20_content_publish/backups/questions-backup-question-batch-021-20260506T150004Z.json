@@ -1,0 +1,2553 @@
+{
+  "created_at": "2026-05-06T15:00:14.225Z",
+  "batch": "question-batch-021",
+  "table": "questions",
+  "rows": [
+    {
+      "question_id": "a75ebdc0-42f3-466e-a584-ce2977ada43e",
+      "article_id": "b5c8b7bb-b62a-4e2c-a9c8-7c7b29388ea8",
+      "topic_id": "3096aa3a-e787-4e82-b65a-89e238c5b568",
+      "text": "Biophilia is best defined as:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Preference for green-colored design elements and decorative plants"
+        },
+        {
+          "id": "b",
+          "text": "The innate human affinity for connection with nature and natural systems"
+        },
+        {
+          "id": "c",
+          "text": "The practice of growing plants in interior environments for air quality"
+        },
+        {
+          "id": "d",
+          "text": "The scientific study of biological organisms in buildings"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Green color or decoration alone does not constitute biophilic design",
+        "c": "While biophilic design may include living plants, the concept extends beyond horticultural practice",
+        "d": "This describes biology or ecology, not the design concept of biophilia",
+        "correct": "Biophilia is the inherent human attraction to nature rooted in evolutionary biology and supported by psychological research",
+        "takeaway": "Biophilia is the inherent human attraction to nature rooted in evolutionary biology and supported by psychological research."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-04-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.884733+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "7e196bd7-fbb4-4ea7-82c4-6fd38baaadb3",
+      "article_id": "b5c8b7bb-b62a-4e2c-a9c8-7c7b29388ea8",
+      "topic_id": "3096aa3a-e787-4e82-b65a-89e238c5b568",
+      "text": "In designing a corporate office, biophilic design would most directly support occupant well-being by:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Incorporating views to vegetation, living plants, natural light variation, and restorative break spaces supporting attention recovery"
+        },
+        {
+          "id": "b",
+          "text": "Reducing building size to minimize operational costs, which indirectly benefits occupant well-being by lowering stress related to financial constraints"
+        },
+        {
+          "id": "c",
+          "text": "Maximizing desk area to increase productivity through work capacity, although this may not directly enhance well-being"
+        },
+        {
+          "id": "d",
+          "text": "Increasing building glazing to maximize open floor plans, which can create a sense of openness but may not directly support well-being"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Cost reduction is unrelated to biophilic design benefits",
+        "c": "Desk area increases productivity but doesn't address biophilic well-being",
+        "d": "Glazing alone without biophilic elements doesn't provide restoration",
+        "correct": "Biophilic design directly addresses well-being through nature connection, soft fascinations, and attention restoration",
+        "takeaway": "Biophilic design directly addresses well-being through nature connection, soft fascinations, and attention restoration."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-04-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.884733+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "e810bd78-8112-4c57-aa59-050ab61505b3",
+      "article_id": "b5c8b7bb-b62a-4e2c-a9c8-7c7b29388ea8",
+      "topic_id": "3096aa3a-e787-4e82-b65a-89e238c5b568",
+      "text": "Why is the distinction between 'natural materials' and 'biophilic design' important for architects?",
+      "options": [
+        {
+          "id": "a",
+          "text": "There is no meaningful distinction; both terms describe the same design approach, which focuses on integrating nature into built environments"
+        },
+        {
+          "id": "b",
+          "text": "Natural materials (wood, stone) are always biophilic; synthetic materials are never biophilic, as they do not evoke the same connection to nature"
+        },
+        {
+          "id": "c",
+          "text": "Biophilic design refers only to potted plants; natural materials are unrelated, as they do not contribute to the psychological benefits of nature"
+        },
+        {
+          "id": "d",
+          "text": "Natural materials provide environmental credentials while biophilic design includes living systems, views to nature, and dynamic elements"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The distinction is critical; natural materials without living systems or nature connection lack biophilic effect",
+        "b": "Material authenticity alone doesn't constitute biophilic design; plastic plants and dead wood are not biophilic",
+        "c": "Biophilic design encompasses living systems, views, light variation, and complexity—not just plants",
+        "correct": "Biophilic design requires living systems, views to nature, dynamic light patterns, or complexity mimicking nature—not merely material authenticity",
+        "takeaway": "Biophilic design requires living systems, views to nature, dynamic light patterns, or complexity mimicking nature—not merely material authenticity."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-04-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "4125c599-dfd2-46b7-b279-c371c277df8f",
+      "article_id": "b5c8b7bb-b62a-4e2c-a9c8-7c7b29388ea8",
+      "topic_id": "3096aa3a-e787-4e82-b65a-89e238c5b568",
+      "text": "How does spatial coherence and environmental legibility (separate concepts from biophilia) support psychological well-being in healthcare facilities?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Spatial coherence reduces cognitive load and disorientation, directly reducing patient anxiety; integrated with biophilia, it creates comprehensive psychological support"
+        },
+        {
+          "id": "b",
+          "text": "Spatial clarity and legibility are unrelated to psychological well-being; only biophilic design reduces patient stress, which is the primary concern in healthcare environments"
+        },
+        {
+          "id": "c",
+          "text": "Spatial clarity is relevant only for staff efficiency, not patient psychology, as patients are more affected by direct care and medical treatment"
+        },
+        {
+          "id": "d",
+          "text": "Biophilia and legibility contradict each other; architects must choose one or the other, as combining them could lead to design conflicts"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Both legibility and biophilia contribute independently and synergistically to psychological well-being",
+        "c": "Patient experience depends fundamentally on spatial clarity and orientation support",
+        "d": "Clear organization that integrates biophilic elements creates optimal well-being support",
+        "correct": "Spatial clarity (legibility) reduces anxiety through reduced cognitive effort; combined with biophilic elements, it creates comprehensive well-being support",
+        "takeaway": "Spatial clarity (legibility) reduces anxiety through reduced cognitive effort; combined with biophilic elements, it creates comprehensive well-being support."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-04-012",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "f57580d1-6bc9-43bd-a32f-2d9f0ba0de89",
+      "article_id": "b5c8b7bb-b62a-4e2c-a9c8-7c7b29388ea8",
+      "topic_id": "3096aa3a-e787-4e82-b65a-89e238c5b568",
+      "text": "In designing a hospital patient room, biophilic principles would most directly reduce patient stress through:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Using exclusively artificial lighting to control illumination precisely, ensuring consistent light levels"
+        },
+        {
+          "id": "b",
+          "text": "Eliminating all decorative elements to maintain sterile conditions, focusing solely on functionality"
+        },
+        {
+          "id": "c",
+          "text": "Minimizing room size to reduce cleaning requirements, thereby optimizing maintenance efficiency"
+        },
+        {
+          "id": "d",
+          "text": "Incorporating window views to vegetation, natural materials, variable daylighting, and color schemes supporting calm"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Static artificial lighting disrupts circadian rhythm and lacks biophilic benefit",
+        "b": "Sterility is hygienic requirement; biophilic elements support stress reduction without compromising cleanliness",
+        "c": "Room size doesn't address biophilic stress reduction",
+        "correct": "Biophilic design measurably reduces patient stress through nature connection, natural light, materials, and soft fascinations",
+        "takeaway": "Biophilic design measurably reduces patient stress through nature connection, natural light, materials, and soft fascinations."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-04-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "41f6f40b-0f19-4a23-910b-e8f9b0bdaeaf",
+      "article_id": "b5c8b7bb-b62a-4e2c-a9c8-7c7b29388ea8",
+      "topic_id": "3096aa3a-e787-4e82-b65a-89e238c5b568",
+      "text": "The concept of 'prospect and refuge' in spatial psychology suggests humans prefer spaces where they can:",
+      "options": [
+        {
+          "id": "a",
+          "text": "See out to surroundings (prospect) while maintaining protection and security (refuge)"
+        },
+        {
+          "id": "b",
+          "text": "Maximize enclosed private space without external visual connection, prioritizing privacy over openness"
+        },
+        {
+          "id": "c",
+          "text": "Eliminate all barriers and create completely open environments, which may not always be practical"
+        },
+        {
+          "id": "d",
+          "text": "Only view internal spaces, avoiding external distractions, which can enhance focus"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Refuge alone without prospect creates isolation and anxiety",
+        "c": "Open environments without refuge create exposure anxiety",
+        "d": "External views provide engagement and well-being, not distraction",
+        "correct": "Prospect-refuge principle reflects evolutionary preferences: surveillance capability (prospect) combined with protective enclosure (refuge)",
+        "takeaway": "Prospect-refuge principle reflects evolutionary preferences: surveillance capability (prospect) combined with protective enclosure (refuge)."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-04-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "a885c1e1-14f1-453b-aaf0-7a467a63fd24",
+      "article_id": "b5c8b7bb-b62a-4e2c-a9c8-7c7b29388ea8",
+      "topic_id": "3096aa3a-e787-4e82-b65a-89e238c5b568",
+      "text": "In a tropical climate like the Philippines, how would biophilic design integrate with climate responsiveness?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Maximize air conditioning while adding decorative plants for biophilic effect, which may not be energy efficient"
+        },
+        {
+          "id": "b",
+          "text": "Integrate cross-ventilation through vegetation, strategic fenestration creating dappled light mimicking tree canopies, water features providing cooling and soft fascinations"
+        },
+        {
+          "id": "c",
+          "text": "Biophilic and climate responsive design are separate concerns requiring separate solutions, potentially leading to conflicting design strategies"
+        },
+        {
+          "id": "d",
+          "text": "Eliminate windows to prevent heat gain, reducing opportunities for nature connection, which may not align with biophilic principles"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Mechanical cooling doesn't address biophilic benefits; living systems provide both thermal and psychological benefit",
+        "c": "Excellent design integrates both concerns; they reinforce each other",
+        "d": "Strategic fenestration with shading provides views, daylighting, and thermal benefit simultaneously",
+        "correct": "In tropical contexts, biophilic elements (vegetation, water features, dappled light) simultaneously provide climate benefit and psychological restoration",
+        "takeaway": "In tropical contexts, biophilic elements (vegetation, water features, dappled light) simultaneously provide climate benefit and psychological restoration."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "PH"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-04-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "ae5ff407-f5d8-4c94-a759-e26b7027240d",
+      "article_id": "b5c8b7bb-b62a-4e2c-a9c8-7c7b29388ea8",
+      "topic_id": "3096aa3a-e787-4e82-b65a-89e238c5b568",
+      "text": "The four characteristics of restorative environments are fascination, being away, extent, and compatibility. Which element is most directly related to biophilic design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Compatibility—agreement between building use and occupant expectations, which enhances user satisfaction"
+        },
+        {
+          "id": "b",
+          "text": "Being away—psychological distance from work demands through spatial separation, fostering mental recovery"
+        },
+        {
+          "id": "c",
+          "text": "Fascination—provided through soft fascinations of moving water, rustling leaves, and light variation in natural or nature-inspired spaces"
+        },
+        {
+          "id": "d",
+          "text": "Extent—the overall size of the restorative space, which contributes to a sense of immersion"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Compatibility relates to program-user fit, not biophilic effect",
+        "b": "Being away relates to spatial separation and access to nature, connected to but distinct from biophilia",
+        "d": "Extent relates to environmental scale, not specifically biophilic mechanisms",
+        "correct": "Fascination through soft fascinations (engaging but non-demanding natural stimuli) is the primary biophilic mechanism in restorative environments",
+        "takeaway": "Fascination through soft fascinations (engaging but non-demanding natural stimuli) is the primary biophilic mechanism in restorative environments."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "SYS"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-04-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "d2553add-12b8-4ad6-be32-a5db85852632",
+      "article_id": "b5c8b7bb-b62a-4e2c-a9c8-7c7b29388ea8",
+      "topic_id": "3096aa3a-e787-4e82-b65a-89e238c5b568",
+      "text": "A design brief requires a commercial office in dense Manila with high occupant well-being and low operational costs. Which biophilic strategy directly addresses both requirements?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Installing expensive hydroponic green walls throughout the building, which may not be cost-effective"
+        },
+        {
+          "id": "b",
+          "text": "Eliminating windows entirely to reduce HVAC load, which negatively impacts occupant well-being"
+        },
+        {
+          "id": "c",
+          "text": "Decorating offices with high-quality artificial plants, which do not provide the same benefits as real plants"
+        },
+        {
+          "id": "d",
+          "text": "Strategic fenestration maximizing views to existing vegetation, external water features, or sky with appropriate shading"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Green walls require complex maintenance and irrigation",
+        "b": "Windowless design eliminates biophilic benefit and requires artificial lighting",
+        "c": "Artificial plants lack biophilic effect; living systems are required",
+        "correct": "Strategic fenestration is cost-effective, requires no maintenance, and provides views delivering biophilic benefit and daylighting reducing operational cost",
+        "takeaway": "Strategic fenestration is cost-effective, requires no maintenance, and provides views delivering biophilic benefit and daylighting reducing operational cost."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-04-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "57e80712-067a-4de0-b3eb-f718ca151d11",
+      "article_id": "b5c8b7bb-b62a-4e2c-a9c8-7c7b29388ea8",
+      "topic_id": "3096aa3a-e787-4e82-b65a-89e238c5b568",
+      "text": "Attention Restoration Theory was developed by:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Stephen and Rachel Kaplan"
+        },
+        {
+          "id": "b",
+          "text": "Le Corbusier and Edward T. Hall"
+        },
+        {
+          "id": "c",
+          "text": "Ernst Neufert and Henry Dreyfuss"
+        },
+        {
+          "id": "d",
+          "text": "Kevin Lynch and Ron Mace"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Le Corbusier and Hall developed different theories (Modulor, proxemics)",
+        "c": "Neufert and Dreyfuss developed anthropometric systems, not psychological restoration theory",
+        "d": "Lynch and Mace developed urban legibility and universal design, not ART",
+        "correct": "Stephen and Rachel Kaplan developed Attention Restoration Theory explaining psychological mechanisms of nature restoration",
+        "takeaway": "Stephen and Rachel Kaplan developed Attention Restoration Theory explaining psychological mechanisms of nature restoration."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "ATT"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-04-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "c473d66d-10bf-4ec4-a560-dae936025ea5",
+      "article_id": "b68471a2-34f6-46e3-8f79-7a14ed16eebb",
+      "topic_id": "ac04adbc-951d-4eab-8245-d2f22c19c831",
+      "text": "The unit weight of rebar steel is ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "7,200 kg/m³"
+        },
+        {
+          "id": "b",
+          "text": "7,500 kg/m³"
+        },
+        {
+          "id": "c",
+          "text": "7,850 kg/m³"
+        },
+        {
+          "id": "d",
+          "text": "8,000 kg/m³"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "7,200 kg/m³ is too low; would under‑estimate weight.",
+        "b": "7,500 kg/m³ is close but is not the standard value.",
+        "d": "8,000 kg/m³ is slightly high; may be used for heavier alloys.",
+        "correct": "Steel density is 7,850 kg/m³, which is encoded in the formula denominator (162.5).",
+        "takeaway": "Standard structural steel density = 7,850 kg/m³. This is fundamental to rebar weight calculations."
+      },
+      "explanation": null,
+      "code_citation": "ASTM A615-21, NSCP 2015",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-010-03-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "9d97479e-548c-42c8-bbe4-db841a0053ad",
+      "article_id": "b68471a2-34f6-46e3-8f79-7a14ed16eebb",
+      "topic_id": "ac04adbc-951d-4eab-8245-d2f22c19c831",
+      "text": "Standard rebar supplied in the Philippines comes in lengths of ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "6 meters"
+        },
+        {
+          "id": "b",
+          "text": "9 meters"
+        },
+        {
+          "id": "c",
+          "text": "12 meters"
+        },
+        {
+          "id": "d",
+          "text": "15 meters"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "6 meters is half the standard; not a typical supply length.",
+        "b": "9 meters is not standard in Philippine practice.",
+        "d": "15 meters is longer than standard and less common.",
+        "correct": "Standard bar length in Philippine practice is 12 meters, supplied by all major manufacturers (Pag‑asa, Capitol Steel, Vulcan).",
+        "takeaway": "Always assume 12‑meter bars when calculating quantities. This is the market standard in the Philippines."
+      },
+      "explanation": null,
+      "code_citation": "Philippine construction practice, Pag‑asa Steel, Capitol Steel",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-010-03-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "17267717-a429-464b-a0c7-7a91bf8159db",
+      "article_id": "d74be6f2-436b-46ca-8755-1060ecb7c5c1",
+      "topic_id": "80b0aa07-e559-4087-892c-14cb4decb477",
+      "text": "The Great Bath at Mohenjo-daro features which waterproofing material?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lime mortar"
+        },
+        {
+          "id": "b",
+          "text": "Lead sealant"
+        },
+        {
+          "id": "c",
+          "text": "Bitumen"
+        },
+        {
+          "id": "d",
+          "text": "Wax coating"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Lime mortar was used for construction but not for waterproofing the bath.",
+        "b": "Lead sealant is not mentioned in the article.",
+        "d": "Wax coating is not mentioned as a waterproofing method used by Indus builders.",
+        "correct": "Cannot verify from provided search results. The search results describe the Great Bath's physical features but do not specify the waterproofing material.",
+        "takeaway": "The search results describe the Great Bath's physical features but do not specify the waterproofing material."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "ID"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-001-08-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.126756+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "180625ab-7047-4252-bb24-1f81f60e0606",
+      "article_id": "d74be6f2-436b-46ca-8755-1060ecb7c5c1",
+      "topic_id": "80b0aa07-e559-4087-892c-14cb4decb477",
+      "text": "Which major Indus city was located in Punjab and served as the northern center of the civilization?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mohenjo-daro"
+        },
+        {
+          "id": "b",
+          "text": "Kalibangan"
+        },
+        {
+          "id": "c",
+          "text": "Harappa"
+        },
+        {
+          "id": "d",
+          "text": "Lothal"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Mohenjo-daro was located in Sindh, Pakistan, not Punjab.",
+        "b": "Kalibangan is not mentioned in the article.",
+        "d": "Lothal is not discussed in this article.",
+        "correct": "The search results confirm Harappa was located in Punjab (now Pakistan) and was discovered as an ancient Indus site, but do not provide population estimates or detailed descriptions of its structures.",
+        "takeaway": "The search results confirm Harappa was located in Punjab (now Pakistan) and was discovered as an ancient Indus site, but do not provide population estimates or detailed descriptions of its structures."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "ID"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-001-08-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.126756+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "d24d902d-73e8-4227-aea9-7ea6735873dd",
+      "article_id": "d74be6f2-436b-46ca-8755-1060ecb7c5c1",
+      "topic_id": "80b0aa07-e559-4087-892c-14cb4decb477",
+      "text": "The peaceful decline of Indus civilization around 1900 BCE without evidence of warfare or weaponry is significant because it suggests which conclusion?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The civilization was conquered by external military forces, which is contradicted by the lack of warfare evidence"
+        },
+        {
+          "id": "b",
+          "text": "The civilization abandoned gradually due to environmental, climatic, or economic factors rather than violent collapse"
+        },
+        {
+          "id": "c",
+          "text": "The civilization was deliberately depopulated by its own rulers, which is a speculative theory"
+        },
+        {
+          "id": "d",
+          "text": "Indus cities were not actually abandoned and continued uninterrupted into later periods, which lacks archaeological support"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The absence of warfare evidence contradicts the conquest theory; the article explicitly notes 'no evidence of warfare, weaponry, or conquered cities.'",
+        "c": "The article proposes environmental and economic causes, not deliberate depopulation.",
+        "d": "The article clearly indicates the civilization declined and was abandoned around 1900 BCE, with population migration.",
+        "correct": "Search result [2] discusses the refutation of the massacre theory by Dr. George Dales, who questioned where the evidence of warfare would be ('Where are the burned fortresses, the arrowheads, weapons, pieces of armor, the smashed chariots and bodies of the invaders and defenders?'). However, the specific claims about population migration to the Ganges valley and environmental factors are not in the provided search results.",
+        "takeaway": "However, the specific claims about population migration to the Ganges valley and environmental factors are not in the provided search results."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-001-08-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.126756+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "5d295451-245a-4e30-a0b7-ae8d364501d0",
+      "article_id": "d74be6f2-436b-46ca-8755-1060ecb7c5c1",
+      "topic_id": "80b0aa07-e559-4087-892c-14cb4decb477",
+      "text": "The Indus Valley Civilization flourished during which approximate time period?",
+      "options": [
+        {
+          "id": "a",
+          "text": "c. 3500–2500 BCE"
+        },
+        {
+          "id": "b",
+          "text": "c. 2600–1900 BCE"
+        },
+        {
+          "id": "c",
+          "text": "c. 1900–1000 BCE"
+        },
+        {
+          "id": "d",
+          "text": "c. 1000–500 BCE"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "c. 3500–2500 BCE predates the flourishing of the civilization.",
+        "c": "c. 1900–1000 BCE begins after the civilization's decline around 1900 BCE.",
+        "d": "c. 1000–500 BCE is well after the civilization's recognized period.",
+        "correct": "The Indus Valley Civilization's chronology includes the Intermediate Period (c. 2600–1700 BCE) and Late Period (c. 1700–1300 BCE), with the civilization declining around 1900 BCE according to some sources, but continuing into the Late Period according to others.",
+        "takeaway": "1700–1300 BCE), with the civilization declining around 1900 BCE according to some sources, but continuing into the Late Period according to others."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "CH"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-001-08-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.126756+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "57dfe7bd-69cf-40c7-9b6e-9f89936dc26f",
+      "article_id": "d74be6f2-436b-46ca-8755-1060ecb7c5c1",
+      "topic_id": "80b0aa07-e559-4087-892c-14cb4decb477",
+      "text": "Indus standardized mud brick followed a ratio of which proportions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1:2:3"
+        },
+        {
+          "id": "b",
+          "text": "1:2:4"
+        },
+        {
+          "id": "c",
+          "text": "1:3:6"
+        },
+        {
+          "id": "d",
+          "text": "2:3:4"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "1:2:3 is not the correct proportion used by Indus builders.",
+        "c": "1:3:6 is not the documented Indus brick ratio.",
+        "d": "2:3:4 does not match the 1:2:4 standardization.",
+        "correct": "Cannot verify from provided search results. The search results do not contain information about brick proportions or specific brick dimensions.",
+        "takeaway": "The search results do not contain information about brick proportions or specific brick dimensions."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "ST"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-001-08-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.126756+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "c067b4e2-3102-412d-9eed-2cd41dc921da",
+      "article_id": "d74be6f2-436b-46ca-8755-1060ecb7c5c1",
+      "topic_id": "80b0aa07-e559-4087-892c-14cb4decb477",
+      "text": "How did the standardization of Indus brick facilitate urban construction?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It reduced the need for skilled labor on construction sites, allowing for faster project completion"
+        },
+        {
+          "id": "b",
+          "text": "It enabled rapid construction, easy replacement of damaged units, and visual consistency"
+        },
+        {
+          "id": "c",
+          "text": "It eliminated the need for mortar between bricks, simplifying the construction process"
+        },
+        {
+          "id": "d",
+          "text": "It allowed buildings to be relocated to new sites, providing flexibility in urban planning"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While standardization may have simplified some labor aspects, the article emphasizes rapid construction, replaceability, and consistency rather than reduced labor needs.",
+        "c": "The article does not indicate that standardization eliminated the need for mortar.",
+        "d": "The relocation of buildings is not discussed as a benefit of standardization.",
+        "correct": "Cannot verify from provided search results. The search results do not discuss the benefits of brick standardization or brick-laying patterns.",
+        "takeaway": "The search results do not discuss the benefits of brick standardization or brick-laying patterns."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "ST"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-001-08-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.126756+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "188c051c-c50d-4244-a498-58551c2a4b8d",
+      "article_id": "bcb4ca34-92b0-4fd6-8b0d-b8f45c44bb5f",
+      "topic_id": "76982178-d513-42b8-97b7-187f819a8b3d",
+      "text": "A hospital program organizes zones vertically: ambulatory care (ground floor), inpatient units (floors 2–5), intensive care and surgery (floors 6–8), and administrative offices (floors 9–10). Does this vertical stacking effectively apply zoning logic, or are there problems with this organization?",
+      "options": [
+        {
+          "id": "a",
+          "text": "This is effective; vertical stacking minimizes horizontal circulation and maintains clear zone separation throughout the building, optimizing operational efficiency"
+        },
+        {
+          "id": "b",
+          "text": "This creates problems; intensive care and surgery (service-intensive, restricted access) should be mid-building to serve multiple patient floors efficiently, not isolated at the top"
+        },
+        {
+          "id": "c",
+          "text": "This is ideal; administrative offices above clinical areas maintain oversight and management control, ensuring streamlined operations"
+        },
+        {
+          "id": "d",
+          "text": "This is inefficient; all medical functions should be on one floor to minimize vertical circulation and equipment movement, reducing logistical complexity"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While separation is good, the specific arrangement isn't optimal.",
+        "c": "Administrative oversight doesn't require vertical positioning above clinical areas.",
+        "d": "Single-floor concentration eliminates the benefits of vertical separation.",
+        "correct": "Vertical stacking can work, but ICU and surgery (specialized, equipment-intensive, restricted access) should serve multiple inpatient floors efficiently. Placing them at the top isolates them from patients they serve. Better organization: ambulatory at ground (public), inpatient units middle (semi-public), specialized services (ICU, OR) mid-level serving inpatient floors, administrative top or separate location.",
+        "takeaway": "Better organization: ambulatory at ground (public), inpatient units middle (semi-public), specialized services (ICU, OR) mid-level serving inpatient floors, administrative top or separate location."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "ATT"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-009-04-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "dd37f9ef-1b66-481d-8b06-52b2abfa191c",
+      "article_id": "bcb4ca34-92b0-4fd6-8b0d-b8f45c44bb5f",
+      "topic_id": "76982178-d513-42b8-97b7-187f819a8b3d",
+      "text": "In a mixed-use building with ground-floor retail and residential units above, the program states that mechanical equipment rooms must be separated from residential units to minimize noise transmission. Which zoning strategy and buffer approach best addresses this adjacency problem?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Distribute mechanical rooms throughout the building adjacent to each use they serve, accepting minor noise impacts as a trade-off for convenience"
+        },
+        {
+          "id": "b",
+          "text": "Locate mechanical rooms in the basement or rooftop; ensure residential units are stacked vertically above retail without mechanical proximity"
+        },
+        {
+          "id": "c",
+          "text": "Place mechanical rooms on residential floors, separated by thick walls and acoustic treatment; locate retail separately to minimize interference"
+        },
+        {
+          "id": "d",
+          "text": "Consolidate retail and mechanical together to reduce the number of separate zones, simplifying maintenance and operational logistics"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This violates the undesirable (X) adjacency requirement between mechanical and residential.",
+        "c": "Placing mechanical on residential floors increases noise impact despite wall treatment.",
+        "d": "Consolidating retail and mechanical creates different problems; retail already conflicts with residential without adding mechanical noise.",
+        "correct": "Mechanical rooms belong in service zones (basement or rooftop). Residential units stack above, with retail at ground level. This vertical separation is the most effective strategy; mechanical equipment at building extremities minimizes transmission to occupied residential spaces.",
+        "takeaway": "This vertical separation is the most effective strategy; mechanical equipment at building extremities minimizes transmission to occupied residential spaces."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-009-04-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "dd6dde75-770d-4fca-9bde-03c298386071",
+      "article_id": "5069fdfb-e96b-435e-9e04-d6526f8b3989",
+      "topic_id": "d07a4ac2-2a6f-4fb4-85a0-18cdd4397cb8",
+      "text": "According to Department of Energy technical studies, what is the average annual solar irradiance range across major Philippine regions suitable for photovoltaic system design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2.5-3.5 kWh/sqm/day"
+        },
+        {
+          "id": "b",
+          "text": "4.5-5.5 kWh/sqm/day"
+        },
+        {
+          "id": "c",
+          "text": "6.5-7.5 kWh/sqm/day"
+        },
+        {
+          "id": "d",
+          "text": "8.5-9.5 kWh/sqm/day"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "2.5-3.5 kWh/sqm/day represents sub-tropical lower-latitude solar potential, not applicable to Philippine equatorial/tropical climate zones.",
+        "c": "6.5-7.5 kWh/sqm/day exceeds typical Philippine values and would indicate desert or high-altitude equatorial locations.",
+        "d": "8.5-9.5 kWh/sqm/day represents extreme desert/high-altitude conditions incompatible with Philippine geographic and climatic characteristics.",
+        "correct": "4.0-5.0 kWh/sqm/day as the average annual solar irradiance across major Philippine regions, directly supporting 1 kWp installations generating 4.0-4.5 kWh daily and reducing grid consumption 30-50% in net-metering applications.",
+        "takeaway": "Philippine solar design baseline is 4.5-5.5 kWh/sqm/day; system sizing multiplies this value by installation capacity to project annual generation for renewable energy integration planning."
+      },
+      "explanation": null,
+      "code_citation": "Department of Energy technical studies (LEA-UTIL-007-05 Renewable Energy Integration Systems)",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-007-05-011",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:03.161281+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "1102c25d-d45f-40e6-8fe1-11a7b4bce59c",
+      "article_id": "5069fdfb-e96b-435e-9e04-d6526f8b3989",
+      "topic_id": "d07a4ac2-2a6f-4fb4-85a0-18cdd4397cb8",
+      "text": "A large commercial facility operates a reciprocating engine cogeneration system exhausting at 480°C with 55% heat recovery effectiveness. If the facility simultaneously implements absorption cooling integration (trigeneration), what primary technical advantage enables the 70-85% overall efficiency outcome compared to conventional generation at 45-55%?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Simultaneous generation of electricity, thermal energy (water heating), and cooling from single fuel input without thermal loss"
+        },
+        {
+          "id": "b",
+          "text": "Gas turbine design inherently produces higher thermal efficiency than reciprocating engines, especially when operating under variable load conditions"
+        },
+        {
+          "id": "c",
+          "text": "Absorption chillers operate at higher coefficient of performance (COP) than mechanical refrigeration systems, particularly in climates with high ambient temperatures"
+        },
+        {
+          "id": "d",
+          "text": "Heat recovery effectiveness increases to 80-90% when integrated with mechanical cooling systems, allowing for greater energy savings"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Article specifies reciprocating engines (480°C exhaust); gas turbines (500-650°C) are alternative but not the efficiency advantage mechanism here.",
+        "c": "Absorption chillers achieve ~0.7-0.8 COP (lower than mechanical systems at 3.0-5.0 COP). Advantage is that absorption cooling uses waste heat (free thermal input) rather than electrical input, not COP superiority.",
+        "d": "Heat recovery effectiveness (40-60%) remains constant; simultaneous productive use of heat (water heating + absorption cooling) is the efficiency mechanism, not increased recovery effectiveness.",
+        "correct": "Trigeneration achieves 70-85% efficiency by simultaneously producing three energy outputs from single fuel input: (1) electricity from engine, (2) thermal energy (water heating) from 480°C exhaust, (3) cooling from absorption chiller using recovered heat. Traditional generation wastes 70% of fuel as low-grade exhaust; trigeneration captures and productively uses this waste heat. The 70-85% vs. 45-55% difference (20-35 percentage-point improvement) represents elimination of three separate energy conversion steps (electricity generation, water heater, separate chiller) into one integrated system.",
+        "takeaway": "Trigeneration efficiency (70-85%) vs. conventional (45-55%) advantage: single fuel input simultaneously produces electricity, hot water, and cooling—eliminates waste heat and avoids three separate energy conversion systems."
+      },
+      "explanation": null,
+      "code_citation": "Waste Heat Recovery section (LEA-UTIL-007-05)",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-007-05-024",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:03.161281+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "040d5780-dbb2-4567-8ebd-c637bfea068a",
+      "article_id": "faa3088f-8700-4d60-a871-1c1e97f53570",
+      "topic_id": "24f2a64b-9192-4874-9217-9fe335975c82",
+      "text": "The Bauhaus was founded in Weimar, Germany in 1919. In what year did Gropius relocate it to Dessau?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1920"
+        },
+        {
+          "id": "b",
+          "text": "1923"
+        },
+        {
+          "id": "c",
+          "text": "1925"
+        },
+        {
+          "id": "d",
+          "text": "1928"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "1920 is too early; the school operated in Weimar for several years.",
+        "b": "1923 is before the relocation.",
+        "d": "1928 is when Gropius stepped down as director; relocation occurred earlier.",
+        "correct": "The Bauhaus relocated to Dessau in 1925. The Bauhaus Building in Dessau was completed 1925–1926, marking the school's flourishing phase.",
+        "takeaway": "The Bauhaus Building in Dessau was completed 1925–1926, marking the school's flourishing phase."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "CH"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-008-03C-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.729652+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "8fa41d1f-9c7d-40e6-a756-35ca98f259ca",
+      "article_id": "faa3088f-8700-4d60-a871-1c1e97f53570",
+      "topic_id": "24f2a64b-9192-4874-9217-9fe335975c82",
+      "text": "Why is it incorrect to conflate 'Bauhaus style' with the Bauhaus institution itself?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Because the Bauhaus had no aesthetic output, focusing solely on theoretical and practical education"
+        },
+        {
+          "id": "b",
+          "text": "Because the Bauhaus was a pedagogy and philosophy teaching principles applicable across any medium or style, not a recognizable visual style"
+        },
+        {
+          "id": "c",
+          "text": "Because the Bauhaus only taught furniture design, neglecting other forms of artistic and architectural expression"
+        },
+        {
+          "id": "d",
+          "text": "Because the Bauhaus rejected all modernist forms, advocating for a return to traditional craftsmanship and techniques"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The Bauhaus produced significant visual work; the point is that it wasn't a style.",
+        "c": "The Bauhaus taught across all disciplines: furniture, typography, textiles, architecture, theater, etc.",
+        "d": "The Bauhaus was modern, not anti-modern.",
+        "correct": "The Bauhaus was fundamentally about teaching thinking and principles, not replicating a style. Students applied these principles to diverse work—there is no single 'Bauhaus style' to identify.",
+        "takeaway": "Students applied these principles to diverse work—there is no single 'Bauhaus style' to identify."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-008-03C-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.729652+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "bd92bd05-8552-4549-b61b-02be80e33d22",
+      "article_id": "faa3088f-8700-4d60-a871-1c1e97f53570",
+      "topic_id": "24f2a64b-9192-4874-9217-9fe335975c82",
+      "text": "The Bauhaus approach to design integrated craft mastery with industrial production by [blank].",
+      "options": [
+        {
+          "id": "a",
+          "text": "abandoning handcraft entirely in favor of purely industrial methods, which was a radical departure from traditional practices"
+        },
+        {
+          "id": "b",
+          "text": "proving that artistic principles could improve mass-produced objects, creating beautiful products accessible to everyone"
+        },
+        {
+          "id": "c",
+          "text": "rejecting industrial production as soulless and returning exclusively to traditional craft, emphasizing the value of handmade quality"
+        },
+        {
+          "id": "d",
+          "text": "separating craft and industry into specialized schools, which allowed for focused development in each area"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While the Bauhaus valued industrial production, it didn't abandon craft principles.",
+        "c": "The Bauhaus synthesized craft and industry, not rejected one for the other.",
+        "d": "The Bauhaus unified these concerns; it didn't separate them.",
+        "correct": "The Bauhaus's genius was demonstrating that mass production need not be ugly or soulless. Artistic principles applied to manufacturing could create beautiful, accessible design for all.",
+        "takeaway": "Artistic principles applied to manufacturing could create beautiful, accessible design for all."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "ST"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-008-03C-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.729652+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "7e30053a-bc29-415e-a7ac-dcc7a5acfbd9",
+      "article_id": "faa3088f-8700-4d60-a871-1c1e97f53570",
+      "topic_id": "24f2a64b-9192-4874-9217-9fe335975c82",
+      "text": "A building serves as both a school and a manifesto of its teaching philosophy. It features glass curtain walls, steel frame construction, open-plan workshops, and demonstrates honest materials, functional clarity, and integration of art and technology. Which institution does this describe?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Villa Savoye, a modernist villa designed by Le Corbusier, known for its pilotis and open floor plan"
+        },
+        {
+          "id": "b",
+          "text": "The Bauhaus Building in Dessau (1925–1926)"
+        },
+        {
+          "id": "c",
+          "text": "The Seagram Building, a skyscraper in New York City designed by Mies van der Rohe, noted for its minimalist design"
+        },
+        {
+          "id": "d",
+          "text": "Barcelona Pavilion, a modernist structure designed by Mies van der Rohe, famous for its simple form and elegant materials"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Villa Savoye demonstrates Le Corbusier's Five Points, not the Bauhaus philosophy comprehensively.",
+        "c": "Seagram Building is a later corporate work by Mies.",
+        "d": "Barcelona Pavilion is a temporary pavilion by Mies.",
+        "correct": "The Bauhaus Building designed by Gropius in Dessau (1925–1926) is both shelter for the school and a teaching tool—the building itself demonstrates Bauhaus principles to those inside.",
+        "takeaway": "The Bauhaus Building designed by Gropius in Dessau (1925–1926) is both shelter for the school and a teaching tool—the building itself demonstrates Bauhaus principles to those inside."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "recall",
+      "practice_context": [
+        "DESC"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-008-03C-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.729652+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "de13e4e2-8dde-427b-abdb-e130db549f0e",
+      "article_id": "faa3088f-8700-4d60-a871-1c1e97f53570",
+      "topic_id": "24f2a64b-9192-4874-9217-9fe335975c82",
+      "text": "Gropius's belief that 'good design can improve everyday life' and should be democratized through mass production represents which broader modernist principle?",
+      "options": [
+        {
+          "id": "a",
+          "text": "That luxury and exclusivity are essential to architecture, emphasizing the importance of unique, high-end designs for elite clientele."
+        },
+        {
+          "id": "b",
+          "text": "That beauty and good design are social goods accessible to everyone, not privileges of the wealthy"
+        },
+        {
+          "id": "c",
+          "text": "That aesthetics are irrelevant to functional design, focusing solely on utility and efficiency without regard for visual appeal."
+        },
+        {
+          "id": "d",
+          "text": "That industrial production is incompatible with artistic quality, suggesting that mass production diminishes the value of craftsmanship."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Gropius explicitly rejected elite exclusivity.",
+        "c": "Gropius unified aesthetics and function; he didn't separate them.",
+        "d": "Gropius proved the opposite—that industry and art could unite.",
+        "correct": "Gropius's philosophy embodies a democratic modernism: the belief that good design should serve all people, not just the elite. Mass production was the means to this goal.",
+        "takeaway": "Mass production was the means to this goal."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-008-03C-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.729652+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "f25552a5-1a9d-43e0-adb9-a5521e8d51d0",
+      "article_id": "faa3088f-8700-4d60-a871-1c1e97f53570",
+      "topic_id": "24f2a64b-9192-4874-9217-9fe335975c82",
+      "text": "How did Gropius's approach to design education differ from traditional art schools?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Gropius taught students to copy historical styles and traditions, emphasizing replication over innovation"
+        },
+        {
+          "id": "b",
+          "text": "Gropius unified art, craft, and industry in a single curriculum; rejected fine art-craft hierarchy; taught principles over style; emphasized learning by doing"
+        },
+        {
+          "id": "c",
+          "text": "Gropius separated fine art from craft to maintain artistic purity, ensuring that each discipline remained distinct"
+        },
+        {
+          "id": "d",
+          "text": "Gropius focused exclusively on industrial mass production, ignoring artistic concerns and prioritizing efficiency"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The Bauhaus explicitly rejected tradition and style copying.",
+        "c": "The Bauhaus unified these categories; Gropius didn't maintain separation.",
+        "d": "The Bauhaus integrated artistic rigor with production; neither was ignored.",
+        "correct": "The Bauhaus revolutionized education by integrating disciplines that traditional academies had hierarchically separated. Students learned principles and thinking, not style copying.",
+        "takeaway": "Students learned principles and thinking, not style copying."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-008-03C-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.729652+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "512435fc-bde1-40da-84c7-cbe85dbed21b",
+      "article_id": "faa3088f-8700-4d60-a871-1c1e97f53570",
+      "topic_id": "24f2a64b-9192-4874-9217-9fe335975c82",
+      "text": "The Gropius House (1937–1938) in Lincoln, Massachusetts applies Bauhaus principles to domestic architecture. In what context did this building appear?",
+      "options": [
+        {
+          "id": "a",
+          "text": "As a school building in Germany, reflecting the educational focus of the Bauhaus movement."
+        },
+        {
+          "id": "b",
+          "text": "After Gropius emigrated to America following the Nazi closure of the Bauhaus"
+        },
+        {
+          "id": "c",
+          "text": "During the height of the Bauhaus in Dessau, showcasing the peak of its architectural influence."
+        },
+        {
+          "id": "d",
+          "text": "As part of a Nazi architectural commission, which sought to integrate modernist elements into its projects."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The Gropius House is in America, not Germany.",
+        "c": "By 1937–1938, the Bauhaus had been closed for four years.",
+        "d": "Gropius opposed the Nazi regime and emigrated; he took no Nazi commissions.",
+        "correct": "The Gropius House was designed after the Bauhaus closed in 1933 and Gropius emigrated to America. It demonstrates his continued commitment to Bauhaus principles in the American context.",
+        "takeaway": "It demonstrates his continued commitment to Bauhaus principles in the American context."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "ID"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-008-03C-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.729652+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "09f8a61a-f158-4ed4-a643-d9d58d8960f7",
+      "article_id": "faa3088f-8700-4d60-a871-1c1e97f53570",
+      "topic_id": "24f2a64b-9192-4874-9217-9fe335975c82",
+      "text": "Which architect founded the Bauhaus in 1919?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hannes Meyer"
+        },
+        {
+          "id": "b",
+          "text": "Walter Gropius"
+        },
+        {
+          "id": "c",
+          "text": "Ludwig Mies van der Rohe"
+        },
+        {
+          "id": "d",
+          "text": "Le Corbusier"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Hannes Meyer was the second director (1928–1930), not founder.",
+        "c": "Mies van der Rohe was the third director (1930–1933), not founder.",
+        "d": "Le Corbusier was never a Bauhaus director.",
+        "correct": "Walter Gropius founded the Bauhaus in Weimar, Germany in 1919 with the vision of integrating art, craft, and industrial technology.",
+        "takeaway": "Walter Gropius founded the Bauhaus in Weimar, Germany in 1919 with the vision of integrating art, craft, and industrial technology."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "ID"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-008-03C-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.729652+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "d9cd6637-ddce-4087-85d8-963f2305dcb3",
+      "article_id": "faa3088f-8700-4d60-a871-1c1e97f53570",
+      "topic_id": "24f2a64b-9192-4874-9217-9fe335975c82",
+      "text": "Gropius's declaration—'The ultimate aim of all visual arts is the complete building'—expresses which underlying belief?",
+      "options": [
+        {
+          "id": "a",
+          "text": "That painting and sculpture are superior to all other design disciplines, representing the pinnacle of artistic achievement"
+        },
+        {
+          "id": "b",
+          "text": "That all design disciplines—art, craft, industry, graphics—should converge toward architecture as their highest synthesis"
+        },
+        {
+          "id": "c",
+          "text": "That only residential buildings represent true artistic achievement, embodying the essence of architectural beauty"
+        },
+        {
+          "id": "d",
+          "text": "That form follows function in all circumstances, prioritizing utility over aesthetic considerations"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Gropius prioritized architecture, not painting/sculpture; he sought integration, not hierarchy.",
+        "c": "Gropius applied his philosophy across all building types, not residential only.",
+        "d": "While Gropius valued function, this specific phrase (form follows function) is Sullivan's, not Gropius's.",
+        "correct": "Gropius believed all design—fine art, furniture, typography, textiles, ceramics—ultimately feeds into architecture as the supreme synthesis. This expresses the Bauhaus philosophy of total design integration.",
+        "takeaway": "This expresses the Bauhaus philosophy of total design integration."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-008-03C-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.729652+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "5df34c61-57bf-4252-90dd-90fae2a57950",
+      "article_id": "cde95089-b874-42c5-8250-abc58ad7fae0",
+      "topic_id": "7cb5e190-1b2c-451c-a4d4-d6900732ee2a",
+      "text": "During which period was the Taj Mahal constructed by Emperor Shah Jahan?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1395–1420 CE"
+        },
+        {
+          "id": "b",
+          "text": "1565–1572 CE"
+        },
+        {
+          "id": "c",
+          "text": "1632–1653 CE"
+        },
+        {
+          "id": "d",
+          "text": "1707–1860 CE"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This period covers the early Ming Dynasty and Forbidden City construction, not Mughal monuments.",
+        "b": "This is the period of Humayun's Tomb (1565–1572), a precursor to the Taj Mahal.",
+        "d": "This period covers the Summer Palace in China (Qing Dynasty), not Mughal architecture.",
+        "correct": "The article explicitly states the Taj Mahal was constructed 1632–1653 CE by Emperor Shah Jahan.",
+        "takeaway": "The article explicitly states the Taj Mahal was constructed 1632–1653 CE by Emperor Shah Jahan."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "CH"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-007-01-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.126756+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "e3829511-6ddc-4d63-96ef-3470babc5f7a",
+      "article_id": "cde95089-b874-42c5-8250-abc58ad7fae0",
+      "topic_id": "7cb5e190-1b2c-451c-a4d4-d6900732ee2a",
+      "text": "A Mughal garden is divided by water channels into four equal quadrants, with a mausoleum positioned at the intersection of these channels. This garden type exemplifies which design principle?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Stupa circumambulation (pradakshina), which involves walking around a sacred structure in a clockwise direction"
+        },
+        {
+          "id": "b",
+          "text": "Hindu temple mandapa hall organization, which focuses on the spatial arrangement of temple halls"
+        },
+        {
+          "id": "c",
+          "text": "Chahar bagh (four-part garden dividing by water)"
+        },
+        {
+          "id": "d",
+          "text": "Chinese siheyuan courtyard hierarchy, which organizes living spaces around a central courtyard"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Pradakshina is Buddhist circumambulatory path logic, not Mughal garden geometry.",
+        "b": "Mandapa is a Hindu temple columned hall, not a garden design principle.",
+        "d": "Siheyuan is a Chinese residential courtyard typology, not a Mughal garden type.",
+        "correct": "Chahar bagh is explicitly defined as a Mughal four-part garden divided by water channels, symbolizing paradise and establishing axial symmetry with the mausoleum positioned centrally.",
+        "takeaway": "Chahar bagh is explicitly defined as a Mughal four-part garden divided by water channels, symbolizing paradise and establishing axial symmetry with the mausoleum positioned centrally."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "recall",
+      "practice_context": [
+        "DESC"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-007-01-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.126756+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "515cbf24-71a1-41c1-bacc-0921d18147be",
+      "article_id": "cde95089-b874-42c5-8250-abc58ad7fae0",
+      "topic_id": "7cb5e190-1b2c-451c-a4d4-d6900732ee2a",
+      "text": "The Sanchi Stupa and Khajuraho Temple Complex both appear in medieval India, yet they represent distinct traditions. What distinguishes their religious purpose and spatial logic?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sanchi is Hindu with axial entry to a central deity; Khajuraho is Buddhist with circumambulatory paths, reflecting different ritual practices."
+        },
+        {
+          "id": "b",
+          "text": "Sanchi is Buddhist, enshrining relics and emphasizing circumambulation; Khajuraho is Hindu, organizing sacred space vertically around a central shrine."
+        },
+        {
+          "id": "c",
+          "text": "Both are Hindu temples; Sanchi is older (3rd century), while Khajuraho is later (10th century), so they represent architectural evolution."
+        },
+        {
+          "id": "d",
+          "text": "Sanchi is a government building; Khajuraho is a religious temple; they are not comparable religious monuments, differing in function and design."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This reverses the traditions; Sanchi is Buddhist (not Hindu), and Khajuraho is Hindu (not Buddhist).",
+        "c": "Sanchi is Buddhist (not Hindu), and Khajuraho is Hindu; they are not variant Hindu forms representing evolution.",
+        "d": "Sanchi and Khajuraho are both religious monuments; this distinction is incorrect.",
+        "correct": "Stupas (Buddhist, enshrine relics, emphasize circumambulation) from Hindu temples (enshrine deity, emphasize axial entry to sanctum). Sanchi is Buddhist; Khajuraho is Hindu. Their interior logic differs fundamentally.",
+        "takeaway": "Their interior logic differs fundamentally."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-007-01-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.126756+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "b93ef457-fb75-4846-9450-9e7a6fb55127",
+      "article_id": "cde95089-b874-42c5-8250-abc58ad7fae0",
+      "topic_id": "7cb5e190-1b2c-451c-a4d4-d6900732ee2a",
+      "text": "The pietra dura inlay technique, characteristic of Mughal mausolea like the Taj Mahal, uses which materials to create floral and calligraphic patterns?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Terracotta tiles and painted plaster, often used in less formal structures"
+        },
+        {
+          "id": "b",
+          "text": "Colored stone including marble, jade, and lapis lazuli"
+        },
+        {
+          "id": "c",
+          "text": "Carved sandstone blocks laid without mortar, typical of regional architecture"
+        },
+        {
+          "id": "d",
+          "text": "Glazed ceramic tiles arranged in concentric circles, a common decorative motif"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Terracotta and painted plaster are not pietra dura; they are different decorative techniques.",
+        "c": "Carved sandstone blocks without mortar describe stupa or temple construction, not Mughal inlay work.",
+        "d": "Glazed ceramic tiles are characteristic of Chinese imperial architecture, not Mughal pietra dura.",
+        "correct": "Pietra dura is explicitly defined in the article as an inlay technique using colored stone (marble, jade, lapis lazuli) to create floral and calligraphic patterns, signature Mughal decoration.",
+        "takeaway": "Pietra dura is explicitly defined in the article as an inlay technique using colored stone (marble, jade, lapis lazuli) to create floral and calligraphic patterns, signature Mughal decoration."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "ST"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-007-01-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.126756+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "1d009f92-9c9a-411c-9dd8-f2bcc9e1bb58",
+      "article_id": "cde95089-b874-42c5-8250-abc58ad7fae0",
+      "topic_id": "7cb5e190-1b2c-451c-a4d4-d6900732ee2a",
+      "text": "A mausoleum features a double dome, red sandstone construction, a chahar bagh garden layout, and dates to 1565–1572 in Delhi. This monument is recognized as serving which historical role in Mughal architecture?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The most ornate and largest Mughal mausoleum, setting the standard for all later tombs, influencing subsequent architectural designs"
+        },
+        {
+          "id": "b",
+          "text": "A precursor to the Taj Mahal, establishing garden-tomb complexes and design principles later refined"
+        },
+        {
+          "id": "c",
+          "text": "A palace complex built by Akbar, demonstrating Hindu-Mughal synthesis in residential architecture, showcasing cultural integration"
+        },
+        {
+          "id": "d",
+          "text": "A Buddhist temple converted to Mughal use, showing religious compromise and architectural adaptation"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The Taj Mahal is the most ornate and largest; Humayun's Tomb precedes it.",
+        "c": "Fatehpur Sikri Palace Complex (1571–1585) is the Akbar palace demonstrating Hindu-Mughal synthesis; Humayun's Tomb is a mausoleum, not a palace.",
+        "d": "Humayun's Tomb is a newly constructed Mughal mausoleum, not a converted Buddhist temple.",
+        "correct": "Humayun's Tomb (1565–1572, Delhi) is explicitly identified as a double-dome, red-sandstone, chahar bagh structure and described as a precursor to the Taj Mahal in the article.",
+        "takeaway": "Humayun's Tomb (1565–1572, Delhi) is explicitly identified as a double-dome, red-sandstone, chahar bagh structure and described as a precursor to the Taj Mahal in the article."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "recall",
+      "practice_context": [
+        "DESC"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-007-01-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.126756+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "84c50761-e087-4cda-82aa-c39671c6b749",
+      "article_id": "cde95089-b874-42c5-8250-abc58ad7fae0",
+      "topic_id": "7cb5e190-1b2c-451c-a4d4-d6900732ee2a",
+      "text": "South Indian Dravidian temples differ from North Indian Nagara temples in their prominent use of which vertical element as the primary architectural organizing feature?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Shikhara towers rising directly above the sanctum, which are characteristic of Nagara style"
+        },
+        {
+          "id": "b",
+          "text": "Gopura gateway towers dominating the temple entrance and precinct organization"
+        },
+        {
+          "id": "c",
+          "text": "Stupa domes emphasizing circumambulation, which are more common in Buddhist architecture"
+        },
+        {
+          "id": "d",
+          "text": "Dome and mausoleum complexes reflecting Mughal influence, which are not typical of Dravidian temples"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While shikharas are important, they characterize North Indian Nagara temples, not South Indian Dravidian temples.",
+        "c": "Stupas are Buddhist monuments, not features of Hindu temples.",
+        "d": "Domes and mausoleums are Mughal characteristics, not specific to South Indian temples.",
+        "correct": "The article explicitly contrasts Southern Dravidian temples (gopura-dominant plans) with Northern Nagara temples (shikhara-dominant plans), noting that gopuras are monumental gateway towers at temple entrances especially prominent in South Indian architecture.",
+        "takeaway": "The article explicitly contrasts Southern Dravidian temples (gopura-dominant plans) with Northern Nagara temples (shikhara-dominant plans), noting that gopuras are monumental gateway towers at temple entrances especially prominent in South Indian architecture."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "ST"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-007-01-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.126756+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "c3298607-44b3-4269-a8a4-fe69fd185316",
+      "article_id": "458cde1d-fd31-41f1-b90e-d5cd728e9e23",
+      "topic_id": "317a1260-23fc-4bea-815d-a911c51e901e",
+      "text": "To make a low-ceilinged room feel higher and more spacious, which color strategy would be most effective?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Paint the ceiling a warm color (red or orange), which can make the space feel more intimate"
+        },
+        {
+          "id": "b",
+          "text": "Use highly saturated colors on all surfaces, which can overwhelm the space and make it feel smaller"
+        },
+        {
+          "id": "c",
+          "text": "Paint the ceiling light (high value) and walls slightly darker"
+        },
+        {
+          "id": "d",
+          "text": "Paint the ceiling dark and walls light, which can create a sense of compression"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Warm colors advance, not elevate ceiling perception.",
+        "b": "Saturation doesn't address vertical perception.",
+        "d": "Dark ceilings lower perceived height—opposite of desired effect.",
+        "correct": "Light-value ceilings read as higher visually; slightly darker walls provide contrast. This color value strategy makes the room feel more spacious vertically. Darkness would lower the perceived ceiling.",
+        "takeaway": "Darkness would lower the perceived ceiling."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-09-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.884733+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "59673c2d-fbab-4395-8994-5e1d495dd459",
+      "article_id": "458cde1d-fd31-41f1-b90e-d5cd728e9e23",
+      "topic_id": "317a1260-23fc-4bea-815d-a911c51e901e",
+      "text": "Shadow in architectural design functions as:",
+      "options": [
+        {
+          "id": "a",
+          "text": "A primary design element revealing and articulating form, organizing space, and creating rhythm—shadows are intentional design tools"
+        },
+        {
+          "id": "b",
+          "text": "An absence of light that should be minimized for safety and visibility, especially in public spaces and pathways"
+        },
+        {
+          "id": "c",
+          "text": "A problem created by poor lighting design, often requiring corrective measures such as additional artificial lighting"
+        },
+        {
+          "id": "d",
+          "text": "Only a concern in theatrical or dramatic architectural contexts, where lighting effects are used to enhance the experience"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Shadow is a design tool, not a problem.",
+        "c": "Shadow is intentional design, not poor performance.",
+        "d": "All architecture uses shadow strategically.",
+        "correct": "Ching treats shadow as fundamental design element: shadows reveal form through highlights and dark areas (grazing light exaggerates texture); shadows create visual rhythm (column shadows on floor); shadows organize space. Shadows are intentional, not incidental.",
+        "takeaway": "Shadows are intentional, not incidental."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-09-011",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.884733+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "21177a82-9cf3-42e2-8245-32815d9ca9f4",
+      "article_id": "458cde1d-fd31-41f1-b90e-d5cd728e9e23",
+      "topic_id": "317a1260-23fc-4bea-815d-a911c51e901e",
+      "text": "How do color, texture, light, and shadow work together as an integrated design system in architectural composition?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Color and texture are primary; light and shadow are incidental results, which is a simplistic view"
+        },
+        {
+          "id": "b",
+          "text": "Light reveals color and texture, creating highlights and shadows; shadow articulates form; color affects spatial perception; texture modulates light and creates tactile richness—all four operate synergistically"
+        },
+        {
+          "id": "c",
+          "text": "These elements operate independently; each can be designed without reference to others, which is not typically the case in integrated design"
+        },
+        {
+          "id": "d",
+          "text": "Only light and shadow matter; color and texture are secondary, which overlooks their importance"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "All four are fundamental to spatial experience.",
+        "c": "They are deeply interconnected.",
+        "d": "All four contribute equally to design impact.",
+        "correct": "These elements are interdependent and mutually reinforcing: light makes color visible and reveals texture; shadow articulates the form that color and texture define; color's effects depend on how light and shadow interact with it; texture's character depends on light quality. Coherent design integrates all four simultaneously.",
+        "takeaway": "Coherent design integrates all four simultaneously."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "SYS"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-09-014",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.884733+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "6829f8f7-ef45-43df-86b8-3638d8a289ec",
+      "article_id": "458cde1d-fd31-41f1-b90e-d5cd728e9e23",
+      "topic_id": "317a1260-23fc-4bea-815d-a911c51e901e",
+      "text": "Natural light in architecture functions by:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Providing consistent, unchanging illumination throughout the day, which is ideal for spaces requiring uniform lighting conditions"
+        },
+        {
+          "id": "b",
+          "text": "Only illuminating vertical surfaces (walls), which limits its effectiveness in spaces with high ceilings"
+        },
+        {
+          "id": "c",
+          "text": "Requiring supplemental electric lighting for adequate visibility, especially in deep-plan buildings"
+        },
+        {
+          "id": "d",
+          "text": "Creating time-bound, dynamic spatial experience—varying throughout the day (cool north, warm south, directional at dawn/dusk) and season (high summer angles, low winter angles)"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Natural light is inherently variable and time-bound.",
+        "b": "Natural light illuminates all surfaces depending on direction.",
+        "c": "Many buildings achieve adequate daylighting without supplemental artificial light.",
+        "correct": "Natural light's character changes throughout day and year, creating dynamic experience: cool north light, warm south light, dramatic directional grazing light at dawn/dusk. Windows, skylights, light shelves control this dynamic illumination.",
+        "takeaway": "Windows, skylights, light shelves control this dynamic illumination."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-09-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.884733+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "6f9f3afd-e76b-46ba-a7da-79b526b6fd8c",
+      "article_id": "458cde1d-fd31-41f1-b90e-d5cd728e9e23",
+      "topic_id": "317a1260-23fc-4bea-815d-a911c51e901e",
+      "text": "Color hue in architectural design refers to:",
+      "options": [
+        {
+          "id": "a",
+          "text": "The lightness or darkness of a color on a scale from white to black, which is actually value"
+        },
+        {
+          "id": "b",
+          "text": "The fundamental property distinguishing colors (red, blue, green, etc.) and carrying psychological and cultural associations"
+        },
+        {
+          "id": "c",
+          "text": "The purity or intensity of a color from highly saturated to desaturated, which is actually chroma"
+        },
+        {
+          "id": "d",
+          "text": "The reflection of light from colored surfaces, which is not specific to hue"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "That is color value (lightness/darkness).",
+        "c": "That is color saturation (intensity).",
+        "d": "That describes light behavior, not hue itself.",
+        "correct": "Hue is the fundamental color property: red, blue, green, etc. Warm hues (reds, oranges, yellows) advance and energize; cool hues (blues, greens, purples) recede and calm. Hues carry cultural and psychological associations.",
+        "takeaway": "Hues carry cultural and psychological associations."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-09-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.884733+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "7d4f7fa5-8fc6-406a-9843-5a9b382f16ad",
+      "article_id": "458cde1d-fd31-41f1-b90e-d5cd728e9e23",
+      "topic_id": "317a1260-23fc-4bea-815d-a911c51e901e",
+      "text": "Grazing light (nearly parallel to a surface) creates which effect on architectural form?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Evens out all surface variations, creating uniform appearance, which can be desirable in certain design contexts"
+        },
+        {
+          "id": "b",
+          "text": "Exaggerated shadow articulating three-dimensional form and revealing texture details"
+        },
+        {
+          "id": "c",
+          "text": "Eliminates shadows entirely, improving visibility, which is beneficial in workspaces requiring consistent lighting"
+        },
+        {
+          "id": "d",
+          "text": "Creates confusion about actual surface geometry, potentially misleading viewers about the true form"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Grazing light emphasizes variation, not uniforms.",
+        "c": "Grazing light actually creates dramatic shadow patterns.",
+        "d": "Grazing light reveals surface geometry clearly through shadow articulation.",
+        "correct": "Grazing light creates dramatic shadows highlighting every surface variation, texture, and form undulation. This is why ruins and archaeological sites are photographed in golden-hour light—grazing light dramatically reveals form. Architects use this strategically through façade articulation and overhang placement.",
+        "takeaway": "Architects use this strategically through façade articulation and overhang placement."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-09-012",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.884733+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "7e6dc778-716e-4825-ae9c-5c20bd7e07c8",
+      "article_id": "458cde1d-fd31-41f1-b90e-d5cd728e9e23",
+      "topic_id": "317a1260-23fc-4bea-815d-a911c51e901e",
+      "text": "Artificial light color temperature (measured in Kelvin) affects spatial experience by:",
+      "options": [
+        {
+          "id": "a",
+          "text": "The warmth or coolness of light—2700K is warm and intimate; 5000K is cool and alert/clinical"
+        },
+        {
+          "id": "b",
+          "text": "Controlling the direction light travels through space, which can affect how shadows are cast and perceived"
+        },
+        {
+          "id": "c",
+          "text": "Setting the color saturation of room finishes, which can alter the perceived intensity of colors in the environment"
+        },
+        {
+          "id": "d",
+          "text": "Determining whether lighting is bright or dim, which can influence the overall ambiance and mood of a space"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Direction is determined by fixture placement and angle.",
+        "c": "Color temperature of light, not saturation of finishes, affects mood.",
+        "d": "Intensity (brightness) is separate from color temperature.",
+        "correct": "Color temperature fundamentally affects mood: warm light (2700K) feels intimate and relaxing; cool light (5000K) feels alert and clinical. Contemporary design uses warmer light in evenings, cooler light daytime to support circadian rhythms.",
+        "takeaway": "Contemporary design uses warmer light in evenings, cooler light daytime to support circadian rhythms."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-09-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.884733+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "81e45a77-1c19-4756-84ca-2866b7ed9ccb",
+      "article_id": "458cde1d-fd31-41f1-b90e-d5cd728e9e23",
+      "topic_id": "317a1260-23fc-4bea-815d-a911c51e901e",
+      "text": "A designer employs cool-toned light (5000K) in an office workspace and warm-toned light (2700K) in a residential evening space. What design principle is demonstrated?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cost minimization through standard lighting, which may not consider the specific needs of different environments"
+        },
+        {
+          "id": "b",
+          "text": "Using color temperature to support functional needs and psychological effects—cool light aids alertness in work; warm light promotes relaxation at home"
+        },
+        {
+          "id": "c",
+          "text": "Following lighting manufacturers' recommendations, which are often based on general guidelines rather than specific design principles"
+        },
+        {
+          "id": "d",
+          "text": "Arbitrary color temperature choices, without regard to the intended use or psychological impact of the space"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Color temperature choice is based on function, not cost.",
+        "c": "While manufacturers provide options, the designer chose intentionally for function.",
+        "d": "Selections are intentional and functional.",
+        "correct": "Color temperature is a functional design tool: cool light supports daytime alertness and circadian rhythm; warm light supports evening relaxation. This demonstrates that color temperature is not aesthetic preference but functional design addressing psychological and physiological needs.",
+        "takeaway": "This demonstrates that color temperature is not aesthetic preference but functional design addressing psychological and physiological needs."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-09-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.884733+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "32e29bde-61a8-41fa-b76d-c74b47295e94",
+      "article_id": "458cde1d-fd31-41f1-b90e-d5cd728e9e23",
+      "topic_id": "317a1260-23fc-4bea-815d-a911c51e901e",
+      "text": "Color value in architectural design affects spatial perception by:",
+      "options": [
+        {
+          "id": "a",
+          "text": "The cultural associations of different colors, which can influence emotional responses and perceived space"
+        },
+        {
+          "id": "b",
+          "text": "Determining whether colors are warm or cool, which affects the psychological warmth or coolness of a space"
+        },
+        {
+          "id": "c",
+          "text": "The lightness or darkness of a color; light values read as spacious and high; dark values read as intimate and low"
+        },
+        {
+          "id": "d",
+          "text": "The intensity of hue saturation, which can alter the perceived energy and vibrancy of a space"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "That is cultural association, not value's spatial effect.",
+        "b": "That is hue property.",
+        "d": "That is saturation property.",
+        "correct": "Value (lightness/darkness) directly affects spatial perception: a light-colored ceiling reads as higher; dark ceiling reads as lower. Light values create openness; dark values create intimacy. This is a functional design tool, not decorative choice.",
+        "takeaway": "This is a functional design tool, not decorative choice."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-09-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.884733+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "f9ebb355-80bb-4298-80f9-e5969565634a",
+      "article_id": "458cde1d-fd31-41f1-b90e-d5cd728e9e23",
+      "topic_id": "317a1260-23fc-4bea-815d-a911c51e901e",
+      "text": "Texture in architectural design functions by:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Applying decorative patterns to surfaces for visual interest, enhancing the aesthetic appeal of the structure"
+        },
+        {
+          "id": "b",
+          "text": "Creating smooth, reflective surfaces throughout the building, which can influence light distribution and perception"
+        },
+        {
+          "id": "c",
+          "text": "Adding weight to a building's exterior, contributing to the structural integrity and visual grounding of the design"
+        },
+        {
+          "id": "d",
+          "text": "The surface quality conveying material properties and creating both visual and tactile richness"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While patterns are textural, texture is about material surface quality.",
+        "b": "Texture varies from smooth to rough.",
+        "c": "Texture is about surface property, not structural weight.",
+        "correct": "Texture is surface quality—rough, fine, smooth, coarse. It expresses material properties (rough stone feels permanent; smooth glass feels dematerialized), affects tactile perception, and operates at multiple scales visually and tactilely.",
+        "takeaway": "It expresses material properties (rough stone feels permanent; smooth glass feels dematerialized), affects tactile perception, and operates at multiple scales visually and tactilely."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-09-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.884733+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "7f7b9acd-6013-44d5-923e-467444fc050f",
+      "article_id": "fc0f6b12-8d7e-4309-b83c-daba0863ff30",
+      "topic_id": "8d7887fc-5f34-421b-96df-ac0ca6346a52",
+      "text": "Daniel Burnham's 1905 Plan of Manila incorporated City Beautiful Movement principles. Which of the following was NOT a characteristic of the Burnham Plan?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Diagonal boulevards radiating from civic centers (e.g., Taft Avenue) creating monumental urban vistas"
+        },
+        {
+          "id": "b",
+          "text": "Large monumental parks and public spaces (e.g., Luneta) serving as civic gathering points and urban landmarks"
+        },
+        {
+          "id": "c",
+          "text": "Mixed-use neighborhoods with informal, unplanned commercial activity and street vending"
+        },
+        {
+          "id": "d",
+          "text": "Grand civic architecture and classical design principles inspired by European and American Beaux-Arts tradition"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Diagonal boulevards were signature Burnham elements.",
+        "b": "Large parks and civic spaces were core to City Beautiful.",
+        "c": "The City Beautiful Movement emphasized formal civic grandeur, not informal mixed-use neighborhoods. Mixed-use walkable neighborhoods are a hallmark of New Urbanism (Palafox era), not City Beautiful (Burnham era).",
+        "d": "Monumental classical architecture was fundamental to the movement.",
+        "correct": "The City Beautiful Movement emphasized formal civic grandeur, not informal mixed-use neighborhoods. Mixed-use walkable neighborhoods are a hallmark of New Urbanism (Palafox era), not City Beautiful (Burnham era).",
+        "takeaway": "Burnham/City Beautiful = formal grandeur. Palafox/New Urbanism = mixed-use walkability (different eras)."
+      },
+      "explanation": null,
+      "code_citation": "Burnham Plan of Manila, City Beautiful Movement",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [
+        "City Beautiful Movement",
+        "planning movements",
+        "historical context"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-007-06-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:07.576522+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "3d36469e-d685-4dfd-a746-2487b90d250a",
+      "article_id": "fc0f6b12-8d7e-4309-b83c-daba0863ff30",
+      "topic_id": "8d7887fc-5f34-421b-96df-ac0ca6346a52",
+      "text": "What is the significance of Ildefonso P. Santos Jr.'s work in establishing landscape architecture as a recognized profession in the Philippines?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It separated landscape from architecture; established design standards; integrated landscape into planning"
+        },
+        {
+          "id": "b",
+          "text": "It eliminated the need for urban planners in the Philippines, thereby streamlining the planning process and reducing bureaucratic overhead."
+        },
+        {
+          "id": "c",
+          "text": "It was focused exclusively on decorative gardening without planning integration, limiting its impact on urban development."
+        },
+        {
+          "id": "d",
+          "text": "It created a separate government agency for landscape control, which oversees all landscape-related activities and ensures compliance with national standards."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Santos elevated landscape architecture from ornamental gardening to a design discipline integrated with architecture and planning. His work established professional standards and demonstrated how landscape design supports livability, environmental quality, and urban form.",
+        "b": "Landscape architecture and urban planning are complementary, not competitive.",
+        "c": "Santos's work transcended decoration—it was design discipline and planning integration.",
+        "d": "Professionalization occurred through practice standards and recognition, not necessarily new agencies.",
+        "correct": "Santos elevated landscape architecture from ornamental gardening to a design discipline integrated with architecture and planning. His work established professional standards and demonstrated how landscape design supports livability, environmental quality, and urban form.",
+        "takeaway": "Santos professionalized landscape architecture as integration of design, planning, and environment."
+      },
+      "explanation": null,
+      "code_citation": "National Artist for Architecture award (2006), Santos legacy",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [
+        "profession development",
+        "interdisciplinary integration"
+      ],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-007-06-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:07.576522+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "dcb036ab-8060-4d01-9a9a-c43ee2c8eaea",
+      "article_id": "fc0f6b12-8d7e-4309-b83c-daba0863ff30",
+      "topic_id": "8d7887fc-5f34-421b-96df-ac0ca6346a52",
+      "text": "Who designed the 1905 Plan of Manila, and what was the primary urban design philosophy that guided this plan?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Antonio Toledo; focus on grid-pattern residential neighborhoods with an emphasis on uniformity and predictability in urban layout"
+        },
+        {
+          "id": "b",
+          "text": "Daniel Burnham; City Beautiful Movement with monumental civic spaces and diagonal boulevards"
+        },
+        {
+          "id": "c",
+          "text": "Ildefonso P. Santos Jr.; landscape-integrated planning that prioritizes green spaces and ecological harmony"
+        },
+        {
+          "id": "d",
+          "text": "Felino Palafox Jr.; mixed-use transit-oriented development that encourages sustainable urban growth and reduced reliance on automobiles"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Toledo was the first Filipino planner, working in the postwar period (1950s–70s), not 1905.",
+        "b": "The 1905 Plan of Manila was designed by American architect Daniel Burnham, who applied City Beautiful Movement principles: grand civic buildings, diagonal boulevards (Taft Avenue), large parks (Luneta), and monumental architecture to elevate civic grandeur.",
+        "c": "Santos was a landscape architect/National Artist, not the designer of the 1905 plan.",
+        "d": "Palafox is a contemporary planner, not the designer of the 1905 plan.",
+        "correct": "The 1905 Plan of Manila was designed by American architect Daniel Burnham, who applied City Beautiful Movement principles: grand civic buildings, diagonal boulevards radiating from civic centers, large parks (Luneta), and monumental architecture to elevate civic grandeur.",
+        "takeaway": "1905 Plan of Manila = Burnham (American) + City Beautiful Movement principles."
+      },
+      "explanation": null,
+      "code_citation": "Burnham, Plan of Manila (1905)",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-007-06-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:07.576522+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "question_id": "1102c25d-d45f-40e6-8fe1-11a7b4bce59c",
+  "baseline_hash": "sha256:e7d2b86202dda779aac07c6db9cd2e3e11cde280300b37c5cc89c4e307c5bf62",
+  "reason": "Strict explanation backfill from existing specific rationale; answer key and options unchanged.",
+  "approved_by": "hermes-question-remediation-autopilot",
+  "approved_at": "2026-05-06T14:58:06.586Z",
+  "proposed": {
+    "explanation": "Article specifies reciprocating engines (480°C exhaust); gas turbines (500-650°C) are alternative but not the efficiency advantage mechanism here. Absorption chillers achieve ~0.7-0.8 COP (lower than mechanical systems at 3.0-5.0 COP). Advantage is that absorption cooling uses waste heat (free thermal input) rather than electrical input, not COP superiority. Heat recovery effectiveness (40-60%) remains constant; simultaneous productive use of heat (water heating + absorption cooling) is the efficiency mechanism, not increased recovery effectiveness. Trigeneration achieves 70-85% efficiency by simultaneously producing three energy outputs from single fuel input: (1) electricity from engine, (2) thermal energy (water heating) from 480°C exhaust, (3) cooling from absorption chiller using recovered heat. Traditional generation wastes 70% of fuel as low-grade exhaust; trigeneration captures and productively uses this waste heat. The 70-85% vs. 45-55% difference (20-35 percentage-point improvement) represents elimination of three separate energy conversion steps (electricity generation, water heater, separate chiller) into one integrated system. Trigeneration efficiency (70-85%) vs. conventional (45-55%) advantage: single fuel input simultaneously produces electricity, hot water, and cooling—eliminates waste heat and avoids three separate energy conversion systems."
+  }
+}

@@ -293,3 +293,18 @@ Status: PUBLISHED_VERIFIED.
 Running total committed after Batch 020: 577 published/recovered verified questions.
 
 Next exact step after commit/push: `bun scripts/content-audit/select-question-remediation-batch.ts question-batch-021 50`.
+
+## Question Batch 021 Published — 2026-05-06T15:00:50.714437+00:00
+
+Status: PUBLISHED_VERIFIED.
+
+- Selected: 50.
+- Local verifier: 50/50 pass.
+- Independent safety review: PASS, blockers none.
+- Remote apply: 50/50 by exact question_id filter.
+- Remote verification: 50/50.
+- Answer-key changes: 0.
+- Option changes: 0.
+- Backup: `.ai/20_content_publish/backups/questions-backup-question-batch-021-20260506T150004Z.json`.
+
+Running total committed after Batch 021: 627 published/recovered verified questions.
