@@ -1,5 +1,4 @@
 # Question Risk Summary
 
-- legal/code source risk: 926
-- dimension/date/source risk: 697
-- duplicate option risk: 1
+- insufficient_linked_article_support: 3
+- generic_meta_distractor_leakage: 1

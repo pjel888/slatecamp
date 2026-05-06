@@ -1,0 +1,266 @@
+{
+  "generated_at": "2026-05-06T11:20:28.941617Z",
+  "batch": "question-batch-003",
+  "rows": [
+    {
+      "question_id": "d2dbe4cb-796a-4ab4-a782-be92df6de9ff",
+      "article_id": "33c219fe-51a6-487f-81d2-0d4af2968274",
+      "topic_id": "91dbeb42-081f-4c65-9874-a54d1017ec6f",
+      "text": "Which architect stated 'A house is a machine for living in' from Vers une architecture (1923)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Walter Gropius"
+        },
+        {
+          "id": "b",
+          "text": "Ludwig Mies van der Rohe"
+        },
+        {
+          "id": "c",
+          "text": "Adolf Loos"
+        },
+        {
+          "id": "d",
+          "text": "Le Corbusier"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Gropius founded the Bauhaus and emphasized workshop learning, not this specific philosophical assertion.",
+        "b": "Mies van der Rohe is known for 'Less is more' and 'God is in the details,' not this quote.",
+        "c": "Adolf Loos authored 'Ornament and Crime,' not the machine-for-living quote.",
+        "correct": "Le Corbusier explicitly authored this statement from Vers une architecture (1923), encapsulating his functionalist vision that houses should prioritize efficiency and practicality much as industrial machines are engineered for specific purposes.",
+        "takeaway": "Le Corbusier explicitly authored this statement from Vers une architecture (1923), encapsulating his functionalist vision that houses should prioritize efficiency and practicality much as industrial machines are engineered for specific purposes."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "ATT"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-005-02-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.791916+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:57802628903d14bdb97964031be56122002645ed6a582149a74c3e7922e72fc3"
+    },
+    {
+      "question_id": "120d2011-df73-43de-9c07-3c0552f09bb2",
+      "article_id": "33c219fe-51a6-487f-81d2-0d4af2968274",
+      "topic_id": "91dbeb42-081f-4c65-9874-a54d1017ec6f",
+      "text": "The Bauhaus (1919), founded by Walter Gropius, functioned as an educational institution that sought to unite which disciplines through workshop-based learning?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Art, craft, industrial design, and architecture through the workshop model—the Gesamtkunstwerk (total work of art)"
+        },
+        {
+          "id": "b",
+          "text": "Only fine art and architectural theory, excluding practical applications"
+        },
+        {
+          "id": "c",
+          "text": "Historical preservation and classical architectural principles, focusing on traditional methods"
+        },
+        {
+          "id": "d",
+          "text": "Engineering and scientific research exclusively, without artistic influence"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "The Bauhaus extended beyond fine art to include industrial design, craft, and architecture.",
+        "c": "The Bauhaus was forward-looking and engaged modern materials and industrial processes, not preservation.",
+        "d": "The Bauhaus integrated art with technical production; it was not research-only.",
+        "correct": "The Bauhaus 'sought a Gesamtkunstwerk (total work of art), unifying all creative disciplines' and emphasizes Gropius's pedagogical philosophy that 'the school is the servant of the workshop,' combining imaginative design with technical proficiency through hands-on making.",
+        "takeaway": "The Bauhaus 'sought a Gesamtkunstwerk (total work of art), unifying all creative disciplines' and emphasizes Gropius's pedagogical philosophy that 'the school is the servant of the workshop,' combining imaginative design with technical proficiency through hands-on making."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "SYS"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-005-02-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.791916+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:18f85427ab16e1061ee02a835afce424c8aab069d2f35bdca61216f64dd8d776"
+    },
+    {
+      "question_id": "61efef1f-a3d6-4fcd-ae72-e50ba5f7e141",
+      "article_id": "33c219fe-51a6-487f-81d2-0d4af2968274",
+      "topic_id": "91dbeb42-081f-4c65-9874-a54d1017ec6f",
+      "text": "Which modernist architect is correctly associated with 'humanist modernism,' designing with warmth, natural materials, and organic form to resist cold geometric austerity?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ludwig Mies van der Rohe"
+        },
+        {
+          "id": "b",
+          "text": "Le Corbusier"
+        },
+        {
+          "id": "c",
+          "text": "Adolf Loos"
+        },
+        {
+          "id": "d",
+          "text": "Alvar Aalto"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Mies pursued extreme reduction and material clarity; his work is not characterized as humanist.",
+        "b": "Le Corbusier pursued geometric idealism and mass production, not humanist warmth.",
+        "c": "Loos opposed ornament; he did not emphasize organic form or humanist warmth.",
+        "correct": "Alvar Aalto (1898-1976) developed humanist modernism, explicitly defined as 'resisting modernism's cold geometric austerity by infusing design with warmth, natural materials, and organic form.' His work demonstrates modernism grounded in human comfort and social interaction.",
+        "takeaway": "Alvar Aalto (1898-1976) developed humanist modernism, explicitly defined as 'resisting modernism's cold geometric austerity by infusing design with warmth, natural materials, and organic form.' His work demonstrates modernism grounded in human comfort and social interaction."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "ATT"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-005-02-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.791916+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ac50a9dfc3b9d563633b2167de6bf939fb708ac51f15c2208f0c35aeb524bd49"
+    },
+    {
+      "question_id": "4249dc10-c04a-44ac-a017-5b296dbb4dc7",
+      "article_id": "33c219fe-51a6-487f-81d2-0d4af2968274",
+      "topic_id": "91dbeb42-081f-4c65-9874-a54d1017ec6f",
+      "text": "Which architect is correctly attributed with the principle 'Form follows function,' published in 1896?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le Corbusier"
+        },
+        {
+          "id": "b",
+          "text": "Mies van der Rohe"
+        },
+        {
+          "id": "c",
+          "text": "Louis Sullivan"
+        },
+        {
+          "id": "d",
+          "text": "Frank Lloyd Wright"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Le Corbusier's primary principle was the 'machine for living,' not form follows function.",
+        "b": "Mies van der Rohe is associated with 'Less is more' and 'God is in the details.'",
+        "d": "Wright pioneered organic architecture; he did not articulate the form-follows-function principle.",
+        "correct": "Louis Sullivan published 'Form follows function' in his 1896 article 'The Tall Office Building Artistically Considered.' architectural theory 'became modernism's rallying cry after the 1930s' despite Sullivan himself using ornament in his work.",
+        "takeaway": "Louis Sullivan published 'Form follows function' in his 1896 article 'The Tall Office Building Artistically Considered.' architectural theory 'became modernism's rallying cry after the 1930s' despite Sullivan himself using ornament in his work."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "ATT"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-005-02-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.791916+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7d872be1e7f865365fec188f9df3f240cc81065ab0692ced9075f176ff8bc595"
+    },
+    {
+      "question_id": "accc9c86-9dbd-43bf-b0d4-9eeabe5fcba8",
+      "article_id": "33c219fe-51a6-487f-81d2-0d4af2968274",
+      "topic_id": "91dbeb42-081f-4c65-9874-a54d1017ec6f",
+      "text": "How does Paul Rudolph's assertion that 'Architecture is a personal effort' represent a modernist position that differs from collective movements like the Bauhaus or Le Corbusier's mass-housing solutions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "All architects agreed uniformly on the importance of personal authorship, which was a central tenet of modernist ideology"
+        },
+        {
+          "id": "b",
+          "text": "Rudolph rejected modernism entirely and returned to historical eclecticism, focusing on revival styles and ornamentation"
+        },
+        {
+          "id": "c",
+          "text": "Rudolph maintained modernist principles of clarity and innovation but emphasized the individual architect's direct creative control and vision rather than collective workshop processes or systematized mass production"
+        },
+        {
+          "id": "d",
+          "text": "Rudolph opposed modernism but had no consistent alternative philosophy, often contradicting himself in various writings"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "architectural theory shows different modernists took different positions on authorship and control.",
+        "b": "Rudolph remained modernist; his emphasis on personal effort does not constitute rejection of modernism.",
+        "d": "Rudolph's philosophy is clearly articulated and consistent; personal effort and spatial drama were his consistent commitments.",
+        "correct": "Rudolph as representing a modernist position that privileges individual architectural authorship, emphasizing 'the importance of direct control over design without excessive bureaucratic mediation.' This contrasts with Gropius's workshop collectivity and Le Corbusier's systematized mass-production approaches—different modernist answers to how design should be organized and controlled.",
+        "takeaway": "Rudolph as representing a modernist position that privileges individual architectural authorship, emphasizing 'the importance of direct control over design without excessive bureaucratic mediation.' This contrasts with Gropius's workshop collectivity and Le Corbusier's systematized mass-production approaches—different modernist answers to how design should be organized and controlled."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "INT"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-005-02-012",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.791916+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:25e21c7009b111b2ee14f08c43897f8663ae363ff16e88790814869083489a2a"
+    }
+  ]
+}
