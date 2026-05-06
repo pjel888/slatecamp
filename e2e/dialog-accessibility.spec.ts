@@ -113,19 +113,29 @@ test.describe('dialog accessibility and interaction', () => {
       .all()
     expect(focusable.length).toBeGreaterThanOrEqual(2)
 
-    // Tab should move focus between dialog elements (not browser chrome)
-    await page.keyboard.press('Tab')
-    const afterFirstTab = await page.evaluate(() =>
-      document.activeElement?.closest('[data-slot="dialog-content"]'),
-    )
-    expect(afterFirstTab).not.toBeNull()
+    const expectDialogFocus = async () => {
+      await expect
+        .poll(async () =>
+          page.evaluate(() => {
+            const active = document.activeElement
+            if (!active?.closest('[data-slot="dialog-content"]')) return null
+            return active.textContent?.trim() || active.getAttribute('aria-label')
+          })
+        )
+        .toMatch(/Cancel|Generate/)
+    }
 
-    // Tab again and verify focus is still within dialog content
+    // Tab should move focus between dialog elements after Base UI focus guards settle.
     await page.keyboard.press('Tab')
-    const afterSecondTab = await page.evaluate(() =>
-      document.activeElement?.closest('[data-slot="dialog-content"]'),
-    )
-    expect(afterSecondTab).not.toBeNull()
+    await expectDialogFocus()
+
+    // Tab again and verify focus is still trapped within dialog controls.
+    await page.keyboard.press('Tab')
+    await expectDialogFocus()
+
+    // Shift+Tab should also wrap within dialog controls.
+    await page.keyboard.press('Shift+Tab')
+    await expectDialogFocus()
 
     // Close with Escape to clean up
     await page.keyboard.press('Escape')
