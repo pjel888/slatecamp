@@ -1,1450 +1,44 @@
 {
-  "generated_at": "2026-05-06T11:59:16.611Z",
-  "selector": "strict-v2",
+  "generated_at": "2026-05-06T12:17:02.908Z",
+  "selector": "strict-v3-item-level-official-source",
   "selected_count": 25,
   "excluded": {
-    "already_published_or_quarantined": 150,
-    "insufficient_linked_article_support": 7,
-    "generic_meta_distractor_leakage": 26,
-    "professional_practice_legal_code_source_gap": 63,
-    "existing_meaningful_explanation": 60,
-    "option_length_giveaway_risk": 8
+    "already_published_or_quarantined": 175,
+    "item_level_official_source_gap": 128,
+    "generic_meta_distractor_leakage": 40,
+    "existing_meaningful_explanation": 100,
+    "insufficient_linked_article_support": 5,
+    "option_length_giveaway_risk": 10,
+    "near_duplicate_option_ambiguity": 1
   },
   "candidates": [
     {
-      "question_id": "dc04ad0e-93db-4dc2-8829-ae1760ee1072",
-      "article_id": "a43232f4-9396-4156-bfec-4606a44b4a72",
-      "article_dir": ".ai/content-audit-export/articles/lea-plan-003-07-core-concept--a43232f4-9396-4156-bfec-4606a44b4a72",
-      "title": "lea-plan-003-07-core-concept",
-      "baseline_hash": "sha256:da3602e6cbcc0d9e278701a446efc772823afdd65cc03b54263c85e18af49ee2",
-      "baseline": {
-        "question_id": "dc04ad0e-93db-4dc2-8829-ae1760ee1072",
-        "article_id": "a43232f4-9396-4156-bfec-4606a44b4a72",
-        "topic_id": "ddaa57c6-fcf9-4fbd-915a-90a903498ba7",
-        "text": "Senior Citizens housing under RA 9257 prioritizes proximity to which services?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Entertainment and recreational facilities only, which are considered essential for social engagement and mental health benefits"
-          },
-          {
-            "id": "b",
-            "text": "Government administrative offices, as they provide necessary services and support for senior citizens"
-          },
-          {
-            "id": "c",
-            "text": "Shopping malls and commercial districts, which offer accessibility to various goods and services needed for daily living"
-          },
-          {
-            "id": "d",
-            "text": "Healthcare facilities, pharmacies, and rehabilitation services"
-          }
-        ],
-        "correct_option_id": "d",
-        "correct_value": null,
-        "accepted_answers": null,
-        "value_tolerance": 0,
-        "question_type": "mcq",
-        "rationale": {
-          "a": "Recreation is beneficial but not the priority identified by RA 9257.",
-          "b": "Administrative proximity is not relevant to senior housing needs.",
-          "c": "Commercial proximity is not a RA 9257 senior housing requirement.",
-          "d": "RA 9257 (Senior Citizens Act, 2003) mandates housing proximity to healthcare, pharmacies, and medical/rehabilitation services. Senior populations depend on frequent healthcare access.",
-          "correct": "RA 9257 (Senior Citizens Act, 2003) provides privileges for seniors including priority access to housing near services, but specific mandates are under DHSUD senior housing guidelines. Senior populations depend on frequent healthcare access.",
-          "takeaway": "Senior housing: healthcare/pharmacy/rehab service proximity mandatory (RA 9257)."
-        },
-        "explanation": null,
-        "code_citation": "RA 9257 (Senior Citizens Act, 2003)",
-        "bloom_level": "apply",
-        "application_context": "code_interpretation",
-        "practice_context": [],
-        "difficulty": 0.7,
-        "difficulty_rating": null,
-        "discrimination_rating": null,
-        "is_assessment": false,
-        "model_id": "ALE-PLAN-003-07-003",
-        "prompt_image_url": null,
-        "created_at": "2026-03-23T19:27:34.537533+00:00",
-        "updated_at": "2026-04-08T07:44:46.846261+00:00",
-        "content_hash": "sha256:da3602e6cbcc0d9e278701a446efc772823afdd65cc03b54263c85e18af49ee2"
-      },
-      "proposed": {
-        "explanation": "Recreation is beneficial but not the priority identified by RA 9257. Administrative proximity is not relevant to senior housing needs. Commercial proximity is not a RA 9257 senior housing requirement. RA 9257 (Senior Citizens Act, 2003) mandates housing proximity to healthcare, pharmacies, and medical/rehabilitation services. Senior populations depend on frequent healthcare access. RA 9257 (Senior Citizens Act, 2003) provides privileges for seniors including priority access to housing near services, but specific mandates are under DHSUD senior housing guidelines. Senior populations depend on frequent healthcare access. Senior housing: healthcare/pharmacy/rehab service proximity mandatory (RA 9257)."
-      },
-      "classification": "strict_explanation_backfill",
-      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
-    },
-    {
-      "question_id": "fef2e489-9ad1-4ccb-ba2c-1f5f7764922b",
-      "article_id": "a43232f4-9396-4156-bfec-4606a44b4a72",
-      "article_dir": ".ai/content-audit-export/articles/lea-plan-003-07-core-concept--a43232f4-9396-4156-bfec-4606a44b4a72",
-      "title": "lea-plan-003-07-core-concept",
-      "baseline_hash": "sha256:c1000fba6d8e7ea13204b85bd5000a29c84abdbe6e5c6dc5dd48469c01680a64",
-      "baseline": {
-        "question_id": "fef2e489-9ad1-4ccb-ba2c-1f5f7764922b",
-        "article_id": "a43232f4-9396-4156-bfec-4606a44b4a72",
-        "topic_id": "ddaa57c6-fcf9-4fbd-915a-90a903498ba7",
-        "text": "Compared to general housing programs, special housing programs in the Philippines are characterized by:",
-        "options": [
-          {
-            "id": "a",
-            "text": "Larger funding allocations and higher construction volumes, often supported by international aid"
-          },
-          {
-            "id": "b",
-            "text": "Exclusive use of private developer financing, with minimal government intervention"
-          },
-          {
-            "id": "c",
-            "text": "Smaller scale, more specialized design, tailored to specific population needs, but often underfunded relative to need"
-          },
-          {
-            "id": "d",
-            "text": "Absence of government involvement; purely community-managed, relying on local resources and volunteer efforts"
-          }
-        ],
-        "correct_option_id": "c",
-        "correct_value": null,
-        "accepted_answers": null,
-        "value_tolerance": 0,
-        "question_type": "mcq",
-        "rationale": {
-          "a": "Special programs receive SMALLER allocations than mainstream programs.",
-          "b": "Special programs use mixed financing (government, community, private).",
-          "c": "Special programs (IP, PWD, senior, disaster) are smaller-scale, highly specialized, and often chronically underfunded. They address legitimate needs but compete for resources with mainstream socialized housing.",
-          "d": "Government has legal obligations (FPIC, accessibility standards); not purely community-managed.",
-          "correct": "Special programs (IP, PWD, senior, disaster) are smaller-scale, highly specialized, and often chronically underfunded. They address legitimate needs but compete for resources with mainstream socialized housing.",
-          "takeaway": "Special housing programs: specialized but underfunded relative to population need."
-        },
-        "explanation": null,
-        "code_citation": "Philippine Housing Policy Review; DHSUD Budget Analysis",
-        "bloom_level": "apply",
-        "application_context": "design_application",
-        "practice_context": [],
-        "difficulty": 0.7,
-        "difficulty_rating": null,
-        "discrimination_rating": null,
-        "is_assessment": false,
-        "model_id": "ALE-PLAN-003-07-008",
-        "prompt_image_url": null,
-        "created_at": "2026-03-23T19:27:34.537533+00:00",
-        "updated_at": "2026-04-08T07:44:46.846261+00:00",
-        "content_hash": "sha256:c1000fba6d8e7ea13204b85bd5000a29c84abdbe6e5c6dc5dd48469c01680a64"
-      },
-      "proposed": {
-        "explanation": "Special programs receive SMALLER allocations than mainstream programs. Special programs use mixed financing (government, community, private). Special programs (IP, PWD, senior, disaster) are smaller-scale, highly specialized, and often chronically underfunded. They address legitimate needs but compete for resources with mainstream socialized housing. Government has legal obligations (FPIC, accessibility standards); not purely community-managed. Special programs (IP, PWD, senior, disaster) are smaller-scale, highly specialized, and often chronically underfunded. They address legitimate needs but compete for resources with mainstream socialized housing. Special housing programs: specialized but underfunded relative to population need."
-      },
-      "classification": "strict_explanation_backfill",
-      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
-    },
-    {
-      "question_id": "0619bbcb-4794-477e-bf46-d88794649473",
-      "article_id": "d4bd5a1a-c6b6-415f-9da3-c5c84f4ab96d",
-      "article_dir": ".ai/content-audit-export/articles/lea-dsgn-005-12-core-concept--d4bd5a1a-c6b6-415f-9da3-c5c84f4ab96d",
-      "title": "lea-dsgn-005-12-core-concept",
-      "baseline_hash": "sha256:40e74c0d5a07a94e014f27e07bc982f0a1fdf0ba9e202f605d054d80f6daf966",
-      "baseline": {
-        "question_id": "0619bbcb-4794-477e-bf46-d88794649473",
-        "article_id": "d4bd5a1a-c6b6-415f-9da3-c5c84f4ab96d",
-        "topic_id": "1bd74bda-b4ff-41df-97fb-fe72b71dc4c2",
-        "text": "What is the maximum slope permitted for a ramp providing accessible access to a heritage building entrance per BP 344 and the 2024 Revised IRR?",
-        "options": [
-          {
-            "id": "a",
-            "text": "1:8, which is only permissible for short ramps not exceeding 1.5 meters in length"
-          },
-          {
-            "id": "b",
-            "text": "1:12 (old standard), typically used for non-heritage buildings and subject to specific exemptions"
-          },
-          {
-            "id": "c",
-            "text": "1:12 (BP 344 2024 Revised IRR Sec. 4.2.2)"
-          },
-          {
-            "id": "d",
-            "text": "1:25, generally applicable to gentle slopes in landscaped areas"
-          }
-        ],
-        "correct_option_id": "c",
-        "correct_value": null,
-        "accepted_answers": null,
-        "value_tolerance": 0,
-        "question_type": "mcq",
-        "rationale": {
-          "a": "1:8 is steeper than allowed and non-compliant.",
-          "b": "1:12 was the previous standard but has been superseded by 1:20 in the 2024 Revised IRR.",
-          "d": "1:25 is less steep than required; 1:20 maximum is the current standard.",
-          "correct": "BP 344 with the 2024 Revised IRR specifies a maximum ramp slope of 1:20 to ensure accessibility for persons using wheelchairs. 1:12 remains the maximum slope per BP 344 2024 Revised IRR Section 4.2.2 (1:20 applies to landings per Section 4.2.3). Heritage status does not relax accessibility requirements. (BP 344 Accessibility Standards; 2024 Revised IRR)",
-          "takeaway": "Ramp slope maximum per BP 344 and 2024 Revised IRR = 1:20 for all buildings, including heritage properties. (Previously 1:12 under old IRR, but that is no longer current.)"
-        },
-        "explanation": null,
-        "code_citation": "BP 344 Accessibility Standards",
-        "bloom_level": "apply",
-        "application_context": "code_interpretation",
-        "practice_context": [
-          "accessibility",
-          "bp 344"
-        ],
-        "difficulty": 0.7,
-        "difficulty_rating": null,
-        "discrimination_rating": null,
-        "is_assessment": false,
-        "model_id": "ALE-DSGN-005-12-006",
-        "prompt_image_url": null,
-        "created_at": "2026-03-23T19:29:00.291039+00:00",
-        "updated_at": "2026-04-08T07:44:46.846261+00:00",
-        "content_hash": "sha256:40e74c0d5a07a94e014f27e07bc982f0a1fdf0ba9e202f605d054d80f6daf966"
-      },
-      "proposed": {
-        "explanation": "1:8 is steeper than allowed and non-compliant. 1:12 was the previous standard but has been superseded by 1:20 in the 2024 Revised IRR. 1:25 is less steep than required; 1:20 maximum is the current standard. BP 344 with the 2024 Revised IRR specifies a maximum ramp slope of 1:20 to ensure accessibility for persons using wheelchairs. 1:12 remains the maximum slope per BP 344 2024 Revised IRR Section 4.2.2 (1:20 applies to landings per Section 4.2.3). Heritage status does not relax accessibility requirements. (BP 344 Accessibility Standards; 2024 Revised IRR) Ramp slope maximum per BP 344 and 2024 Revised IRR = 1:20 for all buildings, including heritage properties. (Previously 1:12 under old IRR, but that is no longer current.)"
-      },
-      "classification": "strict_explanation_backfill",
-      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
-    },
-    {
-      "question_id": "1739337c-b67d-4e37-b92e-e97729ce3394",
-      "article_id": "d4bd5a1a-c6b6-415f-9da3-c5c84f4ab96d",
-      "article_dir": ".ai/content-audit-export/articles/lea-dsgn-005-12-core-concept--d4bd5a1a-c6b6-415f-9da3-c5c84f4ab96d",
-      "title": "lea-dsgn-005-12-core-concept",
-      "baseline_hash": "sha256:97303e17e4f81f587645eba424ad804f92efbb7f60e334b03af5261c69584621",
-      "baseline": {
-        "question_id": "1739337c-b67d-4e37-b92e-e97729ce3394",
-        "article_id": "d4bd5a1a-c6b6-415f-9da3-c5c84f4ab96d",
-        "topic_id": "1bd74bda-b4ff-41df-97fb-fe72b71dc4c2",
-        "text": "During heritage building adaptive reuse, the architect discovers the main entrance doorway is 750mm wide, less than the required 900mm accessible clear width per BP 344. What is the appropriate approach?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Ignore the requirement because heritage buildings are exempt from accessibility laws, which prioritize preservation over accessibility"
-          },
-          {
-            "id": "b",
-            "text": "Demolish and rebuild the historic doorway to meet 900mm requirement, ensuring compliance with modern accessibility standards"
-          },
-          {
-            "id": "c",
-            "text": "Prepare a variance request with documented cultural constraint and code impossibility; propose accessible alternative entrance"
-          },
-          {
-            "id": "d",
-            "text": "Use surface-mounted frame to effectively narrow the approach instead, which may not comply with accessibility standards but preserves the original structure"
-          }
-        ],
-        "correct_option_id": "c",
-        "correct_value": null,
-        "accepted_answers": null,
-        "value_tolerance": 0,
-        "question_type": "mcq",
-        "rationale": {
-          "a": "Heritage buildings must still meet accessibility standards; no exemption exists.",
-          "b": "Demolishing historic features contradicts preservation and is a last resort.",
-          "d": "Narrowing the approach makes it less accessible; contrary to intent.",
-          "correct": "Heritage status does NOT exempt buildings from NBC/BP 344 compliance. However, when code compliance directly conflicts with preservation (e.g., enlarging a historic doorway destroys character), an architect may request a variance from the Building Official and NHCP, justified by the cultural constraint and impossible cost/damage. Alternative accessible routes (e.g., secondary entrance, accessible elevator elsewhere) must be provided. (RA 10066; NBC Variance Procedure; BP 344)",
-          "takeaway": "Heritage code conflicts require variance with cultural justification + alternative accessible route, not exemption."
-        },
-        "explanation": null,
-        "code_citation": "RA 10066; NBC Variance Procedure; BP 344",
-        "bloom_level": "apply",
-        "application_context": "code_interpretation",
-        "practice_context": [
-          "accessibility",
-          "heritage conservation",
-          "variance"
-        ],
-        "difficulty": 0.7,
-        "difficulty_rating": null,
-        "discrimination_rating": null,
-        "is_assessment": false,
-        "model_id": "ALE-DSGN-005-12-005",
-        "prompt_image_url": null,
-        "created_at": "2026-03-23T19:29:00.291039+00:00",
-        "updated_at": "2026-04-08T07:44:46.846261+00:00",
-        "content_hash": "sha256:97303e17e4f81f587645eba424ad804f92efbb7f60e334b03af5261c69584621"
-      },
-      "proposed": {
-        "explanation": "Heritage buildings must still meet accessibility standards; no exemption exists. Demolishing historic features contradicts preservation and is a last resort. Narrowing the approach makes it less accessible; contrary to intent. Heritage status does NOT exempt buildings from NBC/BP 344 compliance. However, when code compliance directly conflicts with preservation (e.g., enlarging a historic doorway destroys character), an architect may request a variance from the Building Official and NHCP, justified by the cultural constraint and impossible cost/damage. Alternative accessible routes (e.g., secondary entrance, accessible elevator elsewhere) must be provided. (RA 10066; NBC Variance Procedure; BP 344) Heritage code conflicts require variance with cultural justification + alternative accessible route, not exemption."
-      },
-      "classification": "strict_explanation_backfill",
-      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
-    },
-    {
-      "question_id": "8a98aef9-0ec2-44b3-9997-6ce70ed82125",
-      "article_id": "d4bd5a1a-c6b6-415f-9da3-c5c84f4ab96d",
-      "article_dir": ".ai/content-audit-export/articles/lea-dsgn-005-12-core-concept--d4bd5a1a-c6b6-415f-9da3-c5c84f4ab96d",
-      "title": "lea-dsgn-005-12-core-concept",
-      "baseline_hash": "sha256:7aad1d7f13124789d378ed68a1374d01524759c18ea1bab6b577dac7e717282e",
-      "baseline": {
-        "question_id": "8a98aef9-0ec2-44b3-9997-6ce70ed82125",
-        "article_id": "d4bd5a1a-c6b6-415f-9da3-c5c84f4ab96d",
-        "topic_id": "1bd74bda-b4ff-41df-97fb-fe72b71dc4c2",
-        "text": "The following Philippine law mandates the protection of registered heritage properties and requires NHCP approval for significant modifications:",
-        "options": [
-          {
-            "id": "a",
-            "text": "RA 7160 (Local Government Code) which delegates regulatory authority to local government units"
-          },
-          {
-            "id": "b",
-            "text": "RA 10066 (Cultural Heritage Act of 2009)"
-          },
-          {
-            "id": "c",
-            "text": "BP 344 (Accessibility Law) which governs barrier-free design for persons with disability"
-          },
-          {
-            "id": "d",
-            "text": "PD 1096 (National Building Code) which sets minimum standards for building construction"
-          }
-        ],
-        "correct_option_id": "b",
-        "correct_value": null,
-        "accepted_answers": null,
-        "value_tolerance": 0,
-        "question_type": "mcq",
-        "rationale": {
-          "a": "RA 7160 governs local government structure; not heritage-specific.",
-          "c": "BP 344 addresses accessibility for persons with disabilities; not heritage-specific.",
-          "d": "PD 1096 is the National Building Code; establishes construction standards but not heritage protection.",
-          "correct": "**RA 10066** (Cultural Heritage Act of 2009) is the primary Philippine law protecting movable and immovable cultural property, including heritage buildings. It establishes the National Historical Commission of the Philippines (NHCP) as the regulatory authority and mandates NHCP approval for adaptive reuse and significant modifications. (RA 10066)",
-          "takeaway": "RA 10066 (Cultural Heritage Act of 2009) mandates heritage protection and NHCP approval for adaptive reuse."
-        },
-        "explanation": null,
-        "code_citation": "RA 10066 Cultural Heritage Act of 2009",
-        "bloom_level": "analyze",
-        "application_context": "code_interpretation",
-        "practice_context": [
-          "philippine law",
-          "heritage conservation"
-        ],
-        "difficulty": 0.9,
-        "difficulty_rating": null,
-        "discrimination_rating": null,
-        "is_assessment": false,
-        "model_id": "ALE-DSGN-005-12-010",
-        "prompt_image_url": null,
-        "created_at": "2026-03-23T19:29:00.291039+00:00",
-        "updated_at": "2026-04-08T07:44:46.846261+00:00",
-        "content_hash": "sha256:7aad1d7f13124789d378ed68a1374d01524759c18ea1bab6b577dac7e717282e"
-      },
-      "proposed": {
-        "explanation": "RA 7160 governs local government structure; not heritage-specific. BP 344 addresses accessibility for persons with disabilities; not heritage-specific. PD 1096 is the National Building Code; establishes construction standards but not heritage protection. **RA 10066** (Cultural Heritage Act of 2009) is the primary Philippine law protecting movable and immovable cultural property, including heritage buildings. It establishes the National Historical Commission of the Philippines (NHCP) as the regulatory authority and mandates NHCP approval for adaptive reuse and significant modifications. (RA 10066) RA 10066 (Cultural Heritage Act of 2009) mandates heritage protection and NHCP approval for adaptive reuse."
-      },
-      "classification": "strict_explanation_backfill",
-      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
-    },
-    {
-      "question_id": "648e498c-4fcb-447c-96cd-5b38b07f5ddb",
-      "article_id": "d4bd5a1a-c6b6-415f-9da3-c5c84f4ab96d",
-      "article_dir": ".ai/content-audit-export/articles/lea-dsgn-005-12-core-concept--d4bd5a1a-c6b6-415f-9da3-c5c84f4ab96d",
-      "title": "lea-dsgn-005-12-core-concept",
-      "baseline_hash": "sha256:739f24670c5a22ce5752203ec7e615939d6035f8dfa806b8d445cc36c13b6a25",
-      "baseline": {
-        "question_id": "648e498c-4fcb-447c-96cd-5b38b07f5ddb",
-        "article_id": "d4bd5a1a-c6b6-415f-9da3-c5c84f4ab96d",
-        "topic_id": "1bd74bda-b4ff-41df-97fb-fe72b71dc4c2",
-        "text": "A heritage mansion is being adapted for use as a boutique hotel. The building's exterior and character-defining features must be preserved. When routing new mechanical systems (HVAC, plumbing), what design principle is preferred?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Permanent integration into structural walls to hide systems completely, which may compromise the building's structural integrity"
-          },
-          {
-            "id": "b",
-            "text": "Reversible interventions routed in attics, crawl spaces, or secondary zones with minimal visual impact"
-          },
-          {
-            "id": "c",
-            "text": "Surface-mounted systems throughout, regardless of aesthetic impact, prioritizing ease of access for maintenance"
-          },
-          {
-            "id": "d",
-            "text": "Removal of all historic features to accommodate modern systems, which is generally discouraged in heritage conservation"
-          }
-        ],
-        "correct_option_id": "b",
-        "correct_value": null,
-        "accepted_answers": null,
-        "value_tolerance": 0,
-        "question_type": "mcq",
-        "rationale": {
-          "a": "Permanent integration (cutting beams, embedding in walls) damages original structure and violates reversibility principles.",
-          "c": "Visible system routing compromises historic appearance unless carefully integrated.",
-          "d": "Removal of historic features is destructive and contrary to preservation ethics.",
-          "correct": "Reversible interventions are the gold standard in heritage conservation. New systems are routed through attics, crawl spaces, secondary walls, or concealed areas to minimize damage and visual impact on character-defining features. This allows future removal or modification without destroying heritage fabric. (NHCP Preservation Standards; Venice Charter principles adapted to Philippine context)",
-          "takeaway": "Heritage system routing = reversible interventions in hidden zones (attics, secondary walls) to preserve character and fabric."
-        },
-        "explanation": null,
-        "code_citation": "NHCP Preservation Standards; Venice Charter",
-        "bloom_level": "understand",
-        "application_context": "recall",
-        "practice_context": [
-          "heritage conservation",
-          "system routing"
-        ],
-        "difficulty": 0.5,
-        "difficulty_rating": null,
-        "discrimination_rating": null,
-        "is_assessment": false,
-        "model_id": "ALE-DSGN-005-12-003",
-        "prompt_image_url": null,
-        "created_at": "2026-03-23T19:29:00.291039+00:00",
-        "updated_at": "2026-04-08T07:44:46.846261+00:00",
-        "content_hash": "sha256:739f24670c5a22ce5752203ec7e615939d6035f8dfa806b8d445cc36c13b6a25"
-      },
-      "proposed": {
-        "explanation": "Permanent integration (cutting beams, embedding in walls) damages original structure and violates reversibility principles. Visible system routing compromises historic appearance unless carefully integrated. Removal of historic features is destructive and contrary to preservation ethics. Reversible interventions are the gold standard in heritage conservation. New systems are routed through attics, crawl spaces, secondary walls, or concealed areas to minimize damage and visual impact on character-defining features. This allows future removal or modification without destroying heritage fabric. (NHCP Preservation Standards; Venice Charter principles adapted to Philippine context) Heritage system routing = reversible interventions in hidden zones (attics, secondary walls) to preserve character and fabric."
-      },
-      "classification": "strict_explanation_backfill",
-      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
-    },
-    {
-      "question_id": "d3296a38-6fa1-4587-91bd-c9ecfa054644",
-      "article_id": "d4bd5a1a-c6b6-415f-9da3-c5c84f4ab96d",
-      "article_dir": ".ai/content-audit-export/articles/lea-dsgn-005-12-core-concept--d4bd5a1a-c6b6-415f-9da3-c5c84f4ab96d",
-      "title": "lea-dsgn-005-12-core-concept",
-      "baseline_hash": "sha256:c6b42d6669712c15e33ee24e94e6383157d37ebefbba1380a99c453936892bbe",
-      "baseline": {
-        "question_id": "d3296a38-6fa1-4587-91bd-c9ecfa054644",
-        "article_id": "d4bd5a1a-c6b6-415f-9da3-c5c84f4ab96d",
-        "topic_id": "1bd74bda-b4ff-41df-97fb-fe72b71dc4c2",
-        "text": "A colonial-era mansion (registered heritage property) is being adapted as a restaurant (Group E mercantile). The basement kitchen generates grease-laden exhaust requiring ventilation. What design approach best preserves the exterior character?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Route exhaust ductwork visibly across the heritage facade, which may violate preservation guidelines"
-          },
-          {
-            "id": "b",
-            "text": "Disguise ductwork with paint matching the wall color, which is a temporary solution"
-          },
-          {
-            "id": "c",
-            "text": "Conceal exhaust discharge within attic/roof space or interior walls; route ductwork through secondary areas to minimize facade alteration (reversible intervention)"
-          },
-          {
-            "id": "d",
-            "text": "Locate kitchen elsewhere in the neighborhood to avoid modifying the heritage building, which may not be feasible"
-          }
-        ],
-        "correct_option_id": "c",
-        "correct_value": null,
-        "accepted_answers": null,
-        "value_tolerance": 0,
-        "question_type": "mcq",
-        "rationale": {
-          "a": "Visible ductwork across the facade diminishes heritage character and is not reversible.",
-          "b": "Paint-matching conceals but does not eliminate the visual intrusion; reversible routing is better.",
-          "d": "Locating kitchen off-site is not always practical; in-place routing (concealed) is the standard solution.",
-          "correct": "Reversible intervention routed through concealed spaces (attic, interior walls, secondary zones) minimizes visual impact on character-defining exterior. This approach allows future removal without permanently altering the heritage facade. Discharging through the roof (if less visible than a facade penetration) is preferable to wall discharge. (NHCP Preservation Standards; Reversible Design Principles)",
-          "takeaway": "Heritage building systems = conceal through attic, interior walls, secondary zones. Minimize facade penetrations. Reversible."
-        },
-        "explanation": null,
-        "code_citation": "NHCP Preservation Standards; Reversible Design Principles",
-        "bloom_level": "analyze",
-        "application_context": "design_application",
-        "practice_context": [
-          "heritage conservation",
-          "mechanical systems"
-        ],
-        "difficulty": 0.9,
-        "difficulty_rating": null,
-        "discrimination_rating": null,
-        "is_assessment": false,
-        "model_id": "ALE-DSGN-005-12-009",
-        "prompt_image_url": null,
-        "created_at": "2026-03-23T19:29:00.291039+00:00",
-        "updated_at": "2026-04-08T07:44:46.846261+00:00",
-        "content_hash": "sha256:c6b42d6669712c15e33ee24e94e6383157d37ebefbba1380a99c453936892bbe"
-      },
-      "proposed": {
-        "explanation": "Visible ductwork across the facade diminishes heritage character and is not reversible. Paint-matching conceals but does not eliminate the visual intrusion; reversible routing is better. Locating kitchen off-site is not always practical; in-place routing (concealed) is the standard solution. Reversible intervention routed through concealed spaces (attic, interior walls, secondary zones) minimizes visual impact on character-defining exterior. This approach allows future removal without permanently altering the heritage facade. Discharging through the roof (if less visible than a facade penetration) is preferable to wall discharge. (NHCP Preservation Standards; Reversible Design Principles) Heritage building systems = conceal through attic, interior walls, secondary zones. Minimize facade penetrations. Reversible."
-      },
-      "classification": "strict_explanation_backfill",
-      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
-    },
-    {
-      "question_id": "7a5cd003-7197-4406-8320-9336ee3ed844",
-      "article_id": "d4bd5a1a-c6b6-415f-9da3-c5c84f4ab96d",
-      "article_dir": ".ai/content-audit-export/articles/lea-dsgn-005-12-core-concept--d4bd5a1a-c6b6-415f-9da3-c5c84f4ab96d",
-      "title": "lea-dsgn-005-12-core-concept",
-      "baseline_hash": "sha256:876345451acd8a633c365b6d48a39396d79581e74700c0ee1dad8759e219ba6a",
-      "baseline": {
-        "question_id": "7a5cd003-7197-4406-8320-9336ee3ed844",
-        "article_id": "d4bd5a1a-c6b6-415f-9da3-c5c84f4ab96d",
-        "topic_id": "1bd74bda-b4ff-41df-97fb-fe72b71dc4c2",
-        "text": "Before beginning design modifications to a registered heritage property, which agency's clearance is mandatory in the Philippines?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Department of Trade and Industry (DTI), which oversees commercial aspects of heritage properties"
-          },
-          {
-            "id": "b",
-            "text": "National Historical Commission of the Philippines (NHCP)"
-          },
-          {
-            "id": "c",
-            "text": "Department of Public Works and Highways (DPWH), responsible for infrastructure and public works"
-          },
-          {
-            "id": "d",
-            "text": "Philippine Statistics Authority (PSA), which collects data on heritage sites for national records"
-          }
-        ],
-        "correct_option_id": "b",
-        "correct_value": null,
-        "accepted_answers": null,
-        "value_tolerance": 0,
-        "question_type": "mcq",
-        "rationale": {
-          "a": "DTI governs trade and industry; not responsible for heritage conservation.",
-          "c": "DPWH handles public works; NHCP is the heritage authority.",
-          "d": "PSA manages statistics; not responsible for cultural heritage.",
-          "correct": "The National Historical Commission of the Philippines (NHCP) administers **RA 10066** (Cultural Heritage Act) and must provide clearance for any significant modification or adaptive reuse of registered heritage properties. Clearance must be obtained during design phase before construction. (RA 10066, NHCP Mandate)",
-          "takeaway": "NHCP (National Historical Commission of the Philippines) clearance is mandatory for heritage property adaptive reuse per RA 10066."
-        },
-        "explanation": null,
-        "code_citation": "RA 10066; NHCP Mandate",
-        "bloom_level": "remember",
-        "application_context": "code_interpretation",
-        "practice_context": [
-          "regulatory compliance",
-          "heritage conservation"
-        ],
-        "difficulty": 0.3,
-        "difficulty_rating": null,
-        "discrimination_rating": null,
-        "is_assessment": false,
-        "model_id": "ALE-DSGN-005-12-002",
-        "prompt_image_url": null,
-        "created_at": "2026-03-23T19:29:00.291039+00:00",
-        "updated_at": "2026-04-08T07:44:46.846261+00:00",
-        "content_hash": "sha256:876345451acd8a633c365b6d48a39396d79581e74700c0ee1dad8759e219ba6a"
-      },
-      "proposed": {
-        "explanation": "DTI governs trade and industry; not responsible for heritage conservation. DPWH handles public works; NHCP is the heritage authority. PSA manages statistics; not responsible for cultural heritage. The National Historical Commission of the Philippines (NHCP) administers **RA 10066** (Cultural Heritage Act) and must provide clearance for any significant modification or adaptive reuse of registered heritage properties. Clearance must be obtained during design phase before construction. (RA 10066, NHCP Mandate) NHCP (National Historical Commission of the Philippines) clearance is mandatory for heritage property adaptive reuse per RA 10066."
-      },
-      "classification": "strict_explanation_backfill",
-      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
-    },
-    {
-      "question_id": "dd7eb8c9-0c40-4101-a106-8062190a2102",
-      "article_id": "d4bd5a1a-c6b6-415f-9da3-c5c84f4ab96d",
-      "article_dir": ".ai/content-audit-export/articles/lea-dsgn-005-12-core-concept--d4bd5a1a-c6b6-415f-9da3-c5c84f4ab96d",
-      "title": "lea-dsgn-005-12-core-concept",
-      "baseline_hash": "sha256:afe5b0039154ab0e5e7a0ebf94f8948da9e840ce275dc9d6bb853fc46d9ab1e8",
-      "baseline": {
-        "question_id": "dd7eb8c9-0c40-4101-a106-8062190a2102",
-        "article_id": "d4bd5a1a-c6b6-415f-9da3-c5c84f4ab96d",
-        "topic_id": "1bd74bda-b4ff-41df-97fb-fe72b71dc4c2",
-        "text": "A century-old Spanish-era church (originally Group C assembly) is being adaptively reused as a public library and archive. What is the new occupancy classification based on the reuse function?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Group A (Residential) because it is heritage property, which often includes living quarters for caretakers or staff"
-          },
-          {
-            "id": "b",
-            "text": "Group C (Education and Recreation) per NBC Rule VII; note RA 9514 classifies libraries as Assembly occupancy."
-          },
-          {
-            "id": "c",
-            "text": "Group D (Institutional) because it is a cultural institution, serving the public with educational and informational resources"
-          },
-          {
-            "id": "d",
-            "text": "Group F (Industrial) because archives require special storage, including climate control and fire suppression systems"
-          }
-        ],
-        "correct_option_id": "b",
-        "correct_value": null,
-        "accepted_answers": null,
-        "value_tolerance": 0,
-        "question_type": "mcq",
-        "rationale": {
-          "a": "Group A is residential; heritage property status does not change occupancy.",
-          "c": "Group D is institutional (care facilities); a public library is Group C.",
-          "d": "Group F is industrial/manufacturing; archives in a library are Group C.",
-          "correct": "Occupancy classification for adaptive reuse is determined by the new programmed function, not the original use. A heritage church reused as a library is Group C (education and recreation). The building's historic status does not change its code occupancy classification. (NBC Occupancy Classification; RA 10066 Adaptive Reuse Principles)",
-          "takeaway": "Heritage adaptive reuse occupancy classification = new programmed function, not original use."
-        },
-        "explanation": null,
-        "code_citation": "NBC Occupancy Classification; RA 10066",
-        "bloom_level": "remember",
-        "application_context": "code_interpretation",
-        "practice_context": [
-          "occupancy classification",
-          "adaptive reuse"
-        ],
-        "difficulty": 0.3,
-        "difficulty_rating": null,
-        "discrimination_rating": null,
-        "is_assessment": false,
-        "model_id": "ALE-DSGN-005-12-001",
-        "prompt_image_url": null,
-        "created_at": "2026-03-23T19:29:00.291039+00:00",
-        "updated_at": "2026-04-08T07:44:46.846261+00:00",
-        "content_hash": "sha256:afe5b0039154ab0e5e7a0ebf94f8948da9e840ce275dc9d6bb853fc46d9ab1e8"
-      },
-      "proposed": {
-        "explanation": "Group A is residential; heritage property status does not change occupancy. Group D is institutional (care facilities); a public library is Group C. Group F is industrial/manufacturing; archives in a library are Group C. Occupancy classification for adaptive reuse is determined by the new programmed function, not the original use. A heritage church reused as a library is Group C (education and recreation). The building's historic status does not change its code occupancy classification. (NBC Occupancy Classification; RA 10066 Adaptive Reuse Principles) Heritage adaptive reuse occupancy classification = new programmed function, not original use."
-      },
-      "classification": "strict_explanation_backfill",
-      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
-    },
-    {
-      "question_id": "77ada63b-b941-424c-bb47-08e999b3b5ff",
-      "article_id": "62274e90-5cb3-4bc0-85a1-639858e47736",
-      "article_dir": ".ai/content-audit-export/articles/lea-theo-002-01-core-concept--62274e90-5cb3-4bc0-85a1-639858e47736",
-      "title": "lea-theo-002-01-core-concept",
-      "baseline_hash": "sha256:9ba350621d7db745d3ccf749d6bcafc617c003fb0ce131e90393a023ddf71f40",
-      "baseline": {
-        "question_id": "77ada63b-b941-424c-bb47-08e999b3b5ff",
-        "article_id": "62274e90-5cb3-4bc0-85a1-639858e47736",
-        "topic_id": "5fd68568-c8c9-454a-b95e-f671df0f1605",
-        "text": "Which of these pairs correctly distinguishes between piazza and cortile?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Cortile serves private functions; piazza serves only ceremonial purposes, often in urban settings"
-          },
-          {
-            "id": "b",
-            "text": "Cortile is internal with arcaded surrounds; piazza is external civic gathering space"
-          },
-          {
-            "id": "c",
-            "text": "Piazza has covered walkways; cortile is entirely open to sky, allowing for natural light"
-          },
-          {
-            "id": "d",
-            "text": "Piazza is internal and palace-specific; cortile is external and public, often found in residential areas"
-          }
-        ],
-        "correct_option_id": "b",
-        "correct_value": null,
-        "accepted_answers": null,
-        "value_tolerance": 0,
-        "question_type": "mcq",
-        "rationale": {
-          "a": "Both serve multiple functions; piazza certainly serves commercial and social functions, not only ceremony.",
-          "c": "Incorrect—cortile is surrounded by arcaded covered walkways; piazza is open to sky.",
-          "d": "Reversed—piazza is the external public element; cortile is the internal palace element.",
-          "correct": "This accurately reverses the common mistake: cortile is the internal palace courtyard (Palazzo Medici-Riccardi); piazza is the public external civic square (Piazza San Marco).",
-          "takeaway": "This accurately reverses the common mistake: cortile is the internal palace courtyard (Palazzo Medici-Riccardi); piazza is the public external civic square (Piazza San Marco)."
-        },
-        "explanation": null,
-        "code_citation": null,
-        "bloom_level": "remember",
-        "application_context": "design_application",
-        "practice_context": [
-          "CMP"
-        ],
-        "difficulty": 0.5,
-        "difficulty_rating": null,
-        "discrimination_rating": null,
-        "is_assessment": false,
-        "model_id": "ALE-THEO-002-01-003",
-        "prompt_image_url": null,
-        "created_at": "2026-03-23T19:27:53.522336+00:00",
-        "updated_at": "2026-04-08T07:44:46.846261+00:00",
-        "content_hash": "sha256:9ba350621d7db745d3ccf749d6bcafc617c003fb0ce131e90393a023ddf71f40"
-      },
-      "proposed": {
-        "explanation": "Both serve multiple functions; piazza certainly serves commercial and social functions, not only ceremony. Incorrect—cortile is surrounded by arcaded covered walkways; piazza is open to sky. Reversed—piazza is the external public element; cortile is the internal palace element. This accurately reverses the common mistake: cortile is the internal palace courtyard (Palazzo Medici-Riccardi); piazza is the public external civic square (Piazza San Marco). This accurately reverses the common mistake: cortile is the internal palace courtyard (Palazzo Medici-Riccardi); piazza is the public external civic square (Piazza San Marco)."
-      },
-      "classification": "strict_explanation_backfill",
-      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
-    },
-    {
-      "question_id": "30f34bc4-098b-44b7-bba3-d3ea6ee6fa69",
-      "article_id": "62274e90-5cb3-4bc0-85a1-639858e47736",
-      "article_dir": ".ai/content-audit-export/articles/lea-theo-002-01-core-concept--62274e90-5cb3-4bc0-85a1-639858e47736",
-      "title": "lea-theo-002-01-core-concept",
-      "baseline_hash": "sha256:fc50d3b1b0c2f3ee9438ea18c47242f1eb9fed27fccadc0f5c655301a80ffbf4",
-      "baseline": {
-        "question_id": "30f34bc4-098b-44b7-bba3-d3ea6ee6fa69",
-        "article_id": "62274e90-5cb3-4bc0-85a1-639858e47736",
-        "topic_id": "5fd68568-c8c9-454a-b95e-f671df0f1605",
-        "text": "How do the four primary human needs (shelter, circulation, environmental control, structure) relate to architectural elements in an actual building design?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Most elements serve multiple needs simultaneously; a wall provides shelter, structure, and environmental control at once"
-          },
-          {
-            "id": "b",
-            "text": "These needs are addressed separately—shelter elements, then circulation, then environmental control added later, ensuring each aspect is independently optimized"
-          },
-          {
-            "id": "c",
-            "text": "Each element serves only one need; design is simplified by single-purpose elements, which can lead to more efficient construction processes"
-          },
-          {
-            "id": "d",
-            "text": "Shelter and circulation are primary; environmental control and structure are secondary concerns, often considered only after the main design is complete"
-          }
-        ],
-        "correct_option_id": "a",
-        "correct_value": null,
-        "accepted_answers": null,
-        "value_tolerance": 0,
-        "question_type": "mcq",
-        "rationale": {
-          "b": "Elements are designed simultaneously to address multiple needs, not sequentially added.",
-          "c": "This oversimplifies; actual design requires elements serving multiple functions.",
-          "d": "All four needs are equally important and integrated.",
-          "correct": "Every architectural element is multifunctional: walls enclose space (shelter), support loads (structure), control weather/light (environmental control), and define circulation paths. Design excellence comes from integrating all four needs simultaneously.",
-          "takeaway": "Design excellence comes from integrating all four needs simultaneously."
-        },
-        "explanation": null,
-        "code_citation": null,
-        "bloom_level": "analyze",
-        "application_context": "code_interpretation",
-        "practice_context": [
-          "SYS"
-        ],
-        "difficulty": 0.5,
-        "difficulty_rating": null,
-        "discrimination_rating": null,
-        "is_assessment": false,
-        "model_id": "ALE-THEO-002-01-012",
-        "prompt_image_url": null,
-        "created_at": "2026-03-23T19:27:53.522336+00:00",
-        "updated_at": "2026-04-08T07:44:46.846261+00:00",
-        "content_hash": "sha256:fc50d3b1b0c2f3ee9438ea18c47242f1eb9fed27fccadc0f5c655301a80ffbf4"
-      },
-      "proposed": {
-        "explanation": "Elements are designed simultaneously to address multiple needs, not sequentially added. This oversimplifies; actual design requires elements serving multiple functions. All four needs are equally important and integrated. Every architectural element is multifunctional: walls enclose space (shelter), support loads (structure), control weather/light (environmental control), and define circulation paths. Design excellence comes from integrating all four needs simultaneously. Design excellence comes from integrating all four needs simultaneously."
-      },
-      "classification": "strict_explanation_backfill",
-      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
-    },
-    {
-      "question_id": "b26b6881-a570-410c-bfd2-743872506172",
-      "article_id": "62274e90-5cb3-4bc0-85a1-639858e47736",
-      "article_dir": ".ai/content-audit-export/articles/lea-theo-002-01-core-concept--62274e90-5cb3-4bc0-85a1-639858e47736",
-      "title": "lea-theo-002-01-core-concept",
-      "baseline_hash": "sha256:2a9ebf620342570bba6ee5bab13ea9848832bd9620491f8885adae7a3949fdf7",
-      "baseline": {
-        "question_id": "b26b6881-a570-410c-bfd2-743872506172",
-        "article_id": "62274e90-5cb3-4bc0-85a1-639858e47736",
-        "topic_id": "5fd68568-c8c9-454a-b95e-f671df0f1605",
-        "text": "How do shell structures and domes both serve structural and shelter functions, yet through different geometric principles?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Shells distribute loads along curved paths; domes distribute loads vertically only, which limits their application in certain structural scenarios"
-          },
-          {
-            "id": "b",
-            "text": "Domes are hemispherical only; shells can be any curved geometry, allowing for more diverse architectural expressions"
-          },
-          {
-            "id": "c",
-            "text": "Shells are thin and curved, gaining strength through curvature; domes are massive and heavy, requiring thick walls"
-          },
-          {
-            "id": "d",
-            "text": "Shells require interior columns for support; domes span without interior supports, making them ideal for large open spaces"
-          }
-        ],
-        "correct_option_id": "c",
-        "correct_value": null,
-        "accepted_answers": null,
-        "value_tolerance": 0,
-        "question_type": "mcq",
-        "rationale": {
-          "a": "Domes also distribute loads outward and downward, not just vertically.",
-          "b": "Both dome and shell are curved geometries; domes are a specific type of vault/shell.",
-          "d": "Neither requires interior columns—both span through curved geometry.",
-          "correct": "Shells gain structural efficiency through curvature (like eggshell strength), allowing thin material; domes also use curvature to span openings but are often thicker. Both use curved form, but shells exemplify economy through curvature's thinness.",
-          "takeaway": "Both use curved form, but shells exemplify economy through curvature's thinness."
-        },
-        "explanation": null,
-        "code_citation": null,
-        "bloom_level": "apply",
-        "application_context": "design_application",
-        "practice_context": [
-          "CMP"
-        ],
-        "difficulty": 0.5,
-        "difficulty_rating": null,
-        "discrimination_rating": null,
-        "is_assessment": false,
-        "model_id": "ALE-THEO-002-01-010",
-        "prompt_image_url": null,
-        "created_at": "2026-03-23T19:27:53.522336+00:00",
-        "updated_at": "2026-04-08T07:44:46.846261+00:00",
-        "content_hash": "sha256:2a9ebf620342570bba6ee5bab13ea9848832bd9620491f8885adae7a3949fdf7"
-      },
-      "proposed": {
-        "explanation": "Domes also distribute loads outward and downward, not just vertically. Both dome and shell are curved geometries; domes are a specific type of vault/shell. Neither requires interior columns—both span through curved geometry. Shells gain structural efficiency through curvature (like eggshell strength), allowing thin material; domes also use curvature to span openings but are often thicker. Both use curved form, but shells exemplify economy through curvature's thinness. Both use curved form, but shells exemplify economy through curvature's thinness."
-      },
-      "classification": "strict_explanation_backfill",
-      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
-    },
-    {
-      "question_id": "b52aef0e-bf29-4862-8504-1043690499dc",
-      "article_id": "62274e90-5cb3-4bc0-85a1-639858e47736",
-      "article_dir": ".ai/content-audit-export/articles/lea-theo-002-01-core-concept--62274e90-5cb3-4bc0-85a1-639858e47736",
-      "title": "lea-theo-002-01-core-concept",
-      "baseline_hash": "sha256:7256d2a9774a36c73e98b2596d105bd594025aa7cd82861ac4efca755a9e7d10",
-      "baseline": {
-        "question_id": "b52aef0e-bf29-4862-8504-1043690499dc",
-        "article_id": "62274e90-5cb3-4bc0-85a1-639858e47736",
-        "topic_id": "5fd68568-c8c9-454a-b95e-f671df0f1605",
-        "text": "How do mansard roofs and domes both serve shelter, yet through different structural and formal strategies?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Mansard roofs shed water efficiently; domes shed water poorly and require central drainage, especially in regions with high rainfall"
-          },
-          {
-            "id": "b",
-            "text": "Mansard roofs are decorative elements; domes are purely structural, often used in monumental architecture to symbolize grandeur"
-          },
-          {
-            "id": "c",
-            "text": "Both use pitched slopes to prevent water pooling; both use arches to distribute loads, although domes achieve this through a continuous curved surface"
-          },
-          {
-            "id": "d",
-            "text": "Mansard roofs create additional attic space; domes create open interior space by spanning large openings without interior columns"
-          }
-        ],
-        "correct_option_id": "d",
-        "correct_value": null,
-        "accepted_answers": null,
-        "value_tolerance": 0,
-        "question_type": "mcq",
-        "rationale": {
-          "a": "Domes (like Pantheon) shed water effectively through slope; the comparison is false.",
-          "b": "Both are highly functional structural elements, not decorative.",
-          "c": "Domes use curvature and load distribution (outward/downward), not pitched water-shedding slopes like mansards.",
-          "correct": "Mansards provide shelter through additional enclosed volume (historically for tax-exempt attics); domes provide shelter by spanning large circular openings with elegant curved vaults—both shelter strategies but structurally and spatially distinct.",
-          "takeaway": "Mansards provide shelter through additional enclosed volume (historically for tax-exempt attics); domes provide shelter by spanning large circular openings with elegant curved vaults—both shelter strategies but structurally and spatially distinct."
-        },
-        "explanation": null,
-        "code_citation": null,
-        "bloom_level": "apply",
-        "application_context": "design_application",
-        "practice_context": [
-          "CMP"
-        ],
-        "difficulty": 0.5,
-        "difficulty_rating": null,
-        "discrimination_rating": null,
-        "is_assessment": false,
-        "model_id": "ALE-THEO-002-01-006",
-        "prompt_image_url": null,
-        "created_at": "2026-03-23T19:27:53.522336+00:00",
-        "updated_at": "2026-04-08T07:44:46.846261+00:00",
-        "content_hash": "sha256:7256d2a9774a36c73e98b2596d105bd594025aa7cd82861ac4efca755a9e7d10"
-      },
-      "proposed": {
-        "explanation": "Domes (like Pantheon) shed water effectively through slope; the comparison is false. Both are highly functional structural elements, not decorative. Domes use curvature and load distribution (outward/downward), not pitched water-shedding slopes like mansards. Mansards provide shelter through additional enclosed volume (historically for tax-exempt attics); domes provide shelter by spanning large circular openings with elegant curved vaults—both shelter strategies but structurally and spatially distinct. Mansards provide shelter through additional enclosed volume (historically for tax-exempt attics); domes provide shelter by spanning large circular openings with elegant curved vaults—both shelter strategies but structurally and spatially distinct."
-      },
-      "classification": "strict_explanation_backfill",
-      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
-    },
-    {
-      "question_id": "ef6f21c7-eed0-4da6-a9e5-c5daafa36b93",
-      "article_id": "62274e90-5cb3-4bc0-85a1-639858e47736",
-      "article_dir": ".ai/content-audit-export/articles/lea-theo-002-01-core-concept--62274e90-5cb3-4bc0-85a1-639858e47736",
-      "title": "lea-theo-002-01-core-concept",
-      "baseline_hash": "sha256:d6cb04e613a7cdeeebea5e3323039efe3efe62d86b91916055dbcadad6b99599",
-      "baseline": {
-        "question_id": "ef6f21c7-eed0-4da6-a9e5-c5daafa36b93",
-        "article_id": "62274e90-5cb3-4bc0-85a1-639858e47736",
-        "topic_id": "5fd68568-c8c9-454a-b95e-f671df0f1605",
-        "text": "The Palazzo Farnese exemplifies which specific architectural element through its use of columns extending through multiple stories?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Mansard roof form, which is unrelated to columnar design"
-          },
-          {
-            "id": "b",
-            "text": "Fenestration arrangement, typically referring to window placement rather than column use"
-          },
-          {
-            "id": "c",
-            "text": "Colossal order (giant order)"
-          },
-          {
-            "id": "d",
-            "text": "Cortile organization, which pertains to courtyard layout rather than columnar elements"
-          }
-        ],
-        "correct_option_id": "c",
-        "correct_value": null,
-        "accepted_answers": null,
-        "value_tolerance": 0,
-        "question_type": "mcq",
-        "rationale": {
-          "a": "Palazzo Farnese does not feature a mansard roof; it has a flat top.",
-          "b": "While Palazzo Farnese has fenestration, it is not defined by window arrangement.",
-          "d": "The cortile is the internal courtyard; colossal order is the external facade element.",
-          "correct": "Palazzo Farnese demonstrates colossal order—giant columns or pilasters spanning two or three stories, creating visual unity and monumentality across the tall facade.",
-          "takeaway": "Palazzo Farnese demonstrates colossal order—giant columns or pilasters spanning two or three stories, creating visual unity and monumentality across the tall facade."
-        },
-        "explanation": null,
-        "code_citation": null,
-        "bloom_level": "remember",
-        "application_context": "recall",
-        "practice_context": [
-          "ATT"
-        ],
-        "difficulty": 0.5,
-        "difficulty_rating": null,
-        "discrimination_rating": null,
-        "is_assessment": false,
-        "model_id": "ALE-THEO-002-01-011",
-        "prompt_image_url": null,
-        "created_at": "2026-03-23T19:27:53.522336+00:00",
-        "updated_at": "2026-04-08T07:44:46.846261+00:00",
-        "content_hash": "sha256:d6cb04e613a7cdeeebea5e3323039efe3efe62d86b91916055dbcadad6b99599"
-      },
-      "proposed": {
-        "explanation": "Palazzo Farnese does not feature a mansard roof; it has a flat top. While Palazzo Farnese has fenestration, it is not defined by window arrangement. The cortile is the internal courtyard; colossal order is the external facade element. Palazzo Farnese demonstrates colossal order—giant columns or pilasters spanning two or three stories, creating visual unity and monumentality across the tall facade. Palazzo Farnese demonstrates colossal order—giant columns or pilasters spanning two or three stories, creating visual unity and monumentality across the tall facade."
-      },
-      "classification": "strict_explanation_backfill",
-      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
-    },
-    {
-      "question_id": "3bda1e21-1685-4e01-a715-cf7a8de8688c",
-      "article_id": "62274e90-5cb3-4bc0-85a1-639858e47736",
-      "article_dir": ".ai/content-audit-export/articles/lea-theo-002-01-core-concept--62274e90-5cb3-4bc0-85a1-639858e47736",
-      "title": "lea-theo-002-01-core-concept",
-      "baseline_hash": "sha256:3440291c0c11841e5212bce34a4154b847ec3a39905369e6114c75b7fe97aeb8",
-      "baseline": {
-        "question_id": "3bda1e21-1685-4e01-a715-cf7a8de8688c",
-        "article_id": "62274e90-5cb3-4bc0-85a1-639858e47736",
-        "topic_id": "5fd68568-c8c9-454a-b95e-f671df0f1605",
-        "text": "A cortile is best defined as:",
-        "options": [
-          {
-            "id": "a",
-            "text": "A covered walkway with columns supporting a roof, protecting circulation from weather"
-          },
-          {
-            "id": "b",
-            "text": "A public civic square surrounded by important buildings and serving as gathering space"
-          },
-          {
-            "id": "c",
-            "text": "An internal courtyard surrounded by covered arcaded walkways on all four sides"
-          },
-          {
-            "id": "d",
-            "text": "A raised platform in a church from which the clergy delivers sermons"
-          }
-        ],
-        "correct_option_id": "c",
-        "correct_value": null,
-        "accepted_answers": null,
-        "value_tolerance": 0,
-        "question_type": "mcq",
-        "rationale": {
-          "a": "That is an arcade or portico—a circulation element, not a complete courtyard system.",
-          "b": "That is a piazza—a public external civic square, not an internal palace courtyard.",
-          "d": "That is a pulpit—a church element unrelated to courtyards.",
-          "correct": "A cortile is specifically an internal courtyard (characteristic of Italian Renaissance palaces) surrounded by arcaded covered walkways on all sides, providing light, air, semi-private circulation, and social space.",
-          "takeaway": "A cortile is specifically an internal courtyard (characteristic of Italian Renaissance palaces) surrounded by arcaded covered walkways on all sides, providing light, air, semi-private circulation, and social space."
-        },
-        "explanation": null,
-        "code_citation": null,
-        "bloom_level": "remember",
-        "application_context": "recall",
-        "practice_context": [
-          "DEF"
-        ],
-        "difficulty": 0.5,
-        "difficulty_rating": null,
-        "discrimination_rating": null,
-        "is_assessment": false,
-        "model_id": "ALE-THEO-002-01-002",
-        "prompt_image_url": null,
-        "created_at": "2026-03-23T19:27:53.522336+00:00",
-        "updated_at": "2026-04-08T07:44:46.846261+00:00",
-        "content_hash": "sha256:3440291c0c11841e5212bce34a4154b847ec3a39905369e6114c75b7fe97aeb8"
-      },
-      "proposed": {
-        "explanation": "That is an arcade or portico—a circulation element, not a complete courtyard system. That is a piazza—a public external civic square, not an internal palace courtyard. That is a pulpit—a church element unrelated to courtyards. A cortile is specifically an internal courtyard (characteristic of Italian Renaissance palaces) surrounded by arcaded covered walkways on all sides, providing light, air, semi-private circulation, and social space. A cortile is specifically an internal courtyard (characteristic of Italian Renaissance palaces) surrounded by arcaded covered walkways on all sides, providing light, air, semi-private circulation, and social space."
-      },
-      "classification": "strict_explanation_backfill",
-      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
-    },
-    {
-      "question_id": "d905acf1-6d69-4aad-b4fa-bf27c1af0135",
-      "article_id": "f2c105fd-51fc-4b48-b53a-77242dbb91b0",
-      "article_dir": ".ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0",
-      "title": "UAP SPP Documents: Standards of Professional Practice for Philippine Architects",
-      "baseline_hash": "sha256:a6187b54b8e7ecffa6ecc721a2fa72d2195f6f95e0d6b2f6b1368579670672cc",
-      "baseline": {
-        "question_id": "d905acf1-6d69-4aad-b4fa-bf27c1af0135",
-        "article_id": "f2c105fd-51fc-4b48-b53a-77242dbb91b0",
-        "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
-        "text": "Which of the following is NOT one of the three recognized methods of architect selection under the SPP?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Direct Selection by Owner"
-          },
-          {
-            "id": "b",
-            "text": "Comparative Selection (Shortlisting)"
-          },
-          {
-            "id": "c",
-            "text": "Architectural Design Competition (ADC)"
-          },
-          {
-            "id": "d",
-            "text": "Lowest Bidder Selection"
-          }
-        ],
-        "correct_option_id": "d",
-        "correct_value": null,
-        "accepted_answers": null,
-        "value_tolerance": 0,
-        "question_type": "mcq",
-        "rationale": {
-          "a": "Direct Selection by Owner is incorrect as an answer because it IS one of the three recognized methods. The Owner directly engages an architect of their choice.",
-          "b": "Comparative Selection (Shortlisting) is incorrect as an answer because it IS one of the three recognized methods. Multiple architects are evaluated and compared.",
-          "c": "Architectural Design Competition (ADC) is incorrect as an answer because it IS one of the three recognized methods, governed by SPP 208.",
-          "d": "Lowest Bidder Selection is correct. The SPP explicitly does NOT recognize lowest-bid selection for architectural services, as professional services are not commodities subject to price-based bidding.",
-          "correct": "The three recognized methods of architect selection under SPP are: (1) Direct Selection, (2) Comparative Selection/Shortlisting, and (3) Architectural Design Competition. Lowest bidder selection is prohibited for professional architectural services.",
-          "takeaway": "Architectural services use Direct, Comparative, or ADC selection — never lowest-bid."
-        },
-        "explanation": null,
-        "code_citation": "SPP 200",
-        "bloom_level": "understand",
-        "application_context": null,
-        "practice_context": [],
-        "difficulty": 0.5,
-        "difficulty_rating": null,
-        "discrimination_rating": null,
-        "is_assessment": false,
-        "model_id": null,
-        "prompt_image_url": null,
-        "created_at": "2026-03-31T06:07:48.756308+00:00",
-        "updated_at": "2026-04-08T07:44:46.846261+00:00",
-        "content_hash": "sha256:a6187b54b8e7ecffa6ecc721a2fa72d2195f6f95e0d6b2f6b1368579670672cc"
-      },
-      "proposed": {
-        "explanation": "Direct Selection by Owner is incorrect as an answer because it IS one of the three recognized methods. The Owner directly engages an architect of their choice. Comparative Selection (Shortlisting) is incorrect as an answer because it IS one of the three recognized methods. Multiple architects are evaluated and compared. Architectural Design Competition (ADC) is incorrect as an answer because it IS one of the three recognized methods, governed by SPP 208. Lowest Bidder Selection is correct. The SPP explicitly does NOT recognize lowest-bid selection for architectural services, as professional services are not commodities subject to price-based bidding. The three recognized methods of architect selection under SPP are: (1) Direct Selection, (2) Comparative Selection/Shortlisting, and (3) Architectural Design Competition. Lowest bidder selection is prohibited for professional architectural services. Architectural services use Direct, Comparative, or ADC selection — never lowest-bid."
-      },
-      "classification": "strict_explanation_backfill",
-      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
-    },
-    {
-      "question_id": "e42464b4-5bd6-48be-93bd-d6fc378f439f",
-      "article_id": "f2c105fd-51fc-4b48-b53a-77242dbb91b0",
-      "article_dir": ".ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0",
-      "title": "UAP SPP Documents: Standards of Professional Practice for Philippine Architects",
-      "baseline_hash": "sha256:8db96cd0ed18588d825ad279ee826cc2542f1c725ee6f2c0423baf8d60965ea3",
-      "baseline": {
-        "question_id": "e42464b4-5bd6-48be-93bd-d6fc378f439f",
-        "article_id": "f2c105fd-51fc-4b48-b53a-77242dbb91b0",
-        "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
-        "text": "What does the acronym IAPOA stand for in the context of Philippine architectural practice?",
-        "options": [
-          {
-            "id": "a",
-            "text": "International Association of Professional Organizations of Architects"
-          },
-          {
-            "id": "b",
-            "text": "Integrated Accredited Professional Organization of Architects"
-          },
-          {
-            "id": "c",
-            "text": "Institute of Architectural Practitioners and Organizations Association"
-          },
-          {
-            "id": "d",
-            "text": "International Architects and Planners Organization of Asia"
-          }
-        ],
-        "correct_option_id": "b",
-        "correct_value": null,
-        "accepted_answers": null,
-        "value_tolerance": 0,
-        "question_type": "mcq",
-        "rationale": {
-          "a": "This is incorrect. IAPOA is a national, not international, organization.",
-          "b": "Correct. IAPOA stands for the Integrated Accredited Professional Organization of Architects, which is the UAP's formal designation under R.A. 9266.",
-          "c": "This is a fabricated name and does not match IAPOA's actual meaning.",
-          "d": "This is incorrect. IAPOA is specific to Philippine practice, not an Asia-wide body.",
-          "correct": "IAPOA stands for Integrated Accredited Professional Organization of Architects. Under R.A. 9266, the UAP serves as the IAPOA — the sole accredited professional organization for architects in the Philippines, responsible for professional standards and advocacy.",
-          "takeaway": "IAPOA = Integrated Accredited Professional Organization of Architects (i.e., the UAP)."
-        },
-        "explanation": null,
-        "code_citation": "R.A. 9266 / SPP 200",
-        "bloom_level": "remember",
-        "application_context": null,
-        "practice_context": [],
-        "difficulty": 0.4,
-        "difficulty_rating": null,
-        "discrimination_rating": null,
-        "is_assessment": false,
-        "model_id": null,
-        "prompt_image_url": null,
-        "created_at": "2026-03-31T06:07:48.756308+00:00",
-        "updated_at": "2026-04-08T07:44:46.846261+00:00",
-        "content_hash": "sha256:8db96cd0ed18588d825ad279ee826cc2542f1c725ee6f2c0423baf8d60965ea3"
-      },
-      "proposed": {
-        "explanation": "This is incorrect. IAPOA is a national, not international, organization. Correct. IAPOA stands for the Integrated Accredited Professional Organization of Architects, which is the UAP's formal designation under R.A. 9266. This is a fabricated name and does not match IAPOA's actual meaning. This is incorrect. IAPOA is specific to Philippine practice, not an Asia-wide body. IAPOA stands for Integrated Accredited Professional Organization of Architects. Under R.A. 9266, the UAP serves as the IAPOA — the sole accredited professional organization for architects in the Philippines, responsible for professional standards and advocacy. IAPOA = Integrated Accredited Professional Organization of Architects (i.e., the UAP)."
-      },
-      "classification": "strict_explanation_backfill",
-      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
-    },
-    {
-      "question_id": "2c8d742c-4c03-44c9-b34f-8a19f772466b",
-      "article_id": "f2c105fd-51fc-4b48-b53a-77242dbb91b0",
-      "article_dir": ".ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0",
-      "title": "UAP SPP Documents: Standards of Professional Practice for Philippine Architects",
-      "baseline_hash": "sha256:a1a031de0390de070e2ac6363a5dab7bd01fce84f6b1722ef90ecb9039322a67",
-      "baseline": {
-        "question_id": "2c8d742c-4c03-44c9-b34f-8a19f772466b",
-        "article_id": "f2c105fd-51fc-4b48-b53a-77242dbb91b0",
-        "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
-        "text": "When did the 2010 UAP Standards of Professional Practice (SPP) take effect?",
-        "options": [
-          {
-            "id": "a",
-            "text": "January 1, 2010"
-          },
-          {
-            "id": "b",
-            "text": "March 9, 2011"
-          },
-          {
-            "id": "c",
-            "text": "June 15, 2010"
-          },
-          {
-            "id": "d",
-            "text": "December 31, 2011"
-          }
-        ],
-        "correct_option_id": "b",
-        "correct_value": null,
-        "accepted_answers": null,
-        "value_tolerance": 0,
-        "question_type": "mcq",
-        "rationale": {
-          "a": "January 1, 2010 is incorrect. While the SPP was adopted in 2010, its effectivity date was tied to the PRC approval, not the calendar year start.",
-          "b": "March 9, 2011 is correct. The SPP took effect upon PRC-Board of Architecture Resolution approval on this date, as documented in the UAP SPP overview.",
-          "c": "June 15, 2010 is incorrect. This date has no significance in the SPP approval timeline.",
-          "d": "December 31, 2011 is incorrect. The SPP was already in effect well before the end of 2011.",
-          "correct": "The 2010 UAP Standards of Professional Practice took effect on March 9, 2011, upon approval by the PRC-Board of Architecture through a formal Resolution. This is the legal basis under R.A. 9266 (Architecture Act of 2004).",
-          "takeaway": "The SPP effective date is March 9, 2011 — not the year of adoption (2010)."
-        },
-        "explanation": null,
-        "code_citation": "SPP 200 / R.A. 9266",
-        "bloom_level": "remember",
-        "application_context": null,
-        "practice_context": [],
-        "difficulty": 0.4,
-        "difficulty_rating": null,
-        "discrimination_rating": null,
-        "is_assessment": false,
-        "model_id": null,
-        "prompt_image_url": null,
-        "created_at": "2026-03-31T06:07:48.756308+00:00",
-        "updated_at": "2026-04-08T07:44:46.846261+00:00",
-        "content_hash": "sha256:a1a031de0390de070e2ac6363a5dab7bd01fce84f6b1722ef90ecb9039322a67"
-      },
-      "proposed": {
-        "explanation": "January 1, 2010 is incorrect. While the SPP was adopted in 2010, its effectivity date was tied to the PRC approval, not the calendar year start. March 9, 2011 is correct. The SPP took effect upon PRC-Board of Architecture Resolution approval on this date, as documented in the UAP SPP overview. June 15, 2010 is incorrect. This date has no significance in the SPP approval timeline. December 31, 2011 is incorrect. The SPP was already in effect well before the end of 2011. The 2010 UAP Standards of Professional Practice took effect on March 9, 2011, upon approval by the PRC-Board of Architecture through a formal Resolution. This is the legal basis under R.A. 9266 (Architecture Act of 2004). The SPP effective date is March 9, 2011 — not the year of adoption (2010)."
-      },
-      "classification": "strict_explanation_backfill",
-      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
-    },
-    {
-      "question_id": "ef5a28ce-610a-48c7-a3b7-2aeabf1617a2",
-      "article_id": "f2c105fd-51fc-4b48-b53a-77242dbb91b0",
-      "article_dir": ".ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0",
-      "title": "UAP SPP Documents: Standards of Professional Practice for Philippine Architects",
-      "baseline_hash": "sha256:bc7da7b350887b1908b2e2e865575bf6fad9313748c4f6dbdf0fea37f4241d36",
-      "baseline": {
-        "question_id": "ef5a28ce-610a-48c7-a3b7-2aeabf1617a2",
-        "article_id": "f2c105fd-51fc-4b48-b53a-77242dbb91b0",
-        "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
-        "text": "SPP Document 208 (Architectural Design Competition) replaces which 1979 UAP document?",
-        "options": [
-          {
-            "id": "a",
-            "text": "UAP Doc. 207"
-          },
-          {
-            "id": "b",
-            "text": "UAP Doc. 208"
-          },
-          {
-            "id": "c",
-            "text": "UAP Doc. 209"
-          },
-          {
-            "id": "d",
-            "text": "UAP Doc. 210"
-          }
-        ],
-        "correct_option_id": "c",
-        "correct_value": null,
-        "accepted_answers": null,
-        "value_tolerance": 0,
-        "question_type": "mcq",
-        "rationale": {
-          "a": "UAP Doc. 207 is incorrect. The old Doc. 207 was replaced by SPP Doc. 206 (Comprehensive Architectural Services).",
-          "b": "UAP Doc. 208 is incorrect. The old Doc. 208 covered Interior Design fees and was replaced by Annex A, not SPP 208.",
-          "c": "Correct. SPP 208 (Architectural Design Competition) replaces the 1979 UAP Doc. 209. The numbering shifted in the 2010 revision.",
-          "d": "UAP Doc. 210 did not exist in the 1979 series.",
-          "correct": "SPP Doc. 208 (ADC) replaces the 1979 UAP Doc. 209. This is a tricky numbering shift: the old Doc. 208 (Interior Design) became Annex A, while the old Doc. 209 (ADC) became SPP 208.",
-          "takeaway": "SPP 208 (ADC) replaces old Doc. 209 — the numbering shifted when Interior Design moved to Annex A."
-        },
-        "explanation": null,
-        "code_citation": "SPP 200",
-        "bloom_level": "analyze",
-        "application_context": null,
-        "practice_context": [],
-        "difficulty": 0.7,
-        "difficulty_rating": null,
-        "discrimination_rating": null,
-        "is_assessment": false,
-        "model_id": null,
-        "prompt_image_url": null,
-        "created_at": "2026-03-31T06:07:48.756308+00:00",
-        "updated_at": "2026-04-08T07:44:46.846261+00:00",
-        "content_hash": "sha256:bc7da7b350887b1908b2e2e865575bf6fad9313748c4f6dbdf0fea37f4241d36"
-      },
-      "proposed": {
-        "explanation": "UAP Doc. 207 is incorrect. The old Doc. 207 was replaced by SPP Doc. 206 (Comprehensive Architectural Services). UAP Doc. 208 is incorrect. The old Doc. 208 covered Interior Design fees and was replaced by Annex A, not SPP 208. Correct. SPP 208 (Architectural Design Competition) replaces the 1979 UAP Doc. 209. The numbering shifted in the 2010 revision. UAP Doc. 210 did not exist in the 1979 series. SPP Doc. 208 (ADC) replaces the 1979 UAP Doc. 209. This is a tricky numbering shift: the old Doc. 208 (Interior Design) became Annex A, while the old Doc. 209 (ADC) became SPP 208. SPP 208 (ADC) replaces old Doc. 209 — the numbering shifted when Interior Design moved to Annex A."
-      },
-      "classification": "strict_explanation_backfill",
-      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
-    },
-    {
-      "question_id": "6959881a-e9a0-44a3-b7c5-35a1aec20712",
-      "article_id": "f2c105fd-51fc-4b48-b53a-77242dbb91b0",
-      "article_dir": ".ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0",
-      "title": "UAP SPP Documents: Standards of Professional Practice for Philippine Architects",
-      "baseline_hash": "sha256:b143daf61b3eac93dab60adec4f46ece26eb02964d066e795ac24453cd4b6e9e",
-      "baseline": {
-        "question_id": "6959881a-e9a0-44a3-b7c5-35a1aec20712",
-        "article_id": "f2c105fd-51fc-4b48-b53a-77242dbb91b0",
-        "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
-        "text": "What does the acronym SPPCC stand for in the SPP framework?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Standards of Professional Practice Coordinating Committee"
-          },
-          {
-            "id": "b",
-            "text": "Standards of Professional Practice Compliance Council"
-          },
-          {
-            "id": "c",
-            "text": "Standards of Professional Practice Certification Commission"
-          },
-          {
-            "id": "d",
-            "text": "Standards of Professional Practice Central Committee"
-          }
-        ],
-        "correct_option_id": "a",
-        "correct_value": null,
-        "accepted_answers": null,
-        "value_tolerance": 0,
-        "question_type": "mcq",
-        "rationale": {
-          "a": "Correct. SPPCC stands for Standards of Professional Practice Coordinating Committee, the body that developed and maintains the SPP documents.",
-          "b": "Compliance Council is incorrect. The SPPCC coordinates the standards rather than enforcing compliance.",
-          "c": "Certification Commission is incorrect. Certification functions belong to the PRC-Board of Architecture, not the SPPCC.",
-          "d": "Central Committee is incorrect. The correct term is Coordinating Committee.",
-          "correct": "SPPCC stands for Standards of Professional Practice Coordinating Committee. This committee was responsible for drafting, reviewing, and coordinating all SPP documents in the 2010 series.",
-          "takeaway": "SPPCC = Standards of Professional Practice Coordinating Committee."
-        },
-        "explanation": null,
-        "code_citation": "SPP 200",
-        "bloom_level": "remember",
-        "application_context": null,
-        "practice_context": [],
-        "difficulty": 0.4,
-        "difficulty_rating": null,
-        "discrimination_rating": null,
-        "is_assessment": false,
-        "model_id": null,
-        "prompt_image_url": null,
-        "created_at": "2026-03-31T06:07:48.756308+00:00",
-        "updated_at": "2026-04-08T07:44:46.846261+00:00",
-        "content_hash": "sha256:b143daf61b3eac93dab60adec4f46ece26eb02964d066e795ac24453cd4b6e9e"
-      },
-      "proposed": {
-        "explanation": "Correct. SPPCC stands for Standards of Professional Practice Coordinating Committee, the body that developed and maintains the SPP documents. Compliance Council is incorrect. The SPPCC coordinates the standards rather than enforcing compliance. Certification Commission is incorrect. Certification functions belong to the PRC-Board of Architecture, not the SPPCC. Central Committee is incorrect. The correct term is Coordinating Committee. SPPCC stands for Standards of Professional Practice Coordinating Committee. This committee was responsible for drafting, reviewing, and coordinating all SPP documents in the 2010 series. SPPCC = Standards of Professional Practice Coordinating Committee."
-      },
-      "classification": "strict_explanation_backfill",
-      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
-    },
-    {
-      "question_id": "e65cfa10-7569-42df-a72c-1176c0ce5bf9",
-      "article_id": "f2c105fd-51fc-4b48-b53a-77242dbb91b0",
-      "article_dir": ".ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0",
-      "title": "UAP SPP Documents: Standards of Professional Practice for Philippine Architects",
-      "baseline_hash": "sha256:96bcb3607c19793854780d914b52893c0564ca00adad0314e9275c29ffcdfa07",
-      "baseline": {
-        "question_id": "e65cfa10-7569-42df-a72c-1176c0ce5bf9",
-        "article_id": "f2c105fd-51fc-4b48-b53a-77242dbb91b0",
-        "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
-        "text": "What are the requirements for a foreign architect to practice in the Philippines under the SPP?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Only a valid license from their home country, without needing local validation or oversight"
-          },
-          {
-            "id": "b",
-            "text": "A Temporary/Special Permit (TSP), DoLE certification, and collaboration with a local RLA"
-          },
-          {
-            "id": "c",
-            "text": "UAP membership and IAPOA endorsement, ensuring professional recognition within the local context"
-          },
-          {
-            "id": "d",
-            "text": "A reciprocity agreement between the Philippines and the foreign country, facilitating mutual practice rights"
-          }
-        ],
-        "correct_option_id": "b",
-        "correct_value": null,
-        "accepted_answers": null,
-        "value_tolerance": 0,
-        "question_type": "mcq",
-        "rationale": {
-          "a": "A home-country license alone is insufficient. Philippine law requires additional permits and local collaboration.",
-          "b": "Correct. Foreign architects must obtain a Temporary/Special Permit (TSP) from the PRC, Department of Labor and Employment (DoLE) certification, and must collaborate with a local RLA.",
-          "c": "UAP membership and IAPOA endorsement are not the statutory requirements. The legal framework is through PRC and DoLE.",
-          "d": "While reciprocity agreements may exist, the SPP specifies the three-condition framework (TSP + DoLE + local RLA) regardless of reciprocity.",
-          "correct": "Foreign architects must satisfy three conditions: (1) obtain a Temporary/Special Permit from PRC, (2) secure DoLE work certification, and (3) collaborate with a local Registered and Licensed Architect. This three-condition framework protects both professional standards and local practitioners.",
-          "takeaway": "Foreign architects need TSP + DoLE permit + local RLA collaboration."
-        },
-        "explanation": null,
-        "code_citation": "SPP 200 / R.A. 9266",
-        "bloom_level": "understand",
-        "application_context": null,
-        "practice_context": [],
-        "difficulty": 0.5,
-        "difficulty_rating": null,
-        "discrimination_rating": null,
-        "is_assessment": false,
-        "model_id": null,
-        "prompt_image_url": null,
-        "created_at": "2026-03-31T06:07:48.756308+00:00",
-        "updated_at": "2026-04-08T07:44:46.846261+00:00",
-        "content_hash": "sha256:96bcb3607c19793854780d914b52893c0564ca00adad0314e9275c29ffcdfa07"
-      },
-      "proposed": {
-        "explanation": "A home-country license alone is insufficient. Philippine law requires additional permits and local collaboration. Correct. Foreign architects must obtain a Temporary/Special Permit (TSP) from the PRC, Department of Labor and Employment (DoLE) certification, and must collaborate with a local RLA. UAP membership and IAPOA endorsement are not the statutory requirements. The legal framework is through PRC and DoLE. While reciprocity agreements may exist, the SPP specifies the three-condition framework (TSP + DoLE + local RLA) regardless of reciprocity. Foreign architects must satisfy three conditions: (1) obtain a Temporary/Special Permit from PRC, (2) secure DoLE work certification, and (3) collaborate with a local Registered and Licensed Architect. This three-condition framework protects both professional standards and local practitioners. Foreign architects need TSP + DoLE permit + local RLA collaboration."
-      },
-      "classification": "strict_explanation_backfill",
-      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
-    },
-    {
-      "question_id": "97530be3-4382-434c-b56d-8bca7da48893",
-      "article_id": "f2c105fd-51fc-4b48-b53a-77242dbb91b0",
-      "article_dir": ".ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0",
-      "title": "UAP SPP Documents: Standards of Professional Practice for Philippine Architects",
-      "baseline_hash": "sha256:22d57e97219a78bb6154cb827310995326fba87db06718602364a7afc6850dac",
-      "baseline": {
-        "question_id": "97530be3-4382-434c-b56d-8bca7da48893",
-        "article_id": "f2c105fd-51fc-4b48-b53a-77242dbb91b0",
-        "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
-        "text": "How many SPP documents comprise the 2010 Standards of Professional Practice series, including Annex A?",
-        "options": [
-          {
-            "id": "a",
-            "text": "9 documents, excluding any annexes or supplementary materials"
-          },
-          {
-            "id": "b",
-            "text": "10 documents, which form the core of the series without additional annexes"
-          },
-          {
-            "id": "c",
-            "text": "10 documents plus Annex A (11 total)"
-          },
-          {
-            "id": "d",
-            "text": "12 documents, including all annexes and supplementary guidelines"
-          }
-        ],
-        "correct_option_id": "c",
-        "correct_value": null,
-        "accepted_answers": null,
-        "value_tolerance": 0,
-        "question_type": "mcq",
-        "rationale": {
-          "a": "9 documents is incorrect. The series includes SPP 201 through 209 (9 numbered documents) plus Annex A.",
-          "b": "10 documents is incomplete. While there are 10 numbered items if you count SPP 200-209, the actual structure is SPP 201-209 plus Annex A.",
-          "c": "Correct. The 2010 SPP series consists of 10 numbered documents (SPP 201 through 209, with 204 split into 204-A and 204-B) plus Annex A (Interior Design Fee Schedule), for a total of 11.",
-          "d": "12 documents is incorrect. There are only 11 total components in the SPP series.",
-          "correct": "The 2010 SPP series comprises 10 numbered documents (SPP 201, 202, 203, 204-A, 204-B, 205, 206, 207, 208, 209) plus Annex A (Interior Design Fee Schedule), totaling 11 components.",
-          "takeaway": "The SPP series has 10 numbered documents + Annex A = 11 total."
-        },
-        "explanation": null,
-        "code_citation": "SPP 200",
-        "bloom_level": "remember",
-        "application_context": null,
-        "practice_context": [],
-        "difficulty": 0.5,
-        "difficulty_rating": null,
-        "discrimination_rating": null,
-        "is_assessment": false,
-        "model_id": null,
-        "prompt_image_url": null,
-        "created_at": "2026-03-31T06:07:48.756308+00:00",
-        "updated_at": "2026-04-08T07:44:46.846261+00:00",
-        "content_hash": "sha256:22d57e97219a78bb6154cb827310995326fba87db06718602364a7afc6850dac"
-      },
-      "proposed": {
-        "explanation": "9 documents is incorrect. The series includes SPP 201 through 209 (9 numbered documents) plus Annex A. 10 documents is incomplete. While there are 10 numbered items if you count SPP 200-209, the actual structure is SPP 201-209 plus Annex A. Correct. The 2010 SPP series consists of 10 numbered documents (SPP 201 through 209, with 204 split into 204-A and 204-B) plus Annex A (Interior Design Fee Schedule), for a total of 11. 12 documents is incorrect. There are only 11 total components in the SPP series. The 2010 SPP series comprises 10 numbered documents (SPP 201, 202, 203, 204-A, 204-B, 205, 206, 207, 208, 209) plus Annex A (Interior Design Fee Schedule), totaling 11 components. The SPP series has 10 numbered documents + Annex A = 11 total."
-      },
-      "classification": "strict_explanation_backfill",
-      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
-    },
-    {
-      "question_id": "02132e9a-e600-473a-8b3f-1c23caf896af",
+      "question_id": "bc870153-5fdc-4c29-8af7-3a71ed92526e",
       "article_id": "c6f9eec1-727b-4d00-a905-f69a58245c66",
       "article_dir": ".ai/content-audit-export/articles/lea-hist-008-08-core-concept--c6f9eec1-727b-4d00-a905-f69a58245c66",
       "title": "lea-hist-008-08-core-concept",
-      "baseline_hash": "sha256:b7093147be7995d732735468c9023ef4c0ae69cbd1daefbdabacd60cd6f0ab21",
+      "baseline_hash": "sha256:6a330bc180c992ab8e2f959bd77d95f1287251bb8cf6f22c431fe4f903fa282d",
       "baseline": {
-        "question_id": "02132e9a-e600-473a-8b3f-1c23caf896af",
+        "question_id": "bc870153-5fdc-4c29-8af7-3a71ed92526e",
         "article_id": "c6f9eec1-727b-4d00-a905-f69a58245c66",
         "topic_id": "b0efd864-03e0-4dde-bd2f-613477d2e14a",
-        "text": "In which year did Kenneth Frampton articulate the Critical Regionalism framework as a response to International Style universalism?",
+        "text": "How does Critical Regionalism challenge the International Style's claim to universal modernist principles?",
         "options": [
           {
             "id": "a",
-            "text": "1972"
+            "text": "It completely rejects modernism in favor of traditional vernacular revival, emphasizing historical styles over contemporary needs."
           },
           {
             "id": "b",
-            "text": "1983"
+            "text": "It pursues a critical engagement with modernist principles while grounding them in local geography, climate, materials, and cultural memory."
           },
           {
             "id": "c",
-            "text": "1995"
+            "text": "It applies identical glass and steel modernism everywhere without exception, disregarding local context and environmental factors."
           },
           {
             "id": "d",
-            "text": "2005"
+            "text": "It treats all regional architecture as equally valid regardless of design rigor, without considering the importance of contextual adaptation."
           }
         ],
         "correct_option_id": "b",
@@ -1453,11 +47,75 @@
         "value_tolerance": 0,
         "question_type": "mcq",
         "rationale": {
-          "a": "This predates Frampton's theoretical formulation.",
-          "c": "Frampton's essay was published in 1983, not 1995.",
-          "d": "The framework was established in 1983, well before 2005.",
-          "correct": "Kenneth Frampton's seminal essay 'Towards a Critical Regionalism: Six Points for an Architecture of Resistance' was published in 1983.",
-          "takeaway": "Kenneth Frampton's seminal essay 'Towards a Critical Regionalism: Six Points for an Architecture of Resistance' was published in 1983."
+          "a": "Critical Regionalism maintains modernist rigor; it is not nostalgic vernacular revival.",
+          "c": "Critical Regionalism explicitly critiques the uncritical application of universal modernism.",
+          "d": "Critical Regionalism combines modernist rigor with regional engagement; not all regional work achieves this synthesis.",
+          "correct": "Critical Regionalism does not reject modernism but pursues its rigorous abstraction while rigorously engaging local specificity—climate, materials, cultural traditions, and environmental conditions.",
+          "takeaway": "Critical Regionalism does not reject modernism but pursues its rigorous abstraction while rigorously engaging local specificity—climate, materials, cultural traditions, and environmental conditions."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "apply",
+        "application_context": "code_interpretation",
+        "practice_context": [
+          "CON"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "critregion-02",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:26.09657+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:6a330bc180c992ab8e2f959bd77d95f1287251bb8cf6f22c431fe4f903fa282d"
+      },
+      "proposed": {
+        "explanation": "Critical Regionalism maintains modernist rigor; it is not nostalgic vernacular revival. Critical Regionalism explicitly critiques the uncritical application of universal modernism. Critical Regionalism combines modernist rigor with regional engagement; not all regional work achieves this synthesis. Critical Regionalism does not reject modernism but pursues its rigorous abstraction while rigorously engaging local specificity—climate, materials, cultural traditions, and environmental conditions. Critical Regionalism does not reject modernism but pursues its rigorous abstraction while rigorously engaging local specificity—climate, materials, cultural traditions, and environmental conditions."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "ae2e8fd0-280e-4e89-9adb-44aa80143f43",
+      "article_id": "c6f9eec1-727b-4d00-a905-f69a58245c66",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-08-core-concept--c6f9eec1-727b-4d00-a905-f69a58245c66",
+      "title": "lea-hist-008-08-core-concept",
+      "baseline_hash": "sha256:0be5b73ea3b3fea108d00b95c64823e2c2a30a12814d304d6fb0f82d74e0f91a",
+      "baseline": {
+        "question_id": "ae2e8fd0-280e-4e89-9adb-44aa80143f43",
+        "article_id": "c6f9eec1-727b-4d00-a905-f69a58245c66",
+        "topic_id": "b0efd864-03e0-4dde-bd2f-613477d2e14a",
+        "text": "Which theorist articulated the concept of 'Critical Regionalism' in a seminal 1983 essay?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Kenneth Frampton"
+          },
+          {
+            "id": "b",
+            "text": "Robert Venturi"
+          },
+          {
+            "id": "c",
+            "text": "Peter Eisenman"
+          },
+          {
+            "id": "d",
+            "text": "Aldo Rossi"
+          }
+        ],
+        "correct_option_id": "a",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "b": "Venturi theorized Postmodernism, not Critical Regionalism.",
+          "c": "Eisenman pursued Deconstructivism and critical theory but did not formulate Critical Regionalism.",
+          "d": "Rossi pursued Neo-rational Postmodernism, distinct from Frampton's theory.",
+          "correct": "Kenneth Frampton articulated Critical Regionalism in his 1983 essay 'Towards a Critical Regionalism: Six Points for an Architecture of Resistance.'",
+          "takeaway": "Kenneth Frampton articulated Critical Regionalism in his 1983 essay 'Towards a Critical Regionalism: Six Points for an Architecture of Resistance.'."
         },
         "explanation": null,
         "code_citation": null,
@@ -1470,109 +128,109 @@
         "difficulty_rating": null,
         "discrimination_rating": null,
         "is_assessment": false,
-        "model_id": "critregion-10",
+        "model_id": "critregion-01",
         "prompt_image_url": null,
         "created_at": "2026-03-23T19:27:26.09657+00:00",
         "updated_at": "2026-04-08T07:44:46.846261+00:00",
-        "content_hash": "sha256:b7093147be7995d732735468c9023ef4c0ae69cbd1daefbdabacd60cd6f0ab21"
+        "content_hash": "sha256:0be5b73ea3b3fea108d00b95c64823e2c2a30a12814d304d6fb0f82d74e0f91a"
       },
       "proposed": {
-        "explanation": "This predates Frampton's theoretical formulation. Frampton's essay was published in 1983, not 1995. The framework was established in 1983, well before 2005. Kenneth Frampton's seminal essay 'Towards a Critical Regionalism: Six Points for an Architecture of Resistance' was published in 1983. Kenneth Frampton's seminal essay 'Towards a Critical Regionalism: Six Points for an Architecture of Resistance' was published in 1983."
+        "explanation": "Venturi theorized Postmodernism, not Critical Regionalism. Eisenman pursued Deconstructivism and critical theory but did not formulate Critical Regionalism. Rossi pursued Neo-rational Postmodernism, distinct from Frampton's theory. Kenneth Frampton articulated Critical Regionalism in his 1983 essay 'Towards a Critical Regionalism: Six Points for an Architecture of Resistance.' Kenneth Frampton articulated Critical Regionalism in his 1983 essay 'Towards a Critical Regionalism: Six Points for an Architecture of Resistance.'."
       },
       "classification": "strict_explanation_backfill",
       "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
     },
     {
-      "question_id": "c15267bc-95bb-4d9f-8a48-eea82e239e94",
+      "question_id": "3dd6c51b-75ad-4bae-9717-950fdc06193b",
       "article_id": "c6f9eec1-727b-4d00-a905-f69a58245c66",
       "article_dir": ".ai/content-audit-export/articles/lea-hist-008-08-core-concept--c6f9eec1-727b-4d00-a905-f69a58245c66",
       "title": "lea-hist-008-08-core-concept",
-      "baseline_hash": "sha256:5004371b9e1a6c25dcf085fe11f3f22d0712472f3bb48e646c2cae784749dce5",
+      "baseline_hash": "sha256:6ec78d1ac473e0a079bdea1429f6b64e543c44e4d904639575a431e7f7165b76",
       "baseline": {
-        "question_id": "c15267bc-95bb-4d9f-8a48-eea82e239e94",
+        "question_id": "3dd6c51b-75ad-4bae-9717-950fdc06193b",
         "article_id": "c6f9eec1-727b-4d00-a905-f69a58245c66",
         "topic_id": "b0efd864-03e0-4dde-bd2f-613477d2e14a",
-        "text": "Which Australian architect designs regionally responsive buildings that employ passive climate control strategies grounded in regional vernacular, exemplified by the Magney House (1984)?",
+        "text": "A structure uses rammed earth and timber with natural ventilation, respecting local craft and material traditions. Built in Gando, Burkina Faso, it exemplifies architecture grounded in place. Which architect and building represents this Critical Regionalist and sustainable approach?",
         "options": [
           {
             "id": "a",
-            "text": "Glenn Murcutt"
+            "text": "Magney House, Glenn Murcutt, known for its integration with the Australian landscape and passive solar design"
           },
           {
             "id": "b",
-            "text": "Rem Koolhaas"
+            "text": "Church of the Light, Tadao Ando, which emphasizes the interplay of light and shadow in a minimalist concrete form"
           },
           {
             "id": "c",
-            "text": "Renzo Piano"
+            "text": "Primary School, Diébédo Francis Kéré"
           },
           {
             "id": "d",
-            "text": "Norman Foster"
+            "text": "Water Temple, Tadao Ando, which features a meditative approach to water and space interaction"
           }
         ],
-        "correct_option_id": "a",
+        "correct_option_id": "c",
         "correct_value": null,
         "accepted_answers": null,
         "value_tolerance": 0,
         "question_type": "mcq",
         "rationale": {
-          "b": "Koolhaas pursued urban strategy and Deconstructivism.",
-          "c": "Piano pursues technological innovation and cultural institutions.",
-          "d": "Foster pursues technological spectacle and high-tech architecture.",
-          "correct": "Glenn Murcutt designs buildings for the Australian outback using passive climate control strategies—natural ventilation, deep overhangs, seasonal sun orientation—grounded in regional vernacular traditions.",
-          "takeaway": "Glenn Murcutt designs buildings for the Australian outback using passive climate control strategies—natural ventilation, deep overhangs, seasonal sun orientation—grounded in regional vernacular traditions."
+          "a": "Magney House is in Australia with corrugated metal, not rammed earth.",
+          "b": "Church of the Light uses concrete and is in Japan, not Burkina Faso.",
+          "d": "Water Temple is in Japan with concrete and water features.",
+          "correct": "The Primary School (2001) in Gando, Burkina Faso, by Diébédo Francis Kéré, exemplifies this approach through rammed earth, timber, natural ventilation, and engagement with local craft traditions.",
+          "takeaway": "The Primary School (2001) in Gando, Burkina Faso, by Diébédo Francis Kéré, exemplifies this approach through rammed earth, timber, natural ventilation, and engagement with local craft traditions."
         },
         "explanation": null,
         "code_citation": null,
-        "bloom_level": "remember",
+        "bloom_level": "apply",
         "application_context": "recall",
         "practice_context": [
-          "ID"
+          "DESC"
         ],
         "difficulty": 0.5,
         "difficulty_rating": null,
         "discrimination_rating": null,
         "is_assessment": false,
-        "model_id": "critregion-05",
+        "model_id": "critregion-09",
         "prompt_image_url": null,
         "created_at": "2026-03-23T19:27:26.09657+00:00",
         "updated_at": "2026-04-08T07:44:46.846261+00:00",
-        "content_hash": "sha256:5004371b9e1a6c25dcf085fe11f3f22d0712472f3bb48e646c2cae784749dce5"
+        "content_hash": "sha256:6ec78d1ac473e0a079bdea1429f6b64e543c44e4d904639575a431e7f7165b76"
       },
       "proposed": {
-        "explanation": "Koolhaas pursued urban strategy and Deconstructivism. Piano pursues technological innovation and cultural institutions. Foster pursues technological spectacle and high-tech architecture. Glenn Murcutt designs buildings for the Australian outback using passive climate control strategies—natural ventilation, deep overhangs, seasonal sun orientation—grounded in regional vernacular traditions. Glenn Murcutt designs buildings for the Australian outback using passive climate control strategies—natural ventilation, deep overhangs, seasonal sun orientation—grounded in regional vernacular traditions."
+        "explanation": "Magney House is in Australia with corrugated metal, not rammed earth. Church of the Light uses concrete and is in Japan, not Burkina Faso. Water Temple is in Japan with concrete and water features. The Primary School (2001) in Gando, Burkina Faso, by Diébédo Francis Kéré, exemplifies this approach through rammed earth, timber, natural ventilation, and engagement with local craft traditions. The Primary School (2001) in Gando, Burkina Faso, by Diébédo Francis Kéré, exemplifies this approach through rammed earth, timber, natural ventilation, and engagement with local craft traditions."
       },
       "classification": "strict_explanation_backfill",
       "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
     },
     {
-      "question_id": "43c6e858-26b4-435d-9862-37dc7ac46e76",
+      "question_id": "8b08c08d-fa4b-4168-8e48-568dbe18c2d7",
       "article_id": "c6f9eec1-727b-4d00-a905-f69a58245c66",
       "article_dir": ".ai/content-audit-export/articles/lea-hist-008-08-core-concept--c6f9eec1-727b-4d00-a905-f69a58245c66",
       "title": "lea-hist-008-08-core-concept",
-      "baseline_hash": "sha256:6020505c6201b60d6ec992f328b33249da7091091849ce5871e0693aec6238a7",
+      "baseline_hash": "sha256:306630301ae8ab16d569daee297de7e9d53aebe9df31ac00b0881b6c8b536196",
       "baseline": {
-        "question_id": "43c6e858-26b4-435d-9862-37dc7ac46e76",
+        "question_id": "8b08c08d-fa4b-4168-8e48-568dbe18c2d7",
         "article_id": "c6f9eec1-727b-4d00-a905-f69a58245c66",
         "topic_id": "b0efd864-03e0-4dde-bd2f-613477d2e14a",
-        "text": "Which Japanese architect exemplifies Critical Regionalism through work combining modernist abstraction with engagement to Japanese spatial traditions, craftsmanship, and environmental conditions?",
+        "text": "A monumental concrete box features a single slot window framing the landscape beyond, engaging Japanese zen principles of framing and relationship to nature. Which building and architect exemplifies this Critical Regionalist approach?",
         "options": [
           {
             "id": "a",
-            "text": "Kenzo Tange"
+            "text": "Water Temple, Tadao Ando"
           },
           {
             "id": "b",
-            "text": "Tadao Ando"
+            "text": "Church of the Light, Tadao Ando"
           },
           {
             "id": "c",
-            "text": "Fumihiko Maki"
+            "text": "Magney House, Glenn Murcutt"
           },
           {
             "id": "d",
-            "text": "Arata Isozaki"
+            "text": "Simpson-Lee House, Glenn Murcutt"
           }
         ],
         "correct_option_id": "b",
@@ -1581,11 +239,327 @@
         "value_tolerance": 0,
         "question_type": "mcq",
         "rationale": {
-          "a": "Tange was a modernist hero but not primarily identified with Critical Regionalism.",
-          "c": "Maki pursued Japanese modernism but not the explicitly critical regional framework.",
-          "d": "Isozaki pursued postmodern and deconstructivist directions rather than Critical Regionalism.",
-          "correct": "Tadao Ando exemplifies Critical Regionalism through modernist abstraction—clean lines, minimal ornament, structural clarity—combined with engagement to Japanese spatial traditions, zen principles, and environmental responsiveness.",
-          "takeaway": "Tadao Ando exemplifies Critical Regionalism through modernist abstraction—clean lines, minimal ornament, structural clarity—combined with engagement to Japanese spatial traditions, zen principles, and environmental responsiveness."
+          "a": "Water Temple also by Ando features sunken levels and light modulation but not the single-slot window.",
+          "c": "Magney House uses climate control strategies but not Japanese spatial principles.",
+          "d": "Simpson-Lee House uses timber and passive climate but not zen framing strategies.",
+          "correct": "The Church of the Light (1989) in Ibaraki, Japan, by Tadao Ando, exemplifies this approach with its monumental concrete form and single cross-shaped light slot framing the landscape through zen spatial principles.",
+          "takeaway": "The Church of the Light (1989) in Ibaraki, Japan, by Tadao Ando, exemplifies this approach with its monumental concrete form and single cross-shaped light slot framing the landscape through zen spatial principles."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "apply",
+        "application_context": "recall",
+        "practice_context": [
+          "DESC"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "critregion-04",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:26.09657+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:306630301ae8ab16d569daee297de7e9d53aebe9df31ac00b0881b6c8b536196"
+      },
+      "proposed": {
+        "explanation": "Water Temple also by Ando features sunken levels and light modulation but not the single-slot window. Magney House uses climate control strategies but not Japanese spatial principles. Simpson-Lee House uses timber and passive climate but not zen framing strategies. The Church of the Light (1989) in Ibaraki, Japan, by Tadao Ando, exemplifies this approach with its monumental concrete form and single cross-shaped light slot framing the landscape through zen spatial principles. The Church of the Light (1989) in Ibaraki, Japan, by Tadao Ando, exemplifies this approach with its monumental concrete form and single cross-shaped light slot framing the landscape through zen spatial principles."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "3ba6183c-be1a-4e8f-a428-8ba86bf83a4c",
+      "article_id": "c6f9eec1-727b-4d00-a905-f69a58245c66",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-08-core-concept--c6f9eec1-727b-4d00-a905-f69a58245c66",
+      "title": "lea-hist-008-08-core-concept",
+      "baseline_hash": "sha256:11066c068fc62f3e92a8119759e903b286256a0210ad64ed9d3a50cc5a132e64",
+      "baseline": {
+        "question_id": "3ba6183c-be1a-4e8f-a428-8ba86bf83a4c",
+        "article_id": "c6f9eec1-727b-4d00-a905-f69a58245c66",
+        "topic_id": "b0efd864-03e0-4dde-bd2f-613477d2e14a",
+        "text": "The Magney House (1984) features a barrel vault roof, corrugated metal, and timber. How do these material choices exemplify Critical Regionalist environmental responsiveness?",
+        "options": [
+          {
+            "id": "a",
+            "text": "They are purely aesthetic choices without environmental significance, ignoring the principles of Critical Regionalism"
+          },
+          {
+            "id": "b",
+            "text": "They are designed to protect occupants from intense sun while capturing breezes through passive design strategies responsive to regional climate."
+          },
+          {
+            "id": "c",
+            "text": "They use expensive imported materials regardless of local conditions, which contradicts the ethos of Critical Regionalism"
+          },
+          {
+            "id": "d",
+            "text": "They ignore regional vernacular traditions in favor of universal principles, which is contrary to the intent of Critical Regionalism"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Material choices are grounded in environmental and climate responsiveness.",
+          "c": "Critical Regionalism uses indigenous, locally sourced materials respecting embodied energy.",
+          "d": "Critical Regionalism is defined by engagement with regional vernacular adaptation.",
+          "correct": "The Magney House's barrel vault, corrugated metal, and timber are systematically chosen to provide sun protection through deep overhangs while enabling natural ventilation—passive climate control derived from regional conditions.",
+          "takeaway": "The Magney House's barrel vault, corrugated metal, and timber are systematically chosen to provide sun protection through deep overhangs while enabling natural ventilation—passive climate control derived from regional conditions."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "apply",
+        "application_context": "code_interpretation",
+        "practice_context": [
+          "ST"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "critregion-06",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:26.09657+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:11066c068fc62f3e92a8119759e903b286256a0210ad64ed9d3a50cc5a132e64"
+      },
+      "proposed": {
+        "explanation": "Material choices are grounded in environmental and climate responsiveness. Critical Regionalism uses indigenous, locally sourced materials respecting embodied energy. Critical Regionalism is defined by engagement with regional vernacular adaptation. The Magney House's barrel vault, corrugated metal, and timber are systematically chosen to provide sun protection through deep overhangs while enabling natural ventilation—passive climate control derived from regional conditions. The Magney House's barrel vault, corrugated metal, and timber are systematically chosen to provide sun protection through deep overhangs while enabling natural ventilation—passive climate control derived from regional conditions."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "34040cdd-0c12-4dda-8f0b-83bbd1c39cc6",
+      "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-09-core-concept--5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+      "title": "lea-hist-008-09-core-concept",
+      "baseline_hash": "sha256:a1aee63cc1064099df1c7bba95f52246bc8cdeff1605a83e66dce942377727d7",
+      "baseline": {
+        "question_id": "34040cdd-0c12-4dda-8f0b-83bbd1c39cc6",
+        "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+        "topic_id": "db6a9e7f-324b-4f27-a905-9061fd7d734b",
+        "text": "Which year was Frei Otto the Pritzker Prize laureate, becoming the first posthumous award?",
+        "options": [
+          {
+            "id": "a",
+            "text": "2012"
+          },
+          {
+            "id": "b",
+            "text": "2014"
+          },
+          {
+            "id": "c",
+            "text": "2015"
+          },
+          {
+            "id": "d",
+            "text": "2016"
+          }
+        ],
+        "correct_option_id": "c",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Wang Shu won in 2012.",
+          "b": "Shigeru Ban won in 2014.",
+          "d": "Alejandro Aravena won in 2016.",
+          "correct": "Frei Otto won the Pritzker Prize in 2015 as the first posthumous laureate, honored for his structural and material innovation."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "remember",
+        "application_context": "recall",
+        "practice_context": [
+          "CH"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "pritzker-07",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:26.09657+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:a1aee63cc1064099df1c7bba95f52246bc8cdeff1605a83e66dce942377727d7"
+      },
+      "proposed": {
+        "explanation": "Wang Shu won in 2012. Shigeru Ban won in 2014. Alejandro Aravena won in 2016. Frei Otto won the Pritzker Prize in 2015 as the first posthumous laureate, honored for his structural and material innovation."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "18cc6036-17b8-4207-976b-16d83f01dead",
+      "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-09-core-concept--5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+      "title": "lea-hist-008-09-core-concept",
+      "baseline_hash": "sha256:6af6f5447179a3e27789c69e3776c49f8de4485a00fdca6b34002fb1012c478a",
+      "baseline": {
+        "question_id": "18cc6036-17b8-4207-976b-16d83f01dead",
+        "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+        "topic_id": "db6a9e7f-324b-4f27-a905-9061fd7d734b",
+        "text": "A living architect whose built work demonstrates tleant, vision, and lasting contribution to the built environment is recognized annually with a prestigious prize established in 1979. This describes which architecture award?",
+        "options": [
+          {
+            "id": "a",
+            "text": "American Institute of Architects Gold Medal"
+          },
+          {
+            "id": "b",
+            "text": "Royal Institute of British Architects Medal"
+          },
+          {
+            "id": "c",
+            "text": "Pritzker Architecture Prize"
+          },
+          {
+            "id": "d",
+            "text": "RIBA Stirling Prize"
+          }
+        ],
+        "correct_option_id": "c",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "AIA Gold Medal has different criteria.",
+          "b": "RIBA Medal has different focus and history.",
+          "d": "Stirling Prize recognizes completed buildings, not living architects' lifetime achievement.",
+          "correct": "This describes the Pritzker Architecture Prize, established in 1979 by the Hyatt Foundation, recognizing living architects' enduring contributions."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "remember",
+        "application_context": "recall",
+        "practice_context": [
+          "DESC"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "pritzker-11",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:26.09657+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:6af6f5447179a3e27789c69e3776c49f8de4485a00fdca6b34002fb1012c478a"
+      },
+      "proposed": {
+        "explanation": "AIA Gold Medal has different criteria. RIBA Medal has different focus and history. Stirling Prize recognizes completed buildings, not living architects' lifetime achievement. This describes the Pritzker Architecture Prize, established in 1979 by the Hyatt Foundation, recognizing living architects' enduring contributions."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "c9250b47-47f5-4e45-a44a-6c6b41ca219d",
+      "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-09-core-concept--5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+      "title": "lea-hist-008-09-core-concept",
+      "baseline_hash": "sha256:a5d4d86eb33b7e803e4d7d70866c9b9144b8e6d9414ce5e13d2ec8fe4a43e566",
+      "baseline": {
+        "question_id": "c9250b47-47f5-4e45-a44a-6c6b41ca219d",
+        "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+        "topic_id": "db6a9e7f-324b-4f27-a905-9061fd7d734b",
+        "text": "In which year was the Pritzker Architecture Prize established?",
+        "options": [
+          {
+            "id": "a",
+            "text": "1975"
+          },
+          {
+            "id": "b",
+            "text": "1979"
+          },
+          {
+            "id": "c",
+            "text": "1985"
+          },
+          {
+            "id": "d",
+            "text": "1990"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "The prize was not established in 1975.",
+          "c": "The prize was established in 1979, not 1985.",
+          "d": "The prize predates 1990.",
+          "correct": "The Pritzker Prize was established in 1979 by the Hyatt Foundation."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "remember",
+        "application_context": "recall",
+        "practice_context": [
+          "CH"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "pritzker-01",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:26.09657+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:a5d4d86eb33b7e803e4d7d70866c9b9144b8e6d9414ce5e13d2ec8fe4a43e566"
+      },
+      "proposed": {
+        "explanation": "The prize was not established in 1975. The prize was established in 1979, not 1985. The prize predates 1990. The Pritzker Prize was established in 1979 by the Hyatt Foundation."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "442e0cfd-f922-457e-9e5f-170e4563c4bd",
+      "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-09-core-concept--5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+      "title": "lea-hist-008-09-core-concept",
+      "baseline_hash": "sha256:e8f9abed2d85de01e8bcbcaef33cb0b5f40fbbe98a7d75e8729d136363758967",
+      "baseline": {
+        "question_id": "442e0cfd-f922-457e-9e5f-170e4563c4bd",
+        "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+        "topic_id": "db6a9e7f-324b-4f27-a905-9061fd7d734b",
+        "text": "Who was the first Pritzker Prize laureate in 1979?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Luis Barragán, known for his colorful and emotional architecture"
+          },
+          {
+            "id": "b",
+            "text": "Philip Johnson"
+          },
+          {
+            "id": "c",
+            "text": "I.M. Pei, celebrated for his modernist architectural designs"
+          },
+          {
+            "id": "d",
+            "text": "Kenzo Tange, a key figure in the Metabolist movement"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Luis Barragán won in 1980, the second laureate.",
+          "c": "I.M. Pei won in 1983.",
+          "d": "Kenzo Tange won in 1987.",
+          "correct": "Philip Johnson was the first Pritzker laureate in 1979, representing American establishment modernism."
         },
         "explanation": null,
         "code_citation": null,
@@ -1598,14 +572,1017 @@
         "difficulty_rating": null,
         "discrimination_rating": null,
         "is_assessment": false,
-        "model_id": "critregion-03",
+        "model_id": "pritzker-02",
         "prompt_image_url": null,
         "created_at": "2026-03-23T19:27:26.09657+00:00",
         "updated_at": "2026-04-08T07:44:46.846261+00:00",
-        "content_hash": "sha256:6020505c6201b60d6ec992f328b33249da7091091849ce5871e0693aec6238a7"
+        "content_hash": "sha256:e8f9abed2d85de01e8bcbcaef33cb0b5f40fbbe98a7d75e8729d136363758967"
       },
       "proposed": {
-        "explanation": "Tange was a modernist hero but not primarily identified with Critical Regionalism. Maki pursued Japanese modernism but not the explicitly critical regional framework. Isozaki pursued postmodern and deconstructivist directions rather than Critical Regionalism. Tadao Ando exemplifies Critical Regionalism through modernist abstraction—clean lines, minimal ornament, structural clarity—combined with engagement to Japanese spatial traditions, zen principles, and environmental responsiveness. Tadao Ando exemplifies Critical Regionalism through modernist abstraction—clean lines, minimal ornament, structural clarity—combined with engagement to Japanese spatial traditions, zen principles, and environmental responsiveness."
+        "explanation": "Luis Barragán won in 1980, the second laureate. I.M. Pei won in 1983. Kenzo Tange won in 1987. Philip Johnson was the first Pritzker laureate in 1979, representing American establishment modernism."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "f877fd65-1347-439f-9bb3-e57c8c0abf2d",
+      "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-09-core-concept--5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+      "title": "lea-hist-008-09-core-concept",
+      "baseline_hash": "sha256:cde26fef68b1641edac9d7d9bef0a1df0373cd1f24fda4eace4986da821a0de4",
+      "baseline": {
+        "question_id": "f877fd65-1347-439f-9bb3-e57c8c0abf2d",
+        "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+        "topic_id": "db6a9e7f-324b-4f27-a905-9061fd7d734b",
+        "text": "Which year marked the first femlea Pritzker Prize laureate, breaking a 25-year gender barrier?",
+        "options": [
+          {
+            "id": "a",
+            "text": "2000"
+          },
+          {
+            "id": "b",
+            "text": "2002"
+          },
+          {
+            "id": "c",
+            "text": "2004"
+          },
+          {
+            "id": "d",
+            "text": "2008"
+          }
+        ],
+        "correct_option_id": "c",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "No female laureate in 2000.",
+          "b": "Glenn Murcutt won in 2002.",
+          "d": "Jean Nouvel won in 2008.",
+          "correct": "Zaha Hadid became the first woman to win the Pritzker Prize in 2004."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "remember",
+        "application_context": "recall",
+        "practice_context": [
+          "CH"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "pritzker-03",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:26.09657+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:cde26fef68b1641edac9d7d9bef0a1df0373cd1f24fda4eace4986da821a0de4"
+      },
+      "proposed": {
+        "explanation": "No female laureate in 2000. Glenn Murcutt won in 2002. Jean Nouvel won in 2008. Zaha Hadid became the first woman to win the Pritzker Prize in 2004."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "0764b121-c781-4680-bf92-e329b22f5ac3",
+      "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-09-core-concept--5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+      "title": "lea-hist-008-09-core-concept",
+      "baseline_hash": "sha256:6ce7e67b40a5a416662e83f8e91ab3790953dc7d0e2aeb6d3f428948558193ba",
+      "baseline": {
+        "question_id": "0764b121-c781-4680-bf92-e329b22f5ac3",
+        "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+        "topic_id": "db6a9e7f-324b-4f27-a905-9061fd7d734b",
+        "text": "Which two architects are both first laureates of their respective countries: Wang Shu (China) and which architect (Japan)?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Kenzo Tange, who received the prize in 1987 for his monumental urban planning works"
+          },
+          {
+            "id": "b",
+            "text": "Tadao Ando, who received the prize in 1995 for his minimalist concrete architecture"
+          },
+          {
+            "id": "c",
+            "text": "Shigeru Ban, who received the prize in 2014 for his innovative humanitarian shelters"
+          },
+          {
+            "id": "d",
+            "text": "Multiple Japanese laureates preceded Wang Shu"
+          }
+        ],
+        "correct_option_id": "d",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Tange won in 1987, predating Wang Shu.",
+          "b": "Ando won in 1995, predating Wang Shu.",
+          "c": "Ban won in 2014, after Wang Shu.",
+          "correct": "Wang Shu was China's first laureate in 2012, but Japan had multiple laureates before him (Tange 1987, Ando 1995, etc.). No Japanese architect was a 'first' along with Wang Shu."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "remember",
+        "application_context": "design_application",
+        "practice_context": [
+          "CMP"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "pritzker-05",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:26.09657+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:6ce7e67b40a5a416662e83f8e91ab3790953dc7d0e2aeb6d3f428948558193ba"
+      },
+      "proposed": {
+        "explanation": "Tange won in 1987, predating Wang Shu. Ando won in 1995, predating Wang Shu. Ban won in 2014, after Wang Shu. Wang Shu was China's first laureate in 2012, but Japan had multiple laureates before him (Tange 1987, Ando 1995, etc.). No Japanese architect was a 'first' along with Wang Shu."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "8b9f432f-bb08-4267-a6e2-62b058bd8fc0",
+      "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-09-core-concept--5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+      "title": "lea-hist-008-09-core-concept",
+      "baseline_hash": "sha256:a3a69442a9a0287e7aae2049b91747432060a8716360dac2298183df40f5edb4",
+      "baseline": {
+        "question_id": "8b9f432f-bb08-4267-a6e2-62b058bd8fc0",
+        "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+        "topic_id": "db6a9e7f-324b-4f27-a905-9061fd7d734b",
+        "text": "In which year did the Pritzker Prize recognize its second Chilean laureate?",
+        "options": [
+          {
+            "id": "a",
+            "text": "2020"
+          },
+          {
+            "id": "b",
+            "text": "2024"
+          },
+          {
+            "id": "c",
+            "text": "2025"
+          },
+          {
+            "id": "d",
+            "text": "2026"
+          }
+        ],
+        "correct_option_id": "d",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Yvonne Farrell & Shelley McNamara won in 2020 (Ireland).",
+          "note": "Remove fictional winners; actual 2024 winner: Riken Yamamoto (Japan). No 2025 winner as of March 2026.",
+          "correct": "No Pritzker Prize awarded in 2026 as of March 2026; second Chilean laureate has not yet been awarded."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "remember",
+        "application_context": "recall",
+        "practice_context": [
+          "CH"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "pritzker-09",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:26.09657+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:a3a69442a9a0287e7aae2049b91747432060a8716360dac2298183df40f5edb4"
+      },
+      "proposed": {
+        "explanation": "Yvonne Farrell & Shelley McNamara won in 2020 (Ireland). Remove fictional winners; actual 2024 winner: Riken Yamamoto (Japan). No 2025 winner as of March 2026. No Pritzker Prize awarded in 2026 as of March 2026; second Chilean laureate has not yet been awarded."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "12e30953-d88a-4857-9235-7522268e8fa4",
+      "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-09-core-concept--5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+      "title": "lea-hist-008-09-core-concept",
+      "baseline_hash": "sha256:b1f993660773ff4fcda9e1b84fa2368016002ab5fb5bc410c73ba45d1c8bd8b5",
+      "baseline": {
+        "question_id": "12e30953-d88a-4857-9235-7522268e8fa4",
+        "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+        "topic_id": "db6a9e7f-324b-4f27-a905-9061fd7d734b",
+        "text": "Which architect won the Pritzker Prize in 1988, a shared award that was the only shared prize until later team practices?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Oscar Niemeyer and Gordon Bunshaft"
+          },
+          {
+            "id": "b",
+            "text": "Paul Rudolph and Kevin Roche"
+          },
+          {
+            "id": "c",
+            "text": "James Stirling and Michael Wilford"
+          },
+          {
+            "id": "d",
+            "text": "Aldo Rossi and Carlo Aymonino"
+          }
+        ],
+        "correct_option_id": "a",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "b": "Roche won individually in 1982; Rudolph did not win.",
+          "c": "Stirling won individually in 1981; Wilford was not a laureate.",
+          "d": "Rossi won individually in 1990.",
+          "correct": "In 1988, Gordon Bunshaft (USA) and Oscar Niemeyer (Brazil) shared the Pritzker Prize—the only shared award until later team practices (SANAA, etc.)."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "remember",
+        "application_context": "recall",
+        "practice_context": [
+          "ID"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "pritzker-10",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:26.09657+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:b1f993660773ff4fcda9e1b84fa2368016002ab5fb5bc410c73ba45d1c8bd8b5"
+      },
+      "proposed": {
+        "explanation": "Roche won individually in 1982; Rudolph did not win. Stirling won individually in 1981; Wilford was not a laureate. Rossi won individually in 1990. In 1988, Gordon Bunshaft (USA) and Oscar Niemeyer (Brazil) shared the Pritzker Prize—the only shared award until later team practices (SANAA, etc.)."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "30137711-7cb1-4d1b-8eab-2932a1fe0553",
+      "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-09-core-concept--5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+      "title": "lea-hist-008-09-core-concept",
+      "baseline_hash": "sha256:9c8cd501a39a27aee1610233b8ae6f80bece7f5ae5aabaeb122d696374f1d5e2",
+      "baseline": {
+        "question_id": "30137711-7cb1-4d1b-8eab-2932a1fe0553",
+        "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+        "topic_id": "db6a9e7f-324b-4f27-a905-9061fd7d734b",
+        "text": "Frank Gehry won the Pritzker Prize in 1989. What is his most iconic building, completed in 1997?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Getty Center, Los Angeles"
+          },
+          {
+            "id": "b",
+            "text": "Guggenheim Museum Bilbao"
+          },
+          {
+            "id": "c",
+            "text": "Dancing House, Prague"
+          },
+          {
+            "id": "d",
+            "text": "Vitra Design Museum, Weil am Rhein"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Getty Center is by Richard Meier (1984 laureate, completed 1997).",
+          "c": "Dancing House is by Gehry and Vlado Milunić (1999), earlier than Bilbao.",
+          "d": "Vitra Design Museum is by Gehry (1989) but predates Bilbao.",
+          "correct": "Frank Gehry's Guggenheim Museum Bilbao (1997) epitomizes his deconstructivist approach with titanium-clad biomorphic forms. He won the Pritzker in 1989, well before this building's completion."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "remember",
+        "application_context": "recall",
+        "practice_context": [
+          "ID"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "pritzker-06",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:26.09657+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:9c8cd501a39a27aee1610233b8ae6f80bece7f5ae5aabaeb122d696374f1d5e2"
+      },
+      "proposed": {
+        "explanation": "Getty Center is by Richard Meier (1984 laureate, completed 1997). Dancing House is by Gehry and Vlado Milunić (1999), earlier than Bilbao. Vitra Design Museum is by Gehry (1989) but predates Bilbao. Frank Gehry's Guggenheim Museum Bilbao (1997) epitomizes his deconstructivist approach with titanium-clad biomorphic forms. He won the Pritzker in 1989, well before this building's completion."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "5b858f47-c9d7-42e0-8abe-855427d4e87a",
+      "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-09-core-concept--5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+      "title": "lea-hist-008-09-core-concept",
+      "baseline_hash": "sha256:adf8ab0bfc1bba7385222d91ef853d0b8cb1543fdd191ccf5c4f436fba88f618",
+      "baseline": {
+        "question_id": "5b858f47-c9d7-42e0-8abe-855427d4e87a",
+        "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+        "topic_id": "db6a9e7f-324b-4f27-a905-9061fd7d734b",
+        "text": "How do the Pritzker laureate selections from 2010–2024 differ from those in the 1980s in terms of geography, building type, and design philosophy?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Recent selections are identical to 1980s selections; geography and philosophy have not changed, maintaining a consistent approach"
+          },
+          {
+            "id": "b",
+            "text": "Recent selections increasingly recognize non-Western architects, social impact, and sustainability; 1980s selections emphasized Western formalism and cultural institutions."
+          },
+          {
+            "id": "c",
+            "text": "Recent selections reject all modernism; 1980s selections embraced modernism exclusively, highlighting a shift in architectural values"
+          },
+          {
+            "id": "d",
+            "text": "Recent selections are less rigorous than 1980s selections; quality has declined, reflecting a perceived drop in standards"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Significant philosophical and geographic shifts are evident.",
+          "c": "Both eras embrace modernism differently; the distinction is in philosophy and scope.",
+          "d": "Recent laureates maintain rigorous standards; the shift is in priorities and representation.",
+          "correct": "The article articulates this shift: Early era (1979–1995) rewarded Western modernists and cultural ambition; Recent era (2011–2024) increasingly recognizes Global South architects, social practice, and sustainability (Aravena, Kéré, Ban, Lacaton & Vassal)."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "apply",
+        "application_context": "design_application",
+        "practice_context": [
+          "CMP"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "pritzker-12",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:26.09657+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:adf8ab0bfc1bba7385222d91ef853d0b8cb1543fdd191ccf5c4f436fba88f618"
+      },
+      "proposed": {
+        "explanation": "Significant philosophical and geographic shifts are evident. Both eras embrace modernism differently; the distinction is in philosophy and scope. Recent laureates maintain rigorous standards; the shift is in priorities and representation. The article articulates this shift: Early era (1979–1995) rewarded Western modernists and cultural ambition; Recent era (2011–2024) increasingly recognizes Global South architects, social practice, and sustainability (Aravena, Kéré, Ban, Lacaton & Vassal)."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "88e587a6-8889-4a80-9940-3836dea4de15",
+      "article_id": "f39be27a-5611-4d35-bdda-02f6e3e46f42",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-002-04-core-concept--f39be27a-5611-4d35-bdda-02f6e3e46f42",
+      "title": "lea-matl-002-04-core-concept",
+      "baseline_hash": "sha256:047e41f70e071d9f6bc1072d4bceada21d850e0da6d3716d1fbe994267d8e33b",
+      "baseline": {
+        "question_id": "88e587a6-8889-4a80-9940-3836dea4de15",
+        "article_id": "f39be27a-5611-4d35-bdda-02f6e3e46f42",
+        "topic_id": "2fceede7-fbd5-458a-8f79-f4bf71d0c846",
+        "text": "Romblon marble is the primary natural stone resource of the Philippines and accounts for approximately ___% of the country's marble production.",
+        "options": [
+          {
+            "id": "a",
+            "text": "80%"
+          },
+          {
+            "id": "b",
+            "text": "30%"
+          },
+          {
+            "id": "c",
+            "text": "50%"
+          },
+          {
+            "id": "d",
+            "text": "99%"
+          }
+        ],
+        "correct_option_id": "a",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "b": "30% is too low for Romblon's dominance.",
+          "c": "50% understates Romblon's market share.",
+          "d": "99% is unrealistic; other regions contribute some production.",
+          "correct": "Romblon Province produces approximately 80% of Philippine marble, making it the marble capital. Mabini and Odiongan are the primary production towns.",
+          "takeaway": "Romblon marble is the Philippine stone resource to know. Recognize its cloudy white appearance and premium quality comparable to Italian Carrara."
+        },
+        "explanation": null,
+        "code_citation": "Romblon Paradise Island documentation; Philippine stone resources",
+        "bloom_level": "understand",
+        "application_context": "code_interpretation",
+        "practice_context": [],
+        "difficulty": 0.3,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-MATL-002-04-003",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:26.09657+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:047e41f70e071d9f6bc1072d4bceada21d850e0da6d3716d1fbe994267d8e33b"
+      },
+      "proposed": {
+        "explanation": "30% is too low for Romblon's dominance. 50% understates Romblon's market share. 99% is unrealistic; other regions contribute some production. Romblon Province produces approximately 80% of Philippine marble, making it the marble capital. Mabini and Odiongan are the primary production towns. Romblon marble is the Philippine stone resource to know. Recognize its cloudy white appearance and premium quality comparable to Italian Carrara."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "f4dfa4e2-0bcb-45ea-bc31-878d00ab8610",
+      "article_id": "f39be27a-5611-4d35-bdda-02f6e3e46f42",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-002-04-core-concept--f39be27a-5611-4d35-bdda-02f6e3e46f42",
+      "title": "lea-matl-002-04-core-concept",
+      "baseline_hash": "sha256:c1a2a80d6ff6141ac294409109fd21cdbff9be941dd20706f8e12b486a442d57",
+      "baseline": {
+        "question_id": "f4dfa4e2-0bcb-45ea-bc31-878d00ab8610",
+        "article_id": "f39be27a-5611-4d35-bdda-02f6e3e46f42",
+        "topic_id": "2fceede7-fbd5-458a-8f79-f4bf71d0c846",
+        "text": "An exterior building facade in the Philippines is specified with limestone (ASTM C568, water absorption 2.5%) without protective sealant. Is this adequate for long-term durability?",
+        "options": [
+          {
+            "id": "a",
+            "text": "No; limestone's 2.5% absorption and acid sensitivity make it unsuitable for exterior tropical exposure without sealing. Granite (≤0.4% absorption) is required."
+          },
+          {
+            "id": "b",
+            "text": "Yes; limestone meets ASTM C568 specifications and is suitable for any external application, regardless of environmental conditions"
+          },
+          {
+            "id": "c",
+            "text": "No; but only because of typhoon impact, not moisture absorption, which is a significant factor in material degradation"
+          },
+          {
+            "id": "d",
+            "text": "Yes; limestone has been used for centuries in all climates without problems, though this overlooks specific environmental challenges"
+          }
+        ],
+        "correct_option_id": "a",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "b": "ASTM conformance is a minimum; exposure environment determines adequacy.",
+          "c": "Typhoon wind is a structural concern, not the primary durability issue with limestone absorption.",
+          "d": "Limestone has been used for centuries in arid and temperate climates; tropical humid climate is different.",
+          "correct": "Limestone's 2.5% water absorption combined with tropical rainfall, high humidity, and salt air (if coastal) creates conditions for water infiltration, biological growth (moss, algae), and acid etching. Protective sealing (penetrating or membrane) or granite (intrinsically water-resistant) is required.",
+          "takeaway": "Limestone in tropical Philippines requires either protective sealing or use of lower-absorption granite. Do not assume ASTM conformance guarantees field durability."
+        },
+        "explanation": null,
+        "code_citation": "ASTM C568; stone durability in tropical climates; water management in masonry",
+        "bloom_level": "apply",
+        "application_context": "code_interpretation",
+        "practice_context": [],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-MATL-002-04-004",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:26.09657+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:c1a2a80d6ff6141ac294409109fd21cdbff9be941dd20706f8e12b486a442d57"
+      },
+      "proposed": {
+        "explanation": "ASTM conformance is a minimum; exposure environment determines adequacy. Typhoon wind is a structural concern, not the primary durability issue with limestone absorption. Limestone has been used for centuries in arid and temperate climates; tropical humid climate is different. Limestone's 2.5% water absorption combined with tropical rainfall, high humidity, and salt air (if coastal) creates conditions for water infiltration, biological growth (moss, algae), and acid etching. Protective sealing (penetrating or membrane) or granite (intrinsically water-resistant) is required. Limestone in tropical Philippines requires either protective sealing or use of lower-absorption granite. Do not assume ASTM conformance guarantees field durability."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "15acfdf1-1eae-4743-8db8-a191c01033cc",
+      "article_id": "f39be27a-5611-4d35-bdda-02f6e3e46f42",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-002-04-core-concept--f39be27a-5611-4d35-bdda-02f6e3e46f42",
+      "title": "lea-matl-002-04-core-concept",
+      "baseline_hash": "sha256:0abc28ae5dd2aae22ba1594a35be135327e8fa1145760a4b04903b779bb6d24e",
+      "baseline": {
+        "question_id": "15acfdf1-1eae-4743-8db8-a191c01033cc",
+        "article_id": "f39be27a-5611-4d35-bdda-02f6e3e46f42",
+        "topic_id": "2fceede7-fbd5-458a-8f79-f4bf71d0c846",
+        "text": "Stone veneer differs from solid stone in that veneer is typically ___ inches thick and is applied over a ___.",
+        "options": [
+          {
+            "id": "a",
+            "text": "1—2; backup wall"
+          },
+          {
+            "id": "b",
+            "text": "4—6; structural frame"
+          },
+          {
+            "id": "c",
+            "text": "8—12; concrete foundation"
+          },
+          {
+            "id": "d",
+            "text": "0.25; stone substrate"
+          }
+        ],
+        "correct_option_id": "a",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "b": "Veneer is anchored to structural backup (wall or frame), not to a foundation directly.",
+          "c": "Veneer is thinner than solid stone (which is 4—12 inches).",
+          "d": "Veneer is not applied to stone substrate; it is the topmost layer.",
+          "correct": "Stone veneer is thin-cut stone (1—2 inches) adhered or mechanically anchored to a backup wall (brick, concrete, or foam insulation), reducing weight and cost while maintaining appearance.",
+          "takeaway": "Veneer = thin (1—2 in.) + adhesive or mechanical anchors + backup wall. Solid = thick (4—12 in.) + heavy + direct support. Choose veneer for cost and weight reduction; solid for maximum durability."
+        },
+        "explanation": null,
+        "code_citation": "Stone veneer installation standards (ASTM C1242, ANSI/NCMA TEK 10-02A); NSCP 2015 Section 2402 (general masonry materials)",
+        "bloom_level": "understand",
+        "application_context": "code_interpretation",
+        "practice_context": [],
+        "difficulty": 0.3,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-MATL-002-04-008",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:26.09657+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:0abc28ae5dd2aae22ba1594a35be135327e8fa1145760a4b04903b779bb6d24e"
+      },
+      "proposed": {
+        "explanation": "Veneer is anchored to structural backup (wall or frame), not to a foundation directly. Veneer is thinner than solid stone (which is 4—12 inches). Veneer is not applied to stone substrate; it is the topmost layer. Stone veneer is thin-cut stone (1—2 inches) adhered or mechanically anchored to a backup wall (brick, concrete, or foam insulation), reducing weight and cost while maintaining appearance. Veneer = thin (1—2 in.) + adhesive or mechanical anchors + backup wall. Solid = thick (4—12 in.) + heavy + direct support. Choose veneer for cost and weight reduction; solid for maximum durability."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "d3ab72e4-30ff-4855-aaf4-6cf76f531983",
+      "article_id": "f39be27a-5611-4d35-bdda-02f6e3e46f42",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-002-04-core-concept--f39be27a-5611-4d35-bdda-02f6e3e46f42",
+      "title": "lea-matl-002-04-core-concept",
+      "baseline_hash": "sha256:869bc49264506b0060110469898b3d906760c9642612f1ae4b0da00e024316c9",
+      "baseline": {
+        "question_id": "d3ab72e4-30ff-4855-aaf4-6cf76f531983",
+        "article_id": "f39be27a-5611-4d35-bdda-02f6e3e46f42",
+        "topic_id": "2fceede7-fbd5-458a-8f79-f4bf71d0c846",
+        "text": "A designer specifies marble for an exterior building facade, reasoning that marble's compressive strength (up to 10,000 psi) exceeds concrete's (4,000 psi), so it must be durable. Is this reasoning correct?",
+        "options": [
+          {
+            "id": "a",
+            "text": "No; compressive strength alone does not determine durability in exterior exposure. Marble's acid sensitivity and higher water absorption (0.75%) make it unsuitable for exterior. Granite's low absorption (<0.4%) and lack of acid sensitivity are more important than raw strength."
+          },
+          {
+            "id": "b",
+            "text": "Yes; higher compressive strength means better durability for all applications, regardless of environmental conditions or material properties."
+          },
+          {
+            "id": "c",
+            "text": "No; marble is weaker than concrete and should not be used externally, especially in areas with high pollution or acid rain exposure."
+          },
+          {
+            "id": "d",
+            "text": "Yes; marble's hardness (Mohs 3—4) provides sufficient scratch resistance for building facade, but does not account for other environmental factors."
+          }
+        ],
+        "correct_option_id": "a",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "b": "Strength is important, but durability requires multiple property evaluations.",
+          "c": "Marble is stronger than concrete in compression but more vulnerable to weathering.",
+          "d": "Mohs hardness (scratch resistance) is separate from weather durability.",
+          "correct": "Durability in exterior exposure depends on water absorption, acid resistance, weather stability, and UV resistance—not compressive strength alone. Marble's acid sensitivity and moderate absorption (0.75%) create long-term exterior vulnerability despite good compressive strength. Granite (≤0.4% absorption, acid-resistant) is inherently more durable.",
+          "takeaway": "Durability ≠ Strength. A material can be strong but vulnerable to environmental attack. Water absorption, acid sensitivity, and UV stability are durability drivers."
+        },
+        "explanation": null,
+        "code_citation": "ASTM C615, C503 standards; stone durability principles; exterior design standards",
+        "bloom_level": "apply",
+        "application_context": "code_interpretation",
+        "practice_context": [],
+        "difficulty": 0.7,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-MATL-002-04-007",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:26.09657+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:869bc49264506b0060110469898b3d906760c9642612f1ae4b0da00e024316c9"
+      },
+      "proposed": {
+        "explanation": "Strength is important, but durability requires multiple property evaluations. Marble is stronger than concrete in compression but more vulnerable to weathering. Mohs hardness (scratch resistance) is separate from weather durability. Durability in exterior exposure depends on water absorption, acid resistance, weather stability, and UV resistance—not compressive strength alone. Marble's acid sensitivity and moderate absorption (0.75%) create long-term exterior vulnerability despite good compressive strength. Granite (≤0.4% absorption, acid-resistant) is inherently more durable. Durability ≠ Strength. A material can be strong but vulnerable to environmental attack. Water absorption, acid sensitivity, and UV stability are durability drivers."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "e4e2391e-dc72-4f32-94bd-fe7b5076e477",
+      "article_id": "f39be27a-5611-4d35-bdda-02f6e3e46f42",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-002-04-core-concept--f39be27a-5611-4d35-bdda-02f6e3e46f42",
+      "title": "lea-matl-002-04-core-concept",
+      "baseline_hash": "sha256:cff4e8082765a426491be2c4edba9d55fb12a0664c280a64c8156a1882f763fc",
+      "baseline": {
+        "question_id": "e4e2391e-dc72-4f32-94bd-fe7b5076e477",
+        "article_id": "f39be27a-5611-4d35-bdda-02f6e3e46f42",
+        "topic_id": "2fceede7-fbd5-458a-8f79-f4bf71d0c846",
+        "text": "Which of the following stones has the HIGHEST water absorption and is least suitable for wet or tropical exterior exposures without sealing?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Travertine (5—25% absorption)"
+          },
+          {
+            "id": "b",
+            "text": "Marble (0.75% absorption)"
+          },
+          {
+            "id": "c",
+            "text": "Granite (0.4% absorption)"
+          },
+          {
+            "id": "d",
+            "text": "Slate (<0.5% absorption)"
+          }
+        ],
+        "correct_option_id": "a",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "b": "Marble at 0.75% is moderate; with sealing, acceptable for sheltered interior use.",
+          "c": "Granite at 0.4% is the lowest; highly resistant to water damage.",
+          "d": "Slate <0.5% is excellent; used for centuries in wet roofing applications.",
+          "correct": "Travertine's porosity results in 5—25% water absorption, making it vulnerable to freeze-thaw damage, biological growth in tropical humidity, and water infiltration. Unsuitable for tropical Philippines without protective sealing.",
+          "takeaway": "Match absorption to exposure: Granite (<0.5%) for wet, Marble (0.75%) for sheltered interior, Travertine (5%+) for interior dry use only. High absorption + tropical humidity = failure."
+        },
+        "explanation": null,
+        "code_citation": "ASTM C615, C503, C568 absorption specifications; stone durability principles",
+        "bloom_level": "understand",
+        "application_context": "code_interpretation",
+        "practice_context": [],
+        "difficulty": 0.3,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-MATL-002-04-002",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:26.09657+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:cff4e8082765a426491be2c4edba9d55fb12a0664c280a64c8156a1882f763fc"
+      },
+      "proposed": {
+        "explanation": "Marble at 0.75% is moderate; with sealing, acceptable for sheltered interior use. Granite at 0.4% is the lowest; highly resistant to water damage. Slate <0.5% is excellent; used for centuries in wet roofing applications. Travertine's porosity results in 5—25% water absorption, making it vulnerable to freeze-thaw damage, biological growth in tropical humidity, and water infiltration. Unsuitable for tropical Philippines without protective sealing. Match absorption to exposure: Granite (<0.5%) for wet, Marble (0.75%) for sheltered interior, Travertine (5%+) for interior dry use only. High absorption + tropical humidity = failure."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "bbdc625a-aed1-4fcd-a6ac-553e02ff7b31",
+      "article_id": "f39be27a-5611-4d35-bdda-02f6e3e46f42",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-002-04-core-concept--f39be27a-5611-4d35-bdda-02f6e3e46f42",
+      "title": "lea-matl-002-04-core-concept",
+      "baseline_hash": "sha256:e08cf0a2b8e30eae0ff35dd09b07cd904586516a4123391c510cb1f18ab1b221",
+      "baseline": {
+        "question_id": "bbdc625a-aed1-4fcd-a6ac-553e02ff7b31",
+        "article_id": "f39be27a-5611-4d35-bdda-02f6e3e46f42",
+        "topic_id": "2fceede7-fbd5-458a-8f79-f4bf71d0c846",
+        "text": "The Mohs hardness sclea ranks minerals by ___ resistance; a stone with Mohs 6 (granite) is ___ than a stone with Mohs 3 (marble).",
+        "options": [
+          {
+            "id": "a",
+            "text": "scratch; harder"
+          },
+          {
+            "id": "b",
+            "text": "compressive; softer"
+          },
+          {
+            "id": "c",
+            "text": "impact; weaker"
+          },
+          {
+            "id": "d",
+            "text": "abrasion; equivalent"
+          }
+        ],
+        "correct_option_id": "a",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "b": "Mohs measures scratch resistance, not compressive strength.",
+          "c": "Weaker in impact is not determined by Mohs scale alone.",
+          "d": "Equivalent is incorrect; Mohs 6 is significantly harder than Mohs 3.",
+          "correct": "Mohs hardness measures resistance to scratching. Granite (6) is harder than marble (3), meaning granite resists scratching better. Hardness does NOT directly equal compressive strength.",
+          "takeaway": "Mohs hardness = scratch resistance. Granite (harder) resists wear and scratching better than marble. Compressive strength is a separate property measured by crushing tests."
+        },
+        "explanation": null,
+        "code_citation": "Mohs hardness sclea; ASTM stone specifications",
+        "bloom_level": "understand",
+        "application_context": "recall",
+        "practice_context": [],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-MATL-002-04-006",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:26.09657+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:e08cf0a2b8e30eae0ff35dd09b07cd904586516a4123391c510cb1f18ab1b221"
+      },
+      "proposed": {
+        "explanation": "Mohs measures scratch resistance, not compressive strength. Weaker in impact is not determined by Mohs scale alone. Equivalent is incorrect; Mohs 6 is significantly harder than Mohs 3. Mohs hardness measures resistance to scratching. Granite (6) is harder than marble (3), meaning granite resists scratching better. Hardness does NOT directly equal compressive strength. Mohs hardness = scratch resistance. Granite (harder) resists wear and scratching better than marble. Compressive strength is a separate property measured by crushing tests."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "e621d7c1-75cc-4c48-9289-9087d30913f8",
+      "article_id": "f39be27a-5611-4d35-bdda-02f6e3e46f42",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-002-04-core-concept--f39be27a-5611-4d35-bdda-02f6e3e46f42",
+      "title": "lea-matl-002-04-core-concept",
+      "baseline_hash": "sha256:a98cb39d0b906badd2ec92fc0c57886098333b54d7cdb740a948eb52764c0410",
+      "baseline": {
+        "question_id": "e621d7c1-75cc-4c48-9289-9087d30913f8",
+        "article_id": "f39be27a-5611-4d35-bdda-02f6e3e46f42",
+        "topic_id": "2fceede7-fbd5-458a-8f79-f4bf71d0c846",
+        "text": "Marble is prized for interior applications but is NOT recommended for exterior exposure because it is susceptible to ___.",
+        "options": [
+          {
+            "id": "a",
+            "text": "acid etching from acidic rain or soil moisture"
+          },
+          {
+            "id": "b",
+            "text": "compression failure under excessive load conditions"
+          },
+          {
+            "id": "c",
+            "text": "freeze-thaw cycles that cause cracking and spalling"
+          },
+          {
+            "id": "d",
+            "text": "biological attachment leading to surface discoloration"
+          }
+        ],
+        "correct_option_id": "a",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "b": "Marble has adequate compressive strength for most applications; compression is not the limiting factor.",
+          "c": "Freeze-thaw is a concern for high-absorption stone in cold climates, but marble's moderate absorption and tropical Philippines' warm climate make this secondary.",
+          "d": "Biological growth (moss, algae) affects all stone; it is not specific to marble.",
+          "correct": "Marble (CaCO₃) is sensitive to weak acids; rainwater containing carbonic acid, soil moisture, and vinegar/acidic cleaners etch the surface, dull the polish, and create irreversible damage.",
+          "takeaway": "Marble = interior only. Acid sensitivity and moderate absorption limit exterior use. Granite is the exterior choice for durability."
+        },
+        "explanation": null,
+        "code_citation": "ASTM C503; stone durability; interior design standards",
+        "bloom_level": "understand",
+        "application_context": "code_interpretation",
+        "practice_context": [],
+        "difficulty": 0.3,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-MATL-002-04-005",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:26.09657+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:a98cb39d0b906badd2ec92fc0c57886098333b54d7cdb740a948eb52764c0410"
+      },
+      "proposed": {
+        "explanation": "Marble has adequate compressive strength for most applications; compression is not the limiting factor. Freeze-thaw is a concern for high-absorption stone in cold climates, but marble's moderate absorption and tropical Philippines' warm climate make this secondary. Biological growth (moss, algae) affects all stone; it is not specific to marble. Marble (CaCO₃) is sensitive to weak acids; rainwater containing carbonic acid, soil moisture, and vinegar/acidic cleaners etch the surface, dull the polish, and create irreversible damage. Marble = interior only. Acid sensitivity and moderate absorption limit exterior use. Granite is the exterior choice for durability."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "57a5181c-b039-42f2-aba3-6bcbd0a8369f",
+      "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-001-05-core-concept--757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+      "title": "lea-hist-001-05-core-concept",
+      "baseline_hash": "sha256:923791204886e7ddaba80a7a6d1761a048be35ca13fc63c6a2aba095664cde6d",
+      "baseline": {
+        "question_id": "57a5181c-b039-42f2-aba3-6bcbd0a8369f",
+        "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+        "topic_id": "a0124521-5f62-4bfe-bf92-8d5baf24d32a",
+        "text": "The Parthenon's peristasis (outer colonnade) arrangement features how many columns on the short ends and long sides?",
+        "options": [
+          {
+            "id": "a",
+            "text": "6 columns on short ends and 12 on long sides (6×12 arrangement)"
+          },
+          {
+            "id": "b",
+            "text": "6 columns on short ends and 13 on long sides (6×13 arrangement)"
+          },
+          {
+            "id": "c",
+            "text": "8 columns on short ends and 17 on long sides (8×17 arrangement)"
+          },
+          {
+            "id": "d",
+            "text": "10 columns on short ends and 20 on long sides (10×20 arrangement)"
+          }
+        ],
+        "correct_option_id": "c",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "The 6×12 arrangement is not documented for the Parthenon.",
+          "b": "The 6×13 arrangement is found on other Doric temples like the Temple of Hephaestus, which is smaller than the Parthenon.",
+          "d": "The 10×20 arrangement is not a documented classical Greek order.",
+          "correct": "Its plan is a rectangular naos with an outer colonnade (peristasis) of 8 columns on the short ends and 17 columns on the long sides. This 8 × 17 arrangement is standard.'",
+          "takeaway": "This 8 × 17 arrangement is standard.'."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "remember",
+        "application_context": "recall",
+        "practice_context": [
+          "ID"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-HIST-001-05-002",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:23.525262+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:923791204886e7ddaba80a7a6d1761a048be35ca13fc63c6a2aba095664cde6d"
+      },
+      "proposed": {
+        "explanation": "The 6×12 arrangement is not documented for the Parthenon. The 6×13 arrangement is found on other Doric temples like the Temple of Hephaestus, which is smaller than the Parthenon. The 10×20 arrangement is not a documented classical Greek order. Its plan is a rectangular naos with an outer colonnade (peristasis) of 8 columns on the short ends and 17 columns on the long sides. This 8 × 17 arrangement is standard.' This 8 × 17 arrangement is standard.'."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "858f5e0b-e44b-4410-90aa-d921a7e864aa",
+      "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-001-05-core-concept--757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+      "title": "lea-hist-001-05-core-concept",
+      "baseline_hash": "sha256:f4e0f90c8d29727701de8726a810a383acea360dd634639180e2c05d369230cc",
+      "baseline": {
+        "question_id": "858f5e0b-e44b-4410-90aa-d921a7e864aa",
+        "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+        "topic_id": "a0124521-5f62-4bfe-bf92-8d5baf24d32a",
+        "text": "The Parthenon, built on the Acropolis at Athens between 447–432 BCE, was designed by which two architects?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Libon and Kallikrates"
+          },
+          {
+            "id": "b",
+            "text": "Iktinos and Kallikrates"
+          },
+          {
+            "id": "c",
+            "text": "Phidias and Polyclitus"
+          },
+          {
+            "id": "d",
+            "text": "Hippodamus and Polyclitus"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Libon designed the Temple of Zeus at Olympia, not the Parthenon.",
+          "c": "Phidias oversaw the sculpture program, not the architectural design; Polyclitus designed the Tholos at Epidaurus.",
+          "d": "Hippodamus designed the city of Miletus; Polyclitus designed the Tholos at Epidaurus.",
+          "correct": "The Parthenon (Temple of Athena Parthenos): Built on the Acropolis at Athens between 447–432 BCE under the direction of the general Pericles, designed by Iktinos and Kallikrates, with sculpture overseen by Phidias.'",
+          "takeaway": "The article states: 'The Parthenon (Temple of Athena Parthenos): Built on the Acropolis at Athens between 447–432 BCE under the direction of the general Pericles, designed by Iktinos and Kallikrates, with sculpture overseen by Phidias.'."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "remember",
+        "application_context": "recall",
+        "practice_context": [
+          "ID"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-HIST-001-05-001",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:23.525262+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:f4e0f90c8d29727701de8726a810a383acea360dd634639180e2c05d369230cc"
+      },
+      "proposed": {
+        "explanation": "Libon designed the Temple of Zeus at Olympia, not the Parthenon. Phidias oversaw the sculpture program, not the architectural design; Polyclitus designed the Tholos at Epidaurus. Hippodamus designed the city of Miletus; Polyclitus designed the Tholos at Epidaurus. The Parthenon (Temple of Athena Parthenos): Built on the Acropolis at Athens between 447–432 BCE under the direction of the general Pericles, designed by Iktinos and Kallikrates, with sculpture overseen by Phidias.' The article states: 'The Parthenon (Temple of Athena Parthenos): Built on the Acropolis at Athens between 447–432 BCE under the direction of the general Pericles, designed by Iktinos and Kallikrates, with sculpture overseen by Phidias.'."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "e6986094-7029-4024-97c4-406cfd08c254",
+      "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-001-05-core-concept--757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+      "title": "lea-hist-001-05-core-concept",
+      "baseline_hash": "sha256:9ff2a501efd244f25fff65f0b583d2649fb005d3911adf943185b372cf276d0a",
+      "baseline": {
+        "question_id": "e6986094-7029-4024-97c4-406cfd08c254",
+        "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+        "topic_id": "a0124521-5f62-4bfe-bf92-8d5baf24d32a",
+        "text": "A Greek column capital features two spiraling scrolls (volutes) and a base, and the entablature above includes a continuous frieze often sculpted with narrative scenes. Which order does this describe?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Doric order"
+          },
+          {
+            "id": "b",
+            "text": "Ionic order"
+          },
+          {
+            "id": "c",
+            "text": "Corinthian order"
+          },
+          {
+            "id": "d",
+            "text": "Tuscan order"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "The Doric order has a simple capital without volutes and a triglyph-metope entablature, not a continuous frieze.",
+          "c": "The Corinthian order features acanthus leaves and other scrollwork, not just volutes.",
+          "d": "The Tuscan order is a Roman order, not a Greek order.",
+          "correct": "The Ionic order: 'An Ionic column is 8–10 times its diameter in height, with a base (unlike Doric) and a capital featuring two spiraling scrolls (volutes). The entablature is simpler: a continuous frieze (often sculpted) runs above the columns.'",
+          "takeaway": "The entablature is simpler: a continuous frieze (often sculpted) runs above the columns.'."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "apply",
+        "application_context": "recall",
+        "practice_context": [
+          "DESC"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-HIST-001-05-005",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:23.525262+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:9ff2a501efd244f25fff65f0b583d2649fb005d3911adf943185b372cf276d0a"
+      },
+      "proposed": {
+        "explanation": "The Doric order has a simple capital without volutes and a triglyph-metope entablature, not a continuous frieze. The Corinthian order features acanthus leaves and other scrollwork, not just volutes. The Tuscan order is a Roman order, not a Greek order. The Ionic order: 'An Ionic column is 8–10 times its diameter in height, with a base (unlike Doric) and a capital featuring two spiraling scrolls (volutes). The entablature is simpler: a continuous frieze (often sculpted) runs above the columns.' The entablature is simpler: a continuous frieze (often sculpted) runs above the columns.'."
       },
       "classification": "strict_explanation_backfill",
       "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."

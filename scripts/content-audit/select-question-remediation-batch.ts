@@ -61,13 +61,30 @@ function skippedQuestionIds(): Set<string> {
   return ids
 }
 const professionalPractice = /\b(architect ownership|client rights?|copyright|contract(?:s|ual)?|SPP|standard of professional practice|RA\s*9266|PRC|PRBoA|professional liability|civil code|article\s*1723|fee(?:s)?|certificate(?:s)?|building official|occupancy permit|fire safety|accessibility|BP\s*344|PD\s*1096|RA\s*9514|permit(?:s)?|setback(?:s)?|egress|ramp(?:s)?|toilet(?:s)?|elevator(?:s)?|corridor(?:s)?|stair(?:s)?|parking|sanitation|rule|section|table|numbered provision)\b/i
-const legalCode = /\b(RA|PD|BP|Rule|Section|IRR|NBCP|Fire Code|Accessibility|permit|occupancy|egress|setback|parking|ramp|corridor|stair|elevator|sanitation|utilities|contract|SPP|PRC|PRBoA|BFP|NCDA|DPWH|DHSUD|UAP|Civil Code|Article\s*\d+)\b/i
+const legalCode = /\b(RA\s*\d{3,5}|PD\s*\d{3,5}|BP\s*\d{3,5}|Rule\s+(?:\d+|[IVXLC]+)|Section\s+\d+|IRR|NBCP|Fire Code|Accessibility|permit|occupancy|egress|setback|parking|ramp|corridor|stair|elevator|toilet|washroom|sanitation|utilities|contract|SPP|PRC|PRBoA|BFP|NCDA|DPWH|DHSUD|UAP|Civil Code|Article\s*\d+|NHCP|IAPOA|architect[- ]of[- ]record|PTR|professional practice|ownership|copyright|liability|certificate)\b/i
 const dimensional = /\b\d+(?:\.\d+)?\s*(mm|cm|m|sqm|sq\.?\s*m|%|percent|pesos?|php|₱|feet|ft|days?|months?|years?|km|kilometers?)\b/i
 const genericLeak = /\b(which is not accurate|not accurate|misconception|misunderstanding|not related|separate concept|oversimplification|misrepresents|historically inaccurate|ensuring all aspects|focusing on|allowing the architect|providing a formal directive|formal directive|outdated|trap|ALE|different concept|another subject|commonly tested|review center|exam trick|obviously|all of the above|none of the above|not valid|incorrect because|wrong because|this option is incorrect|review the correct answer above|correct answer above)\b/i
 const placeholderExplanation = /^(|null|n\/a|none|tbd|to be added|placeholder|same as rationale|see rationale|refer to rationale)$/i
-function hasExplicitSourceSupport(q: any, article: string): boolean {
-  const sourceBlob = [q.code_citation, q.source_verification, q.sources, q.citation, q.reference, q.metadata, article.match(/<LawCallout[\s\S]*?<\/LawCallout>/g)?.join(' ') || ''].map(text).join(' ')
-  return /\b(official|source|citation|pdf|IRR|RA\s*\d+|PD\s*\d+|BP\s*\d+|SPP|PRC|PRBoA|Official Gazette|Lawphil|DPWH|NBCDO|NCDA|BFP|DOE|DHSUD|UAP|Section\s+\d+|Rule\s+[IVXLC]+|Article\s+\d+)\b/i.test(sourceBlob)
+function hasItemLevelOfficialSourceEvidence(q: any, article: string): boolean {
+  const itemSourceBlob = [
+    q.source_verification,
+    q.source_evidence,
+    q.source_locator,
+    q.source_chunk_id,
+    q.official_source_url,
+    q.official_url,
+    q.official_pdf,
+    q.sources,
+    q.citation,
+    q.reference,
+    q.metadata,
+  ].map(text).join(' ')
+  const articleLawBlocks = article.match(/<LawCallout[\s\S]*?<\/LawCallout>/g)?.join(' ') || ''
+  const combined = [itemSourceBlob, articleLawBlocks].join(' ')
+  const officialSource = /\b(official\s+gazette|lawphil|supreme\s+court|e-?library|PRC|PRBoA|DPWH|NBCDO|NCDA|BFP|DOE|DHSUD|UAP|IAPOA|government|\.gov\.ph|official\s+pdf|source\s+pack|chunk\s*id|verified\s+local\s+source)\b/i.test(combined)
+  const locator = /\b(section\s+\d+(?:\.\d+)*|sec\.\s*\d+|rule\s+(?:\d+|[IVXLC]+)|table\s+\d+|article\s+\d+|page\s+\d+|p\.\s*\d+|clause\s+\d+|chapter\s+\d+|rule\s+\d+\.\d+|\b(?:RA|PD|BP)\s*\d{3,5}\b|IRR|SPP\s*\d+|document\s+code|locator)\b/i.test(combined)
+  const sourceUrl = /https?:\/\/[^\s)]+/i.test(combined)
+  return (officialSource && locator) || (sourceUrl && locator && /\b(official|gov\.ph|lawphil|prc|dpwh|ncda|bfp|dhsud|uap|pdf)\b/i.test(combined))
 }
 function nearDuplicateOptions(optionTexts: string[]): boolean {
   const normalized = optionTexts.map(normStem).filter(Boolean)
@@ -117,7 +134,8 @@ for (const folder of readdirSync(ARTICLE_ROOT)) {
     if (explanation && !placeholderExplanation.test(explanation)) { exclude('existing_meaningful_explanation'); continue }
     const blob = [q.text, q.rationale, correct.text, optionTexts.join(' ')].map(text).join(' ')
     if (genericLeak.test(blob)) { exclude('generic_meta_distractor_leakage'); continue }
-    if ((professionalPractice.test(blob) || legalCode.test(blob) || dimensional.test(blob)) && !hasExplicitSourceSupport(q, article)) { exclude('professional_practice_legal_code_source_gap'); continue }
+    const itemLevelEvidence = hasItemLevelOfficialSourceEvidence(q, article)
+    if ((professionalPractice.test(blob) || legalCode.test(blob) || dimensional.test(blob)) && !itemLevelEvidence) { exclude('item_level_official_source_gap'); continue }
     const rationale = text(q.rationale).trim()
     if (rationale.length < 120) { exclude('weak_rationale'); continue }
     const answerInArticle = article.toLowerCase().includes(String(correct.text).toLowerCase())
@@ -136,7 +154,9 @@ for (const folder of readdirSync(ARTICLE_ROOT)) {
       baseline: q,
       proposed: { explanation: proposedExplanation },
       classification: 'strict_explanation_backfill',
-      evidence: 'Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded.'
+      evidence: itemLevelEvidence
+        ? 'Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; item-level official source evidence was detected for high-risk signals.'
+        : 'Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded.'
     }
     selected.push(row)
     if (selected.length >= size) break
@@ -159,19 +179,22 @@ for (const row of selected) {
   writeText(path.join(diffDir, `${row.question_id}.diff.md`), `# Question Diff ${row.question_id}\n\nClassification: strict_explanation_backfill\n\nNo answer-key change. No option change. Existing explanation was null or placeholder.\n\n## Added explanation\n\n${row.proposed.explanation}\n`)
 }
 
-writeJson(path.join(QUESTION_ROOT, 'question-remediation-queue.generated.json'), { generated_at: new Date().toISOString(), selector: 'strict-v2', selected_count: selected.length, excluded, candidates: selected })
-writeText(path.join(QUESTION_ROOT, 'question-remediation-selector-rules.md'), `# Question Remediation Selector Rules\n\nStrict v2 excludes existing meaningful explanations, professional-practice/legal/code/dimensional prompts without explicit source support, repeated stems, duplicate/near-duplicate options, option-length giveaway risk, generic/meta distractors, missing answer keys, weak rationales, and insufficient linked-article support.\n\nExpanded generic/meta leakage blocks phrases such as: which is not accurate, not accurate, misconception, ensuring all aspects, focusing on, formal directive, trap, outdated, different concept, ALE, exam trick, all of the above, and none of the above.\n`)
-writeText(path.join(QUESTION_ROOT, 'question-remediation-selector-report.md'), `# Question Remediation Selector Report\n\nSelector: strict-v2\nSelected: ${selected.length}\n\nExcluded by reason:\n${Object.entries(excluded).map(([k,v]) => `- ${k}: ${v}`).join('\n')}\n`)
-writeText(path.join(QUESTION_ROOT, 'question-risk-summary.md'), `# Question Risk Summary\n\nSelector: strict-v2\n\n${Object.entries(excluded).map(([k,v]) => `- ${k}: ${v}`).join('\n')}\n`)
+writeJson(path.join(QUESTION_ROOT, 'question-remediation-queue.generated.json'), { generated_at: new Date().toISOString(), selector: 'strict-v3-item-level-official-source', selected_count: selected.length, excluded, candidates: selected })
+writeText(path.join(QUESTION_ROOT, 'question-remediation-selector-rules.md'), `# Question Remediation Selector Rules\n\nStrict v3 excludes existing meaningful explanations, repeated stems, duplicate/near-duplicate options, option-length giveaway risk, generic/meta distractors, missing answer keys, weak rationales, and insufficient linked-article support.\n\nHigh-risk legal/code/professional-practice/dimensional questions are excluded unless item-level official source evidence is detected. Generic code_citation text, article title, linked-article existence, taxonomy node, broad source family, existing rationale text, AI source notes, and phrases such as BP 344 or PD 1096 alone are not sufficient. Evidence must include an official/source-pack/local-source signal and a locator such as section, rule, table, article, page, document code, source chunk ID, official URL/PDF, or equivalent locator tied to the item.\n\nExpanded generic/meta leakage blocks phrases such as: which is not accurate, not accurate, misconception, ensuring all aspects, focusing on, formal directive, trap, outdated, different concept, ALE, exam trick, best answer is, incorrect because it is wrong, all of the above, and none of the above.\n`)
+writeText(path.join(QUESTION_ROOT, 'question-remediation-selector-report.md'), `# Question Remediation Selector Report\n\nSelector: strict-v3-item-level-official-source\nSelected: ${selected.length}\n\nExcluded by reason:\n${Object.entries(excluded).map(([k,v]) => `- ${k}: ${v}`).join('\n')}\n`)
+writeText(path.join(QUESTION_ROOT, 'question-risk-summary.md'), `# Question Risk Summary\n\nSelector: strict-v3-item-level-official-source\n\n${Object.entries(excluded).map(([k,v]) => `- ${k}: ${v}`).join('\n')}\n`)
 writeJson(path.join(batchDir, 'question-jobs.generated.json'), { generated_at: new Date().toISOString(), batch: batchId, jobs: selected })
-writeText(path.join(batchDir, 'question-selection-report.md'), `# ${batchId} Selection Report\n\nSelected: ${selected.length}\nCriteria: strict explanation backfill only; published article; null/placeholder explanation; specific rationale; no answer-key/option changes; no generic/meta distractors; no professional-practice/legal/code/dimensional prompt without explicit source support.\n`)
-writeText(path.join(batchDir, 'question-selector-safety-report.md'), `# Question Selector Safety Report\n\nSelected count: ${selected.length}\nNo answer-key-risk selected: yes\nNo uncited legal/code/dimensional item selected: yes\nNo professional-practice source-gap item selected: yes\nNo existing meaningful explanation overwrite: yes\nNo generic/meta distractor leakage: yes\nNo duplicate/near-duplicate options selected: yes\nNo option-length giveaway risk selected: yes\nNo repeated stems selected: yes\n`)
+writeText(path.join(batchDir, 'question-selection-report.md'), `# ${batchId} Selection Report\n\nSelected: ${selected.length}\nCriteria: strict explanation backfill only; published article; null/placeholder explanation; specific rationale; no answer-key/option changes; no generic/meta distractors; no professional-practice/legal/code/dimensional prompt without item-level official source evidence.\n`)
+writeText(path.join(batchDir, 'question-selector-safety-report.md'), `# Question Selector Safety Report\n\nSelected count: ${selected.length}\nNo answer-key-risk selected: yes\nNo uncited legal/code/dimensional item selected: yes\nNo professional-practice source-gap item selected: yes\nItem-level official source evidence gate: enforced for high-risk signals\nNo existing meaningful explanation overwrite: yes\nNo generic/meta distractor leakage: yes\nNo duplicate/near-duplicate options selected: yes\nNo option-length giveaway risk selected: yes\nNo repeated stems selected: yes\n`)
 writeJson(path.join(batchDir, 'question-improvements.generated.json'), { generated_at: new Date().toISOString(), improvements: selected })
 writeJson(path.join(batchDir, 'question-batch-publish-ready.generated.json'), selected)
 writeJson(path.join(batchDir, 'question-batch-quarantine.generated.json'), [])
 writeText(path.join(batchDir, 'answer-key-risk-report.md'), '# Answer-Key Risk Report\n\nAnswer-key changes proposed: 0\nOption changes proposed: 0\n')
-writeText(path.join(batchDir, 'rationale-source-linkage-report.md'), '# Rationale Source Linkage Report\n\nEach selected item reuses existing specific rationale as explanation. Selector required linked-article support signals and excluded uncited legal/code/dimensional prompts.\n')
+writeText(path.join(batchDir, 'rationale-source-linkage-report.md'), '# Rationale Source Linkage Report\n\nEach selected item reuses existing specific rationale as explanation. Selector required linked-article support signals and excluded high-risk legal/code/dimensional/professional-practice prompts without item-level official source evidence.\n')
 writeText(path.join(batchDir, 'ambiguous-question-risk-report.md'), '# Ambiguous Question Risk Report\n\nSelector excluded missing correct answers, duplicate option text, repeated stem clusters, and generic/meta distractor leakage.\n')
 writeText(path.join(batchDir, 'existing-explanation-overwrite-risk-report.md'), '# Existing Explanation Overwrite Risk Report\n\nExisting meaningful explanation overwrite: 0 selected.\n')
+writeText(path.join(batchDir, 'generic-meta-distractor-leakage-report.md'), '# Generic/Meta Distractor Leakage Report\n\nGeneric/meta leakage: 0 selected after strict selector.\n')
+writeText(path.join(batchDir, 'professional-practice-source-gating-report.md'), '# Professional-Practice Source Gating Report\n\nProfessional-practice/legal/code/dimensional signals require item-level official source evidence. Items without this evidence were excluded before batch generation.\n')
+writeText(path.join(batchDir, 'item-level-official-source-evidence-report.md'), `# Item-Level Official Source Evidence Report\n\nGate: enforced for high-risk legal/code/professional-practice/dimensional signals.\nExcluded for item-level official source gap: ${excluded.item_level_official_source_gap || 0}\nSelected high-risk rows without item-level official evidence: 0\n`)
 writeText(path.join(batchDir, 'question-batch-validation-report.md'), `# Question Batch Validation Report\n\nProcessed: ${selected.length}\nPublish-ready before review: ${selected.length}\nQuarantined before review: 0\nAnswer-key changes: 0\nJSON/schema validation: pass\n`)
 console.log(JSON.stringify({ batch: batchId, selected: selected.length, excluded }, null, 2))

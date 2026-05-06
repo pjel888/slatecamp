@@ -1,55 +1,54 @@
 # Current Task Handoff — Question Remediation Autopilot
 
-Updated: 2026-05-06T12:05:59.368755Z
+Updated: 2026-05-06T12:22:37.124952Z
 
 ## Status
 
 Article pipeline remains complete: 562 published, 5 quarantined.
 
-Question remediation continued through Batch 008.
+Question remediation Batch 009 completed locally but remote publishing is blocked because Supabase environment credentials are missing in this session.
 
-Published/improved questions so far: 72
-Question quarantines in final register: 138
+Remote-published/improved questions through Batch 008: 72
+Batch 009 local publish candidates pending remote apply: 5
+Question quarantines in final register: 158
 Answer-key changes published: 0
 Option changes published: 0
 Remote verification failures: 0
 
-## Batch totals
+## Batch 009
 
-- Batch 001: 1 published
-- Batch 003: 5 published
-- Batch 004: 16 published
-- Batch 005: 9 published
-- Batch 006: 16 published
-- Batch 007: 18 published
-- Batch 008: 7 published
-
-## Latest commits pushed
-
-- 75020203a Publish verified SlateCamp question batch 005
-- 823319d2d Publish verified SlateCamp question batch 006
-- b41d990c6 Publish verified SlateCamp question batch 007
-- 62c55af03 Publish verified SlateCamp question batch 008
+Selected: 25
+Local publish candidates after review: 5
+Quarantined after review: 20
+Remote publish: BLOCKED — missing SUPABASE_URL, NEXT_PUBLIC_SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, SUPABASE_SERVICE_KEY
 
 ## Validation status
 
-Latest Batch 008 validation passed:
+Preflight validations passed before selector/batch work:
 - bun run type-check
 - bun run lint (10 existing warnings, 0 errors)
 - bun run content-audit:validate
 - validate-question-improvement-output.ts
 - validate-expanded-question-improvement.ts
-- verify-question-batch.ts question-batch-008
 - git diff --check
 - scoped secret scan clean
 
+Batch 009 narrowed verifier passed:
+- bun scripts/content-audit/verify-question-batch.ts question-batch-009
+
 ## Current selector notes
 
-Strict selector still needs more exclusion pressure for legal/code/professional-practice items with apparent `code_citation` but insufficient item-level official source support. Reviewers repeatedly quarantine legal/code/professional items, exact standards/dimensions, and overbroad source claims.
+`select-question-remediation-batch.ts` is now strict-v3 and gates high-risk legal/code/professional-practice/dimensional items on item-level official source evidence rather than generic `code_citation`.
 
-Next exact resume step:
-1. Patch `scripts/content-audit/select-question-remediation-batch.ts` to quarantine all legal/code/professional-practice/dimensional items unless item-level official source evidence is attached, not merely `code_citation`.
-2. Run `bun scripts/content-audit/select-question-remediation-batch.ts question-batch-009 25`.
-3. Continue multi-agent review, conservative quarantine, backup/dry-run/apply/verify, commit, and push.
+## Next exact resume step
 
-Stop condition: tool/context cap reached, not final completion.
+1. Restore/export Supabase write credentials safely into the shell without printing values:
+   - SUPABASE_URL or NEXT_PUBLIC_SUPABASE_URL
+   - SUPABASE_SERVICE_ROLE_KEY or SUPABASE_SERVICE_KEY
+2. Run remote backup/dry-run/apply/verify for Batch 009 local candidates:
+   - `.ai/20_content_publish/publish-ready-questions-batch-009.generated.json`
+3. Commit after remote verification with message:
+   - `Publish verified SlateCamp question batch 009`
+4. Continue Batch 010 with strict-v3 selector.
+
+Stop condition reached: missing Supabase write credentials.
