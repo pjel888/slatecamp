@@ -162,3 +162,9 @@ Date/time: 2026-05-06T19:38:51
 Evidence:
 - `.ai/03_plans/ui-componentization-audit-2026-05-06/visual/batch-10-ceo-role-modal/default.png`
 - `.ai/03_plans/ui-componentization-audit-2026-05-06/visual/batch-10-ceo-role-modal/selected-viewer.png`
+
+## Batch 11: PortalSidebar search primitive
+Date/time: 2026-05-06T19:47:52
+Evidence:
+- `.ai/03_plans/ui-componentization-audit-2026-05-06/visual/batch-11-portal-sidebar/default-final.png`
+- `.ai/03_plans/ui-componentization-audit-2026-05-06/visual/batch-11-portal-sidebar/filtered-auth-final.png`

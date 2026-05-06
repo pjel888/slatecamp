@@ -224,3 +224,20 @@ Queue ID: UIA-CEO-0005
 - `bun run check:storybook`: passed.
 - `NODE_OPTIONS=--max-old-space-size=8192 bun run build-storybook`: passed.
 - Playwright rendered the modal and selected Viewer.
+
+## Batch 11: PortalSidebar search primitive
+Date/time: 2026-05-06T19:47:52
+Queue ID: UIA-PORTAL-0001
+
+### What changed
+- Replaced PortalSidebar raw search input with shared `Input`.
+- Changed the field to `type="search"` and added `aria-label="Filter portal navigation"`.
+- Preserved controlled search state, disabled locked state, slash shortcut focus, and filtering behavior.
+- Added `PortalSidebar.stories.tsx` with desktop-width wrapper because the component is hidden below `lg`.
+
+### Validation
+- `bun run lint`: passed with 10 baseline warnings.
+- `bun run check:storybook`: passed.
+- `NODE_OPTIONS=--max-old-space-size=8192 bun run build-storybook`: passed.
+- `git diff --check`: passed.
+- Playwright rendered default and filtered auth state.

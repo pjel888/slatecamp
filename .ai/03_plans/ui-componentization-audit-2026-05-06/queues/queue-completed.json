@@ -298,5 +298,30 @@
     "reviewer_notes": null,
     "final_status": "completed",
     "validation_result": "RoleAssignmentModal radio/buttons migrated to RadioGroup/Button; Storybook action mock added; lint/check-storybook/build-storybook passed; Playwright rendered modal and selected Viewer."
+  },
+  {
+    "id": "UIA-PORTAL-0001",
+    "file": "src/components/portal/PortalSidebar.tsx",
+    "line": null,
+    "surface": "portal",
+    "component": "PortalSidebar",
+    "current_pattern": "raw search input",
+    "classification": "definite_drift",
+    "risk": "medium",
+    "proposed_target": "Input / PortalSearchField",
+    "user_impact": "Reduce UI drift and improve consistency/accessibility where safe.",
+    "implementation_notes": "Implement only from queue in small batches after reading current file and preserving behavior.",
+    "storybook_required": true,
+    "storybook_story_path": null,
+    "tests_required": [
+      "bun run type-check",
+      "bun run lint"
+    ],
+    "visual_routes": [
+      "/developer"
+    ],
+    "reviewer_notes": null,
+    "final_status": "completed",
+    "validation_result": "PortalSidebar raw search input migrated to shared Input; aria-label added; Storybook story added; lint/check-storybook/build-storybook/git diff --check passed; Playwright verified default and filtered auth state at desktop width."
   }
 ]

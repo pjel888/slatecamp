@@ -133,3 +133,6 @@ Added `src/components/quiz-v2/OverlaysAndResults.stories.tsx` for overlay/result
 
 ## Batch 10
 Added `src/components/ceo/RoleAssignmentModal.stories.tsx`.
+
+## Batch 11
+Added `src/components/portal/PortalSidebar.stories.tsx`.

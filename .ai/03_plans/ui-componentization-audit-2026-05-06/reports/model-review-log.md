@@ -121,3 +121,7 @@ Reviewer flagged docs/autodocs and ScoreReveal timing. Autodocs removed for over
 ## Batch 10: CEO RoleAssignmentModal primitives
 Date/time: 2026-05-06T19:38:51
 Reviewer flagged RadioGroup labeling. Fixed by using stable ids and `label htmlFor` per existing primitive story pattern.
+
+## Batch 11: PortalSidebar search primitive
+Date/time: 2026-05-06T19:47:52
+Independent review found no blocker in the component migration. Recommendations addressed: forced desktop story width and made filtered story input update less flaky.

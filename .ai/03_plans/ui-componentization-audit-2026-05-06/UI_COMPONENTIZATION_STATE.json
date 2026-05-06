@@ -48,11 +48,13 @@
     "modal_dialog": 13,
     "storybook_required": 35
   },
-  "last_completed_batch": "Batch 10: CEO RoleAssignmentModal primitives",
+  "last_completed_batch": "Batch 11: PortalSidebar search primitive",
   "latest_validation": {
     "lint": "passed with 10 baseline warnings",
     "check_storybook": "passed",
     "build_storybook": "passed",
-    "browser": "CEO modal rendered and radio changed"
-  }
+    "diff_check": "passed",
+    "browser": "PortalSidebar default and filtered auth state rendered"
+  },
+  "remaining_queue": "closeout only"
 }

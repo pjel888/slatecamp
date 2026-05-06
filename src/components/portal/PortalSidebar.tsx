@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
 import { useSidebar } from '@/components/sidebar/SidebarProvider'
+import { Input } from '@/components/ui/input'
 import { cn } from '@/lib/utils'
 
 /* ------------------------------------------------------------------ */
@@ -128,14 +129,15 @@ const PortalSidebar = ({
       {/* Search / filter input */}
       <div className={cn('mx-2.5 mb-1.5 relative', isLocked && 'opacity-50')}>
         <MagnifyingGlass className="absolute left-2 top-1/2 -translate-y-1/2 w-[13px] h-[13px] text-muted-foreground pointer-events-none" />
-        <input
+        <Input
           ref={searchInputRef}
-          type="text"
+          type="search"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           disabled={isLocked}
           placeholder="Filter..."
-          className="w-full rounded-sm bg-muted border border-transparent pl-7 pr-2 py-1 text-[11px] font-sans text-foreground placeholder:text-muted-foreground outline-none transition-colors duration-150 focus:border-primary focus:bg-card focus:ring-2 focus:ring-primary/10"
+          aria-label="Filter portal navigation"
+          className="h-7 rounded-sm border-transparent bg-muted pl-7 pr-2 py-1 text-[11px] font-sans focus-visible:border-primary focus-visible:bg-card focus-visible:ring-primary/10"
         />
       </div>
 
