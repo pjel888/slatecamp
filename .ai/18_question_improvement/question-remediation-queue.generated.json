@@ -1,172 +1,44 @@
 {
-  "generated_at": "2026-05-06T12:17:02.908Z",
+  "generated_at": "2026-05-06T12:44:56.278Z",
   "selector": "strict-v3-item-level-official-source",
   "selected_count": 25,
   "excluded": {
-    "already_published_or_quarantined": 175,
-    "item_level_official_source_gap": 128,
-    "generic_meta_distractor_leakage": 40,
+    "already_published_or_quarantined": 200,
+    "item_level_official_source_gap": 163,
+    "generic_meta_distractor_leakage": 49,
     "existing_meaningful_explanation": 100,
-    "insufficient_linked_article_support": 5,
+    "insufficient_linked_article_support": 6,
     "option_length_giveaway_risk": 10,
     "near_duplicate_option_ambiguity": 1
   },
   "candidates": [
     {
-      "question_id": "bc870153-5fdc-4c29-8af7-3a71ed92526e",
-      "article_id": "c6f9eec1-727b-4d00-a905-f69a58245c66",
-      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-08-core-concept--c6f9eec1-727b-4d00-a905-f69a58245c66",
-      "title": "lea-hist-008-08-core-concept",
-      "baseline_hash": "sha256:6a330bc180c992ab8e2f959bd77d95f1287251bb8cf6f22c431fe4f903fa282d",
+      "question_id": "f0bc1160-ad55-470d-a2a9-c0938a5ed933",
+      "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-001-05-core-concept--757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+      "title": "lea-hist-001-05-core-concept",
+      "baseline_hash": "sha256:71e2d24f23a7279db773219022b9bf6d17f832726def81a609ece8356bdb4107",
       "baseline": {
-        "question_id": "bc870153-5fdc-4c29-8af7-3a71ed92526e",
-        "article_id": "c6f9eec1-727b-4d00-a905-f69a58245c66",
-        "topic_id": "b0efd864-03e0-4dde-bd2f-613477d2e14a",
-        "text": "How does Critical Regionalism challenge the International Style's claim to universal modernist principles?",
+        "question_id": "f0bc1160-ad55-470d-a2a9-c0938a5ed933",
+        "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+        "topic_id": "a0124521-5f62-4bfe-bf92-8d5baf24d32a",
+        "text": "The Doric order is characterized by which proportional relationship between column height and diameter?",
         "options": [
           {
             "id": "a",
-            "text": "It completely rejects modernism in favor of traditional vernacular revival, emphasizing historical styles over contemporary needs."
+            "text": "Roughly 8–10 times its diameter"
           },
           {
             "id": "b",
-            "text": "It pursues a critical engagement with modernist principles while grounding them in local geography, climate, materials, and cultural memory."
+            "text": "Roughly 10+ times its diameter"
           },
           {
             "id": "c",
-            "text": "It applies identical glass and steel modernism everywhere without exception, disregarding local context and environmental factors."
+            "text": "Roughly 4–6 times its diameter"
           },
           {
             "id": "d",
-            "text": "It treats all regional architecture as equally valid regardless of design rigor, without considering the importance of contextual adaptation."
-          }
-        ],
-        "correct_option_id": "b",
-        "correct_value": null,
-        "accepted_answers": null,
-        "value_tolerance": 0,
-        "question_type": "mcq",
-        "rationale": {
-          "a": "Critical Regionalism maintains modernist rigor; it is not nostalgic vernacular revival.",
-          "c": "Critical Regionalism explicitly critiques the uncritical application of universal modernism.",
-          "d": "Critical Regionalism combines modernist rigor with regional engagement; not all regional work achieves this synthesis.",
-          "correct": "Critical Regionalism does not reject modernism but pursues its rigorous abstraction while rigorously engaging local specificity—climate, materials, cultural traditions, and environmental conditions.",
-          "takeaway": "Critical Regionalism does not reject modernism but pursues its rigorous abstraction while rigorously engaging local specificity—climate, materials, cultural traditions, and environmental conditions."
-        },
-        "explanation": null,
-        "code_citation": null,
-        "bloom_level": "apply",
-        "application_context": "code_interpretation",
-        "practice_context": [
-          "CON"
-        ],
-        "difficulty": 0.5,
-        "difficulty_rating": null,
-        "discrimination_rating": null,
-        "is_assessment": false,
-        "model_id": "critregion-02",
-        "prompt_image_url": null,
-        "created_at": "2026-03-23T19:27:26.09657+00:00",
-        "updated_at": "2026-04-08T07:44:46.846261+00:00",
-        "content_hash": "sha256:6a330bc180c992ab8e2f959bd77d95f1287251bb8cf6f22c431fe4f903fa282d"
-      },
-      "proposed": {
-        "explanation": "Critical Regionalism maintains modernist rigor; it is not nostalgic vernacular revival. Critical Regionalism explicitly critiques the uncritical application of universal modernism. Critical Regionalism combines modernist rigor with regional engagement; not all regional work achieves this synthesis. Critical Regionalism does not reject modernism but pursues its rigorous abstraction while rigorously engaging local specificity—climate, materials, cultural traditions, and environmental conditions. Critical Regionalism does not reject modernism but pursues its rigorous abstraction while rigorously engaging local specificity—climate, materials, cultural traditions, and environmental conditions."
-      },
-      "classification": "strict_explanation_backfill",
-      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
-    },
-    {
-      "question_id": "ae2e8fd0-280e-4e89-9adb-44aa80143f43",
-      "article_id": "c6f9eec1-727b-4d00-a905-f69a58245c66",
-      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-08-core-concept--c6f9eec1-727b-4d00-a905-f69a58245c66",
-      "title": "lea-hist-008-08-core-concept",
-      "baseline_hash": "sha256:0be5b73ea3b3fea108d00b95c64823e2c2a30a12814d304d6fb0f82d74e0f91a",
-      "baseline": {
-        "question_id": "ae2e8fd0-280e-4e89-9adb-44aa80143f43",
-        "article_id": "c6f9eec1-727b-4d00-a905-f69a58245c66",
-        "topic_id": "b0efd864-03e0-4dde-bd2f-613477d2e14a",
-        "text": "Which theorist articulated the concept of 'Critical Regionalism' in a seminal 1983 essay?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Kenneth Frampton"
-          },
-          {
-            "id": "b",
-            "text": "Robert Venturi"
-          },
-          {
-            "id": "c",
-            "text": "Peter Eisenman"
-          },
-          {
-            "id": "d",
-            "text": "Aldo Rossi"
-          }
-        ],
-        "correct_option_id": "a",
-        "correct_value": null,
-        "accepted_answers": null,
-        "value_tolerance": 0,
-        "question_type": "mcq",
-        "rationale": {
-          "b": "Venturi theorized Postmodernism, not Critical Regionalism.",
-          "c": "Eisenman pursued Deconstructivism and critical theory but did not formulate Critical Regionalism.",
-          "d": "Rossi pursued Neo-rational Postmodernism, distinct from Frampton's theory.",
-          "correct": "Kenneth Frampton articulated Critical Regionalism in his 1983 essay 'Towards a Critical Regionalism: Six Points for an Architecture of Resistance.'",
-          "takeaway": "Kenneth Frampton articulated Critical Regionalism in his 1983 essay 'Towards a Critical Regionalism: Six Points for an Architecture of Resistance.'."
-        },
-        "explanation": null,
-        "code_citation": null,
-        "bloom_level": "remember",
-        "application_context": "recall",
-        "practice_context": [
-          "CH"
-        ],
-        "difficulty": 0.5,
-        "difficulty_rating": null,
-        "discrimination_rating": null,
-        "is_assessment": false,
-        "model_id": "critregion-01",
-        "prompt_image_url": null,
-        "created_at": "2026-03-23T19:27:26.09657+00:00",
-        "updated_at": "2026-04-08T07:44:46.846261+00:00",
-        "content_hash": "sha256:0be5b73ea3b3fea108d00b95c64823e2c2a30a12814d304d6fb0f82d74e0f91a"
-      },
-      "proposed": {
-        "explanation": "Venturi theorized Postmodernism, not Critical Regionalism. Eisenman pursued Deconstructivism and critical theory but did not formulate Critical Regionalism. Rossi pursued Neo-rational Postmodernism, distinct from Frampton's theory. Kenneth Frampton articulated Critical Regionalism in his 1983 essay 'Towards a Critical Regionalism: Six Points for an Architecture of Resistance.' Kenneth Frampton articulated Critical Regionalism in his 1983 essay 'Towards a Critical Regionalism: Six Points for an Architecture of Resistance.'."
-      },
-      "classification": "strict_explanation_backfill",
-      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
-    },
-    {
-      "question_id": "3dd6c51b-75ad-4bae-9717-950fdc06193b",
-      "article_id": "c6f9eec1-727b-4d00-a905-f69a58245c66",
-      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-08-core-concept--c6f9eec1-727b-4d00-a905-f69a58245c66",
-      "title": "lea-hist-008-08-core-concept",
-      "baseline_hash": "sha256:6ec78d1ac473e0a079bdea1429f6b64e543c44e4d904639575a431e7f7165b76",
-      "baseline": {
-        "question_id": "3dd6c51b-75ad-4bae-9717-950fdc06193b",
-        "article_id": "c6f9eec1-727b-4d00-a905-f69a58245c66",
-        "topic_id": "b0efd864-03e0-4dde-bd2f-613477d2e14a",
-        "text": "A structure uses rammed earth and timber with natural ventilation, respecting local craft and material traditions. Built in Gando, Burkina Faso, it exemplifies architecture grounded in place. Which architect and building represents this Critical Regionalist and sustainable approach?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Magney House, Glenn Murcutt, known for its integration with the Australian landscape and passive solar design"
-          },
-          {
-            "id": "b",
-            "text": "Church of the Light, Tadao Ando, which emphasizes the interplay of light and shadow in a minimalist concrete form"
-          },
-          {
-            "id": "c",
-            "text": "Primary School, Diébédo Francis Kéré"
-          },
-          {
-            "id": "d",
-            "text": "Water Temple, Tadao Ando, which features a meditative approach to water and space interaction"
+            "text": "Roughly 2–3 times its diameter"
           }
         ],
         "correct_option_id": "c",
@@ -175,143 +47,15 @@
         "value_tolerance": 0,
         "question_type": "mcq",
         "rationale": {
-          "a": "Magney House is in Australia with corrugated metal, not rammed earth.",
-          "b": "Church of the Light uses concrete and is in Japan, not Burkina Faso.",
-          "d": "Water Temple is in Japan with concrete and water features.",
-          "correct": "The Primary School (2001) in Gando, Burkina Faso, by Diébédo Francis Kéré, exemplifies this approach through rammed earth, timber, natural ventilation, and engagement with local craft traditions.",
-          "takeaway": "The Primary School (2001) in Gando, Burkina Faso, by Diébédo Francis Kéré, exemplifies this approach through rammed earth, timber, natural ventilation, and engagement with local craft traditions."
+          "a": "This is the proportion of the Ionic order (8–10 times).",
+          "b": "This is the proportion of the Corinthian order (10+ times).",
+          "d": "This is not a documented classical Greek column proportion.",
+          "correct": "Doric Order: The earliest and most austere. A Doric column is squat and sturdy, roughly 4–6 times its diameter in height.'",
+          "takeaway": "A Doric column is squat and sturdy, roughly 4–6 times its diameter in height.'."
         },
         "explanation": null,
         "code_citation": null,
-        "bloom_level": "apply",
-        "application_context": "recall",
-        "practice_context": [
-          "DESC"
-        ],
-        "difficulty": 0.5,
-        "difficulty_rating": null,
-        "discrimination_rating": null,
-        "is_assessment": false,
-        "model_id": "critregion-09",
-        "prompt_image_url": null,
-        "created_at": "2026-03-23T19:27:26.09657+00:00",
-        "updated_at": "2026-04-08T07:44:46.846261+00:00",
-        "content_hash": "sha256:6ec78d1ac473e0a079bdea1429f6b64e543c44e4d904639575a431e7f7165b76"
-      },
-      "proposed": {
-        "explanation": "Magney House is in Australia with corrugated metal, not rammed earth. Church of the Light uses concrete and is in Japan, not Burkina Faso. Water Temple is in Japan with concrete and water features. The Primary School (2001) in Gando, Burkina Faso, by Diébédo Francis Kéré, exemplifies this approach through rammed earth, timber, natural ventilation, and engagement with local craft traditions. The Primary School (2001) in Gando, Burkina Faso, by Diébédo Francis Kéré, exemplifies this approach through rammed earth, timber, natural ventilation, and engagement with local craft traditions."
-      },
-      "classification": "strict_explanation_backfill",
-      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
-    },
-    {
-      "question_id": "8b08c08d-fa4b-4168-8e48-568dbe18c2d7",
-      "article_id": "c6f9eec1-727b-4d00-a905-f69a58245c66",
-      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-08-core-concept--c6f9eec1-727b-4d00-a905-f69a58245c66",
-      "title": "lea-hist-008-08-core-concept",
-      "baseline_hash": "sha256:306630301ae8ab16d569daee297de7e9d53aebe9df31ac00b0881b6c8b536196",
-      "baseline": {
-        "question_id": "8b08c08d-fa4b-4168-8e48-568dbe18c2d7",
-        "article_id": "c6f9eec1-727b-4d00-a905-f69a58245c66",
-        "topic_id": "b0efd864-03e0-4dde-bd2f-613477d2e14a",
-        "text": "A monumental concrete box features a single slot window framing the landscape beyond, engaging Japanese zen principles of framing and relationship to nature. Which building and architect exemplifies this Critical Regionalist approach?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Water Temple, Tadao Ando"
-          },
-          {
-            "id": "b",
-            "text": "Church of the Light, Tadao Ando"
-          },
-          {
-            "id": "c",
-            "text": "Magney House, Glenn Murcutt"
-          },
-          {
-            "id": "d",
-            "text": "Simpson-Lee House, Glenn Murcutt"
-          }
-        ],
-        "correct_option_id": "b",
-        "correct_value": null,
-        "accepted_answers": null,
-        "value_tolerance": 0,
-        "question_type": "mcq",
-        "rationale": {
-          "a": "Water Temple also by Ando features sunken levels and light modulation but not the single-slot window.",
-          "c": "Magney House uses climate control strategies but not Japanese spatial principles.",
-          "d": "Simpson-Lee House uses timber and passive climate but not zen framing strategies.",
-          "correct": "The Church of the Light (1989) in Ibaraki, Japan, by Tadao Ando, exemplifies this approach with its monumental concrete form and single cross-shaped light slot framing the landscape through zen spatial principles.",
-          "takeaway": "The Church of the Light (1989) in Ibaraki, Japan, by Tadao Ando, exemplifies this approach with its monumental concrete form and single cross-shaped light slot framing the landscape through zen spatial principles."
-        },
-        "explanation": null,
-        "code_citation": null,
-        "bloom_level": "apply",
-        "application_context": "recall",
-        "practice_context": [
-          "DESC"
-        ],
-        "difficulty": 0.5,
-        "difficulty_rating": null,
-        "discrimination_rating": null,
-        "is_assessment": false,
-        "model_id": "critregion-04",
-        "prompt_image_url": null,
-        "created_at": "2026-03-23T19:27:26.09657+00:00",
-        "updated_at": "2026-04-08T07:44:46.846261+00:00",
-        "content_hash": "sha256:306630301ae8ab16d569daee297de7e9d53aebe9df31ac00b0881b6c8b536196"
-      },
-      "proposed": {
-        "explanation": "Water Temple also by Ando features sunken levels and light modulation but not the single-slot window. Magney House uses climate control strategies but not Japanese spatial principles. Simpson-Lee House uses timber and passive climate but not zen framing strategies. The Church of the Light (1989) in Ibaraki, Japan, by Tadao Ando, exemplifies this approach with its monumental concrete form and single cross-shaped light slot framing the landscape through zen spatial principles. The Church of the Light (1989) in Ibaraki, Japan, by Tadao Ando, exemplifies this approach with its monumental concrete form and single cross-shaped light slot framing the landscape through zen spatial principles."
-      },
-      "classification": "strict_explanation_backfill",
-      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
-    },
-    {
-      "question_id": "3ba6183c-be1a-4e8f-a428-8ba86bf83a4c",
-      "article_id": "c6f9eec1-727b-4d00-a905-f69a58245c66",
-      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-08-core-concept--c6f9eec1-727b-4d00-a905-f69a58245c66",
-      "title": "lea-hist-008-08-core-concept",
-      "baseline_hash": "sha256:11066c068fc62f3e92a8119759e903b286256a0210ad64ed9d3a50cc5a132e64",
-      "baseline": {
-        "question_id": "3ba6183c-be1a-4e8f-a428-8ba86bf83a4c",
-        "article_id": "c6f9eec1-727b-4d00-a905-f69a58245c66",
-        "topic_id": "b0efd864-03e0-4dde-bd2f-613477d2e14a",
-        "text": "The Magney House (1984) features a barrel vault roof, corrugated metal, and timber. How do these material choices exemplify Critical Regionalist environmental responsiveness?",
-        "options": [
-          {
-            "id": "a",
-            "text": "They are purely aesthetic choices without environmental significance, ignoring the principles of Critical Regionalism"
-          },
-          {
-            "id": "b",
-            "text": "They are designed to protect occupants from intense sun while capturing breezes through passive design strategies responsive to regional climate."
-          },
-          {
-            "id": "c",
-            "text": "They use expensive imported materials regardless of local conditions, which contradicts the ethos of Critical Regionalism"
-          },
-          {
-            "id": "d",
-            "text": "They ignore regional vernacular traditions in favor of universal principles, which is contrary to the intent of Critical Regionalism"
-          }
-        ],
-        "correct_option_id": "b",
-        "correct_value": null,
-        "accepted_answers": null,
-        "value_tolerance": 0,
-        "question_type": "mcq",
-        "rationale": {
-          "a": "Material choices are grounded in environmental and climate responsiveness.",
-          "c": "Critical Regionalism uses indigenous, locally sourced materials respecting embodied energy.",
-          "d": "Critical Regionalism is defined by engagement with regional vernacular adaptation.",
-          "correct": "The Magney House's barrel vault, corrugated metal, and timber are systematically chosen to provide sun protection through deep overhangs while enabling natural ventilation—passive climate control derived from regional conditions.",
-          "takeaway": "The Magney House's barrel vault, corrugated metal, and timber are systematically chosen to provide sun protection through deep overhangs while enabling natural ventilation—passive climate control derived from regional conditions."
-        },
-        "explanation": null,
-        "code_citation": null,
-        "bloom_level": "apply",
+        "bloom_level": "remember",
         "application_context": "code_interpretation",
         "practice_context": [
           "ST"
@@ -320,120 +64,58 @@
         "difficulty_rating": null,
         "discrimination_rating": null,
         "is_assessment": false,
-        "model_id": "critregion-06",
+        "model_id": "ALE-HIST-001-05-003",
         "prompt_image_url": null,
-        "created_at": "2026-03-23T19:27:26.09657+00:00",
+        "created_at": "2026-03-23T19:27:23.525262+00:00",
         "updated_at": "2026-04-08T07:44:46.846261+00:00",
-        "content_hash": "sha256:11066c068fc62f3e92a8119759e903b286256a0210ad64ed9d3a50cc5a132e64"
+        "content_hash": "sha256:71e2d24f23a7279db773219022b9bf6d17f832726def81a609ece8356bdb4107"
       },
       "proposed": {
-        "explanation": "Material choices are grounded in environmental and climate responsiveness. Critical Regionalism uses indigenous, locally sourced materials respecting embodied energy. Critical Regionalism is defined by engagement with regional vernacular adaptation. The Magney House's barrel vault, corrugated metal, and timber are systematically chosen to provide sun protection through deep overhangs while enabling natural ventilation—passive climate control derived from regional conditions. The Magney House's barrel vault, corrugated metal, and timber are systematically chosen to provide sun protection through deep overhangs while enabling natural ventilation—passive climate control derived from regional conditions."
+        "explanation": "This is the proportion of the Ionic order (8–10 times). This is the proportion of the Corinthian order (10+ times). This is not a documented classical Greek column proportion. Doric Order: The earliest and most austere. A Doric column is squat and sturdy, roughly 4–6 times its diameter in height.' A Doric column is squat and sturdy, roughly 4–6 times its diameter in height.'."
       },
       "classification": "strict_explanation_backfill",
       "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
     },
     {
-      "question_id": "34040cdd-0c12-4dda-8f0b-83bbd1c39cc6",
-      "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
-      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-09-core-concept--5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
-      "title": "lea-hist-008-09-core-concept",
-      "baseline_hash": "sha256:a1aee63cc1064099df1c7bba95f52246bc8cdeff1605a83e66dce942377727d7",
+      "question_id": "d14b44f6-6ea2-4331-9073-64f27da54e13",
+      "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-001-05-core-concept--757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+      "title": "lea-hist-001-05-core-concept",
+      "baseline_hash": "sha256:b7a884029af31d824d64d61972549c12d696d5897d17dd19c8627b367a268223",
       "baseline": {
-        "question_id": "34040cdd-0c12-4dda-8f0b-83bbd1c39cc6",
-        "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
-        "topic_id": "db6a9e7f-324b-4f27-a905-9061fd7d734b",
-        "text": "Which year was Frei Otto the Pritzker Prize laureate, becoming the first posthumous award?",
+        "question_id": "d14b44f6-6ea2-4331-9073-64f27da54e13",
+        "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+        "topic_id": "a0124521-5f62-4bfe-bf92-8d5baf24d32a",
+        "text": "A circular Greek temple structure with an internal colonnade and a circular plan rather than rectangular is called:",
         "options": [
           {
             "id": "a",
-            "text": "2012"
+            "text": "Stoa"
           },
           {
             "id": "b",
-            "text": "2014"
+            "text": "Tholos"
           },
           {
             "id": "c",
-            "text": "2015"
+            "text": "Cella"
           },
           {
             "id": "d",
-            "text": "2016"
+            "text": "Peristyle"
           }
         ],
-        "correct_option_id": "c",
+        "correct_option_id": "b",
         "correct_value": null,
         "accepted_answers": null,
         "value_tolerance": 0,
         "question_type": "mcq",
         "rationale": {
-          "a": "Wang Shu won in 2012.",
-          "b": "Shigeru Ban won in 2014.",
-          "d": "Alejandro Aravena won in 2016.",
-          "correct": "Frei Otto won the Pritzker Prize in 2015 as the first posthumous laureate, honored for his structural and material innovation."
-        },
-        "explanation": null,
-        "code_citation": null,
-        "bloom_level": "remember",
-        "application_context": "recall",
-        "practice_context": [
-          "CH"
-        ],
-        "difficulty": 0.5,
-        "difficulty_rating": null,
-        "discrimination_rating": null,
-        "is_assessment": false,
-        "model_id": "pritzker-07",
-        "prompt_image_url": null,
-        "created_at": "2026-03-23T19:27:26.09657+00:00",
-        "updated_at": "2026-04-08T07:44:46.846261+00:00",
-        "content_hash": "sha256:a1aee63cc1064099df1c7bba95f52246bc8cdeff1605a83e66dce942377727d7"
-      },
-      "proposed": {
-        "explanation": "Wang Shu won in 2012. Shigeru Ban won in 2014. Alejandro Aravena won in 2016. Frei Otto won the Pritzker Prize in 2015 as the first posthumous laureate, honored for his structural and material innovation."
-      },
-      "classification": "strict_explanation_backfill",
-      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
-    },
-    {
-      "question_id": "18cc6036-17b8-4207-976b-16d83f01dead",
-      "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
-      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-09-core-concept--5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
-      "title": "lea-hist-008-09-core-concept",
-      "baseline_hash": "sha256:6af6f5447179a3e27789c69e3776c49f8de4485a00fdca6b34002fb1012c478a",
-      "baseline": {
-        "question_id": "18cc6036-17b8-4207-976b-16d83f01dead",
-        "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
-        "topic_id": "db6a9e7f-324b-4f27-a905-9061fd7d734b",
-        "text": "A living architect whose built work demonstrates tleant, vision, and lasting contribution to the built environment is recognized annually with a prestigious prize established in 1979. This describes which architecture award?",
-        "options": [
-          {
-            "id": "a",
-            "text": "American Institute of Architects Gold Medal"
-          },
-          {
-            "id": "b",
-            "text": "Royal Institute of British Architects Medal"
-          },
-          {
-            "id": "c",
-            "text": "Pritzker Architecture Prize"
-          },
-          {
-            "id": "d",
-            "text": "RIBA Stirling Prize"
-          }
-        ],
-        "correct_option_id": "c",
-        "correct_value": null,
-        "accepted_answers": null,
-        "value_tolerance": 0,
-        "question_type": "mcq",
-        "rationale": {
-          "a": "AIA Gold Medal has different criteria.",
-          "b": "RIBA Medal has different focus and history.",
-          "d": "Stirling Prize recognizes completed buildings, not living architects' lifetime achievement.",
-          "correct": "This describes the Pritzker Architecture Prize, established in 1979 by the Hyatt Foundation, recognizing living architects' enduring contributions."
+          "a": "A stoa is a portico or covered walkway with columns, not a circular temple.",
+          "c": "Cella (or naos) is the inner chamber of a temple, not a circular building type.",
+          "d": "Peristyle refers to a colonnade surrounding a building, not a specific circular building type.",
+          "correct": "The Treasury of Atreus at Mycenae (c. 1350 BCE, pre-Classical but influential) featured a corbelled dome—a \"tholos\" or circular structure that predates Greek post-and-lintel temples. Later Greek architects revived the tholos form for certain temples and treasuries, such as the Tholos of Polyclitus at Epidaurus (c. 360 BCE).'",
+          "takeaway": "Later Greek architects revived the tholos form for certain temples and treasuries, such as the Tholos of Polyclitus at Epidaurus (c. 360 BCE).'."
         },
         "explanation": null,
         "code_citation": null,
@@ -446,171 +128,45 @@
         "difficulty_rating": null,
         "discrimination_rating": null,
         "is_assessment": false,
-        "model_id": "pritzker-11",
+        "model_id": "ALE-HIST-001-05-008",
         "prompt_image_url": null,
-        "created_at": "2026-03-23T19:27:26.09657+00:00",
+        "created_at": "2026-03-23T19:27:23.734061+00:00",
         "updated_at": "2026-04-08T07:44:46.846261+00:00",
-        "content_hash": "sha256:6af6f5447179a3e27789c69e3776c49f8de4485a00fdca6b34002fb1012c478a"
+        "content_hash": "sha256:b7a884029af31d824d64d61972549c12d696d5897d17dd19c8627b367a268223"
       },
       "proposed": {
-        "explanation": "AIA Gold Medal has different criteria. RIBA Medal has different focus and history. Stirling Prize recognizes completed buildings, not living architects' lifetime achievement. This describes the Pritzker Architecture Prize, established in 1979 by the Hyatt Foundation, recognizing living architects' enduring contributions."
+        "explanation": "A stoa is a portico or covered walkway with columns, not a circular temple. Cella (or naos) is the inner chamber of a temple, not a circular building type. Peristyle refers to a colonnade surrounding a building, not a specific circular building type. The Treasury of Atreus at Mycenae (c. 1350 BCE, pre-Classical but influential) featured a corbelled dome—a \"tholos\" or circular structure that predates Greek post-and-lintel temples. Later Greek architects revived the tholos form for certain temples and treasuries, such as the Tholos of Polyclitus at Epidaurus (c. 360 BCE).' Later Greek architects revived the tholos form for certain temples and treasuries, such as the Tholos of Polyclitus at Epidaurus (c. 360 BCE).'."
       },
       "classification": "strict_explanation_backfill",
       "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
     },
     {
-      "question_id": "c9250b47-47f5-4e45-a44a-6c6b41ca219d",
-      "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
-      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-09-core-concept--5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
-      "title": "lea-hist-008-09-core-concept",
-      "baseline_hash": "sha256:a5d4d86eb33b7e803e4d7d70866c9b9144b8e6d9414ce5e13d2ec8fe4a43e566",
+      "question_id": "2126fc90-7db6-4332-9681-a563388564e5",
+      "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-001-05-core-concept--757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+      "title": "lea-hist-001-05-core-concept",
+      "baseline_hash": "sha256:73a32586344ab7199c9de4ec8263bca235f32d3bb4416f629e46a8db4cb9d2bb",
       "baseline": {
-        "question_id": "c9250b47-47f5-4e45-a44a-6c6b41ca219d",
-        "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
-        "topic_id": "db6a9e7f-324b-4f27-a905-9061fd7d734b",
-        "text": "In which year was the Pritzker Architecture Prize established?",
+        "question_id": "2126fc90-7db6-4332-9681-a563388564e5",
+        "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+        "topic_id": "a0124521-5f62-4bfe-bf92-8d5baf24d32a",
+        "text": "Why did Greek architects employ entasis (the subtle inward curve of columns) in structures like the Parthenon?",
         "options": [
           {
             "id": "a",
-            "text": "1975"
+            "text": "To reduce the weight of the column and allow for taller structures, which was a common goal in ancient Greek architecture"
           },
           {
             "id": "b",
-            "text": "1979"
+            "text": "As a cost-saving measure to use less stone material, which was a significant consideration in large-scale constructions"
           },
           {
             "id": "c",
-            "text": "1985"
+            "text": "To counteract the optical distortion that makes straight lines appear to sag, creating the illusion of straightness and proper form"
           },
           {
             "id": "d",
-            "text": "1990"
-          }
-        ],
-        "correct_option_id": "b",
-        "correct_value": null,
-        "accepted_answers": null,
-        "value_tolerance": 0,
-        "question_type": "mcq",
-        "rationale": {
-          "a": "The prize was not established in 1975.",
-          "c": "The prize was established in 1979, not 1985.",
-          "d": "The prize predates 1990.",
-          "correct": "The Pritzker Prize was established in 1979 by the Hyatt Foundation."
-        },
-        "explanation": null,
-        "code_citation": null,
-        "bloom_level": "remember",
-        "application_context": "recall",
-        "practice_context": [
-          "CH"
-        ],
-        "difficulty": 0.5,
-        "difficulty_rating": null,
-        "discrimination_rating": null,
-        "is_assessment": false,
-        "model_id": "pritzker-01",
-        "prompt_image_url": null,
-        "created_at": "2026-03-23T19:27:26.09657+00:00",
-        "updated_at": "2026-04-08T07:44:46.846261+00:00",
-        "content_hash": "sha256:a5d4d86eb33b7e803e4d7d70866c9b9144b8e6d9414ce5e13d2ec8fe4a43e566"
-      },
-      "proposed": {
-        "explanation": "The prize was not established in 1975. The prize was established in 1979, not 1985. The prize predates 1990. The Pritzker Prize was established in 1979 by the Hyatt Foundation."
-      },
-      "classification": "strict_explanation_backfill",
-      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
-    },
-    {
-      "question_id": "442e0cfd-f922-457e-9e5f-170e4563c4bd",
-      "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
-      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-09-core-concept--5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
-      "title": "lea-hist-008-09-core-concept",
-      "baseline_hash": "sha256:e8f9abed2d85de01e8bcbcaef33cb0b5f40fbbe98a7d75e8729d136363758967",
-      "baseline": {
-        "question_id": "442e0cfd-f922-457e-9e5f-170e4563c4bd",
-        "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
-        "topic_id": "db6a9e7f-324b-4f27-a905-9061fd7d734b",
-        "text": "Who was the first Pritzker Prize laureate in 1979?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Luis Barragán, known for his colorful and emotional architecture"
-          },
-          {
-            "id": "b",
-            "text": "Philip Johnson"
-          },
-          {
-            "id": "c",
-            "text": "I.M. Pei, celebrated for his modernist architectural designs"
-          },
-          {
-            "id": "d",
-            "text": "Kenzo Tange, a key figure in the Metabolist movement"
-          }
-        ],
-        "correct_option_id": "b",
-        "correct_value": null,
-        "accepted_answers": null,
-        "value_tolerance": 0,
-        "question_type": "mcq",
-        "rationale": {
-          "a": "Luis Barragán won in 1980, the second laureate.",
-          "c": "I.M. Pei won in 1983.",
-          "d": "Kenzo Tange won in 1987.",
-          "correct": "Philip Johnson was the first Pritzker laureate in 1979, representing American establishment modernism."
-        },
-        "explanation": null,
-        "code_citation": null,
-        "bloom_level": "remember",
-        "application_context": "recall",
-        "practice_context": [
-          "ID"
-        ],
-        "difficulty": 0.5,
-        "difficulty_rating": null,
-        "discrimination_rating": null,
-        "is_assessment": false,
-        "model_id": "pritzker-02",
-        "prompt_image_url": null,
-        "created_at": "2026-03-23T19:27:26.09657+00:00",
-        "updated_at": "2026-04-08T07:44:46.846261+00:00",
-        "content_hash": "sha256:e8f9abed2d85de01e8bcbcaef33cb0b5f40fbbe98a7d75e8729d136363758967"
-      },
-      "proposed": {
-        "explanation": "Luis Barragán won in 1980, the second laureate. I.M. Pei won in 1983. Kenzo Tange won in 1987. Philip Johnson was the first Pritzker laureate in 1979, representing American establishment modernism."
-      },
-      "classification": "strict_explanation_backfill",
-      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
-    },
-    {
-      "question_id": "f877fd65-1347-439f-9bb3-e57c8c0abf2d",
-      "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
-      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-09-core-concept--5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
-      "title": "lea-hist-008-09-core-concept",
-      "baseline_hash": "sha256:cde26fef68b1641edac9d7d9bef0a1df0373cd1f24fda4eace4986da821a0de4",
-      "baseline": {
-        "question_id": "f877fd65-1347-439f-9bb3-e57c8c0abf2d",
-        "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
-        "topic_id": "db6a9e7f-324b-4f27-a905-9061fd7d734b",
-        "text": "Which year marked the first femlea Pritzker Prize laureate, breaking a 25-year gender barrier?",
-        "options": [
-          {
-            "id": "a",
-            "text": "2000"
-          },
-          {
-            "id": "b",
-            "text": "2002"
-          },
-          {
-            "id": "c",
-            "text": "2004"
-          },
-          {
-            "id": "d",
-            "text": "2008"
+            "text": "To provide better wind resistance and structural stability against earthquakes, which were frequent in the region"
           }
         ],
         "correct_option_id": "c",
@@ -619,249 +175,62 @@
         "value_tolerance": 0,
         "question_type": "mcq",
         "rationale": {
-          "a": "No female laureate in 2000.",
-          "b": "Glenn Murcutt won in 2002.",
-          "d": "Jean Nouvel won in 2008.",
-          "correct": "Zaha Hadid became the first woman to win the Pritzker Prize in 2004."
+          "a": "Entasis adds material, not reduces it; it was not a weight-saving measure.",
+          "b": "The opposite is true; entasis requires more precise stone cutting and thus more labor and expense.",
+          "d": "While the curvature might provide some structural benefit, the documented purpose is visual correction.",
+          "correct": "Entasis (the slight curve) was achieved by subtle reductions in diameter between drums' and clarifies a common mistake: 'Treating entasis as a defect. Entasis (the curve) is not accidental but calculated. It's a visual correction for the illusion of sagging that straight lines create. Treat it as evidence of sophistication, not weakness.'",
+          "takeaway": "Treat it as evidence of sophistication, not weakness.'."
         },
         "explanation": null,
         "code_citation": null,
-        "bloom_level": "remember",
-        "application_context": "recall",
+        "bloom_level": "analyze",
+        "application_context": "code_interpretation",
         "practice_context": [
-          "CH"
+          "CON"
         ],
         "difficulty": 0.5,
         "difficulty_rating": null,
         "discrimination_rating": null,
         "is_assessment": false,
-        "model_id": "pritzker-03",
+        "model_id": "ALE-HIST-001-05-007",
         "prompt_image_url": null,
-        "created_at": "2026-03-23T19:27:26.09657+00:00",
+        "created_at": "2026-03-23T19:27:23.734061+00:00",
         "updated_at": "2026-04-08T07:44:46.846261+00:00",
-        "content_hash": "sha256:cde26fef68b1641edac9d7d9bef0a1df0373cd1f24fda4eace4986da821a0de4"
+        "content_hash": "sha256:73a32586344ab7199c9de4ec8263bca235f32d3bb4416f629e46a8db4cb9d2bb"
       },
       "proposed": {
-        "explanation": "No female laureate in 2000. Glenn Murcutt won in 2002. Jean Nouvel won in 2008. Zaha Hadid became the first woman to win the Pritzker Prize in 2004."
+        "explanation": "Entasis adds material, not reduces it; it was not a weight-saving measure. The opposite is true; entasis requires more precise stone cutting and thus more labor and expense. While the curvature might provide some structural benefit, the documented purpose is visual correction. Entasis (the slight curve) was achieved by subtle reductions in diameter between drums' and clarifies a common mistake: 'Treating entasis as a defect. Entasis (the curve) is not accidental but calculated. It's a visual correction for the illusion of sagging that straight lines create. Treat it as evidence of sophistication, not weakness.' Treat it as evidence of sophistication, not weakness.'."
       },
       "classification": "strict_explanation_backfill",
       "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
     },
     {
-      "question_id": "0764b121-c781-4680-bf92-e329b22f5ac3",
-      "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
-      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-09-core-concept--5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
-      "title": "lea-hist-008-09-core-concept",
-      "baseline_hash": "sha256:6ce7e67b40a5a416662e83f8e91ab3790953dc7d0e2aeb6d3f428948558193ba",
+      "question_id": "b210a8ca-118d-4aa5-827c-b7ad6017bb55",
+      "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-001-05-core-concept--757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+      "title": "lea-hist-001-05-core-concept",
+      "baseline_hash": "sha256:4b727c0f4976e64bc884095d0128d69ef484057fbe2594220ad942c127e11f86",
       "baseline": {
-        "question_id": "0764b121-c781-4680-bf92-e329b22f5ac3",
-        "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
-        "topic_id": "db6a9e7f-324b-4f27-a905-9061fd7d734b",
-        "text": "Which two architects are both first laureates of their respective countries: Wang Shu (China) and which architect (Japan)?",
+        "question_id": "b210a8ca-118d-4aa5-827c-b7ad6017bb55",
+        "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+        "topic_id": "a0124521-5f62-4bfe-bf92-8d5baf24d32a",
+        "text": "Why did Greek architects and sculptors invest such detailed effort in the Parthenon's interior sculptural program, even though most viewers would not have access to the interior to see it?",
         "options": [
           {
             "id": "a",
-            "text": "Kenzo Tange, who received the prize in 1987 for his monumental urban planning works"
+            "text": "The interior decoration served no purpose and was merely a waste of resources, reflecting a lack of practical consideration in the design process"
           },
           {
             "id": "b",
-            "text": "Tadao Ando, who received the prize in 1995 for his minimalist concrete architecture"
+            "text": "The Parthenon served as a treasury and a sanctuary, making the interior as important as the exterior; the interior decoration served religious and administrative functions"
           },
           {
             "id": "c",
-            "text": "Shigeru Ban, who received the prize in 2014 for his innovative humanitarian shelters"
+            "text": "The interior was purely decorative, intended only for the priesthood's personal appreciation, emphasizing exclusivity and spiritual hierarchy"
           },
           {
             "id": "d",
-            "text": "Multiple Japanese laureates preceded Wang Shu"
-          }
-        ],
-        "correct_option_id": "d",
-        "correct_value": null,
-        "accepted_answers": null,
-        "value_tolerance": 0,
-        "question_type": "mcq",
-        "rationale": {
-          "a": "Tange won in 1987, predating Wang Shu.",
-          "b": "Ando won in 1995, predating Wang Shu.",
-          "c": "Ban won in 2014, after Wang Shu.",
-          "correct": "Wang Shu was China's first laureate in 2012, but Japan had multiple laureates before him (Tange 1987, Ando 1995, etc.). No Japanese architect was a 'first' along with Wang Shu."
-        },
-        "explanation": null,
-        "code_citation": null,
-        "bloom_level": "remember",
-        "application_context": "design_application",
-        "practice_context": [
-          "CMP"
-        ],
-        "difficulty": 0.5,
-        "difficulty_rating": null,
-        "discrimination_rating": null,
-        "is_assessment": false,
-        "model_id": "pritzker-05",
-        "prompt_image_url": null,
-        "created_at": "2026-03-23T19:27:26.09657+00:00",
-        "updated_at": "2026-04-08T07:44:46.846261+00:00",
-        "content_hash": "sha256:6ce7e67b40a5a416662e83f8e91ab3790953dc7d0e2aeb6d3f428948558193ba"
-      },
-      "proposed": {
-        "explanation": "Tange won in 1987, predating Wang Shu. Ando won in 1995, predating Wang Shu. Ban won in 2014, after Wang Shu. Wang Shu was China's first laureate in 2012, but Japan had multiple laureates before him (Tange 1987, Ando 1995, etc.). No Japanese architect was a 'first' along with Wang Shu."
-      },
-      "classification": "strict_explanation_backfill",
-      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
-    },
-    {
-      "question_id": "8b9f432f-bb08-4267-a6e2-62b058bd8fc0",
-      "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
-      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-09-core-concept--5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
-      "title": "lea-hist-008-09-core-concept",
-      "baseline_hash": "sha256:a3a69442a9a0287e7aae2049b91747432060a8716360dac2298183df40f5edb4",
-      "baseline": {
-        "question_id": "8b9f432f-bb08-4267-a6e2-62b058bd8fc0",
-        "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
-        "topic_id": "db6a9e7f-324b-4f27-a905-9061fd7d734b",
-        "text": "In which year did the Pritzker Prize recognize its second Chilean laureate?",
-        "options": [
-          {
-            "id": "a",
-            "text": "2020"
-          },
-          {
-            "id": "b",
-            "text": "2024"
-          },
-          {
-            "id": "c",
-            "text": "2025"
-          },
-          {
-            "id": "d",
-            "text": "2026"
-          }
-        ],
-        "correct_option_id": "d",
-        "correct_value": null,
-        "accepted_answers": null,
-        "value_tolerance": 0,
-        "question_type": "mcq",
-        "rationale": {
-          "a": "Yvonne Farrell & Shelley McNamara won in 2020 (Ireland).",
-          "note": "Remove fictional winners; actual 2024 winner: Riken Yamamoto (Japan). No 2025 winner as of March 2026.",
-          "correct": "No Pritzker Prize awarded in 2026 as of March 2026; second Chilean laureate has not yet been awarded."
-        },
-        "explanation": null,
-        "code_citation": null,
-        "bloom_level": "remember",
-        "application_context": "recall",
-        "practice_context": [
-          "CH"
-        ],
-        "difficulty": 0.5,
-        "difficulty_rating": null,
-        "discrimination_rating": null,
-        "is_assessment": false,
-        "model_id": "pritzker-09",
-        "prompt_image_url": null,
-        "created_at": "2026-03-23T19:27:26.09657+00:00",
-        "updated_at": "2026-04-08T07:44:46.846261+00:00",
-        "content_hash": "sha256:a3a69442a9a0287e7aae2049b91747432060a8716360dac2298183df40f5edb4"
-      },
-      "proposed": {
-        "explanation": "Yvonne Farrell & Shelley McNamara won in 2020 (Ireland). Remove fictional winners; actual 2024 winner: Riken Yamamoto (Japan). No 2025 winner as of March 2026. No Pritzker Prize awarded in 2026 as of March 2026; second Chilean laureate has not yet been awarded."
-      },
-      "classification": "strict_explanation_backfill",
-      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
-    },
-    {
-      "question_id": "12e30953-d88a-4857-9235-7522268e8fa4",
-      "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
-      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-09-core-concept--5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
-      "title": "lea-hist-008-09-core-concept",
-      "baseline_hash": "sha256:b1f993660773ff4fcda9e1b84fa2368016002ab5fb5bc410c73ba45d1c8bd8b5",
-      "baseline": {
-        "question_id": "12e30953-d88a-4857-9235-7522268e8fa4",
-        "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
-        "topic_id": "db6a9e7f-324b-4f27-a905-9061fd7d734b",
-        "text": "Which architect won the Pritzker Prize in 1988, a shared award that was the only shared prize until later team practices?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Oscar Niemeyer and Gordon Bunshaft"
-          },
-          {
-            "id": "b",
-            "text": "Paul Rudolph and Kevin Roche"
-          },
-          {
-            "id": "c",
-            "text": "James Stirling and Michael Wilford"
-          },
-          {
-            "id": "d",
-            "text": "Aldo Rossi and Carlo Aymonino"
-          }
-        ],
-        "correct_option_id": "a",
-        "correct_value": null,
-        "accepted_answers": null,
-        "value_tolerance": 0,
-        "question_type": "mcq",
-        "rationale": {
-          "b": "Roche won individually in 1982; Rudolph did not win.",
-          "c": "Stirling won individually in 1981; Wilford was not a laureate.",
-          "d": "Rossi won individually in 1990.",
-          "correct": "In 1988, Gordon Bunshaft (USA) and Oscar Niemeyer (Brazil) shared the Pritzker Prize—the only shared award until later team practices (SANAA, etc.)."
-        },
-        "explanation": null,
-        "code_citation": null,
-        "bloom_level": "remember",
-        "application_context": "recall",
-        "practice_context": [
-          "ID"
-        ],
-        "difficulty": 0.5,
-        "difficulty_rating": null,
-        "discrimination_rating": null,
-        "is_assessment": false,
-        "model_id": "pritzker-10",
-        "prompt_image_url": null,
-        "created_at": "2026-03-23T19:27:26.09657+00:00",
-        "updated_at": "2026-04-08T07:44:46.846261+00:00",
-        "content_hash": "sha256:b1f993660773ff4fcda9e1b84fa2368016002ab5fb5bc410c73ba45d1c8bd8b5"
-      },
-      "proposed": {
-        "explanation": "Roche won individually in 1982; Rudolph did not win. Stirling won individually in 1981; Wilford was not a laureate. Rossi won individually in 1990. In 1988, Gordon Bunshaft (USA) and Oscar Niemeyer (Brazil) shared the Pritzker Prize—the only shared award until later team practices (SANAA, etc.)."
-      },
-      "classification": "strict_explanation_backfill",
-      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
-    },
-    {
-      "question_id": "30137711-7cb1-4d1b-8eab-2932a1fe0553",
-      "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
-      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-09-core-concept--5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
-      "title": "lea-hist-008-09-core-concept",
-      "baseline_hash": "sha256:9c8cd501a39a27aee1610233b8ae6f80bece7f5ae5aabaeb122d696374f1d5e2",
-      "baseline": {
-        "question_id": "30137711-7cb1-4d1b-8eab-2932a1fe0553",
-        "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
-        "topic_id": "db6a9e7f-324b-4f27-a905-9061fd7d734b",
-        "text": "Frank Gehry won the Pritzker Prize in 1989. What is his most iconic building, completed in 1997?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Getty Center, Los Angeles"
-          },
-          {
-            "id": "b",
-            "text": "Guggenheim Museum Bilbao"
-          },
-          {
-            "id": "c",
-            "text": "Dancing House, Prague"
-          },
-          {
-            "id": "d",
-            "text": "Vitra Design Museum, Weil am Rhein"
+            "text": "The sculptural program was added after the building's completion and served no original purpose, indicating a later adaptation to changing cultural or religious needs"
           }
         ],
         "correct_option_id": "b",
@@ -870,186 +239,188 @@
         "value_tolerance": 0,
         "question_type": "mcq",
         "rationale": {
-          "a": "Getty Center is by Richard Meier (1984 laureate, completed 1997).",
-          "c": "Dancing House is by Gehry and Vlado Milunić (1999), earlier than Bilbao.",
-          "d": "Vitra Design Museum is by Gehry (1989) but predates Bilbao.",
-          "correct": "Frank Gehry's Guggenheim Museum Bilbao (1997) epitomizes his deconstructivist approach with titanium-clad biomorphic forms. He won the Pritzker in 1989, well before this building's completion."
+          "a": "The interior decoration was integral to the building's function, not wasteful.",
+          "c": "While priests accessed the interior, the building's function was not personal appreciation but religious and administrative.",
+          "d": "The sculptural program was part of the original design (447–432 BCE), not a later addition.",
+          "correct": "The Parthenon housed a chryselephantine (gold and ivory) statue of Athena, 40+ feet tall, now lost. The sculptural program included a continuous frieze around the naos depicting the Panathenaic procession, and pediment sculptures. The Parthenon's interior was as important as its exterior; it was a treasury and a sanctuary, not merely a visual monument.'",
+          "takeaway": "The Parthenon's interior was as important as its exterior; it was a treasury and a sanctuary, not merely a visual monument.'."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "analyze",
+        "application_context": "code_interpretation",
+        "practice_context": [
+          "CON"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-HIST-001-05-012",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:23.734061+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:4b727c0f4976e64bc884095d0128d69ef484057fbe2594220ad942c127e11f86"
+      },
+      "proposed": {
+        "explanation": "The interior decoration was integral to the building's function, not wasteful. While priests accessed the interior, the building's function was not personal appreciation but religious and administrative. The sculptural program was part of the original design (447–432 BCE), not a later addition. The Parthenon housed a chryselephantine (gold and ivory) statue of Athena, 40+ feet tall, now lost. The sculptural program included a continuous frieze around the naos depicting the Panathenaic procession, and pediment sculptures. The Parthenon's interior was as important as its exterior; it was a treasury and a sanctuary, not merely a visual monument.' The Parthenon's interior was as important as its exterior; it was a treasury and a sanctuary, not merely a visual monument.'."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "5ef0e30d-6c30-420f-b6b6-7eae74644e93",
+      "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-001-05-core-concept--757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+      "title": "lea-hist-001-05-core-concept",
+      "baseline_hash": "sha256:a9a9f89287af2a0aab82835bb74eec71090842bcc6f6e67f43603d5e9752074c",
+      "baseline": {
+        "question_id": "5ef0e30d-6c30-420f-b6b6-7eae74644e93",
+        "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+        "topic_id": "a0124521-5f62-4bfe-bf92-8d5baf24d32a",
+        "text": "Sculpted femlea figures serving as columns or vertical supports in Greek architecture are called:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Kouroi, which are typically male statues used in different contexts"
+          },
+          {
+            "id": "b",
+            "text": "Atlantes, which are male figures used as supports, differing from female caryatids"
+          },
+          {
+            "id": "c",
+            "text": "Caryatids"
+          },
+          {
+            "id": "d",
+            "text": "Herms, which are square pillars with a head on top, not used as columns"
+          }
+        ],
+        "correct_option_id": "c",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Kouroi are nude male sculptures in archaic Greek art, not figures serving as columns.",
+          "b": "Atlantes are male figures serving as supports (the male equivalent of caryatids); caryatids are female.",
+          "d": "Herms are boundary markers or posts topped with a bust of Hermes, not columns.",
+          "correct": "The article defines: 'Caryatid (or Caryatids): A sculpted female figure serving as a column or support; seen in the Porch of the Maidens at the Erechtheion.'",
+          "takeaway": "The article defines: 'Caryatid (or Caryatids): A sculpted female figure serving as a column or support; seen in the Porch of the Maidens at the Erechtheion.'."
         },
         "explanation": null,
         "code_citation": null,
         "bloom_level": "remember",
         "application_context": "recall",
         "practice_context": [
-          "ID"
+          "DESC"
         ],
         "difficulty": 0.5,
         "difficulty_rating": null,
         "discrimination_rating": null,
         "is_assessment": false,
-        "model_id": "pritzker-06",
+        "model_id": "ALE-HIST-001-05-010",
         "prompt_image_url": null,
-        "created_at": "2026-03-23T19:27:26.09657+00:00",
+        "created_at": "2026-03-23T19:27:23.734061+00:00",
         "updated_at": "2026-04-08T07:44:46.846261+00:00",
-        "content_hash": "sha256:9c8cd501a39a27aee1610233b8ae6f80bece7f5ae5aabaeb122d696374f1d5e2"
+        "content_hash": "sha256:a9a9f89287af2a0aab82835bb74eec71090842bcc6f6e67f43603d5e9752074c"
       },
       "proposed": {
-        "explanation": "Getty Center is by Richard Meier (1984 laureate, completed 1997). Dancing House is by Gehry and Vlado Milunić (1999), earlier than Bilbao. Vitra Design Museum is by Gehry (1989) but predates Bilbao. Frank Gehry's Guggenheim Museum Bilbao (1997) epitomizes his deconstructivist approach with titanium-clad biomorphic forms. He won the Pritzker in 1989, well before this building's completion."
+        "explanation": "Kouroi are nude male sculptures in archaic Greek art, not figures serving as columns. Atlantes are male figures serving as supports (the male equivalent of caryatids); caryatids are female. Herms are boundary markers or posts topped with a bust of Hermes, not columns. The article defines: 'Caryatid (or Caryatids): A sculpted female figure serving as a column or support; seen in the Porch of the Maidens at the Erechtheion.' The article defines: 'Caryatid (or Caryatids): A sculpted female figure serving as a column or support; seen in the Porch of the Maidens at the Erechtheion.'."
       },
       "classification": "strict_explanation_backfill",
       "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
     },
     {
-      "question_id": "5b858f47-c9d7-42e0-8abe-855427d4e87a",
-      "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
-      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-09-core-concept--5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
-      "title": "lea-hist-008-09-core-concept",
-      "baseline_hash": "sha256:adf8ab0bfc1bba7385222d91ef853d0b8cb1543fdd191ccf5c4f436fba88f618",
+      "question_id": "ed16b78d-4569-4987-a3ff-674955037a2a",
+      "article_id": "bedac2b3-5478-4fe8-be94-d88f8e4ada3f",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-006-01-core-concept--bedac2b3-5478-4fe8-be94-d88f8e4ada3f",
+      "title": "lea-matl-006-01-core-concept",
+      "baseline_hash": "sha256:1a786c3e1637ef7b3a649dd9c9c6abb4891054cf2f349fd9ab813bb6396554ec",
       "baseline": {
-        "question_id": "5b858f47-c9d7-42e0-8abe-855427d4e87a",
-        "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
-        "topic_id": "db6a9e7f-324b-4f27-a905-9061fd7d734b",
-        "text": "How do the Pritzker laureate selections from 2010–2024 differ from those in the 1980s in terms of geography, building type, and design philosophy?",
+        "question_id": "ed16b78d-4569-4987-a3ff-674955037a2a",
+        "article_id": "bedac2b3-5478-4fe8-be94-d88f8e4ada3f",
+        "topic_id": "1ce0d3b9-7f03-4d5c-bfd3-d3652cb68828",
+        "text": "What is the metric equivleant coating weight for G90 galvanized steel per ASTM A653?",
         "options": [
           {
             "id": "a",
-            "text": "Recent selections are identical to 1980s selections; geography and philosophy have not changed, maintaining a consistent approach"
+            "text": "180 g/m²"
           },
           {
             "id": "b",
-            "text": "Recent selections increasingly recognize non-Western architects, social impact, and sustainability; 1980s selections emphasized Western formalism and cultural institutions."
+            "text": "225 g/m²"
           },
           {
             "id": "c",
-            "text": "Recent selections reject all modernism; 1980s selections embraced modernism exclusively, highlighting a shift in architectural values"
+            "text": "275 g/m²"
           },
           {
             "id": "d",
-            "text": "Recent selections are less rigorous than 1980s selections; quality has declined, reflecting a perceived drop in standards"
+            "text": "305 g/m²"
           }
         ],
-        "correct_option_id": "b",
+        "correct_option_id": "c",
         "correct_value": null,
         "accepted_answers": null,
         "value_tolerance": 0,
         "question_type": "mcq",
         "rationale": {
-          "a": "Significant philosophical and geographic shifts are evident.",
-          "c": "Both eras embrace modernism differently; the distinction is in philosophy and scope.",
-          "d": "Recent laureates maintain rigorous standards; the shift is in priorities and representation.",
-          "correct": "The article articulates this shift: Early era (1979–1995) rewarded Western modernists and cultural ambition; Recent era (2011–2024) increasingly recognizes Global South architects, social practice, and sustainability (Aravena, Kéré, Ban, Lacaton & Vassal)."
+          "a": "180 g/m² is below standard and does not meet G90 specification.",
+          "b": "225 g/m² approximates G74 coating, insufficient for tropical corrosion resistance.",
+          "d": "305 g/m² exceeds G90; may refer to conversion factor error (1 oz/ft² = 305 g/m²).",
+          "correct": "G90 (0.90 oz/ft²) converts to Z275 (275 g/m²); this coating is mandatory for tropical maritime salt-air exposure.",
+          "takeaway": "G90 = Z275 = 275 g/m² is the tropical-zone standard; memorize the metric equivalent."
         },
         "explanation": null,
-        "code_citation": null,
-        "bloom_level": "apply",
-        "application_context": "design_application",
-        "practice_context": [
-          "CMP"
-        ],
-        "difficulty": 0.5,
-        "difficulty_rating": null,
-        "discrimination_rating": null,
-        "is_assessment": false,
-        "model_id": "pritzker-12",
-        "prompt_image_url": null,
-        "created_at": "2026-03-23T19:27:26.09657+00:00",
-        "updated_at": "2026-04-08T07:44:46.846261+00:00",
-        "content_hash": "sha256:adf8ab0bfc1bba7385222d91ef853d0b8cb1543fdd191ccf5c4f436fba88f618"
-      },
-      "proposed": {
-        "explanation": "Significant philosophical and geographic shifts are evident. Both eras embrace modernism differently; the distinction is in philosophy and scope. Recent laureates maintain rigorous standards; the shift is in priorities and representation. The article articulates this shift: Early era (1979–1995) rewarded Western modernists and cultural ambition; Recent era (2011–2024) increasingly recognizes Global South architects, social practice, and sustainability (Aravena, Kéré, Ban, Lacaton & Vassal)."
-      },
-      "classification": "strict_explanation_backfill",
-      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
-    },
-    {
-      "question_id": "88e587a6-8889-4a80-9940-3836dea4de15",
-      "article_id": "f39be27a-5611-4d35-bdda-02f6e3e46f42",
-      "article_dir": ".ai/content-audit-export/articles/lea-matl-002-04-core-concept--f39be27a-5611-4d35-bdda-02f6e3e46f42",
-      "title": "lea-matl-002-04-core-concept",
-      "baseline_hash": "sha256:047e41f70e071d9f6bc1072d4bceada21d850e0da6d3716d1fbe994267d8e33b",
-      "baseline": {
-        "question_id": "88e587a6-8889-4a80-9940-3836dea4de15",
-        "article_id": "f39be27a-5611-4d35-bdda-02f6e3e46f42",
-        "topic_id": "2fceede7-fbd5-458a-8f79-f4bf71d0c846",
-        "text": "Romblon marble is the primary natural stone resource of the Philippines and accounts for approximately ___% of the country's marble production.",
-        "options": [
-          {
-            "id": "a",
-            "text": "80%"
-          },
-          {
-            "id": "b",
-            "text": "30%"
-          },
-          {
-            "id": "c",
-            "text": "50%"
-          },
-          {
-            "id": "d",
-            "text": "99%"
-          }
-        ],
-        "correct_option_id": "a",
-        "correct_value": null,
-        "accepted_answers": null,
-        "value_tolerance": 0,
-        "question_type": "mcq",
-        "rationale": {
-          "b": "30% is too low for Romblon's dominance.",
-          "c": "50% understates Romblon's market share.",
-          "d": "99% is unrealistic; other regions contribute some production.",
-          "correct": "Romblon Province produces approximately 80% of Philippine marble, making it the marble capital. Mabini and Odiongan are the primary production towns.",
-          "takeaway": "Romblon marble is the Philippine stone resource to know. Recognize its cloudy white appearance and premium quality comparable to Italian Carrara."
-        },
-        "explanation": null,
-        "code_citation": "Romblon Paradise Island documentation; Philippine stone resources",
-        "bloom_level": "understand",
-        "application_context": "code_interpretation",
+        "code_citation": "ASTM A653/A653M, Galvanized Steel Coating Specification Guide",
+        "bloom_level": "remember",
+        "application_context": "recall",
         "practice_context": [],
         "difficulty": 0.3,
         "difficulty_rating": null,
         "discrimination_rating": null,
         "is_assessment": false,
-        "model_id": "ALE-MATL-002-04-003",
+        "model_id": "ALE-MATL-006-01-002",
         "prompt_image_url": null,
-        "created_at": "2026-03-23T19:27:26.09657+00:00",
+        "created_at": "2026-03-23T19:27:27.434371+00:00",
         "updated_at": "2026-04-08T07:44:46.846261+00:00",
-        "content_hash": "sha256:047e41f70e071d9f6bc1072d4bceada21d850e0da6d3716d1fbe994267d8e33b"
+        "content_hash": "sha256:1a786c3e1637ef7b3a649dd9c9c6abb4891054cf2f349fd9ab813bb6396554ec"
       },
       "proposed": {
-        "explanation": "30% is too low for Romblon's dominance. 50% understates Romblon's market share. 99% is unrealistic; other regions contribute some production. Romblon Province produces approximately 80% of Philippine marble, making it the marble capital. Mabini and Odiongan are the primary production towns. Romblon marble is the Philippine stone resource to know. Recognize its cloudy white appearance and premium quality comparable to Italian Carrara."
+        "explanation": "180 g/m² is below standard and does not meet G90 specification. 225 g/m² approximates G74 coating, insufficient for tropical corrosion resistance. 305 g/m² exceeds G90; may refer to conversion factor error (1 oz/ft² = 305 g/m²). G90 (0.90 oz/ft²) converts to Z275 (275 g/m²); this coating is mandatory for tropical maritime salt-air exposure. G90 = Z275 = 275 g/m² is the tropical-zone standard; memorize the metric equivalent."
       },
       "classification": "strict_explanation_backfill",
       "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
     },
     {
-      "question_id": "f4dfa4e2-0bcb-45ea-bc31-878d00ab8610",
-      "article_id": "f39be27a-5611-4d35-bdda-02f6e3e46f42",
-      "article_dir": ".ai/content-audit-export/articles/lea-matl-002-04-core-concept--f39be27a-5611-4d35-bdda-02f6e3e46f42",
-      "title": "lea-matl-002-04-core-concept",
-      "baseline_hash": "sha256:c1a2a80d6ff6141ac294409109fd21cdbff9be941dd20706f8e12b486a442d57",
+      "question_id": "12f6e4bd-8a17-4249-980d-c088256fe05f",
+      "article_id": "20429844-ef79-45b9-8095-d9c64fd2bf08",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-005-07-core-concept--20429844-ef79-45b9-8095-d9c64fd2bf08",
+      "title": "lea-matl-005-07-core-concept",
+      "baseline_hash": "sha256:831a28a05ac36ae0274e06b0776904d8481b25178302b44b3fbe67aa29e99f25",
       "baseline": {
-        "question_id": "f4dfa4e2-0bcb-45ea-bc31-878d00ab8610",
-        "article_id": "f39be27a-5611-4d35-bdda-02f6e3e46f42",
-        "topic_id": "2fceede7-fbd5-458a-8f79-f4bf71d0c846",
-        "text": "An exterior building facade in the Philippines is specified with limestone (ASTM C568, water absorption 2.5%) without protective sealant. Is this adequate for long-term durability?",
+        "question_id": "12f6e4bd-8a17-4249-980d-c088256fe05f",
+        "article_id": "20429844-ef79-45b9-8095-d9c64fd2bf08",
+        "topic_id": "b73a0898-ccd5-4c56-aa1b-0e7b2d460c79",
+        "text": "Recycled concrete aggregates (RCA) are an appropriate choice for which applications in a construction project?",
         "options": [
           {
             "id": "a",
-            "text": "No; limestone's 2.5% absorption and acid sensitivity make it unsuitable for exterior tropical exposure without sealing. Granite (≤0.4% absorption) is required."
+            "text": "Non-structural fill and base courses where ASTM C33 gradation requirements are met; not for primary structural concrete without additional testing"
           },
           {
             "id": "b",
-            "text": "Yes; limestone meets ASTM C568 specifications and is suitable for any external application, regardless of environmental conditions"
+            "text": "All concrete applications including structural members, provided the RCA meets the same strength grade as virgin aggregate, ensuring no compromise in structural integrity"
           },
           {
             "id": "c",
-            "text": "No; but only because of typhoon impact, not moisture absorption, which is a significant factor in material degradation"
+            "text": "Only in decorative non-load-bearing applications; unsuitable for any structural or fill use due to higher absorption, which may affect durability"
           },
           {
             "id": "d",
-            "text": "Yes; limestone has been used for centuries in all climates without problems, though this overlooks specific environmental challenges"
+            "text": "Any application where cost reduction is a priority, regardless of durability or strength verification, potentially leading to compromised structural performance"
           }
         ],
         "correct_option_id": "a",
@@ -1058,60 +429,60 @@
         "value_tolerance": 0,
         "question_type": "mcq",
         "rationale": {
-          "b": "ASTM conformance is a minimum; exposure environment determines adequacy.",
-          "c": "Typhoon wind is a structural concern, not the primary durability issue with limestone absorption.",
-          "d": "Limestone has been used for centuries in arid and temperate climates; tropical humid climate is different.",
-          "correct": "Limestone's 2.5% water absorption combined with tropical rainfall, high humidity, and salt air (if coastal) creates conditions for water infiltration, biological growth (moss, algae), and acid etching. Protective sealing (penetrating or membrane) or granite (intrinsically water-resistant) is required.",
-          "takeaway": "Limestone in tropical Philippines requires either protective sealing or use of lower-absorption granite. Do not assume ASTM conformance guarantees field durability."
+          "b": "While RCA can meet ASTM C33 gradation, assuming it meets structural concrete requirements without testing is incorrect. Strength and durability must be verified.",
+          "c": "RCA's higher absorption makes it unsuitable for many fill applications if water ingress is a concern. Its use is primarily limited to controlled fill and base courses.",
+          "d": "Cost reduction alone does not justify RCA specification. Applications must match durability, strength, and absorption characteristics to intended use.",
+          "correct": "RCA is acceptable for non-structural uses (fill, base course) when meeting ASTM C33 gradation. RCA exhibits higher absorption (3-8% vs 0.5-1% for virgin) and lower strength, limiting use in structural concrete without testing and strength verification.",
+          "takeaway": "Recycled concrete aggregates are limited to non-structural applications where absorption and strength losses are acceptable. Candidates must recognize RCA limitations and avoid over-specifying reuse in structural concrete without verification testing."
         },
         "explanation": null,
-        "code_citation": "ASTM C568; stone durability in tropical climates; water management in masonry",
-        "bloom_level": "apply",
-        "application_context": "code_interpretation",
+        "code_citation": "ASTM C33 Standard Specification for Concrete Aggregates; ASTM C618",
+        "bloom_level": "understand",
+        "application_context": "recall",
         "practice_context": [],
         "difficulty": 0.5,
         "difficulty_rating": null,
         "discrimination_rating": null,
         "is_assessment": false,
-        "model_id": "ALE-MATL-002-04-004",
+        "model_id": "ALE-MATL-005-07-005",
         "prompt_image_url": null,
-        "created_at": "2026-03-23T19:27:26.09657+00:00",
+        "created_at": "2026-03-23T19:27:28.473222+00:00",
         "updated_at": "2026-04-08T07:44:46.846261+00:00",
-        "content_hash": "sha256:c1a2a80d6ff6141ac294409109fd21cdbff9be941dd20706f8e12b486a442d57"
+        "content_hash": "sha256:831a28a05ac36ae0274e06b0776904d8481b25178302b44b3fbe67aa29e99f25"
       },
       "proposed": {
-        "explanation": "ASTM conformance is a minimum; exposure environment determines adequacy. Typhoon wind is a structural concern, not the primary durability issue with limestone absorption. Limestone has been used for centuries in arid and temperate climates; tropical humid climate is different. Limestone's 2.5% water absorption combined with tropical rainfall, high humidity, and salt air (if coastal) creates conditions for water infiltration, biological growth (moss, algae), and acid etching. Protective sealing (penetrating or membrane) or granite (intrinsically water-resistant) is required. Limestone in tropical Philippines requires either protective sealing or use of lower-absorption granite. Do not assume ASTM conformance guarantees field durability."
+        "explanation": "While RCA can meet ASTM C33 gradation, assuming it meets structural concrete requirements without testing is incorrect. Strength and durability must be verified. RCA's higher absorption makes it unsuitable for many fill applications if water ingress is a concern. Its use is primarily limited to controlled fill and base courses. Cost reduction alone does not justify RCA specification. Applications must match durability, strength, and absorption characteristics to intended use. RCA is acceptable for non-structural uses (fill, base course) when meeting ASTM C33 gradation. RCA exhibits higher absorption (3-8% vs 0.5-1% for virgin) and lower strength, limiting use in structural concrete without testing and strength verification. Recycled concrete aggregates are limited to non-structural applications where absorption and strength losses are acceptable. Candidates must recognize RCA limitations and avoid over-specifying reuse in structural concrete without verification testing."
       },
       "classification": "strict_explanation_backfill",
       "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
     },
     {
-      "question_id": "15acfdf1-1eae-4743-8db8-a191c01033cc",
-      "article_id": "f39be27a-5611-4d35-bdda-02f6e3e46f42",
-      "article_dir": ".ai/content-audit-export/articles/lea-matl-002-04-core-concept--f39be27a-5611-4d35-bdda-02f6e3e46f42",
-      "title": "lea-matl-002-04-core-concept",
-      "baseline_hash": "sha256:0abc28ae5dd2aae22ba1594a35be135327e8fa1145760a4b04903b779bb6d24e",
+      "question_id": "dfd24359-6cc3-4b09-8ba2-2a675d236c5c",
+      "article_id": "20429844-ef79-45b9-8095-d9c64fd2bf08",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-005-07-core-concept--20429844-ef79-45b9-8095-d9c64fd2bf08",
+      "title": "lea-matl-005-07-core-concept",
+      "baseline_hash": "sha256:39dbdf0e0181c62a8ae6a0dd49d3be47cde761526c95df9dcc28879d661f340d",
       "baseline": {
-        "question_id": "15acfdf1-1eae-4743-8db8-a191c01033cc",
-        "article_id": "f39be27a-5611-4d35-bdda-02f6e3e46f42",
-        "topic_id": "2fceede7-fbd5-458a-8f79-f4bf71d0c846",
-        "text": "Stone veneer differs from solid stone in that veneer is typically ___ inches thick and is applied over a ___.",
+        "question_id": "dfd24359-6cc3-4b09-8ba2-2a675d236c5c",
+        "article_id": "20429844-ef79-45b9-8095-d9c64fd2bf08",
+        "topic_id": "b73a0898-ccd5-4c56-aa1b-0e7b2d460c79",
+        "text": "A project achieves a 25% reduction in structural embodied carbon by using fly ash concrete and recycled steel reinforcement. Under BERDE green building rating system, what is the approximate impact on the project's sustainability points allocation?",
         "options": [
           {
             "id": "a",
-            "text": "1—2; backup wall"
+            "text": "8-9% of total project points are allocated to sustainable materials credits; the 25% reduction may qualify for additional embodied carbon reduction bonuses"
           },
           {
             "id": "b",
-            "text": "4—6; structural frame"
+            "text": "25% of total project points are awarded directly for any embodied carbon reduction claimed, which significantly boosts the project's overall rating"
           },
           {
             "id": "c",
-            "text": "8—12; concrete foundation"
+            "text": "Embodied carbon is not evaluated under BERDE; only end-of-life waste management credits are available, limiting the impact of such reductions"
           },
           {
             "id": "d",
-            "text": "0.25; stone substrate"
+            "text": "The project automatically achieves BERDE 5-star certification with any measurable embodied carbon reduction, regardless of other criteria"
           }
         ],
         "correct_option_id": "a",
@@ -1120,76 +491,14 @@
         "value_tolerance": 0,
         "question_type": "mcq",
         "rationale": {
-          "b": "Veneer is anchored to structural backup (wall or frame), not to a foundation directly.",
-          "c": "Veneer is thinner than solid stone (which is 4—12 inches).",
-          "d": "Veneer is not applied to stone substrate; it is the topmost layer.",
-          "correct": "Stone veneer is thin-cut stone (1—2 inches) adhered or mechanically anchored to a backup wall (brick, concrete, or foam insulation), reducing weight and cost while maintaining appearance.",
-          "takeaway": "Veneer = thin (1—2 in.) + adhesive or mechanical anchors + backup wall. Solid = thick (4—12 in.) + heavy + direct support. Choose veneer for cost and weight reduction; solid for maximum durability."
+          "b": "While 8-9% is the baseline allocation, a 25% reduction does not automatically equal 25% of all project points. Embodied carbon is one component within the materials credit.",
+          "c": "BERDE does evaluate embodied carbon and waste management as integrated factors within the materials and emissions categories, not as isolated credits.",
+          "d": "A 25% embodied carbon reduction is significant but does not guarantee BERDE 5-star certification, which requires overall scoring across all categories (energy, water, waste, indoor environment, innovation).",
+          "correct": "BERDE version 5 allocates 8-9% of total points to sustainable materials credits. A 25% embodied carbon reduction may qualify for additional bonuses within this credit category, though automatic certification is not guaranteed.",
+          "takeaway": "BERDE allocates 8-9% of points to sustainable materials. Embodied carbon reduction is recognized, but candidates must understand that it is one credit component within the broader green building evaluation framework."
         },
         "explanation": null,
-        "code_citation": "Stone veneer installation standards (ASTM C1242, ANSI/NCMA TEK 10-02A); NSCP 2015 Section 2402 (general masonry materials)",
-        "bloom_level": "understand",
-        "application_context": "code_interpretation",
-        "practice_context": [],
-        "difficulty": 0.3,
-        "difficulty_rating": null,
-        "discrimination_rating": null,
-        "is_assessment": false,
-        "model_id": "ALE-MATL-002-04-008",
-        "prompt_image_url": null,
-        "created_at": "2026-03-23T19:27:26.09657+00:00",
-        "updated_at": "2026-04-08T07:44:46.846261+00:00",
-        "content_hash": "sha256:0abc28ae5dd2aae22ba1594a35be135327e8fa1145760a4b04903b779bb6d24e"
-      },
-      "proposed": {
-        "explanation": "Veneer is anchored to structural backup (wall or frame), not to a foundation directly. Veneer is thinner than solid stone (which is 4—12 inches). Veneer is not applied to stone substrate; it is the topmost layer. Stone veneer is thin-cut stone (1—2 inches) adhered or mechanically anchored to a backup wall (brick, concrete, or foam insulation), reducing weight and cost while maintaining appearance. Veneer = thin (1—2 in.) + adhesive or mechanical anchors + backup wall. Solid = thick (4—12 in.) + heavy + direct support. Choose veneer for cost and weight reduction; solid for maximum durability."
-      },
-      "classification": "strict_explanation_backfill",
-      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
-    },
-    {
-      "question_id": "d3ab72e4-30ff-4855-aaf4-6cf76f531983",
-      "article_id": "f39be27a-5611-4d35-bdda-02f6e3e46f42",
-      "article_dir": ".ai/content-audit-export/articles/lea-matl-002-04-core-concept--f39be27a-5611-4d35-bdda-02f6e3e46f42",
-      "title": "lea-matl-002-04-core-concept",
-      "baseline_hash": "sha256:869bc49264506b0060110469898b3d906760c9642612f1ae4b0da00e024316c9",
-      "baseline": {
-        "question_id": "d3ab72e4-30ff-4855-aaf4-6cf76f531983",
-        "article_id": "f39be27a-5611-4d35-bdda-02f6e3e46f42",
-        "topic_id": "2fceede7-fbd5-458a-8f79-f4bf71d0c846",
-        "text": "A designer specifies marble for an exterior building facade, reasoning that marble's compressive strength (up to 10,000 psi) exceeds concrete's (4,000 psi), so it must be durable. Is this reasoning correct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "No; compressive strength alone does not determine durability in exterior exposure. Marble's acid sensitivity and higher water absorption (0.75%) make it unsuitable for exterior. Granite's low absorption (<0.4%) and lack of acid sensitivity are more important than raw strength."
-          },
-          {
-            "id": "b",
-            "text": "Yes; higher compressive strength means better durability for all applications, regardless of environmental conditions or material properties."
-          },
-          {
-            "id": "c",
-            "text": "No; marble is weaker than concrete and should not be used externally, especially in areas with high pollution or acid rain exposure."
-          },
-          {
-            "id": "d",
-            "text": "Yes; marble's hardness (Mohs 3—4) provides sufficient scratch resistance for building facade, but does not account for other environmental factors."
-          }
-        ],
-        "correct_option_id": "a",
-        "correct_value": null,
-        "accepted_answers": null,
-        "value_tolerance": 0,
-        "question_type": "mcq",
-        "rationale": {
-          "b": "Strength is important, but durability requires multiple property evaluations.",
-          "c": "Marble is stronger than concrete in compression but more vulnerable to weathering.",
-          "d": "Mohs hardness (scratch resistance) is separate from weather durability.",
-          "correct": "Durability in exterior exposure depends on water absorption, acid resistance, weather stability, and UV resistance—not compressive strength alone. Marble's acid sensitivity and moderate absorption (0.75%) create long-term exterior vulnerability despite good compressive strength. Granite (≤0.4% absorption, acid-resistant) is inherently more durable.",
-          "takeaway": "Durability ≠ Strength. A material can be strong but vulnerable to environmental attack. Water absorption, acid sensitivity, and UV stability are durability drivers."
-        },
-        "explanation": null,
-        "code_citation": "ASTM C615, C503 standards; stone durability principles; exterior design standards",
+        "code_citation": "BERDE Green Building Rating System - Philippine Green Building Council; BERDE Version 5.0 User Guide",
         "bloom_level": "apply",
         "application_context": "code_interpretation",
         "practice_context": [],
@@ -1197,45 +506,45 @@
         "difficulty_rating": null,
         "discrimination_rating": null,
         "is_assessment": false,
-        "model_id": "ALE-MATL-002-04-007",
+        "model_id": "ALE-MATL-005-07-007",
         "prompt_image_url": null,
-        "created_at": "2026-03-23T19:27:26.09657+00:00",
+        "created_at": "2026-03-23T19:27:28.473222+00:00",
         "updated_at": "2026-04-08T07:44:46.846261+00:00",
-        "content_hash": "sha256:869bc49264506b0060110469898b3d906760c9642612f1ae4b0da00e024316c9"
+        "content_hash": "sha256:39dbdf0e0181c62a8ae6a0dd49d3be47cde761526c95df9dcc28879d661f340d"
       },
       "proposed": {
-        "explanation": "Strength is important, but durability requires multiple property evaluations. Marble is stronger than concrete in compression but more vulnerable to weathering. Mohs hardness (scratch resistance) is separate from weather durability. Durability in exterior exposure depends on water absorption, acid resistance, weather stability, and UV resistance—not compressive strength alone. Marble's acid sensitivity and moderate absorption (0.75%) create long-term exterior vulnerability despite good compressive strength. Granite (≤0.4% absorption, acid-resistant) is inherently more durable. Durability ≠ Strength. A material can be strong but vulnerable to environmental attack. Water absorption, acid sensitivity, and UV stability are durability drivers."
+        "explanation": "While 8-9% is the baseline allocation, a 25% reduction does not automatically equal 25% of all project points. Embodied carbon is one component within the materials credit. BERDE does evaluate embodied carbon and waste management as integrated factors within the materials and emissions categories, not as isolated credits. A 25% embodied carbon reduction is significant but does not guarantee BERDE 5-star certification, which requires overall scoring across all categories (energy, water, waste, indoor environment, innovation). BERDE version 5 allocates 8-9% of total points to sustainable materials credits. A 25% embodied carbon reduction may qualify for additional bonuses within this credit category, though automatic certification is not guaranteed. BERDE allocates 8-9% of points to sustainable materials. Embodied carbon reduction is recognized, but candidates must understand that it is one credit component within the broader green building evaluation framework."
       },
       "classification": "strict_explanation_backfill",
       "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
     },
     {
-      "question_id": "e4e2391e-dc72-4f32-94bd-fe7b5076e477",
-      "article_id": "f39be27a-5611-4d35-bdda-02f6e3e46f42",
-      "article_dir": ".ai/content-audit-export/articles/lea-matl-002-04-core-concept--f39be27a-5611-4d35-bdda-02f6e3e46f42",
-      "title": "lea-matl-002-04-core-concept",
-      "baseline_hash": "sha256:cff4e8082765a426491be2c4edba9d55fb12a0664c280a64c8156a1882f763fc",
+      "question_id": "dafd69c9-8cd4-4dcf-8caf-0392b9c32f52",
+      "article_id": "20429844-ef79-45b9-8095-d9c64fd2bf08",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-005-07-core-concept--20429844-ef79-45b9-8095-d9c64fd2bf08",
+      "title": "lea-matl-005-07-core-concept",
+      "baseline_hash": "sha256:1e6a4af95427ad82f0fe514ae79739f910ce321417ef7acc63a5768e3ebb607e",
       "baseline": {
-        "question_id": "e4e2391e-dc72-4f32-94bd-fe7b5076e477",
-        "article_id": "f39be27a-5611-4d35-bdda-02f6e3e46f42",
-        "topic_id": "2fceede7-fbd5-458a-8f79-f4bf71d0c846",
-        "text": "Which of the following stones has the HIGHEST water absorption and is least suitable for wet or tropical exterior exposures without sealing?",
+        "question_id": "dafd69c9-8cd4-4dcf-8caf-0392b9c32f52",
+        "article_id": "20429844-ef79-45b9-8095-d9c64fd2bf08",
+        "topic_id": "b73a0898-ccd5-4c56-aa1b-0e7b2d460c79",
+        "text": "A project team is selecting between virgin aluminum extrusions (8.24 kg CO2e/kg) and recycled aluminum extrusions (2.0 kg CO2e/kg) for building cladding. What is the approximate embodied carbon reduction by choosing recycled aluminum, and is aluminum suitable for structural reinforcement in concrete per ASTM standards?",
         "options": [
           {
             "id": "a",
-            "text": "Travertine (5—25% absorption)"
+            "text": "Approximately 76% reduction in embodied carbon; aluminum is not suitable for structural reinforcement in concrete and is used only for non-structural cladding and window framing"
           },
           {
             "id": "b",
-            "text": "Marble (0.75% absorption)"
+            "text": "Approximately 24% reduction in embodied carbon; aluminum can substitute for steel reinforcement in concrete with proper ASTM A496 certification, which is rarely achieved"
           },
           {
             "id": "c",
-            "text": "Granite (0.4% absorption)"
+            "text": "Approximately 50% reduction; aluminum is preferred for structural reinforcement due to lower density and cost, although it requires special treatment"
           },
           {
             "id": "d",
-            "text": "Slate (<0.5% absorption)"
+            "text": "Recycled and virgin aluminum have equal embodied carbon; the choice should be based solely on cost and availability, ignoring environmental impact"
           }
         ],
         "correct_option_id": "a",
@@ -1244,60 +553,60 @@
         "value_tolerance": 0,
         "question_type": "mcq",
         "rationale": {
-          "b": "Marble at 0.75% is moderate; with sealing, acceptable for sheltered interior use.",
-          "c": "Granite at 0.4% is the lowest; highly resistant to water damage.",
-          "d": "Slate <0.5% is excellent; used for centuries in wet roofing applications.",
-          "correct": "Travertine's porosity results in 5—25% water absorption, making it vulnerable to freeze-thaw damage, biological growth in tropical humidity, and water infiltration. Unsuitable for tropical Philippines without protective sealing.",
-          "takeaway": "Match absorption to exposure: Granite (<0.5%) for wet, Marble (0.75%) for sheltered interior, Travertine (5%+) for interior dry use only. High absorption + tropical humidity = failure."
+          "b": "24% is far lower than the actual 76% reduction. Confusing recycled and virgin embodied carbon values is a critical error.",
+          "c": "While aluminum is lighter and lower-cost than steel, ASTM A496 specifies steel wire reinforcement; aluminum does not meet structural reinforcement standards.",
+          "d": "Recycled aluminum (2.0 kg CO2e/kg) has significantly lower embodied carbon than virgin (8.24 kg CO2e/kg). Material selection must account for this substantial difference.",
+          "correct": "Reduction: (8.24-2.0)/8.24 ≈ 76%. Aluminum is not suitable for structural concrete reinforcement per ASTM standards. Its high cost and corrosion susceptibility in concrete limit use to non-structural cladding, window frames, and interior finish components.",
+          "takeaway": "Recycled aluminum reduces embodied carbon by 76% compared to virgin but is unsuitable for structural reinforcement. Candidates must understand material-specific embodied carbon and application limitations."
         },
         "explanation": null,
-        "code_citation": "ASTM C615, C503, C568 absorption specifications; stone durability principles",
-        "bloom_level": "understand",
-        "application_context": "code_interpretation",
+        "code_citation": "ICE Embodied Carbon Database; ASTM A496 Standard for Steel Wire Reinforcement",
+        "bloom_level": "apply",
+        "application_context": "design_application",
         "practice_context": [],
-        "difficulty": 0.3,
+        "difficulty": 0.7,
         "difficulty_rating": null,
         "discrimination_rating": null,
         "is_assessment": false,
-        "model_id": "ALE-MATL-002-04-002",
+        "model_id": "ALE-MATL-005-07-010",
         "prompt_image_url": null,
-        "created_at": "2026-03-23T19:27:26.09657+00:00",
+        "created_at": "2026-03-23T19:27:28.473222+00:00",
         "updated_at": "2026-04-08T07:44:46.846261+00:00",
-        "content_hash": "sha256:cff4e8082765a426491be2c4edba9d55fb12a0664c280a64c8156a1882f763fc"
+        "content_hash": "sha256:1e6a4af95427ad82f0fe514ae79739f910ce321417ef7acc63a5768e3ebb607e"
       },
       "proposed": {
-        "explanation": "Marble at 0.75% is moderate; with sealing, acceptable for sheltered interior use. Granite at 0.4% is the lowest; highly resistant to water damage. Slate <0.5% is excellent; used for centuries in wet roofing applications. Travertine's porosity results in 5—25% water absorption, making it vulnerable to freeze-thaw damage, biological growth in tropical humidity, and water infiltration. Unsuitable for tropical Philippines without protective sealing. Match absorption to exposure: Granite (<0.5%) for wet, Marble (0.75%) for sheltered interior, Travertine (5%+) for interior dry use only. High absorption + tropical humidity = failure."
+        "explanation": "24% is far lower than the actual 76% reduction. Confusing recycled and virgin embodied carbon values is a critical error. While aluminum is lighter and lower-cost than steel, ASTM A496 specifies steel wire reinforcement; aluminum does not meet structural reinforcement standards. Recycled aluminum (2.0 kg CO2e/kg) has significantly lower embodied carbon than virgin (8.24 kg CO2e/kg). Material selection must account for this substantial difference. Reduction: (8.24-2.0)/8.24 ≈ 76%. Aluminum is not suitable for structural concrete reinforcement per ASTM standards. Its high cost and corrosion susceptibility in concrete limit use to non-structural cladding, window frames, and interior finish components. Recycled aluminum reduces embodied carbon by 76% compared to virgin but is unsuitable for structural reinforcement. Candidates must understand material-specific embodied carbon and application limitations."
       },
       "classification": "strict_explanation_backfill",
       "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
     },
     {
-      "question_id": "bbdc625a-aed1-4fcd-a6ac-553e02ff7b31",
-      "article_id": "f39be27a-5611-4d35-bdda-02f6e3e46f42",
-      "article_dir": ".ai/content-audit-export/articles/lea-matl-002-04-core-concept--f39be27a-5611-4d35-bdda-02f6e3e46f42",
-      "title": "lea-matl-002-04-core-concept",
-      "baseline_hash": "sha256:e08cf0a2b8e30eae0ff35dd09b07cd904586516a4123391c510cb1f18ab1b221",
+      "question_id": "b5a74a76-7a2b-4b71-8864-dabe36cd7851",
+      "article_id": "20429844-ef79-45b9-8095-d9c64fd2bf08",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-005-07-core-concept--20429844-ef79-45b9-8095-d9c64fd2bf08",
+      "title": "lea-matl-005-07-core-concept",
+      "baseline_hash": "sha256:f2dd601dc5f2ed617cddaa3a18366101a95cf17e21ab186042505e2fd907580d",
       "baseline": {
-        "question_id": "bbdc625a-aed1-4fcd-a6ac-553e02ff7b31",
-        "article_id": "f39be27a-5611-4d35-bdda-02f6e3e46f42",
-        "topic_id": "2fceede7-fbd5-458a-8f79-f4bf71d0c846",
-        "text": "The Mohs hardness sclea ranks minerals by ___ resistance; a stone with Mohs 6 (granite) is ___ than a stone with Mohs 3 (marble).",
+        "question_id": "b5a74a76-7a2b-4b71-8864-dabe36cd7851",
+        "article_id": "20429844-ef79-45b9-8095-d9c64fd2bf08",
+        "topic_id": "b73a0898-ccd5-4c56-aa1b-0e7b2d460c79",
+        "text": "Ground granulated blast furnace slag (GGBS) meets which ASTM standard and is used as a cement replacement at what typical dosage range in structural concrete?",
         "options": [
           {
             "id": "a",
-            "text": "scratch; harder"
+            "text": "ASTM C989; 30-50% cement replacement with both pozzolanic and cementitious properties"
           },
           {
             "id": "b",
-            "text": "compressive; softer"
+            "text": "ASTM C618; 15-25% cement replacement as a pozzolanic admixture only, which limits its use in high-strength applications"
           },
           {
             "id": "c",
-            "text": "impact; weaker"
+            "text": "ASTM C33; 20-40% replacement in aggregate gradation specifications, which is not applicable to GGBS"
           },
           {
             "id": "d",
-            "text": "abrasion; equivalent"
+            "text": "ASTM C150; 25-35% replacement following Portland cement chemistry requirements, which is incorrect for GGBS"
           }
         ],
         "correct_option_id": "a",
@@ -1306,14 +615,200 @@
         "value_tolerance": 0,
         "question_type": "mcq",
         "rationale": {
-          "b": "Mohs measures scratch resistance, not compressive strength.",
-          "c": "Weaker in impact is not determined by Mohs scale alone.",
-          "d": "Equivalent is incorrect; Mohs 6 is significantly harder than Mohs 3.",
-          "correct": "Mohs hardness measures resistance to scratching. Granite (6) is harder than marble (3), meaning granite resists scratching better. Hardness does NOT directly equal compressive strength.",
-          "takeaway": "Mohs hardness = scratch resistance. Granite (harder) resists wear and scratching better than marble. Compressive strength is a separate property measured by crushing tests."
+          "b": "ASTM C618 covers fly ash, not GGBS. Fly ash replacement rates (15-25%) are lower than GGBS because fly ash lacks cementitious properties.",
+          "c": "ASTM C33 specifies fine and coarse aggregate gradation, not cement replacement materials.",
+          "d": "ASTM C150 defines Portland cement composition; GGBS is not a Portland cement product but a supplementary cementitious material meeting its own ASTM C989 standard.",
+          "correct": "GGBS is cooled byproduct slag from iron smelting meeting ASTM C989 specifications. It provides both pozzolanic (silica-based) and cementitious (calcium-based) reactions, allowing higher replacement rates of 30-50% compared to fly ash (15-25%).",
+          "takeaway": "GGBS (ASTM C989) allows higher cement replacement (30-50%) than fly ash (ASTM C618: 15-25%) because it combines pozzolanic and self-cementing properties. Candidates must match material type to the correct ASTM standard and dosage limits."
         },
         "explanation": null,
-        "code_citation": "Mohs hardness sclea; ASTM stone specifications",
+        "code_citation": "ASTM C989 Standard Specification for Ground Granulated Blast-Furnace Slag; ASTM C618",
+        "bloom_level": "understand",
+        "application_context": "code_interpretation",
+        "practice_context": [],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-MATL-005-07-004",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:28.473222+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:f2dd601dc5f2ed617cddaa3a18366101a95cf17e21ab186042505e2fd907580d"
+      },
+      "proposed": {
+        "explanation": "ASTM C618 covers fly ash, not GGBS. Fly ash replacement rates (15-25%) are lower than GGBS because fly ash lacks cementitious properties. ASTM C33 specifies fine and coarse aggregate gradation, not cement replacement materials. ASTM C150 defines Portland cement composition; GGBS is not a Portland cement product but a supplementary cementitious material meeting its own ASTM C989 standard. GGBS is cooled byproduct slag from iron smelting meeting ASTM C989 specifications. It provides both pozzolanic (silica-based) and cementitious (calcium-based) reactions, allowing higher replacement rates of 30-50% compared to fly ash (15-25%). GGBS (ASTM C989) allows higher cement replacement (30-50%) than fly ash (ASTM C618: 15-25%) because it combines pozzolanic and self-cementing properties. Candidates must match material type to the correct ASTM standard and dosage limits."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "fb5705f7-2d95-4692-b0e8-803e63989e06",
+      "article_id": "20429844-ef79-45b9-8095-d9c64fd2bf08",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-005-07-core-concept--20429844-ef79-45b9-8095-d9c64fd2bf08",
+      "title": "lea-matl-005-07-core-concept",
+      "baseline_hash": "sha256:612548c831d5089f34d88d41a2b8916e2453f1a60ced09022283c4eee9b8130a",
+      "baseline": {
+        "question_id": "fb5705f7-2d95-4692-b0e8-803e63989e06",
+        "article_id": "20429844-ef79-45b9-8095-d9c64fd2bf08",
+        "topic_id": "b73a0898-ccd5-4c56-aa1b-0e7b2d460c79",
+        "text": "According to ASTM C618, what is the primary difference between Class F and Class C fly ash in terms of chemical composition and concrete application?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Class F is high-silica and pozzolanic only; Class C is high-calcium with pozzolanic and self-cementing properties. Dosage is 15-25% for F and 20-35% for C."
+          },
+          {
+            "id": "b",
+            "text": "Class C is derived from anthracite coal and contains 50-70% silica; Class F is derived from lignite and contains 20-40% calcium oxide, which affects its reactivity and application in concrete."
+          },
+          {
+            "id": "c",
+            "text": "Both classes are chemically identical; the difference is only in particle size distribution and fineness per ASTM C618, which does not affect their application in concrete."
+          },
+          {
+            "id": "d",
+            "text": "Class F is unsuitable for structural concrete and limited to non-structural fill; Class C is required for all structural applications, especially in environments with high sulfate exposure."
+          }
+        ],
+        "correct_option_id": "a",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "b": "This reverses the coal source and chemical composition. Class F comes from anthracite/bituminous (not lignite), and Class C comes from lignite/subbituminous (not anthracite).",
+          "c": "ASTM C618 specifies chemical composition requirements and pozzolanic reactivity, not only particle size. While fineness is a specification, the chemical differences between Class F and C are fundamental.",
+          "d": "Both Class F and Class C are acceptable for structural concrete when dosed within ASTM C618 limits. The difference in dosage reflects their chemical reactivity, not structural suitability.",
+          "correct": "Class F fly ash (from anthracite/bituminous coal) is 50-70% silica and acts only as a pozzolan, replacing 15-25% cement. Class C (from lignite/subbituminous) contains 20-40% CaO, acts both as a pozzolan and self-cements, and is dosed at 20-35%. Both are suitable for structural concrete within their dosage limits.",
+          "takeaway": "Class F and C fly ash have different chemical compositions, reactivity rates, and optimal dosage ranges. Candidates must match fly ash type to concrete strength requirements and durability goals."
+        },
+        "explanation": null,
+        "code_citation": "ASTM C618 Standard Specification; Class C vs Class F Fly Ash Properties (Fahrenheit 2019)",
+        "bloom_level": "understand",
+        "application_context": "code_interpretation",
+        "practice_context": [],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-MATL-005-07-002",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:28.473222+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:612548c831d5089f34d88d41a2b8916e2453f1a60ced09022283c4eee9b8130a"
+      },
+      "proposed": {
+        "explanation": "This reverses the coal source and chemical composition. Class F comes from anthracite/bituminous (not lignite), and Class C comes from lignite/subbituminous (not anthracite). ASTM C618 specifies chemical composition requirements and pozzolanic reactivity, not only particle size. While fineness is a specification, the chemical differences between Class F and C are fundamental. Both Class F and Class C are acceptable for structural concrete when dosed within ASTM C618 limits. The difference in dosage reflects their chemical reactivity, not structural suitability. Class F fly ash (from anthracite/bituminous coal) is 50-70% silica and acts only as a pozzolan, replacing 15-25% cement. Class C (from lignite/subbituminous) contains 20-40% CaO, acts both as a pozzolan and self-cements, and is dosed at 20-35%. Both are suitable for structural concrete within their dosage limits. Class F and C fly ash have different chemical compositions, reactivity rates, and optimal dosage ranges. Candidates must match fly ash type to concrete strength requirements and durability goals."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "33c1a1ff-0207-454b-a331-5a0c9bfb3bc3",
+      "article_id": "20429844-ef79-45b9-8095-d9c64fd2bf08",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-005-07-core-concept--20429844-ef79-45b9-8095-d9c64fd2bf08",
+      "title": "lea-matl-005-07-core-concept",
+      "baseline_hash": "sha256:f9e5ce56e6d45a361dc216f78ea9b2145e73dfaa1ffc8090c01f0b5a73e19e99",
+      "baseline": {
+        "question_id": "33c1a1ff-0207-454b-a331-5a0c9bfb3bc3",
+        "article_id": "20429844-ef79-45b9-8095-d9c64fd2bf08",
+        "topic_id": "b73a0898-ccd5-4c56-aa1b-0e7b2d460c79",
+        "text": "A structural concrete mix uses Portland cement with embodied carbon of 0.82 kg CO2e/kg. The cement content is 350 kg/m³. If 25% of the cement is replaced with Class F fly ash (embodied carbon 0.12 kg CO2e/kg), what is the approximate embodied carbon reduction for the cement binder component?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Approximately 21-23% reduction in binder embodied carbon"
+          },
+          {
+            "id": "b",
+            "text": "Approximately 35-40% reduction due to the 25% replacement percentage"
+          },
+          {
+            "id": "c",
+            "text": "Approximately 15-18% reduction, accounting for fly ash having lower but non-zero embodied carbon"
+          },
+          {
+            "id": "d",
+            "text": "No reduction, because fly ash is a waste product and does not reduce overall material carbon"
+          }
+        ],
+        "correct_option_id": "a",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "b": "This incorrectly assumes the 25% replacement equals 25% carbon reduction by ignoring fly ash's embodied carbon contribution.",
+          "c": "This assumes fly ash has zero embodied carbon, which is incorrect. All materials have some embodied carbon from processing.",
+          "d": "Fly ash is a waste product from coal burning, but it has measurable embodied carbon from collection, processing, and transport. Its use reduces net carbon compared to 100% Portland cement.",
+          "correct": "Original binder carbon: 350 kg/m³ × 0.82 = 287 kg CO2e/m³. After 25% replacement: 262.5 kg cement (0.82) + 87.5 kg fly ash (0.12) = 221.1 kg CO2e/m³. Reduction: (287-221.1)/287 ≈ 23%. This accounts for fly ash's own embodied carbon (not zero).",
+          "takeaway": "Embodied carbon reduction from pozzolanic replacement is never equal to the percentage replacement, because the substitute material (fly ash, slag) has non-zero embodied carbon. Always account for both material carbon values when calculating reduction."
+        },
+        "explanation": null,
+        "code_citation": "ICE Embodied Carbon Database; ASTM C618; Embodied Carbon Reduction Guide (US DOE 2024)",
+        "bloom_level": "apply",
+        "application_context": "design_application",
+        "practice_context": [],
+        "difficulty": 0.7,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-MATL-005-07-003",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:28.473222+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:f9e5ce56e6d45a361dc216f78ea9b2145e73dfaa1ffc8090c01f0b5a73e19e99"
+      },
+      "proposed": {
+        "explanation": "This incorrectly assumes the 25% replacement equals 25% carbon reduction by ignoring fly ash's embodied carbon contribution. This assumes fly ash has zero embodied carbon, which is incorrect. All materials have some embodied carbon from processing. Fly ash is a waste product from coal burning, but it has measurable embodied carbon from collection, processing, and transport. Its use reduces net carbon compared to 100% Portland cement. Original binder carbon: 350 kg/m³ × 0.82 = 287 kg CO2e/m³. After 25% replacement: 262.5 kg cement (0.82) + 87.5 kg fly ash (0.12) = 221.1 kg CO2e/m³. Reduction: (287-221.1)/287 ≈ 23%. This accounts for fly ash's own embodied carbon (not zero). Embodied carbon reduction from pozzolanic replacement is never equal to the percentage replacement, because the substitute material (fly ash, slag) has non-zero embodied carbon. Always account for both material carbon values when calculating reduction."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "7cfe2e9f-aa79-4eea-8caa-4a806b69c86d",
+      "article_id": "20429844-ef79-45b9-8095-d9c64fd2bf08",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-005-07-core-concept--20429844-ef79-45b9-8095-d9c64fd2bf08",
+      "title": "lea-matl-005-07-core-concept",
+      "baseline_hash": "sha256:b969f5f98b47c1ede24083d8be79b7de4969e96a2a6004a8fd3af75b3b617bca",
+      "baseline": {
+        "question_id": "7cfe2e9f-aa79-4eea-8caa-4a806b69c86d",
+        "article_id": "20429844-ef79-45b9-8095-d9c64fd2bf08",
+        "topic_id": "b73a0898-ccd5-4c56-aa1b-0e7b2d460c79",
+        "text": "Timber used in construction has an embodied carbon value of approximately -0.46 kg CO2e/kg, indicating a negative value. What does the negative sign represent in the context of embodied carbon?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Carbon sequestration: trees absorb CO2 during growth and store it in the wood fiber; harvesting and using timber retains this stored carbon, offsetting emissions"
+          },
+          {
+            "id": "b",
+            "text": "An error in measurement: negative embodied carbon is impossible and indicates laboratory testing failure, suggesting a need for recalibration"
+          },
+          {
+            "id": "c",
+            "text": "Timber requires energy removal during processing, reducing net emissions compared to mineral materials, which typically have higher embodied carbon"
+          },
+          {
+            "id": "d",
+            "text": "The negative value means timber has no environmental impact and is perfectly sustainable regardless of harvest method, making it an ideal choice"
+          }
+        ],
+        "correct_option_id": "a",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "b": "Laboratory testing of timber is accurate; negative embodied carbon is a valid concept reflecting carbon sequestration, not measurement error.",
+          "c": "Timber processing requires energy (drying, milling), which adds positive embodied carbon. The net embodied carbon remains negative because sequestration exceeds processing emissions.",
+          "d": "Timber sustainability depends on harvest method (sustainable forestry vs clear-cutting), replanting, and transport distance. A negative embodied carbon value does not guarantee ecological soundness.",
+          "correct": "Trees sequester atmospheric CO2 during growth through photosynthesis, storing carbon in cellulose and lignin. Timber retains this stored carbon for the duration of its service life. The negative value (carbon credit) offsets the manufacturing and transport emissions.",
+          "takeaway": "Negative embodied carbon represents carbon sequestration in organic materials. Candidates must understand that timber stores atmospheric CO2, making it a carbon sink if sustainably harvested and managed."
+        },
+        "explanation": null,
+        "code_citation": "ICE Embodied Carbon Database; Embodied Carbon Reduction in New Construction Reference Guide (US DOE 2024)",
         "bloom_level": "understand",
         "application_context": "recall",
         "practice_context": [],
@@ -1321,107 +816,171 @@
         "difficulty_rating": null,
         "discrimination_rating": null,
         "is_assessment": false,
-        "model_id": "ALE-MATL-002-04-006",
+        "model_id": "ALE-MATL-005-07-008",
         "prompt_image_url": null,
-        "created_at": "2026-03-23T19:27:26.09657+00:00",
+        "created_at": "2026-03-23T19:27:28.473222+00:00",
         "updated_at": "2026-04-08T07:44:46.846261+00:00",
-        "content_hash": "sha256:e08cf0a2b8e30eae0ff35dd09b07cd904586516a4123391c510cb1f18ab1b221"
+        "content_hash": "sha256:b969f5f98b47c1ede24083d8be79b7de4969e96a2a6004a8fd3af75b3b617bca"
       },
       "proposed": {
-        "explanation": "Mohs measures scratch resistance, not compressive strength. Weaker in impact is not determined by Mohs scale alone. Equivalent is incorrect; Mohs 6 is significantly harder than Mohs 3. Mohs hardness measures resistance to scratching. Granite (6) is harder than marble (3), meaning granite resists scratching better. Hardness does NOT directly equal compressive strength. Mohs hardness = scratch resistance. Granite (harder) resists wear and scratching better than marble. Compressive strength is a separate property measured by crushing tests."
+        "explanation": "Laboratory testing of timber is accurate; negative embodied carbon is a valid concept reflecting carbon sequestration, not measurement error. Timber processing requires energy (drying, milling), which adds positive embodied carbon. The net embodied carbon remains negative because sequestration exceeds processing emissions. Timber sustainability depends on harvest method (sustainable forestry vs clear-cutting), replanting, and transport distance. A negative embodied carbon value does not guarantee ecological soundness. Trees sequester atmospheric CO2 during growth through photosynthesis, storing carbon in cellulose and lignin. Timber retains this stored carbon for the duration of its service life. The negative value (carbon credit) offsets the manufacturing and transport emissions. Negative embodied carbon represents carbon sequestration in organic materials. Candidates must understand that timber stores atmospheric CO2, making it a carbon sink if sustainably harvested and managed."
       },
       "classification": "strict_explanation_backfill",
       "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
     },
     {
-      "question_id": "e621d7c1-75cc-4c48-9289-9087d30913f8",
-      "article_id": "f39be27a-5611-4d35-bdda-02f6e3e46f42",
-      "article_dir": ".ai/content-audit-export/articles/lea-matl-002-04-core-concept--f39be27a-5611-4d35-bdda-02f6e3e46f42",
-      "title": "lea-matl-002-04-core-concept",
-      "baseline_hash": "sha256:a98cb39d0b906badd2ec92fc0c57886098333b54d7cdb740a948eb52764c0410",
+      "question_id": "5d75baae-ee30-44ea-bd5b-736a4a4d331f",
+      "article_id": "205905a8-f9ff-41e7-8db7-a85edd563a84",
+      "article_dir": ".ai/content-audit-export/articles/lea-strc-004-05-core-concept--205905a8-f9ff-41e7-8db7-a85edd563a84",
+      "title": "lea-strc-004-05-core-concept",
+      "baseline_hash": "sha256:e4d0ad1f0c22bbc9ba7cb57330b7bd09525f8c5f854c707e32a55d0001f53f83",
       "baseline": {
-        "question_id": "e621d7c1-75cc-4c48-9289-9087d30913f8",
-        "article_id": "f39be27a-5611-4d35-bdda-02f6e3e46f42",
-        "topic_id": "2fceede7-fbd5-458a-8f79-f4bf71d0c846",
-        "text": "Marble is prized for interior applications but is NOT recommended for exterior exposure because it is susceptible to ___.",
+        "question_id": "5d75baae-ee30-44ea-bd5b-736a4a4d331f",
+        "article_id": "205905a8-f9ff-41e7-8db7-a85edd563a84",
+        "topic_id": "14ff1343-a36a-4f79-a807-217f474a3aa5",
+        "text": "A warehouse owner upgrades from light storage (6.0 kPa) to heavy storage (12.0 kPa) and the floor beams begin to sag. Who is structurally liable if the original design documents specified light storage?",
         "options": [
           {
             "id": "a",
-            "text": "acid etching from acidic rain or soil moisture"
+            "text": "The structural engineer, for not allowing a 100% safety margin, which is a standard engineering practice"
           },
           {
             "id": "b",
-            "text": "compression failure under excessive load conditions"
+            "text": "The owner, for exceeding the design load limits specified in the plans."
           },
           {
             "id": "c",
-            "text": "freeze-thaw cycles that cause cracking and spalling"
+            "text": "The contractor, for using weaker steel than specified, which compromises structural integrity"
           },
           {
             "id": "d",
-            "text": "biological attachment leading to surface discoloration"
+            "text": "The insurance company, as it is an 'Act of God', which is typically excluded from coverage"
           }
         ],
-        "correct_option_id": "a",
+        "correct_option_id": "b",
         "correct_value": null,
         "accepted_answers": null,
         "value_tolerance": 0,
         "question_type": "mcq",
         "rationale": {
-          "b": "Marble has adequate compressive strength for most applications; compression is not the limiting factor.",
-          "c": "Freeze-thaw is a concern for high-absorption stone in cold climates, but marble's moderate absorption and tropical Philippines' warm climate make this secondary.",
-          "d": "Biological growth (moss, algae) affects all stone; it is not specific to marble.",
-          "correct": "Marble (CaCO₃) is sensitive to weak acids; rainwater containing carbonic acid, soil moisture, and vinegar/acidic cleaners etch the surface, dull the polish, and create irreversible damage.",
-          "takeaway": "Marble = interior only. Acid sensitivity and moderate absorption limit exterior use. Granite is the exterior choice for durability."
+          "a": "Safety factors in codes are typically 1.2 to 1.6, not a 100% (2.0) margin for unspecified future uses.",
+          "c": "Unless the contractor deviated from plans, the failure is due to overloading, not material quality.",
+          "d": "Structural overloading is a human error/negligence, not an 'Act of God'.",
+          "correct": "The owner is responsible for ensuring that the building is not subjected to loads greater than those for which it was designed. Doubling the load from 6.0 to 12.0 kPa is a gross violation of the design capacity.",
+          "takeaway": "Owners must adhere to design load limits."
         },
         "explanation": null,
-        "code_citation": "ASTM C503; stone durability; interior design standards",
-        "bloom_level": "understand",
+        "code_citation": "NSCP 2015, Section 205.2",
+        "bloom_level": "analyze",
         "application_context": "code_interpretation",
         "practice_context": [],
-        "difficulty": 0.3,
+        "difficulty": 0.9,
         "difficulty_rating": null,
         "discrimination_rating": null,
         "is_assessment": false,
-        "model_id": "ALE-MATL-002-04-005",
+        "model_id": "ALE-STRC-004-05-010",
         "prompt_image_url": null,
-        "created_at": "2026-03-23T19:27:26.09657+00:00",
+        "created_at": "2026-03-23T19:27:52.277828+00:00",
         "updated_at": "2026-04-08T07:44:46.846261+00:00",
-        "content_hash": "sha256:a98cb39d0b906badd2ec92fc0c57886098333b54d7cdb740a948eb52764c0410"
+        "content_hash": "sha256:e4d0ad1f0c22bbc9ba7cb57330b7bd09525f8c5f854c707e32a55d0001f53f83"
       },
       "proposed": {
-        "explanation": "Marble has adequate compressive strength for most applications; compression is not the limiting factor. Freeze-thaw is a concern for high-absorption stone in cold climates, but marble's moderate absorption and tropical Philippines' warm climate make this secondary. Biological growth (moss, algae) affects all stone; it is not specific to marble. Marble (CaCO₃) is sensitive to weak acids; rainwater containing carbonic acid, soil moisture, and vinegar/acidic cleaners etch the surface, dull the polish, and create irreversible damage. Marble = interior only. Acid sensitivity and moderate absorption limit exterior use. Granite is the exterior choice for durability."
+        "explanation": "Safety factors in codes are typically 1.2 to 1.6, not a 100% (2.0) margin for unspecified future uses. Unless the contractor deviated from plans, the failure is due to overloading, not material quality. Structural overloading is a human error/negligence, not an 'Act of God'. The owner is responsible for ensuring that the building is not subjected to loads greater than those for which it was designed. Doubling the load from 6.0 to 12.0 kPa is a gross violation of the design capacity. Owners must adhere to design load limits."
       },
       "classification": "strict_explanation_backfill",
       "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
     },
     {
-      "question_id": "57a5181c-b039-42f2-aba3-6bcbd0a8369f",
-      "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
-      "article_dir": ".ai/content-audit-export/articles/lea-hist-001-05-core-concept--757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
-      "title": "lea-hist-001-05-core-concept",
-      "baseline_hash": "sha256:923791204886e7ddaba80a7a6d1761a048be35ca13fc63c6a2aba095664cde6d",
+      "question_id": "3f5d2610-3ad1-422b-99a1-c85b34d1cd13",
+      "article_id": "61869b56-3658-496c-ac52-060076c5ea6c",
+      "article_dir": ".ai/content-audit-export/articles/lea-theo-001-12-core-concept--61869b56-3658-496c-ac52-060076c5ea6c",
+      "title": "lea-theo-001-12-core-concept",
+      "baseline_hash": "sha256:4419e4ab2a3932be03a1c8824726dfea234395ddba04b132a1dac7520f895962",
       "baseline": {
-        "question_id": "57a5181c-b039-42f2-aba3-6bcbd0a8369f",
-        "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
-        "topic_id": "a0124521-5f62-4bfe-bf92-8d5baf24d32a",
-        "text": "The Parthenon's peristasis (outer colonnade) arrangement features how many columns on the short ends and long sides?",
+        "question_id": "3f5d2610-3ad1-422b-99a1-c85b34d1cd13",
+        "article_id": "61869b56-3658-496c-ac52-060076c5ea6c",
+        "topic_id": "f83f5e6d-987c-44cc-95bb-d834d922f3e5",
+        "text": "What does the pointed arch in Gothic architecture signify and symbolize?",
         "options": [
           {
             "id": "a",
-            "text": "6 columns on short ends and 12 on long sides (6×12 arrangement)"
+            "text": "It means the same thing in all cultures and historical periods, representing a universal architectural language"
           },
           {
             "id": "b",
-            "text": "6 columns on short ends and 13 on long sides (6×13 arrangement)"
+            "text": "It is an arbitrary decorative choice unrelated to cultural meaning, often used for aesthetic purposes only"
           },
           {
             "id": "c",
-            "text": "8 columns on short ends and 17 on long sides (8×17 arrangement)"
+            "text": "It is purely a structural element with no meaning beyond load-bearing function, focusing solely on engineering efficiency"
           },
           {
             "id": "d",
-            "text": "10 columns on short ends and 20 on long sides (10×20 arrangement)"
+            "text": "The signifier (visible pointed form) signifies Gothic or medieval origin; it symbolizes spiritual aspiration, reaching toward heaven—meanings derived from cultural convention about this form"
+          }
+        ],
+        "correct_option_id": "d",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Meanings vary across cultures; a pointed arch has different significance in Islamic versus Christian architectural tradition.",
+          "b": "The pointed arch choice reflects intentional meaning-making, not arbitrary decoration.",
+          "c": "While structurally effective, pointed arches carry rich cultural meaning.",
+          "correct": "The pointed arch's visible form (signifier) immediately communicates 'Gothic' or 'medieval.' Its upward reaching form symbolizes spiritual aspiration in European Christian tradition. These meanings are culturally constructed.",
+          "takeaway": "These meanings are culturally constructed."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "apply",
+        "application_context": "design_application",
+        "practice_context": [
+          "APP"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-THEO-001-12-005",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:53.522336+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:4419e4ab2a3932be03a1c8824726dfea234395ddba04b132a1dac7520f895962"
+      },
+      "proposed": {
+        "explanation": "Meanings vary across cultures; a pointed arch has different significance in Islamic versus Christian architectural tradition. The pointed arch choice reflects intentional meaning-making, not arbitrary decoration. While structurally effective, pointed arches carry rich cultural meaning. The pointed arch's visible form (signifier) immediately communicates 'Gothic' or 'medieval.' Its upward reaching form symbolizes spiritual aspiration in European Christian tradition. These meanings are culturally constructed. These meanings are culturally constructed."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "7b82e215-537e-4361-a0d5-d3b305fd2529",
+      "article_id": "61869b56-3658-496c-ac52-060076c5ea6c",
+      "article_dir": ".ai/content-audit-export/articles/lea-theo-001-12-core-concept--61869b56-3658-496c-ac52-060076c5ea6c",
+      "title": "lea-theo-001-12-core-concept",
+      "baseline_hash": "sha256:963b16ead57129a1f8c2e08612b53b5c5a24e90402793236945e47a0b6f1207c",
+      "baseline": {
+        "question_id": "7b82e215-537e-4361-a0d5-d3b305fd2529",
+        "article_id": "61869b56-3658-496c-ac52-060076c5ea6c",
+        "topic_id": "f83f5e6d-987c-44cc-95bb-d834d922f3e5",
+        "text": "Denotation in architectural meaning refers to which of the following?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The cultural associations and emotional interpretations that observers attach to a building, which are subjective"
+          },
+          {
+            "id": "b",
+            "text": "The historical style or architectural movement a building represents, often linked to its era"
+          },
+          {
+            "id": "c",
+            "text": "The straightforward, literal, or functional interpretation of a building's purpose and use"
+          },
+          {
+            "id": "d",
+            "text": "The symbolic meanings derived from cultural convention, which can vary widely"
           }
         ],
         "correct_option_id": "c",
@@ -1430,159 +989,607 @@
         "value_tolerance": 0,
         "question_type": "mcq",
         "rationale": {
-          "a": "The 6×12 arrangement is not documented for the Parthenon.",
-          "b": "The 6×13 arrangement is found on other Doric temples like the Temple of Hephaestus, which is smaller than the Parthenon.",
-          "d": "The 10×20 arrangement is not a documented classical Greek order.",
-          "correct": "Its plan is a rectangular naos with an outer colonnade (peristasis) of 8 columns on the short ends and 17 columns on the long sides. This 8 × 17 arrangement is standard.'",
-          "takeaway": "This 8 × 17 arrangement is standard.'."
+          "a": "This describes connotation, not denotation.",
+          "b": "While style is communicated, denotation is functional.",
+          "d": "This describes symbolic or connotative meaning.",
+          "correct": "Denotation is primary, literal meaning. A hospital building denotes medical care—that is its straightforward functional purpose. Connotation adds cultural and emotional layers of meaning.",
+          "takeaway": "Connotation adds cultural and emotional layers of meaning."
         },
         "explanation": null,
         "code_citation": null,
         "bloom_level": "remember",
         "application_context": "recall",
         "practice_context": [
-          "ID"
+          "DEF"
         ],
         "difficulty": 0.5,
         "difficulty_rating": null,
         "discrimination_rating": null,
         "is_assessment": false,
-        "model_id": "ALE-HIST-001-05-002",
+        "model_id": "ALE-THEO-001-12-003",
         "prompt_image_url": null,
-        "created_at": "2026-03-23T19:27:23.525262+00:00",
+        "created_at": "2026-03-23T19:27:53.522336+00:00",
         "updated_at": "2026-04-08T07:44:46.846261+00:00",
-        "content_hash": "sha256:923791204886e7ddaba80a7a6d1761a048be35ca13fc63c6a2aba095664cde6d"
+        "content_hash": "sha256:963b16ead57129a1f8c2e08612b53b5c5a24e90402793236945e47a0b6f1207c"
       },
       "proposed": {
-        "explanation": "The 6×12 arrangement is not documented for the Parthenon. The 6×13 arrangement is found on other Doric temples like the Temple of Hephaestus, which is smaller than the Parthenon. The 10×20 arrangement is not a documented classical Greek order. Its plan is a rectangular naos with an outer colonnade (peristasis) of 8 columns on the short ends and 17 columns on the long sides. This 8 × 17 arrangement is standard.' This 8 × 17 arrangement is standard.'."
+        "explanation": "This describes connotation, not denotation. While style is communicated, denotation is functional. This describes symbolic or connotative meaning. Denotation is primary, literal meaning. A hospital building denotes medical care—that is its straightforward functional purpose. Connotation adds cultural and emotional layers of meaning. Connotation adds cultural and emotional layers of meaning."
       },
       "classification": "strict_explanation_backfill",
       "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
     },
     {
-      "question_id": "858f5e0b-e44b-4410-90aa-d921a7e864aa",
-      "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
-      "article_dir": ".ai/content-audit-export/articles/lea-hist-001-05-core-concept--757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
-      "title": "lea-hist-001-05-core-concept",
-      "baseline_hash": "sha256:f4e0f90c8d29727701de8726a810a383acea360dd634639180e2c05d369230cc",
+      "question_id": "0d9c7f78-f928-4821-9b3b-100f57270d82",
+      "article_id": "61869b56-3658-496c-ac52-060076c5ea6c",
+      "article_dir": ".ai/content-audit-export/articles/lea-theo-001-12-core-concept--61869b56-3658-496c-ac52-060076c5ea6c",
+      "title": "lea-theo-001-12-core-concept",
+      "baseline_hash": "sha256:f391109618ca549b56a07b00ae314cb1a2a46022d58264e6b59b8576c2a6bf79",
       "baseline": {
-        "question_id": "858f5e0b-e44b-4410-90aa-d921a7e864aa",
-        "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
-        "topic_id": "a0124521-5f62-4bfe-bf92-8d5baf24d32a",
-        "text": "The Parthenon, built on the Acropolis at Athens between 447–432 BCE, was designed by which two architects?",
+        "question_id": "0d9c7f78-f928-4821-9b3b-100f57270d82",
+        "article_id": "61869b56-3658-496c-ac52-060076c5ea6c",
+        "topic_id": "f83f5e6d-987c-44cc-95bb-d834d922f3e5",
+        "text": "Semiotics in architectural contexts refers to which of the following?",
         "options": [
           {
             "id": "a",
-            "text": "Libon and Kallikrates"
+            "text": "The historical preservation and documentation of buildings for archival and cultural heritage purposes"
           },
           {
             "id": "b",
-            "text": "Iktinos and Kallikrates"
+            "text": "The technical analysis of building materials and construction methods used in structural engineering"
           },
           {
             "id": "c",
-            "text": "Phidias and Polyclitus"
+            "text": "The aesthetic decoration and ornamental design of building façades for visual enhancement purposes"
           },
           {
             "id": "d",
-            "text": "Hippodamus and Polyclitus"
+            "text": "The study of how buildings function as sign systems that communicate meaning to observers and occupants"
           }
         ],
-        "correct_option_id": "b",
+        "correct_option_id": "d",
         "correct_value": null,
         "accepted_answers": null,
         "value_tolerance": 0,
         "question_type": "mcq",
         "rationale": {
-          "a": "Libon designed the Temple of Zeus at Olympia, not the Parthenon.",
-          "c": "Phidias oversaw the sculpture program, not the architectural design; Polyclitus designed the Tholos at Epidaurus.",
-          "d": "Hippodamus designed the city of Miletus; Polyclitus designed the Tholos at Epidaurus.",
-          "correct": "The Parthenon (Temple of Athena Parthenos): Built on the Acropolis at Athens between 447–432 BCE under the direction of the general Pericles, designed by Iktinos and Kallikrates, with sculpture overseen by Phidias.'",
-          "takeaway": "The article states: 'The Parthenon (Temple of Athena Parthenos): Built on the Acropolis at Athens between 447–432 BCE under the direction of the general Pericles, designed by Iktinos and Kallikrates, with sculpture overseen by Phidias.'."
+          "a": "Preservation is a practice, not a study of meaning.",
+          "b": "Material analysis is a technical concern, not semiotics.",
+          "c": "Decoration is one element of meaning, but semiotics encompasses all forms of architectural communication.",
+          "correct": "Semiotics examines how buildings convey meaning through form, materials, proportions, and spatial arrangements. Buildings communicate about their purpose, cultural values, and historical moment to observers.",
+          "takeaway": "Buildings communicate about their purpose, cultural values, and historical moment to observers."
         },
         "explanation": null,
         "code_citation": null,
         "bloom_level": "remember",
         "application_context": "recall",
         "practice_context": [
-          "ID"
+          "DEF"
         ],
         "difficulty": 0.5,
         "difficulty_rating": null,
         "discrimination_rating": null,
         "is_assessment": false,
-        "model_id": "ALE-HIST-001-05-001",
+        "model_id": "ALE-THEO-001-12-001",
         "prompt_image_url": null,
-        "created_at": "2026-03-23T19:27:23.525262+00:00",
+        "created_at": "2026-03-23T19:27:53.522336+00:00",
         "updated_at": "2026-04-08T07:44:46.846261+00:00",
-        "content_hash": "sha256:f4e0f90c8d29727701de8726a810a383acea360dd634639180e2c05d369230cc"
+        "content_hash": "sha256:f391109618ca549b56a07b00ae314cb1a2a46022d58264e6b59b8576c2a6bf79"
       },
       "proposed": {
-        "explanation": "Libon designed the Temple of Zeus at Olympia, not the Parthenon. Phidias oversaw the sculpture program, not the architectural design; Polyclitus designed the Tholos at Epidaurus. Hippodamus designed the city of Miletus; Polyclitus designed the Tholos at Epidaurus. The Parthenon (Temple of Athena Parthenos): Built on the Acropolis at Athens between 447–432 BCE under the direction of the general Pericles, designed by Iktinos and Kallikrates, with sculpture overseen by Phidias.' The article states: 'The Parthenon (Temple of Athena Parthenos): Built on the Acropolis at Athens between 447–432 BCE under the direction of the general Pericles, designed by Iktinos and Kallikrates, with sculpture overseen by Phidias.'."
+        "explanation": "Preservation is a practice, not a study of meaning. Material analysis is a technical concern, not semiotics. Decoration is one element of meaning, but semiotics encompasses all forms of architectural communication. Semiotics examines how buildings convey meaning through form, materials, proportions, and spatial arrangements. Buildings communicate about their purpose, cultural values, and historical moment to observers. Buildings communicate about their purpose, cultural values, and historical moment to observers."
       },
       "classification": "strict_explanation_backfill",
       "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
     },
     {
-      "question_id": "e6986094-7029-4024-97c4-406cfd08c254",
-      "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
-      "article_dir": ".ai/content-audit-export/articles/lea-hist-001-05-core-concept--757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
-      "title": "lea-hist-001-05-core-concept",
-      "baseline_hash": "sha256:9ff2a501efd244f25fff65f0b583d2649fb005d3911adf943185b372cf276d0a",
+      "question_id": "084f05b0-01cf-4d53-971d-2574e2c62272",
+      "article_id": "61869b56-3658-496c-ac52-060076c5ea6c",
+      "article_dir": ".ai/content-audit-export/articles/lea-theo-001-12-core-concept--61869b56-3658-496c-ac52-060076c5ea6c",
+      "title": "lea-theo-001-12-core-concept",
+      "baseline_hash": "sha256:30b6c4b52e870f99376fd5f830b2456cf2e1c5f0d37da6cea7b1eaab809cc31c",
       "baseline": {
-        "question_id": "e6986094-7029-4024-97c4-406cfd08c254",
-        "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
-        "topic_id": "a0124521-5f62-4bfe-bf92-8d5baf24d32a",
-        "text": "A Greek column capital features two spiraling scrolls (volutes) and a base, and the entablature above includes a continuous frieze often sculpted with narrative scenes. Which order does this describe?",
+        "question_id": "084f05b0-01cf-4d53-971d-2574e2c62272",
+        "article_id": "61869b56-3658-496c-ac52-060076c5ea6c",
+        "topic_id": "f83f5e6d-987c-44cc-95bb-d834d922f3e5",
+        "text": "How does the bahay na bato architectural type narrate the Philippines' cultural history?",
         "options": [
           {
             "id": "a",
-            "text": "Doric order"
+            "text": "It narratively encodes the layering of indigenous Filipino, Spanish colonial, and Chinese influences—literally visible in stone base and timber upper floor—telling the story of colonialism, cultural adaptation, and synthesis"
           },
           {
             "id": "b",
-            "text": "Ionic order"
+            "text": "It narrates only Spanish colonial history, with no indigenous or Chinese elements, which overlooks the multicultural influences present in the architecture"
           },
           {
             "id": "c",
-            "text": "Corinthian order"
+            "text": "It has no historical or cultural meaning; it is merely a functional building type, which ignores its rich historical context"
           },
           {
             "id": "d",
-            "text": "Tuscan order"
+            "text": "It is purely indigenous Filipino architecture unchanged by external influence, which is inaccurate as it reflects a blend of various cultural influences"
           }
         ],
-        "correct_option_id": "b",
+        "correct_option_id": "a",
         "correct_value": null,
         "accepted_answers": null,
         "value_tolerance": 0,
         "question_type": "mcq",
         "rationale": {
-          "a": "The Doric order has a simple capital without volutes and a triglyph-metope entablature, not a continuous frieze.",
-          "c": "The Corinthian order features acanthus leaves and other scrollwork, not just volutes.",
-          "d": "The Tuscan order is a Roman order, not a Greek order.",
-          "correct": "The Ionic order: 'An Ionic column is 8–10 times its diameter in height, with a base (unlike Doric) and a capital featuring two spiraling scrolls (volutes). The entablature is simpler: a continuous frieze (often sculpted) runs above the columns.'",
-          "takeaway": "The entablature is simpler: a continuous frieze (often sculpted) runs above the columns.'."
+          "b": "Indigenous and Chinese elements are integral to the bahay na bato form.",
+          "c": "The architectural form is rich with cultural and historical meaning.",
+          "d": "Bahay na bato explicitly incorporates foreign influences; it is a cultural synthesis.",
+          "correct": "The bahay na bato's form itself narrates history: the elevated timber structure derives from indigenous bahay kubo; the stone base reflects Spanish colonial influence and earthquake resistance; spatial organization reflects Spanish social hierarchy; Chinese construction techniques influenced joinery. The architecture is a three-part narrative.",
+          "takeaway": "The architecture is a three-part narrative."
         },
         "explanation": null,
         "code_citation": null,
         "bloom_level": "apply",
-        "application_context": "recall",
+        "application_context": "design_application",
         "practice_context": [
-          "DESC"
+          "PH"
         ],
         "difficulty": 0.5,
         "difficulty_rating": null,
         "discrimination_rating": null,
         "is_assessment": false,
-        "model_id": "ALE-HIST-001-05-005",
+        "model_id": "ALE-THEO-001-12-009",
         "prompt_image_url": null,
-        "created_at": "2026-03-23T19:27:23.525262+00:00",
+        "created_at": "2026-03-23T19:27:53.522336+00:00",
         "updated_at": "2026-04-08T07:44:46.846261+00:00",
-        "content_hash": "sha256:9ff2a501efd244f25fff65f0b583d2649fb005d3911adf943185b372cf276d0a"
+        "content_hash": "sha256:30b6c4b52e870f99376fd5f830b2456cf2e1c5f0d37da6cea7b1eaab809cc31c"
       },
       "proposed": {
-        "explanation": "The Doric order has a simple capital without volutes and a triglyph-metope entablature, not a continuous frieze. The Corinthian order features acanthus leaves and other scrollwork, not just volutes. The Tuscan order is a Roman order, not a Greek order. The Ionic order: 'An Ionic column is 8–10 times its diameter in height, with a base (unlike Doric) and a capital featuring two spiraling scrolls (volutes). The entablature is simpler: a continuous frieze (often sculpted) runs above the columns.' The entablature is simpler: a continuous frieze (often sculpted) runs above the columns.'."
+        "explanation": "Indigenous and Chinese elements are integral to the bahay na bato form. The architectural form is rich with cultural and historical meaning. Bahay na bato explicitly incorporates foreign influences; it is a cultural synthesis. The bahay na bato's form itself narrates history: the elevated timber structure derives from indigenous bahay kubo; the stone base reflects Spanish colonial influence and earthquake resistance; spatial organization reflects Spanish social hierarchy; Chinese construction techniques influenced joinery. The architecture is a three-part narrative. The architecture is a three-part narrative."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "05f6972a-c047-4612-98d4-7d174831c357",
+      "article_id": "61869b56-3658-496c-ac52-060076c5ea6c",
+      "article_dir": ".ai/content-audit-export/articles/lea-theo-001-12-core-concept--61869b56-3658-496c-ac52-060076c5ea6c",
+      "title": "lea-theo-001-12-core-concept",
+      "baseline_hash": "sha256:1560230b1630b6b9292214e2531de8504c428f862a1e121d463b20d5ea484ec2",
+      "baseline": {
+        "question_id": "05f6972a-c047-4612-98d4-7d174831c357",
+        "article_id": "61869b56-3658-496c-ac52-060076c5ea6c",
+        "topic_id": "f83f5e6d-987c-44cc-95bb-d834d922f3e5",
+        "text": "What does it mean that architectural meaning 'operates intuitively and subliminally' rather than explicitly?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Architects should avoid intentional meaning-making to let intuition guide design, allowing for more organic outcomes"
+          },
+          {
+            "id": "b",
+            "text": "Buildings do not actually communicate meaning; observers only imagine meanings, which are subjective and vary widely"
+          },
+          {
+            "id": "c",
+            "text": "Subliminal meanings are unreliable and should be disregarded in favor of explicit functional analysis, which provides clarity"
+          },
+          {
+            "id": "d",
+            "text": "Observers feel and perceive architectural meaning without consciously articulating it; much meaning is internalized culturally and operates below conscious thought even though it profoundly affects experience"
+          }
+        ],
+        "correct_option_id": "d",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Intentional meaning-making and intuitive design can work together.",
+          "b": "The meanings are real; they operate through cultural internalization.",
+          "c": "Subliminal meaning is not unreliable; it is the mechanism through which most architectural communication occurs.",
+          "correct": "A well-designed building communicates meaning that observers feel rather than consciously analyze. We intuitively recognize a pointed arch as Gothic even without formal study. This subliminal communication is real and powerful even when not explicit.",
+          "takeaway": "This subliminal communication is real and powerful even when not explicit."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "remember",
+        "application_context": "code_interpretation",
+        "practice_context": [
+          "CON"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-THEO-001-12-011",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:53.522336+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:1560230b1630b6b9292214e2531de8504c428f862a1e121d463b20d5ea484ec2"
+      },
+      "proposed": {
+        "explanation": "Intentional meaning-making and intuitive design can work together. The meanings are real; they operate through cultural internalization. Subliminal meaning is not unreliable; it is the mechanism through which most architectural communication occurs. A well-designed building communicates meaning that observers feel rather than consciously analyze. We intuitively recognize a pointed arch as Gothic even without formal study. This subliminal communication is real and powerful even when not explicit. This subliminal communication is real and powerful even when not explicit."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "4b4842b3-7744-4ea1-bcca-f78c70952bd9",
+      "article_id": "61869b56-3658-496c-ac52-060076c5ea6c",
+      "article_dir": ".ai/content-audit-export/articles/lea-theo-001-12-core-concept--61869b56-3658-496c-ac52-060076c5ea6c",
+      "title": "lea-theo-001-12-core-concept",
+      "baseline_hash": "sha256:a34bc27cf2e69a76e23f649768463a3001093624ae00987e6bcec981619b652e",
+      "baseline": {
+        "question_id": "4b4842b3-7744-4ea1-bcca-f78c70952bd9",
+        "article_id": "61869b56-3658-496c-ac52-060076c5ea6c",
+        "topic_id": "f83f5e6d-987c-44cc-95bb-d834d922f3e5",
+        "text": "How do symbol and metaphor differ in architectural meaning-making?",
+        "options": [
+          {
+            "id": "a",
+            "text": "They are identical concepts used interchangeably in architectural theory without distinction in meaning or application"
+          },
+          {
+            "id": "b",
+            "text": "Symbols and metaphors only apply to historical architecture, not contemporary buildings designed after the postmodern period"
+          },
+          {
+            "id": "c",
+            "text": "A symbol represents something abstract through cultural convention (cross = Christianity); a metaphor suggests analogy or likeness (spiral = organic growth). Symbols are culturally determined; metaphors are conceptual comparisons"
+          },
+          {
+            "id": "d",
+            "text": "Metaphors are more important than symbols in contemporary architecture because they allow greater creative freedom in expression"
+          }
+        ],
+        "correct_option_id": "c",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "They are distinct concepts with different mechanisms of meaning.",
+          "b": "Both concepts apply across all architectural periods.",
+          "d": "Both are equally important in contemporary practice.",
+          "correct": "While related, they function differently. A symbol's meaning is conventional and culturally determined. A metaphor suggests an analogy—the form is not literally the thing represented, but suggests similarity. Both communicate meaning but through different mechanisms.",
+          "takeaway": "Both communicate meaning but through different mechanisms."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "apply",
+        "application_context": "design_application",
+        "practice_context": [
+          "CMP"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-THEO-001-12-004",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:53.522336+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:a34bc27cf2e69a76e23f649768463a3001093624ae00987e6bcec981619b652e"
+      },
+      "proposed": {
+        "explanation": "They are distinct concepts with different mechanisms of meaning. Both concepts apply across all architectural periods. Both are equally important in contemporary practice. While related, they function differently. A symbol's meaning is conventional and culturally determined. A metaphor suggests an analogy—the form is not literally the thing represented, but suggests similarity. Both communicate meaning but through different mechanisms. Both communicate meaning but through different mechanisms."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "871adf95-b904-43eb-a585-dc77c6fabefb",
+      "article_id": "61869b56-3658-496c-ac52-060076c5ea6c",
+      "article_dir": ".ai/content-audit-export/articles/lea-theo-001-12-core-concept--61869b56-3658-496c-ac52-060076c5ea6c",
+      "title": "lea-theo-001-12-core-concept",
+      "baseline_hash": "sha256:8e408f3ab1810cc94fd760d03fc2ec4609eb9361540fb2d6442f71f26246c0e3",
+      "baseline": {
+        "question_id": "871adf95-b904-43eb-a585-dc77c6fabefb",
+        "article_id": "61869b56-3658-496c-ac52-060076c5ea6c",
+        "topic_id": "f83f5e6d-987c-44cc-95bb-d834d922f3e5",
+        "text": "In semiotic analysis, what is a 'signifier' in architecture?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The visible form, the architectural element itself that is seen and perceived"
+          },
+          {
+            "id": "b",
+            "text": "The historical tradition or historical period from which a building derives, often influencing its design and style"
+          },
+          {
+            "id": "c",
+            "text": "The function or purpose of the building, which may not always be evident from its appearance"
+          },
+          {
+            "id": "d",
+            "text": "The actual building material used in construction, which can affect both aesthetics and structural integrity"
+          }
+        ],
+        "correct_option_id": "a",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "b": "This describes context or referent, not the signifier.",
+          "c": "Function is part of the signified meaning, not the signifier.",
+          "d": "Material is an element of the visible form but not the signifier itself.",
+          "correct": "A signifier is the form itself—what is visible. A pointed arch is the signifier; 'Gothic' or 'medieval' is what it means (the signified).",
+          "takeaway": "A pointed arch is the signifier; 'Gothic' or 'medieval' is what it means (the signified)."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "remember",
+        "application_context": "recall",
+        "practice_context": [
+          "DEF"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-THEO-001-12-002",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:53.522336+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:8e408f3ab1810cc94fd760d03fc2ec4609eb9361540fb2d6442f71f26246c0e3"
+      },
+      "proposed": {
+        "explanation": "This describes context or referent, not the signifier. Function is part of the signified meaning, not the signifier. Material is an element of the visible form but not the signifier itself. A signifier is the form itself—what is visible. A pointed arch is the signifier; 'Gothic' or 'medieval' is what it means (the signified). A pointed arch is the signifier; 'Gothic' or 'medieval' is what it means (the signified)."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "62d747f9-0d32-4bf2-8592-f22774722cde",
+      "article_id": "61869b56-3658-496c-ac52-060076c5ea6c",
+      "article_dir": ".ai/content-audit-export/articles/lea-theo-001-12-core-concept--61869b56-3658-496c-ac52-060076c5ea6c",
+      "title": "lea-theo-001-12-core-concept",
+      "baseline_hash": "sha256:e63b1c7a2ab32d0359f1de9b6a2aef79fe241c858dd87414ce23faf52cc0e8fc",
+      "baseline": {
+        "question_id": "62d747f9-0d32-4bf2-8592-f22774722cde",
+        "article_id": "61869b56-3658-496c-ac52-060076c5ea6c",
+        "topic_id": "f83f5e6d-987c-44cc-95bb-d834d922f3e5",
+        "text": "How does the Pantheon's interior space communicate meaning on multiple levels simultaneously?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Denotatively it is a gathering space (primary meaning); connotatively it communicates permanence, divinity, and cosmic order; the oculus is a symbol/threshold between earthly and divine; the proportions metaphorically suggest completeness"
+          },
+          {
+            "id": "b",
+            "text": "It is a simple functional space with no symbolic or metaphorical meaning, focusing solely on utility without deeper interpretation"
+          },
+          {
+            "id": "c",
+            "text": "It communicates only through decorative elements, not through spatial organization, which is considered secondary to ornamentation"
+          },
+          {
+            "id": "d",
+            "text": "Its meanings are fixed and identical across all observers and historical periods, suggesting a universal interpretation without variation"
+          }
+        ],
+        "correct_option_id": "a",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "b": "The Pantheon is rich with meaning communicated through form and space.",
+          "c": "Spatial organization is the primary meaning-maker; decoration supports it.",
+          "d": "While cultural context shifts meanings, the structure's coherence enables rich interpretation across periods.",
+          "correct": "The Pantheon exemplifies multilevel meaning: functional gathering place (denotation); spiritual and monumental power (connotation); dome = authority/cosmos; oculus = divine opening (symbol); circular perfection = cosmos (metaphor). These meanings layer and reinforce each other.",
+          "takeaway": "These meanings layer and reinforce each other."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "apply",
+        "application_context": "design_application",
+        "practice_context": [
+          "APP"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-THEO-001-12-008",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:53.522336+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:e63b1c7a2ab32d0359f1de9b6a2aef79fe241c858dd87414ce23faf52cc0e8fc"
+      },
+      "proposed": {
+        "explanation": "The Pantheon is rich with meaning communicated through form and space. Spatial organization is the primary meaning-maker; decoration supports it. While cultural context shifts meanings, the structure's coherence enables rich interpretation across periods. The Pantheon exemplifies multilevel meaning: functional gathering place (denotation); spiritual and monumental power (connotation); dome = authority/cosmos; oculus = divine opening (symbol); circular perfection = cosmos (metaphor). These meanings layer and reinforce each other. These meanings layer and reinforce each other."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "9161b2ad-fa67-4723-89b5-7e5f4b64eab2",
+      "article_id": "61869b56-3658-496c-ac52-060076c5ea6c",
+      "article_dir": ".ai/content-audit-export/articles/lea-theo-001-12-core-concept--61869b56-3658-496c-ac52-060076c5ea6c",
+      "title": "lea-theo-001-12-core-concept",
+      "baseline_hash": "sha256:f1b14c3a6b55f750979644baad2b5ec60f1f8661bc418467e8d60c1435b7dca9",
+      "baseline": {
+        "question_id": "9161b2ad-fa67-4723-89b5-7e5f4b64eab2",
+        "article_id": "61869b56-3658-496c-ac52-060076c5ea6c",
+        "topic_id": "f83f5e6d-987c-44cc-95bb-d834d922f3e5",
+        "text": "The Sydney Opera House's shell-like forms metaphorically suggest which concepts?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Abstract geometric forms with no intended metaphorical meaning, focusing purely on aesthetics"
+          },
+          {
+            "id": "b",
+            "text": "Literal shells, since the architect directly copied shell forms from nature, which is a simplistic interpretation"
+          },
+          {
+            "id": "c",
+            "text": "Only functional requirements for acoustic performance and stage layouts, ignoring the broader symbolic meanings"
+          },
+          {
+            "id": "d",
+            "text": "Sailboats and maritime movement, connecting the building to Australia's ocean identity and Sydney Harbor setting—poetic metaphors for movement, lightness, and cultural identity"
+          }
+        ],
+        "correct_option_id": "d",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "The forms are intentionally metaphorical, communicating through analogy to sails and seashells.",
+          "b": "Metaphors are analogies, not literal representations; the forms suggest rather than replicate.",
+          "c": "While acoustics matter, the shell form's metaphorical power is intentional.",
+          "correct": "Utzon designed shell-like forms that metaphorically suggest movement (sails) and maritime identity. The metaphor is perceived intuitively even if occupants don't consciously articulate it. It connects the building to its location and Australia's cultural identity.",
+          "takeaway": "It connects the building to its location and Australia's cultural identity."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "apply",
+        "application_context": "design_application",
+        "practice_context": [
+          "APP"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-THEO-001-12-006",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:53.522336+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:f1b14c3a6b55f750979644baad2b5ec60f1f8661bc418467e8d60c1435b7dca9"
+      },
+      "proposed": {
+        "explanation": "The forms are intentionally metaphorical, communicating through analogy to sails and seashells. Metaphors are analogies, not literal representations; the forms suggest rather than replicate. While acoustics matter, the shell form's metaphorical power is intentional. Utzon designed shell-like forms that metaphorically suggest movement (sails) and maritime identity. The metaphor is perceived intuitively even if occupants don't consciously articulate it. It connects the building to its location and Australia's cultural identity. It connects the building to its location and Australia's cultural identity."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "1977c796-aeb9-4a0d-a038-8d6f42ce4ea9",
+      "article_id": "61869b56-3658-496c-ac52-060076c5ea6c",
+      "article_dir": ".ai/content-audit-export/articles/lea-theo-001-12-core-concept--61869b56-3658-496c-ac52-060076c5ea6c",
+      "title": "lea-theo-001-12-core-concept",
+      "baseline_hash": "sha256:133eb750f7f5ef7a51e4e21b8f806c2afad8235cf0531db8d09e422aa82aa694",
+      "baseline": {
+        "question_id": "1977c796-aeb9-4a0d-a038-8d6f42ce4ea9",
+        "article_id": "61869b56-3658-496c-ac52-060076c5ea6c",
+        "topic_id": "f83f5e6d-987c-44cc-95bb-d834d922f3e5",
+        "text": "How do architectural meanings differ across cultural contexts?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Contemporary architecture has transcended cultural differences in meaning-making, suggesting a universal approach to design."
+          },
+          {
+            "id": "b",
+            "text": "Cultural differences are irrelevant to architectural meaning; all buildings communicate identical meanings, regardless of their cultural origin or context."
+          },
+          {
+            "id": "c",
+            "text": "Architectural symbols and meanings are universal across all cultures and historical periods, providing a consistent language of design."
+          },
+          {
+            "id": "d",
+            "text": "Meanings are culturally constructed; a green-tiled dome symbolizes Islamic paradise in Muslim cultures but carries no such meaning in secular Western contexts; transparency means openness in one culture but lacks privacy in another"
+          }
+        ],
+        "correct_option_id": "d",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Contemporary architecture remains culturally embedded; globalization does not erase cultural differences.",
+          "b": "Context profoundly affects what buildings mean to their viewers.",
+          "c": "Meanings vary significantly across cultures; universal interpretation misses these differences.",
+          "correct": "Architectural meaning is culturally situated and historically contingent. The same form carries different meanings in different contexts. A dome has different symbolic power in Islamic versus Western secular architecture. Understanding cultural context is essential to reading architectural meaning.",
+          "takeaway": "Understanding cultural context is essential to reading architectural meaning."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "apply",
+        "application_context": "design_application",
+        "practice_context": [
+          "CMP"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-THEO-001-12-010",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:53.522336+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:133eb750f7f5ef7a51e4e21b8f806c2afad8235cf0531db8d09e422aa82aa694"
+      },
+      "proposed": {
+        "explanation": "Contemporary architecture remains culturally embedded; globalization does not erase cultural differences. Context profoundly affects what buildings mean to their viewers. Meanings vary significantly across cultures; universal interpretation misses these differences. Architectural meaning is culturally situated and historically contingent. The same form carries different meanings in different contexts. A dome has different symbolic power in Islamic versus Western secular architecture. Understanding cultural context is essential to reading architectural meaning. Understanding cultural context is essential to reading architectural meaning."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "70cc65d3-02aa-4d1d-aeac-9df84aeea919",
+      "article_id": "61869b56-3658-496c-ac52-060076c5ea6c",
+      "article_dir": ".ai/content-audit-export/articles/lea-theo-001-12-core-concept--61869b56-3658-496c-ac52-060076c5ea6c",
+      "title": "lea-theo-001-12-core-concept",
+      "baseline_hash": "sha256:9279ba09c1b24912b69364bee55703e184937109bb90d1059cf021687907b172",
+      "baseline": {
+        "question_id": "70cc65d3-02aa-4d1d-aeac-9df84aeea919",
+        "article_id": "61869b56-3658-496c-ac52-060076c5ea6c",
+        "topic_id": "f83f5e6d-987c-44cc-95bb-d834d922f3e5",
+        "text": "A stone-built government building with symmetrical form, grand entry, and classical proportions communicates meaning at which levels?",
+        "options": [
+          {
+            "id": "a",
+            "text": "No meaningful communication beyond appearance, as the architectural style does not inherently convey deeper significance"
+          },
+          {
+            "id": "b",
+            "text": "Only functional meaning—that it is a government building, without implying any additional symbolic or cultural values"
+          },
+          {
+            "id": "c",
+            "text": "Only aesthetic meaning through formal beauty, focusing solely on visual appeal without deeper interpretive layers"
+          },
+          {
+            "id": "d",
+            "text": "Multiple levels: denotation (public building), connotation (permanence, authority, civic importance), symbolism (stone = stability/timelessness), metaphor (symmetry = order/justice), narrative (classical proportions invoke democratic ideals and Western tradition)"
+          }
+        ],
+        "correct_option_id": "d",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "The form communicates rich meanings even if not explicitly articulated.",
+          "b": "While functional, the building communicates much more through its form.",
+          "c": "Aesthetic meaning is one layer among many.",
+          "correct": "Architecture communicates through layered meanings. This building's form, materials, proportions, and style communicate denotatively (what it is), connotatively (what it means culturally), symbolically (stone = permanence), metaphorically (symmetry = order), and narratively (classical tradition = democratic ideals).",
+          "takeaway": "This building's form, materials, proportions, and style communicate denotatively (what it is), connotatively (what it means culturally), symbolically (stone = permanence), metaphorically (symmetry = order), and narratively (classical tradition = democratic ideals)."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "apply",
+        "application_context": "design_application",
+        "practice_context": [
+          "APP"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-THEO-001-12-012",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:53.522336+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:9279ba09c1b24912b69364bee55703e184937109bb90d1059cf021687907b172"
+      },
+      "proposed": {
+        "explanation": "The form communicates rich meanings even if not explicitly articulated. While functional, the building communicates much more through its form. Aesthetic meaning is one layer among many. Architecture communicates through layered meanings. This building's form, materials, proportions, and style communicate denotatively (what it is), connotatively (what it means culturally), symbolically (stone = permanence), metaphorically (symmetry = order), and narratively (classical tradition = democratic ideals). This building's form, materials, proportions, and style communicate denotatively (what it is), connotatively (what it means culturally), symbolically (stone = permanence), metaphorically (symmetry = order), and narratively (classical tradition = democratic ideals)."
       },
       "classification": "strict_explanation_backfill",
       "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."

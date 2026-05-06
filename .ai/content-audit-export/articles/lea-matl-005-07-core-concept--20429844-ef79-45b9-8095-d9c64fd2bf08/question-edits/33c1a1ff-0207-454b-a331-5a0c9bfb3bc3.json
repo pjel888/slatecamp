@@ -1,0 +1,10 @@
+{
+  "question_id": "33c1a1ff-0207-454b-a331-5a0c9bfb3bc3",
+  "baseline_hash": "sha256:f9e5ce56e6d45a361dc216f78ea9b2145e73dfaa1ffc8090c01f0b5a73e19e99",
+  "reason": "Strict explanation backfill from existing specific rationale; answer key and options unchanged.",
+  "approved_by": "hermes-question-remediation-autopilot",
+  "approved_at": "2026-05-06T12:44:56.276Z",
+  "proposed": {
+    "explanation": "This incorrectly assumes the 25% replacement equals 25% carbon reduction by ignoring fly ash's embodied carbon contribution. This assumes fly ash has zero embodied carbon, which is incorrect. All materials have some embodied carbon from processing. Fly ash is a waste product from coal burning, but it has measurable embodied carbon from collection, processing, and transport. Its use reduces net carbon compared to 100% Portland cement. Original binder carbon: 350 kg/m³ × 0.82 = 287 kg CO2e/m³. After 25% replacement: 262.5 kg cement (0.82) + 87.5 kg fly ash (0.12) = 221.1 kg CO2e/m³. Reduction: (287-221.1)/287 ≈ 23%. This accounts for fly ash's own embodied carbon (not zero). Embodied carbon reduction from pozzolanic replacement is never equal to the percentage replacement, because the substitute material (fly ash, slag) has non-zero embodied carbon. Always account for both material carbon values when calculating reduction."
+  }
+}

@@ -1,0 +1,1587 @@
+{
+  "generated_at": "2026-05-06T12:44:56.280Z",
+  "improvements": [
+    {
+      "question_id": "f0bc1160-ad55-470d-a2a9-c0938a5ed933",
+      "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-001-05-core-concept--757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+      "title": "lea-hist-001-05-core-concept",
+      "baseline_hash": "sha256:71e2d24f23a7279db773219022b9bf6d17f832726def81a609ece8356bdb4107",
+      "baseline": {
+        "question_id": "f0bc1160-ad55-470d-a2a9-c0938a5ed933",
+        "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+        "topic_id": "a0124521-5f62-4bfe-bf92-8d5baf24d32a",
+        "text": "The Doric order is characterized by which proportional relationship between column height and diameter?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Roughly 8–10 times its diameter"
+          },
+          {
+            "id": "b",
+            "text": "Roughly 10+ times its diameter"
+          },
+          {
+            "id": "c",
+            "text": "Roughly 4–6 times its diameter"
+          },
+          {
+            "id": "d",
+            "text": "Roughly 2–3 times its diameter"
+          }
+        ],
+        "correct_option_id": "c",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "This is the proportion of the Ionic order (8–10 times).",
+          "b": "This is the proportion of the Corinthian order (10+ times).",
+          "d": "This is not a documented classical Greek column proportion.",
+          "correct": "Doric Order: The earliest and most austere. A Doric column is squat and sturdy, roughly 4–6 times its diameter in height.'",
+          "takeaway": "A Doric column is squat and sturdy, roughly 4–6 times its diameter in height.'."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "remember",
+        "application_context": "code_interpretation",
+        "practice_context": [
+          "ST"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-HIST-001-05-003",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:23.525262+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:71e2d24f23a7279db773219022b9bf6d17f832726def81a609ece8356bdb4107"
+      },
+      "proposed": {
+        "explanation": "This is the proportion of the Ionic order (8–10 times). This is the proportion of the Corinthian order (10+ times). This is not a documented classical Greek column proportion. Doric Order: The earliest and most austere. A Doric column is squat and sturdy, roughly 4–6 times its diameter in height.' A Doric column is squat and sturdy, roughly 4–6 times its diameter in height.'."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "d14b44f6-6ea2-4331-9073-64f27da54e13",
+      "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-001-05-core-concept--757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+      "title": "lea-hist-001-05-core-concept",
+      "baseline_hash": "sha256:b7a884029af31d824d64d61972549c12d696d5897d17dd19c8627b367a268223",
+      "baseline": {
+        "question_id": "d14b44f6-6ea2-4331-9073-64f27da54e13",
+        "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+        "topic_id": "a0124521-5f62-4bfe-bf92-8d5baf24d32a",
+        "text": "A circular Greek temple structure with an internal colonnade and a circular plan rather than rectangular is called:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Stoa"
+          },
+          {
+            "id": "b",
+            "text": "Tholos"
+          },
+          {
+            "id": "c",
+            "text": "Cella"
+          },
+          {
+            "id": "d",
+            "text": "Peristyle"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "A stoa is a portico or covered walkway with columns, not a circular temple.",
+          "c": "Cella (or naos) is the inner chamber of a temple, not a circular building type.",
+          "d": "Peristyle refers to a colonnade surrounding a building, not a specific circular building type.",
+          "correct": "The Treasury of Atreus at Mycenae (c. 1350 BCE, pre-Classical but influential) featured a corbelled dome—a \"tholos\" or circular structure that predates Greek post-and-lintel temples. Later Greek architects revived the tholos form for certain temples and treasuries, such as the Tholos of Polyclitus at Epidaurus (c. 360 BCE).'",
+          "takeaway": "Later Greek architects revived the tholos form for certain temples and treasuries, such as the Tholos of Polyclitus at Epidaurus (c. 360 BCE).'."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "remember",
+        "application_context": "recall",
+        "practice_context": [
+          "DESC"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-HIST-001-05-008",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:23.734061+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:b7a884029af31d824d64d61972549c12d696d5897d17dd19c8627b367a268223"
+      },
+      "proposed": {
+        "explanation": "A stoa is a portico or covered walkway with columns, not a circular temple. Cella (or naos) is the inner chamber of a temple, not a circular building type. Peristyle refers to a colonnade surrounding a building, not a specific circular building type. The Treasury of Atreus at Mycenae (c. 1350 BCE, pre-Classical but influential) featured a corbelled dome—a \"tholos\" or circular structure that predates Greek post-and-lintel temples. Later Greek architects revived the tholos form for certain temples and treasuries, such as the Tholos of Polyclitus at Epidaurus (c. 360 BCE).' Later Greek architects revived the tholos form for certain temples and treasuries, such as the Tholos of Polyclitus at Epidaurus (c. 360 BCE).'."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "2126fc90-7db6-4332-9681-a563388564e5",
+      "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-001-05-core-concept--757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+      "title": "lea-hist-001-05-core-concept",
+      "baseline_hash": "sha256:73a32586344ab7199c9de4ec8263bca235f32d3bb4416f629e46a8db4cb9d2bb",
+      "baseline": {
+        "question_id": "2126fc90-7db6-4332-9681-a563388564e5",
+        "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+        "topic_id": "a0124521-5f62-4bfe-bf92-8d5baf24d32a",
+        "text": "Why did Greek architects employ entasis (the subtle inward curve of columns) in structures like the Parthenon?",
+        "options": [
+          {
+            "id": "a",
+            "text": "To reduce the weight of the column and allow for taller structures, which was a common goal in ancient Greek architecture"
+          },
+          {
+            "id": "b",
+            "text": "As a cost-saving measure to use less stone material, which was a significant consideration in large-scale constructions"
+          },
+          {
+            "id": "c",
+            "text": "To counteract the optical distortion that makes straight lines appear to sag, creating the illusion of straightness and proper form"
+          },
+          {
+            "id": "d",
+            "text": "To provide better wind resistance and structural stability against earthquakes, which were frequent in the region"
+          }
+        ],
+        "correct_option_id": "c",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Entasis adds material, not reduces it; it was not a weight-saving measure.",
+          "b": "The opposite is true; entasis requires more precise stone cutting and thus more labor and expense.",
+          "d": "While the curvature might provide some structural benefit, the documented purpose is visual correction.",
+          "correct": "Entasis (the slight curve) was achieved by subtle reductions in diameter between drums' and clarifies a common mistake: 'Treating entasis as a defect. Entasis (the curve) is not accidental but calculated. It's a visual correction for the illusion of sagging that straight lines create. Treat it as evidence of sophistication, not weakness.'",
+          "takeaway": "Treat it as evidence of sophistication, not weakness.'."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "analyze",
+        "application_context": "code_interpretation",
+        "practice_context": [
+          "CON"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-HIST-001-05-007",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:23.734061+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:73a32586344ab7199c9de4ec8263bca235f32d3bb4416f629e46a8db4cb9d2bb"
+      },
+      "proposed": {
+        "explanation": "Entasis adds material, not reduces it; it was not a weight-saving measure. The opposite is true; entasis requires more precise stone cutting and thus more labor and expense. While the curvature might provide some structural benefit, the documented purpose is visual correction. Entasis (the slight curve) was achieved by subtle reductions in diameter between drums' and clarifies a common mistake: 'Treating entasis as a defect. Entasis (the curve) is not accidental but calculated. It's a visual correction for the illusion of sagging that straight lines create. Treat it as evidence of sophistication, not weakness.' Treat it as evidence of sophistication, not weakness.'."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "b210a8ca-118d-4aa5-827c-b7ad6017bb55",
+      "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-001-05-core-concept--757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+      "title": "lea-hist-001-05-core-concept",
+      "baseline_hash": "sha256:4b727c0f4976e64bc884095d0128d69ef484057fbe2594220ad942c127e11f86",
+      "baseline": {
+        "question_id": "b210a8ca-118d-4aa5-827c-b7ad6017bb55",
+        "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+        "topic_id": "a0124521-5f62-4bfe-bf92-8d5baf24d32a",
+        "text": "Why did Greek architects and sculptors invest such detailed effort in the Parthenon's interior sculptural program, even though most viewers would not have access to the interior to see it?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The interior decoration served no purpose and was merely a waste of resources, reflecting a lack of practical consideration in the design process"
+          },
+          {
+            "id": "b",
+            "text": "The Parthenon served as a treasury and a sanctuary, making the interior as important as the exterior; the interior decoration served religious and administrative functions"
+          },
+          {
+            "id": "c",
+            "text": "The interior was purely decorative, intended only for the priesthood's personal appreciation, emphasizing exclusivity and spiritual hierarchy"
+          },
+          {
+            "id": "d",
+            "text": "The sculptural program was added after the building's completion and served no original purpose, indicating a later adaptation to changing cultural or religious needs"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "The interior decoration was integral to the building's function, not wasteful.",
+          "c": "While priests accessed the interior, the building's function was not personal appreciation but religious and administrative.",
+          "d": "The sculptural program was part of the original design (447–432 BCE), not a later addition.",
+          "correct": "The Parthenon housed a chryselephantine (gold and ivory) statue of Athena, 40+ feet tall, now lost. The sculptural program included a continuous frieze around the naos depicting the Panathenaic procession, and pediment sculptures. The Parthenon's interior was as important as its exterior; it was a treasury and a sanctuary, not merely a visual monument.'",
+          "takeaway": "The Parthenon's interior was as important as its exterior; it was a treasury and a sanctuary, not merely a visual monument.'."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "analyze",
+        "application_context": "code_interpretation",
+        "practice_context": [
+          "CON"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-HIST-001-05-012",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:23.734061+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:4b727c0f4976e64bc884095d0128d69ef484057fbe2594220ad942c127e11f86"
+      },
+      "proposed": {
+        "explanation": "The interior decoration was integral to the building's function, not wasteful. While priests accessed the interior, the building's function was not personal appreciation but religious and administrative. The sculptural program was part of the original design (447–432 BCE), not a later addition. The Parthenon housed a chryselephantine (gold and ivory) statue of Athena, 40+ feet tall, now lost. The sculptural program included a continuous frieze around the naos depicting the Panathenaic procession, and pediment sculptures. The Parthenon's interior was as important as its exterior; it was a treasury and a sanctuary, not merely a visual monument.' The Parthenon's interior was as important as its exterior; it was a treasury and a sanctuary, not merely a visual monument.'."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "5ef0e30d-6c30-420f-b6b6-7eae74644e93",
+      "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-001-05-core-concept--757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+      "title": "lea-hist-001-05-core-concept",
+      "baseline_hash": "sha256:a9a9f89287af2a0aab82835bb74eec71090842bcc6f6e67f43603d5e9752074c",
+      "baseline": {
+        "question_id": "5ef0e30d-6c30-420f-b6b6-7eae74644e93",
+        "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+        "topic_id": "a0124521-5f62-4bfe-bf92-8d5baf24d32a",
+        "text": "Sculpted femlea figures serving as columns or vertical supports in Greek architecture are called:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Kouroi, which are typically male statues used in different contexts"
+          },
+          {
+            "id": "b",
+            "text": "Atlantes, which are male figures used as supports, differing from female caryatids"
+          },
+          {
+            "id": "c",
+            "text": "Caryatids"
+          },
+          {
+            "id": "d",
+            "text": "Herms, which are square pillars with a head on top, not used as columns"
+          }
+        ],
+        "correct_option_id": "c",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Kouroi are nude male sculptures in archaic Greek art, not figures serving as columns.",
+          "b": "Atlantes are male figures serving as supports (the male equivalent of caryatids); caryatids are female.",
+          "d": "Herms are boundary markers or posts topped with a bust of Hermes, not columns.",
+          "correct": "The article defines: 'Caryatid (or Caryatids): A sculpted female figure serving as a column or support; seen in the Porch of the Maidens at the Erechtheion.'",
+          "takeaway": "The article defines: 'Caryatid (or Caryatids): A sculpted female figure serving as a column or support; seen in the Porch of the Maidens at the Erechtheion.'."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "remember",
+        "application_context": "recall",
+        "practice_context": [
+          "DESC"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-HIST-001-05-010",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:23.734061+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:a9a9f89287af2a0aab82835bb74eec71090842bcc6f6e67f43603d5e9752074c"
+      },
+      "proposed": {
+        "explanation": "Kouroi are nude male sculptures in archaic Greek art, not figures serving as columns. Atlantes are male figures serving as supports (the male equivalent of caryatids); caryatids are female. Herms are boundary markers or posts topped with a bust of Hermes, not columns. The article defines: 'Caryatid (or Caryatids): A sculpted female figure serving as a column or support; seen in the Porch of the Maidens at the Erechtheion.' The article defines: 'Caryatid (or Caryatids): A sculpted female figure serving as a column or support; seen in the Porch of the Maidens at the Erechtheion.'."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "ed16b78d-4569-4987-a3ff-674955037a2a",
+      "article_id": "bedac2b3-5478-4fe8-be94-d88f8e4ada3f",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-006-01-core-concept--bedac2b3-5478-4fe8-be94-d88f8e4ada3f",
+      "title": "lea-matl-006-01-core-concept",
+      "baseline_hash": "sha256:1a786c3e1637ef7b3a649dd9c9c6abb4891054cf2f349fd9ab813bb6396554ec",
+      "baseline": {
+        "question_id": "ed16b78d-4569-4987-a3ff-674955037a2a",
+        "article_id": "bedac2b3-5478-4fe8-be94-d88f8e4ada3f",
+        "topic_id": "1ce0d3b9-7f03-4d5c-bfd3-d3652cb68828",
+        "text": "What is the metric equivleant coating weight for G90 galvanized steel per ASTM A653?",
+        "options": [
+          {
+            "id": "a",
+            "text": "180 g/m²"
+          },
+          {
+            "id": "b",
+            "text": "225 g/m²"
+          },
+          {
+            "id": "c",
+            "text": "275 g/m²"
+          },
+          {
+            "id": "d",
+            "text": "305 g/m²"
+          }
+        ],
+        "correct_option_id": "c",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "180 g/m² is below standard and does not meet G90 specification.",
+          "b": "225 g/m² approximates G74 coating, insufficient for tropical corrosion resistance.",
+          "d": "305 g/m² exceeds G90; may refer to conversion factor error (1 oz/ft² = 305 g/m²).",
+          "correct": "G90 (0.90 oz/ft²) converts to Z275 (275 g/m²); this coating is mandatory for tropical maritime salt-air exposure.",
+          "takeaway": "G90 = Z275 = 275 g/m² is the tropical-zone standard; memorize the metric equivalent."
+        },
+        "explanation": null,
+        "code_citation": "ASTM A653/A653M, Galvanized Steel Coating Specification Guide",
+        "bloom_level": "remember",
+        "application_context": "recall",
+        "practice_context": [],
+        "difficulty": 0.3,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-MATL-006-01-002",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:27.434371+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:1a786c3e1637ef7b3a649dd9c9c6abb4891054cf2f349fd9ab813bb6396554ec"
+      },
+      "proposed": {
+        "explanation": "180 g/m² is below standard and does not meet G90 specification. 225 g/m² approximates G74 coating, insufficient for tropical corrosion resistance. 305 g/m² exceeds G90; may refer to conversion factor error (1 oz/ft² = 305 g/m²). G90 (0.90 oz/ft²) converts to Z275 (275 g/m²); this coating is mandatory for tropical maritime salt-air exposure. G90 = Z275 = 275 g/m² is the tropical-zone standard; memorize the metric equivalent."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "12f6e4bd-8a17-4249-980d-c088256fe05f",
+      "article_id": "20429844-ef79-45b9-8095-d9c64fd2bf08",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-005-07-core-concept--20429844-ef79-45b9-8095-d9c64fd2bf08",
+      "title": "lea-matl-005-07-core-concept",
+      "baseline_hash": "sha256:831a28a05ac36ae0274e06b0776904d8481b25178302b44b3fbe67aa29e99f25",
+      "baseline": {
+        "question_id": "12f6e4bd-8a17-4249-980d-c088256fe05f",
+        "article_id": "20429844-ef79-45b9-8095-d9c64fd2bf08",
+        "topic_id": "b73a0898-ccd5-4c56-aa1b-0e7b2d460c79",
+        "text": "Recycled concrete aggregates (RCA) are an appropriate choice for which applications in a construction project?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Non-structural fill and base courses where ASTM C33 gradation requirements are met; not for primary structural concrete without additional testing"
+          },
+          {
+            "id": "b",
+            "text": "All concrete applications including structural members, provided the RCA meets the same strength grade as virgin aggregate, ensuring no compromise in structural integrity"
+          },
+          {
+            "id": "c",
+            "text": "Only in decorative non-load-bearing applications; unsuitable for any structural or fill use due to higher absorption, which may affect durability"
+          },
+          {
+            "id": "d",
+            "text": "Any application where cost reduction is a priority, regardless of durability or strength verification, potentially leading to compromised structural performance"
+          }
+        ],
+        "correct_option_id": "a",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "b": "While RCA can meet ASTM C33 gradation, assuming it meets structural concrete requirements without testing is incorrect. Strength and durability must be verified.",
+          "c": "RCA's higher absorption makes it unsuitable for many fill applications if water ingress is a concern. Its use is primarily limited to controlled fill and base courses.",
+          "d": "Cost reduction alone does not justify RCA specification. Applications must match durability, strength, and absorption characteristics to intended use.",
+          "correct": "RCA is acceptable for non-structural uses (fill, base course) when meeting ASTM C33 gradation. RCA exhibits higher absorption (3-8% vs 0.5-1% for virgin) and lower strength, limiting use in structural concrete without testing and strength verification.",
+          "takeaway": "Recycled concrete aggregates are limited to non-structural applications where absorption and strength losses are acceptable. Candidates must recognize RCA limitations and avoid over-specifying reuse in structural concrete without verification testing."
+        },
+        "explanation": null,
+        "code_citation": "ASTM C33 Standard Specification for Concrete Aggregates; ASTM C618",
+        "bloom_level": "understand",
+        "application_context": "recall",
+        "practice_context": [],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-MATL-005-07-005",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:28.473222+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:831a28a05ac36ae0274e06b0776904d8481b25178302b44b3fbe67aa29e99f25"
+      },
+      "proposed": {
+        "explanation": "While RCA can meet ASTM C33 gradation, assuming it meets structural concrete requirements without testing is incorrect. Strength and durability must be verified. RCA's higher absorption makes it unsuitable for many fill applications if water ingress is a concern. Its use is primarily limited to controlled fill and base courses. Cost reduction alone does not justify RCA specification. Applications must match durability, strength, and absorption characteristics to intended use. RCA is acceptable for non-structural uses (fill, base course) when meeting ASTM C33 gradation. RCA exhibits higher absorption (3-8% vs 0.5-1% for virgin) and lower strength, limiting use in structural concrete without testing and strength verification. Recycled concrete aggregates are limited to non-structural applications where absorption and strength losses are acceptable. Candidates must recognize RCA limitations and avoid over-specifying reuse in structural concrete without verification testing."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "dfd24359-6cc3-4b09-8ba2-2a675d236c5c",
+      "article_id": "20429844-ef79-45b9-8095-d9c64fd2bf08",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-005-07-core-concept--20429844-ef79-45b9-8095-d9c64fd2bf08",
+      "title": "lea-matl-005-07-core-concept",
+      "baseline_hash": "sha256:39dbdf0e0181c62a8ae6a0dd49d3be47cde761526c95df9dcc28879d661f340d",
+      "baseline": {
+        "question_id": "dfd24359-6cc3-4b09-8ba2-2a675d236c5c",
+        "article_id": "20429844-ef79-45b9-8095-d9c64fd2bf08",
+        "topic_id": "b73a0898-ccd5-4c56-aa1b-0e7b2d460c79",
+        "text": "A project achieves a 25% reduction in structural embodied carbon by using fly ash concrete and recycled steel reinforcement. Under BERDE green building rating system, what is the approximate impact on the project's sustainability points allocation?",
+        "options": [
+          {
+            "id": "a",
+            "text": "8-9% of total project points are allocated to sustainable materials credits; the 25% reduction may qualify for additional embodied carbon reduction bonuses"
+          },
+          {
+            "id": "b",
+            "text": "25% of total project points are awarded directly for any embodied carbon reduction claimed, which significantly boosts the project's overall rating"
+          },
+          {
+            "id": "c",
+            "text": "Embodied carbon is not evaluated under BERDE; only end-of-life waste management credits are available, limiting the impact of such reductions"
+          },
+          {
+            "id": "d",
+            "text": "The project automatically achieves BERDE 5-star certification with any measurable embodied carbon reduction, regardless of other criteria"
+          }
+        ],
+        "correct_option_id": "a",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "b": "While 8-9% is the baseline allocation, a 25% reduction does not automatically equal 25% of all project points. Embodied carbon is one component within the materials credit.",
+          "c": "BERDE does evaluate embodied carbon and waste management as integrated factors within the materials and emissions categories, not as isolated credits.",
+          "d": "A 25% embodied carbon reduction is significant but does not guarantee BERDE 5-star certification, which requires overall scoring across all categories (energy, water, waste, indoor environment, innovation).",
+          "correct": "BERDE version 5 allocates 8-9% of total points to sustainable materials credits. A 25% embodied carbon reduction may qualify for additional bonuses within this credit category, though automatic certification is not guaranteed.",
+          "takeaway": "BERDE allocates 8-9% of points to sustainable materials. Embodied carbon reduction is recognized, but candidates must understand that it is one credit component within the broader green building evaluation framework."
+        },
+        "explanation": null,
+        "code_citation": "BERDE Green Building Rating System - Philippine Green Building Council; BERDE Version 5.0 User Guide",
+        "bloom_level": "apply",
+        "application_context": "code_interpretation",
+        "practice_context": [],
+        "difficulty": 0.7,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-MATL-005-07-007",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:28.473222+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:39dbdf0e0181c62a8ae6a0dd49d3be47cde761526c95df9dcc28879d661f340d"
+      },
+      "proposed": {
+        "explanation": "While 8-9% is the baseline allocation, a 25% reduction does not automatically equal 25% of all project points. Embodied carbon is one component within the materials credit. BERDE does evaluate embodied carbon and waste management as integrated factors within the materials and emissions categories, not as isolated credits. A 25% embodied carbon reduction is significant but does not guarantee BERDE 5-star certification, which requires overall scoring across all categories (energy, water, waste, indoor environment, innovation). BERDE version 5 allocates 8-9% of total points to sustainable materials credits. A 25% embodied carbon reduction may qualify for additional bonuses within this credit category, though automatic certification is not guaranteed. BERDE allocates 8-9% of points to sustainable materials. Embodied carbon reduction is recognized, but candidates must understand that it is one credit component within the broader green building evaluation framework."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "dafd69c9-8cd4-4dcf-8caf-0392b9c32f52",
+      "article_id": "20429844-ef79-45b9-8095-d9c64fd2bf08",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-005-07-core-concept--20429844-ef79-45b9-8095-d9c64fd2bf08",
+      "title": "lea-matl-005-07-core-concept",
+      "baseline_hash": "sha256:1e6a4af95427ad82f0fe514ae79739f910ce321417ef7acc63a5768e3ebb607e",
+      "baseline": {
+        "question_id": "dafd69c9-8cd4-4dcf-8caf-0392b9c32f52",
+        "article_id": "20429844-ef79-45b9-8095-d9c64fd2bf08",
+        "topic_id": "b73a0898-ccd5-4c56-aa1b-0e7b2d460c79",
+        "text": "A project team is selecting between virgin aluminum extrusions (8.24 kg CO2e/kg) and recycled aluminum extrusions (2.0 kg CO2e/kg) for building cladding. What is the approximate embodied carbon reduction by choosing recycled aluminum, and is aluminum suitable for structural reinforcement in concrete per ASTM standards?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Approximately 76% reduction in embodied carbon; aluminum is not suitable for structural reinforcement in concrete and is used only for non-structural cladding and window framing"
+          },
+          {
+            "id": "b",
+            "text": "Approximately 24% reduction in embodied carbon; aluminum can substitute for steel reinforcement in concrete with proper ASTM A496 certification, which is rarely achieved"
+          },
+          {
+            "id": "c",
+            "text": "Approximately 50% reduction; aluminum is preferred for structural reinforcement due to lower density and cost, although it requires special treatment"
+          },
+          {
+            "id": "d",
+            "text": "Recycled and virgin aluminum have equal embodied carbon; the choice should be based solely on cost and availability, ignoring environmental impact"
+          }
+        ],
+        "correct_option_id": "a",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "b": "24% is far lower than the actual 76% reduction. Confusing recycled and virgin embodied carbon values is a critical error.",
+          "c": "While aluminum is lighter and lower-cost than steel, ASTM A496 specifies steel wire reinforcement; aluminum does not meet structural reinforcement standards.",
+          "d": "Recycled aluminum (2.0 kg CO2e/kg) has significantly lower embodied carbon than virgin (8.24 kg CO2e/kg). Material selection must account for this substantial difference.",
+          "correct": "Reduction: (8.24-2.0)/8.24 ≈ 76%. Aluminum is not suitable for structural concrete reinforcement per ASTM standards. Its high cost and corrosion susceptibility in concrete limit use to non-structural cladding, window frames, and interior finish components.",
+          "takeaway": "Recycled aluminum reduces embodied carbon by 76% compared to virgin but is unsuitable for structural reinforcement. Candidates must understand material-specific embodied carbon and application limitations."
+        },
+        "explanation": null,
+        "code_citation": "ICE Embodied Carbon Database; ASTM A496 Standard for Steel Wire Reinforcement",
+        "bloom_level": "apply",
+        "application_context": "design_application",
+        "practice_context": [],
+        "difficulty": 0.7,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-MATL-005-07-010",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:28.473222+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:1e6a4af95427ad82f0fe514ae79739f910ce321417ef7acc63a5768e3ebb607e"
+      },
+      "proposed": {
+        "explanation": "24% is far lower than the actual 76% reduction. Confusing recycled and virgin embodied carbon values is a critical error. While aluminum is lighter and lower-cost than steel, ASTM A496 specifies steel wire reinforcement; aluminum does not meet structural reinforcement standards. Recycled aluminum (2.0 kg CO2e/kg) has significantly lower embodied carbon than virgin (8.24 kg CO2e/kg). Material selection must account for this substantial difference. Reduction: (8.24-2.0)/8.24 ≈ 76%. Aluminum is not suitable for structural concrete reinforcement per ASTM standards. Its high cost and corrosion susceptibility in concrete limit use to non-structural cladding, window frames, and interior finish components. Recycled aluminum reduces embodied carbon by 76% compared to virgin but is unsuitable for structural reinforcement. Candidates must understand material-specific embodied carbon and application limitations."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "b5a74a76-7a2b-4b71-8864-dabe36cd7851",
+      "article_id": "20429844-ef79-45b9-8095-d9c64fd2bf08",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-005-07-core-concept--20429844-ef79-45b9-8095-d9c64fd2bf08",
+      "title": "lea-matl-005-07-core-concept",
+      "baseline_hash": "sha256:f2dd601dc5f2ed617cddaa3a18366101a95cf17e21ab186042505e2fd907580d",
+      "baseline": {
+        "question_id": "b5a74a76-7a2b-4b71-8864-dabe36cd7851",
+        "article_id": "20429844-ef79-45b9-8095-d9c64fd2bf08",
+        "topic_id": "b73a0898-ccd5-4c56-aa1b-0e7b2d460c79",
+        "text": "Ground granulated blast furnace slag (GGBS) meets which ASTM standard and is used as a cement replacement at what typical dosage range in structural concrete?",
+        "options": [
+          {
+            "id": "a",
+            "text": "ASTM C989; 30-50% cement replacement with both pozzolanic and cementitious properties"
+          },
+          {
+            "id": "b",
+            "text": "ASTM C618; 15-25% cement replacement as a pozzolanic admixture only, which limits its use in high-strength applications"
+          },
+          {
+            "id": "c",
+            "text": "ASTM C33; 20-40% replacement in aggregate gradation specifications, which is not applicable to GGBS"
+          },
+          {
+            "id": "d",
+            "text": "ASTM C150; 25-35% replacement following Portland cement chemistry requirements, which is incorrect for GGBS"
+          }
+        ],
+        "correct_option_id": "a",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "b": "ASTM C618 covers fly ash, not GGBS. Fly ash replacement rates (15-25%) are lower than GGBS because fly ash lacks cementitious properties.",
+          "c": "ASTM C33 specifies fine and coarse aggregate gradation, not cement replacement materials.",
+          "d": "ASTM C150 defines Portland cement composition; GGBS is not a Portland cement product but a supplementary cementitious material meeting its own ASTM C989 standard.",
+          "correct": "GGBS is cooled byproduct slag from iron smelting meeting ASTM C989 specifications. It provides both pozzolanic (silica-based) and cementitious (calcium-based) reactions, allowing higher replacement rates of 30-50% compared to fly ash (15-25%).",
+          "takeaway": "GGBS (ASTM C989) allows higher cement replacement (30-50%) than fly ash (ASTM C618: 15-25%) because it combines pozzolanic and self-cementing properties. Candidates must match material type to the correct ASTM standard and dosage limits."
+        },
+        "explanation": null,
+        "code_citation": "ASTM C989 Standard Specification for Ground Granulated Blast-Furnace Slag; ASTM C618",
+        "bloom_level": "understand",
+        "application_context": "code_interpretation",
+        "practice_context": [],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-MATL-005-07-004",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:28.473222+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:f2dd601dc5f2ed617cddaa3a18366101a95cf17e21ab186042505e2fd907580d"
+      },
+      "proposed": {
+        "explanation": "ASTM C618 covers fly ash, not GGBS. Fly ash replacement rates (15-25%) are lower than GGBS because fly ash lacks cementitious properties. ASTM C33 specifies fine and coarse aggregate gradation, not cement replacement materials. ASTM C150 defines Portland cement composition; GGBS is not a Portland cement product but a supplementary cementitious material meeting its own ASTM C989 standard. GGBS is cooled byproduct slag from iron smelting meeting ASTM C989 specifications. It provides both pozzolanic (silica-based) and cementitious (calcium-based) reactions, allowing higher replacement rates of 30-50% compared to fly ash (15-25%). GGBS (ASTM C989) allows higher cement replacement (30-50%) than fly ash (ASTM C618: 15-25%) because it combines pozzolanic and self-cementing properties. Candidates must match material type to the correct ASTM standard and dosage limits."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "fb5705f7-2d95-4692-b0e8-803e63989e06",
+      "article_id": "20429844-ef79-45b9-8095-d9c64fd2bf08",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-005-07-core-concept--20429844-ef79-45b9-8095-d9c64fd2bf08",
+      "title": "lea-matl-005-07-core-concept",
+      "baseline_hash": "sha256:612548c831d5089f34d88d41a2b8916e2453f1a60ced09022283c4eee9b8130a",
+      "baseline": {
+        "question_id": "fb5705f7-2d95-4692-b0e8-803e63989e06",
+        "article_id": "20429844-ef79-45b9-8095-d9c64fd2bf08",
+        "topic_id": "b73a0898-ccd5-4c56-aa1b-0e7b2d460c79",
+        "text": "According to ASTM C618, what is the primary difference between Class F and Class C fly ash in terms of chemical composition and concrete application?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Class F is high-silica and pozzolanic only; Class C is high-calcium with pozzolanic and self-cementing properties. Dosage is 15-25% for F and 20-35% for C."
+          },
+          {
+            "id": "b",
+            "text": "Class C is derived from anthracite coal and contains 50-70% silica; Class F is derived from lignite and contains 20-40% calcium oxide, which affects its reactivity and application in concrete."
+          },
+          {
+            "id": "c",
+            "text": "Both classes are chemically identical; the difference is only in particle size distribution and fineness per ASTM C618, which does not affect their application in concrete."
+          },
+          {
+            "id": "d",
+            "text": "Class F is unsuitable for structural concrete and limited to non-structural fill; Class C is required for all structural applications, especially in environments with high sulfate exposure."
+          }
+        ],
+        "correct_option_id": "a",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "b": "This reverses the coal source and chemical composition. Class F comes from anthracite/bituminous (not lignite), and Class C comes from lignite/subbituminous (not anthracite).",
+          "c": "ASTM C618 specifies chemical composition requirements and pozzolanic reactivity, not only particle size. While fineness is a specification, the chemical differences between Class F and C are fundamental.",
+          "d": "Both Class F and Class C are acceptable for structural concrete when dosed within ASTM C618 limits. The difference in dosage reflects their chemical reactivity, not structural suitability.",
+          "correct": "Class F fly ash (from anthracite/bituminous coal) is 50-70% silica and acts only as a pozzolan, replacing 15-25% cement. Class C (from lignite/subbituminous) contains 20-40% CaO, acts both as a pozzolan and self-cements, and is dosed at 20-35%. Both are suitable for structural concrete within their dosage limits.",
+          "takeaway": "Class F and C fly ash have different chemical compositions, reactivity rates, and optimal dosage ranges. Candidates must match fly ash type to concrete strength requirements and durability goals."
+        },
+        "explanation": null,
+        "code_citation": "ASTM C618 Standard Specification; Class C vs Class F Fly Ash Properties (Fahrenheit 2019)",
+        "bloom_level": "understand",
+        "application_context": "code_interpretation",
+        "practice_context": [],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-MATL-005-07-002",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:28.473222+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:612548c831d5089f34d88d41a2b8916e2453f1a60ced09022283c4eee9b8130a"
+      },
+      "proposed": {
+        "explanation": "This reverses the coal source and chemical composition. Class F comes from anthracite/bituminous (not lignite), and Class C comes from lignite/subbituminous (not anthracite). ASTM C618 specifies chemical composition requirements and pozzolanic reactivity, not only particle size. While fineness is a specification, the chemical differences between Class F and C are fundamental. Both Class F and Class C are acceptable for structural concrete when dosed within ASTM C618 limits. The difference in dosage reflects their chemical reactivity, not structural suitability. Class F fly ash (from anthracite/bituminous coal) is 50-70% silica and acts only as a pozzolan, replacing 15-25% cement. Class C (from lignite/subbituminous) contains 20-40% CaO, acts both as a pozzolan and self-cements, and is dosed at 20-35%. Both are suitable for structural concrete within their dosage limits. Class F and C fly ash have different chemical compositions, reactivity rates, and optimal dosage ranges. Candidates must match fly ash type to concrete strength requirements and durability goals."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "33c1a1ff-0207-454b-a331-5a0c9bfb3bc3",
+      "article_id": "20429844-ef79-45b9-8095-d9c64fd2bf08",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-005-07-core-concept--20429844-ef79-45b9-8095-d9c64fd2bf08",
+      "title": "lea-matl-005-07-core-concept",
+      "baseline_hash": "sha256:f9e5ce56e6d45a361dc216f78ea9b2145e73dfaa1ffc8090c01f0b5a73e19e99",
+      "baseline": {
+        "question_id": "33c1a1ff-0207-454b-a331-5a0c9bfb3bc3",
+        "article_id": "20429844-ef79-45b9-8095-d9c64fd2bf08",
+        "topic_id": "b73a0898-ccd5-4c56-aa1b-0e7b2d460c79",
+        "text": "A structural concrete mix uses Portland cement with embodied carbon of 0.82 kg CO2e/kg. The cement content is 350 kg/m³. If 25% of the cement is replaced with Class F fly ash (embodied carbon 0.12 kg CO2e/kg), what is the approximate embodied carbon reduction for the cement binder component?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Approximately 21-23% reduction in binder embodied carbon"
+          },
+          {
+            "id": "b",
+            "text": "Approximately 35-40% reduction due to the 25% replacement percentage"
+          },
+          {
+            "id": "c",
+            "text": "Approximately 15-18% reduction, accounting for fly ash having lower but non-zero embodied carbon"
+          },
+          {
+            "id": "d",
+            "text": "No reduction, because fly ash is a waste product and does not reduce overall material carbon"
+          }
+        ],
+        "correct_option_id": "a",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "b": "This incorrectly assumes the 25% replacement equals 25% carbon reduction by ignoring fly ash's embodied carbon contribution.",
+          "c": "This assumes fly ash has zero embodied carbon, which is incorrect. All materials have some embodied carbon from processing.",
+          "d": "Fly ash is a waste product from coal burning, but it has measurable embodied carbon from collection, processing, and transport. Its use reduces net carbon compared to 100% Portland cement.",
+          "correct": "Original binder carbon: 350 kg/m³ × 0.82 = 287 kg CO2e/m³. After 25% replacement: 262.5 kg cement (0.82) + 87.5 kg fly ash (0.12) = 221.1 kg CO2e/m³. Reduction: (287-221.1)/287 ≈ 23%. This accounts for fly ash's own embodied carbon (not zero).",
+          "takeaway": "Embodied carbon reduction from pozzolanic replacement is never equal to the percentage replacement, because the substitute material (fly ash, slag) has non-zero embodied carbon. Always account for both material carbon values when calculating reduction."
+        },
+        "explanation": null,
+        "code_citation": "ICE Embodied Carbon Database; ASTM C618; Embodied Carbon Reduction Guide (US DOE 2024)",
+        "bloom_level": "apply",
+        "application_context": "design_application",
+        "practice_context": [],
+        "difficulty": 0.7,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-MATL-005-07-003",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:28.473222+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:f9e5ce56e6d45a361dc216f78ea9b2145e73dfaa1ffc8090c01f0b5a73e19e99"
+      },
+      "proposed": {
+        "explanation": "This incorrectly assumes the 25% replacement equals 25% carbon reduction by ignoring fly ash's embodied carbon contribution. This assumes fly ash has zero embodied carbon, which is incorrect. All materials have some embodied carbon from processing. Fly ash is a waste product from coal burning, but it has measurable embodied carbon from collection, processing, and transport. Its use reduces net carbon compared to 100% Portland cement. Original binder carbon: 350 kg/m³ × 0.82 = 287 kg CO2e/m³. After 25% replacement: 262.5 kg cement (0.82) + 87.5 kg fly ash (0.12) = 221.1 kg CO2e/m³. Reduction: (287-221.1)/287 ≈ 23%. This accounts for fly ash's own embodied carbon (not zero). Embodied carbon reduction from pozzolanic replacement is never equal to the percentage replacement, because the substitute material (fly ash, slag) has non-zero embodied carbon. Always account for both material carbon values when calculating reduction."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "7cfe2e9f-aa79-4eea-8caa-4a806b69c86d",
+      "article_id": "20429844-ef79-45b9-8095-d9c64fd2bf08",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-005-07-core-concept--20429844-ef79-45b9-8095-d9c64fd2bf08",
+      "title": "lea-matl-005-07-core-concept",
+      "baseline_hash": "sha256:b969f5f98b47c1ede24083d8be79b7de4969e96a2a6004a8fd3af75b3b617bca",
+      "baseline": {
+        "question_id": "7cfe2e9f-aa79-4eea-8caa-4a806b69c86d",
+        "article_id": "20429844-ef79-45b9-8095-d9c64fd2bf08",
+        "topic_id": "b73a0898-ccd5-4c56-aa1b-0e7b2d460c79",
+        "text": "Timber used in construction has an embodied carbon value of approximately -0.46 kg CO2e/kg, indicating a negative value. What does the negative sign represent in the context of embodied carbon?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Carbon sequestration: trees absorb CO2 during growth and store it in the wood fiber; harvesting and using timber retains this stored carbon, offsetting emissions"
+          },
+          {
+            "id": "b",
+            "text": "An error in measurement: negative embodied carbon is impossible and indicates laboratory testing failure, suggesting a need for recalibration"
+          },
+          {
+            "id": "c",
+            "text": "Timber requires energy removal during processing, reducing net emissions compared to mineral materials, which typically have higher embodied carbon"
+          },
+          {
+            "id": "d",
+            "text": "The negative value means timber has no environmental impact and is perfectly sustainable regardless of harvest method, making it an ideal choice"
+          }
+        ],
+        "correct_option_id": "a",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "b": "Laboratory testing of timber is accurate; negative embodied carbon is a valid concept reflecting carbon sequestration, not measurement error.",
+          "c": "Timber processing requires energy (drying, milling), which adds positive embodied carbon. The net embodied carbon remains negative because sequestration exceeds processing emissions.",
+          "d": "Timber sustainability depends on harvest method (sustainable forestry vs clear-cutting), replanting, and transport distance. A negative embodied carbon value does not guarantee ecological soundness.",
+          "correct": "Trees sequester atmospheric CO2 during growth through photosynthesis, storing carbon in cellulose and lignin. Timber retains this stored carbon for the duration of its service life. The negative value (carbon credit) offsets the manufacturing and transport emissions.",
+          "takeaway": "Negative embodied carbon represents carbon sequestration in organic materials. Candidates must understand that timber stores atmospheric CO2, making it a carbon sink if sustainably harvested and managed."
+        },
+        "explanation": null,
+        "code_citation": "ICE Embodied Carbon Database; Embodied Carbon Reduction in New Construction Reference Guide (US DOE 2024)",
+        "bloom_level": "understand",
+        "application_context": "recall",
+        "practice_context": [],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-MATL-005-07-008",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:28.473222+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:b969f5f98b47c1ede24083d8be79b7de4969e96a2a6004a8fd3af75b3b617bca"
+      },
+      "proposed": {
+        "explanation": "Laboratory testing of timber is accurate; negative embodied carbon is a valid concept reflecting carbon sequestration, not measurement error. Timber processing requires energy (drying, milling), which adds positive embodied carbon. The net embodied carbon remains negative because sequestration exceeds processing emissions. Timber sustainability depends on harvest method (sustainable forestry vs clear-cutting), replanting, and transport distance. A negative embodied carbon value does not guarantee ecological soundness. Trees sequester atmospheric CO2 during growth through photosynthesis, storing carbon in cellulose and lignin. Timber retains this stored carbon for the duration of its service life. The negative value (carbon credit) offsets the manufacturing and transport emissions. Negative embodied carbon represents carbon sequestration in organic materials. Candidates must understand that timber stores atmospheric CO2, making it a carbon sink if sustainably harvested and managed."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "5d75baae-ee30-44ea-bd5b-736a4a4d331f",
+      "article_id": "205905a8-f9ff-41e7-8db7-a85edd563a84",
+      "article_dir": ".ai/content-audit-export/articles/lea-strc-004-05-core-concept--205905a8-f9ff-41e7-8db7-a85edd563a84",
+      "title": "lea-strc-004-05-core-concept",
+      "baseline_hash": "sha256:e4d0ad1f0c22bbc9ba7cb57330b7bd09525f8c5f854c707e32a55d0001f53f83",
+      "baseline": {
+        "question_id": "5d75baae-ee30-44ea-bd5b-736a4a4d331f",
+        "article_id": "205905a8-f9ff-41e7-8db7-a85edd563a84",
+        "topic_id": "14ff1343-a36a-4f79-a807-217f474a3aa5",
+        "text": "A warehouse owner upgrades from light storage (6.0 kPa) to heavy storage (12.0 kPa) and the floor beams begin to sag. Who is structurally liable if the original design documents specified light storage?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The structural engineer, for not allowing a 100% safety margin, which is a standard engineering practice"
+          },
+          {
+            "id": "b",
+            "text": "The owner, for exceeding the design load limits specified in the plans."
+          },
+          {
+            "id": "c",
+            "text": "The contractor, for using weaker steel than specified, which compromises structural integrity"
+          },
+          {
+            "id": "d",
+            "text": "The insurance company, as it is an 'Act of God', which is typically excluded from coverage"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Safety factors in codes are typically 1.2 to 1.6, not a 100% (2.0) margin for unspecified future uses.",
+          "c": "Unless the contractor deviated from plans, the failure is due to overloading, not material quality.",
+          "d": "Structural overloading is a human error/negligence, not an 'Act of God'.",
+          "correct": "The owner is responsible for ensuring that the building is not subjected to loads greater than those for which it was designed. Doubling the load from 6.0 to 12.0 kPa is a gross violation of the design capacity.",
+          "takeaway": "Owners must adhere to design load limits."
+        },
+        "explanation": null,
+        "code_citation": "NSCP 2015, Section 205.2",
+        "bloom_level": "analyze",
+        "application_context": "code_interpretation",
+        "practice_context": [],
+        "difficulty": 0.9,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-STRC-004-05-010",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:52.277828+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:e4d0ad1f0c22bbc9ba7cb57330b7bd09525f8c5f854c707e32a55d0001f53f83"
+      },
+      "proposed": {
+        "explanation": "Safety factors in codes are typically 1.2 to 1.6, not a 100% (2.0) margin for unspecified future uses. Unless the contractor deviated from plans, the failure is due to overloading, not material quality. Structural overloading is a human error/negligence, not an 'Act of God'. The owner is responsible for ensuring that the building is not subjected to loads greater than those for which it was designed. Doubling the load from 6.0 to 12.0 kPa is a gross violation of the design capacity. Owners must adhere to design load limits."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "3f5d2610-3ad1-422b-99a1-c85b34d1cd13",
+      "article_id": "61869b56-3658-496c-ac52-060076c5ea6c",
+      "article_dir": ".ai/content-audit-export/articles/lea-theo-001-12-core-concept--61869b56-3658-496c-ac52-060076c5ea6c",
+      "title": "lea-theo-001-12-core-concept",
+      "baseline_hash": "sha256:4419e4ab2a3932be03a1c8824726dfea234395ddba04b132a1dac7520f895962",
+      "baseline": {
+        "question_id": "3f5d2610-3ad1-422b-99a1-c85b34d1cd13",
+        "article_id": "61869b56-3658-496c-ac52-060076c5ea6c",
+        "topic_id": "f83f5e6d-987c-44cc-95bb-d834d922f3e5",
+        "text": "What does the pointed arch in Gothic architecture signify and symbolize?",
+        "options": [
+          {
+            "id": "a",
+            "text": "It means the same thing in all cultures and historical periods, representing a universal architectural language"
+          },
+          {
+            "id": "b",
+            "text": "It is an arbitrary decorative choice unrelated to cultural meaning, often used for aesthetic purposes only"
+          },
+          {
+            "id": "c",
+            "text": "It is purely a structural element with no meaning beyond load-bearing function, focusing solely on engineering efficiency"
+          },
+          {
+            "id": "d",
+            "text": "The signifier (visible pointed form) signifies Gothic or medieval origin; it symbolizes spiritual aspiration, reaching toward heaven—meanings derived from cultural convention about this form"
+          }
+        ],
+        "correct_option_id": "d",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Meanings vary across cultures; a pointed arch has different significance in Islamic versus Christian architectural tradition.",
+          "b": "The pointed arch choice reflects intentional meaning-making, not arbitrary decoration.",
+          "c": "While structurally effective, pointed arches carry rich cultural meaning.",
+          "correct": "The pointed arch's visible form (signifier) immediately communicates 'Gothic' or 'medieval.' Its upward reaching form symbolizes spiritual aspiration in European Christian tradition. These meanings are culturally constructed.",
+          "takeaway": "These meanings are culturally constructed."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "apply",
+        "application_context": "design_application",
+        "practice_context": [
+          "APP"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-THEO-001-12-005",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:53.522336+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:4419e4ab2a3932be03a1c8824726dfea234395ddba04b132a1dac7520f895962"
+      },
+      "proposed": {
+        "explanation": "Meanings vary across cultures; a pointed arch has different significance in Islamic versus Christian architectural tradition. The pointed arch choice reflects intentional meaning-making, not arbitrary decoration. While structurally effective, pointed arches carry rich cultural meaning. The pointed arch's visible form (signifier) immediately communicates 'Gothic' or 'medieval.' Its upward reaching form symbolizes spiritual aspiration in European Christian tradition. These meanings are culturally constructed. These meanings are culturally constructed."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "7b82e215-537e-4361-a0d5-d3b305fd2529",
+      "article_id": "61869b56-3658-496c-ac52-060076c5ea6c",
+      "article_dir": ".ai/content-audit-export/articles/lea-theo-001-12-core-concept--61869b56-3658-496c-ac52-060076c5ea6c",
+      "title": "lea-theo-001-12-core-concept",
+      "baseline_hash": "sha256:963b16ead57129a1f8c2e08612b53b5c5a24e90402793236945e47a0b6f1207c",
+      "baseline": {
+        "question_id": "7b82e215-537e-4361-a0d5-d3b305fd2529",
+        "article_id": "61869b56-3658-496c-ac52-060076c5ea6c",
+        "topic_id": "f83f5e6d-987c-44cc-95bb-d834d922f3e5",
+        "text": "Denotation in architectural meaning refers to which of the following?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The cultural associations and emotional interpretations that observers attach to a building, which are subjective"
+          },
+          {
+            "id": "b",
+            "text": "The historical style or architectural movement a building represents, often linked to its era"
+          },
+          {
+            "id": "c",
+            "text": "The straightforward, literal, or functional interpretation of a building's purpose and use"
+          },
+          {
+            "id": "d",
+            "text": "The symbolic meanings derived from cultural convention, which can vary widely"
+          }
+        ],
+        "correct_option_id": "c",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "This describes connotation, not denotation.",
+          "b": "While style is communicated, denotation is functional.",
+          "d": "This describes symbolic or connotative meaning.",
+          "correct": "Denotation is primary, literal meaning. A hospital building denotes medical care—that is its straightforward functional purpose. Connotation adds cultural and emotional layers of meaning.",
+          "takeaway": "Connotation adds cultural and emotional layers of meaning."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "remember",
+        "application_context": "recall",
+        "practice_context": [
+          "DEF"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-THEO-001-12-003",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:53.522336+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:963b16ead57129a1f8c2e08612b53b5c5a24e90402793236945e47a0b6f1207c"
+      },
+      "proposed": {
+        "explanation": "This describes connotation, not denotation. While style is communicated, denotation is functional. This describes symbolic or connotative meaning. Denotation is primary, literal meaning. A hospital building denotes medical care—that is its straightforward functional purpose. Connotation adds cultural and emotional layers of meaning. Connotation adds cultural and emotional layers of meaning."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "0d9c7f78-f928-4821-9b3b-100f57270d82",
+      "article_id": "61869b56-3658-496c-ac52-060076c5ea6c",
+      "article_dir": ".ai/content-audit-export/articles/lea-theo-001-12-core-concept--61869b56-3658-496c-ac52-060076c5ea6c",
+      "title": "lea-theo-001-12-core-concept",
+      "baseline_hash": "sha256:f391109618ca549b56a07b00ae314cb1a2a46022d58264e6b59b8576c2a6bf79",
+      "baseline": {
+        "question_id": "0d9c7f78-f928-4821-9b3b-100f57270d82",
+        "article_id": "61869b56-3658-496c-ac52-060076c5ea6c",
+        "topic_id": "f83f5e6d-987c-44cc-95bb-d834d922f3e5",
+        "text": "Semiotics in architectural contexts refers to which of the following?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The historical preservation and documentation of buildings for archival and cultural heritage purposes"
+          },
+          {
+            "id": "b",
+            "text": "The technical analysis of building materials and construction methods used in structural engineering"
+          },
+          {
+            "id": "c",
+            "text": "The aesthetic decoration and ornamental design of building façades for visual enhancement purposes"
+          },
+          {
+            "id": "d",
+            "text": "The study of how buildings function as sign systems that communicate meaning to observers and occupants"
+          }
+        ],
+        "correct_option_id": "d",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Preservation is a practice, not a study of meaning.",
+          "b": "Material analysis is a technical concern, not semiotics.",
+          "c": "Decoration is one element of meaning, but semiotics encompasses all forms of architectural communication.",
+          "correct": "Semiotics examines how buildings convey meaning through form, materials, proportions, and spatial arrangements. Buildings communicate about their purpose, cultural values, and historical moment to observers.",
+          "takeaway": "Buildings communicate about their purpose, cultural values, and historical moment to observers."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "remember",
+        "application_context": "recall",
+        "practice_context": [
+          "DEF"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-THEO-001-12-001",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:53.522336+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:f391109618ca549b56a07b00ae314cb1a2a46022d58264e6b59b8576c2a6bf79"
+      },
+      "proposed": {
+        "explanation": "Preservation is a practice, not a study of meaning. Material analysis is a technical concern, not semiotics. Decoration is one element of meaning, but semiotics encompasses all forms of architectural communication. Semiotics examines how buildings convey meaning through form, materials, proportions, and spatial arrangements. Buildings communicate about their purpose, cultural values, and historical moment to observers. Buildings communicate about their purpose, cultural values, and historical moment to observers."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "084f05b0-01cf-4d53-971d-2574e2c62272",
+      "article_id": "61869b56-3658-496c-ac52-060076c5ea6c",
+      "article_dir": ".ai/content-audit-export/articles/lea-theo-001-12-core-concept--61869b56-3658-496c-ac52-060076c5ea6c",
+      "title": "lea-theo-001-12-core-concept",
+      "baseline_hash": "sha256:30b6c4b52e870f99376fd5f830b2456cf2e1c5f0d37da6cea7b1eaab809cc31c",
+      "baseline": {
+        "question_id": "084f05b0-01cf-4d53-971d-2574e2c62272",
+        "article_id": "61869b56-3658-496c-ac52-060076c5ea6c",
+        "topic_id": "f83f5e6d-987c-44cc-95bb-d834d922f3e5",
+        "text": "How does the bahay na bato architectural type narrate the Philippines' cultural history?",
+        "options": [
+          {
+            "id": "a",
+            "text": "It narratively encodes the layering of indigenous Filipino, Spanish colonial, and Chinese influences—literally visible in stone base and timber upper floor—telling the story of colonialism, cultural adaptation, and synthesis"
+          },
+          {
+            "id": "b",
+            "text": "It narrates only Spanish colonial history, with no indigenous or Chinese elements, which overlooks the multicultural influences present in the architecture"
+          },
+          {
+            "id": "c",
+            "text": "It has no historical or cultural meaning; it is merely a functional building type, which ignores its rich historical context"
+          },
+          {
+            "id": "d",
+            "text": "It is purely indigenous Filipino architecture unchanged by external influence, which is inaccurate as it reflects a blend of various cultural influences"
+          }
+        ],
+        "correct_option_id": "a",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "b": "Indigenous and Chinese elements are integral to the bahay na bato form.",
+          "c": "The architectural form is rich with cultural and historical meaning.",
+          "d": "Bahay na bato explicitly incorporates foreign influences; it is a cultural synthesis.",
+          "correct": "The bahay na bato's form itself narrates history: the elevated timber structure derives from indigenous bahay kubo; the stone base reflects Spanish colonial influence and earthquake resistance; spatial organization reflects Spanish social hierarchy; Chinese construction techniques influenced joinery. The architecture is a three-part narrative.",
+          "takeaway": "The architecture is a three-part narrative."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "apply",
+        "application_context": "design_application",
+        "practice_context": [
+          "PH"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-THEO-001-12-009",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:53.522336+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:30b6c4b52e870f99376fd5f830b2456cf2e1c5f0d37da6cea7b1eaab809cc31c"
+      },
+      "proposed": {
+        "explanation": "Indigenous and Chinese elements are integral to the bahay na bato form. The architectural form is rich with cultural and historical meaning. Bahay na bato explicitly incorporates foreign influences; it is a cultural synthesis. The bahay na bato's form itself narrates history: the elevated timber structure derives from indigenous bahay kubo; the stone base reflects Spanish colonial influence and earthquake resistance; spatial organization reflects Spanish social hierarchy; Chinese construction techniques influenced joinery. The architecture is a three-part narrative. The architecture is a three-part narrative."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "05f6972a-c047-4612-98d4-7d174831c357",
+      "article_id": "61869b56-3658-496c-ac52-060076c5ea6c",
+      "article_dir": ".ai/content-audit-export/articles/lea-theo-001-12-core-concept--61869b56-3658-496c-ac52-060076c5ea6c",
+      "title": "lea-theo-001-12-core-concept",
+      "baseline_hash": "sha256:1560230b1630b6b9292214e2531de8504c428f862a1e121d463b20d5ea484ec2",
+      "baseline": {
+        "question_id": "05f6972a-c047-4612-98d4-7d174831c357",
+        "article_id": "61869b56-3658-496c-ac52-060076c5ea6c",
+        "topic_id": "f83f5e6d-987c-44cc-95bb-d834d922f3e5",
+        "text": "What does it mean that architectural meaning 'operates intuitively and subliminally' rather than explicitly?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Architects should avoid intentional meaning-making to let intuition guide design, allowing for more organic outcomes"
+          },
+          {
+            "id": "b",
+            "text": "Buildings do not actually communicate meaning; observers only imagine meanings, which are subjective and vary widely"
+          },
+          {
+            "id": "c",
+            "text": "Subliminal meanings are unreliable and should be disregarded in favor of explicit functional analysis, which provides clarity"
+          },
+          {
+            "id": "d",
+            "text": "Observers feel and perceive architectural meaning without consciously articulating it; much meaning is internalized culturally and operates below conscious thought even though it profoundly affects experience"
+          }
+        ],
+        "correct_option_id": "d",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Intentional meaning-making and intuitive design can work together.",
+          "b": "The meanings are real; they operate through cultural internalization.",
+          "c": "Subliminal meaning is not unreliable; it is the mechanism through which most architectural communication occurs.",
+          "correct": "A well-designed building communicates meaning that observers feel rather than consciously analyze. We intuitively recognize a pointed arch as Gothic even without formal study. This subliminal communication is real and powerful even when not explicit.",
+          "takeaway": "This subliminal communication is real and powerful even when not explicit."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "remember",
+        "application_context": "code_interpretation",
+        "practice_context": [
+          "CON"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-THEO-001-12-011",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:53.522336+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:1560230b1630b6b9292214e2531de8504c428f862a1e121d463b20d5ea484ec2"
+      },
+      "proposed": {
+        "explanation": "Intentional meaning-making and intuitive design can work together. The meanings are real; they operate through cultural internalization. Subliminal meaning is not unreliable; it is the mechanism through which most architectural communication occurs. A well-designed building communicates meaning that observers feel rather than consciously analyze. We intuitively recognize a pointed arch as Gothic even without formal study. This subliminal communication is real and powerful even when not explicit. This subliminal communication is real and powerful even when not explicit."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "4b4842b3-7744-4ea1-bcca-f78c70952bd9",
+      "article_id": "61869b56-3658-496c-ac52-060076c5ea6c",
+      "article_dir": ".ai/content-audit-export/articles/lea-theo-001-12-core-concept--61869b56-3658-496c-ac52-060076c5ea6c",
+      "title": "lea-theo-001-12-core-concept",
+      "baseline_hash": "sha256:a34bc27cf2e69a76e23f649768463a3001093624ae00987e6bcec981619b652e",
+      "baseline": {
+        "question_id": "4b4842b3-7744-4ea1-bcca-f78c70952bd9",
+        "article_id": "61869b56-3658-496c-ac52-060076c5ea6c",
+        "topic_id": "f83f5e6d-987c-44cc-95bb-d834d922f3e5",
+        "text": "How do symbol and metaphor differ in architectural meaning-making?",
+        "options": [
+          {
+            "id": "a",
+            "text": "They are identical concepts used interchangeably in architectural theory without distinction in meaning or application"
+          },
+          {
+            "id": "b",
+            "text": "Symbols and metaphors only apply to historical architecture, not contemporary buildings designed after the postmodern period"
+          },
+          {
+            "id": "c",
+            "text": "A symbol represents something abstract through cultural convention (cross = Christianity); a metaphor suggests analogy or likeness (spiral = organic growth). Symbols are culturally determined; metaphors are conceptual comparisons"
+          },
+          {
+            "id": "d",
+            "text": "Metaphors are more important than symbols in contemporary architecture because they allow greater creative freedom in expression"
+          }
+        ],
+        "correct_option_id": "c",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "They are distinct concepts with different mechanisms of meaning.",
+          "b": "Both concepts apply across all architectural periods.",
+          "d": "Both are equally important in contemporary practice.",
+          "correct": "While related, they function differently. A symbol's meaning is conventional and culturally determined. A metaphor suggests an analogy—the form is not literally the thing represented, but suggests similarity. Both communicate meaning but through different mechanisms.",
+          "takeaway": "Both communicate meaning but through different mechanisms."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "apply",
+        "application_context": "design_application",
+        "practice_context": [
+          "CMP"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-THEO-001-12-004",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:53.522336+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:a34bc27cf2e69a76e23f649768463a3001093624ae00987e6bcec981619b652e"
+      },
+      "proposed": {
+        "explanation": "They are distinct concepts with different mechanisms of meaning. Both concepts apply across all architectural periods. Both are equally important in contemporary practice. While related, they function differently. A symbol's meaning is conventional and culturally determined. A metaphor suggests an analogy—the form is not literally the thing represented, but suggests similarity. Both communicate meaning but through different mechanisms. Both communicate meaning but through different mechanisms."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "871adf95-b904-43eb-a585-dc77c6fabefb",
+      "article_id": "61869b56-3658-496c-ac52-060076c5ea6c",
+      "article_dir": ".ai/content-audit-export/articles/lea-theo-001-12-core-concept--61869b56-3658-496c-ac52-060076c5ea6c",
+      "title": "lea-theo-001-12-core-concept",
+      "baseline_hash": "sha256:8e408f3ab1810cc94fd760d03fc2ec4609eb9361540fb2d6442f71f26246c0e3",
+      "baseline": {
+        "question_id": "871adf95-b904-43eb-a585-dc77c6fabefb",
+        "article_id": "61869b56-3658-496c-ac52-060076c5ea6c",
+        "topic_id": "f83f5e6d-987c-44cc-95bb-d834d922f3e5",
+        "text": "In semiotic analysis, what is a 'signifier' in architecture?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The visible form, the architectural element itself that is seen and perceived"
+          },
+          {
+            "id": "b",
+            "text": "The historical tradition or historical period from which a building derives, often influencing its design and style"
+          },
+          {
+            "id": "c",
+            "text": "The function or purpose of the building, which may not always be evident from its appearance"
+          },
+          {
+            "id": "d",
+            "text": "The actual building material used in construction, which can affect both aesthetics and structural integrity"
+          }
+        ],
+        "correct_option_id": "a",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "b": "This describes context or referent, not the signifier.",
+          "c": "Function is part of the signified meaning, not the signifier.",
+          "d": "Material is an element of the visible form but not the signifier itself.",
+          "correct": "A signifier is the form itself—what is visible. A pointed arch is the signifier; 'Gothic' or 'medieval' is what it means (the signified).",
+          "takeaway": "A pointed arch is the signifier; 'Gothic' or 'medieval' is what it means (the signified)."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "remember",
+        "application_context": "recall",
+        "practice_context": [
+          "DEF"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-THEO-001-12-002",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:53.522336+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:8e408f3ab1810cc94fd760d03fc2ec4609eb9361540fb2d6442f71f26246c0e3"
+      },
+      "proposed": {
+        "explanation": "This describes context or referent, not the signifier. Function is part of the signified meaning, not the signifier. Material is an element of the visible form but not the signifier itself. A signifier is the form itself—what is visible. A pointed arch is the signifier; 'Gothic' or 'medieval' is what it means (the signified). A pointed arch is the signifier; 'Gothic' or 'medieval' is what it means (the signified)."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "62d747f9-0d32-4bf2-8592-f22774722cde",
+      "article_id": "61869b56-3658-496c-ac52-060076c5ea6c",
+      "article_dir": ".ai/content-audit-export/articles/lea-theo-001-12-core-concept--61869b56-3658-496c-ac52-060076c5ea6c",
+      "title": "lea-theo-001-12-core-concept",
+      "baseline_hash": "sha256:e63b1c7a2ab32d0359f1de9b6a2aef79fe241c858dd87414ce23faf52cc0e8fc",
+      "baseline": {
+        "question_id": "62d747f9-0d32-4bf2-8592-f22774722cde",
+        "article_id": "61869b56-3658-496c-ac52-060076c5ea6c",
+        "topic_id": "f83f5e6d-987c-44cc-95bb-d834d922f3e5",
+        "text": "How does the Pantheon's interior space communicate meaning on multiple levels simultaneously?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Denotatively it is a gathering space (primary meaning); connotatively it communicates permanence, divinity, and cosmic order; the oculus is a symbol/threshold between earthly and divine; the proportions metaphorically suggest completeness"
+          },
+          {
+            "id": "b",
+            "text": "It is a simple functional space with no symbolic or metaphorical meaning, focusing solely on utility without deeper interpretation"
+          },
+          {
+            "id": "c",
+            "text": "It communicates only through decorative elements, not through spatial organization, which is considered secondary to ornamentation"
+          },
+          {
+            "id": "d",
+            "text": "Its meanings are fixed and identical across all observers and historical periods, suggesting a universal interpretation without variation"
+          }
+        ],
+        "correct_option_id": "a",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "b": "The Pantheon is rich with meaning communicated through form and space.",
+          "c": "Spatial organization is the primary meaning-maker; decoration supports it.",
+          "d": "While cultural context shifts meanings, the structure's coherence enables rich interpretation across periods.",
+          "correct": "The Pantheon exemplifies multilevel meaning: functional gathering place (denotation); spiritual and monumental power (connotation); dome = authority/cosmos; oculus = divine opening (symbol); circular perfection = cosmos (metaphor). These meanings layer and reinforce each other.",
+          "takeaway": "These meanings layer and reinforce each other."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "apply",
+        "application_context": "design_application",
+        "practice_context": [
+          "APP"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-THEO-001-12-008",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:53.522336+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:e63b1c7a2ab32d0359f1de9b6a2aef79fe241c858dd87414ce23faf52cc0e8fc"
+      },
+      "proposed": {
+        "explanation": "The Pantheon is rich with meaning communicated through form and space. Spatial organization is the primary meaning-maker; decoration supports it. While cultural context shifts meanings, the structure's coherence enables rich interpretation across periods. The Pantheon exemplifies multilevel meaning: functional gathering place (denotation); spiritual and monumental power (connotation); dome = authority/cosmos; oculus = divine opening (symbol); circular perfection = cosmos (metaphor). These meanings layer and reinforce each other. These meanings layer and reinforce each other."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "9161b2ad-fa67-4723-89b5-7e5f4b64eab2",
+      "article_id": "61869b56-3658-496c-ac52-060076c5ea6c",
+      "article_dir": ".ai/content-audit-export/articles/lea-theo-001-12-core-concept--61869b56-3658-496c-ac52-060076c5ea6c",
+      "title": "lea-theo-001-12-core-concept",
+      "baseline_hash": "sha256:f1b14c3a6b55f750979644baad2b5ec60f1f8661bc418467e8d60c1435b7dca9",
+      "baseline": {
+        "question_id": "9161b2ad-fa67-4723-89b5-7e5f4b64eab2",
+        "article_id": "61869b56-3658-496c-ac52-060076c5ea6c",
+        "topic_id": "f83f5e6d-987c-44cc-95bb-d834d922f3e5",
+        "text": "The Sydney Opera House's shell-like forms metaphorically suggest which concepts?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Abstract geometric forms with no intended metaphorical meaning, focusing purely on aesthetics"
+          },
+          {
+            "id": "b",
+            "text": "Literal shells, since the architect directly copied shell forms from nature, which is a simplistic interpretation"
+          },
+          {
+            "id": "c",
+            "text": "Only functional requirements for acoustic performance and stage layouts, ignoring the broader symbolic meanings"
+          },
+          {
+            "id": "d",
+            "text": "Sailboats and maritime movement, connecting the building to Australia's ocean identity and Sydney Harbor setting—poetic metaphors for movement, lightness, and cultural identity"
+          }
+        ],
+        "correct_option_id": "d",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "The forms are intentionally metaphorical, communicating through analogy to sails and seashells.",
+          "b": "Metaphors are analogies, not literal representations; the forms suggest rather than replicate.",
+          "c": "While acoustics matter, the shell form's metaphorical power is intentional.",
+          "correct": "Utzon designed shell-like forms that metaphorically suggest movement (sails) and maritime identity. The metaphor is perceived intuitively even if occupants don't consciously articulate it. It connects the building to its location and Australia's cultural identity.",
+          "takeaway": "It connects the building to its location and Australia's cultural identity."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "apply",
+        "application_context": "design_application",
+        "practice_context": [
+          "APP"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-THEO-001-12-006",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:53.522336+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:f1b14c3a6b55f750979644baad2b5ec60f1f8661bc418467e8d60c1435b7dca9"
+      },
+      "proposed": {
+        "explanation": "The forms are intentionally metaphorical, communicating through analogy to sails and seashells. Metaphors are analogies, not literal representations; the forms suggest rather than replicate. While acoustics matter, the shell form's metaphorical power is intentional. Utzon designed shell-like forms that metaphorically suggest movement (sails) and maritime identity. The metaphor is perceived intuitively even if occupants don't consciously articulate it. It connects the building to its location and Australia's cultural identity. It connects the building to its location and Australia's cultural identity."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "1977c796-aeb9-4a0d-a038-8d6f42ce4ea9",
+      "article_id": "61869b56-3658-496c-ac52-060076c5ea6c",
+      "article_dir": ".ai/content-audit-export/articles/lea-theo-001-12-core-concept--61869b56-3658-496c-ac52-060076c5ea6c",
+      "title": "lea-theo-001-12-core-concept",
+      "baseline_hash": "sha256:133eb750f7f5ef7a51e4e21b8f806c2afad8235cf0531db8d09e422aa82aa694",
+      "baseline": {
+        "question_id": "1977c796-aeb9-4a0d-a038-8d6f42ce4ea9",
+        "article_id": "61869b56-3658-496c-ac52-060076c5ea6c",
+        "topic_id": "f83f5e6d-987c-44cc-95bb-d834d922f3e5",
+        "text": "How do architectural meanings differ across cultural contexts?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Contemporary architecture has transcended cultural differences in meaning-making, suggesting a universal approach to design."
+          },
+          {
+            "id": "b",
+            "text": "Cultural differences are irrelevant to architectural meaning; all buildings communicate identical meanings, regardless of their cultural origin or context."
+          },
+          {
+            "id": "c",
+            "text": "Architectural symbols and meanings are universal across all cultures and historical periods, providing a consistent language of design."
+          },
+          {
+            "id": "d",
+            "text": "Meanings are culturally constructed; a green-tiled dome symbolizes Islamic paradise in Muslim cultures but carries no such meaning in secular Western contexts; transparency means openness in one culture but lacks privacy in another"
+          }
+        ],
+        "correct_option_id": "d",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Contemporary architecture remains culturally embedded; globalization does not erase cultural differences.",
+          "b": "Context profoundly affects what buildings mean to their viewers.",
+          "c": "Meanings vary significantly across cultures; universal interpretation misses these differences.",
+          "correct": "Architectural meaning is culturally situated and historically contingent. The same form carries different meanings in different contexts. A dome has different symbolic power in Islamic versus Western secular architecture. Understanding cultural context is essential to reading architectural meaning.",
+          "takeaway": "Understanding cultural context is essential to reading architectural meaning."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "apply",
+        "application_context": "design_application",
+        "practice_context": [
+          "CMP"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-THEO-001-12-010",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:53.522336+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:133eb750f7f5ef7a51e4e21b8f806c2afad8235cf0531db8d09e422aa82aa694"
+      },
+      "proposed": {
+        "explanation": "Contemporary architecture remains culturally embedded; globalization does not erase cultural differences. Context profoundly affects what buildings mean to their viewers. Meanings vary significantly across cultures; universal interpretation misses these differences. Architectural meaning is culturally situated and historically contingent. The same form carries different meanings in different contexts. A dome has different symbolic power in Islamic versus Western secular architecture. Understanding cultural context is essential to reading architectural meaning. Understanding cultural context is essential to reading architectural meaning."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "70cc65d3-02aa-4d1d-aeac-9df84aeea919",
+      "article_id": "61869b56-3658-496c-ac52-060076c5ea6c",
+      "article_dir": ".ai/content-audit-export/articles/lea-theo-001-12-core-concept--61869b56-3658-496c-ac52-060076c5ea6c",
+      "title": "lea-theo-001-12-core-concept",
+      "baseline_hash": "sha256:9279ba09c1b24912b69364bee55703e184937109bb90d1059cf021687907b172",
+      "baseline": {
+        "question_id": "70cc65d3-02aa-4d1d-aeac-9df84aeea919",
+        "article_id": "61869b56-3658-496c-ac52-060076c5ea6c",
+        "topic_id": "f83f5e6d-987c-44cc-95bb-d834d922f3e5",
+        "text": "A stone-built government building with symmetrical form, grand entry, and classical proportions communicates meaning at which levels?",
+        "options": [
+          {
+            "id": "a",
+            "text": "No meaningful communication beyond appearance, as the architectural style does not inherently convey deeper significance"
+          },
+          {
+            "id": "b",
+            "text": "Only functional meaning—that it is a government building, without implying any additional symbolic or cultural values"
+          },
+          {
+            "id": "c",
+            "text": "Only aesthetic meaning through formal beauty, focusing solely on visual appeal without deeper interpretive layers"
+          },
+          {
+            "id": "d",
+            "text": "Multiple levels: denotation (public building), connotation (permanence, authority, civic importance), symbolism (stone = stability/timelessness), metaphor (symmetry = order/justice), narrative (classical proportions invoke democratic ideals and Western tradition)"
+          }
+        ],
+        "correct_option_id": "d",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "The form communicates rich meanings even if not explicitly articulated.",
+          "b": "While functional, the building communicates much more through its form.",
+          "c": "Aesthetic meaning is one layer among many.",
+          "correct": "Architecture communicates through layered meanings. This building's form, materials, proportions, and style communicate denotatively (what it is), connotatively (what it means culturally), symbolically (stone = permanence), metaphorically (symmetry = order), and narratively (classical tradition = democratic ideals).",
+          "takeaway": "This building's form, materials, proportions, and style communicate denotatively (what it is), connotatively (what it means culturally), symbolically (stone = permanence), metaphorically (symmetry = order), and narratively (classical tradition = democratic ideals)."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "apply",
+        "application_context": "design_application",
+        "practice_context": [
+          "APP"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-THEO-001-12-012",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:53.522336+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:9279ba09c1b24912b69364bee55703e184937109bb90d1059cf021687907b172"
+      },
+      "proposed": {
+        "explanation": "The form communicates rich meanings even if not explicitly articulated. While functional, the building communicates much more through its form. Aesthetic meaning is one layer among many. Architecture communicates through layered meanings. This building's form, materials, proportions, and style communicate denotatively (what it is), connotatively (what it means culturally), symbolically (stone = permanence), metaphorically (symmetry = order), and narratively (classical tradition = democratic ideals). This building's form, materials, proportions, and style communicate denotatively (what it is), connotatively (what it means culturally), symbolically (stone = permanence), metaphorically (symmetry = order), and narratively (classical tradition = democratic ideals)."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    }
+  ]
+}

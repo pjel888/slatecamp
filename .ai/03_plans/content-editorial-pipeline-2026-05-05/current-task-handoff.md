@@ -76,3 +76,37 @@ Validation note:
 Next exact step:
 - If commit gate is accepted with the unrelated global validation warning, commit/push Batch 009 publish reports.
 - Then run `bun scripts/content-audit/select-question-remediation-batch.ts question-batch-010 25` and continue the strict-v3 question loop.
+
+## Question Batch 010 Publish Update — 2026-05-06T12:48:04.126247+00:00
+
+Status: REMOTE PUBLISHED AND VERIFIED; LOCAL COMMIT GATE IN PROGRESS.
+
+Batch 010 results:
+- Selected: 25
+- Independent review: PASS, 25 safe, 0 quarantine recommendations
+- Publish candidates loaded: 25
+- Remote baseline matches: 25
+- Remote baseline mismatches: 0
+- Rows applied by exact question_id filter: 25
+- Remote verification: PASS, 25/25
+- Answer-key changes published: 0
+- Option changes published: 0
+- Rollback backup: .ai/20_content_publish/backups/questions-backup-question-batch-010-20260506T124728Z.json
+- Rollback manifest: .ai/20_content_publish/rollback/rollback-manifest-question-batch-010.generated.json
+
+Continuity totals after Batch 010:
+- Remote-published/improved questions through Batch 008: 72
+- Batch 009 published: 5
+- Batch 010 published: 25
+- Total remote-published/improved questions through Batch 010: 102
+- Answer-key changes published: 0
+- Option changes published: 0
+- Remote verification failures: 0
+
+Validation note remains:
+- Batch 010 question verifier passes.
+- Global `bun run content-audit:validate` remains blocked by unrelated article bundle `public-service-counters-and-atms--3c69e570-a75c-4168-ad09-914e2c1062f9`.
+
+Next exact step:
+- Commit/push Batch 010 artifacts.
+- Run `bun scripts/content-audit/select-question-remediation-batch.ts question-batch-011 25`.
