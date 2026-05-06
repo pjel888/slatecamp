@@ -1,11 +1,11 @@
 {
-  "current_batch_number": 32,
+  "current_batch_number": 33,
   "batch_size": 50,
   "total_published_before_run": 1127,
   "completion_status": "RUNNING",
-  "last_completed_batch": "question-batch-031",
-  "next_batch_number": 32,
-  "published_count": 1127,
+  "last_completed_batch": "question-batch-032",
+  "next_batch_number": 33,
+  "published_count": 1177,
   "quarantined_count": 0,
   "verified_noop_count": 0,
   "answer_key_changes_published": 0,
@@ -17,6 +17,14 @@
   "stop_condition": null,
   "consecutive_zero_publish_batches": 0,
   "started_at": "2026-05-06T16:20:05.281589+00:00",
-  "updated_at": "2026-05-06T16:20:05.281589+00:00",
-  "history": []
+  "updated_at": "2026-05-06T16:21:34.652Z",
+  "history": [
+    {
+      "batch": "question-batch-032",
+      "ready": 50,
+      "verified": 50,
+      "status": "PUBLISHED_VERIFIED",
+      "at": "2026-05-06T16:21:34.652Z"
+    }
+  ]
 }

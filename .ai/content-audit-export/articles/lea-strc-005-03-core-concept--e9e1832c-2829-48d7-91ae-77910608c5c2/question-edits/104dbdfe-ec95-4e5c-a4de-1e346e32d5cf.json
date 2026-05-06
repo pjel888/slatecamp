@@ -1,0 +1,10 @@
+{
+  "question_id": "104dbdfe-ec95-4e5c-a4de-1e346e32d5cf",
+  "baseline_hash": "sha256:2d2b3e68bb7105e37d94d4cf5359071fa41dd2765ebeb3a9b395c80b0e1d8e2f",
+  "reason": "Strict explanation backfill from existing specific rationale; answer key and options unchanged.",
+  "approved_by": "hermes-question-remediation-autopilot",
+  "approved_at": "2026-05-06T16:20:43.342Z",
+  "proposed": {
+    "explanation": "Shear has the largest safety margin (86% is far from 99%). Compression has 2.7% margin, which is higher than bending's 2.4%. The safety margins differ significantly. Compare each stress to its allowable: Shear 85 / 99 = 0.858 (14% margin). Compression 145 / 149 = 0.973 (2.7% margin). Bending 160 / 164 = 0.976 (2.4% margin). Bending has the smallest margin (98% of allowable). Review the correct answer and associated code provision."
+  }
+}

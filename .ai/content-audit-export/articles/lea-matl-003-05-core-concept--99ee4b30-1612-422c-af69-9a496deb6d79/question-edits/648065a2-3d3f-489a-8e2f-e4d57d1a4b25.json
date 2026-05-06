@@ -1,12 +1,10 @@
 {
   "question_id": "648065a2-3d3f-489a-8e2f-e4d57d1a4b25",
   "baseline_hash": "sha256:388d80ce33d74175e30aa97f2f2ba09ad7adf6ea48a9e86d100dbaeb9374ec38",
-  "reason": "Missing 'takeaway' key in rationale. Added an appropriate takeaway summarizing the key learning point.",
-  "approved_by": "hermes-question-audit",
-  "approved_at": "2026-05-03T12:16:00.000000+00:00",
+  "reason": "Strict explanation backfill from existing specific rationale; answer key and options unchanged.",
+  "approved_by": "hermes-question-remediation-autopilot",
+  "approved_at": "2026-05-06T16:20:43.344Z",
   "proposed": {
-    "rationale": {
-      "takeaway": "Welding process selection depends on material thickness, position, cost, and quality requirements. Compare SMAW, GMAW, GTAW, and SAW by their key characteristics."
-    }
+    "explanation": "GMAW requires external shielding gas supply and is sensitive to wind; better suited for controlled shop environments and production welding. GTAW produces superior weld quality but is slow and requires very high operator skill; used for specialty applications (aluminum, stainless, thin sections), not structural field work. FCAW is suitable for production work and outdoor applications but is less versatile than SMAW for Philippine field conditions. SMAW (Shielded Metal Arc Welding) uses a consumable flux-coated electrode, requires minimal equipment, tolerates windy outdoor conditions, and works in all positions. It is the foundation of TESDA NC II certification and dominates Philippine field structural work."
   }
 }

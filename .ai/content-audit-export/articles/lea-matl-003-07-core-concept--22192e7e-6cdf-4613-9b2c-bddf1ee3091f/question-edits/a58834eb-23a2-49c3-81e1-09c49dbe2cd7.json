@@ -1,12 +1,10 @@
 {
   "question_id": "a58834eb-23a2-49c3-81e1-09c49dbe2cd7",
   "baseline_hash": "sha256:05ccf25ad71a5a75df2dc1e534b8c39b5864baca9f89e9818bd77027a0c8c147",
-  "reason": "Missing 'takeaway' key in rationale. Added an appropriate takeaway summarizing the key learning point.",
-  "approved_by": "hermes-question-audit",
-  "approved_at": "2026-05-03T12:16:00.000000+00:00",
+  "reason": "Strict explanation backfill from existing specific rationale; answer key and options unchanged.",
+  "approved_by": "hermes-question-remediation-autopilot",
+  "approved_at": "2026-05-06T16:20:43.341Z",
   "proposed": {
-    "rationale": {
-      "takeaway": "Know the ASTM/ASME standard numbers and what each specifies \u2014 this is a common recall topic on the exam."
-    }
+    "explanation": "Galvanizing adds minimal thickness; diameter loss is negligible. Cost drives some A490/stainless substitutions, but H-embrittlement is the primary technical concern. A490 is manufactured as standard steel; the issue is the plating process itself, not incompatibility with manufacturing. High-strength bolts (A490 at 150 ksi) are susceptible to hydrogen embrittlement during electroplating and hot-dip galvanizing processes. Hydrogen atoms are absorbed into the high-strength steel, causing brittle fracture under tensile load even when preload and design appear correct. A325 (120 ksi) is less susceptible due to lower strength, making it the pragmatic choice for galvanized applications."
   }
 }

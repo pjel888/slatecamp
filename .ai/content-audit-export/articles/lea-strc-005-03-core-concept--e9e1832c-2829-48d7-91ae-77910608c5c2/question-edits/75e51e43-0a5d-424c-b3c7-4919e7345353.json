@@ -1,0 +1,10 @@
+{
+  "question_id": "75e51e43-0a5d-424c-b3c7-4919e7345353",
+  "baseline_hash": "sha256:2ab5357e0eab6555bdc8df153b60a23530d2ed679ab580ac1285e5d535c14009",
+  "reason": "Strict explanation backfill from existing specific rationale; answer key and options unchanged.",
+  "approved_by": "hermes-question-remediation-autopilot",
+  "approved_at": "2026-05-06T16:20:43.343Z",
+  "proposed": {
+    "explanation": "149 MPa is the axial compression allowable, not bending. 99 MPa is the shear allowable, not bending. 155 MPa is far below Fy = 248 MPa; the comparison to Fy is irrelevant in ASD (compare to Fb instead). A36 allowable bending stress Fb = 0.66Fy = 164 MPa. The applied stress 155 MPa < 164 MPa, so the member is adequate for bending. Review the correct answer and associated code provision."
+  }
+}

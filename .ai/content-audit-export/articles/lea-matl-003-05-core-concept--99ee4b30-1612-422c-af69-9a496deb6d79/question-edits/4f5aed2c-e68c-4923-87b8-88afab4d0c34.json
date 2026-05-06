@@ -1,12 +1,10 @@
 {
   "question_id": "4f5aed2c-e68c-4923-87b8-88afab4d0c34",
   "baseline_hash": "sha256:a79045924aa077efe778ca20158431185b6e669d50e7e7bf683a93649dce0478",
-  "reason": "Missing 'takeaway' key in rationale. Added an appropriate takeaway summarizing the key learning point.",
-  "approved_by": "hermes-question-audit",
-  "approved_at": "2026-05-03T12:16:00.000000+00:00",
+  "reason": "Strict explanation backfill from existing specific rationale; answer key and options unchanged.",
+  "approved_by": "hermes-question-remediation-autopilot",
+  "approved_at": "2026-05-06T16:20:43.343Z",
   "proposed": {
-    "rationale": {
-      "takeaway": "Welding process selection depends on material thickness, position, cost, and quality requirements. Compare SMAW, GMAW, GTAW, and SAW by their key characteristics."
-    }
+    "explanation": "Visual Inspection detects only surface defects; it cannot reveal internal voids or lack of fusion. Radiographic Testing (RT) reveals internal defects but requires safety protocols, longer exposure time, and specialized equipment. UT is faster and safer. Magnetic Particle Testing (MT) detects surface and near-surface defects in ferrous materials but does not reveal deep internal voids like UT does. Ultrasonic Testing (UT) uses sound waves to detect internal defects. It is non-destructive, relatively quick, and effective for structural work. UT is increasingly preferred over RT (radiography) due to safety and cost advantages."
   }
 }

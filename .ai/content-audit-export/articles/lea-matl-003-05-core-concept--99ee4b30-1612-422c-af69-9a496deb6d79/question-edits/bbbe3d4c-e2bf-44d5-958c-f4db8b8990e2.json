@@ -1,12 +1,10 @@
 {
   "question_id": "bbbe3d4c-e2bf-44d5-958c-f4db8b8990e2",
   "baseline_hash": "sha256:de159b357b319c6a3bf1c8f810e4ef7f98c64729c8919da076addc65aba8aa19",
-  "reason": "Missing 'takeaway' key in rationale. Added an appropriate takeaway summarizing the key learning point.",
-  "approved_by": "hermes-question-audit",
-  "approved_at": "2026-05-03T12:16:00.000000+00:00",
+  "reason": "Strict explanation backfill from existing specific rationale; answer key and options unchanged.",
+  "approved_by": "hermes-question-remediation-autopilot",
+  "approved_at": "2026-05-06T16:20:43.344Z",
   "proposed": {
-    "rationale": {
-      "takeaway": "Welding process selection depends on material thickness, position, cost, and quality requirements. Compare SMAW, GMAW, GTAW, and SAW by their key characteristics."
-    }
+    "explanation": "GMAW does not rely on flux coating; the flux is in SMAW electrodes. While GMAW uses external gas, the deposition rate is higher, not lower. GMAW does not use flux coating; this describes SMAW, which has a lower deposition rate. GMAW employs external shielding gas (typically argon-CO₂ mixture) and achieves a higher deposition rate than SMAW, making it economical for production shop welding of high-volume structural members."
   }
 }

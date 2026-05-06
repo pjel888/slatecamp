@@ -1,0 +1,10 @@
+{
+  "question_id": "73d3f973-45ee-4581-8e57-e2b238ece6c2",
+  "baseline_hash": "sha256:32704f3a8d3305d9be5d6a71bcabf7760e03eda130c523c8cc623a4f3f27960a",
+  "reason": "Strict explanation backfill from existing specific rationale; answer key and options unchanged.",
+  "approved_by": "hermes-question-remediation-autopilot",
+  "approved_at": "2026-05-06T16:20:43.343Z",
+  "proposed": {
+    "explanation": "0.60Fy is the allowable axial compression stress, not shear. 0.66Fy is the allowable bending stress, not shear. 0.50Fy is not a standard ASTM A36 allowable fraction. Shear stress in steel is governed by the lower allowable stress fraction 0.40Fy. For A36 with Fy = 250 MPa, Fv = 0.40 × 248 = 99.2 ≈ 99 MPa. Review the correct answer and associated code provision."
+  }
+}
