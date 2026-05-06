@@ -1,0 +1,365 @@
+# Migration Mismatch Diagnosis
+
+Status: BLOCKED_FOR_SAFE_REPAIR
+
+## Exact mismatch
+
+`supabase migration list --linked` returned:
+
+- Matched local/remote versions: 6
+- Present locally but absent remotely: 96
+- Present remotely but missing locally: 214
+- Local migration SQL files currently in `supabase/migrations`: 101
+
+## Remote versions missing locally
+
+- 20260314120428
+- 20260314134022
+- 20260314141440
+- 20260314142905
+- 20260314142925
+- 20260314142946
+- 20260317042455
+- 20260317042457
+- 20260317042511
+- 20260317083439
+- 20260318063153
+- 20260318063324
+- 20260318065344
+- 20260319042138
+- 20260319044156
+- 20260319045213
+- 20260319051116
+- 20260319053402
+- 20260319060902
+- 20260319060937
+- 20260319061005
+- 20260319062709
+- 20260319062710
+- 20260319062731
+- 20260319075010
+- 20260319103845
+- 20260319103943
+- 20260319104009
+- 20260319104019
+- 20260319104033
+- 20260319104051
+- 20260319104120
+- 20260319104125
+- 20260319113043
+- 20260319115710
+- 20260319131514
+- 20260319132413
+- 20260319133541
+- 20260319134915
+- 20260319134925
+- 20260319134933
+- 20260319134936
+- 20260319134937
+- 20260319162231
+- 20260319162452
+- 20260319163613
+- 20260319171850
+- 20260320030140
+- 20260320030629
+- 20260320030813
+- 20260320031243
+- 20260320032428
+- 20260320033314
+- 20260320033539
+- 20260320035846
+- 20260320040827
+- 20260320041424
+- 20260320041453
+- 20260320041714
+- 20260320042101
+- 20260320042608
+- 20260320043703
+- 20260320043736
+- 20260320045649
+- 20260320045819
+- 20260320050200
+- 20260320050259
+- 20260320050651
+- 20260320050739
+- 20260320050759
+- 20260320050948
+- 20260320051056
+- 20260320051631
+- 20260320055142
+- 20260320055322
+- 20260320055523
+- 20260320055551
+- 20260320055616
+- 20260320055834
+- 20260320060054
+- 20260320060116
+- 20260320062318
+- 20260320062346
+- 20260320134805
+- 20260320141328
+- 20260320143006
+- 20260320143318
+- 20260320153951
+- 20260320154336
+- 20260320154711
+- 20260320154724
+- 20260320154806
+- 20260320160648
+- 20260320160752
+- 20260320161204
+- 20260320190031
+- 20260320211548
+- 20260321045646
+- 20260321051310
+- 20260321051622
+- 20260321081601
+- 20260321081634
+- 20260321085614
+- 20260321085634
+- 20260321090251
+- 20260321091908
+- 20260321092114
+- 20260321092640
+- 20260321092729
+- 20260321092822
+- 20260321093329
+- 20260321093704
+- 20260321095722
+- 20260321122957
+- 20260321133857
+- 20260321135046
+- 20260321155248
+- 20260321160501
+- 20260322052547
+- 20260322052616
+- 20260322052745
+- 20260322052950
+- 20260322053234
+- 20260322053403
+- 20260322053450
+- 20260322053534
+- 20260322053557
+- 20260323173651
+- 20260323191748
+- 20260323191818
+- 20260323192057
+- 20260323192205
+- 20260323192247
+- 20260323194232
+- 20260323194759
+- 20260323195506
+- 20260323195524
+- 20260324005021
+- 20260324005457
+- 20260324010349
+- 20260324010518
+- 20260324011103
+- 20260324011224
+- 20260324012044
+- 20260324012209
+- 20260324012847
+- 20260324013017
+- 20260324042425
+- 20260324042509
+- 20260324043143
+- 20260324043343
+- 20260324043418
+- 20260324043430
+- 20260324043640
+- 20260324044734
+- 20260324055745
+- 20260324061206
+- 20260324062916
+- 20260324200249
+- 20260325021026
+- 20260325021158
+- 20260325021224
+- 20260325021244
+- 20260325021516
+- 20260325021914
+- 20260325102549
+- 20260325102650
+- 20260325102710
+- 20260325102808
+- 20260325102907
+- 20260325102937
+- 20260325103036
+- 20260325103107
+- 20260325103121
+- 20260326030025
+- 20260326050609
+- 20260326051948
+- 20260326052835
+- 20260326054014
+- 20260326080000
+- 20260326090000
+- 20260326100000
+- 20260330082212
+- 20260330082249
+- 20260331041215
+- 20260401112655
+- 20260401112658
+- 20260401112702
+- 20260401113000
+- 20260401113003
+- 20260401113028
+- 20260401113057
+- 20260401144857
+- 20260401153105
+- 20260402022227
+- 20260402022251
+- 20260405100000
+- 20260406143910
+- 20260406143928
+- 20260406143943
+- 20260406144357
+- 20260406155350
+- 20260407031040
+- 20260407031053
+- 20260407031110
+- 20260407031136
+- 20260407031223
+- 20260407034050
+- 20260407041819
+- 20260407041848
+- 20260408074446
+- 20260501083350
+- 20260501083402
+- 20260501090108
+
+## Local versions absent remotely
+
+- $ (command -v supabase >/dev/null && supabase migration list --linked)
+- 004
+- 005
+- 006
+- 007
+- 008
+- 009
+- 010
+- 011
+- 012
+- 013
+- 014
+- 015
+- 016
+- 017
+- 018
+- 019
+- 020
+- 021
+- 032
+- 033
+- 034
+- 035
+- 036
+- 037
+- 038
+- 039
+- 20250315000000
+- 20260320
+- 20260321
+- 20260321
+- 20260321
+- 20260321
+- 20260324
+- 20260324
+- 20260324
+- 20260325
+- 20260325
+- 20260325
+- 20260325
+- 20260326
+- 20260326
+- 20260326
+- 20260326
+- 20260326
+- 20260326
+- 20260326
+- 20260326
+- 20260326
+- 20260326
+- 20260326
+- 20260326
+- 20260326
+- 20260326
+- 20260326
+- 20260326
+- 20260326
+- 20260326
+- 20260329
+- 20260329
+- 20260331
+- 20260403
+- 20260403
+- 20260405
+- 20260405
+- 20260406183904
+- 20260407
+- 20260407
+- 20260407
+- 20260407
+- 20260407
+- 20260407
+- 20260407
+- 20260407
+- 20260407
+- 20260408
+- 20260408
+- 20260408
+- 20260408
+- 20260411
+- 20260411
+- 20260412
+- 20260412
+- 20260412
+- 20260412
+- 20260412
+- 20260412
+- 20260418120000
+- 20260418130000
+- 20260425093000
+- 20260429143000
+- 20260430110000
+- 20260430123000
+- 20260501085339
+- 20260501090005
+- 20260505145349
+
+## Same timestamp divergent-content risk
+
+No same-timestamp local/remote pairs beyond the six matched rows were available to compare. The dominant risk is worse: hundreds of remote migration-history rows have no corresponding local migration file, and dozens of local files have no corresponding remote history row.
+
+## Git-history restoration check
+
+A repo-wide `git log --all --name-only -- supabase/migrations` search found 0 restorable local files whose filename version matches the 214 remote-only versions. Therefore the preferred restoration path is unavailable from this checkout's Git history.
+
+## Likely source of mismatch
+
+The local migration directory appears to have been normalized/renamed into coarse versions such as `004`, `20260326`, `20260407`, etc., while the remote history contains granular timestamp versions such as `20260319060902`. This indicates migration-history lineage drift, not a single missing migration file.
+
+## Whether `db pull` is safer than repair
+
+`supabase db pull` is safer than `migration repair` for capturing remote schema shape, but it does not by itself reconcile the remote migration-history table. It would create another local migration snapshot while leaving the 214 remote-only history rows unresolved for `db push`.
+
+## Whether repair is required
+
+A broad repair would be required to make `supabase db push --dry-run` pass under the current CLI model, but the CLI-suggested `migration repair --status reverted` would mutate 214 remote migration-history rows. That is not metadata-only safe because the actual schema effects of those 214 migrations are not represented by local SQL files and cannot be proven absent.
+
+## Whether migration files should be restored or recreated
+
+- Restore from git history: not possible from current repo history evidence.
+- Recreate locally: possible only as a remote schema snapshot via `db pull`, but that would not be equivalent to the original migration history and would not make individual remote history rows auditable.
+
+## Whether any migration history row should be marked applied/reverted
+
+No. Marking any of the 214 remote-only rows reverted would be speculative. Marking the 96 local-only rows applied would also be speculative because many may already exist in remote schema under different granular versions.
+
+## Admin audit schema state
+
+A linked read-only schema probe found 0 of the expected admin AI audit tables/views/functions currently present remotely. The intended admin audit migrations appear absent from the remote schema.
+
+## Recommended action
+
+Do not run `migration repair` and do not run live admin schema/apply through normal migration push. The safe next database-governance action is to reconcile the migration lineage offline: either recover the original granular migration files from the environment that generated the remote history, or create a new clean migration baseline/rebaseline plan with explicit database-owner approval and backup. Until that exists, live admin audit sync remains blocked.

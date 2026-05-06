@@ -1,6 +1,6 @@
 # Admin AI Audit Schema Probe
 
-Generated: 2026-05-06T04:13:35.149Z
+Generated: 2026-05-06T05:49:56.097Z
 
 Status: DB_SCHEMA_PROBE_SKIPPED_NO_ENV
 

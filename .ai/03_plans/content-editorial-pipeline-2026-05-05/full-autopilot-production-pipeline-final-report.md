@@ -235,3 +235,8 @@ Local end-to-end editorial pipeline implementation: READY_FOR_REVIEW_AND_LOCAL_O
 Live Supabase/admin sync apply: NOT_READY_UNTIL_MIGRATION_HISTORY_RECONCILED.
 External embeddings: NOT_READY_UNTIL_PROVIDER_ADAPTER_AND_BOUNDARY_REVIEW_EXIST.
 Live article/question content apply: IMPLEMENTED_AS_DRY_RUN_SAFE_PREVIEW_ONLY; live mutation adapter not executed.
+
+
+## Supabase migration reconciliation update — 2026-05-06
+
+A live Supabase reconciliation pass was attempted with user approval. Evidence is saved under `supabase-migration-reconciliation/`. The pass stopped before DB mutation because the linked remote contains 214 migration-history versions missing locally, while local contains 96 migration versions absent remotely. No exact missing remote-version files were restorable from Git history. `migration repair` was not used because the CLI-suggested broad reverted repair would be speculative. Linked schema probe found the admin AI audit schema absent remotely. Live admin audit schema/apply remains blocked until migration lineage is recovered or explicitly rebaselined with a backup-backed database-governance plan.

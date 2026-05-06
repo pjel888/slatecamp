@@ -1,3 +1,3 @@
 # Current Task Handoff
 
-Status: full local autopilot production editorial pipeline implementation complete. Final report: `full-autopilot-production-pipeline-final-report.md`. Live DB apply deferred due Supabase migration-history mismatch from dry-run.
+Status: Supabase live reconciliation stopped for real database-safety risk. See `supabase-migration-reconciliation/final-migration-reconciliation-report.md`. No `migration repair`, no `db pull`, no live admin schema apply, and no admin audit sync apply were performed. The linked remote has 214 migration-history versions missing locally and local has 96 migration versions absent remotely.
