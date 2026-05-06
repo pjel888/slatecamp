@@ -1,5 +1,12 @@
 # Theory of Architecture — Mastery & Connections
 
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Theory of Architecture — Mastery & Connections** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
+
 ## Learning Goal
 
 Achieve synthesis-level understanding of Theory of Architecture as a coherent intellectual arc from fundamental questions (what is architecture?) through design principles, philosophies, movements, perception, programming, tropical design, and Filipino identity. Connect Theory to History (movement-to-manifesto), Architectural Design (space planning as bridge), Planning (tropical design as site design), and Laws (ethics dimension).

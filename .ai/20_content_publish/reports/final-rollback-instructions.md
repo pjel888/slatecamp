@@ -1,3 +1,3 @@
 # Final Rollback Instructions
 
-Use the per-batch backup and rollback manifest under `.ai/20_content_publish/backups/` and `.ai/20_content_publish/rollback/`. Roll back only by exact `article_id` filters. Never run broad table updates.
+Use rollback manifests under `.ai/20_content_publish/rollback/` and exact `article_id` filters only. Do not rollback without backing up current remote rows first.

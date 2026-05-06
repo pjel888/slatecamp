@@ -1,5 +1,12 @@
 # History of Architecture — Mastery & Connections
 
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **History of Architecture — Mastery & Connections** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
+
 ## Learning Goal
 
 Achieve synthesis-level understanding of architectural history as an interconnected web of influences across periods and cultures. Trace the river of influence from Ancient through Medieval, Renaissance, Baroque, Neoclassicism, Modernism, and Contemporary. Connect cross-cultural threads (Islamic → Gothic, Japanese → Wright, Spanish Colonial → Philippine earthquake Baroque). Integrate History with Theory (movement-to-manifesto relationships), Philippine Architecture, and Architectural Design.

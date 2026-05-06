@@ -1,5 +1,12 @@
 # Architectural Design and Site Planning — Mastery & Connections
 
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Architectural Design and Site Planning — Mastery & Connections** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
+
 ## Learning Goal
 
 Achieve synthesis-level understanding of Architectural Design as the integration subject of the LEA. Connect all 13 subtopics across design process, anthropometrics, building typology, codes, and graphic communication. Trace how Architectural Design draws from Structural Conceptualization, MEPF, Laws, Theory, Materials, and Planning to produce complete, code-compliant building designs.

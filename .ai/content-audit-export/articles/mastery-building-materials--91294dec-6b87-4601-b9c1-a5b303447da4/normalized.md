@@ -1,5 +1,12 @@
 # Building Materials and Construction Methods — Mastery & Connections
 
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Building Materials and Construction Methods — Mastery & Connections** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
+
 ## Learning Goal
 
 Achieve synthesis-level understanding of Building Materials as a connected system from raw material properties through construction methods, estimating, and specifications. Trace the computational chain (material → quantity → cost) and connect Materials knowledge to Structures (concrete f'c, steel fy, timber properties), MEPF (insulation, waterproofing, firestopping), Architectural Design (finishes selection, specifications writing), and Sustainable Design (BERDE, embodied carbon).

@@ -1,15 +1,15 @@
 # Final Content Production Report
 
-Updated: 2026-05-06T10:36:54.441467Z
+Updated: 2026-05-06T10:40:43.168710Z
 
 ## Current published totals
 
-- Articles remote-verified through safe path: 534
+- Articles remote-verified through safe path: 562
 - Questions remote-verified through safe path: 0
 
 ## Latest milestone
 
-Batch 013 published and verified 50 articles.
+Batch 014 published and verified 28 articles; 5 code/test smoke artifact rows quarantined.
 
 ## Validation
 
