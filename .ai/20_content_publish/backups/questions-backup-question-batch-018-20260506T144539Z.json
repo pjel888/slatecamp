@@ -1,0 +1,2527 @@
+{
+  "created_at": "2026-05-06T14:45:50.010Z",
+  "batch": "question-batch-018",
+  "table": "questions",
+  "rows": [
+    {
+      "question_id": "cd4bc609-41ab-46f9-ace4-8932e392655f",
+      "article_id": "c158e63c-6120-4b2f-9784-c853ef25baa5",
+      "topic_id": "ccea0a07-3d5e-483b-b6cc-fa61eb5bb98b",
+      "text": "What critical distinction should an architect maintain when creating a bubble diagram?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bubbles must be drawn to scale so designers can measure exact dimensions from the diagram, ensuring precise planning"
+        },
+        {
+          "id": "b",
+          "text": "Bubbles represent spaces but should be abstract; the diagram constrains relationships but does not prescribe architectural form"
+        },
+        {
+          "id": "c",
+          "text": "Bubbles should include internal wall layouts and furniture to guide subsequent design decisions, providing a detailed preliminary plan"
+        },
+        {
+          "id": "d",
+          "text": "Bubbles must be circular; other shapes are inappropriate and confuse the design team, leading to potential misinterpretations"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Bubble diagrams are intentionally not to scale; size indicates approximate area relationship loosely, not precise dimensions.",
+        "c": "Including walls and furniture transforms a bubble diagram into a preliminary design sketch, conflating programming with design.",
+        "d": "Bubbles may be circles, squares, or irregular shapes; shape carries no architectural meaning.",
+        "correct": "Bubble diagrams are abstract analytical tools. They show which spaces must be adjacent and which must be separated, but intentionally avoid prescribing form. The designer interprets 'adjacent' through architectural language—shared wall, connecting door, open space, etc.",
+        "takeaway": "The designer interprets 'adjacent' through architectural language—shared wall, connecting door, open space, etc."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-009-02-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "beaf13aa-a088-4bc2-a93d-066b5f2d680c",
+      "article_id": "c158e63c-6120-4b2f-9784-c853ef25baa5",
+      "topic_id": "ccea0a07-3d5e-483b-b6cc-fa61eb5bb98b",
+      "text": "Which adjacency relationship code indicates that two spaces must be separated to prevent functional conflict or safety risk?",
+      "options": [
+        {
+          "id": "a",
+          "text": "D (Desirable)"
+        },
+        {
+          "id": "b",
+          "text": "X (Undesirable)"
+        },
+        {
+          "id": "c",
+          "text": "U (Unimportant)"
+        },
+        {
+          "id": "d",
+          "text": "E (Essential)"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "D indicates beneficial but non-mandatory proximity.",
+        "c": "U indicates no functional relationship or no proximity requirement.",
+        "d": "E indicates spaces that must be immediately adjacent or nearly connected.",
+        "correct": "Undesirable (X) relationships indicate required separation. For example, mechanical equipment must be separated from clean rooms; loading docks must be separated from customer lobbies.",
+        "takeaway": "For example, mechanical equipment must be separated from clean rooms; loading docks must be separated from customer lobbies."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-009-02-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "4cb5065c-3c22-4b93-986d-0a421ce9eb75",
+      "article_id": "c158e63c-6120-4b2f-9784-c853ef25baa5",
+      "topic_id": "ccea0a07-3d5e-483b-b6cc-fa61eb5bb98b",
+      "text": "What is the primary purpose of an adjacency matrix in architectural programming?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To systematically document spatial relationships between all programmed spaces using codes (E, D, U, X)"
+        },
+        {
+          "id": "b",
+          "text": "To specify material selections and construction details for each space, which is not the primary function"
+        },
+        {
+          "id": "c",
+          "text": "To create a visual representation of the final building design and floor layout, which is not the primary function"
+        },
+        {
+          "id": "d",
+          "text": "To calculate the total building area and cost estimates, which is not the primary function"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Material and construction details are design decisions, not programming content.",
+        "c": "Adjacency matrices are analytical tools; they do not prescribe final design form.",
+        "d": "Area calculation uses area summary tables, not adjacency matrices.",
+        "correct": "An adjacency matrix ensures all functional pairs are evaluated for their spatial relationship: Essential (E), Desirable (D), Unimportant (U), or Undesirable (X). This systematic approach prevents overlooking relationships and ensures comprehensive programming.",
+        "takeaway": "This systematic approach prevents overlooking relationships and ensures comprehensive programming."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-009-02-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "c74e7b54-9d7e-4a3d-adc5-87de989716f3",
+      "article_id": "c158e63c-6120-4b2f-9784-c853ef25baa5",
+      "topic_id": "ccea0a07-3d5e-483b-b6cc-fa61eb5bb98b",
+      "text": "In a hospital program, the nursing station is coded as having an essential (E) adjacency to patient rooms, but the imaging/radiology department is coded as unimportant (U) or undesirable (X) to patient rooms. Which design strategy best respects both relationships?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Place all departments in one central location so they are equidistant from patient rooms"
+        },
+        {
+          "id": "b",
+          "text": "Create an open-plan design with nursing station in the center and all functions radiating outward equally"
+        },
+        {
+          "id": "c",
+          "text": "Prioritize patient convenience and co-locate all services adjacent to patient rooms regardless of the matrix"
+        },
+        {
+          "id": "d",
+          "text": "Place patient rooms in a linear hallway with nursing station at the end; locate imaging in a separate wing"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Equidistant placement ignores the difference between essential and undesirable relationships.",
+        "b": "Open-plan does not separate imaging from patients or allow nursing supervision of a defined zone.",
+        "c": "Patient convenience must be balanced against functional requirements; imaging separation is necessary for patient safety and rest.",
+        "correct": "Nursing stations need proximity to observe and access patient areas frequently (essential). Imaging creates noise, vibration, and radiation safety concerns requiring separation from patient rest areas. Linear hallway organization satisfies the first; separate wing satisfies the second.",
+        "takeaway": "Linear hallway organization satisfies the first; separate wing satisfies the second."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-009-02-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "a56f7835-8191-4f48-b30a-b37726a23c80",
+      "article_id": "82480e11-1573-4911-a865-c26ee4d44238",
+      "topic_id": "db8bda14-41c7-4143-aa5a-a133405311a6",
+      "text": "Shape, as a property of form, refers to which of the following?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The two-dimensional outline or silhouette of a form when viewed as a profile; the geometric classification as regular or irregular"
+        },
+        {
+          "id": "b",
+          "text": "The three-dimensional volume and mass of a building, which contributes to its overall form and spatial presence"
+        },
+        {
+          "id": "c",
+          "text": "The color and material qualities of a building's surfaces, which affect its aesthetic and tactile perception"
+        },
+        {
+          "id": "d",
+          "text": "The size of the building relative to its surroundings, influencing its visual impact and contextual integration"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "This describes volume or mass.",
+        "c": "This describes color and texture.",
+        "d": "This describes size or scale.",
+        "correct": "Shape is the two-dimensional outline or silhouette. Regular shapes (circle, square, triangle) are easily perceived and memorable. Irregular shapes are more complex and visually unique.",
+        "takeaway": "Irregular shapes are more complex and visually unique."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-001-11-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.120988+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "78e51d73-0ab4-4f71-bcbf-67bc27af26e6",
+      "article_id": "82480e11-1573-4911-a865-c26ee4d44238",
+      "topic_id": "db8bda14-41c7-4143-aa5a-a133405311a6",
+      "text": "How are form and space related in architectural design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They are independent concerns; an architect can excellently design one without addressing the other, though this is rarely effective"
+        },
+        {
+          "id": "b",
+          "text": "Space is more important than form in contemporary architecture, which may not always be the case"
+        },
+        {
+          "id": "c",
+          "text": "Form is more important; space is secondary and determined automatically by form design, which oversimplifies their relationship"
+        },
+        {
+          "id": "d",
+          "text": "They are complementary and interdependent—form creates space by bounding it, and space gives meaning to form by providing context and experiential environment"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Both must be addressed; neglecting either results in failed architecture.",
+        "b": "Both are equally essential; neither is subordinate.",
+        "c": "Space must be intentionally designed, not treated as automatic consequence.",
+        "correct": "The relationship is dialectical. A beautiful sculptural form without attention to spaces it creates is inadequate. Conversely, well-proportioned space with incoherent bounding forms fails. Both must be designed simultaneously with equal care.",
+        "takeaway": "Both must be designed simultaneously with equal care."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-001-11-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.120988+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "e0b39015-f7bf-4a35-bcf8-7c4bb34bf283",
+      "article_id": "82480e11-1573-4911-a865-c26ee4d44238",
+      "topic_id": "db8bda14-41c7-4143-aa5a-a133405311a6",
+      "text": "Form in architectural design refers to which of the following?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The shape, size, color, texture, position, and material expression of the building as a visible, solid object"
+        },
+        {
+          "id": "b",
+          "text": "The interior volumes and emptiness that occupants inhabit, which is a secondary consideration"
+        },
+        {
+          "id": "c",
+          "text": "The functional program and spatial arrangements of rooms, which is more about planning than form"
+        },
+        {
+          "id": "d",
+          "text": "The structural systems and engineering calculations, which are not typically considered part of form"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "This describes space, not form.",
+        "c": "This describes program and spatial organization.",
+        "d": "While structure influences form, form itself is the visible manifestation.",
+        "correct": "Form is the building as a three-dimensional sculptural object with recognizable visual presence, material identity, and aesthetic character. It is what the eye identifies directly.",
+        "takeaway": "It is what the eye identifies directly."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-001-11-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.120988+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "8b7da0f3-8595-4393-a802-35817669ae89",
+      "article_id": "82480e11-1573-4911-a865-c26ee4d44238",
+      "topic_id": "db8bda14-41c7-4143-aa5a-a133405311a6",
+      "text": "Visual inertia in architectural form refers to which quality?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The movement of people through the building, influencing circulation patterns and spatial flow"
+        },
+        {
+          "id": "b",
+          "text": "The apparent stability or instability of a form; high inertia = stable and formal; low inertia = dynamic and unstable-appearing"
+        },
+        {
+          "id": "c",
+          "text": "The structural forces and load paths within a building, determining its engineering integrity"
+        },
+        {
+          "id": "d",
+          "text": "The physical weight and material density of a building, affecting its perceived mass and presence"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Movement of occupants is separate from visual inertia.",
+        "c": "Structural forces are engineering concerns; visual inertia is perceptual.",
+        "d": "Visual inertia is perceptual, not about actual physical weight.",
+        "correct": "Visual inertia describes perceived stability. A regular, symmetrical, centered form has high visual inertia (reads as stable). An irregular, off-center, tilted form has low inertia (appears dynamic and tense).",
+        "takeaway": "An irregular, off-center, tilted form has low inertia (appears dynamic and tense)."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-001-11-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.120988+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "5c32230e-4493-4741-879c-8f0128756442",
+      "article_id": "82480e11-1573-4911-a865-c26ee4d44238",
+      "topic_id": "db8bda14-41c7-4143-aa5a-a133405311a6",
+      "text": "What does it mean that 'human sclea' is essential context when analyzing form properties?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Form properties must be understood relative to human body dimensions; a 40-foot-tall space might be monumental or intimate depending on its proportions, material quality, and purpose—not size alone"
+        },
+        {
+          "id": "b",
+          "text": "Contemporary buildings should ignore human scale in favor of abstract formal expression, prioritizing innovative design over traditional considerations"
+        },
+        {
+          "id": "c",
+          "text": "Scale is irrelevant to architectural experience; form properties matter regardless of human context, as the focus is on the design's conceptual integrity"
+        },
+        {
+          "id": "d",
+          "text": "Buildings should be small and intimate in size, ensuring that they are approachable and relatable to human users"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Human experience is central to architecture; ignoring it disrespects the user.",
+        "c": "Human scale provides essential context for evaluating form properties.",
+        "d": "Scale is not about size limit; intimate scale can exist at large dimensions if proportioned appropriately.",
+        "correct": "Human scale does not mean small. It means that dimensions must be evaluated relative to human body size and comfort. A 40-foot atrium might overwhelm or inspire depending on proportions and materials; a 10-foot ceiling might feel confining or intimate depending on context.",
+        "takeaway": "A 40-foot atrium might overwhelm or inspire depending on proportions and materials; a 10-foot ceiling might feel confining or intimate depending on context."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-001-11-012",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "64ae719b-2ee4-4249-bd95-a0f1b2edb64a",
+      "article_id": "82480e11-1573-4911-a865-c26ee4d44238",
+      "topic_id": "db8bda14-41c7-4143-aa5a-a133405311a6",
+      "text": "A building facade has a grand central entry with smaller secondary entries on either side. This demonstrates which ordering principle?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Radial symmetry, where elements organize around a center, creating a balanced and harmonious design"
+        },
+        {
+          "id": "b",
+          "text": "Grid-based order, where all elements follow a regular module, ensuring uniformity and predictability"
+        },
+        {
+          "id": "c",
+          "text": "Hierarchical order, where visual and functional importance is expressed through scale and prominence"
+        },
+        {
+          "id": "d",
+          "text": "Random ordering with no systematic principle, leading to a chaotic and unstructured appearance"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While the large entry might occupy center, the principle is hierarchy, not radial symmetry.",
+        "b": "While grid may organize the composition, the distinctive sizing creates hierarchy.",
+        "d": "The ordering is systematic; the statement implies intentional hierarchy.",
+        "correct": "Hierarchy distinguishes primary (grand entry) from secondary (smaller entries) features through scale and placement. This establishes relationships, directs attention, and clarifies spatial organization.",
+        "takeaway": "This establishes relationships, directs attention, and clarifies spatial organization."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-001-11-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "d7810638-4b9c-4dab-b6a7-bf2e9f7602f2",
+      "article_id": "82480e11-1573-4911-a865-c26ee4d44238",
+      "topic_id": "db8bda14-41c7-4143-aa5a-a133405311a6",
+      "text": "In the Pantheon, how do form and space achieve architectural excellence through integration?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The interior is perfectly proportioned but the exterior form is unremarkable, which is a subjective interpretation"
+        },
+        {
+          "id": "b",
+          "text": "Form and space are independent achievements; the Pantheon succeeds in one but not the other, which is a debated viewpoint"
+        },
+        {
+          "id": "c",
+          "text": "The monumental dome (venustas and firmitas) is unified with the perfectly proportioned hemispherical interior space (utilitas), revealing how form and space integrate coherently"
+        },
+        {
+          "id": "d",
+          "text": "The dome is structurally impressive but the interior space is poorly proportioned, which is not a widely held opinion"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The exterior dome is monumental and magnificent.",
+        "b": "The building demonstrates complete integration of form and space.",
+        "d": "The interior proportion is masterful, not poor.",
+        "correct": "The Pantheon exemplifies form-space unity: the dome is both structurally sound (honest concrete engineering) and spiritually inspiring (venustas through monumentality and light); the interior space is proportionally perfect with harmonious relationships.",
+        "takeaway": "The Pantheon exemplifies form-space unity: the dome is both structurally sound (honest concrete engineering) and spiritually inspiring (venustas through monumentality and light); the interior space is proportionally perfect with harmonious relationships."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-001-11-011",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "210547c0-d809-47c4-bf09-28ce7bad7b20",
+      "article_id": "82480e11-1573-4911-a865-c26ee4d44238",
+      "topic_id": "db8bda14-41c7-4143-aa5a-a133405311a6",
+      "text": "Which of the following is the most fundamental order system in architecture?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hierarchy, which distinguishes primary from secondary elements, establishing a clear visual and functional order"
+        },
+        {
+          "id": "b",
+          "text": "Axis and proportion, which create directional emphasis and guide the viewer's eye through the space"
+        },
+        {
+          "id": "c",
+          "text": "Symmetry, which creates formal and monumental compositions, often used in classical architecture"
+        },
+        {
+          "id": "d",
+          "text": "Grid-based order, which establishes regular patterns enabling systematic organization and proportional harmony"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Hierarchy depends on grid or other organizational framework.",
+        "b": "Axes and proportions operate within grid structures.",
+        "c": "Symmetry is one ordering principle but not foundational.",
+        "correct": "A grid is the foundational ordering system. Other systems (symmetry, hierarchy, axes) often operate within or alongside grid structures. The grid creates proportional harmony and makes complex systems comprehensible.",
+        "takeaway": "The grid creates proportional harmony and makes complex systems comprehensible."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "SYS"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-001-11-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "9ee90ce7-f4a0-4753-a054-aaaafe24e278",
+      "article_id": "82480e11-1573-4911-a865-c26ee4d44238",
+      "topic_id": "db8bda14-41c7-4143-aa5a-a133405311a6",
+      "text": "How do high visual inertia and low visual inertia serve different architectural purposes?",
+      "options": [
+        {
+          "id": "a",
+          "text": "High inertia (stability) suits institutions, monuments, and formal buildings; low inertia (dynamism) suits buildings expressing change, creativity, or contemporary energy"
+        },
+        {
+          "id": "b",
+          "text": "Visual inertia is a minor aesthetic concern unrelated to architectural meaning, often overlooked in design considerations"
+        },
+        {
+          "id": "c",
+          "text": "Low inertia is never appropriate in architecture; instability should be avoided, as it may compromise structural integrity"
+        },
+        {
+          "id": "d",
+          "text": "High inertia is always superior to low inertia in architectural design, providing a sense of permanence and reliability"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Visual inertia directly communicates institutional meaning and cultural values.",
+        "c": "Low inertia is not instability; it is perceived dynamism and tension—appropriate for many contemporary buildings.",
+        "d": "Appropriateness depends on purpose, not inherent superiority.",
+        "correct": "Form properties communicate meaning. Stability (high inertia) conveys authority and permanence; dynamism (low inertia) conveys change and innovation. The choice serves the building's cultural and institutional purpose.",
+        "takeaway": "The choice serves the building's cultural and institutional purpose."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-001-11-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "494dd813-c79d-4eed-bc61-f0725bf96d91",
+      "article_id": "82480e11-1573-4911-a865-c26ee4d44238",
+      "topic_id": "db8bda14-41c7-4143-aa5a-a133405311a6",
+      "text": "Symmetry as an ordering principle in architecture creates which effects?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Irregular and unique spatial experiences, often leading to innovative design solutions"
+        },
+        {
+          "id": "b",
+          "text": "Dynamic movement and visual tension, which can enhance the aesthetic appeal of a space"
+        },
+        {
+          "id": "c",
+          "text": "Confusion and difficulty in understanding spatial organization, particularly in complex layouts"
+        },
+        {
+          "id": "d",
+          "text": "Bilateral symmetry creates mirror-image left-right correspondence; radial symmetry mirrors about a center point; both create formal, monumental, balanced, and stable compositions with high visual inertia"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Symmetry creates clear, organized spatial patterns.",
+        "b": "Asymmetry or diagonal alignment creates dynamic effects.",
+        "c": "Symmetry is one of the clearest ordering principles.",
+        "correct": "Symmetry is inherently stable and monumental. Bilateral (left-right mirror) and radial (center-point mirror) symmetry both create formal, balanced order with high visual inertia.",
+        "takeaway": "Bilateral (left-right mirror) and radial (center-point mirror) symmetry both create formal, balanced order with high visual inertia."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-001-11-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "9e789d23-1531-4508-9963-1c4cbd7eb4e3",
+      "article_id": "82480e11-1573-4911-a865-c26ee4d44238",
+      "topic_id": "db8bda14-41c7-4143-aa5a-a133405311a6",
+      "text": "How do ordering systems (grid, symmetry, hierarchy) contribute to both visual coherence and spatial clarity in architecture?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ordering systems are purely aesthetic devices with no functional purpose, often used to enhance visual appeal without affecting spatial organization"
+        },
+        {
+          "id": "b",
+          "text": "Ordering systems constrain creative design freedom and should be minimized in contemporary architecture, especially in projects that prioritize innovation over tradition"
+        },
+        {
+          "id": "c",
+          "text": "Ordering systems enable occupants to understand and navigate buildings by establishing relationships between elements, distinguishing importance, and creating comprehensible patterns—making complex buildings navigable and visually coherent"
+        },
+        {
+          "id": "d",
+          "text": "Ordering systems are equally important to form and space but operate independently of them, allowing for flexibility in design while maintaining a sense of order"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Order has profound functional and experiential consequences.",
+        "b": "Clear ordering often enables creativity rather than constraining it; complexity requires coherent organization.",
+        "d": "Ordering systems structure both form and space together.",
+        "correct": "Order is structural, not decorative. Without order, buildings become chaotic and confusing. Grids, hierarchies, and symmetries allow occupants to intuitively understand spatial organization and facilitate wayfinding, while creating visual coherence.",
+        "takeaway": "Grids, hierarchies, and symmetries allow occupants to intuitively understand spatial organization and facilitate wayfinding, while creating visual coherence."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "INT"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-001-11-013",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "77be1567-34b8-4aad-95b3-3bd96a071b0e",
+      "article_id": "59ea9844-0c75-4f39-873f-7cb83a14a924",
+      "topic_id": "c07f80eb-69c4-4e2e-b43d-506e417e2d0d",
+      "text": "When did Jørn Utzon resign from the Sydney Opera House project?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1957"
+        },
+        {
+          "id": "b",
+          "text": "1962"
+        },
+        {
+          "id": "c",
+          "text": "1966"
+        },
+        {
+          "id": "d",
+          "text": "1970"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "1957 was the design competition year, not the resignation year.",
+        "b": "1962 is during construction but not the resignation year.",
+        "d": "1970 was after Utzon's resignation; the building was completed in 1973 by other architects.",
+        "correct": "In 1966, he resigned in frustration' over clashes with clients and politicians and escalating costs and timelines.",
+        "takeaway": "The article states: 'In 1966, he resigned in frustration' over clashes with clients and politicians and escalating costs and timelines."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "CH"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-015-02-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.310909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "2cc9c47d-c041-4656-b259-8bb68cb21fc2",
+      "article_id": "59ea9844-0c75-4f39-873f-7cb83a14a924",
+      "topic_id": "c07f80eb-69c4-4e2e-b43d-506e417e2d0d",
+      "text": "How did the Sydney Opera House demonstrate that modernist architecture could differ from International Style anonymity?",
+      "options": [
+        {
+          "id": "a",
+          "text": "By using traditional ornamental detail and historical references in its design, which contrasted with modernist simplicity"
+        },
+        {
+          "id": "b",
+          "text": "By rejecting modernist principles entirely in favor of postmodern eclecticism, showcasing a blend of styles"
+        },
+        {
+          "id": "c",
+          "text": "By proving that monumental, distinctive, and culturally symbolic buildings could remain technically innovative and spatially complex"
+        },
+        {
+          "id": "d",
+          "text": "By incorporating Aboriginal and Māori design principles into its structural systems, highlighting cultural integration"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The Opera House did not rely on traditional ornament or historical references; it was modernist and sculptural.",
+        "b": "The Opera House remained within modernist principles while expanding them; it did not reject modernism.",
+        "d": "The article makes no mention of incorporating Aboriginal or Māori principles; the design was rooted in Utzon's modernist vision and Australia's maritime identity.",
+        "correct": "The Opera House proved modernist architecture could be monumental, symbolic, and culturally rooted while remaining technically innovative and spatially complex. It rejected International Style anonymity; it declared: architecture can be a nation's voice.'",
+        "takeaway": "It rejected International Style anonymity; it declared: architecture can be a nation's voice.'."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-015-02-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.310909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "f2dbc0a4-d6f1-40cf-a907-ed0004b07a49",
+      "article_id": "59ea9844-0c75-4f39-873f-7cb83a14a924",
+      "topic_id": "c07f80eb-69c4-4e2e-b43d-506e417e2d0d",
+      "text": "Who was the architect of the Sydney Opera House?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jørn Utzon (Danish)"
+        },
+        {
+          "id": "b",
+          "text": "Norman Foster (British)"
+        },
+        {
+          "id": "c",
+          "text": "Alvar Aalto (Finnish)"
+        },
+        {
+          "id": "d",
+          "text": "Le Corbusier (French-Swiss)"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Norman Foster is a contemporary British architect not associated with the Opera House.",
+        "c": "Alvar Aalto was a Finnish modernist who died before the Opera House was completed.",
+        "d": "Le Corbusier was influential in modernism but had no connection to the Opera House design.",
+        "correct": "Jørn Utzon, a Danish architect, won the international design competition in 1957 with the radical shell structure proposal.",
+        "takeaway": "Jørn Utzon, a Danish architect, won the international design competition in 1957 with the radical shell structure proposal."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "ID"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-015-02-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.310909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "52f0a540-c236-4a2e-b5cc-a767d6216b00",
+      "article_id": "59ea9844-0c75-4f39-873f-7cb83a14a924",
+      "topic_id": "c07f80eb-69c4-4e2e-b43d-506e417e2d0d",
+      "text": "What major spaces are contained within the Sydney Opera House?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Single large theater only, which is primarily used for opera performances"
+        },
+        {
+          "id": "b",
+          "text": "Two theaters (opera and drama), concert hall, restaurants, and public spaces"
+        },
+        {
+          "id": "c",
+          "text": "Multiple theaters but no public or commercial spaces, focusing solely on performance arts"
+        },
+        {
+          "id": "d",
+          "text": "Government offices and administrative buildings, which are not open to the public"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The Opera House contains multiple theater and cultural spaces, not a single theater.",
+        "c": "The building includes restaurants and public foyer spaces in addition to theaters.",
+        "d": "The Opera House is a cultural institution, not a government administrative building.",
+        "correct": "'two major theaters (opera and drama) plus concert hall, restaurants, and public spaces.' The building contains multiple cultural venues and public facilities integrated into the platform structure.",
+        "takeaway": "The article specifies 'two major theaters (opera and drama) plus concert hall, restaurants, and public spaces.' The building contains multiple cultural venues and public facilities integrated into the platform structure."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "ST"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-015-02-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.310909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "b39f11c3-224e-40cf-b2ac-5309c660bbfd",
+      "article_id": "59ea9844-0c75-4f39-873f-7cb83a14a924",
+      "topic_id": "c07f80eb-69c4-4e2e-b43d-506e417e2d0d",
+      "text": "How did the Sydney Opera House influence subsequent postmodern and deconstructivist architecture?",
+      "options": [
+        {
+          "id": "a",
+          "text": "By demonstrating that complex sculptural forms could not be rationally structured, leading to a reevaluation of architectural possibilities"
+        },
+        {
+          "id": "b",
+          "text": "By showing that form could be expressive and visually dramatic while remaining mathematically and structurally rational"
+        },
+        {
+          "id": "c",
+          "text": "By proving that modernism was superior to all architectural movements, thus discouraging experimentation with new styles"
+        },
+        {
+          "id": "d",
+          "text": "By establishing that buildings must prioritize function over symbolic expression, which limited the scope of architectural creativity"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The opposite is true; the Opera House proved complex sculptural forms could be rationally calculated.",
+        "c": "The article does not make claims of modernism's superiority; rather, it shows modernism can be expanded.",
+        "d": "The Opera House integrates symbolic expression with functional excellence; it demonstrates these are not mutually exclusive.",
+        "correct": "It enabled postmodern expressionism and deconstructivism by showing form need not be minimalist.' The Opera House proved sculptural forms could be structurally rational, allowing later movements to explore formal expression.",
+        "takeaway": "The article states: 'It enabled postmodern expressionism and deconstructivism by showing form need not be minimalist.' The Opera House proved sculptural forms could be structurally rational, allowing later movements to explore formal expression."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-015-02-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.310909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "4f433cab-9c8b-49c4-821b-67996fa5ccf9",
+      "article_id": "59ea9844-0c75-4f39-873f-7cb83a14a924",
+      "topic_id": "c07f80eb-69c4-4e2e-b43d-506e417e2d0d",
+      "text": "A structure features vaulted forms derived from a sphere's surface, with internal reinforced concrete ribs supporting thin outer cladding. Which structural system does this describe?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Post-and-beam construction"
+        },
+        {
+          "id": "b",
+          "text": "Traditional dome vault"
+        },
+        {
+          "id": "c",
+          "text": "Spherical shell structure"
+        },
+        {
+          "id": "d",
+          "text": "Arch and buttress system"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Post-and-beam construction is a different structural system without the curved shell geometry.",
+        "b": "Traditional dome vaults do not involve ribs supporting thin shells in the same way.",
+        "d": "Arch and buttress systems rely on horizontal thrust and vertical support, not spherical geometry and rib structures.",
+        "correct": "The spherical shell structure is Utzon's innovation, featuring ribs carrying loads and a thin outer shell layer—exactly as described in the question.",
+        "takeaway": "The spherical shell structure is Utzon's innovation, featuring ribs carrying loads and a thin outer shell layer—exactly as described in the question."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "recall",
+      "practice_context": [
+        "DESC"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-015-02-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.310909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "3c034d0a-2381-4936-a5f9-ec93a4f5bd53",
+      "article_id": "939408a5-777b-437f-ad59-555132f8714a",
+      "topic_id": "b4434bc1-78e8-4731-99df-864740cdb01e",
+      "text": "What is the primary characteristic distinguishing self-directed learning from structured learning?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Self-directed learning is more expensive, which is not a defining characteristic"
+        },
+        {
+          "id": "b",
+          "text": "Self-directed learning is individually selected, self-paced, and self-evaluated"
+        },
+        {
+          "id": "c",
+          "text": "Self-directed learning awards more credit hours, which is not necessarily true"
+        },
+        {
+          "id": "d",
+          "text": "Self-directed learning does not require documentation, which is incorrect as documentation may still be needed"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Cost is not the distinguishing characteristic; both types can be expensive or affordable.",
+        "c": "Self-directed learning awards modest credits, not more; structured learning awards higher credits.",
+        "d": "Documentation is required for self-directed learning to prove completion and relevance to practice.",
+        "correct": "Self-directed learning is individually selected and self-paced without external instruction; structured learning involves formal instruction and external evaluation.",
+        "takeaway": "Self-directed learning is architect-selected, self-paced, and self-evaluated; structured learning has external instruction and formal assessment."
+      },
+      "explanation": null,
+      "code_citation": "RA 10912",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-009-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:48.361702+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "528dc7cf-6866-4857-9ca8-7b47ae897c88",
+      "article_id": "939408a5-777b-437f-ad59-555132f8714a",
+      "topic_id": "b4434bc1-78e8-4731-99df-864740cdb01e",
+      "text": "What is the primary requirement for work-based learning CPD credits?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Completion of any professional project, regardless of its scope or impact on professional growth"
+        },
+        {
+          "id": "b",
+          "text": "Demonstration that work enhanced professional competencies beyond normal practice"
+        },
+        {
+          "id": "c",
+          "text": "Supervisory position over other architects, ensuring oversight and mentorship responsibilities"
+        },
+        {
+          "id": "d",
+          "text": "Five years of professional experience, irrespective of the nature of work undertaken"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Misconceives the requirement; mere project completion lacks the competency enhancement dimension.",
+        "c": "Misrestricts to supervisory roles; mentoring and complex project leadership qualify, but supervisory position alone is insufficient.",
+        "d": "Creates an arbitrary experience threshold unrelated to competency development in specific activities.",
+        "correct": "Work-based learning requires documentation that the activity enhanced professional competencies; normal project execution alone does not generate credits.",
+        "takeaway": "Work-based CPD requires proof that the professional activity developed competencies beyond routine project execution."
+      },
+      "explanation": null,
+      "code_citation": "RA 10912",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-009-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:48.361702+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "ad90669d-c54d-43d9-b707-ebc26de12179",
+      "article_id": "939408a5-777b-437f-ad59-555132f8714a",
+      "topic_id": "b4434bc1-78e8-4731-99df-864740cdb01e",
+      "text": "What activities qualify as research and innovation CPD for architects?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Any work-related activity, provided it contributes to professional development and knowledge expansion"
+        },
+        {
+          "id": "b",
+          "text": "Conducting studies on practice, testing materials, or investigating design approaches"
+        },
+        {
+          "id": "c",
+          "text": "Only published books on architecture, as these are considered significant contributions to the field"
+        },
+        {
+          "id": "d",
+          "text": "Attending professional conferences only, which are recognized as formal learning opportunities"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Overinclusively treats all work as research; research requires systematic investigation beyond routine practice.",
+        "c": "Unnecessarily limits to books; research may be documented in articles, findings summaries, or innovation records.",
+        "d": "Confuses conference attendance (structured learning) with research; research is independent investigation.",
+        "correct": "Research and innovation CPD includes conducting studies on architectural practice, testing methodologies, implementing new technologies, and investigating design innovations.",
+        "takeaway": "Research CPD covers studies on practice, material testing, and investigation of design innovations and emerging methodologies."
+      },
+      "explanation": null,
+      "code_citation": "RA 10912",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-009-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:48.361702+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "4d933900-559b-4aa5-817d-20d0bf43531a",
+      "article_id": "939408a5-777b-437f-ad59-555132f8714a",
+      "topic_id": "b4434bc1-78e8-4731-99df-864740cdb01e",
+      "text": "How does the Board evaluate research activities for CPD credit eligibility?",
+      "options": [
+        {
+          "id": "a",
+          "text": "All research activities automatically qualify, regardless of their impact or relevance"
+        },
+        {
+          "id": "b",
+          "text": "Only published research in peer-reviewed journals, which ensures academic rigor and credibility"
+        },
+        {
+          "id": "c",
+          "text": "Research is evaluated for professional relevance and contribution to practice advancement"
+        },
+        {
+          "id": "d",
+          "text": "Research does not qualify for CPD credits unless it meets specific criteria set by the Board"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Falsely grants automatic approval; discretionary evaluation is applied.",
+        "b": "Overrestricts to published work; documentation of findings, proposals, or innovation records suffices.",
+        "d": "Contradicts the CPD framework; research is explicitly recognized as a qualifying activity.",
+        "correct": "The Board evaluates research activities for professional relevance and demonstrated contribution to architectural practice advancement and professional evolution.",
+        "takeaway": "Research CPD approval depends on Board evaluation of professional relevance and contribution to practice advancement."
+      },
+      "explanation": null,
+      "code_citation": "RA 10912",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-009-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:48.361702+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "9fbd21a9-e3ed-4db1-855a-58dc25093f0b",
+      "article_id": "939408a5-777b-437f-ad59-555132f8714a",
+      "topic_id": "b4434bc1-78e8-4731-99df-864740cdb01e",
+      "text": "How do teaching activities generate CPD credits for architects?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only when conducted at universities, as these institutions are recognized for their contribution to professional development"
+        },
+        {
+          "id": "b",
+          "text": "Through teaching courses, delivering presentations, and conducting workshops"
+        },
+        {
+          "id": "c",
+          "text": "Only through teaching high school students, which is considered an outreach activity rather than professional development"
+        },
+        {
+          "id": "d",
+          "text": "Credits are not available for teaching activities, as they do not directly contribute to the architect's technical skill set"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Overrestricts to universities; teaching at professional organizations and conferences also qualifies.",
+        "c": "Inappropriately limits to secondary education; professional-level teaching qualifies.",
+        "d": "Contradicts the CPD framework; teaching is recognized as a high-value activity reflecting expertise.",
+        "correct": "Teaching CPD credits are earned through courses, presentations, and workshops at universities, professional organizations, or conferences reflecting the expertise and time commitment.",
+        "takeaway": "Teaching generates CPD through university courses, organization programs, conference presentations, and workshops."
+      },
+      "explanation": null,
+      "code_citation": "RA 10912",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-009-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:48.361702+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "f5aa7e65-9bc1-42f5-a334-e2a002f63c0e",
+      "article_id": "939408a5-777b-437f-ad59-555132f8714a",
+      "topic_id": "b4434bc1-78e8-4731-99df-864740cdb01e",
+      "text": "What types of materials qualify for self-directed learning credits?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only textbooks approved by the Board, which are specifically listed in the official guidelines"
+        },
+        {
+          "id": "b",
+          "text": "Professional journals, industry publications, and recognized organization resources"
+        },
+        {
+          "id": "c",
+          "text": "Any materials selected by the architect, provided they are relevant to the field of architecture"
+        },
+        {
+          "id": "d",
+          "text": "Only materials from foreign professional organizations, which must be accredited by international bodies"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Overrestricts to Board-approved textbooks; professional journals and recognized organization resources qualify without individual Board approval.",
+        "c": "Allows indiscriminate selection; materials must demonstrate relevance to architectural professional development.",
+        "d": "Unnecessarily limits to foreign sources; Philippine professional resources and publications qualify equally.",
+        "correct": "Self-directed learning includes professional journals, industry publications, and resources from recognized architectural organizations with documented completion.",
+        "takeaway": "Qualified self-directed materials are professional journals, industry publications, and resources from recognized architecture organizations."
+      },
+      "explanation": null,
+      "code_citation": "RA 10912",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-009-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:48.361702+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "d6e1ae31-9ada-49e2-99d0-5208b131ed20",
+      "article_id": "9c379f3b-c567-4615-957c-96e5bb791522",
+      "topic_id": "f003dc89-7bfc-450b-8120-aaad8da6f03f",
+      "text": "The Laws of the Indies (1573) were Spain's urban planning code that mandated which physical arrangement for all colonial settlements in the Philippines?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fortified walls with defensive bastions, designed to protect against invasions and local uprisings"
+        },
+        {
+          "id": "b",
+          "text": "A central grid-plaza surrounded by the church, municipal hall, and administrative buildings"
+        },
+        {
+          "id": "c",
+          "text": "Radial boulevards extending from a central palace, symbolizing the power and reach of the colonial government"
+        },
+        {
+          "id": "d",
+          "text": "Linear settlements along rivers for transportation and defense, facilitating trade and military movement"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Intramuros has fortifications, but the Laws of the Indies mandate was about town planning principles, not exclusively military walls.",
+        "b": "The Laws of the Indies (1573) mandated a grid-plaza town plan for all Spanish colonial settlements — a central plaza (plaza mayor) with the church, cabildo (municipal hall), and governor's residence, surrounded by a regular street grid. This became the template for every Philippine colonial town.",
+        "c": "Radial boulevards are Baroque/Haussmannian — not the Laws of the Indies pattern.",
+        "d": "Linear settlements along rivers were not the mandated pattern.",
+        "correct": "The Laws of the Indies (1573) mandated a grid-plaza town plan for all Spanish colonial settlements — a central plaza (plaza mayor) with the church, cabildo (municipal hall), and governor's residence, surrounded by a regular street grid. This became the template for Spanish colonial settlements across the Americas, including the Philippines.",
+        "takeaway": "LAWS OF THE INDIES = 1573 = Spanish PLANNING LAW (not tax, not military). GRID-PLAZA = every Philippine town follows this. Intramuros, Vigan, Cebu, provincial capitals all have this pattern."
+      },
+      "explanation": null,
+      "code_citation": "Core Concept; Key Provisions table; ERROR_REGISTRY ERR-PLAN-032",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-001-03-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:30.684926+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "b690488e-893c-4816-8c7f-2152b23d59ba",
+      "article_id": "9c379f3b-c567-4615-957c-96e5bb791522",
+      "topic_id": "f003dc89-7bfc-450b-8120-aaad8da6f03f",
+      "text": "The Burnham Plan of Manila (1905) proposed Taft Avenue as a major ceremonial boulevard. What was the planning purpose of this proposal?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To establish a grand, ceremonial connection from downtown Manila to the bay, reflecting City Beautiful principles"
+        },
+        {
+          "id": "b",
+          "text": "To create a transportation highway for military logistics, ensuring rapid troop movement"
+        },
+        {
+          "id": "c",
+          "text": "To isolate the commercial district from residential areas, promoting zoning separation"
+        },
+        {
+          "id": "d",
+          "text": "To provide a defensive perimeter against flood waters, enhancing urban resilience"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Taft Avenue was envisioned by Burnham as a grand, tree-lined ceremonial boulevard — a key City Beautiful feature — connecting downtown to the Pasig River and bay, creating a monumental civic axis.",
+        "b": "While useful for transportation, the City Beautiful purpose was ceremonial and aesthetic grandeur, not logistics.",
+        "c": "Burnham proposed mixed urban development, not segregation.",
+        "d": "Flood protection was not the primary purpose of Taft Avenue's design.",
+        "correct": "Taft Avenue was envisioned by Burnham as a grand, tree-lined ceremonial boulevard — a key City Beautiful feature — connecting downtown to the Pasig River and bay, creating a monumental civic axis.",
+        "takeaway": "CITY BEAUTIFUL = monumental spaces, diagonal boulevards for grandeur. Taft Avenue is Burnham's signature ceremonial boulevard in Manila."
+      },
+      "explanation": null,
+      "code_citation": "Core Concept; Key Provisions table",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-001-03-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:30.889344+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "4fa57fdf-380c-4a73-98b6-acbc5c544221",
+      "article_id": "9c379f3b-c567-4615-957c-96e5bb791522",
+      "topic_id": "f003dc89-7bfc-450b-8120-aaad8da6f03f",
+      "text": "Daniel Hudson Burnham's Plan of Manila (1905) was prepared as part of which urban design movement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Art Deco Urbanism, which focused on decorative arts and architecture"
+        },
+        {
+          "id": "b",
+          "text": "Garden City Movement, emphasizing self-contained communities surrounded by greenbelts"
+        },
+        {
+          "id": "c",
+          "text": "City Beautiful Movement"
+        },
+        {
+          "id": "d",
+          "text": "New Urbanism, advocating for walkable neighborhoods and sustainable urban planning"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Art Deco emerged in the 1920s–30s; Burnham's work predated and influenced different aesthetics.",
+        "b": "Ebenezer Howard's Garden City Movement (1898+) emphasized smaller, self-contained communities — different from Burnham's monumental civic grandeur.",
+        "c": "Burnham was the principal architect of the City Beautiful Movement (1890s–1910s), emphasizing monumental civic spaces, diagonal boulevards, parks, and classical architecture. His Plan of Manila (1905) applied City Beautiful principles to the Philippine capital.",
+        "d": "New Urbanism emerged in the 1980s, long after Burnham.",
+        "correct": "Burnham was the principal architect of the City Beautiful Movement (1890s–1910s), emphasizing monumental civic spaces, diagonal boulevards, parks, and classical architecture. His Plan of Manila (1905) applied City Beautiful principles to the Philippine capital.",
+        "takeaway": "BURNHAM = CITY BEAUTIFUL. Grand civic spaces, wide boulevards, monuments, parks. This is the design philosophy behind the Plan of Manila."
+      },
+      "explanation": null,
+      "code_citation": "Core Concept; Key Provisions table",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-001-03-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:30.889344+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "afc48214-81b1-46e6-91d2-53e8a574b5c8",
+      "article_id": "9c379f3b-c567-4615-957c-96e5bb791522",
+      "topic_id": "f003dc89-7bfc-450b-8120-aaad8da6f03f",
+      "text": "Comparing the Laws of the Indies (1573) grid-plaza model with the Burnham Plan of Manila (1905), which statement accurately characterizes their different planning philosophies?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Laws of the Indies emphasized pragmatic military efficiency; Burnham emphasized civic grandeur and monumentality"
+        },
+        {
+          "id": "b",
+          "text": "Laws of the Indies were merely administrative decrees with no spatial design specifications; Burnham was the first to apply systematic urban design principles to Manila"
+        },
+        {
+          "id": "c",
+          "text": "Laws of the Indies mandated uniform town design across colonies; Burnham proposed customized design for Manila's unique geography"
+        },
+        {
+          "id": "d",
+          "text": "Laws of the Indies focused on market-driven development; Burnham focused on government-controlled planning"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Both involved government planning; military efficiency was not the Laws of the Indies' primary focus.",
+        "b": "Laws of the Indies were detailed planning guidance — they definitely provided urban planning direction.",
+        "c": "The Laws of the Indies imposed a standardized template (grid-plaza) across all colonial settlements. Burnham, working 300+ years later, proposed a customized master plan responding to Manila's specific geography, climate, and economic needs, reflecting City Beautiful modernism.",
+        "d": "Both involved government authority; this distinction doesn't differentiate them.",
+        "correct": "The Laws of the Indies imposed a standardized template (grid-plaza) across all colonial settlements. Burnham, working 300+ years later, proposed a customized master plan responding to Manila's specific geography, climate, and economic needs, reflecting City Beautiful modernism.",
+        "takeaway": "LAWS OF INDIES = standardized grid-plaza template (efficient, replicable). BURNHAM = customized master plan (grand, site-specific). Different eras, different philosophies: Spanish pragmatism vs. American City Beautiful monumentalism."
+      },
+      "explanation": null,
+      "code_citation": "Core Concept; Key Provisions table",
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-001-03-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:30.889344+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "af45a0f0-eeed-441d-926c-e54e05863843",
+      "article_id": "9c379f3b-c567-4615-957c-96e5bb791522",
+      "topic_id": "f003dc89-7bfc-450b-8120-aaad8da6f03f",
+      "text": "Which of the following Manila landmarks is a direct legacy of the Burnham Plan of Manila (1905)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Intramuros' walled fortifications, which predate the Burnham Plan and reflect Spanish colonial military architecture."
+        },
+        {
+          "id": "b",
+          "text": "Luneta (Rizal Park) as an expanded grand civic space"
+        },
+        {
+          "id": "c",
+          "text": "The Pasig River's medieval defensive walls, which were part of the city's historical fortifications."
+        },
+        {
+          "id": "d",
+          "text": "Binondo's Chinese commercial district, known for its vibrant trade and cultural heritage."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Intramuros' fortifications predate Burnham; Burnham proposed preserving them, not creating them.",
+        "b": "The Burnham Plan (1905) proposed Luneta (now Rizal Park) as Manila's grand civic focal point — expanded, landscaped, and monumentalized as the heart of the city. Luneta remains one of Burnham's most recognizable legacies in Manila.",
+        "c": "The Pasig River embankment development was proposed by Burnham, but the walls are medieval Spanish, not Burnham's creation.",
+        "d": "Binondo's district evolved through Chinese settlement patterns, not Burnham's master plan.",
+        "correct": "The Burnham Plan (1905) proposed Luneta (now Rizal Park) as Manila's grand civic focal point — expanded, landscaped, and monumentalized as the heart of the city. Luneta remains one of Burnham's most recognizable legacies in Manila.",
+        "takeaway": "BURNHAM LEGACIES IN MANILA = LUNETA, TAFT AVENUE, PASIG EMBANKMENT, GOVERNMENT BUILDING PLACEMENT. Luneta is the signature City Beautiful civic space."
+      },
+      "explanation": null,
+      "code_citation": "Core Concept; Key Provisions table",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-001-03-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:30.889344+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "25d5ff5a-d385-4b9e-8ae4-dc59a112de51",
+      "article_id": "d82c5a6f-539a-4b81-bd40-668d9ba467ec",
+      "topic_id": "c94e5fa4-c66c-402f-8137-8c01fc27ae97",
+      "text": "What is 'typology' in the structuralist and semiotic understanding developed by Aldo Rossi?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The practice of copying historical buildings exactly, ensuring that traditional architectural styles are preserved without alteration"
+        },
+        {
+          "id": "b",
+          "text": "The decoration applied to building exteriors, which serves as a visual representation of cultural and historical influences"
+        },
+        {
+          "id": "c",
+          "text": "A classification system for building heights and sizes, used to standardize architectural design across different regions"
+        },
+        {
+          "id": "d",
+          "text": "Recurring building types (courthouse, marketplace, dwelling, tower) that persist across history and cultures as structural solutions to persistent functional and social problems"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Typology involves transformation and reinterpretation, not exact replication.",
+        "b": "Typology is functional-structural, not decorative.",
+        "c": "Typology addresses persistent functional problems, not merely dimensional classification.",
+        "correct": "The Key Terms define typology as 'System of recurring building types (courthouse, marketplace, dwelling, tower) that persist across history and cultures, providing structural solutions to persistent problems.' Rossi saw types not as historical artifacts but as 'structural solutions' within a meaningful system.",
+        "takeaway": "The Key Terms define typology as 'System of recurring building types (courthouse, marketplace, dwelling, tower) that persist across history and cultures, providing structural solutions to persistent problems.' Rossi saw types not as historical artifacts but as 'structural solutions' within a meaningful system."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "SYS"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-005-10-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.31954+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "0040878b-9c1a-4c1f-ad73-eda970e33a00",
+      "article_id": "d82c5a6f-539a-4b81-bd40-668d9ba467ec",
+      "topic_id": "c94e5fa4-c66c-402f-8137-8c01fc27ae97",
+      "text": "How do structuralism's assumption that 'systems are stable, complete, and knowable' and poststructuralism's contrary emphasis on 'instability, incompleteness, and perpetual slippage of meaning' represent different theoretical positions in architectural discourse?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Neither approach has relevance to contemporary architectural practice, as both structuralism and poststructuralism are purely linguistic theories that have never been meaningfully applied to the analysis, design, or critique of built environments or spatial configurations"
+        },
+        {
+          "id": "b",
+          "text": "Structuralism (Rowe, Rossi) sought coherent meaning in systematic architectural relationships; poststructuralism/deconstructivism emphasized architecture's potential for generating instability and resisting fixed interpretation—fundamentally opposed assumptions about meaning and form"
+        },
+        {
+          "id": "c",
+          "text": "Only poststructuralism has ever influenced architecture; structuralism remained confined to linguistic and anthropological disciplines and produced no meaningful theoretical frameworks applicable to the study of spatial organization or architectural form"
+        },
+        {
+          "id": "d",
+          "text": "Structuralism and poststructuralism are identical positions with no meaningful differences in their analysis of meaning, form, or interpretive stability, as both traditions treat architectural relationships as inherently fixed and universally comprehensible"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "architectural theory shows both approaches inform contemporary theoretical debates.",
+        "c": "Structuralist approaches (Rossi, Rowe) remain influential alongside deconstructivist alternatives.",
+        "d": "architectural theory clearly distinguishes these as contradictory approaches.",
+        "correct": "However, structuralism in architecture faced significant limitations...poststructuralist and deconstructivist critique...challenged [structuralism's] assumption that systems are stable, complete, and knowable...Deconstructivists argued that structuralism's orderly systems concealed violence and exclusions, and that architecture should embrace instability and fragmentation.' These represent opposed theoretical positions.",
+        "takeaway": "However, structuralism in architecture faced significant limitations...poststructuralist and deconstructivist critique...challenged [structuralism's] assumption that systems are stable, complete, and knowable...Deconstructivists argued that structuralism's orderly systems concealed violence and exclusions, and that architecture should embrace instability and fragmentation.' These represent opposed theoretical positions."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-005-10-011",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.31954+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "9a4374ae-c6d0-4832-91f6-55430b36dcd1",
+      "article_id": "d82c5a6f-539a-4b81-bd40-668d9ba467ec",
+      "topic_id": "c94e5fa4-c66c-402f-8137-8c01fc27ae97",
+      "text": "Which theorists' work on urban analysis applied structuralist thinking to reveal cities as systems of meaningful spatial and architectural relationships?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rem Koolhaas and Kenneth Frampton"
+        },
+        {
+          "id": "b",
+          "text": "Colin Rowe and Fred Koetter"
+        },
+        {
+          "id": "c",
+          "text": "Peter Eisenman and Bernard Tschumi"
+        },
+        {
+          "id": "d",
+          "text": "Frank Lloyd Wright and Le Corbusier"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While both are urban theorists, Rowe and Koetter are specifically identified for structuralist urban analysis.",
+        "c": "While Eisenman and Tschumi engaged structural thinking, Rowe and Koetter's Collage City is the canonical structuralist urban text.",
+        "d": "Wright and Le Corbusier were designers, not primarily urban analysts in the structuralist sense.",
+        "correct": "Colin Rowe and Fred Koetter's Collage City (1978) as applying 'structuralist urban analysis...examined how cities themselves operate as systems of meaningful relationships rather than collections of individual buildings.' This structuralist approach proved productive for understanding actual cities.",
+        "takeaway": "Colin Rowe and Fred Koetter's Collage City (1978) as applying 'structuralist urban analysis...examined how cities themselves operate as systems of meaningful relationships rather than collections of individual buildings.' This structuralist approach proved productive for understanding actual cities."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "ATT"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-005-10-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.31954+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "de34d665-a5d2-447c-94b5-2d99104c0374",
+      "article_id": "d82c5a6f-539a-4b81-bd40-668d9ba467ec",
+      "topic_id": "c94e5fa4-c66c-402f-8137-8c01fc27ae97",
+      "text": "Which theorist's distinction between 'duck' and 'decorated shed' applied semiotic analysis to reveal how buildings communicate meaning through form and applied symbols?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Charles Jencks"
+        },
+        {
+          "id": "b",
+          "text": "Robert Venturi"
+        },
+        {
+          "id": "c",
+          "text": "Claude Lévi-Strauss"
+        },
+        {
+          "id": "d",
+          "text": "Aldo Rossi"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Jencks extended semiotic analysis but did not originate the duck/shed concept.",
+        "c": "Lévi-Strauss developed structuralism philosophically but not architectural semiotics.",
+        "d": "Rossi developed typological thinking; Venturi developed the duck/shed distinction.",
+        "correct": "Robert Venturi, while not explicitly a semiotician, 'applied semiotic analysis to architecture, particularly in his development of the duck and decorated shed distinction.' This became foundational to postmodern semiotic architectural analysis.",
+        "takeaway": "Robert Venturi, while not explicitly a semiotician, 'applied semiotic analysis to architecture, particularly in his development of the duck and decorated shed distinction.' This became foundational to postmodern semiotic architectural analysis."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "ATT"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-005-10-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.31954+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "a90b9096-c2fa-4fbc-8e8e-c0902b69f767",
+      "article_id": "d82c5a6f-539a-4b81-bd40-668d9ba467ec",
+      "topic_id": "c94e5fa4-c66c-402f-8137-8c01fc27ae97",
+      "text": "How do 'duck' and 'decorated shed' represent fundamentally different semiotic strategies for conveying architectural meaning?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ducks are superior to decorated sheds and should be preferred, as they offer a more integrated approach to design"
+        },
+        {
+          "id": "b",
+          "text": "Neither ducks nor decorated sheds communicate meaning; architecture is non-communicative, focusing solely on function"
+        },
+        {
+          "id": "c",
+          "text": "Both ducks and decorated sheds convey meaning identically with no distinction, making the terms interchangeable"
+        },
+        {
+          "id": "d",
+          "text": "A duck unifies signifier and signified through form (the form directly expresses function); a decorated shed separates them (simple form receives applied meanings through symbols and ornament)"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Venturi 'celebrated both as legitimate strategies'; the distinction is analytical, not evaluative.",
+        "b": "architectural theory shows architecture operates as a meaningful system; the question is how meaning is conveyed.",
+        "c": "architectural theory explicitly distinguishes these as different semiotic strategies.",
+        "correct": "A duck is architecture that expresses its purpose directly through form...A decorated shed...whose meaning derives from applied symbols...where signifier and signified are unified' in ducks but 'separable' in sheds. This shows fundamentally different meaning-making strategies grounded in semiotic theory.",
+        "takeaway": "This shows fundamentally different meaning-making strategies grounded in semiotic theory."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-005-10-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.31954+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "cb110826-3cc5-4a87-9266-483c9a5027a8",
+      "article_id": "d82c5a6f-539a-4b81-bd40-668d9ba467ec",
+      "topic_id": "c94e5fa4-c66c-402f-8137-8c01fc27ae97",
+      "text": "Why is it significant that understanding how modernism manipulated signs while denying doing so is essential to postmodern critique?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Because semiotic analysis revealed that modernism's claimed 'honesty' and 'truth to materials' were themselves semiotic constructions—cultural conventions claiming universal validity, not inherent truths"
+        },
+        {
+          "id": "b",
+          "text": "Because semiotics is irrelevant to understanding modernism, which focused on form and function without symbolic interpretation"
+        },
+        {
+          "id": "c",
+          "text": "Because postmodernism invented semiotics entirely, creating a new framework for analyzing architectural meaning"
+        },
+        {
+          "id": "d",
+          "text": "Because modernism was honest and transparent about its semiotic operations, leaving no room for critique"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Semiotics is essential to understanding modernism's hidden operations.",
+        "c": "Semiotics existed before postmodernism; postmodernism applied existing frameworks.",
+        "d": "Semiotics revealed modernism's opacity; modernism claimed but did not achieve transparency.",
+        "correct": "Missing Semiotic Critique of Modernism: Semiotics revealed that modernism's claimed honesty and truth to materials were themselves semiotic constructions—cultural conventions claiming universal validity. Understanding how modernism manipulated signs while denying doing so is essential to postmodern critique.' This shows semiotics as critical framework revealing modernism's hidden assumptions.",
+        "takeaway": "Understanding how modernism manipulated signs while denying doing so is essential to postmodern critique.' This shows semiotics as critical framework revealing modernism's hidden assumptions."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-005-10-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.31954+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "c8ebe93e-15b2-4062-b2a5-89c989de0d03",
+      "article_id": "d82c5a6f-539a-4b81-bd40-668d9ba467ec",
+      "topic_id": "c94e5fa4-c66c-402f-8137-8c01fc27ae97",
+      "text": "How does the recognition that 'architecture is a language—a system for encoding and communicating meaning' represent a fundamental shift from modernist to postmodern architectural understanding?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Because modernism never addressed meaning in architecture, focusing solely on form and function without considering symbolic aspects"
+        },
+        {
+          "id": "b",
+          "text": "Because language and architecture are completely unrelated, making any comparison between them fundamentally flawed"
+        },
+        {
+          "id": "c",
+          "text": "Because postmodernism rejects all systematic thinking about architecture, favoring eclectic and diverse approaches that defy categorization"
+        },
+        {
+          "id": "d",
+          "text": "Because modernism privileged function and reduction while denying semantic complexity; recognizing architecture as language acknowledges architecture communicates through learned conventions and cultural associations, not purely functional expression"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Modernism addressed meaning but through functional expression; the shift is in how meaning is understood.",
+        "b": "architectural theory shows architecture operates like language through learned systems.",
+        "c": "Postmodernism uses rigorous systematic thinking about signs and codes.",
+        "correct": "The recognition that architecture is a language—a system for encoding and communicating meaning—fundamentally altered architectural practice from modernism's reduction to pure function toward contemporary architecture's sophisticated engagement with semantics, symbolism, and cultural signification.' This shows epistemological shift from function to communication.",
+        "takeaway": "The recognition that architecture is a language—a system for encoding and communicating meaning—fundamentally altered architectural practice from modernism's reduction to pure function toward contemporary architecture's sophisticated engagement with semantics, symbolism, and cultural signification.' This shows epistemological shift from function to communication."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "INT"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-005-10-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.31954+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "235f7569-3e57-4260-bf7c-928452bf5479",
+      "article_id": "4f38604e-70a2-4b6f-9710-b166fe83cbe6",
+      "topic_id": "ed88acd1-35ab-4704-b08d-2abbcc268688",
+      "text": "Compare New Urbanism and CIAM's Athens Charter on their approach to mixed-use development. Which statement is accurate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Both advocate for separating residential from commercial uses, emphasizing distinct zoning to prevent land use conflicts"
+        },
+        {
+          "id": "b",
+          "text": "CIAM advocated separation; New Urbanism advocates mixing—they are opposite philosophies"
+        },
+        {
+          "id": "c",
+          "text": "Both emphasize transit connectivity and public transportation, aiming to reduce reliance on private vehicles"
+        },
+        {
+          "id": "d",
+          "text": "New Urbanism evolved as a refinement of CIAM principles, incorporating lessons learned from past urban planning practices"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "CIAM advocates separation (correct). New Urbanism advocates MIXING (opposite).",
+        "b": "CIAM (1933) advocated zoning into four separate functional zones—the doctrine that caused urban dysfunction. New Urbanism (1980s+) is an explicit reaction AGAINST CIAM's separation, advocating mixed-use neighborhoods where residential, retail, services, and offices coexist. They represent opposite values.",
+        "c": "Transit was not central to CIAM's Athens Charter doctrine (it was written pre-modern transit). New Urbanism incorporates transit integration.",
+        "d": "New Urbanism emerged as a critique and rejection of CIAM's legacy, not a refinement of it.",
+        "correct": "CIAM (1933) advocated zoning into four separate functional zones—the doctrine that caused urban dysfunction. New Urbanism (1980s+) is an explicit reaction AGAINST CIAM's separation, advocating mixed-use neighborhoods where residential, retail, services, and offices coexist. They represent opposite values.",
+        "takeaway": "CIAM = separation (problems it caused: dead downtowns, isolation). New Urbanism = mixing (solution to CIAM's problems). Opposite philosophies."
+      },
+      "explanation": null,
+      "code_citation": "Le Corbusier (1933); Duany et al. (2000); ERROR_REGISTRY.md ERR-PLAN-024",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-002-02-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:06.486658+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "336402f6-1899-4e9c-8b36-bde4e07d8d4c",
+      "article_id": "4f38604e-70a2-4b6f-9710-b166fe83cbe6",
+      "topic_id": "ed88acd1-35ab-4704-b08d-2abbcc268688",
+      "text": "Carlos Moreno's 15-Minute City concept requires residents to access all daily needs—work, food, health, education, culture, and parks—within what time frame?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5 minutes by foot"
+        },
+        {
+          "id": "b",
+          "text": "10 minutes by transit"
+        },
+        {
+          "id": "c",
+          "text": "15 minutes by foot or bike"
+        },
+        {
+          "id": "d",
+          "text": "20 minutes by any mode of transport"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "5 minutes is New Urbanism's neighborhood radius, not the 15-minute city.",
+        "b": "Moreno's concept prioritizes active transport (foot/bike), not transit time.",
+        "c": "Moreno (2020) defined the 15-Minute City as all daily needs accessible within 15 minutes by foot or bike. This extends the New Urbanism neighborhood concept to a more functionally complete daily-life radius while maintaining active transport priority.",
+        "d": "20 minutes is not part of Moreno's framework, and the concept allows 'any mode' (it specifies foot or bike).",
+        "correct": "Moreno (2020) defined the 15-Minute City as all daily needs accessible within 15 minutes by foot or bike. This extends the New Urbanism neighborhood concept to a more functionally complete daily-life radius while maintaining active transport priority.",
+        "takeaway": "15-Minute City = 15 min foot/bike access to all daily needs. Moreno, 2020. Newer than New Urbanism; more inclusive functionality."
+      },
+      "explanation": null,
+      "code_citation": "Moreno (2020); VERIFIED_REFERENCE.md Part 7",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-002-02-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:06.486658+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "dc8bb7ae-f790-4533-8bd4-59d5f2091c61",
+      "article_id": "4f38604e-70a2-4b6f-9710-b166fe83cbe6",
+      "topic_id": "ed88acd1-35ab-4704-b08d-2abbcc268688",
+      "text": "Ebenezer Howard's Garden City concept targets a self-contained community of how many people?",
+      "options": [
+        {
+          "id": "a",
+          "text": "10,000–20,000 people"
+        },
+        {
+          "id": "b",
+          "text": "32,000 people (maximum)"
+        },
+        {
+          "id": "c",
+          "text": "100,000 people"
+        },
+        {
+          "id": "d",
+          "text": "500,000+ people (metropolitan)"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Too small—10,000–20,000 would not support the range of services Howard envisioned.",
+        "b": "Howard's Garden City (1898) targeted 30,000–60,000 people—large enough for diverse services and employment, small enough to preserve community identity and green space. This specific range is fundamental to Howard's vision.",
+        "c": "ERR-PLAN-023 error—students often round up to 100,000. This is incorrect. Howard was explicit that massive size defeats the garden city purpose.",
+        "d": "500,000+ would be a metropolis, not a self-contained garden community.",
+        "correct": "REMOVE DUPLICATE (matches rationale.correct)",
+        "takeaway": "Garden City = 30,000–60,000. Exact range matters. Howard's vision: Goldilocks community size."
+      },
+      "explanation": null,
+      "code_citation": "Howard (1898); VERIFIED_REFERENCE.md Part 8; ERROR_REGISTRY.md ERR-PLAN-023",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-002-02-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:06.486658+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "6ebab89d-5143-4659-a0f7-fcf297463b45",
+      "article_id": "4f38604e-70a2-4b6f-9710-b166fe83cbe6",
+      "topic_id": "ed88acd1-35ab-4704-b08d-2abbcc268688",
+      "text": "A city implements policies promoting infill development, walkability, mixed-income housing, and environmental conservation while discouraging sprawl. This policy framework aligns most closely with which approach?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Garden City model—new town construction"
+        },
+        {
+          "id": "b",
+          "text": "Smart Growth principles—urban-scale anti-sprawl policy"
+        },
+        {
+          "id": "c",
+          "text": "Growth Pole Theory—concentrated investment and spread effects"
+        },
+        {
+          "id": "d",
+          "text": "CIAM zoning—functional separation strategy"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Garden City is about building new self-contained towns, not infill in existing cities.",
+        "b": "Smart Growth is a comprehensive policy approach (1990s–present) featuring compact infill development, walkability, mixed uses, transit, mixed housing, and environmental protection—all anti-sprawl principles. This is broader than New Urbanism (which focuses on neighborhood design) and is explicitly policy-oriented.",
+        "c": "Growth Pole Theory focuses on concentrated sectoral investment generating spread effects—not anti-sprawl policy per se.",
+        "d": "CIAM zoning is the problem Smart Growth reacts against.",
+        "correct": "Smart Growth is a comprehensive policy approach (1990s–present) featuring compact infill development, walkability, mixed uses, transit, mixed housing, and environmental protection—all anti-sprawl principles. This is broader than New Urbanism (which focuses on neighborhood design) and is explicitly policy-oriented.",
+        "takeaway": "Smart Growth = urban policy framework emphasizing infill, walkability, transit, mixed use, environmental conservation, and anti-sprawl. Broader than New Urbanism."
+      },
+      "explanation": null,
+      "code_citation": "THEORY_ATTRIBUTION_GUIDE.md Part 4; VERIFIED_REFERENCE.md Part 7",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-002-02-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:06.486658+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "73d7fde1-ef22-432d-9445-cd440fbbd588",
+      "article_id": "1a967c89-e735-4a59-88b0-d2eb0918d284",
+      "topic_id": "863e8b67-1c45-457a-8149-5ee162947518",
+      "text": "In the Rational Method formula Q = C × I × A, what does the coefficient C represent?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The fraction of rainfall that becomes runoff (dimensionless, 0–1)"
+        },
+        {
+          "id": "b",
+          "text": "The total catchment area in hectares, which is a critical factor in determining the volume of runoff."
+        },
+        {
+          "id": "c",
+          "text": "The peak rainfall intensity in mm/hr, which influences the rate of runoff generation during storm events."
+        },
+        {
+          "id": "d",
+          "text": "The storage capacity of the cistern in m³, which is unrelated to the coefficient C but affects overall water management."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "A confuses the coefficient with the area parameter (A).",
+        "c": "Confuses C with the intensity parameter (I), which has units mm/hr.",
+        "d": "Confuses the Rational Method formula with cistern volume equations; Q is discharge, not storage.",
+        "correct": "C is the runoff coefficient, accounting for infiltration, evaporation, and surface retention. It is always ≤ 1. Concrete roofs have C ≈ 0.85; gravel-covered roofs have C ≈ 0.55 (standard hydrology tables per engineering practice)."
+      },
+      "explanation": null,
+      "code_citation": "Revised National Plumbing Code of the Philippines; Linsley, Kohler & Paulhus",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-001-09-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:58.533411+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "072c90a5-e8bc-4b40-807d-724b8b1dda68",
+      "article_id": "4bb1957d-f513-47e1-b253-c7cbc65912b3",
+      "topic_id": "c26c798a-e0e4-4114-9c2b-29f74a1cc6bb",
+      "text": "A municipality uses GIS to overlay its zoning map with flood hazard zones and utility capacity zones. What planning question can this spatial analysis help answer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Which neighborhoods have the most residents who support development, based on recent community surveys and public meetings?"
+        },
+        {
+          "id": "b",
+          "text": "How many people were surveyed in the most recent census, and what demographic trends were identified?"
+        },
+        {
+          "id": "c",
+          "text": "What historical events shaped the current city boundary, considering past annexations and zoning changes?"
+        },
+        {
+          "id": "d",
+          "text": "Which areas are suitable for new development based on zoning, hazard avoidance, and adequate utility infrastructure?"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Public opinion requires surveys, not GIS spatial analysis.",
+        "b": "Census data is demographic, not spatial constraint analysis.",
+        "c": "Historical research uses archives, not GIS layer analysis.",
+        "d": "Overlaying zoning, hazard, and utility constraint layers reveals areas that satisfy all three criteria simultaneously—a core GIS planning function for site suitability analysis.",
+        "correct": "Overlaying zoning, hazard, and utility constraint layers reveals areas that satisfy all three criteria simultaneously—a core GIS planning function for site suitability analysis.",
+        "takeaway": "GIS spatial overlay = systematic identification of viable development sites meeting multiple constraints."
+      },
+      "explanation": null,
+      "code_citation": "GIS Spatial Analysis; Site Suitability Modeling",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-008-02-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:08.512784+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "f5785968-ecc8-4776-8bdd-006dc42a8ffe",
+      "article_id": "4bb1957d-f513-47e1-b253-c7cbc65912b3",
+      "topic_id": "c26c798a-e0e4-4114-9c2b-29f74a1cc6bb",
+      "text": "What is the primary function of GIS (Geographic Information Systems) in urban planning?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To store historical records of past development projects, providing a comprehensive archive for future reference"
+        },
+        {
+          "id": "b",
+          "text": "To replace the Comprehensive Land Use Plan with digital maps, streamlining urban planning processes"
+        },
+        {
+          "id": "c",
+          "text": "To create spatial data layers that can be analyzed and overlaid to identify patterns and constraints"
+        },
+        {
+          "id": "d",
+          "text": "To eliminate the need for zoning ordinances, simplifying regulatory frameworks"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "GIS stores current and historical data but its primary function is analysis, not archiving.",
+        "b": "GIS tools support CLUP preparation; they do not replace the CLUP itself.",
+        "c": "GIS is a spatial analysis tool that organizes planning data (land use zones, hazard maps, infrastructure networks, constraints) into layers that can be overlaid and analyzed to support planning decisions.",
+        "d": "GIS provides information for zoning; it does not eliminate the need for zoning ordinances.",
+        "correct": "GIS is a spatial analysis tool that organizes planning data (land use zones, hazard maps, infrastructure networks, constraints) into layers that can be overlaid and analyzed to support planning decisions.",
+        "takeaway": "GIS is the digital equivalent of transparent map overlays—layer analysis for planning insights."
+      },
+      "explanation": null,
+      "code_citation": "GIS Fundamentals in Planning; ISO 19115",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-008-02-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:08.512784+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "98f11a94-64f3-45da-bb3c-1cb1a297b346",
+      "article_id": "4bb1957d-f513-47e1-b253-c7cbc65912b3",
+      "topic_id": "c26c798a-e0e4-4114-9c2b-29f74a1cc6bb",
+      "text": "Which of the following best describes a smart city approach to urban planning?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Using integrated digital systems and real-time data to optimize urban services and inform planning decisions"
+        },
+        {
+          "id": "b",
+          "text": "Installing digital technology without integrating it into decision-making processes, often leading to inefficiencies"
+        },
+        {
+          "id": "c",
+          "text": "Replacing human planners with artificial intelligence systems, which can lead to a lack of human oversight"
+        },
+        {
+          "id": "d",
+          "text": "Focusing only on online engagement while ignoring traditional community participation, which can result in a disconnect"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Smart cities integrate digital tools—sensors, GIS, data dashboards—into decision-making to optimize services and make planning responsive to real-time conditions.",
+        "b": "Technology without integration is not smart; it is just infrastructure.",
+        "c": "Smart cities use AI and algorithms to support human decisions, not replace planners.",
+        "d": "Equitable smart cities use hybrid engagement (digital + traditional) to reach all populations.",
+        "correct": "Smart cities integrate digital tools—sensors, GIS, data dashboards—into decision-making to optimize services and make planning responsive to real-time conditions.",
+        "takeaway": "Smart city planning = data-informed, real-time responsive urban management."
+      },
+      "explanation": null,
+      "code_citation": "World Economic Forum Smart City Framework; Smart City Definition",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-008-02-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:08.512784+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "67e46ca4-3ed3-4172-9eb0-3fac72beb1ac",
+      "article_id": "4bb1957d-f513-47e1-b253-c7cbc65912b3",
+      "topic_id": "c26c798a-e0e4-4114-9c2b-29f74a1cc6bb",
+      "text": "A smart city dashboard shows that a newly developed commercial district is generating 40% more traffic than the CLUP's traffic impact assessment predicted. What should the planner do in response?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Analyze the discrepancy, assess road network adequacy, consider mitigation measures (transit, signal timing, use restrictions), and update traffic modeling for future CLUPs"
+        },
+        {
+          "id": "b",
+          "text": "Immediately shut down the commercial district, disregarding any economic or social impacts this action might have"
+        },
+        {
+          "id": "c",
+          "text": "Accept the higher traffic as a positive indicator of economic activity; no action needed, as the increased traffic is seen as beneficial"
+        },
+        {
+          "id": "d",
+          "text": "Replace the GIS system because the data is inaccurate, assuming that the system is the sole source of error without further investigation"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Real-time data reveals implementation problems that were not anticipated. A planner responds by analyzing the cause, assessing infrastructure capacity, implementing mitigation measures, and updating future planning assumptions. This is adaptive planning—using live data to adjust strategy.",
+        "b": "Shutting down an operational district is not proportionate; mitigation should be explored first.",
+        "c": "Higher-than-predicted congestion is a problem requiring response, not a success metric.",
+        "d": "Students blame the monitoring system when data contradicts predictions, but the confusion is methodological: incomplete planning assumptions (underestimating induced demand, underestimating density, external changes) cause discrepancies, not faulty sensors.",
+        "correct": "Real-time data reveals implementation problems that were not anticipated. A planner responds by analyzing the cause, assessing infrastructure capacity, implementing mitigation measures, and updating future planning assumptions. This is adaptive planning—using live data to adjust strategy.",
+        "takeaway": "Real-time monitoring enables adaptive planning—using live data to detect and respond to plan implementation gaps."
+      },
+      "explanation": null,
+      "code_citation": "Real-time Urban Monitoring; Adaptive Planning",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-008-02-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:08.512784+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "d47c0aaf-a0bc-4af3-a0b4-2b2f956ea5df",
+      "article_id": "4bb1957d-f513-47e1-b253-c7cbc65912b3",
+      "topic_id": "c26c798a-e0e4-4114-9c2b-29f74a1cc6bb",
+      "text": "What is a critical limitation of digital-only civic engagement in smart city planning?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Online platforms are too slow to provide real-time feedback, limiting immediate community response"
+        },
+        {
+          "id": "b",
+          "text": "Digital-only engagement excludes populations without internet access or digital literacy, reducing equity and excluding voices from low-income communities"
+        },
+        {
+          "id": "c",
+          "text": "Online participation requires approval from the national government before local implementation, delaying processes"
+        },
+        {
+          "id": "d",
+          "text": "Digital engagement provides no meaningful input compared to in-person consultations, which offer richer interaction"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Modern platforms can provide rapid feedback; speed is not the limiting factor.",
+        "b": "Smart city benefits are inequitably distributed if engagement is digital-only. Elderly residents, low-income populations without reliable internet, and non-digital-native groups are excluded. Equitable smart cities use hybrid analog-digital engagement.",
+        "c": "Digital engagement tools are local government decisions, not subject to national approval.",
+        "d": "Online engagement can be high-quality and meaningful; the issue is inclusion, not quality.",
+        "correct": "Smart city benefits are inequitably distributed if engagement is digital-only. Elderly residents, low-income populations without reliable internet, and non-digital-native groups are excluded. Equitable smart cities use hybrid analog-digital engagement.",
+        "takeaway": "Smart city equity principle: hybrid analog-digital engagement ensures no demographic group is excluded from planning participation."
+      },
+      "explanation": null,
+      "code_citation": "Digital Equity in Smart Cities; Participatory Planning Standards",
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-008-02-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:08.512784+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "6adb27f8-39f1-43ea-9627-a9d06aa955af",
+      "article_id": "e59c8abc-5938-47ab-8009-97424baa78c7",
+      "topic_id": "2a0ffc3f-d4ef-413e-8ab4-d3e9061e0d96",
+      "text": "A mangrove ecosystem and a tropical rainforest both occur in the Philippines but have entirely different species compositions, structures, and environmental conditions. Analyze why ecological restoration should use species appropriate to each ecosystem type rather than planting the same species in both:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Species-specific restoration is unnecessary because all native species can survive in any Philippine habitat, regardless of ecosystem type or environmental conditions"
+        },
+        {
+          "id": "b",
+          "text": "Mangrove and rainforest species evolved for distinct salinity, waterlogging, and light conditions; mismatched planting fails and wastes resources"
+        },
+        {
+          "id": "c",
+          "text": "Using only one set of species throughout the Philippines reduces overall biodiversity, which can lead to ecosystem instability and loss of unique habitats"
+        },
+        {
+          "id": "d",
+          "text": "Ecological restoration has no connection to ecosystem type or species appropriateness, as all ecosystems function similarly"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Native species are adapted to specific conditions; transplanting outside those conditions fails.",
+        "b": "Mangrove species are salt-tolerant and adapted to waterlogged, tidal conditions. Rainforest species require well-drained soils and fresh water. Each has specific physiology and ecological requirements evolved for their ecosystem. Planting rainforest species in a mangrove habitat results in failure; the species cannot survive the salinity and waterlogging.",
+        "c": "Using ecosystem-appropriate species (many species across multiple ecosystem types) maximizes biodiversity—not reduces it.",
+        "d": "Ecological restoration is fundamentally based on matching species to ecosystem conditions.",
+        "correct": "Mangrove species are salt-tolerant and adapted to waterlogged, tidal conditions. Rainforest species require well-drained soils and fresh water. Each has specific physiology and ecological requirements evolved for their ecosystem. Planting rainforest species in a mangrove habitat results in failure; the species cannot survive the salinity and waterlogging.",
+        "takeaway": "Successful restoration matches species to ecosystem type, respecting evolved adaptations to environmental conditions."
+      },
+      "explanation": null,
+      "code_citation": "Ecological Systems and Successional Processes section",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-005-02-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:08.090829+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    }
+  ]
+}
