@@ -172,3 +172,22 @@ Queue ID: UIA-PUBLIC-0018
 ### Risk
 
 Low. External props are unchanged and label-click behavior was verified.
+
+## Batch 8: Quiz setup selector primitive adoption
+
+Date/time: 2026-05-06T19:19:04
+Queue ID: UIA-QZ-0008
+
+### What changed
+- `QuestionCountPills` now uses shared `Button`.
+- `SetupFlow` back control now uses shared `Button`.
+- `IntroSlide2` topic search now uses shared `Input`.
+- `IntroSlide3` preset/difficulty/save controls now use shared `Button`.
+- Added `src/components/quiz-v2/setup/SetupControls.stories.tsx`.
+
+### Validation
+- `bun run lint`: passed with 10 baseline warnings.
+- `bun run check:storybook`: passed.
+- `NODE_OPTIONS=--max-old-space-size=8192 bun run build-storybook`: passed.
+- `bun run type-check`: only known baseline `openai` module failure after story fixture/type issues were fixed.
+- Playwright screenshots captured for setup flow, topic search, and advanced config stories.

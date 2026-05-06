@@ -48,12 +48,12 @@
     "modal_dialog": 13,
     "storybook_required": 35
   },
-  "last_completed_batch": "Batch 7: Calculator CheckboxField migration",
+  "last_completed_batch": "Batch 8: Quiz setup selector primitive adoption",
   "latest_validation": {
     "lint": "passed with 10 baseline warnings",
     "check_storybook": "passed",
-    "build_storybook": "passed with NODE_OPTIONS",
-    "type_check": "baseline failure remains: missing openai module",
-    "browser": "Calculator CheckboxField Storybook screenshots and Playwright state toggles inspected"
+    "build_storybook": "passed",
+    "type_check": "baseline missing openai only",
+    "browser": "quiz setup Storybook screenshots captured"
   }
 }

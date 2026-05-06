@@ -223,5 +223,30 @@
     "reviewer_notes": null,
     "final_status": "completed",
     "validation_result": "CheckboxField migrated to shared Checkbox + Label with useId htmlFor/id linkage; Storybook coverage added; lint/check-storybook/build-storybook passed; Playwright verified label and checkbox toggles; type-check blocked only by baseline missing openai."
+  },
+  {
+    "id": "UIA-QZ-0008",
+    "file": "src/components/quiz-v2/setup",
+    "line": null,
+    "surface": "quiz",
+    "component": "Setup selectors",
+    "current_pattern": "raw selector controls",
+    "classification": "definite_drift",
+    "risk": "medium",
+    "proposed_target": "Button/Input/domain selector primitives",
+    "user_impact": "Reduce UI drift and improve consistency/accessibility where safe.",
+    "implementation_notes": "Implement only from queue in small batches after reading current file and preserving behavior.",
+    "storybook_required": true,
+    "storybook_story_path": null,
+    "tests_required": [
+      "bun run type-check",
+      "bun run lint"
+    ],
+    "visual_routes": [
+      "/dashboard/quiz"
+    ],
+    "reviewer_notes": null,
+    "final_status": "completed",
+    "validation_result": "Quiz setup selectors migrated where safe to shared Button/Input primitives; SetupControls Storybook coverage added; lint/check-storybook/build-storybook passed; type-check only baseline missing openai; Playwright screenshots captured."
   }
 ]

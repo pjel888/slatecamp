@@ -103,3 +103,13 @@ Reviewer: independent Hermes subagent, separate context/model from builder.
 
 - Blockers: none.
 - Recommendations: add future Storybook play assertions for label-click and checkbox-click behavior if interaction testing is expanded.
+
+## Batch 8: Quiz setup selector primitive adoption
+
+Date/time: 2026-05-06T19:19:04
+Reviewer: independent Hermes subagent.
+
+### Result
+- Initial blockers: story fixture/type issues.
+- Fix applied: TaxonomySubject fixtures corrected and default args added to satisfy Storybook typing.
+- Remaining type-check issue is baseline missing `openai`, unrelated to this batch.

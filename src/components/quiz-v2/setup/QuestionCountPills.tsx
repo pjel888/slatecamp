@@ -1,6 +1,7 @@
 'use client'
 
 import { cn } from '@/lib/utils'
+import { Button } from '@/components/ui/button'
 
 const COUNT_OPTIONS = [10, 20, 30, 50, 100] as const
 
@@ -21,9 +22,11 @@ const QuestionCountPills = ({
     {options.map((count) => {
       const isSelected = count === selected
       return (
-        <button
+        <Button
           key={count}
           type="button"
+          variant="outline"
+          size="default"
           onClick={() => onChange(count)}
           aria-pressed={isSelected}
           className={cn(
@@ -36,7 +39,7 @@ const QuestionCountPills = ({
           )}
         >
           {count}
-        </button>
+        </Button>
       )
     })}
   </div>

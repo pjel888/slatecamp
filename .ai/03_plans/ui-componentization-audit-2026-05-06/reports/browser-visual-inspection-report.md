@@ -136,3 +136,14 @@ Date/time: 2026-05-06T19:05:12
 - Shared Checkbox + Label render correctly in calculator control context.
 - Label-click and checkbox-click toggles verified via Playwright state check.
 - No obvious visual regression.
+
+## Batch 8: Quiz setup selector primitive adoption
+
+Date/time: 2026-05-06T19:19:04
+
+Evidence:
+- `.ai/03_plans/ui-componentization-audit-2026-05-06/visual/batch-8-quiz-setup/setup-flow-storm.png`
+- `.ai/03_plans/ui-componentization-audit-2026-05-06/visual/batch-8-quiz-setup/topic-search.png`
+- `.ai/03_plans/ui-componentization-audit-2026-05-06/visual/batch-8-quiz-setup/advanced-config.png`
+
+Result: primitive-backed controls render correctly in Storybook scenarios.

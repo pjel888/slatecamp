@@ -213,9 +213,11 @@ const IntroSlide3 = ({ initial, onBegin }: IntroSlide3Props) => {
               { key: 'deep-study' as Preset, label: 'Deep Study' },
             ] as const
           ).map(({ key, label }) => (
-            <button
+            <Button
               key={key}
               type="button"
+              variant="outline"
+              size="sm"
               onClick={() => applyPreset(key)}
               className={cn(
                 'px-3 py-1.5 rounded-sm text-[12px] font-medium border transition-all duration-150 ease-out',
@@ -227,7 +229,7 @@ const IntroSlide3 = ({ initial, onBegin }: IntroSlide3Props) => {
               aria-pressed={activePreset === key}
             >
               {label}
-            </button>
+            </Button>
           ))}
         </div>
       </div>
@@ -287,9 +289,11 @@ const IntroSlide3 = ({ initial, onBegin }: IntroSlide3Props) => {
           {DIFFICULTY_PILLS.map((pill) => {
             const isSelected = difficultyValue === pill.value
             return (
-              <button
+              <Button
                 key={pill.value}
                 type="button"
+                variant="outline"
+                size="sm"
                 onClick={() => setDifficulty(pill.value)}
                 aria-pressed={isSelected}
                 className={cn(
@@ -301,21 +305,23 @@ const IntroSlide3 = ({ initial, onBegin }: IntroSlide3Props) => {
                 )}
               >
                 {pill.label}
-              </button>
+              </Button>
             )
           })}
         </div>
       </div>
 
       {/* Save as preset (future hook) */}
-      <button
+      <Button
         type="button"
-        className="text-[12px] text-primary hover:text-primary-700 transition-colors duration-150 focus-visible:outline-none focus-visible:underline"
+        variant="link"
+        size="sm"
+        className="h-auto px-0 py-0 text-[12px] text-primary hover:text-primary-700 focus-visible:underline"
         aria-label="Save current configuration as a preset (coming soon)"
         disabled
       >
         Save as preset
-      </button>
+      </Button>
 
       {/* Begin */}
       <Button variant="default" size="lg" fullWidth onClick={() => onBegin(config)} className="rounded-sm">
