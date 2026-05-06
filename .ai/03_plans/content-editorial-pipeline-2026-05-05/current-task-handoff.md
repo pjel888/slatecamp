@@ -1,3 +1,3 @@
 # Current Task Handoff
 
-First safe Supabase content publish batch completed. Three article rows were backed up, exact-ID patched, and remote hash verified. Continue with next 10-article independently reviewed source-backed batch. Do not publish broad-pass held edits or quarantined questions.
+Batch 002 completed: 10 additional wiki_articles rows published by exact article_id filter and remote hash verified. Total safe-path articles published so far: 13. Continue with Batch 003: next 30 articles. Do not publish broad-pass held edits or quarantined questions.
