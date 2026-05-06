@@ -48,5 +48,55 @@
     "reviewer_notes": null,
     "final_status": "completed",
     "validation_result": "Implemented via shared AuthErrorAlert, lint/check-storybook/build-storybook/browser login inspection passed; type-check remains blocked by pre-existing missing openai baseline error."
+  },
+  {
+    "id": "UIA-DSS-0003",
+    "file": "src/components/sidebar/MobileDrawer.tsx",
+    "line": null,
+    "surface": "shell/sidebar",
+    "component": "MobileDrawer close button",
+    "current_pattern": "raw icon button",
+    "classification": "definite_drift",
+    "risk": "low",
+    "proposed_target": "CloseButton or Button icon",
+    "user_impact": "Reduce UI drift and improve consistency/accessibility where safe.",
+    "implementation_notes": "Implement only from queue in small batches after reading current file and preserving behavior.",
+    "storybook_required": true,
+    "storybook_story_path": null,
+    "tests_required": [
+      "bun run type-check",
+      "bun run lint"
+    ],
+    "visual_routes": [
+      "/dashboard"
+    ],
+    "reviewer_notes": null,
+    "final_status": "completed",
+    "validation_result": "MobileTopBar hamburger and MobileDrawer close controls migrated to shared Button icon; Storybook stories and quiz-v2 server-action mock added; lint/check-storybook/build-storybook/browser screenshot inspection passed; type-check blocked only by pre-existing missing openai baseline error."
+  },
+  {
+    "id": "UIA-DSS-0004",
+    "file": "src/components/sidebar/MobileTopBar.tsx",
+    "line": null,
+    "surface": "shell/sidebar",
+    "component": "MobileTopBar",
+    "current_pattern": "raw hamburger button",
+    "classification": "definite_drift",
+    "risk": "low",
+    "proposed_target": "Button icon variant",
+    "user_impact": "Reduce UI drift and improve consistency/accessibility where safe.",
+    "implementation_notes": "Implement only from queue in small batches after reading current file and preserving behavior.",
+    "storybook_required": true,
+    "storybook_story_path": null,
+    "tests_required": [
+      "bun run type-check",
+      "bun run lint"
+    ],
+    "visual_routes": [
+      "/dashboard"
+    ],
+    "reviewer_notes": null,
+    "final_status": "completed",
+    "validation_result": "MobileTopBar hamburger and MobileDrawer close controls migrated to shared Button icon; Storybook stories and quiz-v2 server-action mock added; lint/check-storybook/build-storybook/browser screenshot inspection passed; type-check blocked only by pre-existing missing openai baseline error."
   }
 ]

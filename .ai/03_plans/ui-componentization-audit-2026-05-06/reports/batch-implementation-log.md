@@ -50,3 +50,28 @@ Queue ID: UIA-PUBLIC-0021
 ### Risk
 
 Low. Link href/name semantics are preserved through `Button asChild`; focus styling improves. Pricing page live route currently shows free-access copy, so PricingCard visual verification was done in Storybook.
+
+## Batch 3: Mobile sidebar controls normalization
+
+Date/time: 2026-05-06T18:17:42
+Queue IDs: UIA-DSS-0003, UIA-DSS-0004
+
+### What changed
+
+- Migrated `MobileTopBar` hamburger raw button to shared `Button` icon primitive.
+- Migrated `MobileDrawer` close raw button to shared `Button` icon primitive.
+- Added `MobileTopBar` and `MobileDrawer` Storybook stories.
+- Added Storybook-only `@/lib/actions/quiz-v2` mock/alias so the drawer story does not bundle server actions through the quiz store.
+
+### Validation
+
+- `bun run lint`: passed with same 10 baseline warnings.
+- `bun run check:storybook`: passed, 104 story files scanned.
+- `NODE_OPTIONS=--max-old-space-size=8192 bun run build-storybook`: passed.
+- `bun run type-check`: blocked by same pre-existing missing `openai` module in `scripts/normalize-distractors.ts`.
+- Playwright mobile screenshots captured at 390×844 for topbar and drawer stories.
+- Vision inspection passed for both screenshots.
+
+### Risk
+
+Low. The Storybook quiz-v2 action alias is intentionally broad within Storybook; it should be maintained as additional quiz-v2 action exports are needed by stories.

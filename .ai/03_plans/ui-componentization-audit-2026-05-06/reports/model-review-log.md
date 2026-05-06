@@ -34,3 +34,19 @@ Reviewer: independent Hermes subagent, separate context/model from builder.
 ### Resolution
 
 No changes required after review. Risks documented.
+
+## Batch 3: Mobile sidebar controls normalization
+
+Date/time: 2026-05-06T18:17:42
+Queue IDs: UIA-DSS-0003, UIA-DSS-0004
+Reviewer: independent Hermes subagent, separate context/model from builder.
+
+### Reviewer result
+
+- Blockers: none.
+- Recommendations: document that the `@/lib/actions/quiz-v2` Storybook alias is broad and future quiz stories may use the mock; maintain missing named exports if future stories fail.
+- Accessibility and behavior preservation approved: native button semantics, aria labels, autofocus ref, Escape/backdrop/route close behavior preserved.
+
+### Resolution
+
+No implementation changes required after review. Broad Storybook mock caveat documented.

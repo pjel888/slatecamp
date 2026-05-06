@@ -38,3 +38,23 @@ Validation:
 Known caveat:
 
 - Storybook font mock maps Next font exports to `font-serif`; this is sufficient for component rendering but not exact font metrics.
+
+## Batch 3
+
+Added:
+
+- `src/components/sidebar/MobileTopBar.stories.tsx`
+- `src/components/sidebar/MobileDrawer.stories.tsx`
+- `src/storybook/mocks/quiz-v2-actions.ts` plus `.storybook/main.ts` alias
+
+Covered states:
+
+- Mobile top bar default
+- Mobile drawer open
+- Mobile drawer closed/offscreen state
+
+Validation:
+
+- `bun run check:storybook`: passed, 104 stories.
+- `NODE_OPTIONS=--max-old-space-size=8192 bun run build-storybook`: passed.
+- Runtime Playwright screenshots passed after adding the quiz-v2 server-action Storybook mock.

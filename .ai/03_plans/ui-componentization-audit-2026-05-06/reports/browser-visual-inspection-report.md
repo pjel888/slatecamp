@@ -39,3 +39,23 @@ Date/time: 2026-05-06T17:33:54
 - CTA rendered as a visible full-width primary button/link.
 - Price, feature list, border, spacing, and typography hierarchy remained intact.
 - No obvious clipping, overlap, or broken styling.
+
+## Batch 3: Mobile sidebar controls normalization
+
+Date/time: 2026-05-06T18:17:42
+
+### Stories inspected
+
+- Storybook iframe: `/iframe.html?id=sidebar-mobiletopbar--default&viewMode=story` at 390×844
+- Storybook iframe: `/iframe.html?id=sidebar-mobiledrawer--open&viewMode=story` at 390×844
+
+### Evidence
+
+- `.ai/03_plans/ui-componentization-audit-2026-05-06/visual/batch-3-sidebar-mobile/topbar.png`
+- `.ai/03_plans/ui-componentization-audit-2026-05-06/visual/batch-3-sidebar-mobile/drawer.png`
+
+### Result
+
+- MobileTopBar hamburger icon button is visible, compact, and aligned with the SlateCamp wordmark.
+- MobileDrawer close icon button is visible in the header and the drawer layout renders correctly.
+- No obvious clipping, overlap, or broken spacing after migration to shared `Button`.

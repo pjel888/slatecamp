@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
 import { X } from '@phosphor-icons/react/dist/ssr'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
+import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 import { useActiveSession } from '@/lib/context/active-session-context'
 import { SIDEBAR_GROUPS, DASHBOARD_ITEM, SETTINGS_ITEM } from './sidebar-constants'
@@ -326,15 +327,16 @@ export const MobileDrawer = ({
           </div>
 
           {/* Close button — min 44×44 touch target */}
-          <button
+          <Button
             ref={closeButtonRef}
             onClick={onClose}
             aria-label="Close navigation"
-            className="flex items-center justify-center rounded-md text-text-secondary dark:text-gray-400 transition-colors duration-150 hover:bg-gray-100 dark:hover:bg-gray-800 outline-none focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-camp-cobalt"
-            style={{ width: 44, height: 44 }}
+            variant="ghost"
+            size="icon-lg"
+            className="size-11 text-text-secondary hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800 [&_svg:not([class*='size-'])]:size-5"
           >
             <X size={20} weight="regular" />
-          </button>
+          </Button>
         </div>
 
         {/* Scrollable nav area */}
