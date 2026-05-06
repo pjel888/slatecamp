@@ -1,0 +1,2520 @@
+{
+  "created_at": "2026-05-06T15:45:59.321Z",
+  "batch": "question-batch-028",
+  "table": "questions",
+  "rows": [
+    {
+      "question_id": "18a9dccc-027c-4321-bf1a-1acf47bc92ea",
+      "article_id": "10be87c4-e424-42da-8989-a054658cc4a4",
+      "topic_id": "056ac503-0eb8-47d4-a5b7-bb2d8edc0e68",
+      "text": "What does the term 'mandala' describe in the context of Borobudur's architectural organization, and what cosmological significance does it hold?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A decorative pattern applied to relief carvings without structural purpose, often used for aesthetic enhancement"
+        },
+        {
+          "id": "b",
+          "text": "A rectangular street grid following Chinese urban planning principles, adapted for religious purposes"
+        },
+        {
+          "id": "c",
+          "text": "A geometric cosmological diagram representing the universe, central to Buddhist sacred architecture; Borobudur's plan (viewed from above) embodies this diagram, representing Buddhist cosmology through spatial organization."
+        },
+        {
+          "id": "d",
+          "text": "A military fortification system surrounding the monument for defense, reflecting historical strategic needs"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Mandala is a cosmological organizing principle, not merely decorative.",
+        "b": "Mandala is Buddhist cosmological geometry, not Chinese urban grid logic.",
+        "d": "Mandalas are spiritual diagrams, not fortifications.",
+        "correct": "Mandala is explicitly defined as a geometric cosmological diagram representing the universe, central to Buddhist sacred architecture. Borobudur's stepped pyramid plan constitutes a mandala representing Buddhist cosmology.",
+        "takeaway": "Borobudur's stepped pyramid plan constitutes a mandala representing Buddhist cosmology."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-007-04-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.518466+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "df6856a8-c18c-40c2-b378-9fc26c859d36",
+      "article_id": "10be87c4-e424-42da-8989-a054658cc4a4",
+      "topic_id": "056ac503-0eb8-47d4-a5b7-bb2d8edc0e68",
+      "text": "Vietnamese tube houses feature extremely narrow street frontage (2–4 meters) extending deep into the lot (10–20 meters). What combination of factors drove this distinctive residential typology?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aesthetic preference for tall, narrow buildings reflecting Vietnamese artistic tradition and cultural heritage"
+        },
+        {
+          "id": "b",
+          "text": "French urban density pressures meeting Vietnamese spatial traditions and tropical climate demands, with land scarcity on valuable streetfronts"
+        },
+        {
+          "id": "c",
+          "text": "Structural limitation of Vietnamese timber technology requiring narrow widths, influenced by traditional construction methods"
+        },
+        {
+          "id": "d",
+          "text": "Defensive architectural strategy minimizing streetfront exposure during colonial conflicts, prioritizing security and privacy"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The typology emerges from practical urban and climatic factors, not aesthetic tradition alone.",
+        "c": "Vietnamese timber technology is capable of wider spans; narrow frontage is an urban planning response, not a structural necessity.",
+        "d": "The article makes no mention of defensive military strategy; the form emerges from colonial urban planning and climate.",
+        "correct": "The article explicitly links tube house form to French colonial density requirements and grid planning meeting Vietnamese spatial traditions (back-altar, courtyard ventilation) and tropical climate needs, with valuable street frontage scarcity driving the deep-plan form.",
+        "takeaway": "The article explicitly links tube house form to French colonial density requirements and grid planning meeting Vietnamese spatial traditions (back-altar, courtyard ventilation) and tropical climate needs, with valuable street frontage scarcity driving the deep-plan form."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "ST"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-007-04-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.518466+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "c83bb74c-a2fc-4197-8ba4-8cac2166337f",
+      "article_id": "584a3bfe-0f9a-4c59-8576-b52a2f2a9074",
+      "topic_id": "b11c0db4-5f46-4c4f-bc47-8ced32ab7b33",
+      "text": "How do the wooden pins projecting from Djenne Mosque's mud-brick facade serve structural and maintenance functions in the Sahel climate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They provide temporary scaffolding for construction and are removed after completion, which is a common practice in temporary structures"
+        },
+        {
+          "id": "b",
+          "text": "They are permanent structural elements supporting the roof frame and anchoring replastering materials."
+        },
+        {
+          "id": "c",
+          "text": "They serve solely decorative purposes without structural significance, adding aesthetic value to the facade"
+        },
+        {
+          "id": "d",
+          "text": "They channel rainwater away from the mud-brick walls to prevent erosion, which is crucial in maintaining the integrity of the structure"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The article explicitly states pins are permanent structural elements, not temporary scaffolding.",
+        "c": "The pins serve dual structural and maintenance functions, not merely decorative purposes.",
+        "d": "While water management is important, the article identifies their primary function as structural support and replastering facilitation.",
+        "correct": "Wooden pins are permanent structural elements that allow replastering after seasonal rains—they support both structure and the maintenance cycle essential to mud-brick durability.",
+        "takeaway": "The article states wooden pins are permanent structural elements that allow replastering after seasonal rains—they support both structure and the maintenance cycle essential to mud-brick durability."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "ST"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-011-01-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.518466+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "27afe657-72c6-4ca4-ac06-fad60db3230b",
+      "article_id": "584a3bfe-0f9a-4c59-8576-b52a2f2a9074",
+      "topic_id": "b11c0db4-5f46-4c4f-bc47-8ced32ab7b33",
+      "text": "Which African architectural site is characterized by dry-stone construction using a decorative chevron pattern with granite blocks placed without mortar?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lalibela, known for its rock-hewn churches in Ethiopia"
+        },
+        {
+          "id": "b",
+          "text": "Great Zimbabwe"
+        },
+        {
+          "id": "c",
+          "text": "Djenne Mosque, famous for its adobe construction in Mali"
+        },
+        {
+          "id": "d",
+          "text": "Timbuktu, renowned for its historic manuscripts and mud-brick buildings"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Lalibela uses monolithic rock-carving (subtractive method), not dry-stone construction.",
+        "c": "Djenne Mosque uses mud-brick construction typical of Sahel architecture, not dry-stone masonry.",
+        "d": "While Timbuktu is an African city, it is not specifically identified in the article as employing chevron-pattern dry-stone work.",
+        "correct": "Great Zimbabwe (c. 1100–1450, Zimbabwe) employed dry-stone masonry with granite blocks arranged in a chevron pattern without mortar.",
+        "takeaway": "1100–1450, Zimbabwe) employed dry-stone masonry with granite blocks arranged in a chevron pattern without mortar."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "ID"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-011-01-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.518466+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "c97f8f39-2c34-4ca3-975a-c8815e909e42",
+      "article_id": "584a3bfe-0f9a-4c59-8576-b52a2f2a9074",
+      "topic_id": "b11c0db4-5f46-4c4f-bc47-8ced32ab7b33",
+      "text": "The construction method used at Lalibela churches involves carving entire structures downward from living rock. What is this technique called?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Additive masonry"
+        },
+        {
+          "id": "b",
+          "text": "Dry-stone construction"
+        },
+        {
+          "id": "c",
+          "text": "Subtractive carving"
+        },
+        {
+          "id": "d",
+          "text": "Corbelled vaulting"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Additive masonry refers to stacking blocks (like Great Zimbabwe), not removing material.",
+        "b": "Dry-stone construction places stones without mortar but does not involve carving into living rock.",
+        "d": "Corbelled vaulting is a structural system using triangular arches, not relevant to Lalibela's carving technique.",
+        "correct": "Lalibela employs subtractive carving—workers removed surrounding rock to reveal churches from single stone masses, creating monolithic structures.",
+        "takeaway": "Lalibela employs subtractive carving—workers removed surrounding rock to reveal churches from single stone masses, creating monolithic structures."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "ST"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-011-01-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.518466+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "0b2a53de-7176-4d17-a1d6-9bc2b7f542bd",
+      "article_id": "584a3bfe-0f9a-4c59-8576-b52a2f2a9074",
+      "topic_id": "b11c0db4-5f46-4c4f-bc47-8ced32ab7b33",
+      "text": "During which centuries were the 11 monolithic churches of Lalibela constructed?",
+      "options": [
+        {
+          "id": "a",
+          "text": "10th–11th century"
+        },
+        {
+          "id": "b",
+          "text": "12th–13th century"
+        },
+        {
+          "id": "c",
+          "text": "14th–15th century"
+        },
+        {
+          "id": "d",
+          "text": "16th–17th century"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The 10th–11th century predates Lalibela's construction period.",
+        "c": "The 14th–15th century matches Great Zimbabwe's construction, not Lalibela.",
+        "d": "The 16th–17th century postdates Lalibela by several centuries.",
+        "correct": "Lalibela dates to the 12th–13th century and comprises 11 monolithic churches carved downward from living rock.",
+        "takeaway": "Lalibela dates to the 12th–13th century and comprises 11 monolithic churches carved downward from living rock."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "CH"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-011-01-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.518466+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "5f6f8718-2fe0-4a0e-8721-53ec57df7caf",
+      "article_id": "584a3bfe-0f9a-4c59-8576-b52a2f2a9074",
+      "topic_id": "b11c0db4-5f46-4c4f-bc47-8ced32ab7b33",
+      "text": "What does the three-site comparison—Great Zimbabwe, Lalibela, and Djenne—suggest about the relationship between African architectural traditions and regional environmental constraints?",
+      "options": [
+        {
+          "id": "a",
+          "text": "African architecture is monolithic and unchanging across all regions, reflecting a uniform cultural approach"
+        },
+        {
+          "id": "b",
+          "text": "Environmental adaptation shapes regional traditions: dry savannas favor dry-stone; highlands favor rock-carving; Sahel favors thermal mass in earth."
+        },
+        {
+          "id": "c",
+          "text": "All African cultures prioritize the same structural goals and aesthetic values, leading to similar architectural outcomes"
+        },
+        {
+          "id": "d",
+          "text": "European architectural influence determined all major African building traditions, overshadowing indigenous methods"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The article explicitly refutes this, emphasizing regional variation.",
+        "c": "The three sites employ distinct structural systems reflecting different regional values and environmental demands.",
+        "d": "The article presents pre-colonial African traditions as autonomous and sophisticated, not dependent on European influence.",
+        "correct": "Far from monolithic, African architectural traditions vary by region: the dry savannas of southern Africa demanded dry-stone construction; the Ethiopian highlands inspired vertical rock-cutting; the Sahel required thermal mass and ventilation in mud-brick design.' Each tradition reflects environmental constraints and available materials.",
+        "takeaway": "The article emphasizes: 'Far from monolithic, African architectural traditions vary by region: the dry savannas of southern Africa demanded dry-stone construction; the Ethiopian highlands inspired vertical rock-cutting; the Sahel required thermal mass and ventilation in mud-brick design.' Each tradition reflects environmental constraints and available materials."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-011-01-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.518466+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "9948802b-0348-4866-8a94-6599ce074b30",
+      "article_id": "584a3bfe-0f9a-4c59-8576-b52a2f2a9074",
+      "topic_id": "b11c0db4-5f46-4c4f-bc47-8ced32ab7b33",
+      "text": "How does the structural purpose of Great Zimbabwe's Great Enclosure wall differ from typical fortress architecture?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It was designed primarily for military defense with crenellations and firing positions."
+        },
+        {
+          "id": "b",
+          "text": "It controlled movement and displayed wealth rather than providing military defense."
+        },
+        {
+          "id": "c",
+          "text": "It served solely as storage for trade goods without residential functions."
+        },
+        {
+          "id": "d",
+          "text": "It was constructed using corbelled vaults like Maya temples rather than stacked stones."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The article explicitly states the irregular wall placement contradicts military effectiveness.",
+        "c": "Central rooms served storage, but the structure encompassed both storage and display functions.",
+        "d": "Great Zimbabwe uses dry-stone construction, not corbelled vaults.",
+        "correct": "Great Zimbabwe's Great Enclosure, over 10 meters high, was built to display wealth and control movement. Its irregular placement contradicts military design—no crenellations or effective firing angles—indicating non-defensive function.",
+        "takeaway": "Its irregular placement contradicts military design—no crenellations or effective firing angles—indicating non-defensive function."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-011-01-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.518466+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "97602dfe-76cd-4d10-a3af-603e3433e9c2",
+      "article_id": "584a3bfe-0f9a-4c59-8576-b52a2f2a9074",
+      "topic_id": "b11c0db4-5f46-4c4f-bc47-8ced32ab7b33",
+      "text": "Which of the following best contrasts the construction philosophies of Great Zimbabwe and Djenne Mosque?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Both prioritize permanence through stone masonry and require minimal maintenance, reflecting a shared emphasis on durability"
+        },
+        {
+          "id": "b",
+          "text": "Great Zimbabwe favors durable dry-stone construction; Djenne prioritizes material availability and cyclic maintenance in Sahel climate."
+        },
+        {
+          "id": "c",
+          "text": "Great Zimbabwe uses mud-brick; Djenne uses stone to maximize thermal mass, which is crucial for temperature regulation"
+        },
+        {
+          "id": "d",
+          "text": "Both employ monolithic carving techniques adapted to their regional environments, showcasing a unique approach to resource utilization"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Djenne is not permanent; it requires annual or biennial replastering.",
+        "c": "The article reverses this: Great Zimbabwe uses stone; Djenne uses mud-brick.",
+        "d": "Great Zimbabwe uses additive dry-stone; Djenne uses mud-brick. Neither uses monolithic carving (Lalibela does).",
+        "correct": "Great Zimbabwe's dry-stone chevron pattern emphasizes durability and permanence. Djenne's mud-brick with seasonal replastering reflects Sahel material availability and climate adaptation—not permanent but cyclically maintained architecture.",
+        "takeaway": "Djenne's mud-brick with seasonal replastering reflects Sahel material availability and climate adaptation—not permanent but cyclically maintained architecture."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-011-01-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.518466+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "5a30b241-6fe6-4642-b4eb-ecbe857f22d6",
+      "article_id": "584a3bfe-0f9a-4c59-8576-b52a2f2a9074",
+      "topic_id": "b11c0db4-5f46-4c4f-bc47-8ced32ab7b33",
+      "text": "A massive earthen structure with wooden support posts projects a fortress-like presence while its mud-brick mass absorbs solar heat during cool nights and releases it during hot days. Wooden pins (permanent structural elements) allow replastering after seasonal rains. Which building is this?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Great Zimbabwe's Great Enclosure"
+        },
+        {
+          "id": "b",
+          "text": "Lalibela's Church of St. George"
+        },
+        {
+          "id": "c",
+          "text": "Djenne Mosque"
+        },
+        {
+          "id": "d",
+          "text": "A Tiwanaku ceremonial center"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Great Zimbabwe uses dry-stone, not mud-brick with thermal mass.",
+        "b": "Lalibela employs rock-carving, not earthen construction with pins.",
+        "d": "Tiwanaku is not covered in this article.",
+        "correct": "The description matches Djenne Mosque (current structure 1907, Mali). Its mud-brick structure with wooden pins is designed for thermal mass and seasonal replastering in the Sahel climate.",
+        "takeaway": "Its mud-brick structure with wooden pins is designed for thermal mass and seasonal replastering in the Sahel climate."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DESC"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-011-01-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.518466+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "3588f5a0-8c25-44ba-ae7b-54b9346d21a9",
+      "article_id": "246c66db-c0cf-4cd3-8f52-9491451e7c76",
+      "topic_id": "da73c15c-1a10-4832-8df3-a3b2fb2126a7",
+      "text": "Which of the following best describes the relationship between BERDE prerequisites and optional credits?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Prerequisites are optional; credits are mandatory—the opposite of typical certification systems, which usually prioritize foundational requirements"
+        },
+        {
+          "id": "b",
+          "text": "Prerequisites are mandatory minimum performance levels in core categories; optional credits allow projects to achieve higher ratings or address specific priorities"
+        },
+        {
+          "id": "c",
+          "text": "All prerequisites and credits are equally weighted; a project can ignore prerequisites if it earns enough credits, allowing flexibility in certification paths"
+        },
+        {
+          "id": "d",
+          "text": "BERDE does not use prerequisites, only credits, simplifying the certification process by focusing solely on elective achievements"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrect—prerequisites are mandatory, not optional.",
+        "c": "Incorrect—prerequisites cannot be bypassed with credits. All BERDE certified projects must meet all prerequisites.",
+        "d": "Incorrect—BERDE explicitly uses prerequisites.",
+        "correct": "BERDE structure: Prerequisites in Energy, Water, Site, Materials, and Waste are non-negotiable baseline performance levels. Optional credits allow projects to exceed baseline and achieve higher star ratings (1–5 stars). This two-tiered approach ensures minimum sustainability; optional credits reward innovation.",
+        "takeaway": "BERDE uses a prerequisite (mandatory) + credit (optional advancement) model, similar to LEED. All certified projects must pass prerequisites."
+      },
+      "explanation": null,
+      "code_citation": "PHILGBC BERDE Rating System v2.0 Structure and Certification Path",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "BERDE structure and tiering"
+      ],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-009-04-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:58.790366+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "00c2ea2f-4b57-4263-9cf5-0d063ecfc489",
+      "article_id": "246c66db-c0cf-4cd3-8f52-9491451e7c76",
+      "topic_id": "da73c15c-1a10-4832-8df3-a3b2fb2126a7",
+      "text": "A residential condominium project in Quezon City is pursuing BERDE certification. Which of the following is a mandatory BERDE prerequisite, not optional?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Installation of renewable energy (solar PV) with a minimum capacity of 5 kW per occupied floor"
+        },
+        {
+          "id": "b",
+          "text": "Water efficiency—minimum reduction in potable water consumption"
+        },
+        {
+          "id": "c",
+          "text": "Green roof or rooftop garden covering at least 30% of the total roof area for thermal reduction"
+        },
+        {
+          "id": "d",
+          "text": "Rainwater harvesting system with storage capacity equivalent to 10% of the annual water demand"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Renewable energy installation is desirable and can earn points, but it is not a mandatory prerequisite; many projects achieve BERDE without on-site PV.",
+        "c": "Green roofs are an innovation strategy, not a prerequisite; they are optional.",
+        "d": "Rainwater harvesting is one strategy to meet Water Efficiency prerequisite, but the prerequisite itself (potable water reduction) is mandatory; the implementation strategy varies.",
+        "correct": "Water Efficiency is a mandatory BERDE prerequisite; all projects must demonstrate minimum potable water reduction targets. This reflects the Philippines' water management challenges, especially in high-precipitation regions.",
+        "takeaway": "BERDE prerequisites are mandatory minimum performance levels; Water Efficiency, Energy Efficiency, Site Selection, Materials, and Waste Management are all required categories."
+      },
+      "explanation": null,
+      "code_citation": "PHILGBC BERDE Rating System v2.0; PD 2194 Green Building Provisions",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "Residential project compliance",
+        "Prerequisite vs. optional distinction"
+      ],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-009-04-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:58.790366+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "f9f75173-697b-495d-9b06-e3d5a56ec37a",
+      "article_id": "246c66db-c0cf-4cd3-8f52-9491451e7c76",
+      "topic_id": "da73c15c-1a10-4832-8df3-a3b2fb2126a7",
+      "text": "In tropical Philippine climate, which passive design strategy is MOST critical for reducing operational energy in an office building?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Active air conditioning with high-efficiency compressors, which are designed to reduce energy consumption by optimizing cooling cycles"
+        },
+        {
+          "id": "b",
+          "text": "Natural ventilation and cross-ventilation design, combined with solar shading and thermal mass"
+        },
+        {
+          "id": "c",
+          "text": "LED lighting throughout the building, ensuring energy-efficient illumination with minimal heat generation"
+        },
+        {
+          "id": "d",
+          "text": "Double-glazed windows with low-E coating, providing insulation and reducing solar heat gain while maintaining visibility"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "High-efficiency AC is important but cannot replace the energy savings of passive design in tropical climates. Relying on mechanical systems increases operational costs and vulnerability to power outages (common in monsoon season).",
+        "c": "LED lighting reduces lighting energy (typically 10–15% of total), but climate control (heating/cooling) dominates office energy consumption (~40–60%). Addressing the larger load is more impactful.",
+        "d": "Double-glazing in tropical climates is less critical than in cold climates; it may increase cost without proportional benefit. Solar shading and ventilation are more cost-effective.",
+        "correct": "In the Philippines' hot, humid climate, passive design—natural ventilation, orientation to catch prevailing breezes (NE/SW in many regions), solar shading (deep overhangs, louvers), and thermal mass (exposed concrete ceilings)—dramatically reduces cooling load. This is more cost-effective than active systems and improves resilience.",
+        "takeaway": "Tropical climate design must prioritize passive cooling (ventilation, shading, mass) before active systems. This aligns with BERDE's emphasis on climate-responsive design."
+      },
+      "explanation": null,
+      "code_citation": "PD 2194 Green Building Provisions; PHILGBC BERDE—Climate Adaptation Guidance",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "Philippine building performance",
+        "Passive vs. active system trade-offs"
+      ],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-009-04-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:58.790366+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "c0e34a50-1905-4f29-ad32-59aed88ebe6f",
+      "article_id": "246c66db-c0cf-4cd3-8f52-9491451e7c76",
+      "topic_id": "da73c15c-1a10-4832-8df3-a3b2fb2126a7",
+      "text": "An international development organization is financing a commercial office tower in Metro Manila and requires a certification system with 20% improvement in energy, water, and embodied energy compared to baseline. Which system should the project pursue?",
+      "options": [
+        {
+          "id": "a",
+          "text": "BERDE, because it is the Philippine national standard and aligns with local environmental policies"
+        },
+        {
+          "id": "b",
+          "text": "LEED, because it has the highest prestige globally and is widely recognized by international stakeholders"
+        },
+        {
+          "id": "c",
+          "text": "EDGE, because it is designed for cost-effective efficiency gains"
+        },
+        {
+          "id": "d",
+          "text": "ISO 14001, because it certifies environmental management systems across various industries"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "BERDE is appropriate for domestic projects and government buildings, but the scenario explicitly states '20% improvement' which is EDGE's defining metric.",
+        "b": "LEED has global prestige but uses a point-based system with varying thresholds, not a fixed 20% improvement target.",
+        "d": "ISO 14001 is an environmental management system, not a building performance certification.",
+        "correct": "EDGE, administered by the IFC, is specifically designed around a 20% improvement target in energy, water, and embodied energy. It is cost-effective and accessible to developing economies, making it ideal for IFC-funded projects.",
+        "takeaway": "EDGE is the IFC's efficiency-focused certification system; 20% improvement is its defining metric."
+      },
+      "explanation": null,
+      "code_citation": "IFC EDGE Certification Manual; PHILGBC BERDE Rating System Comparison",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "IFC-funded projects",
+        "Emerging market adaptation"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-009-04-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:58.790366+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "f3c6dcbe-28ad-44e1-8143-b4a6146c9e43",
+      "article_id": "72e04c5e-3e4c-4715-93a0-734bdf6dcbee",
+      "topic_id": "c3996fe0-682a-43b0-adba-b829bb78b40e",
+      "text": "A shopping mall in a coastal typhoon zone specifies standard stainless steel hardware for all entry doors. What is the primary concern with this specification?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Stainless steel is more expensive than other materials, which may impact the overall budget allocation for the project"
+        },
+        {
+          "id": "b",
+          "text": "Standard stainless steel may corrode under salt spray exposure; saltwater-grade (duplex stainless or super-duplex) certification is required."
+        },
+        {
+          "id": "c",
+          "text": "Stainless steel is incompatible with aluminum door frames, potentially leading to galvanic corrosion if not properly isolated"
+        },
+        {
+          "id": "d",
+          "text": "Stainless steel hardware requires more frequent maintenance due to potential surface staining in harsh environments"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Cost is a business concern, not a code requirement.",
+        "c": "Stainless steel is compatible with aluminum; they are often used together.",
+        "d": "Proper stainless hardware requires less, not more, maintenance.",
+        "correct": "Coastal environments expose hardware to salt spray, which causes crevice corrosion and pitting in standard stainless steel (304/316 grades). Saltwater-grade hardware (duplex 2205 or super-duplex) resists this attack. This is critical for Philippine typhoon zones.",
+        "takeaway": "Coastal regions require saltwater-grade hardware certification; do not assume standard stainless is sufficient."
+      },
+      "explanation": null,
+      "code_citation": "General corrosion resistance practice for coastal areas (NSCP 2015 materials provisions)",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-008-01-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "3c42003d-f148-4331-9694-9f86f067021a",
+      "article_id": "72e04c5e-3e4c-4715-93a0-734bdf6dcbee",
+      "topic_id": "c3996fe0-682a-43b0-adba-b829bb78b40e",
+      "text": "What is the primary advantage of continuous (piano) hinges over butt hinges?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Continuous hinges are cheaper to install, although this may vary depending on the specific application and material costs"
+        },
+        {
+          "id": "b",
+          "text": "Continuous hinges distribute load evenly along the full door height, preferred for fire-rated doors."
+        },
+        {
+          "id": "c",
+          "text": "Continuous hinges allow the door to swing in both directions, which is beneficial in certain design scenarios but not universally applicable"
+        },
+        {
+          "id": "d",
+          "text": "Continuous hinges hide the hinge hardware completely, providing a cleaner aesthetic but not necessarily a functional advantage"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Continuous hinges are typically more expensive due to their length and fabrication.",
+        "c": "Neither hinge type allows bidirectional swing without additional hardware.",
+        "d": "Continuous hinges are visible on the edge of the door; concealed hinges hide the mechanism.",
+        "correct": "Continuous hinges extend the full door height, distributing stress along the entire hinge length rather than at discrete points (butt hinge locations). This is essential for heavy doors and fire-rated assemblies.",
+        "takeaway": "Continuous hinges = load distribution; use them for heavy doors and fire-rated assemblies."
+      },
+      "explanation": null,
+      "code_citation": "ANSI/BHMA Standards for Builders Hardware",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-008-01-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "459a1bba-4de2-4235-94c5-13c15a5f9294",
+      "article_id": "72e04c5e-3e4c-4715-93a0-734bdf6dcbee",
+      "topic_id": "c3996fe0-682a-43b0-adba-b829bb78b40e",
+      "text": "During LEA exam analysis, a hospital project specifies 50-pound frameless glass doors with a single Grade 1 butt hinge pair (1,500 lbf total capacity). Is this specification adequate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, because 1,500 lbf exceeds the 50-pound door weight, providing adequate load capacity for the hinge connection."
+        },
+        {
+          "id": "b",
+          "text": "No, because frameless glass doors require pivot hinges, and butt hinges cannot support the concentrated load at the hinge mortises."
+        },
+        {
+          "id": "c",
+          "text": "Yes, because Grade 1 butt hinges are the strongest available and suitable for all door types regardless of material or mounting."
+        },
+        {
+          "id": "d",
+          "text": "No, because the hinge capacity must be at least twice the door weight for safety, and 1,500 lbf is insufficient margin."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Capacity is adequate in theory, but hinge type is wrong for the application.",
+        "c": "Grade 1 capacity is high, but wrong hinge type for glass.",
+        "d": "Safety factor is not the issue; application-specific hinge selection is.",
+        "correct": "Although 1,500 lbf capacity exceeds the door weight, frameless glass doors have no frame to mortise butt hinges into. Pivot hinges are specifically designed for this application, with top and bottom support. Using butt hinges on glass creates a glass failure hazard.",
+        "takeaway": "Hinge selection must match application: butt for wood doors, pivot for glass doors, regardless of load capacity."
+      },
+      "explanation": null,
+      "code_citation": "ANSI/BHMA Standards for Builders Hardware and LEA exam design principles",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-008-01-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "c068c19d-7e23-450c-bdbc-53852432cf2a",
+      "article_id": "72e04c5e-3e4c-4715-93a0-734bdf6dcbee",
+      "topic_id": "c3996fe0-682a-43b0-adba-b829bb78b40e",
+      "text": "What is the minimum cycle count that ANSI/BHMA Grade 1 door hardware must withstand?",
+      "options": [
+        {
+          "id": "a",
+          "text": "200,000 cycles"
+        },
+        {
+          "id": "b",
+          "text": "400,000 cycles"
+        },
+        {
+          "id": "c",
+          "text": "1,000,000 cycles"
+        },
+        {
+          "id": "d",
+          "text": "800,000 cycles"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "200,000 cycles is the Grade 3 residential threshold.",
+        "b": "400,000 cycles is the minimum for Grade 2 medium-duty threshold.",
+        "d": "800,000 cycles is a possible Grade 2 rating, but Grade 1 requires 1,000,000 cycles.",
+        "correct": "Grade 1 hardware is rated for a minimum of 1,000,000 cycles, the highest BHMA performance tier for heavy commercial applications.",
+        "takeaway": "Memorize the cycle counts: Grade 1 = 1,000,000, Grade 2 = 400,000–800,000, Grade 3 = 200,000."
+      },
+      "explanation": null,
+      "code_citation": "ANSI/BHMA Standards for Builders Hardware",
+      "bloom_level": "understand",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-008-01-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "ee917ef7-76bc-4ab2-8d28-8fb7b65dcc0f",
+      "article_id": "72e04c5e-3e4c-4715-93a0-734bdf6dcbee",
+      "topic_id": "c3996fe0-682a-43b0-adba-b829bb78b40e",
+      "text": "Which type of lockset provides the best security and is mandatory for Grade 1 commercial applications?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cylindrical lock"
+        },
+        {
+          "id": "b",
+          "text": "Mortise lock"
+        },
+        {
+          "id": "c",
+          "text": "Push-button lock"
+        },
+        {
+          "id": "d",
+          "text": "Deadbolt-only lock"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Cylindrical locks are faster to install but offer lower security; typical for Grade 2-3 applications.",
+        "c": "Push-button locks are specialty hardware; not standard for commercial grades.",
+        "d": "Deadbolt-only locks lack a latch mechanism for automatic closure.",
+        "correct": "Mortise locks have separate latch and deadbolt mechanisms housed in the frame, providing superior security and durability compared to cylindrical locks (all components in the knob). Grade 1 commercial can be either mortise or cylindrical if certified.",
+        "takeaway": "Mortise lock = Grade 1 commercial; Cylindrical lock = Grade 2-3 residential or light commercial."
+      },
+      "explanation": null,
+      "code_citation": "ANSI/BHMA Standards for Builders Hardware",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-008-01-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "7dee3af4-e6b5-4ea8-8fde-2608e2e41713",
+      "article_id": "72e04c5e-3e4c-4715-93a0-734bdf6dcbee",
+      "topic_id": "c3996fe0-682a-43b0-adba-b829bb78b40e",
+      "text": "Which hinge type is best suited for supporting heavy glass doors?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Butt hinges"
+        },
+        {
+          "id": "b",
+          "text": "Pivot hinges"
+        },
+        {
+          "id": "c",
+          "text": "Concealed hinges"
+        },
+        {
+          "id": "d",
+          "text": "Spring hinges"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Butt hinges are for standard wooden doors; they cannot support glass doors without a substantial frame.",
+        "c": "Concealed hinges are hidden within the door but are not rated for glass door loads.",
+        "d": "Spring hinges are for automatic closure, not weight support.",
+        "correct": "Pivot hinges mount at the top and bottom of the door frame, supporting the full weight of heavy or frameless glass doors through a top-mounted pivot mechanism. Butt hinges cannot support glass door frames effectively.",
+        "takeaway": "Pivot hinges = heavy/glass doors; butt hinges = standard wood doors."
+      },
+      "explanation": null,
+      "code_citation": "ANSI/BHMA Standards for Builders Hardware",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-008-01-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "21e32e48-0231-4386-891e-cfa8deceea5d",
+      "article_id": "c0e15f56-dc57-4814-b6fb-7ee7f554a209",
+      "topic_id": "d0e7667f-a00e-48e4-b27f-aff58775a60c",
+      "text": "How do the Five Points of Architecture represent a philosophical break from traditional building construction?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They eliminate all ornament from architecture entirely, focusing solely on function and form"
+        },
+        {
+          "id": "b",
+          "text": "They liberate interior and exterior design from structural necessity, allowing design to serve function, aesthetics, and human experience rather than being constrained by construction logic"
+        },
+        {
+          "id": "c",
+          "text": "They prove that modern buildings are superior to traditional ones in every way, which is a subjective interpretation"
+        },
+        {
+          "id": "d",
+          "text": "They abandon all consideration of durability in favor of aesthetic innovation, which is a controversial stance"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Ornament elimination is a tactic, not the fundamental philosophical break.",
+        "c": "Superiority claims are subjective; the point is structural and philosophical difference.",
+        "d": "The Five Points maintain durability concerns; the difference is about freedom, not negligence.",
+        "correct": "The philosophical revolution is that design decisions are no longer dictated by structural constraints. Walls can be anywhere; facades can be designed freely; roofs become habitable. This shift enables human-centered, functional design.",
+        "takeaway": "This shift enables human-centered, functional design."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-008-03A-011",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.729652+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "4e161f47-ed20-4813-bbd7-d4c884aea051",
+      "article_id": "c0e15f56-dc57-4814-b6fb-7ee7f554a209",
+      "topic_id": "d0e7667f-a00e-48e4-b27f-aff58775a60c",
+      "text": "In what year did Le Corbusier formulate the Five Points of Architecture?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1920"
+        },
+        {
+          "id": "b",
+          "text": "1927"
+        },
+        {
+          "id": "c",
+          "text": "1929"
+        },
+        {
+          "id": "d",
+          "text": "1932"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "1920 is too early; Le Corbusier was still developing his theoretical framework.",
+        "c": "1929 was when Villa Savoye was designed; the principles were formulated three years earlier.",
+        "d": "1932 was after the Five Points were already established and demonstrated in buildings.",
+        "correct": "Le Corbusier formulated the Five Points in 1926. These principles became the foundational DNA of modernism.",
+        "takeaway": "These principles became the foundational DNA of modernism."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "ID"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-008-03A-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.729652+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "4ce4d0a6-3061-45f5-93b1-145bac960264",
+      "article_id": "c0e15f56-dc57-4814-b6fb-7ee7f554a209",
+      "topic_id": "d0e7667f-a00e-48e4-b27f-aff58775a60c",
+      "text": "Le Corbusier's statement that Villa Savoye demonstrates all Five Points represents his belief in what kind of design methodology?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Design as intuitive artistic expression without theoretical framework, relying solely on the architect's vision"
+        },
+        {
+          "id": "b",
+          "text": "Design as a system of principles that can be methodically applied and demonstrated in specific buildings"
+        },
+        {
+          "id": "c",
+          "text": "Design as copying historical precedents, without adaptation to modern needs or contexts"
+        },
+        {
+          "id": "d",
+          "text": "Design as purely functional, with no aesthetic consideration, focusing only on utility"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Le Corbusier was explicitly anti-intuitive; he believed in rational, theoretical foundations.",
+        "c": "Modernism explicitly rejected historical copying.",
+        "d": "Le Corbusier integrated aesthetics with function; neither is purely separate.",
+        "correct": "Le Corbusier's systematic articulation and demonstration of principles in actual buildings shows his belief that architecture can be based on teachable, communicable principles—not intuition or tradition.",
+        "takeaway": "Le Corbusier's systematic articulation and demonstration of principles in actual buildings shows his belief that architecture can be based on teachable, communicable principles—not intuition or tradition."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-008-03A-012",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.729652+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "d64084f2-8212-444c-b509-a6f168217e7e",
+      "article_id": "c0e15f56-dc57-4814-b6fb-7ee7f554a209",
+      "topic_id": "d0e7667f-a00e-48e4-b27f-aff58775a60c",
+      "text": "What structural material made all Five Points of Architecture possible?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Steel frame structures"
+        },
+        {
+          "id": "b",
+          "text": "Cast iron lattice"
+        },
+        {
+          "id": "c",
+          "text": "Reinforced concrete"
+        },
+        {
+          "id": "d",
+          "text": "Glass and aluminum curtain walls"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While steel frames also enabled modernism, Le Corbusier's Five Points specifically exploit concrete's qualities.",
+        "b": "Cast iron was a 19th-century innovation; concrete was modernism's enabling material.",
+        "d": "Glass and aluminum are cladding materials; concrete provides the structural skeleton.",
+        "correct": "Reinforced concrete enabled pilotis, free plans, and long spans with minimal supports. The Five Points directly respond to concrete's structural capabilities and required this material.",
+        "takeaway": "The Five Points directly respond to concrete's structural capabilities and required this material."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "ST"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-008-03A-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.729652+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "92d19b15-8501-4f3b-8ae6-fb6636d2723f",
+      "article_id": "c0e15f56-dc57-4814-b6fb-7ee7f554a209",
+      "topic_id": "d0e7667f-a00e-48e4-b27f-aff58775a60c",
+      "text": "Which of these buildings most clearly demonstrates all Five Points of Architecture?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Notre-Dame du Haut"
+        },
+        {
+          "id": "b",
+          "text": "Unité d'Habitation"
+        },
+        {
+          "id": "c",
+          "text": "Villa Savoye"
+        },
+        {
+          "id": "d",
+          "text": "Chandigarh"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Notre-Dame du Haut (1950–1955) is architecturally important but represents a departure from the systematic Five Points doctrine; it's more sculptural and less dogmatic.",
+        "b": "Unité d'Habitation demonstrates some points (pilotis, free plan, facade, ribbon windows, roof garden) but at a megastructure scale different from Villa Savoye.",
+        "d": "Chandigarh is a city-scale master plan, not a building that demonstrates all Five Points.",
+        "correct": "Villa Savoye (1929–1931) is the canonical text for all Five Points: pilotis, free interior plan, free facade, ribbon windows, and roof garden are all clearly demonstrated.",
+        "takeaway": "Villa Savoye (1929–1931) is the canonical text for all Five Points: pilotis, free interior plan, free facade, ribbon windows, and roof garden are all clearly demonstrated."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "ID"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-008-03A-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.729652+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "e378f659-75df-4f5d-9464-fcf99ff980f1",
+      "article_id": "c0e15f56-dc57-4814-b6fb-7ee7f554a209",
+      "topic_id": "d0e7667f-a00e-48e4-b27f-aff58775a60c",
+      "text": "A building features continuous horizontal strips of glass running along the entire wall, flooding interiors with light and dissolving the boundary between inside and outside. Which of the Five Points is this feature?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Free plan, which allows for flexible interior layouts without structural constraints"
+        },
+        {
+          "id": "b",
+          "text": "Pilotis, which are columns that lift the building above the ground, providing open space underneath"
+        },
+        {
+          "id": "c",
+          "text": "Roof garden, which integrates green space on the roof for environmental and aesthetic benefits"
+        },
+        {
+          "id": "d",
+          "text": "Ribbon windows"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Free plan refers to interior organization, not fenestration.",
+        "b": "Pilotis are structural columns, not windows.",
+        "c": "Roof gardens are habitable spaces, not fenestration features.",
+        "correct": "Ribbon windows are continuous horizontal glazing enabled by the free facade. They dissolve boundaries and express the horizontal geometry of modern slabs.",
+        "takeaway": "They dissolve boundaries and express the horizontal geometry of modern slabs."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "recall",
+      "practice_context": [
+        "DESC"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-008-03A-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.729652+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "cefa8c7f-00cf-42ed-8d9b-2c712db79814",
+      "article_id": "c0e15f56-dc57-4814-b6fb-7ee7f554a209",
+      "topic_id": "d0e7667f-a00e-48e4-b27f-aff58775a60c",
+      "text": "A building is elevated on slender reinforced concrete posts, creating open space beneath for circulation and gardens. The building's load is supported by these posts, not by exterior walls. Which of the Five Points does this describe?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Free plan"
+        },
+        {
+          "id": "b",
+          "text": "Pilotis"
+        },
+        {
+          "id": "c",
+          "text": "Ribbon windows"
+        },
+        {
+          "id": "d",
+          "text": "Roof garden"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Free plan refers to flexible interior layout, not structural support.",
+        "c": "Ribbon windows are continuous horizontal glazing, not structural columns.",
+        "d": "Roof gardens are habitable spaces on flat roofs, not structural elements.",
+        "correct": "Pilotis are free-standing posts that lift the building, creating open ground-floor space. This point directly reflects structural and philosophical principles of modernism.",
+        "takeaway": "This point directly reflects structural and philosophical principles of modernism."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DESC"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-008-03A-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.729652+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "c9781bfa-2cfb-451f-a01c-74ec38b9af36",
+      "article_id": "c0e15f56-dc57-4814-b6fb-7ee7f554a209",
+      "topic_id": "d0e7667f-a00e-48e4-b27f-aff58775a60c",
+      "text": "Villa Savoye was designed in 1929 and constructed during which years?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1926–1928"
+        },
+        {
+          "id": "b",
+          "text": "1928–1930"
+        },
+        {
+          "id": "c",
+          "text": "1929–1931"
+        },
+        {
+          "id": "d",
+          "text": "1931–1933"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "1926–1928 predates or overlaps construction; the building was completed later.",
+        "b": "1928–1930 dates overlap, but construction extended to 1931.",
+        "d": "1931–1933 is after construction began; the building was completed in 1931.",
+        "correct": "Villa Savoye's construction was 1929–1931, following its 1928 design. This timing makes it the first major public demonstration of all Five Points.",
+        "takeaway": "This timing makes it the first major public demonstration of all Five Points."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "CH"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-008-03A-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.729652+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "dad4f6d7-8850-4c57-be01-a6b1a37fa9e2",
+      "article_id": "c0e15f56-dc57-4814-b6fb-7ee7f554a209",
+      "topic_id": "d0e7667f-a00e-48e4-b27f-aff58775a60c",
+      "text": "Why was the Free Facade (independence of the exterior skin from the structural frame) philosophically significant to modernist architecture?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It allowed architects to apply any ornamental style they preferred to the facade, enhancing aesthetic flexibility"
+        },
+        {
+          "id": "b",
+          "text": "It liberated the facade from structural necessity, enabling design for performance (light, views, climate) rather than structural expression"
+        },
+        {
+          "id": "c",
+          "text": "It eliminated the need for any external cladding material, reducing construction costs and simplifying design"
+        },
+        {
+          "id": "d",
+          "text": "It proved that facades were purely decorative and not functionally important, challenging traditional architectural norms"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Modernism rejected ornamental styling; the free facade enabled functional design, not stylistic freedom.",
+        "c": "External cladding was still necessary; the point was design freedom, not elimination.",
+        "d": "Facades remain functionally important (weather protection, thermal control); the point is liberation from structural constraint, not irrelevance.",
+        "correct": "The free facade's significance is that it removed the tyranny of structural necessity. The exterior could now be designed for its specific performance requirements and aesthetic intentions, not dictated by column positions.",
+        "takeaway": "The exterior could now be designed for its specific performance requirements and aesthetic intentions, not dictated by column positions."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-008-03A-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.729652+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "e5864778-4887-4f7d-b524-0f8289b71bd9",
+      "article_id": "c0e15f56-dc57-4814-b6fb-7ee7f554a209",
+      "topic_id": "d0e7667f-a00e-48e4-b27f-aff58775a60c",
+      "text": "Le Corbusier's belief that all design output should relate to human sclea through proportional systems (the Modulor) demonstrates what underlying principle of his work?",
+      "options": [
+        {
+          "id": "a",
+          "text": "That architecture should be purely geometric and abstract, devoid of any human-centric considerations"
+        },
+        {
+          "id": "b",
+          "text": "That scientific design methods should ensure all elements relate to human measurements and behavior"
+        },
+        {
+          "id": "c",
+          "text": "That architects should never use standard modular components, as they limit creative expression"
+        },
+        {
+          "id": "d",
+          "text": "That ornament is acceptable if mathematically justified, aligning with the principles of classical architecture"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While Le Corbusier pursued geometric principles, they always served human function and scale.",
+        "c": "The Modulor actually advocates modular, standardized proportions.",
+        "d": "Le Corbusier rejected ornament; the Modulor isn't about justifying decoration.",
+        "correct": "The Modulor represents Le Corbusier's humanistic modernism: despite his geometric rationalism, he insisted all design must relate to human body and behavior. Science serves humanity, not abstraction.",
+        "takeaway": "Science serves humanity, not abstraction."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-008-03A-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.729652+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "c763453d-1805-43f9-8b01-98056b1724cc",
+      "article_id": "42ec69b2-114a-423b-bba3-12cd5564f994",
+      "topic_id": "579c04dc-1952-4e43-a64f-b299373ae1c1",
+      "text": "Efflorescence on concrete masonry surfaces is caused by ___ and is controlled through ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "mineral salt deposits migrating to surfaces; proper drainage and joint sealing"
+        },
+        {
+          "id": "b",
+          "text": "freeze-thaw cycles; air entrainment to prevent surface scaling"
+        },
+        {
+          "id": "c",
+          "text": "mortar joint failure; reinforcement to enhance structural integrity"
+        },
+        {
+          "id": "d",
+          "text": "unit cracking; pressure grouting to restore surface continuity"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Freeze-thaw is not a cause in tropical Philippines; efflorescence occurs without frost.",
+        "c": "Mortar joint failure is not the cause; efflorescence indicates moisture flow, not joint failure.",
+        "d": "Cracking is not the cause; efflorescence can occur in uncracked units.",
+        "correct": "Efflorescence is white mineral deposits (calcium carbonate, sodium sulfate) that migrate through the unit with moisture and evaporate on the surface. Prevention requires good drainage and sealed joints to limit moisture penetration.",
+        "takeaway": "Efflorescence is aesthetic but indicates excess moisture. It does not reduce structural capacity but signals drainage or waterproofing deficiency."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Section 2402 (masonry design); moisture management",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-002-03-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:26.09657+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "01cbd203-5490-4c8c-acab-8a7467a1a6b3",
+      "article_id": "42ec69b2-114a-423b-bba3-12cd5564f994",
+      "topic_id": "579c04dc-1952-4e43-a64f-b299373ae1c1",
+      "text": "Structural clay brick (ASTM C62 Grade SW) has a minimum compressive strength of 3,000 psi (20.7 MPa) average, which is ___ than concrete hollow block (ASTM C90).",
+      "options": [
+        {
+          "id": "a",
+          "text": "3,000 psi (20.7 MPa); higher"
+        },
+        {
+          "id": "b",
+          "text": "2,000 psi (13.8 MPa); equal"
+        },
+        {
+          "id": "c",
+          "text": "1,500 psi (10.3 MPa); lower"
+        },
+        {
+          "id": "d",
+          "text": "2,500 psi (17.2 MPa); slightly lower"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "2,000 psi is C90 concrete block minimum, not clay brick.",
+        "c": "1,500 psi is below both standards.",
+        "d": "2,500 psi is below the 3,000 psi clay brick minimum.",
+        "correct": "ASTM C62 clay brick minimum is 3,000 psi (20.7 MPa) average, compared to 2,000 psi (13.8 MPa) for C90 concrete blocks. Clay brick is stronger due to high-temperature firing.",
+        "takeaway": "Know the strength ranking: Clay brick (3,000 psi) > Concrete block C90 (2,000 psi) > Non-loadbearing C129 (600 psi)."
+      },
+      "explanation": null,
+      "code_citation": "ASTM C62 Standard; ASTM C90 Standard",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-002-03-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:26.09657+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "1d4f94c0-97a0-4541-ae03-978b7f05fef0",
+      "article_id": "42ec69b2-114a-423b-bba3-12cd5564f994",
+      "topic_id": "579c04dc-1952-4e43-a64f-b299373ae1c1",
+      "text": "A concrete hollow block has a net area compressive strength of 15 MPa and a gross area compressive strength of 9 MPa. What is the approximate void percentage?",
+      "options": [
+        {
+          "id": "a",
+          "text": "40%"
+        },
+        {
+          "id": "b",
+          "text": "10%"
+        },
+        {
+          "id": "c",
+          "text": "60%"
+        },
+        {
+          "id": "d",
+          "text": "25%"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "10% would imply very dense concrete, not typical for hollow blocks.",
+        "c": "60% void is too high; most hollow blocks are 40—50% void.",
+        "d": "25% void is lower than typical for standard CHB.",
+        "correct": "Net area strength ÷ Gross area strength = Solid percentage. 9 ÷ 15 = 0.6 = 60% solid, which means 40% void. This is typical for hollow blocks.",
+        "takeaway": "Understand the relationship: (Gross strength / Net strength) = Solid percentage. If net is 1.67× gross, voids are approximately 40%."
+      },
+      "explanation": null,
+      "code_citation": "ASTM C90 compressive strength testing methods",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-002-03-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:26.09657+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "60106027-8ed0-4fc8-857f-1754e4ad0535",
+      "article_id": "559d37e6-0821-46a0-9f03-5c2edfb9e375",
+      "topic_id": "7eeeb03e-376b-4f4c-bf77-6f3c9b400cb6",
+      "text": "ASTM C260 air-entraining admixtures introduce microscopic air bubbles (typically ___—___% by volume) for freeze-thaw protection.",
+      "options": [
+        {
+          "id": "a",
+          "text": "2 to 8"
+        },
+        {
+          "id": "b",
+          "text": "10 to 20"
+        },
+        {
+          "id": "c",
+          "text": "0.5 to 1"
+        },
+        {
+          "id": "d",
+          "text": "20 to 30"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "10—20% is excessive and would significantly reduce strength.",
+        "c": "0.5—1% is insufficient for freeze-thaw protection (incidental air, not intentional entrainment).",
+        "d": "20—30% would be foam, not properly entrained air.",
+        "correct": "Air entrainment typically produces 2—8% air by volume, with bubble diameter 10—1000 micrometers. This is the standard range for freeze-thaw protection.",
+        "takeaway": "Air entrainment = 2—8% volume. Each 1% air reduces compressive strength ~3—5%. Trade-off: durability vs. strength."
+      },
+      "explanation": null,
+      "code_citation": "ASTM C260 Standard Specification",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-002-06-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:26.09657+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "c4a9f7a5-7ba1-43f7-9b1b-0de2154e59a4",
+      "article_id": "559d37e6-0821-46a0-9f03-5c2edfb9e375",
+      "topic_id": "7eeeb03e-376b-4f4c-bf77-6f3c9b400cb6",
+      "text": "ASTM C494 Type B admixture is used in hot-weather concreting to ___ the initial and final set times.",
+      "options": [
+        {
+          "id": "a",
+          "text": "delay"
+        },
+        {
+          "id": "b",
+          "text": "accelerate"
+        },
+        {
+          "id": "c",
+          "text": "not affect"
+        },
+        {
+          "id": "d",
+          "text": "reverse"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Accelerating would worsen hot-weather placement (opposite of goal).",
+        "c": "Type B specifically affects set time; no effect is not an option for this admixture.",
+        "d": "Reversing set time is impossible.",
+        "correct": "Type B retarders delay set time by 1—6 hours, extending workability and preventing premature stiffening in hot conditions.",
+        "takeaway": "Type B = retardation (delay). For hot weather. Not recommended for cold weather (would slow strength gain)."
+      },
+      "explanation": null,
+      "code_citation": "ASTM C494 Standard Specification",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-002-06-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:26.09657+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "556bb4e7-cfde-4348-8ee6-3f0b4d512d9f",
+      "article_id": "559d37e6-0821-46a0-9f03-5c2edfb9e375",
+      "topic_id": "7eeeb03e-376b-4f4c-bf77-6f3c9b400cb6",
+      "text": "ASTM C494 Type C admixture is used to ___ hydration and accelerate early strength development, typically used in ___ concreting.",
+      "options": [
+        {
+          "id": "a",
+          "text": "speed; cold-weather"
+        },
+        {
+          "id": "b",
+          "text": "speed; hot-weather"
+        },
+        {
+          "id": "c",
+          "text": "slow; cold-weather"
+        },
+        {
+          "id": "d",
+          "text": "slow; any weather"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Accelerating in hot weather (where hydration is already fast) is unnecessary and can cause thermal stress.",
+        "c": "Slowing is contrary to acceleration purpose.",
+        "d": "Type C is not appropriate for all weather; it's specifically for cold conditions.",
+        "correct": "Type C accelerators speed hydration, developing high 1-day strength. Used in cold weather to compensate for slow natural hydration at low temperatures.",
+        "takeaway": "Type C = acceleration. For cold weather. Not recommended for hot weather (would increase thermal cracking risk)."
+      },
+      "explanation": null,
+      "code_citation": "ASTM C494 Standard Specification",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-002-06-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:26.09657+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "fc727d0f-59a2-491c-bd53-b118b89534f1",
+      "article_id": "559d37e6-0821-46a0-9f03-5c2edfb9e375",
+      "topic_id": "7eeeb03e-376b-4f4c-bf77-6f3c9b400cb6",
+      "text": "A ready-mix concrete design achieves 28-day strength of 30 MPa with a water-cement ratio of 0.50. If a Type A water reducer is added, reducing water demand by 10%, what is the expected new 28-day strength (assuming cement content is held constant)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Approximately 32—35 MPa (5—15% increase from reduced water-cement ratio)"
+        },
+        {
+          "id": "b",
+          "text": "Approximately 30 MPa (no change; admixtures don't affect strength, which is incorrect as they can enhance performance)"
+        },
+        {
+          "id": "c",
+          "text": "Approximately 25 MPa (admixtures reduce strength, which contradicts typical admixture effects)"
+        },
+        {
+          "id": "d",
+          "text": "Approximately 40 MPa (admixtures double strength, an unrealistic expectation for typical admixtures)"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Admixtures do affect strength indirectly through water-cement ratio modification.",
+        "c": "Water reduction increases strength (lower w/c), not decreases it.",
+        "d": "Doubling strength from 10% water reduction is unrealistic; typical gain is 5—15%.",
+        "correct": "Reducing water by 10% (w/c = 0.50 → ~0.45) increases strength approximately 5—15%. The exact increase depends on cement type and curing. 30 MPa × 1.08 ≈ 32 MPa (conservative estimate).",
+        "takeaway": "Water reduction ≈ strength increase. Lower w/c = higher strength (approximately 10 MPa increase per 0.05 reduction in w/c for normal Portland cement)."
+      },
+      "explanation": null,
+      "code_citation": "Concrete strength vs. w/c relationship; ASTM C494 effects",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-002-06-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:26.09657+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "0e9c2876-79b8-483f-98e6-634508debf4a",
+      "article_id": "559d37e6-0821-46a0-9f03-5c2edfb9e375",
+      "topic_id": "7eeeb03e-376b-4f4c-bf77-6f3c9b400cb6",
+      "text": "ASTM C494 Type F and G admixtures are ___ (high-range water reducers), which reduce water demand by ___—___% for the same slump.",
+      "options": [
+        {
+          "id": "a",
+          "text": "superplasticizers; 15 to 30"
+        },
+        {
+          "id": "b",
+          "text": "standard water reducers; 5 to 10"
+        },
+        {
+          "id": "c",
+          "text": "accelerators; 30 to 50"
+        },
+        {
+          "id": "d",
+          "text": "air-entraining agents; 2 to 5"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Standard reducers (Type A) only reduce 5—10%.",
+        "c": "Accelerators don't reduce water demand; Types F/G do.",
+        "d": "Air-entraining agents (C260) are different from C494 admixtures; minimal water reduction.",
+        "correct": "Types F and G are superplasticizers providing 15—30% water reduction (compared to 5—10% for standard Type A reducers). They enable self-consolidating concrete and very low water-cement ratios.",
+        "takeaway": "Type F/G = superplasticizers = high-range water reduction (15—30%). Use for SCC, flowing concrete, high strength."
+      },
+      "explanation": null,
+      "code_citation": "ASTM C494 Standard Specification",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-002-06-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:26.09657+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "7bcb0011-84cc-43d9-a791-e9d9e93030ed",
+      "article_id": "559d37e6-0821-46a0-9f03-5c2edfb9e375",
+      "topic_id": "7eeeb03e-376b-4f4c-bf77-6f3c9b400cb6",
+      "text": "ASTM C494 Type D admixture combines ___ and ___, making it suitable for ___ concreting.",
+      "options": [
+        {
+          "id": "a",
+          "text": "water reduction; retardation; hot-weather"
+        },
+        {
+          "id": "b",
+          "text": "water reduction; acceleration; cold-weather"
+        },
+        {
+          "id": "c",
+          "text": "air entrainment; acceleration; any weather"
+        },
+        {
+          "id": "d",
+          "text": "superplasticizing; air entrainment; flowing concrete"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Type E combines water reduction + acceleration (cold-weather).",
+        "c": "Air entrainment is ASTM C260, not C494 admixtures.",
+        "d": "Superplasticizing is Types F and G, not Type D.",
+        "correct": "Type D = Type A (water reduction) + Type B (retardation). Used in hot weather to achieve strength gain (water reduction benefit) while extending workability (retardation benefit).",
+        "takeaway": "Type D = D for hot-weather (water reduction + retardation). Remember: D = (A) + (B)."
+      },
+      "explanation": null,
+      "code_citation": "ASTM C494 Standard Specification",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-002-06-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:26.09657+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "ee1a0426-9f8f-4b99-b69e-a0bb60925380",
+      "article_id": "559d37e6-0821-46a0-9f03-5c2edfb9e375",
+      "topic_id": "7eeeb03e-376b-4f4c-bf77-6f3c9b400cb6",
+      "text": "ASTM C494 Type A admixture is primarily used for ___ the water required to achieve a target slump.",
+      "options": [
+        {
+          "id": "a",
+          "text": "reducing"
+        },
+        {
+          "id": "b",
+          "text": "increasing"
+        },
+        {
+          "id": "c",
+          "text": "maintaining constant"
+        },
+        {
+          "id": "d",
+          "text": "eliminating"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Increasing water is not the purpose of water reducers.",
+        "c": "Type A affects water, so slump is not maintained constant without adjustment.",
+        "d": "Water cannot be eliminated; admixtures reduce, not eliminate, water demand.",
+        "correct": "Type A water reducers reduce water demand by 5—10% for the same slump, allowing higher strength (lower water-cement ratio) or lower cement content (cost savings).",
+        "takeaway": "Type A = water reduction only. No effect on set time (primary advantage over Types D, E, F, G which include other effects)."
+      },
+      "explanation": null,
+      "code_citation": "ASTM C494 Standard Specification",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-002-06-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:26.09657+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "60a52a8f-e57b-4f55-aba8-a9ef12dbcc8e",
+      "article_id": "559d37e6-0821-46a0-9f03-5c2edfb9e375",
+      "topic_id": "7eeeb03e-376b-4f4c-bf77-6f3c9b400cb6",
+      "text": "A tropical Philippines construction company is preparing concrete for a 2-day hot-weather pour of a tall complex column requiring extended workability and eventual high strength. Which ASTM C494 admixture type is most appropriate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Type D (water reduction + retardation); provides strength gain from reduced water, extended workability from retardation, ideal for hot-weather conditions."
+        },
+        {
+          "id": "b",
+          "text": "Type A (water reduction only); simple, cost-effective, sufficient for any application, though may not address all specific needs"
+        },
+        {
+          "id": "c",
+          "text": "Type C (acceleration); accelerates early strength, appropriate for any climate, but may not provide extended workability"
+        },
+        {
+          "id": "d",
+          "text": "Type F (superplasticizer); provides maximum water reduction and flowing concrete, suitable for complex forms but not necessarily for extended workability"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Type A alone provides no retardation; set time would be normal or fast (not extended working time).",
+        "c": "Type C (acceleration) is counter-productive in hot weather; it would shorten working time, opposite of goal.",
+        "d": "Type F provides flowing concrete but doesn't specifically address hot-weather retardation; Type D is more targeted.",
+        "correct": "Type D is optimized for hot weather with competing needs: strength gain (Type A water reduction) and extended working time (Type B retardation). In 32°C tropical temperature with complex column geometry, Type D prevents premature stiffening while improving strength.",
+        "takeaway": "Hot weather + extended workability + strength = Type D. Hot weather + rapid strength = Type C (cold weather). Always match admixture type to project conditions."
+      },
+      "explanation": null,
+      "code_citation": "ASTM C494 admixture selection; ACI 305.1 hot-weather concreting",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-002-06-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:26.09657+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "dbd3fac4-a900-4772-bf0b-d6cd00a5365a",
+      "article_id": "a1df237f-7291-4549-93bd-e7ed43f27107",
+      "topic_id": "c5576b7e-90dc-4ad3-b32b-9feec47e71a4",
+      "text": "A mixed-use development on a 60,000 SF urban site is programmed as a 10-story podium-tower. Ground floors 1–3 are retail (70,000 NSF); floors 4–10 are office (140,000 NSF). If the total GBA is calculated as 300,000 SF, what is the floor area ratio (FAR)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "FAR = 3.0"
+        },
+        {
+          "id": "b",
+          "text": "FAR = 7.5"
+        },
+        {
+          "id": "c",
+          "text": "FAR = 10.0"
+        },
+        {
+          "id": "d",
+          "text": "FAR = 5.0"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "FAR = 3.0 would result from 180,000 GBA; recheck calculation.",
+        "b": "FAR = 7.5 would result from 450,000 GBA; too high for this project.",
+        "c": "FAR = 10.0 would result from 600,000 GBA; double the stated GBA.",
+        "correct": "FAR = Total GBA ÷ Site Area = 300,000 SF ÷ 60,000 SF = 5.0. FAR of 5.0 indicates high-density urban development; FAR ranges 8–12 in dense city centers, 4–6 in mid-density urban, 1–2 in suburban contexts."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ale-theo-009-05-q05",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "657c7ba8-2ba9-4c79-a49b-d7a745b2a439",
+      "article_id": "a1df237f-7291-4549-93bd-e7ed43f27107",
+      "topic_id": "c5576b7e-90dc-4ad3-b32b-9feec47e71a4",
+      "text": "A nightclub is proposed for the ground floor of a residential tower. A designer argues that excellent acoustic isolation and sound-absorbing materials will allow this adjacency. Is this argument sufficient, and why or why not?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No; the tower should not include residential at all if ground-floor commercial includes nightclub, as this violates zoning laws and residential comfort standards"
+        },
+        {
+          "id": "b",
+          "text": "Yes; nightclubs are common ground-floor uses; this is normal mixed-use development practice, provided that all local ordinances are strictly followed"
+        },
+        {
+          "id": "c",
+          "text": "Yes; modern acoustic technology can sufficiently isolate noise so residents are unaffected, assuming all materials meet the highest industry standards"
+        },
+        {
+          "id": "d",
+          "text": "No; nightclubs operating at 105–108 dB require separation beyond acoustic treatment; residential below nightclubs violates building code and practical standards; nightclub should be relocated to a separate building or lower basement level"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Residential can coexist with commercial if uses are compatible and properly separated; mixed-use isn't inherently problematic.",
+        "b": "While ground-floor retail is common, nightclubs specifically create noise conflicts that make them inappropriate for residential adjacency.",
+        "c": "Modern acoustics help but cannot overcome the fundamental conflict; separation is more effective than treatment.",
+        "correct": "Nightclub noise (105+ dB) is extreme; acoustic treatment alone cannot achieve adequate isolation for residential rest. Code typically requires separation or prohibition. incompatible uses must be separated; nightclub below residential violates program logic and is unacceptable even with treatment. Relocation to separate building or basement (isolated from residential) is proper solution."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [
+        "ATT"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ale-theo-009-05-q07",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "839da4bd-24e1-4e6f-8f6c-b227fcbddc9e",
+      "article_id": "aa6c280e-10b1-4cae-9e0f-578ff0fda2a3",
+      "topic_id": "7a5e566e-4194-447b-9e6a-b3456921605f",
+      "text": "A wooden bracket system using interlocking blocks and arms to support roof overhangs without nails, enabling large interior volumes and seismic flexibility, is called ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Feng shui module, often used in traditional Chinese architecture for symbolic purposes"
+        },
+        {
+          "id": "b",
+          "text": "Dougong bracket system"
+        },
+        {
+          "id": "c",
+          "text": "Glazed tile veneer, typically applied for aesthetic enhancement of exterior surfaces"
+        },
+        {
+          "id": "d",
+          "text": "Siheyuan partition, a feature of courtyard houses that provides privacy and separation"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Feng shui is a cosmological orientation principle, not a structural system.",
+        "c": "Glazed tiles are ceramic roof coverings, not bracket systems.",
+        "d": "Siheyuan is a residential courtyard typology, not a bracket system.",
+        "correct": "Dougong is explicitly defined as a modular wooden bracket system using interlocking blocks and arms to transfer roof loads to columns without nails, enabling large overhanging eaves and seismic flexibility.",
+        "takeaway": "Dougong is explicitly defined as a modular wooden bracket system using interlocking blocks and arms to transfer roof loads to columns without nails, enabling large overhanging eaves and seismic flexibility."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "ST"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-007-02-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.126756+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "da170a5e-96b6-4358-af2c-855d120c8642",
+      "article_id": "aa6c280e-10b1-4cae-9e0f-578ff0fda2a3",
+      "topic_id": "7a5e566e-4194-447b-9e6a-b3456921605f",
+      "text": "The Forbidden City's central axis runs in which direction, and what cosmological principle does this orientation reflect?",
+      "options": [
+        {
+          "id": "a",
+          "text": "East-west; reflecting solar symbolism and balance, aligning with the path of the sun"
+        },
+        {
+          "id": "b",
+          "text": "North-south; with the emperor facing south from his northern residence, symbolizing heavenly power over earthly subjects"
+        },
+        {
+          "id": "c",
+          "text": "Diagonal northeast-southwest; reflecting feng shui mountain and water placement, ensuring harmony with natural elements"
+        },
+        {
+          "id": "d",
+          "text": "Circular; with the emperor at the center of concentric rings, representing the universe's cyclical nature"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The axis is north-south, not east-west.",
+        "c": "The axis is linear north-south, not diagonal.",
+        "d": "The Forbidden City follows a linear axis, not a circular plan.",
+        "correct": "The article explicitly states the Forbidden City's central axis runs NORTH-SOUTH, with the emperor facing south from his northern residence, symbolizing heavenly power over earthly subjects. This is also identified as a common mistake if reversed.",
+        "takeaway": "This is also identified as a common mistake if reversed."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "CH"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-007-02-011",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.518466+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "8ce8a623-11c1-4d70-84bf-c54749e540d9",
+      "article_id": "aa6c280e-10b1-4cae-9e0f-578ff0fda2a3",
+      "topic_id": "7a5e566e-4194-447b-9e6a-b3456921605f",
+      "text": "How does the principle of feng shui function as architectural law rather than optional decoration in Chinese imperial and residential design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Feng shui is a superstition applied only to decorative elements like colors and patterns, without any structural implications"
+        },
+        {
+          "id": "b",
+          "text": "Feng shui—water to the north, mountains to the south, southward-facing entrances, cardinal alignment—determines building location, orientation, and plan, structuring entire metropolitan and domestic organization."
+        },
+        {
+          "id": "c",
+          "text": "Feng shui applies only to temple construction, not to palace or residential buildings, limiting its influence to religious architecture"
+        },
+        {
+          "id": "d",
+          "text": "Feng shui is a recent Western interpretation of traditional Chinese architecture and has no historical basis in design decisions, making it irrelevant to authentic practices"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The article explicitly rejects treating feng shui as optional decoration; it is law.",
+        "c": "Feng shui applies to palaces, residences, and entire metropolitan planning, not temples only.",
+        "d": "Feng shui has deep historical basis in traditional Chinese architecture; the article treats it as foundational principle.",
+        "correct": "Feng shui as structural law determining building location, orientation, and plan (water placement, cardinal alignment, southward entrances), not decoration, and explicitly states it must be understood as urban and architectural law in exam context.",
+        "takeaway": "The article emphasizes feng shui as structural law determining building location, orientation, and plan (water placement, cardinal alignment, southward entrances), not decoration, and explicitly states it must be understood as urban and architectural law in exam context."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-007-02-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.518466+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "67fb5881-08bf-48cd-b04f-a72b63eb09b9",
+      "article_id": "aa6c280e-10b1-4cae-9e0f-578ff0fda2a3",
+      "topic_id": "7a5e566e-4194-447b-9e6a-b3456921605f",
+      "text": "Buildings in Chinese architecture are characteristically elevated on platforms (terraces). What multiple functions does this raised base serve?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Decoration only; platforms have no structural purpose, serving merely as aesthetic enhancements"
+        },
+        {
+          "id": "b",
+          "text": "Drainage, prestige, and separation of public from private zones vertically"
+        },
+        {
+          "id": "c",
+          "text": "Climate control and storage of grain beneath buildings, which is essential for maintaining food supplies"
+        },
+        {
+          "id": "d",
+          "text": "Military defense and viewing platforms for surveillance, providing strategic advantages in historical contexts"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Platforms serve multiple structural and functional purposes, not decoration alone.",
+        "c": "Climate control and grain storage are not mentioned as platform functions.",
+        "d": "While some platforms (gates, wall bases) serve defensive functions, typical residential and palace platforms serve drainage and prestige.",
+        "correct": "Platforms as serving drainage and prestige purposes, elevating buildings above ground level. Combined with hierarchical spatial arrangement (south-facing public, north-facing private), platforms separate functional zones vertically.",
+        "takeaway": "Combined with hierarchical spatial arrangement (south-facing public, north-facing private), platforms separate functional zones vertically."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "ST"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-007-02-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.518466+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "733e1eaa-2289-4718-9e6c-34872ca05f8e",
+      "article_id": "aa6c280e-10b1-4cae-9e0f-578ff0fda2a3",
+      "topic_id": "7a5e566e-4194-447b-9e6a-b3456921605f",
+      "text": "A residential complex features four pavilions (north, south, east, west) surrounding a central garden courtyard, with the master occupying the north pavilion (warmest, most prestigious) and servants occupying east/west wings. This describes which Chinese residential typology?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hanok (Korean traditional house)"
+        },
+        {
+          "id": "b",
+          "text": "Japanese tatami-based modular residence"
+        },
+        {
+          "id": "c",
+          "text": "Siheyuan (Chinese courtyard house)"
+        },
+        {
+          "id": "d",
+          "text": "Indian chahar bagh garden pavilion"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Hanok is Korean, featuring ondol heating and different proportional modules.",
+        "b": "Japanese residences use tatami modular logic, not four-pavilion courtyard hierarchy.",
+        "d": "Chahar bagh is a Mughal garden type, not a residential typology.",
+        "correct": "Siheyuan is explicitly defined as a rectangular courtyard residence with four pavilions (north, south, east, west) surrounding a central garden, with hierarchical room allocation (master north/warmest/prestigious, servants east/west, guest pavilion fronting south gate).",
+        "takeaway": "Siheyuan is explicitly defined as a rectangular courtyard residence with four pavilions (north, south, east, west) surrounding a central garden, with hierarchical room allocation (master north/warmest/prestigious, servants east/west, guest pavilion fronting south gate)."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "recall",
+      "practice_context": [
+        "DESC"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-007-02-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.518466+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "f45ac257-7bd3-48a2-9f59-5a2498fd7cf1",
+      "article_id": "f769b43e-e467-4ce4-afd9-2d0152fe8d46",
+      "topic_id": "189ebc64-b071-487d-a17b-3b9b6b0f1a96",
+      "text": "The Credo principle of 'Ethical Relationship' pledges architects to highest professionalism in relation to clients, colleagues, industry partners, and society. When compared to the Code of Ethical Conduct's four obligation tiers (Public, Client, Profession, Fellow Architects), which stakeholder group does the Credo uniquely emphasize?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Industry partners (suppliers, contractors, manufacturers) as distinct stakeholder group"
+        },
+        {
+          "id": "b",
+          "text": "Society at large as broader stakeholder than the Code's Profession obligation tier"
+        },
+        {
+          "id": "c",
+          "text": "Clients as primary stakeholder (Credo lists first in its enumeration of relationships)"
+        },
+        {
+          "id": "d",
+          "text": "God and family as personal stakeholder relationships outside professional obligations"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Society is addressed through Public obligation in the Code; not unique to Credo.",
+        "c": "Clients appear in both documents equally; not unique distinction.",
+        "d": "God/family relationships are personal domain, not professional stakeholder addressed in either document's obligation framework.",
+        "correct": "The Code of Ethical Conduct structures obligations around Public, Client, Profession, and Fellow Architects. The Credo's Ethical Relationship principle adds 'industry partners' (contractors, suppliers, manufacturers) as an explicit stakeholder group not separately articulated in the Code. Sections 3-4 address contractor and supplier relationships within the Public/Client obligations framework, but the Credo elevates these to distinct stakeholder status.",
+        "takeaway": "The Credo's Ethical Relationship principle uniquely emphasizes industry partners (contractors, suppliers, manufacturers) as a distinct stakeholder group beyond the Code's four obligation tiers."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 200; RA 9266",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-ETH-002-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.117151+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "c99f78a2-e10a-42cc-a604-d0937967c595",
+      "article_id": "e94f5a24-e9fa-48f6-aa3e-f1de31922f46",
+      "topic_id": "4849de98-aa28-4b5e-9a2b-5b7ac71c44d9",
+      "text": "What is the primary difference between an adhesive and a sealant?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Adhesives are flexible; sealants are rigid, which affects their application in dynamic joints."
+        },
+        {
+          "id": "b",
+          "text": "Adhesives create permanent bonds and are rigid after cure; sealants remain flexible and accommodate joint movement."
+        },
+        {
+          "id": "c",
+          "text": "Adhesives are used for wood; sealants are used for concrete, reflecting their material compatibility."
+        },
+        {
+          "id": "d",
+          "text": "There is no significant difference; the terms are interchangeable, although industry standards may vary."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The comparison is reversed; sealants are flexible.",
+        "c": "Both types are used for multiple substrates; application determines the choice.",
+        "d": "The terms are not interchangeable; they serve different functions.",
+        "correct": "Adhesives bond substrates rigidly; sealants remain elastic to accommodate joint movement and prevent air/water infiltration. This is the fundamental distinction.",
+        "takeaway": "Adhesive = permanent rigid bond. Sealant = flexible, accommodates movement."
+      },
+      "explanation": null,
+      "code_citation": "ASTM C920 Sealant Standard and ASTM D2382 Adhesive Standard",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-008-05-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    }
+  ]
+}

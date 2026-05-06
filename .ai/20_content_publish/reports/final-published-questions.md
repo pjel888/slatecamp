@@ -268,3 +268,50 @@ Status: PUBLISHED_VERIFIED.
 - Backup: `.ai/20_content_publish/backups/questions-backup-question-batch-027-20260506T154233Z.json`.
 
 Running total committed after Batch 027: 927 published/recovered verified questions.
+
+## Question Batch 028 Published — 2026-05-06T15:46:42.046008+00:00
+
+Status: PUBLISHED_VERIFIED.
+
+- Selected: 50.
+- Local verifier: 50/50 pass.
+- Independent safety review: PASS, blockers none.
+- Remote apply: 50/50 by exact question_id filter.
+- Remote verification: 50/50.
+- Answer-key changes: 0.
+- Option changes: 0.
+- Backup: `.ai/20_content_publish/backups/questions-backup-question-batch-028-20260506T154545Z.json`.
+
+Running total committed after Batch 028: 977 published/recovered verified questions.
+
+## Tool/Context Cap Handoff — 2026-05-06T15:46:42.046008+00:00
+
+Stop reason: TOOL/CONTEXT CAP REACHED, not a safety failure.
+
+Clean resume point:
+- Latest completed batch: question-batch-028.
+- Next exact batch: question-batch-029.
+- Continue strict selector with 50 candidates unless stability policy is changed by Philip.
+
+Current committed question totals:
+- Through Batch 008: 72.
+- Batch 009: 5.
+- Batch 010: 25.
+- Batch 011: 25 recovered/no-op verified.
+- Batch 012–028: 17 batches x 50 = 850.
+- Total committed published/recovered verified after Batch 028: 977.
+
+Answer-key changes published: 0.
+Option changes published: 0.
+Remote verification failures: 0.
+
+Known unrelated blocker remains: `bun run content-audit:validate` may fail on article bundle `public-service-counters-and-atms--3c69e570-a75c-4168-ad09-914e2c1062f9` due missing preserved UI blocks and candidate_hash mismatch. This is unrelated to question batches and was not repaired.
+
+Next exact resume step:
+1. `git status --short`
+2. `bun scripts/content-audit/select-question-remediation-batch.ts question-batch-029 50`
+3. Run `bun scripts/content-audit/verify-question-batch.ts question-batch-029`
+4. Copy publish-ready JSONs to `.ai/20_content_publish/`
+5. Independent safety review
+6. Publish with exact `question_id` filters only
+7. Remote verify, commit, push, continue to Batch 030.
