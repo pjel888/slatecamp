@@ -133,7 +133,12 @@
     "content-audit:apply-questions": "bun scripts/content-audit/apply-approved-question-improvements.ts",
     "content-audit:apply-source-status": "bun scripts/content-audit/apply-approved-source-status.ts",
     "content-audit:rollback-content": "bun scripts/content-audit/rollback-content-application.ts",
-    "content-audit:controlled-apply-validate": "bun scripts/content-audit/validate-controlled-apply-mode.ts"
+    "content-audit:controlled-apply-validate": "bun scripts/content-audit/validate-controlled-apply-mode.ts",
+    "content-audit:migration-lineage-analyze": "bun scripts/content-audit/analyze-supabase-migration-lineage.ts",
+    "content-audit:rebaseline-plan": "bun scripts/content-audit/build-supabase-rebaseline-plan.ts",
+    "content-audit:rebaseline-plan-validate": "bun scripts/content-audit/validate-supabase-rebaseline-plan.ts",
+    "content-audit:admin-shadow-migration": "bun scripts/content-audit/build-admin-audit-shadow-migration.ts",
+    "content-audit:admin-shadow-migration-validate": "bun scripts/content-audit/validate-admin-audit-shadow-migration.ts"
   },
   "dependencies": {
     "@base-ui/react": "^1.4.1",
