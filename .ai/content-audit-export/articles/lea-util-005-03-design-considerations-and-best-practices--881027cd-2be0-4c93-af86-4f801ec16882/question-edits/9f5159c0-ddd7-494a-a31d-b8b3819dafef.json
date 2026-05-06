@@ -1,0 +1,10 @@
+{
+  "question_id": "9f5159c0-ddd7-494a-a31d-b8b3819dafef",
+  "baseline_hash": "sha256:d27ecfcd0304f349a8d935d2c413dee8cb3d7f2bcd8a00fb9ffffd0695218336",
+  "reason": "Strict explanation backfill from existing specific rationale; answer key and options unchanged.",
+  "approved_by": "hermes-question-remediation-autopilot",
+  "approved_at": "2026-05-06T15:37:59.481Z",
+  "proposed": {
+    "explanation": "This describes SLC (Signaling Line Circuit) function, not NAC function. This describes the monitoring transmission pathway, not NACs. NACs are separate from SLC circuits and do not provide backup loop redundancy. NACs are the output circuits from the FACP that supply both signaling and power to notification appliances (sirens, strobes, voice devices). They translate alarm conditions into occupant-facing notifications. NACs are output circuits for notifications; SLCs are input circuits for device status. Both are required for a functioning fire alarm system."
+  }
+}

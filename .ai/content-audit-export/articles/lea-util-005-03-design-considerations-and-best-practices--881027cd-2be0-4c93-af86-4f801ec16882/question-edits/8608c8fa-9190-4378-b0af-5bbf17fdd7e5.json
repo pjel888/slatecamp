@@ -1,0 +1,10 @@
+{
+  "question_id": "8608c8fa-9190-4378-b0af-5bbf17fdd7e5",
+  "baseline_hash": "sha256:d64dfea3880f00194bcfb0d433c34dc1421913baa2f9f507baf47358328b75a8",
+  "reason": "Strict explanation backfill from existing specific rationale; answer key and options unchanged.",
+  "approved_by": "hermes-question-remediation-autopilot",
+  "approved_at": "2026-05-06T15:37:59.482Z",
+  "proposed": {
+    "explanation": "Superficial capacity analysis misses transient peaks, future load growth, and the need for headroom per NFPA design practices. Disabling voice evacuation during alarm would defeat the purpose of integrated communications; the solution is to expand power, not remove capability. The 220V standard does not provide special headroom; current limitations are absolute regardless of voltage. While 4.5 amps appears to fit within 16 amps, NFPA requirements and best practice dictate accounting for peak transient loads, battery charging during standby, and future expansion. A 16-amp supply may not sustain simultaneous NAC + MNS activation reliably; a dedicated UPS or power expansion module ensures adequate supply and prevents voltage sag that would reduce appliance output. Power supply sizing must account for simultaneous peak loads and provide design margin; undersized supplies cause appliance failures during alarm, compromising life safety."
+  }
+}

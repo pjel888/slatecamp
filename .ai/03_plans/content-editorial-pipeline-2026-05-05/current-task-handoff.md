@@ -487,3 +487,22 @@ Next exact resume step:
 5. Independent safety review
 6. Publish with exact `question_id` filters only
 7. Remote verify, commit, push, continue to Batch 027.
+
+## Question Batch 026 Preflight — 2026-05-06T15:37:51.624609+00:00
+
+Status: PASS. Credentials present by safe local load. Continuing strict question remediation loop.
+
+## Question Batch 026 Published — 2026-05-06T15:40:01.979159+00:00
+
+Status: PUBLISHED_VERIFIED.
+
+- Selected: 50.
+- Local verifier: 50/50 pass.
+- Independent safety review: PASS, blockers none.
+- Remote apply: 50/50 by exact question_id filter.
+- Remote verification: 50/50.
+- Answer-key changes: 0.
+- Option changes: 0.
+- Backup: `.ai/20_content_publish/backups/questions-backup-question-batch-026-20260506T153917Z.json`.
+
+Running total committed after Batch 026: 877 published/recovered verified questions.

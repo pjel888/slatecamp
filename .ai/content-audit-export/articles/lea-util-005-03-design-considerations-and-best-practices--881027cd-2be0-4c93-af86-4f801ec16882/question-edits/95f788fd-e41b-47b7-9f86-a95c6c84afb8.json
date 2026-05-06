@@ -1,0 +1,10 @@
+{
+  "question_id": "95f788fd-e41b-47b7-9f86-a95c6c84afb8",
+  "baseline_hash": "sha256:59456e5f6f0d065186a90c2a6cc006f0cd54a3f7ae393c6038fdd618ac48cc21",
+  "reason": "Strict explanation backfill from existing specific rationale; answer key and options unchanged.",
+  "approved_by": "hermes-question-remediation-autopilot",
+  "approved_at": "2026-05-06T15:37:59.482Z",
+  "proposed": {
+    "explanation": "Manual switchover introduces delay and human error risk during an active emergency, defeating the purpose of redundancy. Dual transmission to separate central stations causes confusion and doubles response overhead without improving safety. Reverting to conventional mode is not a standard design practice and would degrade the system's diagnostic capability. Per best practice in critical facilities, switchover must be automatic and hardwired (relay-based) to ensure continuity without human intervention. Manual switchover creates delay risk during active emergency; dual transmission causes confusion; reverting to conventional mode would lose device granularity. Automatic switchover in redundant FACP designs is critical for uninterrupted fire detection and notification in high-availability facilities such as hospitals."
+  }
+}
