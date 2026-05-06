@@ -1,0 +1,55 @@
+# batch-005 Article Selection Report
+
+Selected: 50
+Already published excluded: 93
+
+- `ea2f4f6d-dd27-4e75-b202-91a60858c1f1` / lea-hist-004-05-core-concept / sources=0
+- `1254cb0d-27ec-4a02-8ea4-8f37dcd44dbd` / lea-hist-007-06-core-concept / sources=0
+- `b5c8b7bb-b62a-4e2c-a9c8-7c7b29388ea8` / lea-theo-003-04-core-concept / sources=0
+- `d862de93-c876-468d-9edf-95656a781f55` / lea-theo-004-13-core-concept / sources=0
+- `669aab68-416a-4a90-b66c-4ea998e82d05` / lea-theo-004-02-core-concept / sources=0
+- `c0e15f56-dc57-4814-b6fb-7ee7f554a209` / lea-hist-008-03a-core-concept / sources=0
+- `630d0fd8-e25f-4bf8-a62f-f31b4e320831` / lea-hist-002-03-core-concept / sources=0
+- `3e966435-e276-422e-a220-374043120cec` / lea-hist-001-04-core-concept / sources=0
+- `a66d3236-ce09-4723-acc7-9b017647f249` / lea-theo-005-05-core-concept / sources=0
+- `b3b94acc-c537-4dc3-bf2c-8246a8e6fdc6` / lea-hist-012-01-core-concept / sources=0
+- `db85fd0a-60fd-4617-9364-f0d63567acce` / lea-hist-014-05-core-concept / sources=0
+- `567ba614-9dcd-4c76-8bf3-74478fd1291f` / lea-theo-004-01-core-concept / sources=0
+- `7edaba22-3d9f-4283-85f9-1c51d9b89b12` / lea-hist-002-01-core-concept / sources=0
+- `976957b7-c288-4a63-8e76-9e26dcf6f199` / lea-theo-005-04-core-concept / sources=0
+- `c6f9eec1-727b-4d00-a905-f69a58245c66` / lea-hist-008-08-core-concept / sources=0
+- `59ad9766-1b0c-4256-8fde-a3661471c360` / lea-hist-013-02-core-concept / sources=0
+- `c0a5189b-4c67-47ad-bfd0-4b4d33df7247` / lea-hist-004-02-core-concept / sources=0
+- `8a812be4-c5c0-40ec-a3ff-74acb39e24bc` / lea-theo-004-08-core-concept / sources=0
+- `4ed9c46d-1468-4741-99a4-507de15377fe` / lea-hist-004-06-core-concept / sources=0
+- `c93bfab9-3571-4e80-8d9b-d9d50a9eff02` / lea-hist-002-06-core-concept / sources=0
+- `6fc5e22a-9ff6-4a6c-b0eb-b93c9ffd00af` / lea-hist-014-03-core-concept / sources=0
+- `369fd847-ad5b-4214-b86b-68cd7f62c534` / lea-hist-004-08-core-concept / sources=0
+- `79bb710e-4b46-4e5a-b781-4dd864aa6ddc` / lea-hist-008-03b-core-concept / sources=0
+- `160660ca-783b-4604-9b2a-691e10f0e97b` / lea-hist-008-02-core-concept / sources=0
+- `59ea9844-0c75-4f39-873f-7cb83a14a924` / lea-hist-015-02-core-concept / sources=0
+- `d82c5a6f-539a-4b81-bd40-668d9ba467ec` / lea-theo-005-10-core-concept / sources=0
+- `dd976d64-9f04-409f-8d4d-f8140d575b86` / lea-theo-005-08-core-concept / sources=0
+- `81af99b9-3a14-4037-84c0-09dbd913153a` / lea-theo-005-09-core-concept / sources=0
+- `98d64943-b6ab-4fad-b16e-975d7126036e` / lea-hist-011-02-core-concept / sources=0
+- `7bd084c7-e409-4927-84a0-9eac44e07ba4` / lea-hist-014-02-core-concept / sources=0
+- `9bcf8ae9-81a7-41eb-b636-74c93570864c` / lea-hist-002-05-core-concept / sources=0
+- `7095ced9-9182-4eda-917b-84568cd74ba2` / lea-hist-007-05-core-concept / sources=0
+- `d7e9ccad-d858-4bee-9786-d1fc9c3abefc` / lea-hist-008-03d-core-concept / sources=0
+- `e2d9d304-9362-4472-8ca8-34106f6990dd` / lea-theo-004-03-core-concept / sources=0
+- `aa6c280e-10b1-4cae-9e0f-578ff0fda2a3` / lea-hist-007-02-core-concept / sources=0
+- `ed8d54e9-eef1-4585-9447-f9cff392bbff` / lea-hist-008-05-core-concept / sources=0
+- `683abfcf-415c-4e89-9a9c-fcfd57aa1f2f` / lea-hist-008-07a-core-concept / sources=0
+- `2e117d95-eb4c-4d96-8e3f-b31f18d26a64` / lea-theo-004-12-core-concept / sources=0
+- `7ad29107-a824-4a7b-8c32-ed6a719ebd39` / lea-theo-004-10-core-concept / sources=0
+- `6bfa7e66-ac5c-4a52-8f92-0ca94b945305` / lea-theo-004-09-core-concept / sources=0
+- `569f5a05-ad46-4617-8170-a19e2f5d5db1` / lea-dsgn-007-07-core-concept / sources=0
+- `f0f43f10-eabc-474f-8397-c196a9b3649c` / lea-strc-003-04-core-concept / sources=0
+- `1f411bc4-4ca5-4bb2-ab46-e130e1b0a5e4` / lea-hist-008-01-core-concept / sources=0
+- `ae14f6a9-dec8-458c-b4a1-3ae04df43bfa` / lea-plan-002-04-core-concept / sources=0
+- `f97941fb-6e33-4b9b-8c44-f51db68e40c7` / lea-theo-009-01-core-concept / sources=0
+- `a43232f4-9396-4156-bfec-4606a44b4a72` / lea-plan-003-07-core-concept / sources=0
+- `d4bd5a1a-c6b6-415f-9da3-c5c84f4ab96d` / lea-dsgn-005-12-core-concept / sources=0
+- `f8fb0ea9-fe68-4909-af36-534d144990ae` / lea-dsgn-012-05-core-concept / sources=0
+- `50d41d7e-57cd-4280-b850-e6d2f89414a6` / lea-plan-002-01-core-concept / sources=0
+- `f39be27a-5611-4d35-bdda-02f6e3e46f42` / lea-matl-002-04-core-concept / sources=0
