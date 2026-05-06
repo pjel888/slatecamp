@@ -75,3 +75,20 @@ Validation:
 - `bun run check:storybook`: passed, 105 stories.
 - `NODE_OPTIONS=--max-old-space-size=8192 bun run build-storybook`: passed.
 - Runtime Playwright screenshots passed for collapsed and expanded states.
+
+## Batch 5
+
+Added:
+
+- `src/components/dashboard/ModeCard.stories.tsx`
+
+Covered states:
+
+- Default
+- Active session
+- Disabled
+
+Validation:
+
+- `bun run check:storybook`: passed.
+- `NODE_OPTIONS=--max-old-space-size=8192 bun run build-storybook`: passed.

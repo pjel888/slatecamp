@@ -1,30 +1,5 @@
 [
   {
-    "id": "UIA-DSS-0011",
-    "file": "src/components/dashboard/ModeCard.tsx",
-    "line": null,
-    "surface": "dashboard",
-    "component": "ModeCard",
-    "current_pattern": "custom card shell/status badge",
-    "classification": "definite_drift",
-    "risk": "low",
-    "proposed_target": "Card + Badge",
-    "user_impact": "Reduce UI drift and improve consistency/accessibility where safe.",
-    "implementation_notes": "Implement only from queue in small batches after reading current file and preserving behavior.",
-    "storybook_required": true,
-    "storybook_story_path": null,
-    "tests_required": [
-      "bun run type-check",
-      "bun run lint"
-    ],
-    "visual_routes": [
-      "/dashboard/quiz"
-    ],
-    "reviewer_notes": null,
-    "final_status": "open",
-    "validation_result": null
-  },
-  {
     "id": "UIA-QZ-0008",
     "file": "src/components/quiz-v2/setup",
     "line": null,

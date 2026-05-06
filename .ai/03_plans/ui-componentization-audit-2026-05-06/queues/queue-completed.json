@@ -148,5 +148,30 @@
     "reviewer_notes": null,
     "final_status": "completed",
     "validation_result": "Completed earlier in Batch 2: PricingCard CTA migrated to shared Button asChild and Storybook coverage added."
+  },
+  {
+    "id": "UIA-DSS-0011",
+    "file": "src/components/dashboard/ModeCard.tsx",
+    "line": null,
+    "surface": "dashboard",
+    "component": "ModeCard",
+    "current_pattern": "custom card shell/status badge",
+    "classification": "definite_drift",
+    "risk": "low",
+    "proposed_target": "Card + Badge",
+    "user_impact": "Reduce UI drift and improve consistency/accessibility where safe.",
+    "implementation_notes": "Implement only from queue in small batches after reading current file and preserving behavior.",
+    "storybook_required": true,
+    "storybook_story_path": null,
+    "tests_required": [
+      "bun run type-check",
+      "bun run lint"
+    ],
+    "visual_routes": [
+      "/dashboard/quiz"
+    ],
+    "reviewer_notes": null,
+    "final_status": "completed",
+    "validation_result": "ModeCard root migrated to shared Card and active-session status to shared Badge; Storybook coverage added; lint/check-storybook/build-storybook passed; visual screenshots inspected; type-check blocked only by baseline missing openai."
   }
 ]

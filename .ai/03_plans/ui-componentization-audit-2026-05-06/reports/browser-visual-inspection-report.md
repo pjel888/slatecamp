@@ -78,3 +78,23 @@ Date/time: 2026-05-06T18:28:55
 - Collapsed endpoint row remains compact and aligned after shared `Button` migration.
 - Expanded code blocks render correctly.
 - No obvious visual regression.
+
+## Batch 5: Dashboard ModeCard Card/Badge migration
+
+Date/time: 2026-05-06T18:53:22
+
+### Story inspected
+
+- Storybook iframe: `/iframe.html?id=dashboard-modecard--default&viewMode=story`
+- Storybook iframe: `/iframe.html?id=dashboard-modecard--active-session&viewMode=story`
+
+### Evidence
+
+- `.ai/03_plans/ui-componentization-audit-2026-05-06/visual/batch-5-mode-card/default.png`
+- `.ai/03_plans/ui-componentization-audit-2026-05-06/visual/batch-5-mode-card/active.png`
+
+### Result
+
+- Default mode card remains visually consistent after shared Card migration.
+- Active-session status badge and actions render correctly after shared Badge migration.
+- No obvious visual regression.

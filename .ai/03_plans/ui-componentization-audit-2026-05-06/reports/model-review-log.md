@@ -64,3 +64,16 @@ Reviewer: independent Hermes subagent, separate context/model from builder.
   - Restored explicit `type="button"` on the expandable trigger.
   - Restored `gap-2.5` to preserve compact row spacing.
   - Replaced temporary components-to-app re-export with canonical implementation under `src/components/developer/EndpointCard.tsx`; the route now imports the shared component.
+
+## Batch 5: Dashboard ModeCard Card/Badge migration
+
+Date/time: 2026-05-06T18:53:22
+Queue ID: UIA-DSS-0011
+Reviewer: independent Hermes subagent, separate context/model from builder.
+
+### Reviewer result
+
+- Blockers: none after follow-up fix.
+- Recommendations addressed before commit:
+  - Restored pre-existing `hover:shadow-sm` interaction styling.
+  - Replaced nondeterministic Storybook `new Date()` fixture with fixed timestamp.

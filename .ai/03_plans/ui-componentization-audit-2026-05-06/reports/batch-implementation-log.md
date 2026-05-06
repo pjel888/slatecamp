@@ -100,3 +100,27 @@ Queue ID: UIA-DEV-0005
 ### Risk
 
 Low. Moving the component into `src/components/developer` improves Storybook compatibility and avoids a restricted import, but route import path changed. Existing app-internal path remains as a compatibility re-export.
+
+## Batch 5: Dashboard ModeCard Card/Badge migration
+
+Date/time: 2026-05-06T18:53:22
+Queue ID: UIA-DSS-0011
+
+### What changed
+
+- Migrated `ModeCard` shell from a custom card-like `<div>` to shared `Card size="lg"`.
+- Migrated active-session status label from custom absolute `<div>` to shared `Badge variant="primary" size="xs"`.
+- Preserved disabled/muted states, hover border, hover shadow, action buttons, active-session behavior, and compact badge placement.
+- Added `src/components/dashboard/ModeCard.stories.tsx` with default, active-session, and disabled states.
+
+### Validation
+
+- `bun run lint`: passed with same 10 baseline warnings.
+- `bun run check:storybook`: passed.
+- `NODE_OPTIONS=--max-old-space-size=8192 bun run build-storybook`: passed.
+- `bun run type-check`: blocked by same pre-existing missing `openai` module in `scripts/normalize-distractors.ts`.
+- Playwright screenshots and vision inspection covered default and active-session states.
+
+### Risk
+
+Low. The component keeps the same external props and behavior while routing card shell/status badge through existing primitives.
