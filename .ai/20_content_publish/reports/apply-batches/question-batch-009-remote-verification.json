@@ -1,0 +1,74 @@
+{
+  "created_at": "2026-05-06T12:41:31.415Z",
+  "batch": "question-batch-009",
+  "apply_results": [
+    {
+      "question_id": "34040cdd-0c12-4dda-8f0b-83bbd1c39cc6",
+      "error": null,
+      "returned_rows": 1
+    },
+    {
+      "question_id": "c9250b47-47f5-4e45-a44a-6c6b41ca219d",
+      "error": null,
+      "returned_rows": 1
+    },
+    {
+      "question_id": "12e30953-d88a-4857-9235-7522268e8fa4",
+      "error": null,
+      "returned_rows": 1
+    },
+    {
+      "question_id": "5b858f47-c9d7-42e0-8abe-855427d4e87a",
+      "error": null,
+      "returned_rows": 1
+    },
+    {
+      "question_id": "15acfdf1-1eae-4743-8db8-a191c01033cc",
+      "error": null,
+      "returned_rows": 1
+    }
+  ],
+  "verified": [
+    {
+      "question_id": "34040cdd-0c12-4dda-8f0b-83bbd1c39cc6",
+      "explanation_verified": true,
+      "answer_key_unchanged": true,
+      "options_unchanged": true,
+      "post_hash": "sha256:612af2d1a704954e0d5a62d75f0f25bede2dcb2e5183070fbbeaab3ada369f8f",
+      "updated_at": "2026-05-06T12:41:30.761618+00:00"
+    },
+    {
+      "question_id": "c9250b47-47f5-4e45-a44a-6c6b41ca219d",
+      "explanation_verified": true,
+      "answer_key_unchanged": true,
+      "options_unchanged": true,
+      "post_hash": "sha256:2530ce22ef5a6391b7d80df5819c7dd0c9fb07d88ab0b3ce059302763a7cf022",
+      "updated_at": "2026-05-06T12:41:31.023198+00:00"
+    },
+    {
+      "question_id": "12e30953-d88a-4857-9235-7522268e8fa4",
+      "explanation_verified": true,
+      "answer_key_unchanged": true,
+      "options_unchanged": true,
+      "post_hash": "sha256:d7f5eb0979b094c86c0bb9001f62a50bce4246df6c53e06cce4c963183ee1f85",
+      "updated_at": "2026-05-06T12:41:31.160483+00:00"
+    },
+    {
+      "question_id": "5b858f47-c9d7-42e0-8abe-855427d4e87a",
+      "explanation_verified": true,
+      "answer_key_unchanged": true,
+      "options_unchanged": true,
+      "post_hash": "sha256:6e6b706e3cd32547293aa5116320a6486618294fccd2b39062e94fd5e84df729",
+      "updated_at": "2026-05-06T12:41:31.277446+00:00"
+    },
+    {
+      "question_id": "15acfdf1-1eae-4743-8db8-a191c01033cc",
+      "explanation_verified": true,
+      "answer_key_unchanged": true,
+      "options_unchanged": true,
+      "post_hash": "sha256:78fbe95cec477916ba2b93b6742ec9c39caf102f617c22f4aa7b206705561ce3",
+      "updated_at": "2026-05-06T12:41:31.394595+00:00"
+    }
+  ],
+  "failures": []
+}

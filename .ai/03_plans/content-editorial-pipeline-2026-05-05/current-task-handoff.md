@@ -52,3 +52,27 @@ Batch 009 narrowed verifier passed:
 4. Continue Batch 010 with strict-v3 selector.
 
 Stop condition reached: missing Supabase write credentials.
+
+## Question Batch 009 Resume Publish Update — 2026-05-06T12:41:55.068535+00:00
+
+Status: REMOTE PUBLISHED AND VERIFIED; LOCAL COMMIT GATE IN PROGRESS.
+
+Batch 009 results:
+- Publish candidates loaded: 5
+- Remote baseline matches: 5
+- Remote baseline mismatches: 0
+- Rows applied by exact question_id filter: 5
+- Remote verification: PASS, 5/5
+- Answer-key changes published: 0
+- Option changes published: 0
+- Rollback backup: .ai/20_content_publish/backups/questions-backup-batch-009-20260506T124127Z.json
+- Rollback manifest: .ai/20_content_publish/rollback/rollback-manifest-question-batch-009.generated.json
+
+Validation note:
+- Question-specific validators pass for Batch 009.
+- Global `bun run content-audit:validate` currently fails on unrelated article bundle `public-service-counters-and-atms--3c69e570-a75c-4168-ad09-914e2c1062f9` because candidate.md is missing 3 preserved UI blocks and diff-report candidate_hash mismatches candidate.md.
+- This was not repaired because the active mission explicitly concerns question publishing and forbids unrelated content-roundtrip work/staging.
+
+Next exact step:
+- If commit gate is accepted with the unrelated global validation warning, commit/push Batch 009 publish reports.
+- Then run `bun scripts/content-audit/select-question-remediation-batch.ts question-batch-010 25` and continue the strict-v3 question loop.
