@@ -127,3 +127,41 @@ Status: PUBLISHED_VERIFIED.
 - Backup: `.ai/20_content_publish/backups/questions-backup-question-batch-015-20260506T132205Z.json`.
 
 Next exact step after commit/push: `bun scripts/content-audit/select-question-remediation-batch.ts question-batch-016 50`.
+
+## Tool/Context Cap Handoff — 2026-05-06T13:23:20.574867+00:00
+
+Stop reason: TOOL/CONTEXT CAP REACHED, not a safety failure.
+
+Clean resume point:
+- Batch 011 audit recovery committed/pushed: b7061ad72.
+- Batch 012 published/verified committed/pushed: 6cfa908c5.
+- Batch 013 published/verified committed/pushed: 5873b316d.
+- Batch 014 published/verified committed/pushed: 0e9235975.
+- Batch 015 published/verified committed/pushed: 2c81bdd01.
+
+Remote publication totals now committed:
+- Through Batch 008: 72.
+- Batch 009: 5.
+- Batch 010: 25.
+- Batch 011: 25 recovered/no-op verified.
+- Batch 012: 50.
+- Batch 013: 50.
+- Batch 014: 50.
+- Batch 015: 50.
+- Total committed published/recovered verified: 327.
+
+Answer-key changes published: 0.
+Option changes published: 0.
+Remote verification failures: 0 for committed batches.
+
+Known unrelated blocker remains: `bun run content-audit:validate` fails on article bundle `public-service-counters-and-atms--3c69e570-a75c-4168-ad09-914e2c1062f9` due missing preserved UI blocks and candidate_hash mismatch. This is unrelated to question batches and was not repaired in this run.
+
+Next exact resume step:
+1. Confirm clean tree with `git status --short`.
+2. Run `bun scripts/content-audit/select-question-remediation-batch.ts question-batch-016 50`.
+3. Run `bun scripts/content-audit/verify-question-batch.ts question-batch-016`.
+4. Copy publish-ready JSONs to `.ai/20_content_publish/`.
+5. Independent safety review.
+6. Publish with exact `question_id` filters only.
+7. Remote verify, commit, push, and continue to Batch 017.
+
