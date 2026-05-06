@@ -1,13 +1,8 @@
-# Current Task Handoff — Supabase Rebaseline Autopilot
+# Current Task Handoff — Staging Validation Autopilot
 
-Status: rebaseline/staging/readiness work completed without production mutation.
+Status: local-only staging validation completed; hosted staging unavailable/not safely selectable. Production remains blocked.
 
-Final report:
-- `.ai/03_plans/content-editorial-pipeline-2026-05-05/supabase-rebaseline-autopilot/final-rebaseline-autopilot-report.md`
+See final report:
+- `.ai/03_plans/content-editorial-pipeline-2026-05-05/supabase-rebaseline-autopilot/staging-validation/staging-validation-final-report.md`
 
-Lineage state:
-- Remote-only migrations: 214
-- Local-only migrations: 50
-- Original remote-only files recovered: 0
-
-Production remains blocked. Do not run broad migration repair. Next safe action is verified staging/preview rebaseline and admin audit schema apply/readback there only.
+Next safe action: provision or select a verified non-production Supabase preview/staging project, then run the generated schema/payload apply and readback there. Do not mutate production.

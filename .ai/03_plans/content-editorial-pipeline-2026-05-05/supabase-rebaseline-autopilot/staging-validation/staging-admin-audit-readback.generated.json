@@ -1,0 +1,35 @@
+{
+  "apply_mode": "local_payload_import_simulation",
+  "dry_run_false_only_against": "local simulation, no DB",
+  "production_mutation": false,
+  "content_mutation": false,
+  "families": [
+    {
+      "file": "admin-sync-source-verification-payload.generated.json",
+      "sha256": "94b1f39135a9cf04ee0b58b8abe6c10fea9d993784a02836b41ea70e922cf502",
+      "list_counts": {
+        "table_targets": 4,
+        "items": 7
+      },
+      "simulated_import_count": 11
+    },
+    {
+      "file": "admin-sync-article-improvement-payload.generated.json",
+      "sha256": "70ef9f504462c2d615e9c912e147480c83ce995988d2668ecda97b8f286cf1b1",
+      "list_counts": {
+        "items": 3
+      },
+      "simulated_import_count": 3
+    },
+    {
+      "file": "admin-sync-question-improvement-payload.generated.json",
+      "sha256": "bcd8564a97670bd8917f6a106b165650d5f5e81bb333eef59562be2fb0a04d3f",
+      "list_counts": {
+        "items": 10
+      },
+      "simulated_import_count": 10
+    }
+  ],
+  "total_simulated_rows": 24,
+  "idempotency_key": "payload-sha256-family-set"
+}

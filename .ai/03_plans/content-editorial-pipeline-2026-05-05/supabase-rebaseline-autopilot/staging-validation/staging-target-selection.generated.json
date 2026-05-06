@@ -1,0 +1,14 @@
+{
+  "target_kind": "local_sandbox_artifact",
+  "target_project_ref_or_local": "local-only-no-db-connection",
+  "production_project_ref": "hrpdwqurngnyajuhbkdg",
+  "is_production": false,
+  "credential_source": "none; no DB credentials used or written",
+  "data_policy": "local generated artifacts and fixtures only; no production reads/writes; no external provider upload",
+  "branch_or_staging_created": false,
+  "hosted_staging_unavailable": true,
+  "safe_to_apply_admin_audit_schema": true,
+  "safe_to_apply_admin_audit_payloads": true,
+  "production_mutation_attempted": false,
+  "selection_reason": "Supabase projects list showed linked production only; no verified separate hosted staging/preview ref was safely selectable. Continuing with local-only sandbox simulation per autopilot rule."
+}
