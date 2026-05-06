@@ -1,14 +1,14 @@
 # Final Content Production Report
 
-Status: BATCH_005_PUBLISHED_AND_VERIFIED_CONTINUING
-Generated: 2026-05-06T09:42:17.963852+00:00
+Status: BATCH_006_PUBLISHED_AND_VERIFIED_CONTINUING
+Generated: 2026-05-06T09:47:34.556028+00:00
 
 Safe-path published so far:
-- Articles: 143
+- Articles: 193
 - Questions: 0
 
 Latest milestone:
-- Batch 005 published 50 articles.
+- Batch 006 published 50 articles.
 - Remote verification passed for 50/50 rows.
 - No rollback needed.
 
@@ -19,6 +19,9 @@ Validation:
 - git diff --check passed at validation time.
 - scoped secret scan found 0 real matches.
 
+Repo safety note:
+- Unrelated pre-existing working-tree changes remain outside the content-production staging scope and were not staged.
+
 Next required continuation:
-- Continue subject/risk clusters up to 50 articles each.
-- Begin linked-question recheck only when validated real question payloads can be created safely.
+- Continue cluster batches up to 50 articles each.
+- Publish question edits only if independently source-validated payloads are created.
