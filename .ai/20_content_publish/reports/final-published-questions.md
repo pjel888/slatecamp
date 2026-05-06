@@ -1,5 +1,11 @@
-# Final Published Questions
+# Final Published Questions Progress
 
-Total: 0
+Published/improved questions so far: 72
 
-Reason: no linked-question edit payload met answer-key, rationale, source-support, ambiguity, and baseline-hash requirements during this resumed run. See `question-recheck-after-article-batches-report.md`.
+- Batch 001: 1
+- Batch 003: 5
+- Batch 004: 16
+- Batch 005: 9
+- Batch 006: 16
+- Batch 007: 18
+- Batch 008: 7
