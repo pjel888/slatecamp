@@ -1,0 +1,50 @@
+{
+  "generated_at": "2026-05-06T04:37:39.989Z",
+  "ok": true,
+  "forbidden_positive_labels": [
+    "approved",
+    "canonical",
+    "verified_source",
+    "production_ready",
+    "source_pack_ready",
+    "safe_to_rewrite",
+    "ready_for_embeddings",
+    "ready_for_publication",
+    "human_approved",
+    "sme_approved"
+  ],
+  "allowed_draft_labels": [
+    "DRAFT_SOURCE_PACK_CANDIDATE",
+    "DRAFT_CHUNK_CANDIDATE",
+    "LOCAL_VALIDATION_ONLY",
+    "AI_REVIEWED_NOT_HUMAN_APPROVED",
+    "HUMAN_APPROVAL_REQUIRED",
+    "SME_APPROVAL_REQUIRED",
+    "NOT_PRODUCTION_READY",
+    "DO_NOT_PUBLISH",
+    "DO_NOT_EMBED_PRODUCTION",
+    "DO_NOT_MUTATE_SUPABASE"
+  ],
+  "draft_labels_seen": [
+    "AI_REVIEWED_NOT_HUMAN_APPROVED",
+    "DO_NOT_EMBED_PRODUCTION",
+    "DO_NOT_MUTATE_SUPABASE",
+    "DO_NOT_PUBLISH",
+    "DRAFT_CHUNK_CANDIDATE",
+    "DRAFT_SOURCE_PACK_CANDIDATE",
+    "HUMAN_APPROVAL_REQUIRED",
+    "LOCAL_VALIDATION_ONLY",
+    "NOT_PRODUCTION_READY",
+    "SME_APPROVAL_REQUIRED"
+  ],
+  "production_gates": "BLOCKED",
+  "json_files_scanned": [
+    ".ai/03_plans/content-editorial-pipeline-2026-05-05/governance-status-label-validation.generated.json",
+    ".ai/16_source_packs_draft/manifests/draft-source-pack-index.generated.json",
+    ".ai/03_plans/content-editorial-pipeline-2026-05-05/draft-claim-linkage-smoke.generated.json",
+    ".ai/03_plans/content-editorial-pipeline-2026-05-05/draft-article-improvement-prototype/index.generated.json",
+    ".ai/03_plans/content-editorial-pipeline-2026-05-05/question-bank-dry-run-audit.generated.json",
+    ".ai/03_plans/content-editorial-pipeline-2026-05-05/admin-local-review-payload.generated.json"
+  ],
+  "offenders": []
+}

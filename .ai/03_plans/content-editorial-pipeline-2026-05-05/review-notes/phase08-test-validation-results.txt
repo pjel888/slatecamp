@@ -1,0 +1,25 @@
+# Phase 0.8 Test Validation Results
+
+Commands:
+
+```bash
+bun test scripts/content-audit/source-verification-invariants.test.ts
+bun run content-audit:source-verification-smoke
+bun run type-check
+bun run lint
+git diff --check
+```
+
+Results:
+
+- Targeted source-verification invariant tests: PASS, 7 tests, 243 assertions.
+- Source-verification smoke runner: PASS, 7 commands, 5 artifact checks.
+- Type-check: PASS.
+- Lint: PASS with existing warnings only, 0 errors.
+- git diff --check: PASS.
+
+Review:
+
+- Claude: CLAUDE_UNAVAILABLE_LIMIT / pending.
+- Command Code: unavailable/API error.
+- Subagent: PASS with hardening notes; hardening applied.

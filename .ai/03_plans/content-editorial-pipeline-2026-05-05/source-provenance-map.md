@@ -26,7 +26,7 @@
 | `source_id` (UUID) | Yes | No | Synthetic key |
 | `article_id` (UUID) | Yes | No | Links to wiki_articles |
 | `label` (TEXT) | Yes | Partial | Human-readable source name; not a locator |
-| `url` (TEXT) | Sometimes | No | May be official URL, TBD, or placeholder |
+| `url` (TEXT) | Present as schema field; all 1,110 exported rows currently null | No | No official URL evidence in current export snapshot |
 | `source_type` (TAXONOMY_SOURCE_TYPE) | Yes | No | e.g., `pdf`, `website`, `book`, `law` |
 | `description` (TEXT) | Sometimes | No | Free-text editorial description |
 | `sort_order` (SMALLINT) | Yes | No | Display order only |
@@ -36,8 +36,10 @@
 **Provenance verdict:** `CITATION_ROW_ONLY` / `UNVERIFIED`
 
 **Evidence:**
-- 1,110 rows exported across 567 article bundles.
-- Average ~2 sources per article.
+- Local export count: 1,110 rows across 567 article bundles.
+- Local export verification count: 1,110 rows have `is_verified: false`; 0 verified rows found.
+- Local export URL count: 0 populated URLs; all 1,110 exported `url` fields are null.
+- Average ~2 source labels per article.
 - Many articles have `source_count: 0`.
 - No `source_text` column. No `page_start`/`page_end`. No `section_label`. No `hash`.
 - `is_verified` defaults to `FALSE`.
@@ -108,7 +110,7 @@
 | Content | Present? | Claim-addressable? | Notes |
 |---|---|---|---|
 | `label` | Yes | No | Source name |
-| `url` | Sometimes | No | May be valid, TBD, or missing |
+| `url` | Present as schema field; currently null in all exported rows | No | No official URL evidence in current export |
 | `source_type` | Yes | No | e.g., `law`, `pdf`, `website` |
 | `description` | Sometimes | No | Editorial description |
 | `is_verified` | Yes | No | Mostly FALSE |
@@ -138,15 +140,15 @@
 
 | Source | Official Text Available? | Version Known? | URL Known? | Locally Stored? |
 |---|---|---|---|---|
-| PD 1096 (2004 Revised IRR) | No (not in repo) | 2004 | Partial (via sources.json) | No |
-| BP 344 (2024 Revised IRR) | No (not in repo) | 2024 | Partial | No |
-| RA 9266 + IRR | No (not in repo) | Current | Partial | No |
-| RA 9514 + IRR | No (not in repo) | Current | Partial | No |
-| NSCP | No (not in repo) | 2015 (assumed) | Partial | No |
-| BP 220 | No (not in repo) | Current | Partial | No |
-| PD 957 | No (not in repo) | Current | Partial | No |
-| SPP Documents (200, 202, 203, 204, 207) | No (not in repo) | Current | Partial | No |
-| Civil Code (Articles 1723, 2176–2194) | No (not in repo) | Current | Partial | No |
+| PD 1096 (2004 Revised IRR) | No (not in repo) | 2004 | Not verified; local export has source labels only and no URLs | No |
+| BP 344 (2024 Revised IRR) | No (not in repo) | 2024 | Not verified; local export has source labels only and no URLs | No |
+| RA 9266 + IRR | No (not in repo) | Current version unknown | Not verified; local export has source labels only and no URLs | No |
+| RA 9514 + IRR | No (not in repo) | Current version unknown | Not verified; local export has source labels only and no URLs | No |
+| NSCP | No (not in repo) | Version unknown | Not verified; local export has source labels only and no URLs | No |
+| BP 220 | No (not in repo) | Current version unknown | Not verified; local export has source labels only and no URLs | No |
+| PD 957 | No (not in repo) | Current version unknown | Not verified; local export has source labels only and no URLs | No |
+| SPP Documents (200, 202, 203, 204, 207) | No (not in repo) | Current version unknown | Not verified; local export has source labels only and no URLs | No |
+| Civil Code (Articles 1723, 2176–2194) | No (not in repo) | Current version unknown | Not verified; local export has source labels only and no URLs | No |
 
 **Provenance verdict:** `MISSING` — the intended canonical sources are not yet structured in the repo.
 
@@ -156,12 +158,12 @@
 
 | Source Record Type | Has Source Label? | Has URL? | Has Source Text? | Versioned? | Claim-Addressable? | Can Validate AI Rewrite? |
 |---|---|---|---|---|---|---|
-| `wiki_article_sources` | Yes | Sometimes | No | No | No | No |
+| `wiki_article_sources` | Yes | No in current export | No | No | No | No |
 | `taxonomy_sources` | Schema only | Schema only | No | No | No | No |
 | `questions.code_citation` | Sometimes | No | No | No | Partial (section only) | No |
-| `sources.json` (bundle export) | Yes | Sometimes | No | No | No | No |
+| `sources.json` (bundle export) | Yes | No in current export | No | No | No | No |
 | Fact-checking flags | Yes | Sometimes | No | No | No | No |
-| External official PDFs (planned) | Yes | Yes | **Planned** | **Planned** | **Planned** | **Planned** |
+| External official PDFs (planned) | Yes | Yes after discovery | **Planned** | **Planned** | **Planned** | **Planned** |
 
 ---
 

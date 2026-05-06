@@ -1,0 +1,83 @@
+{
+  "generated_at": "2026-05-06T04:35:09.745Z",
+  "allowed_use": "LOCAL_VALIDATION_ONLY",
+  "production_status": "NOT_PRODUCTION_READY",
+  "finding_count": 5,
+  "findings": [
+    {
+      "audit_id": "question-dry-run-1",
+      "allowed_use": "LOCAL_VALIDATION_ONLY",
+      "ai_review_status": "AI_REVIEWED_NOT_HUMAN_APPROVED",
+      "production_status": "NOT_PRODUCTION_READY",
+      "finding_type": "rationale_source_check_needed",
+      "severity": "medium",
+      "answer_key_changed": false,
+      "question_edit_performed": false,
+      "supabase_mutation": false,
+      "source_approval_status": "BLOCKED",
+      "human_review_required": true,
+      "sme_review_required": true,
+      "notes": "Dry-run audit prototype only; no live question data changed."
+    },
+    {
+      "audit_id": "question-dry-run-2",
+      "allowed_use": "LOCAL_VALIDATION_ONLY",
+      "ai_review_status": "AI_REVIEWED_NOT_HUMAN_APPROVED",
+      "production_status": "NOT_PRODUCTION_READY",
+      "finding_type": "missing_citation",
+      "severity": "medium",
+      "answer_key_changed": false,
+      "question_edit_performed": false,
+      "supabase_mutation": false,
+      "source_approval_status": "BLOCKED",
+      "human_review_required": true,
+      "sme_review_required": true,
+      "notes": "Dry-run audit prototype only; no live question data changed."
+    },
+    {
+      "audit_id": "question-dry-run-3",
+      "allowed_use": "LOCAL_VALIDATION_ONLY",
+      "ai_review_status": "AI_REVIEWED_NOT_HUMAN_APPROVED",
+      "production_status": "NOT_PRODUCTION_READY",
+      "finding_type": "rationale_source_check_needed",
+      "severity": "medium",
+      "answer_key_changed": false,
+      "question_edit_performed": false,
+      "supabase_mutation": false,
+      "source_approval_status": "BLOCKED",
+      "human_review_required": true,
+      "sme_review_required": true,
+      "notes": "Dry-run audit prototype only; no live question data changed."
+    },
+    {
+      "audit_id": "question-dry-run-4",
+      "allowed_use": "LOCAL_VALIDATION_ONLY",
+      "ai_review_status": "AI_REVIEWED_NOT_HUMAN_APPROVED",
+      "production_status": "NOT_PRODUCTION_READY",
+      "finding_type": "missing_citation",
+      "severity": "medium",
+      "answer_key_changed": false,
+      "question_edit_performed": false,
+      "supabase_mutation": false,
+      "source_approval_status": "BLOCKED",
+      "human_review_required": true,
+      "sme_review_required": true,
+      "notes": "Dry-run audit prototype only; no live question data changed."
+    },
+    {
+      "audit_id": "question-dry-run-5",
+      "allowed_use": "LOCAL_VALIDATION_ONLY",
+      "ai_review_status": "AI_REVIEWED_NOT_HUMAN_APPROVED",
+      "production_status": "NOT_PRODUCTION_READY",
+      "finding_type": "rationale_source_check_needed",
+      "severity": "medium",
+      "answer_key_changed": false,
+      "question_edit_performed": false,
+      "supabase_mutation": false,
+      "source_approval_status": "BLOCKED",
+      "human_review_required": true,
+      "sme_review_required": true,
+      "notes": "Dry-run audit prototype only; no live question data changed."
+    }
+  ]
+}

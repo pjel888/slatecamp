@@ -1,0 +1,601 @@
+{
+  "dry_run": true,
+  "db_write_attempted": false,
+  "generated_at": "2026-05-06T04:13:35.176Z",
+  "source_files": [
+    ".ai/03_plans/content-editorial-pipeline-2026-05-05/source-reconciliation-matrix.generated.json",
+    ".ai/03_plans/content-editorial-pipeline-2026-05-05/phase05b6-claude-reconciled-source-leads.generated.json",
+    ".ai/03_plans/content-editorial-pipeline-2026-05-05/source-locator-evidence.generated.json",
+    ".ai/03_plans/content-editorial-pipeline-2026-05-05/source-human-sme-packet-prep.generated.json"
+  ],
+  "lead_count": 9,
+  "locator_evidence_count": 9,
+  "human_sme_packet_prep_count": 9,
+  "run": {
+    "run_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde",
+    "run_type": "source_reconciliation_dry_run",
+    "generated_at": "2026-05-06T04:13:35.176Z",
+    "source_approval_status": "blocked",
+    "source_pack_creation_status": "blocked",
+    "supabase_mutation_status": "blocked",
+    "admin_live_sync_status": "blocked",
+    "allowed_use": "discovery_only",
+    "evidence_status": "FALLBACK_REVIEW_ONLY"
+  },
+  "items": [
+    {
+      "item_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-001",
+      "run_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde",
+      "source_family": "PD 1216 / Open Space Requirements",
+      "bundle_id_if_applicable": "bundle-000017",
+      "document_code": "PD 1216",
+      "risk_tier": "HIGH",
+      "local_raw_pdf_match_status": "multiple_local_candidates",
+      "locator_status": "locator_partial",
+      "source_approval_status": "blocked",
+      "source_pack_creation_status": "blocked"
+    },
+    {
+      "item_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-002",
+      "run_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde",
+      "source_family": "RA 11201 / DHSUD Act",
+      "bundle_id_if_applicable": "bundle-000018",
+      "document_code": "RA 11201",
+      "risk_tier": "HIGH",
+      "local_raw_pdf_match_status": "exact_hash_match",
+      "locator_status": "locator_not_checked",
+      "source_approval_status": "blocked",
+      "source_pack_creation_status": "blocked"
+    },
+    {
+      "item_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-003",
+      "run_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde",
+      "source_family": "RA 11285 / Energy Efficiency and Conservation Act",
+      "bundle_id_if_applicable": "bundle-000019",
+      "document_code": "RA 11285",
+      "risk_tier": "HIGH",
+      "local_raw_pdf_match_status": "exact_hash_match",
+      "locator_status": "locator_not_checked",
+      "source_approval_status": "blocked",
+      "source_pack_creation_status": "blocked"
+    },
+    {
+      "item_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-004",
+      "run_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde",
+      "source_family": "DOE DC2019-11-0014 / RA 11285 IRR",
+      "bundle_id_if_applicable": "bundle-000019",
+      "document_code": "DC2019-11-0014",
+      "risk_tier": "HIGH",
+      "local_raw_pdf_match_status": "no_local_pdf",
+      "locator_status": "locator_partial",
+      "source_approval_status": "blocked",
+      "source_pack_creation_status": "blocked"
+    },
+    {
+      "item_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-005",
+      "run_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde",
+      "source_family": "BP 344 2024 Revised IRR",
+      "bundle_id_if_applicable": "",
+      "document_code": "BP 344 2024 Revised IRR",
+      "risk_tier": "HIGH",
+      "local_raw_pdf_match_status": "multiple_local_candidates",
+      "locator_status": "locator_partial",
+      "source_approval_status": "blocked",
+      "source_pack_creation_status": "blocked"
+    },
+    {
+      "item_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-006",
+      "run_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde",
+      "source_family": "RA 9514 Fire Code RIRR",
+      "bundle_id_if_applicable": "",
+      "document_code": "RA 9514 RIRR",
+      "risk_tier": "HIGH",
+      "local_raw_pdf_match_status": "multiple_local_candidates",
+      "locator_status": "locator_not_checked",
+      "source_approval_status": "blocked",
+      "source_pack_creation_status": "blocked"
+    },
+    {
+      "item_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-007",
+      "run_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde",
+      "source_family": "PD 1096 / NBCP IRR",
+      "bundle_id_if_applicable": "",
+      "document_code": "PD 1096 IRR",
+      "risk_tier": "HIGH",
+      "local_raw_pdf_match_status": "multiple_local_candidates",
+      "locator_status": "locator_partial",
+      "source_approval_status": "blocked",
+      "source_pack_creation_status": "blocked"
+    },
+    {
+      "item_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-008",
+      "run_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde",
+      "source_family": "RA 9266 / Architecture Act IRR",
+      "bundle_id_if_applicable": "",
+      "document_code": "RA 9266 IRR",
+      "risk_tier": "HIGH",
+      "local_raw_pdf_match_status": "multiple_local_candidates",
+      "locator_status": "locator_partial",
+      "source_approval_status": "blocked",
+      "source_pack_creation_status": "blocked"
+    },
+    {
+      "item_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-009",
+      "run_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde",
+      "source_family": "PRC ALE/LEA Examination Program",
+      "bundle_id_if_applicable": "",
+      "document_code": "2026 PRC Architect Licensure Examination schedule/program",
+      "risk_tier": "HIGH",
+      "local_raw_pdf_match_status": "multiple_local_candidates",
+      "locator_status": "locator_partial",
+      "source_approval_status": "blocked",
+      "source_pack_creation_status": "blocked"
+    }
+  ],
+  "locator_evidence": [
+    {
+      "source_family": "PD 1216 / Open Space Requirements",
+      "locator_status": "locator_supported",
+      "locator_confidence": "medium",
+      "extraction_quality_status": "usable_for_review",
+      "source_approval_status": "blocked",
+      "source_pack_creation_status": "blocked"
+    },
+    {
+      "source_family": "RA 11201 / DHSUD Act",
+      "locator_status": "locator_supported",
+      "locator_confidence": "high",
+      "extraction_quality_status": "usable_for_review",
+      "source_approval_status": "blocked",
+      "source_pack_creation_status": "blocked"
+    },
+    {
+      "source_family": "RA 11285 / Energy Efficiency and Conservation Act",
+      "locator_status": "locator_supported",
+      "locator_confidence": "medium",
+      "extraction_quality_status": "usable_for_review",
+      "source_approval_status": "blocked",
+      "source_pack_creation_status": "blocked"
+    },
+    {
+      "source_family": "DOE DC2019-11-0014 / RA 11285 IRR",
+      "locator_status": "locator_supported",
+      "locator_confidence": "medium",
+      "extraction_quality_status": "usable_for_review",
+      "source_approval_status": "blocked",
+      "source_pack_creation_status": "blocked"
+    },
+    {
+      "source_family": "BP 344 2024 Revised IRR",
+      "locator_status": "locator_supported",
+      "locator_confidence": "high",
+      "extraction_quality_status": "usable_for_review",
+      "source_approval_status": "blocked",
+      "source_pack_creation_status": "blocked"
+    },
+    {
+      "source_family": "RA 9514 Fire Code RIRR",
+      "locator_status": "locator_supported",
+      "locator_confidence": "high",
+      "extraction_quality_status": "usable_for_review",
+      "source_approval_status": "blocked",
+      "source_pack_creation_status": "blocked"
+    },
+    {
+      "source_family": "PD 1096 / NBCP IRR",
+      "locator_status": "locator_supported",
+      "locator_confidence": "high",
+      "extraction_quality_status": "usable_for_review",
+      "source_approval_status": "blocked",
+      "source_pack_creation_status": "blocked"
+    },
+    {
+      "source_family": "RA 9266 / Architecture Act IRR",
+      "locator_status": "locator_supported",
+      "locator_confidence": "medium",
+      "extraction_quality_status": "usable_for_review",
+      "source_approval_status": "blocked",
+      "source_pack_creation_status": "blocked"
+    },
+    {
+      "source_family": "PRC ALE/LEA Examination Program",
+      "locator_status": "locator_supported",
+      "locator_confidence": "high",
+      "extraction_quality_status": "usable_for_review",
+      "source_approval_status": "blocked",
+      "source_pack_creation_status": "blocked"
+    }
+  ],
+  "human_sme_packet_prep": [
+    {
+      "source_family": "PD 1216 / Open Space Requirements",
+      "current_status": "conflict_requires_sme",
+      "recommended_next_action": "Prepare conflict packet for human/SME disposition; do not approve or package source.",
+      "source_approval_status": "blocked",
+      "source_pack_creation_status": "blocked"
+    },
+    {
+      "source_family": "RA 11201 / DHSUD Act",
+      "current_status": "conflict_requires_sme",
+      "recommended_next_action": "Prepare conflict packet for human/SME disposition; do not approve or package source.",
+      "source_approval_status": "blocked",
+      "source_pack_creation_status": "blocked"
+    },
+    {
+      "source_family": "RA 11285 / Energy Efficiency and Conservation Act",
+      "current_status": "ready_for_human_packet_review",
+      "recommended_next_action": "Queue for future human packet review using locator evidence as navigation aid only.",
+      "source_approval_status": "blocked",
+      "source_pack_creation_status": "blocked"
+    },
+    {
+      "source_family": "DOE DC2019-11-0014 / RA 11285 IRR",
+      "current_status": "ready_for_human_packet_review",
+      "recommended_next_action": "Queue for future human packet review using locator evidence as navigation aid only.",
+      "source_approval_status": "blocked",
+      "source_pack_creation_status": "blocked"
+    },
+    {
+      "source_family": "BP 344 2024 Revised IRR",
+      "current_status": "conflict_requires_sme",
+      "recommended_next_action": "Prepare conflict packet for human/SME disposition; do not approve or package source.",
+      "source_approval_status": "blocked",
+      "source_pack_creation_status": "blocked"
+    },
+    {
+      "source_family": "RA 9514 Fire Code RIRR",
+      "current_status": "conflict_requires_sme",
+      "recommended_next_action": "Prepare conflict packet for human/SME disposition; do not approve or package source.",
+      "source_approval_status": "blocked",
+      "source_pack_creation_status": "blocked"
+    },
+    {
+      "source_family": "PD 1096 / NBCP IRR",
+      "current_status": "conflict_requires_sme",
+      "recommended_next_action": "Prepare conflict packet for human/SME disposition; do not approve or package source.",
+      "source_approval_status": "blocked",
+      "source_pack_creation_status": "blocked"
+    },
+    {
+      "source_family": "RA 9266 / Architecture Act IRR",
+      "current_status": "conflict_requires_sme",
+      "recommended_next_action": "Prepare conflict packet for human/SME disposition; do not approve or package source.",
+      "source_approval_status": "blocked",
+      "source_pack_creation_status": "blocked"
+    },
+    {
+      "source_family": "PRC ALE/LEA Examination Program",
+      "current_status": "conflict_requires_sme",
+      "recommended_next_action": "Prepare conflict packet for human/SME disposition; do not approve or package source.",
+      "source_approval_status": "blocked",
+      "source_pack_creation_status": "blocked"
+    }
+  ],
+  "findings": [
+    {
+      "finding_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-001-local_hash_conflict",
+      "item_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-001",
+      "finding_type": "local_hash_conflict",
+      "severity": "review_required",
+      "message": "access_blocked_no_conflict_yet",
+      "source_approval_status": "blocked"
+    },
+    {
+      "finding_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-001-missing_or_partial_locators",
+      "item_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-001",
+      "finding_type": "missing_or_partial_locators",
+      "severity": "review_required",
+      "message": "locator_status=locator_partial",
+      "source_approval_status": "blocked"
+    },
+    {
+      "finding_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-001-sme_review_required",
+      "item_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-001",
+      "finding_type": "sme_review_required",
+      "severity": "review_required",
+      "message": "High-risk law/code/policy row requires SME review.",
+      "source_approval_status": "blocked"
+    },
+    {
+      "finding_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-002-missing_or_partial_locators",
+      "item_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-002",
+      "finding_type": "missing_or_partial_locators",
+      "severity": "review_required",
+      "message": "locator_status=locator_not_checked",
+      "source_approval_status": "blocked"
+    },
+    {
+      "finding_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-002-sme_review_required",
+      "item_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-002",
+      "finding_type": "sme_review_required",
+      "severity": "review_required",
+      "message": "High-risk law/code/policy row requires SME review.",
+      "source_approval_status": "blocked"
+    },
+    {
+      "finding_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-002-conversion_layer_mismatch",
+      "item_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-002",
+      "finding_type": "conversion_layer_mismatch",
+      "severity": "review_required",
+      "message": "raw_source_matches_official_but_conversion_layer_hash_mismatch",
+      "source_approval_status": "blocked"
+    },
+    {
+      "finding_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-003-missing_or_partial_locators",
+      "item_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-003",
+      "finding_type": "missing_or_partial_locators",
+      "severity": "review_required",
+      "message": "locator_status=locator_not_checked",
+      "source_approval_status": "blocked"
+    },
+    {
+      "finding_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-003-sme_review_required",
+      "item_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-003",
+      "finding_type": "sme_review_required",
+      "severity": "review_required",
+      "message": "High-risk law/code/policy row requires SME review.",
+      "source_approval_status": "blocked"
+    },
+    {
+      "finding_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-004-missing_local_raw_pdf",
+      "item_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-004",
+      "finding_type": "missing_local_raw_pdf",
+      "severity": "review_required",
+      "message": "No local raw PDF candidate found.",
+      "source_approval_status": "blocked"
+    },
+    {
+      "finding_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-004-missing_or_partial_locators",
+      "item_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-004",
+      "finding_type": "missing_or_partial_locators",
+      "severity": "review_required",
+      "message": "locator_status=locator_partial",
+      "source_approval_status": "blocked"
+    },
+    {
+      "finding_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-004-sme_review_required",
+      "item_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-004",
+      "finding_type": "sme_review_required",
+      "severity": "review_required",
+      "message": "High-risk law/code/policy row requires SME review.",
+      "source_approval_status": "blocked"
+    },
+    {
+      "finding_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-005-local_hash_conflict",
+      "item_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-005",
+      "finding_type": "local_hash_conflict",
+      "severity": "review_required",
+      "message": "local_webpage_pdf_vs_official_download_pdf_hash_mismatch",
+      "source_approval_status": "blocked"
+    },
+    {
+      "finding_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-005-missing_or_partial_locators",
+      "item_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-005",
+      "finding_type": "missing_or_partial_locators",
+      "severity": "review_required",
+      "message": "locator_status=locator_partial",
+      "source_approval_status": "blocked"
+    },
+    {
+      "finding_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-005-sme_review_required",
+      "item_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-005",
+      "finding_type": "sme_review_required",
+      "severity": "review_required",
+      "message": "High-risk law/code/policy row requires SME review.",
+      "source_approval_status": "blocked"
+    },
+    {
+      "finding_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-006-missing_official_evidence",
+      "item_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-006",
+      "finding_type": "missing_official_evidence",
+      "severity": "review_required",
+      "message": "Missing official PDF hash/URL evidence.",
+      "source_approval_status": "blocked"
+    },
+    {
+      "finding_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-006-local_hash_conflict",
+      "item_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-006",
+      "finding_type": "local_hash_conflict",
+      "severity": "review_required",
+      "message": "official_source_blocked",
+      "source_approval_status": "blocked"
+    },
+    {
+      "finding_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-006-missing_or_partial_locators",
+      "item_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-006",
+      "finding_type": "missing_or_partial_locators",
+      "severity": "review_required",
+      "message": "locator_status=locator_not_checked",
+      "source_approval_status": "blocked"
+    },
+    {
+      "finding_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-006-sme_review_required",
+      "item_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-006",
+      "finding_type": "sme_review_required",
+      "severity": "review_required",
+      "message": "High-risk law/code/policy row requires SME review.",
+      "source_approval_status": "blocked"
+    },
+    {
+      "finding_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-007-local_hash_conflict",
+      "item_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-007",
+      "finding_type": "local_hash_conflict",
+      "severity": "review_required",
+      "message": "local_version_vs_current_dpwh_download_hash_mismatch",
+      "source_approval_status": "blocked"
+    },
+    {
+      "finding_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-007-missing_or_partial_locators",
+      "item_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-007",
+      "finding_type": "missing_or_partial_locators",
+      "severity": "review_required",
+      "message": "locator_status=locator_partial",
+      "source_approval_status": "blocked"
+    },
+    {
+      "finding_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-007-sme_review_required",
+      "item_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-007",
+      "finding_type": "sme_review_required",
+      "severity": "review_required",
+      "message": "High-risk law/code/policy row requires SME review.",
+      "source_approval_status": "blocked"
+    },
+    {
+      "finding_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-008-missing_official_evidence",
+      "item_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-008",
+      "finding_type": "missing_official_evidence",
+      "severity": "review_required",
+      "message": "Missing official PDF hash/URL evidence.",
+      "source_approval_status": "blocked"
+    },
+    {
+      "finding_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-008-local_hash_conflict",
+      "item_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-008",
+      "finding_type": "local_hash_conflict",
+      "severity": "review_required",
+      "message": "authority_host_unverified",
+      "source_approval_status": "blocked"
+    },
+    {
+      "finding_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-008-missing_or_partial_locators",
+      "item_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-008",
+      "finding_type": "missing_or_partial_locators",
+      "severity": "review_required",
+      "message": "locator_status=locator_partial",
+      "source_approval_status": "blocked"
+    },
+    {
+      "finding_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-008-sme_review_required",
+      "item_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-008",
+      "finding_type": "sme_review_required",
+      "severity": "review_required",
+      "message": "High-risk law/code/policy row requires SME review.",
+      "source_approval_status": "blocked"
+    },
+    {
+      "finding_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-009-local_hash_conflict",
+      "item_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-009",
+      "finding_type": "local_hash_conflict",
+      "severity": "review_required",
+      "message": "logistics_only_not_law_source",
+      "source_approval_status": "blocked"
+    },
+    {
+      "finding_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-009-missing_or_partial_locators",
+      "item_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-009",
+      "finding_type": "missing_or_partial_locators",
+      "severity": "review_required",
+      "message": "locator_status=locator_partial",
+      "source_approval_status": "blocked"
+    },
+    {
+      "finding_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-009-sme_review_required",
+      "item_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-009",
+      "finding_type": "sme_review_required",
+      "severity": "review_required",
+      "message": "High-risk law/code/policy row requires SME review.",
+      "source_approval_status": "blocked"
+    }
+  ],
+  "proposals": [
+    {
+      "proposal_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-proposal-001",
+      "item_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-001",
+      "proposal_type": "maintain_blocked_gate_and_collect_evidence",
+      "proposal_status": "blocked",
+      "allowed_use_change": "none",
+      "source_approval_change": "none",
+      "article_content_change": "none",
+      "question_content_change": "none",
+      "proposed_next_action": "Manually capture Official Gazette/Senate LRB body/PDF; compare local 001 raw PDF to opened official text; extract page/section locators."
+    },
+    {
+      "proposal_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-proposal-002",
+      "item_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-002",
+      "proposal_type": "maintain_blocked_gate_and_collect_evidence",
+      "proposal_status": "blocked",
+      "allowed_use_change": "none",
+      "source_approval_change": "none",
+      "article_content_change": "none",
+      "question_content_change": "none",
+      "proposed_next_action": "SME/human review should disposition 002 OCR/conversion mismatch against 001 raw official PDF; extract locators before packet use."
+    },
+    {
+      "proposal_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-proposal-003",
+      "item_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-003",
+      "proposal_type": "maintain_blocked_gate_and_collect_evidence",
+      "proposal_status": "blocked",
+      "allowed_use_change": "none",
+      "source_approval_change": "none",
+      "article_content_change": "none",
+      "question_content_change": "none",
+      "proposed_next_action": "Extract locators and compare text; keep DOE IRR as separate evidence lead needing metadata/PDF reconciliation."
+    },
+    {
+      "proposal_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-proposal-004",
+      "item_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-004",
+      "proposal_type": "maintain_blocked_gate_and_collect_evidence",
+      "proposal_status": "blocked",
+      "allowed_use_change": "none",
+      "source_approval_change": "none",
+      "article_content_change": "none",
+      "question_content_change": "none",
+      "proposed_next_action": "Add/locate local raw IRR PDF if absent; compare DOE PDF text/locators before using IRR."
+    },
+    {
+      "proposal_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-proposal-005",
+      "item_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-005",
+      "proposal_type": "maintain_blocked_gate_and_collect_evidence",
+      "proposal_status": "blocked",
+      "allowed_use_change": "none",
+      "source_approval_change": "none",
+      "article_content_change": "none",
+      "question_content_change": "none",
+      "proposed_next_action": "Keep 2024 revised IRR as official evidence lead; compare NCDA downloadable PDF against local webpage-print PDF and older BP 344 derivatives; extract locators."
+    },
+    {
+      "proposal_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-proposal-006",
+      "item_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-006",
+      "proposal_type": "maintain_blocked_gate_and_collect_evidence",
+      "proposal_status": "blocked",
+      "allowed_use_change": "none",
+      "source_approval_change": "none",
+      "article_content_change": "none",
+      "question_content_change": "none",
+      "proposed_next_action": "Capture BFP body/PDF or Official Gazette alternative; compare local 001 PDF hash/text after official PDF is captured."
+    },
+    {
+      "proposal_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-proposal-007",
+      "item_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-007",
+      "proposal_type": "maintain_blocked_gate_and_collect_evidence",
+      "proposal_status": "blocked",
+      "allowed_use_change": "none",
+      "source_approval_change": "none",
+      "article_content_change": "none",
+      "question_content_change": "none",
+      "proposed_next_action": "Compare local PD1096 PDFs against current DPWH 432-page PDF; determine whether local 368-page file is derivative/older and extract locators."
+    },
+    {
+      "proposal_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-proposal-008",
+      "item_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-008",
+      "proposal_type": "maintain_blocked_gate_and_collect_evidence",
+      "proposal_status": "blocked",
+      "allowed_use_change": "none",
+      "source_approval_change": "none",
+      "article_content_change": "none",
+      "question_content_change": "none",
+      "proposed_next_action": "Find opened PRC/PRBoA/Official Gazette/Senate official host for RA9266/IRR; compare local PDF after official host verified."
+    },
+    {
+      "proposal_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-proposal-009",
+      "item_id": "phase06-source-reconciliation-2026-05-06T04-13-35-176Z-fc4c6b38-5733-4194-9386-3c56d20bbfde-item-009",
+      "proposal_type": "maintain_blocked_gate_and_collect_evidence",
+      "proposal_status": "blocked",
+      "allowed_use_change": "none",
+      "source_approval_change": "none",
+      "article_content_change": "none",
+      "question_content_change": "none",
+      "proposed_next_action": "Use only for exam logistics/scope/weights after review; do not use as legal/code source truth."
+    }
+  ]
+}

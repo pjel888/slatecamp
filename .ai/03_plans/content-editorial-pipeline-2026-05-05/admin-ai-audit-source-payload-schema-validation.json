@@ -1,0 +1,103 @@
+{
+  "generated_at": "2026-05-06T04:13:12.045Z",
+  "ok": true,
+  "check_count": 19,
+  "checks": [
+    {
+      "name": "payload_json_parses",
+      "status": "PASS",
+      "details": "ok"
+    },
+    {
+      "name": "dry_run_true",
+      "status": "PASS",
+      "details": "ok"
+    },
+    {
+      "name": "db_write_attempted_false",
+      "status": "PASS",
+      "details": "ok"
+    },
+    {
+      "name": "no_apply_mode",
+      "status": "PASS",
+      "details": "ok"
+    },
+    {
+      "name": "items_present",
+      "status": "PASS",
+      "details": "ok"
+    },
+    {
+      "name": "findings_present",
+      "status": "PASS",
+      "details": "ok"
+    },
+    {
+      "name": "proposals_present",
+      "status": "PASS",
+      "details": "ok"
+    },
+    {
+      "name": "proposals_blocked",
+      "status": "PASS",
+      "details": "ok"
+    },
+    {
+      "name": "no_approval_proposals",
+      "status": "PASS",
+      "details": "ok"
+    },
+    {
+      "name": "no_source_pack_proposals",
+      "status": "PASS",
+      "details": "ok"
+    },
+    {
+      "name": "no_embedding_proposals",
+      "status": "PASS",
+      "details": "ok"
+    },
+    {
+      "name": "no_article_proposals",
+      "status": "PASS",
+      "details": "ok"
+    },
+    {
+      "name": "no_question_proposals",
+      "status": "PASS",
+      "details": "ok"
+    },
+    {
+      "name": "allowed_use_not_promoted",
+      "status": "PASS",
+      "details": "ok"
+    },
+    {
+      "name": "source_approval_not_promoted",
+      "status": "PASS",
+      "details": "ok"
+    },
+    {
+      "name": "article_question_not_changed",
+      "status": "PASS",
+      "details": "ok"
+    },
+    {
+      "name": "locator_evidence_count_matches",
+      "status": "PASS",
+      "details": "ok"
+    },
+    {
+      "name": "human_packet_count_matches",
+      "status": "PASS",
+      "details": "ok"
+    },
+    {
+      "name": "promotion_scan_passes",
+      "status": "PASS",
+      "details": "ok"
+    }
+  ],
+  "payload_path": "/Users/philiplewis/slatecamp/.ai/03_plans/content-editorial-pipeline-2026-05-05/admin-ai-audit-source-payload.dry-run.json"
+}

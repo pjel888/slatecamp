@@ -1,0 +1,87 @@
+{
+  "generated_at": "2026-05-06T04:13:35.128Z",
+  "ok": true,
+  "check_count": 16,
+  "checks": [
+    {
+      "name": "CSV parses",
+      "status": "PASS",
+      "details": "rows=9"
+    },
+    {
+      "name": "JSON parses",
+      "status": "PASS",
+      "details": "locator_rows=9; packets=9"
+    },
+    {
+      "name": "row counts match",
+      "status": "PASS",
+      "details": "csv=9; json=9"
+    },
+    {
+      "name": "every row has source_family",
+      "status": "PASS",
+      "details": "rows=9"
+    },
+    {
+      "name": "source approval blocked",
+      "status": "PASS",
+      "details": "all locator rows must remain blocked"
+    },
+    {
+      "name": "source pack creation blocked",
+      "status": "PASS",
+      "details": "all locator rows must remain blocked"
+    },
+    {
+      "name": "no forbidden labels in status/recommendation fields",
+      "status": "PASS",
+      "details": "no forbidden status values detected"
+    },
+    {
+      "name": "HIGH rows require human review",
+      "status": "PASS",
+      "details": "high_rows=9"
+    },
+    {
+      "name": "HIGH rows require SME review",
+      "status": "PASS",
+      "details": "high_rows=9"
+    },
+    {
+      "name": "hash mismatch rows appear in conflict queue",
+      "status": "PASS",
+      "details": "mismatch_rows=6"
+    },
+    {
+      "name": "conversion mismatch rows appear in conflict queue",
+      "status": "PASS",
+      "details": "conversion_rows=1"
+    },
+    {
+      "name": "locator-missing high-risk rows remain blocked",
+      "status": "PASS",
+      "details": "blocked gate retained"
+    },
+    {
+      "name": "no source-pack directory exists",
+      "status": "PASS",
+      "details": "source-pack dirs absent"
+    },
+    {
+      "name": "no embeddings directory exists",
+      "status": "PASS",
+      "details": "embedding dirs absent"
+    },
+    {
+      "name": "article/question changes absent in generated proposals",
+      "status": "PASS",
+      "details": "no content mutation proposals"
+    },
+    {
+      "name": "Supabase mutation absent",
+      "status": "PASS",
+      "details": "No Phase 0.7 script imports Supabase or performs DML/DDL."
+    }
+  ]
+}

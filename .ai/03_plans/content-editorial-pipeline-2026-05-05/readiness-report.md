@@ -8,7 +8,7 @@ Decision: CONDITIONAL GO
 
 ### Recommendation
 
-CONDITIONAL GO — but only for completing planning, Phase 0 reconciliation, Phase 0.5 source-pack readiness, and a split Phase 1A read-only inventory/reconciliation track.
+CONDITIONAL GO — but only for Phase 1A read-only inventory/reconciliation and Phase 0.5 source-pack planning/coverage mapping. Phase 0.5 now has a formal gate report, but the gate verdict remains **NO-GO for source-grounded prototype work**.
 
 NO-GO for article rewriting, source-grounded generation, AI-worker implementation, admin mutation, Supabase mutation, answer-key changes, or batch processing.
 
@@ -64,8 +64,8 @@ Implementation may begin only if the following are true:
 | Audit export | `.ai/content-audit-export/` | Ready as local corpus foundation | `export-summary.json` reports 567 articles, 7,159 questions, 1,110 sources; bundles exist locally. |
 | Fact checking | `.ai/14_fact_checking/` | Partial | 446 files, including 418 flags and 13 question-flag files; mostly historical/manual artifacts, not wired to source packs or admin findings. |
 | Content optimization | `.ai/15_content_optimization/` | Partial | 19 files; primarily reports/state from earlier optimization work, not an executable editorial pipeline. |
-| Admin AI audit | `src/app/admin/ai-audit/` | Ready as MVP surface / partial as pipeline surface | 21 route files plus query/action/type/shared-component layers; pipeline artifact mapping is not complete. |
-| Plan pack | `.ai/03_plans/content-editorial-pipeline-2026-05-05/` | Strong but conditional | 30 files exist; needs Phase 0 gate, launch-posture reconciliation, source-pack proof, reviewer ops decisions, and roadmap resequencing. |
+| Admin AI audit | `src/app/admin/ai-audit/` | Partial — UI/code exists, DB tables not live-applied | 21 route files plus query/action/type/shared-component layers; live read-only check returned 0 public `ai_audit_*` tables and local restriction migration is not remote-applied. |
+| Plan pack | `.ai/03_plans/content-editorial-pipeline-2026-05-05/` | Strong but conditional | Phase 1A and Phase 0.5 evidence docs now exist; Phase 0.5 verdict remains NO-GO for source-grounded prototype because no approved source pack exists. |
 
 ## 4. Current Capability Inventory
 
@@ -174,7 +174,7 @@ Missing reviewer operations:
 - Queue-depth limits are not defined.
 - Escalation rules are not defined.
 
-Readiness verdict: READY as admin MVP; PARTIAL for editorial pipeline operations.
+Readiness verdict: PARTIAL — UI/code exists, but DB tables are not live-applied and the live admin AI audit integration remains blocked.
 
 ## 5. Plan Pack Reconciliation
 
@@ -536,6 +536,8 @@ The plan identifies the issue, but no accepted provider/data boundary exists yet
 | Blocker | Severity | Blocks Implementation? | Required Resolution |
 |---|---:|---:|---|
 | Source packs do not exist | Critical | Yes, blocks AI proposal/fact-check phases | Complete Phase 0.5 source-pack readiness and prove one source pack end-to-end. |
+| Local source files inside `vitruvius-connection/` not yet present | Critical | Yes, blocks local-source source-pack path | Populate planned local source intake later; inventory files with hashes/provenance/extraction metadata before grounding. |
+| Official web verification not completed against local files | Critical | Yes, blocks source-pack approval | Verify local files against issuing-body/official web copies or record human verification. |
 | Live-AI-free launch stance vs AI editorial tooling | Critical | Yes, for provider-backed work | Add launch-posture reconciliation decision. |
 | `ai-feature-guard.ts` disables fact-check/rewrite | Critical | Yes, for AI worker phases | Treat as explicit no-op until approved; do not assume commands work. |
 | Phase 0 deliverables incomplete | High | Yes, for Phase 1B+ | Complete readiness report and sibling outputs required by Plan 02. |
@@ -565,7 +567,14 @@ Implementation should not begin until:
 - [ ] Phase 1 is split into Phase 1A and Phase 1B in the roadmap.
 - [ ] Phase 1A scope is limited to read-only inventory and reconciliation.
 - [ ] Phase 1B scope is limited to a non-mutating prototype.
-- [ ] Source-pack storage location and minimal source-pack schema are accepted.
+- [x] Phase 0.5 source-pack planning gate exists (`source-pack-readiness-report.md`), with NO-GO for source-grounded prototype and CONDITIONAL GO for coverage mapping only.
+- [x] Phase 0.5A local source file readiness gate exists (`local-source-file-inventory.md`, `local-pdf-extraction-provenance.md`), with CONDITIONAL GO for evidence-only inventory.
+- [x] Phase 0.5A.1 source drop intake protocol exists (`source-drop-intake-protocol.md`, `source-file-manifest-schema.md`, `source-id-naming-convention.md`), with RECOMMENDED NEXT planning gate complete and no source files approved.
+- [x] Phase 0.5A.2 local source file intake inventory was attempted and generated evidence artifacts, but is BLOCKED because this runtime sees 0 files in `vitruvius-connection/`.
+- [x] Phase 0.5B official web verification policy exists (`official-web-verification-policy.md`), with CONDITIONAL GO for evidence-only verification planning.
+- [ ] `vitruvius-connection/` contains source files and they are inventoried.
+- [ ] At least one local source file has original filename, source title, publisher, version/effective date, local file hash, extracted text hash, page count, extraction method, locator support, official-web match status, and verification status recorded.
+- [ ] Source-pack storage location and minimal source-pack schema are accepted for a future implementation phase.
 - [ ] One high-value source pack feasibility target is chosen.
 - [ ] Article/content-type inventory outputs are defined.
 - [ ] Component registry/prop validation approach is selected.
@@ -590,15 +599,17 @@ SlateCamp is ready to continue formal planning and read-only reconciliation. It 
 Recommended next action:
 
 ```txt
-Complete Phase 1A planning split and produce the required Phase 0 sibling outputs:
+Current gate state:
 
-1. current-script-map.md
-2. current-artifact-map.md
-3. admin-ai-audit-current-state.md
-4. state-doc-contradictions.md
-5. pilot-candidate-shortlist.md
+1. Phase 1A read-only inventory/reconciliation: `CONDITIONAL GO`.
+2. Phase 0.5 Source-Pack Readiness: `BLOCKED` for source-grounded prototype; `CONDITIONAL GO` for evidence/planning only.
+3. Phase 0.5A Local Source File Readiness: `CONDITIONAL GO` for evidence-only inventory; `vitruvius-connection/` exists but has no source files yet.
+4. Phase 0.5A.1 Source Drop Intake Protocol: `RECOMMENDED NEXT` planning gate complete; no source files approved.
+5. Phase 0.5B Official Web Verification: `CONDITIONAL GO` for evidence-only verification planning and candidate-anchor collection.
+6. Phase 1B non-mutating prototype: `BLOCKED` until at least one pilot slice satisfies source/export/UI/admin scope gates.
+7. Article rewriting, question-bank editing, admin mutation, Supabase mutation, source-pack creation, embeddings, AI workers, and batch processing: `BLOCKED`.
 
-No article rewriting, source-grounded generation, admin mutation, or publishing workflow should begin until these gates are satisfied.
+Next review action: Claude senior review after quota reset of the Phase 0.5A.1 intake docs, the Phase 0.5A local-source docs, and updated Phase 0.5 source-pack docs.
 ```
 
 ## 19. Phase 1 Split Recommendation
@@ -653,3 +664,42 @@ Disallowed:
 - publishing articles
 - browser-triggered AI execution
 - automated answer-key changes
+
+
+---
+
+## Phase 0.5B Evidence Update — 2026-05-05T15:48:50Z
+
+Phase 0.5B live official-source verification was executed as external evidence collection only.
+
+Evidence outputs:
+
+- `phase05b-live-verification-results.generated.csv`
+- `phase05b-live-verification-results.generated.json`
+- `official-source-verification-evidence.generated.jsonl`
+- `phase05b-live-verification-report.md`
+- `high-risk-official-verification-results.md`
+- `source-conflict-register.generated.md`
+- `source-verification-next-action-queue.md`
+
+Result:
+
+- Prioritized bundles processed: 85
+- Rank 5 statute-archive evidence rows: 3
+- `OFFICIAL_SOURCE_NOT_FOUND` rows: 82
+- Conflict rows: 0
+- Human-review-required rows: 85
+- SME-review-required rows: 45
+- Draft packet candidates: 3 (`PD 1216`, `RA 11201`, `RA 11285` via Lawphil Rank 5 statute-archive pages)
+
+Gate interpretation:
+
+- This does not approve any source.
+- This does not create any source pack.
+- This does not change any source bundle `allowed_use`, `verification_status`, or `official_web_match_status`.
+- `OFFICIAL_SOURCE_NOT_FOUND` means this runtime did not locate/open an authority source; it is not proof that no official source exists.
+- The three Lawphil Rank 5 statute-archive matches may proceed only to draft packet review; official issuing-body confirmation remains unresolved and source approval remains human/SME-gated.
+
+Phase 1B remains blocked. Source-pack creation remains blocked.
+
+Rows are not official issuing-body confirmations unless explicitly supported by Official Gazette or issuing-body evidence.

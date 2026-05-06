@@ -88,7 +88,30 @@
     "content-audit:component-suggestions": "bun scripts/content-audit/suggest-component-placements.ts",
     "content-audit:ui-block-edits": "bun scripts/content-audit/validate-ui-block-edits.ts",
     "content-audit:fact-check": "bun scripts/content-audit/ai-feature-guard.ts fact-check",
-    "content-audit:rewrite": "bun scripts/content-audit/ai-feature-guard.ts rewrite"
+    "content-audit:rewrite": "bun scripts/content-audit/ai-feature-guard.ts rewrite",
+    "content-audit:source-reconcile": "bun scripts/content-audit/build-source-reconciliation-matrix.ts",
+    "content-audit:source-readiness": "bun scripts/content-audit/validate-source-packet-readiness.ts",
+    "content-audit:admin-schema-probe": "bun scripts/content-audit/validate-admin-ai-audit-schema.ts",
+    "content-audit:admin-source-payload": "bun scripts/content-audit/build-source-verification-admin-payload.ts",
+    "content-audit:source-locators": "bun scripts/content-audit/extract-source-locators.ts",
+    "content-audit:source-packet-prep": "bun scripts/content-audit/build-human-sme-packet-prep.ts",
+    "content-audit:source-locator-readiness": "bun scripts/content-audit/validate-locator-packet-readiness.ts",
+    "content-audit:source-verification-smoke": "bun scripts/content-audit/run-source-verification-smoke.ts",
+    "test:source-verification": "bun test scripts/content-audit/source-verification-invariants.test.ts",
+    "content-audit:pdf-extraction-spike": "bun scripts/content-audit/extract-local-pdf-text.ts",
+    "content-audit:pdf-extraction-validate": "bun scripts/content-audit/validate-pdf-extraction-output.ts",
+    "content-audit:admin-payload-validate": "bun scripts/content-audit/validate-admin-source-payload.ts",
+    "content-audit:governance-labels": "bun scripts/content-audit/validate-governance-status-labels.ts",
+    "content-audit:draft-source-packs": "bun scripts/content-audit/build-draft-source-pack-candidates.ts",
+    "content-audit:draft-source-packs-validate": "bun scripts/content-audit/validate-draft-source-pack-candidates.ts",
+    "content-audit:draft-claim-linkage": "bun scripts/content-audit/build-draft-claim-linkage-smoke.ts",
+    "content-audit:draft-claim-linkage-validate": "bun scripts/content-audit/validate-draft-claim-linkage-smoke.ts",
+    "content-audit:draft-article-prototype": "bun scripts/content-audit/build-draft-article-improvement-prototype.ts",
+    "content-audit:draft-article-prototype-validate": "bun scripts/content-audit/validate-draft-article-improvement-prototype.ts",
+    "content-audit:question-dry-run-audit": "bun scripts/content-audit/build-question-bank-dry-run-audit.ts",
+    "content-audit:question-dry-run-audit-validate": "bun scripts/content-audit/validate-question-bank-dry-run-audit.ts",
+    "content-audit:admin-local-review-payload": "bun scripts/content-audit/build-admin-local-review-payload.ts",
+    "content-audit:admin-local-review-payload-validate": "bun scripts/content-audit/validate-admin-local-review-payload.ts"
   },
   "dependencies": {
     "@base-ui/react": "^1.4.1",
@@ -177,6 +200,7 @@
     "vitest": "^4.1.5"
   },
   "overrides": {
+    "ip-address": "10.2.0",
     "postcss": "8.5.10",
     "uuid": "14.0.0"
   }

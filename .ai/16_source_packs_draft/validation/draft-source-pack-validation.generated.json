@@ -1,0 +1,77 @@
+{
+  "ok": true,
+  "checks": [
+    {
+      "name": "index_json_parses",
+      "status": "PASS"
+    },
+    {
+      "name": "draft_packs_present",
+      "status": "PASS"
+    },
+    {
+      "name": "production_blocked",
+      "status": "PASS"
+    },
+    {
+      "name": "all_draft_status",
+      "status": "PASS"
+    },
+    {
+      "name": "all_local_only",
+      "status": "PASS"
+    },
+    {
+      "name": "all_not_production_ready",
+      "status": "PASS"
+    },
+    {
+      "name": "no_embeddings",
+      "status": "PASS"
+    },
+    {
+      "name": "no_article_rewrites",
+      "status": "PASS"
+    },
+    {
+      "name": "no_question_edits",
+      "status": "PASS"
+    },
+    {
+      "name": "high_risk_requires_sme",
+      "status": "PASS"
+    },
+    {
+      "name": "draft-ra-11285_chunks_local_only",
+      "status": "PASS"
+    },
+    {
+      "name": "draft-ra-11201_chunks_local_only",
+      "status": "PASS"
+    },
+    {
+      "name": "draft-dc2019-11-0014_chunks_local_only",
+      "status": "PASS"
+    },
+    {
+      "name": "draft-bp-344-2024-revised-irr_chunks_local_only",
+      "status": "PASS"
+    },
+    {
+      "name": "draft-pd-1096-irr_chunks_local_only",
+      "status": "PASS"
+    },
+    {
+      "name": "draft-ra-9514-rirr_chunks_local_only",
+      "status": "PASS"
+    },
+    {
+      "name": "draft-ra-9266-irr_chunks_local_only",
+      "status": "PASS"
+    },
+    {
+      "name": "no_forbidden_positive_labels",
+      "status": "PASS"
+    }
+  ]
+}

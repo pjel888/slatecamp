@@ -1,0 +1,25 @@
+{
+  "ok": true,
+  "checks": [
+    {
+      "name": "json_parses",
+      "status": "PASS"
+    },
+    {
+      "name": "findings_present",
+      "status": "PASS"
+    },
+    {
+      "name": "audit_only",
+      "status": "PASS"
+    },
+    {
+      "name": "no_question_edits",
+      "status": "PASS"
+    },
+    {
+      "name": "no_supabase_mutation",
+      "status": "PASS"
+    }
+  ]
+}

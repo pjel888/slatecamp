@@ -1,0 +1,33 @@
+{
+  "ok": true,
+  "checks": [
+    {
+      "name": "json_parses",
+      "status": "PASS"
+    },
+    {
+      "name": "dry_run_true",
+      "status": "PASS"
+    },
+    {
+      "name": "db_write_false",
+      "status": "PASS"
+    },
+    {
+      "name": "admin_live_sync_false",
+      "status": "PASS"
+    },
+    {
+      "name": "local_only",
+      "status": "PASS"
+    },
+    {
+      "name": "not_production_ready",
+      "status": "PASS"
+    },
+    {
+      "name": "no_supabase_mutation",
+      "status": "PASS"
+    }
+  ]
+}

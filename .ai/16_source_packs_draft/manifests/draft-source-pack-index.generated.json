@@ -1,0 +1,300 @@
+{
+  "generated_at": "2026-05-06T04:35:09.589Z",
+  "draft_pack_count": 7,
+  "draft_chunk_count": 8,
+  "production_status": "BLOCKED",
+  "manifests": [
+    {
+      "draft_pack_id": "draft-ra-11285",
+      "source_family": "RA 11285 / Energy Efficiency and Conservation Act",
+      "document_code": "RA 11285",
+      "document_title": "Energy Efficiency and Conservation Act of 2019",
+      "draft_status": "DRAFT_SOURCE_PACK_CANDIDATE",
+      "production_status": "BLOCKED",
+      "allowed_use": "LOCAL_VALIDATION_ONLY",
+      "ai_review_status": "AI_REVIEWED_NOT_HUMAN_APPROVED",
+      "human_approval_gate": "HUMAN_APPROVAL_REQUIRED",
+      "sme_approval_gate": "SME_APPROVAL_REQUIRED",
+      "publication_status": "DO_NOT_PUBLISH",
+      "embedding_status": "DO_NOT_EMBED_PRODUCTION",
+      "supabase_status": "DO_NOT_MUTATE_SUPABASE",
+      "human_review_required": true,
+      "sme_review_required": true,
+      "source_approval_status": "BLOCKED",
+      "official_evidence_summary": {
+        "official_pdf_hash": "316c6afbb15fd2b54ab7e511f43c0bef24dfd8c5e8d935233c8985d2870d0cb8",
+        "official_pdf_url": "https://www.officialgazette.gov.ph/downloads/2019/04apr/20190412-RA-11285-RRD.pdf",
+        "issuing_body": "Official Gazette / Republic of the Philippines"
+      },
+      "local_file_hashes": [
+        "316c6afbb15fd2b54ab7e511f43c0bef24dfd8c5e8d935233c8985d2870d0cb8"
+      ],
+      "locator_summary": {
+        "locator_status": "locator_supported",
+        "confidence": "medium"
+      },
+      "conflict_summary": {
+        "conflict_flag": "false",
+        "conflict_type": "none_detected_by_script"
+      },
+      "provider_boundary": "LOCAL_ONLY_NO_EXTERNAL_UPLOAD",
+      "copyright_boundary": "LOCAL_VALIDATION_ONLY_NO_PUBLICATION",
+      "chunks_created_for_local_validation_only": false,
+      "draft_chunk_candidate_count": 0,
+      "embeddings_created": false,
+      "article_rewrites_created": false,
+      "question_edits_created": false,
+      "not_production_ready": true
+    },
+    {
+      "draft_pack_id": "draft-ra-11201",
+      "source_family": "RA 11201 / DHSUD Act",
+      "document_code": "RA 11201",
+      "document_title": "Department of Human Settlements and Urban Development Act of 2019",
+      "draft_status": "DRAFT_SOURCE_PACK_CANDIDATE",
+      "production_status": "BLOCKED",
+      "allowed_use": "LOCAL_VALIDATION_ONLY",
+      "ai_review_status": "AI_REVIEWED_NOT_HUMAN_APPROVED",
+      "human_approval_gate": "HUMAN_APPROVAL_REQUIRED",
+      "sme_approval_gate": "SME_APPROVAL_REQUIRED",
+      "publication_status": "DO_NOT_PUBLISH",
+      "embedding_status": "DO_NOT_EMBED_PRODUCTION",
+      "supabase_status": "DO_NOT_MUTATE_SUPABASE",
+      "human_review_required": true,
+      "sme_review_required": true,
+      "source_approval_status": "BLOCKED",
+      "official_evidence_summary": {
+        "official_pdf_hash": "59cf831669ddd0dc6f8fb569583e0ea75baf475c25677559aa21ea0979546c8d",
+        "official_pdf_url": "https://www.officialgazette.gov.ph/downloads/2019/02feb/20190214-RA-11201-RRD.pdf",
+        "issuing_body": "Official Gazette / Republic of the Philippines"
+      },
+      "local_file_hashes": [
+        "59cf831669ddd0dc6f8fb569583e0ea75baf475c25677559aa21ea0979546c8d"
+      ],
+      "locator_summary": {
+        "locator_status": "locator_supported",
+        "confidence": "high"
+      },
+      "conflict_summary": {
+        "conflict_flag": "true",
+        "conflict_type": "raw_source_matches_official_but_conversion_layer_hash_mismatch"
+      },
+      "provider_boundary": "LOCAL_ONLY_NO_EXTERNAL_UPLOAD",
+      "copyright_boundary": "LOCAL_VALIDATION_ONLY_NO_PUBLICATION",
+      "chunks_created_for_local_validation_only": false,
+      "draft_chunk_candidate_count": 0,
+      "embeddings_created": false,
+      "article_rewrites_created": false,
+      "question_edits_created": false,
+      "not_production_ready": true
+    },
+    {
+      "draft_pack_id": "draft-dc2019-11-0014",
+      "source_family": "DOE DC2019-11-0014 / RA 11285 IRR",
+      "document_code": "DC2019-11-0014",
+      "document_title": "IRR of RA 11285 Energy Efficiency and Conservation Act",
+      "draft_status": "DRAFT_SOURCE_PACK_CANDIDATE",
+      "production_status": "BLOCKED",
+      "allowed_use": "LOCAL_VALIDATION_ONLY",
+      "ai_review_status": "AI_REVIEWED_NOT_HUMAN_APPROVED",
+      "human_approval_gate": "HUMAN_APPROVAL_REQUIRED",
+      "sme_approval_gate": "SME_APPROVAL_REQUIRED",
+      "publication_status": "DO_NOT_PUBLISH",
+      "embedding_status": "DO_NOT_EMBED_PRODUCTION",
+      "supabase_status": "DO_NOT_MUTATE_SUPABASE",
+      "human_review_required": true,
+      "sme_review_required": true,
+      "source_approval_status": "BLOCKED",
+      "official_evidence_summary": {
+        "official_pdf_hash": "700816d6b0c8222ecb505fed36404978eadbd960920a18a80a4c396426413821",
+        "official_pdf_url": "https://legacy.doe.gov.ph/sites/default/files/pdf/issuances/dc2019-11-0014-updated.PDF",
+        "issuing_body": "Department of Energy Philippines"
+      },
+      "local_file_hashes": [],
+      "locator_summary": {
+        "locator_status": "locator_supported",
+        "confidence": "medium"
+      },
+      "conflict_summary": {
+        "conflict_flag": "false",
+        "conflict_type": "none_detected_by_script"
+      },
+      "provider_boundary": "LOCAL_ONLY_NO_EXTERNAL_UPLOAD",
+      "copyright_boundary": "LOCAL_VALIDATION_ONLY_NO_PUBLICATION",
+      "chunks_created_for_local_validation_only": false,
+      "draft_chunk_candidate_count": 0,
+      "embeddings_created": false,
+      "article_rewrites_created": false,
+      "question_edits_created": false,
+      "not_production_ready": true
+    },
+    {
+      "draft_pack_id": "draft-bp-344-2024-revised-irr",
+      "source_family": "BP 344 2024 Revised IRR",
+      "document_code": "BP 344 2024 Revised IRR",
+      "document_title": "2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344",
+      "draft_status": "DRAFT_SOURCE_PACK_CANDIDATE",
+      "production_status": "BLOCKED",
+      "allowed_use": "LOCAL_VALIDATION_ONLY",
+      "ai_review_status": "AI_REVIEWED_NOT_HUMAN_APPROVED",
+      "human_approval_gate": "HUMAN_APPROVAL_REQUIRED",
+      "sme_approval_gate": "SME_APPROVAL_REQUIRED",
+      "publication_status": "DO_NOT_PUBLISH",
+      "embedding_status": "DO_NOT_EMBED_PRODUCTION",
+      "supabase_status": "DO_NOT_MUTATE_SUPABASE",
+      "human_review_required": true,
+      "sme_review_required": true,
+      "source_approval_status": "BLOCKED",
+      "official_evidence_summary": {
+        "official_pdf_hash": "7c4a75a5190897f20844ec8981711c5453954504d609568a292dea9e6888fa76",
+        "official_pdf_url": "https://ncda.gov.ph/wp-content/uploads/2024/08/amended-IRR-BP-344-Official-Gazette.pdf",
+        "issuing_body": "National Council on Disability Affairs"
+      },
+      "local_file_hashes": [
+        "63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953"
+      ],
+      "locator_summary": {
+        "locator_status": "locator_supported",
+        "confidence": "high"
+      },
+      "conflict_summary": {
+        "conflict_flag": "true",
+        "conflict_type": "local_webpage_pdf_vs_official_download_pdf_hash_mismatch"
+      },
+      "provider_boundary": "LOCAL_ONLY_NO_EXTERNAL_UPLOAD",
+      "copyright_boundary": "LOCAL_VALIDATION_ONLY_NO_PUBLICATION",
+      "chunks_created_for_local_validation_only": true,
+      "draft_chunk_candidate_count": 2,
+      "embeddings_created": false,
+      "article_rewrites_created": false,
+      "question_edits_created": false,
+      "not_production_ready": true
+    },
+    {
+      "draft_pack_id": "draft-pd-1096-irr",
+      "source_family": "PD 1096 / NBCP IRR",
+      "document_code": "PD 1096 IRR",
+      "document_title": "Implementing Rules and Regulations of the National Building Code of the Philippines",
+      "draft_status": "DRAFT_SOURCE_PACK_CANDIDATE",
+      "production_status": "BLOCKED",
+      "allowed_use": "LOCAL_VALIDATION_ONLY",
+      "ai_review_status": "AI_REVIEWED_NOT_HUMAN_APPROVED",
+      "human_approval_gate": "HUMAN_APPROVAL_REQUIRED",
+      "sme_approval_gate": "SME_APPROVAL_REQUIRED",
+      "publication_status": "DO_NOT_PUBLISH",
+      "embedding_status": "DO_NOT_EMBED_PRODUCTION",
+      "supabase_status": "DO_NOT_MUTATE_SUPABASE",
+      "human_review_required": true,
+      "sme_review_required": true,
+      "source_approval_status": "BLOCKED",
+      "official_evidence_summary": {
+        "official_pdf_hash": "a482d1103bf96a6cbf23148bd3796ec7923396633f281a31c6fbdb8da5a02f9a",
+        "official_pdf_url": "https://www.dpwh.gov.ph/dpwh/sites/default/files/laws_codes_orders/IRR%20-%20NATIONAL%20BUILDING%20CODE%20COMPLETE.pdf",
+        "issuing_body": "Department of Public Works and Highways"
+      },
+      "local_file_hashes": [
+        "8e98d8afd4b5972ba5a82d33a65e59e800cd41661b764a0dfc4112d29697b341"
+      ],
+      "locator_summary": {
+        "locator_status": "locator_supported",
+        "confidence": "high"
+      },
+      "conflict_summary": {
+        "conflict_flag": "true",
+        "conflict_type": "local_version_vs_current_dpwh_download_hash_mismatch"
+      },
+      "provider_boundary": "LOCAL_ONLY_NO_EXTERNAL_UPLOAD",
+      "copyright_boundary": "LOCAL_VALIDATION_ONLY_NO_PUBLICATION",
+      "chunks_created_for_local_validation_only": true,
+      "draft_chunk_candidate_count": 2,
+      "embeddings_created": false,
+      "article_rewrites_created": false,
+      "question_edits_created": false,
+      "not_production_ready": true
+    },
+    {
+      "draft_pack_id": "draft-ra-9514-rirr",
+      "source_family": "RA 9514 Fire Code RIRR",
+      "document_code": "RA 9514 RIRR",
+      "document_title": "Revised Implementing Rules and Regulations of RA 9514 Fire Code of the Philippines",
+      "draft_status": "DRAFT_SOURCE_PACK_CANDIDATE",
+      "production_status": "BLOCKED",
+      "allowed_use": "LOCAL_VALIDATION_ONLY",
+      "ai_review_status": "AI_REVIEWED_NOT_HUMAN_APPROVED",
+      "human_approval_gate": "HUMAN_APPROVAL_REQUIRED",
+      "sme_approval_gate": "SME_APPROVAL_REQUIRED",
+      "publication_status": "DO_NOT_PUBLISH",
+      "embedding_status": "DO_NOT_EMBED_PRODUCTION",
+      "supabase_status": "DO_NOT_MUTATE_SUPABASE",
+      "human_review_required": true,
+      "sme_review_required": true,
+      "source_approval_status": "BLOCKED",
+      "official_evidence_summary": {
+        "official_pdf_hash": "",
+        "official_pdf_url": "",
+        "issuing_body": "Bureau of Fire Protection candidate; not body-confirmed due Cloudflare"
+      },
+      "local_file_hashes": [
+        "63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953"
+      ],
+      "locator_summary": {
+        "locator_status": "locator_supported",
+        "confidence": "high"
+      },
+      "conflict_summary": {
+        "conflict_flag": "false",
+        "conflict_type": "official_source_blocked"
+      },
+      "provider_boundary": "LOCAL_ONLY_NO_EXTERNAL_UPLOAD",
+      "copyright_boundary": "LOCAL_VALIDATION_ONLY_NO_PUBLICATION",
+      "chunks_created_for_local_validation_only": true,
+      "draft_chunk_candidate_count": 2,
+      "embeddings_created": false,
+      "article_rewrites_created": false,
+      "question_edits_created": false,
+      "not_production_ready": true
+    },
+    {
+      "draft_pack_id": "draft-ra-9266-irr",
+      "source_family": "RA 9266 / Architecture Act IRR",
+      "document_code": "RA 9266 IRR",
+      "document_title": "IRR of RA 9266 Architecture Act of 2004",
+      "draft_status": "DRAFT_SOURCE_PACK_CANDIDATE",
+      "production_status": "BLOCKED",
+      "allowed_use": "LOCAL_VALIDATION_ONLY",
+      "ai_review_status": "AI_REVIEWED_NOT_HUMAN_APPROVED",
+      "human_approval_gate": "HUMAN_APPROVAL_REQUIRED",
+      "sme_approval_gate": "SME_APPROVAL_REQUIRED",
+      "publication_status": "DO_NOT_PUBLISH",
+      "embedding_status": "DO_NOT_EMBED_PRODUCTION",
+      "supabase_status": "DO_NOT_MUTATE_SUPABASE",
+      "human_review_required": true,
+      "sme_review_required": true,
+      "source_approval_status": "BLOCKED",
+      "official_evidence_summary": {
+        "official_pdf_hash": "",
+        "official_pdf_url": "",
+        "issuing_body": "Official Gazette candidate; local PDF says Professional Regulation Commission / Board of Architecture"
+      },
+      "local_file_hashes": [
+        "d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574"
+      ],
+      "locator_summary": {
+        "locator_status": "locator_supported",
+        "confidence": "medium"
+      },
+      "conflict_summary": {
+        "conflict_flag": "false",
+        "conflict_type": "authority_host_unverified"
+      },
+      "provider_boundary": "LOCAL_ONLY_NO_EXTERNAL_UPLOAD",
+      "copyright_boundary": "LOCAL_VALIDATION_ONLY_NO_PUBLICATION",
+      "chunks_created_for_local_validation_only": true,
+      "draft_chunk_candidate_count": 2,
+      "embeddings_created": false,
+      "article_rewrites_created": false,
+      "question_edits_created": false,
+      "not_production_ready": true
+    }
+  ]
+}
