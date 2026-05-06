@@ -4,8 +4,9 @@ Selector: strict-v2
 Selected: 25
 
 Excluded by reason:
-- already_published_or_quarantined: 50
-- insufficient_linked_article_support: 2
-- generic_meta_distractor_leakage: 4
-- professional_practice_legal_code_source_gap: 8
-- existing_meaningful_explanation: 20
+- already_published_or_quarantined: 75
+- insufficient_linked_article_support: 3
+- generic_meta_distractor_leakage: 10
+- professional_practice_legal_code_source_gap: 32
+- existing_meaningful_explanation: 40
+- option_length_giveaway_risk: 4

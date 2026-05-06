@@ -1,0 +1,1600 @@
+{
+  "generated_at": "2026-05-06T11:43:06.672Z",
+  "batch": "question-batch-006",
+  "jobs": [
+    {
+      "question_id": "3262c3f5-1a71-44ef-8ea0-cba350558f80",
+      "article_id": "1edce199-0fc2-42e8-bad6-f3a74243626e",
+      "article_dir": ".ai/content-audit-export/articles/lea-util-004-06-cctv-systems--1edce199-0fc2-42e8-bad6-f3a74243626e",
+      "title": "lea-util-004-06-cctv-systems",
+      "baseline_hash": "sha256:0eec3cbe623e971370c9e71e412d540fc264b804f5e30a921da9ab694f334e73",
+      "baseline": {
+        "question_id": "3262c3f5-1a71-44ef-8ea0-cba350558f80",
+        "article_id": "1edce199-0fc2-42e8-bad6-f3a74243626e",
+        "topic_id": "824a68bb-40fc-4c13-8f26-c80f796172fc",
+        "text": "A high-security government facility requires multi-factor authentication at server room access. Which combination of technologies would provide the highest security level?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Proximity card reader with numeric keypad, which provides a basic level of security but may not be sufficient for high-security environments"
+          },
+          {
+            "id": "b",
+            "text": "Smart card reader with fingerprint biometric verification"
+          },
+          {
+            "id": "c",
+            "text": "Mobile credential via smartphone NFC only, which is convenient but may not offer the highest level of security"
+          },
+          {
+            "id": "d",
+            "text": "Iris recognition followed by voice authentication, which offers a high level of security but may be complex to implement"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Proximity cards alone are vulnerable to cloning, and numeric keypads are susceptible to observation and weak PIN selection.",
+          "c": "Mobile credentials lack the physical security factor of smart cards and can be compromised if the phone is lost or intercepted.",
+          "d": "While iris recognition is extremely accurate, combining it with voice authentication may introduce operational inefficiencies without adding practical security benefits in a controlled environment.",
+          "correct": "Smart cards provide encrypted credential authentication, and fingerprint biometrics add a second independent factor that cannot be transferred or lost. This combination delivers high security suitable for ultra-secure applications while maintaining practical user experience.",
+          "takeaway": "Optimal multi-factor authentication for high-security areas combines smart card technology with biometric verification."
+        },
+        "explanation": null,
+        "code_citation": "LEA-UTIL-004-06.mdx - Access Control Systems > Card Reader Technologies and Biometric Technologies",
+        "bloom_level": "understand",
+        "application_context": "recall",
+        "practice_context": [],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-UTIL-004-06-013",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:28:02.422831+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:0eec3cbe623e971370c9e71e412d540fc264b804f5e30a921da9ab694f334e73"
+      },
+      "proposed": {
+        "explanation": "Proximity cards alone are vulnerable to cloning, and numeric keypads are susceptible to observation and weak PIN selection. Mobile credentials lack the physical security factor of smart cards and can be compromised if the phone is lost or intercepted. While iris recognition is extremely accurate, combining it with voice authentication may introduce operational inefficiencies without adding practical security benefits in a controlled environment. Smart cards provide encrypted credential authentication, and fingerprint biometrics add a second independent factor that cannot be transferred or lost. This combination delivers high security suitable for ultra-secure applications while maintaining practical user experience. Optimal multi-factor authentication for high-security areas combines smart card technology with biometric verification."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "a2219d23-f6d9-4427-b70d-254ad7a2d359",
+      "article_id": "1edce199-0fc2-42e8-bad6-f3a74243626e",
+      "article_dir": ".ai/content-audit-export/articles/lea-util-004-06-cctv-systems--1edce199-0fc2-42e8-bad6-f3a74243626e",
+      "title": "lea-util-004-06-cctv-systems",
+      "baseline_hash": "sha256:3fcbe70be5fe023e9550f40a895f524eeef9b828e0e90b63b7e5cec448c53bb8",
+      "baseline": {
+        "question_id": "a2219d23-f6d9-4427-b70d-254ad7a2d359",
+        "article_id": "1edce199-0fc2-42e8-bad6-f3a74243626e",
+        "topic_id": "824a68bb-40fc-4c13-8f26-c80f796172fc",
+        "text": "Why should IP-based security systems (cameras, intercoms, access control) operate on isolated VLANs or dedicated networks rather than general building IT infrastructure?",
+        "options": [
+          {
+            "id": "a",
+            "text": "To reduce bandwidth consumption on the main network, ensuring that critical data traffic is not delayed during peak usage times"
+          },
+          {
+            "id": "b",
+            "text": "To prevent unauthorized access and system compromise from the general IT network"
+          },
+          {
+            "id": "c",
+            "text": "To simplify cabling installation and reduce conduit requirements, which can lower installation costs and minimize physical infrastructure complexity"
+          },
+          {
+            "id": "d",
+            "text": "To ensure compliance with the 220V/60Hz Philippine electrical standard, which is unrelated to network configuration but often misunderstood in system integration"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "While VLAN segmentation may distribute bandwidth, this is a secondary benefit; the primary purpose is security isolation.",
+          "c": "VLAN configuration does not simplify physical cabling or reduce conduit requirements; these are addressed through proper routing standards.",
+          "d": "VLAN isolation is independent of electrical standards; the 220V/60Hz requirement applies to power distribution, not network configuration.",
+          "correct": "IP-based systems on isolated VLANs prevent unauthorized access and compromise from general building IT infrastructure. This network segmentation is a critical security practice that isolates critical infrastructure from less secure general networks.",
+          "takeaway": "Security system networks must be isolated from general IT infrastructure through VLAN segmentation to prevent compromise and unauthorized access."
+        },
+        "explanation": null,
+        "code_citation": "LEA-UTIL-004-06.mdx - Best Practices for Philippine Buildings",
+        "bloom_level": "understand",
+        "application_context": "code_interpretation",
+        "practice_context": [],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-UTIL-004-06-014",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:28:02.422831+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:3fcbe70be5fe023e9550f40a895f524eeef9b828e0e90b63b7e5cec448c53bb8"
+      },
+      "proposed": {
+        "explanation": "While VLAN segmentation may distribute bandwidth, this is a secondary benefit; the primary purpose is security isolation. VLAN configuration does not simplify physical cabling or reduce conduit requirements; these are addressed through proper routing standards. VLAN isolation is independent of electrical standards; the 220V/60Hz requirement applies to power distribution, not network configuration. IP-based systems on isolated VLANs prevent unauthorized access and compromise from general building IT infrastructure. This network segmentation is a critical security practice that isolates critical infrastructure from less secure general networks. Security system networks must be isolated from general IT infrastructure through VLAN segmentation to prevent compromise and unauthorized access."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "accef436-2780-487e-afe8-a87836820df7",
+      "article_id": "1edce199-0fc2-42e8-bad6-f3a74243626e",
+      "article_dir": ".ai/content-audit-export/articles/lea-util-004-06-cctv-systems--1edce199-0fc2-42e8-bad6-f3a74243626e",
+      "title": "lea-util-004-06-cctv-systems",
+      "baseline_hash": "sha256:340eba94ad04f6734aa0bdbc8638240b539d925e06c41e2df8d645c1ac415fac",
+      "baseline": {
+        "question_id": "accef436-2780-487e-afe8-a87836820df7",
+        "article_id": "1edce199-0fc2-42e8-bad6-f3a74243626e",
+        "topic_id": "824a68bb-40fc-4c13-8f26-c80f796172fc",
+        "text": "In a flood-prone Philippine urban area, what is the critical design consideration for security operations center (SOC) placement beyond standard security access requirements?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Proximity to the main lobby for optimal guard line-of-sight, ensuring quick response times in case of emergencies"
+          },
+          {
+            "id": "b",
+            "text": "Elevation above flooding risk to ensure continuous operation during typhoon seasons"
+          },
+          {
+            "id": "c",
+            "text": "Central location within the building for balanced cable routing and efficient communication with all departments"
+          },
+          {
+            "id": "d",
+            "text": "Ground-floor placement to facilitate equipment replacement and maintenance, minimizing downtime during repairs"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Proximity to main lobby is important for operational oversight but does not address flood risk in flood-prone areas.",
+          "c": "Balanced cable routing is a secondary consideration; elevated placement for flood protection is paramount in the Philippine context.",
+          "d": "Ground-floor placement would directly expose the SOC to flooding risk, contradicting best practices for flood-prone regions.",
+          "correct": "The SOC should be located near the main lobby or gatehouse AND must be elevated above flooding risk, a critical consideration for Philippine urban facilities. Flooding can disable critical equipment, interrupt power systems, and compromise security operations during emergencies.",
+          "takeaway": "In flood-prone Philippine urban areas, SOC placement must prioritize elevation above expected flood levels to maintain continuous security operations during natural disasters."
+        },
+        "explanation": null,
+        "code_citation": "LEA-UTIL-004-06.mdx - Security Operations Center (SOC) / Control Room Design > Location and Access",
+        "bloom_level": "apply",
+        "application_context": "code_interpretation",
+        "practice_context": [],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-UTIL-004-06-019",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:28:02.422831+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:340eba94ad04f6734aa0bdbc8638240b539d925e06c41e2df8d645c1ac415fac"
+      },
+      "proposed": {
+        "explanation": "Proximity to main lobby is important for operational oversight but does not address flood risk in flood-prone areas. Balanced cable routing is a secondary consideration; elevated placement for flood protection is paramount in the Philippine context. Ground-floor placement would directly expose the SOC to flooding risk, contradicting best practices for flood-prone regions. The SOC should be located near the main lobby or gatehouse AND must be elevated above flooding risk, a critical consideration for Philippine urban facilities. Flooding can disable critical equipment, interrupt power systems, and compromise security operations during emergencies. In flood-prone Philippine urban areas, SOC placement must prioritize elevation above expected flood levels to maintain continuous security operations during natural disasters."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "428e42b4-9c1e-4c80-adfc-20d4504813dd",
+      "article_id": "ae14f6a9-dec8-458c-b4a1-3ae04df43bfa",
+      "article_dir": ".ai/content-audit-export/articles/lea-plan-002-04-core-concept--ae14f6a9-dec8-458c-b4a1-3ae04df43bfa",
+      "title": "lea-plan-002-04-core-concept",
+      "baseline_hash": "sha256:1d8403bba696cab59039fa7a344e7263a69ac232e51e403bb25b8308f6a6d3c6",
+      "baseline": {
+        "question_id": "428e42b4-9c1e-4c80-adfc-20d4504813dd",
+        "article_id": "ae14f6a9-dec8-458c-b4a1-3ae04df43bfa",
+        "topic_id": "1e9a5807-ce84-402d-8981-6db7dbf0c7a5",
+        "text": "In a municipal CLUP, 65% of the land area is designated 'Agricultural Zone' to preserve farmland and open space. As population pressure grows, developers seek to rezone portions to residential. What is the primary challenge this conflict creates?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Agricultural zoning always fails to produce revenue for the municipality, so any alternative is better, especially if it aligns with economic growth targets"
+          },
+          {
+            "id": "b",
+            "text": "Balancing CLUP stability (consistent long-term vision) with development pressure (market demand for housing); rezoning is flexible but fragmentary, risking sprawl"
+          },
+          {
+            "id": "c",
+            "text": "Agricultural land is protected by the national government and cannot be rezoned without federal approval, which involves a lengthy bureaucratic process"
+          },
+          {
+            "id": "d",
+            "text": "Environmental impact assessments for rezoning take too long, so it is best to deny all rezoning requests unless they meet expedited review criteria"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Agricultural zoning can generate value (farm output, food security, environmental services); it is not revenue-'worse' than residential—it is a different choice with different benefits.",
+          "b": "Zoning conflicts arise when market demand (housing) conflicts with planning vision (agricultural preservation). Rezoning is legally possible if the Sanggunian votes to amend the ordinance, but each amendment fragments the land use pattern and can accelerate sprawl if done piecemeal without integrated planning. This is the core land use planning tension.",
+          "c": "Local governments have zoning authority under RA 7160. National oversight exists (DHSUD review), but zoning authority is delegated to LGUs. The municipality can rezone if the CLUP is updated.",
+          "d": "EIA may be required for larger rezoning/development, but EIA delays are a process issue, not a reason to ban rezoning. Zoning changes do require environmental review, but that is standard practice.",
+          "correct": "Zoning conflicts arise when market demand (housing) conflicts with planning vision (agricultural preservation). Rezoning is legally possible if the Sanggunian votes to amend the ordinance, but each amendment fragments the land use pattern and can accelerate sprawl if done piecemeal without integrated planning. This is the core land use planning tension.",
+          "takeaway": "Land use planning challenges: balancing CLUP stability with development pressure; piecemeal rezoning risks sprawl."
+        },
+        "explanation": null,
+        "code_citation": "RA 7160; CLUP planning principles",
+        "bloom_level": "apply",
+        "application_context": "code_interpretation",
+        "practice_context": [
+          "Growth management"
+        ],
+        "difficulty": 0.7,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-PLAN-002-04-006",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:29:06.486658+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:1d8403bba696cab59039fa7a344e7263a69ac232e51e403bb25b8308f6a6d3c6"
+      },
+      "proposed": {
+        "explanation": "Agricultural zoning can generate value (farm output, food security, environmental services); it is not revenue-'worse' than residential—it is a different choice with different benefits. Zoning conflicts arise when market demand (housing) conflicts with planning vision (agricultural preservation). Rezoning is legally possible if the Sanggunian votes to amend the ordinance, but each amendment fragments the land use pattern and can accelerate sprawl if done piecemeal without integrated planning. This is the core land use planning tension. Local governments have zoning authority under RA 7160. National oversight exists (DHSUD review), but zoning authority is delegated to LGUs. The municipality can rezone if the CLUP is updated. EIA may be required for larger rezoning/development, but EIA delays are a process issue, not a reason to ban rezoning. Zoning changes do require environmental review, but that is standard practice. Zoning conflicts arise when market demand (housing) conflicts with planning vision (agricultural preservation). Rezoning is legally possible if the Sanggunian votes to amend the ordinance, but each amendment fragments the land use pattern and can accelerate sprawl if done piecemeal without integrated planning. This is the core land use planning tension. Land use planning challenges: balancing CLUP stability with development pressure; piecemeal rezoning risks sprawl."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "68090083-0ff0-447f-89c0-15b1585bc48a",
+      "article_id": "ae14f6a9-dec8-458c-b4a1-3ae04df43bfa",
+      "article_dir": ".ai/content-audit-export/articles/lea-plan-002-04-core-concept--ae14f6a9-dec8-458c-b4a1-3ae04df43bfa",
+      "title": "lea-plan-002-04-core-concept",
+      "baseline_hash": "sha256:aac98ae581d3f02e97860d1775604546448810f31a4457446ce9a7d09ace842d",
+      "baseline": {
+        "question_id": "68090083-0ff0-447f-89c0-15b1585bc48a",
+        "article_id": "ae14f6a9-dec8-458c-b4a1-3ae04df43bfa",
+        "topic_id": "1e9a5807-ce84-402d-8981-6db7dbf0c7a5",
+        "text": "A city's zoning ordinance requires all residential zones to have a minimum lot size of 300 sq.m. per residential unit. A developer in a Residential 3 (high-density) zone wants to build apartment units on 60 sq.m. average per unit. What is the fundamental problem with enforcing the 300 sq.m. rule in a high-density zone?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The 300 sq.m. minimum contradicts the stated purpose of high-density zoning and may be legally unenforceable for that zone, though it is clearly stated in the ordinance"
+          },
+          {
+            "id": "b",
+            "text": "The requirement is valid and must be enforced; developers must accept the 300 sq.m. minimum regardless of the zone designation, even if it contradicts the intended density"
+          },
+          {
+            "id": "c",
+            "text": "DHSUD must grant an exemption because 300 sq.m. is too restrictive for apartments, potentially stifling development in high-density areas"
+          },
+          {
+            "id": "d",
+            "text": "The Mayor must issue a variance allowing 60 sq.m. per unit, which may not align with the overall zoning strategy but addresses immediate developer needs"
+          }
+        ],
+        "correct_option_id": "a",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "A 'Residential 3 (high-density)' zone is intended to permit higher unit density on smaller individual lots. Imposing a 300 sq.m. minimum per unit contradicts the zone's stated purpose and is internally inconsistent—the ordinance contradicts itself. This inconsistency makes the minimum lot requirement legally vulnerable to challenge.",
+          "b": "While the ordinance states the rule, the rule contradicts the zone's designation. Contradictory ordinance language is a legal defect that a court would likely not enforce as written.",
+          "c": "DHSUD does not grant individual exemptions from zoning minimums. The problem is the ordinance itself, not the developer's application.",
+          "d": "The Mayor does not grant variances; the Sanggunian does (via the variance/appeals process). But the real issue is the zoning ordinance's internal contradiction, not a specific variance request.",
+          "correct": "A 'Residential 3 (high-density)' zone is intended to permit higher unit density on smaller individual lots. Imposing a 300 sq.m. minimum per unit contradicts the zone's stated purpose and is internally inconsistent—the ordinance contradicts itself. This inconsistency makes the minimum lot requirement legally vulnerable to challenge.",
+          "takeaway": "Zoning ordinances must be internally consistent. Rules that contradict a zone's stated purpose are legally weak and create compliance problems."
+        },
+        "explanation": null,
+        "code_citation": "Zoning Code best practices; RA 7160",
+        "bloom_level": "analyze",
+        "application_context": "code_interpretation",
+        "practice_context": [
+          "Regulatory analysis"
+        ],
+        "difficulty": 0.9,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-PLAN-002-04-008",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:29:06.486658+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:aac98ae581d3f02e97860d1775604546448810f31a4457446ce9a7d09ace842d"
+      },
+      "proposed": {
+        "explanation": "A 'Residential 3 (high-density)' zone is intended to permit higher unit density on smaller individual lots. Imposing a 300 sq.m. minimum per unit contradicts the zone's stated purpose and is internally inconsistent—the ordinance contradicts itself. This inconsistency makes the minimum lot requirement legally vulnerable to challenge. While the ordinance states the rule, the rule contradicts the zone's designation. Contradictory ordinance language is a legal defect that a court would likely not enforce as written. DHSUD does not grant individual exemptions from zoning minimums. The problem is the ordinance itself, not the developer's application. The Mayor does not grant variances; the Sanggunian does (via the variance/appeals process). But the real issue is the zoning ordinance's internal contradiction, not a specific variance request. A 'Residential 3 (high-density)' zone is intended to permit higher unit density on smaller individual lots. Imposing a 300 sq.m. minimum per unit contradicts the zone's stated purpose and is internally inconsistent—the ordinance contradicts itself. This inconsistency makes the minimum lot requirement legally vulnerable to challenge. Zoning ordinances must be internally consistent. Rules that contradict a zone's stated purpose are legally weak and create compliance problems."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "dddba217-806c-48b8-9860-3c627f973e1f",
+      "article_id": "ae14f6a9-dec8-458c-b4a1-3ae04df43bfa",
+      "article_dir": ".ai/content-audit-export/articles/lea-plan-002-04-core-concept--ae14f6a9-dec8-458c-b4a1-3ae04df43bfa",
+      "title": "lea-plan-002-04-core-concept",
+      "baseline_hash": "sha256:f2efd67fb64e3026aa01e310cbb319bccef9f59500ce484293619e63c6010e33",
+      "baseline": {
+        "question_id": "dddba217-806c-48b8-9860-3c627f973e1f",
+        "article_id": "ae14f6a9-dec8-458c-b4a1-3ae04df43bfa",
+        "topic_id": "1e9a5807-ce84-402d-8981-6db7dbf0c7a5",
+        "text": "A developer owns a 5-hectare parcel zoned 'Residential 1' (single-family homes, max. 2 stories). The developer wants to construct a 15-story condominium. What process must occur to make this development legal?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The developer applies directly to DHSUD for an exemption; DHSUD approves or denies based on current zoning laws"
+          },
+          {
+            "id": "b",
+            "text": "The Sanggunian must amend the zoning ordinance to allow high-rise residential in that zone; or a variance/conditional use permit must be granted"
+          },
+          {
+            "id": "c",
+            "text": "The Mayor must issue an executive order overriding the zoning ordinance, which is subject to legal review"
+          },
+          {
+            "id": "d",
+            "text": "The Planning Office must approve a zoning waiver, which requires a comprehensive impact assessment"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "DHSUD does not grant exemptions from local zoning. DHSUD reviews the zoning ordinance itself for conformity with national policy; DHSUD does not override municipal zoning codes.",
+          "b": "Zoning that prohibits 15-story construction cannot be circumvented without formal action. The Sanggunian can rezone the parcel (amending the ordinance), or can grant a variance/conditional use permit (approval of departure from standard) if justified by public interest. Both require public hearing.",
+          "c": "The Mayor does not have the executive power to override the zoning ordinance. The Mayor implements ordinances; the Mayor does not legislatively amend them.",
+          "d": "The Planning Office has no authority to grant zoning waivers. Only the Sanggunian (through amendment or variance) can modify zoning legally.",
+          "correct": "Zoning that prohibits 15-story construction cannot be circumvented without formal action. The Sanggunian can rezone the parcel (amending the ordinance), or can grant a variance/conditional use permit (approval of departure from standard) if justified by public interest. Both require public hearing.",
+          "takeaway": "Changing zoning requires Sanggunian action (amendment or variance), not executive override or agency exemption."
+        },
+        "explanation": null,
+        "code_citation": "RA 7160; Standard Zoning Code practice",
+        "bloom_level": "apply",
+        "application_context": "code_interpretation",
+        "practice_context": [
+          "Development approval process"
+        ],
+        "difficulty": 0.7,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-PLAN-002-04-004",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:29:06.486658+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:f2efd67fb64e3026aa01e310cbb319bccef9f59500ce484293619e63c6010e33"
+      },
+      "proposed": {
+        "explanation": "DHSUD does not grant exemptions from local zoning. DHSUD reviews the zoning ordinance itself for conformity with national policy; DHSUD does not override municipal zoning codes. Zoning that prohibits 15-story construction cannot be circumvented without formal action. The Sanggunian can rezone the parcel (amending the ordinance), or can grant a variance/conditional use permit (approval of departure from standard) if justified by public interest. Both require public hearing. The Mayor does not have the executive power to override the zoning ordinance. The Mayor implements ordinances; the Mayor does not legislatively amend them. The Planning Office has no authority to grant zoning waivers. Only the Sanggunian (through amendment or variance) can modify zoning legally. Zoning that prohibits 15-story construction cannot be circumvented without formal action. The Sanggunian can rezone the parcel (amending the ordinance), or can grant a variance/conditional use permit (approval of departure from standard) if justified by public interest. Both require public hearing. Changing zoning requires Sanggunian action (amendment or variance), not executive override or agency exemption."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "d50e388c-1e82-4df6-a5ce-1f5708819dc4",
+      "article_id": "ae14f6a9-dec8-458c-b4a1-3ae04df43bfa",
+      "article_dir": ".ai/content-audit-export/articles/lea-plan-002-04-core-concept--ae14f6a9-dec8-458c-b4a1-3ae04df43bfa",
+      "title": "lea-plan-002-04-core-concept",
+      "baseline_hash": "sha256:87ed6f67540942f3b30697dbec2d13b14af0dbad871df661f727395a240cdd2c",
+      "baseline": {
+        "question_id": "d50e388c-1e82-4df6-a5ce-1f5708819dc4",
+        "article_id": "ae14f6a9-dec8-458c-b4a1-3ae04df43bfa",
+        "topic_id": "1e9a5807-ce84-402d-8981-6db7dbf0c7a5",
+        "text": "How does zoning simultaneously 'enable' and 'restrain' development?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Zoning enables development in designated zones but restrains it everywhere else by specifying which uses are prohibited in which areas"
+          },
+          {
+            "id": "b",
+            "text": "Zoning enables all development equally while restraining environmental damage through pollution controls and other regulatory measures"
+          },
+          {
+            "id": "c",
+            "text": "Zoning restrains development for poor communities while enabling development for wealthy areas only, often through differential zoning laws and incentives"
+          },
+          {
+            "id": "d",
+            "text": "Zoning enables development through building permits but restrains it through architectural design standards that must be adhered to strictly"
+          }
+        ],
+        "correct_option_id": "a",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Zoning works through inclusion and exclusion. It enables certain uses in designated zones (e.g., 'residential use is permitted here') while prohibiting the same uses elsewhere (e.g., 'residential use is prohibited in the industrial zone'). This dual mechanism guides where development happens and where it does not.",
+          "b": "Zoning allocates land use; pollution control is separate regulation (environmental law). Zoning does not control environmental impacts directly.",
+          "c": "Zoning is a neutral regulatory mechanism applicable to all properties. While zoning can have inequitable outcomes (e.g., zoning out affordable housing), that is a policy problem, not the inherent function of zoning.",
+          "d": "Building permits are issued under zoning authority, but they are a separate approval. Design standards are also separate from zoning (though related).",
+          "correct": "Zoning works through inclusion and exclusion. It enables certain uses in designated zones (e.g., 'residential use is permitted here') while prohibiting the same uses elsewhere (e.g., 'residential use is prohibited in the industrial zone'). This dual mechanism guides where development happens and where it does not.",
+          "takeaway": "Zoning enables development in designated zones; restrains it in others. This allocation mechanism is zoning's core function."
+        },
+        "explanation": null,
+        "code_citation": "Zoning principles; RA 7160",
+        "bloom_level": "understand",
+        "application_context": "code_interpretation",
+        "practice_context": [],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-PLAN-002-04-009",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:29:06.486658+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:87ed6f67540942f3b30697dbec2d13b14af0dbad871df661f727395a240cdd2c"
+      },
+      "proposed": {
+        "explanation": "Zoning works through inclusion and exclusion. It enables certain uses in designated zones (e.g., 'residential use is permitted here') while prohibiting the same uses elsewhere (e.g., 'residential use is prohibited in the industrial zone'). This dual mechanism guides where development happens and where it does not. Zoning allocates land use; pollution control is separate regulation (environmental law). Zoning does not control environmental impacts directly. Zoning is a neutral regulatory mechanism applicable to all properties. While zoning can have inequitable outcomes (e.g., zoning out affordable housing), that is a policy problem, not the inherent function of zoning. Building permits are issued under zoning authority, but they are a separate approval. Design standards are also separate from zoning (though related). Zoning works through inclusion and exclusion. It enables certain uses in designated zones (e.g., 'residential use is permitted here') while prohibiting the same uses elsewhere (e.g., 'residential use is prohibited in the industrial zone'). This dual mechanism guides where development happens and where it does not. Zoning enables development in designated zones; restrains it in others. This allocation mechanism is zoning's core function."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "f148bd59-ec01-4e30-a114-3caf969eec40",
+      "article_id": "ae14f6a9-dec8-458c-b4a1-3ae04df43bfa",
+      "article_dir": ".ai/content-audit-export/articles/lea-plan-002-04-core-concept--ae14f6a9-dec8-458c-b4a1-3ae04df43bfa",
+      "title": "lea-plan-002-04-core-concept",
+      "baseline_hash": "sha256:2062148efda5e25cfd3edabab0826b70f8efa13693f1277694d88a59ab5859ab",
+      "baseline": {
+        "question_id": "f148bd59-ec01-4e30-a114-3caf969eec40",
+        "article_id": "ae14f6a9-dec8-458c-b4a1-3ae04df43bfa",
+        "topic_id": "1e9a5807-ce84-402d-8981-6db7dbf0c7a5",
+        "text": "What is a Zoning Ordinance?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A planning vision document that guides development for 10 years, often revised to reflect changing urban dynamics and community needs"
+          },
+          {
+            "id": "b",
+            "text": "A legislative enactment adopted by the Sanggunian that specifies permitted and prohibited land uses and building regulations"
+          },
+          {
+            "id": "c",
+            "text": "A set of guidelines prepared by the Planning Office to recommend how land should be used, including suggestions for zoning classifications and land use intensity"
+          },
+          {
+            "id": "d",
+            "text": "A permit issued by DHSUD to authorize specific construction projects, detailing compliance with local zoning laws and environmental regulations"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "That describes the CLUP (Comprehensive Land Use Plan), not the zoning ordinance. The CLUP is the vision; the ordinance is the law that implements it.",
+          "b": "The Zoning Ordinance is a legislative tool adopted by the Sanggunian that translates CLUP decisions into enforceable rules specifying what uses are allowed in each zone, building height limits, setbacks, lot sizes, and other regulations.",
+          "c": "The Planning Office drafts the zoning ordinance, but the Sanggunian must formally adopt it as law. Guidelines alone are not enforceable.",
+          "d": "DHSUD reviews the ordinance for conformity with national standards, but the ordinance itself is not a construction permit—it sets the rules under which permits are issued.",
+          "correct": "The Zoning Ordinance is a legislative tool adopted by the Sanggunian that translates CLUP decisions into enforceable rules specifying what uses are allowed in each zone, building height limits, setbacks, lot sizes, and other regulations.",
+          "takeaway": "Zoning Ordinance = enforceable legislative act adopted by Sanggunian, implementing the CLUP."
+        },
+        "explanation": null,
+        "code_citation": "RA 7160 (Local Government Code); DHSUD Zoning Guidelines",
+        "bloom_level": "remember",
+        "application_context": "code_interpretation",
+        "practice_context": [],
+        "difficulty": 0.3,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-PLAN-002-04-001",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:29:06.486658+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:2062148efda5e25cfd3edabab0826b70f8efa13693f1277694d88a59ab5859ab"
+      },
+      "proposed": {
+        "explanation": "That describes the CLUP (Comprehensive Land Use Plan), not the zoning ordinance. The CLUP is the vision; the ordinance is the law that implements it. The Zoning Ordinance is a legislative tool adopted by the Sanggunian that translates CLUP decisions into enforceable rules specifying what uses are allowed in each zone, building height limits, setbacks, lot sizes, and other regulations. The Planning Office drafts the zoning ordinance, but the Sanggunian must formally adopt it as law. Guidelines alone are not enforceable. DHSUD reviews the ordinance for conformity with national standards, but the ordinance itself is not a construction permit—it sets the rules under which permits are issued. The Zoning Ordinance is a legislative tool adopted by the Sanggunian that translates CLUP decisions into enforceable rules specifying what uses are allowed in each zone, building height limits, setbacks, lot sizes, and other regulations. Zoning Ordinance = enforceable legislative act adopted by Sanggunian, implementing the CLUP."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "d5ecaa5a-46f3-4603-91c9-b5bbebf41ac1",
+      "article_id": "ae14f6a9-dec8-458c-b4a1-3ae04df43bfa",
+      "article_dir": ".ai/content-audit-export/articles/lea-plan-002-04-core-concept--ae14f6a9-dec8-458c-b4a1-3ae04df43bfa",
+      "title": "lea-plan-002-04-core-concept",
+      "baseline_hash": "sha256:e65a54ef6058ef6d747847badc49262319fa488d5bf7b78c762c71880584a9e9",
+      "baseline": {
+        "question_id": "d5ecaa5a-46f3-4603-91c9-b5bbebf41ac1",
+        "article_id": "ae14f6a9-dec8-458c-b4a1-3ae04df43bfa",
+        "topic_id": "1e9a5807-ce84-402d-8981-6db7dbf0c7a5",
+        "text": "The CLUP designates an area for residential development, but the current Zoning Ordinance permits only industrial use in that same area. What is the legal status of this zoning?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Valid—the zoning ordinance can differ from the CLUP as long as the Mayor approves both"
+          },
+          {
+            "id": "b",
+            "text": "Valid—industrial development will eventually pay for residential infrastructure, so it is a reasonable interim use"
+          },
+          {
+            "id": "c",
+            "text": "Invalid—zoning ordinances must be consistent with the CLUP; inconsistency is legally vulnerable"
+          },
+          {
+            "id": "d",
+            "text": "Valid—the Sanggunian has discretion to adopt zoning categories regardless of CLUP alignment"
+          }
+        ],
+        "correct_option_id": "c",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Mayoral approval does not cure inconsistency with the CLUP. The CLUP itself is the mandate under RA 7160; zoning must implement it.",
+          "b": "While interim uses are possible in planning, a permanent zoning designation that contradicts the CLUP is not an interim use—it is a policy conflict that must be resolved.",
+          "c": "The Zoning Ordinance is the legal implementation tool of the CLUP. If zoning contradicts the CLUP, the ordinance is internally inconsistent and vulnerable to legal challenge by residents or developers claiming the ordinance is ultra vires (beyond legal authority).",
+          "d": "Under RA 7160, the Sanggunian's power to zone is limited to implementing the CLUP. Zoning that contradicts the CLUP exceeds that delegated power.",
+          "correct": "The Zoning Ordinance is the legal implementation tool of the CLUP. If zoning contradicts the CLUP, the ordinance is internally inconsistent and vulnerable to legal challenge by residents or developers claiming the ordinance is ultra vires (beyond legal authority).",
+          "takeaway": "Zoning ordinance must align with CLUP or it is legally invalid."
+        },
+        "explanation": null,
+        "code_citation": "RA 7160; DHSUD conformity standards",
+        "bloom_level": "understand",
+        "application_context": "code_interpretation",
+        "practice_context": [],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-PLAN-002-04-003",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:29:06.486658+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:e65a54ef6058ef6d747847badc49262319fa488d5bf7b78c762c71880584a9e9"
+      },
+      "proposed": {
+        "explanation": "Mayoral approval does not cure inconsistency with the CLUP. The CLUP itself is the mandate under RA 7160; zoning must implement it. While interim uses are possible in planning, a permanent zoning designation that contradicts the CLUP is not an interim use—it is a policy conflict that must be resolved. The Zoning Ordinance is the legal implementation tool of the CLUP. If zoning contradicts the CLUP, the ordinance is internally inconsistent and vulnerable to legal challenge by residents or developers claiming the ordinance is ultra vires (beyond legal authority). Under RA 7160, the Sanggunian's power to zone is limited to implementing the CLUP. Zoning that contradicts the CLUP exceeds that delegated power. The Zoning Ordinance is the legal implementation tool of the CLUP. If zoning contradicts the CLUP, the ordinance is internally inconsistent and vulnerable to legal challenge by residents or developers claiming the ordinance is ultra vires (beyond legal authority). Zoning ordinance must align with CLUP or it is legally invalid."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "1b463d36-9e1d-46fd-8985-2f739446e2f3",
+      "article_id": "0f0bee66-7a14-4ab0-a030-aaaade95b078",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-007-03-core-concept--0f0bee66-7a14-4ab0-a030-aaaade95b078",
+      "title": "lea-hist-007-03-core-concept",
+      "baseline_hash": "sha256:d4719b59240a1ed22bc4661f80e4c0f9b15c649aeb4cc68599660a02a5754864",
+      "baseline": {
+        "question_id": "1b463d36-9e1d-46fd-8985-2f739446e2f3",
+        "article_id": "0f0bee66-7a14-4ab0-a030-aaaade95b078",
+        "topic_id": "01c16ea4-55b9-4bb2-8d6e-4d092f7def0c",
+        "text": "A Shinto shrine's main approach features thousands of vermillion post-and-lintel gate structures creating ascending gradations of sacred space up a mountainside. What is the Japanese term for this gate type?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Pagoda (tou)"
+          },
+          {
+            "id": "b",
+            "text": "Torii"
+          },
+          {
+            "id": "c",
+            "text": "Jali"
+          },
+          {
+            "id": "d",
+            "text": "Gopura"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Pagoda is a vertical Buddhist monument of multiple diminishing stories, not a gate structure.",
+          "c": "Jali is a perforated stone screen used in Mughal architecture, not a Japanese Shinto gate.",
+          "d": "Gopura is a Hindu gateway tower, not a Shinto gate.",
+          "correct": "Torii is explicitly defined as a simple post-and-lintel gate structure marking Shinto sacred boundaries; at Fushimi Inari, thousands of vermillion torii tunnel up the mountainside, creating ascending gradations of sacred space.",
+          "takeaway": "Torii is explicitly defined as a simple post-and-lintel gate structure marking Shinto sacred boundaries; at Fushimi Inari, thousands of vermillion torii tunnel up the mountainside, creating ascending gradations of sacred space."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "apply",
+        "application_context": "recall",
+        "practice_context": [
+          "DESC"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-HIST-007-03-004",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:24.518466+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:d4719b59240a1ed22bc4661f80e4c0f9b15c649aeb4cc68599660a02a5754864"
+      },
+      "proposed": {
+        "explanation": "Pagoda is a vertical Buddhist monument of multiple diminishing stories, not a gate structure. Jali is a perforated stone screen used in Mughal architecture, not a Japanese Shinto gate. Gopura is a Hindu gateway tower, not a Shinto gate. Torii is explicitly defined as a simple post-and-lintel gate structure marking Shinto sacred boundaries; at Fushimi Inari, thousands of vermillion torii tunnel up the mountainside, creating ascending gradations of sacred space. Torii is explicitly defined as a simple post-and-lintel gate structure marking Shinto sacred boundaries; at Fushimi Inari, thousands of vermillion torii tunnel up the mountainside, creating ascending gradations of sacred space."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "05caf9c8-310a-4903-a66e-3c7310c586d6",
+      "article_id": "0f0bee66-7a14-4ab0-a030-aaaade95b078",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-007-03-core-concept--0f0bee66-7a14-4ab0-a030-aaaade95b078",
+      "title": "lea-hist-007-03-core-concept",
+      "baseline_hash": "sha256:7f0098c98e03e46f0f167bf4899bb0a676622ada0b141074423b582df6d57f79",
+      "baseline": {
+        "question_id": "05caf9c8-310a-4903-a66e-3c7310c586d6",
+        "article_id": "0f0bee66-7a14-4ab0-a030-aaaade95b078",
+        "topic_id": "01c16ea4-55b9-4bb2-8d6e-4d092f7def0c",
+        "text": "A common exam mistake confuses torii (Shinto threshold) as a decorative element. What is the true cosmological and spatial function of torii in Shinto architecture?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Torii are primarily ornamental features added for aesthetic appeal, often painted in bright colors to attract attention"
+          },
+          {
+            "id": "b",
+            "text": "Torii are load-bearing structural elements essential for roof support, designed to withstand seismic activity"
+          },
+          {
+            "id": "c",
+            "text": "Torii are cosmological thresholds marking the boundary between sacred (kami) and profane (human) space; their function is spatial demarcation, not aesthetics; multiple torii create spiritual progression."
+          },
+          {
+            "id": "d",
+            "text": "Torii are storage structures for ritual objects and offerings, ensuring their protection from the elements"
+          }
+        ],
+        "correct_option_id": "c",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Torii are not decorative; the article emphasizes their cosmological and boundary-demarcating function.",
+          "b": "Torii are not primarily structural; they are symbolic spatial markers.",
+          "d": "Torii are not storage structures; they are threshold markers.",
+          "correct": "The article explicitly warns against treating torii as decorative; torii are cosmological thresholds marking sacred/profane boundary demarcation with spiritual progression, not aesthetic ornament or tourist features.",
+          "takeaway": "The article explicitly warns against treating torii as decorative; torii are cosmological thresholds marking sacred/profane boundary demarcation with spiritual progression, not aesthetic ornament or tourist features."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "apply",
+        "application_context": "design_application",
+        "practice_context": [
+          "CMP"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-HIST-007-03-012",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:24.518466+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:7f0098c98e03e46f0f167bf4899bb0a676622ada0b141074423b582df6d57f79"
+      },
+      "proposed": {
+        "explanation": "Torii are not decorative; the article emphasizes their cosmological and boundary-demarcating function. Torii are not primarily structural; they are symbolic spatial markers. Torii are not storage structures; they are threshold markers. The article explicitly warns against treating torii as decorative; torii are cosmological thresholds marking sacred/profane boundary demarcation with spiritual progression, not aesthetic ornament or tourist features. The article explicitly warns against treating torii as decorative; torii are cosmological thresholds marking sacred/profane boundary demarcation with spiritual progression, not aesthetic ornament or tourist features."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "018c9cf2-f0a7-4f4e-aece-6e28a3cd35a7",
+      "article_id": "0f0bee66-7a14-4ab0-a030-aaaade95b078",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-007-03-core-concept--0f0bee66-7a14-4ab0-a030-aaaade95b078",
+      "title": "lea-hist-007-03-core-concept",
+      "baseline_hash": "sha256:903af97995e9ddbe1708112516b51e3ad794e296df79fe60aa32d673c144fd1a",
+      "baseline": {
+        "question_id": "018c9cf2-f0a7-4f4e-aece-6e28a3cd35a7",
+        "article_id": "0f0bee66-7a14-4ab0-a030-aaaade95b078",
+        "topic_id": "01c16ea4-55b9-4bb2-8d6e-4d092f7def0c",
+        "text": "How does the aesthetic principle of yohaku no bi (beauty of emptiness) manifest in the design of Katsura Imperial Villa?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The villa is sparsely furnished with elaborate ornamental displays dominating the interior."
+          },
+          {
+            "id": "b",
+            "text": "The villa emphasizes ornate decoration and dense symbolism reflecting imperial power."
+          },
+          {
+            "id": "c",
+            "text": "Every element is considered for subtlety, proportion, and seasonal change; the villa privileges negative space and material honesty over ornament."
+          },
+          {
+            "id": "d",
+            "text": "The villa is abandoned and empty, reflecting Buddhist emptiness philosophy."
+          }
+        ],
+        "correct_option_id": "c",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Yohaku no bi privileges emptiness over ornamental display; this reverses the principle.",
+          "b": "The article contrasts Katsura's humble, subtle design with ornate decoration; Katsura embodies restraint.",
+          "d": "Yohaku no bi is an aesthetic principle about designed negative space and material honesty, not literal abandonment.",
+          "correct": "The article explicitly defines yohaku no bi as beauty of emptiness, emphasizing negative space and material simplicity over ornament. Katsura Imperial Villa embodies this through subtlety, proportion, seasonal responsiveness, and humble materials.",
+          "takeaway": "Katsura Imperial Villa embodies this through subtlety, proportion, seasonal responsiveness, and humble materials."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "apply",
+        "application_context": "code_interpretation",
+        "practice_context": [
+          "CON"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-HIST-007-03-006",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:24.518466+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:903af97995e9ddbe1708112516b51e3ad794e296df79fe60aa32d673c144fd1a"
+      },
+      "proposed": {
+        "explanation": "Yohaku no bi privileges emptiness over ornamental display; this reverses the principle. The article contrasts Katsura's humble, subtle design with ornate decoration; Katsura embodies restraint. Yohaku no bi is an aesthetic principle about designed negative space and material honesty, not literal abandonment. The article explicitly defines yohaku no bi as beauty of emptiness, emphasizing negative space and material simplicity over ornament. Katsura Imperial Villa embodies this through subtlety, proportion, seasonal responsiveness, and humble materials. Katsura Imperial Villa embodies this through subtlety, proportion, seasonal responsiveness, and humble materials."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "cb57dc8f-af25-4628-8794-71e7d99a597e",
+      "article_id": "0f0bee66-7a14-4ab0-a030-aaaade95b078",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-007-03-core-concept--0f0bee66-7a14-4ab0-a030-aaaade95b078",
+      "title": "lea-hist-007-03-core-concept",
+      "baseline_hash": "sha256:e53079dce31e2046996f4c07ef23c779a9452eb4d41eff6c1b60ae153e53fd4b",
+      "baseline": {
+        "question_id": "cb57dc8f-af25-4628-8794-71e7d99a597e",
+        "article_id": "0f0bee66-7a14-4ab0-a030-aaaade95b078",
+        "topic_id": "01c16ea4-55b9-4bb2-8d6e-4d092f7def0c",
+        "text": "How does Shikinen Sengu (20-year rebuilding of Ise Grand Shrine) differ from Western preservation and restoration practices?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Shikinen Sengu is identical to Western restoration; there is no meaningful difference between the two approaches."
+          },
+          {
+            "id": "b",
+            "text": "Shikinen Sengu aims to preserve a fixed original; Western restoration attempts to return structures to their original state."
+          },
+          {
+            "id": "c",
+            "text": "Shikinen Sengu embraces impermanence and sacred renewal through complete disassembly and reconstruction, not preservation of a fixed original; it re-enacts the original act of creation."
+          },
+          {
+            "id": "d",
+            "text": "Shikinen Sengu is performed only on damaged structures; Western restoration maintains buildings indefinitely regardless of condition."
+          }
+        ],
+        "correct_option_id": "c",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "The article emphasizes Shikinen Sengu is radical for Western preservation thinking, not identical to it.",
+          "b": "This reverses the distinction; Shikinen Sengu intentionally rejects preservation of a fixed original.",
+          "d": "Shikinen Sengu is performed regardless of damage condition; it is part of the sacred cycle, not response to deterioration.",
+          "correct": "The article explicitly states that Shikinen Sengu is NOT aimed at preserving a fixed original; it is sacred renewal embracing impermanence. Each rebuild re-enacts the original act of creation, radically different from Western preservation thinking.",
+          "takeaway": "Each rebuild re-enacts the original act of creation, radically different from Western preservation thinking."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "apply",
+        "application_context": "design_application",
+        "practice_context": [
+          "CMP"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-HIST-007-03-003",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:24.518466+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:e53079dce31e2046996f4c07ef23c779a9452eb4d41eff6c1b60ae153e53fd4b"
+      },
+      "proposed": {
+        "explanation": "The article emphasizes Shikinen Sengu is radical for Western preservation thinking, not identical to it. This reverses the distinction; Shikinen Sengu intentionally rejects preservation of a fixed original. Shikinen Sengu is performed regardless of damage condition; it is part of the sacred cycle, not response to deterioration. The article explicitly states that Shikinen Sengu is NOT aimed at preserving a fixed original; it is sacred renewal embracing impermanence. Each rebuild re-enacts the original act of creation, radically different from Western preservation thinking. Each rebuild re-enacts the original act of creation, radically different from Western preservation thinking."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "5c6326f5-6239-4b66-925f-30de1a4c3ec2",
+      "article_id": "0f0bee66-7a14-4ab0-a030-aaaade95b078",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-007-03-core-concept--0f0bee66-7a14-4ab0-a030-aaaade95b078",
+      "title": "lea-hist-007-03-core-concept",
+      "baseline_hash": "sha256:1fc7d661eb75906e2e3e64430756c13015386a2253a5eb3e0d218f6731251629",
+      "baseline": {
+        "question_id": "5c6326f5-6239-4b66-925f-30de1a4c3ec2",
+        "article_id": "0f0bee66-7a14-4ab0-a030-aaaade95b078",
+        "topic_id": "01c16ea4-55b9-4bb2-8d6e-4d092f7def0c",
+        "text": "In Japanese architecture, what is the engawa, and what functional role does it serve in the relationship between interior and exterior spaces?",
+        "options": [
+          {
+            "id": "a",
+            "text": "An underground heating system warming interior rooms, providing comfort during cold seasons"
+          },
+          {
+            "id": "b",
+            "text": "A wooden veranda or platform extending from a building, serving as a transitional zone between interior and exterior, shelter and exposure"
+          },
+          {
+            "id": "c",
+            "text": "A decorative roofline element creating curved eaves, enhancing the building's aesthetic appeal"
+          },
+          {
+            "id": "d",
+            "text": "A perforated screen dividing interior rooms, allowing for flexible space usage and privacy"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Ondol is a Korean underfloor heating system, not Japanese; engawa is a veranda, not a heating system.",
+          "c": "Eaves are roof overhangs; engawa is a platform, not a roofline element.",
+          "d": "Shoji and fusuma are interior screens; engawa is an external transitional platform.",
+          "correct": "Engawa is explicitly defined as a wooden veranda or platform extending from the building, functioning as a liminal (transitional) zone for viewing and transitioning between interior and exterior, shelter and exposure.",
+          "takeaway": "Engawa is explicitly defined as a wooden veranda or platform extending from the building, functioning as a liminal (transitional) zone for viewing and transitioning between interior and exterior, shelter and exposure."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "remember",
+        "application_context": "code_interpretation",
+        "practice_context": [
+          "ST"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-HIST-007-03-011",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:24.518466+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:1fc7d661eb75906e2e3e64430756c13015386a2253a5eb3e0d218f6731251629"
+      },
+      "proposed": {
+        "explanation": "Ondol is a Korean underfloor heating system, not Japanese; engawa is a veranda, not a heating system. Eaves are roof overhangs; engawa is a platform, not a roofline element. Shoji and fusuma are interior screens; engawa is an external transitional platform. Engawa is explicitly defined as a wooden veranda or platform extending from the building, functioning as a liminal (transitional) zone for viewing and transitioning between interior and exterior, shelter and exposure. Engawa is explicitly defined as a wooden veranda or platform extending from the building, functioning as a liminal (transitional) zone for viewing and transitioning between interior and exterior, shelter and exposure."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "17622d2e-c426-43a3-9f9b-1a9bca745e94",
+      "article_id": "0f0bee66-7a14-4ab0-a030-aaaade95b078",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-007-03-core-concept--0f0bee66-7a14-4ab0-a030-aaaade95b078",
+      "title": "lea-hist-007-03-core-concept",
+      "baseline_hash": "sha256:d131bb59930153fad973fef2df1fa2dc6542f63da8c9a302dbb6852cae064b25",
+      "baseline": {
+        "question_id": "17622d2e-c426-43a3-9f9b-1a9bca745e94",
+        "article_id": "0f0bee66-7a14-4ab0-a030-aaaade95b078",
+        "topic_id": "01c16ea4-55b9-4bb2-8d6e-4d092f7def0c",
+        "text": "When was the first formal Shikinen Sengu (20-year rebuilding cycle) of the Inner Shrine (Naiku) at Ise Grand Shrine initiated?",
+        "options": [
+          {
+            "id": "a",
+            "text": "690 CE under Empress Jitō"
+          },
+          {
+            "id": "b",
+            "text": "752 CE under Emperor Shomu"
+          },
+          {
+            "id": "c",
+            "text": "1397 CE under Ashikaga Yoshimitsu"
+          },
+          {
+            "id": "d",
+            "text": "1620 CE during the Edo Period"
+          }
+        ],
+        "correct_option_id": "a",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "b": "752 CE is the date of Todai-ji Temple's Great Buddha, not Ise Shrine's first Shikinen Sengu.",
+          "c": "1397 CE is the date of Kinkaku-ji (Golden Pavilion), not Ise Shrine renewal.",
+          "d": "1620 CE is after the Shikinen Sengu cycle was well established; the cycle began in 690 CE.",
+          "correct": "The article explicitly states the first Inner Shrine renewal was in 690 CE under Empress Jitō, with the Outer Shrine renewal in 692 CE, initiating the Shikinen Sengu cycle.",
+          "takeaway": "The article explicitly states the first Inner Shrine renewal was in 690 CE under Empress Jitō, with the Outer Shrine renewal in 692 CE, initiating the Shikinen Sengu cycle."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "remember",
+        "application_context": "recall",
+        "practice_context": [
+          "CH"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-HIST-007-03-005",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:24.518466+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:d131bb59930153fad973fef2df1fa2dc6542f63da8c9a302dbb6852cae064b25"
+      },
+      "proposed": {
+        "explanation": "752 CE is the date of Todai-ji Temple's Great Buddha, not Ise Shrine's first Shikinen Sengu. 1397 CE is the date of Kinkaku-ji (Golden Pavilion), not Ise Shrine renewal. 1620 CE is after the Shikinen Sengu cycle was well established; the cycle began in 690 CE. The article explicitly states the first Inner Shrine renewal was in 690 CE under Empress Jitō, with the Outer Shrine renewal in 692 CE, initiating the Shikinen Sengu cycle. The article explicitly states the first Inner Shrine renewal was in 690 CE under Empress Jitō, with the Outer Shrine renewal in 692 CE, initiating the Shikinen Sengu cycle."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "d09a4143-2905-43a5-a532-d2070f5dfe37",
+      "article_id": "0f0bee66-7a14-4ab0-a030-aaaade95b078",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-007-03-core-concept--0f0bee66-7a14-4ab0-a030-aaaade95b078",
+      "title": "lea-hist-007-03-core-concept",
+      "baseline_hash": "sha256:4ae4315646f288618ffbb8f222b6c759b1b7a20d7abc03274ba82f5271a162e6",
+      "baseline": {
+        "question_id": "d09a4143-2905-43a5-a532-d2070f5dfe37",
+        "article_id": "0f0bee66-7a14-4ab0-a030-aaaade95b078",
+        "topic_id": "01c16ea4-55b9-4bb2-8d6e-4d092f7def0c",
+        "text": "A Buddhist temple monument features 5 or 7 diminishing floor levels, domed roofs, radiating eaves supported by elaborate wooden brackets, and often houses no relics or statuary—standing as a sculptural monument rather than a functional religious space. This describes which structure type?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Stupa (Buddhist relic dome) with a solid core and circumambulatory path"
+          },
+          {
+            "id": "b",
+            "text": "Shikhara (Hindu temple tower) characterized by its vertical emphasis and ornate carvings"
+          },
+          {
+            "id": "c",
+            "text": "Pagoda (Japanese Buddhist monument)"
+          },
+          {
+            "id": "d",
+            "text": "Gopura (Hindu gateway tower) serving as an entrance to temple complexes"
+          }
+        ],
+        "correct_option_id": "c",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Stupa is a hemispherical dome, not a multi-story tapering tower.",
+          "b": "Shikhara is a Hindu tower, not a Buddhist monument.",
+          "d": "Gopura is a Hindu gateway, not a Buddhist vertical monument.",
+          "correct": "Pagoda is explicitly defined as a vertical Buddhist monument typically 5 or 7 stories with diminishing floor levels, domed roofs, and radiating eaves. Unlike Chinese equivalents, Japanese pagodas often house no relics—they stand as sculptural monuments.",
+          "takeaway": "Unlike Chinese equivalents, Japanese pagodas often house no relics—they stand as sculptural monuments."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "analyze",
+        "application_context": "recall",
+        "practice_context": [
+          "DESC"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-HIST-007-03-009",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:24.518466+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:4ae4315646f288618ffbb8f222b6c759b1b7a20d7abc03274ba82f5271a162e6"
+      },
+      "proposed": {
+        "explanation": "Stupa is a hemispherical dome, not a multi-story tapering tower. Shikhara is a Hindu tower, not a Buddhist monument. Gopura is a Hindu gateway, not a Buddhist vertical monument. Pagoda is explicitly defined as a vertical Buddhist monument typically 5 or 7 stories with diminishing floor levels, domed roofs, and radiating eaves. Unlike Chinese equivalents, Japanese pagodas often house no relics—they stand as sculptural monuments. Unlike Chinese equivalents, Japanese pagodas often house no relics—they stand as sculptural monuments."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "4c9d74a0-304c-4e73-91c9-080c9fe00e07",
+      "article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
+      "article_dir": ".ai/content-audit-export/articles/lea-theo-009-01-core-concept--f97941fb-6e33-4b9b-8c44-f51db68e40c7",
+      "title": "lea-theo-009-01-core-concept",
+      "baseline_hash": "sha256:a270a6bb4323b09892029738fb957f92324571659cb3ee28b66042d4caee24d1",
+      "baseline": {
+        "question_id": "4c9d74a0-304c-4e73-91c9-080c9fe00e07",
+        "article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
+        "topic_id": "5a536cf8-a54d-4413-9748-01c79656ac6e",
+        "text": "In William Peña's Problem Seeking methodology, what is the correct sequence of the first three steps?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Gather facts, establish goals, establish the client"
+          },
+          {
+            "id": "b",
+            "text": "Establish the client, establish goals, gather facts"
+          },
+          {
+            "id": "c",
+            "text": "Gather facts, establish the client, establish goals"
+          },
+          {
+            "id": "d",
+            "text": "Establish goals, establish the client, gather facts"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Facts must follow client and goal identification for structured programming.",
+          "c": "This reverses the critical early steps; gathering facts without first identifying the client and goals leads to unfocused research.",
+          "d": "Establishing goals before identifying all stakeholders may miss important client categories.",
+          "correct": "Peña's five steps are: (1) establish the client, (2) establish goals, (3) gather facts, (4) identify and unify the problem, (5) test the problem. This sequence ensures you understand who you're serving and what they aim to achieve before collecting data.",
+          "takeaway": "This sequence ensures you understand who you're serving and what they aim to achieve before collecting data."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "remember",
+        "application_context": "recall",
+        "practice_context": [
+          "DEF"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-THEO-009-01-002",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:55.809916+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:a270a6bb4323b09892029738fb957f92324571659cb3ee28b66042d4caee24d1"
+      },
+      "proposed": {
+        "explanation": "Facts must follow client and goal identification for structured programming. This reverses the critical early steps; gathering facts without first identifying the client and goals leads to unfocused research. Establishing goals before identifying all stakeholders may miss important client categories. Peña's five steps are: (1) establish the client, (2) establish goals, (3) gather facts, (4) identify and unify the problem, (5) test the problem. This sequence ensures you understand who you're serving and what they aim to achieve before collecting data. This sequence ensures you understand who you're serving and what they aim to achieve before collecting data."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "ceec0691-0c61-415a-a7d8-9e24d0735fbb",
+      "article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
+      "article_dir": ".ai/content-audit-export/articles/lea-theo-009-01-core-concept--f97941fb-6e33-4b9b-8c44-f51db68e40c7",
+      "title": "lea-theo-009-01-core-concept",
+      "baseline_hash": "sha256:40bd486182f80e7eb9e53f3e4e4757363c39a0de81fd1a4438a0225169277438",
+      "baseline": {
+        "question_id": "ceec0691-0c61-415a-a7d8-9e24d0735fbb",
+        "article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
+        "topic_id": "5a536cf8-a54d-4413-9748-01c79656ac6e",
+        "text": "Which of the following best defines architectural programming in relation to design?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The detailed design development phase where architects finalize material specifications, including finishes and fixtures for all spaces"
+          },
+          {
+            "id": "b",
+            "text": "The process of creating conceptual sketches and preliminary design layouts, often involving client feedback and iterative revisions"
+          },
+          {
+            "id": "c",
+            "text": "The systematic investigation phase that documents space, performance, and functional requirements prior to design"
+          },
+          {
+            "id": "d",
+            "text": "The project management phase that oversees construction scheduling and cost control, ensuring adherence to budget and timelines"
+          }
+        ],
+        "correct_option_id": "c",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Material specifications belong to design development, not the programming phase.",
+          "b": "Sketches and preliminary layouts are design activities, which occur after programming is complete.",
+          "d": "Project management and construction oversight are separate professional functions from programming.",
+          "correct": "Programming is explicitly the systematic analysis phase that precedes design. It answers the 'what' and 'why' before design begins answering 'how.'",
+          "takeaway": "It answers the 'what' and 'why' before design begins answering 'how.'."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "remember",
+        "application_context": "recall",
+        "practice_context": [
+          "DEF"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-THEO-009-01-001",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:55.809916+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:40bd486182f80e7eb9e53f3e4e4757363c39a0de81fd1a4438a0225169277438"
+      },
+      "proposed": {
+        "explanation": "Material specifications belong to design development, not the programming phase. Sketches and preliminary layouts are design activities, which occur after programming is complete. Project management and construction oversight are separate professional functions from programming. Programming is explicitly the systematic analysis phase that precedes design. It answers the 'what' and 'why' before design begins answering 'how.' It answers the 'what' and 'why' before design begins answering 'how.'."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "cbbf5a9d-3618-4062-ab13-cfb7c00eb195",
+      "article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
+      "article_dir": ".ai/content-audit-export/articles/lea-theo-009-01-core-concept--f97941fb-6e33-4b9b-8c44-f51db68e40c7",
+      "title": "lea-theo-009-01-core-concept",
+      "baseline_hash": "sha256:a16f9fc66f0e2cf4371d6642e5767a5a0b6ffb8cf486742cf99e7988536c0b78",
+      "baseline": {
+        "question_id": "cbbf5a9d-3618-4062-ab13-cfb7c00eb195",
+        "article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
+        "topic_id": "5a536cf8-a54d-4413-9748-01c79656ac6e",
+        "text": "A school program specifies that a library must accommodate 100 simultaneous users, provide 10,000 book volumes, and integrate collaborative learning spaces. Using standards (15 SF per reader, 0.1 SF per volume), what is minimum NAA, and how should the programmer address the resulting GBA?",
+        "options": [
+          {
+            "id": "a",
+            "text": "NAA = 2,500 SF; programmer applies 0.75 efficiency factor to calculate GBA = 3,333 SF total, ensuring compliance with spatial standards"
+          },
+          {
+            "id": "b",
+            "text": "NAA = 2,500 SF; programmer must determine realistic efficiency for library (0.60–0.70) and verify GBA fits site and school capacity"
+          },
+          {
+            "id": "c",
+            "text": "NAA calculation is unnecessary; library size should be determined by budget constraints, not user counts, which may lead to underutilization"
+          },
+          {
+            "id": "d",
+            "text": "NAA = 1,500 SF; collaborative spaces reduce area requirements despite circulation overhead, allowing for flexible space usage"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "The efficiency factor and resulting GBA are too low for a library's circulation requirements; libraries typically use 0.60–0.70, not 0.75.",
+          "c": "Standards-based programming prevents arbitrary sizing; budget is a constraint applied after the program is developed, not a replacement for it.",
+          "d": "Collaborative spaces don't eliminate circulation needs; the standard already accounts for collaborative function within the SF per reader.",
+          "correct": "NAA = (100 × 15 SF) + (10,000 × 0.1 SF) = 2,500 SF. Libraries require significant circulation, mechanical, and structural space. A 0.60–0.70 efficiency factor produces GBA of 3,571–4,167 SF. The programmer must verify this fits the site, aligns with school program scope, and is financially feasible.",
+          "takeaway": "The programmer must verify this fits the site, aligns with school program scope, and is financially feasible."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "analyze",
+        "application_context": "code_interpretation",
+        "practice_context": [
+          "SYS"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-THEO-009-01-010",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:57.369425+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:a16f9fc66f0e2cf4371d6642e5767a5a0b6ffb8cf486742cf99e7988536c0b78"
+      },
+      "proposed": {
+        "explanation": "The efficiency factor and resulting GBA are too low for a library's circulation requirements; libraries typically use 0.60–0.70, not 0.75. Standards-based programming prevents arbitrary sizing; budget is a constraint applied after the program is developed, not a replacement for it. Collaborative spaces don't eliminate circulation needs; the standard already accounts for collaborative function within the SF per reader. NAA = (100 × 15 SF) + (10,000 × 0.1 SF) = 2,500 SF. Libraries require significant circulation, mechanical, and structural space. A 0.60–0.70 efficiency factor produces GBA of 3,571–4,167 SF. The programmer must verify this fits the site, aligns with school program scope, and is financially feasible. The programmer must verify this fits the site, aligns with school program scope, and is financially feasible."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "de404aeb-a5b5-4609-84f3-a2103e5bb73a",
+      "article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
+      "article_dir": ".ai/content-audit-export/articles/lea-theo-009-01-core-concept--f97941fb-6e33-4b9b-8c44-f51db68e40c7",
+      "title": "lea-theo-009-01-core-concept",
+      "baseline_hash": "sha256:463628e0aa0724c6030daaea7ba19638cd2051409ec7b105dc6312ba9fe9f6a2",
+      "baseline": {
+        "question_id": "de404aeb-a5b5-4609-84f3-a2103e5bb73a",
+        "article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
+        "topic_id": "5a536cf8-a54d-4413-9748-01c79656ac6e",
+        "text": "A developer commissions a program for a mixed-use building but states: 'We want a building that is flexible.' What is the programmer's most appropriate response?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Draft a program without this goal and present alternative flexibility strategies during design, considering potential future uses and adaptability."
+          },
+          {
+            "id": "b",
+            "text": "Accept this as a valid goal and design a building with modular, easily reconfigured spaces, allowing for diverse tenant needs and future changes."
+          },
+          {
+            "id": "c",
+            "text": "Recommend against mixed-use development as it inherently constrains flexibility, due to zoning regulations and specific use requirements."
+          },
+          {
+            "id": "d",
+            "text": "Clarify what 'flexible' means: Does flexibility involve residential unit reconfiguration? Office space subdivision? Commercial tenant fit-out? What timeframe for change?"
+          }
+        ],
+        "correct_option_id": "d",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "The goal should be incorporated into the program, not bypassed; clarity is the programmer's responsibility.",
+          "b": "Accepting vague goals leads to programs that don't constrain design effectively; this abdicates programming responsibility.",
+          "c": "Mixed-use doesn't eliminate flexibility; this dismisses the goal rather than clarifying it.",
+          "correct": "Programming requires testable, specific goals. 'Flexible' is vague. The programmer must determine which spaces must flex, by what mechanism, over what period, and then program accordingly (e.g., 'office floors must accommodate subdivision into 5 units without major structural modification').",
+          "takeaway": "The programmer must determine which spaces must flex, by what mechanism, over what period, and then program accordingly (e.g., 'office floors must accommodate subdivision into 5 units without major structural modification')."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "apply",
+        "application_context": "design_application",
+        "practice_context": [
+          "CMP"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-THEO-009-01-008",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:57.369425+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:463628e0aa0724c6030daaea7ba19638cd2051409ec7b105dc6312ba9fe9f6a2"
+      },
+      "proposed": {
+        "explanation": "The goal should be incorporated into the program, not bypassed; clarity is the programmer's responsibility. Accepting vague goals leads to programs that don't constrain design effectively; this abdicates programming responsibility. Mixed-use doesn't eliminate flexibility; this dismisses the goal rather than clarifying it. Programming requires testable, specific goals. 'Flexible' is vague. The programmer must determine which spaces must flex, by what mechanism, over what period, and then program accordingly (e.g., 'office floors must accommodate subdivision into 5 units without major structural modification'). The programmer must determine which spaces must flex, by what mechanism, over what period, and then program accordingly (e.g., 'office floors must accommodate subdivision into 5 units without major structural modification')."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "ad744e14-166f-4e73-b685-6eb72722cf9e",
+      "article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
+      "article_dir": ".ai/content-audit-export/articles/lea-theo-009-01-core-concept--f97941fb-6e33-4b9b-8c44-f51db68e40c7",
+      "title": "lea-theo-009-01-core-concept",
+      "baseline_hash": "sha256:db4ed134d7a7c4b28d61e9c3e4e6577ed830b8fd2c9ac772cee3fd864a11a7bb",
+      "baseline": {
+        "question_id": "ad744e14-166f-4e73-b685-6eb72722cf9e",
+        "article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
+        "topic_id": "5a536cf8-a54d-4413-9748-01c79656ac6e",
+        "text": "In Step 5 of Problem Seeking (Test the Problem), a programmer simulates patient flow through a proposed hospital clinic program and discovers that nursing stations cannot effectively supervise all patient waiting areas from their current positions. What does this reveal?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Additional staff or technology is required to execute the program; nothing in the program itself needs change"
+          },
+          {
+            "id": "b",
+            "text": "The program is incomplete or inaccurate; the adjacency relationships or space layouts require revision"
+          },
+          {
+            "id": "c",
+            "text": "The simulation method is inappropriate for healthcare; testing should rely on historical data instead"
+          },
+          {
+            "id": "d",
+            "text": "The design is flawed; testing confirms the program cannot be implemented as conceived"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "If supervision is a functional requirement, it belongs in the program as a spatial relationship; adding staff isn't a program solution.",
+          "c": "Simulation testing is specifically recommended by Peña; this method is entirely appropriate.",
+          "d": "Testing happens before design, so it doesn't confirm design flaws; it confirms program adequacy.",
+          "correct": "Testing reveals that programmed relationships don't support intended operations. Either nursing stations must be repositioned/resized, waiting areas need reconfiguration, or adjacency relationships must be reassessed. The program is incomplete until this is resolved.",
+          "takeaway": "The program is incomplete until this is resolved."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "analyze",
+        "application_context": "code_interpretation",
+        "practice_context": [
+          "INT"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-THEO-009-01-009",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:57.369425+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:db4ed134d7a7c4b28d61e9c3e4e6577ed830b8fd2c9ac772cee3fd864a11a7bb"
+      },
+      "proposed": {
+        "explanation": "If supervision is a functional requirement, it belongs in the program as a spatial relationship; adding staff isn't a program solution. Simulation testing is specifically recommended by Peña; this method is entirely appropriate. Testing happens before design, so it doesn't confirm design flaws; it confirms program adequacy. Testing reveals that programmed relationships don't support intended operations. Either nursing stations must be repositioned/resized, waiting areas need reconfiguration, or adjacency relationships must be reassessed. The program is incomplete until this is resolved. The program is incomplete until this is resolved."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "dede4a4a-1ed5-431c-9374-cac9e5312de4",
+      "article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
+      "article_dir": ".ai/content-audit-export/articles/lea-theo-009-01-core-concept--f97941fb-6e33-4b9b-8c44-f51db68e40c7",
+      "title": "lea-theo-009-01-core-concept",
+      "baseline_hash": "sha256:ae916237d41993634451fb4c49a73a1dd6222f74edf878894cb8e76bce2eb3bd",
+      "baseline": {
+        "question_id": "dede4a4a-1ed5-431c-9374-cac9e5312de4",
+        "article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
+        "topic_id": "5a536cf8-a54d-4413-9748-01c79656ac6e",
+        "text": "During a programming interview for a new law firm office, a senior partner mentions that attorneys currently spend significant time retrieving files from the central storage. Which information-gathering category does this observation address?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Relationships — which functions must be adjacent or separated"
+          },
+          {
+            "id": "b",
+            "text": "Physical — site characteristics and infrastructure capacity"
+          },
+          {
+            "id": "c",
+            "text": "Human — demographic and psychological needs of occupants"
+          },
+          {
+            "id": "d",
+            "text": "Activity — what tasks occur, frequency, and duration"
+          }
+        ],
+        "correct_option_id": "a",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "b": "Physical site conditions are not what this observation addresses; it's about internal functional organization.",
+          "c": "This addresses user behavior but doesn't directly reveal relationship requirements.",
+          "d": "While file retrieval is an activity, the key issue is the spatial relationship between activity locations.",
+          "correct": "This observation reveals a functional relationship problem: attorney offices and file storage need better adjacency. The comment identifies which functions should be proximate to reduce walking distance and improve workflow.",
+          "takeaway": "The comment identifies which functions should be proximate to reduce walking distance and improve workflow."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "apply",
+        "application_context": "design_application",
+        "practice_context": [
+          "APP"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-THEO-009-01-005",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:57.369425+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:ae916237d41993634451fb4c49a73a1dd6222f74edf878894cb8e76bce2eb3bd"
+      },
+      "proposed": {
+        "explanation": "Physical site conditions are not what this observation addresses; it's about internal functional organization. This addresses user behavior but doesn't directly reveal relationship requirements. While file retrieval is an activity, the key issue is the spatial relationship between activity locations. This observation reveals a functional relationship problem: attorney offices and file storage need better adjacency. The comment identifies which functions should be proximate to reduce walking distance and improve workflow. The comment identifies which functions should be proximate to reduce walking distance and improve workflow."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "be4d29c4-ef64-4a82-a073-7fa2292d2a23",
+      "article_id": "48580f1e-3497-48f9-a87e-0f67c6e476b6",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-002-02-core-concept--48580f1e-3497-48f9-a87e-0f67c6e476b6",
+      "title": "lea-hist-002-02-core-concept",
+      "baseline_hash": "sha256:8f0ed56a0b4f3a31f9f29e9df37883e8fb92ef3b69d778f5b64976518201ebe7",
+      "baseline": {
+        "question_id": "be4d29c4-ef64-4a82-a073-7fa2292d2a23",
+        "article_id": "48580f1e-3497-48f9-a87e-0f67c6e476b6",
+        "topic_id": "37219652-074c-4aef-af93-83af5661dd73",
+        "text": "A cathedral features a consistently vaulted interior with groin vaults replacing wooden ceilings, representing the first European example of this construction method. It was founded in 1030 but substantially rebuilt from 1090–1103. Which cathedral is being described?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Durham Cathedral"
+          },
+          {
+            "id": "b",
+            "text": "Cluny III Abbey Church"
+          },
+          {
+            "id": "c",
+            "text": "Santiago de Compostela"
+          },
+          {
+            "id": "d",
+            "text": "Speyer Cathedral"
+          }
+        ],
+        "correct_option_id": "d",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Durham Cathedral (begun 1093) features ribbed vaults, not groin vaults as the primary system.",
+          "b": "Cluny III was begun 1088 but not described as the first consistently vaulted church.",
+          "c": "Santiago de Compostela (begun 1075) features a barrel vault nave, not the 'first consistently vaulted' system.",
+          "correct": "Speyer Cathedral was founded by Conrad II in 1030 and 'rebuilt 1090–1103' by Henry IV. It features 'massive groin vault replacing wooden ceiling' and is the 'first consistently vaulted church in Europe.'",
+          "takeaway": "It features 'massive groin vault replacing wooden ceiling' and is the 'first consistently vaulted church in Europe.'."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "apply",
+        "application_context": "recall",
+        "practice_context": [
+          "DESC"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-HIST-002-02-008",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:24.95449+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:8f0ed56a0b4f3a31f9f29e9df37883e8fb92ef3b69d778f5b64976518201ebe7"
+      },
+      "proposed": {
+        "explanation": "Durham Cathedral (begun 1093) features ribbed vaults, not groin vaults as the primary system. Cluny III was begun 1088 but not described as the first consistently vaulted church. Santiago de Compostela (begun 1075) features a barrel vault nave, not the 'first consistently vaulted' system. Speyer Cathedral was founded by Conrad II in 1030 and 'rebuilt 1090–1103' by Henry IV. It features 'massive groin vault replacing wooden ceiling' and is the 'first consistently vaulted church in Europe.' It features 'massive groin vault replacing wooden ceiling' and is the 'first consistently vaulted church in Europe.'."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "60d02528-8c63-4dff-97c1-0ad177214339",
+      "article_id": "48580f1e-3497-48f9-a87e-0f67c6e476b6",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-002-02-core-concept--48580f1e-3497-48f9-a87e-0f67c6e476b6",
+      "title": "lea-hist-002-02-core-concept",
+      "baseline_hash": "sha256:abe61ac9e11223b5bbfc32b32bfd98ea86a98c8f51b6623c17a8d8725bb734d1",
+      "baseline": {
+        "question_id": "60d02528-8c63-4dff-97c1-0ad177214339",
+        "article_id": "48580f1e-3497-48f9-a87e-0f67c6e476b6",
+        "topic_id": "37219652-074c-4aef-af93-83af5661dd73",
+        "text": "Which Romanesque cathedral in Germany, rebuilt by Henry IV from 1090–1103, is credited as the first consistently vaulted church in Europe?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Cologne Cathedral"
+          },
+          {
+            "id": "b",
+            "text": "Durham Cathedral"
+          },
+          {
+            "id": "c",
+            "text": "Speyer Cathedral"
+          },
+          {
+            "id": "d",
+            "text": "Worms Cathedral"
+          }
+        ],
+        "correct_option_id": "c",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Cologne Cathedral is Gothic, not Romanesque.",
+          "b": "Durham Cathedral (begun 1093) features ribbed vaults but is not identified as the first consistently vaulted church.",
+          "d": "Worms Cathedral is not discussed in this article.",
+          "correct": "Speyer Cathedral, founded by Conrad II but rebuilt by Henry IV (1090–1103), features 'massive groin vault replacing wooden ceiling' and is identified as the 'first consistently vaulted church in Europe.'",
+          "takeaway": "Speyer Cathedral, founded by Conrad II but rebuilt by Henry IV (1090–1103), features 'massive groin vault replacing wooden ceiling' and is identified as the 'first consistently vaulted church in Europe.'."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "remember",
+        "application_context": "recall",
+        "practice_context": [
+          "ID"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-HIST-002-02-002",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:24.95449+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:abe61ac9e11223b5bbfc32b32bfd98ea86a98c8f51b6623c17a8d8725bb734d1"
+      },
+      "proposed": {
+        "explanation": "Cologne Cathedral is Gothic, not Romanesque. Durham Cathedral (begun 1093) features ribbed vaults but is not identified as the first consistently vaulted church. Worms Cathedral is not discussed in this article. Speyer Cathedral, founded by Conrad II but rebuilt by Henry IV (1090–1103), features 'massive groin vault replacing wooden ceiling' and is identified as the 'first consistently vaulted church in Europe.' Speyer Cathedral, founded by Conrad II but rebuilt by Henry IV (1090–1103), features 'massive groin vault replacing wooden ceiling' and is identified as the 'first consistently vaulted church in Europe.'."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "540bba57-9c1a-4283-aa46-ab48205df18a",
+      "article_id": "48580f1e-3497-48f9-a87e-0f67c6e476b6",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-002-02-core-concept--48580f1e-3497-48f9-a87e-0f67c6e476b6",
+      "title": "lea-hist-002-02-core-concept",
+      "baseline_hash": "sha256:2a9661179983e6e219585e073ad1a4102c931d36731fbe87079c29544a7017c5",
+      "baseline": {
+        "question_id": "540bba57-9c1a-4283-aa46-ab48205df18a",
+        "article_id": "48580f1e-3497-48f9-a87e-0f67c6e476b6",
+        "topic_id": "37219652-074c-4aef-af93-83af5661dd73",
+        "text": "During which century did Romanesque architecture flourish in Western Europe?",
+        "options": [
+          {
+            "id": "a",
+            "text": "9th–10th centuries"
+          },
+          {
+            "id": "b",
+            "text": "10th–11th centuries"
+          },
+          {
+            "id": "c",
+            "text": "11th–12th centuries"
+          },
+          {
+            "id": "d",
+            "text": "12th–13th centuries"
+          }
+        ],
+        "correct_option_id": "c",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "The 9th–10th centuries precede the Romanesque period.",
+          "b": "The 10th–11th centuries include only the beginning of Romanesque.",
+          "d": "The 12th–13th centuries include the end of Romanesque and beginning of Gothic.",
+          "correct": "The article clearly states: 'Romanesque architecture (11th–12th centuries) emerged in Western Europe as builders learned to construct massive stone vaults and arches.'",
+          "takeaway": "The article clearly states: 'Romanesque architecture (11th–12th centuries) emerged in Western Europe as builders learned to construct massive stone vaults and arches.'."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "remember",
+        "application_context": "recall",
+        "practice_context": [
+          "CH"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-HIST-002-02-005",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:24.95449+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:2a9661179983e6e219585e073ad1a4102c931d36731fbe87079c29544a7017c5"
+      },
+      "proposed": {
+        "explanation": "The 9th–10th centuries precede the Romanesque period. The 10th–11th centuries include only the beginning of Romanesque. The 12th–13th centuries include the end of Romanesque and beginning of Gothic. The article clearly states: 'Romanesque architecture (11th–12th centuries) emerged in Western Europe as builders learned to construct massive stone vaults and arches.' The article clearly states: 'Romanesque architecture (11th–12th centuries) emerged in Western Europe as builders learned to construct massive stone vaults and arches.'."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    }
+  ]
+}
