@@ -2,12 +2,12 @@
 
 Selector: strict-v3-item-level-official-source
 
-- already_published_or_quarantined: 1284
-- item_level_official_source_gap: 2558
-- generic_meta_distractor_leakage: 1012
-- existing_meaningful_explanation: 1390
-- insufficient_linked_article_support: 72
-- option_length_giveaway_risk: 193
+- already_published_or_quarantined: 1335
+- item_level_official_source_gap: 2716
+- generic_meta_distractor_leakage: 1080
+- existing_meaningful_explanation: 1460
+- insufficient_linked_article_support: 74
+- option_length_giveaway_risk: 210
 - near_duplicate_option_ambiguity: 14
 - duplicate_option_text: 4
 - correct_answer_not_in_options: 1

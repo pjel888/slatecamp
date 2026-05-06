@@ -1,0 +1,10 @@
+{
+  "question_id": "cc29799c-e70f-4e78-b92d-7bf467fdcbe3",
+  "baseline_hash": "sha256:6095afe7b01eeb2aaea9b125f5f344eb6dcb1a5288217a6d411326e29a07136e",
+  "reason": "Strict explanation backfill from existing specific rationale; answer key and options unchanged.",
+  "approved_by": "hermes-question-remediation-autopilot",
+  "approved_at": "2026-05-06T16:21:38.793Z",
+  "proposed": {
+    "explanation": "3 dB is half the increase; incorrect. 12 dB is double the increase; overstates relationship. Mass increase always improves isolation; frequency response becomes less important at higher mass. Mass law: every doubling of mass increases sound isolation by approximately 6 dB. A 100 kg/m² wall at STC 40 becomes approximately STC 46 when mass is doubled to 200 kg/m². Mass law: +6 dB per doubling of mass. For high STC ratings (70+), mass alone is insufficient; damping (decoupling, absorptive fill) is required."
+  }
+}

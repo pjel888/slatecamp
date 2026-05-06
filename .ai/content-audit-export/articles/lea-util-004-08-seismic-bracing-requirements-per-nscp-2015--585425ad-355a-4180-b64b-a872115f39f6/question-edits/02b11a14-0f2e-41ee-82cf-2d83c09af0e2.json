@@ -1,0 +1,10 @@
+{
+  "question_id": "02b11a14-0f2e-41ee-82cf-2d83c09af0e2",
+  "baseline_hash": "sha256:e00af772a2983efd9e66ec264add9ea4bcebef06b0a1a76261b7a673044e18bb",
+  "reason": "Strict explanation backfill from existing specific rationale; answer key and options unchanged.",
+  "approved_by": "hermes-question-remediation-autopilot",
+  "approved_at": "2026-05-06T16:21:38.791Z",
+  "proposed": {
+    "explanation": "This describes the principle incorrectly; it is the inertial mass of the ball itself (not the valve body vibration) that tips the sensor during lateral acceleration. Pressure‑change detection would cause false activations during normal pressure surges (pump startup, thermal expansion). Inertial valves activate ONLY during seismic acceleration, not pressure transients. Electronic shutoff valves exist (solenoid type) but require 24 VDC backup power and are more expensive (PHP 15,000–25,000); inertial valves are passive mechanical and preferred where power reliability is uncertain. The inertial shutoff principle: during lateral earthquake acceleration >0.5g, the heavy ball sensor (mounted on a pivot) tips due to its own inertia and gravity. The ball's momentum overcomes static friction and causes it to roll, blocking the ball valve seat and stopping gas flow within 1 second. This mechanism requires NO external power, batteries, or electronic components—only mechanical design and the physics of inertial mass. Cost: PHP 8,000–15,000 per valve; high reliability in seismic zones. Inertial seismic gas shutoff valves use passive mechanical design (heavy ball + pivot) to activate without external power. Activation threshold: >0.5g lateral acceleration; response time: <1 second."
+  }
+}
