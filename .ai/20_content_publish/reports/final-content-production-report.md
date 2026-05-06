@@ -116,3 +116,18 @@ Status: PUBLISHED_VERIFIED.
 - Backup: `.ai/20_content_publish/backups/questions-backup-question-batch-014-20260506T131952Z.json`.
 
 Next exact step after commit/push: `bun scripts/content-audit/select-question-remediation-batch.ts question-batch-015 50`.
+
+## Question Batch 015 Published — 2026-05-06T13:22:46.253251+00:00
+
+Status: PUBLISHED_VERIFIED.
+
+- Selected: 50.
+- Local verifier: 50/50 pass.
+- Independent safety review: PASS, blockers none.
+- Remote apply: 50/50 by exact question_id filter.
+- Remote verification: 50/50.
+- Answer-key changes: 0.
+- Option changes: 0.
+- Backup: `.ai/20_content_publish/backups/questions-backup-question-batch-015-20260506T132205Z.json`.
+
+Next exact step after commit/push: `bun scripts/content-audit/select-question-remediation-batch.ts question-batch-016 50`.

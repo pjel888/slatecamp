@@ -1,0 +1,2523 @@
+{
+  "created_at": "2026-05-06T13:22:15.090Z",
+  "batch": "question-batch-015",
+  "table": "questions",
+  "rows": [
+    {
+      "question_id": "05025f7d-a8a9-4e76-b123-3ec0b37b551a",
+      "article_id": "8769440f-0b98-49dd-b98b-a3b9be486892",
+      "topic_id": "f604884b-6e67-4d5d-827b-dbb3df0436ef",
+      "text": "The Bauhaus was founded in which year and location?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1917 in Berlin"
+        },
+        {
+          "id": "b",
+          "text": "1919 in Weimar"
+        },
+        {
+          "id": "c",
+          "text": "1920 in Munich"
+        },
+        {
+          "id": "d",
+          "text": "1925 in Dessau"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "1917 and Berlin are incorrect.",
+        "c": "1920 and Munich are incorrect.",
+        "d": "1925 was when it relocated to Dessau; the founding was 1919 in Weimar.",
+        "correct": "The Bauhaus was founded in 1919 in Weimar, Germany by Walter Gropius in response to post-WWI cultural crisis.",
+        "takeaway": "The Bauhaus was founded in 1919 in Weimar, Germany by Walter Gropius in response to post-WWI cultural crisis."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "CH"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-008-04A-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.729652+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "e8f939d9-e45d-493e-9da7-14732d79fb1a",
+      "article_id": "8769440f-0b98-49dd-b98b-a3b9be486892",
+      "topic_id": "f604884b-6e67-4d5d-827b-dbb3df0436ef",
+      "text": "Which artist-teacher at the Bauhaus explored photography, film, and light design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Paul Klee, known for his paintings and theoretical writings"
+        },
+        {
+          "id": "b",
+          "text": "Wassily Kandinsky, recognized for his abstract art and color theory"
+        },
+        {
+          "id": "c",
+          "text": "László Moholy-Nagy"
+        },
+        {
+          "id": "d",
+          "text": "Oskar Schlemmer, famous for his work in theater and dance"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Paul Klee taught form and color.",
+        "b": "Wassily Kandinsky taught abstraction.",
+        "d": "Oskar Schlemmer directed the theater workshop.",
+        "correct": "László Moholy-Nagy pioneered photography, film, and light exploration at the Bauhaus, expanding the school's scope into new media and technologies.",
+        "takeaway": "László Moholy-Nagy pioneered photography, film, and light exploration at the Bauhaus, expanding the school's scope into new media and technologies."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "ID"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-008-04A-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.729652+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "ed47c3db-49d3-4bdc-8326-a1902256325f",
+      "article_id": "8769440f-0b98-49dd-b98b-a3b9be486892",
+      "topic_id": "f604884b-6e67-4d5d-827b-dbb3df0436ef",
+      "text": "The Nazi closure of the Bauhaus in 1933 is sometimes treated as the school's failure. Why is this view incomplete?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The school had already accomplished its mission and would have closed anyway, as its influence was already widespread"
+        },
+        {
+          "id": "b",
+          "text": "The closure was political oppression, not design failure; the true legacy is that dispersed faculty spread Bauhaus principles globally"
+        },
+        {
+          "id": "c",
+          "text": "The Bauhaus was succeeded by the International Style, which superseded it, continuing its design philosophy"
+        },
+        {
+          "id": "d",
+          "text": "Nazi closure actually enhanced the school's reputation after World War II, as it became a symbol of resistance"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The school's closure was forced, not voluntary.",
+        "c": "The International Style was influenced by Bauhaus, not a replacement.",
+        "d": "The school's reputation was enhanced, but this oversimplifies the complex legacy.",
+        "correct": "The closure was political, not philosophical failure. Faculty emigrated and influenced design education and practice worldwide—Chicago, America, globally. The dispersion was the school's greatest triumph.",
+        "takeaway": "The dispersion was the school's greatest triumph."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-008-04A-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.729652+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "0ad15e7c-fd47-4d24-8c6f-0e7472bf5c5f",
+      "article_id": "8769440f-0b98-49dd-b98b-a3b9be486892",
+      "topic_id": "f604884b-6e67-4d5d-827b-dbb3df0436ef",
+      "text": "In what year was the Bauhaus forced to close by the Nazi regime?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1928"
+        },
+        {
+          "id": "b",
+          "text": "1930"
+        },
+        {
+          "id": "c",
+          "text": "1933"
+        },
+        {
+          "id": "d",
+          "text": "1938"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "1928 was when Gropius stepped down; the school continued.",
+        "b": "1930 was when Mies became director; the school continued.",
+        "d": "1938 is after the closure.",
+        "correct": "The Bauhaus was closed in 1933 by the Nazi regime, which viewed its modernism, internationalism, and Jewish faculty as threats.",
+        "takeaway": "The Bauhaus was closed in 1933 by the Nazi regime, which viewed its modernism, internationalism, and Jewish faculty as threats."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "CH"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-008-04A-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.729652+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "3e1828ce-3cb4-4bc4-8112-2cef94c562f9",
+      "article_id": "8769440f-0b98-49dd-b98b-a3b9be486892",
+      "topic_id": "f604884b-6e67-4d5d-827b-dbb3df0436ef",
+      "text": "Which of these principles most directly reflects the Bauhaus's foundational philosophy?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ornament is essential to high-quality architecture, as it adds character and individuality to each design"
+        },
+        {
+          "id": "b",
+          "text": "All visual arts should converge toward architecture as their highest synthesis through unified design principles"
+        },
+        {
+          "id": "c",
+          "text": "Historical tradition should guide all design decisions, ensuring continuity and respect for past achievements"
+        },
+        {
+          "id": "d",
+          "text": "Industrial production is fundamentally incompatible with artistic quality, leading to a loss of craftsmanship and uniqueness"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Bauhaus rejected unnecessary ornament.",
+        "c": "Bauhaus rejected tradition in favor of principles.",
+        "d": "Bauhaus proved the opposite: industry and art can unite.",
+        "correct": "Gropius's declaration ('The ultimate aim of all visual arts is the complete building') captures the Bauhaus philosophy: total design integration across all disciplines unified by shared principles.",
+        "takeaway": "Gropius's declaration ('The ultimate aim of all visual arts is the complete building') captures the Bauhaus philosophy: total design integration across all disciplines unified by shared principles."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-008-04A-012",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.729652+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "3d532852-78fd-453f-9b6b-0658504031ec",
+      "article_id": "595e3cd9-150f-44f6-8378-d2125cd7233a",
+      "topic_id": "fefe5482-86e2-42f8-a219-ecfe40ac4b0f",
+      "text": "Which paint system is most appropriate for a high-humidity bathroom in Metro Manila where mold growth is a risk?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) Standard latex paint without primer, which may not provide adequate protection against moisture and mold."
+        },
+        {
+          "id": "b",
+          "text": "B) Wallpaper with standard adhesive, which is not recommended due to potential moisture retention and mold growth."
+        },
+        {
+          "id": "c",
+          "text": "C) Latex or enamel with fungicide-treated primer (e.g., Boysen formulations)"
+        },
+        {
+          "id": "d",
+          "text": "D) Unprimed enamel topcoat only, which lacks the necessary mold-resistant properties for high-humidity environments."
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Unprimed latex allows moisture absorption and mold on substrate.",
+        "b": "Wallpaper without fungicide base primer is unsuitable for high humidity.",
+        "d": "Unprimed enamel offers no substrate seal or mold protection.",
+        "correct": "High-humidity bathrooms require fungicide-treated primer to prevent mold and mildew on the drywall substrate. Boysen and Davies offer fungicide-rich primers designed for tropical climates. Latex topcoat over fungicide primer provides durable, mold-resistant finish.",
+        "takeaway": "High-humidity zones = fungicide primer + paint topcoat. Never skip primer. Boysen, Davies have proven fungicide formulations."
+      },
+      "explanation": null,
+      "code_citation": "Philippine paint brands (Boysen, Davies); humidity management practice",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-02-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "f6f38d2c-0a92-46a1-87e6-afd1f273a3ac",
+      "article_id": "595e3cd9-150f-44f6-8378-d2125cd7233a",
+      "topic_id": "fefe5482-86e2-42f8-a219-ecfe40ac4b0f",
+      "text": "What sandpaper grit is required for drywall surface preparation prior to painting per ASTM D3276?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) 80-120 grit, typically used for initial smoothing of rough surfaces before finer grits are applied"
+        },
+        {
+          "id": "b",
+          "text": "B) 120-180 grit, which is often recommended for intermediate sanding to remove minor imperfections"
+        },
+        {
+          "id": "c",
+          "text": "C) 220 grit or higher"
+        },
+        {
+          "id": "d",
+          "text": "D) 320 grit or higher, generally reserved for final finishing to achieve a very smooth surface"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "80-120 grit leaves surface too coarse and leaves dust; fails D3276.",
+        "b": "120-180 grit is insufficient; adhesion issues arise.",
+        "d": "320 grit or higher is excessive for drywall; 220 is standard.",
+        "correct": "Drywall manufacturers (USG, National Gypsum) recommend 220-grit minimum for paint prep per industry practice. to ensure adequate surface roughness for paint adhesion and to remove contaminants.",
+        "takeaway": "Always 220-grit minimum. Wipe dust-free after sanding. Coarse grit = poor adhesion = future delamination."
+      },
+      "explanation": null,
+      "code_citation": "ASTM D3276 Standard Practice for Paint Testing",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-02-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "79a048fe-1a14-4567-9dcb-593fe8c52e7c",
+      "article_id": "595e3cd9-150f-44f6-8378-d2125cd7233a",
+      "topic_id": "fefe5482-86e2-42f8-a219-ecfe40ac4b0f",
+      "text": "What is the typical dry film thickness (DFT) range for a paint primer according to ASTM standards?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) 10-30µm"
+        },
+        {
+          "id": "b",
+          "text": "B) 30-50µm"
+        },
+        {
+          "id": "c",
+          "text": "C) 75-150µm"
+        },
+        {
+          "id": "d",
+          "text": "D) 200-300µm"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "10-30µm is too thin; primer would not adequately seal substrate.",
+        "c": "75-150µm is the topcoat range, not primer.",
+        "d": "200-300µm exceeds both primer and topcoat requirements.",
+        "correct": "Typical primer DFT is 25-50µm per manufacturer specifications and industry practice (not specified in ASTM D3359). This seals the substrate and promotes topcoat adhesion.",
+        "takeaway": "Primer 30-50µm; topcoat 75-150µm. Measure with wet-film thickness gauge during application."
+      },
+      "explanation": null,
+      "code_citation": "ASTM D3359 Test Methods for Measuring Adhesion by Tape",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-02-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "12d32db4-e405-47cf-9939-ca441eea46a0",
+      "article_id": "595e3cd9-150f-44f6-8378-d2125cd7233a",
+      "topic_id": "fefe5482-86e2-42f8-a219-ecfe40ac4b0f",
+      "text": "A specification calls for Hardiflex fiber cement board in a bathroom wall subject to high moisture. What is a key advantage over gypsum drywall?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) Lower cost, though it may not offer the same level of moisture resistance"
+        },
+        {
+          "id": "b",
+          "text": "B) Easier to cut and install, which can reduce labor costs and installation time"
+        },
+        {
+          "id": "c",
+          "text": "C) Mold resistance and moisture immunity per specifications like MoldBlock Technology"
+        },
+        {
+          "id": "d",
+          "text": "D) Superior paint adhesion, allowing for a more durable and aesthetically pleasing finish"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Hardiflex costs 20-30% more than drywall; not cheaper.",
+        "b": "Fiber cement is harder to cut than drywall; requires saws.",
+        "d": "Paint adhesion is similar; the substrate durability is the advantage.",
+        "correct": "Hardiflex (fiber cement) resists water, mold, and termites, unlike gypsum. HardiFlex NexGen with MoldBlock Technology is specifically engineered for moist environments. Gypsum absorbs moisture and deteriorates, requiring replacement.",
+        "takeaway": "High-moisture zones (kitchens, bathrooms, flood-prone areas) = Hardiflex. Gypsum will fail; Hardiflex survives."
+      },
+      "explanation": null,
+      "code_citation": "James Hardie Philippines product literature; fiber cement properties",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-02-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "766af87c-5846-4db9-903d-fb8aea71a759",
+      "article_id": "595e3cd9-150f-44f6-8378-d2125cd7233a",
+      "topic_id": "fefe5482-86e2-42f8-a219-ecfe40ac4b0f",
+      "text": "Why is it critical to maintain application conditions per ASTM D3276 (10°C minimum, <50% RH, no rain) during paint application?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) To ensure the painter's comfort, which indirectly affects the quality of work performed."
+        },
+        {
+          "id": "b",
+          "text": "B) To achieve proper curing and prevent moisture entrapment during film formation"
+        },
+        {
+          "id": "c",
+          "text": "C) To reduce paint consumption per project, thereby lowering overall costs."
+        },
+        {
+          "id": "d",
+          "text": "D) To allow faster drying so recoats can be applied sooner, minimizing project delays."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Painter comfort is not relevant to coating performance.",
+        "c": "Faster drying does not ensure proper chemical cure; conditions matter more.",
+        "d": "Paint consumption is unaffected by application conditions.",
+        "correct": "ASTM D3276 conditions optimize curing kinetics. Low temperature (<10°C) slows evaporation, trapping moisture in the film. High RH (>50%) and rain introduce moisture into the forming film, causing blistering, delamination, and adhesion loss.",
+        "takeaway": "Poor conditions (high humidity, low temperature, rain) cause future failures. Delaying work is cheaper than repainting."
+      },
+      "explanation": null,
+      "code_citation": "ASTM D3276 Standard Practice for Paint Testing",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-02-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "a4b0ab65-2c30-4876-998d-adae88195d11",
+      "article_id": "595e3cd9-150f-44f6-8378-d2125cd7233a",
+      "topic_id": "fefe5482-86e2-42f8-a219-ecfe40ac4b0f",
+      "text": "According to ASTM D3359, what adhesion rating on the 0-5 sclea is the minimum acceptable for interior wall paint?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) 0 (complete adhesion)"
+        },
+        {
+          "id": "b",
+          "text": "B) 2 (5-15% adhesion loss)"
+        },
+        {
+          "id": "c",
+          "text": "C) 3 (5-15% adhesion loss)"
+        },
+        {
+          "id": "d",
+          "text": "D) 5 (complete adhesion loss)"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "0 is perfect adhesion (no loss); not the minimum, the ideal.",
+        "b": "2 indicates 15-35% loss (ASTM D3359 classification), unacceptable per typical specifications.",
+        "d": "5 is complete failure; rejected.",
+        "correct": "ASTM D3359 defines rating 3 as 5-15% adhesion loss (moderate flaking). Rating 4 (<5% loss) is superior, but many specifications accept rating 3 as the minimum for interior walls. Ratings 0, 1, and 2 indicate higher loss and are generally rejected. Always refer to project-specific requirements.",
+        "takeaway": "Spec minimum often rating 3 (5-15% loss). Rating 4 or better is preferred. Verify project requirements."
+      },
+      "explanation": null,
+      "code_citation": "ASTM D3359 Standard Test Methods",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-02-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "d85fed8d-2823-4d9a-84fb-0b3425119438",
+      "article_id": "30832ba5-fbe9-4047-871a-aa4cb63ac616",
+      "topic_id": "84d48373-ecab-4dfb-bb9e-2eb00600c547",
+      "text": "In the standard five-phase architectural process, when do structural engineers and mechanical engineers typically join the design team?",
+      "options": [
+        {
+          "id": "a",
+          "text": "From the very beginning of Schematic Design to ensure structural feasibility from the start"
+        },
+        {
+          "id": "b",
+          "text": "During Design Development, after the architect has established the schematic design direction"
+        },
+        {
+          "id": "c",
+          "text": "During Bidding and Negotiation, when constructability reviews are required"
+        },
+        {
+          "id": "d",
+          "text": "During Construction Documents, when detailed technical calculations become necessary"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Early involvement of all consultants is not standard practice; it increases cost without proportional benefit if design direction is still being established.",
+        "c": "Bidding occurs after Design Development and Construction Documents; consultants are already involved by then.",
+        "d": "They may have detailed calculations then, but they join before—during Design Development—to inform system selection and feasibility.",
+        "correct": "Consultants typically join during Design Development, once the architect has established design direction. This sequential approach saves time and cost by developing systems that support (rather than constrain) the approved concept.",
+        "takeaway": "This sequential approach saves time and cost by developing systems that support (rather than constrain) the approved concept."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "SYS"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-001-07-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.120988+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "f1e05489-1362-4f4d-9f94-a40f15284030",
+      "article_id": "30832ba5-fbe9-4047-871a-aa4cb63ac616",
+      "topic_id": "84d48373-ecab-4dfb-bb9e-2eb00600c547",
+      "text": "How do the roles of design phases differ from procurement phases in the overall architectural process?",
+      "options": [
+        {
+          "id": "a",
+          "text": "All phases are equally focused on design refinement; there is no distinction between design and procurement, which means that both processes are integrated seamlessly"
+        },
+        {
+          "id": "b",
+          "text": "The distinction is not meaningful; architects are equally involved in all phases, suggesting that their role does not change regardless of the phase"
+        },
+        {
+          "id": "c",
+          "text": "Procurement phases occur during schematic design to ensure budgets are feasible, which allows for early financial planning and adjustments"
+        },
+        {
+          "id": "d",
+          "text": "Design phases focus on creating the design; the Bidding phase is a procurement phase where contractors are selected based on a completed design"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Bidding is not a design phase; the design is complete before bidding occurs.",
+        "b": "The architect's role shifts substantially from design to management/verification across phases.",
+        "c": "Cost estimates occur during Design Development; bidding uses complete Construction Documents.",
+        "correct": "Schematic, Design Development, and Construction Documents are design phases where the architect creates and refines the design. Bidding/Negotiation is a procurement phase where the design is complete and contractors are selected based on competitive offers.",
+        "takeaway": "Bidding/Negotiation is a procurement phase where the design is complete and contractors are selected based on competitive offers."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-001-07-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.120988+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "f598fb46-3577-48b0-b30f-066138a6bfca",
+      "article_id": "30832ba5-fbe9-4047-871a-aa4cb63ac616",
+      "topic_id": "84d48373-ecab-4dfb-bb9e-2eb00600c547",
+      "text": "What is the primary role of the architect during the Construction Administration phase?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To manage the construction site and supervise the contractor's daily work activities, ensuring all tasks align with project goals"
+        },
+        {
+          "id": "b",
+          "text": "To make regular site visits, review contractor submissions, verify compliance with drawings, interpret design intent, and certify payment requests"
+        },
+        {
+          "id": "c",
+          "text": "To make structural and material changes as field conditions differ from expectations, adapting the design as necessary"
+        },
+        {
+          "id": "d",
+          "text": "To coordinate schedules and manage the contractor's equipment and personnel, ensuring efficient resource allocation"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The contractor manages the site; the architect verifies compliance and quality.",
+        "c": "Changes are processed formally through change orders, not at the architect's discretion.",
+        "d": "Schedule and equipment management are contractor responsibilities.",
+        "correct": "The architect verifies that work complies with Construction Documents and maintains design integrity. The architect does not physically manage the site (that is the contractor's responsibility) but ensures design intent is realized.",
+        "takeaway": "The architect does not physically manage the site (that is the contractor's responsibility) but ensures design intent is realized."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-001-07-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.120988+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "f6dcf17d-d08c-4445-90be-8e1d4a628cfd",
+      "article_id": "30832ba5-fbe9-4047-871a-aa4cb63ac616",
+      "topic_id": "84d48373-ecab-4dfb-bb9e-2eb00600c547",
+      "text": "Schematic Design, the first major phase of the architectural process, is best characterized by which of the following?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bidding process where contractors submit competitive offers based on completed drawings, which occurs after design phases"
+        },
+        {
+          "id": "b",
+          "text": "Site visits and quality verification ensuring contractor compliance with approved drawings, typically part of construction administration"
+        },
+        {
+          "id": "c",
+          "text": "Preliminary design concepts, sketches, floor plans, and 3D renderings establishing general layout and form without finalizing details"
+        },
+        {
+          "id": "d",
+          "text": "Production of comprehensive technical drawings specifying every material, dimension, and construction detail, which is part of the construction documents phase"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This describes the Bidding phase.",
+        "b": "This describes Construction Administration.",
+        "d": "This describes Construction Documents, a later phase.",
+        "correct": "Schematic Design establishes the big-picture concept—general layout of spaces, overall form and mass, and approximate scale. The goal is client approval of design direction, not specification of every detail.",
+        "takeaway": "The goal is client approval of design direction, not specification of every detail."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-001-07-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.120988+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "b99538af-d27b-4324-be11-95c71fe927c0",
+      "article_id": "30832ba5-fbe9-4047-871a-aa4cb63ac616",
+      "topic_id": "84d48373-ecab-4dfb-bb9e-2eb00600c547",
+      "text": "The architectural design process is best understood as following which model?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A chaotic process where design decisions are made continuously without systematic phases, often leading to unpredictable outcomes"
+        },
+        {
+          "id": "b",
+          "text": "Phases that are determined solely by client preference rather than professional standards, which can lead to inconsistencies"
+        },
+        {
+          "id": "c",
+          "text": "Strictly sequential phases that cannot overlap or be modified once initiated, ensuring a rigid but clear process"
+        },
+        {
+          "id": "d",
+          "text": "Iterative refinement of design from concept through construction, with phases that progress logically but may overlap on smaller projects or flexible delivery methods"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Architects employ systematic processes; this is not chaotic.",
+        "b": "Professional standards establish the framework; client preferences are accommodated within this framework.",
+        "c": "Flexibility in project delivery methods allows phase overlap while maintaining systematic progression.",
+        "correct": "While the fundamental progression from concept to construction remains consistent, phases may overlap or compress on smaller projects or design-build methods. The key is systematic progression, not rigid sequencing.",
+        "takeaway": "The key is systematic progression, not rigid sequencing."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-001-07-011",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.120988+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "a85e7772-9c31-419f-a9cf-50d500a64810",
+      "article_id": "30832ba5-fbe9-4047-871a-aa4cb63ac616",
+      "topic_id": "84d48373-ecab-4dfb-bb9e-2eb00600c547",
+      "text": "A Shop Drawing submitted by a contractor shows a detail not explicitly shown in the Construction Documents. What is the architect's responsibility?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Automatically approve it if it seems structurally sound, assuming no further review is necessary"
+        },
+        {
+          "id": "b",
+          "text": "Review it carefully to verify it complies with design intent and Construction Documents, issuing RFIs if clarification is needed"
+        },
+        {
+          "id": "c",
+          "text": "Forward it to the structural engineer without comment, delegating responsibility for review"
+        },
+        {
+          "id": "d",
+          "text": "Reject it for not being in the original documents, maintaining strict adherence to initial plans"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Structural soundness is not the only criterion; design intent and specification compliance matter equally.",
+        "c": "The architect is the primary interpreter of design intent; specialist review supplements but does not replace this responsibility.",
+        "d": "Approved details may not be explicitly shown if they are standard practice; the question is whether they comply with design intent.",
+        "correct": "Shop Drawings require architect review and approval to ensure contractor interpretations align with design intent. If unclear, the architect issues an RFI (Request for Information) seeking clarification or modification.",
+        "takeaway": "If unclear, the architect issues an RFI (Request for Information) seeking clarification or modification."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "SYS"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-001-07-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.120988+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "59d27089-6f3b-4a44-8924-1bdbf8a12ad2",
+      "article_id": "30832ba5-fbe9-4047-871a-aa4cb63ac616",
+      "topic_id": "84d48373-ecab-4dfb-bb9e-2eb00600c547",
+      "text": "How do Design Development drawings differ from Schematic Design drawings in terms of detail and approval?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Schematic drawings establish general direction needing approval; Design Development drawings specify materials, systems, and final design intent in detail, also requiring approval"
+        },
+        {
+          "id": "b",
+          "text": "Design Development drawings require client approval but Schematic drawings do not, allowing for more flexibility in the early stages of design"
+        },
+        {
+          "id": "c",
+          "text": "Design Development drawings are less detailed; they are preliminary sketches not requiring formal approval, serving as a conceptual guide rather than a definitive plan"
+        },
+        {
+          "id": "d",
+          "text": "Both are equally detailed; the distinction is only in the timeline of the project, with no significant difference in content or purpose"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Both require client approval at their respective stage; this is essential to project progression.",
+        "c": "Design Development drawings are more detailed, not less.",
+        "d": "The distinction is substantive—scope and detail increase significantly between phases.",
+        "correct": "Design Development refines the approved schematic concept into detailed drawings showing material selections, system layouts, and refined cost estimates. Both phases require client approval, but at different levels of detail and precision.",
+        "takeaway": "Both phases require client approval, but at different levels of detail and precision."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-001-07-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.120988+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "3218bb25-c953-42ee-9133-c8ff49db4a05",
+      "article_id": "a13cdc9c-f057-481e-a661-eedb6548f6d8",
+      "topic_id": "86d59e74-8cfb-43f3-a09d-20193ff18704",
+      "text": "When was the ASEAN Mutual Recognition Arrangement on Architectural Services signed?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2000"
+        },
+        {
+          "id": "b",
+          "text": "2004"
+        },
+        {
+          "id": "c",
+          "text": "2007"
+        },
+        {
+          "id": "d",
+          "text": "2012"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Underestimates the MRA timeline—the arrangement was signed seven years after 2000.",
+        "b": "Misestimates the date—the MRA was signed three years after 2004.",
+        "d": "Overestimates the date—the MRA was established five years before 2012.",
+        "correct": "The ASEAN MRA on Architectural Services was signed by ASEAN Economic Ministers on 20 November 2007.",
+        "takeaway": "The ASEAN Mutual Recognition Arrangement was adopted in 2007 to facilitate architect mobility across Southeast Asia."
+      },
+      "explanation": null,
+      "code_citation": "2007 ASEAN Mutual Recognition Arrangement on Architectural Services",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-006-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:48.361702+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "16f14263-b5c6-4fe2-9540-40b9a28b2d11",
+      "article_id": "a13cdc9c-f057-481e-a661-eedb6548f6d8",
+      "topic_id": "86d59e74-8cfb-43f3-a09d-20193ff18704",
+      "text": "How do national licensing requirements relate to ASEAN Architect registration?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The MRA eliminates all national licensing, allowing architects to practice freely across ASEAN without any additional requirements"
+        },
+        {
+          "id": "b",
+          "text": "The MRA recognizes mutual equivalency without eliminating national requirements"
+        },
+        {
+          "id": "c",
+          "text": "National requirements only apply to non-ASEAN architects, ensuring that ASEAN architects have a streamlined process"
+        },
+        {
+          "id": "d",
+          "text": "ASEAN Architects are exempt from national licensing procedures, provided they meet the ASEAN criteria and standards"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Overstates MRA reach—mutual recognition is not elimination; national procedures remain.",
+        "c": "Creates false carve-out—national requirements apply equally to all foreign architects, ASEAN or not.",
+        "d": "Grants false exemption—ASEAN status facilitates, not exempts, from national procedures.",
+        "correct": "The MRA recognizes mutual equivalency of qualifications but does not eliminate national licensing requirements; ASEAN professionals must still comply with host country procedures.",
+        "takeaway": "The ASEAN MRA harmonizes standards but does not replace national licensing—ASEAN Architects still must comply with host country procedures."
+      },
+      "explanation": null,
+      "code_citation": "2007 ASEAN Mutual Recognition Arrangement on Architectural Services",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-006-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:48.361702+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "5956c799-0747-450a-a396-4764d5eb2c93",
+      "article_id": "a13cdc9c-f057-481e-a661-eedb6548f6d8",
+      "topic_id": "86d59e74-8cfb-43f3-a09d-20193ff18704",
+      "text": "What organization was created in the Philippines to oversee MRA implementation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ASEAN Professional Services Board, which coordinates professional standards across member states"
+        },
+        {
+          "id": "b",
+          "text": "ASEAN Monitoring Committee on Architectural Services (AMCASP)"
+        },
+        {
+          "id": "c",
+          "text": "Philippine Architects Council, responsible for local architectural advocacy and policy development"
+        },
+        {
+          "id": "d",
+          "text": "Board of Architecture International Division, tasked with managing international architectural collaborations and exchanges"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Misnames the organization—the correct body is AMCASP, not a general Professional Services Board.",
+        "c": "Confuses national coordination with MRA-specific oversight—the Philippine Architects Council is not the MRA implementation body.",
+        "d": "Attributes MRA oversight to a BOA division—AMCASP is the specific body, not a BOA internal division.",
+        "correct": "The ASEAN Monitoring Committee on Architectural Services (AMCASP) was created in the Philippines to serve the Monitoring Committee functions under the MRA.",
+        "takeaway": "The AMCASP oversees MRA implementation in the Philippines—it reviews ASEAN Architect conduct and reports to the international AAC."
+      },
+      "explanation": null,
+      "code_citation": "2007 ASEAN MRA on Architectural Services, Appendix B (ASEAN Architects Guidelines)",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-006-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:48.361702+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "afc98bdc-30b4-497b-85a4-9931e7c34ed6",
+      "article_id": "a13cdc9c-f057-481e-a661-eedb6548f6d8",
+      "topic_id": "86d59e74-8cfb-43f3-a09d-20193ff18704",
+      "text": "What is an ASEAN Architect (AA)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Any architect from ASEAN countries, regardless of certification status"
+        },
+        {
+          "id": "b",
+          "text": "An architect certified by their country's PRA who meets MRA requirements"
+        },
+        {
+          "id": "c",
+          "text": "An architect employed by ASEAN organizations, typically involved in regional projects"
+        },
+        {
+          "id": "d",
+          "text": "An architect who graduated from ASEAN schools, having completed relevant coursework"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Falsely assumes all ASEAN architects qualify—only those meeting specific MRA requirements and registered in the AAR are ASEAN Architects.",
+        "c": "Confuses employment with credentials—institutional affiliation is irrelevant; professional certification matters.",
+        "d": "Mistakes education for status—graduation from ASEAN schools does not confer ASEAN Architect status; PRA certification and AAR registration do.",
+        "correct": "An ASEAN Architect is an architect certified by their country's Professional Regulatory Authority and registered in the ASEAN Architect Register meeting all MRA requirements.",
+        "takeaway": "ASEAN Architect status requires PRA certification from home country AND registration in the ASEAN Architect Register—not all ASEAN architects qualify."
+      },
+      "explanation": null,
+      "code_citation": "2007 ASEAN Mutual Recognition Arrangement on Architectural Services",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-006-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:48.361702+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "7a189293-2803-4a4e-b672-fd759863a0ab",
+      "article_id": "16e972e5-378d-426c-9269-d716204c52de",
+      "topic_id": "59aea3fd-588a-4058-800a-fa2982af14ec",
+      "text": "An architect employed junior architects to develop construction drawings under the architect's direction. The architect participated in design meetings, reviewed drawing sets at each phase of development, provided written and oral feedback, and conducted a final detailed review before sealing the documents. Does this process satisfy the direct supervision requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, junior architects cannot develop drawings regardless of supervision, as they lack the necessary licensure and experience"
+        },
+        {
+          "id": "b",
+          "text": "Yes, continuous involvement in the design process, review at each phase, and detailed final review constitute direct supervision"
+        },
+        {
+          "id": "c",
+          "text": "Only if the junior architects passed the architecture licensure examination and have been formally recognized as competent by the supervising architect"
+        },
+        {
+          "id": "d",
+          "text": "Yes, but only if the architect signs a separate certification of supervision, which must be filed with the local building authority"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Falsely prohibits all junior staff work; junior architects may develop drawings under the licensed architect's direct supervision.",
+        "c": "Incorrectly requires licensing of junior staff; unlicensed junior architects can work under a licensed architect's supervision.",
+        "d": "Suggests written certification is required; the statute requires direct involvement, not additional certification documentation.",
+        "correct": "Direct supervision is satisfied when the licensed architect actively participates in design decisions, reviews work at each development phase, provides design direction, and conducts final verification. Supervision of junior architects or staff in developing drawings under an experienced architect's active guidance is a normal and proper part of architectural practice. The key is that the licensed architect maintains continuous involvement and personal responsibility.",
+        "takeaway": "Active involvement in design meetings, review at each phase, and detailed final review satisfy the direct supervision requirement."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-017-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.117151+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "eef292a0-46fc-4120-9d28-917158af5c12",
+      "article_id": "16e972e5-378d-426c-9269-d716204c52de",
+      "topic_id": "59aea3fd-588a-4058-800a-fa2982af14ec",
+      "text": "An architect directed unlicensed drafters to prepare construction drawings without personally developing the design or reviewing the drawings until the day before the project bid date. The architect reviewed the drawings for several hours and signed them. Did the architect comply with the direct supervision requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, because the architect reviewed and signed the documents, which is often mistakenly considered sufficient for compliance"
+        },
+        {
+          "id": "b",
+          "text": "No, the architect was not directly involved in the design development process and did not maintain continuous supervision of the drafting work"
+        },
+        {
+          "id": "c",
+          "text": "Yes, as long as the drafters were competent and experienced, a common but incorrect assumption"
+        },
+        {
+          "id": "d",
+          "text": "Only if the unlicensed drafters had training equivalent to junior architects, which is not a recognized standard for compliance"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Treats final review and signing as the controlling factors; direct supervision requires continuous involvement before the review.",
+        "c": "Confuses drafter competence with the architect's direct involvement; competence does not replace the architect's required supervision.",
+        "d": "Focuses on irrelevant drafter qualifications; the issue is whether the architect maintained active involvement in design development.",
+        "correct": "Direct supervision requires active involvement in the design process from concept through completion, not merely final review before signing. An architect who delegates design work to drafters without participating in design decisions and without continuous oversight during drawing development has not maintained direct supervision. The compressed review schedule (several hours on the day before bid) cannot substitute for active involvement throughout the design development process.",
+        "takeaway": "Last-minute review before signing, regardless of duration, does not satisfy the direct supervision requirement without active involvement throughout development."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-017-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.117151+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "8a398674-a34a-4c5a-a866-3a37e4b9fc1b",
+      "article_id": "16e972e5-378d-426c-9269-d716204c52de",
+      "topic_id": "59aea3fd-588a-4058-800a-fa2982af14ec",
+      "text": "An architect received a complaint to the Board of Architecture alleging that the architect signed drawings not prepared under direct supervision. The architect produced emails and meeting notes documenting participation in design meetings, marked-up drawing sets showing review comments, and a design development schedule. What is the evidentiary value of these documents?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The documents are irrelevant; the Board assumes violation once the complaint is filed, regardless of evidence."
+        },
+        {
+          "id": "b",
+          "text": "The documents provide important evidence of active involvement and direct supervision, supporting the architect's defense"
+        },
+        {
+          "id": "c",
+          "text": "The documents create a presumption of guilt that the architect must overcome with testimony, which is a challenging task."
+        },
+        {
+          "id": "d",
+          "text": "The documents protect the architect from discipline but do not prevent the complaint investigation from proceeding."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Falsely assumes a complaint triggers automatic presumption of violation; the architect has the right to present evidence in defense.",
+        "c": "Reverses the evidentiary presumption; documentation supports innocence, not guilt.",
+        "d": "Understates the value of documentation; strong evidence can resolve a complaint favorably for the architect.",
+        "correct": "Documentation of the architect's involvement during design development provides strong evidence supporting a claim of direct supervision. Emails directing design work, marked-up drawings showing review and feedback, and dated notes of design decisions demonstrate active participation. Such documentation significantly strengthens the architect's defense in professional discipline proceedings and helps establish that direct supervision was maintained.",
+        "takeaway": "Documented evidence of active involvement in design meetings and drawing reviews provides strong proof of direct supervision compliance."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-017-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.117151+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "c7435d90-35ab-4c62-90de-9b1fa555efb1",
+      "article_id": "8023b230-7871-463c-abb5-d3027212960b",
+      "topic_id": "86a3ae4e-291c-4a40-be76-fa45ad82ffa7",
+      "text": "How do columns and walls differ in their structural and spatial functions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Walls are decorative; columns are functional, which oversimplifies their roles in architecture."
+        },
+        {
+          "id": "b",
+          "text": "Columns are load-bearing; walls are only enclosures, which ignores the structural role walls can play."
+        },
+        {
+          "id": "c",
+          "text": "Columns determine ceiling height; walls are irrelevant to vertical proportions, which is incorrect as walls also influence spatial dimensions."
+        },
+        {
+          "id": "d",
+          "text": "Columns are vertical elements supporting axial loads and articulating intervals; walls function both as structure and enclosure, defining space"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Both serve functional purposes.",
+        "b": "Walls are both load-bearing and enclosing.",
+        "c": "Both affect spatial proportions.",
+        "correct": "Columns support vertical loads and create spatial rhythm through intervals. Walls have dual functions: load-bearing and enclosure. A wall encloses, supports, controls weather/light, modulates sound. Columns are purely structural; walls integrate structure and spatial definition.",
+        "takeaway": "Columns are purely structural; walls integrate structure and spatial definition."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-07-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.884733+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "44c7ea6d-187c-4b94-937c-e102344d2e81",
+      "article_id": "8023b230-7871-463c-abb5-d3027212960b",
+      "topic_id": "86a3ae4e-291c-4a40-be76-fa45ad82ffa7",
+      "text": "Articulation in architectural design refers to:",
+      "options": [
+        {
+          "id": "a",
+          "text": "How easily a building can be photographed from different angles, which is important for marketing purposes"
+        },
+        {
+          "id": "b",
+          "text": "The manner in which architectural surfaces come together to define shape and volume; expressing structural or aesthetic intent"
+        },
+        {
+          "id": "c",
+          "text": "Applying decorative ornament to building surfaces, enhancing visual appeal and historical context"
+        },
+        {
+          "id": "d",
+          "text": "The clarity of a building's written description, ensuring all stakeholders understand the design intent"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Photographability is not what articulation means.",
+        "c": "Articulation is fundamental form-defining, not applied decoration.",
+        "d": "That is linguistic description, not architectural articulation.",
+        "correct": "Articulation is how elements join and define form—not mere decoration. A clean edge where wall meets roof, a sharp corner expressing geometric clarity, a detail expressing material honesty—all are articulation. Ching treats articulation as a primary design tool.",
+        "takeaway": "Ching treats articulation as a primary design tool."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-07-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.884733+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "79dd2caf-55e4-4026-95b3-f6acc9bc29c4",
+      "article_id": "8023b230-7871-463c-abb5-d3027212960b",
+      "topic_id": "86a3ae4e-291c-4a40-be76-fa45ad82ffa7",
+      "text": "Why would an architect specify stone in massive, thick walls rather than thin veneer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Because stone's material properties demand honest expression—stone is monolithic and heavy; expressing it as thin is dishonest and contradicts material truth"
+        },
+        {
+          "id": "b",
+          "text": "Stone cannot be used in thin form; it's too brittle and lacks the necessary structural integrity for such applications"
+        },
+        {
+          "id": "c",
+          "text": "To make construction faster, as thicker walls can be built with fewer interruptions and less precision"
+        },
+        {
+          "id": "d",
+          "text": "To appear more expensive and impressive, creating a sense of grandeur and permanence that thin veneers cannot achieve"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Thin stone veneers are technically possible but dishonest.",
+        "c": "Honesty of material is not about speed.",
+        "d": "Honesty is the reason, not impression-making.",
+        "correct": "Ching emphasizes material honesty: materials must be expressed according to their inherent properties. Stone reads as heavy and permanent; using it thinly appears dishonest. Expressing material truthfully—stone as substantial wall, not veneer—is a design principle.",
+        "takeaway": "Expressing material truthfully—stone as substantial wall, not veneer—is a design principle."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-07-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.884733+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "87d1efb9-fb14-49b3-b6f7-671e08f88884",
+      "article_id": "8023b230-7871-463c-abb5-d3027212960b",
+      "topic_id": "86a3ae4e-291c-4a40-be76-fa45ad82ffa7",
+      "text": "How do windows and doors differ functionally as openings in a building's enclosure?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Windows and doors are functionally identical; terminology differs by region, but both serve as openings in the building envelope"
+        },
+        {
+          "id": "b",
+          "text": "Doors are always larger than windows, providing access for people and goods, while windows are primarily for light and ventilation"
+        },
+        {
+          "id": "c",
+          "text": "Windows admit light and views while maintaining weatherproofing and privacy control; doors enable passage while allowing closure—doors have different proportional and access functions than windows"
+        },
+        {
+          "id": "d",
+          "text": "Windows are structural; doors are purely functional, serving as access points without contributing to the building's structural integrity"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "They serve different functions despite both being openings.",
+        "b": "Proportions vary by context; doors aren't always larger.",
+        "d": "Both are functional; neither is purely structural.",
+        "correct": "Windows are openings for light/views with weatherproofing control. Doors are openings for passage, scaled to human dimensions, enabling entry/exit with closure capability. Both are openings but serve distinct spatial and functional purposes.",
+        "takeaway": "Both are openings but serve distinct spatial and functional purposes."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-07-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.884733+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "e8123ae7-3d83-4f13-a028-18016a35dd5f",
+      "article_id": "8023b230-7871-463c-abb5-d3027212960b",
+      "topic_id": "86a3ae4e-291c-4a40-be76-fa45ad82ffa7",
+      "text": "According to Ching, architectural elements are best understood as:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Exterior features visible from the street, which contribute to the building's aesthetic appeal and public perception"
+        },
+        {
+          "id": "b",
+          "text": "The functional and formal building blocks that organize space, support structure, control light/air, and express design intention"
+        },
+        {
+          "id": "c",
+          "text": "Only structural components like columns and beams, which are essential for the building's stability and load-bearing capacity"
+        },
+        {
+          "id": "d",
+          "text": "Decorative features applied to building surfaces, enhancing visual interest without affecting structural integrity"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Elements operate throughout a building, not just externally.",
+        "c": "Elements include structural, enclosure, and opening elements.",
+        "d": "Elements are functional, not merely decorative.",
+        "correct": "Ching defines elements as functional and formal components serving multiple simultaneous purposes. Every element (wall, column, window, passage) supports structure, organizes space, controls environment, and expresses design intention.",
+        "takeaway": "Every element (wall, column, window, passage) supports structure, organizes space, controls environment, and expresses design intention."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-07-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.884733+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "509b3eee-64ac-48bb-8bfa-00b3dc5f8a55",
+      "article_id": "8023b230-7871-463c-abb5-d3027212960b",
+      "topic_id": "86a3ae4e-291c-4a40-be76-fa45ad82ffa7",
+      "text": "A designer chooses rough-textured, exposed brick walls for a building rather than smooth, polished surfaces. This choice reflects which design principle related to elements?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Desire to save construction costs, which often leads to the selection of more economical materials and finishes"
+        },
+        {
+          "id": "b",
+          "text": "Attempt to hide structural flaws, using texture to distract from imperfections in the building's construction"
+        },
+        {
+          "id": "c",
+          "text": "Aesthetic preference for color and texture, emphasizing the visual and tactile qualities of the materials used"
+        },
+        {
+          "id": "d",
+          "text": "Material honesty—brick's inherent properties (warmth, craft-expressiveness, durability) are honestly expressed through rough texture"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Material choice is based on design principle, not cost alone.",
+        "b": "Honesty doesn't hide; it reveals.",
+        "c": "The principle is honesty, not aesthetic taste.",
+        "correct": "Material honesty: brick is human-scaled, craft-expressive material; expressing it through rough texture (rather than polishing smooth) reflects its inherent properties. This is design principle, not mere preference.",
+        "takeaway": "This is design principle, not mere preference."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-07-012",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.884733+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "c1b33620-0c8b-4cc2-8ca8-17f28b42664e",
+      "article_id": "8023b230-7871-463c-abb5-d3027212960b",
+      "topic_id": "86a3ae4e-291c-4a40-be76-fa45ad82ffa7",
+      "text": "A building displays articulation that emphasizes the columns, beams, and walls that structurally support it. This approach to articulation is common in which design philosophy?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Classical design, which hides structural logic behind decorative elements"
+        },
+        {
+          "id": "b",
+          "text": "Baroque design, which emphasizes ornament over function and structural clarity"
+        },
+        {
+          "id": "c",
+          "text": "Romantic design, which celebrates decoration and emotional expression"
+        },
+        {
+          "id": "d",
+          "text": "Modernist design, which expresses structural logic visibly"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Classical design may apply ornament concealing structure.",
+        "b": "Baroque typically applies ornament, not expresses structure.",
+        "c": "Romantic emphasis varies; not all celebrate exposed structure.",
+        "correct": "Modernism emphasizes expressing actual structure—columns, beams, and joints are visible and celebrated, not concealed or decorated. This is honest articulation revealing structural truth.",
+        "takeaway": "This is honest articulation revealing structural truth."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-07-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.884733+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "e172a80e-96a2-4172-9f3d-387794d38adf",
+      "article_id": "c93bfab9-3571-4e80-8d9b-d9d50a9eff02",
+      "topic_id": "b1089853-8005-466f-9ef2-509e599d2c1f",
+      "text": "How does the Brandenburg Gate exemplify Greek Revival principles in Neoclassical architecture?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It uses Baroque curves and dramatic lighting to create theatrical effect, which is not characteristic of Greek Revival."
+        },
+        {
+          "id": "b",
+          "text": "It employs Doric columns, a pediment, and symmetrical proportions modeled on the Propylaea of the Athenian Acropolis"
+        },
+        {
+          "id": "c",
+          "text": "It combines Medieval Gothic arches with Roman dome construction, which is not typical of Greek Revival."
+        },
+        {
+          "id": "d",
+          "text": "It uses Rococo asymmetry and pastel decorative elements, which are not features of Greek Revival."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Baroque curves and dramatic lighting are antithetical to Neoclassical restraint and rationality.",
+        "c": "Combining Gothic and Roman elements would be eclecticism, not Greek Revival.",
+        "d": "Rococo elements contradict Greek Revival's symmetry and restraint.",
+        "correct": "The Brandenburg Gate (1788–1791, Berlin) is 'modeled on the Propylaea of the Athenian Acropolis, it uses Doric columns, a pediment, and symmetrical proportions.' This exemplifies Greek Revival's archaeological accuracy and temple form.",
+        "takeaway": "The article states the Brandenburg Gate (1788–1791, Berlin) is 'modeled on the Propylaea of the Athenian Acropolis, it uses Doric columns, a pediment, and symmetrical proportions.' This exemplifies Greek Revival's archaeological accuracy and temple form."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "ST"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-002-06-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.95449+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "5076fa9e-1bfb-41ac-b640-227593e1dcee",
+      "article_id": "c93bfab9-3571-4e80-8d9b-d9d50a9eff02",
+      "topic_id": "b1089853-8005-466f-9ef2-509e599d2c1f",
+      "text": "A Neoclassical interior uses sophisticated spatial composition with arches, vaults, and skylights to create complex spatial flows within a restrained Classical vocabulary. Which building best exemplifies this interior innovation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Panthéon (Paris), with its barrel-vaulted interior and dome, exemplifying the grandeur of Neoclassical architecture"
+        },
+        {
+          "id": "b",
+          "text": "Brandenburg Gate, a Greek Revival exterior monument, known for its iconic columns and historical significance"
+        },
+        {
+          "id": "c",
+          "text": "Sir John Soane's Museum (1812–1837, London), with its innovative spatial composition using arches, vaults, and skylights"
+        },
+        {
+          "id": "d",
+          "text": "Monticello, a dome-crowned villa with standard Classical proportions, reflecting Thomas Jefferson's architectural vision"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The Panthéon has a grand dome and barrel vault but is not described as a model of sophisticated spatial complexity within restraint.",
+        "b": "The Brandenburg Gate is primarily an exterior structure, not focused on interior innovation.",
+        "d": "Monticello uses standard Classical proportions but is not described as featuring innovative spatial composition.",
+        "correct": "Soane's Museum: 'Neoclassical interior spaces; arches, vaults, skylights; sophisticated spatial composition; private collector's vision.' It exemplifies 'interior spatial innovation within Neoclassical vocabulary.'",
+        "takeaway": "The article describes Soane's Museum: 'Neoclassical interior spaces; arches, vaults, skylights; sophisticated spatial composition; private collector's vision.' It exemplifies 'interior spatial innovation within Neoclassical vocabulary.'."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "recall",
+      "practice_context": [
+        "DESC"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-002-06-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.95449+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "2aa3ce93-407f-4e0c-b374-aee0f67ddec4",
+      "article_id": "c93bfab9-3571-4e80-8d9b-d9d50a9eff02",
+      "topic_id": "b1089853-8005-466f-9ef2-509e599d2c1f",
+      "text": "Which publication provided the first measured drawings of Greek temples, establishing archaeological rigor as a foundation for Greek Revival architecture?",
+      "options": [
+        {
+          "id": "a",
+          "text": "*De re aedificatoria* by Leon Battista Alberti, which focuses on architectural theory rather than empirical measurement"
+        },
+        {
+          "id": "b",
+          "text": "*Antiquities of Athens* (Volume I, 1762) by James Stuart and Nicholas Revett"
+        },
+        {
+          "id": "c",
+          "text": "*Four Books on Architecture* by Andrea Palladio, known for its influence on classical architecture but not for measured drawings"
+        },
+        {
+          "id": "d",
+          "text": "*The Art of Architecture in Ten Books* by Vitruvius, a foundational text on architecture but not focused on Greek temples"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Alberti's treatise is Renaissance, not a source for Greek Revival.",
+        "c": "Palladio's *Four Books* is Renaissance and influenced later Neoclassicism but was not the Greek Revival catalyst.",
+        "d": "Vitruvius is a Classical Roman author, not a modern publication establishing Greek Revival.",
+        "correct": "'James Stuart and Nicholas Revett's *Antiquities of Athens*** (Volume I, 1762; continued through 1816) provided measured drawings of Greek temples, spurring Greek Revival' and notes their work provided 'authentic data, not imaginative interpretations.'",
+        "takeaway": "The article states 'James Stuart and Nicholas Revett's *Antiquities of Athens*** (Volume I, 1762; continued through 1816) provided measured drawings of Greek temples, spurring Greek Revival' and notes their work provided 'authentic data, not imaginative interpretations.'."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "ID"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-002-06-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.95449+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "5d02feb4-fd0a-4d8c-9092-cba08bf9de45",
+      "article_id": "c93bfab9-3571-4e80-8d9b-d9d50a9eff02",
+      "topic_id": "b1089853-8005-466f-9ef2-509e599d2c1f",
+      "text": "A Neoclassical building features a dome-crowned structure with an Ionic portico and Classical proportions, designed to express democratic ideals through architectural form. Which building best exemplifies this description?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Brandenburg Gate, a Greek Revival monument in Berlin, known for its iconic columns and historical significance"
+        },
+        {
+          "id": "b",
+          "text": "Monticello (1768–1809, Virginia), a dome-crowned villa with Ionic portico expressing democratic ideals"
+        },
+        {
+          "id": "c",
+          "text": "Panthéon (Paris), with its Corinthian portico and dome, serving as a mausoleum for distinguished French citizens"
+        },
+        {
+          "id": "d",
+          "text": "U.S. Capitol, with its rotunda and portico, symbolizing the legislative branch of the United States government"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The Brandenburg Gate uses Doric columns, not Ionic, and is a gate structure, not a villa.",
+        "c": "The Panthéon uses Corinthian columns and is a church serving spiritual/civic purposes, not a residential villa.",
+        "d": "While the Capitol is a Neoclassical civic building expressing democratic ideals, Monticello more directly matches the private villa description with Ionic portico.",
+        "correct": "Monticello is described as 'a dome-crowned villa with Ionic portico, Classical proportions, and humanistic rationality,' and 'Jefferson's *Notes on the State of Virginia* championed the Classical aesthetic as aligned with American democratic ideals.'",
+        "takeaway": "Monticello is described as 'a dome-crowned villa with Ionic portico, Classical proportions, and humanistic rationality,' and 'Jefferson's *Notes on the State of Virginia* championed the Classical aesthetic as aligned with American democratic ideals.'."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "recall",
+      "practice_context": [
+        "DESC"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-002-06-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.95449+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "e0c0cef7-deb3-40cd-b590-dcff42faabca",
+      "article_id": "c93bfab9-3571-4e80-8d9b-d9d50a9eff02",
+      "topic_id": "b1089853-8005-466f-9ef2-509e599d2c1f",
+      "text": "What two key publications catalyzed the shift from Baroque/Rococo to Neoclassicism in the mid-18th century?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Brunelleschi's treatise on domes and Palladio's *Four Books on Architecture*, which were influential but not directly related to Neoclassicism"
+        },
+        {
+          "id": "b",
+          "text": "Archaeological excavations at Pompeii and Herculaneum (beginning 1748) and Stuart & Revett's *Antiquities of Athens* (Volume I, 1762)"
+        },
+        {
+          "id": "c",
+          "text": "Baroque architectural handbooks and Rococo interior design manuals, which were more about style than a shift to Neoclassicism"
+        },
+        {
+          "id": "d",
+          "text": "Medieval building guides and Renaissance treatises on perspective, which predate the Neoclassical movement"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While Palladio's *Four Books* influenced Renaissance and later revivals, they did not catalyze the shift to Neoclassicism; Brunelleschi did not write a major treatise.",
+        "c": "Baroque and Rococo publications were what Neoclassicism reacted against, not catalysts for the shift.",
+        "d": "Medieval and Renaissance works preceded Neoclassicism and were historical references, not catalysts for its specific emergence.",
+        "correct": "The article lists key catalysts: 'Archaeological expeditions to Pompeii and Herculaneum (beginning 1748) revealed actual Roman buildings' and 'James Stuart and Nicholas Revett's *Antiquities of Athens*** (Volume I, 1762; continued through 1816) provided measured drawings of Greek temples.'",
+        "takeaway": "The article lists key catalysts: 'Archaeological expeditions to Pompeii and Herculaneum (beginning 1748) revealed actual Roman buildings' and 'James Stuart and Nicholas Revett's *Antiquities of Athens*** (Volume I, 1762; continued through 1816) provided measured drawings of Greek temples.'."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "CH"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-002-06-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.95449+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "02b59907-9c5f-4a88-9aae-130aeab0b7eb",
+      "article_id": "c93bfab9-3571-4e80-8d9b-d9d50a9eff02",
+      "topic_id": "b1089853-8005-466f-9ef2-509e599d2c1f",
+      "text": "How does Neoclassical architecture contrast with Baroque in its approach to space, ornament, and emotional effect?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Baroque and Neoclassical are identical styles with different names from different regions, often confused due to their historical overlap"
+        },
+        {
+          "id": "b",
+          "text": "Baroque: curves, drama, ornament, illusionism; Neoclassical: straight lines, rationality, archaeological accuracy, restraint and intellectual clarity"
+        },
+        {
+          "id": "c",
+          "text": "Baroque: symmetrical, restrained; Neoclassical: asymmetrical, exuberant, often incorporating elements of fantasy"
+        },
+        {
+          "id": "d",
+          "text": "Baroque: archaeologically grounded; Neoclassical: imaginative and fantastical, often disregarding historical accuracy"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "They are distinct styles with different philosophical foundations.",
+        "c": "This reverses the actual characteristics; Baroque tends toward symmetry, and Neoclassical maintains symmetry.",
+        "d": "This is the opposite of reality; Neoclassicism is archaeologically rigorous; imaginative fantasy is not its defining feature.",
+        "correct": "The article explicitly contrasts the styles: 'Baroque: curves, drama, ornament, illusionism. Neoclassical: straight lines, rationality, archaeological accuracy, restraint and intellectual clarity' and emphasizes 'rational instead of emotional, straight instead of curved, restrained instead of exuberant.'",
+        "takeaway": "Neoclassical: straight lines, rationality, archaeological accuracy, restraint and intellectual clarity' and emphasizes 'rational instead of emotional, straight instead of curved, restrained instead of exuberant.'."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-002-06-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.95449+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "d783c328-5f55-4baa-b010-a252b299ff95",
+      "article_id": "c93bfab9-3571-4e80-8d9b-d9d50a9eff02",
+      "topic_id": "b1089853-8005-466f-9ef2-509e599d2c1f",
+      "text": "Which Neoclassical architect designed the Panthéon in Paris (begun 1758, completed 1790), reinterpreting the Baroque church as a rational Classical temple with Corinthian columns and a dome modeled on Rome's Panthéon?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jacques-Germain Soufflot"
+        },
+        {
+          "id": "b",
+          "text": "Carl Gotthard Langhans, known for his work on the Brandenburg Gate"
+        },
+        {
+          "id": "c",
+          "text": "Thomas Jefferson, who was more involved in American architecture"
+        },
+        {
+          "id": "d",
+          "text": "John Soane, an architect famous for his innovative use of light"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Langhans designed the Brandenburg Gate, a Greek Revival monument.",
+        "c": "Jefferson designed Monticello, an American neoclassical villa.",
+        "d": "Soane designed his Museum in London, a Neoclassical interior space.",
+        "correct": "Jacques-Germain Soufflot (1713–1780) designed the Panthéon (designed 1755, construction begun 1758, completed 1790, Paris) with 'a portico with Corinthian columns, a dome modeled on the Panthéon in Rome, and a barrel-vaulted interior organized by rational proportion.'",
+        "takeaway": "Jacques-Germain Soufflot (1713–1780) designed the Panthéon (designed 1755, construction begun 1758, completed 1790, Paris) with 'a portico with Corinthian columns, a dome modeled on the Panthéon in Rome, and a barrel-vaulted interior organized by rational proportion.'."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "ID"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-002-06-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.95449+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "8cf50104-5659-4c24-a1cc-3254ba528268",
+      "article_id": "aef59aa2-220e-47fc-9492-6b2bd98f9bea",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Why does a Type X gypsum board achieve a fire-resistance rating only as part of a complete tested assembly, not as a standalone product specification?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Because gypsum board manufacturers require a complete assembly to validate their product warranty, ensuring compliance with industry standards"
+        },
+        {
+          "id": "b",
+          "text": "Because fire-resistance rating is a function of the complete assembly — including stud size and spacing, fastener pattern, joint treatment, and insulation — not the board product alone"
+        },
+        {
+          "id": "c",
+          "text": "Because Type X gypsum board is only manufactured to be used with metal studs, not wood studs, limiting its application"
+        },
+        {
+          "id": "d",
+          "text": "Because the fire test (ASTM E119) cannot test individual board products, only full wall assemblies, ensuring comprehensive safety evaluation"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "This is Principle 3 of Sec. 1215: 'It is an assembly, not a single product.' An architect specifying Type X board must also specify the complete assembly — stud size, spacing, fastener pattern, joint treatment — or the rating is not achieved.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:17.509561+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "561c55f3-0624-4ad3-a65e-438dad98b6c4",
+      "article_id": "6fc5e22a-9ff6-4a6c-b0eb-b93c9ffd00af",
+      "topic_id": "9df59020-d52c-477b-b41c-32da8b27ff35",
+      "text": "The Pennsylvania Station (New York, 1910) by McKim, Mead & White is based on which historical precedent?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Versailles Palace grand hall"
+        },
+        {
+          "id": "b",
+          "text": "The Roman Baths of Caracalla"
+        },
+        {
+          "id": "c",
+          "text": "The Pantheon's domed rotunda"
+        },
+        {
+          "id": "d",
+          "text": "Medieval Gothic cathedral design"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Versailles is not mentioned as the model for Pennsylvania Station.",
+        "c": "While Beaux-Arts used domed rotundas, Pennsylvania Station is specifically compared to the Baths of Caracalla.",
+        "d": "Gothic design is mentioned as one eclectic element but not as Pennsylvania Station's primary model.",
+        "correct": "Their Pennsylvania Station (New York, 1910, demolished 1964) modeled itself on the Roman Baths of Caracalla—a railroad shed wrapped in Beaux-Arts grandeur.'",
+        "takeaway": "The article states: 'Their Pennsylvania Station (New York, 1910, demolished 1964) modeled itself on the Roman Baths of Caracalla—a railroad shed wrapped in Beaux-Arts grandeur.'."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "ID"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-014-03-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.310909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "e0590681-ac12-45a8-9be2-8d41085fabbc",
+      "article_id": "6fc5e22a-9ff6-4a6c-b0eb-b93c9ffd00af",
+      "topic_id": "9df59020-d52c-477b-b41c-32da8b27ff35",
+      "text": "Why did American Beaux-Arts architects make public institutions (libraries, stations, courthouses) so large and ornate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "European tradition dictated that all public buildings be monumental regardless of function, emphasizing grandeur over utility"
+        },
+        {
+          "id": "b",
+          "text": "These buildings embodied democratic ideology: the scale and ornament expressed that citizens deserve grandeur"
+        },
+        {
+          "id": "c",
+          "text": "Large buildings were cheaper to construct than smaller, more refined structures, due to economies of scale in material procurement"
+        },
+        {
+          "id": "d",
+          "text": "Ornament and size were required by the École des Beaux-Arts methodology for all buildings, ensuring uniformity in architectural education"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While European tradition influenced design, the specific motivation was democratic expression.",
+        "c": "Ornate large buildings are typically more expensive, not cheaper.",
+        "d": "The Beaux-Arts method emphasizes composition and proportion; monumental scale reflects American democratic application, not methodology requirement.",
+        "correct": "Questions ask why American Beaux-Arts buildings are so large and ornate. You explain: these buildings (libraries, stations, post offices) embodied democratic ideology. The scale and ornament said you, the citizen, deserve grandeur. Beaux-Arts made public institutions visible as civic expression.'",
+        "takeaway": "Beaux-Arts made public institutions visible as civic expression.'."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-014-03-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.310909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "8b92488b-46ad-49f3-861d-0a2426862d8c",
+      "article_id": "6fc5e22a-9ff6-4a6c-b0eb-b93c9ffd00af",
+      "topic_id": "9df59020-d52c-477b-b41c-32da8b27ff35",
+      "text": "Why did American Beaux-Arts architects traveling to Paris study at the École des Beaux-Arts, and what did they bring back to America?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To learn French language and cultural practices they could apply to American domestic life, enhancing cultural exchange and understanding"
+        },
+        {
+          "id": "b",
+          "text": "Rigorous training in classical composition, proportional systems, and monumental design that elevated American institutions to European grandeur"
+        },
+        {
+          "id": "c",
+          "text": "To escape American economic competition and establish elite architectural practices in Europe, seeking new opportunities and prestige"
+        },
+        {
+          "id": "d",
+          "text": "To document European buildings for direct replication in America, aiming to import European architectural styles and techniques"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While cultural exchange occurred, the article emphasizes architectural training and design methodology.",
+        "c": "The article frames Paris training as preparation for American practice, not escape.",
+        "d": "Direct replication is addressed in the article: American Beaux-Arts is eclectic, not pure copying.",
+        "correct": "The École des Beaux-Arts in Paris was the world's most prestigious architecture school... They returned to America with rigorous training in classical composition, academic drawing, and monumental design.' American architects used this training to make civic buildings worthy of European grandeur.",
+        "takeaway": "They returned to America with rigorous training in classical composition, academic drawing, and monumental design.' American architects used this training to make civic buildings worthy of European grandeur."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-014-03-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.310909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "3e303f8e-0766-4c98-98c4-cbf149b7cde8",
+      "article_id": "6fc5e22a-9ff6-4a6c-b0eb-b93c9ffd00af",
+      "topic_id": "9df59020-d52c-477b-b41c-32da8b27ff35",
+      "text": "How does American Beaux-Arts differ from pure European École des Beaux-Arts design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "American Beaux-Arts is purely classical; European Beaux-Arts is eclectic, incorporating a variety of styles"
+        },
+        {
+          "id": "b",
+          "text": "American Beaux-Arts combines classical composition with Romanesque, Renaissance, and Gothic elements, unified through proportion; European is strictly classical"
+        },
+        {
+          "id": "c",
+          "text": "American buildings are smaller and less monumental than European models, reflecting different cultural priorities"
+        },
+        {
+          "id": "d",
+          "text": "American architects rejected symmetry in favor of organic asymmetrical composition, which was seen as more innovative"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This reverses the actual relationship—American is eclectic, European is classical.",
+        "c": "The article emphasizes monumental scale in American Beaux-Arts, not reduction.",
+        "d": "American Beaux-Arts maintains symmetry and axiality, not asymmetrical composition.",
+        "correct": "French Beaux-Arts is purely classical. American Beaux-Arts is eclectic: it combines classical composition with Romanesque Revival, neoclassical detail, Renaissance palace precedent, and Gothic verticality. The principle is unity through proportion and symmetry, not stylistic purity.'",
+        "takeaway": "The principle is unity through proportion and symmetry, not stylistic purity.'."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-014-03-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.310909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "7c17cb3b-dc31-4a8a-bf5d-6061e221229a",
+      "article_id": "6fc5e22a-9ff6-4a6c-b0eb-b93c9ffd00af",
+      "topic_id": "9df59020-d52c-477b-b41c-32da8b27ff35",
+      "text": "A building combines Gothic verticality with Renaissance palazzo form and classical columns in a symmetrical facade, unified through proportion and axial organization. this as:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Confused eclecticism failing to achieve coherence, often resulting in a lack of unified architectural language across the structure"
+        },
+        {
+          "id": "b",
+          "text": "Pure neoclassicism with applied decorative elements, emphasizing symmetry and classical orders without integrating diverse historical styles"
+        },
+        {
+          "id": "c",
+          "text": "American Beaux-Arts eclecticism unified through proportional and compositional principles"
+        },
+        {
+          "id": "d",
+          "text": "Postmodern irony playfully mixing historical references, often using pastiche to create a dialogue between different architectural periods"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The article defends eclectic combination as Beaux-Arts when unified through composition.",
+        "b": "Pure neoclassicism would not combine Gothic and Renaissance elements.",
+        "d": "Postmodernism emerged much later and uses irony; American Beaux-Arts is sincere composition.",
+        "correct": "The article addresses Pattern 3: 'Questions present buildings combining multiple historical references (Gothic tower, Renaissance palace, Romanesque arch). You explain why this is Beaux-Arts, not confused eclectic pastiche: the unifying principle is symmetry, proportion, and hierarchical ordering.'",
+        "takeaway": "You explain why this is Beaux-Arts, not confused eclectic pastiche: the unifying principle is symmetry, proportion, and hierarchical ordering.'."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-014-03-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.310909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "168ee845-4b80-4abd-bda8-f34a70a91e33",
+      "article_id": "6fc5e22a-9ff6-4a6c-b0eb-b93c9ffd00af",
+      "topic_id": "9df59020-d52c-477b-b41c-32da8b27ff35",
+      "text": "What distinguishes Beaux-Arts civic buildings from earlier neoclassical buildings (1780–1840)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Beaux-Arts are neoclassical; there is no meaningful distinction, as both styles share similar classical roots and design principles"
+        },
+        {
+          "id": "b",
+          "text": "Neoclassical emphasizes pure classical symmetry; Beaux-Arts eclectically combines multiple historical styles unified through composition and including integrated fine arts"
+        },
+        {
+          "id": "c",
+          "text": "Neoclassical buildings are smaller in scale than Beaux-Arts monumental structures, which often feature grandiose facades and elaborate ornamentation"
+        },
+        {
+          "id": "d",
+          "text": "Beaux-Arts rejected symmetry while neoclassicism required it, focusing instead on asymmetrical compositions and varied stylistic elements"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While Beaux-Arts uses classical language, the methodology and eclecticism distinguish it from pure neoclassicism.",
+        "c": "While Beaux-Arts emphasizes monumentality, size alone does not distinguish Beaux-Arts from neoclassical.",
+        "d": "Both emphasize symmetry; symmetry is shared, not distinctive.",
+        "correct": "The article cautions: 'Treating all large civic buildings as Beaux-Arts... Neoclassical buildings (1780–1840) are symmetrical but predate Beaux-Arts training. Art Deco buildings (1920–1940) are geometric but reject Beaux-Arts ornament. Specify why a building is Beaux-Arts: what principles of composition, ornament, and integration of fine arts does it display?'",
+        "takeaway": "Specify why a building is Beaux-Arts: what principles of composition, ornament, and integration of fine arts does it display?'."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-014-03-011",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.310909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "ea9023fb-0727-4f8c-9b47-be2d3652e76c",
+      "article_id": "e72bf24e-a816-4c4f-ae4b-f8e97c5d5519",
+      "topic_id": "b2a8f6c5-2694-428c-a1a1-4ea1d1b4254e",
+      "text": "Mesopotamian architects worked primarily with mud brick rather than stone because:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Stone was not available in the Tigris-Euphrates floodplain region, making it impractical for large-scale construction projects"
+        },
+        {
+          "id": "b",
+          "text": "Mud brick was plastic, allowing varied forms; it was cheap and renewable; and it provided poor heat conduction for climate control in a blazing landscape"
+        },
+        {
+          "id": "c",
+          "text": "They lacked the technology to quarry and shape stone blocks, which limited their ability to use stone in construction"
+        },
+        {
+          "id": "d",
+          "text": "Religious beliefs prevented the use of stone in monumental architecture, as stone was considered sacred and reserved for specific rituals"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While stone was less available than in other regions, this is not the reason given; the article focuses on the properties of mud brick and how they drove innovation.",
+        "c": "The technology to work with stone existed in contemporary civilizations; the choice was driven by resource availability and material properties, not technological limitation.",
+        "d": "There is no indication in the article that religious beliefs determined the use of mud brick; it was a practical resource choice.",
+        "correct": "Mesopotamia's available material was mud and clay. Mesopotamian architects developed the mud brick—shaped, dried in the sun, and stacked with mud mortar—as their primary building medium. This constraint, seemingly limiting, drove innovation: mud brick is plastic, allowing for varied forms; it is cheap and renewable, enabling monumental construction; and it conducts heat poorly, providing climate control in a blazing landscape.'",
+        "takeaway": "This constraint, seemingly limiting, drove innovation: mud brick is plastic, allowing for varied forms; it is cheap and renewable, enabling monumental construction; and it conducts heat poorly, providing climate control in a blazing landscape.'."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "ST"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-001-02-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:22.769541+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "cfa77410-0c67-4d51-933a-6dc80522c68b",
+      "article_id": "e72bf24e-a816-4c4f-ae4b-f8e97c5d5519",
+      "topic_id": "b2a8f6c5-2694-428c-a1a1-4ea1d1b4254e",
+      "text": "Why did Mesopotamian architects design ziggurats with a stepped tower form rather than a solid rectangular mass?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To reduce the weight of the structure and prevent collapse from mud brick's instability, which was a common issue in ancient construction"
+        },
+        {
+          "id": "b",
+          "text": "To represent a link between earthly and divine realms, elevate the temple sanctuary above floodwaters and the surrounding city, and create visual monumentality"
+        },
+        {
+          "id": "c",
+          "text": "Because stepped towers required less material and were therefore more economical than solid structures, allowing for resource conservation"
+        },
+        {
+          "id": "d",
+          "text": "To allow internal stairways connecting multiple levels of administrative chambers, facilitating movement within the structure"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While stepped forms might distribute weight, the article emphasizes the symbolism and function (elevation above floods and city) rather than material economy.",
+        "c": "Stepped towers actually require more labor than solid forms; efficiency is not the stated reason.",
+        "d": "The article notes that ziggurats had 'minimal—primarily chambers for priests and sacred objects,' not extensive internal administrative chambers requiring interconnected staircases.",
+        "correct": "The ziggurat was not merely a tower but a architectural statement of cosmic order. Its stepped form represented a link between earthly and divine realms; it elevated the temple sanctuary above the floodwaters and above the surrounding city.'",
+        "takeaway": "Its stepped form represented a link between earthly and divine realms; it elevated the temple sanctuary above the floodwaters and above the surrounding city.'."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-001-02-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:22.769541+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "ff483628-252d-4429-994c-4b99e495b4a7",
+      "article_id": "e72bf24e-a816-4c4f-ae4b-f8e97c5d5519",
+      "topic_id": "b2a8f6c5-2694-428c-a1a1-4ea1d1b4254e",
+      "text": "Which Mesopotamian building type featured a rectangular plan with interior courtyards surrounded by rooms, solving practical problems such as shade, water collection, and private circulation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ziggurat"
+        },
+        {
+          "id": "b",
+          "text": "Temple shrine"
+        },
+        {
+          "id": "c",
+          "text": "Palace complex"
+        },
+        {
+          "id": "d",
+          "text": "City wall fortification"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Ziggurats were stepped towers with minimal interior space, not structures featuring courtyard plans.",
+        "b": "Temple shrines were small chambers at the apex of ziggurats, not complex structures with courtyard plans.",
+        "d": "City walls were defensive barriers, not buildings with interior courtyards.",
+        "correct": "Palaces of kings like Hammurabi and Sennacherib employed rectangular plans with interior courtyards surrounded by rooms. These courtyard plans solved practical problems: shade, water collection, and private circulation.'",
+        "takeaway": "These courtyard plans solved practical problems: shade, water collection, and private circulation.'."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DESC"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-001-02-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:22.769541+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "77dd0635-1ca9-4926-a3aa-e9a0e89240e8",
+      "article_id": "e72bf24e-a816-4c4f-ae4b-f8e97c5d5519",
+      "topic_id": "b2a8f6c5-2694-428c-a1a1-4ea1d1b4254e",
+      "text": "The Palace of Sennacherib at Nineveh is particularly noted for which architectural innovation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Courtyard plan with rooms organized around a central open space used for ceremonial gatherings and diplomatic receptions"
+        },
+        {
+          "id": "b",
+          "text": "Monumental gateways guarded by sculpted lamassu figures and extensive relief programs narrating royal hunts and military victories"
+        },
+        {
+          "id": "c",
+          "text": "The use of concrete vaults to create vast interior spaces capable of spanning large unsupported distances without columns"
+        },
+        {
+          "id": "d",
+          "text": "A columned hypostyle hall serving as the main assembly space for religious rituals and administrative proceedings"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While Mesopotamian palaces did feature courtyard plans (as seen in Hammurabi's palace), Sennacherib's palace is specifically noted for its sculptured gateways and relief programs.",
+        "c": "Concrete vaults are a Roman innovation, not Mesopotamian. Mesopotamian architecture used mud brick, not concrete.",
+        "d": "Hypostyle halls are characteristic of Egyptian and Persian architecture, not Mesopotamian palaces, which featured courtyards and relief-decorated walls.",
+        "correct": "The palace of Sennacherib at Nineveh (705–681 BCE) included monumental gateways guarded by sculptured figures (lamassu—winged bull and lion hybrids) and extensive relief programs narrating royal hunts and military victories.'",
+        "takeaway": "The article states: 'The palace of Sennacherib at Nineveh (705–681 BCE) included monumental gateways guarded by sculptured figures (lamassu—winged bull and lion hybrids) and extensive relief programs narrating royal hunts and military victories.'."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "ID"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-001-02-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:22.769541+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    }
+  ]
+}
