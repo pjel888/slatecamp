@@ -148,7 +148,9 @@
     "content-audit:questions-expand": "bun scripts/content-audit/expand-question-improvement-proposals.ts",
     "content-audit:questions-expand-validate": "bun scripts/content-audit/validate-expanded-question-improvement.ts",
     "content-audit:embedding-harden": "bun scripts/content-audit/harden-source-pack-embedding-dry-run.ts",
-    "content-audit:embedding-harden-validate": "bun scripts/content-audit/validate-source-pack-embedding-hardening.ts"
+    "content-audit:embedding-harden-validate": "bun scripts/content-audit/validate-source-pack-embedding-hardening.ts",
+    "content-audit:apply-harden": "bun scripts/content-audit/harden-controlled-apply-rollback.ts",
+    "content-audit:apply-harden-validate": "bun scripts/content-audit/validate-controlled-apply-hardening.ts"
   },
   "dependencies": {
     "@base-ui/react": "^1.4.1",
