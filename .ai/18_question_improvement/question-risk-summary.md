@@ -2,11 +2,11 @@
 
 Selector: strict-v3-item-level-official-source
 
-- already_published_or_quarantined: 401
-- item_level_official_source_gap: 663
-- generic_meta_distractor_leakage: 253
-- existing_meaningful_explanation: 356
-- insufficient_linked_article_support: 14
-- option_length_giveaway_risk: 40
-- near_duplicate_option_ambiguity: 2
+- already_published_or_quarantined: 451
+- item_level_official_source_gap: 809
+- generic_meta_distractor_leakage: 325
+- existing_meaningful_explanation: 456
+- insufficient_linked_article_support: 16
+- option_length_giveaway_risk: 47
+- near_duplicate_option_ambiguity: 3
 - duplicate_option_text: 1

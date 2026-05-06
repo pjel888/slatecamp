@@ -168,3 +168,20 @@ Next exact resume step:
 5. Independent safety review.
 6. Publish with exact `question_id` filters only.
 7. Remote verify, commit, push, and continue to Batch 017.
+
+## Question Batch 016 Published — 2026-05-06T14:40:57.475493+00:00
+
+Status: PUBLISHED_VERIFIED.
+
+- Selected: 50.
+- Local verifier: 50/50 pass.
+- Independent safety review: PASS, blockers none.
+- Remote apply: 50/50 by exact question_id filter.
+- Remote verification: 50/50.
+- Answer-key changes: 0.
+- Option changes: 0.
+- Backup: `.ai/20_content_publish/backups/questions-backup-question-batch-016-20260506T144006Z.json`.
+
+Running total committed after Batch 016: 377 published/recovered verified questions.
+
+Next exact step after commit/push: `bun scripts/content-audit/select-question-remediation-batch.ts question-batch-017 50`.

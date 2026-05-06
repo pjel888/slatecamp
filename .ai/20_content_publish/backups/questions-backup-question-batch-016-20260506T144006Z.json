@@ -1,0 +1,2478 @@
+{
+  "created_at": "2026-05-06T14:40:16.337Z",
+  "batch": "question-batch-016",
+  "table": "questions",
+  "rows": [
+    {
+      "question_id": "05e95a97-cff5-414d-a859-cdefe9f8c6da",
+      "article_id": "e72bf24e-a816-4c4f-ae4b-f8e97c5d5519",
+      "topic_id": "b2a8f6c5-2694-428c-a1a1-4ea1d1b4254e",
+      "text": "A monumental gateway at a Mesopotamian palace features two massive figures—part human, part beast—with wings and bovine or leonine characteristics. These guardian figures are called:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Seraphs"
+        },
+        {
+          "id": "b",
+          "text": "Sphinxes"
+        },
+        {
+          "id": "c",
+          "text": "Lamassu"
+        },
+        {
+          "id": "d",
+          "text": "Antefixes"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Seraphs are religious figures in Jewish and Christian tradition, not architectural guardian figures in Mesopotamian palaces.",
+        "b": "Sphinxes are Egyptian hybrid creatures (lion with human head), not Mesopotamian lamassu.",
+        "d": "Antefixes are decorative tiles placed at the edge of roofs in Classical architecture, not monumental gateway guardians.",
+        "correct": "The article defines lamassu as 'A winged bull or lion figure (human-headed in some depictions) serving as a guardian or apotropaic figure at palace gateways' and mentions them at Sennacherib's palace and later at Persepolis.",
+        "takeaway": "The article defines lamassu as 'A winged bull or lion figure (human-headed in some depictions) serving as a guardian or apotropaic figure at palace gateways' and mentions them at Sennacherib's palace and later at Persepolis."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "recall",
+      "practice_context": [
+        "DESC"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-001-02-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:22.769541+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "0066cdb7-f96d-4a65-bc5a-3a8f5d9f5b54",
+      "article_id": "369fd847-ad5b-4214-b86b-68cd7f62c534",
+      "topic_id": "33b4645b-d35d-4cae-9bba-21dcdc4164a3",
+      "text": "A decorative pattern features bold, angular, deeply carved geometric forms on wooden frames, door panels, and roof support brackets. It combines Islamic geometric principles with indigenous Southeast Asian aesthetics. Name this decorative tradition.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Arabesque"
+        },
+        {
+          "id": "b",
+          "text": "Muqarnas"
+        },
+        {
+          "id": "c",
+          "text": "Okir"
+        },
+        {
+          "id": "d",
+          "text": "Zellige"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Arabesque is interlocking vegetal/geometric patterns from Middle Eastern Islamic tradition.",
+        "b": "Muqarnas is three-dimensional corbelled vaulting, not relief carving.",
+        "d": "Zellige is geometric tile work from North Africa/Morocco.",
+        "correct": "The article defines okir as 'Geometric relief carving pattern characteristic of Maranao decorative tradition; appears on door frames, roof brackets, wall panels; combines Islamic geometry with indigenous aesthetic.'",
+        "takeaway": "The article defines okir as 'Geometric relief carving pattern characteristic of Maranao decorative tradition; appears on door frames, roof brackets, wall panels; combines Islamic geometry with indigenous aesthetic.'."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "recall",
+      "practice_context": [
+        "DESC"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-004-08-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.126756+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "18708a39-886f-402f-ad85-79831328703c",
+      "article_id": "369fd847-ad5b-4214-b86b-68cd7f62c534",
+      "topic_id": "33b4645b-d35d-4cae-9bba-21dcdc4164a3",
+      "text": "How does the material construction of traditional Philippine Islamic mosques reflect adaptation to tropical climate and available resources?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Stone construction with thick walls provides heat insulation in tropical environments, though less common due to material availability"
+        },
+        {
+          "id": "b",
+          "text": "Wooden construction using tropical hardwoods (coconut, nipa, bamboo) with steeply pitched roofs and extended eaves managing high rainfall; elevated structures control humidity"
+        },
+        {
+          "id": "c",
+          "text": "Brick construction similar to Mesopotamian Abbasid architecture, adapted for local conditions"
+        },
+        {
+          "id": "d",
+          "text": "Marble and tile construction creating durable, weatherproof surfaces, though less suited to local climate"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Thick stone walls are not identified as the solution to tropical heat; materials emphasize ventilation instead.",
+        "c": "Brick construction is identified with Abbasid Mesopotamia, not Philippine Islamic adaptation.",
+        "d": "Marble and tile are expensive materials not available in traditional Philippine Islamic contexts.",
+        "correct": "Wooden construction, adaptability to tropical climate...The climate dictates design: high rainfall requires steeply pitched roofs and elevated structures. Heat and humidity call for extensive ventilation and minimal wall closure. The availability of tropical hardwoods (coconut, nipa, bamboo) shapes material strategy.'",
+        "takeaway": "The availability of tropical hardwoods (coconut, nipa, bamboo) shapes material strategy.'."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "ST"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-004-08-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.126756+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "df05b53f-755d-4878-8c24-e20dbb8eb884",
+      "article_id": "369fd847-ad5b-4214-b86b-68cd7f62c534",
+      "topic_id": "33b4645b-d35d-4cae-9bba-21dcdc4164a3",
+      "text": "A contemporary mosque complex includes prayer halls, madrasa facilities, and community spaces. It employs concrete and modern materials while maintaining Islamic spatial traditions (prayer hall, qibla orientation, minaret). Which building exemplifies this modernization of Philippine Islamic architecture?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sheik Makdum Mosque"
+        },
+        {
+          "id": "b",
+          "text": "Traditional Maranao mosques"
+        },
+        {
+          "id": "c",
+          "text": "Grand Mosque of Cotabato"
+        },
+        {
+          "id": "d",
+          "text": "Lanao traditional wooden structures"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The Sheik Makdum Mosque is a traditional structure with multiple reconstructions, not modernized concrete design.",
+        "b": "Traditional Maranao mosques remain wooden and are not modernized examples.",
+        "d": "Lanao traditional structures are wooden, not concrete modern construction.",
+        "correct": "The Grand Mosque of Cotabato (officially the Sultan Haji Hassanal Bolkiah Mosque) is a contemporary mosque complex completed in 2011 and inaugurated in 2012, employing concrete and modern materials with a central dome, minaret tower, and large interior prayer hall accommodating thousands. It represents the modernization of Philippine Islamic architecture, showing the transition from traditional wooden construction to contemporary concrete and steel construction methods.",
+        "takeaway": "It represents the modernization of Philippine Islamic architecture, showing the transition from traditional wooden construction to contemporary concrete and steel construction methods."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "recall",
+      "practice_context": [
+        "DESC"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-004-08-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.126756+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "ed89b72d-7422-4aad-8523-8073dbaf5027",
+      "article_id": "369fd847-ad5b-4214-b86b-68cd7f62c534",
+      "topic_id": "33b4645b-d35d-4cae-9bba-21dcdc4164a3",
+      "text": "The Sheik Makdum Mosque in Simunul, Tawi-Tawi is identified as the oldest continuously used mosque in the Philippines. Which ethnic group's Islamic tradition does it represent?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Maranao"
+        },
+        {
+          "id": "b",
+          "text": "Maguindanao"
+        },
+        {
+          "id": "c",
+          "text": "Tausug"
+        },
+        {
+          "id": "d",
+          "text": "Ilocano"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Maranao tradition is from Lanao region with separate mosque examples.",
+        "b": "Maguindanao is another Islamic ethnic group in Mindanao, not the Tausug.",
+        "d": "Ilocano is a non-Islamic ethnic group in the Philippines.",
+        "correct": "The Sheik Makdum Mosque as 'Tausug, original pre-1800' and states it 'represents early Tausug Islamic tradition' with 'Tausug: Sulu and Tawi-Tawi islands.'",
+        "takeaway": "The article identifies the Sheik Makdum Mosque as 'Tausug, original pre-1800' and states it 'represents early Tausug Islamic tradition' with 'Tausug: Sulu and Tawi-Tawi islands.'."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "CH"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-004-08-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.126756+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "12d4e26e-d0f3-4c85-9998-b371f90b8a87",
+      "article_id": "369fd847-ad5b-4214-b86b-68cd7f62c534",
+      "topic_id": "33b4645b-d35d-4cae-9bba-21dcdc4164a3",
+      "text": "How does the minaret function in traditional Philippine Islamic architecture differ from Ottoman and Middle Eastern minaret design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Philippine minarets are identical in size and design to Ottoman and Middle Eastern minarets, with no variation in architectural style or cultural adaptation"
+        },
+        {
+          "id": "b",
+          "text": "Philippine minarets are typically modest towers, often integrated with the main structure, rather than monumental separate elements as in Middle Eastern and Ottoman examples"
+        },
+        {
+          "id": "c",
+          "text": "Philippine minarets are purely decorative with no functional connection to call to prayer, serving only as aesthetic elements without religious significance"
+        },
+        {
+          "id": "d",
+          "text": "Philippine architecture lacks minarets entirely, as the design does not incorporate any vertical elements for religious purposes"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Philippine minarets differ significantly in scale and integration from Ottoman/Middle Eastern examples.",
+        "c": "Minarets remain functionally important for the call to prayer.",
+        "d": "Philippine Islamic architecture includes minarets, though in adapted form.",
+        "correct": "The minaret in Philippine Islamic architecture is typically a modest tower, often integrated with the main structure rather than a monumental separate element as in Middle Eastern or Ottoman examples. In some cases, the minaret emerges as part of the decorative wooden framework rather than a distinct architectural statement.'",
+        "takeaway": "In some cases, the minaret emerges as part of the decorative wooden framework rather than a distinct architectural statement.'."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-004-08-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.126756+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "2f758a32-9397-4ae2-a18a-dbfc886ac339",
+      "article_id": "369fd847-ad5b-4214-b86b-68cd7f62c534",
+      "topic_id": "33b4645b-d35d-4cae-9bba-21dcdc4164a3",
+      "text": "How does okir pattern decoration differ from Middle Eastern arabesques and Ottoman Iznik tilework?",
+      "options": [
+        {
+          "id": "a",
+          "text": "All three decorative traditions are identical in technique and appearance, with no significant differences in style or cultural context"
+        },
+        {
+          "id": "b",
+          "text": "Okir consists of bold, angular, deeply carved geometric wood forms; arabesques are interlocking vegetal/geometric patterns on tiled or painted surfaces; Iznik tilework uses colored glazed tiles with blue, white, and red"
+        },
+        {
+          "id": "c",
+          "text": "Okir is the most elaborate and complex of all Islamic decorative traditions, surpassing others in intricacy and cultural significance"
+        },
+        {
+          "id": "d",
+          "text": "Arabesques and Iznik are more sophisticated than okir because they use expensive materials, such as gold leaf and rare pigments, which are not found in okir"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Each tradition has distinct technical and aesthetic characteristics.",
+        "c": "Elaboration depends on regional resources and cultural priorities; okir demonstrates sophisticated adaptation.",
+        "d": "Material expense does not determine artistic sophistication; each tradition demonstrates mastery.",
+        "correct": "The article contrasts: 'Okir patterns are bold, angular, deeply carved geometric forms...These patterns are not arabesques in the Middle Eastern sense but incorporate local aesthetic sensibilities.' Ottoman uses 'Iznik tiles with blue, white, and red glazes' while Andalusian uses stucco.",
+        "takeaway": "The article contrasts: 'Okir patterns are bold, angular, deeply carved geometric forms...These patterns are not arabesques in the Middle Eastern sense but incorporate local aesthetic sensibilities.' Ottoman uses 'Iznik tiles with blue, white, and red glazes' while Andalusian uses stucco."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-004-08-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.126756+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "4a9a6df1-611a-402c-becb-c16814db19e3",
+      "article_id": "369fd847-ad5b-4214-b86b-68cd7f62c534",
+      "topic_id": "33b4645b-d35d-4cae-9bba-21dcdc4164a3",
+      "text": "What does the transition from traditional wooden Philippine Islamic mosques to modern concrete buildings like the Grand Mosque of Cotabato reveal about Islamic practice and cultural identity?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Modernization represents abandonment of Islamic architectural traditions and principles, leading to a loss of cultural identity"
+        },
+        {
+          "id": "b",
+          "text": "Concrete construction proves Islamic architecture is culturally irrelevant in contemporary contexts, as it does not adapt to modern needs"
+        },
+        {
+          "id": "c",
+          "text": "Retained Islamic spatial requirements (prayer hall, qibla, minaret, community functions) show continuity of Islamic tradition despite material and scale changes reflecting urbanization and population growth"
+        },
+        {
+          "id": "d",
+          "text": "Modernization indicates a rejection of indigenous Philippine architectural heritage, which is seen as incompatible with modern Islamic practices"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The article demonstrates continuity of Islamic principles despite material changes.",
+        "b": "The modern buildings actively maintain Islamic traditions while adapting to contemporary needs.",
+        "d": "Modern buildings maintain integration with community functions, continuing traditional synthesis.",
+        "correct": "About contemporary development: 'Retained: Islamic spatial requirements (prayer hall, qibla orientation), minaret symbolism, community and social functions. Changed: wooden construction becomes concrete; modest scale becomes urban monumental scale.' This demonstrates 'continuation of Philippine Islamic tradition into the contemporary period.'",
+        "takeaway": "Changed: wooden construction becomes concrete; modest scale becomes urban monumental scale.' This demonstrates 'continuation of Philippine Islamic tradition into the contemporary period.'."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-004-08-011",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.126756+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "40d7c2dc-81f9-473c-8dfe-e261a9f6ca9a",
+      "article_id": "369fd847-ad5b-4214-b86b-68cd7f62c534",
+      "topic_id": "33b4645b-d35d-4cae-9bba-21dcdc4164a3",
+      "text": "What architectural principle does Philippine Islamic architecture demonstrate through its integration of Islamic spatial requirements with indigenous Southeast Asian building practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Islamic architecture always imposes a single universal design regardless of local conditions, ignoring regional variations and cultural contexts"
+        },
+        {
+          "id": "b",
+          "text": "Indigenous traditions are incompatible with Islamic spatial requirements, leading to a complete replacement of local styles"
+        },
+        {
+          "id": "c",
+          "text": "Islamic spatial requirements (prayer hall, qibla orientation, minaret, decoration) can successfully synthesize with indigenous elevated wooden structures, ventilation design, and community gathering spaces"
+        },
+        {
+          "id": "d",
+          "text": "Philippine Islamic architecture is less sophisticated than imported Middle Eastern models, lacking the complexity and grandeur of traditional Islamic designs"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The article demonstrates Islamic architecture adapted successfully to local conditions.",
+        "b": "The article shows successful synthesis, not incompatibility.",
+        "d": "The article identifies Philippine Islamic architecture as representing 'sophisticated adaptation to local conditions...The wooden construction...okir carving...demonstrates mastery, not inferiority.'",
+        "correct": "The integration with indigenous architecture distinguishes Philippine Islamic from transplanted Arab or Persian models...Islamic mosques adopted these practices rather than imposing imported forms. This is architecture born from cultural contact and practical necessity, not imperial imposition.'",
+        "takeaway": "This is architecture born from cultural contact and practical necessity, not imperial imposition.'."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-004-08-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.126756+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "83c41b35-8bd9-40d8-8341-f00dcd62f172",
+      "article_id": "369fd847-ad5b-4214-b86b-68cd7f62c534",
+      "topic_id": "33b4645b-d35d-4cae-9bba-21dcdc4164a3",
+      "text": "Islamic architecture arrived in the Philippine archipelago during which centuries and developed primarily in which regions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "7th–8th centuries in Luzon and Visayas, where early trade routes facilitated cultural exchange"
+        },
+        {
+          "id": "b",
+          "text": "13th century in Mindanao and 9th–14th centuries in Sulu Archipelago"
+        },
+        {
+          "id": "c",
+          "text": "16th–17th centuries in the Manila area, influenced by colonial interactions"
+        },
+        {
+          "id": "d",
+          "text": "19th–20th centuries in Palawan, reflecting late historical developments"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "7th–8th centuries precedes some documented early arrivals (9th century Sulu) by 1-2 centuries.",
+        "c": "16th–17th centuries is later than the initial arrival; Manila became a Spanish colonial center.",
+        "d": "19th–20th centuries is the modern period when contemporary mosques were built.",
+        "correct": "Islam arrived in the Philippine archipelago through merchants and missionaries from Malaysia and Indonesia during the 14th–15th centuries. The primary Islamic communities developed in Mindanao (especially the Maguindanao and Lanao regions) and the Sulu Archipelago.'",
+        "takeaway": "The primary Islamic communities developed in Mindanao (especially the Maguindanao and Lanao regions) and the Sulu Archipelago.'."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "ID"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-004-08-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.126756+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "081141d5-4fee-4b19-9833-4d20a23f6bee",
+      "article_id": "aec393fa-0fb3-4b72-8ce2-774c4c2c756a",
+      "topic_id": "79bfd7c5-bbd8-4acc-ab15-ba437f394e57",
+      "text": "The Philippine electricity grid composition (2023) includes approximately what percentage of coal, and how does this affect operational carbon (B6-B7) compared to grid-decarbonized countries?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Philippines approximately 60-65% coal (2023 DOE data), 20-25% natural gas, 20-25% renewable, 5% other; coal-heavy grid results in higher operational carbon per kWh (approximately 0.6-0.8 kg CO2e/kWh) versus grid-decarbonized countries like Denmark (50%+ renewable, 0.2-0.3 kg CO2e/kWh)"
+        },
+        {
+          "id": "b",
+          "text": "Philippines has 0% coal; grid is entirely renewable, resulting in zero operational carbon from electricity, which is not currently feasible"
+        },
+        {
+          "id": "c",
+          "text": "Philippines has 80%+ coal; operational carbon is extremely high, making embodied carbon selection irrelevant in most cases"
+        },
+        {
+          "id": "d",
+          "text": "Grid composition is not tracked or regulated in Philippines; operational carbon estimates are not available, leading to uncertainty in carbon accounting"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Philippines grid is not 0% coal and not 100% renewable. Coal remains dominant fuel source despite renewable energy expansion targets.",
+        "c": "Grid is not 80%+ coal. While coal is significant, gas and renewables represent 40-50% combined, providing decarbonization pathway.",
+        "d": "Philippine Department of Energy (DOE) tracks grid composition and publishes annual energy statistics. Operational carbon estimates are available and should inform building design.",
+        "correct": "2023 Philippine grid: ~40-45% coal, ~20-25% natural gas, ~20-25% renewable (hydro, wind, solar, geothermal), ~5% other. This coal-heavy mix results in higher operational carbon per kWh consumed. Operational efficiency (HVAC, envelope, renewable on-site) becomes critical decarbonization lever in Philippines.",
+        "takeaway": "Philippine electricity grid composition (40-45% coal) results in higher operational carbon per kWh than grid-decarbonized countries. This makes embodied carbon reduction a higher priority and increases importance of on-site renewable energy and efficiency in Philippine buildings."
+      },
+      "explanation": null,
+      "code_citation": "Philippine Department of Energy Grid Composition; BERDE Rating System Context",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-005-10-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "85838bf6-e180-4782-96c2-cb7f7cc57b39",
+      "article_id": "aec393fa-0fb3-4b72-8ce2-774c4c2c756a",
+      "topic_id": "79bfd7c5-bbd8-4acc-ab15-ba437f394e57",
+      "text": "A project team is evaluating two material options with EPD data: Material A (imported from Germany) A1-A3 embodied carbon 0.8 kg CO2e/kg with A4 transport 0.15 kg CO2e/kg; Material B (sourced locally) A1-A3 embodied carbon 0.9 kg CO2e/kg with A4 transport 0.05 kg CO2e/kg. Total project material mass is 500,000 kg. Which material has lower total embodied carbon (A1-A5), and by how much?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Material B total (A1-A5): (0.9 + 0.05) × 500,000 = 475,000 kg CO2e. Material A total: (0.8 + 0.15) × 500,000 = 475,000 kg CO2e. Totals are equivalent; local sourcing benefits (A4 reduction) offset higher A1-A3 production emissions (Material B is preferred for Philippine context due to local supply chain)"
+        },
+        {
+          "id": "b",
+          "text": "Material A is lower; imported material always has lower embodied carbon than locally sourced because manufacturing efficiency in developed countries outweighs transport emissions"
+        },
+        {
+          "id": "c",
+          "text": "Material B is significantly lower; local sourcing reduces embodied carbon by 50% compared to import due to eliminated shipping and customs handling processes"
+        },
+        {
+          "id": "d",
+          "text": "Embodied carbon cannot be compared between imported and locally sourced materials; EPD values are incompatible across different national certification and testing standards"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Imported material's A4 transport (0.15) exceeds local sourcing (0.05); when summed, both options have identical total if A1-A3 differs by 0.1.",
+        "c": "Material B does not reduce embodied carbon by 50%; the reduction is approximately 10% in A1-A3 offset by lower A4.",
+        "d": "EPDs are standardized and comparable via ISO 14025 framework. Comparing imported and local materials is legitimate and often reveals A4 transport benefits of local sourcing.",
+        "correct": "Material A (A1-A5): (0.8 + 0.15) × 500,000 = 475,000 kg CO2e. Material B (A1-A5): (0.9 + 0.05) × 500,000 = 475,000 kg CO2e. Totals are equivalent numerically. However, Material B is preferred because local sourcing reduces A4 transport emissions (important for resilience and supply chain risk) and supports local economy despite slightly higher A1-A3 production impact.",
+        "takeaway": "Local sourcing often has marginally higher A1-A3 production emissions but significantly lower A4 transport emissions. Total embodied carbon may be equivalent or favoring local sourcing, with additional supply chain resilience and economic benefits."
+      },
+      "explanation": null,
+      "code_citation": "ICE Embodied Carbon Database; EPD Comparison Guidelines",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-005-10-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "c4ddee9c-2523-43ea-8d5b-a887f5530489",
+      "article_id": "7d26e59b-efc4-4ced-890b-6ec1dfee8254",
+      "topic_id": "e6f9f02d-8550-495d-bec6-9455b653849e",
+      "text": "What building did Antonio Toledo design in which architectural style?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Manila Metropolitan Theater in Art Deco style; Toledo is often confused with Juan Arellano who designed it"
+        },
+        {
+          "id": "B",
+          "text": "Manila City Hall in Neoclassical/Beaux-Arts style; Toledo was the master of classical proportions in government building design"
+        },
+        {
+          "id": "C",
+          "text": "Philippine General Hospital in Brutalist concrete; Toledo pioneered exposed concrete construction in Philippine healthcare architecture"
+        },
+        {
+          "id": "D",
+          "text": "Mapua Institute of Technology in Art Deco style; Toledo founded the school alongside Tomas Mapua"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Antonio Toledo was the premier Neoclassical/Beaux-Arts architect among the pensionado generation. His Manila City Hall is the Philippine government's most iconic Neoclassical building — featuring symmetrical facades, classical columns, pediments, and a monumental central tower. This reflects the American colonial preference for Neoclassicism as the appropriate architectural language for democratic government institutions. Toledo's other major works include: National Museum (Leyte Capitol), Cebu Provincial Capitol, Bureau of Customs, and Department of Tourism Building.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:47:15.491237+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "f7f3584b-6ecc-44c9-97d3-f86fc3036256",
+      "article_id": "7d26e59b-efc4-4ced-890b-6ec1dfee8254",
+      "topic_id": "e6f9f02d-8550-495d-bec6-9455b653849e",
+      "text": "Carlos Barretto was the first pensionado architect to graduate from an American university. What year did he graduate, and from which university?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1908 from Drexel University — Barretto was the first Filipino to graduate in architecture from an American university and organized the Philippine Institute of Architects after WWII"
+        },
+        {
+          "id": "B",
+          "text": "1911 from Cornell University — Barretto also founded the first architectural school in the Philippines, contributing significantly to architectural education"
+        },
+        {
+          "id": "C",
+          "text": "1905 from Ohio State University — Barretto was the first pensionado architect and also served as Consulting Architect of the Bureau of Public Works, influencing public infrastructure"
+        },
+        {
+          "id": "D",
+          "text": "1911 from the Pennsylvania Academy of Fine Arts — Barretto designed the Manila Metropolitan Theater in Art Deco style, a landmark in Philippine architecture"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Carlos Barretto (Drexel University, graduated 1908) is historically significant as the FIRST pensionado architect to complete an American architecture degree. This predates Tomas Mapua (Cornell, 1911), Juan Arellano (Penn Academy/Drexel, 1911), and Antonio Toledo (Ohio State, 1911). Barretto's career: (1) Second registered architect in the Philippines (after Mapua); (2) Pioneered the Division of Architecture at the Bureau of Public Works; (3) Organized the Philippine Institute of Architects after WWII; (4) Designed Art Deco Carnival infrastructures for the 1935 Philippine Carnival.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:47:15.491237+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "e3efd2a2-dcc4-40c1-b0b1-a6b5193fdedd",
+      "article_id": "7d26e59b-efc4-4ced-890b-6ec1dfee8254",
+      "topic_id": "e6f9f02d-8550-495d-bec6-9455b653849e",
+      "text": "What new building technologies did the American colonial period introduce to Philippine architecture?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Nail-less lashing with rattan and bamboo — used for seismic and typhoon resistance in all new American-period buildings, although not widely adopted"
+        },
+        {
+          "id": "B",
+          "text": "Reinforced concrete (terroconcrete), steel-framed skeleton construction, Kahn Truss System for floor slabs, and concrete hollow blocks (CHB) — these replaced traditional wood-and-stone construction for major buildings"
+        },
+        {
+          "id": "C",
+          "text": "Adobe and coral-stone masonry — adapted from Spanish colonial construction and improved with American engineering methods, though not as prevalent"
+        },
+        {
+          "id": "D",
+          "text": "Capiz-shell windows and nipa palm roofing — these were introduced during the American period as climate-responsive innovations, although they were more traditional than innovative"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The American colonial period (1898–1946) introduced fundamentally new building technologies: (1) REINFORCED CONCRETE (terroconcrete) — concrete with embedded steel reinforcement; (2) STEEL-FRAMED SKELETON CONSTRUCTION — steel columns and beams form a structural frame; (3) KAHN TRUSS SYSTEM — trussed bars within concrete molds for floor slabs and beams; (4) CONCRETE HOLLOW BLOCKS (CHB) — standardized modular concrete blocks that became the standard wall material.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:47:15.491237+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "719ef4d7-faae-4762-93ea-b31dda7ccfaf",
+      "article_id": "7d26e59b-efc4-4ced-890b-6ec1dfee8254",
+      "topic_id": "e6f9f02d-8550-495d-bec6-9455b653849e",
+      "text": "Juan Arellano designed the Manila Metropolitan Theater in which architectural style, and what happened to Manila's planned civic center during the American colonial period?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Art Deco; the civic center was never built — Burnham's planned Capitol Building was constructed as designed, following the original plans without any modifications"
+        },
+        {
+          "id": "B",
+          "text": "Art Deco and Streamline Modern; the civic center was partially realized — Manila City Hall (Toledo) and Metropolitan Theater (Arellano) were built, but the planned Philippine Capitol was not"
+        },
+        {
+          "id": "C",
+          "text": "Beaux-Arts Neoclassicism; the civic center was fully realized with all planned buildings constructed as designed, including the Capitol Building and other civic structures"
+        },
+        {
+          "id": "D",
+          "text": "Brutalist Modernism; the civic center was deferred until the post-war period, when new architectural styles were adopted for the remaining structures"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Juan Arellano's Manila Metropolitan Theater is the premier example of Philippine Art Deco. The Manila civic center was only partially realized under Burnham's plan: Built: Manila City Hall (Toledo, Beaux-Arts), Metropolitan Theater (Arellano, Art Deco), Manila Post Office (Arellano, Art Deco), Jones Bridge (Arellano, Art Deco). Not Built: Philippine Capitol Building (Burnham's centerpiece).",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.45,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:47:15.491237+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "3dd6b62f-18f9-48a1-99c5-0c698c678619",
+      "article_id": "7d26e59b-efc4-4ced-890b-6ec1dfee8254",
+      "topic_id": "e6f9f02d-8550-495d-bec6-9455b653849e",
+      "text": "What was NOT built from Daniel Burnham's 1905 plan for Manila?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The bayshore drive (now Roxas Boulevard) — this was never constructed due to funding constraints and subsequent urban development priorities"
+        },
+        {
+          "id": "B",
+          "text": "The radial avenue system radiating from the Luneta civic center — this was implemented but later altered significantly to accommodate modern traffic demands"
+        },
+        {
+          "id": "C",
+          "text": "The Philippine Capitol Building — the centerpiece of Burnham's civic axis was never constructed due to funding constraints and changing Commonwealth policies"
+        },
+        {
+          "id": "D",
+          "text": "The Burnham Park in Baguio — this was implemented and remains one of the most important green spaces in the Philippines, serving as a key recreational area"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Burnham's 1905 Manila plan envisioned a grand civic axis: the Rizal Monument at the south end, the Philippine Capitol Building at the north end, connected by a grand boulevard. However, the Capitol Building was never constructed due to: (1) Funding constraints — the U.S. colonial government prioritized other infrastructure; (2) Policy changes toward Commonwealth status. What WAS built: Roxas Boulevard (bayshore drive), radial avenues from Luneta, the park system, waterfront promenades. The unbuilt Capitol remains the most significant unrealized element of Burnham's vision.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:47:15.491237+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "5d6b2fa5-9c8e-43fd-a9d6-1786ec96ec77",
+      "article_id": "7d26e59b-efc4-4ced-890b-6ec1dfee8254",
+      "topic_id": "e6f9f02d-8550-495d-bec6-9455b653849e",
+      "text": "How did Daniel Burnham's 1905 plan for Manila model itself after his earlier 1901 plan for which American city?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The 1901 Chicago Plan — Burnham's famous plan for Chicago's lakefront development, which featured grand boulevards and a civic center"
+        },
+        {
+          "id": "B",
+          "text": "The 1901 McMillan Plan for Washington D.C. — which featured a monumental civic axis from the Capitol to the Washington Monument; Burnham modeled Manila's Rizal Monument-to-Capitol axis on this precedent"
+        },
+        {
+          "id": "C",
+          "text": "The 1901 San Francisco Plan — which featured earthquake-resistant construction standards for urban development, a pioneering approach at the time"
+        },
+        {
+          "id": "D",
+          "text": "The 1901 Boston Plan — which featured a park system and waterfront promenade, emphasizing urban green spaces"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The 1901 McMillan Plan (authored by Burnham, Daniel Chester French, and the McMillan Commission) reorganized Washington D.C.'s National Mall — removing Victorian-era structures, restoring the L'Enfant plan, and creating the iconic view from the Capitol Building to the Washington Monument. Burnham applied the same conceptual logic to Manila: (1) Create a grand civic axis from the Rizal Monument (south) to the planned Philippine Capitol Building (north); (2) Connect the civic center to the waterfront (Manila Bay); (3) Establish a park system and radial boulevards. The key formal analogy: Washington Monument (column/obelisk) axis → Rizal Monument (column/obelisk) axis; U.S. Capitol (government building) → planned Philippine Capitol (government building).",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:47:15.491237+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "3ef50cfb-1135-405d-96fd-a783222f9ee2",
+      "article_id": "7d26e59b-efc4-4ced-890b-6ec1dfee8254",
+      "topic_id": "e6f9f02d-8550-495d-bec6-9455b653849e",
+      "text": "The FEU Campus is recognized as the largest surviving ensemble of which architectural style, and who designed it?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Neo-Vernacular; designed by Francisco Mañosa in the 1970s for Far Eastern University, reflecting a blend of traditional and modern elements"
+        },
+        {
+          "id": "B",
+          "text": "Art Deco; designed by Pablo Antonio between 1938 and 1950 — earning a UNESCO Asia-Pacific Heritage Awards Honorable Mention in 2005"
+        },
+        {
+          "id": "C",
+          "text": "Brutalism; designed by Leandro Locsin in the 1960s as a concrete campus complex, emphasizing raw materials and structural form"
+        },
+        {
+          "id": "D",
+          "text": "Beaux-Arts Neoclassicism; designed by Juan Nakpil as part of his Art Deco to Neoclassical transition, showcasing grandiose and symmetrical design"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Pablo Antonio's FEU (Far Eastern University) Campus is his masterwork and the largest surviving ensemble of Art Deco architecture in Manila. Built between 1938 and 1950, the campus features Antonio's signature 'clean lines, plain surfaces, and bold rectangular masses' — a radical departure from Neoclassicism. The FEU Campus received a UNESCO Asia-Pacific Heritage Awards Honorable Mention in 2005. Antonio also designed multiple Manila theaters — Ideal Theater, Life Theater (1941), Scala Theater, Lyric Theater, and Forum Theater.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:47:15.641107+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "2f304c4d-f66b-4e8b-a741-c2d07d30a15e",
+      "article_id": "ab6d74a1-744c-4961-816a-b088bb707848",
+      "topic_id": "d5183ae2-2f63-421f-9e52-756d3113565f",
+      "text": "What is the relationship between the Board's rulemaking power and the Commission's review authority over Board policies and regulations?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Board has unlimited rulemaking authority without Commission oversight, operating as a fully autonomous regulatory body."
+        },
+        {
+          "id": "b",
+          "text": "The Board prescribes rules; the Commission must review and approve them before they take effect. This prevents Board overreach while allowing Board autonomy in disciplinary decisions, which are appealable directly to the Commission."
+        },
+        {
+          "id": "c",
+          "text": "The Commission prescribes rules; the Board has no input and serves only as an advisory body for professional standards."
+        },
+        {
+          "id": "d",
+          "text": "Board rules take effect immediately without any review, and the Commission intervenes only when formal complaints are filed."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The Commission approval requirement constrains Board rulemaking.",
+        "c": "The Board prescribes rules, though subject to Commission approval.",
+        "d": "Rules require Commission approval before taking effect.",
+        "correct": "The statute states: 'The policies, resolutions, rules and regulations, issued or promulgated by the Board shall be subject to review and approval of the Commission. However, the Board's decisions, resolutions or orders rendered in administrative cases shall be subject to review only if on appeal.'",
+        "takeaway": "This dual structure balances: in rulemaking, the Commission maintains oversight; in disciplinary matters, the Board has relative autonomy with direct appeal to the Commission."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-005-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.017953+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "1baf64ad-1de4-48ae-82c0-695642c6cd45",
+      "article_id": "dc020375-d1af-4213-959f-4f31e5f390b9",
+      "topic_id": "ba1e0c53-5f70-4f15-bac4-2e4b4fbd49bb",
+      "text": "Professional ethics for architects encompass which core principles?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only technical competence in structural design and building codes, ignoring broader ethical considerations"
+        },
+        {
+          "id": "b",
+          "text": "Maximizing client satisfaction regardless of broader consequences, which can lead to ethical dilemmas"
+        },
+        {
+          "id": "c",
+          "text": "Following cost constraints regardless of quality or safety concerns, potentially compromising project integrity"
+        },
+        {
+          "id": "d",
+          "text": "Integrity (honesty), competence (qualified work), duty to client, and duty to public welfare"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Ethics extend beyond technical competence to honesty and responsibility.",
+        "b": "Client satisfaction cannot override professional standards or public welfare.",
+        "c": "Cost constraints cannot justify compromising safety or quality.",
+        "correct": "Professional ethics include integrity (honest representation of capabilities and performance), competence (designing within one's knowledge or engaging qualified consultants), duty to client (faithful representation of interests), and duty to public (ensuring safety, code compliance, and no environmental or community harm).",
+        "takeaway": "Professional ethics include integrity (honest representation of capabilities and performance), competence (designing within one's knowledge or engaging qualified consultants), duty to client (faithful representation of interests), and duty to public (ensuring safety, code compliance, and no environmental or community harm)."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-001-13-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "1fc73a28-9d1b-437c-9271-b241560b5fd7",
+      "article_id": "dc020375-d1af-4213-959f-4f31e5f390b9",
+      "topic_id": "ba1e0c53-5f70-4f15-bac4-2e4b4fbd49bb",
+      "text": "Passive design strategies in sustainable architecture include which of the following?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Simplified designs that eliminate all technological innovation, focusing solely on traditional methods"
+        },
+        {
+          "id": "b",
+          "text": "Only the installation of mechanical HVAC systems and renewable energy panels, which are not passive strategies but active systems"
+        },
+        {
+          "id": "c",
+          "text": "Building orientation for optimal solar gain, natural ventilation, thermal mass, shading, and daylighting—strategies using form and materials to minimize energy consumption without mechanical systems"
+        },
+        {
+          "id": "d",
+          "text": "Exclusive reliance on occupant behavior change without design support, which is not a sustainable strategy"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Passive design is sophisticated and intentional.",
+        "b": "Active systems are important but supplement rather than replace passive design.",
+        "d": "Good design supports rather than depends on willpower; passive strategies work regardless of occupant behavior.",
+        "correct": "Passive strategies use fundamental design decisions (orientation, materials, form, openings) to regulate temperature, light, and ventilation. They reduce energy consumption and operating costs while improving occupant experience.",
+        "takeaway": "They reduce energy consumption and operating costs while improving occupant experience."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-001-13-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "71d79eb1-301c-44e8-9adc-ffb15c16ac39",
+      "article_id": "dc020375-d1af-4213-959f-4f31e5f390b9",
+      "topic_id": "ba1e0c53-5f70-4f15-bac4-2e4b4fbd49bb",
+      "text": "How do 'water conservation' and 'ecological stewardship' differ as dimensions of architectural responsibility?",
+      "options": [
+        {
+          "id": "a",
+          "text": "These concepts are identical and the distinction is meaningless, as both aim to reduce environmental impact without specific focus"
+        },
+        {
+          "id": "b",
+          "text": "Water conservation addresses efficient fixtures and recycling; ecological stewardship addresses habitat preservation, permeable surfaces, and ecosystem protection—both are essential and sometimes interconnected sustainable design strategies"
+        },
+        {
+          "id": "c",
+          "text": "Water conservation is a technical concern; ecological stewardship is a separate philosophical concern unrelated to design, focusing more on theoretical aspects"
+        },
+        {
+          "id": "d",
+          "text": "Ecological stewardship is more important and makes water conservation unnecessary, as it encompasses broader environmental goals"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "They are distinct dimensions of comprehensive sustainability.",
+        "c": "Both are design concerns with real consequences.",
+        "d": "Both are needed; they are not substitutes for each other.",
+        "correct": "Both are essential dimensions of sustainability. Water conservation addresses precious resource use. Ecological stewardship addresses broader ecosystem health: habitat preservation, permeable surfaces reducing storm-water pollution, green infrastructure supporting biodiversity. They are distinct but complementary.",
+        "takeaway": "They are distinct but complementary."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-001-13-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "24eb40a9-99af-4744-8dfe-b20ee851c488",
+      "article_id": "dc020375-d1af-4213-959f-4f31e5f390b9",
+      "topic_id": "ba1e0c53-5f70-4f15-bac4-2e4b4fbd49bb",
+      "text": "In the context of 'circular economy' principles in architecture, what is the architect's responsibility?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Prioritize virgin materials for strength and durability; recycled materials are inferior and may compromise structural integrity in critical applications"
+        },
+        {
+          "id": "b",
+          "text": "Design buildings for linear extraction-manufacture-use-discard cycles; circularity is impossible in architecture due to inherent material limitations and lifecycle constraints"
+        },
+        {
+          "id": "c",
+          "text": "Circular design applies only to products, not buildings, because buildings have fixed lifespans and cannot be easily adapted to circular principles"
+        },
+        {
+          "id": "d",
+          "text": "Select materials that can be reused or recycled, design buildings whose components can be disassembled and repurposed, specify modular systems allowing adaptation and reuse over time"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "High-quality recycled materials often perform excellently; material choice depends on application, not blanket preference.",
+        "b": "Circularity is increasingly feasible and increasingly required.",
+        "c": "Circular principles apply powerfully to buildings, which have long life spans and significant material mass.",
+        "correct": "Circular economy principles mean designing buildings to be disassembled and reused rather than demolished and landfilled. Material selection, modular systems, and adaptable design enable buildings to serve changing uses, reducing waste and resource consumption.",
+        "takeaway": "Material selection, modular systems, and adaptable design enable buildings to serve changing uses, reducing waste and resource consumption."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "SYS"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-001-13-012",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "e9a0760e-8506-4ecd-8cfe-ccee117f3029",
+      "article_id": "dc020375-d1af-4213-959f-4f31e5f390b9",
+      "topic_id": "ba1e0c53-5f70-4f15-bac4-2e4b4fbd49bb",
+      "text": "An architect is designing a sustainable office building. Which decision best demonstrates integrated sustainable thinking?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Minimize cost by using cheap materials regardless of durability or environmental impact, which can lead to higher long-term costs"
+        },
+        {
+          "id": "b",
+          "text": "Focus exclusively on aesthetic innovation without considering environmental or social consequences, potentially compromising sustainability"
+        },
+        {
+          "id": "c",
+          "text": "Optimize site orientation for passive solar gain, design natural ventilation to reduce HVAC loads, specify low-toxicity materials, and employ these strategies alongside efficient active systems"
+        },
+        {
+          "id": "d",
+          "text": "Install solar panels on the roof to offset energy consumption while ignoring site orientation, window placement, and ventilation, which limits overall efficiency"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Cost-cutting that sacrifices durability violates material stewardship principles.",
+        "b": "Aesthetic expression and environmental responsibility must be integrated, not opposed.",
+        "d": "While renewables matter, relying on them without reducing demand first is inefficient.",
+        "correct": "Integrated sustainable design addresses multiple dimensions simultaneously: passive strategies (orientation, ventilation) reduce loads; material stewardship (durability, low-toxicity) addresses life-cycle impact; active systems (efficient HVAC, renewable energy) supplement passive approaches. These work together.",
+        "takeaway": "These work together."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-001-13-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "b25a8246-5f31-4dca-a696-8e1591ef041e",
+      "article_id": "dc020375-d1af-4213-959f-4f31e5f390b9",
+      "topic_id": "ba1e0c53-5f70-4f15-bac4-2e4b4fbd49bb",
+      "text": "What is 'material stewardship' in architectural responsibility?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Responsible material selection considering environmental impact of production, durability, renewable/recycled content, toxicity, sourcing ethics, and life-cycle consequences"
+        },
+        {
+          "id": "b",
+          "text": "Avoiding all artificial or manufactured materials in favor of natural materials only, which may limit design flexibility and innovation"
+        },
+        {
+          "id": "c",
+          "text": "Using only traditional materials from the vernacular of a region, emphasizing cultural heritage over modern technological advancements"
+        },
+        {
+          "id": "d",
+          "text": "Selecting materials based only on lowest cost and fastest installation, potentially compromising quality and sustainability"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Responsible manufactured materials often outperform 'natural' materials environmentally and ethically.",
+        "c": "While vernacular wisdom matters, contemporary buildings may require contemporary materials used responsibly.",
+        "d": "Cost-focused selection ignores environmental and ethical consequences.",
+        "correct": "Material stewardship means understanding and accounting for environmental and social consequences of material choices: energy and water in production, transportation emissions, durability (longer lifespan = fewer replacements), recycled/renewable content, worker conditions, and end-of-life recyclability.",
+        "takeaway": "Material stewardship means understanding and accounting for environmental and social consequences of material choices: energy and water in production, transportation emissions, durability (longer lifespan = fewer replacements), recycled/renewable content, worker conditions, and end-of-life recyclability."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-001-13-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "ed92c12c-56ed-421f-98be-96ef20469acd",
+      "article_id": "dc020375-d1af-4213-959f-4f31e5f390b9",
+      "topic_id": "ba1e0c53-5f70-4f15-bac4-2e4b4fbd49bb",
+      "text": "In the Philippine context with high typhoon vulnerability, what specific architectural responsibility should guide design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Copy vernacular forms exactly without understanding the principles underlying their climate resilience, which may lead to ineffective adaptation"
+        },
+        {
+          "id": "b",
+          "text": "Design for wind and water resistance, structural redundancy, materials and details proven in tropical conditions, engagement with vernacular traditions adapted to typhoon resilience"
+        },
+        {
+          "id": "c",
+          "text": "Design strategies from temperate low-risk regions; climate variation is not the architect's responsibility, focusing instead on aesthetic appeal"
+        },
+        {
+          "id": "d",
+          "text": "Prioritize cost reduction over climate adaptation due to limited resources, potentially compromising safety and durability"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Understanding underlying principles enables better contemporary application than historical imitation.",
+        "c": "Climate conditions are central to architectural responsibility; ignoring them is irresponsible.",
+        "d": "Budget limitations do not justify compromising safety; resilience should be integrated into cost planning.",
+        "correct": "The Philippine context requires climate-responsive design grounded in understanding: why vernacular architecture (elevated construction, strong framing, wind-resistant detailing) works in these conditions. Contemporary design must apply these proven principles using modern materials. This is ethical responsibility.",
+        "takeaway": "This is ethical responsibility."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-001-13-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "21696a04-9c9d-44d4-95b2-1c814649c823",
+      "article_id": "dc020375-d1af-4213-959f-4f31e5f390b9",
+      "topic_id": "ba1e0c53-5f70-4f15-bac4-2e4b4fbd49bb",
+      "text": "Given the Philippines' challenges of climate change vulnerability, rapid urbanization, and housing shortage, what is the appropriate focus for Filipino architects' social responsibility?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ignore local conditions and apply international best practices without adaptation, which could lead to ineffective solutions"
+        },
+        {
+          "id": "b",
+          "text": "Defer social responsibility to government and NGOs; architects should focus only on technical design, avoiding broader societal issues"
+        },
+        {
+          "id": "c",
+          "text": "Address climate-resilient design, sustainable high-density housing, vernacular knowledge engagement, and environmental restoration—responding to specific national challenges"
+        },
+        {
+          "id": "d",
+          "text": "Focus exclusively on luxury residential architecture for wealthy clients, neglecting broader societal needs"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "International solutions must be adapted to Philippine climate, culture, and resources.",
+        "b": "Architects have professional obligation to contribute to public good through design solutions.",
+        "d": "Luxury architecture ignores the majority's needs; responsibility requires addressing broader community needs.",
+        "correct": "The Philippine context demands architects address specific challenges: designing climate-resilient buildings in a typhoon-prone nation, creating sustainable high-density housing for rapid urbanization and housing shortage, learning from vernacular traditions (bahay kubo principles), and contributing to environmental restoration. This is contextual professional responsibility.",
+        "takeaway": "This is contextual professional responsibility."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "PH"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-001-13-013",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "c1634584-4764-46d5-bcf3-3093356cc3fd",
+      "article_id": "f22ba499-94ce-41a3-999a-2d9ffdbc0b57",
+      "topic_id": "ccb76607-4b40-4710-8a16-7ff86774530b",
+      "text": "What is the key principle of lifecycle cost analysis in site planning?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Total cost = Initial capital cost only; maintenance is a separate operational concern, not factored into initial planning"
+        },
+        {
+          "id": "b",
+          "text": "Total cost = Initial capital cost plus annual maintenance costs plus eventual replacement costs over the useful life of the element"
+        },
+        {
+          "id": "c",
+          "text": "Materials with the lowest initial purchase price always have the lowest total cost, which simplifies budgeting"
+        },
+        {
+          "id": "d",
+          "text": "Maintenance costs should be ignored in site planning; they are not predictable and can vary widely"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Student excludes maintenance from cost calculation",
+        "b": "Lifecycle cost = capital + (maintenance × years) + replacement. This principle ensures sustainable choices over 20+ years.",
+        "c": "Student assumes cheap = economical; ignores maintenance burden",
+        "d": "Student dismisses maintenance cost analysis as speculative",
+        "correct": "Lifecycle cost = capital + (maintenance × years) + replacement. This principle ensures sustainable choices over 20+ years.",
+        "takeaway": "Compare materials using total lifecycle cost, not just initial price."
+      },
+      "explanation": null,
+      "code_citation": "LEA-PLAN-004-05: Lifecycle Cost Analysis section",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-004-05-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:38.324164+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "bf23dc0b-86ba-4320-9b5c-850a26a9cb14",
+      "article_id": "4e28889a-cba3-4bf4-805c-ff0526910ee3",
+      "topic_id": "9a2ae75d-1981-46a9-818a-2ae12df3f36f",
+      "text": "What is a directive change and how does it differ from a standard change order?",
+      "options": [
+        {
+          "id": "a",
+          "text": "directive change is only for cost reductions and cannot be used for schedule adjustments"
+        },
+        {
+          "id": "b",
+          "text": "directive change is an owner direction requiring specific modifications before cost and schedule impacts are fully determined, with final pricing determined later"
+        },
+        {
+          "id": "c",
+          "text": "directive change cannot affect the schedule, and is limited to minor adjustments"
+        },
+        {
+          "id": "d",
+          "text": "Directive changes require the least documentation and are typically used for urgent modifications"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Overly restrictive; directive changes can increase, decrease, or neutrally affect cost.",
+        "c": "Contradicts reality; directive changes affect schedule like any other scope modification.",
+        "d": "Contradicts best practice; directive changes require careful documentation since pricing is finalized later.",
+        "correct": "Directive changes are owner directives for immediate scope modification when final impacts cannot be determined precisely beforehand.",
+        "takeaway": "Directive changes are owner orders to proceed with modifications before costs are fully determined; final pricing comes later."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-016-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.526003+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "b82974e7-8159-4c51-a6c7-35adaca31a63",
+      "article_id": "4e28889a-cba3-4bf4-805c-ff0526910ee3",
+      "topic_id": "9a2ae75d-1981-46a9-818a-2ae12df3f36f",
+      "text": "What information must be included in a change order proposal?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only the cost estimate for the changed work, excluding any schedule impacts or additional documentation"
+        },
+        {
+          "id": "b",
+          "text": "Description of the work change, specifications, drawings, cost estimate, and schedule impact analysis"
+        },
+        {
+          "id": "c",
+          "text": "Only the schedule delay impact, without any cost estimates or detailed descriptions"
+        },
+        {
+          "id": "d",
+          "text": "The change order cannot include drawings, as they are considered separate documents"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Omits critical information; proposals must include work description, specifications, drawings, and schedule impact.",
+        "c": "Omits cost information; proposals must include both cost and schedule impacts.",
+        "d": "Contradicts best practice; drawings are essential to communicate the scope change clearly.",
+        "correct": "A complete change order proposal documents the scope change, technical requirements, visual representation, cost estimate, and time impact.",
+        "takeaway": "Change order proposals must include work description, specifications, drawings, cost estimate, and schedule impact analysis."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-016-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.526003+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "8b3cfaee-a495-4da3-bb63-8672b766a243",
+      "article_id": "4e28889a-cba3-4bf4-805c-ff0526910ee3",
+      "topic_id": "9a2ae75d-1981-46a9-818a-2ae12df3f36f",
+      "text": "How should schedule impacts from changes be addressed in the change order documentation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Schedule impacts should never be documented, as they are considered part of the normal project adjustments"
+        },
+        {
+          "id": "b",
+          "text": "Only cost impacts are documented; schedule changes are handled separately, often through informal agreements"
+        },
+        {
+          "id": "c",
+          "text": "The change order quantifies schedule delay and establishes a revised substantial completion date accounting for time impacts"
+        },
+        {
+          "id": "d",
+          "text": "Schedule impacts are ignored if the change is owner-directed, assuming the owner accepts the risk"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Omits critical information; schedule impact documentation is essential to prevent disputes.",
+        "b": "Splits the change order inappropriately; both cost and schedule must be in the change order for complete documentation.",
+        "d": "Creates risk; owner-directed delays still require formal documentation to protect the contractor from liquidated damages.",
+        "correct": "Change orders must address both cost and schedule; time extensions are formalized to avoid liquidated damages for owner-directed delays.",
+        "takeaway": "Change orders must quantify schedule impacts and establish revised completion dates to avoid liquidated damages disputes."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-016-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.526003+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "e3543d1e-ee81-4d1e-bfda-6cc4da93acab",
+      "article_id": "c36a3b99-3f1c-4478-9c38-be9f76697d6b",
+      "topic_id": "afbf5d3b-1d68-47ec-b0dc-a788267ce0d8",
+      "text": "What does a contractor's application for payment typically include?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only a request for a specific dollar amount, without any supporting documentation or breakdown of costs"
+        },
+        {
+          "id": "b",
+          "text": "Descriptions of completed work, supporting documentation, and cost claimed for each item"
+        },
+        {
+          "id": "c",
+          "text": "Only the contractor's statement that work is complete, which does not provide sufficient detail for verification"
+        },
+        {
+          "id": "d",
+          "text": "Lists of all future work to be performed, which are not relevant to the current payment application"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Oversimplifies applications; they must include detailed work descriptions and supporting documentation, not just an amount.",
+        "c": "Confuses claims with minimal support; applications must include supporting documentation substantiating the work and costs claimed.",
+        "d": "Contradicts the purpose; applications describe past work performed, not future work to be done.",
+        "correct": "Applications for payment include detailed work descriptions, invoices, and documentation supporting the costs claimed.",
+        "takeaway": "Applications for payment must detail the work performed with supporting documentation like invoices and subcontractor receipts."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-014-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.526003+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "327e00eb-bcb4-4c73-b7c1-0e36a4557a90",
+      "article_id": "79bb710e-4b46-4e5a-b781-4dd864aa6ddc",
+      "topic_id": "048666eb-6f35-47a9-9ded-f8e3ad656154",
+      "text": "The Farnsworth House was constructed during which years?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1936–1938"
+        },
+        {
+          "id": "b",
+          "text": "1943–1945"
+        },
+        {
+          "id": "c",
+          "text": "1946–1951"
+        },
+        {
+          "id": "d",
+          "text": "1952–1955"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "1936–1938 is too early; this predates the Farnsworth House project.",
+        "b": "1943–1945 is before the project began.",
+        "d": "1952–1955 is after completion.",
+        "correct": "The Farnsworth House was constructed 1946–1951. Mies and Farnsworth met in late 1945; design work occurred after, with construction beginning in 1946.",
+        "takeaway": "Mies and Farnsworth met in late 1945; design work occurred after, with construction beginning in 1946."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "CH"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-008-03B-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.729652+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "75d1eb90-9dea-40cc-b41e-ffeb251f1b07",
+      "article_id": "79bb710e-4b46-4e5a-b781-4dd864aa6ddc",
+      "topic_id": "048666eb-6f35-47a9-9ded-f8e3ad656154",
+      "text": "In the Seagram Building (1954–1958), the bronze I-beams visible on the facade serve what architectural purpose?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Non-structural bronze I-beam elements applied to the facade to visually express the structural rhythm hidden beneath fire-code-mandated concrete casing"
+        },
+        {
+          "id": "b",
+          "text": "Structural columns that directly support the building's weight and transfer gravity loads to the foundation system below"
+        },
+        {
+          "id": "c",
+          "text": "Cladding material intended to disguise the building as a traditional masonry structure with load-bearing exterior walls"
+        },
+        {
+          "id": "d",
+          "text": "Purely aesthetic ornament with no relationship to the building's structural system or its internal load-bearing framework"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "The bronze I-beams do NOT carry structural loads. The actual steel frame is hidden beneath fire-code-mandated concrete cladding. This is the most common factual error about the Seagram Building.",
+        "c": "The I-beams do not disguise the building as masonry; they express (suggest) the steel structure beneath, even though they are not structural themselves.",
+        "d": "While non-structural, the I-beams are philosophically significant — they represent Mies's desire for structural honesty constrained by fire codes, not mere decoration.",
+        "correct": "The bronze I-beams are non-structural. American fire codes required all structural steel to be encased in concrete for fireproofing, concealing the actual structure. Mies applied non-structural bronze-toned I-beams to the facade to visually suggest the structural rhythm hidden within — achieving 'honest expression' through a non-structural appliqué. This famous paradox is one of the most tested details in modern architecture.",
+        "takeaway": "This famous paradox is one of the most tested details in modern architecture."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "ST"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-008-03B-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.729652+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "ead45cde-a15b-4afc-a177-8431a30f47dd",
+      "article_id": "79bb710e-4b46-4e5a-b781-4dd864aa6ddc",
+      "topic_id": "048666eb-6f35-47a9-9ded-f8e3ad656154",
+      "text": "The Barcelona Pavilion (1929, reconstructed 1986) was designed by which architect as an expression of philosophical minimalism?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le Corbusier, who designed the Villa Savoie and the Unite d'Habitation"
+        },
+        {
+          "id": "b",
+          "text": "Ludwig Mies van der Rohe"
+        },
+        {
+          "id": "c",
+          "text": "Walter Gropius, founder of the Bauhaus school of design and architecture"
+        },
+        {
+          "id": "d",
+          "text": "Marcel Breuer, known for tubular steel furniture and brutalist buildings"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Le Corbusier designed Villa Savoye and other works demonstrating the Five Points.",
+        "c": "Gropius designed the Bauhaus Building and other structures.",
+        "d": "Marcel Breuer designed the Wassily Chair and other furniture.",
+        "correct": "Ludwig Mies van der Rohe designed the Barcelona Pavilion, which uses only free-standing steel columns, glass, and stone planes—demonstrating pure spatial and material minimalism.",
+        "takeaway": "Ludwig Mies van der Rohe designed the Barcelona Pavilion, which uses only free-standing steel columns, glass, and stone planes—demonstrating pure spatial and material minimalism."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "ID"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-008-03B-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.729652+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "f93dd3d4-224a-415b-b5bd-3233f346c7c4",
+      "article_id": "79bb710e-4b46-4e5a-b781-4dd864aa6ddc",
+      "topic_id": "048666eb-6f35-47a9-9ded-f8e3ad656154",
+      "text": "'Less is more' should not be misunderstood as mere simplicity or austerity. What does it actually represent?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The elimination of all beauty in favor of pure function, disregarding aesthetic considerations in architectural design"
+        },
+        {
+          "id": "b",
+          "text": "Achieving maximum spatial and material beauty through minimum, essential elements; refined reduction, not poverty or lack"
+        },
+        {
+          "id": "c",
+          "text": "The rejection of all materials except concrete, focusing solely on the use of this single material for all structural and aesthetic purposes"
+        },
+        {
+          "id": "d",
+          "text": "The belief that simple buildings are always superior to complex ones, advocating for a minimalist approach in all architectural endeavors"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Mies pursued beauty through essential means, not elimination of beauty.",
+        "c": "Mies worked with multiple materials; material choice isn't the point.",
+        "d": "Mies's philosophy is about essence, not inherent superiority of simplicity.",
+        "correct": "'Less is more' is sophisticated reduction, not austerity. Mies's buildings are expensive, luxurious, and proportionally complex—they achieve profundity through elimination of excess, not elimination of quality.",
+        "takeaway": "Mies's buildings are expensive, luxurious, and proportionally complex—they achieve profundity through elimination of excess, not elimination of quality."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-008-03B-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.729652+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "e181cc37-7bde-4828-8c2b-7d25a0ce7f83",
+      "article_id": "79bb710e-4b46-4e5a-b781-4dd864aa6ddc",
+      "topic_id": "048666eb-6f35-47a9-9ded-f8e3ad656154",
+      "text": "Which architect's foundational axiom—'less is more'—became the philosophy of architectural minimalism?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Louis Sullivan, known for his emphasis on form following function in architectural design"
+        },
+        {
+          "id": "b",
+          "text": "Le Corbusier, who advocated for the use of pilotis and open floor plans in modern architecture"
+        },
+        {
+          "id": "c",
+          "text": "Ludwig Mies van der Rohe"
+        },
+        {
+          "id": "d",
+          "text": "Walter Gropius, a pioneer of the Bauhaus movement and modernist architecture"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Louis Sullivan's axiom was 'form follows function,' not 'less is more.'",
+        "b": "Le Corbusier pursued functionalism and complexity, not reduction to essence.",
+        "d": "Gropius founded the Bauhaus with principles of integration, not Miesian reduction.",
+        "correct": "'Less is more' is Ludwig Mies van der Rohe's foundational principle. It expresses his belief that maximum spatial and material beauty emerges from minimum essential elements.",
+        "takeaway": "It expresses his belief that maximum spatial and material beauty emerges from minimum essential elements."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "ID"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-008-03B-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.729652+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "d78c7967-cac6-4777-b9eb-a9b4ac2ed3e9",
+      "article_id": "79bb710e-4b46-4e5a-b781-4dd864aa6ddc",
+      "topic_id": "048666eb-6f35-47a9-9ded-f8e3ad656154",
+      "text": "Mies van der Rohe's concept of 'universal space' suggests that [blank].",
+      "options": [
+        {
+          "id": "a",
+          "text": "buildings should be designed to serve specific functional programs, which contradicts the idea of universal space"
+        },
+        {
+          "id": "b",
+          "text": "a geometrically perfect spatial container can accommodate any activity without imposing predetermined uses"
+        },
+        {
+          "id": "c",
+          "text": "all buildings should look identical regardless of location or purpose, which is a misinterpretation of the concept"
+        },
+        {
+          "id": "d",
+          "text": "space must be subdivided into specialized rooms for different functions, which is contrary to the universal space idea"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This is the opposite; universal space transcends specific program.",
+        "c": "While Mies believed in universal principles, he didn't require identical designs.",
+        "d": "Universal space prioritizes openness and flexibility, not specialization.",
+        "correct": "Universal space is a neutral, refined container that can flexibly accommodate any activity. This reflects Mies's belief that pure spatial and material beauty transcends specific program.",
+        "takeaway": "This reflects Mies's belief that pure spatial and material beauty transcends specific program."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-008-03B-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.729652+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "8c2097e1-6bb7-4b74-8579-0cb83c5626cb",
+      "article_id": "39f480ed-755f-499a-935f-d339e6bb3c87",
+      "topic_id": "985b2164-13d5-4778-bddd-07e1e29a95df",
+      "text": "Mughal emperor Akbar ruled from which dates and established foundational Mughal architectural patronage that synthesized Persian and Indian forms?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1526–1605"
+        },
+        {
+          "id": "b",
+          "text": "1556–1605"
+        },
+        {
+          "id": "c",
+          "text": "1628–1658"
+        },
+        {
+          "id": "d",
+          "text": "1658–1707"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "1526 marks the Mughal Empire's beginning under Babur, not Akbar's reign.",
+        "c": "1628–1658 dates Shah Jahan's reign, not Akbar's.",
+        "d": "1658–1707 dates Aurangzeb's reign.",
+        "correct": "'Akbar (r. 1556–1605)' as founder of Mughal architectural patronage and synthesizer of Hindu-Islamic forms.",
+        "takeaway": "1556–1605)' as founder of Mughal architectural patronage and synthesizer of Hindu-Islamic forms."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "CH"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-004-07-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.126756+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "1b948c97-d073-4b93-9a7d-96b3c350177f",
+      "article_id": "39f480ed-755f-499a-935f-d339e6bb3c87",
+      "topic_id": "985b2164-13d5-4778-bddd-07e1e29a95df",
+      "text": "What does the relationship between the Taj Mahal's garden and building reveal about Mughal cosmological and spiritual vision?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The garden is purely decorative and serves no symbolic function, focusing solely on aesthetic appeal"
+        },
+        {
+          "id": "b",
+          "text": "The building is the primary focus; the garden is a secondary setting, providing a backdrop to the architectural marvel"
+        },
+        {
+          "id": "c",
+          "text": "The charbagh represents the Islamic paradise garden, and the building's modular proportions reflect mathematical cosmology; together they express eternal love and divine perfection"
+        },
+        {
+          "id": "d",
+          "text": "The garden and building are unrelated aesthetic choices made independently, reflecting the eclectic tastes of the era"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The garden has symbolic and spiritual significance, not merely decorative.",
+        "b": "The article emphasizes garden and building as 'unified composition' and 'equal partner.'",
+        "d": "The article describes intentional cosmological integration of garden and architecture.",
+        "correct": "The charbagh represents the Islamic paradise garden of the Quran, divided into four rivers...Walking through a Mughal garden, the visitor experiences a progression from earthly garden to the building's sanctuary, mirroring spiritual ascent.'",
+        "takeaway": "The article states: 'The charbagh represents the Islamic paradise garden of the Quran, divided into four rivers...Walking through a Mughal garden, the visitor experiences a progression from earthly garden to the building's sanctuary, mirroring spiritual ascent.'."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-004-07-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.126756+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "5b86551e-050f-4527-b035-34f8fbd1daa4",
+      "article_id": "39f480ed-755f-499a-935f-d339e6bb3c87",
+      "topic_id": "985b2164-13d5-4778-bddd-07e1e29a95df",
+      "text": "Which comparison accurately distinguishes Mughal material strategy from Andalusian and Ottoman approaches?",
+      "options": [
+        {
+          "id": "a",
+          "text": "All three traditions use identical materials with no regional distinction, suggesting a uniform approach to material selection"
+        },
+        {
+          "id": "b",
+          "text": "Mughal uses white marble with semi-precious stone inlay; Andalusian uses stucco and tile; Ottoman uses stone and marble with Iznik tilework"
+        },
+        {
+          "id": "c",
+          "text": "Mughal uses only brick; Ottoman uses only stone; Andalusian uses only wood, each reflecting unique regional resources"
+        },
+        {
+          "id": "d",
+          "text": "All three traditions avoid expensive decorative materials, focusing instead on simplicity and cost-effectiveness"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Each tradition employs distinct materials reflecting regional availability and aesthetic priorities.",
+        "c": "All three traditions employ varied materials; these characterizations are inaccurate.",
+        "d": "All three traditions employ expensive decorative materials; cost is not a distinguishing factor.",
+        "correct": "Mughal 'white marble (often with semi-precious stone inlay—jade, lapis lazuli, carnelian, turquoise)'; Andalusian 'stucco, carved wood, glazed tile'; Ottoman 'stone and marble replace brick...Iznik tiles with blue, white, and red glazes.'",
+        "takeaway": "The article describes: Mughal 'white marble (often with semi-precious stone inlay—jade, lapis lazuli, carnelian, turquoise)'; Andalusian 'stucco, carved wood, glazed tile'; Ottoman 'stone and marble replace brick...Iznik tiles with blue, white, and red glazes.'."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-004-07-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.126756+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "a25a7ea9-e1e4-4586-90a8-eea03dc38724",
+      "article_id": "39f480ed-755f-499a-935f-d339e6bb3c87",
+      "topic_id": "985b2164-13d5-4778-bddd-07e1e29a95df",
+      "text": "The Taj Mahal construction spanned from 1632 to which completion date, with the mausoleum itself completed in 1648 and the surrounding complex finished in the second date?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1638"
+        },
+        {
+          "id": "b",
+          "text": "1648"
+        },
+        {
+          "id": "c",
+          "text": "1653"
+        },
+        {
+          "id": "d",
+          "text": "1658"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "1638 is during construction but not the final completion date.",
+        "b": "1648 marks the mausoleum completion, not the full complex.",
+        "d": "1658 marks Shah Jahan's death, not the Taj Mahal's completion.",
+        "correct": "Taj Mahal (Mughal, 1632–1653 CE)' with 'mausoleum completed 1648, surrounding complex finished 1653.'",
+        "takeaway": "The article states: 'Taj Mahal (Mughal, 1632–1653 CE)' with 'mausoleum completed 1648, surrounding complex finished 1653.'."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "CH"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-004-07-012",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.126756+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "ce004fbd-ecfe-4608-9da9-ef8128176e67",
+      "article_id": "39f480ed-755f-499a-935f-d339e6bb3c87",
+      "topic_id": "985b2164-13d5-4778-bddd-07e1e29a95df",
+      "text": "Which white marble mausoleum built by Shah Jahan (1632–1653 CE) features a double-shell dome, semi-precious stone inlay, and sits within a formal four-part garden?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Red Fort"
+        },
+        {
+          "id": "b",
+          "text": "Taj Mahal"
+        },
+        {
+          "id": "c",
+          "text": "Jama Masjid"
+        },
+        {
+          "id": "d",
+          "text": "Humayun's Tomb"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The Red Fort is a red sandstone palace complex with courtyards, not a white marble mausoleum.",
+        "c": "The Jama Masjid is a mosque with red sandstone construction, not a marble mausoleum.",
+        "d": "Humayun's Tomb is an earlier mausoleum (1565–1572) that preceded the Taj Mahal's design.",
+        "correct": "The Taj Mahal is explicitly identified as a 'White marble mausoleum, double-shell dome, four minarets, semi-precious stone inlay (parchin kari—jade, lapis lazuli, carnelian, turquoise), charbagh (four-part garden).'",
+        "takeaway": "The Taj Mahal is explicitly identified as a 'White marble mausoleum, double-shell dome, four minarets, semi-precious stone inlay (parchin kari—jade, lapis lazuli, carnelian, turquoise), charbagh (four-part garden).'."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "ID"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-004-07-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.126756+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "df024e3f-d61b-4e82-986a-e94d6ea66696",
+      "article_id": "39f480ed-755f-499a-935f-d339e6bb3c87",
+      "topic_id": "985b2164-13d5-4778-bddd-07e1e29a95df",
+      "text": "Parchin kari is a Mughal decorative technique that distinguishes the Taj Mahal from other Islamic architectural traditions. What is its primary characteristic?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Flat painted patterns on plaster surfaces with no depth or relief, often used in less significant structures"
+        },
+        {
+          "id": "b",
+          "text": "Semi-precious stone inlay (jade, lapis lazuli, carnelian, turquoise) set into marble in geometric patterns, creating optical effects through light reflection"
+        },
+        {
+          "id": "c",
+          "text": "Three-dimensional corbelled vault systems creating honeycomb effects, which are more typical of Persian architecture"
+        },
+        {
+          "id": "d",
+          "text": "Colored glazed tiles covering entire wall surfaces, a technique more common in Ottoman architecture"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Parchin kari is not flat painting; it involves individual cut and fitted stones.",
+        "c": "This describes muqarnas, not parchin kari.",
+        "d": "This describes Ottoman Iznik tilework, not Mughal inlay.",
+        "correct": "The article defines parchin kari as 'Semi-precious stone inlay (jade, lapis lazuli, carnelian, turquoise) set into marble in geometric patterns; Mughal decorative signature; creates subtle light-reflecting effects.'",
+        "takeaway": "The article defines parchin kari as 'Semi-precious stone inlay (jade, lapis lazuli, carnelian, turquoise) set into marble in geometric patterns; Mughal decorative signature; creates subtle light-reflecting effects.'."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "ST"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-004-07-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.126756+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "19bacb5d-acfb-40ae-b942-bf77f31271f6",
+      "article_id": "39f480ed-755f-499a-935f-d339e6bb3c87",
+      "topic_id": "985b2164-13d5-4778-bddd-07e1e29a95df",
+      "text": "A building complex combines red sandstone construction with Hindu and Islamic architectural elements, features multiple courtyards (Diwan-i-Aam and Diwan-i-Khas), and was built by Akbar to commemorate a Sufi saint and celebrate the birth of his heir. Name this building.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Taj Mahal, known for its white marble and Mughal architecture"
+        },
+        {
+          "id": "b",
+          "text": "Jama Masjid, one of the largest mosques in India with a vast courtyard"
+        },
+        {
+          "id": "c",
+          "text": "Fatehpur Sikri"
+        },
+        {
+          "id": "d",
+          "text": "Agra Fort, a UNESCO World Heritage site with a rich history"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The Taj Mahal is a white marble mausoleum, not a red sandstone palace complex.",
+        "b": "The Jama Masjid is primarily a mosque, not a multi-courtyard palace.",
+        "d": "The Agra Fort is also red sandstone but served different functions than Fatehpur Sikri.",
+        "correct": "Fatehpur Sikri is identified as 'Red sandstone palace complex...synthesis of Hindu and Islamic forms' built 'to commemorate Sufi saint Sheikh Salim Chishti and celebrate birth of heir Prince Salim' with 'Diwan-i-Aam (public audience hall), Diwan-i-Khas (private audience hall).'",
+        "takeaway": "Fatehpur Sikri is identified as 'Red sandstone palace complex...synthesis of Hindu and Islamic forms' built 'to commemorate Sufi saint Sheikh Salim Chishti and celebrate birth of heir Prince Salim' with 'Diwan-i-Aam (public audience hall), Diwan-i-Khas (private audience hall).'."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "recall",
+      "practice_context": [
+        "DESC"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-004-07-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.126756+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "98d31146-e56d-4d85-a89a-d3e996b4e342",
+      "article_id": "0b83bfa7-6ca2-48f8-9f23-52428c85d02a",
+      "topic_id": "eded2adc-5640-4da4-9db7-9ac4ecce4063",
+      "text": "The prismoidal formula for earthwork volume is ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "V = (L/2) × [(A₁ + Aₙ) + 2Σmiddle], a simplified approach for calculating volumes in prismatic sections"
+        },
+        {
+          "id": "b",
+          "text": "V = (L/3) × [(A₁ + Aₙ) + 4(even) + 2(odd)]"
+        },
+        {
+          "id": "c",
+          "text": "V = L × (A₁ + A₂ + ... + Aₙ) ÷ n, often used for average end area calculations"
+        },
+        {
+          "id": "d",
+          "text": "V = (L/3) × (A₁ + A₂), a basic approximation for trapezoidal sections"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "That is the trapezoidal formula, not prismoidal.",
+        "c": "Simple average; not a standard formula.",
+        "d": "Incorrect; prismoidal applies to multiple sections, not just two.",
+        "correct": "The prismoidal formula V = (L/3) × [(A₁ + Aₙ) + 4(even-numbered areas) + 2(odd-numbered areas, excluding 1 and n)] is used for high-precision estimates.",
+        "takeaway": "Prismoidal: V = (L/3) × [(A₁ + Aₙ) + 4(even) + 2(odd)] for n sections."
+      },
+      "explanation": null,
+      "code_citation": "Surveying manuals, DPWH guidelines",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-010-08-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "8a9ca302-ebc3-4440-9d9c-cadd4ab3733e",
+      "article_id": "0b83bfa7-6ca2-48f8-9f23-52428c85d02a",
+      "topic_id": "eded2adc-5640-4da4-9db7-9ac4ecce4063",
+      "text": "The trapezoidal formula for earthwork volume with two cross-sections is ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "V = L × (A₁ + A₂)"
+        },
+        {
+          "id": "b",
+          "text": "V = (L/2) × (A₁ + A₂)"
+        },
+        {
+          "id": "c",
+          "text": "V = (L/3) × (A₁ + A₂)"
+        },
+        {
+          "id": "d",
+          "text": "V = L × avg(A₁, A₂)"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Missing the 1/2 factor; would over-estimate.",
+        "c": "L/3 is the prismoidal constant, not trapezoidal.",
+        "d": "Simplified approximation; less precise.",
+        "correct": "The trapezoidal formula for one interval is V = (L/2) × (A₁ + A₂), where L is distance and A₁, A₂ are cross-sectional areas.",
+        "takeaway": "Trapezoidal: V = (L/2) × (A₁ + A₂) for a single interval."
+      },
+      "explanation": null,
+      "code_citation": "DPWH Blue Book, surveying manuals",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-010-08-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "ab723439-0780-496f-a863-05155486f852",
+      "article_id": "0b83bfa7-6ca2-48f8-9f23-52428c85d02a",
+      "topic_id": "eded2adc-5640-4da4-9db7-9ac4ecce4063",
+      "text": "What is the relationship between trapezoidal and prismoidal volumes for the same earthwork cross-sections?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Trapezoidal is 2–8% lower than prismoidal"
+        },
+        {
+          "id": "b",
+          "text": "Prismoidal is 2–8% lower than trapezoidal"
+        },
+        {
+          "id": "c",
+          "text": "Both methods give identical results"
+        },
+        {
+          "id": "d",
+          "text": "The difference depends on area units"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Opposite; trapezoidal is actually higher.",
+        "c": "They rarely give identical results; prismoidal is more accurate.",
+        "d": "The relationship is independent of units; it's a formula difference.",
+        "correct": "The prismoidal method typically yields 2–8% LOWER volumes than the trapezoidal method for the same data. This is expected and shows prismoidal's higher accuracy.",
+        "takeaway": "Prismoidal ≈ Trapezoidal × 0.95 (approximately). Prismoidal is more accurate for final billing."
+      },
+      "explanation": null,
+      "code_citation": "Surveying manuals",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-010-08-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    },
+    {
+      "question_id": "2ae5639a-b45a-4f18-971f-4d4877ecadf8",
+      "article_id": "06c6e7dc-b3cd-4ff8-a25a-fed405c47830",
+      "topic_id": "3eddafd9-ac8e-47ba-98d8-1b5c8a8b430e",
+      "text": "A rural agricultural facility in Mindanao is designed as a hybrid solar-diesel system with a 10 kW PV array and 5 kW diesel generator. Based on typical hybrid ratios (2–4 kW PV per 1 kW generator), what is the expected annual diesel displacement and fuel cost savings?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) 10–15% diesel displacement; USD 500–1,000 annual savings"
+        },
+        {
+          "id": "b",
+          "text": "B) 20–30% diesel displacement; USD 1,500–2,500 annual savings"
+        },
+        {
+          "id": "c",
+          "text": "C) 30–50% diesel displacement; USD 2,000–4,000 annual savings"
+        },
+        {
+          "id": "d",
+          "text": "D) 60–75% diesel displacement; USD 5,000–7,500 annual savings"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Low displacement (10–15%) underestimates typical hybrid system performance; this would occur only with undersized PV arrays (<3 kW).",
+        "b": "Moderate savings (USD 1,500–2,500) corresponds to 20–30% displacement, insufficient for the stated 2:1 ratio and full tropical solar resource utilization.",
+        "d": "Displacement above 50% requires PV oversizing beyond 4:1 ratio or exceptional solar conditions; economically inefficient and not recommended for standard hybrid design.",
+        "correct": "A 10 kW PV array with 5 kW diesel generator achieves 2:1 PV-to-generator ratio (within 2–4 kW PV per 1 kW diesel range). This configuration displaces 30–50% annual diesel consumption (~8,000–12,000 kWh/year from PV generation at 4.0 kWh/m²/day), saving USD 2,000–4,000/year at current diesel costs. System cost approximately USD 25,000–40,000 including battery and hybrid controller.",
+        "takeaway": "Hybrid solar-diesel systems with 2–4 kW PV per 1 kW generator typically achieve 30–50% annual diesel displacement, generating USD 2,000–4,000 fuel savings annually and improving rural facility sustainability."
+      },
+      "explanation": null,
+      "code_citation": "Article LEA-UTIL-007-04: Renewable Energy Systems in Buildings—Energy Storage and Hybrid Systems section.",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-007-04-013",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:03.161281+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00"
+    }
+  ]
+}

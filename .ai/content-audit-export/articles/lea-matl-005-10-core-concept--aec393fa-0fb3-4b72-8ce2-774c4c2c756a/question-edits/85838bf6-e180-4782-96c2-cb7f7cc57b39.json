@@ -1,0 +1,10 @@
+{
+  "question_id": "85838bf6-e180-4782-96c2-cb7f7cc57b39",
+  "baseline_hash": "sha256:d52a3e98d9e5590c53b86d59a10669dfde5cb427c8e777508c01d1540537eb6e",
+  "reason": "Strict explanation backfill from existing specific rationale; answer key and options unchanged.",
+  "approved_by": "hermes-question-remediation-autopilot",
+  "approved_at": "2026-05-06T14:38:06.145Z",
+  "proposed": {
+    "explanation": "Imported material's A4 transport (0.15) exceeds local sourcing (0.05); when summed, both options have identical total if A1-A3 differs by 0.1. Material B does not reduce embodied carbon by 50%; the reduction is approximately 10% in A1-A3 offset by lower A4. EPDs are standardized and comparable via ISO 14025 framework. Comparing imported and local materials is legitimate and often reveals A4 transport benefits of local sourcing. Material A (A1-A5): (0.8 + 0.15) × 500,000 = 475,000 kg CO2e. Material B (A1-A5): (0.9 + 0.05) × 500,000 = 475,000 kg CO2e. Totals are equivalent numerically. However, Material B is preferred because local sourcing reduces A4 transport emissions (important for resilience and supply chain risk) and supports local economy despite slightly higher A1-A3 production impact. Local sourcing often has marginally higher A1-A3 production emissions but significantly lower A4 transport emissions. Total embodied carbon may be equivalent or favoring local sourcing, with additional supply chain resilience and economic benefits."
+  }
+}
