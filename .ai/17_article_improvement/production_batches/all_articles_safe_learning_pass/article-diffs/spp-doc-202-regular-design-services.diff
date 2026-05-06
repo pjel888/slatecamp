@@ -1,0 +1,33 @@
+--- before/spp-doc-202-regular-design-services
++++ after/spp-doc-202-regular-design-services
+@@ -93,7 +93,7 @@
+ [SLATECAMP_UI_BLOCK:ui_0003 component="Callout" status="preserved"]
+ Extracted summary:
+ - Props: variant="note"
+-- Text: The completion of the Contract Document Phase represents **90% of the architect's total work**. If the owner fails to implement the plans and documents for construction after this phase, the architect is entitled to receive compensation equivleant to **90% of the agreed architect's fee**.
++- Text: The completion of the Contract Document Phase represents **90% of the architect's total work**. If the owner fails to implement the plans and documents for construction after this phase, the architect is entitled to receive compensation equivalent to **90% of the agreed architect's fee**.
+ [/SLATECAMP_UI_BLOCK]
+ 
+ 
+@@ -327,3 +327,21 @@
+ 
+ **Spp Doc 201 Pre Design Services**, **Spp Doc 203 Specialized Architectural Services**, **Spp Doc 204 A Fulltime Supervision Services**, **Spp Doc 206 Comprehensive Architectural Services**
+ 
++
++
++---
++
++## Editorial Source Note
++
++This local production pass did not add new legal, dimensional, penalty, or section-number claims. Existing code references still require source-led verification against the official/local source layer before any factual expansion beyond the current article text.
++
++
++## Board Exam Quick Check
++
++Before moving on, answer these without looking back:
++
++1. What rule, principle, or design decision is this article teaching?
++2. What is the most likely board-exam trap in this topic?
++3. What would change in a real project if you applied the rule incorrectly?
++
++If you cannot answer all three, reread the section that introduced the rule before attempting the linked questions.

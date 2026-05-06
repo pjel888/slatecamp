@@ -1,5 +1,3 @@
-# Current Task Handoff — Supabase Blocker Resolution
+# Current Task Handoff
 
-Status: all safe blocker-resolution paths attempted. Branch creation failed because Supabase Branching requires Pro plan. Separate staging project not present. Docker/local Supabase unavailable. No DB URL env present. Local artifact simulation passed. Production remains blocked by hosted staging requirement and migration lineage/backup requirements.
-
-Resume point: `.ai/03_plans/content-editorial-pipeline-2026-05-05/supabase-blocker-resolution-autopilot/final-blocker-resolution-report.md`.
+Content production autopilot reached local-output-ready state. Remote publishing did not run because Supabase credentials are missing. Continue from `.ai/20_content_publish/reports/final-content-production-report.md`.

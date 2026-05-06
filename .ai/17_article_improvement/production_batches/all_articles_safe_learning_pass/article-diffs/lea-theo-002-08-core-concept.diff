@@ -1,0 +1,53 @@
+--- before/lea-theo-002-08-core-concept
++++ after/lea-theo-002-08-core-concept
+@@ -22,7 +22,7 @@
+ [SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+ Extracted summary:
+ - Props: (none)
+-- Text: **Proportioning systems are not optional decoration**—they are foundational design tools ensuring coherence, harmony, and appropriateness to sclea and function. All serious architecture employs some proportioning discipline.
++- Text: **Proportioning systems are not optional decoration**—they are foundational design tools ensuring coherence, harmony, and appropriateness to scale and function. All serious architecture employs some proportioning discipline.
+ [/SLATECAMP_UI_BLOCK]
+ 
+ ### The Golden Section and Divine Proportion
+@@ -46,7 +46,7 @@
+ [SLATECAMP_UI_BLOCK:ui_0004 component="Note" status="preserved"]
+ Extracted summary:
+ - Props: (none)
+-- Text: The Modulor's genius: **proportions are derived from human dimensions AND golden ratio harmony simultaneously**. This dual basis ensures both appropriateness to human sclea and mathematical elegance.
++- Text: The Modulor's genius: **proportions are derived from human dimensions AND golden ratio harmony simultaneously**. This dual basis ensures both appropriateness to human scale and mathematical elegance.
+ [/SLATECAMP_UI_BLOCK]
+ 
+ Similarly, dividing downward from 2.26m and upward from 0m generates additional dimensions. The Modulor produces two series:
+@@ -92,7 +92,7 @@
+ 
+ [SLATECAMP_UI_BLOCK:ui_0006 component="WikiExamTable" status="preserved"]
+ Extracted summary:
+-- Props: headers="{[\"**System**\", \"**Core Basis**\", \"**Key Ratio/Dimension**\", \"**LEA Test Indicator**\"]}", rows="{[['[\"**Golden Section**\", \"Mathematical ratio of parts and whole\", \"φ ≈ 1.618 (irrational)\", \"\\\\\"Divine proportion; natural harmony\\\\\"\"]', '[\"**Fibonacci**\", \"Sequence where each is sum of preceding two\", \"1,1,2,3,5,8,13,21... (ratios approach φ)\", \"\\\\\"Sequence ratios approximating golden ratio\\\\\"\"]', '[\"**Modulor Red**\", \"Based on navel height; golden ratio applied\", \"1.13m (navel); cascading: 0.70, 1.13, 1.83m\", \"\\\\\"Modulor Series I\\\\\"\"]', '[\"**Modulor Blue**\", \"Based on standing height with arm raised\", \"2.26m (head to raised hand); 1.40, 2.26, 3.66m\", \"\\\\\"Modulor Series II\\\\\"\"]', '[\"**Modulor Concept**\", \"Proportioning system harmonizing human and building\", \"Height-based golden ratio divisions\", \"\\\\\"Range of dimensions for human sclea\\\\\"\"]', '[\"**Ken (Japanese)**\", \"Traditional Japanese column spacing\", \"1 ken = 6 shaku ≈ 1.82m\", \"\\\\\"Space between columns\\\\\"\"]', '[\"**Tatami**\", \"Japanese mat module regulating room dimensions\", \"3 shaku × 6 shaku ≈ 0.9m × 1.8m\", \"\\\\\"Traditional flooring module\\\\\"\"]', '[\"**Regulating Lines**\", \"Geometric lines revealing proportional generation\", \"Diagonals; proportional divisions; axes\", \"\\\\\"Hidden geometric structure creating proportion\\\\\"\"]']]}"
++- Props: headers="{[\"**System**\", \"**Core Basis**\", \"**Key Ratio/Dimension**\", \"**LEA Test Indicator**\"]}", rows="{[['[\"**Golden Section**\", \"Mathematical ratio of parts and whole\", \"φ ≈ 1.618 (irrational)\", \"\\\\\"Divine proportion; natural harmony\\\\\"\"]', '[\"**Fibonacci**\", \"Sequence where each is sum of preceding two\", \"1,1,2,3,5,8,13,21... (ratios approach φ)\", \"\\\\\"Sequence ratios approximating golden ratio\\\\\"\"]', '[\"**Modulor Red**\", \"Based on navel height; golden ratio applied\", \"1.13m (navel); cascading: 0.70, 1.13, 1.83m\", \"\\\\\"Modulor Series I\\\\\"\"]', '[\"**Modulor Blue**\", \"Based on standing height with arm raised\", \"2.26m (head to raised hand); 1.40, 2.26, 3.66m\", \"\\\\\"Modulor Series II\\\\\"\"]', '[\"**Modulor Concept**\", \"Proportioning system harmonizing human and building\", \"Height-based golden ratio divisions\", \"\\\\\"Range of dimensions for human scale\\\\\"\"]', '[\"**Ken (Japanese)**\", \"Traditional Japanese column spacing\", \"1 ken = 6 shaku ≈ 1.82m\", \"\\\\\"Space between columns\\\\\"\"]', '[\"**Tatami**\", \"Japanese mat module regulating room dimensions\", \"3 shaku × 6 shaku ≈ 0.9m × 1.8m\", \"\\\\\"Traditional flooring module\\\\\"\"]', '[\"**Regulating Lines**\", \"Geometric lines revealing proportional generation\", \"Diagonals; proportional divisions; axes\", \"\\\\\"Hidden geometric structure creating proportion\\\\\"\"]']]}"
+ - Text: (none detected)
+ [/SLATECAMP_UI_BLOCK]
+ ## How It's Tested on the LEA
+@@ -161,7 +161,7 @@
+ 
+ [SLATECAMP_UI_BLOCK:ui_0017 component="WikiMistakeList" status="preserved"]
+ Extracted summary:
+-- Props: mistakes="{[\"Thinking All Proportioning is Mathematical. Some proportioning systems are geometric (diagonals, regulating lines) rather than mathematical ratios. A regulating diagonal on an elevation is not a numerical ratio; it's a geometric device revealing structure. Some systems are cultural (Japanese tatami) rather than mathematically derived. Understand that proportioning encompasses diverse approaches: mathematical ratios, geometric devices, anthropometric bases, and cultural traditions.\", \"Overlooking the Human-Sclea Intent of Modulor. The LEA tests whether you grasp Modulor's philosophy. It's not abstract mathematical proportion; it's specifically about making buildings proportionally coherent and sclea-appropriate to human dimensions. Le Corbusier developed it to ensure that building dimensions (doorways, counters, ceilings) felt right in relation to human body dimensions. This human-sclea philosophy is core to understanding why Modulor matters.\", \"Confusing Ken with Meter. The ken is approximately 1.82 meters, but they're not identical. Traditional Japanese measurements used shaku (feet); modern standardization converted to 1.82m. When a traditional building is described in ken units, it's referring to the proportional system, not a precise metric measurement. The distinction: ken is a proportioning module; the meter is a metric unit. They align at approximately 1.82m, but the conceptual basis differs.\", \"Missing Regulating Lines in Architectural Analysis. Students don't always recognize regulating lines because they're hidden—not explicitly marked in the finished building. When analyzing an architectural elevation or plan, don't just look at what's obvious; trace underlying geometric lines. If a diagonal aligns with multiple significant features, a regulating line is likely generating the proportional scheme. This requires analytical thinking beyond surface observation.\", \"Assuming All Buildings Use Proportioning Systems. Some architecture is purely functional or site-responsive, not proportioning-based. However, buildings designed by architects trained in formal traditions (classical, Renaissance, modernist) typically employ proportioning systems. The LEA tests buildings that do employ systems. Understand that proportioning systems are intentional design tools, not inevitable features.\"]}"
++- Props: mistakes="{[\"Thinking All Proportioning is Mathematical. Some proportioning systems are geometric (diagonals, regulating lines) rather than mathematical ratios. A regulating diagonal on an elevation is not a numerical ratio; it's a geometric device revealing structure. Some systems are cultural (Japanese tatami) rather than mathematically derived. Understand that proportioning encompasses diverse approaches: mathematical ratios, geometric devices, anthropometric bases, and cultural traditions.\", \"Overlooking the Human-scale Intent of Modulor. The LEA tests whether you grasp Modulor's philosophy. It's not abstract mathematical proportion; it's specifically about making buildings proportionally coherent and scale-appropriate to human dimensions. Le Corbusier developed it to ensure that building dimensions (doorways, counters, ceilings) felt right in relation to human body dimensions. This human-scale philosophy is core to understanding why Modulor matters.\", \"Confusing Ken with Meter. The ken is approximately 1.82 meters, but they're not identical. Traditional Japanese measurements used shaku (feet); modern standardization converted to 1.82m. When a traditional building is described in ken units, it's referring to the proportional system, not a precise metric measurement. The distinction: ken is a proportioning module; the meter is a metric unit. They align at approximately 1.82m, but the conceptual basis differs.\", \"Missing Regulating Lines in Architectural Analysis. Students don't always recognize regulating lines because they're hidden—not explicitly marked in the finished building. When analyzing an architectural elevation or plan, don't just look at what's obvious; trace underlying geometric lines. If a diagonal aligns with multiple significant features, a regulating line is likely generating the proportional scheme. This requires analytical thinking beyond surface observation.\", \"Assuming All Buildings Use Proportioning Systems. Some architecture is purely functional or site-responsive, not proportioning-based. However, buildings designed by architects trained in formal traditions (classical, Renaissance, modernist) typically employ proportioning systems. The LEA tests buildings that do employ systems. Understand that proportioning systems are intentional design tools, not inevitable features.\"]}"
+ - Text: (none detected)
+ [/SLATECAMP_UI_BLOCK]
+ 
+@@ -197,3 +197,14 @@
+ 
+ > **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
+ 
++
++
++## Board Exam Quick Check
++
++Before moving on, answer these without looking back:
++
++1. What rule, principle, or design decision is this article teaching?
++2. What is the most likely board-exam trap in this topic?
++3. What would change in a real project if you applied the rule incorrectly?
++
++If you cannot answer all three, reread the section that introduced the rule before attempting the linked questions.

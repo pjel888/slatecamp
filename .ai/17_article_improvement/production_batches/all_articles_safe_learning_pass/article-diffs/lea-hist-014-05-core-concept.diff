@@ -1,0 +1,26 @@
+--- before/lea-hist-014-05-core-concept
++++ after/lea-hist-014-05-core-concept
+@@ -57,7 +57,7 @@
+ 
+ [SLATECAMP_UI_BLOCK:ui_0006 component="WikiExamTable" status="preserved"]
+ Extracted summary:
+-- Props: headers="{[\"Building\", \"Architect\", \"Year\", \"Location\", \"Style\", \"Significance\"]}", rows="{[['[\"**Barcelona Pavilion**\", \"Mies van der Rohe\", \"1929\", \"Barcelona\", \"International Style\", \"Minimal steel and marble; floating planes; weightless\"]', '[\"**Seagram Building**\", \"Mies van der Rohe & Philip Johnson\", \"1958\", \"New York\", \"International Style\", \"Bronze-clad frame; grid facade; pure rationalism; plaza\"]', '[\"**Salk Institute**\", \"Louis Kahn\", \"1965\", \"La Jolla\", \"Modernism\", \"Travertine plaza; monumental symmetry; sublime geometry\"]', '[\"**National Assembly Building**\", \"Louis Kahn\", \"1962-1982\", \"Dhaka\", \"Modernism\", \"Geometric forms; red brick; monumental postcolonial architecture; Kahn died 1974 before completion\"]', '[\"**East Building, National Gallery**\", \"I.M. Pei\", \"1978\", \"Washington, DC\", \"Modernism\", \"Triangular form; geometric purity; complex interior spaces\"]', '[\"**TWA Terminal**\", \"Eero Saarinen\", \"1962\", \"New York\", \"Modernism\", \"Shell concrete; sculptural form; bird-like expression\"]', '[\"**Gateway Arch**\", \"Eero Saarinen\", \"1965\", \"St. Louis\", \"Modernism\", \"Weighted catenary curve; monumental sclea; commemorative sculpture\"]', '[\"**AT&T Building**\", \"Philip Johnson\", \"1984\", \"New York\", \"Postmodern\", \"Chippendlea crown; ornamental; ironic historical reference\"]']]}"
++- Props: headers="{[\"Building\", \"Architect\", \"Year\", \"Location\", \"Style\", \"Significance\"]}", rows="{[['[\"**Barcelona Pavilion**\", \"Mies van der Rohe\", \"1929\", \"Barcelona\", \"International Style\", \"Minimal steel and marble; floating planes; weightless\"]', '[\"**Seagram Building**\", \"Mies van der Rohe & Philip Johnson\", \"1958\", \"New York\", \"International Style\", \"Bronze-clad frame; grid facade; pure rationalism; plaza\"]', '[\"**Salk Institute**\", \"Louis Kahn\", \"1965\", \"La Jolla\", \"Modernism\", \"Travertine plaza; monumental symmetry; sublime geometry\"]', '[\"**National Assembly Building**\", \"Louis Kahn\", \"1962-1982\", \"Dhaka\", \"Modernism\", \"Geometric forms; red brick; monumental postcolonial architecture; Kahn died 1974 before completion\"]', '[\"**East Building, National Gallery**\", \"I.M. Pei\", \"1978\", \"Washington, DC\", \"Modernism\", \"Triangular form; geometric purity; complex interior spaces\"]', '[\"**TWA Terminal**\", \"Eero Saarinen\", \"1962\", \"New York\", \"Modernism\", \"Shell concrete; sculptural form; bird-like expression\"]', '[\"**Gateway Arch**\", \"Eero Saarinen\", \"1965\", \"St. Louis\", \"Modernism\", \"Weighted catenary curve; monumental scale; commemorative sculpture\"]', '[\"**AT&T Building**\", \"Philip Johnson\", \"1984\", \"New York\", \"Postmodern\", \"Chippendlea crown; ornamental; ironic historical reference\"]']]}"
+ - Text: (none detected)
+ [/SLATECAMP_UI_BLOCK]
+ ## How It's Tested on the LEA
+@@ -142,3 +142,14 @@
+ 
+ > **Overview:** overview-history-of-architecture for the full curriculum structure and study strategy for History of Architecture.
+ 
++
++
++## Board Exam Quick Check
++
++Before moving on, answer these without looking back:
++
++1. What rule, principle, or design decision is this article teaching?
++2. What is the most likely board-exam trap in this topic?
++3. What would change in a real project if you applied the rule incorrectly?
++
++If you cannot answer all three, reread the section that introduced the rule before attempting the linked questions.
