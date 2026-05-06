@@ -259,3 +259,13 @@ Latest continuation commits:
 - `8874bf163` — Harden controlled apply and rollback pipeline
 
 Live Supabase apply remains blocked by broad migration-lineage drift. No speculative migration repair, live admin sync, article mutation, question mutation, answer-key mutation, or external embedding upload was performed.
+
+---
+
+## Supabase Rebaseline Autopilot Continuation
+
+Formal staging-first rebaseline tooling and admin audit readiness were added. Production remains blocked by unrecovered migration lineage. See:
+
+- `.ai/03_plans/content-editorial-pipeline-2026-05-05/supabase-rebaseline-autopilot/final-rebaseline-autopilot-report.md`
+
+No production mutation, migration repair, live admin sync, article mutation, question mutation, or source-status production mutation was performed.

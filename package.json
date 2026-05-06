@@ -150,7 +150,11 @@
     "content-audit:embedding-harden": "bun scripts/content-audit/harden-source-pack-embedding-dry-run.ts",
     "content-audit:embedding-harden-validate": "bun scripts/content-audit/validate-source-pack-embedding-hardening.ts",
     "content-audit:apply-harden": "bun scripts/content-audit/harden-controlled-apply-rollback.ts",
-    "content-audit:apply-harden-validate": "bun scripts/content-audit/validate-controlled-apply-hardening.ts"
+    "content-audit:apply-harden-validate": "bun scripts/content-audit/validate-controlled-apply-hardening.ts",
+    "content-audit:rebaseline-snapshot": "bun scripts/content-audit/build-supabase-rebaseline-snapshot.ts",
+    "content-audit:rebaseline-snapshot-validate": "bun scripts/content-audit/validate-supabase-rebaseline-snapshot.ts",
+    "content-audit:admin-audit-rebaseline-migration": "bun scripts/content-audit/build-admin-audit-rebaseline-migration.ts",
+    "content-audit:admin-audit-rebaseline-validate": "bun scripts/content-audit/validate-admin-audit-rebaseline-migration.ts"
   },
   "dependencies": {
     "@base-ui/react": "^1.4.1",
