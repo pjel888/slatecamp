@@ -130,3 +130,6 @@ Added `src/components/quiz-v2/setup/SetupControls.stories.tsx` covering setup fl
 
 ## Batch 9
 Added `src/components/quiz-v2/OverlaysAndResults.stories.tsx` for overlay/results surfaces.
+
+## Batch 10
+Added `src/components/ceo/RoleAssignmentModal.stories.tsx`.

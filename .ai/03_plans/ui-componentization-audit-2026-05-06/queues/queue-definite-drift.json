@@ -1,30 +1,5 @@
 [
   {
-    "id": "UIA-CEO-0005",
-    "file": "src/components/ceo/RoleAssignmentModal.tsx",
-    "line": null,
-    "surface": "ceo",
-    "component": "RoleAssignmentModal",
-    "current_pattern": "Dialog with raw radio/buttons",
-    "classification": "definite_drift",
-    "risk": "medium",
-    "proposed_target": "RadioGroup + Button",
-    "user_impact": "Reduce UI drift and improve consistency/accessibility where safe.",
-    "implementation_notes": "Implement only from queue in small batches after reading current file and preserving behavior.",
-    "storybook_required": true,
-    "storybook_story_path": null,
-    "tests_required": [
-      "bun run type-check",
-      "bun run lint"
-    ],
-    "visual_routes": [
-      "/ceo/team"
-    ],
-    "reviewer_notes": null,
-    "final_status": "open",
-    "validation_result": null
-  },
-  {
     "id": "UIA-PORTAL-0001",
     "file": "src/components/portal/PortalSidebar.tsx",
     "line": null,

@@ -208,3 +208,19 @@ Queue ID: UIA-QZ-0013
 - `NODE_OPTIONS=--max-old-space-size=8192 bun run build-storybook`: passed.
 - `bun run type-check`: baseline missing `openai` only.
 - Playwright screenshots captured, including final ScoreReveal after animation delay.
+
+## Batch 10: CEO RoleAssignmentModal primitives
+Date/time: 2026-05-06T19:38:51
+Queue ID: UIA-CEO-0005
+
+### What changed
+- Replaced raw role radio inputs with shared `RadioGroup` / `RadioGroupItem`.
+- Replaced raw footer buttons with shared `Button`.
+- Added `RoleAssignmentModal.stories.tsx`.
+- Added Storybook mock for `@/lib/actions/ceo/team-actions`.
+
+### Validation
+- `bun run lint`: passed with 10 baseline warnings.
+- `bun run check:storybook`: passed.
+- `NODE_OPTIONS=--max-old-space-size=8192 bun run build-storybook`: passed.
+- Playwright rendered the modal and selected Viewer.

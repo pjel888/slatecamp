@@ -117,3 +117,7 @@ Reviewer: independent Hermes subagent.
 ## Batch 9: Quiz-v2 overlay/results Storybook coverage
 Date/time: 2026-05-06T19:27:21
 Reviewer flagged docs/autodocs and ScoreReveal timing. Autodocs removed for overlay stories; final ScoreReveal screenshot recaptured after animation.
+
+## Batch 10: CEO RoleAssignmentModal primitives
+Date/time: 2026-05-06T19:38:51
+Reviewer flagged RadioGroup labeling. Fixed by using stable ids and `label htmlFor` per existing primitive story pattern.

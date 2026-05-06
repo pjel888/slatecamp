@@ -51,6 +51,9 @@ const config: StorybookConfig = {
       '@/lib/actions/quiz-v2': fileURLToPath(
         new URL('../src/storybook/mocks/quiz-v2-actions.ts', import.meta.url),
       ),
+      '@/lib/actions/ceo/team-actions': fileURLToPath(
+        new URL('../src/storybook/mocks/ceo-team-actions.ts', import.meta.url),
+      ),
       '@/lib/analytics': fileURLToPath(
         new URL('../src/storybook/mocks/analytics.ts', import.meta.url),
       ),
