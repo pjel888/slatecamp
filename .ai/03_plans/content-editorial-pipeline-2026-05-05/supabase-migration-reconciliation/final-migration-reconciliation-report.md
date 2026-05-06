@@ -81,8 +81,8 @@ Full app/content validation is recorded in the final command logs from this run.
 
 ## Commit and push
 
-Commit hash: pending until report commit is created.
-Push result: pending until report commit is pushed.
+Reconciliation evidence commit: `78891545b3937ff2708f626610585f9835f78397`
+Push result: pushed to `redesign/quiz-mode-hub`.
 
 ## Remaining risks
 
