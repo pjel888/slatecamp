@@ -218,3 +218,20 @@ Status: PUBLISHED_VERIFIED.
 Running total committed after question-batch-033: 1227 published/recovered verified questions.
 
 Resume command: `bun scripts/content-audit/run-question-remediation-ralph-loop.ts --until-complete`.
+
+## question-batch-034 Published — 2026-05-06T16:23:03.997Z
+
+Status: PUBLISHED_VERIFIED.
+
+- Selected: 42.
+- Local verifier: 42/42 pass.
+- Independent deterministic safety review: PASS, blockers none.
+- Remote apply: 42/42 by exact question_id filter.
+- Remote verification: 42/42.
+- Answer-key changes: 0.
+- Option changes: 0.
+- Backup: `/Users/philiplewis/slatecamp/.ai/20_content_publish/backups/questions-backup-question-batch-034-20260506T162225Z.json`.
+
+Running total committed after question-batch-034: 1269 published/recovered verified questions.
+
+Resume command: `bun scripts/content-audit/run-question-remediation-ralph-loop.ts --until-complete`.
