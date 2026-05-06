@@ -1,0 +1,1891 @@
+{
+  "reconstructed_at": "2026-05-06T13:09:00.452Z",
+  "note": "Current remote rows captured after prior Batch 011 apply; not a pre-apply backup.",
+  "rows": [
+    {
+      "question_id": "10013c66-ea49-485a-bece-d32fa8918a79",
+      "topic_id": "b11017d6-b8ae-4eef-b7ae-cf0ee85bc912",
+      "text": "A hospital serving multicultural patients (Filipino, American, Middle Eastern) should design waiting areas considering cultural spatial preferences. Which approach would be most effective?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Provide only close-together seating, eliminating privacy options, which may not cater to all cultural preferences"
+        },
+        {
+          "id": "b",
+          "text": "Eliminate seating entirely, requiring patients to stand during waiting, which could lead to discomfort and dissatisfaction"
+        },
+        {
+          "id": "c",
+          "text": "Provide varied waiting configurations—intimate clusters (high-context preference), dispersed individual seating (low-context preference)—allowing cultural groups to select preferred spacing"
+        },
+        {
+          "id": "d",
+          "text": "Single waiting area with dispersed seating at maximum distance, serving Western preferences exclusively, potentially alienating other cultural groups"
+        }
+      ],
+      "correct_option_id": "c",
+      "rationale": {
+        "a": "Close seating exclusively excludes low-context occupants uncomfortable with proximity",
+        "b": "Seating is functionally necessary; spatial variety is the design improvement",
+        "d": "Exclusive Western preference excludes high-context occupants",
+        "correct": "Multiple configurations accommodate cultural variation: close seating for high-context groups, dispersed seating for low-context groups",
+        "takeaway": "Multiple configurations accommodate cultural variation: close seating for high-context groups, dispersed seating for low-context groups."
+      },
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "prompt_image_url": null,
+      "explanation": "Close seating exclusively excludes low-context occupants uncomfortable with proximity Seating is functionally necessary; spatial variety is the design improvement Exclusive Western preference excludes high-context occupants Multiple configurations accommodate cultural variation: close seating for high-context groups, dispersed seating for low-context groups Multiple configurations accommodate cultural variation: close seating for high-context groups, dispersed seating for low-context groups.",
+      "code_citation": null,
+      "model_id": "ALE-THEO-003-07-009",
+      "is_assessment": false,
+      "updated_at": "2026-05-06T12:49:06.929898+00:00",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "bloom_level": "apply",
+      "irt_difficulty": 0,
+      "irt_discrimination": 1,
+      "irt_guessing": 0,
+      "irt_calibrated_at": null,
+      "question_type": "mcq",
+      "correct_value": null,
+      "value_tolerance": 0,
+      "accepted_answers": null,
+      "created_by": null,
+      "updated_by": null,
+      "article_id": "6ce1c942-85fc-4baf-bb51-df61c8bce885",
+      "hint_text": null,
+      "normalization_status": "normalized",
+      "normalization_log": {
+        "correct_key": "c",
+        "final_lengths": {
+          "a": 134,
+          "b": 134,
+          "c": 166,
+          "d": 134
+        },
+        "technique_used": {
+          "a": "Rationale Appending",
+          "b": "Rationale Appending",
+          "c": null,
+          "d": "Rationale Appending"
+        },
+        "original_lengths": {
+          "a": 74,
+          "b": 74,
+          "c": 166,
+          "d": 74
+        }
+      },
+      "normalization_run_at": "2026-04-02T03:38:16.154+00:00"
+    },
+    {
+      "question_id": "28c5e131-a88c-4824-a632-f4fe77b846d0",
+      "topic_id": "ce1f1448-3002-4165-9a89-659c887da339",
+      "text": "An architect presents their work in a professional magazine and receives media recognition for innovative design. Later, the architect uses this publication to support a claim of 'recognized expertise in innovative residential design.' This claim is:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Valid because the magazine is a recognized publication with a wide readership and industry influence"
+        },
+        {
+          "id": "b",
+          "text": "Valid because the recognition came from external sources, not self-promotion, and is documented"
+        },
+        {
+          "id": "c",
+          "text": "Invalid unless the recognition reflects 'professional consensus' established through 'years of experience' per §1-f"
+        },
+        {
+          "id": "d",
+          "text": "Valid as long as the architect does not pay the magazine or engage in any form of compensation for the feature"
+        }
+      ],
+      "correct_option_id": "c",
+      "rationale": {
+        "a": "Publication prestige does not fulfill the Code's specific requirement for professional consensus and academic/experience backing. [cite: 98]",
+        "b": "External recognition is valuable, but the Code requires specialization claims to be substantiated facts sanctioned by the profession. [cite: 98]",
+        "d": "The prohibition is on exaggerated or misleading publicity; the lack of payment doesn't make an unsubstantiated specialization claim valid. [cite: 98, 126]",
+        "correct": "Specialization claims require professional consensus and substantiated years of experience; individual media recognition is not equivalent to professional consensus. [cite: 90, 98]",
+        "takeaway": "Misrepresenting qualifications by claiming specialization without substantiated professional consensus is an ethical violation. [cite: 90, 94, 98]"
+      },
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "created_at": "2026-03-23T19:27:45.117151+00:00",
+      "prompt_image_url": null,
+      "explanation": "Publication prestige does not fulfill the Code's specific requirement for professional consensus and academic/experience backing. [cite: 98] External recognition is valuable, but the Code requires specialization claims to be substantiated facts sanctioned by the profession. [cite: 98] The prohibition is on exaggerated or misleading publicity; the lack of payment doesn't make an unsubstantiated specialization claim valid. [cite: 98, 126] Specialization claims require professional consensus and substantiated years of experience; individual media recognition is not equivalent to professional consensus. [cite: 90, 98] Misrepresenting qualifications by claiming specialization without substantiated professional consensus is an ethical violation. [cite: 90, 94, 98]",
+      "code_citation": "SPP Doc 200; RA 9266",
+      "model_id": "ALE-PRAC-ETH-003-007",
+      "is_assessment": false,
+      "updated_at": "2026-05-06T12:49:06.810654+00:00",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "bloom_level": "apply",
+      "irt_difficulty": 1,
+      "irt_discrimination": 1,
+      "irt_guessing": 0,
+      "irt_calibrated_at": null,
+      "question_type": "mcq",
+      "correct_value": null,
+      "value_tolerance": 0,
+      "accepted_answers": null,
+      "created_by": null,
+      "updated_by": null,
+      "article_id": "9bc92dcd-8cce-4970-9111-13e21a72fb68",
+      "hint_text": null,
+      "normalization_status": "normalized",
+      "normalization_log": {
+        "correct_key": "c",
+        "final_lengths": {
+          "a": 108,
+          "b": 108,
+          "c": 104,
+          "d": 108
+        },
+        "technique_used": {
+          "a": "Rationale Appending",
+          "b": "Rationale Appending",
+          "c": null,
+          "d": "Rationale Appending"
+        },
+        "original_lengths": {
+          "a": 66,
+          "b": 74,
+          "c": 104,
+          "d": 56
+        }
+      },
+      "normalization_run_at": "2026-04-02T04:02:22.881+00:00"
+    },
+    {
+      "question_id": "2e4ce628-94ef-481c-8d8f-31bbff019bf7",
+      "topic_id": "3653c4cd-993c-4a70-b72f-171dac422918",
+      "text": "Why should students be cautious about the idea that 'treating feminism as merely women's inclusion' misunderstands feminist architectural critique?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Because women's visibility in architecture is unimportant, which is a dismissive and incorrect assumption"
+        },
+        {
+          "id": "b",
+          "text": "Because feminist analysis fundamentally exposes how architecture reproduces patriarchal hierarchies and reimagines spatial organization for gender equity; visibility matters but is insufficient if it leaves patriarchal structures unchanged"
+        },
+        {
+          "id": "c",
+          "text": "Because architecture has no relationship to gender hierarchies, which ignores the critical role of gender in spatial dynamics"
+        },
+        {
+          "id": "d",
+          "text": "Because feminism opposes all professional women architects, which is a misrepresentation of feminist goals"
+        }
+      ],
+      "correct_option_id": "b",
+      "rationale": {
+        "a": "Visibility is one component; architectural theory says it is important but insufficient.",
+        "c": "architectural theory demonstrates architecture's deep implication in gender hierarchies.",
+        "d": "Feminism supports women's professional participation while critiquing patriarchal structures.",
+        "correct": "Students sometimes reduce feminist architecture to include more women architects...While visibility is important, feminist analysis is fundamentally about exposing how architecture reproduces patriarchal hierarchies and reimagining spatial organization for gender equity.' This shows inclusion without structural critique leaves patriarchy intact.",
+        "takeaway": "Students sometimes reduce feminist architecture to include more women architects...While visibility is important, feminist analysis is fundamentally about exposing how architecture reproduces patriarchal hierarchies and reimagining spatial organization for gender equity.' This shows inclusion without structural critique leaves patriarchy intact."
+      },
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "created_at": "2026-03-23T19:27:55.31954+00:00",
+      "prompt_image_url": null,
+      "explanation": "Visibility is one component; architectural theory says it is important but insufficient. architectural theory demonstrates architecture's deep implication in gender hierarchies. Feminism supports women's professional participation while critiquing patriarchal structures. Students sometimes reduce feminist architecture to include more women architects...While visibility is important, feminist analysis is fundamentally about exposing how architecture reproduces patriarchal hierarchies and reimagining spatial organization for gender equity.' This shows inclusion without structural critique leaves patriarchy intact. Students sometimes reduce feminist architecture to include more women architects...While visibility is important, feminist analysis is fundamentally about exposing how architecture reproduces patriarchal hierarchies and reimagining spatial organization for gender equity.' This shows inclusion without structural critique leaves patriarchy intact.",
+      "code_citation": null,
+      "model_id": "ALE-THEO-005-11-009",
+      "is_assessment": false,
+      "updated_at": "2026-05-06T12:49:11.527101+00:00",
+      "application_context": "design_application",
+      "practice_context": [
+        "PH"
+      ],
+      "bloom_level": "analyze",
+      "irt_difficulty": 0,
+      "irt_discrimination": 1,
+      "irt_guessing": 0,
+      "irt_calibrated_at": null,
+      "question_type": "mcq",
+      "correct_value": null,
+      "value_tolerance": 0,
+      "accepted_answers": null,
+      "created_by": null,
+      "updated_by": null,
+      "article_id": "abf78b33-d1f6-4440-9723-ae3599ccf1d2",
+      "hint_text": null,
+      "normalization_status": "normalized",
+      "normalization_log": {
+        "correct_key": "b",
+        "final_lengths": {
+          "a": 166,
+          "b": 166,
+          "c": 166,
+          "d": 166
+        },
+        "technique_used": {
+          "a": "Rationale Appending",
+          "b": null,
+          "c": "Rationale Appending",
+          "d": "Rationale Appending"
+        },
+        "original_lengths": {
+          "a": 66,
+          "b": 166,
+          "c": 66,
+          "d": 66
+        }
+      },
+      "normalization_run_at": "2026-04-02T04:09:39.159+00:00"
+    },
+    {
+      "question_id": "47320be7-631b-422f-a8de-6edc0384c848",
+      "topic_id": "7706f350-25af-4f03-986e-50fa74ff49e0",
+      "text": "Arabesques and calligraphy serve Islamic architecture through which philosophical and spiritual principle?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They create complex visual patterns that confuse the eye and encourage meditation, fostering a sense of spiritual introspection"
+        },
+        {
+          "id": "b",
+          "text": "They avoid idolatry while maintaining visual richness, serving both decorative and spiritual purposes"
+        },
+        {
+          "id": "c",
+          "text": "They imitate Byzantine mosaic traditions inherited from classical architecture, blending cultural influences"
+        },
+        {
+          "id": "d",
+          "text": "They provide structural support by tying together wall surfaces with surface decoration, enhancing architectural integrity"
+        }
+      ],
+      "correct_option_id": "b",
+      "rationale": {
+        "a": "While visual complexity exists, the article emphasizes the theological principle of avoiding idolatry, not meditation through confusion.",
+        "c": "The article mentions Byzantine inheritance in material and regional practices but identifies the principle as avoiding figurative imagery, not imitating Byzantine style.",
+        "d": "Arabesques and calligraphy are decorative; they do not provide structural support in the article's description.",
+        "correct": "The article explicitly states that arabesques and calligraphy 'avoid idolatry while maintaining visual richness' and serve 'decorative and spiritual purposes simultaneously.'",
+        "takeaway": "The article explicitly states that arabesques and calligraphy 'avoid idolatry while maintaining visual richness' and serve 'decorative and spiritual purposes simultaneously.'."
+      },
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "created_at": "2026-03-23T19:27:24.126756+00:00",
+      "prompt_image_url": null,
+      "explanation": "While visual complexity exists, the article emphasizes the theological principle of avoiding idolatry, not meditation through confusion. The article mentions Byzantine inheritance in material and regional practices but identifies the principle as avoiding figurative imagery, not imitating Byzantine style. Arabesques and calligraphy are decorative; they do not provide structural support in the article's description. The article explicitly states that arabesques and calligraphy 'avoid idolatry while maintaining visual richness' and serve 'decorative and spiritual purposes simultaneously.' The article explicitly states that arabesques and calligraphy 'avoid idolatry while maintaining visual richness' and serve 'decorative and spiritual purposes simultaneously.'.",
+      "code_citation": null,
+      "model_id": "ALE-HIST-004-01-006",
+      "is_assessment": false,
+      "updated_at": "2026-05-06T12:49:10.326177+00:00",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "bloom_level": "analyze",
+      "irt_difficulty": 0,
+      "irt_discrimination": 1,
+      "irt_guessing": 0,
+      "irt_calibrated_at": null,
+      "question_type": "mcq",
+      "correct_value": null,
+      "value_tolerance": 0,
+      "accepted_answers": null,
+      "created_by": null,
+      "updated_by": null,
+      "article_id": "157a66ee-39c3-47ba-ba86-f32414fd2896",
+      "hint_text": null,
+      "normalization_status": "normalized",
+      "normalization_log": {
+        "correct_key": "b",
+        "final_lengths": {
+          "a": 91,
+          "b": 91,
+          "c": 91,
+          "d": 91
+        },
+        "technique_used": {
+          "a": null,
+          "b": null,
+          "c": null,
+          "d": null
+        },
+        "original_lengths": {
+          "a": 91,
+          "b": 91,
+          "c": 91,
+          "d": 91
+        }
+      },
+      "normalization_run_at": "2026-04-02T04:33:01.189+00:00"
+    },
+    {
+      "question_id": "4a8581e1-6b8e-4d83-b9bd-5e1bb4e2dda2",
+      "topic_id": "27666451-9b94-48d7-b6b4-ebb0a9f8a4e4",
+      "text": "Why is in-situ upgrading generally considered more sustainable than relocation-based resettlement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It is cheaper to build (only partial infrastructure), reducing initial investment costs"
+        },
+        {
+          "id": "b",
+          "text": "It preserves livelihood networks, community institutions, and social capital while reducing economic disruption"
+        },
+        {
+          "id": "c",
+          "text": "It requires less community participation in planning, streamlining the process"
+        },
+        {
+          "id": "d",
+          "text": "It eliminates the need for formal property titles, simplifying legal requirements"
+        }
+      ],
+      "correct_option_id": "b",
+      "rationale": {
+        "a": "Cost may be similar or lower, but cost is not the primary sustainability reason.",
+        "b": "In-situ = communities stay; vendors retain customers, artisans retain client bases, school/clinic access continuous, social networks intact. Relocation dislocates all of this, often causing economic collapse and family dissolution.",
+        "c": "In-situ requires MORE community participation typically (SHFC-CMP model).",
+        "d": "In-situ upgrading (via CMP) actually formalizes tenure.",
+        "correct": "In-situ = communities stay; vendors retain customers, artisans retain client bases, school/clinic access continuous, social networks intact. Relocation dislocates all of this, often causing economic collapse and family dissolution.",
+        "takeaway": "In-situ strength: community continuity + livelihood preservation + social stability."
+      },
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "created_at": "2026-03-23T19:27:34.02411+00:00",
+      "prompt_image_url": null,
+      "explanation": "Cost may be similar or lower, but cost is not the primary sustainability reason. In-situ = communities stay; vendors retain customers, artisans retain client bases, school/clinic access continuous, social networks intact. Relocation dislocates all of this, often causing economic collapse and family dissolution. In-situ requires MORE community participation typically (SHFC-CMP model). In-situ upgrading (via CMP) actually formalizes tenure. In-situ = communities stay; vendors retain customers, artisans retain client bases, school/clinic access continuous, social networks intact. Relocation dislocates all of this, often causing economic collapse and family dissolution. In-situ strength: community continuity + livelihood preservation + social stability.",
+      "code_citation": "SHFC-CMP Impact Studies; World Bank Urban Development",
+      "model_id": "ALE-PLAN-003-05-003",
+      "is_assessment": false,
+      "updated_at": "2026-05-06T12:49:09.188681+00:00",
+      "application_context": "recall",
+      "practice_context": [],
+      "bloom_level": "understand",
+      "irt_difficulty": 0,
+      "irt_discrimination": 1,
+      "irt_guessing": 0,
+      "irt_calibrated_at": null,
+      "question_type": "mcq",
+      "correct_value": null,
+      "value_tolerance": 0,
+      "accepted_answers": null,
+      "created_by": null,
+      "updated_by": null,
+      "article_id": "ac9af0bb-dcf3-4a02-b409-d19bca68e514",
+      "hint_text": null,
+      "normalization_status": "normalized",
+      "normalization_log": {
+        "correct_key": "b",
+        "final_lengths": {
+          "a": 88,
+          "b": 108,
+          "c": 88,
+          "d": 88
+        },
+        "technique_used": {
+          "a": "Rationale Appending",
+          "b": null,
+          "c": "Rationale Appending",
+          "d": "Rationale Appending"
+        },
+        "original_lengths": {
+          "a": 48,
+          "b": 108,
+          "c": 48,
+          "d": 48
+        }
+      },
+      "normalization_run_at": "2026-04-02T04:36:26.496+00:00"
+    },
+    {
+      "question_id": "536f5820-c73f-469d-9389-9cd131da5416",
+      "topic_id": "7706f350-25af-4f03-986e-50fa74ff49e0",
+      "text": "How do the five core elements of Islamic architectural vocabulary work together ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Each operates independently to serve different worshippers in different spaces, ensuring diverse functional uses"
+        },
+        {
+          "id": "b",
+          "text": "The courtyard and prayer hall establish the plan; the minaret marks the building externally; the mihrab orients prayer; muqarnas and arabesques transform surfaces into mathematical meditation"
+        },
+        {
+          "id": "c",
+          "text": "They are purely decorative features that serve no functional purpose beyond aesthetics, lacking any structural significance"
+        },
+        {
+          "id": "d",
+          "text": "They were borrowed entirely from Byzantine architecture with no Islamic innovation, reflecting a lack of originality"
+        }
+      ],
+      "correct_option_id": "b",
+      "rationale": {
+        "a": "The article explicitly describes how the elements work together as an integrated system, not independently.",
+        "c": "Each element serves specific functions: the minaret broadcasts prayer, the mihrab orients worshippers, the courtyard enables ablution.",
+        "d": "The article credits Islamic architects with developing new spatial and decorative technologies, not merely copying Byzantine forms.",
+        "correct": "The article concludes: 'These five elements work together: the mosque's courtyard and prayer hall establish the plan; the minaret marks the building externally; the mihrab orients prayer; muqarnas and arabesques transform surfaces into mathematical meditation.'",
+        "takeaway": "The article concludes: 'These five elements work together: the mosque's courtyard and prayer hall establish the plan; the minaret marks the building externally; the mihrab orients prayer; muqarnas and arabesques transform surfaces into mathematical meditation.'."
+      },
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "created_at": "2026-03-23T19:27:24.126756+00:00",
+      "prompt_image_url": null,
+      "explanation": "The article explicitly describes how the elements work together as an integrated system, not independently. Each element serves specific functions: the minaret broadcasts prayer, the mihrab orients worshippers, the courtyard enables ablution. The article credits Islamic architects with developing new spatial and decorative technologies, not merely copying Byzantine forms. The article concludes: 'These five elements work together: the mosque's courtyard and prayer hall establish the plan; the minaret marks the building externally; the mihrab orients prayer; muqarnas and arabesques transform surfaces into mathematical meditation.' The article concludes: 'These five elements work together: the mosque's courtyard and prayer hall establish the plan; the minaret marks the building externally; the mihrab orients prayer; muqarnas and arabesques transform surfaces into mathematical meditation.'.",
+      "code_citation": null,
+      "model_id": "ALE-HIST-004-01-010",
+      "is_assessment": false,
+      "updated_at": "2026-05-06T12:49:09.759392+00:00",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "bloom_level": "analyze",
+      "irt_difficulty": 0,
+      "irt_discrimination": 1,
+      "irt_guessing": 0,
+      "irt_calibrated_at": null,
+      "question_type": "mcq",
+      "correct_value": null,
+      "value_tolerance": 0,
+      "accepted_answers": null,
+      "created_by": null,
+      "updated_by": null,
+      "article_id": "157a66ee-39c3-47ba-ba86-f32414fd2896",
+      "hint_text": null,
+      "normalization_status": "normalized",
+      "normalization_log": {
+        "correct_key": "b",
+        "final_lengths": {
+          "a": 132,
+          "b": 172,
+          "c": 122,
+          "d": 128
+        },
+        "technique_used": {
+          "a": "Rationale Appending",
+          "b": null,
+          "c": "Rationale Appending",
+          "d": "Rationale Appending"
+        },
+        "original_lengths": {
+          "a": 82,
+          "b": 172,
+          "c": 72,
+          "d": 78
+        }
+      },
+      "normalization_run_at": "2026-04-02T04:46:31.626+00:00"
+    },
+    {
+      "question_id": "67d648d2-38f4-42fd-9389-0397990188e5",
+      "topic_id": "fe5fc056-4059-4339-ac5c-902d070e9048",
+      "text": "A coastal residential site in Batangas is exposed to salt spray and experiences seasonal flooding. Which of the following plant selections would be most appropriate for this environment?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Japanese cherry trees, imported ornamental shrubs, and exotic groundcovers, which are not typically suited for saline conditions or flooding"
+        },
+        {
+          "id": "b",
+          "text": "Narra trees, fire tree (Delonix regia), pili, and native salt-tolerant groundcovers"
+        },
+        {
+          "id": "c",
+          "text": "Mango, calamansi, and temperate-zone vegetables, which may not thrive in high salinity or waterlogged soils"
+        },
+        {
+          "id": "d",
+          "text": "Bamboo only; monoculture reduces maintenance but may not provide the necessary ecological diversity"
+        }
+      ],
+      "correct_option_id": "b",
+      "rationale": {
+        "a": "Japanese cherry trees do not thrive in coastal salt spray; exotic species require more maintenance and may fail.",
+        "c": "Mango and calamansi can work, but vegetables are temporary and not suitable for long-term landscaping structure.",
+        "d": "Monoculture creates pest vulnerability and biodiversity loss; diversity is essential.",
+        "correct": "Narra is a native, salt-tolerant Philippine tree. Fire tree thrives in tropical conditions. Pili is native and produces crops. Native salt-tolerant groundcovers (such as Philippine sedge or vetiver) survive coastal exposure. These species reduce irrigation needs, resist local pests, and provide ecological value.",
+        "takeaway": "Select native species adapted to local climate, soil, and hazards (salt spray, flooding). Native plants thrive with minimal input, reducing lifecycle costs and environmental impact."
+      },
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "created_at": "2026-03-23T19:27:15.05978+00:00",
+      "prompt_image_url": null,
+      "explanation": "Japanese cherry trees do not thrive in coastal salt spray; exotic species require more maintenance and may fail. Mango and calamansi can work, but vegetables are temporary and not suitable for long-term landscaping structure. Monoculture creates pest vulnerability and biodiversity loss; diversity is essential. Narra is a native, salt-tolerant Philippine tree. Fire tree thrives in tropical conditions. Pili is native and produces crops. Native salt-tolerant groundcovers (such as Philippine sedge or vetiver) survive coastal exposure. These species reduce irrigation needs, resist local pests, and provide ecological value. Select native species adapted to local climate, soil, and hazards (salt spray, flooding). Native plants thrive with minimal input, reducing lifecycle costs and environmental impact.",
+      "code_citation": "DENR Native Species Guidelines; Philippine Horticultural Society",
+      "model_id": "ALE-DSGN-012-04-002",
+      "is_assessment": false,
+      "updated_at": "2026-05-06T12:49:08.997527+00:00",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "bloom_level": "remember",
+      "irt_difficulty": -1.5,
+      "irt_discrimination": 1,
+      "irt_guessing": 0,
+      "irt_calibrated_at": null,
+      "question_type": "mcq",
+      "correct_value": null,
+      "value_tolerance": 0,
+      "accepted_answers": null,
+      "created_by": null,
+      "updated_by": null,
+      "article_id": "e199769e-5d52-449b-b724-9c05dffdd521",
+      "hint_text": null,
+      "normalization_status": "normalized",
+      "normalization_log": {
+        "correct_key": "b",
+        "final_lengths": {
+          "a": 134,
+          "b": 78,
+          "c": 126,
+          "d": 107
+        },
+        "technique_used": {
+          "a": "Rationale Appending",
+          "b": null,
+          "c": "Rationale Appending",
+          "d": "Rationale Appending"
+        },
+        "original_lengths": {
+          "a": 78,
+          "b": 78,
+          "c": 66,
+          "d": 47
+        }
+      },
+      "normalization_run_at": "2026-04-02T05:05:28.818+00:00"
+    },
+    {
+      "question_id": "688e83e7-10ef-4a00-b0fc-d6df529748a8",
+      "topic_id": "b11017d6-b8ae-4eef-b7ae-cf0ee85bc912",
+      "text": "Filipino culture, with strong family and community orientation, would typically show spatial preferences characteristic of:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Exclusively public spaces; no private residential separation, which is uncommon in urban settings"
+        },
+        {
+          "id": "b",
+          "text": "High-context culture: fluid boundaries, shared spaces, implicit spatial negotiation"
+        },
+        {
+          "id": "c",
+          "text": "No cultural preference; space use is purely individual, disregarding communal influences"
+        },
+        {
+          "id": "d",
+          "text": "Low-context culture: explicit boundaries, private spaces, formal separation, often seen in Western societies"
+        }
+      ],
+      "correct_option_id": "b",
+      "rationale": {
+        "a": "All cultures develop private and public space distinction, though proportions vary",
+        "c": "Culture strongly influences spatial preferences; variation within cultures exists but cultural norms are evident",
+        "d": "This describes low-context Western preferences",
+        "correct": "Filipino high-context, communal culture favors shared residential spaces, fluid boundaries, and implicit spatial negotiation over explicit separation",
+        "takeaway": "Filipino high-context, communal culture favors shared residential spaces, fluid boundaries, and implicit spatial negotiation over explicit separation."
+      },
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "prompt_image_url": null,
+      "explanation": "All cultures develop private and public space distinction, though proportions vary Culture strongly influences spatial preferences; variation within cultures exists but cultural norms are evident This describes low-context Western preferences Filipino high-context, communal culture favors shared residential spaces, fluid boundaries, and implicit spatial negotiation over explicit separation Filipino high-context, communal culture favors shared residential spaces, fluid boundaries, and implicit spatial negotiation over explicit separation.",
+      "code_citation": null,
+      "model_id": "ALE-THEO-003-07-006",
+      "is_assessment": false,
+      "updated_at": "2026-05-06T12:49:08.144952+00:00",
+      "application_context": "design_application",
+      "practice_context": [
+        "PH"
+      ],
+      "bloom_level": "analyze",
+      "irt_difficulty": 0,
+      "irt_discrimination": 1,
+      "irt_guessing": 0,
+      "irt_calibrated_at": null,
+      "question_type": "mcq",
+      "correct_value": null,
+      "value_tolerance": 0,
+      "accepted_answers": null,
+      "created_by": null,
+      "updated_by": null,
+      "article_id": "6ce1c942-85fc-4baf-bb51-df61c8bce885",
+      "hint_text": null,
+      "normalization_status": "normalized",
+      "normalization_log": {
+        "correct_key": "b",
+        "final_lengths": {
+          "a": 101,
+          "b": 82,
+          "c": 94,
+          "d": 112
+        },
+        "technique_used": {
+          "a": "Rationale Appending",
+          "b": null,
+          "c": "Rationale Appending",
+          "d": "Rationale Appending"
+        },
+        "original_lengths": {
+          "a": 61,
+          "b": 82,
+          "c": 54,
+          "d": 72
+        }
+      },
+      "normalization_run_at": "2026-04-02T05:06:46.54+00:00"
+    },
+    {
+      "question_id": "6c985487-e0a9-4b61-8923-7cb219f0a286",
+      "topic_id": "27666451-9b94-48d7-b6b4-ebb0a9f8a4e4",
+      "text": "In the context of human settlements, livelihood integration refers to:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Access to employment opportunities and economic activities within or near the settlement"
+        },
+        {
+          "id": "b",
+          "text": "Training programs for residents to improve employment skills, including vocational and technical education"
+        },
+        {
+          "id": "c",
+          "text": "Credit programs to help residents start microenterprises, with low-interest rates and flexible repayment terms"
+        },
+        {
+          "id": "d",
+          "text": "Government job guarantees for all residents, ensuring employment stability and economic security"
+        }
+      ],
+      "correct_option_id": "a",
+      "rationale": {
+        "a": "Livelihood integration = spatial proximity to jobs or markets. In-situ upgrading succeeds because it preserves existing livelihood networks (vendors, artisans, services). Relocation to distant sites without job access causes economic collapse.",
+        "b": "Skills training is a service, not livelihood integration.",
+        "c": "Credit is financing, not livelihood integration.",
+        "d": "Unrealistic; settlements rely on diverse economic participation.",
+        "correct": "Livelihood integration = spatial proximity to jobs or markets. In-situ upgrading succeeds because it preserves existing livelihood networks (vendors, artisans, services). Relocation to distant sites without job access causes economic collapse.",
+        "takeaway": "Livelihood integration = economic opportunity access. Critical success factor for in-situ upgrading."
+      },
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "created_at": "2026-03-23T19:27:34.02411+00:00",
+      "prompt_image_url": null,
+      "explanation": "Livelihood integration = spatial proximity to jobs or markets. In-situ upgrading succeeds because it preserves existing livelihood networks (vendors, artisans, services). Relocation to distant sites without job access causes economic collapse. Skills training is a service, not livelihood integration. Credit is financing, not livelihood integration. Unrealistic; settlements rely on diverse economic participation. Livelihood integration = spatial proximity to jobs or markets. In-situ upgrading succeeds because it preserves existing livelihood networks (vendors, artisans, services). Relocation to distant sites without job access causes economic collapse. Livelihood integration = economic opportunity access. Critical success factor for in-situ upgrading.",
+      "code_citation": "World Bank Human Settlements Research; UN-Habitat",
+      "model_id": "ALE-PLAN-003-05-002",
+      "is_assessment": false,
+      "updated_at": "2026-05-06T12:49:09.644735+00:00",
+      "application_context": "recall",
+      "practice_context": [],
+      "bloom_level": "understand",
+      "irt_difficulty": -1.5,
+      "irt_discrimination": 1,
+      "irt_guessing": 0,
+      "irt_calibrated_at": null,
+      "question_type": "mcq",
+      "correct_value": null,
+      "value_tolerance": 0,
+      "accepted_answers": null,
+      "created_by": null,
+      "updated_by": null,
+      "article_id": "ac9af0bb-dcf3-4a02-b409-d19bca68e514",
+      "hint_text": null,
+      "normalization_status": "normalized",
+      "normalization_log": {
+        "correct_key": "a",
+        "final_lengths": {
+          "a": 78,
+          "b": 122,
+          "c": 122,
+          "d": 122
+        },
+        "technique_used": {
+          "a": null,
+          "b": "Rationale Appending",
+          "c": "Rationale Appending",
+          "d": "Rationale Appending"
+        },
+        "original_lengths": {
+          "a": 78,
+          "b": 66,
+          "c": 66,
+          "d": 66
+        }
+      },
+      "normalization_run_at": "2026-04-02T05:11:01.523+00:00"
+    },
+    {
+      "question_id": "6ea4f5f5-8200-4b2d-b768-85ff8e476c60",
+      "topic_id": "b11017d6-b8ae-4eef-b7ae-cf0ee85bc912",
+      "text": "How do high-context and low-context cultural frameworks apply to architectural responses to crowding and density?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Crowding affects all cultures identically; cultural context is irrelevant to density perception, which is a simplistic view"
+        },
+        {
+          "id": "b",
+          "text": "High-context cultures show greater tolerance for spatial density; low-context cultures show greater density stress at same population densities"
+        },
+        {
+          "id": "c",
+          "text": "Density tolerance is purely individual; no cultural patterns exist, which ignores significant cultural research"
+        },
+        {
+          "id": "d",
+          "text": "Low-context cultures have evolved to accommodate high density; high-context cultures prefer sparse settlement, which is a generalization"
+        }
+      ],
+      "correct_option_id": "b",
+      "rationale": {
+        "a": "Culture significantly influences crowding perception and tolerance",
+        "c": "Culture creates systematic variation in density preferences, not purely individual variation",
+        "d": "This reverses actual patterns; high-context cultures developed in higher-density contexts",
+        "correct": "High-context cultures show comfort with closer distances and higher density; low-context cultures experience stress at same densities, preferring greater separation",
+        "takeaway": "High-context cultures show comfort with closer distances and higher density; low-context cultures experience stress at same densities, preferring greater separation."
+      },
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "prompt_image_url": null,
+      "explanation": "Culture significantly influences crowding perception and tolerance Culture creates systematic variation in density preferences, not purely individual variation This reverses actual patterns; high-context cultures developed in higher-density contexts High-context cultures show comfort with closer distances and higher density; low-context cultures experience stress at same densities, preferring greater separation High-context cultures show comfort with closer distances and higher density; low-context cultures experience stress at same densities, preferring greater separation.",
+      "code_citation": null,
+      "model_id": "ALE-THEO-003-07-010",
+      "is_assessment": false,
+      "updated_at": "2026-05-06T12:49:08.449896+00:00",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "SYS"
+      ],
+      "bloom_level": "analyze",
+      "irt_difficulty": 0,
+      "irt_discrimination": 1,
+      "irt_guessing": 0,
+      "irt_calibrated_at": null,
+      "question_type": "mcq",
+      "correct_value": null,
+      "value_tolerance": 0,
+      "accepted_answers": null,
+      "created_by": null,
+      "updated_by": null,
+      "article_id": "6ce1c942-85fc-4baf-bb51-df61c8bce885",
+      "hint_text": null,
+      "normalization_status": "normalized",
+      "normalization_log": {
+        "correct_key": "b",
+        "final_lengths": {
+          "a": 108,
+          "b": 108,
+          "c": 108,
+          "d": 108
+        },
+        "technique_used": {
+          "a": "Rationale Appending",
+          "b": null,
+          "c": "Rationale Appending",
+          "d": "Rationale Appending"
+        },
+        "original_lengths": {
+          "a": 88,
+          "b": 108,
+          "c": 78,
+          "d": 88
+        }
+      },
+      "normalization_run_at": "2026-04-02T05:12:52.463+00:00"
+    },
+    {
+      "question_id": "73c56966-7a5e-4941-a46a-c6787756a619",
+      "topic_id": "3653c4cd-993c-4a70-b72f-171dac422918",
+      "text": "How does feminist architectural analysis of Victorian and modernist domestic architecture reveal that spatial separation of kitchens from living spaces was not merely functional but served patriarchal purposes?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Such separation isolated women's reproductive labor (cooking, cleaning, childcare) spatially and socially from intellectual/leisure spaces inhabited by men, confining women while promoting male professional mobility and status"
+        },
+        {
+          "id": "b",
+          "text": "Cooking requires isolation from other household activities to prevent cross-contamination and ensure safety."
+        },
+        {
+          "id": "c",
+          "text": "Kitchen-living separation is the most efficient arrangement for cooking and dining, optimizing workflow and minimizing movement."
+        },
+        {
+          "id": "d",
+          "text": "Kitchen separation was invented by women architects to create distinct zones for culinary activities."
+        }
+      ],
+      "correct_option_id": "a",
+      "rationale": {
+        "b": "Isolation is not functionally necessary; other cultures integrate kitchen and living spaces successfully.",
+        "c": "While functional efficiency is a factor, feminist analysis reveals this obscures patriarchal purposes.",
+        "d": "architectural theory shows these spatial arrangements were inherited, not women-designed.",
+        "correct": "Victorian and modernist domestic architecture separated kitchen and living spaces, confining reproductive labor (cooking, cleaning, childcare) spatially and socially away from the intellectual and leisure spaces inhabited by men.' This shows spatial arrangement reinforces gender hierarchy and labor division, not merely efficiency.",
+        "takeaway": "Victorian and modernist domestic architecture separated kitchen and living spaces, confining reproductive labor (cooking, cleaning, childcare) spatially and socially away from the intellectual and leisure spaces inhabited by men.' This shows spatial arrangement reinforces gender hierarchy and labor division, not merely efficiency."
+      },
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "created_at": "2026-03-23T19:27:55.31954+00:00",
+      "prompt_image_url": null,
+      "explanation": "Isolation is not functionally necessary; other cultures integrate kitchen and living spaces successfully. While functional efficiency is a factor, feminist analysis reveals this obscures patriarchal purposes. architectural theory shows these spatial arrangements were inherited, not women-designed. Victorian and modernist domestic architecture separated kitchen and living spaces, confining reproductive labor (cooking, cleaning, childcare) spatially and socially away from the intellectual and leisure spaces inhabited by men.' This shows spatial arrangement reinforces gender hierarchy and labor division, not merely efficiency. Victorian and modernist domestic architecture separated kitchen and living spaces, confining reproductive labor (cooking, cleaning, childcare) spatially and socially away from the intellectual and leisure spaces inhabited by men.' This shows spatial arrangement reinforces gender hierarchy and labor division, not merely efficiency.",
+      "code_citation": null,
+      "model_id": "ALE-THEO-005-11-003",
+      "is_assessment": false,
+      "updated_at": "2026-05-06T12:49:10.565133+00:00",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "bloom_level": "apply",
+      "irt_difficulty": 0,
+      "irt_discrimination": 1,
+      "irt_guessing": 0,
+      "irt_calibrated_at": null,
+      "question_type": "mcq",
+      "correct_value": null,
+      "value_tolerance": 0,
+      "accepted_answers": null,
+      "created_by": null,
+      "updated_by": null,
+      "article_id": "abf78b33-d1f6-4440-9723-ae3599ccf1d2",
+      "hint_text": null,
+      "normalization_status": "normalized",
+      "normalization_log": {
+        "correct_key": "a",
+        "final_lengths": {
+          "a": 234,
+          "b": 116,
+          "c": 116,
+          "d": 116
+        },
+        "technique_used": {
+          "a": null,
+          "b": "Rationale Appending",
+          "c": "Rationale Appending",
+          "d": "Rationale Appending"
+        },
+        "original_lengths": {
+          "a": 234,
+          "b": 54,
+          "c": 66,
+          "d": 54
+        }
+      },
+      "normalization_run_at": "2026-04-02T12:47:28.389+00:00"
+    },
+    {
+      "question_id": "740e7361-0334-469d-be51-767c96c30b1c",
+      "topic_id": "3653c4cd-993c-4a70-b72f-171dac422918",
+      "text": "Which feminist architectural theorist authored The Grand Domestic Revolution (1981), examining how women architects historically imagined collective housing alternatives?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Carol Burns"
+        },
+        {
+          "id": "b",
+          "text": "Lori Brown"
+        },
+        {
+          "id": "c",
+          "text": "Dolores Hayden"
+        },
+        {
+          "id": "d",
+          "text": "Elizabeth Plater-Zyberk"
+        }
+      ],
+      "correct_option_id": "c",
+      "rationale": {
+        "a": "Carol Burns is a historian but not attributed with The Grand Domestic Revolution.",
+        "b": "Lori Brown is contemporary feminist architect and founder of ArchiteXX, working later than Hayden.",
+        "d": "Plater-Zyberk is a contemporary architect known for New Urbanism, not feminist housing history.",
+        "correct": "Dolores Hayden's The Grand Domestic Revolution (1981) as examining 'how women architects and reformers historically imagined collective housing alternatives that would reduce isolated domestic labor through shared kitchens, childcare, and laundry facilities.'",
+        "takeaway": "Dolores Hayden's The Grand Domestic Revolution (1981) as examining 'how women architects and reformers historically imagined collective housing alternatives that would reduce isolated domestic labor through shared kitchens, childcare, and laundry facilities.'."
+      },
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "created_at": "2026-03-23T19:27:55.31954+00:00",
+      "prompt_image_url": null,
+      "explanation": "Carol Burns is a historian but not attributed with The Grand Domestic Revolution. Lori Brown is contemporary feminist architect and founder of ArchiteXX, working later than Hayden. Plater-Zyberk is a contemporary architect known for New Urbanism, not feminist housing history. Dolores Hayden's The Grand Domestic Revolution (1981) as examining 'how women architects and reformers historically imagined collective housing alternatives that would reduce isolated domestic labor through shared kitchens, childcare, and laundry facilities.' Dolores Hayden's The Grand Domestic Revolution (1981) as examining 'how women architects and reformers historically imagined collective housing alternatives that would reduce isolated domestic labor through shared kitchens, childcare, and laundry facilities.'.",
+      "code_citation": null,
+      "model_id": "ALE-THEO-005-11-004",
+      "is_assessment": false,
+      "updated_at": "2026-05-06T12:49:10.989875+00:00",
+      "application_context": "recall",
+      "practice_context": [
+        "ATT"
+      ],
+      "bloom_level": "remember",
+      "irt_difficulty": 0,
+      "irt_discrimination": 1,
+      "irt_guessing": 0,
+      "irt_calibrated_at": null,
+      "question_type": "mcq",
+      "correct_value": null,
+      "value_tolerance": 0,
+      "accepted_answers": null,
+      "created_by": null,
+      "updated_by": null,
+      "article_id": "abf78b33-d1f6-4440-9723-ae3599ccf1d2",
+      "hint_text": null,
+      "normalization_status": null,
+      "normalization_log": null,
+      "normalization_run_at": null
+    },
+    {
+      "question_id": "782cd0ca-89e1-4f77-82d6-e8c78b04f65b",
+      "topic_id": "7706f350-25af-4f03-986e-50fa74ff49e0",
+      "text": "How does Islamic architectural emphasis on the courtyard and prayer hall differ from Gothic architecture's emphasis on vertical hierarchy and pointed arches?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Islamic architecture prioritizes horizontality and openness; Gothic prioritizes height and visual elevation"
+        },
+        {
+          "id": "b",
+          "text": "Islamic architecture uses stone exclusively; Gothic uses brick and wood as primary structural materials"
+        },
+        {
+          "id": "c",
+          "text": "Islamic architecture originated in Europe; Gothic originated in the Middle East before spreading westward"
+        },
+        {
+          "id": "d",
+          "text": "Islamic architecture employs figurative decoration; Gothic avoids human imagery in ecclesiastical buildings"
+        }
+      ],
+      "correct_option_id": "a",
+      "rationale": {
+        "b": "The article notes material choice varies by region (stone, brick, tile); this is not the defining distinction between Islamic and Gothic traditions.",
+        "c": "This is factually backwards; Islamic architecture originated in the Islamic world, Gothic in medieval Europe.",
+        "d": "Islamic architecture specifically avoids figurative imagery through arabesques and calligraphy; this is correct but not the primary distinction stated in the article.",
+        "correct": "The prayer hall 'emphasizes horizontality and openness rather than vertical hierarchy,' explicitly contrasting Islamic with Gothic approaches.",
+        "takeaway": "The article states that the prayer hall 'emphasizes horizontality and openness rather than vertical hierarchy,' explicitly contrasting Islamic with Gothic approaches."
+      },
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "created_at": "2026-03-23T19:27:24.126756+00:00",
+      "prompt_image_url": null,
+      "explanation": "The article notes material choice varies by region (stone, brick, tile); this is not the defining distinction between Islamic and Gothic traditions. This is factually backwards; Islamic architecture originated in the Islamic world, Gothic in medieval Europe. Islamic architecture specifically avoids figurative imagery through arabesques and calligraphy; this is correct but not the primary distinction stated in the article. The prayer hall 'emphasizes horizontality and openness rather than vertical hierarchy,' explicitly contrasting Islamic with Gothic approaches. The article states that the prayer hall 'emphasizes horizontality and openness rather than vertical hierarchy,' explicitly contrasting Islamic with Gothic approaches.",
+      "code_citation": null,
+      "model_id": "ALE-HIST-004-01-005",
+      "is_assessment": false,
+      "updated_at": "2026-05-06T12:49:10.105497+00:00",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "bloom_level": "analyze",
+      "irt_difficulty": 0,
+      "irt_discrimination": 1,
+      "irt_guessing": 0,
+      "irt_calibrated_at": null,
+      "question_type": "mcq",
+      "correct_value": null,
+      "value_tolerance": 0,
+      "accepted_answers": null,
+      "created_by": null,
+      "updated_by": null,
+      "article_id": "157a66ee-39c3-47ba-ba86-f32414fd2896",
+      "hint_text": null,
+      "normalization_status": "normalized",
+      "normalization_log": {
+        "technique": "manual",
+        "correct_key": "a"
+      },
+      "normalization_run_at": "2026-04-02T14:14:39.57918+00:00"
+    },
+    {
+      "question_id": "7f7550fd-7fd2-4e33-9422-cd5230f8dc52",
+      "topic_id": "3653c4cd-993c-4a70-b72f-171dac422918",
+      "text": "What does 'epistemic violence' mean in the context of postcolonial architectural theory?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Physical destruction of buildings during colonial conquest and military occupation of indigenous territories"
+        },
+        {
+          "id": "b",
+          "text": "Violence in the aesthetic representation of architecture through aggressive formal and material expressions"
+        },
+        {
+          "id": "c",
+          "text": "The cost of transporting building materials from colonial metropoles to peripheral territories"
+        },
+        {
+          "id": "d",
+          "text": "The devaluing of non-Western knowledge systems and imposition of Western knowledge as universal truth; architecture participates through canonization that marginalizes non-Western traditions"
+        }
+      ],
+      "correct_option_id": "d",
+      "rationale": {
+        "a": "Epistemic violence is about knowledge systems, not physical destruction.",
+        "b": "Epistemic violence addresses knowledge structures, not aesthetics alone.",
+        "c": "Logistical costs are unrelated to epistemological critique.",
+        "correct": "The Key Terms define 'Epistemic Violence' as 'Devaluing non-Western knowledge systems and imposing Western knowledge as universal truth; architecture participates in epistemic violence through canonization.' architectural theory shows how architectural canons themselves are colonial products that erase non-Western traditions.",
+        "takeaway": "The Key Terms define 'Epistemic Violence' as 'Devaluing non-Western knowledge systems and imposing Western knowledge as universal truth; architecture participates in epistemic violence through canonization.' architectural theory shows how architectural canons themselves are colonial products that erase non-Western traditions."
+      },
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "created_at": "2026-03-23T19:27:55.31954+00:00",
+      "prompt_image_url": null,
+      "explanation": "Epistemic violence is about knowledge systems, not physical destruction. Epistemic violence addresses knowledge structures, not aesthetics alone. Logistical costs are unrelated to epistemological critique. The Key Terms define 'Epistemic Violence' as 'Devaluing non-Western knowledge systems and imposing Western knowledge as universal truth; architecture participates in epistemic violence through canonization.' architectural theory shows how architectural canons themselves are colonial products that erase non-Western traditions. The Key Terms define 'Epistemic Violence' as 'Devaluing non-Western knowledge systems and imposing Western knowledge as universal truth; architecture participates in epistemic violence through canonization.' architectural theory shows how architectural canons themselves are colonial products that erase non-Western traditions.",
+      "code_citation": null,
+      "model_id": "ALE-THEO-005-11-001",
+      "is_assessment": false,
+      "updated_at": "2026-05-06T12:49:10.442272+00:00",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "bloom_level": "remember",
+      "irt_difficulty": 0,
+      "irt_discrimination": 1,
+      "irt_guessing": 0,
+      "irt_calibrated_at": null,
+      "question_type": "mcq",
+      "correct_value": null,
+      "value_tolerance": 0,
+      "accepted_answers": null,
+      "created_by": null,
+      "updated_by": null,
+      "article_id": "abf78b33-d1f6-4440-9723-ae3599ccf1d2",
+      "hint_text": null,
+      "normalization_status": "normalized",
+      "normalization_log": {
+        "technique": "manual",
+        "correct_key": "d"
+      },
+      "normalization_run_at": "2026-04-02T14:17:01.010576+00:00"
+    },
+    {
+      "question_id": "89c3d06a-9904-4be1-9518-45b7aa9678de",
+      "topic_id": "3653c4cd-993c-4a70-b72f-171dac422918",
+      "text": "Which architect's Contested Spaces (2013) analyzes abortion clinics and women's shelters as politically contested architectural sites that shape gendered embodied experience?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lori Brown"
+        },
+        {
+          "id": "b",
+          "text": "Ellen Lupton"
+        },
+        {
+          "id": "c",
+          "text": "Dolores Hayden"
+        },
+        {
+          "id": "d",
+          "text": "Jane Jacobs"
+        }
+      ],
+      "correct_option_id": "a",
+      "rationale": {
+        "b": "Lupton is a design theorist but not attributed with Contested Spaces.",
+        "c": "Hayden authored The Grand Domestic Revolution on housing alternatives.",
+        "d": "Jane Jacobs wrote about urban sociology; Lori Brown is the feminist architectural analyst.",
+        "correct": "Lori Brown's Contested Spaces (2013) as 'analyz[ing] abortion clinics as politically contested architectural sites, revealing how abortion legislation translates into spatial restrictions and surveillance architectures that control women's bodies.' Brown is leading contemporary feminist architect.",
+        "takeaway": "Lori Brown's Contested Spaces (2013) as 'analyz[ing] abortion clinics as politically contested architectural sites, revealing how abortion legislation translates into spatial restrictions and surveillance architectures that control women's bodies.' Brown is leading contemporary feminist architect."
+      },
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "created_at": "2026-03-23T19:27:55.31954+00:00",
+      "prompt_image_url": null,
+      "explanation": "Lupton is a design theorist but not attributed with Contested Spaces. Hayden authored The Grand Domestic Revolution on housing alternatives. Jane Jacobs wrote about urban sociology; Lori Brown is the feminist architectural analyst. Lori Brown's Contested Spaces (2013) as 'analyz[ing] abortion clinics as politically contested architectural sites, revealing how abortion legislation translates into spatial restrictions and surveillance architectures that control women's bodies.' Brown is leading contemporary feminist architect. Lori Brown's Contested Spaces (2013) as 'analyz[ing] abortion clinics as politically contested architectural sites, revealing how abortion legislation translates into spatial restrictions and surveillance architectures that control women's bodies.' Brown is leading contemporary feminist architect.",
+      "code_citation": null,
+      "model_id": "ALE-THEO-005-11-008",
+      "is_assessment": false,
+      "updated_at": "2026-05-06T12:49:11.407167+00:00",
+      "application_context": "recall",
+      "practice_context": [
+        "ATT"
+      ],
+      "bloom_level": "remember",
+      "irt_difficulty": 0,
+      "irt_discrimination": 1,
+      "irt_guessing": 0,
+      "irt_calibrated_at": null,
+      "question_type": "mcq",
+      "correct_value": null,
+      "value_tolerance": 0,
+      "accepted_answers": null,
+      "created_by": null,
+      "updated_by": null,
+      "article_id": "abf78b33-d1f6-4440-9723-ae3599ccf1d2",
+      "hint_text": null,
+      "normalization_status": null,
+      "normalization_log": null,
+      "normalization_run_at": null
+    },
+    {
+      "question_id": "89e6664e-07ab-4b71-b0cc-70f4401bf714",
+      "topic_id": "7706f350-25af-4f03-986e-50fa74ff49e0",
+      "text": "The article identifies five pillars of Islamic architectural vocabulary. Which of the following elements does NOT appear in this core list?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Mosque"
+        },
+        {
+          "id": "b",
+          "text": "The Dome"
+        },
+        {
+          "id": "c",
+          "text": "The Minaret"
+        },
+        {
+          "id": "d",
+          "text": "Muqarnas"
+        }
+      ],
+      "correct_option_id": "b",
+      "rationale": {
+        "a": "The Mosque is the foundational structure and first pillar explicitly listed.",
+        "c": "The Minaret serves functional and symbolic roles and is the second pillar listed.",
+        "d": "Muqarnas represents spatial complexity and is the fourth pillar listed.",
+        "correct": "The article explicitly identifies five core elements: the Mosque, Minaret, Mihrab, Muqarnas, and Arabesques/Calligraphy. The dome is not named as a core pillar.",
+        "takeaway": "The dome is not named as a core pillar."
+      },
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "created_at": "2026-03-23T19:27:24.126756+00:00",
+      "prompt_image_url": null,
+      "explanation": "The Mosque is the foundational structure and first pillar explicitly listed. The Minaret serves functional and symbolic roles and is the second pillar listed. Muqarnas represents spatial complexity and is the fourth pillar listed. The article explicitly identifies five core elements: the Mosque, Minaret, Mihrab, Muqarnas, and Arabesques/Calligraphy. The dome is not named as a core pillar. The dome is not named as a core pillar.",
+      "code_citation": null,
+      "model_id": "ALE-HIST-004-01-003",
+      "is_assessment": false,
+      "updated_at": "2026-05-06T12:49:09.995858+00:00",
+      "application_context": "recall",
+      "practice_context": [
+        "CH"
+      ],
+      "bloom_level": "remember",
+      "irt_difficulty": 0,
+      "irt_discrimination": 1,
+      "irt_guessing": 0,
+      "irt_calibrated_at": null,
+      "question_type": "mcq",
+      "correct_value": null,
+      "value_tolerance": 0,
+      "accepted_answers": null,
+      "created_by": null,
+      "updated_by": null,
+      "article_id": "157a66ee-39c3-47ba-ba86-f32414fd2896",
+      "hint_text": null,
+      "normalization_status": null,
+      "normalization_log": null,
+      "normalization_run_at": null
+    },
+    {
+      "question_id": "9a288980-e8be-44f1-8a85-aa833aa5b864",
+      "topic_id": "7706f350-25af-4f03-986e-50fa74ff49e0",
+      "text": "A monumental vaulted recessed portal or gateway, typically framed by a four-centered arch and common in Persian and Central Asian Islamic architecture, is called an:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Qibla"
+        },
+        {
+          "id": "b",
+          "text": "Iwan"
+        },
+        {
+          "id": "c",
+          "text": "Mihrab"
+        },
+        {
+          "id": "d",
+          "text": "Muezzin"
+        }
+      ],
+      "correct_option_id": "b",
+      "rationale": {
+        "a": "Qibla is the wall or direction toward Mecca, not a portal or gateway.",
+        "c": "Mihrab is the niche in the qibla wall, not a gateway.",
+        "d": "Muezzin is the person who calls to prayer from the minaret, not an architectural element.",
+        "correct": "The article defines the iwan as 'a vaulted recessed portal or gateway, typically framed by a four-centered arch; common in Persian and Central Asian Islamic architecture.'",
+        "takeaway": "The article defines the iwan as 'a vaulted recessed portal or gateway, typically framed by a four-centered arch; common in Persian and Central Asian Islamic architecture.'."
+      },
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "created_at": "2026-03-23T19:27:24.126756+00:00",
+      "prompt_image_url": null,
+      "explanation": "Qibla is the wall or direction toward Mecca, not a portal or gateway. Mihrab is the niche in the qibla wall, not a gateway. Muezzin is the person who calls to prayer from the minaret, not an architectural element. The article defines the iwan as 'a vaulted recessed portal or gateway, typically framed by a four-centered arch; common in Persian and Central Asian Islamic architecture.' The article defines the iwan as 'a vaulted recessed portal or gateway, typically framed by a four-centered arch; common in Persian and Central Asian Islamic architecture.'.",
+      "code_citation": null,
+      "model_id": "ALE-HIST-004-01-008",
+      "is_assessment": false,
+      "updated_at": "2026-05-06T12:49:09.86902+00:00",
+      "application_context": "recall",
+      "practice_context": [
+        "ID"
+      ],
+      "bloom_level": "remember",
+      "irt_difficulty": 0,
+      "irt_discrimination": 1,
+      "irt_guessing": 0,
+      "irt_calibrated_at": null,
+      "question_type": "mcq",
+      "correct_value": null,
+      "value_tolerance": 0,
+      "accepted_answers": null,
+      "created_by": null,
+      "updated_by": null,
+      "article_id": "157a66ee-39c3-47ba-ba86-f32414fd2896",
+      "hint_text": null,
+      "normalization_status": null,
+      "normalization_log": null,
+      "normalization_run_at": null
+    },
+    {
+      "question_id": "b7d736e6-e206-4991-8b64-31da685b24f8",
+      "topic_id": "b11017d6-b8ae-4eef-b7ae-cf0ee85bc912",
+      "text": "Why might Western international design standards (explicit labeling, clear boundaries, private spaces) feel 'cold' or 'unwelcoming' to occupants from high-context cultures?",
+      "options": [
+        {
+          "id": "a",
+          "text": "International standards reflect low-context assumptions; high-context preferences for implicit meaning, fluid boundaries, and communal space aren't accommodated"
+        },
+        {
+          "id": "b",
+          "text": "High-context occupants have poor eyesight and cannot read explicit signage, which leads to misunderstandings"
+        },
+        {
+          "id": "c",
+          "text": "High-context cultures prefer lower-quality design and ignore professional standards, which can lead to conflicts in design expectations"
+        },
+        {
+          "id": "d",
+          "text": "Explicit labeling violates religious or cultural prohibitions in high-context cultures, creating discomfort"
+        }
+      ],
+      "correct_option_id": "a",
+      "rationale": {
+        "b": "Explicit signage is readable; the issue is cultural mismatch, not legibility",
+        "c": "Quality is independent of context type; this is a preference difference, not quality judgment",
+        "d": "While some specific elements may have cultural significance, general preference is about communication and spatial style",
+        "correct": "International standards embody low-context assumptions; high-context preferences for implicit wayfinding, shared spaces, and relational meaning aren't accommodated",
+        "takeaway": "International standards embody low-context assumptions; high-context preferences for implicit wayfinding, shared spaces, and relational meaning aren't accommodated."
+      },
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "prompt_image_url": null,
+      "explanation": "Explicit signage is readable; the issue is cultural mismatch, not legibility Quality is independent of context type; this is a preference difference, not quality judgment While some specific elements may have cultural significance, general preference is about communication and spatial style International standards embody low-context assumptions; high-context preferences for implicit wayfinding, shared spaces, and relational meaning aren't accommodated International standards embody low-context assumptions; high-context preferences for implicit wayfinding, shared spaces, and relational meaning aren't accommodated.",
+      "code_citation": null,
+      "model_id": "ALE-THEO-003-07-008",
+      "is_assessment": false,
+      "updated_at": "2026-05-06T12:49:07.824054+00:00",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "bloom_level": "analyze",
+      "irt_difficulty": 0,
+      "irt_discrimination": 1,
+      "irt_guessing": 0,
+      "irt_calibrated_at": null,
+      "question_type": "mcq",
+      "correct_value": null,
+      "value_tolerance": 0,
+      "accepted_answers": null,
+      "created_by": null,
+      "updated_by": null,
+      "article_id": "6ce1c942-85fc-4baf-bb51-df61c8bce885",
+      "hint_text": null,
+      "normalization_status": "normalized",
+      "normalization_log": {
+        "correct_key": "a",
+        "final_lengths": {
+          "a": 144,
+          "b": 144,
+          "c": 144,
+          "d": 144
+        },
+        "technique_used": {
+          "a": null,
+          "b": "Rationale Appending",
+          "c": "Rationale Appending",
+          "d": "Rationale Appending"
+        },
+        "original_lengths": {
+          "a": 144,
+          "b": 88,
+          "c": 88,
+          "d": 88
+        }
+      },
+      "normalization_run_at": "2026-04-02T13:04:31.344+00:00"
+    },
+    {
+      "question_id": "bef5793d-b2b2-4fc7-96d3-68c59dee013d",
+      "topic_id": "b11017d6-b8ae-4eef-b7ae-cf0ee85bc912",
+      "text": "Edward T. Hall's proxemics framework demonstrates that personal space and distance preferences are:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Individual personality traits; distance preferences correlate only with individual temperament"
+        },
+        {
+          "id": "b",
+          "text": "Culturally learned and conditioned; distance preferences vary systematically across cultural groups"
+        },
+        {
+          "id": "c",
+          "text": "Biologically universal; all humans maintain identical distance preferences regardless of cultural background"
+        },
+        {
+          "id": "d",
+          "text": "Irrelevant to architectural design; distance preferences don't affect building performance"
+        }
+      ],
+      "correct_option_id": "b",
+      "rationale": {
+        "a": "While personality influences behavior, cultural conditioning is the primary determinant",
+        "c": "Hall's research specifically documents cultural variation, not universality",
+        "d": "Proxemics directly informs architectural spacing and design decisions",
+        "correct": "Hall's fundamental finding is that proxemics is culturally learned; distance norms vary systematically by culture",
+        "takeaway": "Hall's fundamental finding is that proxemics is culturally learned; distance norms vary systematically by culture."
+      },
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "prompt_image_url": null,
+      "explanation": "While personality influences behavior, cultural conditioning is the primary determinant Hall's research specifically documents cultural variation, not universality Proxemics directly informs architectural spacing and design decisions Hall's fundamental finding is that proxemics is culturally learned; distance norms vary systematically by culture Hall's fundamental finding is that proxemics is culturally learned; distance norms vary systematically by culture.",
+      "code_citation": null,
+      "model_id": "ALE-THEO-003-07-001",
+      "is_assessment": false,
+      "updated_at": "2026-05-06T12:49:08.022546+00:00",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "bloom_level": "remember",
+      "irt_difficulty": 0,
+      "irt_discrimination": 1,
+      "irt_guessing": 0,
+      "irt_calibrated_at": null,
+      "question_type": "mcq",
+      "correct_value": null,
+      "value_tolerance": 0,
+      "accepted_answers": null,
+      "created_by": null,
+      "updated_by": null,
+      "article_id": "6ce1c942-85fc-4baf-bb51-df61c8bce885",
+      "hint_text": null,
+      "normalization_status": null,
+      "normalization_log": null,
+      "normalization_run_at": null
+    },
+    {
+      "question_id": "db25bc9f-85fc-4066-8e3e-ca53d28c011b",
+      "topic_id": "b11017d6-b8ae-4eef-b7ae-cf0ee85bc912",
+      "text": "Low-context cultures typically prefer:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mixed spatial organization with no consistent organizational logic, which can lead to confusion in navigation"
+        },
+        {
+          "id": "b",
+          "text": "Fluid spatial boundaries, implicit wayfinding, and communal spaces, fostering informal interactions"
+        },
+        {
+          "id": "c",
+          "text": "Explicit spatial boundaries, clear labeling, private individual spaces, and formal hierarchy"
+        },
+        {
+          "id": "d",
+          "text": "Elimination of all spatial definition and boundaries, creating an open and undefined environment"
+        }
+      ],
+      "correct_option_id": "c",
+      "rationale": {
+        "a": "Both context types develop consistent organization reflecting their communication styles",
+        "b": "This describes high-context spatial preferences",
+        "d": "All cultures establish some spatial organization and definition",
+        "correct": "Low-context cultures (North America, Northern Europe) prefer explicit boundaries, clear signage, and private spaces reflecting direct communication style",
+        "takeaway": "Low-context cultures (North America, Northern Europe) prefer explicit boundaries, clear signage, and private spaces reflecting direct communication style."
+      },
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "prompt_image_url": null,
+      "explanation": "Both context types develop consistent organization reflecting their communication styles This describes high-context spatial preferences All cultures establish some spatial organization and definition Low-context cultures (North America, Northern Europe) prefer explicit boundaries, clear signage, and private spaces reflecting direct communication style Low-context cultures (North America, Northern Europe) prefer explicit boundaries, clear signage, and private spaces reflecting direct communication style.",
+      "code_citation": null,
+      "model_id": "ALE-THEO-003-07-003",
+      "is_assessment": false,
+      "updated_at": "2026-05-06T12:49:07.573374+00:00",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "bloom_level": "remember",
+      "irt_difficulty": 0,
+      "irt_discrimination": 1,
+      "irt_guessing": 0,
+      "irt_calibrated_at": null,
+      "question_type": "mcq",
+      "correct_value": null,
+      "value_tolerance": 0,
+      "accepted_answers": null,
+      "created_by": null,
+      "updated_by": null,
+      "article_id": "6ce1c942-85fc-4baf-bb51-df61c8bce885",
+      "hint_text": null,
+      "normalization_status": "normalized",
+      "normalization_log": {
+        "correct_key": "c",
+        "final_lengths": {
+          "a": 78,
+          "b": 78,
+          "c": 78,
+          "d": 78
+        },
+        "technique_used": {
+          "a": null,
+          "b": null,
+          "c": null,
+          "d": null
+        },
+        "original_lengths": {
+          "a": 78,
+          "b": 78,
+          "c": 78,
+          "d": 78
+        }
+      },
+      "normalization_run_at": "2026-04-02T08:42:36.396+00:00"
+    },
+    {
+      "question_id": "e6236a7d-67fb-445d-9219-ac7962f3e6ba",
+      "topic_id": "b11017d6-b8ae-4eef-b7ae-cf0ee85bc912",
+      "text": "Why is understanding cultural spatial preferences critical for architects designing buildings in multicultural contexts like Manila?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Architects should ignore cultural preferences and impose Western standards regardless of occupant origin, believing in universal applicability"
+        },
+        {
+          "id": "b",
+          "text": "Only Filipino culture exists in the Philippines; other cultural groups are irrelevant, simplifying design considerations"
+        },
+        {
+          "id": "c",
+          "text": "Different cultural groups occupy the same buildings; understanding varied preferences enables inclusive design serving diverse populations"
+        },
+        {
+          "id": "d",
+          "text": "Cultural differences are irrelevant to professional design practice; all architecture follows universal Western standards, assuming homogeneity"
+        }
+      ],
+      "correct_option_id": "c",
+      "rationale": {
+        "a": "Professional architecture responds to occupant needs; imposing single standards excludes non-Western occupants",
+        "b": "Manila includes significant expatriate populations (American, European, Chinese, Indian) with different spatial cultures",
+        "d": "Hall's research demonstrates cultural variation; ignoring it produces exclusionary design",
+        "correct": "Manila's multicultural population requires design flexibility accommodating diverse spatial and cultural preferences for inclusive outcomes",
+        "takeaway": "Manila's multicultural population requires design flexibility accommodating diverse spatial and cultural preferences for inclusive outcomes."
+      },
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "prompt_image_url": null,
+      "explanation": "Professional architecture responds to occupant needs; imposing single standards excludes non-Western occupants Manila includes significant expatriate populations (American, European, Chinese, Indian) with different spatial cultures Hall's research demonstrates cultural variation; ignoring it produces exclusionary design Manila's multicultural population requires design flexibility accommodating diverse spatial and cultural preferences for inclusive outcomes Manila's multicultural population requires design flexibility accommodating diverse spatial and cultural preferences for inclusive outcomes.",
+      "code_citation": null,
+      "model_id": "ALE-THEO-003-07-011",
+      "is_assessment": false,
+      "updated_at": "2026-05-06T12:49:08.562056+00:00",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "bloom_level": "analyze",
+      "irt_difficulty": 0,
+      "irt_discrimination": 1,
+      "irt_guessing": 0,
+      "irt_calibrated_at": null,
+      "question_type": "mcq",
+      "correct_value": null,
+      "value_tolerance": 0,
+      "accepted_answers": null,
+      "created_by": null,
+      "updated_by": null,
+      "article_id": "6ce1c942-85fc-4baf-bb51-df61c8bce885",
+      "hint_text": null,
+      "normalization_status": "normalized",
+      "normalization_log": {
+        "correct_key": "c",
+        "final_lengths": {
+          "a": 108,
+          "b": 108,
+          "c": 108,
+          "d": 108
+        },
+        "technique_used": {
+          "a": "Rationale Appending",
+          "b": "Rationale Appending",
+          "c": null,
+          "d": "Rationale Appending"
+        },
+        "original_lengths": {
+          "a": 92,
+          "b": 74,
+          "c": 108,
+          "d": 92
+        }
+      },
+      "normalization_run_at": "2026-04-02T08:47:07.07+00:00"
+    },
+    {
+      "question_id": "e9f37aeb-f6e2-4250-95cf-1e57c7ecf077",
+      "topic_id": "f83f5e6d-987c-44cc-95bb-d834d922f3e5",
+      "text": "How does understanding architecture as a communication system (symbol, metaphor, narrative) change the way architects should approach design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It has no practical implications for design practice; meaning is secondary to function and structure, which are the primary concerns"
+        },
+        {
+          "id": "b",
+          "text": "It means contemporary architecture should return to historical styles and traditional symbolism, emphasizing cultural continuity"
+        },
+        {
+          "id": "c",
+          "text": "It clarifies that architectural choices (materials, proportions, symbols, references) are not neutral but carry meaning; architects should design consciously aware that form and space communicate cultural values, institutional identity, and aspirations"
+        },
+        {
+          "id": "d",
+          "text": "It suggests architects should ignore functional and structural requirements to focus on symbolic meaning, prioritizing aesthetics over practicality"
+        }
+      ],
+      "correct_option_id": "c",
+      "rationale": {
+        "a": "Understanding meaning transforms design practice from unconscious to intentional.",
+        "b": "Conscious meaning-making applies to contemporary design too, not only historical imitation.",
+        "d": "Meaning must integrate with function and structure, not replace them.",
+        "correct": "Understanding architecture as communication does not replace functional or structural thinking; it informs it. Architects should design consciously, understanding that material choices, forms, proportions, and spatial arrangements communicate meaning whether intentional or not. This awareness enables purposeful meaning-making.",
+        "takeaway": "This awareness enables purposeful meaning-making."
+      },
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "prompt_image_url": null,
+      "explanation": "Understanding meaning transforms design practice from unconscious to intentional. Conscious meaning-making applies to contemporary design too, not only historical imitation. Meaning must integrate with function and structure, not replace them. Understanding architecture as communication does not replace functional or structural thinking; it informs it. Architects should design consciously, understanding that material choices, forms, proportions, and spatial arrangements communicate meaning whether intentional or not. This awareness enables purposeful meaning-making. This awareness enables purposeful meaning-making.",
+      "code_citation": null,
+      "model_id": "ALE-THEO-001-12-013",
+      "is_assessment": false,
+      "updated_at": "2026-05-06T12:49:06.337369+00:00",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "INT"
+      ],
+      "bloom_level": "analyze",
+      "irt_difficulty": 0,
+      "irt_discrimination": 1,
+      "irt_guessing": 0,
+      "irt_calibrated_at": null,
+      "question_type": "mcq",
+      "correct_value": null,
+      "value_tolerance": 0,
+      "accepted_answers": null,
+      "created_by": null,
+      "updated_by": null,
+      "article_id": "61869b56-3658-496c-ac52-060076c5ea6c",
+      "hint_text": null,
+      "normalization_status": "normalized",
+      "normalization_log": {
+        "correct_key": "c",
+        "final_lengths": {
+          "a": 148,
+          "b": 148,
+          "c": 178,
+          "d": 148
+        },
+        "technique_used": {
+          "a": "Rationale Appending",
+          "b": "Rationale Appending",
+          "c": null,
+          "d": "Rationale Appending"
+        },
+        "original_lengths": {
+          "a": 88,
+          "b": 88,
+          "c": 178,
+          "d": 88
+        }
+      },
+      "normalization_run_at": "2026-04-02T07:08:09.524+00:00"
+    },
+    {
+      "question_id": "f39537fc-33ee-40e7-8033-c10bce28b035",
+      "topic_id": "7706f350-25af-4f03-986e-50fa74ff49e0",
+      "text": "that columns in Islamic architecture typically come from which source?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Newly quarried stone cut and shaped by Islamic craftsmen, ensuring authenticity and quality"
+        },
+        {
+          "id": "b",
+          "text": "Reused Roman or Byzantine structures, representing a practical economy"
+        },
+        {
+          "id": "c",
+          "text": "Imported marble from Egypt and North Africa, chosen for its aesthetic appeal"
+        },
+        {
+          "id": "d",
+          "text": "Specially carved stone with Islamic calligraphic inscriptions, adding cultural significance"
+        }
+      ],
+      "correct_option_id": "b",
+      "rationale": {
+        "a": "While Islamic builders did new work, the article specifies that columns were reused from existing structures.",
+        "c": "The article does not identify Egypt/North Africa as sources for column imports; reuse is emphasized.",
+        "d": "The article does not describe columns with Islamic calligraphic inscriptions as the standard practice.",
+        "correct": "The article explicitly states: 'Columns (when used) typically come from reused Roman or Byzantine structures, a practical economy.'",
+        "takeaway": "The article explicitly states: 'Columns (when used) typically come from reused Roman or Byzantine structures, a practical economy.'."
+      },
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "created_at": "2026-03-23T19:27:24.126756+00:00",
+      "prompt_image_url": null,
+      "explanation": "While Islamic builders did new work, the article specifies that columns were reused from existing structures. The article does not identify Egypt/North Africa as sources for column imports; reuse is emphasized. The article does not describe columns with Islamic calligraphic inscriptions as the standard practice. The article explicitly states: 'Columns (when used) typically come from reused Roman or Byzantine structures, a practical economy.' The article explicitly states: 'Columns (when used) typically come from reused Roman or Byzantine structures, a practical economy.'.",
+      "code_citation": null,
+      "model_id": "ALE-HIST-004-01-007",
+      "is_assessment": false,
+      "updated_at": "2026-05-06T12:49:10.215395+00:00",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "ST"
+      ],
+      "bloom_level": "remember",
+      "irt_difficulty": 0,
+      "irt_discrimination": 1,
+      "irt_guessing": 0,
+      "irt_calibrated_at": null,
+      "question_type": "mcq",
+      "correct_value": null,
+      "value_tolerance": 0,
+      "accepted_answers": null,
+      "created_by": null,
+      "updated_by": null,
+      "article_id": "157a66ee-39c3-47ba-ba86-f32414fd2896",
+      "hint_text": null,
+      "normalization_status": "normalized",
+      "normalization_log": {
+        "correct_key": "b",
+        "final_lengths": {
+          "a": 66,
+          "b": 66,
+          "c": 66,
+          "d": 66
+        },
+        "technique_used": {
+          "a": "Rationale Appending",
+          "b": null,
+          "c": "Rationale Appending",
+          "d": "Rationale Appending"
+        },
+        "original_lengths": {
+          "a": 66,
+          "b": 66,
+          "c": 66,
+          "d": 66
+        }
+      },
+      "normalization_run_at": "2026-04-02T07:17:54.698+00:00"
+    },
+    {
+      "question_id": "f9587769-12bc-4a58-9ad0-24b98f72439b",
+      "topic_id": "b11017d6-b8ae-4eef-b7ae-cf0ee85bc912",
+      "text": "A German multinational corporation's Manila office requires design accommodating German (low-context) staff and Filipino (high-context) employees. Which design approach would be most effective?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Design exclusively for German preferences, requiring Filipino staff to adapt to a more structured and formal environment"
+        },
+        {
+          "id": "b",
+          "text": "Offer both enclosed private offices (German preference) and open collaborative spaces (Filipino preference), allowing flexible use"
+        },
+        {
+          "id": "c",
+          "text": "Design exclusively for Filipino preferences, treating German staff as temporary occupants who must adjust to local norms"
+        },
+        {
+          "id": "d",
+          "text": "Eliminate all spatial definition, creating completely open layout serving neither preference, thus fostering a neutral environment"
+        }
+      ],
+      "correct_option_id": "b",
+      "rationale": {
+        "a": "Requiring Filipino staff to adapt violates inclusive design principles",
+        "c": "Accommodating only Filipino preferences alienates German employees",
+        "d": "Complete openness serves neither cultural group well",
+        "correct": "Multicultural design offers flexibility—private and shared spaces—allowing both cultural groups to work according to their preferences",
+        "takeaway": "Multicultural design offers flexibility—private and shared spaces—allowing both cultural groups to work according to their preferences."
+      },
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "prompt_image_url": null,
+      "explanation": "Requiring Filipino staff to adapt violates inclusive design principles Accommodating only Filipino preferences alienates German employees Complete openness serves neither cultural group well Multicultural design offers flexibility—private and shared spaces—allowing both cultural groups to work according to their preferences Multicultural design offers flexibility—private and shared spaces—allowing both cultural groups to work according to their preferences.",
+      "code_citation": null,
+      "model_id": "ALE-THEO-003-07-004",
+      "is_assessment": false,
+      "updated_at": "2026-05-06T12:49:08.336108+00:00",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "bloom_level": "apply",
+      "irt_difficulty": 0,
+      "irt_discrimination": 1,
+      "irt_guessing": 0,
+      "irt_calibrated_at": null,
+      "question_type": "mcq",
+      "correct_value": null,
+      "value_tolerance": 0,
+      "accepted_answers": null,
+      "created_by": null,
+      "updated_by": null,
+      "article_id": "6ce1c942-85fc-4baf-bb51-df61c8bce885",
+      "hint_text": null,
+      "normalization_status": "normalized",
+      "normalization_log": {
+        "correct_key": "b",
+        "final_lengths": {
+          "a": 144,
+          "b": 98,
+          "c": 144,
+          "d": 144
+        },
+        "technique_used": {
+          "a": "Rationale Appending",
+          "b": null,
+          "c": "Rationale Appending",
+          "d": "Rationale Appending"
+        },
+        "original_lengths": {
+          "a": 98,
+          "b": 98,
+          "c": 98,
+          "d": 98
+        }
+      },
+      "normalization_run_at": "2026-04-02T07:24:16.939+00:00"
+    },
+    {
+      "question_id": "ff29642b-39e8-43d6-b7e3-06b3bf399cb6",
+      "topic_id": "b11017d6-b8ae-4eef-b7ae-cf0ee85bc912",
+      "text": "High-context cultures typically rely on:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Numerical data exclusively, avoiding subjective interpretation, to ensure clarity and precision"
+        },
+        {
+          "id": "b",
+          "text": "Written documentation as the primary communication method, emphasizing formal records"
+        },
+        {
+          "id": "c",
+          "text": "Implicit, contextual communication where meaning derives from context, relationships, and subtle cues"
+        },
+        {
+          "id": "d",
+          "text": "Explicit, direct communication with meaning clearly stated, minimizing ambiguity"
+        }
+      ],
+      "correct_option_id": "c",
+      "rationale": {
+        "a": "Context type addresses communication mode, not data preferences",
+        "b": "Documentation style varies within both context types",
+        "d": "This describes low-context cultures (North America, Northern Europe)",
+        "correct": "High-context cultures (Latin America, Middle East, Asia) communicate through context and relationship understanding",
+        "takeaway": "High-context cultures (Latin America, Middle East, Asia) communicate through context and relationship understanding."
+      },
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "prompt_image_url": null,
+      "explanation": "Context type addresses communication mode, not data preferences Documentation style varies within both context types This describes low-context cultures (North America, Northern Europe) High-context cultures (Latin America, Middle East, Asia) communicate through context and relationship understanding High-context cultures (Latin America, Middle East, Asia) communicate through context and relationship understanding.",
+      "code_citation": null,
+      "model_id": "ALE-THEO-003-07-002",
+      "is_assessment": false,
+      "updated_at": "2026-05-06T12:49:07.6855+00:00",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "bloom_level": "remember",
+      "irt_difficulty": 0,
+      "irt_discrimination": 1,
+      "irt_guessing": 0,
+      "irt_calibrated_at": null,
+      "question_type": "mcq",
+      "correct_value": null,
+      "value_tolerance": 0,
+      "accepted_answers": null,
+      "created_by": null,
+      "updated_by": null,
+      "article_id": "6ce1c942-85fc-4baf-bb51-df61c8bce885",
+      "hint_text": null,
+      "normalization_status": "normalized",
+      "normalization_log": {
+        "correct_key": "c",
+        "final_lengths": {
+          "a": 92,
+          "b": 92,
+          "c": 92,
+          "d": 92
+        },
+        "technique_used": {
+          "a": "Qualifying Clause",
+          "b": "Qualifying Clause",
+          "c": null,
+          "d": "Qualifying Clause"
+        },
+        "original_lengths": {
+          "a": 66,
+          "b": 66,
+          "c": 92,
+          "d": 66
+        }
+      },
+      "normalization_run_at": "2026-04-02T07:29:50.866+00:00"
+    }
+  ]
+}

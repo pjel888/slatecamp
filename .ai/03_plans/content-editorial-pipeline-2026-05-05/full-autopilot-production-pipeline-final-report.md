@@ -52,3 +52,18 @@ Batch 009 narrowed verifier passed:
 4. Continue Batch 010 with strict-v3 selector.
 
 Stop condition reached: missing Supabase write credentials.
+
+## Batch 011 Audit Recovery — 2026-05-06T13:09:18.610676+00:00
+
+Status: RECOVERED AND READY FOR COMMIT.
+
+- Recovered question IDs: 25/25.
+- Recovery source: deterministic strict-v3 selector after Batch 009/010 were committed, plus remote no-op readback.
+- Remote no-op verification: 25/25.
+- New remote mutations during recovery: 0.
+- Answer-key changes: 0.
+- Option changes: 0.
+- Artifact status: reconstructed audit artifacts generated under `.ai/18_question_improvement/production_batches/question-batch-011/` and `.ai/20_content_publish/`.
+- Note: original pre-apply backup from disrupted run was not present on disk; reconstructed backup captures current remote rows after prior apply, and rollback manifest uses regenerated local baseline explanation values for manual-review rollback only.
+
+Next exact step after commit/push: run `bun scripts/content-audit/select-question-remediation-batch.ts question-batch-012 50`.
