@@ -2,8 +2,8 @@
 
 import { cn } from '@/lib/utils'
 import { SlateCampLogomark } from '@/components/graphics/logos/SlateCampLogomark'
-import { CaretDoubleRight, Crown } from '@phosphor-icons/react/dist/ssr'
-import { SIDEBAR_PADDING, SIDEBAR_WIDTH_COLLAPSED, SIDEBAR_WIDTH_EXPANDED } from './types'
+import { Crown, SidebarSimple } from '@phosphor-icons/react/dist/ssr'
+import { SIDEBAR_ICON_SLOT, SIDEBAR_PADDING, SIDEBAR_WIDTH_COLLAPSED, SIDEBAR_WIDTH_EXPANDED } from './types'
 
 // ---------------------------------------------------------------------------
 // SidebarHeader — responsive image mask
@@ -34,12 +34,20 @@ export const SidebarHeader = ({ expanded, tier, onToggle, toggleRef }: SidebarHe
   const frameWidth = expanded ? EXPANDED_FRAME_SIZE : COLLAPSED_FRAME_WIDTH
   const frameHeight = expanded ? EXPANDED_FRAME_SIZE : COLLAPSED_FRAME_HEIGHT
   const tierLabel = formatTierLabel(tier)
+  const headerDividerStyle: React.CSSProperties = expanded
+    ? { left: 0, right: 0 }
+    : { left: SIDEBAR_PADDING, width: SIDEBAR_ICON_SLOT }
 
   return (
     <div
-      className="shrink-0 overflow-hidden border-b border-border bg-white transition-[height] duration-[180ms] ease-out motion-reduce:transition-none"
+      className="relative shrink-0 overflow-hidden bg-white transition-[height] duration-[180ms] ease-out motion-reduce:transition-none"
       style={{ height: HEADER_HEIGHT }}
     >
+      <div
+        aria-hidden="true"
+        className="absolute bottom-0 border-b border-border"
+        style={headerDividerStyle}
+      />
       <div className="p-2">
         <div
           className={cn(
@@ -85,16 +93,16 @@ export const SidebarHeader = ({ expanded, tier, onToggle, toggleRef }: SidebarHe
 
               <div
                 className={cn(
-                  'flex h-9 items-center overflow-hidden',
-                  expanded ? 'justify-start px-1' : 'justify-center px-0',
+                  'flex w-full items-center overflow-hidden pt-2',
+                  expanded ? 'justify-start' : 'justify-center',
                 )}
               >
                 <div
                   className={cn(
-                    'inline-flex min-w-0 items-center rounded-sm text-white/82 backdrop-blur-[1px]',
+                    'flex min-w-0 items-center rounded-sm text-white/82 backdrop-blur-[1px]',
                     'ring-1 ring-white/16 bg-white/[0.08]',
                     'transition-[width,padding,opacity] duration-[180ms] ease-out motion-reduce:transition-none',
-                    expanded ? 'h-6 max-w-full gap-1.5 px-2 opacity-90' : 'size-8 justify-center px-0 opacity-85',
+                    expanded ? 'h-7 w-full gap-1.5 px-2.5 opacity-90' : 'h-8 w-full justify-center px-0 opacity-85',
                   )}
                   aria-label={tierLabel}
                   title={tierLabel}
@@ -123,14 +131,7 @@ export const SidebarHeader = ({ expanded, tier, onToggle, toggleRef }: SidebarHe
                   expanded ? 'w-8' : 'w-8',
                 )}
               >
-                <CaretDoubleRight
-                  size={16}
-                  weight="regular"
-                  className={cn(
-                    'shrink-0 transition-transform duration-[180ms] ease-out',
-                    expanded && 'rotate-180',
-                  )}
-                />
+                <SidebarSimple size={16} weight="regular" className="shrink-0" />
               </button>
             </div>
           </div>

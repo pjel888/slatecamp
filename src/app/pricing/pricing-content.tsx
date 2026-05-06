@@ -2,7 +2,6 @@
 
 import { useEffect } from 'react'
 import Link from 'next/link'
-import { Instrument_Serif } from 'next/font/google'
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs'
 import { Button } from '@/components/ui/button'
 import { trackEvent } from '@/lib/analytics'
@@ -14,13 +13,6 @@ import {
   EDUCATIONAL_TIERS,
   ENTERPRISE_TIERS,
 } from '@/lib/constants/pricing'
-
-const serif = Instrument_Serif({
-  weight: '400',
-  subsets: ['latin'],
-  style: ['normal', 'italic'],
-  display: 'swap',
-})
 
 const TABS = [
   { value: 'individuals', label: 'For Individuals' },
@@ -56,7 +48,7 @@ export const PricingContent = () => {
           Simple, transparent pricing
         </h1>
         <p
-          className={`${serif.className} mx-auto mt-4 max-w-md text-[20px] italic leading-snug text-muted-foreground`}
+          className='font-instrument-serif mx-auto mt-4 max-w-md text-[20px] italic leading-snug text-muted-foreground'
         >
           Choose the plan that fits your goals.
         </p>

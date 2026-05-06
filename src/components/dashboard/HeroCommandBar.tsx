@@ -8,7 +8,6 @@ import {
 } from '@/components/ui/tooltip'
 import { Skeleton } from '@/components/ui/skeleton'
 import { ScoreDisplay } from '@/components/shared/score-display'
-import { getReadinessLabel } from '@/lib/constants/readiness'
 import { trackEvent } from '@/lib/analytics'
 import type { HeroMicroStat } from '@/types/dashboard'
 
@@ -89,13 +88,13 @@ export function HeroCommandBar({
   const isNewUser = readinessScore === 0
 
   return (
-    <div className='w-full min-h-[190px] shrink-0 overflow-hidden flex flex-col'>
+    <div className='w-full min-h-[216px] shrink-0 overflow-hidden flex flex-col xl:min-h-[212px] border-b p-2'>
       {/* ── Top row: Ring | Greeting+Stats | Heatmap ──────────────── */}
       <div className='flex items-stretch w-full flex-1'>
         {/* SECTION 1: Readiness Score Ring */}
         <Tooltip>
           <TooltipTrigger asChild>
-            <div className='flex flex-col items-center justify-start gap-1.5 px-6 py-4 cursor-default shrink-0'>
+            <div className='flex flex-col items-start justify-start gap-1.5 pl-0 pr-2 pt-0 pb-4 cursor-default shrink-0 border-r border-border/60'>
               <div className='flex items-center gap-1'>
                 <p className='font-dm-mono text-muted-foreground text-[11px] font-medium uppercase tracking-[0.15em]'>
                   Readiness Score
@@ -111,7 +110,7 @@ export function HeroCommandBar({
               {readinessScore > 0 && delta != null && Math.abs(delta) >= 1 ? (
                 <span
                   className={[
-                    'text-[11px] font-medium',
+                    'w-[128px] text-center text-[11px] font-medium',
                     delta > 0 ? 'text-success' : 'text-muted-foreground',
                   ].join(' ')}
                 >
@@ -133,12 +132,9 @@ export function HeroCommandBar({
           </TooltipContent>
         </Tooltip>
 
-        {/* Divider 1 */}
-        <div className='w-px self-stretch my-4' />
-
         {/* SECTION 2: Greeting + Stats */}
         <div
-          className='flex flex-col justify-start py-4 px-5 min-w-0 shrink-0'
+          className='flex flex-col justify-start pt-0 pb-4 px-5 min-w-0 shrink-0 border-r border-border/60'
           style={{ width: 260 }}
         >
           <div className=''>
@@ -156,20 +152,20 @@ export function HeroCommandBar({
           </div>
           {!isNewUser && (
             <>
-              <div className='h-px self-stretch my-4' />
-              <div className='flex items-start justify-start flex-col gap-3  '>
-                <p className='font-dm-mono text-muted-foreground text-[12px] font-bold uppercase tracking-wider'>
+              <div className='h-px self-stretch my-2' />
+              <div className='flex items-start justify-start flex-col gap-1.5'>
+                <p className='font-dm-mono text-muted-foreground text-[11px] font-bold uppercase tracking-wider'>
                   Weekly Stats
                 </p>
                 {heroStats.map((stat) => (
                   <Tooltip key={stat.label}>
                     <TooltipTrigger asChild>
                       <div className='flex flex-col cursor-default'>
-                        <div className='flex items-baseline gap-1.5'>
-                          <span className='text-foreground text-base font-bold tabular-nums'>
+                        <div className='flex items-baseline gap-1.5 leading-none'>
+                          <span className='text-foreground text-sm font-bold tabular-nums leading-none'>
                             {stat.value}
                           </span>
-                          <span className='font-dm-mono text-muted-foreground text-[11px] font-medium uppercase tracking-wider'>
+                          <span className='font-dm-mono text-muted-foreground text-[10px] font-medium uppercase tracking-wider leading-none'>
                             {stat.label}
                           </span>
                           {stat.delta != null && stat.delta !== 0 && (
@@ -210,12 +206,9 @@ export function HeroCommandBar({
           )}
         </div>
 
-        {/* Divider 2 */}
-        {children && <div className='w-px self-stretch my-4' />}
-
         {/* SECTION 3: Study Activity Heatmap */}
         {children && (
-          <div className='flex-1 min-w-0 py-3 px-4 overflow-hidden'>
+          <div className='flex-1 min-w-0 pt-0 pb-4 px-4 overflow-hidden'>
             {children}
           </div>
         )}
@@ -226,15 +219,17 @@ export function HeroCommandBar({
 
 export function HeroCommandBarSkeleton() {
   return (
-    <div className='w-full min-h-[190px] shrink-0 overflow-hidden flex flex-col'>
+    <div className='w-full min-h-[216px] shrink-0 overflow-hidden flex flex-col xl:min-h-[212px]'>
       <div className='flex items-stretch flex-1'>
-        <div className='flex flex-col items-center gap-2 px-6 py-5'>
+        <div className='flex flex-col items-start gap-2 pl-0 pr-2 pt-0 pb-5 border-r border-border/60'>
           <Skeleton className='h-3 w-24 bg-muted' />
           <Skeleton className='h-[120px] w-[120px] rounded-full bg-muted' />
           <Skeleton className='h-3 w-20 bg-muted' />
         </div>
-        <div className='w-px self-stretch my-4' />
-        <div className='py-4 px-5 space-y-3' style={{ width: 260 }}>
+        <div
+          className='pt-0 pb-4 px-5 space-y-3 border-r border-border/60'
+          style={{ width: 260 }}
+        >
           <Skeleton className='h-3 w-24 bg-muted' />
           <Skeleton className='h-6 w-32 bg-muted' />
           <div className='flex gap-4'>
@@ -243,7 +238,6 @@ export function HeroCommandBarSkeleton() {
             <Skeleton className='h-7 w-14 bg-muted' />
           </div>
         </div>
-        <div className='w-px self-stretch my-4' />
         <div className='flex-1 p-4'>
           <Skeleton className='h-full w-full bg-muted rounded' />
         </div>

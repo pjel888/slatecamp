@@ -139,7 +139,7 @@ export const FinancialEntryForm = ({ isOpen, onClose, editEntry }: FinancialEntr
       {/* Drawer */}
       <div
         className={cn(
-          'fixed right-0 top-0 z-50 h-full w-full max-w-md bg-card border-l border-border shadow-lg flex flex-col transition-transform duration-300 ease-out',
+          'fixed right-0 top-0 z-50 h-full w-full max-w-md bg-card shadow-modal flex flex-col transition-transform duration-300 ease-out',
           isOpen ? 'translate-x-0' : 'translate-x-full',
         )}
         role="dialog"

@@ -276,7 +276,7 @@ export function ActivityHeatmap({
   const todayISO = signupISOStr(new Date())
 
   return (
-    <div className='flex w-full min-w-0 flex-col p-2 overflow-y-auto scrollbar-thin flex-1 min-h-0'>
+    <div className='flex w-full min-w-0 flex-col px-2 pb-2 pt-0 overflow-y-auto scrollbar-thin flex-1 min-h-0'>
       <HeatmapHeader
         selectedYear={selectedYear}
         years={years}

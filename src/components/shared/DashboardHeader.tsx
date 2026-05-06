@@ -20,7 +20,7 @@ export const DashboardHeader = ({ userId }: DashboardHeaderProps) => {
   }, [safePath])
 
   return (
-    <header className='flex items-center justify-between h-16 px-4'>
+    <header className='flex items-center justify-between h-14 px-4'>
       <h1 className='font-display text-xl font-bold text-foreground'>
         {title}
       </h1>

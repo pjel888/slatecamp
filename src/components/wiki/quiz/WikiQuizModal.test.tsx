@@ -1,5 +1,7 @@
 import React from 'react'
 import { beforeEach, describe, expect, mock, test } from 'bun:test'
+import { readFileSync } from 'node:fs'
+import { join } from 'node:path'
 import { renderToStaticMarkup } from 'react-dom/server'
 
 // ─── Mock wiki-quiz actions ──────────────────────────────────────────────────
@@ -27,14 +29,187 @@ mock.module('@/lib/actions/wiki-quiz', () => ({
 
 // ─── Mock Phosphor icons ─────────────────────────────────────────────────────
 
-mock.module('@phosphor-icons/react/dist/ssr', () => ({
-  X: () => null,
-  CheckCircle: () => null,
-  XCircle: () => null,
-  ArrowRight: () => null,
-  ArrowCounterClockwise: () => null,
-  BookOpen: () => null,
-}))
+const MockIcon = () => null
+
+const phosphorIconMocks = {
+  ArrowClockwise: MockIcon,
+  ArrowCounterClockwise: MockIcon,
+  ArrowDown: MockIcon,
+  ArrowLeft: MockIcon,
+  ArrowRight: MockIcon,
+  ArrowSquareOut: MockIcon,
+  ArrowUUpLeft: MockIcon,
+  ArrowUp: MockIcon,
+  ArrowsClockwise: MockIcon,
+  ArrowsDownUp: MockIcon,
+  ArrowsIn: MockIcon,
+  ArrowsOut: MockIcon,
+  Backspace: MockIcon,
+  Bank: MockIcon,
+  Barbell: MockIcon,
+  Bell: MockIcon,
+  Book: MockIcon,
+  BookOpen: MockIcon,
+  BookmarkSimple: MockIcon,
+  Books: MockIcon,
+  Brain: MockIcon,
+  Briefcase: MockIcon,
+  Buildings: MockIcon,
+  Calculator: MockIcon,
+  Calendar: MockIcon,
+  CalendarBlank: MockIcon,
+  Camera: MockIcon,
+  Car: MockIcon,
+  Cards: MockIcon,
+  CaretDown: MockIcon,
+  CaretLeft: MockIcon,
+  CaretRight: MockIcon,
+  CaretUp: MockIcon,
+  ChartBar: MockIcon,
+  ChartLineUp: MockIcon,
+  ChatCircle: MockIcon,
+  ChatCircleDots: MockIcon,
+  Check: MockIcon,
+  CheckCircle: MockIcon,
+  CheckSquare: MockIcon,
+  Church: MockIcon,
+  Circle: MockIcon,
+  CircleDashed: MockIcon,
+  CircleNotch: MockIcon,
+  ClipboardText: MockIcon,
+  Clock: MockIcon,
+  CloudArrowUp: MockIcon,
+  CloudCheck: MockIcon,
+  CloudSlash: MockIcon,
+  Coffee: MockIcon,
+  Compass: MockIcon,
+  Copy: MockIcon,
+  Crane: MockIcon,
+  CreditCard: MockIcon,
+  Crosshair: MockIcon,
+  Crown: MockIcon,
+  Cube: MockIcon,
+  CurrencyDollar: MockIcon,
+  Database: MockIcon,
+  DotsSixVertical: MockIcon,
+  DotsThree: MockIcon,
+  DownloadSimple: MockIcon,
+  Drop: MockIcon,
+  Elevator: MockIcon,
+  EnvelopeSimple: MockIcon,
+  Exam: MockIcon,
+  Eye: MockIcon,
+  EyeSlash: MockIcon,
+  Fan: MockIcon,
+  File: MockIcon,
+  FileText: MockIcon,
+  Fire: MockIcon,
+  FireSimple: MockIcon,
+  Flag: MockIcon,
+  Flask: MockIcon,
+  FloppyDisk: MockIcon,
+  Folder: MockIcon,
+  Gauge: MockIcon,
+  Gear: MockIcon,
+  GearSix: MockIcon,
+  GitBranch: MockIcon,
+  GitPullRequest: MockIcon,
+  Globe: MockIcon,
+  GraduationCap: MockIcon,
+  GridFour: MockIcon,
+  HandGrabbing: MockIcon,
+  HardDrives: MockIcon,
+  HardHat: MockIcon,
+  HighlighterCircle: MockIcon,
+  House: MockIcon,
+  ImageSquare: MockIcon,
+  Info: MockIcon,
+  InstagramLogo: MockIcon,
+  Leaf: MockIcon,
+  Lifebuoy: MockIcon,
+  Lightbulb: MockIcon,
+  Lightning: MockIcon,
+  LinkSimple: MockIcon,
+  LinkedinLogo: MockIcon,
+  List: MockIcon,
+  ListBullets: MockIcon,
+  ListChecks: MockIcon,
+  ListNumbers: MockIcon,
+  Lock: MockIcon,
+  MagnifyingGlass: MockIcon,
+  MapTrifold: MockIcon,
+  Minus: MockIcon,
+  Monitor: MockIcon,
+  Moon: MockIcon,
+  NotePencil: MockIcon,
+  Notepad: MockIcon,
+  Package: MockIcon,
+  PaintBucket: MockIcon,
+  PaperPlaneRight: MockIcon,
+  PaperPlaneTilt: MockIcon,
+  Path: MockIcon,
+  Pause: MockIcon,
+  PencilSimple: MockIcon,
+  Play: MockIcon,
+  Plus: MockIcon,
+  Pulse: MockIcon,
+  PushPin: MockIcon,
+  Question: MockIcon,
+  Rocket: MockIcon,
+  Rows: MockIcon,
+  Scales: MockIcon,
+  Scissors: MockIcon,
+  Scroll: MockIcon,
+  ShareNetwork: MockIcon,
+  Shield: MockIcon,
+  ShieldCheck: MockIcon,
+  SidebarSimple: MockIcon,
+  SignOut: MockIcon,
+  Sparkle: MockIcon,
+  SpinnerGap: MockIcon,
+  Square: MockIcon,
+  SquaresFour: MockIcon,
+  Stack: MockIcon,
+  Star: MockIcon,
+  Sun: MockIcon,
+  Tag: MockIcon,
+  Target: MockIcon,
+  Terminal: MockIcon,
+  TextB: MockIcon,
+  TextH: MockIcon,
+  TextHThree: MockIcon,
+  TextHTwo: MockIcon,
+  TextItalic: MockIcon,
+  TextStrikethrough: MockIcon,
+  TextUnderline: MockIcon,
+  ThumbsDown: MockIcon,
+  ThumbsUp: MockIcon,
+  Timer: MockIcon,
+  ToggleRight: MockIcon,
+  Trash: MockIcon,
+  TreeStructure: MockIcon,
+  TrendDown: MockIcon,
+  TrendUp: MockIcon,
+  TwitterLogo: MockIcon,
+  UploadSimple: MockIcon,
+  User: MockIcon,
+  UserMinus: MockIcon,
+  Users: MockIcon,
+  Wall: MockIcon,
+  Warning: MockIcon,
+  WarningCircle: MockIcon,
+  WarningDiamond: MockIcon,
+  Wheelchair: MockIcon,
+  WifiHigh: MockIcon,
+  WifiSlash: MockIcon,
+  Wrench: MockIcon,
+  X: MockIcon,
+  XCircle: MockIcon,
+}
+
+mock.module('@phosphor-icons/react/dist/ssr', () => phosphorIconMocks)
+mock.module('@phosphor-icons/react', () => phosphorIconMocks)
+mock.module('server-only', () => ({}))
 
 // ─── Import component under test ─────────────────────────────────────────────
 
@@ -115,6 +290,22 @@ describe('WikiQuizModal static render', () => {
     expect(markup).toContain('id="wiki-quiz-title"')
   })
 
+  test('modal uses the wiki top-layer z-index and wide responsive shell', async () => {
+    const element = React.createElement(WikiQuizModal, baseProps)
+    const markup = renderToStaticMarkup(element)
+    expect(markup).toContain('z-[1000]')
+    expect(markup).toContain('z-[1001]')
+    expect(markup).toContain('1120px')
+    expect(markup).toContain('780px')
+  })
+
+  test('modal shell keeps body and footer as separate flex regions', async () => {
+    const element = React.createElement(WikiQuizModal, baseProps)
+    const markup = renderToStaticMarkup(element)
+    expect(markup).toContain('flex-col overflow-hidden')
+    expect(markup).toContain('min-h-0 flex-1 overflow-y-auto')
+  })
+
   test('results actions exist in template', async () => {
     const element = React.createElement(WikiQuizModal, baseProps)
     const markup = renderToStaticMarkup(element)
@@ -148,5 +339,19 @@ describe('WikiQuizModal static render', () => {
     const element = React.createElement(WikiQuizModal, baseProps)
     const markup = renderToStaticMarkup(element)
     expect(markup.length).toBeGreaterThan(100)
+  })
+
+  test('overlay is intentionally non-dismissible to protect slider drags', () => {
+    const source = readFileSync(join(import.meta.dir, 'WikiQuizModal.tsx'), 'utf8')
+    expect(source).toContain('data-testid="wiki-quiz-overlay"')
+    expect(source).not.toContain('e.target === e.currentTarget')
+    expect(source).not.toContain('onClick={(e) => {\n        if (e.target === e.currentTarget')
+  })
+
+  test('Escape key does not close the quick review modal', () => {
+    const source = readFileSync(join(import.meta.dir, 'WikiQuizModal.tsx'), 'utf8')
+    expect(source).toContain('non-dismissible by backdrop click or Escape')
+    expect(source).not.toContain("if (e.key === 'Escape')")
+    expect(source).not.toContain('document.addEventListener(\'keydown\', handleEscape)')
   })
 })

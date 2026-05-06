@@ -1,14 +1,6 @@
 import Link from 'next/link'
-import { Instrument_Serif } from 'next/font/google'
 import { ROUTES } from '@/lib/routes'
 import { siteConfig } from '@/lib/constants/site'
-
-const serif = Instrument_Serif({
-  weight: '400',
-  subsets: ['latin'],
-  style: ['normal', 'italic'],
-  display: 'swap',
-})
 
 const FOOTER_LINKS = [
   { href: ROUTES.calculators.root, label: 'Tools' },
@@ -45,7 +37,7 @@ export const MarketingFooter = ({
             ))}
           </nav>
           <span
-            className={`${serif.className} text-[12px] italic tracking-wide ${textMuted}`}
+            className={`font-instrument-serif text-[12px] italic tracking-wide ${textMuted}`}
           >
             Less, but better.
           </span>

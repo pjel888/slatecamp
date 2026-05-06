@@ -30,7 +30,7 @@ export const WikiSidePanel = ({ url, onClose }: WikiSidePanelProps) => {
         aria-label="Wiki reference"
         className={cn(
           'fixed right-0 top-0 bottom-0 z-[70] w-full max-w-2xl',
-          'bg-card border-l border-border shadow-2xl',
+          'bg-card shadow-modal',
           'flex flex-col',
           'animate-in slide-in-from-right duration-200 ease-out',
         )}

@@ -73,7 +73,7 @@ export const CreatePodModal = ({ onClose, onCreated }: CreatePodModalProps) => {
         role="dialog"
         aria-modal="true"
         aria-labelledby="create-pod-title"
-        className="w-full max-w-sm rounded-lg bg-card p-6 shadow-lg"
+        className="w-full max-w-sm rounded-lg bg-card p-6 shadow-modal"
         onKeyDown={handleKeyDown}
       >
         {/* Header */}

@@ -67,7 +67,7 @@ export function BottomSheet({ children }: BottomSheetProps) {
       ref={sheetRef}
       role="dialog"
       aria-label="Controls and results panel"
-      className="fixed inset-x-0 bottom-0 z-30 flex flex-col rounded-t-xl border-t border-border bg-card shadow-lg transition-[height] duration-300 ease-out md:hidden"
+      className="fixed inset-x-0 bottom-0 z-30 flex flex-col rounded-t-xl bg-card shadow-modal transition-[height] duration-300 ease-out md:hidden"
       style={{ height: SNAP_HEIGHTS[snap] }}
     >
       {/* Drag handle */}

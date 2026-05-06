@@ -36,7 +36,7 @@ export const CalculatingResultsOverlay = () => {
       aria-labelledby="calculating-results-title"
       aria-describedby="calculating-results-description"
     >
-      <div className="relative w-full max-w-md overflow-hidden rounded-2xl border border-white/30 bg-card/90 p-6 text-center shadow-2xl ring-1 ring-black/5 backdrop-blur-2xl">
+      <div className="relative w-full max-w-md overflow-hidden rounded-2xl bg-card/90 p-6 text-center shadow-modal backdrop-blur-2xl">
         <div className="pointer-events-none absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-primary via-success to-warning" />
         <div className="mx-auto flex size-16 items-center justify-center rounded-full border border-primary/20 bg-primary-50/80 shadow-inner">
           <SlatecampLoader />

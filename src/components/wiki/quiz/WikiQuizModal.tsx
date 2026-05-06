@@ -1,10 +1,12 @@
 'use client'
 
 import { useState, useEffect, useRef, useCallback } from 'react'
+import { createPortal } from 'react-dom'
 import { X, CheckCircle, XCircle, ArrowRight, ArrowCounterClockwise, BookOpen } from '@phosphor-icons/react/dist/ssr'
 import { cn } from '@/lib/utils'
 import { getWikiQuizQuestions, submitWikiQuizAnswer, endWikiQuizSession } from '@/lib/actions/wiki-quiz'
 import type { QuestionForClient } from '@/types/quiz-config'
+import { SlideToSubmit } from '@/components/quiz-v2/SlideToSubmit'
 
 // ─── Props ────────────────────────────────────────────────────────────────────
 
@@ -65,6 +67,7 @@ export const WikiQuizModal = ({ nodeId, topicName, articleSlug, articleTitle, ar
   const [submitError, setSubmitError] = useState<string | null>(null)
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isEnding, setIsEnding] = useState(false)
+  const [mounted, setMounted] = useState(false)
 
   const dialogRef = useRef<HTMLDivElement>(null)
   const titleRef = useRef<HTMLHeadingElement>(null)
@@ -90,6 +93,10 @@ export const WikiQuizModal = ({ nodeId, topicName, articleSlug, articleTitle, ar
     loadingRef.current = false
     onClose()
   }, [onClose])
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
 
   // ── Focus management ─────────────────────────────────────────────────────
 
@@ -136,23 +143,10 @@ export const WikiQuizModal = ({ nodeId, topicName, articleSlug, articleTitle, ar
     return () => document.removeEventListener('keydown', handleKeyDown)
   }, [status, nextReady])
 
-  // ── Escape to close (blocked during critical async) ──────────────────────
-
-  useEffect(() => {
-    const handleEscape = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') {
-        if (isSubmitting || isEnding) {
-          e.preventDefault()
-          return
-        }
-        e.preventDefault()
-        safeClose()
-      }
-    }
-
-    document.addEventListener('keydown', handleEscape)
-    return () => document.removeEventListener('keydown', handleEscape)
-  }, [safeClose, isSubmitting, isEnding])
+  // ── Intentional dismissal policy ──────────────────────────────────────────
+  // The review modal is non-dismissible by backdrop click or Escape so students
+  // cannot accidentally exit while dragging the slide-to-submit control. The
+  // explicit header close button remains the primary exit affordance.
 
   // ── Body scroll lock ─────────────────────────────────────────────────────
 
@@ -212,7 +206,7 @@ export const WikiQuizModal = ({ nodeId, topicName, articleSlug, articleTitle, ar
     } finally {
       loadingRef.current = false
     }
-  }, [nodeId, articleSlug])
+  }, [nodeId, articleSlug, articleId])
 
   useEffect(() => {
     loadQuestions()
@@ -365,13 +359,14 @@ export const WikiQuizModal = ({ nodeId, topicName, articleSlug, articleTitle, ar
 
   // ── Render ───────────────────────────────────────────────────────────────
 
+  const currentAnswer = answers[currentIndex]
+  const isQuestionActive = status === 'question' && currentQuestion
+  const isFeedbackActive = status === 'feedback' && currentQuestion && currentAnswer
+
   const modalContent = (
     <div
-      className="fixed inset-0 z-[100] flex items-center justify-center bg-black/50 backdrop-blur-[3px] animate-in fade-in duration-200"
-      onClick={(e) => {
-        if (e.target === e.currentTarget && !isSubmitting && !isEnding) safeClose()
-      }}
-      aria-hidden="true"
+      className="fixed inset-0 z-[1000] flex items-center justify-center bg-black/50 p-1 backdrop-blur-[3px] animate-in fade-in duration-200 sm:p-2"
+      data-testid="wiki-quiz-overlay"
     >
       <div
         ref={dialogRef}
@@ -379,22 +374,22 @@ export const WikiQuizModal = ({ nodeId, topicName, articleSlug, articleTitle, ar
         aria-modal="true"
         aria-labelledby="wiki-quiz-title"
         className={cn(
-          'relative w-full max-w-[600px] mx-4 max-h-[92vh] overflow-y-auto',
-          'rounded-xl bg-card shadow-xl border border-border',
-          'animate-in zoom-in-95 duration-200 ease-out',
+          'relative z-[1001] flex h-[min(calc(100dvh-0.5rem),780px)] w-full flex-col overflow-hidden',
+          'max-w-[min(calc(100vw-0.5rem),1120px)] rounded-xl bg-card shadow-modal',
+          'animate-in zoom-in-95 duration-200 ease-out sm:h-[min(calc(100dvh-1rem),780px)] sm:max-w-[min(calc(100vw-1rem),1120px)]',
         )}
       >
         {/* ── Header ──────────────────────────────────────────────────── */}
-        <div className="sticky top-0 z-10 flex items-center justify-between border-b border-border bg-card/95 backdrop-blur-sm px-5 py-3.5 rounded-t-xl">
-          <div className="flex items-center gap-3 min-w-0">
+        <div className="flex shrink-0 items-center justify-between border-b border-border bg-card/95 px-4 py-2.5 backdrop-blur-sm sm:px-5 sm:py-3">
+          <div className="flex min-w-0 items-center gap-3">
             <button
               ref={closeButtonRef}
               type="button"
               onClick={safeClose}
               disabled={isSubmitting || isEnding}
               className={cn(
-                'flex h-8 w-8 items-center justify-center rounded-md text-muted-foreground hover:text-foreground hover:bg-surface-light transition-colors duration-150 shrink-0',
-                (isSubmitting || isEnding) && 'opacity-50 cursor-not-allowed'
+                'flex h-8 w-8 shrink-0 items-center justify-center rounded-md text-muted-foreground transition-colors duration-150 hover:bg-surface-light hover:text-foreground',
+                (isSubmitting || isEnding) && 'cursor-not-allowed opacity-50'
               )}
               aria-label="Close quiz"
             >
@@ -405,39 +400,38 @@ export const WikiQuizModal = ({ nodeId, topicName, articleSlug, articleTitle, ar
                 ref={titleRef}
                 id="wiki-quiz-title"
                 tabIndex={-1}
-                className="text-sm font-semibold text-foreground truncate outline-none"
+                className="truncate text-sm font-semibold text-foreground outline-none"
               >
                 {status === 'results' ? 'Review Complete' : `Quick Review — ${topicName}`}
               </h2>
               {articleTitle && status !== 'results' && (
-                <p className="text-[11px] text-muted-foreground truncate">{articleTitle}</p>
+                <p className="truncate text-[11px] text-muted-foreground">{articleTitle}</p>
               )}
             </div>
           </div>
           {status !== 'results' && status !== 'loading' && status !== 'error' && status !== 'empty' && (
-            <span className="text-xs font-medium text-muted-foreground tabular-nums shrink-0 ml-3">
+            <span className="ml-3 shrink-0 text-xs font-medium tabular-nums text-muted-foreground">
               {currentIndex + 1} / {totalQuestions}
             </span>
           )}
         </div>
 
         {/* ── Body ────────────────────────────────────────────────────── */}
-        <div className="p-5 sm:p-6">
+        <div className="min-h-0 flex-1 overflow-y-auto">
           {/* Loading state */}
           {status === 'loading' && (
-            <div className="flex flex-col items-center justify-center gap-4 py-14">
+            <div className="mx-auto flex w-full max-w-xl flex-col items-center justify-center gap-4 px-5 py-14 sm:px-6">
               <span className="h-6 w-6 rounded-full border-2 border-primary/20 border-t-primary animate-spin" />
-              <div className="text-center space-y-1">
+              <div className="space-y-1 text-center">
                 <span className="text-sm font-medium text-foreground">Preparing your review…</span>
                 <p className="text-xs text-muted-foreground">Finding questions based on this article</p>
               </div>
-              {/* Skeleton question placeholder */}
-              <div className="w-full space-y-3 mt-2">
-                <div className="h-4 bg-muted rounded w-3/4 animate-pulse" />
-                <div className="h-4 bg-muted rounded w-1/2 animate-pulse" />
-                <div className="space-y-2 mt-4">
+              <div className="mt-2 w-full space-y-3">
+                <div className="h-4 w-3/4 rounded bg-muted animate-pulse" />
+                <div className="h-4 w-1/2 rounded bg-muted animate-pulse" />
+                <div className="mt-4 space-y-2">
                   {[1, 2, 3, 4].map((i) => (
-                    <div key={i} className="h-12 bg-muted rounded-md animate-pulse" />
+                    <div key={i} className="h-12 rounded-md bg-muted animate-pulse" />
                   ))}
                 </div>
               </div>
@@ -446,13 +440,13 @@ export const WikiQuizModal = ({ nodeId, topicName, articleSlug, articleTitle, ar
 
           {/* Error state */}
           {status === 'error' && (
-            <div className="flex flex-col items-center justify-center gap-4 py-14 text-center">
-              <div className="h-10 w-10 rounded-full bg-warning-50 flex items-center justify-center">
+            <div className="flex flex-col items-center justify-center gap-4 px-5 py-14 text-center sm:px-6">
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-warning-50">
                 <XCircle size={20} className="text-warning" aria-hidden="true" />
               </div>
               <div className="space-y-1">
                 <span className="text-sm font-semibold text-foreground">Could not load review</span>
-                <p className="text-xs text-muted-foreground max-w-[280px]">
+                <p className="max-w-[280px] text-xs text-muted-foreground">
                   {error || 'Something went wrong while preparing your questions.'}
                 </p>
               </div>
@@ -460,7 +454,7 @@ export const WikiQuizModal = ({ nodeId, topicName, articleSlug, articleTitle, ar
                 <button
                   type="button"
                   onClick={handleRetry}
-                  className="inline-flex items-center gap-1.5 rounded-md px-4 py-2 text-sm font-medium bg-primary text-white hover:bg-primary-700 transition-colors"
+                  className="inline-flex items-center gap-1.5 rounded-md bg-primary px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-primary-700"
                 >
                   <ArrowCounterClockwise size={14} aria-hidden="true" />
                   Try again
@@ -468,7 +462,7 @@ export const WikiQuizModal = ({ nodeId, topicName, articleSlug, articleTitle, ar
                 <button
                   type="button"
                   onClick={safeClose}
-                  className="rounded-md px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-surface-light transition-colors"
+                  className="rounded-md px-4 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-surface-light hover:text-foreground"
                 >
                   Close
                 </button>
@@ -478,13 +472,13 @@ export const WikiQuizModal = ({ nodeId, topicName, articleSlug, articleTitle, ar
 
           {/* Empty state — no questions available */}
           {status === 'empty' && (
-            <div className="flex flex-col items-center justify-center gap-4 py-14 text-center">
-              <div className="h-10 w-10 rounded-full bg-surface-light flex items-center justify-center">
+            <div className="flex flex-col items-center justify-center gap-4 px-5 py-14 text-center sm:px-6">
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-surface-light">
                 <BookOpen size={20} className="text-muted-foreground" aria-hidden="true" />
               </div>
               <div className="space-y-1">
                 <span className="text-sm font-semibold text-foreground">No questions yet</span>
-                <p className="text-xs text-muted-foreground max-w-[280px]">
+                <p className="max-w-[280px] text-xs text-muted-foreground">
                   We do not have review questions for this topic yet. Try a full practice session instead.
                 </p>
               </div>
@@ -492,7 +486,7 @@ export const WikiQuizModal = ({ nodeId, topicName, articleSlug, articleTitle, ar
                 <button
                   type="button"
                   onClick={handleRetry}
-                  className="inline-flex items-center gap-1.5 rounded-md px-4 py-2 text-sm font-medium bg-primary text-white hover:bg-primary-700 transition-colors"
+                  className="inline-flex items-center gap-1.5 rounded-md bg-primary px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-primary-700"
                 >
                   <ArrowCounterClockwise size={14} aria-hidden="true" />
                   Try again
@@ -500,7 +494,7 @@ export const WikiQuizModal = ({ nodeId, topicName, articleSlug, articleTitle, ar
                 <button
                   type="button"
                   onClick={safeClose}
-                  className="rounded-md px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-surface-light transition-colors"
+                  className="rounded-md px-4 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-surface-light hover:text-foreground"
                 >
                   Close
                 </button>
@@ -509,15 +503,15 @@ export const WikiQuizModal = ({ nodeId, topicName, articleSlug, articleTitle, ar
           )}
 
           {/* Question + Feedback state */}
-          {(status === 'question' || status === 'feedback') && currentQuestion && (
-            <div className="flex flex-col gap-5">
+          {(isQuestionActive || isFeedbackActive) && currentQuestion && (
+            <div className="flex h-full min-h-0 flex-col">
               {/* Progress bar */}
-              <div className="w-full">
-                <div className="flex items-center justify-between text-[11px] text-muted-foreground mb-1.5">
+              <div className="shrink-0 border-b border-border/70 px-4 py-2.5 sm:px-5">
+                <div className="mb-1.5 flex items-center justify-between text-[11px] text-muted-foreground">
                   <span>Question {currentIndex + 1} of {totalQuestions}</span>
-                  <span>{Math.round(((currentIndex) / totalQuestions) * 100)}% complete</span>
+                  <span>{Math.round((currentIndex / totalQuestions) * 100)}% complete</span>
                 </div>
-                <div className="h-1.5 rounded-full bg-border overflow-hidden">
+                <div className="h-1.5 overflow-hidden rounded-full bg-border">
                   <div
                     className="h-full rounded-full bg-primary transition-all duration-300 ease-out"
                     style={{ width: `${((currentIndex + (status === 'feedback' ? 1 : 0)) / totalQuestions) * 100}%` }}
@@ -525,187 +519,143 @@ export const WikiQuizModal = ({ nodeId, topicName, articleSlug, articleTitle, ar
                 </div>
               </div>
 
-              {/* Question stem */}
-              <div className="space-y-1">
-                <p className="text-sm font-medium text-foreground leading-relaxed">
-                  {currentQuestion.stem}
-                </p>
-                {currentQuestion.image_url && (
-                  <img
-                    src={currentQuestion.image_url}
-                    alt={currentQuestion.image_alt_text || 'Question image'}
-                    className="rounded-lg border border-border max-h-[200px] object-contain"
-                  />
-                )}
-              </div>
-
-              {/* Options */}
-              <div
-                className="flex flex-col gap-2.5"
-                role="radiogroup"
-                aria-label={`Question ${currentIndex + 1}: ${currentQuestion.stem}`}
-              >
-                {currentQuestion.options.map((option, idx) => {
-                  const state = getOptionState(option.id)
-                  const isDisabled = status === 'feedback'
-                  const isChecked = selectedOptionId === option.id
-
-                  return (
-                    <label
-                      key={option.id}
-                      className={cn(
-                        'flex items-start gap-3 w-full rounded-lg border px-4 py-3.5',
-                        'transition-all duration-150 ease-out',
-                        'focus-within:ring-2 focus-within:ring-primary/30',
-                        OPTION_STATE_CLASSES[state],
-                        isDisabled && state === 'default' && 'pointer-events-none opacity-50',
-                      )}
-                    >
-                      <input
-                        ref={idx === 0 ? firstOptionRef : undefined}
-                        type="radio"
-                        name={`wiki-quiz-${currentQuestion.question_id}`}
-                        value={option.id}
-                        checked={isChecked}
-                        disabled={isDisabled}
-                        onChange={() => handleSelectOption(option.id)}
-                        className="sr-only"
+              <div className="grid min-h-0 flex-1 grid-cols-1 lg:grid-cols-[minmax(0,0.95fr)_minmax(360px,1.05fr)]">
+                {/* Left: question */}
+                <section className="min-h-0 overflow-y-auto border-b border-border p-4 sm:p-5 lg:border-b-0 lg:border-r lg:p-5">
+                  <div className="space-y-4">
+                    <div className="inline-flex items-center gap-1.5 rounded-full border border-primary/15 bg-primary-50 px-2.5 py-1 text-[11px] font-medium text-primary">
+                      <BookOpen size={13} weight="fill" aria-hidden="true" />
+                      Article review
+                    </div>
+                    <p className="text-base font-medium leading-relaxed text-foreground">
+                      {currentQuestion.stem}
+                    </p>
+                    {currentQuestion.image_url && (
+                      <img
+                        src={currentQuestion.image_url}
+                        alt={currentQuestion.image_alt_text || 'Question image'}
+                        className="max-h-[260px] max-w-full rounded-lg border border-border object-contain"
                       />
-                      <span
-                        className={cn(
-                          'flex-shrink-0 w-7 h-7 rounded-md flex items-center justify-center',
-                          'text-xs font-semibold transition-colors duration-150',
-                          LETTER_STATE_CLASSES[state],
-                        )}
-                        aria-hidden="true"
-                      >
-                        {option.letter}
-                      </span>
-                      <span className="text-sm leading-relaxed pt-0.5 flex-1">
-                        {option.text}
-                      </span>
-                    </label>
-                  )
-                })}
-              </div>
-
-              {/* Submit button (desktop-friendly, replaces SlideToSubmit) */}
-              {status === 'question' && (
-                <div className="space-y-3">
-                  <button
-                    type="button"
-                    onClick={handleSubmit}
-                    disabled={!selectedOptionId || isSubmitting}
-                    className={cn(
-                      'w-full rounded-lg px-4 py-3 text-sm font-semibold',
-                      'transition-all duration-150 min-h-[48px]',
-                      selectedOptionId && !isSubmitting
-                        ? 'bg-primary text-white hover:bg-primary-700 shadow-sm active:scale-[0.98]'
-                        : 'bg-muted text-muted-foreground cursor-not-allowed',
                     )}
-                    aria-live="polite"
-                  >
-                    {isSubmitting ? (
-                      <span className="flex items-center justify-center gap-2">
-                        <span className="h-4 w-4 rounded-full border-2 border-white/30 border-t-white animate-spin" />
-                        Checking…
-                      </span>
-                    ) : (
-                      'Submit answer'
-                    )}
-                  </button>
-                  {submitError && (
-                    <p className="text-sm text-warning text-center" role="alert">
-                      {submitError}
-                    </p>
-                  )}
-                </div>
-              )}
-
-              {/* Feedback panel */}
-              {status === 'feedback' && answers[currentIndex] && (
-                <div
-                  role="status"
-                  aria-live="polite"
-                  aria-atomic="true"
-                  className={cn(
-                    'rounded-xl border p-5 space-y-4 animate-in fade-in slide-in-from-bottom-2 duration-200',
-                    answers[currentIndex].isCorrect
-                      ? 'bg-success-50 border-success/20'
-                      : 'bg-warning-50 border-warning/20',
-                  )}
-                >
-                  <div className="flex items-center gap-2.5">
-                    {answers[currentIndex].isCorrect ? (
-                      <CheckCircle size={20} weight="fill" className="text-success shrink-0" aria-hidden="true" />
-                    ) : (
-                      <XCircle size={20} weight="fill" className="text-warning shrink-0" aria-hidden="true" />
-                    )}
-                    <span
-                      className={cn(
-                        'text-sm font-semibold',
-                        answers[currentIndex].isCorrect ? 'text-success' : 'text-warning',
-                      )}
-                    >
-                      {answers[currentIndex].isCorrect ? 'Correct — nice work' : 'Not quite'}
-                    </span>
                   </div>
+                </section>
 
-                  {answers[currentIndex].rationale && (
-                    <p className="text-sm text-text-secondary leading-relaxed">
-                      {answers[currentIndex].rationale}
-                    </p>
-                  )}
+                {/* Right: choices + feedback */}
+                <section className="min-h-0 overflow-y-auto p-4 sm:p-5 lg:p-5">
+                  <div className="flex min-h-full flex-col gap-4">
+                    <div
+                      className="flex flex-col gap-2"
+                      role="radiogroup"
+                      aria-label={`Question ${currentIndex + 1}: ${currentQuestion.stem}`}
+                    >
+                      {currentQuestion.options.map((option, idx) => {
+                        const state = getOptionState(option.id)
+                        const isDisabled = status === 'feedback'
+                        const isChecked = selectedOptionId === option.id
 
-                  {/* Gated next — countdown bar + button */}
-                  <div className="space-y-3 pt-1">
-                    {!nextReady && (
-                      <div className="space-y-2">
-                        <p className="text-[11px] text-muted-foreground">
-                          Review the explanation — next in {countdownSeconds}s
-                        </p>
-                        <div className="h-1.5 rounded-full bg-border overflow-hidden">
-                          <div
-                            className="h-full rounded-full bg-primary/40 transition-none"
-                            style={{ width: `${countdownProgress * 100}%` }}
-                          />
+                        return (
+                          <label
+                            key={option.id}
+                            className={cn(
+                              'flex w-full items-start gap-3 rounded-lg border px-4 py-2',
+                              'transition-all duration-150 ease-out',
+                              'focus-within:ring-2 focus-within:ring-primary/30',
+                              OPTION_STATE_CLASSES[state],
+                              isDisabled && state === 'default' && 'pointer-events-none opacity-50',
+                            )}
+                          >
+                            <input
+                              ref={idx === 0 ? firstOptionRef : undefined}
+                              type="radio"
+                              name={`wiki-quiz-${currentQuestion.question_id}`}
+                              value={option.id}
+                              checked={isChecked}
+                              disabled={isDisabled}
+                              onChange={() => handleSelectOption(option.id)}
+                              className="sr-only"
+                            />
+                            <span
+                              className={cn(
+                                'flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-md',
+                                'text-xs font-semibold transition-colors duration-150',
+                                LETTER_STATE_CLASSES[state],
+                              )}
+                              aria-hidden="true"
+                            >
+                              {option.letter}
+                            </span>
+                            <span className="flex-1 pt-0.5 text-sm leading-relaxed">
+                              {option.text}
+                            </span>
+                          </label>
+                        )
+                      })}
+                    </div>
+
+                    {status === 'feedback' && currentAnswer && (
+                      <div
+                        role="status"
+                        aria-live="polite"
+                        aria-atomic="true"
+                        className={cn(
+                          'rounded-xl border p-3 space-y-2 animate-in fade-in slide-in-from-bottom-2 duration-200',
+                          currentAnswer.isCorrect
+                            ? 'bg-success-50 border-success/20'
+                            : 'bg-warning-50 border-warning/20',
+                        )}
+                      >
+                        <div className="flex items-center gap-2.5">
+                          {currentAnswer.isCorrect ? (
+                            <CheckCircle size={20} weight="fill" className="shrink-0 text-success" aria-hidden="true" />
+                          ) : (
+                            <XCircle size={20} weight="fill" className="shrink-0 text-warning" aria-hidden="true" />
+                          )}
+                          <span
+                            className={cn(
+                              'text-sm font-semibold',
+                              currentAnswer.isCorrect ? 'text-success' : 'text-warning',
+                            )}
+                          >
+                            {currentAnswer.isCorrect ? 'Correct — nice work' : 'Not quite'}
+                          </span>
                         </div>
+
+                        {currentAnswer.rationale && (
+                          <p className="text-sm leading-relaxed text-text-secondary">
+                            {currentAnswer.rationale}
+                          </p>
+                        )}
+
+                        {!nextReady && (
+                          <div className="space-y-2 pt-1">
+                            <p className="text-[11px] text-muted-foreground">
+                              Review the explanation — next in {countdownSeconds}s
+                            </p>
+                            <div className="h-1.5 overflow-hidden rounded-full bg-border">
+                              <div
+                                className="h-full rounded-full bg-primary/40 transition-none"
+                                style={{ width: `${countdownProgress * 100}%` }}
+                              />
+                            </div>
+                          </div>
+                        )}
                       </div>
                     )}
-                    <button
-                      ref={nextButtonRef}
-                      type="button"
-                      onClick={handleNext}
-                      disabled={!nextReady || isEnding}
-                      className={cn(
-                        'w-full inline-flex items-center justify-center gap-1.5 rounded-lg px-4 py-3 text-sm font-semibold',
-                        'transition-all duration-150 min-h-[48px]',
-                        nextReady && !isEnding
-                          ? 'bg-primary text-white hover:bg-primary-700 shadow-sm active:scale-[0.98]'
-                          : 'bg-primary/40 text-white/70 cursor-not-allowed',
-                      )}
-                    >
-                      {isEnding ? (
-                        <span className="flex items-center gap-2">
-                          <span className="h-4 w-4 rounded-full border-2 border-white/30 border-t-white animate-spin" />
-                          Finishing…
-                        </span>
-                      ) : (
-                        <>
-                          {currentIndex === totalQuestions - 1 ? 'See results' : 'Next question'}
-                          <ArrowRight size={16} weight="bold" aria-hidden="true" />
-                        </>
-                      )}
-                    </button>
+
+                    {submitError && (
+                      <p className="text-center text-sm text-warning" role="alert">
+                        {submitError}
+                      </p>
+                    )}
                   </div>
-                </div>
-              )}
+                </section>
+              </div>
             </div>
           )}
 
           {/* Results state */}
           {status === 'results' && (
-            <div className="flex flex-col items-center gap-6 py-4">
+            <div className="flex flex-col items-center gap-6 px-5 py-8 sm:px-6">
               {/* Score ring */}
               <div className="relative flex items-center justify-center">
                 <svg className="h-28 w-28 -rotate-90" viewBox="0 0 36 36">
@@ -729,17 +679,17 @@ export const WikiQuizModal = ({ nodeId, topicName, articleSlug, articleTitle, ar
                   />
                 </svg>
                 <div className="absolute text-center">
-                  <p className="text-2xl font-bold text-foreground tabular-nums">{scorePercent}%</p>
-                  <p className="text-[10px] text-muted-foreground uppercase tracking-wider">{correctCount}/{totalQuestions}</p>
+                  <p className="text-2xl font-bold tabular-nums text-foreground">{scorePercent}%</p>
+                  <p className="text-[10px] uppercase tracking-wider text-muted-foreground">{correctCount}/{totalQuestions}</p>
                 </div>
               </div>
 
               {/* Score label */}
-              <div className="text-center space-y-1">
+              <div className="space-y-1 text-center">
                 <p className={cn('text-base font-semibold', scoreMeta.color)}>
                   {scoreMeta.text}
                 </p>
-                <p className="text-xs text-muted-foreground max-w-[320px]">
+                <p className="max-w-[320px] text-xs text-muted-foreground">
                   {scoreMeta.subtext}
                 </p>
               </div>
@@ -760,16 +710,16 @@ export const WikiQuizModal = ({ nodeId, topicName, articleSlug, articleTitle, ar
               </div>
 
               {/* Mastery note */}
-              <p className="text-xs text-muted-foreground text-center">
+              <p className="text-center text-xs text-muted-foreground">
                 This review lightly updates your mastery for {topicName}.
               </p>
 
               {/* Actions */}
-              <div className="flex flex-col sm:flex-row items-center gap-2.5 w-full sm:w-auto">
+              <div className="flex w-full flex-col items-center gap-2.5 sm:w-auto sm:flex-row">
                 <button
                   type="button"
                   onClick={handleReviewAgain}
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-1.5 rounded-lg px-5 py-2.5 text-sm font-semibold bg-primary text-white hover:bg-primary-700 shadow-sm active:scale-[0.98] transition-all"
+                  className="inline-flex w-full items-center justify-center gap-1.5 rounded-lg bg-primary px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-all hover:bg-primary-700 active:scale-[0.98] sm:w-auto"
                 >
                   <ArrowCounterClockwise size={16} aria-hidden="true" />
                   Review again
@@ -777,7 +727,7 @@ export const WikiQuizModal = ({ nodeId, topicName, articleSlug, articleTitle, ar
                 <button
                   type="button"
                   onClick={safeClose}
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-1.5 rounded-lg px-5 py-2.5 text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-surface-light border border-border transition-all"
+                  className="inline-flex w-full items-center justify-center gap-1.5 rounded-lg border border-border px-5 py-2.5 text-sm font-medium text-muted-foreground transition-all hover:bg-surface-light hover:text-foreground sm:w-auto"
                 >
                   <BookOpen size={16} aria-hidden="true" />
                   Back to article
@@ -786,9 +736,53 @@ export const WikiQuizModal = ({ nodeId, topicName, articleSlug, articleTitle, ar
             </div>
           )}
         </div>
+
+        {(isQuestionActive || isFeedbackActive) && currentQuestion && (
+          <div className="shrink-0 border-t border-border bg-card/95 p-2 backdrop-blur-sm sm:px-5 sm:py-2">
+            {status === 'question' ? (
+              <SlideToSubmit
+                onSubmit={handleSubmit}
+                label={isSubmitting ? 'Checking your answer…' : 'Slide to submit'}
+                disabled={!selectedOptionId || isSubmitting}
+                checked={false}
+                testId="wiki-quiz-submit-slider"
+              />
+            ) : (
+              <button
+                ref={nextButtonRef}
+                type="button"
+                onClick={handleNext}
+                disabled={!nextReady || isEnding}
+                className={cn(
+                  'inline-flex min-h-[48px] w-full items-center justify-center gap-1.5 rounded-lg px-4 py-3 text-sm font-semibold',
+                  'transition-all duration-150',
+                  nextReady && !isEnding
+                    ? 'bg-primary text-white shadow-sm hover:bg-primary-700 active:scale-[0.98]'
+                    : 'cursor-not-allowed bg-primary/40 text-white/70',
+                )}
+              >
+                {isEnding ? (
+                  <span className="flex items-center gap-2">
+                    <span className="h-4 w-4 rounded-full border-2 border-white/30 border-t-white animate-spin" />
+                    Finishing…
+                  </span>
+                ) : (
+                  <>
+                    {currentIndex === totalQuestions - 1 ? 'See results' : 'Next question'}
+                    <ArrowRight size={16} weight="bold" aria-hidden="true" />
+                  </>
+                )}
+              </button>
+            )}
+          </div>
+        )}
       </div>
     </div>
   )
+
+  if (mounted && typeof document !== 'undefined') {
+    return createPortal(modalContent, document.body)
+  }
 
   return modalContent
 }

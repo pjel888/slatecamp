@@ -29,7 +29,6 @@ export async function LandingPageContent() {
         <HeroSection
           ctaHref={ctaHref}
           ctaLabel={ctaLabel}
-          isLoggedIn={isLoggedIn}
         />
 
         <SocialProofBar />

@@ -1,15 +1,7 @@
 import Link from 'next/link'
-import { Instrument_Serif } from 'next/font/google'
 import { CheckCircle, XCircle } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import type { PricingTier } from '@/lib/constants/pricing'
-
-const serif = Instrument_Serif({
-  weight: '400',
-  subsets: ['latin'],
-  style: ['normal', 'italic'],
-  display: 'swap',
-})
 
 export const PricingCard = ({ tier }: { tier: PricingTier }) => (
   <div
@@ -39,7 +31,7 @@ export const PricingCard = ({ tier }: { tier: PricingTier }) => (
     </div>
 
     <p
-      className={`${serif.className} mt-4 text-[17px] italic leading-snug text-foreground/80`}
+      className='font-instrument-serif mt-4 text-[17px] italic leading-snug text-foreground/80'
     >
       &ldquo;{tier.hook}&rdquo;
     </p>

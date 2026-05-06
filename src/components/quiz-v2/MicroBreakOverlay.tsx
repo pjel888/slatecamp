@@ -105,7 +105,7 @@ export const MicroBreakOverlay = ({
         aria-labelledby="micro-break-title"
         aria-describedby="micro-break-desc"
         className={cn(
-          'w-full max-w-sm rounded-lg bg-card p-6 shadow-lg',
+          'w-full max-w-sm rounded-lg bg-card p-6 shadow-modal',
           'flex flex-col items-center gap-4 text-center',
           !prefersReducedMotion && 'animate-in zoom-in-95 duration-150 ease-out',
         )}

@@ -7,7 +7,7 @@ import {
   TooltipProvider,
 } from '@/components/ui/tooltip'
 import { cn } from '@/lib/utils'
-import { SIDEBAR_PADDING } from './types'
+import { SIDEBAR_ICON_SLOT, SIDEBAR_PADDING } from './types'
 
 // ---------------------------------------------------------------------------
 // SidebarFooter — HTML v4 anatomy
@@ -33,6 +33,9 @@ export const SidebarFooter = ({
   tier,
 }: SidebarFooterProps) => {
   const initials = getInitials(userDisplay.name)
+  const footerDividerStyle: React.CSSProperties = expanded
+    ? { left: 0, right: 0 }
+    : { left: SIDEBAR_PADDING, width: SIDEBAR_ICON_SLOT }
 
   const profileRow = (
     <div
@@ -106,12 +109,16 @@ export const SidebarFooter = ({
   return (
     <div
       className={cn(
-        'flex flex-col',
-        'border-t border-gray-200 dark:border-gray-800',
+        'relative flex flex-col',
         'pt-3 pb-4',
       )}
       style={{ paddingInline: SIDEBAR_PADDING }}
     >
+      <div
+        aria-hidden="true"
+        className="absolute top-0 border-t border-gray-200 dark:border-gray-800"
+        style={footerDividerStyle}
+      />
       {/* Profile row — with tooltip when collapsed */}
       {!expanded ? (
         <TooltipProvider delay={0}>

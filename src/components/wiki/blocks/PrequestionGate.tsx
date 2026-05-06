@@ -198,7 +198,7 @@ export const PrequestionGate = ({
       <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40">
         <div
           className={cn(
-            'mx-4 w-full max-w-lg rounded-lg bg-card p-6 shadow-lg',
+            'mx-4 w-full max-w-lg rounded-lg bg-card p-6 shadow-modal',
             'sm:mx-auto',
           )}
           role="dialog"
@@ -290,7 +290,7 @@ export const PrequestionGate = ({
         className={cn(
           // Mobile: full-screen card. Desktop: centered constrained card.
           'flex flex-col',
-          'mx-0 h-full w-full bg-card sm:mx-auto sm:h-auto sm:max-h-[90vh] sm:max-w-lg sm:rounded-lg sm:shadow-lg',
+          'mx-0 h-full w-full bg-card shadow-modal sm:mx-auto sm:h-auto sm:max-h-[90vh] sm:max-w-lg sm:rounded-lg',
         )}
         role="dialog"
         aria-labelledby="prequestion-heading"

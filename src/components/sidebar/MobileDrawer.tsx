@@ -307,7 +307,7 @@ export const MobileDrawer = ({
           transition: drawerTransition,
           display: 'flex',
           flexDirection: 'column',
-          borderRight: '1px solid var(--border)',
+          boxShadow: 'var(--shadow-modal)',
         }}
         className="bg-white dark:bg-gray-950 lg:hidden"
       >
