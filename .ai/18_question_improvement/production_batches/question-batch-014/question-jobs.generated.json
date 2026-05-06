@@ -1,0 +1,3153 @@
+{
+  "generated_at": "2026-05-06T13:18:10.214Z",
+  "batch": "question-batch-014",
+  "jobs": [
+    {
+      "question_id": "bec6e42c-bbb8-4151-8abf-52312052842a",
+      "article_id": "4446881f-7bec-4a7c-97a4-4f819ac8411f",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-04b-core-concept--4446881f-7bec-4a7c-97a4-4f819ac8411f",
+      "title": "lea-hist-008-04b-core-concept",
+      "baseline_hash": "sha256:cd9b98f89f59011513e8ec40ae5300be5103a7945953a0383bd1b32083cf3e71",
+      "baseline": {
+        "question_id": "bec6e42c-bbb8-4151-8abf-52312052842a",
+        "article_id": "4446881f-7bec-4a7c-97a4-4f819ac8411f",
+        "topic_id": "e79444fd-9061-46a8-9b2e-d9b3acf6d3be",
+        "text": "Which of these buildings is NOT a canonical example of the International Style?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Seagram Building by Mies van der Rohe and Philip Johnson"
+          },
+          {
+            "id": "b",
+            "text": "Lever House by Skidmore, Owings & Merrill"
+          },
+          {
+            "id": "c",
+            "text": "Barcelona Pavilion by Mies van der Rohe"
+          },
+          {
+            "id": "d",
+            "text": "Sagrada Família by Antoni Gaudí"
+          }
+        ],
+        "correct_option_id": "d",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Seagram Building (1954–1958) exemplifies International Style principles.",
+          "b": "Lever House (1952) pioneered the curtain wall skyscraper.",
+          "c": "Barcelona Pavilion (1929) demonstrated early International Style minimalism.",
+          "correct": "Sagrada Família is an Art Nouveau/Modernist work, not International Style. The other three are canonical International Style buildings demonstrating glass curtain walls and structural honesty.",
+          "takeaway": "The other three are canonical International Style buildings demonstrating glass curtain walls and structural honesty."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "remember",
+        "application_context": "recall",
+        "practice_context": [
+          "ID"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-HIST-008-04B-002",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:25.729652+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:cd9b98f89f59011513e8ec40ae5300be5103a7945953a0383bd1b32083cf3e71"
+      },
+      "proposed": {
+        "explanation": "Seagram Building (1954–1958) exemplifies International Style principles. Lever House (1952) pioneered the curtain wall skyscraper. Barcelona Pavilion (1929) demonstrated early International Style minimalism. Sagrada Família is an Art Nouveau/Modernist work, not International Style. The other three are canonical International Style buildings demonstrating glass curtain walls and structural honesty. The other three are canonical International Style buildings demonstrating glass curtain walls and structural honesty."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "06922ef8-a2ed-4bf3-9992-6d78836e2b67",
+      "article_id": "4446881f-7bec-4a7c-97a4-4f819ac8411f",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-04b-core-concept--4446881f-7bec-4a7c-97a4-4f819ac8411f",
+      "title": "lea-hist-008-04b-core-concept",
+      "baseline_hash": "sha256:6270ea589d2408693d5b488341265d1c817925f6e38367e98a34c11308e34ced",
+      "baseline": {
+        "question_id": "06922ef8-a2ed-4bf3-9992-6d78836e2b67",
+        "article_id": "4446881f-7bec-4a7c-97a4-4f819ac8411f",
+        "topic_id": "e79444fd-9061-46a8-9b2e-d9b3acf6d3be",
+        "text": "The International Style claimed to represent 'universal' design principles transcending national and regional preferences. What does this universalist claim reflect about modernist ideology?",
+        "options": [
+          {
+            "id": "a",
+            "text": "That modernists believed good design was objective and scientifically derived, not culturally specific"
+          },
+          {
+            "id": "b",
+            "text": "That modernists rejected all cultural differences and regional traditions, aiming for a homogenized architectural language that could be applied globally"
+          },
+          {
+            "id": "c",
+            "text": "That modernism had no theoretical framework or philosophical foundation, which led to its decline as a dominant architectural style"
+          },
+          {
+            "id": "d",
+            "text": "That all buildings should be identical regardless of purpose or location, which disregards functional and contextual needs"
+          }
+        ],
+        "correct_option_id": "a",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "b": "Universalism doesn't require rejecting culture; it claims universal principles underlie all cultures.",
+          "c": "Modernism had explicit theoretical frameworks; universalism was central.",
+          "d": "Universalism allows for diversity within unified principles.",
+          "correct": "International Style's universalism reflects modernism's belief that functional design logic, rigorously pursued, transcends cultural specificity. The style's mathematical and structural principles were seen as universally applicable.",
+          "takeaway": "The style's mathematical and structural principles were seen as universally applicable."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "analyze",
+        "application_context": "code_interpretation",
+        "practice_context": [
+          "CON"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-HIST-008-04B-007",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:25.729652+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:6270ea589d2408693d5b488341265d1c817925f6e38367e98a34c11308e34ced"
+      },
+      "proposed": {
+        "explanation": "Universalism doesn't require rejecting culture; it claims universal principles underlie all cultures. Modernism had explicit theoretical frameworks; universalism was central. Universalism allows for diversity within unified principles. International Style's universalism reflects modernism's belief that functional design logic, rigorously pursued, transcends cultural specificity. The style's mathematical and structural principles were seen as universally applicable. The style's mathematical and structural principles were seen as universally applicable."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "5e6776bd-8a91-4d3f-a3fd-c63baea2807b",
+      "article_id": "4446881f-7bec-4a7c-97a4-4f819ac8411f",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-04b-core-concept--4446881f-7bec-4a7c-97a4-4f819ac8411f",
+      "title": "lea-hist-008-04b-core-concept",
+      "baseline_hash": "sha256:aa03ccb7c6d8a87c1dc93652180da2751eb598b47b9f4002b3721308aa36cd7b",
+      "baseline": {
+        "question_id": "5e6776bd-8a91-4d3f-a3fd-c63baea2807b",
+        "article_id": "4446881f-7bec-4a7c-97a4-4f819ac8411f",
+        "topic_id": "e79444fd-9061-46a8-9b2e-d9b3acf6d3be",
+        "text": "How do the International Style's theoretical principles differ from its actual global practice?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Theory emphasized local adaptation; practice ignored regional contexts, leading to a homogenized architectural landscape"
+          },
+          {
+            "id": "b",
+            "text": "Theory claimed universality and adaptation-free principles; practice generated identical glass boxes globally, sometimes ignoring climate, culture, and local building traditions"
+          },
+          {
+            "id": "c",
+            "text": "Theory and practice were perfectly aligned in all locations, demonstrating a consistent application of design principles"
+          },
+          {
+            "id": "d",
+            "text": "Theory emphasized ornament; practice eliminated it, resulting in a minimalist aesthetic that became widely adopted"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Theory didn't emphasize local adaptation; it claimed universality.",
+          "c": "Significant gaps emerged between theory and practice.",
+          "d": "Both theory and practice eliminated ornament.",
+          "correct": "International Style's universalist theory claimed principles were universally applicable; the actual result was often culturally insensitive repetition of the same glazed box regardless of climate or local context. The theory-practice gap became a basis for later criticism.",
+          "takeaway": "The theory-practice gap became a basis for later criticism."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "analyze",
+        "application_context": "design_application",
+        "practice_context": [
+          "CMP"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-HIST-008-04B-012",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:25.729652+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:aa03ccb7c6d8a87c1dc93652180da2751eb598b47b9f4002b3721308aa36cd7b"
+      },
+      "proposed": {
+        "explanation": "Theory didn't emphasize local adaptation; it claimed universality. Significant gaps emerged between theory and practice. Both theory and practice eliminated ornament. International Style's universalist theory claimed principles were universally applicable; the actual result was often culturally insensitive repetition of the same glazed box regardless of climate or local context. The theory-practice gap became a basis for later criticism. The theory-practice gap became a basis for later criticism."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "f8007458-681d-4888-9727-39ba372f8d41",
+      "article_id": "4446881f-7bec-4a7c-97a4-4f819ac8411f",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-04b-core-concept--4446881f-7bec-4a7c-97a4-4f819ac8411f",
+      "title": "lea-hist-008-04b-core-concept",
+      "baseline_hash": "sha256:30d80da7e34d08979c48add23b20c98b39d73297a15904a438d3764cea25f624",
+      "baseline": {
+        "question_id": "f8007458-681d-4888-9727-39ba372f8d41",
+        "article_id": "4446881f-7bec-4a7c-97a4-4f819ac8411f",
+        "topic_id": "e79444fd-9061-46a8-9b2e-d9b3acf6d3be",
+        "text": "Glass curtain walls in International Style architecture serve multiple purposes. Which statement best captures their significance?",
+        "options": [
+          {
+            "id": "a",
+            "text": "They are purely decorative elements applied to the facade, with no structural or functional role in the building"
+          },
+          {
+            "id": "b",
+            "text": "They are non-load-bearing skins that express the structural frame within, dematerialize the envelope, and announce modern technology and efficiency"
+          },
+          {
+            "id": "c",
+            "text": "They reduce the structural capacity of the building, which can lead to increased maintenance costs over time"
+          },
+          {
+            "id": "d",
+            "text": "They were introduced to reduce construction costs, making modern architecture more accessible to developers"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Curtain walls have structural and conceptual significance, not purely decorative.",
+          "c": "Curtain walls don't reduce structural capacity; the frame carries all loads.",
+          "d": "While economical, their significance is philosophical and technical, not primarily economic.",
+          "correct": "Curtain walls are fundamental to International Style's philosophy: they're non-structural skins that reveal the frame, express the building's essence through transparency, and communicate efficiency and modernity.",
+          "takeaway": "Curtain walls are fundamental to International Style's philosophy: they're non-structural skins that reveal the frame, express the building's essence through transparency, and communicate efficiency and modernity."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "apply",
+        "application_context": "code_interpretation",
+        "practice_context": [
+          "ST"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-HIST-008-04B-005",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:25.729652+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:30d80da7e34d08979c48add23b20c98b39d73297a15904a438d3764cea25f624"
+      },
+      "proposed": {
+        "explanation": "Curtain walls have structural and conceptual significance, not purely decorative. Curtain walls don't reduce structural capacity; the frame carries all loads. While economical, their significance is philosophical and technical, not primarily economic. Curtain walls are fundamental to International Style's philosophy: they're non-structural skins that reveal the frame, express the building's essence through transparency, and communicate efficiency and modernity. Curtain walls are fundamental to International Style's philosophy: they're non-structural skins that reveal the frame, express the building's essence through transparency, and communicate efficiency and modernity."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "fc467888-bf85-4da1-a332-31ec97ef83a6",
+      "article_id": "4446881f-7bec-4a7c-97a4-4f819ac8411f",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-04b-core-concept--4446881f-7bec-4a7c-97a4-4f819ac8411f",
+      "title": "lea-hist-008-04b-core-concept",
+      "baseline_hash": "sha256:83070ef79e9a13b83e0cc4d5570498fcf3d443020c3f23b457feb71755abc0c7",
+      "baseline": {
+        "question_id": "fc467888-bf85-4da1-a332-31ec97ef83a6",
+        "article_id": "4446881f-7bec-4a7c-97a4-4f819ac8411f",
+        "topic_id": "e79444fd-9061-46a8-9b2e-d9b3acf6d3be",
+        "text": "The International Style emerged as a codified movement through a landmark exhibition curated by which two figures in what year?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Le Corbusier and Mies van der Rohe, 1926, although they were not the curators of the defining exhibition"
+          },
+          {
+            "id": "b",
+            "text": "Henry Russell Hitchcock and Philip Johnson at MoMA, 1932"
+          },
+          {
+            "id": "c",
+            "text": "Walter Gropius and Herbert Bayer, 1925, who were influential but not the curators of the exhibition"
+          },
+          {
+            "id": "d",
+            "text": "Ludwig Mies van der Rohe and Bauhaus faculty, 1930, which was not the year of the MoMA exhibition"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "1926 is when Le Corbusier formulated the Five Points, not when International Style was formally codified.",
+          "c": "1925 was the Paris Exposition; the MoMA exhibition was later.",
+          "d": "While Mies and Bauhaus were important, the MoMA exhibition by Hitchcock and Johnson was the formal codification.",
+          "correct": "Henry Russell Hitchcock and Philip Johnson curated the 1932 MoMA exhibition that codified the International Style and gave it its name.",
+          "takeaway": "Henry Russell Hitchcock and Philip Johnson curated the 1932 MoMA exhibition that codified the International Style and gave it its name."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "remember",
+        "application_context": "recall",
+        "practice_context": [
+          "CH"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-HIST-008-04B-001",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:25.729652+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:83070ef79e9a13b83e0cc4d5570498fcf3d443020c3f23b457feb71755abc0c7"
+      },
+      "proposed": {
+        "explanation": "1926 is when Le Corbusier formulated the Five Points, not when International Style was formally codified. 1925 was the Paris Exposition; the MoMA exhibition was later. While Mies and Bauhaus were important, the MoMA exhibition by Hitchcock and Johnson was the formal codification. Henry Russell Hitchcock and Philip Johnson curated the 1932 MoMA exhibition that codified the International Style and gave it its name. Henry Russell Hitchcock and Philip Johnson curated the 1932 MoMA exhibition that codified the International Style and gave it its name."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "bdd35e64-178c-4dc7-85b3-6bc6d6dd7e8a",
+      "article_id": "4446881f-7bec-4a7c-97a4-4f819ac8411f",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-04b-core-concept--4446881f-7bec-4a7c-97a4-4f819ac8411f",
+      "title": "lea-hist-008-04b-core-concept",
+      "baseline_hash": "sha256:afb936dc7068cfad7a5570b5f788c1b27511c0535dabe006c63b437b05633107",
+      "baseline": {
+        "question_id": "bdd35e64-178c-4dc7-85b3-6bc6d6dd7e8a",
+        "article_id": "4446881f-7bec-4a7c-97a4-4f819ac8411f",
+        "topic_id": "e79444fd-9061-46a8-9b2e-d9b3acf6d3be",
+        "text": "A building features a steel structural frame with a glass curtain wall facade, completely rejecting ornament. Interior spaces flow openly without load-bearing walls. Proportions are refined but purely functional. Which design movement does this exemplify?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Art Deco, known for its decorative elements and geometric forms"
+          },
+          {
+            "id": "b",
+            "text": "Gothic Revival, characterized by pointed arches and intricate details"
+          },
+          {
+            "id": "c",
+            "text": "International Style"
+          },
+          {
+            "id": "d",
+            "text": "Streamline Moderne, which emphasizes curving forms and long horizontal lines"
+          }
+        ],
+        "correct_option_id": "c",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Art Deco includes geometric decoration and luxurious materials.",
+          "b": "Gothic Revival emphasizes ornament and historical style.",
+          "d": "Streamline Moderne uses smooth, flowing lines suggesting speed; it's not purely geometric minimalism.",
+          "correct": "Glass curtain walls, open plans, rejection of ornament, and structural honesty are defining characteristics of the International Style.",
+          "takeaway": "Glass curtain walls, open plans, rejection of ornament, and structural honesty are defining characteristics of the International Style."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "apply",
+        "application_context": "recall",
+        "practice_context": [
+          "DESC"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-HIST-008-04B-003",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:25.729652+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:afb936dc7068cfad7a5570b5f788c1b27511c0535dabe006c63b437b05633107"
+      },
+      "proposed": {
+        "explanation": "Art Deco includes geometric decoration and luxurious materials. Gothic Revival emphasizes ornament and historical style. Streamline Moderne uses smooth, flowing lines suggesting speed; it's not purely geometric minimalism. Glass curtain walls, open plans, rejection of ornament, and structural honesty are defining characteristics of the International Style. Glass curtain walls, open plans, rejection of ornament, and structural honesty are defining characteristics of the International Style."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "215a3815-ea52-4045-9aca-ffe5b4fd3e24",
+      "article_id": "4446881f-7bec-4a7c-97a4-4f819ac8411f",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-04b-core-concept--4446881f-7bec-4a7c-97a4-4f819ac8411f",
+      "title": "lea-hist-008-04b-core-concept",
+      "baseline_hash": "sha256:9c39f94cb2a28c8076a76d4883cd6962181b958de596611822e9d7b2ecd18921",
+      "baseline": {
+        "question_id": "215a3815-ea52-4045-9aca-ffe5b4fd3e24",
+        "article_id": "4446881f-7bec-4a7c-97a4-4f819ac8411f",
+        "topic_id": "e79444fd-9061-46a8-9b2e-d9b3acf6d3be",
+        "text": "Why did the International Style dominate corporate and institutional architecture from the 1930s–1970s?",
+        "options": [
+          {
+            "id": "a",
+            "text": "It was the cheapest building method available, making it attractive for cost-conscious projects"
+          },
+          {
+            "id": "b",
+            "text": "Its principles traveled easily because they claimed universality; glass-and-steel boxes could be constructed anywhere without regional adaptation"
+          },
+          {
+            "id": "c",
+            "text": "Corporations had no alternative design philosophies available, limiting their architectural choices"
+          },
+          {
+            "id": "d",
+            "text": "The style was mandated by law in all countries, enforcing a uniform architectural approach"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "International Style wasn't necessarily the cheapest; cost wasn't the primary factor.",
+          "c": "While alternative styles existed, International Style's efficiency and perceived objectivity were appealing.",
+          "d": "No such mandate existed; adoption was voluntary.",
+          "correct": "International Style's globalization success came from its universalist claims. A glass box in New York, São Paulo, or Tokyo looked equally legitimate because the style claimed to transcend regional context.",
+          "takeaway": "A glass box in New York, São Paulo, or Tokyo looked equally legitimate because the style claimed to transcend regional context."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "analyze",
+        "application_context": "design_application",
+        "practice_context": [
+          "CMP"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-HIST-008-04B-008",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:25.729652+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:9c39f94cb2a28c8076a76d4883cd6962181b958de596611822e9d7b2ecd18921"
+      },
+      "proposed": {
+        "explanation": "International Style wasn't necessarily the cheapest; cost wasn't the primary factor. While alternative styles existed, International Style's efficiency and perceived objectivity were appealing. No such mandate existed; adoption was voluntary. International Style's globalization success came from its universalist claims. A glass box in New York, São Paulo, or Tokyo looked equally legitimate because the style claimed to transcend regional context. A glass box in New York, São Paulo, or Tokyo looked equally legitimate because the style claimed to transcend regional context."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "88785084-6a5d-4ce8-85aa-43b696420621",
+      "article_id": "4446881f-7bec-4a7c-97a4-4f819ac8411f",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-04b-core-concept--4446881f-7bec-4a7c-97a4-4f819ac8411f",
+      "title": "lea-hist-008-04b-core-concept",
+      "baseline_hash": "sha256:6dcf06a26b94002dc13ab05b7c68eb598d19acff7378b5b798da5ae3d392814d",
+      "baseline": {
+        "question_id": "88785084-6a5d-4ce8-85aa-43b696420621",
+        "article_id": "4446881f-7bec-4a7c-97a4-4f819ac8411f",
+        "topic_id": "e79444fd-9061-46a8-9b2e-d9b3acf6d3be",
+        "text": "A vertical glass tower is elevated on pilotis with a grid facade of glass and steel, streamlined proportions emphasizing verticality, and an open plaza at ground level. Which architect and building does this describe?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Le Corbusier, Villa Savoye, known for its pilotis but not for a vertical glass tower"
+          },
+          {
+            "id": "b",
+            "text": "Mies van der Rohe, Barcelona Pavilion, which is a horizontal structure rather than a vertical tower"
+          },
+          {
+            "id": "c",
+            "text": "Skidmore, Owings & Merrill, Lever House"
+          },
+          {
+            "id": "d",
+            "text": "Walter Gropius, Bauhaus Building, which is an influential design but not a vertical glass tower"
+          }
+        ],
+        "correct_option_id": "c",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Villa Savoye is residential and horizontal.",
+          "b": "Barcelona Pavilion is temporary and horizontal.",
+          "d": "Bauhaus Building is a school, not a commercial tower.",
+          "correct": "This describes Lever House (1952) in New York by Skidmore, Owings & Merrill—a canonical International Style skyscraper with pilotis, grid facade, and open plaza.",
+          "takeaway": "This describes Lever House (1952) in New York by Skidmore, Owings & Merrill—a canonical International Style skyscraper with pilotis, grid facade, and open plaza."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "apply",
+        "application_context": "recall",
+        "practice_context": [
+          "DESC"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-HIST-008-04B-010",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:25.729652+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:6dcf06a26b94002dc13ab05b7c68eb598d19acff7378b5b798da5ae3d392814d"
+      },
+      "proposed": {
+        "explanation": "Villa Savoye is residential and horizontal. Barcelona Pavilion is temporary and horizontal. Bauhaus Building is a school, not a commercial tower. This describes Lever House (1952) in New York by Skidmore, Owings & Merrill—a canonical International Style skyscraper with pilotis, grid facade, and open plaza. This describes Lever House (1952) in New York by Skidmore, Owings & Merrill—a canonical International Style skyscraper with pilotis, grid facade, and open plaza."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "f7048ad9-7e8d-4a08-8883-340f2daafd30",
+      "article_id": "4446881f-7bec-4a7c-97a4-4f819ac8411f",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-04b-core-concept--4446881f-7bec-4a7c-97a4-4f819ac8411f",
+      "title": "lea-hist-008-04b-core-concept",
+      "baseline_hash": "sha256:aa2324a351491f29a863b741958e7b0a4c36f58da6000dbc0733064ddcf86a68",
+      "baseline": {
+        "question_id": "f7048ad9-7e8d-4a08-8883-340f2daafd30",
+        "article_id": "4446881f-7bec-4a7c-97a4-4f819ac8411f",
+        "topic_id": "e79444fd-9061-46a8-9b2e-d9b3acf6d3be",
+        "text": "Pilotis in International Style buildings serve which purpose?",
+        "options": [
+          {
+            "id": "a",
+            "text": "To reduce the building's visual weight despite its size, creating an impression of lightness and elegance"
+          },
+          {
+            "id": "b",
+            "text": "To elevate the building above ground, freeing the floor beneath for open plaza or garden, and expressing structural logic"
+          },
+          {
+            "id": "c",
+            "text": "To simplify construction by reducing contact with the ground, which can lower foundation costs"
+          },
+          {
+            "id": "d",
+            "text": "To provide decorative support columns, enhancing the aesthetic appeal of the building's facade"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "While pilotis do reduce visual weight, the primary purpose is functional and conceptual.",
+          "c": "Pilotis don't simplify construction; they're a design choice.",
+          "d": "Pilotis are structural and functional, not decorative.",
+          "correct": "Pilotis liberate ground space, create visual openness, and express honest structure. This principle, derived from Le Corbusier's Five Points, became standard in International Style.",
+          "takeaway": "This principle, derived from Le Corbusier's Five Points, became standard in International Style."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "apply",
+        "application_context": "code_interpretation",
+        "practice_context": [
+          "ST"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-HIST-008-04B-009",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:25.729652+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:aa2324a351491f29a863b741958e7b0a4c36f58da6000dbc0733064ddcf86a68"
+      },
+      "proposed": {
+        "explanation": "While pilotis do reduce visual weight, the primary purpose is functional and conceptual. Pilotis don't simplify construction; they're a design choice. Pilotis are structural and functional, not decorative. Pilotis liberate ground space, create visual openness, and express honest structure. This principle, derived from Le Corbusier's Five Points, became standard in International Style. This principle, derived from Le Corbusier's Five Points, became standard in International Style."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "77f9ca20-f908-4b1d-846d-951099e0690c",
+      "article_id": "f5c0e7a8-8017-4c9b-a1d1-8938a338471f",
+      "article_dir": ".ai/content-audit-export/articles/lea-dsgn-009-02-core-concept--f5c0e7a8-8017-4c9b-a1d1-8938a338471f",
+      "title": "lea-dsgn-009-02-core-concept",
+      "baseline_hash": "sha256:03238893f65a6385f35452113f7ae97f69e3b55b214a0455a7b9778e1f240c53",
+      "baseline": {
+        "question_id": "77f9ca20-f908-4b1d-846d-951099e0690c",
+        "article_id": "f5c0e7a8-8017-4c9b-a1d1-8938a338471f",
+        "topic_id": "11a1bb46-a07b-4dc2-abbb-211855270e59",
+        "text": "Compare Design A (1:10 WFR, equal windows on 4 sides) and Design B (1:10 WFR, windows only on North and South facades). Which is preferred for the Philippines?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Design A; it provides uniform light from all directions and maximizes daylighting flexibility."
+          },
+          {
+            "id": "b",
+            "text": "Design B; it minimizes heat gain by eliminating East/West glazing."
+          },
+          {
+            "id": "c",
+            "text": "Design A; it is easier to comply with code and simplifies window scheduling documentation."
+          },
+          {
+            "id": "d",
+            "text": "Design B; but it is non-compliant because it lacks East/West light required by the code."
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Uniform light from all sides includes uncontrollable heat gain from the West.",
+          "c": "Both have the same WFR (1:10), so both comply with the minimum area requirement.",
+          "d": "Code does not require windows on all sides; it only requires a total area relative to the floor.",
+          "correct": "Design B follows passive cooling principles by placing windows on the North/South sides, which are easier to shade, while avoiding the harsh East/West solar heat gain.",
+          "takeaway": "Passive design favors North-South orientation for glazing in the Philippines."
+        },
+        "explanation": null,
+        "code_citation": "PD 1096 Section 808, Tropical Passive Design",
+        "bloom_level": "analyze",
+        "application_context": "code_interpretation",
+        "practice_context": [],
+        "difficulty": 0.9,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-DSGN-009-02-009",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:13.25953+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:03238893f65a6385f35452113f7ae97f69e3b55b214a0455a7b9778e1f240c53"
+      },
+      "proposed": {
+        "explanation": "Uniform light from all sides includes uncontrollable heat gain from the West. Both have the same WFR (1:10), so both comply with the minimum area requirement. Code does not require windows on all sides; it only requires a total area relative to the floor. Design B follows passive cooling principles by placing windows on the North/South sides, which are easier to shade, while avoiding the harsh East/West solar heat gain. Passive design favors North-South orientation for glazing in the Philippines."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "50cc5b35-126a-466c-83b9-5ae29ca35b33",
+      "article_id": "cd18af9a-b1e1-42d4-a254-ff5244838f19",
+      "article_dir": ".ai/content-audit-export/articles/lea-dsgn-005-11-core-concept--cd18af9a-b1e1-42d4-a254-ff5244838f19",
+      "title": "lea-dsgn-005-11-core-concept",
+      "baseline_hash": "sha256:46215e25bbc742bd4eae05d3fea888c5f2a019bc2700d59c35cf33578e1d8426",
+      "baseline": {
+        "question_id": "50cc5b35-126a-466c-83b9-5ae29ca35b33",
+        "article_id": "cd18af9a-b1e1-42d4-a254-ff5244838f19",
+        "topic_id": "3eaa1cf4-7e70-406f-995a-de8a7437672a",
+        "text": "A funeral home embalming room requires a specialized HVAC system. Which is the correct design approach?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Shared HVAC with the chapel to reduce costs, which may compromise air quality and odor control"
+          },
+          {
+            "id": "b",
+            "text": "Separate negative-pressure HVAC system to prevent odor transmission to public areas"
+          },
+          {
+            "id": "c",
+            "text": "Natural ventilation through windows only, which is insufficient for maintaining necessary air quality standards"
+          },
+          {
+            "id": "d",
+            "text": "Standard commercial HVAC serving the entire building equally, which does not address specific needs of the embalming room"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Shared HVAC allows odor/chemical transmission to chapel; separate system required.",
+          "c": "Natural ventilation is insufficient for chemical handling and odor control.",
+          "d": "Standard building HVAC cannot control negative pressure needed for embalming room.",
+          "correct": "Embalming room HVAC must be separate and maintain negative pressure (exhaust > intake) to prevent odor and chemical vapor from migrating to public areas (chapel, viewing room). (Funeral Home Design Standards, HVAC Best Practice)",
+          "takeaway": "Embalming room requires separate negative-pressure HVAC system for odor/chemical control."
+        },
+        "explanation": null,
+        "code_citation": "Funeral Home Design Standards; HVAC Best Practice",
+        "bloom_level": "analyze",
+        "application_context": "code_interpretation",
+        "practice_context": [
+          "mechanical systems",
+          "embalming room design"
+        ],
+        "difficulty": 0.9,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-DSGN-005-11-008",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:29:00.291039+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:46215e25bbc742bd4eae05d3fea888c5f2a019bc2700d59c35cf33578e1d8426"
+      },
+      "proposed": {
+        "explanation": "Shared HVAC allows odor/chemical transmission to chapel; separate system required. Natural ventilation is insufficient for chemical handling and odor control. Standard building HVAC cannot control negative pressure needed for embalming room. Embalming room HVAC must be separate and maintain negative pressure (exhaust > intake) to prevent odor and chemical vapor from migrating to public areas (chapel, viewing room). (Funeral Home Design Standards, HVAC Best Practice) Embalming room requires separate negative-pressure HVAC system for odor/chemical control."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "61f8acf9-e047-4376-a838-5629f183ecc6",
+      "article_id": "889fae0f-f8dd-4b3c-9ddf-4f9d32742282",
+      "article_dir": ".ai/content-audit-export/articles/lea-dsgn-011-05-core-concept--889fae0f-f8dd-4b3c-9ddf-4f9d32742282",
+      "title": "lea-dsgn-011-05-core-concept",
+      "baseline_hash": "sha256:b67dd632cc4c18121e33a4f3be924d1edfb5795661244cd93152d51e73f0453a",
+      "baseline": {
+        "question_id": "61f8acf9-e047-4376-a838-5629f183ecc6",
+        "article_id": "889fae0f-f8dd-4b3c-9ddf-4f9d32742282",
+        "topic_id": "e57c9618-6426-4b81-829d-78a6d6501629",
+        "text": "A detail marker shown as a circled number (e.g., ⊙ 3) is placed on an elevation drawing. What is the purpose of this symbol?",
+        "options": [
+          {
+            "id": "a",
+            "text": "To indicate a room number in the building, which is not the typical use of a detail marker"
+          },
+          {
+            "id": "b",
+            "text": "To reference an enlarged detail drawing; the detail will be titled 'Detail 3' and drawn at a larger scale to show construction methods and material assembly"
+          },
+          {
+            "id": "c",
+            "text": "To show the location of a mechanical system component, which is not the purpose of this symbol"
+          },
+          {
+            "id": "d",
+            "text": "To mark windows or doors that require special ordering, which is not the standard use of a detail marker"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Incorrect. Room numbers are noted separately, not with detail markers.",
+          "b": "Correct. You understand detail markers as references to enlarged construction details.",
+          "c": "Incorrect. Mechanical components are noted with specific mechanical symbols, not detail markers.",
+          "d": "Incorrect. Special ordering notes are annotations or schedules, not detail markers.",
+          "correct": "Detail markers are references to enlarged detail drawings. A detail marker on a plan or elevation (e.g., ⊙ 3) corresponds to a detail drawing labeled 'Detail 3', typically drawn at 1:20 or 1:10 scale to show construction assembly, material connections, and detailing that cannot be clearly shown at the overall drawing scale.",
+          "takeaway": "When you see a detail marker on a drawing, locate the corresponding detail drawing to understand the construction assembly at that location. Details are essential for contractors to understand exactly how materials connect and are assembled."
+        },
+        "explanation": null,
+        "code_citation": "Architectural drawing conventions",
+        "bloom_level": "apply",
+        "application_context": "code_interpretation",
+        "practice_context": [],
+        "difficulty": 0.7,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-DSGN-011-05-006",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:18.048561+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:b67dd632cc4c18121e33a4f3be924d1edfb5795661244cd93152d51e73f0453a"
+      },
+      "proposed": {
+        "explanation": "Incorrect. Room numbers are noted separately, not with detail markers. Correct. You understand detail markers as references to enlarged construction details. Incorrect. Mechanical components are noted with specific mechanical symbols, not detail markers. Incorrect. Special ordering notes are annotations or schedules, not detail markers. Detail markers are references to enlarged detail drawings. A detail marker on a plan or elevation (e.g., ⊙ 3) corresponds to a detail drawing labeled 'Detail 3', typically drawn at 1:20 or 1:10 scale to show construction assembly, material connections, and detailing that cannot be clearly shown at the overall drawing scale. When you see a detail marker on a drawing, locate the corresponding detail drawing to understand the construction assembly at that location. Details are essential for contractors to understand exactly how materials connect and are assembled."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "d7ff630d-006c-4a1a-80b4-d7ab3a0c0014",
+      "article_id": "889fae0f-f8dd-4b3c-9ddf-4f9d32742282",
+      "article_dir": ".ai/content-audit-export/articles/lea-dsgn-011-05-core-concept--889fae0f-f8dd-4b3c-9ddf-4f9d32742282",
+      "title": "lea-dsgn-011-05-core-concept",
+      "baseline_hash": "sha256:42d2268d3ef25eeb200c7bcc81de7b24dbb45e4ef5f9c04dfffadd37fcbef20b",
+      "baseline": {
+        "question_id": "d7ff630d-006c-4a1a-80b4-d7ab3a0c0014",
+        "article_id": "889fae0f-f8dd-4b3c-9ddf-4f9d32742282",
+        "topic_id": "e57c9618-6426-4b81-829d-78a6d6501629",
+        "text": "An architectural drawing set includes a legend defining all symbols used. A floor plan uses symbols not found in the legend. What concern does this raise?",
+        "options": [
+          {
+            "id": "a",
+            "text": "No concern; architects can use any symbols they choose as long as the drawing intent is clear, which is not a best practice"
+          },
+          {
+            "id": "b",
+            "text": "High concern; undefined symbols create ambiguity and are difficult for builders and inspectors to interpret; all symbols must be defined in a legend"
+          },
+          {
+            "id": "c",
+            "text": "Minor concern; the contractor can request clarification if needed, though this can delay the project"
+          },
+          {
+            "id": "d",
+            "text": "The symbols may be standard and do not require definition, which can lead to misunderstandings"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Incorrect. Symbols must be standardized and defined; undefined symbols create misunderstandings.",
+          "b": "Correct. You recognized the importance of comprehensive symbol definition.",
+          "c": "Incorrect. Requiring contractor clarification on undefined symbols is a professional error that can lead to mistakes.",
+          "d": "Incorrect. Even standard symbols should be briefly defined in a legend to ensure clarity.",
+          "correct": "Architectural drawings must include a legend defining all symbols. Undefined symbols create confusion and may lead to construction errors, delays, and code violations. A clear legend ensures that all parties (contractors, inspectors, engineers) understand the drawing intent without ambiguity.",
+          "takeaway": "Always include a legend on drawing sheets that defines all symbols, abbreviations, and material notations. This is a professional requirement and ensures drawing clarity and construction accuracy."
+        },
+        "explanation": null,
+        "code_citation": "Professional drawing standards; AIA guidelines",
+        "bloom_level": "apply",
+        "application_context": "code_interpretation",
+        "practice_context": [],
+        "difficulty": 0.7,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-DSGN-011-05-008",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:18.048561+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:42d2268d3ef25eeb200c7bcc81de7b24dbb45e4ef5f9c04dfffadd37fcbef20b"
+      },
+      "proposed": {
+        "explanation": "Incorrect. Symbols must be standardized and defined; undefined symbols create misunderstandings. Correct. You recognized the importance of comprehensive symbol definition. Incorrect. Requiring contractor clarification on undefined symbols is a professional error that can lead to mistakes. Incorrect. Even standard symbols should be briefly defined in a legend to ensure clarity. Architectural drawings must include a legend defining all symbols. Undefined symbols create confusion and may lead to construction errors, delays, and code violations. A clear legend ensures that all parties (contractors, inspectors, engineers) understand the drawing intent without ambiguity. Always include a legend on drawing sheets that defines all symbols, abbreviations, and material notations. This is a professional requirement and ensures drawing clarity and construction accuracy."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "38b20dde-4fbc-40e4-9899-e6bba8cbe035",
+      "article_id": "6bb0f186-b9f7-4da9-ba7b-05639f43d4cf",
+      "article_dir": ".ai/content-audit-export/articles/lea-prac-ctr-010-performance-bond-purpose-typical-amount-and-conditions-for-calling-the-bond--6bb0f186-b9f7-4da9-ba7b-05639f43d4cf",
+      "title": "lea-prac-ctr-010-performance-bond-purpose-typical-amount-and-conditions-for-calling-the-bond",
+      "baseline_hash": "sha256:5a77e9b4bb54829ed44398da9b056ceacb92fbac764da5f6596eb0f5e1f89f38",
+      "baseline": {
+        "question_id": "38b20dde-4fbc-40e4-9899-e6bba8cbe035",
+        "article_id": "6bb0f186-b9f7-4da9-ba7b-05639f43d4cf",
+        "topic_id": "83a0e222-a7d7-42dd-a7f3-1263a64cc19b",
+        "text": "What is a legitimate ground for calling a performance bond?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The contractor's bid price was higher than expected, which is not a valid reason for calling a performance bond."
+          },
+          {
+            "id": "b",
+            "text": "The contractor's failure to commence work within specified time or suspension of work without authorization"
+          },
+          {
+            "id": "c",
+            "text": "The owner changed the project budget, which does not justify calling a performance bond."
+          },
+          {
+            "id": "d",
+            "text": "The engineer made a design change, which is not a contractor's fault and thus not a valid ground."
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Confuses pricing dissatisfaction with performance default; high bids are not grounds for bond call.",
+          "c": "Budget changes by Owner are not contractor defaults; they do not justify bond call.",
+          "d": "Design changes are Owner-initiated, not contractor defaults; they do not justify bond call.",
+          "correct": "Legitimate grounds for bond call are material breaches: failure to start work timely, unauthorized work suspension, failure to maintain schedule, or project abandonment.",
+          "takeaway": "Bond call requires material breach: failure to start, unauthorized suspension, or abandonment."
+        },
+        "explanation": null,
+        "code_citation": "UAP Doc 301",
+        "bloom_level": "understand",
+        "application_context": "client_scenario",
+        "practice_context": [],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-PRAC-CTR-010-005",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:47.526003+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:5a77e9b4bb54829ed44398da9b056ceacb92fbac764da5f6596eb0f5e1f89f38"
+      },
+      "proposed": {
+        "explanation": "Confuses pricing dissatisfaction with performance default; high bids are not grounds for bond call. Budget changes by Owner are not contractor defaults; they do not justify bond call. Design changes are Owner-initiated, not contractor defaults; they do not justify bond call. Legitimate grounds for bond call are material breaches: failure to start work timely, unauthorized work suspension, failure to maintain schedule, or project abandonment. Bond call requires material breach: failure to start, unauthorized suspension, or abandonment."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "a6275c53-fecc-499a-be58-71003916d6a7",
+      "article_id": "c4eb5745-a35a-4c85-94d2-e7d687a40278",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-007-05-core-concept--c4eb5745-a35a-4c85-94d2-e7d687a40278",
+      "title": "lea-matl-007-05-core-concept",
+      "baseline_hash": "sha256:3f50ec96531bce269fb4503627e7d077f821c3e90470a0126862a7d8c65af4e7",
+      "baseline": {
+        "question_id": "a6275c53-fecc-499a-be58-71003916d6a7",
+        "article_id": "c4eb5745-a35a-4c85-94d2-e7d687a40278",
+        "topic_id": "0f7f1d56-375a-4089-a289-4dddba8f04e1",
+        "text": "Which three types of schedules are commonly found in interior finish documentation?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A) Paint, tile, and wood schedules"
+          },
+          {
+            "id": "b",
+            "text": "B) Room finish, door, and window schedules"
+          },
+          {
+            "id": "c",
+            "text": "C) Exterior, interior, and basement schedules"
+          },
+          {
+            "id": "d",
+            "text": "D) Floor, wall, and ceiling schedules"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Material type (paint, tile, wood) is covered within schedules, not as separate schedule types.",
+          "c": "Exterior/interior/basement is a location split; schedules are organized by room number, not location.",
+          "d": "Floor/wall/ceiling are finish elements listed within a single room finish schedule.",
+          "correct": "Room finish schedules (walls/floors/ceilings), door schedules (type/hardware/finish), and window schedules (frame/glass/size) are the three standard schedule types in construction docs.",
+          "takeaway": "Three standard schedules: room finishes, doors, windows. Each specifies products, sizes, and details. Memorize the structure."
+        },
+        "explanation": null,
+        "code_citation": "CSI MasterFormat; AIA construction document standards",
+        "bloom_level": "remember",
+        "application_context": "recall",
+        "practice_context": [],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-MATL-007-05-002",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:27.970051+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:3f50ec96531bce269fb4503627e7d077f821c3e90470a0126862a7d8c65af4e7"
+      },
+      "proposed": {
+        "explanation": "Material type (paint, tile, wood) is covered within schedules, not as separate schedule types. Exterior/interior/basement is a location split; schedules are organized by room number, not location. Floor/wall/ceiling are finish elements listed within a single room finish schedule. Room finish schedules (walls/floors/ceilings), door schedules (type/hardware/finish), and window schedules (frame/glass/size) are the three standard schedule types in construction docs. Three standard schedules: room finishes, doors, windows. Each specifies products, sizes, and details. Memorize the structure."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "90603524-c5ac-4738-87d6-ba1f3afc8491",
+      "article_id": "c4eb5745-a35a-4c85-94d2-e7d687a40278",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-007-05-core-concept--c4eb5745-a35a-4c85-94d2-e7d687a40278",
+      "title": "lea-matl-007-05-core-concept",
+      "baseline_hash": "sha256:9371dc61b7b31c7e6e9c72ef5f247fcc9ee5e7a39109b6caa06cb28823c1930e",
+      "baseline": {
+        "question_id": "90603524-c5ac-4738-87d6-ba1f3afc8491",
+        "article_id": "c4eb5745-a35a-4c85-94d2-e7d687a40278",
+        "topic_id": "0f7f1d56-375a-4089-a289-4dddba8f04e1",
+        "text": "A multi-story residential building schedules different paint colors for Units on the same floor (Unit 201: Boysen #B150; Unit 301: 'light beige'). What specification and execution problems does this create?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A) No problem; units are customizable by owner preference, which may lead to inconsistencies in appearance and quality"
+          },
+          {
+            "id": "b",
+            "text": "B) Inconsistent product spec (one named, one vague) prevents bulk sourcing, creates quality variance, and allows field substitution on Unit 301"
+          },
+          {
+            "id": "c",
+            "text": "C) Color variation is expected in residential; no standard applies, which overlooks the importance of uniformity in multi-unit developments"
+          },
+          {
+            "id": "d",
+            "text": "D) Problem only if units are adjacent, which ignores potential issues with overall building aesthetics"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Residential standardization (not customization) is industry practice for cost and quality control.",
+          "c": "Color variation is not 'expected'; consistency is the standard.",
+          "d": "Adjacency is irrelevant; consistency applies to all same-type units.",
+          "correct": "Unit 201 is fully specified (brand, code); Unit 301 is vague. Vagueness on Unit 301 allows contractor substitution, color mismatch, and quality variance. Bulk purchasing is impossible with mixed specs. Standard practice: all standard units use identical finishes; custom finishes are documented separately with cost tracking.",
+          "takeaway": "Standardize finishes for like spaces. Custom finishes are exceptions, documented separately with cost approval. Avoid mix of specific and vague specs."
+        },
+        "explanation": null,
+        "code_citation": "Residential project best practice; cost control",
+        "bloom_level": "analyze",
+        "application_context": "code_interpretation",
+        "practice_context": [],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-MATL-007-05-008",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:27.970051+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:9371dc61b7b31c7e6e9c72ef5f247fcc9ee5e7a39109b6caa06cb28823c1930e"
+      },
+      "proposed": {
+        "explanation": "Residential standardization (not customization) is industry practice for cost and quality control. Color variation is not 'expected'; consistency is the standard. Adjacency is irrelevant; consistency applies to all same-type units. Unit 201 is fully specified (brand, code); Unit 301 is vague. Vagueness on Unit 301 allows contractor substitution, color mismatch, and quality variance. Bulk purchasing is impossible with mixed specs. Standard practice: all standard units use identical finishes; custom finishes are documented separately with cost tracking. Standardize finishes for like spaces. Custom finishes are exceptions, documented separately with cost approval. Avoid mix of specific and vague specs."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "8017690c-a126-45aa-b148-efabe533cf01",
+      "article_id": "f481f8cd-bb99-45b9-9183-4db41848e23d",
+      "article_dir": ".ai/content-audit-export/articles/lea-util-003-06-the-distribution-hierarchy--f481f8cd-bb99-45b9-9183-4db41848e23d",
+      "title": "lea-util-003-06-the-distribution-hierarchy",
+      "baseline_hash": "sha256:b0eb3bdeaab57b25552b62c8169354db6be9203dff55b9767efd1cda878cfa50",
+      "baseline": {
+        "question_id": "8017690c-a126-45aa-b148-efabe533cf01",
+        "article_id": "f481f8cd-bb99-45b9-9183-4db41848e23d",
+        "topic_id": "a53ac3e6-17e1-4233-a255-28c633d24a4d",
+        "text": "A factory improves its power factor from 0.80 to 0.92 using a capacitor bank. The connected load is 150 kW. Using tan 36.87° ≈ 0.75 for 0.80 PF and tan 23.07° ≈ 0.43 for 0.92 PF, calculate the required capacitor bank rating in kVAR.",
+        "options": [
+          {
+            "id": "a",
+            "text": "A. 24 kVAR"
+          },
+          {
+            "id": "b",
+            "text": "B. 36 kVAR"
+          },
+          {
+            "id": "c",
+            "text": "C. 48 kVAR"
+          },
+          {
+            "id": "d",
+            "text": "D. 60 kVAR"
+          }
+        ],
+        "correct_option_id": "c",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "24 kVAR is only half the required correction and leaves the facility below acceptable PF.",
+          "b": "36 kVAR provides insufficient correction; the facility would remain near 0.85 PF.",
+          "d": "60 kVAR over-corrects and may swing the power factor into the leading region, creating utility penalties.",
+          "correct": "kVAR = kW × (tan θ₁ − tan θ₂) = 150 × (0.75 − 0.43) = 150 × 0.32 = 48 kVAR. This capacitor bank rating restores the facility to the target 0.92 PF and avoids Meralco penalties.",
+          "takeaway": "Power factor correction calculations require precise angle (θ) values from PF tables. Over-correction or under-correction both incur utility penalties; the goal is 0.95–0.99 lagging."
+        },
+        "explanation": null,
+        "code_citation": "PEC Part 1 (General Provisions); Power Factor Correction Design",
+        "bloom_level": "apply",
+        "application_context": "code_interpretation",
+        "practice_context": [],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-UTIL-003-06-017",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:58.533411+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:b0eb3bdeaab57b25552b62c8169354db6be9203dff55b9767efd1cda878cfa50"
+      },
+      "proposed": {
+        "explanation": "24 kVAR is only half the required correction and leaves the facility below acceptable PF. 36 kVAR provides insufficient correction; the facility would remain near 0.85 PF. 60 kVAR over-corrects and may swing the power factor into the leading region, creating utility penalties. kVAR = kW × (tan θ₁ − tan θ₂) = 150 × (0.75 − 0.43) = 150 × 0.32 = 48 kVAR. This capacitor bank rating restores the facility to the target 0.92 PF and avoids Meralco penalties. Power factor correction calculations require precise angle (θ) values from PF tables. Over-correction or under-correction both incur utility penalties; the goal is 0.95–0.99 lagging."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "273ebcf1-7349-4746-bb09-6eff40efc4a0",
+      "article_id": "f481f8cd-bb99-45b9-9183-4db41848e23d",
+      "article_dir": ".ai/content-audit-export/articles/lea-util-003-06-the-distribution-hierarchy--f481f8cd-bb99-45b9-9183-4db41848e23d",
+      "title": "lea-util-003-06-the-distribution-hierarchy",
+      "baseline_hash": "sha256:687a0dbd66e76fe164d82f254d6a6f0f78adfea0af3b2876a624d4c103204dec",
+      "baseline": {
+        "question_id": "273ebcf1-7349-4746-bb09-6eff40efc4a0",
+        "article_id": "f481f8cd-bb99-45b9-9183-4db41848e23d",
+        "topic_id": "a53ac3e6-17e1-4233-a255-28c633d24a4d",
+        "text": "A 300 kW load with 0.85 power factor and 0.80 demand factor requires transformer sizing. What is the minimum kVA rating to select? (Select the next standard transformer size: 15, 30, 50, 75, 100, 150, 200, 300, 500 kVA)",
+        "options": [
+          {
+            "id": "a",
+            "text": "A. 300 kVA"
+          },
+          {
+            "id": "b",
+            "text": "B. 350 kVA (non-standard)"
+          },
+          {
+            "id": "c",
+            "text": "C. 500 kVA"
+          },
+          {
+            "id": "d",
+            "text": "D. 400 kVA (non-standard)"
+          }
+        ],
+        "correct_option_id": "c",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "300 kVA is below calculated 282.35 kVA; marginal selection that ignores future growth.",
+          "b": "350 kVA is not a standard transformer rating; must select from standard sizes.",
+          "d": "400 kVA is not a standard rating in the Philippine transformer market.",
+          "correct": "Calculation: Demand Load = 300 kW × 0.80 = 240 kW. kVA = 240 ÷ 0.85 = 282.35 kVA. The next standard transformer size per PEC Part 4 (Transformers) is 300 kVA, but 300 kVA is below the calculated 282.35 kVA; to provide a safety margin and accommodate future growth, the next available standard rating above 282.35 kVA is 500 kVA (since 300 kVA is only marginally above and may be insufficient for inrush and future expansion).",
+          "takeaway": "Transformer sizing must account for both demand factors and power factor, then select from standard sizes (PEC Part 4). Always round up to accommodate growth and inrush current."
+        },
+        "explanation": null,
+        "code_citation": "PEC Part 4 (Transformers); Part 2, Article 2.6.2 (Feeder Sizing)",
+        "bloom_level": "understand",
+        "application_context": "code_interpretation",
+        "practice_context": [],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-UTIL-003-06-013",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:58.533411+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:687a0dbd66e76fe164d82f254d6a6f0f78adfea0af3b2876a624d4c103204dec"
+      },
+      "proposed": {
+        "explanation": "300 kVA is below calculated 282.35 kVA; marginal selection that ignores future growth. 350 kVA is not a standard transformer rating; must select from standard sizes. 400 kVA is not a standard rating in the Philippine transformer market. Calculation: Demand Load = 300 kW × 0.80 = 240 kW. kVA = 240 ÷ 0.85 = 282.35 kVA. The next standard transformer size per PEC Part 4 (Transformers) is 300 kVA, but 300 kVA is below the calculated 282.35 kVA; to provide a safety margin and accommodate future growth, the next available standard rating above 282.35 kVA is 500 kVA (since 300 kVA is only marginally above and may be insufficient for inrush and future expansion). Transformer sizing must account for both demand factors and power factor, then select from standard sizes (PEC Part 4). Always round up to accommodate growth and inrush current."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "f2635fcf-8d8f-4494-8953-636f287e445d",
+      "article_id": "f481f8cd-bb99-45b9-9183-4db41848e23d",
+      "article_dir": ".ai/content-audit-export/articles/lea-util-003-06-the-distribution-hierarchy--f481f8cd-bb99-45b9-9183-4db41848e23d",
+      "title": "lea-util-003-06-the-distribution-hierarchy",
+      "baseline_hash": "sha256:24e2fdb1f8a2f0e9324fa33ff95ce9200d2469eb7992a039b75c3953bcb3d52e",
+      "baseline": {
+        "question_id": "f2635fcf-8d8f-4494-8953-636f287e445d",
+        "article_id": "f481f8cd-bb99-45b9-9183-4db41848e23d",
+        "topic_id": "a53ac3e6-17e1-4233-a255-28c633d24a4d",
+        "text": "In the voltage drop formula Vd = (√3 × K × I × L) / CM for three-phase circuits, what does the factor √3 (1.732) represent?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A. The power factor correction multiplier, which adjusts for phase angle differences"
+          },
+          {
+            "id": "b",
+            "text": "B. The three-phase voltage relationship (line-to-line)"
+          },
+          {
+            "id": "c",
+            "text": "C. The reactive power component, which accounts for non-working power in the system"
+          },
+          {
+            "id": "d",
+            "text": "D. The frequency compensation factor at 60 Hz, ensuring stability across different loads"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Power factor correction uses tan θ calculations, not √3 in the basic voltage drop formula.",
+          "c": "Reactive power (kVAR) is calculated separately; √3 is purely a geometric voltage relationship.",
+          "d": "60 Hz frequency is reflected in the K constant (10.8), not separately in √3.",
+          "correct": "In three-phase AC circuits, the voltage between line and neutral involves the √3 relationship. The factor 1.732 accounts for the phase angle relationship in three-phase voltage drop calculations.",
+          "takeaway": "The √3 multiplier is essential for three-phase voltage drop calculations and distinguishes 3-phase from single-phase feeder design."
+        },
+        "explanation": null,
+        "code_citation": "PEC Part 2, Article 2.5.4, Electrical Distribution System Design",
+        "bloom_level": "remember",
+        "application_context": "recall",
+        "practice_context": [],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-UTIL-003-06-012",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:58.533411+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:24e2fdb1f8a2f0e9324fa33ff95ce9200d2469eb7992a039b75c3953bcb3d52e"
+      },
+      "proposed": {
+        "explanation": "Power factor correction uses tan θ calculations, not √3 in the basic voltage drop formula. Reactive power (kVAR) is calculated separately; √3 is purely a geometric voltage relationship. 60 Hz frequency is reflected in the K constant (10.8), not separately in √3. In three-phase AC circuits, the voltage between line and neutral involves the √3 relationship. The factor 1.732 accounts for the phase angle relationship in three-phase voltage drop calculations. The √3 multiplier is essential for three-phase voltage drop calculations and distinguishes 3-phase from single-phase feeder design."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "2377a61d-bd13-4479-b7e1-dd0205a27870",
+      "article_id": "8b263a7c-5e3e-4157-a18b-146f5b12f521",
+      "article_dir": ".ai/content-audit-export/articles/lea-prac-frm-014-bim-in-philippine-architectural-practice-status-obligations-and-practice-implicatio--8b263a7c-5e3e-4157-a18b-146f5b12f521",
+      "title": "lea-prac-frm-014-bim-in-philippine-architectural-practice-status-obligations-and-practice-implicatio",
+      "baseline_hash": "sha256:14ecb9359315c2b7257ff16ba53750d0201433c89b9f9a6fbb01e56376c941c3",
+      "baseline": {
+        "question_id": "2377a61d-bd13-4479-b7e1-dd0205a27870",
+        "article_id": "8b263a7c-5e3e-4157-a18b-146f5b12f521",
+        "topic_id": "8a224153-5edd-42d6-ba1c-6c23dca59de5",
+        "text": "What should architects do regarding CPD and professional development as BIM adoption increases in Philippine practice?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Ignore BIM training, as it is not a mandatory requirement for architectural practice in the Philippines"
+          },
+          {
+            "id": "b",
+            "text": "Pursue specialized CPD in BIM methodologies, software, modeling standards, and coordination protocols to stay competitive"
+          },
+          {
+            "id": "c",
+            "text": "Only senior architects need training, as they are the ones responsible for overseeing BIM projects"
+          },
+          {
+            "id": "d",
+            "text": "BIM knowledge is not important for practice, as traditional methods are sufficient for most projects"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Ignoring BIM training risks loss of competitive advantage and client acceptance.",
+          "c": "All architectural staff benefit from BIM training; project teams require consistent competency.",
+          "d": "BIM is increasingly critical for government and large private projects.",
+          "correct": "As client expectations and competitive requirements shift toward BIM, architects must pursue CPD in software, modeling standards, coordination workflows, and best practices.",
+          "takeaway": "Architects must pursue BIM-focused CPD in methodologies, software, standards, and coordination to maintain competitive capability."
+        },
+        "explanation": null,
+        "code_citation": "RA 9266",
+        "bloom_level": "analyze",
+        "application_context": "code_interpretation",
+        "practice_context": [],
+        "difficulty": 0.9,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-PRAC-FRM-014-010",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:48.361702+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:14ecb9359315c2b7257ff16ba53750d0201433c89b9f9a6fbb01e56376c941c3"
+      },
+      "proposed": {
+        "explanation": "Ignoring BIM training risks loss of competitive advantage and client acceptance. All architectural staff benefit from BIM training; project teams require consistent competency. BIM is increasingly critical for government and large private projects. As client expectations and competitive requirements shift toward BIM, architects must pursue CPD in software, modeling standards, coordination workflows, and best practices. Architects must pursue BIM-focused CPD in methodologies, software, standards, and coordination to maintain competitive capability."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "c446f74e-be99-486a-af3e-7c119351bf45",
+      "article_id": "8b263a7c-5e3e-4157-a18b-146f5b12f521",
+      "article_dir": ".ai/content-audit-export/articles/lea-prac-frm-014-bim-in-philippine-architectural-practice-status-obligations-and-practice-implicatio--8b263a7c-5e3e-4157-a18b-146f5b12f521",
+      "title": "lea-prac-frm-014-bim-in-philippine-architectural-practice-status-obligations-and-practice-implicatio",
+      "baseline_hash": "sha256:d140e33c8b1677596e446a2bf8a05f78fa4b28b2c77cd55b44597c95e6732d3a",
+      "baseline": {
+        "question_id": "c446f74e-be99-486a-af3e-7c119351bf45",
+        "article_id": "8b263a7c-5e3e-4157-a18b-146f5b12f521",
+        "topic_id": "8a224153-5edd-42d6-ba1c-6c23dca59de5",
+        "text": "What does LOD 300 represent in a BIM project?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Conceptual design only with massing studies and basic spatial relationships"
+          },
+          {
+            "id": "b",
+            "text": "Design development phase with detailed elements"
+          },
+          {
+            "id": "c",
+            "text": "Construction documents with precise specifications and fabrication details"
+          },
+          {
+            "id": "d",
+            "text": "As-built documentation reflecting actual constructed conditions"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "LOD 100 is conceptual design; LOD 300 is more detailed.",
+          "c": "LOD 400 is construction documents; LOD 300 precedes it with less specification detail.",
+          "d": "As-built is post-construction; LOD 300 is design-phase documentation.",
+          "correct": "LOD 300 represents the design development phase with detailed element geometries and parameters; LOD 400 is construction documents.",
+          "takeaway": "LOD 300 is the design development phase with detailed model elements; LOD 400 is construction documents."
+        },
+        "explanation": null,
+        "code_citation": "RA 9266",
+        "bloom_level": "understand",
+        "application_context": "code_interpretation",
+        "practice_context": [],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-PRAC-FRM-014-004",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:48.361702+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:d140e33c8b1677596e446a2bf8a05f78fa4b28b2c77cd55b44597c95e6732d3a"
+      },
+      "proposed": {
+        "explanation": "LOD 100 is conceptual design; LOD 300 is more detailed. LOD 400 is construction documents; LOD 300 precedes it with less specification detail. As-built is post-construction; LOD 300 is design-phase documentation. LOD 300 represents the design development phase with detailed element geometries and parameters; LOD 400 is construction documents. LOD 300 is the design development phase with detailed model elements; LOD 400 is construction documents."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "accb394f-a2c5-41bb-b900-833abe2749af",
+      "article_id": "8b263a7c-5e3e-4157-a18b-146f5b12f521",
+      "article_dir": ".ai/content-audit-export/articles/lea-prac-frm-014-bim-in-philippine-architectural-practice-status-obligations-and-practice-implicatio--8b263a7c-5e3e-4157-a18b-146f5b12f521",
+      "title": "lea-prac-frm-014-bim-in-philippine-architectural-practice-status-obligations-and-practice-implicatio",
+      "baseline_hash": "sha256:5d85d35e30dcc953a6d88805aa8d89f1bac5d5c6810c710334d9974d97e03ad1",
+      "baseline": {
+        "question_id": "accb394f-a2c5-41bb-b900-833abe2749af",
+        "article_id": "8b263a7c-5e3e-4157-a18b-146f5b12f521",
+        "topic_id": "8a224153-5edd-42d6-ba1c-6c23dca59de5",
+        "text": "Is BIM adoption currently mandated by Philippine law or building code?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Yes, fully mandated for all types of construction projects, including both public and private sectors, without exception"
+          },
+          {
+            "id": "b",
+            "text": "Yes, but only for government projects that exceed a certain budget threshold or involve complex infrastructure"
+          },
+          {
+            "id": "c",
+            "text": "No, but client expectations and competitive advantage are driving adoption"
+          },
+          {
+            "id": "d",
+            "text": "No, and it will never be required as it is considered too costly and complex for standard practice"
+          }
+        ],
+        "correct_option_id": "c",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "BIM adoption is not yet mandated by Philippine law or building code.",
+          "b": "No government mandate exists; adoption is client-driven, not statutory.",
+          "d": "Future mandates are possible as global standards evolve and client expectations shift.",
+          "correct": "BIM is not legally mandated in the Philippines, but client expectations (especially government and large developers) and competitive advantage pressure architects to adopt it.",
+          "takeaway": "BIM is not mandatory in the Philippines but is increasingly expected by clients and required for competitive advantage."
+        },
+        "explanation": null,
+        "code_citation": "RA 9266",
+        "bloom_level": "remember",
+        "application_context": "code_interpretation",
+        "practice_context": [],
+        "difficulty": 0.3,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-PRAC-FRM-014-002",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:48.361702+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:5d85d35e30dcc953a6d88805aa8d89f1bac5d5c6810c710334d9974d97e03ad1"
+      },
+      "proposed": {
+        "explanation": "BIM adoption is not yet mandated by Philippine law or building code. No government mandate exists; adoption is client-driven, not statutory. Future mandates are possible as global standards evolve and client expectations shift. BIM is not legally mandated in the Philippines, but client expectations (especially government and large developers) and competitive advantage pressure architects to adopt it. BIM is not mandatory in the Philippines but is increasingly expected by clients and required for competitive advantage."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "acf347c6-3fb0-4cfe-be9e-1c3a48a489dd",
+      "article_id": "8b263a7c-5e3e-4157-a18b-146f5b12f521",
+      "article_dir": ".ai/content-audit-export/articles/lea-prac-frm-014-bim-in-philippine-architectural-practice-status-obligations-and-practice-implicatio--8b263a7c-5e3e-4157-a18b-146f5b12f521",
+      "title": "lea-prac-frm-014-bim-in-philippine-architectural-practice-status-obligations-and-practice-implicatio",
+      "baseline_hash": "sha256:6cf9208dd3c46d3c29e9c059965ae6a4f2b08312db10636859ed40e0d3151dc8",
+      "baseline": {
+        "question_id": "acf347c6-3fb0-4cfe-be9e-1c3a48a489dd",
+        "article_id": "8b263a7c-5e3e-4157-a18b-146f5b12f521",
+        "topic_id": "8a224153-5edd-42d6-ba1c-6c23dca59de5",
+        "text": "What is Building Information Modeling (BIM)?",
+        "options": [
+          {
+            "id": "a",
+            "text": "2D drawing software used primarily for drafting and basic design visualization"
+          },
+          {
+            "id": "b",
+            "text": "digital methodology that creates a unified, data-rich model of a building's design, construction, and operation"
+          },
+          {
+            "id": "c",
+            "text": "cost estimation tool only, providing basic financial projections without detailed design integration"
+          },
+          {
+            "id": "d",
+            "text": "marketing technique aimed at promoting architectural services and enhancing client engagement"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Confuses BIM with CAD; BIM is 3D/multidimensional with embedded data, not 2D.",
+          "c": "Overrestricts BIM to cost tools; BIM serves coordination, visualization, and operational purposes beyond cost.",
+          "d": "BIM is a technical methodology, not a marketing approach.",
+          "correct": "BIM is a comprehensive digital methodology creating an integrated, data-rich model used across design, construction, and facility management phases.",
+          "takeaway": "BIM is a digital methodology creating a unified, data-rich model spanning design, construction, and building operation."
+        },
+        "explanation": null,
+        "code_citation": "RA 10173",
+        "bloom_level": "remember",
+        "application_context": "recall",
+        "practice_context": [],
+        "difficulty": 0.3,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-PRAC-FRM-014-001",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:48.361702+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:6cf9208dd3c46d3c29e9c059965ae6a4f2b08312db10636859ed40e0d3151dc8"
+      },
+      "proposed": {
+        "explanation": "Confuses BIM with CAD; BIM is 3D/multidimensional with embedded data, not 2D. Overrestricts BIM to cost tools; BIM serves coordination, visualization, and operational purposes beyond cost. BIM is a technical methodology, not a marketing approach. BIM is a comprehensive digital methodology creating an integrated, data-rich model used across design, construction, and facility management phases. BIM is a digital methodology creating a unified, data-rich model spanning design, construction, and building operation."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "3a04b9b5-3645-4a16-87d0-231f2b14383c",
+      "article_id": "8b263a7c-5e3e-4157-a18b-146f5b12f521",
+      "article_dir": ".ai/content-audit-export/articles/lea-prac-frm-014-bim-in-philippine-architectural-practice-status-obligations-and-practice-implicatio--8b263a7c-5e3e-4157-a18b-146f5b12f521",
+      "title": "lea-prac-frm-014-bim-in-philippine-architectural-practice-status-obligations-and-practice-implicatio",
+      "baseline_hash": "sha256:6184904f04c90df9ccdb3748b4cffe91d61a4495d2f6b7d0aca35ca8efa8be74",
+      "baseline": {
+        "question_id": "3a04b9b5-3645-4a16-87d0-231f2b14383c",
+        "article_id": "8b263a7c-5e3e-4157-a18b-146f5b12f521",
+        "topic_id": "8a224153-5edd-42d6-ba1c-6c23dca59de5",
+        "text": "What is IFC in the context of BIM?",
+        "options": [
+          {
+            "id": "a",
+            "text": "proprietary software format used by specific vendors for exclusive interoperability"
+          },
+          {
+            "id": "b",
+            "text": "The international open standard for BIM file format, ensuring interoperability across different software platforms"
+          },
+          {
+            "id": "c",
+            "text": "cost-estimation method primarily used in preliminary project budgeting"
+          },
+          {
+            "id": "d",
+            "text": "quality control system designed to maintain standards in construction processes"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Proprietary formats (Revit, ArchiCAD native) are software-specific; IFC is vendor-neutral.",
+          "c": "Cost estimation is a BIM application, not a file format.",
+          "d": "Quality control is a process; IFC is a data exchange standard.",
+          "correct": "IFC (Industry Foundation Classes) is the international open standard enabling BIM model exchange across different software without vendor lock-in.",
+          "takeaway": "IFC is the international open standard for BIM file exchange, enabling interoperability across software platforms."
+        },
+        "explanation": null,
+        "code_citation": "RA 9266",
+        "bloom_level": "apply",
+        "application_context": "code_interpretation",
+        "practice_context": [],
+        "difficulty": 0.7,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-PRAC-FRM-014-007",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:48.361702+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:6184904f04c90df9ccdb3748b4cffe91d61a4495d2f6b7d0aca35ca8efa8be74"
+      },
+      "proposed": {
+        "explanation": "Proprietary formats (Revit, ArchiCAD native) are software-specific; IFC is vendor-neutral. Cost estimation is a BIM application, not a file format. Quality control is a process; IFC is a data exchange standard. IFC (Industry Foundation Classes) is the international open standard enabling BIM model exchange across different software without vendor lock-in. IFC is the international open standard for BIM file exchange, enabling interoperability across software platforms."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "1e23938b-0065-4600-bc49-7362278478db",
+      "article_id": "7a7a042f-4e5c-4a7b-90d1-93895e551c6d",
+      "article_dir": ".ai/content-audit-export/articles/lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters--7a7a042f-4e5c-4a7b-90d1-93895e551c6d",
+      "title": "lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters",
+      "baseline_hash": "sha256:f7ff9c9457c68db246e31d42edb9399d1f9492c32e32f82be2f7c8254324ee6c",
+      "baseline": {
+        "question_id": "1e23938b-0065-4600-bc49-7362278478db",
+        "article_id": "7a7a042f-4e5c-4a7b-90d1-93895e551c6d",
+        "topic_id": "d21977ed-fef2-47e5-8be1-ba2f34eb14a1",
+        "text": "What is the purpose of a policy deductible in professional indemnity insurance?",
+        "options": [
+          {
+            "id": "a",
+            "text": "To reduce the insurance company's administrative costs, thereby lowering premiums for the insured"
+          },
+          {
+            "id": "b",
+            "text": "To require the insured architect to bear part of the claim cost, typically the first specified amount"
+          },
+          {
+            "id": "c",
+            "text": "To extend the coverage period beyond the standard term, which is not typically the case"
+          },
+          {
+            "id": "d",
+            "text": "To limit the total coverage available, ensuring that claims do not exceed a certain threshold"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Deductibles serve risk allocation, not administrative efficiency; they require the insured to share in loss, not reduce the insurer's costs.",
+          "c": "Deductibles relate to claim cost-sharing, not coverage period; they do not extend or reduce policy duration.",
+          "d": "Deductibles are per-claim thresholds, not aggregate limits; the total coverage limit is separate from the deductible requirement.",
+          "correct": "A deductible requires the architect to pay the first portion of each claim, with the insurer covering costs beyond the deductible up to policy limits.",
+          "takeaway": "The deductible is the amount the architect pays out-of-pocket on each claim; the insurer covers the remainder up to policy limits."
+        },
+        "explanation": null,
+        "code_citation": "SPP Document 202 / General Practice Standards",
+        "bloom_level": "understand",
+        "application_context": "code_interpretation",
+        "practice_context": [],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-PRAC-CTR-013-005",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:47.526003+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:f7ff9c9457c68db246e31d42edb9399d1f9492c32e32f82be2f7c8254324ee6c"
+      },
+      "proposed": {
+        "explanation": "Deductibles serve risk allocation, not administrative efficiency; they require the insured to share in loss, not reduce the insurer's costs. Deductibles relate to claim cost-sharing, not coverage period; they do not extend or reduce policy duration. Deductibles are per-claim thresholds, not aggregate limits; the total coverage limit is separate from the deductible requirement. A deductible requires the architect to pay the first portion of each claim, with the insurer covering costs beyond the deductible up to policy limits. The deductible is the amount the architect pays out-of-pocket on each claim; the insurer covers the remainder up to policy limits."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "01ce6619-19a3-4abb-b25b-ca169a0829f0",
+      "article_id": "7a7a042f-4e5c-4a7b-90d1-93895e551c6d",
+      "article_dir": ".ai/content-audit-export/articles/lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters--7a7a042f-4e5c-4a7b-90d1-93895e551c6d",
+      "title": "lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters",
+      "baseline_hash": "sha256:49ac65de9d092eaea24da9c47cdb47cf030ad15cfbe0016c4be3e27a8f025c46",
+      "baseline": {
+        "question_id": "01ce6619-19a3-4abb-b25b-ca169a0829f0",
+        "article_id": "7a7a042f-4e5c-4a7b-90d1-93895e551c6d",
+        "topic_id": "d21977ed-fef2-47e5-8be1-ba2f34eb14a1",
+        "text": "Who can bring claims covered by the architect's professional indemnity insurance?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Only the owner of the project"
+          },
+          {
+            "id": "b",
+            "text": "Only the contractor"
+          },
+          {
+            "id": "c",
+            "text": "Owners, contractors, consultants, and third parties who suffer damage due to the architect's negligence"
+          },
+          {
+            "id": "d",
+            "text": "Only government regulatory agencies"
+          }
+        ],
+        "correct_option_id": "c",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Incorrectly restricts coverage to the owner; professional indemnity protects against claims from contractors, consultants, and third parties as well.",
+          "b": "Incorrectly restricts coverage to contractors only; the policy covers claims from owners, third parties, and consultants as well as contractors.",
+          "d": "Misunderstands claimants; professional indemnity insurance covers claims from parties who suffered damage, not regulatory agencies.",
+          "correct": "Professional indemnity insurance covers claims from multiple parties—owners, contractors, consultants, and third parties—injured by the architect's professional failures.",
+          "takeaway": "Professional indemnity insurance covers claims from any party harmed by the architect's negligence, not just the owner."
+        },
+        "explanation": null,
+        "code_citation": "SPP Document 202 / General Practice Standards",
+        "bloom_level": "remember",
+        "application_context": "code_interpretation",
+        "practice_context": [],
+        "difficulty": 0.3,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-PRAC-CTR-013-002",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:47.526003+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:49ac65de9d092eaea24da9c47cdb47cf030ad15cfbe0016c4be3e27a8f025c46"
+      },
+      "proposed": {
+        "explanation": "Incorrectly restricts coverage to the owner; professional indemnity protects against claims from contractors, consultants, and third parties as well. Incorrectly restricts coverage to contractors only; the policy covers claims from owners, third parties, and consultants as well as contractors. Misunderstands claimants; professional indemnity insurance covers claims from parties who suffered damage, not regulatory agencies. Professional indemnity insurance covers claims from multiple parties—owners, contractors, consultants, and third parties—injured by the architect's professional failures. Professional indemnity insurance covers claims from any party harmed by the architect's negligence, not just the owner."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "f8db0a13-b15a-445f-a317-93ac760f7e34",
+      "article_id": "7a7a042f-4e5c-4a7b-90d1-93895e551c6d",
+      "article_dir": ".ai/content-audit-export/articles/lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters--7a7a042f-4e5c-4a7b-90d1-93895e551c6d",
+      "title": "lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters",
+      "baseline_hash": "sha256:52f4d7d0b70b7d2a99eaef5d9d5cc0a322476378d15fcd1eda52425ffb5ddf06",
+      "baseline": {
+        "question_id": "f8db0a13-b15a-445f-a317-93ac760f7e34",
+        "article_id": "7a7a042f-4e5c-4a7b-90d1-93895e551c6d",
+        "topic_id": "d21977ed-fef2-47e5-8be1-ba2f34eb14a1",
+        "text": "What is an example of a professional error typically covered by professional indemnity insurance?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The contractor's failure to pay workers, which can lead to project delays and legal disputes"
+          },
+          {
+            "id": "b",
+            "text": "A design defect requiring costly remediation discovered after construction begins"
+          },
+          {
+            "id": "c",
+            "text": "Damage caused by acts of God, such as earthquakes or floods, which are typically excluded from coverage"
+          },
+          {
+            "id": "d",
+            "text": "The owner's decision to halt the project, resulting in financial losses for the contractor"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Confuses contractor obligations with architect professional services; the contractor's labor disputes are not architect professional failures.",
+          "c": "Acts of God are natural disasters beyond anyone's control and not covered by professional indemnity; insurance covers only the architect's professional errors.",
+          "d": "An owner's business decision to halt a project is not an architect professional error; professional indemnity covers only the architect's design, specification, or supervision failures.",
+          "correct": "Design errors, specification mistakes, and inadequate supervision are professional failures covered by the architect's professional indemnity insurance.",
+          "takeaway": "Design defects, specification errors, and inadequate supervision are architect professional failures covered by indemnity insurance."
+        },
+        "explanation": null,
+        "code_citation": "SPP Document 202 / General Practice Standards",
+        "bloom_level": "understand",
+        "application_context": "code_interpretation",
+        "practice_context": [],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-PRAC-CTR-013-003",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:47.526003+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:52f4d7d0b70b7d2a99eaef5d9d5cc0a322476378d15fcd1eda52425ffb5ddf06"
+      },
+      "proposed": {
+        "explanation": "Confuses contractor obligations with architect professional services; the contractor's labor disputes are not architect professional failures. Acts of God are natural disasters beyond anyone's control and not covered by professional indemnity; insurance covers only the architect's professional errors. An owner's business decision to halt a project is not an architect professional error; professional indemnity covers only the architect's design, specification, or supervision failures. Design errors, specification mistakes, and inadequate supervision are professional failures covered by the architect's professional indemnity insurance. Design defects, specification errors, and inadequate supervision are architect professional failures covered by indemnity insurance."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "9c53ef70-fbeb-4b3d-9f89-3206c581ab11",
+      "article_id": "7a7a042f-4e5c-4a7b-90d1-93895e551c6d",
+      "article_dir": ".ai/content-audit-export/articles/lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters--7a7a042f-4e5c-4a7b-90d1-93895e551c6d",
+      "title": "lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters",
+      "baseline_hash": "sha256:092cc90474a995c1c4162446ca107629fa7b6454b60edff51bf9d1755bba3f06",
+      "baseline": {
+        "question_id": "9c53ef70-fbeb-4b3d-9f89-3206c581ab11",
+        "article_id": "7a7a042f-4e5c-4a7b-90d1-93895e551c6d",
+        "topic_id": "d21977ed-fef2-47e5-8be1-ba2f34eb14a1",
+        "text": "What role does the insurance company play once a claim is reported?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The insurance company has no involvement in the claim defense"
+          },
+          {
+            "id": "b",
+            "text": "The insurance company assigns defense counsel and generally controls the defense strategy while the architect must cooperate fully"
+          },
+          {
+            "id": "c",
+            "text": "The insurance company always pays the claim immediately without investigation or any further delay"
+          },
+          {
+            "id": "d",
+            "text": "The architect determines the defense strategy independently without any input from the insurance company"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Misunderstands the insurer's role; the insurer takes an active role in claim investigation and defense strategy.",
+          "c": "Insurers do not pay claims immediately without investigation; they investigate to determine coverage and then defend at trial or settle.",
+          "d": "The architect does not control defense independently; the insurer controls the strategy and the architect must cooperate with the insurer's chosen approach.",
+          "correct": "Upon claim notice, the insurer typically assigns counsel and directs the defense, with the architect's obligation to cooperate fully with investigation and defense efforts.",
+          "takeaway": "The insurer controls the claim defense strategy and assigns counsel; the architect must fully cooperate but cannot unilaterally direct the defense."
+        },
+        "explanation": null,
+        "code_citation": "SPP Document 202 / General Practice Standards",
+        "bloom_level": "apply",
+        "application_context": "code_interpretation",
+        "practice_context": [],
+        "difficulty": 0.7,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-PRAC-CTR-013-007",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:47.526003+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:092cc90474a995c1c4162446ca107629fa7b6454b60edff51bf9d1755bba3f06"
+      },
+      "proposed": {
+        "explanation": "Misunderstands the insurer's role; the insurer takes an active role in claim investigation and defense strategy. Insurers do not pay claims immediately without investigation; they investigate to determine coverage and then defend at trial or settle. The architect does not control defense independently; the insurer controls the strategy and the architect must cooperate with the insurer's chosen approach. Upon claim notice, the insurer typically assigns counsel and directs the defense, with the architect's obligation to cooperate fully with investigation and defense efforts. The insurer controls the claim defense strategy and assigns counsel; the architect must fully cooperate but cannot unilaterally direct the defense."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "a3121d4d-bc77-4a38-bd2c-bfd9a732ddc8",
+      "article_id": "7a7a042f-4e5c-4a7b-90d1-93895e551c6d",
+      "article_dir": ".ai/content-audit-export/articles/lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters--7a7a042f-4e5c-4a7b-90d1-93895e551c6d",
+      "title": "lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters",
+      "baseline_hash": "sha256:60347c32f09619205b9b675ff96643e9143d9f3b3cfdd15e3c216f895df79d79",
+      "baseline": {
+        "question_id": "a3121d4d-bc77-4a38-bd2c-bfd9a732ddc8",
+        "article_id": "7a7a042f-4e5c-4a7b-90d1-93895e551c6d",
+        "topic_id": "d21977ed-fef2-47e5-8be1-ba2f34eb14a1",
+        "text": "What typical limits appear in a professional indemnity insurance policy?",
+        "options": [
+          {
+            "id": "a",
+            "text": "No limits; the insurer covers all claims regardless of amount, providing comprehensive protection for the insured"
+          },
+          {
+            "id": "b",
+            "text": "Per-claim limits and annual aggregate limits defining maximum coverage per incident and in total per policy period"
+          },
+          {
+            "id": "c",
+            "text": "Only a single limit for all claims combined, simplifying the policy structure but potentially limiting coverage"
+          },
+          {
+            "id": "d",
+            "text": "Limits are always negotiable and never fixed, allowing for flexibility in policy terms"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Unlimited coverage is unrealistic; insurers always set maximum exposure through per-claim and aggregate limits.",
+          "c": "Single-limit structures do not exist; policies distinguish between per-claim limits and aggregate annual limits to manage exposure.",
+          "d": "While some negotiation occurs, limits are not entirely flexible; policies establish fixed per-claim and aggregate amounts for the coverage period.",
+          "correct": "Professional indemnity policies specify per-occurrence limits (maximum per claim) and aggregate limits (maximum total coverage per policy period).",
+          "takeaway": "Professional indemnity policies have two limits: per-claim maximum and annual aggregate maximum—both caps on insurer exposure."
+        },
+        "explanation": null,
+        "code_citation": "SPP Document 202 / General Practice Standards",
+        "bloom_level": "apply",
+        "application_context": "code_interpretation",
+        "practice_context": [],
+        "difficulty": 0.7,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-PRAC-CTR-013-008",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:47.526003+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:60347c32f09619205b9b675ff96643e9143d9f3b3cfdd15e3c216f895df79d79"
+      },
+      "proposed": {
+        "explanation": "Unlimited coverage is unrealistic; insurers always set maximum exposure through per-claim and aggregate limits. Single-limit structures do not exist; policies distinguish between per-claim limits and aggregate annual limits to manage exposure. While some negotiation occurs, limits are not entirely flexible; policies establish fixed per-claim and aggregate amounts for the coverage period. Professional indemnity policies specify per-occurrence limits (maximum per claim) and aggregate limits (maximum total coverage per policy period). Professional indemnity policies have two limits: per-claim maximum and annual aggregate maximum—both caps on insurer exposure."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "92d70317-d9d8-44cd-8485-c081cb875e3a",
+      "article_id": "7a7a042f-4e5c-4a7b-90d1-93895e551c6d",
+      "article_dir": ".ai/content-audit-export/articles/lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters--7a7a042f-4e5c-4a7b-90d1-93895e551c6d",
+      "title": "lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters",
+      "baseline_hash": "sha256:23d0a882a1c11367139f69198029c2be5b480c3718e95c5d2e9c3b944fec31e8",
+      "baseline": {
+        "question_id": "92d70317-d9d8-44cd-8485-c081cb875e3a",
+        "article_id": "7a7a042f-4e5c-4a7b-90d1-93895e551c6d",
+        "topic_id": "d21977ed-fef2-47e5-8be1-ba2f34eb14a1",
+        "text": "What should an architect do immediately upon learning that a claim against their professional services is likely?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Attempt to settle the claim privately without informing the insurer"
+          },
+          {
+            "id": "b",
+            "text": "Wait to see if the claim actually materializes before notifying anyone"
+          },
+          {
+            "id": "c",
+            "text": "Promptly notify the insurer within required timeframes to preserve coverage"
+          },
+          {
+            "id": "d",
+            "text": "Assume the claim is too minor to require insurance involvement"
+          }
+        ],
+        "correct_option_id": "c",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Private settlement without insurer notice breaches the policy and forfeits coverage; the insurer controls the defense strategy.",
+          "b": "Waiting for claim materialization violates notice requirements; policies require notice of circumstances indicating a likely claim, not just actual claims.",
+          "d": "Assuming a claim is minor risks coverage denial; the architect must notify the insurer of all potential claims, regardless of perceived severity.",
+          "correct": "The architect must provide timely notice to the insurer when a claim arises or circumstances suggest a potential claim; failure to do so can result in coverage denial.",
+          "takeaway": "Immediate notice to the insurer is required to preserve coverage—late notice can void the claim even if coverage would otherwise apply."
+        },
+        "explanation": null,
+        "code_citation": "SPP Document 202 / General Practice Standards",
+        "bloom_level": "apply",
+        "application_context": "code_interpretation",
+        "practice_context": [],
+        "difficulty": 0.7,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-PRAC-CTR-013-006",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:47.526003+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:23d0a882a1c11367139f69198029c2be5b480c3718e95c5d2e9c3b944fec31e8"
+      },
+      "proposed": {
+        "explanation": "Private settlement without insurer notice breaches the policy and forfeits coverage; the insurer controls the defense strategy. Waiting for claim materialization violates notice requirements; policies require notice of circumstances indicating a likely claim, not just actual claims. Assuming a claim is minor risks coverage denial; the architect must notify the insurer of all potential claims, regardless of perceived severity. The architect must provide timely notice to the insurer when a claim arises or circumstances suggest a potential claim; failure to do so can result in coverage denial. Immediate notice to the insurer is required to preserve coverage—late notice can void the claim even if coverage would otherwise apply."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "d0c464f2-adfa-4861-ac0c-e3b468e98f09",
+      "article_id": "7a7a042f-4e5c-4a7b-90d1-93895e551c6d",
+      "article_dir": ".ai/content-audit-export/articles/lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters--7a7a042f-4e5c-4a7b-90d1-93895e551c6d",
+      "title": "lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters",
+      "baseline_hash": "sha256:6de302d48cd18e7a6ee096bdcb04d8f96ec6647a3ad4720d97fea238cf1a2a74",
+      "baseline": {
+        "question_id": "d0c464f2-adfa-4861-ac0c-e3b468e98f09",
+        "article_id": "7a7a042f-4e5c-4a7b-90d1-93895e551c6d",
+        "topic_id": "d21977ed-fef2-47e5-8be1-ba2f34eb14a1",
+        "text": "Why is professional indemnity insurance essential to architectural practice despite the architect's competence?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Competent architects never face claims, so the insurance is unnecessary, making it an optional expense"
+          },
+          {
+            "id": "b",
+            "text": "Even careful, competent architects can face claims for design inadequacies or supervision errors; a single major claim could bankrupt a firm without insurance protection"
+          },
+          {
+            "id": "c",
+            "text": "Insurance is only required by law, not for practical protection, and does not cover all risks"
+          },
+          {
+            "id": "d",
+            "text": "Insurance eliminates all risk to the architect, providing complete financial security"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Competence does not prevent claims; careful architects can still face claims from design inadequacies or supervision errors discovered later.",
+          "c": "Professional indemnity insurance provides essential practical protection against catastrophic financial loss, not merely legal compliance.",
+          "d": "Insurance does not eliminate all risk; it covers financial losses from claims but does not prevent claims from arising or eliminate reputational harm.",
+          "correct": "Even diligent architects face claims from design or supervision failures; professional indemnity insurance provides essential financial protection ensuring firm solvency despite major claims.",
+          "takeaway": "Even careful architects face claims; professional indemnity insurance is essential to survive a major claim without firm bankruptcy."
+        },
+        "explanation": null,
+        "code_citation": "SPP Document 202 / General Practice Standards",
+        "bloom_level": "analyze",
+        "application_context": "code_interpretation",
+        "practice_context": [],
+        "difficulty": 0.9,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-PRAC-CTR-013-010",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:47.526003+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:6de302d48cd18e7a6ee096bdcb04d8f96ec6647a3ad4720d97fea238cf1a2a74"
+      },
+      "proposed": {
+        "explanation": "Competence does not prevent claims; careful architects can still face claims from design inadequacies or supervision errors discovered later. Professional indemnity insurance provides essential practical protection against catastrophic financial loss, not merely legal compliance. Insurance does not eliminate all risk; it covers financial losses from claims but does not prevent claims from arising or eliminate reputational harm. Even diligent architects face claims from design or supervision failures; professional indemnity insurance provides essential financial protection ensuring firm solvency despite major claims. Even careful architects face claims; professional indemnity insurance is essential to survive a major claim without firm bankruptcy."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "a859ca44-02d2-4c4a-aa47-eb1531b59303",
+      "article_id": "f34aade8-a870-458c-9609-562419eb1238",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-008-03-core-concept--f34aade8-a870-458c-9609-562419eb1238",
+      "title": "lea-matl-008-03-core-concept",
+      "baseline_hash": "sha256:9ed9761a55a7c01595a8256cbce46a10f1f48f51137d1ecbf271e2e9c43c74b7",
+      "baseline": {
+        "question_id": "a859ca44-02d2-4c4a-aa47-eb1531b59303",
+        "article_id": "f34aade8-a870-458c-9609-562419eb1238",
+        "topic_id": "1d0f8105-574f-435a-854d-31c0364ac602",
+        "text": "What is the typical pull-out strength range for common nails driven into wood?",
+        "options": [
+          {
+            "id": "a",
+            "text": "10-25 lbf per inch"
+          },
+          {
+            "id": "b",
+            "text": "25-50 lbf per inch"
+          },
+          {
+            "id": "c",
+            "text": "100-200 lbf per inch"
+          },
+          {
+            "id": "d",
+            "text": "300-500 lbf per inch"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "10-25 lbf is too low for nails; this would be appropriate for finishing nails or very small fasteners.",
+          "c": "100-200 lbf per inch exceeds typical nail capacity.",
+          "d": "300-500 lbf per inch is the range for lag screws, not nails.",
+          "correct": "Common nails in wood provide approximately 25-50 lbf per inch of embedment, depending on wood density and nail diameter. This is relatively low compared to lag screws.",
+          "takeaway": "Nail pull-out (25-50 lbf/in) < lag screw pull-out (300-500 lbf/in). Use lag screws for heavy loads."
+        },
+        "explanation": null,
+        "code_citation": "NDS for Wood Construction Table 12A (nail withdrawal design values)",
+        "bloom_level": "understand",
+        "application_context": "code_interpretation",
+        "practice_context": [],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-MATL-008-03-009",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:28.473222+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:9ed9761a55a7c01595a8256cbce46a10f1f48f51137d1ecbf271e2e9c43c74b7"
+      },
+      "proposed": {
+        "explanation": "10-25 lbf is too low for nails; this would be appropriate for finishing nails or very small fasteners. 100-200 lbf per inch exceeds typical nail capacity. 300-500 lbf per inch is the range for lag screws, not nails. Common nails in wood provide approximately 25-50 lbf per inch of embedment, depending on wood density and nail diameter. This is relatively low compared to lag screws. Nail pull-out (25-50 lbf/in) < lag screw pull-out (300-500 lbf/in). Use lag screws for heavy loads."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "2a53ef7b-88cb-4b1a-b4db-3fa74717f27e",
+      "article_id": "f34aade8-a870-458c-9609-562419eb1238",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-008-03-core-concept--f34aade8-a870-458c-9609-562419eb1238",
+      "title": "lea-matl-008-03-core-concept",
+      "baseline_hash": "sha256:39ae7c8987966c623e4273aab7e87b4da73080c67fdbddd718e849ea2f606d3b",
+      "baseline": {
+        "question_id": "2a53ef7b-88cb-4b1a-b4db-3fa74717f27e",
+        "article_id": "f34aade8-a870-458c-9609-562419eb1238",
+        "topic_id": "1d0f8105-574f-435a-854d-31c0364ac602",
+        "text": "What is the length of a 16d common nail?",
+        "options": [
+          {
+            "id": "a",
+            "text": "2.5 inches"
+          },
+          {
+            "id": "b",
+            "text": "3.0 inches"
+          },
+          {
+            "id": "c",
+            "text": "3.5 inches"
+          },
+          {
+            "id": "d",
+            "text": "4.0 inches"
+          }
+        ],
+        "correct_option_id": "c",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "2.5 inches is the length of a 16d finishing nail, which has a smaller diameter.",
+          "b": "3 inches is the length of a 10d common nail.",
+          "d": "4 inches is the length of a 20d common nail.",
+          "correct": "A 16d common nail is 3.5 inches long, the standard framing fastener specified in most construction documents.",
+          "takeaway": "Memorize key penny weight sizes: 10d = 3 in, 16d = 3.5 in (common); 16d = 2.5 in (finishing). Use ASTM F1667 tables for others."
+        },
+        "explanation": null,
+        "code_citation": "ASTM F1667 Nail Specifications",
+        "bloom_level": "understand",
+        "application_context": "recall",
+        "practice_context": [],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-MATL-008-03-001",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:28.473222+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:39ae7c8987966c623e4273aab7e87b4da73080c67fdbddd718e849ea2f606d3b"
+      },
+      "proposed": {
+        "explanation": "2.5 inches is the length of a 16d finishing nail, which has a smaller diameter. 3 inches is the length of a 10d common nail. 4 inches is the length of a 20d common nail. A 16d common nail is 3.5 inches long, the standard framing fastener specified in most construction documents. Memorize key penny weight sizes: 10d = 3 in, 16d = 3.5 in (common); 16d = 2.5 in (finishing). Use ASTM F1667 tables for others."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "ff360930-c8fc-4daa-b7ea-bbc16baf9828",
+      "article_id": "f34aade8-a870-458c-9609-562419eb1238",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-008-03-core-concept--f34aade8-a870-458c-9609-562419eb1238",
+      "title": "lea-matl-008-03-core-concept",
+      "baseline_hash": "sha256:90a76f3bd917af54f48f278ad2fc3b7e74adf931a8e77ccd06b290aad07115b8",
+      "baseline": {
+        "question_id": "ff360930-c8fc-4daa-b7ea-bbc16baf9828",
+        "article_id": "f34aade8-a870-458c-9609-562419eb1238",
+        "topic_id": "1d0f8105-574f-435a-854d-31c0364ac602",
+        "text": "What is the primary difference between a common nail and a finishing nail of the same penny weight (e.g., 16d)?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Common nails are longer; finishing nails are shorter, typically used for different applications"
+          },
+          {
+            "id": "b",
+            "text": "Common nails have a larger diameter and are used for framing; finishing nails have a smaller diameter and are used for trim."
+          },
+          {
+            "id": "c",
+            "text": "Common nails are steel; finishing nails are aluminum, which affects their use in different environments"
+          },
+          {
+            "id": "d",
+            "text": "Common nails are used for roofing; finishing nails are used for flooring, each suited to specific tasks"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "The length comparison is reversed; finishing nails are actually shorter for the same penny weight.",
+          "c": "Both are typically steel; material type is independent of nail classification.",
+          "d": "Neither classification is tied to specific applications like roofing or flooring.",
+          "correct": "Common nails (3.5 inches) have a larger diameter (0.162 inches) than finishing nails (2.5 inches, ~0.099 inches) of the same penny weight, providing greater holding power for framing but leaving larger holes unsuitable for visible trim.",
+          "takeaway": "Nail type (common vs. finishing) determines diameter and holding power, not application exclusively. Choose based on surface finish requirements."
+        },
+        "explanation": null,
+        "code_citation": "ASTM F1667 Nail Specifications",
+        "bloom_level": "understand",
+        "application_context": "recall",
+        "practice_context": [],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-MATL-008-03-002",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:28.473222+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:90a76f3bd917af54f48f278ad2fc3b7e74adf931a8e77ccd06b290aad07115b8"
+      },
+      "proposed": {
+        "explanation": "The length comparison is reversed; finishing nails are actually shorter for the same penny weight. Both are typically steel; material type is independent of nail classification. Neither classification is tied to specific applications like roofing or flooring. Common nails (3.5 inches) have a larger diameter (0.162 inches) than finishing nails (2.5 inches, ~0.099 inches) of the same penny weight, providing greater holding power for framing but leaving larger holes unsuitable for visible trim. Nail type (common vs. finishing) determines diameter and holding power, not application exclusively. Choose based on surface finish requirements."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "50dc43ed-973a-4b42-9144-dd4266489810",
+      "article_id": "f34aade8-a870-458c-9609-562419eb1238",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-008-03-core-concept--f34aade8-a870-458c-9609-562419eb1238",
+      "title": "lea-matl-008-03-core-concept",
+      "baseline_hash": "sha256:e693e406e4f2a03fb809756e56fe4109b16eaa4843fa8eff511a28752ecc4557",
+      "baseline": {
+        "question_id": "50dc43ed-973a-4b42-9144-dd4266489810",
+        "article_id": "f34aade8-a870-458c-9609-562419eb1238",
+        "topic_id": "1d0f8105-574f-435a-854d-31c0364ac602",
+        "text": "A coastal resort project in the Philippines specifies carbon steel bolts for exterior connections. What is the primary risk of this specification?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Carbon steel bolts are weaker than stainless steel bolts, which may lead to structural inadequacies in high-stress applications."
+          },
+          {
+            "id": "b",
+            "text": "Carbon steel bolts corrode rapidly in salt spray environments, reducing cross-sectional area and pull-out strength, and potentially causing structural failure."
+          },
+          {
+            "id": "c",
+            "text": "Carbon steel bolts cannot be used in seismic zones due to their inability to withstand lateral forces effectively."
+          },
+          {
+            "id": "d",
+            "text": "Carbon steel bolts are incompatible with aluminum frames, leading to galvanic corrosion and potential joint failure."
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Strength is not the issue; corrosion is. A corroded carbon steel bolt eventually fails under load.",
+          "c": "Carbon steel bolts are suitable for seismic zones if they are not corroding.",
+          "d": "Material compatibility is not the issue; corrosion is.",
+          "correct": "Carbon steel corrodes rapidly in salt spray, especially in coastal typhoon zones. Corrosion reduces the effective diameter and tensile strength, compromising structural reliability. Stainless steel (duplex or super-duplex) or hot-dip galvanized fasteners are required.",
+          "takeaway": "Coastal projects = stainless steel or hot-dip galvanized fasteners. Carbon steel will corrode and fail."
+        },
+        "explanation": null,
+        "code_citation": "PD 1096 Rule VII Sec. 714 (corrosion-resistant materials) and good practice",
+        "bloom_level": "apply",
+        "application_context": "code_interpretation",
+        "practice_context": [],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-MATL-008-03-008",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:28.473222+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:e693e406e4f2a03fb809756e56fe4109b16eaa4843fa8eff511a28752ecc4557"
+      },
+      "proposed": {
+        "explanation": "Strength is not the issue; corrosion is. A corroded carbon steel bolt eventually fails under load. Carbon steel bolts are suitable for seismic zones if they are not corroding. Material compatibility is not the issue; corrosion is. Carbon steel corrodes rapidly in salt spray, especially in coastal typhoon zones. Corrosion reduces the effective diameter and tensile strength, compromising structural reliability. Stainless steel (duplex or super-duplex) or hot-dip galvanized fasteners are required. Coastal projects = stainless steel or hot-dip galvanized fasteners. Carbon steel will corrode and fail."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "eebb183f-a0e6-4571-a8e9-3d8bd018878e",
+      "article_id": "f34aade8-a870-458c-9609-562419eb1238",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-008-03-core-concept--f34aade8-a870-458c-9609-562419eb1238",
+      "title": "lea-matl-008-03-core-concept",
+      "baseline_hash": "sha256:8fbb4521cc80f9926c8d927b35f082b8cf1232322579f7a986c37bb3572ed58c",
+      "baseline": {
+        "question_id": "eebb183f-a0e6-4571-a8e9-3d8bd018878e",
+        "article_id": "f34aade8-a870-458c-9609-562419eb1238",
+        "topic_id": "1d0f8105-574f-435a-854d-31c0364ac602",
+        "text": "What type of screw is designed to cut its own thread when driven into sheet metal?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Wood screw, typically used for joining wood pieces and not suitable for metal applications"
+          },
+          {
+            "id": "b",
+            "text": "Self-tapping screw (sheet metal screw)"
+          },
+          {
+            "id": "c",
+            "text": "Machine screw, which requires a pre-tapped hole or nut for installation"
+          },
+          {
+            "id": "d",
+            "text": "Lag screw, primarily used for heavy-duty wood applications and not for metal"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Wood screws have a coarse thread designed for timber, not metal.",
+          "c": "Machine screws are precision fasteners used with nuts or threaded holes, not for self-tapping applications.",
+          "d": "Lag screws are heavy-duty hex-head fasteners for timber or concrete, not sheet metal.",
+          "correct": "Self-tapping screws (or sheet metal screws) have a hardened point and fine thread that cuts through metal and creates a thread path as it is driven, eliminating the need for pre-drilling or tapping.",
+          "takeaway": "Self-tapping screws = sheet metal work; wood screws = timber; machine screws = with nuts; lag screws = heavy duty."
+        },
+        "explanation": null,
+        "code_citation": "ASTM F488 Self-Tapping Screw Specifications",
+        "bloom_level": "understand",
+        "application_context": "recall",
+        "practice_context": [],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-MATL-008-03-005",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:28.473222+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:8fbb4521cc80f9926c8d927b35f082b8cf1232322579f7a986c37bb3572ed58c"
+      },
+      "proposed": {
+        "explanation": "Wood screws have a coarse thread designed for timber, not metal. Machine screws are precision fasteners used with nuts or threaded holes, not for self-tapping applications. Lag screws are heavy-duty hex-head fasteners for timber or concrete, not sheet metal. Self-tapping screws (or sheet metal screws) have a hardened point and fine thread that cuts through metal and creates a thread path as it is driven, eliminating the need for pre-drilling or tapping. Self-tapping screws = sheet metal work; wood screws = timber; machine screws = with nuts; lag screws = heavy duty."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "b97f6b23-3213-4bff-831a-c1e687cfa0f0",
+      "article_id": "f34aade8-a870-458c-9609-562419eb1238",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-008-03-core-concept--f34aade8-a870-458c-9609-562419eb1238",
+      "title": "lea-matl-008-03-core-concept",
+      "baseline_hash": "sha256:f5422651e57764c42aaffdb35ab826c313646e0b2b61920aaffafc84b45a2c3a",
+      "baseline": {
+        "question_id": "b97f6b23-3213-4bff-831a-c1e687cfa0f0",
+        "article_id": "f34aade8-a870-458c-9609-562419eb1238",
+        "topic_id": "1d0f8105-574f-435a-854d-31c0364ac602",
+        "text": "What is the primary characteristic that distinguishes a carriage bolt from a hex bolt?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Carriage bolts are larger; hex bolts are smaller, typically used in different applications"
+          },
+          {
+            "id": "b",
+            "text": "Carriage bolts have a rounded head with a square neck to prevent rotation; hex bolts have a hexagonal head."
+          },
+          {
+            "id": "c",
+            "text": "Carriage bolts are made of stainless steel; hex bolts are carbon steel, which affects their corrosion resistance"
+          },
+          {
+            "id": "d",
+            "text": "Carriage bolts are used for structural steel; hex bolts are used for timber, based on their design and application"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Size is not the distinguishing feature; both types come in various sizes.",
+          "c": "Material type is independent of head shape; both types are available in carbon steel or stainless.",
+          "d": "Both types are used in timber and structural applications; head shape determines installation method, not application.",
+          "correct": "Carriage bolts have a rounded head and a square neck underneath that bites into the material, preventing rotation during installation. Hex bolts have a flat hexagonal head that requires a wrench for tightening.",
+          "takeaway": "Carriage bolt = rounded head + square neck (no wrench needed); hex bolt = hexagonal head (wrench required)."
+        },
+        "explanation": null,
+        "code_citation": "ASTM A307 and A325 Bolt Classification Standards",
+        "bloom_level": "understand",
+        "application_context": "recall",
+        "practice_context": [],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-MATL-008-03-007",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:28.473222+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:f5422651e57764c42aaffdb35ab826c313646e0b2b61920aaffafc84b45a2c3a"
+      },
+      "proposed": {
+        "explanation": "Size is not the distinguishing feature; both types come in various sizes. Material type is independent of head shape; both types are available in carbon steel or stainless. Both types are used in timber and structural applications; head shape determines installation method, not application. Carriage bolts have a rounded head and a square neck underneath that bites into the material, preventing rotation during installation. Hex bolts have a flat hexagonal head that requires a wrench for tightening. Carriage bolt = rounded head + square neck (no wrench needed); hex bolt = hexagonal head (wrench required)."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "b9b3fcdb-ba8c-4dc3-ae1b-5caa87c2f763",
+      "article_id": "f34aade8-a870-458c-9609-562419eb1238",
+      "article_dir": ".ai/content-audit-export/articles/lea-matl-008-03-core-concept--f34aade8-a870-458c-9609-562419eb1238",
+      "title": "lea-matl-008-03-core-concept",
+      "baseline_hash": "sha256:fec88e2be60f40bebb5e1ce529e4bf5977f23bae5f7df165d811030d1258ee05",
+      "baseline": {
+        "question_id": "b9b3fcdb-ba8c-4dc3-ae1b-5caa87c2f763",
+        "article_id": "f34aade8-a870-458c-9609-562419eb1238",
+        "topic_id": "1d0f8105-574f-435a-854d-31c0364ac602",
+        "text": "A timber roof rafter is being attached to a concrete foundation. The connection requires 5,000 lbf of pull-out strength. Assuming lag screws provide 400 lbf per inch of embedment (example values; verify per NDS/ACI for diameter/species), what is the minimum embedment depth required?",
+        "options": [
+          {
+            "id": "a",
+            "text": "5 inches, assuming no additional load factors are considered"
+          },
+          {
+            "id": "b",
+            "text": "10 inches, based on a conservative safety factor for seismic zones"
+          },
+          {
+            "id": "c",
+            "text": "12.5 inches"
+          },
+          {
+            "id": "d",
+            "text": "20 inches, accounting for potential future load increases"
+          }
+        ],
+        "correct_option_id": "c",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "5 inches provides only 2,000 lbf capacity (5 × 400).",
+          "b": "10 inches provides 4,000 lbf capacity (10 × 400).",
+          "d": "20 inches exceeds the requirement (20 × 400 = 8,000 lbf) and adds cost.",
+          "correct": "Pull-out capacity = 400 lbf/inch × embedment depth. Solving for depth: 5,000 lbf ÷ 400 lbf/inch = 12.5 inches.",
+          "takeaway": "Always calculate minimum embedment using the formula: Depth = Required Capacity ÷ Strength per Inch. Include a safety factor if specified in design code."
+        },
+        "explanation": null,
+        "code_citation": "ASTM F1575 Lag Screw Specifications and LEA design principles",
+        "bloom_level": "apply",
+        "application_context": "calculation",
+        "practice_context": [],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-MATL-008-03-006",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:28.473222+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:fec88e2be60f40bebb5e1ce529e4bf5977f23bae5f7df165d811030d1258ee05"
+      },
+      "proposed": {
+        "explanation": "5 inches provides only 2,000 lbf capacity (5 × 400). 10 inches provides 4,000 lbf capacity (10 × 400). 20 inches exceeds the requirement (20 × 400 = 8,000 lbf) and adds cost. Pull-out capacity = 400 lbf/inch × embedment depth. Solving for depth: 5,000 lbf ÷ 400 lbf/inch = 12.5 inches. Always calculate minimum embedment using the formula: Depth = Required Capacity ÷ Strength per Inch. Include a safety factor if specified in design code."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "1a3a6c9f-335e-4a8f-8659-5664cf809450",
+      "article_id": "6fd0cdaa-55ed-4847-a740-2779ac5ddded",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-015-03-core-concept--6fd0cdaa-55ed-4847-a740-2779ac5ddded",
+      "title": "lea-hist-015-03-core-concept",
+      "baseline_hash": "sha256:b86d2a4dcfe6e1f20c7e1e7e579550c998c77e1dfb4c0cc757949b27ce114637",
+      "baseline": {
+        "question_id": "1a3a6c9f-335e-4a8f-8659-5664cf809450",
+        "article_id": "6fd0cdaa-55ed-4847-a740-2779ac5ddded",
+        "topic_id": "27257e41-bfad-4d26-a5e3-495f7beaa800",
+        "text": "How did contemporary Māori architecture differ from purely European-derived modernism in New Zealand?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Contemporary Māori architecture completely rejected modernist principles in favor of traditional forms, focusing solely on historical accuracy without any modern influence"
+          },
+          {
+            "id": "b",
+            "text": "Contemporary Māori architecture integrated traditional design principles and spatial organization reflecting Māori values with modernist materials and techniques"
+          },
+          {
+            "id": "c",
+            "text": "Contemporary Māori architecture was identical to European modernism in all aspects, with no differentiation in style, material, or cultural influence"
+          },
+          {
+            "id": "d",
+            "text": "Contemporary Māori architecture ignored European traditions entirely and recreated only historical forms, disregarding any modern architectural advancements"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Contemporary Māori architecture did not reject modernism; it synthesized traditional and modernist approaches.",
+          "c": "Contemporary Māori architecture explicitly differs from European modernism through cultural integration.",
+          "d": "Contemporary architecture uses modern materials and techniques; it is not purely historical.",
+          "correct": "Contemporary Māori architects integrate traditional design principles with modernist materials and techniques. Contemporary wharenui combine traditional spatial organization and carved decoration with modern materials and climate control. Architects integrate Māori values—manaakitanga (hospitality), kaitiakitanga (stewardship), aroha (compassion)—into architectural practice.'",
+          "takeaway": "Architects integrate Māori values—manaakitanga (hospitality), kaitiakitanga (stewardship), aroha (compassion)—into architectural practice.'."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "analyze",
+        "application_context": "design_application",
+        "practice_context": [
+          "CMP"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-HIST-015-03-009",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:25.310909+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:b86d2a4dcfe6e1f20c7e1e7e579550c998c77e1dfb4c0cc757949b27ce114637"
+      },
+      "proposed": {
+        "explanation": "Contemporary Māori architecture did not reject modernism; it synthesized traditional and modernist approaches. Contemporary Māori architecture explicitly differs from European modernism through cultural integration. Contemporary architecture uses modern materials and techniques; it is not purely historical. Contemporary Māori architects integrate traditional design principles with modernist materials and techniques. Contemporary wharenui combine traditional spatial organization and carved decoration with modern materials and climate control. Architects integrate Māori values—manaakitanga (hospitality), kaitiakitanga (stewardship), aroha (compassion)—into architectural practice.' Architects integrate Māori values—manaakitanga (hospitality), kaitiakitanga (stewardship), aroha (compassion)—into architectural practice.'."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "93c98999-07df-4022-b0dd-1a807a3a8978",
+      "article_id": "6fd0cdaa-55ed-4847-a740-2779ac5ddded",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-015-03-core-concept--6fd0cdaa-55ed-4847-a740-2779ac5ddded",
+      "title": "lea-hist-015-03-core-concept",
+      "baseline_hash": "sha256:c7d29178d63e9923ade07e856bf2f8ac6ec0c682bf9aadcb8e54a278d478b9bc",
+      "baseline": {
+        "question_id": "93c98999-07df-4022-b0dd-1a807a3a8978",
+        "article_id": "6fd0cdaa-55ed-4847-a740-2779ac5ddded",
+        "topic_id": "27257e41-bfad-4d26-a5e3-495f7beaa800",
+        "text": "During which period did the contemporary restoration and reassertion of Māori architectural traditions emerge?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Early 19th century, immediately after European contact and initial colonial settlement in New Zealand"
+          },
+          {
+            "id": "b",
+            "text": "Mid-19th century, during rapid colonial expansion and the establishment of British governance structures"
+          },
+          {
+            "id": "c",
+            "text": "Late 20th century, as Māori communities reclaimed cultural identity"
+          },
+          {
+            "id": "d",
+            "text": "Early 21st century only, in response to international pressures from UNESCO heritage preservation mandates"
+          }
+        ],
+        "correct_option_id": "c",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Early 19th century saw colonization and suppression, not restoration.",
+          "b": "Mid-19th century saw continued suppression; the Māori Arts Movement emerged later.",
+          "d": "While contemporary work continues, the restoration movement began in the late 20th century, not the 21st century.",
+          "correct": "Contemporary restoration emerged in late 20th century. Māori communities reclaimed cultural identity through architecture.'",
+          "takeaway": "Māori communities reclaimed cultural identity through architecture.'."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "apply",
+        "application_context": "recall",
+        "practice_context": [
+          "CH"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-HIST-015-03-012",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:25.310909+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:c7d29178d63e9923ade07e856bf2f8ac6ec0c682bf9aadcb8e54a278d478b9bc"
+      },
+      "proposed": {
+        "explanation": "Early 19th century saw colonization and suppression, not restoration. Mid-19th century saw continued suppression; the Māori Arts Movement emerged later. While contemporary work continues, the restoration movement began in the late 20th century, not the 21st century. Contemporary restoration emerged in late 20th century. Māori communities reclaimed cultural identity through architecture.' Māori communities reclaimed cultural identity through architecture.'."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "14429dde-3f40-4e51-a51a-80bea6c6ebdc",
+      "article_id": "6fd0cdaa-55ed-4847-a740-2779ac5ddded",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-015-03-core-concept--6fd0cdaa-55ed-4847-a740-2779ac5ddded",
+      "title": "lea-hist-015-03-core-concept",
+      "baseline_hash": "sha256:eb7a1a8e0424962b3ca94180692787c2838503427416daf15f7309d77a511242",
+      "baseline": {
+        "question_id": "14429dde-3f40-4e51-a51a-80bea6c6ebdc",
+        "article_id": "6fd0cdaa-55ed-4847-a740-2779ac5ddded",
+        "topic_id": "27257e41-bfad-4d26-a5e3-495f7beaa800",
+        "text": "When did European colonization of New Zealand begin?",
+        "options": [
+          {
+            "id": "a",
+            "text": "1788"
+          },
+          {
+            "id": "b",
+            "text": "1820"
+          },
+          {
+            "id": "c",
+            "text": "1840"
+          },
+          {
+            "id": "d",
+            "text": "1870"
+          }
+        ],
+        "correct_option_id": "c",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "1788 marks the beginning of Australian colonization, not New Zealand.",
+          "b": "1820 is during the early contact period but not the official colonization date.",
+          "d": "1870 is decades after colonization began in 1840.",
+          "correct": "European colonization (1840 onward) devastated Māori culture and building traditions' and references 'The Treaty of Waitangi (1840).'",
+          "takeaway": "The article states: 'European colonization (1840 onward) devastated Māori culture and building traditions' and references 'The Treaty of Waitangi (1840).'."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "remember",
+        "application_context": "recall",
+        "practice_context": [
+          "CH"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-HIST-015-03-005",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:25.310909+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:eb7a1a8e0424962b3ca94180692787c2838503427416daf15f7309d77a511242"
+      },
+      "proposed": {
+        "explanation": "1788 marks the beginning of Australian colonization, not New Zealand. 1820 is during the early contact period but not the official colonization date. 1870 is decades after colonization began in 1840. European colonization (1840 onward) devastated Māori culture and building traditions' and references 'The Treaty of Waitangi (1840).' The article states: 'European colonization (1840 onward) devastated Māori culture and building traditions' and references 'The Treaty of Waitangi (1840).'."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "f6056b69-f157-4294-a8d5-f299a6790e5a",
+      "article_id": "6fd0cdaa-55ed-4847-a740-2779ac5ddded",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-015-03-core-concept--6fd0cdaa-55ed-4847-a740-2779ac5ddded",
+      "title": "lea-hist-015-03-core-concept",
+      "baseline_hash": "sha256:9a99ade9873ff71b449126062753f0be7a175997b1c2dcfb8bf5914fba1f9c1f",
+      "baseline": {
+        "question_id": "f6056b69-f157-4294-a8d5-f299a6790e5a",
+        "article_id": "6fd0cdaa-55ed-4847-a740-2779ac5ddded",
+        "topic_id": "27257e41-bfad-4d26-a5e3-495f7beaa800",
+        "text": "What does 'bicultural design' mean in the context of contemporary New Zealand architecture?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Design that uses two different building materials simultaneously, creating a visual contrast"
+          },
+          {
+            "id": "b",
+            "text": "Design that separates European and Māori architectural traditions into distinct spaces, maintaining cultural integrity"
+          },
+          {
+            "id": "c",
+            "text": "A contemporary approach integrating Māori and European-derived design traditions, acknowledging dual heritage while requiring Māori community authority"
+          },
+          {
+            "id": "d",
+            "text": "Design that prioritizes European modernist principles above all cultural considerations, often disregarding local traditions"
+          }
+        ],
+        "correct_option_id": "c",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Material usage is not what defines bicultural design; cultural integration is.",
+          "b": "Bicultural design integrates traditions, not separates them into distinct spaces.",
+          "d": "Bicultural design requires Māori community authority and principles; it does not prioritize European modernism exclusively.",
+          "correct": "The article defines bicultural design as 'A contemporary approach integrating Māori and European-derived design traditions; acknowledges dual heritage; requires Māori community authority.'",
+          "takeaway": "The article defines bicultural design as 'A contemporary approach integrating Māori and European-derived design traditions; acknowledges dual heritage; requires Māori community authority.'."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "analyze",
+        "application_context": "code_interpretation",
+        "practice_context": [
+          "CON"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-HIST-015-03-010",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:25.310909+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:9a99ade9873ff71b449126062753f0be7a175997b1c2dcfb8bf5914fba1f9c1f"
+      },
+      "proposed": {
+        "explanation": "Material usage is not what defines bicultural design; cultural integration is. Bicultural design integrates traditions, not separates them into distinct spaces. Bicultural design requires Māori community authority and principles; it does not prioritize European modernism exclusively. The article defines bicultural design as 'A contemporary approach integrating Māori and European-derived design traditions; acknowledges dual heritage; requires Māori community authority.' The article defines bicultural design as 'A contemporary approach integrating Māori and European-derived design traditions; acknowledges dual heritage; requires Māori community authority.'."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "628209c4-7ec4-4e75-9bc8-a43cf6a87f86",
+      "article_id": "6fd0cdaa-55ed-4847-a740-2779ac5ddded",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-015-03-core-concept--6fd0cdaa-55ed-4847-a740-2779ac5ddded",
+      "title": "lea-hist-015-03-core-concept",
+      "baseline_hash": "sha256:ad75482fc973d342f76e5308750c35dcf4434a5ebe2b8570bd8b466b37316024",
+      "baseline": {
+        "question_id": "628209c4-7ec4-4e75-9bc8-a43cf6a87f86",
+        "article_id": "6fd0cdaa-55ed-4847-a740-2779ac5ddded",
+        "topic_id": "27257e41-bfad-4d26-a5e3-495f7beaa800",
+        "text": "Which timber species were traditionally used as primary materials in Māori architecture?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Oak, ash, and beech"
+          },
+          {
+            "id": "b",
+            "text": "Kauri, rimu, and totara"
+          },
+          {
+            "id": "c",
+            "text": "Teak, mahogany, and cedar"
+          },
+          {
+            "id": "d",
+            "text": "Pine, spruce, and fir"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Oak, ash, and beech are European and Asian species not native to New Zealand.",
+          "c": "Teak, mahogany, and cedar are tropical and Asian species not native to New Zealand.",
+          "d": "Pine, spruce, and fir were not mentioned as traditional Māori building materials.",
+          "correct": "Timber (kauri, rimu, totara) was the primary material—abundant, workable, and imbued with mana (spiritual power).'",
+          "takeaway": "The article states: 'Timber (kauri, rimu, totara) was the primary material—abundant, workable, and imbued with mana (spiritual power).'."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "remember",
+        "application_context": "recall",
+        "practice_context": [
+          "ID"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-HIST-015-03-001",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:25.310909+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:ad75482fc973d342f76e5308750c35dcf4434a5ebe2b8570bd8b466b37316024"
+      },
+      "proposed": {
+        "explanation": "Oak, ash, and beech are European and Asian species not native to New Zealand. Teak, mahogany, and cedar are tropical and Asian species not native to New Zealand. Pine, spruce, and fir were not mentioned as traditional Māori building materials. Timber (kauri, rimu, totara) was the primary material—abundant, workable, and imbued with mana (spiritual power).' The article states: 'Timber (kauri, rimu, totara) was the primary material—abundant, workable, and imbued with mana (spiritual power).'."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "559b1240-5da8-422a-b9d9-4bf70cb76dcf",
+      "article_id": "6fd0cdaa-55ed-4847-a740-2779ac5ddded",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-015-03-core-concept--6fd0cdaa-55ed-4847-a740-2779ac5ddded",
+      "title": "lea-hist-015-03-core-concept",
+      "baseline_hash": "sha256:d65df6cbf0ffcbdec15cf0d3d271a44c93b61bf603f343bd2de42b4abe7e4db4",
+      "baseline": {
+        "question_id": "559b1240-5da8-422a-b9d9-4bf70cb76dcf",
+        "article_id": "6fd0cdaa-55ed-4847-a740-2779ac5ddded",
+        "topic_id": "27257e41-bfad-4d26-a5e3-495f7beaa800",
+        "text": "What principles from traditional Māori culture are contemporary architects incorporating into modernist design?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Purely geometric order and symmetry derived from European traditions"
+          },
+          {
+            "id": "b",
+            "text": "Manaakitanga (hospitality), kaitiakitanga (stewardship), and aroha (compassion)—values reflected in spatial design and community engagement"
+          },
+          {
+            "id": "c",
+            "text": "American commercial building standards and profit maximization"
+          },
+          {
+            "id": "d",
+            "text": "Elimination of all carving and symbolic expression in favor of minimal modernism"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "These are European principles; contemporary Māori architects draw from Māori cultural values.",
+          "c": "American commercial standards are not mentioned as part of cultural integration.",
+          "d": "Contemporary Māori architecture maintains carving and symbolic expression; it does not eliminate them.",
+          "correct": "Architects like Hirini Melbourne and collaborative firms integrate Māori values—manaakitanga (hospitality), kaitiakitanga (stewardship), aroha (compassion)—into architectural practice.'",
+          "takeaway": "The article states: 'Architects like Hirini Melbourne and collaborative firms integrate Māori values—manaakitanga (hospitality), kaitiakitanga (stewardship), aroha (compassion)—into architectural practice.'."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "analyze",
+        "application_context": "code_interpretation",
+        "practice_context": [
+          "CON"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-HIST-015-03-011",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:25.310909+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:d65df6cbf0ffcbdec15cf0d3d271a44c93b61bf603f343bd2de42b4abe7e4db4"
+      },
+      "proposed": {
+        "explanation": "These are European principles; contemporary Māori architects draw from Māori cultural values. American commercial standards are not mentioned as part of cultural integration. Contemporary Māori architecture maintains carving and symbolic expression; it does not eliminate them. Architects like Hirini Melbourne and collaborative firms integrate Māori values—manaakitanga (hospitality), kaitiakitanga (stewardship), aroha (compassion)—into architectural practice.' The article states: 'Architects like Hirini Melbourne and collaborative firms integrate Māori values—manaakitanga (hospitality), kaitiakitanga (stewardship), aroha (compassion)—into architectural practice.'."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "1171d6c4-b80c-4773-81ed-b6c6d5a6c9b7",
+      "article_id": "6fd0cdaa-55ed-4847-a740-2779ac5ddded",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-015-03-core-concept--6fd0cdaa-55ed-4847-a740-2779ac5ddded",
+      "title": "lea-hist-015-03-core-concept",
+      "baseline_hash": "sha256:582b10ca6b8647fca106b1a6e2010cec23660f1ec58e721785a2b59ce55c8864",
+      "baseline": {
+        "question_id": "1171d6c4-b80c-4773-81ed-b6c6d5a6c9b7",
+        "article_id": "6fd0cdaa-55ed-4847-a740-2779ac5ddded",
+        "topic_id": "27257e41-bfad-4d26-a5e3-495f7beaa800",
+        "text": "What is a whare in traditional Māori architecture?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A fortified settlement with palisaded defensive structures, designed to protect inhabitants from external threats"
+          },
+          {
+            "id": "b",
+            "text": "A large communal meeting house with elaborate carving, serving as a central hub for community gatherings and ceremonies"
+          },
+          {
+            "id": "c",
+            "text": "A family dwelling—a simple timber structure with spiritual and spatial significance"
+          },
+          {
+            "id": "d",
+            "text": "A ceremonial space dedicated to spiritual ritual only, often located in a secluded area to maintain its sanctity"
+          }
+        ],
+        "correct_option_id": "c",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "This describes a pā, not a whare.",
+          "b": "This describes a wharenui, not a whare.",
+          "d": "While whare had spiritual significance, they were functional dwellings, not ceremonial spaces only.",
+          "correct": "The article defines whare as 'a family dwelling—a simple timber structure with specific spatial organization and orientation reflecting Māori cosmology and kinship.'",
+          "takeaway": "The article defines whare as 'a family dwelling—a simple timber structure with specific spatial organization and orientation reflecting Māori cosmology and kinship.'."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "remember",
+        "application_context": "recall",
+        "practice_context": [
+          "ID"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-HIST-015-03-002",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:25.310909+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:582b10ca6b8647fca106b1a6e2010cec23660f1ec58e721785a2b59ce55c8864"
+      },
+      "proposed": {
+        "explanation": "This describes a pā, not a whare. This describes a wharenui, not a whare. While whare had spiritual significance, they were functional dwellings, not ceremonial spaces only. The article defines whare as 'a family dwelling—a simple timber structure with specific spatial organization and orientation reflecting Māori cosmology and kinship.' The article defines whare as 'a family dwelling—a simple timber structure with specific spatial organization and orientation reflecting Māori cosmology and kinship.'."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "20b4057d-e28b-48e0-afea-ebcab750c08b",
+      "article_id": "6fd0cdaa-55ed-4847-a740-2779ac5ddded",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-015-03-core-concept--6fd0cdaa-55ed-4847-a740-2779ac5ddded",
+      "title": "lea-hist-015-03-core-concept",
+      "baseline_hash": "sha256:5f0f0867d215589bd1ff9e365af14f3040fba0b03415d0ca17adf1d6014d46d3",
+      "baseline": {
+        "question_id": "20b4057d-e28b-48e0-afea-ebcab750c08b",
+        "article_id": "6fd0cdaa-55ed-4847-a740-2779ac5ddded",
+        "topic_id": "27257e41-bfad-4d26-a5e3-495f7beaa800",
+        "text": "A traditional structure features strategic hilltop positioning, palisaded timber walls, earth ramparts, and internal organization for defense and settlement. Which Māori building type does this describe?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Whare"
+          },
+          {
+            "id": "b",
+            "text": "Wharenui"
+          },
+          {
+            "id": "c",
+            "text": "Pā"
+          },
+          {
+            "id": "d",
+            "text": "Whare kai"
+          }
+        ],
+        "correct_option_id": "c",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Whare is a family dwelling, not a fortified structure.",
+          "b": "Wharenui is a communal meeting house, not a defensive fortification.",
+          "d": "Whare kai is a food storage structure, not a defense and settlement facility.",
+          "correct": "The article defines pā as 'a fortified settlement with palisaded defensive structures adapted to terrain and strategic position' and notes it is used for 'Defense and settlement' with 'Hilltop or strategic location; palisaded walls.'",
+          "takeaway": "The article defines pā as 'a fortified settlement with palisaded defensive structures adapted to terrain and strategic position' and notes it is used for 'Defense and settlement' with 'Hilltop or strategic location; palisaded walls.'."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "apply",
+        "application_context": "recall",
+        "practice_context": [
+          "DESC"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-HIST-015-03-007",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:25.310909+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:5f0f0867d215589bd1ff9e365af14f3040fba0b03415d0ca17adf1d6014d46d3"
+      },
+      "proposed": {
+        "explanation": "Whare is a family dwelling, not a fortified structure. Wharenui is a communal meeting house, not a defensive fortification. Whare kai is a food storage structure, not a defense and settlement facility. The article defines pā as 'a fortified settlement with palisaded defensive structures adapted to terrain and strategic position' and notes it is used for 'Defense and settlement' with 'Hilltop or strategic location; palisaded walls.' The article defines pā as 'a fortified settlement with palisaded defensive structures adapted to terrain and strategic position' and notes it is used for 'Defense and settlement' with 'Hilltop or strategic location; palisaded walls.'."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "da456e54-c6f6-4f71-8ba8-fdd25c6beb56",
+      "article_id": "8769440f-0b98-49dd-b98b-a3b9be486892",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-04a-core-concept--8769440f-0b98-49dd-b98b-a3b9be486892",
+      "title": "lea-hist-008-04a-core-concept",
+      "baseline_hash": "sha256:92d95e8bb8d03c3b2376e9646fbe0a794e04c4ad8fd0fb51a21e9d1e8841c391",
+      "baseline": {
+        "question_id": "da456e54-c6f6-4f71-8ba8-fdd25c6beb56",
+        "article_id": "8769440f-0b98-49dd-b98b-a3b9be486892",
+        "topic_id": "f604884b-6e67-4d5d-827b-dbb3df0436ef",
+        "text": "Which of the following was NOT one of the three directors of the Bauhaus?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Walter Gropius (1919–1928)"
+          },
+          {
+            "id": "b",
+            "text": "Hannes Meyer (1928–1930)"
+          },
+          {
+            "id": "c",
+            "text": "Ludwig Mies van der Rohe (1930–1933)"
+          },
+          {
+            "id": "d",
+            "text": "Le Corbusier"
+          }
+        ],
+        "correct_option_id": "d",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Gropius was the founding director (1919–1928).",
+          "b": "Hannes Meyer was the radical functionalist director (1928–1930).",
+          "c": "Mies van der Rohe was the austere director (1930–1933).",
+          "correct": "Le Corbusier was never a Bauhaus director. Gropius founded and directed first; Meyer brought functionalism; Mies brought austerity.",
+          "takeaway": "Gropius founded and directed first; Meyer brought functionalism; Mies brought austerity."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "remember",
+        "application_context": "recall",
+        "practice_context": [
+          "ID"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-HIST-008-04A-002",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:25.729652+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:92d95e8bb8d03c3b2376e9646fbe0a794e04c4ad8fd0fb51a21e9d1e8841c391"
+      },
+      "proposed": {
+        "explanation": "Gropius was the founding director (1919–1928). Hannes Meyer was the radical functionalist director (1928–1930). Mies van der Rohe was the austere director (1930–1933). Le Corbusier was never a Bauhaus director. Gropius founded and directed first; Meyer brought functionalism; Mies brought austerity. Gropius founded and directed first; Meyer brought functionalism; Mies brought austerity."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "99b14001-8b2a-4fbf-bc81-1fb2d868c67e",
+      "article_id": "8769440f-0b98-49dd-b98b-a3b9be486892",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-04a-core-concept--8769440f-0b98-49dd-b98b-a3b9be486892",
+      "title": "lea-hist-008-04a-core-concept",
+      "baseline_hash": "sha256:524a8f40675918f9876997b5350bde08b637234b5d7a3dfa7d6d131c9a9f9c5a",
+      "baseline": {
+        "question_id": "99b14001-8b2a-4fbf-bc81-1fb2d868c67e",
+        "article_id": "8769440f-0b98-49dd-b98b-a3b9be486892",
+        "topic_id": "f604884b-6e67-4d5d-827b-dbb3df0436ef",
+        "text": "A school building of glass and steel features transparent workshops, open-plan studios, and demonstrates principles of honest materials, functional clarity, and art-technology integration through its own design. Which building does this describe?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A 19th-century Gothic Revival school with pointed arches and intricate stone carvings typical of the period"
+          },
+          {
+            "id": "b",
+            "text": "The Bauhaus Building in Dessau (1925–1926)"
+          },
+          {
+            "id": "c",
+            "text": "A traditional art academy building featuring classical columns and ornate detailing"
+          },
+          {
+            "id": "d",
+            "text": "A corporate modernist office building with curtain walls and a focus on maximizing leasable space"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Gothic Revival buildings emphasize ornament and historical style.",
+          "c": "Traditional academies don't demonstrate modernist principles.",
+          "d": "While corporate buildings may be modern, they don't embody pedagogical philosophy.",
+          "correct": "The Bauhaus Building in Dessau (designed by Gropius, 1925–1926) is both shelter and teaching tool. The building itself manifests the school's pedagogy.",
+          "takeaway": "The building itself manifests the school's pedagogy."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "apply",
+        "application_context": "recall",
+        "practice_context": [
+          "DESC"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-HIST-008-04A-003",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:25.729652+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:524a8f40675918f9876997b5350bde08b637234b5d7a3dfa7d6d131c9a9f9c5a"
+      },
+      "proposed": {
+        "explanation": "Gothic Revival buildings emphasize ornament and historical style. Traditional academies don't demonstrate modernist principles. While corporate buildings may be modern, they don't embody pedagogical philosophy. The Bauhaus Building in Dessau (designed by Gropius, 1925–1926) is both shelter and teaching tool. The building itself manifests the school's pedagogy. The building itself manifests the school's pedagogy."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "257580c9-45ea-4c94-8cea-5bcfe213ca95",
+      "article_id": "8769440f-0b98-49dd-b98b-a3b9be486892",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-04a-core-concept--8769440f-0b98-49dd-b98b-a3b9be486892",
+      "title": "lea-hist-008-04a-core-concept",
+      "baseline_hash": "sha256:325311f8af6f423424ac557e112c999345f88a3cb1be340e2a5165df412611d7",
+      "baseline": {
+        "question_id": "257580c9-45ea-4c94-8cea-5bcfe213ca95",
+        "article_id": "8769440f-0b98-49dd-b98b-a3b9be486892",
+        "topic_id": "f604884b-6e67-4d5d-827b-dbb3df0436ef",
+        "text": "The Bauhaus approached the relationship between art and industry by [blank].",
+        "options": [
+          {
+            "id": "a",
+            "text": "rejecting all industrial production as incompatible with artistic quality, believing that true art cannot be mass-produced without losing its essence"
+          },
+          {
+            "id": "b",
+            "text": "proving that artistic principles applied to mass production create beautiful, accessible design for everyone"
+          },
+          {
+            "id": "c",
+            "text": "separating art and industry into specialized schools to maintain artistic purity, ensuring that industrial processes do not dilute artistic expression"
+          },
+          {
+            "id": "d",
+            "text": "accepting industrial production as necessary but artistically compromised, acknowledging the trade-offs between mass production and artistic integrity"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Bauhaus embraced industrial production, not rejected it.",
+          "c": "Bauhaus unified, not separated, these concerns.",
+          "d": "Bauhaus didn't compromise artistic quality in industry; it elevated it.",
+          "correct": "The Bauhaus's core achievement was demonstrating that industry and art could unite—that mass production could be beautiful and accessible to all, not exclusively luxurious.",
+          "takeaway": "The Bauhaus's core achievement was demonstrating that industry and art could unite—that mass production could be beautiful and accessible to all, not exclusively luxurious."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "apply",
+        "application_context": "code_interpretation",
+        "practice_context": [
+          "ST"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-HIST-008-04A-010",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:25.729652+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:325311f8af6f423424ac557e112c999345f88a3cb1be340e2a5165df412611d7"
+      },
+      "proposed": {
+        "explanation": "Bauhaus embraced industrial production, not rejected it. Bauhaus unified, not separated, these concerns. Bauhaus didn't compromise artistic quality in industry; it elevated it. The Bauhaus's core achievement was demonstrating that industry and art could unite—that mass production could be beautiful and accessible to all, not exclusively luxurious. The Bauhaus's core achievement was demonstrating that industry and art could unite—that mass production could be beautiful and accessible to all, not exclusively luxurious."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    },
+    {
+      "question_id": "2db0e102-6041-4e08-99cc-4caff322986c",
+      "article_id": "8769440f-0b98-49dd-b98b-a3b9be486892",
+      "article_dir": ".ai/content-audit-export/articles/lea-hist-008-04a-core-concept--8769440f-0b98-49dd-b98b-a3b9be486892",
+      "title": "lea-hist-008-04a-core-concept",
+      "baseline_hash": "sha256:1641564aef2868ff3870789080d95444f3c83e6c95bb0ffeb87ef6b0ce4437b0",
+      "baseline": {
+        "question_id": "2db0e102-6041-4e08-99cc-4caff322986c",
+        "article_id": "8769440f-0b98-49dd-b98b-a3b9be486892",
+        "topic_id": "f604884b-6e67-4d5d-827b-dbb3df0436ef",
+        "text": "The Wassily Chair (designed 1925–1926, manufactured 1927–1928, originally Model B3) by Marcel Breuer demonstrated what design breakthrough?",
+        "options": [
+          {
+            "id": "a",
+            "text": "That furniture must be handcrafted to be beautiful, emphasizing traditional craftsmanship"
+          },
+          {
+            "id": "b",
+            "text": "That tubular steel could be bent and mass-produced into comfortable, beautiful furniture"
+          },
+          {
+            "id": "c",
+            "text": "That modern furniture must reject ergonomic considerations, focusing solely on aesthetics"
+          },
+          {
+            "id": "d",
+            "text": "That the Bauhaus approach was impractical for commercial production, limiting its widespread adoption"
+          }
+        ],
+        "correct_option_id": "b",
+        "correct_value": null,
+        "accepted_answers": null,
+        "value_tolerance": 0,
+        "question_type": "mcq",
+        "rationale": {
+          "a": "Breuer's achievement was industrial production of beautiful furniture, not handcraft.",
+          "c": "The Wassily Chair is highly ergonomic; comfort was central.",
+          "d": "The chair's commercial success proved Bauhaus principles were commercially viable.",
+          "correct": "Inspired by bicycle frames, Breuer proved that industrial tubular steel could be mass-produced into elegant, functional furniture—exemplifying the Bauhaus principle of craft-industry integration.",
+          "takeaway": "Inspired by bicycle frames, Breuer proved that industrial tubular steel could be mass-produced into elegant, functional furniture—exemplifying the Bauhaus principle of craft-industry integration."
+        },
+        "explanation": null,
+        "code_citation": null,
+        "bloom_level": "apply",
+        "application_context": "code_interpretation",
+        "practice_context": [
+          "ST"
+        ],
+        "difficulty": 0.5,
+        "difficulty_rating": null,
+        "discrimination_rating": null,
+        "is_assessment": false,
+        "model_id": "ALE-HIST-008-04A-006",
+        "prompt_image_url": null,
+        "created_at": "2026-03-23T19:27:25.729652+00:00",
+        "updated_at": "2026-04-08T07:44:46.846261+00:00",
+        "content_hash": "sha256:1641564aef2868ff3870789080d95444f3c83e6c95bb0ffeb87ef6b0ce4437b0"
+      },
+      "proposed": {
+        "explanation": "Breuer's achievement was industrial production of beautiful furniture, not handcraft. The Wassily Chair is highly ergonomic; comfort was central. The chair's commercial success proved Bauhaus principles were commercially viable. Inspired by bicycle frames, Breuer proved that industrial tubular steel could be mass-produced into elegant, functional furniture—exemplifying the Bauhaus principle of craft-industry integration. Inspired by bicycle frames, Breuer proved that industrial tubular steel could be mass-produced into elegant, functional furniture—exemplifying the Bauhaus principle of craft-industry integration."
+      },
+      "classification": "strict_explanation_backfill",
+      "evidence": "Explanation was null/placeholder; existing specific rationale is reused as explanation; answer key and options unchanged; high-risk legal/code/dimensional and generic distractor leakage excluded."
+    }
+  ]
+}
