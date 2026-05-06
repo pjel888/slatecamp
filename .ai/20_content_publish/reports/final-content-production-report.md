@@ -1,14 +1,14 @@
 # Final Content Production Report
 
-Status: BATCH_007_PUBLISHED_AND_VERIFIED_CONTINUING
-Generated: 2026-05-06T09:50:45.804660+00:00
+Status: BATCH_008_PUBLISHED_AND_VERIFIED_CONTINUING
+Generated: 2026-05-06T09:53:46.367163+00:00
 
 Safe-path published so far:
-- Articles: 243
+- Articles: 293
 - Questions: 0
 
 Latest milestone:
-- Batch 007 published 50 articles.
+- Batch 008 published 50 articles.
 - Remote verification passed for 50/50 rows.
 - No rollback needed.
 
