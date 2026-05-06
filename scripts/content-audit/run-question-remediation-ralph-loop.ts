@@ -21,18 +21,22 @@ type State = {
   current_batch_number: number
   batch_size: number
   total_published_before_run: number
-  completion_status: 'RUNNING' | 'COMPLETE' | 'SAFETY_STOP' | 'TOOL_CONTEXT_CAP_CHECKPOINT'
+  completion_status: 'RUNNING' | 'COMPLETE_ALL_ELIGIBLE_QUESTIONS_RESOLVED' | 'TOOL_CONTEXT_CAP_CHECKPOINT' | 'SAFETY_STOP_CREDENTIALS_MISSING' | 'SAFETY_STOP_REMOTE_VERIFICATION_FAILURE' | 'SAFETY_STOP_SECRET_SCAN' | 'SAFETY_STOP_REPO_UNSAFE' | 'SAFETY_STOP_VALIDATION_FAILURE'
   last_completed_batch: string | null
   next_batch_number: number
   published_count: number
+  total_questions_published_or_recovered_verified?: number
   quarantined_count: number
+  total_questions_quarantined?: number
   verified_noop_count: number
+  total_questions_verified_noop?: number
   answer_key_changes_published: number
   option_changes_published: number
   remote_verification_failures: number
   last_commit: string | null
   last_push_status: string | null
   last_successful_resume_command: string
+  exact_resume_command?: string
   stop_condition: string | null
   consecutive_zero_publish_batches: number
   started_at: string
@@ -91,17 +95,30 @@ function loadState(): State {
     history: [],
   }
   const s = readJson<State>(STATE_PATH, fallback)
+  const alreadyComplete = s.completion_status === 'COMPLETE_ALL_ELIGIBLE_QUESTIONS_RESOLVED' || (s.completion_status as string) === 'COMPLETE' || s.stop_condition === 'COMPLETE_ALL_ELIGIBLE_QUESTIONS_RESOLVED_AFTER_ZERO_READY_SWEEP_TRIGGER'
+  if ((s.completion_status as string) === 'COMPLETE') s.completion_status = 'COMPLETE_ALL_ELIGIBLE_QUESTIONS_RESOLVED'
+  s.total_questions_published_or_recovered_verified = s.published_count
+  s.total_questions_quarantined = s.quarantined_count
+  s.total_questions_verified_noop = s.verified_noop_count
+  s.exact_resume_command = 'bun scripts/content-audit/run-question-remediation-ralph-loop.ts --until-complete'
   if (!existsSync(STATE_PATH)) writeJson(STATE_PATH, fallback)
-  if (args.includes('--start-batch')) {
+  if (args.includes('--start-batch') && !alreadyComplete) {
     s.current_batch_number = startBatch
     s.next_batch_number = startBatch
   }
   if (args.includes('--batch-size')) s.batch_size = batchSizeArg
-  s.completion_status = 'RUNNING'
+  if (!alreadyComplete) s.completion_status = 'RUNNING'
   s.updated_at = now()
   return s
 }
-function saveState(s: State) { s.updated_at = now(); writeJson(STATE_PATH, s) }
+function saveState(s: State) {
+  s.total_questions_published_or_recovered_verified = s.published_count
+  s.total_questions_quarantined = s.quarantined_count
+  s.total_questions_verified_noop = s.verified_noop_count
+  s.exact_resume_command = 'bun scripts/content-audit/run-question-remediation-ralph-loop.ts --until-complete'
+  s.updated_at = now()
+  writeJson(STATE_PATH, s)
+}
 
 function safeEnv() {
   const env = { ...process.env }
@@ -175,6 +192,11 @@ function updateReports(id: string, ready: number, total: number, backupFile: str
 
 async function main() {
   let state = loadState()
+  if (state.completion_status === 'COMPLETE_ALL_ELIGIBLE_QUESTIONS_RESOLVED') {
+    saveState(state)
+    console.log(JSON.stringify({ status: state.completion_status, last_completed_batch: state.last_completed_batch, next_batch_number: state.next_batch_number, published_count: state.published_count, stop_condition: state.stop_condition }, null, 2))
+    return
+  }
   const env = safeEnv()
   append(REPORT_PATH, `## Ralph Loop Start — ${now()}\n\nState file: \`${STATE_PATH}\`\nStart batch: ${state.current_batch_number}\nBatch size: ${state.batch_size}\nMode: ${untilComplete ? 'until-complete' : 'single/default'}.`)
   run('git status --short')
@@ -205,7 +227,7 @@ async function main() {
       state.consecutive_zero_publish_batches += 1
       state.history.push({ batch: id, ready, status: 'ZERO_READY', at: now() })
       if (state.consecutive_zero_publish_batches >= 3) {
-        state.completion_status = 'COMPLETE'
+        state.completion_status = 'COMPLETE_ALL_ELIGIBLE_QUESTIONS_RESOLVED'
         state.stop_condition = 'COMPLETE_ALL_ELIGIBLE_QUESTIONS_RESOLVED_AFTER_ZERO_READY_SWEEP_TRIGGER'
         saveState(state)
         append(REPORT_PATH, `## Completion Trigger — ${now()}\n\nThree consecutive zero-publish batches reached. Final eligibility sweep required/triggered by selector state.`)
@@ -252,8 +274,9 @@ async function main() {
 
 main().catch((err) => {
   const state = loadState()
-  state.completion_status = 'SAFETY_STOP'
-  state.stop_condition = String(err?.message || err)
+  const message = String(err?.message || err)
+  state.completion_status = message.includes('Supabase credentials missing') ? 'SAFETY_STOP_CREDENTIALS_MISSING' : message.includes('secret scan') ? 'SAFETY_STOP_SECRET_SCAN' : message.includes('Remote verification failed') ? 'SAFETY_STOP_REMOTE_VERIFICATION_FAILURE' : message.includes('validation') || message.includes('verify-question-batch') ? 'SAFETY_STOP_VALIDATION_FAILURE' : 'SAFETY_STOP_REPO_UNSAFE'
+  state.stop_condition = message
   state.last_successful_resume_command = 'bun scripts/content-audit/run-question-remediation-ralph-loop.ts --until-complete'
   saveState(state)
   append(REPORT_PATH, `## SAFETY STOP — ${now()}\n\n${String(err?.message || err)}\n\nResume after fixing cause: \`${state.last_successful_resume_command}\`.`)

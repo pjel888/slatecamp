@@ -2,7 +2,7 @@
   "current_batch_number": 37,
   "batch_size": 50,
   "total_published_before_run": 1127,
-  "completion_status": "COMPLETE",
+  "completion_status": "COMPLETE_ALL_ELIGIBLE_QUESTIONS_RESOLVED",
   "last_completed_batch": "question-batch-034",
   "next_batch_number": 37,
   "published_count": 1269,
@@ -17,7 +17,7 @@
   "stop_condition": "COMPLETE_ALL_ELIGIBLE_QUESTIONS_RESOLVED_AFTER_ZERO_READY_SWEEP_TRIGGER",
   "consecutive_zero_publish_batches": 3,
   "started_at": "2026-05-06T16:20:05.281589+00:00",
-  "updated_at": "2026-05-06T16:23:09.546Z",
+  "updated_at": "2026-05-06T16:48:07.211372+00:00",
   "history": [
     {
       "batch": "question-batch-032",
@@ -58,5 +58,9 @@
       "status": "ZERO_READY",
       "at": "2026-05-06T16:23:09.546Z"
     }
-  ]
+  ],
+  "total_questions_published_or_recovered_verified": 1269,
+  "total_questions_quarantined": 0,
+  "total_questions_verified_noop": 0,
+  "exact_resume_command": "bun scripts/content-audit/run-question-remediation-ralph-loop.ts --until-complete"
 }
