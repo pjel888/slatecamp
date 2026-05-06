@@ -2,9 +2,8 @@
 
 import { Suspense, useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
-import { Warning } from "@phosphor-icons/react";
-import { SCIcon } from "@/components/graphics/icons/Icon";
 import { createClient } from "@/lib/supabase/client";
+import { AuthErrorAlert } from "@/components/auth/AuthErrorAlert";
 import { SignInWithGoogleButton } from "@/components/auth/SignInWithGoogleButton";
 import { runWithLoading } from "@/hooks/useGlobalLoading";
 
@@ -50,12 +49,7 @@ export function LoginFormInner() {
         onClick={handleGoogleLogin}
       />
 
-      {error && (
-        <div className="flex items-start gap-2 text-sm text-destructive" role="alert">
-          <SCIcon icon={Warning} size="sm" className="mt-0.5 shrink-0" />
-          <span>{error}</span>
-        </div>
-      )}
+      {error && <AuthErrorAlert message={error} />}
 
       <p className="text-center text-[12px] text-text-secondary">
         By signing in, you agree to use your Google account. We only use it to

@@ -273,55 +273,5 @@
     "reviewer_notes": null,
     "final_status": "open",
     "validation_result": null
-  },
-  {
-    "id": "UIA-PUBLIC-0022",
-    "file": "src/app/(auth)/login/login-form.tsx",
-    "line": null,
-    "surface": "auth",
-    "component": "LoginForm error",
-    "current_pattern": "custom alert div",
-    "classification": "definite_drift",
-    "risk": "low",
-    "proposed_target": "Alert / AuthErrorAlert",
-    "user_impact": "Reduce UI drift and improve consistency/accessibility where safe.",
-    "implementation_notes": "Implement only from queue in small batches after reading current file and preserving behavior.",
-    "storybook_required": true,
-    "storybook_story_path": null,
-    "tests_required": [
-      "bun run type-check",
-      "bun run lint"
-    ],
-    "visual_routes": [
-      "/login"
-    ],
-    "reviewer_notes": null,
-    "final_status": "open",
-    "validation_result": null
-  },
-  {
-    "id": "UIA-PUBLIC-0023",
-    "file": "src/app/(auth)/register/register-form.tsx",
-    "line": null,
-    "surface": "auth",
-    "component": "RegisterForm error",
-    "current_pattern": "custom alert div",
-    "classification": "definite_drift",
-    "risk": "low",
-    "proposed_target": "Alert / AuthErrorAlert",
-    "user_impact": "Reduce UI drift and improve consistency/accessibility where safe.",
-    "implementation_notes": "Implement only from queue in small batches after reading current file and preserving behavior.",
-    "storybook_required": true,
-    "storybook_story_path": null,
-    "tests_required": [
-      "bun run type-check",
-      "bun run lint"
-    ],
-    "visual_routes": [
-      "/register"
-    ],
-    "reviewer_notes": null,
-    "final_status": "open",
-    "validation_result": null
   }
 ]

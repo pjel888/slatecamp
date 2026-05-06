@@ -1,0 +1,20 @@
+# Model Review Log
+
+## Batch 1: Auth error alert normalization
+
+Date/time: 2026-05-06T17:24:31
+Queue IDs: UIA-PUBLIC-0022, UIA-PUBLIC-0023
+Reviewer: independent Hermes subagent, separate context/model from builder.
+
+### Reviewer result
+
+- Blockers: none.
+- Recommendations received:
+  1. Preserve prior warning icon visual signal using `Alert` icon prop.
+  2. Use `AlertDescription` for primitive composition consistency.
+  3. Add Storybook autodocs and component description.
+  4. Prefer responsive route-context story width.
+
+### Resolution
+
+All recommendations were implemented before validation and commit.
