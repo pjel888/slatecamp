@@ -1,12 +1,10 @@
 {
   "question_id": "d97e6053-4407-4797-9812-883227a4e881",
   "baseline_hash": "sha256:4f8ca6825a94da1277861fc9eb63c6a09c4f436015183e46b943762f70b5ffeb",
-  "reason": "Missing 'takeaway' key in rationale. Added an appropriate takeaway summarizing the key learning point.",
-  "approved_by": "hermes-question-audit",
-  "approved_at": "2026-05-03T12:16:00.000000+00:00",
+  "reason": "Strict explanation backfill from existing specific rationale; answer key and options unchanged.",
+  "approved_by": "hermes-question-remediation-autopilot",
+  "approved_at": "2026-05-06T13:15:57.390Z",
   "proposed": {
-    "rationale": {
-      "takeaway": "Aluminum alloy selection: 6xxx for architectural extrusions, 5xxx for marine, 2xxx/7xxx for aerospace. Temper designations (T5, T6) indicate heat treatment."
-    }
+    "explanation": "Anodizing provides excellent corrosion protection but offers limited color choices (natural aluminum or dyed colors within the oxide film). Powder coating requires thorough surface preparation (cleaning, conversion coating) to achieve adhesion; skipping this step causes failure. Performance differs; powder coating typically outperforms anodizing in severe coastal/industrial environments and custom color applications. Powder coating applies thermosetting polymers electrostatically and cures through heat, offering superior adhesion, durability, color retention, and uniform coverage. Custom colors and finishes far exceed anodizing capabilities. Both are valid; selection depends on performance and aesthetic requirements."
   }
 }

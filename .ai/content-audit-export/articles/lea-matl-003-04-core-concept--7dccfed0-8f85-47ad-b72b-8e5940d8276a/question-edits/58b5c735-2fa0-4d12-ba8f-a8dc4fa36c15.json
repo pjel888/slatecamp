@@ -1,12 +1,10 @@
 {
   "question_id": "58b5c735-2fa0-4d12-ba8f-a8dc4fa36c15",
   "baseline_hash": "sha256:e49315548b298de75f855f081a1c6d69ea1e8b37d2a2957f26a303320e574477",
-  "reason": "Missing 'takeaway' key in rationale. Added an appropriate takeaway summarizing the key learning point.",
-  "approved_by": "hermes-question-audit",
-  "approved_at": "2026-05-03T12:16:00.000000+00:00",
+  "reason": "Strict explanation backfill from existing specific rationale; answer key and options unchanged.",
+  "approved_by": "hermes-question-remediation-autopilot",
+  "approved_at": "2026-05-06T13:15:57.389Z",
   "proposed": {
-    "rationale": {
-      "takeaway": "Aluminum alloy selection: 6xxx for architectural extrusions, 5xxx for marine, 2xxx/7xxx for aerospace. Temper designations (T5, T6) indicate heat treatment."
-    }
+    "explanation": "Weight savings are minimal and do not justify alloy selection; structural loading is dominated by other factors. Cost favors 6063 due to higher extrusion volumes; 5005 is reserved for corrosion-critical applications. Both 5005 and 6063 require anodizing or powder coating to achieve acceptable durability in exposed environments. 5005 (Al-Mg) alloys provide superior corrosion resistance due to the stabilizing effect of magnesium. For severe marine exposure (salt spray, high humidity, low rainfall washoff), 5005 is preferred over 6063. Both still require Type II or Type III anodizing for durability."
   }
 }
