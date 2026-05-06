@@ -110,3 +110,37 @@ Validation note remains:
 Next exact step:
 - Commit/push Batch 010 artifacts.
 - Run `bun scripts/content-audit/select-question-remediation-batch.ts question-batch-011 25`.
+
+## Stop-Condition Handoff — Question Batch 011 Audit Integrity — 2026-05-06T12:52:48.491364+00:00
+
+Status: STOPPED FOR SAFETY / AUDIT INTEGRITY.
+
+Completed and committed/pushed:
+- Batch 009 remote publish: 5/5 verified, answer-key changes 0, option changes 0.
+- Batch 009 commit: e6e1ae3ee `Publish verified SlateCamp question batch 009`.
+- Batch 010 remote publish: 25/25 verified, answer-key changes 0, option changes 0.
+- Batch 010 commit: edeb257e4 `Publish verified SlateCamp question batch 010`.
+
+Additional branch state:
+- Commit b29b9ebdd `docs(ai): mark ui componentization fully verified on main` is present on main and docs/ui-componentization-verified-main. It was an existing UI-componentization commit in branch state, not part of question remediation.
+
+Batch 011 issue:
+- `bun scripts/content-audit/select-question-remediation-batch.ts question-batch-011 25` selected 25.
+- `bun scripts/content-audit/verify-question-batch.ts question-batch-011` passed at first run.
+- A remote apply command reported `PUBLISHED_VERIFIED`, safe_rows 25, verified 25, backup path `/Users/philiplewis/slatecamp/.ai/20_content_publish/backups/questions-backup-question-batch-011-20260506T124900Z.json`.
+- During commit preparation, the local `.ai/18_question_improvement/production_batches/question-batch-011` and `.ai/20_content_publish/*question-batch-011*` artifacts were not present in the working tree.
+- A reconstruction/no-op remote verification was attempted and reported `NOOP_VERIFIED`, verified 25, backup path `/Users/philiplewis/slatecamp/.ai/20_content_publish/backups/questions-backup-question-batch-011-20260506T125128Z.json`, but those reconstructed artifacts also were not present when staging was attempted.
+- Current repo state is clean on branch `main`; no Batch 011 audit artifacts are committed.
+
+Reason for stop:
+- Remote mutation appears to have occurred for Batch 011, but the expected local audit artifacts/backup files are absent from the working tree. Continuing to Batch 012 would compound audit uncertainty.
+
+Next exact safe resume step:
+1. Query remote `questions` by the 25 Batch 011 question_ids from the terminal transcript if available, or rerun the deterministic selector on a clean branch to recover candidate IDs.
+2. Verify each remote row explanation equals the proposed rationale backfill and answer keys/options are unchanged.
+3. Regenerate and commit Batch 011 backup, dry-run/no-op verification, rollback manifest, and final reports.
+4. Only after Batch 011 audit artifacts are safely committed, resume with `bun scripts/content-audit/select-question-remediation-batch.ts question-batch-012 50`.
+
+Global validation note:
+- `bun run content-audit:validate` remains blocked by unrelated article bundle `public-service-counters-and-atms--3c69e570-a75c-4168-ad09-914e2c1062f9` due missing preserved UI blocks and candidate_hash mismatch.
+
