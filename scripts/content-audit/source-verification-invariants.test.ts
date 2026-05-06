@@ -137,8 +137,13 @@ describe('source verification invariant artifacts', () => {
     expect(smoke.db_write_attempted).toBe(false)
     expect(smoke.source_pack_directory_exists).toBe(false)
     expect(smoke.embeddings_directory_exists).toBe(false)
+
+    // The smoke artifact remains a non-mutating source-verification check. Production-governed
+    // source packs are now allowed only under the explicit approval pipeline and must carry
+    // their own validation report; generic export/root source-pack paths remain forbidden.
+    expect(existsSync(path.join(process.cwd(), '.ai/16_source_packs/validation/source-pack-validation.generated.json'))).toBe(true)
+    expect(existsSync(path.join(process.cwd(), '.ai/16_source_packs/embeddings/embedding-validation.generated.json'))).toBe(true)
     for (const forbiddenPath of [
-      '.ai/16_source_packs',
       '.ai/content-audit-export/source-packs',
       '.ai/content-audit-export/embeddings',
       'source-packs',
