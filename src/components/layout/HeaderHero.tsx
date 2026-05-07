@@ -51,7 +51,7 @@ export function HeaderHero({
   return (
     <section
       className={cn(
-        'relative mb-3 w-full h-16 flex items-center border-b border-border bg-card overflow-hidden',
+        'relative mb-3 w-full h-8 flex items-center border border-border bg-card overflow-hidden',
         accentBorder && `border-l-[3px] ${accentBorder}`,
         className,
       )}
@@ -72,7 +72,7 @@ export function HeaderHero({
       <div className='relative z-10 w-full max-w-5xl px-4 xl:px-6'>
         <div className='flex flex-col md:flex-row md:items-start md:justify-between gap-3'>
           <div className='flex-1 min-w-0 space-y-1'>
-            {category && (
+            {/* {category && (
               <p
                 className={cn(
                   'font-dm-mono text-[11px] font-medium uppercase tracking-[0.15em] flex items-center gap-1.5',
@@ -84,8 +84,8 @@ export function HeaderHero({
                 )}
                 {category}
               </p>
-            )}
-{description && (
+            )} */}
+            {description && (
               <p className='text-sm text-text-secondary leading-tight'>
                 {description}
               </p>

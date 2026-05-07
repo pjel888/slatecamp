@@ -24,7 +24,10 @@ import {
   getArticleSiblings,
   type WikiArticleSource,
 } from '@/lib/actions/wiki-actions'
-import { getCachedArticleAndNodeById, getCachedTaxonomyTreeByDiscipline } from '@/lib/actions/cached-queries'
+import {
+  getCachedArticleAndNodeById,
+  getCachedTaxonomyTreeByDiscipline,
+} from '@/lib/actions/cached-queries'
 import {
   getEIPromptsForArticle,
   getUserEIResponsesForArticle,
@@ -34,24 +37,40 @@ import {
 import type { TaxonomyNode } from '@/lib/actions/taxonomy'
 import { isDemoMode } from '@/lib/demo/config'
 
-const mapDifficulty = (level?: number | null): 'Foundational' | 'Intermediate' | 'Advanced' => {
+const mapDifficulty = (
+  level?: number | null,
+): 'Foundational' | 'Intermediate' | 'Advanced' => {
   if (!level || level <= 1) return 'Foundational'
   if (level === 2) return 'Intermediate'
   return 'Advanced'
 }
 
-const normalizeDifficulty = (label?: string | null, level?: number | null): 'Foundational' | 'Intermediate' | 'Advanced' => {
-  if (label === 'Foundational' || label === 'Intermediate' || label === 'Advanced') return label
+const normalizeDifficulty = (
+  label?: string | null,
+  level?: number | null,
+): 'Foundational' | 'Intermediate' | 'Advanced' => {
+  if (
+    label === 'Foundational' ||
+    label === 'Intermediate' ||
+    label === 'Advanced'
+  )
+    return label
   return mapDifficulty(level)
 }
 
-const formatUpdatedNote = (updatedNote?: string | null, updatedAt?: string | null) => {
+const formatUpdatedNote = (
+  updatedNote?: string | null,
+  updatedAt?: string | null,
+) => {
   if (updatedNote?.trim()) return updatedNote
   if (!updatedAt) return undefined
   return `Updated ${new Date(updatedAt).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}`
 }
 
-const formatReadTime = (storedReadTime: string | null | undefined, minutes: number) => {
+const formatReadTime = (
+  storedReadTime: string | null | undefined,
+  minutes: number,
+) => {
   if (storedReadTime?.trim()) return storedReadTime.replace(/\s*read$/i, '')
   return `${minutes} min`
 }
@@ -73,8 +92,14 @@ const getArticleLearningContext = (
   article: ArticleLearningMetadata,
   node: TaxonomyNode | null,
 ) => {
-  const subjectLabel = article.subject_label || getSubjectName(node?.subject_area) || 'General Knowledge'
-  const difficultyLabel = normalizeDifficulty(article.difficulty_label, node?.difficulty ?? node?.level)
+  const subjectLabel =
+    article.subject_label ||
+    getSubjectName(node?.subject_area) ||
+    'General Knowledge'
+  const difficultyLabel = normalizeDifficulty(
+    article.difficulty_label,
+    node?.difficulty ?? node?.level,
+  )
   const learningPurpose =
     article.lea_tests_you ||
     node?.description ||
@@ -85,7 +110,7 @@ const getArticleLearningContext = (
 
 interface WikiArticlePageProps {
   params: Promise<{ articleId: string }>
-  searchParams: Promise<{ 
+  searchParams: Promise<{
     minimal?: string
     from?: string
     topic?: string
@@ -105,7 +130,8 @@ export async function generateMetadata(
     }
   }
 
-  const { subjectLabel, difficultyLabel, learningPurpose } = getArticleLearningContext(article, node)
+  const { subjectLabel, difficultyLabel, learningPurpose } =
+    getArticleLearningContext(article, node)
   const description = truncateMetadataDescription(learningPurpose)
   const title = `${article.title} | SlateCamp Wiki`
 
@@ -156,13 +182,21 @@ export default async function WikiArticlePage(props: WikiArticlePageProps) {
   const demoEIResponses: EIResponseMap = {}
   const demoSources: WikiArticleSource[] = []
   const [eiPrompts, eiResponses, sources, relatedTopics, siblings] = demoMode
-    ? [demoEIPrompts, demoEIResponses, demoSources, [], { prev: null, next: null }] as const
+    ? ([
+        demoEIPrompts,
+        demoEIResponses,
+        demoSources,
+        [],
+        { prev: null, next: null },
+      ] as const)
     : await Promise.all([
         getEIPromptsForArticle(article.article_id),
         getUserEIResponsesForArticle(article.article_id),
         getArticleSources(article.article_id),
         getRelatedTopics(node),
-        node?.node_id ? getArticleSiblings(node.node_id) : Promise.resolve({ prev: null, next: null }),
+        node?.node_id
+          ? getArticleSiblings(node.node_id)
+          : Promise.resolve({ prev: null, next: null }),
       ])
 
   const practiceHref = ROUTES.quiz.setup('camp')
@@ -173,9 +207,13 @@ export default async function WikiArticlePage(props: WikiArticlePageProps) {
   // Extract data for all zones
   const headings = getArticleHeadings(article)
   const readingTime = estimateReadingTime(article.content || '')
-  const { subjectLabel, difficultyLabel, learningPurpose } = getArticleLearningContext(article, node)
+  const { subjectLabel, difficultyLabel, learningPurpose } =
+    getArticleLearningContext(article, node)
   const readTimeLabel = formatReadTime(article.read_time, readingTime)
-  const updatedNote = formatUpdatedNote(article.updated_note, article.updated_at)
+  const updatedNote = formatUpdatedNote(
+    article.updated_note,
+    article.updated_at,
+  )
 
   const sidebarContent = (
     <WikiRightSidebar
@@ -188,7 +226,7 @@ export default async function WikiArticlePage(props: WikiArticlePageProps) {
       relatedTopics={relatedTopics}
       headings={headings}
       articleSlug={article.slug}
-      scrollContainerId="wiki-center-pane"
+      scrollContainerId='wiki-center-pane'
       sources={sources}
     />
   )
@@ -201,26 +239,31 @@ export default async function WikiArticlePage(props: WikiArticlePageProps) {
         articleId={article.article_id}
         articleTitle={article.title}
         articleSlug={article.slug}
-        scrollContainerId="wiki-center-pane"
+        scrollContainerId='wiki-center-pane'
         mobileActionsContent={sidebarContent}
       />
 
-      <div className="flex flex-1 min-h-0 relative">
+      <div className='flex flex-1 min-h-0 relative'>
         <main
-          id="wiki-center-pane"
+          id='wiki-center-pane'
           className={cn(
             'flex-1 min-w-0 overflow-y-auto scroll-smooth bg-background flex flex-col',
-            !isMinimal && 'selection:bg-primary/10 selection:text-primary'
+            !isMinimal && 'selection:bg-primary/10 selection:text-primary',
           )}
         >
-          <div className="flex-1">
-            <div className={cn(
-              'max-w-4xl mx-auto px-8 py-12',
-              isMinimal && 'px-4 py-6 max-w-none'
-            )}>
+          <div className='flex-1'>
+            <div
+              className={cn(
+                'max-w-4xl mx-auto p-2',
+                isMinimal && 'px-4 py-6 max-w-none',
+              )}
+            >
               {fromWrongAnswer && (
-                <div className="mb-8">
-                  <WrongAnswerBanner fromWrongAnswer={true} topicName={sourceTopicId || wikiNodeName || null} />
+                <div className='mb-8'>
+                  <WrongAnswerBanner
+                    fromWrongAnswer={true}
+                    topicName={sourceTopicId || wikiNodeName || null}
+                  />
                 </div>
               )}
 
@@ -262,45 +305,54 @@ export default async function WikiArticlePage(props: WikiArticlePageProps) {
                   nodeName={wikiNodeName}
                 />
               )}
-
             </div>
           </div>
 
           <WikiReadTracker
             articleId={article.article_id}
-            scrollContainerId="wiki-center-pane"
+            scrollContainerId='wiki-center-pane'
           />
 
           {/* Prev/Next — sticky to the bottom, always visible. Hidden in print. */}
           {!isMinimal && (
-            <div className="shrink-0 border-t border-border bg-background print:hidden">
-              <div className="max-w-4xl mx-auto px-8 py-3 flex items-center justify-between text-xs text-muted-foreground">
+            <div className='shrink-0 border-t border-border bg-background print:hidden'>
+              <div className='max-w-4xl mx-auto px-8 py-3 flex items-center justify-between text-xs text-muted-foreground'>
                 {siblings.prev ? (
-                  <Link 
+                  <Link
                     href={ROUTES.wiki.article(siblings.prev.article_id || '')}
-                    className="flex items-center gap-1 hover:text-primary transition-colors"
+                    className='flex items-center gap-1 hover:text-primary transition-colors'
                   >
                     &larr; {siblings.prev.name}
                   </Link>
-                ) : <span />}
-                
+                ) : (
+                  <span />
+                )}
+
                 {siblings.next ? (
-                  <Link 
+                  <Link
                     href={ROUTES.wiki.article(siblings.next.article_id || '')}
-                    className="flex items-center gap-1 hover:text-primary transition-colors text-right"
+                    className='flex items-center gap-1 hover:text-primary transition-colors text-right'
                   >
                     {siblings.next.name} &rarr;
                   </Link>
-                ) : <span />}
+                ) : (
+                  <span />
+                )}
               </div>
             </div>
           )}
         </main>
 
         {!isMinimal && (
-          <aside className="hidden xl:block w-[280px] shrink-0 border-l border-border bg-background overflow-y-auto">
-            <Suspense fallback={<div className="p-6"><WikiRightSidebarSkeleton /></div>}>
-              <div className="p-6 sticky top-0">
+          <aside className='hidden xl:block w-[280px] shrink-0 border-l border-border bg-background overflow-y-auto'>
+            <Suspense
+              fallback={
+                <div className='px-4 pb-2 pt-0 '>
+                  <WikiRightSidebarSkeleton />
+                </div>
+              }
+            >
+              <div className='px-4 pb-2 pt-0 sticky top-0'>
                 {sidebarContent}
               </div>
             </Suspense>
@@ -315,7 +367,9 @@ export default async function WikiArticlePage(props: WikiArticlePageProps) {
 async function getRelatedTopics(node: TaxonomyNode | null) {
   if (!node?.parent_id || !node.discipline_id) return []
 
-  const disciplineTree = await getCachedTaxonomyTreeByDiscipline(node.discipline_id)
+  const disciplineTree = await getCachedTaxonomyTreeByDiscipline(
+    node.discipline_id,
+  )
   return disciplineTree
     .filter(
       (candidate) =>

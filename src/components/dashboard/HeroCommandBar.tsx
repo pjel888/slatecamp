@@ -88,7 +88,7 @@ export function HeroCommandBar({
   const isNewUser = readinessScore === 0
 
   return (
-    <div className='w-full min-h-[216px] shrink-0 overflow-hidden flex flex-col xl:min-h-[212px] border-b p-2'>
+    <div className='w-full h-56 shrink-0 overflow-hidden flex flex-col  border-b p-2'>
       {/* ── Top row: Ring | Greeting+Stats | Heatmap ──────────────── */}
       <div className='flex items-stretch w-full flex-1'>
         {/* SECTION 1: Readiness Score Ring */}
