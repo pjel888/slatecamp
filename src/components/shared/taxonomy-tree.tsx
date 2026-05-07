@@ -620,26 +620,26 @@ const TaxonomyTree = ({
   return (
     <TaxonomyTreeContext.Provider value={contextValue}>
       <div className={cn('group/tree flex flex-col transition-opacity duration-200 ease-out', className)}>
-        <div className="flex flex-col gap-1.5 p-2 pb-3 border-b border-border/60">
+        <div className="flex items-center gap-1.5 px-2 py-1.5 border-b border-border/60">
           {shouldShowSearch && (
-            <SearchInput
-              onChange={setSearchQuery}
-              placeholder="Filter syllabus..."
-              size="sm"
-              debounceMs={250}
-              loading={isSearchPending}
-              className="bg-muted/30 border-none shadow-none focus-visible:ring-1 focus-visible:ring-primary/20"
-            />
-          )}
-          <div className="flex items-center justify-end px-1 mt-0.5">
-            <div className="flex items-center gap-2">
-              <button onClick={handleExpandAll} className="p-1 rounded-sm hover:bg-muted text-text-tertiary hover:text-primary transition-colors cursor-pointer" title="Expand All">
-                <ArrowsOut size={16} weight="bold" className="w-4 h-4" />
-              </button>
-              <button onClick={handleCollapseAll} className="p-1 rounded-sm hover:bg-muted text-text-tertiary hover:text-primary transition-colors cursor-pointer" title="Collapse All">
-                <ArrowsIn size={16} weight="bold" className="w-4 h-4" />
-              </button>
+            <div className="min-w-0 flex-1">
+              <SearchInput
+                onChange={setSearchQuery}
+                placeholder="Filter..."
+                size="sm"
+                debounceMs={250}
+                loading={isSearchPending}
+                className="bg-muted/30 border-none shadow-none focus-visible:ring-1 focus-visible:ring-primary/20"
+              />
             </div>
+          )}
+          <div className="flex items-center gap-0.5 shrink-0">
+            <button onClick={handleExpandAll} className="p-1 rounded-sm hover:bg-muted text-text-tertiary hover:text-primary transition-colors cursor-pointer" title="Expand All" aria-label="Expand All">
+              <ArrowsOut size={14} weight="bold" className="w-3.5 h-3.5" />
+            </button>
+            <button onClick={handleCollapseAll} className="p-1 rounded-sm hover:bg-muted text-text-tertiary hover:text-primary transition-colors cursor-pointer" title="Collapse All" aria-label="Collapse All">
+              <ArrowsIn size={14} weight="bold" className="w-3.5 h-3.5" />
+            </button>
           </div>
         </div>
 
