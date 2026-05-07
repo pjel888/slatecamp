@@ -7,9 +7,11 @@ import {
   DiffReport,
   UiBlocksFile,
   assertBulkApplyConfirmation,
+  buildArticleContentUpdatePayload,
   buildComposeErrorFile,
   buildDiffMarkdown,
   composeCandidate,
+  containsRawSlatecampUiBlockPlaceholder,
   createContentAuditSupabaseClient,
   createExportId,
   diffCandidate,
@@ -99,6 +101,7 @@ async function main() {
         apply: options.apply === true,
         dryRun,
         force: options.force === true,
+        repairPlaceholders: options.repairPlaceholders === true,
       })
 
       report = {
@@ -114,16 +117,25 @@ async function main() {
       }
 
       if (report.blockers.length === 0 && options.apply === true && !dryRun) {
-        const updatePayload: Record<string, unknown> = {
+        const isRepairScenario = options.repairPlaceholders === true && containsRawSlatecampUiBlockPlaceholder(remote.content)
+        const updatePayload = buildArticleContentUpdatePayload({
           content: candidate,
-          updated_at: nowIso(),
+          updatedAt: nowIso(),
+          reviewerId: options.reviewerId,
+          note: options.note,
+          suppressPublicUpdatedNote: isRepairScenario,
+        })
+        const compareAndSwapContent = isRepairScenario ? remote.content : original
+        if (isRepairScenario) {
+          report.repair_mode = 'placeholder_content'
+          if (options.note) {
+            report.warnings.push('--repair-placeholders treats --note as an operational note; it was not written to public updated_note.')
+          }
         }
-        if (options.reviewerId) updatePayload.updated_by = options.reviewerId
-        if (options.note) updatePayload.updated_note = options.note
         const updated = await updateArticleContentIfUnchanged({
           supabase,
           articleId: metadata.article_id,
-          originalContent: original,
+          originalContent: compareAndSwapContent,
           updatePayload,
         })
         report.pushed = true

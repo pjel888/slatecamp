@@ -42,6 +42,7 @@ export interface CliOptions {
   reviewerId?: string
   note?: string
   command?: string
+  repairPlaceholders?: boolean
 }
 
 export interface ArticleMetadata {
@@ -183,6 +184,7 @@ export interface PushSafetyInput {
   apply: boolean
   dryRun: boolean
   force: boolean
+  repairPlaceholders?: boolean
 }
 
 export interface PushSafetyResult {
@@ -371,6 +373,28 @@ export function sha256Json(value: unknown): string {
 
 export function nowIso() {
   return new Date().toISOString()
+}
+
+export function buildArticleContentUpdatePayload({
+  content,
+  updatedAt,
+  reviewerId,
+  note,
+  suppressPublicUpdatedNote = false,
+}: {
+  content: string
+  updatedAt: string
+  reviewerId?: string | null
+  note?: string | null
+  suppressPublicUpdatedNote?: boolean
+}): Record<string, unknown> {
+  const updatePayload: Record<string, unknown> = {
+    content,
+    updated_at: updatedAt,
+  }
+  if (reviewerId) updatePayload.updated_by = reviewerId
+  if (note && !suppressPublicUpdatedNote) updatePayload.updated_note = note
+  return updatePayload
 }
 
 export function createExportId() {
@@ -977,6 +1001,11 @@ export function placeholderRegex() {
   return /\[SLATECAMP_UI_BLOCK:((?:ui|block)_\d{4})[^\]]*\](?:[\s\S]*?\[\/SLATECAMP_UI_BLOCK\])?/g
 }
 
+export function containsRawSlatecampUiBlockPlaceholder(content?: string | null): boolean {
+  if (!content) return false
+  return placeholderRegex().test(content)
+}
+
 export function findPlaceholders(content: string) {
   const placeholders: Array<{ blockId: string; raw: string; start: number; end: number }> = []
   const regex = placeholderRegex()
@@ -1259,16 +1288,39 @@ export function evaluatePushSafety(input: PushSafetyInput): PushSafetyResult {
   const warnings: string[] = []
 
   if (!input.candidate) blockers.push('candidate.md is missing.')
-  if (input.apply && candidateHash != null && candidateHash === originalHash) {
+
+  const candidateHasPlaceholders = containsRawSlatecampUiBlockPlaceholder(input.candidate)
+  const remoteHasPlaceholders = containsRawSlatecampUiBlockPlaceholder(input.remoteContent)
+  const isRepairScenario = input.repairPlaceholders === true && remoteHasPlaceholders && !candidateHasPlaceholders
+
+  if (input.apply && candidateHash != null && candidateHash === originalHash && !isRepairScenario) {
     blockers.push('candidate.md matches original.md; refusing no-op apply.')
   }
   if (originalHash !== input.metadata.original_content_hash && originalHash !== input.metadata.content_hash) {
     blockers.push('original.md hash does not match article metadata export hash.')
   }
-  if (remoteHash == null) blockers.push('Remote content was not fetched; stale check cannot pass.')
-  if (remoteHash != null && remoteHash !== input.metadata.original_content_hash && remoteHash !== originalHash) {
-    blockers.push('Remote Supabase content differs from export baseline; refusing stale push.')
+
+  if (candidateHasPlaceholders) {
+    blockers.push('candidate.md contains raw SLATECAMP_UI_BLOCK placeholders; run compose-candidates before push.')
   }
+  if (remoteHasPlaceholders) {
+    warnings.push('Remote Supabase content contains raw SLATECAMP_UI_BLOCK placeholders and should be repaired from candidate.md.')
+  }
+
+  let staleCheckPassed = false
+  if (remoteHash == null) {
+    blockers.push('Remote content was not fetched; stale check cannot pass.')
+  } else {
+    if (isRepairScenario) {
+      staleCheckPassed = true
+      warnings.push('Stale check bypassed in repair mode: remote content is placeholder-corrupted; explicit placeholder repair.')
+    } else if (remoteHash === input.metadata.original_content_hash || remoteHash === originalHash) {
+      staleCheckPassed = true
+    } else {
+      blockers.push('Remote Supabase content differs from export baseline; refusing stale push.')
+    }
+  }
+
   if (!input.diffReport) blockers.push('diff-report.json is missing.')
   if (input.diffReport && !input.diffReport.safe_to_push) blockers.push('diff-report.json marks candidate unsafe.')
   if (input.diffReport && input.diffReport.unresolved_placeholders_count > 0) blockers.push('Candidate has unresolved placeholders.')
@@ -1286,7 +1338,7 @@ export function evaluatePushSafety(input: PushSafetyInput): PushSafetyResult {
     remote_hash_before: remoteHash,
     original_hash: originalHash,
     candidate_hash: candidateHash,
-    stale_check_passed: remoteHash != null && (remoteHash === input.metadata.original_content_hash || remoteHash === originalHash),
+    stale_check_passed: staleCheckPassed,
     pushed: false,
     blockers,
     warnings,

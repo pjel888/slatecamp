@@ -2,10 +2,15 @@ import { marked } from 'marked'
 import TurndownService from 'turndown'
 import {
   REGISTERED_WIKI_COMPONENTS,
-  BLOCK_WIKI_COMPONENTS,
-  SELF_CLOSING_WIKI_COMPONENTS,
   BLOCK_WIKI_COMPONENTS_ALTERNATION,
 } from './wiki-component-registry'
+
+// --- SlateCamp UI block placeholder detection ---
+
+export function containsSlatecampUiBlockPlaceholder(source?: string | null): boolean {
+  if (!source) return false
+  return /\[SLATECAMP_UI_BLOCK:[^\]]+\]/.test(source)
+}
 
 // --- Table of contents (server-safe) ---
 
@@ -208,15 +213,30 @@ export function createMdxFallbackSource(content: string): string {
   // Identify known component names for fallback processing
   const knownComponentNames = Array.from(REGISTERED_WIKI_COMPONENTS)
   const knownComponentsAlternation = knownComponentNames.join('|')
-  const knownSelfClosing = Array.from(SELF_CLOSING_WIKI_COMPONENTS).join('|')
-  const knownBlockComponents = Array.from(BLOCK_WIKI_COMPONENTS).join('|')
 
   const fallbackLines: string[] = []
   let insideCodeFence = false
   let skippingComponent: string | null = null
+  let insidePlaceholder = false
 
   for (const line of cleaned.split('\n')) {
     const trimmed = line.trim()
+
+    // Preserve raw SlateCamp UI block placeholders as visible sentinels
+    if (trimmed.startsWith('[SLATECAMP_UI_BLOCK:')) {
+      insidePlaceholder = true
+      fallbackLines.push(line)
+      continue
+    }
+    if (trimmed === '[/SLATECAMP_UI_BLOCK]') {
+      insidePlaceholder = false
+      fallbackLines.push(line)
+      continue
+    }
+    if (insidePlaceholder) {
+      fallbackLines.push(line)
+      continue
+    }
 
     // Track fenced code blocks to avoid mangling them
     if (trimmed.startsWith('```')) {
