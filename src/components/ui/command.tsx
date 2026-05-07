@@ -5,12 +5,13 @@ import { Command as CommandPrimitive } from 'cmdk'
 
 import { cn } from '@/lib/utils'
 import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-} from '@/components/ui/dialog'
+  Modal,
+  ModalBody,
+  ModalContent,
+  ModalDescription,
+  ModalHeader,
+  ModalTitle,
+} from '@/components/ui/modal'
 import { InputGroup, InputGroupAddon } from '@/components/ui/input-group'
 import { MagnifyingGlass, Check } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
@@ -39,7 +40,7 @@ function CommandDialog({
   showCloseButton = false,
   shouldFilter,
   ...props
-}: Omit<React.ComponentProps<typeof Dialog>, 'children'> & {
+}: Omit<React.ComponentProps<typeof Modal>, 'children'> & {
   title?: string
   description?: string
   className?: string
@@ -48,21 +49,24 @@ function CommandDialog({
   children: React.ReactNode
 }) {
   return (
-    <Dialog {...props}>
-      <DialogHeader className='sr-only'>
-        <DialogTitle>{title}</DialogTitle>
-        <DialogDescription>{description}</DialogDescription>
-      </DialogHeader>
-      <DialogContent
-        className={cn(
-          'top-1/3 translate-y-0 overflow-hidden rounded-lg! p-0',
-          className,
-        )}
-        showCloseButton={showCloseButton}
+    <Modal {...props}>
+      <ModalContent
+        size="lg"
+        position="top-center"
+        className={cn('overflow-hidden rounded-lg! p-0', className)}
       >
-        <Command shouldFilter={shouldFilter}>{children}</Command>
-      </DialogContent>
-    </Dialog>
+        <ModalHeader
+          showCloseButton={showCloseButton}
+          className={showCloseButton ? undefined : 'sr-only'}
+        >
+          <ModalTitle>{title}</ModalTitle>
+          <ModalDescription>{description}</ModalDescription>
+        </ModalHeader>
+        <ModalBody className="overflow-hidden p-0">
+          <Command shouldFilter={shouldFilter}>{children}</Command>
+        </ModalBody>
+      </ModalContent>
+    </Modal>
   )
 }
 

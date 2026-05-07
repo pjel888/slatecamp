@@ -227,6 +227,7 @@ Use the existing shadcn-style primitives and SlateCamp shared components before 
 
 - **Buttons:** one primary action per view. Secondary and ghost actions should stay visibly subordinate.
 - **Cards:** quiet border, white or semantic surface, compact heading, clear content hierarchy, no nested card stacks.
+- **Modals:** use `@/components/ui/modal` for popup dialogs. The standard shell is the Omnibar pattern: title/header on the left, close button on the right, scrollable body, optional footer, and size/position variants only. Do not introduce new popup modal shells; keep `Sheet` for slide-in panels and `Popover` for anchored disclosures.
 - **Forms:** visible labels, clear helper/error text, strong focus states, and no unlabeled icon-only inputs.
 - **Badges:** status and metadata only; avoid turning badges into gamification rewards.
 - **Quiz feedback:** correct/selected states can use semantic backgrounds; wrong/low-score states should avoid anxiety-inducing red unless marking an actual incorrect answer.

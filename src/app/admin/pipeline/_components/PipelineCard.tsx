@@ -3,7 +3,7 @@
 import { useState, useTransition } from 'react'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
-import { ConfirmDialog } from '@/components/ui/dialog'
+import { ConfirmModal } from '@/components/ui/modal'
 import { updateArticleStatus } from '@/lib/actions/admin/pipeline'
 import { normalizeEditorStatus } from '@/lib/admin/editor-workflow'
 
@@ -169,7 +169,7 @@ export const PipelineCard = ({ article, columnKey }: PipelineCardProps) => {
       </div>
 
       {confirmAction && (
-        <ConfirmDialog
+        <ConfirmModal
           open={!!confirmAction}
           onOpenChange={(open) => {
             if (!open) setConfirmAction(null)

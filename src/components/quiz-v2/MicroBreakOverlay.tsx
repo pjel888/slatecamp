@@ -1,9 +1,17 @@
 'use client'
 
-import { useCallback, useEffect, useRef, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { ArrowRight, Coffee } from '@phosphor-icons/react'
-import { cn } from '@/lib/utils'
 import { Button } from '@/components/ui/button'
+import {
+  Modal,
+  ModalBody,
+  ModalContent,
+  ModalDescription,
+  ModalFooter,
+  ModalHeader,
+  ModalTitle,
+} from '@/components/ui/modal'
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
@@ -21,27 +29,7 @@ export const MicroBreakOverlay = ({
   onContinue,
 }: MicroBreakOverlayProps) => {
   const [secondsLeft, setSecondsLeft] = useState(breakDurationSeconds)
-  const continueButtonRef = useRef<HTMLButtonElement>(null)
-  const dialogRef = useRef<HTMLDivElement>(null)
-  const previousFocusRef = useRef<Element | null>(null)
 
-  // Store previous focus and focus continue button on mount
-  useEffect(() => {
-    previousFocusRef.current = document.activeElement
-    continueButtonRef.current?.focus()
-
-    return () => {
-      // Restore focus on unmount
-      if (
-        previousFocusRef.current &&
-        'focus' in previousFocusRef.current
-      ) {
-        (previousFocusRef.current as HTMLElement).focus()
-      }
-    }
-  }, [])
-
-  // Countdown timer
   useEffect(() => {
     if (secondsLeft <= 0) return
 
@@ -52,132 +40,78 @@ export const MicroBreakOverlay = ({
     return () => clearInterval(interval)
   }, [secondsLeft])
 
-  // Focus trap
-  useEffect(() => {
-    const dialog = dialogRef.current
-    if (!dialog) return
-
-    const handleFocusTrap = (e: FocusEvent) => {
-      if (!dialog.contains(e.target as Node)) {
-        continueButtonRef.current?.focus()
-      }
-    }
-
-    document.addEventListener('focusin', handleFocusTrap)
-    return () => document.removeEventListener('focusin', handleFocusTrap)
-  }, [])
-
-  // Escape closes
-  const handleKeyDown = useCallback(
-    (e: React.KeyboardEvent) => {
-      if (e.key === 'Escape') {
-        e.preventDefault()
-        onContinue()
-      }
-    },
-    [onContinue],
-  )
-
   const progressPercent =
     breakDurationSeconds > 0
       ? Math.round(((breakDurationSeconds - secondsLeft) / breakDurationSeconds) * 100)
       : 100
 
-  const prefersReducedMotion =
-    typeof window !== 'undefined'
-      ? window.matchMedia('(prefers-reduced-motion: reduce)').matches
-      : false
-
   return (
-    // Gentle overlay — semi-transparent, not blocking
-    <div
-      className={cn(
-        'fixed inset-0 z-50 flex items-center justify-center',
-        'bg-black/20 backdrop-blur-[2px]',
-        !prefersReducedMotion && 'animate-in fade-in duration-150 ease-out',
-      )}
-      aria-hidden="false"
+    <Modal
+      open
+      onOpenChange={(open) => {
+        if (!open) onContinue()
+      }}
     >
-      <div
-        ref={dialogRef}
+      <ModalContent
+        size="sm"
         role="dialog"
-        aria-modal="true"
-        aria-labelledby="micro-break-title"
         aria-describedby="micro-break-desc"
-        className={cn(
-          'w-full max-w-sm rounded-lg bg-card p-6 shadow-modal',
-          'flex flex-col items-center gap-4 text-center',
-          !prefersReducedMotion && 'animate-in zoom-in-95 duration-150 ease-out',
-        )}
-        onKeyDown={handleKeyDown}
       >
-        {/* Icon */}
-        <div
-          className="flex h-12 w-12 items-center justify-center rounded-md bg-primary-50"
-          aria-hidden="true"
-        >
-          <Coffee size={24} weight="regular" className="text-primary" />
-        </div>
-
-        {/* Message */}
-        <div className="space-y-1">
-          <h2
-            id="micro-break-title"
-            className="text-sm font-semibold text-foreground"
-          >
-            Good momentum — take a moment.
-          </h2>
-          <p
-            id="micro-break-desc"
-            className="text-sm text-text-secondary"
-          >
-            You've completed{' '}
+        <ModalHeader closeAriaLabel="Continue quiz">
+          <ModalTitle id="micro-break-title">Good momentum — take a moment.</ModalTitle>
+          <ModalDescription id="micro-break-desc">
+            You&apos;ve completed{' '}
             <span className="font-medium text-foreground">
               {questionsCompleted} question{questionsCompleted !== 1 ? 's' : ''}
             </span>
             . A brief pause helps retention.
-          </p>
-        </div>
+          </ModalDescription>
+        </ModalHeader>
 
-        {/* Countdown */}
-        <div className="w-full space-y-2">
-          {/* Progress bar */}
+        <ModalBody className="flex flex-col items-center gap-4 p-6 text-center">
           <div
-            role="progressbar"
-            aria-valuenow={progressPercent}
-            aria-valuemin={0}
-            aria-valuemax={100}
-            aria-label={`Break timer: ${secondsLeft} seconds remaining`}
-            className="h-1.5 w-full overflow-hidden rounded-sm bg-border"
+            className="flex h-12 w-12 items-center justify-center rounded-md bg-primary-50"
+            aria-hidden="true"
           >
-            <div
-              className={cn(
-                'h-full bg-primary rounded-sm',
-                !prefersReducedMotion && 'transition-all duration-1000 ease-linear',
-              )}
-              style={{ width: `${progressPercent}%` }}
-            />
+            <Coffee size={24} weight="regular" className="text-primary" />
           </div>
 
-          <p className="text-xs text-muted-foreground" aria-live="polite" aria-atomic="true">
-            {secondsLeft > 0
-              ? `Resuming in ${secondsLeft}s`
-              : 'Ready when you are'}
-          </p>
-        </div>
+          <div className="w-full space-y-2">
+            <div
+              role="progressbar"
+              aria-valuenow={progressPercent}
+              aria-valuemin={0}
+              aria-valuemax={100}
+              aria-label={`Break timer: ${secondsLeft} seconds remaining`}
+              className="h-1.5 w-full overflow-hidden rounded-sm bg-border"
+            >
+              <div
+                className="h-full rounded-sm bg-primary transition-all duration-1000 ease-linear"
+                style={{ width: `${progressPercent}%` }}
+              />
+            </div>
 
-        {/* Continue button — always available */}
-        <Button
-          ref={continueButtonRef}
-          variant="primary"
-          size="md"
-          onClick={onContinue}
-          rightIcon={<ArrowRight size={16} aria-hidden="true" />}
-          className="w-full"
-        >
-          Continue
-        </Button>
-      </div>
-    </div>
+            <p className="text-xs text-muted-foreground" aria-live="polite" aria-atomic="true">
+              {secondsLeft > 0
+                ? `Resuming in ${secondsLeft}s`
+                : 'Ready when you are'}
+            </p>
+          </div>
+        </ModalBody>
+
+        <ModalFooter>
+          <Button
+            variant="primary"
+            size="md"
+            onClick={onContinue}
+            rightIcon={<ArrowRight size={16} aria-hidden="true" />}
+            className="w-full sm:w-auto"
+            autoFocus
+          >
+            Continue
+          </Button>
+        </ModalFooter>
+      </ModalContent>
+    </Modal>
   )
 }

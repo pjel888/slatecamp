@@ -9,13 +9,14 @@ import { Card, CardContent, CardHeader } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-  DialogDescription,
-  DialogFooter,
-} from '@/components/ui/dialog'
+  Modal,
+  ModalBody,
+  ModalContent,
+  ModalHeader,
+  ModalTitle,
+  ModalDescription,
+  ModalFooter,
+} from '@/components/ui/modal'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 import { normalizeEditorStatus } from '@/lib/admin/editor-workflow'
@@ -199,24 +200,26 @@ export const AssetDetailView = ({ asset }: AssetDetailViewProps) => {
       </div>
 
       {/* Delete confirm dialog */}
-      <Dialog open={deleteOpen} onOpenChange={setDeleteOpen}>
-        <DialogContent showCloseButton={false}>
-          <DialogHeader>
-            <DialogTitle>Archive Asset</DialogTitle>
-            <DialogDescription>
+      <Modal open={deleteOpen} onOpenChange={setDeleteOpen}>
+        <ModalContent>
+          <ModalHeader>
+            <ModalTitle>Archive Asset</ModalTitle>
+          </ModalHeader>
+          <ModalBody className="p-4">
+            <ModalDescription>
               Are you sure you want to archive{' '}
               <span className="font-medium text-foreground">&ldquo;{asset.name}&rdquo;</span>?
               This removes it from active operational use while preserving the record.
-            </DialogDescription>
-          </DialogHeader>
+            </ModalDescription>
 
-          {deleteError && (
-            <p className="text-[11px] text-destructive bg-destructive-50 border border-destructive/20 rounded-sm px-3 py-2">
-              {deleteError}
-            </p>
-          )}
+            {deleteError && (
+              <p className="text-[11px] text-destructive bg-destructive-50 border border-destructive/20 rounded-sm px-3 py-2">
+                {deleteError}
+              </p>
+            )}
+          </ModalBody>
 
-          <DialogFooter>
+          <ModalFooter>
             <Button
               variant="secondary"
               onClick={() => {
@@ -230,9 +233,9 @@ export const AssetDetailView = ({ asset }: AssetDetailViewProps) => {
             <Button variant="destructive" onClick={handleDelete} disabled={deleting}>
               {deleting ? 'Archiving…' : 'Archive Asset'}
             </Button>
-          </DialogFooter>
-        </DialogContent>
-      </Dialog>
+          </ModalFooter>
+        </ModalContent>
+      </Modal>
     </div>
   )
 }

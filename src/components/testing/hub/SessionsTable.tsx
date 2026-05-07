@@ -6,16 +6,15 @@ import { useRouter } from 'next/navigation'
 import { DataTable, type Column } from '@/components/shared/data-table'
 import { Button } from '@/components/ui/button'
 import {
-  AlertDialog,
-  AlertDialogAction,
-  AlertDialogCancel,
-  AlertDialogContent,
-  AlertDialogDescription,
-  AlertDialogFooter,
-  AlertDialogHeader,
-  AlertDialogTitle,
-  AlertDialogTrigger,
-} from '@/components/ui/alert-dialog'
+  Modal,
+  ModalClose,
+  ModalContent,
+  ModalDescription,
+  ModalFooter,
+  ModalHeader,
+  ModalTitle,
+  ModalTrigger,
+} from '@/components/ui/modal'
 import { abandonSession as abandonSessionAction } from '@/lib/actions/quiz-v2'
 import { ROUTES } from '@/lib/routes'
 
@@ -209,8 +208,8 @@ const ActionLink = ({
         >
           Resume
         </Link>
-        <AlertDialog>
-          <AlertDialogTrigger asChild>
+        <Modal>
+          <ModalTrigger render={
             <Button
               variant="ghost"
               size="xs"
@@ -220,31 +219,35 @@ const ActionLink = ({
             >
               {isAbandoning ? 'Abandoning...' : 'Abandon'}
             </Button>
-          </AlertDialogTrigger>
-          <AlertDialogContent className="max-w-sm rounded-lg">
-            <AlertDialogHeader>
-              <AlertDialogTitle className="text-[16px] font-semibold" style={{ color: 'var(--foreground)' }}>
+          } />
+          <ModalContent size="sm" role="alertdialog">
+            <ModalHeader>
+              <ModalTitle className="text-[16px] font-semibold" style={{ color: 'var(--foreground)' }}>
                 Abandon this session?
-              </AlertDialogTitle>
-              <AlertDialogDescription
+              </ModalTitle>
+              <ModalDescription
                 className="text-[14px] font-normal leading-relaxed"
                 style={{ color: 'var(--text-secondary)' }}
               >
                 Your progress on this session will be lost. Any answers you&apos;ve submitted are already saved to your mastery data.
-              </AlertDialogDescription>
-            </AlertDialogHeader>
-            <AlertDialogFooter className="gap-2">
-              <AlertDialogCancel className="rounded-sm text-[13px]">Keep going</AlertDialogCancel>
-              <AlertDialogAction
-                variant="destructive"
-                className="rounded-sm bg-destructive text-[13px] text-white hover:bg-destructive/90"
-                onClick={() => onAbandon(session.session_id)}
-              >
-                Yes, abandon
-              </AlertDialogAction>
-            </AlertDialogFooter>
-          </AlertDialogContent>
-        </AlertDialog>
+              </ModalDescription>
+            </ModalHeader>
+            <ModalFooter className="gap-2">
+              <ModalClose render={<Button variant="secondary" className="rounded-sm text-[13px]">Keep going</Button>} />
+              <ModalClose
+                render={
+                  <Button
+                    variant="destructive"
+                    className="rounded-sm bg-destructive text-[13px] text-white hover:bg-destructive/90"
+                    onClick={() => onAbandon(session.session_id)}
+                  >
+                    Yes, abandon
+                  </Button>
+                }
+              />
+            </ModalFooter>
+          </ModalContent>
+        </Modal>
       </div>
     )
   }

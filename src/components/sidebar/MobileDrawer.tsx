@@ -12,7 +12,7 @@ import { SIDEBAR_GROUPS, DASHBOARD_ITEM, SETTINGS_ITEM } from './sidebar-constan
 import { Z_INDEX, ICON_TIER_OPACITY } from './types'
 import type { SidebarNavItemConfig } from './types'
 import type { NavigationPendingInfo } from './types'
-import { ConfirmDialog } from '@/components/ui/dialog'
+import { ConfirmModal as ConfirmDialog } from '@/components/ui/modal'
 import { useNavigationPending } from '@/hooks/useNavigationPending'
 import { useQuizStore } from '@/stores/useQuizStore'
 import { updateSessionProgress } from '@/lib/actions/quiz-v2'

@@ -299,6 +299,37 @@ import { Button } from '@/components/ui/button'
 </button>
 ```
 
+### Modal
+
+```tsx
+// ✅ CORRECT — use the canonical popup modal shell
+import {
+  Modal,
+  ModalBody,
+  ModalContent,
+  ModalFooter,
+  ModalHeader,
+  ModalTitle,
+} from '@/components/ui/modal'
+
+<Modal open={open} onOpenChange={setOpen}>
+  <ModalContent size="lg" position="top-center">
+    <ModalHeader>
+      <ModalTitle>Search</ModalTitle>
+    </ModalHeader>
+    <ModalBody>Scrollable modal content</ModalBody>
+    <ModalFooter>Footer actions or hints</ModalFooter>
+  </ModalContent>
+</Modal>
+
+// ❌ WRONG — ad-hoc popup shell with its own close/header/footer layout
+<div className="fixed inset-0 z-50">
+  <div className="rounded-xl bg-card p-6">Custom modal</div>
+</div>
+```
+
+Popup modals must use `@/components/ui/modal` so the Omnibar layout remains standard: title/header left, close button right, fixed header/footer, scrollable body, and flexible sizing only. Keep `Sheet` for slide-in panels and `Popover` for anchored non-modal disclosures.
+
 ### HTML Sanitization
 
 **Always sanitize before `dangerouslySetInnerHTML`:**

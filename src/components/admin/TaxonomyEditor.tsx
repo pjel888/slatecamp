@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { CaretRight, CaretDown, Plus, PencilSimple, Trash, XCircle } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
-import { ConfirmDialog } from '@/components/ui/dialog'
+import { ConfirmModal } from '@/components/ui/modal'
 import {
   updateTaxonomyNode,
   createTaxonomyNode,
@@ -284,7 +284,7 @@ export const TaxonomyEditor = ({ initialNodes, disciplineId }: TaxonomyEditorPro
         </div>
       </div>
 
-      <ConfirmDialog
+      <ConfirmModal
         open={showDeleteDialog}
         onOpenChange={setShowDeleteDialog}
         title="Delete taxonomy node"

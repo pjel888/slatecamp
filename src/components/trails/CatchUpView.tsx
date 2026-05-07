@@ -2,11 +2,11 @@
 
 import { Clock, ListChecks } from '@phosphor-icons/react/dist/ssr'
 import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-} from '@/components/ui/dialog'
+  Modal as Dialog,
+  ModalContent as DialogContent,
+  ModalHeader as DialogHeader,
+  ModalTitle as DialogTitle,
+} from '@/components/ui/modal'
 import { ScrollArea } from '@/components/ui/scroll-area'
 import type { TrailDay } from '@/types/app'
 import { SUBJECT_COLORS } from '@/types/app'

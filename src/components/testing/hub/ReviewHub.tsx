@@ -33,12 +33,12 @@ import { startSession } from '@/lib/actions/quiz-v2'
 import { mergeWithPreset } from '@/lib/quiz/mode-presets'
 import { Button } from '@/components/ui/button'
 import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-} from '@/components/ui/dialog'
+  Modal as Dialog,
+  ModalContent as DialogContent,
+  ModalDescription as DialogDescription,
+  ModalHeader as DialogHeader,
+  ModalTitle as DialogTitle,
+} from '@/components/ui/modal'
 
 interface RawSession {
   session_id: string

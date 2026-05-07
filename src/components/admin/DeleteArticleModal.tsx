@@ -3,13 +3,14 @@
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogFooter,
-  DialogHeader,
-  DialogTitle,
-} from '@/components/ui/dialog'
+  Modal,
+  ModalBody,
+  ModalContent,
+  ModalDescription,
+  ModalFooter,
+  ModalHeader,
+  ModalTitle,
+} from '@/components/ui/modal'
 import { Button } from '@/components/ui/button'
 import { deleteWikiArticle } from '@/lib/actions/admin/wiki'
 import { toast } from '@/lib/hooks/use-toast'
@@ -72,24 +73,26 @@ export const DeleteArticleModal = ({
   }
 
   return (
-    <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent showCloseButton={true}>
-        <DialogHeader>
-          <DialogTitle>Archive Article</DialogTitle>
-          <DialogDescription>
+    <Modal open={open} onOpenChange={onOpenChange}>
+      <ModalContent>
+        <ModalHeader>
+          <ModalTitle>Archive Article</ModalTitle>
+        </ModalHeader>
+        <ModalBody className="p-4">
+          <ModalDescription>
             Are you sure you want to archive <span className="font-medium text-foreground">&ldquo;{articleTitle}&rdquo;</span>?
             This will remove it from the student-facing wiki but preserve the record and its linked questions in the system.
-          </DialogDescription>
-        </DialogHeader>
-        <DialogFooter>
+          </ModalDescription>
+        </ModalBody>
+        <ModalFooter>
           <Button variant="secondary" onClick={() => onOpenChange(false)} disabled={loading}>
             Cancel
           </Button>
           <Button variant="destructive" onClick={handleDelete} loading={loading}>
             Archive Article
           </Button>
-        </DialogFooter>
-      </DialogContent>
-    </Dialog>
+        </ModalFooter>
+      </ModalContent>
+    </Modal>
   )
 }

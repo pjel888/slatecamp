@@ -1,8 +1,6 @@
 'use client'
 
 import { useRef, useState, useEffect } from 'react'
-import { X } from '@phosphor-icons/react/dist/ssr'
-import { cn } from '@/lib/utils'
 import { addFinancialEntry, updateFinancialEntry } from '@/lib/actions/ceo/financial-actions'
 import {
   type FinancialEntry,
@@ -21,6 +19,14 @@ import {
 } from '@/components/ui/select'
 import { Checkbox } from '@/components/ui/checkbox'
 import { Button } from '@/components/ui/button'
+import {
+  Modal,
+  ModalBody,
+  ModalContent,
+  ModalFooter,
+  ModalHeader,
+  ModalTitle,
+} from '@/components/ui/modal'
 
 interface FinancialEntryFormProps {
   isOpen: boolean
@@ -126,42 +132,19 @@ export const FinancialEntryForm = ({ isOpen, onClose, editEntry }: FinancialEntr
   const categories = CATEGORY_MAP[entryType]
 
   return (
-    <>
-      {/* Backdrop */}
-      {isOpen && (
-        <div
-          className="fixed inset-0 z-40 bg-black/30"
-          onClick={onClose}
-          aria-hidden="true"
-        />
-      )}
+    <Modal
+      open={isOpen}
+      onOpenChange={(open) => {
+        if (!open) onClose()
+      }}
+    >
+      <ModalContent size="md" role="dialog">
+        <ModalHeader>
+          <ModalTitle>{isEdit ? 'Edit Entry' : 'Add Financial Entry'}</ModalTitle>
+        </ModalHeader>
 
-      {/* Drawer */}
-      <div
-        className={cn(
-          'fixed right-0 top-0 z-50 h-full w-full max-w-md bg-card shadow-modal flex flex-col transition-transform duration-300 ease-out',
-          isOpen ? 'translate-x-0' : 'translate-x-full',
-        )}
-        role="dialog"
-        aria-modal="true"
-        aria-label={isEdit ? 'Edit financial entry' : 'Add financial entry'}
-      >
-        {/* Header */}
-        <div className="flex items-center justify-between border-b border-border px-5 py-4">
-          <h2 className="text-sm font-semibold text-foreground">
-            {isEdit ? 'Edit Entry' : 'Add Financial Entry'}
-          </h2>
-          <button
-            onClick={onClose}
-            className="rounded-sm p-1 text-muted-foreground hover:text-foreground transition-colors duration-150"
-            aria-label="Close"
-          >
-            <X size={16} />
-          </button>
-        </div>
-
-        {/* Form */}
-        <form ref={formRef} onSubmit={handleSubmit} className="flex-1 overflow-y-auto px-5 py-4 space-y-4">
+        <ModalBody className="p-0">
+          <form ref={formRef} onSubmit={handleSubmit} className="flex-1 overflow-y-auto px-5 py-4 space-y-4">
           {isEdit && <input type="hidden" name="id" value={editEntry.id} />}
 
           {/* Entry Date */}
@@ -265,10 +248,10 @@ export const FinancialEntryForm = ({ isOpen, onClose, editEntry }: FinancialEntr
               {error}
             </p>
           )}
-        </form>
+          </form>
+        </ModalBody>
 
-        {/* Footer */}
-        <div className="flex items-center gap-2 border-t border-border px-5 py-4">
+        <ModalFooter>
           <Button
             type="button"
             variant="secondary"
@@ -286,8 +269,8 @@ export const FinancialEntryForm = ({ isOpen, onClose, editEntry }: FinancialEntr
           >
             {isEdit ? 'Save Changes' : 'Add Entry'}
           </Button>
-        </div>
-      </div>
-    </>
+        </ModalFooter>
+      </ModalContent>
+    </Modal>
   )
 }
