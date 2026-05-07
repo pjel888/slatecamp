@@ -57,7 +57,7 @@ export const FeatureCheckItem = ({
       <div className={`text-[13px] font-bold ${textDark ? 'text-white' : 'text-camp-black'}`}>
         {title}
       </div>
-      <div className={`mt-1 text-[12px] leading-relaxed ${textDark ? 'text-white/50' : 'text-text-2'}`}>
+      <div className={`mt-1 text-[12px] leading-relaxed ${textDark ? 'text-white/70' : 'text-text-2'}`}>
         {description}
       </div>
     </div>
@@ -80,7 +80,7 @@ export const SectionEyebrow = ({
     <Starburst className='h-3 w-3 text-camp-amber' />
     <span
       className={`font-mono text-[11px] tracking-[.2em] uppercase ${
-        dark ? 'text-white/40' : amber ? 'text-black/50' : 'text-muted-foreground'
+        dark ? 'text-white/60' : amber ? 'text-black/70' : 'text-muted-foreground'
       }`}
     >
       {label}
@@ -102,7 +102,7 @@ export const FeaturePill = ({
     amber: 'border-camp-amber/25 bg-camp-amber/10 text-warning-700',
     green: 'border-camp-green/25 bg-camp-green/8 text-camp-green',
     'muted-light': 'border-border-design text-text-2',
-    'muted-dark': 'border-white/15 text-white/50',
+    'muted-dark': 'border-white/20 text-white/70',
     'on-amber': 'border-black/20 bg-black/[0.08] text-camp-black',
   }
 

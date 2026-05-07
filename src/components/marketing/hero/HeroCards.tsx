@@ -31,9 +31,9 @@ const SUBJECT_READINESS = [
   { label: 'Planning & Design', value: 47, improved: 99 },
 ] as const
 
-/* ── Card 1: LEA Subject Coverage (Back Left) ── */
+/* ── Card 1: Board-Review Subject Coverage (Back Left) ── */
 
-const LEASubjectCoverageCard = () => {
+const BoardReviewSubjectCoverageCard = () => {
   const subjects = [
     { name: 'Building Technology', weight: '20%', color: 'bg-camp-cobalt' },
     { name: 'Structural Design', weight: '15%', color: 'bg-camp-cobalt' },
@@ -55,7 +55,7 @@ const LEASubjectCoverageCard = () => {
       <div className='mb-2.5 flex items-center gap-1.5 border-b border-border-design pb-2'>
         <Starburst className='h-3 w-3 text-camp-amber' />
         <span className='font-[family-name:var(--font-dm-mono)] text-[11px] font-extrabold uppercase tracking-[0.22em] text-text-2'>
-          LEA Coverage
+          Board coverage
         </span>
       </div>
       <ul className='space-y-1.5'>
@@ -80,7 +80,7 @@ const LEASubjectCoverageCard = () => {
       </ul>
       <div className='mt-2.5 border-t border-border-design pt-2 text-center'>
         <span className='text-[11px] font-medium text-text-2'>
-          All 7 subjects · Fully mapped
+          Seven subjects · study map preview
         </span>
       </div>
     </motion.div>
@@ -167,19 +167,19 @@ const ConversionHookCard = ({ isLoggedIn }: { isLoggedIn: boolean }) => {
       </div>
 
       <h3 className='text-base font-semibold text-ink'>
-        {isHovered ? "This is what's possible" : "Are you sure you'll pass?"}
+        {isHovered ? 'A clearer study plan' : 'Know what to repair next'}
       </h3>
 
       <p className='mt-2 text-[12px] leading-snug text-text-2'>
         {isHovered
-          ? 'This is what your score can look like once SlateCamp is driving your review.'
-          : 'Most students walk into the LEA not knowing where their gaps are. This is where you find out.'}
+          ? 'This is what the map can feel like once weak topics are visible.'
+          : 'Use SlateCamp after lecture or mock exams to find gaps while there is still time to repair them.'}
       </p>
 
       <div className='mt-3 flex items-center gap-3 rounded-md bg-white/80 p-3 ring-1 ring-border'>
         <ReadinessDial
           value={isHovered ? 98 : 42}
-          label={isHovered ? 'Exam-ready' : 'At risk — typical starting score'}
+          label={isHovered ? 'Study plan clearer' : 'Repair list starting point'}
           showWarning={!isHovered}
           tone={isHovered ? 'success' : 'warning'}
         />
@@ -194,8 +194,8 @@ const ConversionHookCard = ({ isLoggedIn }: { isLoggedIn: boolean }) => {
           </p>
           <p className='text-text-2'>
             {isHovered
-              ? 'Same exam. Very different odds when you train with intent.'
-              : 'Most reviewees sit here right before they realise where the gaps are.'}
+              ? 'Same goal. Clearer priorities for what to review next.'
+              : 'The useful moment is finding the gap before it becomes a surprise.'}
           </p>
         </div>
       </div>
@@ -258,7 +258,7 @@ export const HeroCards = ({ isLoggedIn }: { isLoggedIn: boolean }) => (
     id='hero-right'
     className='relative flex min-h-[320px] w-full flex-col items-center gap-4 md:col-span-5 md:min-h-[380px]  md:flex-row md:items-stretch md:justify-center md:gap-0'
   >
-    <LEASubjectCoverageCard />
+    <BoardReviewSubjectCoverageCard />
     <MockQuestionCard />
     <ConversionHookCard isLoggedIn={isLoggedIn} />
   </div>

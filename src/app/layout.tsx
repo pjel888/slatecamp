@@ -14,11 +14,10 @@ const isDemo = !process.env.NEXT_PUBLIC_SUPABASE_URL
 
 export const metadata: Metadata = {
   title: {
-    default: `${siteConfig.name} — Personalized LEA Review`,
+    default: `${siteConfig.name} — Architecture Study Companion`,
     template: `%s | ${siteConfig.name}`,
   },
-  description:
-    'A cognitive-first review platform built for the LEA. Active recall, spaced repetition, and interactive study tools for professional licensure success.',
+  description: siteConfig.description,
   metadataBase: new URL(
     process.env.NEXT_PUBLIC_APP_URL ?? 'http://localhost:3000',
   ),
@@ -40,9 +39,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en' suppressHydrationWarning>
-      <body
-        className='font-sans antialiased'
-      >
+      <body className='font-sans antialiased'>
         <ThemeProvider>
           {process.env.NODE_ENV === 'development' && <DevModeOverlay />}
           <NoiseFilter />

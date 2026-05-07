@@ -1,24 +1,41 @@
 'use client'
 
 import Link from 'next/link'
-import { HeroHeadline } from '@/components/marketing/HeroHeadline'
+import { CaretRight } from '@phosphor-icons/react/dist/ssr'
+import { HeroCodeEnvelopeExplorer } from '@/components/marketing/hero/HeroCodeEnvelopeExplorer'
 import {
   Starburst,
   NoiseOverlay,
   DottedGridOverlay,
 } from '@/components/marketing/LandingPrimitives'
-import { CaretRight } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
+import { ROUTES } from '@/lib/constants'
 
-/* ── Constants ── */
-
-const STATS = [
-  'Syllabus-mapped to the LEA',
-  'Real-time Readiness Score',
+const PROOF_PILLS = [
   'Source-backed explanations',
+  'Licensure Examination for Architects readiness map',
+  'Interactive 3D lab',
+  'Free architecture tools',
 ] as const
 
-/* ── Main Hero Section Export ── */
+const PLATFORM_PILLARS = [
+  {
+    title: 'Knowledge Resources',
+    body: 'Find the rule, see the explanation, then connect it to quizzes and 3D examples.',
+  },
+  {
+    title: 'Quizzes',
+    body: 'Check what stuck after lecture, mock exams, and late-night study sessions.',
+  },
+  {
+    title: '3D Lab',
+    body: 'Turn spatial code topics into visible, inspectable study moments.',
+  },
+  {
+    title: 'Free Tools',
+    body: 'Use calculators and study utilities that stay useful beyond board review.',
+  },
+] as const
 
 export const HeroSection = ({
   ctaHref,
@@ -28,81 +45,97 @@ export const HeroSection = ({
   ctaLabel: string
 }) => (
   <section
-    aria-label='Hero'
-    className='relative flex flex-col overflow-hidden bg-page-bg px-6 pb-0 pt-18 md:pt-20'
+    aria-label='Architecture learning platform for school, Licensure Examination for Architects readiness, and practice.'
+    className='relative overflow-hidden bg-page-bg px-6 pb-8 pt-20 md:pt-22'
   >
     <div
       aria-hidden='true'
-      className='pointer-events-none absolute inset-0 z-0 bg-[url("/images/dashboard/Dashboard-BG-Image.png")] bg-cover bg-bottom bg-no-repeat opacity-70'
+      className='pointer-events-none absolute inset-0 z-0 bg-[url("/images/dashboard/Dashboard-BG-Image.png")] bg-cover bg-bottom bg-no-repeat opacity-45'
     />
     <div
       aria-hidden='true'
-      className='pointer-events-none absolute inset-0 z-0 bg-linear-to-b from-page-bg/35 via-page-bg/20 to-page-bg'
+      className='pointer-events-none absolute inset-0 z-0 bg-linear-to-b from-page-bg/20 via-page-bg/65 to-page-bg'
     />
     <div
-      className='landing-orb pointer-events-none absolute right-[-10%] top-[-15%] h-[50vh] w-[50vh] rounded-full md:h-[45vw] md:w-[45vw]'
-      style={{
-        filter: 'blur(30px)',
-      }}
+      className='landing-orb pointer-events-none absolute right-[-8%] top-[-18%] h-[50vh] w-[50vh] rounded-full md:h-[42vw] md:w-[42vw]'
+      style={{ filter: 'blur(34px)' }}
       aria-hidden='true'
     />
     <DottedGridOverlay />
-    <NoiseOverlay opacity={0.04} />
+    <NoiseOverlay opacity={0.035} />
 
-    {/* Hero Content */}
-    <div className='relative z-10 mx-auto w-full max-w-[1200px]'>
-      <div className='relative flex min-h-[600px] flex-col items-start'>
-        {/* Giant headline */}
-        <div className='flex h-full w-full max-w-[760px] flex-col justify-start'>
-          <div className='mt-26'>
-            <div className='motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-300 flex items-center gap-3'>
-              <div
-                className='flex flex-col gap-1 text-primary'
-                aria-label='Professional LEA review platform.'
-              >
-                <div className='flex flex-row items-center gap-2 '>
-                  <Starburst className='h-3 w-3' />
-                  <span className='font-[family-name:var(--font-dm-mono)] text-[12px] font-semibold tracking-[0.22em] uppercase text-camp-cobalt'>
-                    Licensure Examination Review for Architects
-                  </span>
-                </div>
-                {/* <p className='text-[12px] font-semibold'>Review Platform</p> */}
-              </div>
-            </div>
-
-            <HeroHeadline />
+    <div className='relative z-10 mx-auto w-full max-w-[1240px]'>
+      <div className='grid min-h-[calc(100vh-96px)] items-center gap-10 py-8 lg:grid-cols-[0.92fr_1.08fr] lg:py-6'>
+        <div className='max-w-[680px]'>
+          <div className='motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-300 flex items-center gap-2'>
+            <Starburst className='h-3 w-3 text-camp-amber' />
+            <span className='font-[family-name:var(--font-dm-mono)] text-[12px] font-semibold tracking-[0.22em] uppercase text-camp-cobalt'>
+              Architecture learning platform
+            </span>
           </div>
 
-          <div className=' flex h-full flex-col justify-start pt-8'>
-            <div className='motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-300 motion-safe:delay-500 flex flex-col items-end justify-end gap-3'>
-              <Link
-                href={ctaHref}
-                className='inline-flex items-center gap-2 whitespace-nowrap rounded-sm bg-camp-cobalt px-7 py-3 text-[14px] font-medium text-white transition-all duration-150 hover:bg-primary-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-camp-cobalt focus-visible:ring-offset-2'
-              >
-                {ctaLabel} <SCIcon icon={CaretRight} size='md' />
-              </Link>
-              <p className='motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-300 motion-safe:delay-700 flex justify-start text-[11px] font-semibold text-text-2'>
-                Free to start &middot; No credit card required
-              </p>
-            </div>
+          <h1 className='motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-300 motion-safe:delay-100 mt-5 font-[family-name:var(--font-geist-sans)] text-[clamp(3.1rem,8vw,6.4rem)] font-black leading-[0.9] tracking-[-0.055em] text-foreground'>
+            Your architecture study companion.
+          </h1>
+
+          <p className='motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-300 motion-safe:delay-200 mt-6 max-w-[590px] text-[16px] font-medium leading-relaxed text-primary sm:text-[18px]'>
+            Source-backed resources, quizzes, 3D labs, and free tools for architecture school,
+            Licensure Examination for Architects readiness, and professional practice.
+          </p>
+
+          <p className='motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-300 motion-safe:delay-300 mt-4 max-w-[580px] rounded-2xl border border-white/70 bg-white/75 p-4 text-[15px] font-medium leading-relaxed text-camp-black shadow-sm backdrop-blur'>
+            Built around Philippine codes, board-review realities, and the way students actually study: anxious after lecture, buried in notes, and looking for a reliable buddy that makes the hard parts visible.
+          </p>
+
+          <div className='motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-300 motion-safe:delay-500 mt-8 flex flex-wrap items-center gap-3'>
+            <Link
+              href={ctaHref}
+              className='inline-flex items-center gap-2 whitespace-nowrap rounded-sm bg-camp-cobalt px-7 py-3 text-[14px] font-semibold text-white transition-all duration-150 hover:bg-primary-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-camp-cobalt focus-visible:ring-offset-2'
+            >
+              {ctaLabel} <SCIcon icon={CaretRight} size='md' />
+            </Link>
+            <Link
+              href={ROUTES.calculators.root}
+              className='inline-flex items-center gap-2 whitespace-nowrap rounded-sm border border-border-design bg-white/80 px-7 py-3 text-[14px] font-semibold text-camp-black transition-all duration-150 hover:border-camp-cobalt/40 hover:text-camp-cobalt focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-camp-cobalt focus-visible:ring-offset-2'
+            >
+              Explore Free Tools
+            </Link>
+            <Link
+              href='#knowledge-resources'
+              className='text-[13px] font-semibold text-camp-cobalt underline decoration-camp-cobalt/25 underline-offset-4 hover:decoration-camp-cobalt'
+            >
+              Browse free knowledge previews
+            </Link>
           </div>
 
-          {/* Stats Bar */}
-          <div className='motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-300 motion-safe:delay-[900ms] mt-4 flex flex-wrap items-center gap-x-8 gap-y-3 border-t border-border-design pt-3'>
-            {STATS.map((stat) => (
+          <p className='motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-300 motion-safe:delay-700 mt-3 max-w-[620px] text-[12px] font-bold leading-relaxed text-camp-black'>
+            Free after signup where needed · No credit card required · Built to use beside your review center, school, books, and mentors
+          </p>
+
+          <div className='motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-300 motion-safe:delay-500 mt-7 flex flex-wrap gap-2'>
+            {PROOF_PILLS.map((pill) => (
               <span
-                key={stat}
-                className='flex items-center gap-2 text-[12px] text-gray-400'
+                key={pill}
+                className='rounded-full border border-camp-cobalt/15 bg-white/80 px-3 py-1.5 text-[12px] font-bold text-camp-black shadow-sm'
               >
-                <span
-                  className='h-1 w-1 rounded-full bg-camp-cobalt'
-                  aria-hidden='true'
-                />
-                {stat}
+                {pill}
               </span>
             ))}
           </div>
         </div>
+
+        <div className='motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-3 motion-safe:duration-500 motion-safe:delay-300'>
+          <HeroCodeEnvelopeExplorer />
+        </div>
+      </div>
+
+      <div className='grid gap-3 border-t border-border-design/80 pt-4 sm:grid-cols-2 lg:grid-cols-4'>
+        {PLATFORM_PILLARS.map((pillar) => (
+          <div key={pillar.title} className='rounded-xl border border-border-design bg-white/75 p-4 shadow-sm backdrop-blur'>
+            <h2 className='text-[13px] font-extrabold text-camp-black'>{pillar.title}</h2>
+            <p className='mt-1 text-[12px] leading-relaxed text-text-2'>{pillar.body}</p>
+          </div>
+        ))}
       </div>
     </div>
   </section>

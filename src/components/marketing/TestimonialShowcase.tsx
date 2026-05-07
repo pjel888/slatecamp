@@ -1,25 +1,23 @@
-// PLACEHOLDER — replace with real testimonials before launch
-// Target archetypes: (1) first-time passer, (2) visual learner, (3) retaker who watched Readiness Score climb
-const TESTIMONIALS = [
+const USE_CASES = [
   {
     quote:
-      'SlateCamp\u2019s 3D Lab completely changed how I understand Building Tech. It\u2019s like having a site visit in my pocket.',
-    name: 'Maria S.',
-    title: '4th Year Architecture Student',
+      'After lecture, use the 3D Lab to turn a flat code rule into a shape you can inspect and remember.',
+    name: 'Visual learners',
+    title: '3D explanations for spatial topics',
     rating: 5,
   },
   {
     quote:
-      'The Readiness Score predicted my LEA passing rate with terrifying accuracy. I walked into the exam room with zero panic.',
-    name: 'Juan D.',
-    title: 'Newly Licensed Architect',
+      'After a mock exam, use the Readiness Score to see which weak topics need repair before they become exam-day surprises.',
+    name: 'Board reviewees',
+    title: 'Companion beside review centers and notes',
     rating: 5,
   },
   {
     quote:
-      'I abandoned my physical flashcards entirely. The Spaced Repetition engine on this platform is unmatched.',
-    name: 'Carlos R.',
-    title: 'LEA Topnotcher',
+      'During self-study, use quizzes, resources, and free tools to choose what to review next instead of rereading everything at random.',
+    name: 'Architecture students',
+    title: 'School, boards, and practice support',
     rating: 5,
   },
 ]
@@ -27,7 +25,7 @@ const TESTIMONIALS = [
 const StarRating = ({ count }: { count: number }) => (
   <div
     className='flex gap-0.5'
-    aria-label={`${count} out of 5 stars`}
+    aria-label={`${count} out of 5 value markers`}
     role='img'
   >
     {Array.from({ length: count }, (_, i) => (
@@ -48,9 +46,9 @@ export const TestimonialShowcase = ({
   dark = false,
 }: { dark?: boolean } = {}) => (
   <div className='mt-12 grid grid-cols-1 gap-3 sm:grid-cols-3'>
-    {TESTIMONIALS.map((testimonial) => (
+    {USE_CASES.map((item) => (
       <article
-        key={testimonial.name}
+        key={item.name}
         className={
           'flex flex-col justify-between rounded-md border p-7 transition-transform duration-150 hover:-translate-y-0.5 ' +
           (dark
@@ -59,13 +57,13 @@ export const TestimonialShowcase = ({
         }
       >
         <div>
-          <StarRating count={testimonial.rating} />
+          <StarRating count={item.rating} />
           <blockquote
             className={`font-[family-name:var(--font-syne)] mt-5 text-[17px] italic leading-relaxed ${
               dark ? 'text-white/90' : 'text-ink'
             }`}
           >
-            &ldquo;{testimonial.quote}&rdquo;
+            &ldquo;{item.quote}&rdquo;
           </blockquote>
         </div>
         <div
@@ -80,19 +78,17 @@ export const TestimonialShowcase = ({
               (dark ? 'text-white' : 'text-ink')
             }
           >
-            {testimonial.name}
+            {item.name}
           </p>
           <p
             className={
               'mt-0.5 text-[12px] ' + (dark ? 'text-white/60' : 'text-text-2')
             }
           >
-            {testimonial.title}
+            {item.title}
           </p>
         </div>
       </article>
     ))}
   </div>
 )
-
-

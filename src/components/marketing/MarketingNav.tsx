@@ -18,13 +18,14 @@ export async function MarketingNav({
   activeRoute = '/',
   logoScrollsToTop = false,
   variant = 'light',
+  isLoggedIn: isLoggedInOverride,
 }: {
   activeRoute?: string
   logoScrollsToTop?: boolean
   variant?: 'light' | 'dark'
+  isLoggedIn?: boolean
 }) {
-  const { data: { user } } = await getUserIfPresent()
-  const isLoggedIn = !!user
+  const isLoggedIn = isLoggedInOverride ?? !!(await getUserIfPresent()).data.user
   const isDark = variant === 'dark'
 
   const secondaryLinkClass = (href: string) =>

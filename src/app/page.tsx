@@ -4,43 +4,39 @@ import { LandingPageContent } from '@/components/landing/LandingPageContent'
 import { LandingPageFallback } from '@/components/landing/LandingPageFallback'
 import { siteConfig } from '@/lib/constants'
 
-/* ── SEO Metadata ── */
-
 export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
-  title: `${siteConfig.name} — Know Your LEA Readiness Before Exam Day`,
-  description:
-    'The only LEA prep platform built by a licensed architect. A real-time Readiness Score, expert-verified wiki, and interactive 3D building code models.  Built specifically for the Licensure Examination for Architects (LEA).',
+  title: `${siteConfig.name} | Architecture Study Companion for Licensure Examination for Architects and Practice`,
+  description: siteConfig.description,
   openGraph: {
-    title: `${siteConfig.name} — The LEA Readiness Intelligence Platform`,
+    title: `${siteConfig.name} | Your Architecture Study Companion`,
     description:
-      'Know exactly where you stand before exam day. SlateCamp gives every LEA candidate a live Readiness Score, a taxonomy heatmap of every gap, and a structured path to close them.',
+      'Study with source-backed resources, quizzes, 3D labs, and free tools built around Philippine codes, Licensure Examination for Architects readiness, and architecture practice.',
     type: 'website',
     siteName: siteConfig.name,
   },
   twitter: {
     card: 'summary_large_image',
-    title: `${siteConfig.name} — Stop Studying Blind. Know Your Score.`,
+    title: `${siteConfig.name} | Your Architecture Study Companion`,
     description:
-      'Know exactly where you stand before exam day. SlateCamp gives every LEA candidate a live Readiness Score, a taxonomy heatmap of every gap, and a structured path to close them.',
+      'Resources, quizzes, 3D labs, and free tools for architecture school, Licensure Examination for Architects readiness, and practice.',
   },
   keywords: [
-    'LEA exam prep',
-    'architecture review platform Philippines',
-    'architecture licensure exam Philippines',
-    'LEA reviewer Philippines',
-    'LEA readiness score',
+    'Licensure Examination for Architects exam prep',
+    'Licensure Examination for Architects reviewer Philippines',
+    'Licensure Examination for Architects',
+    'architecture learning platform Philippines',
+    'Philippine architecture codes',
+    'NBCP reviewer',
     'PD 1096 reviewer',
+    'BP 344 reviewer',
+    'RA 9266 reviewer',
     'architecture quiz app Philippines',
-    'LEA practice test',
-    'how to pass LEA Philippines',
-    'LEA building code reviewer',
-    'architecture wiki Philippines',
-    'spaced repetition architecture exam',
+    'architecture calculators Philippines',
+    'architecture school resources',
+    'architecture 3D learning',
     'SlateCamp',
-    'Licensure Examination for Architects (LEA)',
-    'LEA mock exam',
   ],
   alternates: {
     canonical: '/',

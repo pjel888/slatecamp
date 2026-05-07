@@ -2,166 +2,69 @@ import { Starburst } from '@/components/marketing/LandingPrimitives'
 import { ScrollReveal } from '@/components/motion/ScrollReveal'
 import { StaggerParent, StaggerItem } from '@/components/motion/StaggerChildren'
 
-const COMPARISON_ROWS: readonly {
-  dimension: string
-  traditional: string
-  slatecamp: string
-  highlight?: boolean
-}[] = [
+const COMPANION_ROWS = [
   {
-    dimension: 'Cost',
-    traditional: '₱15,000 – ₱30,000',
-    slatecamp: 'Free forever · Premium from ₱299/month',
+    moment: 'After lecture',
+    whatHappens: 'You check if the topic stayed with you before it fades into vague confidence.',
   },
   {
-    dimension: 'Schedule',
-    traditional: 'Fixed classroom hours',
-    slatecamp: 'Study on your schedule, on any device',
+    moment: 'After mock exams',
+    whatHappens: 'You turn wrong answers into patterns instead of treating them as isolated mistakes.',
   },
   {
-    dimension: 'Performance feedback',
-    traditional: 'General scores on mock exams',
-    slatecamp: 'Live Readiness Score by subject, updated every session',
+    moment: 'During self-study',
+    whatHappens: 'You choose tonight’s highest-value topic instead of rereading everything at random.',
   },
   {
-    dimension: 'Content',
-    traditional: 'Textbooks, lectures, handouts',
-    slatecamp: 'Verified questions, 3D Lab, code-cited explanations',
-  },
-  {
-    dimension: 'Personalization',
-    traditional: 'Same syllabus for every student',
-    slatecamp: 'Adapts to your specific weak areas',
-  },
-  {
-    dimension: 'Availability',
-    traditional: 'Metro Manila-heavy',
-    slatecamp: 'Anywhere. Including your commute.',
-  },
-  {
-    dimension: 'Readiness signal',
-    traditional: '"Keep studying."',
-    slatecamp: '"You\'re at 74%. Here\'s exactly what to fix."',
-    highlight: true,
+    moment: 'Before exam day',
+    whatHappens: 'You reduce surprise by making weak spots visible while there is still time to repair them.',
   },
 ] as const
 
 export const ComparisonSection = () => (
-  <section
-    aria-labelledby='comparison-heading'
-    className='border-t border-border-design px-6 py-24'
-  >
+  <section aria-labelledby='companion-heading' className='border-t border-border-design px-6 py-24'>
     <div className='mx-auto max-w-[1200px]'>
       <ScrollReveal delay={0}>
         <div className='flex items-center gap-3'>
           <Starburst className='h-3 w-3 text-camp-amber' />
-          <span className='font-mono text-[11px] tracking-[0.2em] uppercase text-text-2'>
-            Two ways to prepare
+          <span className='font-[family-name:var(--font-dm-mono)] text-[11px] tracking-[0.2em] uppercase text-text-2'>
+            Built beside your review system
           </span>
         </div>
 
         <h2
-          id='comparison-heading'
-          className='mt-4 font-[family-name:var(--font-syne)] text-[clamp(1.75rem,3vw,2.5rem)] font-semibold text-ink'
+          id='companion-heading'
+          className='mt-4 max-w-3xl font-[family-name:var(--font-syne)] text-[clamp(1.9rem,3.6vw,3rem)] font-extrabold leading-tight text-ink'
         >
-          The old way. The better way.
+          Review centers teach. SlateCamp helps you check what stuck.
         </h2>
 
-        <p className='mt-3 max-w-lg text-[15px] leading-relaxed text-text-2'>
-          Traditional review centers work. But there&apos;s one thing they
-          can&apos;t tell you that SlateCamp can: exactly where your gaps are,
-          right now, before exam day.
+        <p className='mt-4 max-w-2xl text-[15px] leading-relaxed text-text-2'>
+          Use SlateCamp after lectures, mock exams, and self-study sessions to test retention, repair mistakes, and choose the next topic. It is the always-on companion beside your instructor, mentor, or review center.
         </p>
       </ScrollReveal>
 
-      {/* Table — desktop */}
-      <div className='mt-10 hidden overflow-hidden rounded-md border border-border-design md:block'>
-        {/* Header row */}
-        <div className='grid grid-cols-[1fr_1fr_1fr] border-b border-border-design bg-white'>
-          <div className='px-5 py-3 text-[12px] font-semibold text-text-2' />
-          <div className='border-l border-border-design px-5 py-3 text-[12px] font-semibold text-text-2'>
-            Traditional Review Center
-          </div>
-          <div className='border-l border-border-design bg-primary-50 px-5 py-3 text-[12px] font-semibold text-camp-cobalt'>
-            SlateCamp
-          </div>
-        </div>
-        {/* Data rows */}
-        <StaggerParent>
-          {COMPARISON_ROWS.map((row) => (
-            <StaggerItem key={row.dimension}>
-              <div
-                className={`grid grid-cols-[1fr_1fr_1fr] border-b border-border-design last:border-0 ${
-                  row.highlight ? 'bg-white' : ''
-                }`}
-              >
-                <div className='px-5 py-3.5 text-[13px] font-medium text-ink'>
-                  {row.dimension}
-                </div>
-                <div className='border-l border-border-design px-5 py-3.5 text-[13px] text-text-2'>
-                  {row.traditional}
-                </div>
-                <div
-                  className={`border-l border-border-design px-5 py-3.5 text-[13px] ${
-                    row.highlight
-                      ? 'font-medium text-camp-cobalt'
-                      : 'text-text-2'
-                  }`}
-                >
-                  {row.slatecamp}
-                </div>
-              </div>
-            </StaggerItem>
-          ))}
-        </StaggerParent>
-      </div>
-
-      {/* Mobile: stacked cards */}
-      <div className='mt-6 md:hidden'>
-        <StaggerParent className='space-y-3'>
-          {COMPARISON_ROWS.map((row) => (
-            <StaggerItem key={row.dimension}>
-              <div className='rounded-md border border-border-design p-4'>
-                <p className='text-[11px] font-semibold uppercase tracking-wide text-gray-400'>
-                  {row.dimension}
+      <div className='mt-10 grid grid-cols-1 gap-3 md:grid-cols-4'>
+        <StaggerParent className='contents'>
+          {COMPANION_ROWS.map((row) => (
+            <StaggerItem key={row.moment}>
+              <article className='h-full rounded-[18px] border border-border-design bg-white p-5 shadow-sm'>
+                <p className='font-[family-name:var(--font-dm-mono)] text-[11px] font-semibold uppercase tracking-[0.16em] text-camp-cobalt'>
+                  {row.moment}
                 </p>
-                <div className='mt-2 flex gap-4'>
-                  <div className='flex-1'>
-                    <p className='text-[11px] font-medium text-gray-400'>
-                      Traditional
-                    </p>
-                    <p className='mt-0.5 text-[12px] text-text-2'>
-                      {row.traditional}
-                    </p>
-                  </div>
-                  <div className='flex-1'>
-                    <p className='text-[11px] font-medium text-camp-cobalt'>
-                      SlateCamp
-                    </p>
-                    <p
-                      className={`mt-0.5 text-[12px] ${
-                        row.highlight
-                          ? 'font-medium text-camp-cobalt'
-                          : 'text-ink'
-                      }`}
-                    >
-                      {row.slatecamp}
-                    </p>
-                  </div>
-                </div>
-              </div>
+                <p className='mt-4 text-[13px] leading-relaxed text-text-2'>{row.whatHappens}</p>
+              </article>
             </StaggerItem>
           ))}
         </StaggerParent>
       </div>
 
-      <p className='mt-6 text-[13px] text-gray-400'>
-        SlateCamp isn&apos;t against review centers — many students use both.
-        But if you want to know whether you&apos;re ready before exam day,
-        SlateCamp is the only way to find out.
-      </p>
+      <div className='mt-8 rounded-[18px] border border-camp-amber/25 bg-camp-amber/10 p-5'>
+        <p className='text-[13px] font-semibold text-camp-black'>Positioning guardrail</p>
+        <p className='mt-2 text-[13px] leading-relaxed text-text-2'>
+          SlateCamp supports architecture instruction. It does not replace instructors, review centers, official sources, local ordinances, or licensed professional judgment.
+        </p>
+      </div>
     </div>
   </section>
 )
-
-

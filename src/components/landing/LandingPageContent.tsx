@@ -18,12 +18,11 @@ export async function LandingPageContent() {
   const isLoggedIn = !!user
 
   const ctaHref = isLoggedIn ? ROUTES.dashboard.root : ROUTES.auth.register
-  const ctaLabel = isLoggedIn ? 'Go to Dashboard' : 'Get Your Free Readiness Score'
+  const ctaLabel = isLoggedIn ? 'Go to Dashboard' : 'Start Your Free Readiness Score'
 
   return (
     <div id='top' className='min-h-screen bg-page-bg'>
-      {/* ────────────────────── NAVIGATION ────────────────────── */}
-      <MarketingNav activeRoute='/' logoScrollsToTop />
+      <MarketingNav activeRoute='/' logoScrollsToTop isLoggedIn={isLoggedIn} />
 
       <main>
         <HeroSection
@@ -32,17 +31,12 @@ export async function LandingPageContent() {
         />
 
         <SocialProofBar />
-
         <BentoFeatureGrid />
-
-        {/* ── Feature Sections ── */}
         <QuestionsSection />
         <ThreeDLabSection />
         <AnalyticsSection />
         <WikiSection />
-
         <HowItWorksSection />
-
         <ComparisonSection />
 
         <FinalCtaSection
@@ -52,7 +46,6 @@ export async function LandingPageContent() {
         />
       </main>
 
-      {/* ────────────────────── FOOTER ────────────────────── */}
       <MarketingFooter />
     </div>
   )
