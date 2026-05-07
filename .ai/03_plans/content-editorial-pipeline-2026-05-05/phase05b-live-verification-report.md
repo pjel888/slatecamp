@@ -1,7 +1,7 @@
 # Phase 0.5B Live Official-Source Verification Report
 
-**Generated:** 2026-05-05T15:48:50Z  
-**Status:** Evidence-only. No source approval. No source-pack creation. No article/question/Supabase mutation.  
+**Generated:** 2026-05-05T15:48:50Z
+**Status:** Evidence-only. No source approval. No source-pack creation. No article/question/Supabase mutation.
 **Scope:** Automated web opening/search for prioritized source bundles, with direct browser/terminal authority-page checks where search extraction was unreliable.
 
 ## Gate language

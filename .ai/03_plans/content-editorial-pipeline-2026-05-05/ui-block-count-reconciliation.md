@@ -1,15 +1,15 @@
 # UI-Block Count Reconciliation — Phase 1A Evidence
 
-**Date:** 2026-05-05  
-**Scope:** Resolve `export-summary.json` claim of `ui_block_count: 0` / `parser_status: not_started` against per-article artifacts.  
+**Date:** 2026-05-05
+**Scope:** Resolve `export-summary.json` claim of `ui_block_count: 0` / `parser_status: not_started` against per-article artifacts.
 **Status:** Evidence gathered; no regeneration performed.
 
 ---
 
 ## Executive Summary
 
-`export-summary.json` reports `ui_block_count: 0` and `parser_status: "not_started"` for **all 567 articles**.  
-Per-article artifacts (`ui-blocks.json`, `normalized.md`, `candidate.md`) exist for **all 567 articles** and contain real UI-block data.  
+`export-summary.json` reports `ui_block_count: 0` and `parser_status: "not_started"` for **all 567 articles**.
+Per-article artifacts (`ui-blocks.json`, `normalized.md`, `candidate.md`) exist for **all 567 articles** and contain real UI-block data.
 **The export-summary is stale for parser-state fields.** The per-article artifacts are the canonical Phase 1A evidence for component complexity and roundtrip readiness.
 
 ---
@@ -33,7 +33,7 @@ Per-article artifacts (`ui-blocks.json`, `normalized.md`, `candidate.md`) exist 
 - `ui_block_count: number`
 - `parser_status: ArticleMetadata['parser_status']`
 
-The export script populates these from **article-metadata.json** at export time.  
+The export script populates these from **article-metadata.json** at export time.
 If `article-metadata.json` lacks `ui_block_count` or `parser_status` (because normalization ran after the export, or metadata was not back-propagated), the export summary defaults to `0` and `"not_started"`.
 
 **Working hypothesis:** Export summary is a **Supabase-export manifest**, not a **post-normalization manifest**. It appears to reflect DB-export state, not roundtrip-pipeline state. This is strongly supported by timestamps and corpus-wide zero parser fields, but remains a hypothesis until source-code tracing proves where `ui_block_count` / `parser_status` are written or omitted.
@@ -52,7 +52,7 @@ If `article-metadata.json` lacks `ui_block_count` or `parser_status` (because no
 | Parser confidence | — | `"high"` on all blocks |
 | Status | — | `"preserved"` on all blocks |
 
-The `ui-blocks.json` `normalized_created_at` is **2026-05-04T09:10:37.030Z**, which is **~14 seconds after** the `export-summary.json` `generated_at` of **2026-05-04T09:10:23.838Z**.  
+The `ui-blocks.json` `normalized_created_at` is **2026-05-04T09:10:37.030Z**, which is **~14 seconds after** the `export-summary.json` `generated_at` of **2026-05-04T09:10:23.838Z**.
 This proves normalization ran after export for the sampled article and supports the stale-summary hypothesis.
 
 ---

@@ -1,7 +1,7 @@
 # Local Source File Inventory Generated — Phase 0.5A.2
 
-**Generated:** 2026-05-05T14:47:56Z  
-**Source intake path:** `vitruvius-connection/`  
+**Generated:** 2026-05-05T14:47:56Z
+**Source intake path:** `vitruvius-connection/`
 **Mode:** Read-only inventory. No source-pack creation. No embeddings. No article/question edits. No Supabase mutation.
 
 ---

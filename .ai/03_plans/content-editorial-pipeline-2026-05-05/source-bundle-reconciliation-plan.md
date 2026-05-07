@@ -1,7 +1,7 @@
 # Source Bundle Reconciliation Plan — Phase 0.5A.3
 
-**Created:** 2026-05-05T14:59:10Z  
-**Scope:** Convert the Phase 0.5A.2 file-level inventory into source-level document bundles.  
+**Created:** 2026-05-05T14:59:10Z
+**Scope:** Convert the Phase 0.5A.2 file-level inventory into source-level document bundles.
 **Status:** Planning/evidence only. No source-pack creation. No article/question edits. No Supabase mutation.
 
 ---

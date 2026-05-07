@@ -1,7 +1,7 @@
 # State Document Contradictions — Phase 1A Evidence
 
-**Generated:** 2026-05-05  
-**Scope:** Contradictions between current repo state, exported artifacts, plan assumptions, migrations, comments, and prior review notes.  
+**Generated:** 2026-05-05
+**Scope:** Contradictions between current repo state, exported artifacts, plan assumptions, migrations, comments, and prior review notes.
 **Purpose:** Prevent false confidence before implementation. This is an evidence document, not a design document.
 
 ---

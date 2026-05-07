@@ -1,6 +1,6 @@
 # Admin AI Audit Source Verification Payload Schema Draft — Phase 0.5C
 
-**Generated:** 2026-05-05T15:48:50Z  
+**Generated:** 2026-05-05T15:48:50Z
 **Status:** Draft schema only. No DB writes. No source approval.
 
 ## 1. Root shape

@@ -1,7 +1,7 @@
 # Official Source Verification Evidence Schema — Phase 0.5B
 
-**Generated:** 2026-05-05T15:28:29Z  
-**Scope:** Define the evidence table/log produced by future official-source verification runs.  
+**Generated:** 2026-05-05T15:28:29Z
+**Scope:** Define the evidence table/log produced by future official-source verification runs.
 **Status:** Schema only. No live verification has been executed by this file.
 
 ---

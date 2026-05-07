@@ -4,8 +4,8 @@ Note: first OpenCode Kimi route `opencode/kimi-k2.6` failed with insufficient ba
 
 ## Review Memo — Phase 0.5B.5 Evidence Outputs
 
-**Reviewer:** Sisyphus (fallback review — Claude unavailable)  
-**Scope:** 7 evidence files, evidence-only, no source approval authority  
+**Reviewer:** Sisyphus (fallback review — Claude unavailable)
+**Scope:** 7 evidence files, evidence-only, no source approval authority
 **Verdict:** **PASS**
 
 ---
@@ -27,9 +27,9 @@ Note: first OpenCode Kimi route `opencode/kimi-k2.6` failed with insufficient ba
 
 ### Minor Observation (Non-blocking)
 
-**BP 344 evidence note language:**  
-CSV/JSON row 3 states: *"This resolves the 2024 revised-specific lead as official evidence only."*  
-**Observation:** The word "resolves" slightly overstates the current state. The PDF was found and hashed, but it has not yet been matched to local files, reconciled against older extracts, or reviewed.  
+**BP 344 evidence note language:**
+CSV/JSON row 3 states: *"This resolves the 2024 revised-specific lead as official evidence only."*
+**Observation:** The word "resolves" slightly overstates the current state. The PDF was found and hashed, but it has not yet been matched to local files, reconciled against older extracts, or reviewed.
 **Suggested correction:** Replace "resolves" with "advances" or "strengthens" in the next revision.
 
 ---

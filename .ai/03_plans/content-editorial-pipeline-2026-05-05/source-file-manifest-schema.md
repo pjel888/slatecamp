@@ -1,7 +1,7 @@
 # Source File Manifest Schema — Phase 0.5A.1
 
-**Date:** 2026-05-05  
-**Scope:** Define the required and optional fields for the `source-manifest.csv` that inventories all local source files in `vitruvius-connection/`.  
+**Date:** 2026-05-05
+**Scope:** Define the required and optional fields for the `source-manifest.csv` that inventories all local source files in `vitruvius-connection/`.
 **Status:** Planning document plus generated Phase 0.5A.2 manifest format. The generated manifest is read-only evidence, not source approval.
 
 ---
@@ -137,12 +137,12 @@ If any condition is false, the file is **quarantined** for grounding purposes.
 ### 5.1 CSV Format
 
 - Encoding: UTF-8
-- Delimiter: comma (`,`)  
-- Quote character: double quote (`"`)  
-- Header row: required, using exact field names from Section 2. Generated inventory manifests may include `source_file_id` and `source_drop_state` to distinguish physical file rows from source identities.  
-- Empty values: empty string or `null` (unquoted)  
-- Arrays: pipe-separated (`|`) within a single cell  
-- Booleans: `true` / `false`  
+- Delimiter: comma (`,`)
+- Quote character: double quote (`"`)
+- Header row: required, using exact field names from Section 2. Generated inventory manifests may include `source_file_id` and `source_drop_state` to distinguish physical file rows from source identities.
+- Empty values: empty string or `null` (unquoted)
+- Arrays: pipe-separated (`|`) within a single cell
+- Booleans: `true` / `false`
 
 ### 5.2 JSON Format (Optional Mirror)
 

@@ -1,7 +1,7 @@
 # Hermes Phase 0.5B.4 Evidence Integrity Review
 
-**Status:** PASS  
-**Rows checked:** 10  
+**Status:** PASS
+**Rows checked:** 10
 **Scope:** Evidence artifacts only.
 
 ## Checks

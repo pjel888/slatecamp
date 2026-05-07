@@ -1,7 +1,7 @@
 # Source Verification Packet Schema — Phase 0.5B.1
 
-**Created:** 2026-05-05T14:59:10Z  
-**Scope:** Define the human/SME review packet required before a reconciled source bundle can become a verified source candidate.  
+**Created:** 2026-05-05T14:59:10Z
+**Scope:** Define the human/SME review packet required before a reconciled source bundle can become a verified source candidate.
 **Status:** Planning/evidence only. No source approval is implied by this schema.
 
 ---

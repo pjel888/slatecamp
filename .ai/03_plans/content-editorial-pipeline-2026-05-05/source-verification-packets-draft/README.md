@@ -1,6 +1,6 @@
 # Source Verification Packet Drafts Index — Phase 0.5B.2
 
-**Generated:** 2026-05-05T15:48:50Z  
+**Generated:** 2026-05-05T15:48:50Z
 **Status:** Draft packet index only. No source approval. No source-pack creation.
 
 | packet | bundle_id | title | evidence_status | source_type | human | SME |

@@ -1,9 +1,10 @@
 # Milestone Tracker
 
-**Last Updated:** 2026-04-16
+**Last Updated:** 2026-05-07
 
 | Milestone | Status | Evidence | Notes |
 | --- | --- | --- | --- |
+| Landing/platform positioning rewrite | Messaging gate finalized, conditional implementation GO | `.ai/03_plans/2026-05-07-landing-page-final-messaging-gate.md`, platform positioning plan, Reddit sentiment packet, strategy packet updates | Umbrella shifts to architecture study companion/platform; LEA remains high-intent pathway |
 | Multi-portal Next.js product foundation | Completed | `src/app/` breadth | Long past scaffold stage |
 | Quiz/testing/readiness engine | Completed / active | `src/lib/actions/quiz-v2`, stores, route coverage | Core learning engine is deep |
 | Wiki/notes/analytics stack | Completed / active | dashboard routes + actions | Needs stable ops docs |

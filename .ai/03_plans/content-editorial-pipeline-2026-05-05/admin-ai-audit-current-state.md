@@ -1,7 +1,7 @@
 # Admin AI Audit — Current State
 
-**Generated:** 2026-05-05 | **Phase:** 1A Read-Only Evidence Pass  
-**Scope:** `src/app/admin/ai-audit/` subtree and associated actions, queries, components, types, and database migrations  
+**Generated:** 2026-05-05 | **Phase:** 1A Read-Only Evidence Pass
+**Scope:** `src/app/admin/ai-audit/` subtree and associated actions, queries, components, types, and database migrations
 **Method:** Read-only code inspection of all route files, query/action files, type files, component files, and migration SQL
 
 ---

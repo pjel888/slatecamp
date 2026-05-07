@@ -1,6 +1,6 @@
 # Pre-Implementation Autopilot Roadmap — Content Editorial Pipeline
 
-**Generated:** 2026-05-05T15:28:29Z  
+**Generated:** 2026-05-05T15:28:29Z
 **Scope:** Continue all planning/evidence phases before implementation. This file is an operating map, not implementation approval.
 
 ## Current Completed Planning Evidence Gates

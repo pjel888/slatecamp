@@ -1,7 +1,7 @@
 # Source Verification Packet Draft — bundle-000018
 
-**Generated:** 2026-05-05T15:48:50Z  
-**Status:** Verification packet draft. Source approval blocked. Source-pack creation blocked.  
+**Generated:** 2026-05-05T15:48:50Z
+**Status:** Verification packet draft. Source approval blocked. Source-pack creation blocked.
 **Do not use as canonical source.**
 
 ## Bundle

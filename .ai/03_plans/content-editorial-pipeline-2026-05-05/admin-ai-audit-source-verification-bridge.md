@@ -1,7 +1,7 @@
 # Admin AI Audit Source Verification Bridge — Phase 0.5C.1
 
-**Created:** 2026-05-05T14:59:10Z  
-**Scope:** Define how source verification outputs should appear in `/admin/ai-audit`.  
+**Created:** 2026-05-05T14:59:10Z
+**Scope:** Define how source verification outputs should appear in `/admin/ai-audit`.
 **Status:** Planning document only. Current implementation is run-level only; per-source sync is future work.
 
 ---

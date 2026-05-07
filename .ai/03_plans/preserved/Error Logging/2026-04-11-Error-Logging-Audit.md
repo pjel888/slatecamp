@@ -1,7 +1,7 @@
 # Error Logging Audit
 
-**Date:** 2026-04-11  
-**Scope:** Repository-grounded operational audit  
+**Date:** 2026-04-11
+**Scope:** Repository-grounded operational audit
 **Mission:** Identify where proper error logging is essential, where it is currently weak/absent, what logging architecture the app needs, and whether Supabase is suitable as a logging destination.
 
 **Version:** 3.1 — Third-pass forensic redline with proof discipline

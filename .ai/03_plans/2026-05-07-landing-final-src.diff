@@ -1,0 +1,2697 @@
+diff --git a/src/app/layout.tsx b/src/app/layout.tsx
+index 74b0a28e2..70de8f4e7 100644
+--- a/src/app/layout.tsx
++++ b/src/app/layout.tsx
+@@ -14,11 +14,10 @@ const isDemo = !process.env.NEXT_PUBLIC_SUPABASE_URL
+
+ export const metadata: Metadata = {
+   title: {
+-    default: `${siteConfig.name} — Personalized LEA Review`,
++    default: `${siteConfig.name} — Architecture Study Companion`,
+     template: `%s | ${siteConfig.name}`,
+   },
+-  description:
+-    'A cognitive-first review platform built for the LEA. Active recall, spaced repetition, and interactive study tools for professional licensure success.',
++  description: siteConfig.description,
+   metadataBase: new URL(
+     process.env.NEXT_PUBLIC_APP_URL ?? 'http://localhost:3000',
+   ),
+@@ -40,9 +39,7 @@ export default function RootLayout({
+ }>) {
+   return (
+     <html lang='en' suppressHydrationWarning>
+-      <body
+-        className='font-sans antialiased'
+-      >
++      <body className='font-sans antialiased'>
+         <ThemeProvider>
+           {process.env.NODE_ENV === 'development' && <DevModeOverlay />}
+           <NoiseFilter />
+diff --git a/src/app/page.tsx b/src/app/page.tsx
+index 4404e11ca..a06a88e73 100644
+--- a/src/app/page.tsx
++++ b/src/app/page.tsx
+@@ -4,43 +4,39 @@ import { LandingPageContent } from '@/components/landing/LandingPageContent'
+ import { LandingPageFallback } from '@/components/landing/LandingPageFallback'
+ import { siteConfig } from '@/lib/constants'
+
+-/* ── SEO Metadata ── */
+-
+ export const dynamic = 'force-dynamic'
+
+ export const metadata: Metadata = {
+-  title: `${siteConfig.name} — Know Your LEA Readiness Before Exam Day`,
+-  description:
+-    'The only LEA prep platform built by a licensed architect. A real-time Readiness Score, expert-verified wiki, and interactive 3D building code models.  Built specifically for the Licensure Examination for Architects (LEA).',
++  title: `${siteConfig.name} | Architecture Study Companion for Licensure Examination for Architects and Practice`,
++  description: siteConfig.description,
+   openGraph: {
+-    title: `${siteConfig.name} — The LEA Readiness Intelligence Platform`,
++    title: `${siteConfig.name} | Your Architecture Study Companion`,
+     description:
+-      'Know exactly where you stand before exam day. SlateCamp gives every LEA candidate a live Readiness Score, a taxonomy heatmap of every gap, and a structured path to close them.',
++      'Study with source-backed resources, quizzes, 3D labs, and free tools built around Philippine codes, Licensure Examination for Architects readiness, and architecture practice.',
+     type: 'website',
+     siteName: siteConfig.name,
+   },
+   twitter: {
+     card: 'summary_large_image',
+-    title: `${siteConfig.name} — Stop Studying Blind. Know Your Score.`,
++    title: `${siteConfig.name} | Your Architecture Study Companion`,
+     description:
+-      'Know exactly where you stand before exam day. SlateCamp gives every LEA candidate a live Readiness Score, a taxonomy heatmap of every gap, and a structured path to close them.',
++      'Resources, quizzes, 3D labs, and free tools for architecture school, Licensure Examination for Architects readiness, and practice.',
+   },
+   keywords: [
+-    'LEA exam prep',
+-    'architecture review platform Philippines',
+-    'architecture licensure exam Philippines',
+-    'LEA reviewer Philippines',
+-    'LEA readiness score',
++    'Licensure Examination for Architects exam prep',
++    'Licensure Examination for Architects reviewer Philippines',
++    'Licensure Examination for Architects',
++    'architecture learning platform Philippines',
++    'Philippine architecture codes',
++    'NBCP reviewer',
+     'PD 1096 reviewer',
++    'BP 344 reviewer',
++    'RA 9266 reviewer',
+     'architecture quiz app Philippines',
+-    'LEA practice test',
+-    'how to pass LEA Philippines',
+-    'LEA building code reviewer',
+-    'architecture wiki Philippines',
+-    'spaced repetition architecture exam',
++    'architecture calculators Philippines',
++    'architecture school resources',
++    'architecture 3D learning',
+     'SlateCamp',
+-    'Licensure Examination for Architects (LEA)',
+-    'LEA mock exam',
+   ],
+   alternates: {
+     canonical: '/',
+diff --git a/src/components/landing/LandingPageContent.tsx b/src/components/landing/LandingPageContent.tsx
+index aec94b45c..030147590 100644
+--- a/src/components/landing/LandingPageContent.tsx
++++ b/src/components/landing/LandingPageContent.tsx
+@@ -18,12 +18,11 @@ export async function LandingPageContent() {
+   const isLoggedIn = !!user
+
+   const ctaHref = isLoggedIn ? ROUTES.dashboard.root : ROUTES.auth.register
+-  const ctaLabel = isLoggedIn ? 'Go to Dashboard' : 'Get Your Free Readiness Score'
++  const ctaLabel = isLoggedIn ? 'Go to Dashboard' : 'Start Your Free Readiness Score'
+
+   return (
+     <div id='top' className='min-h-screen bg-page-bg'>
+-      {/* ────────────────────── NAVIGATION ────────────────────── */}
+-      <MarketingNav activeRoute='/' logoScrollsToTop />
++      <MarketingNav activeRoute='/' logoScrollsToTop isLoggedIn={isLoggedIn} />
+
+       <main>
+         <HeroSection
+@@ -32,17 +31,12 @@ export async function LandingPageContent() {
+         />
+
+         <SocialProofBar />
+-
+         <BentoFeatureGrid />
+-
+-        {/* ── Feature Sections ── */}
+         <QuestionsSection />
+         <ThreeDLabSection />
+         <AnalyticsSection />
+         <WikiSection />
+-
+         <HowItWorksSection />
+-
+         <ComparisonSection />
+
+         <FinalCtaSection
+@@ -52,7 +46,6 @@ export async function LandingPageContent() {
+         />
+       </main>
+
+-      {/* ────────────────────── FOOTER ────────────────────── */}
+       <MarketingFooter />
+     </div>
+   )
+diff --git a/src/components/landing/LandingPageFallback.tsx b/src/components/landing/LandingPageFallback.tsx
+index 4c078ff5f..4d46a8cef 100644
+--- a/src/components/landing/LandingPageFallback.tsx
++++ b/src/components/landing/LandingPageFallback.tsx
+@@ -1,52 +1,37 @@
+ import { HeroSection } from '@/components/marketing/HeroSection'
+ import { MarketingNav } from '@/components/marketing/MarketingNav'
+ import { MarketingFooter } from '@/components/marketing/MarketingFooter'
+-import { LogoMarquee } from '@/components/marketing/LogoMarquee'
+-import { TestimonialShowcase } from '@/components/marketing/TestimonialShowcase'
+ import { BentoFeatureGrid } from '@/components/marketing/BentoFeatureGrid'
+ import { HowItWorksSection } from '@/components/marketing/HowItWorksSection'
+ import { ComparisonSection } from '@/components/marketing/ComparisonSection'
+ import { FinalCtaSection } from '@/components/marketing/FinalCtaSection'
+ import { SocialProofBar } from '@/components/marketing/SocialProofBar'
+-import { Starburst } from '@/components/marketing/LandingPrimitives'
++import { QuestionsSection } from '@/components/marketing/QuestionsSection'
++import { ThreeDLabSection } from '@/components/marketing/ThreeDLabSection'
++import { AnalyticsSection } from '@/components/marketing/AnalyticsSection'
++import { WikiSection } from '@/components/marketing/WikiSection'
+ import { ROUTES } from '@/lib/constants'
+
+ export function LandingPageFallback() {
+   return (
+-    <div id='top' className='min-h-screen bg-muted'>
+-      <MarketingNav activeRoute='/' logoScrollsToTop />
++    <div id='top' className='min-h-screen bg-page-bg'>
++      <MarketingNav activeRoute='/' logoScrollsToTop isLoggedIn={false} />
+       <main>
+         <HeroSection
+           ctaHref={ROUTES.auth.register}
+-          ctaLabel='Join the Camp — Free'
++          ctaLabel='Start Your Free Readiness Score'
+         />
+         <SocialProofBar />
+-        <LogoMarquee />
+         <BentoFeatureGrid />
++        <QuestionsSection />
++        <ThreeDLabSection />
++        <AnalyticsSection />
++        <WikiSection />
+         <HowItWorksSection />
+         <ComparisonSection />
+-        <section
+-          aria-labelledby='testimonials-heading'
+-          className='border-t border-border-design px-6 py-24'
+-        >
+-          <div className='mx-auto max-w-[1200px]'>
+-            <div className='flex items-center gap-3'>
+-              <span className='text-camp-amber'>
+-                <Starburst className='h-4 w-4' />
+-              </span>
+-              <h2
+-                id='testimonials-heading'
+-                className='font-mono text-[11px] tracking-[0.2em] uppercase text-text-2'
+-              >
+-                What Students Say
+-              </h2>
+-            </div>
+-            <TestimonialShowcase />
+-          </div>
+-        </section>
+         <FinalCtaSection
+           ctaHref={ROUTES.auth.register}
+-          ctaLabel='Join the Camp — Free'
++          ctaLabel='Start Your Free Readiness Score'
+           isLoggedIn={false}
+         />
+       </main>
+diff --git a/src/components/marketing/AnalyticsSection.tsx b/src/components/marketing/AnalyticsSection.tsx
+index 222e943f7..9c505a11a 100644
+--- a/src/components/marketing/AnalyticsSection.tsx
++++ b/src/components/marketing/AnalyticsSection.tsx
+@@ -1,191 +1,106 @@
+-'use client'
+-
+-import { useRef } from 'react'
+-import { motion, useInView } from 'framer-motion'
+ import {
+   FeatureSectionLayout,
+   SectionEyebrow,
+   FeaturePill,
++  FeatureCheckItem,
+ } from '@/components/marketing/FeatureSectionLayout'
+-import { palette, cssVars } from '@/components/graphics/tokens'
+ import { StaggerParent, StaggerItem } from '@/components/motion/StaggerChildren'
+ import { ScrollReveal } from '@/components/motion/ScrollReveal'
+
+-/* ── Readiness ring SVG ── */
+-
+-const ReadinessRing = ({ value, className = '' }: { value: number; className?: string }) => {
+-  const radius = 34
+-  const circumference = 2 * Math.PI * radius
+-  const offset = circumference - (value / 100) * circumference
+-  const ref = useRef<SVGCircleElement>(null)
+-  const isInView = useInView(ref, { once: true, margin: '-80px' })
+-
+-  return (
+-    <div className={`relative ${className}`}>
+-      <svg className='-rotate-90' width={80} height={80} viewBox='0 0 80 80' aria-hidden='true'>
+-        <circle cx={40} cy={40} r={radius} fill='none' stroke={palette.borderDefault} strokeWidth={5} />
+-        <motion.circle
+-          ref={ref}
+-          cx={40}
+-          cy={40}
+-          r={radius}
+-          fill='none'
+-          stroke={palette.amber}
+-          strokeWidth={5}
+-          strokeLinecap='round'
+-          strokeDasharray={circumference}
+-          initial={{ strokeDashoffset: circumference }}
+-          animate={{ strokeDashoffset: isInView ? offset : circumference }}
+-          transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
+-        />
+-      </svg>
+-      <span className='absolute inset-0 flex items-center justify-center font-mono text-[18px] font-extrabold text-camp-black'>
+-        {value}%
+-      </span>
+-    </div>
+-  )
+-}
+-
+-/* ── Animated mastery bar ── */
+-
+-const AnimatedBar = ({ pct, color }: { pct: number; color: string }) => {
+-  const ref = useRef<HTMLDivElement>(null)
+-  const isInView = useInView(ref, { once: true, margin: '-80px' })
+-  return (
+-    <motion.div
+-      ref={ref}
+-      className='h-full rounded-full'
+-      style={{ background: color }}
+-      initial={{ width: 0 }}
+-      animate={{ width: isInView ? `${pct}%` : 0 }}
+-      transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.1 }}
+-    />
+-  )
+-}
+-
+-/* ── Analytics mockup ── */
+-
+-const AnalyticsMockup = () => (
+-  <div className='rounded-md border border-border-design bg-white p-5'>
+-    {/* Overall score + ring */}
+-    <div className='mb-4 flex items-center gap-4'>
+-      <ReadinessRing value={75} className='h-20 w-20' />
++const LOOP = [
++  'Answer Licensure Examination for Architects-style questions.',
++  'Read the explanation and source-linked topic.',
++  'See which subjects and topics need repair.',
++  'Use a resource, 3D example, or another drill as the next step.',
++  'Return to your review center, notes, or study group with a clearer plan.',
++] as const
++
++const ReadinessMapMockup = () => (
++  <div className='rounded-[22px] border border-border-design bg-white p-5 shadow-sm'>
++    <div className='flex items-center justify-between gap-4'>
+       <div>
+-        <div className='text-[18px] font-extrabold text-camp-black'>Getting there</div>
+-        <div className='mt-1 text-[11px] leading-relaxed text-text-2'>
+-          2 subjects need targeted review before you&apos;re exam-ready.
++        <div className='font-[family-name:var(--font-dm-mono)] text-[11px] uppercase tracking-[0.16em] text-camp-cobalt'>
++          Readiness map
+         </div>
+-        <div className='mt-2 font-mono text-[11px] text-marketing-tertiary'>↑ +8 pts this week</div>
++        <h3 className='mt-1 text-[18px] font-extrabold text-camp-black'>Tonight’s repair list</h3>
++      </div>
++      <div className='flex h-20 w-20 items-center justify-center rounded-full border-[7px] border-camp-amber/80 bg-camp-amber/10 text-center font-[family-name:var(--font-dm-mono)] text-[18px] font-extrabold text-camp-black'>
++        74
+       </div>
+     </div>
+
+-    {/* Stat mini-grid */}
+-    <div className='mb-4 grid grid-cols-2 gap-2'>
++    <div className='mt-5 space-y-3'>
+       {[
+-        { label: 'Questions', value: '847', sub: 'answered total', accent: undefined },
+-        { label: 'Streak', value: '12', sub: 'days active', accent: cssVars.accent },
+-      ].map((stat) => (
+-        <div key={stat.label} className='rounded-[8px] bg-muted p-3'>
+-          <div className='font-mono text-[11px] uppercase tracking-[.12em] text-marketing-tertiary'>{stat.label}</div>
+-          <div className='mt-1 text-[20px] font-extrabold' style={{ color: stat.accent || 'var(--foreground)' }}>
+-            {stat.value}
++        { topic: 'Setbacks and buildable envelope', status: 'Repair first', pct: 42, color: 'bg-camp-red' },
++        { topic: 'PD 1096 light and ventilation', status: 'Review', pct: 63, color: 'bg-camp-amber' },
++        { topic: 'Professional practice terms', status: 'Stable', pct: 82, color: 'bg-camp-green' },
++      ].map((item) => (
++        <div key={item.topic} className='rounded-[14px] border border-border-design p-3'>
++          <div className='mb-2 flex items-center justify-between gap-3 text-[12px]'>
++            <span className='font-semibold text-camp-black'>{item.topic}</span>
++            <span className='font-[family-name:var(--font-dm-mono)] text-[10px] uppercase tracking-[0.12em] text-text-2'>
++              {item.status}
++            </span>
++          </div>
++          <div className='h-2 overflow-hidden rounded-full bg-muted'>
++            <div className={`h-full rounded-full ${item.color}`} style={{ width: `${item.pct}%` }} />
+           </div>
+-          <div className='text-[11px] text-marketing-tertiary'>{stat.sub}</div>
+         </div>
+       ))}
+     </div>
+
+-    {/* Subject bars */}
+-    <div className='mb-2.5 font-mono text-[11px] uppercase tracking-[.15em] text-marketing-tertiary'>By Subject</div>
+-    {[
+-      { name: 'Structural Design', pct: 85, color: palette.slateBlue },
+-      { name: 'Building Technology', pct: 62, color: palette.amber },
+-      { name: 'Architectural Theory', pct: 41, color: palette.warmRed },
+-      { name: 'History of Arch.', pct: 73, color: palette.amber },
+-      { name: 'Utilities (MEPFS)', pct: 88, color: palette.slateBlue },
+-    ].map((s) => (
+-      <div key={s.name} className='mb-2'>
+-        <div className='mb-1 flex justify-between font-mono text-[11px]'>
+-          <span className='text-marketing-tertiary'>{s.name}</span>
+-          <span style={{ color: s.color }}>{s.pct}%</span>
+-        </div>
+-        <div className='h-[5px] overflow-hidden rounded-full bg-border-design'>
+-          <AnimatedBar pct={s.pct} color={s.color} />
+-        </div>
+-      </div>
+-    ))}
+-  </div>
+-)
+-
+-/* ── Score legend ── */
+-
+-const ScoreLegend = () => (
+-  <div className='mt-6 rounded-md border border-border-design bg-white p-4'>
+-    <div className='mb-3 text-[13px] font-bold text-camp-black'>What the score actually means</div>
+-    {[
+-      { range: '85–100%', label: 'Exam ready. Focus on weak spots.', color: palette.slateBlue },
+-      { range: '60–84%', label: 'Getting there. Targeted review.', color: palette.amber },
+-      { range: 'Below 60%', label: 'At risk. Build the foundation.', color: palette.warmRed },
+-    ].map((tier) => (
+-      <div key={tier.range} className='mb-2 flex items-center gap-3'>
+-        <div className='h-2 w-8 rounded-full' style={{ background: tier.color }} />
+-        <span className='text-[12px] text-camp-black'>
+-          <strong>{tier.range}</strong>{' '}
+-          <span className='text-text-2'>{tier.label}</span>
+-        </span>
+-      </div>
+-    ))}
++    <div className='mt-4 rounded-[14px] bg-camp-black p-4 text-white'>
++      <p className='text-[12px] font-semibold text-camp-amber'>Weak spots are not the danger.</p>
++      <p className='mt-1 text-[12px] leading-relaxed text-white/60'>
++        The danger is discovering them too late. Start with a free Readiness Score and turn uncertainty into a study plan.
++      </p>
++    </div>
+   </div>
+ )
+
+-/* ── Analytics Section ── */
+-
+ export const AnalyticsSection = () => (
+   <FeatureSectionLayout>
+-    {/* Copy — left */}
+     <StaggerParent>
+-      {/* TODO: evaluate SectionHeader migration — uses marketing SectionEyebrow with Starburst icon */}
+       <StaggerItem>
+-        <SectionEyebrow label='Analytics' />
++        <SectionEyebrow label='Taking the boards?' />
+       </StaggerItem>
+
+       <StaggerItem>
+         <h2 className='font-[family-name:var(--font-syne)] text-[28px] font-extrabold leading-[1.15] text-camp-black sm:text-[34px]'>
+-          Stop guessing. Your Readiness Score
+-          <br />
+-          tells you exactly where you stand.
++          Turn review into a readiness map.
+         </h2>
+       </StaggerItem>
+
+       <StaggerItem>
+-        <p className='mt-4 max-w-[440px] text-[14px] leading-relaxed text-text-2'>
+-          Not a grade. A GPS. Live, subject-by-subject mastery data
+-          updated after every session — so you always know which
+-          topic needs work next.
++        <p className='mt-4 max-w-[460px] text-[14px] leading-relaxed text-text-2'>
++          SlateCamp helps you see what you know, what you missed, and what to fix next before weak topics surprise you too late. It does not promise a board result; it gives you a clearer study conversation with yourself.
+         </p>
+       </StaggerItem>
+
+-      {/* Feature chips */}
+       <StaggerItem>
+         <div className='mt-5 flex flex-wrap gap-2'>
+-          <FeaturePill variant='cobalt'>Live Readiness Score</FeaturePill>
+-          <FeaturePill variant='cobalt'>Subject heatmap</FeaturePill>
+-          <FeaturePill variant='cobalt'>Session history</FeaturePill>
+-          <FeaturePill variant='amber'>Stamina tracking</FeaturePill>
+-          <FeaturePill variant='cobalt'>Pacing calendar</FeaturePill>
++          <FeaturePill variant='cobalt'>Free Readiness Score</FeaturePill>
++          <FeaturePill variant='amber'>Weak-topic repair list</FeaturePill>
++          <FeaturePill variant='green'>Study-plan clarity</FeaturePill>
+         </div>
+       </StaggerItem>
+
+       <StaggerItem>
+-        <ScoreLegend />
++        <div className='mt-8 space-y-4'>
++          {LOOP.map((item, index) => (
++            <FeatureCheckItem
++              key={item}
++              title={`Step ${index + 1}`}
++              description={item}
++              accentColor={index === 0 ? '#1B3FC4' : index === LOOP.length - 1 ? '#1B7A3C' : '#F5A623'}
++            />
++          ))}
++        </div>
+       </StaggerItem>
+     </StaggerParent>
+
+-    {/* Mockup — right */}
+     <ScrollReveal delay={0.2} y={20}>
+-      <AnalyticsMockup />
++      <ReadinessMapMockup />
+     </ScrollReveal>
+   </FeatureSectionLayout>
+ )
+-
+-
+diff --git a/src/components/marketing/BentoFeatureGrid.tsx b/src/components/marketing/BentoFeatureGrid.tsx
+index c9f457852..a59fe8b18 100644
+--- a/src/components/marketing/BentoFeatureGrid.tsx
++++ b/src/components/marketing/BentoFeatureGrid.tsx
+@@ -1,360 +1,110 @@
+-import {
+-  Starburst,
+-  Pill,
+-  CircleArrow,
+-} from '@/components/marketing/LandingPrimitives'
+-
+-/* ── Quiz answer mockup (simplified bar style) ── */
+-
+-const QuizMockup = ({ theme = 'dark' }: { theme?: 'dark' | 'amber' }) => {
+-  const rowBase = theme === 'amber' ? 'bg-black/[0.10]' : 'bg-white/[0.07]'
+-  const rowFaint = theme === 'amber' ? 'bg-black/[0.06]' : 'bg-white/[0.04]'
+-  const radio = theme === 'amber' ? 'border-black/40' : 'border-current opacity-70'
+-  const bar = theme === 'amber' ? 'bg-black/30' : 'bg-current opacity-30'
+-  const correctBorder = theme === 'amber' ? 'border-camp-green/70' : 'border-emerald/45'
+-  const correctBg = theme === 'amber' ? 'bg-camp-green/20' : 'bg-emerald/[0.18]'
+-  const correctRadio = theme === 'amber' ? 'border-camp-green bg-camp-green' : 'border-emerald bg-emerald'
+-  const correctBar = theme === 'amber' ? 'bg-camp-green opacity-80' : 'bg-emerald opacity-70'
+-
+-  return (
+-    <div className='mt-5 flex flex-col gap-[5px]' aria-hidden='true'>
+-      <div className={`flex items-center gap-2 rounded-[5px] ${rowBase} px-3 py-[7px]`}>
+-        <div className={`h-[11px] w-[11px] shrink-0 rounded-full border-[1.5px] ${radio}`} />
+-        <div className={`h-[7px] w-[72%] rounded-full ${bar}`} />
+-      </div>
+-      <div className={`flex items-center gap-2 rounded-[5px] border ${correctBorder} ${correctBg} px-3 py-[7px]`}>
+-        <div className={`h-[11px] w-[11px] shrink-0 rounded-full border-[1.5px] ${correctRadio}`} />
+-        <div className={`h-[7px] w-[55%] rounded-full ${correctBar}`} />
+-      </div>
+-      <div className={`flex items-center gap-2 rounded-[5px] ${rowBase} px-3 py-[7px]`}>
+-        <div className={`h-[11px] w-[11px] shrink-0 rounded-full border-[1.5px] ${radio}`} />
+-        <div className={`h-[7px] w-[80%] rounded-full ${bar}`} />
+-      </div>
+-      <div className={`flex items-center gap-2 rounded-[5px] ${rowFaint} px-3 py-[7px]`}>
+-        <div className={`h-[11px] w-[11px] shrink-0 rounded-full border-[1.5px] ${radio}`} />
+-        <div className={`h-[7px] w-[44%] rounded-full ${bar}`} />
+-      </div>
+-    </div>
+-  )
+-}
+-
+-/* ── Subject mastery bars ── */
+-
+-const SUBJECTS = [
+-  { name: 'Structural Design', pct: 85, tone: 'good' as const },
+-  { name: 'Building Technology', pct: 62, tone: 'neutral' as const },
+-  { name: 'Architectural Theory', pct: 41, tone: 'warn' as const },
+-  { name: 'History of Architecture', pct: 73, tone: 'neutral' as const },
+-  { name: 'Utilities (MEPFS)', pct: 88, tone: 'good' as const },
++import Link from 'next/link'
++import { Starburst } from '@/components/marketing/LandingPrimitives'
++import { ROUTES } from '@/lib/constants'
++
++const PILLARS = [
++  {
++    label: 'Knowledge Resources',
++    headline: 'Stop hunting through scattered PDFs.',
++    body: 'Use source-backed explainers, code guides, field notes, and visual references built around architecture school, Philippine codes, and Licensure Examination for Architects review.',
++    bullets: ['Code explainers for common review topics', 'Field-guide pages for fast orientation', 'Source-linked references where available'],
++    cta: 'Browse free knowledge previews',
++    href: '#knowledge-resources',
++    tone: 'amber',
++  },
++  {
++    label: 'Quizzes',
++    headline: 'Know what stuck after lecture.',
++    body: 'Practice with diagnostics, drills, simulations, and explanations that turn missed answers into the next topic to repair.',
++    bullets: ['Free Readiness Score entry point', 'Weak-topic map after practice', 'Explanations tied back to resources'],
++    cta: 'Get your free readiness score',
++    href: ROUTES.auth.register,
++    tone: 'cobalt',
++  },
++  {
++    label: '3D Lab',
++    headline: 'See spatial rules, not just numbers.',
++    body: 'Explore interactive 3D examples for code, space, circulation, accessibility, and building concepts that are hard to learn from text alone.',
++    bullets: ['Interactive examples for visual learners', 'Code and spatial concepts made visible', 'Useful for school, review, and practice'],
++    cta: 'Preview the 3D Lab',
++    href: '#three-d-lab-preview',
++    tone: 'black',
++  },
++  {
++    label: 'Free Tools',
++    headline: 'Practical calculators, free from day one.',
++    body: 'Use calculators and utilities for quick checks and study context: paint, tiles, CHB, drywall, lot/buildability, occupancy, egress, and more as they are released.',
++    bullets: ['Useful before and after board review', 'Strong practical study surface', 'Clear educational boundaries'],
++    cta: 'Open free tools',
++    href: ROUTES.calculators.root,
++    tone: 'green',
++  },
+ ] as const
+
+-const MasteryBars = () => (
+-  <div className='space-y-[7px]' aria-hidden='true'>
+-    {SUBJECTS.map((s) => (
+-      <div key={s.name}>
+-        <div className='mb-[3px] flex items-center justify-between font-[family-name:var(--font-dm-mono)] text-[11px] text-white/40'>
+-          <span>{s.name}</span>
+-          <span>{s.pct}%</span>
+-        </div>
+-        <div className='h-1 w-full overflow-hidden rounded-[3px] bg-white/10'>
+-          <div
+-            className={`h-full rounded-[3px] ${
+-              s.tone === 'good'
+-                ? 'bg-emerald'
+-                : s.tone === 'warn'
+-                  ? 'bg-warning'
+-                  : 'bg-border'
+-            }`}
+-            style={{ width: `${s.pct}%` }}
+-          />
+-        </div>
+-      </div>
+-    ))}
+-  </div>
+-)
+-
+-/* ── Inline readiness ring SVG ── */
+-
+-const RING_R = 36
+-const RING_C = 2 * Math.PI * RING_R
+-const RING_OFFSET = RING_C - (78 / 100) * RING_C
+-
+-const ReadinessRingSvg = ({ size = 82 }: { size?: number }) => (
+-  <svg viewBox='0 0 100 100' width={size} height={size} className='shrink-0' aria-hidden='true'>
+-    <circle
+-      cx='50' cy='50' r={RING_R}
+-      fill='none' stroke='rgba(255,255,255,0.1)' strokeWidth='5'
+-    />
+-    <circle
+-      cx='50' cy='50' r={RING_R}
+-      fill='none' stroke='#E2E2E6' strokeWidth='5'
+-      strokeDasharray={RING_C} strokeDashoffset={RING_OFFSET}
+-      strokeLinecap='round' transform='rotate(-90 50 50)'
+-    />
+-    <text x='50' y='47' textAnchor='middle' fill='white' fontSize='22' fontWeight='700'
+-      style={{ fontFamily: 'var(--font-syne, Boldonse, sans-serif)' }}>
+-      78
+-    </text>
+-    <text x='50' y='62' textAnchor='middle' fill='rgba(255,255,255,0.3)' fontSize='6.5'
+-      letterSpacing='0.15em'
+-      style={{ fontFamily: 'var(--font-dm-mono, DM Mono, monospace)' }}>
+-      READINESS
+-    </text>
+-  </svg>
+-)
+-
+-/* ── Heatmap cells ── */
+-
+-const HEATMAP: { color: string; opacity: number }[] = [
+-  { color: '#2D9F6F', opacity: 0.8 }, { color: '#2D9F6F', opacity: 0.8 },
+-  { color: '#e2e2e6', opacity: 0.4 }, { color: '#e2e2e6', opacity: 0.4 },
+-  { color: '#2D9F6F', opacity: 0.8 }, { color: '#6b7280', opacity: 0.35 },
+-  { color: '#e2e2e6', opacity: 0.4 }, { color: '#2D9F6F', opacity: 0.8 },
+-  { color: '#2D9F6F', opacity: 0.8 }, { color: '#e2e2e6', opacity: 0.4 },
+-  { color: '#e2e2e6', opacity: 0.4 }, { color: '#2D9F6F', opacity: 0.8 },
+-  { color: '#6b7280', opacity: 0.35 }, { color: '#e2e2e6', opacity: 0.4 },
+-  { color: '#e2e2e6', opacity: 0.4 }, { color: '#2D9F6F', opacity: 0.8 },
+-  { color: '#2D9F6F', opacity: 0.8 }, { color: '#e2e2e6', opacity: 0.4 },
+-  { color: '#2D9F6F', opacity: 0.8 }, { color: '#e2e2e6', opacity: 0.4 },
+-  { color: '#6b7280', opacity: 0.35 }, { color: '#e2e2e6', opacity: 0.4 },
+-  { color: '#e2e2e6', opacity: 0.4 }, { color: '#2D9F6F', opacity: 0.8 },
+-]
+-
+-/* ── Main Export ── */
++const toneClass = {
++  amber: 'bg-camp-amber text-camp-black border-warning/30',
++  cobalt: 'bg-camp-cobalt text-white border-camp-cobalt',
++  black: 'bg-camp-black text-white border-camp-black',
++  green: 'bg-camp-green text-white border-camp-green',
++} as const
+
+ export const BentoFeatureGrid = () => (
+-  <section
+-    id='features'
+-    aria-labelledby='features-heading'
+-    className='relative px-6 py-8'
+-  >
++  <section id='features' aria-labelledby='platform-pillars-heading' className='relative scroll-mt-24 px-6 py-16'>
+     <div className='relative z-10 mx-auto max-w-[1200px]'>
+-      <h2 id='features-heading' className='sr-only'>
+-        Features
+-      </h2>
+-
+-      {/* ── Top grid: 3 cols, side cards span 2 rows ── */}
+-      <div className='grid grid-cols-1 gap-[10px] md:grid-cols-3 md:grid-rows-2'>
+-
+-        {/* REVIEW MODE — Camp Amber + light noise */}
+-        <div className='motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-300 motion-safe:delay-100 relative overflow-hidden rounded-md bg-camp-amber p-7 noise-light transition-transform duration-150 hover:-translate-y-0.5 md:col-start-1 md:row-span-2 md:row-start-1 md:min-h-[480px]'>
+-          <div className='relative z-10 flex h-full flex-col justify-between'>
+-            <div>
+-              <div className='flex items-center justify-between'>
+-                <span className='font-[family-name:var(--font-dm-mono)] text-[11px] tracking-[0.2em] uppercase text-black/40'>
+-                  [ Review Mode ]
+-                </span>
+-                <Starburst className='h-3 w-3 text-camp-black' />
+-              </div>
+-              <h3 className='mt-7 font-[family-name:var(--font-syne)] text-[clamp(18px,2.2vw,26px)] font-extrabold leading-[1.1] text-camp-black'>
+-                Active Recall,
+-                <br />
+-                Zero Pressure
+-              </h3>
+-              <p className='mt-2 max-w-[340px] text-[13px] leading-relaxed text-black/50'>
+-                No timer. No analytics. Just you and the material — until it sticks.
+-              </p>
+-              <QuizMockup theme='amber' />
+-            </div>
+-            <div className='mt-4'>
+-              <div className='flex gap-[5px]'>
+-                <Pill variant='amber'>Active Recall</Pill>
+-                <Pill variant='amber'>Stress-Free</Pill>
+-              </div>
+-              <div className='mt-3 flex justify-end'>
+-                <CircleArrow variant='amber' />
+-              </div>
+-            </div>
+-          </div>
+-        </div>
+-
+-        {/* STAT: 1 in 3 — Camp Cream (no noise) */}
+-        <div className='motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-300 motion-safe:delay-200 rounded-md border border-border-design bg-white p-7 transition-transform duration-150 hover:-translate-y-0.5 md:col-start-2 md:row-start-1'>
++      <div className='max-w-3xl'>
++        <div className='flex items-center gap-3'>
+           <Starburst className='h-3 w-3 text-camp-amber' />
+-          <div className='mt-7 font-[family-name:var(--font-syne)] text-[72px] font-extrabold leading-[0.9] text-camp-red'>
+-            1 in 3
+-          </div>
+-          <p className='mt-3 max-w-[200px] text-[13px] leading-[1.5] text-text-2'>
+-            LEA examinees don&apos;t pass in a given sitting. Most didn&apos;t know
+-            they were at risk.
+-          </p>
+-          <p className='mt-2 font-[family-name:var(--font-dm-mono)] text-[11px] text-marketing-subtle'>
+-            Source: PRC official results, 2024–2025
+-          </p>
++          <span className='font-[family-name:var(--font-dm-mono)] text-[11px] font-semibold tracking-[0.2em] uppercase text-text-2'>
++            What you get
++          </span>
+         </div>
++        <h2
++          id='platform-pillars-heading'
++          className='mt-4 font-[family-name:var(--font-syne)] text-[clamp(2rem,4vw,3.2rem)] font-extrabold leading-[0.98] text-camp-black'
++        >
++          A field guide, quiz buddy, 3D lab, and toolbelt in one place.
++        </h2>
++        <p className='mt-4 max-w-2xl text-[15px] leading-relaxed text-text-2'>
++          SlateCamp is built for the moment after a lecture, mock exam, or study session when you need to know what stayed with you — and what to fix next.
++        </p>
++      </div>
+
+-        {/* ANALYTICS — Camp Cobalt + heavy noise */}
+-        <div className='motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-300 motion-safe:delay-300 relative overflow-hidden rounded-md bg-camp-cobalt p-7 text-white noise-heavy transition-transform duration-150 hover:-translate-y-0.5 md:col-start-3 md:row-span-2 md:row-start-1 md:min-h-[480px]'>
+-          <div className='relative z-10 flex h-full flex-col justify-between'>
+-            <div>
+-              <div className='flex items-center justify-between'>
+-                <span className='font-[family-name:var(--font-dm-mono)] text-[11px] tracking-[0.2em] uppercase text-white/40'>
+-                  [ Analytics ]
++      <div className='mt-10 grid grid-cols-1 gap-[12px] md:grid-cols-2'>
++        {PILLARS.map((pillar) => (
++          <article
++            key={pillar.label}
++            className={`group relative overflow-hidden rounded-[22px] border p-7 shadow-sm transition-transform duration-150 hover:-translate-y-0.5 ${toneClass[pillar.tone]}`}
++          >
++            <div className='absolute right-[-32px] top-[-32px] h-32 w-32 rounded-full bg-white/15 blur-2xl' aria-hidden='true' />
++            <div className='relative z-10'>
++              <div className='flex items-center justify-between gap-4'>
++                <span className='font-[family-name:var(--font-dm-mono)] text-[11px] font-semibold tracking-[0.18em] uppercase opacity-60'>
++                  {pillar.label}
+                 </span>
+-                <CircleArrow variant='dark' />
++                <Starburst className='h-3 w-3 opacity-70' />
+               </div>
+-              <h3 className='mt-7 font-[family-name:var(--font-syne)] text-[clamp(18px,2.2vw,26px)] font-extrabold leading-[1.1] text-white'>
+-                Your Readiness,
+-                <br />
+-                Quantified
++              <h3 className='mt-8 max-w-[420px] font-[family-name:var(--font-syne)] text-[clamp(22px,2.6vw,32px)] font-extrabold leading-[1.05]'>
++                {pillar.headline}
+               </h3>
+-              <p className='mt-2 text-[13px] leading-relaxed text-white/55'>
+-                Taxonomy heatmap. Every node. Every gap. No hiding.
+-              </p>
+-            </div>
+-            <div className='mt-5'>
+-              <div className='flex items-center gap-4'>
+-                <ReadinessRingSvg />
+-                <div className='flex-1'>
+-                  <div className='grid grid-cols-6 gap-1' aria-hidden='true'>
+-                    {HEATMAP.map((cell, i) => (
+-                      <div
+-                        key={i}
+-                        className='aspect-square rounded-[3px]'
+-                        style={{ background: cell.color, opacity: cell.opacity }}
+-                      />
+-                    ))}
+-                  </div>
+-                </div>
+-              </div>
+-              <div className='mt-3 flex gap-[5px]'>
+-                <Pill variant='dark'>IRT-Calibrated</Pill>
+-                <Pill variant='dark'>EMA-Weighted</Pill>
+-              </div>
+-            </div>
+-          </div>
+-        </div>
+-
+-        {/* QUOTE — Camp Red + noise */}
+-        <div className='motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-300 motion-safe:delay-500 relative overflow-hidden rounded-md bg-camp-red p-7 text-white noise transition-transform duration-150 hover:-translate-y-0.5 md:col-start-2 md:row-start-2'>
+-          <div className='relative z-10 flex h-full flex-col justify-between'>
+-            <div>
+-              <span className='font-[family-name:var(--font-dm-mono)] text-[11px] tracking-[0.2em] uppercase text-white/45'>
+-                SlateCamp
+-              </span>
+-              <p className='mt-3.5 font-[family-name:var(--font-syne)] text-[clamp(15px,1.8vw,19px)] font-bold italic leading-[1.3] text-white'>
+-                &ldquo;Trust the camp, put in the reps, and we will eliminate the{' '}
+-                <span className='underline decoration-white/40 underline-offset-[3px]'>
+-                  doubt.
+-                </span>
+-                &rdquo;
+-              </p>
+-            </div>
+-            <div className='mt-3 flex justify-end'>
+-              <CircleArrow variant='dark' />
++              <p className='mt-3 max-w-[520px] text-[13px] leading-relaxed opacity-70'>{pillar.body}</p>
++              <ul className='mt-6 grid gap-2'>
++                {pillar.bullets.map((bullet) => (
++                  <li key={bullet} className='flex items-start gap-2 text-[12px] leading-relaxed opacity-85'>
++                    <span className='mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-current opacity-70' aria-hidden='true' />
++                    {bullet}
++                  </li>
++                ))}
++              </ul>
++              <Link
++                href={pillar.href}
++                className='mt-7 inline-flex rounded-full border border-current/20 bg-white/15 px-4 py-2 text-[12px] font-bold transition hover:bg-white/25 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-current/30'
++              >
++                {pillar.cta}
++              </Link>
+             </div>
+-          </div>
+-        </div>
+-      </div>
+-
+-      {/* ── Bottom row: 3 equal columns ── */}
+-      <div className='mt-[10px] grid grid-cols-1 gap-[10px] sm:grid-cols-3'>
+-
+-        {/* 3D LAB — Camp Cream (no noise) */}
+-        <div className='motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-300 motion-safe:delay-700 rounded-md border border-border-design bg-white p-7 transition-transform duration-150 hover:-translate-y-0.5'>
+-          <div className='relative z-10'>
+-            <div className='flex items-center justify-between'>
+-              <h3 className='font-[family-name:var(--font-syne)] text-[22px] font-extrabold leading-tight text-camp-black'>
+-                3D Lab
+-              </h3>
+-              <Starburst className='h-3 w-3 text-camp-amber' />
+-            </div>
+-            <p className='mt-7 text-[13px] italic leading-[1.4] text-text-2'>
+-              Visual learning,
+-              <br />
+-              built different.
+-            </p>
+-            <p className='mt-2 text-[12px] leading-[1.5] text-marketing-tertiary'>
+-              WebGL-powered models. Drag FAR — model responds in real time.
+-            </p>
+-            <div className='mt-3.5 flex items-center justify-between'>
+-              <Pill variant='light'>3D Models</Pill>
+-              <CircleArrow variant='light' />
+-            </div>
+-          </div>
+-        </div>
+-
+-        {/* SESSIONS — Camp Green + noise */}
+-        <div className='motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-300 motion-safe:delay-700 relative overflow-hidden rounded-md bg-camp-green p-7 text-white noise transition-transform duration-150 hover:-translate-y-0.5'>
+-          <div className='relative z-10'>
+-            <div className='flex items-center justify-between'>
+-              <span className='font-[family-name:var(--font-dm-mono)] text-[11px] tracking-[0.2em] uppercase text-white/40'>
+-                [ Sessions ]
+-              </span>
+-              <CircleArrow variant='dark' />
+-            </div>
+-            <h3 className='mt-7 font-[family-name:var(--font-syne)] text-[22px] font-extrabold leading-[1.1] text-white'>
+-              Every Answer
+-              <br />
+-              Tracked
+-            </h3>
+-            <p className='mt-2 text-[12px] leading-[1.5] text-white/50'>
+-              Timed quizzes, full analytics. Watch your readiness climb.
+-            </p>
+-            <div className='mt-3 flex gap-[5px]'>
+-              <Pill variant='dark'>Quiz</Pill>
+-              <Pill variant='dark'>Timed Quiz</Pill>
+-            </div>
+-          </div>
+-        </div>
+-
+-        {/* SOURCE-BACKED STUDY — Camp Cream (no noise) */}
+-        <div className='motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-300 motion-safe:delay-[900ms] rounded-md border border-border-design bg-white p-7 transition-transform duration-150 hover:-translate-y-0.5'>
+-          <div className='relative z-10'>
+-            <span className='font-[family-name:var(--font-dm-mono)] text-[11px] tracking-[0.2em] uppercase text-marketing-subtle'>
+-              [ Verified References ]
+-            </span>
+-            <h3 className='mt-7 font-[family-name:var(--font-syne)] text-[clamp(18px,2.2vw,26px)] font-extrabold leading-[1.1] text-camp-black'>
+-              Answers That Cite
+-              <br />
+-              Their Sources
+-            </h3>
+-            <p className='mt-2 text-[13px] leading-relaxed text-text-2'>
+-              Tethered to verified wiki articles, taxonomy nodes, and question
+-              rationales so study context stays traceable.
+-            </p>
+-            <div className='mt-3 flex gap-[5px]'>
+-              <Pill variant='light'>Traceable Sources</Pill>
+-            </div>
+-          </div>
+-        </div>
+-      </div>
+-
+-      {/* ── Full-width Engine card — Camp Cobalt + noise ── */}
+-      <div className='motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-300 mt-[10px] relative overflow-hidden rounded-md bg-camp-cobalt p-7 text-white noise md:p-8'>
+-        <div className='relative z-10 grid grid-cols-1 items-center gap-7 md:grid-cols-2'>
+-          <div>
+-            <span className='font-[family-name:var(--font-dm-mono)] text-[11px] tracking-[0.2em] uppercase text-camp-amber'>
+-              The Engine
+-            </span>
+-            <h3 className='mt-4 font-[family-name:var(--font-syne)] text-[28px] font-extrabold leading-tight text-white'>
+-              Personalized
+-              <br />
+-              Learning
+-            </h3>
+-            <p className='mt-3 max-w-[380px] text-[13px] leading-relaxed text-white/60'>
+-              Item Response Theory adjusts question difficulty to your exact
+-              ability level. Spaced repetition at the mathematically optimal
+-              interval.
+-            </p>
+-            <div className='mt-4 flex flex-wrap gap-[5px]'>
+-              <Pill variant='dark'>IRT Engine</Pill>
+-              <Pill variant='dark'>SM-2 Algorithm</Pill>
+-              <Pill variant='dark'>Lucky Guess Detector</Pill>
+-            </div>
+-          </div>
+-          <div className='rounded-lg bg-white/[0.09] p-[18px]'>
+-            <div className='mb-3.5 flex items-center justify-between'>
+-              <span className='font-[family-name:var(--font-dm-mono)] text-[11px] tracking-[0.15em] uppercase text-white/40'>
+-                Subject Mastery
+-              </span>
+-              <ReadinessRingSvg size={50} />
+-            </div>
+-            <MasteryBars />
+-          </div>
+-        </div>
++          </article>
++        ))}
+       </div>
+     </div>
+   </section>
+ )
+-
+diff --git a/src/components/marketing/ComparisonSection.tsx b/src/components/marketing/ComparisonSection.tsx
+index a32b4c46e..a5d69b5a4 100644
+--- a/src/components/marketing/ComparisonSection.tsx
++++ b/src/components/marketing/ComparisonSection.tsx
+@@ -2,166 +2,69 @@ import { Starburst } from '@/components/marketing/LandingPrimitives'
+ import { ScrollReveal } from '@/components/motion/ScrollReveal'
+ import { StaggerParent, StaggerItem } from '@/components/motion/StaggerChildren'
+
+-const COMPARISON_ROWS: readonly {
+-  dimension: string
+-  traditional: string
+-  slatecamp: string
+-  highlight?: boolean
+-}[] = [
++const COMPANION_ROWS = [
+   {
+-    dimension: 'Cost',
+-    traditional: '₱15,000 – ₱30,000',
+-    slatecamp: 'Free forever · Premium from ₱299/month',
++    moment: 'After lecture',
++    whatHappens: 'You check if the topic stayed with you before it fades into vague confidence.',
+   },
+   {
+-    dimension: 'Schedule',
+-    traditional: 'Fixed classroom hours',
+-    slatecamp: 'Study on your schedule, on any device',
++    moment: 'After mock exams',
++    whatHappens: 'You turn wrong answers into patterns instead of treating them as isolated mistakes.',
+   },
+   {
+-    dimension: 'Performance feedback',
+-    traditional: 'General scores on mock exams',
+-    slatecamp: 'Live Readiness Score by subject, updated every session',
++    moment: 'During self-study',
++    whatHappens: 'You choose tonight’s highest-value topic instead of rereading everything at random.',
+   },
+   {
+-    dimension: 'Content',
+-    traditional: 'Textbooks, lectures, handouts',
+-    slatecamp: 'Verified questions, 3D Lab, code-cited explanations',
+-  },
+-  {
+-    dimension: 'Personalization',
+-    traditional: 'Same syllabus for every student',
+-    slatecamp: 'Adapts to your specific weak areas',
+-  },
+-  {
+-    dimension: 'Availability',
+-    traditional: 'Metro Manila-heavy',
+-    slatecamp: 'Anywhere. Including your commute.',
+-  },
+-  {
+-    dimension: 'Readiness signal',
+-    traditional: '"Keep studying."',
+-    slatecamp: '"You\'re at 74%. Here\'s exactly what to fix."',
+-    highlight: true,
++    moment: 'Before exam day',
++    whatHappens: 'You reduce surprise by making weak spots visible while there is still time to repair them.',
+   },
+ ] as const
+
+ export const ComparisonSection = () => (
+-  <section
+-    aria-labelledby='comparison-heading'
+-    className='border-t border-border-design px-6 py-24'
+-  >
++  <section aria-labelledby='companion-heading' className='border-t border-border-design px-6 py-24'>
+     <div className='mx-auto max-w-[1200px]'>
+       <ScrollReveal delay={0}>
+         <div className='flex items-center gap-3'>
+           <Starburst className='h-3 w-3 text-camp-amber' />
+-          <span className='font-mono text-[11px] tracking-[0.2em] uppercase text-text-2'>
+-            Two ways to prepare
++          <span className='font-[family-name:var(--font-dm-mono)] text-[11px] tracking-[0.2em] uppercase text-text-2'>
++            Built beside your review system
+           </span>
+         </div>
+
+         <h2
+-          id='comparison-heading'
+-          className='mt-4 font-[family-name:var(--font-syne)] text-[clamp(1.75rem,3vw,2.5rem)] font-semibold text-ink'
++          id='companion-heading'
++          className='mt-4 max-w-3xl font-[family-name:var(--font-syne)] text-[clamp(1.9rem,3.6vw,3rem)] font-extrabold leading-tight text-ink'
+         >
+-          The old way. The better way.
++          Review centers teach. SlateCamp helps you check what stuck.
+         </h2>
+
+-        <p className='mt-3 max-w-lg text-[15px] leading-relaxed text-text-2'>
+-          Traditional review centers work. But there&apos;s one thing they
+-          can&apos;t tell you that SlateCamp can: exactly where your gaps are,
+-          right now, before exam day.
++        <p className='mt-4 max-w-2xl text-[15px] leading-relaxed text-text-2'>
++          Use SlateCamp after lectures, mock exams, and self-study sessions to test retention, repair mistakes, and choose the next topic. It is the always-on companion beside your instructor, mentor, or review center.
+         </p>
+       </ScrollReveal>
+
+-      {/* Table — desktop */}
+-      <div className='mt-10 hidden overflow-hidden rounded-md border border-border-design md:block'>
+-        {/* Header row */}
+-        <div className='grid grid-cols-[1fr_1fr_1fr] border-b border-border-design bg-white'>
+-          <div className='px-5 py-3 text-[12px] font-semibold text-text-2' />
+-          <div className='border-l border-border-design px-5 py-3 text-[12px] font-semibold text-text-2'>
+-            Traditional Review Center
+-          </div>
+-          <div className='border-l border-border-design bg-primary-50 px-5 py-3 text-[12px] font-semibold text-camp-cobalt'>
+-            SlateCamp
+-          </div>
+-        </div>
+-        {/* Data rows */}
+-        <StaggerParent>
+-          {COMPARISON_ROWS.map((row) => (
+-            <StaggerItem key={row.dimension}>
+-              <div
+-                className={`grid grid-cols-[1fr_1fr_1fr] border-b border-border-design last:border-0 ${
+-                  row.highlight ? 'bg-white' : ''
+-                }`}
+-              >
+-                <div className='px-5 py-3.5 text-[13px] font-medium text-ink'>
+-                  {row.dimension}
+-                </div>
+-                <div className='border-l border-border-design px-5 py-3.5 text-[13px] text-text-2'>
+-                  {row.traditional}
+-                </div>
+-                <div
+-                  className={`border-l border-border-design px-5 py-3.5 text-[13px] ${
+-                    row.highlight
+-                      ? 'font-medium text-camp-cobalt'
+-                      : 'text-text-2'
+-                  }`}
+-                >
+-                  {row.slatecamp}
+-                </div>
+-              </div>
+-            </StaggerItem>
+-          ))}
+-        </StaggerParent>
+-      </div>
+-
+-      {/* Mobile: stacked cards */}
+-      <div className='mt-6 md:hidden'>
+-        <StaggerParent className='space-y-3'>
+-          {COMPARISON_ROWS.map((row) => (
+-            <StaggerItem key={row.dimension}>
+-              <div className='rounded-md border border-border-design p-4'>
+-                <p className='text-[11px] font-semibold uppercase tracking-wide text-gray-400'>
+-                  {row.dimension}
++      <div className='mt-10 grid grid-cols-1 gap-3 md:grid-cols-4'>
++        <StaggerParent className='contents'>
++          {COMPANION_ROWS.map((row) => (
++            <StaggerItem key={row.moment}>
++              <article className='h-full rounded-[18px] border border-border-design bg-white p-5 shadow-sm'>
++                <p className='font-[family-name:var(--font-dm-mono)] text-[11px] font-semibold uppercase tracking-[0.16em] text-camp-cobalt'>
++                  {row.moment}
+                 </p>
+-                <div className='mt-2 flex gap-4'>
+-                  <div className='flex-1'>
+-                    <p className='text-[11px] font-medium text-gray-400'>
+-                      Traditional
+-                    </p>
+-                    <p className='mt-0.5 text-[12px] text-text-2'>
+-                      {row.traditional}
+-                    </p>
+-                  </div>
+-                  <div className='flex-1'>
+-                    <p className='text-[11px] font-medium text-camp-cobalt'>
+-                      SlateCamp
+-                    </p>
+-                    <p
+-                      className={`mt-0.5 text-[12px] ${
+-                        row.highlight
+-                          ? 'font-medium text-camp-cobalt'
+-                          : 'text-ink'
+-                      }`}
+-                    >
+-                      {row.slatecamp}
+-                    </p>
+-                  </div>
+-                </div>
+-              </div>
++                <p className='mt-4 text-[13px] leading-relaxed text-text-2'>{row.whatHappens}</p>
++              </article>
+             </StaggerItem>
+           ))}
+         </StaggerParent>
+       </div>
+
+-      <p className='mt-6 text-[13px] text-gray-400'>
+-        SlateCamp isn&apos;t against review centers — many students use both.
+-        But if you want to know whether you&apos;re ready before exam day,
+-        SlateCamp is the only way to find out.
+-      </p>
++      <div className='mt-8 rounded-[18px] border border-camp-amber/25 bg-camp-amber/10 p-5'>
++        <p className='text-[13px] font-semibold text-camp-black'>Positioning guardrail</p>
++        <p className='mt-2 text-[13px] leading-relaxed text-text-2'>
++          SlateCamp supports architecture instruction. It does not replace instructors, review centers, official sources, local ordinances, or licensed professional judgment.
++        </p>
++      </div>
+     </div>
+   </section>
+ )
+-
+-
+diff --git a/src/components/marketing/FaqSection.stories.tsx b/src/components/marketing/FaqSection.stories.tsx
+index b9a18722b..0f39b50aa 100644
+--- a/src/components/marketing/FaqSection.stories.tsx
++++ b/src/components/marketing/FaqSection.stories.tsx
+@@ -21,34 +21,34 @@ type Story = StoryObj<typeof meta>
+
+ const sixQuestions = [
+   {
+-    question: 'What is the LEA and who needs to take it?',
++    question: 'What is the Licensure Examination for Architects and who needs to take it?',
+     answer:
+-      'The Licensure Examination for Architects (LEA) is the Philippine board exam required for all architecture graduates who wish to practice as licensed architects. It covers seven subjects spanning design, history, utilities, and the National Building Code.',
++      'The Licensure Examination for Architects is the Philippine board exam for architecture graduates seeking registration as architects. SlateCamp helps candidates organize review around codes, topics, questions, and source trails; always verify current requirements with PRC and PRBoA materials.',
+   },
+   {
+     question: 'How does SlateCamp differ from traditional review centers?',
+     answer:
+-      'SlateCamp uses an adaptive IRT-based engine that adjusts question difficulty to your current ability level. Instead of passive lectures, you get targeted practice sessions that close your specific knowledge gaps — not a generic review for everyone.',
++      'Review centers teach. SlateCamp helps you check what stuck after lectures, mock exams, and self-study. It turns missed answers into topics to repair without replacing instructors, mentors, or review centers.',
+   },
+   {
+-    question: 'How many questions are in the question bank?',
++    question: 'What do I get after creating a free account?',
+     answer:
+-      'The bank contains over 2,400 questions, each written to the LEA syllabus and verified by licensed architects. Every question is tagged to its exact code provision — no recycled PDFs or scraped notes.',
++      'You can start with dashboard-gated free resources, preview tools, and readiness-oriented practice surfaces. Account creation keeps progress, weak topics, and next steps in one place.',
+   },
+   {
+     question: 'What is the Readiness Score?',
+     answer:
+-      'Your Readiness Score is a composite metric computed from six vectors: mastery level, time since last review, consistency, coverage, strength in weak areas, and 30-day performance trend. It gives you a single number that tells you how prepared you are for exam day.',
++      'The Readiness Score is a study signal that helps you see what feels stable and what needs repair. It is not a board-result forecast or pass promise; it is a way to choose the next topic more clearly.',
+   },
+   {
+     question: 'Can I use SlateCamp on mobile?',
+     answer:
+-      'Yes. SlateCamp is fully responsive and optimized for mobile browsers. Review sessions, the wiki, and analytics are all accessible from any device without needing to install an app.',
++      'Yes. SlateCamp is designed for mobile browsers so you can read explanations, answer questions, and check tools from common study devices without installing an app.',
+   },
+   {
+     question: 'Is there a free trial?',
+     answer:
+-      'You can explore the platform in Try Mode — a curated set of questions and wiki articles available without an account. A full subscription unlocks all 2,400+ questions, spaced repetition scheduling, and your personal analytics dashboard.',
++      'Free resources can require signup by design. The landing page shows previews, then a free account unlocks saved progress, dashboard context, and gated resources where needed. No credit card is required for the free starting path.',
+   },
+ ]
+
+diff --git a/src/components/marketing/FeatureSectionLayout.tsx b/src/components/marketing/FeatureSectionLayout.tsx
+index 6f3fa129c..f7cfdb668 100644
+--- a/src/components/marketing/FeatureSectionLayout.tsx
++++ b/src/components/marketing/FeatureSectionLayout.tsx
+@@ -57,7 +57,7 @@ export const FeatureCheckItem = ({
+       <div className={`text-[13px] font-bold ${textDark ? 'text-white' : 'text-camp-black'}`}>
+         {title}
+       </div>
+-      <div className={`mt-1 text-[12px] leading-relaxed ${textDark ? 'text-white/50' : 'text-text-2'}`}>
++      <div className={`mt-1 text-[12px] leading-relaxed ${textDark ? 'text-white/70' : 'text-text-2'}`}>
+         {description}
+       </div>
+     </div>
+@@ -80,7 +80,7 @@ export const SectionEyebrow = ({
+     <Starburst className='h-3 w-3 text-camp-amber' />
+     <span
+       className={`font-mono text-[11px] tracking-[.2em] uppercase ${
+-        dark ? 'text-white/40' : amber ? 'text-black/50' : 'text-muted-foreground'
++        dark ? 'text-white/60' : amber ? 'text-black/70' : 'text-muted-foreground'
+       }`}
+     >
+       {label}
+@@ -102,7 +102,7 @@ export const FeaturePill = ({
+     amber: 'border-camp-amber/25 bg-camp-amber/10 text-warning-700',
+     green: 'border-camp-green/25 bg-camp-green/8 text-camp-green',
+     'muted-light': 'border-border-design text-text-2',
+-    'muted-dark': 'border-white/15 text-white/50',
++    'muted-dark': 'border-white/20 text-white/70',
+     'on-amber': 'border-black/20 bg-black/[0.08] text-camp-black',
+   }
+
+diff --git a/src/components/marketing/FinalCtaSection.tsx b/src/components/marketing/FinalCtaSection.tsx
+index 03b07bc78..297ba4115 100644
+--- a/src/components/marketing/FinalCtaSection.tsx
++++ b/src/components/marketing/FinalCtaSection.tsx
+@@ -11,24 +11,28 @@ export const FinalCtaSection = ({
+   isLoggedIn: boolean
+ }) => (
+   <section aria-label='Get started' className='px-6 pb-24'>
+-    <div className='relative mx-auto max-w-[1200px] overflow-hidden rounded-md bg-camp-black px-8 py-20 text-center text-white noise'>
++    <div className='relative mx-auto max-w-[1200px] overflow-hidden rounded-[28px] bg-camp-black px-8 py-20 text-center text-white noise'>
++      <div className='absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(245,166,35,0.24),transparent_34%),radial-gradient(circle_at_80%_10%,rgba(59,130,246,0.22),transparent_30%)]' />
+       <div className='relative z-10'>
+         <ScrollReveal y={20} duration={0.4} delay={0}>
+-          <h2 className='font-[family-name:var(--font-syne)] text-[clamp(1.75rem,3.5vw,2.5rem)] font-extrabold text-white'>
+-            The exam doesn&apos;t wait for you to feel ready.
++          <p className='font-[family-name:var(--font-dm-mono)] text-[11px] font-semibold uppercase tracking-[0.2em] text-camp-amber'>
++            Start with clarity
++          </p>
++          <h2 className='mx-auto mt-4 max-w-3xl font-[family-name:var(--font-syne)] text-[clamp(1.9rem,3.8vw,3rem)] font-extrabold leading-tight text-white'>
++            The danger is not having weak spots. The danger is discovering them too late.
+           </h2>
+         </ScrollReveal>
+         <ScrollReveal y={12} duration={0.4} delay={0.1}>
+-          <p className='mx-auto mt-3 max-w-lg text-[15px] italic leading-relaxed text-white/55'>
++          <p className='mx-auto mt-4 max-w-xl text-[15px] leading-relaxed text-white/60'>
+             {isLoggedIn
+-              ? 'Your Readiness Score is waiting. Keep building toward it.'
+-              : 'SlateCamp shows you exactly where you stand, what to fix, and when you\u2019re genuinely ready. Start free \u2014 no card needed.'}
++              ? 'Your dashboard is ready. Keep turning uncertainty into a clearer study plan.'
++              : 'Start with a free account, preview the resources, and build a study plan around what you actually need to repair. No card required.'}
+           </p>
+         </ScrollReveal>
+         <ScrollReveal y={12} duration={0.4} delay={0.15}>
+           <Link
+             href={ctaHref}
+-            className='mt-10 inline-flex rounded-sm bg-camp-cobalt px-8 py-3.5 text-[15px] font-medium text-white transition-all duration-150 hover:bg-primary-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-camp-cobalt focus-visible:ring-offset-2'
++            className='mt-10 inline-flex rounded-sm bg-camp-cobalt px-8 py-3.5 text-[15px] font-semibold text-white transition-all duration-150 hover:bg-primary-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-camp-cobalt focus-visible:ring-offset-2'
+           >
+             {ctaLabel}
+           </Link>
+@@ -37,5 +41,3 @@ export const FinalCtaSection = ({
+     </div>
+   </section>
+ )
+-
+-
+diff --git a/src/components/marketing/HeroHeadline.tsx b/src/components/marketing/HeroHeadline.tsx
+index 9ad0af567..a593d5683 100644
+--- a/src/components/marketing/HeroHeadline.tsx
++++ b/src/components/marketing/HeroHeadline.tsx
+@@ -1,77 +1,14 @@
+-'use client'
+-
+-import { useEffect, useRef } from 'react'
+-import { annotate } from 'rough-notation'
+-
+ const H1_CLASS =
+-  'motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-300 motion-safe:delay-100 font-[family-name:var(--font-geist-sans)] text-[clamp(3rem,8vw,5.8rem)] font-bold leading-[0.92] text-foreground'
+-
+-export const HeroHeadline = () => {
+-  const knowRef = useRef<HTMLSpanElement>(null)
+-  const winRef = useRef<HTMLSpanElement>(null)
+-  const youllRef = useRef<HTMLSpanElement>(null)
+-  const taglineRef = useRef<HTMLParagraphElement>(null)
+-
+-  useEffect(() => {
+-    if (
+-      !knowRef.current ||
+-      !winRef.current ||
+-      !youllRef.current ||
+-      !taglineRef.current
+-    )
+-      return
+-
+-    const winAnnotation = annotate(winRef.current, {
+-      type: 'circle',
+-      color: '#1B7A3C',
+-      strokeWidth: 4,
+-      animationDuration: 200,
+-    })
+-
+-    const youllAnnotation = annotate(youllRef.current, {
+-      type: 'underline',
+-      color: '#1B3FC4',
+-      strokeWidth: 4,
+-      animationDuration: 200,
+-    })
+-
+-    const taglineAnnotation = annotate(taglineRef.current, {
+-      type: 'highlight',
+-      color: 'oklch(92.9% 0.013 255.508)',
+-      strokeWidth: 2,
+-      animationDuration: 200,
+-    })
+-
+-    const t = setTimeout(() => {
+-      youllAnnotation.show()
+-      winAnnotation.show()
+-      taglineAnnotation.show()
+-    }, 700)
+-    return () => {
+-      clearTimeout(t)
+-      winAnnotation.remove()
+-      youllAnnotation.remove()
+-      taglineAnnotation.remove()
+-    }
+-  }, [])
+-
+-  return (
+-    <>
+-      <h1 className={H1_CLASS}>
+-        <span ref={youllRef}>
+-          <span ref={knowRef}> Know you&apos;ll </span>
+-          <span ref={winRef}>win.</span>
+-        </span>
+-      </h1>
+-      <div className='pt-2'>
+-        <p
+-          // ref={taglineRef}
+-          className='motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-300 motion-safe:delay-200 mt-6 max-w-lg text-sm leading-relaxed text-primary font-medium w-fit px-2'
+-        >
+-          One readiness engine for the LEA — adaptive quizzing, syllabus-mapped
+-          content, and a score that never lies.
+-        </p>
+-      </div>
+-    </>
+-  )
+-}
++  'font-[family-name:var(--font-geist-sans)] text-[clamp(3rem,8vw,5.8rem)] font-black leading-[0.9] tracking-[-0.055em] text-foreground'
++
++export const HeroHeadline = () => (
++  <>
++    <h1 className={H1_CLASS}>Your architecture study companion.</h1>
++    <div className='pt-2'>
++      <p className='mt-6 max-w-lg text-sm font-medium leading-relaxed text-primary'>
++        Source-backed resources, quizzes, 3D labs, and free tools for architecture school,
++        Licensure Examination for Architects readiness, and professional practice.
++      </p>
++    </div>
++  </>
++)
+diff --git a/src/components/marketing/HeroSection.tsx b/src/components/marketing/HeroSection.tsx
+index fffe9e0a1..aa87b2057 100644
+--- a/src/components/marketing/HeroSection.tsx
++++ b/src/components/marketing/HeroSection.tsx
+@@ -1,24 +1,41 @@
+ 'use client'
+
+ import Link from 'next/link'
+-import { HeroHeadline } from '@/components/marketing/HeroHeadline'
++import { CaretRight } from '@phosphor-icons/react/dist/ssr'
++import { HeroCodeEnvelopeExplorer } from '@/components/marketing/hero/HeroCodeEnvelopeExplorer'
+ import {
+   Starburst,
+   NoiseOverlay,
+   DottedGridOverlay,
+ } from '@/components/marketing/LandingPrimitives'
+-import { CaretRight } from '@phosphor-icons/react/dist/ssr'
+ import { SCIcon } from '@/components/graphics/icons/Icon'
++import { ROUTES } from '@/lib/constants'
+
+-/* ── Constants ── */
+-
+-const STATS = [
+-  'Syllabus-mapped to the LEA',
+-  'Real-time Readiness Score',
++const PROOF_PILLS = [
+   'Source-backed explanations',
++  'Licensure Examination for Architects readiness map',
++  'Interactive 3D lab',
++  'Free architecture tools',
+ ] as const
+
+-/* ── Main Hero Section Export ── */
++const PLATFORM_PILLARS = [
++  {
++    title: 'Knowledge Resources',
++    body: 'Find the rule, see the explanation, then connect it to quizzes and 3D examples.',
++  },
++  {
++    title: 'Quizzes',
++    body: 'Check what stuck after lecture, mock exams, and late-night study sessions.',
++  },
++  {
++    title: '3D Lab',
++    body: 'Turn spatial code topics into visible, inspectable study moments.',
++  },
++  {
++    title: 'Free Tools',
++    body: 'Use calculators and study utilities that stay useful beyond board review.',
++  },
++] as const
+
+ export const HeroSection = ({
+   ctaHref,
+@@ -28,81 +45,97 @@ export const HeroSection = ({
+   ctaLabel: string
+ }) => (
+   <section
+-    aria-label='Hero'
+-    className='relative flex flex-col overflow-hidden bg-page-bg px-6 pb-0 pt-18 md:pt-20'
++    aria-label='Architecture learning platform for school, Licensure Examination for Architects readiness, and practice.'
++    className='relative overflow-hidden bg-page-bg px-6 pb-8 pt-20 md:pt-22'
+   >
+     <div
+       aria-hidden='true'
+-      className='pointer-events-none absolute inset-0 z-0 bg-[url("/images/dashboard/Dashboard-BG-Image.png")] bg-cover bg-bottom bg-no-repeat opacity-70'
++      className='pointer-events-none absolute inset-0 z-0 bg-[url("/images/dashboard/Dashboard-BG-Image.png")] bg-cover bg-bottom bg-no-repeat opacity-45'
+     />
+     <div
+       aria-hidden='true'
+-      className='pointer-events-none absolute inset-0 z-0 bg-linear-to-b from-page-bg/35 via-page-bg/20 to-page-bg'
++      className='pointer-events-none absolute inset-0 z-0 bg-linear-to-b from-page-bg/20 via-page-bg/65 to-page-bg'
+     />
+     <div
+-      className='landing-orb pointer-events-none absolute right-[-10%] top-[-15%] h-[50vh] w-[50vh] rounded-full md:h-[45vw] md:w-[45vw]'
+-      style={{
+-        filter: 'blur(30px)',
+-      }}
++      className='landing-orb pointer-events-none absolute right-[-8%] top-[-18%] h-[50vh] w-[50vh] rounded-full md:h-[42vw] md:w-[42vw]'
++      style={{ filter: 'blur(34px)' }}
+       aria-hidden='true'
+     />
+     <DottedGridOverlay />
+-    <NoiseOverlay opacity={0.04} />
++    <NoiseOverlay opacity={0.035} />
+
+-    {/* Hero Content */}
+-    <div className='relative z-10 mx-auto w-full max-w-[1200px]'>
+-      <div className='relative flex min-h-[600px] flex-col items-start'>
+-        {/* Giant headline */}
+-        <div className='flex h-full w-full max-w-[760px] flex-col justify-start'>
+-          <div className='mt-26'>
+-            <div className='motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-300 flex items-center gap-3'>
+-              <div
+-                className='flex flex-col gap-1 text-primary'
+-                aria-label='Professional LEA review platform.'
+-              >
+-                <div className='flex flex-row items-center gap-2 '>
+-                  <Starburst className='h-3 w-3' />
+-                  <span className='font-[family-name:var(--font-dm-mono)] text-[12px] font-semibold tracking-[0.22em] uppercase text-camp-cobalt'>
+-                    Licensure Examination Review for Architects
+-                  </span>
+-                </div>
+-                {/* <p className='text-[12px] font-semibold'>Review Platform</p> */}
+-              </div>
+-            </div>
+-
+-            <HeroHeadline />
++    <div className='relative z-10 mx-auto w-full max-w-[1240px]'>
++      <div className='grid min-h-[calc(100vh-96px)] items-center gap-10 py-8 lg:grid-cols-[0.92fr_1.08fr] lg:py-6'>
++        <div className='max-w-[680px]'>
++          <div className='motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-300 flex items-center gap-2'>
++            <Starburst className='h-3 w-3 text-camp-amber' />
++            <span className='font-[family-name:var(--font-dm-mono)] text-[12px] font-semibold tracking-[0.22em] uppercase text-camp-cobalt'>
++              Architecture learning platform
++            </span>
+           </div>
+
+-          <div className=' flex h-full flex-col justify-start pt-8'>
+-            <div className='motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-300 motion-safe:delay-500 flex flex-col items-end justify-end gap-3'>
+-              <Link
+-                href={ctaHref}
+-                className='inline-flex items-center gap-2 whitespace-nowrap rounded-sm bg-camp-cobalt px-7 py-3 text-[14px] font-medium text-white transition-all duration-150 hover:bg-primary-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-camp-cobalt focus-visible:ring-offset-2'
+-              >
+-                {ctaLabel} <SCIcon icon={CaretRight} size='md' />
+-              </Link>
+-              <p className='motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-300 motion-safe:delay-700 flex justify-start text-[11px] font-semibold text-text-2'>
+-                Free to start &middot; No credit card required
+-              </p>
+-            </div>
++          <h1 className='motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-300 motion-safe:delay-100 mt-5 font-[family-name:var(--font-geist-sans)] text-[clamp(3.1rem,8vw,6.4rem)] font-black leading-[0.9] tracking-[-0.055em] text-foreground'>
++            Your architecture study companion.
++          </h1>
++
++          <p className='motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-300 motion-safe:delay-200 mt-6 max-w-[590px] text-[16px] font-medium leading-relaxed text-primary sm:text-[18px]'>
++            Source-backed resources, quizzes, 3D labs, and free tools for architecture school,
++            Licensure Examination for Architects readiness, and professional practice.
++          </p>
++
++          <p className='motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-300 motion-safe:delay-300 mt-4 max-w-[580px] rounded-2xl border border-white/70 bg-white/75 p-4 text-[15px] font-medium leading-relaxed text-camp-black shadow-sm backdrop-blur'>
++            Built around Philippine codes, board-review realities, and the way students actually study: anxious after lecture, buried in notes, and looking for a reliable buddy that makes the hard parts visible.
++          </p>
++
++          <div className='motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-300 motion-safe:delay-500 mt-8 flex flex-wrap items-center gap-3'>
++            <Link
++              href={ctaHref}
++              className='inline-flex items-center gap-2 whitespace-nowrap rounded-sm bg-camp-cobalt px-7 py-3 text-[14px] font-semibold text-white transition-all duration-150 hover:bg-primary-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-camp-cobalt focus-visible:ring-offset-2'
++            >
++              {ctaLabel} <SCIcon icon={CaretRight} size='md' />
++            </Link>
++            <Link
++              href={ROUTES.calculators.root}
++              className='inline-flex items-center gap-2 whitespace-nowrap rounded-sm border border-border-design bg-white/80 px-7 py-3 text-[14px] font-semibold text-camp-black transition-all duration-150 hover:border-camp-cobalt/40 hover:text-camp-cobalt focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-camp-cobalt focus-visible:ring-offset-2'
++            >
++              Explore Free Tools
++            </Link>
++            <Link
++              href='#knowledge-resources'
++              className='text-[13px] font-semibold text-camp-cobalt underline decoration-camp-cobalt/25 underline-offset-4 hover:decoration-camp-cobalt'
++            >
++              Browse free knowledge previews
++            </Link>
+           </div>
+
+-          {/* Stats Bar */}
+-          <div className='motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-300 motion-safe:delay-[900ms] mt-4 flex flex-wrap items-center gap-x-8 gap-y-3 border-t border-border-design pt-3'>
+-            {STATS.map((stat) => (
++          <p className='motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-300 motion-safe:delay-700 mt-3 max-w-[620px] text-[12px] font-bold leading-relaxed text-camp-black'>
++            Free after signup where needed · No credit card required · Built to use beside your review center, school, books, and mentors
++          </p>
++
++          <div className='motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-300 motion-safe:delay-500 mt-7 flex flex-wrap gap-2'>
++            {PROOF_PILLS.map((pill) => (
+               <span
+-                key={stat}
+-                className='flex items-center gap-2 text-[12px] text-gray-400'
++                key={pill}
++                className='rounded-full border border-camp-cobalt/15 bg-white/80 px-3 py-1.5 text-[12px] font-bold text-camp-black shadow-sm'
+               >
+-                <span
+-                  className='h-1 w-1 rounded-full bg-camp-cobalt'
+-                  aria-hidden='true'
+-                />
+-                {stat}
++                {pill}
+               </span>
+             ))}
+           </div>
+         </div>
++
++        <div className='motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-3 motion-safe:duration-500 motion-safe:delay-300'>
++          <HeroCodeEnvelopeExplorer />
++        </div>
++      </div>
++
++      <div className='grid gap-3 border-t border-border-design/80 pt-4 sm:grid-cols-2 lg:grid-cols-4'>
++        {PLATFORM_PILLARS.map((pillar) => (
++          <div key={pillar.title} className='rounded-xl border border-border-design bg-white/75 p-4 shadow-sm backdrop-blur'>
++            <h2 className='text-[13px] font-extrabold text-camp-black'>{pillar.title}</h2>
++            <p className='mt-1 text-[12px] leading-relaxed text-text-2'>{pillar.body}</p>
++          </div>
++        ))}
+       </div>
+     </div>
+   </section>
+diff --git a/src/components/marketing/HowItWorksSection.tsx b/src/components/marketing/HowItWorksSection.tsx
+index 8755bb945..24ad85e56 100644
+--- a/src/components/marketing/HowItWorksSection.tsx
++++ b/src/components/marketing/HowItWorksSection.tsx
+@@ -5,59 +5,59 @@ import { StaggerParent, StaggerItem } from '@/components/motion/StaggerChildren'
+ const STEPS = [
+   {
+     num: '01',
+-    title: 'Choose your mode',
+-    desc: 'Review for zero-pressure study. Camp for tracked learning. Storm for full exam simulation.',
++    title: 'Find the confusing topic',
++    desc: 'Start from a code guide, quiz miss, 3D preview, or free tool when a topic feels vague.',
+   },
+   {
+     num: '02',
+-    title: 'Answer questions',
+-    desc: 'Difficulty adjusts from your answers. Spaced repetition schedules reviews at the mathematically optimal interval.',
++    title: 'Check what stayed with you',
++    desc: 'Use a short quiz or readiness check to separate lucky confidence from topics that are actually stable.',
+   },
+   {
+     num: '03',
+-    title: 'Master the material',
+-    desc: 'Watch your readiness score climb. The taxonomy heatmap shows exactly where you stand — no hiding.',
++    title: 'Repair the gap',
++    desc: 'Jump to the explanation, visual guide, or calculator that makes the next study step obvious.',
++  },
++  {
++    num: '04',
++    title: 'Return with a plan',
++    desc: 'Go back to your review center, book, notes, or study group knowing what to ask and what to practice.',
+   },
+ ] as const
+
+ export const HowItWorksSection = () => (
+-  <section
+-    id="how-it-works"
+-    aria-labelledby="how-it-works-heading"
+-    className="relative border-t border-border-design px-6 py-24"
+-  >
+-    <div className="relative z-10 mx-auto max-w-[1200px]">
++  <section id='how-it-works' aria-labelledby='how-it-works-heading' className='relative scroll-mt-24 border-t border-border-design px-6 py-24'>
++    <div className='relative z-10 mx-auto max-w-[1200px]'>
+       <ScrollReveal>
+-        <div className="flex items-center gap-3">
+-          <Starburst className="h-3 w-3 text-[--camp-orange]" />
++        <div className='flex items-center gap-3'>
++          <Starburst className='h-3 w-3 text-camp-amber' />
+           <h2
+-            id="how-it-works-heading"
+-            className="font-mono text-[11px] tracking-[0.2em] uppercase text-text-2"
++            id='how-it-works-heading'
++            className='font-[family-name:var(--font-dm-mono)] text-[11px] tracking-[0.2em] uppercase text-text-2'
+           >
+-            How It Works
++            How SlateCamp helps
+           </h2>
+         </div>
++        <p className='mt-4 max-w-2xl font-[family-name:var(--font-syne)] text-[clamp(1.7rem,3vw,2.5rem)] font-extrabold leading-tight text-camp-black'>
++          Use it like the always-available reviewer buddy beside your real review system.
++        </p>
+       </ScrollReveal>
+
+-      <StaggerParent className="mt-16 grid grid-cols-1 gap-16 sm:grid-cols-3 sm:gap-12">
++      <StaggerParent className='mt-14 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4'>
+         {STEPS.map(({ num, title, desc }) => (
+           <StaggerItem key={num}>
+-            <span
+-              className="font-mono text-[56px] font-bold leading-none text-border-design"
+-              aria-hidden="true"
+-            >
+-              {num}
+-            </span>
+-            <h3 className="mt-4 font-[family-name:var(--font-syne)] text-[20px] font-semibold text-ink">
+-              {title}
+-            </h3>
+-            <p className="mt-3 text-[14px] leading-relaxed text-text-2">
+-              {desc}
+-            </p>
++            <article className='h-full rounded-[18px] border border-border-design bg-white p-6 shadow-sm'>
++              <span className='font-[family-name:var(--font-dm-mono)] text-[40px] font-bold leading-none text-border-design' aria-hidden='true'>
++                {num}
++              </span>
++              <h3 className='mt-4 font-[family-name:var(--font-syne)] text-[19px] font-extrabold text-ink'>
++                {title}
++              </h3>
++              <p className='mt-3 text-[13px] leading-relaxed text-text-2'>{desc}</p>
++            </article>
+           </StaggerItem>
+         ))}
+       </StaggerParent>
+     </div>
+   </section>
+ )
+-
+diff --git a/src/components/marketing/MarketingFooter.tsx b/src/components/marketing/MarketingFooter.tsx
+index 3b3f9ebf3..2ad8028f1 100644
+--- a/src/components/marketing/MarketingFooter.tsx
++++ b/src/components/marketing/MarketingFooter.tsx
+@@ -20,7 +20,7 @@ export const MarketingFooter = ({
+
+   return (
+     <footer className={`border-t ${borderClass}`}>
+-      <div className='mx-auto max-w-[1200px] px-6 py-6'>
++      <div className='mx-auto max-w-[1200px] px-6 py-7'>
+         <div className='flex flex-col items-center justify-between gap-4 sm:flex-row'>
+           <span className={`text-[12px] ${textMuted}`}>
+             &copy; {new Date().getFullYear()} {siteConfig.name}
+@@ -39,9 +39,12 @@ export const MarketingFooter = ({
+           <span
+             className={`font-instrument-serif text-[12px] italic tracking-wide ${textMuted}`}
+           >
+-            Less, but better.
++            Less panic, clearer study.
+           </span>
+         </div>
++        <p className={`mx-auto mt-5 max-w-4xl text-center text-[11px] leading-relaxed ${textMuted}`}>
++          SlateCamp is an educational study platform. It is not affiliated with PRC, PRBoA, universities, review centers, or government agencies. Always verify current code requirements, exam rules, and project decisions with primary authority documents or a qualified professional.
++        </p>
+       </div>
+     </footer>
+   )
+diff --git a/src/components/marketing/MarketingNav.tsx b/src/components/marketing/MarketingNav.tsx
+index 609cc68f5..7b111489e 100644
+--- a/src/components/marketing/MarketingNav.tsx
++++ b/src/components/marketing/MarketingNav.tsx
+@@ -18,13 +18,14 @@ export async function MarketingNav({
+   activeRoute = '/',
+   logoScrollsToTop = false,
+   variant = 'light',
++  isLoggedIn: isLoggedInOverride,
+ }: {
+   activeRoute?: string
+   logoScrollsToTop?: boolean
+   variant?: 'light' | 'dark'
++  isLoggedIn?: boolean
+ }) {
+-  const { data: { user } } = await getUserIfPresent()
+-  const isLoggedIn = !!user
++  const isLoggedIn = isLoggedInOverride ?? !!(await getUserIfPresent()).data.user
+   const isDark = variant === 'dark'
+
+   const secondaryLinkClass = (href: string) =>
+diff --git a/src/components/marketing/QuestionsSection.tsx b/src/components/marketing/QuestionsSection.tsx
+index f82866235..33fd7ecfc 100644
+--- a/src/components/marketing/QuestionsSection.tsx
++++ b/src/components/marketing/QuestionsSection.tsx
+@@ -1,3 +1,6 @@
++'use client'
++
++import { useState } from 'react'
+ import {
+   FeatureSectionLayout,
+   FeatureCheckItem,
+@@ -7,142 +10,164 @@ import {
+ import { StaggerParent, StaggerItem } from '@/components/motion/StaggerChildren'
+ import { ScrollReveal } from '@/components/motion/ScrollReveal'
+
+-/* ── Quiz mockup (rendered UI, not an image) ── */
++const OPTIONS = [
++  'Because the table says so; memorize the value only.',
++  'Because setbacks and clearances shape where the mass and overhang may sit.',
++  'Because eaves are ignored if the lot is residential.',
++  'Because the road right-of-way replaces all side and rear limits.',
++] as const
++
++const QuizPreview = () => {
++  const [selected, setSelected] = useState<number | null>(null)
++  const [submitted, setSubmitted] = useState(false)
++  const correctIndex = 1
+
+-const QuizMockup = () => (
+-  <div className='overflow-hidden rounded-md border border-border-design bg-white'>
+-    {/* Header — Cobalt with noise */}
+-    <div className='relative overflow-hidden bg-camp-cobalt px-4 py-3 noise-heavy'>
+-      <div className='relative z-10 flex items-center justify-between'>
+-        <div>
+-          <div className='font-mono text-[11px] tracking-[.18em] uppercase text-white/50'>
+-            Building Technology · Q14
++  return (
++    <div className='overflow-hidden rounded-[22px] border border-border-design bg-white shadow-sm'>
++      <div className='relative overflow-hidden bg-camp-cobalt px-4 py-3 noise-heavy'>
++        <div className='relative z-10 flex items-center justify-between gap-3'>
++          <div>
++            <div className='font-[family-name:var(--font-dm-mono)] text-[11px] tracking-[.18em] uppercase text-white/50'>
++              Building Technology · Preview
++            </div>
++            <div className='mt-0.5 text-[13px] font-bold text-white'>Setbacks and eave clearance</div>
+           </div>
+-          <div className='mt-0.5 text-[13px] font-bold text-white'>
+-            Timed Quiz — 18:42 remaining
++          <div className='rounded-full bg-white/15 px-3 py-1 font-[family-name:var(--font-dm-mono)] text-[11px] text-white/70'>
++            Study only
+           </div>
+         </div>
+-        <div className='rounded-full bg-white/15 px-3 py-1 font-mono text-[11px] text-white/70'>
+-          40 questions
+-        </div>
+       </div>
+-    </div>
+
+-    {/* Question body */}
+-    <div className='p-4'>
+-      <p className='mb-3 text-[13px] font-semibold leading-snug text-camp-black'>
+-        Under PD 1096, what is the minimum ceiling height for habitable rooms
+-        on the ground floor of a residential building?
+-      </p>
++      <div className='p-4 sm:p-5'>
++        <p className='mb-4 text-[14px] font-semibold leading-snug text-camp-black'>
++          A classmate keeps mixing up the eave clearance rule with setback bands. What should they understand first?
++        </p>
+
+-      {/* Answer options */}
+-      {[
+-        { label: '2.00 meters', state: 'neutral' as const },
+-        { label: '2.70 meters', state: 'correct' as const },
+-        { label: '2.40 meters', state: 'selected' as const },
+-        { label: '3.00 meters', state: 'neutral' as const },
+-      ].map((opt) => (
+-        <div
+-          key={opt.label}
+-          className={`mb-1.5 flex items-center gap-2.5 rounded-[6px] border-[1.5px] px-3 py-2 text-[12px] ${
+-            opt.state === 'correct'
+-              ? 'border-camp-green bg-success-50 text-camp-green'
+-              : opt.state === 'selected'
+-                ? 'border-camp-cobalt bg-primary-50 text-camp-cobalt'
+-                : 'border-border-design text-text-2'
+-          }`}
+-        >
+-          <div
+-            className={`h-3 w-3 shrink-0 rounded-full border-[1.5px] border-current ${
+-              opt.state !== 'neutral' ? 'bg-current' : ''
+-            }`}
+-          />
+-          {opt.label}
+-          {opt.state === 'correct' && ' ✓'}
+-        </div>
+-      ))}
++        <fieldset className='space-y-2' role='radiogroup' aria-label='Quiz preview answer choices'>
++          {OPTIONS.map((option, index) => {
++            const isSelected = selected === index
++            const isCorrect = submitted && index === correctIndex
++            const isWrong = submitted && isSelected && index !== correctIndex
++            return (
++              <button
++                key={option}
++                type='button'
++                role='radio'
++                onClick={() => {
++                  setSelected(index)
++                  setSubmitted(false)
++                }}
++                className={`flex w-full items-start gap-3 rounded-[10px] border px-3 py-3 text-left text-[12px] leading-relaxed transition ${
++                  isCorrect
++                    ? 'border-camp-green bg-success-50 text-camp-green'
++                    : isWrong
++                      ? 'border-camp-red bg-red-50 text-camp-red'
++                      : isSelected
++                        ? 'border-camp-cobalt bg-primary-50 text-camp-cobalt'
++                        : 'border-border-design text-text-2 hover:border-camp-cobalt/35 hover:bg-primary-50/40'
++                }`}
++                aria-checked={isSelected}
++              >
++                <span
++                  className={`mt-0.5 flex h-4 w-4 shrink-0 items-center justify-center rounded-full border-[1.5px] text-[9px] ${
++                    isSelected || isCorrect ? 'border-current bg-current text-white' : 'border-current text-transparent'
++                  }`}
++                  aria-hidden='true'
++                >
++                  ✓
++                </span>
++                <span>{option}</span>
++              </button>
++            )
++          })}
++        </fieldset>
+
+-      {/* Explanation card */}
+-      <div className='mt-3 rounded-[8px] bg-muted p-3'>
+-        <div className='mb-1.5 font-mono text-[11px] tracking-[.15em] uppercase text-camp-cobalt'>
+-          Explanation
++        <div className='mt-4 rounded-[14px] border border-border-design bg-muted p-2'>
++          <button
++            type='button'
++            disabled={selected === null}
++            onClick={() => setSubmitted(true)}
++            className='flex w-full items-center justify-between rounded-[10px] bg-camp-black px-3 py-2 text-left text-[12px] font-semibold text-white transition disabled:cursor-not-allowed disabled:opacity-40'
++          >
++            <span>{submitted ? 'Submitted' : 'Submit answer'}</span>
++            <span className='flex h-6 w-20 items-center rounded-full bg-white/12 p-0.5' aria-hidden='true'>
++              <span className={`h-5 w-5 rounded-full bg-camp-amber transition ${submitted ? 'translate-x-14' : ''}`} />
++            </span>
++          </button>
++          <p className='mt-2 px-1 text-[10px] text-text-2'>
++            Slide-style affordance shown visually; the button remains keyboard and screen-reader friendly.
++          </p>
+         </div>
+-        <p className='text-[11px] leading-relaxed text-text-2'>
+-          Section 808 of PD 1096 specifies that habitable rooms must have a minimum
+-          ceiling height of 2.70m on the ground floor, and 2.40m on floors above.
+-          This is a commonly tested provision.
+-        </p>
+-        <span className='mt-2 inline-block rounded-[4px] bg-camp-cobalt px-2 py-0.5 font-mono text-[11px] text-white'>
+-          PD 1096 § 808
+-        </span>
++
++        {submitted && (
++          <div className='mt-4 rounded-[14px] border border-camp-green/20 bg-camp-green/8 p-4'>
++            <div className='font-[family-name:var(--font-dm-mono)] text-[11px] tracking-[.15em] uppercase text-camp-green'>
++              Explanation
++            </div>
++            <p className='mt-2 text-[12px] leading-relaxed text-text-2'>
++              Good review does not stop at the answer. The next step is to separate the ideas: an overhang clearance rule protects the distance from side/rear property lines, while setback bands explain where the main building mass may sit.
++            </p>
++            <div className='mt-3 rounded-[10px] bg-white px-3 py-2 text-[11px] text-camp-cobalt'>
++              Readiness impact: weak topic found · Setbacks and envelope visualization
++            </div>
++          </div>
++        )}
+       </div>
+     </div>
+-  </div>
+-)
+-
+-/* ── Questions Section ── */
++  )
++}
+
+ export const QuestionsSection = () => (
+   <FeatureSectionLayout>
+-    {/* Copy — left */}
+     <StaggerParent>
+       <StaggerItem>
+-        <SectionEyebrow label='Question Bank' />
++        <SectionEyebrow label='Quizzes' />
+       </StaggerItem>
+
+       <StaggerItem>
+         <h2 className='font-[family-name:var(--font-syne)] text-[28px] font-extrabold leading-[1.15] text-camp-black sm:text-[34px]'>
+-          2,400+ questions built for
+-          <br />
+-          the LEA. Every single one.
++          Every missed answer should become a next step, not just a red mark.
+         </h2>
+       </StaggerItem>
+
+       <StaggerItem>
+-        <p className='mt-4 max-w-[440px] text-[14px] leading-relaxed text-text-2'>
+-          Not recycled PDFs. Not scraped notes. Every question is written
+-          to the LEA syllabus, verified by licensed architects, and tagged
+-          to its exact PD 1096 provision.
++        <p className='mt-4 max-w-[460px] text-[14px] leading-relaxed text-text-2'>
++          SlateCamp helps you test what stayed with you after lectures, handouts, mock exams, and self-study. When something breaks, the explanation points you to the topic to repair.
+         </p>
+       </StaggerItem>
+
+-      {/* Feature chips */}
+       <StaggerItem>
+         <div className='mt-5 flex flex-wrap gap-2'>
+-          <FeaturePill variant='cobalt'>Image + diagram questions</FeaturePill>
+-          <FeaturePill variant='cobalt'>Code-cited explanations</FeaturePill>
+-          <FeaturePill variant='cobalt'>All 7 LEA subjects</FeaturePill>
+-          <FeaturePill variant='cobalt'>Difficulty calibrated by IRT</FeaturePill>
++          <FeaturePill variant='cobalt'>Free Readiness Score</FeaturePill>
++          <FeaturePill variant='cobalt'>Weak-topic map</FeaturePill>
++          <FeaturePill variant='green'>Explanation first</FeaturePill>
++          <FeaturePill variant='amber'>Review, drills, simulations</FeaturePill>
+         </div>
+       </StaggerItem>
+
+-      {/* Check items */}
+       <StaggerItem>
+         <div className='mt-8 space-y-5'>
+           <FeatureCheckItem
+-            title='Wrong answers teach more than right ones'
+-            description='Every incorrect answer unlocks a full explanation citing the exact code provision. You learn the why, not just the what.'
++            title='Check what stuck after lecture'
++            description='Use SlateCamp after review-center sessions, school lectures, or self-study blocks to see what is actually staying with you.'
+             accentColor='#1B3FC4'
+           />
+           <FeatureCheckItem
+-            title='Three study modes'
+-            description='Use Quiz for tracked topic practice with slide-to-submit interactions and results review.'
++            title='Turn uncertainty into a repair list'
++            description='Missed answers are grouped into topics so you know what to read, visualize, or drill next.'
+             accentColor='#1B3FC4'
+           />
+           <FeatureCheckItem
+-            title='Spaced repetition built in'
+-            description="Questions you've mastered fade back. Questions you keep missing resurface until they stick. The SM-2 algorithm handles the schedule."
++            title='Keep exam practice separate from learning practice'
++            description='Diagnostics, topic drills, and simulations stay as separate paths so each session has a clear purpose.'
+             accentColor='#F5A623'
+           />
+         </div>
+       </StaggerItem>
+     </StaggerParent>
+
+-    {/* Mockup — right */}
+     <ScrollReveal delay={0.15} y={20}>
+-      <QuizMockup />
++      <QuizPreview />
+     </ScrollReveal>
+   </FeatureSectionLayout>
+ )
+-
+-
+diff --git a/src/components/marketing/SocialProofBar.tsx b/src/components/marketing/SocialProofBar.tsx
+index 97904b032..a03819394 100644
+--- a/src/components/marketing/SocialProofBar.tsx
++++ b/src/components/marketing/SocialProofBar.tsx
+@@ -1,20 +1,23 @@
+ import { ScrollReveal } from '@/components/motion/ScrollReveal'
+
++const PROOF_LINES = [
++  'Built around Philippine codes and board-review realities',
++  'Licensure Examination for Architects readiness with clear educational boundaries',
++  'Use beside your review center, books, notes, and mentors',
++] as const
++
+ export const SocialProofBar = () => (
+-  <section className='border-y border-border-design bg-white/80 p-2'>
++  <section className='border-y border-border-design bg-white/85 p-2'>
+     <ScrollReveal y={0} duration={0.3}>
+-      <div className='mx-auto flex max-w-[1200px] flex-wrap items-center justify-center gap-x-8 gap-y-2 text-center'>
+-        <span className='text-[12px] font-medium text-text-2'>
+-          Built for the Philippine LEA
+-        </span>
+-        <span className='text-[12px] text-gray-400'>&middot;</span>
+-        <span className='text-[12px] font-medium text-text-2'>
+-          Every question mapped to the LEA syllabus
+-        </span>
+-        <span className='text-[12px] text-gray-400'>&middot;</span>
+-        <span className='text-[12px] font-medium text-text-2'>
+-          Readiness Score powered by IRT
+-        </span>
++      <div className='mx-auto flex max-w-[1200px] flex-wrap items-center justify-center gap-x-6 gap-y-2 text-center'>
++        {PROOF_LINES.map((line, index) => (
++          <span key={line} className='contents'>
++            <span className='text-[12px] font-semibold text-text-2'>{line}</span>
++            {index < PROOF_LINES.length - 1 && (
++              <span className='text-[12px] text-gray-400'>&middot;</span>
++            )}
++          </span>
++        ))}
+       </div>
+     </ScrollReveal>
+   </section>
+diff --git a/src/components/marketing/TestimonialShowcase.tsx b/src/components/marketing/TestimonialShowcase.tsx
+index 1467c84e7..91a907a0c 100644
+--- a/src/components/marketing/TestimonialShowcase.tsx
++++ b/src/components/marketing/TestimonialShowcase.tsx
+@@ -1,25 +1,23 @@
+-// PLACEHOLDER — replace with real testimonials before launch
+-// Target archetypes: (1) first-time passer, (2) visual learner, (3) retaker who watched Readiness Score climb
+-const TESTIMONIALS = [
++const USE_CASES = [
+   {
+     quote:
+-      'SlateCamp\u2019s 3D Lab completely changed how I understand Building Tech. It\u2019s like having a site visit in my pocket.',
+-    name: 'Maria S.',
+-    title: '4th Year Architecture Student',
++      'After lecture, use the 3D Lab to turn a flat code rule into a shape you can inspect and remember.',
++    name: 'Visual learners',
++    title: '3D explanations for spatial topics',
+     rating: 5,
+   },
+   {
+     quote:
+-      'The Readiness Score predicted my LEA passing rate with terrifying accuracy. I walked into the exam room with zero panic.',
+-    name: 'Juan D.',
+-    title: 'Newly Licensed Architect',
++      'After a mock exam, use the Readiness Score to see which weak topics need repair before they become exam-day surprises.',
++    name: 'Board reviewees',
++    title: 'Companion beside review centers and notes',
+     rating: 5,
+   },
+   {
+     quote:
+-      'I abandoned my physical flashcards entirely. The Spaced Repetition engine on this platform is unmatched.',
+-    name: 'Carlos R.',
+-    title: 'LEA Topnotcher',
++      'During self-study, use quizzes, resources, and free tools to choose what to review next instead of rereading everything at random.',
++    name: 'Architecture students',
++    title: 'School, boards, and practice support',
+     rating: 5,
+   },
+ ]
+@@ -27,7 +25,7 @@ const TESTIMONIALS = [
+ const StarRating = ({ count }: { count: number }) => (
+   <div
+     className='flex gap-0.5'
+-    aria-label={`${count} out of 5 stars`}
++    aria-label={`${count} out of 5 value markers`}
+     role='img'
+   >
+     {Array.from({ length: count }, (_, i) => (
+@@ -48,9 +46,9 @@ export const TestimonialShowcase = ({
+   dark = false,
+ }: { dark?: boolean } = {}) => (
+   <div className='mt-12 grid grid-cols-1 gap-3 sm:grid-cols-3'>
+-    {TESTIMONIALS.map((testimonial) => (
++    {USE_CASES.map((item) => (
+       <article
+-        key={testimonial.name}
++        key={item.name}
+         className={
+           'flex flex-col justify-between rounded-md border p-7 transition-transform duration-150 hover:-translate-y-0.5 ' +
+           (dark
+@@ -59,13 +57,13 @@ export const TestimonialShowcase = ({
+         }
+       >
+         <div>
+-          <StarRating count={testimonial.rating} />
++          <StarRating count={item.rating} />
+           <blockquote
+             className={`font-[family-name:var(--font-syne)] mt-5 text-[17px] italic leading-relaxed ${
+               dark ? 'text-white/90' : 'text-ink'
+             }`}
+           >
+-            &ldquo;{testimonial.quote}&rdquo;
++            &ldquo;{item.quote}&rdquo;
+           </blockquote>
+         </div>
+         <div
+@@ -80,19 +78,17 @@ export const TestimonialShowcase = ({
+               (dark ? 'text-white' : 'text-ink')
+             }
+           >
+-            {testimonial.name}
++            {item.name}
+           </p>
+           <p
+             className={
+               'mt-0.5 text-[12px] ' + (dark ? 'text-white/60' : 'text-text-2')
+             }
+           >
+-            {testimonial.title}
++            {item.title}
+           </p>
+         </div>
+       </article>
+     ))}
+   </div>
+ )
+-
+-
+diff --git a/src/components/marketing/ThreeDLabSection.tsx b/src/components/marketing/ThreeDLabSection.tsx
+index fd7859d60..f1bcc731d 100644
+--- a/src/components/marketing/ThreeDLabSection.tsx
++++ b/src/components/marketing/ThreeDLabSection.tsx
+@@ -1,3 +1,4 @@
++import Link from 'next/link'
+ import {
+   FeatureSectionLayout,
+   FeatureCheckItem,
+@@ -7,191 +8,115 @@ import {
+ import { palette, cssVars } from '@/components/graphics/tokens'
+ import { StaggerParent, StaggerItem } from '@/components/motion/StaggerChildren'
+ import { ScrollReveal } from '@/components/motion/ScrollReveal'
+-
+-/* ── 3D viewer mockup ── */
++import { ROUTES } from '@/lib/constants'
+
+ const ThreeDMockup = () => (
+-  <div
+-    className='relative overflow-hidden rounded-md'
+-    style={{ backgroundColor: 'var(--marketing-blueprint-surface)' }}
+-  >
++  <div className='relative overflow-hidden rounded-[22px] border border-white/10 bg-camp-black shadow-[0_24px_60px_rgba(0,0,0,0.35)]'>
++    <div className='absolute inset-0 opacity-70 [background-image:linear-gradient(rgba(126,179,255,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(126,179,255,0.08)_1px,transparent_1px)] [background-size:24px_24px]' />
+     <div className='relative z-10'>
+-      {/* Header */}
+       <div className='flex items-center justify-between border-b border-white/10 px-4 py-3'>
+         <div>
+-          <span className='inline-block rounded-full bg-white/10 px-2.5 py-0.5 font-mono text-[11px] text-white/55'>
+-            3D Lab · Site Plan
++          <span className='inline-block rounded-full bg-white/10 px-2.5 py-0.5 font-[family-name:var(--font-dm-mono)] text-[11px] text-white/70'>
++            3D Lab · Setback Explorer
+           </span>
+-          <div className='mt-1 text-[13px] font-bold text-white'>Residential — Corner Lot</div>
++          <div className='mt-1 text-[13px] font-bold text-white'>Lot, setbacks, eave clearance</div>
+         </div>
+-        <span className='rounded-full bg-white/10 px-2.5 py-0.5 font-mono text-[11px] text-white/55'>
+-          Blueprint
++        <span className='rounded-full bg-camp-amber/15 px-2.5 py-0.5 font-[family-name:var(--font-dm-mono)] text-[11px] text-camp-amber'>
++          Preview
+         </span>
+       </div>
+
+-      {/* Blueprint SVG — orthographic corner lot site plan */}
+-      <div className='flex items-center justify-center px-3 py-2'>
+-        <svg
+-          viewBox='0 0 320 158'
+-          className='w-full max-w-[320px]'
+-          aria-label='Corner lot site plan blueprint'
+-        >
++      <div className='flex items-center justify-center px-3 py-5'>
++        <svg viewBox='0 0 340 210' className='w-full max-w-[360px]' role='img' aria-label='Blueprint style setback preview'>
+           <defs>
+-            <pattern
+-              id='bpHatch'
+-              width='6'
+-              height='6'
+-              patternUnits='userSpaceOnUse'
+-              patternTransform='rotate(45)'
+-            >
+-              <line x1='0' y1='0' x2='0' y2='6' stroke='rgba(126,179,255,0.1)' strokeWidth='0.75' />
++            <pattern id='labHatch' width='7' height='7' patternUnits='userSpaceOnUse' patternTransform='rotate(45)'>
++              <line x1='0' y1='0' x2='0' y2='7' stroke='rgba(245,166,35,0.18)' strokeWidth='0.75' />
+             </pattern>
+           </defs>
+-
+-          {/* Subtle blueprint grid */}
+-          {[40,60,80,100,120,140,160,180,200,220,240,260,280,300].map((x) => (
+-            <line key={`vg${x}`} x1={x} y1='0' x2={x} y2='158' stroke='rgba(100,150,255,0.055)' strokeWidth='0.5' />
+-          ))}
+-          {[20,40,60,80,100,120,140].map((y) => (
+-            <line key={`hg${y}`} x1='0' y1={y} x2='320' y2={y} stroke='rgba(100,150,255,0.055)' strokeWidth='0.5' />
+-          ))}
+-
+-          {/* Street A — top (main street, horizontal) */}
+-          <rect x='0' y='0' width='320' height='18' fill='rgba(20,50,120,0.65)' />
+-          <line x1='0' y1='9' x2='320' y2='9' stroke='rgba(255,200,70,0.28)' strokeWidth='0.75' strokeDasharray='10 5' />
+-          <text x='185' y='13' fill='rgba(150,200,255,0.4)' fontSize='7' fontFamily='monospace' letterSpacing='0.1em'>MAIN STREET</text>
+-
+-          {/* Street B — left (side street, vertical) */}
+-          <rect x='0' y='0' width='18' height='158' fill='rgba(20,50,120,0.65)' />
+-          <line x1='9' y1='18' x2='9' y2='158' stroke='rgba(255,200,70,0.28)' strokeWidth='0.75' strokeDasharray='10 5' />
+-          <text x='9' y='100' fill='rgba(150,200,255,0.4)' fontSize='7' fontFamily='monospace' letterSpacing='0.1em' textAnchor='middle' transform='rotate(-90 9 100)'>SIDE ST.</text>
+-
+-          {/* Lot boundary */}
+-          <rect x='18' y='18' width='287' height='130' fill='none' stroke='rgba(150,200,255,0.28)' strokeWidth='0.75' strokeDasharray='5 3' />
+-
+-          {/* Setback zone tints (amber wash on front + corner) */}
+-          <rect x='18' y='18' width='287' height='22' fill='rgba(245,166,35,0.055)' />
+-          <rect x='18' y='18' width='18' height='130' fill='rgba(245,166,35,0.055)' />
+-
+-          {/* Building footprint — hatch + blue fill */}
+-          <rect x='36' y='40' width='250' height='88' fill='url(#bpHatch)' />
+-          <rect x='36' y='40' width='250' height='88' fill='rgba(74,120,255,0.11)' stroke={palette.slateBlue50} strokeWidth='1.5' />
+-
+-          {/* Building label */}
+-          <text x='161' y='82' textAnchor='middle' fill='rgba(150,200,255,0.38)' fontSize='9' fontFamily='monospace'>BUILDING</text>
+-          <text x='161' y='94' textAnchor='middle' fill='rgba(150,200,255,0.2)' fontSize='7' fontFamily='monospace'>FOOTPRINT</text>
+-
+-          {/* Dim: Front setback — vertical, centered at x=158, y=18→40 */}
+-          <line x1='158' y1='18' x2='158' y2='40' stroke={palette.amber} strokeWidth='0.75' />
+-          <line x1='155' y1='21' x2='158' y2='18' stroke={palette.amber} strokeWidth='0.75' />
+-          <line x1='161' y1='21' x2='158' y2='18' stroke={palette.amber} strokeWidth='0.75' />
+-          <line x1='155' y1='37' x2='158' y2='40' stroke={palette.amber} strokeWidth='0.75' />
+-          <line x1='161' y1='37' x2='158' y2='40' stroke={palette.amber} strokeWidth='0.75' />
+-          <text x='163' y='32' fill={palette.amber} fontSize='8' fontFamily='monospace'>3.0m</text>
+-
+-          {/* Dim: Corner setback — horizontal, at y=80, x=18→36, label rotated */}
+-          <line x1='18' y1='80' x2='36' y2='80' stroke={palette.amber} strokeWidth='0.75' />
+-          <line x1='21' y1='77' x2='18' y2='80' stroke={palette.amber} strokeWidth='0.75' />
+-          <line x1='21' y1='83' x2='18' y2='80' stroke={palette.amber} strokeWidth='0.75' />
+-          <line x1='33' y1='77' x2='36' y2='80' stroke={palette.amber} strokeWidth='0.75' />
+-          <line x1='33' y1='83' x2='36' y2='80' stroke={palette.amber} strokeWidth='0.75' />
+-          <text x='27' y='80' textAnchor='middle' fill={palette.amber} fontSize='7' fontFamily='monospace' transform='rotate(-90 27 80)'>2.0m</text>
+-
+-          {/* Corner lot marker — amber triangle at street intersection */}
+-          <polygon points='18,18 32,18 18,32' fill='rgba(245,166,35,0.22)' stroke='rgba(245,166,35,0.38)' strokeWidth='0.5' />
+-
+-          {/* North arrow — bottom-right of lot, in rear/side setback area */}
+-          <g transform='translate(296, 138)'>
+-            <circle cx='0' cy='0' r='9' fill='none' stroke='rgba(150,200,255,0.18)' strokeWidth='0.75' />
+-            <line x1='0' y1='6' x2='0' y2='-6' stroke='rgba(150,200,255,0.45)' strokeWidth='0.75' />
+-            <polygon points='0,-6 -2.5,-1 2.5,-1' fill='rgba(150,200,255,0.6)' />
+-            <text x='0' y='4' textAnchor='middle' fill='rgba(150,200,255,0.45)' fontSize='6' fontFamily='monospace'>N</text>
+-          </g>
++          <rect x='18' y='18' width='300' height='160' fill='rgba(74,120,255,0.04)' stroke='rgba(150,200,255,0.28)' strokeDasharray='6 4' />
++          <rect x='18' y='18' width='300' height='28' fill='rgba(245,166,35,0.09)' />
++          <rect x='18' y='148' width='300' height='30' fill='rgba(245,166,35,0.07)' />
++          <rect x='18' y='18' width='30' height='160' fill='rgba(245,166,35,0.08)' />
++          <rect x='288' y='18' width='30' height='160' fill='rgba(245,166,35,0.08)' />
++          <rect x='48' y='46' width='240' height='102' rx='5' fill='url(#labHatch)' stroke={palette.amber} strokeWidth='1.25' />
++          <polygon points='94,88 170,54 246,88 170,126' fill='rgba(110,168,255,0.16)' stroke='rgba(150,200,255,0.62)' />
++          <polygon points='118,90 172,68 224,92 170,116' fill='rgba(110,168,255,0.86)' />
++          <polygon points='118,90 170,116 170,144 118,116' fill='rgba(27,63,196,0.86)' />
++          <polygon points='170,116 224,92 224,120 170,144' fill='rgba(16,45,119,0.95)' />
++          <polygon points='104,84 172,58 238,86 170,122' fill='rgba(245,166,35,0.94)' />
++          <line x1='238' y1='86' x2='300' y2='56' stroke='#A7F3D0' strokeDasharray='4 4' />
++          <text x='238' y='35' fill='#A7F3D0' fontSize='9' fontFamily='monospace'>750 mm clear zone</text>
++          <text x='170' y='166' textAnchor='middle' fill='rgba(245,166,35,0.74)' fontSize='10' fontFamily='monospace'>SETBACK BANDS + BUILDABLE ENVELOPE</text>
+         </svg>
+       </div>
+
+-      {/* Footer: Blueprint legend */}
+-      <div className='flex items-center gap-5 border-t border-white/10 px-4 py-2.5'>
+-        <div className='flex items-center gap-1.5'>
+-          <div className='h-2.5 w-4 rounded-[2px] border border-primary-50 bg-primary/10' />
+-          <span className='font-mono text-[11px] text-white/30'>Building</span>
+-        </div>
+-        <div className='flex items-center gap-1.5'>
+-          <div className='h-px w-4 bg-camp-amber' />
+-          <span className='font-mono text-[11px] text-white/30'>Setback</span>
+-        </div>
+-        <div className='flex items-center gap-1.5'>
+-          <svg width='16' height='4' viewBox='0 0 16 4' aria-hidden='true'>
+-            <line x1='0' y1='2' x2='16' y2='2' stroke='rgba(150,200,255,0.28)' strokeWidth='1' strokeDasharray='4 2' />
+-          </svg>
+-          <span className='font-mono text-[11px] text-white/30'>Lot line</span>
+-        </div>
+-        <span className='ml-auto font-mono text-[11px] text-white/18'>NTS</span>
++      <div className='grid grid-cols-3 gap-px border-t border-white/10 bg-white/10 text-center'>
++        {['Isometric', 'Plan', 'Section'].map((view, index) => (
++          <div key={view} className={`px-3 py-2 font-[family-name:var(--font-dm-mono)] text-[10px] ${index === 0 ? 'bg-camp-amber/15 text-camp-amber' : 'bg-black/20 text-white/60'}`}>
++            {view}
++          </div>
++        ))}
+       </div>
+     </div>
+   </div>
+ )
+
+-/* ── 3D Lab Section ── */
+-
+ export const ThreeDLabSection = () => (
+-  <FeatureSectionLayout dark flip>
+-    {/* Copy — left (visually right due to flip) */}
+-    <StaggerParent>
+-      <StaggerItem>
+-        <SectionEyebrow label='3D Lab' dark />
+-      </StaggerItem>
+-
+-      <StaggerItem>
+-        <h2 className='font-[family-name:var(--font-syne)] text-[28px] font-extrabold leading-[1.15] text-white sm:text-[34px]'>
+-          Some things you can&apos;t learn
+-          <br />
+-          from a textbook.
+-        </h2>
+-      </StaggerItem>
+-
+-      <StaggerItem>
+-        <p className='mt-4 max-w-[440px] text-[14px] leading-relaxed text-white/55'>
+-          Architecture is spatial. Flat pages can&apos;t teach you how a building
+-          actually comes together. The 3D Lab lets you rotate, cut away, and
+-          explore structures — so concepts click the way they&apos;re supposed to.
+-        </p>
+-      </StaggerItem>
+-
+-      {/* Feature chips */}
+-      <StaggerItem>
+-        <div className='mt-5 flex flex-wrap gap-2'>
+-          <FeaturePill variant='muted-dark'>Interactive models</FeaturePill>
+-          <FeaturePill variant='amber'>Rotate &amp; explore</FeaturePill>
+-          <FeaturePill variant='muted-dark'>Cut-away sections</FeaturePill>
+-          <FeaturePill variant='muted-dark'>Linked to study content</FeaturePill>
+-        </div>
+-      </StaggerItem>
+-
+-      {/* Check items */}
+-      <StaggerItem>
+-        <div className='mt-8 space-y-5'>
+-          <FeatureCheckItem
+-            title='Learn by seeing, not just reading'
+-            description='Structural systems, building assemblies, and spatial relationships — explored in three dimensions, not described in two.'
+-            accentColor={cssVars.accent}
+-            textDark
+-          />
+-          <FeatureCheckItem
+-            title='Connected to what you&apos;re studying'
+-            description='3D models link directly to your notes and quiz content, so context is never more than a click away.'
+-            accentColor={cssVars.accent}
+-            textDark
+-          />
+-        </div>
+-      </StaggerItem>
+-    </StaggerParent>
+-
+-    {/* Mockup — right (visually left due to flip) */}
+-    <ScrollReveal delay={0.15} y={0}>
+-      <ThreeDMockup />
+-    </ScrollReveal>
+-  </FeatureSectionLayout>
++  <div id='three-d-lab-preview' className='scroll-mt-24'>
++    <FeatureSectionLayout dark flip>
++      <StaggerParent>
++        <StaggerItem>
++          <SectionEyebrow label='3D Lab' dark />
++        </StaggerItem>
++
++        <StaggerItem>
++          <h2 className='font-[family-name:var(--font-syne)] text-[28px] font-extrabold leading-[1.15] text-white sm:text-[34px]'>
++            Setbacks are easier to understand when the lot shrinks in front of you.
++          </h2>
++        </StaggerItem>
++
++        <StaggerItem>
++          <p className='mt-4 max-w-[460px] text-[14px] leading-relaxed text-white/70'>
++            The 3D Lab is SlateCamp’s signature proof: spatial code topics made visible for students who cannot rely on flat tables alone. Preview the idea here, then use the full lab after signup as modules are released.
++          </p>
++        </StaggerItem>
++
++        <StaggerItem>
++          <div className='mt-5 flex flex-wrap gap-2'>
++            <FeaturePill variant='muted-dark'>Setback envelope</FeaturePill>
++            <FeaturePill variant='amber'>Eave clearance</FeaturePill>
++            <FeaturePill variant='muted-dark'>Plan + isometric views</FeaturePill>
++            <FeaturePill variant='muted-dark'>Study-only source guard</FeaturePill>
++          </div>
++        </StaggerItem>
++
++        <StaggerItem>
++          <div className='mt-8 space-y-5'>
++            <FeatureCheckItem
++              title='Turn code into a visible shape'
++              description='A lot, property line, setback band, and buildable envelope become easier to remember when the geometry is visible.'
++              accentColor={cssVars.accent}
++              textDark
++            />
++            <FeatureCheckItem
++              title='Use it beside your sources'
++              description='The lab is an educational visual companion. Verify current requirements with the official code, local ordinances, and a qualified professional.'
++              accentColor={cssVars.accent}
++              textDark
++            />
++          </div>
++          <Link
++            href={ROUTES.auth.register}
++            className='mt-7 inline-flex rounded-sm bg-camp-amber px-5 py-2.5 text-[13px] font-semibold text-camp-black transition hover:bg-warning-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-camp-amber/40'
++          >
++            Create a free account for the full lab
++          </Link>
++        </StaggerItem>
++      </StaggerParent>
++
++      <ScrollReveal delay={0.15} y={0}>
++        <ThreeDMockup />
++      </ScrollReveal>
++    </FeatureSectionLayout>
++  </div>
+ )
+-
+-
+diff --git a/src/components/marketing/WikiSection.tsx b/src/components/marketing/WikiSection.tsx
+index 2b1a7ff35..bbf7d457f 100644
+--- a/src/components/marketing/WikiSection.tsx
++++ b/src/components/marketing/WikiSection.tsx
+@@ -1,3 +1,4 @@
++import Link from 'next/link'
+ import {
+   FeatureSectionLayout,
+   FeatureCheckItem,
+@@ -6,114 +7,104 @@ import {
+ } from '@/components/marketing/FeatureSectionLayout'
+ import { StaggerParent, StaggerItem } from '@/components/motion/StaggerChildren'
+ import { ScrollReveal } from '@/components/motion/ScrollReveal'
+-
+-/* ── Wiki mockup ── */
++import { ROUTES } from '@/lib/constants'
+
+ const WikiMockup = () => (
+-  <div className='overflow-hidden rounded-md border border-border-design bg-white'>
+-    {/* Header */}
+-    <div className='flex items-center gap-2.5 border-b border-border-design px-4 py-3'>
+-      <div className='h-2 w-2 rounded-full bg-camp-green' />
+-      <span className='text-[13px] font-bold text-camp-black'>
+-        Building Technology — Firewall Requirements
++  <div className='overflow-hidden rounded-[22px] border border-border-design bg-white shadow-sm'>
++    <div className='flex items-center justify-between gap-3 border-b border-border-design px-4 py-3'>
++      <div>
++        <div className='font-[family-name:var(--font-dm-mono)] text-[11px] uppercase tracking-[.15em] text-camp-green'>
++          Knowledge Resource Preview
++        </div>
++        <span className='mt-1 block text-[13px] font-bold text-camp-black'>Setbacks and Buildable Envelope</span>
++      </div>
++      <span className='rounded-full bg-camp-green/10 px-2.5 py-1 text-[11px] font-semibold text-camp-green'>
++        Free after signup
+       </span>
+     </div>
+
+-    {/* Table of contents */}
+     <div className='border-b border-border-design bg-muted px-4 py-3'>
+-      <div className='mb-1.5 font-mono text-[11px] uppercase tracking-[.15em] text-marketing-tertiary'>On this page</div>
+-      {['Definition & Purpose', 'Height Requirements', 'Construction Standards', 'Common Exam Questions'].map(
+-        (item) => (
+-          <div
+-            key={item}
+-            className='mb-1 border border-camp-green/20 rounded-sm px-2 text-[11px] text-camp-green'
+-          >
+-            {item}
+-          </div>
+-        ),
+-      )}
++      <div className='mb-2 font-[family-name:var(--font-dm-mono)] text-[11px] uppercase tracking-[.15em] text-marketing-tertiary'>
++        Jump to
++      </div>
++      {['What setback means', 'Where students get confused', 'Visual memory cue', 'Related quiz and 3D lab'].map((item) => (
++        <div key={item} className='mb-1 rounded-sm border border-camp-green/20 px-2 py-1 text-[11px] text-camp-green'>
++          {item}
++        </div>
++      ))}
+     </div>
+
+-    {/* Article body */}
+     <div className='px-4 py-4'>
+-      <h3 className='mb-2 text-[14px] font-bold text-camp-black'>Height Requirements</h3>
+-      <p className='mb-3 text-[11px] leading-relaxed text-text-2'>
+-        A firewall must extend at least 0.50m above the highest point of the roof it protects.
+-        For buildings with combustible roofs, the firewall must project at least 0.60m above
+-        the roofline on both sides.
++      <h3 className='mb-2 text-[14px] font-bold text-camp-black'>Field-guide explanation</h3>
++      <p className='mb-3 text-[12px] leading-relaxed text-text-2'>
++        A setback is easier to remember when you picture the lot shrinking first. The remaining area is the buildable envelope: the zone where the main building mass can be studied before checking other limits.
+       </p>
+-      <div className='mb-3 rounded-[6px] bg-camp-black px-3 py-2 font-mono text-[11px] text-success-400'>
+-        PD 1096 § 1207 — Firewall Construction
++      <div className='mb-3 rounded-[10px] bg-camp-black px-3 py-2 font-[family-name:var(--font-dm-mono)] text-[11px] text-success-400'>
++        Source trail: PD 1096 / NBCP locator attached where verified
+       </div>
+       <div className='flex flex-wrap items-center gap-1.5'>
+         <FeaturePill variant='green'>PD 1096</FeaturePill>
+         <FeaturePill variant='cobalt'>Building Technology</FeaturePill>
+-        <span className='text-[11px] text-camp-cobalt underline'>12 related questions →</span>
++        <span className='text-[11px] text-camp-cobalt underline'>Related quiz + 3D preview →</span>
+       </div>
+     </div>
+   </div>
+ )
+
+-/* ── Wiki Section ── */
+-
+ export const WikiSection = () => (
+-  <FeatureSectionLayout flip amber>
+-    {/* Copy — right (visually right due to flip) */}
+-    <StaggerParent>
+-      <StaggerItem>
+-        <SectionEyebrow label='Wiki' amber />
+-      </StaggerItem>
++  <div id='knowledge-resources' className='scroll-mt-24'>
++    <FeatureSectionLayout flip amber>
++      <StaggerParent>
++        <StaggerItem>
++          <SectionEyebrow label='Knowledge Resources' amber />
++        </StaggerItem>
+
+-      <StaggerItem>
+-        <h2 className='font-[family-name:var(--font-syne)] text-[28px] font-extrabold leading-[1.15] text-camp-black sm:text-[34px]'>
+-          Every code provision, every principle.
+-          <br />
+-          Organized like an encyclopedia.
+-          <br />
+-          Cited like a reference.
+-        </h2>
+-      </StaggerItem>
++        <StaggerItem>
++          <h2 className='font-[family-name:var(--font-syne)] text-[28px] font-extrabold leading-[1.15] text-camp-black sm:text-[34px]'>
++            Your architecture field guide for rules, terms, and topics that keep showing up.
++          </h2>
++        </StaggerItem>
+
+-      <StaggerItem>
+-        <p className='mt-4 max-w-[440px] text-[14px] leading-relaxed text-black/60'>
+-          No more hunting through PDFs. The SlateCamp Wiki maps every LEA
+-          topic to its source — PD 1096, RA 9266, NBCP, and more — with
+-          your personal notes workspace alongside.
+-        </p>
+-      </StaggerItem>
++        <StaggerItem>
++          <p className='mt-4 max-w-[460px] text-[14px] leading-relaxed text-black/60'>
++            SlateCamp turns scattered code provisions, lecture notes, and review-center handouts into connected study pages: what the rule means, where it appears, why students miss it, and what to practice next.
++          </p>
++        </StaggerItem>
+
+-      {/* Feature chips */}
+-      <StaggerItem>
+-        <div className='mt-5 flex flex-wrap gap-2'>
+-          <FeaturePill variant='on-amber'>All LEA subjects covered</FeaturePill>
+-          <FeaturePill variant='on-amber'>Linked to questions</FeaturePill>
+-          <FeaturePill variant='on-amber'>Personal notes workspace</FeaturePill>
+-          <FeaturePill variant='on-amber'>PD 1096 · RA 9266 · NBCP</FeaturePill>
+-        </div>
+-      </StaggerItem>
++        <StaggerItem>
++          <div className='mt-5 flex flex-wrap gap-2'>
++            <FeaturePill variant='on-amber'>Source-backed where verified</FeaturePill>
++            <FeaturePill variant='on-amber'>Linked to questions</FeaturePill>
++            <FeaturePill variant='on-amber'>Visual memory cues</FeaturePill>
++            <FeaturePill variant='on-amber'>Free after signup</FeaturePill>
++          </div>
++        </StaggerItem>
+
+-      {/* Check items */}
+-      <StaggerItem>
+-        <div className='mt-8 space-y-5'>
+-          <FeatureCheckItem
+-            title='Linked directly to quiz questions'
+-            description='Tap any code citation in an explanation and jump straight to the full provision in the Wiki. Context and reference in one motion.'
+-            accentColor='var(--foreground)'
+-          />
+-          <FeatureCheckItem
+-            title='Your notes, your workspace'
+-            description='Add personal notes to any topic. Highlight what matters to you. Annotations stay private and sync across devices.'
+-            accentColor='var(--foreground)'
+-          />
+-        </div>
+-      </StaggerItem>
+-    </StaggerParent>
++        <StaggerItem>
++          <div className='mt-8 space-y-5'>
++            <FeatureCheckItem
++              title='Find the rule without drowning in PDFs'
++              description='Start with a plain-language orientation, then follow the source trail where the locator is verified.'
++              accentColor='var(--foreground)'
++            />
++            <FeatureCheckItem
++              title='Move from reading to repair'
++              description='Knowledge pages connect to quiz explanations and 3D examples so a weak topic becomes a clear next action.'
++              accentColor='var(--foreground)'
++            />
++          </div>
++          <Link
++            href={ROUTES.auth.register}
++            className='mt-7 inline-flex rounded-sm bg-camp-black px-5 py-2.5 text-[13px] font-semibold text-white transition hover:bg-black/85 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-camp-black/30'
++          >
++            Browse free resources after signup
++          </Link>
++        </StaggerItem>
++      </StaggerParent>
+
+-    {/* Mockup — left (visually left due to flip) */}
+-    <ScrollReveal delay={0.15} y={0}>
+-      <WikiMockup />
+-    </ScrollReveal>
+-  </FeatureSectionLayout>
++      <ScrollReveal delay={0.15} y={0}>
++        <WikiMockup />
++      </ScrollReveal>
++    </FeatureSectionLayout>
++  </div>
+ )
+-
+-
+diff --git a/src/components/marketing/hero/HeroCards.tsx b/src/components/marketing/hero/HeroCards.tsx
+index 3e5876f88..5ffd54ea0 100644
+--- a/src/components/marketing/hero/HeroCards.tsx
++++ b/src/components/marketing/hero/HeroCards.tsx
+@@ -31,9 +31,9 @@ const SUBJECT_READINESS = [
+   { label: 'Planning & Design', value: 47, improved: 99 },
+ ] as const
+
+-/* ── Card 1: LEA Subject Coverage (Back Left) ── */
++/* ── Card 1: Board-Review Subject Coverage (Back Left) ── */
+
+-const LEASubjectCoverageCard = () => {
++const BoardReviewSubjectCoverageCard = () => {
+   const subjects = [
+     { name: 'Building Technology', weight: '20%', color: 'bg-camp-cobalt' },
+     { name: 'Structural Design', weight: '15%', color: 'bg-camp-cobalt' },
+@@ -55,7 +55,7 @@ const LEASubjectCoverageCard = () => {
+       <div className='mb-2.5 flex items-center gap-1.5 border-b border-border-design pb-2'>
+         <Starburst className='h-3 w-3 text-camp-amber' />
+         <span className='font-[family-name:var(--font-dm-mono)] text-[11px] font-extrabold uppercase tracking-[0.22em] text-text-2'>
+-          LEA Coverage
++          Board coverage
+         </span>
+       </div>
+       <ul className='space-y-1.5'>
+@@ -80,7 +80,7 @@ const LEASubjectCoverageCard = () => {
+       </ul>
+       <div className='mt-2.5 border-t border-border-design pt-2 text-center'>
+         <span className='text-[11px] font-medium text-text-2'>
+-          All 7 subjects · Fully mapped
++          Seven subjects · study map preview
+         </span>
+       </div>
+     </motion.div>
+@@ -167,19 +167,19 @@ const ConversionHookCard = ({ isLoggedIn }: { isLoggedIn: boolean }) => {
+       </div>
+
+       <h3 className='text-base font-semibold text-ink'>
+-        {isHovered ? "This is what's possible" : "Are you sure you'll pass?"}
++        {isHovered ? 'A clearer study plan' : 'Know what to repair next'}
+       </h3>
+
+       <p className='mt-2 text-[12px] leading-snug text-text-2'>
+         {isHovered
+-          ? 'This is what your score can look like once SlateCamp is driving your review.'
+-          : 'Most students walk into the LEA not knowing where their gaps are. This is where you find out.'}
++          ? 'This is what the map can feel like once weak topics are visible.'
++          : 'Use SlateCamp after lecture or mock exams to find gaps while there is still time to repair them.'}
+       </p>
+
+       <div className='mt-3 flex items-center gap-3 rounded-md bg-white/80 p-3 ring-1 ring-border'>
+         <ReadinessDial
+           value={isHovered ? 98 : 42}
+-          label={isHovered ? 'Exam-ready' : 'At risk — typical starting score'}
++          label={isHovered ? 'Study plan clearer' : 'Repair list starting point'}
+           showWarning={!isHovered}
+           tone={isHovered ? 'success' : 'warning'}
+         />
+@@ -194,8 +194,8 @@ const ConversionHookCard = ({ isLoggedIn }: { isLoggedIn: boolean }) => {
+           </p>
+           <p className='text-text-2'>
+             {isHovered
+-              ? 'Same exam. Very different odds when you train with intent.'
+-              : 'Most reviewees sit here right before they realise where the gaps are.'}
++              ? 'Same goal. Clearer priorities for what to review next.'
++              : 'The useful moment is finding the gap before it becomes a surprise.'}
+           </p>
+         </div>
+       </div>
+@@ -258,7 +258,7 @@ export const HeroCards = ({ isLoggedIn }: { isLoggedIn: boolean }) => (
+     id='hero-right'
+     className='relative flex min-h-[320px] w-full flex-col items-center gap-4 md:col-span-5 md:min-h-[380px]  md:flex-row md:items-stretch md:justify-center md:gap-0'
+   >
+-    <LEASubjectCoverageCard />
++    <BoardReviewSubjectCoverageCard />
+     <MockQuestionCard />
+     <ConversionHookCard isLoggedIn={isLoggedIn} />
+   </div>
+diff --git a/src/components/motion/ScrollReveal.tsx b/src/components/motion/ScrollReveal.tsx
+index 976c79ec8..cb5b1d377 100644
+--- a/src/components/motion/ScrollReveal.tsx
++++ b/src/components/motion/ScrollReveal.tsx
+@@ -21,7 +21,7 @@ export function ScrollReveal({
+ }: ScrollRevealProps) {
+   return (
+     <motion.div
+-      initial={{ opacity: 0, y, scale: scale ? 0.98 : 1 }}
++      initial={{ opacity: 1, y, scale: scale ? 0.98 : 1 }}
+       whileInView={{ opacity: 1, y: 0, scale: 1 }}
+       viewport={{ once: true, margin: '-80px' }}
+       transition={{
+diff --git a/src/components/motion/StaggerChildren.tsx b/src/components/motion/StaggerChildren.tsx
+index 160bd1c6a..25f7bf7a2 100644
+--- a/src/components/motion/StaggerChildren.tsx
++++ b/src/components/motion/StaggerChildren.tsx
+@@ -8,7 +8,7 @@ const container = {
+ }
+
+ const item = {
+-  hidden: { opacity: 0, y: 16 },
++  hidden: { opacity: 1, y: 16 },
+   show: {
+     opacity: 1,
+     y: 0,
+diff --git a/src/lib/constants/site.ts b/src/lib/constants/site.ts
+index 1cc089b58..aed15d01d 100644
+--- a/src/lib/constants/site.ts
++++ b/src/lib/constants/site.ts
+@@ -1,5 +1,5 @@
+ export const siteConfig = {
+   name: 'SlateCamp',
+   description:
+-    'The only LEA prep platform built by a licensed architect. A real-time Readiness Score, expert-verified wiki, and interactive 3D building code models — built specifically for the Licensure Examination for Architects (LEA).',
++    'Source-backed architecture resources, quizzes, 3D labs, and free tools for Philippine codes, Licensure Examination for Architects readiness, architecture school, and practice.',
+ } as const

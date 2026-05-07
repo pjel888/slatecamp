@@ -1,6 +1,6 @@
 # Pilot Candidate Pool — Phase 1A Evidence
 
-**Generated:** 2026-05-05  
+**Generated:** 2026-05-05
 **Purpose:** Candidate pool for later smoke/benchmark pilot selection. This is not the final pilot set and does not authorize article/question rewrites.
 
 ## 1. Evidence Boundaries

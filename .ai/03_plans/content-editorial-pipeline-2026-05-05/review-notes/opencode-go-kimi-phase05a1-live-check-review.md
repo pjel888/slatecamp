@@ -1,7 +1,7 @@
-**Phase 0.5A.1 Verdict:**  
+**Phase 0.5A.1 Verdict:**
 CONDITIONAL GO — structurally sound but not final. The state machine, quarantine rules, grounding gate, and original-PDF retention are correctly conservative. Two gaps weaken it: (1) State Machine Rule 4 allows a script to promote files to `VERIFIED_SOURCE_CANDIDATE` after an automated “successful official-web spot-check,” which creates an over-trust vector for non-critical files; (2) The `current` label restriction lives only in the naming convention, while the manifest schema has zero validation rules enforcing `date_assigned_current` or notes. Do not treat the gate as complete until Corrections 1 and 2 below are applied.
 
-**Live Read-Only Check Verdict:**  
+**Live Read-Only Check Verdict:**
 ACCURATE and SOUND. The live evidence fully justifies all three classifications:
 - `wiki_article_sources` as `DISCOVERY_SEED_ONLY` (1,110 rows, 0 verified, 0 populated URLs).
 - `taxonomy_sources` contradiction (0 rows live vs any claim of completeness).

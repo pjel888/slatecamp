@@ -1,7 +1,7 @@
 # Source Drop Intake Protocol — Phase 0.5A.1
 
-**Date:** 2026-05-05  
-**Scope:** Define how local source files must be added, inventoried, hashed, classified, and quarantined before source-pack creation.  
+**Date:** 2026-05-05
+**Scope:** Define how local source files must be added, inventoried, hashed, classified, and quarantined before source-pack creation.
 **Status:** Planning document only. No implementation. No source pack creation. No file mutation.
 
 ---

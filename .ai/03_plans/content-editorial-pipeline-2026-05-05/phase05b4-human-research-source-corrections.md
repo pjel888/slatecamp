@@ -1,6 +1,6 @@
 # Phase 0.5B.4 Human Research Source Corrections
 
-**Generated:** 2026-05-05T17:05:00Z  
+**Generated:** 2026-05-05T17:05:00Z
 **Scope:** Evidence-only correction pass. No source approval. No source packs. No embeddings. No article/question edits. No Supabase mutation.
 
 ## Claude human-review status
@@ -34,7 +34,7 @@ Source approval, source-pack creation, embeddings, article rewriting, question e
 
 ## Phase 0.5B.5 follow-up update
 
-CLAUDE_REVIEW_STATUS = CLAUDE_UNAVAILABLE_TOKEN_LIMIT  
+CLAUDE_REVIEW_STATUS = CLAUDE_UNAVAILABLE_TOKEN_LIMIT
 CLAUDE_REVIEW_PENDING = true
 
 Phase 0.5B.5 added fallback-only official-source research. Key changes: Senate LRB PD 1216 and BFP RA 9514 candidates are SECURITY_GATED, DOE DC2019-11-0014 is an OFFICIAL_PAGE_FOUND lead with incomplete metadata/PDF capture, NCDA BP 344 2024 Revised IRR PDF was found and hashed, DPWH PD1096 PDF was reconfirmed, RA9266 remains unresolved beyond archive/security-gated candidates, and PRC exam schedule/program access remains blocked by PRC FortiADC. Gates remain blocked.

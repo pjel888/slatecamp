@@ -1,8 +1,8 @@
 # Current Artifact Map — Phase 1A Reconciliation
 
-**Generated:** 2026-05-05  
-**Scope:** `.ai/content-audit-export/`, `.ai/14_fact_checking/`, `.ai/15_content_optimization/`, `.ai/03_plans/content-editorial-pipeline-2026-05-05/`  
-**Method:** Read-only file inventory and content inspection  
+**Generated:** 2026-05-05
+**Scope:** `.ai/content-audit-export/`, `.ai/14_fact_checking/`, `.ai/15_content_optimization/`, `.ai/03_plans/content-editorial-pipeline-2026-05-05/`
+**Method:** Read-only file inventory and content inspection
 **Purpose:** Classify every artifact by provenance and trustworthiness for source-grounding
 
 ---

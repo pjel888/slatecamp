@@ -1,6 +1,6 @@
 # Source Bundle Reconciliation Report — Phase 0.5A.3
 
-**Generated:** 2026-05-05T15:21:16Z  
+**Generated:** 2026-05-05T15:21:16Z
 **Status:** Evidence/planning only. No source approval. No source-pack creation. No article/question edits. No Supabase mutation.
 
 ## Summary

@@ -1,7 +1,7 @@
 # Source Pack Governance Decision Register — Pre-Implementation
 
-**Generated:** 2026-05-05T15:28:29Z  
-**Scope:** Track unresolved governance decisions that can be planned before source-pack implementation.  
+**Generated:** 2026-05-05T15:28:29Z
+**Scope:** Track unresolved governance decisions that can be planned before source-pack implementation.
 **Status:** Decision register only. It does not approve source packs, chunking, embeddings, provider use, or publication.
 
 ---

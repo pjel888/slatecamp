@@ -1,7 +1,7 @@
 # Phase 0.5C Admin AI Audit Source Verification Implementation Plan Skeleton
 
-**Generated:** 2026-05-05T15:28:29Z  
-**Scope:** Convert the admin-audit bridge concept into an implementation-ready plan after source verification evidence exists.  
+**Generated:** 2026-05-05T15:28:29Z
+**Scope:** Convert the admin-audit bridge concept into an implementation-ready plan after source verification evidence exists.
 **Status:** Planning skeleton only. No code changes, database changes, or Supabase mutation are authorized by this file.
 
 ---
