@@ -120,9 +120,9 @@ Planning / audit evidence:
 
 Non-blocking:
 
-- The hero explorer is an interactive SVG/study preview rather than a full React Three Fiber scene. It still satisfies the proof-of-concept interaction requirement, but a future pass can upgrade it to true 3D if desired.
-- Sample lot changes update the study state/dimensions, but the fixed isometric geometry can be made more visibly responsive in a future polish pass.
-- The register/signup flow has its own copy surface; a follow-up audit should align post-click signup language with the same `Licensure Examination for Architects` public-copy rule.
+- The hero explorer has now been upgraded from SVG study preview to a React Three Fiber / Three.js scene using the same PD 1096 computation engine as the 3D Lab site-development controls.
+- New DOM coverage protects landing copy posture, the four platform pillars, reviewer-buddy positioning, safe fear-marketing copy, the hero R3F canvas contract, eave-clearance state changes, and buildable-envelope dimensions.
+- The register/signup flow has its own copy surface; follow `.ai/03_plans/2026-05-07-signup-onboarding-redesign-plan.md` before production redesign work.
 
 Recommended next action:
 
