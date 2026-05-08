@@ -1,5 +1,5 @@
 export const siteConfig = {
   name: 'SlateCamp',
   description:
-    'Source-backed architecture resources, quizzes, 3D labs, and free tools for Philippine codes, Licensure Examination for Architects readiness, architecture school, and practice.',
+    'An architecture knowledge atlas with source-backed resources, visual explanations, quizzes, 3D labs, and practical tools for school, boards, and practice.',
 } as const

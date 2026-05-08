@@ -5,19 +5,19 @@ import { ROUTES } from '@/lib/constants'
 const PILLARS = [
   {
     label: 'Knowledge Resources',
-    headline: 'Stop hunting through scattered PDFs.',
-    body: 'Use source-backed explainers, code guides, field notes, and visual references built around architecture school, Philippine codes, and Licensure Examination for Architects review.',
-    bullets: ['Code explainers for common review topics', 'Field-guide pages for fast orientation', 'Source-linked references where available'],
-    cta: 'Browse free knowledge previews',
+    headline: 'Start from a map, not a pile of files.',
+    body: 'Use source-backed explainers, code guides, field notes, and visual references built around architecture school, Philippine codes, board preparation, and practice.',
+    bullets: ['Code explainers for common architecture topics', 'Field-guide pages for fast orientation', 'Source trails where locators are verified'],
+    cta: 'Browse resource previews',
     href: '#knowledge-resources',
     tone: 'amber',
   },
   {
     label: 'Quizzes',
-    headline: 'Know what stuck after lecture.',
+    headline: 'Check what stuck without turning study into panic.',
     body: 'Practice with diagnostics, drills, simulations, and explanations that turn missed answers into the next topic to repair.',
-    bullets: ['Free Readiness Score entry point', 'Weak-topic map after practice', 'Explanations tied back to resources'],
-    cta: 'Get your free readiness score',
+    bullets: ['Free readiness entry point', 'Weak-topic map after practice', 'Explanations tied back to resources'],
+    cta: 'Start exploring free',
     href: ROUTES.auth.register,
     tone: 'cobalt',
   },
@@ -25,7 +25,7 @@ const PILLARS = [
     label: '3D Lab',
     headline: 'See spatial rules, not just numbers.',
     body: 'Explore interactive 3D examples for code, space, circulation, accessibility, and building concepts that are hard to learn from text alone.',
-    bullets: ['Interactive examples for visual learners', 'Code and spatial concepts made visible', 'Useful for school, review, and practice'],
+    bullets: ['Interactive examples for visual learners', 'Code and spatial concepts made visible', 'Useful for school, boards, and practice'],
     cta: 'Preview the 3D Lab',
     href: '#three-d-lab-preview',
     tone: 'black',
@@ -34,7 +34,7 @@ const PILLARS = [
     label: 'Free Tools',
     headline: 'Practical calculators, free from day one.',
     body: 'Use calculators and utilities for quick checks and study context: paint, tiles, CHB, drywall, lot/buildability, occupancy, egress, and more as they are released.',
-    bullets: ['Useful before and after board review', 'Strong practical study surface', 'Clear educational boundaries'],
+    bullets: ['Useful before and after board preparation', 'Strong practical study surface', 'Clear educational boundaries'],
     cta: 'Open free tools',
     href: ROUTES.calculators.root,
     tone: 'green',
@@ -62,10 +62,10 @@ export const BentoFeatureGrid = () => (
           id='platform-pillars-heading'
           className='mt-4 font-[family-name:var(--font-syne)] text-[clamp(2rem,4vw,3.2rem)] font-extrabold leading-[0.98] text-camp-black'
         >
-          A field guide, quiz buddy, 3D lab, and toolbelt in one place.
+          A field guide, quiz surface, 3D lab, and practical toolbelt in one architecture atlas.
         </h2>
         <p className='mt-4 max-w-2xl text-[15px] leading-relaxed text-text-2'>
-          SlateCamp is built for the moment after a lecture, mock exam, or study session when you need to know what stayed with you — and what to fix next.
+          SlateCamp is built for the moment when architecture knowledge feels scattered and you need a reliable next step: read the guide, see the concept, check what stuck, then repair the gap.
         </p>
       </div>
 
@@ -86,10 +86,10 @@ export const BentoFeatureGrid = () => (
               <h3 className='mt-8 max-w-[420px] font-[family-name:var(--font-syne)] text-[clamp(22px,2.6vw,32px)] font-extrabold leading-[1.05]'>
                 {pillar.headline}
               </h3>
-              <p className='mt-3 max-w-[520px] text-[13px] leading-relaxed opacity-70'>{pillar.body}</p>
+              <p className='mt-3 max-w-[520px] text-[13px] leading-relaxed opacity-90'>{pillar.body}</p>
               <ul className='mt-6 grid gap-2'>
                 {pillar.bullets.map((bullet) => (
-                  <li key={bullet} className='flex items-start gap-2 text-[12px] leading-relaxed opacity-85'>
+                  <li key={bullet} className='flex items-start gap-2 text-[12px] leading-relaxed opacity-95'>
                     <span className='mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-current opacity-70' aria-hidden='true' />
                     {bullet}
                   </li>

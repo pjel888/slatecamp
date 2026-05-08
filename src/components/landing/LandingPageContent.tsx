@@ -17,8 +17,8 @@ export async function LandingPageContent() {
   const { data: { user } } = await getUserIfPresent()
   const isLoggedIn = !!user
 
-  const ctaHref = isLoggedIn ? ROUTES.dashboard.root : ROUTES.auth.register
-  const ctaLabel = isLoggedIn ? 'Go to Dashboard' : 'Start Your Free Readiness Score'
+  const ctaHref = isLoggedIn ? ROUTES.dashboard.wiki : ROUTES.auth.register
+  const ctaLabel = isLoggedIn ? 'Open the atlas' : 'Start exploring free'
 
   return (
     <div id='top' className='min-h-screen bg-page-bg'>

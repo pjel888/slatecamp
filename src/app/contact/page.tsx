@@ -17,11 +17,11 @@ export const metadata = { title: `Contact — ${siteConfig.name}` };
 const FAQS = [
   {
     q: "Is SlateCamp only for the Licensure Examination for Architects (LEA)?",
-    a: "Yes — for now. The platform is purpose-built for the LEA. The question bank, taxonomy, and Readiness Score are all calibrated to the official syllabus. Support for other disciplines may follow.",
+    a: "Yes — for now. The platform is purpose-built for architecture students and board-season learners, with topics organized around LEA-relevant references and study needs. Support for other disciplines may follow.",
   },
   {
-    q: "How is the Readiness Score calculated?",
-    a: "The score uses a 2-parameter Item Response Theory (IRT) model — the same approach used in high-stakes licensure exams. It accounts for question difficulty and your pattern of correct and incorrect answers, not just a raw percentage.",
+    q: "What does SlateCamp's study signal mean?",
+    a: "It is a learning aid that helps you spot stronger and weaker topic areas. It should guide what to review next, not predict an exam result or replace primary references, school guidance, or professional judgment.",
   },
   {
     q: "Can I use SlateCamp for free?",

@@ -19,7 +19,7 @@ const PRICING_FAQS = FEATURE_PAYMENTS_ENABLED
       {
         question: 'Which paid plans are currently supported?',
         answer:
-          'Only the plans shown in the live checkout flow are currently supported. If you need school, review-center, or partner access, contact SlateCamp first.',
+          'Only the plans shown in the live checkout flow are currently supported. If you need school, cohort, team, or partner access, contact SlateCamp first.',
       },
       {
         question: 'How do I manage billing?',
@@ -36,7 +36,7 @@ const PRICING_FAQS = FEATURE_PAYMENTS_ENABLED
       {
         question: 'Can I use SlateCamp for free?',
         answer:
-          'Yes. The currently available study surfaces are free while billing is disabled.',
+          'Yes. Currently available starter surfaces are free while billing is disabled.',
       },
       {
         question: 'Is paid checkout live right now?',
@@ -51,7 +51,7 @@ const PRICING_FAQS = FEATURE_PAYMENTS_ENABLED
       {
         question: 'Do you offer school or team pricing?',
         answer:
-          'Not as a public self-serve plan today. If you are exploring review-center or school use, contact SlateCamp first.',
+          'Not as a public self-serve plan today. If you are exploring school, cohort, or team use, contact SlateCamp first.',
       },
     ]
 
@@ -71,7 +71,7 @@ export default function PricingPage() {
         />
         <FinalCtaSection
           ctaHref={ROUTES.try}
-          ctaLabel="Get Your Free Readiness Score"
+          ctaLabel="Start exploring free"
           isLoggedIn={false}
         />
       </main>

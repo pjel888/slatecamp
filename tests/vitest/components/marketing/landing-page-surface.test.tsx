@@ -6,8 +6,8 @@ import { BentoFeatureGrid } from '@/components/marketing/BentoFeatureGrid'
 import { HowItWorksSection } from '@/components/marketing/HowItWorksSection'
 import { FinalCtaSection } from '@/components/marketing/FinalCtaSection'
 
-vi.mock('@/components/marketing/hero/HeroCodeEnvelopeExplorer', () => ({
-  HeroCodeEnvelopeExplorer: () => <div data-testid='hero-code-envelope-explorer'>3D hero explorer</div>,
+vi.mock('@/components/marketing/hero/AtlasFieldHero', () => ({
+  AtlasFieldHero: () => <div data-testid='atlas-field-hero'>Atlas Field hero</div>,
 }))
 
 vi.mock('@/components/motion/ScrollReveal', () => ({
@@ -22,32 +22,34 @@ vi.mock('@/components/motion/StaggerChildren', () => ({
 }))
 
 describe('landing page marketing surface', () => {
-  it('positions SlateCamp as a study companion, not a primary review center', () => {
-    render(<HeroSection ctaHref='/register' ctaLabel='Start Your Free Readiness Score' />)
+  it('positions SlateCamp as an architecture knowledge atlas', () => {
+    render(<HeroSection ctaHref='/register' ctaLabel='Start exploring free' />)
 
-    expect(screen.getByRole('heading', { name: /your architecture study companion/i })).toBeInTheDocument()
-    expect(screen.getByText(/reliable buddy that makes the hard parts visible/i)).toBeInTheDocument()
-    expect(screen.getByText(/beside your review center, school, books, and mentors/i)).toBeInTheDocument()
-    expect(screen.getByRole('link', { name: /start your free readiness score/i })).toHaveAttribute('href', '/register')
-    expect(screen.getByTestId('hero-code-envelope-explorer')).toBeInTheDocument()
+    expect(screen.getByText(/architecture knowledge atlas/i)).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: /navigate architecture knowledge with confidence/i })).toBeInTheDocument()
+    expect(screen.getByText(/source-backed resources, visual explanations, quizzes, 3d labs, and practical tools/i)).toBeInTheDocument()
+    expect(screen.getByText(/browse the topic map, jump into source-backed guides/i)).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: /start exploring free/i })).toHaveAttribute('href', '/register')
+    expect(screen.getByTestId('atlas-field-hero')).toBeInTheDocument()
+    expect(screen.queryByText(/review center/i)).not.toBeInTheDocument()
   })
 
   it('renders the four acquisition pillars in language students care about', () => {
     render(<BentoFeatureGrid />)
 
-    expect(screen.getByRole('heading', { name: /field guide, quiz buddy, 3d lab, and toolbelt/i })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: /field guide, quiz surface, 3d lab, and practical toolbelt/i })).toBeInTheDocument()
     expect(screen.getByText('Knowledge Resources')).toBeInTheDocument()
     expect(screen.getByText('Quizzes')).toBeInTheDocument()
     expect(screen.getByText('3D Lab')).toBeInTheDocument()
     expect(screen.getByText('Free Tools')).toBeInTheDocument()
-    expect(screen.getByText(/Stop hunting through scattered PDFs/i)).toBeInTheDocument()
-    expect(screen.getByText(/Know what stuck after lecture/i)).toBeInTheDocument()
+    expect(screen.getByText(/Start from a map/i)).toBeInTheDocument()
+    expect(screen.getAllByText(/Check what stuck/i).length).toBeGreaterThan(0)
   })
 
-  it('explains the reviewer-buddy workflow with assurance and repair language', () => {
+  it('explains the atlas workflow with assurance and repair language', () => {
     render(<HowItWorksSection />)
 
-    expect(screen.getByText(/always-available reviewer buddy beside your real review system/i)).toBeInTheDocument()
+    expect(screen.getByText(/follow a calmer loop/i)).toBeInTheDocument()
     expect(screen.getByText('Find the confusing topic')).toBeInTheDocument()
     expect(screen.getByText('Check what stayed with you')).toBeInTheDocument()
     expect(screen.getByText('Repair the gap')).toBeInTheDocument()
@@ -55,11 +57,11 @@ describe('landing page marketing surface', () => {
   })
 
   it('uses fear marketing safely without pass guarantees', () => {
-    render(<FinalCtaSection ctaHref='/register' ctaLabel='Start free' isLoggedIn={false} />)
+    render(<FinalCtaSection ctaHref='/register' ctaLabel='Start exploring free' isLoggedIn={false} />)
 
     expect(screen.getByRole('heading', { name: /danger is discovering them too late/i })).toBeInTheDocument()
     expect(screen.getByText(/No card required/i)).toBeInTheDocument()
     expect(screen.queryByText(/guarantee/i)).not.toBeInTheDocument()
-    expect(screen.getByRole('link', { name: /start free/i })).toHaveAttribute('href', '/register')
+    expect(screen.getByRole('link', { name: /start exploring free/i })).toHaveAttribute('href', '/register')
   })
 })

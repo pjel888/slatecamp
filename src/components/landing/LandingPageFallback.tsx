@@ -19,7 +19,7 @@ export function LandingPageFallback() {
       <main>
         <HeroSection
           ctaHref={ROUTES.auth.register}
-          ctaLabel='Start Your Free Readiness Score'
+          ctaLabel='Start exploring free'
         />
         <SocialProofBar />
         <BentoFeatureGrid />
@@ -31,7 +31,7 @@ export function LandingPageFallback() {
         <ComparisonSection />
         <FinalCtaSection
           ctaHref={ROUTES.auth.register}
-          ctaLabel='Start Your Free Readiness Score'
+          ctaLabel='Start exploring free'
           isLoggedIn={false}
         />
       </main>

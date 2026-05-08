@@ -33,7 +33,7 @@ const QuizPreview = () => {
             <div className='mt-0.5 text-[13px] font-bold text-white'>Setbacks and eave clearance</div>
           </div>
           <div className='rounded-full bg-white/15 px-3 py-1 font-[family-name:var(--font-dm-mono)] text-[11px] text-white/70'>
-            Study only
+            Study preview
           </div>
         </div>
       </div>
@@ -105,10 +105,10 @@ const QuizPreview = () => {
               Explanation
             </div>
             <p className='mt-2 text-[12px] leading-relaxed text-text-2'>
-              Good review does not stop at the answer. The next step is to separate the ideas: an overhang clearance rule protects the distance from side/rear property lines, while setback bands explain where the main building mass may sit.
+              Good practice does not stop at the answer. The next step is to separate the ideas: an overhang clearance rule protects the distance from side/rear property lines, while setback bands explain where the main building mass may sit.
             </p>
             <div className='mt-3 rounded-[10px] bg-white px-3 py-2 text-[11px] text-camp-cobalt'>
-              Readiness impact: weak topic found · Setbacks and envelope visualization
+              Readiness signal: weak topic found · Setbacks and envelope visualization
             </div>
           </div>
         )}
@@ -132,16 +132,16 @@ export const QuestionsSection = () => (
 
       <StaggerItem>
         <p className='mt-4 max-w-[460px] text-[14px] leading-relaxed text-text-2'>
-          SlateCamp helps you test what stayed with you after lectures, handouts, mock exams, and self-study. When something breaks, the explanation points you to the topic to repair.
+          SlateCamp helps you check what stayed with you after lectures, handouts, mock exams, and self-study. When something breaks, the explanation points you to the topic to repair.
         </p>
       </StaggerItem>
 
       <StaggerItem>
         <div className='mt-5 flex flex-wrap gap-2'>
-          <FeaturePill variant='cobalt'>Free Readiness Score</FeaturePill>
+          <FeaturePill variant='cobalt'>Free readiness check</FeaturePill>
           <FeaturePill variant='cobalt'>Weak-topic map</FeaturePill>
           <FeaturePill variant='green'>Explanation first</FeaturePill>
-          <FeaturePill variant='amber'>Review, drills, simulations</FeaturePill>
+          <FeaturePill variant='amber'>Diagnostics, drills, simulations</FeaturePill>
         </div>
       </StaggerItem>
 
@@ -149,7 +149,7 @@ export const QuestionsSection = () => (
         <div className='mt-8 space-y-5'>
           <FeatureCheckItem
             title='Check what stuck after lecture'
-            description='Use SlateCamp after review-center sessions, school lectures, or self-study blocks to see what is actually staying with you.'
+            description='Use SlateCamp after school lectures, mock exams, reading sessions, or self-study blocks to see what is actually staying with you.'
             accentColor='#1B3FC4'
           />
           <FeatureCheckItem

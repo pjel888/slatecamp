@@ -3,11 +3,11 @@ const H1_CLASS =
 
 export const HeroHeadline = () => (
   <>
-    <h1 className={H1_CLASS}>Your architecture study companion.</h1>
+    <h1 className={H1_CLASS}>Navigate architecture knowledge with confidence.</h1>
     <div className='pt-2'>
       <p className='mt-6 max-w-lg text-sm font-medium leading-relaxed text-primary'>
-        Source-backed resources, quizzes, 3D labs, and free tools for architecture school,
-        Licensure Examination for Architects readiness, and professional practice.
+        Source-backed resources, visual explanations, quizzes, 3D labs, and practical tools
+        for school, boards, and practice.
       </p>
     </div>
   </>

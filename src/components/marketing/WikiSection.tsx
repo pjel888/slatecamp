@@ -67,7 +67,7 @@ export const WikiSection = () => (
 
         <StaggerItem>
           <p className='mt-4 max-w-[460px] text-[14px] leading-relaxed text-black/60'>
-            SlateCamp turns scattered code provisions, lecture notes, and review-center handouts into connected study pages: what the rule means, where it appears, why students miss it, and what to practice next.
+            SlateCamp turns scattered code provisions, lecture notes, class handouts, and practice mistakes into connected study pages: what the rule means, where it appears, why students miss it, and what to practice next.
           </p>
         </StaggerItem>
 

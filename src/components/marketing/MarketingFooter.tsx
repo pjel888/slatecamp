@@ -39,11 +39,11 @@ export const MarketingFooter = ({
           <span
             className={`font-instrument-serif text-[12px] italic tracking-wide ${textMuted}`}
           >
-            Less panic, clearer study.
+            Less panic, clearer next steps.
           </span>
         </div>
         <p className={`mx-auto mt-5 max-w-4xl text-center text-[11px] leading-relaxed ${textMuted}`}>
-          SlateCamp is an educational study platform. It is not affiliated with PRC, PRBoA, universities, review centers, or government agencies. Always verify current code requirements, exam rules, and project decisions with primary authority documents or a qualified professional.
+          SlateCamp is an educational architecture resource platform. It is not affiliated with PRC, PRBoA, universities, or government agencies. Always verify current code requirements, exam rules, and project decisions with primary authority documents or a qualified professional.
         </p>
       </div>
     </footer>

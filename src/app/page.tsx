@@ -7,32 +7,32 @@ import { siteConfig } from '@/lib/constants'
 export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
-  title: `${siteConfig.name} | Architecture Study Companion for Licensure Examination for Architects and Practice`,
+  title: `${siteConfig.name} | Architecture Knowledge Atlas`,
   description: siteConfig.description,
   openGraph: {
-    title: `${siteConfig.name} | Your Architecture Study Companion`,
+    title: `${siteConfig.name} | Architecture Knowledge Atlas`,
     description:
-      'Study with source-backed resources, quizzes, 3D labs, and free tools built around Philippine codes, Licensure Examination for Architects readiness, and architecture practice.',
+      'Navigate architecture knowledge with source-backed resources, visual explanations, quizzes, 3D labs, and practical tools for school, boards, and practice.',
     type: 'website',
     siteName: siteConfig.name,
   },
   twitter: {
     card: 'summary_large_image',
-    title: `${siteConfig.name} | Your Architecture Study Companion`,
+    title: `${siteConfig.name} | Architecture Knowledge Atlas`,
     description:
-      'Resources, quizzes, 3D labs, and free tools for architecture school, Licensure Examination for Architects readiness, and practice.',
+      'Source-backed resources, visual explanations, quizzes, 3D labs, and practical tools for school, boards, and practice.',
   },
   keywords: [
-    'Licensure Examination for Architects exam prep',
-    'Licensure Examination for Architects reviewer Philippines',
-    'Licensure Examination for Architects',
-    'architecture learning platform Philippines',
+    'architecture knowledge atlas',
+    'architecture learning resources Philippines',
+    'architecture board exam resources',
+    'architecture field guide',
     'Philippine architecture codes',
-    'NBCP reviewer',
-    'PD 1096 reviewer',
-    'BP 344 reviewer',
-    'RA 9266 reviewer',
-    'architecture quiz app Philippines',
+    'NBCP educational resources',
+    'PD 1096 educational resources',
+    'BP 344 educational resources',
+    'RA 9266 educational resources',
+    'architecture quizzes Philippines',
     'architecture calculators Philippines',
     'architecture school resources',
     'architecture 3D learning',

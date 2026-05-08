@@ -21,7 +21,7 @@ const STEPS = [
   {
     num: '04',
     title: 'Return with a plan',
-    desc: 'Go back to your review center, book, notes, or study group knowing what to ask and what to practice.',
+    desc: 'Return to your book, notes, mentor, studio work, or study group knowing what to ask and what to practice.',
   },
 ] as const
 
@@ -39,7 +39,7 @@ export const HowItWorksSection = () => (
           </h2>
         </div>
         <p className='mt-4 max-w-2xl font-[family-name:var(--font-syne)] text-[clamp(1.7rem,3vw,2.5rem)] font-extrabold leading-tight text-camp-black'>
-          Use it like the always-available reviewer buddy beside your real review system.
+          Follow a calmer loop: find the topic, understand the shape, check what stayed, then repair the next gap.
         </p>
       </ScrollReveal>
 

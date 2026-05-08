@@ -1,9 +1,9 @@
 import { ScrollReveal } from '@/components/motion/ScrollReveal'
 
 const PROOF_LINES = [
-  'Built around Philippine codes and board-review realities',
-  'Licensure Examination for Architects readiness with clear educational boundaries',
-  'Use beside your review center, books, notes, and mentors',
+  'Built around Philippine codes, visual explanations, and practical tools',
+  'Useful for school, boards, and practice with clear educational boundaries',
+  'A calmer map for scattered architecture knowledge',
 ] as const
 
 export const SocialProofBar = () => (

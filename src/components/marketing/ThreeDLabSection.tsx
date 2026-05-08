@@ -86,7 +86,7 @@ export const ThreeDLabSection = () => (
             <FeaturePill variant='muted-dark'>Setback envelope</FeaturePill>
             <FeaturePill variant='amber'>Eave clearance</FeaturePill>
             <FeaturePill variant='muted-dark'>Plan + isometric views</FeaturePill>
-            <FeaturePill variant='muted-dark'>Study-only source guard</FeaturePill>
+            <FeaturePill variant='muted-dark'>Educational source guard</FeaturePill>
           </div>
         </StaggerItem>
 
@@ -99,8 +99,8 @@ export const ThreeDLabSection = () => (
               textDark
             />
             <FeatureCheckItem
-              title='Use it beside your sources'
-              description='The lab is an educational visual companion. Verify current requirements with the official code, local ordinances, and a qualified professional.'
+              title='Use it with primary documents'
+              description='The lab is an educational visual companion. Verify current requirements with primary code documents, local ordinances, and a qualified professional.'
               accentColor={cssVars.accent}
               textDark
             />

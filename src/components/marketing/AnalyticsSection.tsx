@@ -8,11 +8,11 @@ import { StaggerParent, StaggerItem } from '@/components/motion/StaggerChildren'
 import { ScrollReveal } from '@/components/motion/ScrollReveal'
 
 const LOOP = [
-  'Answer Licensure Examination for Architects-style questions.',
+  'Answer architecture board-style questions.',
   'Read the explanation and source-linked topic.',
   'See which subjects and topics need repair.',
   'Use a resource, 3D example, or another drill as the next step.',
-  'Return to your review center, notes, or study group with a clearer plan.',
+  'Return to your notes, book, mentor, or study group with a clearer plan.',
 ] as const
 
 const ReadinessMapMockup = () => (
@@ -52,7 +52,7 @@ const ReadinessMapMockup = () => (
     <div className='mt-4 rounded-[14px] bg-camp-black p-4 text-white'>
       <p className='text-[12px] font-semibold text-camp-amber'>Weak spots are not the danger.</p>
       <p className='mt-1 text-[12px] leading-relaxed text-white/60'>
-        The danger is discovering them too late. Start with a free Readiness Score and turn uncertainty into a study plan.
+        The risk is finding them too late. Start with a free readiness check and turn uncertainty into a study plan.
       </p>
     </div>
   </div>
@@ -79,7 +79,7 @@ export const AnalyticsSection = () => (
 
       <StaggerItem>
         <div className='mt-5 flex flex-wrap gap-2'>
-          <FeaturePill variant='cobalt'>Free Readiness Score</FeaturePill>
+          <FeaturePill variant='cobalt'>Free readiness check</FeaturePill>
           <FeaturePill variant='amber'>Weak-topic repair list</FeaturePill>
           <FeaturePill variant='green'>Study-plan clarity</FeaturePill>
         </div>

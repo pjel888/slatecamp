@@ -1,7 +1,6 @@
 import React from 'react'
 import { describe, expect, it, vi } from 'vitest'
-import { render, screen } from '@testing-library/react'
-import userEvent from '@testing-library/user-event'
+import { fireEvent, render, screen } from '@testing-library/react'
 import { HeroCodeEnvelopeExplorer } from '@/components/marketing/hero/HeroCodeEnvelopeExplorer'
 
 vi.mock('@react-three/fiber', () => ({
@@ -16,47 +15,43 @@ vi.mock('@react-three/drei', () => ({
   PerspectiveCamera: () => null,
   Line: () => null,
   Edges: () => null,
-  Html: () => null,
 }))
 
 describe('HeroCodeEnvelopeExplorer', () => {
-  it('renders a demand-rendered 3D hero canvas with accessible study copy', () => {
+  it('renders a demand-rendered floating 3D hero canvas with accessible study copy', () => {
     render(<HeroCodeEnvelopeExplorer />)
 
-    expect(screen.getByText('Try a setback. Watch the buildable envelope change.')).toBeInTheDocument()
+    expect(screen.getByText('Widen the house. See when the lot stops working.')).toBeInTheDocument()
     expect(screen.getByTestId('hero-r3f-canvas')).toHaveAttribute('data-frameloop', 'demand')
-    expect(screen.getByText(/PD 1096 Rules VII & VIII/i)).toBeInTheDocument()
-    expect(screen.getByText(/study visual/i)).toBeInTheDocument()
+    expect(screen.getByText(/Building width/i)).toBeInTheDocument()
+    expect(screen.getByText(/Educational preview only/i)).toBeInTheDocument()
   })
 
-  it('updates the eave clearance status from the rendered scene geometry', async () => {
-    const user = userEvent.setup()
+  it('uses exactly one landing-page control for the hero interaction', () => {
     render(<HeroCodeEnvelopeExplorer />)
 
-    expect(screen.getByText(/3200 mm clear/i)).toBeInTheDocument()
-    expect(screen.getByText(/Compliant study state/i)).toBeInTheDocument()
-
-    await user.click(screen.getByRole('radio', { name: /R-2 rowhouse/i }))
-
-    expect(screen.getByText(/700 mm clear/i)).toBeInTheDocument()
-    expect(screen.getByText(/Too close in this study state/i)).toBeInTheDocument()
-
-    await user.click(screen.getByRole('button', { name: /600/i }))
-
-    expect(screen.getByText(/900 mm clear/i)).toBeInTheDocument()
-    expect(screen.getByText(/Compliant study state/i)).toBeInTheDocument()
+    expect(screen.getAllByRole('slider')).toHaveLength(1)
+    expect(screen.getByRole('slider', { name: /building width/i })).toBeInTheDocument()
+    expect(screen.queryByRole('radio')).not.toBeInTheDocument()
+    expect(screen.queryByRole('button', { name: /show setbacks/i })).not.toBeInTheDocument()
   })
 
-  it('uses the existing site-development computation basis for buildable dimensions', async () => {
-    const user = userEvent.setup()
+  it('shows the simple width story: safe, setback violation, then lot-line violation', () => {
     render(<HeroCodeEnvelopeExplorer />)
 
-    expect(screen.getByText('16 m')).toBeInTheDocument()
-    expect(screen.getByText('8.5 m')).toBeInTheDocument()
+    const slider = screen.getByRole('slider', { name: /building width/i })
 
-    await user.click(screen.getByRole('radio', { name: /R-2 rowhouse/i }))
+    expect(screen.getByText(/Inside the buildable area/i)).toBeInTheDocument()
+    expect(screen.getByText(/Buildable width 16 m/i)).toBeInTheDocument()
 
-    expect(screen.getByText('6 m')).toBeInTheDocument()
-    expect(screen.getByText('15 m')).toBeInTheDocument()
+    fireEvent.change(slider, { target: { value: '17' } })
+
+    expect(screen.getByText(/Crossing the setback/i)).toBeInTheDocument()
+    expect(screen.getByText(/crossing the side setback line/i)).toBeInTheDocument()
+
+    fireEvent.change(slider, { target: { value: '21' } })
+
+    expect(screen.getByText(/Beyond lot line/i)).toBeInTheDocument()
+    expect(screen.getByText(/wider than the sample lot/i)).toBeInTheDocument()
   })
 })

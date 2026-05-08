@@ -26,9 +26,9 @@ const sixQuestions = [
       'The Licensure Examination for Architects is the Philippine board exam for architecture graduates seeking registration as architects. SlateCamp helps candidates organize review around codes, topics, questions, and source trails; always verify current requirements with PRC and PRBoA materials.',
   },
   {
-    question: 'How does SlateCamp differ from traditional review centers?',
+    question: 'How does SlateCamp help when my architecture knowledge feels scattered?',
     answer:
-      'Review centers teach. SlateCamp helps you check what stuck after lectures, mock exams, and self-study. It turns missed answers into topics to repair without replacing instructors, mentors, or review centers.',
+      'SlateCamp gives students a calmer map: source-backed resources where verified, visual explanations, quizzes, 3D labs, and practical tools that turn missed answers into topics to repair.',
   },
   {
     question: 'What do I get after creating a free account?',
@@ -67,7 +67,7 @@ export const GridVariant: Story = {
   args: {
     questions: fourQuestions,
     heading: 'Common questions',
-    subheading: 'Quick answers to what reviewees ask most.',
+    subheading: 'Quick answers to what learners ask most.',
     variant: 'grid',
   },
 }
