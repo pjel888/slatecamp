@@ -20,7 +20,7 @@ const ReadinessMapMockup = () => (
     <div className='flex items-center justify-between gap-4'>
       <div>
         <div className='font-[family-name:var(--font-dm-mono)] text-[11px] uppercase tracking-[0.16em] text-camp-cobalt'>
-          Readiness map
+          Study map
         </div>
         <h3 className='mt-1 text-[18px] font-extrabold text-camp-black'>Tonight’s repair list</h3>
       </div>
@@ -52,7 +52,7 @@ const ReadinessMapMockup = () => (
     <div className='mt-4 rounded-[14px] bg-camp-black p-4 text-white'>
       <p className='text-[12px] font-semibold text-camp-amber'>Weak spots are not the danger.</p>
       <p className='mt-1 text-[12px] leading-relaxed text-white/60'>
-        The risk is finding them too late. Start with a free readiness check and turn uncertainty into a study plan.
+        The risk is finding them too late. Start with a small practice check and turn uncertainty into a study plan.
       </p>
     </div>
   </div>
@@ -67,7 +67,7 @@ export const AnalyticsSection = () => (
 
       <StaggerItem>
         <h2 className='font-[family-name:var(--font-syne)] text-[28px] font-extrabold leading-[1.15] text-camp-black sm:text-[34px]'>
-          Turn review into a readiness map.
+          Turn scattered review into a study map.
         </h2>
       </StaggerItem>
 
@@ -79,7 +79,7 @@ export const AnalyticsSection = () => (
 
       <StaggerItem>
         <div className='mt-5 flex flex-wrap gap-2'>
-          <FeaturePill variant='cobalt'>Free readiness check</FeaturePill>
+          <FeaturePill variant='cobalt'>Small practice check</FeaturePill>
           <FeaturePill variant='amber'>Weak-topic repair list</FeaturePill>
           <FeaturePill variant='green'>Study-plan clarity</FeaturePill>
         </div>

@@ -20,12 +20,14 @@ export async function MarketingNav({
   variant = 'light',
   isLoggedIn: isLoggedInOverride,
   showSecondaryNav = true,
+  fixed = true,
 }: {
   activeRoute?: string
   logoScrollsToTop?: boolean
   variant?: 'light' | 'dark'
   isLoggedIn?: boolean
   showSecondaryNav?: boolean
+  fixed?: boolean
 }) {
   const isLoggedIn = isLoggedInOverride ?? !!(await getUserIfPresent()).data.user
   const isDark = variant === 'dark'
@@ -42,7 +44,10 @@ export async function MarketingNav({
           : 'text-ink/75 hover:bg-white/[0.16] hover:text-ink',
     )
 
-  const headerClass = 'fixed inset-x-0 top-0 z-50 text-foreground'
+  const headerClass = cn(
+    'z-50 text-foreground',
+    fixed ? 'fixed inset-x-0 top-0' : 'relative',
+  )
 
   const primaryNavClass = cn(
     'border-b px-6 backdrop-blur-xl',

@@ -17,7 +17,7 @@ const ThreeDMockup = () => (
       <div className='flex items-center justify-between border-b border-white/10 px-4 py-3'>
         <div>
           <span className='inline-block rounded-full bg-white/10 px-2.5 py-0.5 font-[family-name:var(--font-dm-mono)] text-[11px] text-white/70'>
-            3D Lab · Setback Explorer
+            3D Lab · Visual study preview
           </span>
           <div className='mt-1 text-[13px] font-bold text-white'>Lot, setbacks, eave clearance</div>
         </div>
@@ -46,7 +46,7 @@ const ThreeDMockup = () => (
           <polygon points='104,84 172,58 238,86 170,122' fill='rgba(245,166,35,0.94)' />
           <line x1='238' y1='86' x2='300' y2='56' stroke='#A7F3D0' strokeDasharray='4 4' />
           <text x='238' y='35' fill='#A7F3D0' fontSize='9' fontFamily='monospace'>750 mm clear zone</text>
-          <text x='170' y='166' textAnchor='middle' fill='rgba(245,166,35,0.74)' fontSize='10' fontFamily='monospace'>SETBACK BANDS + BUILDABLE ENVELOPE</text>
+          <text x='170' y='166' textAnchor='middle' fill='rgba(245,166,35,0.74)' fontSize='10' fontFamily='monospace'>SPATIAL RULES + BUILDABLE ENVELOPE</text>
         </svg>
       </div>
 
@@ -71,19 +71,19 @@ export const ThreeDLabSection = () => (
 
         <StaggerItem>
           <h2 className='font-[family-name:var(--font-syne)] text-[28px] font-extrabold leading-[1.15] text-white sm:text-[34px]'>
-            Setbacks are easier to understand when the lot shrinks in front of you.
+            Spatial rules are easier to trust when you can see the shape.
           </h2>
         </StaggerItem>
 
         <StaggerItem>
           <p className='mt-4 max-w-[460px] text-[14px] leading-relaxed text-white/70'>
-            The 3D Lab is SlateCamp’s signature proof: spatial code topics made visible for students who cannot rely on flat tables alone. Preview the idea here, then use the full lab after signup as modules are released.
+            The 3D Lab is SlateCamp’s visual proof: selected spatial topics made easier to understand for students who cannot rely on flat tables alone. Preview the idea here; available modules depend on account access and release status.
           </p>
         </StaggerItem>
 
         <StaggerItem>
           <div className='mt-5 flex flex-wrap gap-2'>
-            <FeaturePill variant='muted-dark'>Setback envelope</FeaturePill>
+            <FeaturePill variant='muted-dark'>Spatial envelope</FeaturePill>
             <FeaturePill variant='amber'>Eave clearance</FeaturePill>
             <FeaturePill variant='muted-dark'>Plan + isometric views</FeaturePill>
             <FeaturePill variant='muted-dark'>Educational source guard</FeaturePill>
@@ -93,8 +93,8 @@ export const ThreeDLabSection = () => (
         <StaggerItem>
           <div className='mt-8 space-y-5'>
             <FeatureCheckItem
-              title='Turn code into a visible shape'
-              description='A lot, property line, setback band, and buildable envelope become easier to remember when the geometry is visible.'
+              title='Turn rules into a visible shape'
+              description='A lot, property line, spatial band, and buildable envelope become easier to understand when the geometry is visible.'
               accentColor={cssVars.accent}
               textDark
             />
@@ -109,7 +109,7 @@ export const ThreeDLabSection = () => (
             href={ROUTES.auth.register}
             className='mt-7 inline-flex rounded-sm bg-camp-amber px-5 py-2.5 text-[13px] font-semibold text-camp-black transition hover:bg-warning-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-camp-amber/40'
           >
-            Create a free account for the full lab
+            Preview available visual tools
           </Link>
         </StaggerItem>
       </StaggerParent>

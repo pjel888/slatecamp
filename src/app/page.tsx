@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: `${siteConfig.name} | Architecture Knowledge Atlas`,
     description:
-      'Navigate architecture knowledge with source-backed resources, visual explanations, quizzes, 3D labs, and practical tools for school, boards, and practice.',
+      'Find where architecture topics fit, understand them visually, check what stayed, and know what to revisit beside school, books, mentors, and review materials.',
     type: 'website',
     siteName: siteConfig.name,
   },
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: `${siteConfig.name} | Architecture Knowledge Atlas`,
     description:
-      'Source-backed resources, visual explanations, quizzes, 3D labs, and practical tools for school, boards, and practice.',
+      'Find where architecture topics fit, understand them visually, check what stayed, and know what to revisit beside school, books, mentors, and review materials.',
   },
   keywords: [
     'architecture knowledge atlas',

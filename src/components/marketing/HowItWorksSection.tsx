@@ -11,7 +11,7 @@ const STEPS = [
   {
     num: '02',
     title: 'Check what stayed with you',
-    desc: 'Use a short quiz or readiness check to separate lucky confidence from topics that are actually stable.',
+    desc: 'Use a short practice check to separate lucky confidence from topics that are actually stable.',
   },
   {
     num: '03',

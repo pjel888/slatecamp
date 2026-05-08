@@ -65,14 +65,6 @@ const ROUTES: [number, number][] = [
   [0, 1], [1, 2], [2, 4], [4, 5], [5, 6], [6, 8], [8, 3], [3, 7], [7, 11], [11, 10], [10, 5], [9, 2], [9, 11], [0, 9],
 ]
 
-const ATLAS_LABELS = [
-  { text: 'Codes', className: 'left-[12%] top-[24%]' },
-  { text: 'Egress', className: 'right-[14%] top-[25%]' },
-  { text: 'Setbacks', className: 'left-[18%] bottom-[29%]' },
-  { text: '3D Visuals', className: 'right-[16%] bottom-[33%]' },
-  { text: 'Next step', className: 'left-1/2 top-[12%] -translate-x-1/2 border-camp-amber/30 text-camp-amber' },
-] as const
-
 const usePrefersReducedMotion = () => {
   const [reduced, setReduced] = useState(false)
 
@@ -162,39 +154,11 @@ const useSafeWebGLStatus = () => {
 }
 
 const AtlasFallbackPoster = () => (
-  <div className='relative h-full min-h-[360px] w-full overflow-hidden rounded-[2rem] border border-white/50 bg-white/30 p-6 shadow-[0_28px_90px_rgba(27,63,196,0.14)] backdrop-blur-md sm:min-h-[430px]'>
-    <div aria-hidden='true' className='absolute inset-0 bg-[radial-gradient(circle_at_25%_20%,rgba(27,63,196,0.12),transparent_30%),radial-gradient(circle_at_82%_24%,rgba(232,133,58,0.12),transparent_26%),linear-gradient(135deg,rgba(255,255,255,0.68),rgba(238,242,252,0.24))]' />
-    <div aria-hidden='true' className='absolute inset-0 opacity-50 [background-image:linear-gradient(rgba(27,63,196,0.14)_1px,transparent_1px),linear-gradient(90deg,rgba(27,63,196,0.14)_1px,transparent_1px)] [background-size:28px_28px]' />
-
-    <div className='relative mx-auto mt-8 max-w-md'>
-      <div className='relative h-52 sm:h-64'>
-        {[0, 1, 2, 3, 4].map((sheet) => (
-          <div
-            key={sheet}
-            className='absolute left-1/2 top-1/2 h-24 w-56 -translate-x-1/2 -translate-y-1/2 rounded-xl border border-camp-cobalt/20 bg-white/70 shadow-[0_18px_50px_rgba(27,63,196,0.10)] backdrop-blur-sm'
-            style={{
-              transform: `translate(-50%, -50%) translate(${sheet * 12 - 24}px, ${sheet * -10 + 18}px) rotate(${sheet * 3 - 8}deg)`,
-              opacity: 0.72 + sheet * 0.045,
-            }}
-          />
-        ))}
-        {['Codes', 'Visuals', 'Questions', 'Tools', 'Repair'].map((label, index) => (
-          <div
-            key={label}
-            className='absolute rounded-full border border-camp-cobalt/20 bg-white/80 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.16em] text-camp-cobalt shadow-sm'
-            style={{
-              left: `${12 + (index % 3) * 30}%`,
-              top: `${10 + Math.floor(index / 3) * 54 + (index % 2) * 8}%`,
-            }}
-          >
-            {label}
-          </div>
-        ))}
-      </div>
-      <p className='relative mx-auto mt-4 max-w-sm text-center text-sm font-semibold leading-relaxed text-camp-black'>
-        Scattered topics settle into a mapped architecture field guide.
-      </p>
-    </div>
+  <div className='absolute inset-0 overflow-hidden' aria-hidden='true'>
+    <div className='absolute inset-[-12%] bg-[radial-gradient(circle_at_30%_22%,rgba(93,136,255,0.22),transparent_26%),radial-gradient(circle_at_76%_18%,rgba(232,133,58,0.16),transparent_24%),linear-gradient(135deg,rgba(255,255,255,0.08),transparent_52%)]' />
+    <div className='absolute inset-0 opacity-30 [background-image:linear-gradient(rgba(255,255,255,0.12)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.10)_1px,transparent_1px)] [background-size:34px_34px]' />
+    <div className='absolute left-[10%] top-[22%] h-px w-[62%] rotate-[-8deg] bg-linear-to-r from-transparent via-camp-amber/40 to-transparent' />
+    <div className='absolute right-[12%] top-[18%] h-44 w-44 rounded-full border border-white/10' />
   </div>
 )
 
@@ -376,9 +340,9 @@ const AtlasFieldScene = ({ reducedMotion }: { reducedMotion: boolean }) => (
 
 const AtlasFieldCanvas = ({ reducedMotion }: { reducedMotion: boolean }) => (
   <div
-    className='relative z-10 h-full min-h-[340px] w-full overflow-visible bg-transparent sm:min-h-[400px] lg:min-h-[480px]'
+    className='absolute inset-[-8%] z-0 overflow-visible bg-transparent opacity-55 mix-blend-screen sm:opacity-70'
     role='img'
-    aria-label='Abstract architecture knowledge atlas: scattered topic nodes calmly organize around floating blueprint sheets into a mapped field guide.'
+    aria-label='Decorative abstract architecture knowledge atlas: scattered topic nodes organize around floating blueprint sheets.'
   >
     <WebGLErrorBoundary fallback={<AtlasFallbackPoster />}>
       <Canvas
@@ -393,49 +357,20 @@ const AtlasFieldCanvas = ({ reducedMotion }: { reducedMotion: boolean }) => (
   </div>
 )
 
-export const AtlasFieldHero = () => {
+export const AtlasAtmosphere = () => {
   const reducedMotion = usePrefersReducedMotion()
   const webGLAvailable = useSafeWebGLStatus()
 
   return (
-    <div className='relative min-h-[360px] overflow-hidden rounded-[2rem] border border-white/55 bg-white/22 py-4 shadow-[0_30px_100px_rgba(27,63,196,0.12)] backdrop-blur-[2px] sm:min-h-[420px] lg:min-h-[500px] lg:py-0' data-testid='atlas-field-hero'>
-      <div aria-hidden='true' className='pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_36%_22%,rgba(27,63,196,0.14),transparent_32%),radial-gradient(circle_at_78%_28%,rgba(212,149,26,0.13),transparent_28%),linear-gradient(135deg,rgba(255,255,255,0.32),rgba(238,242,252,0.12))]' />
-      <h2 className='sr-only'>SlateCamp Atlas Field: scattered architecture knowledge becomes mapped.</h2>
+    <div
+      className='pointer-events-none absolute inset-0 z-0 overflow-hidden'
+      data-testid='atlas-atmosphere'
+      aria-hidden='true'
+    >
+      <div className='absolute inset-0 bg-[radial-gradient(circle_at_68%_42%,rgba(93,136,255,0.18),transparent_32%),radial-gradient(circle_at_32%_70%,rgba(232,133,58,0.12),transparent_28%)]' />
       {webGLAvailable && !reducedMotion ? <AtlasFieldCanvas reducedMotion={false} /> : <AtlasFallbackPoster />}
-      <div aria-hidden='true' className='pointer-events-none absolute inset-0 z-20 hidden sm:block'>
-        {ATLAS_LABELS.map((label) => (
-          <span
-            key={label.text}
-            className={`absolute rounded-full border border-camp-cobalt/20 bg-white/80 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.16em] text-camp-cobalt shadow-[0_10px_30px_rgba(27,63,196,0.10)] backdrop-blur-md ${label.className}`}
-          >
-            {label.text}
-          </span>
-        ))}
-      </div>
-      <div className='pointer-events-none absolute bottom-6 left-4 z-20 hidden w-[220px] rounded-2xl border border-camp-cobalt/15 bg-white/68 p-3 text-left shadow-[0_18px_60px_rgba(15,23,42,0.08)] backdrop-blur-md sm:left-8 lg:block'>
-        <div className='flex items-start justify-between gap-3 border-b border-camp-cobalt/10 pb-2'>
-          <p className='font-[family-name:var(--font-dm-mono)] text-[9px] font-semibold uppercase tracking-[0.18em] text-camp-cobalt'>
-            Plate SC-01
-          </p>
-          <p className='font-[family-name:var(--font-dm-mono)] text-[9px] font-semibold uppercase tracking-[0.18em] text-camp-black/55'>
-            Atlas
-          </p>
-        </div>
-        <p className='mt-2 text-[12px] font-bold leading-relaxed text-camp-black'>
-          Topic map · source notes · next step
-        </p>
-      </div>
-      <div className='pointer-events-none absolute left-4 top-7 z-20 rounded-full border border-camp-cobalt/15 bg-white/70 px-3 py-1.5 text-[10px] font-bold uppercase tracking-[0.16em] text-camp-cobalt shadow-sm backdrop-blur sm:left-8'>
-        Mapped knowledge field
-      </div>
-      <div className='pointer-events-none absolute bottom-6 right-4 z-20 max-w-[260px] rounded-2xl border border-white/60 bg-white/72 p-4 text-right shadow-[0_18px_60px_rgba(15,23,42,0.08)] backdrop-blur-md sm:right-8'>
-        <p className='font-[family-name:var(--font-dm-mono)] text-[10px] font-semibold uppercase tracking-[0.16em] text-camp-cobalt'>
-          Atlas Field
-        </p>
-        <p className='mt-1 text-[13px] font-bold leading-relaxed text-camp-black'>
-          Topics, visuals, checks, and tools settle into one calmer route.
-        </p>
-      </div>
     </div>
   )
 }
+
+export const AtlasFieldHero = AtlasAtmosphere

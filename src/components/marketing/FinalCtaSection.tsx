@@ -26,7 +26,7 @@ export const FinalCtaSection = ({
           <p className='mx-auto mt-4 max-w-xl text-[15px] leading-relaxed text-white/60'>
             {isLoggedIn
               ? 'Your dashboard is ready. Keep turning uncertainty into a clearer study plan.'
-              : 'Start with a free account, preview the resources, and build a study plan around what you actually need to repair. No card required.'}
+              : 'Start with a free account, preview the resources, and build a study plan around what you actually need to repair. No credit card required.'}
           </p>
         </ScrollReveal>
         <ScrollReveal y={12} duration={0.4} delay={0.15}>

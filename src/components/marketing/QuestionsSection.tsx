@@ -44,6 +44,7 @@ const QuizPreview = () => {
         </p>
 
         <fieldset className='space-y-2' role='radiogroup' aria-label='Quiz preview answer choices'>
+          <legend className='sr-only'>Quiz preview answer choices</legend>
           {OPTIONS.map((option, index) => {
             const isSelected = selected === index
             const isCorrect = submitted && index === correctIndex
@@ -108,7 +109,7 @@ const QuizPreview = () => {
               Good practice does not stop at the answer. The next step is to separate the ideas: an overhang clearance rule protects the distance from side/rear property lines, while setback bands explain where the main building mass may sit.
             </p>
             <div className='mt-3 rounded-[10px] bg-white px-3 py-2 text-[11px] text-camp-cobalt'>
-              Readiness signal: weak topic found · Setbacks and envelope visualization
+              Study signal: weak topic found · Setbacks and envelope visualization
             </div>
           </div>
         )}
@@ -126,19 +127,19 @@ export const QuestionsSection = () => (
 
       <StaggerItem>
         <h2 className='font-[family-name:var(--font-syne)] text-[28px] font-extrabold leading-[1.15] text-camp-black sm:text-[34px]'>
-          Every missed answer should become a next step, not just a red mark.
+          A missed answer should become a clue, not another reason to panic.
         </h2>
       </StaggerItem>
 
       <StaggerItem>
         <p className='mt-4 max-w-[460px] text-[14px] leading-relaxed text-text-2'>
-          SlateCamp helps you check what stayed with you after lectures, handouts, mock exams, and self-study. When something breaks, the explanation points you to the topic to repair.
+          SlateCamp helps you check what stayed with you after lectures, handouts, mock exams, and self-study. When something breaks, the explanation can point you toward the topic to repair.
         </p>
       </StaggerItem>
 
       <StaggerItem>
         <div className='mt-5 flex flex-wrap gap-2'>
-          <FeaturePill variant='cobalt'>Free readiness check</FeaturePill>
+          <FeaturePill variant='cobalt'>Free practice entry</FeaturePill>
           <FeaturePill variant='cobalt'>Weak-topic map</FeaturePill>
           <FeaturePill variant='green'>Explanation first</FeaturePill>
           <FeaturePill variant='amber'>Diagnostics, drills, simulations</FeaturePill>
@@ -154,7 +155,7 @@ export const QuestionsSection = () => (
           />
           <FeatureCheckItem
             title='Turn uncertainty into a repair list'
-            description='Missed answers are grouped into topics so you know what to read, visualize, or drill next.'
+            description='Missed answers can be grouped into topics so you know what to read, visualize, or drill next where mappings are available.'
             accentColor='#1B3FC4'
           />
           <FeatureCheckItem

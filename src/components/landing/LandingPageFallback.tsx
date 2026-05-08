@@ -15,11 +15,11 @@ import { ROUTES } from '@/lib/constants'
 export function LandingPageFallback() {
   return (
     <div id='top' className='min-h-screen bg-page-bg'>
-      <MarketingNav activeRoute='/' logoScrollsToTop isLoggedIn={false} />
+      <MarketingNav activeRoute='/' logoScrollsToTop isLoggedIn={false} showSecondaryNav={false} fixed={false} />
       <main>
         <HeroSection
           ctaHref={ROUTES.auth.register}
-          ctaLabel='Start exploring free'
+          ctaLabel='Open the atlas'
         />
         <SocialProofBar />
         <BentoFeatureGrid />
@@ -31,7 +31,7 @@ export function LandingPageFallback() {
         <ComparisonSection />
         <FinalCtaSection
           ctaHref={ROUTES.auth.register}
-          ctaLabel='Start exploring free'
+          ctaLabel='Open the atlas'
           isLoggedIn={false}
         />
       </main>

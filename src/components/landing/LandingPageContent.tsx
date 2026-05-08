@@ -18,11 +18,11 @@ export async function LandingPageContent() {
   const isLoggedIn = !!user
 
   const ctaHref = isLoggedIn ? ROUTES.dashboard.wiki : ROUTES.auth.register
-  const ctaLabel = isLoggedIn ? 'Open the atlas' : 'Start exploring free'
+  const ctaLabel = 'Open the atlas'
 
   return (
     <div id='top' className='min-h-screen bg-page-bg'>
-      <MarketingNav activeRoute='/' logoScrollsToTop isLoggedIn={isLoggedIn} />
+      <MarketingNav activeRoute='/' logoScrollsToTop isLoggedIn={isLoggedIn} showSecondaryNav={false} fixed={false} />
 
       <main>
         <HeroSection

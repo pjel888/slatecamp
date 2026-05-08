@@ -71,7 +71,7 @@ export default function PricingPage() {
         />
         <FinalCtaSection
           ctaHref={ROUTES.try}
-          ctaLabel="Start exploring free"
+          ctaLabel="Start free"
           isLoggedIn={false}
         />
       </main>
