@@ -2,7 +2,7 @@
 
 **Date:** 2026-05-07
 **Branch:** `feat/landing-3d-hero-best-representation`
-**Status:** Implementation plan for current build pass
+**Status:** Superseded by Atlas/resource positioning. Use `.ai/03_plans/2026-05-07-slatecamp-atlas-landing-master-plan.md` for current hero/copy direction; this file is historical context only.
 
 ## Goal
 

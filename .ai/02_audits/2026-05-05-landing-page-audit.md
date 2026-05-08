@@ -3,8 +3,9 @@
 **Date:** 2026-05-05
 **Branch:** `feat/modal-standardization-kimi26`
 **Audit file:** `.ai/02_audits/2026-05-05-landing-page-audit.md`
-**Status:** Comprehensive reviewer packet, expanded for external review
+**Status:** Historical audit plus supersession notice. For landing implementation, use the Atlas master plan first: `.ai/03_plans/2026-05-07-slatecamp-atlas-landing-master-plan.md`. Use this audit only for background, legal/claim checks, and prior research context.
 **Primary purpose:** Give reviewers enough product, brand, UX, conversion, and implementation context to critique the SlateCamp landing page intelligently without needing to rediscover the app from scratch.
+**2026-05-07 Atlas correction:** Philip clarified SlateCamp should be positioned more as a resource than a study tool. `Architecture knowledge atlas` is now the preferred category language because it fits SlateCAMP/Camp/Trail brand metaphors and avoids mechanism-first study-tool framing. New master plan: `.ai/03_plans/2026-05-07-slatecamp-atlas-landing-master-plan.md`. Research packet: `.ai/13_research/landing-atlas-resource-positioning-2026-05-07/atlas-positioning-and-technical-research.md`.
 **2026-05-07 addendum:** Expanded with target-market copy critique, supplementary-reviewer positioning, ethical fear-marketing guidance, Reddit sentiment, and broader architecture-resource/platform positioning.
 **2026-05-07 strategy packet:** `.ai/13_research/landing-brand-positioning-2026-05-07/strategy-packet.md`
 **2026-05-07 Reddit/platform packet:** `.ai/13_research/reddit-sentiment-landing-positioning-2026-05-07/sentiment-and-platform-positioning-report.md`

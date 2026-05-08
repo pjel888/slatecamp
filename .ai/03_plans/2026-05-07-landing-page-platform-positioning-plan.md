@@ -1,7 +1,7 @@
 # Landing Page Platform Positioning Plan
 
 **Date:** 2026-05-07
-**Status:** Active priority for today
+**Status:** Superseded by Atlas/resource positioning. Use `.ai/03_plans/2026-05-07-slatecamp-atlas-landing-master-plan.md` as the current implementation source; this file is historical context only.
 **Related audit:** `.ai/02_audits/2026-05-05-landing-page-audit.md`
 **Strategy packet:** `.ai/13_research/landing-brand-positioning-2026-05-07/strategy-packet.md`
 **Reddit sentiment packet:** `.ai/13_research/reddit-sentiment-landing-positioning-2026-05-07/sentiment-and-platform-positioning-report.md`

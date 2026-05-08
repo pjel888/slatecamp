@@ -1,7 +1,7 @@
 # Landing Page Final Messaging Gate
 
 **Date:** 2026-05-07
-**Status:** FINALIZED - conditional GO for landing-page implementation
+**Status:** Superseded by Atlas/resource-positioning correction; retained as historical messaging gate and implementation checklist
 **Branch:** `feat/modal-standardization-kimi26`
 **Primary plan:** `.ai/03_plans/2026-05-07-landing-page-platform-positioning-plan.md`
 **Primary audit:** `.ai/02_audits/2026-05-05-landing-page-audit.md`
@@ -14,13 +14,13 @@
 
 ## 1. Gate verdict
 
-**CONDITIONAL GO for landing-page implementation.**
+**HISTORICAL / SUPERSEDED VERDICT:** This file is no longer the go/no-go source for hero copy or hero visual direction. Use `.ai/03_plans/2026-05-07-slatecamp-atlas-landing-master-plan.md` for the current direction. This file remains useful only for legal, route, CTA, signup-gating, and implementation checklist details.
 
-The messaging gate is finalized. The implementation should now rewrite the landing page around a premium architecture-learning umbrella, with Licensure Examination for Architects readiness as the highest-intent pathway but not the whole public identity. The conditions are implementation-scope constraints, not strategy blockers: follow the CTA route map, update all hidden copy surfaces, and do not cherry-pick older board-exam-only audit recommendations over this gate.
+The previous messaging gate is **superseded** by the Atlas/resource-positioning correction in `.ai/03_plans/2026-05-07-slatecamp-atlas-landing-master-plan.md`. Keep this document as a checklist for legal, route, CTA, gating, and implementation details, but do not treat `study companion` as the final hero category.
 
-Final positioning:
+Updated positioning:
 
-> **SlateCamp is your architecture study companion: source-backed resources, quizzes, 3D labs, and free tools for school, boards, and practice.**
+> **SlateCamp is an architecture knowledge atlas: source-backed resources, visual explanations, quizzes, 3D labs, and practical tools for school, board-review season, and practice context.**
 
 Brand-cue rule:
 

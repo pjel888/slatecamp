@@ -1,5 +1,7 @@
 # Landing Page Final Audit — 2026-05-07
 
+**Supersession note:** This audit describes an older `study companion` implementation pass. For current implementation direction, use `.ai/03_plans/2026-05-07-slatecamp-atlas-landing-master-plan.md` and the `architecture knowledge atlas` category.
+
 Audit time: 2026-05-07 19:16:10 PST
 Branch: `feat/landing-3d-hero-best-representation`
 
