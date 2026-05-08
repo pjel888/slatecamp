@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SlateCamp Board 2 Static Composition</title>
+  <style>
+    :root {
+      --ink: #08111f;
+      --ink-2: #101b2d;
+      --paper: #f7f4ec;
+      --paper-2: #e9e2d3;
+      --cobalt: #1b3fc4;
+      --cobalt-2: #7894ff;
+      --gold: #d4951a;
+      --line: rgba(247,244,236,.18);
+      --muted: rgba(247,244,236,.66);
+      --faint: rgba(247,244,236,.09);
+      --success: #2d9f6f;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #d8d2c4;
+      color: var(--paper);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    .artifact-note {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      padding: 10px 18px;
+      background: #fff7dd;
+      color: #342508;
+      border-bottom: 1px solid rgba(0,0,0,.12);
+      font-size: 12px;
+      letter-spacing: .02em;
+    }
+    .frame {
+      position: relative;
+      overflow: hidden;
+      min-height: 760px;
+      background:
+        radial-gradient(circle at 72% 22%, rgba(27,63,196,.34), transparent 31%),
+        radial-gradient(circle at 25% 74%, rgba(212,149,26,.18), transparent 30%),
+        linear-gradient(145deg, #07101d 0%, #0d1726 42%, #050912 100%);
+      border-bottom: 1px solid rgba(255,255,255,.12);
+      isolation: isolate;
+    }
+    .frame:before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        radial-gradient(circle, rgba(255,255,255,.22) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px),
+        linear-gradient(0deg, rgba(255,255,255,.05) 1px, transparent 1px);
+      background-size: 28px 28px, 112px 112px, 112px 112px;
+      opacity: .42;
+      mask-image: radial-gradient(circle at 60% 45%, black 0%, black 55%, transparent 88%);
+      z-index: -3;
+    }
+    .frame:after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        conic-gradient(from 18deg at 68% 38%, transparent 0 74deg, rgba(255,255,255,.09) 74deg 75deg, transparent 75deg 360deg),
+        linear-gradient(120deg, transparent 0 52%, rgba(255,255,255,.08) 52.1%, transparent 52.4%);
+      opacity: .55;
+      z-index: -2;
+    }
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 22px 38px 0;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: .16em;
+      color: rgba(247,244,236,.78);
+    }
+    .brand { font-weight: 800; color: #fff; letter-spacing: .08em; }
+    .nav-right { display: flex; gap: 18px; align-items: center; }
+    .nav a { color: inherit; text-decoration: none; }
+    .nav .start { color: #fff; border-bottom: 1px solid rgba(255,255,255,.5); padding-bottom: 3px; }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(260px, .95fr);
+      gap: 44px;
+      padding: 96px 54px 66px;
+      align-items: end;
+    }
+    .kicker, .mono, .chapter, .path-label, .boundary-label {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      text-transform: uppercase;
+      letter-spacing: .18em;
+      font-size: 11px;
+    }
+    .kicker { color: var(--cobalt-2); margin-bottom: 22px; }
+    h1 {
+      margin: 0;
+      font-size: clamp(64px, 9.4vw, 142px);
+      line-height: .82;
+      letter-spacing: -.075em;
+      max-width: 940px;
+      text-wrap: balance;
+    }
+    .hero-copy {
+      margin-top: 30px;
+      max-width: 620px;
+      color: rgba(247,244,236,.76);
+      font-size: 19px;
+      line-height: 1.55;
+    }
+    .cta-row { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; margin-top: 30px; }
+    .cta-primary, .cta-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 18px;
+      text-decoration: none;
+      font-weight: 750;
+      font-size: 14px;
+      border-radius: 4px;
+    }
+    .cta-primary { background: var(--cobalt); color: #fff; }
+    .cta-secondary { color: var(--paper); border: 1px solid rgba(247,244,236,.28); }
+    .microcopy { margin-top: 18px; max-width: 520px; color: rgba(247,244,236,.52); font-size: 12px; line-height: 1.5; }
+    .atlas-panel {
+      position: relative;
+      min-height: 420px;
+      align-self: stretch;
+      border-left: 1px solid var(--line);
+      padding: 28px 0 0 28px;
+    }
+    .atlas-panel:before {
+      content: "";
+      position: absolute;
+      left: 28px;
+      right: 0;
+      top: 84px;
+      bottom: 24px;
+      background:
+        linear-gradient(90deg, transparent, rgba(255,255,255,.08), transparent),
+        repeating-linear-gradient(0deg, transparent 0 44px, rgba(255,255,255,.1) 45px, transparent 46px);
+      opacity: .8;
+    }
+    .coordinate {
+      position: relative;
+      display: grid;
+      grid-template-columns: 60px 1fr;
+      gap: 14px;
+      padding: 16px 0;
+      border-bottom: 1px solid rgba(255,255,255,.12);
+      color: rgba(247,244,236,.8);
+    }
+    .coordinate strong { color: #fff; font-size: 17px; display: block; margin-bottom: 4px; }
+    .coordinate span { color: rgba(247,244,236,.56); font-size: 13px; line-height: 1.45; }
+    .coord-num { color: var(--gold); font-family: ui-monospace, monospace; font-size: 12px; letter-spacing: .14em; padding-top: 3px; }
+    .section {
+      background: var(--paper);
+      color: #182132;
+      padding: 82px 54px;
+      border-bottom: 1px solid rgba(8,17,31,.12);
+    }
+    .section.dark { background: #0b1423; color: var(--paper); }
+    .section-head {
+      display: grid;
+      grid-template-columns: 180px minmax(0, 1fr);
+      gap: 36px;
+      align-items: start;
+      margin-bottom: 46px;
+    }
+    .chapter { color: var(--cobalt); padding-top: 10px; }
+    .dark .chapter { color: var(--cobalt-2); }
+    h2 { margin: 0; font-size: clamp(42px, 6vw, 92px); line-height: .92; letter-spacing: -.055em; max-width: 1000px; }
+    .section p { color: rgba(24,33,50,.72); font-size: 18px; line-height: 1.6; max-width: 820px; }
+    .dark p { color: rgba(247,244,236,.7); }
+    .problem-list {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      border-top: 1px solid rgba(8,17,31,.18);
+      border-left: 1px solid rgba(8,17,31,.18);
+    }
+    .problem-list div {
+      min-height: 180px;
+      padding: 18px;
+      border-right: 1px solid rgba(8,17,31,.18);
+      border-bottom: 1px solid rgba(8,17,31,.18);
+      font-size: 18px;
+      line-height: 1.3;
+    }
+    .problem-list .small { display: block; margin-top: 18px; font-size: 12px; color: rgba(24,33,50,.55); line-height: 1.45; }
+    .map-line {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0;
+      margin-top: 34px;
+      border: 1px solid rgba(247,244,236,.16);
+      background: rgba(255,255,255,.03);
+    }
+    .map-line:before {
+      content: "";
+      position: absolute;
+      left: 10%; right: 10%; top: 64%; height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(120,148,255,.48), rgba(212,149,26,.48), transparent);
+      z-index: 0;
+    }
+    .map-step { position: relative; z-index: 1; padding: 28px 22px 88px; min-height: 250px; border-right: 1px solid rgba(247,244,236,.14); }
+    .map-step:last-child { border-right: 0; }
+    .map-step:after { content: ""; position: absolute; z-index: 0; left: 22px; bottom: 54px; width: 12px; height: 12px; border-radius: 999px; background: var(--cobalt-2); box-shadow: 0 0 24px rgba(120,148,255,.8); }
+    .map-step:nth-child(3):after { background: var(--gold); box-shadow: 0 0 24px rgba(212,149,26,.7); }
+    .map-step > * { position: relative; z-index: 1; }
+    .map-step strong { display: block; margin-top: 18px; font-size: 23px; color: #fff; }
+    .map-step span { display: block; margin-top: 12px; color: rgba(247,244,236,.62); line-height: 1.5; font-size: 14px; }
+    .paths { display: grid; gap: 0; border-top: 1px solid rgba(8,17,31,.16); }
+    .path-row {
+      display: grid;
+      grid-template-columns: 180px 1fr 1fr;
+      gap: 30px;
+      align-items: center;
+      padding: 28px 0;
+      border-bottom: 1px solid rgba(8,17,31,.16);
+    }
+    .path-label { color: var(--cobalt); }
+    .path-row h3 { margin: 0; font-size: 36px; letter-spacing: -.04em; }
+    .path-row p { margin: 0; font-size: 15px; color: rgba(24,33,50,.68); }
+    .boundary-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border: 1px solid rgba(247,244,236,.16); }
+    .boundary { padding: 22px; min-height: 170px; border-right: 1px solid rgba(247,244,236,.14); }
+    .boundary:last-child { border-right: 0; }
+    .boundary-label { color: var(--gold); margin-bottom: 20px; }
+    .boundary strong { display: block; font-size: 18px; margin-bottom: 10px; }
+    .boundary span { color: rgba(247,244,236,.62); font-size: 13px; line-height: 1.5; }
+    .mobile-frame-wrap { background: #111827; padding: 72px 0; display: flex; justify-content: center; }
+    .mobile-frame {
+      width: 360px;
+      min-height: 720px;
+      border: 6px solid rgba(2,6,23,.86);
+      border-radius: 26px;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 76% 15%, rgba(27,63,196,.28), transparent 38%),
+        linear-gradient(150deg, #07101d, #0c1626 54%, #050912);
+      position: relative;
+      box-shadow: 0 18px 48px rgba(0,0,0,.32);
+    }
+    .mobile-frame:before { content:""; position:absolute; inset:0; background-image: radial-gradient(circle, rgba(255,255,255,.18) 1px, transparent 1px); background-size: 24px 24px; opacity:.4; }
+    .mobile-inner { position: relative; padding: 26px 22px; }
+    .mobile-nav { display:flex; justify-content:space-between; font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:rgba(247,244,236,.75); }
+    .mobile-inner h2 { margin-top: 92px; font-size: 58px; color:#fff; line-height:.9; letter-spacing:-.065em; }
+    .mobile-inner p { color: rgba(247,244,236,.72); line-height:1.55; font-size:16px; }
+    .mobile-actions { display:grid; gap:10px; margin-top: 24px; }
+    .mobile-actions a { text-align:center; border-radius:4px; padding:13px; text-decoration:none; font-weight:800; }
+    .mobile-actions a:first-child { background:var(--cobalt); color:white; }
+    .mobile-actions a:last-child { border:1px solid rgba(255,255,255,.24); color:white; }
+    .mobile-note { margin-top:44px; border-top:1px solid rgba(255,255,255,.14); padding-top:18px; color:rgba(247,244,236,.52); font-size:12px; line-height:1.5; }
+    .final-start {
+      min-height: 520px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      background:
+        radial-gradient(circle at 50% 10%, rgba(27,63,196,.28), transparent 38%),
+        linear-gradient(180deg, #0b1423 0%, #07101d 100%);
+      color: var(--paper);
+      padding: 84px 28px;
+    }
+    .final-start h2 { max-width: 980px; margin-inline: auto; }
+    .final-start p { color: rgba(247,244,236,.68); margin: 22px auto 0; }
+    @media (max-width: 900px) {
+      .nav-right { display:none; }
+      .hero-grid, .section-head, .path-row { grid-template-columns: 1fr; }
+      .atlas-panel { display:none; }
+      .problem-list, .map-line, .boundary-grid { grid-template-columns: 1fr; }
+      .path-row { gap: 10px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="artifact-note">Non-production composition artifact · Board 2 leads · Board 1 atmosphere only · Board 3 product proof · no carded hero</div>
+
+  <main>
+    <section class="frame" aria-label="Desktop hero composition">
+      <nav class="nav" aria-label="Static composition nav">
+        <div class="brand">SLATECAMP</div>
+        <div class="nav-right">
+          <a href="#">Atlas</a>
+          <a href="#">Practice</a>
+          <a href="#">Tools</a>
+          <a href="#" class="start">Start free</a>
+        </div>
+      </nav>
+      <div class="hero-grid">
+        <div>
+          <div class="kicker">Architecture knowledge atlas</div>
+          <h1>Find where it fits. Know what to revisit.</h1>
+          <p class="hero-copy">SlateCamp organizes architecture topics, source-aware references, visual explanations, practice paths, and weak-topic signals so scattered review feels like a map again.</p>
+          <div class="cta-row">
+            <a class="cta-primary" href="#">Open the atlas</a>
+            <a class="cta-secondary" href="#">Find a topic</a>
+          </div>
+          <p class="microcopy">Use beside school, books, mentors, notes, and board-season materials. Educational resource only; verify current requirements with primary authorities and qualified professionals.</p>
+        </div>
+        <aside class="atlas-panel" aria-label="Atlas path marginalia">
+          <div class="mono" style="color: var(--cobalt-2); margin-bottom: 22px;">Field index / SC-00</div>
+          <div class="coordinate"><div class="coord-num">A/01</div><div><strong>Find</strong><span>open the topic, related concepts, and source notes where verified</span></div></div>
+          <div class="coordinate"><div class="coord-num">B/02</div><div><strong>Check</strong><span>practice what stayed without turning review into panic</span></div></div>
+          <div class="coordinate"><div class="coord-num">C/03</div><div><strong>See</strong><span>use available visual tools where spatial rules need more than text</span></div></div>
+          <div class="coordinate"><div class="coord-num">D/04</div><div><strong>Revisit</strong><span>turn weak-topic signals into the next calmer pass</span></div></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="mobile-frame-wrap" aria-label="Mobile hero composition">
+      <div class="mobile-frame">
+        <div class="mobile-inner">
+          <div class="mobile-nav"><span>SlateCamp</span><span>Start</span></div>
+          <div class="kicker" style="margin-top: 86px;">Architecture knowledge atlas</div>
+          <h2>Find where it fits. Know what to revisit.</h2>
+          <p>Source-aware resources, visual explanations, practice paths, and weak-topic signals for moments when review feels scattered.</p>
+          <div class="mobile-actions"><a href="#">Open the atlas</a><a href="#">Find a topic</a></div>
+          <div class="mobile-note">Mobile keeps the editorial message. Extra coordinates and atmospheric details are reduced, not squeezed into tiny pills.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head"><div class="chapter">01 / Scattered review</div><div><h2>It is not just that there is too much to study.</h2><p>The harder part is not knowing where a topic belongs, whether the source is current, or what to revisit after practice exposes a gap.</p></div></div>
+      <div class="problem-list">
+        <div>Codes and tables blur together.<span class="small">Rules need context, not only memorized numbers.</span></div>
+        <div>PDFs and recordings pile up.<span class="small">More files can create more pangangapa.</span></div>
+        <div>Mock boards expose gaps late.<span class="small">A miss should become a next step.</span></div>
+        <div>Familiar can feel like mastered.<span class="small">Practice separates recognition from understanding.</span></div>
+        <div>The real need is orientation.<span class="small">A reliable map makes the next pass calmer.</span></div>
+      </div>
+    </section>
+
+    <section class="section dark">
+      <div class="section-head"><div class="chapter">02 / Atlas model</div><div><h2>Turn scattered architecture knowledge into routes.</h2><p>SlateCamp should show a repeatable loop: find the topic, understand where it fits, check what stayed, and return to what needs another pass.</p></div></div>
+      <div class="map-line">
+        <div class="map-step"><div class="mono">Locate</div><strong>Find the concept</strong><span>Search or browse the atlas, related topics, and source-aware notes where verified.</span></div>
+        <div class="map-step"><div class="mono">Understand</div><strong>See where it fits</strong><span>Use plain-language explanations and visual context for rules that are hard to picture.</span></div>
+        <div class="map-step"><div class="mono">Check</div><strong>Practice what stayed</strong><span>Use practice as a mirror, not a panic trigger.</span></div>
+        <div class="map-step"><div class="mono">Return</div><strong>Revisit weak areas</strong><span>Use readiness and weak-topic signals as study guidance, not outcome certainty.</span></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head"><div class="chapter">03 / Product paths</div><div><h2>Proof lives below the hero, as paths — not fake product cards.</h2><p>Each product path should be tied to real product behavior and include caveats where access, mappings, or source verification varies.</p></div></div>
+      <div class="paths">
+        <div class="path-row"><div class="path-label">A / Find</div><h3>Knowledge resources</h3><p>Open architecture topics, related concepts, and source notes where verified.</p></div>
+        <div class="path-row"><div class="path-label">B / Check</div><h3>Practice paths</h3><p>Check what stayed and use missed-topic mappings where available.</p></div>
+        <div class="path-row"><div class="path-label">C / See</div><h3>Visual tools</h3><p>Use available visual examples and lab modules where account access supports it.</p></div>
+        <div class="path-row"><div class="path-label">D / Revisit</div><h3>Weak-topic signals</h3><p>Use study signals to choose the next topic, not to predict board outcomes.</p></div>
+      </div>
+    </section>
+
+    <section class="section dark">
+      <div class="section-head"><div class="chapter">04 / Trust boundaries</div><div><h2>Reliable means honest about limits.</h2><p>SlateCamp should feel comforting because it is precise about what it is and what it is not.</p></div></div>
+      <div class="boundary-grid">
+        <div class="boundary"><div class="boundary-label">Boundary</div><strong>Supplementary resource</strong><span>Use beside school, books, mentors, and board-season materials.</span></div>
+        <div class="boundary"><div class="boundary-label">Boundary</div><strong>Not official</strong><span>No government or regulatory affiliation. Use primary documents for current requirements.</span></div>
+        <div class="boundary"><div class="boundary-label">Boundary</div><strong>No guarantees</strong><span>Readiness signals guide study choices; they do not certify outcomes.</span></div>
+        <div class="boundary"><div class="boundary-label">Boundary</div><strong>Verify current rules</strong><span>Check primary documents and qualified professionals for current requirements.</span></div>
+      </div>
+    </section>
+
+    <section class="final-start" aria-label="Final start frame">
+      <div>
+        <div class="kicker">05 / Start</div>
+        <h2>Start with a map, then return to your review materials with a clearer next step.</h2>
+        <p>Open the atlas after signup or use public tools where available. SlateCamp supports review; it does not replace primary instruction or current source verification.</p>
+        <div class="cta-row" style="justify-content:center;"><a class="cta-primary" href="#">Open the atlas</a><a class="cta-secondary" href="#">Open free tools</a></div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
