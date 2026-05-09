@@ -1,7 +1,7 @@
 # Environment and Configuration
 
-**Last updated:** 2026-05-09 OpenRouter provider + developer AI integration pass.
-**Launch stance:** payment-free and learner-facing live-AI-provider-free. PayRex, LemonSqueezy, and app-runtime OpenRouter/OpenAI/Anthropic variables are not required for the current launch scope. Developer AI is separate; OpenRouter should be treated as a first-class Hermes provider/model lane through local Hermes configuration.
+**Last updated:** 2026-05-09 OpenRouter app-provider + Codex developer-AI pivot.
+**Launch stance:** payment-free and learner-facing live-AI-provider-free. PayRex, LemonSqueezy, and app-runtime OpenRouter/OpenAI/Anthropic variables are not required for the current launch scope. Developer AI is separate and Codex-first with GPT-5.5 where available; OpenRouter is reserved for app/runtime learner/user AI when intentionally enabled.
 
 No secret values are documented. Use placeholders only. Current source/search evidence found 65 distinct `process.env` names across app/scripts/perf code.
 
@@ -23,7 +23,7 @@ No secret values are documented. Use placeholders only. Current source/search ev
 | PAYREX_SECRET_KEY | No | Deferred payment provider | `src/lib/payrex/config.ts` | Required only before future paid launch. |
 | PAYREX_WEBHOOK_SECRET | No | Deferred payment provider | `src/app/api/webhooks/payrex/route.ts` | Required only before future paid launch webhooks. |
 | AI_PROVIDER | No | Deferred learner AI provider | `src/lib/ai/provider.ts` | Prefer `openrouter`; legacy `openai` and `anthropic` direct modes remain fallback options. Developer Hermes provider selection is separate. |
-| OPENROUTER_API_KEY | No for app runtime | Deferred learner AI provider | `src/lib/ai/provider.ts`, `src/lib/actions/teach-back.ts`, `scripts/normalize-distractors.ts`, `scripts/sanitize-article-refs.ts` | Required only when `AI_PROVIDER=openrouter`; put app-runtime keys in server/local env such as `.env.local`, never `NEXT_PUBLIC_*`. Developer AI uses `~/.hermes/.env` and should prefer a separate key/budget. |
+| OPENROUTER_API_KEY | No for app runtime | Deferred learner/user AI provider | `src/lib/ai/provider.ts`, `src/lib/actions/teach-back.ts`, `scripts/normalize-distractors.ts`, `scripts/sanitize-article-refs.ts` | Required only when `AI_PROVIDER=openrouter`; put app-runtime keys in server/local env such as `.env.local`, never `NEXT_PUBLIC_*`. Do not use OpenRouter as the default developer-agent key. |
 | OPENROUTER_BASE_URL | No | Deferred AI provider | `src/lib/ai/provider.ts` | Defaults to `https://openrouter.ai/api/v1`. |
 | OPENROUTER_CHAT_MODEL | No | Deferred AI provider | `src/lib/ai/provider.ts` | Defaults to `openai/gpt-4o`. |
 | OPENROUTER_EMBEDDING_MODEL | No | Deferred AI provider | `src/lib/ai/provider.ts` | Defaults to `openai/text-embedding-3-small`; keep 1536-dimensional embedding compatibility unless re-indexing. |
@@ -37,13 +37,9 @@ No secret values are documented. Use placeholders only. Current source/search ev
 | AI_STREAM_TIMEOUT_MS | No | Deferred AI provider tuning | `src/lib/ai/provider.ts` | Optional/future AI tuning. |
 | LEMONSQUEEZY_API_KEY / LEMONSQUEEZY_WEBHOOK_SECRET | No | Removed/deferred legacy provider | Not referenced by current runtime source after Plan B cleanup | Do not require unless LemonSqueezy is deliberately reintroduced. |
 
-## Developer-local AI variables
+## Developer-local AI policy
 
-These are not app/deployment requirements and must not be committed. They belong in the developer's local Hermes/tool env.
-
-| Env Var | Current Launch Required? | Category | Referenced Where | Notes |
-|---|---|---|---|---|
-| OPENROUTER_API_KEY | No for production launch; yes for OpenRouter-backed developer AI | Developer AI provider | `~/.hermes/.env`; repo scaffold `.hermes/.env.example` | Preferred Hermes/OpenRouter bench key for sessions, delegated subagents, and one-shot workers. Prefer a separate key from app runtime budgets. |
+Developer AI is Codex-first with GPT-5.5 where available. Codex/Hermes provider auth belongs to local developer tooling and is not an app/deployment requirement. App/runtime OpenRouter keys belong in server/local app env such as `.env.local`, not in the Hermes developer-agent baseline.
 
 ## Conditional/internal/test variables
 

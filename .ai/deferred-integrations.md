@@ -1,8 +1,8 @@
 # Deferred Integrations
 
-**Last updated:** 2026-05-09 OpenRouter provider + developer AI integration pass.
+**Last updated:** 2026-05-09 OpenRouter app-provider + Codex developer-AI pivot.
 
-Current learner-facing launch scope is **payment-free and live-AI-provider-free**. Deferred provider verification must not be treated as a launch blocker unless the product cutline changes. Developer AI is separate: internal Hermes/agent work should prefer OpenRouter through local developer configuration.
+Current learner-facing launch scope is **payment-free and live-AI-provider-free**. Deferred provider verification must not be treated as a launch blocker unless the product cutline changes. Developer AI is separate and Codex-first with GPT-5.5 where available; OpenRouter is reserved for app/runtime learner and user AI when intentionally enabled.
 
 | Integration | Launch Status | Current Code Status | Public Surface? | Env Vars | Verification Status | Future Work |
 |---|---|---|---|---|---|---|

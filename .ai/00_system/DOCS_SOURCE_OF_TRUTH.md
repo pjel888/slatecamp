@@ -11,7 +11,7 @@
 | Repo architecture map | `.ai/00_system/repo-map.md` |
 | Validation commands and when to run them | `.ai/00_system/VALIDATION_MATRIX.md` |
 | Environment expectations | `.ai/00_system/ENVIRONMENT_CONTRACT.md` |
-| Developer OpenRouter / internal AI provider setup | `.ai/00_system/OPENROUTER_DEVELOPER_AI_RUNBOOK.md` |
+| App OpenRouter / learner-user AI provider setup | `.ai/00_system/OPENROUTER_APP_AI_RUNBOOK.md` |
 | Codex and companion AI CLI usage | `.ai/00_system/CODEX_ENABLEMENT_GUIDE.md` |
 | Agent-readable visual identity and design tokens | `DESIGN.md` |
 | Implemented CSS/Tailwind design tokens | `src/app/globals.css` |
@@ -55,7 +55,7 @@ Update local `AGENTS.md` when:
 Update `.ai/00_system/*` when:
 - canonical routing changes
 - validation or environment contract changes
-- Developer OpenRouter/provider-boundary guidance changes
+- App OpenRouter/provider-boundary guidance changes
 - Codex enablement rules change
 - companion AI CLI guidance changes
 

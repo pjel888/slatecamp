@@ -18,4 +18,4 @@ Hermes should inspect before acting, prefer verifiable repository facts over ass
 
 This pack does not include `.env`, `auth.json`, real API keys, session history, logs, cache files, checkpoints, or provider credentials.
 
-Developer AI provider stance: prefer OpenRouter for SlateCamp Hermes sessions, one-shot Hermes workers, and Hermes delegated subagents when `OPENROUTER_API_KEY` is configured in `~/.hermes/.env`. Codex, OpenCode/OpenCode Go, Command Code, and Kimi remain separate worker lanes. Product/learner AI remains a separate deferred app-runtime boundary. See `docs/17-openrouter-developer-ai.md`.
+Developer AI provider stance: Codex-first with GPT-5.5 where available. Hermes should use `openai-codex` when acting as coordinator. OpenCode/OpenCode Go, Command Code, and Kimi remain optional worker lanes. OpenRouter belongs to app/runtime learner/user AI through `src/lib/ai/provider.ts`, not the default developer-agent path. See `docs/17-codex-developer-ai.md`.

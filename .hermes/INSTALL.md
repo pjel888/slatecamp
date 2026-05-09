@@ -31,21 +31,21 @@ maintenance/
 
 If `~/.hermes/config.yaml` already exists, merge the recommended sections instead of replacing the file. Existing model/provider settings are usually important.
 
-SlateCamp developer AI should prefer OpenRouter. Keep the real key in `~/.hermes/.env`, then merge/set:
+SlateCamp developer AI is Codex-first with GPT-5.5 where available. Merge/set:
 
 ```bash
-hermes config set model.provider openrouter
-hermes config set model.default deepseek/deepseek-chat
-hermes config set model.api_mode chat_completions
-hermes config set model.max_tokens 1000
+hermes config set model.provider openai-codex
+hermes config set model.default gpt-5.5
+hermes config set model.api_mode responses
+hermes config set model.max_tokens 4096
 hermes config set agent.reasoning_effort low
-hermes config set delegation.provider openrouter
-hermes config set delegation.model deepseek/deepseek-chat
+hermes config set delegation.provider openai-codex
+hermes config set delegation.model gpt-5.5
 ```
 
-`openai/gpt-5.5` is available on OpenRouter, but this audit found Hermes' loaded system prompt can exceed the current account's prompt-token affordability even on the low-cost default. Top up credits or raise limits before relying on Hermes/OpenRouter delegation, and only then consider making GPT-5.5 the Hermes default.
+OpenRouter belongs to app/runtime AI for learners and product users through `src/lib/ai/provider.ts`; do not force Hermes/developer agents through OpenRouter by default.
 
-See `docs/17-openrouter-developer-ai.md` and `.ai/00_system/OPENROUTER_DEVELOPER_AI_RUNBOOK.md` before changing provider behavior.
+See `docs/17-codex-developer-ai.md` and `.ai/00_system/OPENROUTER_APP_AI_RUNBOOK.md` before changing provider behavior.
 
 ## Project context install
 

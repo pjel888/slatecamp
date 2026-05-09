@@ -10,7 +10,7 @@
 
 **SlateCamp** is a Next.js 16 App Router application for Philippine LEA (Architecture board exam) preparation. It has 105+ routes, 667+ components, 76 database tables, 160+ server action files, and ~81 test files. It's a pre-launch MVP — broad functionality but not yet production-hardened.
 
-**Current launch stance:** Payment-free and learner-facing live-AI-provider-free. Payments (PayRex) and public learner AI are deferred post-launch. Internal developer AI is separate local tooling and should prefer OpenRouter when `OPENROUTER_API_KEY` is configured outside the repo.
+**Current launch stance:** Payment-free and learner-facing live-AI-provider-free. Payments (PayRex) and public learner AI are deferred post-launch. Internal developer AI is separate local tooling and is Codex-first with GPT-5.5 where available; OpenRouter is reserved for app/runtime learner/user AI when intentionally enabled.
 
 ## Tech Stack
 
@@ -25,7 +25,7 @@
 | Testing | Bun test, Playwright, Storybook |
 | Package Manager | Bun |
 | App AI provider layer | `src/lib/ai/provider.ts` with OpenRouter preferred and OpenAI/Anthropic legacy fallbacks; learner-facing live AI remains deferred |
-| Developer AI | Local Hermes/developer-agent bench; OpenRouter is a first-class provider lane for Hermes sessions, delegated subagents, and one-shot workers; Codex/OpenCode/Command Code/Kimi remain specialized CLI workers |
+| Developer AI | Codex-first with GPT-5.5 where available; Hermes should use `openai-codex` when used as coordinator; OpenCode/Command Code/Kimi remain specialized optional worker lanes |
 
 ## Important Commands
 
@@ -99,7 +99,7 @@ bun run perf:3d:gates     # 3D Lab performance gates
 7. **Route groups** — `(auth)`, `(protected)`, `(admin-public)` for layout grouping
 8. **Route-level loading/error** — `loading.tsx` and `error.tsx` per route segment
 9. **Feature flags** — Use `src/config/feature-flags.ts` for gating
-10. **Environment variables** — `NEXT_PUBLIC_*` for client-exposed; server-only for secrets; developer OpenRouter keys belong in local tool config such as `~/.hermes/.env`, not committed docs/config
+10. **Environment variables** — `NEXT_PUBLIC_*` for client-exposed; server-only for secrets; OpenRouter keys are app/runtime server secrets for learner/user AI, not default developer-agent credentials
 
 ## Testing Expectations
 
@@ -129,7 +129,7 @@ bun run perf:3d:gates     # 3D Lab performance gates
 7. **Route count varies by counting method** — Don't get hung up on exact number
 8. **Some deps may be unused** — `react-day-picker`, Radix tooltip, resizable panels tied to unused UI primitives
 9. **PayRex code is retained but disabled** — Don't accidentally enable payments
-10. **OpenRouter has two separate boundaries** — Developer AI may use OpenRouter locally as part of the Hermes agent bench/swarm, but learner-facing app AI remains deferred until a future AI launch decision
+10. **OpenRouter boundary** — OpenRouter is for app/runtime learner and user AI when intentionally enabled; developer AI is Codex-first with GPT-5.5 where available
 
 ## Current Top Priorities
 
