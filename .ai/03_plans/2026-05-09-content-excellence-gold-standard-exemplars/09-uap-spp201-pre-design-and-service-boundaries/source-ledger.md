@@ -17,7 +17,7 @@
 ## Verification status
 
 - Text extraction method: PyMuPDF via `uvx --from pymupdf`
-- SME release status: pending
+- SME release status: LLM council SME review complete for calibration on 2026-05-09; direct publication remains held pending licensed-human SME clearance and source/provenance reconciliation.
 - Structured claim ledger: `claim-ledger.json`
 
 ## Extracted evidence snippets
@@ -54,3 +54,9 @@
 
 - Claims in `exemplar-article.md` are limited to the listed raw source locators.
 - If this exemplar is converted into a live article, use the roundtrip protocol and create a normal article bundle. Do not paste this pack directly into Supabase.
+
+## SME council reconciliation notes
+
+- `uap-c4` is retained only as a scoped Article 7.08 statement from UAP Document 401-402 on suspended or abandoned work. It must not be reused as a general UAP fee-allocation rule without separate source support.
+- The Article 7.08 text on PDF p.8 states the 85% Contract Documents Phase completion and the remaining 15% split into 10% Article 1723 liability and 5% construction-phase service verbatim.
+- Direct publication remains held pending licensed-human SME clearance and normal roundtrip conversion.

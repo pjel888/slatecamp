@@ -11,7 +11,7 @@
 ## Verification status
 
 - Text extraction method: PyMuPDF via `uvx --from pymupdf`
-- SME release status: pending
+- SME release status: LLM council SME review complete for calibration on 2026-05-09; direct publication remains held pending licensed-human SME clearance and source/provenance reconciliation.
 - Structured claim ledger: `claim-ledger.json`
 
 ## Extracted evidence snippets

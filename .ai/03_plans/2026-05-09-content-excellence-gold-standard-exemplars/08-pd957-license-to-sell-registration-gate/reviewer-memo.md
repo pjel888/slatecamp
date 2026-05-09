@@ -16,6 +16,14 @@ This topic was selected from the local `vitruvius-connection/001_Raw-Source-Laye
 
 ## Remaining risks
 
-- SME review is pending.
+- LLM council SME review is complete for calibration; licensed-human SME review is still required before learner-facing release.
 - Official/source-pack reconciliation may still be required before public release.
 - This is not a Supabase-ready article bundle and must use the roundtrip protocol before publication.
+
+
+## SME council review update
+
+- Status: `LLM_COUNCIL_COMPLETE_FOR_CALIBRATION` on 2026-05-09.
+- Council files: `council-reviews/2026-05-09-sme-risk-review/`.
+- Applied decision: LLM council accepted all claims for calibration; direct-publication hold remains until the exact IRR edition and live source/provenance gates are cleared.
+- Direct-publication boundary: `HOLD_FOR_DIRECT_PUBLICATION`; this is not licensed-human SME release approval and not a Supabase push bundle.

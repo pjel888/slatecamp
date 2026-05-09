@@ -38,6 +38,14 @@ If this exemplar becomes a live SlateCamp article, create or update an article b
 
 ## Remaining risks
 
-- SME review is still required before learner-facing release.
+- LLM council SME review is complete for calibration; licensed-human SME review is still required before learner-facing release.
 - Local PDF extraction can contain OCR noise. Use the page locator and PDF visual check during final SME review.
 - This pack does not update Supabase, linked live article metadata, or existing question rows.
+
+
+## SME council review update
+
+- Status: `LLM_COUNCIL_COMPLETE_FOR_CALIBRATION` on 2026-05-09.
+- Council files: `council-reviews/2026-05-09-sme-risk-review/`.
+- Applied decision: OCR/text extraction gaps for Section 207.8 and Section 311.4 were resolved by PyMuPDF extraction plus rendered-page visual checks. Claims are promoted to `SUPPORTED` / `FOUND_VERBATIM` for calibration; edition/provenance remains a direct-publication blocker.
+- Direct-publication boundary: `HOLD_FOR_DIRECT_PUBLICATION`; this is not licensed-human SME release approval and not a Supabase push bundle.

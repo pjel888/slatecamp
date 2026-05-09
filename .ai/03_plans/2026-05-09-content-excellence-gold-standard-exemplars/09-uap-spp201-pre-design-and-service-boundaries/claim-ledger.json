@@ -88,10 +88,10 @@
     },
     {
       "claim_id": "uap-c4",
-      "claim_text": "Contract Documents Phase equals 85% of the work, with remaining 15% split between Article 1723 liability and construction-phase service.",
+      "claim_text": "Under UAP Document 401-402 Article 7.08 on suspended or abandoned work, completion of the Contract Documents Phase is treated as 85% of the architect’s work in that agreement; the remaining 15% is stated as 10% for Article 1723 liability and 5% for construction-phase service.",
       "claim_class": "LEGAL_SCOPE",
       "article_location": "Compensation trap",
-      "locator": "UAP Document 401-402 / PDF p.8",
+      "locator": "UAP Document 401-402 / Article 7.08 / PDF p.8",
       "extraction_status": "FOUND_VERBATIM",
       "visual_verification": {
         "performed": false,
@@ -101,13 +101,21 @@
       "conflict_class": "two-source-pack; no conflict detected by script",
       "status": "SUPPORTED",
       "linked_question_ids": [],
-      "notes": ""
+      "notes": "",
+      "sme_notes": "Scoped to Document 401-402 Article 7.08 so it is not misread as a universal UAP fee-allocation rule. Raw source states the 85/15 split verbatim."
     }
   ],
   "sme_review": {
-    "status": "pending",
-    "reviewer_id": null,
-    "date": null,
-    "notes": "Calibration only; not for direct learner-facing publication."
+    "status": "llm_council_complete_for_calibration",
+    "reviewer_id": "llm_council_claude_opencode_commandcode",
+    "date": "2026-05-09T07:39:33Z",
+    "notes": "LLM council SME review complete for calibration artifacts. Direct publication remains held pending licensed-human SME clearance, source/provenance reconciliation, and roundtrip conversion.",
+    "council_review_files": [
+      "council-reviews/2026-05-09-sme-risk-review/01-claude-sme-review.md",
+      "council-reviews/2026-05-09-sme-risk-review/02-opencode-sme-review.md",
+      "council-reviews/2026-05-09-sme-risk-review/03-commandcode-sme-review.md",
+      "council-reviews/2026-05-09-sme-risk-review/04-sme-council-synthesis.md"
+    ],
+    "publication_boundary": "HOLD_FOR_DIRECT_PUBLICATION; LLM SME council is calibration review, not learner-facing release approval."
   }
 }

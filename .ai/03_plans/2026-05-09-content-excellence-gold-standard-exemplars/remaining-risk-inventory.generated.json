@@ -1,0 +1,124 @@
+[
+  {
+    "pack": "01-bp344-accessible-ramp-geometry",
+    "status": "PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION",
+    "source_status": "LOCAL_RAW_NEEDS_RECONCILIATION",
+    "sme_review_status": "llm_council_complete_for_calibration",
+    "claim_count": 5,
+    "unresolved_claim_risks": [],
+    "remaining_release_holds": [
+      "HOLD_FOR_DIRECT_PUBLICATION"
+    ],
+    "conflict_or_provenance_classes": [
+      "local_webpage_pdf_vs_official_download_pdf_hash_mismatch"
+    ]
+  },
+  {
+    "pack": "02-ra9266-foreign-architect-temporary-permit",
+    "status": "PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION",
+    "source_status": "LOCAL_RAW_NEEDS_RECONCILIATION",
+    "sme_review_status": "llm_council_complete_for_calibration",
+    "claim_count": 2,
+    "unresolved_claim_risks": [],
+    "remaining_release_holds": [
+      "HOLD_FOR_DIRECT_PUBLICATION"
+    ],
+    "conflict_or_provenance_classes": [
+      "authority_host_unverified"
+    ]
+  },
+  {
+    "pack": "03-ra9514-means-of-egress-width-and-count",
+    "status": "PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION",
+    "source_status": "OFFICIAL_BLOCKED_LOCAL_RAW_USED",
+    "sme_review_status": "llm_council_complete_for_calibration",
+    "claim_count": 4,
+    "unresolved_claim_risks": [],
+    "remaining_release_holds": [
+      "HOLD_FOR_DIRECT_PUBLICATION"
+    ],
+    "conflict_or_provenance_classes": [
+      "official_source_blocked; prior source-pack integrity issue requires quarantine/rebuild before publication"
+    ]
+  },
+  {
+    "pack": "04-npcp-fixture-unit-and-venting",
+    "status": "PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION",
+    "source_status": "LOCAL_RAW_ONLY_NEEDS_EDITION_CHECK",
+    "sme_review_status": "llm_council_complete_for_calibration",
+    "claim_count": 3,
+    "unresolved_claim_risks": [],
+    "remaining_release_holds": [
+      "HOLD_FOR_DIRECT_PUBLICATION"
+    ],
+    "conflict_or_provenance_classes": [
+      "edition/provenance not yet reconciled"
+    ]
+  },
+  {
+    "pack": "05-vitruvius-principles-and-departments",
+    "status": "PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION",
+    "source_status": "LOCAL_RAW_ONLY_THEORY_TEXT",
+    "sme_review_status": "llm_council_complete_for_calibration",
+    "claim_count": 3,
+    "unresolved_claim_risks": [],
+    "remaining_release_holds": [
+      "HOLD_FOR_DIRECT_PUBLICATION"
+    ],
+    "conflict_or_provenance_classes": [
+      "translation/edition must be declared when used for theory claims"
+    ]
+  },
+  {
+    "pack": "06-pd1096-tgfa-ambf-location-controls",
+    "status": "PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION",
+    "source_status": "LOCAL_RAW_NEEDS_RECONCILIATION",
+    "sme_review_status": "llm_council_complete_for_calibration",
+    "claim_count": 4,
+    "unresolved_claim_risks": [],
+    "remaining_release_holds": [
+      "HOLD_FOR_DIRECT_PUBLICATION"
+    ],
+    "conflict_or_provenance_classes": [
+      "source_pack_conflict_status_unknown_for_this_new_pack"
+    ]
+  },
+  {
+    "pack": "07-bp220-parks-playgrounds-road-pavement",
+    "status": "PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION",
+    "source_status": "LOCAL_RAW_ONLY",
+    "sme_review_status": "llm_council_complete_for_calibration",
+    "claim_count": 4,
+    "unresolved_claim_risks": [],
+    "remaining_release_holds": [
+      "HOLD_FOR_DIRECT_PUBLICATION"
+    ],
+    "conflict_or_provenance_classes": []
+  },
+  {
+    "pack": "08-pd957-license-to-sell-registration-gate",
+    "status": "PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION",
+    "source_status": "LOCAL_RAW_ONLY",
+    "sme_review_status": "llm_council_complete_for_calibration",
+    "claim_count": 3,
+    "unresolved_claim_risks": [],
+    "remaining_release_holds": [
+      "HOLD_FOR_DIRECT_PUBLICATION"
+    ],
+    "conflict_or_provenance_classes": []
+  },
+  {
+    "pack": "09-uap-spp201-pre-design-and-service-boundaries",
+    "status": "PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION",
+    "source_status": "LOCAL_RAW_ONLY",
+    "sme_review_status": "llm_council_complete_for_calibration",
+    "claim_count": 4,
+    "unresolved_claim_risks": [],
+    "remaining_release_holds": [
+      "HOLD_FOR_DIRECT_PUBLICATION"
+    ],
+    "conflict_or_provenance_classes": [
+      "two-source-pack; no conflict detected by script"
+    ]
+  }
+]

@@ -30,9 +30,9 @@ Source: UAP Document 401-402, Article 5/6 excerpt, PDF p.1, extracted from `vitr
 
 ## Compensation trap
 
-The same UAP Document 401-402 excerpt states that if the Architect has prepared all plans, specifications, and other project design documents, the Contract Documents Phase is equivalent to 85% of the work; the remaining 15% is broken into 10% liability under Civil Code Article 1723 and 5% construction-phase service.
+In UAP Document 401-402 Article 7.08 on suspended or abandoned work, if the Architect has prepared all plans, specifications, and other project design documents, the Contract Documents Phase is treated as equivalent to 85% of the architect’s work in that agreement. The same Article 7.08 excerpt states that the remaining 15% is broken into 10% for the architect’s liability under Civil Code Article 1723 and 5% for construction-phase service.
 
-Source: UAP Document 401-402, Contract Documents Phase / Article 8 context, PDF p.8.
+Source: UAP Document 401-402, Article 7.08 / Article 8 context, PDF p.8. Scope note: this is the Article 7.08 suspended-or-abandoned-work allocation in the proforma agreement, not a standalone universal fee schedule.
 
 ## Board shortcut
 

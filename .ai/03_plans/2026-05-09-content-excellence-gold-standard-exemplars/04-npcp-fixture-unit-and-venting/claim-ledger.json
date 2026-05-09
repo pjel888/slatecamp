@@ -18,41 +18,47 @@
   "claims": [
     {
       "claim_id": "npcp-c1",
-      "claim_text": "One fixture unit is equivalent to 28.3 liters per minute or 1 cubic foot per minute.",
+      "claim_text": "One fixture unit is equivalent to a rate of flow at 28.3 liters per minute (1 cu. ft./minute).",
       "claim_class": "TECHNICAL_STANDARD",
       "article_location": "The rule that decides the answer",
-      "locator": "Definitions / Fixture Unit / PDF p.24",
-      "extraction_status": "NOT_FOUND_BY_TEXT",
+      "locator": "Section 207.8 / Definitions / Fixture Unit / PDF p.24",
+      "extraction_status": "FOUND_VERBATIM",
       "visual_verification": {
-        "performed": false,
-        "by": null,
-        "date": null
+        "performed": true,
+        "by": "hermes_pymupdf_rendered_page_visual_check_and_llm_council",
+        "date": "2026-05-09T07:39:33Z",
+        "evidence_file": "ocr-visual-evidence.generated/ocr-text-extraction-resolution.generated.md"
       },
       "conflict_class": "edition/provenance not yet reconciled",
-      "status": "NEEDS_REVIEW",
+      "status": "SUPPORTED",
       "linked_question_ids": [
         "npcp-fixture-q1"
       ],
-      "notes": "Manual/SME review required before publication."
+      "notes": "OCR/text-extraction issue resolved for calibration; manual licensed-human SME still required before publication.",
+      "sme_notes": "LLM council approved OCR promotion after PyMuPDF extraction and rendered-page visual check; wording changed from “or 1 cubic foot per minute” to source parenthetical equivalence.",
+      "ocr_resolution_evidence": "ocr-visual-evidence.generated/ocr-text-extraction-resolution.generated.md#npcp-c1--04-npcp-fixture-unit-and-venting"
     },
     {
       "claim_id": "npcp-c2",
-      "claim_text": "Section 311.4 prohibits using a vent pipe as a soil or waste pipe, or a soil/waste pipe as a vent, except as provided.",
+      "claim_text": "Section 311.4 prohibits using a vent pipe as a soil or waste pipe, or a soil/waste pipe as a vent, except as provided in Sections 812, 813, and 814; it also prohibits single drainage and venting systems with unvented branch lines.",
       "claim_class": "LEGAL_PROCESS",
       "article_location": "Venting trap",
       "locator": "Section 311.4 / PDF p.44",
-      "extraction_status": "NOT_FOUND_BY_TEXT",
+      "extraction_status": "FOUND_VERBATIM",
       "visual_verification": {
-        "performed": false,
-        "by": null,
-        "date": null
+        "performed": true,
+        "by": "hermes_pymupdf_rendered_page_visual_check_and_llm_council",
+        "date": "2026-05-09T07:39:33Z",
+        "evidence_file": "ocr-visual-evidence.generated/ocr-text-extraction-resolution.generated.md"
       },
       "conflict_class": "edition/provenance not yet reconciled",
-      "status": "NEEDS_REVIEW",
+      "status": "SUPPORTED",
       "linked_question_ids": [
         "npcp-vent-q2"
       ],
-      "notes": "Manual/SME review required before publication."
+      "notes": "OCR/text-extraction issue resolved for calibration; manual licensed-human SME still required before publication.",
+      "sme_notes": "LLM council approved OCR promotion after PyMuPDF extraction and rendered-page visual check; exceptions and second sentence added for exam precision.",
+      "ocr_resolution_evidence": "ocr-visual-evidence.generated/ocr-text-extraction-resolution.generated.md#npcp-c2--04-npcp-fixture-unit-and-venting"
     },
     {
       "claim_id": "npcp-c3",
@@ -75,9 +81,16 @@
     }
   ],
   "sme_review": {
-    "status": "pending",
-    "reviewer_id": null,
-    "date": null,
-    "notes": "Calibration only; not for direct learner-facing publication."
+    "status": "llm_council_complete_for_calibration",
+    "reviewer_id": "llm_council_claude_opencode_commandcode",
+    "date": "2026-05-09T07:39:33Z",
+    "notes": "LLM council SME review complete for calibration artifacts. Direct publication remains held pending licensed-human SME clearance, source/provenance reconciliation, and roundtrip conversion.",
+    "council_review_files": [
+      "council-reviews/2026-05-09-sme-risk-review/01-claude-sme-review.md",
+      "council-reviews/2026-05-09-sme-risk-review/02-opencode-sme-review.md",
+      "council-reviews/2026-05-09-sme-risk-review/03-commandcode-sme-review.md",
+      "council-reviews/2026-05-09-sme-risk-review/04-sme-council-synthesis.md"
+    ],
+    "publication_boundary": "HOLD_FOR_DIRECT_PUBLICATION; LLM SME council is calibration review, not learner-facing release approval."
   }
 }

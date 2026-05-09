@@ -14,7 +14,7 @@
 - Local PDF present: yes
 - Text extraction method: PyMuPDF via `uvx --from pymupdf`
 - Source tier: primary/local source layer
-- SME release status: pending
+- SME release status: LLM council SME review complete for calibration on 2026-05-09; direct publication remains held pending licensed-human SME clearance and source/provenance reconciliation.
 
 ## Extracted evidence snippets
 

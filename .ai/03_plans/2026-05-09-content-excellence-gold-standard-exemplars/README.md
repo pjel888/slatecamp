@@ -10,7 +10,7 @@ This pack calibrates future SlateCamp article and question production against th
 
 ## Source rule
 
-Primary evidence comes from `vitruvius-connection/001_Raw-Source-Layer/` PDFs. Use `vitruvius-connection/002_Raw-Conversion-Layer/` for search only and `003_Canonical-Knowledge-Layer/` for discovery only. The generated source/evidence files record PDF paths, SHA256 hashes, page counts, page previews, query snippets, and claim-level extraction status.
+Primary evidence comes from `vitruvius-connection/001_Raw-Source-Layer/` PDFs. Use `vitruvius-connection/002_Raw-Conversion-Layer/` for search only and `003_Canonical-Knowledge-Layer/` for discovery only. The generated source/evidence files record PDF paths, SHA256 hashes, page counts, page previews, query snippets, claim-level extraction status, and rendered-page visual evidence for OCR-sensitive claims.
 
 See also: `.ai/00_system/vitruvius-source-reference.md`.
 
@@ -40,4 +40,12 @@ Each exemplar directory contains:
 
 Status: `PASS_FOR_CALIBRATION`, `HOLD_FOR_DIRECT_PUBLICATION`.
 
-Reason: The artifacts are source-verified against local PDFs, but they are not normalized article bundles, not composed through `content-audit:compose`, and not SME-signed for learner-facing release.
+Reason: The artifacts are source-verified against local PDFs and LLM-council reviewed for calibration, but they are not normalized article bundles, not composed through `content-audit:compose`, and not licensed-human-SME-signed for learner-facing release.
+
+
+## SME risk-review closeout
+
+- Completed: 2026-05-09.
+- Council folder: `council-reviews/2026-05-09-sme-risk-review/`.
+- OCR evidence folder: `ocr-visual-evidence.generated/`.
+- Result: all nine packs are accepted for calibration after fixes; direct publication remains held.

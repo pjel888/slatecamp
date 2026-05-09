@@ -6,9 +6,9 @@ Use the National Plumbing Code definition of fixture unit and the Code rule on v
 
 ## Fixture unit is a load measure
 
-The Revised National Plumbing Code defines fixture unit as an arbitrary quantity used to express the load-producing effects or water requirements of different plumbing fixtures. One fixture unit is equivalent to a rate of flow of 28.3 liters per minute, which is 1 cubic foot per minute.
+The Revised National Plumbing Code defines fixture unit as an arbitrary quantity used to express the load-producing effects or water requirements of different plumbing fixtures. One fixture unit is equivalent to a rate of flow at 28.3 liters per minute (1 cu. ft./minute).
 
-Source: Revised National Plumbing Code of the Philippines, Definitions, Fixture Unit, PDF p.24, extracted from `vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Revised National Plumbing Code of the Philippines.pdf`.
+Source: Revised National Plumbing Code of the Philippines, Section 207.8, Fixture Unit, PDF p.24, extracted from `vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Revised National Plumbing Code of the Philippines.pdf`.
 
 ## Venting is not spare drainage
 
@@ -30,5 +30,5 @@ If a utilities question treats fixture unit as a physical fixture count, reject 
 ## Claim control
 
 - Claim-ledger file: `claim-ledger.json`.
-- Two source phrases have OCR/text-extraction gaps. They are marked `NEEDS_REVIEW` in the structured ledger and require visual PDF confirmation before publication.
+- Prior OCR/text-extraction gaps for Section 207.8 and Section 311.4 have been resolved by PyMuPDF extraction and rendered-page visual checks recorded in `ocr-visual-evidence.generated/`.
 - Do not use non-plumbing laws to explain plumbing distractors.

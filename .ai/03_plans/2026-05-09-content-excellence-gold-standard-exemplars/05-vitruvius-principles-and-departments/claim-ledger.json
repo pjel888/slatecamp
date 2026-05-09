@@ -21,26 +21,29 @@
       "claim_text": "Architecture depends on Order, Arrangement, Eurythmy, Symmetry, Propriety, and Economy.",
       "claim_class": "THEORY_CONCEPT",
       "article_location": "Principles list",
-      "locator": "Book I / Chapter II / page locator in source-ledger.md",
-      "extraction_status": "NOT_FOUND_BY_TEXT",
+      "locator": "Vitruvius, The Ten Books on Architecture, trans. Morris Hicky Morgan, Book I, Chapter II, PDF pp.33-36",
+      "extraction_status": "FOUND_VERBATIM",
       "visual_verification": {
-        "performed": false,
-        "by": null,
-        "date": null
+        "performed": true,
+        "by": "hermes_pymupdf_rendered_page_visual_check_and_llm_council",
+        "date": "2026-05-09T07:39:33Z",
+        "evidence_file": "ocr-visual-evidence.generated/ocr-text-extraction-resolution.generated.md"
       },
       "conflict_class": "translation/edition must be declared when used for theory claims",
-      "status": "NEEDS_REVIEW",
+      "status": "SUPPORTED",
       "linked_question_ids": [
-        "vitruvius-q1"
+        "vitruvius-principles-q1"
       ],
-      "notes": "Manual/SME review required before publication."
+      "notes": "OCR/text-extraction issue resolved for calibration; manual licensed-human SME still required before publication.",
+      "sme_notes": "LLM council approved OCR promotion after PyMuPDF extraction and rendered-page visual check; citation now declares Morgan translation/edition boundary.",
+      "ocr_resolution_evidence": "ocr-visual-evidence.generated/ocr-text-extraction-resolution.generated.md#vitruvius-c1--05-vitruvius-principles-and-departments"
     },
     {
       "claim_id": "vitruvius-c2",
       "claim_text": "Architecture consists of three departments: building, dialling, and mechanics.",
       "claim_class": "THEORY_CONCEPT",
       "article_location": "Departments list",
-      "locator": "Book I / Chapter III / source-ledger page locator",
+      "locator": "Vitruvius, The Ten Books on Architecture, trans. Morris Hicky Morgan, Book I, Chapter III, PDF p.36",
       "extraction_status": "FOUND_VERBATIM",
       "visual_verification": {
         "performed": false,
@@ -50,10 +53,11 @@
       "conflict_class": "translation/edition must be declared when used for theory claims",
       "status": "SUPPORTED",
       "linked_question_ids": [
-        "vitruvius-q2",
-        "vitruvius-q3"
+        "vitruvius-departments-q2",
+        "vitruvius-economy-q3"
       ],
-      "notes": ""
+      "notes": "",
+      "sme_notes": "Translation/edition declared for theory citation consistency."
     },
     {
       "claim_id": "vitruvius-c3",
@@ -74,9 +78,16 @@
     }
   ],
   "sme_review": {
-    "status": "pending",
-    "reviewer_id": null,
-    "date": null,
-    "notes": "Calibration only; not for direct learner-facing publication."
+    "status": "llm_council_complete_for_calibration",
+    "reviewer_id": "llm_council_claude_opencode_commandcode",
+    "date": "2026-05-09T07:39:33Z",
+    "notes": "LLM council SME review complete for calibration artifacts. Direct publication remains held pending licensed-human SME clearance, source/provenance reconciliation, and roundtrip conversion.",
+    "council_review_files": [
+      "council-reviews/2026-05-09-sme-risk-review/01-claude-sme-review.md",
+      "council-reviews/2026-05-09-sme-risk-review/02-opencode-sme-review.md",
+      "council-reviews/2026-05-09-sme-risk-review/03-commandcode-sme-review.md",
+      "council-reviews/2026-05-09-sme-risk-review/04-sme-council-synthesis.md"
+    ],
+    "publication_boundary": "HOLD_FOR_DIRECT_PUBLICATION; LLM SME council is calibration review, not learner-facing release approval."
   }
 }

@@ -14,7 +14,7 @@
 - Local PDF present: yes
 - Text extraction method: PyMuPDF via `uvx --from pymupdf`
 - Source tier: primary/local source layer
-- SME release status: pending
+- SME release status: LLM council SME review complete for calibration on 2026-05-09; direct publication remains held pending licensed-human SME clearance and source/provenance reconciliation.
 
 ## Extracted evidence snippets
 
@@ -41,3 +41,10 @@
 
 - Machine-checkable file: `claim-ledger.json`
 - Council-applied requirement: every factual claim must carry `claim_class`, `locator`, `extraction_status`, `conflict_class`, linked question IDs, and SME status.
+
+## SME council reconciliation notes
+
+- Raw 2024 BP 344 PDF p.2 confirms the exemplar wording: minimum clear width 1200 mm; gradient not steeper than 1:20; steeper gradients may be allowed in special cases depending on length; Table A.1.1 lists 1:20 with 15 m landing interval and 1:15 with 10.50 m maximum length, 700 mm maximum rise, and 10 m landing interval.
+- Raw PDF p.7 confirms handrails are required for accessible ramps for changes in grade higher than 170 mm and installed at 900 mm and 700 mm above ramps/stairs.
+- A council concern about a 1:12 accessible-ramp maximum was checked against the 2024 raw PDF and not adopted for this exemplar; the only `1:12` occurrence found in the 2024 PDF concerns a swimming-pool transfer-wall clear transfer space, not the accessible-ramp table.
+- Direct publication remains held until the local webpage PDF vs official download hash mismatch is reconciled.
