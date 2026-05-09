@@ -527,4 +527,3 @@ Before future landing copy is accepted, a first-time visitor must be able to ans
 3. It contains wiki notes, code explainers, quizzes, 3D visuals, and tools.
 4. It is used beside existing school/review materials, not instead of them.
 5. It gives comfort by making scattered architecture review more organized and actionable.
-
