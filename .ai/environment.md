@@ -1,7 +1,7 @@
 # Environment and Configuration
 
 **Last updated:** 2026-05-09 OpenRouter provider + developer AI integration pass.
-**Launch stance:** payment-free and learner-facing live-AI-provider-free. PayRex, LemonSqueezy, and app-runtime OpenRouter/OpenAI/Anthropic variables are not required for the current launch scope. Developer AI is separate and should prefer OpenRouter through local Hermes configuration.
+**Launch stance:** payment-free and learner-facing live-AI-provider-free. PayRex, LemonSqueezy, and app-runtime OpenRouter/OpenAI/Anthropic variables are not required for the current launch scope. Developer AI is separate; OpenRouter should be treated as a first-class Hermes provider/model lane through local Hermes configuration.
 
 No secret values are documented. Use placeholders only. Current source/search evidence found 65 distinct `process.env` names across app/scripts/perf code.
 
@@ -43,7 +43,7 @@ These are not app/deployment requirements and must not be committed. They belong
 
 | Env Var | Current Launch Required? | Category | Referenced Where | Notes |
 |---|---|---|---|---|
-| OPENROUTER_API_KEY | No for production launch; yes for OpenRouter-backed developer AI | Developer AI provider | `~/.hermes/.env`; repo scaffold `.hermes/.env.example` | Preferred developer-agent key for Hermes/OpenRouter. Prefer a separate key from app runtime budgets. |
+| OPENROUTER_API_KEY | No for production launch; yes for OpenRouter-backed developer AI | Developer AI provider | `~/.hermes/.env`; repo scaffold `.hermes/.env.example` | Preferred Hermes/OpenRouter bench key for sessions, delegated subagents, and one-shot workers. Prefer a separate key from app runtime budgets. |
 
 ## Conditional/internal/test variables
 

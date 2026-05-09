@@ -1,6 +1,6 @@
 # OpenRouter Developer AI
 
-SlateCamp developer AI should prefer OpenRouter when `OPENROUTER_API_KEY` is available.
+SlateCamp developer AI should prefer OpenRouter when `OPENROUTER_API_KEY` is available. Treat it as a first-class provider/model lane in the Hermes agent bench — the way Codex, OpenCode, Command Code, and Kimi are first-class worker lanes — while remembering that OpenRouter itself is a provider router, not a separate shell CLI.
 
 Canonical runbook: `.ai/00_system/OPENROUTER_DEVELOPER_AI_RUNBOOK.md`.
 
@@ -38,6 +38,28 @@ Smoke test:
 ```bash
 hermes -z "Health check only. Reply exactly: OPENROUTER_HERMES_DEFAULT_PATH_OK" -t "" --ignore-rules
 ```
+
+## Delegation role
+
+Use OpenRouter for Hermes-native delegation and one-shot workers. Default to read-only prompts unless a task intentionally authorizes edits:
+
+```bash
+hermes -z "Read-only review: inspect the diff and report blockers only. Do not modify files." \
+  --provider openrouter \
+  -m deepseek/deepseek-chat \
+  -t terminal,file \
+  --ignore-rules
+```
+
+Use the full CLI bench deliberately:
+
+| Lane | Use for |
+|---|---|
+| Codex | Primary implementation builder. |
+| OpenCode / OpenCode Go | Flexible coding/review worker and fallback. |
+| Command Code | Taste-aware planning/review/implementation. |
+| Kimi | Long-context synthesis and alternate review. |
+| Hermes + OpenRouter | Provider-unified planning, review, summaries, one-shot workers, and delegated Hermes subagents. |
 
 ## Boundary
 

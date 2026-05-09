@@ -6,13 +6,15 @@
 
 ## Decision
 
-SlateCamp should use OpenRouter as the preferred provider for developer AI when an `OPENROUTER_API_KEY` is available.
+SlateCamp should use OpenRouter as a first-class member of the Hermes developer-AI arsenal when an `OPENROUTER_API_KEY` is available.
+
+Operationally, OpenRouter is not another product feature and not just an app provider. It is the provider/model bench behind Hermes sessions, Hermes delegation, one-shot developer agents, and swarm-style review/planning lanes — alongside Codex, OpenCode, Command Code, Kimi, and direct provider CLIs.
 
 This is separate from the product runtime provider boundary:
 
 | Boundary | Current stance | Key location | Notes |
 |---|---|---|---|
-| Developer AI | Active/preferred through OpenRouter | `~/.hermes/.env` for Hermes; tool-specific local env only when needed | Used for agent planning, review, summaries, and local developer automation. |
+| Developer AI | Active/preferred through OpenRouter | `~/.hermes/.env` for Hermes; tool-specific local env only when needed | Used for Hermes main sessions, Hermes delegated subagents, one-shot developer agents, planning, review, summaries, and local developer automation. |
 | Learner/public AI | Deferred post-launch | App server env such as `.env.local` or deployment env | `/api/ai/*`, teach-back, question generation, embeddings, and maintenance AI scripts use `src/lib/ai/provider.ts` but should not be public launch blockers. |
 
 Do not use `NEXT_PUBLIC_*` for OpenRouter credentials in either boundary.
@@ -73,12 +75,20 @@ hermes config set model.max_tokens 4096
 
 Model examples verified from the OpenRouter catalog during this pass included `anthropic/claude-sonnet-4.5`, `anthropic/claude-sonnet-4`, `openai/gpt-5.5`, `openai/gpt-5.1`, `openai/gpt-5`, `deepseek/deepseek-chat`, and `openai/gpt-4o`.
 
-## Companion tool policy
+## Developer AI bench / delegation policy
 
-- Hermes: preferred developer AI router. Use OpenRouter for main and delegated Hermes calls when the key is configured.
-- Codex CLI: may still require OpenAI/Codex OAuth or its own supported provider configuration. Do not assume standalone Codex uses OpenRouter unless a working Codex config proves it.
-- Kimi CLI: remains a direct Kimi/Moonshot companion unless configured otherwise by its own supported config. To use Kimi through OpenRouter, prefer a Hermes/OpenRouter model such as `moonshotai/kimi-k2.6`.
-- DeepSeek/direct provider keys: fallback only. Keep them available if useful, but do not document them as the preferred SlateCamp developer AI path.
+Treat OpenRouter as a provider-backed delegate lane in the same Hermes arsenal as the other AI CLIs. Use the smallest useful bench member for the job:
+
+| Bench member | Role | How OpenRouter fits |
+|---|---|---|
+| Hermes + OpenRouter | Default provider-unified developer AI lane for planning, review, summaries, local automation, and delegated Hermes subagents. | Use `model.provider=openrouter` and `delegation.provider=openrouter`. Current verified default is `deepseek/deepseek-chat`; GPT-5.5 is an upgrade after credits/limits allow it. |
+| Codex CLI | Primary production-code builder when implementation is required. | Do not assume standalone Codex routes through OpenRouter unless the installed Codex config proves it. Hermes/OpenRouter can still plan or review Codex work. |
+| OpenCode / OpenCode Go | Flexible coding/review bench and cheap fallback lane. | Keep OpenCode on its own auth/model catalog; use Hermes/OpenRouter for provider-unified second opinions or when OpenCode provider prefixes/balance fail. |
+| Command Code | Taste-aware coding, planning, review, and project-style work. | Use as a separate CLI worker; use Hermes/OpenRouter for independent review or lower-cost model-bench routing. |
+| Kimi direct | Long-context synthesis and alternate code/review perspective. | Direct Kimi remains valid; to route Kimi-family models through OpenRouter, use Hermes/OpenRouter model slugs when available. |
+| DeepSeek via OpenRouter | Current low-cost Hermes default for this account. | Use for routine reasoning/review/delegation until GPT-5.5 credits/limits are raised. |
+
+OpenRouter is therefore a first-class delegate path, but it is a provider/router, not a separate shell CLI. For spawned worker processes, run Hermes with `--provider openrouter -m <openrouter/model-slug>` or rely on the configured Hermes delegation defaults.
 
 ## Privacy and source-control rules
 

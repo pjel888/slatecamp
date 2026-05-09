@@ -25,7 +25,7 @@
 | Testing | Bun test, Playwright, Storybook |
 | Package Manager | Bun |
 | App AI provider layer | `src/lib/ai/provider.ts` with OpenRouter preferred and OpenAI/Anthropic legacy fallbacks; learner-facing live AI remains deferred |
-| Developer AI | Local Hermes/developer-agent config; prefer OpenRouter outside repo env |
+| Developer AI | Local Hermes/developer-agent bench; OpenRouter is a first-class provider lane for Hermes sessions, delegated subagents, and one-shot workers; Codex/OpenCode/Command Code/Kimi remain specialized CLI workers |
 
 ## Important Commands
 
@@ -129,7 +129,7 @@ bun run perf:3d:gates     # 3D Lab performance gates
 7. **Route count varies by counting method** — Don't get hung up on exact number
 8. **Some deps may be unused** — `react-day-picker`, Radix tooltip, resizable panels tied to unused UI primitives
 9. **PayRex code is retained but disabled** — Don't accidentally enable payments
-10. **OpenRouter has two separate boundaries** — Developer AI may use OpenRouter locally, but learner-facing app AI remains deferred until a future AI launch decision
+10. **OpenRouter has two separate boundaries** — Developer AI may use OpenRouter locally as part of the Hermes agent bench/swarm, but learner-facing app AI remains deferred until a future AI launch decision
 
 ## Current Top Priorities
 

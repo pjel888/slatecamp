@@ -85,8 +85,8 @@ This guide is the fastest way for future Codex sessions to orient in SlateCamp a
 
 ### Developer AI provider work
 
-- SlateCamp developer AI should prefer OpenRouter when `OPENROUTER_API_KEY` is configured locally. This applies to Hermes sessions, Hermes delegation, and other provider-routed developer automation.
-- Canonical developer OpenRouter runbook: `.ai/00_system/OPENROUTER_DEVELOPER_AI_RUNBOOK.md`.
+- SlateCamp developer AI should treat OpenRouter as part of the Hermes AI bench/arsenal when `OPENROUTER_API_KEY` is configured locally. This applies to Hermes sessions, Hermes delegation, one-shot Hermes workers, and other provider-routed developer automation.
+- Canonical developer OpenRouter runbook and bench policy: `.ai/00_system/OPENROUTER_DEVELOPER_AI_RUNBOOK.md`.
 - Keep the app/runtime AI boundary separate: learner-facing `/api/ai/*`, teach-back, embeddings, and generation helpers use `src/lib/ai/provider.ts` and remain deferred for the current public launch.
 - Hermes setup belongs outside the repo:
   - active config: `hermes config path`
@@ -97,8 +97,9 @@ This guide is the fastest way for future Codex sessions to orient in SlateCamp a
   - conservative output cap for the current account: `hermes config set model.max_tokens 1000`
   - delegation provider: `hermes config set delegation.provider openrouter`
   - delegation model for the current account: `hermes config set delegation.model deepseek/deepseek-chat`
+- Use the AI bench deliberately: Codex remains the main builder; OpenCode/OpenCode Go and Command Code are external CLI workers; Kimi remains a long-context companion; Hermes/OpenRouter is the provider-unified delegate lane for model-bench planning/review/automation.
 - Standalone Codex CLI provider routing must be verified against the installed Codex version before claiming OpenRouter support. If unsupported or unverified, use Hermes/OpenRouter for provider-unified developer AI and keep Codex on its own working auth path.
-- Kimi Code CLI remains available as a direct companion CLI and should be used opportunistically when it improves quality, speed, or independent verification.
+- Kimi Code CLI remains available as a direct companion CLI and should be used opportunistically when it improves quality, speed, or independent verification. Kimi-family models may also be used through Hermes/OpenRouter when an OpenRouter model slug is available.
 - Verified on 2026-04-25:
   - binary: `/Users/philiplewis/.local/bin/kimi`
   - `kimi info`: `kimi-cli version: 1.37.0`

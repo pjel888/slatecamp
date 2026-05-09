@@ -18,4 +18,4 @@ Hermes should inspect before acting, prefer verifiable repository facts over ass
 
 This pack does not include `.env`, `auth.json`, real API keys, session history, logs, cache files, checkpoints, or provider credentials.
 
-Developer AI provider stance: prefer OpenRouter for SlateCamp Hermes sessions when `OPENROUTER_API_KEY` is configured in `~/.hermes/.env`. Product/learner AI remains a separate deferred app-runtime boundary. See `docs/17-openrouter-developer-ai.md`.
+Developer AI provider stance: prefer OpenRouter for SlateCamp Hermes sessions, one-shot Hermes workers, and Hermes delegated subagents when `OPENROUTER_API_KEY` is configured in `~/.hermes/.env`. Codex, OpenCode/OpenCode Go, Command Code, and Kimi remain separate worker lanes. Product/learner AI remains a separate deferred app-runtime boundary. See `docs/17-openrouter-developer-ai.md`.
