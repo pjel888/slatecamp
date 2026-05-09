@@ -7,6 +7,8 @@ on:
       - 'src/features/3d-lab/**'
       - '.ai/00_performance/**'
       - 'scripts/playwright-web-server.ts'
+      - 'scripts/playwright-run.ts'
+      - 'tsconfig.json'
       - 'package.json'
       - 'bun.lock'
   push:
@@ -18,6 +20,8 @@ on:
       - 'src/features/3d-lab/**'
       - '.ai/00_performance/**'
       - 'scripts/playwright-web-server.ts'
+      - 'scripts/playwright-run.ts'
+      - 'tsconfig.json'
       - 'package.json'
       - 'bun.lock'
   workflow_dispatch:
