@@ -1,359 +1,329 @@
-# Content Excellence Exemplar Packs - SME Release Approval and Source Reconciliation
+# Content Excellence Exemplar Packs — Single SME Release Approval Packet
 
-Generated: 2026-05-09T08:11:10Z
+Generated: 2026-05-09T11:14:48Z
 
 ## Purpose
 
-This file is the human SME release-approval packet for the nine source-grounded SlateCamp exemplar packs in:
+This is the one-file SME approval packet for the nine SlateCamp content-excellence exemplar packs under:
 
 `.ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars/`
 
-It records what a licensed-human SME must approve before any of these calibration exemplars are converted into learner-facing SlateCamp wiki articles or question edits. It also records the follow-up search performed inside `vitruvius-connection/001_Raw-Source-Layer/` to resolve or narrow the remaining source/provenance issues.
+Use this file as the human approval worksheet before any exemplar is converted into learner-facing wiki articles or question-bank changes.
 
-## Current release status
+## Current status
 
-Status: `PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION`
+- Calibration verdict: `PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION`
+- Final source-governance council verdict: `PASS_WITH_HOLD`
+- Active unresolved technical/source-governance blocker: none found in the scoped validation below.
+- SME verdict: `APPROVED_FOR_ROUNDTRIP_CONVERSION_WITH_MINOR_CONVERSION_GUARDRAILS`
+- Pre-conversion SME release approval: granted by Philip Jon Echavez Lewis, Architect / SME, on 2026-05-09.
+- Publication hold: still active. Approval is for roundtrip conversion only, not direct learner-facing publication.
+- Final human release gate: remains with Philip after roundtrip conversion, dry-run output, and rendered wiki/question verification.
 
-Calibration status is strong:
+Important boundary: do not paste exemplar markdown or JSON directly into Supabase. After SME approval, use the normal SlateCamp content-audit roundtrip and question-push workflows.
 
-- 9 exemplar packs exist.
-- 27 MCQs exist.
-- 32 ledgered claims exist.
-- All source-required factual claims are `SUPPORTED` for calibration; non-source exam-strategy claims are explicitly classified as `EXAM_STRATEGY_NO_SOURCE_NEEDED`.
-- No active claim remains `NEEDS_REVIEW` or `REMOVE_OR_REWRITE`.
-- No supported claim still has unresolved `NOT_FOUND_BY_TEXT` or `OCR_DRIFT` extraction status.
-- Claude, OpenCode, and CommandCode SME-style council review files exist and were synthesized.
-- PyMuPDF extraction plus rendered-page visual evidence resolved the previous NPCP and Vitruvius OCR/text-extraction risks.
+## SME sign-off section
 
-Direct publication remains held because calibration approval is not the same as learner-facing release approval.
+Reviewer: Philip Jon Echavez Lewis, Architect / SME
 
-## Required licensed-human SME approval before release
+Date reviewed: 2026-05-09
 
-A licensed-human SME should approve the following items before any pack is converted into a public article/question set:
+Verdict recorded: 2026-05-09T11:45:32Z from Philip's SME verdict in Telegram.
 
-1. Source identity
-   - Confirm the governing source version for each legal/code topic.
-   - Confirm that the raw source file in `vitruvius-connection/001_Raw-Source-Layer/` is acceptable as the citation anchor.
-   - Confirm whether a source-pack hash mismatch is harmless version drift or requires source-pack rebuild.
+Overall decision:
 
-2. Claim accuracy
-   - Review every claim in each `claim-ledger.json`.
-   - Confirm dimensional values, law/IRR section numbers, table references, and scope statements.
-   - Confirm that UAP service-fee statements are scoped to the exact UAP document/article where they appear.
+- [x] Approve all nine packs for roundtrip conversion after normal technical conversion checks
+- [ ] Approve only selected packs; holds are noted below
+- [ ] Hold all packs pending source or factual revisions
 
-3. Question accuracy
-   - Review every item in each `exemplar-question-set.json`.
-   - Confirm answer keys, rationales, distractors, and cited locators.
-   - Confirm that distractors are plausible but not misleading.
+Scope of approval:
 
-4. Release boundary
-   - Approve conversion from calibration pack to normal SlateCamp roundtrip article/question artifacts.
-   - Do not paste exemplar markdown directly into Supabase.
-   - Use the content roundtrip path: local article bundle, normalized/candidate composition, dry run, then approved push.
+- [x] Source identity and version accepted
+- [x] Legal/code/theory claims accepted
+- [x] Question answer keys and rationales accepted
+- [x] Distractors accepted as plausible but not misleading
+- [x] Release boundary accepted: roundtrip conversion first, no direct Supabase paste
 
-5. Publication decision
-   - Decide whether each pack is approved for learner-facing use as written, approved with edits, or held.
-   - Record SME name, license/credential basis if appropriate, approval date, and scope of approval.
+Signature / initials: Philip Jon Echavez Lewis / SME verdict supplied in Telegram
 
-## Source search method
+SME direction summary:
 
-Search root:
+- Approve all nine packs for roundtrip conversion, with minor conversion-time guardrails, not direct publication.
+- Protect scope discipline during conversion: no broadening, no phrase like "current code says" without exact source/version, and no direct Supabase paste.
+- Preserve the claim/source/question linkage through the roundtrip conversion.
+- Philip's licensed-architect sign-off remains the final human release gate after conversion and rendered-output verification.
+- Professional note: the set is strong because it teaches exam decision structure, not only isolated numbers.
 
-`vitruvius-connection/001_Raw-Source-Layer/`
+## Validation evidence already completed
 
-Method:
+- Production source-pack validator: PASS (`bun run content-audit:source-packs-validate`, 151 checks, 7 packs, 14 chunks)
+- Exemplar pack count: 9
+- Total MCQs: 27
+- Total ledgered claims: 32
+- Artifact manifest: regenerated and hash-verified
+- Active stale source-pack risk scan: PASS
+- Invalid RA 9266 eLibrary evidence: segregated as invalid; not used as RA 9266 authority
+- Final scoped validator status: PASS
 
-- Located candidate PDFs by source family folder and filename search.
-- Computed SHA256 hashes for every relevant candidate PDF.
-- Opened PDFs with PyMuPDF to confirm page counts, metadata titles, and first-page text samples where extractable.
-- Compared those findings against the exemplar source ledgers and existing source-pack manifests under `.ai/16_source_packs/packs/`.
+## SME review evidence supplied by reviewer
 
-## Per-pack release approval matrix
+The SME stated that he checked the worksheet, final validation, all nine articles/questions/claim ledgers, the local raw PDFs, hashes, and targeted PDF text extraction.
+
+The SME also cross-checked current public anchors including:
+
+- NCDA BP 344 2024 IRR: `https://ncda.gov.ph/category/disability-laws/implementing-rules-and-regulations/`
+- BFP RA 9514 2019 RIRR: `https://bfp.gov.ph/revised-irr-of-ra-9514-the-fire-code-of-the-philippines/`
+- ArchitectureBoard RA 9266 IRR: `https://www.architectureboard.com.ph/wp-content/uploads/2019/09/1.2-04_IRR_RA9266-coded.pdf`
+- Lawphil RA 9266: `https://lawphil.net/statutes/repacts/ra2004/ra_9266_2004.html`
+- DHSUD BP 220 / PD 957 references
+- SC eLibrary NPCP adoption resolution: `https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/10/39380`
+
+## Pack inventory
+
+- `01-bp344-accessible-ramp-geometry`: 3 MCQs, 5 ledgered claims; claim statuses {'SUPPORTED': 4, 'EXAM_STRATEGY_NO_SOURCE_NEEDED': 1}; extraction statuses {'FOUND_VERBATIM': 4, 'NOT_SOURCE_REQUIRED': 1}
+- `02-ra9266-foreign-architect-temporary-permit`: 3 MCQs, 2 ledgered claims; claim statuses {'SUPPORTED': 1, 'EXAM_STRATEGY_NO_SOURCE_NEEDED': 1}; extraction statuses {'FOUND_VERBATIM': 1, 'NOT_SOURCE_REQUIRED': 1}
+- `03-ra9514-means-of-egress-width-and-count`: 3 MCQs, 4 ledgered claims; claim statuses {'SUPPORTED': 4}; extraction statuses {'FOUND_VERBATIM': 4}
+- `04-npcp-fixture-unit-and-venting`: 3 MCQs, 3 ledgered claims; claim statuses {'SUPPORTED': 3}; extraction statuses {'FOUND_VERBATIM': 3}
+- `05-vitruvius-principles-and-departments`: 3 MCQs, 3 ledgered claims; claim statuses {'SUPPORTED': 2, 'EXAM_STRATEGY_NO_SOURCE_NEEDED': 1}; extraction statuses {'FOUND_VERBATIM': 2, 'NOT_SOURCE_REQUIRED': 1}
+- `06-pd1096-tgfa-ambf-location-controls`: 3 MCQs, 4 ledgered claims; claim statuses {'SUPPORTED': 4}; extraction statuses {'FOUND_VERBATIM': 3, 'FOUND_PARAPHRASED': 1}
+- `07-bp220-parks-playgrounds-road-pavement`: 3 MCQs, 4 ledgered claims; claim statuses {'SUPPORTED': 4}; extraction statuses {'FOUND_VERBATIM': 4}
+- `08-pd957-license-to-sell-registration-gate`: 3 MCQs, 3 ledgered claims; claim statuses {'SUPPORTED': 3}; extraction statuses {'FOUND_VERBATIM': 3}
+- `09-uap-spp201-pre-design-and-service-boundaries`: 3 MCQs, 4 ledgered claims; claim statuses {'SUPPORTED': 4}; extraction statuses {'FOUND_VERBATIM': 4}
+
+## SME release decisions recorded
 
 ### 01 - BP 344 accessible ramp geometry
 
-Current pack status: `PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION`
+SME release decision needed: Confirm the 2024 Revised IRR of BP 344 as the governing release anchor for ramp geometry and handrail dimensions. Accept the local NCDA webpage PDF as the source-layer copy while retaining the separate Official Gazette download hash as independent official evidence.
 
-Primary exemplar source found in Vitruvius:
+Source anchors to approve:
+- BP 344 2024 Revised IRR (local NCDA source-layer PDF)
+  - Path: `vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf`
+  - SHA256: `63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953`
 
-- Path: `vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf`
-- SHA256: `63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953`
-- Page count: 78
-- PDF title metadata: `2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 | National Council on Disability Affairs`
-- First-page provenance signal: the extracted first page includes NCDA downloadable-file text and a link to `https://ncda.gov.ph/wp-content/uploads/2024/08/amended-IRR-BP-344-Official-Gazette.pdf`.
+Notes:
+- Source pack now records local hash `63ba8df9...` and official-download hash `7c4a75a5...`.
+- Approve source use before learner-facing conversion.
 
-Other BP 344 PDF found:
-
-- Path: `vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/BP-344 IRR Accessibility Law DPWH.pdf`
-- SHA256: `7fe6c2de016c0640002029b089c0468a6e0bcb5856be722c93acc97fadf19618`
-- Page count: 62
-- Relevance: older/non-2024 DPWH accessibility IRR source, not the governing 2024 exemplar source.
-
-Source-pack issue:
-
-- Existing source-pack official hash: `7c4a75a5190897f20844ec8981711c5453954504d609568a292dea9e6888fa76`
-- Search result: this hash was not found inside `vitruvius-connection/`.
-
-Release decision needed:
-
-- SME can approve the local NCDA 2024 PDF as the release citation anchor, or require re-acquisition of the direct Official Gazette PDF matching the source-pack official hash.
-- The old 62-page DPWH file should not replace the 2024 NCDA/Official Gazette source for this exemplar.
-
-Resolution status: partial. The correct 2024 local source is identified and claim support is intact, but the source-pack official-download hash mismatch is not fully closed inside Vitruvius because the official-hash file is not present locally.
+SME decision:
+- [ ] Approved for roundtrip conversion as written
+- [x] Approved with minor edits noted below
+- [ ] Hold pending source reacquisition
+- [ ] Hold pending factual revision
+- SME notes:
+  - Approved for roundtrip conversion only.
+  - Conversion guardrail: preserve "general/default 1:20" wording.
+  - Do not teach 1:12 as universally wrong; handle it as scope/context dependent rather than a blanket error.
 
 ### 02 - RA 9266 foreign architect temporary permit
 
-Current pack status: `PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION`
+SME release decision needed: Confirm Section 38 temporary/special permit treatment, Filipino counterpart requirement, and source-anchor sufficiency for release.
 
-Primary exemplar source found in Vitruvius:
+Source anchors to approve:
+- RA 9266 IRR local PRBoA/Board copy
+  - Path: `vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf`
+  - SHA256: `d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574`
 
-- Path: `vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf`
-- SHA256: `d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574`
-- Page count: 24
-- PDF title metadata: `Microsoft Word - The IRR of RA 9266.doc`
-- First-page signal: Republic of the Philippines, Professional Regulation Commission, Board of Architecture, Implementing Rules and Regulations of RA 9266.
+Notes:
+- ArchitectureBoard official PDF hash `9c725f42...` is recorded in the repaired source pack.
+- Supreme Court eLibrary attempt is explicitly invalidated and not used as RA 9266 evidence.
 
-Duplicate same-hash source found:
-
-- Path: `vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf`
-- SHA256: `d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574`
-- Page count: 24
-
-Source-pack issue:
-
-- Existing source-pack has no `official_file_hashes` entry and records `authority_host_unverified`.
-
-Release decision needed:
-
-- SME should confirm the PRC/Board of Architecture IRR file is acceptable as the governing source for release.
-- If a stricter provenance chain is required, obtain an official PRC or Board-hosted copy and record its hash.
-
-Resolution status: partial. Vitruvius confirms two local duplicate copies with the same hash and PRC/Board source identity in extracted text, but no official external host hash exists in the local source pack.
+SME decision:
+- [x] Approved for roundtrip conversion as written
+- [ ] Approved with minor edits noted below
+- [ ] Hold pending source reacquisition
+- [ ] Hold pending factual revision
+- SME notes:
+  - Section 38 treatment is sound.
 
 ### 03 - RA 9514 means of egress width, count, and illumination
 
-Current pack status: `PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION`
+SME release decision needed: Confirm the BFP-published 2019 Revised IRR as the governing Fire Code source for the selected Rule 10 / means-of-egress claims.
 
-Primary exemplar source found in Vitruvius:
+Source anchors to approve:
+- RA 9514 2019 Revised IRR local BFP source-layer PDF
+  - Path: `vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf`
+  - SHA256: `ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266`
 
-- Path: `vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf`
-- SHA256: `ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266`
-- Page count: 448
-- Relevance: 2019 Revised IRR used by the exemplar source ledger.
+Notes:
+- Source pack was rebuilt from RA 9514 text; the earlier BP 344 contamination is closed.
+- BFP remote URL was blocked by HTTP 403, so the local source-layer PDF hash is the release-review anchor unless you require fresh official reacquisition.
 
-Older or separate fire-code file found:
-
-- Path: `vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-9514/PD 9514 - Fire Code of the Philippines.pdf`
-- SHA256: `dd64bf1dfa1bc6e448241caab79582dbb9683ba002b43696889d7410a35884f0`
-- Page count: 475
-- PDF title metadata: `Microsoft Word - RA9514 IRR as of June 26, 2009`
-- Relevance: older 2009 IRR/source family, not the 2019 RIRR exemplar source.
-
-Source-pack issue found:
-
-- Existing `.ai/16_source_packs/packs/source-pack-ra-9514-rirr/manifest.json` lists local hash `63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953`, which is the BP 344 2024 PDF hash, not the RA 9514 2019 RIRR hash.
-
-Release decision needed:
-
-- Rebuild or correct `source-pack-ra-9514-rirr` before using the source pack for learner-facing publication.
-- The exemplar itself should continue citing `RA9514-RIRR-rev-2019.pdf` with SHA256 `ace1e9f...`.
-
-Resolution status: source issue identified. The Vitruvius search explains the source-pack integrity problem: the active exemplar source is present and correct locally, but the existing source-pack manifest is wrong and should be quarantined or rebuilt before publication.
+SME decision:
+- [x] Approved for roundtrip conversion as written
+- [ ] Approved with minor edits noted below
+- [ ] Hold pending source reacquisition
+- [ ] Hold pending factual revision
+- SME notes:
+  - Rule → Division → Section wording is now correct.
 
 ### 04 - National Plumbing Code fixture units and venting
 
-Current pack status: `PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION`
+SME release decision needed: Confirm that the 225-page Revised National Plumbing Code PDF is the governing edition/source acceptable for learner-facing release.
 
-Primary exemplar source found in Vitruvius:
+Source anchors to approve:
+- Revised National Plumbing Code of the Philippines
+  - Path: `vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Revised National Plumbing Code of the Philippines.pdf`
+  - SHA256: `c4ec30ec3ffe3b39513a033ebc2cfa614bd201d25c5578e1847e7f359fed3f5d`
 
-- Path: `vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Revised National Plumbing Code of the Philippines.pdf`
-- SHA256: `c4ec30ec3ffe3b39513a033ebc2cfa614bd201d25c5578e1847e7f359fed3f5d`
-- Page count: 225
+Notes:
+- PyMuPDF extraction plus rendered-page visual evidence resolved prior text-extraction risk for fixture-unit and venting claims.
+- If stricter provenance is required, obtain a fresh NAMPAP/official-hosted copy before public release.
 
-Duplicate same-hash source found:
-
-- Path: `vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-1378/188541488-Revised-National-Plumbing-Code-of-the-Philippines.pdf`
-- SHA256: `c4ec30ec3ffe3b39513a033ebc2cfa614bd201d25c5578e1847e7f359fed3f5d`
-- Page count: 225
-
-Other nearby plumbing materials found:
-
-- `National-Plumbing-Code-of-the-Philippines_annotated.pdf`, SHA256 `c583fcd5edf9f32e95c64c5c6cd26941336d1c767b7d79710b966cae73d9c324`, 57 pages, secondary/annotated support only.
-- Multiple reviewer/textbook PDFs, secondary support only.
-
-Release decision needed:
-
-- SME should confirm that the 225-page Revised National Plumbing Code PDF is the governing edition/version to use for public release.
-- If a PRC/NAMPAP official provenance chain is required, obtain and hash that official file before publication.
-
-Resolution status: partial. The exact source PDF exists twice in Vitruvius with identical hash, which strengthens local provenance. Edition/governing-status approval remains a human SME gate.
+SME decision:
+- [ ] Approved for roundtrip conversion as written
+- [x] Approved with minor edits noted below
+- [ ] Hold pending source reacquisition
+- [ ] Hold pending factual revision
+- SME notes:
+  - During conversion, label the edition/provenance clearly as Revised NPCP adopted under PRC Board Resolution No. 04-99.
 
 ### 05 - Vitruvius principles and departments
 
-Current pack status: `PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION`
+SME release decision needed: Approve the Morris Hicky Morgan translation boundary for theory claims and require translation naming in learner-facing wording when quoted or closely paraphrased.
 
-Primary exemplar source found in Vitruvius:
+Source anchors to approve:
+- Vitruvius - Ten Books of Architecture, Morgan translation
+  - Path: `vitruvius-connection/001_Raw-Source-Layer/002-History/Vitruvius - 10 Books of Architecture.pdf`
+  - SHA256: `e63f78260563ae36c5f1f85a07371df3d5740dfb13f5fc77453d88632238e020`
 
-- Path: `vitruvius-connection/001_Raw-Source-Layer/002-History/Vitruvius - 10 Books of Architecture.pdf`
-- SHA256: `e63f78260563ae36c5f1f85a07371df3d5740dfb13f5fc77453d88632238e020`
-- Page count: 376
-- Declared edition/translation in source ledger: Morris Hicky Morgan translation, Harvard University Press, 1914.
+Notes:
+- Resolved for calibration; release approval is mainly translation-boundary approval.
 
-Release decision needed:
-
-- SME should approve the translation boundary for theory claims.
-- Any learner-facing article should name the translation when quoting or closely paraphrasing wording.
-
-Resolution status: resolved for calibration and likely sufficient for release if the SME accepts the Morgan translation boundary.
+SME decision:
+- [x] Approved for roundtrip conversion as written
+- [ ] Approved with minor edits noted below
+- [ ] Hold pending source reacquisition
+- [ ] Hold pending factual revision
+- SME notes:
+  - Keep the Morgan translation named when quoted or closely paraphrased.
 
 ### 06 - PD 1096 TGFA, AMBF, and location controls
 
-Current pack status: `PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION`
+SME release decision needed: Confirm the 2004 Revised IRR of PD 1096 / National Building Code as the release anchor for Rule VII location, AMBF, and TGFA claims.
 
-Primary exemplar source found in Vitruvius:
+Source anchors to approve:
+- PD 1096 2004 Revised IRR, DPWH Official
+  - Path: `vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf`
+  - SHA256: `ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6`
 
-- Path: `vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf`
-- SHA256: `ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6`
-- Page count: 368
-- PDF title metadata: `Microsoft Word - NBCP Title Page.doc`
-- First-page signal: The National Building Code of the Philippines, 2004 Revised IRR of PD 1096, Department of Public Works and Highways.
+Notes:
+- Source pack was rebuilt to the 368-page DPWH 2004 RIRR hash `ca465dd2...`; the previous 432-page mismatch is closed for the repaired pack.
+- Human SME should still approve the 368-page DPWH file as the release anchor.
 
-Related PD 1096 files found:
-
-- `PD 1096 IRR - Full Implementing Rules and Regulations.pdf`, SHA256 `8e98d8afd4b5972ba5a82d33a65e59e800cd41661b764a0dfc4112d29697b341`, 432 pages, metadata `IRR - NATIONAL BUILDING CODE COMPLETE.pdf`, first-page signal: official text, 2005 revised edition.
-- `Philippines_02_IRR_of_NBC_of_the_Philippines.pdf`, same SHA256 `8e98d8...`, 432 pages.
-- `PD 1096 RIRR 2004 - Revised IRR (Architecture Board).pdf`, SHA256 `15176ec14a361d821d2106cea302b6d837578ba021f4045a7c7f169f31af5dd3`, 259 pages, annotated PRBoA source.
-- `PD 1096 - National Building Code.pdf`, `PD 1096 - National Building Code Full Text (Malacanang Edition).pdf`, and compact duplicates, all primary law text rather than IRR development-control tables.
-
-Source-pack issue:
-
-- Existing `source-pack-pd-1096-irr` local hash is `8e98d8...`, while this exemplar uses the 368-page DPWH 2004 RIRR hash `ca465d...`.
-- Existing source-pack official hash `a482d1103bf96a6cbf23148bd3796ec7923396633f281a31c6fbdb8da5a02f9a` was not found inside `vitruvius-connection/`.
-
-Release decision needed:
-
-- SME should approve whether this exemplar should cite the 368-page DPWH 2004 RIRR (`ca465d...`) or the 432-page official-text/2005 revised edition (`8e98d8...`).
-- If the exemplar stays with the 368-page DPWH file, the source-pack should be rebuilt or given a separate source-pack ID so the pack hash matches the actual cited source.
-
-Resolution status: narrowed. Vitruvius contains both local PD 1096 IRR versions. This is version/source-pack alignment, not an unresolved claim-support issue.
+SME decision:
+- [ ] Approved for roundtrip conversion as written
+- [x] Approved with minor edits noted below
+- [ ] Hold pending source reacquisition
+- [ ] Hold pending factual revision
+- SME notes:
+  - Where practical, cite Rule VII Section 704.1(a) / 704.1(c), not only broad Section 704.
 
 ### 07 - BP 220 parks, playgrounds, and road pavement
 
-Current pack status: `PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION`
+SME release decision needed: Confirm the 2008 Revised IRR of BP 220 as the governing source for the tested parks/playgrounds and pavement standards.
 
-Primary exemplar source found in Vitruvius:
+Source anchors to approve:
+- BP 220 2008 Revised IRR
+  - Path: `vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-220/Revised_IRR_BP220_2008.pdf`
+  - SHA256: `7392741260c227647afe39de283f3efa979465692da8905e59be8857c8651614`
 
-- Path: `vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-220/Revised_IRR_BP220_2008.pdf`
-- SHA256: `7392741260c227647afe39de283f3efa979465692da8905e59be8857c8651614`
-- Page count: 75
+Notes:
+- Local source identity is resolved for calibration.
 
-Release decision needed:
+SME decision:
+- [x] Approved for roundtrip conversion as written
+- [ ] Approved with minor edits noted below
+- [ ] Hold pending source reacquisition
+- [ ] Hold pending factual revision
+- SME notes:
+  - Good exam distinction from PD 957; preserve that distinction during conversion.
 
-- SME should confirm the 2008 revised IRR is the governing edition for the tested BP 220 standards.
+### 08 - PD 957 license-to-sell registration gate
 
-Resolution status: resolved for local source identity. No competing BP 220 PDF was found in the raw law folder.
+SME release decision needed: Confirm the 68-page PD 957 IRR file as the governing release source for license-to-sell registration-gate claims.
 
-### 08 - PD 957 license to sell registration gate
+Source anchors to approve:
+- PD 957 IRR - Subdivision and Condominium IRR
+  - Path: `vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-957/PD 957 IRR - Subdivision and Condominium IRR.pdf`
+  - SHA256: `1f9ab17a816885cfdbafafc03e3e9b64470a737447129a32a459836d6773f9ea`
 
-Current pack status: `PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION`
+Notes:
+- Three local files share the same 68-page source hash; release approval remains a human source-version decision.
 
-Primary exemplar source found in Vitruvius:
-
-- Path: `vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-957/PD 957 IRR - Subdivision and Condominium IRR.pdf`
-- SHA256: `1f9ab17a816885cfdbafafc03e3e9b64470a737447129a32a459836d6773f9ea`
-- Page count: 68
-
-Duplicate same-hash sources found:
-
-- `PD 957 - Subdivision _ Condominium Buyer_s Act.pdf`, SHA256 `1f9ab17a816885cfdbafafc03e3e9b64470a737447129a32a459836d6773f9ea`, 68 pages.
-- `PD 957 - Subdivision and Condominium Buyers Protective Decree.pdf`, SHA256 `1f9ab17a816885cfdbafafc03e3e9b64470a737447129a32a459836d6773f9ea`, 68 pages.
-
-Other PD 957 file found:
-
-- `PD 957 - Subdivision Law Illustrated Slides (Pedro Santos Jr).pdf`, SHA256 `b6511b7fbd56f7b34afdbcfbb786dd2e6d7147d634f45890f3bec63812ed5aa9`, 34 pages, secondary/illustrated support only.
-
-Release decision needed:
-
-- SME should confirm that the 68-page IRR file is the governing source for the license-to-sell provisions used by the exemplar.
-
-Resolution status: resolved for local source identity. Three local files point to the same 68-page source hash.
+SME decision:
+- [x] Approved for roundtrip conversion as written
+- [ ] Approved with minor edits noted below
+- [ ] Hold pending source reacquisition
+- [ ] Hold pending factual revision
+- SME notes:
+  - Preserve the registration-vs-license-to-sell trap.
 
 ### 09 - UAP SPP 201 pre-design and service boundaries
 
-Current pack status: `PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION`
+SME release decision needed: Approve the two-source structure: SPP 201 for pre-design services; UAP Document 401-402 Article 7.08 only for suspended/abandoned-work 85 percent / 10 percent / 5 percent compensation allocation.
 
-Primary exemplar sources found in Vitruvius:
+Source anchors to approve:
+- UAP SPP 201
+  - Path: `vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf`
+  - SHA256: `d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93`
+- UAP Document 401-402
+  - Path: `vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf`
+  - SHA256: `5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f`
 
-- Path: `vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf`
-- SHA256: `d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93`
-- Page count: 59
+Notes:
+- Do not generalize the 85/10/5 statement as a universal UAP fee allocation rule.
 
-- Path: `vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf`
-- SHA256: `5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f`
-- Page count: 10
+SME decision:
+- [ ] Approved for roundtrip conversion as written
+- [x] Approved with minor edits noted below
+- [ ] Hold pending source reacquisition
+- [ ] Hold pending factual revision
+- SME notes:
+  - Strong scope note required: 85/10/5 applies only to Article 7.08 suspended/abandoned work in UAP Document 401-402, not a universal UAP fee rule.
 
-Related UAP source found:
+## Source-pack repair status for the four target legal/code packs
 
-- `UAP Document Standards of Professional Practice.pdf`, SHA256 `af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b`, 69 pages.
-- `Standards of Professional Practice2.pdf`, SHA256 `5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e`, 69 pages.
-- `1979 UAP Documents.pdf`, SHA256 `54d42c8d39cb6c1e8622ef21a65e63cb09d90c302ca905efa95442614e5f0b5b`, 85 pages.
+- BP 344 2024 Revised IRR: repaired/validated for calibration; SME approved the 2024 IRR release anchor with the ramp-slope wording guardrail above.
+- RA 9266 IRR: repaired/validated for calibration; SME approved Section 38 treatment and source-anchor sufficiency.
+- RA 9514 2019 RIRR: repaired/validated for calibration; prior BP 344 contamination is closed; SME approved local 2019 BFP RIRR use where remote BFP access is blocked.
+- PD 1096 2004 Revised IRR: repaired/validated for calibration; prior source-pack hash mismatch is closed; SME approved the 368-page DPWH 2004 RIRR as release anchor with the Section 704.1 citation guardrail above.
 
-Release decision needed:
+## Roundtrip implementation gate after approval
 
-- SME should approve the two-source structure: SPP 201 for pre-design services, UAP Document 401-402 Article 7.08 for the 85 percent, 10 percent, and 5 percent suspended/abandoned-work compensation allocation.
-- The 85/10/5 statement must remain scoped to Article 7.08 and must not be generalized to all UAP fee allocations.
+After SME approval, implementation should be a separate conversion task.
 
-Resolution status: resolved for local source identity and scope, pending human SME approval.
+Conversion-time guardrails:
 
-## Remaining source/provenance decisions for human release approval
+1. No direct Supabase paste.
+2. No broadening beyond the approved pack scopes.
+3. No phrase like "current code says" unless the exact source/version is named.
+4. Preserve claim/source/question linkage.
+5. Preserve the pack-specific notes above during article/question conversion.
+6. Final learner-facing publication remains held until rendered wiki/question output is verified and Philip gives final human release approval.
 
-The Vitruvius source search solved or narrowed the source questions, but it did not eliminate every release gate.
+Implementation steps:
 
-Open decisions:
+1. Select approved packs only. All nine packs are approved for roundtrip conversion.
+2. Convert exemplar article material into local article bundles.
+3. Convert approved questions into the question workflow format.
+4. Run compose/validation/dry-run.
+5. Push only after dry-run output and SME-approved scope match.
+6. Verify rendered wiki/question output after push.
 
-1. BP 344
-   - Decide whether the NCDA 2024 PDF with embedded Official Gazette download link is sufficient, or require direct Official Gazette PDF re-download and hash reconciliation.
+## Current non-SME out-of-scope worktree noise
 
-2. RA 9266
-   - Decide whether the local PRC/Board of Architecture IRR PDF is sufficient, or require a fresh official-host copy.
+The following changes are present in the working tree but are not part of this SME/source-governance commit:
 
-3. RA 9514
-   - Rebuild or correct `source-pack-ra-9514-rirr` before relying on the source pack. The existing manifest currently carries a BP 344 hash, not the RA 9514 2019 RIRR hash.
+- `.ai/13_research`: 2 files
+- `.ai/content-audit-export`: 1328 files
+- `data/`: 1 files
+- `src/app`: 1 files
+- `src/components`: 2 files
+- `tests/vitest`: 1 files
 
-4. NPCP
-   - Decide whether the 225-page Revised National Plumbing Code PDF is the governing edition for release. Local duplicate identity is confirmed.
+These files should remain unstaged for this source-governance commit unless separately approved.
 
-5. PD 1096
-   - Decide which local IRR version is the release anchor for TGFA/AMBF: the 368-page DPWH 2004 RIRR (`ca465d...`) currently used by the exemplar, or the 432-page official-text/2005 revised edition (`8e98d8...`). Rebuild source-pack metadata if the 368-page file remains the selected anchor.
+## Validator result
 
-6. BP 220, PD 957, UAP, Vitruvius
-   - Local source identity is sufficient for calibration. Human SME still needs to approve release conversion and question wording.
-
-## Recommended SME review workflow
-
-1. Give the SME this file plus the root exemplar index:
-   - `.ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars/exemplar-index.json`
-
-2. For each pack, ask the SME to review:
-   - `exemplar-article.md`
-   - `exemplar-question-set.json`
-   - `claim-ledger.json`
-   - `source-ledger.md`
-   - `reviewer-memo.md`
-
-3. Ask the SME to record one of these release decisions per pack:
-   - `APPROVED_FOR_ROUNDTRIP_CONVERSION`
-   - `APPROVED_WITH_MINOR_EDITS`
-   - `HOLD_PENDING_SOURCE_REACQUISITION`
-   - `HOLD_PENDING_FACTUAL_REVISION`
-
-4. After SME approval, convert through the normal content-audit roundtrip workflow. Do not paste exemplar markdown or JSON directly into Supabase.
-
-## Bottom line
-
-The exemplar pack set is ready for licensed-human SME review. The remaining work is release governance, not calibration content repair.
-
-Best current release stance:
-
-`GO_FOR_LICENSED_HUMAN_SME_REVIEW`
-`HOLD_FOR_LEARNER_FACING_PUBLICATION_UNTIL_SOURCE_DECISIONS_AND_ROUNDTRIP_CONVERSION_PASS`
+PASS. No active unresolved source-governance risks remain in the scoped target artifacts. Licensed-human SME approval for roundtrip conversion was granted on 2026-05-09. Remaining gates are roundtrip conversion, dry-run/scope match, rendered output verification, and final human release approval before direct publication.
