@@ -73,10 +73,27 @@ Key files:
 Current launch stance:
 - Payments are deferred for the current payment-free launch; keep `NEXT_PUBLIC_PAYMENTS_ENABLED=false`.
 - LemonSqueezy runtime files and dependency were removed in Plan B cleanup; only legacy schema/type columns remain.
-- Live AI provider behavior is deferred; launch-facing quiz AI helper UI is disabled.
+- Learner-facing live AI provider behavior is deferred; launch-facing quiz AI helper UI is disabled.
+- Internal developer AI is a separate local-tooling boundary and may use OpenRouter through Hermes/developer-agent config without making public learner AI live.
 
 Risk:
-- future payment/AI behavior depends on env flags, provider selection, webhook integrity, and live provider contracts
+- future payment/AI behavior depends on env flags, provider selection, webhook integrity, live provider contracts, and explicit data-retention/cost boundaries
+
+## Developer AI provider boundary
+
+Key locations:
+- app/product AI abstraction: `src/lib/ai/provider.ts`
+- developer AI runbook: `.ai/00_system/OPENROUTER_DEVELOPER_AI_RUNBOOK.md`
+- Hermes local config/env: `~/.hermes/config.yaml` and `~/.hermes/.env`
+- standalone Codex config/auth, if used: `~/.codex/config.toml` and `~/.codex/auth.json`
+
+Boundary summary:
+- Developer AI may route prompts, code excerpts, logs, and local docs through OpenRouter and upstream model providers.
+- Product runtime AI keys belong in app server/deployment env; developer AI keys belong in local tool env/auth stores.
+- Do not expose either boundary through `NEXT_PUBLIC_*`.
+
+Risk:
+- OpenRouter may forward prompts to third-party providers. Do not send secrets, private env values, service-role keys, production/student records, confidential logs, or full database exports through developer AI unless that data boundary has explicit human approval.
 
 ## Runtime-truth vs mock-truth
 

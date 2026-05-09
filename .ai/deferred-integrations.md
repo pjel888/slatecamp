@@ -1,8 +1,8 @@
 # Deferred Integrations
 
-**Last updated:** 2026-05-09 OpenRouter provider integration pass.
+**Last updated:** 2026-05-09 OpenRouter provider + developer AI integration pass.
 
-Current launch scope is **payment-free and live-AI-provider-free**. Deferred provider verification must not be treated as a launch blocker unless the product cutline changes.
+Current learner-facing launch scope is **payment-free and live-AI-provider-free**. Deferred provider verification must not be treated as a launch blocker unless the product cutline changes. Developer AI is separate: internal Hermes/agent work should prefer OpenRouter through local developer configuration.
 
 | Integration | Launch Status | Current Code Status | Public Surface? | Env Vars | Verification Status | Future Work |
 |---|---|---|---|---|---|---|

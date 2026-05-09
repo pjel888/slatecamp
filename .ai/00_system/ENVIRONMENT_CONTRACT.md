@@ -3,9 +3,11 @@
 **Status:** Current after 2026-05-09 OpenRouter provider integration pass.
 **Canonical detailed inventory:** `.ai/environment.md`.
 
-Current launch is payment-free and live-AI-provider-free. LemonSqueezy is no longer a runtime launch integration. Do not require `LEMONSQUEEZY_*`, `PAYREX_*`, `OPENROUTER_API_KEY`, `OPENAI_API_KEY`, or `ANTHROPIC_API_KEY` variables for the current launch unless a future PR deliberately reintroduces paid/live-AI behavior.
+Current launch is payment-free and public/learner live-AI-provider-free. LemonSqueezy is no longer a runtime launch integration. Do not require `LEMONSQUEEZY_*`, `PAYREX_*`, app-runtime `OPENROUTER_API_KEY`, `OPENAI_API_KEY`, or `ANTHROPIC_API_KEY` variables for the current learner-facing launch unless a future PR deliberately reintroduces paid/live-AI behavior.
 
-Payment and live AI provider env vars are not blockers for the current launch.
+Developer AI is a separate local-tooling boundary. SlateCamp Hermes/developer-agent work should prefer OpenRouter with a key in `~/.hermes/.env`; this is not a production launch requirement and must not be exposed as `NEXT_PUBLIC_*`.
+
+Payment and learner live AI provider env vars are not blockers for the current launch. Developer OpenRouter configuration is allowed and preferred for internal agent work, but it is validated through `.ai/00_system/OPENROUTER_DEVELOPER_AI_RUNBOOK.md`, not through production launch gates.
 
 ## Required for current launch
 
@@ -36,9 +38,9 @@ Payment and live AI provider env vars are not blockers for the current launch.
 | `PAYMENT_PROVIDER` | Future paid launch only; only `payrex` is supported | `src/lib/payments/provider.ts` | Unsupported values throw. |
 | `PAYREX_SECRET_KEY` | Deferred; required only before future live PayRex checkout | `src/lib/payrex/config.ts` | Not needed for current payment-free launch. |
 | `PAYREX_WEBHOOK_SECRET` | Deferred; required only before future live PayRex webhooks | `src/app/api/webhooks/payrex/route.ts` | Verify in staging before future paid launch. |
-| `AI_PROVIDER` | Deferred; required only before future live AI features. Use `openrouter` for the preferred provider path; `openai` and `anthropic` remain direct fallback modes. | `src/lib/ai/` | Not needed for current live-AI-free launch. |
-| `OPENROUTER_API_KEY` | Deferred; required only when `AI_PROVIDER=openrouter` for future live AI features | `src/lib/ai/provider.ts`, `src/lib/actions/teach-back.ts`, `scripts/normalize-distractors.ts`, `scripts/sanitize-article-refs.ts` | Paste only in server/local env such as `.env.local`; never expose as `NEXT_PUBLIC_*`. |
-| `OPENROUTER_BASE_URL`, `OPENROUTER_CHAT_MODEL`, `OPENROUTER_EMBEDDING_MODEL`, `OPENROUTER_HTTP_REFERER`, `OPENROUTER_APP_TITLE` | Deferred/optional OpenRouter tuning and attribution | `src/lib/ai/provider.ts` | Defaults exist for base URL, chat model, embedding model, and app title. `OPENROUTER_HTTP_REFERER` falls back to `NEXT_PUBLIC_APP_URL`; keep embedding dimension compatibility unless re-indexing. |
+| `AI_PROVIDER` | Deferred; required only before future learner-facing live AI features. Use `openrouter` for the preferred app provider path; `openai` and `anthropic` remain direct fallback modes. | `src/lib/ai/` | Not needed for current learner-facing live-AI-free launch. Developer Hermes provider selection is configured separately. |
+| `OPENROUTER_API_KEY` | Deferred for app runtime; required only when `AI_PROVIDER=openrouter` for future learner-facing live AI features | `src/lib/ai/provider.ts`, `src/lib/actions/teach-back.ts`, `scripts/normalize-distractors.ts`, `scripts/sanitize-article-refs.ts` | Paste only in server/local app env such as `.env.local`; never expose as `NEXT_PUBLIC_*`. For developer AI, use `~/.hermes/.env` and prefer a separate key/budget. |
+| `OPENROUTER_BASE_URL`, `OPENROUTER_CHAT_MODEL`, `OPENROUTER_EMBEDDING_MODEL`, `OPENROUTER_HTTP_REFERER`, `OPENROUTER_APP_TITLE` | Deferred/optional app OpenRouter tuning and attribution | `src/lib/ai/provider.ts` | Defaults exist for base URL, chat model, embedding model, and app title. `OPENROUTER_HTTP_REFERER` falls back to `NEXT_PUBLIC_APP_URL`; keep embedding dimension compatibility unless re-indexing. |
 | `OPENAI_API_KEY`, `OPENAI_CHAT_MODEL`, `OPENAI_EMBEDDING_MODEL` | Deferred; required/used only for legacy direct OpenAI fallback | `src/lib/ai/provider.ts` | Not required for current launch or OpenRouter mode. Model override vars are optional. |
 | `ANTHROPIC_API_KEY`, `ANTHROPIC_CHAT_MODEL` | Deferred; required/used only for legacy direct Anthropic fallback | `src/lib/ai/provider.ts` | Not required for current launch or OpenRouter mode. Chat model override var is optional. Anthropic direct mode covers chat; embedding calls still require direct OpenAI fallback because Anthropic has no native embedding endpoint. |
 | `PLAYWRIGHT_*`, `PERF_*`, `AUDIT_BASE_URL` | Test/performance automation only | E2E/perf scripts | Not production secrets. |

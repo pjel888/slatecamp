@@ -1,17 +1,20 @@
 # Risk Register
 
-**Last updated:** 2026-04-30 route consolidation verification pass.
-**Launch stance:** payment-free and live-AI-provider-free. PayRex checkout/webhook QA and live OpenAI/Anthropic verification are deferred post-launch items, not current launch blockers.
+**Last updated:** 2026-05-09 OpenRouter developer AI closeout.
+**Launch stance:** payment-free and learner-facing live-AI-provider-free. PayRex checkout/webhook QA and public learner AI provider verification are deferred post-launch items, not current launch blockers. Internal developer AI is separate local tooling and should prefer OpenRouter when configured outside the repo.
 
 | ID | Risk | Classification | Current evidence | Recommended action | Owner |
 |---|---|---|---|---|---|
 | R-001 | Broad optional/internal route surface | Launch warning | 109 page routes remain, including CEO/developer/studio/professional/pods/result-day/DAE optional/internal surfaces. | Keep internal/gated surfaces out of public navigation; run founder cutline review before public launch. | Product/engineering |
 | R-002 | Legacy LemonSqueezy schema/type columns remain | Deferred technical debt | Runtime LemonSqueezy route/config/dependency are removed, but `lemonsqueezy_*` columns remain in `DATABASE_SCHEMA.sql`, `src/types/supabase.ts`, and `src/types/app.ts`. | Defer to explicit DB reset/squash cleanup PR. | Backend |
 | R-003 | PayRex live checkout/webhook not verified | Deferred post-launch | `src/app/api/payments/checkout/route.ts` and `src/app/api/webhooks/payrex/route.ts` remain, but `NEXT_PUBLIC_PAYMENTS_ENABLED=false` keeps them outside current launch surface. | Run PayRex staging checkout/webhook QA before any paid launch. | Product/backend |
-| R-004 | Live AI provider behavior not verified | Deferred post-launch | `/api/ai/*` routes remain; launch-facing quiz AI helper UI is disabled in `src/components/quiz-v2/FeedbackPanel.tsx`. | Run provider-backed smoke tests before exposing live AI UI/copy. | Product/backend |
+| R-004 | Learner-facing live AI provider behavior not verified | Deferred post-launch | `/api/ai/*` routes remain and now route through `src/lib/ai/provider.ts`; launch-facing quiz AI helper UI is disabled in `src/components/quiz-v2/FeedbackPanel.tsx`. | Run OpenRouter/provider-backed smoke tests, privacy review, rate-limit review, and copy review before exposing live learner AI UI/copy. | Product/backend |
 | R-005 | Pre-existing dirty source changes | Commit/review risk | Dirty provenance logged before cleanup; landing/sidebar/3D Lab and generated artifacts had prior changes. | Review separately before commit; do not conflate with this hardening diff. | Engineering |
 | R-006 | Full release/performance matrix not fully run | Release warning | Core suite and production smoke pass; full `test:e2e`, `validate:release`, and `perf:all` are broad/CI-oriented and not yet run in this pass. | Run full matrix in CI/staging before external launch if capacity allows. | Engineering |
 | R-007 | Generated pycache artifact is dirty | Commit hygiene risk | `.codex/skills/ui-ux-pro-max/scripts/__pycache__/core.cpython-311.pyc` is tracked and modified; it was not removed to avoid overwriting existing work. | Remove/regenerate in a separate explicit hygiene step before commit if desired. | Engineering |
+| R-008 | Developer OpenRouter config drift | Mitigated, monitor | Active global Hermes config was verified on 2026-05-09: `model.provider=openrouter`, `model.default=deepseek/deepseek-chat`, `model.max_tokens=1000`, `agent.reasoning_effort=low`, `delegation.provider=openrouter`, and `OPENROUTER_API_KEY` present in the active Hermes env. Standalone Codex OpenRouter routing remains unverified. | Use Hermes/OpenRouter for provider-unified developer AI; do not claim standalone Codex uses OpenRouter until its installed version/config proves it. | Engineering |
+| R-009 | Developer AI data leaves local trust boundary | Privacy/security risk | OpenRouter and companion models may route prompts/code/logs through third-party providers. | Do not send secrets, private env values, service-role keys, production/student records, confidential logs, or DB exports through developer AI without explicit approval and provider data-control review. | Engineering/product |
+| R-010 | GPT-5.5 through Hermes exceeds current OpenRouter credit/token affordability | Developer tooling risk | Direct OpenRouter API smoke for `openai/gpt-5.5` passed, but Hermes with GPT-5.5 hit OpenRouter 402 prompt-token affordability limits. Hermes default now uses `deepseek/deepseek-chat` through OpenRouter. | Top up OpenRouter credits or raise limits before switching Hermes default/delegation to `openai/gpt-5.5`. | Engineering |
 
 ## Updated blocker reconciliation
 
@@ -19,7 +22,7 @@
 |---|---|---|---|---|---|
 | PayRex live staging checkout/webhook verification | Launch blocker if paid launch required | Deferred post-launch | Current launch is payment-free and payment UI/API stays disabled by default. | None if `NEXT_PUBLIC_PAYMENTS_ENABLED=false`. | Verify before future paid launch. |
 | LemonSqueezy runtime integration | Stubbed/cleanup blocker | Removed/deferred | Runtime route/config/test/dependency were removed in Plan B cleanup. | None; only dormant schema/type columns remain. | DB cleanup/reset PR later. |
-| Live AI provider behavior verification | Launch blocker if AI visible | Deferred post-launch | Current launch is live-AI-provider-free; public copy and quiz helper UI no longer require live providers. | None for current launch scope. | Verify before future AI launch. |
+| Live AI provider behavior verification | Launch blocker if learner AI visible | Deferred post-launch for public learner AI; developer AI may use OpenRouter locally | Current launch is learner-facing live-AI-provider-free; public copy and quiz helper UI no longer require live providers. Internal developer OpenRouter is a local-tooling path, not production app readiness. | None for current learner-facing launch scope. | Verify before future AI launch; keep developer OpenRouter config/risk notes separate. |
 
 ## Final verification update — 2026-04-29
 

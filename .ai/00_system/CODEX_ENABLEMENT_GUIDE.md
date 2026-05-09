@@ -73,7 +73,7 @@ This guide is the fastest way for future Codex sessions to orient in SlateCamp a
   - GitNexus MCP: `gitnexus_impact` / `gitnexus_context` / `gitnexus_detect_changes`
   - code-review-graph MCP: `get_minimal_context_tool` then `get_impact_radius_tool`
   - ChunkHound: targeted search/research for the changed symbol, file, route, or workflow; use semantic/multi-hop when embeddings are available and regex/path-filtered search otherwise
-- Project Codex MCP config lives at `.codex/config.toml`; the expected local servers are `gitnexus`, `code-review-graph`, and `chunkhound`.
+- Codex MCP config may live in global `~/.codex/config.toml` or a project-local `.codex/config.toml` if one is intentionally recreated. Verify the active Codex config before assuming a project-local file exists; the expected local servers are `gitnexus`, `code-review-graph`, and `chunkhound`.
 - ChunkHound should prefer the local Ollama/OpenAI-compatible setup when available:
   - embeddings: `nomic-embed-text:latest`
   - base URL: `http://127.0.0.1:11434/v1`
@@ -83,9 +83,22 @@ This guide is the fastest way for future Codex sessions to orient in SlateCamp a
 - Do not rely on VoyageAI for routine ChunkHound work in this environment; it hit billing/rate-limit failures during indexing.
 - If one signal is stale or unavailable, refresh/retry when safe and disclose the gap instead of replacing the triad with grep-only analysis.
 
-### Companion AI CLI work
+### Developer AI provider work
 
-- Kimi Code CLI is available locally and should be used opportunistically when it can improve quality, speed, or independent verification.
+- SlateCamp developer AI should prefer OpenRouter when `OPENROUTER_API_KEY` is configured locally. This applies to Hermes sessions, Hermes delegation, and other provider-routed developer automation.
+- Canonical developer OpenRouter runbook: `.ai/00_system/OPENROUTER_DEVELOPER_AI_RUNBOOK.md`.
+- Keep the app/runtime AI boundary separate: learner-facing `/api/ai/*`, teach-back, embeddings, and generation helpers use `src/lib/ai/provider.ts` and remain deferred for the current public launch.
+- Hermes setup belongs outside the repo:
+  - active config: `hermes config path`
+  - active env: `hermes config env-path`
+  - preferred provider: `hermes config set model.provider openrouter`
+  - preferred model for the current account: `hermes config set model.default deepseek/deepseek-chat`
+  - preferred GPT-5.5 upgrade after OpenRouter credits/limits allow it: `hermes config set model.default openai/gpt-5.5`
+  - conservative output cap for the current account: `hermes config set model.max_tokens 1000`
+  - delegation provider: `hermes config set delegation.provider openrouter`
+  - delegation model for the current account: `hermes config set delegation.model deepseek/deepseek-chat`
+- Standalone Codex CLI provider routing must be verified against the installed Codex version before claiming OpenRouter support. If unsupported or unverified, use Hermes/OpenRouter for provider-unified developer AI and keep Codex on its own working auth path.
+- Kimi Code CLI remains available as a direct companion CLI and should be used opportunistically when it improves quality, speed, or independent verification.
 - Verified on 2026-04-25:
   - binary: `/Users/philiplewis/.local/bin/kimi`
   - `kimi info`: `kimi-cli version: 1.37.0`
@@ -97,11 +110,11 @@ This guide is the fastest way for future Codex sessions to orient in SlateCamp a
   - test strategy, edge-case brainstorming, and migration pre-mortems
   - summarizing large read-only context when Codex needs a parallel perspective
 - Guardrails:
-  - Codex remains responsible for final edits, verification, and claims.
-  - Do not send secrets, credentials, private env values, production data, or service-role keys to Kimi.
+  - Codex/Hermes remain responsible for final edits, verification, and claims.
+  - Do not send secrets, credentials, private env values, production data, student PII, or service-role keys to OpenRouter, Kimi, Codex, or any companion model unless the data boundary is explicitly approved.
   - Prefer read-only prompts unless explicitly delegating a contained draft or review task.
-  - Use Kimi when it materially helps; do not block simple local work on Kimi.
-- Typical non-interactive commands:
+  - Use companion AI when it materially helps; do not block simple local work on companion tools.
+- Typical Kimi non-interactive commands:
   - `kimi --quiet -p 'Health check only. Reply exactly: KIMI_CODE_OK'`
   - `kimi --work-dir /Users/philiplewis/slatecamp --quiet -p 'Read-only review: ...'`
   - `kimi --work-dir /Users/philiplewis/slatecamp --plan --quiet -p 'Plan review only: ...'`

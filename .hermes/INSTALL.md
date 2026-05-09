@@ -31,6 +31,22 @@ maintenance/
 
 If `~/.hermes/config.yaml` already exists, merge the recommended sections instead of replacing the file. Existing model/provider settings are usually important.
 
+SlateCamp developer AI should prefer OpenRouter. Keep the real key in `~/.hermes/.env`, then merge/set:
+
+```bash
+hermes config set model.provider openrouter
+hermes config set model.default deepseek/deepseek-chat
+hermes config set model.api_mode chat_completions
+hermes config set model.max_tokens 1000
+hermes config set agent.reasoning_effort low
+hermes config set delegation.provider openrouter
+hermes config set delegation.model deepseek/deepseek-chat
+```
+
+`openai/gpt-5.5` is available on OpenRouter, but this audit found it can exceed account credit/token affordability for Hermes' loaded system prompt. Top up credits before making GPT-5.5 the Hermes default.
+
+See `docs/17-openrouter-developer-ai.md` and `.ai/00_system/OPENROUTER_DEVELOPER_AI_RUNBOOK.md` before changing provider behavior.
+
 ## Project context install
 
 Hermes loads project context from the working directory. Copy the Slatecamp project context into the Slatecamp repository root:
