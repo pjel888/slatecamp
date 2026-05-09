@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Prac Cmp 001 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## Learning Goal
 
 After studying this article, you should be able to:
@@ -29,13 +38,25 @@ Groups 1 through 3 classify projects according to their level of architectural a
 
 ### The Sliding Scale for Groups 1–3
 
-<Warn>The sliding sclea is one of the most tested computation topics in the Compensation block. For Groups 1–3, the base percentage applies only to the first ₱50M of PCC. The excess is charged at progressively lower rates.</Warn>
+[SLATECAMP_UI_BLOCK:ui_0001 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: The sliding sclea is one of the most tested computation topics in the Compensation block. For Groups 1–3, the base percentage applies only to the first ₱50M of PCC. The excess is charged at progressively lower rates.
+[/SLATECAMP_UI_BLOCK]
 
 The sliding scale applies identically to Groups 1, 2, and 3 — only the base rate for the first ₱50M differs. Each successive bracket is 1% lower than the previous one. For example, Group 1's sliding scale is 5% → 4% → 3% → 2% → 1% → 0.5%, while Group 2's is 6% → 5% → 4% → 3% → 2% → 1%:
 
-<WikiExamTable headers={["PCC Bracket", "Group 1", "Group 2", "Group 3"]} rows={[["First ₱50M", "5%", "6%", "7%"], ["₱50M – ₱100M", "4%", "5%", "6%"], ["₱101M – ₱200M", "3%", "4%", "5%"], ["₱201M – ₱500M", "2%", "3%", "4%"], ["₱501M – ₱1B", "1%", "2%", "3%"], ["Above ₱1B", "0.5%", "1%", "2%"]]} />
+[SLATECAMP_UI_BLOCK:ui_0002 component="WikiExamTable" status="preserved"]
+Extracted summary:
+- Props: headers="{[\"PCC Bracket\", \"Group 1\", \"Group 2\", \"Group 3\"]}", rows="{[[\"First ₱50M\", \"5%\", \"6%\", \"7%\"], [\"₱50M – ₱100M\", \"4%\", \"5%\", \"6%\"], [\"₱101M – ₱200M\", \"3%\", \"4%\", \"5%\"], [\"₱201M – ₱500M\", \"2%\", \"3%\", \"4%\"], [\"₱501M – ₱1B\", \"1%\", \"2%\", \"3%\"], [\"Above ₱1B\", \"0.5%\", \"1%\", \"2%\"]]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<Example>A Group 1 warehouse project with a PCC of ₱150M: Fee on first ₱50M = ₱50M × 5% = ₱2,500,000. Fee on next ₱50M (₱50M–₱100M bracket) = ₱50M × 4% = ₱2,000,000. Fee on remaining ₱50M (₱101M–₱200M bracket) = ₱50M × 3% = ₱1,500,000. Total fee = ₱6,000,000.</Example>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Example" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: A Group 1 warehouse project with a PCC of ₱150M: Fee on first ₱50M = ₱50M × 5% = ₱2,500,000. Fee on next ₱50M (₱50M–₱100M bracket) = ₱50M × 4% = ₱2,000,000. Fee on remaining ₱50M (₱101M–₱200M bracket) = ₱50M × 3% = ₱1,500,000. Total fee = ₱6,000,000.
+[/SLATECAMP_UI_BLOCK]
 
 ### Groups by Building Type (Groups 4–5)
 
@@ -49,13 +70,25 @@ Groups 6 and 7 recognize that repeating a design requires less architectural eff
 
 **Group 6 — Repetitive Building** applies when a single building design is repeated multiple times (e.g., identical school buildings, standardized branch offices). The fee structure is:
 
-<WikiExamTable headers={["Unit", "Fee"]} rows={[["1st building", "100% of basic fee"], ["2nd building", "80% of basic fee"], ["3rd building", "60% of basic fee"], ["4th building and all subsequent", "40% of basic fee"]]} />
+[SLATECAMP_UI_BLOCK:ui_0004 component="WikiExamTable" status="preserved"]
+Extracted summary:
+- Props: headers="{[\"Unit\", \"Fee\"]}", rows="{[[\"1st building\", \"100% of basic fee\"], [\"2nd building\", \"80% of basic fee\"], [\"3rd building\", \"60% of basic fee\"], [\"4th building and all subsequent\", \"40% of basic fee\"]]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 **Group 7 — Repetitive Housing** applies to mass housing developments where a single residential unit design is repeated (e.g., subdivision housing, socialized housing). The fee structure is:
 
-<WikiExamTable headers={["Unit", "Fee"]} rows={[["1st unit", "10% of PCC"], ["2nd to 10th unit", "+60% of fee for each additional unit"], ["11th unit onward", "Fee of 10th unit + 30% for each additional unit"]]} />
+[SLATECAMP_UI_BLOCK:ui_0005 component="WikiExamTable" status="preserved"]
+Extracted summary:
+- Props: headers="{[\"Unit\", \"Fee\"]}", rows="{[[\"1st unit\", \"10% of PCC\"], [\"2nd to 10th unit\", \"+60% of fee for each additional unit\"], [\"11th unit onward\", \"Fee of 10th unit + 30% for each additional unit\"]]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<Note>Group 6 (Repetitive Building) uses percentages of the _basic fee_. Group 7 (Repetitive Housing) starts from 10% of PCC and adds increments. These are different base calculations — do not confuse them.</Note>
+[SLATECAMP_UI_BLOCK:ui_0006 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Group 6 (Repetitive Building) uses percentages of the _basic fee_. Group 7 (Repetitive Housing) starts from 10% of PCC and adds increments. These are different base calculations — do not confuse them.
+[/SLATECAMP_UI_BLOCK]
 
 ### Specialized Groups (Groups 8–10)
 
@@ -63,7 +96,11 @@ Groups 6 and 7 recognize that repeating a design requires less architectural eff
 
 **Group 9 — Renovations for Groups 1 to 5** applies when the architect is engaged to renovate an existing building that would fall under Groups 1–5 if it were new construction. Renovation work demands more architectural effort than new construction due to existing conditions, structural constraints, and as-built documentation requirements. The fee is **150% of the basic fee** that would apply to the project's group classification as new construction.
 
-<Example>A Group 2 renovation project with a PCC of ₱40M: Basic fee if new construction = ₱40M × 6% = ₱2,400,000. Renovation multiplier = 150%. Renovation fee = ₱2,400,000 × 150% = ₱3,600,000.</Example>
+[SLATECAMP_UI_BLOCK:ui_0007 component="Example" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: A Group 2 renovation project with a PCC of ₱40M: Basic fee if new construction = ₱40M × 6% = ₱2,400,000. Renovation multiplier = 150%. Renovation fee = ₱2,400,000 × 150% = ₱3,600,000.
+[/SLATECAMP_UI_BLOCK]
 
 **Group 10 — Technical Expertise** covers specialized consulting engagements requiring the architect's technical expertise outside the standard service categories. Compensation for Group 10 projects is determined using the **Multiple of Direct Personnel Expense (MDPE)** method rather than a percentage of PCC. No specific fee percentage is assigned.
 
@@ -90,17 +127,29 @@ In Philippine practice, most private-sector projects fall into Groups 1–5. The
 
 The LEA tests Project Classification in three patterns. First, the exam presents a building type and asks which group number it belongs to — the student must match building descriptions to the correct group. Second, the exam presents a PCC amount for a Group 1, 2, or 3 project exceeding ₱50M and asks the student to compute the fee using the sliding scale. Third, the exam presents a renovation scenario and asks the student to apply the 150% multiplier after first identifying the correct base group.
 
-<Tip>Memorize the groups as three clusters: **Complexity** (1-2-3 at 5-6-7% DAEDS), **Type** (4-5 at 10-12%), and **Special** (6-7 repetitive, 8 interiors at 15%, 9 renovations at 150%, 10 MDPE). The complexity cluster shares the sliding sclea; the others do not.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0008 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Memorize the groups as three clusters: **Complexity** (1-2-3 at 5-6-7% DAEDS), **Type** (4-5 at 10-12%), and **Special** (6-7 repetitive, 8 interiors at 15%, 9 renovations at 150%, 10 MDPE). The complexity cluster shares the sliding sclea; the others do not.
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
-<WikiMistakeList mistakes={["Applying the flat percentage to the entire PCC for Group 1–3 projects exceeding ₱50M, instead of using the sliding sclea on the excess amount", "Confusing Group 6 (Repetitive Building — declining from 100% of basic fee) with Group 7 (Repetitive Housing — starting at 10% of PCC with additions)", "Classifying a renovation as its base group and applying the base fee, forgetting the 150% multiplier under Group 9", "Assuming Group 10 has a specific percentage fee — it uses the MDPE method, not a percentage of PCC"]} />
+[SLATECAMP_UI_BLOCK:ui_0009 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Applying the flat percentage to the entire PCC for Group 1–3 projects exceeding ₱50M, instead of using the sliding sclea on the excess amount\", \"Confusing Group 6 (Repetitive Building — declining from 100% of basic fee) with Group 7 (Repetitive Housing — starting at 10% of PCC with additions)\", \"Classifying a renovation as its base group and applying the base fee, forgetting the 150% multiplier under Group 9\", \"Assuming Group 10 has a specific percentage fee — it uses the MDPE method, not a percentage of PCC\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
 
 
-<ArticleMedia id="media-lea-prac-cmp-001-core-concept-0" type="image" caption="10 Project Classification Groups — Fee Percentages and Building Type Matrix" description="Comparison table/matrix showing all 10 Project Classification Groups with: group number, building type examples, DAEDS percentage, DADS percentage (60% of DAEDS), sliding scale brackets for Groups 1-3, and notes on repetitive/renovation multipliers. Color-coded by group category (Complexity, Building Type, Repetitive, Specialized)." />
+[SLATECAMP_UI_BLOCK:ui_0010 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-prac-cmp-001-core-concept-0", type="image", caption="10 Project Classification Groups — Fee Percentages and Building Type Matrix", description="Comparison table/matrix showing all 10 Project Classification Groups with: group number, building type examples, DAEDS percentage, DADS percentage (60% of DAEDS), sliding scale brackets for Groups 1-3, and notes on repetitive/renovation multipliers. Color-coded by group category (Complexity, Building Type, Repetitive, Specialized)."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 ## Related Articles
 
 - [Project Classification Groups](lea-prac-cmp-001)

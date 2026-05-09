@@ -1,9 +1,61 @@
 {
   "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:1100f1ecb219163b0a50e094c526bc982d770db2795850546e3dfa4f877aa706",
+  "linked_questions_hash": "sha256:aa4aab3256ecfe5c1ceded290b5e1343dfe51dbe4b03c72d028299f1fced84fa",
   "question_count": 12,
   "questions": [
+    {
+      "question_id": "f0bc1160-ad55-470d-a2a9-c0938a5ed933",
+      "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+      "topic_id": "a0124521-5f62-4bfe-bf92-8d5baf24d32a",
+      "text": "The Doric order is characterized by which proportional relationship between column height and diameter?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Roughly 8–10 times its diameter"
+        },
+        {
+          "id": "b",
+          "text": "Roughly 10+ times its diameter"
+        },
+        {
+          "id": "c",
+          "text": "Roughly 4–6 times its diameter"
+        },
+        {
+          "id": "d",
+          "text": "Roughly 2–3 times its diameter"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This is the proportion of the Ionic order (8–10 times).",
+        "b": "This is the proportion of the Corinthian order (10+ times).",
+        "d": "This is not a documented classical Greek column proportion.",
+        "correct": "Doric Order: The earliest and most austere. A Doric column is squat and sturdy, roughly 4–6 times its diameter in height.'",
+        "takeaway": "A Doric column is squat and sturdy, roughly 4–6 times its diameter in height.'."
+      },
+      "explanation": "This is the proportion of the Ionic order (8–10 times). This is the proportion of the Corinthian order (10+ times). This is not a documented classical Greek column proportion. Doric Order: The earliest and most austere. A Doric column is squat and sturdy, roughly 4–6 times its diameter in height.' A Doric column is squat and sturdy, roughly 4–6 times its diameter in height.'.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "ST"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-001-05-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:23.525262+00:00",
+      "updated_at": "2026-05-06T12:47:35.520911+00:00",
+      "content_hash": "sha256:9ab7d90db5f604546fe15b92e4b9a44e01a7d3998d38fc9077449252f97a89bb"
+    },
     {
       "question_id": "57a5181c-b039-42f2-aba3-6bcbd0a8369f",
       "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
@@ -213,58 +265,6 @@
       "content_hash": "sha256:9ff2a501efd244f25fff65f0b583d2649fb005d3911adf943185b372cf276d0a"
     },
     {
-      "question_id": "f0bc1160-ad55-470d-a2a9-c0938a5ed933",
-      "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
-      "topic_id": "a0124521-5f62-4bfe-bf92-8d5baf24d32a",
-      "text": "The Doric order is characterized by which proportional relationship between column height and diameter?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Roughly 8–10 times its diameter"
-        },
-        {
-          "id": "b",
-          "text": "Roughly 10+ times its diameter"
-        },
-        {
-          "id": "c",
-          "text": "Roughly 4–6 times its diameter"
-        },
-        {
-          "id": "d",
-          "text": "Roughly 2–3 times its diameter"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "This is the proportion of the Ionic order (8–10 times).",
-        "b": "This is the proportion of the Corinthian order (10+ times).",
-        "d": "This is not a documented classical Greek column proportion.",
-        "correct": "Doric Order: The earliest and most austere. A Doric column is squat and sturdy, roughly 4–6 times its diameter in height.'",
-        "takeaway": "A Doric column is squat and sturdy, roughly 4–6 times its diameter in height.'."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "remember",
-      "application_context": "code_interpretation",
-      "practice_context": [
-        "ST"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-HIST-001-05-003",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:23.525262+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:71e2d24f23a7279db773219022b9bf6d17f832726def81a609ece8356bdb4107"
-    },
-    {
       "question_id": "e14c4f06-a18d-45ed-a60e-fadad118e5f4",
       "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
       "topic_id": "a0124521-5f62-4bfe-bf92-8d5baf24d32a",
@@ -317,6 +317,162 @@
       "content_hash": "sha256:fa702407268f5df89ed6a97334efb94360c49d1274fa52e880320b355afa8423"
     },
     {
+      "question_id": "2126fc90-7db6-4332-9681-a563388564e5",
+      "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+      "topic_id": "a0124521-5f62-4bfe-bf92-8d5baf24d32a",
+      "text": "Why did Greek architects employ entasis (the subtle inward curve of columns) in structures like the Parthenon?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To reduce the weight of the column and allow for taller structures, which was a common goal in ancient Greek architecture"
+        },
+        {
+          "id": "b",
+          "text": "As a cost-saving measure to use less stone material, which was a significant consideration in large-scale constructions"
+        },
+        {
+          "id": "c",
+          "text": "To counteract the optical distortion that makes straight lines appear to sag, creating the illusion of straightness and proper form"
+        },
+        {
+          "id": "d",
+          "text": "To provide better wind resistance and structural stability against earthquakes, which were frequent in the region"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Entasis adds material, not reduces it; it was not a weight-saving measure.",
+        "b": "The opposite is true; entasis requires more precise stone cutting and thus more labor and expense.",
+        "d": "While the curvature might provide some structural benefit, the documented purpose is visual correction.",
+        "correct": "Entasis (the slight curve) was achieved by subtle reductions in diameter between drums' and clarifies a common mistake: 'Treating entasis as a defect. Entasis (the curve) is not accidental but calculated. It's a visual correction for the illusion of sagging that straight lines create. Treat it as evidence of sophistication, not weakness.'",
+        "takeaway": "Treat it as evidence of sophistication, not weakness.'."
+      },
+      "explanation": "Entasis adds material, not reduces it; it was not a weight-saving measure. The opposite is true; entasis requires more precise stone cutting and thus more labor and expense. While the curvature might provide some structural benefit, the documented purpose is visual correction. Entasis (the slight curve) was achieved by subtle reductions in diameter between drums' and clarifies a common mistake: 'Treating entasis as a defect. Entasis (the curve) is not accidental but calculated. It's a visual correction for the illusion of sagging that straight lines create. Treat it as evidence of sophistication, not weakness.' Treat it as evidence of sophistication, not weakness.'.",
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-001-05-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:23.734061+00:00",
+      "updated_at": "2026-05-06T12:47:35.806827+00:00",
+      "content_hash": "sha256:3cbbecaacb81bb376b6eaa35588b2c553e790523fdb83c880f2b6867f19b8841"
+    },
+    {
+      "question_id": "b210a8ca-118d-4aa5-827c-b7ad6017bb55",
+      "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+      "topic_id": "a0124521-5f62-4bfe-bf92-8d5baf24d32a",
+      "text": "Why did Greek architects and sculptors invest such detailed effort in the Parthenon's interior sculptural program, even though most viewers would not have access to the interior to see it?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The interior decoration served no purpose and was merely a waste of resources, reflecting a lack of practical consideration in the design process"
+        },
+        {
+          "id": "b",
+          "text": "The Parthenon served as a treasury and a sanctuary, making the interior as important as the exterior; the interior decoration served religious and administrative functions"
+        },
+        {
+          "id": "c",
+          "text": "The interior was purely decorative, intended only for the priesthood's personal appreciation, emphasizing exclusivity and spiritual hierarchy"
+        },
+        {
+          "id": "d",
+          "text": "The sculptural program was added after the building's completion and served no original purpose, indicating a later adaptation to changing cultural or religious needs"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The interior decoration was integral to the building's function, not wasteful.",
+        "c": "While priests accessed the interior, the building's function was not personal appreciation but religious and administrative.",
+        "d": "The sculptural program was part of the original design (447–432 BCE), not a later addition.",
+        "correct": "The Parthenon housed a chryselephantine (gold and ivory) statue of Athena, 40+ feet tall, now lost. The sculptural program included a continuous frieze around the naos depicting the Panathenaic procession, and pediment sculptures. The Parthenon's interior was as important as its exterior; it was a treasury and a sanctuary, not merely a visual monument.'",
+        "takeaway": "The Parthenon's interior was as important as its exterior; it was a treasury and a sanctuary, not merely a visual monument.'."
+      },
+      "explanation": "The interior decoration was integral to the building's function, not wasteful. While priests accessed the interior, the building's function was not personal appreciation but religious and administrative. The sculptural program was part of the original design (447–432 BCE), not a later addition. The Parthenon housed a chryselephantine (gold and ivory) statue of Athena, 40+ feet tall, now lost. The sculptural program included a continuous frieze around the naos depicting the Panathenaic procession, and pediment sculptures. The Parthenon's interior was as important as its exterior; it was a treasury and a sanctuary, not merely a visual monument.' The Parthenon's interior was as important as its exterior; it was a treasury and a sanctuary, not merely a visual monument.'.",
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-001-05-012",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:23.734061+00:00",
+      "updated_at": "2026-05-06T12:47:36.240087+00:00",
+      "content_hash": "sha256:fb91629b3706c3e0690a46c78f3c2e54f1a5384025484f048dcf57de3ddb75e0"
+    },
+    {
+      "question_id": "5ef0e30d-6c30-420f-b6b6-7eae74644e93",
+      "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+      "topic_id": "a0124521-5f62-4bfe-bf92-8d5baf24d32a",
+      "text": "Sculpted femlea figures serving as columns or vertical supports in Greek architecture are called:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Kouroi, which are typically male statues used in different contexts"
+        },
+        {
+          "id": "b",
+          "text": "Atlantes, which are male figures used as supports, differing from female caryatids"
+        },
+        {
+          "id": "c",
+          "text": "Caryatids"
+        },
+        {
+          "id": "d",
+          "text": "Herms, which are square pillars with a head on top, not used as columns"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Kouroi are nude male sculptures in archaic Greek art, not figures serving as columns.",
+        "b": "Atlantes are male figures serving as supports (the male equivalent of caryatids); caryatids are female.",
+        "d": "Herms are boundary markers or posts topped with a bust of Hermes, not columns.",
+        "correct": "The article defines: 'Caryatid (or Caryatids): A sculpted female figure serving as a column or support; seen in the Porch of the Maidens at the Erechtheion.'",
+        "takeaway": "The article defines: 'Caryatid (or Caryatids): A sculpted female figure serving as a column or support; seen in the Porch of the Maidens at the Erechtheion.'."
+      },
+      "explanation": "Kouroi are nude male sculptures in archaic Greek art, not figures serving as columns. Atlantes are male figures serving as supports (the male equivalent of caryatids); caryatids are female. Herms are boundary markers or posts topped with a bust of Hermes, not columns. The article defines: 'Caryatid (or Caryatids): A sculpted female figure serving as a column or support; seen in the Porch of the Maidens at the Erechtheion.' The article defines: 'Caryatid (or Caryatids): A sculpted female figure serving as a column or support; seen in the Porch of the Maidens at the Erechtheion.'.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DESC"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-001-05-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:23.734061+00:00",
+      "updated_at": "2026-05-06T12:47:36.37777+00:00",
+      "content_hash": "sha256:d05656d3c9315977a87946e109fbaa04cbd6de6e4a10150aa09f7590ebeb852b"
+    },
+    {
       "question_id": "d14b44f6-6ea2-4331-9073-64f27da54e13",
       "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
       "topic_id": "a0124521-5f62-4bfe-bf92-8d5baf24d32a",
@@ -351,7 +507,7 @@
         "correct": "The Treasury of Atreus at Mycenae (c. 1350 BCE, pre-Classical but influential) featured a corbelled dome—a \"tholos\" or circular structure that predates Greek post-and-lintel temples. Later Greek architects revived the tholos form for certain temples and treasuries, such as the Tholos of Polyclitus at Epidaurus (c. 360 BCE).'",
         "takeaway": "Later Greek architects revived the tholos form for certain temples and treasuries, such as the Tholos of Polyclitus at Epidaurus (c. 360 BCE).'."
       },
-      "explanation": null,
+      "explanation": "A stoa is a portico or covered walkway with columns, not a circular temple. Cella (or naos) is the inner chamber of a temple, not a circular building type. Peristyle refers to a colonnade surrounding a building, not a specific circular building type. The Treasury of Atreus at Mycenae (c. 1350 BCE, pre-Classical but influential) featured a corbelled dome—a \"tholos\" or circular structure that predates Greek post-and-lintel temples. Later Greek architects revived the tholos form for certain temples and treasuries, such as the Tholos of Polyclitus at Epidaurus (c. 360 BCE).' Later Greek architects revived the tholos form for certain temples and treasuries, such as the Tholos of Polyclitus at Epidaurus (c. 360 BCE).'.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -365,8 +521,8 @@
       "model_id": "ALE-HIST-001-05-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:23.734061+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:b7a884029af31d824d64d61972549c12d696d5897d17dd19c8627b367a268223"
+      "updated_at": "2026-05-06T12:47:35.698764+00:00",
+      "content_hash": "sha256:6f3f3fc71238e2fe3ea35630fbc0e3c9e31b19f1f6f4bab76f01535962483631"
     },
     {
       "question_id": "bbdeac5c-38a5-4c87-9e0e-2248af287a0e",
@@ -471,162 +627,6 @@
       "created_at": "2026-03-23T19:27:23.734061+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:d11dae2784abb06e1d478193f1d6c6225c2f3c9320ae0a3640c5c18df34e6aa2"
-    },
-    {
-      "question_id": "2126fc90-7db6-4332-9681-a563388564e5",
-      "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
-      "topic_id": "a0124521-5f62-4bfe-bf92-8d5baf24d32a",
-      "text": "Why did Greek architects employ entasis (the subtle inward curve of columns) in structures like the Parthenon?",
-      "options": [
-        {
-          "id": "a",
-          "text": "To reduce the weight of the column and allow for taller structures, which was a common goal in ancient Greek architecture"
-        },
-        {
-          "id": "b",
-          "text": "As a cost-saving measure to use less stone material, which was a significant consideration in large-scale constructions"
-        },
-        {
-          "id": "c",
-          "text": "To counteract the optical distortion that makes straight lines appear to sag, creating the illusion of straightness and proper form"
-        },
-        {
-          "id": "d",
-          "text": "To provide better wind resistance and structural stability against earthquakes, which were frequent in the region"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Entasis adds material, not reduces it; it was not a weight-saving measure.",
-        "b": "The opposite is true; entasis requires more precise stone cutting and thus more labor and expense.",
-        "d": "While the curvature might provide some structural benefit, the documented purpose is visual correction.",
-        "correct": "Entasis (the slight curve) was achieved by subtle reductions in diameter between drums' and clarifies a common mistake: 'Treating entasis as a defect. Entasis (the curve) is not accidental but calculated. It's a visual correction for the illusion of sagging that straight lines create. Treat it as evidence of sophistication, not weakness.'",
-        "takeaway": "Treat it as evidence of sophistication, not weakness.'."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "analyze",
-      "application_context": "code_interpretation",
-      "practice_context": [
-        "CON"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-HIST-001-05-007",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:23.734061+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:73a32586344ab7199c9de4ec8263bca235f32d3bb4416f629e46a8db4cb9d2bb"
-    },
-    {
-      "question_id": "b210a8ca-118d-4aa5-827c-b7ad6017bb55",
-      "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
-      "topic_id": "a0124521-5f62-4bfe-bf92-8d5baf24d32a",
-      "text": "Why did Greek architects and sculptors invest such detailed effort in the Parthenon's interior sculptural program, even though most viewers would not have access to the interior to see it?",
-      "options": [
-        {
-          "id": "a",
-          "text": "The interior decoration served no purpose and was merely a waste of resources, reflecting a lack of practical consideration in the design process"
-        },
-        {
-          "id": "b",
-          "text": "The Parthenon served as a treasury and a sanctuary, making the interior as important as the exterior; the interior decoration served religious and administrative functions"
-        },
-        {
-          "id": "c",
-          "text": "The interior was purely decorative, intended only for the priesthood's personal appreciation, emphasizing exclusivity and spiritual hierarchy"
-        },
-        {
-          "id": "d",
-          "text": "The sculptural program was added after the building's completion and served no original purpose, indicating a later adaptation to changing cultural or religious needs"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "The interior decoration was integral to the building's function, not wasteful.",
-        "c": "While priests accessed the interior, the building's function was not personal appreciation but religious and administrative.",
-        "d": "The sculptural program was part of the original design (447–432 BCE), not a later addition.",
-        "correct": "The Parthenon housed a chryselephantine (gold and ivory) statue of Athena, 40+ feet tall, now lost. The sculptural program included a continuous frieze around the naos depicting the Panathenaic procession, and pediment sculptures. The Parthenon's interior was as important as its exterior; it was a treasury and a sanctuary, not merely a visual monument.'",
-        "takeaway": "The Parthenon's interior was as important as its exterior; it was a treasury and a sanctuary, not merely a visual monument.'."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "analyze",
-      "application_context": "code_interpretation",
-      "practice_context": [
-        "CON"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-HIST-001-05-012",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:23.734061+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:4b727c0f4976e64bc884095d0128d69ef484057fbe2594220ad942c127e11f86"
-    },
-    {
-      "question_id": "5ef0e30d-6c30-420f-b6b6-7eae74644e93",
-      "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
-      "topic_id": "a0124521-5f62-4bfe-bf92-8d5baf24d32a",
-      "text": "Sculpted femlea figures serving as columns or vertical supports in Greek architecture are called:",
-      "options": [
-        {
-          "id": "a",
-          "text": "Kouroi, which are typically male statues used in different contexts"
-        },
-        {
-          "id": "b",
-          "text": "Atlantes, which are male figures used as supports, differing from female caryatids"
-        },
-        {
-          "id": "c",
-          "text": "Caryatids"
-        },
-        {
-          "id": "d",
-          "text": "Herms, which are square pillars with a head on top, not used as columns"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Kouroi are nude male sculptures in archaic Greek art, not figures serving as columns.",
-        "b": "Atlantes are male figures serving as supports (the male equivalent of caryatids); caryatids are female.",
-        "d": "Herms are boundary markers or posts topped with a bust of Hermes, not columns.",
-        "correct": "The article defines: 'Caryatid (or Caryatids): A sculpted female figure serving as a column or support; seen in the Porch of the Maidens at the Erechtheion.'",
-        "takeaway": "The article defines: 'Caryatid (or Caryatids): A sculpted female figure serving as a column or support; seen in the Porch of the Maidens at the Erechtheion.'."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [
-        "DESC"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-HIST-001-05-010",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:23.734061+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:a9a9f89287af2a0aab82835bb74eec71090842bcc6f6e67f43603d5e9752074c"
     }
   ]
 }

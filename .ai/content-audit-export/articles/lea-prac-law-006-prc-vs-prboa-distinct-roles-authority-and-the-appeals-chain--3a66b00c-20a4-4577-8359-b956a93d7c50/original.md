@@ -1,3 +1,10 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Lea Prac Law 006 Prc Vs Prboa Distinct Roles Authority And The Appeals Chain** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
 ## PRC vs. PRBoA: Distinct Roles, Authority, and the Appeals Chain
 
 ## Learning Goal
@@ -16,7 +23,11 @@ After studying this article, you should be able to:
 
 The Professional Regulation Commission (PRC) and the Professional Regulatory Board of Architecture (PRBoA) are distinct entities with overlapping but separate authority. The PRC is a constitutional body under the Administrative Code, supervising all professional regulatory boards: Architecture, Engineering, Medicine, Nursing, Surveying, and other professions. The PRBoA is a collegial board created specifically for architecture regulation and operating under PRC administrative supervision.
 
-<ArticleMedia id="media-law006-prc-prboa-relationship" layout="single" variant="contained" type="image" status="placeholder" aspectRatio="16:9" title="PRC–PRBoA–IAPOA Relationship Diagram" alt="Organizational diagram showing the relationship between PRC (administrative supervision), PRBoA (professional regulation), and IAPOA/UAP (professional organization). Distinguishes administrative supervision from operational control and shows the three-tier appeal path." placementIntent="organizational-structure" suggestedSearchQuery="PRC PRBoA IAPOA relationship diagram Philippines architecture regulation" replacementNotes="Create a three-entity Venn or relationship diagram. PRC box (top): budget, staff, facilities, record custody, secretariat. PRBoA box (center): professional standards, exam content, discipline, licensure decisions. IAPOA box (side): nomination, CPD input. Arrows show: PRRC → PRBoA (administrative supervision, not operational control); IAPOA → PRBoA (nomination); PRBoA → PRC (appeal path). Add annotation: 'Professional autonomy in technical matters preserved.'" suggestedAsset="Diagram or reference image" alt="Three-tier appeals chain: PRBoA, PRC, Court of Appeals" caption="Future diagram: three-tier appeals chain: prboa, prc, court of appeals" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-law006-prc-prboa-relationship", layout="single", variant="contained", type="image", status="placeholder", aspectRatio="16:9", title="PRC–PRBoA–IAPOA Relationship Diagram", alt="Three-tier appeals chain: PRBoA, PRC, Court of Appeals", placementIntent="organizational-structure", suggestedSearchQuery="PRC PRBoA IAPOA relationship diagram Philippines architecture regulation", replacementNotes="Create a three-entity Venn or relationship diagram. PRC box (top): budget, staff, facilities, record custody, secretariat. PRBoA box (center): professional standards, exam content, discipline, licensure decisions. IAPOA box (side): nomination, CPD input. Arrows show: PRRC → PRBoA (administrative supervision, not operational control); IAPOA → PRBoA (nomination); PRBoA → PRC (appeal path). Add annotation: 'Professional autonomy in technical matters preserved.'", suggestedAsset="Diagram or reference image"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 The relationship is complex because the statute uses the term "administrative supervision," which could suggest PRC control but actually means a more limited oversight role. Understanding this distinction is essential to practicing architecture law, as disputes about jurisdictional boundaries between the Commission and Board frequently arise.
 
@@ -46,9 +57,17 @@ If the Commission attempted to order the Board to modify examination standards, 
 
 This distinction reflects a principle in professional regulation: regulatory boards should have insulation from political or administrative pressure in technical matters. The Commission supervises the Board's administrative machinery but not its professional substance.
 
-<Warn>A common exam trap: confusing **administrative supervision** (PRC handles budget, staff, facilities — organizational support) with **operational control** (PRBoA decides professional standards, exam content, discipline — professional autonomy). The PRC cannot order the Board to change exam standards or shield a violator. If an answer choice suggests the PRC can control Board professional judgments, it is wrong.</Warn>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="preserved"]
 Extracted summary:
-<Note />
+- Props: (none)
+- Text: A common exam trap: confusing **administrative supervision** (PRC handles budget, staff, facilities — organizational support) with **operational control** (PRBoA decides professional standards, exam content, discipline — professional autonomy). The PRC cannot order the Board to change exam standards or shield a violator. If an answer choice suggests the PRC can control Board professional judgments, it is wrong.
+[/SLATECAMP_UI_BLOCK]
+Extracted summary:
+[SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - Props: (none)
 - Text: The IAPOA (now UAP) is the Integrated and Accredited Professional Organization under RA 9266 Section 41, distinct from both the PRC and PRBoA. It nominates PRBoA members and provides CPD input but is a self-regulatory body, not a government agency.
@@ -65,14 +84,22 @@ This asymmetry reflects recognition that Board expertise in professional matters
 
 ### The Appeals Path: From Board Through Commission to Court
 
-<Tip>The three-tier appeal path is: **Board (first instance)** → **Commission (appeal)** → **Court of Appeals (judicial review)**. The Commission does not retry the case — it reviews the Board's record for legal error, abuse of discretion, or insufficient evidence. The Court applies the arbitrary-and-capricious standard. Know this hierarchy cold for the LEA.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: The three-tier appeal path is: **Board (first instance)** → **Commission (appeal)** → **Court of Appeals (judicial review)**. The Commission does not retry the case — it reviews the Board's record for legal error, abuse of discretion, or insufficient evidence. The Court applies the arbitrary-and-capricious standard. Know this hierarchy cold for the LEA.
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - Props: (none)
 - Text: The three-tier appeal path is: **Board (first instance)** → **Commission (appeal)** → **Court of Appeals (judicial review)**. The Commission does not retry the case — it reviews the Board's record for...
 
 Disciplinary proceedings follow a three-tier appeal path. First, the Board hears the case and renders a decision. The Board's decision becomes final 15 days after the respondent receives notice of judgment unless appelead.
 
-<ArticleMedia id="media-law006-appeals-chain" layout="single" variant="contained" type="image" status="placeholder" aspectRatio="16:9" title="Disciplinary Appeals Chain Flowchart" alt="Flowchart of the three-tier appeal path: PRBoA hears case and issues decision (15-day finality window) → Appeal to PRC (review of record, no retrial) → Appeal to Court of Appeals (arbitrary-and-capricious standard). Shows timeline and standard of review at each level." placementIntent="enforcement-workflow" suggestedSearchQuery="PRBoA disciplinary appeal chain flowchart PRC Court of Appeals" replacementNotes="Create a downward flowchart. Level 1: PRBoA (hearing, decision, 15-day window). Arrow labeled 'appeal'. Level 2: PRC (review for legal error, abuse of discretion, insufficient evidence). Arrow labeled 'appeal'. Level 3: Court of Appeals (arbitrary-and-capricious standard, not substitution of judgment). Side annotations: 'no retrial' at Level 2, 'due process guardian' at Level 3." suggestedAsset="Diagram or reference image" alt="Three-tier appeals chain: PRBoA, PRC, Court of Appeals" caption="Future diagram: three-tier appeals chain: prboa, prc, court of appeals" />
+[SLATECAMP_UI_BLOCK:ui_0005 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-law006-appeals-chain", layout="single", variant="contained", type="image", status="placeholder", aspectRatio="16:9", title="Disciplinary Appeals Chain Flowchart", alt="Three-tier appeals chain: PRBoA, PRC, Court of Appeals", placementIntent="enforcement-workflow", suggestedSearchQuery="PRBoA disciplinary appeal chain flowchart PRC Court of Appeals", replacementNotes="Create a downward flowchart. Level 1: PRBoA (hearing, decision, 15-day window). Arrow labeled 'appeal'. Level 2: PRC (review for legal error, abuse of discretion, insufficient evidence). Arrow labeled 'appeal'. Level 3: Court of Appeals (arbitrary-and-capricious standard, not substitution of judgment). Side annotations: 'no retrial' at Level 2, 'due process guardian' at Level 3.", suggestedAsset="Diagram or reference image"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 Second, if the respondent appeals, the Commission reviews the Board's decision.
 
@@ -168,30 +195,46 @@ The PRC and PRBoA also interact with other agencies. The Commission of Higher Ed
 
 These interactions create an ecosystem of professional regulation; no single agency has complete authority. This distributed authority, while sometimes creating friction, provides checks and balances preventing any single entity from capturing the regulatory apparatus.
 
-<ExamTip />
+[SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - Props: (none)
 - Text: The three-tier appeal path is: Board (first instance) → Commission (appeal) → Court of Appeals (judicial review). The Commission reviews for legal error, abuse of discretion, or insufficient evidence — it does NOT retry the case. The Court applies the arbitrary-and-capricious standard.
 
-<Note />
+[SLATECAMP_UI_BLOCK:ui_0007 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - Props: (none)
 - Text: The IAPOA (now UAP) is the Integrated and Accredited Professional Organization under RA 9266 Section 4, distinct from both the PRC and PRBoA. It nominates PRBoA members and provides CPD input but is a self-regulatory body, not a government agency.
 
 ---
 
-<Note>
-Legal Basis: RA 9266 (Architecture Act of 2004), Sections 7 (Review and Approval), 8 (Administrative Supervision), and 9 (Suspension or Removal of Board Members); RA 9266 IRR, Sections 7-9.
-</Note>
-<Note>
-A common exam trap: confusing **administrative supervision** (PRC handles budget, staff, facilities — organizational support) with **operational control** (PRBoA decides professional standards, exam c
-</Note>
-<Note>
-The three-tier appeal path is: **Board (first instance)** → **Commission (appeal)** → **Court of Appeals (judicial review)**. The Commission does not retry the case — it reviews the Board's record for
-</Note>
-<Note>
-Legal Basis: RA 9266 (Architecture Act of 2004), Sections 7 (Review and Approval), 8 (Administrative Supervision), and 9 (Suspension or Removal of Board Members); RA 9266 IRR, Sections 7-9.
-</Note>
+[SLATECAMP_UI_BLOCK:ui_0008 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Legal Basis: RA 9266 (Architecture Act of 2004), Sections 7 (Review and Approval), 8 (Administrative Supervision), and 9 (Suspension or Removal of Board Members); RA 9266 IRR, Sections 7-9.
+[/SLATECAMP_UI_BLOCK]
+[SLATECAMP_UI_BLOCK:ui_0009 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: A common exam trap: confusing **administrative supervision** (PRC handles budget, staff, facilities — organizational support) with **operational control** (PRBoA decides professional standards, exam c
+[/SLATECAMP_UI_BLOCK]
+[SLATECAMP_UI_BLOCK:ui_0010 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: The three-tier appeal path is: **Board (first instance)** → **Commission (appeal)** → **Court of Appeals (judicial review)**. The Commission does not retry the case — it reviews the Board's record for
+[/SLATECAMP_UI_BLOCK]
+[SLATECAMP_UI_BLOCK:ui_0011 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Legal Basis: RA 9266 (Architecture Act of 2004), Sections 7 (Review and Approval), 8 (Administrative Supervision), and 9 (Suspension or Removal of Board Members); RA 9266 IRR, Sections 7-9.
+[/SLATECAMP_UI_BLOCK]
 ## Related Articles
 
 - [RA 9266: Structure and Key Definitions](lea-prac-law-001)

@@ -1,9 +1,425 @@
 {
   "article_id": "1ad3cb33-39a8-4a0a-9349-4df850d10ad4",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:ef999b7e4bff2263b0348bafea67309636508caedbd36793584de1b98e3cc9c5",
+  "linked_questions_hash": "sha256:a8f73a67f4e25ccdbca2fb6364730a8acb6e0d7821ae8b948c74bf55eb97392a",
   "question_count": 14,
   "questions": [
+    {
+      "question_id": "495649ef-4620-4a69-a2b3-63000b60c578",
+      "article_id": "1ad3cb33-39a8-4a0a-9349-4df850d10ad4",
+      "topic_id": "af0a9e56-9363-494f-a2fe-e4a95dde173d",
+      "text": "How do organizing principles relate to spatial experience and wayfinding in complex buildings?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Users don't notice organizing principles; signage and wayfinding systems are what matter, as they provide direct guidance"
+        },
+        {
+          "id": "b",
+          "text": "Organizing principles are purely structural and don't affect how users experience or navigate buildings, focusing solely on the building's framework"
+        },
+        {
+          "id": "c",
+          "text": "Principles determine spatial relationships, movement patterns, clarity of hierarchy, and intuitive wayfinding—a clear organizing principle helps users understand the building's geometry"
+        },
+        {
+          "id": "d",
+          "text": "Organizing principles only apply to facades and external appearance, influencing the building's aesthetic but not its internal navigation"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Users intuitively sense organizing logic; signage supports but doesn't replace geometric clarity.",
+        "b": "Principles directly affect spatial experience.",
+        "d": "Principles organize interior spaces as much as exterior forms.",
+        "correct": "Organizing principles are fundamental to how people understand and move through buildings. A clear centralized principle (find the center, then find your destination) aids wayfinding. A linear principle (follow the spine) creates clear procession. Grid principle (you are at module XY) clarifies position. Ching emphasizes that principles are perceptual and functional, not merely formal.",
+        "takeaway": "Ching emphasizes that principles are perceptual and functional, not merely formal."
+      },
+      "explanation": "Users intuitively sense organizing logic; signage supports but doesn't replace geometric clarity. Principles directly affect spatial experience. Principles organize interior spaces as much as exterior forms. Organizing principles are fundamental to how people understand and move through buildings. A clear centralized principle (find the center, then find your destination) aids wayfinding. A linear principle (follow the spine) creates clear procession. Grid principle (you are at module XY) clarifies position. Ching emphasizes that principles are perceptual and functional, not merely formal. Ching emphasizes that principles are perceptual and functional, not merely formal.",
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "SYS"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-04-012",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "updated_at": "2026-05-06T14:43:14.655991+00:00",
+      "content_hash": "sha256:988bd3ed79c3929191864a71768e58ab7ebdcc1ecb5456273bb5cd617545783d"
+    },
+    {
+      "question_id": "4161ac3a-be1e-4374-93e3-faa075b04258",
+      "article_id": "1ad3cb33-39a8-4a0a-9349-4df850d10ad4",
+      "topic_id": "af0a9e56-9363-494f-a2fe-e4a95dde173d",
+      "text": "How do centralized and radial organization differ in their spatial reach and focus?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Centralized is inward-focused and compact; radial is outward-focused and expansive with extending arms"
+        },
+        {
+          "id": "b",
+          "text": "Centralized uses radial geometry; radial uses linear geometry, which affects the flow and distribution of spaces"
+        },
+        {
+          "id": "c",
+          "text": "Centralized is used for sacred spaces; radial is used for secular spaces, reflecting their differing symbolic meanings"
+        },
+        {
+          "id": "d",
+          "text": "Centralized has a central axis; radial has multiple axes, which can create a more dynamic spatial experience"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Radial employs radial geometry; centralized can too. Geometry doesn't distinguish them.",
+        "c": "Both appear in sacred and secular contexts.",
+        "d": "Both can have multiple axes depending on complexity.",
+        "correct": "Critical distinction: centralized clusters forms around a center without radiating arms (like a dome surrounded by chapels—compact, inward). Radial has arms extending outward from core (like Washington D.C. avenues radiating from Capitol—expansive, reaching). Both have centers, but opposite spatial characters.",
+        "takeaway": "Both have centers, but opposite spatial characters."
+      },
+      "explanation": "Radial employs radial geometry; centralized can too. Geometry doesn't distinguish them. Both appear in sacred and secular contexts. Both can have multiple axes depending on complexity. Critical distinction: centralized clusters forms around a center without radiating arms (like a dome surrounded by chapels—compact, inward). Radial has arms extending outward from core (like Washington D.C. avenues radiating from Capitol—expansive, reaching). Both have centers, but opposite spatial characters. Both have centers, but opposite spatial characters.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-04-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "updated_at": "2026-05-06T14:43:14.797073+00:00",
+      "content_hash": "sha256:60aeef1d6e750f0f5fa025be5ff78aa7091def88106f868ec604fa497a552795"
+    },
+    {
+      "question_id": "5abd7118-e711-4338-b0f6-9d4c43d90dd6",
+      "article_id": "1ad3cb33-39a8-4a0a-9349-4df850d10ad4",
+      "topic_id": "af0a9e56-9363-494f-a2fe-e4a95dde173d",
+      "text": "How do grid and clustered organization differ in how they accommodate growth and change?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Both are flexible; grid extends through modular repetition; clustered adds new groups without disrupting existing ones"
+        },
+        {
+          "id": "b",
+          "text": "Clustered requires geometric planning; grid is ad hoc, allowing for spontaneous development"
+        },
+        {
+          "id": "c",
+          "text": "Neither accommodates growth; linear organization is most flexible, adapting to various site conditions"
+        },
+        {
+          "id": "d",
+          "text": "Grid is rigid and cannot accommodate change; clustered is flexible, adapting to organic growth patterns"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Both are intentionally planned; neither is ad hoc.",
+        "c": "Both grid and clustered offer more flexibility than linear, which needs directional extension.",
+        "d": "Grid is actually quite flexible within its modular discipline.",
+        "correct": "Both allow flexible growth: grid extends by adding modules along established lines; clustered accommodates new clusters by proximity grouping. This flexibility is why both appear in expanding institutional complexes and cities.",
+        "takeaway": "This flexibility is why both appear in expanding institutional complexes and cities."
+      },
+      "explanation": "Both are intentionally planned; neither is ad hoc. Both grid and clustered offer more flexibility than linear, which needs directional extension. Grid is actually quite flexible within its modular discipline. Both allow flexible growth: grid extends by adding modules along established lines; clustered accommodates new clusters by proximity grouping. This flexibility is why both appear in expanding institutional complexes and cities. This flexibility is why both appear in expanding institutional complexes and cities.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-04-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "updated_at": "2026-05-06T14:43:14.913899+00:00",
+      "content_hash": "sha256:d8ecafd170ef6870d3fe28a11197435731863c1983b427e5ed322128d567b643"
+    },
+    {
+      "question_id": "e27e72dc-78d2-4de0-8365-8ae1f963d175",
+      "article_id": "1ad3cb33-39a8-4a0a-9349-4df850d10ad4",
+      "topic_id": "af0a9e56-9363-494f-a2fe-e4a95dde173d",
+      "text": "Centralized organization in architecture is best defined as:",
+      "options": [
+        {
+          "id": "a",
+          "text": "A collection of forms grouped by proximity without geometric hierarchy, often leading to a lack of visual focus or centrality in the design"
+        },
+        {
+          "id": "b",
+          "text": "A linear arrangement of spaces in sequence along a spine, which may include secondary spaces branching off at intervals"
+        },
+        {
+          "id": "c",
+          "text": "Secondary forms clustered about a dominant central form or space that commands visual and functional attention"
+        },
+        {
+          "id": "d",
+          "text": "Forms distributed equally around a central point radiating outward, creating a balanced but non-hierarchical spatial organization"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "That is clustered organization.",
+        "b": "That is linear organization.",
+        "d": "That is radial organization.",
+        "correct": "Ching defines centralized organization as secondary forms clustering about a dominant central form. Examples: Pantheon (dome centered in rotunda), Byzantine churches (dome over crossing), mosques (dome above prayer hall). The central space is the organizing anchor.",
+        "takeaway": "The central space is the organizing anchor."
+      },
+      "explanation": "That is clustered organization. That is linear organization. That is radial organization. Ching defines centralized organization as secondary forms clustering about a dominant central form. Examples: Pantheon (dome centered in rotunda), Byzantine churches (dome over crossing), mosques (dome above prayer hall). The central space is the organizing anchor. The central space is the organizing anchor.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-04-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "updated_at": "2026-05-06T14:43:15.029862+00:00",
+      "content_hash": "sha256:9b18f1e95663e27d56afcb130036e0280c06b075929c17f99af9529d6174bbca"
+    },
+    {
+      "question_id": "bf3a95a7-4d93-4603-854a-01abfc81194d",
+      "article_id": "1ad3cb33-39a8-4a0a-9349-4df850d10ad4",
+      "topic_id": "af0a9e56-9363-494f-a2fe-e4a95dde173d",
+      "text": "Why do complex architectural programs often combine multiple organizing principles rather than using a single one?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Because mixing principles creates visual confusion and interest, which can be desirable in certain design contexts"
+        },
+        {
+          "id": "b",
+          "text": "Because architects are uncertain which principle is correct, leading to a combination approach to hedge against design errors"
+        },
+        {
+          "id": "c",
+          "text": "Because different functional zones within a program may respond to different organizing logics—a building might be centralized at the entry but linear in the departments, or have clustered offices within a grid structure"
+        },
+        {
+          "id": "d",
+          "text": "Because using multiple principles makes buildings more expensive, which can be justified by the perceived increase in design complexity"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Mixed principles don't inherently create confusion; they serve functional logic.",
+        "b": "Combination is intentional, not uncertain.",
+        "d": "Cost is not the reason; function determines the organizing choice.",
+        "correct": "Complex programs naturally combine principles: a hospital might have a centralized entry atrium (for gathering/orientation) with radial wings extending to different services (functional organization) and grid-based office areas (efficiency). Each zone employs the principle best suited to its function. Ching specifically states that mixed organizations are common in real buildings.",
+        "takeaway": "Ching specifically states that mixed organizations are common in real buildings."
+      },
+      "explanation": "Mixed principles don't inherently create confusion; they serve functional logic. Combination is intentional, not uncertain. Cost is not the reason; function determines the organizing choice. Complex programs naturally combine principles: a hospital might have a centralized entry atrium (for gathering/orientation) with radial wings extending to different services (functional organization) and grid-based office areas (efficiency). Each zone employs the principle best suited to its function. Ching specifically states that mixed organizations are common in real buildings. Ching specifically states that mixed organizations are common in real buildings.",
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-04-011",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "updated_at": "2026-05-06T14:43:15.146099+00:00",
+      "content_hash": "sha256:e3954d42e5553841ae9db8be0dbbeedb6898e1ff147b23e8a86061c2be9c442c"
+    },
+    {
+      "question_id": "fd6b1164-58c0-42ff-bf1c-aa516bad8cf9",
+      "article_id": "1ad3cb33-39a8-4a0a-9349-4df850d10ad4",
+      "topic_id": "af0a9e56-9363-494f-a2fe-e4a95dde173d",
+      "text": "Clustered organization is characterized by:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Forms arranged within a regular three-dimensional grid, which provides structural clarity"
+        },
+        {
+          "id": "b",
+          "text": "A central dominant form with secondary forms arranged around it, creating a hierarchical structure"
+        },
+        {
+          "id": "c",
+          "text": "A collection of forms grouped by proximity or common visual trait without strict geometric hierarchy"
+        },
+        {
+          "id": "d",
+          "text": "Forms extending in a linear sequence in a row, emphasizing directionality"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "That is grid organization.",
+        "b": "That is centralized organization.",
+        "d": "That is linear organization.",
+        "correct": "Clustered organization groups forms by functional affinity or proximity rather than geometric hierarchy. Medieval towns cluster around markets; Japanese villages cluster around shared resources. The organizing principle is compatibility, not geometric system.",
+        "takeaway": "The organizing principle is compatibility, not geometric system."
+      },
+      "explanation": "That is grid organization. That is centralized organization. That is linear organization. Clustered organization groups forms by functional affinity or proximity rather than geometric hierarchy. Medieval towns cluster around markets; Japanese villages cluster around shared resources. The organizing principle is compatibility, not geometric system. The organizing principle is compatibility, not geometric system.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-04-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "updated_at": "2026-05-06T14:43:15.269623+00:00",
+      "content_hash": "sha256:3cfe6662ff5af12ee794f5de41e6efd9488e92ab7cb1e5c3574343ce20496c01"
+    },
+    {
+      "question_id": "6f778d76-64aa-40e9-80ec-c69e605c08c8",
+      "article_id": "1ad3cb33-39a8-4a0a-9349-4df850d10ad4",
+      "topic_id": "af0a9e56-9363-494f-a2fe-e4a95dde173d",
+      "text": "Which organizing principle characterizes traditional Japanese village planning, where buildings cluster around shared resources like wells and gathering places?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Centralized organization"
+        },
+        {
+          "id": "b",
+          "text": "Radial organization"
+        },
+        {
+          "id": "c",
+          "text": "Linear organization"
+        },
+        {
+          "id": "d",
+          "text": "Clustered organization"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While there might be a central gathering place, the principle is functional clustering, not geometric centralization.",
+        "b": "No radiating spokes from a center.",
+        "c": "No linear spine organizes Japanese villages.",
+        "correct": "Japanese villages are organized by functional clustering—buildings group around shared resources and community functions rather than following a formal geometric hierarchy or axis. This flexibility allows organic growth responding to site and function.",
+        "takeaway": "This flexibility allows organic growth responding to site and function."
+      },
+      "explanation": "While there might be a central gathering place, the principle is functional clustering, not geometric centralization. No radiating spokes from a center. No linear spine organizes Japanese villages. Japanese villages are organized by functional clustering—buildings group around shared resources and community functions rather than following a formal geometric hierarchy or axis. This flexibility allows organic growth responding to site and function. This flexibility allows organic growth responding to site and function.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "ATT"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-04-013",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "updated_at": "2026-05-06T14:43:15.386439+00:00",
+      "content_hash": "sha256:5ec50fec945aae26d6e7a6def234ae0522cb63278694fb3074a6d46da09cba27"
+    },
+    {
+      "question_id": "c1dde7f6-3f3e-4a72-ad59-3f3d49b2c825",
+      "article_id": "1ad3cb33-39a8-4a0a-9349-4df850d10ad4",
+      "topic_id": "af0a9e56-9363-494f-a2fe-e4a95dde173d",
+      "text": "Manhattan's street grid system, where avenues and streets create rectangular blocks at regular intervals, exemplifies which organizing principle?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Grid organization (orthogonal)"
+        },
+        {
+          "id": "b",
+          "text": "Radial organization"
+        },
+        {
+          "id": "c",
+          "text": "Centralized organization"
+        },
+        {
+          "id": "d",
+          "text": "Linear organization"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Manhattan is not organized by radiating spokes from a center.",
+        "c": "No central focus dominates Manhattan's grid.",
+        "d": "No single spine organizes the grid.",
+        "correct": "Manhattan's orthogonal grid (90-degree angles at regular intervals) creates modular blocks. The grid is the fundamental organizing system; buildings and uses fit within or span multiple grid modules.",
+        "takeaway": "The grid is the fundamental organizing system; buildings and uses fit within or span multiple grid modules."
+      },
+      "explanation": "Manhattan is not organized by radiating spokes from a center. No central focus dominates Manhattan's grid. No single spine organizes the grid. Manhattan's orthogonal grid (90-degree angles at regular intervals) creates modular blocks. The grid is the fundamental organizing system; buildings and uses fit within or span multiple grid modules. The grid is the fundamental organizing system; buildings and uses fit within or span multiple grid modules.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-04-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "updated_at": "2026-05-06T14:43:15.514023+00:00",
+      "content_hash": "sha256:674647a7348985fc3850112b0b7e0ab72e70583c0605705f1a059b62e3f1bb23"
+    },
     {
       "question_id": "b4719f99-18ee-4052-ac1f-49d98df2b573",
       "article_id": "1ad3cb33-39a8-4a0a-9349-4df850d10ad4",
@@ -39,7 +455,7 @@
         "correct": "Extending arms from a central organizing point exemplifies radial organization: the central entry is the hub; departments are spokes extending outward. This combines centralized clarity with linear reach.",
         "takeaway": "This combines centralized clarity with linear reach."
       },
-      "explanation": null,
+      "explanation": "Centralized would have departments surrounding the center without extending arms. Clustered would have departments grouped without clear radial logic. Linear would have a single spine with departments along it, not radiating from center. Extending arms from a central organizing point exemplifies radial organization: the central entry is the hub; departments are spokes extending outward. This combines centralized clarity with linear reach. This combines centralized clarity with linear reach.",
       "code_citation": null,
       "bloom_level": "apply",
       "application_context": "design_application",
@@ -53,8 +469,8 @@
       "model_id": "ALE-THEO-002-04-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.522336+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:33ee29d115f743d7e3ea9c016613f8b6f51c0f6cac8d6869c6bddf0aa3d31a15"
+      "updated_at": "2026-05-06T14:43:14.389281+00:00",
+      "content_hash": "sha256:63b9b7704c3eb135a3848258fdd811d175528131388c3b7b96a96361b11a631c"
     },
     {
       "question_id": "d1b86182-8c3d-4c65-abae-6f6305b0fbd8",
@@ -143,7 +559,7 @@
         "correct": "Grid organization uses a regular, repeating geometric grid (orthogonal, diagonal, or hexagonal) where each grid cell becomes a spatial module. The module is the fundamental unit; all dimensions are multiples of the module.",
         "takeaway": "The module is the fundamental unit; all dimensions are multiples of the module."
       },
-      "explanation": null,
+      "explanation": "That is linear organization. That is radial organization. That is centralized organization. Grid organization uses a regular, repeating geometric grid (orthogonal, diagonal, or hexagonal) where each grid cell becomes a spatial module. The module is the fundamental unit; all dimensions are multiples of the module. The module is the fundamental unit; all dimensions are multiples of the module.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -157,8 +573,8 @@
       "model_id": "ALE-THEO-002-04-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.522336+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:dcbf5c64272e5777466526fee8e7cce569869c2a0db1024ce797a082fcd4b5da"
+      "updated_at": "2026-05-06T14:43:14.538135+00:00",
+      "content_hash": "sha256:4ceb5a55b3a9e75e969151225b7774cf2216e196e6e02099560c31dee6910b56"
     },
     {
       "question_id": "7b3e814f-726e-4877-ba15-4c54982c5d16",
@@ -213,422 +629,6 @@
       "content_hash": "sha256:2120328605330439c677d9c0529e965db9e52c2dd98f821e5ec0a7215d9d4e90"
     },
     {
-      "question_id": "495649ef-4620-4a69-a2b3-63000b60c578",
-      "article_id": "1ad3cb33-39a8-4a0a-9349-4df850d10ad4",
-      "topic_id": "af0a9e56-9363-494f-a2fe-e4a95dde173d",
-      "text": "How do organizing principles relate to spatial experience and wayfinding in complex buildings?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Users don't notice organizing principles; signage and wayfinding systems are what matter, as they provide direct guidance"
-        },
-        {
-          "id": "b",
-          "text": "Organizing principles are purely structural and don't affect how users experience or navigate buildings, focusing solely on the building's framework"
-        },
-        {
-          "id": "c",
-          "text": "Principles determine spatial relationships, movement patterns, clarity of hierarchy, and intuitive wayfinding—a clear organizing principle helps users understand the building's geometry"
-        },
-        {
-          "id": "d",
-          "text": "Organizing principles only apply to facades and external appearance, influencing the building's aesthetic but not its internal navigation"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Users intuitively sense organizing logic; signage supports but doesn't replace geometric clarity.",
-        "b": "Principles directly affect spatial experience.",
-        "d": "Principles organize interior spaces as much as exterior forms.",
-        "correct": "Organizing principles are fundamental to how people understand and move through buildings. A clear centralized principle (find the center, then find your destination) aids wayfinding. A linear principle (follow the spine) creates clear procession. Grid principle (you are at module XY) clarifies position. Ching emphasizes that principles are perceptual and functional, not merely formal.",
-        "takeaway": "Ching emphasizes that principles are perceptual and functional, not merely formal."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "analyze",
-      "application_context": "code_interpretation",
-      "practice_context": [
-        "SYS"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-002-04-012",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:53.522336+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:1022103d1274815ec9fa5eb2797869232811ea36d0f802e0081c340e3973ba3d"
-    },
-    {
-      "question_id": "4161ac3a-be1e-4374-93e3-faa075b04258",
-      "article_id": "1ad3cb33-39a8-4a0a-9349-4df850d10ad4",
-      "topic_id": "af0a9e56-9363-494f-a2fe-e4a95dde173d",
-      "text": "How do centralized and radial organization differ in their spatial reach and focus?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Centralized is inward-focused and compact; radial is outward-focused and expansive with extending arms"
-        },
-        {
-          "id": "b",
-          "text": "Centralized uses radial geometry; radial uses linear geometry, which affects the flow and distribution of spaces"
-        },
-        {
-          "id": "c",
-          "text": "Centralized is used for sacred spaces; radial is used for secular spaces, reflecting their differing symbolic meanings"
-        },
-        {
-          "id": "d",
-          "text": "Centralized has a central axis; radial has multiple axes, which can create a more dynamic spatial experience"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "b": "Radial employs radial geometry; centralized can too. Geometry doesn't distinguish them.",
-        "c": "Both appear in sacred and secular contexts.",
-        "d": "Both can have multiple axes depending on complexity.",
-        "correct": "Critical distinction: centralized clusters forms around a center without radiating arms (like a dome surrounded by chapels—compact, inward). Radial has arms extending outward from core (like Washington D.C. avenues radiating from Capitol—expansive, reaching). Both have centers, but opposite spatial characters.",
-        "takeaway": "Both have centers, but opposite spatial characters."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "apply",
-      "application_context": "design_application",
-      "practice_context": [
-        "CMP"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-002-04-003",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:53.522336+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:ec49e53a0ee8e2d3ca8bd113b2b589c8cb0b3e7a3b494e3d6040f87a131017db"
-    },
-    {
-      "question_id": "5abd7118-e711-4338-b0f6-9d4c43d90dd6",
-      "article_id": "1ad3cb33-39a8-4a0a-9349-4df850d10ad4",
-      "topic_id": "af0a9e56-9363-494f-a2fe-e4a95dde173d",
-      "text": "How do grid and clustered organization differ in how they accommodate growth and change?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Both are flexible; grid extends through modular repetition; clustered adds new groups without disrupting existing ones"
-        },
-        {
-          "id": "b",
-          "text": "Clustered requires geometric planning; grid is ad hoc, allowing for spontaneous development"
-        },
-        {
-          "id": "c",
-          "text": "Neither accommodates growth; linear organization is most flexible, adapting to various site conditions"
-        },
-        {
-          "id": "d",
-          "text": "Grid is rigid and cannot accommodate change; clustered is flexible, adapting to organic growth patterns"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "b": "Both are intentionally planned; neither is ad hoc.",
-        "c": "Both grid and clustered offer more flexibility than linear, which needs directional extension.",
-        "d": "Grid is actually quite flexible within its modular discipline.",
-        "correct": "Both allow flexible growth: grid extends by adding modules along established lines; clustered accommodates new clusters by proximity grouping. This flexibility is why both appear in expanding institutional complexes and cities.",
-        "takeaway": "This flexibility is why both appear in expanding institutional complexes and cities."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "apply",
-      "application_context": "design_application",
-      "practice_context": [
-        "CMP"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-002-04-010",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:53.522336+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:5aa315cf1daf29a5493f027961a5e3eb1b8620e445a889eeb5886ef89a8d4b61"
-    },
-    {
-      "question_id": "e27e72dc-78d2-4de0-8365-8ae1f963d175",
-      "article_id": "1ad3cb33-39a8-4a0a-9349-4df850d10ad4",
-      "topic_id": "af0a9e56-9363-494f-a2fe-e4a95dde173d",
-      "text": "Centralized organization in architecture is best defined as:",
-      "options": [
-        {
-          "id": "a",
-          "text": "A collection of forms grouped by proximity without geometric hierarchy, often leading to a lack of visual focus or centrality in the design"
-        },
-        {
-          "id": "b",
-          "text": "A linear arrangement of spaces in sequence along a spine, which may include secondary spaces branching off at intervals"
-        },
-        {
-          "id": "c",
-          "text": "Secondary forms clustered about a dominant central form or space that commands visual and functional attention"
-        },
-        {
-          "id": "d",
-          "text": "Forms distributed equally around a central point radiating outward, creating a balanced but non-hierarchical spatial organization"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "That is clustered organization.",
-        "b": "That is linear organization.",
-        "d": "That is radial organization.",
-        "correct": "Ching defines centralized organization as secondary forms clustering about a dominant central form. Examples: Pantheon (dome centered in rotunda), Byzantine churches (dome over crossing), mosques (dome above prayer hall). The central space is the organizing anchor.",
-        "takeaway": "The central space is the organizing anchor."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [
-        "DEF"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-002-04-001",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:53.522336+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:64b4c832fc4790159f75ad4714fccb3f4bc46b28dc88c7434841523ede0f975f"
-    },
-    {
-      "question_id": "bf3a95a7-4d93-4603-854a-01abfc81194d",
-      "article_id": "1ad3cb33-39a8-4a0a-9349-4df850d10ad4",
-      "topic_id": "af0a9e56-9363-494f-a2fe-e4a95dde173d",
-      "text": "Why do complex architectural programs often combine multiple organizing principles rather than using a single one?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Because mixing principles creates visual confusion and interest, which can be desirable in certain design contexts"
-        },
-        {
-          "id": "b",
-          "text": "Because architects are uncertain which principle is correct, leading to a combination approach to hedge against design errors"
-        },
-        {
-          "id": "c",
-          "text": "Because different functional zones within a program may respond to different organizing logics—a building might be centralized at the entry but linear in the departments, or have clustered offices within a grid structure"
-        },
-        {
-          "id": "d",
-          "text": "Because using multiple principles makes buildings more expensive, which can be justified by the perceived increase in design complexity"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Mixed principles don't inherently create confusion; they serve functional logic.",
-        "b": "Combination is intentional, not uncertain.",
-        "d": "Cost is not the reason; function determines the organizing choice.",
-        "correct": "Complex programs naturally combine principles: a hospital might have a centralized entry atrium (for gathering/orientation) with radial wings extending to different services (functional organization) and grid-based office areas (efficiency). Each zone employs the principle best suited to its function. Ching specifically states that mixed organizations are common in real buildings.",
-        "takeaway": "Ching specifically states that mixed organizations are common in real buildings."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "analyze",
-      "application_context": "code_interpretation",
-      "practice_context": [
-        "CON"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-002-04-011",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:53.522336+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:40fe119ecc2a0ad78bdb2f90fbf1a9babde30fc5a9a99f560f0e2b87d41cb5e6"
-    },
-    {
-      "question_id": "fd6b1164-58c0-42ff-bf1c-aa516bad8cf9",
-      "article_id": "1ad3cb33-39a8-4a0a-9349-4df850d10ad4",
-      "topic_id": "af0a9e56-9363-494f-a2fe-e4a95dde173d",
-      "text": "Clustered organization is characterized by:",
-      "options": [
-        {
-          "id": "a",
-          "text": "Forms arranged within a regular three-dimensional grid, which provides structural clarity"
-        },
-        {
-          "id": "b",
-          "text": "A central dominant form with secondary forms arranged around it, creating a hierarchical structure"
-        },
-        {
-          "id": "c",
-          "text": "A collection of forms grouped by proximity or common visual trait without strict geometric hierarchy"
-        },
-        {
-          "id": "d",
-          "text": "Forms extending in a linear sequence in a row, emphasizing directionality"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "That is grid organization.",
-        "b": "That is centralized organization.",
-        "d": "That is linear organization.",
-        "correct": "Clustered organization groups forms by functional affinity or proximity rather than geometric hierarchy. Medieval towns cluster around markets; Japanese villages cluster around shared resources. The organizing principle is compatibility, not geometric system.",
-        "takeaway": "The organizing principle is compatibility, not geometric system."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [
-        "DEF"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-002-04-006",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:53.522336+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:a26e90ba2176ea23750dd2d4df75728ed987567b1cc2518f9f7d990ceaef029d"
-    },
-    {
-      "question_id": "6f778d76-64aa-40e9-80ec-c69e605c08c8",
-      "article_id": "1ad3cb33-39a8-4a0a-9349-4df850d10ad4",
-      "topic_id": "af0a9e56-9363-494f-a2fe-e4a95dde173d",
-      "text": "Which organizing principle characterizes traditional Japanese village planning, where buildings cluster around shared resources like wells and gathering places?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Centralized organization"
-        },
-        {
-          "id": "b",
-          "text": "Radial organization"
-        },
-        {
-          "id": "c",
-          "text": "Linear organization"
-        },
-        {
-          "id": "d",
-          "text": "Clustered organization"
-        }
-      ],
-      "correct_option_id": "d",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "While there might be a central gathering place, the principle is functional clustering, not geometric centralization.",
-        "b": "No radiating spokes from a center.",
-        "c": "No linear spine organizes Japanese villages.",
-        "correct": "Japanese villages are organized by functional clustering—buildings group around shared resources and community functions rather than following a formal geometric hierarchy or axis. This flexibility allows organic growth responding to site and function.",
-        "takeaway": "This flexibility allows organic growth responding to site and function."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [
-        "ATT"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-002-04-013",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:53.522336+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:0f935abcb90656922b875433e2b34c907b69628dee79ed2fec3c00f7d1f3dc2a"
-    },
-    {
-      "question_id": "c1dde7f6-3f3e-4a72-ad59-3f3d49b2c825",
-      "article_id": "1ad3cb33-39a8-4a0a-9349-4df850d10ad4",
-      "topic_id": "af0a9e56-9363-494f-a2fe-e4a95dde173d",
-      "text": "Manhattan's street grid system, where avenues and streets create rectangular blocks at regular intervals, exemplifies which organizing principle?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Grid organization (orthogonal)"
-        },
-        {
-          "id": "b",
-          "text": "Radial organization"
-        },
-        {
-          "id": "c",
-          "text": "Centralized organization"
-        },
-        {
-          "id": "d",
-          "text": "Linear organization"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "b": "Manhattan is not organized by radiating spokes from a center.",
-        "c": "No central focus dominates Manhattan's grid.",
-        "d": "No single spine organizes the grid.",
-        "correct": "Manhattan's orthogonal grid (90-degree angles at regular intervals) creates modular blocks. The grid is the fundamental organizing system; buildings and uses fit within or span multiple grid modules.",
-        "takeaway": "The grid is the fundamental organizing system; buildings and uses fit within or span multiple grid modules."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "apply",
-      "application_context": "design_application",
-      "practice_context": [
-        "APP"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-002-04-009",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:53.522336+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:29edfae706c62758af7d77646d38f6721de3e4c32cd3bb6c0f2d80b5815fb189"
-    },
-    {
       "question_id": "b17298e5-6508-400c-bf30-3a7d50a125c2",
       "article_id": "1ad3cb33-39a8-4a0a-9349-4df850d10ad4",
       "topic_id": "af0a9e56-9363-494f-a2fe-e4a95dde173d",
@@ -663,7 +663,7 @@
         "correct": "Clustered organization is inherently flexible—new buildings can be added to a cluster without restructuring the whole (unlike linear, which needs extension direction, or centralized, which competes with center). Grid organization is equally flexible—new modules extend the grid. Both allow growth without disruption.",
         "takeaway": "Both allow growth without disruption."
       },
-      "explanation": null,
+      "explanation": "Centralized depends on the importance of the center; additions challenge that hierarchy. Linear can extend but only in predictable directions. Radial can add spokes but within the hub-and-spoke logic. Clustered organization is inherently flexible—new buildings can be added to a cluster without restructuring the whole (unlike linear, which needs extension direction, or centralized, which competes with center). Grid organization is equally flexible—new modules extend the grid. Both allow growth without disruption. Both allow growth without disruption.",
       "code_citation": null,
       "bloom_level": "apply",
       "application_context": "design_application",
@@ -677,8 +677,8 @@
       "model_id": "ALE-THEO-002-04-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.522336+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:2c59803d806cbdff07b825a8821e5f34684eda94452fe516353a6f689bd98696"
+      "updated_at": "2026-05-06T14:43:15.633156+00:00",
+      "content_hash": "sha256:5780f22e86f1dca8f668d9db649da11086e45fb4a353834bb6440189ca808be2"
     },
     {
       "question_id": "d6af9ccc-05e5-4a5a-be7d-f9a94aad3583",

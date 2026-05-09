@@ -1,9 +1,58 @@
 {
   "article_id": "edb9cdaf-4969-4aa8-bd1e-e1605f51fe43",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:575cf7bd71e916756946047cc716b6d0156f19ef24d06ddc8023e49ace612a9a",
+  "linked_questions_hash": "sha256:96156bec480eafcbda593fadc6bd6713eacd7ecb6d3df8b54147272c219a1453",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "04163f39-6fe1-4a59-9e19-f0422e8742a7",
+      "article_id": "edb9cdaf-4969-4aa8-bd1e-e1605f51fe43",
+      "topic_id": "4529e6d7-e6b8-4f79-95af-a8da93301994",
+      "text": "Plate compactor, sheep's foot roller, and smooth drum roller are used for ___ compaction to achieve specified density. Which is best for cohesive (clay) soils?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Soil; Sheep's foot roller (feet penetrate and knead clay)"
+        },
+        {
+          "id": "b",
+          "text": "Site grading; Plate compactor (flat compression)"
+        },
+        {
+          "id": "c",
+          "text": "Asphalt; Smooth drum roller (final finish)"
+        },
+        {
+          "id": "d",
+          "text": "All rollers are equivalent for any soil type"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Plate compactors are better for granular soils, not clay.",
+        "c": "Sheep's foot rollers are for cohesive soils, not asphalt.",
+        "d": "Equipment characteristics determine suitability; selection by soil type is essential.",
+        "correct": "Soil compaction to required density (90–98%) uses specialized equipment. Sheep's foot rollers with protruding feet are ideal for cohesive (clay) soils: feet penetrate and knead material, achieving density. Plate compactors suit granular (sandy) soils. Smooth drum rollers provide finish work on granular materials and asphalt."
+      },
+      "explanation": "Plate compactors are better for granular soils, not clay. Sheep's foot rollers are for cohesive soils, not asphalt. Equipment characteristics determine suitability; selection by soil type is essential. Soil compaction to required density (90–98%) uses specialized equipment. Sheep's foot rollers with protruding feet are ideal for cohesive (clay) soils: feet penetrate and knead material, achieving density. Plate compactors suit granular (sandy) soils. Smooth drum rollers provide finish work on granular materials and asphalt.",
+      "code_citation": "Soil Mechanics manuals; NSCP 2015 Chapter 18",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-004-09-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-05-06T15:59:04.339764+00:00",
+      "content_hash": "sha256:47786ab37b8081ff727804ef63fdffdd72bf837e8b3d7f1c3776fa3135c9e385"
+    },
     {
       "question_id": "f4666fa4-7008-4481-bb75-9869864e7b07",
       "article_id": "edb9cdaf-4969-4aa8-bd1e-e1605f51fe43",
@@ -444,55 +493,6 @@
       "created_at": "2026-03-23T19:27:27.970051+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:22f517a5b2e139605368719c1562aac659d1611fafcbd7bec0a5313c091d1b45"
-    },
-    {
-      "question_id": "04163f39-6fe1-4a59-9e19-f0422e8742a7",
-      "article_id": "edb9cdaf-4969-4aa8-bd1e-e1605f51fe43",
-      "topic_id": "4529e6d7-e6b8-4f79-95af-a8da93301994",
-      "text": "Plate compactor, sheep's foot roller, and smooth drum roller are used for ___ compaction to achieve specified density. Which is best for cohesive (clay) soils?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Soil; Sheep's foot roller (feet penetrate and knead clay)"
-        },
-        {
-          "id": "b",
-          "text": "Site grading; Plate compactor (flat compression)"
-        },
-        {
-          "id": "c",
-          "text": "Asphalt; Smooth drum roller (final finish)"
-        },
-        {
-          "id": "d",
-          "text": "All rollers are equivalent for any soil type"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "b": "Plate compactors are better for granular soils, not clay.",
-        "c": "Sheep's foot rollers are for cohesive soils, not asphalt.",
-        "d": "Equipment characteristics determine suitability; selection by soil type is essential.",
-        "correct": "Soil compaction to required density (90–98%) uses specialized equipment. Sheep's foot rollers with protruding feet are ideal for cohesive (clay) soils: feet penetrate and knead material, achieving density. Plate compactors suit granular (sandy) soils. Smooth drum rollers provide finish work on granular materials and asphalt."
-      },
-      "explanation": null,
-      "code_citation": "Soil Mechanics manuals; NSCP 2015 Chapter 18",
-      "bloom_level": "remember",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.3,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-MATL-004-09-006",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:27.970051+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:59af03a3f4d55a38c2bc4805017d10c7b54e326c2c0ef4c3594bf89f5b73707d"
     }
   ]
 }

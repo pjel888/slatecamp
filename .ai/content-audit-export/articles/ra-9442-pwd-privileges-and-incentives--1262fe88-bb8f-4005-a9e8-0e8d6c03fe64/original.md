@@ -1,19 +1,29 @@
 # RA 9442 PWD Privileges and Incentives
 
-_Aligned with RA 7277, RA 9442, RA 10754, and your BP 344 / PD 1096 files.[file:1][file:2][web:20][web:23][web:29]_
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **RA 9442 PWD Privileges and Incentives** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
+
 
 ## Learning Goal
 
-<LawCallout code="ra9442" section="Section 4 - Incentives">
-BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all public buildings.
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="ra9442", section="Section 4 - Incentives"
+- Text: BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all public buildings.
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - Props: (none)
 - Text: BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all p...
 
-<LawCallout code="ra9442" section="Section 3 - PWD Privileges">
-BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all public buildings.
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="ra9442", section="Section 3 - PWD Privileges"
+- Text: BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all public buildings.
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - Props: (none)
 - Text: BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all p...
@@ -84,17 +94,11 @@ Applies to (for PWD’s exclusive use):
 - Medicines and medical supplies.[web:30]
 - Medical & dental services, diagnostics, professional fees.[web:29]
 
-<Note>
-\
-- Domestic air/sea/land transport fares.[web:29]
-- Hotels, restaurants, recreation (cinemas, amusement).[web:29][web:32]
-- Funeral and burial services.[web:29]
-- Educational assistance (tuition, school fees; details from RA 7277).[web:21]
-
-**Key point:** Establishments **absorb** these costs; they are not direct government reimbursements, though they may be treated as deductible expenses under BIR rules.[web:26][web:29]
-
----
-</Note>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: \ - Domestic air/sea/land transport fares.[web:29] - Hotels, restaurants, recreation (cinemas, amusement).[web:29][web:32] - Funeral and burial services.[web:29] - Educational assistance (tuition, school fees; details from RA 7277).[web:21] **Key point:** Establishments **absorb** these costs; they are not direct government reimbursements, though they may be treated as deductible expenses under BIR rules.[web:26][web:29] ---
+[/SLATECAMP_UI_BLOCK]
 ## Employment & Tax Incentives (Updated View)
 
 **1. Wage Incentive (Employer hires PWDs)**

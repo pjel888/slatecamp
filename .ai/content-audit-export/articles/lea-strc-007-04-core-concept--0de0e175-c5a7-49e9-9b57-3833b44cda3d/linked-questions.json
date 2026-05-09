@@ -1,7 +1,7 @@
 {
   "article_id": "0de0e175-c5a7-49e9-9b57-3833b44cda3d",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:912534fc179108a6273a8a64918ca44b4900478743de8eeefc7bcb3a691d8d85",
+  "linked_questions_hash": "sha256:4f4385d87a41959cbee072acd461ddccf4d1cfabf52ed6b17e078d66eafd6d8d",
   "question_count": 10,
   "questions": [
     {
@@ -39,7 +39,7 @@
         "correct": "Per NSCP 2015 § 402.2 (Definitions), a seismic hook must have a bend of not less than 135 degrees. This ensures confinement remains intact even if the concrete cover spalls during an earthquake.",
         "takeaway": "Seismic confinement requires 135-degree hooks."
       },
-      "explanation": null,
+      "explanation": "90-degree hooks are for non-seismic ties; they can pop open when concrete cover is lost under seismic stress. 180-degree hooks are used for anchorage of straight bars, not typically for transverse confinement hoops. 110 degrees is not a standard code angle for hooks. Per NSCP 2015 § 402.2 (Definitions), a seismic hook must have a bend of not less than 135 degrees. This ensures confinement remains intact even if the concrete cover spalls during an earthquake. Seismic confinement requires 135-degree hooks.",
       "code_citation": "NSCP 2015 § 402.2",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
@@ -51,8 +51,8 @@
       "model_id": "ALE-STRC-007-04-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:27348e3068e5c3d483dd206bdadab16b4662cd93e90ad91f29e07723c78f0d33"
+      "updated_at": "2026-05-06T15:09:20.536375+00:00",
+      "content_hash": "sha256:28f22ed940366bb494329b57e133d4aef27b49849164aa5ab267f1cfeac0caba"
     },
     {
       "question_id": "292a1ef2-32f4-4118-83bf-6d92e44f6fb7",

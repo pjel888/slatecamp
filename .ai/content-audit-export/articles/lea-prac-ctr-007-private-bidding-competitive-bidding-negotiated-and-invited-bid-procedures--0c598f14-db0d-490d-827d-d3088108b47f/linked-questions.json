@@ -1,7 +1,7 @@
 {
   "article_id": "0c598f14-db0d-490d-827d-d3088108b47f",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:891cca80f7ec394ac2b9abbf456404748d75ad5be7b8847a8ec8e990a1a9b187",
+  "linked_questions_hash": "sha256:3a931d6b0d1609b787a63a5a345c62595fd66ebf97b293822485b2643e7b305a",
   "question_count": 10,
   "questions": [
     {
@@ -39,7 +39,7 @@
         "correct": "In private competitive bidding, the Owner may consider qualifications, past performance, financial stability, and other factors in addition to price, provided the selection criteria are rational and established before bidding.",
         "takeaway": "Private bidders compete on multiple criteria (price, qualifications, past performance), not just lowest cost."
       },
-      "explanation": null,
+      "explanation": "Confuses private bidding with public bidding requirements; private owners have discretion to weigh non-price factors. Invents a 10% threshold that does not exist in private bidding procedures. Mistakes discretion for arbitrary selection; Owner's choice must follow rational, pre-established criteria to avoid breaching the implied obligation of fair dealing. In private competitive bidding, the Owner may consider qualifications, past performance, financial stability, and other factors in addition to price, provided the selection criteria are rational and established before bidding. Private bidders compete on multiple criteria (price, qualifications, past performance), not just lowest cost.",
       "code_citation": "UAP Doc 301",
       "bloom_level": "remember",
       "application_context": "client_scenario",
@@ -51,8 +51,58 @@
       "model_id": "ALE-PRAC-CTR-007-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.047156+00:00",
+      "updated_at": "2026-05-06T15:03:07.458214+00:00",
+      "content_hash": "sha256:0de30e4c789aa48340fbfed5ee9f52a36a96e81e4daaaa98f082aaf6b1aa04a3"
+    },
+    {
+      "question_id": "133a155e-942f-4423-a618-db04b924a780",
+      "article_id": "0c598f14-db0d-490d-827d-d3088108b47f",
+      "topic_id": "d07ac153-6086-428b-b536-6214d80d72db",
+      "text": "When the Owner issues an addendum to the bid documents after initial distribution, what must the Owner do to ensure fair bidding?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The addendum may be provided only to bidders who request clarification, potentially leading to unequal access to critical information"
+        },
+        {
+          "id": "b",
+          "text": "The addendum must be issued to all potential bidders to ensure equal information and fair competition"
+        },
+        {
+          "id": "c",
+          "text": "The addendum is provided only to the bidders the Owner favors, which could result in biased competition and unfair bidding practices"
+        },
+        {
+          "id": "d",
+          "text": "The addendum may be withheld from competitors of the Owner's preferred bidder, compromising the integrity of the bidding process"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Permits selective distribution only to those who asked; addenda modify contract documents and must reach all participants.",
+        "c": "Permits discriminatory distribution; addenda must reach all potential bidders regardless of Owner preference.",
+        "d": "Permits suppression of information from some competitors; all bidders must receive identical addenda.",
+        "correct": "Addenda must be issued to all potential bidders to ensure equal information and maintain fair competition.",
+        "takeaway": "Addenda must be distributed to all bidders, not selectively, to maintain competitive fairness."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-007-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.526003+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:fafb56687c6b3d60319d45b1a94d482392f85ce7a049c1ae8fbaeff8cad12140"
+      "content_hash": "sha256:feb4c09a9fa1cc4a15e6440a92bcb64805d035bf900015be58bbf9a2d3b673ba"
     },
     {
       "question_id": "430cb11f-f1ae-4956-a0f8-918acf8480b2",
@@ -139,7 +189,7 @@
         "correct": "Late bids are rejected automatically, regardless of how slightly late, unless the Owner explicitly consents to late acceptance.",
         "takeaway": "Late bids are rejected unless Owner consents; even slightly late bids do not qualify."
       },
-      "explanation": null,
+      "explanation": "Wrongly assumes late bids are accepted; strict deadline enforcement is essential to competitive bidding fairness. Invents a 10% penalty mechanism that does not exist; late bids are rejected outright, not penalized. Suggests late bids are held for later evaluation; the procedure is strict rejection without exception unless Owner consents. Late bids are rejected automatically, regardless of how slightly late, unless the Owner explicitly consents to late acceptance. Late bids are rejected unless Owner consents; even slightly late bids do not qualify.",
       "code_citation": "UAP Doc 301",
       "bloom_level": "understand",
       "application_context": "client_scenario",
@@ -151,8 +201,8 @@
       "model_id": "ALE-PRAC-CTR-007-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:6c4c36b5719c449a6d45ca2ad5a781a9fa4dcf7cdfac7f38e59baa795d2ebd80"
+      "updated_at": "2026-05-06T15:03:07.591994+00:00",
+      "content_hash": "sha256:62e6227739d619f61df0c6a5eac4b8ea834fb12fb5e340685c4af4fdef0e0a66"
     },
     {
       "question_id": "96a7e7da-5a9a-4163-9511-bf6a29741bc2",
@@ -203,56 +253,6 @@
       "created_at": "2026-03-23T19:27:47.526003+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:133a8b85e7945b96a987abc1820ce096f4475c55073e1c294f223db72cf31b1f"
-    },
-    {
-      "question_id": "0469ce6d-9057-4c1c-8635-bc4e878aa9c1",
-      "article_id": "0c598f14-db0d-490d-827d-d3088108b47f",
-      "topic_id": "d07ac153-6086-428b-b536-6214d80d72db",
-      "text": "In an invited bid procedure, what is the first step before contractors are invited to submit bids?",
-      "options": [
-        {
-          "id": "a",
-          "text": "The Owner publishes a public advertisement in newspapers of general circulation to solicit bids from all interested and qualified contractors within the project jurisdiction"
-        },
-        {
-          "id": "b",
-          "text": "The Owner pre-qualifies contractors by evaluating past project references, financial statements, insurance verification, and safety records; only qualified contractors are invited to bid"
-        },
-        {
-          "id": "c",
-          "text": "The Owner selects the lowest bidder immediately from among the pre-qualified list without requiring formal sealed bid submissions or comparative evaluation"
-        },
-        {
-          "id": "d",
-          "text": "The Owner conducts a public hearing to discuss the project scope and invites community feedback before proceeding to distribute the bidding documents to potential contractors"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Describes competitive bidding process with public advertisement, not invited bidding which is limited to pre-qualified contractors.",
-        "c": "Describes award process, not pre-qualification; selection occurs after bids are received, not before.",
-        "d": "Confuses invited bidding with public bidding procedures that may require hearings; invited bidding operates without public notice.",
-        "correct": "Invited bidding requires pre-qualification: the Owner evaluates past references, financial statements, insurance, and safety records before inviting selected contractors to bid.",
-        "takeaway": "Invited bidding begins with pre-qualification of contractors based on credentials, references, and financial stability."
-      },
-      "explanation": null,
-      "code_citation": "UAP Doc 301",
-      "bloom_level": "understand",
-      "application_context": "client_scenario",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PRAC-CTR-007-004",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:fa9601125c9551d2af83cff75430f6ff8fb82d8d20ec6e2565d1404970471342"
     },
     {
       "question_id": "b916ef5c-9166-4460-a5dc-4a5f2b85e5d8",
@@ -405,26 +405,26 @@
       "content_hash": "sha256:9acd22875d1df7eb4bdf11a69dc2cc21702cb56f4de708ca5904ffdee2b8f928"
     },
     {
-      "question_id": "133a155e-942f-4423-a618-db04b924a780",
+      "question_id": "0469ce6d-9057-4c1c-8635-bc4e878aa9c1",
       "article_id": "0c598f14-db0d-490d-827d-d3088108b47f",
       "topic_id": "d07ac153-6086-428b-b536-6214d80d72db",
-      "text": "When the Owner issues an addendum to the bid documents after initial distribution, what must the Owner do to ensure fair bidding?",
+      "text": "In an invited bid procedure, what is the first step before contractors are invited to submit bids?",
       "options": [
         {
           "id": "a",
-          "text": "The addendum may be provided only to bidders who request clarification, potentially leading to unequal access to critical information"
+          "text": "The Owner publishes a public advertisement in newspapers of general circulation to solicit bids from all interested and qualified contractors within the project jurisdiction"
         },
         {
           "id": "b",
-          "text": "The addendum must be issued to all potential bidders to ensure equal information and fair competition"
+          "text": "The Owner pre-qualifies contractors by evaluating past project references, financial statements, insurance verification, and safety records; only qualified contractors are invited to bid"
         },
         {
           "id": "c",
-          "text": "The addendum is provided only to the bidders the Owner favors, which could result in biased competition and unfair bidding practices"
+          "text": "The Owner selects the lowest bidder immediately from among the pre-qualified list without requiring formal sealed bid submissions or comparative evaluation"
         },
         {
           "id": "d",
-          "text": "The addendum may be withheld from competitors of the Owner's preferred bidder, compromising the integrity of the bidding process"
+          "text": "The Owner conducts a public hearing to discuss the project scope and invites community feedback before proceeding to distribute the bidding documents to potential contractors"
         }
       ],
       "correct_option_id": "b",
@@ -433,26 +433,26 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Permits selective distribution only to those who asked; addenda modify contract documents and must reach all participants.",
-        "c": "Permits discriminatory distribution; addenda must reach all potential bidders regardless of Owner preference.",
-        "d": "Permits suppression of information from some competitors; all bidders must receive identical addenda.",
-        "correct": "Addenda must be issued to all potential bidders to ensure equal information and maintain fair competition.",
-        "takeaway": "Addenda must be distributed to all bidders, not selectively, to maintain competitive fairness."
+        "a": "Describes competitive bidding process with public advertisement, not invited bidding which is limited to pre-qualified contractors.",
+        "c": "Describes award process, not pre-qualification; selection occurs after bids are received, not before.",
+        "d": "Confuses invited bidding with public bidding procedures that may require hearings; invited bidding operates without public notice.",
+        "correct": "Invited bidding requires pre-qualification: the Owner evaluates past references, financial statements, insurance, and safety records before inviting selected contractors to bid.",
+        "takeaway": "Invited bidding begins with pre-qualification of contractors based on credentials, references, and financial stability."
       },
-      "explanation": null,
+      "explanation": "Describes competitive bidding process with public advertisement, not invited bidding which is limited to pre-qualified contractors. Describes award process, not pre-qualification; selection occurs after bids are received, not before. Confuses invited bidding with public bidding procedures that may require hearings; invited bidding operates without public notice. Invited bidding requires pre-qualification: the Owner evaluates past references, financial statements, insurance, and safety records before inviting selected contractors to bid. Invited bidding begins with pre-qualification of contractors based on credentials, references, and financial stability.",
       "code_citation": "UAP Doc 301",
-      "bloom_level": "apply",
+      "bloom_level": "understand",
       "application_context": "client_scenario",
       "practice_context": [],
-      "difficulty": 0.7,
+      "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
       "is_assessment": false,
-      "model_id": "ALE-PRAC-CTR-007-008",
+      "model_id": "ALE-PRAC-CTR-007-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:feb4c09a9fa1cc4a15e6440a92bcb64805d035bf900015be58bbf9a2d3b673ba"
+      "updated_at": "2026-05-06T15:03:07.843351+00:00",
+      "content_hash": "sha256:746e809bc3418d6b1ab75a82fb6a74196f8aa9623ecf3592f7d0ace3add99c4e"
     },
     {
       "question_id": "986d8bc6-065e-465f-b66e-96af92788a9a",

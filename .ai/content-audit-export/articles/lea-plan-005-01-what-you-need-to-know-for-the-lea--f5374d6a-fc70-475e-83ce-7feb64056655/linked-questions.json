@@ -1,7 +1,7 @@
 {
   "article_id": "f5374d6a-fc70-475e-83ce-7feb64056655",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:b285407dbf2e68cb475976e0fcd158a6a37354e3c454f4c06298d412730872c2",
+  "linked_questions_hash": "sha256:5975f0e5e890fa891fb5723b48ff8f2063754b018be9f631071c57c48e550959",
   "question_count": 10,
   "questions": [
     {
@@ -40,7 +40,7 @@
         "correct": "Hardscape includes permanent, built structures and surfaces such as paving, walls, water features, and furniture. These elements establish boundaries and provide durable surfaces for activities.",
         "takeaway": "Hardscape and softscape are complementary; hardscape provides structure and permanence."
       },
-      "explanation": null,
+      "explanation": "Softscape (living elements) provides ecological function and seasonal change but is not permanent and does not establish physical boundaries in the same way. Hardscape includes permanent, built structures and surfaces such as paving, walls, water features, and furniture. These elements establish boundaries and provide durable surfaces for activities. Grading is the reshaping of land for drainage and level areas, not a permanent landscape feature itself. Xeriscaping is a design approach for water efficiency, not a landscape component. Hardscape includes permanent, built structures and surfaces such as paving, walls, water features, and furniture. These elements establish boundaries and provide durable surfaces for activities. Hardscape and softscape are complementary; hardscape provides structure and permanence.",
       "code_citation": "Landscape Design Fundamentals section",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
@@ -52,212 +52,8 @@
       "model_id": "ALE-PLAN-005-01-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:39.941941+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:079dc772124f58c1e1e260c3d69228fba82ff3009a680c67c06b7778e38db19a"
-    },
-    {
-      "question_id": "d9f1debc-39d7-4108-95c7-54b24a61e2cf",
-      "article_id": "f5374d6a-fc70-475e-83ce-7feb64056655",
-      "topic_id": "b631cfca-ec79-4026-8951-99e5c7d6c0d4",
-      "text": "In a landscape design project, high-water plants are grouped separately from drought-tolerant natives. This strategy is known as:",
-      "options": [
-        {
-          "id": "a",
-          "text": "Monoculture planting"
-        },
-        {
-          "id": "b",
-          "text": "Hydrozoning"
-        },
-        {
-          "id": "c",
-          "text": "Mulching strategy"
-        },
-        {
-          "id": "d",
-          "text": "Permeable surfacing"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Monoculture is using one plant species only; this approach uses multiple species grouped by water needs.",
-        "b": "Hydrozoning groups plants by water needs to avoid over-watering drought-tolerant species and improve irrigation efficiency. This is a core xeriscaping principle.",
-        "c": "Mulching reduces evaporation but does not organize plants by water requirements.",
-        "d": "Permeable surfacing is a hardscape technique, not a planting organization strategy.",
-        "correct": "Hydrozoning groups plants by water needs to avoid over-watering drought-tolerant species and improve irrigation efficiency. This is a core xeriscaping principle.",
-        "takeaway": "Hydrozoning organizes plants by water needs to optimize irrigation efficiency and prevent waste."
-      },
-      "explanation": null,
-      "code_citation": "Xeriscaping and Water-Efficient Landscape Design section",
-      "bloom_level": "understand",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PLAN-005-01-004",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:29:08.090829+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:bc4330c177e368137da1b1bd526cb8a7b17ddd70997be72f635ef43c3e48ca01"
-    },
-    {
-      "question_id": "eafaa100-2ba4-4b63-b242-dac40c4ad9cd",
-      "article_id": "f5374d6a-fc70-475e-83ce-7feb64056655",
-      "topic_id": "b631cfca-ec79-4026-8951-99e5c7d6c0d4",
-      "text": "A landscape planting design uses three oak trees, two groups of five shrubs each, and scattered groundcover. This approach demonstrates which principle?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Massing and composition using odd-numbered groups"
-        },
-        {
-          "id": "b",
-          "text": "Excessive hardscape dominance over plant material"
-        },
-        {
-          "id": "c",
-          "text": "Layering with no regard for scale or spatial hierarchy"
-        },
-        {
-          "id": "d",
-          "text": "Monoculture planting strategy using a single species"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Massing uses groups of plants to create visual impact. Odd numbers (3, 5, 7) are more visually dynamic than even groups. This design uses three trees and groups of five shrubs, demonstrating massing with odd-numbered composition.",
-        "b": "Hardscape is not mentioned in this design description.",
-        "c": "Layering refers to horizontal strata (canopy, understory, shrubs, groundcovers), which this design does include, but the question is testing massing composition, not layering.",
-        "d": "Monoculture is using only one plant species; this design uses multiple species.",
-        "correct": "Massing uses groups of plants to create visual impact. Odd numbers (3, 5, 7) are more visually dynamic than even groups. This design uses three trees and groups of five shrubs, demonstrating massing with odd-numbered composition.",
-        "takeaway": "Massing with odd-numbered plant groups creates stronger visual composition than even numbers."
-      },
-      "explanation": null,
-      "code_citation": "Planting Design Principles section — Massing and composition",
-      "bloom_level": "remember",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.3,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PLAN-005-01-002",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:29:08.090829+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:ffd70b0e246baa30d400d7197f3e9612db0b82fda51f1f9444bde26b69c2c3c0"
-    },
-    {
-      "question_id": "284ebffc-363c-416d-ad8f-8f77104c76d5",
-      "article_id": "f5374d6a-fc70-475e-83ce-7feb64056655",
-      "topic_id": "b631cfca-ec79-4026-8951-99e5c7d6c0d4",
-      "text": "A landscape designer selects a mix of canopy trees, understory shrubs, and groundcovers for a park to create visual depth and habitat diversity. This strategy demonstrates:",
-      "options": [
-        {
-          "id": "a",
-          "text": "Inappropriate plant massing, which can lead to overcrowding and competition for resources"
-        },
-        {
-          "id": "b",
-          "text": "Over-reliance on hardscape elements, potentially reducing the natural aesthetic and ecological benefits"
-        },
-        {
-          "id": "c",
-          "text": "Layering that mimics natural forest structure"
-        },
-        {
-          "id": "d",
-          "text": "Excessive maintenance requirements, increasing long-term costs and resource use"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Massing and layering are distinct principles; this description focuses on layering, not massing.",
-        "b": "Hardscape is not mentioned. The description is entirely about softscape (plant) design.",
-        "c": "Layering includes canopy trees, understory trees, shrubs, groundcovers, and herbaceous plants. This horizontal stratification mimics natural forest structure, increases habitat diversity, and creates visual depth.",
-        "d": "Layering does not inherently require excessive maintenance—it depends on plant species and design goals.",
-        "correct": "Layering includes canopy trees, understory trees, shrubs, groundcovers, and herbaceous plants. This horizontal stratification mimics natural forest structure, increases habitat diversity, and creates visual depth.",
-        "takeaway": "Layering with multiple plant strata creates natural-looking landscapes with greater ecological and visual value."
-      },
-      "explanation": null,
-      "code_citation": "Planting Design Principles section — Layering",
-      "bloom_level": "understand",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PLAN-005-01-005",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:29:08.090829+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:d9731dc55c067e33b9e0adebe9e22b1f6413625a40f3f779bb5f3cd43ff39270"
-    },
-    {
-      "question_id": "09667c0d-1cc5-4427-84e6-e474c4feb476",
-      "article_id": "f5374d6a-fc70-475e-83ce-7feb64056655",
-      "topic_id": "b631cfca-ec79-4026-8951-99e5c7d6c0d4",
-      "text": "A landscape design balances 40% hardscape and 60% softscape in a public plaza. The hardscape areas are non-permeable asphalt, and the softscape includes a dense lawn with no groundcover diversity. Identify the design limitation this creates:",
-      "options": [
-        {
-          "id": "a",
-          "text": "Excessive permeable surfaces causing waterlogging, which can lead to maintenance challenges"
-        },
-        {
-          "id": "b",
-          "text": "Too much native plant composition limiting maintenance, resulting in increased upkeep costs"
-        },
-        {
-          "id": "c",
-          "text": "Over-reliance on xeriscaping reducing visual appeal, potentially affecting user satisfaction"
-        },
-        {
-          "id": "d",
-          "text": "Poor stormwater infiltration and lack of ecological habitat diversity"
-        }
-      ],
-      "correct_option_id": "d",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Non-permeable asphalt prevents waterlogging; the issue is runoff, not infiltration.",
-        "b": "Dense lawn and no groundcover diversity is not a native plant composition issue; it is the lack of diversity that limits function.",
-        "c": "Xeriscaping is not mentioned in this design. The issue is not xeriscaping strategy.",
-        "d": "Non-permeable asphalt prevents water infiltration, creating stormwater runoff problems. A monoculture lawn (single species, no groundcover diversity) offers minimal habitat value and lacks the layering needed for ecological benefit. Both issues limit the site's hydrological and ecological function.",
-        "correct": "Non-permeable asphalt prevents water infiltration, creating stormwater runoff problems. A monoculture lawn (single species, no groundcover diversity) offers minimal habitat value and lacks the layering needed for ecological benefit. Both issues limit the site's hydrological and ecological function.",
-        "takeaway": "Permeable hardscape and diverse softscape layering improve both stormwater management and habitat value."
-      },
-      "explanation": null,
-      "code_citation": "Hardscape and Softscape Components; Xeriscaping principles",
-      "bloom_level": "apply",
-      "application_context": "design_application",
-      "practice_context": [],
-      "difficulty": 0.7,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PLAN-005-01-007",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:29:08.090829+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:58b960ffc7f18bd396f9060274458fb4816501644df3c27aa90cf7e9978c5749"
+      "updated_at": "2026-05-06T16:22:30.720947+00:00",
+      "content_hash": "sha256:35b04bd0da0d422fe63a00d8ef32baf546dc4c86fb707d96dec01bf392d8e275"
     },
     {
       "question_id": "497579bc-08ec-4552-a4de-9d93b8993558",
@@ -295,7 +91,7 @@
         "correct": "Site grading with proper slope (minimum 2%) directs surface water away from buildings to prevent water damage and flooding. This is a fundamental grading principle.",
         "takeaway": "Proper grading slope (2% minimum away from buildings) is essential for site drainage and building protection."
       },
-      "explanation": null,
+      "explanation": "Site grading with proper slope (minimum 2%) directs surface water away from buildings to prevent water damage and flooding. This is a fundamental grading principle. Visual enclosure is a planting design function, not a grading function. Rooting depth depends on soil type and plant species, not primarily on slope percentage. While xeriscaping involves water management, it does not rely on site slope for surface drainage—it focuses on plant selection and irrigation efficiency. Site grading with proper slope (minimum 2%) directs surface water away from buildings to prevent water damage and flooding. This is a fundamental grading principle. Proper grading slope (2% minimum away from buildings) is essential for site drainage and building protection.",
       "code_citation": "Site Grading and Drainage Fundamentals section",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
@@ -307,8 +103,314 @@
       "model_id": "ALE-PLAN-005-01-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:08.090829+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:9686f05f86fe74b66bb6f19c393fb0e4277779c3d248bdd69f1ac7ece97c6f09"
+      "updated_at": "2026-05-06T16:22:31.294102+00:00",
+      "content_hash": "sha256:d1dae9e04a19ac2c9d7cc43d33531d885f076c0ef6c3febb9ee39757f08fdfc2"
+    },
+    {
+      "question_id": "2fc8948a-8d7c-4e01-8acc-9d2d52849d2e",
+      "article_id": "f5374d6a-fc70-475e-83ce-7feb64056655",
+      "topic_id": "b631cfca-ec79-4026-8951-99e5c7d6c0d4",
+      "text": "A Philippine municipality wants to reduce both stormwater flooding and municipal water demand through landscape redesign. Which two xeriscaping strategies would directly address both goals?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Increasing turf area and installing sprinkler irrigation, which can lead to higher water usage and less effective stormwater management"
+        },
+        {
+          "id": "b",
+          "text": "Building retaining walls and reducing plant diversity, which may not effectively manage stormwater or reduce water demand"
+        },
+        {
+          "id": "c",
+          "text": "Using permeable surfaces and selecting drought-tolerant native species"
+        },
+        {
+          "id": "d",
+          "text": "Installing hardscape only and eliminating vegetation, which could increase runoff and water demand for cooling"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Turf is water-intensive and increases runoff; this would worsen both problems.",
+        "b": "Retaining walls address only drainage capacity, not water demand; reducing plant diversity eliminates ecological benefits.",
+        "c": "Permeable surfaces allow water to infiltrate rather than running off, reducing flooding and recharging groundwater. Drought-tolerant native species require minimal watering once established, reducing municipal water demand. Both strategies address the dual goal.",
+        "d": "Vegetation is essential for ecological function and heat mitigation; eliminating it is unsustainable.",
+        "correct": "Permeable surfaces allow water to infiltrate rather than running off, reducing flooding and recharging groundwater. Drought-tolerant native species require minimal watering once established, reducing municipal water demand. Both strategies address the dual goal.",
+        "takeaway": "Permeable surfaces and native drought-tolerant plants are complementary xeriscaping strategies that reduce flooding and water demand simultaneously."
+      },
+      "explanation": "Turf is water-intensive and increases runoff; this would worsen both problems. Retaining walls address only drainage capacity, not water demand; reducing plant diversity eliminates ecological benefits. Permeable surfaces allow water to infiltrate rather than running off, reducing flooding and recharging groundwater. Drought-tolerant native species require minimal watering once established, reducing municipal water demand. Both strategies address the dual goal. Vegetation is essential for ecological function and heat mitigation; eliminating it is unsustainable. Permeable surfaces allow water to infiltrate rather than running off, reducing flooding and recharging groundwater. Drought-tolerant native species require minimal watering once established, reducing municipal water demand. Both strategies address the dual goal. Permeable surfaces and native drought-tolerant plants are complementary xeriscaping strategies that reduce flooding and water demand simultaneously.",
+      "code_citation": "Xeriscaping and Water-Efficient Landscape Design section — Philippine application",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-005-01-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:08.090829+00:00",
+      "updated_at": "2026-05-06T16:22:31.639156+00:00",
+      "content_hash": "sha256:a6ae87c1f18f177d5d69a2e437dc5486463ecbb5dd23b2edf8932b7bd16b5017"
+    },
+    {
+      "question_id": "c4a1aa83-cab7-4053-ab47-c3f3d3de6799",
+      "article_id": "f5374d6a-fc70-475e-83ce-7feb64056655",
+      "topic_id": "b631cfca-ec79-4026-8951-99e5c7d6c0d4",
+      "text": "A site has steep slopes and poor soil. The landscape designer proposes terracing with retaining walls, native drought-tolerant species hydrozoned by water needs, and mulch over rootzone. Evaluate which landscape design principles are integrated in this proposal:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only grading and hardscape; xeriscaping is not addressed, which may lead to higher water usage"
+        },
+        {
+          "id": "b",
+          "text": "Hydrozoning alone addresses all site challenges, although it may not be sufficient for erosion control"
+        },
+        {
+          "id": "c",
+          "text": "Grading (terracing), hardscape (retaining walls), softscape (native plants), and xeriscaping (hydrozoning, mulch) are all integrated"
+        },
+        {
+          "id": "d",
+          "text": "Retaining walls are sufficient; additional planting measures are unnecessary, which overlooks soil stabilization"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Xeriscaping is clearly addressed through native species selection, hydrozoning, and mulching.",
+        "b": "Hydrozoning is important but does not address grading, structural support, or soil improvement needs.",
+        "c": "This comprehensive proposal integrates grading (terracing to create level areas), hardscape (retaining walls for structural stability), softscape (native plant selection for resilience), and xeriscaping (hydrozoning to match water needs and mulch to reduce evaporation and improve soil). This holistic approach addresses slope, soil, and water challenges.",
+        "d": "Retaining walls alone do not address water needs, ecological habitat, or soil improvement.",
+        "correct": "This comprehensive proposal integrates grading (terracing to create level areas), hardscape (retaining walls for structural stability), softscape (native plant selection for resilience), and xeriscaping (hydrozoning to match water needs and mulch to reduce evaporation and improve soil). This holistic approach addresses slope, soil, and water challenges.",
+        "takeaway": "Comprehensive landscape design integrates grading, hardscape, softscape, and xeriscaping as complementary systems."
+      },
+      "explanation": "Xeriscaping is clearly addressed through native species selection, hydrozoning, and mulching. Hydrozoning is important but does not address grading, structural support, or soil improvement needs. This comprehensive proposal integrates grading (terracing to create level areas), hardscape (retaining walls for structural stability), softscape (native plant selection for resilience), and xeriscaping (hydrozoning to match water needs and mulch to reduce evaporation and improve soil). This holistic approach addresses slope, soil, and water challenges. Retaining walls alone do not address water needs, ecological habitat, or soil improvement. This comprehensive proposal integrates grading (terracing to create level areas), hardscape (retaining walls for structural stability), softscape (native plant selection for resilience), and xeriscaping (hydrozoning to match water needs and mulch to reduce evaporation and improve soil). This holistic approach addresses slope, soil, and water challenges. Comprehensive landscape design integrates grading, hardscape, softscape, and xeriscaping as complementary systems.",
+      "code_citation": "All major sections — hardscape, softscape, grading, planting design, xeriscaping",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-005-01-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:08.090829+00:00",
+      "updated_at": "2026-05-06T16:22:31.520782+00:00",
+      "content_hash": "sha256:0958dcfe34b2457a8beaca8df47ee7f4e917aca1044e0018ac127b3161d089fb"
+    },
+    {
+      "question_id": "d9f1debc-39d7-4108-95c7-54b24a61e2cf",
+      "article_id": "f5374d6a-fc70-475e-83ce-7feb64056655",
+      "topic_id": "b631cfca-ec79-4026-8951-99e5c7d6c0d4",
+      "text": "In a landscape design project, high-water plants are grouped separately from drought-tolerant natives. This strategy is known as:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Monoculture planting"
+        },
+        {
+          "id": "b",
+          "text": "Hydrozoning"
+        },
+        {
+          "id": "c",
+          "text": "Mulching strategy"
+        },
+        {
+          "id": "d",
+          "text": "Permeable surfacing"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Monoculture is using one plant species only; this approach uses multiple species grouped by water needs.",
+        "b": "Hydrozoning groups plants by water needs to avoid over-watering drought-tolerant species and improve irrigation efficiency. This is a core xeriscaping principle.",
+        "c": "Mulching reduces evaporation but does not organize plants by water requirements.",
+        "d": "Permeable surfacing is a hardscape technique, not a planting organization strategy.",
+        "correct": "Hydrozoning groups plants by water needs to avoid over-watering drought-tolerant species and improve irrigation efficiency. This is a core xeriscaping principle.",
+        "takeaway": "Hydrozoning organizes plants by water needs to optimize irrigation efficiency and prevent waste."
+      },
+      "explanation": "Monoculture is using one plant species only; this approach uses multiple species grouped by water needs. Hydrozoning groups plants by water needs to avoid over-watering drought-tolerant species and improve irrigation efficiency. This is a core xeriscaping principle. Mulching reduces evaporation but does not organize plants by water requirements. Permeable surfacing is a hardscape technique, not a planting organization strategy. Hydrozoning groups plants by water needs to avoid over-watering drought-tolerant species and improve irrigation efficiency. This is a core xeriscaping principle. Hydrozoning organizes plants by water needs to optimize irrigation efficiency and prevent waste.",
+      "code_citation": "Xeriscaping and Water-Efficient Landscape Design section",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-005-01-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:08.090829+00:00",
+      "updated_at": "2026-05-06T16:22:30.844472+00:00",
+      "content_hash": "sha256:72abcb2d12a51193f260c702c78f703c27e9774693e32e3529b0351059df62ae"
+    },
+    {
+      "question_id": "eafaa100-2ba4-4b63-b242-dac40c4ad9cd",
+      "article_id": "f5374d6a-fc70-475e-83ce-7feb64056655",
+      "topic_id": "b631cfca-ec79-4026-8951-99e5c7d6c0d4",
+      "text": "A landscape planting design uses three oak trees, two groups of five shrubs each, and scattered groundcover. This approach demonstrates which principle?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Massing and composition using odd-numbered groups"
+        },
+        {
+          "id": "b",
+          "text": "Excessive hardscape dominance over plant material"
+        },
+        {
+          "id": "c",
+          "text": "Layering with no regard for scale or spatial hierarchy"
+        },
+        {
+          "id": "d",
+          "text": "Monoculture planting strategy using a single species"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Massing uses groups of plants to create visual impact. Odd numbers (3, 5, 7) are more visually dynamic than even groups. This design uses three trees and groups of five shrubs, demonstrating massing with odd-numbered composition.",
+        "b": "Hardscape is not mentioned in this design description.",
+        "c": "Layering refers to horizontal strata (canopy, understory, shrubs, groundcovers), which this design does include, but the question is testing massing composition, not layering.",
+        "d": "Monoculture is using only one plant species; this design uses multiple species.",
+        "correct": "Massing uses groups of plants to create visual impact. Odd numbers (3, 5, 7) are more visually dynamic than even groups. This design uses three trees and groups of five shrubs, demonstrating massing with odd-numbered composition.",
+        "takeaway": "Massing with odd-numbered plant groups creates stronger visual composition than even numbers."
+      },
+      "explanation": "Massing uses groups of plants to create visual impact. Odd numbers (3, 5, 7) are more visually dynamic than even groups. This design uses three trees and groups of five shrubs, demonstrating massing with odd-numbered composition. Hardscape is not mentioned in this design description. Layering refers to horizontal strata (canopy, understory, shrubs, groundcovers), which this design does include, but the question is testing massing composition, not layering. Monoculture is using only one plant species; this design uses multiple species. Massing uses groups of plants to create visual impact. Odd numbers (3, 5, 7) are more visually dynamic than even groups. This design uses three trees and groups of five shrubs, demonstrating massing with odd-numbered composition. Massing with odd-numbered plant groups creates stronger visual composition than even numbers.",
+      "code_citation": "Planting Design Principles section — Massing and composition",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-005-01-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:08.090829+00:00",
+      "updated_at": "2026-05-06T16:22:30.960247+00:00",
+      "content_hash": "sha256:275ba94317ac0d83b5a916671f9b9a06ea798232113b79105246a6313024e439"
+    },
+    {
+      "question_id": "284ebffc-363c-416d-ad8f-8f77104c76d5",
+      "article_id": "f5374d6a-fc70-475e-83ce-7feb64056655",
+      "topic_id": "b631cfca-ec79-4026-8951-99e5c7d6c0d4",
+      "text": "A landscape designer selects a mix of canopy trees, understory shrubs, and groundcovers for a park to create visual depth and habitat diversity. This strategy demonstrates:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Inappropriate plant massing, which can lead to overcrowding and competition for resources"
+        },
+        {
+          "id": "b",
+          "text": "Over-reliance on hardscape elements, potentially reducing the natural aesthetic and ecological benefits"
+        },
+        {
+          "id": "c",
+          "text": "Layering that mimics natural forest structure"
+        },
+        {
+          "id": "d",
+          "text": "Excessive maintenance requirements, increasing long-term costs and resource use"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Massing and layering are distinct principles; this description focuses on layering, not massing.",
+        "b": "Hardscape is not mentioned. The description is entirely about softscape (plant) design.",
+        "c": "Layering includes canopy trees, understory trees, shrubs, groundcovers, and herbaceous plants. This horizontal stratification mimics natural forest structure, increases habitat diversity, and creates visual depth.",
+        "d": "Layering does not inherently require excessive maintenance—it depends on plant species and design goals.",
+        "correct": "Layering includes canopy trees, understory trees, shrubs, groundcovers, and herbaceous plants. This horizontal stratification mimics natural forest structure, increases habitat diversity, and creates visual depth.",
+        "takeaway": "Layering with multiple plant strata creates natural-looking landscapes with greater ecological and visual value."
+      },
+      "explanation": "Massing and layering are distinct principles; this description focuses on layering, not massing. Hardscape is not mentioned. The description is entirely about softscape (plant) design. Layering includes canopy trees, understory trees, shrubs, groundcovers, and herbaceous plants. This horizontal stratification mimics natural forest structure, increases habitat diversity, and creates visual depth. Layering does not inherently require excessive maintenance—it depends on plant species and design goals. Layering includes canopy trees, understory trees, shrubs, groundcovers, and herbaceous plants. This horizontal stratification mimics natural forest structure, increases habitat diversity, and creates visual depth. Layering with multiple plant strata creates natural-looking landscapes with greater ecological and visual value.",
+      "code_citation": "Planting Design Principles section — Layering",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-005-01-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:08.090829+00:00",
+      "updated_at": "2026-05-06T16:22:31.075532+00:00",
+      "content_hash": "sha256:ddb0a578d5ae9fe2919ff63387c6a58d50568e232059fc1f1ccad7b681ba6471"
+    },
+    {
+      "question_id": "09667c0d-1cc5-4427-84e6-e474c4feb476",
+      "article_id": "f5374d6a-fc70-475e-83ce-7feb64056655",
+      "topic_id": "b631cfca-ec79-4026-8951-99e5c7d6c0d4",
+      "text": "A landscape design balances 40% hardscape and 60% softscape in a public plaza. The hardscape areas are non-permeable asphalt, and the softscape includes a dense lawn with no groundcover diversity. Identify the design limitation this creates:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Excessive permeable surfaces causing waterlogging, which can lead to maintenance challenges"
+        },
+        {
+          "id": "b",
+          "text": "Too much native plant composition limiting maintenance, resulting in increased upkeep costs"
+        },
+        {
+          "id": "c",
+          "text": "Over-reliance on xeriscaping reducing visual appeal, potentially affecting user satisfaction"
+        },
+        {
+          "id": "d",
+          "text": "Poor stormwater infiltration and lack of ecological habitat diversity"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Non-permeable asphalt prevents waterlogging; the issue is runoff, not infiltration.",
+        "b": "Dense lawn and no groundcover diversity is not a native plant composition issue; it is the lack of diversity that limits function.",
+        "c": "Xeriscaping is not mentioned in this design. The issue is not xeriscaping strategy.",
+        "d": "Non-permeable asphalt prevents water infiltration, creating stormwater runoff problems. A monoculture lawn (single species, no groundcover diversity) offers minimal habitat value and lacks the layering needed for ecological benefit. Both issues limit the site's hydrological and ecological function.",
+        "correct": "Non-permeable asphalt prevents water infiltration, creating stormwater runoff problems. A monoculture lawn (single species, no groundcover diversity) offers minimal habitat value and lacks the layering needed for ecological benefit. Both issues limit the site's hydrological and ecological function.",
+        "takeaway": "Permeable hardscape and diverse softscape layering improve both stormwater management and habitat value."
+      },
+      "explanation": "Non-permeable asphalt prevents waterlogging; the issue is runoff, not infiltration. Dense lawn and no groundcover diversity is not a native plant composition issue; it is the lack of diversity that limits function. Xeriscaping is not mentioned in this design. The issue is not xeriscaping strategy. Non-permeable asphalt prevents water infiltration, creating stormwater runoff problems. A monoculture lawn (single species, no groundcover diversity) offers minimal habitat value and lacks the layering needed for ecological benefit. Both issues limit the site's hydrological and ecological function. Non-permeable asphalt prevents water infiltration, creating stormwater runoff problems. A monoculture lawn (single species, no groundcover diversity) offers minimal habitat value and lacks the layering needed for ecological benefit. Both issues limit the site's hydrological and ecological function. Permeable hardscape and diverse softscape layering improve both stormwater management and habitat value.",
+      "code_citation": "Hardscape and Softscape Components; Xeriscaping principles",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-005-01-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:08.090829+00:00",
+      "updated_at": "2026-05-06T16:22:31.18224+00:00",
+      "content_hash": "sha256:080d8d1f0ef95592bb7f8d9a5f97e79f7586c7469790557bf05fa2c7de7c5b8d"
     },
     {
       "question_id": "aa4efe5c-1c01-45f1-bc5c-006c0c0db101",
@@ -397,7 +499,7 @@
         "correct": "Design B demonstrates multiple ecological landscaping principles: layering (canopy, understory, groundcover), habitat diversity (multiple native species), and xeriscaping (native species requiring minimal water and inputs). These factors create ecological resilience and beauty.",
         "takeaway": "Ecological landscaping uses native species in diverse, layered compositions that support habitat, resilience, and sustainability."
       },
-      "explanation": null,
+      "explanation": "While Narra is culturally significant and ecologically valuable, monoculture planting lacks ecological layering and habitat diversity. Monoculture may reduce initial maintenance but creates ecological vulnerability and poor habitat value. The presence of Narra alone does not determine ecological value; the diversity and structure of the planting composition does. Design B demonstrates multiple ecological landscaping principles: layering (canopy, understory, groundcover), habitat diversity (multiple native species), and xeriscaping (native species requiring minimal water and inputs). These factors create ecological resilience and beauty. Design B demonstrates multiple ecological landscaping principles: layering (canopy, understory, groundcover), habitat diversity (multiple native species), and xeriscaping (native species requiring minimal water and inputs). These factors create ecological resilience and beauty. Ecological landscaping uses native species in diverse, layered compositions that support habitat, resilience, and sustainability.",
       "code_citation": "Planting Design Principles; Xeriscaping; The Philippine National Tree: Narra",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
@@ -409,110 +511,8 @@
       "model_id": "ALE-PLAN-005-01-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:08.090829+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:87e2b341bfee14ccb1af5a66029a98acb2f6a3e6e60403ae1b3b061796676001"
-    },
-    {
-      "question_id": "c4a1aa83-cab7-4053-ab47-c3f3d3de6799",
-      "article_id": "f5374d6a-fc70-475e-83ce-7feb64056655",
-      "topic_id": "b631cfca-ec79-4026-8951-99e5c7d6c0d4",
-      "text": "A site has steep slopes and poor soil. The landscape designer proposes terracing with retaining walls, native drought-tolerant species hydrozoned by water needs, and mulch over rootzone. Evaluate which landscape design principles are integrated in this proposal:",
-      "options": [
-        {
-          "id": "a",
-          "text": "Only grading and hardscape; xeriscaping is not addressed, which may lead to higher water usage"
-        },
-        {
-          "id": "b",
-          "text": "Hydrozoning alone addresses all site challenges, although it may not be sufficient for erosion control"
-        },
-        {
-          "id": "c",
-          "text": "Grading (terracing), hardscape (retaining walls), softscape (native plants), and xeriscaping (hydrozoning, mulch) are all integrated"
-        },
-        {
-          "id": "d",
-          "text": "Retaining walls are sufficient; additional planting measures are unnecessary, which overlooks soil stabilization"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Xeriscaping is clearly addressed through native species selection, hydrozoning, and mulching.",
-        "b": "Hydrozoning is important but does not address grading, structural support, or soil improvement needs.",
-        "c": "This comprehensive proposal integrates grading (terracing to create level areas), hardscape (retaining walls for structural stability), softscape (native plant selection for resilience), and xeriscaping (hydrozoning to match water needs and mulch to reduce evaporation and improve soil). This holistic approach addresses slope, soil, and water challenges.",
-        "d": "Retaining walls alone do not address water needs, ecological habitat, or soil improvement.",
-        "correct": "This comprehensive proposal integrates grading (terracing to create level areas), hardscape (retaining walls for structural stability), softscape (native plant selection for resilience), and xeriscaping (hydrozoning to match water needs and mulch to reduce evaporation and improve soil). This holistic approach addresses slope, soil, and water challenges.",
-        "takeaway": "Comprehensive landscape design integrates grading, hardscape, softscape, and xeriscaping as complementary systems."
-      },
-      "explanation": null,
-      "code_citation": "All major sections — hardscape, softscape, grading, planting design, xeriscaping",
-      "bloom_level": "analyze",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.9,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PLAN-005-01-009",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:29:08.090829+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:830858deca8a5df909972a6d3cfd91fca2b83d72f562c5a62133f0499c1dacbb"
-    },
-    {
-      "question_id": "2fc8948a-8d7c-4e01-8acc-9d2d52849d2e",
-      "article_id": "f5374d6a-fc70-475e-83ce-7feb64056655",
-      "topic_id": "b631cfca-ec79-4026-8951-99e5c7d6c0d4",
-      "text": "A Philippine municipality wants to reduce both stormwater flooding and municipal water demand through landscape redesign. Which two xeriscaping strategies would directly address both goals?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Increasing turf area and installing sprinkler irrigation, which can lead to higher water usage and less effective stormwater management"
-        },
-        {
-          "id": "b",
-          "text": "Building retaining walls and reducing plant diversity, which may not effectively manage stormwater or reduce water demand"
-        },
-        {
-          "id": "c",
-          "text": "Using permeable surfaces and selecting drought-tolerant native species"
-        },
-        {
-          "id": "d",
-          "text": "Installing hardscape only and eliminating vegetation, which could increase runoff and water demand for cooling"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Turf is water-intensive and increases runoff; this would worsen both problems.",
-        "b": "Retaining walls address only drainage capacity, not water demand; reducing plant diversity eliminates ecological benefits.",
-        "c": "Permeable surfaces allow water to infiltrate rather than running off, reducing flooding and recharging groundwater. Drought-tolerant native species require minimal watering once established, reducing municipal water demand. Both strategies address the dual goal.",
-        "d": "Vegetation is essential for ecological function and heat mitigation; eliminating it is unsustainable.",
-        "correct": "Permeable surfaces allow water to infiltrate rather than running off, reducing flooding and recharging groundwater. Drought-tolerant native species require minimal watering once established, reducing municipal water demand. Both strategies address the dual goal.",
-        "takeaway": "Permeable surfaces and native drought-tolerant plants are complementary xeriscaping strategies that reduce flooding and water demand simultaneously."
-      },
-      "explanation": null,
-      "code_citation": "Xeriscaping and Water-Efficient Landscape Design section — Philippine application",
-      "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.7,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PLAN-005-01-006",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:29:08.090829+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:ff8e28e4f038568d3f4529793ce81749cda67157e0b839fcc157d73f76f00500"
+      "updated_at": "2026-05-06T16:22:31.409083+00:00",
+      "content_hash": "sha256:6b33bc11256971c8f33af50ea4b2baf26d873b609a06183acf6c884c2bd7ce56"
     }
   ]
 }

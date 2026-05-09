@@ -1,5 +1,14 @@
 # UAP SPP Documents: Standards of Professional Practice for Philippine Architects
 
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **UAP SPP Documents: Standards of Professional Practice for Philippine Architects** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
+
 ## Overview
 
 ## Learning Goal
@@ -28,24 +37,11 @@ The SPP begins with **Annex "A"**, which provides essential definitions and acro
 
 ### Key Acronyms
 
-<ComparisonTable>
-
-| Acronym | Meaning |
-|---------|---------|
-| RLA | Registered and Licensed Architect |
-| Aor | Architect-of-record |
-| Aicc | Architect-in-charge of construction |
-| CA | Consulting Architect |
-| AF | Architectural Firm |
-| IAPOA | Integrated and Accredited Professional Organization of Architects |
-| PRC | Professional Regulation Commission |
-| PRBoA | Professional Regulatory Board of Architecture |
-| ADC | Architectural Design Competition |
-| PACS | Professional Architectural Consulting Services |
-| TSP | Temporary/Special Permit |
-| SPPCC | Statement of Probable Project Construction Cost |
-
-</ComparisonTable>
+[SLATECAMP_UI_BLOCK:ui_0001 component="ComparisonTable" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: | Acronym | Meaning | |---------|---------| | RLA | Registered and Licensed Architect | | Aor | Architect-of-record | | Aicc | Architect-in-charge of construction | | CA | Consulting Architect | | AF | Architectural Firm | | IAPOA | Integrated and Accredited Professional Organization of Architects | | PRC | Professional Regulation Commission | | PRBoA | Professional Regulatory Board of Architecture | | ADC | Architectural Design Competition | | PACS | Professional Architectural Consulting Servic
+[/SLATECAMP_UI_BLOCK]
 
 
 ### Selection of the Architect (Annex "A", General Notes)
@@ -64,23 +60,11 @@ Foreign architects wishing to practice in the Philippines must secure a Temporar
 
 The SPP consists of ten numbered documents plus Annex "A," each addressing a distinct type or phase of architectural service.
 
-<ComparisonTable>
-
-| SPP Document | Title | Replaces |
-|---|---|---|
-| Annex "A" | General Definitions, Acronyms & Selection of Architect | 1979 UAP Doc. 208 |
-| SPP Doc. 201 | Pre-Design Services | 1979 UAP Doc. 201 |
-| SPP Doc. 202 | Regular Design Services | 1979 UAP Doc. 202 |
-| SPP Doc. 203 | Specialized Architectural Services | 1979 UAP Doc. 203 |
-| SPP Doc. 204-A | Fulltime Supervision Services | 1979 UAP Doc. 204-A |
-| SPP Doc. 204-B | Construction Management Services | 1979 UAP Doc. 204-B |
-| SPP Doc. 205 | Post-Construction Services | 1979 UAP Doc. 205 |
-| SPP Doc. 206 | Comprehensive Architectural Services | 1979 UAP Doc. 206 |
-| SPP Doc. 207 | Design-Build Services | 1979 UAP Doc. 207 |
-| SPP Doc. 208 | Architectural Design Competition (ADC) | 1979 UAP Doc. 209 |
-| SPP Doc. 209 | Professional Architectural Consulting Services (PACS) | 1979 UAP Doc. 210 |
-
-</ComparisonTable>
+[SLATECAMP_UI_BLOCK:ui_0002 component="ComparisonTable" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: | SPP Document | Title | Replaces | |---|---|---| | Annex "A" | General Definitions, Acronyms & Selection of Architect | 1979 UAP Doc. 208 | | SPP Doc. 201 | Pre-Design Services | 1979 UAP Doc. 201 | | SPP Doc. 202 | Regular Design Services | 1979 UAP Doc. 202 | | SPP Doc. 203 | Specialized Architectural Services | 1979 UAP Doc. 203 | | SPP Doc. 204-A | Fulltime Supervision Services | 1979 UAP Doc. 204-A | | SPP Doc. 204-B | Construction Management Services | 1979 UAP Doc. 204-B | | SPP Doc. 205
+[/SLATECAMP_UI_BLOCK]
 
 
 ***
@@ -123,18 +107,11 @@ Pre-Design Services may be compensated through:
 
 ### Scope of Services (Six Phases)
 
-<ComparisonTable>
-
-| Phase | Key Architect Activities |
-|---|---|
-| **Project Definition** | Consultations with owner, data gathering, initial Statement of Probable Project Construction Cost (SPPCC) |
-| **Schematic Design** | Initial line drawings and design studies; recommended solution; updated SPPCC |
-| **Design Development** | Plans, elevations, sections, outline specifications, diagrammatic layouts; updated SPPCC |
-| **Contract Documents** | Complete detailed construction drawings, technical specifications; 7 sets submitted for building permit |
-| **Bidding/Negotiation** | Bid documents preparation; pre-bid conferences; bid evaluation; Notice of Award |
-| **Construction** | Periodic site visits; change orders; Certificates for Payment; final inspection and turnover |
-
-</ComparisonTable>
+[SLATECAMP_UI_BLOCK:ui_0003 component="ComparisonTable" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: | Phase | Key Architect Activities | |---|---| | **Project Definition** | Consultations with owner, data gathering, initial Statement of Probable Project Construction Cost (SPPCC) | | **Schematic Design** | Initial line drawings and design studies; recommended solution; updated SPPCC | | **Design Development** | Plans, elevations, sections, outline specifications, diagrammatic layouts; updated SPPCC | | **Contract Documents** | Complete detailed construction drawings, technical specifications; 7
+[/SLATECAMP_UI_BLOCK]
 
 
 The architect acts as the owner's adviser and representative during construction but is **not required to provide exhaustive 8-hour on-site supervision** unless separately contracted under SPP Doc. 204-A.
@@ -143,41 +120,22 @@ The architect acts as the owner's adviser and representative during construction
 
 SPP 202 classifies all architectural projects into ten groups based on complexity and creative skill required:
 
-<ComparisonTable>
-
-| Group | Description | Typical Projects |
-|---|---|---|
-| 1 | Simplest utilitarian buildings | Warehouses, hangars, parking structures, public markets |
-| 2 | Moderate complexity | Banks, offices, condominiums, schools, malls, churches |
-| 3 | Exceptional complexity | Hospitals, hotels, airports, theatres, convention centers |
-| 4 | Residences | Single-detached, duplex, row houses, townhouses |
-| 5 | Monumental buildings | Museums, memorials, exposition buildings |
-| 6 | Repetitive construction | Multiple identical buildings using one set of plans |
-| 7 | Housing projects | Several residential units on a single site |
-| 8 | Extensive detail | Built-in components, architectural interiors, development planning |
-| 9 | Alterations/renovations | Retrofits, rehabilitations, expansions of Groups 1–5 |
-| 10 | Consultation/opinion only | Technical advice, clarifications on architectural matters |
-
-</ComparisonTable>
+[SLATECAMP_UI_BLOCK:ui_0004 component="ComparisonTable" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: | Group | Description | Typical Projects | |---|---|---| | 1 | Simplest utilitarian buildings | Warehouses, hangars, parking structures, public markets | | 2 | Moderate complexity | Banks, offices, condominiums, schools, malls, churches | | 3 | Exceptional complexity | Hospitals, hotels, airports, theatres, convention centers | | 4 | Residences | Single-detached, duplex, row houses, townhouses | | 5 | Monumental buildings | Museums, memorials, exposition buildings | | 6 | Repetitive construction
+[/SLATECAMP_UI_BLOCK]
 
 
 ### Method of Compensation (Fee Schedule)
 
 Architect's fees for Regular Design Services are primarily computed as a **percentage of Project Construction Cost (PCC)**:
 
-<ComparisonTable>
-
-| Group | Fee Basis |
-|---|---|
-| Group 1 | 6% for PCC ≤ PHP 50M; 5% of excess over 50M |
-| Group 2 | Moderate fee sclea (higher than Group 1) |
-| Group 3 | Higher fee sclea for complex buildings |
-| Group 4 | Flat rate per residential unit |
-| Group 5 | 7% of total PCC (iconic/monumental) |
-| Group 6 | Declining fee per additional identical structure (80%, 60%, 40%, etc.) |
-| Group 9 | 150% of the applicable Group 1–5 fee |
-
-</ComparisonTable>
+[SLATECAMP_UI_BLOCK:ui_0005 component="ComparisonTable" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: | Group | Fee Basis | |---|---| | Group 1 | 6% for PCC ≤ PHP 50M; 5% of excess over 50M | | Group 2 | Moderate fee sclea (higher than Group 1) | | Group 3 | Higher fee sclea for complex buildings | | Group 4 | Flat rate per residential unit | | Group 5 | 7% of total PCC (iconic/monumental) | | Group 6 | Declining fee per additional identical structure (80%, 60%, 40%, etc.) | | Group 9 | 150% of the applicable Group 1–5 fee |
+[/SLATECAMP_UI_BLOCK]
 
 
 Other methods include Multiple of Direct Personnel Expenses, Unit Cost, Lump Sum, and Mixed Methods.
@@ -282,17 +240,11 @@ The concept of CAS crystallized in response to increasingly complex building pro
 
 CAS encompasses all services under the preceding SPP documents:
 
-<ComparisonTable>
-
-| Phase | Reference Document |
-|---|---|
-| Pre-Design Services | SPP Doc. 201 |
-| Regular Design Services | SPP Doc. 202 |
-| Specialized Architectural Services | SPP Doc. 203 |
-| Fulltime Supervision or Construction Management | SPP Doc. 204-A / 204-B |
-| Post-Construction Services | SPP Doc. 205 |
-
-</ComparisonTable>
+[SLATECAMP_UI_BLOCK:ui_0006 component="ComparisonTable" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: | Phase | Reference Document | |---|---| | Pre-Design Services | SPP Doc. 201 | | Regular Design Services | SPP Doc. 202 | | Specialized Architectural Services | SPP Doc. 203 | | Fulltime Supervision or Construction Management | SPP Doc. 204-A / 204-B | | Post-Construction Services | SPP Doc. 205 |
+[/SLATECAMP_UI_BLOCK]
 
 
 ***
@@ -327,17 +279,11 @@ The ADC promotes design innovation, creativity, and excellence in architecture. 
 
 ### Key Roles
 
-<ComparisonTable>
-
-| Role | Description |
-|---|---|
-| **Owner/Promoter** | Organization sponsoring the ADC and financing competition prizes |
-| **Professional Advisor** | RLA nominated by the owner and approved by IAPOA to organize the ADC |
-| **Jury** | Majority of RLAs plus a lay juror; approved by IAPOA; at least 5 members |
-| **Technical Advisors** | Specialists consulted by jurors for specific technical matters |
-| **Competition Secretariat** | Administrative body supporting the Professional Advisor and Jury |
-
-</ComparisonTable>
+[SLATECAMP_UI_BLOCK:ui_0007 component="ComparisonTable" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: | Role | Description | |---|---| | **Owner/Promoter** | Organization sponsoring the ADC and financing competition prizes | | **Professional Advisor** | RLA nominated by the owner and approved by IAPOA to organize the ADC | | **Jury** | Majority of RLAs plus a lay juror; approved by IAPOA; at least 5 members | | **Technical Advisors** | Specialists consulted by jurors for specific technical matters | | **Competition Secretariat** | Administrative body supporting the Professional Advisor and Jury
+[/SLATECAMP_UI_BLOCK]
 
 
 ### Classifications of ADCs
@@ -417,22 +363,11 @@ The UAP, as the IAPOA, plays a central role in the administration and enforcemen
 
 The SPP documents collectively define what the profession calls the **Spectrum of Architectural Services** — a comprehensive view of how an architect can serve a client from the earliest project idea through long-term building administration.
 
-<ComparisonTable>
-
-| Stage | SPP Document(s) |
-|---|---|
-| Pre-design and feasibility | SPP Doc. 201 |
-| Design and documentation | SPP Doc. 202 |
-| Specialized design | SPP Doc. 203 |
-| Construction supervision | SPP Doc. 204-A |
-| Construction management | SPP Doc. 204-B |
-| Post-construction and operations | SPP Doc. 205 |
-| All-in-one comprehensive delivery | SPP Doc. 206 |
-| Design + build combined | SPP Doc. 207 |
-| Competitive design selection | SPP Doc. 208 |
-| Professional consulting | SPP Doc. 209 |
-
-</ComparisonTable>
+[SLATECAMP_UI_BLOCK:ui_0008 component="ComparisonTable" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: | Stage | SPP Document(s) | |---|---| | Pre-design and feasibility | SPP Doc. 201 | | Design and documentation | SPP Doc. 202 | | Specialized design | SPP Doc. 203 | | Construction supervision | SPP Doc. 204-A | | Construction management | SPP Doc. 204-B | | Post-construction and operations | SPP Doc. 205 | | All-in-one comprehensive delivery | SPP Doc. 206 | | Design + build combined | SPP Doc. 207 | | Competitive design selection | SPP Doc. 208 | | Professional consulting | SPP Doc. 209 |
+[/SLATECAMP_UI_BLOCK]
 
 
 Together, these documents ensure that architectural practice in the Philippines meets the standards of public health, safety, welfare, and professional integrity mandated under R.A. No. 9266.

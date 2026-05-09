@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Strc 007 06 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 ## Learning Goal
 By the end of this article, you will be able to:
@@ -10,7 +19,11 @@ By the end of this article, you will be able to:
 Construction joints are intentional breaks in concrete placement where two successive concrete pours meet. The LEA tests your mastery of NSCP location rules to minimize stress concentration and ensure adequate shear transfer. Critical values: floor joints locate in the middle third of span, girder offsets = 2× beam width, temporary shrinkage steel ratio = 0.0018 (Grade 60).
 
 ## Core Concept
-<ArticleMedia id="media-lea-strc-007-06-core-concept" type="image" caption="Construction Joints — Location, Surface Preparation, and Key Details" description="Elevation and section views of construction joints: (1) Preferred joint locations — midspan (low shear zone for beams), slab midpoint; (2) Key/dowel detail at vertical joint face; (3) Surface preparation methods (wet sandblasted, chipped, exposed aggregate); (4) Waterstop placement for water-retaining structures; (5) Prohibited zones — within plastic hinge regions, near supports, in shear-critical areas." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-strc-007-06-core-concept", type="image", caption="Construction Joints — Location, Surface Preparation, and Key Details", description="Elevation and section views of construction joints: (1) Preferred joint locations — midspan (low shear zone for beams), slab midpoint; (2) Key/dowel detail at vertical joint face; (3) Surface preparation methods (wet sandblasted, chipped, exposed aggregate); (4) Waterstop placement for water-retaining structures; (5) Prohibited zones — within plastic hinge regions, near supports, in shear-critical areas.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 Construction joints interrupt the concrete monolith at locations where the structural stress is minimum, allowing discontinuous placement without compromising strength. Two principles govern location:
 
@@ -70,9 +83,11 @@ In Philippine construction, floor slab construction joints are often placed at t
 
 4. **Spacing verification:** "Temp steel bars for a 180 mm slab joint are spaced at 500 mm. Is this compliant?" (Answer: max spacing = min(5 × 180, 450) = 450 mm; 500 mm exceeds limit; non-compliant; difficulty 0.7)
 
-<Tip>
-Joint location: middle third of span (avoid supports and center if possible). Girder offset: 2× beam width minimum from floor joint. Temp steel: ρ = 0.0018 (Grade 60), max spacing = min(5h, 450 mm). Dowels at beam-column joints: ≥50% of flexural steel, normal to joint for shear transfer.
-</Tip>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Joint location: middle third of span (avoid supports and center if possible). Girder offset: 2× beam width minimum from floor joint. Temp steel: ρ = 0.0018 (Grade 60), max spacing = min(5h, 450 mm). Dowels at beam-column joints: ≥50% of flexural steel, normal to joint for shear transfer.
+[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 
@@ -80,6 +95,14 @@ See also: **Embedded Conduits** (lea-strc-007-05) for how conduits cross joints,
 
 ## Common Mistakes
 
-<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: These are frequently tested traps. Memorize them to avoid losing easy points on exam day.
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeList mistakes={[ "Construction joint can be placed anywhere in the span — WRONG. Must be within middle third (NSCP 6.4.1).", "Girder offset = 1× beam width — WRONG. Always 2× beam width minimum.", "No reinforcement needed at construction joints — WRONG. Temp/shrinkage steel ρ = 0.0018 required (Grade 60).", "Temp steel spacing = full depth (e.g., 450 mm for all) — WRONG. Spacing = min(5h, 450 mm); for thin slabs (h = 100 mm), max = 500 mm, but 450 mm cap applies.", "Temp steel bars can be placed perpendicular to joint (spanning the joint) — WRONG. Bars must be parallel to joint, normal to shear flow direction.", "Construction joint surface does not need preparation — WRONG. Laitance must be removed and aggregate exposed for bond." ]} />
+[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[ \"Construction joint can be placed anywhere in the span — WRONG. Must be within middle third (NSCP 6.4.1).\", \"Girder offset = 1× beam width — WRONG. Always 2× beam width minimum.\", \"No reinforcement needed at construction joints — WRONG. Temp/shrinkage steel ρ = 0.0018 required (Grade 60).\", \"Temp steel spacing = full depth (e.g., 450 mm for all) — WRONG. Spacing = min(5h, 450 mm); for thin slabs (h = 100 mm), max = 500 mm, but 450 mm cap applies.\", \"Temp steel bars can be placed perpendicular to joint (spanning the joint) — WRONG. Bars must be parallel to joint, normal to shear flow direction.\", \"Construction joint surface does not need preparation — WRONG. Laitance must be removed and aggregate exposed for bond.\" ]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]

@@ -55,7 +55,7 @@ The challenge for Filipino architects is to translate spatial justice principles
 [SLATECAMP_UI_BLOCK:ui_0005 component="Warn" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: Spatial justice is not decoration. Cosmetic inclusivity—colorful murals in informal settlements, token community consultations, "culturally inspired" design elements—can mask deepening injustice. True spatial justice requires material redistribution (affordable housing, community land control, equitable public space), not aesthetic gestures. Architects must be honest about what design can and cannot accomplish. A well-designed public plaza does not address poverty. True spatial justice requires 
+- Text: Spatial justice is not decoration. Cosmetic inclusivity—colorful murals in informal settlements, token community consultations, "culturally inspired" design elements—can mask deepening injustice. True spatial justice requires material redistribution (affordable housing, community land control, equitable public space), not aesthetic gestures. Architects must be honest about what design can and cannot accomplish. A well-designed public plaza does not address poverty. True spatial justice requires
 [/SLATECAMP_UI_BLOCK]
 
 ## Key Facts and Testable Items

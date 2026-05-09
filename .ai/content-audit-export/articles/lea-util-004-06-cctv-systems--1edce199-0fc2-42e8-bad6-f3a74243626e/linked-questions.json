@@ -1,9 +1,59 @@
 {
   "article_id": "1edce199-0fc2-42e8-bad6-f3a74243626e",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:bde9d8ee6aabc803a83e41bbdd4f39f476cbb428f064595f881281d4948fba41",
+  "linked_questions_hash": "sha256:ba48d66715e30214463a66f2b8f0346f33c955072e2fb17ebecabc9f23543068",
   "question_count": 16,
   "questions": [
+    {
+      "question_id": "accef436-2780-487e-afe8-a87836820df7",
+      "article_id": "1edce199-0fc2-42e8-bad6-f3a74243626e",
+      "topic_id": "824a68bb-40fc-4c13-8f26-c80f796172fc",
+      "text": "In a flood-prone Philippine urban area, what is the critical design consideration for security operations center (SOC) placement beyond standard security access requirements?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Proximity to the main lobby for optimal guard line-of-sight, ensuring quick response times in case of emergencies"
+        },
+        {
+          "id": "b",
+          "text": "Elevation above flooding risk to ensure continuous operation during typhoon seasons"
+        },
+        {
+          "id": "c",
+          "text": "Central location within the building for balanced cable routing and efficient communication with all departments"
+        },
+        {
+          "id": "d",
+          "text": "Ground-floor placement to facilitate equipment replacement and maintenance, minimizing downtime during repairs"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Proximity to main lobby is important for operational oversight but does not address flood risk in flood-prone areas.",
+        "c": "Balanced cable routing is a secondary consideration; elevated placement for flood protection is paramount in the Philippine context.",
+        "d": "Ground-floor placement would directly expose the SOC to flooding risk, contradicting best practices for flood-prone regions.",
+        "correct": "The SOC should be located near the main lobby or gatehouse AND must be elevated above flooding risk, a critical consideration for Philippine urban facilities. Flooding can disable critical equipment, interrupt power systems, and compromise security operations during emergencies.",
+        "takeaway": "In flood-prone Philippine urban areas, SOC placement must prioritize elevation above expected flood levels to maintain continuous security operations during natural disasters."
+      },
+      "explanation": "Proximity to main lobby is important for operational oversight but does not address flood risk in flood-prone areas. Balanced cable routing is a secondary consideration; elevated placement for flood protection is paramount in the Philippine context. Ground-floor placement would directly expose the SOC to flooding risk, contradicting best practices for flood-prone regions. The SOC should be located near the main lobby or gatehouse AND must be elevated above flooding risk, a critical consideration for Philippine urban facilities. Flooding can disable critical equipment, interrupt power systems, and compromise security operations during emergencies. In flood-prone Philippine urban areas, SOC placement must prioritize elevation above expected flood levels to maintain continuous security operations during natural disasters.",
+      "code_citation": "LEA-UTIL-004-06.mdx - Security Operations Center (SOC) / Control Room Design > Location and Access",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-06-019",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-05-06T11:48:40.097246+00:00",
+      "content_hash": "sha256:79099a6c9c785fb7fbe823493ea0061cd51096b2c4693b403aa98f3b567994cc"
+    },
     {
       "question_id": "19ef3454-cab4-474a-80e7-1653dcc7b299",
       "article_id": "1edce199-0fc2-42e8-bad6-f3a74243626e",
@@ -189,7 +239,7 @@
         "correct": "IP intercoms transmit audio and video over existing Ethernet infrastructure, reducing cabling requirements compared to dedicated analog pairs. They integrate seamlessly with modern access control systems and Building Management Systems, providing a unified platform for security operations.",
         "takeaway": "IP intercoms are preferred in modern buildings because they leverage existing network infrastructure and provide seamless integration with access control and BMS systems."
       },
-      "explanation": null,
+      "explanation": "Analog systems actually suffer from range limitations and cabling challenges; IP systems leverage existing network infrastructure. While analog systems have lower initial cost, IP systems offer superior integration and reduced installation complexity that offsets this advantage. Both IP and analog systems require proper power management in Philippine facilities due to voltage fluctuations; this is not a differentiating factor. IP intercoms transmit audio and video over existing Ethernet infrastructure, reducing cabling requirements compared to dedicated analog pairs. They integrate seamlessly with modern access control systems and Building Management Systems, providing a unified platform for security operations. IP intercoms are preferred in modern buildings because they leverage existing network infrastructure and provide seamless integration with access control and BMS systems.",
       "code_citation": "LEA-UTIL-004-06.mdx - Intercom and Video Intercom Systems",
       "bloom_level": "understand",
       "application_context": "recall",
@@ -201,8 +251,8 @@
       "model_id": "ALE-UTIL-004-06-016",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:02.422831+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:3e94131a09de37147af3fd77492035d0f0f8b43a7157812464191c5e610ea63a"
+      "updated_at": "2026-05-06T11:40:45.587799+00:00",
+      "content_hash": "sha256:cee146ee0c692bd164f3cc5324045274ff6aae199756e5dc93eb5715637c5e5d"
     },
     {
       "question_id": "07d58579-11e3-4ed5-8fb6-5dc7be036efb",
@@ -239,7 +289,7 @@
         "correct": "Dome cameras are mounted flush against ceilings or walls and offer aesthetic integration with interior design. The dome housing protects optics and provides operational discretion because observers cannot easily determine the viewing direction.",
         "takeaway": "Dome cameras are the preferred choice for indoor environments requiring both discrete operation and aesthetic integration."
       },
-      "explanation": null,
+      "explanation": "Bullet cameras are cylindrical and typically mounted on external walls for perimeter surveillance, not for discrete indoor use. PTZ cameras are used for dynamic coverage of critical zones but do not provide aesthetic integration or directional concealment. Panoramic fisheye cameras provide wide coverage but are not typically chosen for discrete indoor surveillance with directional ambiguity. Dome cameras are mounted flush against ceilings or walls and offer aesthetic integration with interior design. The dome housing protects optics and provides operational discretion because observers cannot easily determine the viewing direction. Dome cameras are the preferred choice for indoor environments requiring both discrete operation and aesthetic integration.",
       "code_citation": "LEA-UTIL-004-06.mdx - CCTV Systems > Camera Types and Applications",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
@@ -251,8 +301,8 @@
       "model_id": "ALE-UTIL-004-06-011",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:02.422831+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:de4247668e5b01945fdd607920647b9cc00afe11f853ee1d4a4d6ca9924b4b2c"
+      "updated_at": "2026-05-06T11:40:46.231183+00:00",
+      "content_hash": "sha256:925b83fc465c88cd1230ae2842b74638ca479227cfc59afb4eacd1898e866b8e"
     },
     {
       "question_id": "3262c3f5-1a71-44ef-8ea0-cba350558f80",
@@ -553,56 +603,6 @@
       "created_at": "2026-03-23T19:28:02.422831+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:2f338c44609c1f01f778dc5344f9f4678058250bead138c48999b1395571db7e"
-    },
-    {
-      "question_id": "accef436-2780-487e-afe8-a87836820df7",
-      "article_id": "1edce199-0fc2-42e8-bad6-f3a74243626e",
-      "topic_id": "824a68bb-40fc-4c13-8f26-c80f796172fc",
-      "text": "In a flood-prone Philippine urban area, what is the critical design consideration for security operations center (SOC) placement beyond standard security access requirements?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Proximity to the main lobby for optimal guard line-of-sight, ensuring quick response times in case of emergencies"
-        },
-        {
-          "id": "b",
-          "text": "Elevation above flooding risk to ensure continuous operation during typhoon seasons"
-        },
-        {
-          "id": "c",
-          "text": "Central location within the building for balanced cable routing and efficient communication with all departments"
-        },
-        {
-          "id": "d",
-          "text": "Ground-floor placement to facilitate equipment replacement and maintenance, minimizing downtime during repairs"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Proximity to main lobby is important for operational oversight but does not address flood risk in flood-prone areas.",
-        "c": "Balanced cable routing is a secondary consideration; elevated placement for flood protection is paramount in the Philippine context.",
-        "d": "Ground-floor placement would directly expose the SOC to flooding risk, contradicting best practices for flood-prone regions.",
-        "correct": "The SOC should be located near the main lobby or gatehouse AND must be elevated above flooding risk, a critical consideration for Philippine urban facilities. Flooding can disable critical equipment, interrupt power systems, and compromise security operations during emergencies.",
-        "takeaway": "In flood-prone Philippine urban areas, SOC placement must prioritize elevation above expected flood levels to maintain continuous security operations during natural disasters."
-      },
-      "explanation": null,
-      "code_citation": "LEA-UTIL-004-06.mdx - Security Operations Center (SOC) / Control Room Design > Location and Access",
-      "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-UTIL-004-06-019",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:28:02.422831+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:340eba94ad04f6734aa0bdbc8638240b539d925e06c41e2df8d645c1ac415fac"
     },
     {
       "question_id": "817cdf9f-82b4-4a22-814f-539acb385a6d",

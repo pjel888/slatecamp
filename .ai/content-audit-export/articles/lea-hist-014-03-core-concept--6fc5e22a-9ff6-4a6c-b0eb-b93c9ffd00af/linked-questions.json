@@ -1,9 +1,61 @@
 {
   "article_id": "6fc5e22a-9ff6-4a6c-b0eb-b93c9ffd00af",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:efa29262ea85104871b3c657d4c8a842e705961292fa3f4dd012357de18d37d9",
+  "linked_questions_hash": "sha256:e91e063d3b2c8c97650bb3932989c81054cee13cb01c6fa39fa941229e3bf82e",
   "question_count": 11,
   "questions": [
+    {
+      "question_id": "7c17cb3b-dc31-4a8a-bf5d-6061e221229a",
+      "article_id": "6fc5e22a-9ff6-4a6c-b0eb-b93c9ffd00af",
+      "topic_id": "9df59020-d52c-477b-b41c-32da8b27ff35",
+      "text": "A building combines Gothic verticality with Renaissance palazzo form and classical columns in a symmetrical facade, unified through proportion and axial organization. this as:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Confused eclecticism failing to achieve coherence, often resulting in a lack of unified architectural language across the structure"
+        },
+        {
+          "id": "b",
+          "text": "Pure neoclassicism with applied decorative elements, emphasizing symmetry and classical orders without integrating diverse historical styles"
+        },
+        {
+          "id": "c",
+          "text": "American Beaux-Arts eclecticism unified through proportional and compositional principles"
+        },
+        {
+          "id": "d",
+          "text": "Postmodern irony playfully mixing historical references, often using pastiche to create a dialogue between different architectural periods"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The article defends eclectic combination as Beaux-Arts when unified through composition.",
+        "b": "Pure neoclassicism would not combine Gothic and Renaissance elements.",
+        "d": "Postmodernism emerged much later and uses irony; American Beaux-Arts is sincere composition.",
+        "correct": "The article addresses Pattern 3: 'Questions present buildings combining multiple historical references (Gothic tower, Renaissance palace, Romanesque arch). You explain why this is Beaux-Arts, not confused eclectic pastiche: the unifying principle is symmetry, proportion, and hierarchical ordering.'",
+        "takeaway": "You explain why this is Beaux-Arts, not confused eclectic pastiche: the unifying principle is symmetry, proportion, and hierarchical ordering.'."
+      },
+      "explanation": "The article defends eclectic combination as Beaux-Arts when unified through composition. Pure neoclassicism would not combine Gothic and Renaissance elements. Postmodernism emerged much later and uses irony; American Beaux-Arts is sincere composition. The article addresses Pattern 3: 'Questions present buildings combining multiple historical references (Gothic tower, Renaissance palace, Romanesque arch). You explain why this is Beaux-Arts, not confused eclectic pastiche: the unifying principle is symmetry, proportion, and hierarchical ordering.' You explain why this is Beaux-Arts, not confused eclectic pastiche: the unifying principle is symmetry, proportion, and hierarchical ordering.'.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-014-03-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.310909+00:00",
+      "updated_at": "2026-05-06T13:22:21.954412+00:00",
+      "content_hash": "sha256:6bb8a742ce865a11d237dcd98b7093d3064f9bd0384ab8748a23c2e16d0ec189"
+    },
     {
       "question_id": "0cfa012a-2062-48f9-8e9a-8892e76067b1",
       "article_id": "6fc5e22a-9ff6-4a6c-b0eb-b93c9ffd00af",
@@ -91,7 +143,7 @@
         "correct": "Their Pennsylvania Station (New York, 1910, demolished 1964) modeled itself on the Roman Baths of Caracalla—a railroad shed wrapped in Beaux-Arts grandeur.'",
         "takeaway": "The article states: 'Their Pennsylvania Station (New York, 1910, demolished 1964) modeled itself on the Roman Baths of Caracalla—a railroad shed wrapped in Beaux-Arts grandeur.'."
       },
-      "explanation": null,
+      "explanation": "Versailles is not mentioned as the model for Pennsylvania Station. While Beaux-Arts used domed rotundas, Pennsylvania Station is specifically compared to the Baths of Caracalla. Gothic design is mentioned as one eclectic element but not as Pennsylvania Station's primary model. Their Pennsylvania Station (New York, 1910, demolished 1964) modeled itself on the Roman Baths of Caracalla—a railroad shed wrapped in Beaux-Arts grandeur.' The article states: 'Their Pennsylvania Station (New York, 1910, demolished 1964) modeled itself on the Roman Baths of Caracalla—a railroad shed wrapped in Beaux-Arts grandeur.'.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -105,8 +157,8 @@
       "model_id": "ALE-HIST-014-03-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:25.310909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:9c120970ba74003687122c4011963185f1794f93e2475345999798d33df56e11"
+      "updated_at": "2026-05-06T13:22:21.356027+00:00",
+      "content_hash": "sha256:a5c81618580108166c2dee8c99bab66f9eb87a41cc475d03f00f60e80e44f926"
     },
     {
       "question_id": "e0590681-ac12-45a8-9be2-8d41085fabbc",
@@ -143,7 +195,7 @@
         "correct": "Questions ask why American Beaux-Arts buildings are so large and ornate. You explain: these buildings (libraries, stations, post offices) embodied democratic ideology. The scale and ornament said you, the citizen, deserve grandeur. Beaux-Arts made public institutions visible as civic expression.'",
         "takeaway": "Beaux-Arts made public institutions visible as civic expression.'."
       },
-      "explanation": null,
+      "explanation": "While European tradition influenced design, the specific motivation was democratic expression. Ornate large buildings are typically more expensive, not cheaper. The Beaux-Arts method emphasizes composition and proportion; monumental scale reflects American democratic application, not methodology requirement. Questions ask why American Beaux-Arts buildings are so large and ornate. You explain: these buildings (libraries, stations, post offices) embodied democratic ideology. The scale and ornament said you, the citizen, deserve grandeur. Beaux-Arts made public institutions visible as civic expression.' Beaux-Arts made public institutions visible as civic expression.'.",
       "code_citation": null,
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
@@ -157,8 +209,8 @@
       "model_id": "ALE-HIST-014-03-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:25.310909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:d360e1e056a13320b1e857b828d0d841a2ebc9ed6bfd830160104ac8bb9fba67"
+      "updated_at": "2026-05-06T13:22:21.503544+00:00",
+      "content_hash": "sha256:a981a248b76ce1fb64b9c04c496d2c80197513f08c1b65edc5e3f5ab66bd32b8"
     },
     {
       "question_id": "8b92488b-46ad-49f3-861d-0a2426862d8c",
@@ -195,7 +247,7 @@
         "correct": "The École des Beaux-Arts in Paris was the world's most prestigious architecture school... They returned to America with rigorous training in classical composition, academic drawing, and monumental design.' American architects used this training to make civic buildings worthy of European grandeur.",
         "takeaway": "They returned to America with rigorous training in classical composition, academic drawing, and monumental design.' American architects used this training to make civic buildings worthy of European grandeur."
       },
-      "explanation": null,
+      "explanation": "While cultural exchange occurred, the article emphasizes architectural training and design methodology. The article frames Paris training as preparation for American practice, not escape. Direct replication is addressed in the article: American Beaux-Arts is eclectic, not pure copying. The École des Beaux-Arts in Paris was the world's most prestigious architecture school... They returned to America with rigorous training in classical composition, academic drawing, and monumental design.' American architects used this training to make civic buildings worthy of European grandeur. They returned to America with rigorous training in classical composition, academic drawing, and monumental design.' American architects used this training to make civic buildings worthy of European grandeur.",
       "code_citation": null,
       "bloom_level": "apply",
       "application_context": "code_interpretation",
@@ -209,8 +261,8 @@
       "model_id": "ALE-HIST-014-03-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:25.310909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:3923a976acd1bf651cbfb984932c7a0e5a4d1ebb3378dd5383244aa119018697"
+      "updated_at": "2026-05-06T13:22:21.656775+00:00",
+      "content_hash": "sha256:0798ef733162ff193aaa396172d842b8728abf996897cdd66cfda0a2f9246ff4"
     },
     {
       "question_id": "3e303f8e-0766-4c98-98c4-cbf149b7cde8",
@@ -247,7 +299,7 @@
         "correct": "French Beaux-Arts is purely classical. American Beaux-Arts is eclectic: it combines classical composition with Romanesque Revival, neoclassical detail, Renaissance palace precedent, and Gothic verticality. The principle is unity through proportion and symmetry, not stylistic purity.'",
         "takeaway": "The principle is unity through proportion and symmetry, not stylistic purity.'."
       },
-      "explanation": null,
+      "explanation": "This reverses the actual relationship—American is eclectic, European is classical. The article emphasizes monumental scale in American Beaux-Arts, not reduction. American Beaux-Arts maintains symmetry and axiality, not asymmetrical composition. French Beaux-Arts is purely classical. American Beaux-Arts is eclectic: it combines classical composition with Romanesque Revival, neoclassical detail, Renaissance palace precedent, and Gothic verticality. The principle is unity through proportion and symmetry, not stylistic purity.' The principle is unity through proportion and symmetry, not stylistic purity.'.",
       "code_citation": null,
       "bloom_level": "apply",
       "application_context": "design_application",
@@ -261,60 +313,8 @@
       "model_id": "ALE-HIST-014-03-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:25.310909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:522fa9d17df6d4f26589f000293840b3bc55d150d0417952fe681a33b3e4058f"
-    },
-    {
-      "question_id": "7c17cb3b-dc31-4a8a-bf5d-6061e221229a",
-      "article_id": "6fc5e22a-9ff6-4a6c-b0eb-b93c9ffd00af",
-      "topic_id": "9df59020-d52c-477b-b41c-32da8b27ff35",
-      "text": "A building combines Gothic verticality with Renaissance palazzo form and classical columns in a symmetrical facade, unified through proportion and axial organization. this as:",
-      "options": [
-        {
-          "id": "a",
-          "text": "Confused eclecticism failing to achieve coherence, often resulting in a lack of unified architectural language across the structure"
-        },
-        {
-          "id": "b",
-          "text": "Pure neoclassicism with applied decorative elements, emphasizing symmetry and classical orders without integrating diverse historical styles"
-        },
-        {
-          "id": "c",
-          "text": "American Beaux-Arts eclecticism unified through proportional and compositional principles"
-        },
-        {
-          "id": "d",
-          "text": "Postmodern irony playfully mixing historical references, often using pastiche to create a dialogue between different architectural periods"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "The article defends eclectic combination as Beaux-Arts when unified through composition.",
-        "b": "Pure neoclassicism would not combine Gothic and Renaissance elements.",
-        "d": "Postmodernism emerged much later and uses irony; American Beaux-Arts is sincere composition.",
-        "correct": "The article addresses Pattern 3: 'Questions present buildings combining multiple historical references (Gothic tower, Renaissance palace, Romanesque arch). You explain why this is Beaux-Arts, not confused eclectic pastiche: the unifying principle is symmetry, proportion, and hierarchical ordering.'",
-        "takeaway": "You explain why this is Beaux-Arts, not confused eclectic pastiche: the unifying principle is symmetry, proportion, and hierarchical ordering.'."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "apply",
-      "application_context": "design_application",
-      "practice_context": [
-        "CMP"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-HIST-014-03-008",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:25.310909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:f125477b4798a29c9b8267f4cef560ead9c3214940c41f11220b767271d05c83"
+      "updated_at": "2026-05-06T13:22:21.803022+00:00",
+      "content_hash": "sha256:ab60a982a8726b9388336540cf30aad0ca4514e18cfc1931dbc323d95adfdecd"
     },
     {
       "question_id": "168ee845-4b80-4abd-bda8-f34a70a91e33",
@@ -351,7 +351,7 @@
         "correct": "The article cautions: 'Treating all large civic buildings as Beaux-Arts... Neoclassical buildings (1780–1840) are symmetrical but predate Beaux-Arts training. Art Deco buildings (1920–1940) are geometric but reject Beaux-Arts ornament. Specify why a building is Beaux-Arts: what principles of composition, ornament, and integration of fine arts does it display?'",
         "takeaway": "Specify why a building is Beaux-Arts: what principles of composition, ornament, and integration of fine arts does it display?'."
       },
-      "explanation": null,
+      "explanation": "While Beaux-Arts uses classical language, the methodology and eclecticism distinguish it from pure neoclassicism. While Beaux-Arts emphasizes monumentality, size alone does not distinguish Beaux-Arts from neoclassical. Both emphasize symmetry; symmetry is shared, not distinctive. The article cautions: 'Treating all large civic buildings as Beaux-Arts... Neoclassical buildings (1780–1840) are symmetrical but predate Beaux-Arts training. Art Deco buildings (1920–1940) are geometric but reject Beaux-Arts ornament. Specify why a building is Beaux-Arts: what principles of composition, ornament, and integration of fine arts does it display?' Specify why a building is Beaux-Arts: what principles of composition, ornament, and integration of fine arts does it display?'.",
       "code_citation": null,
       "bloom_level": "analyze",
       "application_context": "design_application",
@@ -365,8 +365,8 @@
       "model_id": "ALE-HIST-014-03-011",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:25.310909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:4b61e6f931dbcf86faeb15176a2c1f244c31f781b6015165657ab2e130f2b15c"
+      "updated_at": "2026-05-06T13:22:22.123896+00:00",
+      "content_hash": "sha256:17785327b7fae52178b3e2b3c5ac3ec13e6978cca36e512e78f0e739876034a0"
     },
     {
       "question_id": "ee85cc6b-098b-4bd9-9241-a01d0cba4094",

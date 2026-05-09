@@ -141,7 +141,7 @@ The Philippine Green Building Code offers two compliance paths:
 **Energy Modeling Software Accepted by DOE:**
 - EnergyPlus (US DOE, freely available; most rigorous)
 - TRACE 3D+ (proprietary; widely used by MEP engineers in Philippines)
-- IES 
+- IES
 - HAP/CHVAC (design-stage estimates)
 
 Models must account for Philippine tropical conditions: 26–28°C baseline temperatures, 75–85% humidity, monsoon wind patterns, and Type I–IV climate variation by region.
@@ -288,7 +288,7 @@ Extracted summary:
 - Text: (none detected)
 [/SLATECAMP_UI_BLOCK]
 Extracted summary:
-- Props: 
+- Props:
 - Text: The Philippines has two primary green building frameworks: BERDE (Building Ecological Responsive Design Excellence), the national voluntary system administered by the Philippine Green Building Council
 
 ## Common Mistakes
@@ -340,7 +340,7 @@ Extracted summary:
 
 **Net-Zero Energy** — Annual on-site renewable generation (solar PV, wind, geothermal) equals or exceeds annual building consumption; not mandated by Code but incentivized by BERDE and pursued by forward-looking developers.
 
-**Energy Modeling Software** — Simulation tools predicting annual energy consumption under tropical climate conditions (26–28°C baseline, humidity 75–85%, monsoon wind). EnergyPlus (free, rigorous), TRACE 3D+, IES 
+**Energy Modeling Software** — Simulation tools predicting annual energy consumption under tropical climate conditions (26–28°C baseline, humidity 75–85%, monsoon wind). EnergyPlus (free, rigorous), TRACE 3D+, IES
 
 **ERV (Energy Recovery Ventilation)** — System capturing heat/moisture from exhaust air and transferring to incoming fresh air, reducing HVAC load; typically improves efficiency 20–25% in naturally ventilated spaces.
 

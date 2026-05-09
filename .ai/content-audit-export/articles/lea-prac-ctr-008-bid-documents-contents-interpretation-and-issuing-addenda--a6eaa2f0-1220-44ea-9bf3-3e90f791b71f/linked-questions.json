@@ -1,9 +1,109 @@
 {
   "article_id": "a6eaa2f0-1220-44ea-9bf3-3e90f791b71f",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:13bc39b38d334f1680b2bb1ae72387cb1ac37e73d8353270df1426d1e06d2038",
+  "linked_questions_hash": "sha256:d26332dc967a5668a1660fe2d47cfcac0c0fdf0239da72b91cf899ea29be95de",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "ff397f9a-d371-4697-b5f4-b3b01a03e96b",
+      "article_id": "a6eaa2f0-1220-44ea-9bf3-3e90f791b71f",
+      "topic_id": "da6f7f45-0086-4e01-b119-5a4cb913fcf7",
+      "text": "What is the purpose of Instructions to Bidders in the bid document package?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To specify the exact construction methods contractors must use, ensuring uniformity in project execution"
+        },
+        {
+          "id": "b",
+          "text": "To establish the rules of bidding—bid format, required documentation, deadline, bid opening procedure, and evaluation criteria"
+        },
+        {
+          "id": "c",
+          "text": "To guarantee that the lowest bid will be accepted, regardless of other considerations"
+        },
+        {
+          "id": "d",
+          "text": "To eliminate competition by favoring certain contractors, which is often prohibited by procurement laws"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Confuses Instructions with Specifications; Instructions govern the bidding process, not construction methods.",
+        "c": "Wrongly assumes lowest bid guarantee; Instructions may specify that non-price factors (qualifications, schedule) are considered.",
+        "d": "Mischaracterizes the purpose as anticompetitive; Instructions are designed to ensure fair, transparent bidding.",
+        "correct": "Instructions to Bidders establish binding rules governing the bidding process: bid format, required documentation, deadline, bid opening procedure, and evaluation criteria.",
+        "takeaway": "Instructions to Bidders define the bidding rules—format, documentation, deadline, and evaluation criteria."
+      },
+      "explanation": "Confuses Instructions with Specifications; Instructions govern the bidding process, not construction methods. Wrongly assumes lowest bid guarantee; Instructions may specify that non-price factors (qualifications, schedule) are considered. Mischaracterizes the purpose as anticompetitive; Instructions are designed to ensure fair, transparent bidding. Instructions to Bidders establish binding rules governing the bidding process: bid format, required documentation, deadline, bid opening procedure, and evaluation criteria. Instructions to Bidders define the bidding rules—format, documentation, deadline, and evaluation criteria.",
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-008-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.526003+00:00",
+      "updated_at": "2026-05-06T15:03:07.182702+00:00",
+      "content_hash": "sha256:f541d5a0e87bfcf02912bb1adb2e253042d2e036b66ebfad03fccd6c3d030169"
+    },
+    {
+      "question_id": "fe3e22fa-85cd-4ae3-b22f-0f596e04807a",
+      "article_id": "a6eaa2f0-1220-44ea-9bf3-3e90f791b71f",
+      "topic_id": "da6f7f45-0086-4e01-b119-5a4cb913fcf7",
+      "text": "What are the primary components that must be included in bid documents to enable contractors to prepare complete, accurate proposals?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only Drawings and a budget estimate, which are insufficient for comprehensive bidding"
+        },
+        {
+          "id": "b",
+          "text": "Advertisement, Instructions to Bidders, proposed Agreement, General Conditions, Special Provisions, Drawings, Specifications, and supplemental schedules"
+        },
+        {
+          "id": "c",
+          "text": "Specifications only; Drawings are prepared after bidding, which is not standard practice"
+        },
+        {
+          "id": "d",
+          "text": "List of approved contractors; bidders are selected by the Owner without formal documents, which limits transparency"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Omits critical components; bid documents must include Instructions, Agreement, General Conditions, and Specifications for complete bidding.",
+        "c": "Reverses the process; Drawings and Specifications are both provided before bidding to enable accurate bids.",
+        "d": "Describes informal, non-competitive selection, not the structured formal bidding process with required documents.",
+        "correct": "Bid documents comprise the complete package: Advertisement, Instructions to Bidders, proposed Agreement, General Conditions, Special Provisions, Drawings, Specifications, and supplemental schedules.",
+        "takeaway": "Bid documents are a complete package including Advertisement, Instructions, Agreement, General Conditions, Drawings, Specifications, and schedules."
+      },
+      "explanation": "Omits critical components; bid documents must include Instructions, Agreement, General Conditions, and Specifications for complete bidding. Reverses the process; Drawings and Specifications are both provided before bidding to enable accurate bids. Describes informal, non-competitive selection, not the structured formal bidding process with required documents. Bid documents comprise the complete package: Advertisement, Instructions to Bidders, proposed Agreement, General Conditions, Special Provisions, Drawings, Specifications, and supplemental schedules. Bid documents are a complete package including Advertisement, Instructions, Agreement, General Conditions, Drawings, Specifications, and schedules.",
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-008-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.526003+00:00",
+      "updated_at": "2026-05-06T15:03:07.323534+00:00",
+      "content_hash": "sha256:1bf15a178665209f0d42638c4df154affafe229406fdd6f039f42ee3432bfd19"
+    },
     {
       "question_id": "ce9954fb-6292-4e96-9f0d-e3e9da602977",
       "article_id": "a6eaa2f0-1220-44ea-9bf3-3e90f791b71f",
@@ -89,7 +189,7 @@
         "correct": "A Schedule of Materials and Finishes lists all specified materials, finishes, and equipment by location, helping contractors organize bids and identify requirements.",
         "takeaway": "Material schedules organize bid requirements by location and enable organized cost tracking."
       },
-      "explanation": null,
+      "explanation": "Wrongly assumes schedules replace Specifications; schedules supplement and organize Specifications for clarity. Inverts the purpose; schedules promote clarity and accuracy, not restriction. Confuses the purpose; schedules identify required materials, not guarantee availability. A Schedule of Materials and Finishes lists all specified materials, finishes, and equipment by location, helping contractors organize bids and identify requirements. Material schedules organize bid requirements by location and enable organized cost tracking.",
       "code_citation": "UAP Doc 301",
       "bloom_level": "apply",
       "application_context": "client_scenario",
@@ -101,8 +201,8 @@
       "model_id": "ALE-PRAC-CTR-008-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:b16695995f321e2e34d6cb4e6ec872780112e4ad16ada0dc351582b7f9364562"
+      "updated_at": "2026-05-06T15:03:07.051614+00:00",
+      "content_hash": "sha256:fa4a491183d23287c841e941be23275e7d169d2d6a3eef45771efbe3cf793e26"
     },
     {
       "question_id": "0b29f2ec-57bf-451a-ac67-c7775c0f11a8",
@@ -255,56 +355,6 @@
       "content_hash": "sha256:9c064da5d1b491fe915f75cb9f8b8da0197fead8cb55befc1d5e037a9a96f47c"
     },
     {
-      "question_id": "ff397f9a-d371-4697-b5f4-b3b01a03e96b",
-      "article_id": "a6eaa2f0-1220-44ea-9bf3-3e90f791b71f",
-      "topic_id": "da6f7f45-0086-4e01-b119-5a4cb913fcf7",
-      "text": "What is the purpose of Instructions to Bidders in the bid document package?",
-      "options": [
-        {
-          "id": "a",
-          "text": "To specify the exact construction methods contractors must use, ensuring uniformity in project execution"
-        },
-        {
-          "id": "b",
-          "text": "To establish the rules of bidding—bid format, required documentation, deadline, bid opening procedure, and evaluation criteria"
-        },
-        {
-          "id": "c",
-          "text": "To guarantee that the lowest bid will be accepted, regardless of other considerations"
-        },
-        {
-          "id": "d",
-          "text": "To eliminate competition by favoring certain contractors, which is often prohibited by procurement laws"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Confuses Instructions with Specifications; Instructions govern the bidding process, not construction methods.",
-        "c": "Wrongly assumes lowest bid guarantee; Instructions may specify that non-price factors (qualifications, schedule) are considered.",
-        "d": "Mischaracterizes the purpose as anticompetitive; Instructions are designed to ensure fair, transparent bidding.",
-        "correct": "Instructions to Bidders establish binding rules governing the bidding process: bid format, required documentation, deadline, bid opening procedure, and evaluation criteria.",
-        "takeaway": "Instructions to Bidders define the bidding rules—format, documentation, deadline, and evaluation criteria."
-      },
-      "explanation": null,
-      "code_citation": "UAP Doc 301",
-      "bloom_level": "understand",
-      "application_context": "client_scenario",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PRAC-CTR-008-003",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:1b9f06dc33c9e5d9995f40623c44630225888e18db0be3a93bd621ea68eb5670"
-    },
-    {
       "question_id": "81199809-d9c3-4622-be93-3d73f84313e5",
       "article_id": "a6eaa2f0-1220-44ea-9bf3-3e90f791b71f",
       "topic_id": "da6f7f45-0086-4e01-b119-5a4cb913fcf7",
@@ -453,56 +503,6 @@
       "created_at": "2026-03-23T19:27:47.526003+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:39140546afb899315d06254760c2c7eff34d9d102090fab20cefe82ce74b1b61"
-    },
-    {
-      "question_id": "fe3e22fa-85cd-4ae3-b22f-0f596e04807a",
-      "article_id": "a6eaa2f0-1220-44ea-9bf3-3e90f791b71f",
-      "topic_id": "da6f7f45-0086-4e01-b119-5a4cb913fcf7",
-      "text": "What are the primary components that must be included in bid documents to enable contractors to prepare complete, accurate proposals?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Only Drawings and a budget estimate, which are insufficient for comprehensive bidding"
-        },
-        {
-          "id": "b",
-          "text": "Advertisement, Instructions to Bidders, proposed Agreement, General Conditions, Special Provisions, Drawings, Specifications, and supplemental schedules"
-        },
-        {
-          "id": "c",
-          "text": "Specifications only; Drawings are prepared after bidding, which is not standard practice"
-        },
-        {
-          "id": "d",
-          "text": "List of approved contractors; bidders are selected by the Owner without formal documents, which limits transparency"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Omits critical components; bid documents must include Instructions, Agreement, General Conditions, and Specifications for complete bidding.",
-        "c": "Reverses the process; Drawings and Specifications are both provided before bidding to enable accurate bids.",
-        "d": "Describes informal, non-competitive selection, not the structured formal bidding process with required documents.",
-        "correct": "Bid documents comprise the complete package: Advertisement, Instructions to Bidders, proposed Agreement, General Conditions, Special Provisions, Drawings, Specifications, and supplemental schedules.",
-        "takeaway": "Bid documents are a complete package including Advertisement, Instructions, Agreement, General Conditions, Drawings, Specifications, and schedules."
-      },
-      "explanation": null,
-      "code_citation": "UAP Doc 301",
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [],
-      "difficulty": 0.3,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PRAC-CTR-008-001",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:bb8ee399628e90f3209582d85f8f81df1be26f0529d30c7079c619865bb2b04a"
     }
   ]
 }

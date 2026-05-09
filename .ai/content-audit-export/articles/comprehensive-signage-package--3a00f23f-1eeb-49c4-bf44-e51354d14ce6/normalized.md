@@ -221,7 +221,7 @@ For a blind person, a flat embossed plan is like a photograph — informative on
 
     Person: ~1900-2000 mm tall with luggage
     Buffer: ≥200 mm above head = SAFE
-    
+
     If sign bottom < 2200 mm → HEAD HAZARD
 ```
 

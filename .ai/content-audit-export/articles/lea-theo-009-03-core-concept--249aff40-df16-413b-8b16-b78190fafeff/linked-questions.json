@@ -1,9 +1,113 @@
 {
   "article_id": "249aff40-df16-413b-8b16-b78190fafeff",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:5b872a23dc923e9e7898fb41ca9c5fe9344e0845ae9df053ddbbaef4baabffec",
+  "linked_questions_hash": "sha256:657a87bb59db5fe9b09ec34bb708500b7f656fa5ecb65b3a6a8cbb8c2c80da42",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "a9c96a9e-72d9-426c-a08a-b882d95ffe2e",
+      "article_id": "249aff40-df16-413b-8b16-b78190fafeff",
+      "topic_id": "8b29b669-5a15-4d7c-9f74-521d224c39b5",
+      "text": "A programmer specifies a secondary bedroom as 9 feet × 10 feet (90 SF), claiming this is code-compliant under PD 1096. Why is this inadequate as standard practice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The bedroom would fail accessibility standards requiring larger dimensions for wheelchair access, especially in multi-story buildings"
+        },
+        {
+          "id": "b",
+          "text": "Code minimum and design standard practice are different; minimum code dimensions produce cramped, inadequate spaces"
+        },
+        {
+          "id": "c",
+          "text": "PD 1096 does not establish bedroom dimensions; this dimension violates code entirely, leading to potential legal issues"
+        },
+        {
+          "id": "d",
+          "text": "This size cannot accommodate standard bed dimensions and basic furniture movement, making it impractical for regular use"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Accessibility applies to specific spaces; typical bedrooms are not required to be wheelchair-accessible unless specified.",
+        "c": "PD 1096 does establish minimum bedroom dimensions (though smaller than practice standard); this dimension would comply with code but not practice.",
+        "d": "90 SF can accommodate a bed and minimal furniture; the issue is comfort and functionality, not impossibility.",
+        "correct": "WWhile PD 1096 requires light/ventilation but no area minimum, standard design practice allocates 120 SF for secondary bedrooms...s to accommodate a bed, dresser, desk/chair, and comfortable circulation without forced layout. Code minimum and design standard are distinct; this is a common ALE mistake.",
+        "takeaway": "Code minimum and design standard are distinct; this is a common ALE mistake."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-009-03-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:01bae7c0ec083c3e1eef119a62b4bccc70c37f8c25ddceb91d7063572f470005"
+    },
+    {
+      "question_id": "ce51345d-5cbc-4dcc-9e71-d7810524bfe8",
+      "article_id": "249aff40-df16-413b-8b16-b78190fafeff",
+      "topic_id": "8b29b669-5a15-4d7c-9f74-521d224c39b5",
+      "text": "A school library program must accommodate 100 simultaneous student study positions, 10,000 book volumes, and staff workspace. Using standards (15 SF per student reader, 0.1 SF per volume, 100 SF for staff desk/office), calculate minimum NAA. Then, considering library circulation requirements (0.65 efficiency factor typical), what is the anticipated GBA?",
+      "options": [
+        {
+          "id": "a",
+          "text": "NAA = 2,600 SF; GBA = 4,000 SF"
+        },
+        {
+          "id": "b",
+          "text": "NAA = 2,500 SF; GBA = 3,846 SF"
+        },
+        {
+          "id": "c",
+          "text": "NAA = 1,600 SF; GBA = 2,462 SF"
+        },
+        {
+          "id": "d",
+          "text": "NAA = 2,600 SF; GBA = 3,380 SF"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "2,500 SF omits the 100 SF staff workspace component. GBA of 3,846 SF follows from this undercount (2,500 ÷ 0.65 = 3,846).",
+        "c": "1,600 SF miscalculates the volume allocation as 10,000 × 0.06 = 600 SF instead of the correct 10,000 × 0.1 = 1,000 SF, then omits staff space. This is the most common student error.",
+        "d": "While NAA is correctly calculated at 2,600 SF, GBA of 3,380 SF uses a 0.77 efficiency factor (typical for offices) instead of the 0.65 factor specified for library circulation requirements.",
+        "correct": "NAA = (100 readers × 15 SF) + (10,000 volumes × 0.1 SF) + 100 SF staff = 1,500 + 1,000 + 100 = 2,600 SF. GBA = 2,600 ÷ 0.65 = 4,000 SF. Library efficiency factors account for circulation aisles, reference desks, and stack access paths.",
+        "takeaway": "Library efficiency factors account for circulation aisles, reference desks, and stack access paths."
+      },
+      "explanation": "2,500 SF omits the 100 SF staff workspace component. GBA of 3,846 SF follows from this undercount (2,500 ÷ 0.65 = 3,846). 1,600 SF miscalculates the volume allocation as 10,000 × 0.06 = 600 SF instead of the correct 10,000 × 0.1 = 1,000 SF, then omits staff space. This is the most common student error. While NAA is correctly calculated at 2,600 SF, GBA of 3,380 SF uses a 0.77 efficiency factor (typical for offices) instead of the 0.65 factor specified for library circulation requirements. NAA = (100 readers × 15 SF) + (10,000 volumes × 0.1 SF) + 100 SF staff = 1,500 + 1,000 + 100 = 2,600 SF. GBA = 2,600 ÷ 0.65 = 4,000 SF. Library efficiency factors account for circulation aisles, reference desks, and stack access paths. Library efficiency factors account for circulation aisles, reference desks, and stack access paths.",
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "SYS"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-009-03-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-05-06T15:59:04.71005+00:00",
+      "content_hash": "sha256:4063b779b7eb5b6fc0b45c502cd7b4a0bc094a94295e86c0a618f793971a50ae"
+    },
     {
       "question_id": "c4744db4-0d45-4993-a11f-f701c6a87f0c",
       "article_id": "249aff40-df16-413b-8b16-b78190fafeff",
@@ -265,56 +369,56 @@
       "content_hash": "sha256:b1f60f03b803fb4fb8b29fe4f2832df4a10af588b9e317f34d53ecc0fcee9ccb"
     },
     {
-      "question_id": "ce51345d-5cbc-4dcc-9e71-d7810524bfe8",
+      "question_id": "31bfbd84-bcca-44c6-a47f-05ff4fd6386d",
       "article_id": "249aff40-df16-413b-8b16-b78190fafeff",
       "topic_id": "8b29b669-5a15-4d7c-9f74-521d224c39b5",
-      "text": "A school library program must accommodate 100 simultaneous student study positions, 10,000 book volumes, and staff workspace. Using standards (15 SF per student reader, 0.1 SF per volume, 100 SF for staff desk/office), calculate minimum NAA. Then, considering library circulation requirements (0.65 efficiency factor typical), what is the anticipated GBA?",
+      "text": "In commercial office space, what area allocation per workstation is typical in modern open-plan offices?",
       "options": [
         {
           "id": "a",
-          "text": "NAA = 2,600 SF; GBA = 4,000 SF"
+          "text": "50–70 SF per workstation"
         },
         {
           "id": "b",
-          "text": "NAA = 2,500 SF; GBA = 3,846 SF"
+          "text": "100–150 SF per workstation"
         },
         {
           "id": "c",
-          "text": "NAA = 1,600 SF; GBA = 2,462 SF"
+          "text": "35–50 SF per workstation"
         },
         {
           "id": "d",
-          "text": "NAA = 2,600 SF; GBA = 3,380 SF"
+          "text": "70–100 SF per workstation"
         }
       ],
-      "correct_option_id": "a",
+      "correct_option_id": "d",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "2,500 SF omits the 100 SF staff workspace component. GBA of 3,846 SF follows from this undercount (2,500 ÷ 0.65 = 3,846).",
-        "c": "1,600 SF miscalculates the volume allocation as 10,000 × 0.06 = 600 SF instead of the correct 10,000 × 0.1 = 1,000 SF, then omits staff space. This is the most common student error.",
-        "d": "While NAA is correctly calculated at 2,600 SF, GBA of 3,380 SF uses a 0.77 efficiency factor (typical for offices) instead of the 0.65 factor specified for library circulation requirements.",
-        "correct": "NAA = (100 readers × 15 SF) + (10,000 volumes × 0.1 SF) + 100 SF staff = 1,500 + 1,000 + 100 = 2,600 SF. GBA = 2,600 ÷ 0.65 = 4,000 SF. Library efficiency factors account for circulation aisles, reference desks, and stack access paths.",
-        "takeaway": "Library efficiency factors account for circulation aisles, reference desks, and stack access paths."
+        "a": "Philippine practice often uses this, but international standards recommend higher.",
+        "b": "This exceeds typical open-plan allocation; it approaches private office sizing.",
+        "c": "This is below standard minimum and represents high-density, low-comfort allocation.",
+        "correct": "Time-Saver Standards reference 70–100 SF per person in modern open office. Philippine commercial practice allocates 50–70 SF due to density expectations, but the international standard is 70–100 SF.",
+        "takeaway": "Philippine commercial practice allocates 50–70 SF due to density expectations, but the international standard is 70–100 SF."
       },
-      "explanation": null,
+      "explanation": "Philippine practice often uses this, but international standards recommend higher. This exceeds typical open-plan allocation; it approaches private office sizing. This is below standard minimum and represents high-density, low-comfort allocation. Time-Saver Standards reference 70–100 SF per person in modern open office. Philippine commercial practice allocates 50–70 SF due to density expectations, but the international standard is 70–100 SF. Philippine commercial practice allocates 50–70 SF due to density expectations, but the international standard is 70–100 SF.",
       "code_citation": null,
-      "bloom_level": "analyze",
-      "application_context": "code_interpretation",
+      "bloom_level": "remember",
+      "application_context": "recall",
       "practice_context": [
-        "SYS"
+        "DEF"
       ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
       "is_assessment": false,
-      "model_id": "ALE-THEO-009-03-009",
+      "model_id": "ALE-THEO-009-03-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:78ed6fc3d743b3c353db434dbbc63d7a6cafaf5a9371e1d9a3362ff3ddb09353"
+      "updated_at": "2026-05-06T15:59:04.829702+00:00",
+      "content_hash": "sha256:1676eed3fec2b5340bb2cec4f1641f73cd2f80c9f9cc00d40fd3655610cadb6b"
     },
     {
       "question_id": "a541b08f-849c-43e2-960d-93979b1c5b33",
@@ -367,110 +471,6 @@
       "created_at": "2026-03-23T19:27:57.369425+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:126fb4acefb66efe9473236df6997b89a9b72da3046c76e8600c6255cfb329d2"
-    },
-    {
-      "question_id": "a9c96a9e-72d9-426c-a08a-b882d95ffe2e",
-      "article_id": "249aff40-df16-413b-8b16-b78190fafeff",
-      "topic_id": "8b29b669-5a15-4d7c-9f74-521d224c39b5",
-      "text": "A programmer specifies a secondary bedroom as 9 feet × 10 feet (90 SF), claiming this is code-compliant under PD 1096. Why is this inadequate as standard practice?",
-      "options": [
-        {
-          "id": "a",
-          "text": "The bedroom would fail accessibility standards requiring larger dimensions for wheelchair access, especially in multi-story buildings"
-        },
-        {
-          "id": "b",
-          "text": "Code minimum and design standard practice are different; minimum code dimensions produce cramped, inadequate spaces"
-        },
-        {
-          "id": "c",
-          "text": "PD 1096 does not establish bedroom dimensions; this dimension violates code entirely, leading to potential legal issues"
-        },
-        {
-          "id": "d",
-          "text": "This size cannot accommodate standard bed dimensions and basic furniture movement, making it impractical for regular use"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Accessibility applies to specific spaces; typical bedrooms are not required to be wheelchair-accessible unless specified.",
-        "c": "PD 1096 does establish minimum bedroom dimensions (though smaller than practice standard); this dimension would comply with code but not practice.",
-        "d": "90 SF can accommodate a bed and minimal furniture; the issue is comfort and functionality, not impossibility.",
-        "correct": "WWhile PD 1096 requires light/ventilation but no area minimum, standard design practice allocates 120 SF for secondary bedrooms...s to accommodate a bed, dresser, desk/chair, and comfortable circulation without forced layout. Code minimum and design standard are distinct; this is a common ALE mistake.",
-        "takeaway": "Code minimum and design standard are distinct; this is a common ALE mistake."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "apply",
-      "application_context": "design_application",
-      "practice_context": [
-        "CMP"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-009-03-006",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:01bae7c0ec083c3e1eef119a62b4bccc70c37f8c25ddceb91d7063572f470005"
-    },
-    {
-      "question_id": "31bfbd84-bcca-44c6-a47f-05ff4fd6386d",
-      "article_id": "249aff40-df16-413b-8b16-b78190fafeff",
-      "topic_id": "8b29b669-5a15-4d7c-9f74-521d224c39b5",
-      "text": "In commercial office space, what area allocation per workstation is typical in modern open-plan offices?",
-      "options": [
-        {
-          "id": "a",
-          "text": "50–70 SF per workstation"
-        },
-        {
-          "id": "b",
-          "text": "100–150 SF per workstation"
-        },
-        {
-          "id": "c",
-          "text": "35–50 SF per workstation"
-        },
-        {
-          "id": "d",
-          "text": "70–100 SF per workstation"
-        }
-      ],
-      "correct_option_id": "d",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Philippine practice often uses this, but international standards recommend higher.",
-        "b": "This exceeds typical open-plan allocation; it approaches private office sizing.",
-        "c": "This is below standard minimum and represents high-density, low-comfort allocation.",
-        "correct": "Time-Saver Standards reference 70–100 SF per person in modern open office. Philippine commercial practice allocates 50–70 SF due to density expectations, but the international standard is 70–100 SF.",
-        "takeaway": "Philippine commercial practice allocates 50–70 SF due to density expectations, but the international standard is 70–100 SF."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [
-        "DEF"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-009-03-004",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:8c0e713a41b7e18992db63e87f5b9d09c62ca6d3c1313bde0bc49616d70710b4"
     },
     {
       "question_id": "cd54f247-3358-4e7e-b374-7cbfd9ed3952",

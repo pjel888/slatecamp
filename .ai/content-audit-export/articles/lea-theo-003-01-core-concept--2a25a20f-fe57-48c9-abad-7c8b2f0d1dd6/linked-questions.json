@@ -1,9 +1,111 @@
 {
   "article_id": "2a25a20f-fe57-48c9-abad-7c8b2f0d1dd6",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:5780c53440c38ebf6d328f11bcf117ecb2448241b014e2e8ae7b98ce80d80146",
+  "linked_questions_hash": "sha256:82558d78b954bfc0f3678da9588e1c7fcaccb4235807764d8266886e2a2fa139",
   "question_count": 13,
   "questions": [
+    {
+      "question_id": "53e43e1b-9e7b-43fc-a9ab-76b712460f74",
+      "article_id": "2a25a20f-fe57-48c9-abad-7c8b2f0d1dd6",
+      "topic_id": "b73feeaa-32f9-47e5-bfc9-b250a81d3548",
+      "text": "Which anthropometric system is based primarily on proportional relationships and harmony rather than empirical measurement of actual human populations?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Le Corbusier's Modulor"
+        },
+        {
+          "id": "b",
+          "text": "Henry Dreyfuss's The Measure of Man"
+        },
+        {
+          "id": "c",
+          "text": "Philippine Building Code anthropometric standards"
+        },
+        {
+          "id": "d",
+          "text": "Neufert's Architects' Data"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Dreyfuss uses actual measurement of human dimensions through archetypal figures",
+        "c": "Building codes are based on empirical measurements adapted from international standards",
+        "d": "Neufert is explicitly empirical, based on measured human activities",
+        "correct": "Le Corbusier's Modulor is a proportional system based on golden ratio and Fibonacci sequence, creating harmonious relationships rather than empirical population measurement"
+      },
+      "explanation": "Dreyfuss uses actual measurement of human dimensions through archetypal figures Building codes are based on empirical measurements adapted from international standards Neufert is explicitly empirical, based on measured human activities Le Corbusier's Modulor is a proportional system based on golden ratio and Fibonacci sequence, creating harmonious relationships rather than empirical population measurement",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "ATT"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ale-theo-003-01-q10",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.884733+00:00",
+      "updated_at": "2026-05-06T13:14:24.674279+00:00",
+      "content_hash": "sha256:8661eda8973474e5ad6926d5db3eaadb59923fe4386dfb87804ae4529328a67c"
+    },
+    {
+      "question_id": "923b6048-e580-4da1-a3c3-fa242f0e4217",
+      "article_id": "2a25a20f-fe57-48c9-abad-7c8b2f0d1dd6",
+      "topic_id": "b73feeaa-32f9-47e5-bfc9-b250a81d3548",
+      "text": "Anthropometrics is best defined as:",
+      "options": [
+        {
+          "id": "a",
+          "text": "The study of how humans perceive spatial distance and personal space boundaries, which is crucial for ergonomic design"
+        },
+        {
+          "id": "b",
+          "text": "The principles governing comfort and safety in building design, ensuring that spaces are usable and accessible"
+        },
+        {
+          "id": "c",
+          "text": "The proportional system based on the golden ratio and Fibonacci sequence, often used in aesthetic design"
+        },
+        {
+          "id": "d",
+          "text": "The scientific measurement of the human body and its relationship to architectural space"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This describes proxemics, not anthropometrics",
+        "b": "While anthropometrics supports comfort and safety, this is too broad and doesn't define the discipline",
+        "c": "This describes Le Corbusier's Modulor system, a specific application of anthropometric thinking",
+        "correct": "This is the precise definition of anthropometrics as a discipline that transforms human dimensions into design standards"
+      },
+      "explanation": "This describes proxemics, not anthropometrics While anthropometrics supports comfort and safety, this is too broad and doesn't define the discipline This describes Le Corbusier's Modulor system, a specific application of anthropometric thinking This is the precise definition of anthropometrics as a discipline that transforms human dimensions into design standards",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ale-theo-003-01-q01",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.884733+00:00",
+      "updated_at": "2026-05-06T13:14:24.807115+00:00",
+      "content_hash": "sha256:094137c8c02c612cf834ceb9f970d9143c3afdc7afa78264df36b861ea28148d"
+    },
     {
       "question_id": "699421ad-d936-4ad7-874c-954cbca5b3e0",
       "article_id": "2a25a20f-fe57-48c9-abad-7c8b2f0d1dd6",
@@ -156,57 +258,6 @@
       "created_at": "2026-03-23T19:27:53.884733+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:759ae25713670045ee77e8e497202dc2401f065e250c1d4b5452ff5cc5331e30"
-    },
-    {
-      "question_id": "53e43e1b-9e7b-43fc-a9ab-76b712460f74",
-      "article_id": "2a25a20f-fe57-48c9-abad-7c8b2f0d1dd6",
-      "topic_id": "b73feeaa-32f9-47e5-bfc9-b250a81d3548",
-      "text": "Which anthropometric system is based primarily on proportional relationships and harmony rather than empirical measurement of actual human populations?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Le Corbusier's Modulor"
-        },
-        {
-          "id": "b",
-          "text": "Henry Dreyfuss's The Measure of Man"
-        },
-        {
-          "id": "c",
-          "text": "Philippine Building Code anthropometric standards"
-        },
-        {
-          "id": "d",
-          "text": "Neufert's Architects' Data"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "b": "Dreyfuss uses actual measurement of human dimensions through archetypal figures",
-        "c": "Building codes are based on empirical measurements adapted from international standards",
-        "d": "Neufert is explicitly empirical, based on measured human activities",
-        "correct": "Le Corbusier's Modulor is a proportional system based on golden ratio and Fibonacci sequence, creating harmonious relationships rather than empirical population measurement"
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [
-        "ATT"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ale-theo-003-01-q10",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:0f1a9e6efd3280d3284e6d920ad55db190cd125660267688d30a01c99d1ee88f"
     },
     {
       "question_id": "445366c8-a477-4a91-9126-946f9146e513",
@@ -411,57 +462,6 @@
       "created_at": "2026-03-23T19:27:53.884733+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:75524d79cf4d97fef6e7afb9331eb3aea85edd10ff36ea3408e34d59b62e6d28"
-    },
-    {
-      "question_id": "923b6048-e580-4da1-a3c3-fa242f0e4217",
-      "article_id": "2a25a20f-fe57-48c9-abad-7c8b2f0d1dd6",
-      "topic_id": "b73feeaa-32f9-47e5-bfc9-b250a81d3548",
-      "text": "Anthropometrics is best defined as:",
-      "options": [
-        {
-          "id": "a",
-          "text": "The study of how humans perceive spatial distance and personal space boundaries, which is crucial for ergonomic design"
-        },
-        {
-          "id": "b",
-          "text": "The principles governing comfort and safety in building design, ensuring that spaces are usable and accessible"
-        },
-        {
-          "id": "c",
-          "text": "The proportional system based on the golden ratio and Fibonacci sequence, often used in aesthetic design"
-        },
-        {
-          "id": "d",
-          "text": "The scientific measurement of the human body and its relationship to architectural space"
-        }
-      ],
-      "correct_option_id": "d",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "This describes proxemics, not anthropometrics",
-        "b": "While anthropometrics supports comfort and safety, this is too broad and doesn't define the discipline",
-        "c": "This describes Le Corbusier's Modulor system, a specific application of anthropometric thinking",
-        "correct": "This is the precise definition of anthropometrics as a discipline that transforms human dimensions into design standards"
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [
-        "DEF"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ale-theo-003-01-q01",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:f1840f463f3b5c29d03c09173e0df3037828f5c75f5b3ac8bc354fee70f4f645"
     },
     {
       "question_id": "c16d33c6-254b-4a34-9b20-dbd7bf74af8a",

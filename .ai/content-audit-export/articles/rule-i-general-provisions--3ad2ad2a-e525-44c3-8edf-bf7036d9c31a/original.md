@@ -1,7 +1,12 @@
 # Rule I General Provisions
 
-**Rule I, Sections 101–106 — PD 1096 (National Building Code of the Philippines) & 2004 Revised IRR**
-**LEA Relevance:** Area 1 (Professional Practice) | Area 3 (Site Planning & Design) | FOUNDATIONAL — IRR Sec. 106 definitions appear across all LEA areas
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Rule I General Provisions** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
+
 
 ## Learning Goal
 
@@ -13,13 +18,17 @@ Apply the general provisions of PD 1096 Rule I: the applicability scope, definit
 
 ## 1. Hook / Opening Scenario
 
-<LawCallout code="pd1096" section="Rule I - Section 106 - Permits">
-National Building Code of the Philippines (PD 1096) — Primary legislation governing building design and construction.
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="pd1096", section="Rule I - Section 106 - Permits"
+- Text: National Building Code of the Philippines (PD 1096) — Primary legislation governing building design and construction.
+[/SLATECAMP_UI_BLOCK]
 
-<LawCallout code="pd1096" section="Rule I - Section 101 - Scope">
-National Building Code of the Philippines (PD 1096) — Primary legislation governing building design and construction.
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="pd1096", section="Rule I - Section 101 - Scope"
+- Text: National Building Code of the Philippines (PD 1096) — Primary legislation governing building design and construction.
+[/SLATECAMP_UI_BLOCK]
 
 You are sitting in the OBO — the Office of the Building Official — of a second-class municipality in Rizal province. A client submits plans for what the drawings label an "alteration": the ground floor of a two-storey residence will be converted into a convenience store, and a third floor will be added. The building official's evaluator looks at you. Is this an alteration? A renovation? A conversion? An addition? Or all four? Your answer determines which permit is required, which technical disciplines must sign the plans, and whether the existing structure must be fully brought up to code. This is Section 106 country — and the LEA board exam lives here.
 

@@ -1,9 +1,59 @@
 {
   "article_id": "cd21006c-647f-4c7b-8b17-fa65c51cbeb3",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:a3da1fc007e432b647b646d662047865127ce7d8eeedfc292651cdc8cf14a81b",
+  "linked_questions_hash": "sha256:fc48ea56ed62b864408306043cbb07bd5eec577730ce60d855c36fadb59a4e78",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "b7735dc1-0e8b-498b-8c79-1b18cc5420c5",
+      "article_id": "cd21006c-647f-4c7b-8b17-fa65c51cbeb3",
+      "topic_id": "c38557e7-24a7-43a0-bfa1-d280dea6dea3",
+      "text": "Polyurethane sealant (ASTM C1619) is preferred over silicone for hybrid glass-metal curtain wall joints in the Philippines because ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Polyurethane has superior UV stability compared to silicone, ensuring longer lifespan"
+        },
+        {
+          "id": "b",
+          "text": "Polyurethane provides excellent adhesion to both glass and metal and cures faster in tropical humidity"
+        },
+        {
+          "id": "c",
+          "text": "Polyurethane offers non-corrosive properties suitable for salt spray, protecting structural integrity"
+        },
+        {
+          "id": "d",
+          "text": "Polyurethane is lower cost and requires no substrate preparation, reducing installation time"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Silicone has superior UV stability; polyurethane can yellow/degrade under prolonged UV without topcoat.",
+        "c": "Silicone is non-corrosive and superior in salt-spray; polyurethane is adequate but not optimal for coastal zones.",
+        "d": "Polyurethane requires moisture-management during application and cure; not lower cost than silicone.",
+        "correct": "Polyurethane (ASTM C1619) adheres strongly to glass, metal, and painted surfaces (critical for curtain walls). Cure is rapid (24-48 hrs walkable in tropical heat/humidity), where silicone may require 7+ days. Moisture-accelerated polymerization is advantageous in tropical humidity.",
+        "takeaway": "Polyurethane = practical choice for glass-metal bonds and rapid cure in humid tropics. Silicone = premium choice for UV/salt spray. Match sealant to substrate and cure conditions."
+      },
+      "explanation": "Silicone has superior UV stability; polyurethane can yellow/degrade under prolonged UV without topcoat. Silicone is non-corrosive and superior in salt-spray; polyurethane is adequate but not optimal for coastal zones. Polyurethane requires moisture-management during application and cure; not lower cost than silicone. Polyurethane (ASTM C1619) adheres strongly to glass, metal, and painted surfaces (critical for curtain walls). Cure is rapid (24-48 hrs walkable in tropical heat/humidity), where silicone may require 7+ days. Moisture-accelerated polymerization is advantageous in tropical humidity. Polyurethane = practical choice for glass-metal bonds and rapid cure in humid tropics. Silicone = premium choice for UV/salt spray. Match sealant to substrate and cure conditions.",
+      "code_citation": "ASTM C1619, Sealant Selection Guidelines",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-006-05-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-05-06T15:15:17.565597+00:00",
+      "content_hash": "sha256:cc399ededf9ef89472d75ae0cc4923dde26a44cd928af8fae5c3ab0c18cf67ad"
+    },
     {
       "question_id": "981843ac-0c8c-479f-a668-7cef7eafb50b",
       "article_id": "cd21006c-647f-4c7b-8b17-fa65c51cbeb3",
@@ -152,56 +202,6 @@
       "created_at": "2026-03-23T19:27:27.434371+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:ab28ebd2fc81a880827997b1d2e5074cf1c23c5d68078a7082429718e9a01f83"
-    },
-    {
-      "question_id": "b7735dc1-0e8b-498b-8c79-1b18cc5420c5",
-      "article_id": "cd21006c-647f-4c7b-8b17-fa65c51cbeb3",
-      "topic_id": "c38557e7-24a7-43a0-bfa1-d280dea6dea3",
-      "text": "Polyurethane sealant (ASTM C1619) is preferred over silicone for hybrid glass-metal curtain wall joints in the Philippines because ___.",
-      "options": [
-        {
-          "id": "a",
-          "text": "Polyurethane has superior UV stability compared to silicone, ensuring longer lifespan"
-        },
-        {
-          "id": "b",
-          "text": "Polyurethane provides excellent adhesion to both glass and metal and cures faster in tropical humidity"
-        },
-        {
-          "id": "c",
-          "text": "Polyurethane offers non-corrosive properties suitable for salt spray, protecting structural integrity"
-        },
-        {
-          "id": "d",
-          "text": "Polyurethane is lower cost and requires no substrate preparation, reducing installation time"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Silicone has superior UV stability; polyurethane can yellow/degrade under prolonged UV without topcoat.",
-        "c": "Silicone is non-corrosive and superior in salt-spray; polyurethane is adequate but not optimal for coastal zones.",
-        "d": "Polyurethane requires moisture-management during application and cure; not lower cost than silicone.",
-        "correct": "Polyurethane (ASTM C1619) adheres strongly to glass, metal, and painted surfaces (critical for curtain walls). Cure is rapid (24-48 hrs walkable in tropical heat/humidity), where silicone may require 7+ days. Moisture-accelerated polymerization is advantageous in tropical humidity.",
-        "takeaway": "Polyurethane = practical choice for glass-metal bonds and rapid cure in humid tropics. Silicone = premium choice for UV/salt spray. Match sealant to substrate and cure conditions."
-      },
-      "explanation": null,
-      "code_citation": "ASTM C1619, Sealant Selection Guidelines",
-      "bloom_level": "understand",
-      "application_context": "recall",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-MATL-006-05-007",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:27.434371+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:717b96cce7dd281f8e3391fea2bd8f62e1c3bbb08b7a87657ce0aa7304af8984"
     },
     {
       "question_id": "85799e5e-633a-444f-b836-35d50db10dca",
@@ -488,7 +488,7 @@
         "correct": "Backer rod prevents three-sided bonding (adhesion on all three surfaces: top, sides, bottom). With backer rod, sealant bonds only to top and sides, allowing proper flex. Three-sided bonding concentrates stress at the center bottom and prevents elongation.",
         "takeaway": "Backer rod is mandatory for all elastomeric sealant applications. Prevents stress concentration and enables proper sealant movement."
       },
-      "explanation": null,
+      "explanation": "Two-sided bonding (top and sides) is correct; backer rod prevents three-sided. One-sided bonding would be non-functional; sealant must bond at least two sides. Multi-directional is not a relevant term for bonding surfaces. Backer rod prevents three-sided bonding (adhesion on all three surfaces: top, sides, bottom). With backer rod, sealant bonds only to top and sides, allowing proper flex. Three-sided bonding concentrates stress at the center bottom and prevents elongation. Backer rod is mandatory for all elastomeric sealant applications. Prevents stress concentration and enables proper sealant movement.",
       "code_citation": "ASTM C920, ASTM C1247",
       "bloom_level": "remember",
       "application_context": "recall",
@@ -500,8 +500,8 @@
       "model_id": "ALE-MATL-006-05-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.434371+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:5a259306de50fc358fbb099e3a82046dda24a0c404830d548009cf0b55a1bf19"
+      "updated_at": "2026-05-06T15:15:17.731436+00:00",
+      "content_hash": "sha256:fd981a6abddffd01f395ac409d4f926fe0db0f0471c80ec0a66da58a92839fc3"
     }
   ]
 }

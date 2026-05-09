@@ -1,7 +1,7 @@
 {
   "article_id": "22192e7e-6cdf-4613-9b2c-bddf1ee3091f",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:572041e3b74ca1490dd4c58a702d777b83cb058f31a21b988c94d732f99f9dd7",
+  "linked_questions_hash": "sha256:05fc88e22a237ee8683fcc72fe1390623f17513b62c6ae027fda653acab5d2fd",
   "question_count": 10,
   "questions": [
     {
@@ -54,6 +54,55 @@
       "content_hash": "sha256:96499c4537c8599acefbe0d102c10844ba3237308e5e03bed03b61ee97183a1f"
     },
     {
+      "question_id": "1f5dac3c-7d9b-41a9-abbb-8d412a90820c",
+      "article_id": "22192e7e-6cdf-4613-9b2c-bddf1ee3091f",
+      "topic_id": "82a45d6e-0804-400a-a78f-62c42cd43fa4",
+      "text": "Snug-tight bolt installation achieves approximately ___ percent of the preload required for proper slip-critical connections. Why is snug-tight unsuitable for primary load-carrying structural connections?",
+      "options": [
+        {
+          "id": "a",
+          "text": "25%; insufficient friction force allows slip under load, increasing deformation and fatigue risk"
+        },
+        {
+          "id": "b",
+          "text": "50%; standard practice for all bolted connections, but not suitable for slip-critical applications due to potential slippage"
+        },
+        {
+          "id": "c",
+          "text": "75%; approaching adequate preload but unreliable for critical connections where slip must be prevented"
+        },
+        {
+          "id": "d",
+          "text": "90%; proper preload for any application, though not typically used for slip-critical connections due to potential variability"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "50% snug-tight is still insufficient for primary connections; 70%+ is required for slip-critical behavior.",
+        "c": "75% approaches code requirement but without strict calibration/verification, unreliability increases.",
+        "d": "90% is the target for TC installation, not snug-tight.",
+        "correct": "Snug-tight provides ~25% preload, generating minimal friction between connected surfaces. Under service loads, bolts slip, increasing deformation, vibration, and fatigue damage. For primary connections, snug-tight is inadequate; calibrated wrench (70%) or TC installation (90%) is required per RCSC Specification (adopted by NSCP C101-15)."
+      },
+      "explanation": "50% snug-tight is still insufficient for primary connections; 70%+ is required for slip-critical behavior. 75% approaches code requirement but without strict calibration/verification, unreliability increases. 90% is the target for TC installation, not snug-tight. Snug-tight provides ~25% preload, generating minimal friction between connected surfaces. Under service loads, bolts slip, increasing deformation, vibration, and fatigue damage. For primary connections, snug-tight is inadequate; calibrated wrench (70%) or TC installation (90%) is required per RCSC Specification (adopted by NSCP C101-15).",
+      "code_citation": "RCSC Specification; NSCP 2015 Chapter 5",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-003-07-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-05-06T16:21:03.131056+00:00",
+      "content_hash": "sha256:bc8b153411ac8a0dd73c97332e2fba2bcbfc1d2485bfcfdb670d329e8ea6cb5e"
+    },
+    {
       "question_id": "153b4448-6e26-42b8-b647-4a17abdd8d9e",
       "article_id": "22192e7e-6cdf-4613-9b2c-bddf1ee3091f",
       "topic_id": "82a45d6e-0804-400a-a78f-62c42cd43fa4",
@@ -87,7 +136,7 @@
         "d": "Visual inspection of complete spline breakoff confirms proper preload but does not eliminate need for connection inspection.",
         "correct": "TC installation (ASTM F1852/F2280) uses a pneumatic shear wrench that breaks the spline at predetermined tension (~90% UTS). No wrench re-calibration required; operator skill is minimal; installation is fast; visual confirmation is automatic. This consistency and speed make TC the modern standard for high-volume fabrication."
       },
-      "explanation": null,
+      "explanation": "TC bolts are more expensive upfront but reduce labor significantly. TC is faster, not slower, than calibrated wrench. Visual inspection of complete spline breakoff confirms proper preload but does not eliminate need for connection inspection. TC installation (ASTM F1852/F2280) uses a pneumatic shear wrench that breaks the spline at predetermined tension (~90% UTS). No wrench re-calibration required; operator skill is minimal; installation is fast; visual confirmation is automatic. This consistency and speed make TC the modern standard for high-volume fabrication.",
       "code_citation": "ASTM F1852-20; RCSC Specification",
       "bloom_level": "understand",
       "application_context": "recall",
@@ -99,8 +148,8 @@
       "model_id": "ALE-MATL-003-07-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.434371+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:eeba116d44b8399359f97d5829e689054e677ea6940fc5042f035504d85b13b4"
+      "updated_at": "2026-05-06T16:21:02.753233+00:00",
+      "content_hash": "sha256:6de52921c8e4d15cfa19fc567489f96f68595cef6855bc326be05dd25b57daf3"
     },
     {
       "question_id": "8a863a38-d013-4506-acec-8322dc93e841",
@@ -136,7 +185,7 @@
         "d": "These are preload percentages, not bolt grade specifications.",
         "correct": "F1852 is the TC equivalent to A325 (120 ksi); F2280 is the TC equivalent to A490 (150 ksi). Both automatically set preload to ~90% UTS via spline breakoff, providing consistency without wrench calibration."
       },
-      "explanation": null,
+      "explanation": "Reversed: F1852 is 120 ksi (A325 equivalent); F2280 is 150 ksi (A490 equivalent). These are yield strengths, not tensile strengths, and do not align with F1852/F2280 designations. These are preload percentages, not bolt grade specifications. F1852 is the TC equivalent to A325 (120 ksi); F2280 is the TC equivalent to A490 (150 ksi). Both automatically set preload to ~90% UTS via spline breakoff, providing consistency without wrench calibration.",
       "code_citation": "ASTM F1852-20; ASTM F2280-20",
       "bloom_level": "remember",
       "application_context": "recall",
@@ -148,8 +197,8 @@
       "model_id": "ALE-MATL-003-07-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.434371+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:b857ce878261c8982acfe9275962952ff4244f00b72555c97d52e3619c2a35e8"
+      "updated_at": "2026-05-06T16:21:02.8751+00:00",
+      "content_hash": "sha256:414106a337723ca63f8a41667d1d059b0584399a74d37bb018b9b15c23744921"
     },
     {
       "question_id": "53c0a3d1-3843-45c7-a703-5bdc424a3a72",
@@ -234,7 +283,7 @@
         "d": "A490 is manufactured as standard steel; the issue is the plating process itself, not incompatibility with manufacturing.",
         "correct": "High-strength bolts (A490 at 150 ksi) are susceptible to hydrogen embrittlement during electroplating and hot-dip galvanizing processes. Hydrogen atoms are absorbed into the high-strength steel, causing brittle fracture under tensile load even when preload and design appear correct. A325 (120 ksi) is less susceptible due to lower strength, making it the pragmatic choice for galvanized applications."
       },
-      "explanation": null,
+      "explanation": "Galvanizing adds minimal thickness; diameter loss is negligible. Cost drives some A490/stainless substitutions, but H-embrittlement is the primary technical concern. A490 is manufactured as standard steel; the issue is the plating process itself, not incompatibility with manufacturing. High-strength bolts (A490 at 150 ksi) are susceptible to hydrogen embrittlement during electroplating and hot-dip galvanizing processes. Hydrogen atoms are absorbed into the high-strength steel, causing brittle fracture under tensile load even when preload and design appear correct. A325 (120 ksi) is less susceptible due to lower strength, making it the pragmatic choice for galvanized applications.",
       "code_citation": "ASTM F3125-20",
       "bloom_level": "remember",
       "application_context": "recall",
@@ -246,57 +295,8 @@
       "model_id": "ALE-MATL-003-07-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.434371+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:05ccf25ad71a5a75df2dc1e534b8c39b5864baca9f89e9818bd77027a0c8c147"
-    },
-    {
-      "question_id": "1f5dac3c-7d9b-41a9-abbb-8d412a90820c",
-      "article_id": "22192e7e-6cdf-4613-9b2c-bddf1ee3091f",
-      "topic_id": "82a45d6e-0804-400a-a78f-62c42cd43fa4",
-      "text": "Snug-tight bolt installation achieves approximately ___ percent of the preload required for proper slip-critical connections. Why is snug-tight unsuitable for primary load-carrying structural connections?",
-      "options": [
-        {
-          "id": "a",
-          "text": "25%; insufficient friction force allows slip under load, increasing deformation and fatigue risk"
-        },
-        {
-          "id": "b",
-          "text": "50%; standard practice for all bolted connections, but not suitable for slip-critical applications due to potential slippage"
-        },
-        {
-          "id": "c",
-          "text": "75%; approaching adequate preload but unreliable for critical connections where slip must be prevented"
-        },
-        {
-          "id": "d",
-          "text": "90%; proper preload for any application, though not typically used for slip-critical connections due to potential variability"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "b": "50% snug-tight is still insufficient for primary connections; 70%+ is required for slip-critical behavior.",
-        "c": "75% approaches code requirement but without strict calibration/verification, unreliability increases.",
-        "d": "90% is the target for TC installation, not snug-tight.",
-        "correct": "Snug-tight provides ~25% preload, generating minimal friction between connected surfaces. Under service loads, bolts slip, increasing deformation, vibration, and fatigue damage. For primary connections, snug-tight is inadequate; calibrated wrench (70%) or TC installation (90%) is required per RCSC Specification (adopted by NSCP C101-15)."
-      },
-      "explanation": null,
-      "code_citation": "RCSC Specification; NSCP 2015 Chapter 5",
-      "bloom_level": "understand",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-MATL-003-07-003",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:27.434371+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:fae8c0a5d175f90e495c38984537ac3fb4cd740bb299a076796c0ac61642621d"
+      "updated_at": "2026-05-06T16:21:03.000845+00:00",
+      "content_hash": "sha256:b50410cafb3ba33b51274cf834ae9384bba120062ebe673cf5befe1daf35b4ac"
     },
     {
       "question_id": "b4b44890-d033-4205-9452-b82801b1f0b2",
@@ -332,7 +332,7 @@
         "d": "Galvanizing A490 is explicitly prohibited due to H-embrittlement.",
         "correct": "A490 at 150 ksi is susceptible to hydrogen embrittlement during hot-dip galvanizing. Absorbed hydrogen causes brittle fracture under tensile load. For marine environments requiring galvanizing, specify A325 (120 ksi, galvanizing-compatible) instead, or A490 stainless (expensive but H-embrittlement safe). NSCP 2015 and RCSC explicitly prohibit galvanizing A490."
       },
-      "explanation": null,
+      "explanation": "A153 galvanizing is compatible with A307 and A325; the issue is A490 susceptibility. Galvanizing adds minimal material; strength reduction is negligible. Galvanizing A490 is explicitly prohibited due to H-embrittlement. A490 at 150 ksi is susceptible to hydrogen embrittlement during hot-dip galvanizing. Absorbed hydrogen causes brittle fracture under tensile load. For marine environments requiring galvanizing, specify A325 (120 ksi, galvanizing-compatible) instead, or A490 stainless (expensive but H-embrittlement safe). NSCP 2015 and RCSC explicitly prohibit galvanizing A490.",
       "code_citation": "ASTM F3125-20; RCSC Specification",
       "bloom_level": "apply",
       "application_context": "design_application",
@@ -344,8 +344,8 @@
       "model_id": "ALE-MATL-003-07-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.434371+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:5a49a8c14b5947ccf68ba0d1b8dc31f0f082090cdfd9ba34eeb492d039e252e8"
+      "updated_at": "2026-05-06T16:21:03.247658+00:00",
+      "content_hash": "sha256:3639b5e0f54960dc0a6c0f42262b4990779343778bca83e112b78878b2c14926"
     },
     {
       "question_id": "2cda0a48-a65f-4fed-988a-84397360aeff",
@@ -381,7 +381,7 @@
         "d": "For slip-critical (moment-resisting frames), under-tension is unacceptable regardless of connection type.",
         "correct": "TC bolts are designed to break the spline at approximately 90% of UTS. Complete spline breakoff confirms proper preload. Incomplete breakoff (50% remaining) indicates the bolt did not reach target preload due to equipment malfunction, operator error, or thread contamination. For slip-critical connections (moment-resisting frames), this bolt is inadequate and must be removed and replaced. For bearing connections, under-tensioning is less critical, but code practice is to replace the bolt for consistency."
       },
-      "explanation": null,
+      "explanation": "Partial spline breakoff is an anomaly requiring replacement, not normal variation. Over-tensioning TC bolts is prevented by the automatic spline breakoff mechanism; this is an under-tension condition. For slip-critical (moment-resisting frames), under-tension is unacceptable regardless of connection type. TC bolts are designed to break the spline at approximately 90% of UTS. Complete spline breakoff confirms proper preload. Incomplete breakoff (50% remaining) indicates the bolt did not reach target preload due to equipment malfunction, operator error, or thread contamination. For slip-critical connections (moment-resisting frames), this bolt is inadequate and must be removed and replaced. For bearing connections, under-tensioning is less critical, but code practice is to replace the bolt for consistency.",
       "code_citation": "ASTM F1852-20; RCSC Specification",
       "bloom_level": "apply",
       "application_context": "design_application",
@@ -393,8 +393,8 @@
       "model_id": "ALE-MATL-003-07-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.434371+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:0d0a0a9fb8f5258e8dd633417ec656586f1405c2ebd3aa311e5f02b8c026dbf1"
+      "updated_at": "2026-05-06T16:21:03.366432+00:00",
+      "content_hash": "sha256:b61f9813fab3a4d93be1842e443653ff3164440a930204f015b7fe948485bc4c"
     },
     {
       "question_id": "b646f090-9f5e-42c6-97e4-77d65406b559",
@@ -430,7 +430,7 @@
         "d": "Neither tensile stress nor adhesion drives bearing or slip-critical behavior.",
         "correct": "Bearing connections: the bolt acts as a pin, transferring load through bearing (compression) on the bolt shank. The bolt may slip slightly, increasing deformation. Slip-critical connections: friction between mating surfaces (not bolt bearing) transfers all load. High preload (typically 70% of UTS for A325, 80% for A490) must be maintained throughout the structure's life to ensure friction capacity exceeds service loads."
       },
-      "explanation": null,
+      "explanation": "Friction in bearing connections is secondary; compression (bearing) dominates. Slip-critical demands high preload, not minimal. Neither tensile stress nor adhesion drives bearing or slip-critical behavior. Bearing connections: the bolt acts as a pin, transferring load through bearing (compression) on the bolt shank. The bolt may slip slightly, increasing deformation. Slip-critical connections: friction between mating surfaces (not bolt bearing) transfers all load. High preload (typically 70% of UTS for A325, 80% for A490) must be maintained throughout the structure's life to ensure friction capacity exceeds service loads.",
       "code_citation": "RCSC Specification",
       "bloom_level": "understand",
       "application_context": "recall",
@@ -442,8 +442,8 @@
       "model_id": "ALE-MATL-003-07-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.434371+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:26949ee87fbfceb58ca264f08afe966ae7316098599b67fab113d9a8743ce025"
+      "updated_at": "2026-05-06T16:21:03.497047+00:00",
+      "content_hash": "sha256:4ab916cbcfd7978f36ac8aeb58b158dd5e82012f15e5fcff757eb957d252d5c5"
     },
     {
       "question_id": "333652ec-0ddd-42e6-92e4-fe8bfe286211",

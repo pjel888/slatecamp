@@ -1,7 +1,7 @@
 {
   "article_id": "c684727d-d3e3-4303-b213-590c4b8ab766",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:fc57fdcac105131e16a685283871d53c89b7ae867948cdf804c6c1323f4e74ef",
+  "linked_questions_hash": "sha256:2cac53d937d276cdd5fe7b20018d811ea5bd0c2250787cc69fb302d135abe9ce",
   "question_count": 10,
   "questions": [
     {
@@ -54,6 +54,57 @@
       "created_at": "2026-03-23T19:27:33.531863+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:c0a1c8b7c504ecf64b20cf0cb8a2dc2f956a3cb57da2ecad8e1b9b57b2730c7b"
+    },
+    {
+      "question_id": "d8f20b9d-9ecb-49c8-ab3b-6d12606465ac",
+      "article_id": "c684727d-d3e3-4303-b213-590c4b8ab766",
+      "topic_id": "c11bbc41-8e0c-404b-a295-b0f11d11cbb8",
+      "text": "Which combination of production methods is consistent with integrated housing delivery that balances immediate shelter provision with long-term community development?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Core housing + sites-and-services expansion + CMP financing for tenure security"
+        },
+        {
+          "id": "b",
+          "text": "Medium-rise buildings only, no expansion allowance, limiting future adaptability and community growth potential."
+        },
+        {
+          "id": "c",
+          "text": "Market subdivisions with strict balanced housing enforcement, ensuring compliance with local zoning laws and equitable distribution of resources."
+        },
+        {
+          "id": "d",
+          "text": "Self-help housing exclusively; no government-provided structures, which may lead to inconsistent quality and lack of essential infrastructure."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Best practice: core housing (immediate shelter) + sites-and-services land for expansion (community autonomy) + CMP financing (tenure security). This combination addresses immediate needs, long-term growth, and community stability simultaneously.",
+        "b": "Medium-rise alone does not allow family expansion or community-driven development.",
+        "c": "Market subdivisions serve formal buyers, not low-income integrated development.",
+        "d": "Self-help without initial government support may face material/technical constraints.",
+        "correct": "Best practice: core housing (immediate shelter) + sites-and-services land for expansion (community autonomy) + CMP financing (tenure security). This combination addresses immediate needs, long-term growth, and community stability simultaneously.",
+        "takeaway": "Integrated delivery: starter shell + expandable land + collective tenure = completeness."
+      },
+      "explanation": "Best practice: core housing (immediate shelter) + sites-and-services land for expansion (community autonomy) + CMP financing (tenure security). This combination addresses immediate needs, long-term growth, and community stability simultaneously. Medium-rise alone does not allow family expansion or community-driven development. Market subdivisions serve formal buyers, not low-income integrated development. Self-help without initial government support may face material/technical constraints. Best practice: core housing (immediate shelter) + sites-and-services land for expansion (community autonomy) + CMP financing (tenure security). This combination addresses immediate needs, long-term growth, and community stability simultaneously. Integrated delivery: starter shell + expandable land + collective tenure = completeness.",
+      "code_citation": "NHA Integrated Housing Programs; John F.C. Turner",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-003-04-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:33.767447+00:00",
+      "updated_at": "2026-05-06T15:42:45.573619+00:00",
+      "content_hash": "sha256:a905678cb48542926605a2e06f553530d1d2309b7f1b3777747167d5bb313e26"
     },
     {
       "question_id": "06a24ec1-335a-40b0-8566-3ea611622802",
@@ -397,7 +448,7 @@
         "correct": "CMP's defining advantage: the community organization collectively mortgages land to acquire it legally. Families remain in place; in-situ upgrading proceeds with community continuity, social cohesion, and economic stability.",
         "takeaway": "CMP strength: in-situ upgrading + community continuity + collective tenure security."
       },
-      "explanation": null,
+      "explanation": "CMP financing is moderate cost, not necessarily the cheapest (though lower than market-rate). CMP preserves informal settlement character while formalizing tenure. CMP finances land acquisition, not construction of turnkey units. CMP's defining advantage: the community organization collectively mortgages land to acquire it legally. Families remain in place; in-situ upgrading proceeds with community continuity, social cohesion, and economic stability. CMP's defining advantage: the community organization collectively mortgages land to acquire it legally. Families remain in place; in-situ upgrading proceeds with community continuity, social cohesion, and economic stability. CMP strength: in-situ upgrading + community continuity + collective tenure security.",
       "code_citation": "SHFC-CMP Guidelines; John F.C. Turner Principle",
       "bloom_level": "analyze",
       "application_context": "design_application",
@@ -409,59 +460,8 @@
       "model_id": "ALE-PLAN-003-04-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:33.767447+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:78bdc354b4a874a51c2558a0c36854e2b429db914bba23bf363d2140b6f5e22b"
-    },
-    {
-      "question_id": "d8f20b9d-9ecb-49c8-ab3b-6d12606465ac",
-      "article_id": "c684727d-d3e3-4303-b213-590c4b8ab766",
-      "topic_id": "c11bbc41-8e0c-404b-a295-b0f11d11cbb8",
-      "text": "Which combination of production methods is consistent with integrated housing delivery that balances immediate shelter provision with long-term community development?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Core housing + sites-and-services expansion + CMP financing for tenure security"
-        },
-        {
-          "id": "b",
-          "text": "Medium-rise buildings only, no expansion allowance, limiting future adaptability and community growth potential."
-        },
-        {
-          "id": "c",
-          "text": "Market subdivisions with strict balanced housing enforcement, ensuring compliance with local zoning laws and equitable distribution of resources."
-        },
-        {
-          "id": "d",
-          "text": "Self-help housing exclusively; no government-provided structures, which may lead to inconsistent quality and lack of essential infrastructure."
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Best practice: core housing (immediate shelter) + sites-and-services land for expansion (community autonomy) + CMP financing (tenure security). This combination addresses immediate needs, long-term growth, and community stability simultaneously.",
-        "b": "Medium-rise alone does not allow family expansion or community-driven development.",
-        "c": "Market subdivisions serve formal buyers, not low-income integrated development.",
-        "d": "Self-help without initial government support may face material/technical constraints.",
-        "correct": "Best practice: core housing (immediate shelter) + sites-and-services land for expansion (community autonomy) + CMP financing (tenure security). This combination addresses immediate needs, long-term growth, and community stability simultaneously.",
-        "takeaway": "Integrated delivery: starter shell + expandable land + collective tenure = completeness."
-      },
-      "explanation": null,
-      "code_citation": "NHA Integrated Housing Programs; John F.C. Turner",
-      "bloom_level": "analyze",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.9,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PLAN-003-04-010",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:33.767447+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:5fee83b8d267371fa6478fff08714cdeb7df133aefbee019215ef0ba5ffd253e"
+      "updated_at": "2026-05-06T15:42:45.439584+00:00",
+      "content_hash": "sha256:8194d47d246a8f8ce218fe7cf9b61b14f2453ed9c7d34cd337df2423d5be92db"
     },
     {
       "question_id": "378edc0a-3fb9-4585-98d9-822e37ffa107",

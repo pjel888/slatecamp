@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Matl 005 10 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 ## Learning Goal
 
@@ -11,33 +20,19 @@ Carbon sequestration in timber results from photosynthetic CO2 uptake during tre
 Environmental Product Declarations (EPDs) per ISO 14025 provide standardized quantification of material environmental impacts, including embodied carbon (kg CO2e per functional unit), water consumption, eutrophication potential, and other metrics. EPDs enable comparison of equivalent materials and verification of embodied carbon claims.
 
 
-<ArticleMedia id="media-voc-limits-chart" layout="single" type="image" status="placeholder"
-  alt="Comparison chart of VOC limits for interior finishes under BERDE and LEED standards, with common material categories"
-  caption="Future chart: VOC limits for interior finishes — BERDE and LEED requirements"
-  suggestedAsset="Table or infographic showing VOC limits by finish type"
-  placementIntent="Provides reference for acceptable VOC levels in green building" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-voc-limits-chart", layout="single", type="image", status="placeholder", alt="Comparison chart of VOC limits for interior finishes under BERDE and LEED standards, with common material categories", caption="Future chart: VOC limits for interior finishes — BERDE and LEED requirements", suggestedAsset="Table or infographic showing VOC limits by finish type", placementIntent="Provides reference for acceptable VOC levels in green building"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Provisions
 
-<WikiExamTable headers={["LCA Phase", "EN 15978 Module", "Description", "Example"]}>
-<tr><td>Product Stage (Raw Materials)</td><td>A1</td><td>Extraction and processing of raw materials (e.g., mining ore, harvesting timber, quarrying stone)</td><td>Iron ore extraction; tree harvesting; limestone quarrying</td></tr>
-<tr><td>Product Stage (Manufacturing)</td><td>A2</td><td>Processing of secondary materials and manufacturing of products from processed materials (e.g., steelmaking, concrete production, lumber milling)</td><td>Steel smelting via EAF; concrete batch plant production; lumber kiln drying</td></tr>
-<tr><td>Product Stage (Manufacturing)</td><td>A3</td><td>Packaging and all processes up to delivery from the manufacturer gate</td><td>Product bagging; palleting; factory loading onto truck</td></tr>
-<tr><td>Construction Stage</td><td>A4</td><td>Transport from manufacturer to project site, typically including distance >150 km assumed at 100 kg CO2e per tonne-km by truck</td><td>Delivery of concrete, steel, timber from plant to construction site</td></tr>
-<tr><td>Construction Stage</td><td>A5</td><td>Installation of products in the building; labor, equipment, and waste associated with assembly on-site</td><td>Concrete placement labor; steel bolting/welding; timber framing labor and formwork</td></tr>
-<tr><td>Use Stage</td><td>B1</td><td>Use and occupation of the building, excluding operational energy and water</td><td>Monitoring, maintenance planning, data collection</td></tr>
-<tr><td>Use Stage</td><td>B2</td><td>Maintenance of materials and components to preserve function (scheduled replacement and repair)</td><td>Painting, caulking, membrane repair, fastener replacement</td></tr>
-<tr><td>Use Stage</td><td>B3</td><td>Repair of materials and components due to damage or wear beyond design intention</td><td>Concrete crack injection, structural member strengthening</td></tr>
-<tr><td>Use Stage</td><td>B4</td><td>Replacement of materials and components due to wear exceeding design life</td><td>Roof membrane (25-year service life); HVAC systems (15-20 years)</td></tr>
-<tr><td>Use Stage</td><td>B5</td><td>Refurbishment of the building for significant upgrades maintaining occupancy (major systems renovation)</td><td>Window replacement; MEP system upgrade; facade refurbishment</td></tr>
-<tr><td>Use Stage</td><td>B6</td><td>Operational energy: heating, cooling, lighting, plug loads, and renewable energy production</td><td>Annual electricity and fossil fuel consumption</td></tr>
-<tr><td>Use Stage</td><td>B7</td><td>Operational water: water use and treatment including wastewater management</td><td>Potable and reclaimed water consumption; wastewater treatment</td></tr>
-<tr><td>End-of-Life Stage</td><td>C1</td><td>Deconstruction/demolition of the building including selective dismantling and material separation</td><td>Structural demolition; material segregation for recycle/reuse</td></tr>
-<tr><td>End-of-Life Stage</td><td>C2</td><td>Transport from building site to waste treatment or final disposal facilities</td><td>Concrete to crusher; wood to mulch facility; metals to scrap yard</td></tr>
-<tr><td>End-of-Life Stage</td><td>C3</td><td>Waste processing for recycling, energy recovery, or disposal (landfill emissions and methane)</td><td>Concrete crushing to aggregate; wood energy recovery; landfill gas</td></tr>
-<tr><td>End-of-Life Stage</td><td>C4</td><td>Disposal of processed residues and final waste to landfill including emissions (methane, leachate)</td><td>Non-recyclable/non-recoverable waste in permanent landfill</td></tr>
-<tr><td>Beyond System Boundary</td><td>D</td><td>Benefits and loads beyond the system boundary: potential for reuse, recovery, or recycling in future cycles (cradle-to-cradle credit)</td><td>Recycling credits for metals, concrete, gypsum reprocessing potential; timber reuse credit</td></tr>
-</WikiExamTable>
+[SLATECAMP_UI_BLOCK:ui_0002 component="WikiExamTable" status="preserved"]
+Extracted summary:
+- Props: headers="{[\"LCA Phase\", \"EN 15978 Module\", \"Description\", \"Example\"]}"
+- Text: Product Stage (Raw Materials) A1 Extraction and processing of raw materials (e.g., mining ore, harvesting timber, quarrying stone) Iron ore extraction; tree harvesting; limestone quarrying Product Stage (Manufacturing) A2 Processing of secondary materials and manufacturing of products from processed materials (e.g., steelmaking, concrete production, lumber milling) Steel smelting via EAF; concrete batch plant production; lumber kiln drying Product Stage (Manufacturing) A3 Packaging and all proce
+[/SLATECAMP_UI_BLOCK]
 
 Embodied carbon (Module A1-A3: cradle-to-gate) represents 15-30 percent of total lifecycle carbon for most buildings, with operational carbon (B6-B7: energy and water use) dominating 70-85 percent over a 50-year building life. However, embodied carbon increasingly drives decarbonization targets in net-zero buildings, where operational emissions are near zero via renewable energy and efficiency measures.
 
@@ -58,11 +53,11 @@ Philippine electricity grid composition (2023): approximately 40-45 percent coal
 Timber-producing regions in Mindanao, Palawan, and Visayas provide sustainably harvested tropical hardwoods and plantation-grown softwoods meeting Philippine Sustainable Forestry standards. Using locally harvested timber (lauan, teak, mahogany in sustainable operations) reduces A4 transport embodied carbon and supports rural livelihoods. However, wild-harvested timber from unmanaged forests creates deforestation risk and should be avoided; certification (FSC, PEFC) is necessary to ensure sustainability.
 
 
-<ArticleMedia id="media-green-material-selection" layout="single" type="image" status="placeholder"
-  alt="Decision diagram for selecting green materials based on VOC limits, recycled content, regional sourcing, and certified wood requirements under BERDE and LEED"
-  caption="Future diagram: green material selection criteria — VOC, recycled content, regional sourcing, certified wood"
-  suggestedAsset="Decision flowchart for green building material specification"
-  placementIntent="Guides material selection for green building certification compliance" />
+[SLATECAMP_UI_BLOCK:ui_0003 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-green-material-selection", layout="single", type="image", status="placeholder", alt="Decision diagram for selecting green materials based on VOC limits, recycled content, regional sourcing, and certified wood requirements under BERDE and LEED", caption="Future diagram: green material selection criteria — VOC, recycled content, regional sourcing, certified wood", suggestedAsset="Decision flowchart for green building material specification", placementIntent="Guides material selection for green building certification compliance"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 ## How It's Tested
 
 LEA candidates must identify LCA phases by module number (A1-A5, B1-B7, C1-C4, D) and describe what each module includes (e.g., A1-A3 is cradle-to-gate production; B6-B7 is operational energy and water; C1-C4 is end-of-life). Questions present a building scenario and ask candidates to calculate embodied carbon reduction from material substitution (e.g., 20 percent fly ash concrete replaces virgin cement), accounting for both reduced production (A1-A3) and potential B4 (replacement) stage implications.
@@ -71,24 +66,37 @@ A second test approach asks candidates to interpret EPD data for two equivalent 
 
 Calculation questions may involve total lifecycle carbon: a building's operational carbon is estimated from climate zone heating/cooling degree-days and energy efficiency (kWh/m²/year). Embodied carbon A1-C4 is calculated from material quantities and EPD values. Candidates must compare the two and recognize that embodied carbon typically represents 15-30 percent of total lifecycle carbon unless operational efficiency is very high.
 
-<Tip>When evaluating EPD data, note the system boundary: A1-A3 (cradle-to-gate) enables material comparison but excludes transport and installation. Full A1-C4 lifecycle assessments are more comprehensive but vary based on assumed service lives and end-of-life scenarios. Always confirm which modules are included in the EPD you are using. For timber, always consider sequestration credit (Module D): timber's negative embodied carbon (stored carbon) is a significant advantage over mineral materials when carbon accounting includes sequestration.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: When evaluating EPD data, note the system boundary: A1-A3 (cradle-to-gate) enables material comparison but excludes transport and installation. Full A1-C4 lifecycle assessments are more comprehensive but vary based on assumed service lives and end-of-life scenarios. Always confirm which modules are included in the EPD you are using. For timber, always consider sequestration credit (Module D): timber's negative embodied carbon (stored carbon) is a significant advantage over mineral materials when
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
-<WikiMistakeCard title="Confusing Embodied Carbon with Operational Carbon" severity="critical">Candidates often treat embodied carbon (A1-A3, product production) as equivleant to operational carbon (B6-B7, energy consumption). Operational carbon is typically 3-5 times larger than embodied carbon over a 50-year building life. For decarbonization strategy, focusing on operational efficiency (HVAC, envelope, renewable energy) has immediate large impact, while embodied carbon reduction affects only 15-30 percent of total emissions.</WikiMistakeCard>
+[SLATECAMP_UI_BLOCK:ui_0005 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: title="Confusing Embodied Carbon with Operational Carbon", severity="critical"
+- Text: Candidates often treat embodied carbon (A1-A3, product production) as equivleant to operational carbon (B6-B7, energy consumption). Operational carbon is typically 3-5 times larger than embodied carbon over a 50-year building life. For decarbonization strategy, focusing on operational efficiency (HVAC, envelope, renewable energy) has immediate large impact, while embodied carbon reduction affects only 15-30 percent of total emissions.
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeCard title="Assuming All Timber Carbon is Stored Carbon" severity="critical">Candidates sometimes claim that all timber has negative embodied carbon without accounting for forest sustainability and regrowth. Carbon sequestration is only climate-beneficial if the forest is replanted and regrows after harvest. Deforestation (permanent forest conversion to other use) means carbon storage is temporary; the forest does not regrow to re-sequester the carbon. Candidates must verify FSC or PEFC certification to ensure sustainable harvest before claiming carbon credit.</WikiMistakeCard>
+[SLATECAMP_UI_BLOCK:ui_0006 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: title="Assuming All Timber Carbon is Stored Carbon", severity="critical"
+- Text: Candidates sometimes claim that all timber has negative embodied carbon without accounting for forest sustainability and regrowth. Carbon sequestration is only climate-beneficial if the forest is replanted and regrows after harvest. Deforestation (permanent forest conversion to other use) means carbon storage is temporary; the forest does not regrow to re-sequester the carbon. Candidates must verify FSC or PEFC certification to ensure sustainable harvest before claiming carbon credit.
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeCard title="Overestimating Module D (Recycling Credits)" severity="high">Module D assigns credits for future reuse and recycling potential, but actual recycling depends on market demand and facility availability. Candidates sometimes use overly optimistic Module D credits without verifying that recycling infrastructure exists. In the Philippines, recycling rates are low (less than 5% for C&D waste); assuming all segregated material will be recycled may overstate lifecycle carbon credits by 10-30 percent.</WikiMistakeCard>
+[SLATECAMP_UI_BLOCK:ui_0007 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: title="Overestimating Module D (Recycling Credits)", severity="high"
+- Text: Module D assigns credits for future reuse and recycling potential, but actual recycling depends on market demand and facility availability. Candidates sometimes use overly optimistic Module D credits without verifying that recycling infrastructure exists. In the Philippines, recycling rates are low (less than 5% for C&D waste); assuming all segregated material will be recycled may overstate lifecycle carbon credits by 10-30 percent.
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeList title="Common errors in LCA interpretation:">
-<li>Assuming A1-A3 embodied carbon values are identical for all producers of a material; actual values vary by location, energy source (renewable vs coal-powered production), and process efficiency</li>
-<li>Forgetting to account for transport distance (A4) in embodied carbon; importing materials increases A4 emissions significantly versus locally sourced materials</li>
-<li>Confusing service life with building design life; replacing components (B4 module) during occupancy adds embodied carbon not accounted for in A1-C4 baseline LCA</li>
-<li>Using single-year operational carbon (B6-B7) without accounting for climate variation, occupancy changes, or future energy grid decarbonization over 50-year building life</li>
-<li>Applying international EPD data without adjusting for Philippine electricity grid composition (40-45% coal) and transport distances from manufacturing hubs to remote regions</li>
-<li>Assuming Module D (recycling credits) equal 100% of material value; recycling efficiency losses and contamination typically reduce Module D credits to 30-80% of theoretical potential</li>
-</WikiMistakeList>
+[SLATECAMP_UI_BLOCK:ui_0008 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: title="Common errors in LCA interpretation:"
+- Text: Assuming A1-A3 embodied carbon values are identical for all producers of a material; actual values vary by location, energy source (renewable vs coal-powered production), and process efficiency Forgetting to account for transport distance (A4) in embodied carbon; importing materials increases A4 emissions significantly versus locally sourced materials Confusing service life with building design life; replacing components (B4 module) during occupancy adds embodied carbon not accounted for in A1-C
+[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 

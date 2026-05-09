@@ -1,7 +1,7 @@
 {
   "article_id": "708fd4a4-e06f-4255-a2ad-e56711b9ee43",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:cfc2b927890ed4f75c9fda924ea143a396ec23b02ffce5f16800535ef9526226",
+  "linked_questions_hash": "sha256:2f5e2d61a7b52a656fbb70f57f7e701a9af39a120ac13294b38affb296f4aa4b",
   "question_count": 10,
   "questions": [
     {
@@ -388,7 +388,7 @@
         "correct": "Structural steel fabrication waste is 5–7% due to cutting, welding, and handling losses.",
         "takeaway": "Use 5–7% waste for structural steel. Add this AFTER calculating total member weights."
       },
-      "explanation": null,
+      "explanation": "2–3% is too low; does not account for fabrication losses. 10–15% is higher; applies to materials like paint or tiles, not structural steel. 20–25% is excessive. Structural steel fabrication waste is 5–7% due to cutting, welding, and handling losses. Use 5–7% waste for structural steel. Add this AFTER calculating total member weights.",
       "code_citation": "Site practice, NSCP guidelines",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
@@ -400,8 +400,8 @@
       "model_id": "ALE-MATL-010-07-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.926909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:1705882dc75154fc7586d7dbcdc39c6f4413590715d07fab19da46a7da0a09b9"
+      "updated_at": "2026-05-06T15:09:18.711683+00:00",
+      "content_hash": "sha256:4a92d6a87ab927c9e1de28c650b0a13d93f66e68c0c51d18d902c09dbad853a7"
     },
     {
       "question_id": "5fce1666-8acb-4920-b55f-f740f9cce6d4",

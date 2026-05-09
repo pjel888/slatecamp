@@ -1,9 +1,159 @@
 {
   "article_id": "f06686b1-8dc4-4514-9e32-5e4cd0365006",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:e7c5ffbab54202d0b933c1119de9e757e1b8f4750d6245b529da7ebb953cbe78",
+  "linked_questions_hash": "sha256:6c906678f36a65135adeeb5812a23e5c7cd911fe2a1262f76a96a36d38807419",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "24857268-6703-438e-94b4-03e3037385ae",
+      "article_id": "f06686b1-8dc4-4514-9e32-5e4cd0365006",
+      "topic_id": "c287156e-5363-414f-918e-08699a5cf32d",
+      "text": "What is the AAMA Gold Label structural resistance rating for windows?",
+      "options": [
+        {
+          "id": "a",
+          "text": "50 mph wind pressure, suitable for areas with moderate wind exposure and standard building codes"
+        },
+        {
+          "id": "b",
+          "text": "75 mph wind pressure, designed for regions with higher wind speeds and more stringent safety requirements"
+        },
+        {
+          "id": "c",
+          "text": "40 psf design pressure (AW class)"
+        },
+        {
+          "id": "d",
+          "text": "120 mph wind pressure, applicable to hurricane-prone zones requiring enhanced structural integrity"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "50 mph is inadequate for any commercial application.",
+        "b": "75 mph is lower than Gold Label; suitable for standard-grade windows.",
+        "d": "120 mph exceeds Gold Label and would require specialized storm-resistant construction.",
+        "correct": "AAMA Gold Label windows must resist at least 94 mph wind pressure without failure, the highest structural rating.",
+        "takeaway": "AAMA Gold Label = ≥94 mph structural resistance. For typhoon zones exceeding 150 mph, specify reinforced frames or storm glazing."
+      },
+      "explanation": "50 mph is inadequate for any commercial application. 75 mph is lower than Gold Label; suitable for standard-grade windows. 120 mph exceeds Gold Label and would require specialized storm-resistant construction. AAMA Gold Label windows must resist at least 94 mph wind pressure without failure, the highest structural rating. AAMA Gold Label = ≥94 mph structural resistance. For typhoon zones exceeding 150 mph, specify reinforced frames or storm glazing.",
+      "code_citation": "AAMA/WDMA/CSA 101/I.S.2/A440 NAFS Standard",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-008-04-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-05-06T16:22:32.796952+00:00",
+      "content_hash": "sha256:0db8504ba5f99f2f84cc40d68021ca26d9e14b34c50182595afa199e02754e87"
+    },
+    {
+      "question_id": "ece3877b-c961-413d-8851-31653e444d9b",
+      "article_id": "f06686b1-8dc4-4514-9e32-5e4cd0365006",
+      "topic_id": "c287156e-5363-414f-918e-08699a5cf32d",
+      "text": "A coastal building in the Philippines experiences frequent salt spray. What window hardware material should be specified to resist corrosion?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Painted steel, which may require frequent maintenance due to corrosion"
+        },
+        {
+          "id": "b",
+          "text": "Standard aluminum, which is prone to corrosion in salty environments"
+        },
+        {
+          "id": "c",
+          "text": "Stainless steel or coated aluminum"
+        },
+        {
+          "id": "d",
+          "text": "Galvanized steel, which offers some protection but may not be sufficient in severe conditions"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Painted steel loses its coating in salt spray, exposing the steel to corrosion.",
+        "b": "Standard aluminum corrodes through pitting in salt spray; galvanic corrosion occurs when aluminum contacts steel.",
+        "d": "Galvanized steel offers some protection but is inferior to stainless steel in salt spray.",
+        "correct": "Salt spray rapidly corrodes painted steel and standard aluminum. Stainless steel (preferably 304 or 316 marine grade) or coated aluminum (powder-coated or anodized) resist corrosion in coastal environments.",
+        "takeaway": "Coastal projects = stainless steel or coated aluminum hardware. Never specify standard painted or uncoated metals."
+      },
+      "explanation": "Painted steel loses its coating in salt spray, exposing the steel to corrosion. Standard aluminum corrodes through pitting in salt spray; galvanic corrosion occurs when aluminum contacts steel. Galvanized steel offers some protection but is inferior to stainless steel in salt spray. Salt spray rapidly corrodes painted steel and standard aluminum. Stainless steel (preferably 304 or 316 marine grade) or coated aluminum (powder-coated or anodized) resist corrosion in coastal environments. Coastal projects = stainless steel or coated aluminum hardware. Never specify standard painted or uncoated metals.",
+      "code_citation": "General corrosion resistance practices for coastal environments (PD 1096 Rule VII materials)",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-008-04-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-05-06T16:22:33.03869+00:00",
+      "content_hash": "sha256:15c1e78d1a9e29c714980a9d077d409f681d0f2c2f2da98d2e41865d185d33f8"
+    },
+    {
+      "question_id": "b2050540-d62a-4315-9765-73435d98f600",
+      "article_id": "f06686b1-8dc4-4514-9e32-5e4cd0365006",
+      "topic_id": "c287156e-5363-414f-918e-08699a5cf32d",
+      "text": "Which window type automatically sheds rain while allowing ventilation through the bottom opening?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fixed window"
+        },
+        {
+          "id": "b",
+          "text": "Sliding window"
+        },
+        {
+          "id": "c",
+          "text": "Casement window"
+        },
+        {
+          "id": "d",
+          "text": "Awning window"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Fixed windows do not open; they provide no ventilation.",
+        "b": "Sliding windows do not shed rain effectively; water can enter around the sash during heavy rain.",
+        "c": "Casement windows open to the full width but do not automatically shed rain.",
+        "correct": "Awning windows hinge at the top and swing outward at the bottom. This design naturally sheds rain while the bottom opening allows air intake, ideal for humid climates.",
+        "takeaway": "Awning windows = hinge top, open bottom, rain shedding. Ideal for tropical and monsoon-prone regions."
+      },
+      "explanation": "Fixed windows do not open; they provide no ventilation. Sliding windows do not shed rain effectively; water can enter around the sash during heavy rain. Casement windows open to the full width but do not automatically shed rain. Awning windows hinge at the top and swing outward at the bottom. This design naturally sheds rain while the bottom opening allows air intake, ideal for humid climates. Awning windows = hinge top, open bottom, rain shedding. Ideal for tropical and monsoon-prone regions.",
+      "code_citation": "AAMA/WDMA/CSA 101/I.S.2/A440 NAFS Standard",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-008-04-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-05-06T16:22:32.919482+00:00",
+      "content_hash": "sha256:54bc12ad38b2738be6d233fd956270502d8b9806016ab354869d958929fce752"
+    },
     {
       "question_id": "ed3ba734-4c18-4574-ad29-7f947cf37546",
       "article_id": "f06686b1-8dc4-4514-9e32-5e4cd0365006",
@@ -89,7 +239,7 @@
         "correct": "AAMA Gold Label windows are limited to 0.30 cfm (cubic feet per minute) at 25 mph wind speed, the highest performance tier.",
         "takeaway": "AAMA Gold Label = ≤0.30 cfm air leakage. Always specify Gold Label for tropical and typhoon-prone regions."
       },
-      "explanation": null,
+      "explanation": "0.50 cfm exceeds Gold Label (≤0.30 cfm) limit but may pass lower performance classes. 0.15 cfm is an exceptional limit not defined in standard AAMA grading. 1.00 cfm is far too high for any AAMA-certified window. AAMA Gold Label windows are limited to 0.30 cfm (cubic feet per minute) at 25 mph wind speed, the highest performance tier. AAMA Gold Label = ≤0.30 cfm air leakage. Always specify Gold Label for tropical and typhoon-prone regions.",
       "code_citation": "AAMA/WDMA/CSA 101/I.S.2/A440 NAFS Standard",
       "bloom_level": "understand",
       "application_context": "recall",
@@ -101,108 +251,8 @@
       "model_id": "ALE-MATL-008-04-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.473222+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:093480a90260f2e575dbde3f17acb672fb80a044b5c94f80e3f8a3893ab4279f"
-    },
-    {
-      "question_id": "24857268-6703-438e-94b4-03e3037385ae",
-      "article_id": "f06686b1-8dc4-4514-9e32-5e4cd0365006",
-      "topic_id": "c287156e-5363-414f-918e-08699a5cf32d",
-      "text": "What is the AAMA Gold Label structural resistance rating for windows?",
-      "options": [
-        {
-          "id": "a",
-          "text": "50 mph wind pressure, suitable for areas with moderate wind exposure and standard building codes"
-        },
-        {
-          "id": "b",
-          "text": "75 mph wind pressure, designed for regions with higher wind speeds and more stringent safety requirements"
-        },
-        {
-          "id": "c",
-          "text": "40 psf design pressure (AW class)"
-        },
-        {
-          "id": "d",
-          "text": "120 mph wind pressure, applicable to hurricane-prone zones requiring enhanced structural integrity"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "50 mph is inadequate for any commercial application.",
-        "b": "75 mph is lower than Gold Label; suitable for standard-grade windows.",
-        "d": "120 mph exceeds Gold Label and would require specialized storm-resistant construction.",
-        "correct": "AAMA Gold Label windows must resist at least 94 mph wind pressure without failure, the highest structural rating.",
-        "takeaway": "AAMA Gold Label = ≥94 mph structural resistance. For typhoon zones exceeding 150 mph, specify reinforced frames or storm glazing."
-      },
-      "explanation": null,
-      "code_citation": "AAMA/WDMA/CSA 101/I.S.2/A440 NAFS Standard",
-      "bloom_level": "understand",
-      "application_context": "recall",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-MATL-008-04-002",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:28.473222+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:de21b19474adc46cbd8662215fd38d0c99237ea1b4a85a19b03f9e145497600f"
-    },
-    {
-      "question_id": "b2050540-d62a-4315-9765-73435d98f600",
-      "article_id": "f06686b1-8dc4-4514-9e32-5e4cd0365006",
-      "topic_id": "c287156e-5363-414f-918e-08699a5cf32d",
-      "text": "Which window type automatically sheds rain while allowing ventilation through the bottom opening?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Fixed window"
-        },
-        {
-          "id": "b",
-          "text": "Sliding window"
-        },
-        {
-          "id": "c",
-          "text": "Casement window"
-        },
-        {
-          "id": "d",
-          "text": "Awning window"
-        }
-      ],
-      "correct_option_id": "d",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Fixed windows do not open; they provide no ventilation.",
-        "b": "Sliding windows do not shed rain effectively; water can enter around the sash during heavy rain.",
-        "c": "Casement windows open to the full width but do not automatically shed rain.",
-        "correct": "Awning windows hinge at the top and swing outward at the bottom. This design naturally sheds rain while the bottom opening allows air intake, ideal for humid climates.",
-        "takeaway": "Awning windows = hinge top, open bottom, rain shedding. Ideal for tropical and monsoon-prone regions."
-      },
-      "explanation": null,
-      "code_citation": "AAMA/WDMA/CSA 101/I.S.2/A440 NAFS Standard",
-      "bloom_level": "understand",
-      "application_context": "recall",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-MATL-008-04-003",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:28.473222+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:6f4c3beb89e78a3c3d12a86635d240cf6d5c385785000cd53575c92d41716921"
+      "updated_at": "2026-05-06T16:22:32.679788+00:00",
+      "content_hash": "sha256:35fe0d327a992367728f0a11aa0289c6d4a8b784b019519db069a68c00cf27d5"
     },
     {
       "question_id": "61d7a99d-1e51-4b14-86e1-80189abf8068",
@@ -403,56 +453,6 @@
       "created_at": "2026-03-23T19:27:28.473222+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:23ea4467d58b82636b066b8e858a1459cac6c83e1f0b52a7046c6a51ec570a0a"
-    },
-    {
-      "question_id": "ece3877b-c961-413d-8851-31653e444d9b",
-      "article_id": "f06686b1-8dc4-4514-9e32-5e4cd0365006",
-      "topic_id": "c287156e-5363-414f-918e-08699a5cf32d",
-      "text": "A coastal building in the Philippines experiences frequent salt spray. What window hardware material should be specified to resist corrosion?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Painted steel, which may require frequent maintenance due to corrosion"
-        },
-        {
-          "id": "b",
-          "text": "Standard aluminum, which is prone to corrosion in salty environments"
-        },
-        {
-          "id": "c",
-          "text": "Stainless steel or coated aluminum"
-        },
-        {
-          "id": "d",
-          "text": "Galvanized steel, which offers some protection but may not be sufficient in severe conditions"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Painted steel loses its coating in salt spray, exposing the steel to corrosion.",
-        "b": "Standard aluminum corrodes through pitting in salt spray; galvanic corrosion occurs when aluminum contacts steel.",
-        "d": "Galvanized steel offers some protection but is inferior to stainless steel in salt spray.",
-        "correct": "Salt spray rapidly corrodes painted steel and standard aluminum. Stainless steel (preferably 304 or 316 marine grade) or coated aluminum (powder-coated or anodized) resist corrosion in coastal environments.",
-        "takeaway": "Coastal projects = stainless steel or coated aluminum hardware. Never specify standard painted or uncoated metals."
-      },
-      "explanation": null,
-      "code_citation": "General corrosion resistance practices for coastal environments (PD 1096 Rule VII materials)",
-      "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-MATL-008-04-009",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:28.473222+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:add16c4c2aeef0f9d63ce3bdda1ff114ba1810c2cc26c27fc8866a9f3bb07a31"
     },
     {
       "question_id": "7418747e-05ea-42e6-b324-35c8cee0bb0f",

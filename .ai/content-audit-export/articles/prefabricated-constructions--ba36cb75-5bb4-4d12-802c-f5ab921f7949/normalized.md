@@ -311,7 +311,7 @@ The Philippine approach to prefabricated construction is contained in a single, 
 ### 5.2 Testing Standards: Philippine vs. USA
 
 | Testing Aspect | Philippine Approach | USA Approach |
-|----------------|--------------------|-----------| 
+|----------------|--------------------|-----------|
 | Fire endurance | Not explicitly referenced to a test method in Section 1501; Rule VI and RA 9514 govern rating requirements | ASTM E119 / UL 263 standard fire test; hourly ratings required |
 | Structural | Referenced to accredited lab; specific test methods not enumerated in Section 1501 | ASTM D5055 (prefab wood I-joists); ACI 318 (precast concrete); AISC (steel) |
 | Weather resistance | Referenced as a testing requirement; specific test not named | ASTM E283 (air leakage), ASTM E331 (water resistance), AAMA test methods for windows |
@@ -457,7 +457,7 @@ According to PD 1096, Rule XV, Section 1501, every device or system used to conn
 [SLATECAMP_UI_BLOCK:ui_0004 component="Note" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: Section 1501 states clearly that every connection device must develop the strength of the members as an integral structure — meaning the connection cannot be the weak link. Option A is good practice but not the Code's specific language for connection devices. Option C applies to the units themselves (testing), not specifically to connection devices. Option D has no basis in the Code — connections between concrete panels and steel frames are common and Code-compliant. Note the exception: members 
+- Text: Section 1501 states clearly that every connection device must develop the strength of the members as an integral structure — meaning the connection cannot be the weak link. Option A is good practice but not the Code's specific language for connection devices. Option C applies to the units themselves (testing), not specifically to connection devices. Option D has no basis in the Code — connections between concrete panels and steel frames are common and Code-compliant. Note the exception: members
 [/SLATECAMP_UI_BLOCK]
 
 ---

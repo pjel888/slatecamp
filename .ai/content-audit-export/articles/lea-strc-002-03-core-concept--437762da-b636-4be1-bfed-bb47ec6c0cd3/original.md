@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Strc 002 03 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 ## Learning Goal
 By the end of this article, you will be able to:
@@ -10,7 +19,11 @@ By the end of this article, you will be able to:
 Moment-resisting frames are classified into three categories based on their seismic design level: Ordinary (OMRF), Intermediate (IMRF), and Special (SMRF). Each category has specific detailing requirements and a seismic response modification factor (R factor). Understanding these categories is critical for seismic design in the Philippines.
 
 ## Core Concept
-<ArticleMedia id="media-lea-strc-002-03-core-concept" type="image" caption="Moment-Resisting Frame — Rigid Connection Behavior" description="Diagram showing a moment-resisting frame under lateral load with: (1) rigid beam-column connections with moment diagrams at joints; (2) deflected shape showing double curvature in beams and columns; (3) comparison of OMRF (R=3), IMRF (R=4.5-5.5), and SMRF (R=8-8.5) detailing requirements including connection reinforcement and confinement zones." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-strc-002-03-core-concept", type="image", caption="Moment-Resisting Frame — Rigid Connection Behavior", description="Diagram showing a moment-resisting frame under lateral load with: (1) rigid beam-column connections with moment diagrams at joints; (2) deflected shape showing double curvature in beams and columns; (3) comparison of OMRF (R=3), IMRF (R=4.5-5.5), and SMRF (R=8-8.5) detailing requirements including connection reinforcement and confinement zones.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 A **moment-resisting frame (MRF)** is a structural system in which beams and columns are rigidly connected, allowing the frame to resist lateral loads through bending moments at the joints. Unlike braced frames (which use diagonal members), moment-resisting frames rely on the rigidity of connections to develop moment capacity.
 
@@ -48,7 +61,11 @@ NSCP 2015 Table 208-11A (R factors), Sec 408 (steel general), Sec 418 (concrete 
 
 **Apply-level:** Given a 8-story office building in Seismic Zone 2, justify why SMRF is required and what design force reduction is allowed due to the R factor.
 
-<Tip>**Memory aid:** O=3.5, I=5.5, S=8.0. SMRF (Special) gets the highest R because it's **specially** detailed for maximum ductility. Think: "Special demands special detailing."</Tip>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Memory aid:** O=3.5, I=5.5, S=8.0. SMRF (Special) gets the highest R because it's **specially** detailed for maximum ductility. Think: "Special demands special detailing."
+[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 
@@ -56,6 +73,14 @@ See also: **Bearing Wall Systems** (lea-strc-002-01) for comparison with wall sy
 
 ## Common Mistakes
 
-<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: These are frequently tested traps. Memorize them to avoid losing easy points on exam day.
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeList mistakes={["Confusing R factor with safety factor—R is a reduction factor allowing smaller design forces due to ductility, not a safety multiplier","Assuming IMRF and SMRF are equivleant; IMRF has less stringent detailing and lower R (5.5 vs 8.0)","Using OMRF (R=3.5) in Seismic Zone 2 because it is cheaper—NSCP requires SMRF in high-seismic areas"]} />
+[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Confusing R factor with safety factor—R is a reduction factor allowing smaller design forces due to ductility, not a safety multiplier\",\"Assuming IMRF and SMRF are equivleant; IMRF has less stringent detailing and lower R (5.5 vs 8.0)\",\"Using OMRF (R=3.5) in Seismic Zone 2 because it is cheaper—NSCP requires SMRF in high-seismic areas\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]

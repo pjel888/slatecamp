@@ -1,7 +1,7 @@
 {
   "article_id": "1bf5341b-5898-4793-bbff-472227208ccf",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:1ea09bc3c35c41e89fe8fe02e20a5e9f6ae8592c7fd2aa2fc7b64bdff7faea9e",
+  "linked_questions_hash": "sha256:9553ff506e491f8b850db2742a08cae9d6cc4f8760845f84f7a306ca3cf9cd5b",
   "question_count": 10,
   "questions": [
     {
@@ -54,6 +54,57 @@
       "created_at": "2026-03-23T19:27:40.815035+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:45201f601189aa05bd17fd2a4b7b6b415e67780a37040be9c6cdfc68ef1bcf79"
+    },
+    {
+      "question_id": "b3a3d4d3-91da-4262-a83c-2d07b67c1df5",
+      "article_id": "1bf5341b-5898-4793-bbff-472227208ccf",
+      "topic_id": "ab682da1-b4de-46c5-85f6-852bcd00cf05",
+      "text": "A sloped residential site has an average grade of 20% (1V:5H slope). The site design proposes to create a building platform using bench cut and fill grading. What is the primary geotechnical and environmental consideration for this slope gradient?",
+      "options": [
+        {
+          "id": "a",
+          "text": "20% slope is too steep; development cannot proceed without significant risk mitigation measures and environmental impact assessments"
+        },
+        {
+          "id": "b",
+          "text": "20% slope is moderate; bench cuts and retaining walls are necessary to create stable building pads; compaction of fill must be verified"
+        },
+        {
+          "id": "c",
+          "text": "20% slope is gentle; development can proceed with minimal grading intervention, assuming no additional environmental constraints"
+        },
+        {
+          "id": "d",
+          "text": "Slope gradient does not affect grading design; standard site preparation is sufficient, provided that all local regulations are met"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "20% is buildable with proper grading; it does not prohibit development.",
+        "b": "A 20% slope is in the moderate-to-steep range (10–25% = moderate; > 25% = steep). Bench cuts to create horizontal building pads and retaining walls to support cut/fill slopes are required. Fill compaction must be verified to ensure bearing capacity.",
+        "c": "20% is not gentle (gentle is < 10%); significant grading is required.",
+        "d": "Slope directly determines grading strategy, cost, and geotechnical requirements.",
+        "correct": "A 20% slope is in the moderate-to-steep range (10–25% = moderate; > 25% = steep). Bench cuts to create horizontal building pads and retaining walls to support cut/fill slopes are required. Fill compaction must be verified to ensure bearing capacity.",
+        "takeaway": "Slope determines grading approach: < 10% = minimal; 10–25% = bench cuts + walls; > 25% = specialized design required."
+      },
+      "explanation": "20% is buildable with proper grading; it does not prohibit development. A 20% slope is in the moderate-to-steep range (10–25% = moderate; > 25% = steep). Bench cuts to create horizontal building pads and retaining walls to support cut/fill slopes are required. Fill compaction must be verified to ensure bearing capacity. 20% is not gentle (gentle is < 10%); significant grading is required. Slope directly determines grading strategy, cost, and geotechnical requirements. A 20% slope is in the moderate-to-steep range (10–25% = moderate; > 25% = steep). Bench cuts to create horizontal building pads and retaining walls to support cut/fill slopes are required. Fill compaction must be verified to ensure bearing capacity. Slope determines grading approach: < 10% = minimal; 10–25% = bench cuts + walls; > 25% = specialized design required.",
+      "code_citation": "Slope Analysis and Grading Design",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-005-05-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:41.02078+00:00",
+      "updated_at": "2026-05-06T15:39:28.209238+00:00",
+      "content_hash": "sha256:6fb33bb3012f17f1e04ecb31d39ce4626e88d746d36cf89c9d1a3517e9da2ff0"
     },
     {
       "question_id": "84cc8f1a-a228-4114-9721-127f1920617d",
@@ -142,7 +193,7 @@
         "correct": "Angle of repose (natural stable slope angle) is typically 30–35° for soil (tan⁻¹(1/2) ≈ 26.6°, so 1V:2H = 50% slope ≈ 26.6° is borderline). Cut slopes at 1V:2H are steep; they may be unstable without reinforcement. Fill slopes at 1V:2.5H (≈22°) are gentler and more stable.",
         "takeaway": "Cut slopes steeper than angle of repose (~30–35°) require stabilization. Fill slopes must be compacted and drained to ensure stability."
       },
-      "explanation": null,
+      "explanation": "The cut slope is steeper than natural repose; this is a concern. Angle of repose (natural stable slope angle) is typically 30–35° for soil (tan⁻¹(1/2) ≈ 26.6°, so 1V:2H = 50% slope ≈ 26.6° is borderline). Cut slopes at 1V:2H are steep; they may be unstable without reinforcement. Fill slopes at 1V:2.5H (≈22°) are gentler and more stable. Fill slopes can fail if not properly compacted or if drainage is poor; stability is not guaranteed. Natural slope is 25% (≈14°); designed cut slope is 50% (≈26.6°) — steeper and riskier. Angle of repose (natural stable slope angle) is typically 30–35° for soil (tan⁻¹(1/2) ≈ 26.6°, so 1V:2H = 50% slope ≈ 26.6° is borderline). Cut slopes at 1V:2H are steep; they may be unstable without reinforcement. Fill slopes at 1V:2.5H (≈22°) are gentler and more stable. Cut slopes steeper than angle of repose (~30–35°) require stabilization. Fill slopes must be compacted and drained to ensure stability.",
       "code_citation": "Geotechnical Slope Stability Analysis",
       "bloom_level": "analyze",
       "application_context": "design_application",
@@ -154,8 +205,8 @@
       "model_id": "ALE-PLAN-005-05-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:41.02078+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:4314e558a18c2deb2d392361d7348e83df6d447f157adad5656ce03254385554"
+      "updated_at": "2026-05-06T15:39:27.422584+00:00",
+      "content_hash": "sha256:df949342a39bb206059aca55d88daf2c7f09119b99c7715b2ddc7c29aba7b87a"
     },
     {
       "question_id": "2a23df1a-b984-4e54-9618-ef95b6efabb1",
@@ -193,7 +244,7 @@
         "correct": "A 35% average slope is challenging but buildable with appropriate design. The geotechnical recommendation to stabilize slopes > 25% should be followed: bench cuts, retaining walls, compaction, and drainage in steep areas. Detailed slope stability analysis and erosion control planning are required.",
         "takeaway": "High-slope sites require engineering design: bench cuts, retaining walls, geotechnical analysis, drainage. Density reduction is supplementary."
       },
-      "explanation": null,
+      "explanation": "Standard grading is insufficient for 35% average slope; specialized design is needed per geotechnical recommendations. A 35% average slope is challenging but buildable with appropriate design. The geotechnical recommendation to stabilize slopes > 25% should be followed: bench cuts, retaining walls, compaction, and drainage in steep areas. Detailed slope stability analysis and erosion control planning are required. 35% average is steep but buildable with proper engineering; this is not a prohibition. Density reduction may help, but it does not address slope stability; engineering design is the primary response. A 35% average slope is challenging but buildable with appropriate design. The geotechnical recommendation to stabilize slopes > 25% should be followed: bench cuts, retaining walls, compaction, and drainage in steep areas. Detailed slope stability analysis and erosion control planning are required. High-slope sites require engineering design: bench cuts, retaining walls, geotechnical analysis, drainage. Density reduction is supplementary.",
       "code_citation": "Slope Analysis and Grading Design; Geotechnical Engineering",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
@@ -205,8 +256,8 @@
       "model_id": "ALE-PLAN-005-05-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:41.02078+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:03399482402c00748c7341b1b415a127d921fbaa36d09e302384bb702ca19219"
+      "updated_at": "2026-05-06T15:39:27.682784+00:00",
+      "content_hash": "sha256:4fe64ea3d370d006c6c4abac4f6fa00262871baafe26267a1bd21a2f83080f36"
     },
     {
       "question_id": "f271ca3b-a5e7-4227-94a8-806ce27e1de5",
@@ -295,7 +346,7 @@
         "correct": "Slope percentage = (rise ÷ horizontal distance) × 100. For 1V:3H: (1 ÷ 3) × 100 = 33.3%. This is a moderate-to-steep slope, suitable for residential development with bench cuts or retaining walls.",
         "takeaway": "Slope percentage = (rise ÷ run) × 100. 1V:3H = 33% slope = moderate-steep terrain."
       },
-      "explanation": null,
+      "explanation": "3% omits the × 100 multiplier; slope is always expressed as a percentage. Slope percentage = (rise ÷ horizontal distance) × 100. For 1V:3H: (1 ÷ 3) × 100 = 33.3%. This is a moderate-to-steep slope, suitable for residential development with bench cuts or retaining walls. 25% would be 1V:4H, not 1V:3H. 300% inverts the ratio; rise is always divided by run, not the reverse. Slope percentage = (rise ÷ horizontal distance) × 100. For 1V:3H: (1 ÷ 3) × 100 = 33.3%. This is a moderate-to-steep slope, suitable for residential development with bench cuts or retaining walls. Slope percentage = (rise ÷ run) × 100. 1V:3H = 33% slope = moderate-steep terrain.",
       "code_citation": "Slope Calculation Methods",
       "bloom_level": "apply",
       "application_context": "calculation",
@@ -307,8 +358,8 @@
       "model_id": "ALE-PLAN-005-05-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:41.02078+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:eda20a9ea668a20039d71336fee8501c97fce7a86150cd822df2f95fccddfb63"
+      "updated_at": "2026-05-06T15:39:27.816753+00:00",
+      "content_hash": "sha256:b264ebf7c1346345cd7417cb27ea91bf8e7b85c391ebaf0e446c23dd46f1bb16"
     },
     {
       "question_id": "78f36bc7-f55b-43d4-aa7f-a1d3f3c0a455",
@@ -397,7 +448,7 @@
         "correct": "Excavated soil does not compact at 1:1 ratio. Uncompacted excavation (~10,000 cu.m.) becomes compacted fill (~8,000 cu.m.) when properly compacted on-site. The difference (2,000 cu.m.) accounts for compaction efficiency. Remaining uncompacted spoil must be managed.",
         "takeaway": "Compacted fill volume < excavated volume. Uncompacted spoil balance must be planned (disposal, reuse, or landscaping)."
       },
-      "explanation": null,
+      "explanation": "Excavated soil does not compact at 1:1 ratio. Uncompacted excavation (~10,000 cu.m.) becomes compacted fill (~8,000 cu.m.) when properly compacted on-site. The difference (2,000 cu.m.) accounts for compaction efficiency. Remaining uncompacted spoil must be managed. Similar reasoning to (a); the issue is compaction efficiency, not excess excavation. If excavation provides enough material for compacted fill after accounting for compaction losses, borrow is not needed. Cut and fill are NOT 1:1; soil compacts to smaller volume when placed as fill. Excavated soil does not compact at 1:1 ratio. Uncompacted excavation (~10,000 cu.m.) becomes compacted fill (~8,000 cu.m.) when properly compacted on-site. The difference (2,000 cu.m.) accounts for compaction efficiency. Remaining uncompacted spoil must be managed. Compacted fill volume < excavated volume. Uncompacted spoil balance must be planned (disposal, reuse, or landscaping).",
       "code_citation": "Grading and Fill Compaction Principles",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
@@ -409,59 +460,8 @@
       "model_id": "ALE-PLAN-005-05-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:41.02078+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:deb6b4d9f29d8f852a49abed6c2e205199b41c3dac923a436502bf513ec3946f"
-    },
-    {
-      "question_id": "b3a3d4d3-91da-4262-a83c-2d07b67c1df5",
-      "article_id": "1bf5341b-5898-4793-bbff-472227208ccf",
-      "topic_id": "ab682da1-b4de-46c5-85f6-852bcd00cf05",
-      "text": "A sloped residential site has an average grade of 20% (1V:5H slope). The site design proposes to create a building platform using bench cut and fill grading. What is the primary geotechnical and environmental consideration for this slope gradient?",
-      "options": [
-        {
-          "id": "a",
-          "text": "20% slope is too steep; development cannot proceed without significant risk mitigation measures and environmental impact assessments"
-        },
-        {
-          "id": "b",
-          "text": "20% slope is moderate; bench cuts and retaining walls are necessary to create stable building pads; compaction of fill must be verified"
-        },
-        {
-          "id": "c",
-          "text": "20% slope is gentle; development can proceed with minimal grading intervention, assuming no additional environmental constraints"
-        },
-        {
-          "id": "d",
-          "text": "Slope gradient does not affect grading design; standard site preparation is sufficient, provided that all local regulations are met"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "20% is buildable with proper grading; it does not prohibit development.",
-        "b": "A 20% slope is in the moderate-to-steep range (10–25% = moderate; > 25% = steep). Bench cuts to create horizontal building pads and retaining walls to support cut/fill slopes are required. Fill compaction must be verified to ensure bearing capacity.",
-        "c": "20% is not gentle (gentle is < 10%); significant grading is required.",
-        "d": "Slope directly determines grading strategy, cost, and geotechnical requirements.",
-        "correct": "A 20% slope is in the moderate-to-steep range (10–25% = moderate; > 25% = steep). Bench cuts to create horizontal building pads and retaining walls to support cut/fill slopes are required. Fill compaction must be verified to ensure bearing capacity.",
-        "takeaway": "Slope determines grading approach: < 10% = minimal; 10–25% = bench cuts + walls; > 25% = specialized design required."
-      },
-      "explanation": null,
-      "code_citation": "Slope Analysis and Grading Design",
-      "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.7,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PLAN-005-05-006",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:41.02078+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:71785267a9f978f7145890ac8c4943338e1ade9c1cf497af5d956e3e9a8a2e0e"
+      "updated_at": "2026-05-06T15:39:27.953188+00:00",
+      "content_hash": "sha256:d04331d0952b537b74ad9725df93cbfe71c082cbc4581f81de32b5d96a353f52"
     },
     {
       "question_id": "953513e5-8e59-4813-baab-85f0bf06d819",

@@ -1,9 +1,159 @@
 {
   "article_id": "e0548d9a-2a95-4ef0-9724-7e2c667b3674",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:c87490adc14a3eee4fe5a084244529af4bc9cd681ede830edda24c1c6a72f159",
+  "linked_questions_hash": "sha256:269db625236173ae3b0152b7e36f70d8c0bf51c10849926faecddffca58868f8",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "ccbbedee-edc9-4e5e-90fd-1087f4de08ce",
+      "article_id": "e0548d9a-2a95-4ef0-9724-7e2c667b3674",
+      "topic_id": "b35747bd-6e5b-444c-8963-4b9491ea4025",
+      "text": "What is the Modulus of Elasticity for structural steel, and does it vary with steel grade?",
+      "options": [
+        {
+          "id": "a",
+          "text": "E varies significantly (from 180,000 to 220,000 MPa) based on the carbon content and alloy of the steel grade"
+        },
+        {
+          "id": "b",
+          "text": "E = 200,000 MPa for all structural steel grades; grade designation specifies Fy and Fu, not E"
+        },
+        {
+          "id": "c",
+          "text": "E = 200,000 MPa only for A36; higher strength grades like Grade 50 have higher E values to resist deflection"
+        },
+        {
+          "id": "d",
+          "text": "E is not a material property; it depends entirely on the thickness and geometry of the member"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "E is a constant material property of steel and does not fluctuate with grade designations[cite: 1].",
+        "c": "Higher strength steel allows for higher loads before yielding, but it does not change the initial stiffness (slope of the elastic region)[cite: 1].",
+        "d": "E is an intrinsic material property; geometry determines the moment of inertia (I), not the modulus of elasticity[cite: 1].",
+        "correct": "E = 200,000 MPa (200 GPa) is considered a material constant for all structural steel grades. While yield strength (Fy) and ultimate strength (Fu) vary by grade, the stiffness (E) does not[cite: 1].",
+        "takeaway": "Structural steel E is constant at 200,000 MPa regardless of grade[cite: 1]."
+      },
+      "explanation": "E is a constant material property of steel and does not fluctuate with grade designations[cite: 1]. Higher strength steel allows for higher loads before yielding, but it does not change the initial stiffness (slope of the elastic region)[cite: 1]. E is an intrinsic material property; geometry determines the moment of inertia (I), not the modulus of elasticity[cite: 1]. E = 200,000 MPa (200 GPa) is considered a material constant for all structural steel grades. While yield strength (Fy) and ultimate strength (Fu) vary by grade, the stiffness (E) does not[cite: 1]. Structural steel E is constant at 200,000 MPa regardless of grade[cite: 1].",
+      "code_citation": "NSCP 2015 Section 420.2.2.2",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-003-03-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-05-06T15:59:03.743643+00:00",
+      "content_hash": "sha256:8668889c8897b2e762ade865da5ecb94c5dfaa2d8bff3fece97a81b4446c34b1"
+    },
+    {
+      "question_id": "a63b5873-344d-4306-852d-4f84e4b59172",
+      "article_id": "e0548d9a-2a95-4ef0-9724-7e2c667b3674",
+      "topic_id": "b35747bd-6e5b-444c-8963-4b9491ea4025",
+      "text": "For A36 steel with Fy = 248 MPa and E = 200,000 MPa, calculate the Modulus of Resilience.",
+      "options": [
+        {
+          "id": "a",
+          "text": "UR ≈ 0.077 MPa"
+        },
+        {
+          "id": "b",
+          "text": "UR ≈ 0.154 MPa"
+        },
+        {
+          "id": "c",
+          "text": "UR ≈ 0.309 MPa"
+        },
+        {
+          "id": "d",
+          "text": "UR ≈ 0.620 MPa"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This result occurs if you forget the factor of 2 in the denominator[cite: 1].",
+        "c": "This result occurs if you use Fy / E without squaring Fy[cite: 1].",
+        "d": "This is Fy / E multiplied by a factor; it does not follow the strain energy density formula[cite: 1].",
+        "correct": "UR = Fy² / (2E) = (248)² / (2 × 200,000) = 61,504 / 400,000 = 0.15376 ≈ 0.154 MPa[cite: 1].",
+        "takeaway": "For A36, Modulus of Resilience is approximately 0.154 MPa[cite: 1]."
+      },
+      "explanation": "This result occurs if you forget the factor of 2 in the denominator[cite: 1]. This result occurs if you use Fy / E without squaring Fy[cite: 1]. This is Fy / E multiplied by a factor; it does not follow the strain energy density formula[cite: 1]. UR = Fy² / (2E) = (248)² / (2 × 200,000) = 61,504 / 400,000 = 0.15376 ≈ 0.154 MPa[cite: 1]. For A36, Modulus of Resilience is approximately 0.154 MPa[cite: 1].",
+      "code_citation": "Strength of Materials; NSCP 2015 Section 420.2.2.2",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-003-03-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-05-06T15:59:03.267837+00:00",
+      "content_hash": "sha256:bbdef67aeff5486d8be11119fb752a1a238f616d6507534b7ba0c1072e8548d3"
+    },
+    {
+      "question_id": "37a971d3-829d-46e1-9129-b7a618e50c19",
+      "article_id": "e0548d9a-2a95-4ef0-9724-7e2c667b3674",
+      "topic_id": "b35747bd-6e5b-444c-8963-4b9491ea4025",
+      "text": "Two reinforced concrete beams have the same span and loading. Beam A uses f'c = 25 MPa; Beam B uses f'c = 40 MPa. If both have the same gross moment of inertia (Ig), how do their deflections compare?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Beam B deflects 60% more because higher strength allows for more flexibility"
+        },
+        {
+          "id": "b",
+          "text": "Beam A deflects more because it has lower E; the ratio of deflections is approximately 1.27:1"
+        },
+        {
+          "id": "c",
+          "text": "Both beams deflect the same amount because deflection depends only on Ig, not f'c"
+        },
+        {
+          "id": "d",
+          "text": "Beam B deflects 1.6 times less because strength is directly proportional to deflection"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Higher strength concrete is stiffer, meaning it deflects less, not more[cite: 1].",
+        "c": "Deflection calculation (δ = kPL³/EI) requires the Modulus of Elasticity (E), which changes with f'c[cite: 1].",
+        "d": "Strength (f'c) is not linearly proportional to deflection; it is related via the square root in the E calculation[cite: 1].",
+        "correct": "Deflection is inversely proportional to E. Ec(25) = 4700√25 = 23,500 MPa. Ec(40) = 4700√40 ≈ 29,725 MPa. Ratio: 29,725 / 23,500 ≈ 1.265 (rounded to 1.27). Beam A (lower E) deflects more[cite: 1].",
+        "takeaway": "Deflection varies with the square root of concrete compressive strength[cite: 1]."
+      },
+      "explanation": "Higher strength concrete is stiffer, meaning it deflects less, not more[cite: 1]. Deflection calculation (δ = kPL³/EI) requires the Modulus of Elasticity (E), which changes with f'c[cite: 1]. Strength (f'c) is not linearly proportional to deflection; it is related via the square root in the E calculation[cite: 1]. Deflection is inversely proportional to E. Ec(25) = 4700√25 = 23,500 MPa. Ec(40) = 4700√40 ≈ 29,725 MPa. Ratio: 29,725 / 23,500 ≈ 1.265 (rounded to 1.27). Beam A (lower E) deflects more[cite: 1]. Deflection varies with the square root of concrete compressive strength[cite: 1].",
+      "code_citation": "NSCP 2015 Section 419.2.2.1",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-003-03-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-05-06T15:59:03.508794+00:00",
+      "content_hash": "sha256:3e23a64dcf39c2b39fd2480bb4d51996e60469a67f2a7376a0c7349827c7e839"
+    },
     {
       "question_id": "7475711a-5cd9-455c-afec-ad27afd407cf",
       "article_id": "e0548d9a-2a95-4ef0-9724-7e2c667b3674",
@@ -105,56 +255,6 @@
       "content_hash": "sha256:5928ed1867b5cfcf55ed5277f43135b585f79e1b38901bcd6e8c73b5b58f4c21"
     },
     {
-      "question_id": "a63b5873-344d-4306-852d-4f84e4b59172",
-      "article_id": "e0548d9a-2a95-4ef0-9724-7e2c667b3674",
-      "topic_id": "b35747bd-6e5b-444c-8963-4b9491ea4025",
-      "text": "For A36 steel with Fy = 248 MPa and E = 200,000 MPa, calculate the Modulus of Resilience.",
-      "options": [
-        {
-          "id": "a",
-          "text": "UR ≈ 0.077 MPa"
-        },
-        {
-          "id": "b",
-          "text": "UR ≈ 0.154 MPa"
-        },
-        {
-          "id": "c",
-          "text": "UR ≈ 0.309 MPa"
-        },
-        {
-          "id": "d",
-          "text": "UR ≈ 0.620 MPa"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "This result occurs if you forget the factor of 2 in the denominator[cite: 1].",
-        "c": "This result occurs if you use Fy / E without squaring Fy[cite: 1].",
-        "d": "This is Fy / E multiplied by a factor; it does not follow the strain energy density formula[cite: 1].",
-        "correct": "UR = Fy² / (2E) = (248)² / (2 × 200,000) = 61,504 / 400,000 = 0.15376 ≈ 0.154 MPa[cite: 1].",
-        "takeaway": "For A36, Modulus of Resilience is approximately 0.154 MPa[cite: 1]."
-      },
-      "explanation": null,
-      "code_citation": "Strength of Materials; NSCP 2015 Section 420.2.2.2",
-      "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-STRC-003-03-005",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:51f3479e3fd16aa89346565ea0f6bb89219829b36bf0ee79ac1e8b1f356bb3eb"
-    },
-    {
       "question_id": "30589f53-147d-4915-ba82-3f55b6a280ac",
       "article_id": "e0548d9a-2a95-4ef0-9724-7e2c667b3674",
       "topic_id": "b35747bd-6e5b-444c-8963-4b9491ea4025",
@@ -239,7 +339,7 @@
         "correct": "Resilience is the capacity of a material to absorb energy when it is deformed elastically. It is the area under the elastic portion of the stress-strain curve, calculated as UR = Fy² / (2E)[cite: 1].",
         "takeaway": "Modulus of Resilience (UR) = Fy² / (2E)[cite: 1]."
       },
-      "explanation": null,
+      "explanation": "Energy absorbed up to rupture is the Modulus of Toughness, not Resilience[cite: 1]. Impact resistance is related to toughness and ductility, but the formula provided is incorrect[cite: 1]. Fy is the yield stress, which is a single point on the curve; resilience is the energy (area) accumulated up to that point[cite: 1]. Resilience is the capacity of a material to absorb energy when it is deformed elastically. It is the area under the elastic portion of the stress-strain curve, calculated as UR = Fy² / (2E)[cite: 1]. Modulus of Resilience (UR) = Fy² / (2E)[cite: 1].",
       "code_citation": "Strength of Materials; General Structural Principles",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
@@ -251,58 +351,8 @@
       "model_id": "ALE-STRC-003-03-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:8b0aec590aa6bdae4ae7d58000f330308528103c2932051df1bdcd7b1f252e03"
-    },
-    {
-      "question_id": "37a971d3-829d-46e1-9129-b7a618e50c19",
-      "article_id": "e0548d9a-2a95-4ef0-9724-7e2c667b3674",
-      "topic_id": "b35747bd-6e5b-444c-8963-4b9491ea4025",
-      "text": "Two reinforced concrete beams have the same span and loading. Beam A uses f'c = 25 MPa; Beam B uses f'c = 40 MPa. If both have the same gross moment of inertia (Ig), how do their deflections compare?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Beam B deflects 60% more because higher strength allows for more flexibility"
-        },
-        {
-          "id": "b",
-          "text": "Beam A deflects more because it has lower E; the ratio of deflections is approximately 1.27:1"
-        },
-        {
-          "id": "c",
-          "text": "Both beams deflect the same amount because deflection depends only on Ig, not f'c"
-        },
-        {
-          "id": "d",
-          "text": "Beam B deflects 1.6 times less because strength is directly proportional to deflection"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Higher strength concrete is stiffer, meaning it deflects less, not more[cite: 1].",
-        "c": "Deflection calculation (δ = kPL³/EI) requires the Modulus of Elasticity (E), which changes with f'c[cite: 1].",
-        "d": "Strength (f'c) is not linearly proportional to deflection; it is related via the square root in the E calculation[cite: 1].",
-        "correct": "Deflection is inversely proportional to E. Ec(25) = 4700√25 = 23,500 MPa. Ec(40) = 4700√40 ≈ 29,725 MPa. Ratio: 29,725 / 23,500 ≈ 1.265 (rounded to 1.27). Beam A (lower E) deflects more[cite: 1].",
-        "takeaway": "Deflection varies with the square root of concrete compressive strength[cite: 1]."
-      },
-      "explanation": null,
-      "code_citation": "NSCP 2015 Section 419.2.2.1",
-      "bloom_level": "analyze",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.9,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-STRC-003-03-010",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:8d1493d1bc3f9975fae452bbfd1c5c43e439ae53d78631a1d03b18e7ef6c2f44"
+      "updated_at": "2026-05-06T15:59:03.389174+00:00",
+      "content_hash": "sha256:8107137a82e3b2aab932e0a0fd74313c18284d4246e253e45c279e68c54ee1cb"
     },
     {
       "question_id": "654c22df-4d59-4f75-b87c-857acf11645d",
@@ -339,7 +389,7 @@
         "correct": "G = 200,000 / [2(1 + 0.30)] = 200,000 / 2.6 = 76,923.07 ≈ 76,923 MPa[cite: 1].",
         "takeaway": "The shear modulus for structural steel is approximately 76,923 MPa[cite: 1]."
       },
-      "explanation": null,
+      "explanation": "This result assumes Poisson's ratio is 0, which is incorrect for steel[cite: 1]. This result occurs if you multiply instead of divide by the (1 + ν) factor[cite: 1]. G cannot be equal to E for materials with a positive Poisson's ratio[cite: 1]. G = 200,000 / [2(1 + 0.30)] = 200,000 / 2.6 = 76,923.07 ≈ 76,923 MPa[cite: 1]. The shear modulus for structural steel is approximately 76,923 MPa[cite: 1].",
       "code_citation": "Strength of Materials; NSCP 2015 420.2.2.2",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
@@ -351,58 +401,8 @@
       "model_id": "ALE-STRC-003-03-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:4f6303f75bbb18e1a6086a464c9a36b4c0686880f8ae41850741b36c41e9ef2f"
-    },
-    {
-      "question_id": "ccbbedee-edc9-4e5e-90fd-1087f4de08ce",
-      "article_id": "e0548d9a-2a95-4ef0-9724-7e2c667b3674",
-      "topic_id": "b35747bd-6e5b-444c-8963-4b9491ea4025",
-      "text": "What is the Modulus of Elasticity for structural steel, and does it vary with steel grade?",
-      "options": [
-        {
-          "id": "a",
-          "text": "E varies significantly (from 180,000 to 220,000 MPa) based on the carbon content and alloy of the steel grade"
-        },
-        {
-          "id": "b",
-          "text": "E = 200,000 MPa for all structural steel grades; grade designation specifies Fy and Fu, not E"
-        },
-        {
-          "id": "c",
-          "text": "E = 200,000 MPa only for A36; higher strength grades like Grade 50 have higher E values to resist deflection"
-        },
-        {
-          "id": "d",
-          "text": "E is not a material property; it depends entirely on the thickness and geometry of the member"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "E is a constant material property of steel and does not fluctuate with grade designations[cite: 1].",
-        "c": "Higher strength steel allows for higher loads before yielding, but it does not change the initial stiffness (slope of the elastic region)[cite: 1].",
-        "d": "E is an intrinsic material property; geometry determines the moment of inertia (I), not the modulus of elasticity[cite: 1].",
-        "correct": "E = 200,000 MPa (200 GPa) is considered a material constant for all structural steel grades. While yield strength (Fy) and ultimate strength (Fu) vary by grade, the stiffness (E) does not[cite: 1].",
-        "takeaway": "Structural steel E is constant at 200,000 MPa regardless of grade[cite: 1]."
-      },
-      "explanation": null,
-      "code_citation": "NSCP 2015 Section 420.2.2.2",
-      "bloom_level": "remember",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.3,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-STRC-003-03-001",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:c26721f5828dcf74ad67c723d55ab6de8a8aae74b8240c13659dc270eaf74a3f"
+      "updated_at": "2026-05-06T15:59:03.628637+00:00",
+      "content_hash": "sha256:3d04c24a196627e318680e3d35d95f6be20317c08777839bd04e6a37e428bb24"
     },
     {
       "question_id": "f0cde53e-5158-46ec-a729-ca89eaa46059",

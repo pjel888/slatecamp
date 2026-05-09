@@ -1,9 +1,59 @@
 {
   "article_id": "5069fdfb-e96b-435e-9e04-d6526f8b3989",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:a66b8c738bcbf9cfc61d190fbc1354989acc72d999ab3fd90354e790c0ee52f3",
+  "linked_questions_hash": "sha256:92eb2be980bd952ba3fe9a3d44e26ce3f64f482bec63c3b4becc3606f9dfbaac",
   "question_count": 15,
   "questions": [
+    {
+      "question_id": "1102c25d-d45f-40e6-8fe1-11a7b4bce59c",
+      "article_id": "5069fdfb-e96b-435e-9e04-d6526f8b3989",
+      "topic_id": "d07a4ac2-2a6f-4fb4-85a0-18cdd4397cb8",
+      "text": "A large commercial facility operates a reciprocating engine cogeneration system exhausting at 480°C with 55% heat recovery effectiveness. If the facility simultaneously implements absorption cooling integration (trigeneration), what primary technical advantage enables the 70-85% overall efficiency outcome compared to conventional generation at 45-55%?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Simultaneous generation of electricity, thermal energy (water heating), and cooling from single fuel input without thermal loss"
+        },
+        {
+          "id": "b",
+          "text": "Gas turbine design inherently produces higher thermal efficiency than reciprocating engines, especially when operating under variable load conditions"
+        },
+        {
+          "id": "c",
+          "text": "Absorption chillers operate at higher coefficient of performance (COP) than mechanical refrigeration systems, particularly in climates with high ambient temperatures"
+        },
+        {
+          "id": "d",
+          "text": "Heat recovery effectiveness increases to 80-90% when integrated with mechanical cooling systems, allowing for greater energy savings"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Article specifies reciprocating engines (480°C exhaust); gas turbines (500-650°C) are alternative but not the efficiency advantage mechanism here.",
+        "c": "Absorption chillers achieve ~0.7-0.8 COP (lower than mechanical systems at 3.0-5.0 COP). Advantage is that absorption cooling uses waste heat (free thermal input) rather than electrical input, not COP superiority.",
+        "d": "Heat recovery effectiveness (40-60%) remains constant; simultaneous productive use of heat (water heating + absorption cooling) is the efficiency mechanism, not increased recovery effectiveness.",
+        "correct": "Trigeneration achieves 70-85% efficiency by simultaneously producing three energy outputs from single fuel input: (1) electricity from engine, (2) thermal energy (water heating) from 480°C exhaust, (3) cooling from absorption chiller using recovered heat. Traditional generation wastes 70% of fuel as low-grade exhaust; trigeneration captures and productively uses this waste heat. The 70-85% vs. 45-55% difference (20-35 percentage-point improvement) represents elimination of three separate energy conversion steps (electricity generation, water heater, separate chiller) into one integrated system.",
+        "takeaway": "Trigeneration efficiency (70-85%) vs. conventional (45-55%) advantage: single fuel input simultaneously produces electricity, hot water, and cooling—eliminates waste heat and avoids three separate energy conversion systems."
+      },
+      "explanation": "Article specifies reciprocating engines (480°C exhaust); gas turbines (500-650°C) are alternative but not the efficiency advantage mechanism here. Absorption chillers achieve ~0.7-0.8 COP (lower than mechanical systems at 3.0-5.0 COP). Advantage is that absorption cooling uses waste heat (free thermal input) rather than electrical input, not COP superiority. Heat recovery effectiveness (40-60%) remains constant; simultaneous productive use of heat (water heating + absorption cooling) is the efficiency mechanism, not increased recovery effectiveness. Trigeneration achieves 70-85% efficiency by simultaneously producing three energy outputs from single fuel input: (1) electricity from engine, (2) thermal energy (water heating) from 480°C exhaust, (3) cooling from absorption chiller using recovered heat. Traditional generation wastes 70% of fuel as low-grade exhaust; trigeneration captures and productively uses this waste heat. The 70-85% vs. 45-55% difference (20-35 percentage-point improvement) represents elimination of three separate energy conversion steps (electricity generation, water heater, separate chiller) into one integrated system. Trigeneration efficiency (70-85%) vs. conventional (45-55%) advantage: single fuel input simultaneously produces electricity, hot water, and cooling—eliminates waste heat and avoids three separate energy conversion systems.",
+      "code_citation": "Waste Heat Recovery section (LEA-UTIL-007-05)",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-007-05-024",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:03.161281+00:00",
+      "updated_at": "2026-05-06T15:00:17.939499+00:00",
+      "content_hash": "sha256:3babcffda501bd1659b41c5ae5374807cdff0b732749ef556a8e9b1012e51f4e"
+    },
     {
       "question_id": "1bbb69cf-3498-48aa-8266-ccccb2e3f839",
       "article_id": "5069fdfb-e96b-435e-9e04-d6526f8b3989",
@@ -189,7 +239,7 @@
         "correct": "4.0-5.0 kWh/sqm/day as the average annual solar irradiance across major Philippine regions, directly supporting 1 kWp installations generating 4.0-4.5 kWh daily and reducing grid consumption 30-50% in net-metering applications.",
         "takeaway": "Philippine solar design baseline is 4.5-5.5 kWh/sqm/day; system sizing multiplies this value by installation capacity to project annual generation for renewable energy integration planning."
       },
-      "explanation": null,
+      "explanation": "2.5-3.5 kWh/sqm/day represents sub-tropical lower-latitude solar potential, not applicable to Philippine equatorial/tropical climate zones. 6.5-7.5 kWh/sqm/day exceeds typical Philippine values and would indicate desert or high-altitude equatorial locations. 8.5-9.5 kWh/sqm/day represents extreme desert/high-altitude conditions incompatible with Philippine geographic and climatic characteristics. 4.0-5.0 kWh/sqm/day as the average annual solar irradiance across major Philippine regions, directly supporting 1 kWp installations generating 4.0-4.5 kWh daily and reducing grid consumption 30-50% in net-metering applications. Philippine solar design baseline is 4.5-5.5 kWh/sqm/day; system sizing multiplies this value by installation capacity to project annual generation for renewable energy integration planning.",
       "code_citation": "Department of Energy technical studies (LEA-UTIL-007-05 Renewable Energy Integration Systems)",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
@@ -201,8 +251,8 @@
       "model_id": "ALE-UTIL-007-05-011",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:03.161281+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:f66954e3af3c4fc6f3aa9c893a4bd783754b6a3910655b61d2a09b9a8b1b33ca"
+      "updated_at": "2026-05-06T15:00:17.769724+00:00",
+      "content_hash": "sha256:9aaaee6511ad07e155d91e81efac90bfc17acf3bb0e8fa6dee33a45e8e4cd0b8"
     },
     {
       "question_id": "2acd59da-3aad-4f91-9e85-5797cad693f6",
@@ -653,56 +703,6 @@
       "created_at": "2026-03-23T19:28:03.161281+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:0b269911a4d687eb60c71597268a75b4b367286f3917f555a7b50f96dc0eaade"
-    },
-    {
-      "question_id": "1102c25d-d45f-40e6-8fe1-11a7b4bce59c",
-      "article_id": "5069fdfb-e96b-435e-9e04-d6526f8b3989",
-      "topic_id": "d07a4ac2-2a6f-4fb4-85a0-18cdd4397cb8",
-      "text": "A large commercial facility operates a reciprocating engine cogeneration system exhausting at 480°C with 55% heat recovery effectiveness. If the facility simultaneously implements absorption cooling integration (trigeneration), what primary technical advantage enables the 70-85% overall efficiency outcome compared to conventional generation at 45-55%?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Simultaneous generation of electricity, thermal energy (water heating), and cooling from single fuel input without thermal loss"
-        },
-        {
-          "id": "b",
-          "text": "Gas turbine design inherently produces higher thermal efficiency than reciprocating engines, especially when operating under variable load conditions"
-        },
-        {
-          "id": "c",
-          "text": "Absorption chillers operate at higher coefficient of performance (COP) than mechanical refrigeration systems, particularly in climates with high ambient temperatures"
-        },
-        {
-          "id": "d",
-          "text": "Heat recovery effectiveness increases to 80-90% when integrated with mechanical cooling systems, allowing for greater energy savings"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "b": "Article specifies reciprocating engines (480°C exhaust); gas turbines (500-650°C) are alternative but not the efficiency advantage mechanism here.",
-        "c": "Absorption chillers achieve ~0.7-0.8 COP (lower than mechanical systems at 3.0-5.0 COP). Advantage is that absorption cooling uses waste heat (free thermal input) rather than electrical input, not COP superiority.",
-        "d": "Heat recovery effectiveness (40-60%) remains constant; simultaneous productive use of heat (water heating + absorption cooling) is the efficiency mechanism, not increased recovery effectiveness.",
-        "correct": "Trigeneration achieves 70-85% efficiency by simultaneously producing three energy outputs from single fuel input: (1) electricity from engine, (2) thermal energy (water heating) from 480°C exhaust, (3) cooling from absorption chiller using recovered heat. Traditional generation wastes 70% of fuel as low-grade exhaust; trigeneration captures and productively uses this waste heat. The 70-85% vs. 45-55% difference (20-35 percentage-point improvement) represents elimination of three separate energy conversion steps (electricity generation, water heater, separate chiller) into one integrated system.",
-        "takeaway": "Trigeneration efficiency (70-85%) vs. conventional (45-55%) advantage: single fuel input simultaneously produces electricity, hot water, and cooling—eliminates waste heat and avoids three separate energy conversion systems."
-      },
-      "explanation": null,
-      "code_citation": "Waste Heat Recovery section (LEA-UTIL-007-05)",
-      "bloom_level": "analyze",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-UTIL-007-05-024",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:28:03.161281+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:e7d2b86202dda779aac07c6db9cd2e3e11cde280300b37c5cc89c4e307c5bf62"
     },
     {
       "question_id": "9b2e0471-e56b-4065-b99d-6262d5933d90",

@@ -1,9 +1,59 @@
 {
   "article_id": "eee5c71f-539a-4ec8-a8b2-66e330a0c444",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:879b89219559726dc92daa5f9e4dc4448266cbe7fb065206ccf0ecafc104fe35",
+  "linked_questions_hash": "sha256:7d703f3e7ac21f934605982d31eb3653e60f087a7480ab5a06d6b585941e2364",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "b9495b6d-1d17-4d15-96d9-26d7ba7669a3",
+      "article_id": "eee5c71f-539a-4ec8-a8b2-66e330a0c444",
+      "topic_id": "4c702dfb-599d-4d50-bc98-85661a885d9e",
+      "text": "What documentation should an architect provide when transitioning a partial services engagement to another architect?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only the final drawings; other documentation is the next architect's responsibility, unless otherwise agreed upon"
+        },
+        {
+          "id": "b",
+          "text": "Complete Design Development drawings, specifications, consultant coordination documentation, site investigation reports, cost estimates, program documentation, and design notes"
+        },
+        {
+          "id": "c",
+          "text": "No documentation is necessary; the next architect starts from scratch, allowing for a fresh perspective"
+        },
+        {
+          "id": "d",
+          "text": "Only a brief summary of design decisions; detailed documentation is confidential, protecting intellectual property"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Inadequate; handoff requires comprehensive documentation beyond drawings.",
+        "c": "Inefficient; comprehensive handoff prevents redesign of completed work.",
+        "d": "Incorrectly treats design documentation as confidential; client owns the work product.",
+        "correct": "Comprehensive handoff documentation facilitates continuity and allows the next architect to proceed efficiently. The first architect should provide complete Design Development deliverables, consultant information, and design rationale.",
+        "takeaway": "Comprehensive handoff (drawings, specs, consultants, site data, cost estimates, program, design rationale) enables the next architect to proceed efficiently."
+      },
+      "explanation": "Inadequate; handoff requires comprehensive documentation beyond drawings. Inefficient; comprehensive handoff prevents redesign of completed work. Incorrectly treats design documentation as confidential; client owns the work product. Comprehensive handoff documentation facilitates continuity and allows the next architect to proceed efficiently. The first architect should provide complete Design Development deliverables, consultant information, and design rationale. Comprehensive handoff (drawings, specs, consultants, site data, cost estimates, program, design rationale) enables the next architect to proceed efficiently.",
+      "code_citation": "Architect's Guidelines; SPP Doc 202",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-013-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.047156+00:00",
+      "updated_at": "2026-05-06T13:14:19.368014+00:00",
+      "content_hash": "sha256:34bfa3cf072b11b0520214d544bd093bb772d1db4319e665f5a1a5629d26e6d8"
+    },
     {
       "question_id": "4e8e2315-e8a0-48f7-a51b-3e8a404eb418",
       "article_id": "eee5c71f-539a-4ec8-a8b2-66e330a0c444",
@@ -453,56 +503,6 @@
       "created_at": "2026-03-23T19:27:47.047156+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:9a6f79d64037bc86fe9f3b2554a5410db4206bf9e31f2522d09f49bdf07a97a7"
-    },
-    {
-      "question_id": "b9495b6d-1d17-4d15-96d9-26d7ba7669a3",
-      "article_id": "eee5c71f-539a-4ec8-a8b2-66e330a0c444",
-      "topic_id": "4c702dfb-599d-4d50-bc98-85661a885d9e",
-      "text": "What documentation should an architect provide when transitioning a partial services engagement to another architect?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Only the final drawings; other documentation is the next architect's responsibility, unless otherwise agreed upon"
-        },
-        {
-          "id": "b",
-          "text": "Complete Design Development drawings, specifications, consultant coordination documentation, site investigation reports, cost estimates, program documentation, and design notes"
-        },
-        {
-          "id": "c",
-          "text": "No documentation is necessary; the next architect starts from scratch, allowing for a fresh perspective"
-        },
-        {
-          "id": "d",
-          "text": "Only a brief summary of design decisions; detailed documentation is confidential, protecting intellectual property"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Inadequate; handoff requires comprehensive documentation beyond drawings.",
-        "c": "Inefficient; comprehensive handoff prevents redesign of completed work.",
-        "d": "Incorrectly treats design documentation as confidential; client owns the work product.",
-        "correct": "Comprehensive handoff documentation facilitates continuity and allows the next architect to proceed efficiently. The first architect should provide complete Design Development deliverables, consultant information, and design rationale.",
-        "takeaway": "Comprehensive handoff (drawings, specs, consultants, site data, cost estimates, program, design rationale) enables the next architect to proceed efficiently."
-      },
-      "explanation": null,
-      "code_citation": "Architect's Guidelines; SPP Doc 202",
-      "bloom_level": "apply",
-      "application_context": "client_scenario",
-      "practice_context": [],
-      "difficulty": 0.7,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PRAC-CMP-013-006",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:47.047156+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:6bcb90f36414e12487981a70007e4e279b578c356855508182dd872edc591eaf"
     }
   ]
 }

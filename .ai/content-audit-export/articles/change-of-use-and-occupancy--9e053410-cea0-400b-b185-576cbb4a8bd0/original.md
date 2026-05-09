@@ -1,5 +1,12 @@
 # Change of Use and Occupancy
 
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Change of Use and Occupancy** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
+
 ---
 
 ## Learning Goal
@@ -32,15 +39,11 @@ Imagine you are reviewing plans for a 1980s building in Cebu. The current Certif
 
 ## The Legal Basis
 
-<LawCallout code="nbcp" section="Sec. 702">
-
-**PD 1096, Rule VII, Section 702 — Change of Use or Occupancy**
-
-No change in the character of occupancy or use of any building that places it in a different division of the same group or a different occupancy group shall be made unless the building is made to comply with all requirements of the Code for such new division or group. The Building Official shall determine whether the proposed new use is less hazardous (based on life and fire risk) than the existing use. If the new use is less hazardous, the Building Official may approve the change. If it is equally or more hazardous, full code compliance for the new occupancy is required before approval.
-
-Additionally, the 2004 Revised IRR (page 48, line 12) states: *"A building for which a Certificate of Occupancy has been issued may further be issued other Certificates of Occupancy due to changes in use."* This confirms that an approved change of use results in an additional Certificate of Occupancy — not a separate "Certificate of Use" document, though the term is sometimes used administratively.
-
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="nbcp", section="Sec. 702"
+- Text: **PD 1096, Rule VII, Section 702 — Change of Use or Occupancy** No change in the character of occupancy or use of any building that places it in a different division of the same group or a different occupancy group shall be made unless the building is made to comply with all requirements of the Code for such new division or group. The Building Official shall determine whether the proposed new use is less hazardous (based on life and fire risk) than the existing use. If the new use is less hazard
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -50,9 +53,17 @@ Additionally, the 2004 Revised IRR (page 48, line 12) states: *"A building for w
 
 Every change-of-use analysis begins with properly classifying both the **existing** and **proposed** occupancy. The IRR Section 701 defines ten groups. Memorize these:
 
-<ArticleMedia id="media-change-of-use-and-occupancy-0" name="occupancy-classification-matrix" type="diagram" caption="Full occupancy classification table A–J as a visual matrix with icons: Residential (A, B), Education (C), Institutional (D), Business/Mercantile (E), Industrial (F), Storage/Hazardous (G), Assembly (H, I), Accessory (J). Color-code by hazard level (green=low, yellow=medium, red=high). Include the 10-person A-vs-B cutoff callout." />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-change-of-use-and-occupancy-0", name="occupancy-classification-matrix", type="diagram", caption="Full occupancy classification table A–J as a visual matrix with icons: Residential (A, B), Education (C), Institutional (D), Business/Mercantile (E), Industrial (F), Storage/Hazardous (G), Assembly (H, I), Accessory (J). Color-code by hazard level (green=low, yellow=medium, red=high). Include the 10-person A-vs-B cutoff callout."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<ArticleMedia id="media-change-of-use-and-occupancy-1" name="hazard-hierarchy-ladder" type="diagram" caption="Vertical ladder/spectrum showing the 10-group hazard hierarchy from most hazardous (Group G) to least (Group J). Use colored arrows to show whether a change is 'more hazardous' (red arrow up) or 'less hazardous' (green arrow down). Include worked examples of common change-of-use scenarios on the ladder." />
+[SLATECAMP_UI_BLOCK:ui_0003 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-change-of-use-and-occupancy-1", name="hazard-hierarchy-ladder", type="diagram", caption="Vertical ladder/spectrum showing the 10-group hazard hierarchy from most hazardous (Group G) to least (Group J). Use colored arrows to show whether a change is 'more hazardous' (red arrow up) or 'less hazardous' (green arrow down). Include worked examples of common change-of-use scenarios on the ladder."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 | Group | Full Name | Examples |
 |-------|-----------|---------|
@@ -67,16 +78,11 @@ Every change-of-use analysis begins with properly classifying both the **existin
 | **Group I** | Assembly Occupant Load 1000+ | Stadiums, convention centers, coliseums (occupant load 1000 or more) |
 | **Group J** | Accessory | Fences, signs, tanks, towers, sheds |
 
-<Warn>
-
-**Common confusion:** The exam frequently tests these mislabel pairs:
-- Group G is **Storage and Hazardous** — NOT "Mercantile" (Mercantile is Group E)
-- Group E is **Business and Mercantile** — NOT a storage or industrial group
-- Group H is **Assembly Other Than Group I** — NOT "High-hazard" (hazardous materials fall under Group G)
-- Group A is **Residential Dwellings** — NOT "Low-cost residential"
-- Group D is **Institutional** — NOT "Residential"
-
-</Warn>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Common confusion:** The exam frequently tests these mislabel pairs: - Group G is **Storage and Hazardous** — NOT "Mercantile" (Mercantile is Group E) - Group E is **Business and Mercantile** — NOT a storage or industrial group - Group H is **Assembly Other Than Group I** — NOT "High-hazard" (hazardous materials fall under Group G) - Group A is **Residential Dwellings** — NOT "Low-cost residential" - Group D is **Institutional** — NOT "Residential"
+[/SLATECAMP_UI_BLOCK]
 
 ### 2. The General Prohibition (Sec. 702)
 
@@ -87,16 +93,11 @@ This rule operates in two directions:
 - **More hazardous new use** — Full code compliance with the new occupancy is required **before** the change is permitted
 - **Less hazardous new use** — The Building Official **may** approve the change even if the building does not fully meet all standards for the new use, because life and fire risk are reduced, not increased
 
-<Tip>
-
-**Memory aid: "MORE = COMPLY, LESS = MAY APPROVE"**
-
-- **More** hazardous (or same hazard) -> must **comply** fully before changing
-- **Less** hazardous -> Building Official **may approve** without full retrofitting
-
-The "less hazardous" pathway is the primary compliance route for older Philippine buildings. It acknowledges that full retrofitting may be economically impractical, but safety is enhanced — not diminished — when occupancy moves down the hazard scale.
-
-</Tip>
+[SLATECAMP_UI_BLOCK:ui_0005 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Memory aid: "MORE = COMPLY, LESS = MAY APPROVE"** - **More** hazardous (or same hazard) -> must **comply** fully before changing - **Less** hazardous -> Building Official **may approve** without full retrofitting The "less hazardous" pathway is the primary compliance route for older Philippine buildings. It acknowledges that full retrofitting may be economically impractical, but safety is enhanced — not diminished — when occupancy moves down the hazard scale.
+[/SLATECAMP_UI_BLOCK]
 
 ### 3. The Hazard Assessment: Life Risk + Fire Risk
 
@@ -115,11 +116,11 @@ The general hazard hierarchy (from most to least hazardous):
 9. **Group A** — Residential Dwellings (low density)
 10. **Group J** — Accessory (incidental structures)
 
-<Warn>
-
-**Important:** The comparison is specific to the sub-groups involved and the actual conditions of the building, not a general category comparison. Moving from Group D-2 (clinic) to Group B-1 (hotel) requires the Building Official to assess whether the hotel is less hazardous — which depends on occupant load, egress, and fire safety provisions. Always anchor your analysis to the specific sub-groups and the actual risk profile.
-
-</Warn>
+[SLATECAMP_UI_BLOCK:ui_0006 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Important:** The comparison is specific to the sub-groups involved and the actual conditions of the building, not a general category comparison. Moving from Group D-2 (clinic) to Group B-1 (hotel) requires the Building Official to assess whether the hotel is less hazardous — which depends on occupant load, egress, and fire safety provisions. Always anchor your analysis to the specific sub-groups and the actual risk profile.
+[/SLATECAMP_UI_BLOCK]
 
 ### 4. The Process: Application, Assessment, Inspection, Issuance
 
@@ -133,15 +134,11 @@ The general hazard hierarchy (from most to least hazardous):
 
 **Step 4 — Issuance of Certificate of Occupancy:** Upon approval, the Building Official issues a **Certificate of Occupancy** for the new use. Per the 2004 Revised IRR: "A building for which a Certificate of Occupancy has been issued may further be issued other Certificates of Occupancy due to changes in use." This is the legally operative document.
 
-<Warn>
-
-**Critical distinction for the exam:** The IRR does **not** create a separate "Certificate of Use" document distinct from the Certificate of Occupancy. Sec. 702 itself mentions only compliance requirements and Building Official approval — it does not name the document issued. The document issued after an approved change of use is **another Certificate of Occupancy** (sometimes referred to administratively as a "Certificate of Use," but the legal basis in the IRR is for additional Certificates of Occupancy). If an exam question asks what document is issued for a change of use, understand that:
-- The IRR says: "other Certificates of Occupancy due to changes in use"
-- The original PD 1096 text (page 364) says: "no change... shall be made until the Building Official has issued a **Certificate of Occupancy** therefor"
-
-**Bottom line:** The safest exam answer is "Certificate of Occupancy" — with the understanding that it is a new/additional Certificate of Occupancy for the changed use, not an amended or reissued original.
-
-</Warn>
+[SLATECAMP_UI_BLOCK:ui_0007 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Critical distinction for the exam:** The IRR does **not** create a separate "Certificate of Use" document distinct from the Certificate of Occupancy. Sec. 702 itself mentions only compliance requirements and Building Official approval — it does not name the document issued. The document issued after an approved change of use is **another Certificate of Occupancy** (sometimes referred to administratively as a "Certificate of Use," but the legal basis in the IRR is for additional Certificates of
+[/SLATECAMP_UI_BLOCK]
 
 ### 5. Building Official Authority is Absolute
 
@@ -167,20 +164,11 @@ The LEA typically tests this topic in three ways:
 ### Type 3: Scenario Analysis with Legal Consequence
 "A building owner converted X to Y without Building Official approval. What is the legal consequence?" These test your understanding that the process applies regardless of the owner's opinion about relative hazard.
 
-<ExamTip>
-
-**Exam strategy:** When you see a change-of-use question, immediately note:
-1. Is the existing use classified? (If not, classify it under Sec. 701)
-2. Is the proposed use classified? (Same)
-3. Compare hazard levels: is the new use more hazardous, less hazardous, or the same?
-4. Apply the rule:
-   - More/same hazardous = full code compliance required first
-   - Less hazardous = Building Official may approve
-5. Answer: Who files? Who approves? What document is issued?
-
-If the question mentions "Certificate of Use," check whether the IRR language is also referenced — the safest answer anchors to what the code actually says.
-
-</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Exam strategy:** When you see a change-of-use question, immediately note: 1. Is the existing use classified? (If not, classify it under Sec. 701) 2. Is the proposed use classified? (Same) 3. Compare hazard levels: is the new use more hazardous, less hazardous, or the same? 4. Apply the rule: - More/same hazardous = full code compliance required first - Less hazardous = Building Official may approve 5. Answer: Who files? Who approves? What document is issued? If the question mentions "Certifica
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -208,19 +196,17 @@ If the question mentions "Certificate of Use," check whether the IRR language is
 
 ---
 
-<LawCallout code="pd1096" section="Rule VII - Change of Use">
+[SLATECAMP_UI_BLOCK:ui_0009 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="pd1096", section="Rule VII - Change of Use"
+- Text: Per PD 1096 Sec. 702, a change of occupancy requires Building Official approval. The owner or architect must file NBC Form No. B-12 (Application for Change of Use or Occupancy). The Building Official assesses whether the proposed new use is less hazardous in terms of life and fire risk compared to the existing use. A childcare center (Group C) serves children — a vulnerable population requiring stringent egress and fire safety — and whether it is less hazardous than Group E-1 light manufacturing
+[/SLATECAMP_UI_BLOCK]
 
-
-Per PD 1096 Sec. 702, a change of occupancy requires Building Official approval. The owner or architect must file NBC Form No. B-12 (Application for Change of Use or Occupancy). The Building Official assesses whether the proposed new use is less hazardous in terms of life and fire risk compared to the existing use. A childcare center (Group C) serves children — a vulnerable population requiring stringent egress and fire safety — and whether it is less hazardous than Group E-1 light manufacturing is a genuine assessment, not automatic. Upon approval, the document issued is a Certificate of Use, not a Certificate of Occupancy (Option B's error). Self-certification (Option D) is not permitted under any provision of PD 1096.
-
-
-</LawCallout>
-
-<LawCallout code="nbcp" title="it determines whether full code compliance is needed before approval. Converting">
-
-no change in the character of occupancy that places a building in a different division or group shall be made without compliance with the Code requirements, and Building Official approval is required. The "less hazardous" exception does not eliminate the application and approval requirement — it determines whether full code compliance is needed before approval. Converting without filing NBC Form No. B-12 and obtaining a Certificate of Use is a direct violation of Sec. 702. The Building Official has authority to order the owner to cease operations and file the proper application. Options A, C, and D all incorrectly suggest the conversion can proceed without Building Official action.
-
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0010 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="nbcp", title="it determines whether full code compliance is needed before approval. Converting"
+- Text: no change in the character of occupancy that places a building in a different division or group shall be made without compliance with the Code requirements, and Building Official approval is required. The "less hazardous" exception does not eliminate the application and approval requirement — it determines whether full code compliance is needed before approval. Converting without filing NBC Form No. B-12 and obtaining a Certificate of Use is a direct violation of Sec. 702. The Building Official
+[/SLATECAMP_UI_BLOCK]
 
 ## Practice Questions
 

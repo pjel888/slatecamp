@@ -1,9 +1,59 @@
 {
   "article_id": "c4eb5745-a35a-4c85-94d2-e7d687a40278",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:b82158ccabe374bbecd17469fe5c023b218870fac6e6aded7994a2ee409a0cff",
+  "linked_questions_hash": "sha256:7785067c195346b8b9be277a28db8f67daadca4afb202f2ce979fc402fab2092",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "a6275c53-fecc-499a-be58-71003916d6a7",
+      "article_id": "c4eb5745-a35a-4c85-94d2-e7d687a40278",
+      "topic_id": "0f7f1d56-375a-4089-a289-4dddba8f04e1",
+      "text": "Which three types of schedules are commonly found in interior finish documentation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) Paint, tile, and wood schedules"
+        },
+        {
+          "id": "b",
+          "text": "B) Room finish, door, and window schedules"
+        },
+        {
+          "id": "c",
+          "text": "C) Exterior, interior, and basement schedules"
+        },
+        {
+          "id": "d",
+          "text": "D) Floor, wall, and ceiling schedules"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Material type (paint, tile, wood) is covered within schedules, not as separate schedule types.",
+        "c": "Exterior/interior/basement is a location split; schedules are organized by room number, not location.",
+        "d": "Floor/wall/ceiling are finish elements listed within a single room finish schedule.",
+        "correct": "Room finish schedules (walls/floors/ceilings), door schedules (type/hardware/finish), and window schedules (frame/glass/size) are the three standard schedule types in construction docs.",
+        "takeaway": "Three standard schedules: room finishes, doors, windows. Each specifies products, sizes, and details. Memorize the structure."
+      },
+      "explanation": "Material type (paint, tile, wood) is covered within schedules, not as separate schedule types. Exterior/interior/basement is a location split; schedules are organized by room number, not location. Floor/wall/ceiling are finish elements listed within a single room finish schedule. Room finish schedules (walls/floors/ceilings), door schedules (type/hardware/finish), and window schedules (frame/glass/size) are the three standard schedule types in construction docs. Three standard schedules: room finishes, doors, windows. Each specifies products, sizes, and details. Memorize the structure.",
+      "code_citation": "CSI MasterFormat; AIA construction document standards",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-05-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-05-06T13:20:03.534837+00:00",
+      "content_hash": "sha256:56a4a93d5beb311c4b35a62a4fcb92b89402cd1589e3934f51a967c5da9a073e"
+    },
     {
       "question_id": "e68187ad-8741-4a34-a724-2e3b2e6357e8",
       "article_id": "c4eb5745-a35a-4c85-94d2-e7d687a40278",
@@ -55,56 +105,6 @@
       "content_hash": "sha256:c791a8db13aa1c86aa543dbf535abeec0b445765587f49ed8578e5abb816c541"
     },
     {
-      "question_id": "a6275c53-fecc-499a-be58-71003916d6a7",
-      "article_id": "c4eb5745-a35a-4c85-94d2-e7d687a40278",
-      "topic_id": "0f7f1d56-375a-4089-a289-4dddba8f04e1",
-      "text": "Which three types of schedules are commonly found in interior finish documentation?",
-      "options": [
-        {
-          "id": "a",
-          "text": "A) Paint, tile, and wood schedules"
-        },
-        {
-          "id": "b",
-          "text": "B) Room finish, door, and window schedules"
-        },
-        {
-          "id": "c",
-          "text": "C) Exterior, interior, and basement schedules"
-        },
-        {
-          "id": "d",
-          "text": "D) Floor, wall, and ceiling schedules"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Material type (paint, tile, wood) is covered within schedules, not as separate schedule types.",
-        "c": "Exterior/interior/basement is a location split; schedules are organized by room number, not location.",
-        "d": "Floor/wall/ceiling are finish elements listed within a single room finish schedule.",
-        "correct": "Room finish schedules (walls/floors/ceilings), door schedules (type/hardware/finish), and window schedules (frame/glass/size) are the three standard schedule types in construction docs.",
-        "takeaway": "Three standard schedules: room finishes, doors, windows. Each specifies products, sizes, and details. Memorize the structure."
-      },
-      "explanation": null,
-      "code_citation": "CSI MasterFormat; AIA construction document standards",
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-MATL-007-05-002",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:27.970051+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:3f50ec96531bce269fb4503627e7d077f821c3e90470a0126862a7d8c65af4e7"
-    },
-    {
       "question_id": "90603524-c5ac-4738-87d6-ba1f3afc8491",
       "article_id": "c4eb5745-a35a-4c85-94d2-e7d687a40278",
       "topic_id": "0f7f1d56-375a-4089-a289-4dddba8f04e1",
@@ -139,7 +139,7 @@
         "correct": "Unit 201 is fully specified (brand, code); Unit 301 is vague. Vagueness on Unit 301 allows contractor substitution, color mismatch, and quality variance. Bulk purchasing is impossible with mixed specs. Standard practice: all standard units use identical finishes; custom finishes are documented separately with cost tracking.",
         "takeaway": "Standardize finishes for like spaces. Custom finishes are exceptions, documented separately with cost approval. Avoid mix of specific and vague specs."
       },
-      "explanation": null,
+      "explanation": "Residential standardization (not customization) is industry practice for cost and quality control. Color variation is not 'expected'; consistency is the standard. Adjacency is irrelevant; consistency applies to all same-type units. Unit 201 is fully specified (brand, code); Unit 301 is vague. Vagueness on Unit 301 allows contractor substitution, color mismatch, and quality variance. Bulk purchasing is impossible with mixed specs. Standard practice: all standard units use identical finishes; custom finishes are documented separately with cost tracking. Standardize finishes for like spaces. Custom finishes are exceptions, documented separately with cost approval. Avoid mix of specific and vague specs.",
       "code_citation": "Residential project best practice; cost control",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
@@ -151,8 +151,8 @@
       "model_id": "ALE-MATL-007-05-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.970051+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:9371dc61b7b31c7e6e9c72ef5f247fcc9ee5e7a39109b6caa06cb28823c1930e"
+      "updated_at": "2026-05-06T13:20:03.672418+00:00",
+      "content_hash": "sha256:24f8ef03b574d97549f71e098c8b6e4fb69647199ea9f4ea5910e0b3933db95d"
     },
     {
       "question_id": "65873363-85b0-408b-be1c-d6e334f617b6",

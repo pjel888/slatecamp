@@ -1,9 +1,113 @@
 {
   "article_id": "82480e11-1573-4911-a865-c26ee4d44238",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:df2b3e2650bf07bacda040c5b62135335be7a16ffdcbc06174dd1c2fe81c2d03",
+  "linked_questions_hash": "sha256:3fd2b2993d8b112748e02e986e7e110f33fbbe1eb63d6f3490d6918adbde4265",
   "question_count": 13,
   "questions": [
+    {
+      "question_id": "a56f7835-8191-4f48-b30a-b37726a23c80",
+      "article_id": "82480e11-1573-4911-a865-c26ee4d44238",
+      "topic_id": "db8bda14-41c7-4143-aa5a-a133405311a6",
+      "text": "Shape, as a property of form, refers to which of the following?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The two-dimensional outline or silhouette of a form when viewed as a profile; the geometric classification as regular or irregular"
+        },
+        {
+          "id": "b",
+          "text": "The three-dimensional volume and mass of a building, which contributes to its overall form and spatial presence"
+        },
+        {
+          "id": "c",
+          "text": "The color and material qualities of a building's surfaces, which affect its aesthetic and tactile perception"
+        },
+        {
+          "id": "d",
+          "text": "The size of the building relative to its surroundings, influencing its visual impact and contextual integration"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "This describes volume or mass.",
+        "c": "This describes color and texture.",
+        "d": "This describes size or scale.",
+        "correct": "Shape is the two-dimensional outline or silhouette. Regular shapes (circle, square, triangle) are easily perceived and memorable. Irregular shapes are more complex and visually unique.",
+        "takeaway": "Irregular shapes are more complex and visually unique."
+      },
+      "explanation": "This describes volume or mass. This describes color and texture. This describes size or scale. Shape is the two-dimensional outline or silhouette. Regular shapes (circle, square, triangle) are easily perceived and memorable. Irregular shapes are more complex and visually unique. Irregular shapes are more complex and visually unique.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-001-11-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.120988+00:00",
+      "updated_at": "2026-05-06T14:45:50.84657+00:00",
+      "content_hash": "sha256:f102e742444af3cde977faaa3388eadcecc7a416a90dc32bc4ed0cc984cdbd8e"
+    },
+    {
+      "question_id": "78e51d73-0ab4-4f71-bcbf-67bc27af26e6",
+      "article_id": "82480e11-1573-4911-a865-c26ee4d44238",
+      "topic_id": "db8bda14-41c7-4143-aa5a-a133405311a6",
+      "text": "How are form and space related in architectural design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They are independent concerns; an architect can excellently design one without addressing the other, though this is rarely effective"
+        },
+        {
+          "id": "b",
+          "text": "Space is more important than form in contemporary architecture, which may not always be the case"
+        },
+        {
+          "id": "c",
+          "text": "Form is more important; space is secondary and determined automatically by form design, which oversimplifies their relationship"
+        },
+        {
+          "id": "d",
+          "text": "They are complementary and interdependent—form creates space by bounding it, and space gives meaning to form by providing context and experiential environment"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Both must be addressed; neglecting either results in failed architecture.",
+        "b": "Both are equally essential; neither is subordinate.",
+        "c": "Space must be intentionally designed, not treated as automatic consequence.",
+        "correct": "The relationship is dialectical. A beautiful sculptural form without attention to spaces it creates is inadequate. Conversely, well-proportioned space with incoherent bounding forms fails. Both must be designed simultaneously with equal care.",
+        "takeaway": "Both must be designed simultaneously with equal care."
+      },
+      "explanation": "Both must be addressed; neglecting either results in failed architecture. Both are equally essential; neither is subordinate. Space must be intentionally designed, not treated as automatic consequence. The relationship is dialectical. A beautiful sculptural form without attention to spaces it creates is inadequate. Conversely, well-proportioned space with incoherent bounding forms fails. Both must be designed simultaneously with equal care. Both must be designed simultaneously with equal care.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-001-11-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.120988+00:00",
+      "updated_at": "2026-05-06T14:45:51.033957+00:00",
+      "content_hash": "sha256:6c20a23971b8d01a6bb6403dbb7397202994e44681817690cfb85e7d0ed43733"
+    },
     {
       "question_id": "1f8d68e7-8ec6-43da-b02f-628e9f2bd698",
       "article_id": "82480e11-1573-4911-a865-c26ee4d44238",
@@ -57,41 +161,41 @@
       "content_hash": "sha256:2d86211050a9f281f2e30004f3a7272cf3fb5650a33fef322ad75379b94016d4"
     },
     {
-      "question_id": "a56f7835-8191-4f48-b30a-b37726a23c80",
+      "question_id": "8b7da0f3-8595-4393-a802-35817669ae89",
       "article_id": "82480e11-1573-4911-a865-c26ee4d44238",
       "topic_id": "db8bda14-41c7-4143-aa5a-a133405311a6",
-      "text": "Shape, as a property of form, refers to which of the following?",
+      "text": "Visual inertia in architectural form refers to which quality?",
       "options": [
         {
           "id": "a",
-          "text": "The two-dimensional outline or silhouette of a form when viewed as a profile; the geometric classification as regular or irregular"
+          "text": "The movement of people through the building, influencing circulation patterns and spatial flow"
         },
         {
           "id": "b",
-          "text": "The three-dimensional volume and mass of a building, which contributes to its overall form and spatial presence"
+          "text": "The apparent stability or instability of a form; high inertia = stable and formal; low inertia = dynamic and unstable-appearing"
         },
         {
           "id": "c",
-          "text": "The color and material qualities of a building's surfaces, which affect its aesthetic and tactile perception"
+          "text": "The structural forces and load paths within a building, determining its engineering integrity"
         },
         {
           "id": "d",
-          "text": "The size of the building relative to its surroundings, influencing its visual impact and contextual integration"
+          "text": "The physical weight and material density of a building, affecting its perceived mass and presence"
         }
       ],
-      "correct_option_id": "a",
+      "correct_option_id": "b",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "This describes volume or mass.",
-        "c": "This describes color and texture.",
-        "d": "This describes size or scale.",
-        "correct": "Shape is the two-dimensional outline or silhouette. Regular shapes (circle, square, triangle) are easily perceived and memorable. Irregular shapes are more complex and visually unique.",
-        "takeaway": "Irregular shapes are more complex and visually unique."
+        "a": "Movement of occupants is separate from visual inertia.",
+        "c": "Structural forces are engineering concerns; visual inertia is perceptual.",
+        "d": "Visual inertia is perceptual, not about actual physical weight.",
+        "correct": "Visual inertia describes perceived stability. A regular, symmetrical, centered form has high visual inertia (reads as stable). An irregular, off-center, tilted form has low inertia (appears dynamic and tense).",
+        "takeaway": "An irregular, off-center, tilted form has low inertia (appears dynamic and tense)."
       },
-      "explanation": null,
+      "explanation": "Movement of occupants is separate from visual inertia. Structural forces are engineering concerns; visual inertia is perceptual. Visual inertia is perceptual, not about actual physical weight. Visual inertia describes perceived stability. A regular, symmetrical, centered form has high visual inertia (reads as stable). An irregular, off-center, tilted form has low inertia (appears dynamic and tense). An irregular, off-center, tilted form has low inertia (appears dynamic and tense).",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -102,63 +206,11 @@
       "difficulty_rating": null,
       "discrimination_rating": null,
       "is_assessment": false,
-      "model_id": "ALE-THEO-001-11-004",
+      "model_id": "ALE-THEO-001-11-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.120988+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:a3c6686aeb360eba059ae00e2837298e477a06d40b7bb3468bec8bd112f3d668"
-    },
-    {
-      "question_id": "78e51d73-0ab4-4f71-bcbf-67bc27af26e6",
-      "article_id": "82480e11-1573-4911-a865-c26ee4d44238",
-      "topic_id": "db8bda14-41c7-4143-aa5a-a133405311a6",
-      "text": "How are form and space related in architectural design?",
-      "options": [
-        {
-          "id": "a",
-          "text": "They are independent concerns; an architect can excellently design one without addressing the other, though this is rarely effective"
-        },
-        {
-          "id": "b",
-          "text": "Space is more important than form in contemporary architecture, which may not always be the case"
-        },
-        {
-          "id": "c",
-          "text": "Form is more important; space is secondary and determined automatically by form design, which oversimplifies their relationship"
-        },
-        {
-          "id": "d",
-          "text": "They are complementary and interdependent—form creates space by bounding it, and space gives meaning to form by providing context and experiential environment"
-        }
-      ],
-      "correct_option_id": "d",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Both must be addressed; neglecting either results in failed architecture.",
-        "b": "Both are equally essential; neither is subordinate.",
-        "c": "Space must be intentionally designed, not treated as automatic consequence.",
-        "correct": "The relationship is dialectical. A beautiful sculptural form without attention to spaces it creates is inadequate. Conversely, well-proportioned space with incoherent bounding forms fails. Both must be designed simultaneously with equal care.",
-        "takeaway": "Both must be designed simultaneously with equal care."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "apply",
-      "application_context": "design_application",
-      "practice_context": [
-        "CMP"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-001-11-003",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:53.120988+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:2f55966943afd4fab4fdb17a3c5f9b616ac535b19def092c80c556efacfc4342"
+      "updated_at": "2026-05-06T14:45:51.31445+00:00",
+      "content_hash": "sha256:c425104d30232a7c4e2c070eaed40f3b4515600e09ada2413f75e20a39eb2e03"
     },
     {
       "question_id": "e0b39015-f7bf-4a35-bcf8-7c4bb34bf283",
@@ -195,7 +247,7 @@
         "correct": "Form is the building as a three-dimensional sculptural object with recognizable visual presence, material identity, and aesthetic character. It is what the eye identifies directly.",
         "takeaway": "It is what the eye identifies directly."
       },
-      "explanation": null,
+      "explanation": "This describes space, not form. This describes program and spatial organization. While structure influences form, form itself is the visible manifestation. Form is the building as a three-dimensional sculptural object with recognizable visual presence, material identity, and aesthetic character. It is what the eye identifies directly. It is what the eye identifies directly.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -209,164 +261,8 @@
       "model_id": "ALE-THEO-001-11-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.120988+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:a21e4064a7842038e1302792a4cb9a1d2b10263b05ec713c5e960b15ba6810c4"
-    },
-    {
-      "question_id": "8b7da0f3-8595-4393-a802-35817669ae89",
-      "article_id": "82480e11-1573-4911-a865-c26ee4d44238",
-      "topic_id": "db8bda14-41c7-4143-aa5a-a133405311a6",
-      "text": "Visual inertia in architectural form refers to which quality?",
-      "options": [
-        {
-          "id": "a",
-          "text": "The movement of people through the building, influencing circulation patterns and spatial flow"
-        },
-        {
-          "id": "b",
-          "text": "The apparent stability or instability of a form; high inertia = stable and formal; low inertia = dynamic and unstable-appearing"
-        },
-        {
-          "id": "c",
-          "text": "The structural forces and load paths within a building, determining its engineering integrity"
-        },
-        {
-          "id": "d",
-          "text": "The physical weight and material density of a building, affecting its perceived mass and presence"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Movement of occupants is separate from visual inertia.",
-        "c": "Structural forces are engineering concerns; visual inertia is perceptual.",
-        "d": "Visual inertia is perceptual, not about actual physical weight.",
-        "correct": "Visual inertia describes perceived stability. A regular, symmetrical, centered form has high visual inertia (reads as stable). An irregular, off-center, tilted form has low inertia (appears dynamic and tense).",
-        "takeaway": "An irregular, off-center, tilted form has low inertia (appears dynamic and tense)."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [
-        "DEF"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-001-11-005",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:53.120988+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:771bc78738fa2184746bb3f73b7c14c0b65323a0e9f3076ff93666b335157d33"
-    },
-    {
-      "question_id": "5c32230e-4493-4741-879c-8f0128756442",
-      "article_id": "82480e11-1573-4911-a865-c26ee4d44238",
-      "topic_id": "db8bda14-41c7-4143-aa5a-a133405311a6",
-      "text": "What does it mean that 'human sclea' is essential context when analyzing form properties?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Form properties must be understood relative to human body dimensions; a 40-foot-tall space might be monumental or intimate depending on its proportions, material quality, and purpose—not size alone"
-        },
-        {
-          "id": "b",
-          "text": "Contemporary buildings should ignore human scale in favor of abstract formal expression, prioritizing innovative design over traditional considerations"
-        },
-        {
-          "id": "c",
-          "text": "Scale is irrelevant to architectural experience; form properties matter regardless of human context, as the focus is on the design's conceptual integrity"
-        },
-        {
-          "id": "d",
-          "text": "Buildings should be small and intimate in size, ensuring that they are approachable and relatable to human users"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "b": "Human experience is central to architecture; ignoring it disrespects the user.",
-        "c": "Human scale provides essential context for evaluating form properties.",
-        "d": "Scale is not about size limit; intimate scale can exist at large dimensions if proportioned appropriately.",
-        "correct": "Human scale does not mean small. It means that dimensions must be evaluated relative to human body size and comfort. A 40-foot atrium might overwhelm or inspire depending on proportions and materials; a 10-foot ceiling might feel confining or intimate depending on context.",
-        "takeaway": "A 40-foot atrium might overwhelm or inspire depending on proportions and materials; a 10-foot ceiling might feel confining or intimate depending on context."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [
-        "CON"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-001-11-012",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:53.522336+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:84fd4a4829e9bca30eb683c5e5635aaacd3b28140654835d57f83aa8cd3f7569"
-    },
-    {
-      "question_id": "64ae719b-2ee4-4249-bd95-a0f1b2edb64a",
-      "article_id": "82480e11-1573-4911-a865-c26ee4d44238",
-      "topic_id": "db8bda14-41c7-4143-aa5a-a133405311a6",
-      "text": "A building facade has a grand central entry with smaller secondary entries on either side. This demonstrates which ordering principle?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Radial symmetry, where elements organize around a center, creating a balanced and harmonious design"
-        },
-        {
-          "id": "b",
-          "text": "Grid-based order, where all elements follow a regular module, ensuring uniformity and predictability"
-        },
-        {
-          "id": "c",
-          "text": "Hierarchical order, where visual and functional importance is expressed through scale and prominence"
-        },
-        {
-          "id": "d",
-          "text": "Random ordering with no systematic principle, leading to a chaotic and unstructured appearance"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "While the large entry might occupy center, the principle is hierarchy, not radial symmetry.",
-        "b": "While grid may organize the composition, the distinctive sizing creates hierarchy.",
-        "d": "The ordering is systematic; the statement implies intentional hierarchy.",
-        "correct": "Hierarchy distinguishes primary (grand entry) from secondary (smaller entries) features through scale and placement. This establishes relationships, directs attention, and clarifies spatial organization.",
-        "takeaway": "This establishes relationships, directs attention, and clarifies spatial organization."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "apply",
-      "application_context": "design_application",
-      "practice_context": [
-        "APP"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-001-11-009",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:53.522336+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:cafb6b6e64fd5f420490ff4709aa1c3f4a9d6238c9b8a077fdd62992f10131ed"
+      "updated_at": "2026-05-06T14:45:51.165801+00:00",
+      "content_hash": "sha256:4c16368a29494a05088ece77b2ea80633ddabfdde9f88d715a974aad6cd7fb48"
     },
     {
       "question_id": "1ea92dad-64aa-43a4-ad3a-48c35ba9f7ce",
@@ -421,26 +317,26 @@
       "content_hash": "sha256:349f71b35961274e2fa4989b1ae077538999c3ce12c526daef3c189c3a30f264"
     },
     {
-      "question_id": "d7810638-4b9c-4dab-b6a7-bf2e9f7602f2",
+      "question_id": "9e789d23-1531-4508-9963-1c4cbd7eb4e3",
       "article_id": "82480e11-1573-4911-a865-c26ee4d44238",
       "topic_id": "db8bda14-41c7-4143-aa5a-a133405311a6",
-      "text": "In the Pantheon, how do form and space achieve architectural excellence through integration?",
+      "text": "How do ordering systems (grid, symmetry, hierarchy) contribute to both visual coherence and spatial clarity in architecture?",
       "options": [
         {
           "id": "a",
-          "text": "The interior is perfectly proportioned but the exterior form is unremarkable, which is a subjective interpretation"
+          "text": "Ordering systems are purely aesthetic devices with no functional purpose, often used to enhance visual appeal without affecting spatial organization"
         },
         {
           "id": "b",
-          "text": "Form and space are independent achievements; the Pantheon succeeds in one but not the other, which is a debated viewpoint"
+          "text": "Ordering systems constrain creative design freedom and should be minimized in contemporary architecture, especially in projects that prioritize innovation over tradition"
         },
         {
           "id": "c",
-          "text": "The monumental dome (venustas and firmitas) is unified with the perfectly proportioned hemispherical interior space (utilitas), revealing how form and space integrate coherently"
+          "text": "Ordering systems enable occupants to understand and navigate buildings by establishing relationships between elements, distinguishing importance, and creating comprehensible patterns—making complex buildings navigable and visually coherent"
         },
         {
           "id": "d",
-          "text": "The dome is structurally impressive but the interior space is poorly proportioned, which is not a widely held opinion"
+          "text": "Ordering systems are equally important to form and space but operate independently of them, allowing for flexibility in design while maintaining a sense of order"
         }
       ],
       "correct_option_id": "c",
@@ -449,28 +345,28 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "The exterior dome is monumental and magnificent.",
-        "b": "The building demonstrates complete integration of form and space.",
-        "d": "The interior proportion is masterful, not poor.",
-        "correct": "The Pantheon exemplifies form-space unity: the dome is both structurally sound (honest concrete engineering) and spiritually inspiring (venustas through monumentality and light); the interior space is proportionally perfect with harmonious relationships.",
-        "takeaway": "The Pantheon exemplifies form-space unity: the dome is both structurally sound (honest concrete engineering) and spiritually inspiring (venustas through monumentality and light); the interior space is proportionally perfect with harmonious relationships."
+        "a": "Order has profound functional and experiential consequences.",
+        "b": "Clear ordering often enables creativity rather than constraining it; complexity requires coherent organization.",
+        "d": "Ordering systems structure both form and space together.",
+        "correct": "Order is structural, not decorative. Without order, buildings become chaotic and confusing. Grids, hierarchies, and symmetries allow occupants to intuitively understand spatial organization and facilitate wayfinding, while creating visual coherence.",
+        "takeaway": "Grids, hierarchies, and symmetries allow occupants to intuitively understand spatial organization and facilitate wayfinding, while creating visual coherence."
       },
-      "explanation": null,
+      "explanation": "Order has profound functional and experiential consequences. Clear ordering often enables creativity rather than constraining it; complexity requires coherent organization. Ordering systems structure both form and space together. Order is structural, not decorative. Without order, buildings become chaotic and confusing. Grids, hierarchies, and symmetries allow occupants to intuitively understand spatial organization and facilitate wayfinding, while creating visual coherence. Grids, hierarchies, and symmetries allow occupants to intuitively understand spatial organization and facilitate wayfinding, while creating visual coherence.",
       "code_citation": null,
-      "bloom_level": "apply",
-      "application_context": "design_application",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
       "practice_context": [
-        "APP"
+        "INT"
       ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
       "is_assessment": false,
-      "model_id": "ALE-THEO-001-11-011",
+      "model_id": "ALE-THEO-001-11-013",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.522336+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:730ae74c0d8b5e218e023e7376139603da5635499da0283d22739935702ce747"
+      "updated_at": "2026-05-06T14:45:52.622018+00:00",
+      "content_hash": "sha256:d81dfc25b314704b7e87bb8d1160d7939599f0ef226c19abb7dedc861e09fc90"
     },
     {
       "question_id": "210547c0-d809-47c4-bf09-28ce7bad7b20",
@@ -507,7 +403,7 @@
         "correct": "A grid is the foundational ordering system. Other systems (symmetry, hierarchy, axes) often operate within or alongside grid structures. The grid creates proportional harmony and makes complex systems comprehensible.",
         "takeaway": "The grid creates proportional harmony and makes complex systems comprehensible."
       },
-      "explanation": null,
+      "explanation": "Hierarchy depends on grid or other organizational framework. Axes and proportions operate within grid structures. Symmetry is one ordering principle but not foundational. A grid is the foundational ordering system. Other systems (symmetry, hierarchy, axes) often operate within or alongside grid structures. The grid creates proportional harmony and makes complex systems comprehensible. The grid creates proportional harmony and makes complex systems comprehensible.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "code_interpretation",
@@ -521,8 +417,8 @@
       "model_id": "ALE-THEO-001-11-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.522336+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:6ab27a5bdf0bd871049b650e671fcb5d8c6ce0dc87b3d0c57c06b354229615e7"
+      "updated_at": "2026-05-06T14:45:52.22492+00:00",
+      "content_hash": "sha256:0bfd2be79518d3bdfcb49019701977287f1d2a0ca7370cce0d45229fa22633c8"
     },
     {
       "question_id": "9ee90ce7-f4a0-4753-a054-aaaafe24e278",
@@ -559,7 +455,7 @@
         "correct": "Form properties communicate meaning. Stability (high inertia) conveys authority and permanence; dynamism (low inertia) conveys change and innovation. The choice serves the building's cultural and institutional purpose.",
         "takeaway": "The choice serves the building's cultural and institutional purpose."
       },
-      "explanation": null,
+      "explanation": "Visual inertia directly communicates institutional meaning and cultural values. Low inertia is not instability; it is perceived dynamism and tension—appropriate for many contemporary buildings. Appropriateness depends on purpose, not inherent superiority. Form properties communicate meaning. Stability (high inertia) conveys authority and permanence; dynamism (low inertia) conveys change and innovation. The choice serves the building's cultural and institutional purpose. The choice serves the building's cultural and institutional purpose.",
       "code_citation": null,
       "bloom_level": "apply",
       "application_context": "design_application",
@@ -573,8 +469,164 @@
       "model_id": "ALE-THEO-001-11-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.522336+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:c2221914165e95b562e37747812b6c6b7de26eb85fc5b630411066fa5ee069d1"
+      "updated_at": "2026-05-06T14:45:52.353609+00:00",
+      "content_hash": "sha256:e800c60414af854c07f45117dd53d9f2c6739c76957908486bad82dabcdd1372"
+    },
+    {
+      "question_id": "d7810638-4b9c-4dab-b6a7-bf2e9f7602f2",
+      "article_id": "82480e11-1573-4911-a865-c26ee4d44238",
+      "topic_id": "db8bda14-41c7-4143-aa5a-a133405311a6",
+      "text": "In the Pantheon, how do form and space achieve architectural excellence through integration?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The interior is perfectly proportioned but the exterior form is unremarkable, which is a subjective interpretation"
+        },
+        {
+          "id": "b",
+          "text": "Form and space are independent achievements; the Pantheon succeeds in one but not the other, which is a debated viewpoint"
+        },
+        {
+          "id": "c",
+          "text": "The monumental dome (venustas and firmitas) is unified with the perfectly proportioned hemispherical interior space (utilitas), revealing how form and space integrate coherently"
+        },
+        {
+          "id": "d",
+          "text": "The dome is structurally impressive but the interior space is poorly proportioned, which is not a widely held opinion"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The exterior dome is monumental and magnificent.",
+        "b": "The building demonstrates complete integration of form and space.",
+        "d": "The interior proportion is masterful, not poor.",
+        "correct": "The Pantheon exemplifies form-space unity: the dome is both structurally sound (honest concrete engineering) and spiritually inspiring (venustas through monumentality and light); the interior space is proportionally perfect with harmonious relationships.",
+        "takeaway": "The Pantheon exemplifies form-space unity: the dome is both structurally sound (honest concrete engineering) and spiritually inspiring (venustas through monumentality and light); the interior space is proportionally perfect with harmonious relationships."
+      },
+      "explanation": "The exterior dome is monumental and magnificent. The building demonstrates complete integration of form and space. The interior proportion is masterful, not poor. The Pantheon exemplifies form-space unity: the dome is both structurally sound (honest concrete engineering) and spiritually inspiring (venustas through monumentality and light); the interior space is proportionally perfect with harmonious relationships. The Pantheon exemplifies form-space unity: the dome is both structurally sound (honest concrete engineering) and spiritually inspiring (venustas through monumentality and light); the interior space is proportionally perfect with harmonious relationships.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-001-11-011",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "updated_at": "2026-05-06T14:45:52.096448+00:00",
+      "content_hash": "sha256:9618343c73fbf189a1945780dafa9b20a02677b6fb9847fa2d5980603e89d6a1"
+    },
+    {
+      "question_id": "5c32230e-4493-4741-879c-8f0128756442",
+      "article_id": "82480e11-1573-4911-a865-c26ee4d44238",
+      "topic_id": "db8bda14-41c7-4143-aa5a-a133405311a6",
+      "text": "What does it mean that 'human sclea' is essential context when analyzing form properties?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Form properties must be understood relative to human body dimensions; a 40-foot-tall space might be monumental or intimate depending on its proportions, material quality, and purpose—not size alone"
+        },
+        {
+          "id": "b",
+          "text": "Contemporary buildings should ignore human scale in favor of abstract formal expression, prioritizing innovative design over traditional considerations"
+        },
+        {
+          "id": "c",
+          "text": "Scale is irrelevant to architectural experience; form properties matter regardless of human context, as the focus is on the design's conceptual integrity"
+        },
+        {
+          "id": "d",
+          "text": "Buildings should be small and intimate in size, ensuring that they are approachable and relatable to human users"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Human experience is central to architecture; ignoring it disrespects the user.",
+        "c": "Human scale provides essential context for evaluating form properties.",
+        "d": "Scale is not about size limit; intimate scale can exist at large dimensions if proportioned appropriately.",
+        "correct": "Human scale does not mean small. It means that dimensions must be evaluated relative to human body size and comfort. A 40-foot atrium might overwhelm or inspire depending on proportions and materials; a 10-foot ceiling might feel confining or intimate depending on context.",
+        "takeaway": "A 40-foot atrium might overwhelm or inspire depending on proportions and materials; a 10-foot ceiling might feel confining or intimate depending on context."
+      },
+      "explanation": "Human experience is central to architecture; ignoring it disrespects the user. Human scale provides essential context for evaluating form properties. Scale is not about size limit; intimate scale can exist at large dimensions if proportioned appropriately. Human scale does not mean small. It means that dimensions must be evaluated relative to human body size and comfort. A 40-foot atrium might overwhelm or inspire depending on proportions and materials; a 10-foot ceiling might feel confining or intimate depending on context. A 40-foot atrium might overwhelm or inspire depending on proportions and materials; a 10-foot ceiling might feel confining or intimate depending on context.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-001-11-012",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "updated_at": "2026-05-06T14:45:51.453683+00:00",
+      "content_hash": "sha256:115e6d009dc4bcc9a3fece91d4d115dc54058c10a0a7b6923bcd79325e8dad3b"
+    },
+    {
+      "question_id": "64ae719b-2ee4-4249-bd95-a0f1b2edb64a",
+      "article_id": "82480e11-1573-4911-a865-c26ee4d44238",
+      "topic_id": "db8bda14-41c7-4143-aa5a-a133405311a6",
+      "text": "A building facade has a grand central entry with smaller secondary entries on either side. This demonstrates which ordering principle?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Radial symmetry, where elements organize around a center, creating a balanced and harmonious design"
+        },
+        {
+          "id": "b",
+          "text": "Grid-based order, where all elements follow a regular module, ensuring uniformity and predictability"
+        },
+        {
+          "id": "c",
+          "text": "Hierarchical order, where visual and functional importance is expressed through scale and prominence"
+        },
+        {
+          "id": "d",
+          "text": "Random ordering with no systematic principle, leading to a chaotic and unstructured appearance"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While the large entry might occupy center, the principle is hierarchy, not radial symmetry.",
+        "b": "While grid may organize the composition, the distinctive sizing creates hierarchy.",
+        "d": "The ordering is systematic; the statement implies intentional hierarchy.",
+        "correct": "Hierarchy distinguishes primary (grand entry) from secondary (smaller entries) features through scale and placement. This establishes relationships, directs attention, and clarifies spatial organization.",
+        "takeaway": "This establishes relationships, directs attention, and clarifies spatial organization."
+      },
+      "explanation": "While the large entry might occupy center, the principle is hierarchy, not radial symmetry. While grid may organize the composition, the distinctive sizing creates hierarchy. The ordering is systematic; the statement implies intentional hierarchy. Hierarchy distinguishes primary (grand entry) from secondary (smaller entries) features through scale and placement. This establishes relationships, directs attention, and clarifies spatial organization. This establishes relationships, directs attention, and clarifies spatial organization.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-001-11-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "updated_at": "2026-05-06T14:45:51.948914+00:00",
+      "content_hash": "sha256:c2eff6f2c40b97e32cdee1cb676b8300d87d573baeba7b1d3a7a9f9493959599"
     },
     {
       "question_id": "494dd813-c79d-4eed-bc61-f0725bf96d91",
@@ -611,7 +663,7 @@
         "correct": "Symmetry is inherently stable and monumental. Bilateral (left-right mirror) and radial (center-point mirror) symmetry both create formal, balanced order with high visual inertia.",
         "takeaway": "Bilateral (left-right mirror) and radial (center-point mirror) symmetry both create formal, balanced order with high visual inertia."
       },
-      "explanation": null,
+      "explanation": "Symmetry creates clear, organized spatial patterns. Asymmetry or diagonal alignment creates dynamic effects. Symmetry is one of the clearest ordering principles. Symmetry is inherently stable and monumental. Bilateral (left-right mirror) and radial (center-point mirror) symmetry both create formal, balanced order with high visual inertia. Bilateral (left-right mirror) and radial (center-point mirror) symmetry both create formal, balanced order with high visual inertia.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -625,60 +677,8 @@
       "model_id": "ALE-THEO-001-11-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.522336+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:e5f171314555b41b3f3bb340fd44dd88d43c65eb63dcf2a7be966cb1682bd404"
-    },
-    {
-      "question_id": "9e789d23-1531-4508-9963-1c4cbd7eb4e3",
-      "article_id": "82480e11-1573-4911-a865-c26ee4d44238",
-      "topic_id": "db8bda14-41c7-4143-aa5a-a133405311a6",
-      "text": "How do ordering systems (grid, symmetry, hierarchy) contribute to both visual coherence and spatial clarity in architecture?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Ordering systems are purely aesthetic devices with no functional purpose, often used to enhance visual appeal without affecting spatial organization"
-        },
-        {
-          "id": "b",
-          "text": "Ordering systems constrain creative design freedom and should be minimized in contemporary architecture, especially in projects that prioritize innovation over tradition"
-        },
-        {
-          "id": "c",
-          "text": "Ordering systems enable occupants to understand and navigate buildings by establishing relationships between elements, distinguishing importance, and creating comprehensible patterns—making complex buildings navigable and visually coherent"
-        },
-        {
-          "id": "d",
-          "text": "Ordering systems are equally important to form and space but operate independently of them, allowing for flexibility in design while maintaining a sense of order"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Order has profound functional and experiential consequences.",
-        "b": "Clear ordering often enables creativity rather than constraining it; complexity requires coherent organization.",
-        "d": "Ordering systems structure both form and space together.",
-        "correct": "Order is structural, not decorative. Without order, buildings become chaotic and confusing. Grids, hierarchies, and symmetries allow occupants to intuitively understand spatial organization and facilitate wayfinding, while creating visual coherence.",
-        "takeaway": "Grids, hierarchies, and symmetries allow occupants to intuitively understand spatial organization and facilitate wayfinding, while creating visual coherence."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "analyze",
-      "application_context": "code_interpretation",
-      "practice_context": [
-        "INT"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-001-11-013",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:53.522336+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:7497ace57c9e9a7d3b284b726cbbaff61eca80d602a9e3140833d38bf4e0d291"
+      "updated_at": "2026-05-06T14:45:52.482603+00:00",
+      "content_hash": "sha256:9c348caa8c8ca90629d54602957990ad6bed7019916deae2500759a6fb2d1e67"
     }
   ]
 }

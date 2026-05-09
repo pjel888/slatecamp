@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Hist 012 03 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 
 ## Learning Goal
@@ -8,10 +17,18 @@ Identify the three regional traditions of North American Indigenous architecture
 North American Indigenous architecture predates European contact by centuries to millennia, yet was often overlooked or dismissed as "primitive" in early Eurocentric scholarship. Archaeological and ethnographic evidence reveals sophisticated spatial planning, climate adaptation, and building technologies. Three major traditions merit study: the pueblo tradition of the Southwest (adobe and stone construction in arid climates), the longhouse tradition of the Northeast and Pacific Northwest (post-and-beam structures accommodating extended families), and the earthen mound tradition of the Mississippi River valley (ritual and administrative centers built from rammed earth). These traditions demonstrate that "Indigenous architecture" encompasses diverse responses to distinct environments and cultural values.
 
 
-<ArticleMedia id="media-hist-012-03-core-concept" layout="single" type="image" status="placeholder" alt="View of Taos Pueblo (New Mexico, continuously inhabited for over 1,000 years), showing the multi-story adobe (sun-dried mud brick) apartment-style dwellings with stepped massing, vigas (wooden roof beams), and kiva ceremonial structures." caption="Taos Pueblo — Adobe Multi-Story Dwellings" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-hist-012-03-core-concept", layout="single", type="image", status="placeholder", alt="View of Taos Pueblo (New Mexico, continuously inhabited for over 1,000 years), showing the multi-story adobe (sun-dried mud brick) apartment-style dwellings with stepped massing, vigas (wooden roof beams), and kiva ceremonial structures.", caption="Taos Pueblo — Adobe Multi-Story Dwellings", suggestedAsset="Architectural reference image or diagram", placementIntent="Visual reference for architectural period/typology"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 
-<Tip>Three-part framework: **Southwest = Adobe (heat); Northeast = Timber (family); Midwest = Earth (ceremony)**. Each tradition solved distinct problems through regional materials and cultural values.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Three-part framework: **Southwest = Adobe (heat); Northeast = Timber (family); Midwest = Earth (ceremony)**. Each tradition solved distinct problems through regional materials and cultural values.
+[/SLATECAMP_UI_BLOCK]
 
 **Pueblo Architecture: Adobe, Stone, and Arid Adaptation**
 
@@ -25,7 +42,11 @@ Construction employed stone (for foundations and walls in some regions) and adob
 
 Modern pueblos—**Taos Pueblo** (Northern New Mexico, continuously inhabited since at least 1350 CE), **Acoma Pueblo** (New Mexico, atop a 111-meter mesa since pre-contact times)—continue adobe construction and multi-story residential organization. These sites remain functional communities, not archaeological ruins, demonstrating architectural traditions spanning centuries with minimal stylistic change—a marker of successful, sustainable design.
 
-<Note>Pueblo architecture is not merely ancient history—Taos Pueblo and Acoma remain continuously inhabited and actively maintained by their communities, making them living examples of pre-contact Indigenous architectural practice, not archaeological artifacts.</Note>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Pueblo architecture is not merely ancient history—Taos Pueblo and Acoma remain continuously inhabited and actively maintained by their communities, making them living examples of pre-contact Indigenous architectural practice, not archaeological artifacts.
+[/SLATECAMP_UI_BLOCK]
 
 **Longhouses: Extended Families and Communal Living**
 
@@ -37,7 +58,11 @@ This design expressed Haudenosaunee social values: communal living (extended fam
 
 **Pacific Northwest** longhouses served different functions. Among peoples like the **Tlingit**, **Haida**, and **Kwakwaka'wakw**, large wooden longhouses (sometimes 30+ meters long) accommodated social hierarchies within single structures. Unlike Haudenosaunee egalitarian division, Pacific Northwest longhouses centralized a high-status family (chief, his wives, slaves) in elevated positions while lower-status individuals occupied peripheral spaces. Carved cedar posts and corner house poles, combined with painted designs, expressed wealth, rank, and clan affiliation. These houses integrated functional dwelling with monumental artistic expression.
 
-<Warn>Critical distinction: Haudenosaunee longhouses expressed egalitarianism (extended family compartments, gender-based but non-hierarchical space); Pacific Northwest longhouses explicitly displayed rank (chiefs elevated, slaves peripheral). Do not treat "longhouse" as a single universal model.</Warn>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Critical distinction: Haudenosaunee longhouses expressed egalitarianism (extended family compartments, gender-based but non-hierarchical space); Pacific Northwest longhouses explicitly displayed rank (chiefs elevated, slaves peripheral). Do not treat "longhouse" as a single universal model.
+[/SLATECAMP_UI_BLOCK]
 
 **Mound Builders: Earthen Architecture and Ritual Landscapes**
 
@@ -54,32 +79,65 @@ Other mound traditions include **Adena** (1000–100 BCE, Ohio valley) and **Hop
 These three traditions—pueblo, longhouse, mound—illustrate that "North American Indigenous architecture" encompasses geographically and culturally specific responses. The Southwest's arid climate shaped adobe and compact aggregated settlement. The Northeast's temperate forest provided timber for post-and-beam and bark cladding. The Midwest's floodplain ecology enabled earth mounding. No single "typical" Indigenous North American building exists; instead, sophisticated environmental adaptation and cultural values produced regional variety.
 
 
-<ArticleMedia id="media-hist-012-03-core-concept" layout="single" type="image" status="placeholder" alt="View of Monks Mound at Cahokia (Illinois, c. 1050–1250 CE), the largest pre-Columbian earthwork north of Mexico — a terraced platform mound rising 30 m covering 6 hectares, demonstrating Mississippian mound-building." caption="Monks Mound — Cahokia Earthworks" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+[SLATECAMP_UI_BLOCK:ui_0005 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-hist-012-03-core-concept", layout="single", type="image", status="placeholder", alt="View of Monks Mound at Cahokia (Illinois, c. 1050–1250 CE), the largest pre-Columbian earthwork north of Mexico — a terraced platform mound rising 30 m covering 6 hectares, demonstrating Mississippian mound-building.", caption="Monks Mound — Cahokia Earthworks", suggestedAsset="Architectural reference image or diagram", placementIntent="Visual reference for architectural period/typology"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 
 ## Key Facts and Testable Items
 
-<WikiExamTable headers={["**Tradition**", "**Site/Region**", "**Date**", "**Construction Material**", "**Key Feature**", "**Cultural Significance**"]} rows={[['["**Pueblo**", "Chaco Canyon (Pueblo Bonito)", "850–1150 CE", "Adobe, stone, timber", "~650 rooms, D-shaped plan, multi-story", "Ancestral Puebloan aggregate society"]', '["**Pueblo**", "Mesa Verde (Cliff Palace)", "600–1300 CE", "Stone, adobe, timber", "Cliff dwelling in natural alcove, 150 rooms, 23 kivas", "Passive solar design, vertical packing"]', '["**Pueblo**", "Taos Pueblo", "1350+ CE (continuous)", "Adobe, timber", "Multi-story residential, traditional continued use", "Ongoing Indigenous occupation and maintenance"]', '["**Pueblo**", "Acoma Pueblo", "Pre-contact–present", "Adobe, stone, timber", "Built atop 111m (365 ft) mesa", "Defensive siting and community continuity"]', '["**Longhouse**", "Haudenosaunee (Five Nations)", "Pre-contact–historic", "Post-and-beam, wattle-and-bark", "50–200+ m length, compartmented interior, central corridor", "Extended family communal living; matrilineal structure"]', '["**Longhouse**", "Pacific Northwest (Tlingit, Haida, Kwakwaka\'wakw)", "Pre-contact–historic", "Cedar timber, carved posts", "Large wooden structures, heraldic house poles, rank expression", "Hierarchical family organization, artistic expression"]', '["**Mound**", "Cahokia (Monks Mound)", "1100–1200 CE (peak)", "Rammed earth", "30m height, 4 tiers, 5.6 ha base", "Ritual/administrative center; astronomical orientation"]', '["**Mound**", "Cahokia complex", "1100–1200 CE", "Rammed earth", "80+ mounds around plazas", "Civic/religious labor organization"]']]} />
+[SLATECAMP_UI_BLOCK:ui_0006 component="WikiExamTable" status="preserved"]
+Extracted summary:
+- Props: headers="{[\"**Tradition**\", \"**Site/Region**\", \"**Date**\", \"**Construction Material**\", \"**Key Feature**\", \"**Cultural Significance**\"]}", rows="{[['[\"**Pueblo**\", \"Chaco Canyon (Pueblo Bonito)\", \"850–1150 CE\", \"Adobe, stone, timber\", \"~650 rooms, D-shaped plan, multi-story\", \"Ancestral Puebloan aggregate society\"]', '[\"**Pueblo**\", \"Mesa Verde (Cliff Palace)\", \"600–1300 CE\", \"Stone, adobe, timber\", \"Cliff dwelling in natural alcove, 150 rooms, 23 kivas\", \"Passive solar design, vertical packing\"]', '[\"**Pueblo**\", \"Taos Pueblo\", \"1350+ CE (continuous)\", \"Adobe, timber\", \"Multi-story residential, traditional continued use\", \"Ongoing Indigenous occupation and maintenance\"]', '[\"**Pueblo**\", \"Acoma Pueblo\", \"Pre-contact–present\", \"Adobe, stone, timber\", \"Built atop 111m (365 ft) mesa\", \"Defensive siting and community continuity\"]', '[\"**Longhouse**\", \"Haudenosaunee (Five Nations)\", \"Pre-contact–historic\", \"Post-and-beam, wattle-and-bark\", \"50–200+ m length, compartmented interior, central corridor\", \"Extended family communal living; matrilineal structure\"]', '[\"**Longhouse**\", \"Pacific Northwest (Tlingit, Haida, Kwakwaka\\'wakw)\", \"Pre-contact–historic\", \"Cedar timber, carved posts\", \"Large wooden structures, heraldic house poles, rank expression\", \"Hierarchical family organization, artistic expression\"]', '[\"**Mound**\", \"Cahokia (Monks Mound)\", \"1100–1200 CE (peak)\", \"Rammed earth\", \"30m height, 4 tiers, 5.6 ha base\", \"Ritual/administrative center; astronomical orientation\"]', '[\"**Mound**\", \"Cahokia complex\", \"1100–1200 CE\", \"Rammed earth\", \"80+ mounds around plazas\", \"Civic/religious labor organization\"]']]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 ## How It's Tested on the LEA
 
-<ExamTip>**Pattern 1: Environmental Adaptation and Material Choice**
-Exams ask how building material and form respond to regional climate. Example: "Adobe construction in Southwestern pueblos serves what environmental advantages compared to solid stone?" (Answer: thermal mass for temperature moderation; lightweight reduces structural demand; local clay availability reduces transport costs; replastering allows maintenance without structural rebuilding). You must link material to performance.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 1: Environmental Adaptation and Material Choice** Exams ask how building material and form respond to regional climate. Example: "Adobe construction in Southwestern pueblos serves what environmental advantages compared to solid stone?" (Answer: thermal mass for temperature moderation; lightweight reduces structural demand; local clay availability reduces transport costs; replastering allows maintenance without structural rebuilding). You must link material to performance.
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>**Pattern 2: Social Organization Expressed in Building Form**
-Questions test whether architecture reflects cultural values. Example: "Haudenosaunee longhouse compartmentation and central corridor arrangement indicate what about kinship and property organization?" (Answer: extended family occupation; gender-based space division; women's control of internal compartments; matrilineal inheritance). Distinguish pueblo aggregation (collective storage, status differentiation) from longhouse compartmentation (family autonomy within shared structure).</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 2: Social Organization Expressed in Building Form** Questions test whether architecture reflects cultural values. Example: "Haudenosaunee longhouse compartmentation and central corridor arrangement indicate what about kinship and property organization?" (Answer: extended family occupation; gender-based space division; women's control of internal compartments; matrilineal inheritance). Distinguish pueblo aggregation (collective storage, status differentiation) from longhouse compartment
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>**Pattern 3: Labor and Monumental Sclea**
-Exams ask what mound construction reveals about political organization. Example: "Monks Mound's multi-stage construction over 300 years and 5.6-hectare base indicate what administrative capability?" (Answer: sustained labor coordination; centralized authority; multi-generational planning; capability to command resource redistribution). Distinguish mound-building from pueblo clustering—different labor scleas and organization.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0009 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 3: Labor and Monumental Sclea** Exams ask what mound construction reveals about political organization. Example: "Monks Mound's multi-stage construction over 300 years and 5.6-hectare base indicate what administrative capability?" (Answer: sustained labor coordination; centralized authority; multi-generational planning; capability to command resource redistribution). Distinguish mound-building from pueblo clustering—different labor scleas and organization.
+[/SLATECAMP_UI_BLOCK]
 
-<Callout>The LEA tests your knowledge of three major North American Indigenous architectural traditions: **pueblo** architecture (Ancestral Puebloans), **longhouses** (Haudenosaunee/Iroquois and Pacific Northwest), and **mound builders** (Mississippian culture). Each represents distinct responses to climate, available materials, and social organization.</Callout>
+[SLATECAMP_UI_BLOCK:ui_0010 component="Callout" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: The LEA tests your knowledge of three major North American Indigenous architectural traditions: **pueblo** architecture (Ancestral Puebloans), **longhouses** (Haudenosaunee/Iroquois and Pacific Northwest), and **mound builders** (Mississippian culture). Each represents distinct responses to climate, available materials, and social organization.
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
-<WikiMistakeCard mistake="Conflating all Indigenous North American architecture as \"tipi\" or \"wigwam.\"" correction="The **tipi** (conical portable tent of Plains nations using buffalo-hide covering) and **wigwam** (small circular shelter of some Northeast nations) are legitimate structures but represent only a fraction of North American Indigenous architecture. Students often miss pueblos, longhouses, and mounds through this reductive assumption." context="Pueblos, longhouses, and mound complexes are monumental, permanent, and architecturally sophisticated—not portable shelters." />
+[SLATECAMP_UI_BLOCK:ui_0011 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Conflating all Indigenous North American architecture as \\", tipi=true, or=true, wigwam=true, correction="The **tipi** (conical portable tent of Plains nations using buffalo-hide covering) and **wigwam** (small circular shelter of some Northeast nations) are legitimate structures but represent only a fraction of North American Indigenous architecture. Students often miss pueblos, longhouses, and mounds through this reductive assumption.", context="Pueblos, longhouses, and mound complexes are monumental, permanent, and architecturally sophisticated—not portable shelters."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeCard mistake="Treating pueblo as ancient artifact rather than living tradition" correction="Taos Pueblo, Acoma, and others remain continuously inhabited, with residents maintaining adobe construction and spatial traditions. These are not archaeological sites—they are functioning communities." context="The LEA may ask about ongoing Indigenous architectural practice, not merely pre-contact ruins." />
+[SLATECAMP_UI_BLOCK:ui_0012 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Treating pueblo as ancient artifact rather than living tradition", correction="Taos Pueblo, Acoma, and others remain continuously inhabited, with residents maintaining adobe construction and spatial traditions. These are not archaeological sites—they are functioning communities.", context="The LEA may ask about ongoing Indigenous architectural practice, not merely pre-contact ruins."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeList mistakes={["Underestimating mound construction labor and precision. Students sometimes treat Mississippian mounds as crude earth piles. Monks Mound's precise geometric form, staged construction, and oriented summit demonstrate sophisticated planning. The labor investment (millions of person-hours) exceeded most pre-Columbian North American projects and rivals Mesoamerican pyramid building in scope.", "Missing the social hierarchy expressed in Pacific Northwest longhouses. Students often treat all longhouses as egalitarian. Pacific Northwest longhouses explicitly expressed rank: chiefs and high-status families occupied elevated central positions; slaves and lower-status individuals occupied peripheral areas. Carved house poles proclaimed clan affiliation and wealth. This differs markedly from Haudenosaunee egalitarianism.", "Ignoring vigas and latillas in pueblo construction details. The wooden-beam system is testable. **Vigas** (primary beams) and **latillas** (secondary branches) created a specific structural order. Understanding this timber frame + adobe wall system is essential for distinguishing pueblo construction from solid-stone techniques or European colonial adobe use."]} />
+[SLATECAMP_UI_BLOCK:ui_0013 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Underestimating mound construction labor and precision. Students sometimes treat Mississippian mounds as crude earth piles. Monks Mound's precise geometric form, staged construction, and oriented summit demonstrate sophisticated planning. The labor investment (millions of person-hours) exceeded most pre-Columbian North American projects and rivals Mesoamerican pyramid building in scope.\", \"Missing the social hierarchy expressed in Pacific Northwest longhouses. Students often treat all longhouses as egalitarian. Pacific Northwest longhouses explicitly expressed rank: chiefs and high-status families occupied elevated central positions; slaves and lower-status individuals occupied peripheral areas. Carved house poles proclaimed clan affiliation and wealth. This differs markedly from Haudenosaunee egalitarianism.\", \"Ignoring vigas and latillas in pueblo construction details. The wooden-beam system is testable. **Vigas** (primary beams) and **latillas** (secondary branches) created a specific structural order. Understanding this timber frame + adobe wall system is essential for distinguishing pueblo construction from solid-stone techniques or European colonial adobe use.\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Terms
 
@@ -103,7 +161,11 @@ Exams ask what mound construction reveals about political organization. Example:
 
 **Monks Mound**: Largest mound at Cahokia; 30 meters high, 5.6-hectare base, four-tiered form; built in two rapid phases (c. 1050–1150 CE) through staged construction.
 
-<ArticleMedia id="media-hist-012-03-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparison of three North American Indigenous architectural traditions: Southwest adobe pueblos (Taos Pueblo, multi-story communal dwellings), Northeast longhouses (Iroquois, post-and-beam timber), and Midwest earthworks (Cahokia Monks Mound, rammed earth ritual center)." caption="North American Indigenous Architecture — Three Traditions" suggestedAsset="Style comparison illustration" placementIntent="Style comparison for architectural period" />
+[SLATECAMP_UI_BLOCK:ui_0014 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-hist-012-03-core-concept-timeline", layout="single", type="image", status="placeholder", alt="Comparison of three North American Indigenous architectural traditions: Southwest adobe pueblos (Taos Pueblo, multi-story communal dwellings), Northeast longhouses (Iroquois, post-and-beam timber), and Midwest earthworks (Cahokia Monks Mound, rammed earth ritual center).", caption="North American Indigenous Architecture — Three Traditions", suggestedAsset="Style comparison illustration", placementIntent="Style comparison for architectural period"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 

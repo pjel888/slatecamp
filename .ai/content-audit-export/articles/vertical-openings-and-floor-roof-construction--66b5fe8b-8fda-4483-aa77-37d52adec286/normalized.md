@@ -217,10 +217,10 @@ The 120 kg/sq.m figure in Sec. 1206 applies to the **vertical projection** of th
 
 An architect is designing the second-floor opening for escalators in a large shopping mall in Cebu City. The escalator opening is 3.60 m × 1.20 m (plan dimensions). Which of the following correctly describes the required passive and active fire protection for this opening per PD 1096, Rule XII, Sec. 1204?
 
-A. A 150 mm draft curtain on two sides (parallel to travel direction) and sprinklers at 2.00 m spacing within 800 mm of the curtain  
-B. A 200 mm draft curtain on all sides and automatic sprinklers within 600 mm of the curtain at maximum 1.80 m center-to-center spacing  
-C. Full shaft enclosure of 2-hour fire-resistive construction with a 3-hour fire assembly at each escalator landing  
-D. A 200 mm draft curtain on all sides only — no sprinklers required if the mall has a central fire alarm system  
+A. A 150 mm draft curtain on two sides (parallel to travel direction) and sprinklers at 2.00 m spacing within 800 mm of the curtain
+B. A 200 mm draft curtain on all sides and automatic sprinklers within 600 mm of the curtain at maximum 1.80 m center-to-center spacing
+C. Full shaft enclosure of 2-hour fire-resistive construction with a 3-hour fire assembly at each escalator landing
+D. A 200 mm draft curtain on all sides only — no sprinklers required if the mall has a central fire alarm system
 
 > **Answer: B — 200mm draft curtain on all sides and sprinklers within 600mm at max 1.80m c/c**
 >
@@ -232,10 +232,10 @@ D. A 200 mm draft curtain on all sides only — no sprinklers required if the ma
 
 A firewall is required to achieve a 3-hour fire-resistive occupancy separation between a Group H (storage) warehouse and a Group B (residential) condominium tower that share a common wall. The wall is 20.00 m long. A building manager requests a 12.00 sq.m double door opening and a 4.00 sq.m service window in that wall. Are these openings compliant with PD 1096, Rule XII, Sec. 1204?
 
-A. Yes — the total opening (16.00 sq.m) is less than 25% of the wall area  
-B. No — the 12.00 sq.m double door exceeds the maximum single opening of 10.00 sq.m  
-C. Yes — as long as 3-hour fire assemblies are installed at both openings  
-D. No — no openings are permitted in a 3-hour occupancy separation wall under any circumstances  
+A. Yes — the total opening (16.00 sq.m) is less than 25% of the wall area
+B. No — the 12.00 sq.m double door exceeds the maximum single opening of 10.00 sq.m
+C. Yes — as long as 3-hour fire assemblies are installed at both openings
+D. No — no openings are permitted in a 3-hour occupancy separation wall under any circumstances
 
 > **Answer: B — The 12.00 sq.m double door exceeds the 10.00 sq.m maximum single opening limit**
 >
@@ -251,10 +251,10 @@ Extracted summary:
 
 A structural engineer proposes a minimum design wind load of 95 kg/sq.m on the vertical projection of the roof for a new 3-storey school building in a low-wind-hazard municipality in Mindanao. Is this compliant with PD 1096, Rule XII, Sec. 1206, and if not, what is the minimum required value?
 
-A. Compliant — local wind hazard surveys may reduce the minimum load below 120 kg/sq.m  
-B. Non-compliant — the minimum is 150 kg/sq.m for educational occupancies per Sec. 1206  
-C. Non-compliant — Sec. 1206 requires a minimum of 120 kg/sq.m on the vertical projection regardless of location  
-D. Compliant — Sec. 1206 applies only to buildings taller than 3 storeys  
+A. Compliant — local wind hazard surveys may reduce the minimum load below 120 kg/sq.m
+B. Non-compliant — the minimum is 150 kg/sq.m for educational occupancies per Sec. 1206
+C. Non-compliant — Sec. 1206 requires a minimum of 120 kg/sq.m on the vertical projection regardless of location
+D. Compliant — Sec. 1206 applies only to buildings taller than 3 storeys
 
 > **Answer: C — Non-compliant; the minimum is 120 kg/sq.m on the vertical projection**
 >

@@ -1,7 +1,7 @@
 {
   "article_id": "ae4bdc43-1451-4aa5-8c12-65283f4bbdfd",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:edba1a6290ac44e5aafff298bafbcccbe80fe7601c72fbf8d4ffc30479f1927d",
+  "linked_questions_hash": "sha256:e23b37af0606c3b15686743222ca698da3254bea992d538620f9539761a9ef68",
   "question_count": 10,
   "questions": [
     {
@@ -55,26 +55,26 @@
       "content_hash": "sha256:3ef7f0204651281fdba701b595a8bc431210ad396844667bfac6db0fcc168aa9"
     },
     {
-      "question_id": "39ca179b-d99c-4af0-8dc9-ea438d4895e2",
+      "question_id": "1c94b42d-f325-4780-8ee6-4bb31ffae4ef",
       "article_id": "ae4bdc43-1451-4aa5-8c12-65283f4bbdfd",
       "topic_id": "b2ed3165-9e0f-45d6-8031-12b470d82ef3",
-      "text": "A Japanese architect seeks to practice temporarily in the Philippines. Japan grants Philippine architects reciprocal rights. What must be established?",
+      "text": "What is the scope of a temporary permit for foreign architects?",
       "options": [
         {
           "id": "a",
-          "text": "Only that the architect holds a valid home country license, which is necessary but not sufficient for practice rights"
+          "text": "Open-ended authorization for all projects, allowing unrestricted practice across various architectural domains"
         },
         {
           "id": "b",
-          "text": "Reciprocity status allowing the endorsement; documented equal treatment of Filipinos"
+          "text": "Specific to a particular project for defined duration"
         },
         {
           "id": "c",
-          "text": "That the architect speaks English fluently, although language proficiency is not a formal requirement for reciprocity"
+          "text": "Permanent entry into Philippine architectural practice, granting full rights and privileges"
         },
         {
           "id": "d",
-          "text": "Prior work experience in the Philippines, which is not a requirement for establishing reciprocity"
+          "text": "Valid only for consulting activities, limiting involvement to advisory roles without direct project execution"
         }
       ],
       "correct_option_id": "b",
@@ -83,26 +83,26 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Ignores reciprocity check—license validity is separate from the conditional reciprocity verification.",
-        "c": "Attributes irrelevant requirement—language proficiency is not part of formal reciprocity or endorsement.",
-        "d": "Mistakes precedent for requirement—prior experience is not a reciprocity or endorsement requirement.",
-        "correct": "The architect must first establish reciprocity status by proving Japan grants Filipino architects equal rights to practice; then obtain formal endorsement from Japanese authorities.",
-        "takeaway": "Before a Japanese architect can practice in the Philippines, reciprocal rights for Filipinos in Japan must be verified and officially endorsed."
+        "a": "Overextends permit scope—temporary permits are limited to designated projects, not all projects.",
+        "c": "Conflates temporary with permanent—temporary permits are explicit about their time limit and cannot become permanent.",
+        "d": "Restricts scope unnecessarily—temporary permits cover project execution, not just consulting.",
+        "correct": "Temporary permits authorize foreign architects to work on specific projects for defined durations connected to that project's completion.",
+        "takeaway": "Temporary permits are project-specific and expire upon project completion—they do not authorize open-ended practice."
       },
       "explanation": null,
       "code_citation": "RA 9266",
-      "bloom_level": "analyze",
+      "bloom_level": "remember",
       "application_context": "code_interpretation",
       "practice_context": [],
-      "difficulty": 0.9,
+      "difficulty": 0.3,
       "difficulty_rating": null,
       "discrimination_rating": null,
       "is_assessment": false,
-      "model_id": "ALE-PRAC-FRM-005-009",
+      "model_id": "ALE-PRAC-FRM-005-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:48.361702+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:31f2a227e8d6bed7219acd2deb801ce0ad8c1878668f89e9c2e95980d0ab4b98"
+      "content_hash": "sha256:e3ed9f7e6a00189d4522c4d6632d19c83ae96154a118b36f69a12f8450c734aa"
     },
     {
       "question_id": "ce906996-8079-4d29-be28-ff0467120340",
@@ -405,26 +405,26 @@
       "content_hash": "sha256:eec208b8a7c8024d544f18c3281bceb8da430daa5c14be48cb547a115791420a"
     },
     {
-      "question_id": "1c94b42d-f325-4780-8ee6-4bb31ffae4ef",
+      "question_id": "39ca179b-d99c-4af0-8dc9-ea438d4895e2",
       "article_id": "ae4bdc43-1451-4aa5-8c12-65283f4bbdfd",
       "topic_id": "b2ed3165-9e0f-45d6-8031-12b470d82ef3",
-      "text": "What is the scope of a temporary permit for foreign architects?",
+      "text": "A Japanese architect seeks to practice temporarily in the Philippines. Japan grants Philippine architects reciprocal rights. What must be established?",
       "options": [
         {
           "id": "a",
-          "text": "Open-ended authorization for all projects, allowing unrestricted practice across various architectural domains"
+          "text": "Only that the architect holds a valid home country license, which is necessary but not sufficient for practice rights"
         },
         {
           "id": "b",
-          "text": "Specific to a particular project for defined duration"
+          "text": "Reciprocity status allowing the endorsement; documented equal treatment of Filipinos"
         },
         {
           "id": "c",
-          "text": "Permanent entry into Philippine architectural practice, granting full rights and privileges"
+          "text": "That the architect speaks English fluently, although language proficiency is not a formal requirement for reciprocity"
         },
         {
           "id": "d",
-          "text": "Valid only for consulting activities, limiting involvement to advisory roles without direct project execution"
+          "text": "Prior work experience in the Philippines, which is not a requirement for establishing reciprocity"
         }
       ],
       "correct_option_id": "b",
@@ -433,26 +433,26 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Overextends permit scope—temporary permits are limited to designated projects, not all projects.",
-        "c": "Conflates temporary with permanent—temporary permits are explicit about their time limit and cannot become permanent.",
-        "d": "Restricts scope unnecessarily—temporary permits cover project execution, not just consulting.",
-        "correct": "Temporary permits authorize foreign architects to work on specific projects for defined durations connected to that project's completion.",
-        "takeaway": "Temporary permits are project-specific and expire upon project completion—they do not authorize open-ended practice."
+        "a": "Ignores reciprocity check—license validity is separate from the conditional reciprocity verification.",
+        "c": "Attributes irrelevant requirement—language proficiency is not part of formal reciprocity or endorsement.",
+        "d": "Mistakes precedent for requirement—prior experience is not a reciprocity or endorsement requirement.",
+        "correct": "The architect must first establish reciprocity status by proving Japan grants Filipino architects equal rights to practice; then obtain formal endorsement from Japanese authorities.",
+        "takeaway": "Before a Japanese architect can practice in the Philippines, reciprocal rights for Filipinos in Japan must be verified and officially endorsed."
       },
-      "explanation": null,
+      "explanation": "Ignores reciprocity check—license validity is separate from the conditional reciprocity verification. Attributes irrelevant requirement—language proficiency is not part of formal reciprocity or endorsement. Mistakes precedent for requirement—prior experience is not a reciprocity or endorsement requirement. The architect must first establish reciprocity status by proving Japan grants Filipino architects equal rights to practice; then obtain formal endorsement from Japanese authorities. Before a Japanese architect can practice in the Philippines, reciprocal rights for Filipinos in Japan must be verified and officially endorsed.",
       "code_citation": "RA 9266",
-      "bloom_level": "remember",
+      "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [],
-      "difficulty": 0.3,
+      "difficulty": 0.9,
       "difficulty_rating": null,
       "discrimination_rating": null,
       "is_assessment": false,
-      "model_id": "ALE-PRAC-FRM-005-002",
+      "model_id": "ALE-PRAC-FRM-005-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:48.361702+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:e3ed9f7e6a00189d4522c4d6632d19c83ae96154a118b36f69a12f8450c734aa"
+      "updated_at": "2026-05-06T15:03:06.916575+00:00",
+      "content_hash": "sha256:94700c849a9a7f9ec361d50b6e4dad32caa316cd49a31863a639e6f5f2aef4bd"
     },
     {
       "question_id": "ec0b122b-f616-4935-85a7-bcdae844f387",

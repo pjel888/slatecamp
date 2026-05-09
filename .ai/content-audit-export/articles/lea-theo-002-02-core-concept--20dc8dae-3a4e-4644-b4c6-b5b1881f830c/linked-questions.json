@@ -1,30 +1,30 @@
 {
   "article_id": "20dc8dae-3a4e-4644-b4c6-b5b1881f830c",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:fdaaa1e7788c3a8e8ffb6fad2fc76b27d41400e867b48bf5370864e222e3c1d1",
+  "linked_questions_hash": "sha256:3f31ea18fe52d0d4323c51ad5211d5f67523603b941c4e2df614e73d316238f5",
   "question_count": 13,
   "questions": [
     {
-      "question_id": "c7fcc483-6922-4a4d-9e62-050bbf1beb59",
+      "question_id": "bbe9df67-b4b1-458b-902c-8c8b0ec02a60",
       "article_id": "20dc8dae-3a4e-4644-b4c6-b5b1881f830c",
       "topic_id": "379d0ccc-cb9c-4bc8-aaa1-93127ce1782a",
-      "text": "Character in architecture, according to Ching, derives from which sources?",
+      "text": "Proportion, as Ching defines it, is best described as:",
       "options": [
         {
           "id": "a",
-          "text": "The site context and surrounding urban fabric"
+          "text": "The mathematical ratio of dimensions, typically expressed as 1:2 or the golden ratio, providing a basis for harmonious design."
         },
         {
           "id": "b",
-          "text": "The structural system and material expression only"
+          "text": "The feeling of scale relative to human dimensions and surrounding context, influencing the perception of space and form."
         },
         {
           "id": "c",
-          "text": "The building's style period and ornamental vocabulary"
+          "text": "The symmetrical arrangement of identical forms on opposite sides of an axis, creating balance and visual stability in design."
         },
         {
           "id": "d",
-          "text": "Functional, associated, and personal sources"
+          "text": "The comparison the eye makes between size, shape, and tone of different elements and their parts to the whole"
         }
       ],
       "correct_option_id": "d",
@@ -33,13 +33,13 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Site response is design strategy, not character as Ching defines it.",
-        "b": "While structure and material contribute to functional character, they don't encompass character alone.",
-        "c": "Style and ornament are part of associated character but not the complete definition.",
-        "correct": "Ching identifies three sources of character: functional character (from purpose and supporting systems), associated character (from cultural/historical precedent and meaning), and personal character (from designer's interpretive choices). All three integrate in strong architecture.",
-        "takeaway": "All three integrate in strong architecture."
+        "a": "While ratios are part of proportion, Ching's definition is broader than mathematics alone.",
+        "b": "That is the definition of scale.",
+        "c": "That is the definition of symmetrical balance, not proportion.",
+        "correct": "Ching's definition is comprehensive: proportion addresses the comparison between parts and whole, and among various parts. It includes both relative proportion (within a composition) and absolute dimensions, not just mathematical ratios.",
+        "takeaway": "It includes both relative proportion (within a composition) and absolute dimensions, not just mathematical ratios."
       },
-      "explanation": null,
+      "explanation": "While ratios are part of proportion, Ching's definition is broader than mathematics alone. That is the definition of scale. That is the definition of symmetrical balance, not proportion. Ching's definition is comprehensive: proportion addresses the comparison between parts and whole, and among various parts. It includes both relative proportion (within a composition) and absolute dimensions, not just mathematical ratios. It includes both relative proportion (within a composition) and absolute dimensions, not just mathematical ratios.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -50,115 +50,63 @@
       "difficulty_rating": null,
       "discrimination_rating": null,
       "is_assessment": false,
-      "model_id": "ALE-THEO-002-02-009",
+      "model_id": "ALE-THEO-002-02-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.522336+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:c22b1f71663fe65decf03cee1e7684e1e19d0c41e39463127c108f2a84296f9a"
+      "updated_at": "2026-05-06T15:56:01.790932+00:00",
+      "content_hash": "sha256:dda1b61b016c98dbd10530a52eb679abe61ec701098022ae690fcfef57b24cb0"
     },
     {
-      "question_id": "070e8fce-6792-4660-b5e3-5ac80df2c323",
+      "question_id": "a2273978-7ae3-403a-933f-a7096bb57198",
       "article_id": "20dc8dae-3a4e-4644-b4c6-b5b1881f830c",
       "topic_id": "379d0ccc-cb9c-4bc8-aaa1-93127ce1782a",
-      "text": "How do the six design principles (contrast, rhythm, proportion, balance, sclea, character) interrelate in a coherent architectural design?",
+      "text": "Which statement correctly distinguishes between unaccented and accented rhythm?",
       "options": [
         {
           "id": "a",
-          "text": "They operate independently; a design uses one principle as primary and ignores the others, focusing solely on its impact"
+          "text": "Unaccented rhythm is found in modern design; accented rhythm is found in classical design, often emphasizing symmetry and balance"
         },
         {
           "id": "b",
-          "text": "They function simultaneously and interdependently; each principle shapes how others are perceived and experienced"
+          "text": "Unaccented rhythm has random spacing; accented rhythm has regular spacing, creating a predictable pattern that guides the viewer's eye"
         },
         {
           "id": "c",
-          "text": "They are applied sequentially—first contrast, then rhythm, then proportion, etc., following a strict order of application"
+          "text": "Unaccented rhythm repeats one element; accented rhythm repeats multiple elements, introducing complexity and visual interest"
         },
         {
           "id": "d",
-          "text": "They apply only to facades; interior spatial design ignores these principles, focusing instead on functionality"
+          "text": "Unaccented rhythm uses identical units at equal intervals; accented rhythm introduces variation or emphasis at intervals"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "d",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "All six principles operate in coherent design, not independently.",
-        "c": "Principles are not applied sequentially but simultaneously during design thinking.",
-        "d": "Principles apply throughout—facades, interiors, spatial sequences, all employ these principles.",
-        "correct": "These principles work together: balance affects how contrast is perceived; rhythm affects scale feeling; character influences proportional choices. Coherent design integrates all six simultaneously, with each principle reinforcing others.",
-        "takeaway": "Coherent design integrates all six simultaneously, with each principle reinforcing others."
+        "a": "Both classical and modern architecture employ both types.",
+        "b": "Random spacing is not rhythm at all—rhythm requires regularity.",
+        "c": "Both use repetition; the distinction is whether the rhythm is regular without variation (unaccented) or has emphasis/variation (accented).",
+        "correct": "Ching precisely defines these: unaccented rhythm = identical units at equal intervals (calm, measured); accented rhythm = varying intervals or emphasized units (visual interest, focal points). Both require regularity, but accented introduces variation.",
+        "takeaway": "Both require regularity, but accented introduces variation."
       },
-      "explanation": null,
+      "explanation": "Both classical and modern architecture employ both types. Random spacing is not rhythm at all—rhythm requires regularity. Both use repetition; the distinction is whether the rhythm is regular without variation (unaccented) or has emphasis/variation (accented). Ching precisely defines these: unaccented rhythm = identical units at equal intervals (calm, measured); accented rhythm = varying intervals or emphasized units (visual interest, focal points). Both require regularity, but accented introduces variation. Both require regularity, but accented introduces variation.",
       "code_citation": null,
-      "bloom_level": "analyze",
-      "application_context": "code_interpretation",
-      "practice_context": [
-        "SYS"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-002-02-012",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:53.522336+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:a9bbef44ccd467060f6fbfb77ace85ebd797009f187bc106a055f8079b0d2266"
-    },
-    {
-      "question_id": "65aaff70-bf51-46d8-a5aa-5b8905c4b75f",
-      "article_id": "20dc8dae-3a4e-4644-b4c6-b5b1881f830c",
-      "topic_id": "379d0ccc-cb9c-4bc8-aaa1-93127ce1782a",
-      "text": "A designer creates a building facade with equally spaced columns supporting a uniform roof line, creating a calm, measured visual progression. Which design principle is this exemplifying?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Unaccented rhythm, through regular, equal intervals without variation"
-        },
-        {
-          "id": "b",
-          "text": "Contrast, by placing solid columns against an open sky, highlighting the difference between the built and natural environment"
-        },
-        {
-          "id": "c",
-          "text": "Asymmetrical balance, distributing visual weight unevenly to create dynamic tension and interest"
-        },
-        {
-          "id": "d",
-          "text": "Scale, by relating column proportions to human dimensions, ensuring the structure feels approachable and relatable"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "b": "While contrast exists (columns vs. sky), the primary principle demonstrated is rhythmic repetition.",
-        "c": "Equal spacing creates balanced, not asymmetrical, distribution.",
-        "d": "While scale may be a design consideration, the primary organizing principle demonstrated is unaccented rhythm.",
-        "correct": "Equally spaced, identical columns at regular intervals create unaccented rhythm—the pattern is regular and measured without emphasized focal points, generating calm visual progression.",
-        "takeaway": "Equally spaced, identical columns at regular intervals create unaccented rhythm—the pattern is regular and measured without emphasized focal points, generating calm visual progression."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "apply",
+      "bloom_level": "remember",
       "application_context": "design_application",
       "practice_context": [
-        "APP"
+        "CMP"
       ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
       "is_assessment": false,
-      "model_id": "ALE-THEO-002-02-004",
+      "model_id": "ALE-THEO-002-02-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.522336+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:c941ce0c1f5317481bb6a9541d4a3e6ee0f7a2096d824302ae72eb6877686123"
+      "updated_at": "2026-05-06T15:56:02.06167+00:00",
+      "content_hash": "sha256:700df72f41b35c1230ea3ea31584bbfa2124055f3b6e0b9e0dab739258b88c98"
     },
     {
       "question_id": "4fb2ef31-a7ae-43a0-b6e2-6b3a58291e51",
@@ -195,7 +143,7 @@
         "correct": "Symmetrical balance, also called axial balance, places identical or equivalent forms on opposite sides of a central axis, creating formal, static, dignified compositions common in classical and monumental architecture.",
         "takeaway": "Symmetrical balance, also called axial balance, places identical or equivalent forms on opposite sides of a central axis, creating formal, static, dignified compositions common in classical and monumental architecture."
       },
-      "explanation": null,
+      "explanation": "Radial balance distributes forms equally around a central point, not about an axis. Dynamic balance' is not standard terminology in Ching's framework. Asymmetrical balance distributes unequal elements while maintaining visual equilibrium. Symmetrical balance, also called axial balance, places identical or equivalent forms on opposite sides of a central axis, creating formal, static, dignified compositions common in classical and monumental architecture. Symmetrical balance, also called axial balance, places identical or equivalent forms on opposite sides of a central axis, creating formal, static, dignified compositions common in classical and monumental architecture.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -209,30 +157,82 @@
       "model_id": "ALE-THEO-002-02-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.522336+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:667cffc57ac4dfc24b305ef6489f7c2ff783d881d3520ab6c0a0db06b4aa20ec"
+      "updated_at": "2026-05-06T15:56:01.65631+00:00",
+      "content_hash": "sha256:a8ee89e2d547f2369f3cbe50728f623cff33be505fa4dc1be0cef56795e5343a"
     },
     {
-      "question_id": "bbe9df67-b4b1-458b-902c-8c8b0ec02a60",
+      "question_id": "eac57dbd-3cf6-4d65-b4c5-c0e4ef5550b3",
       "article_id": "20dc8dae-3a4e-4644-b4c6-b5b1881f830c",
       "topic_id": "379d0ccc-cb9c-4bc8-aaa1-93127ce1782a",
-      "text": "Proportion, as Ching defines it, is best described as:",
+      "text": "How do radial and symmetrical balance differ in their organizing logic?",
       "options": [
         {
           "id": "a",
-          "text": "The mathematical ratio of dimensions, typically expressed as 1:2 or the golden ratio, providing a basis for harmonious design."
+          "text": "Radial balance uses identical elements; symmetrical balance uses equivalent elements on either side of the axis"
         },
         {
           "id": "b",
-          "text": "The feeling of scale relative to human dimensions and surrounding context, influencing the perception of space and form."
+          "text": "Symmetrical balance organizes about a central axis; radial balance distributes forms around a central point, creating 360-degree balance"
         },
         {
           "id": "c",
-          "text": "The symmetrical arrangement of identical forms on opposite sides of an axis, creating balance and visual stability in design."
+          "text": "Radial balance is about an axis; symmetrical balance is around a point — the reverse of standard definitions"
         },
         {
           "id": "d",
-          "text": "The comparison the eye makes between size, shape, and tone of different elements and their parts to the whole"
+          "text": "Radial balance is formal; symmetrical balance is informal and allows greater compositional freedom"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Both can use identical or equivalent elements; that doesn't distinguish them.",
+        "c": "Reversed—radial is around a point; symmetrical is about an axis.",
+        "d": "Both can be formal or informal depending on context.",
+        "correct": "This is the critical distinction: symmetrical (axial) balance is about a LINE (axis), with forms mirrored across it; radial balance is about a POINT, with forms distributed equally in all directions (like spokes from a hub). Radial appears balanced from all directions; symmetrical appears balanced across an axis only.",
+        "takeaway": "Radial appears balanced from all directions; symmetrical appears balanced across an axis only."
+      },
+      "explanation": "Both can use identical or equivalent elements; that doesn't distinguish them. Reversed—radial is around a point; symmetrical is about an axis. Both can be formal or informal depending on context. This is the critical distinction: symmetrical (axial) balance is about a LINE (axis), with forms mirrored across it; radial balance is about a POINT, with forms distributed equally in all directions (like spokes from a hub). Radial appears balanced from all directions; symmetrical appears balanced across an axis only. Radial appears balanced from all directions; symmetrical appears balanced across an axis only.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-02-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "updated_at": "2026-05-06T15:56:02.182377+00:00",
+      "content_hash": "sha256:ef8a1a30be87d14d9a996c1fe71837e783a30e8ad7e01edc3df94954aa6981a2"
+    },
+    {
+      "question_id": "5aa07de0-049d-4613-a3c8-25b5de25af34",
+      "article_id": "20dc8dae-3a4e-4644-b4c6-b5b1881f830c",
+      "topic_id": "379d0ccc-cb9c-4bc8-aaa1-93127ce1782a",
+      "text": "Contrast in architectural design is best defined as:",
+      "options": [
+        {
+          "id": "a",
+          "text": "The feeling of grandeur and monumentality relative to human scale, often achieved through large-scale elements"
+        },
+        {
+          "id": "b",
+          "text": "Equality in the distribution of visual weight within a composition, ensuring balance and harmony"
+        },
+        {
+          "id": "c",
+          "text": "The repetition of lines, planes, and forms in a regular sequence, creating rhythm and unity"
+        },
+        {
+          "id": "d",
+          "text": "A comparison showing the differences between two or more elements through opposition"
         }
       ],
       "correct_option_id": "d",
@@ -241,13 +241,13 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "While ratios are part of proportion, Ching's definition is broader than mathematics alone.",
-        "b": "That is the definition of scale.",
-        "c": "That is the definition of symmetrical balance, not proportion.",
-        "correct": "Ching's definition is comprehensive: proportion addresses the comparison between parts and whole, and among various parts. It includes both relative proportion (within a composition) and absolute dimensions, not just mathematical ratios.",
-        "takeaway": "It includes both relative proportion (within a composition) and absolute dimensions, not just mathematical ratios."
+        "a": "That is the definition of scale.",
+        "b": "That is the definition of balance.",
+        "c": "That is the definition of rhythm, not contrast.",
+        "correct": "According to Ching, contrast is comparison showing differences—a vertical line contrasts with horizontal; solid wall contrasts with transparent opening. It creates visual interest and emphasis through opposition.",
+        "takeaway": "It creates visual interest and emphasis through opposition."
       },
-      "explanation": null,
+      "explanation": "That is the definition of scale. That is the definition of balance. That is the definition of rhythm, not contrast. According to Ching, contrast is comparison showing differences—a vertical line contrasts with horizontal; solid wall contrasts with transparent opening. It creates visual interest and emphasis through opposition. It creates visual interest and emphasis through opposition.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -258,11 +258,271 @@
       "difficulty_rating": null,
       "discrimination_rating": null,
       "is_assessment": false,
-      "model_id": "ALE-THEO-002-02-003",
+      "model_id": "ALE-THEO-002-02-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.522336+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:92dc903772c3e5b703deab7b4ac5a6d0038e620585bc09dafff166d4ca389703"
+      "updated_at": "2026-05-06T15:58:59.943345+00:00",
+      "content_hash": "sha256:8b18ab89f444edce7957a942b9990a150c2c295c8d34b20bb1dc3f06e75bad54"
+    },
+    {
+      "question_id": "ad6b4f63-76ca-4fa4-8545-912a79ef59c3",
+      "article_id": "20dc8dae-3a4e-4644-b4c6-b5b1881f830c",
+      "topic_id": "379d0ccc-cb9c-4bc8-aaa1-93127ce1782a",
+      "text": "Sclea, as a design principle, is best defined as:",
+      "options": [
+        {
+          "id": "a",
+          "text": "The mathematical ratio governing proportions within a facade, ensuring visual harmony"
+        },
+        {
+          "id": "b",
+          "text": "The relationship between a building and its surrounding site context, influencing perception"
+        },
+        {
+          "id": "c",
+          "text": "The absolute dimensions of a building in meters or feet, which determine its physical presence"
+        },
+        {
+          "id": "d",
+          "text": "The feeling of grandeur, dignity, and monumentality conveyed by size relative to human dimensions and to other elements"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "That describes proportioning systems.",
+        "b": "That is site response, not scale as a design principle.",
+        "c": "Absolute dimensions are measurements, not scale as a design principle.",
+        "correct": "Ching defines scale as the feeling conveyed by size and proportion relative to human body and to other elements. A massive building can feel small-scaled if subdivided into human-sized parts; a small building can feel monumental if proportioned generously. Scale is perception, not absolute size.",
+        "takeaway": "Scale is perception, not absolute size."
+      },
+      "explanation": "That describes proportioning systems. That is site response, not scale as a design principle. Absolute dimensions are measurements, not scale as a design principle. Ching defines scale as the feeling conveyed by size and proportion relative to human body and to other elements. A massive building can feel small-scaled if subdivided into human-sized parts; a small building can feel monumental if proportioned generously. Scale is perception, not absolute size. Scale is perception, not absolute size.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-02-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "updated_at": "2026-05-06T15:59:00.098983+00:00",
+      "content_hash": "sha256:4abfd5e948732e7873c8b31bb25df1ef8ae49df09518c7ee6e62524b35d10508"
+    },
+    {
+      "question_id": "af0c92b1-648b-43c4-86b9-00bc67352139",
+      "article_id": "20dc8dae-3a4e-4644-b4c6-b5b1881f830c",
+      "topic_id": "379d0ccc-cb9c-4bc8-aaa1-93127ce1782a",
+      "text": "A pitched roof on a residential building is primarily an expression of which type of character?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Functional character, because pitch sheds water and snow, preventing accumulation and potential damage."
+        },
+        {
+          "id": "b",
+          "text": "Personal character, because the designer chose this roof form based on aesthetic preferences and design vision."
+        },
+        {
+          "id": "c",
+          "text": "Associated character, because pitched roofs carry cultural associations with domestic permanence and tradition"
+        },
+        {
+          "id": "d",
+          "text": "Structural character, because roof pitch resists wind loads, contributing to the building's overall stability."
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Function is one level, but the cultural association is the primary character message.",
+        "b": "While personal, the designer's choice to use pitched roof is responding to cultural associations.",
+        "d": "Structural function is secondary to the cultural/historical association the form carries.",
+        "correct": "A pitched roof is associated character—it evokes cultural memory and historical precedent of domestic architecture. While it functions to shed water (functional character) and the designer made the choice (personal), the primary character it communicates is cultural/historical association with home and tradition.",
+        "takeaway": "While it functions to shed water (functional character) and the designer made the choice (personal), the primary character it communicates is cultural/historical association with home and tradition."
+      },
+      "explanation": "Function is one level, but the cultural association is the primary character message. While personal, the designer's choice to use pitched roof is responding to cultural associations. Structural function is secondary to the cultural/historical association the form carries. A pitched roof is associated character—it evokes cultural memory and historical precedent of domestic architecture. While it functions to shed water (functional character) and the designer made the choice (personal), the primary character it communicates is cultural/historical association with home and tradition. While it functions to shed water (functional character) and the designer made the choice (personal), the primary character it communicates is cultural/historical association with home and tradition.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-02-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "updated_at": "2026-05-06T15:59:00.217628+00:00",
+      "content_hash": "sha256:d3c23407c361c56a9c118df1ef0f9c33a8d295c79969b4ea8c03cd5021c80007"
+    },
+    {
+      "question_id": "c7fcc483-6922-4a4d-9e62-050bbf1beb59",
+      "article_id": "20dc8dae-3a4e-4644-b4c6-b5b1881f830c",
+      "topic_id": "379d0ccc-cb9c-4bc8-aaa1-93127ce1782a",
+      "text": "Character in architecture, according to Ching, derives from which sources?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The site context and surrounding urban fabric"
+        },
+        {
+          "id": "b",
+          "text": "The structural system and material expression only"
+        },
+        {
+          "id": "c",
+          "text": "The building's style period and ornamental vocabulary"
+        },
+        {
+          "id": "d",
+          "text": "Functional, associated, and personal sources"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Site response is design strategy, not character as Ching defines it.",
+        "b": "While structure and material contribute to functional character, they don't encompass character alone.",
+        "c": "Style and ornament are part of associated character but not the complete definition.",
+        "correct": "Ching identifies three sources of character: functional character (from purpose and supporting systems), associated character (from cultural/historical precedent and meaning), and personal character (from designer's interpretive choices). All three integrate in strong architecture.",
+        "takeaway": "All three integrate in strong architecture."
+      },
+      "explanation": "Site response is design strategy, not character as Ching defines it. While structure and material contribute to functional character, they don't encompass character alone. Style and ornament are part of associated character but not the complete definition. Ching identifies three sources of character: functional character (from purpose and supporting systems), associated character (from cultural/historical precedent and meaning), and personal character (from designer's interpretive choices). All three integrate in strong architecture. All three integrate in strong architecture.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-02-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "updated_at": "2026-05-06T15:56:01.256857+00:00",
+      "content_hash": "sha256:ddf9eae82e314004874b9c7452960caab860ae44e30bc938dfa93241e227cbab"
+    },
+    {
+      "question_id": "070e8fce-6792-4660-b5e3-5ac80df2c323",
+      "article_id": "20dc8dae-3a4e-4644-b4c6-b5b1881f830c",
+      "topic_id": "379d0ccc-cb9c-4bc8-aaa1-93127ce1782a",
+      "text": "How do the six design principles (contrast, rhythm, proportion, balance, sclea, character) interrelate in a coherent architectural design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They operate independently; a design uses one principle as primary and ignores the others, focusing solely on its impact"
+        },
+        {
+          "id": "b",
+          "text": "They function simultaneously and interdependently; each principle shapes how others are perceived and experienced"
+        },
+        {
+          "id": "c",
+          "text": "They are applied sequentially—first contrast, then rhythm, then proportion, etc., following a strict order of application"
+        },
+        {
+          "id": "d",
+          "text": "They apply only to facades; interior spatial design ignores these principles, focusing instead on functionality"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "All six principles operate in coherent design, not independently.",
+        "c": "Principles are not applied sequentially but simultaneously during design thinking.",
+        "d": "Principles apply throughout—facades, interiors, spatial sequences, all employ these principles.",
+        "correct": "These principles work together: balance affects how contrast is perceived; rhythm affects scale feeling; character influences proportional choices. Coherent design integrates all six simultaneously, with each principle reinforcing others.",
+        "takeaway": "Coherent design integrates all six simultaneously, with each principle reinforcing others."
+      },
+      "explanation": "All six principles operate in coherent design, not independently. Principles are not applied sequentially but simultaneously during design thinking. Principles apply throughout—facades, interiors, spatial sequences, all employ these principles. These principles work together: balance affects how contrast is perceived; rhythm affects scale feeling; character influences proportional choices. Coherent design integrates all six simultaneously, with each principle reinforcing others. Coherent design integrates all six simultaneously, with each principle reinforcing others.",
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "SYS"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-02-012",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "updated_at": "2026-05-06T15:56:01.389519+00:00",
+      "content_hash": "sha256:00e0e2688698712923581dc43197e55d570d340951d4e3640bcce610da6407e9"
+    },
+    {
+      "question_id": "65aaff70-bf51-46d8-a5aa-5b8905c4b75f",
+      "article_id": "20dc8dae-3a4e-4644-b4c6-b5b1881f830c",
+      "topic_id": "379d0ccc-cb9c-4bc8-aaa1-93127ce1782a",
+      "text": "A designer creates a building facade with equally spaced columns supporting a uniform roof line, creating a calm, measured visual progression. Which design principle is this exemplifying?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Unaccented rhythm, through regular, equal intervals without variation"
+        },
+        {
+          "id": "b",
+          "text": "Contrast, by placing solid columns against an open sky, highlighting the difference between the built and natural environment"
+        },
+        {
+          "id": "c",
+          "text": "Asymmetrical balance, distributing visual weight unevenly to create dynamic tension and interest"
+        },
+        {
+          "id": "d",
+          "text": "Scale, by relating column proportions to human dimensions, ensuring the structure feels approachable and relatable"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "While contrast exists (columns vs. sky), the primary principle demonstrated is rhythmic repetition.",
+        "c": "Equal spacing creates balanced, not asymmetrical, distribution.",
+        "d": "While scale may be a design consideration, the primary organizing principle demonstrated is unaccented rhythm.",
+        "correct": "Equally spaced, identical columns at regular intervals create unaccented rhythm—the pattern is regular and measured without emphasized focal points, generating calm visual progression.",
+        "takeaway": "Equally spaced, identical columns at regular intervals create unaccented rhythm—the pattern is regular and measured without emphasized focal points, generating calm visual progression."
+      },
+      "explanation": "While contrast exists (columns vs. sky), the primary principle demonstrated is rhythmic repetition. Equal spacing creates balanced, not asymmetrical, distribution. While scale may be a design consideration, the primary organizing principle demonstrated is unaccented rhythm. Equally spaced, identical columns at regular intervals create unaccented rhythm—the pattern is regular and measured without emphasized focal points, generating calm visual progression. Equally spaced, identical columns at regular intervals create unaccented rhythm—the pattern is regular and measured without emphasized focal points, generating calm visual progression.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-02-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "updated_at": "2026-05-06T15:56:01.518061+00:00",
+      "content_hash": "sha256:1db47733f92223cedbaf2a4138c2abaa30a9f5bcd837259b388cd718353b8d7d"
     },
     {
       "question_id": "c386e779-fd75-4d62-be6c-3c73edf4a427",
@@ -403,7 +663,7 @@
         "correct": "Ching distinguishes element types (point, line, plane, volume) from design principles (how they relate). Principles explain WHY designs work—they govern the relationships that create harmony, emphasis, spatial meaning, and coherence. Understanding principles, not just elements, is critical to design literacy.",
         "takeaway": "Understanding principles, not just elements, is critical to design literacy."
       },
-      "explanation": null,
+      "explanation": "While technology changes, the distinction between elements and relational principles is conceptual, not technology-dependent. Principles are not easier; they require deeper understanding of compositional logic. Elements are fundamental to architecture; they're not 'too simple.' Ching distinguishes element types (point, line, plane, volume) from design principles (how they relate). Principles explain WHY designs work—they govern the relationships that create harmony, emphasis, spatial meaning, and coherence. Understanding principles, not just elements, is critical to design literacy. Understanding principles, not just elements, is critical to design literacy.",
       "code_citation": null,
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
@@ -417,268 +677,8 @@
       "model_id": "ALE-THEO-002-02-013",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.522336+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:a28c6c01c1ca2a315622f7aed556e8e886042d10153109506c1b6a3b2a770136"
-    },
-    {
-      "question_id": "a2273978-7ae3-403a-933f-a7096bb57198",
-      "article_id": "20dc8dae-3a4e-4644-b4c6-b5b1881f830c",
-      "topic_id": "379d0ccc-cb9c-4bc8-aaa1-93127ce1782a",
-      "text": "Which statement correctly distinguishes between unaccented and accented rhythm?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Unaccented rhythm is found in modern design; accented rhythm is found in classical design, often emphasizing symmetry and balance"
-        },
-        {
-          "id": "b",
-          "text": "Unaccented rhythm has random spacing; accented rhythm has regular spacing, creating a predictable pattern that guides the viewer's eye"
-        },
-        {
-          "id": "c",
-          "text": "Unaccented rhythm repeats one element; accented rhythm repeats multiple elements, introducing complexity and visual interest"
-        },
-        {
-          "id": "d",
-          "text": "Unaccented rhythm uses identical units at equal intervals; accented rhythm introduces variation or emphasis at intervals"
-        }
-      ],
-      "correct_option_id": "d",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Both classical and modern architecture employ both types.",
-        "b": "Random spacing is not rhythm at all—rhythm requires regularity.",
-        "c": "Both use repetition; the distinction is whether the rhythm is regular without variation (unaccented) or has emphasis/variation (accented).",
-        "correct": "Ching precisely defines these: unaccented rhythm = identical units at equal intervals (calm, measured); accented rhythm = varying intervals or emphasized units (visual interest, focal points). Both require regularity, but accented introduces variation.",
-        "takeaway": "Both require regularity, but accented introduces variation."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "remember",
-      "application_context": "design_application",
-      "practice_context": [
-        "CMP"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-002-02-002",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:53.522336+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:9dea0ea36f3cccc37063fc59a277e81ca3c165ac0365d80a05db4a1e7e181270"
-    },
-    {
-      "question_id": "eac57dbd-3cf6-4d65-b4c5-c0e4ef5550b3",
-      "article_id": "20dc8dae-3a4e-4644-b4c6-b5b1881f830c",
-      "topic_id": "379d0ccc-cb9c-4bc8-aaa1-93127ce1782a",
-      "text": "How do radial and symmetrical balance differ in their organizing logic?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Radial balance uses identical elements; symmetrical balance uses equivalent elements on either side of the axis"
-        },
-        {
-          "id": "b",
-          "text": "Symmetrical balance organizes about a central axis; radial balance distributes forms around a central point, creating 360-degree balance"
-        },
-        {
-          "id": "c",
-          "text": "Radial balance is about an axis; symmetrical balance is around a point — the reverse of standard definitions"
-        },
-        {
-          "id": "d",
-          "text": "Radial balance is formal; symmetrical balance is informal and allows greater compositional freedom"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Both can use identical or equivalent elements; that doesn't distinguish them.",
-        "c": "Reversed—radial is around a point; symmetrical is about an axis.",
-        "d": "Both can be formal or informal depending on context.",
-        "correct": "This is the critical distinction: symmetrical (axial) balance is about a LINE (axis), with forms mirrored across it; radial balance is about a POINT, with forms distributed equally in all directions (like spokes from a hub). Radial appears balanced from all directions; symmetrical appears balanced across an axis only.",
-        "takeaway": "Radial appears balanced from all directions; symmetrical appears balanced across an axis only."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "apply",
-      "application_context": "design_application",
-      "practice_context": [
-        "CMP"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-002-02-006",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:53.522336+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:a15f9521b2ee7c518d9700f1f233b04369051b4b8a5960bd1f958e3b9d9a9078"
-    },
-    {
-      "question_id": "5aa07de0-049d-4613-a3c8-25b5de25af34",
-      "article_id": "20dc8dae-3a4e-4644-b4c6-b5b1881f830c",
-      "topic_id": "379d0ccc-cb9c-4bc8-aaa1-93127ce1782a",
-      "text": "Contrast in architectural design is best defined as:",
-      "options": [
-        {
-          "id": "a",
-          "text": "The feeling of grandeur and monumentality relative to human scale, often achieved through large-scale elements"
-        },
-        {
-          "id": "b",
-          "text": "Equality in the distribution of visual weight within a composition, ensuring balance and harmony"
-        },
-        {
-          "id": "c",
-          "text": "The repetition of lines, planes, and forms in a regular sequence, creating rhythm and unity"
-        },
-        {
-          "id": "d",
-          "text": "A comparison showing the differences between two or more elements through opposition"
-        }
-      ],
-      "correct_option_id": "d",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "That is the definition of scale.",
-        "b": "That is the definition of balance.",
-        "c": "That is the definition of rhythm, not contrast.",
-        "correct": "According to Ching, contrast is comparison showing differences—a vertical line contrasts with horizontal; solid wall contrasts with transparent opening. It creates visual interest and emphasis through opposition.",
-        "takeaway": "It creates visual interest and emphasis through opposition."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [
-        "DEF"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-002-02-001",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:53.522336+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:cede80b369a286792d9bc46c8d50a746a8760306534ad38410d1824d2e57ac77"
-    },
-    {
-      "question_id": "ad6b4f63-76ca-4fa4-8545-912a79ef59c3",
-      "article_id": "20dc8dae-3a4e-4644-b4c6-b5b1881f830c",
-      "topic_id": "379d0ccc-cb9c-4bc8-aaa1-93127ce1782a",
-      "text": "Sclea, as a design principle, is best defined as:",
-      "options": [
-        {
-          "id": "a",
-          "text": "The mathematical ratio governing proportions within a facade, ensuring visual harmony"
-        },
-        {
-          "id": "b",
-          "text": "The relationship between a building and its surrounding site context, influencing perception"
-        },
-        {
-          "id": "c",
-          "text": "The absolute dimensions of a building in meters or feet, which determine its physical presence"
-        },
-        {
-          "id": "d",
-          "text": "The feeling of grandeur, dignity, and monumentality conveyed by size relative to human dimensions and to other elements"
-        }
-      ],
-      "correct_option_id": "d",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "That describes proportioning systems.",
-        "b": "That is site response, not scale as a design principle.",
-        "c": "Absolute dimensions are measurements, not scale as a design principle.",
-        "correct": "Ching defines scale as the feeling conveyed by size and proportion relative to human body and to other elements. A massive building can feel small-scaled if subdivided into human-sized parts; a small building can feel monumental if proportioned generously. Scale is perception, not absolute size.",
-        "takeaway": "Scale is perception, not absolute size."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [
-        "DEF"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-002-02-007",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:53.522336+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:3f2bf2c4c6dc79e10cec004510d326dd7b1e61525d424b3481c0c51978da49e4"
-    },
-    {
-      "question_id": "af0c92b1-648b-43c4-86b9-00bc67352139",
-      "article_id": "20dc8dae-3a4e-4644-b4c6-b5b1881f830c",
-      "topic_id": "379d0ccc-cb9c-4bc8-aaa1-93127ce1782a",
-      "text": "A pitched roof on a residential building is primarily an expression of which type of character?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Functional character, because pitch sheds water and snow, preventing accumulation and potential damage."
-        },
-        {
-          "id": "b",
-          "text": "Personal character, because the designer chose this roof form based on aesthetic preferences and design vision."
-        },
-        {
-          "id": "c",
-          "text": "Associated character, because pitched roofs carry cultural associations with domestic permanence and tradition"
-        },
-        {
-          "id": "d",
-          "text": "Structural character, because roof pitch resists wind loads, contributing to the building's overall stability."
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Function is one level, but the cultural association is the primary character message.",
-        "b": "While personal, the designer's choice to use pitched roof is responding to cultural associations.",
-        "d": "Structural function is secondary to the cultural/historical association the form carries.",
-        "correct": "A pitched roof is associated character—it evokes cultural memory and historical precedent of domestic architecture. While it functions to shed water (functional character) and the designer made the choice (personal), the primary character it communicates is cultural/historical association with home and tradition.",
-        "takeaway": "While it functions to shed water (functional character) and the designer made the choice (personal), the primary character it communicates is cultural/historical association with home and tradition."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "apply",
-      "application_context": "design_application",
-      "practice_context": [
-        "APP"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-002-02-010",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:53.522336+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:a3e4482332807a6ca8f8c94819b5233165bbe524667da3213da5e0e8baee490d"
+      "updated_at": "2026-05-06T15:56:01.934563+00:00",
+      "content_hash": "sha256:1b1bf393514d9f857f58a9be2fe44ac84febd6f645ae3c57af2414f8387387af"
     }
   ]
 }

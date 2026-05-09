@@ -1,9 +1,59 @@
 {
   "article_id": "6bb0f186-b9f7-4da9-ba7b-05639f43d4cf",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:2a87fe4e68c3a2519653c3a3a4a3ea2b11ef7da1c42cb1af95d0021b545fb667",
+  "linked_questions_hash": "sha256:93563b1c5c4e9a5cb5dee652e76b2e656b0d74f4bc40a6b68e171b1d6227a5f5",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "38b20dde-4fbc-40e4-9899-e6bba8cbe035",
+      "article_id": "6bb0f186-b9f7-4da9-ba7b-05639f43d4cf",
+      "topic_id": "83a0e222-a7d7-42dd-a7f3-1263a64cc19b",
+      "text": "What is a legitimate ground for calling a performance bond?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The contractor's bid price was higher than expected, which is not a valid reason for calling a performance bond."
+        },
+        {
+          "id": "b",
+          "text": "The contractor's failure to commence work within specified time or suspension of work without authorization"
+        },
+        {
+          "id": "c",
+          "text": "The owner changed the project budget, which does not justify calling a performance bond."
+        },
+        {
+          "id": "d",
+          "text": "The engineer made a design change, which is not a contractor's fault and thus not a valid ground."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Confuses pricing dissatisfaction with performance default; high bids are not grounds for bond call.",
+        "c": "Budget changes by Owner are not contractor defaults; they do not justify bond call.",
+        "d": "Design changes are Owner-initiated, not contractor defaults; they do not justify bond call.",
+        "correct": "Legitimate grounds for bond call are material breaches: failure to start work timely, unauthorized work suspension, failure to maintain schedule, or project abandonment.",
+        "takeaway": "Bond call requires material breach: failure to start, unauthorized suspension, or abandonment."
+      },
+      "explanation": "Confuses pricing dissatisfaction with performance default; high bids are not grounds for bond call. Budget changes by Owner are not contractor defaults; they do not justify bond call. Design changes are Owner-initiated, not contractor defaults; they do not justify bond call. Legitimate grounds for bond call are material breaches: failure to start work timely, unauthorized work suspension, failure to maintain schedule, or project abandonment. Bond call requires material breach: failure to start, unauthorized suspension, or abandonment.",
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-010-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.526003+00:00",
+      "updated_at": "2026-05-06T13:20:03.402277+00:00",
+      "content_hash": "sha256:cfdec13c5c9c022f652c899e9d176234a710a74a503692f2ff7deb7efe8fa113"
+    },
     {
       "question_id": "9f3402fb-2784-4dd1-a705-0454bc9fb7be",
       "article_id": "6bb0f186-b9f7-4da9-ba7b-05639f43d4cf",
@@ -353,56 +403,6 @@
       "created_at": "2026-03-23T19:27:47.526003+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:cfdca1dda2ff91c381c83df66254e23778515308c02af5fca5848471c9376fd4"
-    },
-    {
-      "question_id": "38b20dde-4fbc-40e4-9899-e6bba8cbe035",
-      "article_id": "6bb0f186-b9f7-4da9-ba7b-05639f43d4cf",
-      "topic_id": "83a0e222-a7d7-42dd-a7f3-1263a64cc19b",
-      "text": "What is a legitimate ground for calling a performance bond?",
-      "options": [
-        {
-          "id": "a",
-          "text": "The contractor's bid price was higher than expected, which is not a valid reason for calling a performance bond."
-        },
-        {
-          "id": "b",
-          "text": "The contractor's failure to commence work within specified time or suspension of work without authorization"
-        },
-        {
-          "id": "c",
-          "text": "The owner changed the project budget, which does not justify calling a performance bond."
-        },
-        {
-          "id": "d",
-          "text": "The engineer made a design change, which is not a contractor's fault and thus not a valid ground."
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Confuses pricing dissatisfaction with performance default; high bids are not grounds for bond call.",
-        "c": "Budget changes by Owner are not contractor defaults; they do not justify bond call.",
-        "d": "Design changes are Owner-initiated, not contractor defaults; they do not justify bond call.",
-        "correct": "Legitimate grounds for bond call are material breaches: failure to start work timely, unauthorized work suspension, failure to maintain schedule, or project abandonment.",
-        "takeaway": "Bond call requires material breach: failure to start, unauthorized suspension, or abandonment."
-      },
-      "explanation": null,
-      "code_citation": "UAP Doc 301",
-      "bloom_level": "understand",
-      "application_context": "client_scenario",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PRAC-CTR-010-005",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:5a77e9b4bb54829ed44398da9b056ceacb92fbac764da5f6596eb0f5e1f89f38"
     },
     {
       "question_id": "5b2613aa-3be5-41e4-8d89-ed36ddba7b2a",

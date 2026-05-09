@@ -1,9 +1,59 @@
 {
   "article_id": "205905a8-f9ff-41e7-8db7-a85edd563a84",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:aa829ab7bd352fcf73109883aa6437be6c537ec3141d8f79b33dad16f67a1a2e",
+  "linked_questions_hash": "sha256:b4b14d27b85fa32436b4748e5ea10d5e4d6247b57bf829e680da52ab3425202b",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "5d75baae-ee30-44ea-bd5b-736a4a4d331f",
+      "article_id": "205905a8-f9ff-41e7-8db7-a85edd563a84",
+      "topic_id": "14ff1343-a36a-4f79-a807-217f474a3aa5",
+      "text": "A warehouse owner upgrades from light storage (6.0 kPa) to heavy storage (12.0 kPa) and the floor beams begin to sag. Who is structurally liable if the original design documents specified light storage?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The structural engineer, for not allowing a 100% safety margin, which is a standard engineering practice"
+        },
+        {
+          "id": "b",
+          "text": "The owner, for exceeding the design load limits specified in the plans."
+        },
+        {
+          "id": "c",
+          "text": "The contractor, for using weaker steel than specified, which compromises structural integrity"
+        },
+        {
+          "id": "d",
+          "text": "The insurance company, as it is an 'Act of God', which is typically excluded from coverage"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Safety factors in codes are typically 1.2 to 1.6, not a 100% (2.0) margin for unspecified future uses.",
+        "c": "Unless the contractor deviated from plans, the failure is due to overloading, not material quality.",
+        "d": "Structural overloading is a human error/negligence, not an 'Act of God'.",
+        "correct": "The owner is responsible for ensuring that the building is not subjected to loads greater than those for which it was designed. Doubling the load from 6.0 to 12.0 kPa is a gross violation of the design capacity.",
+        "takeaway": "Owners must adhere to design load limits."
+      },
+      "explanation": "Safety factors in codes are typically 1.2 to 1.6, not a 100% (2.0) margin for unspecified future uses. Unless the contractor deviated from plans, the failure is due to overloading, not material quality. Structural overloading is a human error/negligence, not an 'Act of God'. The owner is responsible for ensuring that the building is not subjected to loads greater than those for which it was designed. Doubling the load from 6.0 to 12.0 kPa is a gross violation of the design capacity. Owners must adhere to design load limits.",
+      "code_citation": "NSCP 2015, Section 205.2",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-004-05-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-05-06T12:47:37.516982+00:00",
+      "content_hash": "sha256:b183847ff009973e0e187776dd22299664c320ae9456362e02c02f53009538b3"
+    },
     {
       "question_id": "0c09fd99-64dd-4e2c-a224-3ed90b644bc2",
       "article_id": "205905a8-f9ff-41e7-8db7-a85edd563a84",
@@ -353,56 +403,6 @@
       "created_at": "2026-03-23T19:27:52.277828+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:1ec3cc078a294fd54b5ff7bf60f6e3d6e6f40a252e8e5a76a3c773382a6854bb"
-    },
-    {
-      "question_id": "5d75baae-ee30-44ea-bd5b-736a4a4d331f",
-      "article_id": "205905a8-f9ff-41e7-8db7-a85edd563a84",
-      "topic_id": "14ff1343-a36a-4f79-a807-217f474a3aa5",
-      "text": "A warehouse owner upgrades from light storage (6.0 kPa) to heavy storage (12.0 kPa) and the floor beams begin to sag. Who is structurally liable if the original design documents specified light storage?",
-      "options": [
-        {
-          "id": "a",
-          "text": "The structural engineer, for not allowing a 100% safety margin, which is a standard engineering practice"
-        },
-        {
-          "id": "b",
-          "text": "The owner, for exceeding the design load limits specified in the plans."
-        },
-        {
-          "id": "c",
-          "text": "The contractor, for using weaker steel than specified, which compromises structural integrity"
-        },
-        {
-          "id": "d",
-          "text": "The insurance company, as it is an 'Act of God', which is typically excluded from coverage"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Safety factors in codes are typically 1.2 to 1.6, not a 100% (2.0) margin for unspecified future uses.",
-        "c": "Unless the contractor deviated from plans, the failure is due to overloading, not material quality.",
-        "d": "Structural overloading is a human error/negligence, not an 'Act of God'.",
-        "correct": "The owner is responsible for ensuring that the building is not subjected to loads greater than those for which it was designed. Doubling the load from 6.0 to 12.0 kPa is a gross violation of the design capacity.",
-        "takeaway": "Owners must adhere to design load limits."
-      },
-      "explanation": null,
-      "code_citation": "NSCP 2015, Section 205.2",
-      "bloom_level": "analyze",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.9,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-STRC-004-05-010",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:e4d0ad1f0c22bbc9ba7cb57330b7bd09525f8c5f854c707e32a55d0001f53f83"
     },
     {
       "question_id": "d8cb7417-9f1e-489d-9b40-13c384407b3e",

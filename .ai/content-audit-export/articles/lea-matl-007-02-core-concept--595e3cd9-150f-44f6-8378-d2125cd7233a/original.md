@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Matl 007 02 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 ## Learning Goal
 
@@ -15,11 +24,11 @@ In the Philippines, Boysen (Pacific Paint), Davies, and Island Paints dominate t
 Wallpaper, while aesthetic, demands smooth drywall surfaces (sandpaper grit 220+) and proper adhesive formulation. Ceramic tile on walls follows the same adhesion principles as floor tile but with relaxed slip-resistance requirements. Natural stone veneer (marble, granite) requires moisture barriers on substrate to prevent salt efflorescence and spalling in tropical climates. Hardiflex (fiber cement board) offers moisture and fire resistance for wet rooms and exterior walls, avoiding traditional gypsum drywall susceptibility to mold.
 
 
-<ArticleMedia id="media-wall-finish-comparison" layout="single" type="image" status="placeholder"
-  alt="Comparison chart of wall finishes: paint, wallpaper, gypsum board, plywood paneling, tile, stone cladding, fabric, metal panel, and glass with aesthetic, durability, and fire-resistance ratings"
-  caption="Future chart: wall finish comparison — aesthetic effect, durability, installation method, and fire rating"
-  suggestedAsset="Material selection matrix with finish application photos"
-  placementIntent="Provides comprehensive reference for wall finish selection" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-wall-finish-comparison", layout="single", type="image", status="placeholder", alt="Comparison chart of wall finishes: paint, wallpaper, gypsum board, plywood paneling, tile, stone cladding, fabric, metal panel, and glass with aesthetic, durability, and fire-resistance ratings", caption="Future chart: wall finish comparison — aesthetic effect, durability, installation method, and fire rating", suggestedAsset="Material selection matrix with finish application photos", placementIntent="Provides comprehensive reference for wall finish selection"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Provisions
 
@@ -47,11 +56,11 @@ Stone veneer (marble, granite imported or quarried locally) requires moisture ba
 Boysen brands like KNOxOUT (marketed as air-purifying with claimed NOx-reducing properties via titanium dioxide) appeal to premium projects seeking air-quality claims, though durability remains tied to substrate preparation.
 
 
-<ArticleMedia id="media-wall-finish-assembly" layout="single" type="image" status="placeholder"
-  alt="Cross-section of wall finish assemblies: paint on gypsum board, tile on cement board, stone cladding with anchors, and metal panel with sub-girt system"
-  caption="Future diagram: wall finish assembly cross-sections — paint, tile, stone, and metal panel"
-  suggestedAsset="Cross-section detail drawings of wall finish installations"
-  placementIntent="Visualizes installation methods for different wall finishes" />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-wall-finish-assembly", layout="single", type="image", status="placeholder", alt="Cross-section of wall finish assemblies: paint on gypsum board, tile on cement board, stone cladding with anchors, and metal panel with sub-girt system", caption="Future diagram: wall finish assembly cross-sections — paint, tile, stone, and metal panel", suggestedAsset="Cross-section detail drawings of wall finish installations", placementIntent="Visualizes installation methods for different wall finishes"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 ## How It's Tested
 
 **Question Type 1 (Surface Preparation):** A painter applies latex topcoat to gypsum drywall sanded with 120-grit paper and not wiped. What will likely occur within 6-12 months? Students must recognize that inadequate surface prep (grit &lt;220) and dust contamination cause delamination (ASTM D3276 violations).
@@ -62,13 +71,25 @@ Boysen brands like KNOxOUT (marketed as air-purifying with claimed NOx-reducing 
 
 **Question Type 4 (Material Selection):** Specify a finish system for a high-humidity kitchen in Metro Manila. Options: latex paint, enamel, or wallpaper. Which offers best moisture resistance? Answer: Enamel or latex with fungicide primer (Boysen formulations); wallpaper is unsuitable without mold-resistant base primer.
 
-<Tip>Memory aid: Surface prep is 90% of paint success. If sanding isn't done to 220-grit and dust-free, the best paint will fail. Humidity >50% and temperature &lt;10°C during application = delay the work. ASTM D3359 rating 3 is acceptable minimum; rating 5 is complete failure.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Memory aid: Surface prep is 90% of paint success. If sanding isn't done to 220-grit and dust-free, the best paint will fail. Humidity >50% and temperature &lt;10°C during application = delay the work. ASTM D3359 rating 3 is acceptable minimum; rating 5 is complete failure.
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
-<WikiMistakeCard mistake="Sanding drywall with 120-grit paper and skipping dust removal before priming" correction="Use 220-grit or higher per ASTM D3276 and wipe surfaces dust-free. Dust prevents adhesion and causes delamination within 12 months." />
+[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Sanding drywall with 120-grit paper and skipping dust removal before priming", correction="Use 220-grit or higher per ASTM D3276 and wipe surfaces dust-free. Dust prevents adhesion and causes delamination within 12 months."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeCard mistake="Applying paint to gypsum drywall without primer in high-humidity bathrooms" correction="Prime with fungicide-treated primer (e.g., Boysen fungicide-rich primers) before topcoat. Unprimed drywall absorbs moisture and promotes mold." />
+[SLATECAMP_UI_BLOCK:ui_0005 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Applying paint to gypsum drywall without primer in high-humidity bathrooms", correction="Prime with fungicide-treated primer (e.g., Boysen fungicide-rich primers) before topcoat. Unprimed drywall absorbs moisture and promotes mold."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 is optional for topcoat adhesion\", \"Mixing incompatible binders (latex over enamel without sanding and primer)\", \"Failing to caulk gaps, joints, and penetrations before finish coat\", \"Applying topcoat before primer cure time (typically 2-4 hours per coat)\", \"Using VOC-high paints without confirming local air-quality compliance\"]}"
 - Text: (none detected)

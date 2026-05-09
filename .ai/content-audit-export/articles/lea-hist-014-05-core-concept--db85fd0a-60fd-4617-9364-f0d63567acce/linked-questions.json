@@ -1,9 +1,61 @@
 {
   "article_id": "db85fd0a-60fd-4617-9364-f0d63567acce",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:0cfd0a467d73f55f05a24cd851899c1d66ac4330bd77b78e3122b2d63ac6b8dd",
+  "linked_questions_hash": "sha256:1be803816071e3043f0f9841f0f1c2224a1a45bc695162a014bde16b42443521",
   "question_count": 12,
   "questions": [
+    {
+      "question_id": "79d806b1-c077-41d3-974f-7615374957ae",
+      "article_id": "db85fd0a-60fd-4617-9364-f0d63567acce",
+      "topic_id": "d4a89c1a-5f21-4075-8361-c1728bc81079",
+      "text": "A modernist building features a bronze-clad steel frame facade arranged in a pure geometric grid, vertical emphasis, and crystalline glass. The building expresses mathematical perfection and universal design principles independent of location. This exemplifies which architect's approach?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Louis Kahn's monumental geometry, which often incorporates heavy materials and a focus on light"
+        },
+        {
+          "id": "b",
+          "text": "Eero Saarinen's sculptural modernism, characterized by sweeping curves and innovative structural solutions"
+        },
+        {
+          "id": "c",
+          "text": "Mies van der Rohe's International Style minimalism"
+        },
+        {
+          "id": "d",
+          "text": "I.M. Pei's crystalline forms, which are known for their sharp angles and reflective surfaces"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Kahn's monumental work emphasizes emotional impact and sublime geometry, not universal rationalism.",
+        "b": "Saarinen's sculptural form emphasizes organic expression, not geometric grid purity.",
+        "d": "While Pei uses geometric forms, his work is not specifically described with bronze frame grid.",
+        "correct": "The Seagram Building: 'The Seagram Building (New York, 1958, with Philip Johnson) is pure rationalism: a bronze-clad steel frame grid, vertical emphasis, crystalline glass. It ascends Fifth Avenue with mathematical perfection. No ornament, no excess, no regional reference. This is modernism as universal language.' This matches the description.",
+        "takeaway": "This is modernism as universal language.' This matches the description."
+      },
+      "explanation": "Kahn's monumental work emphasizes emotional impact and sublime geometry, not universal rationalism. Saarinen's sculptural form emphasizes organic expression, not geometric grid purity. While Pei uses geometric forms, his work is not specifically described with bronze frame grid. The Seagram Building: 'The Seagram Building (New York, 1958, with Philip Johnson) is pure rationalism: a bronze-clad steel frame grid, vertical emphasis, crystalline glass. It ascends Fifth Avenue with mathematical perfection. No ornament, no excess, no regional reference. This is modernism as universal language.' This matches the description. This is modernism as universal language.' This matches the description.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DESC"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-014-05-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.310909+00:00",
+      "updated_at": "2026-05-06T16:21:51.925517+00:00",
+      "content_hash": "sha256:98f444bc944e3d6c7bc6560f67eda97be3363783bc6dba7251313fc108f3d3d1"
+    },
     {
       "question_id": "13cdbd7b-2564-4613-990e-8679a4d3ebd3",
       "article_id": "db85fd0a-60fd-4617-9364-f0d63567acce",
@@ -39,7 +91,7 @@
         "correct": "His East Building of the National Gallery (Washington, DC, 1978) is pure geometry: a triangle filling an irregular site, interior spaces orchestrated around this geometric logic.'",
         "takeaway": "The article states: 'His East Building of the National Gallery (Washington, DC, 1978) is pure geometry: a triangle filling an irregular site, interior spaces orchestrated around this geometric logic.'."
       },
-      "explanation": null,
+      "explanation": "The geometric triangle does not mirror classical architecture. The East Building is triangular, not circular. The triangular form creates geometry independent of street grid. His East Building of the National Gallery (Washington, DC, 1978) is pure geometry: a triangle filling an irregular site, interior spaces orchestrated around this geometric logic.' The article states: 'His East Building of the National Gallery (Washington, DC, 1978) is pure geometry: a triangle filling an irregular site, interior spaces orchestrated around this geometric logic.'.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "code_interpretation",
@@ -53,8 +105,8 @@
       "model_id": "ALE-HIST-014-05-011",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:25.310909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:fc507bf9629b4e84b5aecce8a52489d608b0d4200a28320313419505b2d2f1be"
+      "updated_at": "2026-05-06T16:21:51.677806+00:00",
+      "content_hash": "sha256:9bdabecf9527c67e90213c808cd10291439e86a54ec965514efbba31b84a47a7"
     },
     {
       "question_id": "18291176-d142-4574-beae-6dfd67def2e2",
@@ -91,7 +143,7 @@
         "correct": "By 1970s, modernism faced critique. Buildings were functionally excellent but emotionally cold. Plazas were empty. Modernist urbanism had created anonymous environments.'",
         "takeaway": "Modernist urbanism had created anonymous environments.'."
       },
-      "explanation": null,
+      "explanation": "Structural adequacy is not the critique mentioned. Postmodernism reintroduced historical reference but did not return to pure historical styles. Environmental concerns emerge later; emotional coldness is the primary critique. By 1970s, modernism faced critique. Buildings were functionally excellent but emotionally cold. Plazas were empty. Modernist urbanism had created anonymous environments.' Modernist urbanism had created anonymous environments.'.",
       "code_citation": null,
       "bloom_level": "apply",
       "application_context": "design_application",
@@ -105,60 +157,8 @@
       "model_id": "ALE-HIST-014-05-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:25.310909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:94b0e2ba3ef601a79a03736e7afaac75f0d40811c6378049d9726a9c16f643c3"
-    },
-    {
-      "question_id": "79d806b1-c077-41d3-974f-7615374957ae",
-      "article_id": "db85fd0a-60fd-4617-9364-f0d63567acce",
-      "topic_id": "d4a89c1a-5f21-4075-8361-c1728bc81079",
-      "text": "A modernist building features a bronze-clad steel frame facade arranged in a pure geometric grid, vertical emphasis, and crystalline glass. The building expresses mathematical perfection and universal design principles independent of location. This exemplifies which architect's approach?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Louis Kahn's monumental geometry, which often incorporates heavy materials and a focus on light"
-        },
-        {
-          "id": "b",
-          "text": "Eero Saarinen's sculptural modernism, characterized by sweeping curves and innovative structural solutions"
-        },
-        {
-          "id": "c",
-          "text": "Mies van der Rohe's International Style minimalism"
-        },
-        {
-          "id": "d",
-          "text": "I.M. Pei's crystalline forms, which are known for their sharp angles and reflective surfaces"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Kahn's monumental work emphasizes emotional impact and sublime geometry, not universal rationalism.",
-        "b": "Saarinen's sculptural form emphasizes organic expression, not geometric grid purity.",
-        "d": "While Pei uses geometric forms, his work is not specifically described with bronze frame grid.",
-        "correct": "The Seagram Building: 'The Seagram Building (New York, 1958, with Philip Johnson) is pure rationalism: a bronze-clad steel frame grid, vertical emphasis, crystalline glass. It ascends Fifth Avenue with mathematical perfection. No ornament, no excess, no regional reference. This is modernism as universal language.' This matches the description.",
-        "takeaway": "This is modernism as universal language.' This matches the description."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [
-        "DESC"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-HIST-014-05-002",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:25.310909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:41a7aebbbd39ab8782943f1d7e8d8059144f8c845d624028f27c3fb7dde62f70"
+      "updated_at": "2026-05-06T16:21:51.800639+00:00",
+      "content_hash": "sha256:b212cd953e4770d3eb11e59cbf0e7aebabb49ec2e42cbdbe47ec42bf7e9ec3f4"
     },
     {
       "question_id": "269b9a9e-c0d1-4ebb-a26c-24521471d0c2",
@@ -247,7 +247,7 @@
         "correct": "The TWA Terminal (New York, 1962) is a concrete shell shaped like a bird in flight.' This sculptural form expresses the concept of flight as structural reality.",
         "takeaway": "The article states: 'The TWA Terminal (New York, 1962) is a concrete shell shaped like a bird in flight.' This sculptural form expresses the concept of flight as structural reality."
       },
-      "explanation": null,
+      "explanation": "This describes Mies's grid approach, not Saarinen's sculptural shell. I.M. Pei's work features geometric pyramids; Saarinen's signature is the shell form. This describes Beaux-Arts or classical design, not Saarinen. The TWA Terminal (New York, 1962) is a concrete shell shaped like a bird in flight.' This sculptural form expresses the concept of flight as structural reality. The article states: 'The TWA Terminal (New York, 1962) is a concrete shell shaped like a bird in flight.' This sculptural form expresses the concept of flight as structural reality.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "code_interpretation",
@@ -261,8 +261,8 @@
       "model_id": "ALE-HIST-014-05-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:25.310909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:64f99128f50974da10408ed6577c04110c4ba4431a7345ba3f03201a0f43f262"
+      "updated_at": "2026-05-06T16:21:52.05166+00:00",
+      "content_hash": "sha256:8857cf4e4291d3a8df48e8b61806c6be241a6291dbeec4d9495b4b97fa1be843"
     },
     {
       "question_id": "12a085f1-4bd8-442a-aa1a-a3c72e788885",
@@ -299,7 +299,7 @@
         "correct": "Louis Kahn (1901–1974) offered a different modernism: monumental and emotional rather than minimal and rational... Distinguish rational modernism (Mies) from monumental modernism (Kahn).'",
         "takeaway": "Distinguish rational modernism (Mies) from monumental modernism (Kahn).'."
       },
-      "explanation": null,
+      "explanation": "Both are modernist; Kahn does not move into postmodernism. Both maintain universal principles; the distinction is aesthetic approach. Both reject applied ornament; integral expression differs. Louis Kahn (1901–1974) offered a different modernism: monumental and emotional rather than minimal and rational... Distinguish rational modernism (Mies) from monumental modernism (Kahn).' Distinguish rational modernism (Mies) from monumental modernism (Kahn).'.",
       "code_citation": null,
       "bloom_level": "apply",
       "application_context": "design_application",
@@ -313,8 +313,8 @@
       "model_id": "ALE-HIST-014-05-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:25.310909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:5600402823c5b1864f48669de740856dafe1a7c668596303a6aa5fc891c0db75"
+      "updated_at": "2026-05-06T16:21:52.174907+00:00",
+      "content_hash": "sha256:6c7e410017a0b1485e8b8082a6242d53bdc464abdc74a8f7809568bdbd5700a6"
     },
     {
       "question_id": "bc1ca1c9-e2b1-445d-8b63-dfdc66a0cc95",
@@ -403,7 +403,7 @@
         "correct": "Postmodernism demonstrated that buildings can communicate cultural meaning through ornament and historical reference—challenging modernism's claim that universal principles transcend meaning.",
         "takeaway": "The article indicates postmodernism demonstrated that buildings can communicate cultural meaning through ornament and historical reference—challenging modernism's claim that universal principles transcend meaning."
       },
-      "explanation": null,
+      "explanation": "Postmodernism shows meaning matters; ornament communicates meaning. Postmodernism does not establish superiority of historical styles; it acknowledges their communicative value. Postmodern ornament carries meaning; it is not merely decorative. Postmodernism demonstrated that buildings can communicate cultural meaning through ornament and historical reference—challenging modernism's claim that universal principles transcend meaning. The article indicates postmodernism demonstrated that buildings can communicate cultural meaning through ornament and historical reference—challenging modernism's claim that universal principles transcend meaning.",
       "code_citation": null,
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
@@ -417,8 +417,8 @@
       "model_id": "ALE-HIST-014-05-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:25.310909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:85cf2091108f2dc59f017914b03c557cefa9b2d39e5dc688c7dba40297213176"
+      "updated_at": "2026-05-06T16:21:52.301463+00:00",
+      "content_hash": "sha256:d24d34f7563b790a3f2ce2f5ddcce96f51a35e2fc2e3fe16103a739df39d25b4"
     },
     {
       "question_id": "ac7c6e36-7fcb-4d4c-8817-9a2481d606ac",
@@ -455,7 +455,7 @@
         "correct": "Rational modernism (Mies) from monumental modernism (Kahn) or sculptural modernism (Saarinen).' This shows modernism encompasses diverse aesthetic approaches unified by principles like structural honesty and rejection of applied ornament, not by a single formal language.",
         "takeaway": "The article distinguishes: 'rational modernism (Mies) from monumental modernism (Kahn) or sculptural modernism (Saarinen).' This shows modernism encompasses diverse aesthetic approaches unified by principles like structural honesty and rejection of applied ornament, not by a single formal language."
       },
-      "explanation": null,
+      "explanation": "The article demonstrates modernism has multiple approaches. Monumental and sculptural modernism are authentic modernism, not departures. Modernism rejects applied ornament; emotional expression comes through form and structure. Rational modernism (Mies) from monumental modernism (Kahn) or sculptural modernism (Saarinen).' This shows modernism encompasses diverse aesthetic approaches unified by principles like structural honesty and rejection of applied ornament, not by a single formal language. The article distinguishes: 'rational modernism (Mies) from monumental modernism (Kahn) or sculptural modernism (Saarinen).' This shows modernism encompasses diverse aesthetic approaches unified by principles like structural honesty and rejection of applied ornament, not by a single formal language.",
       "code_citation": null,
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
@@ -469,8 +469,8 @@
       "model_id": "ALE-HIST-014-05-012",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:25.310909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:76f82da1ed82a0d3b458a17c31841eac3c1574a69b22e232dd2a9b0410e26941"
+      "updated_at": "2026-05-06T16:21:52.426081+00:00",
+      "content_hash": "sha256:7e0695ddaf12343d418af8cbf3b686cd81070fde6f893cf671c7dad12d857b4f"
     },
     {
       "question_id": "b53eae4d-d6b8-4927-8b39-59ef9025b3a5",
@@ -507,7 +507,7 @@
         "correct": "Contemporary architecture (1990s–present) synthesizes lessons: modernist rationality and environmental responsibility, but with humanist warmth and cultural specificity. Architects reject both modernism's universalism and postmodernism's irony, seeking architecture rooted in place, material, and human need.'",
         "takeaway": "Architects reject both modernism's universalism and postmodernism's irony, seeking architecture rooted in place, material, and human need.'."
       },
-      "explanation": null,
+      "explanation": "Contemporary architecture acknowledges postmodern critique. Contemporary architecture rejects pure postmodern irony. Contemporary architecture maintains connection to modernist environmental concerns. Contemporary architecture (1990s–present) synthesizes lessons: modernist rationality and environmental responsibility, but with humanist warmth and cultural specificity. Architects reject both modernism's universalism and postmodernism's irony, seeking architecture rooted in place, material, and human need.' Architects reject both modernism's universalism and postmodernism's irony, seeking architecture rooted in place, material, and human need.'.",
       "code_citation": null,
       "bloom_level": "apply",
       "application_context": "design_application",
@@ -521,8 +521,8 @@
       "model_id": "ALE-HIST-014-05-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:25.310909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:c72ebba79c2534c3661c9f058730edf4e9be14f6d603d46ae0053d379cf74461"
+      "updated_at": "2026-05-06T16:21:52.549454+00:00",
+      "content_hash": "sha256:621d112c8b4f24447f4caf40040657d8b8d3c96b5803da222d969d552cb71408"
     },
     {
       "question_id": "92594e7d-2b49-4d64-8192-d075a1f88477",
@@ -559,7 +559,7 @@
         "correct": "Mies van der Rohe (1886–1969) epitomizes this philosophy. His motto: Less is More.' and describes the Barcelona Pavilion as his minimalist design.",
         "takeaway": "His motto: Less is More.' and describes the Barcelona Pavilion as his minimalist design."
       },
-      "explanation": null,
+      "explanation": "Kahn pursued monumental modernism, not minimalist austerity. Pei pursued geometric purity; 'Less is More' is not his principle. Saarinen pursued sculptural expressionism, not minimalist reduction. Mies van der Rohe (1886–1969) epitomizes this philosophy. His motto: Less is More.' and describes the Barcelona Pavilion as his minimalist design. His motto: Less is More.' and describes the Barcelona Pavilion as his minimalist design.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -573,8 +573,8 @@
       "model_id": "ALE-HIST-014-05-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:25.310909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:5aa42c73ee496613228280f4ac3e1574e4a4e6679c681a37507c37c7c2c05d27"
+      "updated_at": "2026-05-06T16:21:52.675576+00:00",
+      "content_hash": "sha256:143a9ef02fb1231d0bd1fe077a554df4d8e664b85e461cc88558d72f3e1d9ccd"
     },
     {
       "question_id": "da8b21c0-33a2-41f5-80b3-bd9c944ee721",

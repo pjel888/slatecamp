@@ -1,9 +1,59 @@
 {
   "article_id": "a96d6eed-5b52-47de-b752-83459747b468",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:ddea413c9e91854686cf487e2042c99f5fc82c84fe162eb0072d48b647ae92cd",
+  "linked_questions_hash": "sha256:052a25a34181214eafe07cf8a02ef45c6c55212e4f6624c3e9168cec71c8b2e8",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "4b69bb02-8caa-499c-a72a-3aadeb0bc19c",
+      "article_id": "a96d6eed-5b52-47de-b752-83459747b468",
+      "topic_id": "f4c338ce-27dc-4d00-a74c-4a8d400d0c47",
+      "text": "What does the requirement that drawings and specifications be 'sufficiently detailed for competitive bidding and construction execution' impose on the architect?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The architect must specify the exact brand name and model of every material to be installed, ensuring no substitutions are made without approval"
+        },
+        {
+          "id": "b",
+          "text": "The architect must provide enough detail to enable contractors to bid accurately and execute the work in compliance with codes and standards without constant clarification"
+        },
+        {
+          "id": "c",
+          "text": "The architect must guarantee that all bids received will be within the owner's budget, regardless of market fluctuations"
+        },
+        {
+          "id": "d",
+          "text": "The architect must remain on site throughout construction to ensure compliance with the specifications, acting as a full-time supervisor"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Overspecifies the requirement; specifications typically allow equivalent products unless specific performance requires a particular brand.",
+        "c": "Attributes budget control to the architect; document detail supports accurate bidding, but does not guarantee bids will fall within budget.",
+        "d": "Confuses document adequacy with on-site supervision; detailed documents reduce, rather than eliminate, the need for on-site verification.",
+        "correct": "The architect must prepare drawings and specifications that are sufficiently detailed for competitive bidding and construction execution. These documents must comply with all applicable laws, codes, and regulations, allowing contractors to bid accurately without constant clarification.",
+        "takeaway": "Documents must provide enough detail for accurate bidding and code-compliant execution; excessive brand specification is neither required nor typical practice."
+      },
+      "explanation": "Overspecifies the requirement; specifications typically allow equivalent products unless specific performance requires a particular brand. Attributes budget control to the architect; document detail supports accurate bidding, but does not guarantee bids will fall within budget. Confuses document adequacy with on-site supervision; detailed documents reduce, rather than eliminate, the need for on-site verification. The architect must prepare drawings and specifications that are sufficiently detailed for competitive bidding and construction execution. These documents must comply with all applicable laws, codes, and regulations, allowing contractors to bid accurately without constant clarification. Documents must provide enough detail for accurate bidding and code-compliant execution; excessive brand specification is neither required nor typical practice.",
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-001-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.047156+00:00",
+      "updated_at": "2026-05-06T16:22:33.152722+00:00",
+      "content_hash": "sha256:38a6e936debbc8e880b65381feb2abab4b3338da539f7d796e212a53da3b9d12"
+    },
     {
       "question_id": "0dd69157-c727-4956-b067-fd5210bf17a0",
       "article_id": "a96d6eed-5b52-47de-b752-83459747b468",
@@ -253,56 +303,6 @@
       "created_at": "2026-03-23T19:27:47.047156+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:102f6550952e5f2fe2e6bd51fa553fba1ceca4fe21a621378f629c15822fea4d"
-    },
-    {
-      "question_id": "4b69bb02-8caa-499c-a72a-3aadeb0bc19c",
-      "article_id": "a96d6eed-5b52-47de-b752-83459747b468",
-      "topic_id": "f4c338ce-27dc-4d00-a74c-4a8d400d0c47",
-      "text": "What does the requirement that drawings and specifications be 'sufficiently detailed for competitive bidding and construction execution' impose on the architect?",
-      "options": [
-        {
-          "id": "a",
-          "text": "The architect must specify the exact brand name and model of every material to be installed, ensuring no substitutions are made without approval"
-        },
-        {
-          "id": "b",
-          "text": "The architect must provide enough detail to enable contractors to bid accurately and execute the work in compliance with codes and standards without constant clarification"
-        },
-        {
-          "id": "c",
-          "text": "The architect must guarantee that all bids received will be within the owner's budget, regardless of market fluctuations"
-        },
-        {
-          "id": "d",
-          "text": "The architect must remain on site throughout construction to ensure compliance with the specifications, acting as a full-time supervisor"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Overspecifies the requirement; specifications typically allow equivalent products unless specific performance requires a particular brand.",
-        "c": "Attributes budget control to the architect; document detail supports accurate bidding, but does not guarantee bids will fall within budget.",
-        "d": "Confuses document adequacy with on-site supervision; detailed documents reduce, rather than eliminate, the need for on-site verification.",
-        "correct": "The architect must prepare drawings and specifications that are sufficiently detailed for competitive bidding and construction execution. These documents must comply with all applicable laws, codes, and regulations, allowing contractors to bid accurately without constant clarification.",
-        "takeaway": "Documents must provide enough detail for accurate bidding and code-compliant execution; excessive brand specification is neither required nor typical practice."
-      },
-      "explanation": null,
-      "code_citation": "UAP Doc 301",
-      "bloom_level": "analyze",
-      "application_context": "client_scenario",
-      "practice_context": [],
-      "difficulty": 0.9,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PRAC-CTR-001-009",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:47.047156+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:58f44e5319d23bbf0d613157715cf59f74b0d6bd71760418a7043147ca4ebb09"
     },
     {
       "question_id": "6ffbc619-7639-4cb1-9b5b-e6457c65fd13",

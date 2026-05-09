@@ -1,9 +1,59 @@
 {
   "article_id": "b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:c531e2b0fc5513f70d0d7afa73762402d35421e9a7e82a77af5676e1dcac1485",
+  "linked_questions_hash": "sha256:98b00455766122705a0a72b77ad54fadd0324da6cfaf204b5d8c28a166ca8fe0",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "dc4b2ccb-c761-48dd-b4a1-ce7289b975c5",
+      "article_id": "b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5",
+      "topic_id": "2721b6d2-496a-4b06-8fd9-b9599d84b266",
+      "text": "What is an isolation joint in structural construction?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A joint that controls random cracking during concrete curing by allowing minor movements"
+        },
+        {
+          "id": "b",
+          "text": "A joint that accommodates thermal movement, especially in large concrete slabs exposed to temperature variations"
+        },
+        {
+          "id": "c",
+          "text": "A joint that completely separates two structural systems, allowing independent movement"
+        },
+        {
+          "id": "d",
+          "text": "A joint that transfers shear loads between concrete sections, ensuring structural integrity under lateral forces"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "That is a control joint function.",
+        "b": "That is an expansion joint function.",
+        "d": "That is a construction joint function via dowel bars.",
+        "correct": "Isolation joints (or isolation bearings) provide complete separation between adjacent structures, allowing independent vertical and lateral movement without rigid connection.",
+        "takeaway": "Isolation = complete separation (used between new additions and existing buildings). Think 'no connection at all.'"
+      },
+      "explanation": "That is a control joint function. That is an expansion joint function. That is a construction joint function via dowel bars. Isolation joints (or isolation bearings) provide complete separation between adjacent structures, allowing independent vertical and lateral movement without rigid connection. Isolation = complete separation (used between new additions and existing buildings). Think 'no connection at all.'",
+      "code_citation": "NSCP 2015 Structural Design Provisions",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-008-02-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-05-06T15:15:14.306445+00:00",
+      "content_hash": "sha256:2ac855ef53ca68c1ff231d71d23e49fc1f42f6002a5ee7af5a5f9b07e2a9177a"
+    },
     {
       "question_id": "f875ea2b-e341-47d6-a3fd-bc9527ba25b4",
       "article_id": "b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5",
@@ -139,7 +189,7 @@
         "correct": "An isolation joint (or isolation bearing) allows independent settlement of each building without transferring loads or restricting movement. Rigid connections would crack under differential settlement.",
         "takeaway": "When in doubt about differential settlement or incompatible structures, specify isolation joints with bearing pads."
       },
-      "explanation": null,
+      "explanation": "Expansion joints handle thermal movement, not settlement accommodation. Control joints manage shrinkage cracking, not differential settlement. Construction joints use dowels to transfer load; they do not allow independent movement. An isolation joint (or isolation bearing) allows independent settlement of each building without transferring loads or restricting movement. Rigid connections would crack under differential settlement. When in doubt about differential settlement or incompatible structures, specify isolation joints with bearing pads.",
       "code_citation": "NSCP 2015 Structural Design Provisions",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
@@ -151,8 +201,8 @@
       "model_id": "ALE-MATL-008-02-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.473222+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:9a6625cfef556568b2356cbe7d3ba8b70d7e6ce50d69d932edbaf070b644c323"
+      "updated_at": "2026-05-06T15:15:13.954385+00:00",
+      "content_hash": "sha256:539fc2824250cbce945587b97369943aa0917ce552282d089597522bd513ad28"
     },
     {
       "question_id": "ba6f430c-26f3-43d2-b022-4d7be552200d",
@@ -189,7 +239,7 @@
         "correct": "Mid-depth placement ensures dowels are fully effective at transferring shear between the two concrete pours. Surface placement leaves most of the slab thickness unbraced, reducing shear capacity and allowing relative movement.",
         "takeaway": "Dowel bars must be at mid-depth for full effectiveness. Surface placement = construction defect."
       },
-      "explanation": null,
+      "explanation": "Dowel placement does not affect thermal expansion accommodation. Corrosion is a concern but not the primary structural consequence. Dowel placement is critical to structural performance. Mid-depth placement ensures dowels are fully effective at transferring shear between the two concrete pours. Surface placement leaves most of the slab thickness unbraced, reducing shear capacity and allowing relative movement. Dowel bars must be at mid-depth for full effectiveness. Surface placement = construction defect.",
       "code_citation": "NSCP 2015 Concrete Design Provisions and ACI 318",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
@@ -201,8 +251,8 @@
       "model_id": "ALE-MATL-008-02-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.473222+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:03f48da895792cda3aeae689ee4f8fe0c8c7f2ce0963795327f779debc6b7c1c"
+      "updated_at": "2026-05-06T15:15:14.103618+00:00",
+      "content_hash": "sha256:79909b490ec43f8e06a8f0ddfe4b0a4b2ea750a77119441bd42a7a0a801fbb48"
     },
     {
       "question_id": "fe655d63-6f5e-4c86-8e02-7bcb3fbb93d8",
@@ -255,56 +305,6 @@
       "content_hash": "sha256:f608d4c423744aa98666342ba33ef93bc11905a95f212605a1f01de2a1fd9bd7"
     },
     {
-      "question_id": "dc4b2ccb-c761-48dd-b4a1-ce7289b975c5",
-      "article_id": "b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5",
-      "topic_id": "2721b6d2-496a-4b06-8fd9-b9599d84b266",
-      "text": "What is an isolation joint in structural construction?",
-      "options": [
-        {
-          "id": "a",
-          "text": "A joint that controls random cracking during concrete curing by allowing minor movements"
-        },
-        {
-          "id": "b",
-          "text": "A joint that accommodates thermal movement, especially in large concrete slabs exposed to temperature variations"
-        },
-        {
-          "id": "c",
-          "text": "A joint that completely separates two structural systems, allowing independent movement"
-        },
-        {
-          "id": "d",
-          "text": "A joint that transfers shear loads between concrete sections, ensuring structural integrity under lateral forces"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "That is a control joint function.",
-        "b": "That is an expansion joint function.",
-        "d": "That is a construction joint function via dowel bars.",
-        "correct": "Isolation joints (or isolation bearings) provide complete separation between adjacent structures, allowing independent vertical and lateral movement without rigid connection.",
-        "takeaway": "Isolation = complete separation (used between new additions and existing buildings). Think 'no connection at all.'"
-      },
-      "explanation": null,
-      "code_citation": "NSCP 2015 Structural Design Provisions",
-      "bloom_level": "understand",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-MATL-008-02-005",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:28.473222+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:176f428cfcb0450bb45e86009b3f17974ac2043fad24d7ef08e5a9cfcfacfc43"
-    },
-    {
       "question_id": "88765cc5-82d4-4877-9dfc-a700b7b5c4f8",
       "article_id": "b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5",
       "topic_id": "2721b6d2-496a-4b06-8fd9-b9599d84b266",
@@ -339,7 +339,7 @@
         "correct": "Dowel bar spacing (typically 6-24 inches) depends on shear demand and bar size per design. and prevents differential settlement.",
         "takeaway": "Dowel spacing directly affects shear transfer capacity. Tighter spacing (12 in) is preferred in high-load applications."
       },
-      "explanation": null,
+      "explanation": "6 inches is unnecessarily close and increases cost. 24 inches spacing is too wide; shear transfer capacity is compromised. 36 inches exceeds safe spacing for dowel load transfer. Dowel bar spacing (typically 6-24 inches) depends on shear demand and bar size per design. and prevents differential settlement. Dowel spacing directly affects shear transfer capacity. Tighter spacing (12 in) is preferred in high-load applications.",
       "code_citation": "NSCP 2015 Concrete Design Provisions",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
@@ -351,8 +351,8 @@
       "model_id": "ALE-MATL-008-02-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.473222+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:f6ae7428ad748a32fc3cd38630c1c56653f7f4117c6be324edb24ea6b80c7a1b"
+      "updated_at": "2026-05-06T15:15:14.583855+00:00",
+      "content_hash": "sha256:203ec0d232e42803093b475322ab1abe0466585f420aab8fce9908b647d994af"
     },
     {
       "question_id": "887bd3ab-f020-4174-8e3f-5efab5067597",
@@ -389,7 +389,7 @@
         "correct": "Expansion joints allow continuous gaps that accommodate thermal expansion as temperature rises, preventing stress buildup and buckling.",
         "takeaway": "Expansion = thermal movement; Control = drying shrinkage; Construction = shear transfer; Isolation = complete separation."
       },
-      "explanation": null,
+      "explanation": "That is the function of control joints, not expansion joints. Dowel bars in construction joints transfer shear; expansion joints are for movement accommodation. That is the function of isolation joints. Expansion joints allow continuous gaps that accommodate thermal expansion as temperature rises, preventing stress buildup and buckling. Expansion = thermal movement; Control = drying shrinkage; Construction = shear transfer; Isolation = complete separation.",
       "code_citation": "NSCP 2015 Concrete Design Provisions",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
@@ -401,8 +401,8 @@
       "model_id": "ALE-MATL-008-02-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.473222+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:c3e76276acb15b46f76286aef311e2ecd8dd9ff80b7859cd844ad8acbb649899"
+      "updated_at": "2026-05-06T15:15:14.729809+00:00",
+      "content_hash": "sha256:748eaa49cfb0a1acbf30248b0902da68f528352b3fc23360b674ad272beb4a82"
     },
     {
       "question_id": "8b3a89a7-67c3-4291-bfcf-b1f2a228602c",
@@ -439,7 +439,7 @@
         "correct": "Moment connections are rigid and transfer full bending moments required for lateral stability (e.g., seismic frames). Shear (simple) connections allow rotation and transfer only gravity loads.",
         "takeaway": "Moment = rigid (seismic); Shear = simple (gravity). Seismic zones demand moment connections."
       },
-      "explanation": null,
+      "explanation": "Moment connections are more expensive, not economical. Both types can be bolted or welded; fastening method is independent of connection type. Both types are used in all building classifications depending on structural demands. Moment connections are rigid and transfer full bending moments required for lateral stability (e.g., seismic frames). Shear (simple) connections allow rotation and transfer only gravity loads. Moment = rigid (seismic); Shear = simple (gravity). Seismic zones demand moment connections.",
       "code_citation": "NSCP 2015 Steel Design Provisions",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
@@ -451,8 +451,8 @@
       "model_id": "ALE-MATL-008-02-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.473222+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:2e34795dd1673e86d8ef94fa14bd0fccec0a74f9eaacd889b5d3739b0c45ddd4"
+      "updated_at": "2026-05-06T15:15:14.87812+00:00",
+      "content_hash": "sha256:87f9e9a928e90c49470f8b08e1e60b8c45a039faeb0bd325e0ad2f0477c97f5a"
     },
     {
       "question_id": "38633d41-612b-4cc2-b0c1-d28e46909051",

@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Theo 003 09 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 
 ## Learning Goal
@@ -7,7 +16,11 @@ Identify Kevin Lynch's five elements of urban legibility — paths, edges, distr
 
 ### Spatial Legibility and Environmental Perception
 
-<ArticleMedia id="media-lea-theo-003-09-core-concept" type="image" caption="Kevin Lynch's Five Elements of Urban Legibility — Paths, Edges, Districts, Nodes, Landmarks" description="Diagram illustrating Lynch's framework from The Image of the City (1960): A city map annotated with: (1) Paths — the channels of movement (streets, walkways, transit lines) shown as red lines; (2) Edges — linear boundaries (shorelines, walls, edges of development) shown as blue boundaries; (3) Districts — medium-to-large areas with recognizable character (neighborhoods, quarters) shown as colored zones; (4) Nodes — strategic points of convergence (intersections, squares, transit hubs) shown as green circles; (5) Landmarks — external reference points (towers, domes, signs, mountains) shown as triangular markers. A mental map/ cognitive map is shown as a simplified version alongside." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-theo-003-09-core-concept", type="image", caption="Kevin Lynch's Five Elements of Urban Legibility — Paths, Edges, Districts, Nodes, Landmarks", description="Diagram illustrating Lynch's framework from The Image of the City (1960): A city map annotated with: (1) Paths — the channels of movement (streets, walkways, transit lines) shown as red lines; (2) Edges — linear boundaries (shorelines, walls, edges of development) shown as blue boundaries; (3) Districts — medium-to-large areas with recognizable character (neighborhoods, quarters) shown as colored zones; (4) Nodes — strategic points of convergence (intersections, squares, transit hubs) shown as green circles; (5) Landmarks — external reference points (towers, domes, signs, mountains) shown as triangular markers. A mental map/ cognitive map is shown as a simplified version alongside.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ### Spatial Legibility and Environmental Perception
 
@@ -17,9 +30,17 @@ Research demonstrates that legibility directly affects occupant experience and b
 
 Legibility operates at multiple scales. At the building scale, clear circulation hierarchy, visible spatial organization, and intuitive connection between spaces create legibility. At the district scale, clear boundaries defining districts, visible landmarks, and obvious path networks create legibility. At the city scale, recognizable neighborhoods, clear major axes, and distinctive districts enable mental mapping and navigation. Architects operating at any scale benefit from understanding legibility principles and applying them systematically.
 
-<Tip>Memory aid: Lynch's five elements spell **PEDNL** (Paths, Edges, Districts, Nodes, Landmarks). Remember that paths dominate mental maps—people navigate *along* channels of movement first, then orient using nodes and landmarks.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Memory aid: Lynch's five elements spell **PEDNL** (Paths, Edges, Districts, Nodes, Landmarks). Remember that paths dominate mental maps—people navigate *along* channels of movement first, then orient using nodes and landmarks.
+[/SLATECAMP_UI_BLOCK]
 
-<Note>Lynch conducted his research in the 1950s, not later—his 1960 book *The Image of the City* summarized five years of prior fieldwork. This is crucial: Lynch's framework is based on empirical research asking residents to sketch mental maps, not theoretical speculation.</Note>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Lynch conducted his research in the 1950s, not later—his 1960 book *The Image of the City* summarized five years of prior fieldwork. This is crucial: Lynch's framework is based on empirical research asking residents to sketch mental maps, not theoretical speculation.
+[/SLATECAMP_UI_BLOCK]
 
 ### Kevin Lynch's Five Elements of the City
 
@@ -72,7 +93,11 @@ Illegible cities lack clear element organization. Paths lack hierarchy; visitors
 
 The beauty of Lynch's framework is its applicability beyond urban scale. Hospitals organize paths (corridor networks), edges (departmental boundaries), districts (inpatient, outpatient, administrative), nodes (major junctions, waiting areas), and landmarks (distinctive architectural features). Universities organize paths (major pedestrian and vehicle routes), edges (campus boundaries, zone definitions), districts (academic, residential, athletic zones), nodes (central gathering spaces, major junctions), and landmarks (distinctive buildings, monuments). Office buildings organize paths (elevator cores, major corridors), edges (floor plate boundaries, zone divisions), districts (department groupings), nodes (major gathering spaces, elevator lobbies), and landmarks (distinctive interior features).
 
-<Warn>The most critical distinction: nodes and landmarks are NOT interchangeable. A node is a place you enter and occupy (intersection, plaza, lobby). A landmark is a point you view from distance (tower, monument, distinctive facade). Confusing these is common on exams and undermines legibility analysis.</Warn>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: The most critical distinction: nodes and landmarks are NOT interchangeable. A node is a place you enter and occupy (intersection, plaza, lobby). A landmark is a point you view from distance (tower, monument, distinctive facade). Confusing these is common on exams and undermines legibility analysis.
+[/SLATECAMP_UI_BLOCK]
 
 ### Environmental Legibility and Psychological Impact
 
@@ -96,38 +121,68 @@ However, excellent design prioritizes spatial organization before signage. A bui
 
 ## Key Facts and Testable Items
 
-<WikiExamTable headers={["Concept", "Definition", "Architectural Application", "LEA Test Pattern"]} rows={[['["**Spatial Legibility**", "Clarity of spatial organization enabling navigation and orientation without disorientation or excessive effort", "Design clear circulation hierarchy, visible organization, intuitive connections", "Analyze building for legibility problems; propose modifications improving clarity"]', '["**Paths**", "Channels of movement (streets, corridors, transit routes) structuring human movement and organizing mental maps", "Design clear path hierarchy with primary routes distinguished from secondary; ensure path continuity and distinctiveness", "Plan circulation system with clear primary and secondary paths; explain navigation logic"]', '["**Edges**", "Linear breaks in continuity (boundaries, barriers, transitions) defining territories and organizing spatial understanding", "Define district boundaries through architectural edges; create clear inside-outside definition", "Design edges as permeable transitions supporting connectivity while defining areas"]', '["**Districts**", "Areas with coherent characteristic features and identity; neighborhoods or functional zones with internal coherence", "Organize large complexes into identifiable districts with consistent character; ensure clear district boundaries", "Group spaces into districts; explain district differentiation strategy"]', '["**Nodes**", "Strategic foci (junctions of paths, concentrations of activity) serving as anchoring points in mental maps", "Design recognizable nodes (lobbies, major junctions, gathering spaces) with distinctive character; mark node positions through architecture", "Design major circulation junctions as nodes; explain node function in organizing spatial understanding"]', '["**Landmarks**", "Distinctive point references (buildings, sculptures, natural features) used for orientation and spatial reference", "Position distinctive architectural elements at major paths and junctions where visible and memorable; ensure genuine distinctiveness", "Identify landmark opportunities; design distinctive features supporting wayfinding"]', '["**Imageability**", "Quality making places distinctive, memorable, and easy to recognize; clarity of spatial perception and navigation", "Design for high imageability through clear element organization, distinctive character, memorable spatial sequences", "Evaluate designs for imageability; propose modifications enhancing distinctiveness and memorability"]', '["**The Image of the City**", "Kevin Lynch\'s 1960 foundational research documenting five urban elements (paths, edges, districts, nodes, landmarks)", "Apply Lynch\'s framework at building or district sclea; organize spaces using five-element strategy", "Analyze projects using Lynch\'s framework; design using all five elements systematically"]', '["**Environmental Legibility Qualities**", "Visibility, coherence, consistent organization, appropriate sclea supporting navigation and psychological comfort", "Design with clear visual connections, consistent organizational logic, human-sclead detail", "Evaluate designs for visibility, coherence, and human sclea"]', '["**Wayfinding Systems**", "Hierarchical signage and directional systems supporting navigation; secondary to spatial organization", "Design signage systems supplementing spatial organization; employ multimodal information (text, symbols, color, audio)", "Propose wayfinding strategies for complex buildings; justify signage placement and hierarchy"]']]} />
+[SLATECAMP_UI_BLOCK:ui_0005 component="WikiExamTable" status="preserved"]
+Extracted summary:
+- Props: headers="{[\"Concept\", \"Definition\", \"Architectural Application\", \"LEA Test Pattern\"]}", rows="{[['[\"**Spatial Legibility**\", \"Clarity of spatial organization enabling navigation and orientation without disorientation or excessive effort\", \"Design clear circulation hierarchy, visible organization, intuitive connections\", \"Analyze building for legibility problems; propose modifications improving clarity\"]', '[\"**Paths**\", \"Channels of movement (streets, corridors, transit routes) structuring human movement and organizing mental maps\", \"Design clear path hierarchy with primary routes distinguished from secondary; ensure path continuity and distinctiveness\", \"Plan circulation system with clear primary and secondary paths; explain navigation logic\"]', '[\"**Edges**\", \"Linear breaks in continuity (boundaries, barriers, transitions) defining territories and organizing spatial understanding\", \"Define district boundaries through architectural edges; create clear inside-outside definition\", \"Design edges as permeable transitions supporting connectivity while defining areas\"]', '[\"**Districts**\", \"Areas with coherent characteristic features and identity; neighborhoods or functional zones with internal coherence\", \"Organize large complexes into identifiable districts with consistent character; ensure clear district boundaries\", \"Group spaces into districts; explain district differentiation strategy\"]', '[\"**Nodes**\", \"Strategic foci (junctions of paths, concentrations of activity) serving as anchoring points in mental maps\", \"Design recognizable nodes (lobbies, major junctions, gathering spaces) with distinctive character; mark node positions through architecture\", \"Design major circulation junctions as nodes; explain node function in organizing spatial understanding\"]', '[\"**Landmarks**\", \"Distinctive point references (buildings, sculptures, natural features) used for orientation and spatial reference\", \"Position distinctive architectural elements at major paths and junctions where visible and memorable; ensure genuine distinctiveness\", \"Identify landmark opportunities; design distinctive features supporting wayfinding\"]', '[\"**Imageability**\", \"Quality making places distinctive, memorable, and easy to recognize; clarity of spatial perception and navigation\", \"Design for high imageability through clear element organization, distinctive character, memorable spatial sequences\", \"Evaluate designs for imageability; propose modifications enhancing distinctiveness and memorability\"]', '[\"**The Image of the City**\", \"Kevin Lynch\\'s 1960 foundational research documenting five urban elements (paths, edges, districts, nodes, landmarks)\", \"Apply Lynch\\'s framework at building or district sclea; organize spaces using five-element strategy\", \"Analyze projects using Lynch\\'s framework; design using all five elements systematically\"]', '[\"**Environmental Legibility Qualities**\", \"Visibility, coherence, consistent organization, appropriate sclea supporting navigation and psychological comfort\", \"Design with clear visual connections, consistent organizational logic, human-sclead detail\", \"Evaluate designs for visibility, coherence, and human sclea\"]', '[\"**Wayfinding Systems**\", \"Hierarchical signage and directional systems supporting navigation; secondary to spatial organization\", \"Design signage systems supplementing spatial organization; employ multimodal information (text, symbols, color, audio)\", \"Propose wayfinding strategies for complex buildings; justify signage placement and hierarchy\"]']]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 ## How It's Tested on the LEA
 
-<ExamTip>**Pattern 1: Lynch's Framework Application**
-Stem: "Apply Kevin Lynch's five elements to design a 200-bed hospital building. How would you organize paths, edges, districts, nodes, and landmarks to create spatial legibility for patients, visitors, and staff?"
-Expected response: Paths: clear circulation hierarchy with primary public routes, secondary staff routes, and service routes clearly distinguished; continuous path logic enabling intuitive navigation. Edges: clear boundaries defining inpatient, outpatient, administrative, and support districts; permeable edges facilitating appropriate movement between areas. Districts: four or five distinct functional districts with internal coherence and clear character differentiation. Nodes: major junctions (main lobby, floor intersections, elevator lobbies) marked through architectural distinctiveness; activity concentrations at key nodes. Landmarks: distinctive architectural features positioned at major paths and junctions providing visual reference points.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 1: Lynch's Framework Application** Stem: "Apply Kevin Lynch's five elements to design a 200-bed hospital building. How would you organize paths, edges, districts, nodes, and landmarks to create spatial legibility for patients, visitors, and staff?" Expected response: Paths: clear circulation hierarchy with primary public routes, secondary staff routes, and service routes clearly distinguished; continuous path logic enabling intuitive navigation. Edges: clear boundaries defining inpatie
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>**Pattern 2: Legibility Problem Analysis**
-Stem: "A university building shows low wayfinding clarity despite comprehensive signage. Students report confusion locating classrooms; visitors cannot find administrative offices. Analyze legibility problems using Lynch's framework and propose design modifications."
-Expected response: Identification of failures: unclear path hierarchy making major-minor route distinction difficult; undefined district boundaries; unmarked nodes at circulation junctions; absent landmarks for orientation. Proposed solutions: clarify path hierarchy through width variation or material differentiation; define districts through consistent material/color schemes and edge articulation; mark nodes through architectural emphasis or activity concentration; add distinctive landmarks visible from major paths.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 2: Legibility Problem Analysis** Stem: "A university building shows low wayfinding clarity despite comprehensive signage. Students report confusion locating classrooms; visitors cannot find administrative offices. Analyze legibility problems using Lynch's framework and propose design modifications." Expected response: Identification of failures: unclear path hierarchy making major-minor route distinction difficult; undefined district boundaries; unmarked nodes at circulation junctions;
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>**Pattern 3: Wayfinding System Design**
-Stem: "Design a comprehensive wayfinding system for a mixed-use development (retail, office, residential) in Bonifacio Global City. The building is 15 stories with multiple wings. Develop a hierarchical signage strategy including primary, secondary, and tertiary wayfinding. Address both visual and accessible wayfinding requirements."
-Expected response: Primary wayfinding: large directional signs at entry indicating major zones (retail, office, residential); clear use hierarchy. Secondary wayfinding: floor-level directories, department or tenant identification, corridor signage. Tertiary wayfinding: room and suite numbers, parking level identification. Accessibility: high-contrast text meeting accessibility standards; symbols supplementing text for visual and non-visual users; audio announcements supporting navigation for low-vision occupants. Color-coding system differentiating retail (one color), office (second color), residential (third color). Explanation that good spatial organization reduces signage dependence.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 3: Wayfinding System Design** Stem: "Design a comprehensive wayfinding system for a mixed-use development (retail, office, residential) in Bonifacio Global City. The building is 15 stories with multiple wings. Develop a hierarchical signage strategy including primary, secondary, and tertiary wayfinding. Address both visual and accessible wayfinding requirements." Expected response: Primary wayfinding: large directional signs at entry indicating major zones (retail, office, residential)
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>**Pattern 4: Spatial Organization and Legibility**
-Stem: "Redesign a confused office floor plan with poor legibility. The existing plan has 40 offices and meeting spaces with unclear circulation and undifferentiated nodes. Apply legibility principles creating higher legibility."
-Expected response: Clear path hierarchy with primary corridor carrying major circulation, secondary corridors serving adjacent offices, tertiary paths accessing individual offices. Offices grouped into departments creating districts with visual differentiation. Major circulation junctions marked as nodes through architectural emphasis (wider spaces, distinctive flooring, visual distinctiveness). Landmark positioning (distinctive interior element or view) at major junctions for orientation. Color-coding or material differentiation supporting district recognition. Visual connection from main corridor to major spaces improving spatial comprehension.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0009 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 4: Spatial Organization and Legibility** Stem: "Redesign a confused office floor plan with poor legibility. The existing plan has 40 offices and meeting spaces with unclear circulation and undifferentiated nodes. Apply legibility principles creating higher legibility." Expected response: Clear path hierarchy with primary corridor carrying major circulation, secondary corridors serving adjacent offices, tertiary paths accessing individual offices. Offices grouped into departments creati
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>**Pattern 5: Complex Building Navigation**
-Stem: "A hospital emergency department expansion has created a confusing network of corridors. Design a phased renovation improving legibility for patients, visitors, and staff. Use Lynch's framework explaining proposed improvements."
-Expected response: Clear path analysis distinguishing public paths (patient/visitor circulation) from staff paths (care and support circulation). Edge definition separating waiting areas from treatment areas, emergency from urgent care zones. Districts: triage, treatment, support services as distinct districts with consistent character. Nodes: major junctions marked through distinctive features (waiting areas with distinctive furniture, nursing stations with visual prominence). Landmarks: visually distinctive features (artwork, architectural elements) at key decision points. Explanation of how clear organization reduces patient anxiety and improves staff efficiency.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0010 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 5: Complex Building Navigation** Stem: "A hospital emergency department expansion has created a confusing network of corridors. Design a phased renovation improving legibility for patients, visitors, and staff. Use Lynch's framework explaining proposed improvements." Expected response: Clear path analysis distinguishing public paths (patient/visitor circulation) from staff paths (care and support circulation). Edge definition separating waiting areas from treatment areas, emergency fro
+[/SLATECAMP_UI_BLOCK]
 
-<Callout>You must know Kevin Lynch's five elements of cities: paths, edges, districts, nodes, and landmarks from his 1960 book "The Image of the City." You must understand spatial legibility—clarity of spatial organization enabling occupants to navigate and orient themselves. The LEA will test your ability to design legible spaces, analyze existing buildings for legibility problems, and understand Lynch's framework for understanding spatial organization.</Callout>
+[SLATECAMP_UI_BLOCK:ui_0011 component="Callout" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: You must know Kevin Lynch's five elements of cities: paths, edges, districts, nodes, and landmarks from his 1960 book "The Image of the City." You must understand spatial legibility—clarity of spatial organization enabling occupants to navigate and orient themselves. The LEA will test your ability to design legible spaces, analyze existing buildings for legibility problems, and understand Lynch's framework for understanding spatial organization.
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
-<WikiMistakeCard mistake="Over-relying on signage without spatial clarity" correction="Assuming comprehensive signage compensates for poor spatial organization." context="Wayfinding systems are supplements to spatial clarity; excellent spatial organization requires minimal signage, while confused spatial organization cannot be saved by signing alone." />
+[SLATECAMP_UI_BLOCK:ui_0012 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Over-relying on signage without spatial clarity", correction="Assuming comprehensive signage compensates for poor spatial organization.", context="Wayfinding systems are supplements to spatial clarity; excellent spatial organization requires minimal signage, while confused spatial organization cannot be saved by signing alone."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeCard mistake="Misunderstanding Lynch's elements as limitations" correction="Assuming Lynch's five elements are complete spatial vocabulary and that other organizational strategies are unnecessary." context="Lynch's framework is powerful but not exhaustive; designers can use additional strategies while applying Lynch's thinking." />
+[SLATECAMP_UI_BLOCK:ui_0013 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Misunderstanding Lynch's elements as limitations", correction="Assuming Lynch's five elements are complete spatial vocabulary and that other organizational strategies are unnecessary.", context="Lynch's framework is powerful but not exhaustive; designers can use additional strategies while applying Lynch's thinking."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeList mistakes={["Ignoring sclea-based legibility. Designing for legibility at one sclea without considering other scleas. A building legible at close range might be illegible at city sclea if it lacks distinctive landmarks or clear relationship to urban context.", "Neglecting visual connection and transparency. Creating fragmented spaces with restricted visibility without understanding impact on legibility. Strategic visual connection—through windows, openings, or elevated vantage points—significantly improves spatial comprehension.", "Confusing edges with barriers. Assuming edges must be impermeable barriers. Edges define territories and provide structure; permeable edges allowing visual and physical connection support legibility while maintaining spatial organization.", "Designing without clear organizational logic. Creating complex spatial arrangements without clear generative logic or organizational principle. Occupants can follow coherent organization even when unfamiliar; incoherent organization produces disorientation."]} />
+[SLATECAMP_UI_BLOCK:ui_0014 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Ignoring sclea-based legibility. Designing for legibility at one sclea without considering other scleas. A building legible at close range might be illegible at city sclea if it lacks distinctive landmarks or clear relationship to urban context.\", \"Neglecting visual connection and transparency. Creating fragmented spaces with restricted visibility without understanding impact on legibility. Strategic visual connection—through windows, openings, or elevated vantage points—significantly improves spatial comprehension.\", \"Confusing edges with barriers. Assuming edges must be impermeable barriers. Edges define territories and provide structure; permeable edges allowing visual and physical connection support legibility while maintaining spatial organization.\", \"Designing without clear organizational logic. Creating complex spatial arrangements without clear generative logic or organizational principle. Occupants can follow coherent organization even when unfamiliar; incoherent organization produces disorientation.\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Terms
 

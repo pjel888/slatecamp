@@ -1,9 +1,62 @@
 {
   "article_id": "cd18af9a-b1e1-42d4-a254-ff5244838f19",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:3ae2c95b46b302459d93dbbc8cab9e4e348af019159a7d0e1a88a89035876daf",
+  "linked_questions_hash": "sha256:a79ac87c6e86924d6647180755dd8ab9671fd81aa2afbd371026249ad7122507",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "50cc5b35-126a-466c-83b9-5ae29ca35b33",
+      "article_id": "cd18af9a-b1e1-42d4-a254-ff5244838f19",
+      "topic_id": "3eaa1cf4-7e70-406f-995a-de8a7437672a",
+      "text": "A funeral home embalming room requires a specialized HVAC system. Which is the correct design approach?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Shared HVAC with the chapel to reduce costs, which may compromise air quality and odor control"
+        },
+        {
+          "id": "b",
+          "text": "Separate negative-pressure HVAC system to prevent odor transmission to public areas"
+        },
+        {
+          "id": "c",
+          "text": "Natural ventilation through windows only, which is insufficient for maintaining necessary air quality standards"
+        },
+        {
+          "id": "d",
+          "text": "Standard commercial HVAC serving the entire building equally, which does not address specific needs of the embalming room"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Shared HVAC allows odor/chemical transmission to chapel; separate system required.",
+        "c": "Natural ventilation is insufficient for chemical handling and odor control.",
+        "d": "Standard building HVAC cannot control negative pressure needed for embalming room.",
+        "correct": "Embalming room HVAC must be separate and maintain negative pressure (exhaust > intake) to prevent odor and chemical vapor from migrating to public areas (chapel, viewing room). (Funeral Home Design Standards, HVAC Best Practice)",
+        "takeaway": "Embalming room requires separate negative-pressure HVAC system for odor/chemical control."
+      },
+      "explanation": "Shared HVAC allows odor/chemical transmission to chapel; separate system required. Natural ventilation is insufficient for chemical handling and odor control. Standard building HVAC cannot control negative pressure needed for embalming room. Embalming room HVAC must be separate and maintain negative pressure (exhaust > intake) to prevent odor and chemical vapor from migrating to public areas (chapel, viewing room). (Funeral Home Design Standards, HVAC Best Practice) Embalming room requires separate negative-pressure HVAC system for odor/chemical control.",
+      "code_citation": "Funeral Home Design Standards; HVAC Best Practice",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "mechanical systems",
+        "embalming room design"
+      ],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-005-11-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:00.291039+00:00",
+      "updated_at": "2026-05-06T13:20:03.032305+00:00",
+      "content_hash": "sha256:5038e3b7752eb09e69b9c7d63a881a0846a22ae2609ce9ab1f929d21a9d57a20"
+    },
     {
       "question_id": "7be94c15-2df0-4cf2-8d2f-1317f457c215",
       "article_id": "cd18af9a-b1e1-42d4-a254-ff5244838f19",
@@ -480,59 +533,6 @@
       "created_at": "2026-03-23T19:29:00.291039+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:c9e4bb926f01c399bc6d38d2c35b4a8d15d930b05da608a1219add6fae685b35"
-    },
-    {
-      "question_id": "50cc5b35-126a-466c-83b9-5ae29ca35b33",
-      "article_id": "cd18af9a-b1e1-42d4-a254-ff5244838f19",
-      "topic_id": "3eaa1cf4-7e70-406f-995a-de8a7437672a",
-      "text": "A funeral home embalming room requires a specialized HVAC system. Which is the correct design approach?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Shared HVAC with the chapel to reduce costs, which may compromise air quality and odor control"
-        },
-        {
-          "id": "b",
-          "text": "Separate negative-pressure HVAC system to prevent odor transmission to public areas"
-        },
-        {
-          "id": "c",
-          "text": "Natural ventilation through windows only, which is insufficient for maintaining necessary air quality standards"
-        },
-        {
-          "id": "d",
-          "text": "Standard commercial HVAC serving the entire building equally, which does not address specific needs of the embalming room"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Shared HVAC allows odor/chemical transmission to chapel; separate system required.",
-        "c": "Natural ventilation is insufficient for chemical handling and odor control.",
-        "d": "Standard building HVAC cannot control negative pressure needed for embalming room.",
-        "correct": "Embalming room HVAC must be separate and maintain negative pressure (exhaust > intake) to prevent odor and chemical vapor from migrating to public areas (chapel, viewing room). (Funeral Home Design Standards, HVAC Best Practice)",
-        "takeaway": "Embalming room requires separate negative-pressure HVAC system for odor/chemical control."
-      },
-      "explanation": null,
-      "code_citation": "Funeral Home Design Standards; HVAC Best Practice",
-      "bloom_level": "analyze",
-      "application_context": "code_interpretation",
-      "practice_context": [
-        "mechanical systems",
-        "embalming room design"
-      ],
-      "difficulty": 0.9,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-DSGN-005-11-008",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:29:00.291039+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:46215e25bbc742bd4eae05d3fea888c5f2a019bc2700d59c35cf33578e1d8426"
     }
   ]
 }

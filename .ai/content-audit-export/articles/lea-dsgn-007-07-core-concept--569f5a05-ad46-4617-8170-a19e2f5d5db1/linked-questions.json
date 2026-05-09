@@ -1,9 +1,109 @@
 {
   "article_id": "569f5a05-ad46-4617-8170-a19e2f5d5db1",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:e507a3db0f00fe0c4885593e79f09e93e084459c799ac66399414557459a1727",
+  "linked_questions_hash": "sha256:67930b465a72a97d9135228ecc288a33bf7493aae951660618f5286f01ea1912",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "390172bf-1214-409a-b677-14b287b34c96",
+      "article_id": "569f5a05-ad46-4617-8170-a19e2f5d5db1",
+      "topic_id": "9c1b686e-6f57-4607-be6c-efd1ed92bf33",
+      "text": "Given: R-2 lot, 800 sqm, FLAR limit 2.0. If you design 4 floors of 320 sqm each, what is the resulting FLAR and is it compliant?",
+      "options": [
+        {
+          "id": "a",
+          "text": "FLAR = 1.60, compliant (within 1.5–2.5 range)"
+        },
+        {
+          "id": "b",
+          "text": "FLAR = 1.60, compliant (within 2.0 limit)"
+        },
+        {
+          "id": "c",
+          "text": "FLAR = 2.0, compliant (exactly at limit)"
+        },
+        {
+          "id": "d",
+          "text": "FLAR = 2.56, non-compliant (exceeds 2.0 limit)"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Correct FLAR value but incorrect reasoning (R-2 range is 1.5–2.5, but this problem specifies 2.0 limit, which is stricter or specific to this zoning condition).",
+        "c": "Wrong FLAR value; 4×320÷800 ≠ 2.0.",
+        "d": "Wrong FLAR value; miscalculation or confusion with different lot size.",
+        "correct": "TGFA = 4×320 = 1,280 sqm. FLAR = 1,280÷800 = 1.60. Limit is 2.0, so 1.60 < 2.0 ✓ compliant.",
+        "takeaway": "FLAR = TGFA ÷ TLA. Compare result against zoning limit. In this case, 1.60 < 2.0, so design is compliant."
+      },
+      "explanation": "Correct FLAR value but incorrect reasoning (R-2 range is 1.5–2.5, but this problem specifies 2.0 limit, which is stricter or specific to this zoning condition). Wrong FLAR value; 4×320÷800 ≠ 2.0. Wrong FLAR value; miscalculation or confusion with different lot size. TGFA = 4×320 = 1,280 sqm. FLAR = 1,280÷800 = 1.60. Limit is 2.0, so 1.60 < 2.0 ✓ compliant. FLAR = TGFA ÷ TLA. Compare result against zoning limit. In this case, 1.60 < 2.0, so design is compliant.",
+      "code_citation": "NBC Chapter 12 FLAR Verification",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-007-07-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:12.104711+00:00",
+      "updated_at": "2026-05-06T11:25:48.211871+00:00",
+      "content_hash": "sha256:be81560e62d8ce00d3cd5ef6e48e0dce2ebe476f8f79344e1d23affd2b853c8b"
+    },
+    {
+      "question_id": "8d589381-b75c-4736-8cad-6843b7247bc5",
+      "article_id": "569f5a05-ad46-4617-8170-a19e2f5d5db1",
+      "topic_id": "9c1b686e-6f57-4607-be6c-efd1ed92bf33",
+      "text": "Why is FLAR often a more restrictive constraint than BHL in dense commercial zones?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Because FLAR limits the total GFA relative to lot size, preventing excessive building density even if height allows it."
+        },
+        {
+          "id": "b",
+          "text": "Because commercial buildings are always wider than residential, so FLAR penalizes them by restricting the allowable floor area"
+        },
+        {
+          "id": "c",
+          "text": "Because BHL is measured from curb, while FLAR is measured from property line, affecting the overall building footprint"
+        },
+        {
+          "id": "d",
+          "text": "Because FLAR applies only in zones with high PSO%, limiting the potential for vertical expansion"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Irrelevant; building shape does not change FLAR calculation.",
+        "c": "Measurement point does not affect FLAR logic.",
+        "d": "FLAR applies to all zones, though limits vary.",
+        "correct": "FLAR (e.g., 9.0–12.0 in C-3) is a ratio cap that prevents the architect from stacking unlimited floors, even if height allows. In C-3, a small lot multiplied by high floor count quickly violates FLAR. BHL alone would suggest more floors than FLAR permits.",
+        "takeaway": "FLAR = TGFA ÷ TLA is a density ceiling. In commercial zones with large FLAR (9.0–34.0), it may still restrict smaller lots. Always check FLAR as a binding constraint."
+      },
+      "explanation": "Irrelevant; building shape does not change FLAR calculation. Measurement point does not affect FLAR logic. FLAR applies to all zones, though limits vary. FLAR (e.g., 9.0–12.0 in C-3) is a ratio cap that prevents the architect from stacking unlimited floors, even if height allows. In C-3, a small lot multiplied by high floor count quickly violates FLAR. BHL alone would suggest more floors than FLAR permits. FLAR = TGFA ÷ TLA is a density ceiling. In commercial zones with large FLAR (9.0–34.0), it may still restrict smaller lots. Always check FLAR as a binding constraint.",
+      "code_citation": "NBC Chapter 12 Zoning Principles",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-007-07-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:12.104711+00:00",
+      "updated_at": "2026-05-06T11:25:50.227045+00:00",
+      "content_hash": "sha256:9c35463b50e8823e25f8b584342eaf071c83ab29b741794051b1164d7e502933"
+    },
     {
       "question_id": "838e4c1b-dfda-4604-9bf5-49113e822d16",
       "article_id": "569f5a05-ad46-4617-8170-a19e2f5d5db1",
@@ -355,106 +455,6 @@
       "content_hash": "sha256:9a6c1dd040bc7f207c700d17449a7ba1559889ffd0a355e634684e18d044a12c"
     },
     {
-      "question_id": "390172bf-1214-409a-b677-14b287b34c96",
-      "article_id": "569f5a05-ad46-4617-8170-a19e2f5d5db1",
-      "topic_id": "9c1b686e-6f57-4607-be6c-efd1ed92bf33",
-      "text": "Given: R-2 lot, 800 sqm, FLAR limit 2.0. If you design 4 floors of 320 sqm each, what is the resulting FLAR and is it compliant?",
-      "options": [
-        {
-          "id": "a",
-          "text": "FLAR = 1.60, compliant (within 1.5–2.5 range)"
-        },
-        {
-          "id": "b",
-          "text": "FLAR = 1.60, compliant (within 2.0 limit)"
-        },
-        {
-          "id": "c",
-          "text": "FLAR = 2.0, compliant (exactly at limit)"
-        },
-        {
-          "id": "d",
-          "text": "FLAR = 2.56, non-compliant (exceeds 2.0 limit)"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Correct FLAR value but incorrect reasoning (R-2 range is 1.5–2.5, but this problem specifies 2.0 limit, which is stricter or specific to this zoning condition).",
-        "c": "Wrong FLAR value; 4×320÷800 ≠ 2.0.",
-        "d": "Wrong FLAR value; miscalculation or confusion with different lot size.",
-        "correct": "TGFA = 4×320 = 1,280 sqm. FLAR = 1,280÷800 = 1.60. Limit is 2.0, so 1.60 < 2.0 ✓ compliant.",
-        "takeaway": "FLAR = TGFA ÷ TLA. Compare result against zoning limit. In this case, 1.60 < 2.0, so design is compliant."
-      },
-      "explanation": null,
-      "code_citation": "NBC Chapter 12 FLAR Verification",
-      "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.7,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-DSGN-007-07-007",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:12.104711+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:e86cf8b820307220a5ae14c16c321eef8d43c283cdb95fbbaf6e647e22cea4d5"
-    },
-    {
-      "question_id": "8d589381-b75c-4736-8cad-6843b7247bc5",
-      "article_id": "569f5a05-ad46-4617-8170-a19e2f5d5db1",
-      "topic_id": "9c1b686e-6f57-4607-be6c-efd1ed92bf33",
-      "text": "Why is FLAR often a more restrictive constraint than BHL in dense commercial zones?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Because FLAR limits the total GFA relative to lot size, preventing excessive building density even if height allows it."
-        },
-        {
-          "id": "b",
-          "text": "Because commercial buildings are always wider than residential, so FLAR penalizes them by restricting the allowable floor area"
-        },
-        {
-          "id": "c",
-          "text": "Because BHL is measured from curb, while FLAR is measured from property line, affecting the overall building footprint"
-        },
-        {
-          "id": "d",
-          "text": "Because FLAR applies only in zones with high PSO%, limiting the potential for vertical expansion"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "b": "Irrelevant; building shape does not change FLAR calculation.",
-        "c": "Measurement point does not affect FLAR logic.",
-        "d": "FLAR applies to all zones, though limits vary.",
-        "correct": "FLAR (e.g., 9.0–12.0 in C-3) is a ratio cap that prevents the architect from stacking unlimited floors, even if height allows. In C-3, a small lot multiplied by high floor count quickly violates FLAR. BHL alone would suggest more floors than FLAR permits.",
-        "takeaway": "FLAR = TGFA ÷ TLA is a density ceiling. In commercial zones with large FLAR (9.0–34.0), it may still restrict smaller lots. Always check FLAR as a binding constraint."
-      },
-      "explanation": null,
-      "code_citation": "NBC Chapter 12 Zoning Principles",
-      "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.7,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-DSGN-007-07-006",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:12.104711+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:d3e8d13460b33df300d4e43fcd77f27a8ee42e03185f357bcd48037c77bc054c"
-    },
-    {
       "question_id": "b2a2200c-96e6-466f-a03e-8aeabf3fc714",
       "article_id": "569f5a05-ad46-4617-8170-a19e2f5d5db1",
       "topic_id": "9c1b686e-6f57-4607-be6c-efd1ed92bf33",
@@ -489,7 +489,7 @@
         "correct": "AMBF = Allowable Building Footprint, the portion of the lot you can occupy. Formula: AMBF = TLA × PSO%. For R-2 (PSO=70%), a 600 sqm lot yields AMBF = 600×0.70 = 420 sqm.",
         "takeaway": "AMBF is always PSO% of the lot. This single-floor footprint becomes the basis for calculating TGFA when multiplied by number of floors."
       },
-      "explanation": null,
+      "explanation": "Uses division instead of multiplication; incorrect formula. Conflates footprint with total GFA; ignores PSO%. Unrelated metric (maintenance floor); wrong formula. AMBF = Allowable Building Footprint, the portion of the lot you can occupy. Formula: AMBF = TLA × PSO%. For R-2 (PSO=70%), a 600 sqm lot yields AMBF = 600×0.70 = 420 sqm. AMBF is always PSO% of the lot. This single-floor footprint becomes the basis for calculating TGFA when multiplied by number of floors.",
       "code_citation": "Local Zoning Ordinance + PD 1096 Rule VII",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
@@ -501,8 +501,8 @@
       "model_id": "ALE-DSGN-007-07-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:12.104711+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:441c1bb4a2ff39ec8e5416405bb81e6b8e75f92fa0309cd880fe8b31be5e28be"
+      "updated_at": "2026-05-06T11:25:51.264381+00:00",
+      "content_hash": "sha256:42f93463ebd2ff588b7bdf12d95329f4fc2aeb55663a0db5d689bd52fa4e1b68"
     }
   ]
 }

@@ -1,9 +1,59 @@
 {
   "article_id": "ea6d06eb-e659-4092-ad67-14d4956cc4c6",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:c052b7a7a8634b687b9ede249cee5667226d7cce1a5e04f132740d5487503772",
+  "linked_questions_hash": "sha256:3d1431267c29c8f75404e615d89749b9570424b3e94e8d72b06c307e8f4cc0ea",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "22890f63-7cf6-465e-97f5-14391be65452",
+      "article_id": "ea6d06eb-e659-4092-ad67-14d4956cc4c6",
+      "topic_id": "ed3ab568-986d-43d5-bfc3-665dacdb7be8",
+      "text": "A museum gallery stores 500-year-old textiles. According to NCCA conservation standards, what is the recommended lighting level and critical environmental parameter?",
+      "options": [
+        {
+          "id": "a",
+          "text": "200 lux; temperature 15–20°C, which may not be suitable for all textile types"
+        },
+        {
+          "id": "b",
+          "text": "50 lux maximum, UV-free; humidity 45–55% RH with ±5% daily stability"
+        },
+        {
+          "id": "c",
+          "text": "150 lux; humidity range 30–70%, which is too broad for sensitive materials"
+        },
+        {
+          "id": "d",
+          "text": "300 lux; temperature 24°C, potentially causing deterioration over time"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "200 lux is too high for ancient textiles; will cause fading.",
+        "c": "Humidity range is too broad; causes dimensional instability.",
+        "d": "Lighting and temperature are both too high for long-term conservation.",
+        "correct": "Textiles are 'highly sensitive' to light. NCCA standards limit them to 50 lux and strictly UV-free. Humidity must be stable (45-55%) as fluctuations cause fiber stress.",
+        "takeaway": "Sensitive textiles: 50 lux max, 0 UV, 50% RH ±5%."
+      },
+      "explanation": "200 lux is too high for ancient textiles; will cause fading. Humidity range is too broad; causes dimensional instability. Lighting and temperature are both too high for long-term conservation. Textiles are 'highly sensitive' to light. NCCA standards limit them to 50 lux and strictly UV-free. Humidity must be stable (45-55%) as fluctuations cause fiber stress. Sensitive textiles: 50 lux max, 0 UV, 50% RH ±5%.",
+      "code_citation": "NCCA Conservation Guidelines",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-004-05-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:59.202547+00:00",
+      "updated_at": "2026-05-06T14:56:46.144845+00:00",
+      "content_hash": "sha256:b79cbb144f147e48d95b1df4bf4802f9c3abdeaae7edadddb306c469abee2cdb"
+    },
     {
       "question_id": "56d33dea-ed9e-48bc-a331-6bac8cf69231",
       "article_id": "ea6d06eb-e659-4092-ad67-14d4956cc4c6",
@@ -102,56 +152,6 @@
       "created_at": "2026-03-23T19:28:59.202547+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:a9e758a8771a171efe6509b2aefe40d37a60684a918fa95a946c97595b7444c9"
-    },
-    {
-      "question_id": "22890f63-7cf6-465e-97f5-14391be65452",
-      "article_id": "ea6d06eb-e659-4092-ad67-14d4956cc4c6",
-      "topic_id": "ed3ab568-986d-43d5-bfc3-665dacdb7be8",
-      "text": "A museum gallery stores 500-year-old textiles. According to NCCA conservation standards, what is the recommended lighting level and critical environmental parameter?",
-      "options": [
-        {
-          "id": "a",
-          "text": "200 lux; temperature 15–20°C, which may not be suitable for all textile types"
-        },
-        {
-          "id": "b",
-          "text": "50 lux maximum, UV-free; humidity 45–55% RH with ±5% daily stability"
-        },
-        {
-          "id": "c",
-          "text": "150 lux; humidity range 30–70%, which is too broad for sensitive materials"
-        },
-        {
-          "id": "d",
-          "text": "300 lux; temperature 24°C, potentially causing deterioration over time"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "200 lux is too high for ancient textiles; will cause fading.",
-        "c": "Humidity range is too broad; causes dimensional instability.",
-        "d": "Lighting and temperature are both too high for long-term conservation.",
-        "correct": "Textiles are 'highly sensitive' to light. NCCA standards limit them to 50 lux and strictly UV-free. Humidity must be stable (45-55%) as fluctuations cause fiber stress.",
-        "takeaway": "Sensitive textiles: 50 lux max, 0 UV, 50% RH ±5%."
-      },
-      "explanation": null,
-      "code_citation": "NCCA Conservation Guidelines",
-      "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.7,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-DSGN-004-05-004",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:28:59.202547+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:e0edc9ec19f39e553d403e8c061fab414dadcb37512b187d3d5a2ddaa351a684"
     },
     {
       "question_id": "46cc4ed2-9964-4d1a-9777-6798a7410d00",

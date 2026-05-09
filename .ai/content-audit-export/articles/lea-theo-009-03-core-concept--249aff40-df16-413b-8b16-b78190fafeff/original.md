@@ -1,9 +1,18 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Theo 009 03 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
-<Callout>
-
-Standardized space dimensions and area allocations are the quantitative foundation of programming and design; they ensure livable, functional, and code-compliant spaces. The LEA expects knowledge of dimensions from Philippine National Building Code (PD 1096), RA 9514 (Fire Code), BP 344 (Accessibility Law), and other DPWH standards. International references such as Ernst Neufert's *Architects' Data* and Time-Saver Standards provide supplementary design guidance but are not regulatory requirements for Philippine projects. Specific dimensions for bedrooms, living rooms, kitchens, bathrooms, and commercial spaces are testable knowledge—you must memorize critical benchmarks.
-
-</Callout>
+[SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Standardized space dimensions and area allocations are the quantitative foundation of programming and design; they ensure livable, functional, and code-compliant spaces. The LEA expects knowledge of dimensions from Philippine National Building Code (PD 1096), RA 9514 (Fire Code), BP 344 (Accessibility Law), and other DPWH standards. International references such as Ernst Neufert's *Architects' Data* and Time-Saver Standards provide supplementary design guidance but are not regulatory requirement
+[/SLATECAMP_UI_BLOCK]
 
 ## Learning Goal
 
@@ -13,13 +22,19 @@ Standardized space dimensions and area allocations are the quantitative foundati
 
 ## Core Concept
 
-<ArticleMedia id="media-lea-theo-009-03-space-standards" type="image" caption="Space Standards and Human Dimensions — Proportion Visual for Philippine Context" alt="Annotated floor plan proportion visual showing: Primary bedroom 12ft × 14ft (168 SF) with queen bed (5ft × 6.6ft), bedside tables, dresser, circulation paths. Secondary bedroom 10ft × 12ft (120 SF) with single bed. All dimensions annotated with PD 1096 minimums and Neufert/Time-Saver good-practice standards. Scale figure (1.7m tall) shown in each room for proportion reference. Callout boxes: 'Code minimum vs. good practice' and 'Ergonomics — door swing, bed clearance, furniture layout.'" suggestedAsset="Annotated floor plan proportion visual showing residential space standards with dimension callouts" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-theo-009-03-space-standards", type="image", caption="Space Standards and Human Dimensions — Proportion Visual for Philippine Context", alt="Annotated floor plan proportion visual showing: Primary bedroom 12ft × 14ft (168 SF) with queen bed (5ft × 6.6ft), bedside tables, dresser, circulation paths. Secondary bedroom 10ft × 12ft (120 SF) with single bed. All dimensions annotated with PD 1096 minimums and Neufert/Time-Saver good-practice standards. Scale figure (1.7m tall) shown in each room for proportion reference. Callout boxes: 'Code minimum vs. good practice' and 'Ergonomics — door swing, bed clearance, furniture layout.'", suggestedAsset="Annotated floor plan proportion visual showing residential space standards with dimension callouts", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 Space standards serve three purposes: they ensure human comfort and functionality, they enable predictable area programming and cost estimating, and they enforce code compliance. A bedroom designed at 8 feet by 10 feet (80 SF) may technically meet minimum code but is inadequate for modern living; standards establish that a primary bedroom should be 12 feet by 14 feet minimum (168 SF) to accommodate a queen bed, circulation, and furniture. Standards exist for every building type—residential, commercial, institutional, hospitality—and vary by climate, culture, and regulatory context.
 
-<Tip>
-**Code minimum ≠ design standard**: PD 1096 specifies legal minimums (70 SF for bedroom, 63 SF for kitchen) that produce cramped, inadequate spaces. ADSP expects design to standard practice, not code minimum. Standard practice (120 SF secondary bedroom, 168 SF primary, 120 SF kitchen) produces functional, comfortable spaces. Memorize both code minimums (for reference) and standard practice (for design). Most exam questions test whether you design to standards, not barely-code-compliant minimums.
-</Tip>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Code minimum ≠ design standard**: PD 1096 specifies legal minimums (70 SF for bedroom, 63 SF for kitchen) that produce cramped, inadequate spaces. ADSP expects design to standard practice, not code minimum. Standard practice (120 SF secondary bedroom, 168 SF primary, 120 SF kitchen) produces functional, comfortable spaces. Memorize both code minimums (for reference) and standard practice (for design). Most exam questions test whether you design to standards, not barely-code-compliant minimums.
+[/SLATECAMP_UI_BLOCK]
 
 ### Residential Space Standards
 
@@ -83,32 +98,70 @@ PD 1096 specifies minimum bathroom area of 3.0 square meters (approximately 32 S
 
 Standards account for circulation (corridors, stairs, elevators) and service (mechanical, storage, restrooms). Office buildings typically allocate 20–30% of total gross area to circulation and mechanical; healthcare buildings allocate 30–50% due to specialized circulation requirements and extensive mechanical/infrastructure systems. Single-family residences allocate 10–15% to circulation and service; multi-unit residential allocates 15–25%.
 
-<Note>
-Efficiency factor relationships: If a program specifies 1,000 NSF (net assignable area) and the efficiency factor is 0.70, the gross building area is 1,000 ÷ 0.70 = 1,429 GSF. This means 429 SF (30%) of the building is circulation, mechanical, structure, and other service areas. This is not waste—it's essential. Buildings with inadequate circulation (hallways too narrow, insufficient mechanical space) are dysfunctional. Efficiency factors below 0.60 (requiring 40% non-assignable area) are typical for complex buildings like hospitals. Residential achieves 0.75–0.85 (15–25% non-assignable) due to inherent efficiency.
-</Note>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Efficiency factor relationships: If a program specifies 1,000 NSF (net assignable area) and the efficiency factor is 0.70, the gross building area is 1,000 ÷ 0.70 = 1,429 GSF. This means 429 SF (30%) of the building is circulation, mechanical, structure, and other service areas. This is not waste—it's essential. Buildings with inadequate circulation (hallways too narrow, insufficient mechanical space) are dysfunctional. Efficiency factors below 0.60 (requiring 40% non-assignable area) are typica
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Facts and Testable Items
 
-<WikiExamTable headers={["Space Type", "Minimum Dimension", "Standard Allocation", "Notes"]} rows={[['["**Bedroom (Secondary)**", "10 ft × 12 ft", "120 SF", "Single bed + dresser + circulation"]', '["**Bedroom (Primary)**", "12 ft × 14 ft", "168 SF", "Queen bed + furniture + egress"]', '["**Living Room**", "13 ft × 12 ft", "150 SF", "Minimum comfortable arrangement"]', '["**Dining Area**", "12 ft × 10 ft", "120 SF", "Table + chair withdrawal"]', '["**Kitchen**", "10 ft × 12 ft", "120 SF", "Counters on 3 sides + appliances"]', '["**Full Bathroom**", "8 ft × 9 ft", "72 SF", "Toilet, sink, tub/shower + fixtures"]', '["**Half Bathroom**", "5 ft × 8 ft", "40 SF", "Toilet and sink only"]', '["**Private Office**", "10 ft × 12 ft", "120 SF", "Desk + visitor seating + filing"]', '["**Exam Room**", "10 ft × 12 ft", "120 SF", "Medical/clinical space per AIA"]', '["**Hotel Room**", "12 ft × 22 ft", "250–300 SF", "Bed + bathroom + entry"]', '["**Classroom**", "30–40 SF/student", "900–1,200 SF", "For 30-student class"]', '["**Office Open Plan**", "50–70 SF/station", "Variable", "Per workstation allocation"]', '["**Hallway**", "3.5–4 ft wide", "Variable", "Minimum circulation width"]']]} />
+[SLATECAMP_UI_BLOCK:ui_0005 component="WikiExamTable" status="preserved"]
+Extracted summary:
+- Props: headers="{[\"Space Type\", \"Minimum Dimension\", \"Standard Allocation\", \"Notes\"]}", rows="{[['[\"**Bedroom (Secondary)**\", \"10 ft × 12 ft\", \"120 SF\", \"Single bed + dresser + circulation\"]', '[\"**Bedroom (Primary)**\", \"12 ft × 14 ft\", \"168 SF\", \"Queen bed + furniture + egress\"]', '[\"**Living Room**\", \"13 ft × 12 ft\", \"150 SF\", \"Minimum comfortable arrangement\"]', '[\"**Dining Area**\", \"12 ft × 10 ft\", \"120 SF\", \"Table + chair withdrawal\"]', '[\"**Kitchen**\", \"10 ft × 12 ft\", \"120 SF\", \"Counters on 3 sides + appliances\"]', '[\"**Full Bathroom**\", \"8 ft × 9 ft\", \"72 SF\", \"Toilet, sink, tub/shower + fixtures\"]', '[\"**Half Bathroom**\", \"5 ft × 8 ft\", \"40 SF\", \"Toilet and sink only\"]', '[\"**Private Office**\", \"10 ft × 12 ft\", \"120 SF\", \"Desk + visitor seating + filing\"]', '[\"**Exam Room**\", \"10 ft × 12 ft\", \"120 SF\", \"Medical/clinical space per AIA\"]', '[\"**Hotel Room**\", \"12 ft × 22 ft\", \"250–300 SF\", \"Bed + bathroom + entry\"]', '[\"**Classroom**\", \"30–40 SF/student\", \"900–1,200 SF\", \"For 30-student class\"]', '[\"**Office Open Plan**\", \"50–70 SF/station\", \"Variable\", \"Per workstation allocation\"]', '[\"**Hallway**\", \"3.5–4 ft wide\", \"Variable\", \"Minimum circulation width\"]']]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 ## How It's Tested on the LEA
 
-<ExamTip>1. **Dimension Matching**: You are given a building program and asked to identify the appropriate room dimensions. "A primary bedroom in a residential project should be designed at minimum: (A) 10 ft × 10 ft. (B) 10 ft × 12 ft. (C) 12 ft × 14 ft. (D) 14 ft × 16 ft." Answer: (C), 12 ft × 14 ft (168 SF), accommodating a queen bed and standard furnishings.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: 1. **Dimension Matching**: You are given a building program and asked to identify the appropriate room dimensions. "A primary bedroom in a residential project should be designed at minimum: (A) 10 ft × 10 ft. (B) 10 ft × 12 ft. (C) 12 ft × 14 ft. (D) 14 ft × 16 ft." Answer: (C), 12 ft × 14 ft (168 SF), accommodating a queen bed and standard furnishings.
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>2. **Area Calculation from Program**: Given a residential program (3-bed, 2-bath, kitchen, living, dining, hallways), you calculate total net assignable area using standard allocations, then gross area using an efficiency factor. Example: Primary bedroom 168 SF + 2 secondary bedrooms at 120 SF each + 2 bathrooms at 72 SF each + kitchen 120 SF + living 200 SF + dining 120 SF + hallways 150 SF = 1,138 NSF. Applying 0.75 efficiency factor: 1,138 ÷ 0.75 = 1,517 GSF.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: 2. **Area Calculation from Program**: Given a residential program (3-bed, 2-bath, kitchen, living, dining, hallways), you calculate total net assignable area using standard allocations, then gross area using an efficiency factor. Example: Primary bedroom 168 SF + 2 secondary bedrooms at 120 SF each + 2 bathrooms at 72 SF each + kitchen 120 SF + living 200 SF + dining 120 SF + hallways 150 SF = 1,138 NSF. Applying 0.75 efficiency factor: 1,138 ÷ 0.75 = 1,517 GSF.
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>3. **Code Compliance Verification**: You are presented with a design and asked whether it meets PD 1096 or architectural standards. A bedroom shown as 8 ft × 9 ft fails to meet standard practice (120 SF minimum for secondary bedrooms) and may violate code depending on occupancy classification.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: 3. **Code Compliance Verification**: You are presented with a design and asked whether it meets PD 1096 or architectural standards. A bedroom shown as 8 ft × 9 ft fails to meet standard practice (120 SF minimum for secondary bedrooms) and may violate code depending on occupancy classification.
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>4. **Comparison of Standards Across References**: The LEA may reference multiple standards—Neufert, Time-Saver, Philippine Building Code, AIA Guidelines—and ask you to identify which is most restrictive or appropriate for a given context. Example: A hospital exam room designed at 80 SF (Neufert minimum) is adequate for basic examination but fails AIA standards (120 SF) for comfortable physician practice and infection control.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0009 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: 4. **Comparison of Standards Across References**: The LEA may reference multiple standards—Neufert, Time-Saver, Philippine Building Code, AIA Guidelines—and ask you to identify which is most restrictive or appropriate for a given context. Example: A hospital exam room designed at 80 SF (Neufert minimum) is adequate for basic examination but fails AIA standards (120 SF) for comfortable physician practice and infection control.
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>5. **Space Programming from Functional Requirements**: Given user needs and activities, you specify appropriate space dimensions. "A school library must accommodate 100 students studying simultaneously and provide book storage for 10,000 volumes. Allocating 15 SF per student for reading space and 0.1 SF per volume for shelving, what is the minimum library area?" Calculation: (100 × 15 SF) + (10,000 × 0.1 SF) = 1,500 + 1,000 = 2,500 SF minimum.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0010 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: 5. **Space Programming from Functional Requirements**: Given user needs and activities, you specify appropriate space dimensions. "A school library must accommodate 100 students studying simultaneously and provide book storage for 10,000 volumes. Allocating 15 SF per student for reading space and 0.1 SF per volume for shelving, what is the minimum library area?" Calculation: (100 × 15 SF) + (10,000 × 0.1 SF) = 1,500 + 1,000 = 2,500 SF minimum.
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
-<WikiMistakeCard mistake="Using Minimum Code Dimensions as Design Standard" correction="Confusing PD 1096 minimum allowable dimensions (70 SF bedroom, 63 SF kitchen) with design standard practice (120 SF bedroom, 120 SF kitchen). While code-compliant, minimum dimensions produce cramped, inadequate spaces." context="The LEA expects you to design to standard practice, not code minimum." />
+[SLATECAMP_UI_BLOCK:ui_0011 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Using Minimum Code Dimensions as Design Standard", correction="Confusing PD 1096 minimum allowable dimensions (70 SF bedroom, 63 SF kitchen) with design standard practice (120 SF bedroom, 120 SF kitchen). While code-compliant, minimum dimensions produce cramped, inadequate spaces.", context="The LEA expects you to design to standard practice, not code minimum."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeCard mistake="Underestimating Circulation and Support Area" correction="Programming only functional (net assignable) spaces without adding realistic allocation for corridors, mechanical, stairs, and structural elements." context="A 1,000 NSF program may require 1,400–1,600 GSF when circulation and mechanical are included (efficiency factor of 0.60–0.70)." />
+[SLATECAMP_UI_BLOCK:ui_0012 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Underestimating Circulation and Support Area", correction="Programming only functional (net assignable) spaces without adding realistic allocation for corridors, mechanical, stairs, and structural elements.", context="A 1,000 NSF program may require 1,400–1,600 GSF when circulation and mechanical are included (efficiency factor of 0.60–0.70)."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeList mistakes={["Inconsistency Between Program and Design. Specifying a bedroom as 12 ft × 14 ft in the program but designing it as 10 ft × 12 ft in the floorplan. Programs are binding documents; the design must satisfy programmed dimensions.", "Neglecting Bathroom Size. Allocating undersized bathrooms (less than 5 ft × 8 ft for full bath) that are dysfunctional. Standard 72 SF (8 ft × 9 ft) minimum is already tight for American fixtures; anything smaller compromises comfort and accessibility.", "Ignoring Fixture Dimensions and Clearances. Designing spaces without accounting for actual appliance and fixture sizes. A kitchen must accommodate a refrigerator (3.5 ft wide), stove (3 ft wide), and counter (2 ft deep) in addition to doors and circulation—cramming these into a 8 ft × 8 ft space (64 SF) is impossible and non-functional.", "Forgetting Service Areas. Omitting or drastically underestimating mechanical rooms, storage, restrooms, and circulation in the net area calculation. A residential building is typically 60–70% usable living space (net) and 30–40% mechanical/circulation/structure (gross). Failure to allocate adequate service area produces designs that violate code or perform poorly."]} />
+[SLATECAMP_UI_BLOCK:ui_0013 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Inconsistency Between Program and Design. Specifying a bedroom as 12 ft × 14 ft in the program but designing it as 10 ft × 12 ft in the floorplan. Programs are binding documents; the design must satisfy programmed dimensions.\", \"Neglecting Bathroom Size. Allocating undersized bathrooms (less than 5 ft × 8 ft for full bath) that are dysfunctional. Standard 72 SF (8 ft × 9 ft) minimum is already tight for American fixtures; anything smaller compromises comfort and accessibility.\", \"Ignoring Fixture Dimensions and Clearances. Designing spaces without accounting for actual appliance and fixture sizes. A kitchen must accommodate a refrigerator (3.5 ft wide), stove (3 ft wide), and counter (2 ft deep) in addition to doors and circulation—cramming these into a 8 ft × 8 ft space (64 SF) is impossible and non-functional.\", \"Forgetting Service Areas. Omitting or drastically underestimating mechanical rooms, storage, restrooms, and circulation in the net area calculation. A residential building is typically 60–70% usable living space (net) and 30–40% mechanical/circulation/structure (gross). Failure to allocate adequate service area produces designs that violate code or perform poorly.\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Terms
 
@@ -136,9 +189,11 @@ Efficiency factor relationships: If a program specifies 1,000 NSF (net assignabl
 
 **Fixture Dimensions** — Physical sizes of appliances, furniture, and equipment (bed 3 ft × 6.6 ft, refrigerator 3.5 ft wide, desk 4 ft × 6 ft) that constrain minimum room sizes.
 
-<Warn>
-Dimension consistency between program and design is binding: If your program specifies a bedroom as 12 ft × 14 ft (168 SF), your design floor plan must show this dimension. Shrinking it to 10 ft × 12 ft violates the program. Some designers rationalize this by claiming "the spaces are generous in other dimensions" or "the user won't notice the difference." This is unprofessional. A program is a contract with the client. Designs must satisfy programmed dimensions or document explicitly why deviations are necessary and how they affect functionality.
-</Warn>
+[SLATECAMP_UI_BLOCK:ui_0014 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Dimension consistency between program and design is binding: If your program specifies a bedroom as 12 ft × 14 ft (168 SF), your design floor plan must show this dimension. Shrinking it to 10 ft × 12 ft violates the program. Some designers rationalize this by claiming "the spaces are generous in other dimensions" or "the user won't notice the difference." This is unprofessional. A program is a contract with the client. Designs must satisfy programmed dimensions or document explicitly why deviati
+[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 

@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Strc 002 04 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 ## Learning Goal
 By the end of this article, you will be able to:
@@ -10,7 +19,11 @@ By the end of this article, you will be able to:
 Walls are classified by their structural function: bearing, non-bearing, parapet, retaining, and specialty walls. Each type has distinct design criteria, materials, and load paths. Bearing wall classifications use specific NSCP thresholds to separate load-bearing from non-load-bearing roles.
 
 ## Core Concept
-<ArticleMedia id="media-lea-strc-002-04-core-concept" type="image" caption="Wall Types — Bearing, Non-Bearing, Parapet, and Retaining" description="Building cross-section diagram identifying four wall types: bearing wall (supporting slab loads above), non-bearing/curtain wall (self-weight only, attached to frame), parapet wall (extending above roofline with anchorage detail), and retaining wall (resisting lateral earth pressure with counterfort/buttress options). Load paths shown for each type." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-strc-002-04-core-concept", type="image", caption="Wall Types — Bearing, Non-Bearing, Parapet, and Retaining", description="Building cross-section diagram identifying four wall types: bearing wall (supporting slab loads above), non-bearing/curtain wall (self-weight only, attached to frame), parapet wall (extending above roofline with anchorage detail), and retaining wall (resisting lateral earth pressure with counterfort/buttress options). Load paths shown for each type.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 A **bearing wall** is a wall that supports vertical (gravity) loads from above in addition to its own weight. NSCP 2015 classifies bearing walls in seismic design tables (Table 208-11); specific superimposed load thresholds require verification from Volume 2 material sections. These thresholds are critical—below them, walls are considered non-bearing.
 
@@ -53,13 +66,21 @@ In the Philippines, bearing masonry walls are standard in residential constructi
 
 **Apply-level:** Given a 5-story residential building with 2.0 kN/m load on each wood stud wall, classify the wall and specify design requirements.
 
-<Tip>**Memory aid:** Light-frame 1.45, masonry 2.90. Think "light is half" — stud threshold is exactly half the masonry threshold (1.45 = 2.90/2). These convert from 100 plf and 200 plf. Cavity walls: "51 to 114" — remember the range by rounding (50–100 ≈ 51–114).</Tip>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Memory aid:** Light-frame 1.45, masonry 2.90. Think "light is half" — stud threshold is exactly half the masonry threshold (1.45 = 2.90/2). These convert from 100 plf and 200 plf. Cavity walls: "51 to 114" — remember the range by rounding (50–100 ≈ 51–114).
+[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 
 See also: **Bearing Wall Systems** (lea-strc-002-01) for the complete structural system, **Shear Walls** (lea-strc-002-02) for lateral-force-resisting walls, and **Masonry Construction** (lea-strc-010-01) for masonry bearing wall details.
 
 ## Common Mistakes
-<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: These are frequently tested traps. Memorize them to avoid losing easy points on exam day.
+[/SLATECAMP_UI_BLOCK]
 
 <WikiMistakeList mistakes={["Using the wrong bearing wall threshold — light-frame is 1.45 kN/m (100 plf), masonry is 2.90 kN/m (200 plf). Using older values of 0.5/1.0 kN/m is an outdated error.","Treating bearing and non-bearing walls identically in design — bearing walls require compression design, foundation anchoring","Ignoring cavity wall air space limits; walls with gaps < 51mm or > 114mm violate NSCP"]} />

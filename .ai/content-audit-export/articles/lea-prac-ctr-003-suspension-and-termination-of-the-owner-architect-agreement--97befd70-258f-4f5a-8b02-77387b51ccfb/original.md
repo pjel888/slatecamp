@@ -1,3 +1,10 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Lea Prac Ctr 003 Suspension And Termination Of The Owner Architect Agreement** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
 ## Suspension and Termination of the Owner-Architect Agreement
 
 ## Learning Goal
@@ -27,22 +34,11 @@ Upon termination for cause, the architect is entitled to compensation for servic
 
 ### Termination for Convenience
 
-<Note>
-\
-Termination for convenience allows the Owner to end the agreement at any time without cause. Upon written notice, the architect ceases work immediately. The architect receives compensation for all services rendered and consultant fees reimbursed through the termination date, calculated on a phase-completion or time-expended basis as specified in the agreement.
-
-Compensation upon termination for convenience is calculated based on the phase-completion or time-expended basis specified in the agreement. Common AIA-based allocations include approximately 15% for Schematic Design and 35% for Design Development, but actual percentages must be confirmed in the specific contract, as they vary by agreement and jurisdiction. The agreement should clearly establish the compensation calculation for termination at any point, preventing disputes over payment upon early termination. The Owner takes possession of all drawings and design work and may use them to complete the project with another architect or to proceed to construction if substantially complete.
-
-### Post-Termination Obligations
-
-Upon termination, the architect's primary obligation is to transition all project information to the Owner or a successor architect. This includes delivering all original and reproducible copies of drawings, specifications, consultant reports, permits, submittals, and correspondence. The architect should also provide a summary of design decisions, systems selections, and any open issues that would assist a successor architect in completing the work.
-
-The architect does not warrant that work in progress at termination is complete or free from errors. If the successor architect discovers inconsistencies or deficiencies in the documents, those become the successor's responsibility unless the original architect's negligence is established. The architect's liability for defective design is not eliminated by termination; it continues under applicable law (RA 9266 for Philippine-registered architects, or per the contract's governing law) for the period specified in the agreement or statute of limitations.
-
-### Suspension and Termination of the Contractor Relationship
-
-During Construction Administration, the architect may recommend suspension or termination of the contractor relationship to the Owner, but the architect does not have authority to suspend or terminate the construction contract independently. The architect's role is to certify whether the contractor's work complies with thion, or termination. The Owner makes the final decision to suspend or terminate.
-</Note>
+[SLATECAMP_UI_BLOCK:ui_0001 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: \ Termination for convenience allows the Owner to end the agreement at any time without cause. Upon written notice, the architect ceases work immediately. The architect receives compensation for all services rendered and consultant fees reimbursed through the termination date, calculated on a phase-completion or time-expended basis as specified in the agreement. Compensation upon termination for convenience is calculated based on the phase-completion or time-expended basis specified in the agree
+[/SLATECAMP_UI_BLOCK]
 ## Related Articles
 
 - [Standard Owner-Architect Agreement](lea-prac-ctr-001)
@@ -56,19 +52,29 @@ During Construction Administration, the architect may recommend suspension or te
 - [Dispute Resolution](lea-prac-ctr-020)
 - [Fee Compensation Methods](lea-prac-cmp-001)
 
-<LawCallout code="uap" section="SPP Doc. 202 - Suspension and Termination">
-RA 9266, Section 25 — The architect shall not be held liable for delay caused by force majeure or acts of the Owner.
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="uap", section="SPP Doc. 202 - Suspension and Termination"
+- Text: RA 9266, Section 25 — The architect shall not be held liable for delay caused by force majeure or acts of the Owner.
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - Props: (none)
 - Text: RA 9266, Section 25 — The architect shall not be held liable for delay caused...
 
-<ProcessFlow steps={["Owner gives written notice", "Architect ceases active work or invokes cure period", "Compensation calculated for work performed", "Architect delivers all documents to Owner", "Owner engages successor or proceeds to close-out"]} />
+[SLATECAMP_UI_BLOCK:ui_0003 component="ProcessFlow" status="preserved"]
+Extracted summary:
+- Props: steps="{[\"Owner gives written notice\", \"Architect ceases active work or invokes cure period\", \"Compensation calculated for work performed\", \"Architect delivers all documents to Owner\", \"Owner engages successor or proceeds to close-out\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - Props: (none)
 - Text: Process flow: Notice → Cessation/Curve period → Compensation → Document turno...
 
-<Warn>The architect does NOT have authority to independently suspend or terminate the construction contract. The architect's role is to certify compliance and recommend action to the Owner. Unauthorized suspension can expose the architect to liability.</Warn>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: The architect does NOT have authority to independently suspend or terminate the construction contract. The architect's role is to certify compliance and recommend action to the Owner. Unauthorized suspension can expose the architect to liability.
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - Props: (none)
 - Text: The architect does NOT have authority to independently suspend or terminate t...

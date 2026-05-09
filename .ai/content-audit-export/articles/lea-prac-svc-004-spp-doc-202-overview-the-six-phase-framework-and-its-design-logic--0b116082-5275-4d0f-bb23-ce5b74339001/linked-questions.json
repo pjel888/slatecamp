@@ -1,9 +1,309 @@
 {
   "article_id": "0b116082-5275-4d0f-bb23-ce5b74339001",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:5b60cc03d7b6b546ccd1bbaad4588d92aacfd46a1de5f31bdd7ec77f09cf42a3",
+  "linked_questions_hash": "sha256:9033ae669e77b0179aa3be305bff980bcd195406e40db129fc588f00c795c0b3",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "981a4783-5b58-4662-a9d0-138ccdd371c2",
+      "article_id": "0b116082-5275-4d0f-bb23-ce5b74339001",
+      "topic_id": "8a62f4b9-7bb5-46dc-ab3a-73c33d31ba1c",
+      "text": "A client questions whether Design Development work justifies 20% of total fees. How would you defend this allocation according to SPP 202?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Design Development has minimal importance; fees could be reduced without affecting project quality."
+        },
+        {
+          "id": "b",
+          "text": "Design Development requires significant coordination, technical development, and consultant integration—substantial work between conceptual design and construction documents"
+        },
+        {
+          "id": "c",
+          "text": "Design Development fees are arbitrary and can be negotiated freely, depending on client and project specifics."
+        },
+        {
+          "id": "d",
+          "text": "Design Development work is redundant with Schematic Design, and thus, the fees should be reconsidered."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Design Development is critical to project success and proper coordination.",
+        "c": "SPP 202 establishes standard fee allocations; negotiation is within broader structure.",
+        "d": "Design Development builds upon and substantially expands Schematic Design.",
+        "correct": "Design Development represents substantial technical work on coordination and refinement from conceptual design to detailed documents, justifying 20% of fees under SPP 202 (SPP Doc 202).",
+        "takeaway": "Design Development earns 20% due to substantial technical coordination work."
+      },
+      "explanation": "Design Development is critical to project success and proper coordination. SPP 202 establishes standard fee allocations; negotiation is within broader structure. Design Development builds upon and substantially expands Schematic Design. Design Development represents substantial technical work on coordination and refinement from conceptual design to detailed documents, justifying 20% of fees under SPP 202 (SPP Doc 202). Design Development earns 20% due to substantial technical coordination work.",
+      "code_citation": "SPP Doc 202",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-004-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.512865+00:00",
+      "updated_at": "2026-05-06T11:25:57.256811+00:00",
+      "content_hash": "sha256:ea1ddf8a443555d2f14077eda7648ac22703dfc59d27032f9a740f80662cae47"
+    },
+    {
+      "question_id": "d737bb35-1799-48ef-9f56-e37fd51864db",
+      "article_id": "0b116082-5275-4d0f-bb23-ce5b74339001",
+      "topic_id": "8a62f4b9-7bb5-46dc-ab3a-73c33d31ba1c",
+      "text": "SPP 202 fee percentages total 100% of the contract sum. What is the cumulative fee percentage after completion of Design Development?",
+      "options": [
+        {
+          "id": "a",
+          "text": "15%"
+        },
+        {
+          "id": "b",
+          "text": "35%"
+        },
+        {
+          "id": "c",
+          "text": "50%"
+        },
+        {
+          "id": "d",
+          "text": "85%"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "15% is only Schematic Design; Design Development adds 20% more.",
+        "c": "50% is the Contract Documents phase fee, not the cumulative after Design Development.",
+        "d": "85% is the cumulative after Contract Documents.",
+        "correct": "Schematic Design (15%) + Design Development (20%) = 35% cumulative fee upon completion of Design Development (SPP Doc 202).",
+        "takeaway": "Cumulative fee after Design Development = 35% of total."
+      },
+      "explanation": "15% is only Schematic Design; Design Development adds 20% more. 50% is the Contract Documents phase fee, not the cumulative after Design Development. 85% is the cumulative after Contract Documents. Schematic Design (15%) + Design Development (20%) = 35% cumulative fee upon completion of Design Development (SPP Doc 202). Cumulative fee after Design Development = 35% of total.",
+      "code_citation": "SPP Doc 202",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-004-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.512865+00:00",
+      "updated_at": "2026-05-06T11:25:57.977336+00:00",
+      "content_hash": "sha256:e0977d5a60744710988ba2949ffc8cf669b252dbea5e37da11e7104974ae0616"
+    },
+    {
+      "question_id": "80fe5dfe-4d8b-4ee4-aea6-fda474f5f9dc",
+      "article_id": "0b116082-5275-4d0f-bb23-ce5b74339001",
+      "topic_id": "8a62f4b9-7bb5-46dc-ab3a-73c33d31ba1c",
+      "text": "What are the specific requirements for foreign architects under SPP 202 to practice in the Philippines?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Foreign architects may practice independently without any permits, which is not aligned with local regulations"
+        },
+        {
+          "id": "b",
+          "text": "Temporary/Special Permit, work permit from DOLE, and collaboration with a local PRC-registered architect"
+        },
+        {
+          "id": "c",
+          "text": "Foreign architects must establish a BPO firm in the Philippines, which is a complex process involving multiple legal steps"
+        },
+        {
+          "id": "d",
+          "text": "Foreign architects need only an international certification, which is insufficient under local laws"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Foreign architects have specific requirements; they cannot practice independently.",
+        "c": "BPO registration does not qualify foreign architects for architectural practice.",
+        "d": "International certification alone is insufficient without local permits.",
+        "correct": "Foreign architects must secure a Temporary/Special Permit, a work permit from the Department of Labor and Employment, and must collaborate with a local registered and licensed architect (SPP Doc 202).",
+        "takeaway": "Foreign architects need special permit, DOLE work permit, and local architect."
+      },
+      "explanation": "Foreign architects have specific requirements; they cannot practice independently. BPO registration does not qualify foreign architects for architectural practice. International certification alone is insufficient without local permits. Foreign architects must secure a Temporary/Special Permit, a work permit from the Department of Labor and Employment, and must collaborate with a local registered and licensed architect (SPP Doc 202). Foreign architects need special permit, DOLE work permit, and local architect.",
+      "code_citation": "SPP Doc 202",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-004-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.512865+00:00",
+      "updated_at": "2026-05-06T11:25:58.561999+00:00",
+      "content_hash": "sha256:ccb3e631530c9313e2718c6619bb278a7861e5856f62d827c7f17ca94392aa0f"
+    },
+    {
+      "question_id": "f22ae070-68a5-4f16-a8fa-cf0831e9c584",
+      "article_id": "0b116082-5275-4d0f-bb23-ce5b74339001",
+      "topic_id": "8a62f4b9-7bb5-46dc-ab3a-73c33d31ba1c",
+      "text": "SPP 202 applies to both individual architects and group practice. What requirement must group practice maintain to qualify?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Group practice must be established without any partnerships, which limits collaboration opportunities"
+        },
+        {
+          "id": "b",
+          "text": "Group practice must maintain full compliance with architectural legislation"
+        },
+        {
+          "id": "c",
+          "text": "Group practice must employ only foreign architects, which is not a requirement under SPP 202"
+        },
+        {
+          "id": "d",
+          "text": "Group practice must be registered as a Business Process Outsourcing firm, which is unrelated to architectural practice"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Partnerships and corporations are permitted forms of group practice.",
+        "c": "Foreign architects have special requirements; SPP 202 applies to all architects.",
+        "d": "BPO firms cannot provide architectural services unless PRC-registered.",
+        "correct": "SPP 202 applies to group practice through partnerships or corporations provided full compliance with architectural legislation is maintained (SPP Doc 202).",
+        "takeaway": "Group practice must maintain full compliance with architectural legislation."
+      },
+      "explanation": "Partnerships and corporations are permitted forms of group practice. Foreign architects have special requirements; SPP 202 applies to all architects. BPO firms cannot provide architectural services unless PRC-registered. SPP 202 applies to group practice through partnerships or corporations provided full compliance with architectural legislation is maintained (SPP Doc 202). Group practice must maintain full compliance with architectural legislation.",
+      "code_citation": "SPP Doc 202",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-004-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.512865+00:00",
+      "updated_at": "2026-05-06T11:25:59.145315+00:00",
+      "content_hash": "sha256:b227d5531cda3783f650affad22f5374fd51c9cb3d488941d0028c5857cb8d61"
+    },
+    {
+      "question_id": "ffa1533e-5ac5-44e0-aba4-6f76ec4baea4",
+      "article_id": "0b116082-5275-4d0f-bb23-ce5b74339001",
+      "topic_id": "8a62f4b9-7bb5-46dc-ab3a-73c33d31ba1c",
+      "text": "What restriction does SPP 202 place on Business Process Outsourcing and Knowledge Process Outsourcing firms regarding architectural services?",
+      "options": [
+        {
+          "id": "a",
+          "text": "BPO/KPO firms are freely permitted to provide architectural services in the Philippines, without any need for local registration or compliance with specific architectural regulations"
+        },
+        {
+          "id": "b",
+          "text": "BPO/KPO firms can provide services only with foreign collaboration, provided they adhere to international standards and local partnership agreements"
+        },
+        {
+          "id": "c",
+          "text": "BPO/KPO firms registered in the Philippines cannot provide architectural services for Philippine projects unless PRC-registered as architectural firms"
+        },
+        {
+          "id": "d",
+          "text": "All BPO/KPO firms automatically qualify as architectural service providers, regardless of their primary business focus or expertise"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "BPO/KPO firms face restrictions on architectural service provision.",
+        "b": "Foreign collaboration does not remove the PRC registration requirement.",
+        "d": "BPO/KPO registration does not qualify firms for architectural work.",
+        "correct": "Business Process Outsourcing and Knowledge Process Outsourcing firms registered in the Philippines cannot provide architectural services for Philippine projects unless they are PRC-registered architectural firms (SPP Doc 202).",
+        "takeaway": "BPO/KPO firms need PRC architectural registration for Philippine projects."
+      },
+      "explanation": "BPO/KPO firms face restrictions on architectural service provision. Foreign collaboration does not remove the PRC registration requirement. BPO/KPO registration does not qualify firms for architectural work. Business Process Outsourcing and Knowledge Process Outsourcing firms registered in the Philippines cannot provide architectural services for Philippine projects unless they are PRC-registered architectural firms (SPP Doc 202). BPO/KPO firms need PRC architectural registration for Philippine projects.",
+      "code_citation": "SPP Doc 202",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-004-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.512865+00:00",
+      "updated_at": "2026-05-06T11:25:59.786198+00:00",
+      "content_hash": "sha256:9c99e2add58f2c9d7995e6dd2f47cc5e702fa48a43e6fc3c8fea7591dc734bee"
+    },
+    {
+      "question_id": "c4d36d88-0806-4816-968c-bc1397bb21d1",
+      "article_id": "0b116082-5275-4d0f-bb23-ce5b74339001",
+      "topic_id": "8a62f4b9-7bb5-46dc-ab3a-73c33d31ba1c",
+      "text": "According to SPP 202, which of the following is NOT one of the six distinct phases of regular design services?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Schematic Design Phase"
+        },
+        {
+          "id": "b",
+          "text": "Feasibility Study Phase"
+        },
+        {
+          "id": "c",
+          "text": "Design Development Phase"
+        },
+        {
+          "id": "d",
+          "text": "Construction Phase"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Schematic Design is the first fee-earning phase of SPP 202.",
+        "c": "Design Development is the second fee-earning phase.",
+        "d": "Construction Phase is SPP 202's final phase.",
+        "correct": "Feasibility studies are pre-design services under SPP 201, not a phase within SPP 202's regular design framework (SPP Doc 202).",
+        "takeaway": "Feasibility is a pre-design service; regular design begins with Schematic Design."
+      },
+      "explanation": "Schematic Design is the first fee-earning phase of SPP 202. Design Development is the second fee-earning phase. Construction Phase is SPP 202's final phase. Feasibility studies are pre-design services under SPP 201, not a phase within SPP 202's regular design framework (SPP Doc 202). Feasibility is a pre-design service; regular design begins with Schematic Design.",
+      "code_citation": "SPP Doc 202",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-004-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.512865+00:00",
+      "updated_at": "2026-05-06T11:26:00.587609+00:00",
+      "content_hash": "sha256:4172a9d5f5f086b140ac72bcd49bf2cef485387b661fe31b012a564f4a02a31e"
+    },
     {
       "question_id": "aa33ff64-4a81-487a-9ac3-1b59ec809922",
       "article_id": "0b116082-5275-4d0f-bb23-ce5b74339001",
@@ -39,7 +339,7 @@
         "correct": "Contract Documents represents the largest single phase payment at 50% of total design fees, reflecting the substantial technical work and responsibility for construction documents (SPP Doc 202).",
         "takeaway": "Contract Documents phase earns the largest single payment at 50%."
       },
-      "explanation": null,
+      "explanation": "Schematic Design earns 15%, the first but not largest payment. Design Development earns 20%, less than Contract Documents. Construction Administration earns 10%, the second-smallest allocation. Contract Documents represents the largest single phase payment at 50% of total design fees, reflecting the substantial technical work and responsibility for construction documents (SPP Doc 202). Contract Documents phase earns the largest single payment at 50%.",
       "code_citation": "SPP Doc 202",
       "bloom_level": "remember",
       "application_context": "recall",
@@ -51,8 +351,8 @@
       "model_id": "ALE-PRAC-SVC-004-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.512865+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:ee940b647a214ecdfa3821f4d7345d18fa4074a5dc3c13b2cda71ac49c802099"
+      "updated_at": "2026-05-06T11:25:56.581021+00:00",
+      "content_hash": "sha256:43012212bf5010c8f8606823c6601946ce01e189fe39b2cbef2d9d5638a742a2"
     },
     {
       "question_id": "0d780029-cb84-4b01-b209-27d6bf4cc84d",
@@ -105,56 +405,6 @@
       "content_hash": "sha256:ac4cf0044bf922348d29f9850e5169eb9f3b6907351581d68ea59bdde366f257"
     },
     {
-      "question_id": "981a4783-5b58-4662-a9d0-138ccdd371c2",
-      "article_id": "0b116082-5275-4d0f-bb23-ce5b74339001",
-      "topic_id": "8a62f4b9-7bb5-46dc-ab3a-73c33d31ba1c",
-      "text": "A client questions whether Design Development work justifies 20% of total fees. How would you defend this allocation according to SPP 202?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Design Development has minimal importance; fees could be reduced without affecting project quality."
-        },
-        {
-          "id": "b",
-          "text": "Design Development requires significant coordination, technical development, and consultant integration—substantial work between conceptual design and construction documents"
-        },
-        {
-          "id": "c",
-          "text": "Design Development fees are arbitrary and can be negotiated freely, depending on client and project specifics."
-        },
-        {
-          "id": "d",
-          "text": "Design Development work is redundant with Schematic Design, and thus, the fees should be reconsidered."
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Design Development is critical to project success and proper coordination.",
-        "c": "SPP 202 establishes standard fee allocations; negotiation is within broader structure.",
-        "d": "Design Development builds upon and substantially expands Schematic Design.",
-        "correct": "Design Development represents substantial technical work on coordination and refinement from conceptual design to detailed documents, justifying 20% of fees under SPP 202 (SPP Doc 202).",
-        "takeaway": "Design Development earns 20% due to substantial technical coordination work."
-      },
-      "explanation": null,
-      "code_citation": "SPP Doc 202",
-      "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.7,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PRAC-SVC-004-008",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:45.512865+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:dd29874c53896b4e6dc81ec1f883ebb1a291df26d8d5ef8f4b0016c2a2300f5a"
-    },
-    {
       "question_id": "91a1762d-fd1b-4b53-941e-857f082552b1",
       "article_id": "0b116082-5275-4d0f-bb23-ce5b74339001",
       "topic_id": "8a62f4b9-7bb5-46dc-ab3a-73c33d31ba1c",
@@ -205,206 +455,6 @@
       "content_hash": "sha256:976b26ba8d666d75313acdfed6355f5d6bc98865a2e853941f2ed95ae67d71dd"
     },
     {
-      "question_id": "d737bb35-1799-48ef-9f56-e37fd51864db",
-      "article_id": "0b116082-5275-4d0f-bb23-ce5b74339001",
-      "topic_id": "8a62f4b9-7bb5-46dc-ab3a-73c33d31ba1c",
-      "text": "SPP 202 fee percentages total 100% of the contract sum. What is the cumulative fee percentage after completion of Design Development?",
-      "options": [
-        {
-          "id": "a",
-          "text": "15%"
-        },
-        {
-          "id": "b",
-          "text": "35%"
-        },
-        {
-          "id": "c",
-          "text": "50%"
-        },
-        {
-          "id": "d",
-          "text": "85%"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "15% is only Schematic Design; Design Development adds 20% more.",
-        "c": "50% is the Contract Documents phase fee, not the cumulative after Design Development.",
-        "d": "85% is the cumulative after Contract Documents.",
-        "correct": "Schematic Design (15%) + Design Development (20%) = 35% cumulative fee upon completion of Design Development (SPP Doc 202).",
-        "takeaway": "Cumulative fee after Design Development = 35% of total."
-      },
-      "explanation": null,
-      "code_citation": "SPP Doc 202",
-      "bloom_level": "understand",
-      "application_context": "client_scenario",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PRAC-SVC-004-003",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:45.512865+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:6ab3c26f664f2711065a3cbda1cebf4a3af4bf115cd6604ad0088664882c0bec"
-    },
-    {
-      "question_id": "80fe5dfe-4d8b-4ee4-aea6-fda474f5f9dc",
-      "article_id": "0b116082-5275-4d0f-bb23-ce5b74339001",
-      "topic_id": "8a62f4b9-7bb5-46dc-ab3a-73c33d31ba1c",
-      "text": "What are the specific requirements for foreign architects under SPP 202 to practice in the Philippines?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Foreign architects may practice independently without any permits, which is not aligned with local regulations"
-        },
-        {
-          "id": "b",
-          "text": "Temporary/Special Permit, work permit from DOLE, and collaboration with a local PRC-registered architect"
-        },
-        {
-          "id": "c",
-          "text": "Foreign architects must establish a BPO firm in the Philippines, which is a complex process involving multiple legal steps"
-        },
-        {
-          "id": "d",
-          "text": "Foreign architects need only an international certification, which is insufficient under local laws"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Foreign architects have specific requirements; they cannot practice independently.",
-        "c": "BPO registration does not qualify foreign architects for architectural practice.",
-        "d": "International certification alone is insufficient without local permits.",
-        "correct": "Foreign architects must secure a Temporary/Special Permit, a work permit from the Department of Labor and Employment, and must collaborate with a local registered and licensed architect (SPP Doc 202).",
-        "takeaway": "Foreign architects need special permit, DOLE work permit, and local architect."
-      },
-      "explanation": null,
-      "code_citation": "SPP Doc 202",
-      "bloom_level": "understand",
-      "application_context": "client_scenario",
-      "practice_context": [],
-      "difficulty": 0.7,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PRAC-SVC-004-006",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:45.512865+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:02f55e4fa7db88e9df3680317dfeda1d0f2287d455343e17b584a7dd715f2fe9"
-    },
-    {
-      "question_id": "f22ae070-68a5-4f16-a8fa-cf0831e9c584",
-      "article_id": "0b116082-5275-4d0f-bb23-ce5b74339001",
-      "topic_id": "8a62f4b9-7bb5-46dc-ab3a-73c33d31ba1c",
-      "text": "SPP 202 applies to both individual architects and group practice. What requirement must group practice maintain to qualify?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Group practice must be established without any partnerships, which limits collaboration opportunities"
-        },
-        {
-          "id": "b",
-          "text": "Group practice must maintain full compliance with architectural legislation"
-        },
-        {
-          "id": "c",
-          "text": "Group practice must employ only foreign architects, which is not a requirement under SPP 202"
-        },
-        {
-          "id": "d",
-          "text": "Group practice must be registered as a Business Process Outsourcing firm, which is unrelated to architectural practice"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Partnerships and corporations are permitted forms of group practice.",
-        "c": "Foreign architects have special requirements; SPP 202 applies to all architects.",
-        "d": "BPO firms cannot provide architectural services unless PRC-registered.",
-        "correct": "SPP 202 applies to group practice through partnerships or corporations provided full compliance with architectural legislation is maintained (SPP Doc 202).",
-        "takeaway": "Group practice must maintain full compliance with architectural legislation."
-      },
-      "explanation": null,
-      "code_citation": "SPP Doc 202",
-      "bloom_level": "understand",
-      "application_context": "client_scenario",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PRAC-SVC-004-005",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:45.512865+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:d0098f5ad74eff2eac128ff131444e820d231028f61a91aa839d6bf4e01f2df8"
-    },
-    {
-      "question_id": "ffa1533e-5ac5-44e0-aba4-6f76ec4baea4",
-      "article_id": "0b116082-5275-4d0f-bb23-ce5b74339001",
-      "topic_id": "8a62f4b9-7bb5-46dc-ab3a-73c33d31ba1c",
-      "text": "What restriction does SPP 202 place on Business Process Outsourcing and Knowledge Process Outsourcing firms regarding architectural services?",
-      "options": [
-        {
-          "id": "a",
-          "text": "BPO/KPO firms are freely permitted to provide architectural services in the Philippines, without any need for local registration or compliance with specific architectural regulations"
-        },
-        {
-          "id": "b",
-          "text": "BPO/KPO firms can provide services only with foreign collaboration, provided they adhere to international standards and local partnership agreements"
-        },
-        {
-          "id": "c",
-          "text": "BPO/KPO firms registered in the Philippines cannot provide architectural services for Philippine projects unless PRC-registered as architectural firms"
-        },
-        {
-          "id": "d",
-          "text": "All BPO/KPO firms automatically qualify as architectural service providers, regardless of their primary business focus or expertise"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "BPO/KPO firms face restrictions on architectural service provision.",
-        "b": "Foreign collaboration does not remove the PRC registration requirement.",
-        "d": "BPO/KPO registration does not qualify firms for architectural work.",
-        "correct": "Business Process Outsourcing and Knowledge Process Outsourcing firms registered in the Philippines cannot provide architectural services for Philippine projects unless they are PRC-registered architectural firms (SPP Doc 202).",
-        "takeaway": "BPO/KPO firms need PRC architectural registration for Philippine projects."
-      },
-      "explanation": null,
-      "code_citation": "SPP Doc 202",
-      "bloom_level": "understand",
-      "application_context": "client_scenario",
-      "practice_context": [],
-      "difficulty": 0.9,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PRAC-SVC-004-009",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:45.512865+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:2c09c651d5aba331727f15fc142cd96578b6d8d1b267a11db7ffaafe0a687410"
-    },
-    {
       "question_id": "c788a60a-dbaa-4899-8cbd-7aac003c6ab5",
       "article_id": "0b116082-5275-4d0f-bb23-ce5b74339001",
       "topic_id": "8a62f4b9-7bb5-46dc-ab3a-73c33d31ba1c",
@@ -453,56 +503,6 @@
       "created_at": "2026-03-23T19:27:45.512865+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:3418a38919c6ce2b9c08570a8e75dd7492c4220cf74b31d6aed82c988cafe85f"
-    },
-    {
-      "question_id": "c4d36d88-0806-4816-968c-bc1397bb21d1",
-      "article_id": "0b116082-5275-4d0f-bb23-ce5b74339001",
-      "topic_id": "8a62f4b9-7bb5-46dc-ab3a-73c33d31ba1c",
-      "text": "According to SPP 202, which of the following is NOT one of the six distinct phases of regular design services?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Schematic Design Phase"
-        },
-        {
-          "id": "b",
-          "text": "Feasibility Study Phase"
-        },
-        {
-          "id": "c",
-          "text": "Design Development Phase"
-        },
-        {
-          "id": "d",
-          "text": "Construction Phase"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Schematic Design is the first fee-earning phase of SPP 202.",
-        "c": "Design Development is the second fee-earning phase.",
-        "d": "Construction Phase is SPP 202's final phase.",
-        "correct": "Feasibility studies are pre-design services under SPP 201, not a phase within SPP 202's regular design framework (SPP Doc 202).",
-        "takeaway": "Feasibility is a pre-design service; regular design begins with Schematic Design."
-      },
-      "explanation": null,
-      "code_citation": "SPP Doc 202",
-      "bloom_level": "understand",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PRAC-SVC-004-004",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:45.512865+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:473fb425eabb6ea0ae5a12149603a35f9845bec159f7ab68ac2c480d6b0b6398"
     }
   ]
 }

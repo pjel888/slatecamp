@@ -1,9 +1,159 @@
 {
   "article_id": "8b263a7c-5e3e-4157-a18b-146f5b12f521",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:80086c0b2431489ffd3d4fd1d7e1c5a27736398b82d66b5d7ad24a48bb4f168b",
+  "linked_questions_hash": "sha256:84003e5f77f95667c20e00e454d17204cf1b1432fbf66022d1e626d133433c62",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "c446f74e-be99-486a-af3e-7c119351bf45",
+      "article_id": "8b263a7c-5e3e-4157-a18b-146f5b12f521",
+      "topic_id": "8a224153-5edd-42d6-ba1c-6c23dca59de5",
+      "text": "What does LOD 300 represent in a BIM project?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Conceptual design only with massing studies and basic spatial relationships"
+        },
+        {
+          "id": "b",
+          "text": "Design development phase with detailed elements"
+        },
+        {
+          "id": "c",
+          "text": "Construction documents with precise specifications and fabrication details"
+        },
+        {
+          "id": "d",
+          "text": "As-built documentation reflecting actual constructed conditions"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "LOD 100 is conceptual design; LOD 300 is more detailed.",
+        "c": "LOD 400 is construction documents; LOD 300 precedes it with less specification detail.",
+        "d": "As-built is post-construction; LOD 300 is design-phase documentation.",
+        "correct": "LOD 300 represents the design development phase with detailed element geometries and parameters; LOD 400 is construction documents.",
+        "takeaway": "LOD 300 is the design development phase with detailed model elements; LOD 400 is construction documents."
+      },
+      "explanation": "LOD 100 is conceptual design; LOD 300 is more detailed. LOD 400 is construction documents; LOD 300 precedes it with less specification detail. As-built is post-construction; LOD 300 is design-phase documentation. LOD 300 represents the design development phase with detailed element geometries and parameters; LOD 400 is construction documents. LOD 300 is the design development phase with detailed model elements; LOD 400 is construction documents.",
+      "code_citation": "RA 9266",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-014-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:48.361702+00:00",
+      "updated_at": "2026-05-06T13:20:04.337816+00:00",
+      "content_hash": "sha256:c0c551c947c805d47b68f26ebca5d282e2f4331c2a5471c8261ea7cf0ad38489"
+    },
+    {
+      "question_id": "acf347c6-3fb0-4cfe-be9e-1c3a48a489dd",
+      "article_id": "8b263a7c-5e3e-4157-a18b-146f5b12f521",
+      "topic_id": "8a224153-5edd-42d6-ba1c-6c23dca59de5",
+      "text": "What is Building Information Modeling (BIM)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2D drawing software used primarily for drafting and basic design visualization"
+        },
+        {
+          "id": "b",
+          "text": "digital methodology that creates a unified, data-rich model of a building's design, construction, and operation"
+        },
+        {
+          "id": "c",
+          "text": "cost estimation tool only, providing basic financial projections without detailed design integration"
+        },
+        {
+          "id": "d",
+          "text": "marketing technique aimed at promoting architectural services and enhancing client engagement"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Confuses BIM with CAD; BIM is 3D/multidimensional with embedded data, not 2D.",
+        "c": "Overrestricts BIM to cost tools; BIM serves coordination, visualization, and operational purposes beyond cost.",
+        "d": "BIM is a technical methodology, not a marketing approach.",
+        "correct": "BIM is a comprehensive digital methodology creating an integrated, data-rich model used across design, construction, and facility management phases.",
+        "takeaway": "BIM is a digital methodology creating a unified, data-rich model spanning design, construction, and building operation."
+      },
+      "explanation": "Confuses BIM with CAD; BIM is 3D/multidimensional with embedded data, not 2D. Overrestricts BIM to cost tools; BIM serves coordination, visualization, and operational purposes beyond cost. BIM is a technical methodology, not a marketing approach. BIM is a comprehensive digital methodology creating an integrated, data-rich model used across design, construction, and facility management phases. BIM is a digital methodology creating a unified, data-rich model spanning design, construction, and building operation.",
+      "code_citation": "RA 10173",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-014-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:48.361702+00:00",
+      "updated_at": "2026-05-06T13:20:04.65111+00:00",
+      "content_hash": "sha256:d45053bd8062d276e933d686642454a9bb7c574060c9589e42c5c79aca4b38dc"
+    },
+    {
+      "question_id": "3a04b9b5-3645-4a16-87d0-231f2b14383c",
+      "article_id": "8b263a7c-5e3e-4157-a18b-146f5b12f521",
+      "topic_id": "8a224153-5edd-42d6-ba1c-6c23dca59de5",
+      "text": "What is IFC in the context of BIM?",
+      "options": [
+        {
+          "id": "a",
+          "text": "proprietary software format used by specific vendors for exclusive interoperability"
+        },
+        {
+          "id": "b",
+          "text": "The international open standard for BIM file format, ensuring interoperability across different software platforms"
+        },
+        {
+          "id": "c",
+          "text": "cost-estimation method primarily used in preliminary project budgeting"
+        },
+        {
+          "id": "d",
+          "text": "quality control system designed to maintain standards in construction processes"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Proprietary formats (Revit, ArchiCAD native) are software-specific; IFC is vendor-neutral.",
+        "c": "Cost estimation is a BIM application, not a file format.",
+        "d": "Quality control is a process; IFC is a data exchange standard.",
+        "correct": "IFC (Industry Foundation Classes) is the international open standard enabling BIM model exchange across different software without vendor lock-in.",
+        "takeaway": "IFC is the international open standard for BIM file exchange, enabling interoperability across software platforms."
+      },
+      "explanation": "Proprietary formats (Revit, ArchiCAD native) are software-specific; IFC is vendor-neutral. Cost estimation is a BIM application, not a file format. Quality control is a process; IFC is a data exchange standard. IFC (Industry Foundation Classes) is the international open standard enabling BIM model exchange across different software without vendor lock-in. IFC is the international open standard for BIM file exchange, enabling interoperability across software platforms.",
+      "code_citation": "RA 9266",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-014-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:48.361702+00:00",
+      "updated_at": "2026-05-06T13:20:04.782986+00:00",
+      "content_hash": "sha256:fc7985d3064314ac10e991d68933fd451099e23f241cb41d28fccb215f3f5708"
+    },
     {
       "question_id": "23630dbc-2261-4505-a8b8-339d6039d464",
       "article_id": "8b263a7c-5e3e-4157-a18b-146f5b12f521",
@@ -139,7 +289,7 @@
         "correct": "As client expectations and competitive requirements shift toward BIM, architects must pursue CPD in software, modeling standards, coordination workflows, and best practices.",
         "takeaway": "Architects must pursue BIM-focused CPD in methodologies, software, standards, and coordination to maintain competitive capability."
       },
-      "explanation": null,
+      "explanation": "Ignoring BIM training risks loss of competitive advantage and client acceptance. All architectural staff benefit from BIM training; project teams require consistent competency. BIM is increasingly critical for government and large private projects. As client expectations and competitive requirements shift toward BIM, architects must pursue CPD in software, modeling standards, coordination workflows, and best practices. Architects must pursue BIM-focused CPD in methodologies, software, standards, and coordination to maintain competitive capability.",
       "code_citation": "RA 9266",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
@@ -151,58 +301,8 @@
       "model_id": "ALE-PRAC-FRM-014-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:48.361702+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:14ecb9359315c2b7257ff16ba53750d0201433c89b9f9a6fbb01e56376c941c3"
-    },
-    {
-      "question_id": "c446f74e-be99-486a-af3e-7c119351bf45",
-      "article_id": "8b263a7c-5e3e-4157-a18b-146f5b12f521",
-      "topic_id": "8a224153-5edd-42d6-ba1c-6c23dca59de5",
-      "text": "What does LOD 300 represent in a BIM project?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Conceptual design only with massing studies and basic spatial relationships"
-        },
-        {
-          "id": "b",
-          "text": "Design development phase with detailed elements"
-        },
-        {
-          "id": "c",
-          "text": "Construction documents with precise specifications and fabrication details"
-        },
-        {
-          "id": "d",
-          "text": "As-built documentation reflecting actual constructed conditions"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "LOD 100 is conceptual design; LOD 300 is more detailed.",
-        "c": "LOD 400 is construction documents; LOD 300 precedes it with less specification detail.",
-        "d": "As-built is post-construction; LOD 300 is design-phase documentation.",
-        "correct": "LOD 300 represents the design development phase with detailed element geometries and parameters; LOD 400 is construction documents.",
-        "takeaway": "LOD 300 is the design development phase with detailed model elements; LOD 400 is construction documents."
-      },
-      "explanation": null,
-      "code_citation": "RA 9266",
-      "bloom_level": "understand",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PRAC-FRM-014-004",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:48.361702+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:d140e33c8b1677596e446a2bf8a05f78fa4b28b2c77cd55b44597c95e6732d3a"
+      "updated_at": "2026-05-06T13:20:04.210871+00:00",
+      "content_hash": "sha256:4789ac52ff023481c2a1d5a711bb8a1079a90d30a22c96fd783c448cffe67ebb"
     },
     {
       "question_id": "accb394f-a2c5-41bb-b900-833abe2749af",
@@ -239,7 +339,7 @@
         "correct": "BIM is not legally mandated in the Philippines, but client expectations (especially government and large developers) and competitive advantage pressure architects to adopt it.",
         "takeaway": "BIM is not mandatory in the Philippines but is increasingly expected by clients and required for competitive advantage."
       },
-      "explanation": null,
+      "explanation": "BIM adoption is not yet mandated by Philippine law or building code. No government mandate exists; adoption is client-driven, not statutory. Future mandates are possible as global standards evolve and client expectations shift. BIM is not legally mandated in the Philippines, but client expectations (especially government and large developers) and competitive advantage pressure architects to adopt it. BIM is not mandatory in the Philippines but is increasingly expected by clients and required for competitive advantage.",
       "code_citation": "RA 9266",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
@@ -251,58 +351,8 @@
       "model_id": "ALE-PRAC-FRM-014-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:48.361702+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:5d85d35e30dcc953a6d88805aa8d89f1bac5d5c6810c710334d9974d97e03ad1"
-    },
-    {
-      "question_id": "acf347c6-3fb0-4cfe-be9e-1c3a48a489dd",
-      "article_id": "8b263a7c-5e3e-4157-a18b-146f5b12f521",
-      "topic_id": "8a224153-5edd-42d6-ba1c-6c23dca59de5",
-      "text": "What is Building Information Modeling (BIM)?",
-      "options": [
-        {
-          "id": "a",
-          "text": "2D drawing software used primarily for drafting and basic design visualization"
-        },
-        {
-          "id": "b",
-          "text": "digital methodology that creates a unified, data-rich model of a building's design, construction, and operation"
-        },
-        {
-          "id": "c",
-          "text": "cost estimation tool only, providing basic financial projections without detailed design integration"
-        },
-        {
-          "id": "d",
-          "text": "marketing technique aimed at promoting architectural services and enhancing client engagement"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Confuses BIM with CAD; BIM is 3D/multidimensional with embedded data, not 2D.",
-        "c": "Overrestricts BIM to cost tools; BIM serves coordination, visualization, and operational purposes beyond cost.",
-        "d": "BIM is a technical methodology, not a marketing approach.",
-        "correct": "BIM is a comprehensive digital methodology creating an integrated, data-rich model used across design, construction, and facility management phases.",
-        "takeaway": "BIM is a digital methodology creating a unified, data-rich model spanning design, construction, and building operation."
-      },
-      "explanation": null,
-      "code_citation": "RA 10173",
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [],
-      "difficulty": 0.3,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PRAC-FRM-014-001",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:48.361702+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:6cf9208dd3c46d3c29e9c059965ae6a4f2b08312db10636859ed40e0d3151dc8"
+      "updated_at": "2026-05-06T13:20:04.513799+00:00",
+      "content_hash": "sha256:a1a9f1e9633034eaab4bf55111f5b31b1310b7223f1b3e135c7eb762e6779cd5"
     },
     {
       "question_id": "80e3384a-5019-4731-b0a0-bda9e485a866",
@@ -353,56 +403,6 @@
       "created_at": "2026-03-23T19:27:48.361702+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:8cb28020809680ae0f017c8094fc5591d78ef8794b573758a5cc8e658a4c84b2"
-    },
-    {
-      "question_id": "3a04b9b5-3645-4a16-87d0-231f2b14383c",
-      "article_id": "8b263a7c-5e3e-4157-a18b-146f5b12f521",
-      "topic_id": "8a224153-5edd-42d6-ba1c-6c23dca59de5",
-      "text": "What is IFC in the context of BIM?",
-      "options": [
-        {
-          "id": "a",
-          "text": "proprietary software format used by specific vendors for exclusive interoperability"
-        },
-        {
-          "id": "b",
-          "text": "The international open standard for BIM file format, ensuring interoperability across different software platforms"
-        },
-        {
-          "id": "c",
-          "text": "cost-estimation method primarily used in preliminary project budgeting"
-        },
-        {
-          "id": "d",
-          "text": "quality control system designed to maintain standards in construction processes"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Proprietary formats (Revit, ArchiCAD native) are software-specific; IFC is vendor-neutral.",
-        "c": "Cost estimation is a BIM application, not a file format.",
-        "d": "Quality control is a process; IFC is a data exchange standard.",
-        "correct": "IFC (Industry Foundation Classes) is the international open standard enabling BIM model exchange across different software without vendor lock-in.",
-        "takeaway": "IFC is the international open standard for BIM file exchange, enabling interoperability across software platforms."
-      },
-      "explanation": null,
-      "code_citation": "RA 9266",
-      "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.7,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PRAC-FRM-014-007",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:48.361702+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:6184904f04c90df9ccdb3748b4cffe91d61a4495d2f6b7d0aca35ca8efa8be74"
     },
     {
       "question_id": "8cd7a9d5-eb43-4c3f-bc9c-88feb9e73b0d",

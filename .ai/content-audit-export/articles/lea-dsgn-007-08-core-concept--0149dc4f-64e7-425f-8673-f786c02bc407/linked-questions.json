@@ -1,9 +1,59 @@
 {
   "article_id": "0149dc4f-64e7-425f-8673-f786c02bc407",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:3d931d5eccd766989b63ca44c8523f837b2257ab05ffcf7c4d3ee85792181413",
+  "linked_questions_hash": "sha256:246dc417f0f5c35d897fb96c5ca05e25fd149753425945d0578d1c19f23ad257",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "6e6c62b9-06ab-4f53-b6bf-ee6be41c5ec8",
+      "article_id": "0149dc4f-64e7-425f-8673-f786c02bc407",
+      "topic_id": "495ec55a-0a11-4100-b194-8fcd6b913c31",
+      "text": "Which structural system is most appropriate for a 3-storey mixed-use building (ground: retail; upper: residential) in a provincial location with limited specialized labor?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Steel frame (requires fabrication shop), which may not be feasible due to the need for specialized labor and equipment"
+        },
+        {
+          "id": "b",
+          "text": "RCC frame with CHB infill (abundant local expertise)"
+        },
+        {
+          "id": "c",
+          "text": "Timber CLT (requires factory prefab), which may not be practical due to transportation and assembly challenges"
+        },
+        {
+          "id": "d",
+          "text": "Masonry bearing wall (local masons available), which is a traditional method but may not meet all structural requirements"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Steel requires specialized fabrication and erection shops; not available in most provinces.",
+        "c": "Timber CLT requires factory involvement; not locally available.",
+        "d": "Masonry is possible but inflexible for mixed-use (retail needs long spans; masonry bears walls).",
+        "correct": "RCC frame + CHB infill is ubiquitous in Philippine provinces. Every builder knows the process, local concrete suppliers are common, and skilled masons/carpenters are abundant. Steel requires specialized fabricators and erection crews. Timber and masonry are alternatives, but RCC is the most accessible in limited-labor environments.",
+        "takeaway": "RCC frame is the go-to system in Philippines due to local expertise. Structural system selection must account for available labor and supply chains."
+      },
+      "explanation": "Steel requires specialized fabrication and erection shops; not available in most provinces. Timber CLT requires factory involvement; not locally available. Masonry is possible but inflexible for mixed-use (retail needs long spans; masonry bears walls). RCC frame + CHB infill is ubiquitous in Philippine provinces. Every builder knows the process, local concrete suppliers are common, and skilled masons/carpenters are abundant. Steel requires specialized fabricators and erection crews. Timber and masonry are alternatives, but RCC is the most accessible in limited-labor environments. RCC frame is the go-to system in Philippines due to local expertise. Structural system selection must account for available labor and supply chains.",
+      "code_citation": "ASEP Mid-Rise Guidelines, PCA Standards",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-007-08-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:12.343478+00:00",
+      "updated_at": "2026-05-06T15:15:16.234218+00:00",
+      "content_hash": "sha256:c6fb334eafbb181cd95453b49cb9af74ee201cecfb2e6712b4d39c8d79d8d959"
+    },
     {
       "question_id": "21e96485-54a8-4986-8be5-2c7cfccac2b1",
       "article_id": "0149dc4f-64e7-425f-8673-f786c02bc407",
@@ -255,56 +305,6 @@
       "content_hash": "sha256:64655ba881ffaf3a1700779dc65067b37a990cdbb64a588f954fe6a225bfe1c9"
     },
     {
-      "question_id": "6e6c62b9-06ab-4f53-b6bf-ee6be41c5ec8",
-      "article_id": "0149dc4f-64e7-425f-8673-f786c02bc407",
-      "topic_id": "495ec55a-0a11-4100-b194-8fcd6b913c31",
-      "text": "Which structural system is most appropriate for a 3-storey mixed-use building (ground: retail; upper: residential) in a provincial location with limited specialized labor?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Steel frame (requires fabrication shop), which may not be feasible due to the need for specialized labor and equipment"
-        },
-        {
-          "id": "b",
-          "text": "RCC frame with CHB infill (abundant local expertise)"
-        },
-        {
-          "id": "c",
-          "text": "Timber CLT (requires factory prefab), which may not be practical due to transportation and assembly challenges"
-        },
-        {
-          "id": "d",
-          "text": "Masonry bearing wall (local masons available), which is a traditional method but may not meet all structural requirements"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Steel requires specialized fabrication and erection shops; not available in most provinces.",
-        "c": "Timber CLT requires factory involvement; not locally available.",
-        "d": "Masonry is possible but inflexible for mixed-use (retail needs long spans; masonry bears walls).",
-        "correct": "RCC frame + CHB infill is ubiquitous in Philippine provinces. Every builder knows the process, local concrete suppliers are common, and skilled masons/carpenters are abundant. Steel requires specialized fabricators and erection crews. Timber and masonry are alternatives, but RCC is the most accessible in limited-labor environments.",
-        "takeaway": "RCC frame is the go-to system in Philippines due to local expertise. Structural system selection must account for available labor and supply chains."
-      },
-      "explanation": null,
-      "code_citation": "ASEP Mid-Rise Guidelines, PCA Standards",
-      "bloom_level": "apply",
-      "application_context": "design_application",
-      "practice_context": [],
-      "difficulty": 0.7,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-DSGN-007-08-007",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:12.343478+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:a6d3a4d1f45626652a21e49c9e8ba5bd69cb92d5eef279e28b386d3eb481f017"
-    },
-    {
       "question_id": "2a224fae-9543-44a6-806f-4c43dabaf622",
       "article_id": "0149dc4f-64e7-425f-8673-f786c02bc407",
       "topic_id": "495ec55a-0a11-4100-b194-8fcd6b913c31",
@@ -339,7 +339,7 @@
         "correct": "Steel composite decks can incorporate void formers (voids run through the slab), reducing fireproofing and ceiling depth for MEP runs. RCC beams are solid; MEP must run under the structural slab, requiring deeper suspended ceilings. This impacts floor-to-floor and construction cost. Proper MEP planning during structural selection is critical.",
         "takeaway": "Structural system affects MEP layout. Engage MEP engineers early. Steel composite decks are most MEP-friendly; RCC requires deeper ceilings; masonry and timber have constraints."
       },
-      "explanation": null,
+      "explanation": "Not true; systems differ significantly in MEP integration. CLT can accommodate vertical shafts within panel thickness and at panel joints. Masonry walls make vertical MEP chases difficult due to load bearing requirements. Steel composite decks can incorporate void formers (voids run through the slab), reducing fireproofing and ceiling depth for MEP runs. RCC beams are solid; MEP must run under the structural slab, requiring deeper suspended ceilings. This impacts floor-to-floor and construction cost. Proper MEP planning during structural selection is critical. Structural system affects MEP layout. Engage MEP engineers early. Steel composite decks are most MEP-friendly; RCC requires deeper ceilings; masonry and timber have constraints.",
       "code_citation": "MEP Coordination Standards, NBC Chapter 2",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
@@ -351,8 +351,8 @@
       "model_id": "ALE-DSGN-007-08-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:12.343478+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:bc376313bd58935d2f79ee89d41e9a05b11f1297f75d87b1d0940d7324f7c9ff"
+      "updated_at": "2026-05-06T15:15:16.382763+00:00",
+      "content_hash": "sha256:6d968b7cbd38fd1f81faebaf8f7a77478993006cc0312ed2b91bdfbba4ae5669"
     },
     {
       "question_id": "858b79bd-6113-4d3c-b26d-da515aed779f",

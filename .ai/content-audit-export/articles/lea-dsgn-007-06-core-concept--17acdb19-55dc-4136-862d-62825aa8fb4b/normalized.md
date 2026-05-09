@@ -85,13 +85,13 @@ Circulation design in the Philippines must respond to tropical climate, local co
 
 ## How It's Tested
 
-**Pattern 1 — Hierarchy Identification**  
+**Pattern 1 — Hierarchy Identification**
 You are given a plan and asked to identify primary, secondary, and service circulation. You must explain how each supports wayfinding, zoning (public vs. private vs. service), and operational efficiency.
 
-**Pattern 2 — Corridor Width Verification**  
+**Pattern 2 — Corridor Width Verification**
 Given a building occupancy (e.g., hospital, hotel, residential) and calculated occupant load, you verify whether proposed corridor widths comply with PD 1096 / IRR requirements for means of egress, and whether additional width is needed for accessibility and stretchers or beds.
 
-**Pattern 3 — Dead-End Analysis**  
+**Pattern 3 — Dead-End Analysis**
 Given a floor plan, you locate dead-end corridors and determine if they exceed the allowable lengths under RA 9514 IRR for the specified occupancy and sprinkler condition. You may be asked to identify layout adjustments to eliminate or shorten noncompliant dead-ends.
 
 > [SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]

@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Hist 008 03D Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 
 ## Learning Goal
@@ -7,14 +16,26 @@ Identify Alvar Aalto's humanistic modernism — organic curves, natural material
 **Alvar Aalto** (1898–1976) was Finland's most important architect and a crucial figure in 20th-century modernism. Yet his approach differs fundamentally from Le Corbusier and Mies. Where they pursued geometric abstraction and reduction, Aalto pursued human scale, organic curves, and material warmth.
 
 
-<ArticleMedia id="media-hist-008-03d-core-concept" layout="single" type="image" status="placeholder" alt="Exterior of Paimio Sanatorium (Paimio, Finland, 1929–1933, Alvar Aalto), showing the reinforced concrete frame with warm brick infill, the long ward wing oriented for sun and views, and the human-centered design approach." caption="Paimio Sanatorium — Alvar Aalto's Humanist Modernism" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-hist-008-03d-core-concept", layout="single", type="image", status="placeholder", alt="Exterior of Paimio Sanatorium (Paimio, Finland, 1929–1933, Alvar Aalto), showing the reinforced concrete frame with warm brick infill, the long ward wing oriented for sun and views, and the human-centered design approach.", caption="Paimio Sanatorium — Alvar Aalto's Humanist Modernism", suggestedAsset="Architectural reference image or diagram", placementIntent="Visual reference for architectural period/typology"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 
-<Tip>Aalto = humanistic modernism with organic curves, natural materials, and human comfort. His bent plywood chair (1932) is his signature: industrial production creates organic form. Key phrase: modernism that is warm, not cold; regional, not universal.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Aalto = humanistic modernism with organic curves, natural materials, and human comfort. His bent plywood chair (1932) is his signature: industrial production creates organic form. Key phrase: modernism that is warm, not cold; regional, not universal.
+[/SLATECAMP_UI_BLOCK]
 
 Aalto's philosophy is sometimes called "**humanistic modernism**" or "**organic modernism**." He believed that modernism's functional logic should serve human comfort, not impose geometric perfection on human experience. He also believed that natural forms—trees, rocks, water—held aesthetic and structural lessons that architects should learn from. His buildings are modern in their clarity and efficiency but warm in their materials, curves, and spatial generosity.
 
-<Note>Nordic Modernism (Scandinavian Modernism) is fully modern—not anti-modern or nostalgic. It simply insists that modernism must be humanistic, regionally rooted, and craft-conscious. Aalto's influence spread throughout Scandinavian design (Danish furniture, Swedish glass, Finnish ceramics), creating a regional alternative to the International Style without rejecting modernism itself.</Note>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Nordic Modernism (Scandinavian Modernism) is fully modern—not anti-modern or nostalgic. It simply insists that modernism must be humanistic, regionally rooted, and craft-conscious. Aalto's influence spread throughout Scandinavian design (Danish furniture, Swedish glass, Finnish ceramics), creating a regional alternative to the International Style without rejecting modernism itself.
+[/SLATECAMP_UI_BLOCK]
 
 Aalto's signature design element is the **bent plywood chair** (1932). This simple object—a curved wooden form molded to the human body—became iconic. It demonstrates his design philosophy: industrial technique (bending plywood in a factory) combined with organic form (flowing curves) and human comfort. The chair is modern but not cold; functional but beautiful; mass-produced but handcrafted in feeling.
 
@@ -28,35 +49,79 @@ Aalto's approach influenced Scandinavian design broadly—Danish furniture, Swed
 
 Aalto also pioneered the concept of the **designer's total output**. Like the Bauhaus, he designed buildings, furniture, glassware, and textiles. All expressed the same philosophy: functional form, natural materials, human scale. Design was unified across scales and disciplines.
 
-<Warn>Critical distinctions: Aalto's organic curves are NOT Art Nouveau decoration—they're structural and functional, inspired by nature but serving human comfort and engineering logic. Also: bent plywood is NOT traditional craft—it's industrial technology (steam and molds) creating organic form. Aalto reconciles industry and craft, not retreats from modernism into nostalgia.</Warn>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Critical distinctions: Aalto's organic curves are NOT Art Nouveau decoration—they're structural and functional, inspired by nature but serving human comfort and engineering logic. Also: bent plywood is NOT traditional craft—it's industrial technology (steam and molds) creating organic form. Aalto reconciles industry and craft, not retreats from modernism into nostalgia.
+[/SLATECAMP_UI_BLOCK]
 
 
-<ArticleMedia id="media-hist-008-03d-core-concept" layout="single" type="image" status="placeholder" alt="View of Villa Mairea (Noormarkku, Finland, 1937–1939, Alvar Aalto), showing the L-shaped plan, the blend of modern materials with natural elements (stone, timber, brick), and the forest-inspired column design." caption="Villa Mairea — Organic Modernist Villa" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+[SLATECAMP_UI_BLOCK:ui_0005 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-hist-008-03d-core-concept", layout="single", type="image", status="placeholder", alt="View of Villa Mairea (Noormarkku, Finland, 1937–1939, Alvar Aalto), showing the L-shaped plan, the blend of modern materials with natural elements (stone, timber, brick), and the forest-inspired column design.", caption="Villa Mairea — Organic Modernist Villa", suggestedAsset="Architectural reference image or diagram", placementIntent="Visual reference for architectural period/typology"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 
 ## Key Facts and Testable Items
 
-<WikiExamTable headers={["Building", "Architect", "Year", "Location", "Key Principle", "Defining Features"]} rows={[["Paimio Sanatorium", "Alvar Aalto", "1929–1933", "Paimio, Finland", "Humanistic modernism; health and comfort prioritized", "Curved forms; large windows; material warmth; rational plan; human-centered function"], ["Villa Mairea", "Alvar Aalto", "1938–1939", "Noormarkku, Finland", "Modernism merged with craft tradition; organic form", "Open flowing plan; curved walls; natural materials (wood, brick); forest integration"], ["Finlandia Hall", "Alvar Aalto", "1971", "Helsinki, Finland", "Civic modernism; cultural respect; fluid form", "White marble exterior; organic curves; interior spatial flow; cultural context"], ["Bent Plywood Chair", "Alvar Aalto", "1932", "Finland", "Industrial technique with organic form; human comfort", "Molded plywood; curved shape; mass production; handcrafted appearance"]]} />
+[SLATECAMP_UI_BLOCK:ui_0006 component="WikiExamTable" status="preserved"]
+Extracted summary:
+- Props: headers="{[\"Building\", \"Architect\", \"Year\", \"Location\", \"Key Principle\", \"Defining Features\"]}", rows="{[[\"Paimio Sanatorium\", \"Alvar Aalto\", \"1929–1933\", \"Paimio, Finland\", \"Humanistic modernism; health and comfort prioritized\", \"Curved forms; large windows; material warmth; rational plan; human-centered function\"], [\"Villa Mairea\", \"Alvar Aalto\", \"1938–1939\", \"Noormarkku, Finland\", \"Modernism merged with craft tradition; organic form\", \"Open flowing plan; curved walls; natural materials (wood, brick); forest integration\"], [\"Finlandia Hall\", \"Alvar Aalto\", \"1971\", \"Helsinki, Finland\", \"Civic modernism; cultural respect; fluid form\", \"White marble exterior; organic curves; interior spatial flow; cultural context\"], [\"Bent Plywood Chair\", \"Alvar Aalto\", \"1932\", \"Finland\", \"Industrial technique with organic form; human comfort\", \"Molded plywood; curved shape; mass production; handcrafted appearance\"]]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## How It's Tested on the LEA
 
-<ExamTip>**Pattern 1: Philosophy and Design Outcome.** You may see: "Alvar Aalto's approach to modernism differs from Le Corbusier's because Aalto prioritized [A] geometric abstraction and reduction [B] human comfort, organic forms, and material warmth [C] machine-age aesthetics [D] historical ornament." Answer: B. You must understand his humanistic philosophy.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 1: Philosophy and Design Outcome.** You may see: "Alvar Aalto's approach to modernism differs from Le Corbusier's because Aalto prioritized [A] geometric abstraction and reduction [B] human comfort, organic forms, and material warmth [C] machine-age aesthetics [D] historical ornament." Answer: B. You must understand his humanistic philosophy.
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>**Pattern 2: Building Feature Recognition.** You may see an image of the Paimio Sanatorium: "This building's curved forms and warm materials serve what purpose?" Answer: Patient health and comfort; creates a humane, non-institutional environment; responds to function (sanatorium) with spatial and material generosity. Expect questions linking design features to human experience.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 2: Building Feature Recognition.** You may see an image of the Paimio Sanatorium: "This building's curved forms and warm materials serve what purpose?" Answer: Patient health and comfort; creates a humane, non-institutional environment; responds to function (sanatorium) with spatial and material generosity. Expect questions linking design features to human experience.
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>**Pattern 3: Regional Context and Tradition.** You may see: "Nordic Modernism, exemplified by Alvar Aalto, differs from International Style in that it [A] rejects modernism entirely [B] incorporates regional craft traditions and natural materials [C] emphasizes geometric abstraction above all [D] ignores functional planning." Answer: B. Expect questions about regional modernism.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0009 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 3: Regional Context and Tradition.** You may see: "Nordic Modernism, exemplified by Alvar Aalto, differs from International Style in that it [A] rejects modernism entirely [B] incorporates regional craft traditions and natural materials [C] emphasizes geometric abstraction above all [D] ignores functional planning." Answer: B. Expect questions about regional modernism.
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>**Pattern 4: Total Design Across Disciplines.** You may see: "Which of the following objects also demonstrates Alvar Aalto's design philosophy?" Answer: Bent plywood furniture, glassware designs, textile patterns. Aalto's philosophy spans multiple disciplines; expect questions testing this breadth.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0010 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 4: Total Design Across Disciplines.** You may see: "Which of the following objects also demonstrates Alvar Aalto's design philosophy?" Answer: Bent plywood furniture, glassware designs, textile patterns. Aalto's philosophy spans multiple disciplines; expect questions testing this breadth.
+[/SLATECAMP_UI_BLOCK]
 
-<Callout>Alvar Aalto represents a humanistic alternative to the geometric rationalism of Le Corbusier and Mies. The board exam tests whether you can identify his signature buildings, understand his design philosophy (humanistic modernism, organic forms, bent plywood), and articulate how Nordic modernism differs from International Style rationalism.</Callout>
+[SLATECAMP_UI_BLOCK:ui_0011 component="Callout" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Alvar Aalto represents a humanistic alternative to the geometric rationalism of Le Corbusier and Mies. The board exam tests whether you can identify his signature buildings, understand his design philosophy (humanistic modernism, organic forms, bent plywood), and articulate how Nordic modernism differs from International Style rationalism.
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
-<WikiMistakeCard mistake="Treating Nordic Modernism as anti-modernism" correction="Students sometimes mistake Aalto's warmth and craft tradition as a retreat from modernism. Actually, his work is fully modern—it simply insists that modernism must be humanistic. It's not nostalgia; it's a different modernism." context="Understanding Nordic Modernism as a regional variant of modernism rather than a rejection of it is essential for answering comparative questions about international design movements." />
+[SLATECAMP_UI_BLOCK:ui_0012 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Treating Nordic Modernism as anti-modernism", correction="Students sometimes mistake Aalto's warmth and craft tradition as a retreat from modernism. Actually, his work is fully modern—it simply insists that modernism must be humanistic. It's not nostalgia; it's a different modernism.", context="Understanding Nordic Modernism as a regional variant of modernism rather than a rejection of it is essential for answering comparative questions about international design movements."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeCard mistake="Confusing Aalto's organicism with Art Nouveau" correction="Aalto's organic curves were inspired by nature and human comfort, not decorative whimsy. Art Nouveau curves are ornamental; Aalto's curves are structural and functional. They look similar but mean different things." context="This distinction is tested when identifying architectural styles and understanding design philosophy. Recognizing the functional basis of Aalto's curves is crucial." />
+[SLATECAMP_UI_BLOCK:ui_0013 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Confusing Aalto's organicism with Art Nouveau", correction="Aalto's organic curves were inspired by nature and human comfort, not decorative whimsy. Art Nouveau curves are ornamental; Aalto's curves are structural and functional. They look similar but mean different things.", context="This distinction is tested when identifying architectural styles and understanding design philosophy. Recognizing the functional basis of Aalto's curves is crucial."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeList mistakes={["Assuming bent plywood is a traditional craft: The bent plywood chair uses industrial technology (steam and molds) to create organic form. It's mechanically produced, not handmade. The &quot;handcrafted&quot; appearance is the result of industrial process—this is Aalto's genius: reconciling industry and craft.", "Overlooking the sanatorium's functional program: Students sometimes read Paimio Sanatorium as merely &quot;warm and curvy.&quot; But its specific features (large south-facing windows for sunlight, curved ceiling to reduce dripping condensation, material warmth for patient morlea) respond directly to tuberculosis care.", "Misidentifying Aalto's influence: Aalto influenced Scandinavian design broadly, but also influenced humanistic architects globally (Carlo Scarpa, Louis Kahn). Know the specific Aalto precedent—don't assume all warm modernism is Aalto-derived.", "Confusing Finlandia Hall's appearance with symbolism: Finlandia Hall's white marble references Finnish neoclassical tradition, but the building is not nostalgic—it's a modern building that honors regional architectural heritage."]} />
+[SLATECAMP_UI_BLOCK:ui_0014 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Assuming bent plywood is a traditional craft: The bent plywood chair uses industrial technology (steam and molds) to create organic form. It's mechanically produced, not handmade. The &quot;handcrafted&quot; appearance is the result of industrial process—this is Aalto's genius: reconciling industry and craft.\", \"Overlooking the sanatorium's functional program: Students sometimes read Paimio Sanatorium as merely &quot;warm and curvy.&quot; But its specific features (large south-facing windows for sunlight, curved ceiling to reduce dripping condensation, material warmth for patient morlea) respond directly to tuberculosis care.\", \"Misidentifying Aalto's influence: Aalto influenced Scandinavian design broadly, but also influenced humanistic architects globally (Carlo Scarpa, Louis Kahn). Know the specific Aalto precedent—don't assume all warm modernism is Aalto-derived.\", \"Confusing Finlandia Hall's appearance with symbolism: Finlandia Hall's white marble references Finnish neoclassical tradition, but the building is not nostalgic—it's a modern building that honors regional architectural heritage.\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Terms
 
@@ -76,7 +141,11 @@ Aalto also pioneered the concept of the **designer's total output**. Like the Ba
 
 **Total Design**: Commitment to unified design philosophy across all scales and disciplines—buildings, furniture, textiles, ceramics—ensuring consistent aesthetic and functional principles throughout all output.
 
-<ArticleMedia id="media-hist-008-03d-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparison of Alvar Aalto's humanist modernism across Paimio Sanatorium (functionalist, 1933), Villa Mairea (organic curves, natural materials, 1939), and Finlandia Hall (brick and timber, 1971)." caption="Alvar Aalto — Humanist Modernist Works" suggestedAsset="Style comparison illustration" placementIntent="Style comparison for architectural period" />
+[SLATECAMP_UI_BLOCK:ui_0015 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-hist-008-03d-core-concept-timeline", layout="single", type="image", status="placeholder", alt="Comparison of Alvar Aalto's humanist modernism across Paimio Sanatorium (functionalist, 1933), Villa Mairea (organic curves, natural materials, 1939), and Finlandia Hall (brick and timber, 1971).", caption="Alvar Aalto — Humanist Modernist Works", suggestedAsset="Style comparison illustration", placementIntent="Style comparison for architectural period"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 

@@ -1,5 +1,12 @@
 # Plastics in Construction
-**LEA Review | Area 2: Materials & Construction | PD 1096 Rule XVI, Sections 1601–1609**
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Plastics in Construction** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
+
 
 ## Learning Goal
 
@@ -388,14 +395,11 @@ A polycarbonate sheet has a tested flame-spread index of 190. Under which standa
 - C. Fails both PD 1096 and IBC 2021 requirements
 - D. Approved under IBC 2021 only; PD 1096 does not address flame-spread numerically
 
-<LawCallout code="pd1096" section="Rule IV - Plastics in Construction">
-
-
-Correct Answer: A — Approved under PD 1096 only; fails IBC 2021 requirements.
-PD 1096 Section 1601 (2004 IRR) requires flame-spread ≤ 225; a rating of 190 is compliant under Philippine law. IBC 2021 Section 2606 classifies light-transmitting plastics as CC1 (0–25) or CC2 (26–75); a rating of 190 exceeds the CC2 ceiling of 75 and is therefore not an approved light-transmitting plastic under the IBC. This illustrates one of the most significant divergences between PH and US standards.
-
-
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="pd1096", section="Rule IV - Plastics in Construction"
+- Text: Correct Answer: A — Approved under PD 1096 only; fails IBC 2021 requirements. PD 1096 Section 1601 (2004 IRR) requires flame-spread ≤ 225; a rating of 190 is compliant under Philippine law. IBC 2021 Section 2606 classifies light-transmitting plastics as CC1 (0–25) or CC2 (26–75); a rating of 190 exceeds the CC2 ceiling of 75 and is therefore not an approved light-transmitting plastic under the IBC. This illustrates one of the most significant divergences between PH and US standards.
+[/SLATECAMP_UI_BLOCK]
 
 ---
 

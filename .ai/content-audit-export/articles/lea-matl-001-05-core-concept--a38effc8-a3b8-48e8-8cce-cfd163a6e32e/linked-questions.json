@@ -1,7 +1,7 @@
 {
   "article_id": "a38effc8-a3b8-48e8-8cce-cfd163a6e32e",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:5ab9fb600f8fbc9356cbfb85eb482de7aa72f0cc866bc2bbeb38689665d992d9",
+  "linked_questions_hash": "sha256:d80570fafef5a99d91aaf4e02a093e66a886b55f5ac7ce6a37c5f87062b8ae7b",
   "question_count": 10,
   "questions": [
     {
@@ -239,7 +239,7 @@
         "correct": "BF = (Actual T × Actual W × Total Linear Feet) / 12 = (0.75 × 5.5 × 200) / 12 = 825 / 12 = 68.75 BF.",
         "takeaway": "Linear feet (LF) is simply the total length (L). Use it as the L variable in the BF formula."
       },
-      "explanation": null,
+      "explanation": "Incorrect math or use of a non-standard divisor. This is the NOMINAL BF: (1 × 6 × 200) / 12 = 100 BF. The question asks for actual volume based on the 0.75 x 5.5 dims provided. Gross overestimation. BF = (Actual T × Actual W × Total Linear Feet) / 12 = (0.75 × 5.5 × 200) / 12 = 825 / 12 = 68.75 BF. Linear feet (LF) is simply the total length (L). Use it as the L variable in the BF formula.",
       "code_citation": "NSCP 2015 Section 2401; Quantity Surveying Standards",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
@@ -251,8 +251,8 @@
       "model_id": "ALE-MATL-001-05-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.434371+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:51301d56c8b2aa59a2a17ccf900a0f3116aa43df5467e6ff072631af1b4de3e1"
+      "updated_at": "2026-05-06T13:14:20.379094+00:00",
+      "content_hash": "sha256:8b1b065acf06d14f95d63382a9880f38522d88381955a9ccba3984b18e39bda5"
     },
     {
       "question_id": "9e4aa471-d705-4161-941f-85eb3067c866",
@@ -289,7 +289,7 @@
         "correct": "In the Philippines, standard S4S (surfaced 4 sides) lumber reduces nominal dimensions by 0.5 inches for 2-6 inch members. A 2x4 is actually 1.5 x 3.5 inches.",
         "takeaway": "Memorize: 1\" nominal becomes 0.75\"; 2\"-6\" nominal reduces by 0.5\"; 8\"+ nominal reduces by 0.75\"."
       },
-      "explanation": null,
+      "explanation": "This is the rough-sawn/nominal size, not the actual finished size. This reduction is insufficient; 0.5 inches is the standard deduction for these sizes. Dimensions decrease during milling and drying, they do not increase. In the Philippines, standard S4S (surfaced 4 sides) lumber reduces nominal dimensions by 0.5 inches for 2-6 inch members. A 2x4 is actually 1.5 x 3.5 inches. Memorize: 1\" nominal becomes 0.75\"; 2\"-6\" nominal reduces by 0.5\"; 8\"+ nominal reduces by 0.75\".",
       "code_citation": "DENR Administrative Order No. 2001-08; NSCP 2015",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
@@ -301,8 +301,8 @@
       "model_id": "ALE-MATL-001-05-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.434371+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:97a3898d1e11c7a590db4ac0285841203efc9be81d9503a09ca63e10b0e18bc7"
+      "updated_at": "2026-05-06T13:14:20.506874+00:00",
+      "content_hash": "sha256:b8156b066a792de6d904453a205a6cba97eacae346be7bee575b89ccd4c603ac"
     },
     {
       "question_id": "adec3c12-138b-4db5-bfc4-1003376076f5",
@@ -339,7 +339,7 @@
         "correct": "Using standard NOMINAL board foot calculations for trade: (2×6×12)/12 = 12 BF per pc. 30 pcs × 12 = 360 BF. (2×4×8)/12 = 5.33 BF per pc. 40 pcs × 5.33 = 213.3 BF. Total = 360 + 213.3 = 573.3 BF. This exceeds the 450 BF requirement.",
         "takeaway": "Unless specified as 'actual volume', board feet for delivery/invoicing are always based on Nominal dimensions."
       },
-      "explanation": null,
+      "explanation": "Incorrect math; likely using incorrect divisors. This would be the result if using ACTUAL dimensions (8.25 BF and 3.5 BF) - however, delivery and trade are measured nominally. Calculation does not result in 450. Using standard NOMINAL board foot calculations for trade: (2×6×12)/12 = 12 BF per pc. 30 pcs × 12 = 360 BF. (2×4×8)/12 = 5.33 BF per pc. 40 pcs × 5.33 = 213.3 BF. Total = 360 + 213.3 = 573.3 BF. This exceeds the 450 BF requirement. Unless specified as 'actual volume', board feet for delivery/invoicing are always based on Nominal dimensions.",
       "code_citation": "NSCP 2015 Section 2401; Material Verification Standards",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
@@ -351,8 +351,8 @@
       "model_id": "ALE-MATL-001-05-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.434371+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:cc8dfffd2113b158c583d44a38ed3d563bdfe44b8660c42c6f3385d36a5cc651"
+      "updated_at": "2026-05-06T13:14:20.639113+00:00",
+      "content_hash": "sha256:32e056a7917e2bbb873cfa9fa3e247d21dd829c178167e8c0ab93a668c20d17a"
     },
     {
       "question_id": "a5568ab4-1694-42c1-aac9-0d10be5fecb3",
@@ -489,7 +489,7 @@
         "correct": "Philippine timber is grouped by the Forest Products Research and Development Institute (FPRDI) based on specific gravity. Group I (High Strength) includes Yakal, Molave, and Gijo.",
         "takeaway": "Group I = Hardest/Strongest (>0.70 specific gravity). Group IV = Lightest/Weakest (<0.40 specific gravity)."
       },
-      "explanation": null,
+      "explanation": "Moisture content determines if wood is S-Dry or Green, but it is not the basis for Group I-IV classification. Finish is a quality of milling, not botanical grouping. Softwoods like Pine are Group IV; Group I is reserved for high-density hardwoods. Philippine timber is grouped by the Forest Products Research and Development Institute (FPRDI) based on specific gravity. Group I (High Strength) includes Yakal, Molave, and Gijo. Group I = Hardest/Strongest (>0.70 specific gravity). Group IV = Lightest/Weakest (<0.40 specific gravity).",
       "code_citation": "FPRDI Guidelines; NSCP 2015 Table 2401.13-1",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
@@ -501,8 +501,8 @@
       "model_id": "ALE-MATL-001-05-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.434371+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:d83348c24b13b216fb04eb74d4e6af468de152842dabc848993afea011ec3e96"
+      "updated_at": "2026-05-06T13:14:20.782624+00:00",
+      "content_hash": "sha256:3baed37c96bd584d690c18c7983ca3bf2fa377cd0d16222b653409fb07a99315"
     }
   ]
 }

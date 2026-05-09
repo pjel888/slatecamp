@@ -1,3 +1,10 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Lea Prac Frm 013 Coa Audit Compliance For Publicly Funded Architectural Projects** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
 ## COA Audit Compliance for Publicly Funded Architectural Projects
 
 The Commission on Audit (COA) conducts financial and performance audits of government entities and their spending. When architectural projects are publicly funded, COA review extends to design decisions, contract management, and professional compliance. Understanding audit expectations helps architects document their work defensibly and avoid findings that delay payments or create legal exposure.
@@ -13,7 +20,11 @@ After studying this article, you should be able to:
 
 ### Three Pillars of COA Audit: Regularity, Legality, and Economy
 
-<ExamTip>COA's three pillars: **Regularity** — were procedures followed (bidding per RA 9184, approvals obtained)? **Legality** — does the design comply with NBC, environmental laws, BP 344? **Economy** — was value achieved, costs controlled, waste avoided? Architects influence all three dimensions.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0001 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: COA's three pillars: **Regularity** — were procedures followed (bidding per RA 9184, approvals obtained)? **Legality** — does the design comply with NBC, environmental laws, BP 344? **Economy** — was value achieved, costs controlled, waste avoided? Architects influence all three dimensions.
+[/SLATECAMP_UI_BLOCK]
 
 COA evaluates publicly funded projects across three dimensions. _Regularity_ ensures that established procedures were followed—that bidding was conducted per RA 9184, approvals obtained, and authorizations documented. _Legality_ verifies that the project complies with applicable laws: the National Building Code, environmental laws, accessibility standards (BP 344), and labor laws. _Economy_ assesses whether the project achieved good value—whether costs were controlled, waste avoided, and resources used efficiently.
 
@@ -55,15 +66,29 @@ Architects should maintain professional liability insurance adequate for the sco
 
 Professional liability insurance typically covers negligent acts, errors, and omissions in the design or administration. However, it does not cover willful misconduct, fraud, or violation of law. Architects should understand their policy limits and exclusions.
 
-<LawCallout code="ra9184" section="Section 37 - Audit">
-Legal Basis: Presidential Decree 1445 (Government Auditing Code of the Philippines). The Commission on Audit has exclusive authority to examine all government-funded projects including architectural consulting contracts.
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="ra9184", section="Section 37 - Audit"
+- Text: Legal Basis: Presidential Decree 1445 (Government Auditing Code of the Philippines). The Commission on Audit has exclusive authority to examine all government-funded projects including architectural consulting contracts.
+[/SLATECAMP_UI_BLOCK]
 
-<Warn />
+[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip />
+[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<Tip />
+[SLATECAMP_UI_BLOCK:ui_0005 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ---
 

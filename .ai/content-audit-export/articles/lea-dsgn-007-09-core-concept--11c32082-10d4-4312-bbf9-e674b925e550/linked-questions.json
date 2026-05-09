@@ -1,7 +1,7 @@
 {
   "article_id": "11c32082-10d4-4312-bbf9-e674b925e550",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:b5df04209716480291f08680bc604d216e546b95bbb5245fec2fdcad51a4f6c6",
+  "linked_questions_hash": "sha256:b1df2c322e6b2a40a05ecddec7f446a94b1355b9702f2097185979818e92d328",
   "question_count": 10,
   "questions": [
     {
@@ -139,7 +139,7 @@
         "correct": "Hospital NGR = 0.55–0.65; meaning 35–45% of GFA is non-usable. Hospitals require operating suites, imaging, emergency power, backup water, sterilization, waste systems, pharmaceutical storage, etc. All consumed by MEP and service infrastructure.",
         "takeaway": "NGR varies by complexity: retail (highest, least MEP) → office/residential (medium) → hospital (lowest, most MEP)."
       },
-      "explanation": null,
+      "explanation": "Retail NGR is highest (0.82–0.90), meaning MEP is minimal—mostly electrical for lights and HVAC distribution. Residential is 0.75–0.85, moderate MEP (plumbing distributed to units, but not redundant). Office is 0.75–0.82, moderate due to zoned HVAC and cable management. Hospital NGR = 0.55–0.65; meaning 35–45% of GFA is non-usable. Hospitals require operating suites, imaging, emergency power, backup water, sterilization, waste systems, pharmaceutical storage, etc. All consumed by MEP and service infrastructure. NGR varies by complexity: retail (highest, least MEP) → office/residential (medium) → hospital (lowest, most MEP).",
       "code_citation": "ASHRAE Planning Data (NGR not in NBC)",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
@@ -151,8 +151,8 @@
       "model_id": "ALE-DSGN-007-09-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:12.558927+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:43e769565ba2290ecafa1410c7e4f70fc6347a9047556b0e1c2addfd9512ccc9"
+      "updated_at": "2026-05-06T13:14:18.608561+00:00",
+      "content_hash": "sha256:0fdfa2eda541cae43b03dc658d272cb54695d30600dc4ca3d0067a9bf9ffadad"
     },
     {
       "question_id": "c3b62b18-0a23-48d5-9f4b-b6f02f064126",

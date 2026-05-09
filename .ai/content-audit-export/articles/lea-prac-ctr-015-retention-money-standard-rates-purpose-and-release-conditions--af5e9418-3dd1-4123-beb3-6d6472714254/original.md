@@ -1,3 +1,10 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Lea Prac Ctr 015 Retention Money Standard Rates Purpose And Release Conditions** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
 ## Retention Money — Standard Rates, Purpose, and Release Conditions
 ## Learning Goal
 
@@ -46,19 +53,27 @@ The owner has a fiduciary obligation to account for and properly manage retained
 
 Interest on retained funds creates a point of contract negotiation. Some contracts specify that the owner must pay the contractor interest on retention funds, recognizing that the owner holds the contractor's money. Other contracts are silent on interest, resulting in the owner retaining use of the funds interest-free throughout the project duration.
 
-<LawCallout code="nbcp" section="RA 9266" title="Architecture Act of 2004">RA 9266 governs architectural practice and contract requirements. Agreements must specify scope, compensation, termination, and dispute resolution per SPP Document 201.</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="nbcp", section="RA 9266", title="Architecture Act of 2004"
+- Text: RA 9266 governs architectural practice and contract requirements. Agreements must specify scope, compensation, termination, and dispute resolution per SPP Document 201.
+[/SLATECAMP_UI_BLOCK]
 
-<ProcessFlow>
-<ol>
-  <li><strong>Proposal</strong> — Scope definition and fee negotiation</li>
-  <li><strong>Contract Execution</strong> — Signing of UAP Doc 301</li>
-  <li><strong>Service Delivery</strong> — Performance of defined phases</li>
-  <li><strong>Payment Processing</strong> — Progress billing and certificates</li>
-  <li><strong>Close-out</strong> — Final certificate, retention release</li>
-</ol>
-</ProcessFlow>
+[SLATECAMP_UI_BLOCK:ui_0002 component="ProcessFlow" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Proposal — Scope definition and fee negotiation Contract Execution — Signing of UAP Doc 301 Service Delivery — Performance of defined phases Payment Processing — Progress billing and certificates Close-out — Final certificate, retention release
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>Under UAP Doc 301, basic services = all 6 phases. Additional services (feasibility, supervision) are separately compensated. Verify exclusions.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Under UAP Doc 301, basic services = all 6 phases. Additional services (feasibility, supervision) are separately compensated. Verify exclusions.
+[/SLATECAMP_UI_BLOCK]
 
-<KeyValues items={[{"value": "10%", "label": "Standard Retention"}, {"value": "60 days", "label": "Payment Period"}, {"value": "5%", "label": "COLA Escalation Max"}, {"value": "90%", "label": "CD Phase Fee"}]} />
+[SLATECAMP_UI_BLOCK:ui_0004 component="KeyValues" status="preserved"]
+Extracted summary:
+- Props: items="{[{\"value\": \"10%\", \"label\": \"Standard Retention\"}", value=true, days=true, label=true, Payment=true, Period=true, COLA=true, Escalation=true, Max=true, CD=true, Phase=true, Fee=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 <!-- no-media-needed: professional practice article, text/tables/UI blocks are optimal format -->

@@ -1,9 +1,113 @@
 {
   "article_id": "3d340472-3007-4a4e-8a25-9754506e17bc",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:bfe6c6b5a002eb252c544af10327a02b406f9632bf193e4f01373f19cce60f8b",
+  "linked_questions_hash": "sha256:3bd1fee320e10c98b4ea64ecba293084cff313c9fd4c2d6c99fbc5124724c7ea",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "d9f8126c-4c28-427d-94af-659a6c0c17c6",
+      "article_id": "3d340472-3007-4a4e-8a25-9754506e17bc",
+      "topic_id": "1c738d68-b54e-4f72-826b-210948cc0cd2",
+      "text": "Compare how structural form generates aesthetics in High-Tech architecture versus how aesthetic form is imposed in postmodernism.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Postmodernism generates form through performance data; High-Tech relies on historical allusion, often disregarding structural efficiency"
+        },
+        {
+          "id": "b",
+          "text": "Both High-Tech and postmodernism begin with aesthetic preferences and work backward to justify structural systems, though High-Tech often prioritizes technological innovation"
+        },
+        {
+          "id": "c",
+          "text": "High-Tech is more creative; postmodernism merely copies historical precedent, lacking originality in its approach"
+        },
+        {
+          "id": "d",
+          "text": "High-Tech allows structural optimization to generate visible form; postmodernism imposes preconceived formal geometry decorated with historical or ironic reference—inverse approaches to form-generation"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "architectural theory associates performance data with contemporary parametricism and sustainability, not High-Tech specifically, and certainly not postmodernism.",
+        "b": "High-Tech prioritizes structural/functional logic generating form; postmodernism prioritizes semantic content and historical meaning imposed on form.",
+        "c": "Both are creative but employ different creative logics; the distinction concerns methodology not creativity level.",
+        "correct": "These: High-Tech calculates structural optimization to generate form; postmodernism treats facades as representational surfaces and applies ornament/historical reference as applied decoration. These are opposite methodologies: form-generation vs. form-imposition.",
+        "takeaway": "These are opposite methodologies: form-generation vs. form-imposition."
+      },
+      "explanation": "architectural theory associates performance data with contemporary parametricism and sustainability, not High-Tech specifically, and certainly not postmodernism. High-Tech prioritizes structural/functional logic generating form; postmodernism prioritizes semantic content and historical meaning imposed on form. Both are creative but employ different creative logics; the distinction concerns methodology not creativity level. These: High-Tech calculates structural optimization to generate form; postmodernism treats facades as representational surfaces and applies ornament/historical reference as applied decoration. These are opposite methodologies: form-generation vs. form-imposition. These are opposite methodologies: form-generation vs. form-imposition.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-007-12-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.809916+00:00",
+      "updated_at": "2026-05-06T15:09:23.611041+00:00",
+      "content_hash": "sha256:04e34aea6642fff975898a0cbbdb205a564fdb6e3f835cd6b9bead5c8ae90a39"
+    },
+    {
+      "question_id": "cc6d30a1-c8d7-4347-9d35-360016acee91",
+      "article_id": "3d340472-3007-4a4e-8a25-9754506e17bc",
+      "topic_id": "1c738d68-b54e-4f72-826b-210948cc0cd2",
+      "text": "Compare High-Tech's relationship to energy efficiency and sustainability with assessment of the movement's contemporary performance.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Early High-Tech (1970s–80s) was energy-intensive with glass facades and mechanical complexity; contemporary High-Tech integrates efficiency through advanced controls and materials while maintaining structural/mechanical expression as aesthetic principle"
+        },
+        {
+          "id": "b",
+          "text": "High-Tech is inherently sustainable because it exposes and celebrates mechanical efficiency, which is a simplification of the movement's principles"
+        },
+        {
+          "id": "c",
+          "text": "Sustainability and High-Tech aesthetic are incompatible; contemporary practice must choose one or the other, which is a debated perspective in architectural discourse"
+        },
+        {
+          "id": "d",
+          "text": "High-Tech was always unsustainable; modern sustainability requires abandoning High-Tech principles entirely, which overlooks the evolution of the movement"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Tension; exposed mechanical systems don't guarantee efficiency; they must be high-performance systems.",
+        "c": "architectural theory suggests compatibility is possible; contemporary practice demonstrates both can coexist.",
+        "d": "architectural theory does not propose abandoning High-Tech; rather it shows how principles can evolve to include efficiency.",
+        "correct": "This evolution: 'High-Tech emerged during energy abundance; its glass facades and mechanical complexity are energy-intensive. However, contemporary High-Tech increasingly integrates sustainability.' The Lloyd's Building exemplifies this—High-Tech aesthetic retained, mechanical controls retrofitted to achieve 30% energy reduction.",
+        "takeaway": "However, contemporary High-Tech increasingly integrates sustainability.' The Lloyd's Building exemplifies this—High-Tech aesthetic retained, mechanical controls retrofitted to achieve 30% energy reduction."
+      },
+      "explanation": "Tension; exposed mechanical systems don't guarantee efficiency; they must be high-performance systems. architectural theory suggests compatibility is possible; contemporary practice demonstrates both can coexist. architectural theory does not propose abandoning High-Tech; rather it shows how principles can evolve to include efficiency. This evolution: 'High-Tech emerged during energy abundance; its glass facades and mechanical complexity are energy-intensive. However, contemporary High-Tech increasingly integrates sustainability.' The Lloyd's Building exemplifies this—High-Tech aesthetic retained, mechanical controls retrofitted to achieve 30% energy reduction. However, contemporary High-Tech increasingly integrates sustainability.' The Lloyd's Building exemplifies this—High-Tech aesthetic retained, mechanical controls retrofitted to achieve 30% energy reduction.",
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-007-12-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.809916+00:00",
+      "updated_at": "2026-05-06T15:09:23.749503+00:00",
+      "content_hash": "sha256:d2f5505e86c5b226d63e2395a80e449a562d314f066c10d71c637f40739bc4a5"
+    },
     {
       "question_id": "1570c4ae-0500-4c1e-af5b-777e201aac2b",
       "article_id": "3d340472-3007-4a4e-8a25-9754506e17bc",
@@ -91,7 +195,7 @@
         "correct": "This precisely: structural logic becomes primary design generator. Suspension structure is not arbitrary aesthetic choice but results from optimization for column-free office floors and public plaza. The form is structurally honest—trusses are visible because they are actual load-bearing systems, and this visibility generates spectacular but functionally-justified architecture.",
         "takeaway": "The form is structurally honest—trusses are visible because they are actual load-bearing systems, and this visibility generates spectacular but functionally-justified architecture."
       },
-      "explanation": null,
+      "explanation": "While visually dramatic, the design is driven by structural logic, not postmodern representational reference. High-Tech is more than material selection; it concerns structural expression as design methodology. The trusses are primary structural system; they are not decorative but essential to building behavior. This precisely: structural logic becomes primary design generator. Suspension structure is not arbitrary aesthetic choice but results from optimization for column-free office floors and public plaza. The form is structurally honest—trusses are visible because they are actual load-bearing systems, and this visibility generates spectacular but functionally-justified architecture. The form is structurally honest—trusses are visible because they are actual load-bearing systems, and this visibility generates spectacular but functionally-justified architecture.",
       "code_citation": null,
       "bloom_level": "apply",
       "application_context": "design_application",
@@ -105,8 +209,8 @@
       "model_id": "ALE-THEO-007-12-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:62d6b17573e8d2a07998a7f2b8afb2312d0d107c3d2f144aad26009c233614a5"
+      "updated_at": "2026-05-06T15:09:23.463103+00:00",
+      "content_hash": "sha256:dfa3c0f1053ca20b952f5085a83319a28e33baf33ba4fa541aa8dc6d201df86d"
     },
     {
       "question_id": "6e3227e0-2af4-4953-b164-6cafde3093e5",
@@ -367,110 +471,6 @@
       "created_at": "2026-03-23T19:27:55.809916+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:2c98172d1b2dcdde3042b1a51ae1bad459e4b996513ebc10af24acecee52bd90"
-    },
-    {
-      "question_id": "d9f8126c-4c28-427d-94af-659a6c0c17c6",
-      "article_id": "3d340472-3007-4a4e-8a25-9754506e17bc",
-      "topic_id": "1c738d68-b54e-4f72-826b-210948cc0cd2",
-      "text": "Compare how structural form generates aesthetics in High-Tech architecture versus how aesthetic form is imposed in postmodernism.",
-      "options": [
-        {
-          "id": "a",
-          "text": "Postmodernism generates form through performance data; High-Tech relies on historical allusion, often disregarding structural efficiency"
-        },
-        {
-          "id": "b",
-          "text": "Both High-Tech and postmodernism begin with aesthetic preferences and work backward to justify structural systems, though High-Tech often prioritizes technological innovation"
-        },
-        {
-          "id": "c",
-          "text": "High-Tech is more creative; postmodernism merely copies historical precedent, lacking originality in its approach"
-        },
-        {
-          "id": "d",
-          "text": "High-Tech allows structural optimization to generate visible form; postmodernism imposes preconceived formal geometry decorated with historical or ironic reference—inverse approaches to form-generation"
-        }
-      ],
-      "correct_option_id": "d",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "architectural theory associates performance data with contemporary parametricism and sustainability, not High-Tech specifically, and certainly not postmodernism.",
-        "b": "High-Tech prioritizes structural/functional logic generating form; postmodernism prioritizes semantic content and historical meaning imposed on form.",
-        "c": "Both are creative but employ different creative logics; the distinction concerns methodology not creativity level.",
-        "correct": "These: High-Tech calculates structural optimization to generate form; postmodernism treats facades as representational surfaces and applies ornament/historical reference as applied decoration. These are opposite methodologies: form-generation vs. form-imposition.",
-        "takeaway": "These are opposite methodologies: form-generation vs. form-imposition."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "apply",
-      "application_context": "design_application",
-      "practice_context": [
-        "CMP"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-007-12-003",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:a1bab5802137cd5a4833c755bedd82a7ae8d4005ff0efa5680694fdacf3317cb"
-    },
-    {
-      "question_id": "cc6d30a1-c8d7-4347-9d35-360016acee91",
-      "article_id": "3d340472-3007-4a4e-8a25-9754506e17bc",
-      "topic_id": "1c738d68-b54e-4f72-826b-210948cc0cd2",
-      "text": "Compare High-Tech's relationship to energy efficiency and sustainability with assessment of the movement's contemporary performance.",
-      "options": [
-        {
-          "id": "a",
-          "text": "Early High-Tech (1970s–80s) was energy-intensive with glass facades and mechanical complexity; contemporary High-Tech integrates efficiency through advanced controls and materials while maintaining structural/mechanical expression as aesthetic principle"
-        },
-        {
-          "id": "b",
-          "text": "High-Tech is inherently sustainable because it exposes and celebrates mechanical efficiency, which is a simplification of the movement's principles"
-        },
-        {
-          "id": "c",
-          "text": "Sustainability and High-Tech aesthetic are incompatible; contemporary practice must choose one or the other, which is a debated perspective in architectural discourse"
-        },
-        {
-          "id": "d",
-          "text": "High-Tech was always unsustainable; modern sustainability requires abandoning High-Tech principles entirely, which overlooks the evolution of the movement"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "b": "Tension; exposed mechanical systems don't guarantee efficiency; they must be high-performance systems.",
-        "c": "architectural theory suggests compatibility is possible; contemporary practice demonstrates both can coexist.",
-        "d": "architectural theory does not propose abandoning High-Tech; rather it shows how principles can evolve to include efficiency.",
-        "correct": "This evolution: 'High-Tech emerged during energy abundance; its glass facades and mechanical complexity are energy-intensive. However, contemporary High-Tech increasingly integrates sustainability.' The Lloyd's Building exemplifies this—High-Tech aesthetic retained, mechanical controls retrofitted to achieve 30% energy reduction.",
-        "takeaway": "However, contemporary High-Tech increasingly integrates sustainability.' The Lloyd's Building exemplifies this—High-Tech aesthetic retained, mechanical controls retrofitted to achieve 30% energy reduction."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "analyze",
-      "application_context": "design_application",
-      "practice_context": [
-        "CMP"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-007-12-009",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:524de58dba8a9662e9a588ecb564d03a38cf826ccbd3b47b267ce81f7e8dacf6"
     },
     {
       "question_id": "d4ff37f9-8eef-4795-bf86-25695f68cde6",

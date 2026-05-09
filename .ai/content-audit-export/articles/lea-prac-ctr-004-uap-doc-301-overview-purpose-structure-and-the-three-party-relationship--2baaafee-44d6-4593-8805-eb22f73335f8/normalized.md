@@ -47,7 +47,7 @@ The Architect is appointed by the Owner and represents the Owner during construc
 [SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **Architect's Dual Role:** Under Doc 301, the Architect wears two hats that the LEA frequently tests: 1. **Owner's Representative** — advocates for the Owner's interests, certifies payments, issues directives for defective work 2. **Impartial Interpreter** — must fairly interpret Contract Documents when disputes arise between Owner and Contractor The Architect does NOT supervise construction methods or control the Contractor's workers. The Architect only verifies that completed work conforms to 
+- Text: **Architect's Dual Role:** Under Doc 301, the Architect wears two hats that the LEA frequently tests: 1. **Owner's Representative** — advocates for the Owner's interests, certifies payments, issues directives for defective work 2. **Impartial Interpreter** — must fairly interpret Contract Documents when disputes arise between Owner and Contractor The Architect does NOT supervise construction methods or control the Contractor's workers. The Architect only verifies that completed work conforms to
 [/SLATECAMP_UI_BLOCK]
 
 ### Architect's Authority and Powers

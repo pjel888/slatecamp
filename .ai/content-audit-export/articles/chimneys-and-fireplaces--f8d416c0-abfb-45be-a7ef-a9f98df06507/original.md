@@ -1,8 +1,12 @@
 # Chimneys and Fireplaces
-**Rule XII, Section 1211 | PD 1096 & 2004 Revised IRR**
-**LEA Area 2 — Materials & Construction | Occupancies: Residential, Hospitality, Food Service**
 
----
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Chimneys and Fireplaces** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
+
 
 ## Learning Goal
 
@@ -43,11 +47,11 @@ Every chimney must terminate at least **600 mm above** the highest point of roof
 
 ### Master Mnemonic — **"WALSH"**
 
-<LawCallout code="nbcp" section="Rule XII, Sec. 1211" title="WALSH Mnemonic — Five Governing Principles">
-
-W = Walls (thickness by heat load); A = Anchorage (lateral, at 1.80 m intervals); L = Lining (fire clay ≥ 15 mm, or firebrick ≥ 500 mm); S = Separation / Clearance (50 mm interior, 25 mm exterior); H = Height (≥ 600 mm above roof AND above any obstruction within 3 m). Memorize this sequence — it covers every major metric in Section 1211.
-
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="nbcp", section="Rule XII, Sec. 1211", title="WALSH Mnemonic — Five Governing Principles"
+- Text: W = Walls (thickness by heat load); A = Anchorage (lateral, at 1.80 m intervals); L = Lining (fire clay ≥ 15 mm, or firebrick ≥ 500 mm); S = Separation / Clearance (50 mm interior, 25 mm exterior); H = Height (≥ 600 mm above roof AND above any obstruction within 3 m). Memorize this sequence — it covers every major metric in Section 1211.
+[/SLATECAMP_UI_BLOCK]
 
 > **W**alls (thickness by heat load)
 > **A**nchorage (lateral, at 1.80 m intervals)
@@ -102,11 +106,11 @@ W = Walls (thickness by heat load); A = Anchorage (lateral, at 1.80 m intervals)
 | Above roof penetration | ≥ 600 mm | ≥ 914 mm / 3 ft (IRC R1003.9) |
 | Above highest building part within 3.00 m | ≥ 600 mm | ≥ 610 mm / 2 ft above anything within 10 ft / 3.05 m (IRC R1003.9) |
 
-<Note>
-
-Philippine code is less restrictive than IBC regarding above-roof height (600 mm vs. 914 mm), but the 3.00 m / 3.05 m reference zone is virtually identical.
-
-</Note>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Philippine code is less restrictive than IBC regarding above-roof height (600 mm vs. 914 mm), but the 3.00 m / 3.05 m reference zone is virtually identical.
+[/SLATECAMP_UI_BLOCK]
 
 ### Table 5 — Hearth Requirements
 
@@ -264,11 +268,11 @@ The LEA boards may present scenario questions where NFPA 211 data is used as a r
 
 ### Trap 1 — Chimney Height: One Condition or Both?
 
-<Warn>
-
-There are TWO concurrent height conditions. The chimney must be ≥ 600 mm above the roof surface AND ≥ 600 mm above the highest point of any building element within 3.00 m of the chimney. If a parapet wall, dormer, or adjacent structure is within 3.00 m and taller than the chimney top, the chimney fails — even if it meets the 600 mm above-roof condition. Both conditions must be satisfied simultaneously.
-
-</Warn>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: There are TWO concurrent height conditions. The chimney must be ≥ 600 mm above the roof surface AND ≥ 600 mm above the highest point of any building element within 3.00 m of the chimney. If a parapet wall, dormer, or adjacent structure is within 3.00 m and taller than the chimney top, the chimney fails — even if it meets the 600 mm above-roof condition. Both conditions must be satisfied simultaneously.
+[/SLATECAMP_UI_BLOCK]
 
 **Wrong assumption:** "The chimney is 600 mm above the roof surface, so it meets the height requirement."
 
@@ -302,11 +306,11 @@ There are TWO concurrent height conditions. The chimney must be ≥ 600 mm above
 
 ### Mnemonic 1 — Fireplace Wall Numbers: "2-2.5-5-10"
 
-<Tip>
-
-Remember the fireplace dimensions sequence: 200 mm outer wall → 250 mm firebox wall → 500 mm firebox depth → 10 mm max firebrick joint. Say it like a phone number: "Two, two-fifty, five-hundred, ten."
-
-</Tip>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Remember the fireplace dimensions sequence: 200 mm outer wall → 250 mm firebox wall → 500 mm firebox depth → 10 mm max firebrick joint. Say it like a phone number: "Two, two-fifty, five-hundred, ten."
+[/SLATECAMP_UI_BLOCK]
 
 > **2**00 mm — outer fireplace wall
 > **2.5** → 250 mm — firebox wall (without firebrick lining)

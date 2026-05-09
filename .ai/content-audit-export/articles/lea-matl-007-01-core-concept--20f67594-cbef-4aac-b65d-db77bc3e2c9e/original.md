@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Matl 007 01 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 ## Learning Goal
 
@@ -21,11 +30,11 @@ Beyond tiles, vinyl, hardwood, marble, terrazzo, and epoxy finishes each carry s
 Standard tile sizes in the Philippine market reflect import availability and installation efficiency: 20×20cm (approximately 8×8 in or 7.87×7.87 in), 30×30cm, 40×40cm, 60×60cm (standard 2×2 ft equivalent), and large-format 80×80cm or 60×120cm with rectified edges. Mariwasa and Niro Granite dominate local production, offering both traditional sizes and premium large-format options.
 
 
-<ArticleMedia id="media-floor-finish-comparison" layout="single" type="image" status="placeholder"
-  alt="Comparison chart of floor finishes: ceramic tile, porcelain, hardwood, engineered wood, vinyl, linoleum, carpet, terrazzo, polished concrete, and rubber with durability, maintenance, and moisture resistance ratings"
-  caption="Future chart: floor finish comparison — durability, maintenance, moisture resistance, and room suitability"
-  suggestedAsset="Material selection chart with application matrix"
-  placementIntent="Helps learners select appropriate floor finish by room type and performance requirements" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-floor-finish-comparison", layout="single", type="image", status="placeholder", alt="Comparison chart of floor finishes: ceramic tile, porcelain, hardwood, engineered wood, vinyl, linoleum, carpet, terrazzo, polished concrete, and rubber with durability, maintenance, and moisture resistance ratings", caption="Future chart: floor finish comparison — durability, maintenance, moisture resistance, and room suitability", suggestedAsset="Material selection chart with application matrix", placementIntent="Helps learners select appropriate floor finish by room type and performance requirements"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Provisions
 
@@ -51,11 +60,11 @@ Water absorption becomes critical in low-lying and flood-prone areas; semi-vitre
 Slip resistance matters in common areas and ramps. Glazed polished tiles (common luxury finishes) often fall below 0.60 COF when wet and violate BP 344 unless textured or treated. Construction site specifications should call out slip-resistance test results, not just visual appearance.
 
 
-<ArticleMedia id="media-flooring-installation-diagram" layout="single" type="image" status="placeholder"
-  alt="Cross-section of different floor finish installations: tile on mortar bed, hardwood on joists, vinyl on slab, and polished concrete"
-  caption="Future diagram: floor finish installation cross-sections — tile, hardwood, vinyl, concrete"
-  suggestedAsset="Cross-section detail drawings of floor finish assemblies"
-  placementIntent="Visualizes proper floor finish installation methods" />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-flooring-installation-diagram", layout="single", type="image", status="placeholder", alt="Cross-section of different floor finish installations: tile on mortar bed, hardwood on joists, vinyl on slab, and polished concrete", caption="Future diagram: floor finish installation cross-sections — tile, hardwood, vinyl, concrete", suggestedAsset="Cross-section detail drawings of floor finish assemblies", placementIntent="Visualizes proper floor finish installation methods"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 ## How It's Tested
 
 **Question Type 1 (Specification Matching):** A bathroom requires durable, slip-resistant flooring in a Metro Manila high-rise. Which finish combines adequate wear rating and slip resistance? Students must match PEI III with COF ≥0.60 (textured or matte porcelain), not polished marble or glazed ceramic.
@@ -66,15 +75,31 @@ Slip resistance matters in common areas and ramps. Glazed polished tiles (common
 
 **Question Type 4 (Troubleshooting):** Newly installed 80×80cm large-format tiles crack within 6 months. What is the most likely cause? Improper subfloor prep (>1/8" in 10 ft variation) combined with thin-set thickness &lt;5mm creates voids and stress concentration.
 
-<Tip>Memory aid: PEI grades climb from I (walls) to V (highways). For residential kitchens, Grade III is the "safe bet." For commercial malls, Grade IV or V. If you see "polished marble in a wet room," flag it as a BP 344 slip-resistance violation unless textured.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Memory aid: PEI grades climb from I (walls) to V (highways). For residential kitchens, Grade III is the "safe bet." For commercial malls, Grade IV or V. If you see "polished marble in a wet room," flag it as a BP 344 slip-resistance violation unless textured.
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
-<WikiMistakeCard mistake="Specifying semi-vitreous tile for ground-level bathrooms in flood-prone regions" correction="Use porcelain (&lt;0.5% absorption, ASTM C373) for below-grade and wet areas to prevent capillary moisture and spalling." />
+[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Specifying semi-vitreous tile for ground-level bathrooms in flood-prone regions", correction="Use porcelain (&lt;0.5% absorption, ASTM C373) for below-grade and wet areas to prevent capillary moisture and spalling."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeCard mistake="Assuming visual 'non-slip' appearance meets BP 344 coefficient of friction requirements" correction="BP 344 mandates measured COF ≥0.60 (level) and ≥0.80 (slope). Request test data; visual texture does not guarantee compliance." />
+[SLATECAMP_UI_BLOCK:ui_0005 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Assuming visual 'non-slip' appearance meets BP 344 coefficient of friction requirements", correction="BP 344 mandates measured COF ≥0.60 (level) and ≥0.80 (slope). Request test data; visual texture does not guarantee compliance."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeCard mistake="Selecting PEI I or II for kitchens because the tile 'looks nice'" correction="Kitchens demand PEI III minimum. PEI I and II wear visibly within 2-3 years under foot traffic, leading to costly replacement and drywall damage." />
+[SLATECAMP_UI_BLOCK:ui_0006 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Selecting PEI I or II for kitchens because the tile 'looks nice'", correction="Kitchens demand PEI III minimum. PEI I and II wear visibly within 2-3 years under foot traffic, leading to costly replacement and drywall damage."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 core-concept**, **lea-matl-007-05-core-concept**.
 

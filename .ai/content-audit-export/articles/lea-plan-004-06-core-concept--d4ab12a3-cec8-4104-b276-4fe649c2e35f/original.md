@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Plan 004 06 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 
 ## Learning Goal
@@ -12,7 +21,11 @@ Site planning requires comprehensive utility and infrastructure assessment to en
 The site engineer checks whether existing water mains can supply the projected demand, whether power lines have capacity, whether sewerage systems (including treatment plants per RA 9275) can accept flows, and whether stormwater drainage infrastructure exists. If systems are undersized, the development contract may require developer contributions to upgrade regional infrastructure. Telecommunications networks are increasingly important for smart city readiness.
 
 Assessment phases typically include: (1) inventory of existing infrastructure capacity, (2) projection of development demand, (3) comparison of supply vs. demand, and (4) design of on-site or off-site infrastructure solutions. The assessment is also constrained by Philippine laws: RA 9275 requires sewage treatment plants (STP) for commercial and high-density residential buildings; PD 1067 establishes easements around water bodies; and local building codes specify service standards.
-<ArticleMedia id="media-lea-plan-004-06-core-concept" type="image" caption="Utility Infrastructure Capacity Assessment — Water, Power, and Sewer Analysis" description="Site utility assessment diagram showing: water supply capacity (line size, pressure, daily demand), electrical service (transformer capacity, load calculations), sanitary sewer (line capacity, treatment plant loading), stormwater drainage (pipe sizes, detention needs), telecom connectivity." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-plan-004-06-core-concept", type="image", caption="Utility Infrastructure Capacity Assessment — Water, Power, and Sewer Analysis", description="Site utility assessment diagram showing: water supply capacity (line size, pressure, daily demand), electrical service (transformer capacity, load calculations), sanitary sewer (line capacity, treatment plant loading), stormwater drainage (pipe sizes, detention needs), telecom connectivity.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Provisions
 
@@ -26,7 +39,11 @@ ssment reveals significant capacity constraints in developing LGUs. Water supply
 
 **Pattern 3 — Law application:** "A development abuts a 12-meter-wide river. What PD 1067 easement applies?" → 20 meters (rivers ≥6m wide).
 
-<Tip>**Infrastructure assessment = matching site demand to system capacity.** If capacity is insufficient, the gap must be filled (either by developer investment or infrastructure upgrade agreement). Always check Philippine law constraints (RA 9275 for STP, PD 1067 for easements).</Tip>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Infrastructure assessment = matching site demand to system capacity.** If capacity is insufficient, the gap must be filled (either by developer investment or infrastructure upgrade agreement). Always check Philippine law constraints (RA 9275 for STP, PD 1067 for easements).
+[/SLATECAMP_UI_BLOCK]
 
 **Exam Tip:** Verify utility capacity BEFORE finalizing development program. Common deficiencies: water supply insufficient for peak demand, sewage treatment under capacity, storm drainage undersized for 10-year or 25-year storm event.
 
@@ -36,4 +53,8 @@ See **LEA-DSGN-012-05** (Site Utilities) for utility layout design, **LEA-PLAN-0
 
 ## Common Mistakes
 
-<WikiMistakeList mistakes={["Confusing utilities infrastructure assessment (site planning) with utilities policy (LEA-UTIL subject)","Stating STP is not required if 'the municipal treatment plant is nearby' — RA 9275 requires on-site STP for commercial and high-density residential regardless of municipal capacity","Applying PD 1067 easement distance of 10m instead of correct values (3m/20m/40m depending on water body type)","Forgetting that post-Yolanda 40m no-build zone applies to coastal sites in certain provinces"]} />
+[SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Confusing utilities infrastructure assessment (site planning) with utilities policy (LEA-UTIL subject)\",\"Stating STP is not required if 'the municipal treatment plant is nearby' — RA 9275 requires on-site STP for commercial and high-density residential regardless of municipal capacity\",\"Applying PD 1067 easement distance of 10m instead of correct values (3m/20m/40m depending on water body type)\",\"Forgetting that post-Yolanda 40m no-build zone applies to coastal sites in certain provinces\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]

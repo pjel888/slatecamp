@@ -1,6 +1,17 @@
 # Building Materials and Construction Methods — Overview & Study Strategy
 
-<SubjectSnapshot items='[{"label":"PRC Area","value":"Area B"},{"label":"Weight","value":"30% of Area B"},{"label":"PRC Subject Code","value":"LEA-MATL"},{"label":"Subtopics","value":"10 major areas"},{"label":"Computational","value":"High (estimating)"}]' />
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Building Materials and Construction Methods — Overview & Study Strategy** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
+
+[SLATECAMP_UI_BLOCK:ui_0001 component="SubjectSnapshot" status="preserved"]
+Extracted summary:
+- Props: items="[{\"label\":\"PRC Area\",\"value\":\"Area B\"},{\"label\":\"Weight\",\"value\":\"30% of Area B\"},{\"label\":\"PRC Subject Code\",\"value\":\"LEA-MATL\"},{\"label\":\"Subtopics\",\"value\":\"10 major areas\"},{\"label\":\"Computational\",\"value\":\"High (estimating)\"}]"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - Props: items="[{"label":"PRC Area","value":"Area B"},{"label":"Weight","value":"30% of Area B"},{"label":"PRC Subject Code","value":"LEA-MATL"},{"label":"Subtopics","value":"10 major areas"},{"label":"Computational","value":"High (estimating)"}]"
 - Text: (none detected)
@@ -8,7 +19,11 @@ Extracted summary:
 ## Learning Goal
 
 Master the materials and construction methods tested in the LEA, including: masonry and concrete, wood and timber, metals/glass/glazing, roofing/waterproofing/insulation, interior finishes, hardware/joints/fasteners, construction systems, estimating quantities, architectural specifications (CSI MasterFormat), and sustainable/green materials (BERDE). By the end of this study map, you should understand the material-to-delivery chain and be fluent in estimating computations.
-<ArticleMedia id="media-overview-building-materials" type="image" caption="Building Materials — Study Sequence Flowchart" description="Three-stage study progression diagram: Stage 1 — Materials Inventory (Weeks 1-3): For each material group know Classification, Properties, Applications, Philippine context — Masonry/Concrete, Wood/Timber, Metals/Glass, Roofing/Waterproofing, Interior Finishes, Hardware/Fasteners; Stage 2 — Methods & Systems (Weeks 4-5): Construction sequence, system compatibility, RC frame, steel connections; Stage 3 — Computations & Specs (Weeks 6-7): Estimating volumes/quantities, CSI MasterFormat, specification types. Arrows show cumulative knowledge building." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-overview-building-materials", type="image", caption="Building Materials — Study Sequence Flowchart", description="Three-stage study progression diagram: Stage 1 — Materials Inventory (Weeks 1-3): For each material group know Classification, Properties, Applications, Philippine context — Masonry/Concrete, Wood/Timber, Metals/Glass, Roofing/Waterproofing, Interior Finishes, Hardware/Fasteners; Stage 2 — Methods & Systems (Weeks 4-5): Construction sequence, system compatibility, RC frame, steel connections; Stage 3 — Computations & Specs (Weeks 6-7): Estimating volumes/quantities, CSI MasterFormat, specification types. Arrows show cumulative knowledge building.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Subject Coverage
 
@@ -25,9 +40,17 @@ Ten subtopics span the full lifecycle of building materials:
 - **Architectural Specifications and Documentation** — CSI MasterFormat, three-part section format, prescriptive vs. performance specs
 - **Sustainable and Green Materials** — BERDE, embodied carbon, recycled content, VOC limits
 
-<ExamTip>The board foot formula catches many candidates off guard because the inputs mix imperial units. Practice until the formula is automatic: BF = T(in) × W(in) × L(ft) ÷ 12. A 2×6 at 14 feet = 2 × 6 × 14 ÷ 12 = 14 board feet.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
 Extracted summary:
-<ExamTip>The board foot formula catches many candidates off guard because the inputs mix imperial units. Practice until the formula is automatic: BF = T(in) × W(in) × L(ft) ÷ 12. A 2×6 at 14 feet = 2 × 6 × 14 ÷ 12 = 14 board feet.</ExamTip>
+- Props: (none)
+- Text: The board foot formula catches many candidates off guard because the inputs mix imperial units. Practice until the formula is automatic: BF = T(in) × W(in) × L(ft) ÷ 12. A 2×6 at 14 feet = 2 × 6 × 14 ÷ 12 = 14 board feet.
+[/SLATECAMP_UI_BLOCK]
+Extracted summary:
+[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: The board foot formula catches many candidates off guard because the inputs mix imperial units. Practice until the formula is automatic: BF = T(in) × W(in) × L(ft) ÷ 12. A 2×6 at 14 feet = 2 × 6 × 14 ÷ 12 = 14 board feet.
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - Props: (none)
 - Text: The board foot formula catches many candidates off guard because the inputs mix imperial units. Practice until the formula is automatic: BF = T(in) × W(in) × L(ft) ÷ 12. A 2×6 at 14 feet = 2 × 6 × 14 ÷ 12 = 14 board feet.
@@ -38,7 +61,11 @@ Extracted summary:
 
 For each major material group, know: Classification, Properties, Applications, Philippine context.
 
-<WikiExamTable headers={["Material","Key Classification","Critical Property","Common LEA Test Point"]} rows={[["Portland Cement","Types I–V","Compressive strength gain rate","Type II = moderate sulfate resistance; Type III = high early strength"],["Concrete Hollow Block","Non-load-bearing / Load-bearing","Compressive strength","Load-bearing CHB: min 5.17 MPa; standard sizes: 100mm, 150mm, 200mm"],["Structural Steel","W-shapes, channels, angles, tubes","Yield strength","A36 steel: 250 MPa yield; A572 Gr.50: 345 MPa"],["Tempered Glass","Heat-strengthened vs. fully tempered","Impact resistance","Tempered is 4× stronger than annelead; breaks into small cubes"],["Gypsum Board","Standard, moisture-resistant, fire-rated","Fire resistance","Type X: 5/8-inch fire-rated board for shaft walls"]]} />
+[SLATECAMP_UI_BLOCK:ui_0005 component="WikiExamTable" status="preserved"]
+Extracted summary:
+- Props: headers="{[\"Material\",\"Key Classification\",\"Critical Property\",\"Common LEA Test Point\"]}", rows="{[[\"Portland Cement\",\"Types I–V\",\"Compressive strength gain rate\",\"Type II = moderate sulfate resistance; Type III = high early strength\"],[\"Concrete Hollow Block\",\"Non-load-bearing / Load-bearing\",\"Compressive strength\",\"Load-bearing CHB: min 5.17 MPa; standard sizes: 100mm, 150mm, 200mm\"],[\"Structural Steel\",\"W-shapes, channels, angles, tubes\",\"Yield strength\",\"A36 steel: 250 MPa yield; A572 Gr.50: 345 MPa\"],[\"Tempered Glass\",\"Heat-strengthened vs. fully tempered\",\"Impact resistance\",\"Tempered is 4× stronger than annelead; breaks into small cubes\"],[\"Gypsum Board\",\"Standard, moisture-resistant, fire-rated\",\"Fire resistance\",\"Type X: 5/8-inch fire-rated board for shaft walls\"]]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - Props: headers="{["Material","Key Classification","Critical Property","Common LEA Test Point"]}", rows="{[["Portland Cement","Types I–V","Compressive strength gain rate","Type II = moderate sulfate resistance; Type III = high early strength"],["Concrete Hollow Block","Non-load-bearing / Load-bearing","Compressive strength","Load-bearing CHB: min 5.17 MPa; standard sizes: 100mm, 150mm, 200mm"],["Structural Steel","W-shapes, channels, angles, tubes","Yield strength","A36 steel: 250 MPa yield; A572 Gr.50: 345 MPa"],["Tempered Glass","Heat-strengthened vs. fully tempered","Impact resistance","Tempered is 4× stronger than annelead; breaks into small cubes"],["Gypsum Board","Standard, moisture-resistant, fire-rated","Fire resistance","Type X: 5/8-inch fire-rated board for shaft walls"]]}"
 - Text: (none detected)
@@ -59,15 +86,21 @@ Dedicate focused time to estimating (concrete volume, rebar, board feet, CHB, pa
 - **Neglecting specifications.** Specification questions are reliable exam content and easier points with focused study.
 - **Underestimating sustainable materials.** BERDE and green building criteria have entered recent LEA cycles.
 
-<Note>
-Unlike Theory, which rewards synthesis and interpretation, Materials demands a dual competency: you must both know facts (what is the compressive strength of Grade 25 concrete?) and perform calculatio
-</Note>
-<Note>
-Use the material inventory as a comparison exercise. Do not just study concrete in isolation — study it next to masonry, then next to steel, asking: "When would you choose one over the other, and why?
-</Note>
-<Note>
-Do not assume Philippine construction practice is identical to US or European standards. The LEA tests Philippine-specific standards and codes — NSCP (National Structural Code of the Philippines), DPW
-</Note>
+[SLATECAMP_UI_BLOCK:ui_0006 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Unlike Theory, which rewards synthesis and interpretation, Materials demands a dual competency: you must both know facts (what is the compressive strength of Grade 25 concrete?) and perform calculatio
+[/SLATECAMP_UI_BLOCK]
+[SLATECAMP_UI_BLOCK:ui_0007 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Use the material inventory as a comparison exercise. Do not just study concrete in isolation — study it next to masonry, then next to steel, asking: "When would you choose one over the other, and why?
+[/SLATECAMP_UI_BLOCK]
+[SLATECAMP_UI_BLOCK:ui_0008 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Do not assume Philippine construction practice is identical to US or European standards. The LEA tests Philippine-specific standards and codes — NSCP (National Structural Code of the Philippines), DPW
+[/SLATECAMP_UI_BLOCK]
 ## Related Articles
 
 - Mastery & Connections for Building Materials

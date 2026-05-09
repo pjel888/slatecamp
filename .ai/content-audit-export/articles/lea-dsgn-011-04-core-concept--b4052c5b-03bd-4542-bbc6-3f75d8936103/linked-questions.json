@@ -1,7 +1,7 @@
 {
   "article_id": "b4052c5b-03bd-4542-bbc6-3f75d8936103",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:052976e91e71ac7b6366bc3be7a89573f629cbcb4d5ea9f22905d82f8518c13a",
+  "linked_questions_hash": "sha256:f175a63e37b1275ed8538c2f0872df82f958807c369f2f6d04186d121e0eea95",
   "question_count": 10,
   "questions": [
     {
@@ -142,7 +142,7 @@
         "correct": "As the observer moves left, the viewing angle changes. The left facade becomes more frontal (less receded), so its vanishing point moves farther left; the right facade becomes more receded, so its VP moves farther right. The two VPs move *away* from each other in the direction of the observer's movement.",
         "takeaway": "Vanishing points are not fixed in space; they change with the observer's position (station point). Moving the station point closer to the building's corner brings the two VPs closer together and toward the center. This is how perspective composition is controlled."
       },
-      "explanation": null,
+      "explanation": "Incorrect. The VPs move away from each other as one facade becomes more frontal and the other more receded. Correct. You understood how station point movement affects VP locations. Incorrect. Vanishing point positions change relative to the observer's station point. Incorrect. While the left facade becomes more prominent, the vanishing point behavior is more specific: the left VP moves left (away from center), and the right VP moves right. As the observer moves left, the viewing angle changes. The left facade becomes more frontal (less receded), so its vanishing point moves farther left; the right facade becomes more receded, so its VP moves farther right. The two VPs move *away* from each other in the direction of the observer's movement. Vanishing points are not fixed in space; they change with the observer's position (station point). Moving the station point closer to the building's corner brings the two VPs closer together and toward the center. This is how perspective composition is controlled.",
       "code_citation": "Ching (2016), Perspective construction principles",
       "bloom_level": "apply",
       "application_context": "design_application",
@@ -154,8 +154,8 @@
       "model_id": "ALE-DSGN-011-04-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:17.79434+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:6cb3908b04c70f4863d404aba07dd57c22171b4e5a530e8c4e667c2c41d54aea"
+      "updated_at": "2026-05-06T14:56:45.802008+00:00",
+      "content_hash": "sha256:96717275d539b0cba2ff63b57615c5501f710318cb0bf1df0ef1cdfa85151d3d"
     },
     {
       "question_id": "5346357d-7895-42ea-bfed-656179c3db6d",
@@ -295,7 +295,7 @@
         "correct": "Two visible building facades with two vanishing points on the horizon line define 2VP perspective. This is the standard view for showing a building corner and is the most common exterior perspective type in architectural practice.",
         "takeaway": "2VP perspective is most common for building exterior views. Count the vanishing points on the horizon line: one point = 1VP, two points = 2VP. This is a quick identification method."
       },
-      "explanation": null,
+      "explanation": "Incorrect. 1VP has one vanishing point and is used for frontal views where one face is parallel to the picture plane. Correct. You identified the 2VP configuration correctly. Incorrect. 3VP would include a third (vertical) vanishing point, making vertical lines converge as well. Incorrect. Axonometric is not a true perspective; receding lines remain parallel and do not converge. Two visible building facades with two vanishing points on the horizon line define 2VP perspective. This is the standard view for showing a building corner and is the most common exterior perspective type in architectural practice. 2VP perspective is most common for building exterior views. Count the vanishing points on the horizon line: one point = 1VP, two points = 2VP. This is a quick identification method.",
       "code_citation": "Ching (2016)",
       "bloom_level": "remember",
       "application_context": "recall",
@@ -307,8 +307,8 @@
       "model_id": "ALE-DSGN-011-04-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:17.79434+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:a2ca8901f882b3f8a2c93eb7221f93306ce2ce844473c4390051f45fe307a167"
+      "updated_at": "2026-05-06T14:56:45.918143+00:00",
+      "content_hash": "sha256:878d6a4b0978f7ccb559aab4aebb3e5d77dc2e8e6d2fd1f4cd6675f39ed2b1eb"
     },
     {
       "question_id": "2d141d4d-7297-478a-9b45-eb77ec01b0d4",
@@ -346,7 +346,7 @@
         "correct": "When viewing a tall building from ground level, looking upward, the vertical edges appear to converge toward a point above the horizon line. This creates a third vanishing point. The view emphasizes height and can create a dramatic effect but introduces distortion that may not always appear realistic.",
         "takeaway": "3VP perspective with upward convergence = looking up at a tall object from ground level (worm's eye). This is used for dramatic effect but can appear distorted. Use 2VP perspective for most architectural presentations unless dramatic height emphasis is the goal."
       },
-      "explanation": null,
+      "explanation": "Incorrect. Eye-level view produces 2VP perspective (left and right facades converge on the horizon). Incorrect. A bird's eye view has a third VP *below* the horizon line, not above. Correct. You identified the worm's eye view creating 3VP perspective with vertical convergence. Incorrect. This would also produce 2VP (unless the viewpoint is elevated or depressed). When viewing a tall building from ground level, looking upward, the vertical edges appear to converge toward a point above the horizon line. This creates a third vanishing point. The view emphasizes height and can create a dramatic effect but introduces distortion that may not always appear realistic. 3VP perspective with upward convergence = looking up at a tall object from ground level (worm's eye). This is used for dramatic effect but can appear distorted. Use 2VP perspective for most architectural presentations unless dramatic height emphasis is the goal.",
       "code_citation": "Ching (2016)",
       "bloom_level": "apply",
       "application_context": "design_application",
@@ -358,8 +358,8 @@
       "model_id": "ALE-DSGN-011-04-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:17.79434+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:ba0cbca7aed6556cc1a9e8c0e0396016bbfddebdcb9eef734ed2aa7c61037fce"
+      "updated_at": "2026-05-06T14:56:46.033806+00:00",
+      "content_hash": "sha256:e62ecd73778878e02b354235843de9508d2af43b914ae624038621e0cf2d31d7"
     },
     {
       "question_id": "741ca33b-add8-49ac-994e-7336e2b589a9",

@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Dsgn 008 03 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 
 ## Learning Goal
@@ -10,7 +19,11 @@ Automatic sprinkler systems, combined with fire detection and alarm systems, sig
 * **Mechanism**: Sprinklers suppress flames and cool smoke, while detection systems leart occupants faster.
 * **Design Metric**: Sprinklers do not reduce the required number of exits; they only extend the *distance* an occupant can travel before reaching a protected exit route.
 * **System Components**: These systems consist of a water supply, branch lines, and sprinkler heads designed for specific discharge densities (typically $5\text{--}10 \text{ GPM/m}^2$ for common occupancies).
-<ArticleMedia id="media-lea-dsgn-008-03-core-concept" type="image" caption="Sprinkler System Impact on Egress — Travel Distance and Dead-End Extensions" description="Comparative diagram showing egress parameters without sprinklers (45m travel, 6m dead-end) vs. with sprinklers (60m travel, 15m dead-end). Cross-section showing sprinkler head coverage, detection zones, and alarm system integration per RA 9514." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-dsgn-008-03-core-concept", type="image", caption="Sprinkler System Impact on Egress — Travel Distance and Dead-End Extensions", description="Comparative diagram showing egress parameters without sprinklers (45m travel, 6m dead-end) vs. with sprinklers (60m travel, 15m dead-end). Cross-section showing sprinkler head coverage, detection zones, and alarm system integration per RA 9514.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Provisions (RA 9514 / Fire Code)
 
@@ -34,30 +47,34 @@ The Philippines' high ambient humidity requires sprinkler systems to be resilien
 ## How It's Tested
 
 **Scenario 1: Travel Distance Bonus**
-A floor plan shows a $55\text{m}$ travel distance from a remote room to an exit. 
+A floor plan shows a $55\text{m}$ travel distance from a remote room to an exit.
 * **If Unsprinklered**: Non-compliant (Limit is $46\text{m}$).
 * **If Sprinklered**: Compliant (Limit is $61\text{m}$).
 
 **Scenario 2: Dead-End Corridors**
-A proposed design has a $10\text{m}$ dead-end corridor. 
+A proposed design has a $10\text{m}$ dead-end corridor.
 * **Requirement**: This design requires an automatic sprinkler system, as the limit for unsprinklered corridors is strictly $6\text{m}$.
 
-<Tip>
-**"Sprinklers = 61/15; No Sprinklers = 46/6."** Memorizing these two pairs covers the majority of egress-bonus questions in the LEA. The bonus reflects the roughly $33\%$ increase in safety margin provided by suppression.
-</Tip>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **"Sprinklers = 61/15; No Sprinklers = 46/6."** Memorizing these two pairs covers the majority of egress-bonus questions in the LEA. The bonus reflects the roughly $33\%$ increase in safety margin provided by suppression.
+[/SLATECAMP_UI_BLOCK]
 
 **Exam Tip — ERR-DSGN-011:** Sprinklers increase travel distance from 45m to 60m AND dead-end corridors from 6m to 15m (or 12m to 22.5m depending on code edition). These are the MOST tested code values in fire safety.
-<ArticleMedia id="media-lea-dsgn-008-03-core-concept" type="image" caption="Sprinkler Impact — Egress Parameter Comparison Diagram" description="Side-by-side comparison of egress parameters with and without sprinklers: travel distance (46m→61m), dead-end corridor (6m→15m), common path of travel limits, and exit spacing. RA 9514 IRR conditions for sprinkler allowances highlighted." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0003 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-dsgn-008-03-core-concept", type="image", caption="Sprinkler Impact — Egress Parameter Comparison Diagram", description="Side-by-side comparison of egress parameters with and without sprinklers: travel distance (46m→61m), dead-end corridor (6m→15m), common path of travel limits, and exit spacing. RA 9514 IRR conditions for sprinkler allowances highlighted.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Cross-References
 
 See **LEA-DSGN-008-01** (Fire Egress) for travel distance and dead-end corridor adjustments, **LEA-DSGN-008-02** (Fire Separation) for sprinkler trade-offs with fire ratings, and **LEA-DSGN-007-09** (Building Systems) for MEP coordination.
 
 ## Common Mistakes
-<WikiMistakeList mistakes={[
- "Assuming fire alarms alone grant travel distance bonuses (Only sprinklers do)",
- "ERR-DSGN-102: Using 12m for dead-ends instead of the 15m allowed for sprinklered business/mercantile occupancies in the 2019 IRR",
- "Swapping values: thinking unsprinklered allows more distance than sprinklered",
- "Applying the 61m bonus to high-hazard (Group G) spaces which may have much tighter restrictions",
- "Forgetting the high-rise threshold (15m height) that triggers mandatory sprinkler installation"
-]} />
+[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\n \"Assuming fire alarms alone grant travel distance bonuses (Only sprinklers do)\",\n \"ERR-DSGN-102: Using 12m for dead-ends instead of the 15m allowed for sprinklered business/mercantile occupancies in the 2019 IRR\",\n \"Swapping values: thinking unsprinklered allows more distance than sprinklered\",\n \"Applying the 61m bonus to high-hazard (Group G) spaces which may have much tighter restrictions\",\n \"Forgetting the high-rise threshold (15m height) that triggers mandatory sprinkler installation\"\n]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]

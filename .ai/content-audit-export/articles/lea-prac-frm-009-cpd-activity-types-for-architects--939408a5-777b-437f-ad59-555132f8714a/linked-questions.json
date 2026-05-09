@@ -1,9 +1,209 @@
 {
   "article_id": "939408a5-777b-437f-ad59-555132f8714a",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:90961a8983eee539d26b56b166c70d11718b50283c33c493329292df5ef96b0a",
+  "linked_questions_hash": "sha256:a56982a8fd93307c6f97369822de08f7523968e94b58e62c1a905805a0baa04f",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "528dc7cf-6866-4857-9ca8-7b47ae897c88",
+      "article_id": "939408a5-777b-437f-ad59-555132f8714a",
+      "topic_id": "b4434bc1-78e8-4731-99df-864740cdb01e",
+      "text": "What is the primary requirement for work-based learning CPD credits?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Completion of any professional project, regardless of its scope or impact on professional growth"
+        },
+        {
+          "id": "b",
+          "text": "Demonstration that work enhanced professional competencies beyond normal practice"
+        },
+        {
+          "id": "c",
+          "text": "Supervisory position over other architects, ensuring oversight and mentorship responsibilities"
+        },
+        {
+          "id": "d",
+          "text": "Five years of professional experience, irrespective of the nature of work undertaken"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Misconceives the requirement; mere project completion lacks the competency enhancement dimension.",
+        "c": "Misrestricts to supervisory roles; mentoring and complex project leadership qualify, but supervisory position alone is insufficient.",
+        "d": "Creates an arbitrary experience threshold unrelated to competency development in specific activities.",
+        "correct": "Work-based learning requires documentation that the activity enhanced professional competencies; normal project execution alone does not generate credits.",
+        "takeaway": "Work-based CPD requires proof that the professional activity developed competencies beyond routine project execution."
+      },
+      "explanation": "Misconceives the requirement; mere project completion lacks the competency enhancement dimension. Misrestricts to supervisory roles; mentoring and complex project leadership qualify, but supervisory position alone is insufficient. Creates an arbitrary experience threshold unrelated to competency development in specific activities. Work-based learning requires documentation that the activity enhanced professional competencies; normal project execution alone does not generate credits. Work-based CPD requires proof that the professional activity developed competencies beyond routine project execution.",
+      "code_citation": "RA 10912",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-009-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:48.361702+00:00",
+      "updated_at": "2026-05-06T14:45:54.20281+00:00",
+      "content_hash": "sha256:71dd2744c7843b7a6044f67c856050506940b30cc1da72ecdf1b9b0464dff0cc"
+    },
+    {
+      "question_id": "ad90669d-c54d-43d9-b707-ebc26de12179",
+      "article_id": "939408a5-777b-437f-ad59-555132f8714a",
+      "topic_id": "b4434bc1-78e8-4731-99df-864740cdb01e",
+      "text": "What activities qualify as research and innovation CPD for architects?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Any work-related activity, provided it contributes to professional development and knowledge expansion"
+        },
+        {
+          "id": "b",
+          "text": "Conducting studies on practice, testing materials, or investigating design approaches"
+        },
+        {
+          "id": "c",
+          "text": "Only published books on architecture, as these are considered significant contributions to the field"
+        },
+        {
+          "id": "d",
+          "text": "Attending professional conferences only, which are recognized as formal learning opportunities"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Overinclusively treats all work as research; research requires systematic investigation beyond routine practice.",
+        "c": "Unnecessarily limits to books; research may be documented in articles, findings summaries, or innovation records.",
+        "d": "Confuses conference attendance (structured learning) with research; research is independent investigation.",
+        "correct": "Research and innovation CPD includes conducting studies on architectural practice, testing methodologies, implementing new technologies, and investigating design innovations.",
+        "takeaway": "Research CPD covers studies on practice, material testing, and investigation of design innovations and emerging methodologies."
+      },
+      "explanation": "Overinclusively treats all work as research; research requires systematic investigation beyond routine practice. Unnecessarily limits to books; research may be documented in articles, findings summaries, or innovation records. Confuses conference attendance (structured learning) with research; research is independent investigation. Research and innovation CPD includes conducting studies on architectural practice, testing methodologies, implementing new technologies, and investigating design innovations. Research CPD covers studies on practice, material testing, and investigation of design innovations and emerging methodologies.",
+      "code_citation": "RA 10912",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-009-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:48.361702+00:00",
+      "updated_at": "2026-05-06T14:45:54.340593+00:00",
+      "content_hash": "sha256:6ea5530577f2fe64ae1b47c8e6f0b251583d3f02c8323b1027f98a2c5b940385"
+    },
+    {
+      "question_id": "9fbd21a9-e3ed-4db1-855a-58dc25093f0b",
+      "article_id": "939408a5-777b-437f-ad59-555132f8714a",
+      "topic_id": "b4434bc1-78e8-4731-99df-864740cdb01e",
+      "text": "How do teaching activities generate CPD credits for architects?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only when conducted at universities, as these institutions are recognized for their contribution to professional development"
+        },
+        {
+          "id": "b",
+          "text": "Through teaching courses, delivering presentations, and conducting workshops"
+        },
+        {
+          "id": "c",
+          "text": "Only through teaching high school students, which is considered an outreach activity rather than professional development"
+        },
+        {
+          "id": "d",
+          "text": "Credits are not available for teaching activities, as they do not directly contribute to the architect's technical skill set"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Overrestricts to universities; teaching at professional organizations and conferences also qualifies.",
+        "c": "Inappropriately limits to secondary education; professional-level teaching qualifies.",
+        "d": "Contradicts the CPD framework; teaching is recognized as a high-value activity reflecting expertise.",
+        "correct": "Teaching CPD credits are earned through courses, presentations, and workshops at universities, professional organizations, or conferences reflecting the expertise and time commitment.",
+        "takeaway": "Teaching generates CPD through university courses, organization programs, conference presentations, and workshops."
+      },
+      "explanation": "Overrestricts to universities; teaching at professional organizations and conferences also qualifies. Inappropriately limits to secondary education; professional-level teaching qualifies. Contradicts the CPD framework; teaching is recognized as a high-value activity reflecting expertise. Teaching CPD credits are earned through courses, presentations, and workshops at universities, professional organizations, or conferences reflecting the expertise and time commitment. Teaching generates CPD through university courses, organization programs, conference presentations, and workshops.",
+      "code_citation": "RA 10912",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-009-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:48.361702+00:00",
+      "updated_at": "2026-05-06T14:45:54.597599+00:00",
+      "content_hash": "sha256:8acc75f15fe95de43e5e0f4ff6f00924921bad13e0cc06d68c2cbcf862985748"
+    },
+    {
+      "question_id": "f5aa7e65-9bc1-42f5-a334-e2a002f63c0e",
+      "article_id": "939408a5-777b-437f-ad59-555132f8714a",
+      "topic_id": "b4434bc1-78e8-4731-99df-864740cdb01e",
+      "text": "What types of materials qualify for self-directed learning credits?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only textbooks approved by the Board, which are specifically listed in the official guidelines"
+        },
+        {
+          "id": "b",
+          "text": "Professional journals, industry publications, and recognized organization resources"
+        },
+        {
+          "id": "c",
+          "text": "Any materials selected by the architect, provided they are relevant to the field of architecture"
+        },
+        {
+          "id": "d",
+          "text": "Only materials from foreign professional organizations, which must be accredited by international bodies"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Overrestricts to Board-approved textbooks; professional journals and recognized organization resources qualify without individual Board approval.",
+        "c": "Allows indiscriminate selection; materials must demonstrate relevance to architectural professional development.",
+        "d": "Unnecessarily limits to foreign sources; Philippine professional resources and publications qualify equally.",
+        "correct": "Self-directed learning includes professional journals, industry publications, and resources from recognized architectural organizations with documented completion.",
+        "takeaway": "Qualified self-directed materials are professional journals, industry publications, and resources from recognized architecture organizations."
+      },
+      "explanation": "Overrestricts to Board-approved textbooks; professional journals and recognized organization resources qualify without individual Board approval. Allows indiscriminate selection; materials must demonstrate relevance to architectural professional development. Unnecessarily limits to foreign sources; Philippine professional resources and publications qualify equally. Self-directed learning includes professional journals, industry publications, and resources from recognized architectural organizations with documented completion. Qualified self-directed materials are professional journals, industry publications, and resources from recognized architecture organizations.",
+      "code_citation": "RA 10912",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-009-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:48.361702+00:00",
+      "updated_at": "2026-05-06T14:45:54.726311+00:00",
+      "content_hash": "sha256:6252ea517eed3fb9120d351011c30a4e15fe2ba9c1e706b9fd9ebe3dd197a85b"
+    },
     {
       "question_id": "6469a1d2-e7f5-48c0-a07f-7e59b0712b74",
       "article_id": "939408a5-777b-437f-ad59-555132f8714a",
@@ -89,7 +289,7 @@
         "correct": "Self-directed learning is individually selected and self-paced without external instruction; structured learning involves formal instruction and external evaluation.",
         "takeaway": "Self-directed learning is architect-selected, self-paced, and self-evaluated; structured learning has external instruction and formal assessment."
       },
-      "explanation": null,
+      "explanation": "Cost is not the distinguishing characteristic; both types can be expensive or affordable. Self-directed learning awards modest credits, not more; structured learning awards higher credits. Documentation is required for self-directed learning to prove completion and relevance to practice. Self-directed learning is individually selected and self-paced without external instruction; structured learning involves formal instruction and external evaluation. Self-directed learning is architect-selected, self-paced, and self-evaluated; structured learning has external instruction and formal assessment.",
       "code_citation": "RA 10912",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
@@ -101,108 +301,8 @@
       "model_id": "ALE-PRAC-FRM-009-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:48.361702+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:d97da3c92e90a5b21a9995a63a92c2125f0619bb3e4f59a188db568a63447b3d"
-    },
-    {
-      "question_id": "528dc7cf-6866-4857-9ca8-7b47ae897c88",
-      "article_id": "939408a5-777b-437f-ad59-555132f8714a",
-      "topic_id": "b4434bc1-78e8-4731-99df-864740cdb01e",
-      "text": "What is the primary requirement for work-based learning CPD credits?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Completion of any professional project, regardless of its scope or impact on professional growth"
-        },
-        {
-          "id": "b",
-          "text": "Demonstration that work enhanced professional competencies beyond normal practice"
-        },
-        {
-          "id": "c",
-          "text": "Supervisory position over other architects, ensuring oversight and mentorship responsibilities"
-        },
-        {
-          "id": "d",
-          "text": "Five years of professional experience, irrespective of the nature of work undertaken"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Misconceives the requirement; mere project completion lacks the competency enhancement dimension.",
-        "c": "Misrestricts to supervisory roles; mentoring and complex project leadership qualify, but supervisory position alone is insufficient.",
-        "d": "Creates an arbitrary experience threshold unrelated to competency development in specific activities.",
-        "correct": "Work-based learning requires documentation that the activity enhanced professional competencies; normal project execution alone does not generate credits.",
-        "takeaway": "Work-based CPD requires proof that the professional activity developed competencies beyond routine project execution."
-      },
-      "explanation": null,
-      "code_citation": "RA 10912",
-      "bloom_level": "understand",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PRAC-FRM-009-005",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:48.361702+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:d86fb53b2f5c377466b4aa3ddefaff2d86d9b7ab4a17f3bb9beba4eae359045c"
-    },
-    {
-      "question_id": "ad90669d-c54d-43d9-b707-ebc26de12179",
-      "article_id": "939408a5-777b-437f-ad59-555132f8714a",
-      "topic_id": "b4434bc1-78e8-4731-99df-864740cdb01e",
-      "text": "What activities qualify as research and innovation CPD for architects?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Any work-related activity, provided it contributes to professional development and knowledge expansion"
-        },
-        {
-          "id": "b",
-          "text": "Conducting studies on practice, testing materials, or investigating design approaches"
-        },
-        {
-          "id": "c",
-          "text": "Only published books on architecture, as these are considered significant contributions to the field"
-        },
-        {
-          "id": "d",
-          "text": "Attending professional conferences only, which are recognized as formal learning opportunities"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Overinclusively treats all work as research; research requires systematic investigation beyond routine practice.",
-        "c": "Unnecessarily limits to books; research may be documented in articles, findings summaries, or innovation records.",
-        "d": "Confuses conference attendance (structured learning) with research; research is independent investigation.",
-        "correct": "Research and innovation CPD includes conducting studies on architectural practice, testing methodologies, implementing new technologies, and investigating design innovations.",
-        "takeaway": "Research CPD covers studies on practice, material testing, and investigation of design innovations and emerging methodologies."
-      },
-      "explanation": null,
-      "code_citation": "RA 10912",
-      "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.7,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PRAC-FRM-009-008",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:48.361702+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:8268752b4f8f849a9fcee9dc7f4ea6a718ef0a3958a164b22ff4cc4ddeda6a37"
+      "updated_at": "2026-05-06T14:45:54.073704+00:00",
+      "content_hash": "sha256:1874671cca7f11423c850c9e1b2975e6812c9bb5f8755535a9b173c644758798"
     },
     {
       "question_id": "4d933900-559b-4aa5-817d-20d0bf43531a",
@@ -239,7 +339,7 @@
         "correct": "The Board evaluates research activities for professional relevance and demonstrated contribution to architectural practice advancement and professional evolution.",
         "takeaway": "Research CPD approval depends on Board evaluation of professional relevance and contribution to practice advancement."
       },
-      "explanation": null,
+      "explanation": "Falsely grants automatic approval; discretionary evaluation is applied. Overrestricts to published work; documentation of findings, proposals, or innovation records suffices. Contradicts the CPD framework; research is explicitly recognized as a qualifying activity. The Board evaluates research activities for professional relevance and demonstrated contribution to architectural practice advancement and professional evolution. Research CPD approval depends on Board evaluation of professional relevance and contribution to practice advancement.",
       "code_citation": "RA 10912",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
@@ -251,8 +351,8 @@
       "model_id": "ALE-PRAC-FRM-009-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:48.361702+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:08f95d0dac61ffbfcd152694e492708b48ad30a2dcc193964c2b8434ea204890"
+      "updated_at": "2026-05-06T14:45:54.468852+00:00",
+      "content_hash": "sha256:5d7d136865fd1d23232fd2f0dfb7c5a371dfd6d9885e24435d6f006665513e6f"
     },
     {
       "question_id": "8d66a552-451c-49b7-9c39-94961e014612",
@@ -305,56 +405,6 @@
       "content_hash": "sha256:d54fcaaf457f5b85c082ab1b07dc865f01a464096597f9dd254f3104be86fe08"
     },
     {
-      "question_id": "9fbd21a9-e3ed-4db1-855a-58dc25093f0b",
-      "article_id": "939408a5-777b-437f-ad59-555132f8714a",
-      "topic_id": "b4434bc1-78e8-4731-99df-864740cdb01e",
-      "text": "How do teaching activities generate CPD credits for architects?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Only when conducted at universities, as these institutions are recognized for their contribution to professional development"
-        },
-        {
-          "id": "b",
-          "text": "Through teaching courses, delivering presentations, and conducting workshops"
-        },
-        {
-          "id": "c",
-          "text": "Only through teaching high school students, which is considered an outreach activity rather than professional development"
-        },
-        {
-          "id": "d",
-          "text": "Credits are not available for teaching activities, as they do not directly contribute to the architect's technical skill set"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Overrestricts to universities; teaching at professional organizations and conferences also qualifies.",
-        "c": "Inappropriately limits to secondary education; professional-level teaching qualifies.",
-        "d": "Contradicts the CPD framework; teaching is recognized as a high-value activity reflecting expertise.",
-        "correct": "Teaching CPD credits are earned through courses, presentations, and workshops at universities, professional organizations, or conferences reflecting the expertise and time commitment.",
-        "takeaway": "Teaching generates CPD through university courses, organization programs, conference presentations, and workshops."
-      },
-      "explanation": null,
-      "code_citation": "RA 10912",
-      "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.7,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PRAC-FRM-009-006",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:48.361702+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:ad39be196b94bb466b09357694cfb957c82224e8261eb9781c8c8e88f34b3309"
-    },
-    {
       "question_id": "16cb431b-a7d6-4bec-a18d-ae15134aecaf",
       "article_id": "939408a5-777b-437f-ad59-555132f8714a",
       "topic_id": "b4434bc1-78e8-4731-99df-864740cdb01e",
@@ -403,56 +453,6 @@
       "created_at": "2026-03-23T19:27:48.361702+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:155469290615233e1ab502d382eb483cb45ecfb07e43a7a7f14b73d9d432e6a6"
-    },
-    {
-      "question_id": "f5aa7e65-9bc1-42f5-a334-e2a002f63c0e",
-      "article_id": "939408a5-777b-437f-ad59-555132f8714a",
-      "topic_id": "b4434bc1-78e8-4731-99df-864740cdb01e",
-      "text": "What types of materials qualify for self-directed learning credits?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Only textbooks approved by the Board, which are specifically listed in the official guidelines"
-        },
-        {
-          "id": "b",
-          "text": "Professional journals, industry publications, and recognized organization resources"
-        },
-        {
-          "id": "c",
-          "text": "Any materials selected by the architect, provided they are relevant to the field of architecture"
-        },
-        {
-          "id": "d",
-          "text": "Only materials from foreign professional organizations, which must be accredited by international bodies"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Overrestricts to Board-approved textbooks; professional journals and recognized organization resources qualify without individual Board approval.",
-        "c": "Allows indiscriminate selection; materials must demonstrate relevance to architectural professional development.",
-        "d": "Unnecessarily limits to foreign sources; Philippine professional resources and publications qualify equally.",
-        "correct": "Self-directed learning includes professional journals, industry publications, and resources from recognized architectural organizations with documented completion.",
-        "takeaway": "Qualified self-directed materials are professional journals, industry publications, and resources from recognized architecture organizations."
-      },
-      "explanation": null,
-      "code_citation": "RA 10912",
-      "bloom_level": "understand",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PRAC-FRM-009-004",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:48.361702+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:7e082b2b08351f8b7b6f181e9cf70d5aab084895c6e362327e00012a96922968"
     },
     {
       "question_id": "f9224d7d-1aff-482a-83bd-36a312bb48d3",

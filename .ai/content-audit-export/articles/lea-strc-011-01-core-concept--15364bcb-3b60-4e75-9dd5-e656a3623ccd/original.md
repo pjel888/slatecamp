@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Strc 011 01 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 
 ## Learning Goal
@@ -12,7 +21,11 @@ By the end of this article, you will be able to:
 
 ---
 ## Core Concept
-<ArticleMedia id="media-lea-strc-011-01-core-concept" type="image" caption="Pile Types — End-Bearing vs Friction, Driven vs Bored" description="Cross-section diagram comparing pile types: (1) End-bearing pile — transfers load through tip to competent bearing stratum (rock/dense sand); (2) Friction pile — transfers load through skin friction along shaft surface; (3) Driven piles — precast concrete, steel H-pile, pipe pile; (4) Bored/drilled piles — cast-in-place with bell or straight shaft. Load transfer mechanism arrows and soil profile layers shown." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-strc-011-01-core-concept", type="image", caption="Pile Types — End-Bearing vs Friction, Driven vs Bored", description="Cross-section diagram comparing pile types: (1) End-bearing pile — transfers load through tip to competent bearing stratum (rock/dense sand); (2) Friction pile — transfers load through skin friction along shaft surface; (3) Driven piles — precast concrete, steel H-pile, pipe pile; (4) Bored/drilled piles — cast-in-place with bell or straight shaft. Load transfer mechanism arrows and soil profile layers shown.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 A pile is a slender structural element driven or drilled into soil to transfer loads from a structure to deeper, more competent strata. Piles are classified by two criteria: _load transfer mechanism_ and _installation method_.
 
 **Load Transfer Mechanism:**
@@ -55,15 +68,25 @@ In the Philippines, driven piles and bored piles are both prevalent, depending o
 2. **Batter Angle Calculation:** A batter pile at 1:8 slope must resist 200 kN horizontal load; resolve the pile reaction into axial and lateral components.
 3. **Caisson vs. Pile Distinction:** A foundation engineer specifies a 700 mm drilled foundation. Name the correct element and explain why diameter threshold matters for construction method.
 
-<Tip>
-**Memory Aid:** End-bearing piles say "I stand on a rock"; friction piles say "I hug the soil." Batter piles lean to fight sideways forces. Sheet piles lock arm-in-arm to hold back the earth wall. Diameter 600 mm is the magic threshold: below is a pile, at or above is a caisson.
-</Tip>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Memory Aid:** End-bearing piles say "I stand on a rock"; friction piles say "I hug the soil." Batter piles lean to fight sideways forces. Sheet piles lock arm-in-arm to hold back the earth wall. Diameter 600 mm is the magic threshold: below is a pile, at or above is a caisson.
+[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 
 See also: **Foundations** (lea-strc-011-02) for the overall foundation classification, **Geotechnical Engineering** (lea-strc-011-03) for soil properties that govern pile selection, and **Load Types** (lea-strc-001-02) for the loads piles must resist.
 
 ## Common Mistakes
-<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: These are frequently tested traps. Memorize them to avoid losing easy points on exam day.
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeList mistakes={["Confusing batter piles with bored piles; batter refers to inclination (1:6–1:12), not installation method.","Assuming all drilled piles are cast in place with reduced skin friction; proper borehole preparation and tremie placement preserve friction capacity.","Stating that sheet piles transfer load to the foundation; they are a retaining system, not a load-bearing element.","Using pile and caisson interchangeably without respect to the ≥ 600 mm diameter threshold that governs excavation, integrity testing, and behavior.","Omitting pile caps in load distribution sketches; caps are mandatory to distribute superstructure load across multiple piles."]} />
+[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Confusing batter piles with bored piles; batter refers to inclination (1:6–1:12), not installation method.\",\"Assuming all drilled piles are cast in place with reduced skin friction; proper borehole preparation and tremie placement preserve friction capacity.\",\"Stating that sheet piles transfer load to the foundation; they are a retaining system, not a load-bearing element.\",\"Using pile and caisson interchangeably without respect to the ≥ 600 mm diameter threshold that governs excavation, integrity testing, and behavior.\",\"Omitting pile caps in load distribution sketches; caps are mandatory to distribute superstructure load across multiple piles.\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]

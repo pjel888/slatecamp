@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Strc 009 03 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 
 ## Learning Goal
@@ -11,7 +20,11 @@ By the end of this article, you will be able to:
 
 ---
 ## Core Concept
-<ArticleMedia id="media-lea-strc-009-03-core-concept" type="image" caption="Timber ASD — Allowable Stress Design for Sawn Lumber" description="Flowchart showing timber ASD design process: (1) Select species and stress grade; (2) Determine base allowable stresses from NSCP tables; (3) Apply adjustment factors — Cd (load duration), Cm (wet service), Ct (temperature), Cl (beam stability), Cf (form factor), Ci (incising); (4) Compute adjusted allowable stress F'b = Fb × (product of factors); (5) Verify f ≤ F' for each limit state. Adjustment factor table with typical values." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-strc-009-03-core-concept", type="image", caption="Timber ASD — Allowable Stress Design for Sawn Lumber", description="Flowchart showing timber ASD design process: (1) Select species and stress grade; (2) Determine base allowable stresses from NSCP tables; (3) Apply adjustment factors — Cd (load duration), Cm (wet service), Ct (temperature), Cl (beam stability), Cf (form factor), Ci (incising); (4) Compute adjusted allowable stress F'b = Fb × (product of factors); (5) Verify f ≤ F' for each limit state. Adjustment factor table with typical values.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 Allowable Stress Design (ASD) is a working stress method in which a timber member is checked by comparing the maximum stress induced by loads to a pre-established allowable stress determined by species, grade, moisture, and load duration. The three critical checks in timber ASD design are: (1) _bending stress_ (fb vs. Fb), (2) _horizontal shear stress_ (fv vs. Fv), and (3) _compression parallel to grain_ (fc vs. Fc). Bending stress is computed as fb = M/S, where M is the maximum moment and S is the section modulus. For a rectangular section, S = bh²/6, derived from the elastic theory of pure bending. Horizontal shear stress is computed as fv = 3V/(2A), not the simplified fv = V/A; the 3/2 factor accounts for the parabolic shear distribution across a rectangular section, with maximum shear occurring at the neutral axis. Here, V is the maximum shear force and A = bh is the cross-sectional area. Section modulus S and moment of inertia I are geometric properties: I = bh³/12. Allowable stresses (Fb, Fv, Fc) are tabulated by species, grade, and condition; they are _never_ calculated—they are looked up from design tables. The design inequality is always _applied stress ≤ allowable stress_. If any check fails, the member is undersized and must be redesigned (larger dimensions, higher grade, or structural reinforcement). A timber element is not "over-designed" if all stresses are below allowable; this is safe reserve capacity and is acceptable. ASD is conservative and widely used in Philippine building practice, though Limit State Design (LSD) is increasingly recognized in modern codes. For the LEA, ASD formulas and checks are the primary focus.
 
 ## Key Provisions
@@ -48,7 +61,11 @@ Where:
 
 ### Section Properties
 
-<WikiExamTable headers={["Property", "Formula", "Unit", "Use"]} rows={[ ["Section Modulus", "S = bh²/6", "mm³", "Bending: fb = M/S"], ["Moment of Inertia", "I = bh³/12", "mm⁴", "Deflection and combined stress"], ["Cross-sectional Area", "A = bh", "mm²", "Shear: fv = 3V/(2A)"], ["Radius of Gyration", "r = h/√12", "mm", "Compression (secondary)"] ]} />
+[SLATECAMP_UI_BLOCK:ui_0002 component="WikiExamTable" status="preserved"]
+Extracted summary:
+- Props: headers="{[\"Property\", \"Formula\", \"Unit\", \"Use\"]}", rows="{[ [\"Section Modulus\", \"S = bh²/6\", \"mm³\", \"Bending: fb = M/S\"], [\"Moment of Inertia\", \"I = bh³/12\", \"mm⁴\", \"Deflection and combined stress\"], [\"Cross-sectional Area\", \"A = bh\", \"mm²\", \"Shear: fv = 3V/(2A)\"], [\"Radius of Gyration\", \"r = h/√12\", \"mm\", \"Compression (secondary)\"] ]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ### Worked Example: Bending Stress Check
 
@@ -98,7 +115,11 @@ Philippine structural designers routinely apply ASD checks to timber beams and c
 - Answer: 8 kN·m = 8,000,000 N·mm. Stress = (N·mm) / (mm³) = N/mm² = MPa. Yes, units match.
 - Takeaway: Always verify unit consistency before dividing. Mixing mm and m is a common source of errors.
 
-<Tip>The 3/2 factor in fv = 3V/(2A) is non-negotiable for rectangular timber. Forgetting it gives half the actual maximum shear stress and is unsafe.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: The 3/2 factor in fv = 3V/(2A) is non-negotiable for rectangular timber. Forgetting it gives half the actual maximum shear stress and is unsafe.
+[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 
@@ -106,6 +127,14 @@ See also: **Timber Stress Groups** (lea-strc-009-02) for base stress values, **T
 
 ## Common Mistakes
 
-<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: These are frequently tested traps. Memorize them to avoid losing easy points on exam day.
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeList mistakes={[ "Using fv = V/A instead of fv = 3V/(2A). The 3/2 factor is mandatory for rectangular sections and accounts for non-uniform shear distribution.", "Computing S = bh/6 instead of S = bh²/6. Missing the exponent on h loses the dimension entirely and gives wrong results by orders of magnitude.", "Confusing I (moment of inertia, in mm⁴) with S (section modulus, in mm³). I is for deflection; S is for bending stress.", "Applying nominal dimensions in S calculation instead of actual dimensions. Nominal 2×4 is 1.5×3.5 actual; mismatch invalidates results.", "Forgetting that allowable stresses (Fb, Fv, Fc) are tabulated, not calculated. Never derive Fb from other parameters; always look it up from a design table.", "Checking one stress (e.g., bending) and ignoring others (shear, compression). All three must pass simultaneously." ]} />
+[SLATECAMP_UI_BLOCK:ui_0005 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[ \"Using fv = V/A instead of fv = 3V/(2A). The 3/2 factor is mandatory for rectangular sections and accounts for non-uniform shear distribution.\", \"Computing S = bh/6 instead of S = bh²/6. Missing the exponent on h loses the dimension entirely and gives wrong results by orders of magnitude.\", \"Confusing I (moment of inertia, in mm⁴) with S (section modulus, in mm³). I is for deflection; S is for bending stress.\", \"Applying nominal dimensions in S calculation instead of actual dimensions. Nominal 2×4 is 1.5×3.5 actual; mismatch invalidates results.\", \"Forgetting that allowable stresses (Fb, Fv, Fc) are tabulated, not calculated. Never derive Fb from other parameters; always look it up from a design table.\", \"Checking one stress (e.g., bending) and ignoring others (shear, compression). All three must pass simultaneously.\" ]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]

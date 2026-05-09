@@ -1,9 +1,61 @@
 {
   "article_id": "1aaa804a-23f1-44da-bdcb-412fa04c848d",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:e2e4a85a75a81f641bd68b2178ee3775e4a925e3f6d6da3118c3c39064e2b46c",
+  "linked_questions_hash": "sha256:7c8b2be07dbbc514655237849e59cf501c779c8b8cab4f23a9b574167f873cf1",
   "question_count": 13,
   "questions": [
+    {
+      "question_id": "5edea809-6125-4d37-9628-fa03acf69fa9",
+      "article_id": "1aaa804a-23f1-44da-bdcb-412fa04c848d",
+      "topic_id": "f6b5fd01-7d9f-49cb-a643-8dba168ca636",
+      "text": "How does the compression-release principle operate in promenade architecturlea?",
+      "options": [
+        {
+          "id": "a",
+          "text": "All spaces should be uniformly proportioned to avoid confusing occupants, ensuring a consistent spatial experience"
+        },
+        {
+          "id": "b",
+          "text": "Compression refers to HVAC systems; release refers to ventilation—unrelated to spatial experience, focusing instead on mechanical systems"
+        },
+        {
+          "id": "c",
+          "text": "Narrow, low spaces compress; tall, wide spaces release, creating psychological rhythm and emotional impact through alternation"
+        },
+        {
+          "id": "d",
+          "text": "Compression occurs at entrances; release occurs at exits, providing a clear transition between different spatial zones"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Variation creates interest; uniformity creates monotony.",
+        "b": "Compression-release is a spatial and psychological principle, not mechanical systems.",
+        "d": "Compression-release can occur throughout a building's sequence, not just at entry and exit.",
+        "correct": "Compression-release contrasts narrow/low (compression) with tall/wide (release), creating emotional rhythm and engagement through spatial variation.",
+        "takeaway": "Compression-release contrasts narrow/low (compression) with tall/wide (release), creating emotional rhythm and engagement through spatial variation."
+      },
+      "explanation": "Variation creates interest; uniformity creates monotony. Compression-release is a spatial and psychological principle, not mechanical systems. Compression-release can occur throughout a building's sequence, not just at entry and exit. Compression-release contrasts narrow/low (compression) with tall/wide (release), creating emotional rhythm and engagement through spatial variation. Compression-release contrasts narrow/low (compression) with tall/wide (release), creating emotional rhythm and engagement through spatial variation.",
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "SYS"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-03-013",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.884733+00:00",
+      "updated_at": "2026-05-06T15:06:23.513097+00:00",
+      "content_hash": "sha256:ea6a554fda32b8fd0cf5a46d632ff20886eab51a0387afca7709f560bc5722cc"
+    },
     {
       "question_id": "cec7fad0-b3f7-44d8-a27b-7cae94102284",
       "article_id": "1aaa804a-23f1-44da-bdcb-412fa04c848d",
@@ -159,58 +211,6 @@
       "created_at": "2026-03-23T19:27:53.884733+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:609ba8a60106a0229305b89ce04735dc5e35fd02f3d5275d9bb9a3cac5265e58"
-    },
-    {
-      "question_id": "5edea809-6125-4d37-9628-fa03acf69fa9",
-      "article_id": "1aaa804a-23f1-44da-bdcb-412fa04c848d",
-      "topic_id": "f6b5fd01-7d9f-49cb-a643-8dba168ca636",
-      "text": "How does the compression-release principle operate in promenade architecturlea?",
-      "options": [
-        {
-          "id": "a",
-          "text": "All spaces should be uniformly proportioned to avoid confusing occupants, ensuring a consistent spatial experience"
-        },
-        {
-          "id": "b",
-          "text": "Compression refers to HVAC systems; release refers to ventilation—unrelated to spatial experience, focusing instead on mechanical systems"
-        },
-        {
-          "id": "c",
-          "text": "Narrow, low spaces compress; tall, wide spaces release, creating psychological rhythm and emotional impact through alternation"
-        },
-        {
-          "id": "d",
-          "text": "Compression occurs at entrances; release occurs at exits, providing a clear transition between different spatial zones"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Variation creates interest; uniformity creates monotony.",
-        "b": "Compression-release is a spatial and psychological principle, not mechanical systems.",
-        "d": "Compression-release can occur throughout a building's sequence, not just at entry and exit.",
-        "correct": "Compression-release contrasts narrow/low (compression) with tall/wide (release), creating emotional rhythm and engagement through spatial variation.",
-        "takeaway": "Compression-release contrasts narrow/low (compression) with tall/wide (release), creating emotional rhythm and engagement through spatial variation."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "analyze",
-      "application_context": "code_interpretation",
-      "practice_context": [
-        "SYS"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-003-03-013",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:c051778649d7be27053f11ceb0806cdfdd997b7fe5e1852188c3ff1db5b0e44f"
     },
     {
       "question_id": "b93c6d68-39c7-478b-a456-45331ddf6791",

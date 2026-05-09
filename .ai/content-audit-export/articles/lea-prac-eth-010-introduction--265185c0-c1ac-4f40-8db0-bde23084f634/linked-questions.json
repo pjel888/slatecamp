@@ -1,9 +1,59 @@
 {
   "article_id": "265185c0-c1ac-4f40-8db0-bde23084f634",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:43d0666ece21c6e46b0d9b429e331272120cc3a3ce3d777c2a8e9d74b89941a4",
+  "linked_questions_hash": "sha256:1e2e0d4a5f6eb245b3f3c7be086519523694ffc2b2dd20084e449f97e02597b9",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "279936d5-1487-4e4b-9a5a-4c31b511ff09",
+      "article_id": "265185c0-c1ac-4f40-8db0-bde23084f634",
+      "topic_id": "d3403fc3-a4f3-4508-bb54-6cbf4852d4a9",
+      "text": "Architect G's license expired December 31, 2025. In January 2026, she accepts design commission without renewal. She renews in February 2026. Violation:",
+      "options": [
+        {
+          "id": "a",
+          "text": "No violation; renewed before substantial work"
+        },
+        {
+          "id": "b",
+          "text": "Practicing without current license"
+        },
+        {
+          "id": "c",
+          "text": "Fraud—misrepresenting licensure"
+        },
+        {
+          "id": "d",
+          "text": "Negligence in renewal timing"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The timing of renewal is irrelevant. The violation occurs at the moment of accepting the work without a valid license. [cite: 540]",
+        "c": "Fraud requires intentional misrepresentation. While practicing without a license is wrong, it does not necessarily constitute fraud unless the architect affirmatively misrepresented having a valid license. [cite: 538]",
+        "d": "Negligence in timing mischaracterizes the violation. This is a regulatory violation for practicing architecture without a current license—a categorical prohibition. [cite: 540]",
+        "correct": "Practicing without a current license is a regulatory violation; subsequent renewal does not cure the period of illegal practice. [cite: 540, 542]",
+        "takeaway": "Practicing without current license is a non-negotiable violation. [cite: 542]"
+      },
+      "explanation": "The timing of renewal is irrelevant. The violation occurs at the moment of accepting the work without a valid license. [cite: 540] Fraud requires intentional misrepresentation. While practicing without a license is wrong, it does not necessarily constitute fraud unless the architect affirmatively misrepresented having a valid license. [cite: 538] Negligence in timing mischaracterizes the violation. This is a regulatory violation for practicing architecture without a current license—a categorical prohibition. [cite: 540] Practicing without a current license is a regulatory violation; subsequent renewal does not cure the period of illegal practice. [cite: 540, 542] Practicing without current license is a non-negotiable violation. [cite: 542]",
+      "code_citation": "RA 9266 Section 34",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-ETH-010-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.512865+00:00",
+      "updated_at": "2026-05-06T13:17:31.632676+00:00",
+      "content_hash": "sha256:5846af29e39eed891c38d7fa97d7324437f0c54e97171b2ea5ee1529d93f2204"
+    },
     {
       "question_id": "667fa9ba-8aec-4ee7-af25-8dd99ebb31f9",
       "article_id": "265185c0-c1ac-4f40-8db0-bde23084f634",
@@ -453,56 +503,6 @@
       "created_at": "2026-03-23T19:27:45.512865+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:66657f31a40c8f6e120c31171abd4f65e882daf503fbf62d5b9a6ccaa3a9283a"
-    },
-    {
-      "question_id": "279936d5-1487-4e4b-9a5a-4c31b511ff09",
-      "article_id": "265185c0-c1ac-4f40-8db0-bde23084f634",
-      "topic_id": "d3403fc3-a4f3-4508-bb54-6cbf4852d4a9",
-      "text": "Architect G's license expired December 31, 2025. In January 2026, she accepts design commission without renewal. She renews in February 2026. Violation:",
-      "options": [
-        {
-          "id": "a",
-          "text": "No violation; renewed before substantial work"
-        },
-        {
-          "id": "b",
-          "text": "Practicing without current license"
-        },
-        {
-          "id": "c",
-          "text": "Fraud—misrepresenting licensure"
-        },
-        {
-          "id": "d",
-          "text": "Negligence in renewal timing"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "The timing of renewal is irrelevant. The violation occurs at the moment of accepting the work without a valid license. [cite: 540]",
-        "c": "Fraud requires intentional misrepresentation. While practicing without a license is wrong, it does not necessarily constitute fraud unless the architect affirmatively misrepresented having a valid license. [cite: 538]",
-        "d": "Negligence in timing mischaracterizes the violation. This is a regulatory violation for practicing architecture without a current license—a categorical prohibition. [cite: 540]",
-        "correct": "Practicing without a current license is a regulatory violation; subsequent renewal does not cure the period of illegal practice. [cite: 540, 542]",
-        "takeaway": "Practicing without current license is a non-negotiable violation. [cite: 542]"
-      },
-      "explanation": null,
-      "code_citation": "RA 9266 Section 34",
-      "bloom_level": "remember",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.3,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PRAC-ETH-010-002",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:45.512865+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:6eaff67b0be4c3a9b282f25c5309fe1ad25c535dbd2f9126295e63f1b69eaaa0"
     }
   ]
 }

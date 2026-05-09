@@ -1,9 +1,58 @@
 {
   "article_id": "1a967c89-e735-4a59-88b0-d2eb0918d284",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:3337240c24e4dd3fc347a3435a9e49e918f826798d0c61fb96655f01d653625a",
+  "linked_questions_hash": "sha256:8586de07467f2a22ac66423efa7b6b758f9ffad2d09308b7caf4234bba5420fa",
   "question_count": 25,
   "questions": [
+    {
+      "question_id": "73d7fde1-ef22-432d-9445-cd440fbbd588",
+      "article_id": "1a967c89-e735-4a59-88b0-d2eb0918d284",
+      "topic_id": "863e8b67-1c45-457a-8149-5ee162947518",
+      "text": "In the Rational Method formula Q = C × I × A, what does the coefficient C represent?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The fraction of rainfall that becomes runoff (dimensionless, 0–1)"
+        },
+        {
+          "id": "b",
+          "text": "The total catchment area in hectares, which is a critical factor in determining the volume of runoff."
+        },
+        {
+          "id": "c",
+          "text": "The peak rainfall intensity in mm/hr, which influences the rate of runoff generation during storm events."
+        },
+        {
+          "id": "d",
+          "text": "The storage capacity of the cistern in m³, which is unrelated to the coefficient C but affects overall water management."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "A confuses the coefficient with the area parameter (A).",
+        "c": "Confuses C with the intensity parameter (I), which has units mm/hr.",
+        "d": "Confuses the Rational Method formula with cistern volume equations; Q is discharge, not storage.",
+        "correct": "C is the runoff coefficient, accounting for infiltration, evaporation, and surface retention. It is always ≤ 1. Concrete roofs have C ≈ 0.85; gravel-covered roofs have C ≈ 0.55 (standard hydrology tables per engineering practice)."
+      },
+      "explanation": "A confuses the coefficient with the area parameter (A). Confuses C with the intensity parameter (I), which has units mm/hr. Confuses the Rational Method formula with cistern volume equations; Q is discharge, not storage. C is the runoff coefficient, accounting for infiltration, evaporation, and surface retention. It is always ≤ 1. Concrete roofs have C ≈ 0.85; gravel-covered roofs have C ≈ 0.55 (standard hydrology tables per engineering practice).",
+      "code_citation": "Revised National Plumbing Code of the Philippines; Linsley, Kohler & Paulhus",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-001-09-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:58.533411+00:00",
+      "updated_at": "2026-05-06T14:45:57.071674+00:00",
+      "content_hash": "sha256:c2db6575e73bb53dff09eaf99814bdbca5336416322892765f86d27e1fcdb0eb"
+    },
     {
       "question_id": "082f4cc2-db98-40ca-8ff0-3eb8ffd883e9",
       "article_id": "1a967c89-e735-4a59-88b0-d2eb0918d284",
@@ -1035,55 +1084,6 @@
       "created_at": "2026-03-23T19:27:58.533411+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:7ef41f3b8c250851961417a50f0d8542fae5b5596878778ba4c8518902391a4b"
-    },
-    {
-      "question_id": "73d7fde1-ef22-432d-9445-cd440fbbd588",
-      "article_id": "1a967c89-e735-4a59-88b0-d2eb0918d284",
-      "topic_id": "863e8b67-1c45-457a-8149-5ee162947518",
-      "text": "In the Rational Method formula Q = C × I × A, what does the coefficient C represent?",
-      "options": [
-        {
-          "id": "a",
-          "text": "The fraction of rainfall that becomes runoff (dimensionless, 0–1)"
-        },
-        {
-          "id": "b",
-          "text": "The total catchment area in hectares, which is a critical factor in determining the volume of runoff."
-        },
-        {
-          "id": "c",
-          "text": "The peak rainfall intensity in mm/hr, which influences the rate of runoff generation during storm events."
-        },
-        {
-          "id": "d",
-          "text": "The storage capacity of the cistern in m³, which is unrelated to the coefficient C but affects overall water management."
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "b": "A confuses the coefficient with the area parameter (A).",
-        "c": "Confuses C with the intensity parameter (I), which has units mm/hr.",
-        "d": "Confuses the Rational Method formula with cistern volume equations; Q is discharge, not storage.",
-        "correct": "C is the runoff coefficient, accounting for infiltration, evaporation, and surface retention. It is always ≤ 1. Concrete roofs have C ≈ 0.85; gravel-covered roofs have C ≈ 0.55 (standard hydrology tables per engineering practice)."
-      },
-      "explanation": null,
-      "code_citation": "Revised National Plumbing Code of the Philippines; Linsley, Kohler & Paulhus",
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-UTIL-001-09-001",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:58.533411+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:f8e3d1f8e5ae789a2a3088438102ba316c18daac352f244af586a10c5db592f5"
     },
     {
       "question_id": "ddaf216d-391f-4972-8f3f-6ca52865b425",

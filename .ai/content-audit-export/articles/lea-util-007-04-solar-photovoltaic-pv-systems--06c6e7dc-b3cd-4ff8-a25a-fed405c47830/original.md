@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Util 007 04 Solar Photovoltaic Pv Systems** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 
 ## Learning Goal
@@ -5,7 +14,11 @@
 Design solar photovoltaic (PV) systems for Philippine buildings — calculate array size based on load analysis, solar irradiance data, panel efficiency, and inverter sizing; apply net metering provisions per DOE/ERC regulations for grid-connected PV installations.
 ## Solar Photovoltaic (PV) Systems
 
-<ArticleMedia id="media-lea-util-007-04-solar-photovoltaic-pv-sy" type="image" caption="Solar PV System Diagram — Grid-Tied, Off-Grid, and Hybrid Configurations" description="Three-panel system diagram: (1) Grid-tied — PV array → inverter → main panel → utility grid (net metering, no batteries); (2) Off-grid — PV array → charge controller → battery bank → inverter → loads (independent operation); (3) Hybrid — PV array → hybrid inverter → battery storage → main panel → grid (backup + export). Philippine PSH (peak sun hours) 4.5-5.5 kWh/m²/day, panel area rule (~2m² per 400Wp), and Meralco net metering cap (1 MW per ERC Resolution No. 09) annotated." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-util-007-04-solar-photovoltaic-pv-sy", type="image", caption="Solar PV System Diagram — Grid-Tied, Off-Grid, and Hybrid Configurations", description="Three-panel system diagram: (1) Grid-tied — PV array → inverter → main panel → utility grid (net metering, no batteries); (2) Off-grid — PV array → charge controller → battery bank → inverter → loads (independent operation); (3) Hybrid — PV array → hybrid inverter → battery storage → main panel → grid (backup + export). Philippine PSH (peak sun hours) 4.5-5.5 kWh/m²/day, panel area rule (~2m² per 400Wp), and Meralco net metering cap (1 MW per ERC Resolution No. 09) annotated.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 Solar PV remains the most deployable renewable technology for Philippine buildings. Integration occurs through rooftop arrays, facade-mounted panels, and building-integrated photovoltaics (BIPV).
 
@@ -15,15 +28,23 @@ Rooftop PV arrays in the Philippines generate 4.0–5.0 kWh/m²/day depending on
 
 _Reference LEA-UTIL-003-08 for detailed PV system sizing calculations, inverter selection, and array configuration._
 
-<KeyValues items=[{"value": "Dome", "label": "Indoor Ceiling Mount"}, {"value": "Bullet", "label": "Outdoor Perimeter"}, {"value": "PTZ", "label": "Dynamic Coverage"}, {"value": "1080p", "label": "Min. Resolution"}] />
+[SLATECAMP_UI_BLOCK:ui_0002 component="KeyValues" status="preserved"]
+Extracted summary:
+- Props: items="[", value=true, Dome=true, label=true, Indoor=true, Ceiling=true, Mount=true, Bullet=true, Outdoor=true, Perimeter=true, PTZ=true, Dynamic=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>
-  **Exam Tip:** LEA questions on building utilities test code compliance and minimum standards. Memorize key thresholds: 25Ω max ground resistance, 6 ACH kitchen exhaust, 300-500 lx office lighting, NC 30-40 office noise criteria. Always reference the applicable code (PEC, Mechanical Code, NBCP, Fire Code) when answering.
-</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Exam Tip:** LEA questions on building utilities test code compliance and minimum standards. Memorize key thresholds: 25Ω max ground resistance, 6 ACH kitchen exhaust, 300-500 lx office lighting, NC 30-40 office noise criteria. Always reference the applicable code (PEC, Mechanical Code, NBCP, Fire Code) when answering.
+[/SLATECAMP_UI_BLOCK]
 
-<Tip>
-**Pro Tip:** When designing MEPF systems, always reserve adequate ceiling plenum space. Typical suspended ceiling depth requires 450-600mm above the finished ceiling to accommodate ductwork, conduit, piping, and fire protection systems. Coordinate all MEPF routing before finalizing structural slab-to-slab heights.
-</Tip>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pro Tip:** When designing MEPF systems, always reserve adequate ceiling plenum space. Typical suspended ceiling depth requires 450-600mm above the finished ceiling to accommodate ductwork, conduit, piping, and fire protection systems. Coordinate all MEPF routing before finalizing structural slab-to-slab heights.
+[/SLATECAMP_UI_BLOCK]
 
 ### Building-Integrated Photovoltaics (BIPV)
 

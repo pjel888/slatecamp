@@ -1,36 +1,14 @@
 {
   "article_id": "5a8ca807-31d5-4a32-933a-c6b83517c6de",
   "slug": "bp-344-ramp-slope-tiers",
-  "generated_at": "2026-05-04T09:10:35.497Z",
+  "generated_at": "2026-05-09T04:02:41.738Z",
   "parser_version": "ui-block-parser-v1",
   "error_count": 0,
-  "warning_count": 1,
-  "unknown_block_count": 1,
+  "warning_count": 0,
+  "unknown_block_count": 0,
   "critical_block_count": 0,
   "errors": [],
-  "warnings": [
-    {
-      "block_id": "ui_0007",
-      "component_name": "ArticleMedia",
-      "status": "unknown",
-      "parse_status": "unknown_block",
-      "messages": [
-        "No closing tag found for ArticleMedia; preserved opening line as unknown custom block."
-      ]
-    }
-  ],
-  "unknown_blocks": [
-    {
-      "block_id": "ui_0007",
-      "component_name": "ArticleMedia",
-      "block_type": "mdx_component",
-      "raw_hash": "sha256:ef9687c79e0a7f4e91ecfecea7e8bfe5eff73332684b136c4b569bf9f1337c70",
-      "line_start": 256,
-      "line_end": 256,
-      "warnings": [
-        "No closing tag found for ArticleMedia; preserved opening line as unknown custom block."
-      ]
-    }
-  ],
+  "warnings": [],
+  "unknown_blocks": [],
   "critical_blocks": []
 }

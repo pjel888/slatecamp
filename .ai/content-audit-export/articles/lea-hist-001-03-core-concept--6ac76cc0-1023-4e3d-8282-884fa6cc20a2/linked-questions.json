@@ -1,7 +1,7 @@
 {
   "article_id": "6ac76cc0-1023-4e3d-8282-884fa6cc20a2",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:f0e850cb635c62ae880d5519649db391fad67894706d27b572473634b93798f5",
+  "linked_questions_hash": "sha256:9bc338485d782b79311e870b81d4fe30fa48f1f433c9f392540968b5cf645edd",
   "question_count": 12,
   "questions": [
     {
@@ -58,6 +58,110 @@
       "content_hash": "sha256:78ec20e22541dbbb4629e5bf77ec1f0e2414bde6bbfb7465e2b60a78abd8660f"
     },
     {
+      "question_id": "0c0c43d3-b5fb-4c32-a278-5187f0ddc530",
+      "article_id": "6ac76cc0-1023-4e3d-8282-884fa6cc20a2",
+      "topic_id": "3e6945b7-76de-423b-b18d-b3b0f3677e1f",
+      "text": "The Achaemenid Empire, founded by Cyrus II and stretching from Egypt to India, existed for approximately how many years before its collapse?",
+      "options": [
+        {
+          "id": "a",
+          "text": "About 100 years, from c. 600 BCE to c. 500 BCE, marking a brief but impactful period"
+        },
+        {
+          "id": "b",
+          "text": "Roughly 220 years, from c. 550 BCE to 330 BCE when Alexander the Great conquered it"
+        },
+        {
+          "id": "c",
+          "text": "About 350 years, from c. 700 BCE to c. 350 BCE, encompassing several dynastic changes"
+        },
+        {
+          "id": "d",
+          "text": "Approximately 500 years, from c. 550 BCE to c. 50 BCE, a period marked by extensive territorial expansion"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This timespan is too short and places the empire's end too early.",
+        "c": "While this covers part of the period, the starting date is too early (700 BCE predates Cyrus II's founding).",
+        "d": "This extends the timeline too far; the empire ended in 330 BCE, not 50 BCE.",
+        "correct": "The Achaemenid Persian Empire (c. 550–330 BCE) stretched from Egypt to India' and 'Achaemenid Empire: The first Persian empire (c. 550–330 BCE) founded by Cyrus II and extending from Egypt to India; its collapse followed Alexander's conquest.' This is roughly 220 years.",
+        "takeaway": "550–330 BCE) founded by Cyrus II and extending from Egypt to India; its collapse followed Alexander's conquest.' This is roughly 220 years."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "CH"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-001-03-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:22.975901+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f7382a84a113e8006fe7ba2d94be444071c51eb96cda61d907584d5a01933f6a"
+    },
+    {
+      "question_id": "78ba8962-8cd2-4d49-9519-a18dfc2f7cf8",
+      "article_id": "6ac76cc0-1023-4e3d-8282-884fa6cc20a2",
+      "topic_id": "3e6945b7-76de-423b-b18d-b3b0f3677e1f",
+      "text": "Why were the reliefs depicting tribute from subject nations carved into the staircases and platforms of Persepolis?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To provide practical grip for ascending the steep ceremonial staircases, which was a secondary consideration"
+        },
+        {
+          "id": "b",
+          "text": "As functional barriers to prevent water runoff from the ceremonial platform, though not their primary purpose"
+        },
+        {
+          "id": "c",
+          "text": "To narrate the empire's reach and cultural authority, embodying each subject nation's identity in stone"
+        },
+        {
+          "id": "d",
+          "text": "To fulfill religious obligations to depict all known peoples in sacred spaces, which was a common practice"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While relief carving might provide some texture, the reliefs' primary purpose was narrative and ideological, not practical safety.",
+        "b": "Water management was not the documented purpose; the reliefs are decorative and narrative, not functional barriers.",
+        "d": "There is no indication that religious obligation drove the relief program; the reliefs served political and propagandistic purposes.",
+        "correct": "The reliefs themselves are architectural narrative: each figure, each animal, each gift embodies the empire's scope and order.' This demonstrates that the tribute reliefs served the symbolic and political purpose of displaying imperial power and reach.",
+        "takeaway": "The article explains: 'The reliefs themselves are architectural narrative: each figure, each animal, each gift embodies the empire's scope and order.' This demonstrates that the tribute reliefs served the symbolic and political purpose of displaying imperial power and reach."
+      },
+      "explanation": "While relief carving might provide some texture, the reliefs' primary purpose was narrative and ideological, not practical safety. Water management was not the documented purpose; the reliefs are decorative and narrative, not functional barriers. There is no indication that religious obligation drove the relief program; the reliefs served political and propagandistic purposes. The reliefs themselves are architectural narrative: each figure, each animal, each gift embodies the empire's scope and order.' This demonstrates that the tribute reliefs served the symbolic and political purpose of displaying imperial power and reach. The article explains: 'The reliefs themselves are architectural narrative: each figure, each animal, each gift embodies the empire's scope and order.' This demonstrates that the tribute reliefs served the symbolic and political purpose of displaying imperial power and reach.",
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-001-03-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:22.975901+00:00",
+      "updated_at": "2026-05-06T13:14:21.464746+00:00",
+      "content_hash": "sha256:bfeab4c2377684ecd4deec08bcfa8cec8a4ae15fdf01ee81a9a4e146652d6453"
+    },
+    {
       "question_id": "1d427284-eda9-412f-9476-e7321ee89d69",
       "article_id": "6ac76cc0-1023-4e3d-8282-884fa6cc20a2",
       "topic_id": "3e6945b7-76de-423b-b18d-b3b0f3677e1f",
@@ -92,7 +196,7 @@
         "correct": "The article defines: 'Dry ashlar: Ashlar masonry fitted so precisely that mortar is unnecessary; demonstrates precision in stone cutting.' This explains that the tight fit allows stones to remain in place through mechanical compression without adhesive.",
         "takeaway": "The article defines: 'Dry ashlar: Ashlar masonry fitted so precisely that mortar is unnecessary; demonstrates precision in stone cutting.' This explains that the tight fit allows stones to remain in place through mechanical compression without adhesive."
       },
-      "explanation": null,
+      "explanation": "While ashlar is lighter than some masonry, precision fitting was not primarily about weight reduction; it was about structural integrity through mechanical precision. Apadanas require columned support for their vast interiors; dry ashlar masonry does not eliminate the need for columns in open halls. While tight fitting might reduce moisture infiltration, this is not the primary structural advantage cited; the advantage is in the mechanical precision of fitting. The article defines: 'Dry ashlar: Ashlar masonry fitted so precisely that mortar is unnecessary; demonstrates precision in stone cutting.' This explains that the tight fit allows stones to remain in place through mechanical compression without adhesive. The article defines: 'Dry ashlar: Ashlar masonry fitted so precisely that mortar is unnecessary; demonstrates precision in stone cutting.' This explains that the tight fit allows stones to remain in place through mechanical compression without adhesive.",
       "code_citation": null,
       "bloom_level": "apply",
       "application_context": "code_interpretation",
@@ -106,8 +210,8 @@
       "model_id": "ALE-HIST-001-03-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:22.975901+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:453f50790e5fa2d8512f4d9c4a4518c55da26c9ffd29c3e6cf50fb98559645ed"
+      "updated_at": "2026-05-06T13:14:20.932949+00:00",
+      "content_hash": "sha256:6d6141c8be1b5e54ee626765a9e8d517c18259a8187274dbfb6179803910fefa"
     },
     {
       "question_id": "f8d13853-9ea2-4260-a719-479882be5ea0",
@@ -144,7 +248,7 @@
         "correct": "Pasargadae, the older ceremonial capital founded by Cyrus II, contains the Tomb of Cyrus—a modest stone structure on a platform, representing the king in death as he was in life: isolated, elevated, authoritative.'",
         "takeaway": "The article states: 'Pasargadae, the older ceremonial capital founded by Cyrus II, contains the Tomb of Cyrus—a modest stone structure on a platform, representing the king in death as he was in life: isolated, elevated, authoritative.'."
       },
-      "explanation": null,
+      "explanation": "While some ancient tombs employed relief carvings, Cyrus's tomb is described as modest in form, not elaborate in decoration. Egyptian pyramids served as burial monuments with internal treasuries; Cyrus's tomb was a modest structure, not a stepped pyramid. This describes an apadana or columned hall, not Cyrus's tomb, which is a simple structure on a platform. Pasargadae, the older ceremonial capital founded by Cyrus II, contains the Tomb of Cyrus—a modest stone structure on a platform, representing the king in death as he was in life: isolated, elevated, authoritative.' The article states: 'Pasargadae, the older ceremonial capital founded by Cyrus II, contains the Tomb of Cyrus—a modest stone structure on a platform, representing the king in death as he was in life: isolated, elevated, authoritative.'.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -158,8 +262,8 @@
       "model_id": "ALE-HIST-001-03-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:22.975901+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:d13a215b663dc516dec284a55faaac1f71e6c42879fbe8973595aa8adc848e5d"
+      "updated_at": "2026-05-06T13:14:21.071803+00:00",
+      "content_hash": "sha256:55c2e88669f87abe25443a82af1c038160dfe959aa6080c986f96db87914c9f2"
     },
     {
       "question_id": "717e0bb1-f134-4728-a820-beb2563c30d6",
@@ -196,7 +300,7 @@
         "correct": "Achaemenid builders worked with limestone and marble, quarried locally or imported. They used ashlar masonry—carefully cut, precisely fitted stones—allowing for thinner walls and larger interior spaces than mud brick permitted.'",
         "takeaway": "They used ashlar masonry—carefully cut, precisely fitted stones—allowing for thinner walls and larger interior spaces than mud brick permitted.'."
       },
-      "explanation": null,
+      "explanation": "Ashlar masonry was more labor-intensive and expensive than mud brick, requiring skilled stone cutting. While material availability influenced choices, the article emphasizes the structural advantages of ashlar masonry for creating large interior columned spaces. There is no indication that religious beliefs determined the choice of materials; it was driven by structural capabilities and the desire for monumental effect. Achaemenid builders worked with limestone and marble, quarried locally or imported. They used ashlar masonry—carefully cut, precisely fitted stones—allowing for thinner walls and larger interior spaces than mud brick permitted.' They used ashlar masonry—carefully cut, precisely fitted stones—allowing for thinner walls and larger interior spaces than mud brick permitted.'.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "code_interpretation",
@@ -210,8 +314,8 @@
       "model_id": "ALE-HIST-001-03-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:22.975901+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:683ffc193239e239b691198d6703f88d54dd9d4aa9414e126a64d3d4737db8dd"
+      "updated_at": "2026-05-06T13:14:21.197558+00:00",
+      "content_hash": "sha256:4526b9f9717b34e45d8913bfefa57f12e68674bdcec40322a5b2a968be0e33e5"
     },
     {
       "question_id": "0d35238e-a73b-4f1e-9693-51039517a267",
@@ -404,7 +508,7 @@
         "correct": "Achaemenid architects synthesized both traditions: they built monumental stone structures using ashlar masonry, incorporated columned halls inspired by both Greek and Near Eastern precedent.' Achaemenid architecture adopted Mesopotamian-derived forms (lamassu, gate structures borrowed from Assyrian precedent) and combined them with Egyptian-influenced stone construction techniques and precision masonry, creating a hybrid architectural language.",
         "takeaway": "The article states: 'Achaemenid architects synthesized both traditions: they built monumental stone structures using ashlar masonry, incorporated columned halls inspired by both Greek and Near Eastern precedent.' Achaemenid architecture adopted Mesopotamian-derived forms (lamassu, gate structures borrowed from Assyrian precedent) and combined them with Egyptian-influenced stone construction techniques and precision masonry, creating a hybrid architectural language."
       },
-      "explanation": null,
+      "explanation": "Achaemenid architecture specifically moved away from mud brick to ashlar masonry, incorporating diverse influences. Achaemenid structures did not employ Egyptian pyramid forms or burial chamber systems; their monuments were palaces and ceremonial centers, not tombs. The article emphasizes eclecticism and synthesis, not original invention; Achaemenid builders borrowed and adapted from multiple traditions. Achaemenid architects synthesized both traditions: they built monumental stone structures using ashlar masonry, incorporated columned halls inspired by both Greek and Near Eastern precedent.' Achaemenid architecture adopted Mesopotamian-derived forms (lamassu, gate structures borrowed from Assyrian precedent) and combined them with Egyptian-influenced stone construction techniques and precision masonry, creating a hybrid architectural language. The article states: 'Achaemenid architects synthesized both traditions: they built monumental stone structures using ashlar masonry, incorporated columned halls inspired by both Greek and Near Eastern precedent.' Achaemenid architecture adopted Mesopotamian-derived forms (lamassu, gate structures borrowed from Assyrian precedent) and combined them with Egyptian-influenced stone construction techniques and precision masonry, creating a hybrid architectural language.",
       "code_citation": null,
       "bloom_level": "apply",
       "application_context": "design_application",
@@ -418,112 +522,8 @@
       "model_id": "ALE-HIST-001-03-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:22.975901+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:72e07b80097e95ce9321c4cbf09f18e303a6fda79b95e4c132653e969a813d86"
-    },
-    {
-      "question_id": "0c0c43d3-b5fb-4c32-a278-5187f0ddc530",
-      "article_id": "6ac76cc0-1023-4e3d-8282-884fa6cc20a2",
-      "topic_id": "3e6945b7-76de-423b-b18d-b3b0f3677e1f",
-      "text": "The Achaemenid Empire, founded by Cyrus II and stretching from Egypt to India, existed for approximately how many years before its collapse?",
-      "options": [
-        {
-          "id": "a",
-          "text": "About 100 years, from c. 600 BCE to c. 500 BCE, marking a brief but impactful period"
-        },
-        {
-          "id": "b",
-          "text": "Roughly 220 years, from c. 550 BCE to 330 BCE when Alexander the Great conquered it"
-        },
-        {
-          "id": "c",
-          "text": "About 350 years, from c. 700 BCE to c. 350 BCE, encompassing several dynastic changes"
-        },
-        {
-          "id": "d",
-          "text": "Approximately 500 years, from c. 550 BCE to c. 50 BCE, a period marked by extensive territorial expansion"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "This timespan is too short and places the empire's end too early.",
-        "c": "While this covers part of the period, the starting date is too early (700 BCE predates Cyrus II's founding).",
-        "d": "This extends the timeline too far; the empire ended in 330 BCE, not 50 BCE.",
-        "correct": "The Achaemenid Persian Empire (c. 550–330 BCE) stretched from Egypt to India' and 'Achaemenid Empire: The first Persian empire (c. 550–330 BCE) founded by Cyrus II and extending from Egypt to India; its collapse followed Alexander's conquest.' This is roughly 220 years.",
-        "takeaway": "550–330 BCE) founded by Cyrus II and extending from Egypt to India; its collapse followed Alexander's conquest.' This is roughly 220 years."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [
-        "CH"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-HIST-001-03-004",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:22.975901+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:f7382a84a113e8006fe7ba2d94be444071c51eb96cda61d907584d5a01933f6a"
-    },
-    {
-      "question_id": "78ba8962-8cd2-4d49-9519-a18dfc2f7cf8",
-      "article_id": "6ac76cc0-1023-4e3d-8282-884fa6cc20a2",
-      "topic_id": "3e6945b7-76de-423b-b18d-b3b0f3677e1f",
-      "text": "Why were the reliefs depicting tribute from subject nations carved into the staircases and platforms of Persepolis?",
-      "options": [
-        {
-          "id": "a",
-          "text": "To provide practical grip for ascending the steep ceremonial staircases, which was a secondary consideration"
-        },
-        {
-          "id": "b",
-          "text": "As functional barriers to prevent water runoff from the ceremonial platform, though not their primary purpose"
-        },
-        {
-          "id": "c",
-          "text": "To narrate the empire's reach and cultural authority, embodying each subject nation's identity in stone"
-        },
-        {
-          "id": "d",
-          "text": "To fulfill religious obligations to depict all known peoples in sacred spaces, which was a common practice"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "While relief carving might provide some texture, the reliefs' primary purpose was narrative and ideological, not practical safety.",
-        "b": "Water management was not the documented purpose; the reliefs are decorative and narrative, not functional barriers.",
-        "d": "There is no indication that religious obligation drove the relief program; the reliefs served political and propagandistic purposes.",
-        "correct": "The reliefs themselves are architectural narrative: each figure, each animal, each gift embodies the empire's scope and order.' This demonstrates that the tribute reliefs served the symbolic and political purpose of displaying imperial power and reach.",
-        "takeaway": "The article explains: 'The reliefs themselves are architectural narrative: each figure, each animal, each gift embodies the empire's scope and order.' This demonstrates that the tribute reliefs served the symbolic and political purpose of displaying imperial power and reach."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "analyze",
-      "application_context": "code_interpretation",
-      "practice_context": [
-        "CON"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-HIST-001-03-007",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:22.975901+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:ea7a3057a1eb904461693c03020936a0efa1a45078b26bcedca9f7b0a9d7c2c6"
+      "updated_at": "2026-05-06T13:14:21.333162+00:00",
+      "content_hash": "sha256:a5fd2deb2344a8a41dc9096270cd78559df7bbba00a6e09d2e089a6ba1aa8bd7"
     },
     {
       "question_id": "6307e91a-91ac-4131-8d5f-1c11c74ef332",
@@ -612,7 +612,7 @@
         "correct": "Apadanas as hypostyle halls where 'the roof is supported by many columns arranged in a grid' and explains that this arrangement 'allow[s] for vast open interiors without walls,' solving the problem of spanning enormous distances by distributing weight across multiple columns.",
         "takeaway": "The article describes apadanas as hypostyle halls where 'the roof is supported by many columns arranged in a grid' and explains that this arrangement 'allow[s] for vast open interiors without walls,' solving the problem of spanning enormous distances by distributing weight across multiple columns."
       },
-      "explanation": null,
+      "explanation": "A single 195-foot stone lintel would be impossible; the solution was to use many columns, not one massive lintel. Concrete vaults are a Roman innovation, not used in Achaemenid architecture, which relied on columned post-and-lintel systems. Sequential arches are a Roman architectural solution; Achaemenid architects used the columned hypostyle hall instead. Apadanas as hypostyle halls where 'the roof is supported by many columns arranged in a grid' and explains that this arrangement 'allow[s] for vast open interiors without walls,' solving the problem of spanning enormous distances by distributing weight across multiple columns. The article describes apadanas as hypostyle halls where 'the roof is supported by many columns arranged in a grid' and explains that this arrangement 'allow[s] for vast open interiors without walls,' solving the problem of spanning enormous distances by distributing weight across multiple columns.",
       "code_citation": null,
       "bloom_level": "apply",
       "application_context": "code_interpretation",
@@ -626,8 +626,8 @@
       "model_id": "ALE-HIST-001-03-012",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:23.211402+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:6a9c06e8b194b8443fee824731a49fc223d8562c3d64cfd90147f1444022a281"
+      "updated_at": "2026-05-06T13:14:21.60672+00:00",
+      "content_hash": "sha256:4f9b7c444ceb3788f5887f7f0f755d068eb373962897c258d60abc9177e739c4"
     }
   ]
 }

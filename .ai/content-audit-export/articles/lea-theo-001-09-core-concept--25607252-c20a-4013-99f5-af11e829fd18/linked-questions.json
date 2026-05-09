@@ -1,9 +1,113 @@
 {
   "article_id": "25607252-c20a-4013-99f5-af11e829fd18",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:49c4ff7e65dd81298a9c35e463d4de5ac17b6c3feba7d31734e57716326c3a57",
+  "linked_questions_hash": "sha256:0a671c654259640315632a924cd11771fd710d838d8416de52d1df562a265f35",
   "question_count": 13,
   "questions": [
+    {
+      "question_id": "a313e4c8-018f-42bd-826d-21792f3bf57e",
+      "article_id": "25607252-c20a-4013-99f5-af11e829fd18",
+      "topic_id": "42235732-fb8c-42ed-9a69-eb686e7e1a80",
+      "text": "In the Vitruvian framework, which principle is foundational and must be established before the architect can address the others?",
+      "options": [
+        {
+          "id": "a",
+          "text": "All three are equally foundational with no hierarchy, suggesting that balance is key to successful architectural design"
+        },
+        {
+          "id": "b",
+          "text": "Utilitas, because functional requirements determine all structural and formal decisions, ensuring that the building serves its intended purpose"
+        },
+        {
+          "id": "c",
+          "text": "Firmitas, because without structural soundness, neither functional nor aesthetic requirements can be met"
+        },
+        {
+          "id": "d",
+          "text": "Venustas, because beauty inspires commitment to excellence in other dimensions, motivating stakeholders to achieve higher standards"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While ultimately integrated, firmitas has logical priority.",
+        "b": "Function depends on structural capacity; firmitas must underlie utilitas.",
+        "d": "Beauty cannot overcome structural failure.",
+        "correct": "A building lacking firmitas will collapse or deteriorate, making utilitas and venustas irrelevant. Firmitas is logically foundational. However, all three must ultimately be integrated; firmitas is foundational in priority, not sequence.",
+        "takeaway": "However, all three must ultimately be integrated; firmitas is foundational in priority, not sequence."
+      },
+      "explanation": "While ultimately integrated, firmitas has logical priority. Function depends on structural capacity; firmitas must underlie utilitas. Beauty cannot overcome structural failure. A building lacking firmitas will collapse or deteriorate, making utilitas and venustas irrelevant. Firmitas is logically foundational. However, all three must ultimately be integrated; firmitas is foundational in priority, not sequence. However, all three must ultimately be integrated; firmitas is foundational in priority, not sequence.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "SYS"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-001-09-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.120988+00:00",
+      "updated_at": "2026-05-06T15:53:16.343934+00:00",
+      "content_hash": "sha256:ebd0463920eee4663296309c8f8ca147582f20b8bfaa6f36ff420ba7f05c27e2"
+    },
+    {
+      "question_id": "5b9ca7e0-b3be-4ca9-8f1b-f7af570f6c30",
+      "article_id": "25607252-c20a-4013-99f5-af11e829fd18",
+      "topic_id": "42235732-fb8c-42ed-9a69-eb686e7e1a80",
+      "text": "How does Vitruvian principle apply when an architect must make a design decision affecting material selection? What must be considered?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Material selection is a technical decision unrelated to architectural principles, focusing solely on cost and availability"
+        },
+        {
+          "id": "b",
+          "text": "Choose the cheapest material to minimize cost; Vitruvian principles are only about luxury projects and not applicable to standard designs"
+        },
+        {
+          "id": "c",
+          "text": "Select the most beautiful material regardless of structural capability or functional appropriateness, prioritizing aesthetics above all else"
+        },
+        {
+          "id": "d",
+          "text": "Consider the material's structural appropriateness (firmitas), its performance under intended use conditions (utilitas), and its visual and tactile qualities (venustas) simultaneously"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Material selection is a fundamental architectural decision integrating all principles.",
+        "b": "Cost considerations cannot override fundamental requirements for soundness and appropriateness.",
+        "c": "Beautiful materials lacking structural or functional capability are inappropriate.",
+        "correct": "Every design decision, including material selection, must address all three principles simultaneously. The material must be structurally adequate, perform appropriately for the building's function, and contribute to aesthetic coherence.",
+        "takeaway": "The material must be structurally adequate, perform appropriately for the building's function, and contribute to aesthetic coherence."
+      },
+      "explanation": "Material selection is a fundamental architectural decision integrating all principles. Cost considerations cannot override fundamental requirements for soundness and appropriateness. Beautiful materials lacking structural or functional capability are inappropriate. Every design decision, including material selection, must address all three principles simultaneously. The material must be structurally adequate, perform appropriately for the building's function, and contribute to aesthetic coherence. The material must be structurally adequate, perform appropriately for the building's function, and contribute to aesthetic coherence.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-001-09-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.120988+00:00",
+      "updated_at": "2026-05-06T15:53:16.510162+00:00",
+      "content_hash": "sha256:ab1f1b37a8a4c5a9b54eade3bd848272cbe6dadd6707a827422c5f1e29c16281"
+    },
     {
       "question_id": "fd7acb85-975b-4f83-bca5-84eb41bd3c47",
       "article_id": "25607252-c20a-4013-99f5-af11e829fd18",
@@ -39,7 +143,7 @@
         "correct": "Firmitas translates as 'firmness' or 'solidity,' referring to the building's structural integrity, durability, and ability to stand without collapsing.",
         "takeaway": "Firmitas translates as 'firmness' or 'solidity,' referring to the building's structural integrity, durability, and ability to stand without collapsing."
       },
-      "explanation": null,
+      "explanation": "Commoditas (commodity/comfort) is a Latin term used by Vitruvius as part of utilitas. Venustas refers to beauty and aesthetic appeal. Utilitas refers to utility and functional adequacy. Firmitas translates as 'firmness' or 'solidity,' referring to the building's structural integrity, durability, and ability to stand without collapsing. Firmitas translates as 'firmness' or 'solidity,' referring to the building's structural integrity, durability, and ability to stand without collapsing.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -53,8 +157,8 @@
       "model_id": "ALE-THEO-001-09-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.120988+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:c35bc3a1fed4b86ddc3997cce34942e0f7e750a0905b041ae75161e8aae4e772"
+      "updated_at": "2026-05-06T15:53:15.16865+00:00",
+      "content_hash": "sha256:54fa96781efd314e9499d52f3d3feb8f417537499ed45157b5005562c0762fe5"
     },
     {
       "question_id": "059ea15e-5748-45b2-87e3-325731fe6901",
@@ -91,7 +195,7 @@
         "correct": "Bahay na bato integrates all three principles: structurally sound stone and timber (firmitas), climate-responsive spatial organization (utilitas), and proportionate graceful form (venustas). It exemplifies Vitruvian integration whether or not Vitruvian theory directly influenced its development.",
         "takeaway": "It exemplifies Vitruvian integration whether or not Vitruvian theory directly influenced its development."
       },
-      "explanation": null,
+      "explanation": "Vernacular architecture embodies principles (often intuitively) even without explicit theoretical training. While Spanish colonizers may have been influenced by Vitruvius, the bahay na bato is indigenous synthesis, not direct application. Vernacular architecture does not sacrifice durability; stone base and proper timber joinery ensure firmitas. Bahay na bato integrates all three principles: structurally sound stone and timber (firmitas), climate-responsive spatial organization (utilitas), and proportionate graceful form (venustas). It exemplifies Vitruvian integration whether or not Vitruvian theory directly influenced its development. It exemplifies Vitruvian integration whether or not Vitruvian theory directly influenced its development.",
       "code_citation": null,
       "bloom_level": "apply",
       "application_context": "design_application",
@@ -105,8 +209,8 @@
       "model_id": "ALE-THEO-001-09-011",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.120988+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:01ef001c99c87f14e6bc65a34be580d6ad2bb3d6478e7319a3f7d3f6645da3b9"
+      "updated_at": "2026-05-06T15:53:15.342962+00:00",
+      "content_hash": "sha256:bc26dd5e10ca2240a2f22fb598168cb0bff4061ded843be78978941eb3861ee5"
     },
     {
       "question_id": "222fbbf2-1edd-43b2-90a3-adcacc39b9fd",
@@ -143,7 +247,7 @@
         "correct": "Vitruvius intended these as simultaneous requirements of unified design. A window frame must be beautiful, structurally sound, and functional—all at once, not in phases. Failure in any dimension constitutes failure in the whole.",
         "takeaway": "Failure in any dimension constitutes failure in the whole."
       },
-      "explanation": null,
+      "explanation": "All three are essential; none is optional. Sequential phases miss the integration that Vitruvius intended. While constraints exist, they cannot justify sacrificing fundamental requirements. Vitruvius intended these as simultaneous requirements of unified design. A window frame must be beautiful, structurally sound, and functional—all at once, not in phases. Failure in any dimension constitutes failure in the whole. Failure in any dimension constitutes failure in the whole.",
       "code_citation": null,
       "bloom_level": "apply",
       "application_context": "design_application",
@@ -157,8 +261,8 @@
       "model_id": "ALE-THEO-001-09-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.120988+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:8c9e2e7c88e227a29088809c4df80ffeb4927748924e1926d2efd01708f003e9"
+      "updated_at": "2026-05-06T15:53:15.509577+00:00",
+      "content_hash": "sha256:b5c2fa0ce542d419739e2d19e3496457a452475c51cf224be1fcae7520fb9073"
     },
     {
       "question_id": "daf35e28-447b-4e9c-b5c8-30eae0a99415",
@@ -299,7 +403,7 @@
         "correct": "This statement emphasizes integration. A single wall, beam, opening, or material choice must be structurally sound, functionally appropriate, and aesthetically coherent—all at once, not separately.",
         "takeaway": "A single wall, beam, opening, or material choice must be structurally sound, functionally appropriate, and aesthetically coherent—all at once, not separately."
       },
-      "explanation": null,
+      "explanation": "The principles are distinct and all essential, not redundant. All three principles apply to all meaningful design decisions. Sequential treatment would isolate them; integration occurs during design. This statement emphasizes integration. A single wall, beam, opening, or material choice must be structurally sound, functionally appropriate, and aesthetically coherent—all at once, not separately. A single wall, beam, opening, or material choice must be structurally sound, functionally appropriate, and aesthetically coherent—all at once, not separately.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "code_interpretation",
@@ -313,8 +417,8 @@
       "model_id": "ALE-THEO-001-09-013",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.120988+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:35f8f62946b40b8422c73dae27557f982536811a1ebd62e26432657c4255ca92"
+      "updated_at": "2026-05-06T15:53:15.672462+00:00",
+      "content_hash": "sha256:0f160994f781be14611ddc72714e0ca601b0fbfc7f8fb8a4eaa551b1357e3b7b"
     },
     {
       "question_id": "ebea6108-e4f3-4896-9a7e-5047bd21cf32",
@@ -351,7 +455,7 @@
         "correct": "Venustas does not require minimalism or exclude ornament. It requires intention and integrity. A richly ornamented building possesses venustas if the ornament contributes to coherent meaning and expression. A plain box has venustas only if its plainness is meaningful, not accidental.",
         "takeaway": "A plain box has venustas only if its plainness is meaningful, not accidental."
       },
-      "explanation": null,
+      "explanation": "Ornament is not prohibited; it must be purposeful. Aesthetic concerns are integral to architecture, not opposed to structure and function. Ornate buildings can possess venustas if coherently expressed. Venustas does not require minimalism or exclude ornament. It requires intention and integrity. A richly ornamented building possesses venustas if the ornament contributes to coherent meaning and expression. A plain box has venustas only if its plainness is meaningful, not accidental. A plain box has venustas only if its plainness is meaningful, not accidental.",
       "code_citation": null,
       "bloom_level": "apply",
       "application_context": "code_interpretation",
@@ -365,8 +469,8 @@
       "model_id": "ALE-THEO-001-09-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.120988+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:a3cb3d4b563be4ea3402afcc90d6ab8ce319f61317e28111b90e4aa07f36f3ba"
+      "updated_at": "2026-05-06T15:53:15.834454+00:00",
+      "content_hash": "sha256:819b20990542a0b9f34415300aebb1860c8c016cc9bd0168084fbbddc23cd804"
     },
     {
       "question_id": "3140a495-83eb-43a4-8a08-e1307b95fd00",
@@ -403,7 +507,7 @@
         "correct": "Venustas is not decoration applied superficially. It emerges from coherent form, appropriate proportions, honest material expression, and spatial quality that engage the observer emotionally.",
         "takeaway": "It emerges from coherent form, appropriate proportions, honest material expression, and spatial quality that engage the observer emotionally."
       },
-      "explanation": null,
+      "explanation": "This describes technical systems, not aesthetic appeal. Venustas can emerge from minimal decoration or maximalist ornamentation; the criterion is coherent intention, not decorative quantity. Location and market value are separate from architectural principle. Venustas is not decoration applied superficially. It emerges from coherent form, appropriate proportions, honest material expression, and spatial quality that engage the observer emotionally. It emerges from coherent form, appropriate proportions, honest material expression, and spatial quality that engage the observer emotionally.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -417,8 +521,8 @@
       "model_id": "ALE-THEO-001-09-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.120988+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:c5589c6300d307c8882378cb4055af0b3d75b11ebe51ddc8648e14bf1a03db65"
+      "updated_at": "2026-05-06T15:53:15.997009+00:00",
+      "content_hash": "sha256:72350b86bba1459e651bfdb8dd6189ea70a1d8dc67a6bc4977b59ff098e09b97"
     },
     {
       "question_id": "42b4e904-2d5c-4aaa-90f4-89e101d5c9eb",
@@ -507,7 +611,7 @@
         "correct": "Honest structural expression (firmitas made visible) creates venustas—beauty emerges from truthful revelation of how the building stands. This integration exemplifies Vitruvian principle that structural truth is beautiful.",
         "takeaway": "This integration exemplifies Vitruvian principle that structural truth is beautiful."
       },
-      "explanation": null,
+      "explanation": "Venustas is present, but firmitas is also demonstrated through honest expression. Visible structure is not firmitas; firmitas is the actual soundness. The visibility contributes to venustas. The greatest architecture achieves all three through integration, as this example shows. Honest structural expression (firmitas made visible) creates venustas—beauty emerges from truthful revelation of how the building stands. This integration exemplifies Vitruvian principle that structural truth is beautiful. This integration exemplifies Vitruvian principle that structural truth is beautiful.",
       "code_citation": null,
       "bloom_level": "apply",
       "application_context": "design_application",
@@ -521,8 +625,8 @@
       "model_id": "ALE-THEO-001-09-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.120988+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:fc60a979c99ea548632966e1015cc57285f544ef04d38046bad2ae163f8691d6"
+      "updated_at": "2026-05-06T15:53:16.164354+00:00",
+      "content_hash": "sha256:3dd297b3c017a0eabe550630edbca3af8d68c9f281833811e843acd07e7d733d"
     },
     {
       "question_id": "9c30b109-203f-4707-a947-1f33e0f06334",
@@ -575,110 +679,6 @@
       "created_at": "2026-03-23T19:27:53.120988+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:e603eca1d950ca30d24c8c5948e3126de6bd0aacb18382dfb5a8b5a99fe18450"
-    },
-    {
-      "question_id": "a313e4c8-018f-42bd-826d-21792f3bf57e",
-      "article_id": "25607252-c20a-4013-99f5-af11e829fd18",
-      "topic_id": "42235732-fb8c-42ed-9a69-eb686e7e1a80",
-      "text": "In the Vitruvian framework, which principle is foundational and must be established before the architect can address the others?",
-      "options": [
-        {
-          "id": "a",
-          "text": "All three are equally foundational with no hierarchy, suggesting that balance is key to successful architectural design"
-        },
-        {
-          "id": "b",
-          "text": "Utilitas, because functional requirements determine all structural and formal decisions, ensuring that the building serves its intended purpose"
-        },
-        {
-          "id": "c",
-          "text": "Firmitas, because without structural soundness, neither functional nor aesthetic requirements can be met"
-        },
-        {
-          "id": "d",
-          "text": "Venustas, because beauty inspires commitment to excellence in other dimensions, motivating stakeholders to achieve higher standards"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "While ultimately integrated, firmitas has logical priority.",
-        "b": "Function depends on structural capacity; firmitas must underlie utilitas.",
-        "d": "Beauty cannot overcome structural failure.",
-        "correct": "A building lacking firmitas will collapse or deteriorate, making utilitas and venustas irrelevant. Firmitas is logically foundational. However, all three must ultimately be integrated; firmitas is foundational in priority, not sequence.",
-        "takeaway": "However, all three must ultimately be integrated; firmitas is foundational in priority, not sequence."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "remember",
-      "application_context": "code_interpretation",
-      "practice_context": [
-        "SYS"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-001-09-007",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:53.120988+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:dfe8bea642ee04271ce5278c05c6ef9b569caa7c0d69c07ce2ec3164b58c6b57"
-    },
-    {
-      "question_id": "5b9ca7e0-b3be-4ca9-8f1b-f7af570f6c30",
-      "article_id": "25607252-c20a-4013-99f5-af11e829fd18",
-      "topic_id": "42235732-fb8c-42ed-9a69-eb686e7e1a80",
-      "text": "How does Vitruvian principle apply when an architect must make a design decision affecting material selection? What must be considered?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Material selection is a technical decision unrelated to architectural principles, focusing solely on cost and availability"
-        },
-        {
-          "id": "b",
-          "text": "Choose the cheapest material to minimize cost; Vitruvian principles are only about luxury projects and not applicable to standard designs"
-        },
-        {
-          "id": "c",
-          "text": "Select the most beautiful material regardless of structural capability or functional appropriateness, prioritizing aesthetics above all else"
-        },
-        {
-          "id": "d",
-          "text": "Consider the material's structural appropriateness (firmitas), its performance under intended use conditions (utilitas), and its visual and tactile qualities (venustas) simultaneously"
-        }
-      ],
-      "correct_option_id": "d",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Material selection is a fundamental architectural decision integrating all principles.",
-        "b": "Cost considerations cannot override fundamental requirements for soundness and appropriateness.",
-        "c": "Beautiful materials lacking structural or functional capability are inappropriate.",
-        "correct": "Every design decision, including material selection, must address all three principles simultaneously. The material must be structurally adequate, perform appropriately for the building's function, and contribute to aesthetic coherence.",
-        "takeaway": "The material must be structurally adequate, perform appropriately for the building's function, and contribute to aesthetic coherence."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "apply",
-      "application_context": "design_application",
-      "practice_context": [
-        "APP"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-001-09-009",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:53.120988+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:702734e3f8afc945e7e73e7ab3b16bba7fb660ce87c72f47c23bf02c3183e2e0"
     }
   ]
 }

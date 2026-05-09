@@ -1,9 +1,12 @@
 # Pedestrian Protection During Construction
 
-**Module Focus:** PD 1096 National Building Code of the Philippines — Rule XI, Sections 1101–1108 (2004 Revised IRR)
-**LEA Area:** Building Technology & Utilities / Building Laws, Codes & Ethics
-**Difficulty:** Moderate — Heavily Metric & Detail-Oriented
-**Spaced Repetition:** Return in 3 days to redraw the walkway cross-section from memory, then again in 7 days to recite all dimensions without this page.
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Pedestrian Protection During Construction** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
+
 
 ## Learning Goal
 
@@ -214,25 +217,23 @@ Articles **694–707 of the Civil Code of the Philippines** govern nuisances. A 
 
 ---
 
-<LawCallout code="pd1096" section="Rule I - Pedestrian Protection">
+[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="pd1096", section="Rule I - Pedestrian Protection"
+- Text: Rule XI, Sec. 1101-1108: Three critical dimensions — (1) Walkway: min 1.20 m clear width, can carry 650 kg/m² live load. (2) Fence/hoarding: min 2.40 m height. (3) Railing: min 1.00 m height with mid-rail at 450 mm. The curb board (300 mm min) prevents debris from spilling onto the walkway.
+[/SLATECAMP_UI_BLOCK]
 
+[SLATECAMP_UI_BLOCK:ui_0002 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: LEA Pattern: Questions test specific Rule XI dimensions. Memorize the '1.20-2.40-1.00' triplet (walkway width, fence height, railing height). For excavation protection: the walkway must extend the full length of the excavation with a handrail on the street side if within 1.20 m of vehicular traffic.
+[/SLATECAMP_UI_BLOCK]
 
-Rule XI, Sec. 1101-1108: Three critical dimensions — (1) Walkway: min 1.20 m clear width, can carry 650 kg/m² live load. (2) Fence/hoarding: min 2.40 m height. (3) Railing: min 1.00 m height with mid-rail at 450 mm. The curb board (300 mm min) prevents debris from spilling onto the walkway.
-
-
-</LawCallout>
-
-<ExamTip>
-
-LEA Pattern: Questions test specific Rule XI dimensions. Memorize the '1.20-2.40-1.00' triplet (walkway width, fence height, railing height). For excavation protection: the walkway must extend the full length of the excavation with a handrail on the street side if within 1.20 m of vehicular traffic.
-
-</ExamTip>
-
-<Warn>
-
-⚠️ Common Violation: Contractors often place construction materials (mixers, rebar, sand) directly on the walkway. Sec. 1102 prohibits this — the walkway must remain clear and unobstructed for pedestrians. Any obstruction requires separate Building Official authorization.
-
-</Warn>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: ⚠️ Common Violation: Contractors often place construction materials (mixers, rebar, sand) directly on the walkway. Sec. 1102 prohibits this — the walkway must remain clear and unobstructed for pedestrians. Any obstruction requires separate Building Official authorization.
+[/SLATECAMP_UI_BLOCK]
 
 ## Mnemonic Devices
 

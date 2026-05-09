@@ -1,9 +1,59 @@
 {
   "article_id": "a7751310-8582-4b9a-a71b-78f6e9216b79",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:e491d9a12bf9ebb83068a8cf71f93ccb2af3b83c2174858ef56ae2788bd1354a",
+  "linked_questions_hash": "sha256:4e306d9f2743c68d8d1ecb42c3c1ebd864daed5e0541f1321aaf8aa17305d3f8",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "7231d63a-9725-4b73-b02b-aeb4808c3fb0",
+      "article_id": "a7751310-8582-4b9a-a71b-78f6e9216b79",
+      "topic_id": "868d30ee-7cc3-44a2-b2b9-cf452f06a4b3",
+      "text": "Which project type is most suited to MDPE compensation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A conventional 5-story apartment building with standard design, offering predictable costs"
+        },
+        {
+          "id": "b",
+          "text": "A straightforward retail space with simple mechanical systems, minimizing complexity"
+        },
+        {
+          "id": "c",
+          "text": "A renovation project with significant scope uncertainty and phased delivery"
+        },
+        {
+          "id": "d",
+          "text": "A standard office building with predictable construction cost, reducing financial risk"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Describes a straightforward project suited to percentage-of-PCC due to predictable scope and cost; not appropriate for MDPE.",
+        "b": "Simple mechanical systems and standard design suggest percentage-of-PCC viability, not MDPE.",
+        "d": "Standard office buildings with predictable costs favor percentage-of-PCC, not MDPE.",
+        "correct": "Renovation projects with uncertain scope, phased delivery, or projects with difficult-to-estimate costs are well-suited to MDPE because hourly billing accommodates uncertainty better than percentage-of-PCC.",
+        "takeaway": "MDPE protects the architect on projects where scope uncertainty and existing conditions make cost estimates unreliable."
+      },
+      "explanation": "Describes a straightforward project suited to percentage-of-PCC due to predictable scope and cost; not appropriate for MDPE. Simple mechanical systems and standard design suggest percentage-of-PCC viability, not MDPE. Standard office buildings with predictable costs favor percentage-of-PCC, not MDPE. Renovation projects with uncertain scope, phased delivery, or projects with difficult-to-estimate costs are well-suited to MDPE because hourly billing accommodates uncertainty better than percentage-of-PCC. MDPE protects the architect on projects where scope uncertainty and existing conditions make cost estimates unreliable.",
+      "code_citation": "Architect's Guidelines; SPP Doc 202",
+      "bloom_level": "remember",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-008-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-05-06T14:43:18.130816+00:00",
+      "content_hash": "sha256:86d6ee04b1dc75bcea942bcaf06dc79ae9ebf7a20fbdc7f9a32a487bac082776"
+    },
     {
       "question_id": "1d983b54-e285-4d25-8a96-e5f0d62170a0",
       "article_id": "a7751310-8582-4b9a-a71b-78f6e9216b79",
@@ -403,56 +453,6 @@
       "created_at": "2026-03-23T19:27:46.63473+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:bb7f1c2274f0d49272f684a857daca3c3b9ab93d942f6dd93a37525d66f895ad"
-    },
-    {
-      "question_id": "7231d63a-9725-4b73-b02b-aeb4808c3fb0",
-      "article_id": "a7751310-8582-4b9a-a71b-78f6e9216b79",
-      "topic_id": "868d30ee-7cc3-44a2-b2b9-cf452f06a4b3",
-      "text": "Which project type is most suited to MDPE compensation?",
-      "options": [
-        {
-          "id": "a",
-          "text": "A conventional 5-story apartment building with standard design, offering predictable costs"
-        },
-        {
-          "id": "b",
-          "text": "A straightforward retail space with simple mechanical systems, minimizing complexity"
-        },
-        {
-          "id": "c",
-          "text": "A renovation project with significant scope uncertainty and phased delivery"
-        },
-        {
-          "id": "d",
-          "text": "A standard office building with predictable construction cost, reducing financial risk"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Describes a straightforward project suited to percentage-of-PCC due to predictable scope and cost; not appropriate for MDPE.",
-        "b": "Simple mechanical systems and standard design suggest percentage-of-PCC viability, not MDPE.",
-        "d": "Standard office buildings with predictable costs favor percentage-of-PCC, not MDPE.",
-        "correct": "Renovation projects with uncertain scope, phased delivery, or projects with difficult-to-estimate costs are well-suited to MDPE because hourly billing accommodates uncertainty better than percentage-of-PCC.",
-        "takeaway": "MDPE protects the architect on projects where scope uncertainty and existing conditions make cost estimates unreliable."
-      },
-      "explanation": null,
-      "code_citation": "Architect's Guidelines; SPP Doc 202",
-      "bloom_level": "remember",
-      "application_context": "client_scenario",
-      "practice_context": [],
-      "difficulty": 0.3,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PRAC-CMP-008-002",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:46.63473+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:9697219b676bd962842dd0ad57275d334c648363780bca8df38af42a1dcf65cb"
     },
     {
       "question_id": "416b64c9-c139-4d3e-8a04-cfc3a9e2d6e2",

@@ -1,9 +1,109 @@
 {
   "article_id": "51fa177c-6b29-476a-8cee-740b797a9db8",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:354b93f6187ade7bab4a4187c7f24514a5f5c3ae50d09be680c0f1dd09404fe1",
+  "linked_questions_hash": "sha256:269565be5a259d9e3f18fc3aa65284f8d47c37f6cfa061472262d1ae0e92b77b",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "f6cbcf2f-7e97-4684-885d-578b4f282677",
+      "article_id": "51fa177c-6b29-476a-8cee-740b797a9db8",
+      "topic_id": "e536b5f9-8470-4d9a-b354-87c5759bee9d",
+      "text": "What is the standard T-bar grid width for mineral fiber acoustic tile suspension systems per ASTM C635?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) 3/8-inch"
+        },
+        {
+          "id": "b",
+          "text": "B) 9/16-inch"
+        },
+        {
+          "id": "c",
+          "text": "C) 3/4-inch"
+        },
+        {
+          "id": "d",
+          "text": "D) 15/16-inch"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "3/8-inch is too narrow; insufficient tile support.",
+        "c": "3/4-inch does not align with standard mineral fiber grid.",
+        "d": "15/16-inch is heavy-duty aluminum grid, not standard.",
+        "correct": "9/16-inch is the most common grid flange width compatible with standard mineral fiber tiles, per market practice and ASTM C635 load-rated systems. This is the cost-effective, most common standard.",
+        "takeaway": "Standard = 9/16 inch. Heavy-duty aluminum = 15/16 inch. Match grid width to tile specification."
+      },
+      "explanation": "3/8-inch is too narrow; insufficient tile support. 3/4-inch does not align with standard mineral fiber grid. 15/16-inch is heavy-duty aluminum grid, not standard. 9/16-inch is the most common grid flange width compatible with standard mineral fiber tiles, per market practice and ASTM C635 load-rated systems. This is the cost-effective, most common standard. Standard = 9/16 inch. Heavy-duty aluminum = 15/16 inch. Match grid width to tile specification.",
+      "code_citation": "ASTM C635 Standard Specification for Steel Suspension Systems",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-03-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-05-06T15:59:01.451173+00:00",
+      "content_hash": "sha256:256935dce91bb7a691053b50bf00f13dfe406ca5184bd7878a27f10c04bdac6b"
+    },
+    {
+      "question_id": "cea067d8-8697-482c-a007-9db0b743fe5a",
+      "article_id": "51fa177c-6b29-476a-8cee-740b797a9db8",
+      "topic_id": "e536b5f9-8470-4d9a-b354-87c5759bee9d",
+      "text": "A law office specifies standard mineral fiber acoustic tiles (NRC 0.65) for cost savings. Is this appropriate for achieving speech privacy between offices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) Yes; NRC 0.65 is adequate for any office"
+        },
+        {
+          "id": "b",
+          "text": "B) No; offices require NRC ≥0.75 minimum for speech privacy; specify perforated tiles (NRC 0.80+) or acoustic baffles"
+        },
+        {
+          "id": "c",
+          "text": "C) Only if offices are separated by full-height walls with no penetrations or openings"
+        },
+        {
+          "id": "d",
+          "text": "D) Yes; speech privacy depends on partition height, not ceiling NRC, and can be supplemented with sound masking systems"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "NRC 0.65 is acceptable for retail, not offices.",
+        "c": "Full-height walls eliminate sound transmission but do not address acoustic absorption in office spaces.",
+        "d": "Partition height affects direct sound; ceiling NRC affects reflected sound. Both matter.",
+        "correct": "NRC 0.65 is insufficient for office speech privacy. Sound reflects off low-absorption tiles, traveling between offices via return air path. NRC ≥0.75 (preferably 0.80+) is needed. Cost savings here create design failure and client complaints.",
+        "takeaway": "Match NRC to space function. Office = 0.75+. Don't compromise acoustic performance for cost."
+      },
+      "explanation": "NRC 0.65 is acceptable for retail, not offices. Full-height walls eliminate sound transmission but do not address acoustic absorption in office spaces. Partition height affects direct sound; ceiling NRC affects reflected sound. Both matter. NRC 0.65 is insufficient for office speech privacy. Sound reflects off low-absorption tiles, traveling between offices via return air path. NRC ≥0.75 (preferably 0.80+) is needed. Cost savings here create design failure and client complaints. Match NRC to space function. Office = 0.75+. Don't compromise acoustic performance for cost.",
+      "code_citation": "Acoustic design standards; office requirements",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-03-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-05-06T15:59:01.32095+00:00",
+      "content_hash": "sha256:52fd6ffceaf85ce381f49f013922123858e51c5930b860290676403f2f8b8b8d"
+    },
     {
       "question_id": "117d447b-0598-4981-876b-298a11f16e07",
       "article_id": "51fa177c-6b29-476a-8cee-740b797a9db8",
@@ -53,56 +153,6 @@
       "created_at": "2026-03-23T19:27:27.970051+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:c5c9f6e76cfefa9d7e3a8186529a2e7c1d498f3c2d92e737c207f9e37f278f97"
-    },
-    {
-      "question_id": "cea067d8-8697-482c-a007-9db0b743fe5a",
-      "article_id": "51fa177c-6b29-476a-8cee-740b797a9db8",
-      "topic_id": "e536b5f9-8470-4d9a-b354-87c5759bee9d",
-      "text": "A law office specifies standard mineral fiber acoustic tiles (NRC 0.65) for cost savings. Is this appropriate for achieving speech privacy between offices?",
-      "options": [
-        {
-          "id": "a",
-          "text": "A) Yes; NRC 0.65 is adequate for any office"
-        },
-        {
-          "id": "b",
-          "text": "B) No; offices require NRC ≥0.75 minimum for speech privacy; specify perforated tiles (NRC 0.80+) or acoustic baffles"
-        },
-        {
-          "id": "c",
-          "text": "C) Only if offices are separated by full-height walls with no penetrations or openings"
-        },
-        {
-          "id": "d",
-          "text": "D) Yes; speech privacy depends on partition height, not ceiling NRC, and can be supplemented with sound masking systems"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "NRC 0.65 is acceptable for retail, not offices.",
-        "c": "Full-height walls eliminate sound transmission but do not address acoustic absorption in office spaces.",
-        "d": "Partition height affects direct sound; ceiling NRC affects reflected sound. Both matter.",
-        "correct": "NRC 0.65 is insufficient for office speech privacy. Sound reflects off low-absorption tiles, traveling between offices via return air path. NRC ≥0.75 (preferably 0.80+) is needed. Cost savings here create design failure and client complaints.",
-        "takeaway": "Match NRC to space function. Office = 0.75+. Don't compromise acoustic performance for cost."
-      },
-      "explanation": null,
-      "code_citation": "Acoustic design standards; office requirements",
-      "bloom_level": "apply",
-      "application_context": "design_application",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-MATL-007-03-006",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:27.970051+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:45fd0a5300fd84a51a85ee20fbc98440e5095ce952a4b5b5c3e8642477565ffb"
     },
     {
       "question_id": "f063d4c4-2ad9-4bb6-a80c-cb8092ba6eaf",
@@ -353,56 +403,6 @@
       "created_at": "2026-03-23T19:27:27.970051+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:6a5eb8a6b423683f5e653cd2be0f5cebef397b0fe0937273b9bd99f6489659f9"
-    },
-    {
-      "question_id": "f6cbcf2f-7e97-4684-885d-578b4f282677",
-      "article_id": "51fa177c-6b29-476a-8cee-740b797a9db8",
-      "topic_id": "e536b5f9-8470-4d9a-b354-87c5759bee9d",
-      "text": "What is the standard T-bar grid width for mineral fiber acoustic tile suspension systems per ASTM C635?",
-      "options": [
-        {
-          "id": "a",
-          "text": "A) 3/8-inch"
-        },
-        {
-          "id": "b",
-          "text": "B) 9/16-inch"
-        },
-        {
-          "id": "c",
-          "text": "C) 3/4-inch"
-        },
-        {
-          "id": "d",
-          "text": "D) 15/16-inch"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "3/8-inch is too narrow; insufficient tile support.",
-        "c": "3/4-inch does not align with standard mineral fiber grid.",
-        "d": "15/16-inch is heavy-duty aluminum grid, not standard.",
-        "correct": "9/16-inch is the most common grid flange width compatible with standard mineral fiber tiles, per market practice and ASTM C635 load-rated systems. This is the cost-effective, most common standard.",
-        "takeaway": "Standard = 9/16 inch. Heavy-duty aluminum = 15/16 inch. Match grid width to tile specification."
-      },
-      "explanation": null,
-      "code_citation": "ASTM C635 Standard Specification for Steel Suspension Systems",
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-MATL-007-03-001",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:27.970051+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:18ad05504c3bfbdaa4688184ecf14161747e527e8f1987fc851036f0083f3eec"
     },
     {
       "question_id": "a2b94fca-bc04-4096-bed4-b9a2f76aa976",

@@ -1,7 +1,7 @@
 {
   "article_id": "08829ae6-7e66-41ed-a5f9-40135b4dfc3e",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:aeb5145ec36fa1ba56714b7d5f4aa55ff82a856cf29f58c819d2e7b0e08abfeb",
+  "linked_questions_hash": "sha256:1c9a8b7b258d7b9ff744188746c61f2ba09c59285001d71c3e672b45f35b3101",
   "question_count": 14,
   "questions": [
     {
@@ -39,7 +39,7 @@
         "correct": "Vernacular architecture responds rationally to local environmental conditions: tropical climates develop different strategies than arid regions; coastal areas respond to salt and storms differently than inland areas. Materials and climate shape building traditions.",
         "takeaway": "Materials and climate shape building traditions."
       },
-      "explanation": null,
+      "explanation": "Vernacular emerges organically, not from artistic style decisions. Vernacular predates and operates independently of international trends. Codes formalize what tradition already established; they do not originate the traditions. Vernacular architecture responds rationally to local environmental conditions: tropical climates develop different strategies than arid regions; coastal areas respond to salt and storms differently than inland areas. Materials and climate shape building traditions. Materials and climate shape building traditions.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "code_interpretation",
@@ -53,8 +53,320 @@
       "model_id": "ALE-THEO-001-08-012",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.120988+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:12dc5985172e7811178e7ac21a12244c36c625b9f8b6acf05e0f596f204b2583"
+      "updated_at": "2026-05-06T15:09:25.755424+00:00",
+      "content_hash": "sha256:cb420c1494779599a3a08c1c2b7c3553a485c261aa129fc3d510b266b55f61e6"
+    },
+    {
+      "question_id": "e19f3c66-414c-425b-91df-cf12050ea285",
+      "article_id": "08829ae6-7e66-41ed-a5f9-40135b4dfc3e",
+      "topic_id": "74001f03-4011-410e-8f88-f9df20988331",
+      "text": "Vernacular architecture is best defined as which of the following?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Simple, primitive building methods used before modern construction technology was available, often relying on local materials"
+        },
+        {
+          "id": "b",
+          "text": "Historic buildings preserved as museum pieces or cultural heritage sites, showcasing traditional architectural styles"
+        },
+        {
+          "id": "c",
+          "text": "Buildings designed and constructed by inhabitants using local materials and traditional techniques, embodying environmental knowledge and cultural values"
+        },
+        {
+          "id": "d",
+          "text": "Architecture designed by formally trained architects for wealthy clients in urban settings, emphasizing luxury and modernity"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Vernacular is not primitive; it embodies sophisticated environmental knowledge and proven structural systems.",
+        "b": "Preservation is not the defining characteristic; vernacular is living tradition.",
+        "d": "This describes professional contemporary architecture, not vernacular.",
+        "correct": "Vernacular architecture emerges organically from within communities over generations, using local materials and techniques adapted to specific environmental conditions. It is not formally designed but evolved through community knowledge.",
+        "takeaway": "It is not formally designed but evolved through community knowledge."
+      },
+      "explanation": "Vernacular is not primitive; it embodies sophisticated environmental knowledge and proven structural systems. Preservation is not the defining characteristic; vernacular is living tradition. This describes professional contemporary architecture, not vernacular. Vernacular architecture emerges organically from within communities over generations, using local materials and techniques adapted to specific environmental conditions. It is not formally designed but evolved through community knowledge. It is not formally designed but evolved through community knowledge.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-001-08-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.120988+00:00",
+      "updated_at": "2026-05-06T15:09:25.89216+00:00",
+      "content_hash": "sha256:06f2a2bf430f768ce5510ac5b54bee016727f1d9c4235bbda0595568b5bd8ebb"
+    },
+    {
+      "question_id": "49e3582e-a832-4317-851b-793cfad16f7f",
+      "article_id": "08829ae6-7e66-41ed-a5f9-40135b4dfc3e",
+      "topic_id": "74001f03-4011-410e-8f88-f9df20988331",
+      "text": "How does engaging with local community values differ from merely using regional materials or forms in architecture?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Community engagement means truly understanding how local people organize themselves spatially, what values they hold, and what forms carry meaning—not just applying regional imagery without deep knowledge"
+        },
+        {
+          "id": "b",
+          "text": "There is no meaningful difference; using regional materials automatically expresses community values, regardless of the specific cultural context or historical background"
+        },
+        {
+          "id": "c",
+          "text": "Community engagement is important only for residential projects, not public buildings, as public buildings are governed by universal design principles that override local considerations"
+        },
+        {
+          "id": "d",
+          "text": "Community engagement is optional; using local materials is sufficient to express cultural identity, even if the materials are applied in a way that does not reflect local traditions or practices"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Materials alone do not guarantee cultural expression; their selection must reflect genuine understanding.",
+        "c": "Community engagement applies to all building types; public spaces especially require understanding community needs and values.",
+        "d": "Material selection without community understanding can perpetuate stereotypes rather than express authentic identity.",
+        "correct": "Superficial regional reference (decoration with local imagery) differs profoundly from genuine engagement (understanding spatial organization, cultural values, meaningful forms). True cultural expression requires depth of knowledge and respect for community.",
+        "takeaway": "True cultural expression requires depth of knowledge and respect for community."
+      },
+      "explanation": "Materials alone do not guarantee cultural expression; their selection must reflect genuine understanding. Community engagement applies to all building types; public spaces especially require understanding community needs and values. Material selection without community understanding can perpetuate stereotypes rather than express authentic identity. Superficial regional reference (decoration with local imagery) differs profoundly from genuine engagement (understanding spatial organization, cultural values, meaningful forms). True cultural expression requires depth of knowledge and respect for community. True cultural expression requires depth of knowledge and respect for community.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-001-08-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.120988+00:00",
+      "updated_at": "2026-05-06T15:09:26.298638+00:00",
+      "content_hash": "sha256:f3c2c521fae5f0f4d26ff1777abe5a71ce4a5835878da3d3704c6798ce6bc9d4"
+    },
+    {
+      "question_id": "4d536784-1c61-4d1a-9ccf-9847f6c65282",
+      "article_id": "08829ae6-7e66-41ed-a5f9-40135b4dfc3e",
+      "topic_id": "74001f03-4011-410e-8f88-f9df20988331",
+      "text": "How does understanding vernacular architecture contribute to a contemporary architect's ability to create buildings that express cultural identity?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It reveals the underlying logic of how communities organized space, selected materials, and responded to environment—knowledge that can inform contemporary solutions grounded in cultural and geographic specificity"
+        },
+        {
+          "id": "b",
+          "text": "It provides a set of forms to copy without requiring original thought, limiting creativity and innovation"
+        },
+        {
+          "id": "c",
+          "text": "It is useful only for historical preservation projects, not for contemporary design, as it does not address modern needs"
+        },
+        {
+          "id": "d",
+          "text": "It suggests that contemporary architecture should be identical to historical vernacular to maintain cultural continuity, disregarding modern advancements"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Understanding vernacular enriches thinking; it is not about copying.",
+        "c": "Vernacular knowledge informs all contextually sensitive architecture, not only historical preservation.",
+        "d": "Contemporary expression requires modern methods while honoring underlying principles.",
+        "correct": "Vernacular architecture is a knowledge base revealing how communities solved problems with available resources and skills. Understanding this logic enables contemporary architects to apply similar principles (climate response, community engagement, material authenticity) to contemporary design, creating culturally rooted modern buildings.",
+        "takeaway": "Understanding this logic enables contemporary architects to apply similar principles (climate response, community engagement, material authenticity) to contemporary design, creating culturally rooted modern buildings."
+      },
+      "explanation": "Understanding vernacular enriches thinking; it is not about copying. Vernacular knowledge informs all contextually sensitive architecture, not only historical preservation. Contemporary expression requires modern methods while honoring underlying principles. Vernacular architecture is a knowledge base revealing how communities solved problems with available resources and skills. Understanding this logic enables contemporary architects to apply similar principles (climate response, community engagement, material authenticity) to contemporary design, creating culturally rooted modern buildings. Understanding this logic enables contemporary architects to apply similar principles (climate response, community engagement, material authenticity) to contemporary design, creating culturally rooted modern buildings.",
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "INT"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-001-08-013",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.120988+00:00",
+      "updated_at": "2026-05-06T15:15:12.10531+00:00",
+      "content_hash": "sha256:be1dfc5659735c5f6d7ccee3ca807cbdd9ed70b338415fe3fd8d00bb3dc1e38b"
+    },
+    {
+      "question_id": "b9b29db1-bf27-4904-8023-94b38ce41b49",
+      "article_id": "08829ae6-7e66-41ed-a5f9-40135b4dfc3e",
+      "topic_id": "74001f03-4011-410e-8f88-f9df20988331",
+      "text": "What architectural tradition does the surviving bahay na bato structures in Intramuros and Vigan represent?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Indigenous Filipino architecture unchanged by external influence, which is a romanticized view"
+        },
+        {
+          "id": "b",
+          "text": "Pure Spanish colonial architecture imposed on Filipino communities, overlooking local adaptations"
+        },
+        {
+          "id": "c",
+          "text": "The layered cultural identity of the Philippines reflecting indigenous response to place, colonial influence, and Filipino adaptation of foreign forms"
+        },
+        {
+          "id": "d",
+          "text": "Modern Filipino adaptation of international architectural styles, which is a misinterpretation of historical context"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Bahay na bato incorporates Spanish colonial influence; it is not unchanged traditional architecture.",
+        "b": "Spanish forms were not simply imposed; Filipinos adapted and appropriated them.",
+        "d": "These structures predate contemporary international styles; they represent colonial-era synthesis.",
+        "correct": "Bahay na bato structures narrate the Philippines' complex history: indigenous structural knowledge, Spanish colonial occupation and cultural imposition, and Filipino creative adaptation that synthesized both traditions into something distinctly Filipino.",
+        "takeaway": "Bahay na bato structures narrate the Philippines' complex history: indigenous structural knowledge, Spanish colonial occupation and cultural imposition, and Filipino creative adaptation that synthesized both traditions into something distinctly Filipino."
+      },
+      "explanation": "Bahay na bato incorporates Spanish colonial influence; it is not unchanged traditional architecture. Spanish forms were not simply imposed; Filipinos adapted and appropriated them. These structures predate contemporary international styles; they represent colonial-era synthesis. Bahay na bato structures narrate the Philippines' complex history: indigenous structural knowledge, Spanish colonial occupation and cultural imposition, and Filipino creative adaptation that synthesized both traditions into something distinctly Filipino. Bahay na bato structures narrate the Philippines' complex history: indigenous structural knowledge, Spanish colonial occupation and cultural imposition, and Filipino creative adaptation that synthesized both traditions into something distinctly Filipino.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "design_application",
+      "practice_context": [
+        "PH"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-001-08-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.120988+00:00",
+      "updated_at": "2026-05-06T15:15:12.317071+00:00",
+      "content_hash": "sha256:dc5d4de56ae145849fc5aec019e9a7541938a9eaf6fbfd4853f81d7cc8ce714d"
+    },
+    {
+      "question_id": "6d821c79-98be-4d04-a552-db24e35954ea",
+      "article_id": "08829ae6-7e66-41ed-a5f9-40135b4dfc3e",
+      "topic_id": "74001f03-4011-410e-8f88-f9df20988331",
+      "text": "The bahay kubo, traditional Filipino stilt house, exemplifies vernacular architecture through which features?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Complex interior subdivisions and formal entry sequences, reflecting a hierarchical spatial organization"
+        },
+        {
+          "id": "b",
+          "text": "Elevation on timber posts, open-sided design, thatched roof, and single large room adapted to tropical climate and communal living"
+        },
+        {
+          "id": "c",
+          "text": "Stone masonry construction and formal spatial hierarchy reflecting colonial Spanish influence, emphasizing durability and permanence"
+        },
+        {
+          "id": "d",
+          "text": "Reinforced concrete and glass construction optimized for contemporary comfort, integrating modern materials and technologies"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The bahay kubo's strength is flexibility, not formal subdivision.",
+        "c": "This describes bahay na bato, which incorporates Spanish colonial influence.",
+        "d": "Concrete and glass are contemporary materials, not traditional vernacular.",
+        "correct": "The bahay kubo's key features directly address tropical climate: elevation protects against flooding and pests; open sides and large eaves provide ventilation and sun protection; timber frame uses locally available materials; flexible interior space accommodates multi-generational living.",
+        "takeaway": "The bahay kubo's key features directly address tropical climate: elevation protects against flooding and pests; open sides and large eaves provide ventilation and sun protection; timber frame uses locally available materials; flexible interior space accommodates multi-generational living."
+      },
+      "explanation": "The bahay kubo's strength is flexibility, not formal subdivision. This describes bahay na bato, which incorporates Spanish colonial influence. Concrete and glass are contemporary materials, not traditional vernacular. The bahay kubo's key features directly address tropical climate: elevation protects against flooding and pests; open sides and large eaves provide ventilation and sun protection; timber frame uses locally available materials; flexible interior space accommodates multi-generational living. The bahay kubo's key features directly address tropical climate: elevation protects against flooding and pests; open sides and large eaves provide ventilation and sun protection; timber frame uses locally available materials; flexible interior space accommodates multi-generational living.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-001-08-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.120988+00:00",
+      "updated_at": "2026-05-06T15:15:12.588855+00:00",
+      "content_hash": "sha256:7bea1a1fc8ee6d751fd874ea0522f966e2d6a024228157102341cc248e4c5882"
+    },
+    {
+      "question_id": "c5f36aa2-e075-4cac-a122-b1acc126165c",
+      "article_id": "08829ae6-7e66-41ed-a5f9-40135b4dfc3e",
+      "topic_id": "74001f03-4011-410e-8f88-f9df20988331",
+      "text": "What is the relationship between 'critical regionalism' and 'cultural identity' in contemporary architecture?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Critical regionalism grounds contemporary design in specific local knowledge, materials, and values while employing modern methods, allowing cultural continuity without historical imitation"
+        },
+        {
+          "id": "b",
+          "text": "Critical regionalism is identical to slavish historical preservation, focusing solely on maintaining past architectural styles."
+        },
+        {
+          "id": "c",
+          "text": "Critical regionalism rejects all cultural identity in favor of abstract internationalism, disregarding local context."
+        },
+        {
+          "id": "d",
+          "text": "Critical regionalism applies European modernism universally without regional adaptation, ignoring local traditions."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Critical regionalism is forward-looking, not backward-preserving.",
+        "c": "Critical regionalism specifically rejects abstract internationalism; it is culturally grounded.",
+        "d": "Critical regionalism resists universal application; it is context-specific.",
+        "correct": "Critical regionalism bridges tradition and modernity: it respects and learns from local context, culture, and climate while employing contemporary design and materials. This approach maintains cultural identity through genuine engagement with place.",
+        "takeaway": "This approach maintains cultural identity through genuine engagement with place."
+      },
+      "explanation": "Critical regionalism is forward-looking, not backward-preserving. Critical regionalism specifically rejects abstract internationalism; it is culturally grounded. Critical regionalism resists universal application; it is context-specific. Critical regionalism bridges tradition and modernity: it respects and learns from local context, culture, and climate while employing contemporary design and materials. This approach maintains cultural identity through genuine engagement with place. This approach maintains cultural identity through genuine engagement with place.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "SYS"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-001-08-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.120988+00:00",
+      "updated_at": "2026-05-06T15:15:12.93492+00:00",
+      "content_hash": "sha256:80104196fba3757db8e2475cc8620cffddfcd8054c211555f0ce2dac97c984a7"
     },
     {
       "question_id": "22517403-dda9-4fb8-a5f0-993334c84a19",
@@ -107,58 +419,6 @@
       "created_at": "2026-03-23T19:27:53.120988+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:890fdfbe1e2f016169482606c5f513bf2ed6779a40fefc035692de213e080419"
-    },
-    {
-      "question_id": "e19f3c66-414c-425b-91df-cf12050ea285",
-      "article_id": "08829ae6-7e66-41ed-a5f9-40135b4dfc3e",
-      "topic_id": "74001f03-4011-410e-8f88-f9df20988331",
-      "text": "Vernacular architecture is best defined as which of the following?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Simple, primitive building methods used before modern construction technology was available, often relying on local materials"
-        },
-        {
-          "id": "b",
-          "text": "Historic buildings preserved as museum pieces or cultural heritage sites, showcasing traditional architectural styles"
-        },
-        {
-          "id": "c",
-          "text": "Buildings designed and constructed by inhabitants using local materials and traditional techniques, embodying environmental knowledge and cultural values"
-        },
-        {
-          "id": "d",
-          "text": "Architecture designed by formally trained architects for wealthy clients in urban settings, emphasizing luxury and modernity"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Vernacular is not primitive; it embodies sophisticated environmental knowledge and proven structural systems.",
-        "b": "Preservation is not the defining characteristic; vernacular is living tradition.",
-        "d": "This describes professional contemporary architecture, not vernacular.",
-        "correct": "Vernacular architecture emerges organically from within communities over generations, using local materials and techniques adapted to specific environmental conditions. It is not formally designed but evolved through community knowledge.",
-        "takeaway": "It is not formally designed but evolved through community knowledge."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [
-        "DEF"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-001-08-001",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:53.120988+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:ed94f906a6da8b6186ee02fbe1c70120223dc5cb3643d245bf99688be86c66c5"
     },
     {
       "question_id": "88901c2d-8924-4ddf-b875-2378b4bc1afc",
@@ -247,7 +507,7 @@
         "correct": "These features are intelligent, proven responses to specific climate conditions. They are not arbitrary—they emerge from generations of building experience in tropical environments. This demonstrates how vernacular architecture embodies environmental knowledge.",
         "takeaway": "This demonstrates how vernacular architecture embodies environmental knowledge."
       },
-      "explanation": null,
+      "explanation": "While aesthetic, these are functionally motivated by climate, not arbitrary preferences. They are integrated into the fundamental design, not applied ornaments. Building codes codify what tradition already established through practice. These features are intelligent, proven responses to specific climate conditions. They are not arbitrary—they emerge from generations of building experience in tropical environments. This demonstrates how vernacular architecture embodies environmental knowledge. This demonstrates how vernacular architecture embodies environmental knowledge.",
       "code_citation": null,
       "bloom_level": "apply",
       "application_context": "design_application",
@@ -261,8 +521,8 @@
       "model_id": "ALE-THEO-001-08-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.120988+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:897dde74248cffbff598bf9135b2d4127687376033596b110f538261af5ffba2"
+      "updated_at": "2026-05-06T15:09:26.026248+00:00",
+      "content_hash": "sha256:c6ce5e84d2c2db6c1c14b214556f301efb325263abe33763291458cbb6575eb1"
     },
     {
       "question_id": "303aedd5-9795-4dd4-9a24-b617a3caef88",
@@ -299,7 +559,7 @@
         "correct": "Vernacular architecture emerges from within communities over time. A building by an outside architect using regional forms without genuine engagement with local knowledge and values is appropriation—borrowing cultural elements without understanding or respect.",
         "takeaway": "A building by an outside architect using regional forms without genuine engagement with local knowledge and values is appropriation—borrowing cultural elements without understanding or respect."
       },
-      "explanation": null,
+      "explanation": "Critical regionalism requires genuine engagement with local values and knowledge, which this scenario lacks. Vernacular requires organic emergence from community; external design disqualifies it. The architect's origin is less significant than the depth of engagement with local context. Vernacular architecture emerges from within communities over time. A building by an outside architect using regional forms without genuine engagement with local knowledge and values is appropriation—borrowing cultural elements without understanding or respect. A building by an outside architect using regional forms without genuine engagement with local knowledge and values is appropriation—borrowing cultural elements without understanding or respect.",
       "code_citation": null,
       "bloom_level": "apply",
       "application_context": "design_application",
@@ -313,164 +573,8 @@
       "model_id": "ALE-THEO-001-08-011",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.120988+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:56e904bd3901be1caf793c7ecc152c09a53347f5fd552c085bfb210dbc692043"
-    },
-    {
-      "question_id": "49e3582e-a832-4317-851b-793cfad16f7f",
-      "article_id": "08829ae6-7e66-41ed-a5f9-40135b4dfc3e",
-      "topic_id": "74001f03-4011-410e-8f88-f9df20988331",
-      "text": "How does engaging with local community values differ from merely using regional materials or forms in architecture?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Community engagement means truly understanding how local people organize themselves spatially, what values they hold, and what forms carry meaning—not just applying regional imagery without deep knowledge"
-        },
-        {
-          "id": "b",
-          "text": "There is no meaningful difference; using regional materials automatically expresses community values, regardless of the specific cultural context or historical background"
-        },
-        {
-          "id": "c",
-          "text": "Community engagement is important only for residential projects, not public buildings, as public buildings are governed by universal design principles that override local considerations"
-        },
-        {
-          "id": "d",
-          "text": "Community engagement is optional; using local materials is sufficient to express cultural identity, even if the materials are applied in a way that does not reflect local traditions or practices"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "b": "Materials alone do not guarantee cultural expression; their selection must reflect genuine understanding.",
-        "c": "Community engagement applies to all building types; public spaces especially require understanding community needs and values.",
-        "d": "Material selection without community understanding can perpetuate stereotypes rather than express authentic identity.",
-        "correct": "Superficial regional reference (decoration with local imagery) differs profoundly from genuine engagement (understanding spatial organization, cultural values, meaningful forms). True cultural expression requires depth of knowledge and respect for community.",
-        "takeaway": "True cultural expression requires depth of knowledge and respect for community."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "apply",
-      "application_context": "design_application",
-      "practice_context": [
-        "CMP"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-001-08-010",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:53.120988+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:2453522c8d11ef9c7c392b6b827cf39c048e8b50eec5c15c4e867ad499ec1956"
-    },
-    {
-      "question_id": "4d536784-1c61-4d1a-9ccf-9847f6c65282",
-      "article_id": "08829ae6-7e66-41ed-a5f9-40135b4dfc3e",
-      "topic_id": "74001f03-4011-410e-8f88-f9df20988331",
-      "text": "How does understanding vernacular architecture contribute to a contemporary architect's ability to create buildings that express cultural identity?",
-      "options": [
-        {
-          "id": "a",
-          "text": "It reveals the underlying logic of how communities organized space, selected materials, and responded to environment—knowledge that can inform contemporary solutions grounded in cultural and geographic specificity"
-        },
-        {
-          "id": "b",
-          "text": "It provides a set of forms to copy without requiring original thought, limiting creativity and innovation"
-        },
-        {
-          "id": "c",
-          "text": "It is useful only for historical preservation projects, not for contemporary design, as it does not address modern needs"
-        },
-        {
-          "id": "d",
-          "text": "It suggests that contemporary architecture should be identical to historical vernacular to maintain cultural continuity, disregarding modern advancements"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "b": "Understanding vernacular enriches thinking; it is not about copying.",
-        "c": "Vernacular knowledge informs all contextually sensitive architecture, not only historical preservation.",
-        "d": "Contemporary expression requires modern methods while honoring underlying principles.",
-        "correct": "Vernacular architecture is a knowledge base revealing how communities solved problems with available resources and skills. Understanding this logic enables contemporary architects to apply similar principles (climate response, community engagement, material authenticity) to contemporary design, creating culturally rooted modern buildings.",
-        "takeaway": "Understanding this logic enables contemporary architects to apply similar principles (climate response, community engagement, material authenticity) to contemporary design, creating culturally rooted modern buildings."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "analyze",
-      "application_context": "code_interpretation",
-      "practice_context": [
-        "INT"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-001-08-013",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:53.120988+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:d2b71f95fb1ecba849deed00df70ff7213ad12c88c6d7ea4c641789466d1fea5"
-    },
-    {
-      "question_id": "b9b29db1-bf27-4904-8023-94b38ce41b49",
-      "article_id": "08829ae6-7e66-41ed-a5f9-40135b4dfc3e",
-      "topic_id": "74001f03-4011-410e-8f88-f9df20988331",
-      "text": "What architectural tradition does the surviving bahay na bato structures in Intramuros and Vigan represent?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Indigenous Filipino architecture unchanged by external influence, which is a romanticized view"
-        },
-        {
-          "id": "b",
-          "text": "Pure Spanish colonial architecture imposed on Filipino communities, overlooking local adaptations"
-        },
-        {
-          "id": "c",
-          "text": "The layered cultural identity of the Philippines reflecting indigenous response to place, colonial influence, and Filipino adaptation of foreign forms"
-        },
-        {
-          "id": "d",
-          "text": "Modern Filipino adaptation of international architectural styles, which is a misinterpretation of historical context"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Bahay na bato incorporates Spanish colonial influence; it is not unchanged traditional architecture.",
-        "b": "Spanish forms were not simply imposed; Filipinos adapted and appropriated them.",
-        "d": "These structures predate contemporary international styles; they represent colonial-era synthesis.",
-        "correct": "Bahay na bato structures narrate the Philippines' complex history: indigenous structural knowledge, Spanish colonial occupation and cultural imposition, and Filipino creative adaptation that synthesized both traditions into something distinctly Filipino.",
-        "takeaway": "Bahay na bato structures narrate the Philippines' complex history: indigenous structural knowledge, Spanish colonial occupation and cultural imposition, and Filipino creative adaptation that synthesized both traditions into something distinctly Filipino."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "remember",
-      "application_context": "design_application",
-      "practice_context": [
-        "PH"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-001-08-007",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:53.120988+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:bd11809b309aa5ebf48c19086772151ab8bc3e7ed6c95c317e10237a036812f5"
+      "updated_at": "2026-05-06T15:09:26.159869+00:00",
+      "content_hash": "sha256:77be7815d69848a8dac0480a36bcd087ddccb9820db68469d5a393952cc233e9"
     },
     {
       "question_id": "af623c61-97e4-4a55-945e-ef96750e0559",
@@ -525,58 +629,6 @@
       "content_hash": "sha256:5d345d035b38f52b765dc7bc9279c71f46e9a77c9b167804ef9a5e38eb93e5ac"
     },
     {
-      "question_id": "6d821c79-98be-4d04-a552-db24e35954ea",
-      "article_id": "08829ae6-7e66-41ed-a5f9-40135b4dfc3e",
-      "topic_id": "74001f03-4011-410e-8f88-f9df20988331",
-      "text": "The bahay kubo, traditional Filipino stilt house, exemplifies vernacular architecture through which features?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Complex interior subdivisions and formal entry sequences, reflecting a hierarchical spatial organization"
-        },
-        {
-          "id": "b",
-          "text": "Elevation on timber posts, open-sided design, thatched roof, and single large room adapted to tropical climate and communal living"
-        },
-        {
-          "id": "c",
-          "text": "Stone masonry construction and formal spatial hierarchy reflecting colonial Spanish influence, emphasizing durability and permanence"
-        },
-        {
-          "id": "d",
-          "text": "Reinforced concrete and glass construction optimized for contemporary comfort, integrating modern materials and technologies"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "The bahay kubo's strength is flexibility, not formal subdivision.",
-        "c": "This describes bahay na bato, which incorporates Spanish colonial influence.",
-        "d": "Concrete and glass are contemporary materials, not traditional vernacular.",
-        "correct": "The bahay kubo's key features directly address tropical climate: elevation protects against flooding and pests; open sides and large eaves provide ventilation and sun protection; timber frame uses locally available materials; flexible interior space accommodates multi-generational living.",
-        "takeaway": "The bahay kubo's key features directly address tropical climate: elevation protects against flooding and pests; open sides and large eaves provide ventilation and sun protection; timber frame uses locally available materials; flexible interior space accommodates multi-generational living."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [
-        "DEF"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-001-08-003",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:53.120988+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:7cb68f29f5a3e1f84e454698e71ae22f163fdfebda0b07a8c7fe19ee0cab8ba4"
-    },
-    {
       "question_id": "5e716375-0a21-4ba9-a56f-71dff716be54",
       "article_id": "08829ae6-7e66-41ed-a5f9-40135b4dfc3e",
       "topic_id": "74001f03-4011-410e-8f88-f9df20988331",
@@ -611,7 +663,7 @@
         "correct": "Critical regionalism means understanding why vernacular architecture works (its principles) and applying that knowledge to contemporary design. This maintains cultural rootedness while addressing current needs with modern materials—it is not historical imitation.",
         "takeaway": "This maintains cultural rootedness while addressing current needs with modern materials—it is not historical imitation."
       },
-      "explanation": null,
+      "explanation": "Slavish imitation does not serve contemporary needs; understanding principles allows genuine cultural expression. Superficial ornamental reference lacks integrity; cultural identity runs deep into spatial organization and material choices. Ignoring cultural context creates placeless buildings; culture informs genuine contemporary design. Critical regionalism means understanding why vernacular architecture works (its principles) and applying that knowledge to contemporary design. This maintains cultural rootedness while addressing current needs with modern materials—it is not historical imitation. This maintains cultural rootedness while addressing current needs with modern materials—it is not historical imitation.",
       "code_citation": null,
       "bloom_level": "apply",
       "application_context": "design_application",
@@ -625,60 +677,8 @@
       "model_id": "ALE-THEO-001-08-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.120988+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:6227db84f8b42f376cdd5cf832d74c170634eea7cf962f1e4bfefe8f0302f3f8"
-    },
-    {
-      "question_id": "c5f36aa2-e075-4cac-a122-b1acc126165c",
-      "article_id": "08829ae6-7e66-41ed-a5f9-40135b4dfc3e",
-      "topic_id": "74001f03-4011-410e-8f88-f9df20988331",
-      "text": "What is the relationship between 'critical regionalism' and 'cultural identity' in contemporary architecture?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Critical regionalism grounds contemporary design in specific local knowledge, materials, and values while employing modern methods, allowing cultural continuity without historical imitation"
-        },
-        {
-          "id": "b",
-          "text": "Critical regionalism is identical to slavish historical preservation, focusing solely on maintaining past architectural styles."
-        },
-        {
-          "id": "c",
-          "text": "Critical regionalism rejects all cultural identity in favor of abstract internationalism, disregarding local context."
-        },
-        {
-          "id": "d",
-          "text": "Critical regionalism applies European modernism universally without regional adaptation, ignoring local traditions."
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "b": "Critical regionalism is forward-looking, not backward-preserving.",
-        "c": "Critical regionalism specifically rejects abstract internationalism; it is culturally grounded.",
-        "d": "Critical regionalism resists universal application; it is context-specific.",
-        "correct": "Critical regionalism bridges tradition and modernity: it respects and learns from local context, culture, and climate while employing contemporary design and materials. This approach maintains cultural identity through genuine engagement with place.",
-        "takeaway": "This approach maintains cultural identity through genuine engagement with place."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [
-        "SYS"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-001-08-009",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:53.120988+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:999a6a3b2d73bed85c4f78dcf090dd8e9ad7db2cabddc9b63051cabc651f6e5c"
+      "updated_at": "2026-05-06T15:15:12.731335+00:00",
+      "content_hash": "sha256:81768c5de4762617cb03297d77b49114ee51db5fbbbfe827009eef6c10b64d5e"
     },
     {
       "question_id": "dc8648e8-ea09-4dea-b14d-02b10caea0ca",
@@ -715,7 +715,7 @@
         "correct": "Critical regionalism means understanding why bahay na bato works (climate response, community spatial organization, material choices) and applying that knowledge to contemporary design with modern materials. This maintains cultural continuity while addressing contemporary needs.",
         "takeaway": "This maintains cultural continuity while addressing contemporary needs."
       },
-      "explanation": null,
+      "explanation": "Superficial decoration lacks integrity and does not constitute genuine cultural expression. Ignoring cultural context misses opportunity to create meaningful, place-rooted architecture. Literal historical reproduction cannot serve contemporary housing needs or modern codes. Critical regionalism means understanding why bahay na bato works (climate response, community spatial organization, material choices) and applying that knowledge to contemporary design with modern materials. This maintains cultural continuity while addressing contemporary needs. This maintains cultural continuity while addressing contemporary needs.",
       "code_citation": null,
       "bloom_level": "apply",
       "application_context": "design_application",
@@ -729,8 +729,8 @@
       "model_id": "ALE-THEO-001-08-014",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.120988+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:07ced207ab97b5b0ed2f2b83d4e963a16f64a29bf5db5e724d20c435a0f7cb83"
+      "updated_at": "2026-05-06T15:15:13.080493+00:00",
+      "content_hash": "sha256:452f5fe0b49553ca39b5b5db5f3187b33fb9166ced65fb4756930ac5a9d1eb99"
     }
   ]
 }

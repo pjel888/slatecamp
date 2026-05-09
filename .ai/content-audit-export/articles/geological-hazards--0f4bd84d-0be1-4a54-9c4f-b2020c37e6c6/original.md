@@ -1,4 +1,11 @@
 # Geological Hazards
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Geological Hazards** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
 ## Learning Goal
 After reading this article, you should be able to:
 
@@ -13,11 +20,11 @@ You are the project architect for a proposed 8-storey residential condominium in
 
 ## Core Concepts
 
-<Example>
-
-**Application Scenario:** Your 8-storey condominium project in Marikina sits within 200 m of the West Valley Fault on alluvial deposits. PHIVOLCS recommends a minimum 5 m buffer from both sides of the fault trace — no permanent structures within this zone. The geotechnical report (required by PD 1096 RIRR) must confirm soil bearing capacity using NSCP Table 304.1 or site-specific testing.
-
-</Example>
+[SLATECAMP_UI_BLOCK:ui_0001 component="Example" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Application Scenario:** Your 8-storey condominium project in Marikina sits within 200 m of the West Valley Fault on alluvial deposits. PHIVOLCS recommends a minimum 5 m buffer from both sides of the fault trace — no permanent structures within this zone. The geotechnical report (required by PD 1096 RIRR) must confirm soil bearing capacity using NSCP Table 304.1 or site-specific testing.
+[/SLATECAMP_UI_BLOCK]
 
 - **The Philippine Fault Zone (PFZ) and PHIVOLCS Hazard Mapping:** The Philippines sits on the Pacific Ring of Fire with over 30 active fault systems. DOST-PHIVOLCS (Philippine Institute of Volcanology and Seismology) produces detailed fault-line maps, liquefaction susceptibility maps, and volcanic hazard maps. These are the primary references for geological site assessment — not PD 1096. PHIVOLCS recommends a **minimum 5-meter buffer zone** from both sides of the fault trace or from the edge of the deformation zone. No permanent structures should be built within this buffer.
 
@@ -31,11 +38,11 @@ You are the project architect for a proposed 8-storey residential condominium in
 
 ## The Hard Data (Cheat Sheet)
 
-<ExamTip>
-
-**LEA Exam Pattern — NSCP Table 304.1:** The four critical bearing capacity values to memorize: Crystalline bedrock = 600 kPa, Sedimentary rock = 300 kPa, Sand/gravel (well-cemented) = 300 kPa, Clay (stiff) = 100 kPa. The LEA tests these by presenting a soil type and asking for the presumptive bearing capacity. Remember the 20% increase rule for each additional 300 mm of footing width/depth.
-
-</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0002 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **LEA Exam Pattern — NSCP Table 304.1:** The four critical bearing capacity values to memorize: Crystalline bedrock = 600 kPa, Sedimentary rock = 300 kPa, Sand/gravel (well-cemented) = 300 kPa, Clay (stiff) = 100 kPa. The LEA tests these by presenting a soil type and asking for the presumptive bearing capacity. Remember the 20% increase rule for each additional 300 mm of footing width/depth.
+[/SLATECAMP_UI_BLOCK]
 
 | Parameter | Value / Requirement | Source |
 |---|---|---|
@@ -52,11 +59,11 @@ You are the project architect for a proposed 8-storey residential condominium in
 
 ---
 
-<Warn>
-
-⚠️ COMMON MISTAKE: PD 1096 RIRR requires submission of a geotechnical report with the building permit application. However, PD 1096 does NOT contain the technical standards for bearing capacity. The NSCP (National Structural Code of the Philippines) provides the actual methodologies, values, and calculation procedures. PD 1096 is the administrative framework; the NSCP is the engineering standard. They complement each other — neither replaces the other.
-
-</Warn>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: ⚠️ COMMON MISTAKE: PD 1096 RIRR requires submission of a geotechnical report with the building permit application. However, PD 1096 does NOT contain the technical standards for bearing capacity. The NSCP (National Structural Code of the Philippines) provides the actual methodologies, values, and calculation procedures. PD 1096 is the administrative framework; the NSCP is the engineering standard. They complement each other — neither replaces the other.
+[/SLATECAMP_UI_BLOCK]
 
 ## Crucial Formulas & Computations
 
@@ -127,45 +134,48 @@ While the full liquefaction analysis (Seed & Idriss method) is beyond typical LE
 ### Question 1
 According to PHIVOLCS guidelines, what is the minimum recommended buffer zone from the trace of an active fault line where no permanent structures should be built?
 
-A. 3 meters  
-B. 5 meters  
-C. 10 meters  
-D. 20 meters  
+A. 3 meters
+B. 5 meters
+C. 10 meters
+D. 20 meters
 
-> **Answer: B. 5 meters**  
+> **Answer: B. 5 meters**
 > PHIVOLCS recommends a minimum 5-meter buffer zone reckoned from both sides of the fault trace or from the edge of the deformation zone. This is a geohazard-based setback, distinct from the PD 1096 building setbacks. Option A (3 m) confuses this with the PD 1067 urban river easement. Option C (10 m) and D (20 m) are overestimates or confusions with other buffer requirements.
 
 ### Question 2
 Under the NSCP Table 304.1, what is the presumptive allowable foundation pressure for **medium-dense sand** at the minimum footing dimension of 300 mm × 300 mm?
 
-A. 50 kPa  
-B. 100 kPa  
-C. 200 kPa  
-D. 300 kPa  
+A. 50 kPa
+B. 100 kPa
+C. 200 kPa
+D. 300 kPa
 
-> **Answer: B. 100 kPa**  
+> **Answer: B. 100 kPa**
 > NSCP 2015, Table 304.1, designates 100 kPa as the presumptive allowable bearing capacity for sand, silty sand, and clayey sand (medium-dense), at the baseline footing dimension of 300 mm width and 300 mm depth into natural grade. Option A (50 kPa) is for medium-stiff clay. Option D (300 kPa) is for sedimentary rock or well-cemented gravel. This value may be increased by 20% for each additional 300 mm of width/depth, up to 3× the designated value.
 
 ### Question 3
 Which of the following correctly describes the relationship between PD 1096 and the NSCP regarding soil bearing capacity for building permit applications?
 
-A. PD 1096 provides the bearing capacity values; the NSCP provides the administrative procedures.  
-B. PD 1096 RIRR requires submission of a geotechnical report; the NSCP provides the technical standards for determining bearing capacity.  
-C. The NSCP replaces PD 1096 for all foundation-related requirements.  
-D. PD 1096 and the NSCP are interchangeable for soil bearing capacity determination.  
+A. PD 1096 provides the bearing capacity values; the NSCP provides the administrative procedures.
+B. PD 1096 RIRR requires submission of a geotechnical report; the NSCP provides the technical standards for determining bearing capacity.
+C. The NSCP replaces PD 1096 for all foundation-related requirements.
+D. PD 1096 and the NSCP are interchangeable for soil bearing capacity determination.
 
-<LawCallout code="nbcp">
-
-Answer: B. PD 1096 RIRR requires submission of a geotechnical report; the NSCP provides the technical standards for determining bearing capacity.
-PD 1096 (National Building Code) through its RIRR mandates that a geotechnical investigation report be submitted with the building permit application. However, the actual technical methodologies, bearing capacity values, and calculation procedures are found in the NSCP. PD 1096 is the administrative framework; the NSCP is the engineering standard. They complement each other — neither replaces the other.
-
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0004 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="nbcp"
+- Text: Answer: B. PD 1096 RIRR requires submission of a geotechnical report; the NSCP provides the technical standards for determining bearing capacity. PD 1096 (National Building Code) through its RIRR mandates that a geotechnical investigation report be submitted with the building permit application. However, the actual technical methodologies, bearing capacity values, and calculation procedures are found in the NSCP. PD 1096 is the administrative framework; the NSCP is the engineering standard. They
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
 
 
-<ArticleMedia id="media-geological-hazards-image" type="image" caption="Geological Hazard Mapping — Fault Buffer, Liquefaction, and Landslide Zones" description="Composite site hazard map showing: active fault trace with 5m minimum no-build buffer (PHIVOLCS), liquefaction susceptibility zones (high/medium/low based on soil type and water table), landslide hazard overlay (slope >30° triggers), seismic zone factors per NSCP, and recommended geotechnical investigation borehole locations." />
+[SLATECAMP_UI_BLOCK:ui_0005 component="ArticleMedia" status="unknown"]
+Extracted summary:
+- Props: id="media-geological-hazards-image", type=true, caption="Geological Hazard Mapping — Fault Buffer, Liquefaction, and Landslide Zones", description=true, Composite=true, site=true, hazard=true, map=true, showing=true, active=true, fault=true, trace=true
+- Text: 30° triggers), seismic zone factors per NSCP, and recommended geotechnical investigation borehole locations." />
+[/SLATECAMP_UI_BLOCK]
 ## Cross‑References
 
 **Microclimate Analysis**, **Topography And Slope Analysis**, **Hydrology In Site Planning**, **Excavation Foundation And Veneer**

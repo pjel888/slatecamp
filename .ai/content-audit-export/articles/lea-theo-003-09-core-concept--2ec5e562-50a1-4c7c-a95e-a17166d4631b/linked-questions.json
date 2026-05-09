@@ -1,9 +1,113 @@
 {
   "article_id": "2ec5e562-50a1-4c7c-a95e-a17166d4631b",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:b745f016fb24edb4c93112777becab411ade0dc0bb104f037bc41b5374729636",
+  "linked_questions_hash": "sha256:5dba4703e813bac5e6b77f32b3612600de728af80c16df78d0fd1e046c80c382",
   "question_count": 13,
   "questions": [
+    {
+      "question_id": "ccf715a9-8537-4d49-837d-bc9f1fa379e4",
+      "article_id": "2ec5e562-50a1-4c7c-a95e-a17166d4631b",
+      "topic_id": "27f93b07-02d8-4035-8cea-739cf9ae6e50",
+      "text": "In designing a mixed-use development (retail, office, residential) for a 15-story building in Manila, how would Lynch's framework inform design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Paths (main vertical circulation, department separation), Edges (zone boundaries between retail/office/residential), Districts (three distinct functional zones), Nodes (main lobby, floor lobbies, key intersections), Landmarks (distinctive interior elements for orientation)"
+        },
+        {
+          "id": "b",
+          "text": "Design should maximize uniformity; Lynch's element diversity contradicts practical efficiency, which is often prioritized in urban settings"
+        },
+        {
+          "id": "c",
+          "text": "Lynch's framework cannot accommodate mixed-use development complexity, as it was originally intended for urban planning"
+        },
+        {
+          "id": "d",
+          "text": "Lynch's framework applies only to cities; it's inapplicable to single buildings, especially those with mixed-use functions"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Clear organization through element differentiation improves both experience and function",
+        "c": "Lynch's framework directly addresses complex programs through element organization",
+        "d": "Lynch's principles scale from buildings to cities; they're universally applicable",
+        "correct": "Lynch's framework applies across scales; organizing mixed-use buildings through five elements creates legible, memorable places",
+        "takeaway": "Lynch's framework applies across scales; organizing mixed-use buildings through five elements creates legible, memorable places."
+      },
+      "explanation": "Clear organization through element differentiation improves both experience and function Lynch's framework directly addresses complex programs through element organization Lynch's principles scale from buildings to cities; they're universally applicable Lynch's framework applies across scales; organizing mixed-use buildings through five elements creates legible, memorable places Lynch's framework applies across scales; organizing mixed-use buildings through five elements creates legible, memorable places.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-09-013",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-05-06T15:59:02.88216+00:00",
+      "content_hash": "sha256:a3983f10464418d53c3785d9764b81053ff9d026afdf68c7009bc0330e5a956a"
+    },
+    {
+      "question_id": "5228f039-c9b2-4f00-ad56-0d71da974b93",
+      "article_id": "2ec5e562-50a1-4c7c-a95e-a17166d4631b",
+      "topic_id": "27f93b07-02d8-4035-8cea-739cf9ae6e50",
+      "text": "Spatial legibility is best defined as:",
+      "options": [
+        {
+          "id": "a",
+          "text": "The ability to read signage and identify space functions through written labels, which is crucial for wayfinding in complex environments"
+        },
+        {
+          "id": "b",
+          "text": "The aesthetic beauty and visual appeal of a building's design, often contributing to the overall user experience and satisfaction"
+        },
+        {
+          "id": "c",
+          "text": "The clarity and comprehensibility of spatial organization enabling occupants to navigate, orient themselves, and understand environmental structure without disorientation"
+        },
+        {
+          "id": "d",
+          "text": "The efficiency of building mechanical systems in supporting circulation, ensuring that air flow and temperature control are maintained throughout the structure"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Signage is a tool supporting legibility; legibility doesn't depend on reading signs",
+        "b": "Aesthetic appeal is distinct from legibility, though both contribute to quality design",
+        "d": "Mechanical efficiency is unrelated to spatial clarity and navigation",
+        "correct": "Legibility is clarity of spatial organization supporting navigation and orientation; it encompasses physical clarity and psychological comfort",
+        "takeaway": "Legibility is clarity of spatial organization supporting navigation and orientation; it encompasses physical clarity and psychological comfort."
+      },
+      "explanation": "Signage is a tool supporting legibility; legibility doesn't depend on reading signs Aesthetic appeal is distinct from legibility, though both contribute to quality design Mechanical efficiency is unrelated to spatial clarity and navigation Legibility is clarity of spatial organization supporting navigation and orientation; it encompasses physical clarity and psychological comfort Legibility is clarity of spatial organization supporting navigation and orientation; it encompasses physical clarity and psychological comfort.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-09-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-05-06T15:59:02.056539+00:00",
+      "content_hash": "sha256:7361e5304691636026dd6d08196008d130c7d99ed236024ee15761819df01808"
+    },
     {
       "question_id": "d94f11d7-e15b-4e07-b745-316c466a0a93",
       "article_id": "2ec5e562-50a1-4c7c-a95e-a17166d4631b",
@@ -109,58 +213,6 @@
       "content_hash": "sha256:4945c12502856d3a4287b72b4200dfe864fda813537716f9b3fba665c918e4f0"
     },
     {
-      "question_id": "5228f039-c9b2-4f00-ad56-0d71da974b93",
-      "article_id": "2ec5e562-50a1-4c7c-a95e-a17166d4631b",
-      "topic_id": "27f93b07-02d8-4035-8cea-739cf9ae6e50",
-      "text": "Spatial legibility is best defined as:",
-      "options": [
-        {
-          "id": "a",
-          "text": "The ability to read signage and identify space functions through written labels, which is crucial for wayfinding in complex environments"
-        },
-        {
-          "id": "b",
-          "text": "The aesthetic beauty and visual appeal of a building's design, often contributing to the overall user experience and satisfaction"
-        },
-        {
-          "id": "c",
-          "text": "The clarity and comprehensibility of spatial organization enabling occupants to navigate, orient themselves, and understand environmental structure without disorientation"
-        },
-        {
-          "id": "d",
-          "text": "The efficiency of building mechanical systems in supporting circulation, ensuring that air flow and temperature control are maintained throughout the structure"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Signage is a tool supporting legibility; legibility doesn't depend on reading signs",
-        "b": "Aesthetic appeal is distinct from legibility, though both contribute to quality design",
-        "d": "Mechanical efficiency is unrelated to spatial clarity and navigation",
-        "correct": "Legibility is clarity of spatial organization supporting navigation and orientation; it encompasses physical clarity and psychological comfort",
-        "takeaway": "Legibility is clarity of spatial organization supporting navigation and orientation; it encompasses physical clarity and psychological comfort."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [
-        "DEF"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-003-09-001",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:30404307da1e702d66e7d67286327b2478c407689faace7a0345db14bc1c083c"
-    },
-    {
       "question_id": "70da2952-4697-4bd8-9d43-9bf2e81ae3cb",
       "article_id": "2ec5e562-50a1-4c7c-a95e-a17166d4631b",
       "topic_id": "27f93b07-02d8-4035-8cea-739cf9ae6e50",
@@ -195,7 +247,7 @@
         "correct": "Visibility supports legibility but doesn't ensure it; confused organizational logic, inconsistent design, or unclear hierarchies create disorientation despite visibility",
         "takeaway": "Visibility supports legibility but doesn't ensure it; confused organizational logic, inconsistent design, or unclear hierarchies create disorientation despite visibility."
       },
-      "explanation": null,
+      "explanation": "Visibility is valuable; enclosed spaces can be legible with clear organization Signage supplements clear organization; it cannot create legibility from organizational confusion Size doesn't determine legibility; large buildings can be highly legible with clear organization Visibility supports legibility but doesn't ensure it; confused organizational logic, inconsistent design, or unclear hierarchies create disorientation despite visibility Visibility supports legibility but doesn't ensure it; confused organizational logic, inconsistent design, or unclear hierarchies create disorientation despite visibility.",
       "code_citation": null,
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
@@ -209,8 +261,8 @@
       "model_id": "ALE-THEO-003-09-012",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:28ddd905586d0dcf38481b7c5ad27b9ec5c67e17fcb8542006fc2ba19c3029d2"
+      "updated_at": "2026-05-06T15:59:02.181054+00:00",
+      "content_hash": "sha256:c6d7742e9f1dcdd75871e90860564a95bf7672230799b45f3247bfd1a27d3853"
     },
     {
       "question_id": "d61a9c8e-36e8-4d5f-89c9-a421e4f9fb1d",
@@ -247,7 +299,7 @@
         "correct": "Poor organization despite signage indicates failures in all Lynch elements: unclear paths, undefined districts, unmarked junctions, and inadequate landmarks",
         "takeaway": "Poor organization despite signage indicates failures in all Lynch elements: unclear paths, undefined districts, unmarked junctions, and inadequate landmarks."
       },
-      "explanation": null,
+      "explanation": "Signage cannot compensate for poor spatial organization; comprehensive organization precedes effective signage Multiple element failures are evident from signage insufficiency Landmarks aid navigation; too many is unlikely; more likely is insufficient or unclear landmarks Poor organization despite signage indicates failures in all Lynch elements: unclear paths, undefined districts, unmarked junctions, and inadequate landmarks Poor organization despite signage indicates failures in all Lynch elements: unclear paths, undefined districts, unmarked junctions, and inadequate landmarks.",
       "code_citation": null,
       "bloom_level": "apply",
       "application_context": "design_application",
@@ -261,8 +313,8 @@
       "model_id": "ALE-THEO-003-09-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:5a4288c99285482af6a29f2a37cb948f76e5f9288c090f607b8a7b38e9226cd1"
+      "updated_at": "2026-05-06T15:59:02.295273+00:00",
+      "content_hash": "sha256:fd45fe76a8eb52f842f10027c1bf3019b40c10de0ec64fc7189646c398050827"
     },
     {
       "question_id": "8968702c-6522-4cd7-b7a4-164e2a360053",
@@ -299,7 +351,7 @@
         "correct": "Landmarks are distinctive visible features serving as external reference points; occupants view them from distance for orientation",
         "takeaway": "Landmarks are distinctive visible features serving as external reference points; occupants view them from distance for orientation."
       },
-      "explanation": null,
+      "explanation": "This describes edges, not landmarks This describes nodes, not landmarks This describes paths, not landmarks Landmarks are distinctive visible features serving as external reference points; occupants view them from distance for orientation Landmarks are distinctive visible features serving as external reference points; occupants view them from distance for orientation.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -313,8 +365,8 @@
       "model_id": "ALE-THEO-003-09-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:2fc41d2c4b28e7fd16e478cd4e4326506336a4507ada439cae936cc7e85d7163"
+      "updated_at": "2026-05-06T15:59:02.407187+00:00",
+      "content_hash": "sha256:c84750df2572e8465d6ac5dedc61eb67e9d1d52e461bcd518d3e85b864d835b5"
     },
     {
       "question_id": "48fc4ad7-184f-4de2-8de4-6068e76bd60e",
@@ -403,7 +455,7 @@
         "correct": "Districts are coherent areas with characteristic identity and internal consistency—neighborhoods, sectors, functional zones",
         "takeaway": "Districts are coherent areas with characteristic identity and internal consistency—neighborhoods, sectors, functional zones."
       },
-      "explanation": null,
+      "explanation": "This describes paths, not districts This describes landmarks, not districts This describes edges, not districts Districts are coherent areas with characteristic identity and internal consistency—neighborhoods, sectors, functional zones Districts are coherent areas with characteristic identity and internal consistency—neighborhoods, sectors, functional zones.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -417,8 +469,8 @@
       "model_id": "ALE-THEO-003-09-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:8022a520e00b6be2962a1dfaf71480fc722fd78ef8cc398d31ca0bee0ae9ec7d"
+      "updated_at": "2026-05-06T15:59:02.519845+00:00",
+      "content_hash": "sha256:28ee6353e0100d3cf3b1b13ba717dac7014ef759fdb1d1776178dfaebad8fb2f"
     },
     {
       "question_id": "d3cbd5d7-ea62-4686-bcef-bc45720fda6c",
@@ -455,7 +507,7 @@
         "correct": "Lynch elements create legibility through organization: paths guide movement, districts cluster functions, nodes mark junctions, figure-ground distinguishes primary from secondary spaces",
         "takeaway": "Lynch elements create legibility through organization: paths guide movement, districts cluster functions, nodes mark junctions, figure-ground distinguishes primary from secondary spaces."
       },
-      "explanation": null,
+      "explanation": "Signage supplements organization; primary clarity comes from space design Open plans require careful organization; they're not inherently legible Density without organization creates confusion; intentional design creates legibility Lynch elements create legibility through organization: paths guide movement, districts cluster functions, nodes mark junctions, figure-ground distinguishes primary from secondary spaces Lynch elements create legibility through organization: paths guide movement, districts cluster functions, nodes mark junctions, figure-ground distinguishes primary from secondary spaces.",
       "code_citation": null,
       "bloom_level": "apply",
       "application_context": "design_application",
@@ -469,8 +521,8 @@
       "model_id": "ALE-THEO-003-09-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:bd9c624c7a414ce0e363f30617068197eb2d38c896ddcc7495609b25ab16f08a"
+      "updated_at": "2026-05-06T15:59:02.641639+00:00",
+      "content_hash": "sha256:0620017db6ce7ee1658aa88f89da5fd1c0c5fb2f8f2eac163359ac5fd599bfe3"
     },
     {
       "question_id": "2b388bf3-a459-4802-a604-1a8d2cc68d70",
@@ -507,7 +559,7 @@
         "correct": "Nodes are junctions and activity concentrations serving as mental map anchors—plazas, intersections, central atria",
         "takeaway": "Nodes are junctions and activity concentrations serving as mental map anchors—plazas, intersections, central atria."
       },
-      "explanation": null,
+      "explanation": "This describes edges, not nodes This describes landmarks, not nodes This describes districts, not nodes Nodes are junctions and activity concentrations serving as mental map anchors—plazas, intersections, central atria Nodes are junctions and activity concentrations serving as mental map anchors—plazas, intersections, central atria.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -521,60 +573,8 @@
       "model_id": "ALE-THEO-003-09-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:3dcbeb9c390a4d84b9bcc8f0d17c9c91d342faf32b2e808f279b1ec8c1534eac"
-    },
-    {
-      "question_id": "ccf715a9-8537-4d49-837d-bc9f1fa379e4",
-      "article_id": "2ec5e562-50a1-4c7c-a95e-a17166d4631b",
-      "topic_id": "27f93b07-02d8-4035-8cea-739cf9ae6e50",
-      "text": "In designing a mixed-use development (retail, office, residential) for a 15-story building in Manila, how would Lynch's framework inform design?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Paths (main vertical circulation, department separation), Edges (zone boundaries between retail/office/residential), Districts (three distinct functional zones), Nodes (main lobby, floor lobbies, key intersections), Landmarks (distinctive interior elements for orientation)"
-        },
-        {
-          "id": "b",
-          "text": "Design should maximize uniformity; Lynch's element diversity contradicts practical efficiency, which is often prioritized in urban settings"
-        },
-        {
-          "id": "c",
-          "text": "Lynch's framework cannot accommodate mixed-use development complexity, as it was originally intended for urban planning"
-        },
-        {
-          "id": "d",
-          "text": "Lynch's framework applies only to cities; it's inapplicable to single buildings, especially those with mixed-use functions"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "b": "Clear organization through element differentiation improves both experience and function",
-        "c": "Lynch's framework directly addresses complex programs through element organization",
-        "d": "Lynch's principles scale from buildings to cities; they're universally applicable",
-        "correct": "Lynch's framework applies across scales; organizing mixed-use buildings through five elements creates legible, memorable places",
-        "takeaway": "Lynch's framework applies across scales; organizing mixed-use buildings through five elements creates legible, memorable places."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "apply",
-      "application_context": "design_application",
-      "practice_context": [
-        "APP"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-003-09-013",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:f0bcd5a13ad7b69b90f580aba9b3326d4224c57e0b00bff732752f44528a0d55"
+      "updated_at": "2026-05-06T15:59:02.75812+00:00",
+      "content_hash": "sha256:47c0af4e96a433fb4e08c29fb87e133ea99f55436dae08bc428013c548b416aa"
     },
     {
       "question_id": "61fd148f-c7d2-405f-96b5-84380bb20ff2",

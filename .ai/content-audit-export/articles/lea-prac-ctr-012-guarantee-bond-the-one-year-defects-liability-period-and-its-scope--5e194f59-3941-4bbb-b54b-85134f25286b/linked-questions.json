@@ -1,7 +1,7 @@
 {
   "article_id": "5e194f59-3941-4bbb-b54b-85134f25286b",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:37fb1f3aef664e653f2ce6c59f8d9942b2d3a6865976a5b4c11559ef496a5ee1",
+  "linked_questions_hash": "sha256:13c768fd24273eaec28d61ce39f0f32a03a6fdf3e5e13fba8438be219ecf7691",
   "question_count": 10,
   "questions": [
     {
@@ -39,7 +39,7 @@
         "correct": "Guarantee Bond covers Contractor's execution defects but excludes design defects, which are Architect's responsibility.",
         "takeaway": "Guarantee Bond scope: covers execution defects; excludes design defects (Architect's responsibility)."
       },
-      "explanation": null,
+      "explanation": "Wrongly conflates the two; the distinction determines whether Contractor or Architect bears responsibility. Wrongly assumes blanket execution coverage; excluded execution defects (Owner-caused, wear) are still excluded. Wrongly treats both as covered; design defects are explicitly excluded from Guarantee Bond. Guarantee Bond covers Contractor's execution defects but excludes design defects, which are Architect's responsibility. Guarantee Bond scope: covers execution defects; excludes design defects (Architect's responsibility).",
       "code_citation": "UAP Doc 301",
       "bloom_level": "analyze",
       "application_context": "client_scenario",
@@ -51,8 +51,8 @@
       "model_id": "ALE-PRAC-CTR-012-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:ff9067dc90203cdfca3a5812725989d60f6c5a2027afcf7e106c0d4d8997ec5c"
+      "updated_at": "2026-05-06T15:55:58.225681+00:00",
+      "content_hash": "sha256:721c77b1a8fb07dc50379fa1c6b49e647a16b5df02cc57f9a4c86fe6ceee6fca"
     },
     {
       "question_id": "17fe5f8c-c0d3-4cfc-a851-af5beb974412",

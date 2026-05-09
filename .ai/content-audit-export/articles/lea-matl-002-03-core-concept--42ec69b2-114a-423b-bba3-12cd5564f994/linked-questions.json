@@ -1,9 +1,59 @@
 {
   "article_id": "42ec69b2-114a-423b-bba3-12cd5564f994",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:51502a49a1f1930926605dc3bcdb51656bb90867adbc9ed7eb852758ed75d335",
+  "linked_questions_hash": "sha256:022988b267ebe974db02933ba56276a738be38726ee6264ecdd0e51bf876b643",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "01cbd203-5490-4c8c-acab-8a7467a1a6b3",
+      "article_id": "42ec69b2-114a-423b-bba3-12cd5564f994",
+      "topic_id": "579c04dc-1952-4e43-a64f-b299373ae1c1",
+      "text": "Structural clay brick (ASTM C62 Grade SW) has a minimum compressive strength of 3,000 psi (20.7 MPa) average, which is ___ than concrete hollow block (ASTM C90).",
+      "options": [
+        {
+          "id": "a",
+          "text": "3,000 psi (20.7 MPa); higher"
+        },
+        {
+          "id": "b",
+          "text": "2,000 psi (13.8 MPa); equal"
+        },
+        {
+          "id": "c",
+          "text": "1,500 psi (10.3 MPa); lower"
+        },
+        {
+          "id": "d",
+          "text": "2,500 psi (17.2 MPa); slightly lower"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "2,000 psi is C90 concrete block minimum, not clay brick.",
+        "c": "1,500 psi is below both standards.",
+        "d": "2,500 psi is below the 3,000 psi clay brick minimum.",
+        "correct": "ASTM C62 clay brick minimum is 3,000 psi (20.7 MPa) average, compared to 2,000 psi (13.8 MPa) for C90 concrete blocks. Clay brick is stronger due to high-temperature firing.",
+        "takeaway": "Know the strength ranking: Clay brick (3,000 psi) > Concrete block C90 (2,000 psi) > Non-loadbearing C129 (600 psi)."
+      },
+      "explanation": "2,000 psi is C90 concrete block minimum, not clay brick. 1,500 psi is below both standards. 2,500 psi is below the 3,000 psi clay brick minimum. ASTM C62 clay brick minimum is 3,000 psi (20.7 MPa) average, compared to 2,000 psi (13.8 MPa) for C90 concrete blocks. Clay brick is stronger due to high-temperature firing. Know the strength ranking: Clay brick (3,000 psi) > Concrete block C90 (2,000 psi) > Non-loadbearing C129 (600 psi).",
+      "code_citation": "ASTM C62 Standard; ASTM C90 Standard",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-002-03-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:26.09657+00:00",
+      "updated_at": "2026-05-06T15:46:04.190885+00:00",
+      "content_hash": "sha256:e713d5f1767745227c7a19d2681e894f2f59668fc7474fdf92e69a89f3d28ada"
+    },
     {
       "question_id": "def5f431-b411-4612-8e71-1545d12ea15d",
       "article_id": "42ec69b2-114a-423b-bba3-12cd5564f994",
@@ -139,7 +189,7 @@
         "correct": "Efflorescence is white mineral deposits (calcium carbonate, sodium sulfate) that migrate through the unit with moisture and evaporate on the surface. Prevention requires good drainage and sealed joints to limit moisture penetration.",
         "takeaway": "Efflorescence is aesthetic but indicates excess moisture. It does not reduce structural capacity but signals drainage or waterproofing deficiency."
       },
-      "explanation": null,
+      "explanation": "Freeze-thaw is not a cause in tropical Philippines; efflorescence occurs without frost. Mortar joint failure is not the cause; efflorescence indicates moisture flow, not joint failure. Cracking is not the cause; efflorescence can occur in uncracked units. Efflorescence is white mineral deposits (calcium carbonate, sodium sulfate) that migrate through the unit with moisture and evaporate on the surface. Prevention requires good drainage and sealed joints to limit moisture penetration. Efflorescence is aesthetic but indicates excess moisture. It does not reduce structural capacity but signals drainage or waterproofing deficiency.",
       "code_citation": "NSCP 2015 Section 2402 (masonry design); moisture management",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
@@ -151,8 +201,8 @@
       "model_id": "ALE-MATL-002-03-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:26.09657+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:e6c36bb3699b8f46f7f09f70f0c68a1a9055fb6fd049ef3d90731322f0f0d091"
+      "updated_at": "2026-05-06T15:46:04.061972+00:00",
+      "content_hash": "sha256:5cd2651128dfe10ec891545a9d2663ac178c090f2ad2bcc074f2844abc70371d"
     },
     {
       "question_id": "a35b7d04-f43d-4be9-9b56-4c8319a303f1",
@@ -355,56 +405,6 @@
       "content_hash": "sha256:9e0655c7337b2fac173d859f5165d26ee9993cfcc24ead706e1660bff263fd24"
     },
     {
-      "question_id": "01cbd203-5490-4c8c-acab-8a7467a1a6b3",
-      "article_id": "42ec69b2-114a-423b-bba3-12cd5564f994",
-      "topic_id": "579c04dc-1952-4e43-a64f-b299373ae1c1",
-      "text": "Structural clay brick (ASTM C62 Grade SW) has a minimum compressive strength of 3,000 psi (20.7 MPa) average, which is ___ than concrete hollow block (ASTM C90).",
-      "options": [
-        {
-          "id": "a",
-          "text": "3,000 psi (20.7 MPa); higher"
-        },
-        {
-          "id": "b",
-          "text": "2,000 psi (13.8 MPa); equal"
-        },
-        {
-          "id": "c",
-          "text": "1,500 psi (10.3 MPa); lower"
-        },
-        {
-          "id": "d",
-          "text": "2,500 psi (17.2 MPa); slightly lower"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "b": "2,000 psi is C90 concrete block minimum, not clay brick.",
-        "c": "1,500 psi is below both standards.",
-        "d": "2,500 psi is below the 3,000 psi clay brick minimum.",
-        "correct": "ASTM C62 clay brick minimum is 3,000 psi (20.7 MPa) average, compared to 2,000 psi (13.8 MPa) for C90 concrete blocks. Clay brick is stronger due to high-temperature firing.",
-        "takeaway": "Know the strength ranking: Clay brick (3,000 psi) > Concrete block C90 (2,000 psi) > Non-loadbearing C129 (600 psi)."
-      },
-      "explanation": null,
-      "code_citation": "ASTM C62 Standard; ASTM C90 Standard",
-      "bloom_level": "understand",
-      "application_context": "recall",
-      "practice_context": [],
-      "difficulty": 0.3,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-MATL-002-03-006",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:26.09657+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:b03a3c1fea7305f35a516209548ed13a2d7dfae9f4bc35612696a91b0ab1b373"
-    },
-    {
       "question_id": "1d4f94c0-97a0-4541-ae03-978b7f05fef0",
       "article_id": "42ec69b2-114a-423b-bba3-12cd5564f994",
       "topic_id": "579c04dc-1952-4e43-a64f-b299373ae1c1",
@@ -439,7 +439,7 @@
         "correct": "Net area strength ÷ Gross area strength = Solid percentage. 9 ÷ 15 = 0.6 = 60% solid, which means 40% void. This is typical for hollow blocks.",
         "takeaway": "Understand the relationship: (Gross strength / Net strength) = Solid percentage. If net is 1.67× gross, voids are approximately 40%."
       },
-      "explanation": null,
+      "explanation": "10% would imply very dense concrete, not typical for hollow blocks. 60% void is too high; most hollow blocks are 40—50% void. 25% void is lower than typical for standard CHB. Net area strength ÷ Gross area strength = Solid percentage. 9 ÷ 15 = 0.6 = 60% solid, which means 40% void. This is typical for hollow blocks. Understand the relationship: (Gross strength / Net strength) = Solid percentage. If net is 1.67× gross, voids are approximately 40%.",
       "code_citation": "ASTM C90 compressive strength testing methods",
       "bloom_level": "apply",
       "application_context": "design_application",
@@ -451,8 +451,8 @@
       "model_id": "ALE-MATL-002-03-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:26.09657+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:6bcae1f421fd19d4f38bce7f10d4d8beba7493eaa1dd00471ce73bb5e86cf0e9"
+      "updated_at": "2026-05-06T15:46:04.355817+00:00",
+      "content_hash": "sha256:3ef337da4954d88129617a09830557822df8f080b5f0a89345bd270d20c72ae5"
     },
     {
       "question_id": "320af392-aa3a-437d-81dd-e87e461b6931",

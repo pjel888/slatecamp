@@ -1,9 +1,217 @@
 {
   "article_id": "1254cb0d-27ec-4a02-8ea4-8f37dcd44dbd",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:65dcae7750314e4f53d16518b12cef3923b2c3352be006fc7c8190d7af2b2700",
+  "linked_questions_hash": "sha256:23aa7340041930a5fcce18765646c763fa27d4925782020332ebe866a69a7476",
   "question_count": 12,
   "questions": [
+    {
+      "question_id": "0ca4c613-765f-420d-b44f-e50519469ae0",
+      "article_id": "1254cb0d-27ec-4a02-8ea4-8f37dcd44dbd",
+      "topic_id": "5ca084a4-4a1b-4996-bfcb-7a3825906c6e",
+      "text": "Which iconic performing arts complex, designed by Danish architect Jørn Utzon and completed in 1973 on Bennelong Point in Sydney Harbour, features interlocking shell-vault geometry and white glazed tile cladding?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Parliament House, Canberra"
+        },
+        {
+          "id": "b",
+          "text": "Sydney Opera House"
+        },
+        {
+          "id": "c",
+          "text": "Colonial-Era Government Building (Singapore)"
+        },
+        {
+          "id": "d",
+          "text": "Samoan Fale meeting house"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Parliament House is a 1988 postmodern government building in Canberra, not the Opera House.",
+        "c": "Colonial-era government buildings are 19th–early 20th century administrative structures with verandas.",
+        "d": "Fale is a Samoan traditional meeting house, not a modern performing arts complex.",
+        "correct": "Sydney Opera House is explicitly identified as a 1973 performing arts complex designed by Danish architect Jørn Utzon, featuring shell-vault geometry, interlocking vaults, and white glazed tile cladding on Bennelong Point.",
+        "takeaway": "Sydney Opera House is explicitly identified as a 1973 performing arts complex designed by Danish architect Jørn Utzon, featuring shell-vault geometry, interlocking vaults, and white glazed tile cladding on Bennelong Point."
+      },
+      "explanation": "Parliament House is a 1988 postmodern government building in Canberra, not the Opera House. Colonial-era government buildings are 19th–early 20th century administrative structures with verandas. Fale is a Samoan traditional meeting house, not a modern performing arts complex. Sydney Opera House is explicitly identified as a 1973 performing arts complex designed by Danish architect Jørn Utzon, featuring shell-vault geometry, interlocking vaults, and white glazed tile cladding on Bennelong Point. Sydney Opera House is explicitly identified as a 1973 performing arts complex designed by Danish architect Jørn Utzon, featuring shell-vault geometry, interlocking vaults, and white glazed tile cladding on Bennelong Point.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "ID"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-007-06-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.518466+00:00",
+      "updated_at": "2026-05-06T14:56:50.272221+00:00",
+      "content_hash": "sha256:eac9d415130aa09d5d9c3d535b47b07020789026d3c97c5cacccf72a963dd67b"
+    },
+    {
+      "question_id": "51d05f87-c4f5-484c-af3f-08b3e318c421",
+      "article_id": "1254cb0d-27ec-4a02-8ea4-8f37dcd44dbd",
+      "topic_id": "5ca084a4-4a1b-4996-bfcb-7a3825906c6e",
+      "text": "A traditional Pacific island meeting house features a post-and-beam timber frame with minimal walls, open-sided pavilion design maximizing airflow, steep roof pitch shedding monsoon rain, deep overhanging eaves providing shade, and elevated stone platforms enabling underdraft cooling. This describes which vernacular typology?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dougong bracket pavilion, known for its intricate joinery and historical significance in East Asian architecture"
+        },
+        {
+          "id": "b",
+          "text": "Siheyuan courtyard house, characterized by its enclosed courtyard and traditional Chinese layout"
+        },
+        {
+          "id": "c",
+          "text": "Traditional Pacific island meeting house (fale, bure, wharenui)"
+        },
+        {
+          "id": "d",
+          "text": "Vietnamese tube house, noted for its narrow frontage and deep, elongated plan"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Dougong is a Chinese bracket system, not a Pacific vernacular.",
+        "b": "Siheyuan is a Chinese four-pavilion courtyard, not a Pacific open-sided pavilion.",
+        "d": "Tube house is Vietnamese colonial-urban, not Pacific island vernacular.",
+        "correct": "The article explicitly describes Pacific island meeting houses (fale in Samoa, bure in Fiji, wharenui in Maori New Zealand) featuring post-and-beam frames, open-sided pavilions, steep roofs, deep eaves, and elevated stone platforms for tropical climate adaptation.",
+        "takeaway": "The article explicitly describes Pacific island meeting houses (fale in Samoa, bure in Fiji, wharenui in Maori New Zealand) featuring post-and-beam frames, open-sided pavilions, steep roofs, deep eaves, and elevated stone platforms for tropical climate adaptation."
+      },
+      "explanation": "Dougong is a Chinese bracket system, not a Pacific vernacular. Siheyuan is a Chinese four-pavilion courtyard, not a Pacific open-sided pavilion. Tube house is Vietnamese colonial-urban, not Pacific island vernacular. The article explicitly describes Pacific island meeting houses (fale in Samoa, bure in Fiji, wharenui in Maori New Zealand) featuring post-and-beam frames, open-sided pavilions, steep roofs, deep eaves, and elevated stone platforms for tropical climate adaptation. The article explicitly describes Pacific island meeting houses (fale in Samoa, bure in Fiji, wharenui in Maori New Zealand) featuring post-and-beam frames, open-sided pavilions, steep roofs, deep eaves, and elevated stone platforms for tropical climate adaptation.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "recall",
+      "practice_context": [
+        "DESC"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-007-06-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.518466+00:00",
+      "updated_at": "2026-05-06T14:56:50.390312+00:00",
+      "content_hash": "sha256:b33d352362c14230d8022451096b765d0e0271eb050c0d99152185c5f1ad6839"
+    },
+    {
+      "question_id": "962bacf3-b981-4aae-8b4b-23bcd4e6dd79",
+      "article_id": "1254cb0d-27ec-4a02-8ea4-8f37dcd44dbd",
+      "topic_id": "5ca084a4-4a1b-4996-bfcb-7a3825906c6e",
+      "text": "What materials compose traditional Pacific island meeting houses (flea, bure, wharenui), and what does material choice indicate about cultural values?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Imported masonry and glazed tiles reflecting cosmopolitan wealth and external influences"
+        },
+        {
+          "id": "b",
+          "text": "Tapa cloth, coconut thatch, and lashed timber—locally available materials—indicating sophisticated knowledge encoded over millennia and cultural values of sustainability."
+        },
+        {
+          "id": "c",
+          "text": "Steel and concrete, demonstrating technological advancement and modern architectural trends"
+        },
+        {
+          "id": "d",
+          "text": "Fired brick and plaster, adopted from Chinese architecture and symbolizing historical trade connections"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Traditional Pacific architecture prioritizes local materials, not imports.",
+        "c": "Vernacular traditions predate industrial materials; these structures represent pre-industrial material mastery.",
+        "d": "Traditional Pacific architecture is not derived from Chinese traditions.",
+        "correct": "The article explicitly states that Pacific vernacular employs tapa cloth, coconut thatch, and lashed timber—locally available materials—representing millennia of refined climate adaptation and material innovation.",
+        "takeaway": "The article explicitly states that Pacific vernacular employs tapa cloth, coconut thatch, and lashed timber—locally available materials—representing millennia of refined climate adaptation and material innovation."
+      },
+      "explanation": "Traditional Pacific architecture prioritizes local materials, not imports. Vernacular traditions predate industrial materials; these structures represent pre-industrial material mastery. Traditional Pacific architecture is not derived from Chinese traditions. The article explicitly states that Pacific vernacular employs tapa cloth, coconut thatch, and lashed timber—locally available materials—representing millennia of refined climate adaptation and material innovation. The article explicitly states that Pacific vernacular employs tapa cloth, coconut thatch, and lashed timber—locally available materials—representing millennia of refined climate adaptation and material innovation.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "ST"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-007-06-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.518466+00:00",
+      "updated_at": "2026-05-06T14:56:50.512302+00:00",
+      "content_hash": "sha256:7af695963174db98f1c52c1cf90ef07513f9628f73e2d9afbe2116638096c048"
+    },
+    {
+      "question_id": "2b316613-7db8-42c0-abb4-5633e3c30190",
+      "article_id": "1254cb0d-27ec-4a02-8ea4-8f37dcd44dbd",
+      "topic_id": "5ca084a4-4a1b-4996-bfcb-7a3825906c6e",
+      "text": "A common exam mistake misidentifies the Sydney Opera House's shell geometry as arbitrary or decorative. What is the accurate relationship between form and function?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The shells are purely sculptural, unrelated to structural requirements, and serve no functional purpose in load distribution."
+        },
+        {
+          "id": "b",
+          "text": "The shells solve a critical structural problem: spherical geometry distributes loads across curved surfaces, allowing large interior spans without internal columns; this was Utzon's engineering breakthrough."
+        },
+        {
+          "id": "c",
+          "text": "The shells are decorative; the actual structure is hidden steel framing beneath, which supports the entire load independently."
+        },
+        {
+          "id": "d",
+          "text": "Shell forms were chosen randomly from various mathematical possibilities, without consideration for structural efficiency."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The shells are structurally necessary, not merely sculptural.",
+        "c": "Shell vaults are the primary structure, not decoration over hidden steel.",
+        "d": "Shell geometry derives from a single mathematical principle, not random selection.",
+        "correct": "The article explicitly warns against treating shells as arbitrary or decorative, emphasizing that spherical geometry is Utzon's engineering breakthrough solving structural problems and enabling large spans.",
+        "takeaway": "The article explicitly warns against treating shells as arbitrary or decorative, emphasizing that spherical geometry is Utzon's engineering breakthrough solving structural problems and enabling large spans."
+      },
+      "explanation": "The shells are structurally necessary, not merely sculptural. Shell vaults are the primary structure, not decoration over hidden steel. Shell geometry derives from a single mathematical principle, not random selection. The article explicitly warns against treating shells as arbitrary or decorative, emphasizing that spherical geometry is Utzon's engineering breakthrough solving structural problems and enabling large spans. The article explicitly warns against treating shells as arbitrary or decorative, emphasizing that spherical geometry is Utzon's engineering breakthrough solving structural problems and enabling large spans.",
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-007-06-011",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.518466+00:00",
+      "updated_at": "2026-05-06T14:56:50.7427+00:00",
+      "content_hash": "sha256:d828ac279ebc8d4069d6834fcc713d06de96942517da2ac040ab23a753856ae4"
+    },
     {
       "question_id": "f22241db-45ff-48ea-95de-ebcc12d9dcb3",
       "article_id": "1254cb0d-27ec-4a02-8ea4-8f37dcd44dbd",
@@ -195,7 +403,7 @@
         "correct": "The article explicitly explains that Utzon's innovation derives all major vault surfaces from spherical sections of a single sphere, solving structural redundancy and enabling large interior spans without columns.",
         "takeaway": "The article explicitly explains that Utzon's innovation derives all major vault surfaces from spherical sections of a single sphere, solving structural redundancy and enabling large interior spans without columns."
       },
-      "explanation": null,
+      "explanation": "The article emphasizes the shells are not arbitrary; they solve critical structural problems. Steel is not the primary structural system; shell vaults transfer loads across curved surfaces. The geometric system differs entirely from Chinese bracket modules; it uses spherical geometry. The article explicitly explains that Utzon's innovation derives all major vault surfaces from spherical sections of a single sphere, solving structural redundancy and enabling large interior spans without columns. The article explicitly explains that Utzon's innovation derives all major vault surfaces from spherical sections of a single sphere, solving structural redundancy and enabling large interior spans without columns.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "code_interpretation",
@@ -209,8 +417,8 @@
       "model_id": "ALE-HIST-007-06-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:24.518466+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:86f6d0b88fd3f10c5cfdde4f1729f9a30045a568343f168f14fb171cd91fc624"
+      "updated_at": "2026-05-06T14:56:50.159599+00:00",
+      "content_hash": "sha256:66a306318029facadf88ef7a8320fffc2be02fc27764dfb037d25219d6dccfb5"
     },
     {
       "question_id": "a5383835-fe42-44c3-a455-c7d6e2efdab8",
@@ -265,58 +473,6 @@
       "content_hash": "sha256:d936bf2355f4d7af2411110260f869aedfb86e6024dfbe961a64c76d91196574"
     },
     {
-      "question_id": "0ca4c613-765f-420d-b44f-e50519469ae0",
-      "article_id": "1254cb0d-27ec-4a02-8ea4-8f37dcd44dbd",
-      "topic_id": "5ca084a4-4a1b-4996-bfcb-7a3825906c6e",
-      "text": "Which iconic performing arts complex, designed by Danish architect Jørn Utzon and completed in 1973 on Bennelong Point in Sydney Harbour, features interlocking shell-vault geometry and white glazed tile cladding?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Parliament House, Canberra"
-        },
-        {
-          "id": "b",
-          "text": "Sydney Opera House"
-        },
-        {
-          "id": "c",
-          "text": "Colonial-Era Government Building (Singapore)"
-        },
-        {
-          "id": "d",
-          "text": "Samoan Fale meeting house"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Parliament House is a 1988 postmodern government building in Canberra, not the Opera House.",
-        "c": "Colonial-era government buildings are 19th–early 20th century administrative structures with verandas.",
-        "d": "Fale is a Samoan traditional meeting house, not a modern performing arts complex.",
-        "correct": "Sydney Opera House is explicitly identified as a 1973 performing arts complex designed by Danish architect Jørn Utzon, featuring shell-vault geometry, interlocking vaults, and white glazed tile cladding on Bennelong Point.",
-        "takeaway": "Sydney Opera House is explicitly identified as a 1973 performing arts complex designed by Danish architect Jørn Utzon, featuring shell-vault geometry, interlocking vaults, and white glazed tile cladding on Bennelong Point."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [
-        "ID"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-HIST-007-06-001",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:24.518466+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:d0ce94fcbcabf5c5c001ae725f87f822b4f3f05643cc0f04d46e321dfcf1f8ba"
-    },
-    {
       "question_id": "fc0e03b6-0586-4468-ba03-4d73da43bf92",
       "article_id": "1254cb0d-27ec-4a02-8ea4-8f37dcd44dbd",
       "topic_id": "5ca084a4-4a1b-4996-bfcb-7a3825906c6e",
@@ -369,110 +525,6 @@
       "content_hash": "sha256:06ddfcc1bc44b2e2f0a272cd3917ac03dac18075aeb9b9b48c936a0da4ae19c3"
     },
     {
-      "question_id": "51d05f87-c4f5-484c-af3f-08b3e318c421",
-      "article_id": "1254cb0d-27ec-4a02-8ea4-8f37dcd44dbd",
-      "topic_id": "5ca084a4-4a1b-4996-bfcb-7a3825906c6e",
-      "text": "A traditional Pacific island meeting house features a post-and-beam timber frame with minimal walls, open-sided pavilion design maximizing airflow, steep roof pitch shedding monsoon rain, deep overhanging eaves providing shade, and elevated stone platforms enabling underdraft cooling. This describes which vernacular typology?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Dougong bracket pavilion, known for its intricate joinery and historical significance in East Asian architecture"
-        },
-        {
-          "id": "b",
-          "text": "Siheyuan courtyard house, characterized by its enclosed courtyard and traditional Chinese layout"
-        },
-        {
-          "id": "c",
-          "text": "Traditional Pacific island meeting house (fale, bure, wharenui)"
-        },
-        {
-          "id": "d",
-          "text": "Vietnamese tube house, noted for its narrow frontage and deep, elongated plan"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Dougong is a Chinese bracket system, not a Pacific vernacular.",
-        "b": "Siheyuan is a Chinese four-pavilion courtyard, not a Pacific open-sided pavilion.",
-        "d": "Tube house is Vietnamese colonial-urban, not Pacific island vernacular.",
-        "correct": "The article explicitly describes Pacific island meeting houses (fale in Samoa, bure in Fiji, wharenui in Maori New Zealand) featuring post-and-beam frames, open-sided pavilions, steep roofs, deep eaves, and elevated stone platforms for tropical climate adaptation.",
-        "takeaway": "The article explicitly describes Pacific island meeting houses (fale in Samoa, bure in Fiji, wharenui in Maori New Zealand) featuring post-and-beam frames, open-sided pavilions, steep roofs, deep eaves, and elevated stone platforms for tropical climate adaptation."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "apply",
-      "application_context": "recall",
-      "practice_context": [
-        "DESC"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-HIST-007-06-005",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:24.518466+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:5a37732bbb7d178679a869670c3e0d5637db33476819fe6e64de79dcc94f898e"
-    },
-    {
-      "question_id": "962bacf3-b981-4aae-8b4b-23bcd4e6dd79",
-      "article_id": "1254cb0d-27ec-4a02-8ea4-8f37dcd44dbd",
-      "topic_id": "5ca084a4-4a1b-4996-bfcb-7a3825906c6e",
-      "text": "What materials compose traditional Pacific island meeting houses (flea, bure, wharenui), and what does material choice indicate about cultural values?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Imported masonry and glazed tiles reflecting cosmopolitan wealth and external influences"
-        },
-        {
-          "id": "b",
-          "text": "Tapa cloth, coconut thatch, and lashed timber—locally available materials—indicating sophisticated knowledge encoded over millennia and cultural values of sustainability."
-        },
-        {
-          "id": "c",
-          "text": "Steel and concrete, demonstrating technological advancement and modern architectural trends"
-        },
-        {
-          "id": "d",
-          "text": "Fired brick and plaster, adopted from Chinese architecture and symbolizing historical trade connections"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Traditional Pacific architecture prioritizes local materials, not imports.",
-        "c": "Vernacular traditions predate industrial materials; these structures represent pre-industrial material mastery.",
-        "d": "Traditional Pacific architecture is not derived from Chinese traditions.",
-        "correct": "The article explicitly states that Pacific vernacular employs tapa cloth, coconut thatch, and lashed timber—locally available materials—representing millennia of refined climate adaptation and material innovation.",
-        "takeaway": "The article explicitly states that Pacific vernacular employs tapa cloth, coconut thatch, and lashed timber—locally available materials—representing millennia of refined climate adaptation and material innovation."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [
-        "ST"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-HIST-007-06-007",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:24.518466+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:7b4a0b7790400ecd422b2e45dc3a5634de41d05e302d9adf8a00e81e29bab2ef"
-    },
-    {
       "question_id": "922bd6fa-b2ba-4686-a2b8-5771a3836736",
       "article_id": "1254cb0d-27ec-4a02-8ea4-8f37dcd44dbd",
       "topic_id": "5ca084a4-4a1b-4996-bfcb-7a3825906c6e",
@@ -507,7 +559,7 @@
         "correct": "The article explicitly identifies Jørn Utzon as a Danish architect, not Australian. He won an international design competition to design the Sydney Opera House.",
         "takeaway": "He won an international design competition to design the Sydney Opera House."
       },
-      "explanation": null,
+      "explanation": "Utzon was Danish, not Australian. The building was designed by an international modernist, not a British colonial administrator. Utzon was Danish, not American. The article explicitly identifies Jørn Utzon as a Danish architect, not Australian. He won an international design competition to design the Sydney Opera House. He won an international design competition to design the Sydney Opera House.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -521,8 +573,8 @@
       "model_id": "ALE-HIST-007-06-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:24.518466+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:d9cc6cfdfaf41165023df6e88a33f336b55b4d58ea684a062f87b815a8d043e9"
+      "updated_at": "2026-05-06T14:56:50.624584+00:00",
+      "content_hash": "sha256:ce1708e0538c0f1653c4d3a6b22f8ff22603e4dde3b7efb4a51f89d6b63da6bd"
     },
     {
       "question_id": "8cba5777-9131-44a8-9f15-8c2acb97bd25",
@@ -575,58 +627,6 @@
       "created_at": "2026-03-23T19:27:24.518466+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:332635104975717be4997f20faa03364799aecbb0cdb378c535a4a22a445a00f"
-    },
-    {
-      "question_id": "2b316613-7db8-42c0-abb4-5633e3c30190",
-      "article_id": "1254cb0d-27ec-4a02-8ea4-8f37dcd44dbd",
-      "topic_id": "5ca084a4-4a1b-4996-bfcb-7a3825906c6e",
-      "text": "A common exam mistake misidentifies the Sydney Opera House's shell geometry as arbitrary or decorative. What is the accurate relationship between form and function?",
-      "options": [
-        {
-          "id": "a",
-          "text": "The shells are purely sculptural, unrelated to structural requirements, and serve no functional purpose in load distribution."
-        },
-        {
-          "id": "b",
-          "text": "The shells solve a critical structural problem: spherical geometry distributes loads across curved surfaces, allowing large interior spans without internal columns; this was Utzon's engineering breakthrough."
-        },
-        {
-          "id": "c",
-          "text": "The shells are decorative; the actual structure is hidden steel framing beneath, which supports the entire load independently."
-        },
-        {
-          "id": "d",
-          "text": "Shell forms were chosen randomly from various mathematical possibilities, without consideration for structural efficiency."
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "The shells are structurally necessary, not merely sculptural.",
-        "c": "Shell vaults are the primary structure, not decoration over hidden steel.",
-        "d": "Shell geometry derives from a single mathematical principle, not random selection.",
-        "correct": "The article explicitly warns against treating shells as arbitrary or decorative, emphasizing that spherical geometry is Utzon's engineering breakthrough solving structural problems and enabling large spans.",
-        "takeaway": "The article explicitly warns against treating shells as arbitrary or decorative, emphasizing that spherical geometry is Utzon's engineering breakthrough solving structural problems and enabling large spans."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "analyze",
-      "application_context": "design_application",
-      "practice_context": [
-        "CMP"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-HIST-007-06-011",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:24.518466+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:e52214c2d94d7749a85d74befc45badc7b8b18f021c3527041f71cdbe2367353"
     }
   ]
 }

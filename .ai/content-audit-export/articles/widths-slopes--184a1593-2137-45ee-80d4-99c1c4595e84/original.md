@@ -1,5 +1,12 @@
 # Widths & Slopes
 
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Widths & Slopes** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
+
 ## Learning Goal
 
 After reading this article, you should be able to:
@@ -19,7 +26,7 @@ Calculate minimum required widths for corridors, aisles, exit passageways, and r
 | **1:20** | 5.0%      | – (no rise limit stated) | –                | Landings every **15.0 m**.[file:2] |
 | **1:15** | 6.67%     | **10.50 m**              | **700 mm**       | Landings every **10.0 m**.[file:2] |
 
-- Formula: \(\text{Run} = \text{Rise} \times \text{Slope Ratio}\).  
+- Formula: \(\text{Run} = \text{Rise} \times \text{Slope Ratio}\).
   Example: \(700 \times 15 = 10{,}500\) mm = **10.50 m**.[file:2]
 
 **Landings**
@@ -99,25 +106,23 @@ Use this page to answer any LEA item asking for **minimum widths** or **slopes/l
 
 ---
 
-<LawCallout code="bp344" section="Section 7 - Widths and Slopes">
+[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="bp344", section="Section 7 - Widths and Slopes"
+- Text: Per BP 344 2024 IRR Appendix A, Table A.1.1: Accessible Ramp Width = 1200 mm minimum clear width. Slope 1:20 (5.0%) — no stated rise limit, landings every 15.0 m. Slope 1:15 (6.67%) — max run 10,500 mm, max rise 700 mm, landings every 10.0 m. Intermediate landings: minimum 1800 mm length. Upper and lower landings: ≥1800 mm in direction of travel.
+[/SLATECAMP_UI_BLOCK]
 
+[SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: 1:12 is the MAXIMUM allowable slope, NOT the standard. The exam will present a question stating 'a ramp with 1:12 slope' and ask if it's compliant. The answer depends on context: 1:12 is acceptable ONLY where space constraints prevent 1:15 or 1:20. If the question doesn't mention space constraints, 1:12 may still be technically compliant as a maximum, but 1:20 is the preferred/ideal.
+[/SLATECAMP_UI_BLOCK]
 
-Per BP 344 2024 IRR Appendix A, Table A.1.1: Accessible Ramp Width = 1200 mm minimum clear width. Slope 1:20 (5.0%) — no stated rise limit, landings every 15.0 m. Slope 1:15 (6.67%) — max run 10,500 mm, max rise 700 mm, landings every 10.0 m. Intermediate landings: minimum 1800 mm length. Upper and lower landings: ≥1800 mm in direction of travel.
-
-
-</LawCallout>
-
-<Warn >
-
-1:12 is the MAXIMUM allowable slope, NOT the standard. The exam will present a question stating 'a ramp with 1:12 slope' and ask if it's compliant. The answer depends on context: 1:12 is acceptable ONLY where space constraints prevent 1:15 or 1:20. If the question doesn't mention space constraints, 1:12 may still be technically compliant as a maximum, but 1:20 is the preferred/ideal.
-
-</Warn>
-
-<ExamTip >
-
-Handrails are required when the ramp rise exceeds 150 mm (about 6 inches). Edge protection (curbs, rails, or extended surfaces) is required on both sides of any ramp with a rise exceeding 150 mm. These are frequently tested together — a ramp exam question often bundles slope, run, landing, handrail, and edge protection requirements.
-
-</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Handrails are required when the ramp rise exceeds 150 mm (about 6 inches). Edge protection (curbs, rails, or extended surfaces) is required on both sides of any ramp with a rise exceeding 150 mm. These are frequently tested together — a ramp exam question often bundles slope, run, landing, handrail, and edge protection requirements.
+[/SLATECAMP_UI_BLOCK]
 
 ---
 

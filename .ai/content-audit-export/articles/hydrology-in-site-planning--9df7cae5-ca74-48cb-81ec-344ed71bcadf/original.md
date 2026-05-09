@@ -1,4 +1,11 @@
 # Hydrology in Site Planning
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Hydrology in Site Planning** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
 ## Learning Goal
 After reading this article, you should be able to:
 
@@ -13,11 +20,11 @@ You are designing a 1.5-hectare commercial development in Quezon City on gently 
 
 ## Core Concepts
 
-<Tip>
-
-**Memory Aid: "S-S-S = Slope, Swale, Storm."** Three hydrology tools for site planning: Slope (minimum 1–2% away from buildings to prevent ponding), Swale (shallow vegetated channels for conveyance and infiltration — side slopes max 3:1, longitudinal slope 1–5%), Storm (Rational Method Q = C × i × A for peak runoff estimation — the most tested formula on the LEA for site planning).
-
-</Tip>
+[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Memory Aid: "S-S-S = Slope, Swale, Storm."** Three hydrology tools for site planning: Slope (minimum 1–2% away from buildings to prevent ponding), Swale (shallow vegetated channels for conveyance and infiltration — side slopes max 3:1, longitudinal slope 1–5%), Storm (Rational Method Q = C × i × A for peak runoff estimation — the most tested formula on the LEA for site planning).
+[/SLATECAMP_UI_BLOCK]
 
 - **Hydrology in Site Planning** governs how water moves across, into, and away from a development site. The architect must manage three interrelated systems: (1) surface drainage — directing sheet flow and channeled flow away from structures; (2) subsurface drainage — managing the water table and subgrade moisture; and (3) stormwater management — controlling peak runoff volumes and quality before discharge into public waterways.
 
@@ -31,11 +38,11 @@ You are designing a 1.5-hectare commercial development in Quezon City on gently 
 
 ## The Hard Data (Cheat Sheet)
 
-<Example>
-
-**Application Scenario:** A 1.5-hectare QC commercial development drains toward a creek 80 m south. Pre-development perviousness = 70%, post-development = 15%. Using the Rational Method: Qpre = C(0.4)×i(100 mm/hr)×A(1.5 ha) = 60 L/s. Qpost = C(0.85)×i×A = 127.5 L/s. You must provide detention storage of 67.5 L/s to maintain pre-development peak flow — typically via swale network or underground storage tank.
-
-</Example>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Example" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Application Scenario:** A 1.5-hectare QC commercial development drains toward a creek 80 m south. Pre-development perviousness = 70%, post-development = 15%. Using the Rational Method: Qpre = C(0.4)×i(100 mm/hr)×A(1.5 ha) = 60 L/s. Qpost = C(0.85)×i×A = 127.5 L/s. You must provide detention storage of 67.5 L/s to maintain pre-development peak flow — typically via swale network or underground storage tank.
+[/SLATECAMP_UI_BLOCK]
 
 | Parameter | Value / Standard | Source |
 |---|---|---|
@@ -55,11 +62,11 @@ You are designing a 1.5-hectare commercial development in Quezon City on gently 
 
 ## Crucial Formulas & Computations
 
-<ExamTip>
-
-**LEA Exam Pattern — Easement Distinction:** The PD 1067 easement from rivers/creeks is 3 m (urban), 20 m (agricultural), 40 m (forest) — NO structures allowed. The LEA tests these three values against each other. Key trick: urban = 3 m (same as minimum setback in some contexts), agricultural = 20 m, forest = 40 m. If the question says "building near a river in an urban area," the minimum easement is 3 m.
-
-</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **LEA Exam Pattern — Easement Distinction:** The PD 1067 easement from rivers/creeks is 3 m (urban), 20 m (agricultural), 40 m (forest) — NO structures allowed. The LEA tests these three values against each other. Key trick: urban = 3 m (same as minimum setback in some contexts), agricultural = 20 m, forest = 40 m. If the question says "building near a river in an urban area," the minimum easement is 3 m.
+[/SLATECAMP_UI_BLOCK]
 
 ### 1. The Rational Method (Peak Runoff Estimation)
 
@@ -141,52 +148,56 @@ This formula is used to verify that a designed swlea can convey the peak runoff 
 
 ---
 
-<Warn>
-
-⚠️ WATCH OUT: The design storm return period depends on project type: 5-year for residential, 10-year for commercial, 25-year for critical infrastructure. If the LEA question says "design storm for a shopping mall" the answer is 10-year return period — NOT 5-year (residential) or 25-year (hospital/emergency). This is a common distractor where the question specifies one project type but the answer lists the wrong return period.
-
-</Warn>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: ⚠️ WATCH OUT: The design storm return period depends on project type: 5-year for residential, 10-year for commercial, 25-year for critical infrastructure. If the LEA question says "design storm for a shopping mall" the answer is 10-year return period — NOT 5-year (residential) or 25-year (hospital/emergency). This is a common distractor where the question specifies one project type but the answer lists the wrong return period.
+[/SLATECAMP_UI_BLOCK]
 
 ## Active Recall Questions
 
 ### Question 1
 Using the Rational Method, calculate the peak stormwater runoff (Q) for a 2-hectare site with a weighted runoff coefficient of 0.70 and a design storm rainfall intensity of 120 mm/hr.
 
-A. 0.47 m³/s  
-B. 0.58 m³/s  
-C. 168.0 m³/s  
-D. 0.33 m³/s  
+A. 0.47 m³/s
+B. 0.58 m³/s
+C. 168.0 m³/s
+D. 0.33 m³/s
 
-> **Answer: A. 0.47 m³/s**  
+> **Answer: A. 0.47 m³/s**
 > Using Q = (C × i × A) / 360 = (0.70 × 120 × 2.0) / 360 = 168 / 360 = 0.467 ≈ **0.47 m³/s**. Option C (168.0) is the numerator before dividing by 360 — a common error when students forget the metric conversion factor. Option B and D result from incorrect C or A values.
 
 ### Question 2
 Under PD 1067 (Water Code of the Philippines), what is the minimum easement from the banks of rivers and streams in **agricultural areas** where no structures may be built?
 
-A. 3 meters  
-B. 10 meters  
-C. 20 meters  
-D. 40 meters  
+A. 3 meters
+B. 10 meters
+C. 20 meters
+D. 40 meters
 
-> **Answer: C. 20 meters**  
+> **Answer: C. 20 meters**
 > Article 51 of PD 1067 establishes the following easement zones from river/stream banks: 3 meters in urban areas, 20 meters in agricultural areas, and 40 meters in forest areas. These are no-build zones subject to the easement of public use. Option A (3 m) is for urban areas; Option D (40 m) is for forest areas.
 
 ### Question 3
 A site planner converts a 100% grass lot (C = 0.15) into a 100% paved parking lot (C = 0.90). By what factor does the peak stormwater runoff increase, assuming the same storm event?
 
-A. 2 times  
-B. 4 times  
-C. 6 times  
-D. 9 times  
+A. 2 times
+B. 4 times
+C. 6 times
+D. 9 times
 
-> **Answer: C. 6 times**  
+> **Answer: C. 6 times**
 > Since Q = C × i × A, and both i and A remain constant, the ratio of post-development to pre-development runoff is simply C_post / C_pre = 0.90 / 0.15 = **6.0 times**. This dramatically illustrates why full imperviousness without detention/retention is unacceptable. The LEA uses this type of ratio question to test conceptual understanding of the Rational Method without requiring full computation.
 
 ---
 
 
 
-<ArticleMedia id="media-hydrology-in-site-planning-0" type="image" caption="Site Hydrology and Stormwater Management — Rational Method and Drainage Design" description="Site drainage plan showing: watershed boundaries, pre/post-development runoff calculation using Rational Method (Q=CiA), swale cross-section (side slopes max 3:1, longitudinal 1-5%), detention basin sizing, pipe drainage network with minimum slopes (0.5% min for 150mm pipe), and 100-year floodplain limits with development restrictions." />
+[SLATECAMP_UI_BLOCK:ui_0005 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-hydrology-in-site-planning-0", type="image", caption="Site Hydrology and Stormwater Management — Rational Method and Drainage Design", description="Site drainage plan showing: watershed boundaries, pre/post-development runoff calculation using Rational Method (Q=CiA), swale cross-section (side slopes max 3:1, longitudinal 1-5%), detention basin sizing, pipe drainage network with minimum slopes (0.5% min for 150mm pipe), and 100-year floodplain limits with development restrictions."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 ## Cross‑References
 
 **Microclimate Analysis**, **Topography And Slope Analysis**, **Geological Hazards**, **Flora And Fauna In Site Development**

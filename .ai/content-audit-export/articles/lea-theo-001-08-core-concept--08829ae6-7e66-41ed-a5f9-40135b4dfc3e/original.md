@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Theo 001 08 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 
 ## Learning Goal
@@ -7,9 +16,17 @@ Explain architecture as cultural expression — how buildings embody values, bel
 
 **Architecture and cultural identity** are inseparable. Buildings are physical expressions of how a culture organizes itself, values its environment, honors its traditions, and projects its aspirations into the future.
 
-|<ArticleMedia id="media-lea-theo-001-08-core-concept" type="image" caption="Vernacular Architecture Across Cultures — Climate and Material Response" description="Comparative diagram showing vernacular building typologies from different regions: Southeast Asian stilt house (tropical, elevated, permeable walls), Middle Eastern courtyard house (arid, thick thermal mass, small windows), European timber-frame (temperate, steep roof, infill walls), and African mud-brick (savanna, compact form, earth materials). Each shows how climate, available materials, and cultural values shape form and spatial organization." suggestedAsset="Diagram or reference image" status="placeholder" />
+|[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-theo-001-08-core-concept", type="image", caption="Vernacular Architecture Across Cultures — Climate and Material Response", description="Comparative diagram showing vernacular building typologies from different regions: Southeast Asian stilt house (tropical, elevated, permeable walls), Middle Eastern courtyard house (arid, thick thermal mass, small windows), European timber-frame (temperate, steep roof, infill walls), and African mud-brick (savanna, compact form, earth materials). Each shows how climate, available materials, and cultural values shape form and spatial organization.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<ArticleMedia id="media-lea-theo-001-08-core-concept-b" type="image" caption="Philippine Vernacular Architecture — Bahay Kubo to Bahay na Bato" description="Side-by-side comparison of the two iconic Filipino vernacular typologies: (1) Bahay Kubo — stilted timber frame, thatched nipa roof, open sides, single room, elevated for flood/pest protection, optimized for tropical ventilation; (2) Bahay na Bato — stone masonry base, timber upper floor, capiz shell windows, broad eaves, Spanish colonial spatial organization (sala, cuartos, cocina). Annotations show the evolution from indigenous to colonial synthesis, highlighting retained Filipino spatial principles (elevation, ventilation, flexible interior)." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-theo-001-08-core-concept-b", type="image", caption="Philippine Vernacular Architecture — Bahay Kubo to Bahay na Bato", description="Side-by-side comparison of the two iconic Filipino vernacular typologies: (1) Bahay Kubo — stilted timber frame, thatched nipa roof, open sides, single room, elevated for flood/pest protection, optimized for tropical ventilation; (2) Bahay na Bato — stone masonry base, timber upper floor, capiz shell windows, broad eaves, Spanish colonial spatial organization (sala, cuartos, cocina). Annotations show the evolution from indigenous to colonial synthesis, highlighting retained Filipino spatial principles (elevation, ventilation, flexible interior).", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 The built environment both shapes and reflects cultural identity.
 
@@ -29,45 +46,89 @@ The collision of Spanish colonialism (1565–1898) with indigenous Filipino arch
 
 The preservation and reinterpretation of vernacular principles—passive climate control, material authenticity, spatial adaptability, community engagement in the design process—allows contemporary architecture to maintain continuity with cultural identity while employing modern materials and addressing contemporary needs. This approach, sometimes called **critical regionalism**, neither slavishly imitates vernacular forms nor ignores local context in favor of abstract internationalism. Instead, it grounds contemporary design in the specific knowledge, materials, and values of place, producing architecture that is both culturally rooted and contemporary.
 
-<Tip>
-**Vernacular is Not Primitive:** Vernacular architecture embodies sophisticated environmental knowledge, rational material choices, and proven structural systems. Traditional timber framing, earthen construction, and passive climate control strategies represent intelligent responses to specific conditions, not inferior or outdated methods. Understanding the logic behind vernacular choices is key to applying cultural principles in contemporary design.
-</Tip>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Vernacular is Not Primitive:** Vernacular architecture embodies sophisticated environmental knowledge, rational material choices, and proven structural systems. Traditional timber framing, earthen construction, and passive climate control strategies represent intelligent responses to specific conditions, not inferior or outdated methods. Understanding the logic behind vernacular choices is key to applying cultural principles in contemporary design.
+[/SLATECAMP_UI_BLOCK]
 
-<Note>
-The bahay na bato represents a critical fusion of three traditions: indigenous Filipino responses to environment (from the bahay kubo), Spanish colonial spatial organization and masonry construction, and Chinese architectural details. This synthesis was not imposed top-down but evolved through Filipino adaptation of foreign forms to local knowledge and materials.
-</Note>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: The bahay na bato represents a critical fusion of three traditions: indigenous Filipino responses to environment (from the bahay kubo), Spanish colonial spatial organization and masonry construction, and Chinese architectural details. This synthesis was not imposed top-down but evolved through Filipino adaptation of foreign forms to local knowledge and materials.
+[/SLATECAMP_UI_BLOCK]
 
-<Warn>
-Critical distinction: Cultural identity is not cosmetic or optional. It is not an aesthetic overlay (adding decorative motifs to an otherwise generic design). Cultural identity fundamentally influences spatial organization, material selection, construction methods, and relationships between buildings and landscape. Contemporary architecture can express cultural identity through understanding underlying principles of vernacular design, not through historical imitation.
-</Warn>
+[SLATECAMP_UI_BLOCK:ui_0005 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Critical distinction: Cultural identity is not cosmetic or optional. It is not an aesthetic overlay (adding decorative motifs to an otherwise generic design). Cultural identity fundamentally influences spatial organization, material selection, construction methods, and relationships between buildings and landscape. Contemporary architecture can express cultural identity through understanding underlying principles of vernacular design, not through historical imitation.
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Facts and Testable Items
 
-<WikiExamTable headers={["Concept", "Characteristics", "Cultural Expression", "Design Approach"]} rows={[["**Vernacular Architecture**", "Local materials, traditional techniques, climate-responsive", "Organic expression of community values and environmental knowledge", "Evolved through generations, not formally designed"], ["**Bahay Kubo**", "Timber elevation, single room, thatched roof, open sides", "Indigenous Filipino response to tropical climate and community living", "Optimized for ventilation, cooling, and adaptability"], ["**Bahay na Bato**", "Stone base, timber upper floor, capiz windows, Spanish spatial organization", "Fusion of indigenous and colonial cultures during Spanish rule", "Adapted foreign forms to local climate and materials"], ["**Sense of Place**", "Distinctive character, familiar materials, accumulated meaning", "Reinforces community identity and belonging", "Site-specific and culturally rooted"], ["**Critical Regionalism**", "Modern materials, local knowledge, community engagement, climate response", "Contemporary expression rooted in cultural and geographic context", "Reinterprets vernacular principles for modern needs"]]} />
+[SLATECAMP_UI_BLOCK:ui_0006 component="WikiExamTable" status="preserved"]
+Extracted summary:
+- Props: headers="{[\"Concept\", \"Characteristics\", \"Cultural Expression\", \"Design Approach\"]}", rows="{[[\"**Vernacular Architecture**\", \"Local materials, traditional techniques, climate-responsive\", \"Organic expression of community values and environmental knowledge\", \"Evolved through generations, not formally designed\"], [\"**Bahay Kubo**\", \"Timber elevation, single room, thatched roof, open sides\", \"Indigenous Filipino response to tropical climate and community living\", \"Optimized for ventilation, cooling, and adaptability\"], [\"**Bahay na Bato**\", \"Stone base, timber upper floor, capiz windows, Spanish spatial organization\", \"Fusion of indigenous and colonial cultures during Spanish rule\", \"Adapted foreign forms to local climate and materials\"], [\"**Sense of Place**\", \"Distinctive character, familiar materials, accumulated meaning\", \"Reinforces community identity and belonging\", \"Site-specific and culturally rooted\"], [\"**Critical Regionalism**\", \"Modern materials, local knowledge, community engagement, climate response\", \"Contemporary expression rooted in cultural and geographic context\", \"Reinterprets vernacular principles for modern needs\"]]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## How It's Tested on the LEA
 
-<ExamTip>**Pattern 1: Definition and Recognition.** The LEA asks direct questions about what vernacular architecture is and its role in expressing cultural identity. Example stem: "Vernacular architecture primarily reflects which of the following?" Correct answer: The environmental knowledge, construction skills, and aesthetic values of a community. Incorrect answers would cite formal architectural theory or international design principles as the primary driver.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 1: Definition and Recognition.** The LEA asks direct questions about what vernacular architecture is and its role in expressing cultural identity. Example stem: "Vernacular architecture primarily reflects which of the following?" Correct answer: The environmental knowledge, construction skills, and aesthetic values of a community. Incorrect answers would cite formal architectural theory or international design principles as the primary driver.
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>**Pattern 2: Filipino Architectural Heritage.** Questions focus on the bahay kubo and bahay na bato as expressions of Filipino cultural identity. Example stem: "The bahay na bato represents a fusion of which architectural and cultural traditions?" Answer: Indigenous Filipino (from the bahay kubo), Spanish colonial, and Chinese influences. This is a frequently tested item on the Philippine LEA.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 2: Filipino Architectural Heritage.** Questions focus on the bahay kubo and bahay na bato as expressions of Filipino cultural identity. Example stem: "The bahay na bato represents a fusion of which architectural and cultural traditions?" Answer: Indigenous Filipino (from the bahay kubo), Spanish colonial, and Chinese influences. This is a frequently tested item on the Philippine LEA.
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>**Pattern 3: Climate and Material Response.** The LEA tests whether you understand that vernacular architecture emerges from environmental constraints and material availability. Example stem: "Why does traditional Southeast Asian architecture feature broad eaves and elevated floors?" Answer: Broad eaves protect against tropical rain and sun; elevation allows air circulation and protects against flooding. These are rational responses to climate, not arbitrary aesthetic choices.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0009 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 3: Climate and Material Response.** The LEA tests whether you understand that vernacular architecture emerges from environmental constraints and material availability. Example stem: "Why does traditional Southeast Asian architecture feature broad eaves and elevated floors?" Answer: Broad eaves protect against tropical rain and sun; elevation allows air circulation and protects against flooding. These are rational responses to climate, not arbitrary aesthetic choices.
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>**Pattern 4: Cultural Continuity vs. Globalization.** Questions address the tension between maintaining cultural identity in architecture and responding to contemporary global conditions. Example stem: "Contemporary architects can maintain cultural identity in their designs by doing which of the following?" Correct answers include: engaging with local community values, using regionally available materials, responding to specific site climate and geography, studying vernacular principles and their underlying logic.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0010 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 4: Cultural Continuity vs. Globalization.** Questions address the tension between maintaining cultural identity in architecture and responding to contemporary global conditions. Example stem: "Contemporary architects can maintain cultural identity in their designs by doing which of the following?" Correct answers include: engaging with local community values, using regionally available materials, responding to specific site climate and geography, studying vernacular principles and thei
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>**Pattern 5: Sense of Place and Regional Identity.** The LEA tests understanding of how architecture creates and reinforces distinctive regional character. Example stem: "A building that expresses the distinctive character and accumulated meaning of its location demonstrates which architectural principle?" Answer: Sense of place, meaning the design is culturally and geographically rooted rather than placeless or generic.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0011 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 5: Sense of Place and Regional Identity.** The LEA tests understanding of how architecture creates and reinforces distinctive regional character. Example stem: "A building that expresses the distinctive character and accumulated meaning of its location demonstrates which architectural principle?" Answer: Sense of place, meaning the design is culturally and geographically rooted rather than placeless or generic.
+[/SLATECAMP_UI_BLOCK]
 
-<Callout>
-The LEA tests your understanding that architecture is not merely structural engineering—it is a cultural expression. Questions probe how buildings reflect the values, traditions, materials, and identity of the communities that create them. For Filipino architects, this means understanding how vernacular architecture, colonial heritage, and contemporary design express cultural continuity and identity.
-</Callout>
+[SLATECAMP_UI_BLOCK:ui_0012 component="Callout" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: The LEA tests your understanding that architecture is not merely structural engineering—it is a cultural expression. Questions probe how buildings reflect the values, traditions, materials, and identity of the communities that create them. For Filipino architects, this means understanding how vernacular architecture, colonial heritage, and contemporary design express cultural continuity and identity.
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
-<WikiMistakeCard mistake="Confusing vernacular with primitive or outdated" correction="Vernacular architecture embodies sophisticated environmental knowledge, rational material choices, and proven structural systems. Traditional timber framing, earthen construction, and passive climate control strategies are intelligent responses to specific conditions." context="Understanding vernacular as technically sophisticated, not historically quaint, prepares you for LEA questions that ask about the logic and effectiveness of traditional solutions." />
+[SLATECAMP_UI_BLOCK:ui_0013 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Confusing vernacular with primitive or outdated", correction="Vernacular architecture embodies sophisticated environmental knowledge, rational material choices, and proven structural systems. Traditional timber framing, earthen construction, and passive climate control strategies are intelligent responses to specific conditions.", context="Understanding vernacular as technically sophisticated, not historically quaint, prepares you for LEA questions that ask about the logic and effectiveness of traditional solutions."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeCard mistake="Treating cultural identity as optional or cosmetic" correction="Cultural identity runs deep in architecture—it influences spatial organization, material selection, construction methods, and relationships between buildings and landscape. It cannot be &quot;added&quot; after the design is fundamentally determined. Authenticity requires integration from the design's foundation." context="The LEA tests whether you understand that genuine cultural expression requires deep engagement with local knowledge and values, not surface-level decoration." />
+[SLATECAMP_UI_BLOCK:ui_0014 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Treating cultural identity as optional or cosmetic", correction="Cultural identity runs deep in architecture—it influences spatial organization, material selection, construction methods, and relationships between buildings and landscape. It cannot be &quot;added&quot; after the design is fundamentally determined. Authenticity requires integration from the design's foundation.", context="The LEA tests whether you understand that genuine cultural expression requires deep engagement with local knowledge and values, not surface-level decoration."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeList mistakes={["Equating cultural identity with historical imitation: Contemporary expression of cultural identity means understanding the underlying principles and values in vernacular architecture (why spaces are organized as they are, why certain materials are preferred, how climate is addressed) and applying that knowledge to contemporary design using modern materials and addressing current needs.", "Ignoring the Philippines' specific architectural heritage: On the Philippine LEA, you must be conversant with Filipino architectural history, the bahay kubo and bahay na bato traditions, and the cultural synthesis represented by bahay na bato. Candidates who only know generic vernacular architecture principles will perform poorly on culturally specific questions.", "Assuming all regional architecture is equally vernacular: Vernacular architecture emerges organically from within a community over time. A building designed by an outside architect employing regional imagery but without deep engagement with local knowledge is not vernacular—it is architectural appropriation.", "Conflating sense of place with aesthetic preference: Sense of place is deeper than visual appeal—it is the accumulated meaning, familiar forms and materials, embedded history, and reinforcement of community identity that attach to a location. A place can have strong sense of place even if its architecture is not conventionally beautiful."]} />
+[SLATECAMP_UI_BLOCK:ui_0015 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Equating cultural identity with historical imitation: Contemporary expression of cultural identity means understanding the underlying principles and values in vernacular architecture (why spaces are organized as they are, why certain materials are preferred, how climate is addressed) and applying that knowledge to contemporary design using modern materials and addressing current needs.\", \"Ignoring the Philippines' specific architectural heritage: On the Philippine LEA, you must be conversant with Filipino architectural history, the bahay kubo and bahay na bato traditions, and the cultural synthesis represented by bahay na bato. Candidates who only know generic vernacular architecture principles will perform poorly on culturally specific questions.\", \"Assuming all regional architecture is equally vernacular: Vernacular architecture emerges organically from within a community over time. A building designed by an outside architect employing regional imagery but without deep engagement with local knowledge is not vernacular—it is architectural appropriation.\", \"Conflating sense of place with aesthetic preference: Sense of place is deeper than visual appeal—it is the accumulated meaning, familiar forms and materials, embedded history, and reinforcement of community identity that attach to a location. A place can have strong sense of place even if its architecture is not conventionally beautiful.\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Terms
 

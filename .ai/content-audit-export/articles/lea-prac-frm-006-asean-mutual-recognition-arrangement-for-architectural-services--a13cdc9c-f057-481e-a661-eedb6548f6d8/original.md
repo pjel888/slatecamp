@@ -1,3 +1,10 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Lea Prac Frm 006 Asean Mutual Recognition Arrangement For Architectural Services** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
 ## ASEAN Mutual Recognition Arrangement for Architectural Services
 ## Learning Goal
 
@@ -30,17 +37,23 @@ In the Philippines, the ASEAN Monitoring Committee on Architectural Services (AM
 
 The Professional Regulatory Board of Architecture (PRBoA) prescribes and adopts rules and regulations for MRA implementation consistent with RA 9266. ASEAN Architects holding Philippine temporary or special permits may practice in the Philippines under conditions equivalent to those granted Filipino architects in their home countries. The Board ensures ASEAN Architects comply with Philippine architectural standards, ethical codes, and professional practice regulations.
 
-<ExamTip>
-  **Exam Tip:** Know the hierarchy of Philippine architectural laws: RA 9266 (primary), Code of Ethical Conduct (professional conduct rules), SPP Documents (service standards), UAP Documents (contract standards), NBCP (building regulation). LEA questions test which law governs specific situations.
-</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0001 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Exam Tip:** Know the hierarchy of Philippine architectural laws: RA 9266 (primary), Code of Ethical Conduct (professional conduct rules), SPP Documents (service standards), UAP Documents (contract standards), NBCP (building regulation). LEA questions test which law governs specific situations.
+[/SLATECAMP_UI_BLOCK]
 
-<Warn>
-  ****Warning:** Environmental compliance (EIA, ECC, CNC) is a distinct regulatory process from building permit requirements. An ECC is required before the building permit application — they are sequential, not parallel. Architects must advise clients on both sets of obligations or risk project delays and penalties.**
-</Warn>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: ****Warning:** Environmental compliance (EIA, ECC, CNC) is a distinct regulatory process from building permit requirements. An ECC is required before the building permit application — they are sequential, not parallel. Architects must advise clients on both sets of obligations or risk project delays and penalties.**
+[/SLATECAMP_UI_BLOCK]
 
-<LawCallout code="asean" section="ASEAN MRA - Recognition Arrangement">
-Philippine architectural practice operates under multiple regulatory instruments: RA 9266 (Architecture Act), the Code of Ethical Conduct, SPP Documents, UAP Documents, the National Building Code (PD 1096), and various specialty laws covering accessibility (BP 344), fire safety (RA 9514), and environmental compliance (PD 1586, DENR DAO).
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="asean", section="ASEAN MRA - Recognition Arrangement"
+- Text: Philippine architectural practice operates under multiple regulatory instruments: RA 9266 (Architecture Act), the Code of Ethical Conduct, SPP Documents, UAP Documents, the National Building Code (PD 1096), and various specialty laws covering accessibility (BP 344), fire safety (RA 9514), and environmental compliance (PD 1586, DENR DAO).
+[/SLATECAMP_UI_BLOCK]
 
 ASEAN Architects practicing in the Philippines must maintain compliance with Philippine technical standards and building codes. Professional liability insurance coverage is required as for all architects in the Philippines. The architect-of-record designation applies to ASEAN Architects, establishing responsibility for all documents issued under their authority. ASEAN Architect status in the Philippines does not exempt practitioners from normal professional registration and permit procedures; it establishes recognition of equivalent qualifications.
 
@@ -54,7 +67,11 @@ Standard foreign temporary permits remain available for non-ASEAN architects and
 
 
 
-<ArticleMedia id="media-lea-prac-frm-006-asean-mutual--0" type="image" caption="ASEAN Architect Registration — MRA Process Flowchart" description="Flowchart showing ASEAN MRA qualification pathway: National certification → ASEAN Architect Register application → AAC evaluation → ASEAN Architect designation → Practice rights in member countries. Side panel shows ASEAN member countries and Philippine Monitoring Committee (AMCASP) role. Requirements checklist for AA registration: education, experience, ethical record." />
+[SLATECAMP_UI_BLOCK:ui_0004 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-prac-frm-006-asean-mutual--0", type="image", caption="ASEAN Architect Registration — MRA Process Flowchart", description="Flowchart showing ASEAN MRA qualification pathway: National certification → ASEAN Architect Register application → AAC evaluation → ASEAN Architect designation → Practice rights in member countries. Side panel shows ASEAN member countries and Philippine Monitoring Committee (AMCASP) role. Requirements checklist for AA registration: education, experience, ethical record."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 ## Related Articles
 
 - [Sole Proprietorship](lea-prac-frm-001)

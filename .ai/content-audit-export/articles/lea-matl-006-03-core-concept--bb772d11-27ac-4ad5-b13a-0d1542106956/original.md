@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Matl 006 03 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 ## Learning Goal
 
@@ -11,11 +20,11 @@ Critical design distinction: Positive-side waterproofing (exposed to water sourc
 Material selection hinges on substrate preparation (dust, efflorescence removal, dampness tolerance), cure conditions (tropical humidity 80-100% RH, temperatures 25-35°C), movement accommodation (concrete shrinkage ±0.1%, thermal expansion ±0.05% per °C), and post-cure traffic load timing. Polyurethane systems are preferred for tropical below-grade because they cure in high humidity and achieve rapid strength (walkable in 24-48 hours vs 7 days for acrylic). Torch-applied bituminous sheets require roof substrate stability and cannot tolerate damp concrete (cure incompatibility).
 
 
-<ArticleMedia id="media-waterproofing-system-chart" layout="single" type="image" status="placeholder"
-  alt="Comparison chart of waterproofing systems: sheet membranes, liquid-applied, cementitious, and bentonite with application method, thickness, and water exposure rating"
-  caption="Future chart: waterproofing vs damp-proofing — system types, materials, and applications"
-  suggestedAsset="Material comparison chart with application illustrations"
-  placementIntent="Helps learners distinguish waterproofing from damp-proofing and select appropriate system" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-waterproofing-system-chart", layout="single", type="image", status="placeholder", alt="Comparison chart of waterproofing systems: sheet membranes, liquid-applied, cementitious, and bentonite with application method, thickness, and water exposure rating", caption="Future chart: waterproofing vs damp-proofing — system types, materials, and applications", suggestedAsset="Material comparison chart with application illustrations", placementIntent="Helps learners distinguish waterproofing from damp-proofing and select appropriate system"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Provisions
 
@@ -37,11 +46,11 @@ Material selection hinges on substrate preparation (dust, efflorescence removal,
 Philippine construction extensively uses torch-applied bituminous waterproofing for flat roof decks due to rapid installation and low material cost. Below-grade basement walls in Manila, Cebu, and coastal regions face intermittent hydrostatic pressure from water table fluctuation and monsoon rainfall; polyurethane liquid-applied systems are increasingly specified because they tolerate damp concrete and achieve rapid cure (24-48 hours walkable vs acrylic 5-7 days). Tropical climate factors include (a) high ambient humidity (80-100% RH), which slows evaporative cure and promotes tackiness, (b) UV degradation of exposed membranes (acrylic systems require topcoat), (c) osmotic blistering on roof decks (moisture vapor passing through substrate), and (d) salt spray attack on coastal concrete (efflorescence requires cleaning before coating). Negative-side interior waterproofing is rarely adequate for tropical below-grade applications because rain intensity (200+ mm/hr) causes water infiltration faster than absorption and interior drainage can manage.
 
 
-<ArticleMedia id="media-waterproofing-application-detail" layout="single" type="image" status="placeholder"
-  alt="Cross-section details of waterproofing application at below-grade walls, wet areas, and roof decks showing membrane placement and flashing"
-  caption="Future diagram: waterproofing application details — below-grade, wet area, and roof deck"
-  suggestedAsset="Cross-section detail drawings of waterproofing installations"
-  placementIntent="Visualizes critical waterproofing details in different building locations" />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-waterproofing-application-detail", layout="single", type="image", status="placeholder", alt="Cross-section details of waterproofing application at below-grade walls, wet areas, and roof decks showing membrane placement and flashing", caption="Future diagram: waterproofing application details — below-grade, wet area, and roof deck", suggestedAsset="Cross-section detail drawings of waterproofing installations", placementIntent="Visualizes critical waterproofing details in different building locations"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 ## How It's Tested
 
 **Pattern 1: System Type Selection** — "A basement wall in a typhoon-prone coastal area experiences intermittent hydrostatic pressure. Should waterproofing be applied positive-side or negative-side? Justify." (Answer: Positive-side; water pressure is too high for interior-applied systems to resist. Negative-side is only for non-hydrostatic damp situations.)
@@ -52,22 +61,32 @@ Philippine construction extensively uses torch-applied bituminous waterproofing 
 
 **Pattern 4: Substrate Preparation** — "Concrete substrate shows efflorescence and salt deposits from tropical weather. What is the required preparation before liquid waterproofing application?" (Answer: Wire brush or chemical cleaning per ASTM D4259 to remove salts and mineral deposits; verify &lt;85% RH moisture content with calcium chloride test if using acrylic.)
 
-<Tip>Memorize the distinction: Positive-side = applied on water source surface (exterior below-grade, roof deck). Negative-side = applied on interior (low moisture only). Tropical climates always demand positive-side for hydrostatic. Polyurethane cures in damp conditions; acrylic requires dry substrate.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Memorize the distinction: Positive-side = applied on water source surface (exterior below-grade, roof deck). Negative-side = applied on interior (low moisture only). Tropical climates always demand positive-side for hydrostatic. Polyurethane cures in damp conditions; acrylic requires dry substrate.
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - Props: (none)
 - Text: Memorize the distinction: Positive-side = applied on water source surface (exterior below-grade, roof deck). Negative-side = applied on interior (low moisture only). Tropical climates always demand positive-side for hydrostatic. Polyurethane cures in damp conditions; acrylic requires dry substrate.
 
 ## Common Mistakes
 
-<WikiMistakeCard mistake="Specifying negative-side waterproofing (interior coatings) for below-grade basement walls in tropical monsoon regions, expecting interior drainage to manage 200+ mm/hr rainfall." correction="Tropical rainfall intensity exceeds interior drainage capacity. Positive-side (exterior) waterproofing is mandatory for hydrostatic protection. Negative-side is only for non-hydrostatic damp." />
+[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Specifying negative-side waterproofing (interior coatings) for below-grade basement walls in tropical monsoon regions, expecting interior drainage to manage 200+ mm/hr rainfall.", correction="Tropical rainfall intensity exceeds interior drainage capacity. Positive-side (exterior) waterproofing is mandatory for hydrostatic protection. Negative-side is only for non-hydrostatic damp."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - Props: mistake="Specifying negative-side waterproofing (interior coatings) for below-grade basement walls in tropical monsoon regions, expecting interior drainage to manage 200+ mm/hr rainfall.", correction="Tropical rainfall intensity exceeds interior drainage capacity. Positive-side (exterior) waterproofing is mandatory for hydrostatic protection. Negative-side is only for non-hydrostatic damp."
 - Text: (none detected)
 
 ed"]
-<Note>
-(none detected)
-</Note>
+[SLATECAMP_UI_BLOCK:ui_0005 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 

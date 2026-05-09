@@ -1,3 +1,10 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Lea Prac Law 015 Copyright Duration Transfer Moral Rights And Infringement Remedies** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
 ## Copyright Duration, Transfer, Moral Rights, and Infringement Remedies
 
 ## Learning Goal
@@ -58,11 +65,23 @@ In addition to economic copyright enforcement, architects may pursue remedies fo
 
 Violations of the right of integrity—such as radical demolition of distinctive design features, unauthorized major alterations that destroy design intent, or vandalism that damages aesthetic integrity—may trigger legal action. Remedies include injunctions to prevent further distortion, damages for harm to the architect's reputation, and in some cases, mandatory correction or restoration of the work's integrity. The existence and strength of moral rights claims depend on the specific facts and the degree to which the work has been altered or misattributed.
 
-<Warn />
+[SLATECAMP_UI_BLOCK:ui_0001 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<Tip />
+[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ---
 

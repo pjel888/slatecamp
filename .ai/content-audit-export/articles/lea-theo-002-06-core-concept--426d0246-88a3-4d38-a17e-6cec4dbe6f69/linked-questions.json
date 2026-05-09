@@ -1,9 +1,217 @@
 {
   "article_id": "426d0246-88a3-4d38-a17e-6cec4dbe6f69",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:855024358a13ac847cbd6a843856687a77b69bddffa11c5f58acb453bad61fd3",
+  "linked_questions_hash": "sha256:c3999c90ff98e05e7f71a37c6e6e89b0abfc657ba506cabeca6640bfc61f5d10",
   "question_count": 13,
   "questions": [
+    {
+      "question_id": "7ad5cc26-a6a5-4c91-966b-5a6cd8d48cfc",
+      "article_id": "426d0246-88a3-4d38-a17e-6cec4dbe6f69",
+      "topic_id": "bf8bc35a-dcaf-419d-af9f-7a2677153689",
+      "text": "A residential complex where sleeping areas, living areas, and service areas group separately, related by proximity rather than by a central organizing element, demonstrates which spatial organization?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Radial spatial organization"
+        },
+        {
+          "id": "b",
+          "text": "Linear spatial organization"
+        },
+        {
+          "id": "c",
+          "text": "Centralized spatial organization"
+        },
+        {
+          "id": "d",
+          "text": "Clustered spatial organization"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Radial would extend outward from a central point.",
+        "b": "Linear would organize along a spine.",
+        "c": "Centralized would have areas surrounding a dominant center.",
+        "correct": "Functional grouping without central or linear hierarchy exemplifies clustered spatial organization. Each cluster (sleeping, living, service) is organized by function and proximity. The arrangement is flexible; new clusters can be added.",
+        "takeaway": "The arrangement is flexible; new clusters can be added."
+      },
+      "explanation": "Radial would extend outward from a central point. Linear would organize along a spine. Centralized would have areas surrounding a dominant center. Functional grouping without central or linear hierarchy exemplifies clustered spatial organization. Each cluster (sleeping, living, service) is organized by function and proximity. The arrangement is flexible; new clusters can be added. The arrangement is flexible; new clusters can be added.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-06-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.884733+00:00",
+      "updated_at": "2026-05-06T15:09:24.802314+00:00",
+      "content_hash": "sha256:be502206ea261e7631aad91230f65c7781b604a20286658a6d439b022cd8b609"
+    },
+    {
+      "question_id": "cd43f2a9-4bf1-41b2-be68-2bfabf4519a9",
+      "article_id": "426d0246-88a3-4d38-a17e-6cec4dbe6f69",
+      "topic_id": "bf8bc35a-dcaf-419d-af9f-7a2677153689",
+      "text": "How do centralized and radial spatial organization differ in their spatial character?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Centralized is formal; radial is informal, often lacking a clear hierarchy in spatial arrangement"
+        },
+        {
+          "id": "b",
+          "text": "Centralized uses a spine; radial uses a central point, which serves as the focal node for spatial distribution"
+        },
+        {
+          "id": "c",
+          "text": "Centralized clusters secondary spaces around a center without radiating arms; radial has directional arms extending outward from hub"
+        },
+        {
+          "id": "d",
+          "text": "Centralized accommodates growth; radial does not, as it is typically constrained by its initial design parameters"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Both can be formal or informal.",
+        "b": "Both employ central organizing points differently.",
+        "d": "Both can accommodate growth depending on design.",
+        "correct": "Critical distinction: centralized = secondary spaces surround a center (compact, convergent, inward-focusing); radial = spaces extend outward from center in radiating arms (expansive, directional reach). Both have centers, opposite spatial characters.",
+        "takeaway": "Both have centers, opposite spatial characters."
+      },
+      "explanation": "Both can be formal or informal. Both employ central organizing points differently. Both can accommodate growth depending on design. Critical distinction: centralized = secondary spaces surround a center (compact, convergent, inward-focusing); radial = spaces extend outward from center in radiating arms (expansive, directional reach). Both have centers, opposite spatial characters. Both have centers, opposite spatial characters.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-06-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.884733+00:00",
+      "updated_at": "2026-05-06T15:09:24.94099+00:00",
+      "content_hash": "sha256:eba0d6db7309b81c4d3273b616df87b0da7fe395ec7f332d11bad41af20644dc"
+    },
+    {
+      "question_id": "d7d44e91-dc24-47cf-9021-43fdce171f67",
+      "article_id": "426d0246-88a3-4d38-a17e-6cec4dbe6f69",
+      "topic_id": "bf8bc35a-dcaf-419d-af9f-7a2677153689",
+      "text": "A building plan shows a central entry hall with medical offices extending in one direction, clinical spaces extending in another direction, and administrative areas extending in a third direction. This demonstrates:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Radial spatial organization"
+        },
+        {
+          "id": "b",
+          "text": "Centralized spatial organization"
+        },
+        {
+          "id": "c",
+          "text": "Linear spatial organization"
+        },
+        {
+          "id": "d",
+          "text": "Clustered spatial organization"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Centralized would have departments surrounding the center, not extending outward.",
+        "c": "Linear would have a single spine with departments along it.",
+        "d": "Clustered would have departments grouped without clear radiating logic.",
+        "correct": "Extending arms (medical, clinical, administrative) from a central hub exemplifies radial spatial organization. The central entry is the organizing point; departments radiate outward in different directions.",
+        "takeaway": "The central entry is the organizing point; departments radiate outward in different directions."
+      },
+      "explanation": "Centralized would have departments surrounding the center, not extending outward. Linear would have a single spine with departments along it. Clustered would have departments grouped without clear radiating logic. Extending arms (medical, clinical, administrative) from a central hub exemplifies radial spatial organization. The central entry is the organizing point; departments radiate outward in different directions. The central entry is the organizing point; departments radiate outward in different directions.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-06-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.884733+00:00",
+      "updated_at": "2026-05-06T15:09:25.081978+00:00",
+      "content_hash": "sha256:c3fc9c3b4b4e8fb03000995680e8509ce15173357a3a98d105761f3f5263a52e"
+    },
+    {
+      "question_id": "a86ed7ee-94ba-459e-a510-d3abd4986a02",
+      "article_id": "426d0246-88a3-4d38-a17e-6cec4dbe6f69",
+      "topic_id": "bf8bc35a-dcaf-419d-af9f-7a2677153689",
+      "text": "How do spatial organization types relate to the organizing principles of design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They are identical concepts with different terminology, often used interchangeably in design discussions"
+        },
+        {
+          "id": "b",
+          "text": "Spatial organizations apply only to interiors; organizing principles apply only to building form, creating a clear distinction between the two"
+        },
+        {
+          "id": "c",
+          "text": "Organizing principles are large-scale composition systems; spatial organizations describe how specific spaces connect and flow within those systems"
+        },
+        {
+          "id": "d",
+          "text": "They are unrelated concepts from different design fields, each with its own distinct application"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "They are related but distinct.",
+        "b": "Both apply to buildings at multiple scales.",
+        "d": "Both are fundamental spatial design concepts.",
+        "correct": "While closely related, these are distinct and both tested: organizing principles describe large-scale composition and growth logic (how forms arrange); spatial organization describes how spaces connect and create user experience (procession, hierarchy, clustering). A building might use centralized spatial organization within a linear organizing principle, or clustered spaces within a grid composition.",
+        "takeaway": "A building might use centralized spatial organization within a linear organizing principle, or clustered spaces within a grid composition."
+      },
+      "explanation": "They are related but distinct. Both apply to buildings at multiple scales. Both are fundamental spatial design concepts. While closely related, these are distinct and both tested: organizing principles describe large-scale composition and growth logic (how forms arrange); spatial organization describes how spaces connect and create user experience (procession, hierarchy, clustering). A building might use centralized spatial organization within a linear organizing principle, or clustered spaces within a grid composition. A building might use centralized spatial organization within a linear organizing principle, or clustered spaces within a grid composition.",
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "SYS"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-06-011",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.884733+00:00",
+      "updated_at": "2026-05-06T15:09:25.214194+00:00",
+      "content_hash": "sha256:6abc46717a11ee615186abfb2f7e3396d5771b02f562ed3da77de060c4181fb2"
+    },
     {
       "question_id": "ffa330bb-2b32-444f-abd2-ac1ddedbaf62",
       "article_id": "426d0246-88a3-4d38-a17e-6cec4dbe6f69",
@@ -39,7 +247,7 @@
         "correct": "Clustered spatial organization groups spaces by functional compatibility and proximity rather than geometric system. Sleeping areas cluster together, living areas cluster separately. Flexibility is high—new clusters can be added without disrupting existing organization.",
         "takeaway": "Flexibility is high—new clusters can be added without disrupting existing organization."
       },
-      "explanation": null,
+      "explanation": "That is centralized spatial organization. That is linear spatial organization. That is radial spatial organization. Clustered spatial organization groups spaces by functional compatibility and proximity rather than geometric system. Sleeping areas cluster together, living areas cluster separately. Flexibility is high—new clusters can be added without disrupting existing organization. Flexibility is high—new clusters can be added without disrupting existing organization.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -53,8 +261,8 @@
       "model_id": "ALE-THEO-002-06-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:4562bd4b6fa54fd7a20f2106f45d520e7b7e230c692e3e7efc490f5e09dd0f24"
+      "updated_at": "2026-05-06T15:09:24.434315+00:00",
+      "content_hash": "sha256:5d59a1f0007b2412702bb94a30da4b7a7a2509a1abb94b7dc4cf842de4bfca36"
     },
     {
       "question_id": "96243181-4b66-4eb1-a5fa-14373946cee2",
@@ -195,7 +403,7 @@
         "correct": "Grid spatial organization uses a repeating modular grid (orthogonal, diagonal, or hexagonal) where the module becomes the fundamental spatial unit. Japanese tatami-based planning exemplifies grid organization: the mat module regulates all room dimensions.",
         "takeaway": "Japanese tatami-based planning exemplifies grid organization: the mat module regulates all room dimensions."
       },
-      "explanation": null,
+      "explanation": "That is linear spatial organization. That is centralized spatial organization. That is clustered spatial organization. Grid spatial organization uses a repeating modular grid (orthogonal, diagonal, or hexagonal) where the module becomes the fundamental spatial unit. Japanese tatami-based planning exemplifies grid organization: the mat module regulates all room dimensions. Japanese tatami-based planning exemplifies grid organization: the mat module regulates all room dimensions.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -209,60 +417,8 @@
       "model_id": "ALE-THEO-002-06-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:eb46c570254144be4d393f676b072e19ba70b605a8148852bbc5a53ed278b0a1"
-    },
-    {
-      "question_id": "7ad5cc26-a6a5-4c91-966b-5a6cd8d48cfc",
-      "article_id": "426d0246-88a3-4d38-a17e-6cec4dbe6f69",
-      "topic_id": "bf8bc35a-dcaf-419d-af9f-7a2677153689",
-      "text": "A residential complex where sleeping areas, living areas, and service areas group separately, related by proximity rather than by a central organizing element, demonstrates which spatial organization?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Radial spatial organization"
-        },
-        {
-          "id": "b",
-          "text": "Linear spatial organization"
-        },
-        {
-          "id": "c",
-          "text": "Centralized spatial organization"
-        },
-        {
-          "id": "d",
-          "text": "Clustered spatial organization"
-        }
-      ],
-      "correct_option_id": "d",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Radial would extend outward from a central point.",
-        "b": "Linear would organize along a spine.",
-        "c": "Centralized would have areas surrounding a dominant center.",
-        "correct": "Functional grouping without central or linear hierarchy exemplifies clustered spatial organization. Each cluster (sleeping, living, service) is organized by function and proximity. The arrangement is flexible; new clusters can be added.",
-        "takeaway": "The arrangement is flexible; new clusters can be added."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "apply",
-      "application_context": "design_application",
-      "practice_context": [
-        "APP"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-002-06-009",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:6edb1d7d2b7c973b3f4e4e05a8da3b2700be28326f57c65a1e82ce65b9b60908"
+      "updated_at": "2026-05-06T15:09:24.670428+00:00",
+      "content_hash": "sha256:e78a807607d94c19ca4df8a63a964a4cd0605724c0670cd4211596c8a02666e8"
     },
     {
       "question_id": "d2c0124f-a52b-4c1e-9133-7a063d7208f3",
@@ -369,58 +525,6 @@
       "content_hash": "sha256:84de0fe0042dd79051a238e9f0c45bd74d45ac79fe860bd50999ea89939c35e9"
     },
     {
-      "question_id": "cd43f2a9-4bf1-41b2-be68-2bfabf4519a9",
-      "article_id": "426d0246-88a3-4d38-a17e-6cec4dbe6f69",
-      "topic_id": "bf8bc35a-dcaf-419d-af9f-7a2677153689",
-      "text": "How do centralized and radial spatial organization differ in their spatial character?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Centralized is formal; radial is informal, often lacking a clear hierarchy in spatial arrangement"
-        },
-        {
-          "id": "b",
-          "text": "Centralized uses a spine; radial uses a central point, which serves as the focal node for spatial distribution"
-        },
-        {
-          "id": "c",
-          "text": "Centralized clusters secondary spaces around a center without radiating arms; radial has directional arms extending outward from hub"
-        },
-        {
-          "id": "d",
-          "text": "Centralized accommodates growth; radial does not, as it is typically constrained by its initial design parameters"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Both can be formal or informal.",
-        "b": "Both employ central organizing points differently.",
-        "d": "Both can accommodate growth depending on design.",
-        "correct": "Critical distinction: centralized = secondary spaces surround a center (compact, convergent, inward-focusing); radial = spaces extend outward from center in radiating arms (expansive, directional reach). Both have centers, opposite spatial characters.",
-        "takeaway": "Both have centers, opposite spatial characters."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "apply",
-      "application_context": "design_application",
-      "practice_context": [
-        "CMP"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-002-06-003",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:90d931984b6b67a0bb0e03ea6fe2f06ea65caee84fb69c75ba17e583148de378"
-    },
-    {
       "question_id": "73f141d4-bd68-4d6c-9c74-50546042b4d9",
       "article_id": "426d0246-88a3-4d38-a17e-6cec4dbe6f69",
       "topic_id": "bf8bc35a-dcaf-419d-af9f-7a2677153689",
@@ -525,58 +629,6 @@
       "content_hash": "sha256:f7031d82edd9db7ba90886d8a4e1c3115bac67547bcf82f2f0b01818a6d56136"
     },
     {
-      "question_id": "d7d44e91-dc24-47cf-9021-43fdce171f67",
-      "article_id": "426d0246-88a3-4d38-a17e-6cec4dbe6f69",
-      "topic_id": "bf8bc35a-dcaf-419d-af9f-7a2677153689",
-      "text": "A building plan shows a central entry hall with medical offices extending in one direction, clinical spaces extending in another direction, and administrative areas extending in a third direction. This demonstrates:",
-      "options": [
-        {
-          "id": "a",
-          "text": "Radial spatial organization"
-        },
-        {
-          "id": "b",
-          "text": "Centralized spatial organization"
-        },
-        {
-          "id": "c",
-          "text": "Linear spatial organization"
-        },
-        {
-          "id": "d",
-          "text": "Clustered spatial organization"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "b": "Centralized would have departments surrounding the center, not extending outward.",
-        "c": "Linear would have a single spine with departments along it.",
-        "d": "Clustered would have departments grouped without clear radiating logic.",
-        "correct": "Extending arms (medical, clinical, administrative) from a central hub exemplifies radial spatial organization. The central entry is the organizing point; departments radiate outward in different directions.",
-        "takeaway": "The central entry is the organizing point; departments radiate outward in different directions."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "apply",
-      "application_context": "design_application",
-      "practice_context": [
-        "APP"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-002-06-006",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:f25efaf0a9ba8e1b276b6712cdf23277ea493b362ca31b8e551cc675d4637c7e"
-    },
-    {
       "question_id": "c791b11f-c2f3-4e3f-a9b9-075b72aa570f",
       "article_id": "426d0246-88a3-4d38-a17e-6cec4dbe6f69",
       "topic_id": "bf8bc35a-dcaf-419d-af9f-7a2677153689",
@@ -627,58 +679,6 @@
       "created_at": "2026-03-23T19:27:53.884733+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:b8bc5b578b76955712232f6506a93de3eb2242fb9c6d6b3daa67234e19cb0bb8"
-    },
-    {
-      "question_id": "a86ed7ee-94ba-459e-a510-d3abd4986a02",
-      "article_id": "426d0246-88a3-4d38-a17e-6cec4dbe6f69",
-      "topic_id": "bf8bc35a-dcaf-419d-af9f-7a2677153689",
-      "text": "How do spatial organization types relate to the organizing principles of design?",
-      "options": [
-        {
-          "id": "a",
-          "text": "They are identical concepts with different terminology, often used interchangeably in design discussions"
-        },
-        {
-          "id": "b",
-          "text": "Spatial organizations apply only to interiors; organizing principles apply only to building form, creating a clear distinction between the two"
-        },
-        {
-          "id": "c",
-          "text": "Organizing principles are large-scale composition systems; spatial organizations describe how specific spaces connect and flow within those systems"
-        },
-        {
-          "id": "d",
-          "text": "They are unrelated concepts from different design fields, each with its own distinct application"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "They are related but distinct.",
-        "b": "Both apply to buildings at multiple scales.",
-        "d": "Both are fundamental spatial design concepts.",
-        "correct": "While closely related, these are distinct and both tested: organizing principles describe large-scale composition and growth logic (how forms arrange); spatial organization describes how spaces connect and create user experience (procession, hierarchy, clustering). A building might use centralized spatial organization within a linear organizing principle, or clustered spaces within a grid composition.",
-        "takeaway": "A building might use centralized spatial organization within a linear organizing principle, or clustered spaces within a grid composition."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "analyze",
-      "application_context": "code_interpretation",
-      "practice_context": [
-        "SYS"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-002-06-011",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:242e5ef58307ac2aa8e665629c454d0d032355797391a8116d9652f78708075b"
     }
   ]
 }

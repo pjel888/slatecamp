@@ -1,9 +1,20 @@
 # Architectural Design and Site Planning — Mastery & Connections
 
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Architectural Design and Site Planning — Mastery & Connections** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
+
 ## Learning Goal
 
 Achieve synthesis-level understanding of Architectural Design as the integration subject of the LEA. Connect all 13 subtopics across design process, anthropometrics, building typology, codes, and graphic communication. Trace how Architectural Design draws from Structural Conceptualization, MEPF, Laws, Theory, Materials, and Planning to produce complete, code-compliant building designs.
-<ArticleMedia id="media-mastery-architectural-design" type="image" caption="Architectural Design — Internal Logic and Subject Integration Diagram" description="Central hub-and-spoke diagram with Architectural Design at center connecting to: (1) Site Analysis → Design Process → Building Type Decisions; (2) Design Process → Anthropometrics → Spatial Adequacy; (3) Building Type → Code Application (DepEd, DOH, PD 1096, BP 344); (4) Code Application → Graphic Communication. Outer ring shows cross-subject connections to Theory (design principles), Structural (column grids, spans), MEPF (equipment spaces), Materials (specifications), Planning (site context), and Laws (code compliance)." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-mastery-architectural-design", type="image", caption="Architectural Design — Internal Logic and Subject Integration Diagram", description="Central hub-and-spoke diagram with Architectural Design at center connecting to: (1) Site Analysis → Design Process → Building Type Decisions; (2) Design Process → Anthropometrics → Spatial Adequacy; (3) Building Type → Code Application (DepEd, DOH, PD 1096, BP 344); (4) Code Application → Graphic Communication. Outer ring shows cross-subject connections to Theory (design principles), Structural (column grids, spans), MEPF (equipment spaces), Materials (specifications), Planning (site context), and Laws (code compliance).", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## The Internal Logic: How Subtopics Connect
 
@@ -27,13 +38,21 @@ Design principles — proportion, scale, rhythm, hierarchy, unity — are the in
 
 Every design decision has structural implications: column grid selection determines floor plate geometry, shear wall placement constrains open-plan layouts, long-span systems enable column-free spaces, foundation selection affects ground-floor design.
 
-<ComparisonTable columns={["Design Decision","Structural Implication","Code/Standard Reference"]} rows={[["Open plan office floor","Longer structural spans required, more deflection","NSCP beam depth-to-span ratios"],["Column-free gymnasium","Steel or timber truss roof system","NSCP Chapter 5/6 span tables"],["Basement parking","Deep foundation or waterproofing strategy","NSCP geotechnical provisions"],["Cantilevered canopy","Counterweight or moment connection required","NSCP load combinations"],["Rooftop HVAC placement","Equipment load on roof framing","NSCP equipment loads + seismic bracing"]]} />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ComparisonTable" status="preserved"]
+Extracted summary:
+- Props: columns="{[\"Design Decision\",\"Structural Implication\",\"Code/Standard Reference\"]}", rows="{[[\"Open plan office floor\",\"Longer structural spans required, more deflection\",\"NSCP beam depth-to-span ratios\"],[\"Column-free gymnasium\",\"Steel or timber truss roof system\",\"NSCP Chapter 5/6 span tables\"],[\"Basement parking\",\"Deep foundation or waterproofing strategy\",\"NSCP geotechnical provisions\"],[\"Cantilevered canopy\",\"Counterweight or moment connection required\",\"NSCP load combinations\"],[\"Rooftop HVAC placement\",\"Equipment load on roof framing\",\"NSCP equipment loads + seismic bracing\"]]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ### Connection to MEPF
 
 Space planning for building services: mechanical rooms (3–5% of GFA), electrical rooms, plumbing cores, fire protection. The architect must allocate service spaces correctly.
 
-<ExamTip>LEA questions frequently present floor plan scenarios and ask you to identify the most appropriate location for a mechanical room, electrical room, or fire escape stair. These are integration questions: they require knowledge of MEPF space requirements (from the MEPF subject), fire egress rules (RA 9514), and architectural planning principles (service zones at the building's perimeter or core) all applied simultaneously.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: LEA questions frequently present floor plan scenarios and ask you to identify the most appropriate location for a mechanical room, electrical room, or fire escape stair. These are integration questions: they require knowledge of MEPF space requirements (from the MEPF subject), fire egress rules (RA 9514), and architectural planning principles (service zones at the building's perimeter or core) all applied simultaneously.
+[/SLATECAMP_UI_BLOCK]
 
 ### Connection to Philippine Laws and Professional Practice
 
@@ -53,7 +72,11 @@ Site planning bridges Architectural Design and the Planning subject. Topographic
 
 **Pattern 4 — Multi-Code Building Type:** School fixture counts (PD 1096) + corridor widths + egress rules (RA 9514).
 
-<Callout>This is why Architectural Design is saved for comprehensive review rather than early study. It is the subject where all your other preparation lands. If you haven't covered the codes, the structures, the services, and the laws first, you cannot bring them to bear on design decisions. Build the foundation subjects first, then let Architectural Design become the place where they integrate.</Callout>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Callout" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: This is why Architectural Design is saved for comprehensive review rather than early study. It is the subject where all your other preparation lands. If you haven't covered the codes, the structures, the services, and the laws first, you cannot bring them to bear on design decisions. Build the foundation subjects first, then let Architectural Design become the place where they integrate.
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Exam Traps
 

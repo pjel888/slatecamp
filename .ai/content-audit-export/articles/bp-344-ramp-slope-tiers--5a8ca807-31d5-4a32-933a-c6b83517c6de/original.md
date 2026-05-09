@@ -1,4 +1,13 @@
 # BP 344 Ramp Slope Tiers
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **BP 344 Ramp Slope Tiers** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## Learning Goal
 After reading this article, you should be able to:
 
@@ -19,13 +28,11 @@ The 2024 IRR gives a **tiered system for accessible ramps**: a preferred slope a
 
 ---
 
-<LawCallout code="bp344" section="Section 7 - Ramps">
-
-
-The 2024 BP 344 IRR (Appendix A, Sec 1.2) defines the complete tiered ramp slope system for accessible ramps in the Philippines. PD 1096 (Rule XII) allows ramps as exits with general width requirements, but BP 344 overlays stricter, PWD-specific dimensions — slope tiers (1:20/1:15/1:12), minimum clear width (1200mm), landing lengths (1800mm), handrail heights (700/900mm dual), and edge protection (100mm). On any accessible route, the stricter BP 344 standard prevails over the more general PD 1096 rule.
-
-
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="bp344", section="Section 7 - Ramps"
+- Text: The 2024 BP 344 IRR (Appendix A, Sec 1.2) defines the complete tiered ramp slope system for accessible ramps in the Philippines. PD 1096 (Rule XII) allows ramps as exits with general width requirements, but BP 344 overlays stricter, PWD-specific dimensions — slope tiers (1:20/1:15/1:12), minimum clear width (1200mm), landing lengths (1800mm), handrail heights (700/900mm dual), and edge protection (100mm). On any accessible route, the stricter BP 344 standard prevails over the more general PD 109
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -52,15 +59,15 @@ From the 2024 BP 344 Appendix A amendments on accessible ramps, Table A.1.1:[fil
 | **1:15 (MAX–NEW)**   | **6.67%** | Accessible ramps in new work — maximum allowed slope                                 | **10.50 m**                                                           | **700 mm**                        | **10.00 m** between landings[file:2]                                     |
 | **1:12 (RENO ONLY)** | **8.33%** | Existing buildings/renovations where 1:15 cannot be achieved due to site constraints | To be kept as short as practicable; follow project‑specific detailing | Higher effort; not for new builds | Landings treated per designer’s compliance strategy in constrained sites |
 
-**Universal formula:**  
+**Universal formula:**
 \\[
 \\text{Horizontal Run Length} = \\text{Rise} \\times \\text{Slope Ratio}
 \\]
 
-Example for 1:15:  
+Example for 1:15:
 \\[
 700\\,\\text{mm rise} \\times 15 = 10{,}500\\,\\text{mm} = 10.50\\,\\text{m}
-\\]  
+\\]
 This matches the table’s **maximum run length** and **maximum rise** values for 1:15.[file:2]
 
 **10.00 m vs 10.50 m (both appear in the table):**
@@ -68,23 +75,23 @@ This matches the table’s **maximum run length** and **maximum rise** values fo
 - **10.50 m** = absolute maximum sloped run at 1:15 corresponding to the 700mm maximum rise.[file:2]
 - **10.00 m** = interval beyond which you must introduce an intermediate landing even if you have not yet hit the 700mm rise ceiling.[file:2]
 
-<LawCallout code="bp344" section="Section 7.1 - Slope Ratios">
+[SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="bp344", section="Section 7.1 - Slope Ratios"
+- Text: If the question asks: "Maximum length of a SINGLE 1:15 accessible ramp run (2024 IRR)?" → 10.50 m. If it asks: "At what INTERVAL must landings be provided for a 1:15 ramp?" → Every 10.00 m. These two numbers are distinct — confusing them is a common exam error. For 1:20 (GOLD), the landing interval is every 15.00 m.
+[/SLATECAMP_UI_BLOCK]
 
+[SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="bp344", section="Section 7.2 - Landing Dimensions"
+- Text: Trap — 1:12 is NOT the standard maximum slope for new accessible ramps under the 2024 IRR. The amended Appendix A defines 1:20 and 1:15 as the working slopes. 1:12 belongs only to existing building renovations where 1:15 cannot be achieved. Do not select 1:12 as the maximum for new construction in exam questions.
+[/SLATECAMP_UI_BLOCK]
 
-If the question asks: "Maximum length of a SINGLE 1:15 accessible ramp run (2024 IRR)?" → 10.50 m. If it asks: "At what INTERVAL must landings be provided for a 1:15 ramp?" → Every 10.00 m. These two numbers are distinct — confusing them is a common exam error. For 1:20 (GOLD), the landing interval is every 15.00 m.
-
-
-</LawCallout>
-
-<LawCallout code="bp344" section="Section 7.2 - Landing Dimensions">
-
-
-Trap — 1:12 is NOT the standard maximum slope for new accessible ramps under the 2024 IRR. The amended Appendix A defines 1:20 and 1:15 as the working slopes. 1:12 belongs only to existing building renovations where 1:15 cannot be achieved. Do not select 1:12 as the maximum for new construction in exam questions.
-
-
-</LawCallout>
-
-<ArticleMedia id="media-bp-344-ramp-slope-tiers-0" name="ramp-slope-tier-comparison" type="diagram" caption="Visual comparison of BP 344 ramp slope tiers: 1:20 (5% Gold, preferred, 15m landing interval), 1:15 (6.67% Max for new work, 10.5m max run, 700mm max rise), 1:12 (8.33% Reno-only for existing buildings). Side-by-side elevation profiles showing steepness difference and landing intervals." />
+[SLATECAMP_UI_BLOCK:ui_0004 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-bp-344-ramp-slope-tiers-0", name="ramp-slope-tier-comparison", type="diagram", caption="Visual comparison of BP 344 ramp slope tiers: 1:20 (5% Gold, preferred, 15m landing interval), 1:15 (6.67% Max for new work, 10.5m max run, 700mm max rise), 1:12 (8.33% Reno-only for existing buildings). Side-by-side elevation profiles showing steepness difference and landing intervals."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -154,7 +161,11 @@ _Reason for the Law:_ Dual heights serve both seated and ambulant users; extensi
 - **800–900 mm** above nosings → general stair handrail band under PD 1096 IRR (without the dual‑rail requirement).[file:1]
 - Keep these regimes separate in both design and exam answers.
 
-<ArticleMedia id="media-bp-344-ramp-slope-tiers-1" name="ramp-handrail-and-edge-protection" type="diagram" caption="Section and elevation of accessible ramp: dual handrails at 700mm and 900mm height, round grip diameter 30-40mm, 300mm horizontal extensions at top and bottom, 100mm minimum raised edge curb on open sides, and 1100mm guard rail where drop exceeds 750mm above grade." />
+[SLATECAMP_UI_BLOCK:ui_0005 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-bp-344-ramp-slope-tiers-1", name="ramp-handrail-and-edge-protection", type="diagram", caption="Section and elevation of accessible ramp: dual handrails at 700mm and 900mm height, round grip diameter 30-40mm, 300mm horizontal extensions at top and bottom, 100mm minimum raised edge curb on open sides, and 1100mm guard rail where drop exceeds 750mm above grade."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -162,7 +173,7 @@ _Reason for the Law:_ Dual heights serve both seated and ambulant users; extensi
 
 **Problem:** Total rise = 1400 mm, new public building, accessible ramp at 1:15. Compute total horizontal footprint.
 
-1. **Total sloped length:**  
+1. **Total sloped length:**
    \\[
    1400\\,\\text{mm} \\times 15 = 21{,}000\\,\\text{mm} = 21.0\\,\\text{m}
    \\]
@@ -185,7 +196,11 @@ _Reason for the Law:_ Dual heights serve both seated and ambulant users; extensi
 | Top level landing    | 1800 mm                |
 | **TOTAL**            | **26,400 mm = 26.4 m** |
 
-<ArticleMedia id="media-bp-344-ramp-slope-tiers-2" name="ramp-footprint-computation" type="diagram" caption="Full ramp footprint diagram for 1400mm total rise at 1:15 slope: bottom landing (1800mm) → Run 1 (10,500mm) → intermediate landing (1800mm) → Run 2 (10,500mm) → top landing (1800mm). Total horizontal footprint = 26,400mm with key dimensions labeled." />
+[SLATECAMP_UI_BLOCK:ui_0006 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-bp-344-ramp-slope-tiers-2", name="ramp-footprint-computation", type="diagram", caption="Full ramp footprint diagram for 1400mm total rise at 1:15 slope: bottom landing (1800mm) → Run 1 (10,500mm) → intermediate landing (1800mm) → Run 2 (10,500mm) → top landing (1800mm). Total horizontal footprint = 26,400mm with key dimensions labeled."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 Common exam mistake: answering **21.0 m** and forgetting the three required landings.
 
@@ -253,7 +268,11 @@ If you want, next we can generate a combined **stairs–ramps–elevators** boar
 
 
 
-<ArticleMedia id="media-bp-344-ramp-slope-tiers-image" type="image" caption="BP 344 Four-Tier Ramp Slope System — Tier 1 Through Tier 4 Comparison" description="Four-panel comparison of BP 344 ramp tiers: Tier 1 (1:12-1:15, 6.0m max run), Tier 2 (1:15-1:20, 12.0m max run), Tier 3 (1:20-1:25, no max run), Tier 4 (>1:25 classified as walkway). Each panel shows slope ratio, max run, landing dimensions (1.50m min, 1.80m preferred), edge protection (100mm), and dual handrail heights (700mm/900mm)." />
+[SLATECAMP_UI_BLOCK:ui_0007 component="ArticleMedia" status="unknown"]
+Extracted summary:
+- Props: id="media-bp-344-ramp-slope-tiers-image", type="image", caption="BP 344 Four-Tier Ramp Slope System — Tier 1 Through Tier 4 Comparison", description=true, Four-panel=true, comparison=true, of=true, BP=true, ramp=true, tiers=true, Tier=true, max=true
+- Text: 1:25 classified as walkway). Each panel shows slope ratio, max run, landing dimensions (1.50m min, 1.80m preferred), edge protection (100mm), and dual handrail heights (700mm/900mm)." />
+[/SLATECAMP_UI_BLOCK]
 ## Cross‑References
 
 **Bp 344 Accessible Washrooms**, **Bp 344 Elevator Dimensions**, **Widths Slopes**, **Stairs Handrails Guardrails**

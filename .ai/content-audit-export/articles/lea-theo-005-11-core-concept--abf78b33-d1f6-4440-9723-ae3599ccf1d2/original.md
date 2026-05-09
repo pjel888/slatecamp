@@ -1,8 +1,18 @@
-## What You Need to Know for the LEA
-<Callout>
 
-Feminist and postcolonial perspectives fundamentally challenge architecture's traditional canon, revealing how architectural discourse has been structured by patriarchal and colonial assumptions, and how spaces—domestic, institutional, public—reproduce and enforce gender and racial hierarchies. The LEA tests your understanding of how these perspectives expose architecture's political dimensions and how contemporary architects and theorists work toward more equitable, culturally-grounded, and socially-engaged practice.
-</Callout>
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Theo 005 11 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
+## What You Need to Know for the LEA
+[SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Feminist and postcolonial perspectives fundamentally challenge architecture's traditional canon, revealing how architectural discourse has been structured by patriarchal and colonial assumptions, and how spaces—domestic, institutional, public—reproduce and enforce gender and racial hierarchies. The LEA tests your understanding of how these perspectives expose architecture's political dimensions and how contemporary architects and theorists work toward more equitable, culturally-grounded, and soc
+[/SLATECAMP_UI_BLOCK]
 
 ## Learning Goal
 
@@ -12,15 +22,31 @@ Feminist and postcolonial perspectives fundamentally challenge architecture's tr
 
 ## Core Concept
 
-<ArticleMedia id="media-lea-theo-005-11-feminist-postcolonial" type="image" caption="Feminist and Postcolonial Spatial Critique — How Architecture Reproduces or Dismantles Hierarchies" alt="Two-panel concept diagram. Left panel: 'Patriarchal/Colonial Space' showing isolated suburban home with separated kitchen/living areas (gender segregation), and colonial grid imposed on indigenous settlement patterns. Right panel: 'Equitable/Decolonized Space' showing shared domestic facilities, open plan with visible reproductive labor, and critical regionalist architecture rooted in local traditions. Arrow between panels labeled 'Spatial Agency & Decolonization'." suggestedAsset="Diagram comparing patriarchal/colonial space organization vs. equitable/decolonized spatial arrangements" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-theo-005-11-feminist-postcolonial", type="image", caption="Feminist and Postcolonial Spatial Critique — How Architecture Reproduces or Dismantles Hierarchies", alt="Two-panel concept diagram. Left panel: 'Patriarchal/Colonial Space' showing isolated suburban home with separated kitchen/living areas (gender segregation), and colonial grid imposed on indigenous settlement patterns. Right panel: 'Equitable/Decolonized Space' showing shared domestic facilities, open plan with visible reproductive labor, and critical regionalist architecture rooted in local traditions. Arrow between panels labeled 'Spatial Agency & Decolonization'.", suggestedAsset="Diagram comparing patriarchal/colonial space organization vs. equitable/decolonized spatial arrangements", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 Feminist critiques of architecture emerged in the 1970s and 1980s, initially asking a deceptively simple question: where are the women? The historical canon of "great architects" was overwhelmingly male; women's architectural contributions had been systematically erased, marginalized, or credited to male colleagues. More fundamentally, feminist theory exposed how architecture—particularly domestic architecture—has historically been designed to control women's bodies, movement, and social roles. The domestic sphere, relegated to women's governance in gender-hierarchical societies, was understood as the realm of necessity and reproduction rather than the realm of creativity and public significance claimed by male architects designing cities and institutions.
 
-<Tip>Feminist architectural analysis hinges on this equation: **Domestic space = gendered space = political space**. Architectural history treated domestic design as minor/private; feminist analysis reveals it as fundamentally political—it enforces gender roles through spatial organization. This reframing (domesticity as political) is the entire conceptual move.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Feminist architectural analysis hinges on this equation: **Domestic space = gendered space = political space**. Architectural history treated domestic design as minor/private; feminist analysis reveals it as fundamentally political—it enforces gender roles through spatial organization. This reframing (domesticity as political) is the entire conceptual move.
+[/SLATECAMP_UI_BLOCK]
 
-<Note>Dolores Hayden's *The Grand Domestic Revolution* (1981) is crucial because it shows feminism and architecture have *always* been intertwined. Women reformers imagined collective housing (shared kitchens, childcare centers) as *architectural solutions to patriarchal domesticity*—not as utopian fantasy but as practical contestation. This historical precedent proves that architectural feminism is not modern invention but recovery of suppressed tradition.</Note>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Dolores Hayden's *The Grand Domestic Revolution* (1981) is crucial because it shows feminism and architecture have *always* been intertwined. Women reformers imagined collective housing (shared kitchens, childcare centers) as *architectural solutions to patriarchal domesticity*—not as utopian fantasy but as practical contestation. This historical precedent proves that architectural feminism is not modern invention but recovery of suppressed tradition.
+[/SLATECAMP_UI_BLOCK]
 
-<Warn>Feminist architectural critique is NOT "hire more women architects" (though visibility matters). The core claim is that **spaces encode power**—that patriarchal arrangements are *materialized* in building design. This requires looking at floor plans, spatial separation, circulation patterns, not just architect demographics. A femlea-designed building can still reproduce patriarchal spatial logic; gender inclusion without spatial criticism is insufficient.</Warn>
+[SLATECAMP_UI_BLOCK:ui_0005 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Feminist architectural critique is NOT "hire more women architects" (though visibility matters). The core claim is that **spaces encode power**—that patriarchal arrangements are *materialized* in building design. This requires looking at floor plans, spatial separation, circulation patterns, not just architect demographics. A femlea-designed building can still reproduce patriarchal spatial logic; gender inclusion without spatial criticism is insufficient.
+[/SLATECAMP_UI_BLOCK]
 
 Feminist architectural analysis reveals how the spatial organization of houses inscribed gender roles. Victorian and modernist domestic architecture separated kitchen and living spaces, confining reproductive labor (cooking, cleaning, childcare) spatially and socially away from the intellectual and leisure spaces inhabited by men. The isolated suburban nuclear family home, celebrated as modernist domestic ideal, actually increased women's isolation and domestic labor while promoting male professional mobility. Feminist architects and theorists questioned these inherited spatial arrangements, asking: what would domestic space look like if designed for women's actual lives—their work, their autonomy, their social engagement—rather than reproducing patriarchal role divisions?
 
@@ -42,28 +68,68 @@ Contemporary practice increasingly reflects feminist and postcolonial concerns. 
 
 ## Key Facts and Testable Items
 
-<WikiExamTable headers={["Concept/Architect", "Focus", "Year", "Contribution"]} rows={[['["Dolores Hayden", "Feminist housing history", "1970s-1980s", "*The Grand Domestic Revolution*; collective housing alternatives"]', '["Lori Brown", "Contemporary feminist practice", "2000s-present", "*Contested Spaces*; ArchiteXX; women in architecture visibility"]', '["Feminist Spatial Theory", "Gender and urban/domestic space", "1980s-present", "Spaces are political; architecture enforces gender hierarchies"]', '["Postcolonial Architecture", "Non-Western architectural autonomy", "1960s-present", "Critique of modernist universalism; local grounding"]', '["Balkrishna Doshi", "Indian critical regionalism", "1970s-present", "Indigenous courtyard tradition; adaptive modernism"]', '["Hassan Fathy", "Egyptian earthen architecture", "1950s-1980s", "Mud-brick vernacular; climate-responsive design"]', '["Charles Correa", "Tropical architecture", "1970s-present", "Climate-responsive design; social engagement"]', '["Aga Khan Award", "Non-Western architectural excellence", "1977-present", "Recognition framework resisting Western architectural bias"]', '["Participatory Architecture", "Community engagement", "1980s-present", "Design emerging from communities\' needs and knowledge"]', '["Intersectionality", "Feminist theory", "1980s-present", "Gender, race, class, and imperialism interlocking"]']]} />
+[SLATECAMP_UI_BLOCK:ui_0006 component="WikiExamTable" status="preserved"]
+Extracted summary:
+- Props: headers="{[\"Concept/Architect\", \"Focus\", \"Year\", \"Contribution\"]}", rows="{[['[\"Dolores Hayden\", \"Feminist housing history\", \"1970s-1980s\", \"*The Grand Domestic Revolution*; collective housing alternatives\"]', '[\"Lori Brown\", \"Contemporary feminist practice\", \"2000s-present\", \"*Contested Spaces*; ArchiteXX; women in architecture visibility\"]', '[\"Feminist Spatial Theory\", \"Gender and urban/domestic space\", \"1980s-present\", \"Spaces are political; architecture enforces gender hierarchies\"]', '[\"Postcolonial Architecture\", \"Non-Western architectural autonomy\", \"1960s-present\", \"Critique of modernist universalism; local grounding\"]', '[\"Balkrishna Doshi\", \"Indian critical regionalism\", \"1970s-present\", \"Indigenous courtyard tradition; adaptive modernism\"]', '[\"Hassan Fathy\", \"Egyptian earthen architecture\", \"1950s-1980s\", \"Mud-brick vernacular; climate-responsive design\"]', '[\"Charles Correa\", \"Tropical architecture\", \"1970s-present\", \"Climate-responsive design; social engagement\"]', '[\"Aga Khan Award\", \"Non-Western architectural excellence\", \"1977-present\", \"Recognition framework resisting Western architectural bias\"]', '[\"Participatory Architecture\", \"Community engagement\", \"1980s-present\", \"Design emerging from communities\\' needs and knowledge\"]', '[\"Intersectionality\", \"Feminist theory\", \"1980s-present\", \"Gender, race, class, and imperialism interlocking\"]']]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 ## How It's Tested on the LEA
 
-<ExamTip>1. **Architectural Canon Critique**: The exam asks you to identify whose voices are absent from canonical architecture. Where are women? Where are non-Western architects? What gets erased in canonical construction?</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: 1. **Architectural Canon Critique**: The exam asks you to identify whose voices are absent from canonical architecture. Where are women? Where are non-Western architects? What gets erased in canonical construction?
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>2. **Gendered Space Analysis**: Questions ask how spatial organization enforces gender roles. Analyze a domestic space or public building through feminist lens. What assumptions about gender does its design embody?</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: 2. **Gendered Space Analysis**: Questions ask how spatial organization enforces gender roles. Analyze a domestic space or public building through feminist lens. What assumptions about gender does its design embody?
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>3. **Postcolonial Positioning**: Questions test whether you understand how formerly colonized architects negotiate between inherited colonialism and postcolonial identity. Doshi's work is not simply "Indian modernism"; it is specific engagement with postcolonial condition.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0009 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: 3. **Postcolonial Positioning**: Questions test whether you understand how formerly colonized architects negotiate between inherited colonialism and postcolonial identity. Doshi's work is not simply "Indian modernism"; it is specific engagement with postcolonial condition.
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>4. **Intersectionality**: Contemporary LEA examinations include intersectional questions: how do gender, race, class, and imperialism interlocking shape architectural experience? Simple feminist analysis ignoring postcolonial and racial dimensions is incomplete.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0010 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: 4. **Intersectionality**: Contemporary LEA examinations include intersectional questions: how do gender, race, class, and imperialism interlocking shape architectural experience? Simple feminist analysis ignoring postcolonial and racial dimensions is incomplete.
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>5. **Participatory Method**: Questions examine participatory and community-engaged approaches. How does design emerging from affected communities differ from expert-imposed solutions? What are benefits and challenges?</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0011 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: 5. **Participatory Method**: Questions examine participatory and community-engaged approaches. How does design emerging from affected communities differ from expert-imposed solutions? What are benefits and challenges?
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>6. **Vocabulary of Agency and Erasure**: You must understand terms like epistemic violence (devaluing non-Western knowledge), erasure (women's contributions rendered invisible), marginalization (excluding certain voices), and decolonization (challenging colonial knowledge structures).</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0012 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: 6. **Vocabulary of Agency and Erasure**: You must understand terms like epistemic violence (devaluing non-Western knowledge), erasure (women's contributions rendered invisible), marginalization (excluding certain voices), and decolonization (challenging colonial knowledge structures).
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
-<WikiMistakeCard mistake="Treating Feminism as Merely Women's Inclusion" correction="Students sometimes reduce feminist architecture to \"include more women architects.\" While visibility is important, feminist analysis is fundamentally about exposing how architecture reproduces patriarchal hierarchies and reimagining spatial organization for gender equity." context="It is not simply adding women to existing frameworks." />
+[SLATECAMP_UI_BLOCK:ui_0013 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Treating Feminism as Merely Women's Inclusion", correction="Students sometimes reduce feminist architecture to \\", include=true, more=true, women=true, architects=true, While=true, visibility=true, is=true, important=true, feminist=true, analysis=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeCard mistake="Romanticizing Indigenous or Traditional Architecture" correction="Postcolonial perspective critiques both crude colonialism and romantic nostalgia. Doshi does not simply revive traditional courtyards; he engages them critically as contemporary solutions." context="Distinguishing critical engagement from conservative preservation is crucial." />
+[SLATECAMP_UI_BLOCK:ui_0014 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Romanticizing Indigenous or Traditional Architecture", correction="Postcolonial perspective critiques both crude colonialism and romantic nostalgia. Doshi does not simply revive traditional courtyards; he engages them critically as contemporary solutions.", context="Distinguishing critical engagement from conservative preservation is crucial."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeList mistakes={["Universalizing Western Feminism. \"Feminism\" is not monolithic. Western feminist theory emphasizing individual autonomy may differ from feminist concerns in contexts where collective family structures are primary, or where anticolonial and feminist struggles are inseparable. Contemporary feminist scholarship is attentive to these differences.", "Separating Gender and Race/Postcolonial Analysis. Students sometimes analyze gender separately from race and imperialism. Intersectionality insists these are inseparable. Women of color, women in the Global South, and Indigenous women experience architecture through interlocking systems of domination.", "Assuming Postcolonial Architecture is Only Regional. Postcolonial architecture is not simply \"respect local traditions.\" Postcoloniality is a condition and analytical position regarding colonialism's ongoing effects. Contemporary Indian or Egyptian architecture engages global modernity while refusing complete Westernization.", "Missing Institutional and Pedagogical Dimensions. Decolonizing architecture requires not just different designs but transforming architectural education, professional structures, and canonization processes. Recognizing this systemic dimension is crucial to understanding feminist and postcolonial perspectives' full scope."]} />
+[SLATECAMP_UI_BLOCK:ui_0015 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Universalizing Western Feminism. \\\"Feminism\\\" is not monolithic. Western feminist theory emphasizing individual autonomy may differ from feminist concerns in contexts where collective family structures are primary, or where anticolonial and feminist struggles are inseparable. Contemporary feminist scholarship is attentive to these differences.\", \"Separating Gender and Race/Postcolonial Analysis. Students sometimes analyze gender separately from race and imperialism. Intersectionality insists these are inseparable. Women of color, women in the Global South, and Indigenous women experience architecture through interlocking systems of domination.\", \"Assuming Postcolonial Architecture is Only Regional. Postcolonial architecture is not simply \\\"respect local traditions.\\\" Postcoloniality is a condition and analytical position regarding colonialism's ongoing effects. Contemporary Indian or Egyptian architecture engages global modernity while refusing complete Westernization.\", \"Missing Institutional and Pedagogical Dimensions. Decolonizing architecture requires not just different designs but transforming architectural education, professional structures, and canonization processes. Recognizing this systemic dimension is crucial to understanding feminist and postcolonial perspectives' full scope.\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Terms
 

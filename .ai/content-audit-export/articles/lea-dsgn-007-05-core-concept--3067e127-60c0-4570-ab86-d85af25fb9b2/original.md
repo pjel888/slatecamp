@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Dsgn 007 05 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 
 Reading and analyzing a design brief is a critical skill for architects. The brief sets project parameters, client requirements, site constraints, and regulatory context. Comprehensive brief analysis informs all subsequent design decisions and prevents misalignment with client expectations.
@@ -19,7 +28,11 @@ A design brief is a document prepared by the client or their representative (oft
 **Design Intent and Constraints** articulate client goals and limitations. The brief may specify aesthetic preferences (modern, vernacular, sustainability emphasis), performance targets (energy efficiency, resilience), budget parameters, or schedule constraints. Identifying implicit constraints (e.g., "minimizing excavation" suggests challenging soil conditions) is as important as recognizing explicit requirements.
 
 **Ambiguities and Clarifications** require early identification. Briefs may contain incomplete information, contradictory requirements, or vague statements. The architect's role includes identifying these gaps and obtaining clarification from the client before design begins. Assumptions made without verification create project risk.
-<ArticleMedia id="media-lea-dsgn-007-05-core-concept" type="image" caption="Design Brief Analysis — Project Parameters and Constraints Diagram" description="Radial diagram showing the six dimensions of design brief analysis: client requirements, site constraints, regulatory context, budget parameters, program requirements, and schedule milestones. Central hub shows how integrated analysis informs design decisions." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-dsgn-007-05-core-concept", type="image", caption="Design Brief Analysis — Project Parameters and Constraints Diagram", description="Radial diagram showing the six dimensions of design brief analysis: client requirements, site constraints, regulatory context, budget parameters, program requirements, and schedule milestones. Central hub shows how integrated analysis informs design decisions.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Provisions
 
@@ -54,10 +67,18 @@ Design briefs in the Philippines follow the Unified Architects Practice (UAP) fr
 
 **Pattern 3 — Ambiguity Identification:** A brief describes a mixed-use facility with vague adjacency requirements and unclear scope. Identify missing information and formulate questions for client clarification. Tests critical thinking and risk recognition.
 
-<Tip>Brief = requirements, not solutions. Read carefully: explicit requirements, implied constraints, ambiguities. Clarify before design. Program + Site + Code + Intent = Design parameters. Verify occupancy group early; it drives many other decisions.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Brief = requirements, not solutions. Read carefully: explicit requirements, implied constraints, ambiguities. Clarify before design. Program + Site + Code + Intent = Design parameters. Verify occupancy group early; it drives many other decisions.
+[/SLATECAMP_UI_BLOCK]
 
 **Exam Tip — ERR-DSGN-002:** Design principles (proportion, scale, balance, rhythm, hierarchy) are tested through visual analysis. The LEA may present a building image and ask which principle is violated or best represented.
-<ArticleMedia id="media-lea-dsgn-007-05-core-concept" type="image" caption="Design Brief Decomposition — Requirements to Design Criteria" description="Flowchart showing the design brief analysis process: client requirements → site constraints → regulatory code review → program requirements → budget parameters → schedule milestones → integrated design criteria. Shows how each input translates to a specific design parameter." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0003 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-dsgn-007-05-core-concept", type="image", caption="Design Brief Decomposition — Requirements to Design Criteria", description="Flowchart showing the design brief analysis process: client requirements → site constraints → regulatory code review → program requirements → budget parameters → schedule milestones → integrated design criteria. Shows how each input translates to a specific design parameter.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Cross-References
 
@@ -65,4 +86,8 @@ See **LEA-DSGN-007-06** (Building Integration) for principle application, **LEA-
 
 ## Common Mistakes
 
-<WikiMistakeList mistakes={["Assuming the brief is complete without asking clarification questions about ambiguous or missing information","Misinterpreting occupancy group, leading to incorrect egress, parking, or accessibility designs","Failing to identify site constraints (topography, utilities, drainage) that should influence building placement","Overlooking regulatory requirements (specific codes, permits, inspections) until design is complete","Confusing program areas with total GFA (program areas usually exclude circulation, structure, MEP)","Assuming design intent from aesthetic preference without understanding functional requirements","Ignoring climate and environmental context (tropical weather, seismic zone, flood risk) specified in brief","Making assumptions about budget or schedule without client confirmation","Failing to identify decision-makers and approval process; designing in isolation","Missing implicit constraints (e.g., 'minimize site disturbance' suggests environmental sensitivity or poor soil conditions)"]} />
+[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Assuming the brief is complete without asking clarification questions about ambiguous or missing information\",\"Misinterpreting occupancy group, leading to incorrect egress, parking, or accessibility designs\",\"Failing to identify site constraints (topography, utilities, drainage) that should influence building placement\",\"Overlooking regulatory requirements (specific codes, permits, inspections) until design is complete\",\"Confusing program areas with total GFA (program areas usually exclude circulation, structure, MEP)\",\"Assuming design intent from aesthetic preference without understanding functional requirements\",\"Ignoring climate and environmental context (tropical weather, seismic zone, flood risk) specified in brief\",\"Making assumptions about budget or schedule without client confirmation\",\"Failing to identify decision-makers and approval process; designing in isolation\",\"Missing implicit constraints (e.g., 'minimize site disturbance' suggests environmental sensitivity or poor soil conditions)\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]

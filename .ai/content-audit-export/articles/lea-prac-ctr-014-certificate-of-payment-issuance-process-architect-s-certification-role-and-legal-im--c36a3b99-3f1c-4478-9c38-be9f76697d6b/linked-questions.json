@@ -1,9 +1,59 @@
 {
   "article_id": "c36a3b99-3f1c-4478-9c38-be9f76697d6b",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:cb8b219bb88a27b433542218378e3cb791f2b0a18e8fe6e9580f4099c8bc1b80",
+  "linked_questions_hash": "sha256:a5b318c7fc09788df0910b6d45db40a12e793d8b1765806703c247064366889d",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "e3543d1e-ee81-4d1e-bfda-6cc4da93acab",
+      "article_id": "c36a3b99-3f1c-4478-9c38-be9f76697d6b",
+      "topic_id": "afbf5d3b-1d68-47ec-b0dc-a788267ce0d8",
+      "text": "What does a contractor's application for payment typically include?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only a request for a specific dollar amount, without any supporting documentation or breakdown of costs"
+        },
+        {
+          "id": "b",
+          "text": "Descriptions of completed work, supporting documentation, and cost claimed for each item"
+        },
+        {
+          "id": "c",
+          "text": "Only the contractor's statement that work is complete, which does not provide sufficient detail for verification"
+        },
+        {
+          "id": "d",
+          "text": "Lists of all future work to be performed, which are not relevant to the current payment application"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Oversimplifies applications; they must include detailed work descriptions and supporting documentation, not just an amount.",
+        "c": "Confuses claims with minimal support; applications must include supporting documentation substantiating the work and costs claimed.",
+        "d": "Contradicts the purpose; applications describe past work performed, not future work to be done.",
+        "correct": "Applications for payment include detailed work descriptions, invoices, and documentation supporting the costs claimed.",
+        "takeaway": "Applications for payment must detail the work performed with supporting documentation like invoices and subcontractor receipts."
+      },
+      "explanation": "Oversimplifies applications; they must include detailed work descriptions and supporting documentation, not just an amount. Confuses claims with minimal support; applications must include supporting documentation substantiating the work and costs claimed. Contradicts the purpose; applications describe past work performed, not future work to be done. Applications for payment include detailed work descriptions, invoices, and documentation supporting the costs claimed. Applications for payment must detail the work performed with supporting documentation like invoices and subcontractor receipts.",
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-014-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.526003+00:00",
+      "updated_at": "2026-05-06T14:40:21.30263+00:00",
+      "content_hash": "sha256:b28b0a5dc1e6219a8f165cb93604fcac9aab345e8bbf0df8b31292c7437a6c3a"
+    },
     {
       "question_id": "20dbf2ae-a1a5-4080-b88e-e8fc4d0dc8d5",
       "article_id": "c36a3b99-3f1c-4478-9c38-be9f76697d6b",
@@ -253,56 +303,6 @@
       "created_at": "2026-03-23T19:27:47.526003+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:b6ac6fad9761f013462038d289fa1da347a43922d26354d499ad43e028f13faa"
-    },
-    {
-      "question_id": "e3543d1e-ee81-4d1e-bfda-6cc4da93acab",
-      "article_id": "c36a3b99-3f1c-4478-9c38-be9f76697d6b",
-      "topic_id": "afbf5d3b-1d68-47ec-b0dc-a788267ce0d8",
-      "text": "What does a contractor's application for payment typically include?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Only a request for a specific dollar amount, without any supporting documentation or breakdown of costs"
-        },
-        {
-          "id": "b",
-          "text": "Descriptions of completed work, supporting documentation, and cost claimed for each item"
-        },
-        {
-          "id": "c",
-          "text": "Only the contractor's statement that work is complete, which does not provide sufficient detail for verification"
-        },
-        {
-          "id": "d",
-          "text": "Lists of all future work to be performed, which are not relevant to the current payment application"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Oversimplifies applications; they must include detailed work descriptions and supporting documentation, not just an amount.",
-        "c": "Confuses claims with minimal support; applications must include supporting documentation substantiating the work and costs claimed.",
-        "d": "Contradicts the purpose; applications describe past work performed, not future work to be done.",
-        "correct": "Applications for payment include detailed work descriptions, invoices, and documentation supporting the costs claimed.",
-        "takeaway": "Applications for payment must detail the work performed with supporting documentation like invoices and subcontractor receipts."
-      },
-      "explanation": null,
-      "code_citation": "UAP Doc 301",
-      "bloom_level": "understand",
-      "application_context": "client_scenario",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PRAC-CTR-014-003",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:65280fed717af32e875d60089bb6ca3d7cd007f6882181e5b0fb4991aa254eb7"
     },
     {
       "question_id": "eefff249-36bc-4122-8e6c-2f298d231850",

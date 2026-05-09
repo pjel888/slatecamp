@@ -1,76 +1,14 @@
 {
   "article_id": "bd009a97-21fe-400e-8717-615d5a877cfd",
   "slug": "excavation-foundation-and-veneer",
-  "normalized_created_at": "2026-05-04T09:10:36.535Z",
+  "normalized_created_at": "2026-05-09T04:02:59.039Z",
   "parser_version": "ui-block-parser-v1",
-  "original_content_hash": "sha256:7beafa39d563c7b3c1b3c1552e40e14f28e9f76c5956a4bb3816f813b02bb770",
-  "normalized_content_hash": "sha256:9f07087acbfcc92b2e1a478be322fecd3025eefc4cb6a29c011572084ebde2cd",
-  "ui_block_count": 2,
-  "total_blocks": 2,
-  "blocks": [
-    {
-      "block_id": "ui_0001",
-      "block_type": "mdx_component",
-      "component_name": "LawCallout",
-      "raw": "<LawCallout code=\"nbcp\" title=\"not the Building Official, not a general posting. This 10-day window allows the\">\n\nPer PD 1096, Rule XII, Sec. 1202.2.d, the party responsible for the excavation must notify all adjoining property owners in writing at least 10 days before excavation commences. The notice is directed to the property owner — not the Building Official, not a general posting. This 10-day window allows the neighbor to engage their own structural engineer, document pre-existing conditions, and arrange for access. Option A is wrong on both the period (7 days) and the form (verbal). Option B has the wrong period (15 days) and wrong recipient (Building Official). Option D is wrong on the period (5 days) and the method (fence posting is insufficient).\n\n</LawCallout>",
-      "raw_hash": "sha256:b25f87ca8a1294703711f820d7493f255a3f02323967b9f8469e78dde326489c",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"LawCallout\" status=\"preserved\"]\nExtracted summary:\n- Props: code=\"nbcp\", title=\"not the Building Official, not a general posting. This 10-day window allows the\"\n- Text: Per PD 1096, Rule XII, Sec. 1202.2.d, the party responsible for the excavation must notify all adjoining property owners in writing at least 10 days before excavation commences. The notice is directed to the property owner — not the Building Official, not a general posting. This 10-day window allows the neighbor to engage their own structural engineer, document pre-existing conditions, and arrange for access. Option A is wrong on both the period (7 days) and the form (verbal). Option B has the w\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:d9a3cebfd787443a7d627e35b611b10997fea8ceb49c25c2f3a43040c16a8ccc",
-      "props": {
-        "code": "nbcp",
-        "title": "not the Building Official, not a general posting. This 10-day window allows the"
-      },
-      "props_json": {
-        "code": "nbcp",
-        "title": "not the Building Official, not a general posting. This 10-day window allows the"
-      },
-      "props_text": "code=\"nbcp\" title=\"not the Building Official, not a general posting. This 10-day window allows the\"",
-      "children_raw": "\n\nPer PD 1096, Rule XII, Sec. 1202.2.d, the party responsible for the excavation must notify all adjoining property owners in writing at least 10 days before excavation commences. The notice is directed to the property owner — not the Building Official, not a general posting. This 10-day window allows the neighbor to engage their own structural engineer, document pre-existing conditions, and arrange for access. Option A is wrong on both the period (7 days) and the form (verbal). Option B has the wrong period (15 days) and wrong recipient (Building Official). Option D is wrong on the period (5 days) and the method (fence posting is insufficient).\n\n",
-      "children_text": "Per PD 1096, Rule XII, Sec. 1202.2.d, the party responsible for the excavation must notify all adjoining property owners in writing at least 10 days before excavation commences. The notice is directed to the property owner — not the Building Official, not a general posting. This 10-day window allows the neighbor to engage their own structural engineer, document pre-existing conditions, and arrange for access. Option A is wrong on both the period (7 days) and the form (verbal). Option B has the w",
-      "start_offset": 17350,
-      "end_offset": 18130,
-      "line_start": 196,
-      "line_end": 200,
-      "parser_confidence": "high",
-      "parse_status": "parsed",
-      "warnings": [],
-      "status": "preserved"
-    },
-    {
-      "block_id": "ui_0002",
-      "block_type": "mdx_component",
-      "component_name": "ArticleMedia",
-      "raw": "<ArticleMedia id=\"media-excavation-foundation-and-vene-0\" type=\"image\" caption=\"Excavation and Foundation Protection — Cross-Section with Shoring and Underpinning\" description=\"Cross-section of urban excavation showing: excavation depth with shoring system (sheet piles, soldier piles with lagging), adjoining building footing underpinning (pit method or micropiles), 10-day notice requirement zone, soil bearing capacity testing locations (NSCP Table 304.1), masonry veneer anchorage (tie spacing complying with PD 1096 Rule XVI), and drainage system at foundation base.\" />",
-      "raw_hash": "sha256:55e3af7f5066d670e6cc630b89dfaa035008f780482fd3c043b11366c4704879",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"ArticleMedia\" status=\"preserved\"]\nExtracted summary:\n- Props: id=\"media-excavation-foundation-and-vene-0\", type=\"image\", caption=\"Excavation and Foundation Protection — Cross-Section with Shoring and Underpinning\", description=\"Cross-section of urban excavation showing: excavation depth with shoring system (sheet piles, soldier piles with lagging), adjoining building footing underpinning (pit method or micropiles), 10-day notice requirement zone, soil bearing capacity testing locations (NSCP Table 304.1), masonry veneer anchorage (tie spacing complying with PD 1096 Rule XVI), and drainage system at foundation base.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:c2b6c8edf86611837234cd335709f936254e48834bcab571d6231bdd486416bf",
-      "props": {
-        "id": "media-excavation-foundation-and-vene-0",
-        "type": "image",
-        "caption": "Excavation and Foundation Protection — Cross-Section with Shoring and Underpinning",
-        "description": "Cross-section of urban excavation showing: excavation depth with shoring system (sheet piles, soldier piles with lagging), adjoining building footing underpinning (pit method or micropiles), 10-day notice requirement zone, soil bearing capacity testing locations (NSCP Table 304.1), masonry veneer anchorage (tie spacing complying with PD 1096 Rule XVI), and drainage system at foundation base."
-      },
-      "props_json": {
-        "id": "media-excavation-foundation-and-vene-0",
-        "type": "image",
-        "caption": "Excavation and Foundation Protection — Cross-Section with Shoring and Underpinning",
-        "description": "Cross-section of urban excavation showing: excavation depth with shoring system (sheet piles, soldier piles with lagging), adjoining building footing underpinning (pit method or micropiles), 10-day notice requirement zone, soil bearing capacity testing locations (NSCP Table 304.1), masonry veneer anchorage (tie spacing complying with PD 1096 Rule XVI), and drainage system at foundation base."
-      },
-      "props_text": "id=\"media-excavation-foundation-and-vene-0\" type=\"image\" caption=\"Excavation and Foundation Protection — Cross-Section with Shoring and Underpinning\" description=\"Cross-section of urban excavation showing: excavation depth with shoring system (sheet piles, soldier piles with lagging), adjoining building footing underpinning (pit method or micropiles), 10-day notice requirement zone, soil bearing capacity testing locations (NSCP Table 304.1), masonry veneer anchorage (tie spacing complying with PD 1096 Rule XVI), and drainage system at foundation base.\"",
-      "children_raw": null,
-      "children_text": null,
-      "start_offset": 22256,
-      "end_offset": 22831,
-      "line_start": 264,
-      "line_end": 264,
-      "parser_confidence": "high",
-      "parse_status": "parsed",
-      "warnings": [],
-      "status": "preserved"
-    }
-  ],
+  "original_content_hash": "sha256:2ecc44e02b6ef0fbc615d62e0760f0e0bb8d9d99228326e5f5d04181f2ef7dd4",
+  "normalized_content_hash": "sha256:2ecc44e02b6ef0fbc615d62e0760f0e0bb8d9d99228326e5f5d04181f2ef7dd4",
+  "ui_block_count": 0,
+  "total_blocks": 0,
+  "blocks": [],
   "unknown_blocks": [],
   "unresolved_critical_blocks": [],
-  "ui_blocks_hash": "sha256:582c29bdc1266152471026569eddffbaa4ce1e0092d04002e65805b0c729ef12",
-  "normalized_content_hash_sha256": "sha256:9f07087acbfcc92b2e1a478be322fecd3025eefc4cb6a29c011572084ebde2cd"
+  "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
 }

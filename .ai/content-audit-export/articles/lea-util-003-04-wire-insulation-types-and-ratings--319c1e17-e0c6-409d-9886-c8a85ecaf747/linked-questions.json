@@ -1,9 +1,109 @@
 {
   "article_id": "319c1e17-e0c6-409d-9886-c8a85ecaf747",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:1f329d47bbb0a639f646970dc3d6ca935370567404d85619c37020fa708b88c6",
+  "linked_questions_hash": "sha256:453cc47f3404d0254a5c0c3d24b05fe5b8dd986aacf6bec27411c628d5167359",
   "question_count": 15,
   "questions": [
+    {
+      "question_id": "9c487f03-f464-4dc7-8e50-57de4b3b0927",
+      "article_id": "319c1e17-e0c6-409d-9886-c8a85ecaf747",
+      "topic_id": "7610b579-ac95-42bc-a5e8-1b49556b0f47",
+      "text": "What is the primary difference between THWN and THHN wire insulation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "THWN is rated for wet locations (75°C wet/90°C dry); THHN is rated for dry locations only (90°C dry)"
+        },
+        {
+          "id": "b",
+          "text": "THHN is water-resistant and has a 90°C wet rating; THWN must be protected in conduit and is not suitable for direct burial"
+        },
+        {
+          "id": "c",
+          "text": "THWN cannot be used in wet locations; THHN has superior moisture resistance and is preferred for outdoor applications"
+        },
+        {
+          "id": "d",
+          "text": "THHN and THWN are identical; the difference is only in the nylon coating thickness, which affects flexibility and installation ease"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Confuses the temperature ratings and incorrectly suggests THWN requires conduit like THHN does.",
+        "c": "Reverses the temperature ratings and wet/dry characteristics of both wire types.",
+        "d": "Suggests the wires are identical, which overlooks critical differences in construction and application.",
+        "correct": "THWN is water-resistant and rated 75°C wet/90°C dry, making it suitable for both wet and dry locations. THHN is a single-conductor wire rated 90°C dry locations only, typically used in conduit systems.",
+        "takeaway": "THWN's water-resistant nylon coating allows flexible wet/dry use; THHN's design requires conduit protection."
+      },
+      "explanation": "Confuses the temperature ratings and incorrectly suggests THWN requires conduit like THHN does. Reverses the temperature ratings and wet/dry characteristics of both wire types. Suggests the wires are identical, which overlooks critical differences in construction and application. THWN is water-resistant and rated 75°C wet/90°C dry, making it suitable for both wet and dry locations. THHN is a single-conductor wire rated 90°C dry locations only, typically used in conduit systems. THWN's water-resistant nylon coating allows flexible wet/dry use; THHN's design requires conduit protection.",
+      "code_citation": "PEC Table 310.15(B)(16); Article on Wire Insulation Types and Ratings",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-003-04-011",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:58.533411+00:00",
+      "updated_at": "2026-05-06T15:39:34.276003+00:00",
+      "content_hash": "sha256:bbaf2067d5140bdfdf68e875ff896f335d942eed9b48e11a73d58a1859ab6fa8"
+    },
+    {
+      "question_id": "c368a887-2180-412e-9bc5-72fa51708932",
+      "article_id": "319c1e17-e0c6-409d-9886-c8a85ecaf747",
+      "topic_id": "7610b579-ac95-42bc-a5e8-1b49556b0f47",
+      "text": "A wet basement installation in the Philippines must be wired. Which combination of wire type and conduit is most appropriate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "THWN wire (75°C wet rating) with EMT conduit for cost efficiency, though EMT may not be suitable for wet locations"
+        },
+        {
+          "id": "b",
+          "text": "TW wire (60°C wet rating) with PVC conduit, keeping it simple but potentially inadequate for high moisture environments"
+        },
+        {
+          "id": "c",
+          "text": "THWN wire (75°C wet rating) with PVC conduit, both rated for wet locations and corrosion-resistant"
+        },
+        {
+          "id": "d",
+          "text": "THHN wire with IMC conduit because higher temperature rating prevents water damage, though THHN is not rated for wet locations"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "EMT requires corrosion protection (e.g., PVC coating) for wet locations per PEC.",
+        "b": "TW is lower-rated (60°C); while acceptable, it's unnecessarily conservative for the application.",
+        "d": "THHN is single-conductor and requires separate conduit anyway; temperature rating doesn't prevent water ingress.",
+        "correct": "For wet basements, THWN wire's 75°C wet rating and PVC conduit's corrosion resistance combine to provide safe, durable performance in Philippine tropical humidity. Both are rated for wet locations per PEC.",
+        "takeaway": "Wet locations require combination of wet-rated wire insulation and corrosion-resistant conduit (PVC or IMC)."
+      },
+      "explanation": "EMT requires corrosion protection (e.g., PVC coating) for wet locations per PEC. TW is lower-rated (60°C); while acceptable, it's unnecessarily conservative for the application. THHN is single-conductor and requires separate conduit anyway; temperature rating doesn't prevent water ingress. For wet basements, THWN wire's 75°C wet rating and PVC conduit's corrosion resistance combine to provide safe, durable performance in Philippine tropical humidity. Both are rated for wet locations per PEC. Wet locations require combination of wet-rated wire insulation and corrosion-resistant conduit (PVC or IMC).",
+      "code_citation": "Wire Insulation Types section; Conduit Types section; conduit selection matrix",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-003-04-017",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:58.533411+00:00",
+      "updated_at": "2026-05-06T15:39:34.114338+00:00",
+      "content_hash": "sha256:0329b15cba512b556c8b2d972d71e32d94fb02c40fbd200ba90d93afc9d4cf83"
+    },
     {
       "question_id": "d5a41196-7884-4484-a54a-fe563787c459",
       "article_id": "319c1e17-e0c6-409d-9886-c8a85ecaf747",
@@ -39,7 +139,7 @@
         "correct": "MI cable's mineral insulation (MgO) and copper/steel sheath provide unmatched fire resistance and temperature ratings (250°C dry, 150°C wet). MI cable is suitable for hospital life-safety systems requiring circuit integrity during fire per PEC. PEC recognizes MI as the premium choice for critical circuits.",
         "takeaway": "Life-safety and fire-rated circuits require MI cable's mineral insulation, not standard copper insulation."
       },
-      "explanation": null,
+      "explanation": "NM is restricted to dry residential locations; completely unsuitable for hospitals' critical infrastructure. AC cable lacks the fire-rating properties needed; mechanical protection ≠ fire resistance. While MC provides grounding and some protection, it lacks MI's fire-rated insulation (only 60–90°C, not 250°C). MI cable's mineral insulation (MgO) and copper/steel sheath provide unmatched fire resistance and temperature ratings (250°C dry, 150°C wet). MI cable is suitable for hospital life-safety systems requiring circuit integrity during fire per PEC. PEC recognizes MI as the premium choice for critical circuits. Life-safety and fire-rated circuits require MI cable's mineral insulation, not standard copper insulation.",
       "code_citation": "Cable Types and Applications section; MI cable description",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
@@ -51,8 +151,8 @@
       "model_id": "ALE-UTIL-003-04-023",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:58.533411+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:9a5a48d96fca44b0d736502ca35fecc9b80e42b9592f8bfcf6b21d62c7954193"
+      "updated_at": "2026-05-06T15:39:33.851982+00:00",
+      "content_hash": "sha256:65bb82b6d378cc8f1af16c39ba44649891c1e172b6e1cb339f88b96f016bd7e5"
     },
     {
       "question_id": "7b786312-97f6-4f68-95b9-04aa24cf27c7",
@@ -189,7 +289,7 @@
         "correct": "XHHW uses cross-linked polyethylene insulation, providing superior durability and thermal stability compared to THWN's thermoplastic coating. This makes XHHW preferred for main feeders and high-load circuits that generate sustained heat.",
         "takeaway": "XHHW's cross-linked polyethylene provides superior insulation durability, preferred for feeders and heavy-load circuits."
       },
-      "explanation": null,
+      "explanation": "Incorrectly suggests cost and weight advantages, when XHHW is actually more expensive than THWN. Confuses installation method; both THWN and XHHW are typically installed in conduit. While ampacity may differ by size, the advantage isn't a blanket 25% increase; it stems from better thermal properties. XHHW uses cross-linked polyethylene insulation, providing superior durability and thermal stability compared to THWN's thermoplastic coating. This makes XHHW preferred for main feeders and high-load circuits that generate sustained heat. XHHW's cross-linked polyethylene provides superior insulation durability, preferred for feeders and heavy-load circuits.",
       "code_citation": "Wire Insulation Types section; XHHW description",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
@@ -201,8 +301,8 @@
       "model_id": "ALE-UTIL-003-04-013",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:58.533411+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:c30c73e13efb6460e51bc3e6e9aad77c5af0064d8a5c6900b98823b0d6124d0e"
+      "updated_at": "2026-05-06T15:39:33.979934+00:00",
+      "content_hash": "sha256:be90a3e1bebcdca0cc17c100ddd5bc52e431b1518987566127fb56027ff70028"
     },
     {
       "question_id": "d17b7346-0668-4b7c-8b46-2de17f018cbc",
@@ -405,56 +505,6 @@
       "content_hash": "sha256:b1a36d1a5e7f36c5d7ee4592c1317969586921295282537b9ffd1eae65750f4b"
     },
     {
-      "question_id": "c368a887-2180-412e-9bc5-72fa51708932",
-      "article_id": "319c1e17-e0c6-409d-9886-c8a85ecaf747",
-      "topic_id": "7610b579-ac95-42bc-a5e8-1b49556b0f47",
-      "text": "A wet basement installation in the Philippines must be wired. Which combination of wire type and conduit is most appropriate?",
-      "options": [
-        {
-          "id": "a",
-          "text": "THWN wire (75°C wet rating) with EMT conduit for cost efficiency, though EMT may not be suitable for wet locations"
-        },
-        {
-          "id": "b",
-          "text": "TW wire (60°C wet rating) with PVC conduit, keeping it simple but potentially inadequate for high moisture environments"
-        },
-        {
-          "id": "c",
-          "text": "THWN wire (75°C wet rating) with PVC conduit, both rated for wet locations and corrosion-resistant"
-        },
-        {
-          "id": "d",
-          "text": "THHN wire with IMC conduit because higher temperature rating prevents water damage, though THHN is not rated for wet locations"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "EMT requires corrosion protection (e.g., PVC coating) for wet locations per PEC.",
-        "b": "TW is lower-rated (60°C); while acceptable, it's unnecessarily conservative for the application.",
-        "d": "THHN is single-conductor and requires separate conduit anyway; temperature rating doesn't prevent water ingress.",
-        "correct": "For wet basements, THWN wire's 75°C wet rating and PVC conduit's corrosion resistance combine to provide safe, durable performance in Philippine tropical humidity. Both are rated for wet locations per PEC.",
-        "takeaway": "Wet locations require combination of wet-rated wire insulation and corrosion-resistant conduit (PVC or IMC)."
-      },
-      "explanation": null,
-      "code_citation": "Wire Insulation Types section; Conduit Types section; conduit selection matrix",
-      "bloom_level": "understand",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-UTIL-003-04-017",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:58.533411+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:1a50a0fef7d6ecd4b22083038f405ea7c149e30c1b14034356a6b90715ed07d1"
-    },
-    {
       "question_id": "b542cb36-ab7a-4eab-bf00-926f504798a6",
       "article_id": "319c1e17-e0c6-409d-9886-c8a85ecaf747",
       "topic_id": "7610b579-ac95-42bc-a5e8-1b49556b0f47",
@@ -503,56 +553,6 @@
       "created_at": "2026-03-23T19:27:58.533411+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:2600575a052c985c35e193a4b5d3ba42a42de952f3d4f09e29de56843534a667"
-    },
-    {
-      "question_id": "9c487f03-f464-4dc7-8e50-57de4b3b0927",
-      "article_id": "319c1e17-e0c6-409d-9886-c8a85ecaf747",
-      "topic_id": "7610b579-ac95-42bc-a5e8-1b49556b0f47",
-      "text": "What is the primary difference between THWN and THHN wire insulation?",
-      "options": [
-        {
-          "id": "a",
-          "text": "THWN is rated for wet locations (75°C wet/90°C dry); THHN is rated for dry locations only (90°C dry)"
-        },
-        {
-          "id": "b",
-          "text": "THHN is water-resistant and has a 90°C wet rating; THWN must be protected in conduit and is not suitable for direct burial"
-        },
-        {
-          "id": "c",
-          "text": "THWN cannot be used in wet locations; THHN has superior moisture resistance and is preferred for outdoor applications"
-        },
-        {
-          "id": "d",
-          "text": "THHN and THWN are identical; the difference is only in the nylon coating thickness, which affects flexibility and installation ease"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "b": "Confuses the temperature ratings and incorrectly suggests THWN requires conduit like THHN does.",
-        "c": "Reverses the temperature ratings and wet/dry characteristics of both wire types.",
-        "d": "Suggests the wires are identical, which overlooks critical differences in construction and application.",
-        "correct": "THWN is water-resistant and rated 75°C wet/90°C dry, making it suitable for both wet and dry locations. THHN is a single-conductor wire rated 90°C dry locations only, typically used in conduit systems.",
-        "takeaway": "THWN's water-resistant nylon coating allows flexible wet/dry use; THHN's design requires conduit protection."
-      },
-      "explanation": null,
-      "code_citation": "PEC Table 310.15(B)(16); Article on Wire Insulation Types and Ratings",
-      "bloom_level": "remember",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-UTIL-003-04-011",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:58.533411+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:66a7fbfffb9fbb45483d1689390d32b46882148736092725d30fd908239ccc00"
     },
     {
       "question_id": "cf16557a-6172-4a30-b563-8dbcedfd8e8d",

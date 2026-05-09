@@ -1,9 +1,60 @@
 {
   "article_id": "3fe83b11-50d8-45ab-9530-936fb59fd974",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:8af580235635df6f4d54e2f39843c0d6fcc141f01ff21bdb3595df233393cf71",
+  "linked_questions_hash": "sha256:2bbb91b87c12074435773c707c621f6ee762ad4b33d2bf11018dbdaa01abdc02",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "a33c0c04-bca8-4575-ac5e-50e6eaa524b8",
+      "article_id": "3fe83b11-50d8-45ab-9530-936fb59fd974",
+      "topic_id": "87ba4676-c95f-4e6b-b950-222444fb8862",
+      "text": "A municipality implements a series of tactical urbanism interventions (parklets, street murals, temporary street closures for events) in a neglected commercial district. After two years, community engagement is high and property values have begun rising. What strategic decision should the municipality make?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Stop the tactical interventions and declare the district regenerated, assuming no further action is needed"
+        },
+        {
+          "id": "b",
+          "text": "Continue tactical interventions indefinitely as a permanent solution without transitioning to more formal planning"
+        },
+        {
+          "id": "c",
+          "text": "Remove the tactical improvements to prevent gentrification, even if it means losing community engagement"
+        },
+        {
+          "id": "d",
+          "text": "Maintain tactical success while transitioning to formal regeneration planning (permanent public space improvements, infrastructure, anti-displacement policies) to capitalize on demonstrated community support"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Tactics are temporary; formal regeneration requires permanent investment and strategic planning.",
+        "b": "Tactics are stepping stones, not permanent solutions; they should evolve into formal regeneration.",
+        "c": "Removing improvements wastes the community engagement and momentum already built; instead, protect original communities through anti-displacement policies.",
+        "d": "Tactical success demonstrates that the community and market are receptive to the area. This is the ideal moment to launch formal regeneration planning—making tactical wins permanent, adding infrastructure, and implementing anti-displacement policies while community momentum is high.",
+        "correct": "Tactical success demonstrates that the community and market are receptive to the area. This is the ideal moment to launch formal regeneration planning—making tactical wins permanent, adding infrastructure, and implementing anti-displacement policies while community momentum is high.",
+        "takeaway": "Tactical success = foundation for strategic regeneration; scale up with permanent improvements and anti-displacement policies."
+      },
+      "explanation": "Tactics are temporary; formal regeneration requires permanent investment and strategic planning. Tactics are stepping stones, not permanent solutions; they should evolve into formal regeneration. Removing improvements wastes the community engagement and momentum already built; instead, protect original communities through anti-displacement policies. Tactical success demonstrates that the community and market are receptive to the area. This is the ideal moment to launch formal regeneration planning—making tactical wins permanent, adding infrastructure, and implementing anti-displacement policies while community momentum is high. Tactical success demonstrates that the community and market are receptive to the area. This is the ideal moment to launch formal regeneration planning—making tactical wins permanent, adding infrastructure, and implementing anti-displacement policies while community momentum is high. Tactical success = foundation for strategic regeneration; scale up with permanent improvements and anti-displacement policies.",
+      "code_citation": "Tactical Urbanism as Pathway to Regeneration",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-008-05-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:08.512784+00:00",
+      "updated_at": "2026-05-06T16:21:49.412633+00:00",
+      "content_hash": "sha256:33e5b2bb6144a36e03d8dba04dc39774df71866f4bb93402dc6384b805820dcc"
+    },
     {
       "question_id": "1da6869d-d412-4da7-9e71-b30bd77009f3",
       "article_id": "3fe83b11-50d8-45ab-9530-936fb59fd974",
@@ -91,7 +142,7 @@
         "correct": "Successful regeneration increases property values and attracts investment, which often displaces long-term residents and businesses unable to afford rising rents. Mitigation requires anti-displacement mechanisms: community land trusts (permanently affordable land), community benefits agreements, local hiring provisions, and preserving existing affordable housing.",
         "takeaway": "Urban regeneration risk = gentrification + displacement; mitigation = anti-displacement policies ensuring original communities benefit."
       },
-      "explanation": null,
+      "explanation": "Lack of development is the opposite problem; the risk is over-development that displaces existing communities. Successful regeneration increases property values and attracts investment, which often displaces long-term residents and businesses unable to afford rising rents. Mitigation requires anti-displacement mechanisms: community land trusts (permanently affordable land), community benefits agreements, local hiring provisions, and preserving existing affordable housing. Public space activation is addressed through placemaking; displacement is the main risk. Construction noise is a temporary inconvenience, not the strategic risk to communities. Successful regeneration increases property values and attracts investment, which often displaces long-term residents and businesses unable to afford rising rents. Mitigation requires anti-displacement mechanisms: community land trusts (permanently affordable land), community benefits agreements, local hiring provisions, and preserving existing affordable housing. Urban regeneration risk = gentrification + displacement; mitigation = anti-displacement policies ensuring original communities benefit.",
       "code_citation": "Gentrification and Displacement in Urban Regeneration; Anti-Displacement Policy",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
@@ -103,8 +154,8 @@
       "model_id": "ALE-PLAN-008-05-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:08.512784+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:5884b1fcf32d2f9d19a7169152fd8452a6d16906149a97b4dff8489bead3a91b"
+      "updated_at": "2026-05-06T16:21:49.289907+00:00",
+      "content_hash": "sha256:ba25b70e44a8f2d8b96bf52b279b931acd8eec7ad5fd93a2db27e8c74d345a07"
     },
     {
       "question_id": "a393214b-d924-4cb3-bf53-83ee7d381ef9",
@@ -309,57 +360,6 @@
       "created_at": "2026-03-23T19:29:08.512784+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:083e33a5c98724f0fc02ee98f55e66eaecc12f191cc75fb221a1a7cd967838af"
-    },
-    {
-      "question_id": "a33c0c04-bca8-4575-ac5e-50e6eaa524b8",
-      "article_id": "3fe83b11-50d8-45ab-9530-936fb59fd974",
-      "topic_id": "87ba4676-c95f-4e6b-b950-222444fb8862",
-      "text": "A municipality implements a series of tactical urbanism interventions (parklets, street murals, temporary street closures for events) in a neglected commercial district. After two years, community engagement is high and property values have begun rising. What strategic decision should the municipality make?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Stop the tactical interventions and declare the district regenerated, assuming no further action is needed"
-        },
-        {
-          "id": "b",
-          "text": "Continue tactical interventions indefinitely as a permanent solution without transitioning to more formal planning"
-        },
-        {
-          "id": "c",
-          "text": "Remove the tactical improvements to prevent gentrification, even if it means losing community engagement"
-        },
-        {
-          "id": "d",
-          "text": "Maintain tactical success while transitioning to formal regeneration planning (permanent public space improvements, infrastructure, anti-displacement policies) to capitalize on demonstrated community support"
-        }
-      ],
-      "correct_option_id": "d",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Tactics are temporary; formal regeneration requires permanent investment and strategic planning.",
-        "b": "Tactics are stepping stones, not permanent solutions; they should evolve into formal regeneration.",
-        "c": "Removing improvements wastes the community engagement and momentum already built; instead, protect original communities through anti-displacement policies.",
-        "d": "Tactical success demonstrates that the community and market are receptive to the area. This is the ideal moment to launch formal regeneration planning—making tactical wins permanent, adding infrastructure, and implementing anti-displacement policies while community momentum is high.",
-        "correct": "Tactical success demonstrates that the community and market are receptive to the area. This is the ideal moment to launch formal regeneration planning—making tactical wins permanent, adding infrastructure, and implementing anti-displacement policies while community momentum is high.",
-        "takeaway": "Tactical success = foundation for strategic regeneration; scale up with permanent improvements and anti-displacement policies."
-      },
-      "explanation": null,
-      "code_citation": "Tactical Urbanism as Pathway to Regeneration",
-      "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.7,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PLAN-008-05-007",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:29:08.512784+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:26db6e00b18829f9d48f5d6d434395542fce03ab494841f18da167e4063b59db"
     },
     {
       "question_id": "b05cb039-10df-4801-8ab6-ec874249f95c",

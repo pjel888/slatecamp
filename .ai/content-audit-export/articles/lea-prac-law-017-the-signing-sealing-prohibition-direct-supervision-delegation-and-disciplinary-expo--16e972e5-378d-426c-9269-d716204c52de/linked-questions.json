@@ -1,9 +1,109 @@
 {
   "article_id": "16e972e5-378d-426c-9269-d716204c52de",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:2eb9190312f44efa4ef81b9d13ce50477090de97edaab4a4ee4a56765efda574",
+  "linked_questions_hash": "sha256:613b2064dc5d53a2468cd454729fa3dcee3abac58ef1244632bf85c7c277d4a9",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "7a189293-2803-4a4e-b672-fd759863a0ab",
+      "article_id": "16e972e5-378d-426c-9269-d716204c52de",
+      "topic_id": "59aea3fd-588a-4058-800a-fa2982af14ec",
+      "text": "An architect employed junior architects to develop construction drawings under the architect's direction. The architect participated in design meetings, reviewed drawing sets at each phase of development, provided written and oral feedback, and conducted a final detailed review before sealing the documents. Does this process satisfy the direct supervision requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, junior architects cannot develop drawings regardless of supervision, as they lack the necessary licensure and experience"
+        },
+        {
+          "id": "b",
+          "text": "Yes, continuous involvement in the design process, review at each phase, and detailed final review constitute direct supervision"
+        },
+        {
+          "id": "c",
+          "text": "Only if the junior architects passed the architecture licensure examination and have been formally recognized as competent by the supervising architect"
+        },
+        {
+          "id": "d",
+          "text": "Yes, but only if the architect signs a separate certification of supervision, which must be filed with the local building authority"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Falsely prohibits all junior staff work; junior architects may develop drawings under the licensed architect's direct supervision.",
+        "c": "Incorrectly requires licensing of junior staff; unlicensed junior architects can work under a licensed architect's supervision.",
+        "d": "Suggests written certification is required; the statute requires direct involvement, not additional certification documentation.",
+        "correct": "Direct supervision is satisfied when the licensed architect actively participates in design decisions, reviews work at each development phase, provides design direction, and conducts final verification. Supervision of junior architects or staff in developing drawings under an experienced architect's active guidance is a normal and proper part of architectural practice. The key is that the licensed architect maintains continuous involvement and personal responsibility.",
+        "takeaway": "Active involvement in design meetings, review at each phase, and detailed final review satisfy the direct supervision requirement."
+      },
+      "explanation": "Falsely prohibits all junior staff work; junior architects may develop drawings under the licensed architect's direct supervision. Incorrectly requires licensing of junior staff; unlicensed junior architects can work under a licensed architect's supervision. Suggests written certification is required; the statute requires direct involvement, not additional certification documentation. Direct supervision is satisfied when the licensed architect actively participates in design decisions, reviews work at each development phase, provides design direction, and conducts final verification. Supervision of junior architects or staff in developing drawings under an experienced architect's active guidance is a normal and proper part of architectural practice. The key is that the licensed architect maintains continuous involvement and personal responsibility. Active involvement in design meetings, review at each phase, and detailed final review satisfy the direct supervision requirement.",
+      "code_citation": "RA 9266",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-017-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.117151+00:00",
+      "updated_at": "2026-05-06T13:22:18.593054+00:00",
+      "content_hash": "sha256:c4afedf40db83ef21d6af50521fd53b69a5a47df314dcad3f9e84a72f3c2b1ff"
+    },
+    {
+      "question_id": "8a398674-a34a-4c5a-a866-3a37e4b9fc1b",
+      "article_id": "16e972e5-378d-426c-9269-d716204c52de",
+      "topic_id": "59aea3fd-588a-4058-800a-fa2982af14ec",
+      "text": "An architect received a complaint to the Board of Architecture alleging that the architect signed drawings not prepared under direct supervision. The architect produced emails and meeting notes documenting participation in design meetings, marked-up drawing sets showing review comments, and a design development schedule. What is the evidentiary value of these documents?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The documents are irrelevant; the Board assumes violation once the complaint is filed, regardless of evidence."
+        },
+        {
+          "id": "b",
+          "text": "The documents provide important evidence of active involvement and direct supervision, supporting the architect's defense"
+        },
+        {
+          "id": "c",
+          "text": "The documents create a presumption of guilt that the architect must overcome with testimony, which is a challenging task."
+        },
+        {
+          "id": "d",
+          "text": "The documents protect the architect from discipline but do not prevent the complaint investigation from proceeding."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Falsely assumes a complaint triggers automatic presumption of violation; the architect has the right to present evidence in defense.",
+        "c": "Reverses the evidentiary presumption; documentation supports innocence, not guilt.",
+        "d": "Understates the value of documentation; strong evidence can resolve a complaint favorably for the architect.",
+        "correct": "Documentation of the architect's involvement during design development provides strong evidence supporting a claim of direct supervision. Emails directing design work, marked-up drawings showing review and feedback, and dated notes of design decisions demonstrate active participation. Such documentation significantly strengthens the architect's defense in professional discipline proceedings and helps establish that direct supervision was maintained.",
+        "takeaway": "Documented evidence of active involvement in design meetings and drawing reviews provides strong proof of direct supervision compliance."
+      },
+      "explanation": "Falsely assumes a complaint triggers automatic presumption of violation; the architect has the right to present evidence in defense. Reverses the evidentiary presumption; documentation supports innocence, not guilt. Understates the value of documentation; strong evidence can resolve a complaint favorably for the architect. Documentation of the architect's involvement during design development provides strong evidence supporting a claim of direct supervision. Emails directing design work, marked-up drawings showing review and feedback, and dated notes of design decisions demonstrate active participation. Such documentation significantly strengthens the architect's defense in professional discipline proceedings and helps establish that direct supervision was maintained. Documented evidence of active involvement in design meetings and drawing reviews provides strong proof of direct supervision compliance.",
+      "code_citation": "RA 9266",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-017-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.117151+00:00",
+      "updated_at": "2026-05-06T13:22:18.897353+00:00",
+      "content_hash": "sha256:3a2d48a95a9631a06dff6e920061e3442772b0c817610dceb510d4b71fccd876"
+    },
     {
       "question_id": "02841c55-036f-4a32-8a6d-ef3fd5346e8f",
       "article_id": "16e972e5-378d-426c-9269-d716204c52de",
@@ -155,56 +255,6 @@
       "content_hash": "sha256:6570695670e1096aed51a7eaf7e0e985f6417be72480a8c2d9077f57bf2a63bd"
     },
     {
-      "question_id": "7a189293-2803-4a4e-b672-fd759863a0ab",
-      "article_id": "16e972e5-378d-426c-9269-d716204c52de",
-      "topic_id": "59aea3fd-588a-4058-800a-fa2982af14ec",
-      "text": "An architect employed junior architects to develop construction drawings under the architect's direction. The architect participated in design meetings, reviewed drawing sets at each phase of development, provided written and oral feedback, and conducted a final detailed review before sealing the documents. Does this process satisfy the direct supervision requirement?",
-      "options": [
-        {
-          "id": "a",
-          "text": "No, junior architects cannot develop drawings regardless of supervision, as they lack the necessary licensure and experience"
-        },
-        {
-          "id": "b",
-          "text": "Yes, continuous involvement in the design process, review at each phase, and detailed final review constitute direct supervision"
-        },
-        {
-          "id": "c",
-          "text": "Only if the junior architects passed the architecture licensure examination and have been formally recognized as competent by the supervising architect"
-        },
-        {
-          "id": "d",
-          "text": "Yes, but only if the architect signs a separate certification of supervision, which must be filed with the local building authority"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Falsely prohibits all junior staff work; junior architects may develop drawings under the licensed architect's direct supervision.",
-        "c": "Incorrectly requires licensing of junior staff; unlicensed junior architects can work under a licensed architect's supervision.",
-        "d": "Suggests written certification is required; the statute requires direct involvement, not additional certification documentation.",
-        "correct": "Direct supervision is satisfied when the licensed architect actively participates in design decisions, reviews work at each development phase, provides design direction, and conducts final verification. Supervision of junior architects or staff in developing drawings under an experienced architect's active guidance is a normal and proper part of architectural practice. The key is that the licensed architect maintains continuous involvement and personal responsibility.",
-        "takeaway": "Active involvement in design meetings, review at each phase, and detailed final review satisfy the direct supervision requirement."
-      },
-      "explanation": null,
-      "code_citation": "RA 9266",
-      "bloom_level": "understand",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PRAC-LAW-017-004",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:45.117151+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:74221b6f4cf851a0c20fc803a0da38e24e05a1224de714c86b92e6ba2618934c"
-    },
-    {
       "question_id": "dbf369e5-5866-4bf1-92f9-c989c72357b8",
       "article_id": "16e972e5-378d-426c-9269-d716204c52de",
       "topic_id": "59aea3fd-588a-4058-800a-fa2982af14ec",
@@ -339,7 +389,7 @@
         "correct": "Direct supervision requires active involvement in the design process from concept through completion, not merely final review before signing. An architect who delegates design work to drafters without participating in design decisions and without continuous oversight during drawing development has not maintained direct supervision. The compressed review schedule (several hours on the day before bid) cannot substitute for active involvement throughout the design development process.",
         "takeaway": "Last-minute review before signing, regardless of duration, does not satisfy the direct supervision requirement without active involvement throughout development."
       },
-      "explanation": null,
+      "explanation": "Treats final review and signing as the controlling factors; direct supervision requires continuous involvement before the review. Confuses drafter competence with the architect's direct involvement; competence does not replace the architect's required supervision. Focuses on irrelevant drafter qualifications; the issue is whether the architect maintained active involvement in design development. Direct supervision requires active involvement in the design process from concept through completion, not merely final review before signing. An architect who delegates design work to drafters without participating in design decisions and without continuous oversight during drawing development has not maintained direct supervision. The compressed review schedule (several hours on the day before bid) cannot substitute for active involvement throughout the design development process. Last-minute review before signing, regardless of duration, does not satisfy the direct supervision requirement without active involvement throughout development.",
       "code_citation": "RA 9266",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
@@ -351,8 +401,8 @@
       "model_id": "ALE-PRAC-LAW-017-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:45.117151+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:8fb023edb635b0939dc64ae127366846ac42055b4c60861442fdcc1005fbce3e"
+      "updated_at": "2026-05-06T13:22:18.748346+00:00",
+      "content_hash": "sha256:95833a4015192cdfe031256fd76dcb6d7910b5d97f4bf9e189db87c8ceebb605"
     },
     {
       "question_id": "3b484de3-649e-469d-860f-3b78da4f70b3",
@@ -453,56 +503,6 @@
       "created_at": "2026-03-23T19:27:45.117151+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:af5817e5f71dba776f5d8fa853f7251f6ef38ae1f02b62c38ea2a60e0607bffa"
-    },
-    {
-      "question_id": "8a398674-a34a-4c5a-a866-3a37e4b9fc1b",
-      "article_id": "16e972e5-378d-426c-9269-d716204c52de",
-      "topic_id": "59aea3fd-588a-4058-800a-fa2982af14ec",
-      "text": "An architect received a complaint to the Board of Architecture alleging that the architect signed drawings not prepared under direct supervision. The architect produced emails and meeting notes documenting participation in design meetings, marked-up drawing sets showing review comments, and a design development schedule. What is the evidentiary value of these documents?",
-      "options": [
-        {
-          "id": "a",
-          "text": "The documents are irrelevant; the Board assumes violation once the complaint is filed, regardless of evidence."
-        },
-        {
-          "id": "b",
-          "text": "The documents provide important evidence of active involvement and direct supervision, supporting the architect's defense"
-        },
-        {
-          "id": "c",
-          "text": "The documents create a presumption of guilt that the architect must overcome with testimony, which is a challenging task."
-        },
-        {
-          "id": "d",
-          "text": "The documents protect the architect from discipline but do not prevent the complaint investigation from proceeding."
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Falsely assumes a complaint triggers automatic presumption of violation; the architect has the right to present evidence in defense.",
-        "c": "Reverses the evidentiary presumption; documentation supports innocence, not guilt.",
-        "d": "Understates the value of documentation; strong evidence can resolve a complaint favorably for the architect.",
-        "correct": "Documentation of the architect's involvement during design development provides strong evidence supporting a claim of direct supervision. Emails directing design work, marked-up drawings showing review and feedback, and dated notes of design decisions demonstrate active participation. Such documentation significantly strengthens the architect's defense in professional discipline proceedings and helps establish that direct supervision was maintained.",
-        "takeaway": "Documented evidence of active involvement in design meetings and drawing reviews provides strong proof of direct supervision compliance."
-      },
-      "explanation": null,
-      "code_citation": "RA 9266",
-      "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.7,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PRAC-LAW-017-008",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:45.117151+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:bb00ce0143a9cfa3131b1f4d6e2610062f31814ea0a84228ffc255da718996bb"
     }
   ]
 }

@@ -1,9 +1,109 @@
 {
   "article_id": "7680a85a-b8ee-4b09-a782-00d77fa5c007",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:69401f8b9eb31c64874f9e503dab75c37db86a908d1bf8116984988f656fc8e8",
+  "linked_questions_hash": "sha256:aa6d17a3c5025dfe050e78764adf3a2e57c169bac836e92485130d8abdbba506",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "08787dff-085a-46c6-9592-85eafca7d1dd",
+      "article_id": "7680a85a-b8ee-4b09-a782-00d77fa5c007",
+      "topic_id": "6f847f27-17d4-46cc-a4f5-9386c7906930",
+      "text": "In a seismic zone, a non-bearing curtain wall is attached to a moment-resisting frame. What is the primary structural concern?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The wall must carry the weight of the floors above, which requires additional structural support"
+        },
+        {
+          "id": "b",
+          "text": "The wall and its anchors must resist out-of-plane wind and seismic forces and accommodate building drift"
+        },
+        {
+          "id": "c",
+          "text": "The wall must be designed as a shear wall, providing lateral stability to the structure"
+        },
+        {
+          "id": "d",
+          "text": "Non-bearing walls are exempt from seismic design, as they do not contribute to the building's structural integrity"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "By definition, a non-bearing wall does not support the floors above.",
+        "c": "Shear walls are part of the lateral force-resisting system; a curtain wall is a non-structural component.",
+        "d": "NSCP Chapter 2 (Loads) and Chapter 6 (Wind) explicitly require seismic and wind design for non-structural components like cladding.",
+        "correct": "Curtain walls must be designed to 'drift' with the building frame during an earthquake. The anchors must prevent the wall from falling off (out-of-plane forces) while allowing for horizontal movement relative to the floors.",
+        "takeaway": "Curtain walls must accommodate inter-story drift and resist lateral pressures."
+      },
+      "explanation": "By definition, a non-bearing wall does not support the floors above. Shear walls are part of the lateral force-resisting system; a curtain wall is a non-structural component. NSCP Chapter 2 (Loads) and Chapter 6 (Wind) explicitly require seismic and wind design for non-structural components like cladding. Curtain walls must be designed to 'drift' with the building frame during an earthquake. The anchors must prevent the wall from falling off (out-of-plane forces) while allowing for horizontal movement relative to the floors. Curtain walls must accommodate inter-story drift and resist lateral pressures.",
+      "code_citation": "NSCP 2015 Section 208",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-04-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-05-06T15:15:20.151057+00:00",
+      "content_hash": "sha256:159eee691818f7e5c976cd341eafc5370c6e5dd43bd81952e6bb747bb7faaad2"
+    },
+    {
+      "question_id": "9f1fea3d-8917-489b-98ee-71ca19c3a4e2",
+      "article_id": "7680a85a-b8ee-4b09-a782-00d77fa5c007",
+      "topic_id": "6f847f27-17d4-46cc-a4f5-9386c7906930",
+      "text": "What distinguishes a parapet wall from other wall types?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A parapet wall is any exterior wall of a building, typically designed to provide additional structural support"
+        },
+        {
+          "id": "b",
+          "text": "A parapet wall is the portion of a wall that extends above the roofline"
+        },
+        {
+          "id": "c",
+          "text": "A parapet wall is always load-bearing, ensuring stability against lateral forces"
+        },
+        {
+          "id": "d",
+          "text": "A parapet wall carries only seismic loads, specifically designed to resist earthquake forces"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Exterior walls include the entire building envelope; a parapet is specifically the portion above the roof.",
+        "c": "Parapets are typically non-bearing as they do not support floor or roof loads above them.",
+        "d": "Parapets must resist both wind and seismic lateral forces.",
+        "correct": "A parapet is defined as that part of any wall entirely above the roof line. It is exposed to environmental loads (wind) on both sides and must be designed as a cantilever.",
+        "takeaway": "Parapet = portion of wall above the roof line."
+      },
+      "explanation": "Exterior walls include the entire building envelope; a parapet is specifically the portion above the roof. Parapets are typically non-bearing as they do not support floor or roof loads above them. Parapets must resist both wind and seismic lateral forces. A parapet is defined as that part of any wall entirely above the roof line. It is exposed to environmental loads (wind) on both sides and must be designed as a cantilever. Parapet = portion of wall above the roof line.",
+      "code_citation": "NSCP 2015 Section 202",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-04-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-05-06T15:15:20.295328+00:00",
+      "content_hash": "sha256:f35f80f2e3127338a34c34446e309aaec54b2df828a9f8d7a63328addc26f6c2"
+    },
     {
       "question_id": "d00a6b51-8903-4ebb-9596-d02c98a2e132",
       "article_id": "7680a85a-b8ee-4b09-a782-00d77fa5c007",
@@ -306,56 +406,6 @@
       "content_hash": "sha256:755afac02c14e69ea437679881588ca4d6f2933f236973f038073497260ea6be"
     },
     {
-      "question_id": "08787dff-085a-46c6-9592-85eafca7d1dd",
-      "article_id": "7680a85a-b8ee-4b09-a782-00d77fa5c007",
-      "topic_id": "6f847f27-17d4-46cc-a4f5-9386c7906930",
-      "text": "In a seismic zone, a non-bearing curtain wall is attached to a moment-resisting frame. What is the primary structural concern?",
-      "options": [
-        {
-          "id": "a",
-          "text": "The wall must carry the weight of the floors above, which requires additional structural support"
-        },
-        {
-          "id": "b",
-          "text": "The wall and its anchors must resist out-of-plane wind and seismic forces and accommodate building drift"
-        },
-        {
-          "id": "c",
-          "text": "The wall must be designed as a shear wall, providing lateral stability to the structure"
-        },
-        {
-          "id": "d",
-          "text": "Non-bearing walls are exempt from seismic design, as they do not contribute to the building's structural integrity"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "By definition, a non-bearing wall does not support the floors above.",
-        "c": "Shear walls are part of the lateral force-resisting system; a curtain wall is a non-structural component.",
-        "d": "NSCP Chapter 2 (Loads) and Chapter 6 (Wind) explicitly require seismic and wind design for non-structural components like cladding.",
-        "correct": "Curtain walls must be designed to 'drift' with the building frame during an earthquake. The anchors must prevent the wall from falling off (out-of-plane forces) while allowing for horizontal movement relative to the floors.",
-        "takeaway": "Curtain walls must accommodate inter-story drift and resist lateral pressures."
-      },
-      "explanation": null,
-      "code_citation": "NSCP 2015 Section 208",
-      "bloom_level": "analyze",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.9,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-STRC-002-04-010",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:eaa32da283e69b91407163f994e526dc9c375e34bd28f331957a5d6ff53de788"
-    },
-    {
       "question_id": "72946c68-ab67-4175-8096-a859728f31b0",
       "article_id": "7680a85a-b8ee-4b09-a782-00d77fa5c007",
       "topic_id": "6f847f27-17d4-46cc-a4f5-9386c7906930",
@@ -454,56 +504,6 @@
       "created_at": "2026-03-23T19:27:51.88244+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:5b49238feb0a1ebc1d8c3887f61879f353ba4951643850891e34fe689f406560"
-    },
-    {
-      "question_id": "9f1fea3d-8917-489b-98ee-71ca19c3a4e2",
-      "article_id": "7680a85a-b8ee-4b09-a782-00d77fa5c007",
-      "topic_id": "6f847f27-17d4-46cc-a4f5-9386c7906930",
-      "text": "What distinguishes a parapet wall from other wall types?",
-      "options": [
-        {
-          "id": "a",
-          "text": "A parapet wall is any exterior wall of a building, typically designed to provide additional structural support"
-        },
-        {
-          "id": "b",
-          "text": "A parapet wall is the portion of a wall that extends above the roofline"
-        },
-        {
-          "id": "c",
-          "text": "A parapet wall is always load-bearing, ensuring stability against lateral forces"
-        },
-        {
-          "id": "d",
-          "text": "A parapet wall carries only seismic loads, specifically designed to resist earthquake forces"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Exterior walls include the entire building envelope; a parapet is specifically the portion above the roof.",
-        "c": "Parapets are typically non-bearing as they do not support floor or roof loads above them.",
-        "d": "Parapets must resist both wind and seismic lateral forces.",
-        "correct": "A parapet is defined as that part of any wall entirely above the roof line. It is exposed to environmental loads (wind) on both sides and must be designed as a cantilever.",
-        "takeaway": "Parapet = portion of wall above the roof line."
-      },
-      "explanation": null,
-      "code_citation": "NSCP 2015 Section 202",
-      "bloom_level": "understand",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-STRC-002-04-003",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:65742d6c3711b2a06cc7d1ecde9cbf4780856bda1f1c92f82b5a90430fdd0b9a"
     }
   ]
 }

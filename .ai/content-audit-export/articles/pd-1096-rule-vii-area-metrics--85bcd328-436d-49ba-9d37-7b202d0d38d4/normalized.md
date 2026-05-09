@@ -9,9 +9,9 @@ Before memorizing details from this topic, state the exam task in one sentence: 
 
 **Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 
-**Module Focus:** PD 1096, 2004 Revised IRR — Rule VIII (Sec. 803), Table VIII.1  
-**LEA Area:** 3 (Architectural Design and Site Planning)  
-**Difficulty:** Intermediate  
+**Module Focus:** PD 1096, 2004 Revised IRR — Rule VIII (Sec. 803), Table VIII.1
+**LEA Area:** 3 (Architectural Design and Site Planning)
+**Difficulty:** Intermediate
 **Spaced Repetition:** Return in 3 days. If you can answer the Blitz Quiz cold, move on.[file:17][file:18]
 
 ---
@@ -216,7 +216,7 @@ Practice: cover the table and reproduce the Basic R-2 rows (with and without fir
 
 ### TRAP 1 — “Table VIII.1 Distinguishes Inside vs Corner Lot”
 
-**Wrong assumption:** Table VIII.1 varies PSO by inside vs corner lot.  
+**Wrong assumption:** Table VIII.1 varies PSO by inside vs corner lot.
 **Correct:** It varies by **firewall**. Lot-type-based PSO caps are in **Table VII.1**, and lot-type-based TOSL is in **Table VIII.G.6**.[file:17][file:18]
 
 On the exam: always cross-check PSO/TOSL from these three sources and use the more restrictive values.
@@ -236,8 +236,8 @@ TOSL covers **all open space within the lot** not covered by the enclosed buildi
 
 Mnemonic: **MACA = “more than just the building”**, AMBF = “actual building footprint.”
 
-Example (Basic R-2, no firewall):  
-PSO = 55% → AMBF = 0.55 x TLA.  
+Example (Basic R-2, no firewall):
+PSO = 55% → AMBF = 0.55 x TLA.
 MACA = 55% + 30% = 85% → at most 85% of TLA can be hard (building + paving).[file:17]
 
 ---
@@ -291,9 +291,9 @@ Checks: 275 + 150 + 75 = 500 (TLA); 55 + 30 + 15 = 100% (lot percentage).[file:1
 
 An architect says: “The PSO of this R-2 lot is 275 square meters.” Which interpretation is correct?
 
-A) The PSO is correctly stated as 275 sq.m.  
-B) The architect has confused PSO (a percentage) with AMBF (an area).  
-C) PSO can be expressed in sq.m when the lot is smaller than 1,000 sq.m.  
+A) The PSO is correctly stated as 275 sq.m.
+B) The architect has confused PSO (a percentage) with AMBF (an area).
+C) PSO can be expressed in sq.m when the lot is smaller than 1,000 sq.m.
 D) PSO = 275 sq.m is correct specifically for Basic R-2 lots.
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
@@ -308,9 +308,9 @@ Extracted summary:
 
 A Basic R-2 project is proposed on a **corner lot without firewall**. Which table provides the **lot-type-based PSO** distinction you must cross-check against Table VIII.1?
 
-A) Table VIII.1  
-B) Table VIII.G.6  
-C) Table VII.1  
+A) Table VIII.1
+B) Table VIII.G.6
+C) Table VII.1
 D) Table VII.G.1
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="LawCallout" status="preserved"]
@@ -325,9 +325,9 @@ Extracted summary:
 
 A 1,000 sq.m Basic R-2 lot **without** firewall is fully maximized for both building footprint and paved open areas. What is the minimum area that must remain unpaved (USA)?
 
-A) 100 sq.m  
-B) 150 sq.m  
-C) 300 sq.m  
+A) 100 sq.m
+B) 150 sq.m
+C) 300 sq.m
 D) 450 sq.m
 
 [SLATECAMP_UI_BLOCK:ui_0005 component="Accordion" status="preserved"]
@@ -342,9 +342,9 @@ Extracted summary:
 
 Table VIII.1 gives PSO = 70% for Max R-2 with firewall. Table VII.1 gives PSO = 65% for the same occupancy, lot type and height. Which PSO must be used?
 
-A) 70% — Table VIII.1 is the primary table.  
-B) 65% — the more restrictive value governs.  
-C) Either, at the architect’s discretion.  
+A) 70% — Table VIII.1 is the primary table.
+B) 65% — the more restrictive value governs.
+C) Either, at the architect’s discretion.
 D) 70% — firewall entitlement overrides lot-type limitations.
 
 [SLATECAMP_UI_BLOCK:ui_0006 component="Accordion" status="preserved"]

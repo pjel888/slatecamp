@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Strc 001 04 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 ## Learning Goal
 By the end of this article, you will be able to:
@@ -10,7 +19,11 @@ By the end of this article, you will be able to:
 This topic covers beam types and their classification by support conditions. The LEA tests whether you can identify and distinguish different beam configurations. You will NOT be tested on shear and moment diagram construction or analysis; focus on beam type definitions and support characteristics.
 
 ## Core Concept
-<ArticleMedia id="media-lea-strc-001-04-core-concept" type="image" caption="Beam Types — Five Configurations Comparison" description="Side-by-side diagram comparing five beam types: Simply Supported (hinge+roller at ends, single span), Cantilever (fixed at one end, free at other), Continuous (3+ supports, multiple spans), Overhanging (supports with ends extending beyond), and Propped Cantilever (fixed end + prop at free end). Each beam shown with support symbols, deflected shape under gravity, and positive/negative moment region labels." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-strc-001-04-core-concept", type="image", caption="Beam Types — Five Configurations Comparison", description="Side-by-side diagram comparing five beam types: Simply Supported (hinge+roller at ends, single span), Cantilever (fixed at one end, free at other), Continuous (3+ supports, multiple spans), Overhanging (supports with ends extending beyond), and Propped Cantilever (fixed end + prop at free end). Each beam shown with support symbols, deflected shape under gravity, and positive/negative moment region labels.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 A **beam** is a structural member subjected primarily to loads perpendicular to its length, acting to create internal bending and shear. Beams are classified by their support conditions, which determine how loads are transmitted to supports and how the beam behaves.
 
@@ -70,12 +83,11 @@ In Philippine building design, simply supported beams are standard in floor syst
 3. **Load Path:** "In a continuous beam spanning across three columns, what is the typical location of maximum negative moment?" — tests conceptual understanding (answer: over intermediate columns).
 4. **Application:** "A canopy structure extends 3 m beyond its supporting columns. Classify this beam type and explain why the columns must resist overturning forces." — tests synthesis of support type and loading behavior.
 
-<Tip>**Beam type quick reference — by support count and location:**
-- **1 fixed end = Cantilever**
-- **2 ends, not fixed = Simply Supported**
-- **3+ supports = Continuous**
-- **2+ supports + overhang = Overhanging**
-- **Cantilever + prop = Propped Cantilever**</Tip>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Beam type quick reference — by support count and location:** - **1 fixed end = Cantilever** - **2 ends, not fixed = Simply Supported** - **3+ supports = Continuous** - **2+ supports + overhang = Overhanging** - **Cantilever + prop = Propped Cantilever**
+[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 
@@ -83,6 +95,14 @@ See also: **Supports** (lea-strc-001-03) for the foundations of beam classificat
 
 ## Common Mistakes
 
-<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: These are frequently tested traps. Memorize them to avoid losing easy points on exam day.
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeList mistakes={["Confusing simply supported with cantilever: Simply supported has no moment reactions at ends (hinges/rollers); cantilever has a large moment reaction at the fixed end. The fixed-end condition is the key distinction.","Treating continuous and simple beams identically: A continuous beam's interior spans develop negative moments over intermediate supports; a simply supported beam develops only positive moments. Ignoring this causes under-design at critical locations.","Underestimating cantilever deflection: Cantilever deflection is often much larger than a simply supported span of the same length due to the fixed-end condition. Never ignore cantilever stiffness checks.","Misidentifying overhang behavior: An overhanging beam is NOT a simple beam everywhere; the overhang acts as a cantilever and can create uplift (negative reactions) at the opposite support if the cantilever load is large enough."]} />
+[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Confusing simply supported with cantilever: Simply supported has no moment reactions at ends (hinges/rollers); cantilever has a large moment reaction at the fixed end. The fixed-end condition is the key distinction.\",\"Treating continuous and simple beams identically: A continuous beam's interior spans develop negative moments over intermediate supports; a simply supported beam develops only positive moments. Ignoring this causes under-design at critical locations.\",\"Underestimating cantilever deflection: Cantilever deflection is often much larger than a simply supported span of the same length due to the fixed-end condition. Never ignore cantilever stiffness checks.\",\"Misidentifying overhang behavior: An overhanging beam is NOT a simple beam everywhere; the overhang acts as a cantilever and can create uplift (negative reactions) at the opposite support if the cantilever load is large enough.\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]

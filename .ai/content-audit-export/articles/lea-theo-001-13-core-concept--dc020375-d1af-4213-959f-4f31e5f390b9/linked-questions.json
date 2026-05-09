@@ -1,9 +1,217 @@
 {
   "article_id": "dc020375-d1af-4213-959f-4f31e5f390b9",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:cd83fa8b26b39ae0380a06a9890dea11ac7395c96cea64d3d08525a3956b9d34",
+  "linked_questions_hash": "sha256:91e400d0882bff931421842c5f4596ee9badae8ff0f236de1bbb0d1341306941",
   "question_count": 14,
   "questions": [
+    {
+      "question_id": "24eb40a9-99af-4744-8dfe-b20ee851c488",
+      "article_id": "dc020375-d1af-4213-959f-4f31e5f390b9",
+      "topic_id": "ba1e0c53-5f70-4f15-bac4-2e4b4fbd49bb",
+      "text": "In the context of 'circular economy' principles in architecture, what is the architect's responsibility?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Prioritize virgin materials for strength and durability; recycled materials are inferior and may compromise structural integrity in critical applications"
+        },
+        {
+          "id": "b",
+          "text": "Design buildings for linear extraction-manufacture-use-discard cycles; circularity is impossible in architecture due to inherent material limitations and lifecycle constraints"
+        },
+        {
+          "id": "c",
+          "text": "Circular design applies only to products, not buildings, because buildings have fixed lifespans and cannot be easily adapted to circular principles"
+        },
+        {
+          "id": "d",
+          "text": "Select materials that can be reused or recycled, design buildings whose components can be disassembled and repurposed, specify modular systems allowing adaptation and reuse over time"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "High-quality recycled materials often perform excellently; material choice depends on application, not blanket preference.",
+        "b": "Circularity is increasingly feasible and increasingly required.",
+        "c": "Circular principles apply powerfully to buildings, which have long life spans and significant material mass.",
+        "correct": "Circular economy principles mean designing buildings to be disassembled and reused rather than demolished and landfilled. Material selection, modular systems, and adaptable design enable buildings to serve changing uses, reducing waste and resource consumption.",
+        "takeaway": "Material selection, modular systems, and adaptable design enable buildings to serve changing uses, reducing waste and resource consumption."
+      },
+      "explanation": "High-quality recycled materials often perform excellently; material choice depends on application, not blanket preference. Circularity is increasingly feasible and increasingly required. Circular principles apply powerfully to buildings, which have long life spans and significant material mass. Circular economy principles mean designing buildings to be disassembled and reused rather than demolished and landfilled. Material selection, modular systems, and adaptable design enable buildings to serve changing uses, reducing waste and resource consumption. Material selection, modular systems, and adaptable design enable buildings to serve changing uses, reducing waste and resource consumption.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "SYS"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-001-13-012",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "updated_at": "2026-05-06T14:40:19.726394+00:00",
+      "content_hash": "sha256:09f960717bdd541958895e7da9cd071cd15c2cd9ff99b874a55f05a309dc7a81"
+    },
+    {
+      "question_id": "e9a0760e-8506-4ecd-8cfe-ccee117f3029",
+      "article_id": "dc020375-d1af-4213-959f-4f31e5f390b9",
+      "topic_id": "ba1e0c53-5f70-4f15-bac4-2e4b4fbd49bb",
+      "text": "An architect is designing a sustainable office building. Which decision best demonstrates integrated sustainable thinking?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Minimize cost by using cheap materials regardless of durability or environmental impact, which can lead to higher long-term costs"
+        },
+        {
+          "id": "b",
+          "text": "Focus exclusively on aesthetic innovation without considering environmental or social consequences, potentially compromising sustainability"
+        },
+        {
+          "id": "c",
+          "text": "Optimize site orientation for passive solar gain, design natural ventilation to reduce HVAC loads, specify low-toxicity materials, and employ these strategies alongside efficient active systems"
+        },
+        {
+          "id": "d",
+          "text": "Install solar panels on the roof to offset energy consumption while ignoring site orientation, window placement, and ventilation, which limits overall efficiency"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Cost-cutting that sacrifices durability violates material stewardship principles.",
+        "b": "Aesthetic expression and environmental responsibility must be integrated, not opposed.",
+        "d": "While renewables matter, relying on them without reducing demand first is inefficient.",
+        "correct": "Integrated sustainable design addresses multiple dimensions simultaneously: passive strategies (orientation, ventilation) reduce loads; material stewardship (durability, low-toxicity) addresses life-cycle impact; active systems (efficient HVAC, renewable energy) supplement passive approaches. These work together.",
+        "takeaway": "These work together."
+      },
+      "explanation": "Cost-cutting that sacrifices durability violates material stewardship principles. Aesthetic expression and environmental responsibility must be integrated, not opposed. While renewables matter, relying on them without reducing demand first is inefficient. Integrated sustainable design addresses multiple dimensions simultaneously: passive strategies (orientation, ventilation) reduce loads; material stewardship (durability, low-toxicity) addresses life-cycle impact; active systems (efficient HVAC, renewable energy) supplement passive approaches. These work together. These work together.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-001-13-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "updated_at": "2026-05-06T14:40:19.8576+00:00",
+      "content_hash": "sha256:bcd28489495317c6a5131e33862074a9b2addd6c5eb206fa34af287ece908e5a"
+    },
+    {
+      "question_id": "b25a8246-5f31-4dca-a696-8e1591ef041e",
+      "article_id": "dc020375-d1af-4213-959f-4f31e5f390b9",
+      "topic_id": "ba1e0c53-5f70-4f15-bac4-2e4b4fbd49bb",
+      "text": "What is 'material stewardship' in architectural responsibility?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Responsible material selection considering environmental impact of production, durability, renewable/recycled content, toxicity, sourcing ethics, and life-cycle consequences"
+        },
+        {
+          "id": "b",
+          "text": "Avoiding all artificial or manufactured materials in favor of natural materials only, which may limit design flexibility and innovation"
+        },
+        {
+          "id": "c",
+          "text": "Using only traditional materials from the vernacular of a region, emphasizing cultural heritage over modern technological advancements"
+        },
+        {
+          "id": "d",
+          "text": "Selecting materials based only on lowest cost and fastest installation, potentially compromising quality and sustainability"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Responsible manufactured materials often outperform 'natural' materials environmentally and ethically.",
+        "c": "While vernacular wisdom matters, contemporary buildings may require contemporary materials used responsibly.",
+        "d": "Cost-focused selection ignores environmental and ethical consequences.",
+        "correct": "Material stewardship means understanding and accounting for environmental and social consequences of material choices: energy and water in production, transportation emissions, durability (longer lifespan = fewer replacements), recycled/renewable content, worker conditions, and end-of-life recyclability.",
+        "takeaway": "Material stewardship means understanding and accounting for environmental and social consequences of material choices: energy and water in production, transportation emissions, durability (longer lifespan = fewer replacements), recycled/renewable content, worker conditions, and end-of-life recyclability."
+      },
+      "explanation": "Responsible manufactured materials often outperform 'natural' materials environmentally and ethically. While vernacular wisdom matters, contemporary buildings may require contemporary materials used responsibly. Cost-focused selection ignores environmental and ethical consequences. Material stewardship means understanding and accounting for environmental and social consequences of material choices: energy and water in production, transportation emissions, durability (longer lifespan = fewer replacements), recycled/renewable content, worker conditions, and end-of-life recyclability. Material stewardship means understanding and accounting for environmental and social consequences of material choices: energy and water in production, transportation emissions, durability (longer lifespan = fewer replacements), recycled/renewable content, worker conditions, and end-of-life recyclability.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-001-13-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "updated_at": "2026-05-06T14:40:19.989051+00:00",
+      "content_hash": "sha256:153edab365b116b7ee848e4f6b973c71cb87dc364a733df38d5e9dfda857bca5"
+    },
+    {
+      "question_id": "ed92c12c-56ed-421f-98be-96ef20469acd",
+      "article_id": "dc020375-d1af-4213-959f-4f31e5f390b9",
+      "topic_id": "ba1e0c53-5f70-4f15-bac4-2e4b4fbd49bb",
+      "text": "In the Philippine context with high typhoon vulnerability, what specific architectural responsibility should guide design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Copy vernacular forms exactly without understanding the principles underlying their climate resilience, which may lead to ineffective adaptation"
+        },
+        {
+          "id": "b",
+          "text": "Design for wind and water resistance, structural redundancy, materials and details proven in tropical conditions, engagement with vernacular traditions adapted to typhoon resilience"
+        },
+        {
+          "id": "c",
+          "text": "Design strategies from temperate low-risk regions; climate variation is not the architect's responsibility, focusing instead on aesthetic appeal"
+        },
+        {
+          "id": "d",
+          "text": "Prioritize cost reduction over climate adaptation due to limited resources, potentially compromising safety and durability"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Understanding underlying principles enables better contemporary application than historical imitation.",
+        "c": "Climate conditions are central to architectural responsibility; ignoring them is irresponsible.",
+        "d": "Budget limitations do not justify compromising safety; resilience should be integrated into cost planning.",
+        "correct": "The Philippine context requires climate-responsive design grounded in understanding: why vernacular architecture (elevated construction, strong framing, wind-resistant detailing) works in these conditions. Contemporary design must apply these proven principles using modern materials. This is ethical responsibility.",
+        "takeaway": "This is ethical responsibility."
+      },
+      "explanation": "Understanding underlying principles enables better contemporary application than historical imitation. Climate conditions are central to architectural responsibility; ignoring them is irresponsible. Budget limitations do not justify compromising safety; resilience should be integrated into cost planning. The Philippine context requires climate-responsive design grounded in understanding: why vernacular architecture (elevated construction, strong framing, wind-resistant detailing) works in these conditions. Contemporary design must apply these proven principles using modern materials. This is ethical responsibility. This is ethical responsibility.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-001-13-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "updated_at": "2026-05-06T14:40:20.120877+00:00",
+      "content_hash": "sha256:73f155af6796cd21da513f7e926f711ba842f6a8eb1ee552ea2161918910901f"
+    },
     {
       "question_id": "93dd6e42-8a10-4589-a1f4-55d6ea6f8622",
       "article_id": "dc020375-d1af-4213-959f-4f31e5f390b9",
@@ -91,7 +299,7 @@
         "correct": "Professional ethics include integrity (honest representation of capabilities and performance), competence (designing within one's knowledge or engaging qualified consultants), duty to client (faithful representation of interests), and duty to public (ensuring safety, code compliance, and no environmental or community harm).",
         "takeaway": "Professional ethics include integrity (honest representation of capabilities and performance), competence (designing within one's knowledge or engaging qualified consultants), duty to client (faithful representation of interests), and duty to public (ensuring safety, code compliance, and no environmental or community harm)."
       },
-      "explanation": null,
+      "explanation": "Ethics extend beyond technical competence to honesty and responsibility. Client satisfaction cannot override professional standards or public welfare. Cost constraints cannot justify compromising safety or quality. Professional ethics include integrity (honest representation of capabilities and performance), competence (designing within one's knowledge or engaging qualified consultants), duty to client (faithful representation of interests), and duty to public (ensuring safety, code compliance, and no environmental or community harm). Professional ethics include integrity (honest representation of capabilities and performance), competence (designing within one's knowledge or engaging qualified consultants), duty to client (faithful representation of interests), and duty to public (ensuring safety, code compliance, and no environmental or community harm).",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -105,8 +313,8 @@
       "model_id": "ALE-THEO-001-13-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.522336+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:b2a37fab87f4672f94a89c991dd02fc9a9fbaefa0f10ae4d1f9de0c698d53322"
+      "updated_at": "2026-05-06T14:40:19.322339+00:00",
+      "content_hash": "sha256:6cfcc4ab532da42fbf3de3d44ae57fba441565a40e7a5bf8d6c691648cecd2e3"
     },
     {
       "question_id": "1fc73a28-9d1b-437c-9271-b241560b5fd7",
@@ -143,7 +351,7 @@
         "correct": "Passive strategies use fundamental design decisions (orientation, materials, form, openings) to regulate temperature, light, and ventilation. They reduce energy consumption and operating costs while improving occupant experience.",
         "takeaway": "They reduce energy consumption and operating costs while improving occupant experience."
       },
-      "explanation": null,
+      "explanation": "Passive design is sophisticated and intentional. Active systems are important but supplement rather than replace passive design. Good design supports rather than depends on willpower; passive strategies work regardless of occupant behavior. Passive strategies use fundamental design decisions (orientation, materials, form, openings) to regulate temperature, light, and ventilation. They reduce energy consumption and operating costs while improving occupant experience. They reduce energy consumption and operating costs while improving occupant experience.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -157,8 +365,8 @@
       "model_id": "ALE-THEO-001-13-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.522336+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:5fa1951f6ea1eb4d201f819e563671948666e40ff48060a0d12eed0c8d26bc33"
+      "updated_at": "2026-05-06T14:40:19.457332+00:00",
+      "content_hash": "sha256:aeef9e93c16a4923c7b8f7ac6a232a90d6ccd279665b4dc5691af217e1ee7d80"
     },
     {
       "question_id": "71d79eb1-301c-44e8-9adc-ffb15c16ac39",
@@ -195,7 +403,7 @@
         "correct": "Both are essential dimensions of sustainability. Water conservation addresses precious resource use. Ecological stewardship addresses broader ecosystem health: habitat preservation, permeable surfaces reducing storm-water pollution, green infrastructure supporting biodiversity. They are distinct but complementary.",
         "takeaway": "They are distinct but complementary."
       },
-      "explanation": null,
+      "explanation": "They are distinct dimensions of comprehensive sustainability. Both are design concerns with real consequences. Both are needed; they are not substitutes for each other. Both are essential dimensions of sustainability. Water conservation addresses precious resource use. Ecological stewardship addresses broader ecosystem health: habitat preservation, permeable surfaces reducing storm-water pollution, green infrastructure supporting biodiversity. They are distinct but complementary. They are distinct but complementary.",
       "code_citation": null,
       "bloom_level": "apply",
       "application_context": "design_application",
@@ -209,112 +417,8 @@
       "model_id": "ALE-THEO-001-13-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.522336+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:25eed83ee76874cde678156855e57cdbe85225fd299df4f80cb68cbc37a9f904"
-    },
-    {
-      "question_id": "24eb40a9-99af-4744-8dfe-b20ee851c488",
-      "article_id": "dc020375-d1af-4213-959f-4f31e5f390b9",
-      "topic_id": "ba1e0c53-5f70-4f15-bac4-2e4b4fbd49bb",
-      "text": "In the context of 'circular economy' principles in architecture, what is the architect's responsibility?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Prioritize virgin materials for strength and durability; recycled materials are inferior and may compromise structural integrity in critical applications"
-        },
-        {
-          "id": "b",
-          "text": "Design buildings for linear extraction-manufacture-use-discard cycles; circularity is impossible in architecture due to inherent material limitations and lifecycle constraints"
-        },
-        {
-          "id": "c",
-          "text": "Circular design applies only to products, not buildings, because buildings have fixed lifespans and cannot be easily adapted to circular principles"
-        },
-        {
-          "id": "d",
-          "text": "Select materials that can be reused or recycled, design buildings whose components can be disassembled and repurposed, specify modular systems allowing adaptation and reuse over time"
-        }
-      ],
-      "correct_option_id": "d",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "High-quality recycled materials often perform excellently; material choice depends on application, not blanket preference.",
-        "b": "Circularity is increasingly feasible and increasingly required.",
-        "c": "Circular principles apply powerfully to buildings, which have long life spans and significant material mass.",
-        "correct": "Circular economy principles mean designing buildings to be disassembled and reused rather than demolished and landfilled. Material selection, modular systems, and adaptable design enable buildings to serve changing uses, reducing waste and resource consumption.",
-        "takeaway": "Material selection, modular systems, and adaptable design enable buildings to serve changing uses, reducing waste and resource consumption."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [
-        "SYS"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-001-13-012",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:53.522336+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:7f5c0026883671116c2797ca124eb819aff94fd405499481e2b5215c65985777"
-    },
-    {
-      "question_id": "e9a0760e-8506-4ecd-8cfe-ccee117f3029",
-      "article_id": "dc020375-d1af-4213-959f-4f31e5f390b9",
-      "topic_id": "ba1e0c53-5f70-4f15-bac4-2e4b4fbd49bb",
-      "text": "An architect is designing a sustainable office building. Which decision best demonstrates integrated sustainable thinking?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Minimize cost by using cheap materials regardless of durability or environmental impact, which can lead to higher long-term costs"
-        },
-        {
-          "id": "b",
-          "text": "Focus exclusively on aesthetic innovation without considering environmental or social consequences, potentially compromising sustainability"
-        },
-        {
-          "id": "c",
-          "text": "Optimize site orientation for passive solar gain, design natural ventilation to reduce HVAC loads, specify low-toxicity materials, and employ these strategies alongside efficient active systems"
-        },
-        {
-          "id": "d",
-          "text": "Install solar panels on the roof to offset energy consumption while ignoring site orientation, window placement, and ventilation, which limits overall efficiency"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Cost-cutting that sacrifices durability violates material stewardship principles.",
-        "b": "Aesthetic expression and environmental responsibility must be integrated, not opposed.",
-        "d": "While renewables matter, relying on them without reducing demand first is inefficient.",
-        "correct": "Integrated sustainable design addresses multiple dimensions simultaneously: passive strategies (orientation, ventilation) reduce loads; material stewardship (durability, low-toxicity) addresses life-cycle impact; active systems (efficient HVAC, renewable energy) supplement passive approaches. These work together.",
-        "takeaway": "These work together."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "apply",
-      "application_context": "design_application",
-      "practice_context": [
-        "APP"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-001-13-005",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:53.522336+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:67c4150260befa2c2a978daba69825e0ff29df8970eab93cc68739326fabc0f1"
+      "updated_at": "2026-05-06T14:40:19.589078+00:00",
+      "content_hash": "sha256:2f643c2de46c743761a9c05b183ff6d5fa7f873ef9023d1bc16cb05f3deee9cd"
     },
     {
       "question_id": "0792b50a-00d3-4aa3-a4e0-e6b4658e8d5c",
@@ -367,58 +471,6 @@
       "created_at": "2026-03-23T19:27:53.522336+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:1b00ccea51f4ec739e43ed9ae7fe07eaee6fc63fa6e21adf51762fe92d666b6b"
-    },
-    {
-      "question_id": "b25a8246-5f31-4dca-a696-8e1591ef041e",
-      "article_id": "dc020375-d1af-4213-959f-4f31e5f390b9",
-      "topic_id": "ba1e0c53-5f70-4f15-bac4-2e4b4fbd49bb",
-      "text": "What is 'material stewardship' in architectural responsibility?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Responsible material selection considering environmental impact of production, durability, renewable/recycled content, toxicity, sourcing ethics, and life-cycle consequences"
-        },
-        {
-          "id": "b",
-          "text": "Avoiding all artificial or manufactured materials in favor of natural materials only, which may limit design flexibility and innovation"
-        },
-        {
-          "id": "c",
-          "text": "Using only traditional materials from the vernacular of a region, emphasizing cultural heritage over modern technological advancements"
-        },
-        {
-          "id": "d",
-          "text": "Selecting materials based only on lowest cost and fastest installation, potentially compromising quality and sustainability"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "b": "Responsible manufactured materials often outperform 'natural' materials environmentally and ethically.",
-        "c": "While vernacular wisdom matters, contemporary buildings may require contemporary materials used responsibly.",
-        "d": "Cost-focused selection ignores environmental and ethical consequences.",
-        "correct": "Material stewardship means understanding and accounting for environmental and social consequences of material choices: energy and water in production, transportation emissions, durability (longer lifespan = fewer replacements), recycled/renewable content, worker conditions, and end-of-life recyclability.",
-        "takeaway": "Material stewardship means understanding and accounting for environmental and social consequences of material choices: energy and water in production, transportation emissions, durability (longer lifespan = fewer replacements), recycled/renewable content, worker conditions, and end-of-life recyclability."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "apply",
-      "application_context": "design_application",
-      "practice_context": [
-        "APP"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-001-13-006",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:53.522336+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:59aad8863546ca62564bbf6794b76095562fb1f7bc25ee828b1717e1823d2cef"
     },
     {
       "question_id": "e619df10-cd19-4f29-ac0b-79c0a1e0803f",
@@ -577,58 +629,6 @@
       "content_hash": "sha256:0edd6cf50525accdef2589ab9f1b85d77c93ae537d0e218f7c644970700228c6"
     },
     {
-      "question_id": "ed92c12c-56ed-421f-98be-96ef20469acd",
-      "article_id": "dc020375-d1af-4213-959f-4f31e5f390b9",
-      "topic_id": "ba1e0c53-5f70-4f15-bac4-2e4b4fbd49bb",
-      "text": "In the Philippine context with high typhoon vulnerability, what specific architectural responsibility should guide design?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Copy vernacular forms exactly without understanding the principles underlying their climate resilience, which may lead to ineffective adaptation"
-        },
-        {
-          "id": "b",
-          "text": "Design for wind and water resistance, structural redundancy, materials and details proven in tropical conditions, engagement with vernacular traditions adapted to typhoon resilience"
-        },
-        {
-          "id": "c",
-          "text": "Design strategies from temperate low-risk regions; climate variation is not the architect's responsibility, focusing instead on aesthetic appeal"
-        },
-        {
-          "id": "d",
-          "text": "Prioritize cost reduction over climate adaptation due to limited resources, potentially compromising safety and durability"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Understanding underlying principles enables better contemporary application than historical imitation.",
-        "c": "Climate conditions are central to architectural responsibility; ignoring them is irresponsible.",
-        "d": "Budget limitations do not justify compromising safety; resilience should be integrated into cost planning.",
-        "correct": "The Philippine context requires climate-responsive design grounded in understanding: why vernacular architecture (elevated construction, strong framing, wind-resistant detailing) works in these conditions. Contemporary design must apply these proven principles using modern materials. This is ethical responsibility.",
-        "takeaway": "This is ethical responsibility."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "apply",
-      "application_context": "design_application",
-      "practice_context": [
-        "APP"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-001-13-007",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:53.522336+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:718b9b7083491cb476ff5b63e47141daebe6cc0171e95253394b4724b9922a50"
-    },
-    {
       "question_id": "21696a04-9c9d-44d4-95b2-1c814649c823",
       "article_id": "dc020375-d1af-4213-959f-4f31e5f390b9",
       "topic_id": "ba1e0c53-5f70-4f15-bac4-2e4b4fbd49bb",
@@ -663,7 +663,7 @@
         "correct": "The Philippine context demands architects address specific challenges: designing climate-resilient buildings in a typhoon-prone nation, creating sustainable high-density housing for rapid urbanization and housing shortage, learning from vernacular traditions (bahay kubo principles), and contributing to environmental restoration. This is contextual professional responsibility.",
         "takeaway": "This is contextual professional responsibility."
       },
-      "explanation": null,
+      "explanation": "International solutions must be adapted to Philippine climate, culture, and resources. Architects have professional obligation to contribute to public good through design solutions. Luxury architecture ignores the majority's needs; responsibility requires addressing broader community needs. The Philippine context demands architects address specific challenges: designing climate-resilient buildings in a typhoon-prone nation, creating sustainable high-density housing for rapid urbanization and housing shortage, learning from vernacular traditions (bahay kubo principles), and contributing to environmental restoration. This is contextual professional responsibility. This is contextual professional responsibility.",
       "code_citation": null,
       "bloom_level": "apply",
       "application_context": "design_application",
@@ -677,8 +677,8 @@
       "model_id": "ALE-THEO-001-13-013",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.522336+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:36ed818854d9afcc3ebbe512465eed51fcf5e395d499f28a304f99929f40e8db"
+      "updated_at": "2026-05-06T14:40:20.253135+00:00",
+      "content_hash": "sha256:b6b8f4653d5c7746f4f1a4933b39c0c50a8bb61b38851ffb8db287c1eaf9c0b5"
     },
     {
       "question_id": "68068551-22a7-4ef6-bc53-d1401f09111b",

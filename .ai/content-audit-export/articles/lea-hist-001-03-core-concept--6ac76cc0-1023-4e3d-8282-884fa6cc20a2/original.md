@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Hist 001 03 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 
 ## Learning Goal
@@ -8,26 +17,36 @@ Identify Persian architectural innovations — apadana halls, columned audience 
 The **Achaemenid Persian Empire** (c. 550–330 BCE) stretched from Egypt to India, unified under rulers like **Cyrus II** (the Great, r. 559–530 BCE) and **Darius I** (r. 522–486 BCE). Unlike Mesopotamia's mud brick or Egypt's stone monoliths, Achaemenid architects synthesized both traditions: they built monumental stone structures using ashlar masonry, incorporated columned halls inspired by both Mesopotamian and Greek precedent, and employed the labor and materials of conquered territories. This eclecticism was not weakness but strategic brilliance—Achaemenid architecture demonstrated the empire's reach and cultural authority.
 
 
-<ArticleMedia id="media-hist-001-03-core-concept" layout="single" type="image" status="placeholder" alt="View of the remains of the Apadana at Persepolis (founded by Darius I, c. 518 BCE), showing the column grid with tall fluted columns and animal-headed capitals." caption="Persepolis Apadana — Columned Audience Hall" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-hist-001-03-core-concept", layout="single", type="image", status="placeholder", alt="View of the remains of the Apadana at Persepolis (founded by Darius I, c. 518 BCE), showing the column grid with tall fluted columns and animal-headed capitals.", caption="Persepolis Apadana — Columned Audience Hall", suggestedAsset="Architectural reference image or diagram", placementIntent="Visual reference for architectural period/typology"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 
 The defining structure was the **apadana** (or hypostyle hall)—a large roofed space supported by many columns rather than walls. The apadana served as a throne room, audience hall, or ceremonial space where the Great King received tribute and conducted state business. Unlike the post-and-lintel simplicity of Greece, Persian apadanas were vast, often 100+ meters on a side, with large numbers of columns arranged in a grid. The columns were tall (up to 24 meters or approximately 79 feet), slender, and topped with elaborate carved capitals depicting animal forms (bulls, lions, horses).
 
-<Tip>
-**Memory Aid: Apadana Spaces.** Apadana = Many columns + One big space. The columns hold up the roof but don't divide the space—you can see all the way across. This is different from basilicas (which have aisles and divisions) and different from temples (which have enclosed sanctums). The apadana is open, unified, impressive.
-</Tip>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Memory Aid: Apadana Spaces.** Apadana = Many columns + One big space. The columns hold up the roof but don't divide the space—you can see all the way across. This is different from basilicas (which have aisles and divisions) and different from temples (which have enclosed sanctums). The apadana is open, unified, impressive.
+[/SLATECAMP_UI_BLOCK]
 
 The most famous apadana is at **Persepolis** (founded by **Darius I** c. 518 BCE, with construction beginning 518–515 BCE; destroyed by Leaxander in 330 BCE). The Persepolis Apadana's central hall measured approximately 196 feet (60 meters) on each side with 36 columns in the central hall, plus three verandahs (north, east, west) each with 12 columns, totaling 72 columns originally. Its platform—raised approximately 15 meters (49 feet) above the surrounding plain—was approached by monumental staircases carved with reliefs depicting representatives of subject nations bringing tribute. The reliefs themselves are architectural narrative: each figure, each animal, each gift embodies the empire's scope and order.
 
-<Note>
-**Key Clarification:** Apadana does not equal pyramid or Egyptian temple. The apadana is a columned hall—interior space defined by many columns, not by walls. It is open, not enclosed. This distinction separates Persian from Egyptian architectural thinking.
-</Note>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Key Clarification:** Apadana does not equal pyramid or Egyptian temple. The apadana is a columned hall—interior space defined by many columns, not by walls. It is open, not enclosed. This distinction separates Persian from Egyptian architectural thinking.
+[/SLATECAMP_UI_BLOCK]
 
 Persepolis also featured the **Gate of All Nations** (also called Gate of Xerxes, ordered by **Xerxes I**, r. 486–465 BCE), a monumental entrance structure guarded by colossal carved lamassu (winged bull figures with human heads). Pairs of lamassu flanked both eastern and western doorways. These gateways, borrowed from Assyrian precedent but executed in stone and at vastly grander scale, announced imperial authority. The human-headed figures represented the king's wisdom and divine sanction.
 
-<Warning>
-**Critical Distinction:** Do not confuse Achaemenid and Greek architecture. Both cultures built with stone and columns in the same era, but their intentions and aesthetics differ. Greek temples are enclosed; Achaemenid apadanas are open and hypostyle (many columns visible). Greek columns taper upward; Persian columns are often straight or flare at the capital. Understanding these differences is essential for the LEA.
-</Warning>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Warning" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Critical Distinction:** Do not confuse Achaemenid and Greek architecture. Both cultures built with stone and columns in the same era, but their intentions and aesthetics differ. Greek temples are enclosed; Achaemenid apadanas are open and hypostyle (many columns visible). Greek columns taper upward; Persian columns are often straight or flare at the capital. Understanding these differences is essential for the LEA.
+[/SLATECAMP_UI_BLOCK]
 
 Achaemenid builders worked with **limestone and marble**, quarried locally or imported. They used ashlar masonry—carefully cut, precisely fitted stones—allowing for thinner walls and larger interior spaces than mud brick permitted. Joints were tight, sometimes without mortar (dry ashlar). This stone construction, combined with the apadana's columnar interior, created interiors that were simultaneously monumental and open.
 
@@ -36,34 +55,72 @@ Other important Achaemenid sites include **Susa** (ancient Elamite capital, adap
 The Achaemenid approach—creating empire through architectural display—influenced later empires. When **Leaxander conquered Persepolis**, he destroyed it but absorbed its lessons. Byzantine emperors, Islamic caliphs, and Indian Mughal rulers would echo the apadana's columnar grandeur in their own palaces.
 
 
-<ArticleMedia id="media-hist-001-03-core-concept" layout="single" type="image" status="placeholder" alt="Details of Achaemenid column capitals showing the characteristic double-bull and lion-griffin protome capitals used in the Persepolis Apadana and Throne Hall." caption="Persian Column Capital — Bull and Griffin Forms" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+[SLATECAMP_UI_BLOCK:ui_0005 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-hist-001-03-core-concept", layout="single", type="image", status="placeholder", alt="Details of Achaemenid column capitals showing the characteristic double-bull and lion-griffin protome capitals used in the Persepolis Apadana and Throne Hall.", caption="Persian Column Capital — Bull and Griffin Forms", suggestedAsset="Architectural reference image or diagram", placementIntent="Visual reference for architectural period/typology"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 
 ## Key Facts and Testable Items
 
-<WikiExamTable headers={["Site", "Location", "Date", "Builder", "Key Feature"]} rows={[["**Apadana of Persepolis**", "Persepolis (Persia)", "c. 515 BCE, construction 518–515 BCE", "Darius I, completed by Xerxes I", "Central hypostyle hall 60 m × 60 m (196 ft) with 36 columns; 3 verandahs with 12 columns each; total 72 columns each 24 m (79 ft) tall; tribute relief staircases"], ["**Gate of All Nations**", "Persepolis", "c. 515 BCE, ordered by Xerxes I", "Xerxes I", "Monumental gateway with colossal lamassu pairs at east and west entrances; stone execution of Assyrian protective gateway tradition"], ["**Persepolis Platform and Staircases**", "Persepolis", "c. 515–465 BCE", "Darius I (founding), Xerxes I (continued building)", "Platform raised 15 m (49 ft) above surrounding plain; monumental processional staircases with relief narrative of tribute-bearing delegations"], ["**Palace of Darius at Susa**", "Susa (Mesopotamia, modern Iraq)", "c. 521–515 BCE", "Darius I", "Apadana 109 m × 109 m with 36 central columns 21 m (68.8 ft) tall; multiple courtyards, residential areas, administrative chambers; built parallel to Persepolis"], ["**Tomb of Cyrus**", "Pasargadae (Persia)", "c. 530–540 BCE", "Cyrus II (died 530 BCE)", "Limestone structure approximately 11 m (36 ft) tall on raised platform; site of Achaemenid coronation ceremonies; modest monumental statement"], ["**Pasargadae (ceremonial center)**", "Pasargadae (Persia)", "c. 550 BCE (founded)", "Cyrus II", "First Achaemenid capital; palaces, formal gardens, ceremonial structures; replaced by Persepolis under Darius I as administrative center"]]} />
+[SLATECAMP_UI_BLOCK:ui_0006 component="WikiExamTable" status="preserved"]
+Extracted summary:
+- Props: headers="{[\"Site\", \"Location\", \"Date\", \"Builder\", \"Key Feature\"]}", rows="{[[\"**Apadana of Persepolis**\", \"Persepolis (Persia)\", \"c. 515 BCE, construction 518–515 BCE\", \"Darius I, completed by Xerxes I\", \"Central hypostyle hall 60 m × 60 m (196 ft) with 36 columns; 3 verandahs with 12 columns each; total 72 columns each 24 m (79 ft) tall; tribute relief staircases\"], [\"**Gate of All Nations**\", \"Persepolis\", \"c. 515 BCE, ordered by Xerxes I\", \"Xerxes I\", \"Monumental gateway with colossal lamassu pairs at east and west entrances; stone execution of Assyrian protective gateway tradition\"], [\"**Persepolis Platform and Staircases**\", \"Persepolis\", \"c. 515–465 BCE\", \"Darius I (founding), Xerxes I (continued building)\", \"Platform raised 15 m (49 ft) above surrounding plain; monumental processional staircases with relief narrative of tribute-bearing delegations\"], [\"**Palace of Darius at Susa**\", \"Susa (Mesopotamia, modern Iraq)\", \"c. 521–515 BCE\", \"Darius I\", \"Apadana 109 m × 109 m with 36 central columns 21 m (68.8 ft) tall; multiple courtyards, residential areas, administrative chambers; built parallel to Persepolis\"], [\"**Tomb of Cyrus**\", \"Pasargadae (Persia)\", \"c. 530–540 BCE\", \"Cyrus II (died 530 BCE)\", \"Limestone structure approximately 11 m (36 ft) tall on raised platform; site of Achaemenid coronation ceremonies; modest monumental statement\"], [\"**Pasargadae (ceremonial center)**\", \"Pasargadae (Persia)\", \"c. 550 BCE (founded)\", \"Cyrus II\", \"First Achaemenid capital; palaces, formal gardens, ceremonial structures; replaced by Persepolis under Darius I as administrative center\"]]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## How It's Tested on the LEA
 
-<ExamTip>**Pattern 1: Apadana Recognition and Purpose.** "A Persian apadana serves which primary function?" Tests your grasp of hypostyle halls, columnar construction, and ceremonial use.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 1: Apadana Recognition and Purpose.** "A Persian apadana serves which primary function?" Tests your grasp of hypostyle halls, columnar construction, and ceremonial use.
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>**Pattern 2: Structural Synthesis.** "Achaemenid architecture synthesized elements from which earlier civilizations?" Expects you to identify Mesopotamian (lamassu, gates) and Egyptian (stone monumentality) influences.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 2: Structural Synthesis.** "Achaemenid architecture synthesized elements from which earlier civilizations?" Expects you to identify Mesopotamian (lamassu, gates) and Egyptian (stone monumentality) influences.
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>**Pattern 3: Material and Sclea Analysis.** "Why did Achaemenid architects shift from mud brick to ashlar masonry?" Tests your understanding of material limitations and the demands of monumental open spaces.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0009 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 3: Material and Sclea Analysis.** "Why did Achaemenid architects shift from mud brick to ashlar masonry?" Tests your understanding of material limitations and the demands of monumental open spaces.
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>**Pattern 4: Specific Building Identification.** "Which structure at Persepolis contains reliefs depicting tribute from subject nations?" Tests knowledge of specific sites and their iconographic programs.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0010 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 4: Specific Building Identification.** "Which structure at Persepolis contains reliefs depicting tribute from subject nations?" Tests knowledge of specific sites and their iconographic programs.
+[/SLATECAMP_UI_BLOCK]
 
-<Callout>
-Persian Achaemenid architecture tests your ability to identify structures that merged Near Eastern traditions with monumental stone construction, and to recognize how empire-building drove architectural innovation. The LEA expects knowledge of Persepolis, the apadana (columned hall), stone carving, and the cultural synthesis that defined the first great Persian empire (c. 550–330 BCE).
-</Callout>
+[SLATECAMP_UI_BLOCK:ui_0011 component="Callout" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Persian Achaemenid architecture tests your ability to identify structures that merged Near Eastern traditions with monumental stone construction, and to recognize how empire-building drove architectural innovation. The LEA expects knowledge of Persepolis, the apadana (columned hall), stone carving, and the cultural synthesis that defined the first great Persian empire (c. 550–330 BCE).
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
-<WikiMistakeCard mistake="Confusing Achaemenid and Greek architecture" correction="Both cultures built with stone and columns in the same era, but their intentions and aesthetics differ. Greek temples are enclosed; Achaemenid apadanas are open and hypostyle. Greek columns taper upward; Persian columns are straight or flare at the capital." context="This distinction is frequently tested and shows understanding of how different civilizations approached monumental architecture." />
+[SLATECAMP_UI_BLOCK:ui_0012 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Confusing Achaemenid and Greek architecture", correction="Both cultures built with stone and columns in the same era, but their intentions and aesthetics differ. Greek temples are enclosed; Achaemenid apadanas are open and hypostyle. Greek columns taper upward; Persian columns are straight or flare at the capital.", context="This distinction is frequently tested and shows understanding of how different civilizations approached monumental architecture."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeCard mistake="Overstating the influence of Egyptian architecture" correction="While Achaemenid rulers did conquer Egypt, Egyptian architectural influence is visible but not dominant. The apadana is Mesopotamian-derived and Persian-developed, not Egyptian. Avoid conflating Persian and Egyptian styles." context="Recognizing which influences shaped which architectural forms demonstrates nuanced historical understanding." />
+[SLATECAMP_UI_BLOCK:ui_0013 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Overstating the influence of Egyptian architecture", correction="While Achaemenid rulers did conquer Egypt, Egyptian architectural influence is visible but not dominant. The apadana is Mesopotamian-derived and Persian-developed, not Egyptian. Avoid conflating Persian and Egyptian styles.", context="Recognizing which influences shaped which architectural forms demonstrates nuanced historical understanding."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeList mistakes={["Treating Persepolis as a 'city' rather than a ceremonial center: Persepolis was not a living capital or administrative hub day-to-day. It was a palatial ceremonial platform visited seasonally for rituals, tribute reception, and royal audiences. Its function shapes its architecture: grand public spaces, limited domestic areas.", "Misidentifying lamassu as uniquely Persian: Lamassu first appear in Assyrian palaces. Achaemenid architects adopted and enlarged them. Correctly attribute innovation and borrowing.", "Assuming all Achaemenid structures are apadanas: Tombs, gates, residential palaces, and gardens all existed. Differentiate building types and their architectural logics."]} />
+[SLATECAMP_UI_BLOCK:ui_0014 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Treating Persepolis as a 'city' rather than a ceremonial center: Persepolis was not a living capital or administrative hub day-to-day. It was a palatial ceremonial platform visited seasonally for rituals, tribute reception, and royal audiences. Its function shapes its architecture: grand public spaces, limited domestic areas.\", \"Misidentifying lamassu as uniquely Persian: Lamassu first appear in Assyrian palaces. Achaemenid architects adopted and enlarged them. Correctly attribute innovation and borrowing.\", \"Assuming all Achaemenid structures are apadanas: Tombs, gates, residential palaces, and gardens all existed. Differentiate building types and their architectural logics.\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Terms
 
@@ -87,10 +144,22 @@ Persian Achaemenid architecture tests your ability to identify structures that m
 
 **Achaemenid Empire:** The first Persian empire (c. 550–330 BCE) founded by Cyrus II and extending from Egypt to India; its collapse followed Leaxander's conquest.
 
-<ArticleMedia id="media-hist-001-03-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Aerial site plan of Persepolis (c. 515–330 BCE) showing the Gate of All Nations, Apadana audience hall, Throne Hall, and the overall terrace platform layout illustrating Achaemenid imperial spatial organization." caption="Persepolis — Achaemenid Imperial Complex Plan" suggestedAsset="Timeline diagram" placementIntent="Timeline diagram for architectural period" />
+[SLATECAMP_UI_BLOCK:ui_0015 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-hist-001-03-core-concept-timeline", layout="single", type="image", status="placeholder", alt="Aerial site plan of Persepolis (c. 515–330 BCE) showing the Gate of All Nations, Apadana audience hall, Throne Hall, and the overall terrace platform layout illustrating Achaemenid imperial spatial organization.", caption="Persepolis — Achaemenid Imperial Complex Plan", suggestedAsset="Timeline diagram", placementIntent="Timeline diagram for architectural period"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 
-For prerequisite concepts, see <WikiReference slug="lea-hist-001-01-core-concept">Mesopotamian Architecture</WikiReference> and <WikiReference slug="lea-hist-001-02-core-concept">Egyptian Architecture</WikiReference>.
+For prerequisite concepts, see [SLATECAMP_UI_BLOCK:ui_0016 component="WikiReference" status="preserved"]
+Extracted summary:
+- Props: slug="lea-hist-001-01-core-concept"
+- Text: Mesopotamian Architecture
+[/SLATECAMP_UI_BLOCK] and [SLATECAMP_UI_BLOCK:ui_0017 component="WikiReference" status="preserved"]
+Extracted summary:
+- Props: slug="lea-hist-001-02-core-concept"
+- Text: Egyptian Architecture
+[/SLATECAMP_UI_BLOCK].
 
 ## Related Articles
 

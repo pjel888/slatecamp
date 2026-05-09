@@ -1,17 +1,41 @@
 # North American Indigenous Architecture
 
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **North American Indigenous Architecture** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
+
+
 ## Learning Goal
 
-<Tip>Focus on the architect's defining philosophy and key built works. The LEA frequently tests the relationship between an architect's theoretical principles and their physical execution in specific buildings.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
 Extracted summary:
-<ExamTip>**LEA Pattern:** Questions about this architect often present an unfamiliar building and ask you to identify the architect based on characteristic details — look for signature elements like cruciform columns (Mies), pilotis (Corbusier), or structural expressionism (Gaudi).</ExamTip>
+- Props: (none)
+- Text: Focus on the architect's defining philosophy and key built works. The LEA frequently tests the relationship between an architect's theoretical principles and their physical execution in specific buildings.
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
-<Tip>Focus on the architect's defining philosophy and key built works. The LEA frequently tests the relationship between an architect's theoretical principles and their physical execution in specific buildings.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0002 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **LEA Pattern:** Questions about this architect often present an unfamiliar building and ask you to identify the architect based on characteristic details — look for signature elements like cruciform columns (Mies), pilotis (Corbusier), or structural expressionism (Gaudi).
+[/SLATECAMP_UI_BLOCK]
+Extracted summary:
+[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Focus on the architect's defining philosophy and key built works. The LEA frequently tests the relationship between an architect's theoretical principles and their physical execution in specific buildings.
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - Props: (none)
 - Text: Focus on the architect's defining philosophy and key built works. The LEA fre...
 
-<Tip>Focus on the architect's defining philosophy and key built works. The LEA frequently tests the relationship between an architect's theoretical principles and their physical execution in specific buildings.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Focus on the architect's defining philosophy and key built works. The LEA frequently tests the relationship between an architect's theoretical principles and their physical execution in specific buildings.
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - Props: (none)
 - Text: Focus on the architect's defining philosophy and key built works. The LEA fre...
@@ -44,13 +68,19 @@ Think: *"People Live Together"* — all three traditions are fundamentally about
 | **Longhouse** | Haudenosaunee (Iroquois) Confederacy; Northeastern woodlands; pre-contact through historic period | Sapling pole frame (up to 1,000 saplings per 50 m house); bark cladding (elm, cedar); avg. 24 × 5.5 × 5.5 m; up to 75 m+ | Central corridor with multiple hearths; family compartments along both sides; storage platforms above; smoke holes in barrel-vaulted roof | Shared hearths provide communal heating in cold winters; flexible timber frame absorbs wind loads; elongated plan maximizes interior area per unit of material |
 | **Tipi** | Plains nations (Lakota, Cheyenne, Blackfoot, others); widespread post-1700s (horse era) | 14–20 lodgepole pine or red cedar poles; bison hide or canvas cover; 4–6 m height | Conical form; adjustable smoke flaps at apex; tilted axis (steeper windward side); interior liner for insulation and draft control | Low profile resists sustained high winds; chimney-effect ventilation (base intake, apex exhaust); rapid assembly/disassembly (under 30 minutes by experienced users); portable for nomadic life |
 
-<ExamTip>**LEA Pattern:** Questions about this architect often present an unfamiliar building and ask you to identify the architect based on characteristic details — look for signature elements like cruciform columns (Mies), pilotis (Corbusier), or structural expressionism (Gaudi).</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0005 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **LEA Pattern:** Questions about this architect often present an unfamiliar building and ask you to identify the architect based on characteristic details — look for signature elements like cruciform columns (Mies), pilotis (Corbusier), or structural expressionism (Gaudi).
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 
 component="ExamTip" status="preserved"]
-<Note>
-**LEA Pattern:** Questions about this architect often present an unfamiliar b...
-</Note>
+[SLATECAMP_UI_BLOCK:ui_0006 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **LEA Pattern:** Questions about this architect often present an unfamiliar b...
+[/SLATECAMP_UI_BLOCK]
 ## LEA Exam Traps and Common Mistakes
 
 - **Conflating Ancestral Puebloans with Plains tribes:** These are entirely different cultures in different environments with different building traditions. Pueblos are permanent, multi-story, stone-and-adobe complexes in the arid Southwest. Tipis are portable, hide-covered conical structures of the Great Plains. The LEA tests precise cultural attribution — never describe Pueblo peoples as nomadic or Plains peoples as sedentary adobe builders.
@@ -61,28 +91,28 @@ component="ExamTip" status="preserved"]
 
 **Question 1.** What is the primary passive-cooling mechanism of Pueblo adobe construction in the American Southwest?
 
-A. Cross-ventilation through large window openings on opposite walls  
-B. Evaporative cooling ponds integrated into flat roof surfaces  
-C. Thermal mass — thick adobe walls absorb daytime heat and release it slowly at night, stabilizing interior temperatures across extreme diurnal swings  
-D. Underground mechanical air-cooling systems connected to subterranean kivas  
+A. Cross-ventilation through large window openings on opposite walls
+B. Evaporative cooling ponds integrated into flat roof surfaces
+C. Thermal mass — thick adobe walls absorb daytime heat and release it slowly at night, stabilizing interior temperatures across extreme diurnal swings
+D. Underground mechanical air-cooling systems connected to subterranean kivas
 
 > **Correct Answer: C.** Pueblo adobe walls (typically 30–60 cm thick) function as thermal batteries. In the desert Southwest, daytime temperatures can exceed 40°C while nighttime temperatures drop below 10°C. The massive earthen walls absorb heat during the day (keeping interiors cool) and radiate stored heat at night (keeping interiors warm). This thermal flywheel effect is the defining climate adaptation of Pueblo architecture. Kivas are ceremonial/community spaces, not mechanical systems.
 
 **Question 2.** A typical Haudenosaunee (Iroquois) longhouse measured approximately:
 
-A. 8 × 8 × 4 m (a compact square plan for single-family use)  
-B. 24 × 5.5 × 5.5 m (an elongated communal hall with central hearths for multiple families)  
-C. 100 × 30 × 15 m (a monumental stone assembly hall comparable to European cathedrals)  
-D. 6 × 3 × 3 m (a small portable shelter for seasonal hunting camps)  
+A. 8 × 8 × 4 m (a compact square plan for single-family use)
+B. 24 × 5.5 × 5.5 m (an elongated communal hall with central hearths for multiple families)
+C. 100 × 30 × 15 m (a monumental stone assembly hall comparable to European cathedrals)
+D. 6 × 3 × 3 m (a small portable shelter for seasonal hunting camps)
 
 > **Correct Answer: B.** The standard Haudenosaunee longhouse averaged approximately 24 m (80 ft) long × 5.5 m (18 ft) wide × 5.5 m (18 ft) high, housing around 20 or more families in compartments along a central corridor with shared hearths. While some exceptional longhouses exceeded 75 m in length, the LEA typically tests the standard dimensions.
 
 **Question 3.** Which feature of tipi construction provides its primary ventilation mechanism?
 
-A. Fixed glass skylights in the hide covering  
-B. Adjustable smoke flaps at the apex of the cone, creating a chimney effect that draws fresh air from the base perimeter and exhausts smoke upward  
-C. Mechanically operated louvered vents powered by wind turbines  
-D. Large rectangular doorways on all four cardinal orientations  
+A. Fixed glass skylights in the hide covering
+B. Adjustable smoke flaps at the apex of the cone, creating a chimney effect that draws fresh air from the base perimeter and exhausts smoke upward
+C. Mechanically operated louvered vents powered by wind turbines
+D. Large rectangular doorways on all four cardinal orientations
 
 > **Correct Answer: B.** The tipi's conical form creates a natural chimney effect. Adjustable flaps at the apex (controlled by exterior poles) regulate smoke exhaust from the central hearth, while fresh air enters through the base perimeter and through the gap between the outer cover and an interior liner. This passive stack-ventilation system is effective in both calm and windy conditions — a principle applicable to natural ventilation design in Philippine tropical architecture.
 

@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Prac Ctr 022 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## Learning Goal
 
 After studying this article, you should be able to:
@@ -54,11 +63,19 @@ Enforcement of liquidated damages is typically straightforward: the owner deduct
 
 **Question Pattern 5:** Contractor responsibility—If the contractor claims delay was not its fault, can it avoid liquidated damages? (Tests contractor burden to prove non-responsibility)
 
-<Tip>Remember: Liquidated damages = daily rate × delay days = fixed compensation. Enforceable if reasonable, not unconscionable. Accrues automatically from day of delay until Substantial Completion. Court can reduce iniquitous amounts. Contractor can avoid if it proves delay was not its fault.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Remember: Liquidated damages = daily rate × delay days = fixed compensation. Enforceable if reasonable, not unconscionable. Accrues automatically from day of delay until Substantial Completion. Court can reduce iniquitous amounts. Contractor can avoid if it proves delay was not its fault.
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
-<WikiMistakeList mistakes={["Confusing liquidated damages with penalties (Liquidated damages are enforceable; penalties are not)", "Assuming liquidated damages apply until Final Completion (They end at Substantial Completion)", "Thinking liquidated damages accrue only if owner demands them (They accrue automatically without demand)", "Confusing liquidated damages with late payment interest (Different triggers and purposes)", "Assuming contractor is liable for liquidated damages even if delay was owner-caused (Contractor can avoid by proving non-responsibility)", "Thinking courts cannot modify liquidated damages (Courts can equitably reduce unconscionable amounts per Article 2226)", "Confusing daily rate with total damages (Daily rate is multiplied by number of delay days)", "Assuming liquidated damages are paid in addition to actual damages (Liquidated damages substitute for actual damages; double recovery not allowed)"] />
+[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes=true, Confusing=true, liquidated=true, damages=true, with=true, penalties=true, Liquidated=true, are=true, enforceable=true, not=true, Assuming=true, apply=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ---
 

@@ -1,53 +1,9 @@
 {
   "article_id": "fc84f5df-3b67-4891-bf56-596177e774fb",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:8fd39eabcd3707263f3c3cd6a9be66e1659aadb8185a3b8bc76dea265469d190",
+  "linked_questions_hash": "sha256:61414e3586f06d3fb37abfe9abded3d912e63dcd4f7b0591fdd2d891aa2fbcf7",
   "question_count": 22,
   "questions": [
-    {
-      "question_id": "dd7d5796-2a28-4493-b3ae-16bfa7494406",
-      "article_id": "fc84f5df-3b67-4891-bf56-596177e774fb",
-      "topic_id": "2d3e2651-2cd2-48a9-b8ae-d0e27cd62089",
-      "text": "Based on the specifications in \"Mies van der Rohe\", if a project requires 880 L, what is the correct interpretation?",
-      "options": [
-        {
-          "id": "A",
-          "text": "880 L is the minimum/standard requirement"
-        },
-        {
-          "id": "B",
-          "text": "880 L is the maximum permitted value"
-        },
-        {
-          "id": "C",
-          "text": "880 L applies only to specific conditions"
-        },
-        {
-          "id": "D",
-          "text": "880 L is an approximate value subject to interpretation"
-        }
-      ],
-      "correct_option_id": "A",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": "The article specifies 880 L as the requirement. Context: lume? A. Farnsworth House B. Seagram Building C. S.R. Crown Hall at IIT D. 860–8...",
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": null,
-      "application_context": null,
-      "practice_context": [],
-      "difficulty": 0.6,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": null,
-      "prompt_image_url": null,
-      "created_at": "2026-03-31T05:47:14.944746+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:7670841ecb12e10b6eafbe9be5659dd4a91916f43a514cab78397171ac726e16"
-    },
     {
       "question_id": "628764e0-d596-4f53-a787-0c444a2e24f0",
       "article_id": "fc84f5df-3b67-4891-bf56-596177e774fb",
@@ -91,6 +47,50 @@
       "created_at": "2026-03-31T05:47:14.944746+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:77a313821f6f2bbfc62897d94a36e93b8bc6d9edab20d2b069d4667d87d53fd9"
+    },
+    {
+      "question_id": "dd7d5796-2a28-4493-b3ae-16bfa7494406",
+      "article_id": "fc84f5df-3b67-4891-bf56-596177e774fb",
+      "topic_id": "2d3e2651-2cd2-48a9-b8ae-d0e27cd62089",
+      "text": "Based on the specifications in \"Mies van der Rohe\", if a project requires 880 L, what is the correct interpretation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "880 L is the minimum/standard requirement"
+        },
+        {
+          "id": "B",
+          "text": "880 L is the maximum permitted value"
+        },
+        {
+          "id": "C",
+          "text": "880 L applies only to specific conditions"
+        },
+        {
+          "id": "D",
+          "text": "880 L is an approximate value subject to interpretation"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The article specifies 880 L as the requirement. Context: lume? A. Farnsworth House B. Seagram Building C. S.R. Crown Hall at IIT D. 860–8...",
+      "explanation": "The article specifies 880 L as the requirement. Context: lume? A. Farnsworth House B. Seagram Building C. S.R. Crown Hall at IIT D. 860–8...",
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:47:14.944746+00:00",
+      "updated_at": "2026-05-06T15:06:27.321992+00:00",
+      "content_hash": "sha256:ca345c13ffdf787109bb41ce81210787ed8a924b72bf29a59fdc00f9345fdb34"
     },
     {
       "question_id": "937a5923-49f4-4bad-9445-64a1a9d9a472",
@@ -195,6 +195,57 @@
       "content_hash": "sha256:7ac78862944b41bec241a81edb4cecae6dbfb93ad909d45ddda89e22e2b8dad2"
     },
     {
+      "question_id": "a5243a34-a7ac-4535-81b0-219701534546",
+      "article_id": "fc84f5df-3b67-4891-bf56-596177e774fb",
+      "topic_id": "2d3e2651-2cd2-48a9-b8ae-d0e27cd62089",
+      "text": "An LEA question asks about the Barcelona Pavilion and describes it as 'Mies's radical domestic work.' Is this correct, and if not, what is the accurate description?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Correct — the Barcelona Pavilion was a private residence for a German diplomat stationed in Barcelona"
+        },
+        {
+          "id": "B",
+          "text": "Incorrect — it was the German national pavilion for the 1929 International Exposition with no domestic program"
+        },
+        {
+          "id": "C",
+          "text": "Incorrect — it was a museum annex for the 1929 Barcelona World's Fair displaying German industrial products"
+        },
+        {
+          "id": "D",
+          "text": "Correct — the pavilion served as temporary housing for German officials during the six-month exposition"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "The Barcelona Pavilion is NOT a house — it was the German national pavilion for the 1929 International Exposition.",
+        "explanation": "The article's Trap 2 states: 'The Barcelona Pavilion is a pavilion — the German national pavilion for the 1929 International Exposition. It had no domestic program. The Farnsworth House (1951) is Mies's radical domestic work. ALE distractors may swap these.'",
+        "common_misconceptions": [
+          "The Farnsworth House, not the Barcelona Pavilion, is Mies's most radical domestic work",
+          "The Barcelona Pavilion was demolished after the exposition and rebuilt in 1986 — it never had residents"
+        ]
+      },
+      "explanation": "Tests the documented LEA Trap 2: calling the Barcelona Pavilion a 'house' when it is a national exposition pavilion.",
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:00.671325+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5c64f8f77dc7b0e5ca10634556331078da27486c9baaaef4108e5b512be5d687"
+    },
+    {
       "question_id": "4eba911a-728a-4d01-b99a-55e4ebd2d28c",
       "article_id": "fc84f5df-3b67-4891-bf56-596177e774fb",
       "topic_id": "2d3e2651-2cd2-48a9-b8ae-d0e27cd62089",
@@ -244,57 +295,6 @@
       "created_at": "2026-03-31T06:36:00.671325+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:7e3f7fd7058f40fb1d2edf43540f0cc1c243170a20b35727a9805cb4282be377"
-    },
-    {
-      "question_id": "50ef7ab6-02b2-46f9-b570-3634e2adfe9f",
-      "article_id": "fc84f5df-3b67-4891-bf56-596177e774fb",
-      "topic_id": "2d3e2651-2cd2-48a9-b8ae-d0e27cd62089",
-      "text": "Mies van der Rohe's Friedrichstrasse Office Building (1921) in Berlin is significant in architectural history despite never being built. Why?",
-      "options": [
-        {
-          "id": "A",
-          "text": "It was the first unbuilt project to use reinforced concrete pilotis, predicting Le Corbusier's Five Points by six years"
-        },
-        {
-          "id": "B",
-          "text": "It introduced the concept of the public plaza set-back, which was later realized at the Seagram Building in 1958"
-        },
-        {
-          "id": "C",
-          "text": "It was the first building designed using parametric computational tools, predicting the Parametricism movement"
-        },
-        {
-          "id": "D",
-          "text": "It was the first visionary proposal for an all-glass skyscraper, predicting the glass curtain wall decades before feasibility"
-        }
-      ],
-      "correct_option_id": "D",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "summary": "The Friedrichstrasse building was the first visionary proposal for an all-glass skyscraper.",
-        "explanation": "The article's table states the Friedrichstrasse Office Building (1921) was 'first visionary proposal for an all-glass skyscraper; a crystalline prismatic tower that predicted the glass curtain wall decades before it was technically feasible.'",
-        "common_misconceptions": [
-          "Reinforced concrete pilotis are Le Corbusier's contribution, not Mies's",
-          "Parametric tools did not exist in 1921 — the Friedrichstrasse drawing was done by hand"
-        ]
-      },
-      "explanation": "Tests understanding of the Friedrichstrasse project's historical significance as the first all-glass skyscraper proposal.",
-      "code_citation": null,
-      "bloom_level": "understand",
-      "application_context": null,
-      "practice_context": [],
-      "difficulty": 0.6,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": null,
-      "prompt_image_url": null,
-      "created_at": "2026-03-31T06:36:00.671325+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:daf82c37711cebe90ac213922ab29438da86e854adb3f2f5945eee068d97df47"
     },
     {
       "question_id": "1fc1c684-8b35-4c3d-96f3-7ee419980100",
@@ -348,47 +348,47 @@
       "content_hash": "sha256:fd4de4308ae829ab668704287de0744f2f31079ef97d0acdddede80ffa7be100"
     },
     {
-      "question_id": "d33d01ab-1cab-41fb-8a19-9f46d8c1d1bb",
+      "question_id": "50ef7ab6-02b2-46f9-b570-3634e2adfe9f",
       "article_id": "fc84f5df-3b67-4891-bf56-596177e774fb",
       "topic_id": "2d3e2651-2cd2-48a9-b8ae-d0e27cd62089",
-      "text": "The Farnsworth House (1951) in Plano, Illinois is described as the most radical expression of 'less is more' in domestic architecture. What are its defining structural elements?",
+      "text": "Mies van der Rohe's Friedrichstrasse Office Building (1921) in Berlin is significant in architectural history despite never being built. Why?",
       "options": [
         {
           "id": "A",
-          "text": "A floor slab, roof slab, eight steel I-columns, and a glass enclosure — and nothing else"
+          "text": "It was the first unbuilt project to use reinforced concrete pilotis, predicting Le Corbusier's Five Points by six years"
         },
         {
           "id": "B",
-          "text": "A reinforced concrete slab on pilotis with a free plan, free facade, ribbon windows, and a roof garden"
+          "text": "It introduced the concept of the public plaza set-back, which was later realized at the Seagram Building in 1958"
         },
         {
           "id": "C",
-          "text": "Cruciform columns supporting freestanding onyx and travertine planes in a single open landscape room"
+          "text": "It was the first building designed using parametric computational tools, predicting the Parametricism movement"
         },
         {
           "id": "D",
-          "text": "A 120-foot clear-span steel roof hung from four exposed plate girders over an undivided floor plate"
+          "text": "It was the first visionary proposal for an all-glass skyscraper, predicting the glass curtain wall decades before feasibility"
         }
       ],
-      "correct_option_id": "A",
+      "correct_option_id": "D",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "summary": "Farnsworth House consists of floor slab, roof slab, eight steel I-columns, and glass — nothing else.",
-        "explanation": "The article describes the Farnsworth House as 'a glass box elevated on steel I-columns — floor slab, roof slab, eight columns, and glass. The most radical expression of less is more in domestic architecture.'",
+        "summary": "The Friedrichstrasse building was the first visionary proposal for an all-glass skyscraper.",
+        "explanation": "The article's table states the Friedrichstrasse Office Building (1921) was 'first visionary proposal for an all-glass skyscraper; a crystalline prismatic tower that predicted the glass curtain wall decades before it was technically feasible.'",
         "common_misconceptions": [
-          "Option A describes Le Corbusier's Five Points approach at Villa Savoye, not the Farnsworth House",
-          "Option D describes Crown Hall — the Farnsworth House is a single-story glass box, not a clear-span roof structure"
+          "Reinforced concrete pilotis are Le Corbusier's contribution, not Mies's",
+          "Parametric tools did not exist in 1921 — the Friedrichstrasse drawing was done by hand"
         ]
       },
-      "explanation": "Tests precise recall of the Farnsworth House's structural minimalism as the domestic expression of 'less is more.'",
+      "explanation": "Tests understanding of the Friedrichstrasse project's historical significance as the first all-glass skyscraper proposal.",
       "code_citation": null,
-      "bloom_level": "apply",
+      "bloom_level": "understand",
       "application_context": null,
       "practice_context": [],
-      "difficulty": 0.5,
+      "difficulty": 0.6,
       "difficulty_rating": null,
       "discrimination_rating": null,
       "is_assessment": false,
@@ -396,7 +396,7 @@
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:00.671325+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:b9667fb77ef267914fde8f544620632e116b8b8fef402a3fc898037b66a3b576"
+      "content_hash": "sha256:daf82c37711cebe90ac213922ab29438da86e854adb3f2f5945eee068d97df47"
     },
     {
       "question_id": "9158c8a9-0d8f-4e60-9b2c-61b48260f61f",
@@ -450,57 +450,6 @@
       "content_hash": "sha256:de28f0adb15689d3f1d0181089e0e34bfb2ed7431b02dc85acd74e84830ae022"
     },
     {
-      "question_id": "a5243a34-a7ac-4535-81b0-219701534546",
-      "article_id": "fc84f5df-3b67-4891-bf56-596177e774fb",
-      "topic_id": "2d3e2651-2cd2-48a9-b8ae-d0e27cd62089",
-      "text": "An LEA question asks about the Barcelona Pavilion and describes it as 'Mies's radical domestic work.' Is this correct, and if not, what is the accurate description?",
-      "options": [
-        {
-          "id": "A",
-          "text": "Correct — the Barcelona Pavilion was a private residence for a German diplomat stationed in Barcelona"
-        },
-        {
-          "id": "B",
-          "text": "Incorrect — it was the German national pavilion for the 1929 International Exposition with no domestic program"
-        },
-        {
-          "id": "C",
-          "text": "Incorrect — it was a museum annex for the 1929 Barcelona World's Fair displaying German industrial products"
-        },
-        {
-          "id": "D",
-          "text": "Correct — the pavilion served as temporary housing for German officials during the six-month exposition"
-        }
-      ],
-      "correct_option_id": "B",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "summary": "The Barcelona Pavilion is NOT a house — it was the German national pavilion for the 1929 International Exposition.",
-        "explanation": "The article's Trap 2 states: 'The Barcelona Pavilion is a pavilion — the German national pavilion for the 1929 International Exposition. It had no domestic program. The Farnsworth House (1951) is Mies's radical domestic work. ALE distractors may swap these.'",
-        "common_misconceptions": [
-          "The Farnsworth House, not the Barcelona Pavilion, is Mies's most radical domestic work",
-          "The Barcelona Pavilion was demolished after the exposition and rebuilt in 1986 — it never had residents"
-        ]
-      },
-      "explanation": "Tests the documented LEA Trap 2: calling the Barcelona Pavilion a 'house' when it is a national exposition pavilion.",
-      "code_citation": null,
-      "bloom_level": "analyze",
-      "application_context": null,
-      "practice_context": [],
-      "difficulty": 0.6,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": null,
-      "prompt_image_url": null,
-      "created_at": "2026-03-31T06:36:00.671325+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:5c64f8f77dc7b0e5ca10634556331078da27486c9baaaef4108e5b512be5d687"
-    },
-    {
       "question_id": "257599ef-78c7-4c15-a6da-e11eeae7153c",
       "article_id": "fc84f5df-3b67-4891-bf56-596177e774fb",
       "topic_id": "2d3e2651-2cd2-48a9-b8ae-d0e27cd62089",
@@ -550,6 +499,57 @@
       "created_at": "2026-03-31T06:36:00.671325+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:166d93e6f9dae689250d8613afffed0312e7238daf33757c98ec002d60eb03bd"
+    },
+    {
+      "question_id": "d33d01ab-1cab-41fb-8a19-9f46d8c1d1bb",
+      "article_id": "fc84f5df-3b67-4891-bf56-596177e774fb",
+      "topic_id": "2d3e2651-2cd2-48a9-b8ae-d0e27cd62089",
+      "text": "The Farnsworth House (1951) in Plano, Illinois is described as the most radical expression of 'less is more' in domestic architecture. What are its defining structural elements?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A floor slab, roof slab, eight steel I-columns, and a glass enclosure — and nothing else"
+        },
+        {
+          "id": "B",
+          "text": "A reinforced concrete slab on pilotis with a free plan, free facade, ribbon windows, and a roof garden"
+        },
+        {
+          "id": "C",
+          "text": "Cruciform columns supporting freestanding onyx and travertine planes in a single open landscape room"
+        },
+        {
+          "id": "D",
+          "text": "A 120-foot clear-span steel roof hung from four exposed plate girders over an undivided floor plate"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Farnsworth House consists of floor slab, roof slab, eight steel I-columns, and glass — nothing else.",
+        "explanation": "The article describes the Farnsworth House as 'a glass box elevated on steel I-columns — floor slab, roof slab, eight columns, and glass. The most radical expression of less is more in domestic architecture.'",
+        "common_misconceptions": [
+          "Option A describes Le Corbusier's Five Points approach at Villa Savoye, not the Farnsworth House",
+          "Option D describes Crown Hall — the Farnsworth House is a single-story glass box, not a clear-span roof structure"
+        ]
+      },
+      "explanation": "Tests precise recall of the Farnsworth House's structural minimalism as the domestic expression of 'less is more.'",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:00.671325+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b9667fb77ef267914fde8f544620632e116b8b8fef402a3fc898037b66a3b576"
     },
     {
       "question_id": "788d5cc5-0266-4114-ab21-8b6ba1bdac09",

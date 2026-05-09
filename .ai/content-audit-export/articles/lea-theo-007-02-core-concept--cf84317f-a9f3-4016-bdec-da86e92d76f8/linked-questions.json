@@ -1,9 +1,113 @@
 {
   "article_id": "cf84317f-a9f3-4016-bdec-da86e92d76f8",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:83f9813b1882a3b6c43d909f634adcf5a9637266716f9b96b03acff56c7fda28",
+  "linked_questions_hash": "sha256:1caff627eba98b79957420fa3a258d96c224cb27505d076f0d8fd17cfba1375a",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "04b2c33c-4d96-4831-aab3-4a004f9b65bb",
+      "article_id": "cf84317f-a9f3-4016-bdec-da86e92d76f8",
+      "topic_id": "9e67ee87-ffce-4d19-b9cb-60477154f09a",
+      "text": "What does the contemporary discourse about AI-assisted design reveal about the deeper philosophical question of whether architectural excellence can be quantified and optimized?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Architectural excellence can be partially quantified (daylighting, thermal performance, structural efficiency) but unmeasurable qualities (wonder, memorial significance, cultural meaning, poetic resonance) resist algorithmic optimization, suggesting architectural value exceeds quantifiable metrics"
+        },
+        {
+          "id": "b",
+          "text": "The question of quantifiability is irrelevant to architectural practice; buildings either function well or they do not, regardless of their quantification status"
+        },
+        {
+          "id": "c",
+          "text": "Architectural excellence is entirely quantifiable; contemporary resistance to full AI design authority reflects conservative professional gatekeeping, not genuine epistemological limitation"
+        },
+        {
+          "id": "d",
+          "text": "Architectural excellence cannot be quantified at all; any attempt at algorithmic optimization necessarily fails and produces mediocre results"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "architectural theory engages this question as substantive; whether architecture can be quantified has real implications for design methodology and authority.",
+        "c": "architectural theory does not attribute resistance to professional gatekeeping; rather it identifies genuine epistemological limitation—unmeasurable qualities are not measurable.",
+        "d": "architectural theory demonstrates that quantifiable metrics are usefully optimized; the issue is incompleteness, not total failure.",
+        "correct": "AI systems 'optimize for measurable parameters. How do they value unmeasurable qualities—wonder, memorial significance, cultural meaning, poetic resonance?' This acknowledges that quantifiable optimization is powerful for measurable domains while genuinely unmeasurable values remain outside algorithmic authority.",
+        "takeaway": "How do they value unmeasurable qualities—wonder, memorial significance, cultural meaning, poetic resonance?' This acknowledges that quantifiable optimization is powerful for measurable domains while genuinely unmeasurable values remain outside algorithmic authority."
+      },
+      "explanation": "architectural theory engages this question as substantive; whether architecture can be quantified has real implications for design methodology and authority. architectural theory does not attribute resistance to professional gatekeeping; rather it identifies genuine epistemological limitation—unmeasurable qualities are not measurable. architectural theory demonstrates that quantifiable metrics are usefully optimized; the issue is incompleteness, not total failure. AI systems 'optimize for measurable parameters. How do they value unmeasurable qualities—wonder, memorial significance, cultural meaning, poetic resonance?' This acknowledges that quantifiable optimization is powerful for measurable domains while genuinely unmeasurable values remain outside algorithmic authority. How do they value unmeasurable qualities—wonder, memorial significance, cultural meaning, poetic resonance?' This acknowledges that quantifiable optimization is powerful for measurable domains while genuinely unmeasurable values remain outside algorithmic authority.",
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "INT"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-007-02-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.31954+00:00",
+      "updated_at": "2026-05-06T15:09:24.151957+00:00",
+      "content_hash": "sha256:7a4547e35092e4fa0bcd7abac27f3eec421f742884b0f795be3c2da2be81dfb3"
+    },
+    {
+      "question_id": "d50e1ad6-6b06-4a71-8a31-9990614e5da4",
+      "article_id": "cf84317f-a9f3-4016-bdec-da86e92d76f8",
+      "topic_id": "9e67ee87-ffce-4d19-b9cb-60477154f09a",
+      "text": "A facade's perforation density increases on south-facing elevations and decreases on north-facing surfaces, with the perforation pattern data-linked to solar intensity calculations. What design methodology best describes this approach, and what does it demonstrate about ornament in contemporary practice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Postmodern ornamentation—the facade pattern communicates historical or cultural meaning through symbolic reference, often without direct functional application"
+        },
+        {
+          "id": "b",
+          "text": "High-Tech structural expression—the perforations reveal and celebrate the building's mechanical systems, emphasizing the integration of technology and design"
+        },
+        {
+          "id": "c",
+          "text": "Biomimetic pattern generation—the perforation density mimics natural organism distribution patterns without functional justification, serving primarily an aesthetic purpose"
+        },
+        {
+          "id": "d",
+          "text": "Parametric design with performance visualization—ornament returns as performance data rendered in material form, not as applied decoration"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Postmodern ornament communicates semantic meaning through historical or ironic reference; this approach is functionally justified (thermal performance), not semantically motivated.",
+        "b": "High-Tech exposes structural and mechanical systems; perforation patterns serving thermal performance are not mechanical systems per se.",
+        "c": "While the pattern may resemble natural forms, the justification is functional (solar modulation) not biomimetic (organism imitation).",
+        "correct": "The perforation pattern is algorithmically linked to solar data, making it a performance visualization rather than applied ornament. This exemplifies Parametricism's theoretical claim: ornament returns as optimization made visible, not as decoration divorced from function.",
+        "takeaway": "This exemplifies Parametricism's theoretical claim: ornament returns as optimization made visible, not as decoration divorced from function."
+      },
+      "explanation": "Postmodern ornament communicates semantic meaning through historical or ironic reference; this approach is functionally justified (thermal performance), not semantically motivated. High-Tech exposes structural and mechanical systems; perforation patterns serving thermal performance are not mechanical systems per se. While the pattern may resemble natural forms, the justification is functional (solar modulation) not biomimetic (organism imitation). The perforation pattern is algorithmically linked to solar data, making it a performance visualization rather than applied ornament. This exemplifies Parametricism's theoretical claim: ornament returns as optimization made visible, not as decoration divorced from function. This exemplifies Parametricism's theoretical claim: ornament returns as optimization made visible, not as decoration divorced from function.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "SYS"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-007-02-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.31954+00:00",
+      "updated_at": "2026-05-06T15:09:24.29837+00:00",
+      "content_hash": "sha256:670e1a6dc4d17e364d2525b937a46870c1245d20042f35c5528cc87e3c8aae22"
+    },
     {
       "question_id": "20f61979-fa1d-465b-bbde-5c02cbb8cc95",
       "article_id": "cf84317f-a9f3-4016-bdec-da86e92d76f8",
@@ -39,7 +143,7 @@
         "correct": "Homogenization as primary risk: if all designers use identical ML training datasets and optimization algorithms, global architecture may converge on statistically averaged solutions. Additionally, unmeasurable qualities (memorial significance, cultural meaning, poetic resonance) are systematically excluded from AI optimization.",
         "takeaway": "Additionally, unmeasurable qualities (memorial significance, cultural meaning, poetic resonance) are systematically excluded from AI optimization."
       },
-      "explanation": null,
+      "explanation": "Daylighting simulation is well-established; architectural theory does not question ML's accuracy for this parameter but rather its selectivity (what it optimizes for). architectural theory mentions embodied carbon cost of training large AI models but does not emphasize computational expense as the primary risk to daylighting optimization. ML-optimized designs may be complex, but concern is not over-engineering but homogenization and quantification bias. Homogenization as primary risk: if all designers use identical ML training datasets and optimization algorithms, global architecture may converge on statistically averaged solutions. Additionally, unmeasurable qualities (memorial significance, cultural meaning, poetic resonance) are systematically excluded from AI optimization. Additionally, unmeasurable qualities (memorial significance, cultural meaning, poetic resonance) are systematically excluded from AI optimization.",
       "code_citation": null,
       "bloom_level": "analyze",
       "application_context": "design_application",
@@ -53,8 +157,8 @@
       "model_id": "ALE-THEO-007-02-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.31954+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:517c11e5b85f60000ee55616f44934500784a1b817b686035c234ed736ac8f98"
+      "updated_at": "2026-05-06T15:09:23.884181+00:00",
+      "content_hash": "sha256:64f165ebeedd329c205bfb36cc0a9ae582314fef209344c612ce48f7d8c68aef"
     },
     {
       "question_id": "d9a256b2-d1be-4c67-8911-4607563f5372",
@@ -143,7 +247,7 @@
         "correct": "Material computation dissolves structure/skin/ornament binaries by varying material density locally according to stress—a strategy distinct from but complementary to parametric form-finding. Both are parameter-responsive, but material computation operates at material/structural level while parametric design often operates at spatial/formal level.",
         "takeaway": "Both are parameter-responsive, but material computation operates at material/structural level while parametric design often operates at spatial/formal level."
       },
-      "explanation": null,
+      "explanation": "Both material computation and parametric design are heavily algorithmic and computational; neither is manual craft. Material computation is deeply functional (mimicking bone optimization), not ornamental. Traditional parametric design is also functionally motivated. Both approaches can address comprehensive building systems; the distinction concerns the level of optimization (material density vs. formal geometry). Material computation dissolves structure/skin/ornament binaries by varying material density locally according to stress—a strategy distinct from but complementary to parametric form-finding. Both are parameter-responsive, but material computation operates at material/structural level while parametric design often operates at spatial/formal level. Both are parameter-responsive, but material computation operates at material/structural level while parametric design often operates at spatial/formal level.",
       "code_citation": null,
       "bloom_level": "apply",
       "application_context": "design_application",
@@ -157,112 +261,8 @@
       "model_id": "ALE-THEO-007-02-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.31954+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:bbcc47682712cc9602639ff4f2ebfab903d204b33ba44b022d5f6df266d86034"
-    },
-    {
-      "question_id": "04b2c33c-4d96-4831-aab3-4a004f9b65bb",
-      "article_id": "cf84317f-a9f3-4016-bdec-da86e92d76f8",
-      "topic_id": "9e67ee87-ffce-4d19-b9cb-60477154f09a",
-      "text": "What does the contemporary discourse about AI-assisted design reveal about the deeper philosophical question of whether architectural excellence can be quantified and optimized?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Architectural excellence can be partially quantified (daylighting, thermal performance, structural efficiency) but unmeasurable qualities (wonder, memorial significance, cultural meaning, poetic resonance) resist algorithmic optimization, suggesting architectural value exceeds quantifiable metrics"
-        },
-        {
-          "id": "b",
-          "text": "The question of quantifiability is irrelevant to architectural practice; buildings either function well or they do not, regardless of their quantification status"
-        },
-        {
-          "id": "c",
-          "text": "Architectural excellence is entirely quantifiable; contemporary resistance to full AI design authority reflects conservative professional gatekeeping, not genuine epistemological limitation"
-        },
-        {
-          "id": "d",
-          "text": "Architectural excellence cannot be quantified at all; any attempt at algorithmic optimization necessarily fails and produces mediocre results"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "b": "architectural theory engages this question as substantive; whether architecture can be quantified has real implications for design methodology and authority.",
-        "c": "architectural theory does not attribute resistance to professional gatekeeping; rather it identifies genuine epistemological limitation—unmeasurable qualities are not measurable.",
-        "d": "architectural theory demonstrates that quantifiable metrics are usefully optimized; the issue is incompleteness, not total failure.",
-        "correct": "AI systems 'optimize for measurable parameters. How do they value unmeasurable qualities—wonder, memorial significance, cultural meaning, poetic resonance?' This acknowledges that quantifiable optimization is powerful for measurable domains while genuinely unmeasurable values remain outside algorithmic authority.",
-        "takeaway": "How do they value unmeasurable qualities—wonder, memorial significance, cultural meaning, poetic resonance?' This acknowledges that quantifiable optimization is powerful for measurable domains while genuinely unmeasurable values remain outside algorithmic authority."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "analyze",
-      "application_context": "code_interpretation",
-      "practice_context": [
-        "INT"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-007-02-010",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:55.31954+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:2e6713eccdd2f050d93ed5f26a94d071f4ee91004aba976d6119ca2f7280ba1e"
-    },
-    {
-      "question_id": "d50e1ad6-6b06-4a71-8a31-9990614e5da4",
-      "article_id": "cf84317f-a9f3-4016-bdec-da86e92d76f8",
-      "topic_id": "9e67ee87-ffce-4d19-b9cb-60477154f09a",
-      "text": "A facade's perforation density increases on south-facing elevations and decreases on north-facing surfaces, with the perforation pattern data-linked to solar intensity calculations. What design methodology best describes this approach, and what does it demonstrate about ornament in contemporary practice?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Postmodern ornamentation—the facade pattern communicates historical or cultural meaning through symbolic reference, often without direct functional application"
-        },
-        {
-          "id": "b",
-          "text": "High-Tech structural expression—the perforations reveal and celebrate the building's mechanical systems, emphasizing the integration of technology and design"
-        },
-        {
-          "id": "c",
-          "text": "Biomimetic pattern generation—the perforation density mimics natural organism distribution patterns without functional justification, serving primarily an aesthetic purpose"
-        },
-        {
-          "id": "d",
-          "text": "Parametric design with performance visualization—ornament returns as performance data rendered in material form, not as applied decoration"
-        }
-      ],
-      "correct_option_id": "d",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Postmodern ornament communicates semantic meaning through historical or ironic reference; this approach is functionally justified (thermal performance), not semantically motivated.",
-        "b": "High-Tech exposes structural and mechanical systems; perforation patterns serving thermal performance are not mechanical systems per se.",
-        "c": "While the pattern may resemble natural forms, the justification is functional (solar modulation) not biomimetic (organism imitation).",
-        "correct": "The perforation pattern is algorithmically linked to solar data, making it a performance visualization rather than applied ornament. This exemplifies Parametricism's theoretical claim: ornament returns as optimization made visible, not as decoration divorced from function.",
-        "takeaway": "This exemplifies Parametricism's theoretical claim: ornament returns as optimization made visible, not as decoration divorced from function."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [
-        "SYS"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-007-02-004",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:55.31954+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:fedb33a17d07089c1f5680a4a9cad7bf53aa5c41f4aff1f889d5f57376747ca4"
+      "updated_at": "2026-05-06T15:09:24.016859+00:00",
+      "content_hash": "sha256:c327e9c7f32525ce8814b67eac1654ca34760d683ec69b87c3fb163c15dad90c"
     },
     {
       "question_id": "c4a70a7b-6be5-4bdd-92c5-80aee8980a4d",

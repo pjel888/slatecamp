@@ -1,3 +1,10 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Lea Prac Frm 009 Cpd Activity Types For Architects** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
 ## CPD Activity Types for Architects
 
 ## Learning Goal
@@ -13,7 +20,11 @@ After studying this article, you should be able to:
 
 Structured learning encompasses formal courses, seminars, workshops, and conferences offered by accredited CPD providers. These activities include in-person training, online courses, webinars, and hybrid formats combining classroom and digital instruction. Structured learning typically awards higher credit units because it involves systematic curriculum, instructional expertise, and formal evaluation of learning outcomes. Architects completing structured activities receive certificates documenting credit hours and competency areas covered.
 
-<Tip>**Credit value hierarchy (highest to lowest):** Teaching/Presentation and Research/Innovation award the most credits; Structured Learning (formal courses, seminars) is moderate; Self-Directed Learning (reading journals, podcasts) awards the fewest. Plan your CPD portfolio accordingly.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Credit value hierarchy (highest to lowest):** Teaching/Presentation and Research/Innovation award the most credits; Structured Learning (formal courses, seminars) is moderate; Self-Directed Learning (reading journals, podcasts) awards the fewest. Plan your CPD portfolio accordingly.
+[/SLATECAMP_UI_BLOCK]
 
 Structured learning activities address specific knowledge gaps identified in the professional track categories. Courses on building codes, structural design, sustainable architecture, and project management constitute structured learning. Professional conferences where architects attend presentations and seminars on current practice issues qualify as structured learning. Online platforms offering architecture-specific courses with proctored assessments and completion certification provide structured learning credits. The Board recognizes only programs delivered by accredited providers meeting minimum quality standards.
 
@@ -37,7 +48,11 @@ Teaching activities must be documented with course outlines, attendance records,
 
 ### Research and Innovation Activities
 
-<ExamTip>The LEA may test your ability to classify CPD activities. Key distinction: structured learning = formal courses with evaluation; self-directed = independent study without instruction; work-based = learning through actual practice; teaching = instructing others; research = advancing knowledge through investigation.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0002 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: The LEA may test your ability to classify CPD activities. Key distinction: structured learning = formal courses with evaluation; self-directed = independent study without instruction; work-based = learning through actual practice; teaching = instructing others; research = advancing knowledge through investigation.
+[/SLATECAMP_UI_BLOCK]
 
 Research activities including conducting studies on architectural practice, testing new materials or methodologies, or investigating emerging design approaches generate CPD credits. Architects participating in professional research projects, contributing to professional organization studies, or conducting independent research on architectural topics earn credits. Innovation projects implementing new technologies, sustainable design methods, or construction processes that enhance professional knowledge qualify for credits. Documentation includes research proposals, findings summaries, or patent/innovation records.
 
@@ -61,4 +76,8 @@ Research activities recognize that architects advancing the profession through i
 <!-- no-media-needed: professional practice article, text/tables/UI blocks are optimal format -->
 
 
-<ArticleMedia id="media-prac-frm-009-cpd-categories" layout="single" type="image" status="placeholder" alt="Five-column comparison chart of CPD activity categories: (1) Structured Learning — formal courses, seminars, workshops, webinars; credit value per hour (high), requires accredited provider; (2) Self-Directed Learning — journal reading, independent study, online resources; credit value (moderate), requires documentation; (3) Work-Based Learning — mentoring, project leadership, committee service; credit value (moderate), requires employer/peer verification; (4) Teaching/Presentation — university instruction, conference speaking, publishing; credit value (high), requires course outline/published work; (5) Research/Innovation — original studies, new methodologies, patents; credit value (high), requires research documentation. Each column shows maximum credits per cycle, documentation requirements, and verification method." caption="CPD Activity Categories — Structured, Self-Directed, Work-Based, Teaching, Research" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+[SLATECAMP_UI_BLOCK:ui_0003 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-prac-frm-009-cpd-categories", layout="single", type="image", status="placeholder", alt="Five-column comparison chart of CPD activity categories: (1) Structured Learning — formal courses, seminars, workshops, webinars; credit value per hour (high), requires accredited provider; (2) Self-Directed Learning — journal reading, independent study, online resources; credit value (moderate), requires documentation; (3) Work-Based Learning — mentoring, project leadership, committee service; credit value (moderate), requires employer/peer verification; (4) Teaching/Presentation — university instruction, conference speaking, publishing; credit value (high), requires course outline/published work; (5) Research/Innovation — original studies, new methodologies, patents; credit value (high), requires research documentation. Each column shows maximum credits per cycle, documentation requirements, and verification method.", caption="CPD Activity Categories — Structured, Self-Directed, Work-Based, Teaching, Research", suggestedAsset="Architectural reference image or diagram", placementIntent="Visual reference for architectural period/typology"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]

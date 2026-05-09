@@ -1,7 +1,7 @@
 {
   "article_id": "b835f8bb-bb09-44fa-855a-37128197c63b",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:6053e9bb7da1799dd355f3517f5c2a2e94db749bb35c07db648035f47e841b7a",
+  "linked_questions_hash": "sha256:94cec765b4dd997374e8cbc67da02aaef8e1258b5d3660fd0b5e7a00999cd2d5",
   "question_count": 10,
   "questions": [
     {
@@ -53,6 +53,56 @@
       "created_at": "2026-03-23T19:27:29.784038+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:8faec954085bc405c1671e57b41764c106748262df943c2e067f8331ad4c1729"
+    },
+    {
+      "question_id": "734504f4-15c1-4dd5-9e09-ee8be01135e6",
+      "article_id": "b835f8bb-bb09-44fa-855a-37128197c63b",
+      "topic_id": "a88fd0cc-39e8-4bfb-98a6-ab2367bc10cb",
+      "text": "A Philippine architect is specifying a large government office building (DPWH-funded) with 150 rooms. The architect must decide: develop comprehensive room finish, door, hardware, and window schedules, or rely on specification text and drawing notation. Consider completeness, coordination complexity, field clarity, and regulatory compliance (RA 9266, NSCP). Recommend an approach and justify it.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Develop comprehensive schedules. Justification: (1) Completeness: All 150 rooms cannot be clearly detailed on drawings; schedules prevent omissions. (2) Coordination: Schedules cross-reference drawings (room numbers) and specifications (fire ratings, accessibility, performance criteria) systematically. (3) Field Clarity: Contractor references a single schedule table rather than searching multiple drawings for door details. (4) RA 9266 Compliance: The architect demonstrates systematic, professional documentation. (5) NSCP Compliance: Fire ratings and wind ratings are explicit in schedules. (6) DPWH Transparency: Government projects require clear, auditable documentation. (7) Cost Control: Clear schedules reduce field changes. Schedules are professional best practice for large projects."
+        },
+        {
+          "id": "b",
+          "text": "Rely on specification text and notation without schedules, which may lead to potential oversights and increased complexity in field coordination"
+        },
+        {
+          "id": "c",
+          "text": "Use partial schedules only (e.g., door schedule but not hardware schedule), balancing between detailed documentation and practical field application"
+        },
+        {
+          "id": "d",
+          "text": "Use schedules only for the first floor; omit them for upper floors (assume consistency), which could simplify initial documentation but risk inconsistencies"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Text and notation alone create ambiguity and field confusion for 150 rooms.",
+        "c": "Partial schedules leave gaps; comprehensive schedules are better.",
+        "d": "Assuming upper floors are identical invites inconsistency; explicit schedules are safer.",
+        "correct": "Large government projects (150 rooms, DPWH-funded) demand systematic documentation. Schedules are essential for: (1) completeness (no omitted rooms), (2) consistency (all patient rooms identical), (3) regulatory compliance (fire ratings, accessibility, wind ratings explicit), (4) cost control (clear requirements prevent changes), and (5) professional accountability (RA 9266 requires clear documentation). This is professional best practice and exam-expected answer.",
+        "takeaway": "Schedules are professional best practice for projects above ~20-30 rooms. Large government buildings, hospitals, and schools must use schedules. This is RA 9266 professional documentation, NSCP compliance, and market expectation. The ALE tests this: you must recognize when schedules are necessary and develop them systematically."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266 Professional Documentation Standards; Architectural Best Practice for Large Projects",
+      "bloom_level": "evaluate",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-009-03-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:30.009533+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2ec8de4bcb8b4273ae29c542daa2eb317d2e1b862843656b641522420c153cf9"
     },
     {
       "question_id": "3060b293-dca3-4aaf-84cf-79868c4eb859",
@@ -205,106 +255,6 @@
       "content_hash": "sha256:9b1ecd4c82c3217c09671ce78d22a2055c19f16ba0ac2c131eea7b7316dac231"
     },
     {
-      "question_id": "f6db9f92-7f75-4663-bad6-d1174d82889f",
-      "article_id": "b835f8bb-bb09-44fa-855a-37128197c63b",
-      "topic_id": "a88fd0cc-39e8-4bfb-98a6-ab2367bc10cb",
-      "text": "Which schedule is most critical for preventing field disputes over door hardware and operating characteristics?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Hardware schedule, which specifies the lock type, hinge size, closer requirements, push/pull hardware, and mounting heights for each door type"
-        },
-        {
-          "id": "b",
-          "text": "Door schedule alone, without a separate hardware schedule, which may lead to inconsistencies in hardware specifications"
-        },
-        {
-          "id": "c",
-          "text": "Electrical schedule, which controls lighting and door sensors, indirectly affecting door operation"
-        },
-        {
-          "id": "d",
-          "text": "Finishes schedule, which specifies door color and paint, contributing to the overall aesthetic but not operational characteristics"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "b": "Door schedules specify door characteristics but not detailed hardware requirements.",
-        "c": "Electrical schedules address power and controls, not mechanical hardware.",
-        "d": "Finishes schedules address aesthetics, not operating characteristics.",
-        "correct": "A hardware schedule centralizes hardware requirements and prevents confusion. Rather than embedding hardware specifications in door specifications, a dedicated hardware schedule lists each hardware set (e.g., 'Hardware Set A: Institutional Heavy-Duty') and assigns it to door types. This clarity prevents field substitutions.",
-        "takeaway": "Hardware schedules are specialized documents. They complement door schedules and prevent field disputes by clearly specifying lock types, hinges, closers, and mounting heights."
-      },
-      "explanation": null,
-      "code_citation": "CSI Schedule Documentation Standards; Door and Hardware Specifications",
-      "bloom_level": "understand",
-      "application_context": "recall",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-MATL-009-03-004",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:30.009533+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:48f664ff8f1e357e8b72e97d8c015e3a6190802ba30d208578463ff1afac7f0d"
-    },
-    {
-      "question_id": "734504f4-15c1-4dd5-9e09-ee8be01135e6",
-      "article_id": "b835f8bb-bb09-44fa-855a-37128197c63b",
-      "topic_id": "a88fd0cc-39e8-4bfb-98a6-ab2367bc10cb",
-      "text": "A Philippine architect is specifying a large government office building (DPWH-funded) with 150 rooms. The architect must decide: develop comprehensive room finish, door, hardware, and window schedules, or rely on specification text and drawing notation. Consider completeness, coordination complexity, field clarity, and regulatory compliance (RA 9266, NSCP). Recommend an approach and justify it.",
-      "options": [
-        {
-          "id": "a",
-          "text": "Develop comprehensive schedules. Justification: (1) Completeness: All 150 rooms cannot be clearly detailed on drawings; schedules prevent omissions. (2) Coordination: Schedules cross-reference drawings (room numbers) and specifications (fire ratings, accessibility, performance criteria) systematically. (3) Field Clarity: Contractor references a single schedule table rather than searching multiple drawings for door details. (4) RA 9266 Compliance: The architect demonstrates systematic, professional documentation. (5) NSCP Compliance: Fire ratings and wind ratings are explicit in schedules. (6) DPWH Transparency: Government projects require clear, auditable documentation. (7) Cost Control: Clear schedules reduce field changes. Schedules are professional best practice for large projects."
-        },
-        {
-          "id": "b",
-          "text": "Rely on specification text and notation without schedules, which may lead to potential oversights and increased complexity in field coordination"
-        },
-        {
-          "id": "c",
-          "text": "Use partial schedules only (e.g., door schedule but not hardware schedule), balancing between detailed documentation and practical field application"
-        },
-        {
-          "id": "d",
-          "text": "Use schedules only for the first floor; omit them for upper floors (assume consistency), which could simplify initial documentation but risk inconsistencies"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "b": "Text and notation alone create ambiguity and field confusion for 150 rooms.",
-        "c": "Partial schedules leave gaps; comprehensive schedules are better.",
-        "d": "Assuming upper floors are identical invites inconsistency; explicit schedules are safer.",
-        "correct": "Large government projects (150 rooms, DPWH-funded) demand systematic documentation. Schedules are essential for: (1) completeness (no omitted rooms), (2) consistency (all patient rooms identical), (3) regulatory compliance (fire ratings, accessibility, wind ratings explicit), (4) cost control (clear requirements prevent changes), and (5) professional accountability (RA 9266 requires clear documentation). This is professional best practice and exam-expected answer.",
-        "takeaway": "Schedules are professional best practice for projects above ~20-30 rooms. Large government buildings, hospitals, and schools must use schedules. This is RA 9266 professional documentation, NSCP compliance, and market expectation. The ALE tests this: you must recognize when schedules are necessary and develop them systematically."
-      },
-      "explanation": null,
-      "code_citation": "RA 9266 Professional Documentation Standards; Architectural Best Practice for Large Projects",
-      "bloom_level": "evaluate",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-MATL-009-03-010",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:30.009533+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:2ec8de4bcb8b4273ae29c542daa2eb317d2e1b862843656b641522420c153cf9"
-    },
-    {
       "question_id": "319f6c8a-d380-490d-8b75-1cc780e66e92",
       "article_id": "b835f8bb-bb09-44fa-855a-37128197c63b",
       "topic_id": "a88fd0cc-39e8-4bfb-98a6-ab2367bc10cb",
@@ -339,7 +289,7 @@
         "correct": "NSCP Chapter 1 requires that windows in high-wind areas (typhoon zones) be designed for specific wind pressures. The schedule must specify Design Wind Pressure (DWP) appropriate to the location and typhoon category. Omitting this creates a gap in structural safety documentation.",
         "takeaway": "Philippine window schedules for coastal areas must include wind load ratings per NSCP. This is a common deficiency in architect specifications for typhoon-prone regions. The schedule connects design loads to actual products."
       },
-      "explanation": null,
+      "explanation": "Storm surge elevation is a site/structural matter, not a window specification. Frame thickness is specified in Part 2: Products, not typically in the schedule DWP field. Installation dates are not regulatory requirements. NSCP Chapter 1 requires that windows in high-wind areas (typhoon zones) be designed for specific wind pressures. The schedule must specify Design Wind Pressure (DWP) appropriate to the location and typhoon category. Omitting this creates a gap in structural safety documentation. Philippine window schedules for coastal areas must include wind load ratings per NSCP. This is a common deficiency in architect specifications for typhoon-prone regions. The schedule connects design loads to actual products.",
       "code_citation": "NSCP Chapter 1: Wind Load Requirements; Philippine Coastal Construction Standards",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
@@ -351,8 +301,58 @@
       "model_id": "ALE-MATL-009-03-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:30.009533+00:00",
+      "updated_at": "2026-05-06T15:03:10.867676+00:00",
+      "content_hash": "sha256:ac80b92f2b1a0f8b6576504165b88631b681e3c8caef1564685e9142d429a741"
+    },
+    {
+      "question_id": "4ba62ecc-7734-4141-8852-d588d5e084f4",
+      "article_id": "b835f8bb-bb09-44fa-855a-37128197c63b",
+      "topic_id": "a88fd0cc-39e8-4bfb-98a6-ab2367bc10cb",
+      "text": "A floor plan shows 12 room numbers (101-112), but the room finish schedule lists only 10 rooms (101-110). What is the most likely problem and how should it be resolved?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rooms 111 and 112 were omitted from the schedule. The architect must verify whether these rooms should receive finishes (if they are occupied spaces, they must be added to the schedule with specified finishes) or whether they are non-enclosed spaces (storage, mechanical room) that don't require the same finish treatment. The schedule must be updated and cross-verified against the floor plan."
+        },
+        {
+          "id": "b",
+          "text": "Rooms 111 and 112 are intentionally not in the schedule because they have standard finishes, which are typically applied to non-critical areas"
+        },
+        {
+          "id": "c",
+          "text": "The floor plan is wrong; it should not show rooms 111 and 112, as these may have been removed in a previous design iteration"
+        },
+        {
+          "id": "d",
+          "text": "No action is needed; the schedule and floor plan can be out of sync, as long as the main areas are covered"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "'Standard finishes' is not an acceptable answer without specification; the schedule must spell out what 'standard' means.",
+        "c": "If the floor plan shows the rooms, they must be in the schedule.",
+        "d": "Schedules and drawings must be consistent; out-of-sync documentation is a deficiency.",
+        "correct": "Every room on the floor plan must appear in the room finish schedule, even if the answer is 'standard finishes' or 'not applicable.' Omissions create field uncertainty: the contractor doesn't know what finishes to install in rooms 111 and 112. The architect must resolve the discrepancy by either adding these rooms to the schedule or clarifying why they're excluded.",
+        "takeaway": "Schedules must be complete and consistent with drawings. Before issuing contract documents, verify that every room number, door mark, and window mark on drawings appears in the corresponding schedule. Missing entries are red flags."
+      },
+      "explanation": null,
+      "code_citation": "Architectural Documentation Completeness Standards",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-009-03-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:30.009533+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:8a7d60ac124229738cc7e4e9f5dd42114de6cad7591f79548fcd0f13719855d7"
+      "content_hash": "sha256:0afe27dcf8592f94ddd72e99b6f90fb91718f592fd99aa04ddca94d259ccc836"
     },
     {
       "question_id": "c825d079-a35a-4b9a-897b-1b8237c726f9",
@@ -455,26 +455,26 @@
       "content_hash": "sha256:891af37008a3e74b38a296cbf491722ea83fa4133943919364976b2496afabb4"
     },
     {
-      "question_id": "4ba62ecc-7734-4141-8852-d588d5e084f4",
+      "question_id": "f6db9f92-7f75-4663-bad6-d1174d82889f",
       "article_id": "b835f8bb-bb09-44fa-855a-37128197c63b",
       "topic_id": "a88fd0cc-39e8-4bfb-98a6-ab2367bc10cb",
-      "text": "A floor plan shows 12 room numbers (101-112), but the room finish schedule lists only 10 rooms (101-110). What is the most likely problem and how should it be resolved?",
+      "text": "Which schedule is most critical for preventing field disputes over door hardware and operating characteristics?",
       "options": [
         {
           "id": "a",
-          "text": "Rooms 111 and 112 were omitted from the schedule. The architect must verify whether these rooms should receive finishes (if they are occupied spaces, they must be added to the schedule with specified finishes) or whether they are non-enclosed spaces (storage, mechanical room) that don't require the same finish treatment. The schedule must be updated and cross-verified against the floor plan."
+          "text": "Hardware schedule, which specifies the lock type, hinge size, closer requirements, push/pull hardware, and mounting heights for each door type"
         },
         {
           "id": "b",
-          "text": "Rooms 111 and 112 are intentionally not in the schedule because they have standard finishes, which are typically applied to non-critical areas"
+          "text": "Door schedule alone, without a separate hardware schedule, which may lead to inconsistencies in hardware specifications"
         },
         {
           "id": "c",
-          "text": "The floor plan is wrong; it should not show rooms 111 and 112, as these may have been removed in a previous design iteration"
+          "text": "Electrical schedule, which controls lighting and door sensors, indirectly affecting door operation"
         },
         {
           "id": "d",
-          "text": "No action is needed; the schedule and floor plan can be out of sync, as long as the main areas are covered"
+          "text": "Finishes schedule, which specifies door color and paint, contributing to the overall aesthetic but not operational characteristics"
         }
       ],
       "correct_option_id": "a",
@@ -483,26 +483,26 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "'Standard finishes' is not an acceptable answer without specification; the schedule must spell out what 'standard' means.",
-        "c": "If the floor plan shows the rooms, they must be in the schedule.",
-        "d": "Schedules and drawings must be consistent; out-of-sync documentation is a deficiency.",
-        "correct": "Every room on the floor plan must appear in the room finish schedule, even if the answer is 'standard finishes' or 'not applicable.' Omissions create field uncertainty: the contractor doesn't know what finishes to install in rooms 111 and 112. The architect must resolve the discrepancy by either adding these rooms to the schedule or clarifying why they're excluded.",
-        "takeaway": "Schedules must be complete and consistent with drawings. Before issuing contract documents, verify that every room number, door mark, and window mark on drawings appears in the corresponding schedule. Missing entries are red flags."
+        "b": "Door schedules specify door characteristics but not detailed hardware requirements.",
+        "c": "Electrical schedules address power and controls, not mechanical hardware.",
+        "d": "Finishes schedules address aesthetics, not operating characteristics.",
+        "correct": "A hardware schedule centralizes hardware requirements and prevents confusion. Rather than embedding hardware specifications in door specifications, a dedicated hardware schedule lists each hardware set (e.g., 'Hardware Set A: Institutional Heavy-Duty') and assigns it to door types. This clarity prevents field substitutions.",
+        "takeaway": "Hardware schedules are specialized documents. They complement door schedules and prevent field disputes by clearly specifying lock types, hinges, closers, and mounting heights."
       },
-      "explanation": null,
-      "code_citation": "Architectural Documentation Completeness Standards",
-      "bloom_level": "apply",
-      "application_context": "code_interpretation",
+      "explanation": "Door schedules specify door characteristics but not detailed hardware requirements. Electrical schedules address power and controls, not mechanical hardware. Finishes schedules address aesthetics, not operating characteristics. A hardware schedule centralizes hardware requirements and prevents confusion. Rather than embedding hardware specifications in door specifications, a dedicated hardware schedule lists each hardware set (e.g., 'Hardware Set A: Institutional Heavy-Duty') and assigns it to door types. This clarity prevents field substitutions. Hardware schedules are specialized documents. They complement door schedules and prevent field disputes by clearly specifying lock types, hinges, closers, and mounting heights.",
+      "code_citation": "CSI Schedule Documentation Standards; Door and Hardware Specifications",
+      "bloom_level": "understand",
+      "application_context": "recall",
       "practice_context": [],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
       "is_assessment": false,
-      "model_id": "ALE-MATL-009-03-007",
+      "model_id": "ALE-MATL-009-03-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:30.009533+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:0afe27dcf8592f94ddd72e99b6f90fb91718f592fd99aa04ddca94d259ccc836"
+      "updated_at": "2026-05-06T15:03:10.736584+00:00",
+      "content_hash": "sha256:2efab1754fa42276bdac30bfad9851dd6eee86d60beeb755dad9ada2eec874f2"
     }
   ]
 }

@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Matl 002 05 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 ## Learning Goal
 
@@ -9,22 +18,22 @@ Hydration is the chemical reaction between portland cement and water that produc
 The LEA Board recommendation and ACI 308R guidance: _Maintain concrete above 10°C (50°F) and keep it moist for at least 7 days for ordinary portland cement (OPC). High-early-strength (Type III) concrete requires only 3 days above 10°C._
 
 
-<ArticleMedia id="media-cement-types-comparison" layout="single" type="image" status="placeholder"
-  alt="Comparison table and illustrations showing ASTM C150 cement Types I through V with chemical composition, strength gain curves, and applications"
-  caption="Future chart: cement types I–V comparison — composition, strength gain, and appropriate use"
-  suggestedAsset="Infographic comparing cement types with heat of hydration and strength curves"
-  placementIntent="Helps learners distinguish cement types by properties and applications" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-cement-types-comparison", layout="single", type="image", status="placeholder", alt="Comparison table and illustrations showing ASTM C150 cement Types I through V with chemical composition, strength gain curves, and applications", caption="Future chart: cement types I–V comparison — composition, strength gain, and appropriate use", suggestedAsset="Infographic comparing cement types with heat of hydration and strength curves", placementIntent="Helps learners distinguish cement types by properties and applications"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Curing Methods: Moist Curing (Moisture Retention)
 
 Moist curing keeps the concrete surface wet and prevents evaporation of internal moisture. This is the most effective curing method and is preferred by ACI 308R.
 
 
-<ArticleMedia id="media-cement-curing-methods" layout="single" type="image" status="placeholder"
-  alt="Comparison diagram of concrete curing methods: ponding, sprinkling, wet coverings, membrane compounds, and steam curing with effectiveness and application"
-  caption="Future diagram: concrete curing methods comparison — effectiveness and application"
-  suggestedAsset="Process illustration or comparison chart of curing methods"
-  placementIntent="Visualizes proper curing techniques for concrete strength development" />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-cement-curing-methods", layout="single", type="image", status="placeholder", alt="Comparison diagram of concrete curing methods: ponding, sprinkling, wet coverings, membrane compounds, and steam curing with effectiveness and application", caption="Future diagram: concrete curing methods comparison — effectiveness and application", suggestedAsset="Process illustration or comparison chart of curing methods", placementIntent="Visualizes proper curing techniques for concrete strength development"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 ### Ponding (Submersion Curing)
 
 The concrete surface is covered with water maintained at 1—2 inches depth. Water is continuously retained on the surface, providing ideal moisture and thermal stability.
@@ -84,7 +93,11 @@ Curing compounds (ASTM C309) are liquid or wax-based materials sprayed onto the 
 
 Curing rate increases dramatically with temperature. The rule of thumb is that concrete strength development approximately doubles for every 20°C (36°F) rise in temperature (within practical limits).
 
-<WikiExamTable headers={["Temperature", "Relative Strength Gain Rate", "Practical Effect"]} rows={[["Below 10°C (50°F)", "Very slow; approaching zero below 5°C", "Curing essentially halts; freeze risk if water present"], ["10°C (50°F)", "Baseline = 1.0", "Minimum for specification compliance"], ["20°C (68°F)", "Approximately 1.5x baseline", "Normal conditions; typical 7-day curing sufficient"], ["30°C (86°F)", "Approximately 2.0—2.5x baseline", "Rapid strength gain; early form removal possible at 2—3 days"], ["Above 40°C (104°F)", "Risk of reduced long-term strength", "Potential for thermal cracking and differential hydration"]]} />
+[SLATECAMP_UI_BLOCK:ui_0003 component="WikiExamTable" status="preserved"]
+Extracted summary:
+- Props: headers="{[\"Temperature\", \"Relative Strength Gain Rate\", \"Practical Effect\"]}", rows="{[[\"Below 10°C (50°F)\", \"Very slow; approaching zero below 5°C\", \"Curing essentially halts; freeze risk if water present\"], [\"10°C (50°F)\", \"Baseline = 1.0\", \"Minimum for specification compliance\"], [\"20°C (68°F)\", \"Approximately 1.5x baseline\", \"Normal conditions; typical 7-day curing sufficient\"], [\"30°C (86°F)\", \"Approximately 2.0—2.5x baseline\", \"Rapid strength gain; early form removal possible at 2—3 days\"], [\"Above 40°C (104°F)\", \"Risk of reduced long-term strength\", \"Potential for thermal cracking and differential hydration\"]]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Tropical Philippines Context: Hot-Weather Curing
 
@@ -151,24 +164,25 @@ The LEA expects you to:
 
 Typical questions present a concrete placement scenario in the Philippines and ask what curing method is appropriate, or ask about consequences of skipping or shortening the curing period.
 
-<Tip>In the tropical Philippines, white-pigmented curing compound (Type 2, ASTM C309) is often the most practical choice. It prevents evaporation, reflects solar heat, requires minimal daily maintenance, and provides adequate strength development when properly applied. Always verify complete coverage; thin or patchy application is ineffective.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: In the tropical Philippines, white-pigmented curing compound (Type 2, ASTM C309) is often the most practical choice. It prevents evaporation, reflects solar heat, requires minimal daily maintenance, and provides adequate strength development when properly applied. Always verify complete coverage; thin or patchy application is ineffective.
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
-<WikiMistakeCard
-  mistake="Assuming that high ambient temperature in tropical Philippines automatically speeds up curing sufficiently, so reduced curing time (3—4 days) is acceptable"
-  correction="While high temperature does accelerate hydration, ACI 308R specifies minimum 7-day curing for ordinary portland cement at any temperature above 10°C. Shorter periods risk inadequate strength and permeability control. Use Type III (high-early-strength) cement if early strength is required, but maintain 7-day curing duration for full strength and durability."
-  context="Contractors sometimes shortcut curing to accelerate form removal and project schedule; this leads to weak concrete and field failures within 5—10 years." />
+[SLATECAMP_UI_BLOCK:ui_0005 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Assuming that high ambient temperature in tropical Philippines automatically speeds up curing sufficiently, so reduced curing time (3—4 days) is acceptable", correction="While high temperature does accelerate hydration, ACI 308R specifies minimum 7-day curing for ordinary portland cement at any temperature above 10°C. Shorter periods risk inadequate strength and permeability control. Use Type III (high-early-strength) cement if early strength is required, but maintain 7-day curing duration for full strength and durability.", context="Contractors sometimes shortcut curing to accelerate form removal and project schedule; this leads to weak concrete and field failures within 5—10 years."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeList
-  title="Common Curing Practice Errors"
-  items={[
-    "Applying curing compound but failing to achieve complete surface coverage: A patchy or incomplete film allows water evaporation from uncovered areas. The entire surface must be covered uniformly. Reapply if areas are damaged or missed.",
-    "Using clear (Type 1) curing compound instead of white-pigmented (Type 2) in tropical sunny locations: Clear compounds do not reflect solar heat; surface temperature rises excessively (50—60°C), causing thermal stress and potential differential cracking. Type 2 is preferred.",
-    "Discontinuing moist curing after 7 days, then exposing the concrete to intense sun: The 7-day minimum is for ordinary strength development; continued ambient curing (without active moistening) is acceptable. However, exposed surfaces still desiccate; if re-exposed to direct sun immediately after curing ends, rapid drying can cause surface cracking.",
-    "Assuming membrane curing (compound) is equivleant to water curing: Curing compounds develop 70—80% of the strength of moist curing. For critical applications or where maximum strength is required, water curing (ponding or spray) is preferred.",
-    "Failing to account for wind and solar radiation effects: High wind increases evaporation significantly (ACI 305.1 nomographs show 2—3x evaporation rate increase in windy conditions). Intense sun heating can exceed the comfort level for curing rate predictions. Use shade cloth or schedule placement to minimize these effects."
-  ]} />
+[SLATECAMP_UI_BLOCK:ui_0006 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: title="Common Curing Practice Errors", items="{[\n    \"Applying curing compound but failing to achieve complete surface coverage: A patchy or incomplete film allows water evaporation from uncovered areas. The entire surface must be covered uniformly. Reapply if areas are damaged or missed.\",\n    \"Using clear (Type 1) curing compound instead of white-pigmented (Type 2) in tropical sunny locations: Clear compounds do not reflect solar heat; surface temperature rises excessively (50—60°C), causing thermal stress and potential differential cracking. Type 2 is preferred.\",\n    \"Discontinuing moist curing after 7 days, then exposing the concrete to intense sun: The 7-day minimum is for ordinary strength development; continued ambient curing (without active moistening) is acceptable. However, exposed surfaces still desiccate; if re-exposed to direct sun immediately after curing ends, rapid drying can cause surface cracking.\",\n    \"Assuming membrane curing (compound) is equivleant to water curing: Curing compounds develop 70—80% of the strength of moist curing. For critical applications or where maximum strength is required, water curing (ponding or spray) is preferred.\",\n    \"Failing to account for wind and solar radiation effects: High wind increases evaporation significantly (ACI 305.1 nomographs show 2—3x evaporation rate increase in windy conditions). Intense sun heating can exceed the comfort level for curing rate predictions. Use shade cloth or schedule placement to minimize these effects.\"\n  ]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 

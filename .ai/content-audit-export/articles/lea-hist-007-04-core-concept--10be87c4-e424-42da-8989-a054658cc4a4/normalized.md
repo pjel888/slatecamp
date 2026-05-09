@@ -112,7 +112,7 @@ Extracted summary:
 [SLATECAMP_UI_BLOCK:ui_0012 component="Warn" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: Do not confuse Angkor Wat (12th c., Hindu Khmer, quincunx towers, Ramayana reliefs) with Bayon Temple (late 12th c., Buddhist-Hindu hybrid, 54 towers with carved faces). Both are Khmer, but their iconography, patrons, and religious functions differ fundamentally. Do not reverse Borobudur's spiritual geography: ascending the 9 platforms moves from desire realms through form realms toward formless realms and Buddhahood—it is a spiritual narrative, not celebration of height. Do not treat Southeast 
+- Text: Do not confuse Angkor Wat (12th c., Hindu Khmer, quincunx towers, Ramayana reliefs) with Bayon Temple (late 12th c., Buddhist-Hindu hybrid, 54 towers with carved faces). Both are Khmer, but their iconography, patrons, and religious functions differ fundamentally. Do not reverse Borobudur's spiritual geography: ascending the 9 platforms moves from desire realms through form realms toward formless realms and Buddhahood—it is a spiritual narrative, not celebration of height. Do not treat Southeast
 [/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0013 component="ArticleMedia" status="preserved"]

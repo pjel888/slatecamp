@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Strc 007 01 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 ## Learning Goal
 By the end of this article, you will be able to:
@@ -10,7 +19,11 @@ By the end of this article, you will be able to:
 Concrete cover protects reinforcement from corrosion and fire. The LEA tests your mastery of NSCP/ACI cover requirements across three conditions: cast-in-place (most common), precast, and prestressed concrete. The top three tested values are 75mm for footings, 40mm for beams and columns, and 20mm for slabs.
 
 ## Core Concept
-<ArticleMedia id="media-lea-strc-007-01-core-concept" type="image" caption="Concrete Cover — Minimum Requirements by Member Type" description="Cross-section diagrams for four member types showing cover dimensions: (1) Footing — 75 mm bottom cover, 75 mm to reinforcement; (2) Beam — 40 mm to stirrups, 40 mm to main bars; (3) Column — 40 mm to ties, 40 mm to longitudinal bars; (4) Slab — 20 mm top and bottom cover. Fire resistance rating and corrosion protection zones labeled on each section." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-strc-007-01-core-concept", type="image", caption="Concrete Cover — Minimum Requirements by Member Type", description="Cross-section diagrams for four member types showing cover dimensions: (1) Footing — 75 mm bottom cover, 75 mm to reinforcement; (2) Beam — 40 mm to stirrups, 40 mm to main bars; (3) Column — 40 mm to ties, 40 mm to longitudinal bars; (4) Slab — 20 mm top and bottom cover. Fire resistance rating and corrosion protection zones labeled on each section.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 Concrete cover is the distance from the outer concrete surface to the center of the nearest reinforcing bar or prestressing strand. It serves two critical functions: protection of steel from environmental exposure (corrosion risk) and from fire (thermal insulation).
 
@@ -75,9 +88,11 @@ In Philippine concrete design, footing cover (75mm) is the most frequently teste
 
 4. **Prestressed member selection:** "A prestressed hollow-core slab is fully enclosed indoors. What cover to strand?" (Answer: 40mm; difficulty 0.5)
 
-<Tip>
-Footing = 75mm, Beam/Column = 40mm, Slab = 20mm. Memorize this "three-number rule" first. Then layer: weather exposure adds 10mm (40→50); precast interior halves it (20→10–15). Prestressed is always 25–50mm.
-</Tip>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Footing = 75mm, Beam/Column = 40mm, Slab = 20mm. Memorize this "three-number rule" first. Then layer: weather exposure adds 10mm (40→50); precast interior halves it (20→10–15). Prestressed is always 25–50mm.
+[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 
@@ -85,6 +100,14 @@ See also: **Deformed Bars** (lea-strc-006-02) for rebar that requires cover, **H
 
 ## Common Mistakes
 
-<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: These are frequently tested traps. Memorize them to avoid losing easy points on exam day.
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeList mistakes={[ "Footing cover = 40mm or 50mm — WRONG. Always 75mm for cast against earth (ERR-STRC-020).", "All interior beams = 20mm cover — WRONG. Interior beams require 40mm; only slabs/walls get 20mm.", "Precast cover = same as cast-in-place — WRONG. Precast interior allows 15mm slabs, 10mm shells, and db-based (max 40mm) for beams.", "Prestressed equals 75mm — WRONG. Prestressed exposed = 50mm, fully enclosed interior = 40mm, protected = 25mm.", "Bar size irrelevant to cover — WRONG. Exposed weather bars ≥20mm = 50mm, but ≤16mm = 40mm only." ]} />
+[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[ \"Footing cover = 40mm or 50mm — WRONG. Always 75mm for cast against earth (ERR-STRC-020).\", \"All interior beams = 20mm cover — WRONG. Interior beams require 40mm; only slabs/walls get 20mm.\", \"Precast cover = same as cast-in-place — WRONG. Precast interior allows 15mm slabs, 10mm shells, and db-based (max 40mm) for beams.\", \"Prestressed equals 75mm — WRONG. Prestressed exposed = 50mm, fully enclosed interior = 40mm, protected = 25mm.\", \"Bar size irrelevant to cover — WRONG. Exposed weather bars ≥20mm = 50mm, but ≤16mm = 40mm only.\" ]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]

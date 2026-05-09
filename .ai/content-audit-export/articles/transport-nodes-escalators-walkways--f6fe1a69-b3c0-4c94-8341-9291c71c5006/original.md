@@ -1,5 +1,13 @@
 # Transport Nodes Escalators Walkways
 
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Transport Nodes Escalators Walkways** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
+
+
 ## Learning Goal
 
 After reading this article, you should be able to:
@@ -12,16 +20,20 @@ _Transport Node Accessibility Module – Escalators, Walkalators, Platforms_[web
 
 ## 1. Why Transport Nodes Matter
 
-<LawCallout code="pd1096" section="Rule XII - Escalators">
-BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all public buildings.
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="pd1096", section="Rule XII - Escalators"
+- Text: BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all public buildings.
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - Props: (none)
 - Text: BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all p...
 
-<LawCallout code="pd1096" section="Rule XII - Means of Egress">
-BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all public buildings.
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="pd1096", section="Rule XII - Means of Egress"
+- Text: BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all public buildings.
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - Props: (none)
 - Text: BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all p...
@@ -119,14 +131,22 @@ ESCALATOR / LIFT → PLATFORM EDGE / BOARDING POINT
   - Before stairs and ramps (top and bottom).
   - Before escalators and passenger conveyors.
 
-<ExamTip>**LEA Pattern:** Questions ask whether a building or space meets accessibility requirements. Calculate required number of accessible parking slots per total parking (1:100 ratio for first 500, then 1:200). Know the minimums.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **LEA Pattern:** Questions ask whether a building or space meets accessibility requirements. Calculate required number of accessible parking slots per total parking (1:100 ratio for first 500, then 1:200). Know the minimums.
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - Props: (none)
 - Text: **LEA Pattern:** Determine if a building meets accessibility requirements. Ca...
   - Along platform edges/boarding zones and near doors/gates with possible pinch or fall risk.
 - **Elevator priority:**
 
-<ExamTip>**LEA Pattern:** Questions ask whether a building or space meets accessibility requirements. Calculate required number of accessible parking slots per total parking (1:100 ratio for first 500, then 1:200). Know the minimums.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **LEA Pattern:** Questions ask whether a building or space meets accessibility requirements. Calculate required number of accessible parking slots per total parking (1:100 ratio for first 500, then 1:200). Know the minimums.
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - Props: (none)
 - Text: **LEA Pattern:** Determine if a building meets accessibility requirements. Ca...
@@ -160,12 +180,16 @@ The tactile path must **prioritize elevator access** and terminate at a **warnin
 
 ---
 
-<Note>
-Common traps: confusing BP 344 with PD 1096, mixing up dimensions for ramps vs. stairs vs. handrails.
-</Note>
-<Note>
-Common traps: confusing BP 344 with PD 1096, mixing up dimensions for ramps vs. stairs vs. handrails.
-</Note>
+[SLATECAMP_UI_BLOCK:ui_0005 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Common traps: confusing BP 344 with PD 1096, mixing up dimensions for ramps vs. stairs vs. handrails.
+[/SLATECAMP_UI_BLOCK]
+[SLATECAMP_UI_BLOCK:ui_0006 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Common traps: confusing BP 344 with PD 1096, mixing up dimensions for ramps vs. stairs vs. handrails.
+[/SLATECAMP_UI_BLOCK]
 ## Cross‑References
 
 **Stairs Handrails Guardrails**, **Widths Slopes**, **Conflict Matrix Stairs Guards Elevators**, **Bp 344 Elevator Dimensions**

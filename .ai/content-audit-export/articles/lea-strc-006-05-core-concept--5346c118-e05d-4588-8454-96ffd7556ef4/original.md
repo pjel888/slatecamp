@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Strc 006 05 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 ## Learning Goal
 By the end of this article, you will be able to:
@@ -10,7 +19,11 @@ By the end of this article, you will be able to:
 Precast concrete members are manufactured off-site in controlled conditions and transported to the construction site for assembly. Construction joints are planned weak points where different concrete pours meet and must be designed to transfer force and resist shear. Composite members combine precast and cast-in-place concrete, leveraging the efficiency of precasting with site-specific design. Understanding these concepts is essential for modern construction and ensures proper force transfer at joints.
 
 ## Core Concept
-<ArticleMedia id="media-lea-strc-006-05-core-concept" type="image" caption="Precast Concrete Systems — Beam, Column, Slab, and Wall Components" description="Diagram showing typical precast concrete components: (1) Precast beam with shear keys and connection pockets; (2) Precast column with corbel for beam support; (3) Hollow-core slab unit with prestressed strands; (4) Precast wall panel with insulation layer. Connection details shown at beam-column joint and slab-to-beam interface. Comparison of precast vs cast-in-place advantages chart." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-strc-006-05-core-concept", type="image", caption="Precast Concrete Systems — Beam, Column, Slab, and Wall Components", description="Diagram showing typical precast concrete components: (1) Precast beam with shear keys and connection pockets; (2) Precast column with corbel for beam support; (3) Hollow-core slab unit with prestressed strands; (4) Precast wall panel with insulation layer. Connection details shown at beam-column joint and slab-to-beam interface. Comparison of precast vs cast-in-place advantages chart.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 **Precast Concrete** is concrete that is cast and cured at a facility (precasting plant) separate from the final structure's location. After reaching design strength, the member is transported to the construction site and placed in position. Precast members offer significant advantages: quality control in a factory environment, reusable forms, parallel production while site work proceeds, and controlled curing conditions. Common precast products include I-beams, double-T slabs, hollow-core slabs, columns, wall panels, and entire room modules.
 
@@ -110,7 +123,11 @@ Precasting is widely used in the Philippines for housing projects, commercial bu
 
 4. **Durability and Joint Sealing (Visual Inspection):** After construction, joints are inspected for water infiltration, cracks, and sealant condition. In coastal areas, joint quality is critical; testing may include salt spray exposure or chloride penetration testing.
 
-<Tip>Construction joints are planned weak points, not failures. They are designed to handle predictable stresses by mechanical bonding, surface roughness, and shear reinforcement. The key to success: clean the old surface (sandblast or scarify), reinforce across the joint, and keep the interface moist during new concrete placement. This is a critical supervision point for site engineers.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Construction joints are planned weak points, not failures. They are designed to handle predictable stresses by mechanical bonding, surface roughness, and shear reinforcement. The key to success: clean the old surface (sandblast or scarify), reinforce across the joint, and keep the interface moist during new concrete placement. This is a critical supervision point for site engineers.
+[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 
@@ -118,6 +135,14 @@ See also: **Prestressing** (lea-strc-006-04) for how prestress is commonly combi
 
 ## Common Mistakes
 
-<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: These are frequently tested traps. Memorize them to avoid losing easy points on exam day.
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeList mistakes={[ "Treating construction joints as errors or defects that should be hidden. Construction joints are intentional, designed features. They simplify scheduling and allow staged construction. Poor joints result from inadequate preparation and reinforcement, not from the joint concept itself.", "Placing construction joints without shear reinforcement (dowels or hooked bars) crossing the interface. Shear forces must be transferred; rough surface alone is insufficient in high-shear regions. Dowels are required by code at many construction joint locations.", "Neglecting surface preparation: not sandblasting or scarifying the old concrete surface before placing new concrete. The interface bond depends on mechanical interlocking with exposed aggregate; a smooth surface (laitance) will not develop adequate friction and composite action will be lost.", "Forgetting that precast members and composite structures must be tested to verify composite action and strength. Design calculations assume the two materials work together; testing confirms this assumption. Inadequate testing can lead to serviceability or strength failures." ]} />
+[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[ \"Treating construction joints as errors or defects that should be hidden. Construction joints are intentional, designed features. They simplify scheduling and allow staged construction. Poor joints result from inadequate preparation and reinforcement, not from the joint concept itself.\", \"Placing construction joints without shear reinforcement (dowels or hooked bars) crossing the interface. Shear forces must be transferred; rough surface alone is insufficient in high-shear regions. Dowels are required by code at many construction joint locations.\", \"Neglecting surface preparation: not sandblasting or scarifying the old concrete surface before placing new concrete. The interface bond depends on mechanical interlocking with exposed aggregate; a smooth surface (laitance) will not develop adequate friction and composite action will be lost.\", \"Forgetting that precast members and composite structures must be tested to verify composite action and strength. Design calculations assume the two materials work together; testing confirms this assumption. Inadequate testing can lead to serviceability or strength failures.\" ]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]

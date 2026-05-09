@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Dsgn 012 05 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 
 ## Learning Goal
@@ -80,7 +89,11 @@ Sustainable utilities practice reduces environmental footprint:
 - **Telecommunications:** Shared infrastructure reduces redundancy and cost
 
 Cross-reference LEA-DSGN-009-04 for comprehensive BERDE treatment.
-<ArticleMedia id="media-lea-dsgn-012-05-core-concept" type="image" caption="Site Utility Coordination — Water, Sewer, Stormwater, and Electrical Routing" description="Underground utility coordination plan showing: water supply line (with easement), sanitary sewer route, stormwater drainage system, electrical/telecom conduits, gas line (if applicable), and utility easement dimensions per PD 1096 and utility standards." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-dsgn-012-05-core-concept", type="image", caption="Site Utility Coordination — Water, Sewer, Stormwater, and Electrical Routing", description="Underground utility coordination plan showing: water supply line (with easement), sanitary sewer route, stormwater drainage system, electrical/telecom conduits, gas line (if applicable), and utility easement dimensions per PD 1096 and utility standards.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Provisions
 
@@ -133,10 +146,18 @@ A 12-story building requires 20 psi minimum at the top floor (12 × 4.34 psi/sto
 **Pattern 5: Utility Coordination and Conflict Resolution**
 A site plan shows water main, sewage line, electrical conduit, and gas line all crossing in narrow trenches. Recommend rerouting or stacking to eliminate conflicts and ensure safety.
 
-<Tip>**Utility Memory Aids:** Water = pressure + storage if needed. Sewage = 1% slope minimum (never flat). Stormwater = 2% slope or retention. Electrical = separated above wet utilities. Easements = PD 1067 (river 26m), road (6–10m), utilities (3–5m). These reduce buildable area; account early in site planning.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Utility Memory Aids:** Water = pressure + storage if needed. Sewage = 1% slope minimum (never flat). Stormwater = 2% slope or retention. Electrical = separated above wet utilities. Easements = PD 1067 (river 26m), road (6–10m), utilities (3–5m). These reduce buildable area; account early in site planning.
+[/SLATECAMP_UI_BLOCK]
 
 **Exam Tip:** Utility easement minimums vary: water main = 3m each side of pipe centerline, sewer = 2m, electrical = 2m, telecommunications = 1m. Always verify with the local utility provider. Coordinate utility routing BEFORE building layout.
-<ArticleMedia id="media-lea-dsgn-012-05-core-concept" type="image" caption="Utility Coordination Plan — Subsurface and Overhead Utility Routing" description="Site plan overlay showing coordination of: water supply line (min. 3m from building, 1.0m deep), sewer line (min 2% slope, 1.2m deep), storm drainage, electrical conduit (0.6m deep, 1.5m from water), telecom (shared trench), fuel/gas line (separate trench, 1.2m from electric). Easement strips color-coded and cross-section conflict resolution shown." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0003 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-dsgn-012-05-core-concept", type="image", caption="Utility Coordination Plan — Subsurface and Overhead Utility Routing", description="Site plan overlay showing coordination of: water supply line (min. 3m from building, 1.0m deep), sewer line (min 2% slope, 1.2m deep), storm drainage, electrical conduit (0.6m deep, 1.5m from water), telecom (shared trench), fuel/gas line (separate trench, 1.2m from electric). Easement strips color-coded and cross-section conflict resolution shown.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Cross-References
 
@@ -144,4 +165,8 @@ See **LEA-PLAN-004-06** (Utilities Assessment) for infrastructure capacity analy
 
 ## Common Mistakes
 
-<WikiMistakeList mistakes={["Ignoring sewage slope requirements; assuming flat pipes will work (causes backups and failures)","Underestimating water demand or storage; many Philippine sites require elevated tanks because municipal pressure is inconsistent","Locating utilities in building footprints or landscape zones; always reserve easement first","Failing to coordinate with municipal authorities early; utility upgrades delay projects by months or years","Treating stormwater as secondary; inadequate drainage causes flooding and foundation damage","Overlooking secondary easements (gas, telecommunications); these consume land even if not immediately needed","Routing electrical above sewage or water; cross-contamination risk if lines fail","Forgetting that green infrastructure (BERDE) requires larger easement for bioretention basins or wetlands"]} />
+[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Ignoring sewage slope requirements; assuming flat pipes will work (causes backups and failures)\",\"Underestimating water demand or storage; many Philippine sites require elevated tanks because municipal pressure is inconsistent\",\"Locating utilities in building footprints or landscape zones; always reserve easement first\",\"Failing to coordinate with municipal authorities early; utility upgrades delay projects by months or years\",\"Treating stormwater as secondary; inadequate drainage causes flooding and foundation damage\",\"Overlooking secondary easements (gas, telecommunications); these consume land even if not immediately needed\",\"Routing electrical above sewage or water; cross-contamination risk if lines fail\",\"Forgetting that green infrastructure (BERDE) requires larger easement for bioretention basins or wetlands\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]

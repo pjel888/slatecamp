@@ -9,9 +9,9 @@ Before memorizing details from this topic, state the exam task in one sentence: 
 
 **Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 
-**Module Focus:** Rule VII of the 2004 Revised IRR of PD 1096  
-**LEA Area:** 3 (Architectural Design and Site Planning) — 40% of total exam weight  
-**Difficulty:** Intermediate–Advanced  
+**Module Focus:** Rule VII of the 2004 Revised IRR of PD 1096
+**LEA Area:** 3 (Architectural Design and Site Planning) — 40% of total exam weight
+**Difficulty:** Intermediate–Advanced
 **Spaced Repetition:** Return in 3 days. If you can answer the Blitz Quiz cold, move on.[file:17][file:18]
 
 ---
@@ -114,7 +114,7 @@ Extracted summary:
 
 **Definition (Rule VII, Sec. 705 / Guidelines):** GFA is the total floor space within the perimeter of the permanent external building walls, measured to interior surfaces, inclusive of habitable and usable spaces such as residential units, offices, corridors, lobbies and mezzanines.[file:17][file:18]
 
-**Included in GFA:**  
+**Included in GFA:**
 Building projections that function as integral floor areas directly connected to interior spaces, including **balconies with a floor area of 10.0 sq.m or less** per unit.[file:17][file:18]
 
 ### LEART: GFA Exclusions — Do NOT Count These Against FLAR
@@ -173,7 +173,7 @@ Extracted summary:
 | **How it is derived** | GFA + non-GFA areas                    | **AMBF x BHL**                       |
 | **Governs**           | Floor-area density (with FLAR)         | Bulk/envelope control                |
 
-**The trap formula:**  
+**The trap formula:**
 `AMBF x BHL = AMVB` — this yields **cubic meters**, not square meters.[file:17]
 
 **Correct source for allowable TGFA:** **Table VII.1** and the related guidelines, which express allowable maximum TGFA as a function of PSO (Percentage of Site Occupancy) and TLA; this is separate from the FLAR-based GFA and from AMVB.[file:17]
@@ -357,9 +357,9 @@ Many candidates assume that a very high FLAR automatically means a very tall BHL
 
 You are designing a Commercial building in a zone where the local ordinance imposes a maximum FLAR of 4.0 on a 1,000 sq.m lot. Your proposed design has a total GFA of 5,000 sq.m. What is the regulatory status of your design?
 
-A) It complies, as long as the building stays under the local BHL.  
-B) It complies, because 5,000 sq.m falls within typical commercial ranges.  
-C) It violates the code because the maximum allowable GFA is 4,000 sq.m.  
+A) It complies, as long as the building stays under the local BHL.
+B) It complies, because 5,000 sq.m falls within typical commercial ranges.
+C) It violates the code because the maximum allowable GFA is 4,000 sq.m.
 D) It violates the code because GFA must include parking spaces.
 
 [SLATECAMP_UI_BLOCK:ui_0009 component="Accordion" status="preserved"]
@@ -374,9 +374,9 @@ Extracted summary:
 
 A commercial lot is served by a single RROW that is 5.00 m wide. The occupancy-based BHL for the use is higher than 20 m. What BHL cap applies in practice?
 
-A) The higher occupancy-based BHL.  
-B) 3 storeys / 9.00 m.  
-C) 2.5 storeys / 7.50 m.  
+A) The higher occupancy-based BHL.
+B) 3 storeys / 9.00 m.
+C) 2.5 storeys / 7.50 m.
 D) 2 storeys / 6.00 m.
 
 [SLATECAMP_UI_BLOCK:ui_0010 component="Accordion" status="preserved"]
@@ -391,9 +391,9 @@ Extracted summary:
 
 A residential condominium (R-5) floor has: 800 sq.m of units, a 50 sq.m lobby/corridor, a 200 sq.m covered parking bay, and twenty balconies of 12 sq.m each (one per unit). What is the GFA of this floor?
 
-A) 1,290 sq.m  
-B) 1,050 sq.m  
-C) 850 sq.m  
+A) 1,290 sq.m
+B) 1,050 sq.m
+C) 850 sq.m
 D) 1,090 sq.m
 
 [SLATECAMP_UI_BLOCK:ui_0011 component="Accordion" status="preserved"]
@@ -408,9 +408,9 @@ Extracted summary:
 
 An architect is designing a high-rise building on a 2,000 sq.m lot. PSO is 80% and FLAR is 10.0. The BHL for the zone is 60 storeys (180.00 m). If you hold the footprint at the full AMBF on every floor, how many full floors can you build by FLAR?
 
-A) 60 storeys  
-B) 12 storeys  
-C) 18 storeys  
+A) 60 storeys
+B) 12 storeys
+C) 18 storeys
 D) 25 storeys
 
 [SLATECAMP_UI_BLOCK:ui_0012 component="Accordion" status="preserved"]

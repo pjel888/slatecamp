@@ -1,17 +1,41 @@
 # Pre-Columbian Mesoamerica
 
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Pre-Columbian Mesoamerica** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
+
+
 ## Learning Goal
 
-<Tip>Focus on the architect's defining philosophy and key built works. The LEA frequently tests the relationship between an architect's theoretical principles and their physical execution in specific buildings.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
 Extracted summary:
-<ExamTip>**LEA Pattern:** Questions about this architect often present an unfamiliar building and ask you to identify the architect based on characteristic details — look for signature elements like cruciform columns (Mies), pilotis (Corbusier), or structural expressionism (Gaudi).</ExamTip>
+- Props: (none)
+- Text: Focus on the architect's defining philosophy and key built works. The LEA frequently tests the relationship between an architect's theoretical principles and their physical execution in specific buildings.
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
-<Tip>Focus on the architect's defining philosophy and key built works. The LEA frequently tests the relationship between an architect's theoretical principles and their physical execution in specific buildings.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0002 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **LEA Pattern:** Questions about this architect often present an unfamiliar building and ask you to identify the architect based on characteristic details — look for signature elements like cruciform columns (Mies), pilotis (Corbusier), or structural expressionism (Gaudi).
+[/SLATECAMP_UI_BLOCK]
+Extracted summary:
+[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Focus on the architect's defining philosophy and key built works. The LEA frequently tests the relationship between an architect's theoretical principles and their physical execution in specific buildings.
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - Props: (none)
 - Text: Focus on the architect's defining philosophy and key built works. The LEA fre...
 
-<Tip>Focus on the architect's defining philosophy and key built works. The LEA frequently tests the relationship between an architect's theoretical principles and their physical execution in specific buildings.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Focus on the architect's defining philosophy and key built works. The LEA frequently tests the relationship between an architect's theoretical principles and their physical execution in specific buildings.
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - Props: (none)
 - Text: Focus on the architect's defining philosophy and key built works. The LEA fre...
@@ -44,13 +68,19 @@ Think: *"Power, People, Adaptation"* — pyramids project power, plazas gather p
 | **Plazas** | Ciudadela, Teotihuacan (~400 × 400 m); Avenue of the Dead axis (~2.4 km); Templo Mayor precinct, Tenochtitlan | Plastered stone pavements; bounded by platforms and temples | Open courts for ritual, market, and political assembly; axial alignment with pyramids; sunken or raised variants for hierarchy | Communal gathering at monumental scale; spatial hierarchy reinforces social order; drainage integrated into pavement design |
 | **Aztec Urbanism (Tenochtitlan)** | Founded 1325; destroyed 1521; estimated 150,000–300,000 population; 8–13.5 km² | *Tezontle* stone, adobe, timber; chinampas (artificial island-gardens); causeways of compacted earth and stone | Four-quadrant (*campan*) grid along cardinal axes; three major causeways to mainland; aqueducts from Chapultepec; chinampas for agriculture | Water-adapted urbanism: chinampas convert lake into productive agricultural land; causeways manage access and flood control; aqueducts supply potable water separate from saline lake water |
 
-<ExamTip>**LEA Pattern:** Questions about this architect often present an unfamiliar building and ask you to identify the architect based on characteristic details — look for signature elements like cruciform columns (Mies), pilotis (Corbusier), or structural expressionism (Gaudi).</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0005 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **LEA Pattern:** Questions about this architect often present an unfamiliar building and ask you to identify the architect based on characteristic details — look for signature elements like cruciform columns (Mies), pilotis (Corbusier), or structural expressionism (Gaudi).
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 
 component="ExamTip" status="preserved"]
-<Note>
-**LEA Pattern:** Questions about this architect often present an unfamiliar b...
-</Note>
+[SLATECAMP_UI_BLOCK:ui_0006 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **LEA Pattern:** Questions about this architect often present an unfamiliar b...
+[/SLATECAMP_UI_BLOCK]
 ## LEA Exam Traps and Common Mistakes
 
 - **"The Aztecs built Teotihuacan":** This is one of the most common exam traps. Teotihuacan flourished from the 1st to 7th century CE and was already a ruin by the time the Aztecs (Mexica) rose to power in the 14th century. The Aztecs revered Teotihuacan as a sacred ancestral site and named it ("The Place Where the Gods Were Born"), but they did not build it. The builders of Teotihuacan remain unidentified by ethnic name.
@@ -61,28 +91,28 @@ component="ExamTip" status="preserved"]
 
 **Question 1.** The *talud-tablero* architectural profile, most closely associated with Teotihuacan, consists of:
 
-A. A pointed arch supporting a ribbed vault, derived from Gothic structural principles  
-B. A sloping battered wall (*talud*) supporting a rectangular vertical panel (*tablero*), forming the characteristic stepped profile of Mesoamerican pyramids  
-C. A corbelled arch formed by progressively offsetting horizontal stone courses, typical of Maya architecture  
-D. A smooth, inclined stone face rising to a pointed apex, as seen in Egyptian pyramid construction  
+A. A pointed arch supporting a ribbed vault, derived from Gothic structural principles
+B. A sloping battered wall (*talud*) supporting a rectangular vertical panel (*tablero*), forming the characteristic stepped profile of Mesoamerican pyramids
+C. A corbelled arch formed by progressively offsetting horizontal stone courses, typical of Maya architecture
+D. A smooth, inclined stone face rising to a pointed apex, as seen in Egyptian pyramid construction
 
 > **Correct Answer: B.** The *talud-tablero* is the signature Mesoamerican architectural motif: a sloping lower wall (talud) that transitions into a projecting rectangular upper panel (tablero), framed by a protruding molding. This profile defines the stepped pyramids of Teotihuacan and spread as an architectural influence across Mesoamerica. It is fundamentally different from both Maya corbel arches (Option C) and Egyptian smooth-faced pyramids (Option D).
 
 **Question 2.** Tenochtitlan's *chinampas* are best described as:
 
-A. Stone aqueducts carrying freshwater from mountain springs to the island city  
-B. Defensive walls surrounding the sacred precinct of the Templo Mayor  
-C. Rectangular artificial island-gardens constructed in the shallow lake bed using layers of vegetation, mud, and stakes, providing intensive agricultural production  
-D. Elevated stone causeways connecting the island city to the mainland  
+A. Stone aqueducts carrying freshwater from mountain springs to the island city
+B. Defensive walls surrounding the sacred precinct of the Templo Mayor
+C. Rectangular artificial island-gardens constructed in the shallow lake bed using layers of vegetation, mud, and stakes, providing intensive agricultural production
+D. Elevated stone causeways connecting the island city to the mainland
 
 > **Correct Answer: C.** Chinampas were highly productive artificial agricultural islands built in the shallow waters of Lake Texcoco. Constructed by staking out rectangular plots and layering aquatic vegetation, mud, and soil, they could produce multiple crop cycles per year. Chinampas were integral to Tenochtitlan's self-sufficiency, feeding a population of 150,000–300,000. Option A describes the Chapultepec aqueducts; Option D describes the causeways — both are separate infrastructure systems.
 
 **Question 3.** Which statement correctly distinguishes Teotihuacan from the Aztec capital Tenochtitlan?
 
-A. Teotihuacan was a 14th-century Aztec city; Tenochtitlan was its predecessor from the 1st century CE  
-B. Both cities were built simultaneously by the same civilization on opposite shores of Lake Texcoco  
-C. Teotihuacan (1st–7th century CE) was built by an unidentified civilization and was already in ruins when the Aztecs founded Tenochtitlan in 1325 CE  
-D. Teotihuacan was a small ceremonial site; Tenochtitlan was the first city in the Americas  
+A. Teotihuacan was a 14th-century Aztec city; Tenochtitlan was its predecessor from the 1st century CE
+B. Both cities were built simultaneously by the same civilization on opposite shores of Lake Texcoco
+C. Teotihuacan (1st–7th century CE) was built by an unidentified civilization and was already in ruins when the Aztecs founded Tenochtitlan in 1325 CE
+D. Teotihuacan was a small ceremonial site; Tenochtitlan was the first city in the Americas
 
 > **Correct Answer: C.** Teotihuacan peaked between the 1st and 7th centuries CE with an estimated population of 100,000–150,000, making it one of the largest cities in the ancient world. It collapsed around the 7th–8th century for reasons still debated. The Aztecs (Mexica) founded Tenochtitlan roughly 600 years later in 1325 CE. The Aztecs considered Teotihuacan a sacred site of divine origin but had no hand in its construction.
 

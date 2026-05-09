@@ -160,34 +160,34 @@ Extracted summary:
 ### Question 1
 During which months does the **Amihan** (Northeast Monsoon) prevail in the Philippines, and from which cardinal direction does it blow?
 
-A. June to September; from the Southwest  
-B. October to March; from the Northeast  
-C. April to May; from the Southeast  
-D. December to February; from the Northwest  
+A. June to September; from the Southwest
+B. October to March; from the Northeast
+C. April to May; from the Southeast
+D. December to February; from the Northwest
 
-> **Answer: B. October to March; from the Northeast**  
+> **Answer: B. October to March; from the Northeast**
 > The Amihan is the NE monsoon prevailing from approximately October to March. It brings cool, dry air from the northeast — the desirable breeze for natural ventilation in Philippine buildings. Option A describes the Habagat (SW monsoon). Options C and D are fabricated distractors. A common exam trap is reversing the months and directions of Amihan and Habagat.
 
 ### Question 2
 An architect in Manila is designing horizontal overhangs for a **south-facing** window that is 1.8 m tall. At the December solstice, the solar noon altitude angle is approximately 52°. What is the minimum overhang depth to fully shade the window at noon?
 
-A. 0.94 m  
-B. 1.41 m  
-C. 1.80 m  
-D. 2.30 m  
+A. 0.94 m
+B. 1.41 m
+C. 1.80 m
+D. 2.30 m
 
-> **Answer: B. 1.41 m**  
+> **Answer: B. 1.41 m**
 > Using D = H / tan(α) = 1.8 / tan(52°) = 1.8 / 1.28 = 1.406 ≈ **1.41 m**. Option A results from using tan(52°) incorrectly (dividing by 1.9 instead of 1.28). Option C simply uses the window height without calculation. Option D overestimates. The December solstice is the critical design condition for south-facade shading in the Philippines because the sun is at its lowest noon angle, leaning furthest south.
 
 ### Question 3
 Which building facade in the Philippines receives the **most intense heat gain** and requires **vertical** shading devices (fins or louvers) rather than horizontal overhangs?
 
-A. North facade  
-B. South facade  
-C. East facade  
-D. West facade  
+A. North facade
+B. South facade
+C. East facade
+D. West facade
 
-> **Answer: D. West facade**  
+> **Answer: D. West facade**
 > The west facade receives low-angle afternoon sun (1:00–5:00 PM), which creates the most intense heat gain of any orientation. Because the sun angle is low (near the horizon), horizontal overhangs are ineffective — vertical fins, louvers, or deep wall recesses are required. The south facade (B) has a higher sun angle and can be effectively shaded with horizontal devices. The north facade (A) receives minimal direct sun year-round. The east facade (C) also receives low-angle sun but in the cooler morning hours, making it less critical than the west.
 
 ---

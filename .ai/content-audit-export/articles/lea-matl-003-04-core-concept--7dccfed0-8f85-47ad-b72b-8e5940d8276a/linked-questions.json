@@ -1,9 +1,156 @@
 {
   "article_id": "7dccfed0-8f85-47ad-b72b-8e5940d8276a",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:881675fa7ce522c2e42d8f356fe42137e2c1ffbb9645b440ebd9ab1780011500",
+  "linked_questions_hash": "sha256:cff5c0c9eb219542665e3d717c1c3200e56bd8752a75e2e0095fd806bd76dd69",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "58b5c735-2fa0-4d12-ba8f-a8dc4fa36c15",
+      "article_id": "7dccfed0-8f85-47ad-b72b-8e5940d8276a",
+      "topic_id": "de7fc44e-5377-4764-a143-4f36ca936dd7",
+      "text": "An architect specifies 5005-H34 aluminum cladding for the exterior wall of a beachfront resort in Boracay. What is the primary advantage of 5005 over 6063 for this application?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5005 (Al-Mg) offers superior corrosion resistance compared to 6063 (Al-Mg-Si), making it ideal for harsh marine environments with salt spray and high humidity"
+        },
+        {
+          "id": "b",
+          "text": "5005 is lighter in weight, reducing structural loads on the foundation, which is particularly beneficial in areas with unstable soil conditions."
+        },
+        {
+          "id": "c",
+          "text": "5005 is cheaper than 6063 alloy, providing a cost-effective solution for large-scale projects where budget constraints are a concern."
+        },
+        {
+          "id": "d",
+          "text": "5005 requires no surface finishing, whereas 6063 always requires anodizing, which can add to the overall maintenance costs over time."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Weight savings are minimal and do not justify alloy selection; structural loading is dominated by other factors.",
+        "c": "Cost favors 6063 due to higher extrusion volumes; 5005 is reserved for corrosion-critical applications.",
+        "d": "Both 5005 and 6063 require anodizing or powder coating to achieve acceptable durability in exposed environments.",
+        "correct": "5005 (Al-Mg) alloys provide superior corrosion resistance due to the stabilizing effect of magnesium. For severe marine exposure (salt spray, high humidity, low rainfall washoff), 5005 is preferred over 6063. Both still require Type II or Type III anodizing for durability."
+      },
+      "explanation": "Weight savings are minimal and do not justify alloy selection; structural loading is dominated by other factors. Cost favors 6063 due to higher extrusion volumes; 5005 is reserved for corrosion-critical applications. Both 5005 and 6063 require anodizing or powder coating to achieve acceptable durability in exposed environments. 5005 (Al-Mg) alloys provide superior corrosion resistance due to the stabilizing effect of magnesium. For severe marine exposure (salt spray, high humidity, low rainfall washoff), 5005 is preferred over 6063. Both still require Type II or Type III anodizing for durability.",
+      "code_citation": "Aluminum Association Design Manual; ASTM B221-23",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-003-04-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-05-06T13:17:32.653282+00:00",
+      "content_hash": "sha256:d894728dd2493d9480070175788e3622cc7aa06a0d07ff1347858ac589c44e04"
+    },
+    {
+      "question_id": "917c22c8-eabb-4572-a8ef-ec303f48d390",
+      "article_id": "7dccfed0-8f85-47ad-b72b-8e5940d8276a",
+      "topic_id": "de7fc44e-5377-4764-a143-4f36ca936dd7",
+      "text": "What is the minimum ultimate tensile strength of 6063-T6 aluminum alloy?",
+      "options": [
+        {
+          "id": "a",
+          "text": "90 MPa"
+        },
+        {
+          "id": "b",
+          "text": "140 MPa"
+        },
+        {
+          "id": "c",
+          "text": "160 MPa"
+        },
+        {
+          "id": "d",
+          "text": "186 MPa"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "90 MPa is the tensile strength of 1100 (commercially pure aluminum), unsuitable for structural applications.",
+        "b": "140 MPa is the minimum tensile strength of 6063-T5, which offers cost savings for non-structural trim.",
+        "c": "160 MPa is the yield strength of 6063-T6, not its ultimate tensile strength.",
+        "correct": "6063-T6 achieves a minimum ultimate tensile strength of 186 MPa, making it suitable for load-bearing architectural members. 6063-T5 typical tensile strength range is 145–186 MPa (not minimum 140 MPa)."
+      },
+      "explanation": "90 MPa is the tensile strength of 1100 (commercially pure aluminum), unsuitable for structural applications. 140 MPa is the minimum tensile strength of 6063-T5, which offers cost savings for non-structural trim. 160 MPa is the yield strength of 6063-T6, not its ultimate tensile strength. 6063-T6 achieves a minimum ultimate tensile strength of 186 MPa, making it suitable for load-bearing architectural members. 6063-T5 typical tensile strength range is 145–186 MPa (not minimum 140 MPa).",
+      "code_citation": "Aluminum Association Design Manual; ASTM B221-23",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-003-04-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-05-06T13:17:32.792194+00:00",
+      "content_hash": "sha256:bc5b8fb9d27ea0210a4dd60815c7e89cea99db5d9a8ee38389f0f48d6e8a9621"
+    },
+    {
+      "question_id": "a21746cc-d4f5-4534-8e59-b104afbf9277",
+      "article_id": "7dccfed0-8f85-47ad-b72b-8e5940d8276a",
+      "topic_id": "de7fc44e-5377-4764-a143-4f36ca936dd7",
+      "text": "A curtain wall frame is being assembled with 6063-T6 aluminum extrusions fastened using stainless steel bolts and connected to a copper roof system via a shared header. What corrosion risk must the designer address?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Galvanic corrosion between aluminum (anodic) and stainless steel (cathodic), and between aluminum and copper"
+        },
+        {
+          "id": "b",
+          "text": "Only Type II anodizing can prevent any corrosion in this assembly, ensuring long-term durability"
+        },
+        {
+          "id": "c",
+          "text": "Copper and stainless steel naturally inhibit aluminum corrosion, eliminating risk, provided the assembly is sealed against moisture"
+        },
+        {
+          "id": "d",
+          "text": "Galvanic corrosion only occurs between ferrous and non-ferrous metals, not within aluminum systems, unless exposed to saline environments"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Anodizing protects the aluminum surface but does not prevent galvanic corrosion at contact points where the oxide film is penetrated.",
+        "c": "Copper and stainless steel are more cathodic than aluminum; they accelerate galvanic corrosion, not inhibit it.",
+        "d": "Galvanic corrosion occurs between any dissimilar metals in an electrolyte (wet environment), regardless of ferrous/non-ferrous classification.",
+        "correct": "Aluminum is more active (anodic) than stainless steel and copper (both cathodic). Direct contact without isolation creates galvanic cells; aluminum corrodes preferentially. Prevention requires EPDM gaskets, nylon washers, or non-conductive spacers at all metal interfaces."
+      },
+      "explanation": "Anodizing protects the aluminum surface but does not prevent galvanic corrosion at contact points where the oxide film is penetrated. Copper and stainless steel are more cathodic than aluminum; they accelerate galvanic corrosion, not inhibit it. Galvanic corrosion occurs between any dissimilar metals in an electrolyte (wet environment), regardless of ferrous/non-ferrous classification. Aluminum is more active (anodic) than stainless steel and copper (both cathodic). Direct contact without isolation creates galvanic cells; aluminum corrodes preferentially. Prevention requires EPDM gaskets, nylon washers, or non-conductive spacers at all metal interfaces.",
+      "code_citation": "ASTM B117-19 Standard Practice for Operating Salt Spray Apparatus; Aluminum Design Manual",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-003-04-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-05-06T13:17:32.915549+00:00",
+      "content_hash": "sha256:594707670a921fa2aba32eb71aad7e79db7db0f640dc9e1d5522582582593649"
+    },
     {
       "question_id": "1e2bfa27-6e19-4710-a6ee-507c40fe24fc",
       "article_id": "7dccfed0-8f85-47ad-b72b-8e5940d8276a",
@@ -136,7 +283,7 @@
         "d": "Cost is not the primary driver; corrosion protection is. Type II's superior film thickness justifies its standard use in architecture.",
         "correct": "Type II produces a medium-thickness oxide film (10–25 µm) that provides excellent corrosion resistance and aesthetic appearance. This is the standard choice for architectural extrusions exposed to weathering."
       },
-      "explanation": null,
+      "explanation": "Type I (chromic acid) produces only thin films (5–10 µm) with limited corrosion protection—inadequate for exposed architectural work. Both Type I and Type II can achieve color uniformity; the distinction is film thickness and durability, not aesthetics. Cost is not the primary driver; corrosion protection is. Type II's superior film thickness justifies its standard use in architecture. Type II produces a medium-thickness oxide film (10–25 µm) that provides excellent corrosion resistance and aesthetic appearance. This is the standard choice for architectural extrusions exposed to weathering.",
       "code_citation": "ASTM B680-22 Standard Practice for Evaluating Anodized Aluminum; Aluminum Design Manual",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
@@ -148,106 +295,8 @@
       "model_id": "ALE-MATL-003-04-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.434371+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:484ad50f61d0b5d687102d80b27016e24f96e1271cd982ce56a70a4eef9c31c7"
-    },
-    {
-      "question_id": "58b5c735-2fa0-4d12-ba8f-a8dc4fa36c15",
-      "article_id": "7dccfed0-8f85-47ad-b72b-8e5940d8276a",
-      "topic_id": "de7fc44e-5377-4764-a143-4f36ca936dd7",
-      "text": "An architect specifies 5005-H34 aluminum cladding for the exterior wall of a beachfront resort in Boracay. What is the primary advantage of 5005 over 6063 for this application?",
-      "options": [
-        {
-          "id": "a",
-          "text": "5005 (Al-Mg) offers superior corrosion resistance compared to 6063 (Al-Mg-Si), making it ideal for harsh marine environments with salt spray and high humidity"
-        },
-        {
-          "id": "b",
-          "text": "5005 is lighter in weight, reducing structural loads on the foundation, which is particularly beneficial in areas with unstable soil conditions."
-        },
-        {
-          "id": "c",
-          "text": "5005 is cheaper than 6063 alloy, providing a cost-effective solution for large-scale projects where budget constraints are a concern."
-        },
-        {
-          "id": "d",
-          "text": "5005 requires no surface finishing, whereas 6063 always requires anodizing, which can add to the overall maintenance costs over time."
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "b": "Weight savings are minimal and do not justify alloy selection; structural loading is dominated by other factors.",
-        "c": "Cost favors 6063 due to higher extrusion volumes; 5005 is reserved for corrosion-critical applications.",
-        "d": "Both 5005 and 6063 require anodizing or powder coating to achieve acceptable durability in exposed environments.",
-        "correct": "5005 (Al-Mg) alloys provide superior corrosion resistance due to the stabilizing effect of magnesium. For severe marine exposure (salt spray, high humidity, low rainfall washoff), 5005 is preferred over 6063. Both still require Type II or Type III anodizing for durability."
-      },
-      "explanation": null,
-      "code_citation": "Aluminum Association Design Manual; ASTM B221-23",
-      "bloom_level": "understand",
-      "application_context": "recall",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-MATL-003-04-009",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:27.434371+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:e49315548b298de75f855f081a1c6d69ea1e8b37d2a2957f26a303320e574477"
-    },
-    {
-      "question_id": "917c22c8-eabb-4572-a8ef-ec303f48d390",
-      "article_id": "7dccfed0-8f85-47ad-b72b-8e5940d8276a",
-      "topic_id": "de7fc44e-5377-4764-a143-4f36ca936dd7",
-      "text": "What is the minimum ultimate tensile strength of 6063-T6 aluminum alloy?",
-      "options": [
-        {
-          "id": "a",
-          "text": "90 MPa"
-        },
-        {
-          "id": "b",
-          "text": "140 MPa"
-        },
-        {
-          "id": "c",
-          "text": "160 MPa"
-        },
-        {
-          "id": "d",
-          "text": "186 MPa"
-        }
-      ],
-      "correct_option_id": "d",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "90 MPa is the tensile strength of 1100 (commercially pure aluminum), unsuitable for structural applications.",
-        "b": "140 MPa is the minimum tensile strength of 6063-T5, which offers cost savings for non-structural trim.",
-        "c": "160 MPa is the yield strength of 6063-T6, not its ultimate tensile strength.",
-        "correct": "6063-T6 achieves a minimum ultimate tensile strength of 186 MPa, making it suitable for load-bearing architectural members. 6063-T5 typical tensile strength range is 145–186 MPa (not minimum 140 MPa)."
-      },
-      "explanation": null,
-      "code_citation": "Aluminum Association Design Manual; ASTM B221-23",
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [],
-      "difficulty": 0.3,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-MATL-003-04-002",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:27.434371+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:18d9728f09b9a5f736c1280cdb91efd275cf593efb542ad8c39664fd110339c1"
+      "updated_at": "2026-05-06T13:17:32.530143+00:00",
+      "content_hash": "sha256:3bed67dac47010e6a20c367d822c4436895c3005d426a6d63b7d6b7b9530fb99"
     },
     {
       "question_id": "a120bfef-9433-4311-bbd3-fa0d166589e7",
@@ -348,55 +397,6 @@
       "content_hash": "sha256:930f821cb456d8198fb6aa6633b6ba81d3a0848182a3db13adbb58693a3efe7c"
     },
     {
-      "question_id": "a21746cc-d4f5-4534-8e59-b104afbf9277",
-      "article_id": "7dccfed0-8f85-47ad-b72b-8e5940d8276a",
-      "topic_id": "de7fc44e-5377-4764-a143-4f36ca936dd7",
-      "text": "A curtain wall frame is being assembled with 6063-T6 aluminum extrusions fastened using stainless steel bolts and connected to a copper roof system via a shared header. What corrosion risk must the designer address?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Galvanic corrosion between aluminum (anodic) and stainless steel (cathodic), and between aluminum and copper"
-        },
-        {
-          "id": "b",
-          "text": "Only Type II anodizing can prevent any corrosion in this assembly, ensuring long-term durability"
-        },
-        {
-          "id": "c",
-          "text": "Copper and stainless steel naturally inhibit aluminum corrosion, eliminating risk, provided the assembly is sealed against moisture"
-        },
-        {
-          "id": "d",
-          "text": "Galvanic corrosion only occurs between ferrous and non-ferrous metals, not within aluminum systems, unless exposed to saline environments"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "b": "Anodizing protects the aluminum surface but does not prevent galvanic corrosion at contact points where the oxide film is penetrated.",
-        "c": "Copper and stainless steel are more cathodic than aluminum; they accelerate galvanic corrosion, not inhibit it.",
-        "d": "Galvanic corrosion occurs between any dissimilar metals in an electrolyte (wet environment), regardless of ferrous/non-ferrous classification.",
-        "correct": "Aluminum is more active (anodic) than stainless steel and copper (both cathodic). Direct contact without isolation creates galvanic cells; aluminum corrodes preferentially. Prevention requires EPDM gaskets, nylon washers, or non-conductive spacers at all metal interfaces."
-      },
-      "explanation": null,
-      "code_citation": "ASTM B117-19 Standard Practice for Operating Salt Spray Apparatus; Aluminum Design Manual",
-      "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-MATL-003-04-005",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:27.434371+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:452abe811c6c22c4f3dd1f0b7afed634fc36d7a49a24ff9fae7079c3b48dccd6"
-    },
-    {
       "question_id": "56a109a3-1826-48b9-8ef6-8ef6d73eb59c",
       "article_id": "7dccfed0-8f85-47ad-b72b-8e5940d8276a",
       "topic_id": "de7fc44e-5377-4764-a143-4f36ca936dd7",
@@ -479,7 +479,7 @@
         "d": "Performance differs; powder coating typically outperforms anodizing in severe coastal/industrial environments and custom color applications.",
         "correct": "Powder coating applies thermosetting polymers electrostatically and cures through heat, offering superior adhesion, durability, color retention, and uniform coverage. Custom colors and finishes far exceed anodizing capabilities. Both are valid; selection depends on performance and aesthetic requirements."
       },
-      "explanation": null,
+      "explanation": "Anodizing provides excellent corrosion protection but offers limited color choices (natural aluminum or dyed colors within the oxide film). Powder coating requires thorough surface preparation (cleaning, conversion coating) to achieve adhesion; skipping this step causes failure. Performance differs; powder coating typically outperforms anodizing in severe coastal/industrial environments and custom color applications. Powder coating applies thermosetting polymers electrostatically and cures through heat, offering superior adhesion, durability, color retention, and uniform coverage. Custom colors and finishes far exceed anodizing capabilities. Both are valid; selection depends on performance and aesthetic requirements.",
       "code_citation": "ASTM B680-22 Standard Practice for Evaluating Anodized Aluminum; Aluminum Design Manual",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
@@ -491,8 +491,8 @@
       "model_id": "ALE-MATL-003-04-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.434371+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:4f8ca6825a94da1277861fc9eb63c6a09c4f436015183e46b943762f70b5ffeb"
+      "updated_at": "2026-05-06T13:17:33.040223+00:00",
+      "content_hash": "sha256:5bfe4b160b9f6a64668e16404021a8896cadaf777ec118b4ec72d40fbddffc53"
     }
   ]
 }

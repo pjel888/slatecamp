@@ -1,9 +1,165 @@
 {
   "article_id": "7872fb73-5087-4167-a5b3-e799ce11eccc",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:c005505ece19c219f17abb81c1f0061bf41b711b197391f934ab0e4d67572a11",
+  "linked_questions_hash": "sha256:1242915e46b8dc44e579e18bd825bdbc81bb620e2b1fc103cbec79aecd31ab8f",
   "question_count": 14,
   "questions": [
+    {
+      "question_id": "ed974785-5e2c-494c-a9d3-a80773061542",
+      "article_id": "7872fb73-5087-4167-a5b3-e799ce11eccc",
+      "topic_id": "cf9b7e02-ddef-47a1-989d-b5f8a9dc7f33",
+      "text": "An architect sketches a diagonal across a building elevation and discovers that significant architectural features (window tops, cornice lines, major transitions) align with the diagonal. What is this diagonal functioning as?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A regulating line, revealing the underlying proportional order that generated the design"
+        },
+        {
+          "id": "b",
+          "text": "A sight line for viewing the facade from a specific angle, enhancing the visual experience of the observer"
+        },
+        {
+          "id": "c",
+          "text": "A structural element supporting the building's weight, although diagonals are typically not used structurally in facades"
+        },
+        {
+          "id": "d",
+          "text": "A decorative line applied to the facade, intended to add visual interest without structural function"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Alignment demonstrates proportional generation, not viewing geometry.",
+        "c": "Regulating lines are proportional devices, not structural support.",
+        "d": "Regulating lines are conceptual, not decorative surface elements.",
+        "correct": "When a geometric line aligns with significant features, it reveals the proportional generating logic. The diagonal is a regulating line—not visible in the finished building but structuring the design's dimensional relationships.",
+        "takeaway": "The diagonal is a regulating line—not visible in the finished building but structuring the design's dimensional relationships."
+      },
+      "explanation": "Alignment demonstrates proportional generation, not viewing geometry. Regulating lines are proportional devices, not structural support. Regulating lines are conceptual, not decorative surface elements. When a geometric line aligns with significant features, it reveals the proportional generating logic. The diagonal is a regulating line—not visible in the finished building but structuring the design's dimensional relationships. The diagonal is a regulating line—not visible in the finished building but structuring the design's dimensional relationships.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-08-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.884733+00:00",
+      "updated_at": "2026-05-06T13:17:28.701352+00:00",
+      "content_hash": "sha256:6b40852c1c7ca3886ff8afe9b4bf5c32166f3a2cb2e241b82ae929677316a1b6"
+    },
+    {
+      "question_id": "b5e756f8-8f8b-4e6e-8435-7b5d3dc9aa55",
+      "article_id": "7872fb73-5087-4167-a5b3-e799ce11eccc",
+      "topic_id": "cf9b7e02-ddef-47a1-989d-b5f8a9dc7f33",
+      "text": "Regulating lines in architectural design are:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Decorative lines applied to ornamental surfaces, often used to enhance aesthetic appeal"
+        },
+        {
+          "id": "b",
+          "text": "Geometric lines (diagonals, proportional divisions, axes) drawn to reveal underlying proportional systems and guide dimensional decisions"
+        },
+        {
+          "id": "c",
+          "text": "Lines required by building codes to separate property boundaries, ensuring legal compliance"
+        },
+        {
+          "id": "d",
+          "text": "Lines on a facade indicating where windows and doors must be placed, based on design intent"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Regulating lines are structural/proportional devices, not decoration.",
+        "c": "Property lines are not architectural regulating lines.",
+        "d": "Regulating lines guide proportional logic, not specific element placement.",
+        "correct": "Regulating lines are conceptual tools—geometric lines (often diagonals, proportional divisions) that reveal hidden proportional order and guide dimensional relationships. They're not visible in the finished building but organize the design system.",
+        "takeaway": "They're not visible in the finished building but organize the design system."
+      },
+      "explanation": "Regulating lines are structural/proportional devices, not decoration. Property lines are not architectural regulating lines. Regulating lines guide proportional logic, not specific element placement. Regulating lines are conceptual tools—geometric lines (often diagonals, proportional divisions) that reveal hidden proportional order and guide dimensional relationships. They're not visible in the finished building but organize the design system. They're not visible in the finished building but organize the design system.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-08-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.884733+00:00",
+      "updated_at": "2026-05-06T13:17:28.836399+00:00",
+      "content_hash": "sha256:c68a6d8c500e148a3e038fff6673063c3651eb35bb6b855602694b55b474a362"
+    },
+    {
+      "question_id": "c07c2f69-6346-4336-b842-927bffa3d876",
+      "article_id": "7872fb73-5087-4167-a5b3-e799ce11eccc",
+      "topic_id": "cf9b7e02-ddef-47a1-989d-b5f8a9dc7f33",
+      "text": "How do proportioning systems demonstrate that proportion is not merely aesthetic preference but a design discipline with functional and perceptual consequences?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Because proportioning systems generate dimensional relationships that make buildings feel coherent and human-scaled—proportion is discipline determining how spaces feel and function, not decorative choice"
+        },
+        {
+          "id": "b",
+          "text": "Because proportioning systems are required by building codes, ensuring compliance with legal standards"
+        },
+        {
+          "id": "c",
+          "text": "Because architects historically used proportioning systems, they must be important for maintaining tradition"
+        },
+        {
+          "id": "d",
+          "text": "Because proportioning systems are mathematically interesting to architects, providing intellectual stimulation"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Codes rarely mandate proportioning systems.",
+        "c": "Historical use supports the discipline but isn't the reason.",
+        "d": "Mathematics serves design intent, not decorative intellectualism.",
+        "correct": "Proportioning systems reveal that proportion is fundamental discipline: it governs how spaces feel, how parts relate, whether buildings feel harmonious or chaotic. The Modulor ensures human-scale appropriateness. Golden ratio feels inherently harmonious. Modules create order. These are functional consequences, not aesthetic taste.",
+        "takeaway": "These are functional consequences, not aesthetic taste."
+      },
+      "explanation": "Codes rarely mandate proportioning systems. Historical use supports the discipline but isn't the reason. Mathematics serves design intent, not decorative intellectualism. Proportioning systems reveal that proportion is fundamental discipline: it governs how spaces feel, how parts relate, whether buildings feel harmonious or chaotic. The Modulor ensures human-scale appropriateness. Golden ratio feels inherently harmonious. Modules create order. These are functional consequences, not aesthetic taste. These are functional consequences, not aesthetic taste.",
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-08-014",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.884733+00:00",
+      "updated_at": "2026-05-06T13:17:28.950409+00:00",
+      "content_hash": "sha256:5ffa2a484d6b22bd7e317743c7f873e1a459b78feb3c7ae5cf625547fa882f22"
+    },
     {
       "question_id": "66693173-cb91-4481-b918-1ffc555e3cf2",
       "article_id": "7872fb73-5087-4167-a5b3-e799ce11eccc",
@@ -195,7 +351,7 @@
         "correct": "Proportioning systems create feeling of coherence: when all dimensions relate through consistent logic (golden ratio, module, human measure), the building feels proportionally unified. This is experiential, not merely mathematical. Users may not know about golden ratio but perceive proportional harmony.",
         "takeaway": "Users may not know about golden ratio but perceive proportional harmony."
       },
-      "explanation": null,
+      "explanation": "Systems serve design coherence, not mathematics for its own sake. Proportioning systems enhance design quality, not reduce costs. Codes don't mandate proportioning systems; designers choose them. Proportioning systems create feeling of coherence: when all dimensions relate through consistent logic (golden ratio, module, human measure), the building feels proportionally unified. This is experiential, not merely mathematical. Users may not know about golden ratio but perceive proportional harmony. Users may not know about golden ratio but perceive proportional harmony.",
       "code_citation": null,
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
@@ -209,60 +365,8 @@
       "model_id": "ALE-THEO-002-08-012",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:8cd80f3bf35df75561f79e9a32181bb41117cd7e22e7822713eb7e07921d4982"
-    },
-    {
-      "question_id": "ed974785-5e2c-494c-a9d3-a80773061542",
-      "article_id": "7872fb73-5087-4167-a5b3-e799ce11eccc",
-      "topic_id": "cf9b7e02-ddef-47a1-989d-b5f8a9dc7f33",
-      "text": "An architect sketches a diagonal across a building elevation and discovers that significant architectural features (window tops, cornice lines, major transitions) align with the diagonal. What is this diagonal functioning as?",
-      "options": [
-        {
-          "id": "a",
-          "text": "A regulating line, revealing the underlying proportional order that generated the design"
-        },
-        {
-          "id": "b",
-          "text": "A sight line for viewing the facade from a specific angle, enhancing the visual experience of the observer"
-        },
-        {
-          "id": "c",
-          "text": "A structural element supporting the building's weight, although diagonals are typically not used structurally in facades"
-        },
-        {
-          "id": "d",
-          "text": "A decorative line applied to the facade, intended to add visual interest without structural function"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "b": "Alignment demonstrates proportional generation, not viewing geometry.",
-        "c": "Regulating lines are proportional devices, not structural support.",
-        "d": "Regulating lines are conceptual, not decorative surface elements.",
-        "correct": "When a geometric line aligns with significant features, it reveals the proportional generating logic. The diagonal is a regulating line—not visible in the finished building but structuring the design's dimensional relationships.",
-        "takeaway": "The diagonal is a regulating line—not visible in the finished building but structuring the design's dimensional relationships."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "apply",
-      "application_context": "design_application",
-      "practice_context": [
-        "APP"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-002-08-008",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:98b8ada0dba73766cbaa9aa5b8028079743f5897eb6c21c39cc631dd26cd06f5"
+      "updated_at": "2026-05-06T13:17:28.542673+00:00",
+      "content_hash": "sha256:8d864aa8f7dc771b8e2959390fd01652087a625a23a6f3495923db7a35baf548"
     },
     {
       "question_id": "391c4e87-b596-41f6-a51f-69a063ed7c6e",
@@ -419,58 +523,6 @@
       "created_at": "2026-03-23T19:27:53.884733+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:44fe9bee6aaa8792bd4204e0c5350a16ceed6f97a5600db94b55f80132630486"
-    },
-    {
-      "question_id": "b5e756f8-8f8b-4e6e-8435-7b5d3dc9aa55",
-      "article_id": "7872fb73-5087-4167-a5b3-e799ce11eccc",
-      "topic_id": "cf9b7e02-ddef-47a1-989d-b5f8a9dc7f33",
-      "text": "Regulating lines in architectural design are:",
-      "options": [
-        {
-          "id": "a",
-          "text": "Decorative lines applied to ornamental surfaces, often used to enhance aesthetic appeal"
-        },
-        {
-          "id": "b",
-          "text": "Geometric lines (diagonals, proportional divisions, axes) drawn to reveal underlying proportional systems and guide dimensional decisions"
-        },
-        {
-          "id": "c",
-          "text": "Lines required by building codes to separate property boundaries, ensuring legal compliance"
-        },
-        {
-          "id": "d",
-          "text": "Lines on a facade indicating where windows and doors must be placed, based on design intent"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Regulating lines are structural/proportional devices, not decoration.",
-        "c": "Property lines are not architectural regulating lines.",
-        "d": "Regulating lines guide proportional logic, not specific element placement.",
-        "correct": "Regulating lines are conceptual tools—geometric lines (often diagonals, proportional divisions) that reveal hidden proportional order and guide dimensional relationships. They're not visible in the finished building but organize the design system.",
-        "takeaway": "They're not visible in the finished building but organize the design system."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [
-        "DEF"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-002-08-007",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:04f52de358dbba56dbadad26ba4d25575856e6424a158fdf615f46c01a35b5c4"
     },
     {
       "question_id": "650e7801-2473-42ad-8cc3-d854db82298e",
@@ -679,58 +731,6 @@
       "created_at": "2026-03-23T19:27:53.884733+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:5981ec27c303c65e93e1e9ae9b262f2b06be942cfab2c6853b5fc137469bd6d2"
-    },
-    {
-      "question_id": "c07c2f69-6346-4336-b842-927bffa3d876",
-      "article_id": "7872fb73-5087-4167-a5b3-e799ce11eccc",
-      "topic_id": "cf9b7e02-ddef-47a1-989d-b5f8a9dc7f33",
-      "text": "How do proportioning systems demonstrate that proportion is not merely aesthetic preference but a design discipline with functional and perceptual consequences?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Because proportioning systems generate dimensional relationships that make buildings feel coherent and human-scaled—proportion is discipline determining how spaces feel and function, not decorative choice"
-        },
-        {
-          "id": "b",
-          "text": "Because proportioning systems are required by building codes, ensuring compliance with legal standards"
-        },
-        {
-          "id": "c",
-          "text": "Because architects historically used proportioning systems, they must be important for maintaining tradition"
-        },
-        {
-          "id": "d",
-          "text": "Because proportioning systems are mathematically interesting to architects, providing intellectual stimulation"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "b": "Codes rarely mandate proportioning systems.",
-        "c": "Historical use supports the discipline but isn't the reason.",
-        "d": "Mathematics serves design intent, not decorative intellectualism.",
-        "correct": "Proportioning systems reveal that proportion is fundamental discipline: it governs how spaces feel, how parts relate, whether buildings feel harmonious or chaotic. The Modulor ensures human-scale appropriateness. Golden ratio feels inherently harmonious. Modules create order. These are functional consequences, not aesthetic taste.",
-        "takeaway": "These are functional consequences, not aesthetic taste."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "analyze",
-      "application_context": "code_interpretation",
-      "practice_context": [
-        "CON"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-002-08-014",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:3a65468d1bcb39dac5c9ac10cd58b6b52687ab901c7569b3193715669fa829d2"
     }
   ]
 }

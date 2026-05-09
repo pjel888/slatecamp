@@ -1,15 +1,26 @@
 # Minimum Parking Requirements
 
-**Module Focus: Off-Street Parking Standards, Slot Dimensions & Occupancy Ratios**  
-**Authority: PD 1096 (National Building Code), 2004 Revised IRR, BP 344 (as amended), DPWH DO 059 s. 2019**[file:16][web:2][web:6]
 
----
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Minimum Parking Requirements** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
+
 
 ## Schema Activation: The Basement That Kills the Budget
 
-<ArticleMedia id="media-minimum-parking-requirements-0" name="parking-stall-dimension-overlay" type="diagram" caption="Top-down view of parking layout with dimension callouts: perpendicular car 2.50 m × 5.00 m, parallel car 2.15 m × 6.00 m, jeepney 3.00 m × 9.00 m, bus/truck 3.60 m × 12.00 m, PWD accessible 4.00 m × 5.00 m with 1.80 m access aisle. Show shared aisle configuration for two accessible stalls (4.0 + 1.8 + 4.0 = 9.8 m)." />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-minimum-parking-requirements-0", name="parking-stall-dimension-overlay", type="diagram", caption="Top-down view of parking layout with dimension callouts: perpendicular car 2.50 m × 5.00 m, parallel car 2.15 m × 6.00 m, jeepney 3.00 m × 9.00 m, bus/truck 3.60 m × 12.00 m, PWD accessible 4.00 m × 5.00 m with 1.80 m access aisle. Show shared aisle configuration for two accessible stalls (4.0 + 1.8 + 4.0 = 9.8 m)."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<ArticleMedia id="media-minimum-parking-requirements-1" name="parking-ratio-calculation" type="diagram" caption="Infographic showing parking ratio calculation: R-5 condominium example with 48 sqm units → 1 slot per 6 units. Show fraction rounding rule: 25 units ÷ 6 = 4.17 → round UP to 5 slots. Use colored blocks to represent pooled parking. Include separate callout for the 4-tier ratio pattern (8-6-4-1 per sqm bracket)." />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-minimum-parking-requirements-1", name="parking-ratio-calculation", type="diagram", caption="Infographic showing parking ratio calculation: R-5 condominium example with 48 sqm units → 1 slot per 6 units. Show fraction rounding rule: 25 units ÷ 6 = 4.17 → round UP to 5 slots. Use colored blocks to represent pooled parking. Include separate callout for the 4-tier ratio pattern (8-6-4-1 per sqm bracket)."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Learning Goal
 
@@ -38,7 +49,11 @@ Before memorizing any ratios, understand this fundamental fact: two sets of park
 | **"Old Summary Table"**            | Pre-2004 simplified parking table, widely reproduced in older review materials and confirmed in some board exam question banks | Questions that cite "PD 1096" generically without specifying a table version, or that use the "low-income single-detached" framing |
 | **"2004 Revised IRR Table VII.4"** | Current legally-binding standard (PRBoA-annotated, effective May 2005); amends and expands the original 1977 table             | Questions referencing "highly urbanized areas," specific GFA brackets, jeepney slots, or Table VII.4 directly                      |
 
-<LawCallout />
+[SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 **Strategy:** Match your answer to how the question is framed. If it says "highly urbanized city" or cites Table VII.4, use the 2004 IRR. If it says "as per PD 1096" and uses "low-income single-detached" language, the Old Table is likely expected.[web:2][web:4]
 
@@ -74,7 +89,11 @@ The LEA frequently tests exact physical dimensions of parking slots. These must 
 | Bus / Truck slot       | 3.00 m x 12.00 m                   | **3.60 m x 12.00 m**[web:2][web:12]                               |
 | PWD slot               | 2.50 m x 5.00 m or 3.70 m x 5.00 m | **4.00 m x 5.00 m** (amended BP 344 Appendix A)[file:16]          |
 
-<Callout />
+[SLATECAMP_UI_BLOCK:ui_0004 component="Callout" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -83,11 +102,19 @@ The LEA frequently tests exact physical dimensions of parking slots. These must 
 - All parking slots must be located **outside the Road Right-of-Way (RROW)**; the street is public domain — no private parking on it.[web:2][web:5]
 - Accessible (PWD) parking must be located **closest to an accessible main entrance**; in multi-storey indoor parking, these slots must be right next to accessible elevators or as near as possible to accessible pedestrian entrances.[file:16]
 
-<Note />
+[SLATECAMP_UI_BLOCK:ui_0005 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
-<Callout />
+[SLATECAMP_UI_BLOCK:ui_0006 component="Callout" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 >
 > - Car perpendicular: **2.5 x 5** ("two-and-a-half by five")
 > - Car parallel: **2.15 x 6** ("two-fifteen by six")
@@ -142,16 +169,24 @@ Source: Pre-2004 simplified parking table; confirmed in board exam question bank
 
 > **"Or fraction thereof" explained:** If you have 25 units at 1 slot per 6 units, that is 25 / 6 = 4.17. Round UP to **5 slots required**. Any remainder above a whole number triggers an additional slot; never round down.[web:6][web:10]
 
-<Callout />
+[SLATECAMP_UI_BLOCK:ui_0007 component="Callout" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
-<Callout />
+[SLATECAMP_UI_BLOCK:ui_0008 component="Callout" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 >
 > - 18–22 sq.m. → 1 per **8** units (smallest units, fewest cars)
 > - > 22 up to 50 sq.m. → 1 per **6** units
 > - 50–100 sq.m. → 1 per **4** units
-> - Over 100 sq.m. → 1 per **1** unit (biggest units, 1:1)  
+> - Over 100 sq.m. → 1 per **1** unit (biggest units, 1:1)
 >   Pattern: Bigger unit = more cars = lower denominator = more parking.[web:6][web:10]
 
 ---
@@ -225,11 +260,15 @@ Source: Pre-2004 simplified parking table; confirmed in board exam question bank
 
 [web:2][web:4]
 
-<Callout />
+[SLATECAMP_UI_BLOCK:ui_0009 component="Callout" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 >
 > - Highly urbanized: 1 per **3** rooms
 > - All other areas: 1 per **7** rooms
-> - Old summary table: 1 per **10** rooms  
+> - Old summary table: 1 per **10** rooms
 >   "**3**-star city / **7** provinces / **10** for the old exam"
 
 ---
@@ -275,7 +314,11 @@ Source: Pre-2004 simplified parking table; confirmed in board exam question bank
 - Accessible parking slots must be located **nearest to accessible main entrances** and, in multi-storey indoor parking, next to accessible elevators or as close as possible to accessible pedestrian entrances.[file:16]
 - Accessible parking slots must not be located in ramped or sloping areas.[file:16]
 
-<Callout />
+[SLATECAMP_UI_BLOCK:ui_0010 component="Callout" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -301,11 +344,19 @@ Source: Pre-2004 simplified parking table; confirmed in board exam question bank
 | 17 units at 1:8 ratio = 2.125 slots | Round down to 2 slots             | Round **up** to **3 slots**[web:6][web:10]                             |
 | When to round down                  | When the fraction is 0.5 or below | **Never** — "or fraction thereof" means always round up[web:6][web:10] |
 
-<Callout />
+[SLATECAMP_UI_BLOCK:ui_0011 component="Callout" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
-<Warn />
+[SLATECAMP_UI_BLOCK:ui_0012 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Active Recall Challenges
 
@@ -313,12 +364,16 @@ Source: Pre-2004 simplified parking table; confirmed in board exam question bank
 
 An architect is designing an R-5 condominium with 25 residential units, each with a GFA of 45 sq.m. What is the minimum number of off-street parking slots required for the residential units under the 2004 Revised IRR (as amended by DPWH DO 059 s. 2019)?
 
-**(A)** 25 slots  
-**(B)** 6 slots  
-**(C)** 5 slots  
+**(A)** 25 slots
+**(B)** 6 slots
+**(C)** 5 slots
 **(D)** 4 slots
 
-<details />
+[SLATECAMP_UI_BLOCK:ui_0013 component="details" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -326,12 +381,16 @@ An architect is designing an R-5 condominium with 25 residential units, each wit
 
 A hotel in a highly urbanized city has 25 guest rooms. What is the minimum required parking under PD 1096 as specified in the 2004 Revised IRR?
 
-**(A)** 3 car slots only  
-**(B)** 9 car slots + 2 bus slots  
-**(C)** 3 car slots + 2 bus slots  
+**(A)** 3 car slots only
+**(B)** 9 car slots + 2 bus slots
+**(C)** 3 car slots + 2 bus slots
 **(D)** 2 car slots + 2 bus slots
 
-<details />
+[SLATECAMP_UI_BLOCK:ui_0014 component="details" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -339,12 +398,16 @@ A hotel in a highly urbanized city has 25 guest rooms. What is the minimum requi
 
 Under the Old Summary Table of PD 1096, a low-income single-detached residential development has 47 units on individual lots of 90 sq.m. each. What is the minimum required pooled parking?
 
-**(A)** 4 slots  
-**(B)** 5 slots  
-**(C)** 6 slots  
+**(A)** 4 slots
+**(B)** 5 slots
+**(C)** 6 slots
 **(D)** 8 slots
 
-<details />
+[SLATECAMP_UI_BLOCK:ui_0015 component="details" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -352,12 +415,16 @@ Under the Old Summary Table of PD 1096, a low-income single-detached residential
 
 What are the minimum dimensions of a perpendicular automobile parking slot under the 2004 Revised IRR of PD 1096?
 
-**(A)** 2.00 m x 5.00 m  
-**(B)** 2.15 m x 6.00 m  
-**(C)** 2.40 m x 5.00 m  
+**(A)** 2.00 m x 5.00 m
+**(B)** 2.15 m x 6.00 m
+**(C)** 2.40 m x 5.00 m
 **(D)** 2.50 m x 5.00 m
 
-<details />
+[SLATECAMP_UI_BLOCK:ui_0016 component="details" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -365,12 +432,16 @@ What are the minimum dimensions of a perpendicular automobile parking slot under
 
 A building has 180 total off-street parking slots. How many accessible (PWD) parking slots are required under the **amended BP 344 IRR**?
 
-**(A)** 1 slot  
-**(B)** 2 slots  
-**(C)** 3 slots  
+**(A)** 1 slot
+**(B)** 2 slots
+**(C)** 3 slots
 **(D)** 4 slots
 
-<details />
+[SLATECAMP_UI_BLOCK:ui_0017 component="details" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -433,7 +504,11 @@ ALE Swipe: Parking ratios vary by occupancy: Group A (1 per unit), Group B/C (1 
 
 
 
-<ArticleMedia id="media-minimum-parking-requirements-2" type="image" caption="Parking Layout — Standard, Compact, and Accessible Slot Dimensions with Turning Radii" description="Plan diagram of parking layout showing: standard slot (2.40m × 5.00m), compact slot (2.10m × 4.50m), accessible slot (3.70m × 5.00m with 1.20m access aisle), 90° and 60° parking configurations with aisle widths (6.10m for 90°), vehicle turning radius (min 6.70m for passenger cars), and column bay spacing optimization (3-bay = 7.80m)." />
+[SLATECAMP_UI_BLOCK:ui_0018 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-minimum-parking-requirements-2", type="image", caption="Parking Layout — Standard, Compact, and Accessible Slot Dimensions with Turning Radii", description="Plan diagram of parking layout showing: standard slot (2.40m × 5.00m), compact slot (2.10m × 4.50m), accessible slot (3.70m × 5.00m with 1.20m access aisle), 90° and 60° parking configurations with aisle widths (6.10m for 90°), vehicle turning radius (min 6.70m for passenger cars), and column bay spacing optimization (3-bay = 7.80m)."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 ## Verified Source Mapping
 
 | Topic                                           | Exact Legal Reference                                                                                              |

@@ -1,17 +1,34 @@
 # PD 1096 Rule VII Area Metrics
 
-**Module Focus:** PD 1096, 2004 Revised IRR — Rule VIII (Sec. 803), Table VIII.1  
-**LEA Area:** 3 (Architectural Design and Site Planning)  
-**Difficulty:** Intermediate  
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **PD 1096 Rule VII Area Metrics** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
+
+**Module Focus:** PD 1096, 2004 Revised IRR — Rule VIII (Sec. 803), Table VIII.1
+**LEA Area:** 3 (Architectural Design and Site Planning)
+**Difficulty:** Intermediate
 **Spaced Repetition:** Return in 3 days. If you can answer the Blitz Quiz cold, move on.[file:17][file:18]
 
 ---
 
 ## The Scenario — See It Before You Read It
 
-<ArticleMedia id="media-pd-1096-rule-vii-area-metrics-0" name="lot-area-breakdown-pie" type="diagram" caption="Pie chart and stacked bar diagram showing how TLA (Total Lot Area) partitions into PSO (building footprint), ISA (hardscape/paved open), and USA (unpaved softscape). Show the equations PSO + TOSL = 100%, TOSL = ISA + USA, MACA = PSO + ISA. Use Basic R-2 without firewall as example: PSO 55%, ISA 30%, USA 15%." />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-pd-1096-rule-vii-area-metrics-0", name="lot-area-breakdown-pie", type="diagram", caption="Pie chart and stacked bar diagram showing how TLA (Total Lot Area) partitions into PSO (building footprint), ISA (hardscape/paved open), and USA (unpaved softscape). Show the equations PSO + TOSL = 100%, TOSL = ISA + USA, MACA = PSO + ISA. Use Basic R-2 without firewall as example: PSO 55%, ISA 30%, USA 15%."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<ArticleMedia id="media-pd-1096-rule-vii-area-metrics-1" name="firewall-comparison-diagram" type="diagram" caption="Side-by-side lot comparison: same lot with and without firewall. Without firewall: PSO 55%, USA 15%, MACA 85%. With firewall: PSO 60%, USA 10%, MACA 90%. Show how firewall shifts the ratio. Include a callout showing that Table VIII.1 is organized by zone + firewall status, NOT by lot type." />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-pd-1096-rule-vii-area-metrics-1", name="firewall-comparison-diagram", type="diagram", caption="Side-by-side lot comparison: same lot with and without firewall. Without firewall: PSO 55%, USA 15%, MACA 85%. With firewall: PSO 60%, USA 10%, MACA 90%. Show how firewall shifts the ratio. Include a callout showing that Table VIII.1 is organized by zone + firewall status, NOT by lot type."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Learning Goal
 
@@ -199,7 +216,7 @@ Practice: cover the table and reproduce the Basic R-2 rows (with and without fir
 
 ### TRAP 1 — “Table VIII.1 Distinguishes Inside vs Corner Lot”
 
-**Wrong assumption:** Table VIII.1 varies PSO by inside vs corner lot.  
+**Wrong assumption:** Table VIII.1 varies PSO by inside vs corner lot.
 **Correct:** It varies by **firewall**. Lot-type-based PSO caps are in **Table VII.1**, and lot-type-based TOSL is in **Table VIII.G.6**.[file:17][file:18]
 
 On the exam: always cross-check PSO/TOSL from these three sources and use the more restrictive values.
@@ -219,8 +236,8 @@ TOSL covers **all open space within the lot** not covered by the enclosed buildi
 
 Mnemonic: **MACA = “more than just the building”**, AMBF = “actual building footprint.”
 
-Example (Basic R-2, no firewall):  
-PSO = 55% → AMBF = 0.55 x TLA.  
+Example (Basic R-2, no firewall):
+PSO = 55% → AMBF = 0.55 x TLA.
 MACA = 55% + 30% = 85% → at most 85% of TLA can be hard (building + paving).[file:17]
 
 ---
@@ -274,20 +291,16 @@ Checks: 275 + 150 + 75 = 500 (TLA); 55 + 30 + 15 = 100% (lot percentage).[file:1
 
 An architect says: “The PSO of this R-2 lot is 275 square meters.” Which interpretation is correct?
 
-A) The PSO is correctly stated as 275 sq.m.  
-B) The architect has confused PSO (a percentage) with AMBF (an area).  
-C) PSO can be expressed in sq.m when the lot is smaller than 1,000 sq.m.  
+A) The PSO is correctly stated as 275 sq.m.
+B) The architect has confused PSO (a percentage) with AMBF (an area).
+C) PSO can be expressed in sq.m when the lot is smaller than 1,000 sq.m.
 D) PSO = 275 sq.m is correct specifically for Basic R-2 lots.
 
-<LawCallout code="pd1096" section="Rule VII - Floor Area and Lot Occupancy">
-
-  <summary><b>Click to reveal the answer</b></summary>
-  <br>
-  <b>Correct Answer: B</b><br><br>
-  PSO is always a percentage of TLA. The **area** corresponding to PSO is the AMBF.<br>
-  For a 500 sq.m lot at 55% PSO, AMBF = 275 sq.m. The PSO is 55%, not 275 sq.m.[file:17]
-
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="pd1096", section="Rule VII - Floor Area and Lot Occupancy"
+- Text: Click to reveal the answer Correct Answer: B PSO is always a percentage of TLA. The **area** corresponding to PSO is the AMBF. For a 500 sq.m lot at 55% PSO, AMBF = 275 sq.m. The PSO is 55%, not 275 sq.m.[file:17]
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -295,20 +308,16 @@ D) PSO = 275 sq.m is correct specifically for Basic R-2 lots.
 
 A Basic R-2 project is proposed on a **corner lot without firewall**. Which table provides the **lot-type-based PSO** distinction you must cross-check against Table VIII.1?
 
-A) Table VIII.1  
-B) Table VIII.G.6  
-C) Table VII.1  
+A) Table VIII.1
+B) Table VIII.G.6
+C) Table VII.1
 D) Table VII.G.1
 
-<LawCallout code="pd1096" section="Rule VII - Section 704">
-
-  <summary><b>Click to reveal the answer</b></summary>
-  <br>
-  <b>Correct Answer: C</b><br><br>
-  Table VIII.1 distinguishes firewall vs non-firewall for each zone.<br>
-  Table VII.1 lists PSO by occupancy and **lot type** (inside/corner/through), which you must compare with Table VIII.1 and then adopt the more restrictive value.[file:17][file:18]
-
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0004 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="pd1096", section="Rule VII - Section 704"
+- Text: Click to reveal the answer Correct Answer: C Table VIII.1 distinguishes firewall vs non-firewall for each zone. Table VII.1 lists PSO by occupancy and **lot type** (inside/corner/through), which you must compare with Table VIII.1 and then adopt the more restrictive value.[file:17][file:18]
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -316,18 +325,16 @@ D) Table VII.G.1
 
 A 1,000 sq.m Basic R-2 lot **without** firewall is fully maximized for both building footprint and paved open areas. What is the minimum area that must remain unpaved (USA)?
 
-A) 100 sq.m  
-B) 150 sq.m  
-C) 300 sq.m  
+A) 100 sq.m
+B) 150 sq.m
+C) 300 sq.m
 D) 450 sq.m
 
-<Accordion>
-  <summary><b>Click to reveal the answer</b></summary>
-  <br>
-  <b>Correct Answer: B — 150 sq.m</b><br><br>
-  Basic R-2, no firewall: USA = 15% (from Table VIII.1).<br>
-  USA area = 1,000 x 0.15 = 150 sq.m.[file:17]
-</Accordion>
+[SLATECAMP_UI_BLOCK:ui_0005 component="Accordion" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Click to reveal the answer Correct Answer: B — 150 sq.m Basic R-2, no firewall: USA = 15% (from Table VIII.1). USA area = 1,000 x 0.15 = 150 sq.m.[file:17]
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -335,17 +342,16 @@ D) 450 sq.m
 
 Table VIII.1 gives PSO = 70% for Max R-2 with firewall. Table VII.1 gives PSO = 65% for the same occupancy, lot type and height. Which PSO must be used?
 
-A) 70% — Table VIII.1 is the primary table.  
-B) 65% — the more restrictive value governs.  
-C) Either, at the architect’s discretion.  
+A) 70% — Table VIII.1 is the primary table.
+B) 65% — the more restrictive value governs.
+C) Either, at the architect’s discretion.
 D) 70% — firewall entitlement overrides lot-type limitations.
 
-<Accordion>
-  <summary><b>Click to reveal the answer</b></summary>
-  <br>
-  <b>Correct Answer: B</b><br><br>
-  Rule VII, Sec. 704.4.a requires that where multiple applicable controls differ, the **more stringent** (more restrictive) value governs. Here, 65% PSO is more restrictive than 70%.[file:17]
-</Accordion>
+[SLATECAMP_UI_BLOCK:ui_0006 component="Accordion" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Click to reveal the answer Correct Answer: B Rule VII, Sec. 704.4.a requires that where multiple applicable controls differ, the **more stringent** (more restrictive) value governs. Here, 65% PSO is more restrictive than 70%.[file:17]
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -364,20 +370,11 @@ Answer aloud, then check.
 9. Formula to convert PSO % into AMBF (sq.m)?
 10. Com-3 with firewall: PSO = \_\_\_%.
 
-<Accordion>
-<summary><b>Reveal Answers</b></summary>
-<br>
-1. <b>100%</b><br>
-2. <b>ISA + USA</b><br>
-3. <b>PSO + ISA</b><br>
-4. <b>55%</b><br>
-5. <b>15%</b><br>
-6. <b>Table VII.1</b><br>
-7. <b>True</b> — USA is identified as “the true open space”.[file:17]<br>
-8. <b>85%</b><br>
-9. <b>AMBF = TLA x PSO</b><br>
-10. <b>90%</b>[file:17]
-</Accordion>
+[SLATECAMP_UI_BLOCK:ui_0007 component="Accordion" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Reveal Answers 1. 100% 2. ISA + USA 3. PSO + ISA 4. 55% 5. 15% 6. Table VII.1 7. True — USA is identified as “the true open space”.[file:17] 8. 85% 9. AMBF = TLA x PSO 10. 90% [file:17]
+[/SLATECAMP_UI_BLOCK]
 
 ---
 

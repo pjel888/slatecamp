@@ -1,9 +1,113 @@
 {
   "article_id": "6659e8a6-d013-4f2e-9711-b37269c069a3",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:6c1b9e314ce1389d5239dac4e44408212307888f97d7b5f2e5030d0e4e000d77",
+  "linked_questions_hash": "sha256:f3b52c7e193d1765fa533aa12161cbecbf36dab5503d5e07c31321f5bba17151",
   "question_count": 14,
   "questions": [
+    {
+      "question_id": "6c364c0b-644b-44a1-ad42-1f37ad82443a",
+      "article_id": "6659e8a6-d013-4f2e-9711-b37269c069a3",
+      "topic_id": "78f3b1c4-5ba4-4b21-83a2-453b5f847a9d",
+      "text": "Comparing Western (Hall) and high-context cultural proxemic norms, which statement is accurate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Western cultures prefer closer personal and social distances than high-context cultures, reflecting individualistic social structures"
+        },
+        {
+          "id": "b",
+          "text": "Proxemic distances have no cultural variation; they are biologically universal and consistent across all human societies"
+        },
+        {
+          "id": "c",
+          "text": "Both cultures maintain identical distance preferences across all proxemic zones, showing no significant differences"
+        },
+        {
+          "id": "d",
+          "text": "High-context cultures (Latin American, Mediterranean, Middle Eastern) typically prefer closer interpersonal distances than Western cultures"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This is the opposite of documented cultural patterns",
+        "b": "Hall's fundamental finding is that proxemic distances are culturally learned, not biologically determined",
+        "c": "Hall's research specifically documents systematic cultural variation in distance preferences",
+        "correct": "Research demonstrates that high-context cultures typically show comfort with closer distances; Western low-context cultures prefer greater separation",
+        "takeaway": "Research demonstrates that high-context cultures typically show comfort with closer distances; Western low-context cultures prefer greater separation."
+      },
+      "explanation": "This is the opposite of documented cultural patterns Hall's fundamental finding is that proxemic distances are culturally learned, not biologically determined Hall's research specifically documents systematic cultural variation in distance preferences Research demonstrates that high-context cultures typically show comfort with closer distances; Western low-context cultures prefer greater separation Research demonstrates that high-context cultures typically show comfort with closer distances; Western low-context cultures prefer greater separation.",
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-02-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.884733+00:00",
+      "updated_at": "2026-05-06T11:57:23.488659+00:00",
+      "content_hash": "sha256:426c7f3320fc6042401645b32d15fe4279928c6b28b52e53bb2d919448372f40"
+    },
+    {
+      "question_id": "2c3d6a3f-5384-4c09-8d85-82aba9abc357",
+      "article_id": "6659e8a6-d013-4f2e-9711-b37269c069a3",
+      "topic_id": "78f3b1c4-5ba4-4b21-83a2-453b5f847a9d",
+      "text": "Proxemics is best defined as:",
+      "options": [
+        {
+          "id": "a",
+          "text": "The study of how people use and perceive space, including invisible boundaries that signal social relationship"
+        },
+        {
+          "id": "b",
+          "text": "The study of sound transmission and acoustic control in architectural spaces, which is crucial for designing auditoriums"
+        },
+        {
+          "id": "c",
+          "text": "The principles governing visual perception and spatial organization in buildings, which are essential for effective design"
+        },
+        {
+          "id": "d",
+          "text": "The measurement of human body dimensions and their application to building design, which is a key aspect of ergonomics"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "This describes acoustic design, not proxemics",
+        "c": "This describes gestalt psychology or environmental perception, not proxemics",
+        "d": "This describes anthropometrics, not proxemics",
+        "correct": "Proxemics, developed by Edward T. Hall, studies invisible spatial boundaries and cultural distance preferences in human interaction",
+        "takeaway": "Hall, studies invisible spatial boundaries and cultural distance preferences in human interaction."
+      },
+      "explanation": "This describes acoustic design, not proxemics This describes gestalt psychology or environmental perception, not proxemics This describes anthropometrics, not proxemics Proxemics, developed by Edward T. Hall, studies invisible spatial boundaries and cultural distance preferences in human interaction Hall, studies invisible spatial boundaries and cultural distance preferences in human interaction.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-02-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.884733+00:00",
+      "updated_at": "2026-05-06T11:57:22.645714+00:00",
+      "content_hash": "sha256:82061c2e1e129eb7af71e1672c0000ae77dc3339b201c5bbbeae172e9d704861"
+    },
     {
       "question_id": "87430c02-b22d-46b5-9add-e2ff142db1b2",
       "article_id": "6659e8a6-d013-4f2e-9711-b37269c069a3",
@@ -369,58 +473,6 @@
       "content_hash": "sha256:88626c36f6ee65eb7856c7c4ab0ae94cb3e4951c9070c384853ec7bee6913402"
     },
     {
-      "question_id": "2c3d6a3f-5384-4c09-8d85-82aba9abc357",
-      "article_id": "6659e8a6-d013-4f2e-9711-b37269c069a3",
-      "topic_id": "78f3b1c4-5ba4-4b21-83a2-453b5f847a9d",
-      "text": "Proxemics is best defined as:",
-      "options": [
-        {
-          "id": "a",
-          "text": "The study of how people use and perceive space, including invisible boundaries that signal social relationship"
-        },
-        {
-          "id": "b",
-          "text": "The study of sound transmission and acoustic control in architectural spaces, which is crucial for designing auditoriums"
-        },
-        {
-          "id": "c",
-          "text": "The principles governing visual perception and spatial organization in buildings, which are essential for effective design"
-        },
-        {
-          "id": "d",
-          "text": "The measurement of human body dimensions and their application to building design, which is a key aspect of ergonomics"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "b": "This describes acoustic design, not proxemics",
-        "c": "This describes gestalt psychology or environmental perception, not proxemics",
-        "d": "This describes anthropometrics, not proxemics",
-        "correct": "Proxemics, developed by Edward T. Hall, studies invisible spatial boundaries and cultural distance preferences in human interaction",
-        "takeaway": "Hall, studies invisible spatial boundaries and cultural distance preferences in human interaction."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [
-        "DEF"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-003-02-001",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:760fd920f4191601d7728507a08f8f4f492dc692d8f9ca329bed9008a74e7e29"
-    },
-    {
       "question_id": "8faeba60-9f6a-4e5a-91fa-737370ff8831",
       "article_id": "6659e8a6-d013-4f2e-9711-b37269c069a3",
       "topic_id": "78f3b1c4-5ba4-4b21-83a2-453b5f847a9d",
@@ -523,58 +575,6 @@
       "created_at": "2026-03-23T19:27:53.884733+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:37fa3d0d195fecfbf056761bbe2e9fcf7c3c02f74522bc641110d71b106b8217"
-    },
-    {
-      "question_id": "6c364c0b-644b-44a1-ad42-1f37ad82443a",
-      "article_id": "6659e8a6-d013-4f2e-9711-b37269c069a3",
-      "topic_id": "78f3b1c4-5ba4-4b21-83a2-453b5f847a9d",
-      "text": "Comparing Western (Hall) and high-context cultural proxemic norms, which statement is accurate?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Western cultures prefer closer personal and social distances than high-context cultures, reflecting individualistic social structures"
-        },
-        {
-          "id": "b",
-          "text": "Proxemic distances have no cultural variation; they are biologically universal and consistent across all human societies"
-        },
-        {
-          "id": "c",
-          "text": "Both cultures maintain identical distance preferences across all proxemic zones, showing no significant differences"
-        },
-        {
-          "id": "d",
-          "text": "High-context cultures (Latin American, Mediterranean, Middle Eastern) typically prefer closer interpersonal distances than Western cultures"
-        }
-      ],
-      "correct_option_id": "d",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "This is the opposite of documented cultural patterns",
-        "b": "Hall's fundamental finding is that proxemic distances are culturally learned, not biologically determined",
-        "c": "Hall's research specifically documents systematic cultural variation in distance preferences",
-        "correct": "Research demonstrates that high-context cultures typically show comfort with closer distances; Western low-context cultures prefer greater separation",
-        "takeaway": "Research demonstrates that high-context cultures typically show comfort with closer distances; Western low-context cultures prefer greater separation."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "analyze",
-      "application_context": "design_application",
-      "practice_context": [
-        "CMP"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-003-02-008",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:798700409510d041c462280084a72dc6b1bc3a06b3ed2ed398c872ea13a5758b"
     },
     {
       "question_id": "42eb64fa-499b-4143-b951-5efa7a6163c5",

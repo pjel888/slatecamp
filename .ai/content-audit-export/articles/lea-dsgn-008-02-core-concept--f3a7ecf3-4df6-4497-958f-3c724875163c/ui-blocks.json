@@ -1,114 +1,14 @@
 {
   "article_id": "f3a7ecf3-4df6-4497-958f-3c724875163c",
   "slug": "lea-dsgn-008-02-core-concept",
-  "normalized_created_at": "2026-05-04T09:10:36.160Z",
+  "normalized_created_at": "2026-05-09T04:02:57.590Z",
   "parser_version": "ui-block-parser-v1",
-  "original_content_hash": "sha256:db88d8888b93dfcd4a9f9f447484b0e7fb31c57de3e191e6f14e5dc9548aeb6e",
-  "normalized_content_hash": "sha256:9255a875a072d87f41593e3d2f6977b95ff05012019565b40e74709bb1922725",
-  "ui_block_count": 3,
-  "total_blocks": 3,
-  "blocks": [
-    {
-      "block_id": "ui_0001",
-      "block_type": "mdx_component",
-      "component_name": "ArticleMedia",
-      "raw": "<ArticleMedia id=\"media-lea-dsgn-008-02-core-concept\" type=\"image\" caption=\"Fire-Rated Separation — Wall and Floor Assembly Ratings\" description=\"Cross-section diagram of fire-rated assemblies: fire walls, fire barriers, fire partitions, horizontal assemblies, and shaft enclosures. Hourly ratings (1-hr to 4-hr) shown with construction type and opening protection requirements per RA 9514.\" suggestedAsset=\"Diagram or reference image\" status=\"placeholder\" />",
-      "raw_hash": "sha256:5c92ed6bf69bc2631b1c70534712da633c709f22a6c37f07d7d6665ffe38ccb0",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"ArticleMedia\" status=\"preserved\"]\nExtracted summary:\n- Props: id=\"media-lea-dsgn-008-02-core-concept\", type=\"image\", caption=\"Fire-Rated Separation — Wall and Floor Assembly Ratings\", description=\"Cross-section diagram of fire-rated assemblies: fire walls, fire barriers, fire partitions, horizontal assemblies, and shaft enclosures. Hourly ratings (1-hr to 4-hr) shown with construction type and opening protection requirements per RA 9514.\", suggestedAsset=\"Diagram or reference image\", status=\"placeholder\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:6303a6842727e5a8016565758d0ec498543290e8e9f3863683f9aa3bb1712d89",
-      "props": {
-        "id": "media-lea-dsgn-008-02-core-concept",
-        "type": "image",
-        "caption": "Fire-Rated Separation — Wall and Floor Assembly Ratings",
-        "description": "Cross-section diagram of fire-rated assemblies: fire walls, fire barriers, fire partitions, horizontal assemblies, and shaft enclosures. Hourly ratings (1-hr to 4-hr) shown with construction type and opening protection requirements per RA 9514.",
-        "suggestedAsset": "Diagram or reference image",
-        "status": "placeholder"
-      },
-      "props_json": {
-        "id": "media-lea-dsgn-008-02-core-concept",
-        "type": "image",
-        "caption": "Fire-Rated Separation — Wall and Floor Assembly Ratings",
-        "description": "Cross-section diagram of fire-rated assemblies: fire walls, fire barriers, fire partitions, horizontal assemblies, and shaft enclosures. Hourly ratings (1-hr to 4-hr) shown with construction type and opening protection requirements per RA 9514.",
-        "suggestedAsset": "Diagram or reference image",
-        "status": "placeholder"
-      },
-      "props_text": "id=\"media-lea-dsgn-008-02-core-concept\" type=\"image\" caption=\"Fire-Rated Separation — Wall and Floor Assembly Ratings\" description=\"Cross-section diagram of fire-rated assemblies: fire walls, fire barriers, fire partitions, horizontal assemblies, and shaft enclosures. Hourly ratings (1-hr to 4-hr) shown with construction type and opening protection requirements per RA 9514.\" suggestedAsset=\"Diagram or reference image\" status=\"placeholder\"",
-      "children_raw": null,
-      "children_text": null,
-      "start_offset": 1802,
-      "end_offset": 2261,
-      "line_start": 21,
-      "line_end": 21,
-      "parser_confidence": "high",
-      "parse_status": "parsed",
-      "warnings": [],
-      "status": "preserved"
-    },
-    {
-      "block_id": "ui_0002",
-      "block_type": "mdx_component",
-      "component_name": "ArticleMedia",
-      "raw": "<ArticleMedia id=\"media-lea-dsgn-008-02-core-concept\" type=\"image\" caption=\"Fire-Resistive Construction — Hourly Ratings by Building Element\" description=\"Cutaway building section showing fire-resistive ratings per PD 1096 for: structural frame (1-4 hrs depending on Type), fire walls (2-4 hr separation), floor/celling assemblies, shaft enclosures, and opening protectives (fire doors, dampers). Occupancy-based rating requirements cross-referenced.\" suggestedAsset=\"Diagram or reference image\" status=\"placeholder\" />",
-      "raw_hash": "sha256:775baa677a363e7414ac6cc06c8263967f439650b686d71d5304d8c695bac662",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"ArticleMedia\" status=\"preserved\"]\nExtracted summary:\n- Props: id=\"media-lea-dsgn-008-02-core-concept\", type=\"image\", caption=\"Fire-Resistive Construction — Hourly Ratings by Building Element\", description=\"Cutaway building section showing fire-resistive ratings per PD 1096 for: structural frame (1-4 hrs depending on Type), fire walls (2-4 hr separation), floor/celling assemblies, shaft enclosures, and opening protectives (fire doors, dampers). Occupancy-based rating requirements cross-referenced.\", suggestedAsset=\"Diagram or reference image\", status=\"placeholder\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:6a10955322dbb7edf7e5b1aee49a004f072a51a10252be7401cb841442bbc9bc",
-      "props": {
-        "id": "media-lea-dsgn-008-02-core-concept",
-        "type": "image",
-        "caption": "Fire-Resistive Construction — Hourly Ratings by Building Element",
-        "description": "Cutaway building section showing fire-resistive ratings per PD 1096 for: structural frame (1-4 hrs depending on Type), fire walls (2-4 hr separation), floor/celling assemblies, shaft enclosures, and opening protectives (fire doors, dampers). Occupancy-based rating requirements cross-referenced.",
-        "suggestedAsset": "Diagram or reference image",
-        "status": "placeholder"
-      },
-      "props_json": {
-        "id": "media-lea-dsgn-008-02-core-concept",
-        "type": "image",
-        "caption": "Fire-Resistive Construction — Hourly Ratings by Building Element",
-        "description": "Cutaway building section showing fire-resistive ratings per PD 1096 for: structural frame (1-4 hrs depending on Type), fire walls (2-4 hr separation), floor/celling assemblies, shaft enclosures, and opening protectives (fire doors, dampers). Occupancy-based rating requirements cross-referenced.",
-        "suggestedAsset": "Diagram or reference image",
-        "status": "placeholder"
-      },
-      "props_text": "id=\"media-lea-dsgn-008-02-core-concept\" type=\"image\" caption=\"Fire-Resistive Construction — Hourly Ratings by Building Element\" description=\"Cutaway building section showing fire-resistive ratings per PD 1096 for: structural frame (1-4 hrs depending on Type), fire walls (2-4 hr separation), floor/celling assemblies, shaft enclosures, and opening protectives (fire doors, dampers). Occupancy-based rating requirements cross-referenced.\" suggestedAsset=\"Diagram or reference image\" status=\"placeholder\"",
-      "children_raw": null,
-      "children_text": null,
-      "start_offset": 4348,
-      "end_offset": 4867,
-      "line_start": 60,
-      "line_end": 60,
-      "parser_confidence": "high",
-      "parse_status": "parsed",
-      "warnings": [],
-      "status": "preserved"
-    },
-    {
-      "block_id": "ui_0003",
-      "block_type": "mdx_component",
-      "component_name": "WikiMistakeList",
-      "raw": "<WikiMistakeList\n mistakes={[\n 'ERR-DSGN-023: Claiming exit stairs do not need fire-rated walls (they need 2-hour walls).',\n 'ERR-DSGN-020: Confusing fire-ratings (hours) with travel distance (meters).',\n 'Applying 1-hour corridor ratings to 2-hour exit enclosures.',\n 'Installing a 1-hour door in a 2-hour Occupancy Separation wall (requires 1.5-hour door).',\n 'Failing to specify 4-hour ratings for Group G High-Hazard enclosures.',\n ]}\n/>",
-      "raw_hash": "sha256:e14dda2520ac210412026595c7e58377cfef76fea62482f2cdf5ab1e99211c84",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: mistakes=\"{[\\n 'ERR-DSGN-023: Claiming exit stairs do not need fire-rated walls (they need 2-hour walls).',\\n 'ERR-DSGN-020: Confusing fire-ratings (hours) with travel distance (meters).',\\n 'Applying 1-hour corridor ratings to 2-hour exit enclosures.',\\n 'Installing a 1-hour door in a 2-hour Occupancy Separation wall (requires 1.5-hour door).',\\n 'Failing to specify 4-hour ratings for Group G High-Hazard enclosures.',\\n ]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:ee9937813712797cd09198f8ff812fa0cf6e792eea234666b88400c2b0990a5f",
-      "props": {
-        "mistakes": "{[\n 'ERR-DSGN-023: Claiming exit stairs do not need fire-rated walls (they need 2-hour walls).',\n 'ERR-DSGN-020: Confusing fire-ratings (hours) with travel distance (meters).',\n 'Applying 1-hour corridor ratings to 2-hour exit enclosures.',\n 'Installing a 1-hour door in a 2-hour Occupancy Separation wall (requires 1.5-hour door).',\n 'Failing to specify 4-hour ratings for Group G High-Hazard enclosures.',\n ]}"
-      },
-      "props_json": {
-        "mistakes": "{[\n 'ERR-DSGN-023: Claiming exit stairs do not need fire-rated walls (they need 2-hour walls).',\n 'ERR-DSGN-020: Confusing fire-ratings (hours) with travel distance (meters).',\n 'Applying 1-hour corridor ratings to 2-hour exit enclosures.',\n 'Installing a 1-hour door in a 2-hour Occupancy Separation wall (requires 1.5-hour door).',\n 'Failing to specify 4-hour ratings for Group G High-Hazard enclosures.',\n ]}"
-      },
-      "props_text": "mistakes={[\n 'ERR-DSGN-023: Claiming exit stairs do not need fire-rated walls (they need 2-hour walls).',\n 'ERR-DSGN-020: Confusing fire-ratings (hours) with travel distance (meters).',\n 'Applying 1-hour corridor ratings to 2-hour exit enclosures.',\n 'Installing a 1-hour door in a 2-hour Occupancy Separation wall (requires 1.5-hour door).',\n 'Failing to specify 4-hour ratings for Group G High-Hazard enclosures.',\n ]}",
-      "children_raw": null,
-      "children_text": null,
-      "start_offset": 5145,
-      "end_offset": 5586,
-      "line_start": 68,
-      "line_end": 76,
-      "parser_confidence": "high",
-      "parse_status": "parsed",
-      "warnings": [],
-      "status": "preserved"
-    }
-  ],
+  "original_content_hash": "sha256:a59d627dc4f5f0ecad81c788276805606e7e35baf8d5fc8bcb7202c4d808b7c3",
+  "normalized_content_hash": "sha256:a59d627dc4f5f0ecad81c788276805606e7e35baf8d5fc8bcb7202c4d808b7c3",
+  "ui_block_count": 0,
+  "total_blocks": 0,
+  "blocks": [],
   "unknown_blocks": [],
   "unresolved_critical_blocks": [],
-  "ui_blocks_hash": "sha256:fba66fdac8c815b57c038410bbc3b3a2875aef4d4f1b4308127ee406a40d756f",
-  "normalized_content_hash_sha256": "sha256:9255a875a072d87f41593e3d2f6977b95ff05012019565b40e74709bb1922725"
+  "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
 }

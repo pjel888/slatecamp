@@ -1,30 +1,30 @@
 {
   "article_id": "72e04c5e-3e4c-4715-93a0-734bdf6dcbee",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:07f986179cf56f1e25fa7dabe44531c12af8b8298369efa0634852309082d93d",
+  "linked_questions_hash": "sha256:5c2e19d4d049f02eeb4e93373f470da0c335bf461ce6292f8ece07d81ea0dfd3",
   "question_count": 10,
   "questions": [
     {
-      "question_id": "f3c6dcbe-28ad-44e1-8143-b4a6146c9e43",
+      "question_id": "ee917ef7-76bc-4ab2-8d28-8fb7b65dcc0f",
       "article_id": "72e04c5e-3e4c-4715-93a0-734bdf6dcbee",
       "topic_id": "c3996fe0-682a-43b0-adba-b829bb78b40e",
-      "text": "A shopping mall in a coastal typhoon zone specifies standard stainless steel hardware for all entry doors. What is the primary concern with this specification?",
+      "text": "Which type of lockset provides the best security and is mandatory for Grade 1 commercial applications?",
       "options": [
         {
           "id": "a",
-          "text": "Stainless steel is more expensive than other materials, which may impact the overall budget allocation for the project"
+          "text": "Cylindrical lock"
         },
         {
           "id": "b",
-          "text": "Standard stainless steel may corrode under salt spray exposure; saltwater-grade (duplex stainless or super-duplex) certification is required."
+          "text": "Mortise lock"
         },
         {
           "id": "c",
-          "text": "Stainless steel is incompatible with aluminum door frames, potentially leading to galvanic corrosion if not properly isolated"
+          "text": "Push-button lock"
         },
         {
           "id": "d",
-          "text": "Stainless steel hardware requires more frequent maintenance due to potential surface staining in harsh environments"
+          "text": "Deadbolt-only lock"
         }
       ],
       "correct_option_id": "b",
@@ -33,114 +33,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Cost is a business concern, not a code requirement.",
-        "c": "Stainless steel is compatible with aluminum; they are often used together.",
-        "d": "Proper stainless hardware requires less, not more, maintenance.",
-        "correct": "Coastal environments expose hardware to salt spray, which causes crevice corrosion and pitting in standard stainless steel (304/316 grades). Saltwater-grade hardware (duplex 2205 or super-duplex) resists this attack. This is critical for Philippine typhoon zones.",
-        "takeaway": "Coastal regions require saltwater-grade hardware certification; do not assume standard stainless is sufficient."
+        "a": "Cylindrical locks are faster to install but offer lower security; typical for Grade 2-3 applications.",
+        "c": "Push-button locks are specialty hardware; not standard for commercial grades.",
+        "d": "Deadbolt-only locks lack a latch mechanism for automatic closure.",
+        "correct": "Mortise locks have separate latch and deadbolt mechanisms housed in the frame, providing superior security and durability compared to cylindrical locks (all components in the knob). Grade 1 commercial can be either mortise or cylindrical if certified.",
+        "takeaway": "Mortise lock = Grade 1 commercial; Cylindrical lock = Grade 2-3 residential or light commercial."
       },
-      "explanation": null,
-      "code_citation": "General corrosion resistance practice for coastal areas (NSCP 2015 materials provisions)",
-      "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-MATL-008-01-009",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:28.473222+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:58814c5086268e2e79584b4e919cf342f59b3e66e23881e51d17d05875ee1ad7"
-    },
-    {
-      "question_id": "3c42003d-f148-4331-9694-9f86f067021a",
-      "article_id": "72e04c5e-3e4c-4715-93a0-734bdf6dcbee",
-      "topic_id": "c3996fe0-682a-43b0-adba-b829bb78b40e",
-      "text": "What is the primary advantage of continuous (piano) hinges over butt hinges?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Continuous hinges are cheaper to install, although this may vary depending on the specific application and material costs"
-        },
-        {
-          "id": "b",
-          "text": "Continuous hinges distribute load evenly along the full door height, preferred for fire-rated doors."
-        },
-        {
-          "id": "c",
-          "text": "Continuous hinges allow the door to swing in both directions, which is beneficial in certain design scenarios but not universally applicable"
-        },
-        {
-          "id": "d",
-          "text": "Continuous hinges hide the hinge hardware completely, providing a cleaner aesthetic but not necessarily a functional advantage"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Continuous hinges are typically more expensive due to their length and fabrication.",
-        "c": "Neither hinge type allows bidirectional swing without additional hardware.",
-        "d": "Continuous hinges are visible on the edge of the door; concealed hinges hide the mechanism.",
-        "correct": "Continuous hinges extend the full door height, distributing stress along the entire hinge length rather than at discrete points (butt hinge locations). This is essential for heavy doors and fire-rated assemblies.",
-        "takeaway": "Continuous hinges = load distribution; use them for heavy doors and fire-rated assemblies."
-      },
-      "explanation": null,
+      "explanation": "Cylindrical locks are faster to install but offer lower security; typical for Grade 2-3 applications. Push-button locks are specialty hardware; not standard for commercial grades. Deadbolt-only locks lack a latch mechanism for automatic closure. Mortise locks have separate latch and deadbolt mechanisms housed in the frame, providing superior security and durability compared to cylindrical locks (all components in the knob). Grade 1 commercial can be either mortise or cylindrical if certified. Mortise lock = Grade 1 commercial; Cylindrical lock = Grade 2-3 residential or light commercial.",
       "code_citation": "ANSI/BHMA Standards for Builders Hardware",
-      "bloom_level": "understand",
-      "application_context": "recall",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-MATL-008-01-005",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:28.473222+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:31d9bb4f1464a21460f43e519cb601f0dacc7af9eb2208d33c1d58f506accff1"
-    },
-    {
-      "question_id": "459a1bba-4de2-4235-94c5-13c15a5f9294",
-      "article_id": "72e04c5e-3e4c-4715-93a0-734bdf6dcbee",
-      "topic_id": "c3996fe0-682a-43b0-adba-b829bb78b40e",
-      "text": "During LEA exam analysis, a hospital project specifies 50-pound frameless glass doors with a single Grade 1 butt hinge pair (1,500 lbf total capacity). Is this specification adequate?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Yes, because 1,500 lbf exceeds the 50-pound door weight, providing adequate load capacity for the hinge connection."
-        },
-        {
-          "id": "b",
-          "text": "No, because frameless glass doors require pivot hinges, and butt hinges cannot support the concentrated load at the hinge mortises."
-        },
-        {
-          "id": "c",
-          "text": "Yes, because Grade 1 butt hinges are the strongest available and suitable for all door types regardless of material or mounting."
-        },
-        {
-          "id": "d",
-          "text": "No, because the hinge capacity must be at least twice the door weight for safety, and 1,500 lbf is insufficient margin."
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Capacity is adequate in theory, but hinge type is wrong for the application.",
-        "c": "Grade 1 capacity is high, but wrong hinge type for glass.",
-        "d": "Safety factor is not the issue; application-specific hinge selection is.",
-        "correct": "Although 1,500 lbf capacity exceeds the door weight, frameless glass doors have no frame to mortise butt hinges into. Pivot hinges are specifically designed for this application, with top and bottom support. Using butt hinges on glass creates a glass failure hazard.",
-        "takeaway": "Hinge selection must match application: butt for wood doors, pivot for glass doors, regardless of load capacity."
-      },
-      "explanation": null,
-      "code_citation": "ANSI/BHMA Standards for Builders Hardware and LEA exam design principles",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [],
@@ -148,11 +48,11 @@
       "difficulty_rating": null,
       "discrimination_rating": null,
       "is_assessment": false,
-      "model_id": "ALE-MATL-008-01-010",
+      "model_id": "ALE-MATL-008-01-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.473222+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:92a201f37b8c23a85706db9cbe70e52f9e9f6021c6ef888c47eebe37917eee82"
+      "updated_at": "2026-05-06T15:46:02.468383+00:00",
+      "content_hash": "sha256:e3ad7048d3e849e35014c815e2549dfa4a270476a71dac67bffb156754939ee3"
     },
     {
       "question_id": "c068c19d-7e23-450c-bdbc-53852432cf2a",
@@ -189,7 +89,7 @@
         "correct": "Grade 1 hardware is rated for a minimum of 1,000,000 cycles, the highest BHMA performance tier for heavy commercial applications.",
         "takeaway": "Memorize the cycle counts: Grade 1 = 1,000,000, Grade 2 = 400,000–800,000, Grade 3 = 200,000."
       },
-      "explanation": null,
+      "explanation": "200,000 cycles is the Grade 3 residential threshold. 400,000 cycles is the minimum for Grade 2 medium-duty threshold. 800,000 cycles is a possible Grade 2 rating, but Grade 1 requires 1,000,000 cycles. Grade 1 hardware is rated for a minimum of 1,000,000 cycles, the highest BHMA performance tier for heavy commercial applications. Memorize the cycle counts: Grade 1 = 1,000,000, Grade 2 = 400,000–800,000, Grade 3 = 200,000.",
       "code_citation": "ANSI/BHMA Standards for Builders Hardware",
       "bloom_level": "understand",
       "application_context": "calculation",
@@ -201,8 +101,208 @@
       "model_id": "ALE-MATL-008-01-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.473222+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:de74b783a203178365e93aae64264f8e9378c0d31a06fc428b8f98b2ba972ced"
+      "updated_at": "2026-05-06T15:46:02.232864+00:00",
+      "content_hash": "sha256:6832d9ae3922ad0e8aaa5ddf4cba946f9c7aea98d7634a981c49295806a27f01"
+    },
+    {
+      "question_id": "f3c6dcbe-28ad-44e1-8143-b4a6146c9e43",
+      "article_id": "72e04c5e-3e4c-4715-93a0-734bdf6dcbee",
+      "topic_id": "c3996fe0-682a-43b0-adba-b829bb78b40e",
+      "text": "A shopping mall in a coastal typhoon zone specifies standard stainless steel hardware for all entry doors. What is the primary concern with this specification?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Stainless steel is more expensive than other materials, which may impact the overall budget allocation for the project"
+        },
+        {
+          "id": "b",
+          "text": "Standard stainless steel may corrode under salt spray exposure; saltwater-grade (duplex stainless or super-duplex) certification is required."
+        },
+        {
+          "id": "c",
+          "text": "Stainless steel is incompatible with aluminum door frames, potentially leading to galvanic corrosion if not properly isolated"
+        },
+        {
+          "id": "d",
+          "text": "Stainless steel hardware requires more frequent maintenance due to potential surface staining in harsh environments"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Cost is a business concern, not a code requirement.",
+        "c": "Stainless steel is compatible with aluminum; they are often used together.",
+        "d": "Proper stainless hardware requires less, not more, maintenance.",
+        "correct": "Coastal environments expose hardware to salt spray, which causes crevice corrosion and pitting in standard stainless steel (304/316 grades). Saltwater-grade hardware (duplex 2205 or super-duplex) resists this attack. This is critical for Philippine typhoon zones.",
+        "takeaway": "Coastal regions require saltwater-grade hardware certification; do not assume standard stainless is sufficient."
+      },
+      "explanation": "Cost is a business concern, not a code requirement. Stainless steel is compatible with aluminum; they are often used together. Proper stainless hardware requires less, not more, maintenance. Coastal environments expose hardware to salt spray, which causes crevice corrosion and pitting in standard stainless steel (304/316 grades). Saltwater-grade hardware (duplex 2205 or super-duplex) resists this attack. This is critical for Philippine typhoon zones. Coastal regions require saltwater-grade hardware certification; do not assume standard stainless is sufficient.",
+      "code_citation": "General corrosion resistance practice for coastal areas (NSCP 2015 materials provisions)",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-008-01-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-05-06T15:46:01.719798+00:00",
+      "content_hash": "sha256:83a70713f9950a9ceb29baeb0a777ec7fef946398a1fe552036b86f848c45ea6"
+    },
+    {
+      "question_id": "7dee3af4-e6b5-4ea8-8fde-2608e2e41713",
+      "article_id": "72e04c5e-3e4c-4715-93a0-734bdf6dcbee",
+      "topic_id": "c3996fe0-682a-43b0-adba-b829bb78b40e",
+      "text": "Which hinge type is best suited for supporting heavy glass doors?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Butt hinges"
+        },
+        {
+          "id": "b",
+          "text": "Pivot hinges"
+        },
+        {
+          "id": "c",
+          "text": "Concealed hinges"
+        },
+        {
+          "id": "d",
+          "text": "Spring hinges"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Butt hinges are for standard wooden doors; they cannot support glass doors without a substantial frame.",
+        "c": "Concealed hinges are hidden within the door but are not rated for glass door loads.",
+        "d": "Spring hinges are for automatic closure, not weight support.",
+        "correct": "Pivot hinges mount at the top and bottom of the door frame, supporting the full weight of heavy or frameless glass doors through a top-mounted pivot mechanism. Butt hinges cannot support glass door frames effectively.",
+        "takeaway": "Pivot hinges = heavy/glass doors; butt hinges = standard wood doors."
+      },
+      "explanation": "Butt hinges are for standard wooden doors; they cannot support glass doors without a substantial frame. Concealed hinges are hidden within the door but are not rated for glass door loads. Spring hinges are for automatic closure, not weight support. Pivot hinges mount at the top and bottom of the door frame, supporting the full weight of heavy or frameless glass doors through a top-mounted pivot mechanism. Butt hinges cannot support glass door frames effectively. Pivot hinges = heavy/glass doors; butt hinges = standard wood doors.",
+      "code_citation": "ANSI/BHMA Standards for Builders Hardware",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-008-01-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-05-06T15:46:02.603991+00:00",
+      "content_hash": "sha256:9b6ef8665ff56b65601ce3d5803b851e3236047923918d2519f7fdd876abf1d8"
+    },
+    {
+      "question_id": "3c42003d-f148-4331-9694-9f86f067021a",
+      "article_id": "72e04c5e-3e4c-4715-93a0-734bdf6dcbee",
+      "topic_id": "c3996fe0-682a-43b0-adba-b829bb78b40e",
+      "text": "What is the primary advantage of continuous (piano) hinges over butt hinges?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Continuous hinges are cheaper to install, although this may vary depending on the specific application and material costs"
+        },
+        {
+          "id": "b",
+          "text": "Continuous hinges distribute load evenly along the full door height, preferred for fire-rated doors."
+        },
+        {
+          "id": "c",
+          "text": "Continuous hinges allow the door to swing in both directions, which is beneficial in certain design scenarios but not universally applicable"
+        },
+        {
+          "id": "d",
+          "text": "Continuous hinges hide the hinge hardware completely, providing a cleaner aesthetic but not necessarily a functional advantage"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Continuous hinges are typically more expensive due to their length and fabrication.",
+        "c": "Neither hinge type allows bidirectional swing without additional hardware.",
+        "d": "Continuous hinges are visible on the edge of the door; concealed hinges hide the mechanism.",
+        "correct": "Continuous hinges extend the full door height, distributing stress along the entire hinge length rather than at discrete points (butt hinge locations). This is essential for heavy doors and fire-rated assemblies.",
+        "takeaway": "Continuous hinges = load distribution; use them for heavy doors and fire-rated assemblies."
+      },
+      "explanation": "Continuous hinges are typically more expensive due to their length and fabrication. Neither hinge type allows bidirectional swing without additional hardware. Continuous hinges are visible on the edge of the door; concealed hinges hide the mechanism. Continuous hinges extend the full door height, distributing stress along the entire hinge length rather than at discrete points (butt hinge locations). This is essential for heavy doors and fire-rated assemblies. Continuous hinges = load distribution; use them for heavy doors and fire-rated assemblies.",
+      "code_citation": "ANSI/BHMA Standards for Builders Hardware",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-008-01-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-05-06T15:46:01.952418+00:00",
+      "content_hash": "sha256:f40596099211afbd4611c847d29ba9083b8cd65c0b51a391f672f4773644d1d0"
+    },
+    {
+      "question_id": "459a1bba-4de2-4235-94c5-13c15a5f9294",
+      "article_id": "72e04c5e-3e4c-4715-93a0-734bdf6dcbee",
+      "topic_id": "c3996fe0-682a-43b0-adba-b829bb78b40e",
+      "text": "During LEA exam analysis, a hospital project specifies 50-pound frameless glass doors with a single Grade 1 butt hinge pair (1,500 lbf total capacity). Is this specification adequate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, because 1,500 lbf exceeds the 50-pound door weight, providing adequate load capacity for the hinge connection."
+        },
+        {
+          "id": "b",
+          "text": "No, because frameless glass doors require pivot hinges, and butt hinges cannot support the concentrated load at the hinge mortises."
+        },
+        {
+          "id": "c",
+          "text": "Yes, because Grade 1 butt hinges are the strongest available and suitable for all door types regardless of material or mounting."
+        },
+        {
+          "id": "d",
+          "text": "No, because the hinge capacity must be at least twice the door weight for safety, and 1,500 lbf is insufficient margin."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Capacity is adequate in theory, but hinge type is wrong for the application.",
+        "c": "Grade 1 capacity is high, but wrong hinge type for glass.",
+        "d": "Safety factor is not the issue; application-specific hinge selection is.",
+        "correct": "Although 1,500 lbf capacity exceeds the door weight, frameless glass doors have no frame to mortise butt hinges into. Pivot hinges are specifically designed for this application, with top and bottom support. Using butt hinges on glass creates a glass failure hazard.",
+        "takeaway": "Hinge selection must match application: butt for wood doors, pivot for glass doors, regardless of load capacity."
+      },
+      "explanation": "Capacity is adequate in theory, but hinge type is wrong for the application. Grade 1 capacity is high, but wrong hinge type for glass. Safety factor is not the issue; application-specific hinge selection is. Although 1,500 lbf capacity exceeds the door weight, frameless glass doors have no frame to mortise butt hinges into. Pivot hinges are specifically designed for this application, with top and bottom support. Using butt hinges on glass creates a glass failure hazard. Hinge selection must match application: butt for wood doors, pivot for glass doors, regardless of load capacity.",
+      "code_citation": "ANSI/BHMA Standards for Builders Hardware and LEA exam design principles",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-008-01-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-05-06T15:46:02.089945+00:00",
+      "content_hash": "sha256:9b2352e6c1180fd566667340ad1cb4bb24310cc2c2a02bd29fd218255c028d4c"
     },
     {
       "question_id": "76e589b2-5b3c-4ad9-82f3-55e9cffc2f1d",
@@ -305,56 +405,6 @@
       "content_hash": "sha256:f0edefbe6b49a3786a5144d4d704ae7a28b232bd430919f44861f5ac7c9d7b29"
     },
     {
-      "question_id": "ee917ef7-76bc-4ab2-8d28-8fb7b65dcc0f",
-      "article_id": "72e04c5e-3e4c-4715-93a0-734bdf6dcbee",
-      "topic_id": "c3996fe0-682a-43b0-adba-b829bb78b40e",
-      "text": "Which type of lockset provides the best security and is mandatory for Grade 1 commercial applications?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Cylindrical lock"
-        },
-        {
-          "id": "b",
-          "text": "Mortise lock"
-        },
-        {
-          "id": "c",
-          "text": "Push-button lock"
-        },
-        {
-          "id": "d",
-          "text": "Deadbolt-only lock"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Cylindrical locks are faster to install but offer lower security; typical for Grade 2-3 applications.",
-        "c": "Push-button locks are specialty hardware; not standard for commercial grades.",
-        "d": "Deadbolt-only locks lack a latch mechanism for automatic closure.",
-        "correct": "Mortise locks have separate latch and deadbolt mechanisms housed in the frame, providing superior security and durability compared to cylindrical locks (all components in the knob). Grade 1 commercial can be either mortise or cylindrical if certified.",
-        "takeaway": "Mortise lock = Grade 1 commercial; Cylindrical lock = Grade 2-3 residential or light commercial."
-      },
-      "explanation": null,
-      "code_citation": "ANSI/BHMA Standards for Builders Hardware",
-      "bloom_level": "apply",
-      "application_context": "design_application",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-MATL-008-01-007",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:28.473222+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:51a5b2a759cbda404ab120286b34c3efc79361c1de8ce1cec0e15681c4f50afd"
-    },
-    {
       "question_id": "9c9816fd-a7a9-4fd4-8f67-f9a930cd349e",
       "article_id": "72e04c5e-3e4c-4715-93a0-734bdf6dcbee",
       "topic_id": "c3996fe0-682a-43b0-adba-b829bb78b40e",
@@ -453,56 +503,6 @@
       "created_at": "2026-03-23T19:27:28.473222+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:6aa3208a6722967061b8a6d3a28da7a4bbd1653c9890befbdc4e5545c2bcb42e"
-    },
-    {
-      "question_id": "7dee3af4-e6b5-4ea8-8fde-2608e2e41713",
-      "article_id": "72e04c5e-3e4c-4715-93a0-734bdf6dcbee",
-      "topic_id": "c3996fe0-682a-43b0-adba-b829bb78b40e",
-      "text": "Which hinge type is best suited for supporting heavy glass doors?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Butt hinges"
-        },
-        {
-          "id": "b",
-          "text": "Pivot hinges"
-        },
-        {
-          "id": "c",
-          "text": "Concealed hinges"
-        },
-        {
-          "id": "d",
-          "text": "Spring hinges"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Butt hinges are for standard wooden doors; they cannot support glass doors without a substantial frame.",
-        "c": "Concealed hinges are hidden within the door but are not rated for glass door loads.",
-        "d": "Spring hinges are for automatic closure, not weight support.",
-        "correct": "Pivot hinges mount at the top and bottom of the door frame, supporting the full weight of heavy or frameless glass doors through a top-mounted pivot mechanism. Butt hinges cannot support glass door frames effectively.",
-        "takeaway": "Pivot hinges = heavy/glass doors; butt hinges = standard wood doors."
-      },
-      "explanation": null,
-      "code_citation": "ANSI/BHMA Standards for Builders Hardware",
-      "bloom_level": "understand",
-      "application_context": "recall",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-MATL-008-01-008",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:28.473222+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:2fcefa9d2094f50afd2f1446ab70744e9dc48d42396208058eb14314a061728e"
     }
   ]
 }

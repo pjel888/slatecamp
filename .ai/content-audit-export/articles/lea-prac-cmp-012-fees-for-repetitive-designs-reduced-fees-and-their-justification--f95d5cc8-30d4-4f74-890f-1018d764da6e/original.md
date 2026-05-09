@@ -1,3 +1,10 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Lea Prac Cmp 012 Fees For Repetitive Designs Reduced Fees And Their Justification** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
 ## Fees for Repetitive Designs — Reduced Fees and Their Justification
 
 ## Learning Goal
@@ -21,15 +28,23 @@ For repetitive design fee reduction to apply, the architect must first complete 
 
 The initial design establishes the building prototype, develops construction details, refines specifications, establishes building systems performance, and works through construction coordination issues. The architect's full design effort is expended during the initial design; this work is not reduced in fee.
 
-<ExamTip>
-  **LEA Priority — Fee Computation:** Know the five compensation methods (percentage-of-PCC, MDPE, lump sum, per diem/retainer, reimbursable expenses). Master the sliding scale for Groups 1-3 (5%→4%→3%→2%→1% for successive ₱50M brackets). Remember: DAEDS = all disciplines; DADS ≈ 60% of DAEDS (architecture only). Group 9 renovation = 150% of base group rate.
-</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0001 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **LEA Priority — Fee Computation:** Know the five compensation methods (percentage-of-PCC, MDPE, lump sum, per diem/retainer, reimbursable expenses). Master the sliding scale for Groups 1-3 (5%→4%→3%→2%→1% for successive ₱50M brackets). Remember: DAEDS = all disciplines; DADS ≈ 60% of DAEDS (architecture only). Group 9 renovation = 150% of base group rate.
+[/SLATECAMP_UI_BLOCK]
 
-<LawCallout code="irr" section="Architect's Guidelines / SPP 202" title="Fee Computation — Regulatory Basis">
-Fee computation under the Architect's Guidelines follows SPP 202 classification groups and the DAEDS/DADS framework. The percentage-of-PCC method applies group-specific rates to Project Construction Cost. MDPE uses direct personnel expense multiplied by an agreed factor. Lump-sum fees are negotiated based on scope. All methods must be documented in the owner-architect agreement.
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="irr", section="Architect's Guidelines / SPP 202", title="Fee Computation — Regulatory Basis"
+- Text: Fee computation under the Architect's Guidelines follows SPP 202 classification groups and the DAEDS/DADS framework. The percentage-of-PCC method applies group-specific rates to Project Construction Cost. MDPE uses direct personnel expense multiplied by an agreed factor. Lump-sum fees are negotiated based on scope. All methods must be documented in the owner-architect agreement.
+[/SLATECAMP_UI_BLOCK]
 
-<KeyValues items=[{"value": "5-12%", "label": "DAEDS Fee Range"}, {"value": "50M", "label": "PCC Bracket Threshold"}, {"value": "10 Groups", "label": "Project Classification"}, {"value": "150%", "label": "Renovation Multiplier"}] />
+[SLATECAMP_UI_BLOCK:ui_0003 component="KeyValues" status="preserved"]
+Extracted summary:
+- Props: items="[", value=true, label=true, DAEDS=true, Fee=true, Range=true, PCC=true, Bracket=true, Threshold=true, Groups=true, Project=true, Classification=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ### Scope and Fee Reduction for Repetitive Units
 
@@ -37,7 +52,11 @@ After the initial design is complete, the architect undertakes reduced scope for
 
 The architect does not repeat fundamental design decisions (building form, structural system, mechanical and electrical strategy, material selections) that were established in the initial design. Instead, the architect adapts the proven prototype to new conditions. SPP 202 Group 6 establishes reduced fee percentages for repetitive designs: 50% for 2nd instance, 40% for 3rd instance, 30% for 4th and succeeding instances of the initial prototype design fee. These percentages apply to the full Recommended Professional Fee (RPF) of the initial design, regardless of variations from the prototype.
 
-<KeyValues items=[{"value": "5-12%", "label": "DAEDS Fee Range"}, {"value": "50M", "label": "PCC Bracket Threshold"}, {"value": "10 Groups", "label": "Project Classification"}, {"value": "150%", "label": "Renovation Multiplier"}] />
+[SLATECAMP_UI_BLOCK:ui_0004 component="KeyValues" status="preserved"]
+Extracted summary:
+- Props: items="[", value=true, label=true, DAEDS=true, Fee=true, Range=true, PCC=true, Bracket=true, Threshold=true, Groups=true, Project=true, Classification=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ### Calculating Repetitive Design Fees
 
@@ -69,9 +88,11 @@ For projects where the same design is applied across multiple separate client pr
 
 When proposing reduced fees for repetitive designs, the architect should clearly explain: (1) which design is the initial prototype receiving full fees, (2) which designs are repetitions receiving reduced fees, (3) the reduction percentage and justification (extent of variation from the prototype), and (4) how site-specific adaptations are reflected in the fee structure. Clients appreciate cost-effective design fees for repetitive work; clear documentation prevents disputes about what constitutes a "repetition" and what additional design work is required beyond the reduced scope.
 
-<LawCallout code="irr" section="Architect's Guidelines / SPP 202" title="Fee Computation — Regulatory Basis">
-Fee computation under the Architect's Guidelines follows SPP 202 classification groups and the DAEDS/DADS framework. The percentage-of-PCC method applies group-specific rates to Project Construction Cost. MDPE uses direct personnel expense multiplied by an agreed factor. Lump-sum fees are negotiated based on scope. All methods must be documented in the owner-architect agreement.
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0005 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="irr", section="Architect's Guidelines / SPP 202", title="Fee Computation — Regulatory Basis"
+- Text: Fee computation under the Architect's Guidelines follows SPP 202 classification groups and the DAEDS/DADS framework. The percentage-of-PCC method applies group-specific rates to Project Construction Cost. MDPE uses direct personnel expense multiplied by an agreed factor. Lump-sum fees are negotiated based on scope. All methods must be documented in the owner-architect agreement.
+[/SLATECAMP_UI_BLOCK]
 
 ---
 

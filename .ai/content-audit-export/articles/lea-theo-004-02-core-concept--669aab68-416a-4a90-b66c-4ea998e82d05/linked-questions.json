@@ -1,9 +1,113 @@
 {
   "article_id": "669aab68-416a-4a90-b66c-4ea998e82d05",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:589a5a7b9ddea53fe6cd946c33300dd85f7857acc56decc9edc679cb3d82ec24",
+  "linked_questions_hash": "sha256:780738793315cdb0335664b495046c6bef849a4ab13c20f16af85cfdd13af1fe",
   "question_count": 12,
   "questions": [
+    {
+      "question_id": "9c009e8a-fd05-44d3-b301-7626e0e9eca1",
+      "article_id": "669aab68-416a-4a90-b66c-4ea998e82d05",
+      "topic_id": "61adabd7-326c-4d52-ac06-13f313c829c4",
+      "text": "In tropical climates, what is the primary cooling mechanism that differs fundamentally from temperate-zone passive design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Thermal mass storage of daytime heat for release during cool nights, which is less effective in tropical climates due to minimal temperature variation"
+        },
+        {
+          "id": "b",
+          "text": "Ventilation (cross-ventilation, stack effect, wind acceleration) is the primary mechanism; thermal mass is ineffective due to suppressed diurnal range"
+        },
+        {
+          "id": "c",
+          "text": "Orientation to maximize south-facing winter solar gain for heating, which is not applicable in tropical regions"
+        },
+        {
+          "id": "d",
+          "text": "Reflective surfaces to mirror solar radiation back to atmosphere, reducing heat absorption in buildings"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This is arid-climate doctrine; it fails in tropics where nighttime temps are too high.",
+        "c": "Tropical orientation prioritizes shade and ventilation, not winter heating gain (unnecessary in tropics).",
+        "d": "Reflectance helps but is secondary to active air movement strategies.",
+        "correct": "The hierarchy: 'In tropical climates, ventilation is the primary cooling mechanism—not shade alone, not mass, not orientation.' Nighttime temps (22–25°C) prevent thermal mass from radiating stored daytime heat.",
+        "takeaway": "The hierarchy: 'In tropical climates, ventilation is the primary cooling mechanism—not shade alone, not mass, not orientation.' Nighttime temps (22–25°C) prevent thermal mass from radiating stored daytime heat."
+      },
+      "explanation": "This is arid-climate doctrine; it fails in tropics where nighttime temps are too high. Tropical orientation prioritizes shade and ventilation, not winter heating gain (unnecessary in tropics). Reflectance helps but is secondary to active air movement strategies. The hierarchy: 'In tropical climates, ventilation is the primary cooling mechanism—not shade alone, not mass, not orientation.' Nighttime temps (22–25°C) prevent thermal mass from radiating stored daytime heat. The hierarchy: 'In tropical climates, ventilation is the primary cooling mechanism—not shade alone, not mass, not orientation.' Nighttime temps (22–25°C) prevent thermal mass from radiating stored daytime heat.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-004-02-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-05-06T15:09:19.131463+00:00",
+      "content_hash": "sha256:7c087c3ff832b74ea81749047ac0768f43bd0a0a0d21407fd36038eee4fce0d5"
+    },
+    {
+      "question_id": "93364bbd-0470-4cf2-baf3-8c469f838049",
+      "article_id": "669aab68-416a-4a90-b66c-4ea998e82d05",
+      "topic_id": "61adabd7-326c-4d52-ac06-13f313c829c4",
+      "text": "Compare lightweight construction (timber, metal stud, bamboo) versus heavyweight construction (concrete, masonry) in tropical climates. Which statement correctly reflects research findings?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Heavyweight is better only in Type III/IV zones; weight is neutral in Type I/II climates, where other factors dominate"
+        },
+        {
+          "id": "b",
+          "text": "Heavyweight construction is universally superior; thermal mass reduces peak cooling by 6–8°C, providing consistent comfort"
+        },
+        {
+          "id": "c",
+          "text": "Both perform identically; construction weight is irrelevant to tropical thermal performance, as other variables are more significant"
+        },
+        {
+          "id": "d",
+          "text": "Lightweight construction is 2–3°C cooler during occupied hours (8am–6pm) vs. heavyweight; nighttime cooling techniques are 35.9% more effective in lightweight structures"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Lightweight is optimal in all tropical Coronas types; the difference is marginal in Type III/IV only because diurnal range is slightly larger, not because heavyweight becomes advantageous.",
+        "b": "This is arid-climate logic; it explicitly fails in tropical suppressed diurnal range.",
+        "c": "Weight dramatically affects thermal response; lightweight structures have faster adaptation to ventilation cooling.",
+        "correct": "Research: 'Lightweight timber or metal framing responds quickly to cooled air from night ventilation or early-morning stack effect; interior temperature drops 2–3°C faster than heavyweight buildings. Nighttime cooling techniques are 35.9% more effective in lightweight structures.' This is the evidence-based consensus for tropical design.",
+        "takeaway": "Nighttime cooling techniques are 35.9% more effective in lightweight structures.' This is the evidence-based consensus for tropical design."
+      },
+      "explanation": "Lightweight is optimal in all tropical Coronas types; the difference is marginal in Type III/IV only because diurnal range is slightly larger, not because heavyweight becomes advantageous. This is arid-climate logic; it explicitly fails in tropical suppressed diurnal range. Weight dramatically affects thermal response; lightweight structures have faster adaptation to ventilation cooling. Research: 'Lightweight timber or metal framing responds quickly to cooled air from night ventilation or early-morning stack effect; interior temperature drops 2–3°C faster than heavyweight buildings. Nighttime cooling techniques are 35.9% more effective in lightweight structures.' This is the evidence-based consensus for tropical design. Nighttime cooling techniques are 35.9% more effective in lightweight structures.' This is the evidence-based consensus for tropical design.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-004-02-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-05-06T15:09:19.420248+00:00",
+      "content_hash": "sha256:6c54aba7366e5139941cffe64bac4e9a51fac69a8b2495affc48e8ded37ea715"
+    },
     {
       "question_id": "665e3f89-744e-42c5-9e49-15a1d35a4895",
       "article_id": "669aab68-416a-4a90-b66c-4ea998e82d05",
@@ -91,7 +195,7 @@
         "correct": "Light shelves reduce window-area heat gain by 30–40% while achieving 2–3× greater interior illumination... specular aluminum shelves outperform matte finishes; however, diffuse ceilings (not mirrors) must receive the redirected light.' This is the precise protocol for tropical daylighting integration.",
         "takeaway": "specular aluminum shelves outperform matte finishes; however, diffuse ceilings (not mirrors) must receive the redirected light.' This is the precise protocol for tropical daylighting integration."
       },
-      "explanation": null,
+      "explanation": "Mirror ceiling creates secondary glare; diffuse ceilings are required for health-appropriate non-glare illumination. Light shelves reduce mechanical cooling demand by 35–40%; they are highly relevant to tropical hospital design. Humidity does not reduce light shelf effectiveness; they work equally well in Type IV's perpetual moisture. Light shelves reduce window-area heat gain by 30–40% while achieving 2–3× greater interior illumination... specular aluminum shelves outperform matte finishes; however, diffuse ceilings (not mirrors) must receive the redirected light.' This is the precise protocol for tropical daylighting integration. specular aluminum shelves outperform matte finishes; however, diffuse ceilings (not mirrors) must receive the redirected light.' This is the precise protocol for tropical daylighting integration.",
       "code_citation": null,
       "bloom_level": "apply",
       "application_context": "design_application",
@@ -105,8 +209,8 @@
       "model_id": "ALE-THEO-004-02-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:43ac682c34f0eb68571fc9fac3151db92d6f5752ee8d2de284f79e111d9ce87a"
+      "updated_at": "2026-05-06T15:09:18.844729+00:00",
+      "content_hash": "sha256:071559ba6d8eb71e242e224fd72f9d7f1e97ee1132bcd64ede934305c7fc6d25"
     },
     {
       "question_id": "a9836d18-447e-4f50-82b4-3b53724f5a1d",
@@ -247,7 +351,7 @@
         "correct": ": 'The \"Venturi skirt\" design—a 30–45 degree louver beneath overhangs—accelerates wind flow and increases cooling.' This uses fluid acceleration principle (constriction creates pressure drop) to enhance passive cooling beneath shaded eaves.",
         "takeaway": ": 'The \"Venturi skirt\" design—a 30–45 degree louver beneath overhangs—accelerates wind flow and increases cooling.' This uses fluid acceleration principle (constriction creates pressure drop) to enhance passive cooling beneath shaded eaves."
       },
-      "explanation": null,
+      "explanation": "This describes horizontal shading; not the dynamic wind-acceleration principle of Venturi geometry. This describes a thermal buffer; not the Venturi acceleration mechanism. Soffit reflectance is a separate strategy; not the Venturi skirt. : 'The \"Venturi skirt\" design—a 30–45 degree louver beneath overhangs—accelerates wind flow and increases cooling.' This uses fluid acceleration principle (constriction creates pressure drop) to enhance passive cooling beneath shaded eaves. : 'The \"Venturi skirt\" design—a 30–45 degree louver beneath overhangs—accelerates wind flow and increases cooling.' This uses fluid acceleration principle (constriction creates pressure drop) to enhance passive cooling beneath shaded eaves.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -261,8 +365,8 @@
       "model_id": "ALE-THEO-004-02-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:b8d2009827eb479658612315608137f5f4504402d15245d406b8e292d036153a"
+      "updated_at": "2026-05-06T15:09:18.994814+00:00",
+      "content_hash": "sha256:43268f9ea72910ebd4f6ebf5c59e8d5285a4d1619a177830cf9e5727ef3705c4"
     },
     {
       "question_id": "f88d1267-28e2-4b78-a568-db664836a6e2",
@@ -317,58 +421,6 @@
       "content_hash": "sha256:fda3e11d4ad7ae40282b002cb8b21223930ac06b231850f061e6c49959b50b31"
     },
     {
-      "question_id": "9c009e8a-fd05-44d3-b301-7626e0e9eca1",
-      "article_id": "669aab68-416a-4a90-b66c-4ea998e82d05",
-      "topic_id": "61adabd7-326c-4d52-ac06-13f313c829c4",
-      "text": "In tropical climates, what is the primary cooling mechanism that differs fundamentally from temperate-zone passive design?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Thermal mass storage of daytime heat for release during cool nights, which is less effective in tropical climates due to minimal temperature variation"
-        },
-        {
-          "id": "b",
-          "text": "Ventilation (cross-ventilation, stack effect, wind acceleration) is the primary mechanism; thermal mass is ineffective due to suppressed diurnal range"
-        },
-        {
-          "id": "c",
-          "text": "Orientation to maximize south-facing winter solar gain for heating, which is not applicable in tropical regions"
-        },
-        {
-          "id": "d",
-          "text": "Reflective surfaces to mirror solar radiation back to atmosphere, reducing heat absorption in buildings"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "This is arid-climate doctrine; it fails in tropics where nighttime temps are too high.",
-        "c": "Tropical orientation prioritizes shade and ventilation, not winter heating gain (unnecessary in tropics).",
-        "d": "Reflectance helps but is secondary to active air movement strategies.",
-        "correct": "The hierarchy: 'In tropical climates, ventilation is the primary cooling mechanism—not shade alone, not mass, not orientation.' Nighttime temps (22–25°C) prevent thermal mass from radiating stored daytime heat.",
-        "takeaway": "The hierarchy: 'In tropical climates, ventilation is the primary cooling mechanism—not shade alone, not mass, not orientation.' Nighttime temps (22–25°C) prevent thermal mass from radiating stored daytime heat."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [
-        "DEF"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-004-02-001",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:892530f36db6472629293a66e6a6daa93c8f78d87273ab71287621ca8d281098"
-    },
-    {
       "question_id": "e09a779d-e420-433b-b63c-32b6daeaa32c",
       "article_id": "669aab68-416a-4a90-b66c-4ea998e82d05",
       "topic_id": "61adabd7-326c-4d52-ac06-13f313c829c4",
@@ -403,7 +455,7 @@
         "correct": "A well-designed tropical building operates all three simultaneously: Cross-ventilation, Stack effect, Venturi effect.' The bahay kubo exemplar demonstrates: 'Cross-ventilation (large windows all sides), Stack effect (open floor + roof vents), Evaporative cooling (sawali walls, permeable flooring).' This triple integration is the tested standard.",
         "takeaway": "A well-designed tropical building operates all three simultaneously: Cross-ventilation, Stack effect, Venturi effect.' The bahay kubo exemplar demonstrates: 'Cross-ventilation (large windows all sides), Stack effect (open floor + roof vents), Evaporative cooling (sawali walls, permeable flooring).' This triple integration is the tested standard."
       },
-      "explanation": null,
+      "explanation": "The bahay kubo achieves 8–10 ACH through synergized mechanisms, not single-strategy reliance. Thermal mass and solar orientation are secondary in vernacular tropical design. The bahay kubo is passive; mechanical systems are absent by definition. A well-designed tropical building operates all three simultaneously: Cross-ventilation, Stack effect, Venturi effect.' The bahay kubo exemplar demonstrates: 'Cross-ventilation (large windows all sides), Stack effect (open floor + roof vents), Evaporative cooling (sawali walls, permeable flooring).' This triple integration is the tested standard. A well-designed tropical building operates all three simultaneously: Cross-ventilation, Stack effect, Venturi effect.' The bahay kubo exemplar demonstrates: 'Cross-ventilation (large windows all sides), Stack effect (open floor + roof vents), Evaporative cooling (sawali walls, permeable flooring).' This triple integration is the tested standard.",
       "code_citation": null,
       "bloom_level": "apply",
       "application_context": "design_application",
@@ -417,60 +469,8 @@
       "model_id": "ALE-THEO-004-02-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:c162549f7d91a11c949a498cdec52e7408f1b240c3013431d128944a493b5dbd"
-    },
-    {
-      "question_id": "93364bbd-0470-4cf2-baf3-8c469f838049",
-      "article_id": "669aab68-416a-4a90-b66c-4ea998e82d05",
-      "topic_id": "61adabd7-326c-4d52-ac06-13f313c829c4",
-      "text": "Compare lightweight construction (timber, metal stud, bamboo) versus heavyweight construction (concrete, masonry) in tropical climates. Which statement correctly reflects research findings?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Heavyweight is better only in Type III/IV zones; weight is neutral in Type I/II climates, where other factors dominate"
-        },
-        {
-          "id": "b",
-          "text": "Heavyweight construction is universally superior; thermal mass reduces peak cooling by 6–8°C, providing consistent comfort"
-        },
-        {
-          "id": "c",
-          "text": "Both perform identically; construction weight is irrelevant to tropical thermal performance, as other variables are more significant"
-        },
-        {
-          "id": "d",
-          "text": "Lightweight construction is 2–3°C cooler during occupied hours (8am–6pm) vs. heavyweight; nighttime cooling techniques are 35.9% more effective in lightweight structures"
-        }
-      ],
-      "correct_option_id": "d",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Lightweight is optimal in all tropical Coronas types; the difference is marginal in Type III/IV only because diurnal range is slightly larger, not because heavyweight becomes advantageous.",
-        "b": "This is arid-climate logic; it explicitly fails in tropical suppressed diurnal range.",
-        "c": "Weight dramatically affects thermal response; lightweight structures have faster adaptation to ventilation cooling.",
-        "correct": "Research: 'Lightweight timber or metal framing responds quickly to cooled air from night ventilation or early-morning stack effect; interior temperature drops 2–3°C faster than heavyweight buildings. Nighttime cooling techniques are 35.9% more effective in lightweight structures.' This is the evidence-based consensus for tropical design.",
-        "takeaway": "Nighttime cooling techniques are 35.9% more effective in lightweight structures.' This is the evidence-based consensus for tropical design."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "apply",
-      "application_context": "design_application",
-      "practice_context": [
-        "CMP"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-004-02-004",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:dea9361e43fdea130219279384d3c327f0f8f3710b93dbde92ab09d27a8e8342"
+      "updated_at": "2026-05-06T15:09:19.279243+00:00",
+      "content_hash": "sha256:2cf3a3d3018ecc979feb6429f3576119613319780c8e70070dd13ebf82857ef7"
     },
     {
       "question_id": "14a08653-a3b3-4e51-8e9c-db1e0bec0aa2",

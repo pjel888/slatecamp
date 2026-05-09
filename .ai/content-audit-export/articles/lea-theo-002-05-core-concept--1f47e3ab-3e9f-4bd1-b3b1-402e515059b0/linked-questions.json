@@ -1,7 +1,7 @@
 {
   "article_id": "1f47e3ab-3e9f-4bd1-b3b1-402e515059b0",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:0f4bcc256d28220a50be8c16468d37647d48a913ea95f7df828648c45cb2729a",
+  "linked_questions_hash": "sha256:cffbca6a01edfd68fe4a578da50016b82ada2250f771fa87ccdde5c2a7a4813a",
   "question_count": 14,
   "questions": [
     {
@@ -57,58 +57,6 @@
       "content_hash": "sha256:6bdbf0f1a74b7266a670ee0bf1561ba4e4d3aa8a7938861ee7e5edbaac83e5a8"
     },
     {
-      "question_id": "49f5737f-a4d3-4328-96ce-6da01eff5a89",
-      "article_id": "1f47e3ab-3e9f-4bd1-b3b1-402e515059b0",
-      "topic_id": "a0662a89-2dbf-4050-aa9d-6245e90ce845",
-      "text": "A cubic module is stretched to 4:1 height-to-width ratio, becoming a tall, slender tower. The tower is dimensionally transformed from cubic logic but still recognizable as cubic in origin. Which statement best captures this concept?",
-      "options": [
-        {
-          "id": "a",
-          "text": "The tower is an additive form created by stacking cubes vertically, maintaining a clear visual connection to its cubic origins"
-        },
-        {
-          "id": "b",
-          "text": "The tower is a completely new form with no relationship to the cube, as the transformation process eliminates all original characteristics"
-        },
-        {
-          "id": "c",
-          "text": "Dimensional transformation alters proportions while retaining form identity—the tower is a proportional variant maintaining cubic character"
-        },
-        {
-          "id": "d",
-          "text": "The tower is subtractive—part of the cube has been removed, resulting in a form that lacks the original cubic integrity"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Stacking would be additive; this is dimensional.",
-        "b": "Transformation specifically retains linkage to parent geometry.",
-        "d": "No material is removed; proportions are shifted.",
-        "correct": "Ching's point is that dimensional transformation maintains identity while shifting proportion. The 4:1 tower is still understood as derived from cubic logic—it is not a new form but a proportional variant. This demonstrates how transformation preserves form family relationships.",
-        "takeaway": "This demonstrates how transformation preserves form family relationships."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "apply",
-      "application_context": "design_application",
-      "practice_context": [
-        "APP"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-002-05-008",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:53.522336+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:e0d70c970685c554e012f3bf73207e0038d45449ad7deea63f1bd977661855d6"
-    },
-    {
       "question_id": "270b06ac-8b00-4477-98eb-a9406e79cb19",
       "article_id": "1f47e3ab-3e9f-4bd1-b3b1-402e515059b0",
       "topic_id": "a0662a89-2dbf-4050-aa9d-6245e90ce845",
@@ -143,7 +91,7 @@
         "correct": "This is fundamental to Ching's framework: by understanding transformations, architects see that complexity often derives from systematic modification of simple origins. A design family of forms can be generated through intentional transformations while maintaining geometric unity. This is conceptually important—it shows coherence underlying apparent complexity.",
         "takeaway": "This is conceptually important—it shows coherence underlying apparent complexity."
       },
-      "explanation": null,
+      "explanation": "Transformation allows creative modification while maintaining conceptual coherence. Construction ease is not Ching's point. Building codes don't mandate architectural theory; it's a design concept. This is fundamental to Ching's framework: by understanding transformations, architects see that complexity often derives from systematic modification of simple origins. A design family of forms can be generated through intentional transformations while maintaining geometric unity. This is conceptually important—it shows coherence underlying apparent complexity. This is conceptually important—it shows coherence underlying apparent complexity.",
       "code_citation": null,
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
@@ -157,216 +105,8 @@
       "model_id": "ALE-THEO-002-05-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.522336+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:c4b511dfb771b387bc2966ef7790f5250e85769a4a41b29169241ee902cdc90c"
-    },
-    {
-      "question_id": "b75518e2-3eb9-4889-a516-79a0a1062f13",
-      "article_id": "1f47e3ab-3e9f-4bd1-b3b1-402e515059b0",
-      "topic_id": "a0662a89-2dbf-4050-aa9d-6245e90ce845",
-      "text": "Subtractive transformation is best defined as:",
-      "options": [
-        {
-          "id": "a",
-          "text": "Adding elements to a base form without destroying the base, allowing for modular expansion"
-        },
-        {
-          "id": "b",
-          "text": "Arranging identical forms in a regular sequence, creating a rhythmic pattern"
-        },
-        {
-          "id": "c",
-          "text": "Removing or subtracting a portion of a form's volume, creating explicit absence"
-        },
-        {
-          "id": "d",
-          "text": "Altering one or more dimensions while retaining essential character, often used in adaptive reuse"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "That is additive transformation.",
-        "b": "That is rhythm, not transformation.",
-        "d": "That is dimensional transformation.",
-        "correct": "Subtractive transformation removes material from a form: a corner cut away, a cavity carved out, windows (voids) cut into a wall. The removal is explicit and readable; the original geometry remains apparent by what was taken away.",
-        "takeaway": "The removal is explicit and readable; the original geometry remains apparent by what was taken away."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [
-        "DEF"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-002-05-002",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:53.522336+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:71376697366728b86324f937e5d2a41aafabd25e1e7bce02a878380479685a99"
-    },
-    {
-      "question_id": "da5295a3-434b-4785-8478-d6691415923c",
-      "article_id": "1f47e3ab-3e9f-4bd1-b3b1-402e515059b0",
-      "topic_id": "a0662a89-2dbf-4050-aa9d-6245e90ce845",
-      "text": "A basic rectangular building receives a pitched roof, front porch, and chimney towers. This demonstrates which transformation?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Dimensional transformation"
-        },
-        {
-          "id": "b",
-          "text": "Additive transformation"
-        },
-        {
-          "id": "c",
-          "text": "Subtractive transformation"
-        },
-        {
-          "id": "d",
-          "text": "Skeletal transformation"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Proportions might shift, but the primary operation is adding elements.",
-        "c": "Nothing is removed.",
-        "d": "Skeletal transformation' is not standard terminology.",
-        "correct": "Roof, porch, and towers are elements ATTACHED to the base rectangular form. The base remains intact and legible; elaborations are additions. This is the classic example of additive transformation in traditional architecture.",
-        "takeaway": "This is the classic example of additive transformation in traditional architecture."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "apply",
-      "application_context": "design_application",
-      "practice_context": [
-        "APP"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-002-05-007",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:53.522336+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:284b3428f68698699371cb3000d1ea1f1894f03e12a67732c37a938d8b05ca8e"
-    },
-    {
-      "question_id": "5ef94110-427e-4f4b-8df6-ca79db9639ec",
-      "article_id": "1f47e3ab-3e9f-4bd1-b3b1-402e515059b0",
-      "topic_id": "a0662a89-2dbf-4050-aa9d-6245e90ce845",
-      "text": "Additive transformation in architecture is characterized by:",
-      "options": [
-        {
-          "id": "a",
-          "text": "Stretching or compressing dimensions while maintaining geometric identity, which is more related to deformation than addition"
-        },
-        {
-          "id": "b",
-          "text": "Arranging forms symmetrically about a central axis, which is a compositional strategy rather than additive transformation"
-        },
-        {
-          "id": "c",
-          "text": "Adding elements such as porches, towers, wings, and appendages to a base form without destroying the base"
-        },
-        {
-          "id": "d",
-          "text": "Cutting away portions of a form to create new geometry, which is a subtractive process rather than additive"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "That is dimensional transformation.",
-        "b": "That is symmetry, not transformation.",
-        "d": "That is subtractive transformation.",
-        "correct": "Additive transformation elaborates a base form through attachment: a rectangular building receives pitched roof, porches, towers, wings. Each addition enriches without obscuring the fundamental form. This is common in traditional and vernacular architecture.",
-        "takeaway": "This is common in traditional and vernacular architecture."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [
-        "DEF"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-002-05-003",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:53.522336+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:dd5dafeb4c7b77c42617685d34073020ff97dd7f26f9542ee145473d670e90a0"
-    },
-    {
-      "question_id": "106df0d2-4bbb-40cf-8525-0d662df88981",
-      "article_id": "1f47e3ab-3e9f-4bd1-b3b1-402e515059b0",
-      "topic_id": "a0662a89-2dbf-4050-aa9d-6245e90ce845",
-      "text": "Dimensional transformation involves:",
-      "options": [
-        {
-          "id": "a",
-          "text": "Altering one or more dimensions (height, width, depth) while retaining essential geometric character"
-        },
-        {
-          "id": "b",
-          "text": "Creating symmetrical arrangements around a central axis to achieve balance and harmony"
-        },
-        {
-          "id": "c",
-          "text": "Attaching new elements to a base form to enhance or modify its original structure"
-        },
-        {
-          "id": "d",
-          "text": "Removing material from an existing form to achieve a desired shape or function"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "b": "That is symmetry, not transformation.",
-        "c": "That is additive transformation.",
-        "d": "That is subtractive transformation.",
-        "correct": "Dimensional transformation stretches, compresses, or proportionally shifts a form while maintaining its geometric origin and identity. A cube stretched vertically becomes a tower; compressed becomes a platform. Each variant is dimensionally transformed yet recognizably cubic in logic.",
-        "takeaway": "Each variant is dimensionally transformed yet recognizably cubic in logic."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [
-        "DEF"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-002-05-004",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:53.522336+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:22edc86a526700450ddb3a290d98500f6c6f065523048a862a6cc120b2b79dcc"
+      "updated_at": "2026-05-06T16:22:34.438633+00:00",
+      "content_hash": "sha256:542175a52e209660ed4396f12657a73ed7a55b46e5390fdee6fecc6f5d6d73b8"
     },
     {
       "question_id": "570dc48e-99ad-47c3-8602-11ed6c400031",
@@ -403,7 +143,7 @@
         "correct": "Ching's framework extends across scales: at volumetric scale, a building's form is transformed; at surface scale, a wall is subtractive (windows cut in) or additive (applied details); at detail scale, moldings are carved (subtractive) or applied (additive). Understanding transformation at all scales demonstrates design coherence.",
         "takeaway": "Understanding transformation at all scales demonstrates design coherence."
       },
-      "explanation": null,
+      "explanation": "All three transformation types operate at various scales. Scales are related; coherence comes from consistent thinking across scales. Transformations occur at multiple scales. Ching's framework extends across scales: at volumetric scale, a building's form is transformed; at surface scale, a wall is subtractive (windows cut in) or additive (applied details); at detail scale, moldings are carved (subtractive) or applied (additive). Understanding transformation at all scales demonstrates design coherence. Understanding transformation at all scales demonstrates design coherence.",
       "code_citation": null,
       "bloom_level": "analyze",
       "application_context": "design_application",
@@ -417,8 +157,372 @@
       "model_id": "ALE-THEO-002-05-011",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.522336+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:98b6ac6aa3b08b2198bf77d2abe246fabadeda17424f80211f9b58951f08f742"
+      "updated_at": "2026-05-06T16:22:35.022741+00:00",
+      "content_hash": "sha256:b7fc25b5b257e3c66600bab8128b2a8a24ef2aa68c66607fd95db8aac4be337d"
+    },
+    {
+      "question_id": "b75518e2-3eb9-4889-a516-79a0a1062f13",
+      "article_id": "1f47e3ab-3e9f-4bd1-b3b1-402e515059b0",
+      "topic_id": "a0662a89-2dbf-4050-aa9d-6245e90ce845",
+      "text": "Subtractive transformation is best defined as:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Adding elements to a base form without destroying the base, allowing for modular expansion"
+        },
+        {
+          "id": "b",
+          "text": "Arranging identical forms in a regular sequence, creating a rhythmic pattern"
+        },
+        {
+          "id": "c",
+          "text": "Removing or subtracting a portion of a form's volume, creating explicit absence"
+        },
+        {
+          "id": "d",
+          "text": "Altering one or more dimensions while retaining essential character, often used in adaptive reuse"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "That is additive transformation.",
+        "b": "That is rhythm, not transformation.",
+        "d": "That is dimensional transformation.",
+        "correct": "Subtractive transformation removes material from a form: a corner cut away, a cavity carved out, windows (voids) cut into a wall. The removal is explicit and readable; the original geometry remains apparent by what was taken away.",
+        "takeaway": "The removal is explicit and readable; the original geometry remains apparent by what was taken away."
+      },
+      "explanation": "That is additive transformation. That is rhythm, not transformation. That is dimensional transformation. Subtractive transformation removes material from a form: a corner cut away, a cavity carved out, windows (voids) cut into a wall. The removal is explicit and readable; the original geometry remains apparent by what was taken away. The removal is explicit and readable; the original geometry remains apparent by what was taken away.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-05-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "updated_at": "2026-05-06T16:22:34.557644+00:00",
+      "content_hash": "sha256:df8d782e53b9beed748b212f4f214c5e5e34735bc40e19188234e5c29452aa0e"
+    },
+    {
+      "question_id": "da5295a3-434b-4785-8478-d6691415923c",
+      "article_id": "1f47e3ab-3e9f-4bd1-b3b1-402e515059b0",
+      "topic_id": "a0662a89-2dbf-4050-aa9d-6245e90ce845",
+      "text": "A basic rectangular building receives a pitched roof, front porch, and chimney towers. This demonstrates which transformation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dimensional transformation"
+        },
+        {
+          "id": "b",
+          "text": "Additive transformation"
+        },
+        {
+          "id": "c",
+          "text": "Subtractive transformation"
+        },
+        {
+          "id": "d",
+          "text": "Skeletal transformation"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Proportions might shift, but the primary operation is adding elements.",
+        "c": "Nothing is removed.",
+        "d": "Skeletal transformation' is not standard terminology.",
+        "correct": "Roof, porch, and towers are elements ATTACHED to the base rectangular form. The base remains intact and legible; elaborations are additions. This is the classic example of additive transformation in traditional architecture.",
+        "takeaway": "This is the classic example of additive transformation in traditional architecture."
+      },
+      "explanation": "Proportions might shift, but the primary operation is adding elements. Nothing is removed. Skeletal transformation' is not standard terminology. Roof, porch, and towers are elements ATTACHED to the base rectangular form. The base remains intact and legible; elaborations are additions. This is the classic example of additive transformation in traditional architecture. This is the classic example of additive transformation in traditional architecture.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-05-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "updated_at": "2026-05-06T16:22:34.678466+00:00",
+      "content_hash": "sha256:90425dc44fdd3fc12a5f8c3bfdb9bd78bf84714183a2d3b08b81d28447738648"
+    },
+    {
+      "question_id": "15ee9d07-c0e8-423a-94df-a7b09e02f175",
+      "article_id": "1f47e3ab-3e9f-4bd1-b3b1-402e515059b0",
+      "topic_id": "a0662a89-2dbf-4050-aa9d-6245e90ce845",
+      "text": "A rectangular tower has its top corner cut at a 45-degree angle. This is an example of:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Additive transformation (adding material)"
+        },
+        {
+          "id": "b",
+          "text": "Subtractive transformation (removing material)"
+        },
+        {
+          "id": "c",
+          "text": "Dimensional transformation (altering proportions)"
+        },
+        {
+          "id": "d",
+          "text": "Symmetrical transformation (creating balance)"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "No material is being added.",
+        "c": "While proportion changes, the primary operation is removal.",
+        "d": "Symmetry is not a transformation type.",
+        "correct": "Material is visibly removed or cut away, creating explicit absence at the corner. The removal is readable as a cut surface. This is definitional subtractive transformation.",
+        "takeaway": "This is definitional subtractive transformation."
+      },
+      "explanation": "No material is being added. While proportion changes, the primary operation is removal. Symmetry is not a transformation type. Material is visibly removed or cut away, creating explicit absence at the corner. The removal is readable as a cut surface. This is definitional subtractive transformation. This is definitional subtractive transformation.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-05-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "updated_at": "2026-05-06T16:22:35.201909+00:00",
+      "content_hash": "sha256:1d59d0394d51946a97d27d6180975f745990892a6b6ee1b7dbd380ae0dff3ad2"
+    },
+    {
+      "question_id": "a4eee2d4-3798-4bd4-b576-323c5fbd28e9",
+      "article_id": "1f47e3ab-3e9f-4bd1-b3b1-402e515059b0",
+      "topic_id": "a0662a89-2dbf-4050-aa9d-6245e90ce845",
+      "text": "According to Ching, form is best defined as:",
+      "options": [
+        {
+          "id": "a",
+          "text": "The structural system supporting a building's weight, which is crucial for stability and integrity."
+        },
+        {
+          "id": "b",
+          "text": "The exterior appearance and styling of a building, which contributes to its aesthetic appeal."
+        },
+        {
+          "id": "c",
+          "text": "What the eye identifies, the mind perceives and interprets—the geometric and spatial configuration of an object"
+        },
+        {
+          "id": "d",
+          "text": "The geometric outline of an object as seen in plan view, which is a basic representation of its form."
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Structure supports form but is not form itself.",
+        "b": "Form is deeper than mere styling; it is geometric identity.",
+        "d": "Form is three-dimensional and perceptual, not just outline.",
+        "correct": "Ching's definition encompasses both visual recognition and cognitive understanding: form is what we identify, perceive, and interpret—it is geometric character and spatial configuration. Forms have essential identities (cube, sphere, cylinder) that persist even through transformation.",
+        "takeaway": "Forms have essential identities (cube, sphere, cylinder) that persist even through transformation."
+      },
+      "explanation": "Structure supports form but is not form itself. Form is deeper than mere styling; it is geometric identity. Form is three-dimensional and perceptual, not just outline. Ching's definition encompasses both visual recognition and cognitive understanding: form is what we identify, perceive, and interpret—it is geometric character and spatial configuration. Forms have essential identities (cube, sphere, cylinder) that persist even through transformation. Forms have essential identities (cube, sphere, cylinder) that persist even through transformation.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-05-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "updated_at": "2026-05-06T16:22:35.323204+00:00",
+      "content_hash": "sha256:db8612283399bf36d82d48ff8c080071316283bc693061dd27de64f3a3ff2c23"
+    },
+    {
+      "question_id": "5ef94110-427e-4f4b-8df6-ca79db9639ec",
+      "article_id": "1f47e3ab-3e9f-4bd1-b3b1-402e515059b0",
+      "topic_id": "a0662a89-2dbf-4050-aa9d-6245e90ce845",
+      "text": "Additive transformation in architecture is characterized by:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Stretching or compressing dimensions while maintaining geometric identity, which is more related to deformation than addition"
+        },
+        {
+          "id": "b",
+          "text": "Arranging forms symmetrically about a central axis, which is a compositional strategy rather than additive transformation"
+        },
+        {
+          "id": "c",
+          "text": "Adding elements such as porches, towers, wings, and appendages to a base form without destroying the base"
+        },
+        {
+          "id": "d",
+          "text": "Cutting away portions of a form to create new geometry, which is a subtractive process rather than additive"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "That is dimensional transformation.",
+        "b": "That is symmetry, not transformation.",
+        "d": "That is subtractive transformation.",
+        "correct": "Additive transformation elaborates a base form through attachment: a rectangular building receives pitched roof, porches, towers, wings. Each addition enriches without obscuring the fundamental form. This is common in traditional and vernacular architecture.",
+        "takeaway": "This is common in traditional and vernacular architecture."
+      },
+      "explanation": "That is dimensional transformation. That is symmetry, not transformation. That is subtractive transformation. Additive transformation elaborates a base form through attachment: a rectangular building receives pitched roof, porches, towers, wings. Each addition enriches without obscuring the fundamental form. This is common in traditional and vernacular architecture. This is common in traditional and vernacular architecture.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-05-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "updated_at": "2026-05-06T16:22:34.797121+00:00",
+      "content_hash": "sha256:f3f541a7f7e2dc87a3bd037681e9c7b2377f7436ce8e9dea50d10b30b6c09586"
+    },
+    {
+      "question_id": "106df0d2-4bbb-40cf-8525-0d662df88981",
+      "article_id": "1f47e3ab-3e9f-4bd1-b3b1-402e515059b0",
+      "topic_id": "a0662a89-2dbf-4050-aa9d-6245e90ce845",
+      "text": "Dimensional transformation involves:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Altering one or more dimensions (height, width, depth) while retaining essential geometric character"
+        },
+        {
+          "id": "b",
+          "text": "Creating symmetrical arrangements around a central axis to achieve balance and harmony"
+        },
+        {
+          "id": "c",
+          "text": "Attaching new elements to a base form to enhance or modify its original structure"
+        },
+        {
+          "id": "d",
+          "text": "Removing material from an existing form to achieve a desired shape or function"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "That is symmetry, not transformation.",
+        "c": "That is additive transformation.",
+        "d": "That is subtractive transformation.",
+        "correct": "Dimensional transformation stretches, compresses, or proportionally shifts a form while maintaining its geometric origin and identity. A cube stretched vertically becomes a tower; compressed becomes a platform. Each variant is dimensionally transformed yet recognizably cubic in logic.",
+        "takeaway": "Each variant is dimensionally transformed yet recognizably cubic in logic."
+      },
+      "explanation": "That is symmetry, not transformation. That is additive transformation. That is subtractive transformation. Dimensional transformation stretches, compresses, or proportionally shifts a form while maintaining its geometric origin and identity. A cube stretched vertically becomes a tower; compressed becomes a platform. Each variant is dimensionally transformed yet recognizably cubic in logic. Each variant is dimensionally transformed yet recognizably cubic in logic.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-05-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "updated_at": "2026-05-06T16:22:34.910265+00:00",
+      "content_hash": "sha256:becc3644a21cba90120a0368d9a8fa2b8f5786a2c4cfefc6325a3e84efcd8eef"
+    },
+    {
+      "question_id": "49f5737f-a4d3-4328-96ce-6da01eff5a89",
+      "article_id": "1f47e3ab-3e9f-4bd1-b3b1-402e515059b0",
+      "topic_id": "a0662a89-2dbf-4050-aa9d-6245e90ce845",
+      "text": "A cubic module is stretched to 4:1 height-to-width ratio, becoming a tall, slender tower. The tower is dimensionally transformed from cubic logic but still recognizable as cubic in origin. Which statement best captures this concept?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The tower is an additive form created by stacking cubes vertically, maintaining a clear visual connection to its cubic origins"
+        },
+        {
+          "id": "b",
+          "text": "The tower is a completely new form with no relationship to the cube, as the transformation process eliminates all original characteristics"
+        },
+        {
+          "id": "c",
+          "text": "Dimensional transformation alters proportions while retaining form identity—the tower is a proportional variant maintaining cubic character"
+        },
+        {
+          "id": "d",
+          "text": "The tower is subtractive—part of the cube has been removed, resulting in a form that lacks the original cubic integrity"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Stacking would be additive; this is dimensional.",
+        "b": "Transformation specifically retains linkage to parent geometry.",
+        "d": "No material is removed; proportions are shifted.",
+        "correct": "Ching's point is that dimensional transformation maintains identity while shifting proportion. The 4:1 tower is still understood as derived from cubic logic—it is not a new form but a proportional variant. This demonstrates how transformation preserves form family relationships.",
+        "takeaway": "This demonstrates how transformation preserves form family relationships."
+      },
+      "explanation": "Stacking would be additive; this is dimensional. Transformation specifically retains linkage to parent geometry. No material is removed; proportions are shifted. Ching's point is that dimensional transformation maintains identity while shifting proportion. The 4:1 tower is still understood as derived from cubic logic—it is not a new form but a proportional variant. This demonstrates how transformation preserves form family relationships. This demonstrates how transformation preserves form family relationships.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-05-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.522336+00:00",
+      "updated_at": "2026-05-06T16:22:34.320988+00:00",
+      "content_hash": "sha256:65b889349419343ba1506ce99670234e8c9295f5ac49e0b5000127b4188cbd1d"
     },
     {
       "question_id": "7347c538-0f5a-4758-8dcc-41d1ef8ba25a",
@@ -473,108 +577,56 @@
       "content_hash": "sha256:7ecdc09744f3b4fba4902d015e9868eeef54201645e0f31a30d1d279d5a18ece"
     },
     {
-      "question_id": "15ee9d07-c0e8-423a-94df-a7b09e02f175",
+      "question_id": "7c04eaaf-9b8f-423e-9069-37bd5d87ed05",
       "article_id": "1f47e3ab-3e9f-4bd1-b3b1-402e515059b0",
       "topic_id": "a0662a89-2dbf-4050-aa9d-6245e90ce845",
-      "text": "A rectangular tower has its top corner cut at a 45-degree angle. This is an example of:",
+      "text": "Which modernist architect exemplified subtractive transformation logic, carving away from forms to reveal essential geometry?",
       "options": [
         {
           "id": "a",
-          "text": "Additive transformation (adding material)"
+          "text": "There are no cited specific modernist architects for subtractive examples"
         },
         {
           "id": "b",
-          "text": "Subtractive transformation (removing material)"
+          "text": "Félix Candela (using efficient shell structures derived from hyperbolic paraboloid geometry)"
         },
         {
           "id": "c",
-          "text": "Dimensional transformation (altering proportions)"
+          "text": "Le Corbusier (employing pure geometric forms such as cubes, cylinders, and cones in composition)"
         },
         {
           "id": "d",
-          "text": "Symmetrical transformation (creating balance)"
+          "text": "Frank Lloyd Wright (using organic forms that integrate architecture with its natural landscape)"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "No material is being added.",
-        "c": "While proportion changes, the primary operation is removal.",
-        "d": "Symmetry is not a transformation type.",
-        "correct": "Material is visibly removed or cut away, creating explicit absence at the corner. The removal is readable as a cut surface. This is definitional subtractive transformation.",
-        "takeaway": "This is definitional subtractive transformation."
+        "b": "Candela is mentioned for shell structures, not subtractive transformation.",
+        "c": "Le Corbusier is mentioned for the Modulor and geometric purity, not subtractive transformation.",
+        "d": "Wright is not mentioned in this article.",
+        "correct": "This concept involves subtractive transformation conceptually and gives examples (corner tower removed, windows cut in walls, Gothic tracery carved stone) but does not attribute specific modernist architects to subtractive logic. contemporary architects like Candela use shells (efficient structure), not specifically subtractive strategy.",
+        "takeaway": "contemporary architects like Candela use shells (efficient structure), not specifically subtractive strategy."
       },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "apply",
-      "application_context": "design_application",
-      "practice_context": [
-        "APP"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-002-05-006",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:53.522336+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:73149727b90a4ca6eea38f5c8f4f155664516eaac7b352bdf0230cbb83466dd0"
-    },
-    {
-      "question_id": "a4eee2d4-3798-4bd4-b576-323c5fbd28e9",
-      "article_id": "1f47e3ab-3e9f-4bd1-b3b1-402e515059b0",
-      "topic_id": "a0662a89-2dbf-4050-aa9d-6245e90ce845",
-      "text": "According to Ching, form is best defined as:",
-      "options": [
-        {
-          "id": "a",
-          "text": "The structural system supporting a building's weight, which is crucial for stability and integrity."
-        },
-        {
-          "id": "b",
-          "text": "The exterior appearance and styling of a building, which contributes to its aesthetic appeal."
-        },
-        {
-          "id": "c",
-          "text": "What the eye identifies, the mind perceives and interprets—the geometric and spatial configuration of an object"
-        },
-        {
-          "id": "d",
-          "text": "The geometric outline of an object as seen in plan view, which is a basic representation of its form."
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Structure supports form but is not form itself.",
-        "b": "Form is deeper than mere styling; it is geometric identity.",
-        "d": "Form is three-dimensional and perceptual, not just outline.",
-        "correct": "Ching's definition encompasses both visual recognition and cognitive understanding: form is what we identify, perceive, and interpret—it is geometric character and spatial configuration. Forms have essential identities (cube, sphere, cylinder) that persist even through transformation.",
-        "takeaway": "Forms have essential identities (cube, sphere, cylinder) that persist even through transformation."
-      },
-      "explanation": null,
+      "explanation": "Candela is mentioned for shell structures, not subtractive transformation. Le Corbusier is mentioned for the Modulor and geometric purity, not subtractive transformation. Wright is not mentioned in this article. This concept involves subtractive transformation conceptually and gives examples (corner tower removed, windows cut in walls, Gothic tracery carved stone) but does not attribute specific modernist architects to subtractive logic. contemporary architects like Candela use shells (efficient structure), not specifically subtractive strategy. contemporary architects like Candela use shells (efficient structure), not specifically subtractive strategy.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
-        "DEF"
+        "ATT"
       ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
       "is_assessment": false,
-      "model_id": "ALE-THEO-002-05-001",
+      "model_id": "ALE-THEO-002-05-014",
       "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:53.522336+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:4d867fd74107d9b8ee00640afcb0c7acd2f99b72e82fb98c7799a4a28017193a"
+      "created_at": "2026-03-23T19:27:53.884733+00:00",
+      "updated_at": "2026-05-06T16:22:35.442056+00:00",
+      "content_hash": "sha256:44a3fa0c4e4b72482f4b934f107b3b55c7faffb23f00bd09597744828a98e660"
     },
     {
       "question_id": "5608bfa5-da1e-4631-9b77-1bc9b7ed2402",
@@ -627,58 +679,6 @@
       "created_at": "2026-03-23T19:27:53.884733+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:40cba31c72d889fa73b93a2fe5219671ce2f9bdf75c99f0dadfd8d1b0b8d2799"
-    },
-    {
-      "question_id": "7c04eaaf-9b8f-423e-9069-37bd5d87ed05",
-      "article_id": "1f47e3ab-3e9f-4bd1-b3b1-402e515059b0",
-      "topic_id": "a0662a89-2dbf-4050-aa9d-6245e90ce845",
-      "text": "Which modernist architect exemplified subtractive transformation logic, carving away from forms to reveal essential geometry?",
-      "options": [
-        {
-          "id": "a",
-          "text": "There are no cited specific modernist architects for subtractive examples"
-        },
-        {
-          "id": "b",
-          "text": "Félix Candela (using efficient shell structures derived from hyperbolic paraboloid geometry)"
-        },
-        {
-          "id": "c",
-          "text": "Le Corbusier (employing pure geometric forms such as cubes, cylinders, and cones in composition)"
-        },
-        {
-          "id": "d",
-          "text": "Frank Lloyd Wright (using organic forms that integrate architecture with its natural landscape)"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "b": "Candela is mentioned for shell structures, not subtractive transformation.",
-        "c": "Le Corbusier is mentioned for the Modulor and geometric purity, not subtractive transformation.",
-        "d": "Wright is not mentioned in this article.",
-        "correct": "This concept involves subtractive transformation conceptually and gives examples (corner tower removed, windows cut in walls, Gothic tracery carved stone) but does not attribute specific modernist architects to subtractive logic. contemporary architects like Candela use shells (efficient structure), not specifically subtractive strategy.",
-        "takeaway": "contemporary architects like Candela use shells (efficient structure), not specifically subtractive strategy."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [
-        "ATT"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-002-05-014",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:aa58dfeefd50c4989fa753a808803859424aa5340cf4f1e69c5c6040d0d5baa0"
     },
     {
       "question_id": "8809601d-96bb-4896-a7aa-5ca926c12817",

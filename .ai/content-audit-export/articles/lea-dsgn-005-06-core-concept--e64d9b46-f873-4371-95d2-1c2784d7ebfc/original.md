@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Dsgn 005 06 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 
 Religious buildings—churches, chapels, and mosques—are classified as **Group C, Division C-2** (Education and Recreation - Institutional), with pew seating at 0.5-0.6 sqm/person, standing at 0.7-1.0 sqm/person, and nave ceiling typically 6.0 m. Mosques require qibla orientation near **289°** (clockwise from north) from Metro Manila, or approximately **19°** clockwise from west and wudu facilities at **1 faucet per 10 worshippers**.
@@ -13,7 +22,11 @@ Religious buildings (churches, chapels, mosques, temples) are classified as **Gr
 Sacristy (preparation room for clergy) is typically **12-18 sqm**, providing robing space and sacramental item storage. Confessionals are compact: **1.0 m × 1.5 m** per booth (priest + penitent separated). Choir lofts allocate **1.0 sqm per choir member**. Acoustic performance targets reverberation time (RT60) of **1.2-2.0 seconds**, achieved through material selection and volume optimization.
 
 Mosque-specific requirements include qibla (prayer direction) oriented approximately **273° from Manila** (adjusted by location). Wudu (ritual ablution) facilities provide *1 faucet per 10 worshippers (recommended practice)rate male/female if applicable), typically with low-height basins (0.6-0.8 m) and floor drainage. Heritage religious buildings often trigger **NHCP (National Heritage Commission of the Philippines) certification**, extending approval timelines but ensuring cultural preservation. Fire egress follows Group C: 45 m travel distance (unsprinklered) or 60 m (sprinklered), **7.6 mm per occupant** exit width (per RA 9514 2019 Revised IRR Rule 10 Table 10.2.5.1.1 for 'All Others' occupancy), dual exits at 50+ persons.
-<ArticleMedia id="media-lea-dsgn-005-06-core-concept" type="image" caption="Religious Building Design — Mosque and Church Comparative Plans" description="Comparative floor plans showing spatial organization for a mosque (qibla orientation ~289°, wudu at 1 faucet/10 worshippers) and a church (nave at 0.5-0.6 sqm/person, 6.0m ceiling). Annotated with key dimension standards." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-dsgn-005-06-core-concept", type="image", caption="Religious Building Design — Mosque and Church Comparative Plans", description="Comparative floor plans showing spatial organization for a mosque (qibla orientation ~289°, wudu at 1 faucet/10 worshippers) and a church (nave at 0.5-0.6 sqm/person, 6.0m ceiling). Annotated with key dimension standards.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Provisions
 
@@ -57,10 +70,18 @@ Manila's diverse religious landscape includes centuries-old churches (requiring 
 2. **Seating Density Calculation:** A 300 sqm church sanctuary with pew layout. Occupancy = 300 ÷ 0.55 = ~545 seated persons. If standing aisles = 50 sqm, standing = 50 ÷ 0.85 = ~59 persons. Total = 604 occupants; dual exits required.
 3. **Wudu Facility Requirement:** A 500-capacity mosque requires 50 wudu faucets. Candidates often underestimate this (providing only 10-15 faucets), creating prayer time delays and non-compliance.
 
-<Tip>**Religious Building Anchors:** Group C occupancy. Pew seating = 0.5–0.6 sqm/person. Standing = 0.7–1.0 sqm/person. Nave ceiling min = 6.0 m. Sacristy = 12–18 sqm. Confessional = 1 × 1.5 m. Mosque qibla ≈273° from Manila. Wudu = 1 faucet/10 worshippers. RT60 = 1.2–2.0 sec.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Religious Building Anchors:** Group C occupancy. Pew seating = 0.5–0.6 sqm/person. Standing = 0.7–1.0 sqm/person. Nave ceiling min = 6.0 m. Sacristy = 12–18 sqm. Confessional = 1 × 1.5 m. Mosque qibla ≈273° from Manila. Wudu = 1 faucet/10 worshippers. RT60 = 1.2–2.0 sec.
+[/SLATECAMP_UI_BLOCK]
 
 **Exam Tip — ERR-DSGN-023:** Ambulatory surgical centers are Group D with higher egress standards due to patients under sedation. Treatment room minimum = 12 sqm. Travel distance limits apply to all patient areas.
-<ArticleMedia id="media-lea-dsgn-005-06-core-concept" type="image" caption="Comparative Religious Architecture — Church Nave vs. Mosque Prayer Hall" description="Comparative floor plans: church nave (longitudinal axis, pew seating 0.5 sqm/person, 6.0m ceiling) vs. mosque prayer hall (qibla wall oriented ~289°, carpeted floor 0.7-1.0 sqm/person, wudu facilities at 1 faucet/10 worshippers). Key dimension and orientation differences annotated." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0003 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-dsgn-005-06-core-concept", type="image", caption="Comparative Religious Architecture — Church Nave vs. Mosque Prayer Hall", description="Comparative floor plans: church nave (longitudinal axis, pew seating 0.5 sqm/person, 6.0m ceiling) vs. mosque prayer hall (qibla wall oriented ~289°, carpeted floor 0.7-1.0 sqm/person, wudu facilities at 1 faucet/10 worshippers). Key dimension and orientation differences annotated.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Cross-References
 
@@ -68,4 +89,8 @@ See **LEA-DSGN-005-05** (Specialized Health Facilities) for Group D space standa
 
 ## Common Mistakes
 
-<WikiMistakeList mistakes={["ERR-DSGN-005: Classifying churches/mosques as Group H (assembly) instead of Group C","Pew density too high (0.4 sqm/person instead of 0.5–0.6)","Nave ceiling undersized (5.0 m instead of 6.0 m minimum)","Wudu faucet ratio incorrect (1 per 20 or 30 instead of 1 per 10)","Qibla direction incorrect or not verified with faith community","ERR-DSGN-019: Exit width at 5 mm/person instead of 7.6 mm/person","ERR-DSGN-021: Single exit for 50+ person worship space"]} />
+[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"ERR-DSGN-005: Classifying churches/mosques as Group H (assembly) instead of Group C\",\"Pew density too high (0.4 sqm/person instead of 0.5–0.6)\",\"Nave ceiling undersized (5.0 m instead of 6.0 m minimum)\",\"Wudu faucet ratio incorrect (1 per 20 or 30 instead of 1 per 10)\",\"Qibla direction incorrect or not verified with faith community\",\"ERR-DSGN-019: Exit width at 5 mm/person instead of 7.6 mm/person\",\"ERR-DSGN-021: Single exit for 50+ person worship space\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]

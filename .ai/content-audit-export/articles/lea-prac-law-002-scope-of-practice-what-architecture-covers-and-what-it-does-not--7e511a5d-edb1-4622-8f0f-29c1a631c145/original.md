@@ -1,3 +1,10 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Lea Prac Law 002 Scope Of Practice What Architecture Covers And What It Does Not** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
 ## Scope of Practice: What Architecture Covers and What It Does Not
 ## Learning Goal
 After reading this article, you should understand the key concepts tested in the LEA for this topic, including relevant code provisions, dimensional standards, and common exam applications.
@@ -100,17 +107,29 @@ The PRBoA's power under Section 7(f) to "monitor the conditions affecting the pr
 
 Thus, new service categories—sustainable design certification, resilience planning, heritage documentation, digital fabrication coordination—can be recognized as falling within architectural scope without statutory amendment, provided the PRBoA determines they require architectural competence and warrant professional accountability.
 
-<LawCallout code="ra9266" section="Section 3 - Definition of Terms">
-Legal Basis: RA 9266 (Architecture Act of 2004), Section 3, which enumerates ten (10) categories of architectural service from planning and design through emerging practices and specialized services.
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="ra9266", section="Section 3 - Definition of Terms"
+- Text: Legal Basis: RA 9266 (Architecture Act of 2004), Section 3, which enumerates ten (10) categories of architectural service from planning and design through emerging practices and specialized services.
+[/SLATECAMP_UI_BLOCK]
 
-<Tip />
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<LawCallout code="ra9266" section="Section 3 - Scope of Practice">
-Common exam trap: confusing 'structural conceptualization' (architect scope — conceiving structural elements and their arrangement) with 'structural design documents' (engineer scope — calculations and signed/sealed structural plans). Architects lead structural thinking; engineers own structural accountability.
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="ra9266", section="Section 3 - Scope of Practice"
+- Text: Common exam trap: confusing 'structural conceptualization' (architect scope — conceiving structural elements and their arrangement) with 'structural design documents' (engineer scope — calculations and signed/sealed structural plans). Architects lead structural thinking; engineers own structural accountability.
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip />
+[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ---
 

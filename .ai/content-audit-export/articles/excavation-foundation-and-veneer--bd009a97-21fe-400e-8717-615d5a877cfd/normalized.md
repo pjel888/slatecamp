@@ -193,10 +193,10 @@ A common distractor involves asking what loads a veneer system must be designed 
 
 A high-rise project in Quezon City is set to begin deep excavation immediately adjacent to a 4-storey reinforced concrete residential building owned by a neighboring family. Before any excavation equipment is mobilized, what is the minimum advance notice period the excavating party must provide to the adjoining property owner, and in what form?
 
-A. 7 days, verbal notice to any occupant of the building  
-B. 15 days, written notice delivered to the Building Official  
-C. 10 days, written notice delivered to the adjoining property owner  
-D. 5 days, written notice posted on the project fence  
+A. 7 days, verbal notice to any occupant of the building
+B. 15 days, written notice delivered to the Building Official
+C. 10 days, written notice delivered to the adjoining property owner
+D. 5 days, written notice posted on the project fence
 
 > **Answer: C — 10 days, written notice to the adjoining property owner**
 >
@@ -212,10 +212,10 @@ Extracted summary:
 
 During the excavation of a 2.00-meter deep utility trench running 30.00 meters through a project site, the safety inspector asks the site architect how many means of exit (ladders or equivalent) must be provided along the trench per PD 1096. What is the correct answer?
 
-A. 2 means of exit — one at each end of the trench  
-B. 3 means of exit — at 0 m, 10 m, and 20 m  
-C. 4 means of exit — at 0 m, 7.5 m, 15 m, and 22.5 m  
-D. 5 means of exit — at 0 m, 7.5 m, 15 m, 22.5 m, and 30 m  
+A. 2 means of exit — one at each end of the trench
+B. 3 means of exit — at 0 m, 10 m, and 20 m
+C. 4 means of exit — at 0 m, 7.5 m, 15 m, and 22.5 m
+D. 5 means of exit — at 0 m, 7.5 m, 15 m, 22.5 m, and 30 m
 
 > **Answer: C — 4 means of exit at 0 m, 7.5 m, 15 m, and 22.5 m**
 >
@@ -227,10 +227,10 @@ D. 5 means of exit — at 0 m, 7.5 m, 15 m, 22.5 m, and 30 m
 
 An architect specifies a ceramic tile anchored veneer system on the exterior facade of an 8-storey office building in Metro Manila. The total weight of the anchored veneer on one facade panel is 500 kg. Per PD 1096, Rule XII, Sec. 1203, what minimum horizontal force must the anchor system for that panel be designed to resist?
 
-A. 250 kg (1/2 × panel weight, as veneer is non-structural)  
-B. 500 kg (equal to panel weight — dead load equivleance)  
-C. 750 kg (1.5× panel weight for seismic factor)  
-D. 1,000 kg (2× panel weight per the anchored veneer lateral force requirement)  
+A. 250 kg (1/2 × panel weight, as veneer is non-structural)
+B. 500 kg (equal to panel weight — dead load equivleance)
+C. 750 kg (1.5× panel weight for seismic factor)
+D. 1,000 kg (2× panel weight per the anchored veneer lateral force requirement)
 
 > **Answer: D — 1,000 kg (2× the weight of the veneer)**
 >

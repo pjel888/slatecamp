@@ -1,9 +1,162 @@
 {
   "article_id": "6a351c32-f48d-45fb-93f5-e60e6cd271c5",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:3a5967dfb2b36ec007d1d8397fd966b653b6a3b0a42edfa503d74bee861f4008",
+  "linked_questions_hash": "sha256:c373e7fc0d72e0de26c0686e49394b985a05a4dcff43e06f78f83097d26ec703",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "36b6f184-c1f7-4061-b31d-d4a4c55fe0da",
+      "article_id": "6a351c32-f48d-45fb-93f5-e60e6cd271c5",
+      "topic_id": "656621b7-5b9b-4465-b788-151010b80774",
+      "text": "What is the comfortable height-to-width (H:W) ratio for urban streets according to urban design convention?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2:1 (building is twice as tall as the street is wide)"
+        },
+        {
+          "id": "b",
+          "text": "1:4 (building is one-quarter as tall as the street is wide)"
+        },
+        {
+          "id": "c",
+          "text": "1:2 (building is half as tall as the street is wide)"
+        },
+        {
+          "id": "d",
+          "text": "3:1 (building is three times as tall as the street is wide)"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "ERR-PLAN-031 inversion — student reverses the ratio for comfortable vs. oppressive enclosure",
+        "b": "Student chooses the most open ratio, missing the balance of comfortable enclosure",
+        "c": "H:W = 1:2 provides comfortable enclosure and feels human-scaled and welcoming—a standard urban design principle.",
+        "d": "Student selects an oppressive ratio as if it were ideal",
+        "correct": "H:W = 1:2 provides comfortable enclosure and feels human-scaled and welcoming—a standard urban design principle.",
+        "takeaway": "1:2 is comfortable enclosure; 2:1 is oppressive canyon-like feeling."
+      },
+      "explanation": "ERR-PLAN-031 inversion — student reverses the ratio for comfortable vs. oppressive enclosure Student chooses the most open ratio, missing the balance of comfortable enclosure H:W = 1:2 provides comfortable enclosure and feels human-scaled and welcoming—a standard urban design principle. Student selects an oppressive ratio as if it were ideal H:W = 1:2 provides comfortable enclosure and feels human-scaled and welcoming—a standard urban design principle. 1:2 is comfortable enclosure; 2:1 is oppressive canyon-like feeling.",
+      "code_citation": "LEA-PLAN-004-01: Height-to-Width Ratios and Enclosure section; VERIFIED_REFERENCE.md PART 7",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-004-01-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:37.124492+00:00",
+      "updated_at": "2026-05-06T14:43:18.626551+00:00",
+      "content_hash": "sha256:208cdc0ead792cc49ef04c73f174f6c941d2e8a02acc6c07529feab03b85479f"
+    },
+    {
+      "question_id": "6378a29e-db42-4775-9145-3dccba0541f2",
+      "article_id": "6a351c32-f48d-45fb-93f5-e60e6cd271c5",
+      "topic_id": "656621b7-5b9b-4465-b788-151010b80774",
+      "text": "A site planner analyzes a 5-hectare parcel in a mixed-income barangay. The site has multiple overlapping constraints: steep slopes (contours spaced closely together), west-facing orientation, proximity to an estero (stream), and moderate soil bearing capacity. When integrating these physical findings into a preliminary site planning strategy, which of the following represents the most comprehensive analysis approach?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Focus only on the steepest areas and recommend avoiding development there, leaving all other constraints for later permitting stages, which may lead to unforeseen issues"
+        },
+        {
+          "id": "b",
+          "text": "Map terrain constraints (steep slopes, soil), sun/wind exposure (west-facing, afternoon heat), and easement implications (estero proximity); identify feasible development zones and recommend building orientation strategies that account for multiple constraints simultaneously"
+        },
+        {
+          "id": "c",
+          "text": "Choose the flattest area for development, ignoring sun and wind exposure because topography is the dominant constraint, potentially overlooking critical environmental factors"
+        },
+        {
+          "id": "d",
+          "text": "List all constraints separately without attempting to integrate them, as each requires independent specialist assessment, which may not provide a holistic view"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Student oversimplifies constraint integration and defers analysis prematurely",
+        "b": "Comprehensive site analysis integrates all constraints—terrain, climate, legal limits—and identifies zones where overlapping constraints are minimal, allowing development while respecting limits.",
+        "c": "Student prioritizes one constraint over others and ignores compounding effects",
+        "d": "Student treats site analysis as a collection of isolated data points rather than an integrated planning framework",
+        "correct": "Comprehensive site analysis integrates all constraints—terrain, climate, legal limits—and identifies zones where overlapping constraints are minimal, allowing development while respecting limits.",
+        "takeaway": "Site planning integrates all constraints simultaneously to find developable areas."
+      },
+      "explanation": "Student oversimplifies constraint integration and defers analysis prematurely Comprehensive site analysis integrates all constraints—terrain, climate, legal limits—and identifies zones where overlapping constraints are minimal, allowing development while respecting limits. Student prioritizes one constraint over others and ignores compounding effects Student treats site analysis as a collection of isolated data points rather than an integrated planning framework Comprehensive site analysis integrates all constraints—terrain, climate, legal limits—and identifies zones where overlapping constraints are minimal, allowing development while respecting limits. Site planning integrates all constraints simultaneously to find developable areas.",
+      "code_citation": "LEA-PLAN-004-01: Checklist section (item 8)",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-004-01-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:37.124492+00:00",
+      "updated_at": "2026-05-06T14:43:18.747158+00:00",
+      "content_hash": "sha256:db2340b14d59601bc578e3db6ce9a9663209c5cf5730f603b3e1ef67f5f8caf1"
+    },
+    {
+      "question_id": "958e6b1f-6ace-4dbc-974c-0aa166d8c4c0",
+      "article_id": "6a351c32-f48d-45fb-93f5-e60e6cd271c5",
+      "topic_id": "656621b7-5b9b-4465-b788-151010b80774",
+      "text": "A site plan shows buildings arranged at an H:W ratio of approximately 2:1 in a proposed mixed-use development. A planner reviews this and notes that the street will feel oppressive and canyon-like. What should the planner recommend to achieve a more comfortable enclosure?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Increase the building height to 3:1 to create even more enclosure"
+        },
+        {
+          "id": "b",
+          "text": "Reduce the building height or widen the street to move the H:W ratio closer to 1:2"
+        },
+        {
+          "id": "c",
+          "text": "Leave the design as-is because 2:1 is the standard urban design ratio"
+        },
+        {
+          "id": "d",
+          "text": "Increase the street width to 4 times the building height to eliminate all enclosure"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Student moves in wrong direction—increasing the ratio makes oppression worse, not better",
+        "b": "Moving from oppressive 2:1 to comfortable 1:2 requires either height reduction or street widening—this is the correct design response.",
+        "c": "ERR-PLAN-031 variant — student treats oppressive ratio as standard",
+        "d": "Student overcompensates by creating an open, uncomfortable plaza",
+        "correct": "Moving from oppressive 2:1 to comfortable 1:2 requires either height reduction or street widening—this is the correct design response.",
+        "takeaway": "To improve uncomfortable 2:1, aim for 1:2 by adjusting height or width."
+      },
+      "explanation": "Student moves in wrong direction—increasing the ratio makes oppression worse, not better Moving from oppressive 2:1 to comfortable 1:2 requires either height reduction or street widening—this is the correct design response. ERR-PLAN-031 variant — student treats oppressive ratio as standard Student overcompensates by creating an open, uncomfortable plaza Moving from oppressive 2:1 to comfortable 1:2 requires either height reduction or street widening—this is the correct design response. To improve uncomfortable 2:1, aim for 1:2 by adjusting height or width.",
+      "code_citation": "LEA-PLAN-004-01: Height-to-Width Ratios and Enclosure section",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-004-01-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:37.124492+00:00",
+      "updated_at": "2026-05-06T14:43:18.864429+00:00",
+      "content_hash": "sha256:36962f422517f54943cf8a558585f3723a794c3f728e57da53faa18aacc5c70c"
+    },
     {
       "question_id": "6d78f957-75be-4148-b47f-3a2af938aea8",
       "article_id": "6a351c32-f48d-45fb-93f5-e60e6cd271c5",
@@ -40,7 +193,7 @@
         "correct": "A 10-story building in a district with 1:3 to 1:4 ratios (open, human-scaled) would create a massive mismatch and oppressive streetscape—poor site planning respect for context.",
         "takeaway": "Site planning respects neighborhood character and visual context, not just density maximization."
       },
-      "explanation": null,
+      "explanation": "A 10-story building in a district with 1:3 to 1:4 ratios (open, human-scaled) would create a massive mismatch and oppressive streetscape—poor site planning respect for context. Student discounts shadow analysis as unimportant for institutional use Student confuses site analysis findings with regulatory prohibition Student privileges density over site context and visual harmony A 10-story building in a district with 1:3 to 1:4 ratios (open, human-scaled) would create a massive mismatch and oppressive streetscape—poor site planning respect for context. Site planning respects neighborhood character and visual context, not just density maximization.",
       "code_citation": "LEA-PLAN-004-01: Height-to-Width Ratios and Views sections; VERIFIED_REFERENCE.md PART 7",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
@@ -52,8 +205,8 @@
       "model_id": "ALE-PLAN-004-01-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:37.124492+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:afed604e8b55ceb95a64c887420b1573a7ab3c44fbee405aa132c5f900f93d60"
+      "updated_at": "2026-05-06T14:43:18.379177+00:00",
+      "content_hash": "sha256:ff3363107572604c85cdb6c137b93a77daf7adc8fb00a0613eb7a65a6c7a48f9"
     },
     {
       "question_id": "1bb715b2-67b1-4d89-aa65-7a6982754930",
@@ -142,7 +295,7 @@
         "correct": "Site planners document existing views, acknowledge view loss, and design to preserve remaining views and create new visual focal points—this respects existing context while advancing new development.",
         "takeaway": "Document views; adapt design to preserve or creatively reframe visual experience."
       },
-      "explanation": null,
+      "explanation": "Site planners document existing views, acknowledge view loss, and design to preserve remaining views and create new visual focal points—this respects existing context while advancing new development. Student confuses view analysis with regulatory enforcement authority Student undervalues visual quality assessment in high-density urban sites Student confuses visual mitigation with height escalation Site planners document existing views, acknowledge view loss, and design to preserve remaining views and create new visual focal points—this respects existing context while advancing new development. Document views; adapt design to preserve or creatively reframe visual experience.",
       "code_citation": "LEA-PLAN-004-01: Views and Visual Quality section",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
@@ -154,8 +307,8 @@
       "model_id": "ALE-PLAN-004-01-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:37.124492+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:52be2f6152b71ad38b0742f0954942cd226f85a6c40932a2da38dd4039c4963a"
+      "updated_at": "2026-05-06T14:43:18.499708+00:00",
+      "content_hash": "sha256:bff853635086e3b10294fc2f7b4c3b1b2a58e200406b36799f0b71d28b825cfb"
     },
     {
       "question_id": "07770446-c75d-42dc-8453-c7cbc77642ea",
@@ -209,57 +362,6 @@
       "content_hash": "sha256:d4f0c566c80efa23d671049a3c1a8c5f349194bdee66909da0639496bb8d114d"
     },
     {
-      "question_id": "36b6f184-c1f7-4061-b31d-d4a4c55fe0da",
-      "article_id": "6a351c32-f48d-45fb-93f5-e60e6cd271c5",
-      "topic_id": "656621b7-5b9b-4465-b788-151010b80774",
-      "text": "What is the comfortable height-to-width (H:W) ratio for urban streets according to urban design convention?",
-      "options": [
-        {
-          "id": "a",
-          "text": "2:1 (building is twice as tall as the street is wide)"
-        },
-        {
-          "id": "b",
-          "text": "1:4 (building is one-quarter as tall as the street is wide)"
-        },
-        {
-          "id": "c",
-          "text": "1:2 (building is half as tall as the street is wide)"
-        },
-        {
-          "id": "d",
-          "text": "3:1 (building is three times as tall as the street is wide)"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "ERR-PLAN-031 inversion — student reverses the ratio for comfortable vs. oppressive enclosure",
-        "b": "Student chooses the most open ratio, missing the balance of comfortable enclosure",
-        "c": "H:W = 1:2 provides comfortable enclosure and feels human-scaled and welcoming—a standard urban design principle.",
-        "d": "Student selects an oppressive ratio as if it were ideal",
-        "correct": "H:W = 1:2 provides comfortable enclosure and feels human-scaled and welcoming—a standard urban design principle.",
-        "takeaway": "1:2 is comfortable enclosure; 2:1 is oppressive canyon-like feeling."
-      },
-      "explanation": null,
-      "code_citation": "LEA-PLAN-004-01: Height-to-Width Ratios and Enclosure section; VERIFIED_REFERENCE.md PART 7",
-      "bloom_level": "remember",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.3,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PLAN-004-01-002",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:37.124492+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:1db37c60017cf4a91e26c9f866fd898ca755dcf17de860a0b4d5621e063df5f5"
-    },
-    {
       "question_id": "0f0b1089-3832-4c59-836e-8ff1e31496fe",
       "article_id": "6a351c32-f48d-45fb-93f5-e60e6cd271c5",
       "topic_id": "656621b7-5b9b-4465-b788-151010b80774",
@@ -309,108 +411,6 @@
       "created_at": "2026-03-23T19:27:37.124492+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:d8c7675f401c7386e86049d70acb5f56880c1cafb1432ff3b1e46f063b3b4f04"
-    },
-    {
-      "question_id": "6378a29e-db42-4775-9145-3dccba0541f2",
-      "article_id": "6a351c32-f48d-45fb-93f5-e60e6cd271c5",
-      "topic_id": "656621b7-5b9b-4465-b788-151010b80774",
-      "text": "A site planner analyzes a 5-hectare parcel in a mixed-income barangay. The site has multiple overlapping constraints: steep slopes (contours spaced closely together), west-facing orientation, proximity to an estero (stream), and moderate soil bearing capacity. When integrating these physical findings into a preliminary site planning strategy, which of the following represents the most comprehensive analysis approach?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Focus only on the steepest areas and recommend avoiding development there, leaving all other constraints for later permitting stages, which may lead to unforeseen issues"
-        },
-        {
-          "id": "b",
-          "text": "Map terrain constraints (steep slopes, soil), sun/wind exposure (west-facing, afternoon heat), and easement implications (estero proximity); identify feasible development zones and recommend building orientation strategies that account for multiple constraints simultaneously"
-        },
-        {
-          "id": "c",
-          "text": "Choose the flattest area for development, ignoring sun and wind exposure because topography is the dominant constraint, potentially overlooking critical environmental factors"
-        },
-        {
-          "id": "d",
-          "text": "List all constraints separately without attempting to integrate them, as each requires independent specialist assessment, which may not provide a holistic view"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Student oversimplifies constraint integration and defers analysis prematurely",
-        "b": "Comprehensive site analysis integrates all constraints—terrain, climate, legal limits—and identifies zones where overlapping constraints are minimal, allowing development while respecting limits.",
-        "c": "Student prioritizes one constraint over others and ignores compounding effects",
-        "d": "Student treats site analysis as a collection of isolated data points rather than an integrated planning framework",
-        "correct": "Comprehensive site analysis integrates all constraints—terrain, climate, legal limits—and identifies zones where overlapping constraints are minimal, allowing development while respecting limits.",
-        "takeaway": "Site planning integrates all constraints simultaneously to find developable areas."
-      },
-      "explanation": null,
-      "code_citation": "LEA-PLAN-004-01: Checklist section (item 8)",
-      "bloom_level": "analyze",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.9,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PLAN-004-01-009",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:37.124492+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:4f277aa3d20e2434685372d5c6cb12db17c9a78a164d6b3065fca0a67e08d7b9"
-    },
-    {
-      "question_id": "958e6b1f-6ace-4dbc-974c-0aa166d8c4c0",
-      "article_id": "6a351c32-f48d-45fb-93f5-e60e6cd271c5",
-      "topic_id": "656621b7-5b9b-4465-b788-151010b80774",
-      "text": "A site plan shows buildings arranged at an H:W ratio of approximately 2:1 in a proposed mixed-use development. A planner reviews this and notes that the street will feel oppressive and canyon-like. What should the planner recommend to achieve a more comfortable enclosure?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Increase the building height to 3:1 to create even more enclosure"
-        },
-        {
-          "id": "b",
-          "text": "Reduce the building height or widen the street to move the H:W ratio closer to 1:2"
-        },
-        {
-          "id": "c",
-          "text": "Leave the design as-is because 2:1 is the standard urban design ratio"
-        },
-        {
-          "id": "d",
-          "text": "Increase the street width to 4 times the building height to eliminate all enclosure"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Student moves in wrong direction—increasing the ratio makes oppression worse, not better",
-        "b": "Moving from oppressive 2:1 to comfortable 1:2 requires either height reduction or street widening—this is the correct design response.",
-        "c": "ERR-PLAN-031 variant — student treats oppressive ratio as standard",
-        "d": "Student overcompensates by creating an open, uncomfortable plaza",
-        "correct": "Moving from oppressive 2:1 to comfortable 1:2 requires either height reduction or street widening—this is the correct design response.",
-        "takeaway": "To improve uncomfortable 2:1, aim for 1:2 by adjusting height or width."
-      },
-      "explanation": null,
-      "code_citation": "LEA-PLAN-004-01: Height-to-Width Ratios and Enclosure section",
-      "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.7,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PLAN-004-01-007",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:37.124492+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:8de7e99a9182a7843afced254f96d4ba3aa7d3b498d8ebb2b4acba1c8cd679ea"
     },
     {
       "question_id": "c2b8d09e-d8df-4c1b-80d2-a40b6b687f1f",

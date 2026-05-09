@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Strc 005 03 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 ## Learning Goal
 By the end of this article, you will be able to:
@@ -10,7 +19,11 @@ By the end of this article, you will be able to:
 ASTM A36 is the most common structural steel in the Philippines. Under the Allowable Stress Design (ASD) method, the allowable stresses for A36 are: shear 0.40_F_y (99 MPa), axial compression 0.60_F_y, and bending 0.66_F_y (164 MPa). A36 has _F_y = 248 MPa and _F_u = 400 MPa. You must memorize these allowable stress fractions and understand which applies to each stress type.
 
 ## Core Concept
-<ArticleMedia id="media-lea-strc-005-03-core-concept" type="image" caption="Allowable Stress Design — Safety Factor Application" description="Diagram showing ASD method workflow: service loads → compute working stresses (f = M/S, f = P/A) → compare with allowable stress F = Fy/FS → verify f ≤ F. Stress distribution diagram showing yield stress Fy, allowable stress level, and factor of safety margin. Comparison of safety factors for different materials and loading conditions." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-strc-005-03-core-concept", type="image", caption="Allowable Stress Design — Safety Factor Application", description="Diagram showing ASD method workflow: service loads → compute working stresses (f = M/S, f = P/A) → compare with allowable stress F = Fy/FS → verify f ≤ F. Stress distribution diagram showing yield stress Fy, allowable stress level, and factor of safety margin. Comparison of safety factors for different materials and loading conditions.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 The ASD method divides the yield strength _F_y_ by a safety factor (factor of safety) to obtain an allowable stress. This allowable stress is compared directly to the applied stress (not factored loads). For example, if a steel member carries a working load that produces a bending stress of 150 MPa, the designer checks whether 150 MPa ≤ allowable bending stress (164 MPa for A36).
 
@@ -57,19 +70,11 @@ Most structural steel design in the Philippines uses LRFD (ASD is less common in
 
 **Pattern 3:** A statement about allowable stress fractions (e.g., "bending is 0.60_F_y_"), with false options that swap values. Careful reading of the correct answer is required.
 
-<Tip>
-**Memorize the A36 allowable stress fractions:**
-
-_Shear: 0.40F_y = 99 MPa_
-
-_Compression: 0.60F_y = 149 MPa_
-
-_Bending: 0.66F_y = 164 MPa_
-
-Bending is always higher than compression. If you see 0.60 for bending, that is a trap answer. Always confirm which stress type is being asked about.
-
-**A36 Properties:** _F_y = 248 MPa, F_u = 400 MPa, E = 200,000 MPa. Use these for calculations.
-</Tip>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Memorize the A36 allowable stress fractions:** _Shear: 0.40F_y = 99 MPa_ _Compression: 0.60F_y = 149 MPa_ _Bending: 0.66F_y = 164 MPa_ Bending is always higher than compression. If you see 0.60 for bending, that is a trap answer. Always confirm which stress type is being asked about. **A36 Properties:** _F_y = 248 MPa, F_u = 400 MPa, E = 200,000 MPa. Use these for calculations.
+[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 
@@ -77,6 +82,14 @@ See also: **ASD vs LRFD** (lea-strc-003-04) for the comparison of design philoso
 
 ## Common Mistakes
 
-<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: These are frequently tested traps. Memorize them to avoid losing easy points on exam day.
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeList mistakes={["Confusing bending allowable 0.66Fy with compression allowable 0.60Fy; bending is higher because the stress distribution is non-uniform.", "Using shear allowable 0.40Fy for bending; shear is the lowest fraction because it is the least ductile under monotonic loading.", "Forgetting that A36 Fy = 248 MPa, not 250 or 255 MPa; precision matters in code citations.", "Applying allowable stresses from a different steel grade (e.g., A992) to A36; always confirm the material grade first.", "Misremembering the fraction: writing 0.65 or 0.67 instead of 0.66 for bending; the exact value is 0.66."]} />
+[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Confusing bending allowable 0.66Fy with compression allowable 0.60Fy; bending is higher because the stress distribution is non-uniform.\", \"Using shear allowable 0.40Fy for bending; shear is the lowest fraction because it is the least ductile under monotonic loading.\", \"Forgetting that A36 Fy = 248 MPa, not 250 or 255 MPa; precision matters in code citations.\", \"Applying allowable stresses from a different steel grade (e.g., A992) to A36; always confirm the material grade first.\", \"Misremembering the fraction: writing 0.65 or 0.67 instead of 0.66 for bending; the exact value is 0.66.\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]

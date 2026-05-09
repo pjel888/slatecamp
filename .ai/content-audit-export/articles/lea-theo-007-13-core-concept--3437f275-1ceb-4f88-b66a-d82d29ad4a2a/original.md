@@ -1,7 +1,18 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Theo 007 13 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
-<Callout>
-Vernacular architecture—buildings designed and built by communities without formally trained architects—embodies accumulated climate-responsive knowledge, cultural practices, and material wisdom. The LEA tests your understanding that vernacular is not "primitive" but is a sophisticated, rational response to environmental and cultural constraints. You must master Bernard Rudofsky's theoretical framework, understand Philippine examples (bahay kubo, bahay na bato), and recognize how vernacular principles inform contemporary sustainable design.
-</Callout>
+[SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Vernacular architecture—buildings designed and built by communities without formally trained architects—embodies accumulated climate-responsive knowledge, cultural practices, and material wisdom. The LEA tests your understanding that vernacular is not "primitive" but is a sophisticated, rational response to environmental and cultural constraints. You must master Bernard Rudofsky's theoretical framework, understand Philippine examples (bahay kubo, bahay na bato), and recognize how vernacular prin
+[/SLATECAMP_UI_BLOCK]
 
 ## Learning Goal
 
@@ -11,15 +22,21 @@ Vernacular architecture—buildings designed and built by communities without fo
 
 ## Core Concept
 
-<ArticleMedia id="media-lea-theo-007-13-vernacular-diagram" type="image" caption="Vernacular Architecture — Typologically Stable, Culturally Embedded Building Traditions" alt="Concept diagram showing four vernacular examples from different climates with annotated features: (1) Ifugao Rice Terraces (Philippines) — stone-walled terraces, water management, communal building knowledge; (2) Pueblo adobe (Southwest USA) — thermal mass, south-facing passive solar, multi-story tiered; (3) Nordic turf house (Iceland) — sod insulation, earth-bermed, extreme wind protection; (4) Malay Rumah Panggung — raised on stilts for flood/ventilation, tropical hardwood joinery. Central annotation: 'Generations of experiential optimization — radical innovation is rare because tradition has proven optimal.' Arrow to Modernism: 'Authored, innovative, formally distinct vs. Anonymous, traditional, pragmatic.'" suggestedAsset="Diagram showing vernacular architecture examples across different climates with annotated features" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-theo-007-13-vernacular-diagram", type="image", caption="Vernacular Architecture — Typologically Stable, Culturally Embedded Building Traditions", alt="Concept diagram showing four vernacular examples from different climates with annotated features: (1) Ifugao Rice Terraces (Philippines) — stone-walled terraces, water management, communal building knowledge; (2) Pueblo adobe (Southwest USA) — thermal mass, south-facing passive solar, multi-story tiered; (3) Nordic turf house (Iceland) — sod insulation, earth-bermed, extreme wind protection; (4) Malay Rumah Panggung — raised on stilts for flood/ventilation, tropical hardwood joinery. Central annotation: 'Generations of experiential optimization — radical innovation is rare because tradition has proven optimal.' Arrow to Modernism: 'Authored, innovative, formally distinct vs. Anonymous, traditional, pragmatic.'", suggestedAsset="Diagram showing vernacular architecture examples across different climates with annotated features", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 Vernacular architecture comprises buildings designed and built by users themselves or by craftspeople responding to local conditions without formal architectural training or external design imposition. Rather than being designed according to imported styles or universal principles, vernacular architecture evolves through generations of experiential learning—what works in this climate, with these materials, at this cost, according to these cultural values.
 
 Vernacular is not artisanal or individualistic; it is **typologically stable and culturally embedded**. A vernacular building type—a farmhouse, a market structure, a residential compound—remains fundamentally similar across generations and individual projects because that type has proven optimal. Variation occurs within stable parameters; radical innovation is rare because the financial and social risk is too great.
 
-<Tip>
-**Vernacular insight**: Tradition is not stasis. The bahay kubo of 200 years ago was already evolved through centuries of refinement, not a frozen primitive type. Contemporary vernacular builders adopt new materials as they become available. Vernacular responds to constraints (climate, materials, cost) and evolves continuously. Tradition is dynamic problem-solving passed through generations. This contrasts with both romantic "folk preservation" and dismissal as "primitive"—it's sophisticated, adaptive optimization.
-</Tip>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Vernacular insight**: Tradition is not stasis. The bahay kubo of 200 years ago was already evolved through centuries of refinement, not a frozen primitive type. Contemporary vernacular builders adopt new materials as they become available. Vernacular responds to constraints (climate, materials, cost) and evolves continuously. Tradition is dynamic problem-solving passed through generations. This contrasts with both romantic "folk preservation" and dismissal as "primitive"—it's sophisticated, ad
+[/SLATECAMP_UI_BLOCK]
 
 **Bernard Rudofsky and Architecture Without Architects**
 
@@ -59,9 +76,11 @@ The bahay kubo (literally "nipa hut") is Philippines' iconic vernacular typology
 
 The bahay kubo is not quaint or backward but is a **rationally optimized response to tropical maritime climate, material availability, and cultural practices**. Its environmental performance (passive cooling through ventilation and thermal mass; solar control; water management) rivals contemporary sustainable design. Modern visitors often underestimate the sophisticated building science embodied in these structures.
 
-<Note>
-Vernacular architecture encodes material honesty and climate responsiveness at a level contemporary sustainable design aspires to achieve through computational optimization. The bahay kubo's elevation prevents flooding and allows airflow beneath; its pitch prevents water accumulation; its materials are locally available and repairable using local labor; its spatial organization reflects family and community patterns. This is not romanticizable "primitive wisdom"—it's practical, economically rational, environmentally responsive architecture developed through iterative problem-solving over generations.
-</Note>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Vernacular architecture encodes material honesty and climate responsiveness at a level contemporary sustainable design aspires to achieve through computational optimization. The bahay kubo's elevation prevents flooding and allows airflow beneath; its pitch prevents water accumulation; its materials are locally available and repairable using local labor; its spatial organization reflects family and community patterns. This is not romanticizable "primitive wisdom"—it's practical, economically rati
+[/SLATECAMP_UI_BLOCK]
 
 **Bahay na Bato: Urban Vernacular**
 
@@ -104,32 +123,70 @@ Contemporary architectural practice increasingly learns from vernacular:
 
 **Gentrification and Heritage Commodification**: As vernacular structures (like Intramuros bahay na bato) become heritage sites, they risk gentrification. Preservation for tourism and upper-class residence can displace original communities. Social justice requires that heritage preservation serves existing communities, not merely architectural conservation.
 
-<Warn>
-The gentrification trap: "Preserving vernacular heritage" can become displacement engine. When bahay na bato in Intramuros becomes "architectural treasure" warranting restoration and boutique hotel conversion, original residents are displaced by gentrification. Heritage preservation that does not address equity becomes archaeological performance while communities are erased. Genuine respect for vernacular requires preserving the buildings AND protecting the communities that developed that tradition. Aesthetic preservation without social justice is complicit in erasure.
-</Warn>
+[SLATECAMP_UI_BLOCK:ui_0005 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: The gentrification trap: "Preserving vernacular heritage" can become displacement engine. When bahay na bato in Intramuros becomes "architectural treasure" warranting restoration and boutique hotel conversion, original residents are displaced by gentrification. Heritage preservation that does not address equity becomes archaeological performance while communities are erased. Genuine respect for vernacular requires preserving the buildings AND protecting the communities that developed that tradit
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Facts and Testable Items
 
-<WikiExamTable headers={["Structure Type", "Climate/Region", "Key Principles", "Material Base", "Contemporary Relevance"]} rows={[['["Bahay Kubo", "Tropical, monsoon", "Elevation, ventilation, solar shading, water management", "Timber, nipa/cogon", "Passive cooling, climate-responsive design"]', '["Bahay na Bato", "Urban tropical", "Stone mass, courtyard, minimal fenestration/floor, upper residential", "Stone, timber", "Hybrid adaptation, material efficiency"]', '["Tunisian underground", "Desert", "Thermal mass, earth cooling, minimal surface exposure", "Rammed earth, mud brick", "Passive cooling in extreme heat"]', '["African domed", "Savanna", "Acoustic properties, thermal efficiency, structural logic", "Rammed earth, thatch, stone", "Material efficiency, vernacular structural innovation"]', '["Japanese timber", "Seismic, humid", "Articulated joints, flexibility, timber durability", "Wood, plaster, tile", "Seismic resilience, earthquake performance"]', '["Mediterranean", "Hot, dry", "Whitewash thermal reflection, courtyards, thermal mass", "Stone, whitewash, tile", "Thermal control without conditioning"]']]} />
+[SLATECAMP_UI_BLOCK:ui_0006 component="WikiExamTable" status="preserved"]
+Extracted summary:
+- Props: headers="{[\"Structure Type\", \"Climate/Region\", \"Key Principles\", \"Material Base\", \"Contemporary Relevance\"]}", rows="{[['[\"Bahay Kubo\", \"Tropical, monsoon\", \"Elevation, ventilation, solar shading, water management\", \"Timber, nipa/cogon\", \"Passive cooling, climate-responsive design\"]', '[\"Bahay na Bato\", \"Urban tropical\", \"Stone mass, courtyard, minimal fenestration/floor, upper residential\", \"Stone, timber\", \"Hybrid adaptation, material efficiency\"]', '[\"Tunisian underground\", \"Desert\", \"Thermal mass, earth cooling, minimal surface exposure\", \"Rammed earth, mud brick\", \"Passive cooling in extreme heat\"]', '[\"African domed\", \"Savanna\", \"Acoustic properties, thermal efficiency, structural logic\", \"Rammed earth, thatch, stone\", \"Material efficiency, vernacular structural innovation\"]', '[\"Japanese timber\", \"Seismic, humid\", \"Articulated joints, flexibility, timber durability\", \"Wood, plaster, tile\", \"Seismic resilience, earthquake performance\"]', '[\"Mediterranean\", \"Hot, dry\", \"Whitewash thermal reflection, courtyards, thermal mass\", \"Stone, whitewash, tile\", \"Thermal control without conditioning\"]']]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 ## How It's Tested on the LEA
 
-<ExamTip>1. **Theoretical Literacy**: "What does Bernard Rudofsky mean by 'Architecture Without Architects' and why is this concept important for architecture?" (Answer: Vernacular architecture represents sophisticated design by non-professionals; it challenges modernism's idea that only trained architects can design effective buildings; it demonstrates that rational, optimized design can emerge from accumulated experience rather than formal training.)</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: 1. **Theoretical Literacy**: "What does Bernard Rudofsky mean by 'Architecture Without Architects' and why is this concept important for architecture?" (Answer: Vernacular architecture represents sophisticated design by non-professionals; it challenges modernism's idea that only trained architects can design effective buildings; it demonstrates that rational, optimized design can emerge from accumulated experience rather than formal training.)
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>2. **Philippine Vernacular Analysis**: "Analyze the bahay kubo's response to monsoon climate. What design strategies are employed and why?" (Answer: Elevation (flooding/moisture/airflow), steep pitched roof (water runoff), open sides with screens (ventilation), deep eaves (solar shading), nipa thatch (insulation, local material)—each strategy responds directly to climate requirements.)</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: 2. **Philippine Vernacular Analysis**: "Analyze the bahay kubo's response to monsoon climate. What design strategies are employed and why?" (Answer: Elevation (flooding/moisture/airflow), steep pitched roof (water runoff), open sides with screens (ventilation), deep eaves (solar shading), nipa thatch (insulation, local material)—each strategy responds directly to climate requirements.)
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>3. **Material Rationality**: "Why did bahay kubo traditionally use nipa thatch and timber frame rather than stone or concrete?" (Answer: Abundance of local materials; cost-effectiveness; adequate performance in humid tropical climate; repairability with local labor; flexibility and earthquake resilience; sustainability.)</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0009 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: 3. **Material Rationality**: "Why did bahay kubo traditionally use nipa thatch and timber frame rather than stone or concrete?" (Answer: Abundance of local materials; cost-effectiveness; adequate performance in humid tropical climate; repairability with local labor; flexibility and earthquake resilience; sustainability.)
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>4. **Bahay na Bato as Cultural Hybrid**: "How does bahay na bato represent adaptation of colonial typology to local conditions?" (Answer: Spanish stone urban block form modified with tropical fenestration, courtyard ventilation, minimal ground-floor fenestration, and timber upper structure for flexibility—merges colonial typology with Filipino climate response.)</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0010 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: 4. **Bahay na Bato as Cultural Hybrid**: "How does bahay na bato represent adaptation of colonial typology to local conditions?" (Answer: Spanish stone urban block form modified with tropical fenestration, courtyard ventilation, minimal ground-floor fenestration, and timber upper structure for flexibility—merges colonial typology with Filipino climate response.)
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>5. **Contemporary Application**: "How can vernacular architecture principles inform contemporary sustainable design in tropical climates?" (Answer: Passive ventilation strategies, solar control, local material sourcing, site-specific optimization, participatory community engagement—all vernacular principles apply directly to sustainability goals.)</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0011 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: 5. **Contemporary Application**: "How can vernacular architecture principles inform contemporary sustainable design in tropical climates?" (Answer: Passive ventilation strategies, solar control, local material sourcing, site-specific optimization, participatory community engagement—all vernacular principles apply directly to sustainability goals.)
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
-<WikiMistakeCard mistake="Treating Vernacular as Primitive or Unsophisticated" correction="Vernacular architecture embodies sophisticated environmental science, structural engineering, and material understanding." context="Dismissing it as \"simple\" misses its intellectual rigor." />
+[SLATECAMP_UI_BLOCK:ui_0012 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Treating Vernacular as Primitive or Unsophisticated", correction="Vernacular architecture embodies sophisticated environmental science, structural engineering, and material understanding.", context="Dismissing it as \\", simple=true, misses=true, its=true, intellectual=true, rigor=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeCard mistake="Assuming Vernacular is Unchanged and Unchanging" correction="Vernacular evolves constantly; contemporary vernacular builders adopt new materials when accessible." context="Treating vernacular as fixed tradition is romanticization." />
+[SLATECAMP_UI_BLOCK:ui_0013 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Assuming Vernacular is Unchanged and Unchanging", correction="Vernacular evolves constantly; contemporary vernacular builders adopt new materials when accessible.", context="Treating vernacular as fixed tradition is romanticization."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeList mistakes={["Romanticizing Vernacular as Universally Desirable. While vernacular principles are valuable, vernacular structures often embody material constraints (lack of privacy, moisture intrusion, structural vulnerability). Contemporary design should learn principles while addressing material limitations.", "Uncritically Adopting Vernacular Forms Without Climate/Context Match. Vernacular is climate and culture specific. Applying bahay kubo design to temperate climates without adaptation fails.", "Ignoring Contemporary Building Codes and Standards. Vernacular structures may not meet modern fire codes, accessibility standards, or seismic requirements. Integration requires sophisticated adaptation, not naive imitation.", "Confusing Vernacular with Heritage Preservation Theater. Preserving vernacular structures as museum objects or gentrified heritage sites is not the same as learning from vernacular principles. True learning applies vernacular logic to new design."]} />
+[SLATECAMP_UI_BLOCK:ui_0014 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Romanticizing Vernacular as Universally Desirable. While vernacular principles are valuable, vernacular structures often embody material constraints (lack of privacy, moisture intrusion, structural vulnerability). Contemporary design should learn principles while addressing material limitations.\", \"Uncritically Adopting Vernacular Forms Without Climate/Context Match. Vernacular is climate and culture specific. Applying bahay kubo design to temperate climates without adaptation fails.\", \"Ignoring Contemporary Building Codes and Standards. Vernacular structures may not meet modern fire codes, accessibility standards, or seismic requirements. Integration requires sophisticated adaptation, not naive imitation.\", \"Confusing Vernacular with Heritage Preservation Theater. Preserving vernacular structures as museum objects or gentrified heritage sites is not the same as learning from vernacular principles. True learning applies vernacular logic to new design.\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Terms
 

@@ -12,7 +12,7 @@ Before memorizing details from this topic, state the exam task in one sentence: 
 ## Learning Goal
 Distinguish the three Philippine-recognized green building certification systems (BERDE, EDGE, LEED) by scope, point systems, and applicable building types, identify rating levels, and apply sustainable design strategies for certification compliance.
 
-Green building and sustainability concepts integrate environmental performance into architectural design. 
+Green building and sustainability concepts integrate environmental performance into architectural design.
 ## Core Concept
 
 Green building design addresses environmental impact across the full lifecycle of a building—site selection, energy use, water consumption, materials sourcing, indoor environmental quality, and waste management. The Philippines recognizes three major certification frameworks:

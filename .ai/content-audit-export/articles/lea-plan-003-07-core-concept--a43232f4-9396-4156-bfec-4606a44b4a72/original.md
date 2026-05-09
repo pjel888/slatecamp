@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Plan 003 07 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 
 ## Learning Goal
@@ -41,11 +50,19 @@ Special policies apply to IP relocation: alternative sites must be within ancest
 **Urban Worker Housing:** Special programs exist for workers in special economic zones, export processing zones, and large urban employment centers. These programs facilitate housing access for workers with formal employment but limited capital. Financing typically involves employer subsidies or partnerships.
 
 **Internally Displaced Persons (IDPs) Housing:** Conflict-related and disaster-related displacement requires temporary and permanent housing solutions. IDPs differ from relocation residents in legal status and rights; international humanitarian law frameworks apply alongside Philippine law.
-<ArticleMedia id="media-lea-plan-003-07-core-concept" type="image" caption="Specialized Housing Programs — IP, PWD, Senior, Disaster-Affected" description="Diagram of specialized housing programs: Indigenous Peoples (IPRA, ancestral domain), Persons with Disabilities (PWD Act, universal design), Senior Citizens (SC Act, age-friendly), Disaster-Affected (emergency shelters), Economic Zone Workers (dormitories near industrial zones)." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-plan-003-07-core-concept", type="image", caption="Specialized Housing Programs — IP, PWD, Senior, Disaster-Affected", description="Diagram of specialized housing programs: Indigenous Peoples (IPRA, ancestral domain), Persons with Disabilities (PWD Act, universal design), Senior Citizens (SC Act, age-friendly), Disaster-Affected (emergency shelters), Economic Zone Workers (dormitories near industrial zones).", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Provisions
 
-<WikiExamTable headers=["Special Population", "Legal Basis", "Housing Provisions", "Key Considerations"] rows=[["**Indigenous Peoples**", "RA 8371 (IPRA, 1997); RA 10121 (DRRM)", "Community-participatory housing; ancestral land priority; FPIC required", "Land rights + cultural autonomy + livelihood preservation"], ["**Persons with Disabilities**", "RA 7277 (Magna Carta, 1992); accessibility standards", "Accessible design; proximity to medical/rehab services; affordability", "Universal design principles; integration over segregation"], ["**Senior Citizens**", "RA 9257 (2003)", "Proximity to healthcare; accessibility; subsidized rates; assisted living options", "Healthcare access; safety; affordability on fixed income"], ["**Disaster-Affected**", "RA 10121 (DRRM Act, 2010); post-disaster frameworks", "Temporary shelter \u2192 permanent housing; hazard-aware siting; livelihood restoration", "Speed of delivery; trauma sensitivity; hazard avoidance"], ["**Urban Workers**", "Various employer partnership programs", "Employer-subsidized or partnership housing near employment centers", "Affordability; employment proximity; formal sector targeting"]] />
+[SLATECAMP_UI_BLOCK:ui_0002 component="WikiExamTable" status="preserved"]
+Extracted summary:
+- Props: headers="[", Special=true, Population=true, Legal=true, Basis=true, Housing=true, Provisions=true, Key=true, Considerations=true, rows="[[", Indigenous=true, Peoples=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Philippine Context
 
@@ -63,7 +80,11 @@ However, implementation remains uneven. IP housing programs are often underfunde
 
 **Pattern 3 — Program Characteristics:** "What distinguishes disaster-affected housing from standard relocation?" → Speed requirement; trauma sensitivity; hazard-aware site selection; livelihood restoration emphasis.
 
-<Tip>Special housing = tailored to population needs. IPs require FPIC + ancestral land priority. PWDs require universal accessible design. Disaster housing requires speed + livelihood restoration.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Special housing = tailored to population needs. IPs require FPIC + ancestral land priority. PWDs require universal accessible design. Disaster housing requires speed + livelihood restoration.
+[/SLATECAMP_UI_BLOCK]
 
 **Exam Tip:** Know the enabling laws: IPRA (RA 8371) for Indigenous Peoples, RA 9442 (PWD Act) for persons with disabilities, RA 9994 (Senior Citizens Act) for elderly. These mandate specific housing provisions within each population's legal framework.
 
@@ -73,4 +94,8 @@ See **LEA-PLAN-003-01** (Housing Law Framework) for enabling legislation, **LEA-
 
 ## Common Mistakes
 
-<WikiMistakeList mistakes={["Confusing FPIC (Free, Prior, Informed Consent) requirement with simple consultation (FPIC is a legal requirement for IP projects; consultation alone is insufficient)","Assuming special housing programs are larger than mainstream socialized housing (they are actually smaller and often underfunded)","Forgetting that disaster housing must address livelihood restoration (not just shelter provision)","Treating accessible design as optional add-on (it is mandatory under RA 7277 for PWDs)","Believing IP housing must replicate traditional architecture (FPIC and cultural respect do not preclude modern design; they ensure community participation)"]} />
+[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Confusing FPIC (Free, Prior, Informed Consent) requirement with simple consultation (FPIC is a legal requirement for IP projects; consultation alone is insufficient)\",\"Assuming special housing programs are larger than mainstream socialized housing (they are actually smaller and often underfunded)\",\"Forgetting that disaster housing must address livelihood restoration (not just shelter provision)\",\"Treating accessible design as optional add-on (it is mandatory under RA 7277 for PWDs)\",\"Believing IP housing must replicate traditional architecture (FPIC and cultural respect do not preclude modern design; they ensure community participation)\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]

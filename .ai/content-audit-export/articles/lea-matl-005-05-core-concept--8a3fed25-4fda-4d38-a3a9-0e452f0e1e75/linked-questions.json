@@ -1,9 +1,107 @@
 {
   "article_id": "8a3fed25-4fda-4d38-a3a9-0e452f0e1e75",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:6dd70051617e002ba8650dcf4762cceec4e5e3c341c3b4a9e6accdddc792871d",
+  "linked_questions_hash": "sha256:8767ce831801c3d7d949986b974b2abe77f8d0be8c4eac8aeba68b8012227bc3",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "244ccd5b-13d7-4db2-a33c-7cfb603e57f4",
+      "article_id": "8a3fed25-4fda-4d38-a3a9-0e452f0e1e75",
+      "topic_id": "6638a2c2-1bbd-4a83-9d68-9b147f87a4d9",
+      "text": "Fresh concrete exerts pressure on vertical forms (walls, columns). This pressure is calculated as ___ (density × height) and increases with ___. Why does form pressure increase with concrete temperature?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ρg×h; depth. Warmer concrete sets faster, reducing hydrostatic-like pressure buildup. Higher temperature = earlier strength gain = lower form pressure required."
+        },
+        {
+          "id": "b",
+          "text": "ρ/g×h; placement speed (faster placement increases pressure) due to the rapid accumulation of material weight"
+        },
+        {
+          "id": "c",
+          "text": "ρg/h; curing duration (longer curing increases pressure) as the concrete remains fluid for an extended period"
+        },
+        {
+          "id": "d",
+          "text": "ρ+g×h; admixture dosage (more admixtures increase pressure) by altering the mix's viscosity and setting time"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "ρ/g×h is dimensionally incorrect.",
+        "c": "Curing duration doesn't increase pressure; longer curing allows pressure reduction.",
+        "d": "Admixture dosage (accelerators/retarders) affects set time, not directly pressure.",
+        "correct": "Concrete form pressure ≈ ρg×h (weight density × gravity × fluid height). For vertical forms, max pressure occurs at depth. Warmer concrete (~30°C) sets faster than cool concrete (~10°C), so strength develops quicker, reducing time the concrete acts as a fluid. Result: lower peak pressure on forms. Placement rate also affects pressure—rapid placement maintains higher fluid height longer."
+      },
+      "explanation": "ρ/g×h is dimensionally incorrect. Curing duration doesn't increase pressure; longer curing allows pressure reduction. Admixture dosage (accelerators/retarders) affects set time, not directly pressure. Concrete form pressure ≈ ρg×h (weight density × gravity × fluid height). For vertical forms, max pressure occurs at depth. Warmer concrete (~30°C) sets faster than cool concrete (~10°C), so strength develops quicker, reducing time the concrete acts as a fluid. Result: lower peak pressure on forms. Placement rate also affects pressure—rapid placement maintains higher fluid height longer.",
+      "code_citation": "ACI 347R-14; Concrete Construction Handbook",
+      "bloom_level": "understand",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-005-05-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-05-06T15:15:19.728107+00:00",
+      "content_hash": "sha256:8cd3db8da992b4fe7424badc9909c286786a12e40d9824eedb492564473a2868"
+    },
+    {
+      "question_id": "a0afcd79-e164-403c-b298-989acfc65d3c",
+      "article_id": "8a3fed25-4fda-4d38-a3a9-0e452f0e1e75",
+      "topic_id": "6638a2c2-1bbd-4a83-9d68-9b147f87a4d9",
+      "text": "Conventional formwork uses ___ (coco lumber in Philippines) beams and joists supporting ___ decking, with ___ supporting the system at height.",
+      "options": [
+        {
+          "id": "a",
+          "text": "timber; plywood; props (vertical supports)"
+        },
+        {
+          "id": "b",
+          "text": "steel panels; concrete; posts, which are typically used in more permanent structures"
+        },
+        {
+          "id": "c",
+          "text": "aluminum; OSB; jacks, often chosen for their lightweight and reusable properties"
+        },
+        {
+          "id": "d",
+          "text": "plastic; composite; anchors, which are less common in traditional formwork applications"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Steel panels are system formwork, more expensive.",
+        "c": "Aluminum/OSB is less common in Philippine practice; coco lumber dominates.",
+        "d": "Plastic formwork is rare; timber is cost-effective.",
+        "correct": "Conventional formwork: timber beams (coco lumber is economical in Philippines)/joists → plywood decking → props (vertical timber or steel columns) at base. Advantages: flexible, adaptable, low capital cost, reusable ~5–10 times. Standard in Philippine low-rise construction."
+      },
+      "explanation": "Steel panels are system formwork, more expensive. Aluminum/OSB is less common in Philippine practice; coco lumber dominates. Plastic formwork is rare; timber is cost-effective. Conventional formwork: timber beams (coco lumber is economical in Philippines)/joists → plywood decking → props (vertical timber or steel columns) at base. Advantages: flexible, adaptable, low capital cost, reusable ~5–10 times. Standard in Philippine low-rise construction.",
+      "code_citation": "ACI 347R-14; Philippine construction practice",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-005-05-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-05-06T15:15:19.883921+00:00",
+      "content_hash": "sha256:90887cf8a2083db0363ffbcad97bce4b815cf87aab6df720c8530a006aeb87eb"
+    },
     {
       "question_id": "284755c4-dc45-4f7c-bba7-47b452b64c0b",
       "article_id": "8a3fed25-4fda-4d38-a3a9-0e452f0e1e75",
@@ -101,55 +199,6 @@
       "created_at": "2026-03-23T19:27:28.473222+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:bf7e0c7314ef481d123fcfa14968f89a14cab9726c5cde51571775d463ca250c"
-    },
-    {
-      "question_id": "244ccd5b-13d7-4db2-a33c-7cfb603e57f4",
-      "article_id": "8a3fed25-4fda-4d38-a3a9-0e452f0e1e75",
-      "topic_id": "6638a2c2-1bbd-4a83-9d68-9b147f87a4d9",
-      "text": "Fresh concrete exerts pressure on vertical forms (walls, columns). This pressure is calculated as ___ (density × height) and increases with ___. Why does form pressure increase with concrete temperature?",
-      "options": [
-        {
-          "id": "a",
-          "text": "ρg×h; depth. Warmer concrete sets faster, reducing hydrostatic-like pressure buildup. Higher temperature = earlier strength gain = lower form pressure required."
-        },
-        {
-          "id": "b",
-          "text": "ρ/g×h; placement speed (faster placement increases pressure) due to the rapid accumulation of material weight"
-        },
-        {
-          "id": "c",
-          "text": "ρg/h; curing duration (longer curing increases pressure) as the concrete remains fluid for an extended period"
-        },
-        {
-          "id": "d",
-          "text": "ρ+g×h; admixture dosage (more admixtures increase pressure) by altering the mix's viscosity and setting time"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "b": "ρ/g×h is dimensionally incorrect.",
-        "c": "Curing duration doesn't increase pressure; longer curing allows pressure reduction.",
-        "d": "Admixture dosage (accelerators/retarders) affects set time, not directly pressure.",
-        "correct": "Concrete form pressure ≈ ρg×h (weight density × gravity × fluid height). For vertical forms, max pressure occurs at depth. Warmer concrete (~30°C) sets faster than cool concrete (~10°C), so strength develops quicker, reducing time the concrete acts as a fluid. Result: lower peak pressure on forms. Placement rate also affects pressure—rapid placement maintains higher fluid height longer."
-      },
-      "explanation": null,
-      "code_citation": "ACI 347R-14; Concrete Construction Handbook",
-      "bloom_level": "understand",
-      "application_context": "calculation",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-MATL-005-05-004",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:28.473222+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:ddec52fee75374599847e8c8ca9f332ca438f34990ccb485a2d3b8d79319d839"
     },
     {
       "question_id": "8e946cd9-f1b6-4ce3-b33a-8a42da7974c2",
@@ -297,55 +346,6 @@
       "created_at": "2026-03-23T19:27:28.473222+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:8938b6788cd9e831ab3ae5045270dd4f3093db19125532622bd74ea37a7324c5"
-    },
-    {
-      "question_id": "a0afcd79-e164-403c-b298-989acfc65d3c",
-      "article_id": "8a3fed25-4fda-4d38-a3a9-0e452f0e1e75",
-      "topic_id": "6638a2c2-1bbd-4a83-9d68-9b147f87a4d9",
-      "text": "Conventional formwork uses ___ (coco lumber in Philippines) beams and joists supporting ___ decking, with ___ supporting the system at height.",
-      "options": [
-        {
-          "id": "a",
-          "text": "timber; plywood; props (vertical supports)"
-        },
-        {
-          "id": "b",
-          "text": "steel panels; concrete; posts, which are typically used in more permanent structures"
-        },
-        {
-          "id": "c",
-          "text": "aluminum; OSB; jacks, often chosen for their lightweight and reusable properties"
-        },
-        {
-          "id": "d",
-          "text": "plastic; composite; anchors, which are less common in traditional formwork applications"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "b": "Steel panels are system formwork, more expensive.",
-        "c": "Aluminum/OSB is less common in Philippine practice; coco lumber dominates.",
-        "d": "Plastic formwork is rare; timber is cost-effective.",
-        "correct": "Conventional formwork: timber beams (coco lumber is economical in Philippines)/joists → plywood decking → props (vertical timber or steel columns) at base. Advantages: flexible, adaptable, low capital cost, reusable ~5–10 times. Standard in Philippine low-rise construction."
-      },
-      "explanation": null,
-      "code_citation": "ACI 347R-14; Philippine construction practice",
-      "bloom_level": "remember",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.3,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-MATL-005-05-001",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:28.473222+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:df6e5c6d9bf2adb0387f08e6b6aa5c1282d106908bb960aaff5e43a2d4f0f6cf"
     },
     {
       "question_id": "6213ca2c-db50-4081-a733-9f9da9ef384b",

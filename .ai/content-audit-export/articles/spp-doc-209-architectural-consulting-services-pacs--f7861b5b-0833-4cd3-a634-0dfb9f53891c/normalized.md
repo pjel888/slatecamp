@@ -216,7 +216,7 @@ The scope of PACS shall be defined in accordance with the charter, by-laws, poli
 [SLATECAMP_UI_BLOCK:ui_0008 component="ComparisonTable" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: | No. | PACS Service | |---|---| | 6.1 | **Program/project conceptualization and development** | | 6.2 | **Rendering of technical advice, consultation, and/or counselling** | | 6.3 | **Preparation of schematic/concept-level through preliminary plans, drawings, designs and specifications** | | 6.4 | **Teaching, lecturing, coaching, mentoring** | | 6.5 | **Research and Development (R&D)** | | 6.6 | **Documentation** | | 6.7 | **Conduct of pre-investment/pre-feasibility and feasibility studies** | 
+- Text: | No. | PACS Service | |---|---| | 6.1 | **Program/project conceptualization and development** | | 6.2 | **Rendering of technical advice, consultation, and/or counselling** | | 6.3 | **Preparation of schematic/concept-level through preliminary plans, drawings, designs and specifications** | | 6.4 | **Teaching, lecturing, coaching, mentoring** | | 6.5 | **Research and Development (R&D)** | | 6.6 | **Documentation** | | 6.7 | **Conduct of pre-investment/pre-feasibility and feasibility studies** |
 [/SLATECAMP_UI_BLOCK]
 
 

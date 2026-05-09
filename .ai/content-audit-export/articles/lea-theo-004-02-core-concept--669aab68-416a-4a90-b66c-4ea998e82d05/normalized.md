@@ -256,7 +256,7 @@ Extracted summary:
 - Text: (none detected)
 [/SLATECAMP_UI_BLOCK]
 Extracted summary:
-- Props: 
+- Props:
 - Text: Tropical passive design prioritizes ventilation over thermal mass, shading over orientation, and lightweight construction over heavyweight enclosure. The bahay kubo exemplifies all these principles: e
 
 ## Common Mistakes

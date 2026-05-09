@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Theo 004 09 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 
 ## Learning Goal
@@ -7,15 +16,21 @@ Explain the principles of natural ventilation — cross-ventilation, stack effec
 
 ### Driving Forces for Natural Ventilation
 
-<ArticleMedia id="media-lea-theo-004-09-core-concept" type="image" caption="Natural Ventilation Strategies — Cross-Ventilation, Stack Effect, and Wind Scoops" description="Three-panel diagram: (1) Cross-Ventilation — wind-driven airflow through building showing window placement for inlet (windward, lower) and outlet (leeward, higher) with arrows indicating prevailing monsoon wind patterns (SW Habagat, NE Amihan) and building orientation for optimal capture; (2) Stack Effect — buoyancy-driven ventilation showing warm air rising and exhausting through high openings (clerestories, roof vents) while cool air enters through low openings, annotated with temperature differential and stack height relationship; (3) Supplementary strategies — wing walls (creating pressure differentials), wind scoops/catchers (capturing upper-level winds), and courtyard-induced convection." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-theo-004-09-core-concept", type="image", caption="Natural Ventilation Strategies — Cross-Ventilation, Stack Effect, and Wind Scoops", description="Three-panel diagram: (1) Cross-Ventilation — wind-driven airflow through building showing window placement for inlet (windward, lower) and outlet (leeward, higher) with arrows indicating prevailing monsoon wind patterns (SW Habagat, NE Amihan) and building orientation for optimal capture; (2) Stack Effect — buoyancy-driven ventilation showing warm air rising and exhausting through high openings (clerestories, roof vents) while cool air enters through low openings, annotated with temperature differential and stack height relationship; (3) Supplementary strategies — wing walls (creating pressure differentials), wind scoops/catchers (capturing upper-level winds), and courtyard-induced convection.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ### Driving Forces for Natural Ventilation
 
 Natural ventilation operates through two primary mechanisms: **pressure-driven flow** (wind) and **buoyancy-driven flow** (stack effect). Both are perpetual in the Philippine climate; their interaction determines achievable ventilation rates.
 
-<Tip>
-**Memory Aid for Ventilation Mechanisms**: "Wind Pushes, Heat Rises"—wind-driven flow (pressure differential) and stack effect (buoyancy) work together; either can dominate depending on season and time of day. Combined cross-ventilation + stack effect achieves 6-12 ACH, exceeding either mechanism alone.
-</Tip>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Memory Aid for Ventilation Mechanisms**: "Wind Pushes, Heat Rises"—wind-driven flow (pressure differential) and stack effect (buoyancy) work together; either can dominate depending on season and time of day. Combined cross-ventilation + stack effect achieves 6-12 ACH, exceeding either mechanism alone.
+[/SLATECAMP_UI_BLOCK]
 
 #### Wind-Driven Ventilation
 
@@ -51,9 +66,11 @@ Where:
 
 ΔP = 1.2 × 9.81 × 4 × (2.5 / 308) = **0.38 Pa**
 
-<Note>
-Stack effect pressure is modest (0.38 Pa) but essential as backup during low-wind periods. Combined with wind-driven flow (4–8 ACH), stack effect contributes 2–4 ACH, crucial for achieving comfort across all seasons. The 4-meter height differential shown here is achievable in typical 2-story buildings with roof-level exhaust.
-</Note>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Stack effect pressure is modest (0.38 Pa) but essential as backup during low-wind periods. Combined with wind-driven flow (4–8 ACH), stack effect contributes 2–4 ACH, crucial for achieving comfort across all seasons. The 4-meter height differential shown here is achievable in typical 2-story buildings with roof-level exhaust.
+[/SLATECAMP_UI_BLOCK]
 
 This modest pressure creates ventilation rates of 2–4 air changes per hour (ACH) in typical rooms. Combined with wind-driven flow (4–8 ACH), stack effect provides crucial backup during low-wind periods.
 
@@ -74,9 +91,11 @@ In the Philippines:
 - **Well-designed cross-ventilation**: VE = 0.7–0.85 (70–85% of air changes reach occupied spaces)
 - **Poorly configured layouts**: VE = 0.3–0.5 (high air volume but little occupant benefit)
 
-<Warn>
-**Critical Distinction**: Ventilation rate (ACH) alone is insufficient; ventilation efficiency determines whether moving air actually reaches occupants. A building achieving 10 ACH but with poor flow paths (blocked by partitions, furniture) may have lower effective cooling than 6 ACH with optimized flow. Design layouts for unobstructed flow; don't rely on high air changes alone.
-</Warn>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Critical Distinction**: Ventilation rate (ACH) alone is insufficient; ventilation efficiency determines whether moving air actually reaches occupants. A building achieving 10 ACH but with poor flow paths (blocked by partitions, furniture) may have lower effective cooling than 6 ACH with optimized flow. Design layouts for unobstructed flow; don't rely on high air changes alone.
+[/SLATECAMP_UI_BLOCK]
 
 #### Tropical Optimization
 
@@ -170,31 +189,69 @@ This aligns with Philippine Green Building Code emphasis on **climate-responsive
 
 ## Key Facts and Testable Items
 
-<WikiExamTable headers={["Ventilation Strategy", "Achievable ACH (Philippine)", "Optimal Coronas Type", "LEA Focus"]} rows={[["**Cross-Ventilation Only**", "4–6 ACH (wind-dependent)", "Type I, III (seasonal wind)", "Window sizing, orientation, flow paths"], ["**Stack Effect Only**", "2–4 ACH (buoyancy-dependent)", "Type II, IV (low wind)", "Vertical height, temperature differential"], ["**Combined Cross + Stack**", "6–12 ACH (synergistic)", "Type I, III (seasonal wind + thermal buoyancy)", "Integrated design strategy"], ["**Wind Catcher Addition**", "+2–3 ACH (wind-dependent)", "Type I (strong monsoon)", "Height, orientation, duct sizing"], ["**Venturi Roof Geometry**", "+15–25% ACH (modest solo impact)", "Type I, III (daytime heating)", "Roof angle, duct constriction ratio"], ["**Atrium Stack Effect (h=20m)**", "6–10 ACH (vertical rises)", "Type II, IV (perpetual buoyancy)", "Atrium height, opening sizing"], ["**Bahay Kubo Baseline**", "8–10 ACH (all mechanisms synergized)", "Type I, IV (vernacular validation)", "Performance benchmark"], ["**Wind Speed Dependency**", "Varies 2–5 m/s seasonal (Type I)", "Type I (pronounced monsoon)", "Seasonal variation impacts design"], ["**ASHRAE 55 Adaptive Comfort**", "6 ACH minimum for 27–28°C tolerance", "Type I (dry-season cooling)", "Thermal comfort prediction"], ["**Ventilation Efficiency (VE)**", "0.7–0.85 (well-designed) vs. 0.3–0.5 (poor)", "All Types", "Design layout analysis"]]} />
+[SLATECAMP_UI_BLOCK:ui_0005 component="WikiExamTable" status="preserved"]
+Extracted summary:
+- Props: headers="{[\"Ventilation Strategy\", \"Achievable ACH (Philippine)\", \"Optimal Coronas Type\", \"LEA Focus\"]}", rows="{[[\"**Cross-Ventilation Only**\", \"4–6 ACH (wind-dependent)\", \"Type I, III (seasonal wind)\", \"Window sizing, orientation, flow paths\"], [\"**Stack Effect Only**\", \"2–4 ACH (buoyancy-dependent)\", \"Type II, IV (low wind)\", \"Vertical height, temperature differential\"], [\"**Combined Cross + Stack**\", \"6–12 ACH (synergistic)\", \"Type I, III (seasonal wind + thermal buoyancy)\", \"Integrated design strategy\"], [\"**Wind Catcher Addition**\", \"+2–3 ACH (wind-dependent)\", \"Type I (strong monsoon)\", \"Height, orientation, duct sizing\"], [\"**Venturi Roof Geometry**\", \"+15–25% ACH (modest solo impact)\", \"Type I, III (daytime heating)\", \"Roof angle, duct constriction ratio\"], [\"**Atrium Stack Effect (h=20m)**\", \"6–10 ACH (vertical rises)\", \"Type II, IV (perpetual buoyancy)\", \"Atrium height, opening sizing\"], [\"**Bahay Kubo Baseline**\", \"8–10 ACH (all mechanisms synergized)\", \"Type I, IV (vernacular validation)\", \"Performance benchmark\"], [\"**Wind Speed Dependency**\", \"Varies 2–5 m/s seasonal (Type I)\", \"Type I (pronounced monsoon)\", \"Seasonal variation impacts design\"], [\"**ASHRAE 55 Adaptive Comfort**\", \"6 ACH minimum for 27–28°C tolerance\", \"Type I (dry-season cooling)\", \"Thermal comfort prediction\"], [\"**Ventilation Efficiency (VE)**\", \"0.7–0.85 (well-designed) vs. 0.3–0.5 (poor)\", \"All Types\", \"Design layout analysis\"]]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## How It's Tested on the LEA
 
-<ExamTip>1. **Cross-Ventilation Design**: Given a Coronas Type I floor plan with unknown orientation, propose window/door locations for maximum cross-ventilation. Justify orientation perpendicularity to SW monsoon. Calculate ventilation efficiency (VE) assuming 20% window-to-wall ratio.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: 1. **Cross-Ventilation Design**: Given a Coronas Type I floor plan with unknown orientation, propose window/door locations for maximum cross-ventilation. Justify orientation perpendicularity to SW monsoon. Calculate ventilation efficiency (VE) assuming 20% window-to-wall ratio.
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>2. **Stack Effect Calculation**: A 6-meter-tall library space has exterior temp 34°C. Design internal temperatures to achieve 3 K differential (achievable with passive cooling). Calculate resulting stack-effect pressure and estimate ACH contribution. Show calculation.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: 2. **Stack Effect Calculation**: A 6-meter-tall library space has exterior temp 34°C. Design internal temperatures to achieve 3 K differential (achievable with passive cooling). Calculate resulting stack-effect pressure and estimate ACH contribution. Show calculation.
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>3. **Wind Catcher Specification**: For a Coronas Type I office building in Manila (SW wind 225°), specify wind catcher height, duct diameter, and orientation. Estimate ventilation rate using pressure coefficient data. Compare to window-only cross-ventilation.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: 3. **Wind Catcher Specification**: For a Coronas Type I office building in Manila (SW wind 225°), specify wind catcher height, duct diameter, and orientation. Estimate ventilation rate using pressure coefficient data. Compare to window-only cross-ventilation.
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>4. **Bahay Kubo Ventilation Analysis**: Analyze a traditional bahay kubo floor plan. Identify which ventilation mechanisms (cross, stack, wind angle) it employs. Quantify comparative effectiveness vs. modern selead office building of same floor area.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0009 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: 4. **Bahay Kubo Ventilation Analysis**: Analyze a traditional bahay kubo floor plan. Identify which ventilation mechanisms (cross, stack, wind angle) it employs. Quantify comparative effectiveness vs. modern selead office building of same floor area.
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>5. **Multi-Strategy Integration**: For a Coronas Type II hospital (no dry season, perpetual low wind), design a ventilation strategy combining cross-ventilation, stack effect atrium, and supplementary evaporative cooling. Show how each mechanism compensates for seasonal wind deficit.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0010 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: 5. **Multi-Strategy Integration**: For a Coronas Type II hospital (no dry season, perpetual low wind), design a ventilation strategy combining cross-ventilation, stack effect atrium, and supplementary evaporative cooling. Show how each mechanism compensates for seasonal wind deficit.
+[/SLATECAMP_UI_BLOCK]
 
-<Callout>
-Natural ventilation in Philippine buildings exploits cross-ventilation, stack effect, and monsoon wind patterns to displace interior heat without mechanical air conditioning. The bahay kubo demonstrates all three principles simultaneously; modern applications integrate wind catchers and Venturi-effect roof geometries to achieve 8–12 air changes per hour—exceeding mechanical system efficiency in tropical contexts.
-</Callout>
+[SLATECAMP_UI_BLOCK:ui_0011 component="Callout" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Natural ventilation in Philippine buildings exploits cross-ventilation, stack effect, and monsoon wind patterns to displace interior heat without mechanical air conditioning. The bahay kubo demonstrates all three principles simultaneously; modern applications integrate wind catchers and Venturi-effect roof geometries to achieve 8–12 air changes per hour—exceeding mechanical system efficiency in tropical contexts.
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
-<WikiMistakeCard mistake="Single Dominant Strategy" correction="Relying solely on cross-ventilation ignores stack effect as backup." context="Type II/IV climates with weak wind require explicit stack-effect design; isolated windows are insufficient." />
+[SLATECAMP_UI_BLOCK:ui_0012 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Single Dominant Strategy", correction="Relying solely on cross-ventilation ignores stack effect as backup.", context="Type II/IV climates with weak wind require explicit stack-effect design; isolated windows are insufficient."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeCard mistake="Ignoring Seasonal Wind Reversal" correction="In Coronas Type I regions, designing for NE monsoon (Nov–Apr) only fails during SW monsoon (May–Oct) dominance." context="Openings must enable bidirectional flow." />
+[SLATECAMP_UI_BLOCK:ui_0013 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Ignoring Seasonal Wind Reversal", correction="In Coronas Type I regions, designing for NE monsoon (Nov–Apr) only fails during SW monsoon (May–Oct) dominance.", context="Openings must enable bidirectional flow."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeList mistakes={["Inadequate Outlet Sizing. Creating large windward inlets but small leeward outlets causes pressure buildup, reducing flow. Outlets must equal or exceed inlet area.", "Blocking Stack Effect with Partitions. Interior walls and closed doors block vertical stack-effect airflow. Open floor plans and stairwell accessibility are essential.", "Wind Catcher at Insufficient Height. Installing wind catchers at roofline height (same as surrounding buildings) eliminates the height advantage needed to escape street-level turbulence. Minimum 3–4 meters above adjacent structures.", "Underestimating Thermal Comfort Adaptation. Assuming occupants require 24°C in naturally ventilated buildings. ASHRAE 55 adaptive model allows 27–29°C with 6+ ACH; this expansion dramatically reduces cooling loads."]} />
+[SLATECAMP_UI_BLOCK:ui_0014 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Inadequate Outlet Sizing. Creating large windward inlets but small leeward outlets causes pressure buildup, reducing flow. Outlets must equal or exceed inlet area.\", \"Blocking Stack Effect with Partitions. Interior walls and closed doors block vertical stack-effect airflow. Open floor plans and stairwell accessibility are essential.\", \"Wind Catcher at Insufficient Height. Installing wind catchers at roofline height (same as surrounding buildings) eliminates the height advantage needed to escape street-level turbulence. Minimum 3–4 meters above adjacent structures.\", \"Underestimating Thermal Comfort Adaptation. Assuming occupants require 24°C in naturally ventilated buildings. ASHRAE 55 adaptive model allows 27–29°C with 6+ ACH; this expansion dramatically reduces cooling loads.\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Terms
 

@@ -1,8 +1,19 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Theo 002 01 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 
-<Callout>
-Every architectural element exists because it serves a specific human need: walls and roofs provide **shelter**; stairs, ramps, and corridors enable **circulation**; windows, louvers, and vents manage **environmental control**; columns, beams, and foundations provide **structure**. The LEA tests your knowledge of architectural vocabulary extensively—balustrade, vestibule, cortile, fenestration, mansard, dome, piazza, rococo, palazzo, colossal order, pulpit, and shell are among the terms you must recognize in context and apply to specific functional needs.
-</Callout>
+[SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Every architectural element exists because it serves a specific human need: walls and roofs provide **shelter**; stairs, ramps, and corridors enable **circulation**; windows, louvers, and vents manage **environmental control**; columns, beams, and foundations provide **structure**. The LEA tests your knowledge of architectural vocabulary extensively—balustrade, vestibule, cortile, fenestration, mansard, dome, piazza, rococo, palazzo, colossal order, pulpit, and shell are among the terms you must
+[/SLATECAMP_UI_BLOCK]
 
 ## Learning Goal
 
@@ -12,15 +23,27 @@ Classify architectural elements by the four primary human needs they serve (Shel
 
 ### Classification by Human Need
 
-|<ArticleMedia id="media-lea-theo-002-01-core-concept" type="image" caption="Architectural Elements Classified by Human Need — Shelter, Enclosure, Circulation, Structure" alt="Four-quadrant diagram: (1) Shelter — roof, eaves, overhangs, canopies protecting from sun, rain, climate; (2) Enclosure — walls, windows, doors, partitions defining interior and exterior boundaries, includes fenestration types (casement, awning, sliding, fixed); (3) Circulation — corridors, stairs, ramps, elevators, lobbies connecting spaces, including vertical (spiral, dogleg, straight) and horizontal paths; (4) Structure — columns, beams, walls, foundations, frames transferring loads to ground. Each quadrant shows annotated building examples. Key terminology called out: cortile (interior courtyard), colossal order (columns spanning multiple stories), mansard roof (dual-pitch French roof form)." suggestedAsset="Diagram or reference image" status="placeholder" />
+|[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-theo-002-01-core-concept", type="image", caption="Architectural Elements Classified by Human Need — Shelter, Enclosure, Circulation, Structure", alt="Four-quadrant diagram: (1) Shelter — roof, eaves, overhangs, canopies protecting from sun, rain, climate; (2) Enclosure — walls, windows, doors, partitions defining interior and exterior boundaries, includes fenestration types (casement, awning, sliding, fixed); (3) Circulation — corridors, stairs, ramps, elevators, lobbies connecting spaces, including vertical (spiral, dogleg, straight) and horizontal paths; (4) Structure — columns, beams, walls, foundations, frames transferring loads to ground. Each quadrant shows annotated building examples. Key terminology called out: cortile (interior courtyard), colossal order (columns spanning multiple stories), mansard roof (dual-pitch French roof form).", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<ArticleMedia id="media-lea-theo-002-01-core-concept-b" type="image" caption="Circulation Typology — Vertical and Horizontal Movement Systems" alt="Diagram showing circulation typologies through a multi-story building: Horizontal circulation (corridors, galleries, arcades, passageways, bridges connecting wings) and Vertical circulation (stairs — straight, dogleg, spiral, scissor; ramps — straight, switchback; elevators — passenger, freight, hydraulic, machine-room-less; escalators — parallel, crisscross). Each type shown with section and plan view, typical dimensions (corridor widths 900-1800mm, stair tread/riser, ramp slopes), and code references (PD 1096, BP 344, RA 9514)." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0003 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-theo-002-01-core-concept-b", type="image", caption="Circulation Typology — Vertical and Horizontal Movement Systems", alt="Diagram showing circulation typologies through a multi-story building: Horizontal circulation (corridors, galleries, arcades, passageways, bridges connecting wings) and Vertical circulation (stairs — straight, dogleg, spiral, scissor; ramps — straight, switchback; elevators — passenger, freight, hydraulic, machine-room-less; escalators — parallel, crisscross). Each type shown with section and plan view, typical dimensions (corridor widths 900-1800mm, stair tread/riser, ramp slopes), and code references (PD 1096, BP 344, RA 9514).", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ### Classification by Human Need
 
 **Architectural elements** are components of buildings—physical parts that can be named, studied, and understood in terms of their purpose. Rather than memorizing lists of random terms, students must understand that every element serves at least one of four primary human needs.
 
-<Tip>Remember: **S-E-C-S** — Shelter, Enclosure, Circulation, Structure. Every architectural element serves at least one of these four primary human needs.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Remember: **S-E-C-S** — Shelter, Enclosure, Circulation, Structure. Every architectural element serves at least one of these four primary human needs.
+[/SLATECAMP_UI_BLOCK]
 
 ### Shelter: Enclosure and Protection
 
@@ -36,7 +59,11 @@ A **dome** is a curved vault spanning a circular or polygonal opening, often hem
 
 **Fenestration** — the organization and design of windows in a building facade — controls the relationship between inside and outside. A building with large south-facing windows in a cold climate may overheat; the same window in a shaded tropical courtyard may bring needed light and view without thermal penalty. Fenestration design must integrate structure (window frames must be rigid), climate control (glass provides poor insulation), and social responsibility (windows on street sides permit natural surveillance and reduce crime; windows to adjoining properties must respect privacy).
 
-<Note>Fenestration is not about window placement alone—it encompasses the entire system of how windows integrate structure, climate control, and social function into a coherent facade strategy.</Note>
+[SLATECAMP_UI_BLOCK:ui_0005 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Fenestration is not about window placement alone—it encompasses the entire system of how windows integrate structure, climate control, and social function into a coherent facade strategy.
+[/SLATECAMP_UI_BLOCK]
 
 ### Circulation: Movement Through Space
 
@@ -82,7 +109,11 @@ Environmental control systems manage temperature, humidity, light, air quality, 
 
 **Shells** are thin curved surfaces (concrete or other material) that gain strength through curvature, much like an egg or boat hull. Contemporary architects like Félix Candela have used shells to create dramatic, efficient structures. A shell dome or barrel vault can be remarkably thin, light, and economical compared to solid construction.
 
-<Warn>Confusing vaults and shells: a **vault** is a 3D arch distributing loads outward and downward, while a **shell** is a thin curved surface gaining strength through curvature itself. Shells are more efficient but more specialized than vaults.</Warn>
+[SLATECAMP_UI_BLOCK:ui_0006 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Confusing vaults and shells: a **vault** is a 3D arch distributing loads outward and downward, while a **shell** is a thin curved surface gaining strength through curvature itself. Shells are more efficient but more specialized than vaults.
+[/SLATECAMP_UI_BLOCK]
 
 ### Compound Elements: Cortile, Palazzo, Piazza
 
@@ -106,64 +137,68 @@ Architectural terminology also encompasses stylistic periods and ornamental voca
 
 ## Key Facts and Testable Items
 
-<WikiExamTable headers={["Element", "Primary Need", "Definition/Example", "Typical Dimensions/Notes", "LEA Context"]} rows={[['["**Wall**", "Shelter, Structure", "Vertical enclosing plane; resists wind, provides thermal mass", "Thickness 150–300 mm typical (stone thicker; drywall thinner)", "Q: \\"Walls primarily serve which need?\\""]', '["**Roof**", "Shelter", "Sloped or curved surface shedding water and resisting snow/wind loads", "Pitch 20–45° for sloped roofs; slope sheds water and reduces internal span", "Q: \\"A flat roof in a tropical climate risks ___.\\" (Answer: water pooling)"]', '["**Mansard Roof**", "Shelter", "Four-sided roof with lower slope steeper than upper; creates attic space", "Lower slope typically 60–70°; upper slope 30–40°", "Q: \\"The mansard roof originally served which economic advantage?\\""]', '["**Dome**", "Shelter, Structure", "Curved vault spanning circular opening; distributes loads outward and downward", "Pantheon dome: 43.3 m diameter; ~9.0 m oculus opening at top", "Q: \\"A dome transfers loads in which direction?\\" (Answer: outward and downward)"]', '["**Fenestration**", "Environmental control, Shelter", "Organized system of windows in a facade; controls light, view, and heat gain", "Window-to-wall ratio affects solar heat gain and daylighting; typical 30–40%", "Q: \\"Excessive fenestration on the south facade in a tropical climate may cause ___.\\""]', '["**Louver**", "Environmental control", "Horizontal or vertical slats blocking direct sunlight while permitting air and light", "Fixed or operable; angle depends on latitude and sun path", "Q: \\"Louvers primarily control which environmental factor?\\""]', '["**Stair**", "Circulation", "Stepped structure connecting two levels; riser height and tread depth are regulated", "Riser 150–180 mm; tread 250–300 mm; minimum headroom 2.0 m", "Q: \\"A stair with a 200 mm riser violates building codes in which way?\\""]', '["**Balustrade**", "Circulation, Shelter", "Railing composed of balusters (small vertical members) and handrail preventing falls", "Handrail height 860–965 mm (34–38 in.); balusters spaced ≤100 mm (4 in.) to prevent child entrapment", "Q: \\"What is a balustrade?\\""]', '["**Vestibule**", "Circulation, Shelter", "Transitional space connecting exterior and interior; buffers temperature and weather", "Typically 1.5–3 m deep; provides weather/thermal buffer", "Q: \\"A vestibule serves which circulation function?\\""]', '["**Elevator**", "Circulation, Structure", "Mechanical lift for vertical transport; shaft provides structural bracing", "Standard 9-person car ~1.4 m × 1.6 m; larger commercial cars up to 2.1 m × 2.7 m (13–16 persons); shaft adds structural strength", "Q: \\"Elevator shafts contribute to building ___ as well as circulation.\\""]', '["**Arcade/Portico**", "Circulation, Shelter", "Covered walkway with colonnade (columns supporting roof); semi-open to weather", "Column spacing 3–5 m typical; roof height 2.5–3.5 m", "Q: \\"Arcades in hot climates provide which combined benefits?\\""]', '["**Cortile**", "Circulation, Shelter, Environmental control", "Internal courtyard surrounded by arcades; provides light, air, and covered circulation", "Typically 10–25 m per side; surrounded by continuous covered walkways", "Q: \\"A cortile primarily serves which functions?\\""]', '["**Palazzo**", "Shelter, Social", "Italian palace; typically ashlar stone construction with symmetrical facade", "3–4 stories typical; ashlar stone construction; monumental sclea", "Q: \\"Which materials and proportions characterize a palazzo?\\""]', '["**Piazza**", "Social", "Public civic square; gathering place surrounded by important buildings", "Variable size; Piazza Navona ~275 m × 106 m", "Q: \\"A piazza serves which community need?\\""]', '["**Foundation**", "Structure", "Base structure transferring building loads to soil; type depends on soil capacity", "Shallow: slab on grade (good soil); Deep: piles (weak soil)", "Q: \\"Foundation design depends primarily on ___.\\""]', '["**Column**", "Structure", "Vertical member resisting compression; primary structural element in classical architecture", "Spacing 3–5 m typical; diameter depends on load and material", "Q: \\"Columns primarily resist which force?\\""]', '["**Colossal Order**", "Shelter, Aesthetic", "Columns or pilasters spanning 2+ stories; creates visual unity and monumentality", "Emphasizes building height and importance; used in Renaissance and Baroque", "Q: \\"Colossal order was revived in which architectural period?\\""]', '["**Shell**", "Structure, Shelter", "Thin curved surface gaining strength through curvature; efficient spanning structure", "Can be remarkably thin (50–100 mm); used for domes and vaults", "Q: \\"Shell structures are efficient because ___.\\""]', '["**Rococo**", "Aesthetic", "18th-century ornate style with asymmetry, gilding, and elaborate carving; expresses luxury", "Primarily interior decoration; suggests wealth and aristocratic taste", "Q: \\"Rococo style emphasizes which design qualities?\\""]', '["**Pulpit**", "Social", "Raised platform in church for sermon delivery; emphasizes authority and the word", "Typically elevated 1.2–3.0 m above nave floor; ornamental railings and canopy (tester) common", "Q: \\"In a church, the pulpit serves which social function?\\""]']]} />
+[SLATECAMP_UI_BLOCK:ui_0007 component="WikiExamTable" status="preserved"]
+Extracted summary:
+- Props: headers="{[\"Element\", \"Primary Need\", \"Definition/Example\", \"Typical Dimensions/Notes\", \"LEA Context\"]}", rows="{[['[\"**Wall**\", \"Shelter, Structure\", \"Vertical enclosing plane; resists wind, provides thermal mass\", \"Thickness 150–300 mm typical (stone thicker; drywall thinner)\", \"Q: \\\\\"Walls primarily serve which need?\\\\\"\"]', '[\"**Roof**\", \"Shelter\", \"Sloped or curved surface shedding water and resisting snow/wind loads\", \"Pitch 20–45° for sloped roofs; slope sheds water and reduces internal span\", \"Q: \\\\\"A flat roof in a tropical climate risks ___.\\\\\" (Answer: water pooling)\"]', '[\"**Mansard Roof**\", \"Shelter\", \"Four-sided roof with lower slope steeper than upper; creates attic space\", \"Lower slope typically 60–70°; upper slope 30–40°\", \"Q: \\\\\"The mansard roof originally served which economic advantage?\\\\\"\"]', '[\"**Dome**\", \"Shelter, Structure\", \"Curved vault spanning circular opening; distributes loads outward and downward\", \"Pantheon dome: 43.3 m diameter; ~9.0 m oculus opening at top\", \"Q: \\\\\"A dome transfers loads in which direction?\\\\\" (Answer: outward and downward)\"]', '[\"**Fenestration**\", \"Environmental control, Shelter\", \"Organized system of windows in a facade; controls light, view, and heat gain\", \"Window-to-wall ratio affects solar heat gain and daylighting; typical 30–40%\", \"Q: \\\\\"Excessive fenestration on the south facade in a tropical climate may cause ___.\\\\\"\"]', '[\"**Louver**\", \"Environmental control\", \"Horizontal or vertical slats blocking direct sunlight while permitting air and light\", \"Fixed or operable; angle depends on latitude and sun path\", \"Q: \\\\\"Louvers primarily control which environmental factor?\\\\\"\"]', '[\"**Stair**\", \"Circulation\", \"Stepped structure connecting two levels; riser height and tread depth are regulated\", \"Riser 150–180 mm; tread 250–300 mm; minimum headroom 2.0 m\", \"Q: \\\\\"A stair with a 200 mm riser violates building codes in which way?\\\\\"\"]', '[\"**Balustrade**\", \"Circulation, Shelter\", \"Railing composed of balusters (small vertical members) and handrail preventing falls\", \"Handrail height 860–965 mm (34–38 in.); balusters spaced ≤100 mm (4 in.) to prevent child entrapment\", \"Q: \\\\\"What is a balustrade?\\\\\"\"]', '[\"**Vestibule**\", \"Circulation, Shelter\", \"Transitional space connecting exterior and interior; buffers temperature and weather\", \"Typically 1.5–3 m deep; provides weather/thermal buffer\", \"Q: \\\\\"A vestibule serves which circulation function?\\\\\"\"]', '[\"**Elevator**\", \"Circulation, Structure\", \"Mechanical lift for vertical transport; shaft provides structural bracing\", \"Standard 9-person car ~1.4 m × 1.6 m; larger commercial cars up to 2.1 m × 2.7 m (13–16 persons); shaft adds structural strength\", \"Q: \\\\\"Elevator shafts contribute to building ___ as well as circulation.\\\\\"\"]', '[\"**Arcade/Portico**\", \"Circulation, Shelter\", \"Covered walkway with colonnade (columns supporting roof); semi-open to weather\", \"Column spacing 3–5 m typical; roof height 2.5–3.5 m\", \"Q: \\\\\"Arcades in hot climates provide which combined benefits?\\\\\"\"]', '[\"**Cortile**\", \"Circulation, Shelter, Environmental control\", \"Internal courtyard surrounded by arcades; provides light, air, and covered circulation\", \"Typically 10–25 m per side; surrounded by continuous covered walkways\", \"Q: \\\\\"A cortile primarily serves which functions?\\\\\"\"]', '[\"**Palazzo**\", \"Shelter, Social\", \"Italian palace; typically ashlar stone construction with symmetrical facade\", \"3–4 stories typical; ashlar stone construction; monumental sclea\", \"Q: \\\\\"Which materials and proportions characterize a palazzo?\\\\\"\"]', '[\"**Piazza**\", \"Social\", \"Public civic square; gathering place surrounded by important buildings\", \"Variable size; Piazza Navona ~275 m × 106 m\", \"Q: \\\\\"A piazza serves which community need?\\\\\"\"]', '[\"**Foundation**\", \"Structure\", \"Base structure transferring building loads to soil; type depends on soil capacity\", \"Shallow: slab on grade (good soil); Deep: piles (weak soil)\", \"Q: \\\\\"Foundation design depends primarily on ___.\\\\\"\"]', '[\"**Column**\", \"Structure\", \"Vertical member resisting compression; primary structural element in classical architecture\", \"Spacing 3–5 m typical; diameter depends on load and material\", \"Q: \\\\\"Columns primarily resist which force?\\\\\"\"]', '[\"**Colossal Order**\", \"Shelter, Aesthetic\", \"Columns or pilasters spanning 2+ stories; creates visual unity and monumentality\", \"Emphasizes building height and importance; used in Renaissance and Baroque\", \"Q: \\\\\"Colossal order was revived in which architectural period?\\\\\"\"]', '[\"**Shell**\", \"Structure, Shelter\", \"Thin curved surface gaining strength through curvature; efficient spanning structure\", \"Can be remarkably thin (50–100 mm); used for domes and vaults\", \"Q: \\\\\"Shell structures are efficient because ___.\\\\\"\"]', '[\"**Rococo**\", \"Aesthetic\", \"18th-century ornate style with asymmetry, gilding, and elaborate carving; expresses luxury\", \"Primarily interior decoration; suggests wealth and aristocratic taste\", \"Q: \\\\\"Rococo style emphasizes which design qualities?\\\\\"\"]', '[\"**Pulpit**\", \"Social\", \"Raised platform in church for sermon delivery; emphasizes authority and the word\", \"Typically elevated 1.2–3.0 m above nave floor; ornamental railings and canopy (tester) common\", \"Q: \\\\\"In a church, the pulpit serves which social function?\\\\\"\"]']]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 ## How It's Tested on the LEA
 
-<ExamTip>**Pattern 1: Term Recognition in Context**
-*Stem:* "A Renaissance palace features a central open court surrounded by covered colonnaded walkways on all four sides. This central court is called a ___."
-- A) Piazza
-- B) Cortile
-- C) Loggia
-- D) Arcade
-*Answer:* B. A cortile is specifically an internal courtyard surrounded by arcades within a palace, providing light, ventilation, and semi-private circulation.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 1: Term Recognition in Context** *Stem:* "A Renaissance palace features a central open court surrounded by covered colonnaded walkways on all four sides. This central court is called a ___." - A) Piazza - B) Cortile - C) Loggia - D) Arcade *Answer:* B. A cortile is specifically an internal courtyard surrounded by arcades within a palace, providing light, ventilation, and semi-private circulation.
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>**Pattern 2: Need-Based Classification**
-*Stem:* "In a tropical climate, a building facade includes horizontal slats angled to block afternoon sun while permitting air circulation. These slats serve which primary need?"
-- A) Structural stability
-- B) Environmental control
-- C) Social gathering
-- D) Access and circulation
-*Answer:* B. Louvers manage temperature and light (environmental control).</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0009 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 2: Need-Based Classification** *Stem:* "In a tropical climate, a building facade includes horizontal slats angled to block afternoon sun while permitting air circulation. These slats serve which primary need?" - A) Structural stability - B) Environmental control - C) Social gathering - D) Access and circulation *Answer:* B. Louvers manage temperature and light (environmental control).
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>**Pattern 3: Dimensional Knowledge**
-*Stem:* "Building codes require a staircase riser height between 150 and 180 mm. A designer proposes a 200 mm riser. This violates which requirement?"
-- A) Fire safety
-- B) Structural adequacy
-- C) Accessibility and safe stepping
-- D) Ceiling height
-*Answer:* C. Riser height regulation ensures safe, ergonomic stepping for diverse users including elderly and children.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0010 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 3: Dimensional Knowledge** *Stem:* "Building codes require a staircase riser height between 150 and 180 mm. A designer proposes a 200 mm riser. This violates which requirement?" - A) Fire safety - B) Structural adequacy - C) Accessibility and safe stepping - D) Ceiling height *Answer:* C. Riser height regulation ensures safe, ergonomic stepping for diverse users including elderly and children.
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>**Pattern 4: Stylistic and Historical Vocabulary**
-*Stem:* "A building facade features columns extending through three stories, unifying the facade visually from ground to roof. This is an example of ___."
-- A) Colossal order
-- B) Classical order
-- C) Composite order
-- D) Ornamental detail
-*Answer:* A. Colossal (or giant) order specifically refers to columns spanning multiple stories.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0011 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 4: Stylistic and Historical Vocabulary** *Stem:* "A building facade features columns extending through three stories, unifying the facade visually from ground to roof. This is an example of ___." - A) Colossal order - B) Classical order - C) Composite order - D) Ornamental detail *Answer:* A. Colossal (or giant) order specifically refers to columns spanning multiple stories.
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>**Pattern 5: Functional Integration**
-*Stem:* "A 20-story office building requires connection between ground and upper floors. The elevator shaft serves which combined purposes?"
-- A) Circulation only
-- B) Circulation and structural bracing
-- C) Circulation and environmental control
-- D) Circulation and aesthetic expression only
-*Answer:* B. Elevator shafts provide vertical transportation (circulation) and often contain bracing elements that resist lateral forces, strengthening the building's structural system.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0012 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 5: Functional Integration** *Stem:* "A 20-story office building requires connection between ground and upper floors. The elevator shaft serves which combined purposes?" - A) Circulation only - B) Circulation and structural bracing - C) Circulation and environmental control - D) Circulation and aesthetic expression only *Answer:* B. Elevator shafts provide vertical transportation (circulation) and often contain bracing elements that resist lateral forces, strengthening the building's st
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>**Pattern 6: Climate-Appropriate Design**
-*Stem:* "A building in a temperate climate has large south-facing windows; the same window design in a subtropical climate would likely require ___ to prevent thermal discomfort."
-- A) Colored glass
-- B) External louvers or overhangs
-- C) Smaller windows
-- D) Thicker glass
-*Answer:* B. External shading (louvers, overhangs) blocks solar heat gain while maintaining daylighting and view—appropriate to hot climates where windows admit too much heat without shading.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0013 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 6: Climate-Appropriate Design** *Stem:* "A building in a temperate climate has large south-facing windows; the same window design in a subtropical climate would likely require ___ to prevent thermal discomfort." - A) Colored glass - B) External louvers or overhangs - C) Smaller windows - D) Thicker glass *Answer:* B. External shading (louvers, overhangs) blocks solar heat gain while maintaining daylighting and view—appropriate to hot climates where windows admit too much heat without s
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
-<WikiMistakeCard mistake="Confusing Related Terms" correction="Students often conflate cortile, piazza, arcade, and loggia. A cortile is internal and palace-specific; a piazza is external and public; an arcade is a covered walkway element; a loggia is a covered gallery, often part of a larger building." context="Studying floor plans and sectional diagrams helps distinguish these by spatial relationship and function." />
+[SLATECAMP_UI_BLOCK:ui_0014 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Confusing Related Terms", correction="Students often conflate cortile, piazza, arcade, and loggia. A cortile is internal and palace-specific; a piazza is external and public; an arcade is a covered walkway element; a loggia is a covered gallery, often part of a larger building.", context="Studying floor plans and sectional diagrams helps distinguish these by spatial relationship and function."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeCard mistake="Assuming Elements Serve Only One Need" correction="A student might say \"windows are for light\" and miss that fenestration also serves ventilation, view, thermal gain/loss, security (visibility), and symbolic/aesthetic purposes." context="The LEA tests integration—recognizing that a design decision (louver angle, window size, wall material) serves multiple needs simultaneously." />
+[SLATECAMP_UI_BLOCK:ui_0015 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Assuming Elements Serve Only One Need", correction="A student might say \\", windows=true, are=true, for=true, light=true, and=true, miss=true, that=true, fenestration=true, also=true, serves=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeList mistakes={["Ignoring Dimensional Standards. Stair riser heights, balustrade spacing, ceiling clearances, and column spacing are not arbitrary—they are based on human ergonomics, safety, and structural logic. The LEA will test whether you recognize when dimensions violate codes or practical requirements.", "Treating Ornament as Superficial. Rococo, baroque, and classical architectural vocabulary is not decoration applied after design; it is the design. A rococo palazzo's ornament, color, asymmetry, and drama are the building's primary meaning—expressing wealth, taste, and power. Contemporary students sometimes dismiss ornament as wasteful or old-fashioned, but the LEA tests historical literacy—understanding what stylistic choices mean in their context.", "Not Connecting Elements to Climate and Region. Fenestration, roof form, wall thickness, and material choice are not universal—they respond to climate. A mansard roof serves no functional purpose in tropical climates where attic tax exemption is irrelevant and steep roofs shed rain faster. Tropical architecture uses deep eaves, louvers, ventilation, and thin walls; cold climates use small windows, thick insulating walls, and pitched roofs for snow shedding. The LEA may present a design and ask whether it is appropriate to its climate—students must recognize regional architectural logic.", "Confusing Structural Role with Aesthetic Role. A column can be structurally load-bearing or purely decorative. A colossal order column might be load-bearing (true support) or might be applied surface (decorative) while hidden structural members carry loads. Understanding the difference requires careful study of sections and construction details. The LEA may test this distinction implicitly—a design question about a columnaded facade might assume you know whether those columns are structural or ornamental."]} />
+[SLATECAMP_UI_BLOCK:ui_0016 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Ignoring Dimensional Standards. Stair riser heights, balustrade spacing, ceiling clearances, and column spacing are not arbitrary—they are based on human ergonomics, safety, and structural logic. The LEA will test whether you recognize when dimensions violate codes or practical requirements.\", \"Treating Ornament as Superficial. Rococo, baroque, and classical architectural vocabulary is not decoration applied after design; it is the design. A rococo palazzo's ornament, color, asymmetry, and drama are the building's primary meaning—expressing wealth, taste, and power. Contemporary students sometimes dismiss ornament as wasteful or old-fashioned, but the LEA tests historical literacy—understanding what stylistic choices mean in their context.\", \"Not Connecting Elements to Climate and Region. Fenestration, roof form, wall thickness, and material choice are not universal—they respond to climate. A mansard roof serves no functional purpose in tropical climates where attic tax exemption is irrelevant and steep roofs shed rain faster. Tropical architecture uses deep eaves, louvers, ventilation, and thin walls; cold climates use small windows, thick insulating walls, and pitched roofs for snow shedding. The LEA may present a design and ask whether it is appropriate to its climate—students must recognize regional architectural logic.\", \"Confusing Structural Role with Aesthetic Role. A column can be structurally load-bearing or purely decorative. A colossal order column might be load-bearing (true support) or might be applied surface (decorative) while hidden structural members carry loads. Understanding the difference requires careful study of sections and construction details. The LEA may test this distinction implicitly—a design question about a columnaded facade might assume you know whether those columns are structural or ornamental.\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Terms
 
@@ -193,15 +228,17 @@ Architectural terminology also encompasses stylistic periods and ornamental voca
 
 **Vestibule** — A transitional entrance space buffering the exterior and interior environments, controlling temperature, protecting from weather, and marking the threshold of arrival into the building.
 
-<Tip>**SECS Mnemonic:** Every building element serves at least one of these four needs: **S**helter (protection), **E**nclosure (boundaries), **C**irculation (movement), **S**tructure (support). Test yourself by categorizing random elements during study sessions.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0017 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **SECS Mnemonic:** Every building element serves at least one of these four needs: **S**helter (protection), **E**nclosure (boundaries), **C**irculation (movement), **S**tructure (support). Test yourself by categorizing random elements during study sessions.
+[/SLATECAMP_UI_BLOCK]
 
-<RevealBlock prompt="Test yourself — can you identify each principle?" label="Drag to reveal answers">
-- **Balance** → Distribution of visual weight (symmetrical, asymmetrical, radial)
-- **Rhythm** → Repetition of elements creating visual movement and pattern
-- **Emphasis** → Focal point or area of dominance in a composition
-- **Proportion** → Relationship between parts and the whole (scale, ratio, hierarchy)
-- **Unity** → Cohesive whole where all elements work together harmoniously
-</RevealBlock>
+[SLATECAMP_UI_BLOCK:ui_0018 component="RevealBlock" status="preserved"]
+Extracted summary:
+- Props: prompt="Test yourself — can you identify each principle?", label="Drag to reveal answers"
+- Text: - **Balance** → Distribution of visual weight (symmetrical, asymmetrical, radial) - **Rhythm** → Repetition of elements creating visual movement and pattern - **Emphasis** → Focal point or area of dominance in a composition - **Proportion** → Relationship between parts and the whole (scale, ratio, hierarchy) - **Unity** → Cohesive whole where all elements work together harmoniously
+[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 

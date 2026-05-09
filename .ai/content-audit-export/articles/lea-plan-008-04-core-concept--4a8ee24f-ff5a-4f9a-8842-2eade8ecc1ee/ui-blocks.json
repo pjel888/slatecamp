@@ -1,128 +1,14 @@
 {
   "article_id": "4a8ee24f-ff5a-4f9a-8842-2eade8ecc1ee",
   "slug": "lea-plan-008-04-core-concept",
-  "normalized_created_at": "2026-05-04T09:10:36.334Z",
+  "normalized_created_at": "2026-05-09T04:02:58.151Z",
   "parser_version": "ui-block-parser-v1",
-  "original_content_hash": "sha256:474f78393523cde545ae316a58fbdf2794c83b29f4b0173da0740628affb8941",
+  "original_content_hash": "sha256:0321397f1957951d05552477c35489a0fdcfd2eb3d310d0ff6cf2cc17782221a",
   "normalized_content_hash": "sha256:0321397f1957951d05552477c35489a0fdcfd2eb3d310d0ff6cf2cc17782221a",
-  "ui_block_count": 4,
-  "total_blocks": 4,
-  "blocks": [
-    {
-      "block_id": "ui_0001",
-      "block_type": "mdx_component",
-      "component_name": "ArticleMedia",
-      "raw": "<ArticleMedia id=\"media-lea-plan-008-04-core-concept\" type=\"image\" caption=\"Participatory Planning Methods — Community Engagement Workflow\" description=\"Flowchart of participatory planning: community identification → stakeholder mapping → engagement strategy (workshops, public hearings, focus groups) → dialogue facilitation → consensus-building → feedback integration → validation. Top-down vs. bottom-up approaches per RA 7160 participation mandates.\" suggestedAsset=\"Diagram or reference image\" status=\"placeholder\" />",
-      "raw_hash": "sha256:4ce54086404ffced219b548ed0261205698e9cb0c33f89fb803298b89a57218d",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"ArticleMedia\" status=\"preserved\"]\nExtracted summary:\n- Props: id=\"media-lea-plan-008-04-core-concept\", type=\"image\", caption=\"Participatory Planning Methods — Community Engagement Workflow\", description=\"Flowchart of participatory planning: community identification → stakeholder mapping → engagement strategy (workshops, public hearings, focus groups) → dialogue facilitation → consensus-building → feedback integration → validation. Top-down vs. bottom-up approaches per RA 7160 participation mandates.\", suggestedAsset=\"Diagram or reference image\", status=\"placeholder\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:dfa53c8a6a0a5034818a3e1e106b7acc4b4c1d8922f9094a91f8dc684dc3ffcb",
-      "props": {
-        "id": "media-lea-plan-008-04-core-concept",
-        "type": "image",
-        "caption": "Participatory Planning Methods — Community Engagement Workflow",
-        "description": "Flowchart of participatory planning: community identification → stakeholder mapping → engagement strategy (workshops, public hearings, focus groups) → dialogue facilitation → consensus-building → feedback integration → validation. Top-down vs. bottom-up approaches per RA 7160 participation mandates.",
-        "suggestedAsset": "Diagram or reference image",
-        "status": "placeholder"
-      },
-      "props_json": {
-        "id": "media-lea-plan-008-04-core-concept",
-        "type": "image",
-        "caption": "Participatory Planning Methods — Community Engagement Workflow",
-        "description": "Flowchart of participatory planning: community identification → stakeholder mapping → engagement strategy (workshops, public hearings, focus groups) → dialogue facilitation → consensus-building → feedback integration → validation. Top-down vs. bottom-up approaches per RA 7160 participation mandates.",
-        "suggestedAsset": "Diagram or reference image",
-        "status": "placeholder"
-      },
-      "props_text": "id=\"media-lea-plan-008-04-core-concept\" type=\"image\" caption=\"Participatory Planning Methods — Community Engagement Workflow\" description=\"Flowchart of participatory planning: community identification → stakeholder mapping → engagement strategy (workshops, public hearings, focus groups) → dialogue facilitation → consensus-building → feedback integration → validation. Top-down vs. bottom-up approaches per RA 7160 participation mandates.\" suggestedAsset=\"Diagram or reference image\" status=\"placeholder\"",
-      "children_raw": null,
-      "children_text": null,
-      "start_offset": 2607,
-      "end_offset": 3129,
-      "line_start": 26,
-      "line_end": 26,
-      "parser_confidence": "high",
-      "parse_status": "parsed",
-      "warnings": [],
-      "status": "preserved"
-    },
-    {
-      "block_id": "ui_0002",
-      "block_type": "mdx_component",
-      "component_name": "WikiExamTable",
-      "raw": "<WikiExamTable headers={[\"Approach / Theory\", \"Key Principle\", \"Application in CLUPs / Community Planning\"]} rows={[[\"Advocacy Planning (Davidoff, 1965)\", \"Planners advocate for underrepresented communities; multiple competing plans reflect diverse interests\", \"Ensuring marginalized voices (informal settlers, indigenous communities, landless laborers) shape planning outcomes, not just property owners and elites\"], [\"Communicative Planning (Heleay, 1990s)\", \"Planning is dialogue and consensus-building, not technical imposition\", \"CLUP consultations must genuinely engage stakeholders in shaping priorities and zoning, not present pre-decided plans\"], [\"Participatory Rural Appraisal (Chambers, 1983)\", \"Community-led assessment using local knowledge; mapping, ranking, timelines\", \"Barangay-level planning uses PRA tools to surface community priorities, assets, and problems\"], [\"Design Charrette\", \"Facilitated collaborative workshop bringing planners, residents, and stakeholders together\", \"Mixed-use district or neighborhood plan developed through intensive charrette engagement with residents and business owners\"], [\"RA 7160 mandate\", \"CLUPs must include public consultation; Sanggunian adoption\", \"Public consultation period as mandated by RA 7160 and DILG guidelines; Sanggunian hearings before CLUP adoption (specific duration should reference RA 7160 IRR or DILG CLUP Guidebook)\"], [\"RA 9266 (Architecture Act of 2004 / ERA 9266 (Architecture Act of 2004 / Environmental Planner mandate) | Environmental Planners lead CLUPs with community participation | EnP coordinates comprehensive land use planning integrating community input and environmental assessmentsment\"]]} />",
-      "raw_hash": "sha256:00728b228d5853b14b95b58bd3e9b322df18e397e8dd722eca49a1c1a4cd15ca",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"WikiExamTable\" status=\"preserved\"]\nExtracted summary:\n- Props: headers=\"{[\\\"Approach / Theory\\\", \\\"Key Principle\\\", \\\"Application in CLUPs / Community Planning\\\"]}\", rows=\"{[[\\\"Advocacy Planning (Davidoff, 1965)\\\", \\\"Planners advocate for underrepresented communities; multiple competing plans reflect diverse interests\\\", \\\"Ensuring marginalized voices (informal settlers, indigenous communities, landless laborers) shape planning outcomes, not just property owners and elites\\\"], [\\\"Communicative Planning (Heleay, 1990s)\\\", \\\"Planning is dialogue and consensus-building, not technical imposition\\\", \\\"CLUP consultations must genuinely engage stakeholders in shaping priorities and zoning, not present pre-decided plans\\\"], [\\\"Participatory Rural Appraisal (Chambers, 1983)\\\", \\\"Community-led assessment using local knowledge; mapping, ranking, timelines\\\", \\\"Barangay-level planning uses PRA tools to surface community priorities, assets, and problems\\\"], [\\\"Design Charrette\\\", \\\"Facilitated collaborative workshop bringing planners, residents, and stakeholders together\\\", \\\"Mixed-use district or neighborhood plan developed through intensive charrette engagement with residents and business owners\\\"], [\\\"RA 7160 mandate\\\", \\\"CLUPs must include public consultation; Sanggunian adoption\\\", \\\"Public consultation period as mandated by RA 7160 and DILG guidelines; Sanggunian hearings before CLUP adoption (specific duration should reference RA 7160 IRR or DILG CLUP Guidebook)\\\"], [\\\"RA 9266 (Architecture Act of 2004 / ERA 9266 (Architecture Act of 2004 / Environmental Planner mandate) | Environmental Planners lead CLUPs with community participation | EnP coordinates comprehensive land use planning integrating community input and environmental assessmentsment\\\"]]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:d2883a25a572f598fd176c5a36f99f7f26dae560a59b0cf4ba0a86e9f24f25c6",
-      "props": {
-        "headers": "{[\"Approach / Theory\", \"Key Principle\", \"Application in CLUPs / Community Planning\"]}",
-        "rows": "{[[\"Advocacy Planning (Davidoff, 1965)\", \"Planners advocate for underrepresented communities; multiple competing plans reflect diverse interests\", \"Ensuring marginalized voices (informal settlers, indigenous communities, landless laborers) shape planning outcomes, not just property owners and elites\"], [\"Communicative Planning (Heleay, 1990s)\", \"Planning is dialogue and consensus-building, not technical imposition\", \"CLUP consultations must genuinely engage stakeholders in shaping priorities and zoning, not present pre-decided plans\"], [\"Participatory Rural Appraisal (Chambers, 1983)\", \"Community-led assessment using local knowledge; mapping, ranking, timelines\", \"Barangay-level planning uses PRA tools to surface community priorities, assets, and problems\"], [\"Design Charrette\", \"Facilitated collaborative workshop bringing planners, residents, and stakeholders together\", \"Mixed-use district or neighborhood plan developed through intensive charrette engagement with residents and business owners\"], [\"RA 7160 mandate\", \"CLUPs must include public consultation; Sanggunian adoption\", \"Public consultation period as mandated by RA 7160 and DILG guidelines; Sanggunian hearings before CLUP adoption (specific duration should reference RA 7160 IRR or DILG CLUP Guidebook)\"], [\"RA 9266 (Architecture Act of 2004 / ERA 9266 (Architecture Act of 2004 / Environmental Planner mandate) | Environmental Planners lead CLUPs with community participation | EnP coordinates comprehensive land use planning integrating community input and environmental assessmentsment\"]]}"
-      },
-      "props_json": {
-        "headers": "{[\"Approach / Theory\", \"Key Principle\", \"Application in CLUPs / Community Planning\"]}",
-        "rows": "{[[\"Advocacy Planning (Davidoff, 1965)\", \"Planners advocate for underrepresented communities; multiple competing plans reflect diverse interests\", \"Ensuring marginalized voices (informal settlers, indigenous communities, landless laborers) shape planning outcomes, not just property owners and elites\"], [\"Communicative Planning (Heleay, 1990s)\", \"Planning is dialogue and consensus-building, not technical imposition\", \"CLUP consultations must genuinely engage stakeholders in shaping priorities and zoning, not present pre-decided plans\"], [\"Participatory Rural Appraisal (Chambers, 1983)\", \"Community-led assessment using local knowledge; mapping, ranking, timelines\", \"Barangay-level planning uses PRA tools to surface community priorities, assets, and problems\"], [\"Design Charrette\", \"Facilitated collaborative workshop bringing planners, residents, and stakeholders together\", \"Mixed-use district or neighborhood plan developed through intensive charrette engagement with residents and business owners\"], [\"RA 7160 mandate\", \"CLUPs must include public consultation; Sanggunian adoption\", \"Public consultation period as mandated by RA 7160 and DILG guidelines; Sanggunian hearings before CLUP adoption (specific duration should reference RA 7160 IRR or DILG CLUP Guidebook)\"], [\"RA 9266 (Architecture Act of 2004 / ERA 9266 (Architecture Act of 2004 / Environmental Planner mandate) | Environmental Planners lead CLUPs with community participation | EnP coordinates comprehensive land use planning integrating community input and environmental assessmentsment\"]]}"
-      },
-      "props_text": "headers={[\"Approach / Theory\", \"Key Principle\", \"Application in CLUPs / Community Planning\"]} rows={[[\"Advocacy Planning (Davidoff, 1965)\", \"Planners advocate for underrepresented communities; multiple competing plans reflect diverse interests\", \"Ensuring marginalized voices (informal settlers, indigenous communities, landless laborers) shape planning outcomes, not just property owners and elites\"], [\"Communicative Planning (Heleay, 1990s)\", \"Planning is dialogue and consensus-building, not technical imposition\", \"CLUP consultations must genuinely engage stakeholders in shaping priorities and zoning, not present pre-decided plans\"], [\"Participatory Rural Appraisal (Chambers, 1983)\", \"Community-led assessment using local knowledge; mapping, ranking, timelines\", \"Barangay-level planning uses PRA tools to surface community priorities, assets, and problems\"], [\"Design Charrette\", \"Facilitated collaborative workshop bringing planners, residents, and stakeholders together\", \"Mixed-use district or neighborhood plan developed through intensive charrette engagement with residents and business owners\"], [\"RA 7160 mandate\", \"CLUPs must include public consultation; Sanggunian adoption\", \"Public consultation period as mandated by RA 7160 and DILG guidelines; Sanggunian hearings before CLUP adoption (specific duration should reference RA 7160 IRR or DILG CLUP Guidebook)\"], [\"RA 9266 (Architecture Act of 2004 / ERA 9266 (Architecture Act of 2004 / Environmental Planner mandate) | Environmental Planners lead CLUPs with community participation | EnP coordinates comprehensive land use planning integrating community input and environmental assessmentsment\"]]}",
-      "children_raw": null,
-      "children_text": null,
-      "start_offset": 3150,
-      "end_offset": 4836,
-      "line_start": 30,
-      "line_end": 30,
-      "parser_confidence": "high",
-      "parse_status": "parsed",
-      "warnings": [],
-      "status": "preserved"
-    },
-    {
-      "block_id": "ui_0003",
-      "block_type": "mdx_component",
-      "component_name": "Tip",
-      "raw": "<Tip>Memory aid: **Advocacy = Advocacy Planning by Paul Davidoff = advocate for underrepresented voices**. **Communicative = Communicative Planning by Patsy Heleay = planning through dialogue and communication**. **PRA = Participatory Rural Appraisal by Robert Chambers = community mapping and ranking tools**. **Charrette = intensive collaborative design workshop**.</Tip>",
-      "raw_hash": "sha256:d230cd9210e8004dbfc971467bededab4d884c0ece375f8f03eb09f1952d1fcc",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: Memory aid: **Advocacy = Advocacy Planning by Paul Davidoff = advocate for underrepresented voices**. **Communicative = Communicative Planning by Patsy Heleay = planning through dialogue and communication**. **PRA = Participatory Rural Appraisal by Robert Chambers = community mapping and ranking tools**. **Charrette = intensive collaborative design workshop**.\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:6725de91d3200106d0373825d64408113ebe236eafac7a4d0b4b46128f76141b",
-      "props": {},
-      "props_json": {},
-      "props_text": null,
-      "children_raw": "Memory aid: **Advocacy = Advocacy Planning by Paul Davidoff = advocate for underrepresented voices**. **Communicative = Communicative Planning by Patsy Heleay = planning through dialogue and communication**. **PRA = Participatory Rural Appraisal by Robert Chambers = community mapping and ranking tools**. **Charrette = intensive collaborative design workshop**.",
-      "children_text": "Memory aid: **Advocacy = Advocacy Planning by Paul Davidoff = advocate for underrepresented voices**. **Communicative = Communicative Planning by Patsy Heleay = planning through dialogue and communication**. **PRA = Participatory Rural Appraisal by Robert Chambers = community mapping and ranking tools**. **Charrette = intensive collaborative design workshop**.",
-      "start_offset": 6839,
-      "end_offset": 7212,
-      "line_start": 44,
-      "line_end": 44,
-      "parser_confidence": "high",
-      "parse_status": "parsed",
-      "warnings": [],
-      "status": "preserved"
-    },
-    {
-      "block_id": "ui_0004",
-      "block_type": "mdx_component",
-      "component_name": "WikiMistakeList",
-      "raw": "<WikiMistakeList mistakes={[\"Confusing participatory planning with no planning. Participatory planning still produces a CLUP and zoning ordinance; the difference is HOW they are developed—with genuine community involvement, not expert imposition.\", \"Assuming Advocacy Planning means planners are politically neutral. Davidoff argued that planners serving marginalized communities must actively advocate for their interests, not pretend neutrality favors the disadvantaged (it doesn't).\", \"Treating a single public hearing as sufficient participation. RA 7160 requires consultation, but meaningful participation involves multiple touchpoints, diverse engagement methods, and demonstrable influence on the final plan.\", \"Overlooking that design charrettes are different from public hearings. Charrettes are intensive, interactive design sessions where participants collaborate on concepts; hearings are one-way information presentation. Charrettes are more participatory.\"]} />",
-      "raw_hash": "sha256:33135b9fa8cb29783d465c6d2b4d22adc18de009e8664cf4a1fb93803d6c1d19",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0004 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: mistakes=\"{[\\\"Confusing participatory planning with no planning. Participatory planning still produces a CLUP and zoning ordinance; the difference is HOW they are developed—with genuine community involvement, not expert imposition.\\\", \\\"Assuming Advocacy Planning means planners are politically neutral. Davidoff argued that planners serving marginalized communities must actively advocate for their interests, not pretend neutrality favors the disadvantaged (it doesn't).\\\", \\\"Treating a single public hearing as sufficient participation. RA 7160 requires consultation, but meaningful participation involves multiple touchpoints, diverse engagement methods, and demonstrable influence on the final plan.\\\", \\\"Overlooking that design charrettes are different from public hearings. Charrettes are intensive, interactive design sessions where participants collaborate on concepts; hearings are one-way information presentation. Charrettes are more participatory.\\\"]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:53cb62b6b432f7f9c84489a7d7401d0f132c8ab99ec2f2d4b52e5ce595ab4468",
-      "props": {
-        "mistakes": "{[\"Confusing participatory planning with no planning. Participatory planning still produces a CLUP and zoning ordinance; the difference is HOW they are developed—with genuine community involvement, not expert imposition.\", \"Assuming Advocacy Planning means planners are politically neutral. Davidoff argued that planners serving marginalized communities must actively advocate for their interests, not pretend neutrality favors the disadvantaged (it doesn't).\", \"Treating a single public hearing as sufficient participation. RA 7160 requires consultation, but meaningful participation involves multiple touchpoints, diverse engagement methods, and demonstrable influence on the final plan.\", \"Overlooking that design charrettes are different from public hearings. Charrettes are intensive, interactive design sessions where participants collaborate on concepts; hearings are one-way information presentation. Charrettes are more participatory.\"]}"
-      },
-      "props_json": {
-        "mistakes": "{[\"Confusing participatory planning with no planning. Participatory planning still produces a CLUP and zoning ordinance; the difference is HOW they are developed—with genuine community involvement, not expert imposition.\", \"Assuming Advocacy Planning means planners are politically neutral. Davidoff argued that planners serving marginalized communities must actively advocate for their interests, not pretend neutrality favors the disadvantaged (it doesn't).\", \"Treating a single public hearing as sufficient participation. RA 7160 requires consultation, but meaningful participation involves multiple touchpoints, diverse engagement methods, and demonstrable influence on the final plan.\", \"Overlooking that design charrettes are different from public hearings. Charrettes are intensive, interactive design sessions where participants collaborate on concepts; hearings are one-way information presentation. Charrettes are more participatory.\"]}"
-      },
-      "props_text": "mistakes={[\"Confusing participatory planning with no planning. Participatory planning still produces a CLUP and zoning ordinance; the difference is HOW they are developed—with genuine community involvement, not expert imposition.\", \"Assuming Advocacy Planning means planners are politically neutral. Davidoff argued that planners serving marginalized communities must actively advocate for their interests, not pretend neutrality favors the disadvantaged (it doesn't).\", \"Treating a single public hearing as sufficient participation. RA 7160 requires consultation, but meaningful participation involves multiple touchpoints, diverse engagement methods, and demonstrable influence on the final plan.\", \"Overlooking that design charrettes are different from public hearings. Charrettes are intensive, interactive design sessions where participants collaborate on concepts; hearings are one-way information presentation. Charrettes are more participatory.\"]}",
-      "children_raw": null,
-      "children_text": null,
-      "start_offset": 7787,
-      "end_offset": 8762,
-      "line_start": 54,
-      "line_end": 54,
-      "parser_confidence": "high",
-      "parse_status": "parsed",
-      "warnings": [],
-      "status": "preserved"
-    }
-  ],
+  "ui_block_count": 0,
+  "total_blocks": 0,
+  "blocks": [],
   "unknown_blocks": [],
   "unresolved_critical_blocks": [],
-  "ui_blocks_hash": "sha256:17a36e4eaefe3a8e0f069b18f888cb1fe917c72eb180e5a686e444397bcfc088",
-  "normalized_content_hash_sha256": "sha256:0321397f1957951d05552477c35489a0fdcfd2eb3d310d0ff6cf2cc17782221a"
+  "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
 }

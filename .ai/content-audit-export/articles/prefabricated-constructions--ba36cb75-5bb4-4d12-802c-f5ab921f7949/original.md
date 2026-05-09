@@ -1,11 +1,20 @@
 # Prefabricated Constructions
 
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Prefabricated Constructions** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
+
 **Rule XV, Section 1501 — PD 1096 (National Building Code of the Philippines)**
 **LEA Relevance:** Area 2 (Materials & Construction) | Prefab Component Assembly | Modular Construction Trends | Structural Adequacy
 
-<AuthorityContent>
-Per PD 1096 (National Building Code of the Philippines), Rule I Section 104.2 and Rule III, prefabricated assemblies shall meet the fire-resistive requirements of the construction type for which they are approved. All prefabricated structural elements must bear the DPWH Accreditation marking and comply with NSCP 2015 Section 104 for material testing and quality assurance.
-</AuthorityContent>
+[SLATECAMP_UI_BLOCK:ui_0001 component="AuthorityContent" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Per PD 1096 (National Building Code of the Philippines), Rule I Section 104.2 and Rule III, prefabricated assemblies shall meet the fire-resistive requirements of the construction type for which they are approved. All prefabricated structural elements must bear the DPWH Accreditation marking and comply with NSCP 2015 Section 104 for material testing and quality assurance.
+[/SLATECAMP_UI_BLOCK]
 
 ## Learning Goal
 
@@ -17,9 +26,11 @@ Identify the permit and inspection requirements for prefabricated, pre-engineere
 
 ## 1. Hook / Opening Scenario
 
-<ExamTip>
-This section is frequently tested. Pay special attention to the distinctions and exceptions.
-</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0002 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: This section is frequently tested. Pay special attention to the distinctions and exceptions.
+[/SLATECAMP_UI_BLOCK]
 
 The contractor for a Pag-IBIG socialized housing project in Bulacan has just delivered a shipment of precast concrete wall panels and uPVC window frames. Before the lifting crane sets a single panel, you — the architect-of-record — must confirm three things: that the units were tested by an accredited laboratory, that every connection device can develop the full strength of the members as an integral structure, and that a safety engineer is physically present on site. You reach for your copy of the 2004 Revised IRR. This is exactly what Rule XV, Section 1501 was written for.
 
@@ -300,7 +311,7 @@ The Philippine approach to prefabricated construction is contained in a single, 
 ### 5.2 Testing Standards: Philippine vs. USA
 
 | Testing Aspect | Philippine Approach | USA Approach |
-|----------------|--------------------|-----------| 
+|----------------|--------------------|-----------|
 | Fire endurance | Not explicitly referenced to a test method in Section 1501; Rule VI and RA 9514 govern rating requirements | ASTM E119 / UL 263 standard fire test; hourly ratings required |
 | Structural | Referenced to accredited lab; specific test methods not enumerated in Section 1501 | ASTM D5055 (prefab wood I-joists); ACI 318 (precast concrete); AISC (steel) |
 | Weather resistance | Referenced as a testing requirement; specific test not named | ASTM E283 (air leakage), ASTM E331 (water resistance), AAMA test methods for windows |
@@ -423,11 +434,11 @@ Under the 2004 Revised IRR, Rule XV, Section 1501, which of the following is NOT
 
 > **Correct Answer: C — Plasticized PVC (PVC-P)**
 >
-<Note>
-
-The 2004 Revised IRR explicitly names precast concrete, unplasticized polyvinyl chloride (uPVC), and various metal components as approved prefab materials. Plasticized PVC (PVC-P, the flexible variety used in film, flooring, and cable insulation) is not listed. The distinction between uPVC (rigid, structural-grade) and plasticized PVC is significant — only uPVC has the rigidity and dimensional stability for structural prefab applications. Note that the 1977 basic law does not name uPVC at all; this is an IRR-only addition.
-
-</Note>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: The 2004 Revised IRR explicitly names precast concrete, unplasticized polyvinyl chloride (uPVC), and various metal components as approved prefab materials. Plasticized PVC (PVC-P, the flexible variety used in film, flooring, and cable insulation) is not listed. The distinction between uPVC (rigid, structural-grade) and plasticized PVC is significant — only uPVC has the rigidity and dimensional stability for structural prefab applications. Note that the 1977 basic law does not name uPVC at all; t
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -443,11 +454,11 @@ According to PD 1096, Rule XV, Section 1501, every device or system used to conn
 
 > **Correct Answer: B — Develop the strength of the connected members as an integral structure**
 >
-<Note>
-
-Section 1501 states clearly that every connection device must develop the strength of the members as an integral structure — meaning the connection cannot be the weak link. Option A is good practice but not the Code's specific language for connection devices. Option C applies to the units themselves (testing), not specifically to connection devices. Option D has no basis in the Code — connections between concrete panels and steel frames are common and Code-compliant. Note the exception: members forming part of a structural frame per the Code/IRR are exempted from this specific provision.
-
-</Note>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Section 1501 states clearly that every connection device must develop the strength of the members as an integral structure — meaning the connection cannot be the weak link. Option A is good practice but not the Code's specific language for connection devices. Option C applies to the units themselves (testing), not specifically to connection devices. Option D has no basis in the Code — connections between concrete panels and steel frames are common and Code-compliant. Note the exception: members
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -538,7 +549,9 @@ ALE Swipe: Prefabricated buildings require: (1) building permit like any other c
 
 **Interior Doors And Hardware**, **Plastics In Construction**, **Excavation Foundation And Veneer**, **Fire Resistive Construction Ratings**
 
-<Note>
-Cross-reference with the latest NBCP, BP 344, and RA 9514 for current standards and amendments.
-</Note>
+[SLATECAMP_UI_BLOCK:ui_0005 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Cross-reference with the latest NBCP, BP 344, and RA 9514 for current standards and amendments.
+[/SLATECAMP_UI_BLOCK]
 <!-- no-media-needed: existing content format is sufficient without visual media -->

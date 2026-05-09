@@ -1,7 +1,7 @@
 {
   "article_id": "39f480ed-755f-499a-935f-d339e6bb3c87",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:798046ec1ceb763c4b4c57ea31313b3e5766b606f939e191aed163864c9becac",
+  "linked_questions_hash": "sha256:5de07d07df94b9b8b004aa2eaefdee2fe2d93476e4312cabdf5bca621d659557",
   "question_count": 12,
   "questions": [
     {
@@ -39,7 +39,7 @@
         "correct": "'Akbar (r. 1556–1605)' as founder of Mughal architectural patronage and synthesizer of Hindu-Islamic forms.",
         "takeaway": "1556–1605)' as founder of Mughal architectural patronage and synthesizer of Hindu-Islamic forms."
       },
-      "explanation": null,
+      "explanation": "1526 marks the Mughal Empire's beginning under Babur, not Akbar's reign. 1628–1658 dates Shah Jahan's reign, not Akbar's. 1658–1707 dates Aurangzeb's reign. 'Akbar (r. 1556–1605)' as founder of Mughal architectural patronage and synthesizer of Hindu-Islamic forms. 1556–1605)' as founder of Mughal architectural patronage and synthesizer of Hindu-Islamic forms.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -53,8 +53,216 @@
       "model_id": "ALE-HIST-004-07-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:24.126756+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:71065472a1a45f7dfbeb1f7598bb307ef9e1d1c411182c5663d06d18ca6e3e8a"
+      "updated_at": "2026-05-06T14:40:22.251902+00:00",
+      "content_hash": "sha256:b2d8b8723670b4608ec23667d7e91d9bc237251d5a53da14afe04e4744f963bf"
+    },
+    {
+      "question_id": "5b86551e-050f-4527-b035-34f8fbd1daa4",
+      "article_id": "39f480ed-755f-499a-935f-d339e6bb3c87",
+      "topic_id": "985b2164-13d5-4778-bddd-07e1e29a95df",
+      "text": "Which comparison accurately distinguishes Mughal material strategy from Andalusian and Ottoman approaches?",
+      "options": [
+        {
+          "id": "a",
+          "text": "All three traditions use identical materials with no regional distinction, suggesting a uniform approach to material selection"
+        },
+        {
+          "id": "b",
+          "text": "Mughal uses white marble with semi-precious stone inlay; Andalusian uses stucco and tile; Ottoman uses stone and marble with Iznik tilework"
+        },
+        {
+          "id": "c",
+          "text": "Mughal uses only brick; Ottoman uses only stone; Andalusian uses only wood, each reflecting unique regional resources"
+        },
+        {
+          "id": "d",
+          "text": "All three traditions avoid expensive decorative materials, focusing instead on simplicity and cost-effectiveness"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Each tradition employs distinct materials reflecting regional availability and aesthetic priorities.",
+        "c": "All three traditions employ varied materials; these characterizations are inaccurate.",
+        "d": "All three traditions employ expensive decorative materials; cost is not a distinguishing factor.",
+        "correct": "Mughal 'white marble (often with semi-precious stone inlay—jade, lapis lazuli, carnelian, turquoise)'; Andalusian 'stucco, carved wood, glazed tile'; Ottoman 'stone and marble replace brick...Iznik tiles with blue, white, and red glazes.'",
+        "takeaway": "The article describes: Mughal 'white marble (often with semi-precious stone inlay—jade, lapis lazuli, carnelian, turquoise)'; Andalusian 'stucco, carved wood, glazed tile'; Ottoman 'stone and marble replace brick...Iznik tiles with blue, white, and red glazes.'."
+      },
+      "explanation": "Each tradition employs distinct materials reflecting regional availability and aesthetic priorities. All three traditions employ varied materials; these characterizations are inaccurate. All three traditions employ expensive decorative materials; cost is not a distinguishing factor. Mughal 'white marble (often with semi-precious stone inlay—jade, lapis lazuli, carnelian, turquoise)'; Andalusian 'stucco, carved wood, glazed tile'; Ottoman 'stone and marble replace brick...Iznik tiles with blue, white, and red glazes.' The article describes: Mughal 'white marble (often with semi-precious stone inlay—jade, lapis lazuli, carnelian, turquoise)'; Andalusian 'stucco, carved wood, glazed tile'; Ottoman 'stone and marble replace brick...Iznik tiles with blue, white, and red glazes.'.",
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-004-07-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.126756+00:00",
+      "updated_at": "2026-05-06T14:40:22.519349+00:00",
+      "content_hash": "sha256:966ba6f06a2acf650a9e550d1989ed705626429b2f5afe022c9f86ed715eb470"
+    },
+    {
+      "question_id": "a25a7ea9-e1e4-4586-90a8-eea03dc38724",
+      "article_id": "39f480ed-755f-499a-935f-d339e6bb3c87",
+      "topic_id": "985b2164-13d5-4778-bddd-07e1e29a95df",
+      "text": "The Taj Mahal construction spanned from 1632 to which completion date, with the mausoleum itself completed in 1648 and the surrounding complex finished in the second date?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1638"
+        },
+        {
+          "id": "b",
+          "text": "1648"
+        },
+        {
+          "id": "c",
+          "text": "1653"
+        },
+        {
+          "id": "d",
+          "text": "1658"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "1638 is during construction but not the final completion date.",
+        "b": "1648 marks the mausoleum completion, not the full complex.",
+        "d": "1658 marks Shah Jahan's death, not the Taj Mahal's completion.",
+        "correct": "Taj Mahal (Mughal, 1632–1653 CE)' with 'mausoleum completed 1648, surrounding complex finished 1653.'",
+        "takeaway": "The article states: 'Taj Mahal (Mughal, 1632–1653 CE)' with 'mausoleum completed 1648, surrounding complex finished 1653.'."
+      },
+      "explanation": "1638 is during construction but not the final completion date. 1648 marks the mausoleum completion, not the full complex. 1658 marks Shah Jahan's death, not the Taj Mahal's completion. Taj Mahal (Mughal, 1632–1653 CE)' with 'mausoleum completed 1648, surrounding complex finished 1653.' The article states: 'Taj Mahal (Mughal, 1632–1653 CE)' with 'mausoleum completed 1648, surrounding complex finished 1653.'.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "CH"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-004-07-012",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.126756+00:00",
+      "updated_at": "2026-05-06T14:40:22.649546+00:00",
+      "content_hash": "sha256:18ec276ce4cb146e76bf7ebd1c4bb6ec30aab14ecac9dccf470e6598098f517a"
+    },
+    {
+      "question_id": "ce004fbd-ecfe-4608-9da9-ef8128176e67",
+      "article_id": "39f480ed-755f-499a-935f-d339e6bb3c87",
+      "topic_id": "985b2164-13d5-4778-bddd-07e1e29a95df",
+      "text": "Which white marble mausoleum built by Shah Jahan (1632–1653 CE) features a double-shell dome, semi-precious stone inlay, and sits within a formal four-part garden?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Red Fort"
+        },
+        {
+          "id": "b",
+          "text": "Taj Mahal"
+        },
+        {
+          "id": "c",
+          "text": "Jama Masjid"
+        },
+        {
+          "id": "d",
+          "text": "Humayun's Tomb"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The Red Fort is a red sandstone palace complex with courtyards, not a white marble mausoleum.",
+        "c": "The Jama Masjid is a mosque with red sandstone construction, not a marble mausoleum.",
+        "d": "Humayun's Tomb is an earlier mausoleum (1565–1572) that preceded the Taj Mahal's design.",
+        "correct": "The Taj Mahal is explicitly identified as a 'White marble mausoleum, double-shell dome, four minarets, semi-precious stone inlay (parchin kari—jade, lapis lazuli, carnelian, turquoise), charbagh (four-part garden).'",
+        "takeaway": "The Taj Mahal is explicitly identified as a 'White marble mausoleum, double-shell dome, four minarets, semi-precious stone inlay (parchin kari—jade, lapis lazuli, carnelian, turquoise), charbagh (four-part garden).'."
+      },
+      "explanation": "The Red Fort is a red sandstone palace complex with courtyards, not a white marble mausoleum. The Jama Masjid is a mosque with red sandstone construction, not a marble mausoleum. Humayun's Tomb is an earlier mausoleum (1565–1572) that preceded the Taj Mahal's design. The Taj Mahal is explicitly identified as a 'White marble mausoleum, double-shell dome, four minarets, semi-precious stone inlay (parchin kari—jade, lapis lazuli, carnelian, turquoise), charbagh (four-part garden).' The Taj Mahal is explicitly identified as a 'White marble mausoleum, double-shell dome, four minarets, semi-precious stone inlay (parchin kari—jade, lapis lazuli, carnelian, turquoise), charbagh (four-part garden).'.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "ID"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-004-07-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.126756+00:00",
+      "updated_at": "2026-05-06T14:40:22.898321+00:00",
+      "content_hash": "sha256:2dd0ced556cef4aa0d3a80e5ef25a6bbca862debbb8dbd209f9037da097f4695"
+    },
+    {
+      "question_id": "df024e3f-d61b-4e82-986a-e94d6ea66696",
+      "article_id": "39f480ed-755f-499a-935f-d339e6bb3c87",
+      "topic_id": "985b2164-13d5-4778-bddd-07e1e29a95df",
+      "text": "Parchin kari is a Mughal decorative technique that distinguishes the Taj Mahal from other Islamic architectural traditions. What is its primary characteristic?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Flat painted patterns on plaster surfaces with no depth or relief, often used in less significant structures"
+        },
+        {
+          "id": "b",
+          "text": "Semi-precious stone inlay (jade, lapis lazuli, carnelian, turquoise) set into marble in geometric patterns, creating optical effects through light reflection"
+        },
+        {
+          "id": "c",
+          "text": "Three-dimensional corbelled vault systems creating honeycomb effects, which are more typical of Persian architecture"
+        },
+        {
+          "id": "d",
+          "text": "Colored glazed tiles covering entire wall surfaces, a technique more common in Ottoman architecture"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Parchin kari is not flat painting; it involves individual cut and fitted stones.",
+        "c": "This describes muqarnas, not parchin kari.",
+        "d": "This describes Ottoman Iznik tilework, not Mughal inlay.",
+        "correct": "The article defines parchin kari as 'Semi-precious stone inlay (jade, lapis lazuli, carnelian, turquoise) set into marble in geometric patterns; Mughal decorative signature; creates subtle light-reflecting effects.'",
+        "takeaway": "The article defines parchin kari as 'Semi-precious stone inlay (jade, lapis lazuli, carnelian, turquoise) set into marble in geometric patterns; Mughal decorative signature; creates subtle light-reflecting effects.'."
+      },
+      "explanation": "Parchin kari is not flat painting; it involves individual cut and fitted stones. This describes muqarnas, not parchin kari. This describes Ottoman Iznik tilework, not Mughal inlay. The article defines parchin kari as 'Semi-precious stone inlay (jade, lapis lazuli, carnelian, turquoise) set into marble in geometric patterns; Mughal decorative signature; creates subtle light-reflecting effects.' The article defines parchin kari as 'Semi-precious stone inlay (jade, lapis lazuli, carnelian, turquoise) set into marble in geometric patterns; Mughal decorative signature; creates subtle light-reflecting effects.'.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "ST"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-004-07-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.126756+00:00",
+      "updated_at": "2026-05-06T14:40:23.030873+00:00",
+      "content_hash": "sha256:2d3c6a5c31c6802e003429b191cadd7ba22d370715145aa78e60929f77d7ea1e"
     },
     {
       "question_id": "242403eb-90e1-4ba1-8782-bfa885d36e75",
@@ -143,7 +351,7 @@
         "correct": "The charbagh represents the Islamic paradise garden of the Quran, divided into four rivers...Walking through a Mughal garden, the visitor experiences a progression from earthly garden to the building's sanctuary, mirroring spiritual ascent.'",
         "takeaway": "The article states: 'The charbagh represents the Islamic paradise garden of the Quran, divided into four rivers...Walking through a Mughal garden, the visitor experiences a progression from earthly garden to the building's sanctuary, mirroring spiritual ascent.'."
       },
-      "explanation": null,
+      "explanation": "The garden has symbolic and spiritual significance, not merely decorative. The article emphasizes garden and building as 'unified composition' and 'equal partner.' The article describes intentional cosmological integration of garden and architecture. The charbagh represents the Islamic paradise garden of the Quran, divided into four rivers...Walking through a Mughal garden, the visitor experiences a progression from earthly garden to the building's sanctuary, mirroring spiritual ascent.' The article states: 'The charbagh represents the Islamic paradise garden of the Quran, divided into four rivers...Walking through a Mughal garden, the visitor experiences a progression from earthly garden to the building's sanctuary, mirroring spiritual ascent.'.",
       "code_citation": null,
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
@@ -157,8 +365,8 @@
       "model_id": "ALE-HIST-004-07-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:24.126756+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:9d7c35893d9ca189add6557ba4545575ad16d7abafc41597691543cd8ce0ce21"
+      "updated_at": "2026-05-06T14:40:22.388492+00:00",
+      "content_hash": "sha256:13a6f5c99b3d6410dcb3ec624eafb6f3bdec1c38f1199d8bb559d75f1083dc9b"
     },
     {
       "question_id": "fd07afc4-ce8a-44e4-8533-3313651fe9dc",
@@ -211,58 +419,6 @@
       "created_at": "2026-03-23T19:27:24.126756+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:8849785a176d4398c3ae5a61b42961910e3ce266d5287e527df5340fc13a9d61"
-    },
-    {
-      "question_id": "5b86551e-050f-4527-b035-34f8fbd1daa4",
-      "article_id": "39f480ed-755f-499a-935f-d339e6bb3c87",
-      "topic_id": "985b2164-13d5-4778-bddd-07e1e29a95df",
-      "text": "Which comparison accurately distinguishes Mughal material strategy from Andalusian and Ottoman approaches?",
-      "options": [
-        {
-          "id": "a",
-          "text": "All three traditions use identical materials with no regional distinction, suggesting a uniform approach to material selection"
-        },
-        {
-          "id": "b",
-          "text": "Mughal uses white marble with semi-precious stone inlay; Andalusian uses stucco and tile; Ottoman uses stone and marble with Iznik tilework"
-        },
-        {
-          "id": "c",
-          "text": "Mughal uses only brick; Ottoman uses only stone; Andalusian uses only wood, each reflecting unique regional resources"
-        },
-        {
-          "id": "d",
-          "text": "All three traditions avoid expensive decorative materials, focusing instead on simplicity and cost-effectiveness"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Each tradition employs distinct materials reflecting regional availability and aesthetic priorities.",
-        "c": "All three traditions employ varied materials; these characterizations are inaccurate.",
-        "d": "All three traditions employ expensive decorative materials; cost is not a distinguishing factor.",
-        "correct": "Mughal 'white marble (often with semi-precious stone inlay—jade, lapis lazuli, carnelian, turquoise)'; Andalusian 'stucco, carved wood, glazed tile'; Ottoman 'stone and marble replace brick...Iznik tiles with blue, white, and red glazes.'",
-        "takeaway": "The article describes: Mughal 'white marble (often with semi-precious stone inlay—jade, lapis lazuli, carnelian, turquoise)'; Andalusian 'stucco, carved wood, glazed tile'; Ottoman 'stone and marble replace brick...Iznik tiles with blue, white, and red glazes.'."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "analyze",
-      "application_context": "design_application",
-      "practice_context": [
-        "CMP"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-HIST-004-07-010",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:24.126756+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:f340c6dfdb80b099904f93dabdb55085fa033dafadad23db2e44d22c24a46650"
     },
     {
       "question_id": "5cb291f3-01c3-4f48-8ad0-6ba3fc43e4d9",
@@ -421,162 +577,6 @@
       "content_hash": "sha256:6af39ec18863f29a9f80193b6b1bd7ebcf904c683addd8ad956d11c562c8afa7"
     },
     {
-      "question_id": "a25a7ea9-e1e4-4586-90a8-eea03dc38724",
-      "article_id": "39f480ed-755f-499a-935f-d339e6bb3c87",
-      "topic_id": "985b2164-13d5-4778-bddd-07e1e29a95df",
-      "text": "The Taj Mahal construction spanned from 1632 to which completion date, with the mausoleum itself completed in 1648 and the surrounding complex finished in the second date?",
-      "options": [
-        {
-          "id": "a",
-          "text": "1638"
-        },
-        {
-          "id": "b",
-          "text": "1648"
-        },
-        {
-          "id": "c",
-          "text": "1653"
-        },
-        {
-          "id": "d",
-          "text": "1658"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "1638 is during construction but not the final completion date.",
-        "b": "1648 marks the mausoleum completion, not the full complex.",
-        "d": "1658 marks Shah Jahan's death, not the Taj Mahal's completion.",
-        "correct": "Taj Mahal (Mughal, 1632–1653 CE)' with 'mausoleum completed 1648, surrounding complex finished 1653.'",
-        "takeaway": "The article states: 'Taj Mahal (Mughal, 1632–1653 CE)' with 'mausoleum completed 1648, surrounding complex finished 1653.'."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [
-        "CH"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-HIST-004-07-012",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:24.126756+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:7f0e93529b9dba944a3f06bcde85f37e94908d99bbf16a54ef1abebe35eeb484"
-    },
-    {
-      "question_id": "ce004fbd-ecfe-4608-9da9-ef8128176e67",
-      "article_id": "39f480ed-755f-499a-935f-d339e6bb3c87",
-      "topic_id": "985b2164-13d5-4778-bddd-07e1e29a95df",
-      "text": "Which white marble mausoleum built by Shah Jahan (1632–1653 CE) features a double-shell dome, semi-precious stone inlay, and sits within a formal four-part garden?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Red Fort"
-        },
-        {
-          "id": "b",
-          "text": "Taj Mahal"
-        },
-        {
-          "id": "c",
-          "text": "Jama Masjid"
-        },
-        {
-          "id": "d",
-          "text": "Humayun's Tomb"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "The Red Fort is a red sandstone palace complex with courtyards, not a white marble mausoleum.",
-        "c": "The Jama Masjid is a mosque with red sandstone construction, not a marble mausoleum.",
-        "d": "Humayun's Tomb is an earlier mausoleum (1565–1572) that preceded the Taj Mahal's design.",
-        "correct": "The Taj Mahal is explicitly identified as a 'White marble mausoleum, double-shell dome, four minarets, semi-precious stone inlay (parchin kari—jade, lapis lazuli, carnelian, turquoise), charbagh (four-part garden).'",
-        "takeaway": "The Taj Mahal is explicitly identified as a 'White marble mausoleum, double-shell dome, four minarets, semi-precious stone inlay (parchin kari—jade, lapis lazuli, carnelian, turquoise), charbagh (four-part garden).'."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [
-        "ID"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-HIST-004-07-001",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:24.126756+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:3610c6c3dd38157c9d1df4d6b2e99054e6936a09735bed02397c4332a76ea80f"
-    },
-    {
-      "question_id": "df024e3f-d61b-4e82-986a-e94d6ea66696",
-      "article_id": "39f480ed-755f-499a-935f-d339e6bb3c87",
-      "topic_id": "985b2164-13d5-4778-bddd-07e1e29a95df",
-      "text": "Parchin kari is a Mughal decorative technique that distinguishes the Taj Mahal from other Islamic architectural traditions. What is its primary characteristic?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Flat painted patterns on plaster surfaces with no depth or relief, often used in less significant structures"
-        },
-        {
-          "id": "b",
-          "text": "Semi-precious stone inlay (jade, lapis lazuli, carnelian, turquoise) set into marble in geometric patterns, creating optical effects through light reflection"
-        },
-        {
-          "id": "c",
-          "text": "Three-dimensional corbelled vault systems creating honeycomb effects, which are more typical of Persian architecture"
-        },
-        {
-          "id": "d",
-          "text": "Colored glazed tiles covering entire wall surfaces, a technique more common in Ottoman architecture"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Parchin kari is not flat painting; it involves individual cut and fitted stones.",
-        "c": "This describes muqarnas, not parchin kari.",
-        "d": "This describes Ottoman Iznik tilework, not Mughal inlay.",
-        "correct": "The article defines parchin kari as 'Semi-precious stone inlay (jade, lapis lazuli, carnelian, turquoise) set into marble in geometric patterns; Mughal decorative signature; creates subtle light-reflecting effects.'",
-        "takeaway": "The article defines parchin kari as 'Semi-precious stone inlay (jade, lapis lazuli, carnelian, turquoise) set into marble in geometric patterns; Mughal decorative signature; creates subtle light-reflecting effects.'."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [
-        "ST"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-HIST-004-07-002",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:24.126756+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:3396dd103f87f4223c9c2830f74c3cbb2178718fb69d3f73c7b50f00a59d6f7f"
-    },
-    {
       "question_id": "19bacb5d-acfb-40ae-b942-bf77f31271f6",
       "article_id": "39f480ed-755f-499a-935f-d339e6bb3c87",
       "topic_id": "985b2164-13d5-4778-bddd-07e1e29a95df",
@@ -611,7 +611,7 @@
         "correct": "Fatehpur Sikri is identified as 'Red sandstone palace complex...synthesis of Hindu and Islamic forms' built 'to commemorate Sufi saint Sheikh Salim Chishti and celebrate birth of heir Prince Salim' with 'Diwan-i-Aam (public audience hall), Diwan-i-Khas (private audience hall).'",
         "takeaway": "Fatehpur Sikri is identified as 'Red sandstone palace complex...synthesis of Hindu and Islamic forms' built 'to commemorate Sufi saint Sheikh Salim Chishti and celebrate birth of heir Prince Salim' with 'Diwan-i-Aam (public audience hall), Diwan-i-Khas (private audience hall).'."
       },
-      "explanation": null,
+      "explanation": "The Taj Mahal is a white marble mausoleum, not a red sandstone palace complex. The Jama Masjid is primarily a mosque, not a multi-courtyard palace. The Agra Fort is also red sandstone but served different functions than Fatehpur Sikri. Fatehpur Sikri is identified as 'Red sandstone palace complex...synthesis of Hindu and Islamic forms' built 'to commemorate Sufi saint Sheikh Salim Chishti and celebrate birth of heir Prince Salim' with 'Diwan-i-Aam (public audience hall), Diwan-i-Khas (private audience hall).' Fatehpur Sikri is identified as 'Red sandstone palace complex...synthesis of Hindu and Islamic forms' built 'to commemorate Sufi saint Sheikh Salim Chishti and celebrate birth of heir Prince Salim' with 'Diwan-i-Aam (public audience hall), Diwan-i-Khas (private audience hall).'.",
       "code_citation": null,
       "bloom_level": "apply",
       "application_context": "recall",
@@ -625,8 +625,8 @@
       "model_id": "ALE-HIST-004-07-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:24.126756+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:3dba315a068c025a3e67988e6fab11182b2ba76c2d465bb546db1b81fdfc2452"
+      "updated_at": "2026-05-06T14:40:23.16327+00:00",
+      "content_hash": "sha256:2ffb84f4d422c9e11e92536a96f1a8c7745c3ae2d28d111460e557ffcf11c54f"
     }
   ]
 }

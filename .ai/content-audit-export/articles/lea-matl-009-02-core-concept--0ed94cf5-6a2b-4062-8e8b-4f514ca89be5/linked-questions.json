@@ -1,7 +1,7 @@
 {
   "article_id": "0ed94cf5-6a2b-4062-8e8b-4f514ca89be5",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:765b9c2939376c3aecc859cbef440737399b9d59db8511b4762532e90a798ee8",
+  "linked_questions_hash": "sha256:6a66859cfd94af1ba4ad7f5297b047f2072173c1df929eaf70b4607033a89df2",
   "question_count": 10,
   "questions": [
     {
@@ -39,7 +39,7 @@
         "correct": "Division 03 is Concrete and covers all aspects of cast-in-place concrete including mixing, placement, curing, and testing per ACI 301 (Specifications for Structural Concrete) and applicable ASTM standards.",
         "takeaway": "Division 03 is foundational for any construction project involving concrete structures. Memorize the core divisions: 03=Concrete, 04=Masonry, 05=Metals, 06=Wood, 07=Thermal & Moisture, 08=Openings, 09=Finishes."
       },
-      "explanation": null,
+      "explanation": "Division 04 is Masonry, not concrete. Division 05 is Metals (structural steel). Division 07 is Thermal & Moisture Protection (waterproofing, insulation). Division 03 is Concrete and covers all aspects of cast-in-place concrete including mixing, placement, curing, and testing per ACI 301 (Specifications for Structural Concrete) and applicable ASTM standards. Division 03 is foundational for any construction project involving concrete structures. Memorize the core divisions: 03=Concrete, 04=Masonry, 05=Metals, 06=Wood, 07=Thermal & Moisture, 08=Openings, 09=Finishes.",
       "code_citation": "CSI MasterFormat 2018 Division Structure",
       "bloom_level": "remember",
       "application_context": "recall",
@@ -51,30 +51,30 @@
       "model_id": "ALE-MATL-009-02-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.926909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:508ab42a357a2a7bc67edadf4aa2c149b3bfe07d0a2d0ae0bd899bcaf7a75fb9"
+      "updated_at": "2026-05-06T15:42:48.526379+00:00",
+      "content_hash": "sha256:ee241a612af2491d233025e714dc2aff3cf44338e7ce6048c823640d6bd8607f"
     },
     {
-      "question_id": "116f42de-5cee-407a-b14b-318bec2aa3f6",
+      "question_id": "74eba686-bd8c-4ef9-8ef9-8737d665dd19",
       "article_id": "0ed94cf5-6a2b-4062-8e8b-4f514ca89be5",
       "topic_id": "86cf06ff-764f-4996-a343-fff43bff90a8",
-      "text": "Which CSI division covers doors, windows, glazing, and hardware?",
+      "text": "A contractor provides specifications organized as: Scope (1 page), Materials List (1 page), Installation Sequence (2 pages). When the architect attempts to align this with CSI MasterFormat 3-part structure for contract review, what reorganization is needed and why?",
       "options": [
         {
           "id": "a",
-          "text": "Division 08"
+          "text": "Scope and Materials List belong in Part 2: Products; Installation Sequence belongs in Part 3: Execution. However, critical Part 1: General information is missing: quality standards, applicable codes (ASTM, NSCP), testing/inspection requirements, submittals, and warranties. Part 1 must be developed by the architect and added."
         },
         {
           "id": "b",
-          "text": "Division 06"
+          "text": "The contractor's structure is appropriate and requires no reorganization, as it already aligns with industry standards"
         },
         {
           "id": "c",
-          "text": "Division 07"
+          "text": "All content should be consolidated into a single 'General' section, simplifying the document structure"
         },
         {
           "id": "d",
-          "text": "Division 09"
+          "text": "The Scope should be placed in Part 3: Execution instead of Part 2, to better reflect the sequence of work"
         }
       ],
       "correct_option_id": "a",
@@ -83,26 +83,26 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Division 06 covers Wood, Plastics, and Composites (structural wood, not window frames).",
-        "c": "Division 07 covers Thermal & Moisture Protection (waterproofing, insulation, sealants).",
-        "d": "Division 09 covers Finishes (paint, flooring, ceiling systems).",
-        "correct": "Division 08 is Openings and covers all window and door systems, glazing, hardware, and weatherstripping.",
-        "takeaway": "Division 08 (Openings) is distinct from Division 09 (Finishes). This is a frequent exam error: students incorrectly place window or door specifications in Division 09."
+        "b": "The contractor's structure is incomplete; architect intervention is necessary.",
+        "c": "Consolidating into one section loses the benefits of 3-part organization (clarity, coordination).",
+        "d": "Scope is administrative and strategic; it doesn't belong in Part 3 (execution).",
+        "correct": "The contractor's informal structure (Scope, Materials, Installation) lacks the governance framework of Part 1: General. The architect must add quality standards, applicable codes, testing protocols, submittals, and warranties. The contractor's Materials List and Installation Sequence map to CSI Parts 2 and 3, but Part 1 (the foundation) is missing. In Philippine practice, architects often receive contractor specifications and must reformat them into CSI structure, ensuring completeness.",
+        "takeaway": "When reviewing contractor specifications, verify that all three parts are present: Part 1 (quality/standards), Part 2 (products), Part 3 (execution). Missing Part 1 is a common deficiency, particularly in informal specifications."
       },
       "explanation": null,
-      "code_citation": "CSI MasterFormat 2018 Division Structure",
-      "bloom_level": "understand",
-      "application_context": "recall",
+      "code_citation": "CSI SectionFormat Standards; Architectural Specification Review Practice",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
       "practice_context": [],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
       "is_assessment": false,
-      "model_id": "ALE-MATL-009-02-003",
+      "model_id": "ALE-MATL-009-02-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:29.784038+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:4536413ddcfc4621921f95426ae2f78f6beb1cfb7e4c8290a33b14706ef738cc"
+      "content_hash": "sha256:651b9d2dbab40b7d43329959e0d15d7ecd958c918ca60684efb9a1ff32cb0026"
     },
     {
       "question_id": "7e104218-5338-4c24-a709-de5b132b5890",
@@ -255,206 +255,6 @@
       "content_hash": "sha256:43e5f320c827cce263af81e6a87de8616d8912a03ad025b4ca6b7f3685774648"
     },
     {
-      "question_id": "74eba686-bd8c-4ef9-8ef9-8737d665dd19",
-      "article_id": "0ed94cf5-6a2b-4062-8e8b-4f514ca89be5",
-      "topic_id": "86cf06ff-764f-4996-a343-fff43bff90a8",
-      "text": "A contractor provides specifications organized as: Scope (1 page), Materials List (1 page), Installation Sequence (2 pages). When the architect attempts to align this with CSI MasterFormat 3-part structure for contract review, what reorganization is needed and why?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Scope and Materials List belong in Part 2: Products; Installation Sequence belongs in Part 3: Execution. However, critical Part 1: General information is missing: quality standards, applicable codes (ASTM, NSCP), testing/inspection requirements, submittals, and warranties. Part 1 must be developed by the architect and added."
-        },
-        {
-          "id": "b",
-          "text": "The contractor's structure is appropriate and requires no reorganization, as it already aligns with industry standards"
-        },
-        {
-          "id": "c",
-          "text": "All content should be consolidated into a single 'General' section, simplifying the document structure"
-        },
-        {
-          "id": "d",
-          "text": "The Scope should be placed in Part 3: Execution instead of Part 2, to better reflect the sequence of work"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "b": "The contractor's structure is incomplete; architect intervention is necessary.",
-        "c": "Consolidating into one section loses the benefits of 3-part organization (clarity, coordination).",
-        "d": "Scope is administrative and strategic; it doesn't belong in Part 3 (execution).",
-        "correct": "The contractor's informal structure (Scope, Materials, Installation) lacks the governance framework of Part 1: General. The architect must add quality standards, applicable codes, testing protocols, submittals, and warranties. The contractor's Materials List and Installation Sequence map to CSI Parts 2 and 3, but Part 1 (the foundation) is missing. In Philippine practice, architects often receive contractor specifications and must reformat them into CSI structure, ensuring completeness.",
-        "takeaway": "When reviewing contractor specifications, verify that all three parts are present: Part 1 (quality/standards), Part 2 (products), Part 3 (execution). Missing Part 1 is a common deficiency, particularly in informal specifications."
-      },
-      "explanation": null,
-      "code_citation": "CSI SectionFormat Standards; Architectural Specification Review Practice",
-      "bloom_level": "analyze",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-MATL-009-02-009",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:29.784038+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:651b9d2dbab40b7d43329959e0d15d7ecd958c918ca60684efb9a1ff32cb0026"
-    },
-    {
-      "question_id": "79402125-80a4-4032-92aa-c3ec87dbf8a9",
-      "article_id": "0ed94cf5-6a2b-4062-8e8b-4f514ca89be5",
-      "topic_id": "86cf06ff-764f-4996-a343-fff43bff90a8",
-      "text": "The standard CSI specification format consists of three parts. In order, these are Part 1: ___, Part 2: ___, and Part 3: ___.",
-      "options": [
-        {
-          "id": "a",
-          "text": "General; Products; Execution"
-        },
-        {
-          "id": "b",
-          "text": "Products; General; Execution"
-        },
-        {
-          "id": "c",
-          "text": "Execution; General; Products"
-        },
-        {
-          "id": "d",
-          "text": "General; Execution; Products"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "b": "Changing the order disrupts the logical flow from framework to materials to installation.",
-        "c": "Execution cannot precede General because the quality framework is needed first.",
-        "d": "This illogical order would confuse specifications and contractor understanding.",
-        "correct": "The 3-part CSI SectionFormat is standardized as Part 1 (General: quality, standards, testing, submittals), Part 2 (Products: materials and equipment specifications), and Part 3 (Execution: installation procedures and quality control).",
-        "takeaway": "The 3-part format is the industry standard. Always organize: Part 1 (What standards apply?), Part 2 (What is being supplied?), Part 3 (How is it installed?)."
-      },
-      "explanation": null,
-      "code_citation": "CSI SectionFormat Standard",
-      "bloom_level": "remember",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-MATL-009-02-002",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:29.784038+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:86ec3ce6de5f312a94b610482f82391641e825d28433690d3f9583a213845754"
-    },
-    {
-      "question_id": "95df8e2b-8c8b-40bd-91a8-62eee4ab76f7",
-      "article_id": "0ed94cf5-6a2b-4062-8e8b-4f514ca89be5",
-      "topic_id": "86cf06ff-764f-4996-a343-fff43bff90a8",
-      "text": "For a Philippine hospital project in a tropical, high-humidity coastal area, which Division 09 (Finishes) specification requires enhancement beyond standard CSI guidelines to address local climate?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Paint specification should add mold/mildew resistance criteria, UV stability for high-light environments, and washability for pollution and humidity control"
-        },
-        {
-          "id": "b",
-          "text": "Paint specification should remain unchanged from CSI standard, which may not address local environmental challenges"
-        },
-        {
-          "id": "c",
-          "text": "Paint should be specified only in Part 2: Products, omitting climate-specific quality standards in Part 1, which could lead to inadequate performance"
-        },
-        {
-          "id": "d",
-          "text": "Paint specification should defer all decisions to the contractor based on experience, potentially leading to inconsistent quality"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "b": "CSI standards are generic; Philippine architects must add climate-specific performance criteria.",
-        "c": "Quality standards belong in Part 1, not just product selection in Part 2.",
-        "d": "Contractor selection without specified standards leads to disputes over acceptability.",
-        "correct": "Philippine tropical construction requires customization of CSI specifications. High humidity promotes mold growth, intense solar radiation requires UV-stable paint, and coastal/pollution exposure requires washable, durable finishes. These are additions to CSI baseline standards, not replacements.",
-        "takeaway": "CSI MasterFormat is a framework; Philippine architects customize it for local climate, materials availability, and regulatory requirements. Tropical durability, typhoon resistance, and humidity control are regular additions to CSI specifications."
-      },
-      "explanation": null,
-      "code_citation": "Philippine Architectural Practice; CSI Specification Adaptation Guidelines",
-      "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-MATL-009-02-007",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:29.784038+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:52a6f78394f1cec865a25cea40ff7d3f6b2b740337bef710eaf52267b150761c"
-    },
-    {
-      "question_id": "1a970a29-bfa1-4c4b-9650-0b0feb6063ef",
-      "article_id": "0ed94cf5-6a2b-4062-8e8b-4f514ca89be5",
-      "topic_id": "86cf06ff-764f-4996-a343-fff43bff90a8",
-      "text": "A specification states: 'Apply epoxy floor coating in two coats, each at 150 microns dry film thickness. Cure for 72 hours at 23 degrees Celsius before allowing foot traffic.' Which part of the 3-part CSI format is this content most appropriate for?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Part 3: Execution"
-        },
-        {
-          "id": "b",
-          "text": "Part 1: General"
-        },
-        {
-          "id": "c",
-          "text": "Part 2: Products"
-        },
-        {
-          "id": "d",
-          "text": "Part 0: Administrative (outside standard 3-part format)"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "b": "Part 1 addresses quality standards and testing requirements, not application procedures.",
-        "c": "Part 2 specifies the product (epoxy resin type, color, specification).",
-        "d": "Curing and application procedures are not administrative matters.",
-        "correct": "This is Part 3: Execution content. It specifies application procedure (two coats, dry film thickness), installation conditions (temperature), and curing time. These are installation and quality control procedures.",
-        "takeaway": "Application sequences, coating thickness, curing conditions, and installation procedures belong in Part 3. If you're describing how to do the work, it's Part 3."
-      },
-      "explanation": null,
-      "code_citation": "CSI SectionFormat Standard",
-      "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-MATL-009-02-005",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:29.784038+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:52fad74513fbe7e7e2612e676a1eb4aeb98374f7344590585ab4515fd20d3e81"
-    },
-    {
       "question_id": "8c38503e-b527-41ce-9ba5-b484019cdabd",
       "article_id": "0ed94cf5-6a2b-4062-8e8b-4f514ca89be5",
       "topic_id": "86cf06ff-764f-4996-a343-fff43bff90a8",
@@ -503,6 +303,206 @@
       "created_at": "2026-03-23T19:27:29.784038+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:cef666bec604630fe9fea91f0fc7aeb37a5befd58233c5a494cb69ff8c987f60"
+    },
+    {
+      "question_id": "79402125-80a4-4032-92aa-c3ec87dbf8a9",
+      "article_id": "0ed94cf5-6a2b-4062-8e8b-4f514ca89be5",
+      "topic_id": "86cf06ff-764f-4996-a343-fff43bff90a8",
+      "text": "The standard CSI specification format consists of three parts. In order, these are Part 1: ___, Part 2: ___, and Part 3: ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "General; Products; Execution"
+        },
+        {
+          "id": "b",
+          "text": "Products; General; Execution"
+        },
+        {
+          "id": "c",
+          "text": "Execution; General; Products"
+        },
+        {
+          "id": "d",
+          "text": "General; Execution; Products"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Changing the order disrupts the logical flow from framework to materials to installation.",
+        "c": "Execution cannot precede General because the quality framework is needed first.",
+        "d": "This illogical order would confuse specifications and contractor understanding.",
+        "correct": "The 3-part CSI SectionFormat is standardized as Part 1 (General: quality, standards, testing, submittals), Part 2 (Products: materials and equipment specifications), and Part 3 (Execution: installation procedures and quality control).",
+        "takeaway": "The 3-part format is the industry standard. Always organize: Part 1 (What standards apply?), Part 2 (What is being supplied?), Part 3 (How is it installed?)."
+      },
+      "explanation": "Changing the order disrupts the logical flow from framework to materials to installation. Execution cannot precede General because the quality framework is needed first. This illogical order would confuse specifications and contractor understanding. The 3-part CSI SectionFormat is standardized as Part 1 (General: quality, standards, testing, submittals), Part 2 (Products: materials and equipment specifications), and Part 3 (Execution: installation procedures and quality control). The 3-part format is the industry standard. Always organize: Part 1 (What standards apply?), Part 2 (What is being supplied?), Part 3 (How is it installed?).",
+      "code_citation": "CSI SectionFormat Standard",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-009-02-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:29.784038+00:00",
+      "updated_at": "2026-05-06T15:42:48.776159+00:00",
+      "content_hash": "sha256:4c5a5f4cc46a5a146233c197528186d45172fe100a923fba07c6533b7c4bb783"
+    },
+    {
+      "question_id": "95df8e2b-8c8b-40bd-91a8-62eee4ab76f7",
+      "article_id": "0ed94cf5-6a2b-4062-8e8b-4f514ca89be5",
+      "topic_id": "86cf06ff-764f-4996-a343-fff43bff90a8",
+      "text": "For a Philippine hospital project in a tropical, high-humidity coastal area, which Division 09 (Finishes) specification requires enhancement beyond standard CSI guidelines to address local climate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Paint specification should add mold/mildew resistance criteria, UV stability for high-light environments, and washability for pollution and humidity control"
+        },
+        {
+          "id": "b",
+          "text": "Paint specification should remain unchanged from CSI standard, which may not address local environmental challenges"
+        },
+        {
+          "id": "c",
+          "text": "Paint should be specified only in Part 2: Products, omitting climate-specific quality standards in Part 1, which could lead to inadequate performance"
+        },
+        {
+          "id": "d",
+          "text": "Paint specification should defer all decisions to the contractor based on experience, potentially leading to inconsistent quality"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "CSI standards are generic; Philippine architects must add climate-specific performance criteria.",
+        "c": "Quality standards belong in Part 1, not just product selection in Part 2.",
+        "d": "Contractor selection without specified standards leads to disputes over acceptability.",
+        "correct": "Philippine tropical construction requires customization of CSI specifications. High humidity promotes mold growth, intense solar radiation requires UV-stable paint, and coastal/pollution exposure requires washable, durable finishes. These are additions to CSI baseline standards, not replacements.",
+        "takeaway": "CSI MasterFormat is a framework; Philippine architects customize it for local climate, materials availability, and regulatory requirements. Tropical durability, typhoon resistance, and humidity control are regular additions to CSI specifications."
+      },
+      "explanation": "CSI standards are generic; Philippine architects must add climate-specific performance criteria. Quality standards belong in Part 1, not just product selection in Part 2. Contractor selection without specified standards leads to disputes over acceptability. Philippine tropical construction requires customization of CSI specifications. High humidity promotes mold growth, intense solar radiation requires UV-stable paint, and coastal/pollution exposure requires washable, durable finishes. These are additions to CSI baseline standards, not replacements. CSI MasterFormat is a framework; Philippine architects customize it for local climate, materials availability, and regulatory requirements. Tropical durability, typhoon resistance, and humidity control are regular additions to CSI specifications.",
+      "code_citation": "Philippine Architectural Practice; CSI Specification Adaptation Guidelines",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-009-02-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:29.784038+00:00",
+      "updated_at": "2026-05-06T15:42:48.993982+00:00",
+      "content_hash": "sha256:41022f794184d4074bb994bd8ec9d0558360abe32df0127daaa15177900f733d"
+    },
+    {
+      "question_id": "116f42de-5cee-407a-b14b-318bec2aa3f6",
+      "article_id": "0ed94cf5-6a2b-4062-8e8b-4f514ca89be5",
+      "topic_id": "86cf06ff-764f-4996-a343-fff43bff90a8",
+      "text": "Which CSI division covers doors, windows, glazing, and hardware?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Division 08"
+        },
+        {
+          "id": "b",
+          "text": "Division 06"
+        },
+        {
+          "id": "c",
+          "text": "Division 07"
+        },
+        {
+          "id": "d",
+          "text": "Division 09"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Division 06 covers Wood, Plastics, and Composites (structural wood, not window frames).",
+        "c": "Division 07 covers Thermal & Moisture Protection (waterproofing, insulation, sealants).",
+        "d": "Division 09 covers Finishes (paint, flooring, ceiling systems).",
+        "correct": "Division 08 is Openings and covers all window and door systems, glazing, hardware, and weatherstripping.",
+        "takeaway": "Division 08 (Openings) is distinct from Division 09 (Finishes). This is a frequent exam error: students incorrectly place window or door specifications in Division 09."
+      },
+      "explanation": "Division 06 covers Wood, Plastics, and Composites (structural wood, not window frames). Division 07 covers Thermal & Moisture Protection (waterproofing, insulation, sealants). Division 09 covers Finishes (paint, flooring, ceiling systems). Division 08 is Openings and covers all window and door systems, glazing, hardware, and weatherstripping. Division 08 (Openings) is distinct from Division 09 (Finishes). This is a frequent exam error: students incorrectly place window or door specifications in Division 09.",
+      "code_citation": "CSI MasterFormat 2018 Division Structure",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-009-02-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:29.784038+00:00",
+      "updated_at": "2026-05-06T15:42:48.656122+00:00",
+      "content_hash": "sha256:bc178a2c7f149308ef5efde328850d6126cb27973e5fd783f92638f26e32bc4e"
+    },
+    {
+      "question_id": "1a970a29-bfa1-4c4b-9650-0b0feb6063ef",
+      "article_id": "0ed94cf5-6a2b-4062-8e8b-4f514ca89be5",
+      "topic_id": "86cf06ff-764f-4996-a343-fff43bff90a8",
+      "text": "A specification states: 'Apply epoxy floor coating in two coats, each at 150 microns dry film thickness. Cure for 72 hours at 23 degrees Celsius before allowing foot traffic.' Which part of the 3-part CSI format is this content most appropriate for?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Part 3: Execution"
+        },
+        {
+          "id": "b",
+          "text": "Part 1: General"
+        },
+        {
+          "id": "c",
+          "text": "Part 2: Products"
+        },
+        {
+          "id": "d",
+          "text": "Part 0: Administrative (outside standard 3-part format)"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Part 1 addresses quality standards and testing requirements, not application procedures.",
+        "c": "Part 2 specifies the product (epoxy resin type, color, specification).",
+        "d": "Curing and application procedures are not administrative matters.",
+        "correct": "This is Part 3: Execution content. It specifies application procedure (two coats, dry film thickness), installation conditions (temperature), and curing time. These are installation and quality control procedures.",
+        "takeaway": "Application sequences, coating thickness, curing conditions, and installation procedures belong in Part 3. If you're describing how to do the work, it's Part 3."
+      },
+      "explanation": "Part 1 addresses quality standards and testing requirements, not application procedures. Part 2 specifies the product (epoxy resin type, color, specification). Curing and application procedures are not administrative matters. This is Part 3: Execution content. It specifies application procedure (two coats, dry film thickness), installation conditions (temperature), and curing time. These are installation and quality control procedures. Application sequences, coating thickness, curing conditions, and installation procedures belong in Part 3. If you're describing how to do the work, it's Part 3.",
+      "code_citation": "CSI SectionFormat Standard",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-009-02-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:29.784038+00:00",
+      "updated_at": "2026-05-06T15:42:49.114595+00:00",
+      "content_hash": "sha256:cf1b5e0115025d69ae0d153a887358b2ec8a28f88838c71b714bfefb676a3e60"
     }
   ]
 }

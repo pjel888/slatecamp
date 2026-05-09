@@ -1,100 +1,14 @@
 {
   "article_id": "f122ad42-0858-4bb6-ac19-6a788bac4c43",
   "slug": "lea-strc-007-03-core-concept",
-  "normalized_created_at": "2026-05-04T09:10:36.018Z",
+  "normalized_created_at": "2026-05-09T04:02:55.655Z",
   "parser_version": "ui-block-parser-v1",
-  "original_content_hash": "sha256:fde48d0c908906be29e25fad79e100e69b25a8556d9cb87f215c5bbbe3ff1218",
+  "original_content_hash": "sha256:25fd37d8cc9fd789ef0bab7709a4edd0eebcd5b4d14df23c2495f2e0e09c879a",
   "normalized_content_hash": "sha256:25fd37d8cc9fd789ef0bab7709a4edd0eebcd5b4d14df23c2495f2e0e09c879a",
-  "ui_block_count": 3,
-  "total_blocks": 3,
-  "blocks": [
-    {
-      "block_id": "ui_0001",
-      "block_type": "mdx_component",
-      "component_name": "ArticleMedia",
-      "raw": "<ArticleMedia id=\"media-lea-strc-007-03-core-concept\" type=\"image\" caption=\"Deflection Limits — NSCP Span-to-Depth Ratios\" description=\"Reference diagram showing NSCP minimum thickness (h) for deflection control: (1) Simply supported — L/16; (2) One end continuous — L/18.5; (3) Both ends continuous — L/21; (4) Cantilever — L/8. Comparison of immediate vs long-term deflection (creep + shrinkage). Single-span beam with deflected shape showing Δallowable (L/360 for roofs, L/240 for floors).\" suggestedAsset=\"Diagram or reference image\" status=\"placeholder\" />",
-      "raw_hash": "sha256:d2a03462a88e5603f043088513b33ad24808bb4c748f50ec6324179a4d0ba5f6",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"ArticleMedia\" status=\"preserved\"]\nExtracted summary:\n- Props: id=\"media-lea-strc-007-03-core-concept\", type=\"image\", caption=\"Deflection Limits — NSCP Span-to-Depth Ratios\", description=\"Reference diagram showing NSCP minimum thickness (h) for deflection control: (1) Simply supported — L/16; (2) One end continuous — L/18.5; (3) Both ends continuous — L/21; (4) Cantilever — L/8. Comparison of immediate vs long-term deflection (creep + shrinkage). Single-span beam with deflected shape showing Δallowable (L/360 for roofs, L/240 for floors).\", suggestedAsset=\"Diagram or reference image\", status=\"placeholder\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:0b2a0b42a09e5aeaf183317979645191cc5a7052aa3691578c8839f6a088d327",
-      "props": {
-        "id": "media-lea-strc-007-03-core-concept",
-        "type": "image",
-        "caption": "Deflection Limits — NSCP Span-to-Depth Ratios",
-        "description": "Reference diagram showing NSCP minimum thickness (h) for deflection control: (1) Simply supported — L/16; (2) One end continuous — L/18.5; (3) Both ends continuous — L/21; (4) Cantilever — L/8. Comparison of immediate vs long-term deflection (creep + shrinkage). Single-span beam with deflected shape showing Δallowable (L/360 for roofs, L/240 for floors).",
-        "suggestedAsset": "Diagram or reference image",
-        "status": "placeholder"
-      },
-      "props_json": {
-        "id": "media-lea-strc-007-03-core-concept",
-        "type": "image",
-        "caption": "Deflection Limits — NSCP Span-to-Depth Ratios",
-        "description": "Reference diagram showing NSCP minimum thickness (h) for deflection control: (1) Simply supported — L/16; (2) One end continuous — L/18.5; (3) Both ends continuous — L/21; (4) Cantilever — L/8. Comparison of immediate vs long-term deflection (creep + shrinkage). Single-span beam with deflected shape showing Δallowable (L/360 for roofs, L/240 for floors).",
-        "suggestedAsset": "Diagram or reference image",
-        "status": "placeholder"
-      },
-      "props_text": "id=\"media-lea-strc-007-03-core-concept\" type=\"image\" caption=\"Deflection Limits — NSCP Span-to-Depth Ratios\" description=\"Reference diagram showing NSCP minimum thickness (h) for deflection control: (1) Simply supported — L/16; (2) One end continuous — L/18.5; (3) Both ends continuous — L/21; (4) Cantilever — L/8. Comparison of immediate vs long-term deflection (creep + shrinkage). Single-span beam with deflected shape showing Δallowable (L/360 for roofs, L/240 for floors).\" suggestedAsset=\"Diagram or reference image\" status=\"placeholder\"",
-      "children_raw": null,
-      "children_text": null,
-      "start_offset": 637,
-      "end_offset": 1198,
-      "line_start": 13,
-      "line_end": 13,
-      "parser_confidence": "high",
-      "parse_status": "parsed",
-      "warnings": [],
-      "status": "preserved"
-    },
-    {
-      "block_id": "ui_0002",
-      "block_type": "mdx_component",
-      "component_name": "Warn",
-      "raw": "<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>",
-      "raw_hash": "sha256:ba1ca1d96638cbbb2a106c0a137a0e03cdff45255a7e66fe9c8d1e126722098c",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"Warn\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: These are frequently tested traps. Memorize them to avoid losing easy points on exam day.\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:d0296104f12c4f343cd11410b78ed3e9527f44531aad348d21bbff4e6e3543cb",
-      "props": {},
-      "props_json": {},
-      "props_text": null,
-      "children_raw": "These are frequently tested traps. Memorize them to avoid losing easy points on exam day.",
-      "children_text": "These are frequently tested traps. Memorize them to avoid losing easy points on exam day.",
-      "start_offset": 4489,
-      "end_offset": 4591,
-      "line_start": 77,
-      "line_end": 77,
-      "parser_confidence": "high",
-      "parse_status": "parsed",
-      "warnings": [],
-      "status": "preserved"
-    },
-    {
-      "block_id": "ui_0003",
-      "block_type": "mdx_component",
-      "component_name": "WikiMistakeList",
-      "raw": "<WikiMistakeList mistakes={[ \n \"Simply supported slab = $L/16$ — WRONG. $L/16$ is for beams; slab = $L/20$.\", \n \"Using ACI's 40 mm top slab rule — WRONG. NSCP 2015 requires 50 mm minimum for Philippine projects.\", \n \"Assuming cantilever slabs are $L/8$ — WRONG. Solid cantilever is $L/10$; ribbed/beam is $L/8$.\", \n \"Ignoring $f_y$ modifiers — WRONG. Higher $f_y$ requires adjusted ratios per code.\" \n]} />",
-      "raw_hash": "sha256:8694eaa1c9d3e965a104fb9decde2d0be9ed025275e1667e438a67702d69bbc5",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: mistakes=\"{[ \\n \\\"Simply supported slab = $L/16$ — WRONG. $L/16$ is for beams; slab = $L/20$.\\\", \\n \\\"Using ACI's 40 mm top slab rule — WRONG. NSCP 2015 requires 50 mm minimum for Philippine projects.\\\", \\n \\\"Assuming cantilever slabs are $L/8$ — WRONG. Solid cantilever is $L/10$; ribbed/beam is $L/8$.\\\", \\n \\\"Ignoring $f_y$ modifiers — WRONG. Higher $f_y$ requires adjusted ratios per code.\\\" \\n]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:5ec3edb4b96ab4a5e8becfdadb27ee7c54a3f589c2dc86d53ad4da30619ea066",
-      "props": {
-        "mistakes": "{[ \n \"Simply supported slab = $L/16$ — WRONG. $L/16$ is for beams; slab = $L/20$.\", \n \"Using ACI's 40 mm top slab rule — WRONG. NSCP 2015 requires 50 mm minimum for Philippine projects.\", \n \"Assuming cantilever slabs are $L/8$ — WRONG. Solid cantilever is $L/10$; ribbed/beam is $L/8$.\", \n \"Ignoring $f_y$ modifiers — WRONG. Higher $f_y$ requires adjusted ratios per code.\" \n]}"
-      },
-      "props_json": {
-        "mistakes": "{[ \n \"Simply supported slab = $L/16$ — WRONG. $L/16$ is for beams; slab = $L/20$.\", \n \"Using ACI's 40 mm top slab rule — WRONG. NSCP 2015 requires 50 mm minimum for Philippine projects.\", \n \"Assuming cantilever slabs are $L/8$ — WRONG. Solid cantilever is $L/10$; ribbed/beam is $L/8$.\", \n \"Ignoring $f_y$ modifiers — WRONG. Higher $f_y$ requires adjusted ratios per code.\" \n]}"
-      },
-      "props_text": "mistakes={[ \n \"Simply supported slab = $L/16$ — WRONG. $L/16$ is for beams; slab = $L/20$.\", \n \"Using ACI's 40 mm top slab rule — WRONG. NSCP 2015 requires 50 mm minimum for Philippine projects.\", \n \"Assuming cantilever slabs are $L/8$ — WRONG. Solid cantilever is $L/10$; ribbed/beam is $L/8$.\", \n \"Ignoring $f_y$ modifiers — WRONG. Higher $f_y$ requires adjusted ratios per code.\" \n]}",
-      "children_raw": null,
-      "children_text": null,
-      "start_offset": 4593,
-      "end_offset": 4999,
-      "line_start": 79,
-      "line_end": 84,
-      "parser_confidence": "high",
-      "parse_status": "parsed",
-      "warnings": [],
-      "status": "preserved"
-    }
-  ],
+  "ui_block_count": 0,
+  "total_blocks": 0,
+  "blocks": [],
   "unknown_blocks": [],
   "unresolved_critical_blocks": [],
-  "ui_blocks_hash": "sha256:52fad934e27c16221ee78ab5e52b711b6e0b8f5896bee280907f141f9df3ec2a",
-  "normalized_content_hash_sha256": "sha256:25fd37d8cc9fd789ef0bab7709a4edd0eebcd5b4d14df23c2495f2e0e09c879a"
+  "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
 }

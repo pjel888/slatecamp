@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Hist 014 04 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 
 ## Learning Goal
@@ -8,53 +17,105 @@ Identify Frank Lloyd Wright's organic architecture philosophy — building grows
 **Frank Lloyd Wright** is America's most significant architect. He believed architecture should grow from its site—"organic" means the building is of the land, not imposed upon it. This contrasts sharply with European modernism (International Style), which treats buildings as objects placed anywhere. Wright said: every building must respond to its specific landscape, climate, and human needs.
 
 
-<ArticleMedia id="media-hist-014-04-core-concept" layout="single" type="image" status="placeholder" alt="View of Fallingwater (Mill Run, PA, 1935–1939, Frank Lloyd Wright), showing the cantilevered concrete terraces extending over the waterfall, the horizontal emphasis, natural stone piers, and the complete integration of building with site." caption="Fallingwater — Wright's Organic Architecture" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-hist-014-04-core-concept", layout="single", type="image", status="placeholder", alt="View of Fallingwater (Mill Run, PA, 1935–1939, Frank Lloyd Wright), showing the cantilevered concrete terraces extending over the waterfall, the horizontal emphasis, natural stone piers, and the complete integration of building with site.", caption="Fallingwater — Wright's Organic Architecture", suggestedAsset="Architectural reference image or diagram", placementIntent="Visual reference for architectural period/typology"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 
-<Tip>Memory aid: **"Wright = Site + Material + Open Plan + Horizontal"** — organic architecture grows from place, not imposed upon it; every building is unique to its location.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Memory aid: **"Wright = Site + Material + Open Plan + Horizontal"** — organic architecture grows from place, not imposed upon it; every building is unique to its location.
+[/SLATECAMP_UI_BLOCK]
 
 Wright's design principles are clear: **open plan** (remove interior walls, create flowing spaces), **horizontal emphasis** (echoing landscape lines), **integration of materials** (expose wood, stone, brick), **elimination of applied ornament** (form comes from structure and material, not decoration), and **human scale** (spaces fit the body, not the abstract grid). His buildings are never neutral—they are charged with place and purpose.
 
-<Note>Wright's "elimination of ornament" does NOT mean bare minimalism. He rejected applied decoration (ornament added to disguise form). He embraced integral ornament: wood grain patterns, masonry joint rhythms, geometric window divisions that express structure and material—ornament that grows from the building, not added to it.</Note>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Wright's "elimination of ornament" does NOT mean bare minimalism. He rejected applied decoration (ornament added to disguise form). He embraced integral ornament: wood grain patterns, masonry joint rhythms, geometric window divisions that express structure and material—ornament that grows from the building, not added to it.
+[/SLATECAMP_UI_BLOCK]
 
 **Prairie Houses** (1900–1915) demonstrate these principles. The **Robie House** (Chicago, 1910) has a low roof, deep eaves, and bands of casement windows that blur the boundary between interior and exterior. Walls are brick (local material), interior spaces flow into each other. The house sits on a Chicago lot as if it grew there. **Fallingwater** (Bear Run, Pennsylvania, completed 1939—main structure 1937, guest house 1939) is his masterwork: reinforced concrete cantilevered over a waterfall. The house and waterfall are not separate—they are integrated. The house is about falling water; every element responds to that reality.
 
-<Warn>Critical distinction: Wright is modernist but opposed to European International Style. Le Corbusier and Mies van der Rohe pursued universal design principles (buildings work anywhere); Wright pursued site-specific design (buildings must be where they are). Both are modernist, but Wright's philosophy is organic (place) while European modernism is abstract (universal).</Warn>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Critical distinction: Wright is modernist but opposed to European International Style. Le Corbusier and Mies van der Rohe pursued universal design principles (buildings work anywhere); Wright pursued site-specific design (buildings must be where they are). Both are modernist, but Wright's philosophy is organic (place) while European modernism is abstract (universal).
+[/SLATECAMP_UI_BLOCK]
 
 **The Guggenheim Museum** (New York, 1956–1959, completed posthumously) breaks every Beaux-Arts and modernist convention. It is a spiral ramp, not a box. You ascend the ramp viewing art, the architecture itself becomes the experience. Wright rejected the static gallery—he demanded movement and spatial drama.
 
 **Usonian houses** (1930s–1950s) were Wright's response to American housing crisis: affordable, beautiful houses for ordinary Americans. Open plan, minimal materials, integrated with landscape, houses cost $5,000–$10,000 in Depression era. They democratized modernism; they proved good architecture was not exclusive to the wealthy.
 
 
-<ArticleMedia id="media-hist-014-04-core-concept" layout="single" type="image" status="placeholder" alt="View of the Frederick C. Robie House (Chicago, 1908–1910, Frank Lloyd Wright), showing the strong horizontal lines, low-pitched hip roof with wide overhanging eaves, ribbon windows, and the open interior plan destroying the traditional box." caption="Robie House — Wright's Prairie Style" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+[SLATECAMP_UI_BLOCK:ui_0005 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-hist-014-04-core-concept", layout="single", type="image", status="placeholder", alt="View of the Frederick C. Robie House (Chicago, 1908–1910, Frank Lloyd Wright), showing the strong horizontal lines, low-pitched hip roof with wide overhanging eaves, ribbon windows, and the open interior plan destroying the traditional box.", caption="Robie House — Wright's Prairie Style", suggestedAsset="Architectural reference image or diagram", placementIntent="Visual reference for architectural period/typology"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 
 ## Key Facts and Testable Items
 
-<WikiExamTable headers={["Building", "Architect", "Year", "Location", "Type", "Significance"]} rows={[['["**Larkin Administration Building**", "Frank Lloyd Wright", "1906", "Buffalo", "Commercial", "Open plan; suspended balconies; daylit interior; no external ornament"]', '["**Robie House**", "Frank Lloyd Wright", "1910", "Chicago", "Residential", "Prairie House; horizontal emphasis; open plan; bands of casements"]', '["**Fallingwater**", "Frank Lloyd Wright", "1939", "Bear Run, PA", "Residential", "Cantilevered concrete; integration with waterfall; organic architecture"]', '["**Taliesin West**", "Frank Lloyd Wright", "1937", "Phoenix", "Residential/School", "Desert design; boards and battens; linear plan following terrain"]', '["**Usonian Homes**", "Frank Lloyd Wright", "1936–1950s", "Various", "Residential", "Affordable; open plan; integrated landscape; modular design"]', '["**Guggenheim Museum**", "Frank Lloyd Wright", "1956-1959", "New York", "Institutional", "Spiral ramp; sculptural concrete; rejected static gallery model; 16-year design/build process"]']]} />
+[SLATECAMP_UI_BLOCK:ui_0006 component="WikiExamTable" status="preserved"]
+Extracted summary:
+- Props: headers="{[\"Building\", \"Architect\", \"Year\", \"Location\", \"Type\", \"Significance\"]}", rows="{[['[\"**Larkin Administration Building**\", \"Frank Lloyd Wright\", \"1906\", \"Buffalo\", \"Commercial\", \"Open plan; suspended balconies; daylit interior; no external ornament\"]', '[\"**Robie House**\", \"Frank Lloyd Wright\", \"1910\", \"Chicago\", \"Residential\", \"Prairie House; horizontal emphasis; open plan; bands of casements\"]', '[\"**Fallingwater**\", \"Frank Lloyd Wright\", \"1939\", \"Bear Run, PA\", \"Residential\", \"Cantilevered concrete; integration with waterfall; organic architecture\"]', '[\"**Taliesin West**\", \"Frank Lloyd Wright\", \"1937\", \"Phoenix\", \"Residential/School\", \"Desert design; boards and battens; linear plan following terrain\"]', '[\"**Usonian Homes**\", \"Frank Lloyd Wright\", \"1936–1950s\", \"Various\", \"Residential\", \"Affordable; open plan; integrated landscape; modular design\"]', '[\"**Guggenheim Museum**\", \"Frank Lloyd Wright\", \"1956-1959\", \"New York\", \"Institutional\", \"Spiral ramp; sculptural concrete; rejected static gallery model; 16-year design/build process\"]']]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 ## How It's Tested on the LEA
 
-<ExamTip>**Pattern 1: Organic Architecture Identification**
-Questions present photographs or plans of buildings and ask you to identify Wright's principles: open plan, horizontal emphasis, material integration, landscape response. You explain why a building is "organic"—how its form responds to site, how spaces flow, how materials express their nature.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 1: Organic Architecture Identification** Questions present photographs or plans of buildings and ask you to identify Wright's principles: open plan, horizontal emphasis, material integration, landscape response. You explain why a building is "organic"—how its form responds to site, how spaces flow, how materials express their nature.
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>**Pattern 2: Fallingwater Analysis**
-This building is tested obsessively. Questions ask about the cantilevers (why?—to emphasize the overhang and relationship to waterfall), the materials (reinforced concrete, stone, wood—each chosen for specific reasons), the open plan (how spaces relate to views of water and landscape). You explain why it is organic: the building IS about the waterfall, not merely placed above it.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 2: Fallingwater Analysis** This building is tested obsessively. Questions ask about the cantilevers (why?—to emphasize the overhang and relationship to waterfall), the materials (reinforced concrete, stone, wood—each chosen for specific reasons), the open plan (how spaces relate to views of water and landscape). You explain why it is organic: the building IS about the waterfall, not merely placed above it.
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>**Pattern 3: Wright vs. European Modernism**
-Questions compare Wright to Le Corbusier, Mies van der Rohe, or other European modernists. Wright believed buildings must respond to place and culture; Europeans pursued universal design principles. You distinguish Wright's philosophy: he is modernist but anti-International Style, he is American without nationalism, he is humanist.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0009 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 3: Wright vs. European Modernism** Questions compare Wright to Le Corbusier, Mies van der Rohe, or other European modernists. Wright believed buildings must respond to place and culture; Europeans pursued universal design principles. You distinguish Wright's philosophy: he is modernist but anti-International Style, he is American without nationalism, he is humanist.
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>**Pattern 4: Usonian Housing**
-Questions ask about Wright's approach to affordable housing: open plan (no expensive walls), minimal materials (local stone, wood), integration with site, modular design, built-in furniture. You explain how Usonian houses made modernism democratic and accessible.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0010 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 4: Usonian Housing** Questions ask about Wright's approach to affordable housing: open plan (no expensive walls), minimal materials (local stone, wood), integration with site, modular design, built-in furniture. You explain how Usonian houses made modernism democratic and accessible.
+[/SLATECAMP_UI_BLOCK]
 
-<Callout>The LEA tests your knowledge of **Frank Lloyd Wright** (1867–1959), the most tested architect in Philippine LEA exams. Questions cover his design principles (**organic architecture**, integration with landscape, open plan), major works (**Prairie Houses**, **Fallingwater**, **The Guggenheim Museum**, **Usonian houses**), and his influence on modernism. You must understand how Wright rejected European modernism and European Beaux-Arts, and how he created a distinctly American architectural philosophy centered on landscape and human sclea.</Callout>
+[SLATECAMP_UI_BLOCK:ui_0011 component="Callout" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: The LEA tests your knowledge of **Frank Lloyd Wright** (1867–1959), the most tested architect in Philippine LEA exams. Questions cover his design principles (**organic architecture**, integration with landscape, open plan), major works (**Prairie Houses**, **Fallingwater**, **The Guggenheim Museum**, **Usonian houses**), and his influence on modernism. You must understand how Wright rejected European modernism and European Beaux-Arts, and how he created a distinctly American architectural philos
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
-<WikiMistakeCard mistake="Saying Wright rejected ornament entirely" correction="Students say Wright stripped buildings to bare structure. Wrong. He rejected *applied* ornament—decoration added to hide or disguise form. He *loved* ornament that expressed structure and material: the rhythm of wood boards, the pattern of masonry joints, the geometric detail of windows." context="His ornament is integral, not applied." />
+[SLATECAMP_UI_BLOCK:ui_0012 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Saying Wright rejected ornament entirely", correction="Students say Wright stripped buildings to bare structure. Wrong. He rejected *applied* ornament—decoration added to hide or disguise form. He *loved* ornament that expressed structure and material: the rhythm of wood boards, the pattern of masonry joints, the geometric detail of windows.", context="His ornament is integral, not applied."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeCard mistake="Confusing Wright with European modernism" correction="Students group Wright with Le Corbusier as \"both modernists.\" They are opposed. Le Corbusier pursued universal design principles (the Modulor, standard dimensions); Wright pursued site-specific design. Le Corbusier's buildings can be anywhere; Wright's must be where they are. Say \"American organic modernism\" vs." context="\"European International Style.\"" />
+[SLATECAMP_UI_BLOCK:ui_0013 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Confusing Wright with European modernism", correction="Students group Wright with Le Corbusier as \\", both=true, modernists=true, They=true, are=true, opposed=true, Le=true, Corbusier=true, pursued=true, universal=true, design=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeList mistakes={["Overestimating Fallingwater's structural logic. Students treat Fallingwater as purely rational structure. The cantilevers are technically daring but also *expressive*—they dramatize the relationship to water, they create an emotional statement. Wright was not a pure functionalist; he was a romantic expressing structure as poetry.", "Treating open plan as simple. Students say open plan is \"just removing walls.\" Open plan is a sophisticated design principle: spaces relate visually and functionally, privacy is created through spatial hierarchy not enclosure, movement through space matters aesthetically. Open plan requires more careful design than enclosed rooms, not less."]} />
+[SLATECAMP_UI_BLOCK:ui_0014 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Overestimating Fallingwater's structural logic. Students treat Fallingwater as purely rational structure. The cantilevers are technically daring but also *expressive*—they dramatize the relationship to water, they create an emotional statement. Wright was not a pure functionalist; he was a romantic expressing structure as poetry.\", \"Treating open plan as simple. Students say open plan is \\\"just removing walls.\\\" Open plan is a sophisticated design principle: spaces relate visually and functionally, privacy is created through spatial hierarchy not enclosure, movement through space matters aesthetically. Open plan requires more careful design than enclosed rooms, not less.\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Terms
 
@@ -76,7 +137,11 @@ Questions ask about Wright's approach to affordable housing: open plan (no expen
 
 **Material Expression** — Exposing and emphasizing building materials' natural qualities—stone as stone, wood as wood, concrete as concrete—rather than covering them.
 
-<ArticleMedia id="media-hist-014-04-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Comparison of Frank Lloyd Wright's organic architecture across four iconic works: Robie House (Prairie style, horizontal emphasis), Fallingwater (cantilevered over waterfall), Taliesin West (desert integration), and Guggenheim Museum (continuous spiral)." caption="Frank Lloyd Wright — Organic Architecture Works" suggestedAsset="Style comparison illustration" placementIntent="Style comparison for architectural period" />
+[SLATECAMP_UI_BLOCK:ui_0015 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-hist-014-04-core-concept-timeline", layout="single", type="image", status="placeholder", alt="Comparison of Frank Lloyd Wright's organic architecture across four iconic works: Robie House (Prairie style, horizontal emphasis), Fallingwater (cantilevered over waterfall), Taliesin West (desert integration), and Guggenheim Museum (continuous spiral).", caption="Frank Lloyd Wright — Organic Architecture Works", suggestedAsset="Style comparison illustration", placementIntent="Style comparison for architectural period"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 

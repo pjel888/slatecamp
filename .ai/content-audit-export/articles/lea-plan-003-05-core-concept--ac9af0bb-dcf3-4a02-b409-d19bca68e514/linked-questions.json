@@ -1,7 +1,7 @@
 {
   "article_id": "ac9af0bb-dcf3-4a02-b409-d19bca68e514",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:2225501a23c3fb80df73f071b8d4513e60cc52cb7cdaf9a891da63e71246304d",
+  "linked_questions_hash": "sha256:cb3917a5e223b0f859c3d48eb2ad2c5f3cfee19a295d2f19f432567e8d613d5b",
   "question_count": 10,
   "questions": [
     {
@@ -54,6 +54,108 @@
       "created_at": "2026-03-23T19:27:33.767447+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:83f379314ab2e965c3ddc029cefbcabca4d7d53bcf4af038b73d64f9340dcbb7"
+    },
+    {
+      "question_id": "6c985487-e0a9-4b61-8923-7cb219f0a286",
+      "article_id": "ac9af0bb-dcf3-4a02-b409-d19bca68e514",
+      "topic_id": "27666451-9b94-48d7-b6b4-ebb0a9f8a4e4",
+      "text": "In the context of human settlements, livelihood integration refers to:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Access to employment opportunities and economic activities within or near the settlement"
+        },
+        {
+          "id": "b",
+          "text": "Training programs for residents to improve employment skills, including vocational and technical education"
+        },
+        {
+          "id": "c",
+          "text": "Credit programs to help residents start microenterprises, with low-interest rates and flexible repayment terms"
+        },
+        {
+          "id": "d",
+          "text": "Government job guarantees for all residents, ensuring employment stability and economic security"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Livelihood integration = spatial proximity to jobs or markets. In-situ upgrading succeeds because it preserves existing livelihood networks (vendors, artisans, services). Relocation to distant sites without job access causes economic collapse.",
+        "b": "Skills training is a service, not livelihood integration.",
+        "c": "Credit is financing, not livelihood integration.",
+        "d": "Unrealistic; settlements rely on diverse economic participation.",
+        "correct": "Livelihood integration = spatial proximity to jobs or markets. In-situ upgrading succeeds because it preserves existing livelihood networks (vendors, artisans, services). Relocation to distant sites without job access causes economic collapse.",
+        "takeaway": "Livelihood integration = economic opportunity access. Critical success factor for in-situ upgrading."
+      },
+      "explanation": "Livelihood integration = spatial proximity to jobs or markets. In-situ upgrading succeeds because it preserves existing livelihood networks (vendors, artisans, services). Relocation to distant sites without job access causes economic collapse. Skills training is a service, not livelihood integration. Credit is financing, not livelihood integration. Unrealistic; settlements rely on diverse economic participation. Livelihood integration = spatial proximity to jobs or markets. In-situ upgrading succeeds because it preserves existing livelihood networks (vendors, artisans, services). Relocation to distant sites without job access causes economic collapse. Livelihood integration = economic opportunity access. Critical success factor for in-situ upgrading.",
+      "code_citation": "World Bank Human Settlements Research; UN-Habitat",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-003-05-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:34.02411+00:00",
+      "updated_at": "2026-05-06T12:49:09.644735+00:00",
+      "content_hash": "sha256:6dd99d2c94807f24ac5c6953db066030019db72eae4ec36956f8c24d2f6f2b32"
+    },
+    {
+      "question_id": "8a9e6f48-3946-41da-b222-1963a77b7437",
+      "article_id": "ac9af0bb-dcf3-4a02-b409-d19bca68e514",
+      "topic_id": "27666451-9b94-48d7-b6b4-ebb0a9f8a4e4",
+      "text": "The Post-Yolanda National Zoning Framework (2014) constrains human settlements development in coastal areas by imposing a no-build zone of:",
+      "options": [
+        {
+          "id": "a",
+          "text": "20 meters from mean high tide for residential structures"
+        },
+        {
+          "id": "b",
+          "text": "30 meters from mean high tide for all building types"
+        },
+        {
+          "id": "c",
+          "text": "20 meters from mean high tide for commercial structures"
+        },
+        {
+          "id": "d",
+          "text": "50 meters from mean high tide for critical facilities"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Post-Yolanda framework: 40-meter no-build zone from mean high tide. This is a hazard-based carrying capacity limit on coastal settlement expansion.",
+        "b": "Incorrect distance.",
+        "c": "Less restrictive than post-Yolanda standard.",
+        "d": "More restrictive than post-Yolanda standard (though some high-hazard areas use 50m).",
+        "correct": "Post-Yolanda framework: 40-meter no-build zone from mean high tide. This is a hazard-based carrying capacity limit on coastal settlement expansion.",
+        "takeaway": "Post-Yolanda coastal constraint: 40m no-build zone. Permanent CLUP requirement post-2014."
+      },
+      "explanation": null,
+      "code_citation": "Post-Yolanda National Zoning Framework (2014)",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-003-05-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:34.02411+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2d4bf307f2a16727cedf502994a88bef9298a6079b7fa1d4f965574dc5ad1fe1"
     },
     {
       "question_id": "6389cc99-56de-4a7e-9b9c-c3f5d041c739",
@@ -209,57 +311,6 @@
       "content_hash": "sha256:be6fe337125e25dc1e8db8bc8b5a97fed46d27d198a95c7e37c31ef85d0ab9c7"
     },
     {
-      "question_id": "4a8581e1-6b8e-4d83-b9bd-5e1bb4e2dda2",
-      "article_id": "ac9af0bb-dcf3-4a02-b409-d19bca68e514",
-      "topic_id": "27666451-9b94-48d7-b6b4-ebb0a9f8a4e4",
-      "text": "Why is in-situ upgrading generally considered more sustainable than relocation-based resettlement?",
-      "options": [
-        {
-          "id": "a",
-          "text": "It is cheaper to build (only partial infrastructure), reducing initial investment costs"
-        },
-        {
-          "id": "b",
-          "text": "It preserves livelihood networks, community institutions, and social capital while reducing economic disruption"
-        },
-        {
-          "id": "c",
-          "text": "It requires less community participation in planning, streamlining the process"
-        },
-        {
-          "id": "d",
-          "text": "It eliminates the need for formal property titles, simplifying legal requirements"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Cost may be similar or lower, but cost is not the primary sustainability reason.",
-        "b": "In-situ = communities stay; vendors retain customers, artisans retain client bases, school/clinic access continuous, social networks intact. Relocation dislocates all of this, often causing economic collapse and family dissolution.",
-        "c": "In-situ requires MORE community participation typically (SHFC-CMP model).",
-        "d": "In-situ upgrading (via CMP) actually formalizes tenure.",
-        "correct": "In-situ = communities stay; vendors retain customers, artisans retain client bases, school/clinic access continuous, social networks intact. Relocation dislocates all of this, often causing economic collapse and family dissolution.",
-        "takeaway": "In-situ strength: community continuity + livelihood preservation + social stability."
-      },
-      "explanation": null,
-      "code_citation": "SHFC-CMP Impact Studies; World Bank Urban Development",
-      "bloom_level": "understand",
-      "application_context": "recall",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PLAN-003-05-003",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:34.02411+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:1cc2e0ea39c12f62b89b205a1893d5ff9b45da657dc0344c8d290653d8d23cf5"
-    },
-    {
       "question_id": "4cdca0f1-f9aa-4472-ba25-877a5f8e53d0",
       "article_id": "ac9af0bb-dcf3-4a02-b409-d19bca68e514",
       "topic_id": "27666451-9b94-48d7-b6b4-ebb0a9f8a4e4",
@@ -362,6 +413,57 @@
       "content_hash": "sha256:48a34eaef8155ec522a007778c68a86608c80d595ea7b960ef1282615cc3e666"
     },
     {
+      "question_id": "4a8581e1-6b8e-4d83-b9bd-5e1bb4e2dda2",
+      "article_id": "ac9af0bb-dcf3-4a02-b409-d19bca68e514",
+      "topic_id": "27666451-9b94-48d7-b6b4-ebb0a9f8a4e4",
+      "text": "Why is in-situ upgrading generally considered more sustainable than relocation-based resettlement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It is cheaper to build (only partial infrastructure), reducing initial investment costs"
+        },
+        {
+          "id": "b",
+          "text": "It preserves livelihood networks, community institutions, and social capital while reducing economic disruption"
+        },
+        {
+          "id": "c",
+          "text": "It requires less community participation in planning, streamlining the process"
+        },
+        {
+          "id": "d",
+          "text": "It eliminates the need for formal property titles, simplifying legal requirements"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Cost may be similar or lower, but cost is not the primary sustainability reason.",
+        "b": "In-situ = communities stay; vendors retain customers, artisans retain client bases, school/clinic access continuous, social networks intact. Relocation dislocates all of this, often causing economic collapse and family dissolution.",
+        "c": "In-situ requires MORE community participation typically (SHFC-CMP model).",
+        "d": "In-situ upgrading (via CMP) actually formalizes tenure.",
+        "correct": "In-situ = communities stay; vendors retain customers, artisans retain client bases, school/clinic access continuous, social networks intact. Relocation dislocates all of this, often causing economic collapse and family dissolution.",
+        "takeaway": "In-situ strength: community continuity + livelihood preservation + social stability."
+      },
+      "explanation": "Cost may be similar or lower, but cost is not the primary sustainability reason. In-situ = communities stay; vendors retain customers, artisans retain client bases, school/clinic access continuous, social networks intact. Relocation dislocates all of this, often causing economic collapse and family dissolution. In-situ requires MORE community participation typically (SHFC-CMP model). In-situ upgrading (via CMP) actually formalizes tenure. In-situ = communities stay; vendors retain customers, artisans retain client bases, school/clinic access continuous, social networks intact. Relocation dislocates all of this, often causing economic collapse and family dissolution. In-situ strength: community continuity + livelihood preservation + social stability.",
+      "code_citation": "SHFC-CMP Impact Studies; World Bank Urban Development",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-003-05-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:34.02411+00:00",
+      "updated_at": "2026-05-06T12:49:09.188681+00:00",
+      "content_hash": "sha256:4163d25a48dec2525436155fa1f58ff325ce3bb5b00aa1e3dbdb5e1841b2670f"
+    },
+    {
       "question_id": "bdf48688-79f2-46c6-8b00-e1ba777a3df2",
       "article_id": "ac9af0bb-dcf3-4a02-b409-d19bca68e514",
       "topic_id": "27666451-9b94-48d7-b6b4-ebb0a9f8a4e4",
@@ -411,108 +513,6 @@
       "created_at": "2026-03-23T19:27:34.02411+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:8755a8e72b8e87088086cdb1cdc9ceb3bea39edf77c509ef566202eb346f7841"
-    },
-    {
-      "question_id": "8a9e6f48-3946-41da-b222-1963a77b7437",
-      "article_id": "ac9af0bb-dcf3-4a02-b409-d19bca68e514",
-      "topic_id": "27666451-9b94-48d7-b6b4-ebb0a9f8a4e4",
-      "text": "The Post-Yolanda National Zoning Framework (2014) constrains human settlements development in coastal areas by imposing a no-build zone of:",
-      "options": [
-        {
-          "id": "a",
-          "text": "20 meters from mean high tide for residential structures"
-        },
-        {
-          "id": "b",
-          "text": "30 meters from mean high tide for all building types"
-        },
-        {
-          "id": "c",
-          "text": "20 meters from mean high tide for commercial structures"
-        },
-        {
-          "id": "d",
-          "text": "50 meters from mean high tide for critical facilities"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Post-Yolanda framework: 40-meter no-build zone from mean high tide. This is a hazard-based carrying capacity limit on coastal settlement expansion.",
-        "b": "Incorrect distance.",
-        "c": "Less restrictive than post-Yolanda standard.",
-        "d": "More restrictive than post-Yolanda standard (though some high-hazard areas use 50m).",
-        "correct": "Post-Yolanda framework: 40-meter no-build zone from mean high tide. This is a hazard-based carrying capacity limit on coastal settlement expansion.",
-        "takeaway": "Post-Yolanda coastal constraint: 40m no-build zone. Permanent CLUP requirement post-2014."
-      },
-      "explanation": null,
-      "code_citation": "Post-Yolanda National Zoning Framework (2014)",
-      "bloom_level": "remember",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.9,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PLAN-003-05-009",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:34.02411+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:2d4bf307f2a16727cedf502994a88bef9298a6079b7fa1d4f965574dc5ad1fe1"
-    },
-    {
-      "question_id": "6c985487-e0a9-4b61-8923-7cb219f0a286",
-      "article_id": "ac9af0bb-dcf3-4a02-b409-d19bca68e514",
-      "topic_id": "27666451-9b94-48d7-b6b4-ebb0a9f8a4e4",
-      "text": "In the context of human settlements, livelihood integration refers to:",
-      "options": [
-        {
-          "id": "a",
-          "text": "Access to employment opportunities and economic activities within or near the settlement"
-        },
-        {
-          "id": "b",
-          "text": "Training programs for residents to improve employment skills, including vocational and technical education"
-        },
-        {
-          "id": "c",
-          "text": "Credit programs to help residents start microenterprises, with low-interest rates and flexible repayment terms"
-        },
-        {
-          "id": "d",
-          "text": "Government job guarantees for all residents, ensuring employment stability and economic security"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Livelihood integration = spatial proximity to jobs or markets. In-situ upgrading succeeds because it preserves existing livelihood networks (vendors, artisans, services). Relocation to distant sites without job access causes economic collapse.",
-        "b": "Skills training is a service, not livelihood integration.",
-        "c": "Credit is financing, not livelihood integration.",
-        "d": "Unrealistic; settlements rely on diverse economic participation.",
-        "correct": "Livelihood integration = spatial proximity to jobs or markets. In-situ upgrading succeeds because it preserves existing livelihood networks (vendors, artisans, services). Relocation to distant sites without job access causes economic collapse.",
-        "takeaway": "Livelihood integration = economic opportunity access. Critical success factor for in-situ upgrading."
-      },
-      "explanation": null,
-      "code_citation": "World Bank Human Settlements Research; UN-Habitat",
-      "bloom_level": "understand",
-      "application_context": "recall",
-      "practice_context": [],
-      "difficulty": 0.3,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PLAN-003-05-002",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:34.02411+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:dd2ffafc16550fec6e3c2cf8d5f579a5975e65fec5cf2e42ce662d7d4871228e"
     }
   ]
 }

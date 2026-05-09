@@ -1,9 +1,111 @@
 {
   "article_id": "ec61e112-1609-4f49-b1ad-343444eb6248",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:5fa32bdb7f9461fc250c3c2f5f0e1b706b6af9d04d1a8b97b153643806c3c1d0",
+  "linked_questions_hash": "sha256:96ed07e17ddf6d5cc102b9626fd8193af75fb34cbce9c6bc5b488df224522c55",
   "question_count": 13,
   "questions": [
+    {
+      "question_id": "eaa2a3e7-f1ae-4092-97fc-d8fbf88055da",
+      "article_id": "ec61e112-1609-4f49-b1ad-343444eb6248",
+      "topic_id": "aa84a1f9-c8b0-44fd-90d5-c7119f136046",
+      "text": "Low Physical Effort (Principle 6) means design that:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Eliminates all human movement, relying on mechanical systems to perform tasks that would otherwise require physical exertion"
+        },
+        {
+          "id": "b",
+          "text": "Works only for young, able-bodied users, excluding those who may have physical limitations or disabilities"
+        },
+        {
+          "id": "c",
+          "text": "Requires significant strength, demanding user exertion, which can lead to fatigue and discomfort over time"
+        },
+        {
+          "id": "d",
+          "text": "Can be used efficiently and comfortably with minimum fatigue, requiring minimal force"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Mechanical systems require integration; users must operate them with minimum effort",
+        "b": "Low physical effort serves diverse abilities, not excluding elderly or weak users",
+        "c": "High effort excludes elderly and strength-limited users",
+        "correct": "Low physical effort accommodates limited strength, elderly users, and those with fatigue—automatic doors, counters at varied heights, gentle slopes"
+      },
+      "explanation": "Mechanical systems require integration; users must operate them with minimum effort Low physical effort serves diverse abilities, not excluding elderly or weak users High effort excludes elderly and strength-limited users Low physical effort accommodates limited strength, elderly users, and those with fatigue—automatic doors, counters at varied heights, gentle slopes",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ale-theo-003-06-q07",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-05-06T14:43:15.869211+00:00",
+      "content_hash": "sha256:c1bc90a796170859f58c6da70a1e9c95dda03e487b4a04f35e333ee2cd88160a"
+    },
+    {
+      "question_id": "9ecdabe3-3006-4f18-a0db-c2dfd8c6cfc3",
+      "article_id": "ec61e112-1609-4f49-b1ad-343444eb6248",
+      "topic_id": "aa84a1f9-c8b0-44fd-90d5-c7119f136046",
+      "text": "Flexibility in Use, Principle 2 of Universal Design, accommodates:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only the average-sized user with typical abilities, excluding those with unique needs or preferences"
+        },
+        {
+          "id": "b",
+          "text": "Only people with mobility disabilities, not considering other types of disabilities or user needs"
+        },
+        {
+          "id": "c",
+          "text": "Users willing to modify their behavior to fit the design, which may not be practical for all individuals"
+        },
+        {
+          "id": "d",
+          "text": "A wide range of individual preferences and abilities, including different body types, sensory abilities, and user approaches"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Flexibility serves beyond average users, serving diverse capabilities",
+        "b": "Flexibility serves diverse disabilities and abilities, not exclusively mobility",
+        "c": "Universal design adapts to users; users don't adapt to design",
+        "correct": "Flexibility accommodates diverse users through multiple approaches—elements at varied heights, different modalities, adaptable layouts"
+      },
+      "explanation": "Flexibility serves beyond average users, serving diverse capabilities Flexibility serves diverse disabilities and abilities, not exclusively mobility Universal design adapts to users; users don't adapt to design Flexibility accommodates diverse users through multiple approaches—elements at varied heights, different modalities, adaptable layouts",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ale-theo-003-06-q03",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-05-06T14:43:15.988599+00:00",
+      "content_hash": "sha256:a950cfc7daf5d2d678622eb7d95949683f32224eeba260b6efa930778be122e9"
+    },
     {
       "question_id": "7a0af96e-37c6-43b5-be44-f14e599d9948",
       "article_id": "ec61e112-1609-4f49-b1ad-343444eb6248",
@@ -89,7 +191,7 @@
         "d": "Large print serves some vision limitations but not all; multimodal approach is superior",
         "correct": "Perceptible information uses multiple modalities—text, symbols, color, audio, Braille, tactile elements—ensuring all sensory abilities can access information"
       },
-      "explanation": null,
+      "explanation": "Auditory alone excludes deaf and hard-of-hearing users Visual alone excludes blind and low-vision users Large print serves some vision limitations but not all; multimodal approach is superior Perceptible information uses multiple modalities—text, symbols, color, audio, Braille, tactile elements—ensuring all sensory abilities can access information",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -103,8 +205,8 @@
       "model_id": "ale-theo-003-06-q05",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:bffbea0c7805a8dc4103be7f5d68c46138284aa9c3e2817d04f33f536caa7190"
+      "updated_at": "2026-05-06T14:43:15.751129+00:00",
+      "content_hash": "sha256:5b9caf8ffc24a9dcd780dab0b51e5ad349b5e948f1f243b5ca2187e430d74bf5"
     },
     {
       "question_id": "c3a08800-746c-4712-9953-053e75fa7c29",
@@ -413,57 +515,6 @@
       "content_hash": "sha256:25a3c1087472c6e9dc8d200d658463d1b8fdee2356b2af0c65b9cefbc6c6022f"
     },
     {
-      "question_id": "eaa2a3e7-f1ae-4092-97fc-d8fbf88055da",
-      "article_id": "ec61e112-1609-4f49-b1ad-343444eb6248",
-      "topic_id": "aa84a1f9-c8b0-44fd-90d5-c7119f136046",
-      "text": "Low Physical Effort (Principle 6) means design that:",
-      "options": [
-        {
-          "id": "a",
-          "text": "Eliminates all human movement, relying on mechanical systems to perform tasks that would otherwise require physical exertion"
-        },
-        {
-          "id": "b",
-          "text": "Works only for young, able-bodied users, excluding those who may have physical limitations or disabilities"
-        },
-        {
-          "id": "c",
-          "text": "Requires significant strength, demanding user exertion, which can lead to fatigue and discomfort over time"
-        },
-        {
-          "id": "d",
-          "text": "Can be used efficiently and comfortably with minimum fatigue, requiring minimal force"
-        }
-      ],
-      "correct_option_id": "d",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Mechanical systems require integration; users must operate them with minimum effort",
-        "b": "Low physical effort serves diverse abilities, not excluding elderly or weak users",
-        "c": "High effort excludes elderly and strength-limited users",
-        "correct": "Low physical effort accommodates limited strength, elderly users, and those with fatigue—automatic doors, counters at varied heights, gentle slopes"
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [
-        "DEF"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ale-theo-003-06-q07",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:ad189ce09d6ee81d53b653639a6e8378f48635ab9c7ee614f84b1d64bc4b859f"
-    },
-    {
       "question_id": "a3aacffa-4132-494c-b638-953bddebf317",
       "article_id": "ec61e112-1609-4f49-b1ad-343444eb6248",
       "topic_id": "aa84a1f9-c8b0-44fd-90d5-c7119f136046",
@@ -615,57 +666,6 @@
       "created_at": "2026-03-23T19:27:54.274779+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:0174aa84bb0cb660d605a11e9a5fd85401df549ec601d011ade8d697f62df7f3"
-    },
-    {
-      "question_id": "9ecdabe3-3006-4f18-a0db-c2dfd8c6cfc3",
-      "article_id": "ec61e112-1609-4f49-b1ad-343444eb6248",
-      "topic_id": "aa84a1f9-c8b0-44fd-90d5-c7119f136046",
-      "text": "Flexibility in Use, Principle 2 of Universal Design, accommodates:",
-      "options": [
-        {
-          "id": "a",
-          "text": "Only the average-sized user with typical abilities, excluding those with unique needs or preferences"
-        },
-        {
-          "id": "b",
-          "text": "Only people with mobility disabilities, not considering other types of disabilities or user needs"
-        },
-        {
-          "id": "c",
-          "text": "Users willing to modify their behavior to fit the design, which may not be practical for all individuals"
-        },
-        {
-          "id": "d",
-          "text": "A wide range of individual preferences and abilities, including different body types, sensory abilities, and user approaches"
-        }
-      ],
-      "correct_option_id": "d",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Flexibility serves beyond average users, serving diverse capabilities",
-        "b": "Flexibility serves diverse disabilities and abilities, not exclusively mobility",
-        "c": "Universal design adapts to users; users don't adapt to design",
-        "correct": "Flexibility accommodates diverse users through multiple approaches—elements at varied heights, different modalities, adaptable layouts"
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [
-        "DEF"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ale-theo-003-06-q03",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:7b44b4b8855bf2d00ad1be0a99844312cdbe96fa4ca9e79c0f1e0e5e00190aea"
     }
   ]
 }

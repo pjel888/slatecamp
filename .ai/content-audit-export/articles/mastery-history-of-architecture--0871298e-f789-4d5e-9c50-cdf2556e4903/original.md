@@ -1,9 +1,20 @@
 # History of Architecture — Mastery & Connections
 
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **History of Architecture — Mastery & Connections** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
+
 ## Learning Goal
 
 Achieve synthesis-level understanding of architectural history as an interconnected web of influences across periods and cultures. Trace the river of influence from Ancient through Medieval, Renaissance, Baroque, Neoclassicism, Modernism, and Contemporary. Connect cross-cultural threads (Islamic → Gothic, Japanese → Wright, Spanish Colonial → Philippine earthquake Baroque). Integrate History with Theory (movement-to-manifesto relationships), Philippine Architecture, and Architectural Design.
-<ArticleMedia id="media-mastery-history-of-architecture" type="image" caption="History of Architecture — Timeline Overview and Cross-Cultural Connections" description="Chronological timeline diagram spanning Prehistoric to Contemporary, organized into 11 cultural/regional traditions arranged in parallel horizontal tracks. Key cross-cultural influence arrows shown: (1) Islamic pointed arch → Gothic rib vault; (2) Roman concrete → Byzantine pendentive dome; (3) Japanese vernacular → Wright's organic architecture; (4) Spanish Baroque → Philippine earthquake Baroque. Bottom layer shows corresponding Western historical periods (Ancient, Medieval, Renaissance, Baroque, Modern, Contemporary) for chronological reference. Key buildings, architects, and stylistic features annotated at timeline nodes." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-mastery-history-of-architecture", type="image", caption="History of Architecture — Timeline Overview and Cross-Cultural Connections", description="Chronological timeline diagram spanning Prehistoric to Contemporary, organized into 11 cultural/regional traditions arranged in parallel horizontal tracks. Key cross-cultural influence arrows shown: (1) Islamic pointed arch → Gothic rib vault; (2) Roman concrete → Byzantine pendentive dome; (3) Japanese vernacular → Wright's organic architecture; (4) Spanish Baroque → Philippine earthquake Baroque. Bottom layer shows corresponding Western historical periods (Ancient, Medieval, Renaissance, Baroque, Modern, Contemporary) for chronological reference. Key buildings, architects, and stylistic features annotated at timeline nodes.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## How Periods Connect: The River of Influence
 
@@ -17,7 +28,11 @@ Achieve synthesis-level understanding of architectural history as an interconnec
 
 **Historicism → Modern Movement:** Rejection of 19th-century eclecticism. Ornament is dishonest; form follows function; new materials demand new forms.
 
-<ExamTip>When the LEA gives you a "what movement came next" or "what was this architect reacting to" question, think in terms of thesis and antithesis. Almost every major architectural movement defines itself partly by what it is *not*.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0002 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: When the LEA gives you a "what movement came next" or "what was this architect reacting to" question, think in terms of thesis and antithesis. Almost every major architectural movement defines itself partly by what it is *not*.
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - Props: (none)
 - Text: When the LEA gives you a "what movement came next" or "what was this architect reacting to" question, think in terms of thesis and antithesis. Almost every major architectural movement defines itself partly by what it is *not*.
@@ -32,7 +47,11 @@ Extracted summary:
 
 **Spanish Colonial → Philippine Architecture:** Renaissance and Baroque traditions + Filipino labor + local materials + climate/seismic adaptation = uniquely Philippine synthesis. Earthquake Baroque (massive walls, low towers, thick buttresses) is a direct response to Philippine seismic reality.
 
-<Callout>Philippine earthquake Baroque is a legitimate architectural innovation, not a deficiency. The massive walls and reinforced buttresses of churches like San Agustin in Manila and the Miag-ao Church in Iloilo are engineering responses to a specific environmental challenge. The LEA rewards this nuanced reading.</Callout>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Callout" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Philippine earthquake Baroque is a legitimate architectural innovation, not a deficiency. The massive walls and reinforced buttresses of churches like San Agustin in Manila and the Miag-ao Church in Iloilo are engineering responses to a specific environmental challenge. The LEA rewards this nuanced reading.
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - Props: (none)
 - Text: Philippine earthquake Baroque is a legitimate architectural innovation, not a deficiency. The massive walls and reinforced buttresses of churches like San Agustin in Manila and the Miag-ao Church in Iloilo are engineering responses to a specific environmental challenge. The LEA rewards this nuanced reading.
@@ -70,18 +89,26 @@ Every major modern movement has a theoretical underpinning published before the 
 - **Treating Philippine architecture as isolated.** It's a story of layered influences from multiple cultures.
 - **Neglecting non-Western chronology.** Map non-Western timelines onto Western eras.
 
-<Note>
-Build a set of flashcards or a reference sheet organized by period, not by architect. Then practice navigating it in both directions: given an architect, identify the period; given a building image, i
-</Note>
-<Note>
-Memory Aid: Think of architectural history as a dialogue. Ancient → Medieval (Romans to Byzantine) = technology transfer. Medieval → Renaissance = conscious RETURN to antiquity. Renaissance → Baroque
-</Note>
-<Note>
-LEA Strategy: When faced with a 'what movement comes next' question, think thesis and antithesis. Every major movement defines itself partly by what it REJECTS from the previous period. The Modern Mov
-</Note>
-<Note>
-Cross-Cultural Example: Spanish Colonial architecture in the Philippines (bahay na bato) combined Filipino stilt-house typology with Spanish masonry ground floor. This is not just a historical curiosi
-</Note>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Build a set of flashcards or a reference sheet organized by period, not by architect. Then practice navigating it in both directions: given an architect, identify the period; given a building image, i
+[/SLATECAMP_UI_BLOCK]
+[SLATECAMP_UI_BLOCK:ui_0005 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Memory Aid: Think of architectural history as a dialogue. Ancient → Medieval (Romans to Byzantine) = technology transfer. Medieval → Renaissance = conscious RETURN to antiquity. Renaissance → Baroque
+[/SLATECAMP_UI_BLOCK]
+[SLATECAMP_UI_BLOCK:ui_0006 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: LEA Strategy: When faced with a 'what movement comes next' question, think thesis and antithesis. Every major movement defines itself partly by what it REJECTS from the previous period. The Modern Mov
+[/SLATECAMP_UI_BLOCK]
+[SLATECAMP_UI_BLOCK:ui_0007 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Cross-Cultural Example: Spanish Colonial architecture in the Philippines (bahay na bato) combined Filipino stilt-house typology with Spanish masonry ground floor. This is not just a historical curiosi
+[/SLATECAMP_UI_BLOCK]
 ## Related Articles
 
 - Overview & Study Strategy for History of Architecture

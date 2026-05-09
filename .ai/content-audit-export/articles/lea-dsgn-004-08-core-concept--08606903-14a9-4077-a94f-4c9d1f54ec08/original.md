@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Dsgn 004 08 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 
 ## Learning Goal
@@ -9,9 +18,17 @@ Resorts and eco-tourism facilities operate under **Group B** (hotel/dormitory/pe
 
 ## Core Concept
 
-<Tip>Design principles tested on the LEA focus on the relationship between form and space. Understand how primary elements (point, line, plane, volume) generate architectural form and how spatial organization types (centralized, linear, radial, clustered, grid) shape building layout.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Design principles tested on the LEA focus on the relationship between form and space. Understand how primary elements (point, line, plane, volume) generate architectural form and how spatial organization types (centralized, linear, radial, clustered, grid) shape building layout.
+[/SLATECAMP_UI_BLOCK]
 
-<Tip>Design principles tested on the LEA focus on the relationship between form and space. Understand how primary elements (point, line, plane, volume) generate architectural form and how spatial organization types (centralized, linear, radial, clustered, grid) shape building layout.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Design principles tested on the LEA focus on the relationship between form and space. Understand how primary elements (point, line, plane, volume) generate architectural form and how spatial organization types (centralized, linear, radial, clustered, grid) shape building layout.
+[/SLATECAMP_UI_BLOCK]
 
 Resorts and eco-tourism facilities fall under **Group B** occupancy per **PD 1096**. They must comply with both DOT hotel classification standards and specific fire safety egress requirements. Unlike standard commercial hotels, these facilities emphasize landscape integration and environmental stewardship. A resort typically combines overnight accommodation with dining, recreation, and nature-based activities within a single site.
 
@@ -20,15 +37,27 @@ Key occupancy determinants include guest room count, assembly areas like dining 
 Fire escape routes must accommodate a **45 m** travel distance in unsprinklered areas or **60 m** where sprinkler systems are installed per the **RA 9514 2019 Revised IRR**. Exit width is calculated at **7.6 mm per occupant**, and double egress is mandated once occupancy exceeds 50 persons. The standard floor-to-floor height for resort corridors is typically **3.0 m**.
 
 Accessible features under **BP 344** include ramps at a **1:12 maximum slope** per DPWH MC No. 03 s. 2025. Accessible door widths must be a minimum of **900 mm**. Per **BP 344 2024 Revised IRR §1004/§1005**, accessible parking stalls must be **3.7–4.0 m width × 5.0 m length**, compared to standard stalls at **2.5 m × 5.0 m**.
-<ArticleMedia id="media-lea-dsgn-004-08-core-concept" type="image" caption="Resort and Eco-Tourism Facility — Site Planning and Zoning Diagram" description="Site plan bubble diagram for a resort showing zoning zones: accommodation clusters (1 slot/room parking), amenity core (pool, restaurant, spa), service/back-of-house, and eco-preservation zones. Annotated with DOT hospitality standards." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0003 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-dsgn-004-08-core-concept", type="image", caption="Resort and Eco-Tourism Facility — Site Planning and Zoning Diagram", description="Site plan bubble diagram for a resort showing zoning zones: accommodation clusters (1 slot/room parking), amenity core (pool, restaurant, spa), service/back-of-house, and eco-preservation zones. Annotated with DOT hospitality standards.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
 ## Key Provisions
 
-<Example>A centralized organization places a dominant central space around which secondary spaces are grouped. Examples: the Pantheon (rotunda), Chartres Cathedral (central nave with radiating chapels).</Example>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Example" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: A centralized organization places a dominant central space around which secondary spaces are grouped. Examples: the Pantheon (rotunda), Chartres Cathedral (central nave with radiating chapels).
+[/SLATECAMP_UI_BLOCK]
 
-<Example>A centralized organization places a dominant central space around which secondary spaces are grouped. Examples: the Pantheon (rotunda), Chartres Cathedral (central nave with radiating chapels).</Example>
+[SLATECAMP_UI_BLOCK:ui_0005 component="Example" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: A centralized organization places a dominant central space around which secondary spaces are grouped. Examples: the Pantheon (rotunda), Chartres Cathedral (central nave with radiating chapels).
+[/SLATECAMP_UI_BLOCK]
 
 | Element | Requirement | Source |
 |:--------------------------- |:---------------------------------------- |:----------------------------------------------------- |
@@ -63,8 +92,16 @@ DOT-classified eco-tourism facilities prioritize environmental certification alo
 
 ## How It's Tested
 
-<ExamTip>**LEA Pattern:** A floor plan or spatial diagram is shown and you must identify the type of spatial organization (centralized, linear, radial, clustered, grid). Look for the organizing geometry — the path or point that anchors the arrangement.</ExamTip>
-<ExamTip>**LEA Pattern:** A floor plan or spatial diagram is shown and you must identify the type of spatial organization (centralized, linear, radial, clustered, grid). Look for the organizing geometry — the path or point that anchors the arrangement.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **LEA Pattern:** A floor plan or spatial diagram is shown and you must identify the type of spatial organization (centralized, linear, radial, clustered, grid). Look for the organizing geometry — the path or point that anchors the arrangement.
+[/SLATECAMP_UI_BLOCK]
+[SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **LEA Pattern:** A floor plan or spatial diagram is shown and you must identify the type of spatial organization (centralized, linear, radial, clustered, grid). Look for the organizing geometry — the path or point that anchors the arrangement.
+[/SLATECAMP_UI_BLOCK]
 
 1. **Occupancy Trap:** Do not confuse Group B (resort) with Group E (restaurant) even if the resort has prominent dining areas. Always classify based on the primary use—overnight accommodation is Group B.
 2. **Parking Calculation:** A de luxe resort with 150 rooms requires 150 spaces. A first-class resort with 100 rooms requires 50 spaces. Avoid applying restaurant ratios (1/30 sqm) to overall resort parking.
@@ -75,7 +112,11 @@ DOT-classified eco-tourism facilities prioritize environmental certification alo
 ---
 
 **Exam Tip — ERR-DSGN-019:** Hotel parking ratios: de luxe = 1 slot/room, first-class = 1 slot/2 rooms per PD 1096 Rule XVIII. Do not confuse with BP 344 accessible stall requirements (3.7m × 5.0m).
-<ArticleMedia id="media-lea-dsgn-004-08-core-concept" type="image" caption="Resort Master Plan — Accommodation, Amenity, and Eco-Zones" description="Master site plan of a beach resort showing: accommodation clusters (cottages, hotel block), amenity core (pool deck, restaurant, spa), eco-preservation buffer (beach setback, mangrove zone), and service yard. DOT minimum room sizes and NBC parking ratios labeled." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0008 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-dsgn-004-08-core-concept", type="image", caption="Resort Master Plan — Accommodation, Amenity, and Eco-Zones", description="Master site plan of a beach resort showing: accommodation clusters (cottages, hotel block), amenity core (pool deck, restaurant, spa), eco-preservation buffer (beach setback, mangrove zone), and service yard. DOT minimum room sizes and NBC parking ratios labeled.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Cross-References
 

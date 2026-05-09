@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Matl 006 01 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 ## Learning Goal
 
@@ -11,11 +20,11 @@ Long-span metal roofing (trapezoidal or corrugated profiles spanning 6-12 meters
 Selection criteria include: structural capacity of frame, roof slope, expected service life, maintenance accessibility, thermal properties (k-value for insulation bonded to sheets), and fire rating per NFPA 101.
 
 
-<ArticleMedia id="media-roofing-material-chart" layout="single" type="image" status="placeholder"
-  alt="Comparison chart of roofing materials: corrugated GI sheets, clay tiles, concrete tiles, asphalt shingles, standing seam metal, and green roofs with slope, weather resistance, fire rating, and service life data"
-  caption="Future chart: roofing material comparison — slope requirements, weather resistance, fire rating, and service life"
-  suggestedAsset="Material property comparison table with application photos or icons"
-  placementIntent="Helps learners select appropriate roofing material for Philippine climate" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-roofing-material-chart", layout="single", type="image", status="placeholder", alt="Comparison chart of roofing materials: corrugated GI sheets, clay tiles, concrete tiles, asphalt shingles, standing seam metal, and green roofs with slope, weather resistance, fire rating, and service life data", caption="Future chart: roofing material comparison — slope requirements, weather resistance, fire rating, and service life", suggestedAsset="Material property comparison table with application photos or icons", placementIntent="Helps learners select appropriate roofing material for Philippine climate"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Provisions
 
@@ -35,11 +44,11 @@ Selection criteria include: structural capacity of frame, roof slope, expected s
 Philippine construction heavily relies on GI corrugated roofing in residential and light commercial sectors due to lower material cost and minimal fabrication complexity. The tropical maritime climate with high salt spray (especially near coastal zones) makes G90 coating essential; G60 (0.60 oz/ft²) results in premature rust. Annual rainfall exceeding 2000 mm in many regions demands fastidious slope design and overlapping sheet length (minimum 150 mm lap for horizontal joints, 200 mm for vertical). Major Philippine brands include DN Steel, SteelAsia (formerly Pag-asa Steel), Union Galvasteel Corporation, and Steelworld Manufacturing, all of which dominate the market with consistent ASTM compliance. Thermal comfort in un-insulated GI roofs drives adoption of reflective coatings (high emissivity finish) to reduce interior temperature rise.
 
 
-<ArticleMedia id="media-roof-slope-comparison" layout="single" type="image" status="placeholder"
-  alt="Comparison diagram showing roof slope requirements for different roofing materials: GI sheets, clay tiles, concrete tiles, asphalt shingles, standing seam, and green roofs"
-  caption="Future chart: roof slope requirements by roofing material type"
-  suggestedAsset="Comparison diagram or chart of minimum slopes per material"
-  placementIntent="Helps learners match roofing materials to roof slope requirements" />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-roof-slope-comparison", layout="single", type="image", status="placeholder", alt="Comparison diagram showing roof slope requirements for different roofing materials: GI sheets, clay tiles, concrete tiles, asphalt shingles, standing seam, and green roofs", caption="Future chart: roof slope requirements by roofing material type", suggestedAsset="Comparison diagram or chart of minimum slopes per material", placementIntent="Helps learners match roofing materials to roof slope requirements"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 ## How It's Tested
 
 **Pattern 1: Gauge & Thickness Conversion** — "A roof specification calls for Gauge 24 GI corrugated sheets per ASTM A653. What is the approximate thickness in millimeters?" (Answer: 0.61 mm; tests conversion familiarity and standard knowledge.)
@@ -50,15 +59,31 @@ Philippine construction heavily relies on GI corrugated roofing in residential a
 
 **Pattern 4: Material Comparison** — "Compare the structural implications of upgrading from Gauge 26 to Gauge 24 GI roofing on rafter spacing. What is the stress reduction factor?" (Answer: Approximately 33% increase in bending capacity; tests understanding of material strength relationships.)
 
-<Tip>Memorize gauge-to-thickness pairs: Gauge 26 = 0.46 mm, Gauge 24 = 0.61 mm, Gauge 22 = 0.76 mm. Remember ASTM A653 G90 = Z275 metric equivleant. In tropical zones, default to G90 unless project budget forces G60.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Memorize gauge-to-thickness pairs: Gauge 26 = 0.46 mm, Gauge 24 = 0.61 mm, Gauge 22 = 0.76 mm. Remember ASTM A653 G90 = Z275 metric equivleant. In tropical zones, default to G90 unless project budget forces G60.
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
-<WikiMistakeCard mistake="Confusing gauge numbers with thickness: assuming Gauge 30 is thicker than Gauge 26." correction="Lower gauge numbers indicate thicker material. Gauge 26 (0.46 mm) is standard; Gauge 30 (0.31 mm) is thinner and not used for primary roofing in Philippines." />
+[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Confusing gauge numbers with thickness: assuming Gauge 30 is thicker than Gauge 26.", correction="Lower gauge numbers indicate thicker material. Gauge 26 (0.46 mm) is standard; Gauge 30 (0.31 mm) is thinner and not used for primary roofing in Philippines."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeCard mistake="Selecting G60 coating for coastal salt-air exposure without verification of project lifecycle costs." correction="G90 (275 g/m²) is mandatory for tropical maritime climates. G60 premature rust negates any first-cost savings over 20+ year service life." />
+[SLATECAMP_UI_BLOCK:ui_0005 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Selecting G60 coating for coastal salt-air exposure without verification of project lifecycle costs.", correction="G90 (275 g/m²) is mandatory for tropical maritime climates. G60 premature rust negates any first-cost savings over 20+ year service life."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeList mistakes={["Using minimum slope of 1/4:12 for non-draining flat roofs without sump pumps", "Ignoring sheet overlap length (150 mm horizontal, 200 mm vertical) in slope calculations", "Applying asphalt shingle specs to tropical zones without 3-5 year lifecycle planning"]} />
+[SLATECAMP_UI_BLOCK:ui_0006 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Using minimum slope of 1/4:12 for non-draining flat roofs without sump pumps\", \"Ignoring sheet overlap length (150 mm horizontal, 200 mm vertical) in slope calculations\", \"Applying asphalt shingle specs to tropical zones without 3-5 year lifecycle planning\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 

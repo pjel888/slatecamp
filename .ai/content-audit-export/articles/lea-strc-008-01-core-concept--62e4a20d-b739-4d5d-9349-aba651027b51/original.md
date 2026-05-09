@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Strc 008 01 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 ## Learning Goal
 By the end of this article, you will be able to:
@@ -9,7 +18,11 @@ By the end of this article, you will be able to:
 Steel section shapes and connection geometry define load paths; slenderness limits control buckling risk and design viability in both compression and tension members.
 
 ## Core Concept
-<ArticleMedia id="media-lea-strc-008-01-core-concept" type="image" caption="Steel Section Shapes — W, S, C, L, T, and HSS Profiles" description="Cross-section illustrations of standard hot-rolled steel shapes: (1) W-shape (wide flange) — parallel flange surfaces; (2) S-shape (American Standard) — sloped flanges; (3) C-channel — channel section with sloped flanges; (4) L-angle — equal and unequal leg angles; (5) T-section — cut from W or S shapes; (6) HSS (hollow structural section) — round, square, rectangular. Each with nominal dimension notation (d, bf, tf, tw)." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-strc-008-01-core-concept", type="image", caption="Steel Section Shapes — W, S, C, L, T, and HSS Profiles", description="Cross-section illustrations of standard hot-rolled steel shapes: (1) W-shape (wide flange) — parallel flange surfaces; (2) S-shape (American Standard) — sloped flanges; (3) C-channel — channel section with sloped flanges; (4) L-angle — equal and unequal leg angles; (5) T-section — cut from W or S shapes; (6) HSS (hollow structural section) — round, square, rectangular. Each with nominal dimension notation (d, bf, tf, tw).", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 Structural steel members are manufactured in standardized section shapes to optimize strength-to-weight ratio. The major rolled shapes—W-sections (wide flange), S-sections (American standard), C-channels, L-angles, T-sections, and hollow structural sections (HSS)—each serve distinct roles in framing. W-sections dominate primary beams and columns because their wide flanges resist bending efficiently; S-sections see less use today; channels and angles work well as bracing, purlins, and secondary members; T-sections split off from wide flanges for gusset plates and special connections; built-up sections (welded or riveted plates) solve odd geometric needs. Connections transmit force between members through gusset plates (triangular or rectangular transition pieces), splice plates (overlap elements), stiffeners (vertical reinforcement), and fasteners. Slenderness (the ratio KL/r, where K is effective length factor, L is member length, and r is radius of gyration) limits member stability. The AISC Standard (owned by LEA-STRC-003-04) sets maximum KL/r values: compression members shall not exceed 200, and tension members (preferred practice) shall not exceed 300. These limits prevent excessive lateral deflection and ensure member reliability; oversized slenderness ratios indicate undersized cross-sections or overly long spans between lateral supports. A36 steel (Fu = 400 MPa, Fy = 248 MPa) remains common for structural work; reference stresses owned by LEA-STRC-005-03 provide design thresholds.
 
 ## Key Provisions
@@ -58,12 +71,20 @@ _Tests threshold knowledge: 320 > 300 (preferred limit for tension). Candidate m
 "A bolted lap splice connects two L-angles in tension. Name the three components required and their function."
 _Tests vocabulary: splice plates, gusset plate (if needed), and fasteners. Reinforces that splice geometry must match member shape._
 
-<Tip>KL/r = 200 for compression; KL/r ≤ 300 (preferred) for tension. If a problem says slenderness is high, ask: is it a compression member (fail) or tension member (check 300 limit)?</Tip>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: KL/r = 200 for compression; KL/r ≤ 300 (preferred) for tension. If a problem says slenderness is high, ask: is it a compression member (fail) or tension member (check 300 limit)?
+[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 
 See also: **Bolted Connections** (lea-strc-008-02) for how steel members are joined, **Structural Design Capacity** (lea-strc-005-02) for steel member capacity checks, and **Trusses** (lea-strc-002-05) for typical steel truss applications.
 
 ## Common Mistakes
-<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: These are frequently tested traps. Memorize them to avoid losing easy points on exam day.
+[/SLATECAMP_UI_BLOCK]
 

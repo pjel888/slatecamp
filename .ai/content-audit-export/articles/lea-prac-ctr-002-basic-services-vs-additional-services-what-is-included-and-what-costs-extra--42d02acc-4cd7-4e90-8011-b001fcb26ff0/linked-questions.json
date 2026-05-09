@@ -1,9 +1,59 @@
 {
   "article_id": "42d02acc-4cd7-4e90-8011-b001fcb26ff0",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:92e5d47dcc6ad783771d039b7586e5d80e12fb137dd738d81982cc5f990b0b8d",
+  "linked_questions_hash": "sha256:85370c832e13f214b560e8683bed240b471c59ba454f5ef36b86666d97da2c48",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "c064ad24-3fcd-4f16-8ce5-9e9a19b48169",
+      "article_id": "42d02acc-4cd7-4e90-8011-b001fcb26ff0",
+      "topic_id": "c7e0919b-952b-40ee-9ae2-0ad1b09bb416",
+      "text": "If an Owner requests 3D renderings and detailed cost estimating during Design Development, what is the architect's proper response?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Include the work in Basic Services without additional charge, as these are standard design activities typically expected in the industry"
+        },
+        {
+          "id": "b",
+          "text": "Provide the work and bill at the standard CA hourly rate, ensuring fair compensation for additional effort"
+        },
+        {
+          "id": "c",
+          "text": "Issue a written notice identifying these as Additional Services, estimate the cost, and request written authorization before proceeding"
+        },
+        {
+          "id": "d",
+          "text": "Refuse to provide the services as they exceed the scope of architectural practice, maintaining focus on core responsibilities"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Treats Additional Services as included; renderings and detailed cost estimating beyond CD requirements are expressly listed as Additional Services requiring separate authorization.",
+        "b": "Applies wrong rate and ignores authorization requirement; Additional Services require written authorization and are typically billed at a rate different from CA hourly rate.",
+        "d": "Inappropriately refuses to perform services; renderings and estimating are within architectural practice; the issue is whether they are authorized as Additional Services, not whether the architect may provide them.",
+        "correct": "When the Owner requests work that appears to be Additional Services, the architect should immediately notify the Owner in writing, identifying the service, estimating the cost or hourly commitment, and requesting authorization before proceeding.",
+        "takeaway": "Before providing unrequested Additional Services, the architect must issue written notice identifying scope, estimating cost, and requesting written authorization."
+      },
+      "explanation": "Treats Additional Services as included; renderings and detailed cost estimating beyond CD requirements are expressly listed as Additional Services requiring separate authorization. Applies wrong rate and ignores authorization requirement; Additional Services require written authorization and are typically billed at a rate different from CA hourly rate. Inappropriately refuses to perform services; renderings and estimating are within architectural practice; the issue is whether they are authorized as Additional Services, not whether the architect may provide them. When the Owner requests work that appears to be Additional Services, the architect should immediately notify the Owner in writing, identifying the service, estimating the cost or hourly commitment, and requesting authorization before proceeding. Before providing unrequested Additional Services, the architect must issue written notice identifying scope, estimating cost, and requesting written authorization.",
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-002-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.047156+00:00",
+      "updated_at": "2026-05-06T16:21:04.352929+00:00",
+      "content_hash": "sha256:bfb6f111529303ef66a858a2966125dd1379c2ab28d6b8e774414c8763e7d897"
+    },
     {
       "question_id": "28811d5b-307d-4299-9c9c-68e9c18c513a",
       "article_id": "42d02acc-4cd7-4e90-8011-b001fcb26ff0",
@@ -453,56 +503,6 @@
       "created_at": "2026-03-23T19:27:47.047156+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:006db3dd21fbe891b78d5c4a788c9072e33d6fe3f2b280ac15ed4b9cc5450f70"
-    },
-    {
-      "question_id": "c064ad24-3fcd-4f16-8ce5-9e9a19b48169",
-      "article_id": "42d02acc-4cd7-4e90-8011-b001fcb26ff0",
-      "topic_id": "c7e0919b-952b-40ee-9ae2-0ad1b09bb416",
-      "text": "If an Owner requests 3D renderings and detailed cost estimating during Design Development, what is the architect's proper response?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Include the work in Basic Services without additional charge, as these are standard design activities typically expected in the industry"
-        },
-        {
-          "id": "b",
-          "text": "Provide the work and bill at the standard CA hourly rate, ensuring fair compensation for additional effort"
-        },
-        {
-          "id": "c",
-          "text": "Issue a written notice identifying these as Additional Services, estimate the cost, and request written authorization before proceeding"
-        },
-        {
-          "id": "d",
-          "text": "Refuse to provide the services as they exceed the scope of architectural practice, maintaining focus on core responsibilities"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Treats Additional Services as included; renderings and detailed cost estimating beyond CD requirements are expressly listed as Additional Services requiring separate authorization.",
-        "b": "Applies wrong rate and ignores authorization requirement; Additional Services require written authorization and are typically billed at a rate different from CA hourly rate.",
-        "d": "Inappropriately refuses to perform services; renderings and estimating are within architectural practice; the issue is whether they are authorized as Additional Services, not whether the architect may provide them.",
-        "correct": "When the Owner requests work that appears to be Additional Services, the architect should immediately notify the Owner in writing, identifying the service, estimating the cost or hourly commitment, and requesting authorization before proceeding.",
-        "takeaway": "Before providing unrequested Additional Services, the architect must issue written notice identifying scope, estimating cost, and requesting written authorization."
-      },
-      "explanation": null,
-      "code_citation": "UAP Doc 301",
-      "bloom_level": "understand",
-      "application_context": "client_scenario",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PRAC-CTR-002-003",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:47.047156+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:41cbbfd1b1b6cf05cfa9188fa00c40f44cf5d6251403b989edb2cc04055abbc6"
     }
   ]
 }

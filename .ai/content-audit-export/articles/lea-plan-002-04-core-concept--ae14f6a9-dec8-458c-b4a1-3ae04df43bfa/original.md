@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Plan 002 04 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 
 ## Learning Goal
@@ -14,12 +23,24 @@ A zoning regulation typically specifies: permitted uses, prohibited uses, buildi
 Land use categories vary by context. Residential zones typically separate single-family neighborhoods from apartment districts, each with different density allowances. Mixed-use zones permit residential and commercial on the same lot, supporting the "eyes on the street" principle of urban vitality. Industrial zones buffer manufacturing from housing. Institutional zones protect government offices, schools, and hospitals from conflicting uses. In many Philippine municipalities, agricultural zoning protects farmland at the periphery but often conflicts with sprawl pressure. The key challenge: zoning rigidity. Once categories are legally set, changing them requires political approval and often triggers property value shifts.
 
 The Zoning Ordinance must be internally consistent—use designations must align with infrastructure capacity (roads, water, sewage) and with the CLUP's vision. A zoning ordinance that permits high-density residential in an area with no planned water system is both unenforceable and legally vulnerable to challenge.
-<ArticleMedia id="media-lea-plan-002-04-core-concept" type="image" caption="Land Use Zoning Classifications — Residential, Commercial, Industrial, Agricultural" description="Diagram showing standard zoning classifications: R-1 to R-5 residential density tiers, C-1 to C-4 commercial intensity levels, I-1 to I-3 industrial nuisance classifications, agricultural production zones, and institutional/civic zones. FAR, lot coverage, and height limits per type." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-plan-002-04-core-concept", type="image", caption="Land Use Zoning Classifications — Residential, Commercial, Industrial, Agricultural", description="Diagram showing standard zoning classifications: R-1 to R-5 residential density tiers, C-1 to C-4 commercial intensity levels, I-1 to I-3 industrial nuisance classifications, agricultural production zones, and institutional/civic zones. FAR, lot coverage, and height limits per type.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Provisions
-<ArticleMedia id="media-lea-plan-002-04-core-concept" type="image" caption="Zoning Ordinance vs. CLUP — Implementation Relationship Diagram" description="Flowchart showing the relationship: CLUP (policy/vision, 10-year term) → Zoning Ordinance (regulatory tool, implements policy) → Sanggunian adoption. Shows how zoning categories, density regulations, and use restrictions implement the CLUP's land use policies." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-plan-002-04-core-concept", type="image", caption="Zoning Ordinance vs. CLUP — Implementation Relationship Diagram", description="Flowchart showing the relationship: CLUP (policy/vision, 10-year term) → Zoning Ordinance (regulatory tool, implements policy) → Sanggunian adoption. Shows how zoning categories, density regulations, and use restrictions implement the CLUP's land use policies.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<WikiExamTable rows={[{"heading":"Zoning Category","description":"Primary Function and Typical Regulations"},{"content":"Residential Zone","description":"Single-family homes, duplexes, or apartments. Height limits (usually 2–3 stories for detached; up to 10+ for condos). Lot size minimums; setback requirements. Parking: 1–2 spaces per unit."},{"content":"Commercial Zone","description":"Retail, offices, services. Built-in parking requirement. Restrict ground-floor housing only if city policy explicitly bans mixed-use. 24-hour activity permitted. Noise and signage limits."},{"content":"Industrial Zone","description":"Manufacturing, warehousing, bulk storage. Usually surrounded by buffer zones. Setback from residential zones (often 50–100m). Truck traffic, waste discharge regulated. Height limits vary by facility type."},{"content":"Mixed-Use Zone (Horizontal)","description":"Residential and commercial on same lot. Common in urban renewal. Enables walkable districts. Requires clear separation (commercial on ground floor, residential above or adjacent)."},{"content":"Institutional Zone","description":"Government buildings, schools, health facilities, religious buildings. Often granted height exemptions. Parking and assembly space requirements. Not typically revenue-generating; focused on public service."},{"content":"Agricultural Zone","description":"Farming, fishponds, forestry, tree nurseries. Found at city periphery. Often conflict-prone: developers seek to rezone; environmental advocates resist. Minimum lot sizes (typically 2–5 hectares for farm operations)."}]} />
+[SLATECAMP_UI_BLOCK:ui_0003 component="WikiExamTable" status="preserved"]
+Extracted summary:
+- Props: rows="{[{\"heading\":\"Zoning Category\",\"description\":\"Primary Function and Typical Regulations\"}", content=true, Residential=true, Zone=true, description=true, Single-family=true, homes=true, duplexes=true, or=true, apartments=true, Height=true, limits=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Philippine Context
 
@@ -31,7 +52,11 @@ In Philippine municipalities, zoning is often the first tool deployed to manage 
 - "Which authority adopts the Zoning Ordinance?" → The Sanggunian (Sangguniang Bayan or Panlungsod, depending on LGU level). The Mayor signs it, but does not initiate it.
 - "The CLUP designates an area for residential use, but the Zoning Ordinance permits commercial. Is this permitted?" → No. Zoning ordinance must be consistent with the CLUP. If inconsistent, the ordinance is vulnerable to legal challenge.
 
-<Tip>Zoning adoption = Sanggunian legislative function (not Planning Office, not Mayor alone). Zoning ordinance must align with CLUP. Use designations are enforceable rules with numeric limits (height, setback, lot size).</Tip>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Zoning adoption = Sanggunian legislative function (not Planning Office, not Mayor alone). Zoning ordinance must align with CLUP. Use designations are enforceable rules with numeric limits (height, setback, lot size).
+[/SLATECAMP_UI_BLOCK]
 
 **Exam Tip:** The Zoning Ordinance is a LEGISLATIVE enactment by the Sanggunian, not the CLUP. The CLUP is a planning document; the zoning ordinance is the enforceable law. This distinction is tested frequently.
 
@@ -41,4 +66,8 @@ See **LEA-PLAN-001-05** (CLUP Process) for CLUP-to-zoning ordinance relationship
 
 ## Common Mistakes
 
-<WikiMistakeList mistakes={["Thinking the Planning Office 'approves' the zoning ordinance — it drafts it; the Sanggunian adopts it","Confusing zoning (legal use category) with land subdivision (physical division into lots) — zoning applies to both raw land and already-subdivided areas","Believing a Mayor can veto the zoning ordinance — the Mayor signs it but the Sanggunian passes it; veto is extremely rare","Assuming 'mixed-use' automatically includes residential — mixed-use must be explicitly permitted in the zoning code; many commercial zones exclude residential entirely"]} />
+[SLATECAMP_UI_BLOCK:ui_0005 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Thinking the Planning Office 'approves' the zoning ordinance — it drafts it; the Sanggunian adopts it\",\"Confusing zoning (legal use category) with land subdivision (physical division into lots) — zoning applies to both raw land and already-subdivided areas\",\"Believing a Mayor can veto the zoning ordinance — the Mayor signs it but the Sanggunian passes it; veto is extremely rare\",\"Assuming 'mixed-use' automatically includes residential — mixed-use must be explicitly permitted in the zoning code; many commercial zones exclude residential entirely\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]

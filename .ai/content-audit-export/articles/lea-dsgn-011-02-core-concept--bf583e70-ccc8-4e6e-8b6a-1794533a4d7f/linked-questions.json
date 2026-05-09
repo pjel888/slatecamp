@@ -1,9 +1,60 @@
 {
   "article_id": "bf583e70-ccc8-4e6e-8b6a-1794533a4d7f",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:9809324a47b550df1f62e9d2a081abfb981fa5e69ee7a977df9172910284b0cc",
+  "linked_questions_hash": "sha256:b47e10f941765e6f4c9ca373e6cdfcba6d0c102adaf05148e76869eae110da58",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "5ec4abc5-c4dc-48e4-be53-af047dd6d6ee",
+      "article_id": "bf583e70-ccc8-4e6e-8b6a-1794533a4d7f",
+      "topic_id": "6c40a9c4-07cf-40b4-9b60-15c112173368",
+      "text": "An elevation drawing shows five regularly spaced window openings, but the corresponding floor plan shows four columns defining the structural grid. What does this discrepancy indicate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The elevation and floor plan are from different buildings; they cannot be reconciled without further investigation into the project documentation"
+        },
+        {
+          "id": "b",
+          "text": "The fenestration does not align with the structural grid; the drawings require coordination to resolve the conflict"
+        },
+        {
+          "id": "c",
+          "text": "Windows do not need to align with columns; this is a stylistic choice that may be intentional for aesthetic reasons"
+        },
+        {
+          "id": "d",
+          "text": "The structural grid shown in the floor plan is incorrect and should be updated to reflect the actual construction"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrect. A single building should have consistent structural and fenestration logic across drawings.",
+        "b": "Correct. You recognized the coordination error and understood its implications for structural integrity.",
+        "c": "Incorrect. While some stylistic variation is acceptable, systematic misalignment with the structural grid creates constructability and code compliance issues.",
+        "d": "Incorrect. The structural grid is typically fixed early in design; the fenestration should be coordinated to align with it.",
+        "correct": "Fenestration (window placement) must align with the structural grid to ensure windows are supported and to avoid openings that compromise beam-column connections. This discrepancy requires coordination between the architect and structural engineer.",
+        "takeaway": "Always cross-reference elevations with floor plans to verify that fenestration aligns with the structural grid. Misalignment is a red flag for design coordination errors."
+      },
+      "explanation": "Incorrect. A single building should have consistent structural and fenestration logic across drawings. Correct. You recognized the coordination error and understood its implications for structural integrity. Incorrect. While some stylistic variation is acceptable, systematic misalignment with the structural grid creates constructability and code compliance issues. Incorrect. The structural grid is typically fixed early in design; the fenestration should be coordinated to align with it. Fenestration (window placement) must align with the structural grid to ensure windows are supported and to avoid openings that compromise beam-column connections. This discrepancy requires coordination between the architect and structural engineer. Always cross-reference elevations with floor plans to verify that fenestration aligns with the structural grid. Misalignment is a red flag for design coordination errors.",
+      "code_citation": "Standard practice; structural coordination",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-011-02-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:17.379681+00:00",
+      "updated_at": "2026-05-06T15:15:13.226726+00:00",
+      "content_hash": "sha256:7be2ca7a280c61e7fe7de403749bbdbb6b8bd4567481c4eb6710f7015a02eab5"
+    },
     {
       "question_id": "9ec6e561-3868-4911-b43a-7afec0fe210f",
       "article_id": "bf583e70-ccc8-4e6e-8b6a-1794533a4d7f",
@@ -258,57 +309,6 @@
       "created_at": "2026-03-23T19:27:17.379681+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:469ae0d791915f44655a8790e5f266cbc9e55b295a88a77c7949cd2703c3163f"
-    },
-    {
-      "question_id": "5ec4abc5-c4dc-48e4-be53-af047dd6d6ee",
-      "article_id": "bf583e70-ccc8-4e6e-8b6a-1794533a4d7f",
-      "topic_id": "6c40a9c4-07cf-40b4-9b60-15c112173368",
-      "text": "An elevation drawing shows five regularly spaced window openings, but the corresponding floor plan shows four columns defining the structural grid. What does this discrepancy indicate?",
-      "options": [
-        {
-          "id": "a",
-          "text": "The elevation and floor plan are from different buildings; they cannot be reconciled without further investigation into the project documentation"
-        },
-        {
-          "id": "b",
-          "text": "The fenestration does not align with the structural grid; the drawings require coordination to resolve the conflict"
-        },
-        {
-          "id": "c",
-          "text": "Windows do not need to align with columns; this is a stylistic choice that may be intentional for aesthetic reasons"
-        },
-        {
-          "id": "d",
-          "text": "The structural grid shown in the floor plan is incorrect and should be updated to reflect the actual construction"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Incorrect. A single building should have consistent structural and fenestration logic across drawings.",
-        "b": "Correct. You recognized the coordination error and understood its implications for structural integrity.",
-        "c": "Incorrect. While some stylistic variation is acceptable, systematic misalignment with the structural grid creates constructability and code compliance issues.",
-        "d": "Incorrect. The structural grid is typically fixed early in design; the fenestration should be coordinated to align with it.",
-        "correct": "Fenestration (window placement) must align with the structural grid to ensure windows are supported and to avoid openings that compromise beam-column connections. This discrepancy requires coordination between the architect and structural engineer.",
-        "takeaway": "Always cross-reference elevations with floor plans to verify that fenestration aligns with the structural grid. Misalignment is a red flag for design coordination errors."
-      },
-      "explanation": null,
-      "code_citation": "Standard practice; structural coordination",
-      "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.7,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-DSGN-011-02-005",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:17.379681+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:17413793480e482b07c913fab0bfcba68c14354e5a822c24aaf36e4b46b4b26b"
     },
     {
       "question_id": "58bff75d-8036-418a-b9b7-44dc26144ece",

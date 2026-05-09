@@ -1,5 +1,14 @@
 # SPP Document 209: Standards of Professional Practice on Professional Architectural Consulting Services (PACS)
 
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **SPP Document 209: Standards of Professional Practice on Professional Architectural Consulting Services (PACS)** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
+
 ## Overview
 
 **SPP Document 209** governs **Professional Architectural Consulting Services (PACS)** — the broadest and most policy-laden document in the entire SPP series, and the **final document in the 2010 SPP framework**. It replaces the **1981 UAP Doc. 210** and is grounded in the Supplemental Implementing Rules and Regulations (IRR) of **Republic Act No. 9266** (The Architecture Act of 2004), as well as in the Joint Resolution No. 2009-01 of the Philippine Technological Council (PTC) and the Council for the Built and Natural Environments (CBNE) dated December 11, 2009.
@@ -32,11 +41,11 @@ Three decades after LoI 1000, SPP 209 was revised under pressing circumstances:
 - The **proliferation of entities projecting themselves as "consultants"** without adequate skills, training, or experience had become a serious problem
 - The full utilization of Filipino professional consultants was being **undermined by foreign competition**, despite the fact that Filipino PCAs are well qualified
 
-<Callout variant="note">
-
-*"The problem presented by the dominant presence of foreign architects in the Philippines is precisely defined by the fact that the technology they bring in is already available in such adequate proportion that foreign consultants compete in terms adverse to Filipino registered and licensed professionals (RLPs) and in fact displace Filipino Professional Consultants (FPCs) from participation in significant development projects."*
-
-</Callout>
+[SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
+Extracted summary:
+- Props: variant="note"
+- Text: *"The problem presented by the dominant presence of foreign architects in the Philippines is precisely defined by the fact that the technology they bring in is already available in such adequate proportion that foreign consultants compete in terms adverse to Filipino registered and licensed professionals (RLPs) and in fact displace Filipino Professional Consultants (FPCs) from participation in significant development projects."*
+[/SLATECAMP_UI_BLOCK]
 
 
 ### 1.4 The Joint Resolution Basis
@@ -75,11 +84,11 @@ Full utilization of Filipino Professional Consultants (FPCs) **minimizes the imp
 
 The inflow of foreign consultants is often justified on the ground of "technology transfer" — but SPP 209 explicitly challenges this argument:
 
-<Callout variant="note">
-
-*"The problem presented by the dominant presence of foreign architects in the Philippines is precisely defined by the fact that the technology they bring in is already available in such adequate proportion that foreign consultants compete in terms adverse to Filipino RLPs."*
-
-</Callout>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Callout" status="preserved"]
+Extracted summary:
+- Props: variant="note"
+- Text: *"The problem presented by the dominant presence of foreign architects in the Philippines is precisely defined by the fact that the technology they bring in is already available in such adequate proportion that foreign consultants compete in terms adverse to Filipino RLPs."*
+[/SLATECAMP_UI_BLOCK]
 
 
 ### 2.6 Educational Capital Loss
@@ -88,11 +97,11 @@ The disproportionate inflow versus outflow of expertise represents a **tremendou
 
 ### 2.7 Competence of Filipino PCAs
 
-<Callout variant="note">
-
-*"The professional competence of Filipino Professional Consultants (FPCs), specifically Professional Consulting Architects (PCAs) is well established and adequate to meet the country's requirements. In fact, in many cases, foreign consultants depend largely on the expertise and information furnished by FPCs, especially PCAs."*
-
-</Callout>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Callout" status="preserved"]
+Extracted summary:
+- Props: variant="note"
+- Text: *"The professional competence of Filipino Professional Consultants (FPCs), specifically Professional Consulting Architects (PCAs) is well established and adequate to meet the country's requirements. In fact, in many cases, foreign consultants depend largely on the expertise and information furnished by FPCs, especially PCAs."*
+[/SLATECAMP_UI_BLOCK]
 
 
 ### 2.8 Primary Purpose of SPP 209
@@ -105,17 +114,11 @@ The primary purpose is to **complement existing professional regulatory laws** g
 
 SPP 209 sets out **five specific policy objectives**:
 
-<ComparisonTable>
-
-| No. | Objective |
-|---|---|
-| **3.1** | Establish standards and parameters for PCAs to develop and nurture competencies, credibility, and integrity in their respective fields/areas of specialization |
-| **3.2** | Define the scope, type, and nature of PACS that **only RLA-PCAs** shall be allowed to perform for the Government, private sector, CSOs, and the international community with projects on Philippine soil |
-| **3.3** | Ensure full compliance with advisories and guidelines on selecting, commissioning, and engaging **foreign architects/consultants** for projects on Philippine soil — to stimulate the local market for FPCAs and level the field between RLAs and FAs/FCs |
-| **3.4** | Apply Filipino Architects' familiarity with **local physical, social, economic, business, institutional, and environmental conditions** towards sustainable and comprehensive development |
-| **3.5** | Create a nurturing environment that encourages Filipino PCAs to **practice and develop domestically** — propelling them to the same level as, if not greater heights than, their global counterparts |
-
-</ComparisonTable>
+[SLATECAMP_UI_BLOCK:ui_0004 component="ComparisonTable" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: | No. | Objective | |---|---| | **3.1** | Establish standards and parameters for PCAs to develop and nurture competencies, credibility, and integrity in their respective fields/areas of specialization | | **3.2** | Define the scope, type, and nature of PACS that **only RLA-PCAs** shall be allowed to perform for the Government, private sector, CSOs, and the international community with projects on Philippine soil | | **3.3** | Ensure full compliance with advisories and guidelines on selecting, co
+[/SLATECAMP_UI_BLOCK]
 
 
 ***
@@ -124,11 +127,11 @@ SPP 209 sets out **five specific policy objectives**:
 
 SPP 209 invokes **Section 14, Article XII of the 1987 Philippine Constitution** as its policy foundation:
 
-<Callout variant="note">
-
-*"The sustained development of a reservoir of national tleants consisting of Filipino scientists, entrepreneurs, professionals, managers, high-level technical manpower and skilled workers and craftsmen in all fields shall be promoted by the State. The State shall encourage appropriate technology and regulate its transfer for the national benefit. The practice of all professions in the Philippines shall be limited to Filipino citizens, save in cases prescribed by law."*
-
-</Callout>
+[SLATECAMP_UI_BLOCK:ui_0005 component="Callout" status="preserved"]
+Extracted summary:
+- Props: variant="note"
+- Text: *"The sustained development of a reservoir of national tleants consisting of Filipino scientists, entrepreneurs, professionals, managers, high-level technical manpower and skilled workers and craftsmen in all fields shall be promoted by the State. The State shall encourage appropriate technology and regulate its transfer for the national benefit. The practice of all professions in the Philippines shall be limited to Filipino citizens, save in cases prescribed by law."*
+[/SLATECAMP_UI_BLOCK]
 
 
 All State-registered and licensed professionals (RLPs) — including RLAs — are **mandatorily required** to strictly adhere to their respective SPPs within the framework of this constitutional provision.
@@ -141,11 +144,11 @@ SPP 209 introduces a comprehensive set of definitions specific to the consulting
 
 ### 5.1 Professional Consulting Architect (PCA)
 
-<Callout variant="note">
-
-Any person, whether natural or juridical, duly licensed, registered and/or duly accredited by the Commission; must be a Philippine-registered and licensed Architect (RLA), with a valid registration certification and Commission ID card, and a member in good standing of the IAPOA.
-
-</Callout>
+[SLATECAMP_UI_BLOCK:ui_0006 component="Callout" status="preserved"]
+Extracted summary:
+- Props: variant="note"
+- Text: Any person, whether natural or juridical, duly licensed, registered and/or duly accredited by the Commission; must be a Philippine-registered and licensed Architect (RLA), with a valid registration certification and Commission ID card, and a member in good standing of the IAPOA.
+[/SLATECAMP_UI_BLOCK]
 
 
 ### 5.2 Filipino Professional Consulting Architect (FPCA)
@@ -163,11 +166,11 @@ An individual, NOT a Philippine citizen, who:
 
 ### 5.4 Professional Architectural Consulting Services (PACS)
 
-<Callout variant="note">
-
-The rendering by a PCA or by a Consulting Architectural Firm (CAF/RAF), of **independent advice, extension of technical assistance and services**, as well as undertaking of activities requiring appropriate knowledge, skills, training and experience, recognized competence, integrity, and/or financial and logistical capability.
-
-</Callout>
+[SLATECAMP_UI_BLOCK:ui_0007 component="Callout" status="preserved"]
+Extracted summary:
+- Props: variant="note"
+- Text: The rendering by a PCA or by a Consulting Architectural Firm (CAF/RAF), of **independent advice, extension of technical assistance and services**, as well as undertaking of activities requiring appropriate knowledge, skills, training and experience, recognized competence, integrity, and/or financial and logistical capability.
+[/SLATECAMP_UI_BLOCK]
 
 
 ### 5.5 Consulting Architectural Firm (CAF)
@@ -210,28 +213,11 @@ Expenses in connection with the project that may include:
 
 The scope of PACS shall be defined in accordance with the charter, by-laws, policies, rules, and regulations of the Commission and the Board through the IAPOA. It includes — **but is not limited to** — the following 16 service types:
 
-<ComparisonTable>
-
-| No. | PACS Service |
-|---|---|
-| 6.1 | **Program/project conceptualization and development** |
-| 6.2 | **Rendering of technical advice, consultation, and/or counselling** |
-| 6.3 | **Preparation of schematic/concept-level through preliminary plans, drawings, designs and specifications** |
-| 6.4 | **Teaching, lecturing, coaching, mentoring** |
-| 6.5 | **Research and Development (R&D)** |
-| 6.6 | **Documentation** |
-| 6.7 | **Conduct of pre-investment/pre-feasibility and feasibility studies** |
-| 6.8 | **Marketing and promotional studies** |
-| 6.9 | **Land use and multi-sectoral development planning, development and management** |
-| 6.10 | **Site selection, analyses, evaluation, ranking and development** |
-| 6.11 | **Construction** |
-| 6.12 | **Project/Construction Management and/or Administration** |
-| 6.13 | **Post-construction evaluation** |
-| 6.14 | **Monitoring and evaluation** |
-| 6.15 | **Training, capability building and Continuing Professional Education (CPE)** |
-| 6.16 | **Capital Investment Programming** |
-
-</ComparisonTable>
+[SLATECAMP_UI_BLOCK:ui_0008 component="ComparisonTable" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: | No. | PACS Service | |---|---| | 6.1 | **Program/project conceptualization and development** | | 6.2 | **Rendering of technical advice, consultation, and/or counselling** | | 6.3 | **Preparation of schematic/concept-level through preliminary plans, drawings, designs and specifications** | | 6.4 | **Teaching, lecturing, coaching, mentoring** | | 6.5 | **Research and Development (R&D)** | | 6.6 | **Documentation** | | 6.7 | **Conduct of pre-investment/pre-feasibility and feasibility studies** |
+[/SLATECAMP_UI_BLOCK]
 
 
 Note that several of these PACS services overlap with specific SPP documents (e.g., 6.7 overlaps with SPP 201, 6.11–6.12 overlap with SPP 207/204-B, 6.13 overlaps with SPP 205). Under SPP 209, these services are provided in a **consulting capacity** — advisory, technical assistance, or developmental — rather than as a direct Architect-of-Record engagement.
@@ -242,19 +228,11 @@ Note that several of these PACS services overlap with specific SPP documents (e.
 
 A PCA must satisfy **all five** of the following qualifications:
 
-<ComparisonTable>
-
-| # | Qualification | Natural Person (FPCA) | Juridical Person (CAF/RAF) |
-|---|---|---|---|
-| **7.1** | Citizenship | Philippine citizen | N/A |
-| **7.1** | License | RLA with valid PRC ID card | N/A |
-| **7.1** | IAPOA membership | Member in good standing | N/A |
-| **7.2** | Corporate registration | N/A | SEC- or DTI-registered; valid RAF Commission certificate |
-| **7.3** | Experience | Minimum years of active and relevant professional training in the chosen field/s of specialization (as determined by IAPOA and PRBoA) | Same requirement applies |
-| **7.4** | IAPOA certification | Endorsed and certified by IAPOA as member in good standing | Same requirement applies |
-| **7.5** | Clean record | Never convicted of any criminal or administrative offense related to deliberate wrongdoing | Same requirement applies |
-
-</ComparisonTable>
+[SLATECAMP_UI_BLOCK:ui_0009 component="ComparisonTable" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: | # | Qualification | Natural Person (FPCA) | Juridical Person (CAF/RAF) | |---|---|---|---| | **7.1** | Citizenship | Philippine citizen | N/A | | **7.1** | License | RLA with valid PRC ID card | N/A | | **7.1** | IAPOA membership | Member in good standing | N/A | | **7.2** | Corporate registration | N/A | SEC- or DTI-registered; valid RAF Commission certificate | | **7.3** | Experience | Minimum years of active and relevant professional training in the chosen field/s of specialization (as dete
+[/SLATECAMP_UI_BLOCK]
 
 
 ***
@@ -291,11 +269,11 @@ Clients shall consider the following criteria in the selection of PCAs:
 
 For **Government projects**, the selection of PCAs shall be **in accordance with R.A. No. 9184** (Government Procurement Reform Act) and its IRR. The key principle is **quality-based selection (QBS)** — quality and technical competence must take precedence over price in the selection of consultants.
 
-<Callout variant="note">
-
-*"It shall be mandatory on the part of the Client, whether in Government, private sector or CSO or the international community, to give priority to Filipino Professional Consultants (FPCs) over foreign consultants in the selection, commissioning and engagement of PCAs for projects on Philippine soil, in accordance with applicable existing laws."*
-
-</Callout>
+[SLATECAMP_UI_BLOCK:ui_0010 component="Callout" status="preserved"]
+Extracted summary:
+- Props: variant="note"
+- Text: *"It shall be mandatory on the part of the Client, whether in Government, private sector or CSO or the international community, to give priority to Filipino Professional Consultants (FPCs) over foreign consultants in the selection, commissioning and engagement of PCAs for projects on Philippine soil, in accordance with applicable existing laws."*
+[/SLATECAMP_UI_BLOCK]
 
 
 ### 8.3 Priority Rule: Filipino PCAs First
@@ -375,17 +353,11 @@ The percentage rate varies depending on the type of PACS, the project group clas
 
 ### Compensation Methods Summary
 
-<ComparisonTable>
-
-| Method | Best Application | Key Formula/Rate |
-|---|---|---|
-| **Per Diem/Hourly** | Intermittent, irregular services | (Rates × Hours) × Multiplier (1–2) + Reimbursables |
-| **Retainer** | Ongoing advisory relationships | Fixed monthly/quarterly retainer sum |
-| **Salary Cost × Multiplier** | Variable-scope, time-sensitive projects | Salary Cost × ≥3.0 + Reimbursables |
-| **Lump Sum** | Well-defined, fixed-scope projects | % of PCC + Direct Cost + Profit Margin |
-| **% of PCC** | Project-tied consulting services | Variable % per project type and group |
-
-</ComparisonTable>
+[SLATECAMP_UI_BLOCK:ui_0011 component="ComparisonTable" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: | Method | Best Application | Key Formula/Rate | |---|---|---| | **Per Diem/Hourly** | Intermittent, irregular services | (Rates × Hours) × Multiplier (1–2) + Reimbursables | | **Retainer** | Ongoing advisory relationships | Fixed monthly/quarterly retainer sum | | **Salary Cost × Multiplier** | Variable-scope, time-sensitive projects | Salary Cost × ≥3.0 + Reimbursables | | **Lump Sum** | Well-defined, fixed-scope projects | % of PCC + Direct Cost + Profit Margin | | **% of PCC** | Project-tied
+[/SLATECAMP_UI_BLOCK]
 
 
 ***
@@ -425,11 +397,11 @@ Foreign Architects (FAs) or Foreign Consultants (FCs) may provide PACS on Philip
 
 A critical protection clause in SPP 209:
 
-<Callout variant="note">
-
-Any individual, partner, firm/corporation/consortium who engages in PACS but is **not qualified** in accordance with Section 7 (Qualifications) shall be considered a **Non-Qualified Entity (NQE)** and is **prohibited** from providing PACS.
-
-</Callout>
+[SLATECAMP_UI_BLOCK:ui_0012 component="Callout" status="preserved"]
+Extracted summary:
+- Props: variant="note"
+- Text: Any individual, partner, firm/corporation/consortium who engages in PACS but is **not qualified** in accordance with Section 7 (Qualifications) shall be considered a **Non-Qualified Entity (NQE)** and is **prohibited** from providing PACS.
+[/SLATECAMP_UI_BLOCK]
 
 
 The NQE clause directly addresses the "proliferation of entities projecting themselves as consultants" without proper credentials — a key concern that triggered the 2010 revision.
@@ -452,18 +424,11 @@ All consulting agreements under SPP 209 shall include an ADR clause grounded in 
 
 SPP 209 is the **capstone document** of the 2010 SPP series — it governs the practice of architecture at its most strategic and policy-driven level:
 
-<ComparisonTable>
-
-| SPP Document | Focus | Relationship to SPP 209 |
-|---|---|---|
-| SPP 201–205 | Specific service types for specific projects | Each can be provided as PACS under SPP 209 |
-| SPP 206 | CAS/Project Management | Project Management is listed as a PACS service (6.12) |
-| SPP 207 | Design-Build | Construction-related PACS overlap with Design-Build |
-| SPP 208 | Design Competitions | FAs entering ADCs are subject to SPP 209's foreign consultant rules |
-| **SPP 209** | **Consulting Services — Policy Framework** | **Governs the engagement of all PCAs across all service types** |
-| Annex "A" | Definitions, selection methods | Provides definitions referenced in SPP 209 |
-
-</ComparisonTable>
+[SLATECAMP_UI_BLOCK:ui_0013 component="ComparisonTable" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: | SPP Document | Focus | Relationship to SPP 209 | |---|---|---| | SPP 201–205 | Specific service types for specific projects | Each can be provided as PACS under SPP 209 | | SPP 206 | CAS/Project Management | Project Management is listed as a PACS service (6.12) | | SPP 207 | Design-Build | Construction-related PACS overlap with Design-Build | | SPP 208 | Design Competitions | FAs entering ADCs are subject to SPP 209's foreign consultant rules | | **SPP 209** | **Consulting Services — Policy Fr
+[/SLATECAMP_UI_BLOCK]
 
 
 ***

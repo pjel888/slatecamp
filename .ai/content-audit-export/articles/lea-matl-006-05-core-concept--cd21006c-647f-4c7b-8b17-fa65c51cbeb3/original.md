@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Matl 006 05 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 ## Learning Goal
 
@@ -11,11 +20,11 @@ Joint design is critical: width-to-depth ratio of 2:1 (not 1:2) means for a 10 m
 Tropical cure considerations include high humidity (80-100% RH), which accelerates polyurethane but slows silicone and acrylic evaporative cure. Temperature (25-35°C ambient) activates polyurethane isocyanate chemistry but may cause "skin-over" (surface cure before deep cure is complete) in thick applications. Substrate moisture compatibility varies: polyurethane tolerates damp substrates; silicone and acrylic require dry surfaces.
 
 
-<ArticleMedia id="media-sealant-comparison-chart" layout="single" type="image" status="placeholder"
-  alt="Comparison chart of sealant types: silicone, polyurethane, polysulfide, acrylic, and butyl with movement capability, adhesion, weathering resistance, and applications"
-  caption="Future chart: sealant and caulk comparison — movement capability, adhesion, and weathering"
-  suggestedAsset="Material comparison table with joint application illustrations"
-  placementIntent="Provides reference for sealant selection by joint type and substrate" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-sealant-comparison-chart", layout="single", type="image", status="placeholder", alt="Comparison chart of sealant types: silicone, polyurethane, polysulfide, acrylic, and butyl with movement capability, adhesion, weathering resistance, and applications", caption="Future chart: sealant and caulk comparison — movement capability, adhesion, and weathering", suggestedAsset="Material comparison table with joint application illustrations", placementIntent="Provides reference for sealant selection by joint type and substrate"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Provisions
 
@@ -37,11 +46,11 @@ Tropical cure considerations include high humidity (80-100% RH), which accelerat
 Philippine construction employs ASTM C920 silicone sealants for high-movement building joints, window/door perimeters, and interior expansion joints (Class 50 standard). Polyurethane sealants are increasingly specified for hybrid glass-metal curtain walls due to superior adhesion and rapid cure in tropical humidity. Acrylic latex (interior paintable caulk) is widely used for drywall/plaster joints and trim, despite short service life (3-5 years). Tropical challenges include (a) rapid wet/dry cycling causing joint widening/narrowing (±10% seasonal variation in concrete width), (b) salt-air corrosivity requiring silicone (non-corrosive) over polysulfide, (c) high UV exposure accelerating acrylic degradation (yellowing, loss of elasticity), and (d) high-humidity cure inhibition for silicone (requires active ventilation/dehumidification during cure). Backer rod installation is frequently omitted due to cost and labor unfamiliarity, resulting in excessive sealant depth (poor stress distribution, rapid failure).
 
 
-<ArticleMedia id="media-sealant-application-detail" layout="single" type="image" status="placeholder"
-  alt="Cross-section detail of sealant joint design: backer rod, bond breaker tape, sealant shape factor, tooling, and proper joint dimensions"
-  caption="Future diagram: sealant joint design — backer rod, bond breaker, shape factor, and tooling"
-  suggestedAsset="Cross-section detail drawings of proper sealant joints"
-  placementIntent="Shows correct sealant application for movement joints" />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-sealant-application-detail", layout="single", type="image", status="placeholder", alt="Cross-section detail of sealant joint design: backer rod, bond breaker tape, sealant shape factor, tooling, and proper joint dimensions", caption="Future diagram: sealant joint design — backer rod, bond breaker, shape factor, and tooling", suggestedAsset="Cross-section detail drawings of proper sealant joints", placementIntent="Shows correct sealant application for movement joints"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 ## How It's Tested
 
 **Pattern 1: Joint Design Verification** — "A building expansion joint is 12 mm wide. What is the required sealant depth per ASTM C920 (2:1 ratio), and what backer rod diameter is required?" (Answer: Depth = 6 mm (12 mm ÷ 2); backer rod ≈ 15-18 mm diameter (1.25-1.5× joint width).)
@@ -52,7 +61,11 @@ Philippine construction employs ASTM C920 silicone sealants for high-movement bu
 
 **Pattern 4: Cure Compatibility** — "A polyurethane sealant is applied to a damp masonry wall (90% RH) in Manila at 30°C ambient. Will cure time be shorter or longer compared to dry conditions at 20°C?" (Answer: Cure time shorter; elevated temperature (30°C) and damp substrate accelerate isocyanate polymerization. Polyurethane is superior to silicone for this application.)
 
-<Tip>Memorize ASTM C920 Classes by movement: 100/50 (maximum), 50 (standard), 25 (light), 12.5 (minimal). Joint design rule: width ÷ 2 = depth. Backer rod = 1.25-1.5× joint width. Silicone = UV/temp stable, poor adhesion. Polyurethane = adhesive, rapid cure, moisture-tolerant. Tropical = polysulfide for fuel/salt.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Memorize ASTM C920 Classes by movement: 100/50 (maximum), 50 (standard), 25 (light), 12.5 (minimal). Joint design rule: width ÷ 2 = depth. Backer rod = 1.25-1.5× joint width. Silicone = UV/temp stable, poor adhesion. Polyurethane = adhesive, rapid cure, moisture-tolerant. Tropical = polysulfide for fuel/salt.
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - Props: (none)
 - Text: Memorize ASTM C920 Classes by movement: 100/50 (maximum), 50 (standard), 25 (light), 12.5 (minimal). Joint design rule: width ÷ 2 = depth. Backer rod = 1.25-1.5× joint width. Silicone = UV/temp stable, poor adhesion. Polyurethane = adhesive, rapid cure, moisture-tolerant. Tropical = polysulfide for fuel/salt.
@@ -60,9 +73,11 @@ Extracted summary:
 ## Common Mistakes
 
 ed"]
-<Note>
-(none detected)
-</Note>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 tion: **lea-matl-006-01-core-concept**, **lea-matl-006-02-core-concept**, **lea-matl-006-03-core-concept**, **lea-matl-006-04-core-concept**.
 

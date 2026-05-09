@@ -1,3 +1,10 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Lea Matl 008 04 Core Concept** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
 ## What You Need to Know for the LEA
 ## Learning Goal
 
@@ -15,11 +22,11 @@ Weatherstripping seals the gap between sash and frame, reducing air leakage and 
 AAMA/WDMA/CSA 101/I.S.2/A440 (NAFS) establishes performance grades based on structural strength and water resistance. Structural Resistance is measured by positive and negative wind pressure testing; Gold Label windows resist at least 94 mph wind pressure. Water Resistance is measured by resistance to water infiltration at 32 mph; windows must pass without water entering the building interior.
 
 
-<ArticleMedia id="media-expansion-joint-types" layout="single" type="image" status="placeholder"
-  alt="Comparison chart and cross-section diagrams of structural, thermal, seismic, and construction joints showing movement direction and treatment"
-  caption="Future diagram: expansion joint types — structural, thermal, seismic, and construction joints with movement indication"
-  suggestedAsset="Cross-section diagrams of each joint type with movement arrows"
-  placementIntent="Helps learners distinguish joint types by their movement accommodation function" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-expansion-joint-types", layout="single", type="image", status="placeholder", alt="Comparison chart and cross-section diagrams of structural, thermal, seismic, and construction joints showing movement direction and treatment", caption="Future diagram: expansion joint types — structural, thermal, seismic, and construction joints with movement indication", suggestedAsset="Cross-section diagrams of each joint type with movement arrows", placementIntent="Helps learners distinguish joint types by their movement accommodation function"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Provisions
 
@@ -40,11 +47,11 @@ AAMA/WDMA/CSA 101/I.S.2/A440 (NAFS) establishes performance grades based on stru
 The Philippines experiences wind speeds exceeding 150 mph during Category 4-5 typhoons, particularly in coastal and northern regions. AAMA Gold Label windows (94 mph rating) are insufficient for high-wind zones; upgraded specifications or storm-resistant glazing and framing are necessary. Window hardware corrosion in salt spray and high humidity requires stainless steel or coated aluminum; standard painted steel corrodes rapidly. Casement and awning windows are preferable to sliding windows in the Philippines due to better rain shedding and easier cleaning from the interior. Friction stays are problematic in hot climates; in some cases, they weaken under sustained heat and fail to hold the window open. Weatherstripping durability is critical; vinyl and rubber deteriorate faster in tropical heat than in temperate climates and may require replacement every 5-7 years instead of 10-15 years. Many residential projects omit weatherstripping to reduce cost, leading to high air-conditioning loads and water infiltration during monsoons.
 
 
-<ArticleMedia id="media-joint-location-diagram" layout="single" type="image" status="placeholder"
-  alt="Building section diagram showing typical expansion joint locations in a structure: between wings, at changes in height, at building separations, and at regular intervals"
-  caption="Future diagram: expansion joint locations in building — typical placement at structural transitions"
-  suggestedAsset="Building section with expansion joint location callouts"
-  placementIntent="Shows where to place expansion joints in building design" />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-joint-location-diagram", layout="single", type="image", status="placeholder", alt="Building section diagram showing typical expansion joint locations in a structure: between wings, at changes in height, at building separations, and at regular intervals", caption="Future diagram: expansion joint locations in building — typical placement at structural transitions", suggestedAsset="Building section with expansion joint location callouts", placementIntent="Shows where to place expansion joints in building design"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 ## How It's Tested
 
 **Exam Pattern 1: Window Type Selection.** A residential project in a coastal typhoon zone requires windows that automatically shed rain and allow ventilation. What window type is most appropriate? Answer: Awning windows (hinge at top, swing outward at bottom, shedding rain).
@@ -55,17 +62,37 @@ The Philippines experiences wind speeds exceeding 150 mph during Category 4-5 ty
 
 **Exam Pattern 4: Weatherstripping Specification.** A window assembly leaks air at 0.50 cfm. After installing high-quality weatherstripping that reduces air leakage by 40 percent, what is the new air leakage rate? Answer: 0.50 × (1 - 0.40) = 0.30 cfm (Gold Label compliant).
 
-<Tip>Memory aid: "AAMA Gold Label = ≤0.30 cfm air leakage + ≥94 mph structural + no water at 32 mph. Casement = crank-operated; awning = sheds rain; fixed = no operation. Weatherstripping = 30-50% leakage reduction."</Tip>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Memory aid: "AAMA Gold Label = ≤0.30 cfm air leakage + ≥94 mph structural + no water at 32 mph. Casement = crank-operated; awning = sheds rain; fixed = no operation. Weatherstripping = 30-50% leakage reduction."
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
-<WikiMistakeCard mistake="Specifying standard (non-Gold Label) AAMA windows for a typhoon-zone building, assuming AAMA certification is sufficient regardless of grade." correction="AAMA has multiple grades; Gold Label is the highest. Standard windows have lower structural resistance (less than 94 mph) and higher air leakage (greater than 0.30 cfm), making them unsuitable for typhoon zones." />
+[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Specifying standard (non-Gold Label) AAMA windows for a typhoon-zone building, assuming AAMA certification is sufficient regardless of grade.", correction="AAMA has multiple grades; Gold Label is the highest. Standard windows have lower structural resistance (less than 94 mph) and higher air leakage (greater than 0.30 cfm), making them unsuitable for typhoon zones."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeCard mistake="Using friction stays for awning windows in hot climates without considering temperature derating, assuming nominal strength is always available." correction="Friction stay strength decreases with temperature (roughly -0.75 percent per degree Fahrenheit). In tropical climates at 95°F, nominal strength may be 20-25 percent lower than rated." />
+[SLATECAMP_UI_BLOCK:ui_0005 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Using friction stays for awning windows in hot climates without considering temperature derating, assuming nominal strength is always available.", correction="Friction stay strength decreases with temperature (roughly -0.75 percent per degree Fahrenheit). In tropical climates at 95°F, nominal strength may be 20-25 percent lower than rated."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeCard mistake="Omitting weatherstripping to reduce cost, assuming standard window frames provide adequate sealing." correction="Weatherstripping reduces air leakage by 30-50 percent and prevents water infiltration. Omitting it causes high HVAC loads and rain intrusion during monsoons." />
+[SLATECAMP_UI_BLOCK:ui_0006 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Omitting weatherstripping to reduce cost, assuming standard window frames provide adequate sealing.", correction="Weatherstripping reduces air leakage by 30-50 percent and prevents water infiltration. Omitting it causes high HVAC loads and rain intrusion during monsoons."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeList mistakes={["Specifying sliding windows in typhoon zones; they do not shed rain as effectively as awning or casement windows", "Using standard steel hardware in coastal areas; stainless steel or coated aluminum is required to resist salt spray corrosion", "Neglecting to account for local wind speeds; some Philippine regions experience 150+ mph gusts, requiring upgraded specifications"]} />
+[SLATECAMP_UI_BLOCK:ui_0007 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Specifying sliding windows in typhoon zones; they do not shed rain as effectively as awning or casement windows\", \"Using standard steel hardware in coastal areas; stainless steel or coated aluminum is required to resist salt spray corrosion\", \"Neglecting to account for local wind speeds; some Philippine regions experience 150+ mph gusts, requiring upgraded specifications\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 

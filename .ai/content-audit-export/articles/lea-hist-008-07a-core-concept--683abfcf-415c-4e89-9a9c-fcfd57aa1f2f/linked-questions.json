@@ -1,9 +1,269 @@
 {
   "article_id": "683abfcf-415c-4e89-9a9c-fcfd57aa1f2f",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:979e5f594d77e5bf8d7f898b04ba3ca1648ab83eddcddb765e8c03703aa546d6",
+  "linked_questions_hash": "sha256:3739b45ca6d83d6e98fdebc3a60dcfbf66e67b35325476bd5d557655def1fa02",
   "question_count": 11,
   "questions": [
+    {
+      "question_id": "93656ef0-b253-42ca-9b6c-78ed8de130a1",
+      "article_id": "683abfcf-415c-4e89-9a9c-fcfd57aa1f2f",
+      "topic_id": "44067202-9814-4732-bb9c-8dbce986dcb1",
+      "text": "Which architect designed the Vitra Fire Station (1993) in Germany, featuring fractured planes and oblique angles that compress and stretch the box form until it appears to fracture?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Frank Gehry"
+        },
+        {
+          "id": "b",
+          "text": "Zaha Hadid"
+        },
+        {
+          "id": "c",
+          "text": "Daniel Libeskind"
+        },
+        {
+          "id": "d",
+          "text": "Bernard Tschumi"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Gehry designed Guggenheim Bilbao with biomorphic curvilinear forms.",
+        "c": "Libeskind designed the Jewish Museum Berlin with a zigzagging form.",
+        "d": "Tschumi was one of the 1988 exhibition's seven architects but did not design Vitra Fire Station.",
+        "correct": "Zaha Hadid designed the Vitra Fire Station (1993) in Weil am Rhein, exemplifying Deconstructivism through fractured, oblique planes creating visual instability.",
+        "takeaway": "Zaha Hadid designed the Vitra Fire Station (1993) in Weil am Rhein, exemplifying Deconstructivism through fractured, oblique planes creating visual instability."
+      },
+      "explanation": "Gehry designed Guggenheim Bilbao with biomorphic curvilinear forms. Libeskind designed the Jewish Museum Berlin with a zigzagging form. Tschumi was one of the 1988 exhibition's seven architects but did not design Vitra Fire Station. Zaha Hadid designed the Vitra Fire Station (1993) in Weil am Rhein, exemplifying Deconstructivism through fractured, oblique planes creating visual instability. Zaha Hadid designed the Vitra Fire Station (1993) in Weil am Rhein, exemplifying Deconstructivism through fractured, oblique planes creating visual instability.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "recall",
+      "practice_context": [
+        "ID"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "deconst-04",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:26.09657+00:00",
+      "updated_at": "2026-05-06T15:59:00.697053+00:00",
+      "content_hash": "sha256:1ac21c2bb255523e70bbe79dc4eb64d4e570f855b186063d96bd1b6659a9f867"
+    },
+    {
+      "question_id": "e6b724f8-40b6-4c1a-90d4-3e9358d5dfac",
+      "article_id": "683abfcf-415c-4e89-9a9c-fcfd57aa1f2f",
+      "topic_id": "44067202-9814-4732-bb9c-8dbce986dcb1",
+      "text": "Which architect designed House VI (1975), a proto-deconstructivist work featuring abstract geometric forms intersecting without regard to traditional notions of inside, outside, wall, or structure?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Peter Eisenman"
+        },
+        {
+          "id": "b",
+          "text": "Zaha Hadid"
+        },
+        {
+          "id": "c",
+          "text": "Daniel Libeskind"
+        },
+        {
+          "id": "d",
+          "text": "Rem Koolhaas"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Hadid designed Vitra Fire Station in the 1988 exhibition era.",
+        "c": "Libeskind designed Jewish Museum Berlin.",
+        "d": "Koolhaas was one of the 1988 exhibition architects but did not design House VI.",
+        "correct": "Peter Eisenman designed House VI, which predates the 1988 exhibition and exemplifies proto-deconstructivist strategies of geometric abstraction and spatial contradiction.",
+        "takeaway": "Peter Eisenman designed House VI, which predates the 1988 exhibition and exemplifies proto-deconstructivist strategies of geometric abstraction and spatial contradiction."
+      },
+      "explanation": "Hadid designed Vitra Fire Station in the 1988 exhibition era. Libeskind designed Jewish Museum Berlin. Koolhaas was one of the 1988 exhibition architects but did not design House VI. Peter Eisenman designed House VI, which predates the 1988 exhibition and exemplifies proto-deconstructivist strategies of geometric abstraction and spatial contradiction. Peter Eisenman designed House VI, which predates the 1988 exhibition and exemplifies proto-deconstructivist strategies of geometric abstraction and spatial contradiction.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "recall",
+      "practice_context": [
+        "ID"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "deconst-10",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:26.09657+00:00",
+      "updated_at": "2026-05-06T15:59:00.823277+00:00",
+      "content_hash": "sha256:2ba25432d245fe58ac73559c2c745fd9d7d54d60c8f11aeb99d952aefa70f5bb"
+    },
+    {
+      "question_id": "31a34b2c-54e6-42e8-8990-40f2d8662936",
+      "article_id": "683abfcf-415c-4e89-9a9c-fcfd57aa1f2f",
+      "topic_id": "44067202-9814-4732-bb9c-8dbce986dcb1",
+      "text": "A museum addition features titanium and glass with fractured angular forms and a jagged roofline, exemplifying deconstructivist expression in an American city. Which building and architect is this?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rosenthal Center for Contemporary Art, Zaha Hadid"
+        },
+        {
+          "id": "b",
+          "text": "Denver Art Museum Addition, Daniel Libeskind"
+        },
+        {
+          "id": "c",
+          "text": "Guggenheim Museum Bilbao, Frank Gehry"
+        },
+        {
+          "id": "d",
+          "text": "Jewish Museum Berlin, Daniel Libeskind"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Rosenthal Center is also by Hadid and deconstructivist but is in Cincinnati and features cantilevered forms.",
+        "c": "Guggenheim Bilbao uses biomorphic forms, not angular fractured geometry.",
+        "d": "Jewish Museum Berlin is in Germany, not America, though also by Libeskind.",
+        "correct": "The Denver Art Museum Addition (2006) by Daniel Libeskind exemplifies this deconstructivist approach with titanium, glass, fractured forms, and jagged roofline in an American context.",
+        "takeaway": "The Denver Art Museum Addition (2006) by Daniel Libeskind exemplifies this deconstructivist approach with titanium, glass, fractured forms, and jagged roofline in an American context."
+      },
+      "explanation": "Rosenthal Center is also by Hadid and deconstructivist but is in Cincinnati and features cantilevered forms. Guggenheim Bilbao uses biomorphic forms, not angular fractured geometry. Jewish Museum Berlin is in Germany, not America, though also by Libeskind. The Denver Art Museum Addition (2006) by Daniel Libeskind exemplifies this deconstructivist approach with titanium, glass, fractured forms, and jagged roofline in an American context. The Denver Art Museum Addition (2006) by Daniel Libeskind exemplifies this deconstructivist approach with titanium, glass, fractured forms, and jagged roofline in an American context.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "recall",
+      "practice_context": [
+        "DESC"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "deconst-11",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:26.09657+00:00",
+      "updated_at": "2026-05-06T15:59:00.936781+00:00",
+      "content_hash": "sha256:c171fba927e58551254d5d1422b4fe0979cbc944e456b2a27e0250f47f2d2832"
+    },
+    {
+      "question_id": "9bed4862-9ef6-4b22-8eab-ce798f6bc1be",
+      "article_id": "683abfcf-415c-4e89-9a9c-fcfd57aa1f2f",
+      "topic_id": "44067202-9814-4732-bb9c-8dbce986dcb1",
+      "text": "By which decade had Deconstructivism's experimental fervor been absorbed into mainstream practice, with fragmentation and digital form-making becoming routine rather than revolutionary?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1990s"
+        },
+        {
+          "id": "b",
+          "text": "2000s"
+        },
+        {
+          "id": "c",
+          "text": "2010s"
+        },
+        {
+          "id": "d",
+          "text": "2020s"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Deconstructivism was still revolutionary in the 1990s.",
+        "c": "By the 2010s, the absorption was already well established.",
+        "d": "This is too recent; the shift occurred in the 2000s.",
+        "correct": "By the 2000s, Deconstructivism's experimental fervor had been absorbed into mainstream practice, with fragmentation becoming routine.",
+        "takeaway": "The article states that by the 2000s, Deconstructivism's experimental fervor had been absorbed into mainstream practice, with fragmentation becoming routine."
+      },
+      "explanation": "Deconstructivism was still revolutionary in the 1990s. By the 2010s, the absorption was already well established. This is too recent; the shift occurred in the 2000s. By the 2000s, Deconstructivism's experimental fervor had been absorbed into mainstream practice, with fragmentation becoming routine. The article states that by the 2000s, Deconstructivism's experimental fervor had been absorbed into mainstream practice, with fragmentation becoming routine.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "CH"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "deconst-09",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:26.09657+00:00",
+      "updated_at": "2026-05-06T15:59:01.056694+00:00",
+      "content_hash": "sha256:4ea378ea2a82813de0d42477ceb6da6b3290427d4cd0f1076c3deafb7e2a72aa"
+    },
+    {
+      "question_id": "efbf6eea-468a-4201-b11f-63856fbf3e14",
+      "article_id": "683abfcf-415c-4e89-9a9c-fcfd57aa1f2f",
+      "topic_id": "44067202-9814-4732-bb9c-8dbce986dcb1",
+      "text": "Which architect designed the Guggenheim Museum in Bilbao (1997) with its titanium-clad, biomorphic forms that appear to tumble and collide?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Zaha Hadid"
+        },
+        {
+          "id": "b",
+          "text": "Daniel Libeskind"
+        },
+        {
+          "id": "c",
+          "text": "Frank Gehry"
+        },
+        {
+          "id": "d",
+          "text": "Peter Eisenman"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Hadid designed the Vitra Fire Station, a different Deconstructivist project.",
+        "b": "Libeskind designed the Jewish Museum Berlin.",
+        "d": "Eisenman designed proto-deconstructivist works like House VI.",
+        "correct": "Frank Gehry designed the iconic Guggenheim Museum Bilbao (1997), which exemplifies Deconstructivism through fragmented, colliding titanium-clad forms enabled by computational design (CATIA software).",
+        "takeaway": "Frank Gehry designed the iconic Guggenheim Museum Bilbao (1997), which exemplifies Deconstructivism through fragmented, colliding titanium-clad forms enabled by computational design (CATIA software)."
+      },
+      "explanation": "Hadid designed the Vitra Fire Station, a different Deconstructivist project. Libeskind designed the Jewish Museum Berlin. Eisenman designed proto-deconstructivist works like House VI. Frank Gehry designed the iconic Guggenheim Museum Bilbao (1997), which exemplifies Deconstructivism through fragmented, colliding titanium-clad forms enabled by computational design (CATIA software). Frank Gehry designed the iconic Guggenheim Museum Bilbao (1997), which exemplifies Deconstructivism through fragmented, colliding titanium-clad forms enabled by computational design (CATIA software).",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "ID"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "deconst-02",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:26.09657+00:00",
+      "updated_at": "2026-05-06T15:59:01.178614+00:00",
+      "content_hash": "sha256:516eb89749f529ad4fd75940bc120404da36c6893c61c9c72acad4644d85a1a5"
+    },
     {
       "question_id": "11e91301-efa6-4397-aec0-57bf5516adba",
       "article_id": "683abfcf-415c-4e89-9a9c-fcfd57aa1f2f",
@@ -39,7 +299,7 @@
         "correct": "The article articulates Deconstructivism's theoretical debate: critics dismiss it as aesthetic superficiality; advocates argue it challenged modernism's certainties. This contested status reflects genuine philosophical disagreement.",
         "takeaway": "This contested status reflects genuine philosophical disagreement."
       },
-      "explanation": null,
+      "explanation": "The movement had support despite controversy. The movement emerged from philosophical theory, even if contested. The article explicitly states Deconstructivism 'remains contested.' The article articulates Deconstructivism's theoretical debate: critics dismiss it as aesthetic superficiality; advocates argue it challenged modernism's certainties. This contested status reflects genuine philosophical disagreement. This contested status reflects genuine philosophical disagreement.",
       "code_citation": null,
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
@@ -53,8 +313,8 @@
       "model_id": "deconst-08",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:26.09657+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:ab0ce68546a5413dea776e7c932ee1ec6c793d8d6514da4ad9066894f6024638"
+      "updated_at": "2026-05-06T15:59:00.451503+00:00",
+      "content_hash": "sha256:fc0090bf5122af53863c8e82e9ba9db8031afa868eb0a41f93751f29989efaee"
     },
     {
       "question_id": "97cb0652-6d15-4bbd-b518-4f73bae3d782",
@@ -91,7 +351,7 @@
         "correct": "The Jewish Museum Berlin (completed 1999, opened 2001) by Daniel Libeskind exemplifies this approach with its zigzag form, zinc cladding, central void symbolizing absence, and deliberate fragmentation for emotional resonance.",
         "takeaway": "The Jewish Museum Berlin (completed 1999, opened 2001) by Daniel Libeskind exemplifies this approach with its zigzag form, zinc cladding, central void symbolizing absence, and deliberate fragmentation for emotional resonance."
       },
-      "explanation": null,
+      "explanation": "Guggenheim Bilbao uses titanium and biomorphic curves, not zigzag forms. Vitra Fire Station uses fractured planes but not a symbolic void or memorial purpose. House VI uses abstract geometric intersection but predates and differs from this approach. The Jewish Museum Berlin (completed 1999, opened 2001) by Daniel Libeskind exemplifies this approach with its zigzag form, zinc cladding, central void symbolizing absence, and deliberate fragmentation for emotional resonance. The Jewish Museum Berlin (completed 1999, opened 2001) by Daniel Libeskind exemplifies this approach with its zigzag form, zinc cladding, central void symbolizing absence, and deliberate fragmentation for emotional resonance.",
       "code_citation": null,
       "bloom_level": "apply",
       "application_context": "recall",
@@ -105,8 +365,8 @@
       "model_id": "deconst-05",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:26.09657+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:a8d99a61df8d3655f032fe51254f0513c61c57a458e28e30e96a8d0fd9c05435"
+      "updated_at": "2026-05-06T15:59:00.576461+00:00",
+      "content_hash": "sha256:21b740383412b0fce7246691c4d22560625de0fc4c6ae9a4172fb2b1a62316fa"
     },
     {
       "question_id": "6393f654-1b70-4a61-9297-1ab079416e8e",
@@ -159,266 +419,6 @@
       "created_at": "2026-03-23T19:27:26.09657+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:f6579c123ec82fb10ae487dd12fa6cfb960bdc70927284a6d8892a1f25e24f7b"
-    },
-    {
-      "question_id": "93656ef0-b253-42ca-9b6c-78ed8de130a1",
-      "article_id": "683abfcf-415c-4e89-9a9c-fcfd57aa1f2f",
-      "topic_id": "44067202-9814-4732-bb9c-8dbce986dcb1",
-      "text": "Which architect designed the Vitra Fire Station (1993) in Germany, featuring fractured planes and oblique angles that compress and stretch the box form until it appears to fracture?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Frank Gehry"
-        },
-        {
-          "id": "b",
-          "text": "Zaha Hadid"
-        },
-        {
-          "id": "c",
-          "text": "Daniel Libeskind"
-        },
-        {
-          "id": "d",
-          "text": "Bernard Tschumi"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Gehry designed Guggenheim Bilbao with biomorphic curvilinear forms.",
-        "c": "Libeskind designed the Jewish Museum Berlin with a zigzagging form.",
-        "d": "Tschumi was one of the 1988 exhibition's seven architects but did not design Vitra Fire Station.",
-        "correct": "Zaha Hadid designed the Vitra Fire Station (1993) in Weil am Rhein, exemplifying Deconstructivism through fractured, oblique planes creating visual instability.",
-        "takeaway": "Zaha Hadid designed the Vitra Fire Station (1993) in Weil am Rhein, exemplifying Deconstructivism through fractured, oblique planes creating visual instability."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "apply",
-      "application_context": "recall",
-      "practice_context": [
-        "ID"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "deconst-04",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:26.09657+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:26a91ac291f8bae86dfd078b35f79c60821936b695d79e6d407c1c8e1672b925"
-    },
-    {
-      "question_id": "e6b724f8-40b6-4c1a-90d4-3e9358d5dfac",
-      "article_id": "683abfcf-415c-4e89-9a9c-fcfd57aa1f2f",
-      "topic_id": "44067202-9814-4732-bb9c-8dbce986dcb1",
-      "text": "Which architect designed House VI (1975), a proto-deconstructivist work featuring abstract geometric forms intersecting without regard to traditional notions of inside, outside, wall, or structure?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Peter Eisenman"
-        },
-        {
-          "id": "b",
-          "text": "Zaha Hadid"
-        },
-        {
-          "id": "c",
-          "text": "Daniel Libeskind"
-        },
-        {
-          "id": "d",
-          "text": "Rem Koolhaas"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "b": "Hadid designed Vitra Fire Station in the 1988 exhibition era.",
-        "c": "Libeskind designed Jewish Museum Berlin.",
-        "d": "Koolhaas was one of the 1988 exhibition architects but did not design House VI.",
-        "correct": "Peter Eisenman designed House VI, which predates the 1988 exhibition and exemplifies proto-deconstructivist strategies of geometric abstraction and spatial contradiction.",
-        "takeaway": "Peter Eisenman designed House VI, which predates the 1988 exhibition and exemplifies proto-deconstructivist strategies of geometric abstraction and spatial contradiction."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "apply",
-      "application_context": "recall",
-      "practice_context": [
-        "ID"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "deconst-10",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:26.09657+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:dec97f40088fe06706ea5649fcda94745974e9092c5177c9d9585396257189fb"
-    },
-    {
-      "question_id": "31a34b2c-54e6-42e8-8990-40f2d8662936",
-      "article_id": "683abfcf-415c-4e89-9a9c-fcfd57aa1f2f",
-      "topic_id": "44067202-9814-4732-bb9c-8dbce986dcb1",
-      "text": "A museum addition features titanium and glass with fractured angular forms and a jagged roofline, exemplifying deconstructivist expression in an American city. Which building and architect is this?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Rosenthal Center for Contemporary Art, Zaha Hadid"
-        },
-        {
-          "id": "b",
-          "text": "Denver Art Museum Addition, Daniel Libeskind"
-        },
-        {
-          "id": "c",
-          "text": "Guggenheim Museum Bilbao, Frank Gehry"
-        },
-        {
-          "id": "d",
-          "text": "Jewish Museum Berlin, Daniel Libeskind"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Rosenthal Center is also by Hadid and deconstructivist but is in Cincinnati and features cantilevered forms.",
-        "c": "Guggenheim Bilbao uses biomorphic forms, not angular fractured geometry.",
-        "d": "Jewish Museum Berlin is in Germany, not America, though also by Libeskind.",
-        "correct": "The Denver Art Museum Addition (2006) by Daniel Libeskind exemplifies this deconstructivist approach with titanium, glass, fractured forms, and jagged roofline in an American context.",
-        "takeaway": "The Denver Art Museum Addition (2006) by Daniel Libeskind exemplifies this deconstructivist approach with titanium, glass, fractured forms, and jagged roofline in an American context."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "apply",
-      "application_context": "recall",
-      "practice_context": [
-        "DESC"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "deconst-11",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:26.09657+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:7542158f46e0303126741f41f9ce7309cc0b0106b51c141392b1e9e4cc207d48"
-    },
-    {
-      "question_id": "9bed4862-9ef6-4b22-8eab-ce798f6bc1be",
-      "article_id": "683abfcf-415c-4e89-9a9c-fcfd57aa1f2f",
-      "topic_id": "44067202-9814-4732-bb9c-8dbce986dcb1",
-      "text": "By which decade had Deconstructivism's experimental fervor been absorbed into mainstream practice, with fragmentation and digital form-making becoming routine rather than revolutionary?",
-      "options": [
-        {
-          "id": "a",
-          "text": "1990s"
-        },
-        {
-          "id": "b",
-          "text": "2000s"
-        },
-        {
-          "id": "c",
-          "text": "2010s"
-        },
-        {
-          "id": "d",
-          "text": "2020s"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Deconstructivism was still revolutionary in the 1990s.",
-        "c": "By the 2010s, the absorption was already well established.",
-        "d": "This is too recent; the shift occurred in the 2000s.",
-        "correct": "By the 2000s, Deconstructivism's experimental fervor had been absorbed into mainstream practice, with fragmentation becoming routine.",
-        "takeaway": "The article states that by the 2000s, Deconstructivism's experimental fervor had been absorbed into mainstream practice, with fragmentation becoming routine."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [
-        "CH"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "deconst-09",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:26.09657+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:315aa8fef1b50368e11cd2dee6bfbdd200970f202e72791b302a4f2d31c42d71"
-    },
-    {
-      "question_id": "efbf6eea-468a-4201-b11f-63856fbf3e14",
-      "article_id": "683abfcf-415c-4e89-9a9c-fcfd57aa1f2f",
-      "topic_id": "44067202-9814-4732-bb9c-8dbce986dcb1",
-      "text": "Which architect designed the Guggenheim Museum in Bilbao (1997) with its titanium-clad, biomorphic forms that appear to tumble and collide?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Zaha Hadid"
-        },
-        {
-          "id": "b",
-          "text": "Daniel Libeskind"
-        },
-        {
-          "id": "c",
-          "text": "Frank Gehry"
-        },
-        {
-          "id": "d",
-          "text": "Peter Eisenman"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Hadid designed the Vitra Fire Station, a different Deconstructivist project.",
-        "b": "Libeskind designed the Jewish Museum Berlin.",
-        "d": "Eisenman designed proto-deconstructivist works like House VI.",
-        "correct": "Frank Gehry designed the iconic Guggenheim Museum Bilbao (1997), which exemplifies Deconstructivism through fragmented, colliding titanium-clad forms enabled by computational design (CATIA software).",
-        "takeaway": "Frank Gehry designed the iconic Guggenheim Museum Bilbao (1997), which exemplifies Deconstructivism through fragmented, colliding titanium-clad forms enabled by computational design (CATIA software)."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [
-        "ID"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "deconst-02",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:26.09657+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:b129ebed8be0f930c0d6e9fe51c6b9a96bd2e660c86967b345d8e16562b8c131"
     },
     {
       "question_id": "5681b4b7-54f9-4d43-9f42-a8ee41a10c25",

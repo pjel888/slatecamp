@@ -1,114 +1,14 @@
 {
   "article_id": "f5c0e7a8-8017-4c9b-a1d1-8938a338471f",
   "slug": "lea-dsgn-009-02-core-concept",
-  "normalized_created_at": "2026-05-04T09:10:35.524Z",
+  "normalized_created_at": "2026-05-09T04:02:42.740Z",
   "parser_version": "ui-block-parser-v1",
-  "original_content_hash": "sha256:d11bcbc69a5d177429a3780ae1e6718874f674d5b332712ed455198cab839706",
+  "original_content_hash": "sha256:e04cd5f9b2b80650fdbc4216ee168af04554e54710a69552c95693257b528630",
   "normalized_content_hash": "sha256:e04cd5f9b2b80650fdbc4216ee168af04554e54710a69552c95693257b528630",
-  "ui_block_count": 3,
-  "total_blocks": 3,
-  "blocks": [
-    {
-      "block_id": "ui_0001",
-      "block_type": "mdx_component",
-      "component_name": "ArticleMedia",
-      "raw": "<ArticleMedia id=\"media-lea-dsgn-009-02-core-concept\" type=\"image\" caption=\"Daylighting Strategy — Window-to-Floor Ratio and Light Penetration Depth\" description=\"Building section showing daylight penetration: minimum 1:10 window-to-floor ratio, light penetration depth (2.5× window head height), glare control devices (lightshelves, louvers, fins), and integration with artificial lighting controls.\" suggestedAsset=\"Diagram or reference image\" status=\"placeholder\" />",
-      "raw_hash": "sha256:ccf76a2646517f08707e7d1f4d75465c1f334beffd3c7b5b31599f0c3e410db5",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"ArticleMedia\" status=\"preserved\"]\nExtracted summary:\n- Props: id=\"media-lea-dsgn-009-02-core-concept\", type=\"image\", caption=\"Daylighting Strategy — Window-to-Floor Ratio and Light Penetration Depth\", description=\"Building section showing daylight penetration: minimum 1:10 window-to-floor ratio, light penetration depth (2.5× window head height), glare control devices (lightshelves, louvers, fins), and integration with artificial lighting controls.\", suggestedAsset=\"Diagram or reference image\", status=\"placeholder\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:4c3a3e3536b50c06c18d2c91d361976c73386f5fd6e4107a5ad4106f2190635f",
-      "props": {
-        "id": "media-lea-dsgn-009-02-core-concept",
-        "type": "image",
-        "caption": "Daylighting Strategy — Window-to-Floor Ratio and Light Penetration Depth",
-        "description": "Building section showing daylight penetration: minimum 1:10 window-to-floor ratio, light penetration depth (2.5× window head height), glare control devices (lightshelves, louvers, fins), and integration with artificial lighting controls.",
-        "suggestedAsset": "Diagram or reference image",
-        "status": "placeholder"
-      },
-      "props_json": {
-        "id": "media-lea-dsgn-009-02-core-concept",
-        "type": "image",
-        "caption": "Daylighting Strategy — Window-to-Floor Ratio and Light Penetration Depth",
-        "description": "Building section showing daylight penetration: minimum 1:10 window-to-floor ratio, light penetration depth (2.5× window head height), glare control devices (lightshelves, louvers, fins), and integration with artificial lighting controls.",
-        "suggestedAsset": "Diagram or reference image",
-        "status": "placeholder"
-      },
-      "props_text": "id=\"media-lea-dsgn-009-02-core-concept\" type=\"image\" caption=\"Daylighting Strategy — Window-to-Floor Ratio and Light Penetration Depth\" description=\"Building section showing daylight penetration: minimum 1:10 window-to-floor ratio, light penetration depth (2.5× window head height), glare control devices (lightshelves, louvers, fins), and integration with artificial lighting controls.\" suggestedAsset=\"Diagram or reference image\" status=\"placeholder\"",
-      "children_raw": null,
-      "children_text": null,
-      "start_offset": 1769,
-      "end_offset": 2238,
-      "line_start": 26,
-      "line_end": 26,
-      "parser_confidence": "high",
-      "parse_status": "parsed",
-      "warnings": [],
-      "status": "preserved"
-    },
-    {
-      "block_id": "ui_0002",
-      "block_type": "mdx_component",
-      "component_name": "ArticleMedia",
-      "raw": "<ArticleMedia id=\"media-lea-dsgn-009-02-core-concept\" type=\"image\" caption=\"Daylight Penetration — Section Showing Light Shelf and Glare Control\" description=\"Section diagram showing daylight penetration depth (2.5× window head height), light shelf positioning (above eye level at 2.0m minimum), glare control devices (horizontal louvers, vertical fins), and minimum window-to-floor area ratio (1:10 per NBC). Interior daylight distribution zones labeled.\" suggestedAsset=\"Diagram or reference image\" status=\"placeholder\" />",
-      "raw_hash": "sha256:3d41a2ff9fab9396c8b9145a57ff7a2cd738184ee77efbdb755c1c0c863641b6",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"ArticleMedia\" status=\"preserved\"]\nExtracted summary:\n- Props: id=\"media-lea-dsgn-009-02-core-concept\", type=\"image\", caption=\"Daylight Penetration — Section Showing Light Shelf and Glare Control\", description=\"Section diagram showing daylight penetration depth (2.5× window head height), light shelf positioning (above eye level at 2.0m minimum), glare control devices (horizontal louvers, vertical fins), and minimum window-to-floor area ratio (1:10 per NBC). Interior daylight distribution zones labeled.\", suggestedAsset=\"Diagram or reference image\", status=\"placeholder\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:a6444a419b9e044ceb68a5afbde7fb0661bf7eec5a65dfd517f286111d9180a3",
-      "props": {
-        "id": "media-lea-dsgn-009-02-core-concept",
-        "type": "image",
-        "caption": "Daylight Penetration — Section Showing Light Shelf and Glare Control",
-        "description": "Section diagram showing daylight penetration depth (2.5× window head height), light shelf positioning (above eye level at 2.0m minimum), glare control devices (horizontal louvers, vertical fins), and minimum window-to-floor area ratio (1:10 per NBC). Interior daylight distribution zones labeled.",
-        "suggestedAsset": "Diagram or reference image",
-        "status": "placeholder"
-      },
-      "props_json": {
-        "id": "media-lea-dsgn-009-02-core-concept",
-        "type": "image",
-        "caption": "Daylight Penetration — Section Showing Light Shelf and Glare Control",
-        "description": "Section diagram showing daylight penetration depth (2.5× window head height), light shelf positioning (above eye level at 2.0m minimum), glare control devices (horizontal louvers, vertical fins), and minimum window-to-floor area ratio (1:10 per NBC). Interior daylight distribution zones labeled.",
-        "suggestedAsset": "Diagram or reference image",
-        "status": "placeholder"
-      },
-      "props_text": "id=\"media-lea-dsgn-009-02-core-concept\" type=\"image\" caption=\"Daylight Penetration — Section Showing Light Shelf and Glare Control\" description=\"Section diagram showing daylight penetration depth (2.5× window head height), light shelf positioning (above eye level at 2.0m minimum), glare control devices (horizontal louvers, vertical fins), and minimum window-to-floor area ratio (1:10 per NBC). Interior daylight distribution zones labeled.\" suggestedAsset=\"Diagram or reference image\" status=\"placeholder\"",
-      "children_raw": null,
-      "children_text": null,
-      "start_offset": 4304,
-      "end_offset": 4828,
-      "line_start": 67,
-      "line_end": 67,
-      "parser_confidence": "high",
-      "parse_status": "parsed",
-      "warnings": [],
-      "status": "preserved"
-    },
-    {
-      "block_id": "ui_0003",
-      "block_type": "mdx_component",
-      "component_name": "WikiMistakeList",
-      "raw": "<WikiMistakeList\n mistakes={[\n 'ERR-DSGN-034: Using 1:5 (20% WFR) instead of the correct 1:10 (10% WFR) for daylighting minimums.',\n \"Treating the 2.5× height rule as a legal 'limit' rather than a design optimization tool.\",\n 'Confusing the 1:10 light requirement with the 1:20 ventilation requirement.',\n 'Ignoring glare control; assuming more glass always equals better design (excessive glass leads to solar heat gain).',\n 'Applying code minimums as the final design goal rather than the starting baseline.',\n ]}\n/>",
-      "raw_hash": "sha256:24dde1a64ed6171583b0906e67d6c37ebf330fa704c6d889829b2618e16b2807",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: mistakes=\"{[\\n 'ERR-DSGN-034: Using 1:5 (20% WFR) instead of the correct 1:10 (10% WFR) for daylighting minimums.',\\n \\\"Treating the 2.5× height rule as a legal 'limit' rather than a design optimization tool.\\\",\\n 'Confusing the 1:10 light requirement with the 1:20 ventilation requirement.',\\n 'Ignoring glare control; assuming more glass always equals better design (excessive glass leads to solar heat gain).',\\n 'Applying code minimums as the final design goal rather than the starting baseline.',\\n ]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:704f2721106b19bd4f378eba69014790facf39984e781c7002a776c764e918a3",
-      "props": {
-        "mistakes": "{[\n 'ERR-DSGN-034: Using 1:5 (20% WFR) instead of the correct 1:10 (10% WFR) for daylighting minimums.',\n \"Treating the 2.5× height rule as a legal 'limit' rather than a design optimization tool.\",\n 'Confusing the 1:10 light requirement with the 1:20 ventilation requirement.',\n 'Ignoring glare control; assuming more glass always equals better design (excessive glass leads to solar heat gain).',\n 'Applying code minimums as the final design goal rather than the starting baseline.',\n ]}"
-      },
-      "props_json": {
-        "mistakes": "{[\n 'ERR-DSGN-034: Using 1:5 (20% WFR) instead of the correct 1:10 (10% WFR) for daylighting minimums.',\n \"Treating the 2.5× height rule as a legal 'limit' rather than a design optimization tool.\",\n 'Confusing the 1:10 light requirement with the 1:20 ventilation requirement.',\n 'Ignoring glare control; assuming more glass always equals better design (excessive glass leads to solar heat gain).',\n 'Applying code minimums as the final design goal rather than the starting baseline.',\n ]}"
-      },
-      "props_text": "mistakes={[\n 'ERR-DSGN-034: Using 1:5 (20% WFR) instead of the correct 1:10 (10% WFR) for daylighting minimums.',\n \"Treating the 2.5× height rule as a legal 'limit' rather than a design optimization tool.\",\n 'Confusing the 1:10 light requirement with the 1:20 ventilation requirement.',\n 'Ignoring glare control; assuming more glass always equals better design (excessive glass leads to solar heat gain).',\n 'Applying code minimums as the final design goal rather than the starting baseline.',\n ]}",
-      "children_raw": null,
-      "children_text": null,
-      "start_offset": 5096,
-      "end_offset": 5614,
-      "line_start": 75,
-      "line_end": 83,
-      "parser_confidence": "high",
-      "parse_status": "parsed",
-      "warnings": [],
-      "status": "preserved"
-    }
-  ],
+  "ui_block_count": 0,
+  "total_blocks": 0,
+  "blocks": [],
   "unknown_blocks": [],
   "unresolved_critical_blocks": [],
-  "ui_blocks_hash": "sha256:9857fa3691ef731f3da2528eb0c6faad8bffa37087110d8b21838bf9dc943bdd",
-  "normalized_content_hash_sha256": "sha256:e04cd5f9b2b80650fdbc4216ee168af04554e54710a69552c95693257b528630"
+  "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
 }

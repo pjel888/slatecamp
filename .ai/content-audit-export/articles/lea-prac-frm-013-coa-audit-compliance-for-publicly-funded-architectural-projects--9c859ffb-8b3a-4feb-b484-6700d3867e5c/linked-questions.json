@@ -1,9 +1,59 @@
 {
   "article_id": "9c859ffb-8b3a-4feb-b484-6700d3867e5c",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:a14ee7a0c642311a2b5920b49b794f7ed9359454473b2d0c846c11357d202a72",
+  "linked_questions_hash": "sha256:c8e53985baae159e2cc99ebec3221517d36926f7d4791f9157484dd02f1a4e5c",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "c8d5b3cf-72d8-4d29-8f6e-6d5d09ecb9ec",
+      "article_id": "9c859ffb-8b3a-4feb-b484-6700d3867e5c",
+      "topic_id": "5e6d55b8-404f-48e9-9853-312254db7352",
+      "text": "What is the primary role of the Commission on Audit (COA) in government-funded projects?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To provide design advice, ensuring that all architectural plans meet the necessary aesthetic and functional standards"
+        },
+        {
+          "id": "b",
+          "text": "To conduct financial and performance audits ensuring regularity, legality, and economy"
+        },
+        {
+          "id": "c",
+          "text": "To hire architects, selecting those with the best qualifications for government projects"
+        },
+        {
+          "id": "d",
+          "text": "To approve architectural designs, verifying compliance with all relevant building codes and regulations"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "COA reviews outcomes, not design strategy; design advice is not COA's role.",
+        "c": "COA does not hire personnel; it audits spending and compliance.",
+        "d": "Building officials approve designs; COA audits compliance after fact.",
+        "correct": "COA conducts financial and performance audits evaluating regularity (procedures followed), legality (code compliance), and economy (cost control).",
+        "takeaway": "COA audits government projects for regularity, legality, and economy—encompassing design decisions and cost control."
+      },
+      "explanation": "COA reviews outcomes, not design strategy; design advice is not COA's role. COA does not hire personnel; it audits spending and compliance. Building officials approve designs; COA audits compliance after fact. COA conducts financial and performance audits evaluating regularity (procedures followed), legality (code compliance), and economy (cost control). COA audits government projects for regularity, legality, and economy—encompassing design decisions and cost control.",
+      "code_citation": "1987 Constitution Art. IX-D; COA Auditing Rules",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-013-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:48.361702+00:00",
+      "updated_at": "2026-05-06T13:17:30.788445+00:00",
+      "content_hash": "sha256:444e1af0bf44f9b434598709cabfe19e35d90e33bad7787a2df6d9607dc42305"
+    },
     {
       "question_id": "ff5ec4f4-22ad-4200-9032-7a2977f8406b",
       "article_id": "9c859ffb-8b3a-4feb-b484-6700d3867e5c",
@@ -40,7 +90,7 @@
         "correct": "COA audits examine accounts for revenue/expenditures and promulgate rules against irregular, unnecessary, excessive, extravagant, or unconscionable uses of funds. Aesthetics is not an audit criterion.",
         "takeaway": "COA's three audit pillars are regularity, legality, and economy—aesthetics is not a COA audit measure."
       },
-      "explanation": null,
+      "explanation": "Regularity is the first pillar—verifying procedures were followed. Legality is the second pillar—verifying code and law compliance. Economy is the third pillar—verifying cost control and resource efficiency. Aesthetics, while important to architects, is not a statutory COA audit criterion. COA audits examine accounts for revenue/expenditures and promulgate rules against irregular, unnecessary, excessive, extravagant, or unconscionable uses of funds. Aesthetics is not an audit criterion. COA's three audit pillars are regularity, legality, and economy—aesthetics is not a COA audit measure.",
       "code_citation": "RA 9266",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
@@ -52,8 +102,8 @@
       "model_id": "ALE-PRAC-FRM-013-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:48.361702+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:4d14750384d6b84d661f8bef0b30789ff17e1878b5fea8850c01d443b9322f8a"
+      "updated_at": "2026-05-06T13:17:30.555168+00:00",
+      "content_hash": "sha256:6a768491c93f23aa0dc9e816a97093f59cd4731890963cef33ea2c1b322514ab"
     },
     {
       "question_id": "7902c0c8-12a4-4955-8c0d-8a9ada291900",
@@ -440,7 +490,7 @@
         "correct": "Professional response to valid findings acknowledges the issue, explains context, and demonstrates commitment to improvement through corrective actions.",
         "takeaway": "Valid COA findings should be acknowledged, explained, and addressed with concrete corrective actions for future projects."
       },
-      "explanation": null,
+      "explanation": "Ignoring findings demonstrates unprofessionalism and prevents improvement. Defensive, evasive responses harm credibility and suggest guilt. Blaming others without acknowledging architect's role damages professional relationships and credibility. Professional response to valid findings acknowledges the issue, explains context, and demonstrates commitment to improvement through corrective actions. Valid COA findings should be acknowledged, explained, and addressed with concrete corrective actions for future projects.",
       "code_citation": "RA 9266",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
@@ -452,58 +502,8 @@
       "model_id": "ALE-PRAC-FRM-013-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:48.361702+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:c1ff53d5a89fe4ab710a336a803e160804cfbc9acdd1eb6ef07039b003712f9f"
-    },
-    {
-      "question_id": "c8d5b3cf-72d8-4d29-8f6e-6d5d09ecb9ec",
-      "article_id": "9c859ffb-8b3a-4feb-b484-6700d3867e5c",
-      "topic_id": "5e6d55b8-404f-48e9-9853-312254db7352",
-      "text": "What is the primary role of the Commission on Audit (COA) in government-funded projects?",
-      "options": [
-        {
-          "id": "a",
-          "text": "To provide design advice, ensuring that all architectural plans meet the necessary aesthetic and functional standards"
-        },
-        {
-          "id": "b",
-          "text": "To conduct financial and performance audits ensuring regularity, legality, and economy"
-        },
-        {
-          "id": "c",
-          "text": "To hire architects, selecting those with the best qualifications for government projects"
-        },
-        {
-          "id": "d",
-          "text": "To approve architectural designs, verifying compliance with all relevant building codes and regulations"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "COA reviews outcomes, not design strategy; design advice is not COA's role.",
-        "c": "COA does not hire personnel; it audits spending and compliance.",
-        "d": "Building officials approve designs; COA audits compliance after fact.",
-        "correct": "COA conducts financial and performance audits evaluating regularity (procedures followed), legality (code compliance), and economy (cost control).",
-        "takeaway": "COA audits government projects for regularity, legality, and economy—encompassing design decisions and cost control."
-      },
-      "explanation": null,
-      "code_citation": "1987 Constitution Art. IX-D; COA Auditing Rules",
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [],
-      "difficulty": 0.3,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PRAC-FRM-013-001",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:48.361702+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:8c56526be18bee2766dae4c0395987138f357429f631bd02939cd5116132aec8"
+      "updated_at": "2026-05-06T13:17:30.675437+00:00",
+      "content_hash": "sha256:0e6c532ecd86a6e2101d3b79f69bca0bf09e6d399c5dcfa95e49bf19d7d856b3"
     }
   ]
 }

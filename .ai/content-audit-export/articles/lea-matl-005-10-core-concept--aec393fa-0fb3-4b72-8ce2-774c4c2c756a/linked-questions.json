@@ -1,7 +1,7 @@
 {
   "article_id": "aec393fa-0fb3-4b72-8ce2-774c4c2c756a",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:ccad5fbe0660c23ddff9c83236dec7408c85030668849075bfb3829d08a42866",
+  "linked_questions_hash": "sha256:14c1ff70816d26ec470750e1328a8c9d7cc334b49d81f0483d134d518cf557bc",
   "question_count": 10,
   "questions": [
     {
@@ -53,6 +53,56 @@
       "created_at": "2026-03-23T19:27:28.473222+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:60c5c2fb92c9e227a4069e121285e3b2edea7694ec4de1e106e21588e42a8673"
+    },
+    {
+      "question_id": "85838bf6-e180-4782-96c2-cb7f7cc57b39",
+      "article_id": "aec393fa-0fb3-4b72-8ce2-774c4c2c756a",
+      "topic_id": "79bfd7c5-bbd8-4acc-ab15-ba437f394e57",
+      "text": "A project team is evaluating two material options with EPD data: Material A (imported from Germany) A1-A3 embodied carbon 0.8 kg CO2e/kg with A4 transport 0.15 kg CO2e/kg; Material B (sourced locally) A1-A3 embodied carbon 0.9 kg CO2e/kg with A4 transport 0.05 kg CO2e/kg. Total project material mass is 500,000 kg. Which material has lower total embodied carbon (A1-A5), and by how much?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Material B total (A1-A5): (0.9 + 0.05) × 500,000 = 475,000 kg CO2e. Material A total: (0.8 + 0.15) × 500,000 = 475,000 kg CO2e. Totals are equivalent; local sourcing benefits (A4 reduction) offset higher A1-A3 production emissions (Material B is preferred for Philippine context due to local supply chain)"
+        },
+        {
+          "id": "b",
+          "text": "Material A is lower; imported material always has lower embodied carbon than locally sourced because manufacturing efficiency in developed countries outweighs transport emissions"
+        },
+        {
+          "id": "c",
+          "text": "Material B is significantly lower; local sourcing reduces embodied carbon by 50% compared to import due to eliminated shipping and customs handling processes"
+        },
+        {
+          "id": "d",
+          "text": "Embodied carbon cannot be compared between imported and locally sourced materials; EPD values are incompatible across different national certification and testing standards"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Imported material's A4 transport (0.15) exceeds local sourcing (0.05); when summed, both options have identical total if A1-A3 differs by 0.1.",
+        "c": "Material B does not reduce embodied carbon by 50%; the reduction is approximately 10% in A1-A3 offset by lower A4.",
+        "d": "EPDs are standardized and comparable via ISO 14025 framework. Comparing imported and local materials is legitimate and often reveals A4 transport benefits of local sourcing.",
+        "correct": "Material A (A1-A5): (0.8 + 0.15) × 500,000 = 475,000 kg CO2e. Material B (A1-A5): (0.9 + 0.05) × 500,000 = 475,000 kg CO2e. Totals are equivalent numerically. However, Material B is preferred because local sourcing reduces A4 transport emissions (important for resilience and supply chain risk) and supports local economy despite slightly higher A1-A3 production impact.",
+        "takeaway": "Local sourcing often has marginally higher A1-A3 production emissions but significantly lower A4 transport emissions. Total embodied carbon may be equivalent or favoring local sourcing, with additional supply chain resilience and economic benefits."
+      },
+      "explanation": "Imported material's A4 transport (0.15) exceeds local sourcing (0.05); when summed, both options have identical total if A1-A3 differs by 0.1. Material B does not reduce embodied carbon by 50%; the reduction is approximately 10% in A1-A3 offset by lower A4. EPDs are standardized and comparable via ISO 14025 framework. Comparing imported and local materials is legitimate and often reveals A4 transport benefits of local sourcing. Material A (A1-A5): (0.8 + 0.15) × 500,000 = 475,000 kg CO2e. Material B (A1-A5): (0.9 + 0.05) × 500,000 = 475,000 kg CO2e. Totals are equivalent numerically. However, Material B is preferred because local sourcing reduces A4 transport emissions (important for resilience and supply chain risk) and supports local economy despite slightly higher A1-A3 production impact. Local sourcing often has marginally higher A1-A3 production emissions but significantly lower A4 transport emissions. Total embodied carbon may be equivalent or favoring local sourcing, with additional supply chain resilience and economic benefits.",
+      "code_citation": "ICE Embodied Carbon Database; EPD Comparison Guidelines",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-005-10-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-05-06T14:40:18.105376+00:00",
+      "content_hash": "sha256:02e8b007027cdee186e07fad72a00aeb595f3f4b760c07f5d3d86c7ff1a1f243"
     },
     {
       "question_id": "bb095102-5db7-4396-a559-74d4494411ac",
@@ -205,56 +255,6 @@
       "content_hash": "sha256:570c263e39bed556fafe3ddd2be91ba48bfda61c962852e54e02e59dd1bc5e63"
     },
     {
-      "question_id": "081141d5-4fee-4b19-9833-4d20a23f6bee",
-      "article_id": "aec393fa-0fb3-4b72-8ce2-774c4c2c756a",
-      "topic_id": "79bfd7c5-bbd8-4acc-ab15-ba437f394e57",
-      "text": "The Philippine electricity grid composition (2023) includes approximately what percentage of coal, and how does this affect operational carbon (B6-B7) compared to grid-decarbonized countries?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Philippines approximately 60-65% coal (2023 DOE data), 20-25% natural gas, 20-25% renewable, 5% other; coal-heavy grid results in higher operational carbon per kWh (approximately 0.6-0.8 kg CO2e/kWh) versus grid-decarbonized countries like Denmark (50%+ renewable, 0.2-0.3 kg CO2e/kWh)"
-        },
-        {
-          "id": "b",
-          "text": "Philippines has 0% coal; grid is entirely renewable, resulting in zero operational carbon from electricity, which is not currently feasible"
-        },
-        {
-          "id": "c",
-          "text": "Philippines has 80%+ coal; operational carbon is extremely high, making embodied carbon selection irrelevant in most cases"
-        },
-        {
-          "id": "d",
-          "text": "Grid composition is not tracked or regulated in Philippines; operational carbon estimates are not available, leading to uncertainty in carbon accounting"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "b": "Philippines grid is not 0% coal and not 100% renewable. Coal remains dominant fuel source despite renewable energy expansion targets.",
-        "c": "Grid is not 80%+ coal. While coal is significant, gas and renewables represent 40-50% combined, providing decarbonization pathway.",
-        "d": "Philippine Department of Energy (DOE) tracks grid composition and publishes annual energy statistics. Operational carbon estimates are available and should inform building design.",
-        "correct": "2023 Philippine grid: ~40-45% coal, ~20-25% natural gas, ~20-25% renewable (hydro, wind, solar, geothermal), ~5% other. This coal-heavy mix results in higher operational carbon per kWh consumed. Operational efficiency (HVAC, envelope, renewable on-site) becomes critical decarbonization lever in Philippines.",
-        "takeaway": "Philippine electricity grid composition (40-45% coal) results in higher operational carbon per kWh than grid-decarbonized countries. This makes embodied carbon reduction a higher priority and increases importance of on-site renewable energy and efficiency in Philippine buildings."
-      },
-      "explanation": null,
-      "code_citation": "Philippine Department of Energy Grid Composition; BERDE Rating System Context",
-      "bloom_level": "understand",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-MATL-005-10-006",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:28.926909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:8b38b84ded5ea09ffaa1d4b28c2e64c69bbc22046b6d086481763f13bf0859b3"
-    },
-    {
       "question_id": "48e24168-922d-430c-b600-31d9a796c272",
       "article_id": "aec393fa-0fb3-4b72-8ce2-774c4c2c756a",
       "topic_id": "79bfd7c5-bbd8-4acc-ab15-ba437f394e57",
@@ -405,26 +405,26 @@
       "content_hash": "sha256:0c11e4633735bed63407b14e1c3b1802881947d66a7489d0608454768aa3dc8e"
     },
     {
-      "question_id": "85838bf6-e180-4782-96c2-cb7f7cc57b39",
+      "question_id": "081141d5-4fee-4b19-9833-4d20a23f6bee",
       "article_id": "aec393fa-0fb3-4b72-8ce2-774c4c2c756a",
       "topic_id": "79bfd7c5-bbd8-4acc-ab15-ba437f394e57",
-      "text": "A project team is evaluating two material options with EPD data: Material A (imported from Germany) A1-A3 embodied carbon 0.8 kg CO2e/kg with A4 transport 0.15 kg CO2e/kg; Material B (sourced locally) A1-A3 embodied carbon 0.9 kg CO2e/kg with A4 transport 0.05 kg CO2e/kg. Total project material mass is 500,000 kg. Which material has lower total embodied carbon (A1-A5), and by how much?",
+      "text": "The Philippine electricity grid composition (2023) includes approximately what percentage of coal, and how does this affect operational carbon (B6-B7) compared to grid-decarbonized countries?",
       "options": [
         {
           "id": "a",
-          "text": "Material B total (A1-A5): (0.9 + 0.05) × 500,000 = 475,000 kg CO2e. Material A total: (0.8 + 0.15) × 500,000 = 475,000 kg CO2e. Totals are equivalent; local sourcing benefits (A4 reduction) offset higher A1-A3 production emissions (Material B is preferred for Philippine context due to local supply chain)"
+          "text": "Philippines approximately 60-65% coal (2023 DOE data), 20-25% natural gas, 20-25% renewable, 5% other; coal-heavy grid results in higher operational carbon per kWh (approximately 0.6-0.8 kg CO2e/kWh) versus grid-decarbonized countries like Denmark (50%+ renewable, 0.2-0.3 kg CO2e/kWh)"
         },
         {
           "id": "b",
-          "text": "Material A is lower; imported material always has lower embodied carbon than locally sourced because manufacturing efficiency in developed countries outweighs transport emissions"
+          "text": "Philippines has 0% coal; grid is entirely renewable, resulting in zero operational carbon from electricity, which is not currently feasible"
         },
         {
           "id": "c",
-          "text": "Material B is significantly lower; local sourcing reduces embodied carbon by 50% compared to import due to eliminated shipping and customs handling processes"
+          "text": "Philippines has 80%+ coal; operational carbon is extremely high, making embodied carbon selection irrelevant in most cases"
         },
         {
           "id": "d",
-          "text": "Embodied carbon cannot be compared between imported and locally sourced materials; EPD values are incompatible across different national certification and testing standards"
+          "text": "Grid composition is not tracked or regulated in Philippines; operational carbon estimates are not available, leading to uncertainty in carbon accounting"
         }
       ],
       "correct_option_id": "a",
@@ -433,26 +433,26 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Imported material's A4 transport (0.15) exceeds local sourcing (0.05); when summed, both options have identical total if A1-A3 differs by 0.1.",
-        "c": "Material B does not reduce embodied carbon by 50%; the reduction is approximately 10% in A1-A3 offset by lower A4.",
-        "d": "EPDs are standardized and comparable via ISO 14025 framework. Comparing imported and local materials is legitimate and often reveals A4 transport benefits of local sourcing.",
-        "correct": "Material A (A1-A5): (0.8 + 0.15) × 500,000 = 475,000 kg CO2e. Material B (A1-A5): (0.9 + 0.05) × 500,000 = 475,000 kg CO2e. Totals are equivalent numerically. However, Material B is preferred because local sourcing reduces A4 transport emissions (important for resilience and supply chain risk) and supports local economy despite slightly higher A1-A3 production impact.",
-        "takeaway": "Local sourcing often has marginally higher A1-A3 production emissions but significantly lower A4 transport emissions. Total embodied carbon may be equivalent or favoring local sourcing, with additional supply chain resilience and economic benefits."
+        "b": "Philippines grid is not 0% coal and not 100% renewable. Coal remains dominant fuel source despite renewable energy expansion targets.",
+        "c": "Grid is not 80%+ coal. While coal is significant, gas and renewables represent 40-50% combined, providing decarbonization pathway.",
+        "d": "Philippine Department of Energy (DOE) tracks grid composition and publishes annual energy statistics. Operational carbon estimates are available and should inform building design.",
+        "correct": "2023 Philippine grid: ~40-45% coal, ~20-25% natural gas, ~20-25% renewable (hydro, wind, solar, geothermal), ~5% other. This coal-heavy mix results in higher operational carbon per kWh consumed. Operational efficiency (HVAC, envelope, renewable on-site) becomes critical decarbonization lever in Philippines.",
+        "takeaway": "Philippine electricity grid composition (40-45% coal) results in higher operational carbon per kWh than grid-decarbonized countries. This makes embodied carbon reduction a higher priority and increases importance of on-site renewable energy and efficiency in Philippine buildings."
       },
-      "explanation": null,
-      "code_citation": "ICE Embodied Carbon Database; EPD Comparison Guidelines",
-      "bloom_level": "apply",
+      "explanation": "Philippines grid is not 0% coal and not 100% renewable. Coal remains dominant fuel source despite renewable energy expansion targets. Grid is not 80%+ coal. While coal is significant, gas and renewables represent 40-50% combined, providing decarbonization pathway. Philippine Department of Energy (DOE) tracks grid composition and publishes annual energy statistics. Operational carbon estimates are available and should inform building design. 2023 Philippine grid: ~40-45% coal, ~20-25% natural gas, ~20-25% renewable (hydro, wind, solar, geothermal), ~5% other. This coal-heavy mix results in higher operational carbon per kWh consumed. Operational efficiency (HVAC, envelope, renewable on-site) becomes critical decarbonization lever in Philippines. Philippine electricity grid composition (40-45% coal) results in higher operational carbon per kWh than grid-decarbonized countries. This makes embodied carbon reduction a higher priority and increases importance of on-site renewable energy and efficiency in Philippine buildings.",
+      "code_citation": "Philippine Department of Energy Grid Composition; BERDE Rating System Context",
+      "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
-      "difficulty": 0.7,
+      "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
       "is_assessment": false,
-      "model_id": "ALE-MATL-005-10-010",
+      "model_id": "ALE-MATL-005-10-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.926909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:d52a3e98d9e5590c53b86d59a10669dfde5cb427c8e777508c01d1540537eb6e"
+      "updated_at": "2026-05-06T14:40:17.965009+00:00",
+      "content_hash": "sha256:1188162e3b71b018bf998c2fd4cbf1126636d3b8a7e1606b77104cd67d487257"
     },
     {
       "question_id": "6b94dd89-2065-47fb-ac22-1b95c4862def",

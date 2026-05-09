@@ -1,9 +1,62 @@
 {
   "article_id": "dbac0a4a-cff7-4cb1-8e66-dcd6fb224283",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:f5b88cc7794c957e66f980f0a819cdcef5e5586cfb0ae65f4ff38a4aa36fdb98",
+  "linked_questions_hash": "sha256:c10a9ccdf12ede6507840f057bb895c7dcaf9e624c5a3a1f9079022af73614c3",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "11a6f7b4-db33-440d-b94d-deb31dc5363f",
+      "article_id": "dbac0a4a-cff7-4cb1-8e66-dcd6fb224283",
+      "topic_id": "17adb60f-68da-4c9c-bde1-2a09437d4232",
+      "text": "How does informal transport (jeepneys, tricycles) affect the application of formal planning concepts like New Urbanism and TOD in the Philippines?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Informal transport is irrelevant to planning; formal TOD zones ignore jeepneys, focusing solely on MRT/LRT integration"
+        },
+        {
+          "id": "b",
+          "text": "Informal transport contradicts planning principles and should be eliminated before planning can proceed, as it disrupts organized transit systems"
+        },
+        {
+          "id": "c",
+          "text": "Informal transport is the primary mode for millions of Filipinos; planning must integrate informal routes into TOD and walkability strategies, not ignore them. MRT/LRT planning must connect with jeepney networks, not compete"
+        },
+        {
+          "id": "d",
+          "text": "Informal transport only exists in squatter areas and is not relevant to planned developments, which are designed around formal transit systems"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Informal transport is ubiquitous and massive. Ignoring it makes planning unrealistic.",
+        "b": "Eliminating informal transport overnight is politically impossible and economically disastrous (would displace millions of drivers/operators). Better: integrate and formalize.",
+        "c": "Jeepneys and tricycles serve millions daily—they are not aberrations but core transport infrastructure. Effective TOD and New Urbanism planning must acknowledge informal networks and create interfaces. BGC's success partly relies on jeepney connections to MRT stations. Ignoring informality makes formal transit inaccessible to the poor.",
+        "d": "Informal transport serves wealthy and poor areas alike. Many formal developments depend on informal routes for staff commuting.",
+        "correct": "Jeepneys and tricycles serve millions daily—they are not aberrations but core transport infrastructure. Effective TOD and New Urbanism planning must acknowledge informal networks and create interfaces. BGC's success partly relies on jeepney connections to MRT stations. Ignoring informality makes formal transit inaccessible to the poor.",
+        "takeaway": "Philippine planning must integrate informal transport into formal TOD and walkability strategies. Ignoring informality makes plans unreal and inaccessible."
+      },
+      "explanation": "Informal transport is ubiquitous and massive. Ignoring it makes planning unrealistic. Eliminating informal transport overnight is politically impossible and economically disastrous (would displace millions of drivers/operators). Better: integrate and formalize. Jeepneys and tricycles serve millions daily—they are not aberrations but core transport infrastructure. Effective TOD and New Urbanism planning must acknowledge informal networks and create interfaces. BGC's success partly relies on jeepney connections to MRT stations. Ignoring informality makes formal transit inaccessible to the poor. Informal transport serves wealthy and poor areas alike. Many formal developments depend on informal routes for staff commuting. Jeepneys and tricycles serve millions daily—they are not aberrations but core transport infrastructure. Effective TOD and New Urbanism planning must acknowledge informal networks and create interfaces. BGC's success partly relies on jeepney connections to MRT stations. Ignoring informality makes formal transit inaccessible to the poor. Philippine planning must integrate informal transport into formal TOD and walkability strategies. Ignoring informality makes plans unreal and inaccessible.",
+      "code_citation": "Philippine transport studies; BGC and TOD case analyses",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "Informal economy integration"
+      ],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-002-07-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:06.930799+00:00",
+      "updated_at": "2026-05-06T14:48:25.801339+00:00",
+      "content_hash": "sha256:2b4d1f39edc323b24eb885893154aa5eabaf8d17fad024b6df576a22bae8a748"
+    },
     {
       "question_id": "95885061-42bf-4aeb-9835-ce3b3e99c71f",
       "article_id": "dbac0a4a-cff7-4cb1-8e66-dcd6fb224283",
@@ -40,7 +93,7 @@
         "correct": "The Concentric Zone Model assumes formal property markets, legal subdivision, and smooth outward expansion in concentric rings. Manila's sprawl involves millions of informal settlers occupying land without legal title, developer-led leapfrog development skipping areas, and land grabbing—all of which the model's market-based assumptions cannot explain.",
         "takeaway": "Burgess Model assumes formal property markets. Informal settlement and leapfrog development violate these assumptions."
       },
-      "explanation": null,
+      "explanation": "Models can be applied to cities other than their origin (Chicago). The issue is not geographic but structural (informal land occupation). Waterfront location is a geographic fact, not a reason the Concentric Zone Model fails. The model describes growth patterns, not absolute position. The Concentric Zone Model assumes formal property markets, legal subdivision, and smooth outward expansion in concentric rings. Manila's sprawl involves millions of informal settlers occupying land without legal title, developer-led leapfrog development skipping areas, and land grabbing—all of which the model's market-based assumptions cannot explain. Urban models are applied internationally. The issue is not international application but the model's assumptions about formal markets. The Concentric Zone Model assumes formal property markets, legal subdivision, and smooth outward expansion in concentric rings. Manila's sprawl involves millions of informal settlers occupying land without legal title, developer-led leapfrog development skipping areas, and land grabbing—all of which the model's market-based assumptions cannot explain. Burgess Model assumes formal property markets. Informal settlement and leapfrog development violate these assumptions.",
       "code_citation": "Ernest W. Burgess, Concentric Zone Model (1925); Philippine urban studies",
       "bloom_level": "understand",
       "application_context": "recall",
@@ -52,8 +105,8 @@
       "model_id": "ALE-PLAN-002-07-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:06.930799+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:92dad8e37008a4f68d8ec1aa3d2de7d20d5d076fa0cc9b7b59ada12ceebdee39"
+      "updated_at": "2026-05-06T14:48:25.559043+00:00",
+      "content_hash": "sha256:bbd1ff8520904fba68a43deea260fb09a5b56513367f8dd09754e3e350be5509"
     },
     {
       "question_id": "e764d8f5-5909-456d-8fb6-5fb027a2ab01",
@@ -195,7 +248,7 @@
         "correct": "Philippine cities show uneven Lynch element legibility. Metro Manila's EDSA is a chaotic path; Chinatown is a distinct district; MRT/LRT stations are clear nodes; Rizal Monument and Cathedral are landmarks. But many provincial towns lack distinctive nodes and landmarks. Planners using Lynch framework can identify legibility gaps and create stronger elements through design (new landmark buildings, plaza nodes, clearer district identities).",
         "takeaway": "Lynch elements reveal legibility gaps in Philippine cities. Planning can strengthen weak elements through targeted design."
       },
-      "explanation": null,
+      "explanation": "Legibility varies greatly. Metro Manila is more legible than scattered provincial towns. Philippine cities show uneven Lynch element legibility. Metro Manila's EDSA is a chaotic path; Chinatown is a distinct district; MRT/LRT stations are clear nodes; Rizal Monument and Cathedral are landmarks. But many provincial towns lack distinctive nodes and landmarks. Planners using Lynch framework can identify legibility gaps and create stronger elements through design (new landmark buildings, plaza nodes, clearer district identities). Lynch's framework is applied internationally. The concept is universal; application is local. Legibility is crucial for wayfinding, safety, and urban identity—core planning concerns. Philippine cities show uneven Lynch element legibility. Metro Manila's EDSA is a chaotic path; Chinatown is a distinct district; MRT/LRT stations are clear nodes; Rizal Monument and Cathedral are landmarks. But many provincial towns lack distinctive nodes and landmarks. Planners using Lynch framework can identify legibility gaps and create stronger elements through design (new landmark buildings, plaza nodes, clearer district identities). Lynch elements reveal legibility gaps in Philippine cities. Planning can strengthen weak elements through targeted design.",
       "code_citation": "Kevin Lynch, The Image of the City (1960); Philippine urban case studies",
       "bloom_level": "apply",
       "application_context": "design_application",
@@ -209,8 +262,8 @@
       "model_id": "ALE-PLAN-002-07-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:06.930799+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:0d3c7002b8811c84c75c4f77efee4eaf351c1585348fa7fdcac7b1912926500b"
+      "updated_at": "2026-05-06T14:48:25.674603+00:00",
+      "content_hash": "sha256:78f9909c799451938ed7912002ea95c37c2f3326317ce3c92432b206c317522b"
     },
     {
       "question_id": "4a01b852-3aad-432f-827c-4600fce93b6e",
@@ -372,59 +425,6 @@
       "content_hash": "sha256:01e604214acb4fb45bef68fd1befbb8d16c63553c2dc95e4736663f2f730071a"
     },
     {
-      "question_id": "11a6f7b4-db33-440d-b94d-deb31dc5363f",
-      "article_id": "dbac0a4a-cff7-4cb1-8e66-dcd6fb224283",
-      "topic_id": "17adb60f-68da-4c9c-bde1-2a09437d4232",
-      "text": "How does informal transport (jeepneys, tricycles) affect the application of formal planning concepts like New Urbanism and TOD in the Philippines?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Informal transport is irrelevant to planning; formal TOD zones ignore jeepneys, focusing solely on MRT/LRT integration"
-        },
-        {
-          "id": "b",
-          "text": "Informal transport contradicts planning principles and should be eliminated before planning can proceed, as it disrupts organized transit systems"
-        },
-        {
-          "id": "c",
-          "text": "Informal transport is the primary mode for millions of Filipinos; planning must integrate informal routes into TOD and walkability strategies, not ignore them. MRT/LRT planning must connect with jeepney networks, not compete"
-        },
-        {
-          "id": "d",
-          "text": "Informal transport only exists in squatter areas and is not relevant to planned developments, which are designed around formal transit systems"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Informal transport is ubiquitous and massive. Ignoring it makes planning unrealistic.",
-        "b": "Eliminating informal transport overnight is politically impossible and economically disastrous (would displace millions of drivers/operators). Better: integrate and formalize.",
-        "c": "Jeepneys and tricycles serve millions daily—they are not aberrations but core transport infrastructure. Effective TOD and New Urbanism planning must acknowledge informal networks and create interfaces. BGC's success partly relies on jeepney connections to MRT stations. Ignoring informality makes formal transit inaccessible to the poor.",
-        "d": "Informal transport serves wealthy and poor areas alike. Many formal developments depend on informal routes for staff commuting.",
-        "correct": "Jeepneys and tricycles serve millions daily—they are not aberrations but core transport infrastructure. Effective TOD and New Urbanism planning must acknowledge informal networks and create interfaces. BGC's success partly relies on jeepney connections to MRT stations. Ignoring informality makes formal transit inaccessible to the poor.",
-        "takeaway": "Philippine planning must integrate informal transport into formal TOD and walkability strategies. Ignoring informality makes plans unreal and inaccessible."
-      },
-      "explanation": null,
-      "code_citation": "Philippine transport studies; BGC and TOD case analyses",
-      "bloom_level": "analyze",
-      "application_context": "code_interpretation",
-      "practice_context": [
-        "Informal economy integration"
-      ],
-      "difficulty": 0.9,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PLAN-002-07-010",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:29:06.930799+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:1bdb6b116077f73d81373e4e185eb3b9c4f463611ee560b4d882ca7e33251daf"
-    },
-    {
       "question_id": "0b101491-dc2d-4782-9625-027514ede20d",
       "article_id": "dbac0a4a-cff7-4cb1-8e66-dcd6fb224283",
       "topic_id": "17adb60f-68da-4c9c-bde1-2a09437d4232",
@@ -511,7 +511,7 @@
         "correct": "Quezon City, Makati, Cebu City have professional planning offices, dedicated staff, and monitoring. These cities implement CLUPs more consistently. Smaller municipalities often have 1–2 planning staff sharing multiple duties; CLUPs are prepared but not enforced. Without monitoring, zoning violations accumulate and sprawl accelerates.",
         "takeaway": "Planning success correlates with municipal capacity. Strong planning offices = better CLUP implementation. Weak offices = sprawl and enforcement gaps."
       },
-      "explanation": null,
+      "explanation": "Capacity clearly affects outcomes. Well-staffed planning offices outperform under-resourced offices. Professional planning actually enables faster, more efficient development by reducing conflicts and uncertainty. Quezon City, Makati, Cebu City have professional planning offices, dedicated staff, and monitoring. These cities implement CLUPs more consistently. Smaller municipalities often have 1–2 planning staff sharing multiple duties; CLUPs are prepared but not enforced. Without monitoring, zoning violations accumulate and sprawl accelerates. While donors fund CLUPs, local capacity determines implementation quality. Donor funding alone does not ensure success. Quezon City, Makati, Cebu City have professional planning offices, dedicated staff, and monitoring. These cities implement CLUPs more consistently. Smaller municipalities often have 1–2 planning staff sharing multiple duties; CLUPs are prepared but not enforced. Without monitoring, zoning violations accumulate and sprawl accelerates. Planning success correlates with municipal capacity. Strong planning offices = better CLUP implementation. Weak offices = sprawl and enforcement gaps.",
       "code_citation": "DHSUD planning assessments; Philippine municipal planning studies",
       "bloom_level": "analyze",
       "application_context": "design_application",
@@ -525,8 +525,8 @@
       "model_id": "ALE-PLAN-002-07-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:06.930799+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:a629616ef7ee57e5ea171b21e5c10cd056ceea34fb80d5a30c9ec96f2b561f8e"
+      "updated_at": "2026-05-06T14:48:25.929489+00:00",
+      "content_hash": "sha256:cc607770fb851d59c20aef74ff019e82d05cfb3013d9e0a087b6420a6f12aea8"
     }
   ]
 }

@@ -1,9 +1,59 @@
 {
   "article_id": "9261cc17-24c1-49d2-a45a-158032f6fcd3",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:d7d7998e575cace418cc25e9da0b9560150fd460aeea7f7e6665ea0048974724",
+  "linked_questions_hash": "sha256:2cbc807b47dd58731e2052d93025c4c2059af496ec7b624dbc03969c115f9941",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "042f1901-2fc0-4396-83f8-9d11cd6f85e9",
+      "article_id": "9261cc17-24c1-49d2-a45a-158032f6fcd3",
+      "topic_id": "925647f7-df2b-41f7-bcdb-ed8e63a2bb9b",
+      "text": "Which major credit category in BERDE represents the most design-intensive responsibility for architects?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Waste management only"
+        },
+        {
+          "id": "b",
+          "text": "Energy credits, which involve envelope performance, daylighting, HVAC efficiency, and renewable energy design"
+        },
+        {
+          "id": "c",
+          "text": "Only water efficiency"
+        },
+        {
+          "id": "d",
+          "text": "Only material sourcing"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Minimizes architect role; while architects influence waste management, energy design is far more architecture-dependent.",
+        "c": "Minimizes architect role; water systems are primarily MEP-designed, though architects determine where systems fit.",
+        "d": "Minimizes architect role; material selection is important but less design-intensive than energy system optimization.",
+        "correct": "Energy is the largest BERDE credit category and depends heavily on architectural decisions—building form, envelope design, window placement, daylighting strategy, and HVAC system design.",
+        "takeaway": "Energy credits are BERDE's most design-intensive category because architect decisions about envelope, orientation, and daylighting directly determine performance."
+      },
+      "explanation": "Minimizes architect role; while architects influence waste management, energy design is far more architecture-dependent. Minimizes architect role; water systems are primarily MEP-designed, though architects determine where systems fit. Minimizes architect role; material selection is important but less design-intensive than energy system optimization. Energy is the largest BERDE credit category and depends heavily on architectural decisions—building form, envelope design, window placement, daylighting strategy, and HVAC system design. Energy credits are BERDE's most design-intensive category because architect decisions about envelope, orientation, and daylighting directly determine performance.",
+      "code_citation": "BERDE Framework",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-016-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-05-06T14:56:46.616526+00:00",
+      "content_hash": "sha256:c55fc33c96cad92c0a5c8c2e8e6c7482a287eb767135662a2edf3271272f43b5"
+    },
     {
       "question_id": "6979b48f-4da4-4cf0-ad5e-b4df64b1c013",
       "article_id": "9261cc17-24c1-49d2-a45a-158032f6fcd3",
@@ -39,7 +89,7 @@
         "correct": "BERDE uses a credit-based system with four certification levels: Certified (minimum), Silver, Gold, and Platinum (highest achievement).",
         "takeaway": "BERDE's four-tier system (Certified, Silver, Gold, Platinum) rewards increasing environmental performance, not just pass/fail."
       },
-      "explanation": null,
+      "explanation": "Oversimplifies the system; BERDE uses a nuanced credit-based approach with four distinct achievement levels. Omits the Certified and Platinum levels; BERDE has four levels, not three. Misses the technical rating structure; BERDE levels are Certified through Platinum, not Beginner/Intermediate/Expert. BERDE uses a credit-based system with four certification levels: Certified (minimum), Silver, Gold, and Platinum (highest achievement). BERDE's four-tier system (Certified, Silver, Gold, Platinum) rewards increasing environmental performance, not just pass/fail.",
       "code_citation": "BERDE Framework",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
@@ -51,8 +101,8 @@
       "model_id": "ALE-PRAC-FRM-016-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:49.529462+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:b1ff48193d4aceadbeeec8e231e9e1238b4204be08ca9b3139cef1b35ac5bdf4"
+      "updated_at": "2026-05-06T14:56:46.265917+00:00",
+      "content_hash": "sha256:244ad1714df3a2688428275e40a7abd422b550d44a6102452a4d4106ca9a2005"
     },
     {
       "question_id": "ddc917a3-dd81-49e8-b80b-4e2f2b0cb942",
@@ -139,7 +189,7 @@
         "correct": "Architects must integrate BERDE requirements from project inception, make deliberate design choices, coordinate consultant systems, and document decisions to support certification claims.",
         "takeaway": "BERDE success depends on architects understanding credits from day one and embedding green design into the design philosophy, not treating it as an afterthought."
       },
-      "explanation": null,
+      "explanation": "Trivializes architect role; BERDE certification depends on substantive design decisions, not just paperwork. Shifts responsibility to contractors; while contractors execute green features, the architect designs them and must specify requirements. Misplaces responsibility; the architect designs for performance but cannot control occupant behavior or operational maintenance post-completion. Architects must integrate BERDE requirements from project inception, make deliberate design choices, coordinate consultant systems, and document decisions to support certification claims. BERDE success depends on architects understanding credits from day one and embedding green design into the design philosophy, not treating it as an afterthought.",
       "code_citation": "BERDE Framework",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
@@ -151,8 +201,8 @@
       "model_id": "ALE-PRAC-FRM-016-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:49.529462+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:214575cad66339d670287d05d572565df1a3818f2d7ffba32437c4fb73011139"
+      "updated_at": "2026-05-06T14:56:46.375739+00:00",
+      "content_hash": "sha256:b17c02b198cf17956ef6c970f776d9636a36fe39ba5d150300b5824afb641193"
     },
     {
       "question_id": "5b001d1e-7409-4ee2-80c9-fdd68ab32037",
@@ -189,7 +239,7 @@
         "correct": "BERDE stands for Building for Ecologically Responsive Design Excellence, the Philippines' national green building rating system.",
         "takeaway": "BERDE's name emphasizes ecological responsiveness and design excellence—not just energy or basic rating."
       },
-      "explanation": null,
+      "explanation": "Misplaces the focus to energy alone; BERDE addresses multiple environmental categories beyond energy performance. Uses 'Rating' instead of 'For'; BERDE emphasizes proactive design excellence, not merely rating buildings. Understates the standard as 'Basic'; BERDE targets excellence and comprehensive ecological performance, not just basic standards. BERDE stands for Building for Ecologically Responsive Design Excellence, the Philippines' national green building rating system. BERDE's name emphasizes ecological responsiveness and design excellence—not just energy or basic rating.",
       "code_citation": "BERDE Framework",
       "bloom_level": "remember",
       "application_context": "recall",
@@ -201,8 +251,8 @@
       "model_id": "ALE-PRAC-FRM-016-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:49.529462+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:16aeca0a654342750f54d48122e6d1bf55cabb611e4e1dec87284cc8bbae42b0"
+      "updated_at": "2026-05-06T14:56:46.501633+00:00",
+      "content_hash": "sha256:8ca135e093a09da44de39338be975a3236115b1d19864ea2690abf762cbb7866"
     },
     {
       "question_id": "d55c0527-e332-4185-be4a-384408d99ed2",
@@ -453,56 +503,6 @@
       "created_at": "2026-03-23T19:27:49.529462+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:c03e8feea5f1cf751809d271b7373863d790c888c0d3e03468e746750676e89a"
-    },
-    {
-      "question_id": "042f1901-2fc0-4396-83f8-9d11cd6f85e9",
-      "article_id": "9261cc17-24c1-49d2-a45a-158032f6fcd3",
-      "topic_id": "925647f7-df2b-41f7-bcdb-ed8e63a2bb9b",
-      "text": "Which major credit category in BERDE represents the most design-intensive responsibility for architects?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Waste management only"
-        },
-        {
-          "id": "b",
-          "text": "Energy credits, which involve envelope performance, daylighting, HVAC efficiency, and renewable energy design"
-        },
-        {
-          "id": "c",
-          "text": "Only water efficiency"
-        },
-        {
-          "id": "d",
-          "text": "Only material sourcing"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Minimizes architect role; while architects influence waste management, energy design is far more architecture-dependent.",
-        "c": "Minimizes architect role; water systems are primarily MEP-designed, though architects determine where systems fit.",
-        "d": "Minimizes architect role; material selection is important but less design-intensive than energy system optimization.",
-        "correct": "Energy is the largest BERDE credit category and depends heavily on architectural decisions—building form, envelope design, window placement, daylighting strategy, and HVAC system design.",
-        "takeaway": "Energy credits are BERDE's most design-intensive category because architect decisions about envelope, orientation, and daylighting directly determine performance."
-      },
-      "explanation": null,
-      "code_citation": "BERDE Framework",
-      "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.7,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PRAC-FRM-016-007",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:49.529462+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:a3d3561e7dda293a87f7039c11b34ffed54d5cdb185f6f865b87f1a44ac0ae2a"
     }
   ]
 }

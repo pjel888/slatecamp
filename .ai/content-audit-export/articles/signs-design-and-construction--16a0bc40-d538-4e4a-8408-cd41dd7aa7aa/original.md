@@ -1,5 +1,12 @@
 # Signs Design and Construction
 
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Signs Design and Construction** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
+
 ---
 
 ## Learning Goal
@@ -219,13 +226,11 @@ A projecting sign is being installed on a building along an arcaded commercial s
 
 > **Answer: B**
 >
-<LawCallout code="pd1096" section="Rule VII - Signs">
-
-
-On arcaded streets, PD 1096 Sec. 2004 prohibits projecting signs from extending beyond the outermost face of the arcade (projection = 0). Additionally, the minimum vertical clearance on arcaded streets is ≥ 5.00 m above the road — not 3.00 m. The 3.00 m clearance applies only to non-arcaded streets. The sign at 4.20 m clearance and 0.80 m projection beyond the arcade violates both requirements. Option A incorrectly applies the non-arcaded rule; Option C applies the wrong clearance standard; Option D is partially correct on the clearance but wrong on projection.
-
-
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="pd1096", section="Rule VII - Signs"
+- Text: On arcaded streets, PD 1096 Sec. 2004 prohibits projecting signs from extending beyond the outermost face of the arcade (projection = 0). Additionally, the minimum vertical clearance on arcaded streets is ≥ 5.00 m above the road — not 3.00 m. The 3.00 m clearance applies only to non-arcaded streets. The sign at 4.20 m clearance and 0.80 m projection beyond the arcade violates both requirements. Option A incorrectly applies the non-arcaded rule; Option C applies the wrong clearance standard; Opti
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -240,13 +245,11 @@ An architect plans three neon signs on the same façade of a building. The signs
 
 > **Answer: D**
 >
-<LawCallout code="pd1096" section="Rule VII - Sign Construction">
-
-
-(1) clear distance between signs on the same building ≥ 4.00 m — the 3.50 m spacing violates this; (2) tops must not project above the parapet or eave line — the 0.30 m overage violates this; (3) neon signs on adjacent buildings must be ≥ 2.00 m from the common boundary — the 1.80 m fails this. All three violations are present simultaneously. Board questions on neon signs frequently bundle multiple sub-rules to test whether candidates know all conditions, not just one.
-
-
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="pd1096", section="Rule VII - Sign Construction"
+- Text: (1) clear distance between signs on the same building ≥ 4.00 m — the 3.50 m spacing violates this; (2) tops must not project above the parapet or eave line — the 0.30 m overage violates this; (3) neon signs on adjacent buildings must be ≥ 2.00 m from the common boundary — the 1.80 m fails this. All three violations are present simultaneously. Board questions on neon signs frequently bundle multiple sub-rules to test whether candidates know all conditions, not just one.
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -261,13 +264,11 @@ A client wants to illuminate their building sign using solar-powered LED panels 
 
 > **Answer: B**
 >
-<LawCallout code="pd1096" section="Rule VII - Sign Location">
-
-
-not with the architect's preference or general industry practice. At the time of the NBCP's drafting and in most current PEC interpretations, "electrical means" implies connection to regulated electrical supply. The architect's advice to seek PEC authorization is the correct professional response. Options A, C, and D cite incorrect sections and incorrect reasoning.
-
-
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="pd1096", section="Rule VII - Sign Location"
+- Text: not with the architect's preference or general industry practice. At the time of the NBCP's drafting and in most current PEC interpretations, "electrical means" implies connection to regulated electrical supply. The architect's advice to seek PEC authorization is the correct professional response. Options A, C, and D cite incorrect sections and incorrect reasoning.
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -298,7 +299,11 @@ ALE Trap: Projecting sign minimum clearance: 3.00 m on non-arcaded streets, 5.00
 
 
 
-<ArticleMedia id="media-signs-design-and-construction-0" type="image" caption="Sign Types and Clearances — Roof, Projecting, Wall, and Ground Sign Dimensional Standards" description="Building elevation and plan showing four sign types: roof sign (compliance with penthouse rules, lightning protection), projecting sign (max projection from wall face, min clearance above sidewalk), wall sign (flush-mounted, area limits), and ground sign (setback from RROW). Clearance annotations: 3.00m min for non-arcaded streets, 5.00m min for arcaded streets per PD 1096 Rule XX." />
+[SLATECAMP_UI_BLOCK:ui_0004 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-signs-design-and-construction-0", type="image", caption="Sign Types and Clearances — Roof, Projecting, Wall, and Ground Sign Dimensional Standards", description="Building elevation and plan showing four sign types: roof sign (compliance with penthouse rules, lightning protection), projecting sign (max projection from wall face, min clearance above sidewalk), wall sign (flush-mounted, area limits), and ground sign (setback from RROW). Clearance annotations: 3.00m min for non-arcaded streets, 5.00m min for arcaded streets per PD 1096 Rule XX."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 ## Cross‑References
 
 **Comprehensive Signage Package**, **Bp 344 Tactile And Visual Alarms**, **Electrical And Mechanical Regulations**, **Site Exterior Circulation**

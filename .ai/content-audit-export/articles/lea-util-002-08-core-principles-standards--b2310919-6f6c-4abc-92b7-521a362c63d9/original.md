@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Util 002 08 Core Principles Standards** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 
 ## Learning Goal
@@ -33,7 +42,11 @@ Population for elevator traffic analysis = total occupant load of floors served 
 
 ### Round Trip Time (RTT)
 
-<ArticleMedia id="media-lea-util-002-08-core-principles-standard" type="image" caption="Elevator Traffic Analysis — Round Trip Time, Interval, Handling Capacity Diagram" description="Visual workflow of elevator traffic analysis: Population determination from floor area → Round Trip Time (RTT) calculation with formula components (height, speed, stops, door times) → Interval (INT=RTT/Ne) → Handling Capacity (HC=300×CC×trips/5min÷Population). Acceptable ranges: INT 25-40s (office), HC ≥12%. Example calculation for 10-story Philippine office annotated." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-util-002-08-core-principles-standard", type="image", caption="Elevator Traffic Analysis — Round Trip Time, Interval, Handling Capacity Diagram", description="Visual workflow of elevator traffic analysis: Population determination from floor area → Round Trip Time (RTT) calculation with formula components (height, speed, stops, door times) → Interval (INT=RTT/Ne) → Handling Capacity (HC=300×CC×trips/5min÷Population). Acceptable ranges: INT 25-40s (office), HC ≥12%. Example calculation for 10-story Philippine office annotated.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 
 Round Trip Time represents the time for an elevator to depart the main floor, make one stop at another floor, and return to the main floor.
@@ -237,30 +250,31 @@ At least one elevator must accommodate a wheelchair (2.4 m × 1.8 m car minimum)
 
 ## Load & Design Verification
 
-<WikiExamTable headers={["Design Step", "Formula / Method", "Philippine Reference"]} rows={[["1. Occupant Load", "1 person per 10 m² (office)", "PD 1096 Table 1206-A"], ["2. Peak Population", "Occupant Load × 0.85 (during 15-min peak)", "Industry Standard"], ["3. RTT Calculation", "2H/V + n×(t_c+t_d) + t_s", "ASHRAE 26.1"], ["4. Interval Design", "RTT / N_e ≤ 40 s (office)", "ASME A17.1"], ["5. HC Verification", "(300 × CC × trips) / Population ≥ 12%", "IGCC Elevator Performance"]]} />
+[SLATECAMP_UI_BLOCK:ui_0002 component="WikiExamTable" status="preserved"]
+Extracted summary:
+- Props: headers="{[\"Design Step\", \"Formula / Method\", \"Philippine Reference\"]}", rows="{[[\"1. Occupant Load\", \"1 person per 10 m² (office)\", \"PD 1096 Table 1206-A\"], [\"2. Peak Population\", \"Occupant Load × 0.85 (during 15-min peak)\", \"Industry Standard\"], [\"3. RTT Calculation\", \"2H/V + n×(t_c+t_d) + t_s\", \"ASHRAE 26.1\"], [\"4. Interval Design\", \"RTT / N_e ≤ 40 s (office)\", \"ASME A17.1\"], [\"5. HC Verification\", \"(300 × CC × trips) / Population ≥ 12%\", \"IGCC Elevator Performance\"]]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
 ## Common Design Mistakes & Corrections
 
-<WikiMistakeList mistakes={["Confusing occupant load (area-based) with peak population (85% of occupant load); this inflates elevator count unnecessarily", "Using only one RTT estimate without sensitivity analysis for speed variation; a 0.5 m/s speed change alters RTT by 20–30%", "Forgetting to include door times and dwell times in RTT; these account for 40–60% of total RTT in dense office buildings", "Treating all floors equally in 'average stops'; high-rise buildings must weight express vs. local service differently", "Selecting elevator capacity based only on weight limit (1,000 kg) without verifying persons capacity (13 persons) or HC performance"]} />
+[SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Confusing occupant load (area-based) with peak population (85% of occupant load); this inflates elevator count unnecessarily\", \"Using only one RTT estimate without sensitivity analysis for speed variation; a 0.5 m/s speed change alters RTT by 20–30%\", \"Forgetting to include door times and dwell times in RTT; these account for 40–60% of total RTT in dense office buildings\", \"Treating all floors equally in 'average stops'; high-rise buildings must weight express vs. local service differently\", \"Selecting elevator capacity based only on weight limit (1,000 kg) without verifying persons capacity (13 persons) or HC performance\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
 ## Design Checklist
 
-<Callout variant="info">
-Before finalizing elevator design:
-
-✓ Confirm occupant load per PD 1096 occupancy type and floor area
-✓ Define peak-hour population (typically 85 % of occupant load)
-✓ Calculate RTT with realistic speed, stop count, and dwell times
-✓ Size number of elevators to achieve 25–40 s interval (office) or 40–60 s (residential)
-✓ Verify HC ≥ 12 % for office; ≥ 8 % for residential (or higher based on client service level)
-✓ Confirm car dimensions meet PD 1096 minimums and BP 344 accessibility
-✓ Select elevator type (hydraulic, traction, MRL) based on building height and site constraints
-✓ Document all calculations for permit submission to Building Official per PD 1096
-</Callout>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Callout" status="preserved"]
+Extracted summary:
+- Props: variant="info"
+- Text: Before finalizing elevator design: ✓ Confirm occupant load per PD 1096 occupancy type and floor area ✓ Define peak-hour population (typically 85 % of occupant load) ✓ Calculate RTT with realistic speed, stop count, and dwell times ✓ Size number of elevators to achieve 25–40 s interval (office) or 40–60 s (residential) ✓ Verify HC ≥ 12 % for office; ≥ 8 % for residential (or higher based on client service level) ✓ Confirm car dimensions meet PD 1096 minimums and BP 344 accessibility ✓ Select elev
+[/SLATECAMP_UI_BLOCK]
 
 ---
 

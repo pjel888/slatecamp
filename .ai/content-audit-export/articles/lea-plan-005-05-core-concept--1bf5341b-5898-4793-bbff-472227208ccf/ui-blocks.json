@@ -1,100 +1,14 @@
 {
   "article_id": "1bf5341b-5898-4793-bbff-472227208ccf",
   "slug": "lea-plan-005-05-core-concept",
-  "normalized_created_at": "2026-05-04T09:10:36.403Z",
+  "normalized_created_at": "2026-05-09T04:02:58.313Z",
   "parser_version": "ui-block-parser-v1",
-  "original_content_hash": "sha256:bb9413a9f284f54b685c667a7fd5da68a6836f483a95b3275b203a80d07f2fed",
+  "original_content_hash": "sha256:63384a6fe4716dadd425e1e0c91f62a0b376986b6329bdbfcd63c6943ded308d",
   "normalized_content_hash": "sha256:63384a6fe4716dadd425e1e0c91f62a0b376986b6329bdbfcd63c6943ded308d",
-  "ui_block_count": 3,
-  "total_blocks": 3,
-  "blocks": [
-    {
-      "block_id": "ui_0001",
-      "block_type": "mdx_component",
-      "component_name": "ArticleMedia",
-      "raw": "<ArticleMedia id=\"media-lea-plan-005-05-core-concept\" type=\"image\" caption=\"Grading and Drainage Design — Contour Interpretation and Cut-Fill Volume\" description=\"Contour map with grading design overlay: slope calculation (% , degrees, ratio) from contour intervals, cut and fill volume determination (grid/average end area methods), building pad grading with 2% positive drainage, swales and berms for erosion control.\" suggestedAsset=\"Diagram or reference image\" status=\"placeholder\" />",
-      "raw_hash": "sha256:28f358ed41897f493e8b11abcc9da6d765c12de8fc5e13550c93cb17ebd4680e",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"ArticleMedia\" status=\"preserved\"]\nExtracted summary:\n- Props: id=\"media-lea-plan-005-05-core-concept\", type=\"image\", caption=\"Grading and Drainage Design — Contour Interpretation and Cut-Fill Volume\", description=\"Contour map with grading design overlay: slope calculation (% , degrees, ratio) from contour intervals, cut and fill volume determination (grid/average end area methods), building pad grading with 2% positive drainage, swales and berms for erosion control.\", suggestedAsset=\"Diagram or reference image\", status=\"placeholder\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:307a9460acb9dd0a203d1023e281b1c7c8e6952354c2a1bbfacbde70a35edd49",
-      "props": {
-        "id": "media-lea-plan-005-05-core-concept",
-        "type": "image",
-        "caption": "Grading and Drainage Design — Contour Interpretation and Cut-Fill Volume",
-        "description": "Contour map with grading design overlay: slope calculation (% , degrees, ratio) from contour intervals, cut and fill volume determination (grid/average end area methods), building pad grading with 2% positive drainage, swales and berms for erosion control.",
-        "suggestedAsset": "Diagram or reference image",
-        "status": "placeholder"
-      },
-      "props_json": {
-        "id": "media-lea-plan-005-05-core-concept",
-        "type": "image",
-        "caption": "Grading and Drainage Design — Contour Interpretation and Cut-Fill Volume",
-        "description": "Contour map with grading design overlay: slope calculation (% , degrees, ratio) from contour intervals, cut and fill volume determination (grid/average end area methods), building pad grading with 2% positive drainage, swales and berms for erosion control.",
-        "suggestedAsset": "Diagram or reference image",
-        "status": "placeholder"
-      },
-      "props_text": "id=\"media-lea-plan-005-05-core-concept\" type=\"image\" caption=\"Grading and Drainage Design — Contour Interpretation and Cut-Fill Volume\" description=\"Contour map with grading design overlay: slope calculation (% , degrees, ratio) from contour intervals, cut and fill volume determination (grid/average end area methods), building pad grading with 2% positive drainage, swales and berms for erosion control.\" suggestedAsset=\"Diagram or reference image\" status=\"placeholder\"",
-      "children_raw": null,
-      "children_text": null,
-      "start_offset": 2104,
-      "end_offset": 2592,
-      "line_start": 15,
-      "line_end": 15,
-      "parser_confidence": "high",
-      "parse_status": "parsed",
-      "warnings": [],
-      "status": "preserved"
-    },
-    {
-      "block_id": "ui_0002",
-      "block_type": "mdx_component",
-      "component_name": "Tip",
-      "raw": "<Tip>**Close contours = steep; wide contours = gentle.** Always read the contour interval and horizontal spacing to determine slope. Steep slopes require specialized grading (bench cuts, retaining walls, geotechnical analysis).</Tip>",
-      "raw_hash": "sha256:fafb7d0260bd1fac93f59809b0df6c944c0a90e9fc4ac856063e813cce6808a4",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: **Close contours = steep; wide contours = gentle.** Always read the contour interval and horizontal spacing to determine slope. Steep slopes require specialized grading (bench cuts, retaining walls, geotechnical analysis).\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:17461e1ead1af019a9a0db3b5a7ecde5544b8114cada353d2ad5b19972d83e86",
-      "props": {},
-      "props_json": {},
-      "props_text": null,
-      "children_raw": "**Close contours = steep; wide contours = gentle.** Always read the contour interval and horizontal spacing to determine slope. Steep slopes require specialized grading (bench cuts, retaining walls, geotechnical analysis).",
-      "children_text": "**Close contours = steep; wide contours = gentle.** Always read the contour interval and horizontal spacing to determine slope. Steep slopes require specialized grading (bench cuts, retaining walls, geotechnical analysis).",
-      "start_offset": 5800,
-      "end_offset": 6033,
-      "line_start": 33,
-      "line_end": 33,
-      "parser_confidence": "high",
-      "parse_status": "parsed",
-      "warnings": [],
-      "status": "preserved"
-    },
-    {
-      "block_id": "ui_0003",
-      "block_type": "mdx_component",
-      "component_name": "WikiMistakeList",
-      "raw": "<WikiMistakeList mistakes={[\"Reversing contour logic: stating closely-spaced contours indicate flat terrain (wrong) instead of steep (correct)\",\"Confusing slope percentage with slope ratio: a 1V:2H slope is 50% (not 2%)\",\"Assuming cut and fill are 1:1 equivleant; they are not — soil compacts differently when placed as fill\",\"Ignoring PD 1067 easements during grading design — fill and structures placed in easements violate water code\",\"Calculating slope as rise/run without multiplying by 100; slope is a percentage, not a simple ratio\"]} />",
-      "raw_hash": "sha256:bc8240c1fd6782b24726994ba42fe9865cac1b1b3222ba49f1fe7e7232f13d64",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: mistakes=\"{[\\\"Reversing contour logic: stating closely-spaced contours indicate flat terrain (wrong) instead of steep (correct)\\\",\\\"Confusing slope percentage with slope ratio: a 1V:2H slope is 50% (not 2%)\\\",\\\"Assuming cut and fill are 1:1 equivleant; they are not — soil compacts differently when placed as fill\\\",\\\"Ignoring PD 1067 easements during grading design — fill and structures placed in easements violate water code\\\",\\\"Calculating slope as rise/run without multiplying by 100; slope is a percentage, not a simple ratio\\\"]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:113b49bed662b1cbf7f82dcf22cf70c471b1c82b3cead1bef2fabe70a10a5bfa",
-      "props": {
-        "mistakes": "{[\"Reversing contour logic: stating closely-spaced contours indicate flat terrain (wrong) instead of steep (correct)\",\"Confusing slope percentage with slope ratio: a 1V:2H slope is 50% (not 2%)\",\"Assuming cut and fill are 1:1 equivleant; they are not — soil compacts differently when placed as fill\",\"Ignoring PD 1067 easements during grading design — fill and structures placed in easements violate water code\",\"Calculating slope as rise/run without multiplying by 100; slope is a percentage, not a simple ratio\"]}"
-      },
-      "props_json": {
-        "mistakes": "{[\"Reversing contour logic: stating closely-spaced contours indicate flat terrain (wrong) instead of steep (correct)\",\"Confusing slope percentage with slope ratio: a 1V:2H slope is 50% (not 2%)\",\"Assuming cut and fill are 1:1 equivleant; they are not — soil compacts differently when placed as fill\",\"Ignoring PD 1067 easements during grading design — fill and structures placed in easements violate water code\",\"Calculating slope as rise/run without multiplying by 100; slope is a percentage, not a simple ratio\"]}"
-      },
-      "props_text": "mistakes={[\"Reversing contour logic: stating closely-spaced contours indicate flat terrain (wrong) instead of steep (correct)\",\"Confusing slope percentage with slope ratio: a 1V:2H slope is 50% (not 2%)\",\"Assuming cut and fill are 1:1 equivleant; they are not — soil compacts differently when placed as fill\",\"Ignoring PD 1067 easements during grading design — fill and structures placed in easements violate water code\",\"Calculating slope as rise/run without multiplying by 100; slope is a percentage, not a simple ratio\"]}",
-      "children_raw": null,
-      "children_text": null,
-      "start_offset": 6566,
-      "end_offset": 7110,
-      "line_start": 43,
-      "line_end": 43,
-      "parser_confidence": "high",
-      "parse_status": "parsed",
-      "warnings": [],
-      "status": "preserved"
-    }
-  ],
+  "ui_block_count": 0,
+  "total_blocks": 0,
+  "blocks": [],
   "unknown_blocks": [],
   "unresolved_critical_blocks": [],
-  "ui_blocks_hash": "sha256:d86fe67df0aea96a9ef0f1d70678ea48724685a087ba1bee5c4fc877da728a05",
-  "normalized_content_hash_sha256": "sha256:63384a6fe4716dadd425e1e0c91f62a0b376986b6329bdbfcd63c6943ded308d"
+  "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
 }

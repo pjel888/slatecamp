@@ -1,7 +1,7 @@
 {
   "article_id": "df4b2a65-1d08-41b6-83c8-944df4d35938",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:d8445d9dfa6889aafea949501a7d9419bc19d611d7120d573bdd4359e1a4a7bc",
+  "linked_questions_hash": "sha256:31e431812b86baf51c1320013b0a57b85684e3cbf9af16f8bcaa7258da748ba1",
   "question_count": 10,
   "questions": [
     {
@@ -189,7 +189,7 @@
         "correct": "When selecting a proposal other than the lowest bid, the architect must provide clear justification based on the pre-established evaluation framework.",
         "takeaway": "Non-lowest bid recommendations require clear written justification based on pre-established criteria."
       },
-      "explanation": null,
+      "explanation": "Assumes lowest bid must always be selected; evaluation criteria may justify higher-priced bids. Wrongly conceals the rationale; Owner must understand the justification for non-lowest-bid selections. Fundamentally undermines integrity; Architect must apply fixed pre-bid criteria, not revise them post-bid. When selecting a proposal other than the lowest bid, the architect must provide clear justification based on the pre-established evaluation framework. Non-lowest bid recommendations require clear written justification based on pre-established criteria.",
       "code_citation": "UAP Doc 301",
       "bloom_level": "understand",
       "application_context": "client_scenario",
@@ -201,8 +201,8 @@
       "model_id": "ALE-PRAC-CTR-009-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:d976cc24566b3b03ae0a4ea08ac5373f65d54abcdb69bbd77b50ce1336687464"
+      "updated_at": "2026-05-06T15:09:25.350721+00:00",
+      "content_hash": "sha256:54db3261e19a5f4c09c359e801689e3e960a07090a12023c1a16d3363fd2d2ea"
     },
     {
       "question_id": "9124c3a1-056f-41c9-b9ba-6a437ce67af1",
@@ -239,7 +239,7 @@
         "correct": "The architect may recommend a higher-priced bid if the evaluation criteria—established before bid opening—support selection based on technical merit, qualifications, or methodology.",
         "takeaway": "Higher-priced bids may be recommended when pre-established criteria support selection on technical merit or qualifications."
       },
-      "explanation": null,
+      "explanation": "Incorrectly assumes lowest bid requirement; evaluation criteria may validly prioritize quality, experience, or capability. Uses personal preference, not objective criteria; recommendations must be justified by pre-established evaluation framework. Requires owner pre-approval; Architect autonomously makes recommendation based on established evaluation criteria. The architect may recommend a higher-priced bid if the evaluation criteria—established before bid opening—support selection based on technical merit, qualifications, or methodology. Higher-priced bids may be recommended when pre-established criteria support selection on technical merit or qualifications.",
       "code_citation": "UAP Doc 301",
       "bloom_level": "analyze",
       "application_context": "client_scenario",
@@ -251,8 +251,8 @@
       "model_id": "ALE-PRAC-CTR-009-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:29a7054464c441ef004f5b607257c11bbf6d3d9c3c6a284013f0ad1b1571c5b0"
+      "updated_at": "2026-05-06T15:09:25.486333+00:00",
+      "content_hash": "sha256:02905a83e06368396ea117ea48cdb588e2e4784f4b4ce0cc5c80e5d9f02ed8b8"
     },
     {
       "question_id": "ff9641df-b72b-429e-bde7-e91122852770",
@@ -339,7 +339,7 @@
         "correct": "Complete documentation of evaluation records demonstrates compliance with fair procurement practices and protects against bid protests.",
         "takeaway": "Comprehensive documentation of all proposals, methodology, scoring, and justification protects against protest."
       },
-      "explanation": null,
+      "explanation": "Omits critical supporting documentation; methodology and analysis justify the recommendation. Captures only financial data; documentation must include technical scores, qualifications, and compliance findings. Focuses only on rejected bidders; documentation must include all submissions and scoring data. Complete documentation of evaluation records demonstrates compliance with fair procurement practices and protects against bid protests. Comprehensive documentation of all proposals, methodology, scoring, and justification protects against protest.",
       "code_citation": "UAP Doc 301",
       "bloom_level": "apply",
       "application_context": "client_scenario",
@@ -351,8 +351,8 @@
       "model_id": "ALE-PRAC-CTR-009-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:0d01b47e82200a49966c1d441a7c74017ac87ab0babcb914b5386c7a8aefd6ef"
+      "updated_at": "2026-05-06T15:09:25.622054+00:00",
+      "content_hash": "sha256:b1c8768ea016e571db2aa1a0146853a83ac40d2cf87371e8d8584351cb905182"
     },
     {
       "question_id": "3c59790f-1023-4ec7-baf0-c3d766f4bed1",

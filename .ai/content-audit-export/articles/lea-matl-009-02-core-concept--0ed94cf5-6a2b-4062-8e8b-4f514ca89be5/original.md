@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Matl 009 02 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 ## Learning Goal
 
@@ -13,11 +22,11 @@ The LEA emphasizes major divisions relevant to building construction: Division 0
 In Philippine practice, the 3-part format is increasingly adopted by architects in private projects and recommended by the Board of Architecture in educational guidelines. DPWH Standard Specifications (Volumes II and III) do not strictly follow CSI format but share the same logical structure (General, Products/Materials, Execution/Construction). Architects must recognize both systems and be able to translate specifications between them when coordinating with government-regulated projects.
 
 
-<ArticleMedia id="media-masterformat-divisions-chart" layout="single" type="image" status="placeholder"
-  alt="Chart showing all 50 CSI MasterFormat divisions with numbers, titles, and representative work sections for each division"
-  caption="Future chart: CSI MasterFormat divisions 01–50 — numbers, titles, and sample work sections"
-  suggestedAsset="Reference chart or table of MasterFormat divisions with section examples"
-  placementIntent="Provides navigation reference for locating specification sections" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-masterformat-divisions-chart", layout="single", type="image", status="placeholder", alt="Chart showing all 50 CSI MasterFormat divisions with numbers, titles, and representative work sections for each division", caption="Future chart: CSI MasterFormat divisions 01–50 — numbers, titles, and sample work sections", suggestedAsset="Reference chart or table of MasterFormat divisions with section examples", placementIntent="Provides navigation reference for locating specification sections"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Provisions
 
@@ -43,11 +52,11 @@ The adaptation of CSI to Philippine practice requires sensitivity to tropical co
 The 3-part format has become standard in private practice quality specifications, but DPWH does not require strict adherence. When coordinating across private and public projects, architects must be able to reformat specifications between systems. Understanding CSI structure demonstrates specification literacy and is tested on the LEA.
 
 
-<ArticleMedia id="media-masterformat-navigation-guide" layout="single" type="image" status="placeholder"
-  alt="Navigation guide for CSI MasterFormat showing how to find the correct division by material category with example materials mapped to division numbers"
-  caption="Future chart: CSI MasterFormat navigation guide — materials mapped to division numbers"
-  suggestedAsset="Reference chart or decision tree for MasterFormat division lookup"
-  placementIntent="Helps learners locate specification sections for any material" />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-masterformat-navigation-guide", layout="single", type="image", status="placeholder", alt="Navigation guide for CSI MasterFormat showing how to find the correct division by material category with example materials mapped to division numbers", caption="Future chart: CSI MasterFormat navigation guide — materials mapped to division numbers", suggestedAsset="Reference chart or decision tree for MasterFormat division lookup", placementIntent="Helps learners locate specification sections for any material"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 ## How It's Tested
 
 _Pattern 1 — Division Identification:_ The exam presents a specification item and asks which CSI division it belongs to. Example: "Furnish and install fiberglass-reinforced polyester waterproofing membrane over concrete deck, with 15-year warranty." Answer: Division 07 (Thermal & Moisture Protection), not Division 03 (Concrete). The concrete is Part 2 (Products); the waterproofing is Part 3 (Execution).
@@ -58,17 +67,31 @@ _Pattern 3 — Cross-Division Coordination:_ The exam presents a specification c
 
 _Pattern 4 — Philippine Adaptation:_ The exam presents a CSI standard specification and asks what modifications are necessary for Philippine tropical climate. Example: Paint specification for interior walls should add requirements for mold/mildew resistance (tropical humidity), UV stability (high light levels), and washability (tropical pollution). The 3-part format provides the structure; Philippine practice requires customization.
 
-<Tip>
-Memory aid for CSI divisions: Divisions 00-01 are administrative. Divisions 02-09 are the "core construction divisions" most tested on the LEA. Divisions 10-49 cover building systems (interior construction, mechanical, electrical, plumbing, fire protection). Master the core divisions 03-09 first. Always remember: 03=Concrete, 04=Masonry, 05=Metals, 06=Wood, 07=Thermal & Moisture, 08=Openings, 09=Finishes.
-</Tip>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Memory aid for CSI divisions: Divisions 00-01 are administrative. Divisions 02-09 are the "core construction divisions" most tested on the LEA. Divisions 10-49 cover building systems (interior construction, mechanical, electrical, plumbing, fire protection). Master the core divisions 03-09 first. Always remember: 03=Concrete, 04=Masonry, 05=Metals, 06=Wood, 07=Thermal & Moisture, 08=Openings, 09=Finishes.
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
-<WikiMistakeCard mistake="Confusing 'Division 08: Openings' (doors, windows, hardware) with 'Division 09: Finishes' (paint, flooring, ceilings). Students put window specifications in Division 09." correction="Division 08 is specifically doors, windows, glazing, and hardware. Division 09 is interior finishes like paint, flooring, and ceiling systems. Windows belong in Division 08, even if they involve finish work." />
+[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Confusing 'Division 08: Openings' (doors, windows, hardware) with 'Division 09: Finishes' (paint, flooring, ceilings). Students put window specifications in Division 09.", correction="Division 08 is specifically doors, windows, glazing, and hardware. Division 09 is interior finishes like paint, flooring, and ceiling systems. Windows belong in Division 08, even if they involve finish work."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeCard mistake="Placing waterproofing specifications in Division 03 (Concrete) instead of Division 07 (Thermal & Moisture Protection). Students think 'waterproofing concrete means Division 03'." correction="Waterproofing membranes, sealants, and moisture control systems belong in Division 07, even if they're applied over concrete or masonry. Division 03 specifies the concrete itself; Division 07 specifies the protection layer." />
+[SLATECAMP_UI_BLOCK:ui_0005 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Placing waterproofing specifications in Division 03 (Concrete) instead of Division 07 (Thermal & Moisture Protection). Students think 'waterproofing concrete means Division 03'.", correction="Waterproofing membranes, sealants, and moisture control systems belong in Division 07, even if they're applied over concrete or masonry. Division 03 specifies the concrete itself; Division 07 specifies the protection layer."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeList mistakes={["Mixing 3-part format: placing product specifications (Part 2 content) in Part 1 General or mixing execution procedures (Part 3) with product descriptions (Part 2)", "Failing to reference coordination between divisions (e.g., Part 1 of Division 03 must reference Division 07 waterproofing for timing and surface requirements)", "Assuming CSI structure is mandatory in Philippine projects (DPWH does not require CSI; understanding CSI is for professional literacy)", "Not customizing CSI specifications for tropical climate (waterproofing, mold resistance, termite protection are Philippine additions)", "Omitting Part 1 General in proprietary or quick specifications (Part 1 is essential for quality standards, testing protocols, and submittals)"]} />
+[SLATECAMP_UI_BLOCK:ui_0006 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Mixing 3-part format: placing product specifications (Part 2 content) in Part 1 General or mixing execution procedures (Part 3) with product descriptions (Part 2)\", \"Failing to reference coordination between divisions (e.g., Part 1 of Division 03 must reference Division 07 waterproofing for timing and surface requirements)\", \"Assuming CSI structure is mandatory in Philippine projects (DPWH does not require CSI; understanding CSI is for professional literacy)\", \"Not customizing CSI specifications for tropical climate (waterproofing, mold resistance, termite protection are Philippine additions)\", \"Omitting Part 1 General in proprietary or quick specifications (Part 1 is essential for quality standards, testing protocols, and submittals)\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 

@@ -113,13 +113,13 @@ Extracted summary:
 - Props: (none)
 - Text: **LEA Pattern:** A floor plan or spatial diagram is shown and you must identify the type of spatial organization (centralized, linear, radial, clustered, grid). Look for the organizing geometry — the path or point that anchors the arrangement.
 [/SLATECAMP_UI_BLOCK]
-"A community center with a temporary wooden stage serving barangay meetings is classified as **Group H**, but if it had a permanent concrete stage with theater seating, it would be **Group C** (ERR-DSGN-005)." 
+"A community center with a temporary wooden stage serving barangay meetings is classified as **Group H**, but if it had a permanent concrete stage with theater seating, it would be **Group C** (ERR-DSGN-005)."
 
 **Pattern 2: Occupant Load and Exit Capacity**
 "A 275-sqm multi-purpose hall with folding chairs (1.1 sqm/person) has an occupant load of **250 persons**. The minimum required aggregate exit width is **1,250 mm** (250 × 5.0 mm)."
 
 **Pattern 3: Chair Storage and Spatial Planning**
-"A hall plans to store 200 folding chairs. The minimum storage area required is **20 sqm** (200 × 0.1)." 
+"A hall plans to store 200 folding chairs. The minimum storage area required is **20 sqm** (200 × 0.1)."
 
 > **Memory Rule:** Group H = standing 0.65 sqm/person, seated 1.1 sqm/person. Stage height 600–750 mm. Exit width factor = 5.0 mm/person per Table VIII-3. Chair storage = 0.1 sqm/chair.
 

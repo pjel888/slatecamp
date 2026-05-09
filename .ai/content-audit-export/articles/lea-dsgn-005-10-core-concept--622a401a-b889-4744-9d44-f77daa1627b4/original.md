@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Dsgn 005 10 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 
 ## Learning Goal
@@ -9,9 +18,17 @@ Multi-purpose halls and community centers are classified as **Group H (Assembly)
 
 ## Core Concept
 
-<Tip>Design principles tested on the LEA focus on the relationship between form and space. Understand how primary elements (point, line, plane, volume) generate architectural form and how spatial organization types (centralized, linear, radial, clustered, grid) shape building layout.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Design principles tested on the LEA focus on the relationship between form and space. Understand how primary elements (point, line, plane, volume) generate architectural form and how spatial organization types (centralized, linear, radial, clustered, grid) shape building layout.
+[/SLATECAMP_UI_BLOCK]
 
-<Tip>Design principles tested on the LEA focus on the relationship between form and space. Understand how primary elements (point, line, plane, volume) generate architectural form and how spatial organization types (centralized, linear, radial, clustered, grid) shape building layout.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Design principles tested on the LEA focus on the relationship between form and space. Understand how primary elements (point, line, plane, volume) generate architectural form and how spatial organization types (centralized, linear, radial, clustered, grid) shape building layout.
+[/SLATECAMP_UI_BLOCK]
 
 Multi-purpose halls are **Group H (Assembly)** occupancies when designed for large-scale public gatherings with standing or chair-based configurations. If a permanent stage is integral to the design (as in a theater or auditorium), the venue may be classified as **Group C**.
 
@@ -32,15 +49,27 @@ Multi-purpose halls are **Group H (Assembly)** occupancies when designed for lar
 - **Exit Width:** Minimum **5.0 mm per occupant** for level components (assembly) per **PD 1096 Rule VIII Table VIII-3**.
 - **Number of Exits:** A minimum of **two exits** is required when the occupant load exceeds **200** or the travel distance to an exit exceeds **20 meters** per **Rule VIII Section 1007**.
 - **Travel Distance:** Shall not exceed **60 meters** in sprinklered buildings or **45 meters** in non-sprinklered buildings.
-<ArticleMedia id="media-lea-dsgn-005-10-core-concept" type="image" caption="Multi-Purpose Hall — Assembly Occupancy Egress Diagram" description="Floor plan of a multi-purpose hall showing flexible seating configurations, stage area, and egress paths. Annotated with occupant load calculation, exit width (7.6 mm/person), travel distance limits, and dual exit requirement at 50+ occupancy." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0003 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-dsgn-005-10-core-concept", type="image", caption="Multi-Purpose Hall — Assembly Occupancy Egress Diagram", description="Floor plan of a multi-purpose hall showing flexible seating configurations, stage area, and egress paths. Annotated with occupant load calculation, exit width (7.6 mm/person), travel distance limits, and dual exit requirement at 50+ occupancy.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
 ## Key Provisions
 
-<Example>A centralized organization places a dominant central space around which secondary spaces are grouped. Examples: the Pantheon (rotunda), Chartres Cathedral (central nave with radiating chapels).</Example>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Example" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: A centralized organization places a dominant central space around which secondary spaces are grouped. Examples: the Pantheon (rotunda), Chartres Cathedral (central nave with radiating chapels).
+[/SLATECAMP_UI_BLOCK]
 
-<Example>A centralized organization places a dominant central space around which secondary spaces are grouped. Examples: the Pantheon (rotunda), Chartres Cathedral (central nave with radiating chapels).</Example>
+[SLATECAMP_UI_BLOCK:ui_0005 component="Example" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: A centralized organization places a dominant central space around which secondary spaces are grouped. Examples: the Pantheon (rotunda), Chartres Cathedral (central nave with radiating chapels).
+[/SLATECAMP_UI_BLOCK]
 
 **Occupant Load Determination (Group H):**
 
@@ -74,22 +103,34 @@ Multi-purpose halls are ubiquitous community infrastructure serving celebrations
 
 **Pattern 1: Occupancy Classification (Group C vs. H)**
 
-<ExamTip>**LEA Pattern:** A floor plan or spatial diagram is shown and you must identify the type of spatial organization (centralized, linear, radial, clustered, grid). Look for the organizing geometry — the path or point that anchors the arrangement.</ExamTip>
-<ExamTip>**LEA Pattern:** A floor plan or spatial diagram is shown and you must identify the type of spatial organization (centralized, linear, radial, clustered, grid). Look for the organizing geometry — the path or point that anchors the arrangement.</ExamTip>
-"A community center with a temporary wooden stage serving barangay meetings is classified as **Group H**, but if it had a permanent concrete stage with theater seating, it would be **Group C** (ERR-DSGN-005)." 
+[SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **LEA Pattern:** A floor plan or spatial diagram is shown and you must identify the type of spatial organization (centralized, linear, radial, clustered, grid). Look for the organizing geometry — the path or point that anchors the arrangement.
+[/SLATECAMP_UI_BLOCK]
+[SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **LEA Pattern:** A floor plan or spatial diagram is shown and you must identify the type of spatial organization (centralized, linear, radial, clustered, grid). Look for the organizing geometry — the path or point that anchors the arrangement.
+[/SLATECAMP_UI_BLOCK]
+"A community center with a temporary wooden stage serving barangay meetings is classified as **Group H**, but if it had a permanent concrete stage with theater seating, it would be **Group C** (ERR-DSGN-005)."
 
 **Pattern 2: Occupant Load and Exit Capacity**
 "A 275-sqm multi-purpose hall with folding chairs (1.1 sqm/person) has an occupant load of **250 persons**. The minimum required aggregate exit width is **1,250 mm** (250 × 5.0 mm)."
 
 **Pattern 3: Chair Storage and Spatial Planning**
-"A hall plans to store 200 folding chairs. The minimum storage area required is **20 sqm** (200 × 0.1)." 
+"A hall plans to store 200 folding chairs. The minimum storage area required is **20 sqm** (200 × 0.1)."
 
 > **Memory Rule:** Group H = standing 0.65 sqm/person, seated 1.1 sqm/person. Stage height 600–750 mm. Exit width factor = 5.0 mm/person per Table VIII-3. Chair storage = 0.1 sqm/chair.
 
 ---
 
 **Exam Tip — ERR-DSGN-026:** Multi-purpose halls without fixed stages = Group H (assembly). With permanent stage = Group C. Flexible furniture does not change classification — only the presence of a fixed stage matters.
-<ArticleMedia id="media-lea-dsgn-005-10-core-concept" type="image" caption="Multi-Purpose Hall — Flexible Seating and Egress Configuration" description="Floor plan diagram of a multi-purpose hall showing three configurations: banquet (round tables), theater (rows), and classroom (tables with chairs). Each configuration annotated with net floor area, occupant load, and exit width requirement at 7.6 mm/person." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0008 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-dsgn-005-10-core-concept", type="image", caption="Multi-Purpose Hall — Flexible Seating and Egress Configuration", description="Floor plan diagram of a multi-purpose hall showing three configurations: banquet (round tables), theater (rows), and classroom (tables with chairs). Each configuration annotated with net floor area, occupant load, and exit width requirement at 7.6 mm/person.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Cross-References
 

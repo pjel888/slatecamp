@@ -1,9 +1,59 @@
 {
   "article_id": "85529595-d219-4b10-9bd9-383d125da8c3",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:da88efbbcaaf475b50d1b5a7e3ba6ef5e37cf713c12bb00fe399e920e95e113a",
+  "linked_questions_hash": "sha256:2068a343acfbf2411a630b06c7768467bbacfaadf66d903b6310c1f75529d8cc",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "5989f6c2-f999-42dc-bd10-245de16b7af4",
+      "article_id": "85529595-d219-4b10-9bd9-383d125da8c3",
+      "topic_id": "010921c9-91f2-475a-aa4f-6cb9babba0e5",
+      "text": "What is 'scope' in architectural project management?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The building's physical size, including all dimensions and spatial configurations as outlined in the initial design brief"
+        },
+        {
+          "id": "b",
+          "text": "The defined set of deliverables and services"
+        },
+        {
+          "id": "c",
+          "text": "The construction cost, encompassing all budgetary considerations and financial allocations for the project"
+        },
+        {
+          "id": "d",
+          "text": "The project location, specifying the geographical site and its contextual influences on the design"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Confuses scope with building size; scope is about deliverables and services, not building dimensions.",
+        "c": "Confuses scope with budget; scope defines what services are included, not how much the construction costs.",
+        "d": "Confuses scope with location; scope defines deliverables and services, not where the building is built.",
+        "correct": "Scope is the defined set of deliverables and services—project phases, deliverables per phase, included and excluded services, and client responsibilities.",
+        "takeaway": "Scope is what the architect will deliver and provide, not the building size, cost, or location."
+      },
+      "explanation": "Confuses scope with building size; scope is about deliverables and services, not building dimensions. Confuses scope with budget; scope defines what services are included, not how much the construction costs. Confuses scope with location; scope defines deliverables and services, not where the building is built. Scope is the defined set of deliverables and services—project phases, deliverables per phase, included and excluded services, and client responsibilities. Scope is what the architect will deliver and provide, not the building size, cost, or location.",
+      "code_citation": "Project Management Standards",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-019-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-05-06T15:39:30.048986+00:00",
+      "content_hash": "sha256:bc83bdc72b5740b47d5e1c9056eedcff9a9fbb7bf9babb14e24422117638f12c"
+    },
     {
       "question_id": "c94b3955-4472-4949-8a0e-3cafc29bf40d",
       "article_id": "85529595-d219-4b10-9bd9-383d125da8c3",
@@ -403,56 +453,6 @@
       "created_at": "2026-03-23T19:27:49.529462+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:7be6d2f9a4921e3b32572a872f7a7f08e4420714ad2594af5775968001c60945"
-    },
-    {
-      "question_id": "5989f6c2-f999-42dc-bd10-245de16b7af4",
-      "article_id": "85529595-d219-4b10-9bd9-383d125da8c3",
-      "topic_id": "010921c9-91f2-475a-aa4f-6cb9babba0e5",
-      "text": "What is 'scope' in architectural project management?",
-      "options": [
-        {
-          "id": "a",
-          "text": "The building's physical size, including all dimensions and spatial configurations as outlined in the initial design brief"
-        },
-        {
-          "id": "b",
-          "text": "The defined set of deliverables and services"
-        },
-        {
-          "id": "c",
-          "text": "The construction cost, encompassing all budgetary considerations and financial allocations for the project"
-        },
-        {
-          "id": "d",
-          "text": "The project location, specifying the geographical site and its contextual influences on the design"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Confuses scope with building size; scope is about deliverables and services, not building dimensions.",
-        "c": "Confuses scope with budget; scope defines what services are included, not how much the construction costs.",
-        "d": "Confuses scope with location; scope defines deliverables and services, not where the building is built.",
-        "correct": "Scope is the defined set of deliverables and services—project phases, deliverables per phase, included and excluded services, and client responsibilities.",
-        "takeaway": "Scope is what the architect will deliver and provide, not the building size, cost, or location."
-      },
-      "explanation": null,
-      "code_citation": "Project Management Standards",
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [],
-      "difficulty": 0.3,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PRAC-FRM-019-001",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:49.529462+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:656f34aa72cb7b37a4c4462bb873bb1f054b3f32f5a1bfdf60e64bfa615b0014"
     },
     {
       "question_id": "c13179b4-74c1-4e09-8272-54fa794e29d9",

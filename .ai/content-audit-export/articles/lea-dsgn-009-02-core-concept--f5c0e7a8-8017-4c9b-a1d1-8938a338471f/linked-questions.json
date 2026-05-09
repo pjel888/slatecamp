@@ -1,9 +1,59 @@
 {
   "article_id": "f5c0e7a8-8017-4c9b-a1d1-8938a338471f",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:74221af68519d20a291d8a8259f2a01b9febfa25c50910802d9c8c81045ad0a1",
+  "linked_questions_hash": "sha256:71c4bce02efac8e25b7e8bd72869be1e623a35856b2dfb5a98b6776186fbbd88",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "77f9ca20-f908-4b1d-846d-951099e0690c",
+      "article_id": "f5c0e7a8-8017-4c9b-a1d1-8938a338471f",
+      "topic_id": "11a1bb46-a07b-4dc2-abbb-211855270e59",
+      "text": "Compare Design A (1:10 WFR, equal windows on 4 sides) and Design B (1:10 WFR, windows only on North and South facades). Which is preferred for the Philippines?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Design A; it provides uniform light from all directions and maximizes daylighting flexibility."
+        },
+        {
+          "id": "b",
+          "text": "Design B; it minimizes heat gain by eliminating East/West glazing."
+        },
+        {
+          "id": "c",
+          "text": "Design A; it is easier to comply with code and simplifies window scheduling documentation."
+        },
+        {
+          "id": "d",
+          "text": "Design B; but it is non-compliant because it lacks East/West light required by the code."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Uniform light from all sides includes uncontrollable heat gain from the West.",
+        "c": "Both have the same WFR (1:10), so both comply with the minimum area requirement.",
+        "d": "Code does not require windows on all sides; it only requires a total area relative to the floor.",
+        "correct": "Design B follows passive cooling principles by placing windows on the North/South sides, which are easier to shade, while avoiding the harsh East/West solar heat gain.",
+        "takeaway": "Passive design favors North-South orientation for glazing in the Philippines."
+      },
+      "explanation": "Uniform light from all sides includes uncontrollable heat gain from the West. Both have the same WFR (1:10), so both comply with the minimum area requirement. Code does not require windows on all sides; it only requires a total area relative to the floor. Design B follows passive cooling principles by placing windows on the North/South sides, which are easier to shade, while avoiding the harsh East/West solar heat gain. Passive design favors North-South orientation for glazing in the Philippines.",
+      "code_citation": "PD 1096 Section 808, Tropical Passive Design",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-009-02-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:13.25953+00:00",
+      "updated_at": "2026-05-06T13:20:02.89222+00:00",
+      "content_hash": "sha256:c2a80904c094a54e76472f86841ff27b5e839866f1e2eb8104e9d0d6bf6301be"
+    },
     {
       "question_id": "a86fbe5a-9226-473c-93b0-56c54b183167",
       "article_id": "f5c0e7a8-8017-4c9b-a1d1-8938a338471f",
@@ -403,56 +453,6 @@
       "created_at": "2026-03-23T19:27:13.25953+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:3e629500cc12626bffda4abc31749db523ff7db4b5914633d1436a6d0c784025"
-    },
-    {
-      "question_id": "77f9ca20-f908-4b1d-846d-951099e0690c",
-      "article_id": "f5c0e7a8-8017-4c9b-a1d1-8938a338471f",
-      "topic_id": "11a1bb46-a07b-4dc2-abbb-211855270e59",
-      "text": "Compare Design A (1:10 WFR, equal windows on 4 sides) and Design B (1:10 WFR, windows only on North and South facades). Which is preferred for the Philippines?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Design A; it provides uniform light from all directions and maximizes daylighting flexibility."
-        },
-        {
-          "id": "b",
-          "text": "Design B; it minimizes heat gain by eliminating East/West glazing."
-        },
-        {
-          "id": "c",
-          "text": "Design A; it is easier to comply with code and simplifies window scheduling documentation."
-        },
-        {
-          "id": "d",
-          "text": "Design B; but it is non-compliant because it lacks East/West light required by the code."
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Uniform light from all sides includes uncontrollable heat gain from the West.",
-        "c": "Both have the same WFR (1:10), so both comply with the minimum area requirement.",
-        "d": "Code does not require windows on all sides; it only requires a total area relative to the floor.",
-        "correct": "Design B follows passive cooling principles by placing windows on the North/South sides, which are easier to shade, while avoiding the harsh East/West solar heat gain.",
-        "takeaway": "Passive design favors North-South orientation for glazing in the Philippines."
-      },
-      "explanation": null,
-      "code_citation": "PD 1096 Section 808, Tropical Passive Design",
-      "bloom_level": "analyze",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.9,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-DSGN-009-02-009",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:13.25953+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:03238893f65a6385f35452113f7ae97f69e3b55b214a0455a7b9778e1f240c53"
     },
     {
       "question_id": "3a026507-6375-45fb-80ff-90df74ee593b",

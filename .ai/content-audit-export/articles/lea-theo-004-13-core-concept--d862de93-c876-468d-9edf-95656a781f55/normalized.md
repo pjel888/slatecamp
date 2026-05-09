@@ -321,7 +321,7 @@ Extracted summary:
 - Text: (none detected)
 [/SLATECAMP_UI_BLOCK]
 Extracted summary:
-- Props: 
+- Props:
 - Text: Sun shading devices reduce solar heat gain by 40–70% without sacrificing daylighting; they are essential tropical architecture elements. The **brise-soleil** (sun breaker) and related devices—horizont
 
 ## Common Mistakes

@@ -1,9 +1,111 @@
 {
   "article_id": "889fae0f-f8dd-4b3c-9ddf-4f9d32742282",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:cdddb50df8db7ecef93d560c9630e7fd7ad8d8e2db868143a593b0368d1c79a7",
+  "linked_questions_hash": "sha256:c7846123c18016abcc0a3291ff660c7256a7e733df24f0a955df7bb30629e902",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "61f8acf9-e047-4376-a838-5629f183ecc6",
+      "article_id": "889fae0f-f8dd-4b3c-9ddf-4f9d32742282",
+      "topic_id": "e57c9618-6426-4b81-829d-78a6d6501629",
+      "text": "A detail marker shown as a circled number (e.g., ⊙ 3) is placed on an elevation drawing. What is the purpose of this symbol?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To indicate a room number in the building, which is not the typical use of a detail marker"
+        },
+        {
+          "id": "b",
+          "text": "To reference an enlarged detail drawing; the detail will be titled 'Detail 3' and drawn at a larger scale to show construction methods and material assembly"
+        },
+        {
+          "id": "c",
+          "text": "To show the location of a mechanical system component, which is not the purpose of this symbol"
+        },
+        {
+          "id": "d",
+          "text": "To mark windows or doors that require special ordering, which is not the standard use of a detail marker"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrect. Room numbers are noted separately, not with detail markers.",
+        "b": "Correct. You understand detail markers as references to enlarged construction details.",
+        "c": "Incorrect. Mechanical components are noted with specific mechanical symbols, not detail markers.",
+        "d": "Incorrect. Special ordering notes are annotations or schedules, not detail markers.",
+        "correct": "Detail markers are references to enlarged detail drawings. A detail marker on a plan or elevation (e.g., ⊙ 3) corresponds to a detail drawing labeled 'Detail 3', typically drawn at 1:20 or 1:10 scale to show construction assembly, material connections, and detailing that cannot be clearly shown at the overall drawing scale.",
+        "takeaway": "When you see a detail marker on a drawing, locate the corresponding detail drawing to understand the construction assembly at that location. Details are essential for contractors to understand exactly how materials connect and are assembled."
+      },
+      "explanation": "Incorrect. Room numbers are noted separately, not with detail markers. Correct. You understand detail markers as references to enlarged construction details. Incorrect. Mechanical components are noted with specific mechanical symbols, not detail markers. Incorrect. Special ordering notes are annotations or schedules, not detail markers. Detail markers are references to enlarged detail drawings. A detail marker on a plan or elevation (e.g., ⊙ 3) corresponds to a detail drawing labeled 'Detail 3', typically drawn at 1:20 or 1:10 scale to show construction assembly, material connections, and detailing that cannot be clearly shown at the overall drawing scale. When you see a detail marker on a drawing, locate the corresponding detail drawing to understand the construction assembly at that location. Details are essential for contractors to understand exactly how materials connect and are assembled.",
+      "code_citation": "Architectural drawing conventions",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-011-05-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:18.048561+00:00",
+      "updated_at": "2026-05-06T13:20:03.159252+00:00",
+      "content_hash": "sha256:1e79a716da66a0eda2ce53479e240dda8076819d65ee62ebb31809bc742fb443"
+    },
+    {
+      "question_id": "d7ff630d-006c-4a1a-80b4-d7ab3a0c0014",
+      "article_id": "889fae0f-f8dd-4b3c-9ddf-4f9d32742282",
+      "topic_id": "e57c9618-6426-4b81-829d-78a6d6501629",
+      "text": "An architectural drawing set includes a legend defining all symbols used. A floor plan uses symbols not found in the legend. What concern does this raise?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No concern; architects can use any symbols they choose as long as the drawing intent is clear, which is not a best practice"
+        },
+        {
+          "id": "b",
+          "text": "High concern; undefined symbols create ambiguity and are difficult for builders and inspectors to interpret; all symbols must be defined in a legend"
+        },
+        {
+          "id": "c",
+          "text": "Minor concern; the contractor can request clarification if needed, though this can delay the project"
+        },
+        {
+          "id": "d",
+          "text": "The symbols may be standard and do not require definition, which can lead to misunderstandings"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrect. Symbols must be standardized and defined; undefined symbols create misunderstandings.",
+        "b": "Correct. You recognized the importance of comprehensive symbol definition.",
+        "c": "Incorrect. Requiring contractor clarification on undefined symbols is a professional error that can lead to mistakes.",
+        "d": "Incorrect. Even standard symbols should be briefly defined in a legend to ensure clarity.",
+        "correct": "Architectural drawings must include a legend defining all symbols. Undefined symbols create confusion and may lead to construction errors, delays, and code violations. A clear legend ensures that all parties (contractors, inspectors, engineers) understand the drawing intent without ambiguity.",
+        "takeaway": "Always include a legend on drawing sheets that defines all symbols, abbreviations, and material notations. This is a professional requirement and ensures drawing clarity and construction accuracy."
+      },
+      "explanation": "Incorrect. Symbols must be standardized and defined; undefined symbols create misunderstandings. Correct. You recognized the importance of comprehensive symbol definition. Incorrect. Requiring contractor clarification on undefined symbols is a professional error that can lead to mistakes. Incorrect. Even standard symbols should be briefly defined in a legend to ensure clarity. Architectural drawings must include a legend defining all symbols. Undefined symbols create confusion and may lead to construction errors, delays, and code violations. A clear legend ensures that all parties (contractors, inspectors, engineers) understand the drawing intent without ambiguity. Always include a legend on drawing sheets that defines all symbols, abbreviations, and material notations. This is a professional requirement and ensures drawing clarity and construction accuracy.",
+      "code_citation": "Professional drawing standards; AIA guidelines",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-011-05-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:18.048561+00:00",
+      "updated_at": "2026-05-06T13:20:03.284651+00:00",
+      "content_hash": "sha256:0d32d6317b89df98355a48dc6f84e7fc2717ab321f1cf94910f56ebab92fd784"
+    },
     {
       "question_id": "07a7f56b-61b7-4377-92fc-50283e74869b",
       "article_id": "889fae0f-f8dd-4b3c-9ddf-4f9d32742282",
@@ -158,57 +260,6 @@
       "content_hash": "sha256:dc01ba50e0b2ecf6807cd8a61d30e1f91fa17b4eacba736205fd4c303cfe1afe"
     },
     {
-      "question_id": "61f8acf9-e047-4376-a838-5629f183ecc6",
-      "article_id": "889fae0f-f8dd-4b3c-9ddf-4f9d32742282",
-      "topic_id": "e57c9618-6426-4b81-829d-78a6d6501629",
-      "text": "A detail marker shown as a circled number (e.g., ⊙ 3) is placed on an elevation drawing. What is the purpose of this symbol?",
-      "options": [
-        {
-          "id": "a",
-          "text": "To indicate a room number in the building, which is not the typical use of a detail marker"
-        },
-        {
-          "id": "b",
-          "text": "To reference an enlarged detail drawing; the detail will be titled 'Detail 3' and drawn at a larger scale to show construction methods and material assembly"
-        },
-        {
-          "id": "c",
-          "text": "To show the location of a mechanical system component, which is not the purpose of this symbol"
-        },
-        {
-          "id": "d",
-          "text": "To mark windows or doors that require special ordering, which is not the standard use of a detail marker"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Incorrect. Room numbers are noted separately, not with detail markers.",
-        "b": "Correct. You understand detail markers as references to enlarged construction details.",
-        "c": "Incorrect. Mechanical components are noted with specific mechanical symbols, not detail markers.",
-        "d": "Incorrect. Special ordering notes are annotations or schedules, not detail markers.",
-        "correct": "Detail markers are references to enlarged detail drawings. A detail marker on a plan or elevation (e.g., ⊙ 3) corresponds to a detail drawing labeled 'Detail 3', typically drawn at 1:20 or 1:10 scale to show construction assembly, material connections, and detailing that cannot be clearly shown at the overall drawing scale.",
-        "takeaway": "When you see a detail marker on a drawing, locate the corresponding detail drawing to understand the construction assembly at that location. Details are essential for contractors to understand exactly how materials connect and are assembled."
-      },
-      "explanation": null,
-      "code_citation": "Architectural drawing conventions",
-      "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.7,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-DSGN-011-05-006",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:18.048561+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:b67dd632cc4c18121e33a4f3be924d1edfb5795661244cd93152d51e73f0453a"
-    },
-    {
       "question_id": "3c199d9d-a9b8-4efe-aebf-58f19701a4c8",
       "article_id": "889fae0f-f8dd-4b3c-9ddf-4f9d32742282",
       "topic_id": "e57c9618-6426-4b81-829d-78a6d6501629",
@@ -309,57 +360,6 @@
       "created_at": "2026-03-23T19:27:18.048561+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:85831cc507a39ee86117732c48ff6f030eaea08f730555363ad34ba96d551c2a"
-    },
-    {
-      "question_id": "d7ff630d-006c-4a1a-80b4-d7ab3a0c0014",
-      "article_id": "889fae0f-f8dd-4b3c-9ddf-4f9d32742282",
-      "topic_id": "e57c9618-6426-4b81-829d-78a6d6501629",
-      "text": "An architectural drawing set includes a legend defining all symbols used. A floor plan uses symbols not found in the legend. What concern does this raise?",
-      "options": [
-        {
-          "id": "a",
-          "text": "No concern; architects can use any symbols they choose as long as the drawing intent is clear, which is not a best practice"
-        },
-        {
-          "id": "b",
-          "text": "High concern; undefined symbols create ambiguity and are difficult for builders and inspectors to interpret; all symbols must be defined in a legend"
-        },
-        {
-          "id": "c",
-          "text": "Minor concern; the contractor can request clarification if needed, though this can delay the project"
-        },
-        {
-          "id": "d",
-          "text": "The symbols may be standard and do not require definition, which can lead to misunderstandings"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Incorrect. Symbols must be standardized and defined; undefined symbols create misunderstandings.",
-        "b": "Correct. You recognized the importance of comprehensive symbol definition.",
-        "c": "Incorrect. Requiring contractor clarification on undefined symbols is a professional error that can lead to mistakes.",
-        "d": "Incorrect. Even standard symbols should be briefly defined in a legend to ensure clarity.",
-        "correct": "Architectural drawings must include a legend defining all symbols. Undefined symbols create confusion and may lead to construction errors, delays, and code violations. A clear legend ensures that all parties (contractors, inspectors, engineers) understand the drawing intent without ambiguity.",
-        "takeaway": "Always include a legend on drawing sheets that defines all symbols, abbreviations, and material notations. This is a professional requirement and ensures drawing clarity and construction accuracy."
-      },
-      "explanation": null,
-      "code_citation": "Professional drawing standards; AIA guidelines",
-      "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.7,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-DSGN-011-05-008",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:18.048561+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:42d2268d3ef25eeb200c7bcc81de7b24dbb45e4ef5f9c04dfffadd37fcbef20b"
     },
     {
       "question_id": "af91097a-3d3a-4e1a-855b-ffb64f9fd043",

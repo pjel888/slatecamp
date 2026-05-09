@@ -1,9 +1,159 @@
 {
   "article_id": "39796d5a-c2fd-467f-8891-9e7b32091617",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:61951ec06619cd576f4cc2be051cbc5d0f7d1886d6f35f8e849eddec31fefabb",
+  "linked_questions_hash": "sha256:9c06ce952cb493f97e9b0c7175efc5d041605ed28f160a1a6f89fef63bb3d8a2",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "6ee80a53-2217-46fa-b6b4-e1a61da2c28f",
+      "article_id": "39796d5a-c2fd-467f-8891-9e7b32091617",
+      "topic_id": "a38bfaba-6196-4148-9533-a12b6170429b",
+      "text": "A concrete estimate uses the formula: cement (kg/m³) = water content ÷ W/C. If water content is 170 L/m³ and W/C = 0.52, calculate the cement content.",
+      "options": [
+        {
+          "id": "a",
+          "text": "88 kg/m³"
+        },
+        {
+          "id": "b",
+          "text": "212 kg/m³"
+        },
+        {
+          "id": "c",
+          "text": "327 kg/m³"
+        },
+        {
+          "id": "d",
+          "text": "408 kg/m³"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "88 kg/m³ results from multiplying 170 × 0.52 instead of dividing.",
+        "b": "212 kg/m³ results from an intermediate calculation or estimation error.",
+        "d": "408 kg/m³ results from using W/C = 0.42 or other incorrect ratio.",
+        "correct": "Cement = 170 ÷ 0.52 = 326.9 ≈ 327 kg/m³.",
+        "takeaway": "Always divide water content by the water-cement ratio: Cement = Water ÷ W/C."
+      },
+      "explanation": "88 kg/m³ results from multiplying 170 × 0.52 instead of dividing. 212 kg/m³ results from an intermediate calculation or estimation error. 408 kg/m³ results from using W/C = 0.42 or other incorrect ratio. Cement = 170 ÷ 0.52 = 326.9 ≈ 327 kg/m³. Always divide water content by the water-cement ratio: Cement = Water ÷ W/C.",
+      "code_citation": "ACI 211.1-22",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-010-01-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-05-06T14:43:18.978923+00:00",
+      "content_hash": "sha256:d9e9e30eda1c4dcb8ffdf9c88aaefd591e4b0182d772300680236e207d5605cf"
+    },
+    {
+      "question_id": "28a96af7-a201-47ff-a1d0-f56bca78c045",
+      "article_id": "39796d5a-c2fd-467f-8891-9e7b32091617",
+      "topic_id": "a38bfaba-6196-4148-9533-a12b6170429b",
+      "text": "A concrete footing requires f'c = 24 MPa. According to ACI 211.1, the water-cement ratio (W/C) for this strength is 0.50. If the water content is estimated at 180 L/m³, what is the required cement content?",
+      "options": [
+        {
+          "id": "a",
+          "text": "90 kg/m³"
+        },
+        {
+          "id": "b",
+          "text": "180 kg/m³"
+        },
+        {
+          "id": "c",
+          "text": "320 kg/m³"
+        },
+        {
+          "id": "d",
+          "text": "360 kg/m³"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "90 kg/m³ results from multiplying 180 × 0.50 instead of dividing.",
+        "b": "180 kg/m³ incorrectly assumes cement content equals water content.",
+        "c": "320 kg/m³ results from using W/C = 0.55 (for 20 MPa) instead of 0.50.",
+        "correct": "Cement content = Water content ÷ W/C = 180 ÷ 0.50 = 360 kg/m³.",
+        "takeaway": "The water-cement ratio is W/C, so Cement = Water ÷ (W/C). For higher strength (lower W/C), cement content increases."
+      },
+      "explanation": "90 kg/m³ results from multiplying 180 × 0.50 instead of dividing. 180 kg/m³ incorrectly assumes cement content equals water content. 320 kg/m³ results from using W/C = 0.55 (for 20 MPa) instead of 0.50. Cement content = Water content ÷ W/C = 180 ÷ 0.50 = 360 kg/m³. The water-cement ratio is W/C, so Cement = Water ÷ (W/C). For higher strength (lower W/C), cement content increases.",
+      "code_citation": "ACI 211.1-22, Mix design methodology",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-010-01-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-05-06T14:43:19.093979+00:00",
+      "content_hash": "sha256:009acd95198941ba0f71c7c9ae333e0aaafccd470e3a764f87d25b0942813aad"
+    },
+    {
+      "question_id": "0f696315-b04f-4279-b9a4-51e25bd4f063",
+      "article_id": "39796d5a-c2fd-467f-8891-9e7b32091617",
+      "topic_id": "a38bfaba-6196-4148-9533-a12b6170429b",
+      "text": "According to ACI 211.1, what is the unit weight (density) of normal-weight concrete after curing?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2,000 kg/m³"
+        },
+        {
+          "id": "b",
+          "text": "2,200 kg/m³"
+        },
+        {
+          "id": "c",
+          "text": "2,400 kg/m³"
+        },
+        {
+          "id": "d",
+          "text": "2,600 kg/m³"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "2,000 kg/m³ is close but is used only in fresh (unhardened) concrete estimates, not for cured concrete.",
+        "b": "2,200 kg/m³ is below the standard; may confuse with lightweight concrete.",
+        "d": "2,600 kg/m³ is for heavyweight concrete, not normal-weight concrete.",
+        "correct": "ACI 211.1 and NSCP 2015 specify 2,400 kg/m³ as the unit weight for normal-weight concrete used in structural applications.",
+        "takeaway": "Standard unit weight = 2,400 kg/m³. Use this to convert volume (m³) to weight (kg) for transportation and cost calculations."
+      },
+      "explanation": "2,000 kg/m³ is close but is used only in fresh (unhardened) concrete estimates, not for cured concrete. 2,200 kg/m³ is below the standard; may confuse with lightweight concrete. 2,600 kg/m³ is for heavyweight concrete, not normal-weight concrete. ACI 211.1 and NSCP 2015 specify 2,400 kg/m³ as the unit weight for normal-weight concrete used in structural applications. Standard unit weight = 2,400 kg/m³. Use this to convert volume (m³) to weight (kg) for transportation and cost calculations.",
+      "code_citation": "ACI 211.1-22, NSCP 2015",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-010-01-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-05-06T14:43:19.214212+00:00",
+      "content_hash": "sha256:2417f9d49d6c60bf3c81ef56ed26becc12de8e539dc5853723eb687e8e5dea61"
+    },
     {
       "question_id": "c5ae97d2-00d7-4c9e-93f7-f411977a1981",
       "article_id": "39796d5a-c2fd-467f-8891-9e7b32091617",
@@ -155,56 +305,6 @@
       "content_hash": "sha256:820abc76d0da1a53b138a58ddb61cc72bf2105104235e9b851fa7ebb5b50f64c"
     },
     {
-      "question_id": "6ee80a53-2217-46fa-b6b4-e1a61da2c28f",
-      "article_id": "39796d5a-c2fd-467f-8891-9e7b32091617",
-      "topic_id": "a38bfaba-6196-4148-9533-a12b6170429b",
-      "text": "A concrete estimate uses the formula: cement (kg/m³) = water content ÷ W/C. If water content is 170 L/m³ and W/C = 0.52, calculate the cement content.",
-      "options": [
-        {
-          "id": "a",
-          "text": "88 kg/m³"
-        },
-        {
-          "id": "b",
-          "text": "212 kg/m³"
-        },
-        {
-          "id": "c",
-          "text": "327 kg/m³"
-        },
-        {
-          "id": "d",
-          "text": "408 kg/m³"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "88 kg/m³ results from multiplying 170 × 0.52 instead of dividing.",
-        "b": "212 kg/m³ results from an intermediate calculation or estimation error.",
-        "d": "408 kg/m³ results from using W/C = 0.42 or other incorrect ratio.",
-        "correct": "Cement = 170 ÷ 0.52 = 326.9 ≈ 327 kg/m³.",
-        "takeaway": "Always divide water content by the water-cement ratio: Cement = Water ÷ W/C."
-      },
-      "explanation": null,
-      "code_citation": "ACI 211.1-22",
-      "bloom_level": "apply",
-      "application_context": "calculation",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-MATL-010-01-009",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:28.926909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:26fbebf5eb1806c885023eefcf4ccd53d45c8f932aa81cd6b59afa1fd66fba97"
-    },
-    {
       "question_id": "ced3543b-b7b0-4aa2-a36b-b09ca928568b",
       "article_id": "39796d5a-c2fd-467f-8891-9e7b32091617",
       "topic_id": "a38bfaba-6196-4148-9533-a12b6170429b",
@@ -253,56 +353,6 @@
       "created_at": "2026-03-23T19:27:28.926909+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:fe414c118db12f1cda6c80cc1568e6df8d7b752f74ad54a6d9775c50c45681fe"
-    },
-    {
-      "question_id": "28a96af7-a201-47ff-a1d0-f56bca78c045",
-      "article_id": "39796d5a-c2fd-467f-8891-9e7b32091617",
-      "topic_id": "a38bfaba-6196-4148-9533-a12b6170429b",
-      "text": "A concrete footing requires f'c = 24 MPa. According to ACI 211.1, the water-cement ratio (W/C) for this strength is 0.50. If the water content is estimated at 180 L/m³, what is the required cement content?",
-      "options": [
-        {
-          "id": "a",
-          "text": "90 kg/m³"
-        },
-        {
-          "id": "b",
-          "text": "180 kg/m³"
-        },
-        {
-          "id": "c",
-          "text": "320 kg/m³"
-        },
-        {
-          "id": "d",
-          "text": "360 kg/m³"
-        }
-      ],
-      "correct_option_id": "d",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "90 kg/m³ results from multiplying 180 × 0.50 instead of dividing.",
-        "b": "180 kg/m³ incorrectly assumes cement content equals water content.",
-        "c": "320 kg/m³ results from using W/C = 0.55 (for 20 MPa) instead of 0.50.",
-        "correct": "Cement content = Water content ÷ W/C = 180 ÷ 0.50 = 360 kg/m³.",
-        "takeaway": "The water-cement ratio is W/C, so Cement = Water ÷ (W/C). For higher strength (lower W/C), cement content increases."
-      },
-      "explanation": null,
-      "code_citation": "ACI 211.1-22, Mix design methodology",
-      "bloom_level": "apply",
-      "application_context": "calculation",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-MATL-010-01-005",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:28.926909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:4bc7537566eedfd497612436846a9dce22603f0ab7ef219e862f162a2a8080ce"
     },
     {
       "question_id": "4cf03943-3b63-47d7-9e92-102e8ec3dcb4",
@@ -453,56 +503,6 @@
       "created_at": "2026-03-23T19:27:28.926909+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:c7a00b58337abec94299fb003975ad84ca23bd7ae57b660d1c4fa209dd9fe3eb"
-    },
-    {
-      "question_id": "0f696315-b04f-4279-b9a4-51e25bd4f063",
-      "article_id": "39796d5a-c2fd-467f-8891-9e7b32091617",
-      "topic_id": "a38bfaba-6196-4148-9533-a12b6170429b",
-      "text": "According to ACI 211.1, what is the unit weight (density) of normal-weight concrete after curing?",
-      "options": [
-        {
-          "id": "a",
-          "text": "2,000 kg/m³"
-        },
-        {
-          "id": "b",
-          "text": "2,200 kg/m³"
-        },
-        {
-          "id": "c",
-          "text": "2,400 kg/m³"
-        },
-        {
-          "id": "d",
-          "text": "2,600 kg/m³"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "2,000 kg/m³ is close but is used only in fresh (unhardened) concrete estimates, not for cured concrete.",
-        "b": "2,200 kg/m³ is below the standard; may confuse with lightweight concrete.",
-        "d": "2,600 kg/m³ is for heavyweight concrete, not normal-weight concrete.",
-        "correct": "ACI 211.1 and NSCP 2015 specify 2,400 kg/m³ as the unit weight for normal-weight concrete used in structural applications.",
-        "takeaway": "Standard unit weight = 2,400 kg/m³. Use this to convert volume (m³) to weight (kg) for transportation and cost calculations."
-      },
-      "explanation": null,
-      "code_citation": "ACI 211.1-22, NSCP 2015",
-      "bloom_level": "remember",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-MATL-010-01-002",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:28.926909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:ad78ccdf0f9ab8bfb7a641bcf98912685cf003598d3fffec1cf1b73bdb63eaf0"
     }
   ]
 }

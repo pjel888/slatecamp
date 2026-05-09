@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Dsgn 009 02 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 
 ## Learning Goal
@@ -23,7 +32,11 @@ The **Window-to-Floor Ratio (WFR)** is the total window area divided by the floo
 - **PD 1096 Rule VIII, Section 808:** Specifies **1:10 (10%)** window area minimum for light.
 - **PD 1096 Rule VIII, Section 808:** Specifies **1:20 (5%)** window area minimum for natural ventilation.
 - **Critical Error:** Do not use 1:5 (20%). This is a common mistake (ERR-DSGN-034).
-<ArticleMedia id="media-lea-dsgn-009-02-core-concept" type="image" caption="Daylighting Strategy — Window-to-Floor Ratio and Light Penetration Depth" description="Building section showing daylight penetration: minimum 1:10 window-to-floor ratio, light penetration depth (2.5× window head height), glare control devices (lightshelves, louvers, fins), and integration with artificial lighting controls." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-dsgn-009-02-core-concept", type="image", caption="Daylighting Strategy — Window-to-Floor Ratio and Light Penetration Depth", description="Building section showing daylight penetration: minimum 1:10 window-to-floor ratio, light penetration depth (2.5× window head height), glare control devices (lightshelves, louvers, fins), and integration with artificial lighting controls.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Provisions
 
@@ -64,7 +77,11 @@ The exam asks for the minimum window area for a 100 m² room.
 - **Warning:** If you select 20 m² (1:5), you are applying a common misconception not supported by the NBCP.
 
 **Exam Tip:** NBC minimum = 1:10 window-to-floor ratio for light, 1:20 for ventilation. Daylight penetration depth ≈ 2.5× window head height. A 2m high window provides useful daylight ~5m into the room.
-<ArticleMedia id="media-lea-dsgn-009-02-core-concept" type="image" caption="Daylight Penetration — Section Showing Light Shelf and Glare Control" description="Section diagram showing daylight penetration depth (2.5× window head height), light shelf positioning (above eye level at 2.0m minimum), glare control devices (horizontal louvers, vertical fins), and minimum window-to-floor area ratio (1:10 per NBC). Interior daylight distribution zones labeled." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-dsgn-009-02-core-concept", type="image", caption="Daylight Penetration — Section Showing Light Shelf and Glare Control", description="Section diagram showing daylight penetration depth (2.5× window head height), light shelf positioning (above eye level at 2.0m minimum), glare control devices (horizontal louvers, vertical fins), and minimum window-to-floor area ratio (1:10 per NBC). Interior daylight distribution zones labeled.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Cross-References
 
@@ -72,12 +89,8 @@ See **LEA-DSGN-009-01** (Passive Design) for solar control strategies, **LEA-DSG
 
 ## Common Mistakes
 
-<WikiMistakeList
- mistakes={[
- 'ERR-DSGN-034: Using 1:5 (20% WFR) instead of the correct 1:10 (10% WFR) for daylighting minimums.',
- "Treating the 2.5× height rule as a legal 'limit' rather than a design optimization tool.",
- 'Confusing the 1:10 light requirement with the 1:20 ventilation requirement.',
- 'Ignoring glare control; assuming more glass always equals better design (excessive glass leads to solar heat gain).',
- 'Applying code minimums as the final design goal rather than the starting baseline.',
- ]}
-/>
+[SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\n 'ERR-DSGN-034: Using 1:5 (20% WFR) instead of the correct 1:10 (10% WFR) for daylighting minimums.',\n \"Treating the 2.5× height rule as a legal 'limit' rather than a design optimization tool.\",\n 'Confusing the 1:10 light requirement with the 1:20 ventilation requirement.',\n 'Ignoring glare control; assuming more glass always equals better design (excessive glass leads to solar heat gain).',\n 'Applying code minimums as the final design goal rather than the starting baseline.',\n ]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]

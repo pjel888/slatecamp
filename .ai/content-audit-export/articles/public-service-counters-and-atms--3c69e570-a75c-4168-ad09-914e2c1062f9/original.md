@@ -1,4 +1,11 @@
 # Public Service Counters and ATMs
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Public Service Counters and ATMs** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
 ### BP 344 (2024 IRR) — LEA Review Series
 
 ---
@@ -140,7 +147,7 @@ Apply BP 344 requirements for accessible service counters and ATMs: height range
 │  ← 900 mm min width of accessible section →    │
 └─────────────────────────────────────────────────┘
          SECTION VIEW
-         
+
     950-1100mm ┌──────────────┐ (upper)
                │  TRANSACTION │
     750mm ─────┤  SURFACE     │ (lower)
@@ -168,13 +175,13 @@ Apply BP 344 requirements for accessible service counters and ATMs: height range
     │ COUNTER 750mm  │
     │ 480mm depth    │
     └────────────────┘
-    
+
     ████████████████████████████████
     ██  1800 mm × 1800 mm          ██
     ██  CLEAR FLOOR SPACE          ██
     ██  in front of ATM            ██
     ████████████████████████████████
-    
+
     ← 1800 mm →
 ```
 
@@ -211,74 +218,59 @@ All three modes must coexist because no single mode serves all users.
 
 ---
 
-<LawCallout code="bp344" section="Section 14 - Service Counters">
-
-
-### 🚨 TRAP LEART #1: ATM Clear Space ≠ Counter Clear Space
-ATM: **1800 × 1800 mm** (Sec. 12.1)
-Service counter approach: **1500 × 1500 mm** (Sec. 14.4)
-These are DIFFERENT. The exam will test both. Remember: bigger space = ATM.
-
-
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="bp344", section="Section 14 - Service Counters"
+- Text: ### 🚨 TRAP LEART #1: ATM Clear Space ≠ Counter Clear Space ATM: **1800 × 1800 mm** (Sec. 12.1) Service counter approach: **1500 × 1500 mm** (Sec. 14.4) These are DIFFERENT. The exam will test both. Remember: bigger space = ATM.
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
-<Callout variant="lea-watch" title="Trap Leart">
-
-### 🚨 TRAP LEART #2: "750 mm" Can Be Two Different Things
-- 750 mm = the **lower counter height** (accessible surface level)
-- 750 mm = also the **dining table height**
-These happen to be the same, but the question context matters. Know that 750 mm is always the **accessible horizontal surface height** across counter types.
-
-</Callout>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Callout" status="preserved"]
+Extracted summary:
+- Props: variant="lea-watch", title="Trap Leart"
+- Text: ### 🚨 TRAP LEART #2: "750 mm" Can Be Two Different Things - 750 mm = the **lower counter height** (accessible surface level) - 750 mm = also the **dining table height** These happen to be the same, but the question context matters. Know that 750 mm is always the **accessible horizontal surface height** across counter types.
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
-<Callout variant="lea-watch" title="1100 mm">
-
-### 🚨 TRAP LEART #3: Upper Counter Range is 950–1100 mm
-Not 900–1100 mm. Not 950–1200 mm. The range is **950 to 1100 mm**. Outside this range = non-compliant for the standing-user tier.
-
-</Callout>
-
----
-
-<Callout variant="lea-watch" title="Trap Leart">
-
-### 🚨 TRAP LEART #4: ATM Controls vs. ATM Surface
-- ATM **surface** (counter): **750 mm** (Sec. 12.6)
-- ATM **controls** (keypad, screen): **900–1200 mm** (Sec. 12.3)
-The surface is lower than the controls. This is correct — the surface is for resting documents/hands; the controls are reached by a forward/upward reach.
-
-</Callout>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Callout" status="preserved"]
+Extracted summary:
+- Props: variant="lea-watch", title="1100 mm"
+- Text: ### 🚨 TRAP LEART #3: Upper Counter Range is 950–1100 mm Not 900–1100 mm. Not 950–1200 mm. The range is **950 to 1100 mm**. Outside this range = non-compliant for the standing-user tier.
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
-<Callout variant="lea-watch" title="Max 2400 mm">
-
-### 🚨 TRAP LEART #5: Signage at ATMs — Max 2400 mm
-ATM-related signage is capped at **2400 mm** AFF (Sec. 12.10). General signage in other contexts may have different caps (e.g., 1500 mm for sign center). Don't mix these up.
-
-</Callout>
-
----
-
-<Callout variant="lea-watch" title="Trap Leart">
-
-### 🚨 TRAP LEART #6: 10% of Dining Tables
-Only **10%** of restaurant tables need to be accessible — not all of them. But the accessible tables must meet all Sec. 16 specs. The exam may test whether you know the percentage.
-
-</Callout>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Callout" status="preserved"]
+Extracted summary:
+- Props: variant="lea-watch", title="Trap Leart"
+- Text: ### 🚨 TRAP LEART #4: ATM Controls vs. ATM Surface - ATM **surface** (counter): **750 mm** (Sec. 12.6) - ATM **controls** (keypad, screen): **900–1200 mm** (Sec. 12.3) The surface is lower than the controls. This is correct — the surface is for resting documents/hands; the controls are reached by a forward/upward reach.
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
-<Callout variant="lea-watch" title="Trap Leart">
+[SLATECAMP_UI_BLOCK:ui_0005 component="Callout" status="preserved"]
+Extracted summary:
+- Props: variant="lea-watch", title="Max 2400 mm"
+- Text: ### 🚨 TRAP LEART #5: Signage at ATMs — Max 2400 mm ATM-related signage is capped at **2400 mm** AFF (Sec. 12.10). General signage in other contexts may have different caps (e.g., 1500 mm for sign center). Don't mix these up.
+[/SLATECAMP_UI_BLOCK]
 
-### 🚨 TRAP LEART #7: Workstation Width
-Workstations and counters share the **900 mm** minimum width spec. This appears in both Sec. 14.5 (counters) and Sec. 15.3 (workstations). Consistent standard — easier to remember.
+---
 
-</Callout>
+[SLATECAMP_UI_BLOCK:ui_0006 component="Callout" status="preserved"]
+Extracted summary:
+- Props: variant="lea-watch", title="Trap Leart"
+- Text: ### 🚨 TRAP LEART #6: 10% of Dining Tables Only **10%** of restaurant tables need to be accessible — not all of them. But the accessible tables must meet all Sec. 16 specs. The exam may test whether you know the percentage.
+[/SLATECAMP_UI_BLOCK]
+
+---
+
+[SLATECAMP_UI_BLOCK:ui_0007 component="Callout" status="preserved"]
+Extracted summary:
+- Props: variant="lea-watch", title="Trap Leart"
+- Text: ### 🚨 TRAP LEART #7: Workstation Width Workstations and counters share the **900 mm** minimum width spec. This appears in both Sec. 14.5 (counters) and Sec. 15.3 (workstations). Consistent standard — easier to remember.
+[/SLATECAMP_UI_BLOCK]
 
 ---
 

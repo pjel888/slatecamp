@@ -34,11 +34,23 @@ Architects whose plans are duplicated without consent may pursue legal action un
 
 The strength of the architect's position depends on documentary evidence showing ownership and the unauthorized reproduction. Architects should maintain records of design development, dated submissions, and all communications with the client. When plans are registered with the Intellectual Property Office of the Philippines (IPOPHL), the architect gains additional evidentiary weight in dispute resolution and enforces the copyright with greater confidence.
 
-<Warn />
+[SLATECAMP_UI_BLOCK:ui_0001 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<Tip />
+[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -54,3 +66,12 @@ The strength of the architect's position depends on documentary evidence showing
 - [Professional Practice Forms](lea-prac-frm-001)
 
 <!-- no-media-needed: professional practice article, text/tables/UI blocks are optimal format -->
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Prac Law 013 Ownership Of Architectural Plans Ra 9266 Section 33 And Client Rights** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?

@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Strc 004 02 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 ## Learning Goal
 By the end of this article, you will be able to:
@@ -10,7 +19,11 @@ By the end of this article, you will be able to:
 The Philippines uses a 2-zone seismic system. Zone 1 is low-hazard (Z = 0.2); Zone 2 is high-hazard (Z = 0.4). The LEA tests zone lists, Z factors, and why they matter for base shear calculation.
 
 ## Core Concept
-<ArticleMedia id="media-lea-strc-004-02-core-concept" type="image" caption="Philippine Seismic Hazard Map — NSCP 2015 Zones" description="Map of the Philippines color-coded by NSCP 2015 seismic zone: Zone 1 (Z=0.2) in green — Palawan, Tawi-Tawi, Sulu; Zone 2 (Z=0.4) in red — all other provinces. Major active faults (Philippine Fault Zone, Valley Fault System) and historical earthquake M6+ events shown. Base shear formula inset showing Z coefficient application." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-strc-004-02-core-concept", type="image", caption="Philippine Seismic Hazard Map — NSCP 2015 Zones", description="Map of the Philippines color-coded by NSCP 2015 seismic zone: Zone 1 (Z=0.2) in green — Palawan, Tawi-Tawi, Sulu; Zone 2 (Z=0.4) in red — all other provinces. Major active faults (Philippine Fault Zone, Valley Fault System) and historical earthquake M6+ events shown. Base shear formula inset showing Z coefficient application.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 The NSCP 2015 divides the Philippines into two seismic zones based on historical earthquake frequency and hazard. Each zone is assigned a seismic zone coefficient _Z_, which multiplies the design base shear directly.
 
@@ -45,7 +58,11 @@ Metro Manila, Cebu, Davao, and Iloilo (major population and commercial centers) 
 
 **Pattern 3: Exception identification.** "Which Philippine province is assigned Zone 1 (Z = 0.2)?" → Palawan, Tawi-Tawi, or Sulu (only three provinces; all others — including Batanes — are Zone 2).
 
-<Tip>Think of it as core vs. periphery. The center of the Philippines (where most people and buildings are) is Zone 2, Z = 0.4. Only three provinces far from the main fault systems are Zone 1, Z = 0.2: Palawan, Tawi-Tawi, Sulu. Zone 1 is the exception, not the rule. Batanes is in Zone 2 despite being peripheral — its proximity to Taiwan's seismic zone drives higher hazard.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Think of it as core vs. periphery. The center of the Philippines (where most people and buildings are) is Zone 2, Z = 0.4. Only three provinces far from the main fault systems are Zone 1, Z = 0.2: Palawan, Tawi-Tawi, Sulu. Zone 1 is the exception, not the rule. Batanes is in Zone 2 despite being peripheral — its proximity to Taiwan's seismic zone drives higher hazard.
+[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 
@@ -53,6 +70,14 @@ See also: **Earthquake Fundamentals** (lea-strc-004-01) for basic seismology, **
 
 ## Common Mistakes
 
-<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: These are frequently tested traps. Memorize them to avoid losing easy points on exam day.
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeList mistakes={["Confusing Zone 1 and Zone 2 as having equal hazard. Zone 2 is TWICE as hazardous (Z = 0.4 vs. 0.2) and covers nearly all of the Philippines.","Thinking Batanes is in Zone 1 because it is a peripheral province. Batanes is in Zone 2 (Z = 0.4) due to proximity to Taiwan's seismic zone. Only THREE provinces are Zone 1: Palawan, Tawi-Tawi, Sulu.","Using Z = 0.3 or 0.5. The NSCP specifies only Z = 0.2 (Zone 1) and Z = 0.4 (Zone 2). No intermediate values.","Assuming the location's population size determines the zone. Zone is determined by seismic hazard, not city importance. Palawan is Zone 1 even though it has populated centers.","Treating spectral accelerations (Ss, S1) as equivleant to Z factors. NSCP 2015 introduced hazard maps, but the LEA tests the 2-zone system with Z = 0.2 and 0.4."]} />
+[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Confusing Zone 1 and Zone 2 as having equal hazard. Zone 2 is TWICE as hazardous (Z = 0.4 vs. 0.2) and covers nearly all of the Philippines.\",\"Thinking Batanes is in Zone 1 because it is a peripheral province. Batanes is in Zone 2 (Z = 0.4) due to proximity to Taiwan's seismic zone. Only THREE provinces are Zone 1: Palawan, Tawi-Tawi, Sulu.\",\"Using Z = 0.3 or 0.5. The NSCP specifies only Z = 0.2 (Zone 1) and Z = 0.4 (Zone 2). No intermediate values.\",\"Assuming the location's population size determines the zone. Zone is determined by seismic hazard, not city importance. Palawan is Zone 1 even though it has populated centers.\",\"Treating spectral accelerations (Ss, S1) as equivleant to Z factors. NSCP 2015 introduced hazard maps, but the LEA tests the 2-zone system with Z = 0.2 and 0.4.\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]

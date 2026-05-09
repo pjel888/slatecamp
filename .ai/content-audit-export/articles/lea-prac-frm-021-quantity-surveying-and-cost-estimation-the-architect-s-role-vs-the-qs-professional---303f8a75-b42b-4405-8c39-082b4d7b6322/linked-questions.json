@@ -1,9 +1,109 @@
 {
   "article_id": "303f8a75-b42b-4405-8c39-082b4d7b6322",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:33e55d2ed93e4c1c2a75aa4b94f9b073972eb57dc89ea5bda244fa19ab31c024",
+  "linked_questions_hash": "sha256:3e7b089a1e3e0a988a5a73a495c04a102224e8da09f01191303d1977ee763537",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "343b6549-358b-482e-af91-b1d65b1e6c8e",
+      "article_id": "303f8a75-b42b-4405-8c39-082b4d7b6322",
+      "topic_id": "5cfafc3f-1ec8-43ec-b29f-6c2f43fc843c",
+      "text": "What should architects do if the cost estimate exceeds the client's construction budget?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Accept the overrun silently, hoping the client will not notice the discrepancy"
+        },
+        {
+          "id": "b",
+          "text": "Discuss options: reduce scope, adjust quality, defer phases, or increase budget; lead this discussion with QS support"
+        },
+        {
+          "id": "c",
+          "text": "Blame the client for insufficient budget, suggesting they should have anticipated higher costs"
+        },
+        {
+          "id": "d",
+          "text": "Proceed without addressing the issue, assuming the budget will adjust itself during construction"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Negligent; unaddressed budget overruns lead to disputes and financial stress during construction.",
+        "c": "Unprofessional; architects should work with clients to find solutions, not blame.",
+        "d": "Reckless; unaddressed budget gaps cause construction delays and conflicts.",
+        "correct": "When estimate exceeds budget, architects and QS should facilitate client discussion on options: scope reduction, quality adjustment, phase deferral, or budget increase.",
+        "takeaway": "When estimate exceeds budget, lead a professional discussion with options—don't proceed silently or blame the client."
+      },
+      "explanation": "Negligent; unaddressed budget overruns lead to disputes and financial stress during construction. Unprofessional; architects should work with clients to find solutions, not blame. Reckless; unaddressed budget gaps cause construction delays and conflicts. When estimate exceeds budget, architects and QS should facilitate client discussion on options: scope reduction, quality adjustment, phase deferral, or budget increase. When estimate exceeds budget, lead a professional discussion with options—don't proceed silently or blame the client.",
+      "code_citation": "Cost Estimation Standards",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-021-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-05-06T15:55:57.169868+00:00",
+      "content_hash": "sha256:f1a74b99e025e5d5d29fd0b9027fb6f92548264ddbf27e611531391c69297563"
+    },
+    {
+      "question_id": "f3031fa0-3095-47ed-bef4-0c14e810b1fc",
+      "article_id": "303f8a75-b42b-4405-8c39-082b4d7b6322",
+      "topic_id": "5cfafc3f-1ec8-43ec-b29f-6c2f43fc843c",
+      "text": "When is it most effective to engage a quantity surveyor for value engineering?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only after construction starts, when changes are more costly and less effective"
+        },
+        {
+          "id": "b",
+          "text": "During schematic phase when design changes have lowest cost impact"
+        },
+        {
+          "id": "c",
+          "text": "During construction documents phase to analyze and reduce costs, but with limited flexibility"
+        },
+        {
+          "id": "d",
+          "text": "Never; value engineering is not necessary, as initial estimates are always accurate"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Too late; construction-phase changes are most expensive.",
+        "c": "Too late; DD phase changes cost more than schematic changes.",
+        "d": "False; value engineering saves clients significant cost by optimizing design elements.",
+        "correct": "Value engineering is most effective during schematic phase when design changes are least costly; post-schematic changes are expensive to implement.",
+        "takeaway": "Engage QS early during schematic design—cost advice then influences design; cost analysis after design is fixed has limited impact."
+      },
+      "explanation": "Too late; construction-phase changes are most expensive. Too late; DD phase changes cost more than schematic changes. False; value engineering saves clients significant cost by optimizing design elements. Value engineering is most effective during schematic phase when design changes are least costly; post-schematic changes are expensive to implement. Engage QS early during schematic design—cost advice then influences design; cost analysis after design is fixed has limited impact.",
+      "code_citation": "Value Engineering Standards",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-021-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-05-06T15:55:57.40423+00:00",
+      "content_hash": "sha256:4c630ad4b71508ceafc5f489ff1661449fefa790abfff0c6313a19482eeb9e28"
+    },
     {
       "question_id": "d0deb92b-7a62-4fdd-958a-20a9a9f455dd",
       "article_id": "303f8a75-b42b-4405-8c39-082b4d7b6322",
@@ -89,7 +189,7 @@
         "correct": "Schematic estimates based on building massing and major systems achieve ±20% accuracy—useful for client budget approval but not for final construction cost control.",
         "takeaway": "Schematic estimates are ±20% accurate—use for budget approval; final estimates approach ±5% accuracy."
       },
-      "explanation": null,
+      "explanation": "Too broad; ±50% or more applies to order-of-magnitude/conceptual (pre-schematic) per AACE Class 5. Too optimistic; ±5% requires construction documents with complete specifications. False; no estimate is 100% accurate—actual costs depend on market, labor, and contractor variables. Schematic estimates based on building massing and major systems achieve ±20% accuracy—useful for client budget approval but not for final construction cost control. Schematic estimates are ±20% accurate—use for budget approval; final estimates approach ±5% accuracy.",
       "code_citation": "UAP SPP Document 201 (General Conditions); RA 9266 IRR Section 26 (Scope of Practice)",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
@@ -101,8 +201,8 @@
       "model_id": "ALE-PRAC-FRM-021-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:49.529462+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:c24d9ec57c118e20da6facc4047e932e017e5bc285276187d3dd7a64bd5640b8"
+      "updated_at": "2026-05-06T15:55:57.045005+00:00",
+      "content_hash": "sha256:16b0e527d7963c50752ba9a667504819881894f264d6e3fc626ce1859be4ff78"
     },
     {
       "question_id": "dc04110d-d467-4f07-9c52-ae40ff45ee83",
@@ -305,56 +405,6 @@
       "content_hash": "sha256:221c3dc10ae8816482ed0b672627596c51e17712e74bb89318dbb55ca116b9d1"
     },
     {
-      "question_id": "343b6549-358b-482e-af91-b1d65b1e6c8e",
-      "article_id": "303f8a75-b42b-4405-8c39-082b4d7b6322",
-      "topic_id": "5cfafc3f-1ec8-43ec-b29f-6c2f43fc843c",
-      "text": "What should architects do if the cost estimate exceeds the client's construction budget?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Accept the overrun silently, hoping the client will not notice the discrepancy"
-        },
-        {
-          "id": "b",
-          "text": "Discuss options: reduce scope, adjust quality, defer phases, or increase budget; lead this discussion with QS support"
-        },
-        {
-          "id": "c",
-          "text": "Blame the client for insufficient budget, suggesting they should have anticipated higher costs"
-        },
-        {
-          "id": "d",
-          "text": "Proceed without addressing the issue, assuming the budget will adjust itself during construction"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Negligent; unaddressed budget overruns lead to disputes and financial stress during construction.",
-        "c": "Unprofessional; architects should work with clients to find solutions, not blame.",
-        "d": "Reckless; unaddressed budget gaps cause construction delays and conflicts.",
-        "correct": "When estimate exceeds budget, architects and QS should facilitate client discussion on options: scope reduction, quality adjustment, phase deferral, or budget increase.",
-        "takeaway": "When estimate exceeds budget, lead a professional discussion with options—don't proceed silently or blame the client."
-      },
-      "explanation": null,
-      "code_citation": "Cost Estimation Standards",
-      "bloom_level": "apply",
-      "application_context": "client_scenario",
-      "practice_context": [],
-      "difficulty": 0.7,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PRAC-FRM-021-008",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:49.529462+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:1dc2a19ca2a3e9b97841b07320b6f824f53a0d8849a84e0700d7847739f779b9"
-    },
-    {
       "question_id": "80e3539e-73bb-48e9-9da7-c6d546d29eff",
       "article_id": "303f8a75-b42b-4405-8c39-082b4d7b6322",
       "topic_id": "5cfafc3f-1ec8-43ec-b29f-6c2f43fc843c",
@@ -389,7 +439,7 @@
         "correct": "Construction documents with complete specifications enable accurate takeoff of all materials, labor, and equipment; accuracy approaches ±5%.",
         "takeaway": "After construction documents are finalized, cost estimates approach ±5% accuracy—these are used for bid preparation."
       },
-      "explanation": null,
+      "explanation": "Too broad; ±50% is conceptual-phase accuracy. Too broad; detailed specs achieve better than ±30%. False; detailed specifications enable reliable cost estimation. Construction documents with complete specifications enable accurate takeoff of all materials, labor, and equipment; accuracy approaches ±5%. After construction documents are finalized, cost estimates approach ±5% accuracy—these are used for bid preparation.",
       "code_citation": "Cost Estimation Standards",
       "bloom_level": "remember",
       "application_context": "recall",
@@ -401,8 +451,8 @@
       "model_id": "ALE-PRAC-FRM-021-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:49.529462+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:06d903d03c8efc3ab9f793086ce14aaef5268ea31418248d7f82f14c31db979f"
+      "updated_at": "2026-05-06T15:55:57.29263+00:00",
+      "content_hash": "sha256:573da965b351cfa44689de1bed826adb01e350f210478f555d82f4f9a4aa761b"
     },
     {
       "question_id": "d4cd25d4-fa63-4106-830c-655f5e2b7a1d",
@@ -453,56 +503,6 @@
       "created_at": "2026-03-23T19:27:49.529462+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:7507cff943a29fe6c794e710ee8843e13d20bd2e736c33b66151df89dd289101"
-    },
-    {
-      "question_id": "f3031fa0-3095-47ed-bef4-0c14e810b1fc",
-      "article_id": "303f8a75-b42b-4405-8c39-082b4d7b6322",
-      "topic_id": "5cfafc3f-1ec8-43ec-b29f-6c2f43fc843c",
-      "text": "When is it most effective to engage a quantity surveyor for value engineering?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Only after construction starts, when changes are more costly and less effective"
-        },
-        {
-          "id": "b",
-          "text": "During schematic phase when design changes have lowest cost impact"
-        },
-        {
-          "id": "c",
-          "text": "During construction documents phase to analyze and reduce costs, but with limited flexibility"
-        },
-        {
-          "id": "d",
-          "text": "Never; value engineering is not necessary, as initial estimates are always accurate"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Too late; construction-phase changes are most expensive.",
-        "c": "Too late; DD phase changes cost more than schematic changes.",
-        "d": "False; value engineering saves clients significant cost by optimizing design elements.",
-        "correct": "Value engineering is most effective during schematic phase when design changes are least costly; post-schematic changes are expensive to implement.",
-        "takeaway": "Engage QS early during schematic design—cost advice then influences design; cost analysis after design is fixed has limited impact."
-      },
-      "explanation": null,
-      "code_citation": "Value Engineering Standards",
-      "bloom_level": "understand",
-      "application_context": "client_scenario",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PRAC-FRM-021-004",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:49.529462+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:e88de6ec4694ac4329f35a8369645a749a339cdc37959eaf87e2e37b991f6837"
     }
   ]
 }

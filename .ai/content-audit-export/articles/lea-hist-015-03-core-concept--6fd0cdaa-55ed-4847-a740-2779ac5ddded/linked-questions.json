@@ -1,9 +1,217 @@
 {
   "article_id": "6fd0cdaa-55ed-4847-a740-2779ac5ddded",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:4840d78d63733c572cff941d82f0b17c1737d2a463084cc39efefd739f6e8849",
+  "linked_questions_hash": "sha256:bd7d9fac002c85468a647f5efc1a7020d7bf9cd6c14459f7b64cd87830816a9a",
   "question_count": 12,
   "questions": [
+    {
+      "question_id": "628209c4-7ec4-4e75-9bc8-a43cf6a87f86",
+      "article_id": "6fd0cdaa-55ed-4847-a740-2779ac5ddded",
+      "topic_id": "27257e41-bfad-4d26-a5e3-495f7beaa800",
+      "text": "Which timber species were traditionally used as primary materials in Māori architecture?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Oak, ash, and beech"
+        },
+        {
+          "id": "b",
+          "text": "Kauri, rimu, and totara"
+        },
+        {
+          "id": "c",
+          "text": "Teak, mahogany, and cedar"
+        },
+        {
+          "id": "d",
+          "text": "Pine, spruce, and fir"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Oak, ash, and beech are European and Asian species not native to New Zealand.",
+        "c": "Teak, mahogany, and cedar are tropical and Asian species not native to New Zealand.",
+        "d": "Pine, spruce, and fir were not mentioned as traditional Māori building materials.",
+        "correct": "Timber (kauri, rimu, totara) was the primary material—abundant, workable, and imbued with mana (spiritual power).'",
+        "takeaway": "The article states: 'Timber (kauri, rimu, totara) was the primary material—abundant, workable, and imbued with mana (spiritual power).'."
+      },
+      "explanation": "Oak, ash, and beech are European and Asian species not native to New Zealand. Teak, mahogany, and cedar are tropical and Asian species not native to New Zealand. Pine, spruce, and fir were not mentioned as traditional Māori building materials. Timber (kauri, rimu, totara) was the primary material—abundant, workable, and imbued with mana (spiritual power).' The article states: 'Timber (kauri, rimu, totara) was the primary material—abundant, workable, and imbued with mana (spiritual power).'.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "ID"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-015-03-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.310909+00:00",
+      "updated_at": "2026-05-06T13:20:07.195231+00:00",
+      "content_hash": "sha256:fea323cc339d91160436fa98212dbbfd8839c9a47ed44c5d95aaee7a5efc4789"
+    },
+    {
+      "question_id": "559b1240-5da8-422a-b9d9-4bf70cb76dcf",
+      "article_id": "6fd0cdaa-55ed-4847-a740-2779ac5ddded",
+      "topic_id": "27257e41-bfad-4d26-a5e3-495f7beaa800",
+      "text": "What principles from traditional Māori culture are contemporary architects incorporating into modernist design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Purely geometric order and symmetry derived from European traditions"
+        },
+        {
+          "id": "b",
+          "text": "Manaakitanga (hospitality), kaitiakitanga (stewardship), and aroha (compassion)—values reflected in spatial design and community engagement"
+        },
+        {
+          "id": "c",
+          "text": "American commercial building standards and profit maximization"
+        },
+        {
+          "id": "d",
+          "text": "Elimination of all carving and symbolic expression in favor of minimal modernism"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "These are European principles; contemporary Māori architects draw from Māori cultural values.",
+        "c": "American commercial standards are not mentioned as part of cultural integration.",
+        "d": "Contemporary Māori architecture maintains carving and symbolic expression; it does not eliminate them.",
+        "correct": "Architects like Hirini Melbourne and collaborative firms integrate Māori values—manaakitanga (hospitality), kaitiakitanga (stewardship), aroha (compassion)—into architectural practice.'",
+        "takeaway": "The article states: 'Architects like Hirini Melbourne and collaborative firms integrate Māori values—manaakitanga (hospitality), kaitiakitanga (stewardship), aroha (compassion)—into architectural practice.'."
+      },
+      "explanation": "These are European principles; contemporary Māori architects draw from Māori cultural values. American commercial standards are not mentioned as part of cultural integration. Contemporary Māori architecture maintains carving and symbolic expression; it does not eliminate them. Architects like Hirini Melbourne and collaborative firms integrate Māori values—manaakitanga (hospitality), kaitiakitanga (stewardship), aroha (compassion)—into architectural practice.' The article states: 'Architects like Hirini Melbourne and collaborative firms integrate Māori values—manaakitanga (hospitality), kaitiakitanga (stewardship), aroha (compassion)—into architectural practice.'.",
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-015-03-011",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.310909+00:00",
+      "updated_at": "2026-05-06T13:20:07.322962+00:00",
+      "content_hash": "sha256:9060d9e2814d4b9780e804b0c514fb25556ba9a05547559cc831e07bde33650f"
+    },
+    {
+      "question_id": "1171d6c4-b80c-4773-81ed-b6c6d5a6c9b7",
+      "article_id": "6fd0cdaa-55ed-4847-a740-2779ac5ddded",
+      "topic_id": "27257e41-bfad-4d26-a5e3-495f7beaa800",
+      "text": "What is a whare in traditional Māori architecture?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A fortified settlement with palisaded defensive structures, designed to protect inhabitants from external threats"
+        },
+        {
+          "id": "b",
+          "text": "A large communal meeting house with elaborate carving, serving as a central hub for community gatherings and ceremonies"
+        },
+        {
+          "id": "c",
+          "text": "A family dwelling—a simple timber structure with spiritual and spatial significance"
+        },
+        {
+          "id": "d",
+          "text": "A ceremonial space dedicated to spiritual ritual only, often located in a secluded area to maintain its sanctity"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This describes a pā, not a whare.",
+        "b": "This describes a wharenui, not a whare.",
+        "d": "While whare had spiritual significance, they were functional dwellings, not ceremonial spaces only.",
+        "correct": "The article defines whare as 'a family dwelling—a simple timber structure with specific spatial organization and orientation reflecting Māori cosmology and kinship.'",
+        "takeaway": "The article defines whare as 'a family dwelling—a simple timber structure with specific spatial organization and orientation reflecting Māori cosmology and kinship.'."
+      },
+      "explanation": "This describes a pā, not a whare. This describes a wharenui, not a whare. While whare had spiritual significance, they were functional dwellings, not ceremonial spaces only. The article defines whare as 'a family dwelling—a simple timber structure with specific spatial organization and orientation reflecting Māori cosmology and kinship.' The article defines whare as 'a family dwelling—a simple timber structure with specific spatial organization and orientation reflecting Māori cosmology and kinship.'.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "ID"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-015-03-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.310909+00:00",
+      "updated_at": "2026-05-06T13:20:07.448474+00:00",
+      "content_hash": "sha256:796ab3adccb6d065478ae00d8ef148cd3cfd50d997167ee41fe6920880fe74b6"
+    },
+    {
+      "question_id": "20b4057d-e28b-48e0-afea-ebcab750c08b",
+      "article_id": "6fd0cdaa-55ed-4847-a740-2779ac5ddded",
+      "topic_id": "27257e41-bfad-4d26-a5e3-495f7beaa800",
+      "text": "A traditional structure features strategic hilltop positioning, palisaded timber walls, earth ramparts, and internal organization for defense and settlement. Which Māori building type does this describe?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Whare"
+        },
+        {
+          "id": "b",
+          "text": "Wharenui"
+        },
+        {
+          "id": "c",
+          "text": "Pā"
+        },
+        {
+          "id": "d",
+          "text": "Whare kai"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Whare is a family dwelling, not a fortified structure.",
+        "b": "Wharenui is a communal meeting house, not a defensive fortification.",
+        "d": "Whare kai is a food storage structure, not a defense and settlement facility.",
+        "correct": "The article defines pā as 'a fortified settlement with palisaded defensive structures adapted to terrain and strategic position' and notes it is used for 'Defense and settlement' with 'Hilltop or strategic location; palisaded walls.'",
+        "takeaway": "The article defines pā as 'a fortified settlement with palisaded defensive structures adapted to terrain and strategic position' and notes it is used for 'Defense and settlement' with 'Hilltop or strategic location; palisaded walls.'."
+      },
+      "explanation": "Whare is a family dwelling, not a fortified structure. Wharenui is a communal meeting house, not a defensive fortification. Whare kai is a food storage structure, not a defense and settlement facility. The article defines pā as 'a fortified settlement with palisaded defensive structures adapted to terrain and strategic position' and notes it is used for 'Defense and settlement' with 'Hilltop or strategic location; palisaded walls.' The article defines pā as 'a fortified settlement with palisaded defensive structures adapted to terrain and strategic position' and notes it is used for 'Defense and settlement' with 'Hilltop or strategic location; palisaded walls.'.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "recall",
+      "practice_context": [
+        "DESC"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-015-03-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.310909+00:00",
+      "updated_at": "2026-05-06T13:20:07.568378+00:00",
+      "content_hash": "sha256:3b2912a59e429e1c899821fe8b37d380ff72710a819d1555b39be255ec66aeb3"
+    },
     {
       "question_id": "1a3a6c9f-335e-4a8f-8659-5664cf809450",
       "article_id": "6fd0cdaa-55ed-4847-a740-2779ac5ddded",
@@ -39,7 +247,7 @@
         "correct": "Contemporary Māori architects integrate traditional design principles with modernist materials and techniques. Contemporary wharenui combine traditional spatial organization and carved decoration with modern materials and climate control. Architects integrate Māori values—manaakitanga (hospitality), kaitiakitanga (stewardship), aroha (compassion)—into architectural practice.'",
         "takeaway": "Architects integrate Māori values—manaakitanga (hospitality), kaitiakitanga (stewardship), aroha (compassion)—into architectural practice.'."
       },
-      "explanation": null,
+      "explanation": "Contemporary Māori architecture did not reject modernism; it synthesized traditional and modernist approaches. Contemporary Māori architecture explicitly differs from European modernism through cultural integration. Contemporary architecture uses modern materials and techniques; it is not purely historical. Contemporary Māori architects integrate traditional design principles with modernist materials and techniques. Contemporary wharenui combine traditional spatial organization and carved decoration with modern materials and climate control. Architects integrate Māori values—manaakitanga (hospitality), kaitiakitanga (stewardship), aroha (compassion)—into architectural practice.' Architects integrate Māori values—manaakitanga (hospitality), kaitiakitanga (stewardship), aroha (compassion)—into architectural practice.'.",
       "code_citation": null,
       "bloom_level": "analyze",
       "application_context": "design_application",
@@ -53,8 +261,8 @@
       "model_id": "ALE-HIST-015-03-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:25.310909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:b86d2a4dcfe6e1f20c7e1e7e579550c998c77e1dfb4c0cc757949b27ce114637"
+      "updated_at": "2026-05-06T13:20:06.693251+00:00",
+      "content_hash": "sha256:fe8adb8f3cb406518b9f182c8d9f1fc068342c4b6a040b929932c70ccbc83e56"
     },
     {
       "question_id": "93c98999-07df-4022-b0dd-1a807a3a8978",
@@ -91,7 +299,7 @@
         "correct": "Contemporary restoration emerged in late 20th century. Māori communities reclaimed cultural identity through architecture.'",
         "takeaway": "Māori communities reclaimed cultural identity through architecture.'."
       },
-      "explanation": null,
+      "explanation": "Early 19th century saw colonization and suppression, not restoration. Mid-19th century saw continued suppression; the Māori Arts Movement emerged later. While contemporary work continues, the restoration movement began in the late 20th century, not the 21st century. Contemporary restoration emerged in late 20th century. Māori communities reclaimed cultural identity through architecture.' Māori communities reclaimed cultural identity through architecture.'.",
       "code_citation": null,
       "bloom_level": "apply",
       "application_context": "recall",
@@ -105,8 +313,8 @@
       "model_id": "ALE-HIST-015-03-012",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:25.310909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:c7d29178d63e9923ade07e856bf2f8ac6ec0c682bf9aadcb8e54a278d478b9bc"
+      "updated_at": "2026-05-06T13:20:06.826801+00:00",
+      "content_hash": "sha256:d12c7a0eec41d099bea047ef247c7001202ba767737bf01071a494127fea5ad6"
     },
     {
       "question_id": "14429dde-3f40-4e51-a51a-80bea6c6ebdc",
@@ -143,7 +351,7 @@
         "correct": "European colonization (1840 onward) devastated Māori culture and building traditions' and references 'The Treaty of Waitangi (1840).'",
         "takeaway": "The article states: 'European colonization (1840 onward) devastated Māori culture and building traditions' and references 'The Treaty of Waitangi (1840).'."
       },
-      "explanation": null,
+      "explanation": "1788 marks the beginning of Australian colonization, not New Zealand. 1820 is during the early contact period but not the official colonization date. 1870 is decades after colonization began in 1840. European colonization (1840 onward) devastated Māori culture and building traditions' and references 'The Treaty of Waitangi (1840).' The article states: 'European colonization (1840 onward) devastated Māori culture and building traditions' and references 'The Treaty of Waitangi (1840).'.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -157,8 +365,8 @@
       "model_id": "ALE-HIST-015-03-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:25.310909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:eb7a1a8e0424962b3ca94180692787c2838503427416daf15f7309d77a511242"
+      "updated_at": "2026-05-06T13:20:06.953785+00:00",
+      "content_hash": "sha256:f61b499e273686c268082bb92827eba8d6dd4f87647a9a7808358cc18462626c"
     },
     {
       "question_id": "6f5f5b2c-6e24-4ee9-8fde-cc11aaf47fb8",
@@ -247,7 +455,7 @@
         "correct": "The article defines bicultural design as 'A contemporary approach integrating Māori and European-derived design traditions; acknowledges dual heritage; requires Māori community authority.'",
         "takeaway": "The article defines bicultural design as 'A contemporary approach integrating Māori and European-derived design traditions; acknowledges dual heritage; requires Māori community authority.'."
       },
-      "explanation": null,
+      "explanation": "Material usage is not what defines bicultural design; cultural integration is. Bicultural design integrates traditions, not separates them into distinct spaces. Bicultural design requires Māori community authority and principles; it does not prioritize European modernism exclusively. The article defines bicultural design as 'A contemporary approach integrating Māori and European-derived design traditions; acknowledges dual heritage; requires Māori community authority.' The article defines bicultural design as 'A contemporary approach integrating Māori and European-derived design traditions; acknowledges dual heritage; requires Māori community authority.'.",
       "code_citation": null,
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
@@ -261,112 +469,8 @@
       "model_id": "ALE-HIST-015-03-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:25.310909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:9a99ade9873ff71b449126062753f0be7a175997b1c2dcfb8bf5914fba1f9c1f"
-    },
-    {
-      "question_id": "628209c4-7ec4-4e75-9bc8-a43cf6a87f86",
-      "article_id": "6fd0cdaa-55ed-4847-a740-2779ac5ddded",
-      "topic_id": "27257e41-bfad-4d26-a5e3-495f7beaa800",
-      "text": "Which timber species were traditionally used as primary materials in Māori architecture?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Oak, ash, and beech"
-        },
-        {
-          "id": "b",
-          "text": "Kauri, rimu, and totara"
-        },
-        {
-          "id": "c",
-          "text": "Teak, mahogany, and cedar"
-        },
-        {
-          "id": "d",
-          "text": "Pine, spruce, and fir"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Oak, ash, and beech are European and Asian species not native to New Zealand.",
-        "c": "Teak, mahogany, and cedar are tropical and Asian species not native to New Zealand.",
-        "d": "Pine, spruce, and fir were not mentioned as traditional Māori building materials.",
-        "correct": "Timber (kauri, rimu, totara) was the primary material—abundant, workable, and imbued with mana (spiritual power).'",
-        "takeaway": "The article states: 'Timber (kauri, rimu, totara) was the primary material—abundant, workable, and imbued with mana (spiritual power).'."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [
-        "ID"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-HIST-015-03-001",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:25.310909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:ad75482fc973d342f76e5308750c35dcf4434a5ebe2b8570bd8b466b37316024"
-    },
-    {
-      "question_id": "559b1240-5da8-422a-b9d9-4bf70cb76dcf",
-      "article_id": "6fd0cdaa-55ed-4847-a740-2779ac5ddded",
-      "topic_id": "27257e41-bfad-4d26-a5e3-495f7beaa800",
-      "text": "What principles from traditional Māori culture are contemporary architects incorporating into modernist design?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Purely geometric order and symmetry derived from European traditions"
-        },
-        {
-          "id": "b",
-          "text": "Manaakitanga (hospitality), kaitiakitanga (stewardship), and aroha (compassion)—values reflected in spatial design and community engagement"
-        },
-        {
-          "id": "c",
-          "text": "American commercial building standards and profit maximization"
-        },
-        {
-          "id": "d",
-          "text": "Elimination of all carving and symbolic expression in favor of minimal modernism"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "These are European principles; contemporary Māori architects draw from Māori cultural values.",
-        "c": "American commercial standards are not mentioned as part of cultural integration.",
-        "d": "Contemporary Māori architecture maintains carving and symbolic expression; it does not eliminate them.",
-        "correct": "Architects like Hirini Melbourne and collaborative firms integrate Māori values—manaakitanga (hospitality), kaitiakitanga (stewardship), aroha (compassion)—into architectural practice.'",
-        "takeaway": "The article states: 'Architects like Hirini Melbourne and collaborative firms integrate Māori values—manaakitanga (hospitality), kaitiakitanga (stewardship), aroha (compassion)—into architectural practice.'."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "analyze",
-      "application_context": "code_interpretation",
-      "practice_context": [
-        "CON"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-HIST-015-03-011",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:25.310909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:d65df6cbf0ffcbdec15cf0d3d271a44c93b61bf603f343bd2de42b4abe7e4db4"
+      "updated_at": "2026-05-06T13:20:07.076222+00:00",
+      "content_hash": "sha256:e71d504b59cfb4baca049fb3b1f7e9cff5ac27b16f273360f329fd04a67d9534"
     },
     {
       "question_id": "b88d71b1-7c53-4f69-8fe6-89fec4db9567",
@@ -419,58 +523,6 @@
       "created_at": "2026-03-23T19:27:25.310909+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:5583d2eda8e279ce5db977e0f9803d553af308236b33308d8bc5b9265ca16817"
-    },
-    {
-      "question_id": "1171d6c4-b80c-4773-81ed-b6c6d5a6c9b7",
-      "article_id": "6fd0cdaa-55ed-4847-a740-2779ac5ddded",
-      "topic_id": "27257e41-bfad-4d26-a5e3-495f7beaa800",
-      "text": "What is a whare in traditional Māori architecture?",
-      "options": [
-        {
-          "id": "a",
-          "text": "A fortified settlement with palisaded defensive structures, designed to protect inhabitants from external threats"
-        },
-        {
-          "id": "b",
-          "text": "A large communal meeting house with elaborate carving, serving as a central hub for community gatherings and ceremonies"
-        },
-        {
-          "id": "c",
-          "text": "A family dwelling—a simple timber structure with spiritual and spatial significance"
-        },
-        {
-          "id": "d",
-          "text": "A ceremonial space dedicated to spiritual ritual only, often located in a secluded area to maintain its sanctity"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "This describes a pā, not a whare.",
-        "b": "This describes a wharenui, not a whare.",
-        "d": "While whare had spiritual significance, they were functional dwellings, not ceremonial spaces only.",
-        "correct": "The article defines whare as 'a family dwelling—a simple timber structure with specific spatial organization and orientation reflecting Māori cosmology and kinship.'",
-        "takeaway": "The article defines whare as 'a family dwelling—a simple timber structure with specific spatial organization and orientation reflecting Māori cosmology and kinship.'."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [
-        "ID"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-HIST-015-03-002",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:25.310909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:582b10ca6b8647fca106b1a6e2010cec23660f1ec58e721785a2b59ce55c8864"
     },
     {
       "question_id": "6532ca79-8956-4468-aa3f-83aeb9c262ce",
@@ -575,58 +627,6 @@
       "created_at": "2026-03-23T19:27:25.310909+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:58d5f800bd8ceb6cd9a506cb4d92c8bd99e3fd89a11e332a7a173db017fb19d9"
-    },
-    {
-      "question_id": "20b4057d-e28b-48e0-afea-ebcab750c08b",
-      "article_id": "6fd0cdaa-55ed-4847-a740-2779ac5ddded",
-      "topic_id": "27257e41-bfad-4d26-a5e3-495f7beaa800",
-      "text": "A traditional structure features strategic hilltop positioning, palisaded timber walls, earth ramparts, and internal organization for defense and settlement. Which Māori building type does this describe?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Whare"
-        },
-        {
-          "id": "b",
-          "text": "Wharenui"
-        },
-        {
-          "id": "c",
-          "text": "Pā"
-        },
-        {
-          "id": "d",
-          "text": "Whare kai"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Whare is a family dwelling, not a fortified structure.",
-        "b": "Wharenui is a communal meeting house, not a defensive fortification.",
-        "d": "Whare kai is a food storage structure, not a defense and settlement facility.",
-        "correct": "The article defines pā as 'a fortified settlement with palisaded defensive structures adapted to terrain and strategic position' and notes it is used for 'Defense and settlement' with 'Hilltop or strategic location; palisaded walls.'",
-        "takeaway": "The article defines pā as 'a fortified settlement with palisaded defensive structures adapted to terrain and strategic position' and notes it is used for 'Defense and settlement' with 'Hilltop or strategic location; palisaded walls.'."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "apply",
-      "application_context": "recall",
-      "practice_context": [
-        "DESC"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-HIST-015-03-007",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:25.310909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:5f0f0867d215589bd1ff9e365af14f3040fba0b03415d0ca17adf1d6014d46d3"
     }
   ]
 }
