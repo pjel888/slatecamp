@@ -1,9 +1,9 @@
 # Environment Contract
 
-**Status:** Current after 2026-05-05 launch-hardening and Supabase verification attempt.
+**Status:** Current after 2026-05-09 OpenRouter provider integration pass.
 **Canonical detailed inventory:** `.ai/environment.md`.
 
-Current launch is payment-free and live-AI-provider-free. LemonSqueezy is no longer a runtime launch integration. Do not require `LEMONSQUEEZY_*`, `PAYREX_*`, `OPENAI_API_KEY`, or `ANTHROPIC_API_KEY` variables for the current launch unless a future PR deliberately reintroduces paid/live-AI behavior.
+Current launch is payment-free and live-AI-provider-free. LemonSqueezy is no longer a runtime launch integration. Do not require `LEMONSQUEEZY_*`, `PAYREX_*`, `OPENROUTER_API_KEY`, `OPENAI_API_KEY`, or `ANTHROPIC_API_KEY` variables for the current launch unless a future PR deliberately reintroduces paid/live-AI behavior.
 
 Payment and live AI provider env vars are not blockers for the current launch.
 
@@ -36,9 +36,11 @@ Payment and live AI provider env vars are not blockers for the current launch.
 | `PAYMENT_PROVIDER` | Future paid launch only; only `payrex` is supported | `src/lib/payments/provider.ts` | Unsupported values throw. |
 | `PAYREX_SECRET_KEY` | Deferred; required only before future live PayRex checkout | `src/lib/payrex/config.ts` | Not needed for current payment-free launch. |
 | `PAYREX_WEBHOOK_SECRET` | Deferred; required only before future live PayRex webhooks | `src/app/api/webhooks/payrex/route.ts` | Verify in staging before future paid launch. |
-| `AI_PROVIDER` | Deferred; required only before future live AI features | `src/lib/ai/` | Not needed for current live-AI-free launch. |
-| `OPENAI_API_KEY` | Deferred; required only before future OpenAI-backed live AI features | AI provider abstractions | Not needed for current live-AI-free launch. |
-| `ANTHROPIC_API_KEY` | Deferred; required only before future Anthropic-backed live AI features | AI provider abstractions | Not needed for current live-AI-free launch. |
+| `AI_PROVIDER` | Deferred; required only before future live AI features. Use `openrouter` for the preferred provider path; `openai` and `anthropic` remain direct fallback modes. | `src/lib/ai/` | Not needed for current live-AI-free launch. |
+| `OPENROUTER_API_KEY` | Deferred; required only when `AI_PROVIDER=openrouter` for future live AI features | `src/lib/ai/provider.ts`, `src/lib/actions/teach-back.ts`, `scripts/normalize-distractors.ts`, `scripts/sanitize-article-refs.ts` | Paste only in server/local env such as `.env.local`; never expose as `NEXT_PUBLIC_*`. |
+| `OPENROUTER_BASE_URL`, `OPENROUTER_CHAT_MODEL`, `OPENROUTER_EMBEDDING_MODEL`, `OPENROUTER_HTTP_REFERER`, `OPENROUTER_APP_TITLE` | Deferred/optional OpenRouter tuning and attribution | `src/lib/ai/provider.ts` | Defaults exist for base URL, chat model, embedding model, and app title. `OPENROUTER_HTTP_REFERER` falls back to `NEXT_PUBLIC_APP_URL`; keep embedding dimension compatibility unless re-indexing. |
+| `OPENAI_API_KEY`, `OPENAI_CHAT_MODEL`, `OPENAI_EMBEDDING_MODEL` | Deferred; required/used only for legacy direct OpenAI fallback | `src/lib/ai/provider.ts` | Not required for current launch or OpenRouter mode. Model override vars are optional. |
+| `ANTHROPIC_API_KEY`, `ANTHROPIC_CHAT_MODEL` | Deferred; required/used only for legacy direct Anthropic fallback | `src/lib/ai/provider.ts` | Not required for current launch or OpenRouter mode. Chat model override var is optional. Anthropic direct mode covers chat; embedding calls still require direct OpenAI fallback because Anthropic has no native embedding endpoint. |
 | `PLAYWRIGHT_*`, `PERF_*`, `AUDIT_BASE_URL` | Test/performance automation only | E2E/perf scripts | Not production secrets. |
 
 ## Platform verification status

@@ -9,6 +9,7 @@
  * Dry run:  bun run scripts/sanitize-article-refs.ts --dry-run
  */
 
+import { getAIProvider } from "../src/lib/ai/provider";
 import { createClient } from "@supabase/supabase-js";
 import fs from "fs";
 import path from "path";
@@ -49,6 +50,7 @@ const supabase = createClient(
   process.env.SUPABASE_SERVICE_ROLE_KEY!,
   { auth: { autoRefreshToken: false, persistSession: false } }
 );
+const aiProvider = getAIProvider();
 
 /** Execute raw SQL via Supabase RPC */
 async function _sql<T = Record<string, unknown>>(
@@ -377,27 +379,8 @@ async function tier2LLMRewrite() {
     return tier2Rows.length;
   }
 
-  // Rewrite using OpenAI
-  const apiKey = process.env.OPENAI_API_KEY;
-  if (!apiKey) throw new Error("OPENAI_API_KEY not set in environment");
-
-  const rewrites: { id: string; newText: string }[] = [];
-
-  for (const q of tier2Rows) {
-    const resp = await fetch("https://api.openai.com/v1/chat/completions", {
-      method: "POST",
-      headers: {
-        Authorization: `Bearer ${apiKey}`,
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        model: "gpt-4o-mini",
-        temperature: 0,
-        max_tokens: 500,
-        messages: [
-          {
-            role: "system",
-            content: `You rewrite exam questions to remove references to source articles/texts.
+  // Rewrite using the configured AI provider
+  const systemPrompt = `You rewrite exam questions to remove references to source articles/texts.
 
 Rules:
 - Remove phrases like "According to the article", "Based on the article", "the article states", "as discussed in [title]", "Top 50 Traps article"
@@ -406,25 +389,18 @@ Rules:
 - Do NOT change the difficulty or scope of the question
 - Do NOT add new information
 - References to LEGAL articles (e.g., "Article 1723 of the Civil Code", "PEC Article 700") must be PRESERVED — those are real law citations
-- Return ONLY the rewritten question text, nothing else`,
-          },
-          {
-            role: "user",
-            content: q.text,
-          },
-        ],
-      }),
-    });
+- Return ONLY the rewritten question text, nothing else`;
 
-    if (!resp.ok) {
-      const errText = await resp.text();
-      throw new Error(`OpenAI API error: ${resp.status} ${errText}`);
-    }
+  const rewrites: { id: string; newText: string }[] = [];
 
-    const json = (await resp.json()) as {
-      choices: { message: { content: string } }[];
-    };
-    const newText = json.choices[0]?.message?.content?.trim();
+  for (const q of tier2Rows) {
+    const newText = (
+      await aiProvider.generateCompletion(q.text, {
+        systemPrompt,
+        temperature: 0,
+        maxTokens: 500,
+      })
+    ).trim();
 
     if (!newText) {
       log("4", `Warning: Empty LLM response for ${q.question_id}, keeping original.`);

@@ -8,11 +8,11 @@
 
 **Scope:** `src/lib/ai/` subtree
 
-**Current snapshot:** 0 directories and 2 files beneath this scope (excluding this `AGENTS.md`).
+**Current snapshot:** 0 directories and 3 files beneath this scope (excluding this `AGENTS.md`).
 
 **Top local directories:** none
 
-**Top local files:** `prompts.ts`, `provider.ts`
+**Top local files:** `prompts.ts`, `provider.test.ts`, `provider.ts`
 
 ### What agents must do here
 - Inspect live call sites, tests, schema/config dependencies, and adjacent helpers before editing this logic layer.

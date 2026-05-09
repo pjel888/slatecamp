@@ -49,7 +49,7 @@ The following inventory is generated from files with `'use server'`, files under
 | `src/lib/supabase/bootstrap.ts` | src | `bootstrapUser` | Supabase | — |
 | `src/lib/audit/audit-actions.ts` | src | `getAuditLogsAction` | — | — |
 | `src/lib/focus-review/generate-queue.ts` | src | `generateFocusReviewQueue`, `completeFocusReviewQueue`, `deferFocusReviewQueue`, `getActiveFocusReviewQueue` | Supabase | — |
-| `src/lib/actions/teach-back.ts` | teach-back.ts | `getTeachBackCriteria`, `submitTeachBack`, `submitRevision` | Supabase | ANTHROPIC_API_KEY |
+| `src/lib/actions/teach-back.ts` | teach-back.ts | `getTeachBackCriteria`, `submitTeachBack`, `submitRevision` | Supabase + shared AI provider | `AI_PROVIDER`; `OPENROUTER_API_KEY` when OpenRouter is enabled; legacy `ANTHROPIC_API_KEY` only for direct Anthropic fallback |
 | `src/lib/actions/dashboard-page.ts` | dashboard-page.ts | `getDashboardPageData`, `getDashboardSyncPayload` | Supabase | — |
 | `src/lib/actions/pods.ts` | pods.ts | `createPod`, `joinPod`, `leavePod`, `getPodData`, `getUserPods` | Supabase | — |
 | `src/lib/actions/lab.ts` | lab.ts | `record3DLabInteraction`, `create3DLabSession`, `get3DModuleBySlug` | Supabase | — |
