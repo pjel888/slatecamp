@@ -663,7 +663,7 @@ const SetbackQuizOverlay = ({
                     event.stopPropagation()
                     onSelectOption(option.id)
                   }}
-                  className={`min-w-0 rounded-[5px] border px-1.5 py-1 text-left transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/35 ${
+                  className={`min-w-0 cursor-pointer rounded-[5px] border px-1.5 py-1 text-left transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/35 ${
                     selected
                       ? option.isCorrect
                         ? 'border-camp-green/45 bg-camp-green/12 text-slate-950'
