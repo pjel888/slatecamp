@@ -3,13 +3,14 @@
 import { useEffect } from 'react'
 import { useThree } from '@react-three/fiber'
 import * as THREE from 'three'
+import { SCENE_COLORS } from '../../constants/scene-colors'
 
 // ─── Scene Constants (from UX Plan §01) ──────────────────────────────────────
 
-/** Sky / canvas clear color — matches Site Development Controls */
-export const SKY_COLOR = '#F2F0EB'
-/** Ground plane — matches Site Development Controls (slate-100) */
-export const GROUND_COLOR = '#f1f5f9'
+/** Sky / canvas clear color — pure white viewport background. */
+export const SKY_COLOR = SCENE_COLORS.skyWhite
+/** Ground plane — slightly darker than white for spatial separation. */
+export const GROUND_COLOR = SCENE_COLORS.groundLight
 
 // ─── Sky + Tone Mapping + Fog (must attach to scene, not group) ──────────────
 
@@ -56,8 +57,8 @@ interface SceneBaseProps {
  * SceneBase — universal scene foundation for all 3D Lab modules.
  *
  * Implements the architectural diagram visual language (UX Plan §01):
- * - Sky: #EEF2FA via gl.setClearColor
- * - Ground: #D4CFC4 explicit mesh
+ * - Sky: white via gl.setClearColor
+ * - Ground: slightly darker explicit mesh
  * - Fog: attached directly to scene object (not via JSX attach)
  * - ContactShadows: soft ground contact
  * - ACESFilmicToneMapping + SRGBColorSpace
@@ -73,7 +74,7 @@ export function SceneBase({
     <>
       <SceneSetup showFog={showFog} fogNear={fogNear} fogFar={fogFar} />
 
-      {/* Ground plane — explicit warm stone geometry */}
+      {/* Ground plane — explicit light neutral geometry */}
       {showGround && (
         <mesh
           rotation={[-Math.PI / 2, 0, 0]}

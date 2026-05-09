@@ -23,7 +23,7 @@ import { DevControlsSceneContent } from '@/features/3d-lab/DevControlsModule/can
 import { DevControlsLeftSidebar, DevControlsRightSidebar, DevControlsStatusContent } from '@/features/3d-lab/DevControlsModule/dashboard/DevControlsShellSlots'
 import { DevControlsLayerToggles } from '@/features/3d-lab/DevControlsModule/dashboard/DevControlsLayerToggles'
 import { SharedToolbarBridge } from '@/features/3d-lab/DevControlsModule/dashboard/SharedToolbarBridge'
-import { CAMERA_PRESETS as SITE_DEV_CAMERA_PRESETS } from '@/features/3d-lab/DevControlsModule/canvas/constants'
+import { CAMERA_PRESETS as SITE_DEV_CAMERA_PRESETS, SCENE as SITE_DEV_SCENE } from '@/features/3d-lab/DevControlsModule/canvas/constants'
 import { createModuleStore } from '@/features/3d-lab/stores/createModuleStore'
 import { getModuleById } from '@/features/3d-lab/config/registry'
 import {
@@ -229,7 +229,7 @@ export const useTemplateContent = (
                       showGround: false,
                       disableLighting: true,
                       disableSceneBase: true,
-                      clearColor: '#F2F0EB',
+                      clearColor: SITE_DEV_SCENE.SKY_COLOR,
                       cameraControls: siteDevelopmentCameraControls,
                     },
                   )}

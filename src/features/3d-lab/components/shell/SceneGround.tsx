@@ -7,15 +7,20 @@
 import { GizmoHelper, GizmoViewport, Grid } from '@react-three/drei'
 import * as THREE from 'three'
 import { useViewportShellStore } from '@/features/3d-lab/stores/useViewportShellStore'
+import { SCENE_COLORS } from '@/features/3d-lab/constants/scene-colors'
 
 const GRID_RADIUS = 1200
+// Keep the visual grid essentially coplanar with the floor while avoiding
+// z-fighting against model/ground planes that sit at y=0.
+const GRID_Y_OFFSET = -0.01
+const BACKGROUND_GRID_Y_OFFSET = GRID_Y_OFFSET - 0.002
 const GIZMO_MARGIN: [number, number] = [60, 150]
 
 const GroundGrid = () => {
   return (
     <>
       <Grid
-        position={[0, 0, 0]}
+        position={[0, GRID_Y_OFFSET, 0]}
         userData={{
           slatecampCameraFitExclude: true,
           slatecampCameraClipInclude: true,
@@ -35,7 +40,7 @@ const GroundGrid = () => {
         sectionThickness={1}
       />
       <Grid
-        position={[0, -0.002, 0]}
+        position={[0, BACKGROUND_GRID_Y_OFFSET, 0]}
         userData={{ slatecampCameraFitExclude: true }}
         args={[GRID_RADIUS * 2, GRID_RADIUS * 2]}
         fadeDistance={GRID_RADIUS}
@@ -44,8 +49,8 @@ const GroundGrid = () => {
         side={THREE.DoubleSide}
         cellSize={10}
         sectionSize={50}
-        cellColor="#d7d3ca"
-        sectionColor="#8f8a80"
+        cellColor={SCENE_COLORS.groundGridCell}
+        sectionColor={SCENE_COLORS.groundGridSection}
         cellThickness={0.45}
         sectionThickness={1.4}
       />

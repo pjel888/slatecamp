@@ -29,6 +29,7 @@ import { usePaintStore } from '@/app/calculators/_stores/paintStore'
 import { useDrywallStore } from '@/app/calculators/_stores/drywallStore'
 import { useCHBStore } from '@/app/calculators/_stores/chbStore'
 import { FloatingCameraBar, getCalcCameraPresets, type CalcCameraPreset } from '@/components/calculators/FloatingCameraBar'
+import { SCENE_COLORS } from '@/features/3d-lab/constants/scene-colors'
 import type { CalculatorConfig } from '../types/templates'
 import Link from 'next/link'
 import { ROUTES } from '@/lib/routes'
@@ -138,7 +139,7 @@ function CalculatorSceneContent({
             cameraTarget: cam.target,
             cameraFov: cam.fov,
             cameraZoom: cam.zoom,
-            clearColor: '#F2F0EB',
+            clearColor: SCENE_COLORS.skyWhite,
             cameraControls: buildCalculatorCameraControls(presets),
           }}
         >
