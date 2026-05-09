@@ -3,7 +3,8 @@
 import { type CSSProperties, useEffect, useMemo, useRef, useState } from 'react'
 import { Canvas, useFrame, useThree } from '@react-three/fiber'
 import { Edges, OrbitControls, PerspectiveCamera } from '@react-three/drei'
-import { Pause, Play } from '@phosphor-icons/react/dist/ssr'
+import { HouseLine, Lightbulb, Pause, Play } from '@phosphor-icons/react/dist/ssr'
+import { motion } from 'framer-motion'
 import { CanvasTexture, SRGBColorSpace, type Group } from 'three'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { WebGLErrorBoundary } from '@/components/r3f/WebGLErrorBoundary'
@@ -593,15 +594,18 @@ const SetbackQuizOverlay = ({
   return (
     <aside
       aria-label='R-1 setback quiz modal'
-      className='absolute inset-x-0 top-0 z-30 w-full cursor-default overflow-hidden rounded-lg border border-white/38 bg-slate-100/[0.18] p-0 text-left shadow-[0_16px_44px_rgba(15,23,42,0.10)] ring-1 ring-slate-900/[0.028] backdrop-blur-[10px] backdrop-saturate-125'
+      className={`absolute inset-x-0 top-0 z-30 w-full cursor-default overflow-hidden rounded-lg border border-white/38 bg-slate-100/[0.18] p-0 text-left shadow-[0_16px_44px_rgba(15,23,42,0.10)] ring-1 ring-slate-900/[0.028] backdrop-blur-[10px] backdrop-saturate-125 ${selectedOptionId ? 'opacity-100' : 'opacity-60 hover:opacity-100'}`}
       onPointerDown={(event) => event.stopPropagation()}
       onWheel={(event) => event.stopPropagation()}
     >
-      <div className='flex items-center justify-between border-b border-white/28 bg-white/[0.14] p-1' data-testid='hero-setback-quiz-header'>
-        <p className='font-[family-name:var(--font-dm-mono)] text-[8px] font-bold uppercase tracking-[0.18em] text-slate-500'>
+      <div className='grid grid-cols-3 items-center border-b border-white/28 bg-white/[0.14] p-1' data-testid='hero-setback-quiz-header'>
+        <span className='justify-self-start rounded-full border border-primary/25 bg-primary/10 px-2 py-0.5 font-[family-name:var(--font-dm-mono)] text-[8px] font-bold uppercase tracking-[0.12em] text-primary'>
+          Question
+        </span>
+        <p className='text-center font-[family-name:var(--font-dm-mono)] text-[8px] font-bold uppercase tracking-[0.18em] text-slate-500'>
           Site rule check
         </p>
-        <span className='rounded-full border border-camp-amber/25 bg-camp-amber/10 px-2 py-0.5 font-[family-name:var(--font-dm-mono)] text-[8px] font-bold uppercase tracking-[0.12em] text-camp-amber'>
+        <span className='justify-self-end rounded-full border border-camp-amber/25 bg-camp-amber/10 px-2 py-0.5 font-[family-name:var(--font-dm-mono)] text-[8px] font-bold uppercase tracking-[0.12em] text-camp-amber'>
           PD 1096
         </span>
       </div>
@@ -880,6 +884,63 @@ export const HeroHousePreview = () => {
         />
       </div>
       <CorrectSetbackSuccessEffect effectKey={successEffectKey} reducedMotion={reducedMotion} />
+
+      <motion.div
+        drag
+        dragMomentum
+        dragElastic={0.1}
+        animate={{ y: [0, -6, 0] }}
+        transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
+        whileHover={{ scale: 1.02 }}
+        whileTap={{ scale: 0.98 }}
+        onPointerDown={(e) => e.stopPropagation()}
+        onWheel={(e) => e.stopPropagation()}
+        className='absolute z-[35] w-[220px] cursor-grab rounded-xl border border-white/30 bg-white/[0.14] p-2 shadow-[0_8px_28px_rgba(15,23,42,0.12)] backdrop-blur-md active:cursor-grabbing'
+        style={{ left: '-8.5rem', bottom: 'calc(var(--hero-slider-stack-height) + 2.5rem)' }}
+      >
+        <div className='flex items-start gap-2.5'>
+          <span className='inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-camp-amber/18 text-camp-amber'>
+            <SCIcon icon={Lightbulb} size='xs' weight='fill' />
+          </span>
+          <div>
+            <p className='text-[9px] font-bold uppercase tracking-wider text-camp-amber'>
+              Did you know?
+            </p>
+            <p className='text-[10px] font-medium leading-tight text-slate-950'>
+              RA 9266 was signed March 17, 2004 — replacing the 54-year-old RA 545 and giving architects the exclusive right to sign and seal architectural plans.
+            </p>
+          </div>
+        </div>
+      </motion.div>
+
+      <motion.div
+        drag
+        dragMomentum
+        dragElastic={0.1}
+        animate={{ y: [0, -6, 0] }}
+        transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut', delay: 1.5 }}
+        whileHover={{ scale: 1.02 }}
+        whileTap={{ scale: 0.98 }}
+        onPointerDown={(e) => e.stopPropagation()}
+        onWheel={(e) => e.stopPropagation()}
+        className='absolute z-[35] w-[220px] cursor-grab rounded-xl border border-white/30 bg-white/[0.14] p-2 shadow-[0_8px_28px_rgba(15,23,42,0.12)] backdrop-blur-md active:cursor-grabbing'
+        style={{ right: '-7.5rem', top: 'calc(var(--hero-question-card-height) + 2.25rem)' }}
+      >
+        <div className='flex items-start gap-2.5'>
+          <span className='inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-camp-green/18 text-camp-green'>
+            <SCIcon icon={HouseLine} size='xs' weight='fill' />
+          </span>
+          <div>
+            <p className='text-[9px] font-bold uppercase tracking-wider text-camp-green'>
+              Did you know?
+            </p>
+            <p className='text-[10px] font-medium leading-tight text-slate-950'>
+              Setbacks create firebreaks, ensure safe emergency access, and guarantee every building receives natural light and ventilation.
+            </p>
+          </div>
+        </div>
+      </motion.div>
+
       <p className='sr-only'>Drag the three-dimensional 16 by 32 meter lot model to orbit it.</p>
       <p className='sr-only' aria-live='polite'>
         {setbackVisualizationText}

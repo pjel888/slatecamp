@@ -25,6 +25,7 @@ import {
   NoiseOverlay,
 } from '@/components/marketing/LandingPrimitives'
 import { SCIcon } from '@/components/graphics/icons/Icon'
+import { cn } from '@/lib/utils'
 import {
   Dialog,
   DialogBody,
@@ -33,6 +34,12 @@ import {
   DialogHeader,
   DialogTitle,
 } from '@/components/ui/dialog'
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from '@/components/ui/tooltip'
 
 const FEATURE_PREVIEWS = [
   {
@@ -188,7 +195,7 @@ export const HeroSection = ({
   ctaLabel: string
 }) => {
   const sectionRef = useRef<HTMLElement>(null)
-  const knowRef = useRef<HTMLSpanElement>(null)
+  const phraseRef = useRef<HTMLSpanElement>(null)
   const winRef = useRef<HTMLSpanElement>(null)
   const lastPointerRef = useRef({ x: 0, y: 0 })
   const fadeTimerRef = useRef<number | null>(null)
@@ -249,14 +256,14 @@ export const HeroSection = ({
     }
 
     const drawAnnotations = () => {
-      if (cancelled || !knowRef.current || !winRef.current) return
+      if (cancelled || !phraseRef.current || !winRef.current) return
 
       removeAnnotations()
 
       const shouldAnimate = !window.matchMedia(
         '(prefers-reduced-motion: reduce)',
       ).matches
-      const underline = annotate(knowRef.current, {
+      const underline = annotate(phraseRef.current, {
         type: 'underline',
         color: '#E8853A',
         strokeWidth: 3,
@@ -353,15 +360,15 @@ export const HeroSection = ({
       />
       <div
         aria-hidden='true'
-        className='pointer-events-none absolute inset-0 z-0 opacity-[0.16] [background-image:radial-gradient(circle_at_center,rgba(15,23,42,0.36)_1px,transparent_1px)] [background-size:24px_24px]'
+        className='pointer-events-none absolute inset-0 z-0 opacity-[0.16] [background-image:radial-gradient(circle_at_center,rgba(15,23,42,0.36)_1px,transparent_1px)] [background-size:12px_12px]'
       />
       <NoiseOverlay opacity={0.028} />
 
       <div className='relative z-10 mx-auto grid min-h-[calc(100svh-18rem)] w-full max-w-[1240px] -translate-y-4 items-start gap-10 pb-40 sm:-translate-y-5 md:translate-y-0 md:pb-48 lg:min-h-[calc(100svh-20rem)] lg:grid-cols-[minmax(0,700px)_minmax(340px,500px)] lg:-translate-y-1 lg:pb-60'>
         <div className='max-w-[760px] py-8 lg:py-12'>
           <div className='motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-300 flex items-center gap-2'>
-            <Starburst className='h-3 w-3 text-camp-amber' />
-            <span className='font-[family-name:var(--font-dm-mono)] text-[12px] font-semibold uppercase tracking-[0.24em] text-camp-amber'>
+            <Starburst className='h-3 w-3 text-primary' />
+            <span className='font-[family-name:var(--font-dm-mono)] text-[12px] font-semibold uppercase tracking-[0.24em] text-primary'>
               Architecture knowledge atlas
             </span>
           </div>
@@ -372,12 +379,14 @@ export const HeroSection = ({
           >
             <span className='relative inline-block pb-3'>
               <span className='relative z-10 text-slate-950 drop-shadow-[0_18px_38px_rgba(15,23,42,0.14)]'>
-                <span ref={knowRef} className='relative inline-block'>
-                  Know
-                </span>{' '}
-                <span>you’ll</span>{' '}
-                <span ref={winRef} className='relative inline-block'>
-                  win
+                <span ref={phraseRef} className='relative inline-block'>
+                  <span className='relative inline-block'>
+                    Know
+                  </span>{' '}
+                  <span>you’ll</span>{' '}
+                  <span ref={winRef} className='relative inline-block'>
+                    win
+                  </span>
                 </span>
                 .
               </span>
@@ -389,9 +398,7 @@ export const HeroSection = ({
           </h1>
 
           <p className='motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:delay-200 motion-safe:duration-300 mt-7 max-w-[560px] text-[16px] font-semibold leading-[1.48] text-slate-700 sm:text-[17px]'>
-            SlateCamp is a supplementary architecture learning resource: wiki
-            notes, code explainers, quizzes, 3D visuals, and tools for school,
-            board review, and self-study.
+            SlateCamp shows you how PD 1096, RA 9514, and BP 344 actually work — in 3D, with quizzes that explain why, and a quick free check that points you to what to study next.
           </p>
 
           <div className='motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:delay-300 motion-safe:duration-300 mt-7 flex flex-wrap items-center gap-3'>
@@ -404,7 +411,7 @@ export const HeroSection = ({
           </div>
 
           <p className='motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:delay-500 motion-safe:duration-300 mt-4 max-w-[360px] text-[12px] font-semibold leading-relaxed text-slate-500'>
-            Use it beside your books, notes, mentors, and review materials.
+            Free
           </p>
         </div>
 
@@ -438,62 +445,92 @@ export const HeroSection = ({
                 <span className='h-1.5 w-2.5 rounded-full bg-slate-900/10' />
               </div>
             </div>
-            <motion.div
-              className='grid gap-2 p-3 pb-12 md:grid-cols-4'
-              variants={FEATURE_PREVIEW_GRID_VARIANTS}
-              initial={shouldReduceMotion ? false : 'hidden'}
-              animate='visible'
-            >
-              {FEATURE_PREVIEWS.map((feature) => (
-                <motion.div
-                  key={feature.id}
-                  className='h-full'
-                  data-testid={`hero-feature-card-motion-${feature.id}`}
-                  data-motion='bottom-up-stagger'
-                  variants={FEATURE_PREVIEW_CARD_VARIANTS}
-                >
-                  <button
-                    type='button'
-                    aria-label={`Play ${feature.label} feature video`}
-                    onClick={() => setActiveFeature(feature)}
-                    className={`group relative flex h-full min-h-[184px] w-full cursor-pointer flex-col justify-between rounded-lg border border-white/40 bg-white/30 p-4 text-left opacity-[0.72] shadow-inner shadow-white/45 transition duration-150 hover:-translate-y-0.5 hover:border-white/56 hover:bg-white/44 hover:opacity-100 hover:shadow-[0_18px_42px_rgba(15,23,42,0.12)] focus-visible:opacity-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/35 focus-visible:ring-offset-2 focus-visible:ring-offset-white ${feature.ring}`}
+            <TooltipProvider delay={0}>
+              <motion.div
+                className='grid gap-2 p-3 pb-12 md:grid-cols-4'
+                variants={FEATURE_PREVIEW_GRID_VARIANTS}
+                initial={shouldReduceMotion ? false : 'hidden'}
+                animate='visible'
+              >
+                {FEATURE_PREVIEWS.map((feature) => (
+                  <motion.div
+                    key={feature.id}
+                    className='h-full'
+                    data-testid={`hero-feature-card-motion-${feature.id}`}
+                    data-motion='bottom-up-stagger'
+                    variants={FEATURE_PREVIEW_CARD_VARIANTS}
                   >
-                    <div>
-                      <div className='mb-3 flex items-center justify-between gap-3 font-[family-name:var(--font-dm-mono)] text-[9px] font-bold uppercase tracking-[0.18em] text-slate-500'>
-                        <span className='inline-flex items-center gap-2'>
-                          <span
-                            className={`inline-flex h-8 w-8 items-center justify-center rounded-full ${feature.accent} text-white shadow-sm shadow-slate-900/10`}
-                          >
-                            <SCIcon icon={feature.icon} size='xs' weight='bold' />
-                          </span>
-                          <span>{feature.eyebrow}</span>
-                        </span>
-                        <span
-                          className='relative inline-flex h-8 w-8 shrink-0 cursor-pointer items-center justify-center rounded-full border border-rose-200/70 bg-white/72 text-rose-400 shadow-[0_8px_18px_rgba(148,76,76,0.12)] transition group-hover:scale-105 group-hover:border-rose-300/80 group-hover:bg-white/88 group-hover:text-rose-500'
-                          aria-hidden='true'
+                    <Tooltip>
+                      <TooltipTrigger asChild>
+                        <button
+                          type='button'
+                          aria-label={`Play ${feature.label} feature video`}
+                          onClick={() => setActiveFeature(feature)}
+                          className={`group relative flex h-full min-h-[184px] w-full cursor-pointer flex-col justify-between rounded-lg border border-white/40 bg-white/30 p-4 text-left opacity-[0.72] shadow-inner shadow-white/45 transition duration-150 hover:-translate-y-0.5 hover:border-white/56 hover:bg-white/44 hover:opacity-100 hover:shadow-[0_18px_42px_rgba(15,23,42,0.12)] focus-visible:opacity-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/35 focus-visible:ring-offset-2 focus-visible:ring-offset-white ${feature.ring}`}
                         >
-                          {feature.id === 'quizzes' ? (
-                            <span className='absolute -right-1 bottom-full mb-1.5 whitespace-nowrap rounded-md border border-rose-200/70 bg-white px-2.5 py-1 font-[family-name:var(--font-dm-mono)] text-[8px] font-extrabold uppercase tracking-[0.12em] text-rose-500 shadow-[0_8px_20px_rgba(15,23,42,0.12)] before:absolute before:right-3 before:top-full before:h-2 before:w-2 before:-translate-y-1 before:rotate-45 before:border-b before:border-r before:border-rose-200/70 before:bg-white'>
-                              Watch this feature
-                            </span>
-                          ) : null}
-                          <SCIcon icon={Play} size='xs' weight='fill' />
-                        </span>
-                      </div>
-                      <p className='text-[16px] font-extrabold leading-tight text-slate-950'>
-                        {feature.title}
-                      </p>
-                      <p className='mt-2 line-clamp-2 text-[11px] font-medium leading-relaxed text-slate-600'>
-                        {feature.body}
-                      </p>
-                    </div>
-                    <div className='mt-4'>
-                      <FeatureIllustration feature={feature} />
-                    </div>
-                  </button>
-                </motion.div>
-              ))}
-            </motion.div>
+                          <div>
+                            <div className='mb-3 flex items-center justify-between gap-3 font-[family-name:var(--font-dm-mono)] text-[9px] font-bold uppercase tracking-[0.18em] text-slate-500'>
+                              <span className='inline-flex items-center gap-2'>
+                                <span
+                                  className={`inline-flex h-8 w-8 items-center justify-center rounded-full ${feature.accent} text-white shadow-sm shadow-slate-900/10`}
+                                >
+                                  <SCIcon icon={feature.icon} size='xs' weight='bold' />
+                                </span>
+                                <span>{feature.eyebrow}</span>
+                              </span>
+                              <span
+                                className='relative inline-flex h-8 w-8 shrink-0 cursor-pointer items-center justify-center rounded-full border border-rose-200/70 bg-white/72 text-rose-400 shadow-[0_8px_18px_rgba(148,76,76,0.12)] transition group-hover:scale-105 group-hover:border-rose-300/80 group-hover:bg-white/88 group-hover:text-rose-500'
+                                aria-hidden='true'
+                              >
+                                <SCIcon icon={Play} size='xs' weight='fill' />
+                              </span>
+                            </div>
+                            <p className='text-[16px] font-extrabold leading-tight text-slate-950'>
+                              {feature.title}
+                            </p>
+                            <p className='mt-2 line-clamp-2 text-[11px] font-medium leading-relaxed text-slate-600'>
+                              {feature.body}
+                            </p>
+                          </div>
+                          <div className='mt-4'>
+                            <FeatureIllustration feature={feature} />
+                          </div>
+                        </button>
+                      </TooltipTrigger>
+                      <TooltipContent
+                        side='top'
+                        sideOffset={16}
+                        className='max-w-none w-[300px] overflow-hidden rounded-xl border border-slate-200/50 bg-white p-0 text-slate-950 shadow-[0_24px_60px_rgba(15,23,42,0.16)] data-open:animate-in data-open:fade-in-0 data-open:slide-in-from-bottom-2 data-open:zoom-in-95 data-[state=delayed-open]:animate-in data-[state=delayed-open]:fade-in-0 data-[state=delayed-open]:slide-in-from-bottom-2 data-[state=delayed-open]:zoom-in-95 data-closed:animate-out data-closed:fade-out-0 data-closed:zoom-out-95'
+                        arrowClassName='bg-white fill-white'
+                      >
+                        <div className='flex'>
+                          <div className='relative w-[150px] flex-shrink-0 overflow-hidden aspect-[4/3]'>
+                            <div className={cn('absolute inset-0', feature.accent)} />
+                            <div className='absolute inset-0 bg-gradient-to-br from-white/25 to-black/10' />
+                            <div className='relative flex h-full items-center justify-center'>
+                              <SCIcon
+                                icon={feature.icon}
+                                size='2xl'
+                                weight='fill'
+                                className='text-white drop-shadow-md'
+                              />
+                            </div>
+                          </div>
+                          <div className='flex flex-1 flex-col justify-center p-4'>
+                            <p className='text-[13px] font-extrabold leading-tight text-slate-950'>
+                              {feature.title}
+                            </p>
+                            <p className='mt-1.5 text-[11px] font-medium leading-relaxed text-slate-600'>
+                              {feature.body}
+                            </p>
+                          </div>
+                        </div>
+                      </TooltipContent>
+                    </Tooltip>
+                  </motion.div>
+                ))}
+              </motion.div>
+            </TooltipProvider>
           </div>
         </div>
       </div>
