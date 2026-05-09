@@ -57,6 +57,10 @@ const readJsonIfExists = (file) => {
   return JSON.parse(fs.readFileSync(file, 'utf8'))
 }
 
+const removeIfExists = (file) => {
+  if (fs.existsSync(file)) fs.rmSync(file, { force: true })
+}
+
 const routeSummary = (payload) => {
   const route = payload?.routeSummaries?.find((entry) => entry.route === '/dashboard/3d-lab') ?? payload?.routeSummaries?.[0]
   return route
@@ -78,35 +82,55 @@ const routeSummary = (payload) => {
 fs.writeFileSync(commandLog, `3D Lab built-auth repeat run\nstart: ${new Date().toISOString()}\npasses: ${passes}\n`)
 
 const commands = []
+let buildFailed = false
 if (!skipBuild) {
-  commands.push(runCommand('demo auth production build', 'bun', ['run', 'perf:build:demo-auth']))
+  const buildCommand = runCommand('demo auth production build', 'bun', ['run', 'perf:build:demo-auth'])
+  commands.push(buildCommand)
+  buildFailed = buildCommand.exitCode !== 0
 }
 
 const passResults = []
-for (let pass = 1; pass <= passes; pass += 1) {
-  const env = {
-    PLAYWRIGHT_USE_BUILT_APP: 'true',
-    PLAYWRIGHT_DEMO_AUTH: 'true',
-    PERF_USER_FLOWS: 'false',
-    PERF_ROUTE_FILTER: '/dashboard/3d-lab',
-    PERF_ROUTE_LIMIT: '1',
-    PERF_MEMORY_PROFILE_LABEL: `loop5-built-auth-3d-pass-${pass}`,
+if (buildFailed) {
+  fs.appendFileSync(
+    commandLog,
+    '\n## built auth 3D passes skipped\nreason: demo auth production build failed\n',
+  )
+} else {
+  for (let pass = 1; pass <= passes; pass += 1) {
+    const source = path.join(resultsDir, 'frontend_navigation_results.json')
+    const destination = path.join(resultsDir, `3d_lab_built_auth_pass_${pass}.json`)
+    const memoryProfile = path.join(
+      resultsDir,
+      `dev_server_memory_profile_loop5-built-auth-3d-pass-${pass}.json`,
+    )
+    removeIfExists(source)
+    removeIfExists(destination)
+    removeIfExists(memoryProfile)
+
+    const env = {
+      PLAYWRIGHT_USE_BUILT_APP: 'true',
+      PLAYWRIGHT_DEMO_AUTH: 'true',
+      PERF_USER_FLOWS: 'false',
+      PERF_ROUTE_FILTER: '/dashboard/3d-lab',
+      PERF_ROUTE_LIMIT: '1',
+      PERF_MEMORY_PROFILE_LABEL: `loop5-built-auth-3d-pass-${pass}`,
+    }
+    const command = runCommand(`built auth 3D pass ${pass}`, 'bun', ['run', 'perf:frontend'], env)
+    commands.push(command)
+
+    if (command.exitCode === 0 && fs.existsSync(source)) {
+      fs.copyFileSync(source, destination)
+    }
+
+    const payload = readJsonIfExists(destination)
+    passResults.push({
+      pass,
+      command,
+      resultFile: fs.existsSync(destination) ? path.relative(root, destination) : null,
+      memoryProfileFile: fs.existsSync(memoryProfile) ? path.relative(root, memoryProfile) : null,
+      routeSummary: routeSummary(payload),
+    })
   }
-  const command = runCommand(`built auth 3D pass ${pass}`, 'bun', ['run', 'perf:frontend'], env)
-  commands.push(command)
-
-  const source = path.join(resultsDir, 'frontend_navigation_results.json')
-  const destination = path.join(resultsDir, `3d_lab_built_auth_pass_${pass}.json`)
-  if (fs.existsSync(source)) fs.copyFileSync(source, destination)
-
-  const payload = readJsonIfExists(destination)
-  passResults.push({
-    pass,
-    command,
-    resultFile: fs.existsSync(destination) ? path.relative(root, destination) : null,
-    memoryProfileFile: path.relative(root, path.join(resultsDir, `dev_server_memory_profile_loop5-built-auth-3d-pass-${pass}.json`)),
-    routeSummary: routeSummary(payload),
-  })
 }
 
 const coldP95s = passResults.map((pass) => pass.routeSummary?.coldP95Ms).filter(Number.isFinite)

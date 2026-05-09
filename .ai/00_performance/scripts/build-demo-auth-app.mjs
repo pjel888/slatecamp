@@ -40,6 +40,16 @@ const visibleEnv = {
   NEXT_PUBLIC_SUPABASE_URL: env.NEXT_PUBLIC_SUPABASE_URL ? '[present-redacted]' : '[missing]',
 }
 
+const printLogExcerpt = (file, maxLines = 160) => {
+  if (!fs.existsSync(file)) return
+
+  const lines = fs.readFileSync(file, 'utf8').split(/\r?\n/)
+  const excerpt = lines.slice(-maxLines).join('\n')
+  console.error(`\n--- demo-auth build log excerpt: ${path.relative(root, file)} ---`)
+  console.error(excerpt)
+  console.error('--- end demo-auth build log excerpt ---\n')
+}
+
 const header = [
   `command: bun run build`,
   `cwd: ${root}`,
@@ -78,4 +88,5 @@ const payload = {
 }
 fs.writeFileSync(resultFile, `${JSON.stringify(payload, null, 2)}\n`)
 console.log(JSON.stringify(payload, null, 2))
+if (result.status !== 0) printLogExcerpt(logFile)
 process.exit(result.status ?? 1)
