@@ -3,7 +3,7 @@
   "pack_id": "06-pd1096-tgfa-ambf-location-controls",
   "title": "PD 1096 Rule VII: TGFA, AMBF, and Location Controls",
   "status": "PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION",
-  "source_status": "LOCAL_RAW_NEEDS_RECONCILIATION",
+  "source_status": "LOCAL_DPWH_OFFICIAL_PDF_VERIFIED_REMOTE_ANTIBOT_RECONCILED",
   "source_pack_id": "source-pack-pd-1096-irr",
   "documents": [
     {
@@ -14,7 +14,8 @@
       "relative_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
       "sha256": "ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
       "pdf_page_count": 368,
-      "source_hierarchy_tier": 1
+      "source_hierarchy_tier": 1,
+      "source_pack_repair_note": "2026-05-09 repair replaced weak/table-artifact chunks with DPWH Official Rule VII chunks."
     }
   ],
   "claims": [
@@ -30,13 +31,14 @@
         "by": null,
         "date": null
       },
-      "conflict_class": "source_pack_conflict_status_unknown_for_this_new_pack",
+      "conflict_class": "reconciled_dpwh_remote_antibot_local_dpwh_official_pdf_verified",
       "status": "SUPPORTED",
       "linked_question_ids": [
         "pd1096-tgfa-q1"
       ],
       "notes": "",
-      "sme_notes": "Verified against raw DPWH PDF p.81, Rule VII Section 704 Location on Property."
+      "sme_notes": "Verified against raw DPWH PDF p.81, Rule VII Section 704 Location on Property.",
+      "source_reconciliation_status": "RECONCILED_FOR_CALIBRATION"
     },
     {
       "claim_id": "pd1096-c2",
@@ -50,13 +52,14 @@
         "by": null,
         "date": null
       },
-      "conflict_class": "source_pack_conflict_status_unknown_for_this_new_pack",
+      "conflict_class": "reconciled_dpwh_remote_antibot_local_dpwh_official_pdf_verified",
       "status": "SUPPORTED",
       "linked_question_ids": [
         "pd1096-tgfa-q3"
       ],
       "notes": "",
-      "sme_notes": "Verified against raw DPWH PDF p.81, Rule VII Section 704.1(c). The council concern that this belonged to Rule VIII was checked against the source and rejected for this local PDF."
+      "sme_notes": "Verified against raw DPWH PDF p.81, Rule VII Section 704.1(c). The council concern that this belonged to Rule VIII was checked against the source and rejected for this local PDF.",
+      "source_reconciliation_status": "RECONCILED_FOR_CALIBRATION"
     },
     {
       "claim_id": "pd1096-c3",
@@ -70,13 +73,14 @@
         "by": null,
         "date": null
       },
-      "conflict_class": "source_pack_conflict_status_unknown_for_this_new_pack",
+      "conflict_class": "reconciled_dpwh_remote_antibot_local_dpwh_official_pdf_verified",
       "status": "SUPPORTED",
       "linked_question_ids": [
         "pd1096-tgfa-q2"
       ],
       "notes": "",
-      "sme_notes": "Table reference added for TGFA precision."
+      "sme_notes": "Table reference added for TGFA precision.",
+      "source_reconciliation_status": "RECONCILED_FOR_CALIBRATION"
     },
     {
       "claim_id": "pd1096-c4",
@@ -90,7 +94,7 @@
         "by": null,
         "date": null
       },
-      "conflict_class": "source_pack_conflict_status_unknown_for_this_new_pack",
+      "conflict_class": "reconciled_dpwh_remote_antibot_local_dpwh_official_pdf_verified",
       "status": "SUPPORTED",
       "linked_question_ids": [
         "pd1096-tgfa-q2"
@@ -110,7 +114,9 @@
       "council-reviews/2026-05-09-sme-risk-review/03-commandcode-sme-review.md",
       "council-reviews/2026-05-09-sme-risk-review/04-sme-council-synthesis.md"
     ],
-    "publication_boundary": "HOLD_FOR_DIRECT_PUBLICATION; LLM SME council is calibration review, not learner-facing release approval."
+    "publication_boundary": "HOLD_FOR_DIRECT_PUBLICATION; LLM SME council is calibration review, not learner-facing release approval.",
+    "source_reconciliation_closeout_at": "2026-05-09T10:35:18Z",
+    "source_reconciliation_notes": "Official/cited source anchors repaired for calibration; direct publication remains held for licensed-human SME clearance and roundtrip conversion."
   },
   "source_pack_id_previous": "source-pack-pd-1096-rirr",
   "source_pack_id_fix_note": "Canonical source-pack ID is source-pack-pd-1096-irr; raw PDF title remains the 2004 Revised IRR of PD 1096."

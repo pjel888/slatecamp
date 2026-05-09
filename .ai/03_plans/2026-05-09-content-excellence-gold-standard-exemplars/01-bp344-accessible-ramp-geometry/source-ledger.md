@@ -47,4 +47,10 @@
 - Raw 2024 BP 344 PDF p.2 confirms the exemplar wording: minimum clear width 1200 mm; gradient not steeper than 1:20; steeper gradients may be allowed in special cases depending on length; Table A.1.1 lists 1:20 with 15 m landing interval and 1:15 with 10.50 m maximum length, 700 mm maximum rise, and 10 m landing interval.
 - Raw PDF p.7 confirms handrails are required for accessible ramps for changes in grade higher than 170 mm and installed at 900 mm and 700 mm above ramps/stairs.
 - A council concern about a 1:12 accessible-ramp maximum was checked against the 2024 raw PDF and not adopted for this exemplar; the only `1:12` occurrence found in the 2024 PDF concerns a swimming-pool transfer-wall clear transfer space, not the accessible-ramp table.
-- Direct publication remains held until the local webpage PDF vs official download hash mismatch is reconciled.
+- Source/provenance reconciliation is closed for calibration: the NCDA local webpage PDF and NCDA Official Gazette downloadable PDF differ by hash, but both are documented anchors; direct publication remains held for licensed-human SME release approval and roundtrip conversion.
+
+## 2026-05-09 source-pack repair closeout
+
+- Reconciliation status: NCDA 2024 local webpage PDF and NCDA Official Gazette downloadable PDF differ by hash, but both are NCDA/Official Gazette anchors for the current 2024 IRR. The official remote PDF SHA256 `7c4a75a5190897f20844ec8981711c5453954504d609568a292dea9e6888fa76` is recorded in `source-anchor-audit.generated.json`; the local source-layer PDF SHA256 remains `63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953`.
+- Source-pack status: `source-pack-bp-344-2024-revised-irr` governed chunks rebuilt around accessible ramps and handrails.
+- Remaining hold: licensed-human SME release approval and roundtrip conversion only.

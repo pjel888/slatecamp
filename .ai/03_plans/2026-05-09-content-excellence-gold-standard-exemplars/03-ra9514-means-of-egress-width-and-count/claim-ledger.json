@@ -3,7 +3,7 @@
   "pack_id": "03-ra9514-means-of-egress-width-and-count",
   "title": "RA 9514 Means of Egress Width and Count",
   "status": "PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION",
-  "source_status": "OFFICIAL_BLOCKED_LOCAL_RAW_USED",
+  "source_status": "LOCAL_BFP_OFFICIAL_PDF_VERIFIED_SOURCE_PACK_REBUILT",
   "source_pack_id": "source-pack-ra-9514-rirr",
   "document": {
     "document_id": "RA9514_RIRR_2019",
@@ -13,7 +13,8 @@
     "relative_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
     "sha256": "ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
     "pdf_page_count": 448,
-    "source_hierarchy_tier": 1
+    "source_hierarchy_tier": 1,
+    "source_pack_repair_note": "2026-05-09 repair replaced corrupted BP 344 chunks with RA 9514 Rule 10 BFP 2019 RIRR chunks."
   },
   "claims": [
     {
@@ -28,12 +29,13 @@
         "by": null,
         "date": null
       },
-      "conflict_class": "official_source_blocked; prior source-pack integrity issue requires quarantine/rebuild before publication",
+      "conflict_class": "reconciled_bfp_remote_403_local_bfp_pdf_verified_source_pack_rebuilt",
       "status": "SUPPORTED",
       "linked_question_ids": [
         "ra9514-egress-q1"
       ],
-      "notes": ""
+      "notes": "",
+      "source_reconciliation_status": "RECONCILED_FOR_CALIBRATION"
     },
     {
       "claim_id": "ra9514-egress-c2",
@@ -47,12 +49,13 @@
         "by": null,
         "date": null
       },
-      "conflict_class": "official_source_blocked; prior source-pack integrity issue requires quarantine/rebuild before publication",
+      "conflict_class": "reconciled_bfp_remote_403_local_bfp_pdf_verified_source_pack_rebuilt",
       "status": "SUPPORTED",
       "linked_question_ids": [
         "ra9514-egress-q2"
       ],
-      "notes": ""
+      "notes": "",
+      "source_reconciliation_status": "RECONCILED_FOR_CALIBRATION"
     },
     {
       "claim_id": "ra9514-egress-c3",
@@ -66,12 +69,13 @@
         "by": null,
         "date": null
       },
-      "conflict_class": "official_source_blocked; prior source-pack integrity issue requires quarantine/rebuild before publication",
+      "conflict_class": "reconciled_bfp_remote_403_local_bfp_pdf_verified_source_pack_rebuilt",
       "status": "SUPPORTED",
       "linked_question_ids": [
         "ra9514-egress-q3"
       ],
-      "notes": ""
+      "notes": "",
+      "source_reconciliation_status": "RECONCILED_FOR_CALIBRATION"
     },
     {
       "claim_id": "ra9514-egress-c4",
@@ -85,10 +89,11 @@
         "by": null,
         "date": null
       },
-      "conflict_class": "official_source_blocked; prior source-pack integrity issue requires quarantine/rebuild before publication",
+      "conflict_class": "reconciled_bfp_remote_403_local_bfp_pdf_verified_source_pack_rebuilt",
       "status": "SUPPORTED",
       "linked_question_ids": [],
-      "notes": ""
+      "notes": "",
+      "source_reconciliation_status": "RECONCILED_FOR_CALIBRATION"
     }
   ],
   "sme_review": {
@@ -102,6 +107,8 @@
       "council-reviews/2026-05-09-sme-risk-review/03-commandcode-sme-review.md",
       "council-reviews/2026-05-09-sme-risk-review/04-sme-council-synthesis.md"
     ],
-    "publication_boundary": "HOLD_FOR_DIRECT_PUBLICATION; LLM SME council is calibration review, not learner-facing release approval."
+    "publication_boundary": "HOLD_FOR_DIRECT_PUBLICATION; LLM SME council is calibration review, not learner-facing release approval.",
+    "source_reconciliation_closeout_at": "2026-05-09T10:35:18Z",
+    "source_reconciliation_notes": "Official/cited source anchors repaired for calibration; direct publication remains held for licensed-human SME clearance and roundtrip conversion."
   }
 }

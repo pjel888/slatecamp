@@ -47,4 +47,10 @@
 
 - `pd1096-c2` was rechecked against the raw DPWH PDF. PDF p.81 visibly places “Eaves over required windows shall not be less than 750 millimeters from the side and rear property lines” under Rule VII, Section 704.1(c), so the Rule VII locator is retained and made more precise.
 - `pd1096-c4` was reworded to frame AMBF as a footprint / percentage-of-site-occupancy control distinct from TGFA, with firewall conditions affecting the allowable footprint under Rule VII / Rule VIII cross-checks.
-- Direct publication remains held until the source-pack local-vs-official hash mismatch is reconciled.
+- Source/provenance reconciliation is closed for calibration; direct publication remains held for licensed-human SME release approval and roundtrip conversion.
+
+## 2026-05-09 source-pack repair closeout
+
+- Reconciliation status: DPWH public URLs returned anti-bot/noindex HTML, not PDF. The local DPWH Official 2004 Revised IRR PDF is the governing source-layer anchor at SHA256 `ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6`.
+- Source-pack status: `source-pack-pd-1096-irr` governed chunks rebuilt around Rule VII Sections 704 and 705, including AMBF/TGFA locators.
+- Remaining hold: licensed-human SME release approval and roundtrip conversion only.

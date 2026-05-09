@@ -396,5 +396,17 @@
     "Recommend additional exemplar topics from vitruvius-connection law/source folders.",
     "Recommend required source-ledger fields and validation gates.",
     "Return concise prioritized recommendations; do not edit files."
-  ]
+  ],
+  "source_governance_repair_closeout": {
+    "updated_at": "2026-05-09T10:36:01Z",
+    "status": "REPAIRED_FOR_CALIBRATION",
+    "evidence": "official-source-evidence.generated/source-anchor-audit.generated.json",
+    "repaired_source_packs": [
+      "source-pack-bp-344-2024-revised-irr",
+      "source-pack-ra-9514-rirr",
+      "source-pack-pd-1096-irr",
+      "source-pack-ra-9266-irr"
+    ],
+    "remaining_release_hold": "licensed-human SME release approval and roundtrip conversion"
+  }
 }

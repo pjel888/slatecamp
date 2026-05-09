@@ -41,3 +41,9 @@
 
 - Machine-checkable file: `claim-ledger.json`
 - Council-applied requirement: every factual claim must carry `claim_class`, `locator`, `extraction_status`, `conflict_class`, linked question IDs, and SME status.
+
+## 2026-05-09 source-pack repair closeout
+
+- Reconciliation status: BFP remote URLs returned HTTP 403, but the local BFP-published 2019 RIRR source-layer PDF is hashable/text-extractable at SHA256 `ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266`.
+- Source-pack status: `source-pack-ra-9514-rirr` was quarantined and rebuilt; previous BP 344 ramp chunks were replaced by RA 9514 Rule 10 chunks covering Division 2, Section 10.2.5.2, and Section 10.2.5.11.
+- Remaining hold: licensed-human SME release approval and roundtrip conversion only.

@@ -47,5 +47,5 @@ If this exemplar becomes a live SlateCamp article, create or update an article b
 
 - Status: `LLM_COUNCIL_COMPLETE_FOR_CALIBRATION` on 2026-05-09.
 - Council files: `council-reviews/2026-05-09-sme-risk-review/`.
-- Applied decision: LLM council accepted the content for calibration. `authority_host_unverified` remains a provenance/direct-publication blocker, not a calibration content blocker.
+- Applied decision: LLM council accepted the content for calibration. The former ArchitectureBoard provenance blocker is closed for calibration by the 2026-05-09 ArchitectureBoard PDF, Lawphil Act, and local PRBoA PDF source-anchor audit; direct publication remains held for licensed-human SME release approval and roundtrip conversion.
 - Direct-publication boundary: `HOLD_FOR_DIRECT_PUBLICATION`; this is not licensed-human SME release approval and not a Supabase push bundle.

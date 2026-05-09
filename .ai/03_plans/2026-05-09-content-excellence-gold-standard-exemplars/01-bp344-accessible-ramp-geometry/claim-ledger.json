@@ -3,7 +3,7 @@
   "pack_id": "01-bp344-accessible-ramp-geometry",
   "title": "BP 344 Accessible Ramp Geometry",
   "status": "PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION",
-  "source_status": "LOCAL_RAW_NEEDS_RECONCILIATION",
+  "source_status": "OFFICIAL_REMOTE_VERIFIED_LOCAL_HASH_RECONCILED",
   "source_pack_id": "source-pack-bp-344-2024-revised-irr",
   "document": {
     "document_id": "BP344_2024_IRR",
@@ -28,13 +28,14 @@
         "by": null,
         "date": null
       },
-      "conflict_class": "local_webpage_pdf_vs_official_download_pdf_hash_mismatch",
+      "conflict_class": "reconciled_ncda_local_webpage_pdf_vs_official_gazette_download_hash_mismatch",
       "status": "SUPPORTED",
       "linked_question_ids": [
         "bp344-ramp-q1",
         "bp344-ramp-q2"
       ],
-      "notes": ""
+      "notes": "",
+      "source_reconciliation_status": "RECONCILED_FOR_CALIBRATION"
     },
     {
       "claim_id": "bp344-ramp-c2",
@@ -48,12 +49,13 @@
         "by": null,
         "date": null
       },
-      "conflict_class": "local_webpage_pdf_vs_official_download_pdf_hash_mismatch",
+      "conflict_class": "reconciled_ncda_local_webpage_pdf_vs_official_gazette_download_hash_mismatch",
       "status": "SUPPORTED",
       "linked_question_ids": [
         "bp344-ramp-q3"
       ],
-      "notes": ""
+      "notes": "",
+      "source_reconciliation_status": "RECONCILED_FOR_CALIBRATION"
     },
     {
       "claim_id": "bp344-ramp-c3",
@@ -67,12 +69,13 @@
         "by": null,
         "date": null
       },
-      "conflict_class": "local_webpage_pdf_vs_official_download_pdf_hash_mismatch",
+      "conflict_class": "reconciled_ncda_local_webpage_pdf_vs_official_gazette_download_hash_mismatch",
       "status": "SUPPORTED",
       "linked_question_ids": [
         "bp344-ramp-q3"
       ],
-      "notes": ""
+      "notes": "",
+      "source_reconciliation_status": "RECONCILED_FOR_CALIBRATION"
     },
     {
       "claim_id": "bp344-ramp-c4",
@@ -86,10 +89,11 @@
         "by": null,
         "date": null
       },
-      "conflict_class": "local_webpage_pdf_vs_official_download_pdf_hash_mismatch",
+      "conflict_class": "reconciled_ncda_local_webpage_pdf_vs_official_gazette_download_hash_mismatch",
       "status": "SUPPORTED",
       "linked_question_ids": [],
-      "notes": ""
+      "notes": "",
+      "source_reconciliation_status": "RECONCILED_FOR_CALIBRATION"
     },
     {
       "claim_id": "bp344-ramp-c5",
@@ -103,7 +107,7 @@
         "by": null,
         "date": null
       },
-      "conflict_class": "local_webpage_pdf_vs_official_download_pdf_hash_mismatch",
+      "conflict_class": "reconciled_ncda_local_webpage_pdf_vs_official_gazette_download_hash_mismatch",
       "status": "EXAM_STRATEGY_NO_SOURCE_NEEDED",
       "linked_question_ids": [],
       "notes": ""
@@ -120,6 +124,8 @@
       "council-reviews/2026-05-09-sme-risk-review/03-commandcode-sme-review.md",
       "council-reviews/2026-05-09-sme-risk-review/04-sme-council-synthesis.md"
     ],
-    "publication_boundary": "HOLD_FOR_DIRECT_PUBLICATION; LLM SME council is calibration review, not learner-facing release approval."
+    "publication_boundary": "HOLD_FOR_DIRECT_PUBLICATION; LLM SME council is calibration review, not learner-facing release approval.",
+    "source_reconciliation_closeout_at": "2026-05-09T10:35:18Z",
+    "source_reconciliation_notes": "Official/cited source anchors repaired for calibration; direct publication remains held for licensed-human SME clearance and roundtrip conversion."
   }
 }

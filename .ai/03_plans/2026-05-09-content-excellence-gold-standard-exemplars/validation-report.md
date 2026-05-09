@@ -1,6 +1,7 @@
 # Validation Report - Content Excellence Gold-Standard Exemplar Packs
 
 Generated: 2026-05-09
+Updated: 2026-05-09T10:35:18Z
 
 ## Structural checks
 
@@ -30,7 +31,7 @@ Generated: 2026-05-09
 
 - LLM council SME calibration review is complete for all packs; licensed-human SME review remains required before learner-facing release.
 - These are not normalized article bundles and must not be pasted directly into Supabase.
-- Official agency/source-pack reconciliation is still required for any pack with conflict classes or local-only source status before direct publication.
+- Source/provenance repair is complete for BP 344, RA 9514, PD 1096, and RA 9266 calibration packs. Direct learner-facing publication still requires licensed-human SME release approval and roundtrip conversion.
 
 ## Errors
 

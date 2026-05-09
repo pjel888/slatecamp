@@ -38,3 +38,9 @@
 
 - Machine-checkable file: `claim-ledger.json`
 - Council-applied requirement: every factual claim must carry `claim_class`, `locator`, `extraction_status`, `conflict_class`, linked question IDs, and SME status.
+
+## 2026-05-09 source-pack repair closeout
+
+- Reconciliation status: ArchitectureBoard official IRR PDF verified at SHA256 `9c725f42e14fe5b43359bbe9edc7f4c96bff15e49f4357492622e2d24dc6a1cd`, with Section 38 evidence on PDF pp.24-25. Local PRBoA PDF SHA256 `d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574` remains the local source-layer copy. Lawphil RA 9266 Act HTML is supplementary for the Act text.
+- Source-pack status: `source-pack-ra-9266-irr` governed chunks rebuilt around Section 38 Temporary/Special Permits.
+- Remaining hold: licensed-human SME release approval and roundtrip conversion only.

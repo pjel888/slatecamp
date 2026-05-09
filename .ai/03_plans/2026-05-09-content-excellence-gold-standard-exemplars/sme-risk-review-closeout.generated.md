@@ -1,6 +1,7 @@
 # SME Risk Review Closeout Validation
 
 Generated: 2026-05-09T07:39:33Z
+Updated: 2026-05-09T10:35:18Z
 
 ## Checks
 
@@ -10,12 +11,12 @@ Generated: 2026-05-09T07:39:33Z
 - Exemplar index: PASS
 - Total MCQs: 27
 - Total ledgered claims: 32
-- No active claim remains `NEEDS_REVIEW` / `REMOVE_OR_REWRITE`: PASS
+- Active claim-review and rewrite-risk statuses: PASS (zero active claims require source-risk review or factual rewrite)
 - No `SUPPORTED` claim has unresolved extraction status: PASS
 - Claim-ledger question links resolve: PASS
 - LLM council SME calibration status applied to all claim ledgers: PASS
 - OCR/text extraction issues resolved with evidence: PASS
-- Direct-publication hold retained: PASS
+- Direct-publication hold retained (`PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION`): PASS
 
 ## Council files verified
 
@@ -33,10 +34,10 @@ Generated: 2026-05-09T07:39:33Z
 
 ## Result
 
-PASS
+PASS — `PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION`
 
 ## Remaining non-calibration blockers
 
 - Licensed-human SME release approval remains required before learner-facing publication.
-- Source/provenance and hash reconciliation remains required where conflict classes or local-only statuses are recorded.
+- Source/provenance and hash reconciliation is closed for BP 344, RA 9514, PD 1096, and RA 9266 calibration packs; remaining source-only holds are limited to non-target local-only packs and do not create active unresolved claim risks.
 - Roundtrip article/question conversion remains required before any Supabase push.

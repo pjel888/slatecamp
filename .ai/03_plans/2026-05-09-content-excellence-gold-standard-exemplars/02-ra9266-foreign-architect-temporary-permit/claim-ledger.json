@@ -3,7 +3,7 @@
   "pack_id": "02-ra9266-foreign-architect-temporary-permit",
   "title": "RA 9266 Foreign Architect Temporary/Special Permit",
   "status": "PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION",
-  "source_status": "LOCAL_RAW_NEEDS_RECONCILIATION",
+  "source_status": "OFFICIAL_ARCHITECTUREBOARD_VERIFIED_LOCAL_PRBOA_RECONCILED",
   "source_pack_id": "source-pack-ra-9266-irr",
   "document": {
     "document_id": "RA9266_IRR",
@@ -13,7 +13,11 @@
     "relative_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
     "sha256": "d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
     "pdf_page_count": 24,
-    "source_hierarchy_tier": 1
+    "source_hierarchy_tier": 1,
+    "official_remote_pdf_sha256": "9c725f42e14fe5b43359bbe9edc7f4c96bff15e49f4357492622e2d24dc6a1cd",
+    "supplementary_official_act_anchors": [
+      "Lawphil RA 9266 Act HTML sha256 28dc7672ad927101f1ee1fe8e2fc59565280c1403314278f0f735739471b2f5d"
+    ]
   },
   "claims": [
     {
@@ -28,13 +32,14 @@
         "by": null,
         "date": null
       },
-      "conflict_class": "authority_host_unverified",
+      "conflict_class": "reconciled_architectureboard_official_pdf_verified_lawphil_supplementary",
       "status": "SUPPORTED",
       "linked_question_ids": [
         "ra9266-foreign-q1",
         "ra9266-foreign-q2"
       ],
-      "notes": ""
+      "notes": "",
+      "source_reconciliation_status": "RECONCILED_FOR_CALIBRATION"
     },
     {
       "claim_id": "ra9266-foreign-c2",
@@ -48,7 +53,7 @@
         "by": null,
         "date": null
       },
-      "conflict_class": "authority_host_unverified",
+      "conflict_class": "reconciled_architectureboard_official_pdf_verified_lawphil_supplementary",
       "status": "EXAM_STRATEGY_NO_SOURCE_NEEDED",
       "linked_question_ids": [
         "ra9266-foreign-q3"
@@ -67,6 +72,8 @@
       "council-reviews/2026-05-09-sme-risk-review/03-commandcode-sme-review.md",
       "council-reviews/2026-05-09-sme-risk-review/04-sme-council-synthesis.md"
     ],
-    "publication_boundary": "HOLD_FOR_DIRECT_PUBLICATION; LLM SME council is calibration review, not learner-facing release approval."
+    "publication_boundary": "HOLD_FOR_DIRECT_PUBLICATION; LLM SME council is calibration review, not learner-facing release approval.",
+    "source_reconciliation_closeout_at": "2026-05-09T10:35:18Z",
+    "source_reconciliation_notes": "Official/cited source anchors repaired for calibration; direct publication remains held for licensed-human SME clearance and roundtrip conversion."
   }
 }

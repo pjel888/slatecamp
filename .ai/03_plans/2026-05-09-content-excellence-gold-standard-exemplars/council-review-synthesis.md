@@ -35,3 +35,10 @@ Date: 2026-05-09
 - Folder: `council-reviews/2026-05-09-sme-risk-review/`.
 - Result: Claude, OpenCode, and CommandCode were used as an LLM SME council for the remaining risky/unresolved packs.
 - Applied result: OCR/text issues were resolved; PD 1096 source-pack ID and AMBF wording were corrected; UAP Article 7.08 claim was scoped; all nine packs are accepted for calibration and held for direct publication.
+
+## 2026-05-09 source-governance repair supersession
+
+- Updated at: 2026-05-09T10:36:01Z
+- BP 344, RA 9514, PD 1096, and RA 9266 source-pack provenance issues are repaired for calibration in `.ai/16_source_packs`.
+- Earlier council observations about the earlier provenance/conflict labels are superseded by `official-source-evidence.generated/source-anchor-audit.generated.json` and `source-governance-approval-packet.generated.md`.
+- Remaining release hold: licensed-human SME release approval and SlateCamp roundtrip conversion.

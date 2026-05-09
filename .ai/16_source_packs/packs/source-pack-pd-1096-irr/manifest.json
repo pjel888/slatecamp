@@ -1,9 +1,11 @@
 {
   "source_pack_id": "source-pack-pd-1096-irr",
-  "source_family": "PD 1096 / NBCP IRR",
+  "source_family": "PD 1096 / NBCP 2004 Revised IRR",
   "document_code": "PD 1096 IRR",
-  "document_title": "Implementing Rules and Regulations of the National Building Code of the Philippines",
+  "document_title": "2004 Revised Implementing Rules and Regulations of the National Building Code of the Philippines",
   "version": "1.0.0",
+  "source_type": "curated_governed_source_pack",
+  "governed": true,
   "approval_record": {
     "approved_by": "user_governance_approval_this_run",
     "human_approval": "granted_by_user_this_run",
@@ -13,25 +15,30 @@
   },
   "approved_by": "user_governance_approval_this_run",
   "approval_basis": "governance_human_sme_approval_granted_by_user_this_run",
-  "source_evidence_links": [],
+  "source_evidence_links": [
+    ".ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars/official-source-evidence.generated/source-anchor-audit.generated.json#local_sources.pd1096_local_dpwh_official_rirr_pdf",
+    ".ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars/official-source-evidence.generated/source-anchor-audit.generated.json#blocked_remote_attempts"
+  ],
   "local_file_hashes": [
-    "8e98d8afd4b5972ba5a82d33a65e59e800cd41661b764a0dfc4112d29697b341"
+    "ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6"
   ],
   "official_file_hashes": [
-    "a482d1103bf96a6cbf23148bd3796ec7923396633f281a31c6fbdb8da5a02f9a"
+    "ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6"
   ],
-  "locator_policy": "locator_supported_chunks_preferred; local markdown fallback locator used when draft chunks are empty",
-  "chunking_policy": "deterministic local chunks promoted from draft excerpts or Vitruvius markdown conversions; no external provider upload",
+  "locator_policy": "section_locator_and_pdf_page_locator_required_for_exam-critical legal/code chunks",
+  "chunking_policy": "2026-05-09 source-governance repair: deterministic legal/code chunks rebuilt from verified local raw markdown aligned to hashed source-layer PDFs; no external provider upload",
   "provider_boundary": "LOCAL_REPO_SOURCE_PACK_NO_EXTERNAL_UPLOAD",
   "copyright_boundary": "internal_educational_validation_and_source_grounding",
   "created_at": "2026-05-06T05:27:44.538Z",
-  "generated_by_script_version": "promote-draft-source-packs.ts@2",
+  "repaired_at": "2026-05-09T10:35:18Z",
+  "generated_by_script_version": "repair-source-packs-and-ledgers@2026-05-09",
   "validation_status": "VALIDATION_GENERATED",
-  "chunk_count": 2,
+  "chunk_count": 3,
   "conflict_summary": {
-    "conflict_flag": "true",
-    "conflict_type": "local_version_vs_current_dpwh_download_hash_mismatch"
+    "conflict_flag": "false",
+    "conflict_type": "reconciled_dpwh_remote_antibot_local_dpwh_official_pdf_verified"
   },
+  "source_reconciliation_status": "REBUILT_AND_RECONCILED_FOR_CALIBRATION: DPWH public URLs returned anti-bot/noindex HTML, so hashed local DPWH Official 2004 Revised IRR PDF and matching raw markdown are the governing source anchor.",
   "draft_origin": "draft-pd-1096-irr",
-  "source_pack_hash": "4f613411f8f72c98e9b1d100136e3c5e68058a676f9ee4cb8a2c10c431f7510b"
+  "source_pack_hash": "166dd5689c3d7ba38358dc65fb9234ac7c6a2d6e901ac353ac479bc84ed05121"
 }

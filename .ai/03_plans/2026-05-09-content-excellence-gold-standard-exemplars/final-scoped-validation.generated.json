@@ -1,0 +1,939 @@
+{
+  "generated_at": "2026-05-09T11:26:29Z",
+  "scope": {
+    "exemplar_root": ".ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars",
+    "source_pack_root": ".ai/16_source_packs",
+    "historical_council_reviews_excluded_from_active_stale_scan": true,
+    "target_source_governance_packs": [
+      "source-pack-bp-344-2024-revised-irr",
+      "source-pack-ra-9514-rirr",
+      "source-pack-pd-1096-irr",
+      "source-pack-ra-9266-irr"
+    ]
+  },
+  "ok": true,
+  "summary": {
+    "checks": 181,
+    "failures": 0,
+    "exemplar_packs": 9,
+    "ledgered_claims": 32,
+    "questions": 27,
+    "active_files_scanned": 62,
+    "active_stale_hits": 0,
+    "target_pdf_hashes_checked": 3
+  },
+  "checks": [
+    {
+      "name": "exemplar_pack_count_is_9",
+      "status": "PASS",
+      "detail": "found 9"
+    },
+    {
+      "name": "01-bp344-accessible-ramp-geometry:exemplar-article.md:exists",
+      "status": "PASS",
+      "detail": ".ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars/01-bp344-accessible-ramp-geometry/exemplar-article.md"
+    },
+    {
+      "name": "01-bp344-accessible-ramp-geometry:exemplar-question-set.json:exists",
+      "status": "PASS",
+      "detail": ".ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars/01-bp344-accessible-ramp-geometry/exemplar-question-set.json"
+    },
+    {
+      "name": "01-bp344-accessible-ramp-geometry:source-ledger.md:exists",
+      "status": "PASS",
+      "detail": ".ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars/01-bp344-accessible-ramp-geometry/source-ledger.md"
+    },
+    {
+      "name": "01-bp344-accessible-ramp-geometry:claim-ledger.json:exists",
+      "status": "PASS",
+      "detail": ".ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars/01-bp344-accessible-ramp-geometry/claim-ledger.json"
+    },
+    {
+      "name": "01-bp344-accessible-ramp-geometry:reviewer-memo.md:exists",
+      "status": "PASS",
+      "detail": ".ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars/01-bp344-accessible-ramp-geometry/reviewer-memo.md"
+    },
+    {
+      "name": "01-bp344-accessible-ramp-geometry:q1:options_A_D",
+      "status": "PASS",
+      "detail": "keys=['A', 'B', 'C', 'D']"
+    },
+    {
+      "name": "01-bp344-accessible-ramp-geometry:q2:options_A_D",
+      "status": "PASS",
+      "detail": "keys=['A', 'B', 'C', 'D']"
+    },
+    {
+      "name": "01-bp344-accessible-ramp-geometry:q3:options_A_D",
+      "status": "PASS",
+      "detail": "keys=['A', 'B', 'C', 'D']"
+    },
+    {
+      "name": "02-ra9266-foreign-architect-temporary-permit:exemplar-article.md:exists",
+      "status": "PASS",
+      "detail": ".ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars/02-ra9266-foreign-architect-temporary-permit/exemplar-article.md"
+    },
+    {
+      "name": "02-ra9266-foreign-architect-temporary-permit:exemplar-question-set.json:exists",
+      "status": "PASS",
+      "detail": ".ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars/02-ra9266-foreign-architect-temporary-permit/exemplar-question-set.json"
+    },
+    {
+      "name": "02-ra9266-foreign-architect-temporary-permit:source-ledger.md:exists",
+      "status": "PASS",
+      "detail": ".ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars/02-ra9266-foreign-architect-temporary-permit/source-ledger.md"
+    },
+    {
+      "name": "02-ra9266-foreign-architect-temporary-permit:claim-ledger.json:exists",
+      "status": "PASS",
+      "detail": ".ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars/02-ra9266-foreign-architect-temporary-permit/claim-ledger.json"
+    },
+    {
+      "name": "02-ra9266-foreign-architect-temporary-permit:reviewer-memo.md:exists",
+      "status": "PASS",
+      "detail": ".ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars/02-ra9266-foreign-architect-temporary-permit/reviewer-memo.md"
+    },
+    {
+      "name": "02-ra9266-foreign-architect-temporary-permit:q1:options_A_D",
+      "status": "PASS",
+      "detail": "keys=['A', 'B', 'C', 'D']"
+    },
+    {
+      "name": "02-ra9266-foreign-architect-temporary-permit:q2:options_A_D",
+      "status": "PASS",
+      "detail": "keys=['A', 'B', 'C', 'D']"
+    },
+    {
+      "name": "02-ra9266-foreign-architect-temporary-permit:q3:options_A_D",
+      "status": "PASS",
+      "detail": "keys=['A', 'B', 'C', 'D']"
+    },
+    {
+      "name": "03-ra9514-means-of-egress-width-and-count:exemplar-article.md:exists",
+      "status": "PASS",
+      "detail": ".ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars/03-ra9514-means-of-egress-width-and-count/exemplar-article.md"
+    },
+    {
+      "name": "03-ra9514-means-of-egress-width-and-count:exemplar-question-set.json:exists",
+      "status": "PASS",
+      "detail": ".ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars/03-ra9514-means-of-egress-width-and-count/exemplar-question-set.json"
+    },
+    {
+      "name": "03-ra9514-means-of-egress-width-and-count:source-ledger.md:exists",
+      "status": "PASS",
+      "detail": ".ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars/03-ra9514-means-of-egress-width-and-count/source-ledger.md"
+    },
+    {
+      "name": "03-ra9514-means-of-egress-width-and-count:claim-ledger.json:exists",
+      "status": "PASS",
+      "detail": ".ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars/03-ra9514-means-of-egress-width-and-count/claim-ledger.json"
+    },
+    {
+      "name": "03-ra9514-means-of-egress-width-and-count:reviewer-memo.md:exists",
+      "status": "PASS",
+      "detail": ".ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars/03-ra9514-means-of-egress-width-and-count/reviewer-memo.md"
+    },
+    {
+      "name": "03-ra9514-means-of-egress-width-and-count:q1:options_A_D",
+      "status": "PASS",
+      "detail": "keys=['A', 'B', 'C', 'D']"
+    },
+    {
+      "name": "03-ra9514-means-of-egress-width-and-count:q2:options_A_D",
+      "status": "PASS",
+      "detail": "keys=['A', 'B', 'C', 'D']"
+    },
+    {
+      "name": "03-ra9514-means-of-egress-width-and-count:q3:options_A_D",
+      "status": "PASS",
+      "detail": "keys=['A', 'B', 'C', 'D']"
+    },
+    {
+      "name": "04-npcp-fixture-unit-and-venting:exemplar-article.md:exists",
+      "status": "PASS",
+      "detail": ".ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars/04-npcp-fixture-unit-and-venting/exemplar-article.md"
+    },
+    {
+      "name": "04-npcp-fixture-unit-and-venting:exemplar-question-set.json:exists",
+      "status": "PASS",
+      "detail": ".ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars/04-npcp-fixture-unit-and-venting/exemplar-question-set.json"
+    },
+    {
+      "name": "04-npcp-fixture-unit-and-venting:source-ledger.md:exists",
+      "status": "PASS",
+      "detail": ".ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars/04-npcp-fixture-unit-and-venting/source-ledger.md"
+    },
+    {
+      "name": "04-npcp-fixture-unit-and-venting:claim-ledger.json:exists",
+      "status": "PASS",
+      "detail": ".ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars/04-npcp-fixture-unit-and-venting/claim-ledger.json"
+    },
+    {
+      "name": "04-npcp-fixture-unit-and-venting:reviewer-memo.md:exists",
+      "status": "PASS",
+      "detail": ".ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars/04-npcp-fixture-unit-and-venting/reviewer-memo.md"
+    },
+    {
+      "name": "04-npcp-fixture-unit-and-venting:q1:options_A_D",
+      "status": "PASS",
+      "detail": "keys=['A', 'B', 'C', 'D']"
+    },
+    {
+      "name": "04-npcp-fixture-unit-and-venting:q2:options_A_D",
+      "status": "PASS",
+      "detail": "keys=['A', 'B', 'C', 'D']"
+    },
+    {
+      "name": "04-npcp-fixture-unit-and-venting:q3:options_A_D",
+      "status": "PASS",
+      "detail": "keys=['A', 'B', 'C', 'D']"
+    },
+    {
+      "name": "05-vitruvius-principles-and-departments:exemplar-article.md:exists",
+      "status": "PASS",
+      "detail": ".ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars/05-vitruvius-principles-and-departments/exemplar-article.md"
+    },
+    {
+      "name": "05-vitruvius-principles-and-departments:exemplar-question-set.json:exists",
+      "status": "PASS",
+      "detail": ".ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars/05-vitruvius-principles-and-departments/exemplar-question-set.json"
+    },
+    {
+      "name": "05-vitruvius-principles-and-departments:source-ledger.md:exists",
+      "status": "PASS",
+      "detail": ".ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars/05-vitruvius-principles-and-departments/source-ledger.md"
+    },
+    {
+      "name": "05-vitruvius-principles-and-departments:claim-ledger.json:exists",
+      "status": "PASS",
+      "detail": ".ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars/05-vitruvius-principles-and-departments/claim-ledger.json"
+    },
+    {
+      "name": "05-vitruvius-principles-and-departments:reviewer-memo.md:exists",
+      "status": "PASS",
+      "detail": ".ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars/05-vitruvius-principles-and-departments/reviewer-memo.md"
+    },
+    {
+      "name": "05-vitruvius-principles-and-departments:q1:options_A_D",
+      "status": "PASS",
+      "detail": "keys=['A', 'B', 'C', 'D']"
+    },
+    {
+      "name": "05-vitruvius-principles-and-departments:q2:options_A_D",
+      "status": "PASS",
+      "detail": "keys=['A', 'B', 'C', 'D']"
+    },
+    {
+      "name": "05-vitruvius-principles-and-departments:q3:options_A_D",
+      "status": "PASS",
+      "detail": "keys=['A', 'B', 'C', 'D']"
+    },
+    {
+      "name": "06-pd1096-tgfa-ambf-location-controls:exemplar-article.md:exists",
+      "status": "PASS",
+      "detail": ".ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars/06-pd1096-tgfa-ambf-location-controls/exemplar-article.md"
+    },
+    {
+      "name": "06-pd1096-tgfa-ambf-location-controls:exemplar-question-set.json:exists",
+      "status": "PASS",
+      "detail": ".ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars/06-pd1096-tgfa-ambf-location-controls/exemplar-question-set.json"
+    },
+    {
+      "name": "06-pd1096-tgfa-ambf-location-controls:source-ledger.md:exists",
+      "status": "PASS",
+      "detail": ".ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars/06-pd1096-tgfa-ambf-location-controls/source-ledger.md"
+    },
+    {
+      "name": "06-pd1096-tgfa-ambf-location-controls:claim-ledger.json:exists",
+      "status": "PASS",
+      "detail": ".ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars/06-pd1096-tgfa-ambf-location-controls/claim-ledger.json"
+    },
+    {
+      "name": "06-pd1096-tgfa-ambf-location-controls:reviewer-memo.md:exists",
+      "status": "PASS",
+      "detail": ".ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars/06-pd1096-tgfa-ambf-location-controls/reviewer-memo.md"
+    },
+    {
+      "name": "06-pd1096-tgfa-ambf-location-controls:q1:options_A_D",
+      "status": "PASS",
+      "detail": "keys=['A', 'B', 'C', 'D']"
+    },
+    {
+      "name": "06-pd1096-tgfa-ambf-location-controls:q2:options_A_D",
+      "status": "PASS",
+      "detail": "keys=['A', 'B', 'C', 'D']"
+    },
+    {
+      "name": "06-pd1096-tgfa-ambf-location-controls:q3:options_A_D",
+      "status": "PASS",
+      "detail": "keys=['A', 'B', 'C', 'D']"
+    },
+    {
+      "name": "07-bp220-parks-playgrounds-road-pavement:exemplar-article.md:exists",
+      "status": "PASS",
+      "detail": ".ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars/07-bp220-parks-playgrounds-road-pavement/exemplar-article.md"
+    },
+    {
+      "name": "07-bp220-parks-playgrounds-road-pavement:exemplar-question-set.json:exists",
+      "status": "PASS",
+      "detail": ".ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars/07-bp220-parks-playgrounds-road-pavement/exemplar-question-set.json"
+    },
+    {
+      "name": "07-bp220-parks-playgrounds-road-pavement:source-ledger.md:exists",
+      "status": "PASS",
+      "detail": ".ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars/07-bp220-parks-playgrounds-road-pavement/source-ledger.md"
+    },
+    {
+      "name": "07-bp220-parks-playgrounds-road-pavement:claim-ledger.json:exists",
+      "status": "PASS",
+      "detail": ".ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars/07-bp220-parks-playgrounds-road-pavement/claim-ledger.json"
+    },
+    {
+      "name": "07-bp220-parks-playgrounds-road-pavement:reviewer-memo.md:exists",
+      "status": "PASS",
+      "detail": ".ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars/07-bp220-parks-playgrounds-road-pavement/reviewer-memo.md"
+    },
+    {
+      "name": "07-bp220-parks-playgrounds-road-pavement:q1:options_A_D",
+      "status": "PASS",
+      "detail": "keys=['A', 'B', 'C', 'D']"
+    },
+    {
+      "name": "07-bp220-parks-playgrounds-road-pavement:q2:options_A_D",
+      "status": "PASS",
+      "detail": "keys=['A', 'B', 'C', 'D']"
+    },
+    {
+      "name": "07-bp220-parks-playgrounds-road-pavement:q3:options_A_D",
+      "status": "PASS",
+      "detail": "keys=['A', 'B', 'C', 'D']"
+    },
+    {
+      "name": "08-pd957-license-to-sell-registration-gate:exemplar-article.md:exists",
+      "status": "PASS",
+      "detail": ".ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars/08-pd957-license-to-sell-registration-gate/exemplar-article.md"
+    },
+    {
+      "name": "08-pd957-license-to-sell-registration-gate:exemplar-question-set.json:exists",
+      "status": "PASS",
+      "detail": ".ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars/08-pd957-license-to-sell-registration-gate/exemplar-question-set.json"
+    },
+    {
+      "name": "08-pd957-license-to-sell-registration-gate:source-ledger.md:exists",
+      "status": "PASS",
+      "detail": ".ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars/08-pd957-license-to-sell-registration-gate/source-ledger.md"
+    },
+    {
+      "name": "08-pd957-license-to-sell-registration-gate:claim-ledger.json:exists",
+      "status": "PASS",
+      "detail": ".ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars/08-pd957-license-to-sell-registration-gate/claim-ledger.json"
+    },
+    {
+      "name": "08-pd957-license-to-sell-registration-gate:reviewer-memo.md:exists",
+      "status": "PASS",
+      "detail": ".ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars/08-pd957-license-to-sell-registration-gate/reviewer-memo.md"
+    },
+    {
+      "name": "08-pd957-license-to-sell-registration-gate:q1:options_A_D",
+      "status": "PASS",
+      "detail": "keys=['A', 'B', 'C', 'D']"
+    },
+    {
+      "name": "08-pd957-license-to-sell-registration-gate:q2:options_A_D",
+      "status": "PASS",
+      "detail": "keys=['A', 'B', 'C', 'D']"
+    },
+    {
+      "name": "08-pd957-license-to-sell-registration-gate:q3:options_A_D",
+      "status": "PASS",
+      "detail": "keys=['A', 'B', 'C', 'D']"
+    },
+    {
+      "name": "09-uap-spp201-pre-design-and-service-boundaries:exemplar-article.md:exists",
+      "status": "PASS",
+      "detail": ".ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars/09-uap-spp201-pre-design-and-service-boundaries/exemplar-article.md"
+    },
+    {
+      "name": "09-uap-spp201-pre-design-and-service-boundaries:exemplar-question-set.json:exists",
+      "status": "PASS",
+      "detail": ".ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars/09-uap-spp201-pre-design-and-service-boundaries/exemplar-question-set.json"
+    },
+    {
+      "name": "09-uap-spp201-pre-design-and-service-boundaries:source-ledger.md:exists",
+      "status": "PASS",
+      "detail": ".ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars/09-uap-spp201-pre-design-and-service-boundaries/source-ledger.md"
+    },
+    {
+      "name": "09-uap-spp201-pre-design-and-service-boundaries:claim-ledger.json:exists",
+      "status": "PASS",
+      "detail": ".ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars/09-uap-spp201-pre-design-and-service-boundaries/claim-ledger.json"
+    },
+    {
+      "name": "09-uap-spp201-pre-design-and-service-boundaries:reviewer-memo.md:exists",
+      "status": "PASS",
+      "detail": ".ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars/09-uap-spp201-pre-design-and-service-boundaries/reviewer-memo.md"
+    },
+    {
+      "name": "09-uap-spp201-pre-design-and-service-boundaries:q1:options_A_D",
+      "status": "PASS",
+      "detail": "keys=['A', 'B', 'C', 'D']"
+    },
+    {
+      "name": "09-uap-spp201-pre-design-and-service-boundaries:q2:options_A_D",
+      "status": "PASS",
+      "detail": "keys=['A', 'B', 'C', 'D']"
+    },
+    {
+      "name": "09-uap-spp201-pre-design-and-service-boundaries:q3:options_A_D",
+      "status": "PASS",
+      "detail": "keys=['A', 'B', 'C', 'D']"
+    },
+    {
+      "name": "01-bp344-accessible-ramp-geometry:pack_status_holds_direct_publication",
+      "status": "PASS",
+      "detail": "status=PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION"
+    },
+    {
+      "name": "01-bp344-accessible-ramp-geometry:pack_sme_council_complete_for_calibration",
+      "status": "PASS",
+      "detail": "sme_review.status=llm_council_complete_for_calibration"
+    },
+    {
+      "name": "01-bp344-accessible-ramp-geometry:publication_boundary_retains_hold",
+      "status": "PASS",
+      "detail": "HOLD_FOR_DIRECT_PUBLICATION; LLM SME council is calibration review, not learner-facing release approval."
+    },
+    {
+      "name": "01-bp344-accessible-ramp-geometry:bp344-ramp-c1:not_active_review_or_remove",
+      "status": "PASS",
+      "detail": "status=SUPPORTED"
+    },
+    {
+      "name": "01-bp344-accessible-ramp-geometry:bp344-ramp-c1:supported_not_unfound_or_drift",
+      "status": "PASS",
+      "detail": "extraction_status=FOUND_VERBATIM"
+    },
+    {
+      "name": "01-bp344-accessible-ramp-geometry:bp344-ramp-c2:not_active_review_or_remove",
+      "status": "PASS",
+      "detail": "status=SUPPORTED"
+    },
+    {
+      "name": "01-bp344-accessible-ramp-geometry:bp344-ramp-c2:supported_not_unfound_or_drift",
+      "status": "PASS",
+      "detail": "extraction_status=FOUND_VERBATIM"
+    },
+    {
+      "name": "01-bp344-accessible-ramp-geometry:bp344-ramp-c3:not_active_review_or_remove",
+      "status": "PASS",
+      "detail": "status=SUPPORTED"
+    },
+    {
+      "name": "01-bp344-accessible-ramp-geometry:bp344-ramp-c3:supported_not_unfound_or_drift",
+      "status": "PASS",
+      "detail": "extraction_status=FOUND_VERBATIM"
+    },
+    {
+      "name": "01-bp344-accessible-ramp-geometry:bp344-ramp-c4:not_active_review_or_remove",
+      "status": "PASS",
+      "detail": "status=SUPPORTED"
+    },
+    {
+      "name": "01-bp344-accessible-ramp-geometry:bp344-ramp-c4:supported_not_unfound_or_drift",
+      "status": "PASS",
+      "detail": "extraction_status=FOUND_VERBATIM"
+    },
+    {
+      "name": "01-bp344-accessible-ramp-geometry:bp344-ramp-c5:not_active_review_or_remove",
+      "status": "PASS",
+      "detail": "status=EXAM_STRATEGY_NO_SOURCE_NEEDED"
+    },
+    {
+      "name": "01-bp344-accessible-ramp-geometry:bp344-ramp-c5:supported_not_unfound_or_drift",
+      "status": "PASS",
+      "detail": "extraction_status=NOT_SOURCE_REQUIRED"
+    },
+    {
+      "name": "02-ra9266-foreign-architect-temporary-permit:pack_status_holds_direct_publication",
+      "status": "PASS",
+      "detail": "status=PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION"
+    },
+    {
+      "name": "02-ra9266-foreign-architect-temporary-permit:pack_sme_council_complete_for_calibration",
+      "status": "PASS",
+      "detail": "sme_review.status=llm_council_complete_for_calibration"
+    },
+    {
+      "name": "02-ra9266-foreign-architect-temporary-permit:publication_boundary_retains_hold",
+      "status": "PASS",
+      "detail": "HOLD_FOR_DIRECT_PUBLICATION; LLM SME council is calibration review, not learner-facing release approval."
+    },
+    {
+      "name": "02-ra9266-foreign-architect-temporary-permit:ra9266-foreign-c1:not_active_review_or_remove",
+      "status": "PASS",
+      "detail": "status=SUPPORTED"
+    },
+    {
+      "name": "02-ra9266-foreign-architect-temporary-permit:ra9266-foreign-c1:supported_not_unfound_or_drift",
+      "status": "PASS",
+      "detail": "extraction_status=FOUND_VERBATIM"
+    },
+    {
+      "name": "02-ra9266-foreign-architect-temporary-permit:ra9266-foreign-c2:not_active_review_or_remove",
+      "status": "PASS",
+      "detail": "status=EXAM_STRATEGY_NO_SOURCE_NEEDED"
+    },
+    {
+      "name": "02-ra9266-foreign-architect-temporary-permit:ra9266-foreign-c2:supported_not_unfound_or_drift",
+      "status": "PASS",
+      "detail": "extraction_status=NOT_SOURCE_REQUIRED"
+    },
+    {
+      "name": "03-ra9514-means-of-egress-width-and-count:pack_status_holds_direct_publication",
+      "status": "PASS",
+      "detail": "status=PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION"
+    },
+    {
+      "name": "03-ra9514-means-of-egress-width-and-count:pack_sme_council_complete_for_calibration",
+      "status": "PASS",
+      "detail": "sme_review.status=llm_council_complete_for_calibration"
+    },
+    {
+      "name": "03-ra9514-means-of-egress-width-and-count:publication_boundary_retains_hold",
+      "status": "PASS",
+      "detail": "HOLD_FOR_DIRECT_PUBLICATION; LLM SME council is calibration review, not learner-facing release approval."
+    },
+    {
+      "name": "03-ra9514-means-of-egress-width-and-count:ra9514-egress-c1:not_active_review_or_remove",
+      "status": "PASS",
+      "detail": "status=SUPPORTED"
+    },
+    {
+      "name": "03-ra9514-means-of-egress-width-and-count:ra9514-egress-c1:supported_not_unfound_or_drift",
+      "status": "PASS",
+      "detail": "extraction_status=FOUND_VERBATIM"
+    },
+    {
+      "name": "03-ra9514-means-of-egress-width-and-count:ra9514-egress-c2:not_active_review_or_remove",
+      "status": "PASS",
+      "detail": "status=SUPPORTED"
+    },
+    {
+      "name": "03-ra9514-means-of-egress-width-and-count:ra9514-egress-c2:supported_not_unfound_or_drift",
+      "status": "PASS",
+      "detail": "extraction_status=FOUND_VERBATIM"
+    },
+    {
+      "name": "03-ra9514-means-of-egress-width-and-count:ra9514-egress-c3:not_active_review_or_remove",
+      "status": "PASS",
+      "detail": "status=SUPPORTED"
+    },
+    {
+      "name": "03-ra9514-means-of-egress-width-and-count:ra9514-egress-c3:supported_not_unfound_or_drift",
+      "status": "PASS",
+      "detail": "extraction_status=FOUND_VERBATIM"
+    },
+    {
+      "name": "03-ra9514-means-of-egress-width-and-count:ra9514-egress-c4:not_active_review_or_remove",
+      "status": "PASS",
+      "detail": "status=SUPPORTED"
+    },
+    {
+      "name": "03-ra9514-means-of-egress-width-and-count:ra9514-egress-c4:supported_not_unfound_or_drift",
+      "status": "PASS",
+      "detail": "extraction_status=FOUND_VERBATIM"
+    },
+    {
+      "name": "04-npcp-fixture-unit-and-venting:pack_status_holds_direct_publication",
+      "status": "PASS",
+      "detail": "status=PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION"
+    },
+    {
+      "name": "04-npcp-fixture-unit-and-venting:pack_sme_council_complete_for_calibration",
+      "status": "PASS",
+      "detail": "sme_review.status=llm_council_complete_for_calibration"
+    },
+    {
+      "name": "04-npcp-fixture-unit-and-venting:publication_boundary_retains_hold",
+      "status": "PASS",
+      "detail": "HOLD_FOR_DIRECT_PUBLICATION; LLM SME council is calibration review, not learner-facing release approval."
+    },
+    {
+      "name": "04-npcp-fixture-unit-and-venting:npcp-c1:not_active_review_or_remove",
+      "status": "PASS",
+      "detail": "status=SUPPORTED"
+    },
+    {
+      "name": "04-npcp-fixture-unit-and-venting:npcp-c1:supported_not_unfound_or_drift",
+      "status": "PASS",
+      "detail": "extraction_status=FOUND_VERBATIM"
+    },
+    {
+      "name": "04-npcp-fixture-unit-and-venting:npcp-c2:not_active_review_or_remove",
+      "status": "PASS",
+      "detail": "status=SUPPORTED"
+    },
+    {
+      "name": "04-npcp-fixture-unit-and-venting:npcp-c2:supported_not_unfound_or_drift",
+      "status": "PASS",
+      "detail": "extraction_status=FOUND_VERBATIM"
+    },
+    {
+      "name": "04-npcp-fixture-unit-and-venting:npcp-c3:not_active_review_or_remove",
+      "status": "PASS",
+      "detail": "status=SUPPORTED"
+    },
+    {
+      "name": "04-npcp-fixture-unit-and-venting:npcp-c3:supported_not_unfound_or_drift",
+      "status": "PASS",
+      "detail": "extraction_status=FOUND_VERBATIM"
+    },
+    {
+      "name": "05-vitruvius-principles-and-departments:pack_status_holds_direct_publication",
+      "status": "PASS",
+      "detail": "status=PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION"
+    },
+    {
+      "name": "05-vitruvius-principles-and-departments:pack_sme_council_complete_for_calibration",
+      "status": "PASS",
+      "detail": "sme_review.status=llm_council_complete_for_calibration"
+    },
+    {
+      "name": "05-vitruvius-principles-and-departments:publication_boundary_retains_hold",
+      "status": "PASS",
+      "detail": "HOLD_FOR_DIRECT_PUBLICATION; LLM SME council is calibration review, not learner-facing release approval."
+    },
+    {
+      "name": "05-vitruvius-principles-and-departments:vitruvius-c1:not_active_review_or_remove",
+      "status": "PASS",
+      "detail": "status=SUPPORTED"
+    },
+    {
+      "name": "05-vitruvius-principles-and-departments:vitruvius-c1:supported_not_unfound_or_drift",
+      "status": "PASS",
+      "detail": "extraction_status=FOUND_VERBATIM"
+    },
+    {
+      "name": "05-vitruvius-principles-and-departments:vitruvius-c2:not_active_review_or_remove",
+      "status": "PASS",
+      "detail": "status=SUPPORTED"
+    },
+    {
+      "name": "05-vitruvius-principles-and-departments:vitruvius-c2:supported_not_unfound_or_drift",
+      "status": "PASS",
+      "detail": "extraction_status=FOUND_VERBATIM"
+    },
+    {
+      "name": "05-vitruvius-principles-and-departments:vitruvius-c3:not_active_review_or_remove",
+      "status": "PASS",
+      "detail": "status=EXAM_STRATEGY_NO_SOURCE_NEEDED"
+    },
+    {
+      "name": "05-vitruvius-principles-and-departments:vitruvius-c3:supported_not_unfound_or_drift",
+      "status": "PASS",
+      "detail": "extraction_status=NOT_SOURCE_REQUIRED"
+    },
+    {
+      "name": "06-pd1096-tgfa-ambf-location-controls:pack_status_holds_direct_publication",
+      "status": "PASS",
+      "detail": "status=PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION"
+    },
+    {
+      "name": "06-pd1096-tgfa-ambf-location-controls:pack_sme_council_complete_for_calibration",
+      "status": "PASS",
+      "detail": "sme_review.status=llm_council_complete_for_calibration"
+    },
+    {
+      "name": "06-pd1096-tgfa-ambf-location-controls:publication_boundary_retains_hold",
+      "status": "PASS",
+      "detail": "HOLD_FOR_DIRECT_PUBLICATION; LLM SME council is calibration review, not learner-facing release approval."
+    },
+    {
+      "name": "06-pd1096-tgfa-ambf-location-controls:pd1096-c1:not_active_review_or_remove",
+      "status": "PASS",
+      "detail": "status=SUPPORTED"
+    },
+    {
+      "name": "06-pd1096-tgfa-ambf-location-controls:pd1096-c1:supported_not_unfound_or_drift",
+      "status": "PASS",
+      "detail": "extraction_status=FOUND_VERBATIM"
+    },
+    {
+      "name": "06-pd1096-tgfa-ambf-location-controls:pd1096-c2:not_active_review_or_remove",
+      "status": "PASS",
+      "detail": "status=SUPPORTED"
+    },
+    {
+      "name": "06-pd1096-tgfa-ambf-location-controls:pd1096-c2:supported_not_unfound_or_drift",
+      "status": "PASS",
+      "detail": "extraction_status=FOUND_VERBATIM"
+    },
+    {
+      "name": "06-pd1096-tgfa-ambf-location-controls:pd1096-c3:not_active_review_or_remove",
+      "status": "PASS",
+      "detail": "status=SUPPORTED"
+    },
+    {
+      "name": "06-pd1096-tgfa-ambf-location-controls:pd1096-c3:supported_not_unfound_or_drift",
+      "status": "PASS",
+      "detail": "extraction_status=FOUND_VERBATIM"
+    },
+    {
+      "name": "06-pd1096-tgfa-ambf-location-controls:pd1096-c4:not_active_review_or_remove",
+      "status": "PASS",
+      "detail": "status=SUPPORTED"
+    },
+    {
+      "name": "06-pd1096-tgfa-ambf-location-controls:pd1096-c4:supported_not_unfound_or_drift",
+      "status": "PASS",
+      "detail": "extraction_status=FOUND_PARAPHRASED"
+    },
+    {
+      "name": "07-bp220-parks-playgrounds-road-pavement:pack_status_holds_direct_publication",
+      "status": "PASS",
+      "detail": "status=PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION"
+    },
+    {
+      "name": "07-bp220-parks-playgrounds-road-pavement:pack_sme_council_complete_for_calibration",
+      "status": "PASS",
+      "detail": "sme_review.status=llm_council_complete_for_calibration"
+    },
+    {
+      "name": "07-bp220-parks-playgrounds-road-pavement:publication_boundary_retains_hold",
+      "status": "PASS",
+      "detail": "HOLD_FOR_DIRECT_PUBLICATION; LLM SME council is calibration review, not learner-facing release approval."
+    },
+    {
+      "name": "07-bp220-parks-playgrounds-road-pavement:bp220-c1:not_active_review_or_remove",
+      "status": "PASS",
+      "detail": "status=SUPPORTED"
+    },
+    {
+      "name": "07-bp220-parks-playgrounds-road-pavement:bp220-c1:supported_not_unfound_or_drift",
+      "status": "PASS",
+      "detail": "extraction_status=FOUND_VERBATIM"
+    },
+    {
+      "name": "07-bp220-parks-playgrounds-road-pavement:bp220-c2:not_active_review_or_remove",
+      "status": "PASS",
+      "detail": "status=SUPPORTED"
+    },
+    {
+      "name": "07-bp220-parks-playgrounds-road-pavement:bp220-c2:supported_not_unfound_or_drift",
+      "status": "PASS",
+      "detail": "extraction_status=FOUND_VERBATIM"
+    },
+    {
+      "name": "07-bp220-parks-playgrounds-road-pavement:bp220-c3:not_active_review_or_remove",
+      "status": "PASS",
+      "detail": "status=SUPPORTED"
+    },
+    {
+      "name": "07-bp220-parks-playgrounds-road-pavement:bp220-c3:supported_not_unfound_or_drift",
+      "status": "PASS",
+      "detail": "extraction_status=FOUND_VERBATIM"
+    },
+    {
+      "name": "07-bp220-parks-playgrounds-road-pavement:bp220-c4:not_active_review_or_remove",
+      "status": "PASS",
+      "detail": "status=SUPPORTED"
+    },
+    {
+      "name": "07-bp220-parks-playgrounds-road-pavement:bp220-c4:supported_not_unfound_or_drift",
+      "status": "PASS",
+      "detail": "extraction_status=FOUND_VERBATIM"
+    },
+    {
+      "name": "08-pd957-license-to-sell-registration-gate:pack_status_holds_direct_publication",
+      "status": "PASS",
+      "detail": "status=PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION"
+    },
+    {
+      "name": "08-pd957-license-to-sell-registration-gate:pack_sme_council_complete_for_calibration",
+      "status": "PASS",
+      "detail": "sme_review.status=llm_council_complete_for_calibration"
+    },
+    {
+      "name": "08-pd957-license-to-sell-registration-gate:publication_boundary_retains_hold",
+      "status": "PASS",
+      "detail": "HOLD_FOR_DIRECT_PUBLICATION; LLM SME council is calibration review, not learner-facing release approval."
+    },
+    {
+      "name": "08-pd957-license-to-sell-registration-gate:pd957-c1:not_active_review_or_remove",
+      "status": "PASS",
+      "detail": "status=SUPPORTED"
+    },
+    {
+      "name": "08-pd957-license-to-sell-registration-gate:pd957-c1:supported_not_unfound_or_drift",
+      "status": "PASS",
+      "detail": "extraction_status=FOUND_VERBATIM"
+    },
+    {
+      "name": "08-pd957-license-to-sell-registration-gate:pd957-c2:not_active_review_or_remove",
+      "status": "PASS",
+      "detail": "status=SUPPORTED"
+    },
+    {
+      "name": "08-pd957-license-to-sell-registration-gate:pd957-c2:supported_not_unfound_or_drift",
+      "status": "PASS",
+      "detail": "extraction_status=FOUND_VERBATIM"
+    },
+    {
+      "name": "08-pd957-license-to-sell-registration-gate:pd957-c3:not_active_review_or_remove",
+      "status": "PASS",
+      "detail": "status=SUPPORTED"
+    },
+    {
+      "name": "08-pd957-license-to-sell-registration-gate:pd957-c3:supported_not_unfound_or_drift",
+      "status": "PASS",
+      "detail": "extraction_status=FOUND_VERBATIM"
+    },
+    {
+      "name": "09-uap-spp201-pre-design-and-service-boundaries:pack_status_holds_direct_publication",
+      "status": "PASS",
+      "detail": "status=PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION"
+    },
+    {
+      "name": "09-uap-spp201-pre-design-and-service-boundaries:pack_sme_council_complete_for_calibration",
+      "status": "PASS",
+      "detail": "sme_review.status=llm_council_complete_for_calibration"
+    },
+    {
+      "name": "09-uap-spp201-pre-design-and-service-boundaries:publication_boundary_retains_hold",
+      "status": "PASS",
+      "detail": "HOLD_FOR_DIRECT_PUBLICATION; LLM SME council is calibration review, not learner-facing release approval."
+    },
+    {
+      "name": "09-uap-spp201-pre-design-and-service-boundaries:uap-c1:not_active_review_or_remove",
+      "status": "PASS",
+      "detail": "status=SUPPORTED"
+    },
+    {
+      "name": "09-uap-spp201-pre-design-and-service-boundaries:uap-c1:supported_not_unfound_or_drift",
+      "status": "PASS",
+      "detail": "extraction_status=FOUND_VERBATIM"
+    },
+    {
+      "name": "09-uap-spp201-pre-design-and-service-boundaries:uap-c2:not_active_review_or_remove",
+      "status": "PASS",
+      "detail": "status=SUPPORTED"
+    },
+    {
+      "name": "09-uap-spp201-pre-design-and-service-boundaries:uap-c2:supported_not_unfound_or_drift",
+      "status": "PASS",
+      "detail": "extraction_status=FOUND_VERBATIM"
+    },
+    {
+      "name": "09-uap-spp201-pre-design-and-service-boundaries:uap-c3:not_active_review_or_remove",
+      "status": "PASS",
+      "detail": "status=SUPPORTED"
+    },
+    {
+      "name": "09-uap-spp201-pre-design-and-service-boundaries:uap-c3:supported_not_unfound_or_drift",
+      "status": "PASS",
+      "detail": "extraction_status=FOUND_VERBATIM"
+    },
+    {
+      "name": "09-uap-spp201-pre-design-and-service-boundaries:uap-c4:not_active_review_or_remove",
+      "status": "PASS",
+      "detail": "status=SUPPORTED"
+    },
+    {
+      "name": "09-uap-spp201-pre-design-and-service-boundaries:uap-c4:supported_not_unfound_or_drift",
+      "status": "PASS",
+      "detail": "extraction_status=FOUND_VERBATIM"
+    },
+    {
+      "name": "ledgered_claim_count_is_32",
+      "status": "PASS",
+      "detail": "found 32"
+    },
+    {
+      "name": "question_count_is_27",
+      "status": "PASS",
+      "detail": "found 27"
+    },
+    {
+      "name": "claim_linked_question_ids_resolve",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "no_active_stale_risk_terms_outside_council_history",
+      "status": "PASS",
+      "detail": "0 hits"
+    },
+    {
+      "name": "sme-risk-review-closeout.generated.md:exists",
+      "status": "PASS",
+      "detail": ".ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars/sme-risk-review-closeout.generated.md"
+    },
+    {
+      "name": "sme-risk-review-closeout.generated.md:states_no_active_errors_or_pass",
+      "status": "PASS",
+      "detail": "expected PASS/no-active-risk wording"
+    },
+    {
+      "name": "sme-risk-review-closeout.generated.md:retains_release_hold",
+      "status": "PASS",
+      "detail": "hold wording missing"
+    },
+    {
+      "name": "source-governance-approval-packet.generated.md:exists",
+      "status": "PASS",
+      "detail": ".ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars/source-governance-approval-packet.generated.md"
+    },
+    {
+      "name": "source-governance-approval-packet.generated.md:states_no_active_errors_or_pass",
+      "status": "PASS",
+      "detail": "expected PASS/no-active-risk wording"
+    },
+    {
+      "name": "source-governance-approval-packet.generated.md:retains_release_hold",
+      "status": "PASS",
+      "detail": "hold wording missing"
+    },
+    {
+      "name": "validation-report.md:exists",
+      "status": "PASS",
+      "detail": ".ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars/validation-report.md"
+    },
+    {
+      "name": "validation-report.md:states_no_active_errors_or_pass",
+      "status": "PASS",
+      "detail": "expected PASS/no-active-risk wording"
+    },
+    {
+      "name": "validation-report.md:retains_release_hold",
+      "status": "PASS",
+      "detail": "hold wording missing"
+    },
+    {
+      "name": "production_source_pack_validator_passes",
+      "status": "PASS",
+      "detail": "{\n  \"ok\": true,\n  \"checks\": 151,\n  \"source_packs\": 7,\n  \"chunks\": 14\n}"
+    },
+    {
+      "name": "production_validator_counts_151_7_14",
+      "status": "PASS",
+      "detail": "{'ok': True, 'checks': 151, 'source_packs': 7, 'chunks': 14}"
+    },
+    {
+      "name": "target_pdf_hashes_match_claim_ledgers",
+      "status": "PASS",
+      "detail": "checked=3; missing=[]; bad=[]"
+    },
+    {
+      "name": "git_diff_check_intended_scope_has_no_whitespace_errors",
+      "status": "PASS",
+      "detail": "warning: in the working copy of '.ai/16_source_packs/manifests/source-pack-index.generated.csv', CRLF will be replaced by LF the next time Git touches it"
+    }
+  ],
+  "failures": [],
+  "stale_hits": [],
+  "warnings": [],
+  "remaining_non_automatable_holds": [
+    "Licensed-human SME release approval before learner-facing publication.",
+    "SlateCamp content-audit roundtrip conversion before any Supabase article/question push."
+  ]
+}

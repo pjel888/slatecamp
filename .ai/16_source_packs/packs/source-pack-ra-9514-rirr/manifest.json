@@ -1,9 +1,11 @@
 {
   "source_pack_id": "source-pack-ra-9514-rirr",
-  "source_family": "RA 9514 Fire Code RIRR",
+  "source_family": "RA 9514 Fire Code 2019 Revised IRR",
   "document_code": "RA 9514 RIRR",
-  "document_title": "Revised Implementing Rules and Regulations of RA 9514 Fire Code of the Philippines",
+  "document_title": "2019 Revised Implementing Rules and Regulations of RA 9514 Fire Code of the Philippines",
   "version": "1.0.0",
+  "source_type": "curated_governed_source_pack",
+  "governed": true,
   "approval_record": {
     "approved_by": "user_governance_approval_this_run",
     "human_approval": "granted_by_user_this_run",
@@ -13,23 +15,30 @@
   },
   "approved_by": "user_governance_approval_this_run",
   "approval_basis": "governance_human_sme_approval_granted_by_user_this_run",
-  "source_evidence_links": [],
-  "local_file_hashes": [
-    "63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953"
+  "source_evidence_links": [
+    ".ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars/official-source-evidence.generated/source-anchor-audit.generated.json#local_sources.ra9514_local_bfp_rirr_pdf",
+    ".ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars/official-source-evidence.generated/source-anchor-audit.generated.json#blocked_remote_attempts"
   ],
-  "official_file_hashes": [],
-  "locator_policy": "locator_supported_chunks_preferred; local markdown fallback locator used when draft chunks are empty",
-  "chunking_policy": "deterministic local chunks promoted from draft excerpts or Vitruvius markdown conversions; no external provider upload",
+  "local_file_hashes": [
+    "ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266"
+  ],
+  "official_file_hashes": [
+    "ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266"
+  ],
+  "locator_policy": "section_locator_and_pdf_page_locator_required_for_exam-critical legal/code chunks",
+  "chunking_policy": "2026-05-09 source-governance repair: deterministic legal/code chunks rebuilt from verified local raw markdown aligned to hashed source-layer PDFs; no external provider upload",
   "provider_boundary": "LOCAL_REPO_SOURCE_PACK_NO_EXTERNAL_UPLOAD",
   "copyright_boundary": "internal_educational_validation_and_source_grounding",
   "created_at": "2026-05-06T05:27:44.538Z",
-  "generated_by_script_version": "promote-draft-source-packs.ts@2",
+  "repaired_at": "2026-05-09T10:37:52Z",
+  "generated_by_script_version": "repair-source-packs-and-ledgers@2026-05-09",
   "validation_status": "VALIDATION_GENERATED",
-  "chunk_count": 2,
+  "chunk_count": 3,
   "conflict_summary": {
     "conflict_flag": "false",
-    "conflict_type": "official_source_blocked"
+    "conflict_type": "reconciled_bfp_remote_403_local_bfp_pdf_verified_pack_rebuilt"
   },
+  "source_reconciliation_status": "REBUILT_AND_RECONCILED_FOR_CALIBRATION: prior wrong-source chunks were replaced with RA 9514 Rule 10 chunks from BFP-published 2019 RIRR local PDF/markdown; BFP remote URLs returned HTTP 403 but local source-layer PDF is hashed and text-extractable.",
   "draft_origin": "draft-ra-9514-rirr",
-  "source_pack_hash": "65cb88e8e5e991f3c55f54185625ceea32340d05f5836e98a66a739b7820e072"
+  "source_pack_hash": "7342b5843df03074c71530a5fc42ef8aaadbda65a41969859e8bc2c74f5ce4fe"
 }

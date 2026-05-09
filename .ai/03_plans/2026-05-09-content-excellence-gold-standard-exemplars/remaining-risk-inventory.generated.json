@@ -2,7 +2,7 @@
   {
     "pack": "01-bp344-accessible-ramp-geometry",
     "status": "PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION",
-    "source_status": "LOCAL_RAW_NEEDS_RECONCILIATION",
+    "source_status": "OFFICIAL_REMOTE_VERIFIED_LOCAL_HASH_RECONCILED",
     "sme_review_status": "llm_council_complete_for_calibration",
     "claim_count": 5,
     "unresolved_claim_risks": [],
@@ -10,13 +10,15 @@
       "HOLD_FOR_DIRECT_PUBLICATION"
     ],
     "conflict_or_provenance_classes": [
-      "local_webpage_pdf_vs_official_download_pdf_hash_mismatch"
-    ]
+      "reconciled_ncda_local_webpage_pdf_vs_official_gazette_download_hash_mismatch"
+    ],
+    "source_reconciliation_closed_at": "2026-05-09T10:35:18Z",
+    "source_reconciliation_evidence": "official-source-evidence.generated/source-anchor-audit.generated.json"
   },
   {
     "pack": "02-ra9266-foreign-architect-temporary-permit",
     "status": "PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION",
-    "source_status": "LOCAL_RAW_NEEDS_RECONCILIATION",
+    "source_status": "OFFICIAL_ARCHITECTUREBOARD_VERIFIED_LOCAL_PRBOA_RECONCILED",
     "sme_review_status": "llm_council_complete_for_calibration",
     "claim_count": 2,
     "unresolved_claim_risks": [],
@@ -24,13 +26,15 @@
       "HOLD_FOR_DIRECT_PUBLICATION"
     ],
     "conflict_or_provenance_classes": [
-      "authority_host_unverified"
-    ]
+      "reconciled_architectureboard_official_pdf_verified_lawphil_supplementary"
+    ],
+    "source_reconciliation_closed_at": "2026-05-09T10:35:18Z",
+    "source_reconciliation_evidence": "official-source-evidence.generated/source-anchor-audit.generated.json"
   },
   {
     "pack": "03-ra9514-means-of-egress-width-and-count",
     "status": "PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION",
-    "source_status": "OFFICIAL_BLOCKED_LOCAL_RAW_USED",
+    "source_status": "LOCAL_BFP_OFFICIAL_PDF_VERIFIED_SOURCE_PACK_REBUILT",
     "sme_review_status": "llm_council_complete_for_calibration",
     "claim_count": 4,
     "unresolved_claim_risks": [],
@@ -38,8 +42,10 @@
       "HOLD_FOR_DIRECT_PUBLICATION"
     ],
     "conflict_or_provenance_classes": [
-      "official_source_blocked; prior source-pack integrity issue requires quarantine/rebuild before publication"
-    ]
+      "reconciled_bfp_remote_403_local_bfp_pdf_verified_source_pack_rebuilt"
+    ],
+    "source_reconciliation_closed_at": "2026-05-09T10:35:18Z",
+    "source_reconciliation_evidence": "official-source-evidence.generated/source-anchor-audit.generated.json"
   },
   {
     "pack": "04-npcp-fixture-unit-and-venting",
@@ -72,7 +78,7 @@
   {
     "pack": "06-pd1096-tgfa-ambf-location-controls",
     "status": "PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION",
-    "source_status": "LOCAL_RAW_NEEDS_RECONCILIATION",
+    "source_status": "LOCAL_DPWH_OFFICIAL_PDF_VERIFIED_REMOTE_ANTIBOT_RECONCILED",
     "sme_review_status": "llm_council_complete_for_calibration",
     "claim_count": 4,
     "unresolved_claim_risks": [],
@@ -80,8 +86,10 @@
       "HOLD_FOR_DIRECT_PUBLICATION"
     ],
     "conflict_or_provenance_classes": [
-      "source_pack_conflict_status_unknown_for_this_new_pack"
-    ]
+      "reconciled_dpwh_remote_antibot_local_dpwh_official_pdf_verified"
+    ],
+    "source_reconciliation_closed_at": "2026-05-09T10:35:18Z",
+    "source_reconciliation_evidence": "official-source-evidence.generated/source-anchor-audit.generated.json"
   },
   {
     "pack": "07-bp220-parks-playgrounds-road-pavement",
