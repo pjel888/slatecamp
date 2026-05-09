@@ -14,15 +14,15 @@ Local-only extraction sample. Text previews are snippets for extractor validatio
 ### Page 1
 - text_length: 0
 - locator_examples: none
-- preview: 
+- preview:
 ### Page 2
 - text_length: 0
 - locator_examples: none
-- preview: 
+- preview:
 ### Page 3
 - text_length: 0
 - locator_examples: none
-- preview: 
+- preview:
 
 ## RA 11201 / DHSUD Act
 
@@ -34,15 +34,15 @@ Local-only extraction sample. Text previews are snippets for extractor validatio
 ### Page 1
 - text_length: 0
 - locator_examples: none
-- preview: 
+- preview:
 ### Page 2
 - text_length: 0
 - locator_examples: none
-- preview: 
+- preview:
 ### Page 3
 - text_length: 0
 - locator_examples: none
-- preview: 
+- preview:
 
 ## RA 11285 / Energy Efficiency and Conservation Act
 
@@ -54,15 +54,15 @@ Local-only extraction sample. Text previews are snippets for extractor validatio
 ### Page 1
 - text_length: 0
 - locator_examples: none
-- preview: 
+- preview:
 ### Page 2
 - text_length: 0
 - locator_examples: none
-- preview: 
+- preview:
 ### Page 3
 - text_length: 0
 - locator_examples: none
-- preview: 
+- preview:
 
 ## BP 344 2024 Revised IRR
 
@@ -74,7 +74,7 @@ Local-only extraction sample. Text previews are snippets for extractor validatio
 ### Page 1
 - text_length: 628
 - locator_examples: none
-- preview: (Https://Ncda.Gov.Ph/) Downloadable Files: 1. Amended IRR BP 344 Official Gazette – PDF File (https://ncda.gov.ph/wp- content/uploads/2024/08/amended-IRR-BP-344-Official-Gazette.pdf) BP 344 IMPLEMENTING RULES AND REGULATIONS (IRR) AMENDMENTS MINIMUM REQUIREMENTS FOR ACCESSIBILITY 1. GENERAL PROVISIONS 1. Accessible Ramps Republic of the Philippines National Council on Disability Affairs Pambansang Sanggunian Ukol sa Ugnayang Pangmaykapansanan  2651033 Total Registered Persons With Disabilities 
+- preview: (Https://Ncda.Gov.Ph/) Downloadable Files: 1. Amended IRR BP 344 Official Gazette – PDF File (https://ncda.gov.ph/wp- content/uploads/2024/08/amended-IRR-BP-344-Official-Gazette.pdf) BP 344 IMPLEMENTING RULES AND REGULATIONS (IRR) AMENDMENTS MINIMUM REQUIREMENTS FOR ACCESSIBILITY 1. GENERAL PROVISIONS 1. Accessible Ramps Republic of the Philippines National Council on Disability Affairs Pambansang Sanggunian Ukol sa Ugnayang Pangmaykapansanan  2651033 Total Registered Persons With Disabilities
 ### Page 2
 - text_length: 1438
 - locator_examples: none

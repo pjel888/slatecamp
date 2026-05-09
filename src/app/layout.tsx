@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from 'next'
+import { Plus_Jakarta_Sans } from 'next/font/google'
 import { siteConfig } from '@/lib/constants/site'
 
 import { ThemeProvider } from '@/components/shared/ThemeProvider'
@@ -12,13 +13,19 @@ import './globals.css'
 
 const isDemo = !process.env.NEXT_PUBLIC_SUPABASE_URL
 
+const plusJakarta = Plus_Jakarta_Sans({
+  subsets: ['latin'],
+  weight: ['700', '800'],
+  variable: '--font-display',
+  display: 'swap',
+})
+
 export const metadata: Metadata = {
   title: {
-    default: `${siteConfig.name} — Personalized LEA Review`,
+    default: `${siteConfig.name} — Architecture Study Companion`,
     template: `%s | ${siteConfig.name}`,
   },
-  description:
-    'A cognitive-first review platform built for the LEA. Active recall, spaced repetition, and interactive study tools for professional licensure success.',
+  description: siteConfig.description,
   metadataBase: new URL(
     process.env.NEXT_PUBLIC_APP_URL ?? 'http://localhost:3000',
   ),
@@ -40,9 +47,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en' suppressHydrationWarning>
-      <body
-        className='font-sans antialiased'
-      >
+      <body className={`${plusJakarta.variable} font-sans antialiased`}>
         <ThemeProvider>
           {process.env.NODE_ENV === 'development' && <DevModeOverlay />}
           <NoiseFilter />

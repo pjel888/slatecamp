@@ -1,7 +1,7 @@
 # Claude Code Review — Phase 0.5B Corrected Final Review
 
-**Status:** PASS  
-**Mode:** Read-only narrow review  
+**Status:** PASS
+**Mode:** Read-only narrow review
 **Files reviewed:**
 
 - `phase05b-live-verification-report.md`

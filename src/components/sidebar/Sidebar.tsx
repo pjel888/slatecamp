@@ -17,7 +17,7 @@ import {
 } from './types'
 import type { SidebarProps } from './types'
 import { useActiveSession } from '@/lib/context/active-session-context'
-import { ConfirmDialog } from '@/components/ui/dialog'
+import { ConfirmModal as ConfirmDialog } from '@/components/ui/modal'
 import { cn } from '@/lib/utils'
 import { useNavigationPending } from '@/hooks/useNavigationPending'
 import { useQuizStore } from '@/stores/useQuizStore'

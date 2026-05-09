@@ -1,7 +1,7 @@
 # Export Freshness Strategy — Phase 1A Evidence
 
-**Date:** 2026-05-05  
-**Scope:** Define how local export artifacts prove freshness against live Supabase, and what metadata is required for Phase 1B trust.  
+**Date:** 2026-05-05
+**Scope:** Define how local export artifacts prove freshness against live Supabase, and what metadata is required for Phase 1B trust.
 **Status:** Read-only planning document; no exports regenerated.
 
 ---

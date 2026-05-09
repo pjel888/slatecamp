@@ -1,7 +1,7 @@
 # Phase 0.5D Source-Pack Build Plan — Planning Only
 
-**Generated:** 2026-05-05T15:48:50Z  
-**Status:** Build plan only. No source packs, chunks, embeddings, or source approvals are created.  
+**Generated:** 2026-05-05T15:48:50Z
+**Status:** Build plan only. No source packs, chunks, embeddings, or source approvals are created.
 **Gate:** Source-pack implementation remains blocked until at least one verification packet is human/SME-approved and governance decisions are resolved or explicitly deferred.
 
 ## 1. Inputs

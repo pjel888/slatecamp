@@ -49,6 +49,7 @@ blob-report/
 # misc
 *.pem
 .worktrees/
+.sisyphus/
 scripts/seed.ts
 DB_SEED.sql
 supabase/seed.sql
@@ -96,3 +97,8 @@ nul
 001_Raw-Source-Layer/
 
 vitruvius-connection/
+
+# Local/generated visual-code analysis research artifacts
+.ai/13_research/vizcodeph-comprehensive-audit-*/
+vizcode-analysis/
+.vizcode-analysis/

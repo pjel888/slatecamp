@@ -1,7 +1,7 @@
 # Official Source Search Playbook — Phase 0.5B Planning Playbook
 
-**Created:** 2026-05-05T14:59:10Z  
-**Scope:** Standardize official-web source discovery and verification for SlateCamp source candidates.  
+**Created:** 2026-05-05T14:59:10Z
+**Scope:** Standardize official-web source discovery and verification for SlateCamp source candidates.
 **Status:** Planning/evidence only. Search results are not approval.
 
 **Phase numbering note:** This is a completed Phase 0.5B planning playbook, not the Phase 0.5B.3 human/SME review gate.

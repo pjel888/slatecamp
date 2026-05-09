@@ -1,7 +1,7 @@
 # Question-Bank Failure-Mode Map — Phase 1A Evidence
 
-**Date:** 2026-05-05  
-**Scope:** Map how the 7,159-question bank can fail, separately from article failure modes.  
+**Date:** 2026-05-05
+**Scope:** Map how the 7,159-question bank can fail, separately from article failure modes.
 **Status:** Read-only inventory; no question edits proposed.
 
 ---

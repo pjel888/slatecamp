@@ -1,6 +1,6 @@
 # Source Verification Packet Draft Queue — Updated after Phase 0.5B.1
 
-**Generated:** 2026-05-05T15:48:50Z  
+**Generated:** 2026-05-05T15:48:50Z
 **Status:** Draft queue only. No source approval. No source-pack creation.
 
 ## Ready for packet draft assembly as Rank 5 statute-archive evidence, still approval-blocked
@@ -112,7 +112,7 @@ No approval is granted. All remain DISCOVERY_ONLY, human-review-required, and SM
 
 ## Phase 0.5B.5 follow-up update
 
-CLAUDE_REVIEW_STATUS = CLAUDE_UNAVAILABLE_TOKEN_LIMIT  
+CLAUDE_REVIEW_STATUS = CLAUDE_UNAVAILABLE_TOKEN_LIMIT
 CLAUDE_REVIEW_PENDING = true
 
 Phase 0.5B.5 added fallback-only official-source research. Key changes: Senate LRB PD 1216 and BFP RA 9514 candidates are SECURITY_GATED, DOE DC2019-11-0014 is an OFFICIAL_PAGE_FOUND lead with incomplete metadata/PDF capture, NCDA BP 344 2024 Revised IRR PDF was found and hashed, DPWH PD1096 PDF was reconfirmed, RA9266 remains unresolved beyond archive/security-gated candidates, and PRC exam schedule/program access remains blocked by PRC FortiADC. Gates remain blocked.

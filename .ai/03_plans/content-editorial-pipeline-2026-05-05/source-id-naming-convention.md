@@ -1,7 +1,7 @@
 # Source ID Naming Convention — Phase 0.5A.1
 
-**Date:** 2026-05-05  
-**Scope:** Define stable, human-readable, version-aware naming conventions for `source_id` and chunk IDs used in the source manifest and source packs.  
+**Date:** 2026-05-05
+**Scope:** Define stable, human-readable, version-aware naming conventions for `source_id` and chunk IDs used in the source manifest and source packs.
 **Status:** Planning document only. No implementation.
 
 ---

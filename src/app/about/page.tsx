@@ -15,18 +15,18 @@ export const metadata = { title: `About — ${siteConfig.name}` };
 const TECH_PILLARS = [
   {
     icon: Brain,
-    title: "IRT Adaptive Testing",
-    body: "Every question you answer recalibrates the difficulty of what comes next. The engine uses a 2-parameter logistic model — the same method used in high-stakes licensure exams — so your Readiness Score reflects true mastery, not luck.",
+    title: "Mapped topic checks",
+    body: "Questions help surface which architecture topics feel stable and which ones need another pass. The score is a study signal, not an exam-result forecast.",
   },
   {
     icon: ChartLineUp,
-    title: "Spaced Repetition (SRS)",
-    body: "Topics you struggle with surface again at precisely the right interval to cement long-term recall. Topics you've mastered stay out of the way. You never waste a session.",
+    title: "Calmer next steps",
+    body: "SlateCamp points you back to the guides, visuals, and practice areas that match the gap you just found, so study time has a clearer direction.",
   },
   {
     icon: Buildings,
-    title: "Anti-Inflation Readiness Score",
-    body: "Most reviewers inflate your confidence with easy questions. SlateCamp's score is calibrated against actual LEA difficulty. A 75% here means you're genuinely ready for exam day.",
+    title: "Architecture-first context",
+    body: "Resources, quizzes, 3D visuals, and tools are organized around school, board-season, and early-practice realities, with source boundaries kept visible.",
   },
 ] as const;
 
@@ -50,8 +50,8 @@ export default function AboutPage() {
             <p className="mt-6 max-w-[560px] text-[17px] leading-relaxed text-text-secondary">
               SlateCamp is a solo project. I&apos;m Philip — a licensed
               architect who took the LEA and lived through the frustration of
-              reviewers that couldn&apos;t tell me where I actually stood. So I
-              built the tool I wished had existed.
+              notes and questions that couldn&apos;t show me what connected or
+              what to repair next. So I built the atlas I wished had existed.
             </p>
           </div>
         </section>
@@ -73,9 +73,8 @@ export default function AboutPage() {
                 </p>
                 <p className="mt-4 text-[15px] leading-relaxed text-text-secondary">
                   I built SlateCamp because every Filipino architect deserves a
-                  study engine that adapts to them — one that knows the
-                  difference between a topic you&apos;ve mastered and one you
-                  just got lucky on.
+                  calmer architecture knowledge map — one that helps connect
+                  sources, visuals, questions, tools, and the next useful step.
                 </p>
               </div>
               <div>
@@ -84,15 +83,15 @@ export default function AboutPage() {
                 </h2>
                 <p className="mt-4 text-[15px] leading-relaxed text-text-secondary">
                   SlateCamp exists because every Filipino architect deserves a
-                  study engine that adapts to them. Not a PDF dump. Not a
-                  flashcard deck. A real-time intelligence platform that tells
-                  you exactly where you stand, what to study next, and whether
-                  you&apos;re ready to sit the exam.
+                  knowledge atlas they can actually use. Not a PDF dump. Not a
+                  pile of disconnected notes. A source-backed field guide that
+                  helps you look up what matters, check what stuck, and decide
+                  what to repair next.
                 </p>
                 <p className="mt-4 text-[15px] leading-relaxed text-text-secondary">
                   The platform is built with the same discipline we apply to
-                  architecture: nothing is decorative. Every feature earns its
-                  place by improving your outcome.
+                  architecture: every feature should help make scattered
+                  knowledge clearer, more visual, and easier to return to.
                 </p>
               </div>
             </div>
@@ -105,11 +104,11 @@ export default function AboutPage() {
             The technology
           </p>
           <h2 className="max-w-[520px] text-[clamp(1.5rem,3vw,2rem)] font-semibold text-foreground">
-            Why it works differently
+            Why it feels different
           </h2>
           <p className="mt-4 max-w-[560px] text-[15px] leading-relaxed text-text-secondary">
-            SlateCamp doesn&apos;t guess at what you need. Three purpose-built
-            systems work together to make every study session count.
+            SlateCamp is designed around student reassurance: map the topic,
+            see the idea, check what stayed, then return to the next useful step.
           </p>
 
           <div className="mt-12 grid gap-6 sm:grid-cols-3">
@@ -136,11 +135,11 @@ export default function AboutPage() {
         <section className="border-t border-border bg-primary">
           <div className="mx-auto max-w-[1200px] px-6 py-20 text-center">
             <h2 className="text-[clamp(1.5rem,3vw,2rem)] font-semibold text-white">
-              Ready to find out where you actually stand?
+              Ready to make the next study step clearer?
             </h2>
             <p className="mx-auto mt-4 max-w-[440px] text-[15px] leading-relaxed text-white/70">
-              Take the free diagnostic. No account required. See your Readiness
-              Score across every LEA taxonomy in under 20 minutes.
+              Start with a free check and use the atlas to turn uncertainty
+              into a calmer review plan.
             </p>
             <Link
               href={ROUTES.try}

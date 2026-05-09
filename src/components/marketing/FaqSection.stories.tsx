@@ -21,34 +21,34 @@ type Story = StoryObj<typeof meta>
 
 const sixQuestions = [
   {
-    question: 'What is the LEA and who needs to take it?',
+    question: 'What is the Licensure Examination for Architects and who needs to take it?',
     answer:
-      'The Licensure Examination for Architects (LEA) is the Philippine board exam required for all architecture graduates who wish to practice as licensed architects. It covers seven subjects spanning design, history, utilities, and the National Building Code.',
+      'The Licensure Examination for Architects is the Philippine board exam for architecture graduates seeking registration as architects. SlateCamp helps candidates organize review around codes, topics, questions, and source trails; always verify current requirements with PRC and PRBoA materials.',
   },
   {
-    question: 'How does SlateCamp differ from traditional review centers?',
+    question: 'How does SlateCamp help when my architecture knowledge feels scattered?',
     answer:
-      'SlateCamp uses an adaptive IRT-based engine that adjusts question difficulty to your current ability level. Instead of passive lectures, you get targeted practice sessions that close your specific knowledge gaps — not a generic review for everyone.',
+      'SlateCamp gives students a calmer map: source-backed resources where verified, visual explanations, quizzes, 3D labs, and practical tools that turn missed answers into topics to repair.',
   },
   {
-    question: 'How many questions are in the question bank?',
+    question: 'What do I get after creating a free account?',
     answer:
-      'The bank contains over 2,400 questions, each written to the LEA syllabus and verified by licensed architects. Every question is tagged to its exact code provision — no recycled PDFs or scraped notes.',
+      'You can start with dashboard-gated free resources, preview tools, and readiness-oriented practice surfaces. Account creation keeps progress, weak topics, and next steps in one place.',
   },
   {
     question: 'What is the Readiness Score?',
     answer:
-      'Your Readiness Score is a composite metric computed from six vectors: mastery level, time since last review, consistency, coverage, strength in weak areas, and 30-day performance trend. It gives you a single number that tells you how prepared you are for exam day.',
+      'The Readiness Score is a study signal that helps you see what feels stable and what needs repair. It is not a board-result forecast or pass promise; it is a way to choose the next topic more clearly.',
   },
   {
     question: 'Can I use SlateCamp on mobile?',
     answer:
-      'Yes. SlateCamp is fully responsive and optimized for mobile browsers. Review sessions, the wiki, and analytics are all accessible from any device without needing to install an app.',
+      'Yes. SlateCamp is designed for mobile browsers so you can read explanations, answer questions, and check tools from common study devices without installing an app.',
   },
   {
     question: 'Is there a free trial?',
     answer:
-      'You can explore the platform in Try Mode — a curated set of questions and wiki articles available without an account. A full subscription unlocks all 2,400+ questions, spaced repetition scheduling, and your personal analytics dashboard.',
+      'Free resources can require signup by design. The landing page shows previews, then a free account unlocks saved progress, dashboard context, and gated resources where needed. No credit card is required for the free starting path.',
   },
 ]
 
@@ -67,7 +67,7 @@ export const GridVariant: Story = {
   args: {
     questions: fourQuestions,
     heading: 'Common questions',
-    subheading: 'Quick answers to what reviewees ask most.',
+    subheading: 'Quick answers to what learners ask most.',
     variant: 'grid',
   },
 }

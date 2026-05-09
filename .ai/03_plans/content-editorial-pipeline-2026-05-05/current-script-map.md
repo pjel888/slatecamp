@@ -1,8 +1,8 @@
 # Current Script Map — Phase 1A Reconciliation
 
-**Generated:** 2026-05-05  
-**Scope:** `scripts/content-audit/` and `package.json` `content-audit:*` commands  
-**Method:** Read-only source inspection of every `.ts` file and `package.json` commands  
+**Generated:** 2026-05-05
+**Scope:** `scripts/content-audit/` and `package.json` `content-audit:*` commands
+**Method:** Read-only source inspection of every `.ts` file and `package.json` commands
 **Purpose:** Classify every script for Phase 1A safety before any mutation
 
 ---

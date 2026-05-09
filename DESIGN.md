@@ -135,7 +135,7 @@ components:
 
 SlateCamp is a calm, work-focused review platform for Philippine Licensure Examination for Architects (LEA) candidates. The interface should feel serious, legible, and coach-like: dense enough for repeated study, quiet enough for anxious candidates, and precise enough for professional exam preparation.
 
-The visual language is restrained and instructional. Use structural hierarchy, strong typography, exact spacing, and a small semantic color system instead of decorative effects. Every screen should help the student decide what to do next without hype, shame, or manufactured gamification.
+The visual language is restrained, instructional, and allowed to be delightful when the moment earns it. Use structural hierarchy, strong typography, exact spacing, and a small semantic color system first; then add decorative elements, confetti, or celebratory motion only when they reinforce a meaningful product state or help the interface feel more approachable. Every screen should help the student decide what to do next without shame, urgency theater, or manufactured engagement loops.
 
 `DESIGN.md` is the agent-readable design contract. `src/app/globals.css` remains the implementation source for CSS custom properties and Tailwind CSS 4 tokens.
 
@@ -149,7 +149,7 @@ The current standard is:
 - **Signal-first:** color, motion, badges, and visual weight must communicate status, priority, or next action.
 - **Legible by default:** Atkinson Hyperlegible body text, clear contrast, obvious focus states, and stable reading layouts are product requirements.
 - **Dense but breathable:** dashboards and study tools should support repeated daily use without becoming marketing pages or over-spaced SaaS screens.
-- **Calm under pressure:** avoid shame, hype, urgency theater, social comparison, and decorative reward loops.
+- **Calm under pressure:** avoid shame, urgency theater, social comparison, and decorative reward loops. Delight is allowed when it is brief, state-tied, and does not distract from the next study action.
 - **Evidence over inspiration:** use source-backed accessibility and token practices, then translate them into SlateCamp's own rules.
 
 Do not describe new UI work through borrowed external design-language labels. Describe it in SlateCamp terms: candidate goal, study context, state clarity, hierarchy, accessibility, and token compliance.
@@ -208,7 +208,7 @@ Do not nest UI cards inside other cards. Page sections should be unframed layout
 
 Depth comes from borders, tonal surfaces, and spacing before shadows. Resting cards should use little or no shadow. Reserve stronger shadows for dropdowns, popovers, dialogs, and other temporary elevation.
 
-Avoid decorative blobs, gradient orbs, bokeh backgrounds, and ornamental gradients. Gradients are allowed only when they clarify a domain-specific state or when already defined by the app token system.
+Decorative blobs, gradient orbs, bokeh backgrounds, ornamental gradients, and confetti are allowed when they support a specific surface: landing-page atmosphere, product proof, onboarding warmth, or meaningful completion/correct-answer feedback. Keep them restrained, token-aligned, and subordinate to copy and controls. Do not let decoration reduce contrast, obscure layout hierarchy, or become a generic dopamine loop.
 
 ## Shapes
 
@@ -227,9 +227,10 @@ Use the existing shadcn-style primitives and SlateCamp shared components before 
 
 - **Buttons:** one primary action per view. Secondary and ghost actions should stay visibly subordinate.
 - **Cards:** quiet border, white or semantic surface, compact heading, clear content hierarchy, no nested card stacks.
+- **Modals:** use `@/components/ui/modal` for popup dialogs. The standard shell is the Omnibar pattern: title/header on the left, close button on the right, scrollable body, optional footer, and size/position variants only. Do not introduce new popup modal shells; keep `Sheet` for slide-in panels and `Popover` for anchored disclosures.
 - **Forms:** visible labels, clear helper/error text, strong focus states, and no unlabeled icon-only inputs.
-- **Badges:** status and metadata only; avoid turning badges into gamification rewards.
-- **Quiz feedback:** correct/selected states can use semantic backgrounds; wrong/low-score states should avoid anxiety-inducing red unless marking an actual incorrect answer.
+- **Badges:** status and metadata first; reward-style badges are allowed only when they represent a real milestone or achievement, not empty engagement bait.
+- **Quiz feedback:** correct/selected states can use semantic backgrounds and restrained celebration effects; wrong/low-score states should avoid anxiety-inducing red unless marking an actual incorrect answer.
 - **Empty states:** name what is missing and give the next action. Avoid generic "No data found" copy.
 - **3D and interactive tools:** the viewport is for spatial thinking. Keep text-heavy explanations in panels and use color/state changes in geometry sparingly and consistently.
 
@@ -243,6 +244,7 @@ Accessibility is part of the SlateCamp standard, not a downstream QA pass.
 - Forms need persistent labels, inline validation, useful error messages, and non-color-only state communication.
 - Loading, saved, failed, empty, and unauthorized states should be announced or visually persistent enough to support recovery.
 - Motion must respect `prefers-reduced-motion`; animated study and 3D surfaces need a static or reduced-motion fallback.
+- Confetti and decorative animation must be `aria-hidden` unless they communicate state textually elsewhere; never make them the only feedback for success, failure, or progress.
 
 ## Research Inputs
 
@@ -273,8 +275,9 @@ New color, typography, radius, motion, or component-state rules require `bun run
 - Do keep cards at `rounded-md` or smaller unless using a modal/dialog.
 - Do maintain WCAG AA contrast for text and controls.
 - Do design empty, loading, error, and unauthorized states as first-class UI.
+- Do use restrained confetti, decorative atmosphere, and celebratory motion when they are tied to a meaningful learner moment and respect reduced-motion settings.
 - Don't use red for low scores, shame, or motivational pressure.
-- Don't add confetti, leaderboards, trophies, decorative animation, or hype copy.
+- Don't add leaderboards, empty trophies, decorative animation that competes with task flow, or hype copy.
 - Don't use monospace for ordinary labels, categories, or metadata.
 - Don't build landing-page style hero layouts inside operational dashboards.
 - Don't add new visual tokens without updating `src/app/globals.css`, `DESIGN.md`, and the design-system docs together.

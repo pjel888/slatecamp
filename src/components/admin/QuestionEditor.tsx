@@ -7,7 +7,14 @@ import { createQuestion, updateQuestion, deleteQuestion } from '@/lib/actions/ad
 import { FloppyDisk, XCircle, Trash, ArrowLeft, MagnifyingGlass, Check } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import Link from 'next/link'
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogFooter } from '@/components/ui/dialog'
+import {
+  Modal as Dialog,
+  ModalContent as DialogContent,
+  ModalHeader as DialogHeader,
+  ModalTitle as DialogTitle,
+  ModalDescription as DialogDescription,
+  ModalFooter as DialogFooter,
+} from '@/components/ui/modal'
 import { Button } from '@/components/ui/button'
 import { toast } from '@/lib/hooks/use-toast'
 import { cn } from '@/lib/utils'

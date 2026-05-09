@@ -1,8 +1,8 @@
 # Live Read-Only Source/Admin Verification Checks — Phase 0.5
 
-**Date:** 2026-05-05T10:50:59Z  
-**Scope:** Read-only live Supabase verification of source/admin contradictions after Phase 0.5A.1.  
-**Commands:** `bunx supabase db query --linked --file <sql> --output json`; `bunx supabase migration list --linked`.  
+**Date:** 2026-05-05T10:50:59Z
+**Scope:** Read-only live Supabase verification of source/admin contradictions after Phase 0.5A.1.
+**Commands:** `bunx supabase db query --linked --file <sql> --output json`; `bunx supabase migration list --linked`.
 **Mutation status:** No writes. No migrations applied. No Supabase data mutated.
 
 ---

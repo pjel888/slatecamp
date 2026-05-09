@@ -1,6 +1,6 @@
 # Local Source File Gaps — Phase 0.5A.2
 
-**Generated:** 2026-05-05T14:47:56Z  
+**Generated:** 2026-05-05T14:47:56Z
 **Source intake path:** `vitruvius-connection/`
 
 ---

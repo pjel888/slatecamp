@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { Trash } from '@phosphor-icons/react/dist/ssr'
 import { Button } from '@/components/ui/button'
-import { ConfirmDialog } from '@/components/ui/dialog'
+import { ConfirmModal } from '@/components/ui/modal'
 
 interface BulkActionBarProps {
   selectedCount: number
@@ -57,7 +57,7 @@ export const BulkActionBar = ({
         </Button>
       </div>
 
-      <ConfirmDialog
+      <ConfirmModal
         open={confirmOpen}
         onOpenChange={setConfirmOpen}
         title={`Delete ${selectedCount} ${entityName}?`}

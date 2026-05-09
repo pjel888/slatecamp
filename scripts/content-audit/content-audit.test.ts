@@ -7,8 +7,10 @@ import {
   BULK_APPLY_CONFIRMATION,
   UiBlocksFile,
   assertBulkApplyConfirmation,
+  buildArticleContentUpdatePayload,
   buildParserErrorsFile,
   composeCandidate,
+  containsRawSlatecampUiBlockPlaceholder,
   diffCandidate,
   evaluatePushSafety,
   findPlaceholders,
@@ -118,7 +120,35 @@ describe('content-audit normalization', () => {
   })
 })
 
-describe('content-audit compose/diff/push safety', () => {
+describe('content-audit push payload', () => {
+  test('suppresses public updated_note for operational repair notes', () => {
+    const payload = buildArticleContentUpdatePayload({
+      content: '# A\n',
+      updatedAt: '2026-05-07T00:00:00.000Z',
+      reviewerId: 'agent',
+      note: 'Repair raw UI block placeholders from composed candidate',
+      suppressPublicUpdatedNote: true,
+    })
+
+    expect(payload).toEqual({
+      content: '# A\n',
+      updated_at: '2026-05-07T00:00:00.000Z',
+      updated_by: 'agent',
+    })
+  })
+
+  test('keeps public updated_note when suppression is not requested', () => {
+    const payload = buildArticleContentUpdatePayload({
+      content: '# A\n',
+      updatedAt: '2026-05-07T00:00:00.000Z',
+      note: 'Reviewed for updated NBCP rule references',
+    })
+
+    expect(payload.updated_note).toBe('Reviewed for updated NBCP rule references')
+  })
+})
+
+describe('content-audit push safety', () => {
   test('placeholder parsing accepts current ui ids and legacy block ids', () => {
     const content = [
       '[SLATECAMP_UI_BLOCK:ui_0001 component="A" status="preserved"]',
@@ -292,6 +322,82 @@ describe('content-audit compose/diff/push safety', () => {
       force: false,
     })
     expect(safety.blockers.join('\n')).toContain('refusing no-op apply')
+  })
+
+  test('push safety blocks candidate content that still contains raw UI block placeholders', () => {
+    const original = '# A\n\n<ArticleMedia id="media-test" layout="single" type="image" />\n'
+    const meta = metadata(original)
+    const normalized = normalizeArticleContent(original, meta)
+    const candidate = normalized.normalized
+    const diff = diffCandidate({ metadata: meta, original, normalized: normalized.normalized, candidate, uiBlocks: normalized.uiBlocks })
+
+    expect(containsRawSlatecampUiBlockPlaceholder(candidate)).toBe(true)
+
+    const safety = evaluatePushSafety({
+      metadata: meta,
+      original,
+      candidate,
+      diffReport: diff,
+      uiBlocks: normalized.uiBlocks,
+      remoteContent: original,
+      apply: false,
+      dryRun: true,
+      force: false,
+    })
+
+    expect(safety.blockers.join('\n')).toContain('candidate.md contains raw SLATECAMP_UI_BLOCK placeholders')
+  })
+
+  test('repair placeholder mode can pass stale safety when remote is placeholder-corrupted and candidate is restored', () => {
+    const original = '# A\n\n<ArticleMedia id="media-test" layout="single" type="image" />\n'
+    const meta = metadata(original)
+    const normalized = normalizeArticleContent(original, meta)
+    const { candidate } = composeCandidate({ normalized: normalized.normalized, uiBlocks: normalized.uiBlocks, original })
+    const diff = diffCandidate({ metadata: meta, original, normalized: normalized.normalized, candidate, uiBlocks: normalized.uiBlocks })
+    const remoteContent = normalized.normalized
+
+    const safety = evaluatePushSafety({
+      metadata: meta,
+      original,
+      candidate,
+      diffReport: diff,
+      uiBlocks: normalized.uiBlocks,
+      remoteContent,
+      apply: false,
+      dryRun: true,
+      force: false,
+      repairPlaceholders: true,
+    })
+
+    expect(safety.stale_check_passed).toBe(true)
+    expect(safety.blockers.join('\n')).not.toContain('Remote Supabase content differs')
+    expect(safety.warnings.join('\n')).toContain('repair mode')
+  })
+
+  test('repair placeholder mode allows applying a restored candidate even when it matches original', () => {
+    const original = '# A\n\n<ArticleMedia id="media-test" layout="single" type="image" />\n'
+    const meta = metadata(original)
+    const normalized = normalizeArticleContent(original, meta)
+    const { candidate } = composeCandidate({ normalized: normalized.normalized, uiBlocks: normalized.uiBlocks, original })
+    const diff = diffCandidate({ metadata: meta, original, normalized: normalized.normalized, candidate, uiBlocks: normalized.uiBlocks })
+
+    expect(candidate).toBe(original)
+
+    const safety = evaluatePushSafety({
+      metadata: meta,
+      original,
+      candidate,
+      diffReport: diff,
+      uiBlocks: normalized.uiBlocks,
+      remoteContent: normalized.normalized,
+      apply: true,
+      dryRun: false,
+      force: false,
+      repairPlaceholders: true,
+    })
+
+    expect(safety.stale_check_passed).toBe(true)
+    expect(safety.blockers.join('\n')).not.toContain('refusing no-op apply')
   })
 })
 

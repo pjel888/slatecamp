@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { Plus, CheckCircle, Warning, CircleNotch } from '@phosphor-icons/react'
 import { Button } from '@/components/ui/button'
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter, DialogDescription } from '@/components/ui/dialog'
+import { Modal, ModalBody, ModalContent, ModalHeader, ModalTitle, ModalFooter, ModalDescription } from '@/components/ui/modal'
 import { Textarea } from '@/components/ui/textarea'
 import { Label } from '@/components/ui/label'
 import { importQuestionsForArticle } from '@/lib/actions/admin/content'
@@ -97,16 +97,16 @@ export function ArticleQuestionImporter({ articleId, topicId, onImportComplete }
         Import Questions
       </Button>
 
-      <Dialog open={isOpen} onOpenChange={handleClose}>
-        <DialogContent className="max-w-2xl">
-          <DialogHeader>
-            <DialogTitle>Import Questions for Article</DialogTitle>
-            <DialogDescription>
+      <Modal open={isOpen} onOpenChange={handleClose}>
+        <ModalContent className="max-w-2xl">
+          <ModalHeader>
+            <ModalTitle>Import Questions for Article</ModalTitle>
+            <ModalDescription>
               Paste a JSON array of standard article-owned questions. Each question should have: questionStem, answerOptions, correctOption, rationale, and optional difficulty.
-            </DialogDescription>
-          </DialogHeader>
+            </ModalDescription>
+          </ModalHeader>
 
-          <div className="space-y-4">
+          <ModalBody className="p-4 space-y-4">
             <div>
               <Label htmlFor="json-input" className="text-xs font-semibold text-text-secondary uppercase tracking-wider">
                 Questions JSON
@@ -147,9 +147,9 @@ export function ArticleQuestionImporter({ articleId, topicId, onImportComplete }
                 </div>
               </div>
             )}
-          </div>
+          </ModalBody>
 
-          <DialogFooter className="gap-2 sm:gap-0">
+          <ModalFooter className="gap-2 sm:gap-0">
             <Button variant="outline" onClick={handleClose} disabled={stage !== 'idle' && stage !== 'error' && stage !== 'success'}>
               Cancel
             </Button>
@@ -161,9 +161,9 @@ export function ArticleQuestionImporter({ articleId, topicId, onImportComplete }
             >
               {stage === 'idle' || stage === 'error' ? 'Start Import' : STAGE_LABELS[stage]}
             </Button>
-          </DialogFooter>
-        </DialogContent>
-      </Dialog>
+          </ModalFooter>
+        </ModalContent>
+      </Modal>
     </>
   )
 }

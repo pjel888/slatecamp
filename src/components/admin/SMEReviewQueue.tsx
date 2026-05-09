@@ -9,7 +9,14 @@ import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { formatRelativeTime } from '@/lib/utils/format-time'
 import { REVIEW_QUEUE_STATUSES } from '@/lib/admin/editor-workflow'
-import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle } from '@/components/ui/dialog'
+import {
+  Modal as Dialog,
+  ModalContent as DialogContent,
+  ModalDescription as DialogDescription,
+  ModalFooter as DialogFooter,
+  ModalHeader as DialogHeader,
+  ModalTitle as DialogTitle,
+} from '@/components/ui/modal'
 import { Textarea } from '@/components/ui/textarea'
 import { approveWikiArticleReview, requestWikiArticleChanges } from '@/lib/actions/admin/wiki'
 

@@ -1,7 +1,7 @@
 # Claude Code Review — Phase 0.5C / 0.5D Planning Review
 
-**Status:** PASS  
-**Mode:** Read-only gate audit  
+**Status:** PASS
+**Mode:** Read-only gate audit
 **Scope:**
 
 - `phase05c-admin-ai-audit-source-verification-implementation-plan.md`

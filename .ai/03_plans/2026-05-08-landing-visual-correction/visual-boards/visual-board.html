@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SlateCamp Landing Visual Correction Boards — Non-production</title>
+  <style>
+    :root {
+      --black: #05070b;
+      --ink: #0a0d14;
+      --line: rgba(184, 207, 255, .16);
+      --soft: rgba(224, 232, 255, .68);
+      --muted: rgba(224, 232, 255, .42);
+      --amber: #f2b84b;
+      --blue: #89aefc;
+      --green: #9ee8c5;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--black);
+      color: #eef3ff;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.45;
+    }
+    .page {
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at 78% 12%, rgba(137, 174, 252, .20), transparent 28%),
+        radial-gradient(circle at 20% 82%, rgba(242, 184, 75, .12), transparent 28%),
+        linear-gradient(var(--line) 1px, transparent 1px),
+        linear-gradient(90deg, var(--line) 1px, transparent 1px),
+        #05070b;
+      background-size: auto, auto, 32px 32px, 32px 32px, auto;
+    }
+    header {
+      padding: 36px clamp(20px, 5vw, 72px) 24px;
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      align-items: flex-start;
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+    .eyebrow {
+      font: 700 11px/1.2 ui-monospace, SFMono-Regular, Menlo, monospace;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--amber);
+    }
+    h1 {
+      max-width: 980px;
+      margin: 12px 0 0;
+      font-size: clamp(34px, 7vw, 104px);
+      line-height: .92;
+      letter-spacing: -.065em;
+    }
+    .note {
+      max-width: 420px;
+      color: var(--soft);
+      font-size: 14px;
+      margin-top: 12px;
+    }
+    .boards {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1px;
+      background: rgba(255,255,255,.08);
+      border-top: 1px solid rgba(255,255,255,.08);
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+    .board {
+      min-height: 720px;
+      background: rgba(5,7,11,.93);
+      display: grid;
+      grid-template-columns: minmax(280px, .74fr) minmax(360px, 1.26fr);
+    }
+    .copy {
+      padding: clamp(28px, 4vw, 64px);
+      border-right: 1px solid rgba(255,255,255,.08);
+    }
+    .copy h2 {
+      margin: 14px 0 18px;
+      font-size: clamp(34px, 5vw, 72px);
+      line-height: .95;
+      letter-spacing: -.055em;
+    }
+    .copy p { color: var(--soft); max-width: 520px; }
+    .rules { margin-top: 28px; display: grid; gap: 10px; }
+    .rule {
+      display: grid;
+      grid-template-columns: 60px 1fr;
+      gap: 14px;
+      color: var(--muted);
+      font-size: 13px;
+      border-top: 1px solid rgba(255,255,255,.08);
+      padding-top: 10px;
+    }
+    .rule strong { color: #fff; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11px; letter-spacing: .08em; }
+    .visual {
+      position: relative;
+      min-height: 720px;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 68% 28%, rgba(137, 174, 252, .18), transparent 26%),
+        radial-gradient(circle at 42% 65%, rgba(242, 184, 75, .10), transparent 22%),
+        linear-gradient(rgba(184, 207, 255, .10) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(184, 207, 255, .10) 1px, transparent 1px);
+      background-size: auto, auto, 28px 28px, 28px 28px;
+    }
+    svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+    .label {
+      position: absolute;
+      font: 700 10px/1.2 ui-monospace, SFMono-Regular, Menlo, monospace;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: rgba(238,243,255,.55);
+    }
+    .bigtype {
+      position: absolute;
+      left: 7%; right: 7%; top: 13%;
+      font-size: clamp(58px, 11vw, 150px);
+      line-height: .82;
+      letter-spacing: -.08em;
+      font-weight: 850;
+      color: rgba(238,243,255,.92);
+    }
+    .index-list {
+      position: absolute;
+      left: 8%; right: 8%; bottom: 10%;
+      display: grid;
+      gap: 1px;
+      background: rgba(255,255,255,.10);
+    }
+    .index-row {
+      display: grid;
+      grid-template-columns: 64px 1fr 130px;
+      gap: 18px;
+      background: rgba(5,7,11,.62);
+      padding: 16px 0;
+      color: var(--soft);
+      font-size: 14px;
+    }
+    .index-row span:first-child { color: var(--amber); font-family: ui-monospace, monospace; padding-left: 16px; }
+    .index-row span:last-child { color: var(--muted); font-family: ui-monospace, monospace; font-size: 11px; text-transform: uppercase; }
+    .paths {
+      position: absolute;
+      left: 8%; right: 8%; top: 12%; bottom: 12%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 1px;
+      background: rgba(255,255,255,.10);
+    }
+    .path {
+      position: relative;
+      padding: 24px;
+      background: rgba(5,7,11,.66);
+      overflow: hidden;
+    }
+    .path:before {
+      content: "";
+      position: absolute; inset: 0;
+      background: radial-gradient(circle at 80% 22%, rgba(137, 174, 252, .16), transparent 34%);
+      pointer-events: none;
+    }
+    .path b { display: block; font-size: 28px; letter-spacing: -.04em; margin: 18px 0 8px; }
+    .path small { color: var(--amber); font-family: ui-monospace, monospace; letter-spacing: .12em; }
+    .path p { color: var(--soft); max-width: 250px; font-size: 13px; margin: 0; }
+    .warning {
+      padding: 22px clamp(20px, 5vw, 72px) 48px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 900px) {
+      header, .board { display: block; }
+      .copy { border-right: 0; border-bottom: 1px solid rgba(255,255,255,.08); }
+      .visual { min-height: 560px; }
+      .index-row { grid-template-columns: 48px 1fr; }
+      .index-row span:last-child { display: none; }
+      .paths { grid-template-columns: 1fr; grid-template-rows: repeat(4, minmax(120px,1fr)); }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <div>
+        <div class="eyebrow">SlateCamp / Visual correction boards / Non-production</div>
+        <h1>Board 2 leads. No carded 3D hero.</h1>
+      </div>
+      <p class="note">These are static direction sketches only. Approved relationship: Board 2 leads the editorial message and typography; Board 1 supports as atmospheric depth; Board 3 owns product proof. Not production UI, not React components, not implementation.</p>
+    </header>
+
+    <section class="boards">
+      <article class="board">
+        <div class="copy">
+          <div class="eyebrow">Board 2</div>
+          <h2>Editorial atlas index</h2>
+          <p>The page behaves like an authored architecture publication: large type, index marks, coordinates, and calm hierarchy. 3D is background depth, not spectacle.</p>
+          <div class="rules">
+            <div class="rule"><strong>Refs</strong><span>Paradiso Institute, Razorpay Sprint 26, Obys, Save.design.</span></div>
+            <div class="rule"><strong>Hero</strong><span>Typography as the main spatial object; metadata as marginalia, not badges.</span></div>
+            <div class="rule"><strong>Rhythm</strong><span>00 Orientation, 01 Problem, 02 Atlas model, 03 Product paths.</span></div>
+            <div class="rule"><strong>Risk</strong><span>Can become too dry if the atmospheric layer is weak.</span></div>
+          </div>
+        </div>
+        <div class="visual" aria-label="Editorial atlas index sketch">
+          <div class="label" style="left:7%; top:7%">00 / orientation</div>
+          <div class="bigtype">Find<br/>where<br/>it fits.</div>
+          <div class="index-list">
+            <div class="index-row"><span>01</span><span>When review feels scattered</span><span>student problem</span></div>
+            <div class="index-row"><span>02</span><span>Knowledge atlas model</span><span>system</span></div>
+            <div class="index-row"><span>03</span><span>Wiki · Practice · Visual tools · Analytics</span><span>product truth</span></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="board">
+        <div class="copy">
+          <div class="eyebrow">Board 1</div>
+          <h2>Full-field atlas</h2>
+          <p>The hero is an environment: a calm navigable field of architecture knowledge. The dotted grid and atmosphere are the world, not a boxed module.</p>
+          <div class="rules">
+            <div class="rule"><strong>Refs</strong><span>Infinite Field, Where Worlds Take Shape, Dirac, Matter.</span></div>
+            <div class="rule"><strong>Hero</strong><span>Full viewport, sparse copy, no visual container, no fake product UI.</span></div>
+            <div class="rule"><strong>Motion</strong><span>Subtle parallax, resolving points, measured lines, reduced-motion static field.</span></div>
+            <div class="rule"><strong>Risk</strong><span>Can become a tech demo if category/copy is too vague.</span></div>
+          </div>
+        </div>
+        <div class="visual" aria-label="Full field atlas sketch">
+          <svg viewBox="0 0 1000 720" preserveAspectRatio="none">
+            <defs>
+              <radialGradient id="g1" cx="66%" cy="30%" r="55%"><stop offset="0" stop-color="#89aefc" stop-opacity=".32"/><stop offset="1" stop-color="#05070b" stop-opacity="0"/></radialGradient>
+            </defs>
+            <rect width="1000" height="720" fill="url(#g1)"/>
+            <g fill="#eaf1ff" opacity=".62">
+              <circle cx="640" cy="170" r="3"/><circle cx="690" cy="236" r="2"/><circle cx="548" cy="290" r="2"/><circle cx="755" cy="348" r="3"/><circle cx="480" cy="410" r="2"/><circle cx="826" cy="500" r="2"/><circle cx="602" cy="560" r="2"/>
+            </g>
+            <g stroke="#eaf1ff" stroke-opacity=".25" fill="none">
+              <path d="M120,600 C280,360 450,240 640,170 C730,136 842,120 930,92"/>
+              <path d="M210,130 C398,236 512,290 755,348 C838,368 910,430 980,520"/>
+              <path d="M72,420 C230,430 365,420 480,410 C620,397 720,438 826,500"/>
+            </g>
+            <g stroke="#f2b84b" stroke-opacity=".45" fill="none">
+              <path d="M548,290 L640,170 L755,348 L602,560 L480,410 Z"/>
+            </g>
+          </svg>
+          <div class="label" style="left:8%; top:8%">LEA / knowledge field</div>
+          <div class="label" style="right:8%; top:15%">source notes where verified</div>
+          <div class="label" style="left:12%; bottom:16%; color:rgba(242,184,75,.7)">explore the atlas</div>
+        </div>
+      </article>
+
+      <article class="board">
+        <div class="copy">
+          <div class="eyebrow">Board 3</div>
+          <h2>Product-truth paths</h2>
+          <p>The page explains what SlateCamp actually does: find, understand, check, revisit, and see spatial rules where tools are available. No fake screenshots.</p>
+          <div class="rules">
+            <div class="rule"><strong>Refs</strong><span>Save.design, Dirac, Matter, Razorpay Sprint 26.</span></div>
+            <div class="rule"><strong>Use</strong><span>Best for middle/lower sections after a stronger atmospheric hero.</span></div>
+            <div class="rule"><strong>Truth</strong><span>3D Lab access caveated; readiness framed as signals, not guarantees.</span></div>
+            <div class="rule"><strong>Risk</strong><span>If visualized as cards, it becomes the failed direction again.</span></div>
+          </div>
+        </div>
+        <div class="visual" aria-label="Product truth paths sketch">
+          <div class="label" style="left:8%; top:6%; color:rgba(242,184,75,.82)">not cards — sectional path fields only</div>
+          <div class="paths">
+            <div class="path"><small>A / FIND</small><b>Wiki</b><p>Search and browse source-aware articles, related topics, and updated notes.</p></div>
+            <div class="path"><small>B / CHECK</small><b>Practice</b><p>Use sessions to see what stayed and where mappings can point you back.</p></div>
+            <div class="path"><small>C / SEE</small><b>Visual tools</b><p>Use available lab modules to make spatial rules easier to understand.</p></div>
+            <div class="path"><small>D / REVISIT</small><b>Signals</b><p>Readiness and weak-topic analytics help choose the next useful step.</p></div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <div class="warning">
+      Approved lead: Board 2 editorial atlas. Automatic rejection: any future mockup that returns to text-left / 3D-card-right, WebGL-first spectacle, fake dashboard hero, floating pill cluster, or bento-grid feature tour.
+    </div>
+  </main>
+</body>
+</html>

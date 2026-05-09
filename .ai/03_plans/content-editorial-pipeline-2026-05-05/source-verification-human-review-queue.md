@@ -1,6 +1,6 @@
 # Source Verification Human Review Queue — Phase 0.5B.1
 
-**Generated:** 2026-05-05T15:48:50Z  
+**Generated:** 2026-05-05T15:48:50Z
 **Status:** Review queue only. No source approval.
 
 All processed rows require human review.

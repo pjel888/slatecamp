@@ -4,12 +4,12 @@ import { ArrowLeft, SignOut } from '@phosphor-icons/react'
 import { cn } from '@/lib/utils'
 import { Button } from '@/components/ui/button'
 import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-} from '@/components/ui/dialog'
+  Modal as Dialog,
+  ModalContent as DialogContent,
+  ModalDescription as DialogDescription,
+  ModalHeader as DialogHeader,
+  ModalTitle as DialogTitle,
+} from '@/components/ui/modal'
 
 interface ExitConfirmModalProps {
   answeredCount: number
@@ -37,7 +37,6 @@ export const ExitConfirmModal = ({
     >
       <DialogContent
         size="sm"
-        showCloseButton={false}
         className="gap-0 rounded-lg bg-card p-6"
       >
         <DialogHeader className="mb-4 space-y-1">

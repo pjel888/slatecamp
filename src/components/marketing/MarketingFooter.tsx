@@ -20,7 +20,7 @@ export const MarketingFooter = ({
 
   return (
     <footer className={`border-t ${borderClass}`}>
-      <div className='mx-auto max-w-[1200px] px-6 py-6'>
+      <div className='mx-auto max-w-[1200px] px-6 py-7'>
         <div className='flex flex-col items-center justify-between gap-4 sm:flex-row'>
           <span className={`text-[12px] ${textMuted}`}>
             &copy; {new Date().getFullYear()} {siteConfig.name}
@@ -39,9 +39,12 @@ export const MarketingFooter = ({
           <span
             className={`font-instrument-serif text-[12px] italic tracking-wide ${textMuted}`}
           >
-            Less, but better.
+            Less panic, clearer next steps.
           </span>
         </div>
+        <p className={`mx-auto mt-5 max-w-4xl text-center text-[11px] leading-relaxed ${textMuted}`}>
+          SlateCamp is an educational architecture resource platform. It is not affiliated with PRC, PRBoA, universities, or government agencies. Always verify current code requirements, exam rules, and project decisions with primary authority documents or a qualified professional.
+        </p>
       </div>
     </footer>
   )

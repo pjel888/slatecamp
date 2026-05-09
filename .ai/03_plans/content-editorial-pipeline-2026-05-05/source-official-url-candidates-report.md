@@ -1,6 +1,6 @@
 # Official URL Candidate Seeds — Phase 0.5B
 
-**Generated:** 2026-05-05T15:21:16Z  
+**Generated:** 2026-05-05T15:21:16Z
 **Status:** Candidate search seeds only. No official match has been completed.
 
 Candidate rows: 1464

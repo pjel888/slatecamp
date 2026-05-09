@@ -1,0 +1,1707 @@
+{
+  "total_files": 85,
+  "class_counts": {
+    "Dialog/ConfirmDialog consumer": 20,
+    "manual overlay/dialog-like": 31,
+    "AlertDialog consumer": 2,
+    "Popover consumer": 8,
+    "named overlay-like file; inspect manually": 18,
+    "FloatingPanel consumer": 2,
+    "Sheet/mobile panel consumer": 4
+  },
+  "primitive_counts": {
+    "ConfirmDialog": 9,
+    "AlertDialog": 3,
+    "Dialog": 16,
+    "DialogContent": 14,
+    "DialogHeader": 14,
+    "DialogFooter": 9,
+    "Popover": 10,
+    "FloatingPanel": 3,
+    "CommandDialog": 2,
+    "Sheet": 7,
+    "SheetContent": 5,
+    "AppDrawer": 1,
+    "createPortal": 7,
+    "DialogClose": 2
+  },
+  "items": [
+    {
+      "path": "src/app/admin/pipeline/_components/PipelineCard.tsx",
+      "class": "Dialog/ConfirmDialog consumer",
+      "signals": [
+        "dialog_import"
+      ],
+      "primitives": [
+        "ConfirmDialog"
+      ],
+      "has_title": true,
+      "has_footer": false,
+      "has_close": false,
+      "sample": [
+        [
+          6,
+          "import { ConfirmDialog } from '@/components/ui/dialog'"
+        ]
+      ]
+    },
+    {
+      "path": "src/app/dashboard/area-c/_components/DesignProblemSession.tsx",
+      "class": "manual overlay/dialog-like",
+      "signals": [
+        "fixed_inset"
+      ],
+      "primitives": [],
+      "has_title": false,
+      "has_footer": false,
+      "has_close": false,
+      "sample": [
+        [
+          45,
+          "<div className=\"fixed inset-0 z-50 flex items-center justify-center bg-black/40\">"
+        ]
+      ]
+    },
+    {
+      "path": "src/app/dashboard/pods/_components/CreatePodModal.tsx",
+      "class": "manual overlay/dialog-like",
+      "signals": [
+        "aria_modal",
+        "filename:CreatePodModal.tsx",
+        "fixed_inset",
+        "role_dialog"
+      ],
+      "primitives": [],
+      "has_title": false,
+      "has_footer": false,
+      "has_close": true,
+      "sample": [
+        [
+          73,
+          "role=\"dialog\""
+        ],
+        [
+          74,
+          "aria-modal=\"true\""
+        ],
+        [
+          68,
+          "className=\"fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-[2px]\""
+        ]
+      ]
+    },
+    {
+      "path": "src/app/dashboard/score-reveal/loading.tsx",
+      "class": "manual overlay/dialog-like",
+      "signals": [
+        "fixed_inset"
+      ],
+      "primitives": [],
+      "has_title": false,
+      "has_footer": false,
+      "has_close": false,
+      "sample": [
+        [
+          5,
+          "<div className=\"fixed inset-0 z-50 flex items-center justify-center overflow-y-auto bg-muted\">"
+        ]
+      ]
+    },
+    {
+      "path": "src/app/dashboard/welcome-pro/page.tsx",
+      "class": "manual overlay/dialog-like",
+      "signals": [
+        "fixed_inset"
+      ],
+      "primitives": [],
+      "has_title": false,
+      "has_footer": false,
+      "has_close": false,
+      "sample": [
+        [
+          72,
+          "className=\"fixed inset-0 z-50 flex flex-col items-center justify-center px-6 bg-emerald-50\""
+        ]
+      ]
+    },
+    {
+      "path": "src/app/developer/tools/test-data/test-data-client.tsx",
+      "class": "AlertDialog consumer",
+      "signals": [
+        "alert_dialog_import"
+      ],
+      "primitives": [
+        "AlertDialog"
+      ],
+      "has_title": true,
+      "has_footer": true,
+      "has_close": false,
+      "sample": [
+        [
+          19,
+          "} from '@/components/ui/alert-dialog'"
+        ]
+      ]
+    },
+    {
+      "path": "src/components/admin/ArticleQuestionImporter.tsx",
+      "class": "Dialog/ConfirmDialog consumer",
+      "signals": [
+        "dialog_import"
+      ],
+      "primitives": [
+        "Dialog",
+        "DialogContent",
+        "DialogHeader",
+        "DialogFooter"
+      ],
+      "has_title": true,
+      "has_footer": true,
+      "has_close": true,
+      "sample": [
+        [
+          6,
+          "import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter, DialogDescription } from '@/components/ui/dialog'"
+        ]
+      ]
+    },
+    {
+      "path": "src/components/admin/AssetDetailView.tsx",
+      "class": "Dialog/ConfirmDialog consumer",
+      "signals": [
+        "dialog_import"
+      ],
+      "primitives": [
+        "Dialog",
+        "DialogContent",
+        "DialogHeader",
+        "DialogFooter"
+      ],
+      "has_title": true,
+      "has_footer": true,
+      "has_close": true,
+      "sample": [
+        [
+          18,
+          "} from '@/components/ui/dialog'"
+        ]
+      ]
+    },
+    {
+      "path": "src/components/admin/BulkActionBar.tsx",
+      "class": "Dialog/ConfirmDialog consumer",
+      "signals": [
+        "dialog_import"
+      ],
+      "primitives": [
+        "ConfirmDialog"
+      ],
+      "has_title": true,
+      "has_footer": false,
+      "has_close": false,
+      "sample": [
+        [
+          6,
+          "import { ConfirmDialog } from '@/components/ui/dialog'"
+        ]
+      ]
+    },
+    {
+      "path": "src/components/admin/DeleteArticleModal.tsx",
+      "class": "Dialog/ConfirmDialog consumer",
+      "signals": [
+        "dialog_import",
+        "filename:DeleteArticleModal.tsx"
+      ],
+      "primitives": [
+        "Dialog",
+        "DialogContent",
+        "DialogHeader",
+        "DialogFooter"
+      ],
+      "has_title": true,
+      "has_footer": true,
+      "has_close": true,
+      "sample": [
+        [
+          12,
+          "} from '@/components/ui/dialog'"
+        ]
+      ]
+    },
+    {
+      "path": "src/components/admin/QuestionEditor.tsx",
+      "class": "Dialog/ConfirmDialog consumer",
+      "signals": [
+        "dialog_import"
+      ],
+      "primitives": [
+        "Dialog",
+        "DialogContent",
+        "DialogHeader",
+        "DialogFooter"
+      ],
+      "has_title": true,
+      "has_footer": true,
+      "has_close": false,
+      "sample": [
+        [
+          10,
+          "import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogFooter } from '@/components/ui/dialog'"
+        ]
+      ]
+    },
+    {
+      "path": "src/components/admin/QuestionQuickPreview.tsx",
+      "class": "Popover consumer",
+      "signals": [
+        "popover_import"
+      ],
+      "primitives": [
+        "Popover"
+      ],
+      "has_title": false,
+      "has_footer": false,
+      "has_close": true,
+      "sample": [
+        [
+          4,
+          "import { Popover, PopoverTrigger, PopoverContent } from '@/components/ui/popover'"
+        ]
+      ]
+    },
+    {
+      "path": "src/components/admin/SMEReviewQueue.tsx",
+      "class": "Dialog/ConfirmDialog consumer",
+      "signals": [
+        "dialog_import"
+      ],
+      "primitives": [
+        "Dialog",
+        "DialogContent",
+        "DialogHeader",
+        "DialogFooter"
+      ],
+      "has_title": true,
+      "has_footer": true,
+      "has_close": false,
+      "sample": [
+        [
+          12,
+          "import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle } from '@/components/ui/dialog'"
+        ]
+      ]
+    },
+    {
+      "path": "src/components/admin/TaxonomyEditor.tsx",
+      "class": "Dialog/ConfirmDialog consumer",
+      "signals": [
+        "dialog_import"
+      ],
+      "primitives": [
+        "ConfirmDialog"
+      ],
+      "has_title": true,
+      "has_footer": false,
+      "has_close": false,
+      "sample": [
+        [
+          7,
+          "import { ConfirmDialog } from '@/components/ui/dialog'"
+        ]
+      ]
+    },
+    {
+      "path": "src/components/analytics/QuadrantOverlay.tsx",
+      "class": "named overlay-like file; inspect manually",
+      "signals": [
+        "filename:QuadrantOverlay.tsx"
+      ],
+      "primitives": [],
+      "has_title": false,
+      "has_footer": false,
+      "has_close": false,
+      "sample": []
+    },
+    {
+      "path": "src/components/assessment/AssessmentQuiz.tsx",
+      "class": "manual overlay/dialog-like",
+      "signals": [
+        "fixed_inset"
+      ],
+      "primitives": [],
+      "has_title": false,
+      "has_footer": false,
+      "has_close": false,
+      "sample": [
+        [
+          203,
+          "<div className=\"fixed inset-0 z-50 flex flex-col items-center justify-center bg-muted\">"
+        ]
+      ]
+    },
+    {
+      "path": "src/components/assessment/ScoreReveal.tsx",
+      "class": "manual overlay/dialog-like",
+      "signals": [
+        "fixed_inset"
+      ],
+      "primitives": [],
+      "has_title": false,
+      "has_footer": false,
+      "has_close": false,
+      "sample": [
+        [
+          71,
+          "className=\"fixed inset-0 z-50 flex items-center justify-center overflow-y-auto\""
+        ]
+      ]
+    },
+    {
+      "path": "src/components/ceo/FinancialEntryForm.tsx",
+      "class": "manual overlay/dialog-like",
+      "signals": [
+        "aria_modal",
+        "fixed_inset",
+        "role_dialog"
+      ],
+      "primitives": [],
+      "has_title": false,
+      "has_footer": false,
+      "has_close": true,
+      "sample": [
+        [
+          145,
+          "role=\"dialog\""
+        ],
+        [
+          146,
+          "aria-modal=\"true\""
+        ],
+        [
+          133,
+          "className=\"fixed inset-0 z-40 bg-black/30\""
+        ]
+      ]
+    },
+    {
+      "path": "src/components/ceo/FinancialLedger.tsx",
+      "class": "Dialog/ConfirmDialog consumer",
+      "signals": [
+        "dialog_import"
+      ],
+      "primitives": [
+        "ConfirmDialog"
+      ],
+      "has_title": true,
+      "has_footer": false,
+      "has_close": true,
+      "sample": [
+        [
+          10,
+          "import { ConfirmDialog } from '@/components/ui/dialog'"
+        ]
+      ]
+    },
+    {
+      "path": "src/components/ceo/RoleAssignmentModal.stories.tsx",
+      "class": "named overlay-like file; inspect manually",
+      "signals": [
+        "filename:RoleAssignmentModal.stories.tsx"
+      ],
+      "primitives": [],
+      "has_title": false,
+      "has_footer": false,
+      "has_close": true,
+      "sample": []
+    },
+    {
+      "path": "src/components/ceo/RoleAssignmentModal.tsx",
+      "class": "Dialog/ConfirmDialog consumer",
+      "signals": [
+        "dialog_import",
+        "filename:RoleAssignmentModal.tsx"
+      ],
+      "primitives": [
+        "Dialog",
+        "DialogContent",
+        "DialogHeader",
+        "DialogFooter"
+      ],
+      "has_title": true,
+      "has_footer": true,
+      "has_close": true,
+      "sample": [
+        [
+          12,
+          "} from '@/components/ui/dialog'"
+        ]
+      ]
+    },
+    {
+      "path": "src/components/dashboard/RichInfoPopover.tsx",
+      "class": "Popover consumer",
+      "signals": [
+        "filename:RichInfoPopover.tsx",
+        "popover_import"
+      ],
+      "primitives": [
+        "Popover"
+      ],
+      "has_title": false,
+      "has_footer": false,
+      "has_close": false,
+      "sample": [
+        [
+          7,
+          "} from '@/components/ui/popover'"
+        ]
+      ]
+    },
+    {
+      "path": "src/components/dashboard/heatmap/HeatmapHeader.tsx",
+      "class": "Popover consumer",
+      "signals": [
+        "popover_import"
+      ],
+      "primitives": [
+        "Popover"
+      ],
+      "has_title": false,
+      "has_footer": false,
+      "has_close": false,
+      "sample": [
+        [
+          9,
+          "} from '@/components/ui/popover'"
+        ]
+      ]
+    },
+    {
+      "path": "src/components/dev/dev-mode-overlay.tsx",
+      "class": "manual overlay/dialog-like",
+      "signals": [
+        "fixed_inset"
+      ],
+      "primitives": [],
+      "has_title": false,
+      "has_footer": false,
+      "has_close": false,
+      "sample": [
+        [
+          35,
+          "className=\"fixed inset-0 pointer-events-none z-[9999]\""
+        ]
+      ]
+    },
+    {
+      "path": "src/components/dev/dev-overlay.tsx",
+      "class": "manual overlay/dialog-like",
+      "signals": [
+        "fixed_inset"
+      ],
+      "primitives": [],
+      "has_title": false,
+      "has_footer": false,
+      "has_close": true,
+      "sample": [
+        [
+          38,
+          "<div className=\"fixed inset-0 z-[9999] flex items-center justify-center\">"
+        ]
+      ]
+    },
+    {
+      "path": "src/components/notes/NotesShell.tsx",
+      "class": "Dialog/ConfirmDialog consumer",
+      "signals": [
+        "dialog_import"
+      ],
+      "primitives": [
+        "ConfirmDialog"
+      ],
+      "has_title": true,
+      "has_footer": false,
+      "has_close": false,
+      "sample": [
+        [
+          9,
+          "import { ConfirmDialog } from '@/components/ui/dialog'"
+        ]
+      ]
+    },
+    {
+      "path": "src/components/notes/QuickCaptureDrawer.tsx",
+      "class": "FloatingPanel consumer",
+      "signals": [
+        "filename:QuickCaptureDrawer.tsx",
+        "floating_panel_import"
+      ],
+      "primitives": [
+        "FloatingPanel"
+      ],
+      "has_title": true,
+      "has_footer": true,
+      "has_close": true,
+      "sample": [
+        [
+          22,
+          "import { FloatingPanel } from '@/components/shared/floating-panel'"
+        ]
+      ]
+    },
+    {
+      "path": "src/components/notifications/NotificationBell.tsx",
+      "class": "Popover consumer",
+      "signals": [
+        "popover_import"
+      ],
+      "primitives": [
+        "Popover"
+      ],
+      "has_title": false,
+      "has_footer": false,
+      "has_close": false,
+      "sample": [
+        [
+          9,
+          "} from '@/components/ui/popover'"
+        ]
+      ]
+    },
+    {
+      "path": "src/components/portal/CommandPalette.tsx",
+      "class": "named overlay-like file; inspect manually",
+      "signals": [
+        "filename:CommandPalette.tsx"
+      ],
+      "primitives": [
+        "CommandDialog"
+      ],
+      "has_title": true,
+      "has_footer": false,
+      "has_close": true,
+      "sample": []
+    },
+    {
+      "path": "src/components/portal/MobileNav.tsx",
+      "class": "Sheet/mobile panel consumer",
+      "signals": [
+        "sheet_import"
+      ],
+      "primitives": [
+        "Sheet",
+        "SheetContent"
+      ],
+      "has_title": true,
+      "has_footer": false,
+      "has_close": false,
+      "sample": [
+        [
+          15,
+          "} from '@/components/ui/sheet'"
+        ]
+      ]
+    },
+    {
+      "path": "src/components/quiz-v2/CalculatingResultsOverlay.tsx",
+      "class": "manual overlay/dialog-like",
+      "signals": [
+        "aria_modal",
+        "filename:CalculatingResultsOverlay.tsx",
+        "fixed_inset",
+        "role_dialog"
+      ],
+      "primitives": [],
+      "has_title": false,
+      "has_footer": false,
+      "has_close": false,
+      "sample": [
+        [
+          34,
+          "role=\"dialog\""
+        ],
+        [
+          35,
+          "aria-modal=\"true\""
+        ],
+        [
+          32,
+          "className=\"fixed inset-0 z-50 flex items-center justify-center bg-slate-950/35 px-4 backdrop-blur-xl transition-opacity duration-200\""
+        ]
+      ]
+    },
+    {
+      "path": "src/components/quiz-v2/ExitConfirmModal.tsx",
+      "class": "Dialog/ConfirmDialog consumer",
+      "signals": [
+        "dialog_import",
+        "filename:ExitConfirmModal.tsx"
+      ],
+      "primitives": [
+        "Dialog",
+        "DialogContent",
+        "DialogHeader"
+      ],
+      "has_title": true,
+      "has_footer": false,
+      "has_close": true,
+      "sample": [
+        [
+          12,
+          "} from '@/components/ui/dialog'"
+        ]
+      ]
+    },
+    {
+      "path": "src/components/quiz-v2/MicroBreakOverlay.tsx",
+      "class": "manual overlay/dialog-like",
+      "signals": [
+        "aria_modal",
+        "filename:MicroBreakOverlay.tsx",
+        "fixed_inset",
+        "role_dialog"
+      ],
+      "primitives": [],
+      "has_title": false,
+      "has_footer": false,
+      "has_close": false,
+      "sample": [
+        [
+          103,
+          "role=\"dialog\""
+        ],
+        [
+          104,
+          "aria-modal=\"true\""
+        ],
+        [
+          95,
+          "'fixed inset-0 z-50 flex items-center justify-center',"
+        ]
+      ]
+    },
+    {
+      "path": "src/components/quiz-v2/OverlaysAndResults.stories.tsx",
+      "class": "named overlay-like file; inspect manually",
+      "signals": [
+        "filename:OverlaysAndResults.stories.tsx"
+      ],
+      "primitives": [],
+      "has_title": false,
+      "has_footer": false,
+      "has_close": false,
+      "sample": []
+    },
+    {
+      "path": "src/components/quiz-v2/QuestionPalette.tsx",
+      "class": "manual overlay/dialog-like",
+      "signals": [
+        "aria_modal",
+        "filename:QuestionPalette.tsx",
+        "fixed_inset",
+        "role_dialog"
+      ],
+      "primitives": [],
+      "has_title": false,
+      "has_footer": false,
+      "has_close": true,
+      "sample": [
+        [
+          199,
+          "role=\"dialog\""
+        ],
+        [
+          200,
+          "aria-modal=\"true\""
+        ],
+        [
+          192,
+          "className=\"fixed inset-0 z-40 bg-black/30\""
+        ]
+      ]
+    },
+    {
+      "path": "src/components/quiz-v2/SocraticExplorer.tsx",
+      "class": "manual overlay/dialog-like",
+      "signals": [
+        "aria_modal",
+        "fixed_inset",
+        "role_dialog"
+      ],
+      "primitives": [],
+      "has_title": false,
+      "has_footer": false,
+      "has_close": true,
+      "sample": [
+        [
+          205,
+          "role=\"dialog\""
+        ],
+        [
+          207,
+          "aria-modal=\"true\""
+        ],
+        [
+          198,
+          "className=\"fixed inset-0 bg-black/20 z-40 animate-in fade-in duration-150\""
+        ]
+      ]
+    },
+    {
+      "path": "src/components/quiz-v2/SubmitConfirmModal.tsx",
+      "class": "Dialog/ConfirmDialog consumer",
+      "signals": [
+        "dialog_import",
+        "filename:SubmitConfirmModal.tsx"
+      ],
+      "primitives": [
+        "Dialog",
+        "DialogContent",
+        "DialogHeader"
+      ],
+      "has_title": true,
+      "has_footer": false,
+      "has_close": true,
+      "sample": [
+        [
+          20,
+          "} from '@/components/ui/dialog'"
+        ]
+      ]
+    },
+    {
+      "path": "src/components/r3f/CanvasLoadingOverlay.tsx",
+      "class": "named overlay-like file; inspect manually",
+      "signals": [
+        "filename:CanvasLoadingOverlay.tsx"
+      ],
+      "primitives": [],
+      "has_title": false,
+      "has_footer": false,
+      "has_close": false,
+      "sample": []
+    },
+    {
+      "path": "src/components/shared/GlobalLoadingOverlay.tsx",
+      "class": "manual overlay/dialog-like",
+      "signals": [
+        "filename:GlobalLoadingOverlay.tsx",
+        "fixed_inset"
+      ],
+      "primitives": [],
+      "has_title": false,
+      "has_footer": false,
+      "has_close": false,
+      "sample": [
+        [
+          112,
+          "'fixed inset-0 z-50 flex items-center justify-center bg-background/85 px-4 backdrop-blur-md',"
+        ]
+      ]
+    },
+    {
+      "path": "src/components/shared/Navbar.tsx",
+      "class": "Sheet/mobile panel consumer",
+      "signals": [
+        "sheet_import"
+      ],
+      "primitives": [
+        "Sheet",
+        "SheetContent"
+      ],
+      "has_title": true,
+      "has_footer": false,
+      "has_close": false,
+      "sample": [
+        [
+          11,
+          "} from '@/components/ui/sheet'"
+        ]
+      ]
+    },
+    {
+      "path": "src/components/shared/Omnibar.tsx",
+      "class": "FloatingPanel consumer",
+      "signals": [
+        "floating_panel_import"
+      ],
+      "primitives": [
+        "FloatingPanel"
+      ],
+      "has_title": true,
+      "has_footer": true,
+      "has_close": true,
+      "sample": [
+        [
+          15,
+          "import { FloatingPanel } from '@/components/shared/floating-panel'"
+        ]
+      ]
+    },
+    {
+      "path": "src/components/shared/SlatecampLoader.tsx",
+      "class": "manual overlay/dialog-like",
+      "signals": [
+        "fixed_inset"
+      ],
+      "primitives": [],
+      "has_title": false,
+      "has_footer": false,
+      "has_close": false,
+      "sample": [
+        [
+          106,
+          "'fixed inset-0 z-[100] flex items-center justify-center',"
+        ]
+      ]
+    },
+    {
+      "path": "src/components/shared/WikiSidePanel.tsx",
+      "class": "manual overlay/dialog-like",
+      "signals": [
+        "fixed_inset",
+        "role_dialog"
+      ],
+      "primitives": [],
+      "has_title": true,
+      "has_footer": false,
+      "has_close": true,
+      "sample": [
+        [
+          29,
+          "role=\"dialog\""
+        ],
+        [
+          22,
+          "className=\"fixed inset-0 bg-black/20 z-[60] animate-in fade-in duration-150\""
+        ]
+      ]
+    },
+    {
+      "path": "src/components/shared/app-drawer.tsx",
+      "class": "manual overlay/dialog-like",
+      "signals": [
+        "aria_modal",
+        "fixed_inset",
+        "portal",
+        "role_dialog"
+      ],
+      "primitives": [
+        "AppDrawer",
+        "createPortal"
+      ],
+      "has_title": false,
+      "has_footer": false,
+      "has_close": true,
+      "sample": [
+        [
+          119,
+          "return createPortal("
+        ],
+        [
+          120,
+          "<div data-slot=\"app-drawer\" aria-modal=\"true\" role=\"dialog\" aria-label={title}>"
+        ],
+        [
+          120,
+          "<div data-slot=\"app-drawer\" aria-modal=\"true\" role=\"dialog\" aria-label={title}>"
+        ],
+        [
+          123,
+          "className=\"fixed inset-0 z-50 bg-black/20 backdrop-blur-sm animate-in fade-in duration-200 ease-out\""
+        ]
+      ]
+    },
+    {
+      "path": "src/components/shared/floating-panel.tsx",
+      "class": "manual overlay/dialog-like",
+      "signals": [
+        "aria_modal",
+        "fixed_inset",
+        "portal",
+        "role_dialog"
+      ],
+      "primitives": [
+        "FloatingPanel",
+        "createPortal"
+      ],
+      "has_title": true,
+      "has_footer": false,
+      "has_close": true,
+      "sample": [
+        [
+          270,
+          "return createPortal("
+        ],
+        [
+          202,
+          "role=\"dialog\""
+        ],
+        [
+          204,
+          "aria-modal={backdrop !== 'none'}"
+        ],
+        [
+          258,
+          "className=\"fixed inset-0 z-[100] bg-black/20 backdrop-blur-sm animate-in fade-in duration-200\""
+        ]
+      ]
+    },
+    {
+      "path": "src/components/sidebar/MobileDrawer.stories.tsx",
+      "class": "named overlay-like file; inspect manually",
+      "signals": [
+        "filename:MobileDrawer.stories.tsx"
+      ],
+      "primitives": [],
+      "has_title": false,
+      "has_footer": false,
+      "has_close": true,
+      "sample": []
+    },
+    {
+      "path": "src/components/sidebar/MobileDrawer.tsx",
+      "class": "Dialog/ConfirmDialog consumer",
+      "signals": [
+        "aria_modal",
+        "dialog_import",
+        "filename:MobileDrawer.tsx",
+        "role_dialog"
+      ],
+      "primitives": [
+        "ConfirmDialog"
+      ],
+      "has_title": true,
+      "has_footer": false,
+      "has_close": true,
+      "sample": [
+        [
+          15,
+          "import { ConfirmDialog } from '@/components/ui/dialog'"
+        ],
+        [
+          298,
+          "role=\"dialog\""
+        ],
+        [
+          299,
+          "aria-modal={isOpen}"
+        ]
+      ]
+    },
+    {
+      "path": "src/components/sidebar/Sidebar.tsx",
+      "class": "Dialog/ConfirmDialog consumer",
+      "signals": [
+        "dialog_import"
+      ],
+      "primitives": [
+        "ConfirmDialog"
+      ],
+      "has_title": true,
+      "has_footer": false,
+      "has_close": false,
+      "sample": [
+        [
+          20,
+          "import { ConfirmDialog } from '@/components/ui/dialog'"
+        ]
+      ]
+    },
+    {
+      "path": "src/components/testing/hub/ReviewHub.tsx",
+      "class": "Dialog/ConfirmDialog consumer",
+      "signals": [
+        "dialog_import"
+      ],
+      "primitives": [
+        "Dialog",
+        "DialogContent",
+        "DialogHeader"
+      ],
+      "has_title": true,
+      "has_footer": false,
+      "has_close": true,
+      "sample": [
+        [
+          41,
+          "} from '@/components/ui/dialog'"
+        ]
+      ]
+    },
+    {
+      "path": "src/components/testing/hub/SessionsTable.tsx",
+      "class": "AlertDialog consumer",
+      "signals": [
+        "alert_dialog_import"
+      ],
+      "primitives": [
+        "AlertDialog"
+      ],
+      "has_title": true,
+      "has_footer": true,
+      "has_close": false,
+      "sample": [
+        [
+          18,
+          "} from '@/components/ui/alert-dialog'"
+        ]
+      ]
+    },
+    {
+      "path": "src/components/trails/CatchUpView.tsx",
+      "class": "Dialog/ConfirmDialog consumer",
+      "signals": [
+        "dialog_import"
+      ],
+      "primitives": [
+        "Dialog",
+        "DialogContent",
+        "DialogHeader"
+      ],
+      "has_title": true,
+      "has_footer": false,
+      "has_close": false,
+      "sample": [
+        [
+          9,
+          "} from '@/components/ui/dialog'"
+        ]
+      ]
+    },
+    {
+      "path": "src/components/ui/alert-dialog.tsx",
+      "class": "Dialog/ConfirmDialog consumer",
+      "signals": [
+        "dialog_import"
+      ],
+      "primitives": [
+        "Dialog",
+        "DialogContent",
+        "DialogHeader",
+        "DialogFooter",
+        "DialogClose",
+        "AlertDialog"
+      ],
+      "has_title": true,
+      "has_footer": true,
+      "has_close": true,
+      "sample": [
+        [
+          13,
+          "} from \"@/components/ui/dialog\""
+        ]
+      ]
+    },
+    {
+      "path": "src/components/ui/command.tsx",
+      "class": "Dialog/ConfirmDialog consumer",
+      "signals": [
+        "dialog_import"
+      ],
+      "primitives": [
+        "Dialog",
+        "DialogContent",
+        "DialogHeader",
+        "CommandDialog"
+      ],
+      "has_title": true,
+      "has_footer": false,
+      "has_close": true,
+      "sample": [
+        [
+          13,
+          "} from '@/components/ui/dialog'"
+        ]
+      ]
+    },
+    {
+      "path": "src/components/ui/dialog.stories.tsx",
+      "class": "Dialog/ConfirmDialog consumer",
+      "signals": [
+        "dialog_import"
+      ],
+      "primitives": [
+        "Dialog",
+        "DialogContent",
+        "DialogHeader",
+        "DialogFooter",
+        "ConfirmDialog"
+      ],
+      "has_title": true,
+      "has_footer": true,
+      "has_close": true,
+      "sample": [
+        [
+          26,
+          "component: 'Source: @/components/ui/dialog',"
+        ]
+      ]
+    },
+    {
+      "path": "src/components/ui/dialog.tsx",
+      "class": "manual overlay/dialog-like",
+      "signals": [
+        "fixed_inset"
+      ],
+      "primitives": [
+        "Dialog",
+        "DialogContent",
+        "DialogHeader",
+        "DialogFooter",
+        "DialogClose",
+        "ConfirmDialog"
+      ],
+      "has_title": true,
+      "has_footer": true,
+      "has_close": true,
+      "sample": [
+        [
+          36,
+          "\"fixed inset-0 isolate z-50 bg-black/50 backdrop-blur-sm duration-100 data-open:animate-in data-open:fade-in-0 data-closed:animate-out data-closed:fade-out-0\","
+        ]
+      ]
+    },
+    {
+      "path": "src/components/ui/sheet.tsx",
+      "class": "manual overlay/dialog-like",
+      "signals": [
+        "fixed_inset"
+      ],
+      "primitives": [
+        "Dialog",
+        "Sheet",
+        "SheetContent"
+      ],
+      "has_title": false,
+      "has_footer": false,
+      "has_close": true,
+      "sample": [
+        [
+          32,
+          "\"fixed inset-0 z-50 bg-black/10 duration-100 data-ending-style:opacity-0 data-starting-style:opacity-0 supports-backdrop-filter:backdrop-blur-xs data-open:animate-in data-open:fade-in-0 data-closed:animate-out data-closed:fade-out-0\","
+        ]
+      ]
+    },
+    {
+      "path": "src/components/wiki/blocks/PrequestionGate.tsx",
+      "class": "manual overlay/dialog-like",
+      "signals": [
+        "aria_modal",
+        "fixed_inset",
+        "role_dialog"
+      ],
+      "primitives": [],
+      "has_title": false,
+      "has_footer": false,
+      "has_close": false,
+      "sample": [
+        [
+          204,
+          "role=\"dialog\""
+        ],
+        [
+          206,
+          "aria-modal=\"true\""
+        ],
+        [
+          198,
+          "<div className=\"fixed inset-0 z-50 flex items-center justify-center bg-black/40\">"
+        ]
+      ]
+    },
+    {
+      "path": "src/components/wiki/navigation/WikiBookmarks.tsx",
+      "class": "Popover consumer",
+      "signals": [
+        "popover_import"
+      ],
+      "primitives": [
+        "Popover"
+      ],
+      "has_title": false,
+      "has_footer": false,
+      "has_close": false,
+      "sample": [
+        [
+          12,
+          "} from '@/components/ui/popover'"
+        ]
+      ]
+    },
+    {
+      "path": "src/components/wiki/navigation/WikiHeaderClient.tsx",
+      "class": "Sheet/mobile panel consumer",
+      "signals": [
+        "sheet_import"
+      ],
+      "primitives": [
+        "Sheet",
+        "SheetContent"
+      ],
+      "has_title": false,
+      "has_footer": false,
+      "has_close": false,
+      "sample": [
+        [
+          12,
+          "import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'"
+        ]
+      ]
+    },
+    {
+      "path": "src/components/wiki/quiz/WikiQuizButton.tsx",
+      "class": "manual overlay/dialog-like",
+      "signals": [
+        "fixed_inset",
+        "portal"
+      ],
+      "primitives": [
+        "createPortal"
+      ],
+      "has_title": false,
+      "has_footer": false,
+      "has_close": true,
+      "sample": [
+        [
+          96,
+          "? createPortal(reviewModal, document.body)"
+        ],
+        [
+          52,
+          "<div className=\"fixed inset-0 z-[1000] flex items-center justify-center bg-black/50 backdrop-blur-[3px]\">"
+        ]
+      ]
+    },
+    {
+      "path": "src/components/wiki/quiz/WikiQuizModal.stories.tsx",
+      "class": "named overlay-like file; inspect manually",
+      "signals": [
+        "filename:WikiQuizModal.stories.tsx"
+      ],
+      "primitives": [],
+      "has_title": false,
+      "has_footer": false,
+      "has_close": true,
+      "sample": []
+    },
+    {
+      "path": "src/components/wiki/quiz/WikiQuizModal.test.tsx",
+      "class": "manual overlay/dialog-like",
+      "signals": [
+        "aria_modal",
+        "filename:WikiQuizModal.test.tsx",
+        "role_dialog"
+      ],
+      "primitives": [
+        "createPortal"
+      ],
+      "has_title": false,
+      "has_footer": false,
+      "has_close": true,
+      "sample": [
+        [
+          282,
+          "expect(markup).toContain('role=\"dialog\"')"
+        ],
+        [
+          279,
+          "test('modal has dialog role and aria-modal', async () => {"
+        ]
+      ]
+    },
+    {
+      "path": "src/components/wiki/quiz/WikiQuizModal.tsx",
+      "class": "manual overlay/dialog-like",
+      "signals": [
+        "aria_modal",
+        "filename:WikiQuizModal.tsx",
+        "fixed_inset",
+        "portal",
+        "role_dialog"
+      ],
+      "primitives": [
+        "createPortal"
+      ],
+      "has_title": true,
+      "has_footer": false,
+      "has_close": true,
+      "sample": [
+        [
+          784,
+          "return createPortal(modalContent, document.body)"
+        ],
+        [
+          373,
+          "role=\"dialog\""
+        ],
+        [
+          374,
+          "aria-modal=\"true\""
+        ],
+        [
+          368,
+          "className=\"fixed inset-0 z-[1000] flex items-center justify-center bg-black/50 p-1 backdrop-blur-[3px] animate-in fade-in duration-200 sm:p-2\""
+        ]
+      ]
+    },
+    {
+      "path": "src/components/wiki/shared/WikiReference.tsx",
+      "class": "Sheet/mobile panel consumer",
+      "signals": [
+        "sheet_import"
+      ],
+      "primitives": [
+        "Sheet",
+        "SheetContent"
+      ],
+      "has_title": true,
+      "has_footer": false,
+      "has_close": false,
+      "sample": [
+        [
+          7,
+          "import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet'"
+        ]
+      ]
+    },
+    {
+      "path": "src/components/wiki/shared/WikiRelatedPopover.stories.tsx",
+      "class": "named overlay-like file; inspect manually",
+      "signals": [
+        "filename:WikiRelatedPopover.stories.tsx"
+      ],
+      "primitives": [
+        "Popover"
+      ],
+      "has_title": false,
+      "has_footer": false,
+      "has_close": false,
+      "sample": []
+    },
+    {
+      "path": "src/components/wiki/shared/WikiRelatedPopover.tsx",
+      "class": "manual overlay/dialog-like",
+      "signals": [
+        "filename:WikiRelatedPopover.tsx",
+        "portal"
+      ],
+      "primitives": [
+        "createPortal"
+      ],
+      "has_title": false,
+      "has_footer": false,
+      "has_close": false,
+      "sample": [
+        [
+          93,
+          "{isOpen && pos && createPortal("
+        ]
+      ]
+    },
+    {
+      "path": "src/components/wiki/shared/WikiSourcesPopover.stories.tsx",
+      "class": "named overlay-like file; inspect manually",
+      "signals": [
+        "filename:WikiSourcesPopover.stories.tsx"
+      ],
+      "primitives": [
+        "Popover"
+      ],
+      "has_title": false,
+      "has_footer": false,
+      "has_close": false,
+      "sample": []
+    },
+    {
+      "path": "src/components/wiki/shared/WikiSourcesPopover.tsx",
+      "class": "manual overlay/dialog-like",
+      "signals": [
+        "filename:WikiSourcesPopover.tsx",
+        "portal"
+      ],
+      "primitives": [
+        "createPortal"
+      ],
+      "has_title": false,
+      "has_footer": false,
+      "has_close": false,
+      "sample": [
+        [
+          84,
+          "{isOpen && pos && createPortal("
+        ]
+      ]
+    },
+    {
+      "path": "src/features/3d-lab/DevControlsModule/dashboard/BottomSheet.tsx",
+      "class": "manual overlay/dialog-like",
+      "signals": [
+        "filename:BottomSheet.tsx",
+        "role_dialog"
+      ],
+      "primitives": [
+        "Sheet"
+      ],
+      "has_title": false,
+      "has_footer": false,
+      "has_close": false,
+      "sample": [
+        [
+          68,
+          "role=\"dialog\""
+        ]
+      ]
+    },
+    {
+      "path": "src/features/3d-lab/DevControlsModule/dashboard/LayersOverlay.tsx",
+      "class": "named overlay-like file; inspect manually",
+      "signals": [
+        "filename:LayersOverlay.tsx"
+      ],
+      "primitives": [],
+      "has_title": true,
+      "has_footer": false,
+      "has_close": true,
+      "sample": []
+    },
+    {
+      "path": "src/features/3d-lab/DevControlsModule/dashboard/MobileSheetContent.tsx",
+      "class": "named overlay-like file; inspect manually",
+      "signals": [
+        "filename:MobileSheetContent.tsx"
+      ],
+      "primitives": [
+        "Sheet"
+      ],
+      "has_title": false,
+      "has_footer": false,
+      "has_close": false,
+      "sample": []
+    },
+    {
+      "path": "src/features/3d-lab/DevControlsModule/dashboard/TourOverlay.tsx",
+      "class": "named overlay-like file; inspect manually",
+      "signals": [
+        "filename:TourOverlay.tsx"
+      ],
+      "primitives": [],
+      "has_title": false,
+      "has_footer": false,
+      "has_close": false,
+      "sample": []
+    },
+    {
+      "path": "src/features/3d-lab/DevControlsModule/dashboard/splits/BhlControls.tsx",
+      "class": "Popover consumer",
+      "signals": [
+        "popover_import"
+      ],
+      "primitives": [
+        "Popover"
+      ],
+      "has_title": false,
+      "has_footer": false,
+      "has_close": false,
+      "sample": [
+        [
+          6,
+          "import { Popover, PopoverTrigger, PopoverContent, PopoverHeader, PopoverTitle, PopoverDescription } from '@/components/ui/popover'"
+        ]
+      ]
+    },
+    {
+      "path": "src/features/3d-lab/DevControlsModule/dashboard/splits/FlarControls.tsx",
+      "class": "Popover consumer",
+      "signals": [
+        "popover_import"
+      ],
+      "primitives": [
+        "Popover"
+      ],
+      "has_title": false,
+      "has_footer": false,
+      "has_close": false,
+      "sample": [
+        [
+          6,
+          "import { Popover, PopoverTrigger, PopoverContent, PopoverHeader, PopoverTitle, PopoverDescription } from '@/components/ui/popover'"
+        ]
+      ]
+    },
+    {
+      "path": "src/features/3d-lab/DevControlsModule/dashboard/splits/SetbackControls.tsx",
+      "class": "Popover consumer",
+      "signals": [
+        "popover_import"
+      ],
+      "primitives": [
+        "Popover"
+      ],
+      "has_title": false,
+      "has_footer": false,
+      "has_close": false,
+      "sample": [
+        [
+          6,
+          "import { Popover, PopoverTrigger, PopoverContent, PopoverHeader, PopoverTitle, PopoverDescription } from '@/components/ui/popover'"
+        ]
+      ]
+    },
+    {
+      "path": "src/features/3d-lab/components/InfoPanel.tsx",
+      "class": "manual overlay/dialog-like",
+      "signals": [
+        "fixed_inset"
+      ],
+      "primitives": [],
+      "has_title": true,
+      "has_footer": false,
+      "has_close": true,
+      "sample": [
+        [
+          53,
+          "<div className=\"fixed inset-0 z-[200] pointer-events-none\">"
+        ]
+      ]
+    },
+    {
+      "path": "src/features/3d-lab/components/OnboardingFlow.tsx",
+      "class": "manual overlay/dialog-like",
+      "signals": [
+        "aria_modal",
+        "fixed_inset",
+        "role_dialog"
+      ],
+      "primitives": [],
+      "has_title": false,
+      "has_footer": false,
+      "has_close": false,
+      "sample": [
+        [
+          80,
+          "role=\"dialog\""
+        ],
+        [
+          81,
+          "aria-modal=\"true\""
+        ],
+        [
+          72,
+          "\"fixed inset-0 bg-black/50 z-[300] transition-opacity duration-200\","
+        ]
+      ]
+    },
+    {
+      "path": "src/features/3d-lab/components/overlays/DOMOverlayLayer.tsx",
+      "class": "named overlay-like file; inspect manually",
+      "signals": [
+        "filename:DOMOverlayLayer.tsx"
+      ],
+      "primitives": [],
+      "has_title": false,
+      "has_footer": false,
+      "has_close": false,
+      "sample": []
+    },
+    {
+      "path": "src/features/3d-lab/components/overlays/LabelOverlay.tsx",
+      "class": "named overlay-like file; inspect manually",
+      "signals": [
+        "filename:LabelOverlay.tsx"
+      ],
+      "primitives": [],
+      "has_title": false,
+      "has_footer": false,
+      "has_close": false,
+      "sample": []
+    },
+    {
+      "path": "src/features/3d-lab/components/shell/CommandPalette.tsx",
+      "class": "manual overlay/dialog-like",
+      "signals": [
+        "filename:CommandPalette.tsx",
+        "fixed_inset"
+      ],
+      "primitives": [
+        "Dialog"
+      ],
+      "has_title": false,
+      "has_footer": false,
+      "has_close": false,
+      "sample": [
+        [
+          82,
+          "<div className=\"fixed inset-0 z-[60] flex items-start justify-center pt-[20vh]\" onClick={() => setOpen(false)}>"
+        ]
+      ]
+    },
+    {
+      "path": "src/features/3d-lab/components/shell/LabOverlayLayer.tsx",
+      "class": "named overlay-like file; inspect manually",
+      "signals": [
+        "filename:LabOverlayLayer.tsx"
+      ],
+      "primitives": [],
+      "has_title": false,
+      "has_footer": false,
+      "has_close": false,
+      "sample": []
+    },
+    {
+      "path": "src/features/3d-lab/components/shell/ViewportBottomSheet.tsx",
+      "class": "named overlay-like file; inspect manually",
+      "signals": [
+        "filename:ViewportBottomSheet.tsx"
+      ],
+      "primitives": [],
+      "has_title": false,
+      "has_footer": false,
+      "has_close": false,
+      "sample": []
+    },
+    {
+      "path": "src/features/3d-lab/components/stairway/ClickInspectPopover.tsx",
+      "class": "manual overlay/dialog-like",
+      "signals": [
+        "filename:ClickInspectPopover.tsx",
+        "fixed_inset"
+      ],
+      "primitives": [],
+      "has_title": false,
+      "has_footer": false,
+      "has_close": true,
+      "sample": [
+        [
+          71,
+          "<div className=\"fixed inset-0 z-40\" onClick={onClose} aria-hidden=\"true\" />"
+        ]
+      ]
+    },
+    {
+      "path": "src/features/3d-lab/components/templates/WallConfigurator/SponsorPalette.tsx",
+      "class": "named overlay-like file; inspect manually",
+      "signals": [
+        "filename:SponsorPalette.tsx"
+      ],
+      "primitives": [],
+      "has_title": true,
+      "has_footer": false,
+      "has_close": false,
+      "sample": []
+    },
+    {
+      "path": "src/storybook/scenes/DesignSystem/ColorPalette.stories.tsx",
+      "class": "named overlay-like file; inspect manually",
+      "signals": [
+        "filename:ColorPalette.stories.tsx"
+      ],
+      "primitives": [],
+      "has_title": false,
+      "has_footer": false,
+      "has_close": false,
+      "sample": []
+    }
+  ]
+}

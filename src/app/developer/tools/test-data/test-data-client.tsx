@@ -7,16 +7,15 @@ import {
 } from '@/lib/actions/dev/test-data'
 import { Button } from '@/components/ui/button'
 import {
-  AlertDialog,
-  AlertDialogAction,
-  AlertDialogCancel,
-  AlertDialogContent,
-  AlertDialogDescription,
-  AlertDialogFooter,
-  AlertDialogHeader,
-  AlertDialogTitle,
-  AlertDialogTrigger,
-} from '@/components/ui/alert-dialog'
+  Modal,
+  ModalClose,
+  ModalContent,
+  ModalDescription,
+  ModalFooter,
+  ModalHeader,
+  ModalTitle,
+  ModalTrigger,
+} from '@/components/ui/modal'
 
 type GenerateStatus = 'idle' | 'loading' | 'success' | 'error'
 
@@ -85,8 +84,8 @@ export function TestDataClient() {
           <p className='mt-1 text-xs text-muted-foreground'>
             Generate 5 mock quiz sessions with randomized responses.
           </p>
-          <AlertDialog>
-            <AlertDialogTrigger asChild>
+          <Modal>
+            <ModalTrigger render={
               <Button
                 type='button'
                 size='sm'
@@ -97,22 +96,20 @@ export function TestDataClient() {
                   ? 'Generating...'
                   : 'Generate Sessions'}
               </Button>
-            </AlertDialogTrigger>
-            <AlertDialogContent>
-              <AlertDialogHeader>
-                <AlertDialogTitle>Generate Test Sessions</AlertDialogTitle>
-                <AlertDialogDescription>
+            } />
+            <ModalContent size="sm" role="alertdialog">
+              <ModalHeader>
+                <ModalTitle>Generate Test Sessions</ModalTitle>
+                <ModalDescription>
                   This will create 5 mock quiz sessions in the database. Continue?
-                </AlertDialogDescription>
-              </AlertDialogHeader>
-              <AlertDialogFooter>
-                <AlertDialogCancel>Cancel</AlertDialogCancel>
-                <AlertDialogAction onClick={handleGenerateSessions}>
-                  Generate
-                </AlertDialogAction>
-              </AlertDialogFooter>
-            </AlertDialogContent>
-          </AlertDialog>
+                </ModalDescription>
+              </ModalHeader>
+              <ModalFooter>
+                <ModalClose render={<Button variant="secondary">Cancel</Button>} />
+                <ModalClose render={<Button onClick={handleGenerateSessions}>Generate</Button>} />
+              </ModalFooter>
+            </ModalContent>
+          </Modal>
         </div>
 
         <div className='rounded-lg border border-border p-4'>
@@ -122,8 +119,8 @@ export function TestDataClient() {
           <p className='mt-1 text-xs text-muted-foreground'>
             Generate a test organization with sample members.
           </p>
-          <AlertDialog>
-            <AlertDialogTrigger asChild>
+          <Modal>
+            <ModalTrigger render={
               <Button
                 type='button'
                 size='sm'
@@ -132,22 +129,20 @@ export function TestDataClient() {
               >
                 {orgStatus === 'loading' ? 'Generating...' : 'Generate Org'}
               </Button>
-            </AlertDialogTrigger>
-            <AlertDialogContent>
-              <AlertDialogHeader>
-                <AlertDialogTitle>Generate Test Organization</AlertDialogTitle>
-                <AlertDialogDescription>
+            } />
+            <ModalContent size="sm" role="alertdialog">
+              <ModalHeader>
+                <ModalTitle>Generate Test Organization</ModalTitle>
+                <ModalDescription>
                   This will create a test organization and assign you as owner. Continue?
-                </AlertDialogDescription>
-              </AlertDialogHeader>
-              <AlertDialogFooter>
-                <AlertDialogCancel>Cancel</AlertDialogCancel>
-                <AlertDialogAction onClick={handleGenerateOrg}>
-                  Generate
-                </AlertDialogAction>
-              </AlertDialogFooter>
-            </AlertDialogContent>
-          </AlertDialog>
+                </ModalDescription>
+              </ModalHeader>
+              <ModalFooter>
+                <ModalClose render={<Button variant="secondary">Cancel</Button>} />
+                <ModalClose render={<Button onClick={handleGenerateOrg}>Generate</Button>} />
+              </ModalFooter>
+            </ModalContent>
+          </Modal>
         </div>
       </div>
     </div>

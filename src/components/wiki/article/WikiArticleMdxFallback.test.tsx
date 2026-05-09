@@ -13,6 +13,23 @@ mock.module('@/lib/analytics', () => ({
 import { compileWikiArticleWithRenderer } from './WikiArticle'
 
 describe('WikiArticle rendering', () => {
+  test('rejects raw SlateCamp UI block placeholders before MDX can render them as prose', async () => {
+    await expect(
+      compileWikiArticleWithRenderer({
+        article: {
+          article_id: 'raw-ui-placeholder',
+          content: [
+            '## Core Concept',
+            '[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]',
+            'Extracted summary:',
+            '- Props: id="media-test", layout="single", type="image"',
+            '- Text: (none detected) [/SLATECAMP_UI_BLOCK]',
+          ].join('\n'),
+        },
+      }),
+    ).rejects.toThrow('Raw SLATECAMP_UI_BLOCK placeholders detected')
+  })
+
   test('preserves and renders ArticleMedia with fallback when malformed ExamTip triggers primary compile failure', async () => {
     const result = await compileWikiArticleWithRenderer({
       article: {

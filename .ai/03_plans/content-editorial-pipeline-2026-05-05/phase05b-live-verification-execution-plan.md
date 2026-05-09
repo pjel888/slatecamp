@@ -1,7 +1,7 @@
 # Phase 0.5B Live Official-Source Verification Execution Plan
 
-**Generated:** 2026-05-05T15:28:29Z  
-**Scope:** Plan the future live official-source verification run for reconciled Vitruvius source bundles.  
+**Generated:** 2026-05-05T15:28:29Z
+**Scope:** Plan the future live official-source verification run for reconciled Vitruvius source bundles.
 **Status:** Planning only. This file does not execute web retrieval, approve sources, create source packs, edit content, or mutate Supabase.
 
 ---

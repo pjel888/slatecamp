@@ -3,6 +3,7 @@ import { compileMDX } from 'next-mdx-remote/rsc'
 import remarkGfm from 'remark-gfm'
 import { Skeleton } from '@/components/ui/skeleton'
 import {
+  containsSlatecampUiBlockPlaceholder,
   createHeadingIdTracker,
   createMdxFallbackSource,
   extractHeadings,
@@ -237,6 +238,9 @@ export const compileWikiArticleWithRenderer = async ({
     .replace(/<!--[\s\S]*?-->/g, '')
 
   const processedContent = injectEIPrompts(cleaned, eiPrompts)
+  if (containsSlatecampUiBlockPlaceholder(processedContent)) {
+    throw new Error('Raw SLATECAMP_UI_BLOCK placeholders detected in article content. Content must be repaired before rendering.')
+  }
   const sanitizedContent = sanitizeMDX(processedContent)
   const widgets = await resolveWidgets(sanitizedContent)
   const headingComponents = createWikiHeadingComponents()

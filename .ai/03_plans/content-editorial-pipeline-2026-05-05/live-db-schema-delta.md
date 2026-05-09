@@ -1,7 +1,7 @@
 # Live DB Schema Delta — Phase 1A Evidence
 
-**Date:** 2026-05-05  
-**Scope:** Compare local/repo schema assumptions against live Supabase evidence.  
+**Date:** 2026-05-05
+**Scope:** Compare local/repo schema assumptions against live Supabase evidence.
 **Status:** Read-only planning document; no schema changes applied.
 
 ---

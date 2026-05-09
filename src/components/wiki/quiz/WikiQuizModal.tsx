@@ -1,12 +1,20 @@
 'use client'
 
 import { useState, useEffect, useRef, useCallback } from 'react'
-import { createPortal } from 'react-dom'
-import { X, CheckCircle, XCircle, ArrowRight, ArrowCounterClockwise, BookOpen } from '@phosphor-icons/react/dist/ssr'
+import { CheckCircle, XCircle, ArrowRight, ArrowCounterClockwise, BookOpen } from '@phosphor-icons/react/dist/ssr'
 import { cn } from '@/lib/utils'
 import { getWikiQuizQuestions, submitWikiQuizAnswer, endWikiQuizSession } from '@/lib/actions/wiki-quiz'
 import type { QuestionForClient } from '@/types/quiz-config'
 import { SlideToSubmit } from '@/components/quiz-v2/SlideToSubmit'
+import {
+  Modal,
+  ModalBody,
+  ModalContent,
+  ModalDescription,
+  ModalFooter,
+  ModalHeader,
+  ModalTitle,
+} from '@/components/ui/modal'
 
 // ─── Props ────────────────────────────────────────────────────────────────────
 
@@ -67,11 +75,7 @@ export const WikiQuizModal = ({ nodeId, topicName, articleSlug, articleTitle, ar
   const [submitError, setSubmitError] = useState<string | null>(null)
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isEnding, setIsEnding] = useState(false)
-  const [mounted, setMounted] = useState(false)
 
-  const dialogRef = useRef<HTMLDivElement>(null)
-  const titleRef = useRef<HTMLHeadingElement>(null)
-  const closeButtonRef = useRef<HTMLButtonElement>(null)
   const firstOptionRef = useRef<HTMLInputElement>(null)
   const nextButtonRef = useRef<HTMLButtonElement>(null)
   const gatedTimerRef = useRef<ReturnType<typeof setInterval> | null>(null)
@@ -93,76 +97,6 @@ export const WikiQuizModal = ({ nodeId, topicName, articleSlug, articleTitle, ar
     loadingRef.current = false
     onClose()
   }, [onClose])
-
-  useEffect(() => {
-    setMounted(true)
-  }, [])
-
-  // ── Focus management ─────────────────────────────────────────────────────
-
-  useEffect(() => {
-    // Move focus to the modal title on open for a natural entry point
-    const timer = setTimeout(() => {
-      titleRef.current?.focus()
-    }, 50)
-    return () => clearTimeout(timer)
-  }, [])
-
-  // ── Focus trap ────────────────────────────────────────────────────────────
-
-  useEffect(() => {
-    const dialog = dialogRef.current
-    if (!dialog) return
-
-    const FOCUSABLE_SELECTOR = 'button:not(:disabled), [href]:not([aria-disabled="true"]), input:not([type="hidden"]):not(:disabled), select:not(:disabled), textarea:not(:disabled), [tabindex]:not([tabindex="-1"])'
-
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key !== 'Tab') return
-
-      const focusable = Array.from(dialog.querySelectorAll(FOCUSABLE_SELECTOR)) as HTMLElement[]
-      if (focusable.length === 0) return
-
-      const first = focusable[0]
-      const last = focusable[focusable.length - 1]
-      const active = document.activeElement
-
-      if (e.shiftKey) {
-        if (active === first || !dialog.contains(active)) {
-          e.preventDefault()
-          last.focus()
-        }
-      } else {
-        if (active === last || !dialog.contains(active)) {
-          e.preventDefault()
-          first.focus()
-        }
-      }
-    }
-
-    document.addEventListener('keydown', handleKeyDown)
-    return () => document.removeEventListener('keydown', handleKeyDown)
-  }, [status, nextReady])
-
-  // ── Intentional dismissal policy ──────────────────────────────────────────
-  // The review modal is non-dismissible by backdrop click or Escape so students
-  // cannot accidentally exit while dragging the slide-to-submit control. The
-  // explicit header close button remains the primary exit affordance.
-
-  // ── Body scroll lock ─────────────────────────────────────────────────────
-
-  useEffect(() => {
-    const prevOverflow = document.body.style.overflow
-    const prevPaddingRight = document.body.style.paddingRight
-    const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth
-    document.body.style.overflow = 'hidden'
-    if (scrollbarWidth > 0) {
-      document.body.style.paddingRight = `${scrollbarWidth}px`
-    }
-    return () => {
-      document.body.style.overflow = prevOverflow
-      document.body.style.paddingRight = prevPaddingRight
-    }
-  }, [])
 
   // ── Load questions ───────────────────────────────────────────────────────
 
@@ -364,60 +298,45 @@ export const WikiQuizModal = ({ nodeId, topicName, articleSlug, articleTitle, ar
   const isFeedbackActive = status === 'feedback' && currentQuestion && currentAnswer
 
   const modalContent = (
-    <div
-      className="fixed inset-0 z-[1000] flex items-center justify-center bg-black/50 p-1 backdrop-blur-[3px] animate-in fade-in duration-200 sm:p-2"
-      data-testid="wiki-quiz-overlay"
+    <Modal
+      open
+      disablePointerDismissal
+      onOpenChange={(open, eventDetails) => {
+        // non-dismissible by backdrop click or Escape; only explicit close controls may exit.
+        if (!open && eventDetails.reason === 'close-press') safeClose()
+      }}
     >
-      <div
-        ref={dialogRef}
+      <ModalContent
+        width={1120}
+        minHeight={420}
+        maxHeight="calc(100dvh - 0.5rem)"
         role="dialog"
-        aria-modal="true"
         aria-labelledby="wiki-quiz-title"
-        className={cn(
-          'relative z-[1001] flex h-[min(calc(100dvh-0.5rem),780px)] w-full flex-col overflow-hidden',
-          'max-w-[min(calc(100vw-0.5rem),1120px)] rounded-xl bg-card shadow-modal',
-          'animate-in zoom-in-95 duration-200 ease-out sm:h-[min(calc(100dvh-1rem),780px)] sm:max-w-[min(calc(100vw-1rem),1120px)]',
-        )}
+        data-testid="wiki-quiz-overlay"
+        overlayClassName="z-[1000]"
+        className="z-[1001] h-[min(calc(100dvh-0.5rem),780px)] sm:h-[min(calc(100dvh-1rem),780px)]"
       >
         {/* ── Header ──────────────────────────────────────────────────── */}
-        <div className="flex shrink-0 items-center justify-between border-b border-border bg-card/95 px-4 py-2.5 backdrop-blur-sm sm:px-5 sm:py-3">
-          <div className="flex min-w-0 items-center gap-3">
-            <button
-              ref={closeButtonRef}
-              type="button"
-              onClick={safeClose}
-              disabled={isSubmitting || isEnding}
-              className={cn(
-                'flex h-8 w-8 shrink-0 items-center justify-center rounded-md text-muted-foreground transition-colors duration-150 hover:bg-surface-light hover:text-foreground',
-                (isSubmitting || isEnding) && 'cursor-not-allowed opacity-50'
-              )}
-              aria-label="Close quiz"
-            >
-              <X size={18} weight="bold" aria-hidden="true" />
-            </button>
+        <ModalHeader closeAriaLabel="Close quiz" showCloseButton={!isSubmitting && !isEnding}>
+          <div className="flex min-w-0 items-center justify-between gap-3">
             <div className="min-w-0">
-              <h2
-                ref={titleRef}
-                id="wiki-quiz-title"
-                tabIndex={-1}
-                className="truncate text-sm font-semibold text-foreground outline-none"
-              >
+              <ModalTitle id="wiki-quiz-title">
                 {status === 'results' ? 'Review Complete' : `Quick Review — ${topicName}`}
-              </h2>
+              </ModalTitle>
               {articleTitle && status !== 'results' && (
-                <p className="truncate text-[11px] text-muted-foreground">{articleTitle}</p>
+                <ModalDescription className="truncate">{articleTitle}</ModalDescription>
               )}
             </div>
+            {status !== 'results' && status !== 'loading' && status !== 'error' && status !== 'empty' && (
+              <span className="ml-3 shrink-0 text-xs font-medium tabular-nums text-muted-foreground">
+                {currentIndex + 1} / {totalQuestions}
+              </span>
+            )}
           </div>
-          {status !== 'results' && status !== 'loading' && status !== 'error' && status !== 'empty' && (
-            <span className="ml-3 shrink-0 text-xs font-medium tabular-nums text-muted-foreground">
-              {currentIndex + 1} / {totalQuestions}
-            </span>
-          )}
-        </div>
+        </ModalHeader>
 
         {/* ── Body ────────────────────────────────────────────────────── */}
-        <div className="min-h-0 flex-1 overflow-y-auto">
+        <ModalBody>
           {/* Loading state */}
           {status === 'loading' && (
             <div className="mx-auto flex w-full max-w-xl flex-col items-center justify-center gap-4 px-5 py-14 sm:px-6">
@@ -735,10 +654,10 @@ export const WikiQuizModal = ({ nodeId, topicName, articleSlug, articleTitle, ar
               </div>
             </div>
           )}
-        </div>
+        </ModalBody>
 
         {(isQuestionActive || isFeedbackActive) && currentQuestion && (
-          <div className="shrink-0 border-t border-border bg-card/95 p-2 backdrop-blur-sm sm:px-5 sm:py-2">
+          <ModalFooter className="block bg-card/95 p-2 backdrop-blur-sm sm:px-5 sm:py-2">
             {status === 'question' ? (
               <SlideToSubmit
                 onSubmit={handleSubmit}
@@ -774,15 +693,11 @@ export const WikiQuizModal = ({ nodeId, topicName, articleSlug, articleTitle, ar
                 )}
               </button>
             )}
-          </div>
+          </ModalFooter>
         )}
-      </div>
-    </div>
+      </ModalContent>
+    </Modal>
   )
-
-  if (mounted && typeof document !== 'undefined') {
-    return createPortal(modalContent, document.body)
-  }
 
   return modalContent
 }

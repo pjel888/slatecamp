@@ -1,6 +1,6 @@
 # Source Bundle High-Risk Queue — Phase 0.5A.3
 
-**Generated:** 2026-05-05T15:11:21Z  
+**Generated:** 2026-05-05T15:11:21Z
 **Status:** Verification queue only. No source is approved by this queue.
 
 Total High/Critical law-code-policy bundles: 28

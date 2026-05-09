@@ -1,5 +1,6 @@
 import { describe, it, expect } from 'bun:test'
 import {
+  containsSlatecampUiBlockPlaceholder,
   createMdxFallbackSource,
   sanitizeMDX,
   normalizeWikiMdxComponentBlocks,
@@ -112,6 +113,23 @@ describe('wiki-markdown utility', () => {
   })
 
   describe('createMdxFallbackSource', () => {
+    it('preserves raw SlateCamp UI placeholders as a detectable sentinel instead of normal article prose', () => {
+      const normalizedPlaceholder = [
+        '[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]',
+        'Extracted summary:',
+        '- Props: id="media-test", layout="single", type="image"',
+        '- Text: (none detected)',
+        '[/SLATECAMP_UI_BLOCK]',
+      ].join('\n')
+
+      expect(containsSlatecampUiBlockPlaceholder(normalizedPlaceholder)).toBe(true)
+
+      const fallback = createMdxFallbackSource(normalizedPlaceholder)
+
+      expect(fallback).toContain('[SLATECAMP_UI_BLOCK:ui_0001')
+      expect(fallback).toContain('[/SLATECAMP_UI_BLOCK]')
+    })
+
     it('preserves authored prose while keeping valid registered components', () => {
       const malformed = [
         '## Core Concept',

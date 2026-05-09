@@ -12,12 +12,12 @@ import {
 import { cn } from '@/lib/utils'
 import { Button } from '@/components/ui/button'
 import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-} from '@/components/ui/dialog'
+  Modal as Dialog,
+  ModalContent as DialogContent,
+  ModalDescription as DialogDescription,
+  ModalHeader as DialogHeader,
+  ModalTitle as DialogTitle,
+} from '@/components/ui/modal'
 import type { QuestionForClient, QuizAnswerState } from '@/types/quiz-config'
 
 interface SubmitConfirmModalProps {
@@ -104,7 +104,6 @@ export const SubmitConfirmModal = ({
     >
       <DialogContent
         size="md"
-        showCloseButton={false}
         className="gap-4 rounded-lg bg-card p-6"
       >
         <DialogHeader className="space-y-1">

@@ -7,7 +7,7 @@ import { deleteFinancialEntry } from '@/lib/actions/ceo/financial-actions'
 import { FinancialEntryForm } from '@/components/ceo/FinancialEntryForm'
 import type { FinancialEntry, FinancialEntryType } from '@/types/ceo'
 import { CATEGORY_LABELS, formatPeso } from '@/types/ceo'
-import { ConfirmDialog } from '@/components/ui/dialog'
+import { ConfirmModal } from '@/components/ui/modal'
 import { DataTable, type Column } from '@/components/shared/data-table'
 
 type FilterTab = 'all' | FinancialEntryType
@@ -210,7 +210,7 @@ export const FinancialLedger = ({ entries }: FinancialLedgerProps) => {
         editEntry={editEntry}
       />
 
-      <ConfirmDialog
+      <ConfirmModal
         open={showDeleteConfirm}
         onOpenChange={setShowDeleteConfirm}
         title="Delete entry?"

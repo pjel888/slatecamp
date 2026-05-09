@@ -1,7 +1,7 @@
 # Vitruvius Source Truth Orchestration — Phase 0.5C
 
-**Created:** 2026-05-05T14:59:10Z  
-**Scope:** Define how `vitruvius-connection/`, official internet sources, source packs, terminal scripts, and `/admin/ai-audit` work together.  
+**Created:** 2026-05-05T14:59:10Z
+**Scope:** Define how `vitruvius-connection/`, official internet sources, source packs, terminal scripts, and `/admin/ai-audit` work together.
 **Status:** Architecture/readiness document. No implementation. No source approval.
 
 ---

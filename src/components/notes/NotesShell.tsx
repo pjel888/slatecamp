@@ -6,7 +6,7 @@ import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 import { getNote, createNote, updateNote, deleteNote } from '@/lib/actions/notes-actions'
 import { getWikiBookmarks, removeWikiBookmark } from '@/lib/actions/wiki-bookmarks'
-import { ConfirmDialog } from '@/components/ui/dialog'
+import { ConfirmModal } from '@/components/ui/modal'
 import { NotesNavigator, type NavFilter } from '@/components/notes/NotesNavigator'
 import { NotesList } from '@/components/notes/NotesList'
 import dynamic from 'next/dynamic'
@@ -191,7 +191,7 @@ export const NotesShell = ({ initialNotes, initialFolders, initialOpenNoteId, us
 
   return (
     <div className="flex h-full w-full overflow-hidden bg-muted">
-      <ConfirmDialog
+      <ConfirmModal
         open={showDeleteConfirm}
         onOpenChange={setShowDeleteConfirm}
         title="Delete note?"

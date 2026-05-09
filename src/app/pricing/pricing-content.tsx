@@ -30,7 +30,7 @@ export const PricingContent = () => {
           Free Access
         </h1>
         <p className="mx-auto mt-4 max-w-md text-base text-muted-foreground">
-          All features are currently available for free. Start studying now.
+          Currently available starter surfaces are free while billing is disabled. Start exploring now.
         </p>
         <Button asChild className="mt-8">
           <Link href={ROUTES.dashboard.root}>Go to Dashboard</Link>
@@ -75,7 +75,7 @@ export const PricingContent = () => {
         <TabsContent value="individuals">
           <div className="mt-3 mb-8 text-center">
             <p className="text-[13px] text-muted-foreground">
-              For architecture students and active LEA reviewees.
+              For architecture students and active board-season learners.
             </p>
           </div>
           <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
@@ -89,7 +89,7 @@ export const PricingContent = () => {
         <TabsContent value="educational">
           <div className="mt-3 mb-8 text-center">
             <p className="text-[13px] text-muted-foreground">
-              For universities and review centers. Volume pricing, instructor
+              For universities and academic cohorts. Volume pricing, instructor
               dashboards, and custom content tools.
             </p>
           </div>

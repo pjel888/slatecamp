@@ -5,8 +5,8 @@ I've now read all 10 documents. Here is the complete Phase 0.5A.1 source drop in
 
 # Phase 0.5A.1 Source Drop Intake Protocol — Senior Planning Review
 
-**Reviewer:** Sisyphus (senior planning reviewer)  
-**Date:** 2026-05-05  
+**Reviewer:** Sisyphus (senior planning reviewer)
+**Date:** 2026-05-05
 **Status:** Planning review only. No implementation. No file mutations.
 
 ---

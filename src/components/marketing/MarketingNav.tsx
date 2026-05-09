@@ -18,13 +18,18 @@ export async function MarketingNav({
   activeRoute = '/',
   logoScrollsToTop = false,
   variant = 'light',
+  isLoggedIn: isLoggedInOverride,
+  showSecondaryNav = true,
+  fixed = true,
 }: {
   activeRoute?: string
   logoScrollsToTop?: boolean
   variant?: 'light' | 'dark'
+  isLoggedIn?: boolean
+  showSecondaryNav?: boolean
+  fixed?: boolean
 }) {
-  const { data: { user } } = await getUserIfPresent()
-  const isLoggedIn = !!user
+  const isLoggedIn = isLoggedInOverride ?? !!(await getUserIfPresent()).data.user
   const isDark = variant === 'dark'
 
   const secondaryLinkClass = (href: string) =>
@@ -39,7 +44,10 @@ export async function MarketingNav({
           : 'text-ink/75 hover:bg-white/[0.16] hover:text-ink',
     )
 
-  const headerClass = 'fixed inset-x-0 top-0 z-50 text-foreground'
+  const headerClass = cn(
+    'z-50 text-foreground',
+    fixed ? 'fixed inset-x-0 top-0' : 'relative',
+  )
 
   const primaryNavClass = cn(
     'border-b px-6 backdrop-blur-xl',
@@ -49,7 +57,7 @@ export async function MarketingNav({
   )
 
   const secondaryNavClass = cn(
-    'relative px-6 backdrop-blur-2xl supports-[backdrop-filter]:backdrop-blur-2xl [mask-image:linear-gradient(to_bottom,black_0%,black_58%,rgba(0,0,0,0.72)_76%,transparent_100%)]',
+    'relative hidden px-6 backdrop-blur-2xl supports-[backdrop-filter]:backdrop-blur-2xl md:block [--secondary-nav-mask:linear-gradient(to_bottom,black_0%,black_58%,rgba(0,0,0,0.72)_76%,transparent_100%)] [-webkit-mask-image:var(--secondary-nav-mask)] [mask-image:var(--secondary-nav-mask)]',
     isDark
       ? 'bg-primary/[0.16] text-white shadow-[0_18px_60px_rgba(0,0,0,0.20)]'
       : 'bg-white/[0.07] text-foreground shadow-[0_18px_60px_rgba(15,23,42,0.06)]',
@@ -121,32 +129,34 @@ export async function MarketingNav({
         </div>
       </div>
 
-      <nav className={secondaryNavClass} aria-label='Primary landing navigation'>
-        <div className='mx-auto flex h-28 max-w-[1200px] items-center justify-center overflow-x-auto'>
-          <div
-            className={cn(
-              'flex min-w-max items-center gap-1 rounded-sm border px-2 py-2 text-[13px] backdrop-blur-xl',
-              isDark
-                ? 'border-white/10 bg-white/[0.04] text-white/70'
-                : 'border-white/25 bg-white/[0.08] text-ink/75',
-            )}
-          >
-            {SECONDARY_NAV_LINKS.map(({ href, routeHref, label }) => {
-              const linkHref = activeRoute === '/' ? href : routeHref
+      {showSecondaryNav ? (
+        <nav className={secondaryNavClass} aria-label='Primary landing navigation'>
+          <div className='mx-auto flex h-20 max-w-[1200px] items-center justify-center overflow-hidden'>
+            <div
+              className={cn(
+                'flex min-w-max items-center gap-1 rounded-sm border px-2 py-2 text-[13px] backdrop-blur-xl',
+                isDark
+                  ? 'border-white/10 bg-white/[0.04] text-white/70'
+                  : 'border-white/25 bg-white/[0.08] text-ink/75',
+              )}
+            >
+              {SECONDARY_NAV_LINKS.map(({ href, routeHref, label }) => {
+                const linkHref = activeRoute === '/' ? href : routeHref
 
-              return linkHref.startsWith('#') ? (
-                <a key={label} href={linkHref} className={secondaryLinkClass(href)}>
-                  {label}
-                </a>
-              ) : (
-                <Link key={label} href={linkHref} className={secondaryLinkClass(href)}>
-                  {label}
-                </Link>
-              )
-            })}
+                return linkHref.startsWith('#') ? (
+                  <a key={label} href={linkHref} className={secondaryLinkClass(href)}>
+                    {label}
+                  </a>
+                ) : (
+                  <Link key={label} href={linkHref} className={secondaryLinkClass(href)}>
+                    {label}
+                  </Link>
+                )
+              })}
+            </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      ) : null}
     </header>
   )
 }

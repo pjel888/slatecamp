@@ -2,6 +2,16 @@
 
 import { useState, useEffect, useCallback, useRef, type ReactNode } from 'react'
 import { cn } from '@/lib/utils'
+import { Button } from '@/components/ui/button'
+import {
+  Modal,
+  ModalBody,
+  ModalContent,
+  ModalDescription,
+  ModalFooter,
+  ModalHeader,
+  ModalTitle,
+} from '@/components/ui/modal'
 import { getPrequestions } from '@/lib/actions/wiki/get-prequestions'
 import { submitPrequestion } from '@/lib/actions/wiki/submit-prequestion'
 import type {
@@ -27,8 +37,6 @@ interface AnsweredQuestion {
 }
 
 type GatePhase = 'loading' | 'questions' | 'summary' | 'article'
-
-// ─── Option state styling (mirrors Slatecamp design system) ───────────────────
 
 const OPTION_CLASSES = {
   default:
@@ -65,7 +73,6 @@ export const PrequestionGate = ({
   const [isSubmitting, setIsSubmitting] = useState(false)
   const questionStartTime = useRef<number>(Date.now())
 
-  // ── Fetch prequestions on mount ──────────────────────────────────────────
   useEffect(() => {
     let cancelled = false
 
@@ -83,7 +90,6 @@ export const PrequestionGate = ({
         setPhase('questions')
         questionStartTime.current = Date.now()
       } catch {
-        // On error, fail open — show the article
         if (!cancelled) setPhase('article')
       }
     }
@@ -92,9 +98,8 @@ export const PrequestionGate = ({
     return () => {
       cancelled = true
     }
-  }, [topicId])
+  }, [topicId, articleSlug])
 
-  // ── Notify parent of missed questions ────────────────────────────────────
   useEffect(() => {
     if (phase === 'article' && answers.length > 0 && onMissedQuestions) {
       const missed = answers
@@ -106,13 +111,25 @@ export const PrequestionGate = ({
     }
   }, [phase, answers, onMissedQuestions])
 
-  // ── Derived state ────────────────────────────────────────────────────────
   const currentQuestion: PrequestionForClient | null =
     payload?.questions[currentIndex] ?? null
   const totalQuestions = payload?.questions.length ?? 0
   const correctCount = answers.filter((a) => a.result.isCorrect).length
 
-  // ── Handlers ─────────────────────────────────────────────────────────────
+  const handleStartReading = useCallback(() => {
+    setPhase('article')
+  }, [])
+
+  const handleNext = useCallback(() => {
+    if (currentIndex + 1 < totalQuestions) {
+      setCurrentIndex((i) => i + 1)
+      setSelectedOptionId(null)
+      setFeedback(null)
+      questionStartTime.current = Date.now()
+    } else {
+      setPhase('summary')
+    }
+  }, [currentIndex, totalQuestions])
 
   const handleSelectOption = useCallback(
     (optionId: string) => {
@@ -147,36 +164,18 @@ export const PrequestionGate = ({
         },
       ])
     } catch {
-      // On submit error, advance silently
       handleNext()
     } finally {
       setIsSubmitting(false)
     }
-  }, [currentQuestion, selectedOptionId, payload, isSubmitting])
+  }, [currentQuestion, selectedOptionId, payload, isSubmitting, handleNext])
 
-  const handleNext = useCallback(() => {
-    if (currentIndex + 1 < totalQuestions) {
-      setCurrentIndex((i) => i + 1)
-      setSelectedOptionId(null)
-      setFeedback(null)
-      questionStartTime.current = Date.now()
-    } else {
-      setPhase('summary')
-    }
-  }, [currentIndex, totalQuestions])
-
-  const handleStartReading = useCallback(() => {
-    setPhase('article')
-  }, [])
-
-  // Auto-submit when an option is selected (tap-to-answer)
   useEffect(() => {
     if (selectedOptionId && !feedback && !isSubmitting) {
       handleSubmit()
     }
   }, [selectedOptionId, feedback, isSubmitting, handleSubmit])
 
-  // ── Render: Loading ──────────────────────────────────────────────────────
   if (phase === 'loading') {
     return (
       <div className="flex items-center justify-center py-20">
@@ -185,90 +184,80 @@ export const PrequestionGate = ({
     )
   }
 
-  // ── Render: Article (gate passed) ────────────────────────────────────────
   if (phase === 'article') {
     return <>{children}</>
   }
 
-  // ── Render: Summary ──────────────────────────────────────────────────────
   if (phase === 'summary') {
     const missedCount = totalQuestions - correctCount
 
     return (
-      <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40">
-        <div
-          className={cn(
-            'mx-4 w-full max-w-lg rounded-lg bg-card p-6 shadow-modal',
-            'sm:mx-auto',
-          )}
+      <Modal
+        open
+        onOpenChange={(open) => {
+          if (!open) handleStartReading()
+        }}
+      >
+        <ModalContent
+          size="lg"
           role="dialog"
           aria-labelledby="prequestion-summary-heading"
-          aria-modal="true"
         >
-          <h2
-            id="prequestion-summary-heading"
-            className="text-lg font-bold text-foreground"
-          >
-            Quick check complete
-          </h2>
+          <ModalHeader closeAriaLabel="Start reading">
+            <ModalTitle id="prequestion-summary-heading" className="text-lg">
+              Quick check complete
+            </ModalTitle>
+            <ModalDescription>
+              {correctCount}/{totalQuestions} correct
+            </ModalDescription>
+          </ModalHeader>
 
-          {/* Score */}
-          <div className="mt-4 flex items-baseline gap-1.5">
-            <span className="font-mono text-2xl font-bold text-foreground">
-              {correctCount}/{totalQuestions}
-            </span>
-            <span className="text-sm text-text-secondary">correct</span>
-          </div>
+          <ModalBody className="px-6 py-5">
+            <div className="flex items-baseline gap-1.5">
+              <span className="font-mono text-2xl font-bold text-foreground">
+                {correctCount}/{totalQuestions}
+              </span>
+              <span className="text-sm text-text-secondary">correct</span>
+            </div>
 
-          {/* Guidance message */}
-          <p className="mt-3 text-sm leading-relaxed text-text-secondary">
-            {missedCount > 0
-              ? `Keep an eye out for the ${missedCount === 1 ? 'concept' : `${missedCount} concepts`} you missed as you read.`
-              : 'Great recall — you already have a solid foundation on this topic.'}
-          </p>
+            <p className="mt-3 text-sm leading-relaxed text-text-secondary">
+              {missedCount > 0
+                ? `Keep an eye out for the ${missedCount === 1 ? 'concept' : `${missedCount} concepts`} you missed as you read.`
+                : 'Great recall — you already have a solid foundation on this topic.'}
+            </p>
 
-          {/* Missed question summaries */}
-          {missedCount > 0 && (
-            <ul className="mt-4 space-y-2">
-              {answers
-                .filter((a) => !a.result.isCorrect)
-                .map((a) => {
-                  const q = payload?.questions.find(
-                    (pq) => pq.questionId === a.questionId,
-                  )
-                  return (
-                    <li
-                      key={a.questionId}
-                      className="rounded-md border border-warning/30 bg-warning-50 px-3 py-2 text-xs leading-relaxed text-text-secondary"
-                    >
-                      {a.result.rationale ||
-                        (q ? q.text.slice(0, 100) : 'Missed concept')}
-                    </li>
-                  )
-                })}
-            </ul>
-          )}
-
-          {/* CTA */}
-          <button
-            type="button"
-            onClick={handleStartReading}
-            className={cn(
-              'mt-6 w-full rounded-sm px-6 py-2.5',
-              'bg-primary text-sm font-semibold text-white',
-              'transition-colors duration-150 ease-out',
-              'hover:bg-primary-700',
-              'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/40 focus-visible:ring-offset-2',
+            {missedCount > 0 && (
+              <ul className="mt-4 space-y-2">
+                {answers
+                  .filter((a) => !a.result.isCorrect)
+                  .map((a) => {
+                    const q = payload?.questions.find(
+                      (pq) => pq.questionId === a.questionId,
+                    )
+                    return (
+                      <li
+                        key={a.questionId}
+                        className="rounded-md border border-warning/30 bg-warning-50 px-3 py-2 text-xs leading-relaxed text-text-secondary"
+                      >
+                        {a.result.rationale ||
+                          (q ? q.text.slice(0, 100) : 'Missed concept')}
+                      </li>
+                    )
+                  })}
+              </ul>
             )}
-          >
-            Start Reading
-          </button>
-        </div>
-      </div>
+          </ModalBody>
+
+          <ModalFooter>
+            <Button type="button" variant="primary" onClick={handleStartReading} className="w-full sm:w-auto">
+              Start Reading
+            </Button>
+          </ModalFooter>
+        </ModalContent>
+      </Modal>
     )
   }
 
-  // ── Render: Question ─────────────────────────────────────────────────────
   if (!currentQuestion) {
     return <>{children}</>
   }
@@ -285,38 +274,32 @@ export const PrequestionGate = ({
   }
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40">
-      <div
-        className={cn(
-          // Mobile: full-screen card. Desktop: centered constrained card.
-          'flex flex-col',
-          'mx-0 h-full w-full bg-card shadow-modal sm:mx-auto sm:h-auto sm:max-h-[90vh] sm:max-w-lg sm:rounded-lg',
-        )}
+    <Modal
+      open
+      onOpenChange={(open) => {
+        if (!open) handleStartReading()
+      }}
+    >
+      <ModalContent
+        size="lg"
         role="dialog"
         aria-labelledby="prequestion-heading"
-        aria-modal="true"
+        maxHeight="calc(100dvh - 24px)"
       >
-        {/* Header */}
-        <div className="shrink-0 border-b border-border px-5 py-4">
-          <p className="text-xs font-medium text-text-secondary">
-            Question {currentIndex + 1} of {totalQuestions}
-          </p>
-          <h2
-            id="prequestion-heading"
-            className="mt-1 text-sm font-semibold text-foreground"
-          >
+        <ModalHeader closeAriaLabel="Skip to article">
+          <ModalTitle id="prequestion-heading">
             Quick check — what do you already know about {topicName}?
-          </h2>
-        </div>
+          </ModalTitle>
+          <ModalDescription>
+            Question {currentIndex + 1} of {totalQuestions}
+          </ModalDescription>
+        </ModalHeader>
 
-        {/* Body — scrollable on mobile */}
-        <div className="flex-1 overflow-y-auto px-5 py-5">
-          {/* Question stem */}
+        <ModalBody className="px-5 py-5">
           <p className="text-sm leading-relaxed text-foreground">
             {currentQuestion.text}
           </p>
 
-          {/* Options */}
           <div
             role="radiogroup"
             aria-label={`Options for question ${currentIndex + 1}`}
@@ -330,7 +313,7 @@ export const PrequestionGate = ({
                 <label
                   key={option.id}
                   className={cn(
-                    'flex items-center gap-3 w-full rounded-md border px-4 py-3',
+                    'flex w-full items-center gap-3 rounded-md border px-4 py-3',
                     'transition-all duration-150 ease-out',
                     OPTION_CLASSES[state],
                     isDisabled && state === 'default' && 'pointer-events-none opacity-60',
@@ -346,10 +329,9 @@ export const PrequestionGate = ({
                     className="sr-only"
                     aria-label={`Option ${option.letter}: ${option.text}`}
                   />
-                  {/* Letter badge */}
                   <span
                     className={cn(
-                      'flex-shrink-0 w-6 h-6 rounded-sm flex items-center justify-center',
+                      'flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-sm',
                       'text-xs font-semibold transition-colors duration-150',
                       LETTER_CLASSES[state],
                     )}
@@ -357,8 +339,7 @@ export const PrequestionGate = ({
                   >
                     {option.letter}
                   </span>
-                  {/* Option text */}
-                  <span className="text-sm leading-relaxed flex-1">
+                  <span className="flex-1 text-sm leading-relaxed">
                     {option.text}
                   </span>
                 </label>
@@ -366,7 +347,6 @@ export const PrequestionGate = ({
             })}
           </div>
 
-          {/* Feedback flash */}
           {feedback && (
             <div
               className={cn(
@@ -394,35 +374,24 @@ export const PrequestionGate = ({
               )}
             </div>
           )}
-        </div>
+        </ModalBody>
 
-        {/* Footer */}
-        <div className="shrink-0 border-t border-border px-5 py-4 flex items-center justify-between">
+        <ModalFooter className="items-center justify-between sm:justify-between">
           <button
             type="button"
             onClick={handleStartReading}
-            className="text-xs text-text-secondary underline decoration-text-secondary/40 underline-offset-2 hover:text-foreground transition-colors duration-150"
+            className="text-xs text-text-secondary underline decoration-text-secondary/40 underline-offset-2 transition-colors duration-150 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/30"
           >
             Skip to article
           </button>
 
           {feedback && (
-            <button
-              type="button"
-              onClick={handleNext}
-              className={cn(
-                'rounded-sm px-5 py-2',
-                'bg-primary text-sm font-semibold text-white',
-                'transition-colors duration-150 ease-out',
-                'hover:bg-primary-700',
-                'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/40 focus-visible:ring-offset-2',
-              )}
-            >
+            <Button type="button" variant="primary" onClick={handleNext}>
               {currentIndex + 1 < totalQuestions ? 'Next' : 'See Results'}
-            </button>
+            </Button>
           )}
-        </div>
-      </div>
-    </div>
+        </ModalFooter>
+      </ModalContent>
+    </Modal>
   )
 }

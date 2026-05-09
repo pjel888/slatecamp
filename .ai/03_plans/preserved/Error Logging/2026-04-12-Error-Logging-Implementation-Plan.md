@@ -1,8 +1,8 @@
 # Error Logging Implementation Plan
 
-**Date:** 2026-04-12  
-**Mode:** `$ralplan` consensus planning, deliberate mode  
-**Primary grounding:** `.ai/plans/2026-04-11-Error-Logging-Audit.md` + live repository state  
+**Date:** 2026-04-12
+**Mode:** `$ralplan` consensus planning, deliberate mode
+**Primary grounding:** `.ai/plans/2026-04-11-Error-Logging-Audit.md` + live repository state
 **Spec gate:** `.ai/docs/01-product/011-Error-Logging-Feature-Specification.md` is currently empty. That file must be backfilled from this plan before execution begins.
 
 ## Requirements Summary
@@ -153,20 +153,20 @@ Option B remains the strongest alternative and should be re-evaluated after phas
 
 ### Scenario 1: The logger becomes another sidecar nobody uses
 
-**Failure mode:** new code uses the shared logger, but legacy actions and routes keep throwing/logging ad hoc.  
-**Why it happens:** no migration wave, no grep-driven checklist, no enforcement pass.  
+**Failure mode:** new code uses the shared logger, but legacy actions and routes keep throwing/logging ad hoc.
+**Why it happens:** no migration wave, no grep-driven checklist, no enforcement pass.
 **Mitigation:** phase the rollout by named surfaces, add targeted grep verification for `throw new Error` and `console.error` in migrated directories, and add a follow-up enforcement pass only after the core proves stable.
 
 ### Scenario 2: Middleware logging adds auth latency or breaks redirects
 
-**Failure mode:** request-context logging inside middleware changes cookies/response handling or slows every request.  
-**Why it happens:** middleware is edge-sensitive and the logger incorrectly assumes Node/service-role capabilities.  
+**Failure mode:** request-context logging inside middleware changes cookies/response handling or slows every request.
+**Why it happens:** middleware is edge-sensitive and the logger incorrectly assumes Node/service-role capabilities.
 **Mitigation:** keep middleware logging edge-safe, non-throwing, and console-only in phase 1; do not do synchronous durable writes from middleware.
 
 ### Scenario 3: Sensitive data leaks into durable logs
 
-**Failure mode:** tokens, cookies, raw webhook payloads, or PII are written to `analytics_events` or future vendor sinks.  
-**Why it happens:** event metadata is passed through directly from current errors or request bodies.  
+**Failure mode:** tokens, cookies, raw webhook payloads, or PII are written to `analytics_events` or future vendor sinks.
+**Why it happens:** event metadata is passed through directly from current errors or request bodies.
 **Mitigation:** define redaction helpers before wiring any sink, add unit tests for forbidden fields, and require explicit allowlists for persisted metadata.
 
 ## Expanded Test Plan

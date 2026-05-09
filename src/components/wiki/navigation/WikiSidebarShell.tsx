@@ -24,7 +24,8 @@ export function WikiSidebarShell({ children }: { children: React.ReactNode }) {
   React.useEffect(() => {
     try {
       const savedWidth = localStorage.getItem(WIDTH_KEY)
-      if (savedWidth) setWidth(Math.min(MAX_W, Math.max(MIN_W, parseInt(savedWidth))))
+      if (savedWidth)
+        setWidth(Math.min(MAX_W, Math.max(MIN_W, parseInt(savedWidth))))
     } catch {}
   }, [])
 
@@ -46,7 +47,9 @@ export function WikiSidebarShell({ children }: { children: React.ReactNode }) {
       dragging.current = false
       const delta = ev.clientX - startX.current
       const final = Math.min(MAX_W, Math.max(MIN_W, startW.current + delta))
-      try { localStorage.setItem(WIDTH_KEY, String(final)) } catch {}
+      try {
+        localStorage.setItem(WIDTH_KEY, String(final))
+      } catch {}
       window.removeEventListener('mousemove', onMove)
       window.removeEventListener('mouseup', onUp)
     }
@@ -56,33 +59,36 @@ export function WikiSidebarShell({ children }: { children: React.ReactNode }) {
   }
 
   return (
-    <div className="hidden md:flex print:!hidden h-full shrink-0">
+    <div className='hidden md:flex print:!hidden h-full shrink-0'>
       {/* Sidebar content */}
       <div
-        className="h-full overflow-hidden transition-[width] duration-200 ease-in-out"
+        className='h-full overflow-hidden transition-[width] duration-200 ease-in-out'
         style={{ width: isCollapsed ? 0 : width }}
+        aria-hidden={isCollapsed}
+        inert={isCollapsed || undefined}
       >
-        <div className="h-full overflow-y-auto">
-          {children}
-        </div>
+        <div className='h-full overflow-y-auto'>{children}</div>
       </div>
 
-      {/* Drag handle */}
       <div
         onMouseDown={onMouseDown}
-        title="Drag to resize"
+        title='Drag to resize'
         className={[
-          'relative shrink-0 h-full w-3 group',
-          isCollapsed ? 'cursor-default' : 'cursor-col-resize',
+          'relative shrink-0 h-full group overflow-hidden transition-[width] duration-200 ease-in-out',
+          isCollapsed ? 'w-0 cursor-default' : 'w-3 cursor-col-resize',
         ].join(' ')}
+        aria-hidden={isCollapsed}
       >
         {/* Visual line */}
-        <div className="absolute inset-y-0 left-1/2 -translate-x-1/2 w-px bg-border group-hover:w-[3px] group-hover:bg-camp-cobalt transition-all duration-150" />
+        <div className='absolute inset-y-0 left-1/2 -translate-x-1/2 w-px bg-border group-hover:w-[3px] group-hover:bg-camp-cobalt transition-all duration-150' />
         {/* Grip dots */}
         {!isCollapsed && (
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 grid grid-cols-2 gap-[3px] pointer-events-none">
+          <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 grid grid-cols-2 gap-[3px] pointer-events-none'>
             {Array.from({ length: 6 }).map((_, i) => (
-              <div key={i} className="w-[3px] h-[3px] rounded-full bg-border group-hover:bg-camp-cobalt transition-colors duration-150" />
+              <div
+                key={i}
+                className='w-[3px] h-[3px] rounded-full bg-border group-hover:bg-camp-cobalt transition-colors duration-150'
+              />
             ))}
           </div>
         )}
@@ -90,13 +96,16 @@ export function WikiSidebarShell({ children }: { children: React.ReactNode }) {
 
       {/* Collapse toggle */}
       <button
-        type="button"
-        onClick={() => setIsCollapsed(p => !p)}
+        type='button'
+        onClick={() => setIsCollapsed((p) => !p)}
         aria-expanded={!isCollapsed}
         aria-label={isCollapsed ? 'Expand sidebar' : 'Collapse sidebar'}
-        className="shrink-0 border-r border-border bg-surface-muted/50 px-1.5 text-text-secondary hover:bg-surface-muted hover:text-text-primary transition-colors z-10 cursor-pointer"
+        className={[
+          'shrink-0 border-r border-border bg-surface-muted/50 text-text-secondary hover:bg-surface-muted hover:text-text-primary transition-colors z-10 cursor-pointer',
+          isCollapsed ? 'px-2 w-8 flex items-center justify-center' : 'px-1.5',
+        ].join(' ')}
       >
-        <SCIcon icon={SidebarSimple} size="sm" />
+        <SCIcon icon={SidebarSimple} size='sm' />
       </button>
     </div>
   )

@@ -9,7 +9,7 @@ import {
 } from '@/storybook/fixtures/wiki'
 
 const SidebarFrame = (props: ComponentProps<typeof WikiRightSidebar>) => (
-  <div className="w-full max-w-xs rounded-md border border-border bg-white p-5">
+  <div className='w-full max-w-xs rounded-md border border-border bg-white p-5'>
     <WikiRightSidebar {...props} />
   </div>
 )

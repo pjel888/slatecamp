@@ -1,11 +1,20 @@
 'use client'
 
 import { useState, useRef, useEffect, useCallback } from 'react'
-import { X, PaperPlaneRight, ChatCircleDots } from '@phosphor-icons/react'
+import { PaperPlaneRight, ChatCircleDots } from '@phosphor-icons/react'
 import { cn } from '@/lib/utils'
 import { Button } from '@/components/ui/button'
 import { SourceBadgeRow, extractSources, stripSources } from '@/components/shared/SourceBadge'
 import { useQuizStore } from '@/stores/useQuizStore'
+import {
+  Modal,
+  ModalBody,
+  ModalContent,
+  ModalDescription,
+  ModalFooter,
+  ModalHeader,
+  ModalTitle,
+} from '@/components/ui/modal'
 
 // ---------------------------------------------------------------------------
 // Types
@@ -57,6 +66,7 @@ export const SocraticExplorer = ({
   const [isComplete, setIsComplete] = useState(false)
   const scrollRef = useRef<HTMLDivElement>(null)
   const inputRef = useRef<HTMLInputElement>(null)
+  const didAutoStartRef = useRef(false)
 
   const openWikiPanel = useQuizStore((s) => s.openWikiPanel)
 
@@ -74,12 +84,6 @@ export const SocraticExplorer = ({
   // Focus input on mount
   useEffect(() => {
     inputRef.current?.focus()
-  }, [])
-
-  // Auto-start: send first request on mount
-  useEffect(() => {
-    sendMessage(null)
-
   }, [])
 
   const sendMessage = useCallback(
@@ -171,6 +175,13 @@ export const SocraticExplorer = ({
     [loading, isComplete, messages, questionText, selectedAnswer, correctAnswer, topicName, topicId],
   )
 
+  // Auto-start: send first request on mount
+  useEffect(() => {
+    if (didAutoStartRef.current) return
+    didAutoStartRef.current = true
+    sendMessage(null)
+  }, [sendMessage])
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     const trimmed = inputValue.trim()
@@ -182,69 +193,40 @@ export const SocraticExplorer = ({
     sendMessage(prompt)
   }
 
-  // Close on Escape
-  useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') onClose()
-    }
-    document.addEventListener('keydown', handleKeyDown)
-    return () => document.removeEventListener('keydown', handleKeyDown)
-  }, [onClose])
-
   return (
-    <>
-      {/* Backdrop */}
-      <div
-        className="fixed inset-0 bg-black/20 z-40 animate-in fade-in duration-150"
-        onClick={onClose}
-        aria-hidden="true"
-      />
-
-      {/* Slide-over panel */}
-      <div
+    <Modal
+      open
+      onOpenChange={(open) => {
+        if (!open) onClose()
+      }}
+    >
+      <ModalContent
+        width={480}
+        height={620}
+        maxHeight="calc(100dvh - 24px)"
         role="dialog"
         aria-label="Socratic exploration"
-        aria-modal="true"
-        className={cn(
-          'fixed right-0 top-0 bottom-0 z-50 w-full max-w-md',
-          'bg-card shadow-modal',
-          'flex flex-col',
-          'animate-in slide-in-from-right duration-200 ease-out',
-        )}
       >
-        {/* Header */}
-        <div className="flex items-center justify-between px-4 py-3 border-b border-border shrink-0">
-          <div className="flex items-center gap-2">
+        <ModalHeader closeAriaLabel="Close exploration panel">
+          <div className="flex min-w-0 items-center gap-2">
             <ChatCircleDots size={18} weight="fill" className="text-primary" aria-hidden="true" />
-            <div>
-              <h2 className="text-sm font-semibold text-foreground">Explore This</h2>
+            <div className="min-w-0">
+              <ModalTitle>Explore This</ModalTitle>
               {turnNumber > 0 && !isComplete && (
-                <p className="text-[11px] text-muted-foreground">
+                <ModalDescription>
                   Turn {turnNumber} of {MAX_TURNS}
-                </p>
+                </ModalDescription>
               )}
               {isComplete && (
-                <p className="text-[11px] text-success font-medium">Exploration complete</p>
+                <ModalDescription className="font-medium text-success">
+                  Exploration complete
+                </ModalDescription>
               )}
             </div>
           </div>
-          <button
-            type="button"
-            onClick={onClose}
-            className={cn(
-              'flex items-center justify-center w-8 h-8 rounded-sm',
-              'text-muted-foreground hover:text-foreground hover:bg-surface-light',
-              'transition-colors duration-150 ease-out',
-              'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/30',
-            )}
-            aria-label="Close exploration panel"
-          >
-            <X size={16} weight="bold" />
-          </button>
-        </div>
+        </ModalHeader>
 
-        {/* Messages area */}
-        <div ref={scrollRef} className="flex-1 overflow-y-auto px-4 py-3 space-y-3">
+        <ModalBody ref={scrollRef} className="space-y-3 px-4 py-3">
           {messages.map((msg, i) => (
             <div
               key={i}
@@ -272,20 +254,18 @@ export const SocraticExplorer = ({
             </div>
           ))}
 
-          {/* Loading indicator */}
           {loading && (
             <div className="flex justify-start">
-              <div className="bg-surface-light rounded-md px-3 py-2 flex items-center gap-1.5">
+              <div className="flex items-center gap-1.5 rounded-md bg-surface-light px-3 py-2">
                 <div className="flex gap-1">
-                  <span className="w-1.5 h-1.5 rounded-full bg-muted-foreground animate-pulse" />
-                  <span className="w-1.5 h-1.5 rounded-full bg-muted-foreground animate-pulse [animation-delay:150ms]" />
-                  <span className="w-1.5 h-1.5 rounded-full bg-muted-foreground animate-pulse [animation-delay:300ms]" />
+                  <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-muted-foreground" />
+                  <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-muted-foreground [animation-delay:150ms]" />
+                  <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-muted-foreground [animation-delay:300ms]" />
                 </div>
               </div>
             </div>
           )}
 
-          {/* Suggested prompts — shown when no user messages yet and not loading */}
           {messages.length === 1 && !loading && !isComplete && (
             <div className="space-y-1.5 pt-1">
               <p className="text-[11px] text-muted-foreground">Try asking:</p>
@@ -295,10 +275,8 @@ export const SocraticExplorer = ({
                   type="button"
                   onClick={() => handleSuggestedPrompt(prompt)}
                   className={cn(
-                    'block w-full text-left text-xs px-3 py-2 rounded-md',
-                    'border border-border text-text-secondary',
-                    'hover:border-primary/40 hover:text-foreground hover:bg-primary-50/50',
-                    'transition-all duration-150 ease-out',
+                    'block w-full rounded-md border border-border px-3 py-2 text-left text-xs text-text-secondary',
+                    'transition-all duration-150 ease-out hover:border-primary/40 hover:bg-primary-50/50 hover:text-foreground',
                     'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/30',
                   )}
                 >
@@ -308,7 +286,6 @@ export const SocraticExplorer = ({
             </div>
           )}
 
-          {/* Completion message */}
           {isComplete && (
             <div className="pt-2">
               <Button variant="primary" size="sm" onClick={onClose} fullWidth>
@@ -316,42 +293,38 @@ export const SocraticExplorer = ({
               </Button>
             </div>
           )}
-        </div>
+        </ModalBody>
 
-        {/* Input area */}
         {!isComplete && (
-          <form
-            onSubmit={handleSubmit}
-            className="shrink-0 border-t border-border px-4 py-3 flex gap-2"
-          >
-            <input
-              ref={inputRef}
-              type="text"
-              value={inputValue}
-              onChange={(e) => setInputValue(e.target.value)}
-              placeholder="Type your response..."
-              disabled={loading}
-              className={cn(
-                'flex-1 h-9 px-3 rounded-sm border border-border bg-card',
-                'text-sm text-foreground placeholder:text-muted-foreground',
-                'transition-colors duration-150 ease-out',
-                'focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20',
-                'disabled:opacity-50',
-              )}
-              aria-label="Your response"
-            />
-            <Button
-              type="submit"
-              variant="primary"
-              size="icon"
-              disabled={loading || !inputValue.trim()}
-              aria-label="Send message"
-            >
-              <PaperPlaneRight size={16} weight="fill" />
-            </Button>
-          </form>
+          <ModalFooter className="block px-4 py-3">
+            <form onSubmit={handleSubmit} className="flex gap-2">
+              <input
+                ref={inputRef}
+                type="text"
+                value={inputValue}
+                onChange={(e) => setInputValue(e.target.value)}
+                placeholder="Type your response..."
+                disabled={loading}
+                className={cn(
+                  'h-9 flex-1 rounded-sm border border-border bg-card px-3 text-sm text-foreground placeholder:text-muted-foreground',
+                  'transition-colors duration-150 ease-out focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20',
+                  'disabled:opacity-50',
+                )}
+                aria-label="Your response"
+              />
+              <Button
+                type="submit"
+                variant="primary"
+                size="icon"
+                disabled={loading || !inputValue.trim()}
+                aria-label="Send message"
+              >
+                <PaperPlaneRight size={16} weight="fill" />
+              </Button>
+            </form>
+          </ModalFooter>
         )}
-      </div>
-    </>
+      </ModalContent>
+    </Modal>
   )
 }

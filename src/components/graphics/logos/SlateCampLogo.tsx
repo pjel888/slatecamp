@@ -33,7 +33,7 @@ const logoTextVariants = cva(
         default: '',
         monochrome: '',
         inverted: 'text-white',
-        landing: '',
+        landing: 'text-slate-950',
       },
     },
     defaultVariants: {

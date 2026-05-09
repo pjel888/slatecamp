@@ -1,6 +1,6 @@
 # Source Verification Packet Draft Queue — Phase 0.5B.1
 
-**Generated:** 2026-05-05T15:11:21Z  
+**Generated:** 2026-05-05T15:11:21Z
 **Status:** Draft packet queue only. No packet is approved and no source is promoted.
 
 Packet draft candidates listed: 28

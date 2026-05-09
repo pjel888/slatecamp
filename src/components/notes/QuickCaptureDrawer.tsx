@@ -19,7 +19,14 @@ import { ROUTES } from '@/lib/routes'
 import { useNoteContext } from '@/lib/context/note-context'
 import { ContextBadge } from '@/components/notes/ContextBadge'
 import { TemplatePicker } from '@/components/notes/TemplatePicker'
-import { FloatingPanel } from '@/components/shared/floating-panel'
+import {
+  Modal,
+  ModalBody,
+  ModalContent,
+  ModalFooter,
+  ModalHeader,
+  ModalTitle,
+} from '@/components/ui/modal'
 import dynamic from 'next/dynamic'
 
 const NotesEditor = dynamic(
@@ -335,72 +342,91 @@ export const QuickCaptureDrawer = ({ userId }: QuickCaptureDrawerProps) => {
   )
 
   return (
-    <FloatingPanel
+    <Modal
       open={drawerOpen}
-      onClose={closeDrawer}
-      title={noteId ? 'Edit Note' : 'New Note'}
-      headerActions={saveIndicator}
-      draggable
-      dragStorageKey="quick-capture-modal"
-      backdrop="none"
-      width={MODAL_WIDTH}
-      height={MODAL_HEIGHT}
-      sidebar={notesSidebar}
-      sidebarWidth={LIST_WIDTH}
-      footer={notesFooter}
+      onOpenChange={(open) => {
+        if (!open) closeDrawer()
+      }}
     >
-      {/* Context badge */}
-      {hasAnchor && (
-        <div className="shrink-0 border-b border-border/60 bg-muted/40 px-3 py-2">
-          <p className="mb-1.5 text-[11px] font-medium uppercase tracking-wider text-muted-foreground">
-            Anchored to
-          </p>
-          <ContextBadge anchor={anchor} />
-        </div>
-      )}
-
-      {/* Template picker */}
-      <div className="shrink-0 border-b border-border/60 px-3 py-2.5">
-        <p className="mb-1.5 text-[11px] font-medium uppercase tracking-wider text-muted-foreground">
-          Note type
-        </p>
-        <TemplatePicker
-          value={noteType}
-          onChange={handleTypeChange}
-          disableGap={!hasQuestionContext}
-        />
-      </div>
-
-      {/* Title */}
-      <div className="shrink-0 border-b border-border/60 px-3 py-2">
-        <input
-          ref={titleInputRef}
-          type="text"
-          value={title}
-          onChange={(e) => handleTitleChange(e.target.value)}
-          placeholder="Note title..."
-          className="w-full bg-transparent text-sm font-semibold text-foreground placeholder:text-muted-foreground focus:outline-none"
-          aria-label="Note title"
-        />
-      </div>
-
-      {/* Rich editor */}
-      <div
-        className="min-h-0 flex-1 overflow-y-auto"
-        style={{ height: MODAL_HEIGHT - 220 }}
+      <ModalContent
+        width={MODAL_WIDTH + LIST_WIDTH}
+        height={MODAL_HEIGHT}
+        minHeight={MODAL_HEIGHT}
+        backdrop="none"
+        role="dialog"
       >
-        {drawerOpen && (
-          <NotesEditor
-            content={content}
-            onChange={handleContentChange}
-            userId={userId}
-            compact
-            placeholder="Start writing... (select text to format)"
-            className="h-full"
-          />
-        )}
-      </div>
-    </FloatingPanel>
+        <ModalHeader>
+          <div className="flex min-w-0 items-center justify-between gap-3">
+            <ModalTitle>{noteId ? 'Edit Note' : 'New Note'}</ModalTitle>
+            {saveIndicator}
+          </div>
+        </ModalHeader>
+
+        <ModalBody className="flex overflow-hidden p-0">
+          <aside
+            className="hidden shrink-0 border-r border-border/60 bg-muted/20 sm:block"
+            style={{ width: LIST_WIDTH }}
+          >
+            {notesSidebar}
+          </aside>
+
+          <div className="flex min-w-0 flex-1 flex-col overflow-hidden">
+            {/* Context badge */}
+            {hasAnchor && (
+              <div className="shrink-0 border-b border-border/60 bg-muted/40 px-3 py-2">
+                <p className="mb-1.5 text-[11px] font-medium uppercase tracking-wider text-muted-foreground">
+                  Anchored to
+                </p>
+                <ContextBadge anchor={anchor} />
+              </div>
+            )}
+
+            {/* Template picker */}
+            <div className="shrink-0 border-b border-border/60 px-3 py-2.5">
+              <p className="mb-1.5 text-[11px] font-medium uppercase tracking-wider text-muted-foreground">
+                Note type
+              </p>
+              <TemplatePicker
+                value={noteType}
+                onChange={handleTypeChange}
+                disableGap={!hasQuestionContext}
+              />
+            </div>
+
+            {/* Title */}
+            <div className="shrink-0 border-b border-border/60 px-3 py-2">
+              <input
+                ref={titleInputRef}
+                type="text"
+                value={title}
+                onChange={(e) => handleTitleChange(e.target.value)}
+                placeholder="Note title..."
+                className="w-full bg-transparent text-sm font-semibold text-foreground placeholder:text-muted-foreground focus:outline-none"
+                aria-label="Note title"
+              />
+            </div>
+
+            {/* Rich editor */}
+            <div className="min-h-0 flex-1 overflow-y-auto">
+              {drawerOpen && (
+                <NotesEditor
+                  content={content}
+                  onChange={handleContentChange}
+                  userId={userId}
+                  compact
+                  placeholder="Start writing... (select text to format)"
+                  className="h-full"
+                />
+              )}
+            </div>
+          </div>
+        </ModalBody>
+
+        <ModalFooter className="block">
+          {notesFooter}
+        </ModalFooter>
+      </ModalContent>
+    </Modal>
   )
 }
 

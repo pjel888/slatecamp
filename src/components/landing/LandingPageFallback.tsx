@@ -1,52 +1,37 @@
 import { HeroSection } from '@/components/marketing/HeroSection'
 import { MarketingNav } from '@/components/marketing/MarketingNav'
 import { MarketingFooter } from '@/components/marketing/MarketingFooter'
-import { LogoMarquee } from '@/components/marketing/LogoMarquee'
-import { TestimonialShowcase } from '@/components/marketing/TestimonialShowcase'
 import { BentoFeatureGrid } from '@/components/marketing/BentoFeatureGrid'
 import { HowItWorksSection } from '@/components/marketing/HowItWorksSection'
 import { ComparisonSection } from '@/components/marketing/ComparisonSection'
 import { FinalCtaSection } from '@/components/marketing/FinalCtaSection'
 import { SocialProofBar } from '@/components/marketing/SocialProofBar'
-import { Starburst } from '@/components/marketing/LandingPrimitives'
+import { QuestionsSection } from '@/components/marketing/QuestionsSection'
+import { ThreeDLabSection } from '@/components/marketing/ThreeDLabSection'
+import { AnalyticsSection } from '@/components/marketing/AnalyticsSection'
+import { WikiSection } from '@/components/marketing/WikiSection'
 import { ROUTES } from '@/lib/constants'
 
 export function LandingPageFallback() {
   return (
-    <div id='top' className='min-h-screen bg-muted'>
-      <MarketingNav activeRoute='/' logoScrollsToTop />
+    <div id='top' className='min-h-screen bg-page-bg'>
+      <MarketingNav activeRoute='/' logoScrollsToTop isLoggedIn={false} />
       <main>
         <HeroSection
           ctaHref={ROUTES.auth.register}
-          ctaLabel='Join the Camp — Free'
+          ctaLabel='Open the atlas'
         />
         <SocialProofBar />
-        <LogoMarquee />
         <BentoFeatureGrid />
+        <QuestionsSection />
+        <ThreeDLabSection />
+        <AnalyticsSection />
+        <WikiSection />
         <HowItWorksSection />
         <ComparisonSection />
-        <section
-          aria-labelledby='testimonials-heading'
-          className='border-t border-border-design px-6 py-24'
-        >
-          <div className='mx-auto max-w-[1200px]'>
-            <div className='flex items-center gap-3'>
-              <span className='text-camp-amber'>
-                <Starburst className='h-4 w-4' />
-              </span>
-              <h2
-                id='testimonials-heading'
-                className='font-mono text-[11px] tracking-[0.2em] uppercase text-text-2'
-              >
-                What Students Say
-              </h2>
-            </div>
-            <TestimonialShowcase />
-          </div>
-        </section>
         <FinalCtaSection
           ctaHref={ROUTES.auth.register}
-          ctaLabel='Join the Camp — Free'
+          ctaLabel='Open the atlas'
           isLoggedIn={false}
         />
       </main>

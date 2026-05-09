@@ -1,10 +1,17 @@
 # SlateCamp Landing Page Audit
 
-**Date:** 2026-05-05  
-**Branch:** `redesign/quiz-mode-hub`  
-**Audit file:** `.ai/02_audits/2026-05-05-landing-page-audit.md`  
-**Status:** Comprehensive reviewer packet, expanded for external review  
+**Date:** 2026-05-05
+**Branch:** `feat/modal-standardization-kimi26`
+**Audit file:** `.ai/02_audits/2026-05-05-landing-page-audit.md`
+**Status:** Historical audit plus supersession notice. For landing implementation, use the Atlas master plan first: `.ai/03_plans/2026-05-07-slatecamp-atlas-landing-master-plan.md`. Use this audit only for background, legal/claim checks, and prior research context.
 **Primary purpose:** Give reviewers enough product, brand, UX, conversion, and implementation context to critique the SlateCamp landing page intelligently without needing to rediscover the app from scratch.
+**2026-05-07 Atlas correction:** Philip clarified SlateCamp should be positioned more as a resource than a study tool. `Architecture knowledge atlas` is now the preferred category language because it fits SlateCAMP/Camp/Trail brand metaphors and avoids mechanism-first study-tool framing. New master plan: `.ai/03_plans/2026-05-07-slatecamp-atlas-landing-master-plan.md`. Research packet: `.ai/13_research/landing-atlas-resource-positioning-2026-05-07/atlas-positioning-and-technical-research.md`.
+**2026-05-07 addendum:** Expanded with target-market copy critique, supplementary-reviewer positioning, ethical fear-marketing guidance, Reddit sentiment, and broader architecture-resource/platform positioning.
+**2026-05-07 strategy packet:** `.ai/13_research/landing-brand-positioning-2026-05-07/strategy-packet.md`
+**2026-05-07 Reddit/platform packet:** `.ai/13_research/reddit-sentiment-landing-positioning-2026-05-07/sentiment-and-platform-positioning-report.md`
+**2026-05-07 brand-cue/exam-buyer packet:** `.ai/13_research/filipino-consumer-brand-positioning-2026-05-07/brand-cue-and-exam-buyer-psychology-report.md`
+**2026-05-07 final messaging gate:** `.ai/03_plans/2026-05-07-landing-page-final-messaging-gate.md`
+**2026-05-07 interactive/gated-free addendum:** Hero should consider an NBCP/PD 1096 setbacks/buildable-envelope 3D card; Wiki, quiz, and 3D previews should be interactive; most free resources may be dashboard-gated by design for onboarding/data/ads, with honest `free after signup` copy.
 
 ---
 
@@ -27,6 +34,148 @@ The next iteration should not restart the hero. It should rebuild the page body 
 5. Repeat until exam-day risk is visible and manageable.
 
 Everything on the page should support that loop.
+
+### 0.0A 2026-05-07 interactive proof and gated-free acquisition addendum
+
+Philip's latest direction updates the implementation brief before code:
+
+1. **Hero visual:** Consider replacing the generic hero/dashboard visual with an interactive Setback Explorer: a compact Three.js / React Three Fiber card showing lot setbacks and buildable envelope under the National Building Code of the Philippines / PD 1096 IRR. Controls should include zoning class/type, RROW or sample road width, lot dimensions, and building/use type only if source-backed.
+2. **Wiki as a main feature:** The Wiki / Code Atlas / Field Guide should be highlighted as one of the core landing-page features, ideally through a mini searchable/tabbed article preview with source trail and related quiz/3D links.
+3. **Quiz preview:** Include a mock question interaction with answer selection and slide-to-submit style delight, but keep a standard accessible submit path. The result should show explanation, source/resource link, and readiness impact.
+4. **3D Lab proof:** Setbacks are the strongest public 3D demo because visitors can immediately see code becoming space: `setback input → lot/buildable envelope changes`.
+5. **Gated-free strategy:** It is acceptable and intentional for most free resources to be dashboard-protected. The public landing page should preview value, then onboard users into a free account for data collection, ads/remarketing, analytics, and retention. Use honest copy such as `free after signup`, `create a free account`, or `preview`; do not imply an ungated public Wiki/3D Lab if the actual route is protected.
+6. **Exam-name copy:** In public landing-page copy, prefer `Licensure Examination for Architects` over `LEA`. Keep `LEA` for metadata/keywords, internal notes, or after first spelling out the full phrase.
+
+Legal/source caveat: any exact setback values shown in public must reuse verified source-backed PD 1096/NBCP logic and include educational-only disclaimers. Do not imply project-specific code compliance advice.
+
+
+### 0.1 2026-05-07 target-market copy addendum
+
+The next landing-page pass must speak less like a learning-science SaaS product and more like a calm, reliable LEA companion.
+
+Target candidates do not primarily care about SRS, SM-2, IRT, EMA, taxonomy heatmaps, active recall, or quizzing methodology. Those mechanisms can remain in product architecture, tooltips, deeper explainers, and reviewer notes, but they should not carry the conversion story.
+
+What the target user cares about is simpler and more emotional:
+
+- Am I ready?
+- Am I behind?
+- What did I miss?
+- Can I trust this answer?
+- What should I study tonight?
+- Will I discover my weak topics too late?
+- Can this help beside JPT, CDEP, or my review center without replacing them?
+
+The strongest user-facing translation is:
+
+> SlateCamp helps LEA candidates stop studying blind.
+
+Recommended positioning:
+
+> SlateCamp is the LEA readiness companion that turns practice, code review, and review-center lessons into a live map of what you know, what you missed, and exactly what to fix next.
+
+Review-center relationship:
+
+> Review centers teach. SlateCamp measures.
+
+This is important. SlateCamp should not publicly position itself as the primary review center replacement. In the Philippine LEA market, review centers own human instruction, structure, mentorship, batch accountability, and topnotcher credibility. SlateCamp should sit beside that system as the candidate’s always-on digital buddy: the place to test what stuck after lecture, repair mistakes with source-backed explanations, and decide the next topic.
+
+Internal metaphor:
+
+> SlateCamp is the candidate’s LEA Pokédex.
+
+Public copy should usually use safer language such as `LEA Field Guide`, `Code Atlas`, `study companion`, or `readiness map` unless trademark/legal clearance is obtained.
+
+Ethical fear-marketing rule:
+
+> The danger is not having weak spots. It is discovering them too late.
+
+Fear copy is acceptable only when it immediately gives the user control: a free diagnostic, a visible weak-topic map, a source-backed explanation, and a next session. Do not shame retakers, imply guaranteed passing, invent urgency, or attack review centers.
+
+Competitor context:
+
+Vizcode is the closest visible competitor in the code-visualization lane. Captured pages position Vizcode as a visual learning platform for Philippine architectural codes, with Code Library, visual diagrams, Isolation Mode, Comparative Mode, Game Mode, QUBI AI Chat, topnotcher testimonials, partner/org signals, and paid plans shown at PHP 799, PHP 999, and PHP 1499. SlateCamp should not attack Vizcode by name. The better move is to give away strategically useful reference/code/field-guide value for free, then win on interactive 3D understanding and personalized readiness guidance.
+
+The free SlateCamp layer should therefore aim to include free-after-signup Code Atlas / Field Guide access, sample source-backed questions, free diagnostic score, and selected 3D interactive examples. Paid SlateCamp should sell ongoing control: live readiness tracking, full weak-topic maps, guided Camp Trails, simulations, and personalized next actions.
+
+Detailed strategy packet:
+
+- `.ai/13_research/landing-brand-positioning-2026-05-07/strategy-packet.md`
+
+Everything on the page should support the revised loop:
+
+1. Name the real fear: studying without knowing if it is working.
+2. Give a calm first step: get a free Readiness Score.
+3. Show the loop: question → explanation → source/3D/Wiki → score update → next topic.
+4. Respect the review center: lectures teach; SlateCamp measures what stuck.
+5. Convert fear into a plan, not panic.
+
+### 0.2 2026-05-07 Reddit sentiment and platform-positioning addendum
+
+The Reddit research changes the landing-page brief in one important way: SlateCamp should not be too tightly coupled to the board exam as a whole-company identity.
+
+Licensure Examination for Architects readiness remains the highest-intent acquisition pathway. It is urgent, emotional, and clearly tied to the Readiness Score. But the broader public category should be:
+
+> **A source-backed architecture learning platform for school, boards, and practice.**
+
+Use `Philippine architecture learning resource center` as an SEO/about/scope phrase, not necessarily as the hero’s first prestige cue. The page should feel premium and global-caliber first, then prove that SlateCamp is built around Philippine codes, LEA readiness, architecture-school realities, and local practice needs.
+
+Reasons:
+
+1. **Legal safety:** SlateCamp must not sound like an official PRC/PRBoA source, a guaranteed-pass system, or a substitute for licensed professional judgment.
+2. **Market expansion:** Architecture students, apprentices, educators, reviewees, and practicing architects all need credible local architecture references and tools.
+3. **University partnership:** Schools are more likely to consider a resource/diagnostic/interactive-lab platform than a product framed only as a board-exam cram tool.
+4. **Durable brand:** LEA can be the wedge; architecture knowledge can be the platform.
+
+The landing page must clearly state the four product pillars:
+
+1. **Knowledge Resources** — source-backed articles, code explainers, visual guides, Wiki / Code Atlas / Field Guide pages.
+2. **Quizzes** — diagnostics, drills, simulations, mistake repair, and readiness tracking.
+3. **3D Lab** — interactive spatial/code understanding for rules that are hard to learn from text alone, with setbacks/buildable envelope as the highest-impact landing demo.
+4. **Free Tools** — paint, tile/flooring, drywall, CHB, lot/buildability, occupancy/egress, and future practical calculators.
+
+Reddit sentiment supports this direction:
+
+- Review-center users ask for organization, pacing, explanations, mock exams, schedule fit, and reassurance — not SRS/IRT jargon.
+- Vizcode appears useful to some users for code verification/compare, but others see it against a backdrop of free Google Drive, Discord, YouTube, and shared resources.
+- Broader architecture threads ask for books, code sources, setbacks, permit computations, professional-practice boundaries, workstation guidance, and practical architecture tools.
+
+Updated public thesis:
+
+> **SlateCamp is your architecture study companion: source-backed resources, quizzes, 3D labs, and practical tools for school, boards, and practice.**
+
+LEA pathway thesis:
+
+> **Taking the boards? SlateCamp turns review into a readiness map so you know what stuck and what to fix next.**
+
+University/educator thesis:
+
+> **Built to support architecture schools, review groups, and self-study — without replacing your instructor or review center.**
+
+Implementation implication: the first two scrolls must prove the umbrella offer before diving into feature depth. `Get Your Free Readiness Score` remains the primary LEA CTA, but the page should also expose `Explore Knowledge Resources` and `Open Free Tools` so non-LEA visitors immediately understand why SlateCamp matters.
+
+### 0.3 2026-05-07 Filipino brand-cue and exam-buyer psychology addendum
+
+Further research supports delaying final landing implementation until the brand-cue pass is incorporated. The working decision is:
+
+> **Use “Philippine” as a scope/trust/SEO qualifier, not as the first emotional brand cue.**
+
+Why:
+
+1. Filipino consumers can value local relevance while still using global polish, perceived quality, innovation, and brand reputation as trust signals.
+2. SlateCamp is closer to education SaaS / knowledge software than to a patriotic local physical product; a too-local first impression can feel less premium, less aspirational, or too government/directory-like.
+3. Board-exam buyers are reassurance-driven. They evaluate proof, reputation, testimonials, schedule fit, value, materials, and confidence. They do not need the hero to sound like a local catalog; they need it to feel reliable and high-quality.
+4. Philippine specificity still matters for legal scope, SEO, LEA relevance, local codes, university partnerships, and user trust. It should appear in the subheadline, trust line, metadata, source/disclaimer language, and deeper proof sections.
+
+Recommended line set before implementation:
+
+- Eyebrow: `Architecture learning platform`
+- Hero: `Your architecture study companion.`
+- Subheadline: `Source-backed resources, quizzes, 3D labs, and free tools for architecture school, LEA readiness, and professional practice.`
+- Local trust line: `Built around Philippine codes, board-review realities, and the way architecture students actually study.`
+- Review-center line: `Review centers teach. SlateCamp helps you check what stuck, repair mistakes, and plan the next study session.`
+- University line: `Built to support architecture classes and review groups, not replace instructors.`
+
+The final messaging gate is now finalized in `.ai/03_plans/2026-05-07-landing-page-final-messaging-gate.md`. Use that file as the authoritative copy brief before implementation. It locks the hero, metadata, disclaimers, university section, review-center companion section, and A/B-ready headline set around this decision.
 
 ---
 
@@ -502,17 +651,17 @@ Only refine:
 
 Option A, close to current:
 
-> Know you'll win.  
+> Know you'll win.
 > One readiness engine for the LEA: adaptive practice, source-backed explanations, and a score that shows where you stand.
 
 Option B, more problem-aware:
 
-> Stop studying blind.  
+> Stop studying blind.
 > SlateCamp turns every LEA practice session into a Readiness Score, so you know what to fix before exam day.
 
 Option C, preserve emotional headline and clarify mechanism:
 
-> Know you'll win.  
+> Know you'll win.
 > Practice with LEA-mapped questions, learn from cited explanations, and watch your readiness improve subject by subject.
 
 ---
@@ -787,9 +936,9 @@ Add visible elements like:
 
 Example content:
 
-> Readiness Score: 74%  
-> Risk: Getting there  
-> Pulling you down: Building Technology, Firewalls, Utilities  
+> Readiness Score: 74%
+> Risk: Getting there
+> Pulling you down: Building Technology, Firewalls, Utilities
 > Next session: 15 targeted questions on PD 1096 fire-safety provisions
 
 ### Reviewer-facing language
@@ -957,7 +1106,7 @@ CTA:
 
 Possible final CTA:
 
-> Know where you stand before exam day.  
+> Know where you stand before exam day.
 > Start with LEA-mapped questions, get your Readiness Score, and focus only on what still needs work.
 
 Primary button:
@@ -1213,7 +1362,7 @@ Recommended first body idea:
 
 Possible section:
 
-> Stop studying blind.  
+> Stop studying blind.
 > Most candidates know how many hours they studied. Few know which topics are still pulling them below passing readiness. SlateCamp turns each answer into a signal, then shows what to fix next.
 
 ### 14.2 Show the product loop visually
@@ -1427,18 +1576,19 @@ Send these questions with the audit when asking for outside feedback.
 
 A strong next iteration should satisfy these criteria:
 
-1. A first-time visitor can explain SlateCamp as a LEA readiness engine within 10 seconds.
-2. The page clearly explains the readiness loop before listing secondary features.
-3. Readiness Score appears as the central product promise, not a secondary feature.
-4. Questions, Wiki, and Analytics feel connected.
-5. The primary CTA is consistently outcome-based.
-6. Numeric and authority claims are verified or softened.
-7. Hero small-text contrast passes review.
-8. Reduced-motion behavior is verified.
-9. Mobile page order is coherent when sections stack.
-10. 3D Lab either visibly proves 3D value or moves lower.
-11. The review-center comparison feels complementary, not hostile.
-12. The final CTA resolves anxiety by offering a concrete first step.
+1. A first-time visitor can explain SlateCamp as a premium architecture learning platform / study companion within 10 seconds, with LEA readiness visible as the strongest pathway.
+2. The first two scrolls clearly show the four pillars: Knowledge Resources, Quizzes, 3D Lab, and Free Tools.
+3. The page clearly explains the readiness loop before listing secondary features.
+4. Readiness Score appears as the central LEA pathway promise, not the whole product identity.
+5. Questions, Wiki, 3D Lab, Free Tools, and Analytics feel connected.
+6. The primary CTA is consistently outcome-based.
+7. Numeric and authority claims are verified or softened.
+8. Hero small-text contrast passes review.
+9. Reduced-motion behavior is verified.
+10. Mobile page order is coherent when sections stack.
+11. 3D Lab visibly proves 3D value within the broader four-pillar offer.
+12. The review-center comparison feels complementary, not hostile.
+13. The final CTA resolves anxiety by offering a concrete first step.
 
 ---
 
@@ -1448,7 +1598,7 @@ SlateCamp does not need a generic prettier landing page.
 
 It needs a sharper argument.
 
-The current hero is strong because it understands the emotional job: LEA candidates want confidence before exam day.
+The current hero is directionally strong because it understands the emotional job: candidates want confidence before exam day. But after the 2026-05-07 brand-cue research, the final public hero should avoid sounding too narrowly LEA-only or too local-directory-like. SlateCamp should feel like a premium architecture study companion first, then prove its Philippine-code and LEA relevance.
 
 The rest of the page should now prove how SlateCamp creates that confidence:
 - practice creates signal,
@@ -1457,7 +1607,7 @@ The rest of the page should now prove how SlateCamp creates that confidence:
 
 Reviewer-facing summary:
 
-> The landing page has found a strong brand promise in `Know you'll win.` The hero now feels premium, focused, and meaningfully different from generic test-prep pages. The main opportunity is below the fold: the page currently presents SlateCamp as a collection of features, when it should present SlateCamp as a readiness engine. The highest-converting story is not `we have quizzes, Wiki, analytics, and 3D.` It is `you are studying blind; SlateCamp shows exactly where you stand and what to fix before exam day.` Keep the hero, make the Readiness Score the centerpiece, connect Questions/Wiki/Analytics into one visible loop, repeat one CTA, and make 3D Lab either visibly prove itself or step back as a supporting feature.
+> The landing page has a strong emotional job: reduce uncertainty and give students a concrete next step. The final public framing should now broaden from LEA-only readiness engine to premium architecture study companion: source-backed resources, quizzes, 3D labs, and free tools for school, boards, and practice. Use Philippine specificity as proof/scope/SEO, not as the first prestige cue. Keep `Get Your Free Readiness Score` as the strongest LEA pathway, but make the first two scrolls prove the four-pillar platform. The body should not feel like `we have quizzes, Wiki, analytics, and 3D`; it should feel like `you are not alone with scattered PDFs, reviewer notes, code confusion, and uncertainty — SlateCamp organizes what you need and tells you what to do next.`
 
 ---
 
@@ -1465,15 +1615,18 @@ Reviewer-facing summary:
 
 If the next task is implementation, use this brief:
 
-1. Keep current hero visual direction.
-2. Improve hero small-text contrast if needed.
-3. Keep primary CTA as `Get Your Free Readiness Score` for logged-out users.
-4. Rename or internally treat SocialProofBar as a trust strip.
-5. Add a new `Stop studying blind` readiness-loop section before feature showcase.
-6. Move or promote Readiness Score earlier.
-7. Connect Questions, Wiki, and Analytics as one product loop.
-8. Reframe Wiki as source-backed mistake recovery.
-9. Move 3D Lab lower unless its visual becomes unmistakably 3D.
-10. Reframe comparison around `Review centers teach. SlateCamp measures.`
-11. Run type-check, lint, browser console, mobile visual, contrast, and reduced-motion checks before calling it done.
+1. Do not implement final copy until the brand-cue messaging gate is finalized.
+2. Keep current premium visual direction, but revise public hero wording away from LEA-only and away from local-directory language.
+3. Use a hero direction like `Your architecture study companion.`
+4. Use Philippine specificity in the subheadline/trust line/metadata/proof, not necessarily the hero headline.
+5. Keep primary CTA as `Get Your Free Readiness Score` for logged-out users.
+6. Add `Explore Knowledge Resources` and `Open Free Tools` as broader product CTAs.
+7. Rename or internally treat SocialProofBar as a trust strip.
+8. Add a new readiness-loop / `Stop studying blind` section before feature showcase.
+9. Make four pillars explicit in the first two scrolls: Knowledge Resources, Quizzes, 3D Lab, Free Tools.
+10. Reframe Wiki as source-backed mistake recovery and resource center.
+11. Make 3D Lab visibly prove interactive spatial/code value.
+12. Reframe comparison around `Review centers teach. SlateCamp helps you check what stuck.`
+13. Add university-safe copy: supports classes/review groups, does not replace instructors.
+14. Run type-check, lint, browser console, mobile visual, contrast, and reduced-motion checks before calling it done.
 

@@ -1,6 +1,6 @@
 # Phase 0.5B.1 Evidence Review Report
 
-**Generated:** 2026-05-05T15:48:50Z  
+**Generated:** 2026-05-05T15:48:50Z
 **Status:** Evidence-review queue only. No source approval. No source-pack creation. No content mutation.
 
 ## Summary
