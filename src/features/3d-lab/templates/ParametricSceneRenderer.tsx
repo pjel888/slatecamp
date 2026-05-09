@@ -21,8 +21,8 @@ import { ClickInspectPopover } from '@/features/3d-lab/components/stairway/Click
 interface ParametricSceneRendererProps {
   config: ParametricSceneConfig
   useStore: UseBoundStore<StoreApi<ModuleStoreState>>
-  /** When true, suppresses Html violation/annotation overlays in the 3D scene
-   *  (used when a ComplianceReportPanel handles the information display instead) */
+  /** When true, suppresses Html violation overlays in the 3D scene.
+   *  Annotation labels may still render when config.alwaysShowAnnotations is enabled. */
   hideOverlays?: boolean
 }
 
@@ -76,45 +76,55 @@ export function ParametricSceneRenderer({
   const removeItem = useOverlayStore((s) => s.removeItem)
 
   useEffect(() => {
-    if (hideOverlays) return
+    const showViolationOverlays = !hideOverlays
+    const showAnnotationOverlays = !hideOverlays || config.alwaysShowAnnotations === true
+    if (!showViolationOverlays && !showAnnotationOverlays) return
 
     // Upsert violation overlays
-    activeViolations.forEach((v) => {
-      const pos = v.position?.(params) ?? [0, 0, 0]
-      upsertItem({
-        id: `parametric-violation-${v.id}`,
-        worldPosition: new THREE.Vector3(pos[0], pos[1], pos[2]),
-        type: 'violation',
-        payload: {
-          law: v.codeCitation ?? '',
-          section: v.codeCitation ?? '',
-          message: v.message,
-          severity: 'error',
-        },
-        visible: true,
+    if (showViolationOverlays) {
+      activeViolations.forEach((v) => {
+        const pos = v.position?.(params) ?? [0, 0, 0]
+        upsertItem({
+          id: `parametric-violation-${v.id}`,
+          worldPosition: new THREE.Vector3(pos[0], pos[1], pos[2]),
+          type: 'violation',
+          payload: {
+            law: v.codeCitation ?? '',
+            section: v.codeCitation ?? '',
+            message: v.message,
+            severity: 'error',
+          },
+          visible: true,
+        })
       })
-    })
+    }
 
-    // Upsert annotation overlays — respect dimensionsVisible toggle
-    visibleAnnotations.forEach((a) => {
-      const pos = a.position(params)
-      upsertItem({
-        id: `parametric-annotation-${a.id}`,
-        worldPosition: new THREE.Vector3(pos[0], pos[1], pos[2]),
-        type: 'label',
-        payload: {
-          text: a.label,
-          codeRef: a.codeCitation,
-        },
-        visible: dimensionsVisible,
+    // Upsert annotation overlays — normally respect dimensionsVisible;
+    // selected teaching modules may keep labels visible beside the source panel.
+    if (showAnnotationOverlays) {
+      visibleAnnotations.forEach((a) => {
+        const pos = a.position(params)
+        const visibleByDefault = config.alwaysShowAnnotations === true && (
+          config.defaultVisibleAnnotationIds == null || config.defaultVisibleAnnotationIds.includes(a.id)
+        )
+        upsertItem({
+          id: `parametric-annotation-${a.id}`,
+          worldPosition: new THREE.Vector3(pos[0], pos[1], pos[2]),
+          type: 'label',
+          payload: {
+            text: a.label,
+            codeRef: dimensionsVisible ? a.codeCitation : undefined,
+          },
+          visible: visibleByDefault || dimensionsVisible,
+        })
       })
-    })
+    }
 
     return () => {
       activeViolations.forEach((v) => removeItem(`parametric-violation-${v.id}`))
       visibleAnnotations.forEach((a) => removeItem(`parametric-annotation-${a.id}`))
     }
-  }, [activeViolations, visibleAnnotations, params, hideOverlays, dimensionsVisible, upsertItem, removeItem])
+  }, [activeViolations, visibleAnnotations, params, hideOverlays, dimensionsVisible, config.alwaysShowAnnotations, config.defaultVisibleAnnotationIds, upsertItem, removeItem])
 
   return (
     <>

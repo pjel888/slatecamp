@@ -7,6 +7,9 @@ import { ASSET_TAXONOMY, type CategoryKey } from '../config/taxonomy'
 import type { ModuleRegistryEntry } from '../types/templates'
 import { ModuleCard } from './ModuleCard'
 
+const isSourcePendingQaModule = (module: ModuleRegistryEntry) =>
+  module.codeRef?.toLowerCase().includes('source pending qa') ?? false
+
 // ─── Props ───────────────────────────────────────────────────────────────────
 
 interface ModuleListProps {
@@ -36,7 +39,10 @@ export function ModuleList({ categoryKey, modules, basePath, onBack }: ModuleLis
     )
   }, [modules, search])
 
-  const availableCount = modules.filter((m) => m.status === 'built' || m.status === 'ready').length
+  const qaPreviewCount = modules.filter(isSourcePendingQaModule).length
+  const availableCount = modules.filter(
+    (m) => (m.status === 'built' || m.status === 'ready') && !isSourcePendingQaModule(m),
+  ).length
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6">
@@ -63,6 +69,11 @@ export function ModuleList({ categoryKey, modules, basePath, onBack }: ModuleLis
           <span className="rounded-full bg-emerald/10 px-2 py-0.5 font-mono text-[9px] font-bold uppercase tracking-wider text-emerald border border-emerald/10">
             {availableCount} Available
           </span>
+          {qaPreviewCount > 0 && (
+            <span className="rounded-full bg-warning/10 px-2 py-0.5 font-mono text-[9px] font-bold uppercase tracking-wider text-warning border border-warning/10">
+              {qaPreviewCount} QA Preview
+            </span>
+          )}
           <span className="rounded-full bg-muted/30 px-2 py-0.5 font-mono text-[9px] font-bold uppercase tracking-wider text-muted-foreground border border-border-default/20">
             {modules.length} Total Modules
           </span>

@@ -6,6 +6,17 @@ import type { ModuleRegistryEntry } from '@/features/3d-lab/types/templates'
 
 export const cat02Modules: ModuleRegistryEntry[] = [
   {
+    id: "bp344-accessible-route-ramp",
+    title: "BP 344 Accessible Route Ramp",
+    templateType: "parametric",
+    subject: "bp-344",
+    categoryId: "ACCESSIBILITY",
+    launchPhase: 1,
+    status: "built",
+    codeRef: "BP 344 · Source pending QA",
+    description: "Dashboard QA card for the procedural BP 344 accessible route ramp. Compliance logic remains source-pending and fails closed until source review and QA gates pass.",
+  },
+  {
     id: "accessible-bathing",
     title: "Accessible Bathing",
     templateType: "cutaway",

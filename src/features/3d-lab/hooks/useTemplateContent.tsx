@@ -5,6 +5,10 @@ import { CanvasWrapper } from '@/features/3d-lab/components/CanvasWrapper'
 import { SceneErrorBoundary } from '@/features/3d-lab/components/templates/SceneErrorBoundary'
 import { GenericControlPanel } from '@/features/3d-lab/components/templates/GenericControlPanel'
 import { ComplianceReportPanel } from '@/features/3d-lab/components/templates/ComplianceReportPanel'
+import {
+  SourceCompliancePanel,
+  SourceComplianceStatusBar,
+} from '@/features/3d-lab/components/templates/SourceCompliancePanel'
 import { ExplodedPartsSidebar } from '@/features/3d-lab/components/templates/ExplodedPartsSidebar'
 import { ExplodeSliderControl } from '@/features/3d-lab/components/templates/ExplodeSliderControl'
 import { CutawayLayersSidebar } from '@/features/3d-lab/components/templates/CutawayLayersSidebar'
@@ -269,7 +273,8 @@ export const useTemplateContent = (
         }
 
         // ── Standard parametric path ──
-        const hasCompliancePanel = (() => {
+        const hasSourceCompliancePanel = Boolean(cfg.sourceTruth)
+        const hasCompliancePanel = hasSourceCompliancePanel || (() => {
           if (!cfg.violations || cfg.violations.length === 0) return false
           const prefixes = new Set(cfg.violations.map((v) => v.id.split('-')[0]))
           prefixes.delete('conflict')
@@ -280,9 +285,14 @@ export const useTemplateContent = (
           shellConfig: {
             ...shellConfig,
             rightSidebar: hasCompliancePanel
-              ? { width: 300, title: 'Compliance', mobileTabLabel: 'Compliance' }
+              ? {
+                  width: hasSourceCompliancePanel ? 340 : 300,
+                  title: hasSourceCompliancePanel ? 'Source / Compliance' : 'Compliance',
+                  mobileTabLabel: hasSourceCompliancePanel ? 'Source' : 'Compliance',
+                }
               : shellConfig.rightSidebar,
             leftSidebar: { width: 320, title: cfg.title, mobileTabLabel: 'Controls' },
+            statusBar: hasSourceCompliancePanel ? true : shellConfig.statusBar,
           },
           capabilities,
           content: {
@@ -302,11 +312,26 @@ export const useTemplateContent = (
                 useStore={useStore}
                 contextScenario={cfg.contextScenario}
                 violations={cfg.violations}
+                sourceBackedCompliance={cfg.sourceTruth?.canShowSourceBackedCompliance ?? true}
               />
             ),
-            rightSidebarContent: hasCompliancePanel && cfg.violations ? (
+            rightSidebarContent: hasSourceCompliancePanel && cfg.sourceTruth ? (
+              <SourceCompliancePanel
+                embedded
+                sourceTruth={cfg.sourceTruth}
+                violations={cfg.violations}
+                useStore={useStore}
+              />
+            ) : hasCompliancePanel && cfg.violations ? (
               <ComplianceReportPanel
                 embedded
+                violations={cfg.violations}
+                useStore={useStore}
+              />
+            ) : undefined,
+            statusBarContent: hasSourceCompliancePanel && cfg.sourceTruth ? (
+              <SourceComplianceStatusBar
+                sourceTruth={cfg.sourceTruth}
                 violations={cfg.violations}
                 useStore={useStore}
               />

@@ -75,6 +75,9 @@ export interface ViolationRule {
   message: string
   /** Code section citation (e.g. 'PD 1096 Rule VII §2.a') */
   codeCitation?: string
+  /** Source-card/rule metadata. Required before a rule may be shown as source-backed. */
+  sourceCardId?: string
+  sourceRuleId?: string
   severity: Severity
   /** World-space position for the violation indicator */
   position?: (params: Record<string, number | boolean | string>) => Vector3Tuple
@@ -88,6 +91,9 @@ export interface AnnotationDef {
   description: string
   /** Code section citation */
   codeCitation?: string
+  /** Source-card/rule metadata for non-pass/fail educational annotations. */
+  sourceCardId?: string
+  sourceRuleId?: string
   /** World-space position — can be dynamic based on params */
   position: (params: Record<string, number | boolean | string>) => Vector3Tuple
   /** Optional visibility predicate */
@@ -97,8 +103,38 @@ export interface AnnotationDef {
 // ─── Presets ─────────────────────────────────────────────────────────────────
 
 export interface Preset {
+  /** Stable identifier for Wiki/Quiz/3D Lab deep-link contracts. */
+  id?: string
   label: string
   values: Record<string, number | boolean | string>
+}
+
+// ─── Source Truth Definitions ────────────────────────────────────────────────
+
+export type SourceGateStatus = 'SOURCE_READY' | 'SOURCE_PENDING' | 'SOURCE_INCOMPLETE'
+
+export interface SourceTruthRule {
+  source_rule_id: string
+  source_card_id: string
+  source_candidate_id: string
+  source_sha256: string
+  document_path: string
+  page_locator: string
+  section_locator: string
+  exact_quote: string
+  normalized_rule: string
+  classification: ValueClassification
+  compliance_scope: string
+  human_review_status: string
+  fail_closed_when_source_missing: boolean
+  value?: string
+}
+
+export interface SourceTruthConfig {
+  sourceRules: SourceTruthRule[]
+  sourceSha256: string
+  sourceGateStatus: SourceGateStatus
+  canShowSourceBackedCompliance: boolean
 }
 
 // ─── Geometry Instructions ───────────────────────────────────────────────────
@@ -182,6 +218,7 @@ export interface ParametricSceneConfig {
   violations?: ViolationRule[]
   annotations?: AnnotationDef[]
   presets?: Preset[]
+  sourceTruth?: SourceTruthConfig
   camera?: CameraConfig
   /** Uniform scale factor applied to the whole scene */
   scale?: number
@@ -198,6 +235,10 @@ export interface ParametricSceneConfig {
   hasChallengeMode?: boolean
   /** Show a 1.7m human silhouette for scale reference */
   showHumanScale?: boolean
+  /** Keep annotation labels visible even when a right-side compliance/source panel suppresses violation badges. */
+  alwaysShowAnnotations?: boolean
+  /** Optional allow-list of annotation ids that stay visible before the Dimensions toggle is enabled. */
+  defaultVisibleAnnotationIds?: string[]
 }
 
 // ─── Exploded Assembly Config ────────────────────────────────────────────────

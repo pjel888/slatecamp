@@ -113,12 +113,14 @@ const DropdownControl = ({
   </div>
 )
 
-// ─── Compliance Status (live indicator at bottom of panel) ───────────────────
+// ─── Formula / Compliance Status (live indicator at bottom of panel) ─────────
 
 const ComplianceIndicator = ({
   violations,
+  sourceBacked = true,
 }: {
   violations: Array<{ message: string; severity: string }>
+  sourceBacked?: boolean
 }) => {
   if (violations.length === 0) {
     return (
@@ -129,17 +131,26 @@ const ComplianceIndicator = ({
             className="text-emerald font-medium"
             style={{ fontFamily: MONO_FONT, fontSize: 11 }}
           >
-            COMPLIANT
+            {sourceBacked ? 'COMPLIANT' : 'CALCULATION OK'}
           </span>
         </div>
         <p className="text-[11px] text-muted-foreground mt-1">
-          All values within code limits.
+          {sourceBacked
+            ? 'All values within code limits.'
+            : 'No active formula issues. Source-backed compliance remains disabled pending review.'}
         </p>
       </div>
     )
   }
 
   const hasError = violations.some((v) => v.severity === 'error')
+  const activeLabel = sourceBacked
+    ? hasError
+      ? 'VIOLATION'
+      : 'AT LIMIT'
+    : hasError
+      ? 'FORMULA ISSUE'
+      : 'REVIEW'
 
   return (
     <div
@@ -160,7 +171,7 @@ const ComplianceIndicator = ({
           className={cn('font-medium', hasError ? 'text-destructive' : 'text-warning')}
           style={{ fontFamily: MONO_FONT, fontSize: 11 }}
         >
-          {hasError ? 'VIOLATION' : 'AT LIMIT'}
+          {activeLabel}
         </span>
       </div>
       {violations.map((v, i) => (
@@ -186,6 +197,7 @@ interface GenericControlPanelProps {
     message: string
     severity: string
   }>
+  sourceBackedCompliance?: boolean
   /** When true, renders without absolute positioning (for use inside LabPanelLayout) */
   embedded?: boolean
 }
@@ -198,6 +210,7 @@ export const GenericControlPanel = memo(function GenericControlPanel({
   className,
   contextScenario,
   violations,
+  sourceBackedCompliance = true,
   embedded = false,
 }: GenericControlPanelProps) {
   const params = useStore((s) => s.params)
@@ -349,7 +362,7 @@ export const GenericControlPanel = memo(function GenericControlPanel({
 
         {/* Compliance indicator */}
         {violations && (
-          <ComplianceIndicator violations={activeViolations} />
+          <ComplianceIndicator violations={activeViolations} sourceBacked={sourceBackedCompliance} />
         )}
       </div>
     </div>

@@ -24,6 +24,7 @@ const TEMPLATE_META: Record<TemplateType, { label: string; icon: PhosphorIcon; c
 
 export function ModuleCard({ module, basePath: _basePath }: { module: ModuleRegistryEntry; basePath: string }) {
   const isBuilt = module.status === 'built' || module.status === 'ready'
+  const isSourcePendingQa = module.codeRef?.toLowerCase().includes('source pending qa') ?? false
   const tmpl = TEMPLATE_META[module.templateType]
 
   const card = (
@@ -45,8 +46,13 @@ export function ModuleCard({ module, basePath: _basePath }: { module: ModuleRegi
           {tmpl.label}
         </span>
         {isBuilt ? (
-          <span className="rounded border border-emerald/10 bg-emerald/5 px-2 py-0.5 font-mono text-[9px] font-bold uppercase tracking-wider text-emerald">
-            Available
+          <span className={cn(
+            "rounded border px-2 py-0.5 font-mono text-[9px] font-bold uppercase tracking-wider",
+            isSourcePendingQa
+              ? 'border-warning/20 bg-warning/5 text-warning'
+              : 'border-emerald/10 bg-emerald/5 text-emerald',
+          )}>
+            {isSourcePendingQa ? 'QA Preview' : 'Available'}
           </span>
         ) : (
           <span className="rounded border border-border-default/20 bg-muted/10 px-2 py-0.5 font-mono text-[9px] font-bold uppercase tracking-wider text-muted-foreground">
