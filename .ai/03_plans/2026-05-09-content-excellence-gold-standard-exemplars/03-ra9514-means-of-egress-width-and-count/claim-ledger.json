@@ -1,0 +1,100 @@
+{
+  "schema_version": "slatecamp-claim-ledger-v1",
+  "pack_id": "03-ra9514-means-of-egress-width-and-count",
+  "title": "RA 9514 Means of Egress Width and Count",
+  "status": "PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION",
+  "source_status": "OFFICIAL_BLOCKED_LOCAL_RAW_USED",
+  "source_pack_id": "source-pack-ra-9514-rirr",
+  "document": {
+    "document_id": "RA9514_RIRR_2019",
+    "document_code": "RA 9514",
+    "source_family": "RA 9514 2019 Revised IRR",
+    "document_version_date_or_edition": "2019 Revised IRR",
+    "relative_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+    "sha256": "ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+    "pdf_page_count": 448,
+    "source_hierarchy_tier": 1
+  },
+  "claims": [
+    {
+      "claim_id": "ra9514-egress-c1",
+      "claim_text": "Buildings designed for human occupancy require exits sufficient for prompt and safe escape.",
+      "claim_class": "LEGAL_SCOPE",
+      "article_location": "The life-safety premise",
+      "locator": "Rule 10 / Division 2 / General Requirements / PDF p.89",
+      "extraction_status": "FOUND_VERBATIM",
+      "visual_verification": {
+        "performed": false,
+        "by": null,
+        "date": null
+      },
+      "conflict_class": "official_source_blocked; prior source-pack integrity issue requires quarantine/rebuild before publication",
+      "status": "SUPPORTED",
+      "linked_question_ids": [
+        "ra9514-egress-q1"
+      ],
+      "notes": ""
+    },
+    {
+      "claim_id": "ra9514-egress-c2",
+      "claim_text": "General means-of-egress width must not be less than 915 mm unless occupancy divisions allow otherwise.",
+      "claim_class": "LEGAL_DIMENSION",
+      "article_location": "Width and number are separate checks",
+      "locator": "Rule 10 / Division 2 / Section 10.2.5.2(F) / PDF p.95",
+      "extraction_status": "FOUND_VERBATIM",
+      "visual_verification": {
+        "performed": false,
+        "by": null,
+        "date": null
+      },
+      "conflict_class": "official_source_blocked; prior source-pack integrity issue requires quarantine/rebuild before publication",
+      "status": "SUPPORTED",
+      "linked_question_ids": [
+        "ra9514-egress-q2"
+      ],
+      "notes": ""
+    },
+    {
+      "claim_id": "ra9514-egress-c3",
+      "claim_text": "Number of means of egress must not be less than two, with thresholds of three for occupant load over 500 to 1000 and four over 1000.",
+      "claim_class": "LEGAL_DIMENSION",
+      "article_location": "Load threshold trap",
+      "locator": "Rule 10 / Division 2 / Section 10.2.5.2(G) / PDF p.95",
+      "extraction_status": "FOUND_VERBATIM",
+      "visual_verification": {
+        "performed": false,
+        "by": null,
+        "date": null
+      },
+      "conflict_class": "official_source_blocked; prior source-pack integrity issue requires quarantine/rebuild before publication",
+      "status": "SUPPORTED",
+      "linked_question_ids": [
+        "ra9514-egress-q3"
+      ],
+      "notes": ""
+    },
+    {
+      "claim_id": "ra9514-egress-c4",
+      "claim_text": "Means of egress illumination must be continuous and not less than 10.7 lux at required points.",
+      "claim_class": "TECHNICAL_STANDARD",
+      "article_location": "Illumination check",
+      "locator": "Rule 10 / Division 2 / Section 10.2.5.11 / PDF p.113",
+      "extraction_status": "FOUND_VERBATIM",
+      "visual_verification": {
+        "performed": false,
+        "by": null,
+        "date": null
+      },
+      "conflict_class": "official_source_blocked; prior source-pack integrity issue requires quarantine/rebuild before publication",
+      "status": "SUPPORTED",
+      "linked_question_ids": [],
+      "notes": ""
+    }
+  ],
+  "sme_review": {
+    "status": "pending",
+    "reviewer_id": null,
+    "date": null,
+    "notes": "Calibration only; not for direct learner-facing publication."
+  }
+}

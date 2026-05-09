@@ -1,0 +1,400 @@
+{
+  "mission": "Review SlateCamp gold-standard exemplar pack for 100% truth/accuracy and learning effectiveness. Recommend only improvements that move toward source-verifiable award-winning Philippine LEA learning output.",
+  "content_excellence_goal": "Every number and legal/code claim must have source locator; educator-quality, no AI slop; source hierarchy: approved source packs, raw 001 source PDFs, official sources, 002 conversion for search only, 003 canonical for discovery only.",
+  "current_pack": ".ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars",
+  "current_exemplar_summaries": [
+    {
+      "dir": ".ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars/01-bp344-accessible-ramp-geometry",
+      "files": {
+        "exemplar-article.md": {
+          "chars": 1881,
+          "sha256": "7b6c0869e4502e5c",
+          "preview": "# BP 344 Accessible Ramp Geometry\n\n## Learning objective\n\nGiven a ramp condition in an LEA plan-reading or code-compliance question, identify the governing accessible-ramp values for width, gradient, landing, and handrail height under the 2024 Revised IRR of BP 344.\n\n## The rule that decides the answer\n\nAn accessible ramp starts with two values: a minimum clear width of 1200 mm and a gradient not steeper than 1:20. The same 2024 BP 344 IRR excerpt allows steeper gradients only as special cases depending on the length to be covered.\n\nSource: BP 344, 2024 Revised IRR, Appendix A, Accessible Ramps, PDF p.2, extracted from `vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf`.\n\n## How the table is tested\n\nThe table row for 1:15 permits a 10.50 m maximum length, a 700 mm maximum rise, and a 10 m interval for landing. The same page states that accessible ramps with a total length longer than 10.50 m must be provided with intermediate landings with a minimum length of 1800 mm.\n\nSource: BP 344, 2024 Revised IRR, Appendix A, Accessible Ramps, Table A.1.1 and Item 10, PDF p.2.\n\n## Handrail trap\n\nFor accessible ramps with changes in grade higher than 170 mm, handrails are required. They must be on both sides, and they are installed at 900 mm and 700 mm above ramps and stairs. Do not answer only one height when the stem asks for accessible ramp handrails.\n"
+        },
+        "source-ledger.md": {
+          "chars": 4644,
+          "sha256": "cf260b618609a171",
+          "preview": "# Source Ledger - BP 344 Accessible Ramp Geometry\n\n## Source document\n\n- Document ID: `BP344_2024_IRR`\n- Relative path: `vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf`\n- SHA256: `63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953`\n- PDF page count: 78\n- Locator set: `bp344_ramps`\n- PDF pages used: 2, 7, 8\n\n## Verification status\n\n- Local PDF present: yes\n- Text extraction method: PyMuPDF via `uvx --from pymupdf`\n- Source tier: primary/local source layer\n- SME release status: pending\n\n## Extracted evidence snippets\n\n- Query: `Minimum clear width of 1200 mm`\n  - PDF page: 2"
+        },
+        "exemplar-question-set.json": {
+          "chars": 3451,
+          "sha256": "481a787012dd3ed6",
+          "preview": "{\n  \"pack_id\": \"01-bp344-accessible-ramp-geometry\",\n  \"title\": \"BP 344 Accessible Ramp Geometry\",\n  \"subject\": \"Building Laws and Accessibility\",\n  \"status\": \"PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION\",\n  \"source_document_id\": \"BP344_2024_IRR\",\n  \"locator_set_id\": \"bp344_ramps\",\n  \"questions\": [\n    {\n      \"id\": \"bp344-ramp-q1\",\n      \"stem\": \"Under the 2024 Revised IRR of BP 344, what is the minimum clear width of an accessible ramp?\",\n      \"options\": {\n        \"A\": \"900 mm\",\n        \"B\": \"1000 mm\",\n        \"C\": \"1200 mm\",\n        \"D\": \"1500 mm\"\n      },\n      \"correct_option_id\": \"C\",\n      \"rationale\": {\n        \"correct\": \"The extracted 2024 IRR text states: \\\"Minimum clear width of 1200 mm.\\\"\",\n        \"distractors\": {\n          \"A\": \"900 mm is a handrail height, not the clear ramp width.\","
+        },
+        "reviewer-memo.md": {
+          "chars": 1882,
+          "sha256": "b326d47dda9b3ccc",
+          "preview": "# Reviewer Memo - BP 344 Accessible Ramp Geometry\n\n## Verdict\n\n`PASS_FOR_CALIBRATION`, `HOLD_FOR_DIRECT_PUBLICATION`.\n\nThis is a gold-standard calibration artifact, not a publishable Supabase bundle.\n\n## Why it passes for calibration\n\n- It starts from a learner task, not from a generic topic introduction.\n- It cites the local source file and PDF page for every governing factual cluster.\n- It explains the most likely exam trap instead of merely listing values.\n- It makes distractors plausible and diagnoses why each wrong option fails.\n- It avoids generic AI phrases, unsupported certainty, and motivational filler.\n\n## Before and after calibration\n\nWeak draft excerpt:\n\n> Accessible ramps are important for inclusivity and should be designed with comfortable slopes.\n"
+        }
+      }
+    },
+    {
+      "dir": ".ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars/02-ra9266-foreign-architect-temporary-permit",
+      "files": {
+        "exemplar-article.md": {
+          "chars": 1742,
+          "sha256": "6ccc0986c6e576e7",
+          "preview": "# RA 9266 Foreign Architect and Temporary Permit Gate\n\n## Learning objective\n\nGiven a professional-practice scenario involving a foreign architect, identify whether the person may lawfully perform architectural services in the Philippines and which RA 9266 IRR requirement controls the answer.\n\n## Definitions that come first\n\nThe RA 9266 IRR defines a foreign architect as an architect who is not a Filipino citizen and is not registered and licensed in the Philippines, but is duly registered and licensed in the architect's home country. It also defines the Filipino counterpart as the local Philippine architect, partnership, or corporation that must work in association with the foreign architect, partnership, or corporation on a project on Philippine soil.\n\nSource: RA 9266 IRR, Section 3, Definition of Terms, Items 30 and 31, PDF p.5, extracted from `vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf`.\n\n## The permit gate\n\nSection 38 is the exam hinge. A foreign national who enters the Philippines to perform professional services as an architect or consultant in the covered projects must secure a special/temporary permit from the Board, subject to approval of the Commission, before assuming the duties, functions, and responsibilities as architect or consultant.\n\nSource: RA 9266 IRR, Section 38, Coverage of Temporary/Special Permits, PDF p.20.\n\n## Board shortcut\n\nBeing licensed abroad is not the same as authority to practice architecture in the Philippines. In an LEA stem, check three gates: home-country licensure, Filipino counterpart, and special/temporary permit approval. If any gate is missing, the option that treats foreign licensure alone as sufficient is wrong."
+        },
+        "source-ledger.md": {
+          "chars": 3702,
+          "sha256": "d2f3973ae839d1df",
+          "preview": "# Source Ledger - RA 9266 Foreign Architect and Temporary Permit Gate\n\n## Source document\n\n- Document ID: `RA9266_IRR`\n- Relative path: `vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf`\n- SHA256: `d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574`\n- PDF page count: 24\n- Locator set: `ra9266_foreign_architect`\n- PDF pages used: 3, 5, 20\n\n## Verification status\n\n- Local PDF present: yes\n- Text extraction method: PyMuPDF via `uvx --from pymupdf`\n- Source tier: primary/local source layer\n- SME release status: pending\n\n## Extracted evidence snippets\n\n- Query: `Integrated and Accredited Professional Organization`\n  - PDF page: 3"
+        },
+        "exemplar-question-set.json": {
+          "chars": 4058,
+          "sha256": "39ad6ede3b227606",
+          "preview": "{\n  \"pack_id\": \"02-ra9266-foreign-architect-temporary-permit\",\n  \"title\": \"RA 9266 Foreign Architect and Temporary Permit Gate\",\n  \"subject\": \"Professional Practice\",\n  \"status\": \"PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION\",\n  \"source_document_id\": \"RA9266_IRR\",\n  \"locator_set_id\": \"ra9266_foreign_architect\",\n  \"questions\": [\n    {\n      \"id\": \"ra9266-foreign-q1\",\n      \"stem\": \"Under the RA 9266 IRR, which description best matches a foreign architect?\",\n      \"options\": {\n        \"A\": \"A Filipino architect working for a foreign-owned firm\",\n        \"B\": \"An architect not Filipino and not registered and licensed in the Philippines, but licensed in the home country\",\n        \"C\": \"Any architect who studied abroad but holds a Philippine PRC card\",\n        \"D\": \"A contractor who hires a foreign design consultant\"\n      },\n      \"correct_option_id\": \"B\",\n      \"rationale\": {\n        \"correct\": \"Section 3, Item 30 defines the foreign architect by non-Filipino/non-Philippine licensure status plus home-country architectural licensure.\",\n        \"distractors\": {\n          \"A\": \"Foreign ownership of the firm is not the definition.\","
+        },
+        "reviewer-memo.md": {
+          "chars": 1916,
+          "sha256": "412b5b6e5f4b1b55",
+          "preview": "# Reviewer Memo - RA 9266 Foreign Architect and Temporary Permit Gate\n\n## Verdict\n\n`PASS_FOR_CALIBRATION`, `HOLD_FOR_DIRECT_PUBLICATION`.\n\nThis is a gold-standard calibration artifact, not a publishable Supabase bundle.\n\n## Why it passes for calibration\n\n- It starts from a learner task, not from a generic topic introduction.\n- It cites the local source file and PDF page for every governing factual cluster.\n- It explains the most likely exam trap instead of merely listing values.\n- It makes distractors plausible and diagnoses why each wrong option fails.\n- It avoids generic AI phrases, unsupported certainty, and motivational filler.\n\n## Before and after calibration\n\nWeak draft excerpt:\n\n> Foreign architects can work in the Philippines if they have enough experience and local coordination.\n"
+        }
+      }
+    },
+    {
+      "dir": ".ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars/03-ra9514-means-of-egress-width-and-count",
+      "files": {
+        "exemplar-article.md": {
+          "chars": 2118,
+          "sha256": "3cde8e33186dc932",
+          "preview": "# RA 9514 Means of Egress: Width, Count, and Illumination\n\n## Learning objective\n\nGiven a Fire Code egress stem, decide whether the issue is exit sufficiency, minimum egress width, number of means of egress, or illumination.\n\n## The life-safety premise\n\nThe 2019 Revised IRR of RA 9514 requires every building or structure designed for human occupancy to have exits sufficient to permit fast and safe escape in case of fire or other emergencies. The same general requirement states that exits must be appropriate in kind, number, location, and capacity for the occupancy, exposed population, fire protection, height, and construction type.\n\nSource: RA 9514, 2019 Revised IRR, Rule 10, Chapter 2, Division 2, General Requirements, PDF p.89, extracted from `vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf`.\n\n## Width and number are separate checks\n\nFor the general means-of-egress rule, the width of any means of egress must not be less than 915 mm unless Divisions 8 through 20 provide a specific exception. The number of means of egress from any balcony, mezzanine, storey, or portion must not be less than two, except where those same occupancy divisions specifically permit otherwise.\n\nSource: RA 9514, 2019 Revised IRR, Rule 10, Chapter 2, Section 10.2.5.2, paragraphs F and G, PDF p.95.\n\n## Load threshold trap\n\nIf the occupant load for any storey or portion is more than 500 but not more than 1000, the means of egress must not be less than three. If it is in excess of 1000, the means of egress must not be less than four. Do not confuse this count rule with the 915 mm minimum-width rule.\n"
+        },
+        "source-ledger.md": {
+          "chars": 4658,
+          "sha256": "3be36fd58f05bc1e",
+          "preview": "# Source Ledger - RA 9514 Means of Egress: Width, Count, and Illumination\n\n## Source document\n\n- Document ID: `RA9514_RIRR_2019`\n- Relative path: `vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf`\n- SHA256: `ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266`\n- PDF page count: 448\n- Locator set: `ra9514_egress`\n- PDF pages used: 89, 94, 95, 113\n\n## Verification status\n\n- Local PDF present: yes\n- Text extraction method: PyMuPDF via `uvx --from pymupdf`\n- Source tier: primary/local source layer\n- SME release status: pending\n\n## Extracted evidence snippets\n\n- Query: `Every building or structure, new or old, designed for human occupancy`\n  - PDF page: 89"
+        },
+        "exemplar-question-set.json": {
+          "chars": 3309,
+          "sha256": "633525ad46c12adb",
+          "preview": "{\n  \"pack_id\": \"03-ra9514-means-of-egress-width-and-count\",\n  \"title\": \"RA 9514 Means of Egress: Width, Count, and Illumination\",\n  \"subject\": \"Fire Code and Life Safety\",\n  \"status\": \"PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION\",\n  \"source_document_id\": \"RA9514_RIRR_2019\",\n  \"locator_set_id\": \"ra9514_egress\",\n  \"questions\": [\n    {\n      \"id\": \"ra9514-egress-q1\",\n      \"stem\": \"Under the general RA 9514 RIRR means-of-egress rule, what minimum width applies unless a specific occupancy division provides otherwise?\",\n      \"options\": {\n        \"A\": \"760 mm\",\n        \"B\": \"815 mm\",\n        \"C\": \"915 mm\",\n        \"D\": \"1120 mm\"\n      },\n      \"correct_option_id\": \"C\",\n      \"rationale\": {\n        \"correct\": \"Section 10.2.5.2 paragraph F states that the width of any means of egress shall not be less than 915 mm except when specifically provided under Divisions 8 through 20.\",\n        \"distractors\": {\n          \"A\": \"760 mm appears in other dimensional contexts but is not this general minimum.\","
+        },
+        "reviewer-memo.md": {
+          "chars": 1820,
+          "sha256": "c6f0507fc6bccbe0",
+          "preview": "# Reviewer Memo - RA 9514 Means of Egress: Width, Count, and Illumination\n\n## Verdict\n\n`PASS_FOR_CALIBRATION`, `HOLD_FOR_DIRECT_PUBLICATION`.\n\nThis is a gold-standard calibration artifact, not a publishable Supabase bundle.\n\n## Why it passes for calibration\n\n- It starts from a learner task, not from a generic topic introduction.\n- It cites the local source file and PDF page for every governing factual cluster.\n- It explains the most likely exam trap instead of merely listing values.\n- It makes distractors plausible and diagnoses why each wrong option fails.\n- It avoids generic AI phrases, unsupported certainty, and motivational filler.\n\n## Before and after calibration\n\nWeak draft excerpt:\n\n> Means of egress should be wide enough and properly illuminated for safety.\n"
+        }
+      }
+    },
+    {
+      "dir": ".ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars/04-npcp-fixture-unit-and-venting",
+      "files": {
+        "exemplar-article.md": {
+          "chars": 1805,
+          "sha256": "9ee3384354b285c9",
+          "preview": "# National Plumbing Code Fixture Units and Venting\n\n## Learning objective\n\nUse the National Plumbing Code definition of fixture unit and the Code rule on vent piping to avoid common utilities distractors.\n\n## Fixture unit is a load measure\n\nThe Revised National Plumbing Code defines fixture unit as an arbitrary quantity used to express the load-producing effects or water requirements of different plumbing fixtures. One fixture unit is equivalent to a rate of flow of 28.3 liters per minute, which is 1 cubic foot per minute.\n\nSource: Revised National Plumbing Code of the Philippines, Definitions, Fixture Unit, PDF p.24, extracted from `vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Revised National Plumbing Code of the Philippines.pdf`.\n\n## Venting is not spare drainage\n\nThe same Code prohibits using a vent pipe as a soil or waste pipe, and prohibits using a soil or waste pipe as a vent, except as otherwise provided in Sections 812, 813, and 814. It also states that single drainage and venting systems with unvented branch lines are prohibited.\n\nSource: Revised National Plumbing Code of the Philippines, Section 311.4, PDF p.44.\n\n## Loop or circuit vent\n\nA loop or circuit vent is a vertical vent connection on a horizontal soil or waste branch downstream of the last fixture connection, turning to a horizontal line above the highest overflow level of the highest connected fixture.\n"
+        },
+        "source-ledger.md": {
+          "chars": 2995,
+          "sha256": "241dbe3ad66a7a66",
+          "preview": "# Source Ledger - National Plumbing Code Fixture Units and Venting\n\n## Source document\n\n- Document ID: `NPCP_REVISED`\n- Relative path: `vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Revised National Plumbing Code of the Philippines.pdf`\n- SHA256: `c4ec30ec3ffe3b39513a033ebc2cfa614bd201d25c5578e1847e7f359fed3f5d`\n- PDF page count: 225\n- Locator set: `npcp_fixture_unit_venting`\n- PDF pages used: 24, 29, 44\n\n## Verification status\n\n- Local PDF present: yes\n- Text extraction method: PyMuPDF via `uvx --from pymupdf`\n- Source tier: primary/local source layer\n- SME release status: pending\n\n## Extracted evidence snippets\n\n- Query: `FIXTlJRE liN IT`\n  - PDF page: not found by text extraction"
+        },
+        "exemplar-question-set.json": {
+          "chars": 3593,
+          "sha256": "5086a4422826dfd3",
+          "preview": "{\n  \"pack_id\": \"04-npcp-fixture-unit-and-venting\",\n  \"title\": \"National Plumbing Code Fixture Units and Venting\",\n  \"subject\": \"Building Utilities\",\n  \"status\": \"PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION\",\n  \"source_document_id\": \"NPCP_REVISED\",\n  \"locator_set_id\": \"npcp_fixture_unit_venting\",\n  \"questions\": [\n    {\n      \"id\": \"npcp-fixture-q1\",\n      \"stem\": \"In the Revised National Plumbing Code definition, one fixture unit is equivalent to what flow rate?\",\n      \"options\": {\n        \"A\": \"10.7 liters per minute\",\n        \"B\": \"18.0 liters per minute\",\n        \"C\": \"28.3 liters per minute\",\n        \"D\": \"38.0 liters per minute\"\n      },\n      \"correct_option_id\": \"C\",\n      \"rationale\": {\n        \"correct\": \"The definition states that one fixture unit is equivalent to 28.3 liters per minute, or 1 cubic foot per minute.\",\n        \"distractors\": {\n          \"A\": \"10.7 is a lux value in the Fire Code egress excerpt, not a plumbing flow rate.\","
+        },
+        "reviewer-memo.md": {
+          "chars": 1807,
+          "sha256": "64f0a5a67b59cccb",
+          "preview": "# Reviewer Memo - National Plumbing Code Fixture Units and Venting\n\n## Verdict\n\n`PASS_FOR_CALIBRATION`, `HOLD_FOR_DIRECT_PUBLICATION`.\n\nThis is a gold-standard calibration artifact, not a publishable Supabase bundle.\n\n## Why it passes for calibration\n\n- It starts from a learner task, not from a generic topic introduction.\n- It cites the local source file and PDF page for every governing factual cluster.\n- It explains the most likely exam trap instead of merely listing values.\n- It makes distractors plausible and diagnoses why each wrong option fails.\n- It avoids generic AI phrases, unsupported certainty, and motivational filler.\n\n## Before and after calibration\n\nWeak draft excerpt:\n\n> Fixture units help size plumbing systems, and vents help the pipes work properly.\n"
+        }
+      }
+    },
+    {
+      "dir": ".ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars/05-vitruvius-principles-and-departments",
+      "files": {
+        "exemplar-article.md": {
+          "chars": 1859,
+          "sha256": "7cd7f24aa71a6e63",
+          "preview": "# Vitruvius: Principles versus Departments of Architecture\n\n## Learning objective\n\nDistinguish Vitruvius's fundamental principles of architecture from his departments of architecture, so an LEA theory stem does not trap you with the wrong list.\n\n## The principles list\n\nIn Book I, Chapter II, Vitruvius states that architecture depends on Order, Arrangement, Eurythmy, Symmetry, Propriety, and Economy. He defines eurythmy as beauty and fitness in the adjustments of the members, and symmetry as the agreement between the members of the work and the relation between parts and the whole.\n\nSource: Vitruvius, Ten Books on Architecture, translated by Morris Hicky Morgan, Book I, Chapter II, PDF pp.33-34, extracted from `vitruvius-connection/001_Raw-Source-Layer/002-History/Vitruvius - 10 Books of Architecture.pdf`.\n\n## Economy is not just cheapness\n\nVitruvius describes economy as proper management of materials and site, with a thrifty balancing of cost and common sense in construction. In exam terms, do not reduce economy to minimum cost. It is fit use of resources under real site and supply constraints.\n\nSource: Vitruvius, Ten Books on Architecture, Book I, Chapter II, PDF p.36.\n\n## The departments list\n\nIn Book I, Chapter III, Vitruvius says there are three departments of architecture: the art of building, the making of time-pieces, and the construction of machinery. Building is then divided into fortified towns and public works on one side, and structures for private individuals on the other.\n"
+        },
+        "source-ledger.md": {
+          "chars": 2873,
+          "sha256": "f78d3c3a33ff4de0",
+          "preview": "# Source Ledger - Vitruvius: Principles versus Departments of Architecture\n\n## Source document\n\n- Document ID: `VITRUVIUS_TEN_BOOKS`\n- Relative path: `vitruvius-connection/001_Raw-Source-Layer/002-History/Vitruvius - 10 Books of Architecture.pdf`\n- SHA256: `e63f78260563ae36c5f1f85a07371df3d5740dfb13f5fc77453d88632238e020`\n- PDF page count: 376\n- Locator set: `vitruvius_principles_departments`\n- PDF pages used: 33, 34, 36\n\n## Verification status\n\n- Local PDF present: yes\n- Text extraction method: PyMuPDF via `uvx --from pymupdf`\n- Source tier: primary/local source layer\n- SME release status: pending\n\n## Extracted evidence snippets\n\n- Query: `ARCHITECTURE depends on Order`\n  - PDF page: not found by text extraction"
+        },
+        "exemplar-question-set.json": {
+          "chars": 3434,
+          "sha256": "a16d2eee9caaaea2",
+          "preview": "{\n  \"pack_id\": \"05-vitruvius-principles-and-departments\",\n  \"title\": \"Vitruvius: Principles versus Departments of Architecture\",\n  \"subject\": \"Theory and History of Architecture\",\n  \"status\": \"PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION\",\n  \"source_document_id\": \"VITRUVIUS_TEN_BOOKS\",\n  \"locator_set_id\": \"vitruvius_principles_departments\",\n  \"questions\": [\n    {\n      \"id\": \"vitruvius-principles-q1\",\n      \"stem\": \"Which set belongs to Vitruvius's fundamental principles of architecture in Book I, Chapter II?\",\n      \"options\": {\n        \"A\": \"Building, time-pieces, machinery\",\n        \"B\": \"Order, Arrangement, Eurythmy, Symmetry, Propriety, Economy\",\n        \"C\": \"Commodity, firmness, delight only\",\n        \"D\": \"Planning, design, construction, post-construction\"\n      },\n      \"correct_option_id\": \"B\",\n      \"rationale\": {\n        \"correct\": \"Book I, Chapter II lists Order, Arrangement, Eurythmy, Symmetry, Propriety, and Economy as the principles on which architecture depends.\",\n        \"distractors\": {\n          \"A\": \"That is the departments list from Chapter III.\","
+        },
+        "reviewer-memo.md": {
+          "chars": 1841,
+          "sha256": "925a82489db625f5",
+          "preview": "# Reviewer Memo - Vitruvius: Principles versus Departments of Architecture\n\n## Verdict\n\n`PASS_FOR_CALIBRATION`, `HOLD_FOR_DIRECT_PUBLICATION`.\n\nThis is a gold-standard calibration artifact, not a publishable Supabase bundle.\n\n## Why it passes for calibration\n\n- It starts from a learner task, not from a generic topic introduction.\n- It cites the local source file and PDF page for every governing factual cluster.\n- It explains the most likely exam trap instead of merely listing values.\n- It makes distractors plausible and diagnoses why each wrong option fails.\n- It avoids generic AI phrases, unsupported certainty, and motivational filler.\n\n## Before and after calibration\n\nWeak draft excerpt:\n\n> Vitruvius had many timeless ideas that shaped architecture as a discipline.\n"
+        }
+      }
+    }
+  ],
+  "vitruvius_inventory": {
+    "file_count": 2902,
+    "extension_counts": {
+      "[no_ext]": 4,
+      ".pdf": 388,
+      ".md": 1842,
+      ".ppt": 1,
+      ".xlsx": 1,
+      ".docx": 1,
+      ".doc": 1,
+      ".json": 664
+    },
+    "by_layer": {
+      ".DS_Store": 1,
+      "001_Raw-Source-Layer": 350,
+      "003_Canonical-Knowledge-Layer": 1176,
+      "002_Raw-Conversion-Layer": 1375
+    },
+    "law_folder_summary": [
+      {
+        "folder": "BERDE",
+        "file_count": 1,
+        "pdf_count": 1
+      },
+      {
+        "folder": "BP-220",
+        "file_count": 1,
+        "pdf_count": 1
+      },
+      {
+        "folder": "BP-344",
+        "file_count": 2,
+        "pdf_count": 2
+      },
+      {
+        "folder": "CHED",
+        "file_count": 1,
+        "pdf_count": 1
+      },
+      {
+        "folder": "CIAP",
+        "file_count": 1,
+        "pdf_count": 1
+      },
+      {
+        "folder": "DENR",
+        "file_count": 2,
+        "pdf_count": 2
+      },
+      {
+        "folder": "DEPED",
+        "file_count": 1,
+        "pdf_count": 1
+      },
+      {
+        "folder": "DOE",
+        "file_count": 1,
+        "pdf_count": 1
+      },
+      {
+        "folder": "DOH",
+        "file_count": 5,
+        "pdf_count": 3
+      },
+      {
+        "folder": "DPWH",
+        "file_count": 2,
+        "pdf_count": 2
+      },
+      {
+        "folder": "EO",
+        "file_count": 7,
+        "pdf_count": 7
+      },
+      {
+        "folder": "HB-3391",
+        "file_count": 1,
+        "pdf_count": 1
+      },
+      {
+        "folder": "HB-5207",
+        "file_count": 1,
+        "pdf_count": 1
+      },
+      {
+        "folder": "HLURB-DHSUD",
+        "file_count": 16,
+        "pdf_count": 16
+      },
+      {
+        "folder": "LGU",
+        "file_count": 56,
+        "pdf_count": 56
+      },
+      {
+        "folder": "PD-1067",
+        "file_count": 3,
+        "pdf_count": 3
+      },
+      {
+        "folder": "PD-1096",
+        "file_count": 15,
+        "pdf_count": 15
+      },
+      {
+        "folder": "PD-1151",
+        "file_count": 1,
+        "pdf_count": 1
+      },
+      {
+        "folder": "PD-1185",
+        "file_count": 1,
+        "pdf_count": 1
+      },
+      {
+        "folder": "PD-1216",
+        "file_count": 1,
+        "pdf_count": 1
+      },
+      {
+        "folder": "PD-1517",
+        "file_count": 1,
+        "pdf_count": 1
+      },
+      {
+        "folder": "PD-856",
+        "file_count": 2,
+        "pdf_count": 2
+      },
+      {
+        "folder": "PD-9514",
+        "file_count": 1,
+        "pdf_count": 1
+      },
+      {
+        "folder": "PD-957",
+        "file_count": 4,
+        "pdf_count": 4
+      },
+      {
+        "folder": "PRC",
+        "file_count": 6,
+        "pdf_count": 6
+      },
+      {
+        "folder": "RA-10066",
+        "file_count": 1,
+        "pdf_count": 1
+      },
+      {
+        "folder": "RA-11201",
+        "file_count": 2,
+        "pdf_count": 2
+      },
+      {
+        "folder": "RA-11285",
+        "file_count": 1,
+        "pdf_count": 1
+      },
+      {
+        "folder": "RA-11361",
+        "file_count": 1,
+        "pdf_count": 1
+      },
+      {
+        "folder": "RA-1378",
+        "file_count": 4,
+        "pdf_count": 3
+      },
+      {
+        "folder": "RA-386",
+        "file_count": 2,
+        "pdf_count": 2
+      },
+      {
+        "folder": "RA-4566",
+        "file_count": 1,
+        "pdf_count": 1
+      },
+      {
+        "folder": "RA-4726",
+        "file_count": 1,
+        "pdf_count": 1
+      },
+      {
+        "folder": "RA-6969",
+        "file_count": 1,
+        "pdf_count": 1
+      },
+      {
+        "folder": "RA-7160",
+        "file_count": 1,
+        "pdf_count": 1
+      },
+      {
+        "folder": "RA-7279",
+        "file_count": 1,
+        "pdf_count": 1
+      },
+      {
+        "folder": "RA-7899",
+        "file_count": 1,
+        "pdf_count": 1
+      },
+      {
+        "folder": "RA-7920",
+        "file_count": 0,
+        "pdf_count": 0
+      },
+      {
+        "folder": "RA-9003",
+        "file_count": 1,
+        "pdf_count": 1
+      },
+      {
+        "folder": "RA-9184",
+        "file_count": 4,
+        "pdf_count": 4
+      },
+      {
+        "folder": "RA-9257",
+        "file_count": 1,
+        "pdf_count": 1
+      },
+      {
+        "folder": "RA-9266",
+        "file_count": 2,
+        "pdf_count": 2
+      },
+      {
+        "folder": "RA-9279",
+        "file_count": 1,
+        "pdf_count": 1
+      },
+      {
+        "folder": "RA-9285",
+        "file_count": 1,
+        "pdf_count": 1
+      },
+      {
+        "folder": "RA-9514",
+        "file_count": 1,
+        "pdf_count": 1
+      },
+      {
+        "folder": "SB-2982",
+        "file_count": 1,
+        "pdf_count": 1
+      },
+      {
+        "folder": "UAP",
+        "file_count": 21,
+        "pdf_count": 21
+      },
+      {
+        "folder": "test",
+        "file_count": 6,
+        "pdf_count": 3
+      }
+    ]
+  },
+  "asks_for_reviewers": [
+    "Identify blockers in current exemplar structure/content for factual accuracy and learner effectiveness.",
+    "Recommend what to improve in existing five exemplars.",
+    "Recommend additional exemplar topics from vitruvius-connection law/source folders.",
+    "Recommend required source-ledger fields and validation gates.",
+    "Return concise prioritized recommendations; do not edit files."
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "schema_version": "slatecamp-claim-ledger-v1",
+  "pack_id": "05-vitruvius-principles-and-departments",
+  "title": "Vitruvius Principles and Departments",
+  "status": "PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION",
+  "source_status": "LOCAL_RAW_ONLY_THEORY_TEXT",
+  "source_pack_id": null,
+  "document": {
+    "document_id": "VITRUVIUS_TEN_BOOKS",
+    "document_code": "Vitruvius",
+    "source_family": "Vitruvius, Ten Books on Architecture, Morris Hicky Morgan translation",
+    "document_version_date_or_edition": "Morgan translation / historical theory source",
+    "relative_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Vitruvius - 10 Books of Architecture.pdf",
+    "sha256": "e63f78260563ae36c5f1f85a07371df3d5740dfb13f5fc77453d88632238e020",
+    "pdf_page_count": 376,
+    "source_hierarchy_tier": 1
+  },
+  "claims": [
+    {
+      "claim_id": "vitruvius-c1",
+      "claim_text": "Architecture depends on Order, Arrangement, Eurythmy, Symmetry, Propriety, and Economy.",
+      "claim_class": "THEORY_CONCEPT",
+      "article_location": "Principles list",
+      "locator": "Book I / Chapter II / page locator in source-ledger.md",
+      "extraction_status": "NOT_FOUND_BY_TEXT",
+      "visual_verification": {
+        "performed": false,
+        "by": null,
+        "date": null
+      },
+      "conflict_class": "translation/edition must be declared when used for theory claims",
+      "status": "NEEDS_REVIEW",
+      "linked_question_ids": [
+        "vitruvius-q1"
+      ],
+      "notes": "Manual/SME review required before publication."
+    },
+    {
+      "claim_id": "vitruvius-c2",
+      "claim_text": "Architecture consists of three departments: building, dialling, and mechanics.",
+      "claim_class": "THEORY_CONCEPT",
+      "article_location": "Departments list",
+      "locator": "Book I / Chapter III / source-ledger page locator",
+      "extraction_status": "FOUND_VERBATIM",
+      "visual_verification": {
+        "performed": false,
+        "by": null,
+        "date": null
+      },
+      "conflict_class": "translation/edition must be declared when used for theory claims",
+      "status": "SUPPORTED",
+      "linked_question_ids": [
+        "vitruvius-q2",
+        "vitruvius-q3"
+      ],
+      "notes": ""
+    },
+    {
+      "claim_id": "vitruvius-c3",
+      "claim_text": "For exam category distinction, do not mix principles with departments.",
+      "claim_class": "EXAM_STRATEGY",
+      "article_location": "Board shortcut",
+      "locator": "n/a",
+      "extraction_status": "NOT_SOURCE_REQUIRED",
+      "visual_verification": {
+        "performed": false,
+        "by": null,
+        "date": null
+      },
+      "conflict_class": "translation/edition must be declared when used for theory claims",
+      "status": "EXAM_STRATEGY_NO_SOURCE_NEEDED",
+      "linked_question_ids": [],
+      "notes": ""
+    }
+  ],
+  "sme_review": {
+    "status": "pending",
+    "reviewer_id": null,
+    "date": null,
+    "notes": "Calibration only; not for direct learner-facing publication."
+  }
+}

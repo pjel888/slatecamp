@@ -1,0 +1,85 @@
+{
+  "schema_version": "slatecamp-claim-ledger-v1",
+  "pack_id": "08-pd957-license-to-sell-registration-gate",
+  "title": "PD 957 License to Sell Registration Gate",
+  "status": "PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION",
+  "source_status": "LOCAL_RAW_ONLY",
+  "source_pack_id": "source-pack-pd-957",
+  "documents": [
+    {
+      "document_id": "PD957_IRR",
+      "document_code": "PD 957",
+      "source_family": "PD 957 IRR",
+      "document_version_date_or_edition": "Revised IRR as local source file",
+      "relative_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-957/PD 957 IRR - Subdivision and Condominium IRR.pdf",
+      "sha256": "1f9ab17a816885cfdbafafc03e3e9b64470a737447129a32a459836d6773f9ea",
+      "pdf_page_count": 68,
+      "source_hierarchy_tier": 1
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "pd957-c1",
+      "claim_text": "No owner or dealer shall sell any disposable subdivision lot or condominium unit in the registered project without a license to sell issued by the Board.",
+      "claim_class": "LEGAL_PROCESS",
+      "article_location": "The rule that decides the answer",
+      "locator": "Rule IV / Section 11 / PDF p.47",
+      "extraction_status": "FOUND_VERBATIM",
+      "visual_verification": {
+        "performed": false,
+        "by": null,
+        "date": null
+      },
+      "conflict_class": "none_detected_by_script",
+      "status": "SUPPORTED",
+      "linked_question_ids": [
+        "pd957-license-q1"
+      ],
+      "notes": ""
+    },
+    {
+      "claim_id": "pd957-c2",
+      "claim_text": "The license to sell is issued within two weeks from registration of each project after proper application and requirements.",
+      "claim_class": "LEGAL_PROCESS",
+      "article_location": "Timing is attached to registration",
+      "locator": "Rule IV / Section 11 / PDF p.47",
+      "extraction_status": "FOUND_VERBATIM",
+      "visual_verification": {
+        "performed": false,
+        "by": null,
+        "date": null
+      },
+      "conflict_class": "none_detected_by_script",
+      "status": "SUPPORTED",
+      "linked_question_ids": [
+        "pd957-license-q2"
+      ],
+      "notes": ""
+    },
+    {
+      "claim_id": "pd957-c3",
+      "claim_text": "Application evidence includes public-offering materials such as circulars, prospectuses, brochures, advertisements, or communications.",
+      "claim_class": "LEGAL_PROCESS",
+      "article_location": "Public offering materials are part of the paper trail",
+      "locator": "Rule IV / application documentary requirement excerpt / PDF p.43",
+      "extraction_status": "FOUND_VERBATIM",
+      "visual_verification": {
+        "performed": false,
+        "by": null,
+        "date": null
+      },
+      "conflict_class": "none_detected_by_script",
+      "status": "SUPPORTED",
+      "linked_question_ids": [
+        "pd957-license-q3"
+      ],
+      "notes": ""
+    }
+  ],
+  "sme_review": {
+    "status": "pending",
+    "reviewer_id": null,
+    "date": null,
+    "notes": "Calibration only; not for direct learner-facing publication."
+  }
+}

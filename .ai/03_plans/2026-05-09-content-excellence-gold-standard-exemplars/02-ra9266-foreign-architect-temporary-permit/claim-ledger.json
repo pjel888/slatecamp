@@ -1,0 +1,65 @@
+{
+  "schema_version": "slatecamp-claim-ledger-v1",
+  "pack_id": "02-ra9266-foreign-architect-temporary-permit",
+  "title": "RA 9266 Foreign Architect Temporary/Special Permit",
+  "status": "PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION",
+  "source_status": "LOCAL_RAW_NEEDS_RECONCILIATION",
+  "source_pack_id": "source-pack-ra-9266-irr",
+  "document": {
+    "document_id": "RA9266_IRR",
+    "document_code": "RA 9266",
+    "source_family": "RA 9266 IRR",
+    "document_version_date_or_edition": "Architecture Act of 2004 IRR",
+    "relative_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+    "sha256": "d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+    "pdf_page_count": 24,
+    "source_hierarchy_tier": 1
+  },
+  "claims": [
+    {
+      "claim_id": "ra9266-foreign-c1",
+      "claim_text": "A foreign architect must secure the required temporary/special permit before practicing architecture in the Philippines.",
+      "claim_class": "LEGAL_PROCESS",
+      "article_location": "The rule that decides the answer",
+      "locator": "RA 9266 IRR / Section 38 / PDF locator in source-ledger.md",
+      "extraction_status": "FOUND_VERBATIM",
+      "visual_verification": {
+        "performed": false,
+        "by": null,
+        "date": null
+      },
+      "conflict_class": "authority_host_unverified",
+      "status": "SUPPORTED",
+      "linked_question_ids": [
+        "ra9266-foreign-q1",
+        "ra9266-foreign-q2"
+      ],
+      "notes": ""
+    },
+    {
+      "claim_id": "ra9266-foreign-c2",
+      "claim_text": "The exam trap is separating foreign-architect authorization from ordinary employment or consultancy permission.",
+      "claim_class": "EXAM_STRATEGY",
+      "article_location": "Board shortcut",
+      "locator": "n/a",
+      "extraction_status": "NOT_SOURCE_REQUIRED",
+      "visual_verification": {
+        "performed": false,
+        "by": null,
+        "date": null
+      },
+      "conflict_class": "authority_host_unverified",
+      "status": "EXAM_STRATEGY_NO_SOURCE_NEEDED",
+      "linked_question_ids": [
+        "ra9266-foreign-q3"
+      ],
+      "notes": ""
+    }
+  ],
+  "sme_review": {
+    "status": "pending",
+    "reviewer_id": null,
+    "date": null,
+    "notes": "Calibration only; not for direct learner-facing publication."
+  }
+}

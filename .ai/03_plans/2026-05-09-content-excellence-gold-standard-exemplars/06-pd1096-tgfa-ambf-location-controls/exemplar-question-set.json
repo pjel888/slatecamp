@@ -1,0 +1,73 @@
+{
+  "pack_id": "06-pd1096-tgfa-ambf-location-controls",
+  "title": "PD 1096 Rule VII: TGFA, AMBF, and Location Controls",
+  "subject": "Building Laws / National Building Code",
+  "status": "PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION",
+  "source_document_id": "PD1096_RIRR_2004",
+  "locator_set_id": "pd1096_rule_vii_tgfa_ambf",
+  "questions": [
+    {
+      "id": "pd1096-tgfa-q1",
+      "stem": "Under PD 1096 Rule VII Section 704, which site condition is required before a building may be constructed?",
+      "options": {
+        "A": "It must adjoin or directly access a public space, yard, or street on at least one side.",
+        "B": "It must be surrounded by streets on all sides.",
+        "C": "It must have no side yard if firewalls are used.",
+        "D": "It must use the maximum TGFA before any location check."
+      },
+      "correct_option_id": "A",
+      "rationale": {
+        "correct": "Section 704 states the building must adjoin or have direct access to a public space, yard, or street on at least one side.",
+        "distractors": {
+          "B": "The extracted rule requires at least one side, not all sides.",
+          "C": "Firewall/setback issues are separate controls, not the base location rule.",
+          "D": "TGFA comes under Section 705; it does not replace the Section 704 location rule."
+        },
+        "takeaway": "Check location/property access before doing area arithmetic."
+      },
+      "source_locator": "PD 1096 RIRR 2004, Rule VII, Section 704, PDF p.81."
+    },
+    {
+      "id": "pd1096-tgfa-q2",
+      "stem": "A question asks for Allowable Maximum Total Gross Floor Area. Which abbreviation should control the computation?",
+      "options": {
+        "A": "AMBF",
+        "B": "TGFA",
+        "C": "FSEC",
+        "D": "NPCP"
+      },
+      "correct_option_id": "B",
+      "rationale": {
+        "correct": "TGFA means Total Gross Floor Area. Section 705 specifically governs allowable floor areas and TGFA limitation.",
+        "distractors": {
+          "A": "AMBF is the building footprint, not total floor area.",
+          "C": "FSEC is a Fire Safety Evaluation Clearance term, not the Rule VII area metric.",
+          "D": "NPCP is the plumbing code, not the NBCP floor-area control."
+        },
+        "takeaway": "Do not swap TGFA and AMBF; both appear in development-control questions."
+      },
+      "source_locator": "PD 1096 RIRR 2004, Rule VII, Section 705, PDF p.83."
+    },
+    {
+      "id": "pd1096-tgfa-q3",
+      "stem": "For eaves over required windows under the cited Section 704 excerpt, what minimum distance from side and rear property lines is stated?",
+      "options": {
+        "A": "300 mm",
+        "B": "500 mm",
+        "C": "750 mm",
+        "D": "1200 mm"
+      },
+      "correct_option_id": "C",
+      "rationale": {
+        "correct": "The extracted text states that eaves over required windows shall not be less than 750 mm from side and rear property lines.",
+        "distractors": {
+          "A": "300 mm is too small and not the cited eaves distance.",
+          "B": "500 mm is not the cited value.",
+          "D": "1200 mm appears in other accessibility contexts; it is not the eaves distance in Section 704."
+        },
+        "takeaway": "When the stem says eaves over required windows, answer the Section 704 value, not a general setback memory."
+      },
+      "source_locator": "PD 1096 RIRR 2004, Rule VII, Section 704, PDF p.81."
+    }
+  ]
+}

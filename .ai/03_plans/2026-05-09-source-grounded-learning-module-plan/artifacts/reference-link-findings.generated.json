@@ -1,0 +1,68 @@
+{
+  "generated_at": "2026-05-09T05:43:49Z",
+  "note": "User-supplied writing and knowledge-curation references. These are process references, not legal/code authority.",
+  "sources": [
+    {
+      "name": "Voxyz Quill Pack",
+      "url": "https://www.voxyz.ai/marketplace/quill",
+      "status_checked": "200 text/html",
+      "observed_useful_patterns": [
+        "Drafts in user voice by default",
+        "Default off-the-record; publishing requires explicit toggle",
+        "Voice samples, post history, banned words, and self-review loop",
+        "Runtime map: IDENTITY.md, SOUL.md, AGENTS.md, USER.md, TOOLS.md, optional MEMORY/HANDOFF/HEARTBEAT"
+      ],
+      "slatecamp_use": "Voice calibration, draft-only editorial safety, approved exemplar library, self-review gate."
+    },
+    {
+      "name": "Research Paper Writing Skills",
+      "url": "https://github.com/Master-cai/Research-Paper-Writing-Skills",
+      "status_checked": "200 GitHub + raw README/SKILL fetched",
+      "observed_useful_patterns": [
+        "Clarify story before sentence edits",
+        "One paragraph per message",
+        "Reverse outlining",
+        "Claim-evidence alignment",
+        "Adversarial reviewer-style review"
+      ],
+      "slatecamp_use": "Mini-outline, reverse-outline, skeptical reviewer gate, claim-evidence map."
+    },
+    {
+      "name": "Anti-AI-Slop Writing",
+      "url": "https://github.com/jalaalrd/anti-ai-slop-writing",
+      "status_checked": "200 GitHub + raw README/SKILL fetched",
+      "observed_useful_patterns": [
+        "Banned AI vocabulary and phrase lists",
+        "Avoid rule-of-three default, uniform sentence length, and identical paragraph structures",
+        "Concrete specifics over generic claims",
+        "Never invent anecdotes, data, studies, numbers, or quotes"
+      ],
+      "slatecamp_use": "Anti-slop audit for articles, rationales, and reviewer memos."
+    },
+    {
+      "name": "Stanford STORM research page",
+      "url": "https://storm-project.stanford.edu/research/storm/",
+      "status_checked": "200 text/html",
+      "observed_useful_patterns": [
+        "Pre-writing stage matters",
+        "Discover diverse perspectives",
+        "Simulate perspective-specific question asking against grounded sources",
+        "Curate collected information into an outline before writing",
+        "Evaluate outline quality"
+      ],
+      "slatecamp_use": "Perspective-question pass before article drafting and outline acceptance before prose."
+    },
+    {
+      "name": "Stanford STORM Discover / Co-STORM",
+      "url": "https://storm.genie.stanford.edu/discover",
+      "status_checked": "200 text/html; deeper use requires terms agreement and sign-in",
+      "observed_useful_patterns": [
+        "Interactive knowledge curation prototype",
+        "Generated content can make mistakes",
+        "Users are warned to check important information",
+        "No personally identifiable information in inputs"
+      ],
+      "slatecamp_use": "External curation tools are lead generators only; source verification remains local/official."
+    }
+  ]
+}

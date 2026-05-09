@@ -1,0 +1,83 @@
+{
+  "schema_version": "slatecamp-claim-ledger-v1",
+  "pack_id": "04-npcp-fixture-unit-and-venting",
+  "title": "National Plumbing Code Fixture Units and Venting",
+  "status": "PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION",
+  "source_status": "LOCAL_RAW_ONLY_NEEDS_EDITION_CHECK",
+  "source_pack_id": null,
+  "document": {
+    "document_id": "NPCP_REVISED",
+    "document_code": "NPCP",
+    "source_family": "Revised National Plumbing Code of the Philippines",
+    "document_version_date_or_edition": "edition not yet reconciled in ledger",
+    "relative_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Revised National Plumbing Code of the Philippines.pdf",
+    "sha256": "c4ec30ec3ffe3b39513a033ebc2cfa614bd201d25c5578e1847e7f359fed3f5d",
+    "pdf_page_count": 225,
+    "source_hierarchy_tier": 1
+  },
+  "claims": [
+    {
+      "claim_id": "npcp-c1",
+      "claim_text": "One fixture unit is equivalent to 28.3 liters per minute or 1 cubic foot per minute.",
+      "claim_class": "TECHNICAL_STANDARD",
+      "article_location": "The rule that decides the answer",
+      "locator": "Definitions / Fixture Unit / PDF p.24",
+      "extraction_status": "NOT_FOUND_BY_TEXT",
+      "visual_verification": {
+        "performed": false,
+        "by": null,
+        "date": null
+      },
+      "conflict_class": "edition/provenance not yet reconciled",
+      "status": "NEEDS_REVIEW",
+      "linked_question_ids": [
+        "npcp-fixture-q1"
+      ],
+      "notes": "Manual/SME review required before publication."
+    },
+    {
+      "claim_id": "npcp-c2",
+      "claim_text": "Section 311.4 prohibits using a vent pipe as a soil or waste pipe, or a soil/waste pipe as a vent, except as provided.",
+      "claim_class": "LEGAL_PROCESS",
+      "article_location": "Venting trap",
+      "locator": "Section 311.4 / PDF p.44",
+      "extraction_status": "NOT_FOUND_BY_TEXT",
+      "visual_verification": {
+        "performed": false,
+        "by": null,
+        "date": null
+      },
+      "conflict_class": "edition/provenance not yet reconciled",
+      "status": "NEEDS_REVIEW",
+      "linked_question_ids": [
+        "npcp-vent-q2"
+      ],
+      "notes": "Manual/SME review required before publication."
+    },
+    {
+      "claim_id": "npcp-c3",
+      "claim_text": "A loop or circuit vent connects downstream of the last fixture connection on a horizontal soil or waste branch.",
+      "claim_class": "TECHNICAL_STANDARD",
+      "article_location": "Loop vent definition",
+      "locator": "Definitions / Loop or Circuit Vent / PDF p.29",
+      "extraction_status": "FOUND_VERBATIM",
+      "visual_verification": {
+        "performed": false,
+        "by": null,
+        "date": null
+      },
+      "conflict_class": "edition/provenance not yet reconciled",
+      "status": "SUPPORTED",
+      "linked_question_ids": [
+        "npcp-loopvent-q3"
+      ],
+      "notes": ""
+    }
+  ],
+  "sme_review": {
+    "status": "pending",
+    "reviewer_id": null,
+    "date": null,
+    "notes": "Calibration only; not for direct learner-facing publication."
+  }
+}

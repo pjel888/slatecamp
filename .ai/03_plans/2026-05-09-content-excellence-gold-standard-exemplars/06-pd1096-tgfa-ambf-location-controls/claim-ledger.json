@@ -1,0 +1,104 @@
+{
+  "schema_version": "slatecamp-claim-ledger-v1",
+  "pack_id": "06-pd1096-tgfa-ambf-location-controls",
+  "title": "PD 1096 Rule VII: TGFA, AMBF, and Location Controls",
+  "status": "PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION",
+  "source_status": "LOCAL_RAW_NEEDS_RECONCILIATION",
+  "source_pack_id": "source-pack-pd-1096-rirr",
+  "documents": [
+    {
+      "document_id": "PD1096_RIRR_2004",
+      "document_code": "PD 1096",
+      "source_family": "PD 1096 2004 Revised IRR",
+      "document_version_date_or_edition": "2004 Revised IRR",
+      "relative_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "sha256": "ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "pdf_page_count": 368,
+      "source_hierarchy_tier": 1
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "pd1096-c1",
+      "claim_text": "No building shall be constructed unless it adjoins or has direct access to a public space, yard, or street on at least one side.",
+      "claim_class": "LEGAL_SCOPE",
+      "article_location": "The rule that decides the answer",
+      "locator": "Rule VII / Section 704 / PDF p.81",
+      "extraction_status": "FOUND_VERBATIM",
+      "visual_verification": {
+        "performed": false,
+        "by": null,
+        "date": null
+      },
+      "conflict_class": "source_pack_conflict_status_unknown_for_this_new_pack",
+      "status": "SUPPORTED",
+      "linked_question_ids": [
+        "pd1096-tgfa-q1"
+      ],
+      "notes": ""
+    },
+    {
+      "claim_id": "pd1096-c2",
+      "claim_text": "Eaves over required windows shall not be less than 750 mm from side and rear property lines.",
+      "claim_class": "LEGAL_DIMENSION",
+      "article_location": "The rule that decides the answer",
+      "locator": "Rule VII / Section 704 / PDF p.81",
+      "extraction_status": "FOUND_VERBATIM",
+      "visual_verification": {
+        "performed": false,
+        "by": null,
+        "date": null
+      },
+      "conflict_class": "source_pack_conflict_status_unknown_for_this_new_pack",
+      "status": "SUPPORTED",
+      "linked_question_ids": [
+        "pd1096-tgfa-q3"
+      ],
+      "notes": ""
+    },
+    {
+      "claim_id": "pd1096-c3",
+      "claim_text": "Allowable Maximum Total Gross Floor Area shall only be as allowed under Rule VII.",
+      "claim_class": "LEGAL_PROCESS",
+      "article_location": "Do not collapse TGFA into footprint",
+      "locator": "Rule VII / Section 705 / PDF p.83",
+      "extraction_status": "FOUND_VERBATIM",
+      "visual_verification": {
+        "performed": false,
+        "by": null,
+        "date": null
+      },
+      "conflict_class": "source_pack_conflict_status_unknown_for_this_new_pack",
+      "status": "SUPPORTED",
+      "linked_question_ids": [
+        "pd1096-tgfa-q2"
+      ],
+      "notes": ""
+    },
+    {
+      "claim_id": "pd1096-c4",
+      "claim_text": "AMBF is a footprint/firewall control separate from TGFA.",
+      "claim_class": "EXAM_STRATEGY",
+      "article_location": "AMBF is a separate control",
+      "locator": "Rule VII / Section 704.4 / PDF p.81",
+      "extraction_status": "FOUND_PARAPHRASED",
+      "visual_verification": {
+        "performed": false,
+        "by": null,
+        "date": null
+      },
+      "conflict_class": "source_pack_conflict_status_unknown_for_this_new_pack",
+      "status": "SUPPORTED",
+      "linked_question_ids": [
+        "pd1096-tgfa-q2"
+      ],
+      "notes": ""
+    }
+  ],
+  "sme_review": {
+    "status": "pending",
+    "reviewer_id": null,
+    "date": null,
+    "notes": "Calibration only; not for direct learner-facing publication."
+  }
+}

@@ -145,3 +145,7 @@ Other: `dev`, `dev:turbo`, `build`, `lint`, `type-check` (check), `db:seed`, `de
 - New major feature is built
 - Stats drift (article count, component count, test count)
 - Any root config file is added or removed
+
+## Local Source Verification Hub
+
+For law/code/content-production claims, use `.ai/00_system/vitruvius-source-reference.md` as the local source map. Primary truth starts in `vitruvius-connection/001_Raw-Source-Layer/`; `002_Raw-Conversion-Layer/` is search/OCR support only; `003_Canonical-Knowledge-Layer/` is discovery/context only. Learner-facing legal/code claims require raw source path, SHA256, locator, claim class, extraction status, and SME/release status.

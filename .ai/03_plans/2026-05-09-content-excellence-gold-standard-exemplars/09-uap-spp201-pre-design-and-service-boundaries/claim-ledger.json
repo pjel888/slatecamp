@@ -1,0 +1,113 @@
+{
+  "schema_version": "slatecamp-claim-ledger-v1",
+  "pack_id": "09-uap-spp201-pre-design-and-service-boundaries",
+  "title": "UAP SPP 201 Pre-Design and Service Boundaries",
+  "status": "PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION",
+  "source_status": "LOCAL_RAW_ONLY",
+  "source_pack_id": null,
+  "documents": [
+    {
+      "document_id": "UAP_SPP_201",
+      "document_code": "UAP SPP 201",
+      "source_family": "UAP SPP Document 201",
+      "document_version_date_or_edition": "SPP Document 201 source PDF",
+      "relative_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+      "sha256": "d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
+      "pdf_page_count": 59,
+      "source_hierarchy_tier": 1
+    },
+    {
+      "document_id": "UAP_DOC_401_402",
+      "document_code": "UAP Document 401-402",
+      "source_family": "UAP Document 401-402",
+      "document_version_date_or_edition": "UAP Document 401-402 source PDF",
+      "relative_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+      "sha256": "5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
+      "pdf_page_count": 10,
+      "source_hierarchy_tier": 1
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "uap-c1",
+      "claim_text": "SPP 201 covers Pre-design Services including consultation, pre-feasibility studies, architectural programming, and space planning.",
+      "claim_class": "LEGAL_SCOPE",
+      "article_location": "The rule that decides the answer",
+      "locator": "SPP 201 / pp.36, 42, 43, 48, 49",
+      "extraction_status": "FOUND_VERBATIM",
+      "visual_verification": {
+        "performed": false,
+        "by": null,
+        "date": null
+      },
+      "conflict_class": "two-source-pack; no conflict detected by script",
+      "status": "SUPPORTED",
+      "linked_question_ids": [
+        "uap-predesign-q1",
+        "uap-consultation-q2"
+      ],
+      "notes": ""
+    },
+    {
+      "claim_id": "uap-c2",
+      "claim_text": "Consultation involves oral/written advice, direction, conferences, evaluations, and appraisals whether or not the client pursues the project.",
+      "claim_class": "LEGAL_SCOPE",
+      "article_location": "Consultation is still professional service",
+      "locator": "SPP 201 / Consultation / PDF p.42",
+      "extraction_status": "FOUND_VERBATIM",
+      "visual_verification": {
+        "performed": false,
+        "by": null,
+        "date": null
+      },
+      "conflict_class": "two-source-pack; no conflict detected by script",
+      "status": "SUPPORTED",
+      "linked_question_ids": [
+        "uap-consultation-q2"
+      ],
+      "notes": ""
+    },
+    {
+      "claim_id": "uap-c3",
+      "claim_text": "Document 401-402 does not cover Fulltime Construction Supervision, Project/Construction Management, Pre-Design Services, allied services, Design-Build, or construction agreement work.",
+      "claim_class": "LEGAL_SCOPE",
+      "article_location": "Boundary trap",
+      "locator": "UAP Document 401-402 / Article 5-6 excerpt / PDF p.1",
+      "extraction_status": "FOUND_VERBATIM",
+      "visual_verification": {
+        "performed": false,
+        "by": null,
+        "date": null
+      },
+      "conflict_class": "two-source-pack; no conflict detected by script",
+      "status": "SUPPORTED",
+      "linked_question_ids": [
+        "uap-boundary-q3"
+      ],
+      "notes": ""
+    },
+    {
+      "claim_id": "uap-c4",
+      "claim_text": "Contract Documents Phase equals 85% of the work, with remaining 15% split between Article 1723 liability and construction-phase service.",
+      "claim_class": "LEGAL_SCOPE",
+      "article_location": "Compensation trap",
+      "locator": "UAP Document 401-402 / PDF p.8",
+      "extraction_status": "FOUND_VERBATIM",
+      "visual_verification": {
+        "performed": false,
+        "by": null,
+        "date": null
+      },
+      "conflict_class": "two-source-pack; no conflict detected by script",
+      "status": "SUPPORTED",
+      "linked_question_ids": [],
+      "notes": ""
+    }
+  ],
+  "sme_review": {
+    "status": "pending",
+    "reviewer_id": null,
+    "date": null,
+    "notes": "Calibration only; not for direct learner-facing publication."
+  }
+}
