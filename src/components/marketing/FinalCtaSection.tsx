@@ -11,7 +11,7 @@ export const FinalCtaSection = ({
   isLoggedIn: boolean
 }) => (
   <section aria-label='Get started' className='px-6 pb-24'>
-    <div className='relative mx-auto max-w-[1200px] overflow-hidden rounded-[28px] bg-camp-black px-8 py-20 text-center text-white noise'>
+    <div className='relative mx-auto max-w-[1200px] overflow-hidden rounded-lg bg-camp-black px-8 py-20 text-center text-white noise'>
       <div className='absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(245,166,35,0.24),transparent_34%),radial-gradient(circle_at_80%_10%,rgba(59,130,246,0.22),transparent_30%)]' />
       <div className='relative z-10'>
         <ScrollReveal y={20} duration={0.4} delay={0}>

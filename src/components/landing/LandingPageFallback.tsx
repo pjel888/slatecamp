@@ -15,7 +15,7 @@ import { ROUTES } from '@/lib/constants'
 export function LandingPageFallback() {
   return (
     <div id='top' className='min-h-screen bg-page-bg'>
-      <MarketingNav activeRoute='/' logoScrollsToTop isLoggedIn={false} showSecondaryNav={false} fixed={false} />
+      <MarketingNav activeRoute='/' logoScrollsToTop isLoggedIn={false} />
       <main>
         <HeroSection
           ctaHref={ROUTES.auth.register}

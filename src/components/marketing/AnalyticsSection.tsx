@@ -16,7 +16,7 @@ const LOOP = [
 ] as const
 
 const ReadinessMapMockup = () => (
-  <div className='rounded-[22px] border border-border-design bg-white p-5 shadow-sm'>
+  <div className='rounded-lg border border-border-design bg-white p-5 shadow-sm'>
     <div className='flex items-center justify-between gap-4'>
       <div>
         <div className='font-[family-name:var(--font-dm-mono)] text-[11px] uppercase tracking-[0.16em] text-camp-cobalt'>
@@ -35,7 +35,7 @@ const ReadinessMapMockup = () => (
         { topic: 'PD 1096 light and ventilation', status: 'Review', pct: 63, color: 'bg-camp-amber' },
         { topic: 'Professional practice terms', status: 'Stable', pct: 82, color: 'bg-camp-green' },
       ].map((item) => (
-        <div key={item.topic} className='rounded-[14px] border border-border-design p-3'>
+        <div key={item.topic} className='rounded-md border border-border-design p-3'>
           <div className='mb-2 flex items-center justify-between gap-3 text-[12px]'>
             <span className='font-semibold text-camp-black'>{item.topic}</span>
             <span className='font-[family-name:var(--font-dm-mono)] text-[10px] uppercase tracking-[0.12em] text-text-2'>
@@ -49,7 +49,7 @@ const ReadinessMapMockup = () => (
       ))}
     </div>
 
-    <div className='mt-4 rounded-[14px] bg-camp-black p-4 text-white'>
+    <div className='mt-4 rounded-md bg-camp-black p-4 text-white'>
       <p className='text-[12px] font-semibold text-camp-amber'>Weak spots are not the danger.</p>
       <p className='mt-1 text-[12px] leading-relaxed text-white/60'>
         The risk is finding them too late. Start with a small practice check and turn uncertainty into a study plan.

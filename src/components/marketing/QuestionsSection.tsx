@@ -23,7 +23,7 @@ const QuizPreview = () => {
   const correctIndex = 1
 
   return (
-    <div className='overflow-hidden rounded-[22px] border border-border-design bg-white shadow-sm'>
+    <div className='overflow-hidden rounded-lg border border-border-design bg-white/85 shadow-sm backdrop-blur-md'>
       <div className='relative overflow-hidden bg-camp-cobalt px-4 py-3 noise-heavy'>
         <div className='relative z-10 flex items-center justify-between gap-3'>
           <div>
@@ -38,7 +38,7 @@ const QuizPreview = () => {
         </div>
       </div>
 
-      <div className='p-4 sm:p-5'>
+      <div className='px-1 pt-1 sm:px-2 sm:pt-2 pb-0'>
         <p className='mb-4 text-[14px] font-semibold leading-snug text-camp-black'>
           A classmate keeps mixing up the eave clearance rule with setback bands. What should they understand first?
         </p>
@@ -58,7 +58,7 @@ const QuizPreview = () => {
                   setSelected(index)
                   setSubmitted(false)
                 }}
-                className={`flex w-full items-start gap-3 rounded-[10px] border px-3 py-3 text-left text-[12px] leading-relaxed transition ${
+                className={`flex w-full items-start gap-3 rounded-md border px-3 py-3 text-left text-[14px] leading-relaxed transition ${
                   isCorrect
                     ? 'border-camp-green bg-success-50 text-camp-green'
                     : isWrong
@@ -83,32 +83,29 @@ const QuizPreview = () => {
           })}
         </fieldset>
 
-        <div className='mt-4 rounded-[14px] border border-border-design bg-muted p-2'>
+        <div className='rounded-md border border-border-design bg-muted p-1'>
           <button
             type='button'
             disabled={selected === null}
             onClick={() => setSubmitted(true)}
-            className='flex w-full items-center justify-between rounded-[10px] bg-camp-black px-3 py-2 text-left text-[12px] font-semibold text-white transition disabled:cursor-not-allowed disabled:opacity-40'
+            className='group flex w-full items-center justify-between rounded-md bg-camp-black px-2 py-1.5 text-left text-[12px] font-semibold text-white transition hover:bg-camp-black/90 disabled:cursor-not-allowed disabled:opacity-40'
           >
             <span>{submitted ? 'Submitted' : 'Submit answer'}</span>
-            <span className='flex h-6 w-20 items-center rounded-full bg-white/12 p-0.5' aria-hidden='true'>
-              <span className={`h-5 w-5 rounded-full bg-camp-amber transition ${submitted ? 'translate-x-14' : ''}`} />
+            <span className='flex h-5 w-[72px] items-center rounded-full bg-white/12 p-0.5 transition group-hover:bg-white/20' aria-hidden='true'>
+              <span className={`h-4 w-4 rounded-full bg-camp-amber transition group-hover:bg-camp-amber/90 ${submitted ? 'translate-x-12' : ''}`} />
             </span>
           </button>
-          <p className='mt-2 px-1 text-[10px] text-text-2'>
-            Slide-style affordance shown visually; the button remains keyboard and screen-reader friendly.
-          </p>
         </div>
 
         {submitted && (
-          <div className='mt-4 rounded-[14px] border border-camp-green/20 bg-camp-green/8 p-4'>
+          <div className='mt-4 rounded-md border border-camp-green/20 bg-camp-green/8 p-4'>
             <div className='font-[family-name:var(--font-dm-mono)] text-[11px] tracking-[.15em] uppercase text-camp-green'>
               Explanation
             </div>
             <p className='mt-2 text-[12px] leading-relaxed text-text-2'>
               Good practice does not stop at the answer. The next step is to separate the ideas: an overhang clearance rule protects the distance from side/rear property lines, while setback bands explain where the main building mass may sit.
             </p>
-            <div className='mt-3 rounded-[10px] bg-white px-3 py-2 text-[11px] text-camp-cobalt'>
+            <div className='mt-3 rounded-md bg-white px-3 py-2 text-[11px] text-camp-cobalt'>
               Study signal: weak topic found · Setbacks and envelope visualization
             </div>
           </div>
@@ -119,7 +116,7 @@ const QuizPreview = () => {
 }
 
 export const QuestionsSection = () => (
-  <FeatureSectionLayout>
+  <FeatureSectionLayout className='!py-8'>
     <StaggerParent>
       <StaggerItem>
         <SectionEyebrow label='Quizzes' />
@@ -167,7 +164,7 @@ export const QuestionsSection = () => (
       </StaggerItem>
     </StaggerParent>
 
-    <ScrollReveal delay={0.15} y={20}>
+    <ScrollReveal delay={0.15} y={0} className="flex items-end">
       <QuizPreview />
     </ScrollReveal>
   </FeatureSectionLayout>

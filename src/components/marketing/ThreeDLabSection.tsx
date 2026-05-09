@@ -11,7 +11,7 @@ import { ScrollReveal } from '@/components/motion/ScrollReveal'
 import { ROUTES } from '@/lib/constants'
 
 const ThreeDMockup = () => (
-  <div className='relative overflow-hidden rounded-[22px] border border-white/10 bg-camp-black shadow-[0_24px_60px_rgba(0,0,0,0.35)]'>
+  <div className='relative overflow-hidden rounded-lg border border-white/10 bg-camp-black shadow-[0_24px_60px_rgba(0,0,0,0.35)]'>
     <div className='absolute inset-0 opacity-70 [background-image:linear-gradient(rgba(126,179,255,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(126,179,255,0.08)_1px,transparent_1px)] [background-size:24px_24px]' />
     <div className='relative z-10'>
       <div className='flex items-center justify-between border-b border-white/10 px-4 py-3'>
@@ -63,7 +63,7 @@ const ThreeDMockup = () => (
 
 export const ThreeDLabSection = () => (
   <div id='three-d-lab-preview' className='scroll-mt-24'>
-    <FeatureSectionLayout dark flip>
+    <FeatureSectionLayout dark flip className='!py-8'>
       <StaggerParent>
         <StaggerItem>
           <SectionEyebrow label='3D Lab' dark />

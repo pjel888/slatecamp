@@ -10,7 +10,7 @@ import { ScrollReveal } from '@/components/motion/ScrollReveal'
 import { ROUTES } from '@/lib/constants'
 
 const WikiMockup = () => (
-  <div className='overflow-hidden rounded-[22px] border border-border-design bg-white shadow-sm'>
+  <div className='overflow-hidden rounded-lg border border-border-design bg-white shadow-sm'>
     <div className='flex items-center justify-between gap-3 border-b border-border-design px-4 py-3'>
       <div>
         <div className='font-[family-name:var(--font-dm-mono)] text-[11px] uppercase tracking-[.15em] text-camp-green'>
@@ -39,7 +39,7 @@ const WikiMockup = () => (
       <p className='mb-3 text-[12px] leading-relaxed text-text-2'>
         A setback is easier to remember when you picture the lot shrinking first. The remaining area is the buildable envelope: the zone where the main building mass can be studied before checking other limits.
       </p>
-      <div className='mb-3 rounded-[10px] bg-camp-black px-3 py-2 font-[family-name:var(--font-dm-mono)] text-[11px] text-success-400'>
+      <div className='mb-3 rounded-md bg-camp-black px-3 py-2 font-[family-name:var(--font-dm-mono)] text-[11px] text-success-400'>
         Source trail: PD 1096 / NBCP locator attached where verified
       </div>
       <div className='flex flex-wrap items-center gap-1.5'>

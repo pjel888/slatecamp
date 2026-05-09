@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from 'next'
+import { Plus_Jakarta_Sans } from 'next/font/google'
 import { siteConfig } from '@/lib/constants/site'
 
 import { ThemeProvider } from '@/components/shared/ThemeProvider'
@@ -11,6 +12,13 @@ import { DevModeOverlay } from '@/components/dev/dev-mode-overlay'
 import './globals.css'
 
 const isDemo = !process.env.NEXT_PUBLIC_SUPABASE_URL
+
+const plusJakarta = Plus_Jakarta_Sans({
+  subsets: ['latin'],
+  weight: ['700', '800'],
+  variable: '--font-display',
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   title: {
@@ -39,7 +47,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en' suppressHydrationWarning>
-      <body className='font-sans antialiased'>
+      <body className={`${plusJakarta.variable} font-sans antialiased`}>
         <ThemeProvider>
           {process.env.NODE_ENV === 'development' && <DevModeOverlay />}
           <NoiseFilter />

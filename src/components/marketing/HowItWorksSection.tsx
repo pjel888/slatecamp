@@ -46,7 +46,7 @@ export const HowItWorksSection = () => (
       <StaggerParent className='mt-14 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4'>
         {STEPS.map(({ num, title, desc }) => (
           <StaggerItem key={num}>
-            <article className='h-full rounded-[18px] border border-border-design bg-white p-6 shadow-sm'>
+            <article className='h-full rounded-lg border border-border-design bg-white p-6 shadow-sm'>
               <span className='font-[family-name:var(--font-dm-mono)] text-[40px] font-bold leading-none text-border-design' aria-hidden='true'>
                 {num}
               </span>

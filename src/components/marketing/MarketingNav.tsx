@@ -57,7 +57,7 @@ export async function MarketingNav({
   )
 
   const secondaryNavClass = cn(
-    'relative hidden px-6 backdrop-blur-2xl supports-[backdrop-filter]:backdrop-blur-2xl md:block [mask-image:linear-gradient(to_bottom,black_0%,black_58%,rgba(0,0,0,0.72)_76%,transparent_100%)]',
+    'relative hidden px-6 backdrop-blur-2xl supports-[backdrop-filter]:backdrop-blur-2xl md:block [--secondary-nav-mask:linear-gradient(to_bottom,black_0%,black_58%,rgba(0,0,0,0.72)_76%,transparent_100%)] [-webkit-mask-image:var(--secondary-nav-mask)] [mask-image:var(--secondary-nav-mask)]',
     isDark
       ? 'bg-primary/[0.16] text-white shadow-[0_18px_60px_rgba(0,0,0,0.20)]'
       : 'bg-white/[0.07] text-foreground shadow-[0_18px_60px_rgba(15,23,42,0.06)]',

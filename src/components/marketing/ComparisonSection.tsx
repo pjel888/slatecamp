@@ -48,7 +48,7 @@ export const ComparisonSection = () => (
         <StaggerParent className='contents'>
           {ATLAS_ROWS.map((row) => (
             <StaggerItem key={row.moment}>
-              <article className='h-full rounded-[18px] border border-border-design bg-white p-5 shadow-sm'>
+              <article className='h-full rounded-lg border border-border-design bg-white p-5 shadow-sm'>
                 <p className='font-[family-name:var(--font-dm-mono)] text-[11px] font-semibold uppercase tracking-[0.16em] text-camp-cobalt'>
                   {row.moment}
                 </p>
@@ -59,7 +59,7 @@ export const ComparisonSection = () => (
         </StaggerParent>
       </div>
 
-      <div className='mt-8 rounded-[18px] border border-camp-amber/25 bg-camp-amber/10 p-5'>
+      <div className='mt-8 rounded-lg border border-camp-amber/25 bg-camp-amber/10 p-5'>
         <p className='text-[13px] font-semibold text-camp-black'>Trust boundary</p>
         <p className='mt-2 text-[13px] leading-relaxed text-text-2'>
           SlateCamp is an educational resource platform. Verify current code requirements, exam rules, and project decisions with primary authority documents or a qualified professional.

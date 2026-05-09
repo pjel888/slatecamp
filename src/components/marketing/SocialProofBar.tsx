@@ -7,7 +7,7 @@ const PROOF_LINES = [
 ] as const
 
 export const SocialProofBar = () => (
-  <section className='border-y border-border-design bg-white/85 p-2'>
+  <section id='after-hero' className='scroll-mt-36 border-y border-border-design bg-white/85 p-2'>
     <ScrollReveal y={0} duration={0.3}>
       <div className='mx-auto flex max-w-[1200px] flex-wrap items-center justify-center gap-x-6 gap-y-2 text-center'>
         {PROOF_LINES.map((line, index) => (

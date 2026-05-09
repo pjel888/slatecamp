@@ -1,5 +1,5 @@
 const H1_CLASS =
-  'font-[family-name:var(--font-geist-sans)] text-[clamp(3rem,8vw,5.8rem)] font-black leading-[0.9] tracking-[-0.055em] text-foreground'
+  'font-[family-name:var(--font-display)] text-[clamp(3rem,8vw,5.8rem)] font-extrabold leading-[0.9] tracking-[-0.038em] text-foreground'
 
 export const HeroHeadline = () => (
   <>

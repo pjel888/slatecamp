@@ -12,6 +12,8 @@ interface SlideToSubmitProps {
   onSubmit: () => void
   disabled?: boolean
   label?: string
+  /** Optional replacement text once the submitted answer has been checked */
+  checkedLabel?: string
   testId?: string
   /** Set to true when the answer has been checked and feedback is showing */
   checked?: boolean
@@ -29,6 +31,7 @@ export const SlideToSubmit = ({
   onSubmit,
   disabled = false,
   label = 'Slide to submit',
+  checkedLabel,
   testId,
   checked = false,
 }: SlideToSubmitProps) => {
@@ -51,6 +54,8 @@ export const SlideToSubmit = ({
 
   const maxOffset = trackWidth
   const progress = maxOffset > 0 ? Math.min(1, offset / maxOffset) : 0
+  const checkedText = checkedLabel ?? 'Answer checked'
+  const accessibleLabel = completed && checked ? checkedText : label
 
   const handleComplete = useCallback(() => {
     if (completed) return
@@ -138,7 +143,7 @@ export const SlideToSubmit = ({
         completed && 'border-primary bg-primary-50 pointer-events-none',
       )}
       style={{ height: HANDLE_SIZE + TRACK_PADDING * 2, padding: TRACK_PADDING }}
-      aria-label={label}
+      aria-label={accessibleLabel}
       role="slider"
       aria-valuenow={Math.round(progress * 100)}
       aria-valuemin={0}
@@ -172,7 +177,7 @@ export const SlideToSubmit = ({
             Checking your answer...
           </span>
         ) : completed && checked ? (
-          <span className="text-primary">Answer checked</span>
+          <span className="text-primary">{checkedText}</span>
         ) : (
           label
         )}

@@ -22,7 +22,7 @@ export async function LandingPageContent() {
 
   return (
     <div id='top' className='min-h-screen bg-page-bg'>
-      <MarketingNav activeRoute='/' logoScrollsToTop isLoggedIn={isLoggedIn} showSecondaryNav={false} fixed={false} />
+      <MarketingNav activeRoute='/' logoScrollsToTop isLoggedIn={isLoggedIn} />
 
       <main>
         <HeroSection

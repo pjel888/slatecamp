@@ -8,11 +8,13 @@ export const FeatureSectionLayout = ({
   flip = false,
   dark = false,
   amber = false,
+  className,
 }: {
   children: React.ReactNode
   flip?: boolean
   dark?: boolean
   amber?: boolean
+  className?: string
 }) => (
   <section
     className={`border-t px-6 py-24 ${
@@ -21,10 +23,10 @@ export const FeatureSectionLayout = ({
         : amber
           ? 'bg-camp-amber border-warning/40'
           : 'border-border-design bg-muted'
-    }`}
+    } ${className || ''}`}
   >
     <div
-      className={`mx-auto grid max-w-[1100px] grid-cols-1 items-center gap-12 md:grid-cols-2 ${
+      className={`mx-auto grid max-w-[1100px] grid-cols-1 items-end gap-6 md:grid-cols-2 ${
         flip ? 'md:[&>*:first-child]:order-2 md:[&>*:last-child]:order-1' : ''
       }`}
     >
