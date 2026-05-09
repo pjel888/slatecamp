@@ -47,5 +47,9 @@ export const importModuleConfig = async (moduleId: string) => {
     `@/features/3d-lab/config/modules/${path}` as string
   )) as Record<string, unknown>
 
-  return Object.values(mod)[0] ?? null
+  const values = Object.values(mod)
+  return values.find(
+    (value): value is { id: string } =>
+      Boolean(value) && typeof value === 'object' && 'id' in value && value.id === moduleId,
+  ) ?? values[0] ?? null
 }

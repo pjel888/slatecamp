@@ -10,6 +10,9 @@ import { ModuleList } from './ModuleList'
 import { ModuleCard } from './ModuleCard'
 import { LabBrowserLoadingState } from './shell/LabBrowserShell'
 
+const isSourcePendingQaModule = (module: { codeRef?: string }) =>
+  module.codeRef?.toLowerCase().includes('source pending qa') ?? false
+
 // ─── Component ──────────────────────────────────────────────────────────────
 
 /**
@@ -38,6 +41,15 @@ export function LabBrowser({ basePath }: { basePath: string }) {
       .map((moduleId) => getModuleById(moduleId))
       .filter((module) => module != null)
   }, [])
+
+  const dashboardAvailableCount = useMemo(
+    () => dashboardModules?.filter((module) => !isSourcePendingQaModule(module)).length ?? 0,
+    [dashboardModules],
+  )
+  const dashboardQaPreviewCount = useMemo(
+    () => dashboardModules?.filter(isSourcePendingQaModule).length ?? 0,
+    [dashboardModules],
+  )
 
   // ─── Full category drill-down mode ──────────────────────────────────────
 
@@ -93,7 +105,8 @@ export function LabBrowser({ basePath }: { basePath: string }) {
         <div className="mb-8">
           <h1 className="text-xl font-bold text-foreground tracking-tight">3D Interactive Lab</h1>
           <p className="mt-1.5 font-mono text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
-            {dashboardModules.length} interactive modules available
+            {dashboardAvailableCount} interactive modules available
+            {dashboardQaPreviewCount > 0 ? ` · ${dashboardQaPreviewCount} QA preview` : ''}
           </p>
         </div>
 
