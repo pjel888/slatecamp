@@ -48,6 +48,7 @@ function TooltipTrigger({
 
 function TooltipContent({
   className,
+  arrowClassName,
   side = 'top',
   sideOffset = 4,
   align = 'center',
@@ -58,7 +59,9 @@ function TooltipContent({
   Pick<
     TooltipPrimitive.Positioner.Props,
     'align' | 'alignOffset' | 'side' | 'sideOffset'
-  >) {
+  > & {
+    arrowClassName?: string
+  }) {
   return (
     <TooltipPrimitive.Portal>
       <TooltipPrimitive.Positioner
@@ -77,7 +80,16 @@ function TooltipContent({
           {...props}
         >
           {children}
-          <TooltipPrimitive.Arrow className="z-50 size-2.5 translate-y-[calc(-50%-2px)] rotate-45 rounded-[2px] bg-foreground fill-foreground data-[side=bottom]:top-1 data-[side=inline-end]:top-1/2! data-[side=inline-end]:-left-1 data-[side=inline-end]:-translate-y-1/2 data-[side=inline-start]:top-1/2! data-[side=inline-start]:-right-1 data-[side=inline-start]:-translate-y-1/2 data-[side=left]:top-1/2! data-[side=left]:-right-1 data-[side=left]:-translate-y-1/2 data-[side=right]:top-1/2! data-[side=right]:-left-1 data-[side=right]:-translate-y-1/2 data-[side=top]:-bottom-2.5" />
+          <TooltipPrimitive.Arrow className={cn(
+            'z-50 size-2.5 rotate-45 rounded-[2px] bg-foreground fill-foreground',
+            'data-[side=bottom]:top-0 data-[side=bottom]:-translate-y-[calc(50%+2px)]',
+            'data-[side=top]:bottom-0 data-[side=top]:translate-y-[calc(50%+2px)]',
+            'data-[side=left]:right-0 data-[side=left]:translate-x-[calc(50%+2px)] data-[side=left]:top-1/2! data-[side=left]:-translate-y-1/2',
+            'data-[side=right]:left-0 data-[side=right]:-translate-x-[calc(50%+2px)] data-[side=right]:top-1/2! data-[side=right]:-translate-y-1/2',
+            'data-[side=inline-start]:right-0 data-[side=inline-start]:translate-x-[calc(50%+2px)] data-[side=inline-start]:top-1/2! data-[side=inline-start]:-translate-y-1/2',
+            'data-[side=inline-end]:left-0 data-[side=inline-end]:-translate-x-[calc(50%+2px)] data-[side=inline-end]:top-1/2! data-[side=inline-end]:-translate-y-1/2',
+            arrowClassName,
+          )} />
         </TooltipPrimitive.Popup>
       </TooltipPrimitive.Positioner>
     </TooltipPrimitive.Portal>
