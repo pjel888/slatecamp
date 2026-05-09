@@ -9,7 +9,7 @@
 
 | Area | Issue | Severity | Evidence | Impact | Recommended Fix |
 |------|-------|----------|----------|--------|-----------------|
-| Database | No verified Supabase migration target | Critical | `.ai/01_roadmap/current-phase.md` milestone incomplete | Cannot verify schema integrity before launch | Create safe local/staging Supabase target; replay all 92 migrations |
+| Config | `supabase/config.toml` is missing | Critical | `ls supabase/config.toml` returns no file; `.ai/01_roadmap/current-phase.md` lists this as a milestone item | Cannot run local Supabase workflow; blocks migration replay | Create `supabase/config.toml` for local Supabase |
 | Database | Supabase types potentially stale | Critical | Types not regenerated since last schema changes | Type errors in database queries may be masked | Regenerate `src/types/supabase.ts` from verified schema |
 | Deployment | Production/staging env not verified | Critical | README audit note; `.ai/01_roadmap/current-phase.md` | Unknown deployment risks | Access and verify deployment environment configuration |
 
@@ -20,7 +20,7 @@
 | Area | Issue | Severity | Evidence | Impact | Recommended Fix |
 |------|-------|----------|----------|--------|-----------------|
 | Schema | Objects referenced by code but absent from schema snapshot | High | `src/lib/cage/*`, preview actions, CEO queries reference objects not in `DATABASE_SCHEMA.sql` (audit_logs, cage_binding_tokens, materialized views) | Runtime errors if objects don't exist; confusion about actual schema | Audit all code references; either add to schema or remove callers |
-| Schema | 76-table schema with 92 migrations; complex history | High | Migration count vs table count; rollback SQL in forward area | Hard to recreate from scratch; migration replay risks | Plan migration squash/reset for post-launch |
+| Schema | 76-table schema with 101 migrations; complex history | High | Migration count vs table count; rollback SQL in forward area | Hard to recreate from scratch; migration replay risks | Plan migration squash/reset for post-launch |
 | Schema | Reset/seed scripts incomplete | High | `supabase/00_DROP_ALL_TABLES.sql` and `01_RESET_AND_SEED.sql` cover far fewer than 76 tables | Cannot reliably reset database | Replace with full baseline reset/seed or archive |
 | Code | Pre-existing uncommitted source changes | High | `git status` shows 19 modified files + 3 untracked (landing, layout, marketing components) | Cannot release without reviewing; conflates with other work | Review and commit separately before any release |
 | Code | Large Zustand quiz store | High | `src/stores/useQuizStore.ts` — documented complexity risk | Hard to test; hard to modify; regression risk | Split into focused slices (session, questions, timer, UI) |
@@ -34,13 +34,16 @@
 |------|-------|----------|----------|--------|-----------------|
 | Code | LemonSqueezy schema columns remain | Medium | `lemonsqueezy_customer_id`, `lemonsqueezy_subscription_id` in `DATABASE_SCHEMA.sql`, `src/types/supabase.ts`, `src/types/app.ts` | Dormant columns; cleanup confusion | Decide: remove in DB reset PR or document as deferred |
 | Code | Deferred payment/AI code may bit-rot | Medium | PayRex routes, AI endpoints present but disabled; not tested with live providers | Code becomes stale; harder to re-enable later | Periodic smoke tests with mock providers |
-| Route | Broad optional/internal route surface | Medium | 105+ routes including CEO, developer, pods, DAE, studio, professional, results-day | Unclear what's launch-critical vs internal | Founder cutline decision; hide non-launch from nav |
+| Route | Broad optional/internal route surface | Medium | 128 routes including CEO, developer, pods, DAE, studio, professional, results-day | Unclear what's launch-critical vs internal | Founder cutline decision; hide non-launch from nav |
 | Test | Full release matrix not run | Medium | `test:e2e`, `validate:release`, `perf:all` not executed in recent passes | Unknown regressions; performance surprises | Run full matrix in CI/staging before external launch |
-| Docs | Route count inconsistency | Medium | README says 118; `.ai/routes.md` says 128; `find` returns ~105 | Confusion about actual route count | Standardize counting methodology; document it |
+| Docs | Route count discrepancy resolved | Low | README previously said 118; `.ai/routes.md` said 128. Verified 2026-05-09: 128 page.tsx routes. | Resolved — counts now consistent across `.ai/` docs. | Update README if desired |
 | Docs | Schema header/count drift | Medium | `DATABASE_SCHEMA.sql` header claims different counts than parsed results | Misleading documentation | Update header to match actual counts |
 | Deps | Unused UI primitives and their dependencies | Medium | `react-day-picker`, `@radix-ui/react-tooltip`, `react-resizable-panels` tied to components with no app imports | Unnecessary bundle size; maintenance burden | Remove unused primitives and their deps |
 | Code | Unused trail lifecycle mutations | Medium | `pauseTrail`, `resumeTrail`, `abandonTrail` in `src/lib/actions/trails.ts` with no callers | Dead code; confusion | Delete or wire to UI |
-| Arch | Demo mode pervasive coupling | Medium | `src/lib/demo/config.ts` used in middleware, tests, and auth flows | Production behavior may diverge from demo | Keep for tests; document production vs demo paths clearly |
+| Code | `Skeleton` component (709 connections) has no direct test coverage | High | code-review-graph hub analysis 2026-05-09: 708 in-degree dependents, 0 test coverage. Used pervasively in loading states (104 loading.tsx files). | Changes to Skeleton could break loading states across the entire app silently. | Add rendering/snapshot tests for Skeleton variants |
+| Code | `cn` utility function (649 connections) has no direct test coverage | High | code-review-graph hub analysis: 647 in-degree dependents across the codebase, no test file. Core Tailwind class merging utility. | Changes to `cn` could break styling across the entire app. | Add unit tests for `cn` with Tailwind class inputs |
+| Code | `getDashboardPageData` is a cross-community bridge with undocumented dependencies | Medium | code-review-graph: bridges multiple communities; no dedicated test file found. | Hard to refactor dashboard without understanding all consumers. | Map all consumers; add integration tests |
+| Code | Landing page components (HeaderHero, HeroSection, drawAnnotations) are untested | Medium | code-review-graph detect_changes: 3 changed functions with 0 test coverage. Actively being refactored in working tree. | Landing page regressions during active refactoring. | Add visual regression or E2E tests for landing page Hero |
 
 ---
 
@@ -54,6 +57,7 @@
 | Code | `__pycache__` artifact tracked in git | Low | `.codex/skills/ui-ux-pro-max/scripts/__pycache__/core.cpython-311.pyc` is tracked | Commit hygiene | Remove from tracking; add to `.gitignore` |
 | Config | `rollback_lea_to_ale.sql` in forward migrations | Low | Rollback file in `supabase/migrations/` with no-op/corrupt content | Confusion during migration replay | Archive outside forward migrations |
 | Deps | `payrex-node` / axios path removed but verification incomplete | Low | Removed from active dependency graph but full audit not done | Residual references may remain | Full grep for residual axios/payrex-node references |
+| Arch | Thin code communities (`scripts-read` — 2 members) | Low | code-review-graph community detection 2026-05-09: isolated scripts with minimal membership | Potential dead code or misplaced modules | Audit and either merge with neighbor communities or remove |
 
 ---
 

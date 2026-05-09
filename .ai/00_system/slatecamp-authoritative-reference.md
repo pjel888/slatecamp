@@ -2,7 +2,7 @@
 
 **Do NOT trust stale memory.** Read this file before answering any question about the repo.
 **Path:** `/.ai/00_system/slatecamp-authoritative-reference.md`
-**Last verified:** 2026-05-03
+**Last verified:** 2026-05-09
 **Branch:** `content-roundtrip-system`
 
 ---
@@ -72,8 +72,8 @@ All mirrors are **tracked copies** — no declared generator/parity contract. So
 | `src/app/` | App Router routes, layouts, loading/error boundaries, route handlers |
 | `src/app/portals` | `(admin-public)/`, `(auth)/`, `(protected)/` |
 | `src/app/pages` | about, admin, api/*, auth/*, calculators/*, contact, dashboard/*, developer/*, pricing, quiz, settings/*, tools/*, try |
-| `src/components/` | 667 files — UI surface (admin, dashboard, analytics, notes, wiki, testing, shared) |
-| `src/features/` | 540 files — large feature modules (3d-lab, wall-configurator) |
+| `src/components/` | 652 files — UI surface (admin, dashboard, analytics, notes, wiki, testing, shared) |
+| `src/features/` | 556 files — large feature modules (3d-lab, wall-configurator) |
 | `src/lib/` | Server actions, queries, payments, Supabase helpers, entitlements, SRS, quiz logic, wiki |
 | `src/hooks/` | Client-side hooks |
 | `src/stores/` | Client-side state stores |
@@ -81,7 +81,7 @@ All mirrors are **tracked copies** — no declared generator/parity contract. So
 | `src/data/` | Fixture data |
 | `src/types/` | Shared TypeScript contracts |
 | `src/storybook/` | Storybook stories |
-| **Live stats:** | 128 `page.tsx` routes, 15 layouts, 105 loading files, 7 error boundaries, 11 route handlers, 160 action files, 667 components, 540 feature files, 100 migrations, 81 test files, 128 `AGENTS.md` files |
+| **Live stats (verified 2026-05-09):** | 128 `page.tsx` routes, 15 layouts, 104 loading files, 8 error boundaries, 12 route handlers, 150 action files, 652 components, 556 feature files, 101 migrations, 88 test files, 113 story files |
 
 ## 6. Key Scripts (`package.json`)
 

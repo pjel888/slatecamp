@@ -8,7 +8,7 @@
 
 ## Project Summary
 
-**SlateCamp** is a Next.js 16 App Router application for Philippine LEA (Architecture board exam) preparation. It has 105+ routes, 667+ components, 76 database tables, 160+ server action files, and ~81 test files. It's a pre-launch MVP — broad functionality but not yet production-hardened.
+**SlateCamp** is a Next.js 16 App Router application for Philippine LEA (Architecture board exam) preparation. It has 128 page routes, 652 components, 76 database tables, 150 server action files, and 88 test files. It's a pre-launch MVP — broad functionality but not yet production-hardened.
 
 **Current launch stance:** Payment-free and live-AI-provider-free. Payments (PayRex) and AI (OpenAI/Anthropic) are deferred post-launch.
 

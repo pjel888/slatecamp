@@ -51,12 +51,12 @@ LEA candidates need structured, comprehensive exam preparation across multiple s
 See `IMPLEMENTATION_STATUS.md` for the full evidence-based inventory. Broadly:
 
 - ✅ All 27 documented features have implementation evidence
-- ✅ 105+ page routes, 11 API route handlers
+- ✅ 128 page routes, 12 API route handlers
 - ✅ 76 database tables across 9 domain families
-- ✅ 92 database migrations
-- ✅ 160+ server action files
-- ✅ 667+ component files
-- ✅ ~81 unit/integration test files, 13 Playwright E2E specs
+- ✅ 101 database migrations
+- ✅ 150 server action files
+- ✅ 652 component files
+- ✅ 88 unit/integration test files, 13 Playwright E2E specs, 113 Storybook stories
 - ✅ Plan B pre-launch cleanup completed (legacy paths removed, docs consolidated)
 
 ## What Is Still Missing
@@ -85,8 +85,8 @@ See `ROADMAP.md` for prioritized items. Key gaps:
 
 ## What Future Agents Should Understand
 
-1. **This is a large, mature codebase** — not a greenfield project. There are 100+ routes, 600+ components, 76 tables. Changes have blast radius.
-2. **The README.md is comprehensive** — it covers architecture, routes, API endpoints, schema, and features in detail. Read it first.
+1. **This is a large, mature codebase** — not a greenfield project. There are 128 routes, 652 components, 76 tables. Changes have blast radius.
+2. **The new `.ai/` docs are the canonical entry point** — start with `PROJECT_CONTEXT.md` and follow the reading order in `.ai/README.md`. The root `README.md` is comprehensive but may have stale counts; use it for feature descriptions and route tables, but trust `.ai/` docs for current counts.
 3. **The `.ai/` folder is the operational intelligence layer** — numbered folders preserve history; root-level `.ai/` files are current-state docs.
 4. **Server-first but client-heavy** — Next.js App Router with Server Components by default, but many surfaces are client components (3D, quiz timers, rich editors).
 5. **Supabase is the backbone** — auth, database, RLS, migrations all go through Supabase.

@@ -1,7 +1,8 @@
 # Route Inventory
 
-**Status:** Canonical current snapshot after Plan B cleanup on 2026-04-29.
-**Counts:** 109 page routes, 11 route handlers under `src/app`, 13 layouts, 92 loading states, 7 error boundaries.
+**Status:** Historical snapshot after Plan B cleanup on 2026-04-29. ⚠️ **Counts below are stale.** For current counts see `.ai/routes.md` and verified figures in `PROJECT_CONTEXT.md`.
+**Historical counts (2026-04-29):** 109 page routes, 11 route handlers under `src/app`, 13 layouts, 92 loading states, 7 error boundaries.
+**Current verified (2026-05-09):** 128 page routes, 12 route handlers, 15 layouts, 104 loading states, 8 error boundaries.
 
 The exhaustive current page-route table lives in `.ai/routes.md`. The exhaustive route-handler table lives in `.ai/api-and-server.md`.
 

@@ -55,12 +55,12 @@ SlateCamp is a **Next.js 16 App Router** application with **Supabase-backed auth
 
 | Layer | Files/Paths | Role |
 |-------|-------------|------|
-| App Router | `src/app/` (~105 page routes) | Pages, route groups, layouts, loading/error boundaries, route handlers |
-| Components | `src/components/` (667+ files, 61 dirs) | Shared and domain UI components |
+| App Router | `src/app/` (128 page routes) | Pages, route groups, layouts, loading/error boundaries, route handlers |
+| Components | `src/components/` (652 files, 61 dirs) | Shared and domain UI components |
 | Features | `src/features/` (556 files, 64 dirs) | Large modules: 3D Lab, wall configurator |
-| Server Logic | `src/lib/actions/` (160 files), `src/lib/queries/`, `src/lib/supabase/` | Mutations, reads, auth/data clients |
+| Server Logic | `src/lib/actions/` (150 files), `src/lib/queries/`, `src/lib/supabase/` | Mutations, reads, auth/data clients |
 | State | `src/stores/` (5 Zustand stores), `src/hooks/` (13 hooks) | Client state management |
-| Database | `DATABASE_SCHEMA.sql`, `supabase/migrations/` (92 files) | Schema snapshot and migration history |
+| Database | `DATABASE_SCHEMA.sql`, `supabase/migrations/` (101 files) | Schema snapshot and migration history |
 | Docs/Ops | `.ai/`, `docs/`, `AGENTS.md` hierarchy | Operational intelligence and agent guidance |
 
 ## Request Flow
@@ -107,15 +107,47 @@ SlateCamp is a **Next.js 16 App Router** application with **Supabase-backed auth
 | Operations/notifications | 13 | notifications, analytics_events, notes, study_pods |
 | CEO/business | 4 | ceo_financial_entries, ceo_cash_balance, ceo_gate_status |
 
-## Auth Model
+## Auth Model (traced from source 2026-05-09)
 
-- **Provider:** Supabase Auth (email/password + OAuth)
-- **Session management:** `@supabase/ssr` with cookie-based sessions
-- **Middleware:** Refreshes sessions, gates privileged routes
-- **Role resolution priority:** Dev force user override → `user_roles` table → profile role → app metadata → user metadata → admin/owner email fallbacks → member/anonymous
-- **Entitlements:** `src/lib/entitlements/` — canonical roles, admin permissions, subscription tiers, feature flags
-- **RLS:** Row Level Security on Supabase PostgreSQL tables
-- **Dev bypasses:** `DEV_FORCE_USER_ID`, `ALLOW_DEV_PORTAL_BYPASS`, `DEV_FORCE_TIER` — local/test only, guarded in production
+### Middleware Chain
+1. `middleware.ts` (33 lines) → delegates to `updateSession()` in `src/lib/supabase/middleware.ts` (265 lines)
+2. **Step 1 — Static/API bypass:** Files, `/_next`, `/api/*`, `/auth/callback` skip auth
+3. **Step 1.5 — Dev force-user bypass:** If `NODE_ENV=development` and `DEV_FORCE_USER_ID` is set, all routes allowed; redirects from /login to /dashboard. Guarded by `src/lib/env/production-guardrails.ts`
+4. **Step 2 — Public paths:** Matched against `PUBLIC_ROUTES` in `src/lib/routes.ts`; `/admin/login` also public
+5. **Step 3 — Demo mode:** Resolves demo user role via `resolveRoleFromInputs()`, gates admin/developer/CEO routes using `hasPrivilegedRouteAccess()`
+6. **Step 4 — Supabase init:** `createServerClient()` from `@supabase/ssr` with cookie-based session management
+7. **Step 5 — Auth check:** Unauthenticated users redirected to `/login` (with `?next=` param); logged-in users on login/register redirected to `/dashboard`
+8. **Step 6 — Privileged route gating:** For admin/developer/CEO paths, queries `profiles.role` and `user_roles` table, resolves strongest role, checks permissions, logs audit event with full trace
+
+### Role Resolution (`src/lib/entitlements/resolve-role.ts`, 228 lines)
+**Priority order (first match wins):**
+1. `dev_force_user` → `owner` (development only, guarded by `isDevForceUserRoleOverrideActive()`)
+2. `user_roles` table → strongest role by priority (owner=10, super_admin=6, content_admin=5, developer=4, admin=4, ceo=4, sme_reviewer=3)
+3. `profiles.role` → normalized compatibility role
+4. `app_metadata.role` → normalized compatibility role
+5. `user_metadata.role` → normalized compatibility role
+6. `OWNER_EMAILS` env → `owner`
+7. `ADMIN_EMAILS` env → `super_admin`
+8. Fallback → `member` (if authenticated) or `anonymous`
+
+### Permission Model (`src/lib/entitlements/policy.ts`, 165 lines)
+- **7 role sets:** `ADMIN_CMS_ROLES` (7 roles), `CEO_PORTAL_ROLES` (3), `OVERRIDE_WRITE_ROLES` (4), `MANAGE_CONTENT_ROLES` (6), `MANAGE_USERS_ROLES` (2), etc.
+- **20 granular admin permissions** per role: `admin.access`, `admin.content.create`, `admin.content.publish`, `admin.taxonomy.manage`, `admin.audit.view`, `admin.users.manage`, etc.
+- `owner` and `super_admin` have all 20 permissions; `sme_reviewer` has 8; `member`/`anonymous` have 0
+- **Route-to-permission mapping** (`ADMIN_PATH_PERMISSIONS`): 16 regex patterns matching URL paths to required permissions (e.g., `/admin/ai-audit` → `admin.content.view`)
+- **Audit trail:** Every access decision logged via `logEntitlementAuditEvent()` with full trace including role source, tier, override state, and denial reason
+
+### Portal Gate Guards
+- **Developer portal** (`src/lib/developer/access.ts`): Uses `getViewerEntitlements()` → `ENTITLEMENT_FEATURE_KEYS.developerPortal`; throws `Error('Not authorized')` if denied
+- **CEO portal** (`src/lib/ceo/access.ts`): Uses `getViewerEntitlements()` → `ENTITLEMENT_FEATURE_KEYS.ceoPortal`; throws `Error('Not authorized')` if denied
+- Both support `ALLOW_DEV_PORTAL_BYPASS` env var (development only, production-guarded)
+
+### Production Guardrails (`src/lib/env/production-guardrails.ts`)
+- `DEV_FORCE_USER_ID`, `DEV_FORCE_TIER`, `ALLOW_DEV_PORTAL_BYPASS`, `DISABLE_DEV_FORCE_USER_ID` all ignored in `NODE_ENV=production`
+- Guards are checked at both middleware and server-action levels
+
+### RLS (verified 2026-05-09)
+Row Level Security policies exist on Supabase PostgreSQL tables. Verified example: `supabase/migrations/20260505145349_restrict_ai_audit_admin_access.sql` — a P0 remediation that revoked authenticated-user access to 6 sensitive AI audit views (article overview, question overview, finding overview, etc.) and the cache seeding function, restricting them to `service_role` only. The migration includes clear comments explaining the security rationale and is part of a broader RLS strategy where admin pages use server-side service-role clients after application-level permission checks.
 
 ## Important Dependencies
 
@@ -149,8 +181,8 @@ See `integrations.md` for full details. Active integrations:
 
 1. **Large Zustand quiz store** (`src/stores/useQuizStore.ts`) — complexity risk; hard to test in isolation
 2. **3D Lab performance** — requires ongoing optimization for mobile devices
-3. **Broad route surface** — 105+ routes; many optional/internal surfaces (CEO, developer, pods, DAE, studio)
-4. **Schema drift** — `DATABASE_SCHEMA.sql` may not capture all runtime objects; migration history is long (92 files)
+3. **Broad route surface** — 128 routes; many optional/internal surfaces (CEO, developer, pods, DAE, studio)
+4. **Schema drift** — `DATABASE_SCHEMA.sql` may not capture all runtime objects; migration history is long (101 files)
 5. **Client/Server boundary** — server-first intent but pervasive client components; boundary violations possible
 6. **Demo mode coupling** — demo mode logic is pervasive in middleware and tests
 

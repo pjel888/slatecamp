@@ -24,7 +24,7 @@
 
 ### D-4: Server Actions for Mutations
 **Decision:** Use Next.js Server Actions (not REST endpoints) for most data mutations.
-**Evidence:** `src/lib/actions/` contains 160 files of server actions; API route handlers limited to 11 endpoints for specific cross-cutting concerns (AI, cron, payments, webhooks).
+**Evidence (from source):** `src/lib/actions/` contains 150 files of server actions; API route handlers limited to 12 endpoints for specific cross-cutting concerns (AI, cron, payments, webhooks, admin flags, auth callback, OG images). Quiz v2 actions (`src/lib/actions/quiz-v2/`) have 28 files for session management, answer submission, skip, pause, post-session hooks. Wiki actions (`wiki-actions.ts` 662 lines, `wiki-interactions.ts` 120 lines) use server actions exclusively.
 **Consequence:** Simpler data flow (no API client layer). Tighter coupling to Next.js. Progressive enhancement works naturally.
 
 ### D-5: Single Payment Provider (PayRex)
@@ -54,7 +54,7 @@
 
 ### D-10: Server Components by Default
 **Decision:** Next.js App Router with Server Components as default rendering strategy.
-**Evidence:** Most page files are server components; `"use client"` directive only where needed; 92+ loading states and 7 error boundaries.
+**Evidence:** Most page files are server components; `"use client"` directive only where needed; 104+ loading states and 8 error boundaries.
 **Consequence:** Better initial load performance. Clear client/server boundary. Some components (3D, quiz, editors) must be client.
 
 ---
@@ -116,6 +116,6 @@
 **Evidence gap:** Needs founder product decision.
 
 ### Q-7: Is the Database Migration Squash Planned?
-**Question:** Plan to squash 92 migrations into a baseline schema?
-**Why it matters:** 92 migrations are hard to replay from scratch; squashing simplifies new environment setup.
+**Question:** Plan to squash 101 migrations into a baseline schema?
+**Why it matters:** 101 migrations are hard to replay from scratch; squashing simplifies new environment setup.
 **Evidence gap:** Discussed in legacy retirement plan but no decision documented.
