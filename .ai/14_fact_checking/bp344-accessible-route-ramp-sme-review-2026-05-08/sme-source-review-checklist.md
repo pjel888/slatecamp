@@ -71,7 +71,7 @@ Reviewer decision:
 
 Reviewer notes:
 
-- 
+-
 ### 2. bp344_ramp_general_slope_max
 
 - Source card ID: `sc-bp344-ramp-slope-width-2024-p2`
@@ -102,7 +102,7 @@ Reviewer decision:
 
 Reviewer notes:
 
-- 
+-
 ### 3. bp344_ramp_special_slope_review
 
 - Source card ID: `sc-bp344-ramp-slope-width-2024-p2`
@@ -133,7 +133,7 @@ Reviewer decision:
 
 Reviewer notes:
 
-- 
+-
 ### 4. bp344_ramp_landing_length_min
 
 - Source card ID: `sc-bp344-ramp-landing-handrail-edge-2024-p2`
@@ -164,7 +164,7 @@ Reviewer decision:
 
 Reviewer notes:
 
-- 
+-
 ### 5. bp344_ramp_handrail_heights
 
 - Source card ID: `sc-bp344-ramp-landing-handrail-edge-2024-p2;sc-bp344-handrails-general-2024-p7`
@@ -195,7 +195,7 @@ Reviewer decision:
 
 Reviewer notes:
 
-- 
+-
 ### 6. bp344_ramp_handrail_trigger_and_grip
 
 - Source card ID: `sc-bp344-handrails-general-2024-p7`
@@ -226,7 +226,7 @@ Reviewer decision:
 
 Reviewer notes:
 
-- 
+-
 ### 7. bp344_ramp_raised_edge_min
 
 - Source card ID: `sc-bp344-ramp-landing-handrail-edge-2024-p2`
@@ -257,7 +257,7 @@ Reviewer decision:
 
 Reviewer notes:
 
-- 
+-
 ### 8. bp344_ramp_tactile_warning
 
 - Source card ID: `sc-bp344-ramp-tactile-traffic-2024-p3`
@@ -288,7 +288,7 @@ Reviewer decision:
 
 Reviewer notes:
 
-- 
+-
 ### 9. bp344_ramp_vehicular_traffic_railing
 
 - Source card ID: `sc-bp344-ramp-tactile-traffic-2024-p3`
@@ -319,7 +319,7 @@ Reviewer decision:
 
 Reviewer notes:
 
-- 
+-
 ### 10. bp344_route_door_clear_width
 
 - Source card ID: `sc-bp344-doors-clear-level-hardware-2024-p31-p33`
@@ -350,7 +350,7 @@ Reviewer decision:
 
 Reviewer notes:
 
-- 
+-
 ### 11. bp344_route_door_clear_level_space
 
 - Source card ID: `sc-bp344-doors-clear-level-hardware-2024-p31-p33`
@@ -381,7 +381,7 @@ Reviewer decision:
 
 Reviewer notes:
 
-- 
+-
 ### 12. bp344_route_door_hardware_height
 
 - Source card ID: `sc-bp344-doors-clear-level-hardware-2024-p31-p33`
@@ -412,7 +412,7 @@ Reviewer decision:
 
 Reviewer notes:
 
-- 
+-
 ### 13. bp344_route_corridor_clear_width
 
 - Source card ID: `sc-bp344-corridors-turnabout-2024-p35`
@@ -443,7 +443,7 @@ Reviewer decision:
 
 Reviewer notes:
 
-- 
+-
 ### 14. bp344_route_turnabout_space
 
 - Source card ID: `sc-bp344-corridors-turnabout-2024-p35`
@@ -474,7 +474,7 @@ Reviewer decision:
 
 Reviewer notes:
 
-- 
+-
 
 
 ## Final SME decision
@@ -486,11 +486,11 @@ Reviewer notes:
 
 Approved source_rule_id values:
 
-- 
+-
 
 Required corrections:
 
-- 
+-
 
 Reviewer name / initials:
 

@@ -1,9 +1,9 @@
 # Landing Hero Copy + UI Improvement Research
 
-**Date:** 2026-05-08  
-**Branch:** `feat/landing-3d-hero-best-representation`  
-**Scope:** Research/planning plus follow-up implementation note.  
-**Philip decision after research:** Keep the H1 `Know you’ll win.` exactly. Apply improvements only to the surrounding support copy, trust language, hero bridge, and Atlas Index.  
+**Date:** 2026-05-08
+**Branch:** `feat/landing-3d-hero-best-representation`
+**Scope:** Research/planning plus follow-up implementation note.
+**Philip decision after research:** Keep the H1 `Know you’ll win.` exactly. Apply improvements only to the surrounding support copy, trust language, hero bridge, and Atlas Index.
 **Primary files inspected:**
 - `src/components/marketing/HeroSection.tsx`
 - `src/components/landing/LandingPageContent.tsx`
@@ -88,100 +88,100 @@ But this fear line should generally live below the hero or in the board-review p
 
 ### Option A — Best overall balance
 
-**Eyebrow:**  
+**Eyebrow:**
 `For architecture students and LEA reviewees`
 
-**H1:**  
+**H1:**
 `Review with a clearer map.`
 
-**Support:**  
+**Support:**
 `SlateCamp helps turn scattered architecture topics into a calmer study path: find the topic, understand the idea, check weak spots, and know what to revisit next — beside your school, books, mentors, review materials, and review center.`
 
-**Primary CTA:**  
+**Primary CTA:**
 `Find a topic`
 
-**Secondary CTA:**  
+**Secondary CTA:**
 `See how SlateCamp works`
 
-**Trust line:**  
+**Trust line:**
 `SlateCamp is an independent educational resource, not an official source or review-center replacement. Use it beside primary documents, qualified professionals, school materials, and review-center guidance.`
 
-**Why it works:**  
+**Why it works:**
 Clear, safe, audience-specific, and aligned with the atlas metaphor.
 
 ---
 
 ### Option B — Strongest emotional relief
 
-**Eyebrow:**  
+**Eyebrow:**
 `A calmer field guide for architecture review`
 
-**H1:**  
+**H1:**
 `Less panic. Clearer next steps.`
 
-**Support:**  
+**Support:**
 `When architecture review feels scattered, SlateCamp helps you organize topics, understand concepts, and spot what needs another look — so your next study session feels more focused and less overwhelming.`
 
-**Primary CTA:**  
+**Primary CTA:**
 `Start with a topic`
 
-**Secondary CTA:**  
+**Secondary CTA:**
 `Explore the atlas`
 
-**Trust line:**  
+**Trust line:**
 `Use SlateCamp as supplementary study support beside school, books, mentors, notes, review materials, and review centers. It is independent and not an official or guaranteed path to licensure.`
 
-**Why it works:**  
+**Why it works:**
 Most empathetic and student-centered. Slightly less premium/editorial than Option A.
 
 ---
 
 ### Option C — Safest direct replacement for current H1
 
-**Eyebrow:**  
+**Eyebrow:**
 `Architecture knowledge atlas`
 
-**H1:**  
+**H1:**
 `Know what to fix next.`
 
-**Support:**  
+**Support:**
 `SlateCamp turns scattered architecture review into a calmer map: find the topic, understand the idea, check what stuck, and choose the next weak spot to repair.`
 
-**Primary CTA:**  
+**Primary CTA:**
 `Open the atlas`
 
-**Secondary CTA:**  
+**Secondary CTA:**
 `Find a topic`
 
-**Trust line:**  
+**Trust line:**
 `Use beside school, books, mentors, notes, review materials, review centers, and self-study. SlateCamp is independent educational support, not an official source or pass guarantee.`
 
-**Why it works:**  
+**Why it works:**
 Keeps the punch of `Know you’ll win.` while removing pass-guarantee risk.
 
 ---
 
 ### Option D — Most board-season specific
 
-**Eyebrow:**  
+**Eyebrow:**
 `For Filipino architecture students and LEA reviewees`
 
-**H1:**  
+**H1:**
 `Make board-season review feel less scattered.`
 
-**Support:**  
+**Support:**
 `Use SlateCamp beside your review center, books, notes, mentors, and self-study to find architecture topics, review key ideas, and see what needs more attention next.`
 
-**Primary CTA:**  
+**Primary CTA:**
 `Find your next topic`
 
-**Secondary CTA:**  
+**Secondary CTA:**
 `Browse the atlas`
 
-**Trust line:**  
+**Trust line:**
 `Independent educational resource only. SlateCamp is not official, not a review center, and not a promise of exam results.`
 
-**Why it works:**  
+**Why it works:**
 Highest LEA conversion clarity, but less broad as a long-term architecture knowledge platform headline.
 
 ---
@@ -288,20 +288,20 @@ Risk:
 
 Recommended rewrite:
 
-1. **01 / Find**  
-   **Find the topic**  
+1. **01 / Find**
+   **Find the topic**
    `Open architecture subjects with related ideas and verified source notes where available.`
 
-2. **02 / Understand**  
-   **See the idea clearly**  
+2. **02 / Understand**
+   **See the idea clearly**
    `Use explanations and visuals when rules, forms, or spatial concepts need more than text.`
 
-3. **03 / Check**  
-   **Spot weak areas**  
+3. **03 / Check**
+   **Spot weak areas**
    `Use practice and topic signals as a calm check, not another reason to panic.`
 
-4. **04 / Revisit**  
-   **Choose what to review next**  
+4. **04 / Revisit**
+   **Choose what to review next**
    `Turn scattered study into a clearer next step beside your notes, mentors, and review center.`
 
 UI recommendation:
@@ -427,7 +427,7 @@ The hero is visually strong enough now. The next improvement should be a **copy 
 
 Use this as the next hero thesis:
 
-> **Know what to fix next.**  
+> **Know what to fix next.**
 > SlateCamp turns scattered architecture review into a calmer map: find the topic, understand the idea, check what stuck, and choose the next weak spot to repair.
 
 This keeps the emotional force of the current H1 while aligning better with:
