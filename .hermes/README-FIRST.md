@@ -40,7 +40,7 @@ hermes doctor
 hermes chat
 ```
 
-SlateCamp developer AI prefers OpenRouter as part of the Hermes agent bench. If your model/provider is not configured yet, add `OPENROUTER_API_KEY` to `~/.hermes/.env`, then use either the interactive picker or the verified current-account settings:
+SlateCamp developer AI prefers OpenRouter as part of the Hermes agent bench. If your model/provider is not configured yet, add `OPENROUTER_API_KEY` to `~/.hermes/.env`, then use either the interactive picker or the intended low-cost settings:
 
 ```bash
 hermes model
@@ -53,6 +53,6 @@ hermes config set delegation.provider openrouter
 hermes config set delegation.model deepseek/deepseek-chat
 ```
 
-Upgrade `model.default` to `openai/gpt-5.5` after OpenRouter credits/limits can afford GPT-5.5-sized Hermes prompts.
+Actual Hermes/OpenRouter calls still require enough OpenRouter prompt-token allowance for Hermes' loaded system prompt. If the smoke test returns `Prompt tokens limit exceeded`, top up credits or raise limits before relying on this lane. Upgrade `model.default` to `openai/gpt-5.5` only after OpenRouter credits/limits can afford GPT-5.5-sized Hermes prompts.
 
-See `docs/17-openrouter-developer-ai.md` for the full bench role, boundary, and smoke test.
+See `docs/17-openrouter-developer-ai.md` for the full bench role, boundary, and smoke-test caveat.

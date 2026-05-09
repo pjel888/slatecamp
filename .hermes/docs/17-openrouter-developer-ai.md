@@ -13,7 +13,7 @@ hermes config env-path
 # add OPENROUTER_API_KEY=<developer-openrouter-key> to that file
 ```
 
-Set Hermes to use OpenRouter with the verified current-account default:
+Set Hermes to use OpenRouter with the intended low-cost default. Actual calls still require enough OpenRouter prompt-token allowance for Hermes' loaded system prompt:
 
 ```bash
 hermes config set model.provider openrouter
@@ -38,6 +38,8 @@ Smoke test:
 ```bash
 hermes -z "Health check only. Reply exactly: OPENROUTER_HERMES_DEFAULT_PATH_OK" -t "" --ignore-rules
 ```
+
+Current account caveat: this can fail with `Prompt tokens limit exceeded` when the OpenRouter account allowance is below Hermes' loaded prompt size. That means the config path is wired but the account needs credits/limits raised before Hermes/OpenRouter delegation is reliable.
 
 ## Delegation role
 

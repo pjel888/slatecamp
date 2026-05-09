@@ -92,11 +92,12 @@ This guide is the fastest way for future Codex sessions to orient in SlateCamp a
   - active config: `hermes config path`
   - active env: `hermes config env-path`
   - preferred provider: `hermes config set model.provider openrouter`
-  - preferred model for the current account: `hermes config set model.default deepseek/deepseek-chat`
+  - intended low-cost model: `hermes config set model.default deepseek/deepseek-chat`
+  - current account caveat: Hermes/OpenRouter calls need enough OpenRouter prompt-token allowance for Hermes' loaded prompt; if smoke tests return `Prompt tokens limit exceeded`, raise credits/limits before relying on this lane
   - preferred GPT-5.5 upgrade after OpenRouter credits/limits allow it: `hermes config set model.default openai/gpt-5.5`
   - conservative output cap for the current account: `hermes config set model.max_tokens 1000`
   - delegation provider: `hermes config set delegation.provider openrouter`
-  - delegation model for the current account: `hermes config set delegation.model deepseek/deepseek-chat`
+  - delegation model for the intended low-cost path: `hermes config set delegation.model deepseek/deepseek-chat`
 - Use the AI bench deliberately: Codex remains the main builder; OpenCode/OpenCode Go and Command Code are external CLI workers; Kimi remains a long-context companion; Hermes/OpenRouter is the provider-unified delegate lane for model-bench planning/review/automation.
 - Standalone Codex CLI provider routing must be verified against the installed Codex version before claiming OpenRouter support. If unsupported or unverified, use Hermes/OpenRouter for provider-unified developer AI and keep Codex on its own working auth path.
 - Kimi Code CLI remains available as a direct companion CLI and should be used opportunistically when it improves quality, speed, or independent verification. Kimi-family models may also be used through Hermes/OpenRouter when an OpenRouter model slug is available.

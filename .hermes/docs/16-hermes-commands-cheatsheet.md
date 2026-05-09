@@ -23,6 +23,8 @@ hermes config set delegation.model deepseek/deepseek-chat
 hermes -z "Health check only. Reply exactly: OPENROUTER_HERMES_DEFAULT_PATH_OK" -t "" --ignore-rules
 ```
 
+If the smoke command returns `Prompt tokens limit exceeded`, the OpenRouter account needs credits/limits raised before Hermes/OpenRouter delegation is reliable.
+
 ## Chat
 
 ```bash

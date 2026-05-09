@@ -25,7 +25,7 @@ Do not use `NEXT_PUBLIC_*` for OpenRouter credentials in either boundary.
 - `src/lib/ai/provider.ts` supports `AI_PROVIDER=openrouter`, direct `openai`, and direct `anthropic` fallback modes.
 - Product AI is still launch-deferred: quiz AI helper UI is disabled, and public copy must not imply live AI readiness.
 - Repo-local `.hermes/config.yaml` is now an OpenRouter-preferred baseline, but real secrets still belong in `~/.hermes/.env`, not the repo.
-- Active user Hermes config verified on 2026-05-09: `model.provider=openrouter`, `model.default=deepseek/deepseek-chat`, `model.api_mode=chat_completions`, `model.max_tokens=1000`, `agent.reasoning_effort=low`, `delegation.provider=openrouter`, and `delegation.model=deepseek/deepseek-chat`.
+- Active user Hermes config verified on 2026-05-09: `model.provider=openrouter`, `model.default=deepseek/deepseek-chat`, `model.api_mode=chat_completions`, `model.max_tokens=1000`, `agent.reasoning_effort=low`, `delegation.provider=openrouter`, and `delegation.model=deepseek/deepseek-chat`. Actual Hermes CLI calls currently hit the OpenRouter account prompt-token affordability ceiling (`Prompt tokens limit exceeded: ~24k > 3428`) until credits/limits are raised.
 - `OPENROUTER_API_KEY` is present in the active Hermes env from `hermes config env-path`; the key value was not printed or committed.
 - `.codex/config.toml` is absent in this worktree even though older docs mention it. Treat those references as stale until a config file is recreated intentionally.
 - `.codex/agents/*.md` frontmatter uses model aliases such as `sonnet`, `opus`, and `haiku`; those are agent-role hints, not provider credentials.
@@ -42,7 +42,7 @@ OPENROUTER_API_KEY=<developer-openrouter-key>
 
 Prefer a separate developer OpenRouter key from any product/staging key so cost limits, logging, and revocation are isolated.
 
-Set the main Hermes provider to OpenRouter. The verified working default for the current account is `deepseek/deepseek-chat` with a conservative token cap:
+Set the main Hermes provider to OpenRouter. Use `deepseek/deepseek-chat` with a conservative token cap as the intended low-cost default; actual Hermes invocations still require enough OpenRouter prompt-token allowance for Hermes' loaded system prompt:
 
 ```bash
 hermes config set model.provider openrouter
@@ -59,13 +59,15 @@ hermes config set delegation.provider openrouter
 hermes config set delegation.model deepseek/deepseek-chat
 ```
 
-Verified one-shot checks:
+Hermes one-shot smoke command:
 
 ```bash
 hermes -z "Health check only. Reply exactly: OPENROUTER_HERMES_DEFAULT_PATH_OK" -t "" --ignore-rules
 ```
 
-A direct OpenRouter API smoke also passed for `openai/gpt-5.5`, but Hermes with `openai/gpt-5.5` is currently blocked by account credit/token affordability for Hermes' loaded system prompt (`Prompt tokens limit exceeded`). After topping up credits or raising limits, upgrade with:
+Current result: blocked by OpenRouter account prompt-token affordability for Hermes' loaded system prompt (`Prompt tokens limit exceeded: ~24k > 3428`). This is an account limit/credit issue, not a repo secret or provider-abstraction issue. Direct OpenRouter API smoke for short prompts passed, and local provider tests pass.
+
+After topping up credits or raising limits, re-run the Hermes smoke above. To upgrade to GPT-5.5 after credits/limits allow it:
 
 ```bash
 hermes config set model.default openai/gpt-5.5
@@ -81,7 +83,7 @@ Treat OpenRouter as a provider-backed delegate lane in the same Hermes arsenal a
 
 | Bench member | Role | How OpenRouter fits |
 |---|---|---|
-| Hermes + OpenRouter | Default provider-unified developer AI lane for planning, review, summaries, local automation, and delegated Hermes subagents. | Use `model.provider=openrouter` and `delegation.provider=openrouter`. Current verified default is `deepseek/deepseek-chat`; GPT-5.5 is an upgrade after credits/limits allow it. |
+| Hermes + OpenRouter | Provider-unified developer AI lane for planning, review, summaries, local automation, and delegated Hermes subagents. | Use `model.provider=openrouter` and `delegation.provider=openrouter`. Current intended default is `deepseek/deepseek-chat`; actual Hermes calls require OpenRouter prompt-token affordability. GPT-5.5 is an upgrade after credits/limits allow it. |
 | Codex CLI | Primary production-code builder when implementation is required. | Do not assume standalone Codex routes through OpenRouter unless the installed Codex config proves it. Hermes/OpenRouter can still plan or review Codex work. |
 | OpenCode / OpenCode Go | Flexible coding/review bench and cheap fallback lane. | Keep OpenCode on its own auth/model catalog; use Hermes/OpenRouter for provider-unified second opinions or when OpenCode provider prefixes/balance fail. |
 | Command Code | Taste-aware coding, planning, review, and project-style work. | Use as a separate CLI worker; use Hermes/OpenRouter for independent review or lower-cost model-bench routing. |
@@ -104,7 +106,7 @@ OpenRouter is therefore a first-class delegate path, but it is a provider/router
 |---|---|---|
 | Developer and product OpenRouter keys can be confused | Mitigated, keep monitoring | Product key belongs in app server env; developer key belongs in `~/.hermes/.env`; use separate OpenRouter dashboard limits when possible. |
 | Standalone Codex/Kimi CLIs may not route through OpenRouter | Open | Use Hermes/OpenRouter for provider-unified developer AI; keep direct CLI usage documented as fallback/companion behavior only. |
-| GPT-5.5 through Hermes exceeds current OpenRouter credit/token affordability | Open | Active Hermes default uses `deepseek/deepseek-chat` through OpenRouter with `model.max_tokens=1000`; top up OpenRouter credits before switching Hermes default to `openai/gpt-5.5`. |
+| Hermes OpenRouter calls exceed current account prompt-token affordability | Open | Active Hermes config uses `deepseek/deepseek-chat` through OpenRouter with `model.max_tokens=1000`, but the current account prompt-token allowance is still below Hermes' loaded prompt size. Top up OpenRouter credits or raise limits before relying on Hermes/OpenRouter delegation or switching to `openai/gpt-5.5`. |
 | Learner AI still needs privacy/cost/rate-limit review | Deferred | Before enabling public AI, run staging smoke tests, cost caps, rate limits, provider data-control review, and copy review. |
 | Embedding model dimensionality drift | Deferred | Keep `OPENROUTER_EMBEDDING_MODEL=openai/text-embedding-3-small` unless re-indexing existing 1536-dimensional embeddings. |
 | `.codex/config.toml` docs are stale | Mitigated in current docs | Current docs say standalone Codex OpenRouter routing is unverified and must not be assumed. |
@@ -114,7 +116,7 @@ OpenRouter is therefore a first-class delegate path, but it is a provider/router
 - [x] `~/.hermes/.env` contains `OPENROUTER_API_KEY` without exposing its value.
 - [x] `hermes config` shows `model.provider: openrouter` and an OpenRouter model slug.
 - [x] Direct OpenRouter API health check returned `OPENROUTER_DIRECT_OK` for `openai/gpt-5.5`.
-- [x] Hermes default-path health check returned `OPENROUTER_HERMES_DEFAULT_PATH_OK` using `deepseek/deepseek-chat` through OpenRouter.
+- [ ] Hermes default-path health check is currently blocked by OpenRouter prompt-token affordability (`Prompt tokens limit exceeded: ~24k > 3428`) even with `deepseek/deepseek-chat`.
 - [ ] Hermes `openai/gpt-5.5` default is blocked until OpenRouter credits/token affordability are raised.
 - [x] Product runtime remains live-AI-free unless a future AI launch PR explicitly changes the cutline.
 - [x] No OpenRouter secret is committed or exposed as `NEXT_PUBLIC_*`.

@@ -43,7 +43,7 @@ hermes config set delegation.provider openrouter
 hermes config set delegation.model deepseek/deepseek-chat
 ```
 
-`openai/gpt-5.5` is available on OpenRouter, but this audit found it can exceed account credit/token affordability for Hermes' loaded system prompt. Top up credits before making GPT-5.5 the Hermes default.
+`openai/gpt-5.5` is available on OpenRouter, but this audit found Hermes' loaded system prompt can exceed the current account's prompt-token affordability even on the low-cost default. Top up credits or raise limits before relying on Hermes/OpenRouter delegation, and only then consider making GPT-5.5 the Hermes default.
 
 See `docs/17-openrouter-developer-ai.md` and `.ai/00_system/OPENROUTER_DEVELOPER_AI_RUNBOOK.md` before changing provider behavior.
 
