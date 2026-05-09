@@ -22,9 +22,53 @@ export const parseMdxProp = <T>(value: T | string | undefined, fallback: T): T =
     // Convert bare JS object keys to quoted JSON keys
     // Matches: { key: or , key: — adds quotes around the key
     str = str.replace(/([{,]\s*)(\w+)\s*:/g, '$1"$2":')
+    str = escapeRawNewlinesInsideJsonStrings(str)
 
     return JSON.parse(str) as T
   } catch {
     return fallback
   }
+}
+
+function escapeRawNewlinesInsideJsonStrings(value: string) {
+  let escaped = false
+  let insideString = false
+  let result = ''
+
+  for (let index = 0; index < value.length; index += 1) {
+    const char = value[index]
+
+    if (escaped) {
+      result += char
+      escaped = false
+      continue
+    }
+
+    if (char === '\\') {
+      result += char
+      escaped = true
+      continue
+    }
+
+    if (char === '"') {
+      insideString = !insideString
+      result += char
+      continue
+    }
+
+    if (insideString && char === '\r') {
+      if (value[index + 1] === '\n') index += 1
+      result += '\\n'
+      continue
+    }
+
+    if (insideString && char === '\n') {
+      result += '\\n'
+      continue
+    }
+
+    result += char
+  }
+
+  return result
 }

@@ -41,6 +41,7 @@ import { LawCallout } from '../blocks/LawCallout'
 import { RevealBlock } from '../blocks/RevealBlock'
 import { WikiReference } from '../shared/WikiReference'
 import { Mermaid } from '../blocks/Mermaid'
+import { WikiTableTabs } from '../blocks/WikiTableTabs'
 import { WikiPre } from '../blocks/WikiPre'
 import { GenericBlock, SPP206RefServices, SPP207RefServices } from '../blocks/GenericBlock'
 import { ArticleMedia } from '../blocks/ArticleMedia'
@@ -189,6 +190,8 @@ const WIKI_COMPONENTS = {
   RevealBlock,
   WikiReference,
   Mermaid,
+  WikiTableTabs,
+  WikiPre,
   EIPrompt: EIPromptComponent,
   EIBlock: WikiEIBlock,
   // Generic passthrough for AI-hallucinated or legacy component names

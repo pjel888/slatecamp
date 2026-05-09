@@ -136,6 +136,7 @@ async function main() {
           supabase,
           articleId: metadata.article_id,
           originalContent: compareAndSwapContent,
+          originalUpdatedAt: isRepairScenario ? remote.updated_at : null,
           updatePayload,
         })
         report.pushed = true

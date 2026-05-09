@@ -179,8 +179,10 @@ export function sanitizeMDX(content: string): string {
       return tag
     })
 
-    // 2. Remove backslashes used for line continuation inside JSX tags
-    .replace(/(<[A-Z][a-zA-Z0-9]*\s+[^>]*?)\s*\\\s*(\/?>|[a-zA-Z])/g, '$1 $2')
+    // 2. Remove backslashes used for actual line continuation inside JSX tags.
+    // Preserve escaped sequences like \n inside quoted props; components such as
+    // WikiTableTabs use JSON string props that intentionally contain them.
+    .replace(/(<[A-Z][a-zA-Z0-9]*\s+[^>]*?)\s*\\[ \t]*\n\s*(\/?>|[a-zA-Z])/g, '$1 $2')
 
     // 3. Escape raw "<" characters that look like tags but aren't (e.g. "a < b")
     .replace(/<([0-9=])/g, '&lt;$1')

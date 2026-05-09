@@ -96,6 +96,12 @@ describe('wiki-markdown utility', () => {
       expect(sanitized).toContain('next="val"')
     })
 
+    it('preserves escaped newlines inside JSX string props', () => {
+      const input = '<WikiTableTabs tables=\'[{"content":"| A | B |\\n|---|---|"}]\' />'
+      const sanitized = sanitizeMDX(input)
+      expect(sanitized).toContain('| A | B |\\n|---|---|')
+    })
+
     it('escapes raw "<" followed by numbers or equals', () => {
       expect(sanitizeMDX('a <5')).toBe('a &lt;5')
       expect(sanitizeMDX('a <=b')).toBe('a &lt;=b')

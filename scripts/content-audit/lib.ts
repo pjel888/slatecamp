@@ -1256,18 +1256,25 @@ export async function updateArticleContentIfUnchanged({
   supabase,
   articleId,
   originalContent,
+  originalUpdatedAt,
   updatePayload,
 }: {
   supabase: any
   articleId: string
   originalContent: string
+  originalUpdatedAt?: string | null
   updatePayload: JsonObject
 }) {
-  const { data, error } = await supabase
+  let query = supabase
     .from('wiki_articles')
     .update(updatePayload)
     .eq('article_id', articleId)
-    .eq('content', originalContent)
+
+  query = originalUpdatedAt
+    ? query.eq('updated_at', originalUpdatedAt)
+    : query.eq('content', originalContent)
+
+  const { data, error } = await query
     .select('article_id,updated_at')
 
   if (error) throw new Error(`Failed to update wiki_articles.content: ${error.message}`)
