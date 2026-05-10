@@ -1,8 +1,8 @@
 # Source-Audited Article Batch 002 Report
 
-Date: 2026-05-10  
-Mode: local source-audited article/question batch, no Supabase apply  
-Article root: `.ai/content-audit-export/articles`  
+Date: 2026-05-10
+Mode: local source-audited article/question batch, no Supabase apply
+Article root: `.ai/content-audit-export/articles`
 Protocols applied: `.ai/CONTENT_EXCELLENCE_GOAL.md`; `.ai/00_system/slatecamp-learning-material-depth-protocol.md`; `.ai/00_system/vitruvius-source-reference.md`
 
 ## Summary
@@ -85,8 +85,8 @@ Question dry-runs were not run because no `question-edits/<question_id>.json` fi
 
 ## Final Gate
 
-Local source-audit gate: PARKED for all 5 selected articles.  
-Local article-bundle validation gate: BLOCKED for all 5 selected articles.  
-Supabase dry-run gate: BLOCKED locally before remote fetch because auto-compose failed.  
-Supabase apply: NOT ATTEMPTED.  
+Local source-audit gate: PARKED for all 5 selected articles.
+Local article-bundle validation gate: BLOCKED for all 5 selected articles.
+Supabase dry-run gate: BLOCKED locally before remote fetch because auto-compose failed.
+Supabase apply: NOT ATTEMPTED.
 Commit: NOT CREATED.
