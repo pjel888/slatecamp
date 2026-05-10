@@ -9,10 +9,12 @@ import {
   assertBulkApplyConfirmation,
   buildArticleContentUpdatePayload,
   buildParserErrorsFile,
+  candidateAppearsLegalOrCode,
   composeCandidate,
   containsRawSlatecampUiBlockPlaceholder,
   diffCandidate,
   evaluatePushSafety,
+  evaluateSourceAuditGate,
   findPlaceholders,
   normalizeArticleContent,
   parseArgs,
@@ -149,6 +151,64 @@ describe('content-audit push payload', () => {
 })
 
 describe('content-audit push safety', () => {
+  test('source audit gate warns on dry-run but blocks apply for legal/code candidates without evidence', () => {
+    const candidate = '# NBCP update\n\nPD 1096 and BP 344 accessibility requirements apply.\n'
+    const meta = metadata(candidate)
+
+    expect(candidateAppearsLegalOrCode(candidate)).toBe(true)
+
+    const dryRunGate = evaluateSourceAuditGate({ evidence: null, metadata: meta, candidate, apply: false })
+    expect(dryRunGate.blockers).toEqual([])
+    expect(dryRunGate.warnings.join('\n')).toContain('required before apply')
+
+    const applyGate = evaluateSourceAuditGate({ evidence: null, metadata: meta, candidate, apply: true })
+    expect(applyGate.blockers.join('\n')).toContain('Missing source-audit-evidence.json')
+  })
+
+  test('source audit gate accepts complete passing evidence and rejects stale candidate hashes', () => {
+    const candidate = '# Rule check\n\nRule VII from PD 1096 applies.\n'
+    const meta = metadata(candidate)
+    const passingEvidence = {
+      target: {
+        article_id: meta.article_id,
+        candidate_sha256: sha256(candidate),
+      },
+      classification: {
+        contains_legal_or_code_claims: true,
+        requires_raw_pdf_audit: true,
+      },
+      claims: [{
+        claim_id: 'c1',
+        audit_result: 'PASS',
+        source_support: {
+          raw_pdf_path: 'audit-evidence/pd1096.pdf',
+          quoted_pdf_excerpt: 'Rule VII excerpt',
+        },
+      }],
+      raw_pdf_gate: {
+        status: 'PASS',
+        all_legal_code_claims_have_pdf_locator: true,
+        all_section_numbers_verified_against_raw_pdf: true,
+        no_derivative_text_used_as_source_of_truth: true,
+      },
+      overall: {
+        source_audit_status: 'PASS',
+        safe_for_supabase_upload: true,
+      },
+    }
+
+    const passGate = evaluateSourceAuditGate({ evidence: passingEvidence, metadata: meta, candidate, apply: true })
+    expect(passGate.blockers).toEqual([])
+
+    const staleGate = evaluateSourceAuditGate({
+      evidence: { ...passingEvidence, target: { ...passingEvidence.target, candidate_sha256: sha256('older candidate') } },
+      metadata: meta,
+      candidate,
+      apply: true,
+    })
+    expect(staleGate.blockers.join('\n')).toContain('candidate_sha256 does not match')
+  })
+
   test('placeholder parsing accepts current ui ids and legacy block ids', () => {
     const content = [
       '[SLATECAMP_UI_BLOCK:ui_0001 component="A" status="preserved"]',
