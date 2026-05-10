@@ -9,7 +9,7 @@
 
 Prepend this line to every SlateCamp content-production prompt:
 
-> Read and apply `.ai/CONTENT_EXCELLENCE_GOAL.md` before producing any content artifact.
+> Read and apply `.ai/CONTENT_EXCELLENCE_GOAL.md` and `.ai/00_system/slatecamp-learning-material-depth-protocol.md` before producing any content artifact.
 
 ---
 
@@ -35,11 +35,15 @@ Every content artifact produced under this directive must be worthy of a nationa
 
 ### 1. ZERO TOLERANCE FOR INACCURACY
 
+Accuracy is a release gate, not a writing preference. No article, question, scenario, table, component, or explanation may be called “improved” or pushed live unless its legal/code claims have been source-audited.
+
 - EVERY numerical value (dimensions, temperatures, percentages, years) must be traceable to a primary source: PD 1096, RA 9514, BP 344, BP 220, PD 957, NSCP, RA 9266, or their IRRs.
 - EVERY citation must include: Document name → Implementing Rule or IRR → Section number.
-- IF a value cannot be verified against primary source, flag it as: `⚠️ NEEDS VERIFICATION`.
-- NEVER fabricate or approximate a codified value.
-- A wrong section number in exam-prep content can cause a student to fail. Treat it accordingly.
+- EVERY section number, rule title, table title, exception, occupancy/group label, and cross-reference must be checked against the raw source text, not inferred from article/question memory.
+- EVERY linked question attached to an improved article must be scanned for the same locator/value claims affected by the article edit.
+- IF a value or locator cannot be verified against primary source, flag it as: `⚠️ NEEDS VERIFICATION` and do not present it as settled law/code.
+- NEVER fabricate, approximate, “normalize,” or silently correct a codified value or section locator without recording the source evidence.
+- A wrong section number in exam-prep content can cause a student to fail. Treat it as a critical defect.
 
 ### 2. WRITTEN AS A WORLD-CLASS EDUCATOR WOULD WRITE IT
 
@@ -98,6 +102,18 @@ If the source is not known with certainty:
 
 
 ### 4A. LOCAL SOURCE-LAYER RULE
+
+#### Mandatory Legal/Code Fact-Audit Workflow
+
+Before any legal/code article or linked question is marked improved or uploaded:
+
+1. Identify every section number, rule title, table title, dimension, percentage, exception, threshold, occupancy/group label, and comparison claim in the candidate.
+2. Open the corresponding raw PDF/original source in `vitruvius-connection/001_Raw-Source-Layer/` and extract the exact source text/page.
+3. Cross-check article text, tables, UI blocks, scenarios, and linked questions against that source text.
+4. If the article cites a section range, verify each referenced item in that range. Do not assume numbering continuity.
+5. If one locator/value is corrected, scan sibling article sections and linked questions for the same wrong locator/value.
+6. Record the evidence path, page, section/item/table, and correction reason in the batch report or verification JSON.
+7. Park the item if source evidence is missing or contradictory. Do not “improve” by guessing.
 
 For SlateCamp legal/code/source truth, the local reference hub is:
 
