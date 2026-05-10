@@ -1,0 +1,137 @@
+{
+  "artifact_type": "source-audit-evidence.PARKED",
+  "audit_date": "2026-05-10",
+  "audited_at": "2026-05-10T13:32:00+08:00",
+  "audit_mode": "local_source_audit_no_supabase",
+  "protocols_applied": [
+    ".ai/CONTENT_EXCELLENCE_GOAL.md",
+    ".ai/00_system/slatecamp-learning-material-depth-protocol.md",
+    ".ai/00_system/vitruvius-source-reference.md"
+  ],
+  "target": {
+    "article_id": "46490e40-c2c3-4c76-bf43-87b40512989f",
+    "slug": "lea-prac-frm-011-government-architects-dpwh-nha-dhsud-and-the-in-house-design-function",
+    "title": "Government Architects DPWH NHA DHSUD and the in House Design Function",
+    "article_folder": ".ai/content-audit-export/articles/lea-prac-frm-011-government-architects-dpwh-nha-dhsud-and-the-in-house-design-function--46490e40-c2c3-4c76-bf43-87b40512989f",
+    "candidate_path": ".ai/content-audit-export/articles/lea-prac-frm-011-government-architects-dpwh-nha-dhsud-and-the-in-house-design-function--46490e40-c2c3-4c76-bf43-87b40512989f/candidate.md",
+    "candidate_sha256": "sha256:8ff800a976d37ab3acdf19632d8c1343adaacc053b40413f3838a98db354a8d7",
+    "normalized_sha256": "sha256:eb9845b7903febd2552ca4cb11696d7d9deaa98f0df5e01efa340111b8764fce",
+    "linked_questions_sha256": "sha256:cb4e65ae72ea5a34ff1fb19b1ff7cfff4c28fcf30777373d3a88a0f374bbc564"
+  },
+  "classification": {
+    "content_type": "professional_practice_government_architects_article",
+    "contains_legal_or_code_claims": true,
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 10,
+    "question_edits_created": []
+  },
+  "raw_sources": [
+    {
+      "key": "ra9266_irr",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+      "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "pages_checked": [2, 3, 8, 19, 20, 21]
+    },
+    {
+      "key": "ra9184_procurement",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9184/RA 9184 - Government Procurement Reform Act.pdf",
+      "raw_pdf_sha256": "sha256:c7cdc5c69dc447a185be6682f1cedfe3f55aa584f20a5ecbe4915504c2d7b8e8",
+      "pages_checked": [2, 4, 15]
+    },
+    {
+      "key": "civil_code",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-386/RA-386 Civil Code.pdf",
+      "raw_pdf_sha256": "sha256:c3551f7d92abed808a64071fdf08832b1f27dc87375775416f52cbc25b4bcba5",
+      "pages_checked": [19]
+    },
+    {
+      "key": "ra11201_dhsud",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 - DHSUD Act of 2019.pdf",
+      "raw_pdf_sha256": "sha256:59cf831669ddd0dc6f8fb569583e0ea75baf475c25677559aa21ea0979546c8d",
+      "pages_checked": []
+    }
+  ],
+  "gate_results": {
+    "compose": "PASS: candidate recomposed with 0 blockers.",
+    "validate": "PASS with warning: component-usage.json has not been generated.",
+    "push_dry_run": "PARKED: dry-run did not mutate Supabase and failed while fetching remote article: Error: Was there a typo in the url or port?",
+    "supabase_mutation": "not_attempted"
+  },
+  "raw_pdf_evidence_obtained": [
+    {
+      "claim": "RA 9266 IRR defines Architect-of-record as directly and professionally responsible for total design and civil liability for signed and sealed documents.",
+      "raw_source_key": "ra9266_irr",
+      "pdf_page": 2,
+      "source_locator": "RA 9266 IRR, Definition of Architect-of-record",
+      "evidence_excerpt": "Architect-of-record means the architect registered and licensed under R.A. No. 9266, who is directly and professionally responsible for the total design of the project."
+    },
+    {
+      "claim": "RA 9266 IRR states CPD is a continuing learning process and says CPD attendance is not mandatory for PIC renewal.",
+      "raw_source_key": "ra9266_irr",
+      "pdf_pages": [3, 8],
+      "source_locator": "RA 9266 IRR, CPD definition and Board powers",
+      "evidence_excerpt": "Continuing Professional Development refers to a sustaining and progressive learning process ... attendance to said CPD shall not be a mandatory requirement for renewal."
+    },
+    {
+      "claim": "RA 9184 IRR governs procurement of infrastructure projects, goods, and consulting services by government procuring entities.",
+      "raw_source_key": "ra9184_procurement",
+      "pdf_page": 2,
+      "source_locator": "RA 9184 IRR-A, Section 4.1",
+      "evidence_excerpt": "This IRR-A shall govern and apply to the procurement of infrastructure projects, goods, and consulting services."
+    },
+    {
+      "claim": "Civil Code Article 1723 supports the private architect liability reference but is not RA 9266.",
+      "raw_source_key": "civil_code",
+      "pdf_page": 19,
+      "source_locator": "Civil Code, Article 1723",
+      "evidence_excerpt": "The engineer or architect who drew up the plans and specifications for a building is liable for damages if within fifteen years ... the same should collapse."
+    }
+  ],
+  "blockers": [
+    {
+      "id": "GOVARCH-BLOCKER-001",
+      "severity": "critical",
+      "type": "empty_source_bundle",
+      "finding": "sources.json has source_count 0 even though the article and linked questions depend on RA 9266, RA 9184, Civil Code Article 1723, COA, DPWH, NHA, DHSUD, BP 344, environmental rules, and procurement claims."
+    },
+    {
+      "id": "GOVARCH-BLOCKER-002",
+      "severity": "critical",
+      "type": "linked_question_wrong_citation",
+      "finding": "Several linked questions are tagged only as RA 9266 while the actual tested claim is RA 9184 procurement, Civil Code Article 1723, COA audit, DPWH/NHA/DHSUD agency mandate, or design-build delivery. Parent article evidence does not cover these corrections."
+    },
+    {
+      "id": "GOVARCH-BLOCKER-003",
+      "severity": "high",
+      "type": "overbroad_agency_claims",
+      "finding": "The article states agency design roles for DPWH, NHA, and DHSUD without source rows or checked agency source locators. RA 11201 was identified as the DHSUD raw source family, but this pass did not establish exact page locators for the article's DHSUD design-function claims."
+    },
+    {
+      "id": "GOVARCH-BLOCKER-004",
+      "severity": "medium",
+      "type": "dry_run_environment_blocker",
+      "finding": "content-audit:push:dry-run failed during remote fetch with 'Was there a typo in the url or port?'. No Supabase mutation occurred."
+    }
+  ],
+  "linked_question_audit": {
+    "status": "PARKED_NOT_FULLY_AUDITED",
+    "question_ids_observed": [
+      "811525b7-b940-47e1-9ffc-7b12ef0713e6",
+      "6979f68f-5f67-491a-9aae-471817f67146",
+      "1cbc9fea-8ed5-44af-b22c-8b7c5e2c7fd3",
+      "2ce1c900-2ee0-406b-af7b-a437fb24d3ac",
+      "57256fbf-67c1-4bc6-8c51-dd27bd49e134",
+      "5b8b7eb7-c401-4bef-84b8-f4eb467c8579",
+      "d3d33b7f-cb94-43f3-831c-658e47ea4de5",
+      "ac4b612d-2523-4345-b59e-e9f2736623ff",
+      "0230b95d-eeee-4086-bd23-8551412e5268",
+      "431195e0-6c6d-4b83-bd55-415e9c11b405"
+    ],
+    "finding": "No question edits were created because the parent article has uncited multi-law scope and the linked questions require separate source locators beyond RA 9266."
+  },
+  "overall": {
+    "source_audit_status": "PARKED",
+    "safe_for_supabase_upload": false,
+    "next_required_action": "Add verified source rows for each governing agency/law family, rewrite or split linked questions by exact source locator, then rerun source audit and dry-run in an environment that can fetch Supabase."
+  }
+}

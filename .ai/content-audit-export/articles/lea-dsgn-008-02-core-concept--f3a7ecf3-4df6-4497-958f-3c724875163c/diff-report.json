@@ -1,12 +1,12 @@
 {
   "article_id": "f3a7ecf3-4df6-4497-958f-3c724875163c",
   "slug": "lea-dsgn-008-02-core-concept",
-  "generated_at": "2026-05-10T00:35:16.165Z",
-  "old_hash": "sha256:9255a875a072d87f41593e3d2f6977b95ff05012019565b40e74709bb1922725",
-  "new_hash": "sha256:63e02c2de73d4f3cf118de46e56107137b91a395712fe98d00984aa1fa03438e",
-  "original_hash": "sha256:9255a875a072d87f41593e3d2f6977b95ff05012019565b40e74709bb1922725",
-  "normalized_hash": "sha256:9255a875a072d87f41593e3d2f6977b95ff05012019565b40e74709bb1922725",
-  "candidate_hash": "sha256:63e02c2de73d4f3cf118de46e56107137b91a395712fe98d00984aa1fa03438e",
+  "generated_at": "2026-05-10T05:25:11.660Z",
+  "old_hash": "sha256:2891fc5b3e3cbe25bce8f63542480c32b03b9f4b75887c7ca3a0b95b32c0654f",
+  "new_hash": "sha256:77ad93b9221fd6ce3378224ba2c1375bf24be6d36449850a8354fbbf850dbddf",
+  "original_hash": "sha256:2891fc5b3e3cbe25bce8f63542480c32b03b9f4b75887c7ca3a0b95b32c0654f",
+  "normalized_hash": "sha256:2891fc5b3e3cbe25bce8f63542480c32b03b9f4b75887c7ca3a0b95b32c0654f",
+  "candidate_hash": "sha256:77ad93b9221fd6ce3378224ba2c1375bf24be6d36449850a8354fbbf850dbddf",
   "changed": true,
   "changed_line_count": 57,
   "inserted_line_count": 0,
@@ -21,18 +21,20 @@
     "changed": 57,
     "inserted": 0,
     "deleted": 6,
-    "original_line_count": 89,
-    "candidate_line_count": 83
+    "original_line_count": 90,
+    "candidate_line_count": 84
   },
   "changed_ui_blocks_summary": {
     "missing_block_ids": [],
     "changed_count": 0
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "original.md hash does not match article metadata export hash."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: original.md hash does not match article metadata export hash."
 }
