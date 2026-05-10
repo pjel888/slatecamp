@@ -21,12 +21,14 @@ This means the repo is ready to batch edit articles only under the controlled la
 - Question apply blocker test: unaudited question edit produced blocker `Missing source-audit-evidence.json in parent article folder` and did not push.
 - Supabase was not mutated during readiness testing.
 
-## Pilot evidence
+## Pilot evidence boundary
 
-Passing source-audit artifacts exist for:
+Local source-audit artifacts exist for:
 
 - `bp-344-ramp-slope-tiers--5a8ca807-31d5-4a32-933a-c6b83517c6de/source-audit-evidence.json`
 - `spp-doc-201-pre-design-services--16bb270e-6887-4bbe-a62e-eace6c4d3fdb/source-audit-evidence.json`
+
+These are pilot/local audit artifacts, not a standing waiver for upload. Before any article or linked-question apply, the mechanical gate must still verify the current bundle, including article identity, current `candidate.md` hash, raw-PDF gate fields, per-claim evidence, and `safe_for_supabase_upload`. If a pilot artifact is stale or missing required gate fields, the item must park until fresh passing evidence is written.
 
 Parked evidence exists where source truth was not safely complete:
 

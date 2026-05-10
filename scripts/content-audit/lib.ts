@@ -1289,10 +1289,13 @@ export async function updateArticleContentIfUnchanged({
 
 export interface SourceAuditEvidenceClaim {
   claim_id?: string
+  claim?: string
   claim_text?: string
   claim_type?: string
+  scope?: string
   audit_result?: string
   source_support?: JsonObject
+  local_resolution?: JsonObject
   blockers?: string[]
 }
 
@@ -1310,6 +1313,7 @@ export interface SourceAuditEvidence {
     requires_raw_pdf_audit?: boolean
   }
   claims?: SourceAuditEvidenceClaim[]
+  verified_major_claims?: SourceAuditEvidenceClaim[]
   unverified_or_rejected_claims?: unknown[]
   raw_pdf_gate?: {
     status?: string
@@ -1342,6 +1346,32 @@ export function candidateAppearsLegalOrCode(content: string | null | undefined):
   return /\b(PD\s*1096|BP\s*344|RA\s*\d{3,5}|Rule\s+[IVXLCDM]+|Sec(?:tion)?\.\s*\d|IRR|Code|NBCP|Fire Code|National Building Code|NSCP|UAP|SPP|PRC|DHSUD|HLURB)\b/i.test(content)
 }
 
+function nonEmptyNeedle(value: unknown): string | null {
+  if (typeof value !== 'string' && typeof value !== 'number') return null
+  const text = String(value).trim()
+  return text.length > 0 ? text : null
+}
+
+export function sourceAuditIncludesQuestionOrModel({
+  evidence,
+  questionId,
+  modelId,
+}: {
+  evidence: SourceAuditEvidence | null
+  questionId: string
+  modelId?: unknown
+}): boolean {
+  if (!evidence) return false
+  const needles = [nonEmptyNeedle(questionId), nonEmptyNeedle(modelId)].filter((needle): needle is string => needle != null)
+  if (needles.length === 0) return false
+
+  const claims = [...(evidence.claims ?? []), ...(evidence.verified_major_claims ?? [])]
+  return claims.some((claim) => {
+    const haystack = JSON.stringify(claim)
+    return needles.some((needle) => haystack.includes(needle))
+  })
+}
+
 export function evaluateSourceAuditGate({
   evidence,
   metadata,
@@ -1369,7 +1399,7 @@ export function evaluateSourceAuditGate({
   }
   if (!evidence) return { legal_or_code_candidate: legalOrCode, source_audit_required: false, source_audit_status: null, blockers, warnings }
 
-  if (evidence.target?.article_id && evidence.target.article_id !== metadata.article_id) blockers.push('source-audit-evidence target.article_id does not match article metadata.')
+  if (evidence.target?.article_id !== metadata.article_id) blockers.push('source-audit-evidence target.article_id is missing or does not match article metadata.')
   if (candidateHash && evidence.target?.candidate_sha256 !== candidateHash) blockers.push('source-audit-evidence target.candidate_sha256 does not match current candidate.md hash.')
   const requiresRaw = evidence.classification?.requires_raw_pdf_audit === true || legalOrCode
   if (requiresRaw) {
