@@ -771,7 +771,7 @@ export const HeroHousePreview = () => {
     : 'Select a setback option to color the half-meter grid: red front, orange side, and yellow rear.'
 
   const handleSelectOption = (optionId: string) => {
-    setSelectedOptionId(optionId)
+    setSelectedOptionId((prev) => (prev === optionId ? null : optionId))
     setChecked(false)
     setSuccessEffectKey(0)
   }
@@ -895,7 +895,7 @@ export const HeroHousePreview = () => {
         whileTap={{ scale: 0.98 }}
         onPointerDown={(e) => e.stopPropagation()}
         onWheel={(e) => e.stopPropagation()}
-        className='absolute z-[35] w-[220px] cursor-grab rounded-xl border border-white/30 bg-white/[0.14] p-2 shadow-[0_8px_28px_rgba(15,23,42,0.12)] backdrop-blur-md active:cursor-grabbing'
+        className='absolute z-[35] w-[220px] cursor-grab rounded-lg border border-white/30 bg-white/[0.14] p-2 shadow-[0_8px_28px_rgba(15,23,42,0.12)] backdrop-blur-md active:cursor-grabbing'
         style={{ left: '-8.5rem', bottom: 'calc(var(--hero-slider-stack-height) + 2.5rem)' }}
       >
         <div className='flex items-start gap-2.5'>
@@ -923,7 +923,7 @@ export const HeroHousePreview = () => {
         whileTap={{ scale: 0.98 }}
         onPointerDown={(e) => e.stopPropagation()}
         onWheel={(e) => e.stopPropagation()}
-        className='absolute z-[35] w-[220px] cursor-grab rounded-xl border border-white/30 bg-white/[0.14] p-2 shadow-[0_8px_28px_rgba(15,23,42,0.12)] backdrop-blur-md active:cursor-grabbing'
+        className='absolute z-[35] w-[220px] cursor-grab rounded-lg border border-white/30 bg-white/[0.14] p-2 shadow-[0_8px_28px_rgba(15,23,42,0.12)] backdrop-blur-md active:cursor-grabbing'
         style={{ right: '-7.5rem', top: 'calc(var(--hero-question-card-height) + 2.25rem)' }}
       >
         <div className='flex items-start gap-2.5'>

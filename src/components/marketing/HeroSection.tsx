@@ -369,7 +369,7 @@ export const HeroSection = ({
           <div className='motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-300 flex items-center gap-2'>
             <Starburst className='h-3 w-3 text-primary' />
             <span className='font-[family-name:var(--font-dm-mono)] text-[12px] font-semibold uppercase tracking-[0.24em] text-primary'>
-              Architecture knowledge atlas
+              Architecture resource base
             </span>
           </div>
 
@@ -500,7 +500,7 @@ export const HeroSection = ({
                       <TooltipContent
                         side='top'
                         sideOffset={16}
-                        className='max-w-none w-[300px] overflow-hidden rounded-xl border border-slate-200/50 bg-white p-0 text-slate-950 shadow-[0_24px_60px_rgba(15,23,42,0.16)] data-open:animate-in data-open:fade-in-0 data-open:slide-in-from-bottom-2 data-open:zoom-in-95 data-[state=delayed-open]:animate-in data-[state=delayed-open]:fade-in-0 data-[state=delayed-open]:slide-in-from-bottom-2 data-[state=delayed-open]:zoom-in-95 data-closed:animate-out data-closed:fade-out-0 data-closed:zoom-out-95'
+                        className='max-w-none w-[300px] overflow-hidden rounded-lg border border-slate-200/50 bg-white p-0 text-slate-950 shadow-[0_24px_60px_rgba(15,23,42,0.16)] data-open:animate-in data-open:fade-in-0 data-open:slide-in-from-bottom-2 data-open:zoom-in-95 data-[state=delayed-open]:animate-in data-[state=delayed-open]:fade-in-0 data-[state=delayed-open]:slide-in-from-bottom-2 data-[state=delayed-open]:zoom-in-95 data-closed:animate-out data-closed:fade-out-0 data-closed:zoom-out-95'
                         arrowClassName='bg-white fill-white'
                       >
                         <div className='flex'>

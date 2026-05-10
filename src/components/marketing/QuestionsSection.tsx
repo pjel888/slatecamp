@@ -55,7 +55,11 @@ const QuizPreview = () => {
                 type='button'
                 role='radio'
                 onClick={() => {
-                  setSelected(index)
+                  if (selected === index) {
+                    setSelected(null)
+                  } else {
+                    setSelected(index)
+                  }
                   setSubmitted(false)
                 }}
                 className={`flex w-full items-start gap-3 rounded-md border px-3 py-3 text-left text-[14px] leading-relaxed transition ${
