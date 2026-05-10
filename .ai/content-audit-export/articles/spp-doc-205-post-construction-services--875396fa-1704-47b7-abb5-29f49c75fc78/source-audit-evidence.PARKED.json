@@ -1,0 +1,89 @@
+{
+  "status": "PARKED",
+  "article_id": "875396fa-1704-47b7-abb5-29f49c75fc78",
+  "slug": "spp-doc-205-post-construction-services",
+  "audited_at_utc": "2026-05-10T04:22:40Z",
+  "no_supabase": true,
+  "artifact_type": "source-audit-evidence",
+  "hash_algorithm": "sha256",
+  "candidate_path": ".ai/content-audit-export/articles/spp-doc-205-post-construction-services--875396fa-1704-47b7-abb5-29f49c75fc78/candidate.md",
+  "candidate_sha256": null,
+  "normalized_path": ".ai/content-audit-export/articles/spp-doc-205-post-construction-services--875396fa-1704-47b7-abb5-29f49c75fc78/normalized.md",
+  "normalized_sha256": "d964ca521659dfea22380344c7de6f8cfe37e065f35b67032d2e63ff7417dad8",
+  "linked_questions_path": ".ai/content-audit-export/articles/spp-doc-205-post-construction-services--875396fa-1704-47b7-abb5-29f49c75fc78/linked-questions.json",
+  "linked_questions_sha256": "38c925be2b77680e6e136c0c0c6c4b81ca28ddec7f6813ca164d9ad633641fd6",
+  "linked_questions_embedded_hash": "sha256:08ae78f09f110cb5673f4a4bdb87b7fac3317634ed05533d1f5dbefe5b4daf9b",
+  "raw_pdf": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 205.pdf",
+  "raw_pdf_absolute_checked": "/Users/philiplewis/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 205.pdf",
+  "raw_pdf_exists": false,
+  "blockers": [
+    {
+      "id": "missing-candidate-md",
+      "severity": "blocker",
+      "description": "The article folder does not contain candidate.md, but the audit contract requires candidate_sha256 matching candidate.md. Only normalized.md/original.md and metadata files are present.",
+      "evidence": {
+        "checked_path": ".ai/content-audit-export/articles/spp-doc-205-post-construction-services--875396fa-1704-47b7-abb5-29f49c75fc78/candidate.md",
+        "observed": "candidate.md missing; candidate_sha256 cannot be computed"
+      }
+    },
+    {
+      "id": "missing-raw-pdf",
+      "severity": "blocker",
+      "description": "The specified raw PDF path is not present under /Users/philiplewis, so the article and linked questions cannot be source-quoted against the raw PDF.",
+      "evidence": {
+        "checked_path": "/Users/philiplewis/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 205.pdf",
+        "parent_exists": false,
+        "repository_search": "search_files for SPP 205.pdf and *SPP 205* under /Users/philiplewis/slatecamp returned no PDF/source file matches"
+      }
+    }
+  ],
+  "raw_source_excerpts_available": [],
+  "article_audit": {
+    "result": "not_passed",
+    "reason": "normalized.md and original.md are present and enumerate SPP 205 content, but the raw PDF is unavailable and candidate.md is missing; therefore the normalized/candidate article cannot receive a PASS with quoted raw-PDF locators."
+  },
+  "linked_questions_audit": {
+    "question_count": 10,
+    "result": "not_passed",
+    "summary": "All 10 linked questions were enumerated from linked-questions.json, but none can be verified to PASS against the unavailable SPP 205 raw PDF.",
+    "questions_checked": [
+      { "question_id": "c92005d0-21a4-4e3e-b487-59ca76580cb3", "status": "blocked_missing_raw_pdf", "claim": "Building Maintenance includes security monitoring" },
+      { "question_id": "bb6edf61-1258-4eb0-b02f-1c7b048feaa8", "status": "blocked_missing_raw_pdf", "claim": "Business Development aims to maximize building occupancy and revenue" },
+      { "question_id": "4e184740-6fe6-45b3-83fc-e92571360ba6", "status": "blocked_missing_raw_pdf", "claim": "Post-Construction Evaluation is triggered by Owner's request" },
+      { "question_id": "5e7bc30e-714a-48a1-ab2b-81076608591a", "status": "blocked_missing_raw_pdf", "claim": "Forensic investigation cross-references SPP 203.13" },
+      { "question_id": "c36398b7-8601-4ca0-968f-43bf3f8cbcea", "status": "blocked_missing_raw_pdf", "claim": "Equipment Maintenance role is assisting proper third parties" },
+      { "question_id": "b624a791-4a51-4a9d-835b-888ff4593f98", "status": "blocked_missing_raw_pdf", "claim": "SPP 205 is final link in SPP 201-205 service chain" },
+      { "question_id": "72860255-14d1-4c63-bbf2-20cb6e2f16c3", "status": "blocked_missing_raw_pdf", "claim": "Grounds and Landscaping includes RROW maintenance" },
+      { "question_id": "797af126-84ec-4a4a-89fe-e898ccf12bdb", "status": "blocked_missing_raw_pdf", "claim": "Two major clusters are Building Administration and Post-Construction Evaluation" },
+      { "question_id": "3eb51f7d-bc08-4425-9371-53c3322da05b", "status": "blocked_missing_raw_pdf", "claim": "Building Administration compensation is 4-6% of gross rentals" },
+      { "question_id": "aa9187f8-fbfe-45eb-aad9-0118e9a5024e", "status": "blocked_missing_raw_pdf", "claim": "Post-Construction Evaluation includes design-program-versus-actual-use evaluation" }
+    ]
+  },
+  "checked_local_article_excerpts_not_raw_pdf": [
+    {
+      "quote": "The SPP 205 scope of services is organized into two principal clusters:",
+      "locator": "normalized.md lines 53-58",
+      "note": "Local article text only; not accepted as raw-PDF evidence."
+    },
+    {
+      "quote": "Monitor security services",
+      "locator": "normalized.md line 72",
+      "note": "Local article text only; not accepted as raw-PDF evidence."
+    },
+    {
+      "quote": "The Post-Construction Evaluation cluster is triggered upon the request of the Owner",
+      "locator": "normalized.md lines 116-119",
+      "note": "Local article text only; not accepted as raw-PDF evidence."
+    },
+    {
+      "quote": "RPF = 4% to 6% of Gross Rentals",
+      "locator": "normalized.md lines 184-187",
+      "note": "Local article text only; not accepted as raw-PDF evidence."
+    }
+  ],
+  "recommended_unpark_steps": [
+    "Provide or restore vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 205.pdf under /Users/philiplewis, or update the audit brief with the correct raw-source path.",
+    "Create/regenerate candidate.md in the article folder, then record candidate_sha256 from that file.",
+    "Re-run the source audit with raw-PDF quotations and page locators for normalized/candidate content and all 10 linked questions."
+  ]
+}

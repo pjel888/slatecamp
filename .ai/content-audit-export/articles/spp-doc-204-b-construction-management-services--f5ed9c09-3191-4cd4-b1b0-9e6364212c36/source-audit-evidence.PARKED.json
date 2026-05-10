@@ -1,0 +1,107 @@
+{
+  "status": "PARKED",
+  "article_id": "f5ed9c09-3191-4cd4-b1b0-9e6364212c36",
+  "slug": "spp-doc-204-b-construction-management-services",
+  "audited_at_utc": "2026-05-10T04:19:10Z",
+  "no_supabase": true,
+  "artifact_type": "source-audit-evidence",
+  "hash_algorithm": "sha256",
+  "candidate_path": ".ai/content-audit-export/articles/spp-doc-204-b-construction-management-services--f5ed9c09-3191-4cd4-b1b0-9e6364212c36/candidate.md",
+  "candidate_sha256": null,
+  "normalized_path": ".ai/content-audit-export/articles/spp-doc-204-b-construction-management-services--f5ed9c09-3191-4cd4-b1b0-9e6364212c36/normalized.md",
+  "normalized_sha256": "83a55c5b407c51f9d250ac885debef17dc8ce7409c6f30c32a95d28d6bdd1846",
+  "linked_questions_path": ".ai/content-audit-export/articles/spp-doc-204-b-construction-management-services--f5ed9c09-3191-4cd4-b1b0-9e6364212c36/linked-questions.json",
+  "linked_questions_hash": "sha256:4d71e693bacc283d5ff71e3f8a1436a0544a8c81160785c4a1f383f6c36b63ff",
+  "raw_pdf": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 204B.pdf",
+  "conversion_sources_checked": [
+    "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204B.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/sidecar_json/UAP/SPP 204B.json"
+  ],
+  "blockers": [
+    {
+      "id": "missing-candidate-md",
+      "severity": "blocker",
+      "description": "The article folder does not contain candidate.md, but the audit contract requires candidate_sha256 matching candidate.md. Only normalized.md/original.md and metadata files are present.",
+      "evidence": {
+        "checked_path": ".ai/content-audit-export/articles/spp-doc-204-b-construction-management-services--f5ed9c09-3191-4cd4-b1b0-9e6364212c36/candidate.md",
+        "shell_result": "candidate_exists=1 from test -f (non-zero means missing)"
+      }
+    },
+    {
+      "id": "raw-pdf-text-not-verifiable",
+      "severity": "blocker",
+      "description": "The raw PDF is available but is effectively image/OCR content for the substantive slides. pypdf extracted only bullets from most pages; the conversion sidecar records many substantive slide lines as image objects rather than text. This prevents a direct quoted-text PASS against the raw PDF for the article and all questions.",
+      "evidence": {
+        "raw_pdf_pages": 20,
+        "pypdf_observation": "pages 5-20 extracted mostly bullet glyphs/empty text, not the slide body needed for quotation verification",
+        "sidecar_quote": "source: SPP 204B_images/imageFile7.png",
+        "locator": "sidecar_json/UAP/SPP 204B.json page 5 image object id 63; page 5 stores substantive content as image rather than text"
+      }
+    },
+    {
+      "id": "question-3-cross-source-spp206",
+      "severity": "blocker",
+      "description": "Linked question 3 asks a fee range under SPP 206. The task scope/raw source is SPP 204B.pdf, so this question cannot be fully verified against the SPP 204B raw PDF alone.",
+      "evidence": {
+        "question_id": "f9e2c759-3414-428b-b3da-76522aa33e95",
+        "question_text": "When a Project Manager also serves as Construction Manager, what fee range applies under SPP 206?",
+        "correct_option_id": "b",
+        "correct_option_text": "2-5% of PCC",
+        "code_citation": "SPP 204-B / SPP 206"
+      }
+    }
+  ],
+  "raw_source_excerpts_available": [
+    {
+      "quote": "SPP DOC. 2046",
+      "note": "OCR/sidecar appears to misread 204B as 2046 on title slide.",
+      "locator": "sidecar_json/UAP/SPP 204B.json page 1 heading id 15"
+    },
+    {
+      "quote": "Standards of Professional Practice for",
+      "locator": "sidecar_json/UAP/SPP 204B.json page 1 heading id 16"
+    },
+    {
+      "quote": "Construction Management Services",
+      "locator": "sidecar_json/UAP/SPP 204B.json page 1 paragraph id 17"
+    },
+    {
+      "quote": "Functions / Tasks",
+      "locator": "sidecar_json/UAP/SPP 204B.json page 8 paragraph id 96"
+    },
+    {
+      "quote": "Legal Responsibility",
+      "locator": "sidecar_json/UAP/SPP 204B.json page 13 paragraphs ids 158-159"
+    },
+    {
+      "quote": "Compensation",
+      "locator": "sidecar_json/UAP/SPP 204B.json page 19 paragraph id 222"
+    }
+  ],
+  "article_audit": {
+    "result": "not_passed",
+    "reason": "Normalized article broadly matches visible topic headings and the SPP 204B subject, but substantive claims cannot be completely source-quoted to raw PDF text because the PDF/conversion exposes most body text as images and candidate.md is missing. Several normalized details are also expanded instructional prose beyond the extractable raw snippets."
+  },
+  "linked_questions_audit": {
+    "question_count": 10,
+    "result": "not_passed",
+    "summary": "All 10 linked questions were enumerated from linked-questions.json. Verification is blocked by raw-PDF text extraction limits; question 3 additionally cites SPP 206 rather than only SPP 204B.",
+    "questions_checked": [
+      { "question_id": "f5f0e82e-b43d-4121-993c-860d153d4b36", "status": "blocked_raw_pdf_text_unverifiable" },
+      { "question_id": "0a52f269-3c24-4782-a9ce-c75818f28bd4", "status": "blocked_raw_pdf_text_unverifiable" },
+      { "question_id": "f9e2c759-3414-428b-b3da-76522aa33e95", "status": "blocked_cross_source_spp206" },
+      { "question_id": "6f141c7d-15d6-4587-9928-cc493a06995e", "status": "blocked_raw_pdf_text_unverifiable" },
+      { "question_id": "e7ac4ce6-c506-4779-bd0d-c1c22cd0ca9d", "status": "blocked_raw_pdf_text_unverifiable" },
+      { "question_id": "72813afe-5c06-4412-a4d4-ea27b6d50cc8", "status": "blocked_raw_pdf_text_unverifiable" },
+      { "question_id": "771b6134-205c-4ff2-94ad-2e74514c512d", "status": "blocked_raw_pdf_text_unverifiable" },
+      { "question_id": "e5cac33d-10ec-4dbb-a425-0fca3fb17a7e", "status": "blocked_raw_pdf_text_unverifiable" },
+      { "question_id": "d2eb3032-a488-43f4-8ddd-8a2a734f35a4", "status": "blocked_raw_pdf_text_unverifiable" },
+      { "question_id": "086d443c-3d48-4895-b65c-345a790ffec5", "status": "blocked_raw_pdf_text_unverifiable" }
+    ]
+  },
+  "recommended_unpark_steps": [
+    "Create/regenerate candidate.md in the article folder, then record its sha256.",
+    "Run an OCR pass over SPP 204B.pdf or recover the source slide text so each normalized article claim and question answer can be quoted with page locators.",
+    "Either include SPP 206 in the permitted source set for question f9e2c759-3414-428b-b3da-76522aa33e95 or park/remove that cross-source question from this SPP 204B-only cluster audit."
+  ]
+}
